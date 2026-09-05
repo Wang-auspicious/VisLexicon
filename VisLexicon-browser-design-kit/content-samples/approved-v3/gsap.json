@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "entryId": "gsap",
+  "entityId": "entity-gsap",
+  "attemptId": "swarm-curator-batch-d-gsap-20260905",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://gsap.com/",
+    "finalUrl": "https://gsap.com/",
+    "checkedAt": "2026-09-05T15:20:00.000Z"
+  },
+  "editorial": {
+    "name": "GSAP",
+    "descriptionZh": "GreenSock 的 JavaScript 动画库，用来编排 UI、SVG 与 WebGL。核心及插件现按 Webflow Standard No Charge 许可免费商用，禁止给竞品无代码动画搭建器当引擎。",
+    "takeawayZh": "用时间轴编排滚动动画，插件现已免费商用",
+    "noteZh": "我们进去先看首页 Animate Anything，下面把 Scroll、SVG、Text、UI 分成四块。Plugins 页把 ScrollTrigger、SplitText 列成清单。我们打开 ScrollTrigger：一段 pin 和 scrub 就能把滚动钉住。适合要精细编排的人；许可是 Webflow 的 No Charge，不能给无代码动画搭建器当引擎。",
+    "pricing": "Free for commercial use under Standard No Charge license"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-gsap",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 GSAP 定义为面向专业用途的 JavaScript 动画库，用来编排 UI、SVG 与 WebGL，而不是素材包或设计工具。",
+        "evidenceUrl": "https://gsap.com/"
+      },
+      {
+        "statement": "ScrollTrigger 文档给出 pin、scrub 与独立 create() 示例，证明交付物是可装进项目的滚动动画代码。",
+        "evidenceUrl": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d",
+    "reviewerId": "swarm-reviewer-grok-d",
+    "confirmedAt": "2026-09-06T10:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui",
+      "3d"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "gsap",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://gsap.com/",
+      "finalUrl": "https://gsap.com/",
+      "title": "Homepage | GSAP",
+      "selectionRationale": "先看首页。Animate Anything 下面就是 Scroll、SVG 四块入口。",
+      "shot": {
+        "src": "/shots/gsap/v2-identity.png",
+        "sha256": "9436f72f06a6732d7c51b25bc2a7509e8e061fe4ec0f22742fba3487c7a79529",
+        "width": 1280,
+        "height": 900,
+        "bytes": 124048,
+        "alt": "GSAP 首页 Animate Anything 变形标题、Webflow 免费横幅和 Get GSAP 按钮"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://gsap.com/docs/v3/Plugins/",
+      "finalUrl": "https://gsap.com/docs/v3/Plugins/",
+      "title": "Plugins | GSAP | Docs & Learning",
+      "selectionRationale": "再翻 Plugins 总览，滚动、文本、SVG 插件排成清单。",
+      "shot": {
+        "src": "/shots/gsap/v2-breadth.png",
+        "sha256": "209e2ef49ed4bea61e1fb7986f5edcfaa4ebe6041dd298a6d4ba35e7a1067a9d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 194898,
+        "alt": "GSAP Plugins 页 Plugin Overview，Scroll Plugins 列出 ScrollTrigger、ScrollTo、ScrollSmoother"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/",
+      "finalUrl": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/",
+      "title": "ScrollTrigger | GSAP | Docs & Learning",
+      "selectionRationale": "最后开 ScrollTrigger。一段 pin 和 scrub 代码就是它能做到的证明。",
+      "shot": {
+        "src": "/shots/gsap/v2-proof.png",
+        "sha256": "417f15dc743fbe3909b321c9c95c42d453a7feb86da637ea86fbf6ab7c52429a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 295675,
+        "alt": "ScrollTrigger 文档标题、jaw-dropping scroll-based animations 说明和 Quick Start"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "GreenSock",
+      "sourceUrl": "https://github.com/greensock/GSAP/blob/master/README.md",
+      "evidence": "仓库 README 版权行写 Copyright (c) 2008-2026, GreenSock. All rights reserved.",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Webflow",
+      "sourceUrl": "https://gsap.com/community/standard-license/",
+      "evidence": "Standard License 写 Subject to the terms and conditions of this GSAP License, Webflow grants you a non-exclusive, worldwide license… 页脚 Copyright (©) 2025, Webflow。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/greensock/GSAP",
+      "sourceUrl": "https://gsap.com/docs/v3/Installation",
+      "evidence": "Installation 文档链到 GitHub repo https://github.com/greensock/GSAP/ 与 npm 包 gsap。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "custom",
+      "sourceUrl": "https://gsap.com/community/standard-license/",
+      "evidence": "标题为 Standard “No Charge” GSAP License。FAQ 写 Can I really use GSAP in commercial projects without paying anything? Yes, really! Commercial usage is covered under the standard license. All of GSAP including the plugins that were formerly members-only… can be used in commercial projects at no charge。限制：不得用于与 Webflow 视觉动画搭建器竞争的无代码工具。仓库 package.json 的 license 字段写 Standard 'no charge' license: https://gsap.com/standard-license. 该条款覆盖 GSAP 核心与插件源码，不是 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free for commercial use under Standard No Charge license",
+      "sourceUrl": "https://gsap.com/community/standard-license/",
+      "evidence": "FAQ 原文：Yes, really! Commercial usage is covered under the standard license. All of GSAP including the plugins that were formerly \"members-only\" like SplitText and MorphSVG can be used in commercial projects at no charge.",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "gsap",
+      "sourceUrl": "https://gsap.com/docs/v3/Installation",
+      "evidence": "Install Helper 给出 npm install gsap。Installation 写 GSAP and all the plugins are now freely available on npm，并要求使用 3.13 或更高版本。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d",
+    "technicalPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-d 进站起草；截图采集后回填 sha256/bytes； swarm-reviewer-grok-d 复核活页、截图哈希与许可后 APPROVED。 许可是 Webflow Standard No Charge，不是 MIT。"
+  }
+}

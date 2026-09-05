@@ -1,0 +1,195 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T16:29:51.410Z",
+  "entryId": "motion",
+  "entityId": "entity-motion",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://motion.dev/",
+    "finalUrl": "https://motion.dev/",
+    "checkedAt": "2026-09-05T15:37:05.685Z"
+  },
+  "editorial": {
+    "name": "Motion",
+    "descriptionZh": "Matt Perry 开发的 JavaScript / React / Vue 动效库，即原 Framer Motion；核心库 MIT 免费开源，Motion+ 为另付终身会员，提供额外例子与高级 API。",
+    "takeawayZh": "用 motion 组件做弹簧、手势和布局动画",
+    "noteZh": "我们进首页，黑卡写 Production-grade，并标 MIT 与 PREV FRAMER MOTION。文档总览按 React、JavaScript、Vue 分入口。我们打开 React Animation：先看概述，下面才是 motion 组件。核心库能直接装；Motion+ 是另付的终身会员，高级 API 在那边。",
+    "pricing": "Free MIT core; paid Motion+ lifetime extras",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Motion 定义为用独立变换、弹簧、手势和布局动画做高性能网页动效的代码库，而不是素材包或设计工具。",
+        "evidenceUrl": "https://motion.dev/"
+      },
+      {
+        "statement": "React Animation 文档给出 motion 组件、animate、AnimatePresence 与 variants 的可复制 API，证明交付物是动效实现代码。",
+        "evidenceUrl": "https://motion.dev/docs/react-animation"
+      }
+    ],
+    "confirmedAt": "2026-09-05T15:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "motion",
+      "react",
+      "vue",
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "freemium",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://motion.dev/",
+      "finalUrl": "https://motion.dev/",
+      "title": "Motion (prev Framer Motion): JavaScript & React animation library",
+      "selectionRationale": "先看首页：免费 MIT，点明 Framer Motion 之后。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/motion/v2-identity.png",
+        "sha256": "2915627eb6560293e01a6aa4849ca92340fbcd1c943976091c8041ffbfaa93ab",
+        "width": 1280,
+        "height": 900,
+        "bytes": 59172,
+        "alt": "Motion 首页黑卡 Production-grade animation library for the web，标注 OPEN SOURCE / MIT LICENSE 与 PREV FRAMER MOTION"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://motion.dev/docs",
+      "finalUrl": "https://motion.dev/docs",
+      "title": "Docs | Motion",
+      "selectionRationale": "再翻文档总览，React / JS / Vue 三个入口。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/motion/v2-breadth.png",
+        "sha256": "402e307cfe485cd89031dc8f9e76b8a21f0cd6ee6e201cbf3bc27522216d1641",
+        "width": 1280,
+        "height": 900,
+        "bytes": 59595,
+        "alt": "Motion Docs 总览：Choose your runtime，列出 React、JavaScript、Vue"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://motion.dev/docs/react-animation",
+      "finalUrl": "https://motion.dev/docs/react-animation",
+      "title": "React Animation | Keyframes, Transitions & Gestures | Motion for React",
+      "selectionRationale": "最后开 React 动画页，先看概述和你会学到什么。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/motion/v2-proof.png",
+        "sha256": "d96c7ce8fbcd1e555c2e26a887759ba9401ae673fb73717c35e8c4578ad3ba55",
+        "width": 1280,
+        "height": 900,
+        "bytes": 90172,
+        "alt": "React animation 文档首屏：Motion for React 概述、What you'll learn 和侧栏 ANIMATIONS"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Matt Perry",
+      "sourceUrl": "https://motion.dev/about",
+      "evidence": "About 页开头 Hello! I'm Matt Perry, creator of Motion. 并叙述从 Popmotion、Framer Motion 到 Motion 的历程。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Motion B.V.",
+      "sourceUrl": "https://github.com/motiondivision/motion/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2024 Motion B.V.。仓库组织为 motiondivision。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/motiondivision/motion",
+      "sourceUrl": "https://github.com/motiondivision/motion",
+      "evidence": "仓库 README 回链 motion.dev；GitHub About 亦指向 https://motion.dev。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/motiondivision/motion/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 为 The MIT License (MIT)，Copyright (c) 2024 Motion B.V.。首页写 Completely free to use, MIT licensed and open source。该 MIT 覆盖核心库源码；Motion+ 的付费例子与高级 API 不在此许可范围内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free MIT core; paid Motion+ lifetime extras",
+      "sourceUrl": "https://motion.dev/",
+      "evidence": "首页写 Free Completely free to use, MIT licensed and open source。仓库 README Motion+ 节写 A one-time payment, lifetime-updates membership，并链到 https://motion.dev/plus。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "存在付费层：Free MIT core; paid Motion+ lifetime extras。"
+    ],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/motion",
+    "designMdUrl": "https://vislexicon.com/site/motion.md",
+    "checkedAt": "2026-09-05T15:37:05.685Z",
+    "license": "MIT"
+  }
+}

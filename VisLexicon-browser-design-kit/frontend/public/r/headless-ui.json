@@ -1,0 +1,233 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T16:29:51.410Z",
+  "entryId": "headless-ui",
+  "entityId": "entity-headless-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://headlessui.com/",
+    "finalUrl": "https://headlessui.com/",
+    "checkedAt": "2026-09-05T18:40:00.000Z"
+  },
+  "editorial": {
+    "name": "Headless UI",
+    "descriptionZh": "本条是 Headless UI 的 React 文档站。Tailwind Labs 的无样式无障碍组件，npm 包 @headlessui/react，仓库 MIT。Vue 文档在 /v1/vue，不收入本条。",
+    "takeawayZh": "无样式 React 原语，皮用 Tailwind 自己画",
+    "noteZh": "我们进首页，React 标签亮着，下面下拉菜单、折叠、对话框三张预览在动。Vue 是旁边一个切换，本条只收 React。点开 Dialog，Payment successful 演示开着，安装写 npm install @headlessui/react。适合要无障碍行为、样式交给 Tailwind 的人。MIT 免费；页脚 Tailwind Plus 是另售模板。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Headless UI 定义为 completely unstyled, fully accessible UI components，并默认展示 React 组件预览；Vue 是单独切换。",
+        "evidenceUrl": "https://headlessui.com/"
+      },
+      {
+        "statement": "React Dialog 页给出无样式对话框演示、键盘说明和 npm install @headlessui/react，证明交付物是无样式原语。",
+        "evidenceUrl": "https://headlessui.com/react/dialog"
+      }
+    ],
+    "confirmedAt": "2026-09-06T10:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://headlessui.com/",
+      "finalUrl": "https://headlessui.com/",
+      "title": "Headless UI - Unstyled, fully accessible UI components",
+      "selectionRationale": "先看首页。React 亮着，下面三张组件预览。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/headless-ui/v2-identity.png",
+        "sha256": "6399c9c828f6dae19db56aa159d34adf727ba93491ecebea989279f3299dc080",
+        "width": 1280,
+        "height": 900,
+        "bytes": 659062,
+        "alt": "Headless UI 首页 React 标签亮着，下方 Dropdown Menu、Disclosure、Dialog 三张组件预览"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/tailwindlabs/headlessui",
+      "finalUrl": "https://github.com/tailwindlabs/headlessui",
+      "title": "GitHub - tailwindlabs/headlessui: Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.",
+      "selectionRationale": "再看仓库。packages 下列 @headlessui/react，About 写 MIT。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/headless-ui/v2-breadth.png",
+        "sha256": "866207f7452ffd769185500fe72ef7865889307a70d9cd739c7936db9148b8f8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 123293,
+        "alt": "GitHub tailwindlabs/headlessui：packages 目录、About 无样式无障碍介绍和 MIT license 标记"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://headlessui.com/react/dialog",
+      "finalUrl": "https://headlessui.com/react/dialog",
+      "title": "Dialog - Headless UI",
+      "selectionRationale": "最后开 React 对话框。演示开着，安装命令在下面。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/headless-ui/v2-proof.png",
+        "sha256": "5dc2a8a7a049b08c0ef7d89e2c69f9365685585f6f0760fa4638960cb7b08859",
+        "width": 1280,
+        "height": 900,
+        "bytes": 443861,
+        "alt": "Headless UI React Dialog 页：Payment successful 演示、Got it thanks 按钮和 npm install @headlessui/react"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Tailwind Labs",
+      "sourceUrl": "https://github.com/tailwindlabs/headlessui/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 版权行 Copyright (c) 2020 Tailwind Labs。未列出个人作者字段。",
+      "confidence": 0.8
+    },
+    {
+      "field": "organization",
+      "value": "Tailwind Labs",
+      "sourceUrl": "https://github.com/tailwindlabs/headlessui",
+      "evidence": "代码托管在 GitHub 组织 tailwindlabs；LICENSE 版权 Tailwind Labs。Dialog 页脚链到 Tailwind Plus。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/tailwindlabs/headlessui",
+      "sourceUrl": "https://github.com/tailwindlabs/headlessui",
+      "evidence": "仓库 README 写 For full documentation, visit headlessui.com；About 回链 headlessui.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/tailwindlabs/headlessui/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 为 MIT License，Copyright (c) 2020 Tailwind Labs。覆盖 headlessui 源码与 @headlessui/react 等包，不覆盖 Tailwind Plus 模板。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://headlessui.com/react/dialog",
+      "evidence": "Dialog 页公开 npm install @headlessui/react。Styled examples 节把 Tailwind Plus 标为另售预设计示例。组件库本身未见售价。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@headlessui/react",
+      "sourceUrl": "https://headlessui.com/react/dialog",
+      "evidence": "React Dialog 安装命令为 npm install @headlessui/react。仓库另有 @headlessui/vue，本条不收录。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://headlessui.com/react/dialog",
+        "note": "该页就是 React Dialog 文档，含 Payment successful 演示和 DialogPanel。",
+        "termEn": "Dialog",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://headlessui.com/",
+        "note": "首页 Forms 下列出 Checkbox。",
+        "termEn": "Checkbox",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://headlessui.com/",
+        "note": "首页 Forms 下列出 Combobox。",
+        "termEn": "Combobox",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-switch",
+        "evidenceUrl": "https://headlessui.com/",
+        "note": "首页 Forms 下列出 Switch。",
+        "termEn": "Switch",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/headless-ui",
+    "designMdUrl": "https://vislexicon.com/site/headless-ui.md",
+    "checkedAt": "2026-09-05T18:40:00.000Z",
+    "license": "MIT"
+  }
+}

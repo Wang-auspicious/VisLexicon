@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 3,
+  "entryId": "radix-primitives",
+  "entityId": "entity-radix-ui",
+  "attemptId": "swarm-batch-radix-split-radix-primitives-20260905",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://www.radix-ui.com/primitives",
+    "finalUrl": "https://www.radix-ui.com/primitives",
+    "checkedAt": "2026-09-05T23:15:00.000Z"
+  },
+  "editorial": {
+    "name": "Radix Primitives",
+    "descriptionZh": "WorkOS 维护的无样式、无障碍 React 原语库，可通过 radix-ui 包或按组件安装，用来做设计系统的底层交互；仓库采用 MIT 许可，文档强调 Accessible 与 Unstyled。",
+    "takeawayZh": "无样式原语先装好无障碍，外观你自己写",
+    "noteZh": "我们进 Primitives 首页，大标题说设计系统的核心积木，下面 Dialog、下拉、气泡三张卡在演示。体量在 Introduction：侧栏 Accordion 排到 Tooltip，正文写低层库、可渐进接入。点开 Dialog，紫底按钮下面是 radix-ui 的导入和焦点陷阱。适合要自绘皮的人；想开箱外观去 Themes。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-radix-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Introduction 把 Radix Primitives 定义为低层 UI 库，Key Features 明确 Accessible 与 Unstyled，侧栏列出 Accordion 到 Tooltip 的原语。",
+        "evidenceUrl": "https://www.radix-ui.com/primitives/docs/overview/introduction"
+      },
+      {
+        "statement": "Dialog 文档给出无样式演示、radix-ui 包源码，以及 modal 焦点陷阱等无障碍行为，证明交付物是原语而不是预样式套件。",
+        "evidenceUrl": "https://www.radix-ui.com/primitives/docs/components/dialog"
+      }
+    ],
+    "curatorId": "swarm-batch-radix-split",
+    "reviewerId": "swarm-reviewer-grok-c",
+    "confirmedAt": "2026-09-06T14:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://www.radix-ui.com/primitives/docs/components/dialog",
+        "note": "该页就是 Dialog 原语文档，首屏有 Edit profile 演示、源码和焦点陷阱说明。"
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://www.radix-ui.com/primitives/docs/overview/introduction",
+        "note": "Introduction 把 tooltip 列为与 accordion、dialog 同类的常见 UI 模式，侧栏也有独立 Tooltip 原语。"
+      },
+      {
+        "stageId": "surface-transition",
+        "termId": "atlas-component-component-accordion",
+        "evidenceUrl": "https://www.radix-ui.com/primitives/docs/overview/introduction",
+        "note": "同一页 Vision 段把 accordion 列为要覆盖的模式，侧栏 Components 第一条就是 Accordion。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "radix-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.radix-ui.com/primitives",
+      "finalUrl": "https://www.radix-ui.com/primitives",
+      "title": "Radix Primitives",
+      "selectionRationale": "先看产品页。大标题说核心积木，下面三张卡已经在演示。",
+      "shot": {
+        "src": "/shots/radix-primitives/v2-identity.png",
+        "sha256": "c59413f19c3b8f0d0dd3b8e822e2cbbad23f4b05962d68ff506b8449d8e844e6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 619002,
+        "alt": "Primitives 首页深色底，Core building blocks 标题，下方 Dialog、Dropdown Menu、Popover 三张演示卡"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.radix-ui.com/primitives/docs/overview/introduction",
+      "finalUrl": "https://www.radix-ui.com/primitives/docs/overview/introduction",
+      "title": "Introduction – Radix Primitives",
+      "selectionRationale": "再翻 Introduction。侧栏从手风琴排到提示，正文把无样式说清楚。",
+      "shot": {
+        "src": "/shots/radix-primitives/v2-breadth.png",
+        "sha256": "11bf5e4ec63856ed9cafe6f72d1a86bc11dd643a8be818076ad9185ee76fa69c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 105162,
+        "alt": "Primitives Introduction 页：左侧组件导航，右侧 Introduction、Vision 与 Key Features 的 Accessible 段"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.radix-ui.com/primitives/docs/components/dialog",
+      "finalUrl": "https://www.radix-ui.com/primitives/docs/components/dialog",
+      "title": "Dialog – Radix Primitives",
+      "selectionRationale": "最后开 Dialog。紫底按钮在演示，下面是源码和焦点陷阱。",
+      "shot": {
+        "src": "/shots/radix-primitives/v2-proof.png",
+        "sha256": "7b9969b4ec30b61319aff3c4ae47887c68eb2021e448d62decdc6432adda8d75",
+        "width": 1280,
+        "height": 900,
+        "bytes": 176372,
+        "alt": "Dialog 文档首屏：紫底 Edit profile 演示、下方 JSX 源码和焦点陷阱说明"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "WorkOS",
+      "sourceUrl": "https://github.com/radix-ui/primitives/blob/main/LICENSE",
+      "evidence": "primitives 仓库 LICENSE 原文为 MIT License，Copyright (c) 2022 WorkOS。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "WorkOS",
+      "sourceUrl": "https://www.radix-ui.com/primitives",
+      "evidence": "产品页页眉 Made by WorkOS；仓库 About 写 Maintained by @workos，并回链 radix-ui.com/primitives。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/radix-ui/primitives",
+      "sourceUrl": "https://www.radix-ui.com/primitives/docs/overview/introduction",
+      "evidence": "Introduction 页 GitHub repo 链到 https://github.com/radix-ui/primitives；文档顶栏 GitHub 图标指向该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/radix-ui/primitives/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 为 MIT License，Copyright (c) 2022 WorkOS；README 写 Licensed under the MIT License, Copyright © 2022-present WorkOS。覆盖本仓库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.radix-ui.com/primitives",
+      "evidence": "产品页写 Unstyled, accessible, open source React primitives；未见付费套餐页。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "radix-ui",
+      "sourceUrl": "https://www.radix-ui.com/primitives/docs/components/dialog",
+      "evidence": "Dialog 示例为 import { Dialog } from \"radix-ui\"；Introduction 建议安装 radix-ui 包，也可按原语单独安装。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-batch-radix-split",
+    "technicalPassed": true,
+    "independentReviewRequired": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-05",
+    "note": "swarm-batch-radix-split 进站起草；swarm-reviewer-grok-c 复核活页、截图哈希与 facts 后 APPROVED。四条 Radix 产品共用 entity-radix-ui，entryId 保持拆分。"
+  }
+}

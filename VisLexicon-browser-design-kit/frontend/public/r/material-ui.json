@@ -1,0 +1,225 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T16:29:51.410Z",
+  "entryId": "material-ui",
+  "entityId": "entity-material-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://mui.com/material-ui/",
+    "finalUrl": "https://mui.com/material-ui/",
+    "checkedAt": "2026-09-05T15:37:05.685Z"
+  },
+  "editorial": {
+    "name": "Material UI",
+    "descriptionZh": "实现 Google Material Design 的开源 React 组件库，npm 包 @mui/material 提供可直接用于生产的组件与主题定制；核心库 MIT 免费，MUI X 的 Pro/Premium 另售。",
+    "takeawayZh": "按 Material Design 现成装，主题还能改",
+    "noteZh": "我们进去先看首页那句现成可用的 Material Design 组件，旁边就是安装命令。组件总览按输入、反馈、导航分栏，按钮、对话框、表格都有卡片。我们点开按钮：三种变体在上面，颜色、尺寸和加载在下面。适合要按 Material Design 快速铺界面的人。核心库 MIT 免费；定价页的付费档是 MUI X，别和这份组件库混成一回事。",
+    "pricing": "Material UI (MUI Core) is MIT and free; MUI X Pro/Premium/Enterprise are paid",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 Material UI 定义为实现 Google Material Design 的开源 React 组件库，可开箱用于生产，并提供主题定制。",
+        "evidenceUrl": "https://mui.com/material-ui/"
+      },
+      {
+        "statement": "组件总览按 Inputs、Data display、Feedback、Surface、Navigation、Layout 列出 Button、Table 等整套组件，而不是单一控件或教程。",
+        "evidenceUrl": "https://mui.com/material-ui/all-components/"
+      }
+    ],
+    "confirmedAt": "2026-09-05T15:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mui.com/material-ui/",
+      "finalUrl": "https://mui.com/material-ui/",
+      "title": "Material UI: React components that implement Material Design",
+      "selectionRationale": "先看首页。大标题说现成 Material Design，旁边就是安装命令。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/material-ui/v2-identity.png",
+        "sha256": "dbf15b8463538e58528a30ca2819eb81618f6decadcf57fe5eab79c8be0a45a8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 175939,
+        "alt": "Material UI 首页 Ready to use Material Design components 大标题、Get started 入口和 npm 安装命令"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://mui.com/material-ui/all-components/",
+      "finalUrl": "https://mui.com/material-ui/all-components/",
+      "title": "Material UI components - Material UI",
+      "selectionRationale": "再翻组件总览。输入到导航分栏，体量一眼能看完。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/material-ui/v2-breadth.png",
+        "sha256": "8eb426dc965fb66f3364b21cc45a69bd5015b0c67fe2715fef8e0c386eab4613",
+        "width": 1280,
+        "height": 900,
+        "bytes": 115902,
+        "alt": "Material UI 组件总览页按 Inputs 分栏的 Autocomplete、Button、Button Group 卡片"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://mui.com/material-ui/react-button/",
+      "finalUrl": "https://mui.com/material-ui/react-button/",
+      "title": "React Button component - Material UI",
+      "selectionRationale": "最后开按钮。三种变体在上面，颜色尺寸加载在下面。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/material-ui/v2-proof.png",
+        "sha256": "da1888a6218e7bdf37a59eedeb88251a17dd1ea6422eae899359f43015ae3e94",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109681,
+        "alt": "Material UI Button 文档的 text、contained、outlined 变体说明与可编辑演示"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "MUI Team",
+      "sourceUrl": "https://github.com/mui/material-ui/blob/master/packages/mui-material/package.json",
+      "evidence": "packages/mui-material/package.json 的 author 字段写 MUI Team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Material-UI SAS",
+      "sourceUrl": "https://mui.com/legal/privacy/",
+      "evidence": "Privacy policy 定义：MUI means Material-UI SAS, a legal entity located at 128 Rue La Boétie, 75008 Paris, France。代码托管在 GitHub 组织 mui。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/mui/material-ui",
+      "sourceUrl": "https://github.com/mui/material-ui/blob/master/packages/mui-material/package.json",
+      "evidence": "package.json 的 repository.url 为 git+https://github.com/mui/material-ui.git，homepage 为 https://mui.com/material-ui/。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/mui/material-ui/blob/master/LICENSE",
+      "evidence": "仓库 LICENSE 标题为 MIT License，版权行 Copyright (c) 2014 Call-Em-All；packages/mui-material/package.json 的 license 亦为 MIT。覆盖 mui/material-ui 源码与 @mui/material 包，不覆盖 MUI X 付费功能、模板商店或付费 Design Kit。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Material UI (MUI Core) is MIT and free; MUI X Pro/Premium/Enterprise are paid",
+      "sourceUrl": "https://mui.com/pricing/",
+      "evidence": "定价页写 Start using MUI's products for free! 导航写 MUI Core：Ready-to-use foundational React components, free forever。对照表把 Material UI 列在 MUI Core (open-source) 下；Pro / Premium / Enterprise 针对 MUI X，不是 Material UI 核心库售价。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@mui/material",
+      "sourceUrl": "https://github.com/mui/material-ui/blob/master/packages/mui-material/package.json",
+      "evidence": "package.json 的 name 字段为 @mui/material。首页安装命令为 npm install @mui/material @emotion/react @emotion/styled。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://mui.com/material-ui/all-components/",
+        "note": "组件总览 Data display 下列出 Tooltip。",
+        "termEn": "Tooltip",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://mui.com/material-ui/all-components/",
+        "note": "Inputs 下列出 Checkbox，对应表单解剖台的复选框。",
+        "termEn": "Checkbox",
+        "termZh": null
+      },
+      {
+        "stageId": "data-display",
+        "termId": "atlas-component-component-table",
+        "evidenceUrl": "https://mui.com/material-ui/all-components/",
+        "note": "Data display 下列出 Table，对应数据展示台的表格。",
+        "termEn": "Table",
+        "termZh": "静态表格"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/material-ui",
+    "designMdUrl": "https://vislexicon.com/site/material-ui.md",
+    "checkedAt": "2026-09-05T15:37:05.685Z",
+    "license": "MIT"
+  }
+}

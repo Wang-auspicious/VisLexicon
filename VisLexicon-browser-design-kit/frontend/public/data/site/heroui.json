@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T16:29:51.410Z",
+  "entryId": "heroui",
+  "entityId": "entity-heroui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "heroui.com",
+  "official": {
+    "inputUrl": "https://www.heroui.com/",
+    "finalUrl": "https://heroui.com/",
+    "checkedAt": "2026-09-05T15:37:05.685Z"
+  },
+  "editorial": {
+    "name": "HeroUI",
+    "descriptionZh": "原 NextUI，YC S24 开源 React 组件库，把 React Aria 与 Tailwind CSS v4 拼成无障碍组件，npm 包 @heroui/react；核心包 MIT，HeroUI Pro 模板另售。",
+    "takeawayZh": "以前叫 NextUI，默认好看用 Tailwind 改",
+    "noteZh": "我们进去先看首页默认好看那句，GitHub 仍写 Previously NextUI。组件目录按按钮、浮层分栏，按钮、模态框都有预览图。我们点开按钮：先看导入语句，下面是变体、尺寸和加载。适合要无障碍行为加 Tailwind 默认样式的人。核心包可免费装；模板要去 Pro，别和开源库混成一份。",
+    "pricing": "Core @heroui/react is free MIT; HeroUI Pro templates are a separate paid offering",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 HeroUI 定义为面向 web 与移动端的现代 UI 库，文档把 React Aria 与 Tailwind CSS v4 做成可浏览、可安装的组件目录。",
+        "evidenceUrl": "https://heroui.com/"
+      },
+      {
+        "statement": "组件目录按 Buttons、Overlays 等分组列出 Button、Modal、Tooltip 等带预览的组件；Button 单项页给出 @heroui/react 导入、变体和 CSS 类名。",
+        "evidenceUrl": "https://heroui.com/en/docs/react/components/button"
+      }
+    ],
+    "confirmedAt": "2026-09-05T15:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "react-native",
+      "tailwind",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.heroui.com/",
+      "finalUrl": "https://heroui.com/",
+      "title": "HeroUI",
+      "selectionRationale": "先看首页。默认好看，Get started 就在标题下。",
+      "shot": {
+        "src": "/shots/heroui/v2-identity.png",
+        "sha256": "afe6f122545483f41e7634365a15008686227d321820f5f96f9b1e08757b1e11",
+        "width": 1280,
+        "height": 900,
+        "bytes": 197773,
+        "alt": "HeroUI 首页 Beautiful by default 大标题、Get started 入口，左下角盖着 HeroUI Pro 弹窗"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.heroui.com/docs/components",
+      "finalUrl": "https://heroui.com/en/docs/react/components",
+      "title": "HeroUI React Components – Accessible UI Library",
+      "selectionRationale": "再翻组件目录。按钮到浮层分栏，预览图能看出体量。",
+      "shot": {
+        "src": "/shots/heroui/v2-breadth.png",
+        "sha256": "cbda617adf4cc1cf1853140dfe6997de979283aa24af3f58422e278c55c67f22",
+        "width": 1280,
+        "height": 900,
+        "bytes": 162677,
+        "alt": "HeroUI All Components 页按 Buttons 分栏的组件预览卡片，左下角盖着 Pro 弹窗"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.heroui.com/docs/components/button",
+      "finalUrl": "https://heroui.com/en/docs/react/components/button",
+      "title": "HeroUI Button – Accessible React Button Component",
+      "selectionRationale": "最后开按钮。导入语句在上面，变体尺寸加载在下面。",
+      "shot": {
+        "src": "/shots/heroui/v2-proof.png",
+        "sha256": "81465569478bb0b1aa2fb31ad65c2d0e42a5df07276a2641e42a185e07db2bed",
+        "width": 1280,
+        "height": 900,
+        "bytes": 164770,
+        "alt": "HeroUI Button 文档的 @heroui/react 导入语句和 Click me 演示，左下角盖着 Pro 弹窗"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Junior Garcia",
+      "sourceUrl": "https://heroui.com/about",
+      "evidence": "About 页原文：HeroUI is a Y Combinator S24 company founded by Junior Garcia。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "NextUI Inc.",
+      "sourceUrl": "https://github.com/heroui-inc/heroui/blob/v3/LICENSE",
+      "evidence": "默认分支 v3 的 LICENSE 附录版权行写 Copyright 2025 NextUI Inc.；main 分支 LICENSE 写 Copyright (c) 2020 Next UI Inc.。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/heroui-inc/heroui",
+      "sourceUrl": "https://heroui.com/",
+      "evidence": "官网 GitHub 入口指向 https://github.com/heroui-inc/heroui；仓库 README 写 Previously NextUI 并回链 heroui.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/heroui-inc/heroui/blob/v3/packages/react/package.json",
+      "evidence": "packages/react/package.json 的 license 字段为 MIT；npm @heroui/react 3.2.4 亦标 MIT。该 MIT 覆盖 @heroui/react 包。仓库默认分支 v3 根 LICENSE 现为 Apache-2.0，heroui-native 亦为 Apache License 2.0，二者不在本条 React 包范围内；亦不覆盖 HeroUI Pro 模板。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core @heroui/react is free MIT; HeroUI Pro templates are a separate paid offering",
+      "sourceUrl": "https://heroui.com/en/docs/react/components",
+      "evidence": "组件目录顶栏原文：HeroUI Pro is live - Components, templates & AI tooling，链到 heroui.pro。@heroui/react 可免费从 npm 安装。Pro 是另售模板与工具，不是核心库售价。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@heroui/react",
+      "sourceUrl": "https://heroui.com/en/docs/react/components/button",
+      "evidence": "Button 文档导入语句为 import { Button } from '@heroui/react'。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://heroui.com/en/docs/react/components",
+        "note": "组件目录 Overlays 分组与侧栏列出 Tooltip。",
+        "termEn": "Tooltip",
+        "termZh": null
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://heroui.com/en/docs/react/components",
+        "note": "同一目录侧栏列出 AlertDialog 与 Modal，对应对话框/模态层。",
+        "termEn": "Dialog",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://heroui.com/en/docs/react/components",
+        "note": "Forms 分组列出 Checkbox，对应表单解剖台的复选框。",
+        "termEn": "Checkbox",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://heroui.com/en/docs/react/components",
+        "note": "Pickers 分组对应组合框一类选择器，侧栏亦列出 Autocomplete。",
+        "termEn": "Combobox",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "存在付费层：Core @heroui/react is free MIT; HeroUI Pro templates are a separate paid offering。"
+    ],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/heroui.md",
+  "registryUrl": "/r/heroui.json"
+}

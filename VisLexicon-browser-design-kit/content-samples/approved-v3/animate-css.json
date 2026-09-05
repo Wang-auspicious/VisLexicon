@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 3,
+  "entryId": "animate-css",
+  "entityId": "entity-animate-css",
+  "attemptId": "swarm-curator-batch-c-animate-css-20260905",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://animate.style/",
+    "finalUrl": "https://animate.style/",
+    "checkedAt": "2026-09-05T18:40:00.000Z"
+  },
+  "editorial": {
+    "name": "Animate.css",
+    "descriptionZh": "Daniel Eden 创立的跨浏览器 CSS 动画库，用 animate__animated 加动画名即可播放；可 npm 或 CDN 安装。现行许可是 Hippocratic License 2.1，不是 MIT。",
+    "takeawayZh": "加 class 就能播现成 CSS 动画",
+    "noteZh": "我们打开官网，顶部警告 v4 有破坏性变更，正文直接给 bounce 的 class 写法。往下注意力动画名和工具 class 排成清单。许可不是 MIT：页脚和仓库都写 Hippocratic License 2.1，带人权条款。适合要快速加进出场的人；商用前先把许可读完。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-animate-css",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 Animate.css 定义为可直接使用的跨浏览器 CSS 动画库，安装后用 class 播放 bounce 等动画。",
+        "evidenceUrl": "https://animate.style/"
+      },
+      {
+        "statement": "文档用 bounce 示例给出 animate__animated animate__bounce，并链到注意力动画名列表，证明交付物是可复制的动效代码。",
+        "evidenceUrl": "https://animate.style/#attention_seekers"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-c",
+    "reviewerId": "swarm-reviewer-grok-d",
+    "confirmedAt": "2026-09-06T10:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "source-available"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://animate.style/",
+      "finalUrl": "https://animate.style/",
+      "title": "Animate.css | A cross-browser library of CSS animations.",
+      "selectionRationale": "先看首页：大标题和右侧 bounce 等动画名清单。",
+      "shot": {
+        "src": "/shots/animate-css/v2-identity.png",
+        "sha256": "19cc13b2ee7b1154f1fe58443c20c0851ff9d253c28b7abbcbb9c9207ceeb8c1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 71599,
+        "alt": "Animate.css 首页 Just-add-water CSS animations 标题和右侧 bounce、flash 等动画名列表"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/animate-css/animate.css/blob/main/docsSource/sections/01-usage.md",
+      "finalUrl": "https://github.com/animate-css/animate.css/blob/main/docsSource/sections/01-usage.md",
+      "title": "animate.css/docsSource/sections/01-usage.md at main · animate-css/animate.css",
+      "selectionRationale": "再看仓库里的 Usage 文档：npm 安装和 class 写法。",
+      "shot": {
+        "src": "/shots/animate-css/v2-breadth.png",
+        "sha256": "399db02628c9a85f384c1f67fdf236cbab761a43d7a22d4df93e796d696dee70",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98121,
+        "alt": "GitHub 上 01-usage.md：Installation and Usage、npm install animate.css --save 和 import 语句"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/animate-css/animate.css/blob/main/source/attention_seekers/bounce.css",
+      "finalUrl": "https://github.com/animate-css/animate.css/blob/main/source/attention_seekers/bounce.css",
+      "title": "animate.css/source/attention_seekers/bounce.css at main · animate-css/animate.css",
+      "selectionRationale": "最后打开 bounce.css：@keyframes bounce 就是这一条动画。",
+      "shot": {
+        "src": "/shots/animate-css/v2-proof.png",
+        "sha256": "e0be60d0ba1985250f3912ddf66de3fbbac92ea744fb27869f617050605152e2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 104132,
+        "alt": "GitHub bounce.css：@keyframes bounce 从 20% 到 90% 的 transform 和 cubic-bezier 代码"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Daniel Eden",
+      "sourceUrl": "https://animate.style/",
+      "evidence": "Core Team 表将 Daniel Eden 标为 Animate.css Creator，Elton Mesquita 为 Maintainer，Waren Gonzaga 为 Core Contributor。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "animate-css",
+      "sourceUrl": "https://github.com/animate-css/animate.css",
+      "evidence": "仓库位于 GitHub 组织 animate-css 下。LICENSE 版权行为 Animate.css Copyright 2021 Daniel Eden (“Licensor”)。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/animate-css/animate.css",
+      "sourceUrl": "https://animate.style/",
+      "evidence": "各节 Edit this on GitHub 链到 https://github.com/animate-css/animate.css 的 docsSource。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Hippocratic License 2.1",
+      "sourceUrl": "https://animate.style/",
+      "evidence": "License and Contributing 节写 Animate.css is licensed under the Hippocratic License，链到 firstdonoharm.dev。仓库 LICENSE 正文为 Hippocratic License Version Number: 2.1，Copyright 2021 Daniel Eden。该许可含人权条款，taxonomy 无对应 SPDX，facets.licenses 记为 custom。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://animate.style/",
+      "evidence": "Installation 提供 npm install animate.css --save 与 cdnjs 上的 4.1.1 免费 CSS；未见付费套餐。使用仍受 Hippocratic License 2.1 约束。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-c",
+    "technicalPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-c 补三张截图。官网是单页，breadth/proof 用仓库 Usage 文档和 bounce.css；见 questions.md。 swarm-reviewer-grok-d 复核活页、截图哈希与许可后 APPROVED。 许可为 Hippocratic License 2.1，不是 MIT。"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 3,
+  "entryId": "radix-themes",
+  "entityId": "entity-radix-ui",
+  "attemptId": "swarm-batch-radix-split-radix-themes-20260905",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://www.radix-ui.com/",
+    "finalUrl": "https://www.radix-ui.com/",
+    "checkedAt": "2026-09-05T23:15:00.000Z"
+  },
+  "editorial": {
+    "name": "Radix Themes",
+    "descriptionZh": "WorkOS 维护的预样式 React 组件库，通过 npm 包 @radix-ui/themes 提供主题、布局与一整套可直接使用的界面组件；仓库采用 MIT 许可，文档写明开箱即用，无样式需求则指向 Radix Primitives。",
+    "takeawayZh": "装上带样式的组件，主题一包就能开用",
+    "noteZh": "我们进首页，顶栏 Themes 亮着，左边是安装代码，右边团队名单和通知开关已经在动。体量去 Getting started：侧栏排到 Button、Dialog，正文写预样式组件库，无样式请去 Primitives。点开 Dialog，Edit profile 下面就是源码。适合要开箱外观的人；想自绘皮去 Primitives。首页 Pricing 卡是演示，不是售价。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-radix-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Getting started 自述 Radix Themes is a pre-styled component library，并列出 Theme、Layout 与 Button、Dialog 等一整套可安装组件，无样式需求则指向 Primitives。",
+        "evidenceUrl": "https://www.radix-ui.com/themes/docs/overview/getting-started"
+      },
+      {
+        "statement": "Dialog 文档同时给出带样式的 Edit profile 演示与 Dialog.Root 源码，证明交付物是预样式组件而不是无样式原语。",
+        "evidenceUrl": "https://www.radix-ui.com/themes/docs/components/dialog"
+      }
+    ],
+    "curatorId": "swarm-batch-radix-split",
+    "reviewerId": "swarm-reviewer-grok-c",
+    "confirmedAt": "2026-09-06T14:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://www.radix-ui.com/themes/docs/components/dialog",
+        "note": "该页就是 Themes 的 Dialog 文档，首屏有 Edit profile 演示和 Dialog.Root 源码。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css",
+      "radix-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.radix-ui.com/",
+      "finalUrl": "https://www.radix-ui.com/",
+      "title": "Radix UI",
+      "selectionRationale": "先看首页。Themes 亮着，左边安装代码，右边界面在动。",
+      "shot": {
+        "src": "/shots/radix-themes/v2-identity.png",
+        "sha256": "46f958ec36286f88387effdf9d21e781614a7a551725f245db097707e0366a49",
+        "width": 1280,
+        "height": 900,
+        "bytes": 494191,
+        "alt": "Radix 首页深色底，左侧 Themes 安装代码和 Get started，右侧是团队成员与通知开关"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.radix-ui.com/themes/docs/overview/getting-started",
+      "finalUrl": "https://www.radix-ui.com/themes/docs/overview/getting-started",
+      "title": "Getting started – Radix Themes",
+      "selectionRationale": "再翻 Getting started。侧栏列出主题、布局和组件，安装命令就在中间。",
+      "shot": {
+        "src": "/shots/radix-themes/v2-breadth.png",
+        "sha256": "2a330d9676f62bb32b3a99c29287448fc448a61524a5dbe37e7312b1b91a5efe",
+        "width": 1280,
+        "height": 900,
+        "bytes": 80831,
+        "alt": "Themes Getting started 页：左侧 Overview 与 Layout 导航，右侧 npm install @radix-ui/themes"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.radix-ui.com/themes/docs/components/dialog",
+      "finalUrl": "https://www.radix-ui.com/themes/docs/components/dialog",
+      "title": "Dialog – Radix Themes",
+      "selectionRationale": "最后开 Dialog。Edit profile 下面就是 Dialog.Root 源码。",
+      "shot": {
+        "src": "/shots/radix-themes/v2-proof.png",
+        "sha256": "3b36d5d6f93c6c82ec9d75256746609ff39218909dc3963c69e1a54f48a52f3d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78466,
+        "alt": "Themes Dialog 页：侧栏组件清单亮着 Dialog，右侧 Edit profile 按钮和 JSX 源码"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "WorkOS",
+      "sourceUrl": "https://github.com/radix-ui/themes/blob/main/LICENSE",
+      "evidence": "themes 仓库 LICENSE 为 MIT License，Copyright (c) 2023 WorkOS。README Authors 另列 Benoît Grélard、Vlad Moroz、Andy Hook、Lucas Motta。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "WorkOS",
+      "sourceUrl": "https://www.radix-ui.com/",
+      "evidence": "官网页眉 Made by WorkOS，链到 workos.com；仓库 About 写 Maintained by @workos。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/radix-ui/themes",
+      "sourceUrl": "https://www.radix-ui.com/",
+      "evidence": "首页 GitHub 图标指向 https://github.com/radix-ui/themes；仓库 About 回链 radix-ui.com/themes。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/radix-ui/themes/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 标题为 MIT License，Copyright (c) 2023 WorkOS；README 写 Licensed under the MIT License, Copyright © 2023-present WorkOS。覆盖本仓库源码与 @radix-ui/themes 包。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.radix-ui.com/",
+      "evidence": "首页可见 An open source component library；页面未发现付费套餐。首页 Pricing 区块是 Themes 演示界面，不是 Radix 自己的售价。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@radix-ui/themes",
+      "sourceUrl": "https://www.radix-ui.com/themes/docs/overview/getting-started",
+      "evidence": "Getting started 安装命令为 npm install @radix-ui/themes，并要求 import \"@radix-ui/themes/styles.css\"。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-batch-radix-split",
+    "technicalPassed": true,
+    "independentReviewRequired": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-05",
+    "note": "swarm-batch-radix-split 进站起草；swarm-reviewer-grok-c 复核活页、截图哈希与 facts 后 APPROVED。四条 Radix 产品共用 entity-radix-ui，entryId 保持拆分。"
+  }
+}

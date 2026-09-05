@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 3,
+  "entryId": "material-ui",
+  "entityId": "entity-material-ui",
+  "attemptId": "swarm-batch-components-material-ui-20260905",
+  "status": "DRAFT",
+  "official": {
+    "inputUrl": "https://mui.com/material-ui/",
+    "finalUrl": "https://mui.com/material-ui/",
+    "checkedAt": "2026-09-05T16:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Material UI",
+    "descriptionZh": "实现 Google Material Design 的开源 React 组件库，通过 npm 包 @mui/material 提供四十多个可直接用于生产的组件、主题定制和 CSS 工具；核心库 MIT 免费，MUI X 的 Pro/Premium 为另售。",
+    "takeawayZh": "按 Material Design 现成装，主题还能改",
+    "noteZh": "我们进去先看首页那句现成可用的 Material Design 组件，旁边就是安装命令。组件总览按输入、反馈、导航分栏，按钮、对话框、表格都有卡片。我们点开按钮：三种变体在上面，颜色、尺寸和加载在下面。适合要按 Material Design 快速铺界面的人。核心库 MIT 免费；定价页的付费档是 MUI X，别和这份组件库混成一回事。",
+    "pricing": "Material UI (MUI Core) is MIT and free; MUI X Pro/Premium/Enterprise are paid"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-material-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "needs-review",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "general-ui-components"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "官网把 Material UI 定义为实现 Google Material Design 的开源 React 组件库，可开箱用于生产，并提供主题定制。",
+        "evidenceUrl": "https://mui.com/material-ui/"
+      },
+      {
+        "statement": "组件总览按 Inputs、Data display、Feedback、Surface、Navigation、Layout 列出 Button、Dialog、Table 等整套组件，而不是单一控件或教程。",
+        "evidenceUrl": "https://mui.com/material-ui/all-components/"
+      }
+    ],
+    "curatorId": "swarm-batch-components"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://mui.com/material-ui/all-components/",
+        "note": "组件总览 Feedback 下列出 Dialog，并链到独立文档页。"
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://mui.com/material-ui/all-components/",
+        "note": "同一目录 Data display 下列出 Tooltip。"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://mui.com/material-ui/all-components/",
+        "note": "Inputs 下列出 Checkbox，对应表单解剖台的复选框。"
+      },
+      {
+        "stageId": "data-display",
+        "termId": "atlas-component-component-table",
+        "evidenceUrl": "https://mui.com/material-ui/all-components/",
+        "note": "Data display 下列出 Table，对应数据展示台的表格。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mui.com/material-ui/",
+      "finalUrl": "https://mui.com/material-ui/",
+      "title": "Material UI: React components that implement Material Design",
+      "selectionRationale": "先看首页。大标题说现成 Material Design，旁边就是安装命令。",
+      "shot": {
+        "src": "/shots/material-ui/v2-identity.png",
+        "sha256": "pending",
+        "width": 0,
+        "height": 0,
+        "bytes": 0,
+        "alt": "Material UI 首页的 Material Design 组件大标题、Get started 入口和 npm 安装命令"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://mui.com/material-ui/all-components/",
+      "finalUrl": "https://mui.com/material-ui/all-components/",
+      "title": "Material UI components - Material UI",
+      "selectionRationale": "再翻组件总览。输入到导航分栏，体量一眼能看完。",
+      "shot": {
+        "src": "/shots/material-ui/v2-breadth.png",
+        "sha256": "pending",
+        "width": 0,
+        "height": 0,
+        "bytes": 0,
+        "alt": "Material UI 组件总览页按 Inputs、Data display、Feedback 分栏的组件卡片清单"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://mui.com/material-ui/react-button/",
+      "finalUrl": "https://mui.com/material-ui/react-button/",
+      "title": "React Button component - Material UI",
+      "selectionRationale": "最后开按钮。三种变体在上面，颜色尺寸加载在下面。",
+      "shot": {
+        "src": "/shots/material-ui/v2-proof.png",
+        "sha256": "pending",
+        "width": 0,
+        "height": 0,
+        "bytes": 0,
+        "alt": "Material UI Button 文档的 text、contained、outlined 变体说明与可编辑演示"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "MUI Team",
+      "sourceUrl": "https://github.com/mui/material-ui/blob/master/packages/mui-material/package.json",
+      "evidence": "packages/mui-material/package.json 的 author 字段写 MUI Team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Material UI SAS",
+      "sourceUrl": "https://mui.com/material-ui/",
+      "evidence": "首页页脚原文：Copyright © 2026 Material UI SAS, trading as MUI。代码托管在 GitHub 组织 mui。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/mui/material-ui",
+      "sourceUrl": "https://mui.com/material-ui/",
+      "evidence": "首页顶栏 GitHub 图标指向 https://github.com/mui/material-ui；仓库 About 回链 https://mui.com/material-ui/。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/mui/material-ui/blob/master/LICENSE",
+      "evidence": "仓库 LICENSE 标题为 MIT License，版权行 Copyright (c) 2014 Call-Em-All；覆盖 mui/material-ui 源码与 @mui/material 包，不覆盖 MUI X 付费功能、模板商店或付费 Design Kit。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Material UI (MUI Core) is MIT and free; MUI X Pro/Premium/Enterprise are paid",
+      "sourceUrl": "https://mui.com/pricing/",
+      "evidence": "定价页 Community 写 Get started with the industry-standard React UI library, MIT-licensed，并列出 Material UI 属于 MUI Core (open-source)。Pro $299 / year / dev 起针对 MUI X，不是 Material UI 核心库售价。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@mui/material",
+      "sourceUrl": "https://mui.com/material-ui/",
+      "evidence": "首页安装命令为 npm install @mui/material @emotion/react @emotion/styled。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-batch-components",
+    "technicalPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-05"
+  }
+}

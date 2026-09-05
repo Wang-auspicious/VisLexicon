@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "entryId": "radix-colors",
+  "entityId": "entity-radix-ui",
+  "attemptId": "swarm-batch-radix-split-radix-colors-20260905",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://www.radix-ui.com/colors",
+    "finalUrl": "https://www.radix-ui.com/colors",
+    "checkedAt": "2026-09-05T23:15:00.000Z"
+  },
+  "editorial": {
+    "name": "Radix Colors",
+    "descriptionZh": "WorkOS 的开源界面色彩系统，提供 Gray 到 Sky 等多条 12 步色阶及透明变体，可通过 @radix-ui/colors 或 CDN 安装；仓库采用 MIT 许可，并带自定义色板生成器。",
+    "takeawayZh": "装一套按 1 到 12 编号的无障碍色阶",
+    "noteZh": "我们进 Colors 首页，大标题说给界面用的无障碍色彩系统，下面 Gray、Mauve 一直排到 Tomato，每行 1 到 12。文档 Installation 写 npm install @radix-ui/colors，也给 CDN 链接。最后开 Custom palette，可改强调色并 Copy。适合配 Radix 或自建主题的人；它不是图标也不是字体，只是色阶。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-radix-ui",
+    "primaryCategory": "visual-assets",
+    "subcategory": "illustrations-vectors",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Colors 首页把多条 12 步色阶铺成可浏览色板，交付物是界面色彩系统，而不是组件或教程。",
+        "evidenceUrl": "https://www.radix-ui.com/colors"
+      },
+      {
+        "statement": "Installation 提供 npm install @radix-ui/colors 与 CDN 样式表；Custom palette 页可生成并 Copy 自定义色板。",
+        "evidenceUrl": "https://www.radix-ui.com/colors/docs/overview/installation"
+      }
+    ],
+    "curatorId": "swarm-batch-radix-split",
+    "reviewerId": "swarm-reviewer-grok-c",
+    "confirmedAt": "2026-09-06T14:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "radix-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "asset-library",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.radix-ui.com/colors",
+      "finalUrl": "https://www.radix-ui.com/colors",
+      "title": "Radix Colors",
+      "selectionRationale": "先看首页。无障碍色彩系统那句下面，就是 1 到 12 的色阶表。",
+      "shot": {
+        "src": "/shots/radix-colors/v2-identity.png",
+        "sha256": "ebe0cc036722fb7c5fe948a7aa5c96bf792a322c3be528350073b7dac8d96448",
+        "width": 1280,
+        "height": 900,
+        "bytes": 104298,
+        "alt": "Radix Colors 首页：A gorgeous, accessible color system 标题，下方 Gray 到 Tomato 的 12 步色阶"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.radix-ui.com/colors/docs/overview/installation",
+      "finalUrl": "https://www.radix-ui.com/colors/docs/overview/installation",
+      "title": "Installation – Radix Colors",
+      "selectionRationale": "再翻 Installation。npm 和 CDN 两种装法都写在同一页。",
+      "shot": {
+        "src": "/shots/radix-colors/v2-breadth.png",
+        "sha256": "b09663aaf735cba747efc25f969518a5340c4957eb8e25bd98f7e62953a509a7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 61369,
+        "alt": "Colors Installation 页：npm install @radix-ui/colors 与 CDN link 示例，侧栏有 Scales"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.radix-ui.com/colors/custom",
+      "finalUrl": "https://www.radix-ui.com/colors/custom",
+      "title": "Create a custom palette – Radix Colors",
+      "selectionRationale": "最后开 Custom palette。改强调色，Copy 按钮就在旁边。",
+      "shot": {
+        "src": "/shots/radix-colors/v2-proof.png",
+        "sha256": "88c91ef98e6b1beddcf1e8870fd360b962aee43fa27705f56ada04a54af756d9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116176,
+        "alt": "Create a custom palette 页：Accent/Gray 色值输入、Copy 按钮和生成后的蓝灰 12 步色阶"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Colm Tuite, Vlad Moroz",
+      "sourceUrl": "https://github.com/radix-ui/colors/blob/main/README.md",
+      "evidence": "README Authors 列出 Colm Tuite 与 Vlad Moroz。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "WorkOS",
+      "sourceUrl": "https://www.radix-ui.com/colors",
+      "evidence": "官网页眉 Made by WorkOS；页脚写 A project by WorkOS。LICENSE 版权行为 Copyright (c) 2021-2022 Modulz 与 Copyright (c) 2022-Present WorkOS。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/radix-ui/colors",
+      "sourceUrl": "https://www.radix-ui.com/colors",
+      "evidence": "Colors 页顶栏 GitHub 图标指向 https://github.com/radix-ui/colors；仓库 About 回链 www.radix-ui.com/colors。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/radix-ui/colors/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 为 MIT License，Copyright (c) 2021-2022 Modulz 与 Copyright (c) 2022-Present WorkOS；README 写 Licensed under the MIT License, Copyright © 2022-present WorkOS。覆盖本仓库源码与 @radix-ui/colors 包。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.radix-ui.com/colors",
+      "evidence": "色板浏览、文档与 Custom palette 均可公开使用，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@radix-ui/colors",
+      "sourceUrl": "https://www.radix-ui.com/colors/docs/overview/installation",
+      "evidence": "Installation 写 Current version is 3.0.0，安装命令为 npm install @radix-ui/colors。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-batch-radix-split",
+    "technicalPassed": true,
+    "independentReviewRequired": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-05",
+    "note": "swarm-batch-radix-split 进站起草；swarm-reviewer-grok-c 复核后 APPROVED。分类树无 color-palette 小类，确认挂 illustrations-vectors。四条 Radix 产品共用 entity-radix-ui。"
+  }
+}

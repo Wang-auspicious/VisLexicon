@@ -1,0 +1,196 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T16:29:51.410Z",
+  "entryId": "d3",
+  "entityId": "entity-d3",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://d3js.org/",
+    "finalUrl": "https://d3js.org/",
+    "checkedAt": "2026-09-05T15:22:00.000Z"
+  },
+  "editorial": {
+    "name": "D3",
+    "descriptionZh": "Observable 维护的 JavaScript 数据可视化库，以选区、比例尺、形状与地理投影等模块组合自定义图表；npm 包 d3 采用 ISC 许可，作者为 Mike Bostock。",
+    "takeawayZh": "自己拼比例尺和形状，做出非模板图表",
+    "noteZh": "我们进首页，大标题写 bespoke data visualization，下面一排示例缩略图。API index 按 d3-axis、d3-scale 分模块往下排。我们点开 d3-scale：开头讲比例尺怎么把数据映射成位置，后面是 linear 和 quantize。适合要自己拼坐标的人；它不是现成图表套件。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 D3 定义为用来做定制动态可视化的 JavaScript 库，而不是现成图表套件或灵感图库。",
+        "evidenceUrl": "https://d3js.org/"
+      },
+      {
+        "statement": "d3-scale 文档说明比例尺如何把抽象数据映射到位置、尺寸和颜色，证明交付物是可视化实现代码。",
+        "evidenceUrl": "https://d3js.org/d3-scale"
+      }
+    ],
+    "confirmedAt": "2026-09-06T10:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "svg",
+      "canvas"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "ISC"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://d3js.org/",
+      "finalUrl": "https://d3js.org/",
+      "title": "D3 by Observable | The JavaScript library for bespoke data visualization",
+      "selectionRationale": "先看首页。bespoke data visualization 下面就是示例缩略图。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/d3/v2-identity.png",
+        "sha256": "ec9bf8a6e7aa2db7c35a012754a78f05b357255094caf4d3a4dc8a13e2744544",
+        "width": 1280,
+        "height": 900,
+        "bytes": 661353,
+        "alt": "D3 首页 bespoke data visualization 标题、Get started 按钮和六边形示例拼贴"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://d3js.org/api",
+      "finalUrl": "https://d3js.org/api",
+      "title": "API index | D3 by Observable",
+      "selectionRationale": "再翻 API index，d3-axis、d3-scale 按模块列开。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/d3/v2-breadth.png",
+        "sha256": "b5b2fde089a9795bd0144f864484a1c4f9cab04c6d5aeb669a287d2a16de1a4a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 102693,
+        "alt": "D3 API index 页 d3-array 模块与左侧 Visualization 模块列表"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://d3js.org/d3-scale",
+      "finalUrl": "https://d3js.org/d3-scale",
+      "title": "d3-scale | D3 by Observable",
+      "selectionRationale": "最后开 d3-scale。比例尺怎么把数据映射成位置，这一页讲完。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/d3/v2-proof.png",
+        "sha256": "7cf159615884f399cb9e3577d6d1ab2b720d1de9d16d0c8a8d1d4e6fdadda04e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 107110,
+        "alt": "d3-scale 文档的比例尺说明与 Linear、Time、Pow 等比例尺清单"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Mike Bostock",
+      "sourceUrl": "https://github.com/d3/d3/blob/main/package.json",
+      "evidence": "仓库 package.json 的 author 字段为 name: Mike Bostock，url: https://bost.ocks.org/mike。LICENSE 版权行为 Copyright 2010-2023 Mike Bostock。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Observable",
+      "sourceUrl": "https://d3js.org/",
+      "evidence": "首页写 Built by Observable，并链到 Observable 平台。页面标题为 D3 by Observable。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/d3/d3",
+      "sourceUrl": "https://github.com/d3/d3/blob/main/package.json",
+      "evidence": "package.json 的 repository.url 为 https://github.com/d3/d3.git，homepage 为 https://d3js.org。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/d3/d3/blob/main/LICENSE",
+      "evidence": "LICENSE 正文为 ISC 许可常用措辞：Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted… Copyright 2010-2023 Mike Bostock。package.json 的 license 字段为 ISC。该许可覆盖 d3 仓库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://d3js.org/",
+      "evidence": "文档与 API 公开可读；源码以 ISC 许可发布，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "d3",
+      "sourceUrl": "https://github.com/d3/d3/blob/main/package.json",
+      "evidence": "package.json 的 name 字段为 d3，version 7.9.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/d3",
+    "designMdUrl": "https://vislexicon.com/site/d3.md",
+    "checkedAt": "2026-09-05T15:22:00.000Z",
+    "license": "ISC"
+  }
+}

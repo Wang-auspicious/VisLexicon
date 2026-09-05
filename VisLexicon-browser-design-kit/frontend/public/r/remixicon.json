@@ -1,0 +1,201 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T16:29:51.410Z",
+  "entryId": "remixicon",
+  "entityId": "entity-remixicon",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://remixicon.com/",
+    "finalUrl": "https://remixicon.com/",
+    "checkedAt": "2026-09-05T15:24:00.000Z"
+  },
+  "editorial": {
+    "name": "Remix Icon",
+    "descriptionZh": "Remix Design 的中性图标库，Outlined 与 Filled 两套基于 24×24 网格。可复制 SVG 或装 remixicon。许可 Remix Icon License v1.0，可商用，不得当独立图标包转售或当商标。",
+    "takeawayZh": "复制中性系统图标，商用可以，别当商标卖",
+    "noteZh": "我们打开官网，它就是图标网格。GitHub README 写清 Outlined 与 Filled 两套，并给 remixicon 包。我们点开 icons/Buildings，fill 和 line 的 SVG 源文件排成清单。适合要中性系统符号的人；许可是 Remix Icon License v1.0，不能拿整套去卖图标包。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "icons-symbols",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 把 Remix Icon 定义为面向设计师和开发者的开源中性系统符号，官网用于浏览并复制 SVG，而不是组件库。",
+        "evidenceUrl": "https://github.com/Remix-Design/RemixIcon"
+      },
+      {
+        "statement": "仓库 icons/Buildings 目录列出 ancient-gate、bank、building 等 fill/line SVG，证明交付物是可拿走的图标源文件。",
+        "evidenceUrl": "https://github.com/Remix-Design/RemixIcon/tree/master/icons/Buildings"
+      }
+    ],
+    "confirmedAt": "2026-09-06T10:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "icon"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "copy",
+      "download",
+      "install"
+    ],
+    "media": [
+      "icon"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "svg",
+      "react",
+      "vue",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "source-available"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en",
+      "zh-hans"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://remixicon.com/",
+      "finalUrl": "https://remixicon.com/",
+      "title": "Remix Icon - Open source icon library",
+      "selectionRationale": "先看官网。它本身就是图标网格，搜索和复制都在这一页。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/remixicon/v2-identity.png",
+        "sha256": "760d2cea6d29612119e2f5ca66293a479d5ebf44f3b0484bc4621dbf0456dfbb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 387371,
+        "alt": "Remix Icon 首页 Simply Delightful Icon System、搜索框和 Arrows 图标网格"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/Remix-Design/RemixIcon",
+      "finalUrl": "https://github.com/Remix-Design/RemixIcon",
+      "title": "GitHub - Remix-Design/RemixIcon: Open source neutral style icon system",
+      "selectionRationale": "再翻 GitHub README，Outlined、Filled 和安装方式写在一起。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/remixicon/v2-breadth.png",
+        "sha256": "88139e6ad83c83e372c06598cc7651a4decd68bf44fc6c662d7020cca00ba4f9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121944,
+        "alt": "GitHub RemixIcon 仓库页，License 标 Remix Icon License v1.0，README 写 Open-Source Icon Library"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/Remix-Design/RemixIcon/tree/master/icons/Buildings",
+      "finalUrl": "https://github.com/Remix-Design/RemixIcon/tree/master/icons/Buildings",
+      "title": "RemixIcon/icons/Buildings at master · Remix-Design/RemixIcon",
+      "selectionRationale": "最后开 Buildings 目录。fill 和 line 的 SVG 源文件排在一起。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/remixicon/v2-proof.png",
+        "sha256": "4026529ae4ad56834bb61880f38f97845a9439366082c29015b5330d019cb3ee",
+        "width": 1280,
+        "height": 900,
+        "bytes": 59935,
+        "alt": "GitHub icons/Buildings 目录，列出 ancient-gate、bank、building 的 fill 与 line SVG"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Wendy Gao; Jimmy Cheung",
+      "sourceUrl": "https://github.com/Remix-Design/RemixIcon/blob/master/package.json",
+      "evidence": "package.json 的 contributors 为 Wendy Gao <wendygaoyuan@163.com> 与 Jimmy Cheung <jimmy@remixdesign.cn>。README 把后者邮箱写成 jimmy@remixdesign.cn。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Remix Design",
+      "sourceUrl": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/master/License",
+      "evidence": "License 文件写 Copyright (c) 2017–2026 Remix Design。GitHub 组织为 Remix-Design。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/Remix-Design/RemixIcon",
+      "sourceUrl": "https://github.com/Remix-Design/RemixIcon",
+      "evidence": "README 顶部链到 https://remixicon.com，仓库 About 回链官网。package.json 的 repository.url 为 https://github.com/Remix-Design/remixicon.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "custom",
+      "sourceUrl": "https://raw.githubusercontent.com/Remix-Design/RemixIcon/master/License",
+      "evidence": "文件标题 Remix Icon License v1.0，Version 1.0 – January 2026。允许个人与商用、修改和作为更大作品的一部分分发；禁止把图标当独立图标包转售、做竞品图标库，或用作 logo/商标。README 写 Remix Icon is licensed under the Remix Icon License v1.0，并注明 Effective January 2026, we have updated our license agreement。该条款覆盖图标、SVG 与字体文件，不是 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/Remix-Design/RemixIcon",
+      "evidence": "README 写 All of the icons are free for both personal and commercial use。官网与仓库均可公开浏览下载，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "remixicon",
+      "sourceUrl": "https://github.com/Remix-Design/RemixIcon/blob/master/package.json",
+      "evidence": "package.json 的 name 为 remixicon，version 4.9.1。README 另给出 @remixicon/react 与 @remixicon/vue。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。custom：文件标题 Remix Icon License v1.0，Version 1.0 – January 2026。允许个人与商用、修改和作为更大作品的一部分分发；禁止把图标当独立图标包转售、做竞品图标库，或用作 logo/商标。README 写 Remix Icon is licensed under the Remix Icon License v1.0，并注明 Effective January 2026, we have updated our license agreement。该条款覆盖图标、SVG 与字体文件，不是 MIT。"
+    ],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/remixicon",
+    "designMdUrl": "https://vislexicon.com/site/remixicon.md",
+    "checkedAt": "2026-09-05T15:24:00.000Z",
+    "license": "custom"
+  }
+}

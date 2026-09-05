@@ -1,0 +1,238 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T16:29:51.410Z",
+  "entryId": "ark-ui",
+  "entityId": "entity-ark-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://ark-ui.com/",
+    "finalUrl": "https://ark-ui.com/",
+    "checkedAt": "2026-09-05T18:40:00.000Z"
+  },
+  "editorial": {
+    "name": "Ark UI",
+    "descriptionZh": "Chakra 团队维护的无样式、无障碍组件库，用状态机驱动，同一套 API 覆盖 React、Vue、Svelte 等框架，npm 包如 @ark-ui/react；仓库 MIT，可自带样式搭建设计系统。",
+    "takeawayZh": "无样式原语跨 React Vue Svelte",
+    "noteZh": "我们打开首页，写无样式、无障碍组件，并列出 React、Vue、Svelte。入门页让安装 React 包，再用滑块示范没有默认样式。我们点开对话框：零件图拆触发器和内容。适合要跨框架自绘设计系统的人。仓库 MIT；Plus 另售独家例子，别把站点付费当成库本身收费。",
+    "pricing": "Core @ark-ui/react is MIT and free; Ark Plus is a one-time purchase for exclusive examples",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 Ark UI 定义为 headless library with 45+ accessible components，明确无默认样式、自带 WAI-ARIA，并跨 React、Solid、Vue、Svelte。",
+        "evidenceUrl": "https://ark-ui.com/"
+      },
+      {
+        "statement": "入门页安装 @ark-ui/react 并用无样式 Slider 示范；Dialog 单项页给出 Anatomy、Alert Dialog 和键盘支持，证明交付物是无样式原语。",
+        "evidenceUrl": "https://ark-ui.com/docs/components/dialog"
+      }
+    ],
+    "confirmedAt": "2026-09-06T10:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn",
+      "purchase"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "vue",
+      "svelte",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ark-ui.com/",
+      "finalUrl": "https://ark-ui.com/",
+      "title": "Ark UI",
+      "selectionRationale": "先看首页。无样式、四十多个组件，旁边列出四个框架。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ark-ui/v2-identity.png",
+        "sha256": "aa980408c7e4d785884888d0341a089ca4c5a9e17bffd37aa818282d341843e4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 165460,
+        "alt": "Ark UI 首页 Unstyled UI components 大标题、Get Started 按钮和 React Solid Vue Svelte 图标"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ark-ui.com/docs/overview/getting-started",
+      "finalUrl": "https://ark-ui.com/docs/overview/getting-started",
+      "title": "Getting Started | Ark UI",
+      "selectionRationale": "再看入门页。左侧组件清单，正文是安装和 Quickstart。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ark-ui/v2-breadth.png",
+        "sha256": "2ee97b6a8d5e082486aa84e4889a25aa75ed69152ea622d50495b4d8b69d8bfe",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117796,
+        "alt": "Ark UI Getting Started：左侧 Accordion 等组件导航，正文 Quickstart 和 Install Ark UI"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ark-ui.com/docs/components/dialog",
+      "finalUrl": "https://ark-ui.com/docs/components/dialog",
+      "title": "Dialog | Ark UI",
+      "selectionRationale": "最后开对话框。Open dialog 按钮在上面，零件图在下面。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ark-ui/v2-proof.png",
+        "sha256": "632e2264079d05dae9ab6b7059a7c3c8b8373dfc2f462228c2f2bb91d2a587b7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 172297,
+        "alt": "Ark UI Dialog 页的 Open dialog 按钮、Command Menu 示例卡和 Anatomy 零件标注图"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Christian Schröter, Segun Adebayo, and the Chakra UI team",
+      "sourceUrl": "https://github.com/chakra-ui/ark",
+      "evidence": "仓库 README Sponsors 节原文：Ark UI is maintained by Christian Schröter, Segun Adebayo, and the Chakra UI team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Chakra Systems Inc.",
+      "sourceUrl": "https://github.com/chakra-ui/ark/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 版权行 Copyright (c) 2024 Chakra Systems Inc.；README License 节写 MIT © Chakra Systems Inc.。代码托管在 GitHub 组织 chakra-ui。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/chakra-ui/ark",
+      "sourceUrl": "https://ark-ui.com/docs/overview/getting-started",
+      "evidence": "入门页把问题反馈链到 https://github.com/chakra-ui/ark/issues/new/choose；仓库 README 回链 https://ark-ui.com/。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/chakra-ui/ark/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 为 MIT License，Copyright (c) 2024 Chakra Systems Inc.；覆盖 chakra-ui/ark 源码与 @ark-ui/react 等框架包。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core @ark-ui/react is MIT and free; Ark Plus is a one-time purchase for exclusive examples",
+      "sourceUrl": "https://ark-ui.com/plus",
+      "evidence": "Plus 页写 One-time payment, lifetime updates。Personal 现价 （划线 ），Team 现价 （划线 ）。FAQ 写购买后获得 exclusive examples。核心库仍可 npm install @ark-ui/react，LICENSE 为 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@ark-ui/react",
+      "sourceUrl": "https://ark-ui.com/docs/overview/getting-started",
+      "evidence": "入门页安装命令为 npm install @ark-ui/react；首页示例为 import { Slider } from '@ark-ui/react/slider'。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://ark-ui.com/docs/components/dialog",
+        "note": "该页就是 Dialog 原语文档，含 Anatomy、Alert Dialog 和 WAI-ARIA 键盘说明。",
+        "termEn": "Dialog",
+        "termZh": null
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://github.com/chakra-ui/ark",
+        "note": "仓库 README Overlays & Dialogs 列出 Tooltip，与 Dialog、Popover 并列。",
+        "termEn": "Tooltip",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://github.com/chakra-ui/ark",
+        "note": "同一 README Forms & Inputs 列出 Checkbox。",
+        "termEn": "Checkbox",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://github.com/chakra-ui/ark",
+        "note": "同一 README Forms & Inputs 列出 Combobox。",
+        "termEn": "Combobox",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "存在付费层：Core @ark-ui/react is MIT and free; Ark Plus is a one-time purchase for exclusive examples。"
+    ],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/ark-ui",
+    "designMdUrl": "https://vislexicon.com/site/ark-ui.md",
+    "checkedAt": "2026-09-05T18:40:00.000Z",
+    "license": "MIT"
+  }
+}

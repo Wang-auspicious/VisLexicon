@@ -1,0 +1,236 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T16:29:51.410Z",
+  "entryId": "ariakit",
+  "entityId": "entity-ariakit",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://ariakit.org/",
+    "finalUrl": "https://ariakit.com/",
+    "checkedAt": "2026-09-05T15:37:05.685Z"
+  },
+  "editorial": {
+    "name": "Ariakit",
+    "descriptionZh": "Diego Haz 等人维护的开源无样式 React 无障碍原语库，npm 包 @ariakit/react 提供可组合组件和可复制带样式例子；核心包 MIT 免费，Ariakit Plus 另售独家例子。",
+    "takeawayZh": "无样式原语管无障碍，例子可复制",
+    "noteZh": "我们打开首页，写明用 React 做无障碍，并点明无样式原语和可复制的带样式例子。组件目录从按钮、复选框、组合框排到对话框、提示。我们点开对话框：演示按钮能点，下面是源码和背景层样式说明。适合要自己画皮、还要把对话框焦点做对的人。核心包 MIT；Plus 买的是独家例子，别把站点付费当成库本身收费。",
+    "pricing": "Core @ariakit/react is free MIT; Ariakit Plus is a one-time purchase for exclusive examples",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 Ariakit 定义为带 unstyled primitive components 的开源库，并提供可复制的 styled examples，用来搭建无障碍 Web 应用。",
+        "evidenceUrl": "https://ariakit.com/"
+      },
+      {
+        "statement": "组件目录列出 Button 到 Tooltip 的 WAI-ARIA 原语；Dialog 单项页同时给出可点演示、@ariakit/react 源码和焦点/滚动说明。",
+        "evidenceUrl": "https://ariakit.com/components/dialog"
+      }
+    ],
+    "confirmedAt": "2026-09-05T15:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ariakit.org/",
+      "finalUrl": "https://ariakit.com/",
+      "title": "Ariakit - Toolkit for building accessible UIs",
+      "selectionRationale": "先看首页。无样式原语和可复制例子写在标题下。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ariakit/v2-identity.png",
+        "sha256": "cedb5bdf0441d752dc8f97a4a470d8ca6d3123ddd9098fd29265198ccf6780e6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 107522,
+        "alt": "Ariakit 首页 Build accessible web apps with React 大标题、Get started 和 Explore components 入口"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ariakit.org/components",
+      "finalUrl": "https://ariakit.com/components",
+      "title": "Components - Ariakit",
+      "selectionRationale": "再翻组件目录。按钮到提示一条条列着，能看出体量。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ariakit/v2-breadth.png",
+        "sha256": "014e30c7ffb906256db837cd17ac36e4bd6436f67a54f6d8cf4b03c2696fb1d7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109142,
+        "alt": "Ariakit Components 页从 Button、Checkbox、Combobox 到 Dialog、Tooltip 的原语清单"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ariakit.org/components/dialog",
+      "finalUrl": "https://ariakit.com/components/dialog",
+      "title": "Dialog - Ariakit",
+      "selectionRationale": "最后开对话框。上面演示能点，下面是源码和背景层。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ariakit/v2-proof.png",
+        "sha256": "bbfa56c84b2a882aeb5f463504be42fd4c826770d3ac4de755e4061a4022f526",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84876,
+        "alt": "Ariakit Dialog 页的 Show modal 演示按钮和 @ariakit/react 导入源码"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Diego Haz",
+      "sourceUrl": "https://github.com/ariakit/ariakit",
+      "evidence": "仓库 README Core Team 第一条是 Diego Haz，并链到 https://haz.dev。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Ariakit FZ-LLC",
+      "sourceUrl": "https://github.com/ariakit/ariakit/blob/main/packages/ariakit-react/license",
+      "evidence": "packages/ariakit-react/license 版权行写 Copyright (c) 2025-present Ariakit FZ-LLC。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/ariakit/ariakit",
+      "sourceUrl": "https://github.com/ariakit/ariakit",
+      "evidence": "仓库 About 回链 https://ariakit.com；README 写 Explore website » https://ariakit.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/ariakit/ariakit/blob/main/packages/ariakit-react/license",
+      "evidence": "GitHub README Licensing 表写 packages 为 MIT；ariakit-react/license 标题为 MIT License，版权 Ariakit FZ-LLC。覆盖 packages 源码，不覆盖 Plus 例子和 app 专有代码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core @ariakit/react is free MIT; Ariakit Plus is a one-time purchase for exclusive examples",
+      "sourceUrl": "https://github.com/ariakit/ariakit",
+      "evidence": "README Licensing 表：packages 与非 Plus examples 为 MIT；examples (Plus) 为 Ariakit Plus License，链到 https://ariakit.com/plus/license。该协议写明 Ariakit Plus grants you a non-exclusive license … to use the Ariakit Plus examples。本次复核未见公开美元标价。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@ariakit/react",
+      "sourceUrl": "https://ariakit.com/components/dialog",
+      "evidence": "Dialog 示例源码为 import * as Ariakit from \"@ariakit/react\"。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://ariakit.com/components/dialog",
+        "note": "该页就是 Dialog 原语文档，首屏有 Show modal 演示和 @ariakit/react 源码。",
+        "termEn": "Dialog",
+        "termZh": null
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://ariakit.com/components",
+        "note": "组件目录把 Tooltip 列为独立原语，并写明焦点或悬停时出现的提示。",
+        "termEn": "Tooltip",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://ariakit.com/components",
+        "note": "同一目录收录 Checkbox，并写明基于 WAI-ARIA Checkbox Pattern。",
+        "termEn": "Checkbox",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://ariakit.com/components",
+        "note": "同一目录收录 Combobox，对应表单解剖台的组合框。",
+        "termEn": "Combobox",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "存在付费层：Core @ariakit/react is free MIT; Ariakit Plus is a one-time purchase for exclusive examples。"
+    ],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/ariakit",
+    "designMdUrl": "https://vislexicon.com/site/ariakit.md",
+    "checkedAt": "2026-09-05T15:37:05.685Z",
+    "license": "MIT"
+  }
+}

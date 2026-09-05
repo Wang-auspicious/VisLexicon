@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 3,
+  "entryId": "heroui",
+  "entityId": "entity-heroui",
+  "attemptId": "swarm-batch-components-heroui-20260905",
+  "status": "DRAFT",
+  "official": {
+    "inputUrl": "https://www.heroui.com/",
+    "finalUrl": "https://www.heroui.com/",
+    "checkedAt": "2026-09-05T16:30:00.000Z"
+  },
+  "editorial": {
+    "name": "HeroUI",
+    "descriptionZh": "原 NextUI，YC S24 开源 React / React Native 组件库。Web 端把 React Aria 与 Tailwind CSS v4 拼成默认可看、可改的无障碍组件，npm 包为 @heroui/react；核心库 MIT 免费，HeroUI Pro 模板另售。",
+    "takeawayZh": "以前叫 NextUI，默认好看用 Tailwind 改",
+    "noteZh": "我们进去先看首页默认好看那句，并写明以前叫 NextUI。组件目录按按钮、浮层分栏，按钮、模态框、提示都有预览图。我们点开按钮：先看导入语句，下面是变体、尺寸、加载和样式类名。适合要无障碍行为加 Tailwind 默认样式的人。核心包 MIT 可免费装；页脚是 NextUI Inc.，模板要去 Pro，别和开源库混成一份。",
+    "pricing": "Core @heroui/react is free MIT; HeroUI Pro templates are a separate paid offering"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-heroui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "needs-review",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "design-system-suites"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "官网把 HeroUI 定义为面向 web 与移动端的现代 UI 库，Web 端结合 React Aria Components 与 Tailwind CSS v4，提供可访问行为、类型化 API 和抛光默认样式。",
+        "evidenceUrl": "https://www.heroui.com/"
+      },
+      {
+        "statement": "组件目录按 Buttons、Overlays 等分组列出 Button、Modal、Tooltip 等带预览的组件；Button 单项页给出 @heroui/react 导入、变体和 CSS 类名。",
+        "evidenceUrl": "https://www.heroui.com/en/docs/react/components"
+      }
+    ],
+    "curatorId": "swarm-batch-components"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://www.heroui.com/en/docs/react/components",
+        "note": "组件目录 Overlays 下列出 Tooltip，并带预览图。"
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://www.heroui.com/en/docs/react/components",
+        "note": "同一 Overlays 分组列出 AlertDialog 与 Modal，对应对话框/模态层。"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://www.heroui.com/en/docs/react/components",
+        "note": "侧栏与目录均列出 Checkbox，对应表单解剖台的复选框。"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://www.heroui.com/en/docs/react/components",
+        "note": "Pickers 下列出 ComboBox，对应表单解剖台的组合框。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "react-native",
+      "tailwind",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.heroui.com/",
+      "finalUrl": "https://www.heroui.com/",
+      "title": "HeroUI v3 (Previously NextUI) - Beautiful by default, customizable by design.",
+      "selectionRationale": "先看首页。默认好看，并写明以前叫 NextUI。",
+      "shot": {
+        "src": "/shots/heroui/v2-identity.png",
+        "sha256": "pending",
+        "width": 0,
+        "height": 0,
+        "bytes": 0,
+        "alt": "HeroUI 首页 Beautiful by default 大标题、Get started 入口和 Previously NextUI 说明"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.heroui.com/en/docs/react/components",
+      "finalUrl": "https://www.heroui.com/en/docs/react/components",
+      "title": "HeroUI React Components – Accessible UI Library",
+      "selectionRationale": "再翻组件目录。按钮到浮层分栏，预览图能看出体量。",
+      "shot": {
+        "src": "/shots/heroui/v2-breadth.png",
+        "sha256": "pending",
+        "width": 0,
+        "height": 0,
+        "bytes": 0,
+        "alt": "HeroUI All Components 页按 Buttons、Overlays 分栏的组件预览卡片"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.heroui.com/en/docs/react/components/button",
+      "finalUrl": "https://www.heroui.com/en/docs/react/components/button",
+      "title": "HeroUI Button – Accessible React Button Component",
+      "selectionRationale": "最后开按钮。导入语句在上面，变体尺寸加载在下面。",
+      "shot": {
+        "src": "/shots/heroui/v2-proof.png",
+        "sha256": "pending",
+        "width": 0,
+        "height": 0,
+        "bytes": 0,
+        "alt": "HeroUI Button 文档的 @heroui/react 导入语句、变体尺寸和加载状态示例"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Junior Garcia",
+      "sourceUrl": "https://www.heroui.com/about",
+      "evidence": "About 页原文：HeroUI is a Y Combinator S24 company founded by Junior Garcia。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "NextUI Inc.",
+      "sourceUrl": "https://www.heroui.com/",
+      "evidence": "首页与 About 页脚均写 © 2026 NextUI Inc. All rights reserved。LICENSE 版权行 Copyright (c) 2020 Next UI Inc.。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/heroui-inc/heroui",
+      "sourceUrl": "https://www.heroui.com/",
+      "evidence": "首页 GitHub 计数与页脚 GitHub 均指向 https://github.com/heroui-inc/heroui；仓库 README 写 Previously NextUI 并回链 heroui.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/heroui-inc/heroui/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 为 MIT License，Copyright (c) 2020 Next UI Inc.；GitHub README License 节也写 MIT。覆盖 heroui-inc/heroui 源码与 @heroui/react 包，不覆盖 HeroUI Pro 模板。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core @heroui/react is free MIT; HeroUI Pro templates are a separate paid offering",
+      "sourceUrl": "https://www.heroui.com/",
+      "evidence": "首页原文：Teams can inspect the source, use the free packages, and adapt each component to their own design system。同页组件演示区链到 heroui.pro，标注 Available in Pro as template。首页「Get a paid plan for more credits」出现在演示界面里，不能当成库本身售价。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@heroui/react",
+      "sourceUrl": "https://www.heroui.com/en/docs/react/components/button",
+      "evidence": "Button 文档导入语句为 import { Button } from '@heroui/react'；GitHub README 安装命令为 npm install @heroui/react。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-batch-components",
+    "technicalPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-05"
+  }
+}

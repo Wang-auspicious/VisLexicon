@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 3,
+  "entryId": "react-aria",
+  "entityId": "entity-react-aria",
+  "attemptId": "swarm-curator-batch-d-react-aria-20260905",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://react-spectrum.adobe.com/react-aria/",
+    "finalUrl": "https://react-aria.adobe.com/",
+    "checkedAt": "2026-09-05T15:26:00.000Z"
+  },
+  "editorial": {
+    "name": "React Aria",
+    "descriptionZh": "Adobe 的无样式无障碍 React 组件库，带行为、键盘与国际化；npm 包 react-aria-components，仓库 Apache-2.0。本条只收 React Aria 文档，不含 Spectrum 视觉套件。",
+    "takeawayZh": "装上无样式组件，无障碍和键盘它管",
+    "noteZh": "我们从旧文档地址被转到 react-aria.adobe.com。首页写无样式、可访问。Getting started 给出 npm install react-aria-components。我们打开 ComboBox：Favorite Animal 演示旁边就是源码。适合要自己画皮、又要把无障碍做对的人；这不是 Spectrum 那套带皮肤的组件。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-react-aria",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "React Aria 首页把它定义为可自定义样式的无障碍组件库，强调 style-free 与内建行为，而不是 Adobe Spectrum 视觉套件。",
+        "evidenceUrl": "https://react-aria.adobe.com/"
+      },
+      {
+        "statement": "ComboBox 文档同时给出可点演示、可复制源码和 API 表，证明交付物是无样式无障碍原语。",
+        "evidenceUrl": "https://react-aria.adobe.com/ComboBox.html"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d",
+    "reviewerId": "swarm-reviewer-grok-d",
+    "confirmedAt": "2026-09-06T10:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://react-aria.adobe.com/ComboBox.html",
+        "note": "ComboBox 单项页本身就是组合框演示、源码和 API，对应表单解剖台的 Combobox。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://react-spectrum.adobe.com/react-aria/",
+      "finalUrl": "https://react-aria.adobe.com/",
+      "title": "React Aria",
+      "selectionRationale": "先看 React Aria 首页。大标题说无样式、可访问，不是 Spectrum。",
+      "shot": {
+        "src": "/shots/react-aria/v2-identity.png",
+        "sha256": "05613a5b11abe0c484f50594be720a1d52e98b1459f22faec9f1756790b28d53",
+        "width": 1280,
+        "height": 900,
+        "bytes": 237533,
+        "alt": "React Aria 首页 accessible components 标题、Get started 与带 Popover/Tooltip 标注的示例窗"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://react-aria.adobe.com/getting-started.html",
+      "finalUrl": "https://react-aria.adobe.com/getting-started.html",
+      "title": "Getting started | React Aria",
+      "selectionRationale": "再翻 Getting started。安装命令和 Select 示例都在这页。",
+      "shot": {
+        "src": "/shots/react-aria/v2-breadth.png",
+        "sha256": "3901b4f2fbfa5cd63d2f3df06594018c10d969f5ed90b60cad2802a508224c9d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 111116,
+        "alt": "Getting started 页 npm install react-aria-components 与左侧 Components 清单"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://react-aria.adobe.com/ComboBox.html",
+      "finalUrl": "https://react-aria.adobe.com/ComboBox.html",
+      "title": "ComboBox | React Aria",
+      "selectionRationale": "最后开 ComboBox。Favorite Animal 演示旁边就是源码。",
+      "shot": {
+        "src": "/shots/react-aria/v2-proof.png",
+        "sha256": "79c830e2c770596d9f5c788b6b4aebc3496f29527e051036add51a536e879a98",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127833,
+        "alt": "ComboBox 页 Favorite Animal 演示、Vanilla CSS/Tailwind 切换和示例源码"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Adobe Inc",
+      "sourceUrl": "https://react-aria.adobe.com/",
+      "evidence": "首页 JSON-LD 写 author: Adobe Inc，publisher.name: Adobe。页脚 Copyright © 2026 Adobe. All rights reserved.",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Adobe",
+      "sourceUrl": "https://react-aria.adobe.com/",
+      "evidence": "JSON-LD publisher 为 Organization name Adobe，url https://www.adobe.com。LICENSE 附录写 Copyright 2019 Adobe。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/adobe/react-spectrum",
+      "sourceUrl": "https://github.com/adobe/react-spectrum/blob/main/packages/react-aria-components/package.json",
+      "evidence": "react-aria-components 的 package.json repository.url 为 https://github.com/adobe/react-spectrum。该单仓库同时包含 React Spectrum 与 React Aria，本条目只对应 React Aria 文档入口。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/adobe/react-spectrum/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 标题为 Apache License Version 2.0，附录 Copyright 2019 Adobe。packages/react-aria-components/package.json 的 license 字段为 Apache-2.0。该许可覆盖 adobe/react-spectrum 源码，不覆盖 Adobe 商标或 Spectrum 设计资产。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://react-aria.adobe.com/getting-started.html",
+      "evidence": "Getting started 给出 npm install react-aria-components，文档与示例公开可读，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "react-aria-components",
+      "sourceUrl": "https://react-aria.adobe.com/getting-started.html",
+      "evidence": "Install 节命令为 npm install react-aria-components。package.json 的 name 为 react-aria-components，description 为 A library of styleable components built using React Aria。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d",
+    "technicalPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-d 进站起草；截图采集后回填 sha256/bytes；本条目是 React Aria，不是 React Spectrum。 swarm-reviewer-grok-d 复核活页、截图哈希与许可后 APPROVED。 本条是 React Aria，不是 Adobe Spectrum。"
+  }
+}

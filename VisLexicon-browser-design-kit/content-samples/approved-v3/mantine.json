@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 3,
+  "entryId": "mantine",
+  "entityId": "entity-mantine",
+  "attemptId": "swarm-curator-batch-c-mantine-20260905",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://mantine.dev/",
+    "finalUrl": "https://mantine.dev/",
+    "checkedAt": "2026-09-05T18:40:00.000Z"
+  },
+  "editorial": {
+    "name": "Mantine",
+    "descriptionZh": "功能完整的开源 React 组件库，核心包 @mantine/core 提供一百二十多个可主题化组件，另有七十多个钩子、表单库和图表等扩展；仓库采用 MIT 许可，文档写明可免费使用。",
+    "takeawayZh": "装上可主题化组件，钩子和表单一起用",
+    "noteZh": "我们进去先看首页：完整功能的 React 组件库，组件和钩子写在同一句里。体量要去核心包目录：布局、输入、按钮、浮层分栏，按钮和对话框都在清单里。我们点开按钮：变体、尺寸、圆角能调，还有加载和按钮组。适合要一整套可主题化组件和表单钩子的人。核心包 MIT；页脚是 Vitaly Rtishchev，赞助不是卖组件。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-mantine",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "general-ui-components"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "官网把 Mantine 定义为 fully featured React components library，并写明 120+ 可定制组件、70 个 hooks、主题和扩展包。",
+        "evidenceUrl": "https://mantine.dev/"
+      },
+      {
+        "statement": "@mantine/core 文档按 Layout、Inputs、Buttons、Overlays 等列出 AppShell、Button、Dialog、Tooltip 等整套组件，并给出安装命令。",
+        "evidenceUrl": "https://mantine.dev/core/package/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-c",
+    "reviewerId": "swarm-reviewer-grok-d",
+    "confirmedAt": "2026-09-06T10:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://mantine.dev/core/package/",
+        "note": "核心包侧栏 Overlays 下列出 Dialog，并链到独立文档。"
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://mantine.dev/core/package/",
+        "note": "同一 Overlays 分组列出 Tooltip。"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://mantine.dev/core/package/",
+        "note": "Inputs 下列出 Checkbox，对应表单解剖台的复选框。"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://mantine.dev/core/package/",
+        "note": "Combobox 分组把 Combobox 列为独立组件。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mantine.dev/",
+      "finalUrl": "https://mantine.dev/",
+      "title": "Mantine",
+      "selectionRationale": "先看首页。一句完整功能组件库，下面就是一百二十多个组件。",
+      "shot": {
+        "src": "/shots/mantine/v2-identity.png",
+        "sha256": "c0706086fe34cb60f23730115a0c0afdf249bd501d20d7347f254458f456cc6e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 201188,
+        "alt": "Mantine 首页 fully featured React components library 大标题、Get Started 按钮和赞助商标志"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://mantine.dev/core/package/",
+      "finalUrl": "https://mantine.dev/core/package/",
+      "title": "Get started | Mantine",
+      "selectionRationale": "再翻核心包目录。布局到输入分栏，安装命令在中间。",
+      "shot": {
+        "src": "/shots/mantine/v2-breadth.png",
+        "sha256": "b193ad87291e4d281cf6727a3f7766678ee025cc9a9035f441bc8811dc131731",
+        "width": 1280,
+        "height": 900,
+        "bytes": 93516,
+        "alt": "Mantine Core 文档左侧 Layout、Inputs 清单，正文 yarn add @mantine/hooks @mantine/core 和 Stepper 演示"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://mantine.dev/core/button/",
+      "finalUrl": "https://mantine.dev/core/button/",
+      "title": "Button | Mantine",
+      "selectionRationale": "最后开按钮。变体颜色尺寸能调，蓝色 Button 在中间。",
+      "shot": {
+        "src": "/shots/mantine/v2-proof.png",
+        "sha256": "a67e5f52159ee583816d2e3f7f738486081d6588466cd4e9d43f453dc4e9fed9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 93605,
+        "alt": "Mantine Button 文档的蓝色 Button 演示、Variant 下拉和颜色、尺寸、圆角控件"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Vitaly Rtishchev",
+      "sourceUrl": "https://github.com/mantinedev/mantine/blob/master/package.json",
+      "evidence": "仓库 package.json 的 author 字段写 Vitaly Rtishchev <rtivital@gmail.com>；核心包文档页脚写 Built by Vitaly Rtishchev。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://mantine.dev/core/package/",
+      "evidence": "页脚只写 Built by Vitaly Rtishchev and these awesome people；LICENSE 版权行是 Copyright (c) 2021 Vitaly Rtishchev。未找到独立公司法定名。GitHub 组织名为 mantinedev。",
+      "confidence": 0.4
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/mantinedev/mantine",
+      "sourceUrl": "https://mantine.dev/core/package/",
+      "evidence": "文档顶栏 GitHub 图标与 Edit this page 均指向 https://github.com/mantinedev/mantine；仓库 About 回链 https://mantine.dev/。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/mantinedev/mantine/blob/master/LICENSE",
+      "evidence": "仓库 LICENSE 为 MIT License，Copyright (c) 2021 Vitaly Rtishchev；@mantine/core 文档 License 节也写 MIT。覆盖本仓库源码，不覆盖第三方扩展或赞助页素材。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://mantine.dev/",
+      "evidence": "首页 Mantine UI 区块原文：All components are free forever for everyone。核心包文档写 MIT，未发现组件库付费套餐页；OpenCollective 是赞助通道。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@mantine/core",
+      "sourceUrl": "https://mantine.dev/core/package/",
+      "evidence": "核心包页安装命令为 npm install @mantine/hooks @mantine/core。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-c",
+    "technicalPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-c 补 breadth/proof 截图并填 sha256； swarm-reviewer-grok-d 复核活页、截图哈希与许可后 APPROVED。"
+  }
+}

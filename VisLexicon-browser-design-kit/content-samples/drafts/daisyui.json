@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 3,
+  "entryId": "daisyui",
+  "entityId": "entity-daisyui",
+  "attemptId": "swarm-curator-batch-c-daisyui-20260905",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://daisyui.com/",
+    "finalUrl": "https://daisyui.com/",
+    "checkedAt": "2026-09-05T18:40:00.000Z"
+  },
+  "editorial": {
+    "name": "daisyUI",
+    "descriptionZh": "Pouya Saadeghi 维护的 Tailwind CSS 插件组件库，用 btn、card 等语义 class 提供可主题化界面组件；npm 包 daisyui 采用 MIT 许可免费使用，官网商店另售模板与 Figma 库。",
+    "takeawayZh": "装上语义 class，少写一长串工具类",
+    "noteZh": "首页截图超时，我们改看安装页：标题写把 daisyUI 装成 Tailwind 插件，下面是 npm 命令和 @plugin。组件目录里手风琴、按钮、卡片排成格子。点开按钮，class 表从 btn 列到颜色修饰。适合要语义 class 再用工具类改外观的人。核心库 MIT 免费；商店模板和 Figma 库另售，别和这份插件混成一回事。",
+    "pricing": "daisyui npm package is MIT and free; official store templates and Figma library are paid"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-daisyui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "design-system-suites"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "安装页把 daisyUI 定义为 Tailwind CSS 插件，用 npm i -D daisyui 和 @plugin \"daisyui\" 装进任意框架项目。",
+        "evidenceUrl": "https://daisyui.com/docs/install/"
+      },
+      {
+        "statement": "组件目录按 Actions、Data display 等列出 Button、Modal、Tooltip 等，并写 All daisyUI components；Button 单项页给出 btn 及颜色修饰 class 和 Default 预览。",
+        "evidenceUrl": "https://daisyui.com/components/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-c",
+    "reviewerId": "swarm-reviewer-grok-d",
+    "confirmedAt": "2026-09-06T10:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://daisyui.com/components/",
+        "note": "组件目录 Feedback 下列出 Tooltip。"
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://daisyui.com/components/",
+        "note": "Actions 下列出 Modal，对应对话框。"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://daisyui.com/components/",
+        "note": "Data input 下列出 Checkbox。"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-switch",
+        "evidenceUrl": "https://daisyui.com/components/",
+        "note": "同一分组列出 Toggle，对应开关。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn",
+      "purchase"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "tailwind",
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation",
+      "marketplace"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://daisyui.com/docs/install/",
+      "finalUrl": "https://daisyui.com/docs/install/",
+      "title": "Install daisyUI as a Tailwind plugin — daisyUI Tailwind CSS Component UI Library",
+      "selectionRationale": "先看安装页。它是 Tailwind 插件，命令和 @plugin 写在上面。",
+      "shot": {
+        "src": "/shots/daisyui/v2-identity.png",
+        "sha256": "ff21f05c1e8287b5a9a1e5d9be4ea0182738b7fb33c84799dfde3057506b7775",
+        "width": 1280,
+        "height": 900,
+        "bytes": 93355,
+        "alt": "daisyUI 安装页：Install daisyUI as a Tailwind plugin、npm i -D daisyui@latest 和 @plugin daisyui"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://daisyui.com/components/",
+      "finalUrl": "https://daisyui.com/components/",
+      "title": "Tailwind CSS Components",
+      "selectionRationale": "再翻组件目录。六十八个格子，手风琴到卡片排开。",
+      "shot": {
+        "src": "/shots/daisyui/v2-breadth.png",
+        "sha256": "49a3c79310f03877e289be942d6831c6e4d4b7613093346742f0bd937c4d3c08",
+        "width": 1280,
+        "height": 900,
+        "bytes": 105654,
+        "alt": "All daisyUI components 页：68 components、Accordion 到 Card 的预览格子和左侧 Actions 导航"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://daisyui.com/components/button/",
+      "finalUrl": "https://daisyui.com/components/button/",
+      "title": "Tailwind Button Component – daisyUI",
+      "selectionRationale": "最后开按钮。class 表在上面，Default 预览在下面。",
+      "shot": {
+        "src": "/shots/daisyui/v2-proof.png",
+        "sha256": "b40e1d2fa9f14e413857e1f9809379d789136edcbc00d29bbae097c955d9907e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98039,
+        "alt": "daisyUI Button 页：btn 到 btn-warning 的 class 表和 Preview 里的 Default 按钮"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Pouya Saadeghi",
+      "sourceUrl": "https://github.com/saadeghi/daisyui/blob/master/packages/daisyui/package.json",
+      "evidence": "packages/daisyui/package.json 的 author 字段写 Pouya Saadeghi；LICENSE 版权行 Copyright (c) 2020 Pouya Saadeghi。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://daisyui.com/",
+      "evidence": "首页写 Free and open-source Built by the community；LICENSE 版权是个人名 Pouya Saadeghi。未找到独立公司法定名。GitHub 用户名为 saadeghi。",
+      "confidence": 0.4
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/saadeghi/daisyui",
+      "sourceUrl": "https://daisyui.com/components/button/",
+      "evidence": "Button 文档 Edit this page on GitHub 指向 https://github.com/saadeghi/daisyui；仓库 README 回链 https://daisyui.com/。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/saadeghi/daisyui/blob/master/LICENSE",
+      "evidence": "仓库 LICENSE 为 MIT License，Copyright (c) 2020 Pouya Saadeghi；packages/daisyui/package.json license 字段为 MIT。覆盖 daisyui 源码与 npm 包，不覆盖商店模板、Figma 库或周边周边商品。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core daisyui package is free MIT; store templates are paid",
+      "sourceUrl": "https://daisyui.com/",
+      "evidence": "首页写 Free and open-source。商店页 daisyUI Charts from $39、Nexus Dashboard from $69、HTML Dashboard $29。组件库本身未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "daisyui",
+      "sourceUrl": "https://daisyui.com/docs/install/",
+      "evidence": "安装命令为 npm i -D daisyui@latest；package.json name 字段为 daisyui。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-c",
+    "technicalPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-c 进站起草。首页截图超时/黑屏，identity 改用安装页；见 questions.md。 swarm-reviewer-grok-d 复核活页、截图哈希与许可后 APPROVED。 identity 用安装页，因首页截图超时。"
+  }
+}

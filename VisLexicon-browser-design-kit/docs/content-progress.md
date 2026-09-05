@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-**第 8 节语料欠账：已清完。** `npm run data` 通过，12 条 APPROVED。下一步按第 6 节做新站。
+**第 6 节扩量进行中。** `npm run data` 18 条 APPROVED（2026-09-06）。Radix 已拆成四条 DRAFT。新站草稿一批待复核。
 
 ## 第 8 节清单
 
@@ -40,10 +40,24 @@
 | lucide | APPROVED | 图标素材。成员不够 3，未开新组，只出现在全部站点。commit `3f2d41d` |
 | radix-ui | DRAFT | 首页是 Themes、目录/证明是 Primitives，entity 与 Site Entry 可能要拆。见 `drafts/radix-ui.questions.md`。未 APPROVED。 |
 
-`npm run data` 现为 14 条 APPROVED。
+`npm run data` 现为 18 条 APPROVED。lucide / motion 已发布但各自组员不够 3，未开新组。
+
+### 第 6 节续
+
+| entryId | 状态 | 备注 |
+|---|---|---|
+| ariakit | APPROVED | 入组组件与区块 |
+| heroui | APPROVED | 入组组件与区块 |
+| material-ui | APPROVED | 入组组件与区块 |
+| motion | APPROVED | 动效组员不够 3，未开新组 |
+| radix-ui | 不发布 | 已拆 radix-themes / primitives / icons / colors，混合草案留 drafts |
+| phosphor / tabler / heroicons | DRAFT 卡住 | 三张截图同 hash，正在重采 |
+
+待复核（三图已互异）：radix 四条、toools、web-dev、inclusive-components、gsap、d3、remixicon、react-aria、aceternity-ui、godly、daisyui、headless-ui、ark-ui、mantine、animate-css。
 
 ## 日志
 
 - 2026-09-05：拉 swarm（3 curator + 主控复核），开始第 8 节。
 - 2026-09-05：第 8 节清完，`npm run data` 12 条通过。
 - 2026-09-05：新站 swarm 进站；base-ui、lucide 复核后发布；radix-ui 因拆分问题留 drafts。
+- 2026-09-06：独立复核放出 ariakit / heroui / material-ui / motion。站点 18 条。Radix 拆分草稿齐。第二波复核与图标重采在跑。
