@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T23:22:51.105Z",
+  "entryId": "nutui",
+  "entityId": "entity-nutui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "nutui.jd.com",
+  "official": {
+    "inputUrl": "https://nutui.jd.com/",
+    "finalUrl": "https://nutui.jd.com/",
+    "checkedAt": "2026-09-06T16:30:00.000Z"
+  },
+  "editorial": {
+    "name": "NutUI",
+    "descriptionZh": "京东前端维护的移动端 Vue 组件库，本条收录 H5 实现（文档现为 4.3.14）。npm 包 @nutui/nutui 与仓库均标 MIT。不含 Taro / React 实现。",
+    "takeawayZh": "装 @nutui/nutui，先抄 nut-button",
+    "noteZh": "打开 nutui.jd.com，标题京东风格的轻量级移动端组件库。总站同时挂 Vue / Taro / React，本条只走 Vue H5：介绍页写 NutUI-Vue 组件库，适用于 Vue 技术栈的 H5 应用，顶栏 4.3.14。Button 页 npm @nutui/nutui，右侧 Primary/Info/Default 现场按钮。仓库 README 把 @nutui/nutui 列为 Mobile H5 Components。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 NutUI 定义为京东风格的轻量级移动端组件库；Vue H5 介绍页写 NutUI-Vue 组件库，适用于 Vue 技术栈的 H5 应用。",
+        "evidenceUrl": "https://nutui.jd.com/h5/vue/4x/#/zh-CN/guide/intro"
+      },
+      {
+        "statement": "Button 文档给出 import { Button } from '@nutui/nutui' 与 nut-button 类型示例，右侧有 Primary/Info/Default 现场预览。",
+        "evidenceUrl": "https://nutui.jd.com/h5/vue/4x/#/zh-CN/component/button"
+      }
+    ],
+    "confirmedAt": "2026-09-06T18:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile",
+      "ecommerce"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://nutui.jd.com/",
+      "finalUrl": "https://nutui.jd.com/",
+      "title": "NutUI - 移动端组件库",
+      "selectionRationale": "先看总站首页。京东风格的轻量级移动端组件库那句在首屏。",
+      "shot": {
+        "src": "/shots/nutui/v2-identity.png",
+        "sha256": "4b81bef25b9b12480a325cc7de3f8b36f8632846325eb6631c3765fdfe40b0b0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 247001,
+        "alt": "NutUI 首页：大标题 NutUI，副标题京东风格的轻量级移动端组件库，导航含基础组件、高级组件"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://nutui.jd.com/h5/vue/4x/#/zh-CN/guide/intro",
+      "finalUrl": "https://nutui.jd.com/h5/vue/4x/#/zh-CN/guide/intro",
+      "title": "NutUI - 移动端 Vue 组件库",
+      "selectionRationale": "再翻 Vue H5 介绍。本条不收录 Taro / React。",
+      "shot": {
+        "src": "/shots/nutui/v2-breadth.png",
+        "sha256": "1d3374d72f38cfdd6e55341bb287401ae490a40309a43f7d5efb6ccaf8122003",
+        "width": 1280,
+        "height": 900,
+        "bytes": 69204,
+        "alt": "NutUI Vue H5 介绍：H5 4.3.14，正文 NutUI-Vue 组件库适用于 Vue 技术栈的 H5 应用，特性列 80+ 组件"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://nutui.jd.com/h5/vue/4x/#/zh-CN/component/button",
+      "finalUrl": "https://nutui.jd.com/h5/vue/4x/#/zh-CN/component/button",
+      "title": "NutUI - 移动端 Vue 组件库",
+      "selectionRationale": "最后开 Vue H5 Button。npm 包名和现场按钮都在。",
+      "shot": {
+        "src": "/shots/nutui/v2-proof.png",
+        "sha256": "11f69b9f6887bff78d714382d3178106f72e28aabd641174425c4239b9739ba6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106725,
+        "alt": "NutUI Button 按钮页：npm @nutui/nutui，安装代码 import { Button } from '@nutui/nutui'，右侧 Primary Info Default 演示"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "京东前端",
+      "sourceUrl": "https://github.com/jd-opensource/nutui/blob/v4/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2023 京东前端。package.json author 为 jdcfe。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "JD.com / jd-opensource",
+      "sourceUrl": "https://nutui.jd.com/",
+      "evidence": "站点域名为 nutui.jd.com。GitHub 组织 jd-opensource 维护 nutui 仓。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/jd-opensource/nutui",
+      "sourceUrl": "https://github.com/jd-opensource/nutui/blob/v4/README_EN.md",
+      "evidence": "README_EN 写 Site: nutui.jd.com，并把 @nutui/nutui 标为 Mobile H5 Components。本条分类的是 Vue H5 实现，不含 Taro / React 文档站。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/jd-opensource/nutui/blob/v4/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2023 京东前端。README 写 MIT。覆盖 @nutui/nutui 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://nutui.jd.com/h5/vue/4x/#/zh-CN/component/button",
+      "evidence": "文档与按钮示例公开可浏览，仓库 MIT，未见组件库付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@nutui/nutui",
+      "sourceUrl": "https://nutui.jd.com/h5/vue/4x/#/zh-CN/component/button",
+      "evidence": "Button 页徽章写 npm @nutui/nutui，安装示例 import { Button } from '@nutui/nutui'。package.json name 为 @nutui/nutui，version 4.3.15；文档顶栏现为 4.3.14。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/nutui.md",
+  "registryUrl": "/r/nutui.json"
+}

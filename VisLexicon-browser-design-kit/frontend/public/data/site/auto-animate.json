@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T23:22:51.105Z",
+  "entryId": "auto-animate",
+  "entityId": "entity-auto-animate",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "auto-animate.formkit.com",
+  "official": {
+    "inputUrl": "https://auto-animate.formkit.com/",
+    "finalUrl": "https://auto-animate.formkit.com/",
+    "checkedAt": "2026-09-06T16:30:00.000Z"
+  },
+  "editorial": {
+    "name": "AutoAnimate",
+    "descriptionZh": "FormKit 的零配置动效工具，一行代码即可在 React、Vue 等框架给 DOM 增删改加过渡。仓库 LICENSE 为 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "给列表父节点挂上 useAutoAnimate",
+    "noteZh": "打开 auto-animate.formkit.com，标题 Add motion to your apps with a single line of code，代码块 import { useAutoAnimate } from '@formkit/auto-animate/react'。Usage 节说明 autoAnimate 绑在父节点，子节点增删改时触发。React hook 页给出 useAutoAnimate 与 Add number / Disable。单页站点，#usage 与 #usage-react 才是真正不同的证据段。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 AutoAnimate 定义为 zero-config, drop-in animation utility，用一行代码给 React、Vue 等应用加过渡，而不是组件套件。",
+        "evidenceUrl": "https://auto-animate.formkit.com/"
+      },
+      {
+        "statement": "React hook 文档给出 import { useAutoAnimate } from '@formkit/auto-animate/react' 与可点击的 Add number 列表示例。",
+        "evidenceUrl": "https://auto-animate.formkit.com/#usage-react"
+      }
+    ],
+    "confirmedAt": "2026-09-06T18:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://auto-animate.formkit.com/",
+      "finalUrl": "https://auto-animate.formkit.com/",
+      "title": "AutoAnimate - Add motion to your apps with a single line of code",
+      "selectionRationale": "先看首页。一行代码加动效那句和 React hook 示例在首屏。",
+      "shot": {
+        "src": "/shots/auto-animate/v2-identity.png",
+        "sha256": "1cabaa0c1b89c73ff81d7f50f6a634e6f3b787ec8f2135f4724b03270957f377",
+        "width": 1280,
+        "height": 900,
+        "bytes": 564558,
+        "alt": "AutoAnimate 首页：标题 Add motion to your apps with a single line of code，代码 import { useAutoAnimate } from '@formkit/auto-animate/react'"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://auto-animate.formkit.com/#usage",
+      "finalUrl": "https://auto-animate.formkit.com/#usage",
+      "title": "AutoAnimate - Add motion to your apps with a single line of code",
+      "selectionRationale": "再看 Usage。说明绑父节点、子节点增删改才触发。",
+      "shot": {
+        "src": "/shots/auto-animate/v2-breadth.png",
+        "sha256": "f5da16f210db042465a0d1735875beeb89b62f8eefc2f1c995f5f1c961ce4213",
+        "width": 1280,
+        "height": 900,
+        "bytes": 108854,
+        "alt": "AutoAnimate Usage：autoAnimate 接受父元素，子节点 added/removed/moved 时触发，示例 import autoAnimate from '@formkit/auto-animate'"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://auto-animate.formkit.com/#usage-react",
+      "finalUrl": "https://auto-animate.formkit.com/#usage-react",
+      "title": "AutoAnimate - Add motion to your apps with a single line of code",
+      "selectionRationale": "最后开 React hook。useAutoAnimate 和 Add number 按钮就是可复制证明。",
+      "shot": {
+        "src": "/shots/auto-animate/v2-proof.png",
+        "sha256": "35290057d3b47f473aa9ac66bdbfbb9207005aa1e99a7ecd06fa4fa8c06ddef5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 92547,
+        "alt": "AutoAnimate React hook：import { useAutoAnimate } from '@formkit/auto-animate/react'，下方 0/1/2 列表与 Add number、Disable 按钮"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Justin Schroeder",
+      "sourceUrl": "https://github.com/formkit/auto-animate/blob/master/package.json",
+      "evidence": "package.json author 为 Justin Schroeder <justin@formkit.com>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "FormKit Inc.",
+      "sourceUrl": "https://github.com/formkit/auto-animate/blob/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright 2022 FormKit Inc。首页写 made with ♥ by the FormKit team。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/formkit/auto-animate",
+      "sourceUrl": "https://auto-animate.formkit.com/",
+      "evidence": "首页 GitHub 按钮链到 formkit/auto-animate。package.json repository 为 https://github.com/formkit/auto-animate.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/formkit/auto-animate/blob/master/LICENSE",
+      "evidence": "LICENSE 为 MIT 许可正文，Copyright 2022 FormKit Inc。package.json license 字段为 MIT。覆盖 @formkit/auto-animate 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://auto-animate.formkit.com/",
+      "evidence": "文档公开，安装为包管理器加入 @formkit/auto-animate。页脚提供 GitHub Sponsors，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@formkit/auto-animate",
+      "sourceUrl": "https://auto-animate.formkit.com/#usage-react",
+      "evidence": "React hook 文档写 import { useAutoAnimate } from '@formkit/auto-animate/react'。package.json name 为 @formkit/auto-animate，version 0.10.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/auto-animate.md",
+  "registryUrl": "/r/auto-animate.json"
+}

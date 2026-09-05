@@ -434,6 +434,38 @@ const VOICE = {
     lede: { zh: 'Quasar Vue 组件。MIT。', en: 'Quasar Vue components. MIT.' },
     style: { zh: '浅色文档。品牌蓝。控件标本。', en: 'Light docs. Brand blue. Control specimens.' },
   },
+  primereact: {
+    lede: { zh: 'PrimeReact。现行专有许可，Community 有门槛。', en: 'PrimeReact. Current license is proprietary; Community has conditions.' },
+    style: { zh: '浅色文档。品牌蓝。控件标本。', en: 'Light docs. Brand blue. Control specimens.' },
+  },
+  primevue: {
+    lede: { zh: 'PrimeVue。现行专有许可，Community 有门槛。', en: 'PrimeVue. Current license is proprietary; Community has conditions.' },
+    style: { zh: '浅色文档。品牌蓝。控件标本。', en: 'Light docs. Brand blue. Control specimens.' },
+  },
+  vant: {
+    lede: { zh: 'Vue 3 移动端组件。MIT。', en: 'Vue 3 mobile components. MIT.' },
+    style: { zh: '浅色文档。品牌蓝。移动控件标本。', en: 'Light docs. Brand blue. Mobile control specimens.' },
+  },
+  nutui: {
+    lede: { zh: '京东 NutUI Vue H5 组件。MIT。本条不含 Taro。', en: 'JD NutUI Vue H5 components. MIT. This entry excludes Taro.' },
+    style: { zh: '浅色文档。品牌红。移动控件标本。', en: 'Light docs. Brand red. Mobile control specimens.' },
+  },
+  'theatre-js': {
+    lede: { zh: '动画编排。core Apache-2.0，studio AGPL。', en: 'Animation sequencing. Core is Apache-2.0; studio is AGPL.' },
+    style: { zh: '深色产品文档。时间轴演示。', en: 'Dark product docs. Timeline demos.' },
+  },
+  'auto-animate': {
+    lede: { zh: '零配置入场动画。MIT。', en: 'Zero-config enter/leave animation. MIT.' },
+    style: { zh: '浅色单页文档。现场列表标本。', en: 'Light single-page docs. Live list specimens.' },
+  },
+  barba: {
+    lede: { zh: '页面过渡库。MIT。', en: 'Page-transition library. MIT.' },
+    style: { zh: '浅色文档。过渡演示。中性。', en: 'Light docs. Transition demos. Neutral.' },
+  },
+  fontshare: {
+    lede: { zh: '可商用字体目录。Satoshi 闭源。', en: 'Commercial-free font catalog. Satoshi is closed source.' },
+    style: { zh: '浅色字体标本。大号字样。编辑式。', en: 'Light type specimens. Oversized samples. Editorial.' },
+  },
 }
 
 export function entryVoice(entryId) {

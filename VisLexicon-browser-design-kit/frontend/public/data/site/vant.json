@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T23:22:51.105Z",
+  "entryId": "vant",
+  "entityId": "entity-vant",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "vant-ui.github.io",
+  "official": {
+    "inputUrl": "https://vant-ui.github.io/vant/",
+    "finalUrl": "https://vant-ui.github.io/vant/",
+    "checkedAt": "2026-09-06T16:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Vant",
+    "descriptionZh": "有赞开源的移动端 Vue 组件库，文档站现为 4.9.22，面向 Vue 3。仓库 LICENSE 为 MIT，可免费用于个人与商业项目。本条只收录 Web 组件，不含微信小程序。",
+    "takeawayZh": "npm i vant，先注册 Button",
+    "noteZh": "打开 vant-ui.github.io/vant，默认中文：轻量、可定制的移动端 Vue 组件库，顶栏 4.9.22。Quickstart 英页给出 npm i vant 与 yarn/pnpm/bun。Button 英页 import { Button } from 'vant'，右侧手机框 Primary/Success/Default。仓库 README 另写 Vue 2 用 vant@latest-v2。本条是 Web Vue 入口，不含 vant-weapp。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "文档首页把 Vant 定义为轻量、可定制的移动端 Vue 组件库，并列出 Button、Cell 等基础组件。",
+        "evidenceUrl": "https://vant-ui.github.io/vant/"
+      },
+      {
+        "statement": "Button 文档给出 import { Button } from 'vant' 与 Primary/Success/Default 现场示例，证明交付物是可安装的界面组件。",
+        "evidenceUrl": "https://vant-ui.github.io/vant/#/en-US/button"
+      }
+    ],
+    "confirmedAt": "2026-09-06T18:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vant-ui.github.io/vant/",
+      "finalUrl": "https://vant-ui.github.io/vant/",
+      "title": "Vant 4 - A lightweight, customizable Vue UI library for mobile web apps.",
+      "selectionRationale": "先看文档首页。轻量、可定制的移动端 Vue 组件库那句在首屏。",
+      "shot": {
+        "src": "/shots/vant/v2-identity.png",
+        "sha256": "55d3599adb1d25cf7e196bc04c0220e03a98bf2fed088c0a161ed52fd264c9e9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 94790,
+        "alt": "Vant 4 中文首页：标题 Vant 轻量、可定制的移动端 Vue 组件库，顶栏 4.9.22，右侧列出 Button 按钮等基础组件"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://vant-ui.github.io/vant/#/en-US/quickstart",
+      "finalUrl": "https://vant-ui.github.io/vant/#/en-US/quickstart",
+      "title": "Vant 4 - A lightweight, customizable Vue UI library for mobile web apps.",
+      "selectionRationale": "再翻英文 Quickstart。npm i vant 和包管理器命令排出安装面。",
+      "shot": {
+        "src": "/shots/vant/v2-breadth.png",
+        "sha256": "b2724e5acc816becb995301f1b2dc1c5fd6ae30a0e46afade0add2e74f140b69",
+        "width": 1280,
+        "height": 900,
+        "bytes": 60758,
+        "alt": "Vant 4 Quickstart：Install 区 npm i vant 与 yarn/pnpm/bun，右侧 Vant 4 组件目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://vant-ui.github.io/vant/#/en-US/button",
+      "finalUrl": "https://vant-ui.github.io/vant/#/en-US/button",
+      "title": "Vant 4 - A lightweight, customizable Vue UI library for mobile web apps.",
+      "selectionRationale": "最后开英文 Button。import 和手机框里的类型按钮都在。",
+      "shot": {
+        "src": "/shots/vant/v2-proof.png",
+        "sha256": "81ddbfd257b265c47d64ecaa7c08924e4e6c87d37dbc71bff5d6608be9535f6f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 64693,
+        "alt": "Vant Button 页：Install 写 import { Button } from 'vant'，右侧演示 Primary Success Default Danger Warning"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "chenjiahan and other contributors",
+      "sourceUrl": "https://github.com/youzan/vant/blob/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) Youzan 与 Copyright (c) Chen Jiahan and other contributors。README Core Team 将 chenjiahan 列为核心贡献者。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Youzan",
+      "sourceUrl": "https://github.com/youzan/vant/blob/main/LICENSE",
+      "evidence": "LICENSE 写 Copyright (c) Youzan。GitHub 组织 youzan 维护 vant 仓。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/youzan/vant",
+      "sourceUrl": "https://github.com/youzan/vant/blob/main/README.md",
+      "evidence": "README Documentation 链到 https://vant-ui.github.io/vant。packages/vant/package.json 的 repository 另写 vant-ui/vant。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/youzan/vant/blob/main/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) Youzan 与 Chen Jiahan and other contributors。README 写 Vant is MIT licensed。覆盖 vant 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://vant-ui.github.io/vant/#/en-US/quickstart",
+      "evidence": "Quickstart 给出 npm i vant，文档公开可浏览，仓库 MIT，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "vant",
+      "sourceUrl": "https://vant-ui.github.io/vant/#/en-US/quickstart",
+      "evidence": "Quickstart 写 npm i vant。Button 页 import { Button } from 'vant'。packages/vant/package.json name 为 vant。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/vant.md",
+  "registryUrl": "/r/vant.json"
+}

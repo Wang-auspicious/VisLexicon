@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T23:22:51.105Z",
+  "entryId": "barba",
+  "entityId": "entity-barba",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "barba.js.org",
+  "official": {
+    "inputUrl": "https://barba.js.org/",
+    "finalUrl": "https://barba.js.org/",
+    "checkedAt": "2026-09-06T16:30:00.000Z"
+  },
+  "editorial": {
+    "name": "barba.js",
+    "descriptionZh": "barba.js 是约 7kb 的页面过渡库，把多页站点做成带过渡的 SPA。文档徽章与 LICENSE.md 均标 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "npm i @barba/core，再用 hooks 做过渡",
+    "noteZh": "打开 barba.js.org，v2.10.0，标题 Create badass, fluid and smooth transitions between your website’s pages。Intro 写 7kb minified and compressed，徽章 license MIT。Hooks 页列出 beforeOnce 到 after 的生命周期，并给 leave 的 Promise 写法。安装命令为 npm install @barba/core。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 barba.js 定义为在网站页面之间做 fluid and smooth transitions 的库，主动作是实现页面过渡代码。",
+        "evidenceUrl": "https://barba.js.org/"
+      },
+      {
+        "statement": "Hooks 文档给出 leave/enter 等生命周期方法及 Promise 或 this.async() 示例，证明交付物是可装进项目的过渡代码。",
+        "evidenceUrl": "https://barba.js.org/docs/advanced/hooks/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T18:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://barba.js.org/",
+      "finalUrl": "https://barba.js.org/",
+      "title": "barba.js",
+      "selectionRationale": "先看首页。fluid and smooth transitions 那句和 Features / Documentation 在首屏。",
+      "shot": {
+        "src": "/shots/barba/v2-identity.png",
+        "sha256": "b612ca7907bf14f49a7c747984a94a3bd52936caa3bc9b494a3c4ffc2cdb9d9f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 44119,
+        "alt": "barba.js 首页：v2.10.0，大标题 barba.js，副标题 Create badass, fluid and smooth transitions between your website’s pages，Features 与 Documentation 按钮"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://barba.js.org/docs/getstarted/intro/",
+      "finalUrl": "https://barba.js.org/docs/getstarted/intro/",
+      "title": "barba.js",
+      "selectionRationale": "再翻 Intro。7kb 说明和 MIT 徽章排出它是什么。",
+      "shot": {
+        "src": "/shots/barba/v2-breadth.png",
+        "sha256": "68dc015badae33e8b15196f9ee64f03339d12d0fbfaf83ce46d310ef076a17c6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 111338,
+        "alt": "barba.js Intro：barba.js [v2]，徽章含 license MIT，正文 7kb minified and compressed，页面过渡与 SPA 说明"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://barba.js.org/docs/advanced/hooks/",
+      "finalUrl": "https://barba.js.org/docs/advanced/hooks/",
+      "title": "barba.js",
+      "selectionRationale": "最后开 Hooks。beforeOnce 到 after 的表就是过渡生命周期。",
+      "shot": {
+        "src": "/shots/barba/v2-proof.png",
+        "sha256": "e078c1a49b03a836dfe4d87ff2fc1db0566ba759d45445b1f393ab2091ed2ddb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 102081,
+        "alt": "barba.js Hooks：定义 hook 为 lifecycle 方法，Base hooks 表列出 beforeOnce、once 等"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Luigi De Rosa, Thierry Michel, Xavier Foucrier",
+      "sourceUrl": "https://github.com/barbajs/barba/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2024 Luigi De Rosa, Thierry Michel, Xavier Foucrier。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "barbajs",
+      "sourceUrl": "https://github.com/barbajs/barba",
+      "evidence": "仓库位于 GitHub 组织 barbajs 下。文档页脚写 barba.js © 2024。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/barbajs/barba",
+      "sourceUrl": "https://barba.js.org/docs/getstarted/intro/",
+      "evidence": "Intro 页 CircleCI 与 Coverage 徽章链到 barbajs/barba。LICENSE 徽章链到 github.com/barbajs/barba/blob/main/LICENSE。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/barbajs/barba/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 标题 MIT License，Copyright (c) 2024 Luigi De Rosa, Thierry Michel, Xavier Foucrier。Intro 页徽章 license MIT。README 写 The project is developed under the MIT license。覆盖 @barba/core 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://barba.js.org/docs/getstarted/install/",
+      "evidence": "Install 给出 npm install @barba/core 与 CDN。文档公开，仓库 MIT，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@barba/core",
+      "sourceUrl": "https://barba.js.org/docs/getstarted/install/",
+      "evidence": "Install 写 npm install @barba/core 与 import barba from '@barba/core'。packages/core/package.json name 为 @barba/core，version 2.10.3；首页标 v2.10.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/barba.md",
+  "registryUrl": "/r/barba.json"
+}

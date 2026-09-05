@@ -1,0 +1,204 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T23:22:51.105Z",
+  "entryId": "theatre-js",
+  "entityId": "entity-theatre-js",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://www.theatrejs.com/",
+    "finalUrl": "https://www.theatrejs.com/",
+    "checkedAt": "2026-09-06T16:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Theatre.js",
+    "descriptionZh": "Theatre.js Oy 的网页动效库，可用时间轴编排 THREE.js 或 HTML。@theatre/core 为 Apache-2.0；Studio 编辑器为 AGPL-3.0，通常只在开发期使用。",
+    "takeawayZh": "用 sheet.object 给灯光加关键帧",
+    "noteZh": "打开 theatrejs.com，标题 Powerful motion design in the browser，副标题 javascript animation library with a professional motion design toolset。Getting started 分成 React Three Fiber、THREE.js、HTML/SVG。Sequences 页用 DirectionalLight 的 sheet.object 示例讲关键帧。core 是 Apache-2.0；studio 是 AGPL-3.0，正式包通常只带 core。",
+    "pricing": "Free; @theatre/core Apache-2.0, @theatre/studio AGPL-3.0",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Theatre.js 定义为 javascript animation library with a professional motion design toolset，用来做 THREE.js 电影镜头或 UI 交互，而不是素材包。",
+        "evidenceUrl": "https://www.theatrejs.com/"
+      },
+      {
+        "statement": "Sequences 手册给出 sheet.object 绑定 THREE.DirectionalLight.intensity 并在时间轴上打关键帧的可复制代码。",
+        "evidenceUrl": "https://www.theatrejs.com/docs/latest/manual/sequences"
+      }
+    ],
+    "confirmedAt": "2026-09-06T18:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview",
+      "edit"
+    ],
+    "media": [
+      "motion",
+      "3d",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "three-js",
+      "webgl",
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0",
+      "AGPL-3.0-only"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.theatrejs.com/",
+      "finalUrl": "https://www.theatrejs.com/",
+      "title": "Theatre.js - animation toolbox for the web",
+      "selectionRationale": "先看首页。Powerful motion design 那句和 THREE.js / UI 说明在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/theatre-js/v2-identity.png",
+        "sha256": "33ca219fc95afe4a6df89b9e534ffa190ccc9c7a3e5568839917b96b634dd2d4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 691366,
+        "alt": "Theatre.js 首页：标题 Powerful motion design in the browser，副标题 javascript animation library with a professional motion design toolset"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.theatrejs.com/docs/latest/getting-started",
+      "finalUrl": "https://www.theatrejs.com/docs/latest/getting-started",
+      "title": "Getting started – Theatre.js",
+      "selectionRationale": "再翻 Getting started。React Three Fiber、THREE.js、HTML/SVG 三个入口。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/theatre-js/v2-breadth.png",
+        "sha256": "3f8f1550ee3aea45e1baf068afcf3c723663372c81290ae039c063896ab0045e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 115371,
+        "alt": "Theatre.js Getting started：卡片 With React Three Fiber、With THREE.js、With HTML/SVG"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.theatrejs.com/docs/latest/manual/sequences",
+      "finalUrl": "https://www.theatrejs.com/docs/latest/manual/sequences",
+      "title": "Working with Sequences – Theatre.js",
+      "selectionRationale": "最后开 Sequences。DirectionalLight 的 sheet.object 代码就是它能编排的证明。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/theatre-js/v2-proof.png",
+        "sha256": "229ffa8639e2a185afb5fd43db8ee7757d044047f1f35f6cbde12caad3aded43",
+        "width": 1280,
+        "height": 900,
+        "bytes": 155202,
+        "alt": "Working with Sequences：Introduction 与 Sequencing props，代码含 THREE.DirectionalLight 与 sheet.object"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Aria Minaei, Andrew Prifer and contributors",
+      "sourceUrl": "https://www.theatrejs.com/",
+      "evidence": "首页引用把 @ariaminaei 与 @AndrewPrifer 列为团队。页脚写 © 2022 Theatre.js Oy – Helsinki。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Theatre.js Oy",
+      "sourceUrl": "https://www.theatrejs.com/",
+      "evidence": "页脚 Copyright © 2022 Theatre.js Oy – Helsinki。仓库组织为 theatre-js。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/theatre-js/theatre",
+      "sourceUrl": "https://github.com/theatre-js/theatre/blob/main/README.md",
+      "evidence": "README 回链 theatrejs.com/docs。README 注明 1.0 开发暂迁私有仓，条款与许可仍为开源。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0 (core); AGPL-3.0-only (studio)",
+      "sourceUrl": "https://github.com/theatre-js/theatre/blob/main/README.md",
+      "evidence": "README License 写 Theatre's core (@theatre/core) is released under the Apache License。The studio (@theatre/studio) is released under the AGPL 3.0 License。You only use the studio during design/development. Your project's final bundle only includes @theatre/core。仓库 LICENSE 先附 Apache 2.0，再对 Files: theatre/studio/... 附 GNU AGPL v3。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free; @theatre/core Apache-2.0, @theatre/studio AGPL-3.0",
+      "sourceUrl": "https://github.com/theatre-js/theatre/blob/main/README.md",
+      "evidence": "文档与仓库公开可浏览。core 与 studio 均可免费取得，但 studio 受 AGPL-3.0 约束。未见付费套餐。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@theatre/core",
+      "sourceUrl": "https://github.com/theatre-js/theatre/blob/main/README.md",
+      "evidence": "README 将运行时包标为 @theatre/core，编辑器包标为 @theatre/studio。Sequences 示例使用 sheet.object，来自 core API。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。Apache-2.0 (core); AGPL-3.0-only (studio)：README License 写 Theatre's core (@theatre/core) is released under the Apache License。The studio (@theatre/studio) is released under the AGPL 3.0 License。You only use the studio during design/development. Your project's final bundle only includes @theatre/core。仓库 LICENSE 先附 Apache 2.0，再对 Files: theatre/studio/... 附 GNU AGPL v3。",
+      "该条目登记了多个许可值（Apache-2.0 / AGPL-3.0-only），目录之间可能不同，逐目录确认。"
+    ],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/theatre-js",
+    "designMdUrl": "https://vislexicon.com/site/theatre-js.md",
+    "checkedAt": "2026-09-06T16:30:00.000Z",
+    "license": "Apache-2.0 / AGPL-3.0-only"
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T23:22:51.105Z",
+  "entryId": "primereact",
+  "entityId": "entity-primereact",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://primereact.org/",
+    "finalUrl": "https://primereact.dev/",
+    "checkedAt": "2026-09-06T16:30:00.000Z"
+  },
+  "editorial": {
+    "name": "PrimeReact",
+    "descriptionZh": "PrimeTek 的 React UI 套件，现为 11.1.0，提供 Styled 与 Tailwind 两套组件。现行主版本走 PrimeUI 许可，不再 MIT；10.x 及更早仍为 MIT。小团队可申请免费 Community。",
+    "takeawayZh": "装 @primereact/ui，先抄 Button",
+    "noteZh": "primereact.org 跳到 primereact.dev。首页 Premium UI Suite for React，徽章 primereact@11.1.0，顶栏 Next Chapter Begins。Components 页 Form 27 项，AutoComplete 到 DatePicker。Button 页 import { Button } from '@primereact/ui/button'，Reject/Accept 现场预览。本条是 React 入口，不含 PrimeVue。v11 走 PrimeUI：Community 免费但有营收/人数门槛，Commercial 含 Blocks 与主题工具；10.x 仍为 MIT。",
+    "pricing": "Community free if eligible; Commercial $599/dev through 2026, PrimeBlocks and Theme Designer not in Community",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 PrimeReact 定义为 Premium UI Suite for React，并给出 Get Started 与 View Components，而不是单一组件演示。",
+        "evidenceUrl": "https://primereact.dev/"
+      },
+      {
+        "statement": "Components 页按 Form 列出 AutoComplete、Checkbox 等；Button 文档给出 @primereact/ui/button 的 import 与 Reject/Accept 现场示例。",
+        "evidenceUrl": "https://primereact.dev/docs/styled/components/button"
+      }
+    ],
+    "confirmedAt": "2026-09-06T18:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn",
+      "purchase"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript",
+      "css",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://primereact.org/",
+      "finalUrl": "https://primereact.dev/",
+      "title": "PrimeReact - React UI Component Library",
+      "selectionRationale": "先看首页。Premium UI Suite for React 与 primereact@11.1.0 在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/primereact/v2-identity.png",
+        "sha256": "cea6ebf361fc2832f55e10626e4e28937f2bc3570a8e2d5d95de4164a57ec752",
+        "width": 1280,
+        "height": 900,
+        "bytes": 90984,
+        "alt": "PrimeReact 首页：PRIMEREACT 导航，primereact@11.1.0，标题 Premium UI Suite for React，Get Started 与 View Components"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://primereact.dev/components",
+      "finalUrl": "https://primereact.dev/components",
+      "title": "Components - PrimeReact",
+      "selectionRationale": "再翻组件总览。Form 栏 AutoComplete 到 DatePicker 排出范围。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/primereact/v2-breadth.png",
+        "sha256": "235262e2049213223b91a7c561f865c5cecf4958f2bcefb148113e9f03401603",
+        "width": 1280,
+        "height": 900,
+        "bytes": 120183,
+        "alt": "PrimeReact Components 页：标题 Components，Styled/Tailwind 切换，Form (27) 卡片 AutoComplete、Checkbox、CheckboxGroup、DatePicker"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://primereact.dev/docs/styled/components/button",
+      "finalUrl": "https://primereact.dev/docs/styled/components/button",
+      "title": "React Button Component",
+      "selectionRationale": "最后开 Button。import 路径和 Reject/Accept 预览都在。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/primereact/v2-proof.png",
+        "sha256": "13a45d3f75579f58469327e5b256f6924699b5ebf37b8fcd3369b24980ee7338",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117291,
+        "alt": "PrimeReact Button 文档：Reject 与 Accept 预览，Usage 写 import { Button } from '@primereact/ui/button'"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "PrimeTek",
+      "sourceUrl": "https://primereact.dev/",
+      "evidence": "页脚写 PrimeReact 11.1.0 by PrimeUI，©2026 PrimeTek。归档仓库 LICENSE.md 版权行为 Copyright (c) 2016-2025 PrimeTek。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "PrimeTek Informatics",
+      "sourceUrl": "https://primeui.dev/licenses/community",
+      "evidence": "Community License 写 PrimeTek Informatics (“PrimeTek”) owns the Software。站点 Get PrimeUI 链到 primeui.store。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/primefaces/primereact",
+      "sourceUrl": "https://github.com/primefaces/primereact",
+      "evidence": "历史源码仓 primefaces/primereact 仍公开，README 写 This repository is now archived，并回链 primereact.dev。现行 v11 以编译包分发，不再以该仓为开发主线。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "proprietary",
+      "sourceUrl": "https://primeui.dev/nextchapter",
+      "evidence": "The Next Chapter of PrimeTek 写 The new license applies only to future major versions: PrimeNG 22, PrimeReact 11, PrimeVue 5。These future major versions will be distributed under the PrimeUI license and will no longer be released as open source。All existing MIT-licensed versions remain MIT forever。现行文档站为 11.1.0，因此本条记 proprietary，不能把当前入口标成 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Community free if eligible; Commercial $599/dev through 2026, PrimeBlocks and Theme Designer not in Community",
+      "sourceUrl": "https://primeui.dev/nextchapter",
+      "evidence": "Community 免费但须同时满足年收入低于 100 万美元、少于 5 名开发者、少于 10 名雇员、外部融资低于 300 万美元。Commercial Suite 含 PrimeBlocks、Theme Designer、Figma UI Kit，标价 $599 per developer through the end of 2026。Community 不含 PrimeBlocks 与 Theme Designer。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@primereact/ui",
+      "sourceUrl": "https://primereact.dev/docs/styled/components/button",
+      "evidence": "Button 文档 Usage 写 import { Button } from '@primereact/ui/button'。Next.js 安装文档另给出 npm install @primereact/ui @primeuix/themes @primeicons/react。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。proprietary：The Next Chapter of PrimeTek 写 The new license applies only to future major versions: PrimeNG 22, PrimeReact 11, PrimeVue 5。These future major versions will be distributed under the PrimeUI license and will no longer be released as open source。All existing MIT-licensed versions remain MIT forever。现行文档站为 11.1.0，因此本条记 proprietary，不能把当前入口标成 MIT。",
+      "存在付费层：Community free if eligible; Commercial $599/dev through 2026, PrimeBlocks and Theme Designer not in Community。"
+    ],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/primereact",
+    "designMdUrl": "https://vislexicon.com/site/primereact.md",
+    "checkedAt": "2026-09-06T16:30:00.000Z",
+    "license": "proprietary"
+  }
+}
