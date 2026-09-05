@@ -1,0 +1,238 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T11:41:58.835Z",
+  "entryId": "entry-ant-design-react",
+  "entityId": "entity-ant-design",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://ant.design/",
+    "finalUrl": "https://ant.design/index-cn",
+    "checkedAt": "2026-09-01T15:45:42.521Z"
+  },
+  "editorial": {
+    "name": "Ant Design",
+    "descriptionZh": "面向企业级中后台与桌面 Web 产品的完整设计系统，提供可安装的 React/TypeScript 组件、主题定制、国际化、设计规范和大量可运行示例；核心仓库采用 MIT 许可并可免费使用。",
+    "takeawayZh": "中后台要的整套组件、主题与国际化，规范一并给",
+    "noteZh": null,
+    "pricing": "Free and open source for the core Ant Design React library",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官方 React 介绍页将 antd 定义为基于 Ant Design 体系、用于企业级中后台与前台桌面网站的 React UI 组件库，并列出完整设计和开发工具、国际化及主题能力。",
+        "evidenceUrl": "https://ant.design/docs/react/introduce-cn"
+      },
+      {
+        "statement": "组件总览按通用、布局、导航、数据录入、数据展示与反馈等类别提供大规模组件清单和预览，符合完整设计系统套件。",
+        "evidenceUrl": "https://ant.design/components/overview-cn/"
+      }
+    ],
+    "confirmedAt": "2026-09-01T16:54:57.048Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "copy",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans",
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ant.design/",
+      "finalUrl": "https://ant.design/index-cn",
+      "title": "Ant Design - 一套企业级 UI 设计语言和 React 组件库",
+      "selectionRationale": "首页直接陈述企业级设计系统身份，并并列设计语言、组件、主题定制和生态入口；重拍后新闻卡内容完整，无骨架占位。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/entry-ant-design-react/v2-identity.png",
+        "sha256": "38e3dba3b7497012771e58832b5b759e7a869ab8f75f60543a811b1d154cc393",
+        "width": 1280,
+        "height": 900,
+        "bytes": 496476,
+        "alt": "Ant Design 首页的企业级设计系统主张与已加载新闻卡"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ant.design/components/overview-cn/",
+      "finalUrl": "https://ant.design/components/overview-cn",
+      "title": "组件总览 - Ant Design",
+      "selectionRationale": "组件总览按通用、布局、导航、数据录入、数据展示、反馈等任务列出组件及预览，直接证明套件广度。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/entry-ant-design-react/v2-breadth.png",
+        "sha256": "a94951799b03ef38b660cd8e3590f672f004a67244dfb6b8391742156716b1af",
+        "width": 1280,
+        "height": 900,
+        "bytes": 126007,
+        "alt": "Ant Design 组件总览中的通用和布局组件分类"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ant.design/components/table-cn#table-demo-basic",
+      "finalUrl": "https://ant.design/components/table-cn#table-demo-basic",
+      "title": "表格 Table - Ant Design",
+      "selectionRationale": "Table 详情的基本用法展示可运行表格、交互操作、说明以及大量后续变体，证明组件不是静态示意图而是有代码和 API 的实现。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/entry-ant-design-react/v2-proof.png",
+        "sha256": "f1e816c4dbc145c9b7032a6e2d9cbb280640a0dbdd4ffe79443bb8bc6f339c22",
+        "width": 1280,
+        "height": 900,
+        "bytes": 160902,
+        "alt": "Ant Design Table 基本用法的运行结果与文档导航"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/ant-design/ant-design/blob/master/package.json",
+      "evidence": "package.json author 为 null；社区型项目不强猜单一作者。；独立复核来源：https://github.com/ant-design/ant-design/blob/master/package.json",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "蚂蚁集团和 Ant Design 开源社区",
+      "sourceUrl": "https://ant.design/index-cn",
+      "evidence": "官网页脚直接署名。；独立复核来源：https://ant.design/index-cn",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/ant-design/ant-design",
+      "sourceUrl": "https://ant.design/docs/react/introduce-cn",
+      "evidence": "官网编辑、贡献和 GitHub 入口均指向该仓库，仓库 homepage 回链 ant.design。；独立复核来源：https://ant.design/docs/react/introduce-cn；https://github.com/ant-design/ant-design",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/ant-design/ant-design/blob/master/LICENSE",
+      "evidence": "仅确认 ant-design/ant-design React 核心仓库；不扩张到官网媒体、Pro、Mobile、Charts 或其他生态仓库。；独立复核来源：https://github.com/ant-design/ant-design/blob/master/LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free and open source for the core Ant Design React library",
+      "sourceUrl": "https://ant.design/docs/react/introduce-cn",
+      "evidence": "公开 npm 安装与 MIT 仓库支持核心库免费开源；不代表生态商业产品免费。；独立复核来源：https://ant.design/docs/react/introduce-cn；https://github.com/ant-design/ant-design/blob/master/LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "antd",
+      "sourceUrl": "https://ant.design/docs/react/introduce-cn",
+      "evidence": "官方安装命令为 npm install antd --save。；独立复核来源：https://ant.design/docs/react/introduce-cn；https://github.com/ant-design/ant-design/blob/master/package.json",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "data-display",
+        "termId": "atlas-component-component-table",
+        "evidenceUrl": "https://ant.design/components/table-cn#table-demo-basic",
+        "note": "该证据页就是可运行的表格实例，是数据展示台 Table 热区最直接的真实样本。",
+        "termEn": "Table",
+        "termZh": "静态表格"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-datepicker",
+        "evidenceUrl": "https://ant.design/components/overview-cn/",
+        "note": "组件总览「数据录入」下列出 DatePicker，对应表单解剖台的日期选择器。",
+        "termEn": "Datepicker",
+        "termZh": null
+      },
+      {
+        "stageId": "state-loading",
+        "termId": "atlas-component-component-skeleton",
+        "evidenceUrl": "https://ant.design/components/overview-cn/",
+        "note": "组件总览「反馈」下列出 Skeleton，对应状态与加载台的骨架屏。",
+        "termEn": "Skeleton",
+        "termZh": "骨架屏"
+      },
+      {
+        "stageId": "navigation",
+        "termId": "atlas-component-component-breadcrumb",
+        "evidenceUrl": "https://ant.design/components/overview-cn/",
+        "note": "组件总览「导航」下列出 Breadcrumb，对应导航台的面包屑热区。",
+        "termEn": "Breadcrumb",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-02-28",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/entry-ant-design-react",
+    "designMdUrl": "https://vislexicon.com/site/entry-ant-design-react.md",
+    "checkedAt": "2026-09-01T15:45:42.521Z",
+    "license": "MIT"
+  }
+}

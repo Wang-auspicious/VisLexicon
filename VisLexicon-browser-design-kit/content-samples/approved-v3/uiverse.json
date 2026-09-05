@@ -12,6 +12,8 @@
   "editorial": {
     "name": "Uiverse",
     "descriptionZh": "社区共建的开源 UI 元素库，可按按钮、卡片、加载器与表单等类别浏览；单项页面给出实时效果和可复制的 HTML/CSS，并可导出 React、支持 Tailwind 与 Figma，站内 UI 元素统一采用 MIT 许可。",
+    "takeawayZh": "一个个小元素，看效果、复制代码，站内统一 MIT",
+    "noteZh": "它长得像画廊，其实是代码库。我们随手点开一个社区做的 Loader，页面左边是它在动，右边就是 HTML/CSS，还能导出 React。按钮、卡片、开关、加载器按类别排开，量很大，质量参差是社区库的常态——挑的时候多看两眼。好在页脚写得明白：站内所有 UI 元素都是 MIT，复制走不用犹豫。",
     "pricing": "Free"
   },
   "classification": {
@@ -34,6 +36,35 @@
     "curatorId": "root-contact-sheet-review-20260901",
     "reviewerId": "independent-six-v3-editorial-reviewer",
     "confirmedAt": "2026-09-01T16:45:57.625Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "state-loading",
+        "termId": "atlas-component-component-loader",
+        "evidenceUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20",
+        "note": "这个证据页本身就是一个纯 CSS 加载指示器的单项页，是最直接的野生样本。"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-switch",
+        "evidenceUrl": "https://uiverse.io/elements",
+        "note": "Elements 目录设有 Toggle switches 一级类别，整类都是开关的不同做法。"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-radio-button",
+        "evidenceUrl": "https://uiverse.io/elements",
+        "note": "同一目录设有 Radio buttons 类别，可以对照表单解剖台的单选按钮热区。"
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://uiverse.io/elements",
+        "note": "目录里的 Tooltips 类别提供大量提示气泡样式，对应浮层台的 Tooltip 变体。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
   },
   "facets": {
     "scenarios": [],
@@ -91,7 +122,7 @@
       "sourceUrl": "https://uiverse.io/",
       "finalUrl": "https://uiverse.io/",
       "title": "Uiverse — Community UI Elements",
-      "selectionRationale": "首页展示 Uiverse 身份、社区元素画廊与代码搜索入口。",
+      "selectionRationale": "首页告诉你这是谁：一个社区共建的元素库，搜索框和画廊就是全部入口。",
       "shot": {
         "src": "/shots/uiverse/v2-identity.png",
         "sha256": "559547761171365efbde26c434674dd2c256a028b9a27093e3d7aea1072d8675",
@@ -106,7 +137,7 @@
       "sourceUrl": "https://uiverse.io/elements",
       "finalUrl": "https://uiverse.io/elements",
       "title": "Uiverse Elements",
-      "selectionRationale": "Elements 瀑布流体现加载器、按钮、卡片等组件的广度。",
+      "selectionRationale": "Elements 页是一整面瀑布流，加载器、按钮、卡片混排，能看出体量和分类方式。",
       "shot": {
         "src": "/shots/uiverse/v2-breadth.png",
         "sha256": "345d549835859272eb68c1bf180747653226e0a11873b45e5ea465a746d2a588",
@@ -121,7 +152,7 @@
       "sourceUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20",
       "finalUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20",
       "title": "Fresh Lizard 20 — Uiverse",
-      "selectionRationale": "单个 Loader 页面同时展示实时效果和可复制的 HTML/CSS 源码。",
+      "selectionRationale": "随便点开一个 Loader：左边在动，右边是源码。这一页就是它「能拿走」的证明。",
       "shot": {
         "src": "/shots/uiverse/v2-proof.png",
         "sha256": "5ccf719527df05f46a9d8f232a6d630708456f98311d895d20b8bc74e199732e",
@@ -175,5 +206,10 @@
     "semanticReviewerId": "independent-six-v3-editorial-reviewer",
     "semanticPassed": true,
     "editorialReviewerId": "independent-six-v3-editorial-reviewer"
+  },
+  "editorialVoice": {
+    "status": "exemplar",
+    "writtenAt": "2026-09-05",
+    "note": "takeawayZh/noteZh/selectionRationale 为人话改写，事实未变；其余条目照此标准补写。"
   }
 }

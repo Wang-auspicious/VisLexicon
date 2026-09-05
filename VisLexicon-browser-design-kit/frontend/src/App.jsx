@@ -1,141 +1,177 @@
-import { useEffect, useState } from 'react'
-import './App.css'
+import { Suspense, lazy, useEffect, useState } from 'react'
 import { useRoute } from './router.js'
 import { loadStored } from './store.js'
-import Palette from './Palette.jsx'
-import SpecPanel from './SpecPanel.jsx'
-import Atlas from './views/Atlas.jsx'
-import Entry from './views/Entry.jsx'
-import IndexView from './views/IndexView.jsx'
-import Tools from './views/Tools.jsx'
-import Submit from './views/Submit.jsx'
-import KeyView from './views/KeyView.jsx'
-import Compare from './views/Compare.jsx'
-import Variants from './views/Variants.jsx'
+import GlobalSearch from './components/GlobalSearch.jsx'
+import ThemeToggle from './components/ThemeToggle.jsx'
+import SiteFooter from './components/SiteFooter.jsx'
+import About from './views/About.jsx'
+
+/* 视图按路由分包：图鉴要载 1MB 语料，策展要载站点索引，
+ * 谁也不该出现在别人的首屏包里。 */
+const Curation = lazy(() => import('./views/Curation.jsx'))
+const AllSites = lazy(() => import('./views/AllSites.jsx'))
+const SiteDetail = lazy(() => import('./views/SiteDetail.jsx'))
+const Atlas = lazy(() => import('./views/Atlas.jsx'))
 
 loadStored()
 
-/* 顶层导航四个词：名站策展、视觉图鉴、专业工具、社区提交 */
-const NAV = [
-  { to: 'index', label: '策展', match: (v) => v === 'index' },
-  { to: 'atlas', label: '图鉴', match: (v) => ['atlas', 'lexicon', 'entry', 'key', 'compare', 'matrix'].includes(v) },
-  { to: 'tools', label: '工具', match: (v) => v === 'tools' },
-  { to: 'submit', label: '提交', match: (v) => v === 'submit' },
+/* 三个频道。旧版是四个（策展 / 图鉴 / 工具 / 提交）：
+ * 工具降级成关于页里的一个演示，提交降级成页脚一个框（方案 §2.1）。 */
+const CHANNELS = [
+  { hash: '#/', labelZh: '策展', match: (name) => name === 'curation' || name === 'sites' || name === 'site' },
+  { hash: '#/atlas', labelZh: '图鉴', match: (name) => name === 'atlas' },
+  { hash: '#/about', labelZh: '关于', match: (name) => name === 'about' },
 ]
+
+function NotFound({ hash }) {
+  return (
+    <section className="notfound">
+      <p className="x-mono">404</p>
+      <h1>这个地址上没有东西</h1>
+      <p>
+        <span className="x-mono">{hash}</span> 不是本站的路径。
+        旧版的工具页、提交页与 62 条旧词典（<span className="x-mono">#/entry/…</span>、
+        <span className="x-mono">#/key</span>、<span className="x-mono">#/compare</span>、
+        <span className="x-mono">#/matrix</span>）已经删除，不是暂时打不开。
+        为什么删、删掉的东西去了哪里，写在关于页。
+      </p>
+      <nav className="notfound-links" aria-label="回到主要频道">
+        <a className="btn-primary" href="#/">回策展首页</a>
+        <a className="btn-ghost" href="#/atlas">去图鉴</a>
+        <a className="btn-ghost" href="#/about">看关于页</a>
+      </nav>
+    </section>
+  )
+}
+
+function RouteFallback() {
+  return <p className="route-loading" role="status">加载中…</p>
+}
 
 export default function App() {
   const route = useRoute()
-  const [paletteOpen, setPaletteOpen] = useState(false)
-  const [specOpen, setSpecOpen] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  /* 站点详情是叠层：底下继续渲染点进来的那个列表路由。
+   * 「从哪来」写在 history.state.from 上（波次 3 接口文档），
+   * 深链直接打开时没有这个字段 → 底层落到策展首页。 */
+  const overlayOpen = route.name === 'site'
+  const cameFrom = overlayOpen && typeof window !== 'undefined'
+    ? String(window.history.state?.from ?? '')
+    : ''
+  const baseRoute = overlayOpen
+    ? (cameFrom.startsWith('#/sites') ? 'sites' : 'curation')
+    : route.name
+
+  /* 汉堡展开时锁背景；路由一变就收起。 */
+  useEffect(() => { setMenuOpen(false) }, [route.hash])
 
   useEffect(() => {
-    const onKey = (e) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-        e.preventDefault()
-        setPaletteOpen((v) => !v)
-      }
-      if (e.key === 'Escape') {
-        setPaletteOpen(false)
-        setMobileMenuOpen(false)
-      }
-      if (e.key === '?' && !paletteOpen) { setPaletteOpen(true) }
-    }
+    if (!menuOpen) return undefined
+    const onKey = (event) => { if (event.key === 'Escape') setMenuOpen(false) }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [paletteOpen])
+  }, [menuOpen])
 
+  /* 换页回到顶部；带锚点（如 `#/about#submit`）则滚到那一节。
+   * 叠层开合不动滚动位置——关掉浮窗要回到列表原来的地方。 */
   useEffect(() => {
-    const onRouteChange = () => setMobileMenuOpen(false)
-    window.addEventListener('hashchange', onRouteChange)
-    return () => window.removeEventListener('hashchange', onRouteChange)
-  }, [])
+    if (overlayOpen) return
+    if (route.fragment) {
+      const target = document.getElementById(route.fragment)
+      if (target) {
+        target.scrollIntoView({ block: 'start' })
+        return
+      }
+    }
+    window.scrollTo({ top: 0 })
+  }, [route.name, route.fragment, overlayOpen])
 
-  /* 图鉴内部自己管舞台与术语切换：整段路由都算同一个挂载，
-   * 否则每点一条术语就重挂一次，参数微调全被重置。 */
-  const routeKey = route.view === 'atlas' || route.view === 'lexicon'
-    ? 'atlas'
-    : `${route.view}:${route.id || ''}:${route.a || ''}:${route.b || ''}`
+  /* 叠层关闭：从列表点进来的用后退键还原，深链进来的落到列表页。 */
+  const closeOverlay = () => {
+    if (window.history.state?.from) window.history.back()
+    else window.location.hash = '#/'
+  }
+
+  const backgroundLocked = menuOpen || overlayOpen
 
   return (
-    <div className="site" data-view={route.view}>
+    <div className="site" data-view={baseRoute}>
       <a className="skip-link" href="#main-content">跳到主要内容</a>
-      <div className="grain" aria-hidden="true" />
 
-      <nav className="nav" aria-label="全站导航">
+      <nav className="nav" aria-label="全站导航" inert={overlayOpen}>
         <div className="nav-left">
-          <a
-            className="nav-brand"
-            href="#/index"
-            aria-label="VisLexicon 视元"
-            onClick={() => setMobileMenuOpen(false)}
-          >VisLexicon</a>
-
-          <div className="nav-links" aria-label="主频道">
-            {NAV.map((n) => {
-              const active = n.match(route.view)
+          <a className="nav-brand" href="#/" aria-label="VisLexicon 首页">VisLexicon</a>
+          <div className="nav-links">
+            {CHANNELS.map((channel) => {
+              const active = channel.match(route.name)
               return (
                 <a
-                  key={n.to}
+                  key={channel.hash}
                   className={`nav-link ${active ? 'on' : ''}`}
-                  href={`#/${n.to}`}
+                  href={channel.hash}
                   aria-current={active ? 'page' : undefined}
                 >
-                  {n.label}
+                  {channel.labelZh}
                 </a>
               )
             })}
           </div>
         </div>
 
-        <button
-          type="button"
-          className={`nav-hamburger ${mobileMenuOpen ? 'open' : ''}`}
-          aria-label={mobileMenuOpen ? '关闭导航菜单' : '打开导航菜单'}
-          aria-controls="mobile-menu"
-          aria-expanded={mobileMenuOpen}
-          onClick={() => setMobileMenuOpen((open) => !open)}
-        >
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-        </button>
+        <div className="nav-right">
+          <GlobalSearch />
+          <ThemeToggle />
+          <button
+            type="button"
+            className={`nav-hamburger ${menuOpen ? 'open' : ''}`}
+            aria-label={menuOpen ? '关闭导航菜单' : '打开导航菜单'}
+            aria-controls="mobile-menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+          </button>
+        </div>
 
-        {mobileMenuOpen && (
-          <div id="mobile-menu" className="mobile-menu" aria-label="移动端主频道">
-            {NAV.map((n) => {
-              const active = n.match(route.view)
-              return (
-                <a
-                  key={n.to}
-                  className={`mobile-nav-link ${active ? 'on' : ''}`}
-                  href={`#/${n.to}`}
-                  aria-current={active ? 'page' : undefined}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {n.label}
-                </a>
-              )
-            })}
-          </div>
-        )}
+        {/* 用 hidden 而不是条件渲染：关闭态在 DOM 里但不可 Tab 进入（方案 §7.4 第 2 条） */}
+        <div id="mobile-menu" className="mobile-menu" hidden={!menuOpen} inert={!menuOpen}>
+          {CHANNELS.map((channel) => {
+            const active = channel.match(route.name)
+            return (
+              <a
+                key={channel.hash}
+                className={`mobile-nav-link ${active ? 'on' : ''}`}
+                href={channel.hash}
+                aria-current={active ? 'page' : undefined}
+                onClick={() => setMenuOpen(false)}
+              >
+                {channel.labelZh}
+              </a>
+            )
+          })}
+        </div>
       </nav>
 
-      <main id="main-content" className="route" key={routeKey} tabIndex="-1">
-        {(route.view === 'atlas' || route.view === 'lexicon') && <Atlas stage={route.a} term={route.b} />}
-        {route.view === 'entry' && <Entry id={route.id} />}
-        {route.view === 'index' && <IndexView />}
-        {route.view === 'tools' && <Tools />}
-        {route.view === 'submit' && <Submit />}
-        {route.view === 'key' && <KeyView />}
-        {route.view === 'compare' && <Compare a={route.a} b={route.b} />}
-        {route.view === 'matrix' && <Variants fam={route.id} self={route.b} />}
-        {!['atlas', 'lexicon', 'entry', 'index', 'tools', 'submit', 'key', 'compare', 'matrix'].includes(route.view) && (
-          <IndexView />
-        )}
-      </main>
+      <div className="site-body" inert={backgroundLocked}>
+        <main id="main-content" className="route" tabIndex="-1">
+          <Suspense fallback={<RouteFallback />}>
+            {baseRoute === 'curation' && <Curation />}
+            {baseRoute === 'sites' && <AllSites />}
+            {baseRoute === 'atlas' && <Atlas stage={route.params.stageId} term={route.params.termId} />}
+            {baseRoute === 'about' && <About />}
+            {baseRoute === 'notfound' && <NotFound hash={route.hash} />}
+          </Suspense>
+        </main>
+        {baseRoute !== 'atlas' && <SiteFooter />}
+      </div>
 
-      <Palette open={paletteOpen} onClose={() => setPaletteOpen(false)} onOpenSpec={() => { setPaletteOpen(false); setSpecOpen(true) }} />
-      <SpecPanel open={specOpen} onClose={() => setSpecOpen(false)} />
+      {overlayOpen && (
+        <Suspense fallback={null}>
+          <SiteDetail entryId={route.params.entryId} onClose={closeOverlay} />
+        </Suspense>
+      )}
     </div>
   )
 }

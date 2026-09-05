@@ -12,6 +12,7 @@
   "editorial": {
     "name": "21st.dev",
     "descriptionZh": "21st Labs Inc. 运营社区 UI 注册表，收录 12,000+ 组件、模板与 shadcn 主题，可预览后复制 AI 提示词或用 CLI 安装。浏览免费但复制次数受限，会员与部分模板付费；内容权利按作者和平台条款分别管理。",
+    "takeawayZh": "社区组件连提示词一起拿走，免费复制有次数上限",
     "pricing": "Freemium + paid membership/AI plans + per-template purchases"
   },
   "classification": {
@@ -34,6 +35,29 @@
     "curatorId": "root-contact-sheet-review-20260901",
     "reviewerId": "independent-six-v3-editorial-reviewer",
     "confirmedAt": "2026-09-01T16:45:57.625Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "agent-composer",
+        "termId": "atlas-component-component-prompt-input",
+        "evidenceUrl": "https://21st.dev/community/components",
+        "note": "Community Components 的 AI chats 一类里反复出现带发送动作的提示词输入框。"
+      },
+      {
+        "stageId": "agent-composer",
+        "termId": "atlas-component-component-streaming-text",
+        "evidenceUrl": "https://21st.dev/community/components",
+        "note": "同一类目下有逐词流式输出的消息组件，对应 Agent 台的流式文本。"
+      },
+      {
+        "stageId": "agent-composer",
+        "termId": "atlas-component-component-model-selector",
+        "evidenceUrl": "https://21st.dev/community/components",
+        "note": "该类目也收录模型 / 工具选择器，是 Agent 台输入区旁的那个部件。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
   },
   "facets": {
     "scenarios": [

@@ -12,6 +12,8 @@
   "editorial": {
     "name": "shadcn/ui",
     "descriptionZh": "开放源码的组件集合与代码分发平台，通过 registry 和 CLI 将组件源码装入项目，由使用者直接修改并组成自己的组件库；官方还提供区块、主题与跨框架文档，适合希望掌控实现细节的设计师和开发者。",
+    "takeawayZh": "组件源码直接装进你的项目，之后归你自己改",
+    "noteZh": "我们进去先看首页那组拼好的示例，它把态度说清楚了：这里不给你一个黑盒依赖，而是把组件代码复制进你的仓库，之后怎么改是你的事。组件目录很长，但真正让我们停下来的是 Blocks 页——登录、后台、设置页这些整块界面已经拼好，能直接装。适合想把实现细节握在自己手里的人；如果只想 npm install 完就不管，这里会让你多做一些功课。",
     "pricing": "Free"
   },
   "classification": {
@@ -34,6 +36,35 @@
     "curatorId": "root-contact-sheet-review-20260901",
     "reviewerId": "independent-six-v3-editorial-reviewer",
     "confirmedAt": "2026-09-01T16:45:57.625Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://ui.shadcn.com/docs/components",
+        "note": "组件文档目录收录 Combobox，是这台「自绘下拉 + 搜索」一类控件的现成实现。"
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-command-palette",
+        "evidenceUrl": "https://ui.shadcn.com/docs/components",
+        "note": "目录里的 Command 就是命令面板，浮层台把它作为一个独立变体。"
+      },
+      {
+        "stageId": "state-loading",
+        "termId": "atlas-component-component-skeleton",
+        "evidenceUrl": "https://ui.shadcn.com/docs/components",
+        "note": "目录收录 Skeleton，可对照状态与加载台的骨架屏部件。"
+      },
+      {
+        "stageId": "data-display",
+        "termId": "atlas-component-component-data-table",
+        "evidenceUrl": "https://ui.shadcn.com/blocks",
+        "note": "Blocks 页面的后台区块以数据表格为主体，对应数据展示台的 Data table。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
   },
   "facets": {
     "scenarios": [],
@@ -94,7 +125,7 @@
       "sourceUrl": "https://ui.shadcn.com/",
       "finalUrl": "https://ui.shadcn.com/",
       "title": "shadcn/ui — Build Your Component Library",
-      "selectionRationale": "首页组合示例清楚表达可复制代码与自主定制的设计系统定位。",
+      "selectionRationale": "先看首页。那几组拼好的示例把定位一句话说完了：代码是你的，不是包管理器的。",
       "shot": {
         "src": "/shots/shadcn-ui/v2-identity.png",
         "sha256": "03c1d95841d2ff7ebc8244e5086f5aab5bdd89192e003a3c34ac06f051effde1",
@@ -109,7 +140,7 @@
       "sourceUrl": "https://ui.shadcn.com/docs/components",
       "finalUrl": "https://ui.shadcn.com/docs/components",
       "title": "shadcn/ui Components",
-      "selectionRationale": "组件文档目录展示无障碍原语和基础控件的完整范围。",
+      "selectionRationale": "再翻组件目录。从无障碍原语到基础控件，一列列往下拉，能感觉到范围有多完整。",
       "shot": {
         "src": "/shots/shadcn-ui/v2-breadth.png",
         "sha256": "64017b107977d16bb8ceab7186949dd40b6809481d0e2de4b2069f13ebb97049",
@@ -124,7 +155,7 @@
       "sourceUrl": "https://ui.shadcn.com/blocks",
       "finalUrl": "https://ui.shadcn.com/blocks",
       "title": "shadcn/ui Blocks",
-      "selectionRationale": "Blocks 页面以后台区块证明这些原语能组合成应用级界面。",
+      "selectionRationale": "最后开 Blocks。后台、登录这种整块界面已经拼好，这是「原语真能组成产品」的直接证据。",
       "shot": {
         "src": "/shots/shadcn-ui/v2-proof.png",
         "sha256": "1d84d35f937e5d5af952e9b78826fa3c2c0929e27597588af9507f2fe51a4ad2",
@@ -178,5 +209,10 @@
     "semanticReviewerId": "independent-six-v3-editorial-reviewer",
     "semanticPassed": true,
     "editorialReviewerId": "independent-six-v3-editorial-reviewer"
+  },
+  "editorialVoice": {
+    "status": "exemplar",
+    "writtenAt": "2026-09-05",
+    "note": "takeawayZh/noteZh/selectionRationale 为人话改写，事实未变；其余条目照此标准补写。"
   }
 }

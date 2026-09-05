@@ -1,0 +1,215 @@
+/* ============================================================
+   VisLexicon 设计 token（方案 §7.2）
+   全仓唯一允许出现 hex / rgb / hsl 字面量的文件。
+   其它 src/styles/*.css 只能引用这里的 --vl-* 变量。
+   ============================================================ */
+
+/* ---- 断点：只有三条 min-width，全站不得出现第四条 ----------
+   390   设计基准，不写 media query（mobile first）
+   768   @media (min-width: 768px)   平板 / 大手机横屏
+   1280  @media (min-width: 1280px)  桌面
+   1440  @media (min-width: 1440px)  宽桌面（只放宽容器上限，不改结构）
+   ------------------------------------------------------------ */
+
+:root {
+  /* ---- 画布与表面：只有三层 ---- */
+  --vl-bg:            #f6f5f2;
+  --vl-surface:       #ffffff;
+  --vl-surface-sunk:  #efeee9;
+
+  /* ---- 线 ---- */
+  --vl-line:          #e2e0d9;
+  --vl-line-strong:   #cbc8bd;
+
+  /* ---- 文字：三级 ---- */
+  --vl-ink:           #171614;
+  --vl-ink-2:         #504d46;
+  --vl-ink-3:         #6b675e;
+
+  /* ---- 唯一强调色 ---- */
+  --vl-accent:        #171614;
+  --vl-accent-ink:    #ffffff;
+  --vl-accent-wash:   rgba(23, 22, 20, 0.06);
+
+  /* ---- 语义色 ---- */
+  --vl-verify:        #0a6b43;
+  --vl-verify-wash:   rgba(10, 107, 67, 0.10);
+  --vl-caution:       #8a5a00;
+  --vl-caution-wash:  rgba(138, 90, 0, 0.10);
+  --vl-danger:        #a33227;
+  --vl-danger-wash:   rgba(163, 50, 39, 0.10);
+
+  /* ---- 浮层遮罩 ---- */
+  --vl-scrim:         rgba(23, 22, 20, 0.44);
+
+  /* ---- 字体 ---- */
+  --vl-sans: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+             'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC',
+             'Microsoft YaHei', sans-serif;
+  --vl-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Consolas, Menlo, monospace;
+
+  /* ---- 字阶：1.2 Minor Third，全部整数，基础 16px ---- */
+  --vl-fs-2xs: 12px;  --vl-lh-2xs: 1.45;
+  --vl-fs-xs:  13px;  --vl-lh-xs:  1.50;
+  --vl-fs-sm:  14px;  --vl-lh-sm:  1.55;
+  --vl-fs-md:  16px;  --vl-lh-md:  1.60;
+  --vl-fs-lg:  19px;  --vl-lh-lg:  1.45;
+  --vl-fs-xl:  23px;  --vl-lh-xl:  1.35;
+  --vl-fs-2xl: 28px;  --vl-lh-2xl: 1.28;
+  --vl-fs-3xl: 34px;  --vl-lh-3xl: 1.20;
+  --vl-fs-4xl: 41px;  --vl-lh-4xl: 1.12;
+
+  --vl-fw-regular: 400;
+  --vl-fw-medium:  520;
+  --vl-fw-bold:    650;
+
+  /* ---- 间距：4pt 栅格 ---- */
+  --vl-s1:  4px;   --vl-s2:  8px;   --vl-s3: 12px;   --vl-s4: 16px;   --vl-s5: 20px;
+  --vl-s6: 24px;   --vl-s7: 32px;   --vl-s8: 40px;   --vl-s9: 56px;   --vl-s10: 80px;
+
+  /* ---- 圆角 ---- */
+  --vl-r-xs:   4px;
+  --vl-r-sm:   8px;
+  --vl-r-md:  12px;
+  --vl-r-lg:  18px;
+  --vl-r-pill: 999px;
+
+  /* ---- 阴影：只有三档 ---- */
+  --vl-shadow-1: 0 1px 2px rgba(23, 22, 20, .06), 0 1px 1px rgba(23, 22, 20, .04);
+  --vl-shadow-2: 0 4px 12px -2px rgba(23, 22, 20, .08), 0 2px 4px -2px rgba(23, 22, 20, .06);
+  --vl-shadow-3: 0 18px 48px -12px rgba(23, 22, 20, .22), 0 6px 16px -8px rgba(23, 22, 20, .12);
+
+  /* ---- 动效 ---- */
+  --vl-dur-1: 120ms;
+  --vl-dur-2: 200ms;
+  --vl-dur-3: 320ms;
+  --vl-dur-4: 520ms;
+  --vl-ease-out:  cubic-bezier(.2, .8, .3, 1);
+  --vl-ease-io:   cubic-bezier(.4, 0, .2, 1);
+  --vl-ease-emph: cubic-bezier(.32, .72, 0, 1);
+
+  /* ---- 焦点环：两层，先画布色再强调色 ---- */
+  --vl-focus-ring: 0 0 0 2px var(--vl-bg), 0 0 0 4px var(--vl-accent);
+
+  /* ---- 容器 ---- */
+  --vl-container: min(100% - 2 * var(--vl-s6), 1160px);
+
+  /* ---- 外壳几何（顶栏高度与页边，随断点变） ---- */
+  --vl-header-h: 60px;
+  --vl-gutter:   20px;
+
+  color-scheme: light;
+}
+
+/* ---- 深色：跟随系统 ---- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --vl-bg:            #131210;
+    --vl-surface:       #1c1b18;
+    --vl-surface-sunk:  #24231f;
+    --vl-line:          #302e29;
+    --vl-line-strong:   #423f38;
+    --vl-ink:           #f2f0ea;
+    --vl-ink-2:         #c2beb4;
+    --vl-ink-3:         #948f83;
+    --vl-accent:        #f2f0ea;
+    --vl-accent-ink:    #131210;
+    --vl-accent-wash:   rgba(242, 240, 234, 0.10);
+    --vl-verify:        #4fbb8a;
+    --vl-verify-wash:   rgba(79, 187, 138, 0.14);
+    --vl-caution:       #d9a441;
+    --vl-caution-wash:  rgba(217, 164, 65, 0.14);
+    --vl-danger:        #e0776a;
+    --vl-danger-wash:   rgba(224, 119, 106, 0.14);
+    --vl-scrim:         rgba(0, 0, 0, 0.62);
+    --vl-shadow-1: 0 1px 2px rgba(0, 0, 0, .35);
+    --vl-shadow-2: 0 4px 12px -2px rgba(0, 0, 0, .48), 0 2px 4px -2px rgba(0, 0, 0, .35);
+    --vl-shadow-3: 0 18px 48px -12px rgba(0, 0, 0, .62), 0 6px 16px -8px rgba(0, 0, 0, .48);
+    color-scheme: dark;
+  }
+}
+
+/* ---- 深色：显式选择（ThemeToggle 写 data-theme，由 WP-C 接线） ---- */
+:root[data-theme='dark'] {
+  --vl-bg:            #131210;
+  --vl-surface:       #1c1b18;
+  --vl-surface-sunk:  #24231f;
+  --vl-line:          #302e29;
+  --vl-line-strong:   #423f38;
+  --vl-ink:           #f2f0ea;
+  --vl-ink-2:         #c2beb4;
+  --vl-ink-3:         #948f83;
+  --vl-accent:        #f2f0ea;
+  --vl-accent-ink:    #131210;
+  --vl-accent-wash:   rgba(242, 240, 234, 0.10);
+  --vl-verify:        #4fbb8a;
+  --vl-verify-wash:   rgba(79, 187, 138, 0.14);
+  --vl-caution:       #d9a441;
+  --vl-caution-wash:  rgba(217, 164, 65, 0.14);
+  --vl-danger:        #e0776a;
+  --vl-danger-wash:   rgba(224, 119, 106, 0.14);
+  --vl-scrim:         rgba(0, 0, 0, 0.62);
+  --vl-shadow-1: 0 1px 2px rgba(0, 0, 0, .35);
+  --vl-shadow-2: 0 4px 12px -2px rgba(0, 0, 0, .48), 0 2px 4px -2px rgba(0, 0, 0, .35);
+  --vl-shadow-3: 0 18px 48px -12px rgba(0, 0, 0, .62), 0 6px 16px -8px rgba(0, 0, 0, .48);
+  color-scheme: dark;
+}
+
+@media (min-width: 768px) {
+  :root { --vl-header-h: 80px; --vl-gutter: 24px; }
+}
+
+@media (min-width: 1280px) {
+  :root { --vl-gutter: 32px; }
+}
+
+@media (min-width: 1440px) {
+  :root { --vl-container: min(100% - 2 * var(--vl-s6), 1280px); }
+}
+
+/* reduce-motion：状态/浮层/布局三档时长归零，舞台演示时长保留
+   （关掉动画不等于关掉信息，见方案 §7.2.7） */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --vl-dur-1: 1ms;
+    --vl-dur-2: 1ms;
+    --vl-dur-3: 1ms;
+  }
+}
+
+/* ============================================================
+   过渡期兼容别名：旧 token 名 → 新 token。
+   仍有 .jsx 内联样式引用 var(--acc) / var(--display) / var(--mono) 等
+   （如 stages/text-reveal/Stage.jsx、entries.js）。三套调色板已收敛为
+   一套——这些名字只是同一套值的旧称呼。
+   WP-C / WP-D / WP-E / WP-F 迁完各自的 jsx 后，本段整体删除。
+   ============================================================ */
+:root {
+  --bg:          var(--vl-bg);
+  --bg-1:        var(--vl-bg);
+  --bg-2:        var(--vl-surface);
+  --bg-3:        var(--vl-surface-sunk);
+  --bg-raise:    var(--vl-surface-sunk);
+  --line:        var(--vl-line);
+  --line-soft:   var(--vl-line);
+  --text:        var(--vl-ink-2);
+  --text-2:      var(--vl-ink-3);
+  --text-h:      var(--vl-ink);
+  --ink:         var(--vl-ink);
+  --acc:         var(--vl-accent);
+  --acc-strong:  var(--vl-accent);
+  --acc-bg:      var(--vl-accent-wash);
+  --acc-line:    var(--vl-line-strong);
+  --lime:        var(--vl-verify);
+  --lime-bg:     var(--vl-verify-wash);
+  --ok:          var(--vl-verify);
+  --warn:        var(--vl-caution);
+  --err:         var(--vl-danger);
+  --sans:        var(--vl-sans);
+  --display:     var(--vl-sans);
+  --serif:       Georgia, 'Times New Roman', serif;
+  --mono:        var(--vl-mono);
+  --r:           var(--vl-r-md);
+  --r-sm:        var(--vl-r-sm);
+  --shadow:      var(--vl-shadow-2);
+}

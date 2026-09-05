@@ -1,0 +1,2771 @@
+diff --git a/frontend/src/App.jsx b/frontend/src/App.jsx
+index 859fc99..54b38f1 100644
+--- a/frontend/src/App.jsx
++++ b/frontend/src/App.jsx
+@@ -11,7 +11,8 @@ import About from './views/About.jsx'
+ const Curation = lazy(() => import('./views/Curation.jsx'))
+ const AllSites = lazy(() => import('./views/AllSites.jsx'))
+ const SiteDetail = lazy(() => import('./views/SiteDetail.jsx'))
+-const Atlas = lazy(() => import('./views/Atlas.jsx'))
++const AtlasIndex = lazy(() => import('./views/AtlasIndex.jsx'))
++const AtlasStage = lazy(() => import('./views/AtlasStage.jsx'))
+ 
+ loadStored()
+ 
+@@ -159,12 +160,14 @@ export default function App() {
+           <Suspense fallback={<RouteFallback />}>
+             {baseRoute === 'curation' && <Curation />}
+             {baseRoute === 'sites' && <AllSites />}
+-            {baseRoute === 'atlas' && <Atlas stage={route.params.stageId} term={route.params.termId} />}
++            {baseRoute === 'atlas' && (route.params.stageId
++              ? <AtlasStage stageId={route.params.stageId} termId={route.params.termId} />
++              : <AtlasIndex />)}
+             {baseRoute === 'about' && <About />}
+             {baseRoute === 'notfound' && <NotFound hash={route.hash} />}
+           </Suspense>
+         </main>
+-        {baseRoute !== 'atlas' && <SiteFooter />}
++        <SiteFooter />
+       </div>
+ 
+       {overlayOpen && (
+diff --git a/frontend/src/atlas.css b/frontend/src/atlas.css
+deleted file mode 100644
+index 0103e24..0000000
+--- a/frontend/src/atlas.css
++++ /dev/null
+@@ -1 +0,0 @@
+-/* 已迁移到 src/styles/，待 WP-F 删除 views/Atlas.jsx:2 的 import 后删除本文件 */
+diff --git a/frontend/src/components/ArchiveDisclosure.jsx b/frontend/src/components/ArchiveDisclosure.jsx
+index f5d9a8a..1079722 100644
+--- a/frontend/src/components/ArchiveDisclosure.jsx
++++ b/frontend/src/components/ArchiveDisclosure.jsx
+@@ -98,16 +98,6 @@ export default function ArchiveDisclosure({ data }) {
+       {open ? (
+         <div className="sd-archive-body">
+           <dl className="sd-facts">
+-            {/* 正式简介：完整、书面、可引用。页面上半部分给的是编辑手记，
+-                两者不互相顶替，所以正式那份收在档案区第一行。 */}
+-            {data.editorial?.descriptionZh ? (
+-              <div className="sd-fact">
+-                <dt className="sd-fact-field">正式简介</dt>
+-                <dd className="sd-fact-body">
+-                  <p className="sd-fact-desc">{data.editorial.descriptionZh}</p>
+-                </dd>
+-              </div>
+-            ) : null}
+             {facts.map((fact, index) => (
+               <FactRow key={`${fact.field}-${index}`} fact={fact} />
+             ))}
+diff --git a/frontend/src/components/CodeExportModal.jsx b/frontend/src/components/CodeExportModal.jsx
+deleted file mode 100644
+index 99e678d..0000000
+--- a/frontend/src/components/CodeExportModal.jsx
++++ /dev/null
+@@ -1,164 +0,0 @@
+-import { useEffect, useState } from 'react'
+-
+-/* Code & Design Spec Export Drawer (代码与设计规范一键导出抽屉)
+- * 允许用户将经过像素级微调的活舞台组件打包带走：
+- * 1. 生产级 React + Tailwind 组件代码
+- * 2. 精确 Design Tokens (CSS 变量 / JSON)
+- * 3. 面向 Claude Code / Cursor 的精准提示词 (AI Prompt)
+- */
+-
+-export default function CodeExportModal({ open, onClose, stage, variant, values, activeTerm }) {
+-  const [activeTab, setActiveTab] = useState('react')
+-  const [copied, setCopied] = useState(false)
+-
+-  useEffect(() => {
+-    const handleKeyDown = (e) => {
+-      if (e.key === 'Escape') onClose()
+-    }
+-    if (open) {
+-      window.addEventListener('keydown', handleKeyDown)
+-      document.body.style.overflow = 'hidden'
+-    }
+-    return () => {
+-      window.removeEventListener('keydown', handleKeyDown)
+-      document.body.style.overflow = ''
+-    }
+-  }, [open, onClose])
+-
+-  if (!open) return null
+-
+-  const stageTitle = stage?.titleZh || '组件'
+-  const variantTitle = variant?.termZhFix || variant?.term?.termZh || '默认'
+-  const termName = activeTerm?.termEn || 'VisLexicon Component'
+-
+-  /* 生成生产级 React + Tailwind TSX 代码 */
+-  const reactCode = `import React from 'react'
+-
+-// VisLexicon Spec: ${stageTitle} · ${variantTitle}
+-// Generated with VisLexicon Studio (https://vislexicon.dev)
+-
+-export interface ${stage?.id ? stage.id.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('') : 'Custom'}ComponentProps {
+-  className?: string
+-  ${Object.keys(values || {}).map(k => `${k}?: ${typeof values[k] === 'boolean' ? 'boolean' : typeof values[k] === 'number' ? 'number' : 'string'}`).join('\n  ')}
+-}
+-
+-export function ${stage?.id ? stage.id.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('') : 'Custom'}Component({
+-  className = '',
+-  ${Object.keys(values || {}).map(k => `${k} = ${JSON.stringify(values[k])}`).join(',\n  ')}
+-}: ${stage?.id ? stage.id.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('') : 'Custom'}ComponentProps) {
+-  return (
+-    <div
+-      className={\`relative flex flex-col p-4 rounded-[${values?.radius || 14}px] bg-slate-900/90 text-slate-100 border border-slate-700/50 backdrop-blur-xl shadow-2xl transition-all duration-200 \${className}\`}
+-      style={{
+-        gap: '${values?.gap || 16}px',
+-        paddingBottom: '${values?.composerInset || 16}px',
+-      }}
+-    >
+-      {/* ${termName} Specimen Container */}
+-      <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+-        <span className="text-xs font-mono font-semibold text-sky-400">❖ ${termName}</span>
+-        <span className="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 font-medium">Verified Spec</span>
+-      </div>
+-
+-      <div className="text-sm leading-relaxed text-slate-300">
+-        Live component extracted from VisLexicon Atlas Stage.
+-      </div>
+-    </div>
+-  )
+-}
+-`
+-
+-  /* 生成 Design Tokens JSON */
+-  const tokensJson = JSON.stringify({
+-    specVersion: "1.0",
+-    stageId: stage?.id,
+-    stageTitle,
+-    variant: variantTitle,
+-    activeTerm: termName,
+-    designTokens: {
+-      ...values,
+-      unitSystem: "8pt-grid",
+-      colorSpace: "OKLCH / sRGB",
+-      elevation: "diffuse-layered",
+-      borderWidth: "0.5px-hairline",
+-    }
+-  }, null, 2)
+-
+-  /* 生成下游 Agent 提示词指令 */
+-  const aiPrompt = `请严格按照以下 VisLexicon 前端视觉规范（Design Spec）实现组件：
+-- 目标组件：${stageTitle} (${stage?.titleEn || ''})
+-- 目标视元：${termName}
+-- 当前变体：${variantTitle}
+-- 精确参数配置：
+-${Object.entries(values || {}).map(([k, v]) => `  * ${k}: ${v}`).join('\n')}
+-- 视觉与交互要求：
+-  1. 遵循 0.5px 发丝级微渐变边框与 G2 平滑倒角。
+-  2. 保持感知均匀对比度（OKLCH），拒绝低对比度 AI 味界面。
+-  3. 动效遵循物理弹簧或指定时间节奏，保证 60fps 硬件加速。`
+-
+-  const currentContent = activeTab === 'react' ? reactCode : activeTab === 'tokens' ? tokensJson : aiPrompt
+-
+-  const handleCopy = async () => {
+-    try {
+-      await navigator.clipboard.writeText(currentContent)
+-      setCopied(true)
+-      setTimeout(() => setCopied(false), 2000)
+-    } catch {
+-      // fallback
+-    }
+-  }
+-
+-  return (
+-    <div className="ax-modal-backdrop" onClick={onClose} role="dialog" aria-modal="true">
+-      <div className="ax-modal-dialog" onClick={(e) => e.stopPropagation()}>
+-        <div className="ax-modal-header">
+-          <div className="ax-modal-title-group">
+-            <span className="ax-modal-icon">📦</span>
+-            <div>
+-              <h3>打包带走 · 组件代码与规格</h3>
+-              <p>{stageTitle} · {variantTitle} ({termName})</p>
+-            </div>
+-          </div>
+-          <button type="button" className="ax-modal-close" onClick={onClose} aria-label="关闭">×</button>
+-        </div>
+-
+-        <div className="ax-modal-tabs">
+-          <button
+-            type="button"
+-            className={`ax-modal-tab ${activeTab === 'react' ? 'active' : ''}`}
+-            onClick={() => setActiveTab('react')}
+-          >
+-            React + Tailwind (TSX)
+-          </button>
+-          <button
+-            type="button"
+-            className={`ax-modal-tab ${activeTab === 'tokens' ? 'active' : ''}`}
+-            onClick={() => setActiveTab('tokens')}
+-          >
+-            Design Tokens (JSON)
+-          </button>
+-          <button
+-            type="button"
+-            className={`ax-modal-tab ${activeTab === 'prompt' ? 'active' : ''}`}
+-            onClick={() => setActiveTab('prompt')}
+-          >
+-            下游 Agent 提示词 (Prompt)
+-          </button>
+-        </div>
+-
+-        <div className="ax-modal-body">
+-          <pre className="ax-modal-code">
+-            <code>{currentContent}</code>
+-          </pre>
+-        </div>
+-
+-        <div className="ax-modal-footer">
+-          <span className="ax-modal-hint">已自动对齐生产级无障碍规范与 Tailwind 4.0 语法</span>
+-          <button type="button" className={`ax-modal-copy-btn ${copied ? 'copied' : ''}`} onClick={handleCopy}>
+-            {copied ? '✓ 已复制到剪贴板' : '复制规范代码'}
+-          </button>
+-        </div>
+-      </div>
+-    </div>
+-  )
+-}
+diff --git a/frontend/src/components/atlas/AnnotationLayer.jsx b/frontend/src/components/atlas/AnnotationLayer.jsx
+new file mode 100644
+index 0000000..78a1f78
+--- /dev/null
++++ b/frontend/src/components/atlas/AnnotationLayer.jsx
+@@ -0,0 +1,118 @@
++import { useCallback, useEffect, useLayoutEffect, useState } from 'react'
++
++/* ============ 标注层（方案 §5.2 态一） ============
++ * 解剖图的全部价值就是「一眼看到全部命名」。总览态把本台每个热区的编号角标
++ * 同时摆出来，而不是一次只亮一个。角标贴在部件左上角，互相压住时依次右移，
++ * 位置由真实 DOM 量出来——舞台组件不需要为标注改一行代码。
++ *
++ * 分区态只亮本区：其余角标降透明度并让出点击，舞台里对应的部件由
++ * `applyZoneDim` 打上 `axs-dim` 类（同样不改舞台组件）。
++ */
++
++/* 角标直径与最小间距。这是版面参数，不是统计量。 */
++const BADGE = 26
++const MIN_GAP = 24
++
++function measure(host, items) {
++  if (!host) return []
++  const hostBox = host.getBoundingClientRect()
++  const boxes = []
++  for (const item of items) {
++    if (!item.node) continue
++    const el = host.querySelector(`[data-node="${CSS.escape(item.node)}"]`)
++    if (!el) continue
++    const rect = el.getBoundingClientRect()
++    /* 舞台可以横向滚动（窄屏），所以位置要换算成内容坐标而不是视口坐标，
++     * 角标才会跟着内容一起滚。 */
++    boxes.push({
++      ...item,
++      x: rect.left - hostBox.left + host.scrollLeft,
++      y: rect.top - hostBox.top + host.scrollTop,
++      w: rect.width,
++      h: rect.height,
++    })
++  }
++
++  /* 去重叠：按纵横排序后逐个检查，撞上就沿 x 推开一格。 */
++  const placed = []
++  for (const box of boxes.slice().sort((a, b) => a.y - b.y || a.x - b.x)) {
++    let bx = Math.max(box.x - BADGE / 2, 0)
++    const by = Math.max(box.y - BADGE / 2, 0)
++    let guard = 0
++    while (
++      guard < placed.length + 1
++      && placed.some((p) => Math.abs(p.bx - bx) < MIN_GAP && Math.abs(p.by - by) < MIN_GAP)
++    ) {
++      bx += MIN_GAP
++      guard += 1
++    }
++    placed.push({ ...box, bx, by })
++  }
++  return placed
++}
++
++/** 分区态：把不属于当前分区的部件打上 `axs-dim`。舞台组件本身零改动。 */
++export function applyZoneDim(host, activeZoneId) {
++  if (!host) return
++  for (const el of host.querySelectorAll('[data-node]')) {
++    const off = Boolean(activeZoneId) && el.getAttribute('data-zone') !== activeZoneId
++    el.classList.toggle('axs-dim', off)
++  }
++}
++
++export default function AnnotationLayer({
++  hostRef, items, activeZoneId, selectedTermId, onSelect, onHover, signature,
++}) {
++  const [boxes, setBoxes] = useState([])
++
++  const remeasure = useCallback(() => {
++    setBoxes(measure(hostRef.current, items))
++  }, [hostRef, items])
++
++  useLayoutEffect(() => { remeasure() }, [remeasure, signature])
++
++  useEffect(() => {
++    const host = hostRef.current
++    if (!host || typeof ResizeObserver === 'undefined') return undefined
++    const observer = new ResizeObserver(() => remeasure())
++    observer.observe(host)
++    for (const el of host.querySelectorAll('[data-node]')) observer.observe(el)
++    window.addEventListener('resize', remeasure)
++    return () => {
++      observer.disconnect()
++      window.removeEventListener('resize', remeasure)
++    }
++  }, [hostRef, remeasure, signature])
++
++  useEffect(() => {
++    applyZoneDim(hostRef.current, activeZoneId)
++    return () => applyZoneDim(hostRef.current, null)
++  }, [hostRef, activeZoneId, signature])
++
++  return (
++    <div className="axa" aria-hidden={boxes.length ? undefined : 'true'}>
++      {boxes.map((box) => {
++        const off = Boolean(activeZoneId) && box.zoneId !== activeZoneId
++        const on = box.termId === selectedTermId
++        return (
++          <button
++            key={box.termId}
++            type="button"
++            data-annotation={box.n}
++            data-zone={box.zoneId}
++            className={`axa-badge ${off ? 'off' : ''} ${on ? 'on' : ''}`}
++            style={{ insetInlineStart: `${box.bx}px`, insetBlockStart: `${box.by}px` }}
++            onClick={() => onSelect(box.termId)}
++            onMouseEnter={() => onHover?.(box.node)}
++            onMouseLeave={() => onHover?.(null)}
++            onFocus={() => onHover?.(box.node)}
++            onBlur={() => onHover?.(null)}
++            aria-label={`${box.n} ${box.termEn} ${box.displayZh}`}
++          >
++            <span aria-hidden="true">{box.n}</span>
++          </button>
++        )
++      })}
++    </div>
++  )
++}
+diff --git a/frontend/src/components/atlas/CompareMatrix.jsx b/frontend/src/components/atlas/CompareMatrix.jsx
+new file mode 100644
+index 0000000..5e20583
+--- /dev/null
++++ b/frontend/src/components/atlas/CompareMatrix.jsx
+@@ -0,0 +1,140 @@
++import { useEffect, useMemo, useRef } from 'react'
++import { COMPARE_AXES } from '../../lib/stage-zones.js'
++
++/* ============ 活体歧义对照（方案 §3.3 / §5.2 态四） ============
++ * 竞品的歧义对照全是静态图配文字。这里的两到五个术语是活的，而且共用同一份
++ * 参数值——同一个旋钮同时作用在全部对照项上，差别才是差别，不是各调各的。
++ *
++ * 变体族：一族浮层就并排开几台，每台钉住一个变体；
++ * 部件族：同一张标本只渲染一次，被比较的那几个部件同时描边。
++ *
++ * 判据只能来自清单批注或语料定义，写不出来就是 null，渲染成「—」，不编。
++ * 整列都是 null 的轴整列不显示——一条信息都没有的列只会稀释真有判据的那几列。
++ */
++
++export default function CompareMatrix({
++  set, stage, StageComponent, values, model, replayKey, onSelectTerm, selectedTermId,
++}) {
++  const hostRef = useRef(null)
++
++  const members = useMemo(
++    () => set.termIds.map((termId) => model.byTerm.get(termId)).filter(Boolean),
++    [set, model],
++  )
++  const variantMembers = members.filter((member) => member.slot === 'variant')
++  const hotspotMembers = members.filter((member) => member.slot === 'hotspot')
++
++  /* 整列为 null 的轴不显示：轴顺序用五轴常量，不用对照组自己的书写顺序。 */
++  const axes = useMemo(() => {
++    const declared = new Set((set.axes || []).map((axis) => axis.id))
++    return COMPARE_AXES.filter((axis) => declared.has(axis.id)
++      && set.termIds.some((termId) => set.cells?.[termId]?.[axis.id]))
++  }, [set])
++
++  /* 部件族：把被比较的那几个部件同时描边。舞台组件零改动。 */
++  useEffect(() => {
++    const host = hostRef.current
++    if (!host) return undefined
++    const nodes = hotspotMembers.map((member) => member.node).filter(Boolean)
++    for (const el of host.querySelectorAll('[data-node]')) {
++      el.classList.toggle('axs-cmp', nodes.includes(el.getAttribute('data-node')))
++    }
++    return () => {
++      for (const el of host.querySelectorAll('[data-node]')) el.classList.remove('axs-cmp')
++    }
++  }, [hotspotMembers, values, replayKey])
++
++  return (
++    <section className="axm" aria-label={set.titleZh}>
++      <h2 className="axm-title">{set.titleZh}</h2>
++      <p className="axm-sub">
++        {members.length} 条同屏，共用同一份参数值：调一个旋钮，它们同时变。
++        判据写的是「会改变实现的那条需求」，不是长得像不像；写不出来的格子是「—」。
++      </p>
++
++      {variantMembers.length > 0 && (
++        <div className="axm-live">
++          {variantMembers.map((member) => (
++            <figure className="axm-cell" key={member.termId}>
++              <figcaption>
++                <button type="button" onClick={() => onSelectTerm(member.termId)}>
++                  <em className="x-mono">{member.n}</em>
++                  <b>{member.termEn}</b>
++                  <span>{member.displayZh}</span>
++                </button>
++              </figcaption>
++              <div className="axm-stage">
++                <StageComponent
++                  stage={stage}
++                  variant={member.claim}
++                  values={values}
++                  activeNode={null}
++                  hoverNode={null}
++                  onHover={undefined}
++                  replayKey={replayKey}
++                />
++              </div>
++            </figure>
++          ))}
++        </div>
++      )}
++
++      {hotspotMembers.length > 0 && (
++        <div className="axm-live axm-live-single" ref={hostRef}>
++          <div className="axm-stage">
++            <StageComponent
++              stage={stage}
++              variant={null}
++              values={values}
++              activeNode={null}
++              hoverNode={null}
++              onHover={undefined}
++              replayKey={replayKey}
++            />
++          </div>
++        </div>
++      )}
++
++      <div className="axm-scroll">
++        <table className="axm-table">
++          <caption className="axm-caption">
++            行是五轴判据，列是被比较的术语。
++          </caption>
++          <thead>
++            <tr>
++              <th scope="col">判据</th>
++              {members.map((member) => (
++                <th scope="col" key={member.termId}>
++                  <button
++                    type="button"
++                    className={member.termId === selectedTermId ? 'on' : ''}
++                    onClick={() => onSelectTerm(member.termId)}
++                  >
++                    <em className="x-mono">{member.n}</em>
++                    <b>{member.termEn}</b>
++                    <span>{member.displayZh}</span>
++                  </button>
++                </th>
++              ))}
++            </tr>
++          </thead>
++          <tbody>
++            {axes.map((axis) => (
++              <tr key={axis.id}>
++                <th scope="row">{axis.labelZh}</th>
++                {members.map((member) => {
++                  const cell = set.cells?.[member.termId]?.[axis.id]
++                  return (
++                    <td key={member.termId} className={cell ? '' : 'axm-null'}>
++                      {cell || '—'}
++                    </td>
++                  )
++                })}
++              </tr>
++            ))}
++          </tbody>
++        </table>
++      </div>
++    </section>
++  )
++}
+diff --git a/frontend/src/components/atlas/ParamPanel.jsx b/frontend/src/components/atlas/ParamPanel.jsx
+new file mode 100644
+index 0000000..ed69dc1
+--- /dev/null
++++ b/frontend/src/components/atlas/ParamPanel.jsx
+@@ -0,0 +1,190 @@
++/* ============ 参数侧板（方案 §5.3 第 1–3 条） ============
++ * 三件事和旧的底部横条不同：
++ *   1. 贴边纵向面板，每控件一行 —— 横条容量上限 3–4，而指针台有 26 个控件；
++ *      纵向面板还天然容得下 enum 下拉与 boolean 开关（旧横条里三台全是滑块）。
++ *   2. param 与 knob 视觉分开 —— param 有正名，可点进术语面板；knob 没有，
++ *      明确标「无正名」且不可路由。项目把「不伪造术语 id」当原则，界面就得让它可见。
++ *   3. 每个连续量给预设档位（MDN Try it 范式）—— 清单里写了预设就用清单的，
++ *      没写就给 最小 / 默认 / 最大 三档，标签直接是数值本身，不替它编名字。
++ */
++
++function presetsFor(spec) {
++  if (Array.isArray(spec.presets) && spec.presets.length) {
++    return spec.presets.map((preset) => ({
++      key: String(preset.value),
++      labelZh: preset.labelZh ?? `${preset.value}${spec.unit || ''}`,
++      value: preset.value,
++    }))
++  }
++  if ((spec.type || 'range') !== 'range') return []
++  const unit = spec.unit || ''
++  const raw = [
++    { key: 'min', labelZh: `${spec.min}${unit}`, value: spec.min },
++    { key: 'default', labelZh: `${spec.default}${unit}`, value: spec.default },
++    { key: 'max', labelZh: `${spec.max}${unit}`, value: spec.max },
++  ]
++  /* 默认值恰好落在端点时不重复出一档。 */
++  const seen = new Set()
++  return raw.filter((preset) => {
++    if (seen.has(preset.value)) return false
++    seen.add(preset.value)
++    return true
++  })
++}
++
++function readout(spec, value) {
++  const type = spec.type || 'range'
++  if (type === 'boolean') return value ? '开' : '关'
++  return `${value}${spec.unit || ''}`
++}
++
++function Control({ spec, value, onChange, labelledBy }) {
++  const type = spec.type || 'range'
++  if (type === 'boolean') {
++    return (
++      <span className="axc-switchwrap">
++        <input
++          type="checkbox"
++          className="axc-switch"
++          checked={Boolean(value)}
++          aria-labelledby={labelledBy}
++          onChange={(event) => onChange(event.target.checked)}
++        />
++      </span>
++    )
++  }
++  if (type === 'enum') {
++    return (
++      <select
++        className="axc-select"
++        value={value}
++        aria-labelledby={labelledBy}
++        onChange={(event) => onChange(event.target.value)}
++      >
++        {spec.choices.map((choice) => <option key={choice} value={choice}>{choice}</option>)}
++      </select>
++    )
++  }
++  return (
++    <input
++      type="range"
++      className="axc-range"
++      min={spec.min}
++      max={spec.max}
++      step={spec.step}
++      value={value}
++      aria-labelledby={labelledBy}
++      onChange={(event) => onChange(Number(event.target.value))}
++    />
++  )
++}
++
++function Row({ id, spec, value, onChange, head, hint }) {
++  const presets = presetsFor(spec)
++  return (
++    <li className="axc-row">
++      <div className="axc-head">
++        {head}
++        <em className="axc-value x-mono">{readout(spec, value)}</em>
++      </div>
++      {hint}
++      <Control spec={spec} value={value} onChange={onChange} labelledBy={id} />
++      {presets.length > 0 && (
++        <div className="axc-presets" role="group" aria-labelledby={id}>
++          {presets.map((preset) => (
++            <button
++              key={preset.key}
++              type="button"
++              className={`axc-preset ${value === preset.value ? 'on' : ''}`}
++              onClick={() => onChange(preset.value)}
++            >
++              {preset.labelZh}
++            </button>
++          ))}
++        </div>
++      )}
++    </li>
++  )
++}
++
++export default function ParamPanel({
++  params, knobs, values, onChange, onSelectTerm, selectedTermId, idPrefix = 'axc',
++}) {
++  if (!params.length && !knobs.length) {
++    return <p className="axc-empty">这一台没有可调参数，也没有微调旋钮。</p>
++  }
++
++  return (
++    <div className="axc">
++      <section className="axc-group">
++        <h3 className="axc-group-h">
++          术语参数
++          <em className="x-mono">{params.length}</em>
++        </h3>
++        <p className="axc-group-sub">
++          每一条都有正名，是图鉴里的一条术语。点名字进术语面板。
++        </p>
++        {params.length ? (
++          <ul className="axc-list">
++            {params.map((item) => {
++              const id = `${idPrefix}-p-${item.param.key}`
++              return (
++                <Row
++                  key={item.termId}
++                  id={id}
++                  spec={item.param}
++                  value={values[item.param.key] ?? item.param.default}
++                  onChange={(next) => onChange(item.param.key, next)}
++                  head={(
++                    <button
++                      type="button"
++                      id={id}
++                      className={`axc-name ${item.termId === selectedTermId ? 'on' : ''}`}
++                      onClick={() => onSelectTerm(item.termId)}
++                    >
++                      <em className="axc-n x-mono">{item.n}</em>
++                      {item.param.label}
++                      <span className="axc-termen x-mono">{item.termEn}</span>
++                    </button>
++                  )}
++                />
++              )
++            })}
++          </ul>
++        ) : (
++          <p className="axc-empty">本台没有带正名的参数。</p>
++        )}
++      </section>
++
++      <section className="axc-group axc-knobs">
++        <h3 className="axc-group-h">
++          微调
++          <em className="x-mono">{knobs.length}</em>
++          <span className="axc-noname">无正名</span>
++        </h3>
++        <p className="axc-group-sub">
++          这些只是把标本调得好看一点的旋钮，行业里没有对应术语，我们也不替它们编一个，所以点不进术语面板。
++        </p>
++        {knobs.length ? (
++          <ul className="axc-list">
++            {knobs.map((knob) => {
++              const id = `${idPrefix}-k-${knob.key}`
++              return (
++                <Row
++                  key={knob.key}
++                  id={id}
++                  spec={knob}
++                  value={values[knob.key] ?? knob.default}
++                  onChange={(next) => onChange(knob.key, next)}
++                  head={<span className="axc-name axc-name-plain" id={id}>{knob.label}</span>}
++                />
++              )
++            })}
++          </ul>
++        ) : (
++          <p className="axc-empty">本台没有微调旋钮。</p>
++        )}
++      </section>
++    </div>
++  )
++}
+diff --git a/frontend/src/components/atlas/PositionMap.jsx b/frontend/src/components/atlas/PositionMap.jsx
+new file mode 100644
+index 0000000..66c3e38
+--- /dev/null
++++ b/frontend/src/components/atlas/PositionMap.jsx
+@@ -0,0 +1,141 @@
++import { useMemo, useState } from 'react'
++
++/* ============ 位置索引（方案 §3.2 机制二） ============
++ * 一张抽象版面图：七个固定区域 + 一格「主内容区·通用 / 无固定位置」，
++ * 装的是七个格子装不下的那些术语（三个变体台，加导航台主区里的面包屑之类）。
++ * 缺口显式给出，不隐藏；命中 0 条的区域照样占一格。
++ *
++ * 数字全部来自 positionIndex(manifests) 与 manifest 自身，本文件无统计量字面量。
++ */
++
++const UNPLACED = 'unplaced'
++
++/* 版面图上每格贴在哪。CSS 用 grid-template-areas 摆位，这里只给区域名。 */
++const AREA_OF = {
++  header: 'header',
++  sidebar: 'sidebar',
++  'main-table': 'table',
++  'main-form': 'form',
++  overlay: 'overlay',
++  composer: 'composer',
++  state: 'state',
++  [UNPLACED]: 'unplaced',
++}
++
++/** termId → 显示用的名字（英文正名 + 台上订正后的中文名）。 */
++function buildTermNames(index) {
++  const map = new Map()
++  for (const stage of index.stages) {
++    for (const claim of stage.claims) {
++      if (!map.has(claim.termId)) {
++        map.set(claim.termId, { termEn: claim.term.termEn, displayZh: claim.displayZh })
++      }
++    }
++  }
++  return map
++}
++
++/** 七个区域都没收走的那些术语，按台分组。总数即 positionIndex 的 unplaced。 */
++function buildUnplaced(manifests, index) {
++  const stages = []
++  for (const manifest of manifests) {
++    const placed = new Set()
++    for (const region of manifest.positionRegions || []) {
++      for (const termId of region.termIds || []) placed.add(termId)
++    }
++    const termIds = (manifest.claims || [])
++      .map((claim) => claim.termId)
++      .filter((termId) => !placed.has(termId))
++    if (!termIds.length) continue
++    stages.push({
++      stageId: manifest.id,
++      titleZh: manifest.titleZh,
++      termIds,
++      count: termIds.length,
++      /* 为什么没位置：变体台整台都不长在固定版面上，其余是零散的几条。 */
++      reasonZh: termIds.length === (manifest.claims || []).length
++        ? '整台不长在固定版面位置上'
++        : '这几条在主内容区里没有固定归属',
++    })
++  }
++  return {
++    region: UNPLACED,
++    labelZh: '主内容区 · 通用 / 无固定位置',
++    stages,
++    count: stages.reduce((sum, stage) => sum + stage.count, 0),
++  }
++}
++
++export default function PositionMap({ positions, index, manifests }) {
++  const [open, setOpen] = useState(null)
++  const names = useMemo(() => buildTermNames(index), [index])
++  const unplaced = useMemo(() => buildUnplaced(manifests, index), [manifests, index])
++  const cells = useMemo(() => [...positions.regions, unplaced], [positions, unplaced])
++  const active = cells.find((cell) => cell.region === open) || null
++
++  return (
++    <div className="axp">
++      <div className="axp-map">
++        {cells.map((cell) => {
++          const on = cell.region === open
++          return (
++            <button
++              key={cell.region}
++              type="button"
++              className={`axp-cell axp-area-${AREA_OF[cell.region]} ${on ? 'on' : ''} ${cell.count ? '' : 'zero'}`}
++              aria-expanded={on}
++              aria-controls="axp-detail"
++              onClick={() => setOpen(on ? null : cell.region)}
++            >
++              <b>{cell.labelZh}</b>
++              <em className="x-mono">
++                {cell.count ? `${cell.count} 条` : '这一区还没有台'}
++              </em>
++            </button>
++          )
++        })}
++      </div>
++
++      <p className="axp-sum x-mono">
++        九台共认领 {positions.claimed} 条挂点：落进版面区域 {positions.placed} 条，
++        没有固定位置 {positions.unplaced} 条。
++      </p>
++
++      <div className="axp-detail" id="axp-detail" hidden={!active} inert={!active}>
++        {active && (
++          <>
++            <h3>{active.labelZh}</h3>
++            {active.stages.length ? (
++              active.stages.map((stage) => (
++                <div className="axp-stage" key={stage.stageId}>
++                  <h4>
++                    <a href={`#/atlas/${stage.stageId}`}>{stage.titleZh}</a>
++                    <em className="x-mono">{stage.count} 条</em>
++                    {stage.reasonZh && <span className="axp-reason">{stage.reasonZh}</span>}
++                  </h4>
++                  <ul className="axp-terms">
++                    {stage.termIds.map((termId) => {
++                      const name = names.get(termId)
++                      return (
++                        <li key={termId}>
++                          <a href={`#/atlas/${stage.stageId}/${termId}`}>
++                            <b>{name?.termEn || termId}</b>
++                            <span>{name?.displayZh || ''}</span>
++                          </a>
++                        </li>
++                      )
++                    })}
++                  </ul>
++                </div>
++              ))
++            ) : (
++              <p className="axp-empty">
++                这一区还没有任何一台认领术语。不是打不开，是确实还没做。
++              </p>
++            )}
++          </>
++        )}
++      </div>
++    </div>
++  )
++}
+diff --git a/frontend/src/components/atlas/StageOverview.jsx b/frontend/src/components/atlas/StageOverview.jsx
+new file mode 100644
+index 0000000..f7cf25a
+--- /dev/null
++++ b/frontend/src/components/atlas/StageOverview.jsx
+@@ -0,0 +1,81 @@
++import { useMemo, useRef } from 'react'
++import AnnotationLayer from './AnnotationLayer.jsx'
++
++/* ============ 舞台视口 ============
++ * 舞台组件本身只认 { stage, variant, values, activeNode, hoverNode, onHover, replayKey }，
++ * 这一层负责它周围的三件事：
++ *   1. 变体切片条 —— 变体台的「热区」是切片本身，所以编号角标贴在切片上；
++ *   2. 标注层     —— 部件热区的编号角标，位置从真实 DOM 量出来；
++ *   3. 分区降对比 —— 分区态下非本区部件打上 axs-dim。
++ * 舞台组件零改动，这是它能被三种态复用的前提。
++ */
++
++export default function StageOverview({
++  StageComponent, stage, variant, values, activeNode, hoverNode, onHover, replayKey,
++  items, hotspotItems, variantItems, activeZoneId, selectedTermId, onSelect, annotate = true,
++}) {
++  const hostRef = useRef(null)
++
++  /* 舞台内容变了就重新量：参数、变体、重演、分区、成员集合任一改变都算。 */
++  const signature = useMemo(
++    () => JSON.stringify([values, variant?.termId ?? null, replayKey, activeZoneId, items.length]),
++    [values, variant, replayKey, activeZoneId, items],
++  )
++
++  return (
++    <div className="axs-stagewrap">
++      {variantItems.length > 0 && (
++        <div className="axs-variants" role="group" aria-label="切换变体">
++          <button
++            type="button"
++            className={`axs-vchip ${variant ? '' : 'on'}`}
++            onClick={() => onSelect(null)}
++          >
++            {stage.baseVariantZh}
++          </button>
++          {variantItems.map((item) => (
++            <button
++              key={item.termId}
++              type="button"
++              data-annotation={item.n}
++              className={`axs-vchip ${variant?.termId === item.termId ? 'on' : ''}`}
++              onClick={() => onSelect(item.termId)}
++            >
++              <em className="x-mono">{item.n}</em>
++              {item.displayZh}
++            </button>
++          ))}
++        </div>
++      )}
++
++      <div className="axs-stage" ref={hostRef}>
++        <div className="axs-stage-inner">
++          <StageComponent
++            stage={stage}
++            variant={variant}
++            values={values}
++            activeNode={activeNode}
++            hoverNode={hoverNode}
++            onHover={onHover}
++            replayKey={replayKey}
++          />
++        </div>
++        {annotate && (
++          <AnnotationLayer
++            hostRef={hostRef}
++            items={hotspotItems}
++            activeZoneId={activeZoneId}
++            selectedTermId={selectedTermId}
++            onSelect={onSelect}
++            onHover={onHover}
++            signature={signature}
++          />
++        )}
++      </div>
++
++      <p className="axs-rm-note">
++        系统开启了「减少动态效果」，舞台上的动效已停用。每条术语的行为差别写在下方的编辑批注与对照判据里，不依赖动画才能读懂。
++      </p>
++    </div>
++  )
++}
+diff --git a/frontend/src/components/atlas/TermPanel.jsx b/frontend/src/components/atlas/TermPanel.jsx
+new file mode 100644
+index 0000000..242e027
+--- /dev/null
++++ b/frontend/src/components/atlas/TermPanel.jsx
+@@ -0,0 +1,152 @@
++/* ============ 术语面板（方案 §5.3 第 5 条，Laws of UX 的节奏） ============
++ * 顺序是有理由的：全站唯一别人没有的内容是编辑批注，所以它排第二，
++ * 不再像旧右栏那样排到第七位。往下才是定义、来源、两套标签、去处。
++ *
++ * 三条诚实纪律写在这一个面板里：
++ *   · 机器译名与人工订正分开说，不含糊；
++ *   · 两套正交标签都显示，「人工复核于」没有就是空，不拿采集时间顶替；
++ *   · 「真实网站里长这样」区分编辑标注与域名反查，草稿标成草稿。
++ * 没有导出代码按钮：图鉴的定位是看懂与比较，不出包。
++ */
++
++function SourceList({ term }) {
++  const sources = term.sourceEvidence || []
++  if (!sources.length) {
++    return <p className="axt-empty">这条没有来源证据，所以术语地位判为「待定」。</p>
++  }
++  return (
++    <ul className="axt-sources">
++      {sources.map((evidence) => (
++        <li key={`${evidence.sourceId}-${evidence.sourceRecordId}`}>
++          <a href={evidence.url} target="_blank" rel="noreferrer">
++            <b>{evidence.sourceName}</b>
++            <em className="x-mono">{evidence.license || '许可未知'} · 采集于 {evidence.retrievedAt || '未知'}</em>
++          </a>
++          {evidence.sourceDefinition && <p className="axt-srcdef">{evidence.sourceDefinition}</p>}
++        </li>
++      ))}
++    </ul>
++  )
++}
++
++export default function TermPanel({
++  term, claim, status, siteLinks, neighbors, zone, crossStage, onSelectTerm, onClose,
++}) {
++  if (!term) return null
++  const machine = term.translationQuality === 'machine' && !claim?.termZhFix
++
++  return (
++    <article className="axt" aria-label={`术语 ${term.termEn}`}>
++      <div className="axt-bar">
++        <span className="axt-kicker x-mono">术语</span>
++        <button type="button" className="axt-close" onClick={onClose} aria-label="关闭术语面板">✕</button>
++      </div>
++
++      {/* ① 正名与中文名 */}
++      <header className="axt-head">
++        <h2>{term.termEn}</h2>
++        <p className="axt-zh">{claim?.displayZh || term.termZh}</p>
++        {claim?.termZhFix && (
++          <p className="axt-zh-note x-mono">语料原译「{term.termZh}」已在台上订正</p>
++        )}
++        {machine && (
++          <p className="axt-zh-note axt-warn x-mono">中文名为机器翻译，未经人工校对</p>
++        )}
++      </header>
++
++      {/* ② 编辑批注：全站唯一别人没有的内容，所以排第二 */}
++      <section className="axt-sec axt-note-sec">
++        <h3>编辑批注</h3>
++        {claim?.noteZh
++          ? <p className="axt-note">{claim.noteZh}</p>
++          : <p className="axt-empty">这一条还没有写批注。空着，不拿定义顶替。</p>}
++      </section>
++
++      {/* ③ 定义与来源 */}
++      <section className="axt-sec">
++        <h3>定义</h3>
++        <p className="axt-def">{term.definitionZh || '语料里没有中文定义。'}</p>
++        {term.sourceDefinition && <p className="axt-def-en">{term.sourceDefinition}</p>}
++        {term.aliases?.length > 0 && (
++          <p className="axt-aliases">
++            <span className="axt-aliases-h">别名</span>
++            {term.aliases.map((alias) => <em key={alias}>{alias}</em>)}
++          </p>
++        )}
++        <h3 className="axt-sub-h">来源</h3>
++        <SourceList term={term} />
++      </section>
++
++      {/* ④ 两套正交标签 + 人工复核 */}
++      <section className="axt-sec">
++        <h3>成色</h3>
++        <div className="axt-tags">
++          <span className="axt-tag">建档深度 · {status.depthLabelZh}</span>
++          <span className="axt-tag">术语地位 · {status.termStatusLabelZh}</span>
++        </div>
++        <p className="axt-review x-mono">人工复核于：{status.reviewedAt || '—'}</p>
++      </section>
++
++      {/* ⑤ 真实网站里长这样（导流点 L6） */}
++      <section className="axt-sec">
++        <h3>真实网站里长这样</h3>
++        {siteLinks.length ? (
++          <ul className="axt-sites">
++            {siteLinks.map((site) => (
++              <li key={site.entryId}>
++                <a href={`#/site/${site.entryId}`}>
++                  <b>{site.name}</b>
++                  <em className="x-mono">{site.domain}</em>
++                </a>
++                <span className="axt-site-how x-mono">
++                  {site.matchedBy === 'annotation' ? '编辑标注' : '按来源域名反查'}
++                  {site.matchedBy === 'annotation' && site.atlasTermsStatus === 'editor-draft' && ' · 编辑草稿'}
++                </span>
++                {site.noteZh && <p className="axt-site-note">{site.noteZh}</p>}
++                {site.evidenceUrl && (
++                  <a className="axt-site-ev x-mono" href={site.evidenceUrl} target="_blank" rel="noreferrer">
++                    出处页 ↗
++                  </a>
++                )}
++              </li>
++            ))}
++          </ul>
++        ) : (
++          <p className="axt-empty">尚未有已核验站点示范此术语。</p>
++        )}
++      </section>
++
++      {/* ⑥ 同一分区里的邻居 */}
++      {neighbors.length > 0 && (
++        <section className="axt-sec">
++          <h3>同一区里还有</h3>
++          <p className="axt-zone-name">{zone?.labelZh}</p>
++          <ul className="axt-neighbors">
++            {neighbors.map((member) => (
++              <li key={member.termId}>
++                <button type="button" onClick={() => onSelectTerm(member.termId)}>
++                  <em className="x-mono">{member.n}</em>
++                  <b>{member.termEn}</b>
++                  <span>{member.displayZh}</span>
++                </button>
++              </li>
++            ))}
++          </ul>
++        </section>
++      )}
++
++      {crossStage.length > 0 && (
++        <section className="axt-sec">
++          <h3>也出现在</h3>
++          <ul className="axt-xrefs">
++            {crossStage.map((ref) => (
++              <li key={ref.stageId}>
++                <a href={`#/atlas/${ref.stageId}/${term.id}`}>{ref.titleZh} ↗</a>
++              </li>
++            ))}
++          </ul>
++        </section>
++      )}
++    </article>
++  )
++}
+diff --git a/frontend/src/components/atlas/ZoneNav.jsx b/frontend/src/components/atlas/ZoneNav.jsx
+new file mode 100644
+index 0000000..f501b88
+--- /dev/null
++++ b/frontend/src/components/atlas/ZoneNav.jsx
+@@ -0,0 +1,60 @@
++import { SLOT_LABEL } from '../../lib/stage-index.js'
++
++/* ============ 分区导航（方案 §5.2 态二 / research/03 §6.4 第三条） ============
++ * 按**空间或功能**列，不按 slot 类型列：用户不会想「我要找一个 hotspot」，
++ * 他会想「我要找输入框旁边那个东西」。编号与舞台上的角标是同一套。
++ *
++ * 总览态：全部分区展开，这就是解剖图的图例。
++ * 分区态：只展开当前分区，其余折起但一点就开。
++ * 手机：一律手风琴（总览态在 <768 自动降级为这份列表）。
++ */
++
++export default function ZoneNav({
++  zones, activeZoneId, selectedTermId, onSelectZone, onSelectTerm, accordion,
++}) {
++  return (
++    <nav className="axz" aria-label="分区与术语">
++      {zones.map((zone) => {
++        const open = activeZoneId ? zone.id === activeZoneId : !accordion
++        return (
++          <section className={`axz-zone ${open ? 'open' : ''}`} key={zone.id}>
++            <h3 className="axz-h">
++              <button
++                type="button"
++                className="axz-toggle"
++                aria-expanded={open}
++                onClick={() => onSelectZone(open && activeZoneId === zone.id ? null : zone.id)}
++              >
++                <span className="axz-title">{zone.labelZh}</span>
++                <em className="x-mono">{zone.members.length}</em>
++                <span className="axz-caret" aria-hidden="true">{open ? '▾' : '▸'}</span>
++              </button>
++            </h3>
++            <p className="axz-desc">{zone.descriptionZh}</p>
++            <ul className="axz-list" hidden={!open}>
++              {zone.members.map((member) => (
++                <li key={member.termId}>
++                  <button
++                    type="button"
++                    className={`axz-term ${member.termId === selectedTermId ? 'on' : ''}`}
++                    onClick={() => onSelectTerm(member.termId)}
++                  >
++                    <em className="axz-n x-mono">{member.n}</em>
++                    <span className="axz-en">{member.termEn}</span>
++                    <span className="axz-zh">{member.displayZh}</span>
++                    {member.slot !== 'hotspot' && (
++                      <span className="axz-slot x-mono">{SLOT_LABEL[member.slot]}</span>
++                    )}
++                    {member.underVariantZh && (
++                      <span className="axz-under">需切到「{member.underVariantZh}」才看得见</span>
++                    )}
++                  </button>
++                </li>
++              ))}
++            </ul>
++          </section>
++        )
++      })}
++    </nav>
++  )
++}
+diff --git a/frontend/src/lib/atlas-source-link.js b/frontend/src/lib/atlas-source-link.js
+index 5390832..d3e10c7 100644
+--- a/frontend/src/lib/atlas-source-link.js
++++ b/frontend/src/lib/atlas-source-link.js
+@@ -1,6 +1,16 @@
+-/* 图鉴术语 → 网站库入口的反查。
+- * 术语的 sourceEvidence 里带原始 URL；网站库条目带 domain。
+- * 同域即认为是同一个来源实体，右栏据此把"这个词从哪来"接到"去哪个站看更多"。
++/* ============ 图鉴术语 → 已核验站点 的反查（方案 §2.2 导流点 L6） ============
++ *
++ * 「这条术语在真实网站里长什么样」有两条来路，成色不同，必须分开标：
++ *
++ *   1. 编辑标注（annotation）—— 站点条目的 `curation.atlasTerms[]` 明写了
++ *      「这个站示范了这条术语」，还带 evidenceUrl 与一句 note。成色由
++ *      `atlasTermsStatus` 自述（本轮 12/12 是 editor-draft，前台标「编辑草稿」）。
++ *   2. 域名反查（domain）—— 术语的 sourceEvidence 里那条 URL 的域名，恰好
++ *      等于某个已核验站点的域名。它只说明「这条词的出处正好是这个站」，
++ *      不等于「这个站示范了这条词」，所以在界面上说法要弱一档。
++ *
++ * 同一个站两条来路都命中时，按编辑标注算（它更强），不重复出现。
++ * 本模块是纯函数，不 import 任何数据文件，也不含统计量字面量。
+  */
+ 
+ export function hostOf(url) {
+@@ -11,24 +21,102 @@ export function hostOf(url) {
+   }
+ }
+ 
+-export function buildDomainIndex(catalog) {
++const itemsOf = (siteIndex) => {
++  if (Array.isArray(siteIndex)) return siteIndex
++  if (Array.isArray(siteIndex?.items)) return siteIndex.items
++  if (Array.isArray(siteIndex?.entries)) return siteIndex.entries
++  return []
++}
++
++/** 一条站点条目在术语面板里要显示的那几个字段。 */
++function siteRef(item) {
++  return {
++    entryId: item?.entryId ?? item?.id ?? '',
++    name: item?.name ?? item?.entryId ?? '',
++    domain: item?.domain ?? hostOf(item?.homepage || item?.canonicalUrl || '') ?? '',
++    atlasTermsStatus: item?.atlasTermsStatus ?? null,
++  }
++}
++
++/** 域名 → 站点条目。同域只留第一条。 */
++export function buildDomainIndex(siteIndex) {
+   const map = new Map()
+-  for (const entry of catalog?.entries || []) {
+-    const key = String(entry.domain || hostOf(entry.canonicalUrl || '')).replace(/^www\./, '').toLowerCase()
+-    if (key && !map.has(key)) map.set(key, entry)
++  for (const item of itemsOf(siteIndex)) {
++    const key = String(item?.domain || hostOf(item?.homepage || item?.canonicalUrl || ''))
++      .replace(/^www\./, '')
++      .toLowerCase()
++    if (key && !map.has(key)) map.set(key, item)
+   }
+   return map
+ }
+ 
+-export function catalogMatchesFor(term, domainIndex) {
+-  const seen = new Set()
++/**
++ * 术语 id → 标注了它的站点列表（编辑标注侧的反向索引）。
++ * 一个站可以标注同一条术语多次（不同 stageId），这里按 entryId 去重取第一条。
++ */
++export function buildAtlasTermIndex(siteIndex) {
++  const map = new Map()
++  for (const item of itemsOf(siteIndex)) {
++    for (const ref of item?.atlasTerms ?? []) {
++      const termId = ref?.termId
++      if (!termId) continue
++      if (!map.has(termId)) map.set(termId, [])
++      const bucket = map.get(termId)
++      if (bucket.some((hit) => hit.entryId === (item?.entryId ?? item?.id))) continue
++      bucket.push({
++        ...siteRef(item),
++        matchedBy: 'annotation',
++        stageId: ref?.stageId ?? null,
++        evidenceUrl: ref?.evidenceUrl ?? null,
++        noteZh: ref?.note ?? null,
++      })
++    }
++  }
++  return map
++}
++
++/** 两份索引一次建齐，供舞台页在挂载时构建一次后复用。 */
++export function buildSiteLinkIndexes(siteIndex) {
++  return {
++    byTerm: buildAtlasTermIndex(siteIndex),
++    byDomain: buildDomainIndex(siteIndex),
++  }
++}
++
++/**
++ * 一条术语在站点库里的示范条目。编辑标注在前，域名反查在后。
++ * @param {object} term 一条 visual-atlas.json 的 entry
++ * @param {{byTerm?: Map, byDomain?: Map}} indexes buildSiteLinkIndexes 的产物
++ */
++export function sitesForTerm(term, indexes) {
+   const out = []
+-  for (const evidence of term?.sourceEvidence || []) {
+-    const host = hostOf(evidence.url || '')
+-    if (!host || seen.has(host)) continue
+-    seen.add(host)
+-    const hit = domainIndex.get(host)
+-    if (hit) out.push({ host, entry: hit })
++  const seen = new Set()
++
++  for (const hit of indexes?.byTerm?.get?.(term?.id) ?? []) {
++    if (seen.has(hit.entryId)) continue
++    seen.add(hit.entryId)
++    out.push(hit)
+   }
++
++  const byDomain = indexes?.byDomain
++  if (byDomain) {
++    for (const evidence of term?.sourceEvidence ?? []) {
++      const host = hostOf(evidence?.url || '')
++      if (!host) continue
++      const item = byDomain.get(host)
++      if (!item) continue
++      const ref = siteRef(item)
++      if (!ref.entryId || seen.has(ref.entryId)) continue
++      seen.add(ref.entryId)
++      out.push({
++        ...ref,
++        matchedBy: 'domain',
++        stageId: null,
++        evidenceUrl: evidence?.url ?? null,
++        noteZh: null,
++      })
++    }
++  }
++
+   return out
+ }
+diff --git a/frontend/src/lib/curated-resources.js b/frontend/src/lib/curated-resources.js
+deleted file mode 100644
+index ae66e53..0000000
+--- a/frontend/src/lib/curated-resources.js
++++ /dev/null
+@@ -1,76 +0,0 @@
+-/* Curated Ecosystem Resource Map
+- * Maps taxonomy domains, sub-domains, and visual terms to globally recognized
+- * specialized design tools, registries, and open-source libraries.
+- */
+-
+-export const DOMAIN_AUTHORITIES = {
+-  typography: [
+-    { name: 'Typewolf', url: 'https://www.typewolf.com', tag: '排版圣经', desc: '全球公认的网页排版趋势与真实网站最佳用字搭配指南' },
+-    { name: 'Fonts in Use', url: 'https://fontsinuse.com', tag: '真实用字归档', desc: '真实世界出版物、网站与包装设计中的字体分类鉴定与历史归档' },
+-    { name: 'Fontshare', url: 'https://www.fontshare.com', tag: '高品质开源字库', desc: '印度字体基金会 (ITF) 打造的 100% 免费可商用专业 Web 字族' },
+-    { name: 'Typescale', url: 'https://typescale.com', tag: '字阶计算器', desc: '在线可视化调节 Modular Scale 调和字阶并一键导出 CSS 变量' },
+-    { name: 'Uiverse Text Effects', url: 'https://uiverse.io/all?category=text', tag: 'CSS 艺术字库', desc: '收集数千种社区纯 CSS/SVG 实现的霓虹、金属、故障与镂空艺术字代码' },
+-    { name: 'Magic UI Text', url: 'https://magicui.design/docs/components/text-reveal', tag: '文字动效组件', desc: '收录 Blur Fade, Text Reveal, Sparkles, Number Ticker 等现代动效' },
+-  ],
+-  agentic: [
+-    { name: 'assistant-ui', url: 'https://www.assistant-ui.com', tag: 'AI 原生组件库', desc: '针对大模型与 Agent 交互的专业开源 React 组件原语标准' },
+-    { name: 'Vercel AI SDK Showcase', url: 'https://sdk.vercel.ai', tag: '生成式 UI 范式', desc: '流式文本、生成式 UI、Artifacts 画布与多模态交互的官方权威范式' },
+-    { name: 'Open-Pencil', url: 'https://github.com/open-pencil/open-pencil', tag: 'AI 编辑器架构', desc: 'AI-native 节点树驱动的设计编辑器，支持代码导出与精确无缝查询' },
+-    { name: '21st.dev (AI UI)', url: 'https://21st.dev', tag: 'AI 交互组件市场', desc: '收录全球前沿开发者构建的最新 Agent 与 Chat UI 交互开源件' },
+-  ],
+-  motion: [
+-    { name: '60fps.design', url: 'https://60fps.design', tag: '动效词典与录像', desc: '收录数百款主流 iOS/Web 真实 App 交互动效视频与权威参数拆解' },
+-    { name: 'Framer Motion', url: 'https://motion.dev', tag: '弹簧物理标准', desc: '全球最成熟的弹簧物理、Layout 连续形变与手势动效库' },
+-    { name: 'GSAP', url: 'https://gsap.com', tag: '高性能动画引擎', desc: '专业级时间轴编排 (Timeline) 与滚动视差驱动器标准' },
+-    { name: 'Animata', url: 'https://animata.design', tag: '微交互代码片段', desc: '专门收集纯净可复用的现代悬停、微交互、文字及按钮动效' },
+-  ],
+-  gestures: [
+-    { name: '@use-gesture', url: 'https://use-gesture.pmndrs.org', tag: '手势动力引擎', desc: '支持 Drag, Pinch, Wheel, Scroll 全模态，自带越界橡皮筋阻尼算法' },
+-    { name: 'React Aria Interactions', url: 'https://react-spectrum.adobe.com/react-aria/interactions.html', tag: '无障碍输入原语', desc: 'Adobe 工业级 usePress, useMove, useLongPress 行为层基石' },
+-    { name: 'WAI-ARIA APG', url: 'https://www.w3.org/WAI/ARIA/apg', tag: 'W3C 交互规范', desc: 'W3C 官方定义的全部界面组件键盘流转与屏幕阅读器标准' },
+-  ],
+-  surfaces: [
+-    { name: 'Realtime Colors', url: 'https://realtimecolors.com', tag: '全套色彩实时预览', desc: '在完整真实网页 UI 上实时预览一整套调色板的对比度与视觉效果' },
+-    { name: 'OKLCH.com', url: 'https://oklch.com', tag: '感知均匀色盘', desc: '最权威的现代感知均匀色盘工具，可视化色域与感知亮度' },
+-    { name: 'SmoothShadow', url: 'https://shadows.brumm.af', tag: '贝塞尔分层阴影', desc: '调节多重贝塞尔曲线分布的顶级自然分层漫反射阴影生成器' },
+-    { name: 'Neumorphism.io', url: 'https://neumorphism.io', tag: '新拟态工坊', desc: '可视化调节软阴影曲率、距离与凹凸模糊度的代码生成器' },
+-  ],
+-  layout: [
+-    { name: 'Bento Grids', url: 'https://bentogrids.com', tag: '便当盒网格案例', desc: '全球最大的 Bento Grid 便当盒设计案例与开源模板索引' },
+-    { name: 'The Component Gallery', url: 'https://component.gallery', tag: '组件命名圣经', desc: '收录全球各大知名设计系统的真实组件命名与结构变体' },
+-    { name: 'Land-book', url: 'https://land-book.com', tag: '精选落地页', desc: '精选全球最具设计感与商业转化力的经典与前沿落地页' },
+-  ],
+-}
+-
+-export function getDomainAuthority(domainKey) {
+-  return DOMAIN_AUTHORITIES[domainKey] || []
+-}
+-
+-export function getCuratedResourcesForTerm(term, stageId) {
+-  const results = []
+-  if (!term && !stageId) return results
+-
+-  const text = `${term?.id || ''} ${term?.termEn || ''} ${term?.termZh || ''} ${(term?.tags || []).join(' ')}`.toLowerCase()
+-
+-  if (stageId === 'text-reveal' || text.includes('text') || text.includes('font') || text.includes('type') || text.includes('blur') || text.includes('reveal')) {
+-    results.push(...DOMAIN_AUTHORITIES.typography)
+-  } else if (stageId === 'agent-composer' || text.includes('agent') || text.includes('composer') || text.includes('chat') || text.includes('message') || text.includes('prompt') || text.includes('reasoning') || text.includes('tool')) {
+-    results.push(...DOMAIN_AUTHORITIES.agentic)
+-  } else if (stageId === 'pointer-gestures' || text.includes('gesture') || text.includes('drag') || text.includes('pinch') || text.includes('press')) {
+-    results.push(...DOMAIN_AUTHORITIES.gestures)
+-  } else if (stageId === 'surface-transition' || text.includes('motion') || text.includes('transition') || text.includes('spring')) {
+-    results.push(...DOMAIN_AUTHORITIES.motion)
+-  } else if (stageId === 'form-anatomy' || stageId === 'data-display' || stageId === 'navigation') {
+-    results.push(...DOMAIN_AUTHORITIES.layout)
+-  } else {
+-    results.push(...DOMAIN_AUTHORITIES.surfaces)
+-  }
+-
+-  // Deduplicate by URL
+-  const seen = new Set()
+-  return results.filter(item => {
+-    if (seen.has(item.url)) return false
+-    seen.add(item.url)
+-    return true
+-  })
+-}
+diff --git a/frontend/src/styles/site-detail.css b/frontend/src/styles/site-detail.css
+index 61d019b..f01b638 100644
+--- a/frontend/src/styles/site-detail.css
++++ b/frontend/src/styles/site-detail.css
+@@ -175,46 +175,19 @@
+   background: var(--vl-verify);
+ }
+ 
+-/* ---- ② 一句编辑判断 + 编辑手记 ----
+-   这一段是整页真正给人读的地方：一句标题级的判断，下面是手记正文。
+-   两者之间留出一整格空气，别让它们黏成一坨。 */
+-.sd-voice { gap: var(--vl-s4); }
+-
++/* ---- ② 一句编辑判断 ---- */
+ .sd-takeaway {
+   margin: 0;
+   color: var(--vl-ink);
+-  font-size: var(--vl-fs-xl);
+-  line-height: var(--vl-lh-xl);
+-  font-weight: var(--vl-fw-bold);
+-  letter-spacing: -.01em;
+-  text-wrap: balance;
+-}
+-
+-/* 正文字号、行高 1.7、最大行宽约 34em：按连续阅读排，不按字段排。 */
+-.sd-note {
+-  max-width: 34em;
+-  margin: 0;
+-  color: var(--vl-ink-2);
+-  font-size: var(--vl-fs-md);
+-  line-height: 1.7;
+-}
+-/* 手记还没写：虚线框如实说，不拿正式简介顶替。 */
+-.sd-note-empty {
+-  padding: var(--vl-s3) var(--vl-s4);
+-  border: 1px dashed var(--vl-line-strong);
+-  border-radius: var(--vl-r-sm);
+-  color: var(--vl-caution);
+-  font-size: var(--vl-fs-sm);
+-  line-height: var(--vl-lh-sm);
++  font-size: var(--vl-fs-lg);
++  line-height: var(--vl-lh-lg);
++  font-weight: var(--vl-fw-medium);
+ }
+-
+-/* 档案区里的正式简介：书面那一份，按正文排但比手记克制 */
+-.sd-fact-desc {
++.sd-desc {
+   margin: 0;
+   color: var(--vl-ink-2);
+   font-size: var(--vl-fs-sm);
+   line-height: var(--vl-lh-sm);
+-  overflow-wrap: anywhere;
+ }
+ 
+ /* ---- ③ 三张证据图 ---- */
+@@ -673,8 +646,6 @@ a.sd-fact-value { text-decoration: underline; text-underline-offset: 3px; }
+     font-size: var(--vl-fs-2xl);
+     line-height: var(--vl-lh-2xl);
+   }
+-  /* 桌面上行宽更宽，判断句与手记之间再多给一格 */
+-  .sd-voice { gap: var(--vl-s5); }
+   .sd-ev-row {
+     grid-auto-flow: row;
+     grid-auto-columns: auto;
+diff --git a/frontend/src/views/Atlas.jsx b/frontend/src/views/Atlas.jsx
+deleted file mode 100644
+index 5b6cf1e..0000000
+--- a/frontend/src/views/Atlas.jsx
++++ /dev/null
+@@ -1,597 +0,0 @@
+-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+-import '../atlas.css'
+-import atlas from '../data/visual-atlas.json'
+-import catalog from '../data/site-catalog.json'
+-import { MANIFESTS, componentFor } from '../stages/registry.js'
+-import {
+-  buildStageIndex, stageById, defaultValuesFor, crossRefs, coverageOf, matchTerm, SLOT_LABEL,
+-  MASTER_DOMAINS, getDomainForStage,
+-} from '../lib/stage-index.js'
+-import { buildDomainIndex, catalogMatchesFor } from '../lib/atlas-source-link.js'
+-import { getCuratedResourcesForTerm } from '../lib/curated-resources.js'
+-import CodeExportModal from '../components/CodeExportModal.jsx'
+-import { go } from '../router.js'
+-
+-/* ============ 图鉴 · 旗舰级视窗演示舞台 ============
+- * 沉浸式视窗架构：
+- * 1. 默认全屏纯净态：左右侧栏默认完全隐藏，将 100% 视界聚焦中央互动舞台；
+- * 2. 悬浮胶囊控制坞：顶栏切换变体、底栏微调物理参数，不遮挡核心标本；
+- * 3. 抽屉式毛玻璃浮层：随时平滑呼出左侧知识本体树与右侧术语规范详情。
+- */
+-
+-const INDEX = buildStageIndex(MANIFESTS, atlas)
+-const DOMAINS = buildDomainIndex(catalog)
+-const COVERAGE = coverageOf(INDEX, atlas)
+-const UNROUTED = '__unrouted'
+-
+-function Chip({ children }) {
+-  return <em className="ax-chip">{children}</em>
+-}
+-
+-export default function Atlas({ stage: routeStage, term: routeTerm }) {
+-  const stageId = routeStage && (routeStage === UNROUTED || stageById(INDEX, routeStage))
+-    ? routeStage
+-    : INDEX.stages[0].id
+-  const stage = stageById(INDEX, stageId)
+-
+-  const [values, setValues] = useState(() => defaultValuesFor(stage))
+-  const [hoverNode, setHoverNode] = useState(null)
+-  const [replayKey, setReplayKey] = useState(0)
+-  const [exportOpen, setExportOpen] = useState(false)
+-  const [q, setQ] = useState('')
+-  const [tip, setTip] = useState(null)
+-  const [leftOpen, setLeftOpen] = useState(false)
+-  const [rightOpen, setRightOpen] = useState(false)
+-  const viewportRef = useRef(null)
+-
+-  useEffect(() => {
+-    setValues(defaultValuesFor(stageId === UNROUTED ? null : stageById(INDEX, stageId)))
+-    setQ('')
+-  }, [stageId])
+-
+-  const claims = useMemo(() => (stage ? stage.claims : []), [stage])
+-  const selected = routeTerm
+-    ? claims.find((c) => c.termId === routeTerm) || null
+-    : null
+-  const unroutedTerm = stageId === UNROUTED && routeTerm
+-    ? INDEX.unrouted.find((e) => e.id === routeTerm) || null
+-    : null
+-
+-  const variantClaim = selected?.slot === 'variant'
+-    ? selected
+-    : (selected?.underVariant
+-      ? claims.find((c) => c.termId === selected.underVariant) || null
+-      : null)
+-  const activeNode = selected?.slot === 'hotspot' ? selected.node : null
+-
+-  const select = useCallback((termId) => {
+-    go(termId ? `atlas/${stageId}/${termId}` : `atlas/${stageId}`)
+-    setReplayKey((k) => k + 1)
+-  }, [stageId])
+-
+-  /* 快捷键：←/→ 切换术语，ESC 退出浮动侧栏 */
+-  const flow = stageId === UNROUTED ? INDEX.unrouted.map((e) => e.id) : claims.map((c) => c.termId)
+-  useEffect(() => {
+-    const onKey = (ev) => {
+-      if (ev.target.tagName === 'INPUT' || ev.target.tagName === 'TEXTAREA') return
+-      if (ev.key === 'Escape') {
+-        if (leftOpen || rightOpen) {
+-          setLeftOpen(false)
+-          setRightOpen(false)
+-        }
+-        return
+-      }
+-      if (ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return
+-      if (!flow.length) return
+-      const at = flow.indexOf(routeTerm)
+-      const next = flow[(at + (ev.key === 'ArrowRight' ? 1 : -1) + flow.length) % flow.length]
+-      select(next)
+-    }
+-    window.addEventListener('keydown', onKey)
+-    return () => window.removeEventListener('keydown', onKey)
+-  }, [flow, routeTerm, select, leftOpen, rightOpen])
+-
+-  /* 悬停部件 → 量出它的相对位置，浮标精准贴附 */
+-  useEffect(() => {
+-    const name = hoverNode || activeNode
+-    if (!name || !viewportRef.current) { setTip(null); return }
+-    const el = viewportRef.current.querySelector(`[data-node="${name}"]`)
+-    const host = viewportRef.current.getBoundingClientRect()
+-    if (!el) { setTip(null); return }
+-    const rect = el.getBoundingClientRect()
+-    const claim = claims.find((c) => c.node === name)
+-    if (!claim) { setTip(null); return }
+-    const above = rect.top - host.top
+-    const below = above < 26
+-    setTip({ top: below ? rect.bottom - host.top : above, left: rect.left - host.left, below, claim })
+-  }, [hoverNode, activeNode, claims, values, variantClaim, replayKey])
+-
+-  const StageComponent = stageId === UNROUTED ? null : componentFor(stageId)
+-
+-  const filtered = useMemo(() => {
+-    if (stageId === UNROUTED) return INDEX.unrouted.filter((e) => matchTerm(e, q))
+-    return claims.filter((c) => matchTerm(c.term, q, c.displayZh))
+-  }, [stageId, claims, q])
+-
+-  const groups = ['variant', 'hotspot', 'param']
+-    .map((slot) => ({ slot, items: filtered.filter((c) => c.slot === slot) }))
+-    .filter((g) => g.items.length)
+-
+-  const detailTerm = selected?.term || unroutedTerm
+-  const params = claims.filter((c) => c.slot === 'param')
+-  const knobs = stage?.knobs || []
+-  const domain = getDomainForStage(stageId)
+-
+-  return (
+-    <div className="ax-mac-desktop">
+-      <div className="ax-mac-window">
+-        {/* ===== Mac 视窗顶级控制条 (Window Titlebar) ===== */}
+-        <header className="ax-mac-titlebar">
+-          <div className="ax-mac-dots" aria-hidden="true">
+-            <span className="mac-dot close" />
+-            <span className="mac-dot min" />
+-            <span className="mac-dot max" />
+-          </div>
+-
+-          <div className="ax-mac-title-wrap">
+-            {domain && <span className="ax-title-domain-badge">{domain.num} · {domain.titleZh}</span>}
+-            <span className="ax-title-sep">/</span>
+-            <span className="ax-title-main">{stageId === UNROUTED ? '待建档资源池' : stage?.titleZh}</span>
+-            <span className="ax-title-sub x-mono">{stageId === UNROUTED ? '09 / Unrouted' : stage?.titleEn}</span>
+-          </div>
+-
+-          <div className="ax-mac-actions">
+-            <button
+-              type="button"
+-              className={`ax-mac-btn ${leftOpen ? 'on' : ''}`}
+-              onClick={() => { setLeftOpen(!leftOpen); if (!leftOpen) setRightOpen(false) }}
+-              title="切换全域视觉本体目录 (大纲)"
+-              aria-label="切换大纲目录"
+-            >
+-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+-                <line x1="9" y1="3" x2="9" y2="21"/>
+-              </svg>
+-              <span>大纲</span>
+-            </button>
+-
+-            <button
+-              type="button"
+-              className="ax-mac-btn"
+-              onClick={() => setReplayKey((k) => k + 1)}
+-              title="重新播放舞台动效 (Replay)"
+-              aria-label="重演动效"
+-            >
+-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+-                <path d="M21 2v6h-6"/>
+-                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+-              </svg>
+-            </button>
+-
+-            {stageId !== UNROUTED && (
+-              <button
+-                type="button"
+-                className="ax-mac-btn-export"
+-                onClick={() => setExportOpen(true)}
+-                title="导出本舞台生产级交互代码"
+-              >
+-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+-                  <polyline points="16 18 22 12 16 6"/>
+-                  <polyline points="8 6 2 12 8 18"/>
+-                </svg>
+-                <span>导出代码</span>
+-              </button>
+-            )}
+-
+-            <button
+-              type="button"
+-              className={`ax-mac-btn ${rightOpen ? 'on' : ''}`}
+-              onClick={() => { setRightOpen(!rightOpen); if (!rightOpen) setLeftOpen(false) }}
+-              title="切换术语规范与来源详情"
+-              aria-label="切换术语详情"
+-            >
+-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+-                <line x1="15" y1="3" x2="15" y2="21"/>
+-              </svg>
+-              <span>详情</span>
+-            </button>
+-          </div>
+-        </header>
+-
+-        {/* ===== Mac 视窗主体舞台区域 ===== */}
+-        <div className="ax-mac-body">
+-          {/* 抽屉打开时的平滑阻断背景蒙层 */}
+-          {(leftOpen || rightOpen) && (
+-            <div
+-              className="ax-drawer-backdrop"
+-              onClick={() => { setLeftOpen(false); setRightOpen(false) }}
+-              aria-hidden="true"
+-            />
+-          )}
+-
+-          {/* ===== 核心互动演示台 (Center Main Stage) ===== */}
+-          <main className="ax-main-stage">
+-            {/* 顶栏悬浮胶囊切片栏 (Top Floating Variant Dock) */}
+-            {stageId !== UNROUTED && (
+-              <div className="ax-variants-dock">
+-                <div className="ax-variants-scroller">
+-                  <button
+-                    type="button"
+-                    className={`ax-vchip ${!variantClaim ? 'on' : ''}`}
+-                    onClick={() => select(null)}
+-                  >
+-                    {stage?.baseVariantZh || '静止'}
+-                  </button>
+-                  {claims.filter((c) => c.slot === 'variant').map((c) => (
+-                    <button
+-                      key={c.termId}
+-                      type="button"
+-                      className={`ax-vchip ${variantClaim?.termId === c.termId ? 'on' : ''}`}
+-                      onClick={() => select(c.termId)}
+-                    >
+-                      {c.displayZh}
+-                    </button>
+-                  ))}
+-                </div>
+-              </div>
+-            )}
+-
+-            {/* 中央活态舞台呈现画布 (Full Viewport Stage) */}
+-            <div className="ax-viewport-mac" ref={viewportRef}>
+-              {StageComponent ? (
+-                <StageComponent
+-                  stage={stage}
+-                  variant={variantClaim}
+-                  values={values}
+-                  activeNode={activeNode}
+-                  hoverNode={hoverNode}
+-                  onHover={setHoverNode}
+-                  replayKey={replayKey}
+-                />
+-              ) : (
+-                <div className="ax-todo-note-mac">
+-                  <div className="ax-mac-folder-icon">🗂️</div>
+-                  <h3>待建档资源池</h3>
+-                  <p className="x-mono">The stage for this term is yet to be constructed.</p>
+-                </div>
+-              )}
+-
+-              {tip && (
+-                <div className={`ax-tip-mac ${tip.below ? 'below' : ''}`} style={{ top: tip.top, left: tip.left }}>
+-                  <b>{tip.claim.term.termEn}</b>
+-                  <span>{tip.claim.term.termZh}</span>
+-                </div>
+-              )}
+-            </div>
+-
+-            {/* 底栏悬浮参数微调舱 (Bottom Floating Controls Dock) */}
+-            {(params.length > 0 || knobs.length > 0) && (
+-              <div className="ax-knobs-dock">
+-                <div className="ax-knobs-scroller">
+-                  {params.map((c) => {
+-                    const type = c.param.type || 'range'
+-                    const value = values[c.param.key] ?? c.param.default
+-                    return (
+-                      <label key={c.termId} className={`ax-knob ${selected?.termId === c.termId ? 'on' : ''}`}>
+-                        <span className="ax-knob-h">
+-                          <button type="button" onClick={() => select(c.termId)}>{c.param.label}</button>
+-                          <em className="x-mono">
+-                            {type === 'boolean' ? (value ? '开' : '关') : `${value}${c.param.unit || ''}`}
+-                          </em>
+-                        </span>
+-                        {type === 'range' && (
+-                          <input type="range" min={c.param.min} max={c.param.max} step={c.param.step} value={value} onChange={(e) => setValues((v) => ({ ...v, [c.param.key]: Number(e.target.value) }))} />
+-                        )}
+-                        {type === 'boolean' && (
+-                          <input type="checkbox" className="ax-knob-switch" checked={Boolean(value)} onChange={(e) => setValues((v) => ({ ...v, [c.param.key]: e.target.checked }))} />
+-                        )}
+-                        {type === 'enum' && (
+-                          <select className="ax-knob-enum" value={value} onChange={(e) => setValues((v) => ({ ...v, [c.param.key]: e.target.value }))}>
+-                            {c.param.choices.map((choice) => <option key={choice} value={choice}>{choice}</option>)}
+-                          </select>
+-                        )}
+-                      </label>
+-                    )
+-                  })}
+-                  {knobs.map((k) => (
+-                    <label key={k.key} className="ax-knob ax-knob-plain">
+-                      <span className="ax-knob-h">
+-                        <span>{k.label}</span>
+-                        <em className="x-mono">{values[k.key] ?? k.default}{k.unit || ''}</em>
+-                      </span>
+-                      {k.type === 'boolean' ? (
+-                        <input type="checkbox" className="ax-knob-switch" checked={Boolean(values[k.key] ?? k.default)} onChange={(e) => setValues((v) => ({ ...v, [k.key]: e.target.checked }))} />
+-                      ) : (
+-                        <input type="range" min={k.min} max={k.max} step={k.step} value={values[k.key] ?? k.default} onChange={(e) => setValues((v) => ({ ...v, [k.key]: Number(e.target.value) }))} />
+-                      )}
+-                    </label>
+-                  ))}
+-                </div>
+-              </div>
+-            )}
+-          </main>
+-
+-          {/* ===== 左侧滑出抽屉：本体谱系大纲 (Left Outline Drawer) ===== */}
+-          <aside className={`ax-rail ax-glass-drawer ${leftOpen ? 'open' : 'closed'}`}>
+-            <div className="ax-drawer-head">
+-              <div className="ax-drawer-title-wrap">
+-                <span className="ax-drawer-badge">本体树</span>
+-                <h3>视觉图鉴目录</h3>
+-              </div>
+-              <button
+-                type="button"
+-                className="ax-drawer-close-btn"
+-                onClick={() => setLeftOpen(false)}
+-                aria-label="关闭大纲"
+-              >✕</button>
+-            </div>
+-
+-            <div className="ax-drawer-body">
+-              <div className="ax-stages">
+-                {MASTER_DOMAINS.map((dom) => {
+-                  const domainStages = INDEX.stages.filter((s) => dom.stageIds.includes(s.id))
+-                  const isActiveDomain = domainStages.some((s) => s.id === stageId)
+-                  return (
+-                    <div key={dom.id} className={`ax-domain-group ${isActiveDomain ? 'active' : ''}`}>
+-                      <div className="ax-domain-h">
+-                        <span className="ax-domain-num">{dom.num}</span>
+-                        <span className="ax-domain-title">{dom.titleZh}</span>
+-                        {!domainStages.length && <span className="ax-domain-soon">规划中</span>}
+-                      </div>
+-                      {domainStages.map((s) => (
+-                        <button
+-                          key={s.id}
+-                          type="button"
+-                          className={`ax-stage-tab ${s.id === stageId ? 'on' : ''}`}
+-                          onClick={() => { go(`atlas/${s.id}`); setLeftOpen(false) }}
+-                        >
+-                          <b>{s.titleZh}</b>
+-                          <em className="x-mono">{s.claims.length}</em>
+-                        </button>
+-                      ))}
+-                    </div>
+-                  )
+-                })}
+-                <div className="ax-domain-group">
+-                  <button
+-                    type="button"
+-                    className={`ax-stage-tab ax-stage-todo ${stageId === UNROUTED ? 'on' : ''}`}
+-                    onClick={() => { go(`atlas/${UNROUTED}`); setLeftOpen(false) }}
+-                    title="已收录但还没有舞台演示的术语"
+-                  >
+-                    <b>09 · 待建档资源池</b>
+-                    <em className="x-mono">{INDEX.unrouted.length}</em>
+-                  </button>
+-                </div>
+-              </div>
+-
+-              <div className="ax-search">
+-                <span aria-hidden="true">⌕</span>
+-                <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="搜当前舞台术语 / 别名…" />
+-              </div>
+-
+-              <nav className="ax-flow">
+-                {stageId === UNROUTED ? (
+-                  <div className="ax-group">
+-                    <div className="ax-group-h">
+-                      <span>待建档</span>
+-                      <em className="x-mono">{filtered.length}</em>
+-                    </div>
+-                    {filtered.map((e) => (
+-                      <button
+-                        key={e.id}
+-                        type="button"
+-                        className={`ax-term ax-term-todo ${e.id === routeTerm ? 'on' : ''}`}
+-                        onClick={() => select(e.id)}
+-                      >
+-                        <span className="ax-term-en">{e.termEn}</span>
+-                        <span className="ax-term-zh">{e.termZh}</span>
+-                      </button>
+-                    ))}
+-                  </div>
+-                ) : groups.map((g) => (
+-                  <div key={g.slot} className="ax-group">
+-                    <div className="ax-group-h">
+-                      <span>{SLOT_LABEL[g.slot]}</span>
+-                      <em className="x-mono">{g.items.length}</em>
+-                    </div>
+-                    {g.items.map((c) => (
+-                      <button
+-                        key={c.termId}
+-                        type="button"
+-                        className={`ax-term ${c.termId === routeTerm ? 'on' : ''} ${hoverNode && hoverNode === c.node ? 'hot' : ''}`}
+-                        onClick={() => select(c.termId)}
+-                        onMouseEnter={() => c.slot === 'hotspot' && setHoverNode(c.node)}
+-                        onMouseLeave={() => c.slot === 'hotspot' && setHoverNode(null)}
+-                      >
+-                        <span className="ax-term-en">{c.term.termEn}</span>
+-                        <span className="ax-term-zh">{c.displayZh}</span>
+-                      </button>
+-                    ))}
+-                  </div>
+-                ))}
+-                {!filtered.length && <p className="ax-empty">这台里没有匹配的术语。</p>}
+-              </nav>
+-            </div>
+-
+-            <div className="ax-rail-foot x-mono">
+-              已入台 {COVERAGE.routed} / {COVERAGE.total} · {COVERAGE.stages} 台
+-            </div>
+-          </aside>
+-
+-          {/* ===== 右侧滑出抽屉：术语详情与规范 (Right Inspector Drawer) ===== */}
+-          <aside className={`ax-panel ax-glass-drawer ${rightOpen ? 'open' : 'closed'}`}>
+-            <div className="ax-drawer-head">
+-              <div className="ax-drawer-title-wrap">
+-                <span className="ax-drawer-badge">{detailTerm ? '术语规范' : '舞台总览'}</span>
+-                <h3>{detailTerm ? detailTerm.termEn : (stage?.titleZh || '舞台总览')}</h3>
+-              </div>
+-              <button
+-                type="button"
+-                className="ax-drawer-close-btn"
+-                onClick={() => setRightOpen(false)}
+-                aria-label="关闭详情"
+-              >✕</button>
+-            </div>
+-
+-            <div className="ax-drawer-body">
+-              {detailTerm ? (
+-                <TermPanel term={detailTerm} claim={selected} stageId={stageId} />
+-              ) : (
+-                <div className="ax-panel-idle">
+-                  <StageOverviewPanel stage={stage} stageId={stageId} />
+-                </div>
+-              )}
+-            </div>
+-          </aside>
+-        </div>
+-      </div>
+-
+-      <CodeExportModal
+-        open={exportOpen}
+-        onClose={() => setExportOpen(false)}
+-        stage={stage}
+-        variant={variantClaim}
+-        values={values}
+-        activeTerm={detailTerm}
+-      />
+-    </div>
+-  )
+-}
+-
+-function TermPanel({ term, claim, stageId }) {
+-  const refs = crossRefs(INDEX, term.id, stageId)
+-  const sites = catalogMatchesFor(term, DOMAINS)
+-  const curated = getCuratedResourcesForTerm(term, stageId)
+-
+-  return (
+-    <div className="ax-detail">
+-      <div className="ax-detail-h">
+-        <h2>{term.termEn}</h2>
+-        <p>{claim?.displayZh || term.termZh}</p>
+-        {claim?.zhFixed && (
+-          <p className="ax-zh-origin x-mono">语料原译「{term.termZh}」已在台上订正</p>
+-        )}
+-        <div className="ax-chips">
+-          {[...new Set([term.axis, term.recordType])].map((tag) => <Chip key={tag}>{tag}</Chip>)}
+-          {claim && <Chip>{SLOT_LABEL[claim.slot]}</Chip>}
+-          {term.translationQuality === 'machine' && !claim?.zhFixed && <Chip>机器译名 · 待校</Chip>}
+-        </div>
+-      </div>
+-
+-      <p className="ax-def">{term.definitionZh}</p>
+-      {term.sourceDefinition && <p className="ax-def-en">{term.sourceDefinition}</p>}
+-
+-      {claim?.noteZh && <p className="ax-note">{claim.noteZh}</p>}
+-
+-      {term.aliases?.length > 0 && (
+-        <section className="ax-sec">
+-          <h3>别名</h3>
+-          <div className="ax-chips">{term.aliases.map((a) => <Chip key={a}>{a}</Chip>)}</div>
+-        </section>
+-      )}
+-
+-      {term.mediaBindings?.length > 0 && (
+-        <section className="ax-sec">
+-          <h3>媒介绑定</h3>
+-          <div className="ax-chips">{term.mediaBindings.map((m) => <Chip key={m}>{m}</Chip>)}</div>
+-        </section>
+-      )}
+-
+-      {refs.length > 0 && (
+-        <section className="ax-sec">
+-          <h3>也出现在</h3>
+-          {refs.map((r) => (
+-            <button key={r.stageId} type="button" className="ax-xref" onClick={() => go(`atlas/${r.stageId}/${term.id}`)}>
+-              {r.titleZh} · {SLOT_LABEL[r.slot]} ↗
+-            </button>
+-          ))}
+-        </section>
+-      )}
+-
+-      {curated.length > 0 && (
+-        <section className="ax-sec ax-curated-sec">
+-          <h3>专精领域标杆库与工具</h3>
+-          <div className="ax-curated-list">
+-            {curated.map((c) => (
+-              <a key={c.url} className="ax-curated-item" href={c.url} target="_blank" rel="noreferrer">
+-                <div className="ax-curated-item-h">
+-                  <b>{c.name}</b>
+-                  <span className="ax-curated-tag">{c.tag}</span>
+-                </div>
+-                <p>{c.desc}</p>
+-              </a>
+-            ))}
+-          </div>
+-        </section>
+-      )}
+-
+-      <section className="ax-sec">
+-        <h3>来源</h3>
+-        {(term.sourceEvidence || []).map((ev) => (
+-          <a key={`${ev.sourceId}-${ev.sourceRecordId}`} className="ax-src" href={ev.url} target="_blank" rel="noreferrer">
+-            <b>{ev.sourceName}</b>
+-            <em className="x-mono">{ev.license} · {ev.retrievedAt}</em>
+-          </a>
+-        ))}
+-      </section>
+-
+-      {sites.length > 0 && (
+-        <section className="ax-sec">
+-          <h3>网站库已收录</h3>
+-          {sites.map((s) => (
+-            <div key={s.host} className="ax-site">
+-              <b>{s.entry.name}</b>
+-              <em className="x-mono">{s.entry.category}</em>
+-              <p>{s.entry.descriptionZh}</p>
+-            </div>
+-          ))}
+-          <button type="button" className="ax-xref" onClick={() => go('index')}>去网站库 ↗</button>
+-        </section>
+-      )}
+-    </div>
+-  )
+-}
+-
+-function StageOverviewPanel({ stage, stageId }) {
+-  const domain = getDomainForStage(stageId)
+-  const curated = getCuratedResourcesForTerm(null, stageId)
+-
+-  return (
+-    <div className="ax-overview-card">
+-      <div className="ax-detail-h">
+-        {domain && (
+-          <span className="ax-domain-pill">
+-            {domain.num} · {domain.titleZh}
+-          </span>
+-        )}
+-        <h2>{stage?.titleZh || '视元舞台'}</h2>
+-        <p className="ax-overview-sub">{stage?.titleEn}</p>
+-      </div>
+-
+-      <p className="ax-def">{stage?.summaryZh || '已收录但还没有归入舞台的视元资源池。'}</p>
+-
+-      {curated.length > 0 && (
+-        <section className="ax-sec ax-curated-sec">
+-          <h3>专精领域标杆库与工具</h3>
+-          <div className="ax-curated-list">
+-            {curated.map((c) => (
+-              <a key={c.url} className="ax-curated-item" href={c.url} target="_blank" rel="noreferrer">
+-                <div className="ax-curated-item-h">
+-                  <b>{c.name}</b>
+-                  <span className="ax-curated-tag">{c.tag}</span>
+-                </div>
+-                <p>{c.desc}</p>
+-              </a>
+-            ))}
+-          </div>
+-        </section>
+-      )}
+-
+-      <div className="ax-note">
+-        <p>💡 鼠标扫过中央舞台的任一部件，或在左栏点选一条术语，即可在此展开其结构正名、代码规范与来源证据。</p>
+-      </div>
+-    </div>
+-  )
+-}
+diff --git a/frontend/src/views/AtlasIndex.jsx b/frontend/src/views/AtlasIndex.jsx
+new file mode 100644
+index 0000000..d34c7cc
+--- /dev/null
++++ b/frontend/src/views/AtlasIndex.jsx
+@@ -0,0 +1,233 @@
++import { useEffect, useMemo, useState } from 'react'
++import atlas from '../data/visual-atlas.json'
++import { MANIFESTS } from '../stages/manifests.js'
++import { buildStageIndex, MASTER_DOMAINS } from '../lib/stage-index.js'
++import { positionIndex } from '../lib/stage-zones.js'
++import {
++  DEPTHS, DEPTH_LABEL, DEPTH_DEFINITION,
++  TERM_STATUSES, TERM_STATUS_LABEL, TERM_STATUS_DEFINITION,
++  statusDistribution,
++} from '../lib/atlas-status.js'
++import { buildTermIndex, searchRecords, termHref } from '../lib/search-index.js'
++import { useRoute, navigate } from '../router.js'
++import PositionMap from '../components/atlas/PositionMap.jsx'
++
++/* ============ 图鉴索引页（方案 §5.1） ============
++ * `#/atlas` 不落到任何一台。四个中立入口并列，服务四种不同的来意：
++ *   ① 我知道名称，或能描述  → 搜索
++ *   ② 我知道自己在做什么    → 九台
++ *   ③ 我知道它在页面哪里    → 位置索引
++ *   ④ 我想补全见识          → 两套正交标签的分布
++ *
++ * 纪律：这一页上每个数字都由 stage-index / stage-zones / atlas-status 现算，
++ * 本文件内没有任何表示统计量的字面量。
++ */
++
++const INDEX = buildStageIndex(MANIFESTS, atlas)
++const POSITIONS = positionIndex(MANIFESTS)
++const TERM_RECORDS = buildTermIndex(atlas, MANIFESTS)
++
++/* 搜索结果一次显示多少条。这是版面参数，不是统计量。 */
++const SEARCH_LIMIT = 12
++
++function stageCard(stage) {
++  const zones = stage.zones.length
++  const compare = stage.compareSets.length
++  return { stage, zones, compare }
++}
++
++export default function AtlasIndex() {
++  const route = useRoute()
++  const [q, setQ] = useState(route.query.q ?? '')
++
++  /* 从别处深链过来（全站搜索对未入台术语给的是 `#/atlas?q=…`）时同步一次。 */
++  useEffect(() => { setQ(route.query.q ?? '') }, [route.query.q])
++
++  const hits = useMemo(
++    () => (q.trim() ? searchRecords(TERM_RECORDS, q, SEARCH_LIMIT) : []),
++    [q],
++  )
++  const hitTotal = useMemo(
++    () => (q.trim() ? searchRecords(TERM_RECORDS, q).length : 0),
++    [q],
++  )
++
++  const dist = useMemo(() => statusDistribution(atlas.entries, INDEX), [])
++  const cards = useMemo(() => INDEX.stages.map(stageCard), [])
++  const byStage = useMemo(
++    () => new Map(cards.map((card) => [card.stage.id, card])),
++    [cards],
++  )
++
++  return (
++    <div className="axi">
++      <header className="axi-head">
++        <p className="axi-kicker x-mono">图鉴</p>
++        <h1>
++          {INDEX.stages.length} 个活舞台，{dist.depth.staged} 条术语在台上可调
++        </h1>
++        <p className="axi-lede">
++          图鉴不是一份完整词表，也不打算是。样本库里 {dist.total} 条大多只是带来源的采集记录；
++          真正被摆上台、能调、能高亮的是 {dist.depth.staged} 条。
++          我们把 {dist.depth.staged} 当成资产，不把 {dist.total} 当成规模。
++          <a className="axi-lede-link" href="#/about">口径怎么算 →</a>
++        </p>
++      </header>
++
++      <div className="axi-grid">
++        {/* ① 我知道名称 / 能描述 */}
++        <section className="axi-card axi-search-card" aria-labelledby="axi-h-search">
++          <h2 id="axi-h-search"><span className="axi-num x-mono">01</span>我知道名称，或者能描述它</h2>
++          <p className="axi-sub">吃正名、中文名、台上订正名、别名与定义前段。只搜术语，不搜站点。</p>
++          <form
++            className="axi-search"
++            role="search"
++            onSubmit={(event) => {
++              event.preventDefault()
++              navigate(q.trim() ? `#/atlas?q=${encodeURIComponent(q.trim())}` : '#/atlas')
++            }}
++          >
++            <label className="axi-search-label" htmlFor="axi-q">搜索图鉴术语</label>
++            <input
++              id="axi-q"
++              type="search"
++              value={q}
++              onChange={(event) => setQ(event.target.value)}
++              placeholder="打字，或说个大概…"
++              autoComplete="off"
++            />
++          </form>
++
++          {q.trim() ? (
++            <div className="axi-hits">
++              <p className="axi-hits-h x-mono">
++                {hitTotal ? `命中 ${hitTotal} 条` : '没有命中'}
++                {hitTotal > hits.length && `，先列前 ${hits.length} 条`}
++              </p>
++              <ul className="axi-hit-list">
++                {hits.map((hit) => (
++                  <li key={hit.id}>
++                    <a className="axi-hit" href={termHref(hit, q)}>
++                      <b>{hit.termEn}</b>
++                      <span>{hit.termZhFix || hit.termZh}</span>
++                      <em className="x-mono">
++                        {hit.stageTitleZh ? hit.stageTitleZh : '还没有台'}
++                      </em>
++                    </a>
++                  </li>
++                ))}
++              </ul>
++              {!hitTotal && (
++                <p className="axi-empty">
++                  换个说法试试：这里只认术语的名字、别名和定义前段，不认整句提问。
++                </p>
++              )}
++            </div>
++          ) : (
++            <p className="axi-empty">
++              还没有输入。也可以用顶栏那个搜索框，它同时搜术语和站点。
++            </p>
++          )}
++        </section>
++
++        {/* ④ 补全见识：两套正交标签 */}
++        <section className="axi-card axi-status-card" aria-labelledby="axi-h-status">
++          <h2 id="axi-h-status"><span className="axi-num x-mono">04</span>我想知道这批词的成色</h2>
++          <p className="axi-sub">
++            两套标签互不替代：一套说我们做到哪一步，一套说这个词在行业里算什么。
++          </p>
++
++          <div className="axi-dist">
++            <h3>建档深度 · 我们做到哪一步</h3>
++            <ul className="axi-bars">
++              {DEPTHS.map((key) => (
++                <li key={key}>
++                  <span className="axi-bar-label">{DEPTH_LABEL[key]}</span>
++                  <span className="axi-bar-track" aria-hidden="true">
++                    <i style={{ inlineSize: `${(dist.depth[key] / dist.total) * 100}%` }} />
++                  </span>
++                  <em className="x-mono">{dist.depth[key]}</em>
++                  <p className="axi-bar-def">{DEPTH_DEFINITION[key]}</p>
++                </li>
++              ))}
++            </ul>
++          </div>
++
++          <div className="axi-dist">
++            <h3>术语地位 · 这个词在行业里算什么</h3>
++            <ul className="axi-bars">
++              {TERM_STATUSES.map((key) => (
++                <li key={key}>
++                  <span className="axi-bar-label">{TERM_STATUS_LABEL[key]}</span>
++                  <span className="axi-bar-track" aria-hidden="true">
++                    <i style={{ inlineSize: `${(dist.termStatus[key] / dist.total) * 100}%` }} />
++                  </span>
++                  <em className="x-mono">{dist.termStatus[key]}</em>
++                  <p className="axi-bar-def">{TERM_STATUS_DEFINITION[key]}</p>
++                </li>
++              ))}
++            </ul>
++          </div>
++
++          <p className="axi-review">
++            人工复核：目前 {dist.reviewed} 条。
++            采集时间不算复核——机器抓到的时刻和有人看过并认可，是两件事。
++          </p>
++        </section>
++
++        {/* ② 我知道自己在做什么 */}
++        <section className="axi-card axi-stages-card" aria-labelledby="axi-h-stages">
++          <h2 id="axi-h-stages"><span className="axi-num x-mono">02</span>我知道自己在做什么</h2>
++          <p className="axi-sub">一台 = 一族术语活体同屏。按八大领域排，没有台的领域也列出来。</p>
++
++          {MASTER_DOMAINS.map((domain) => {
++            const list = domain.stageIds.map((id) => byStage.get(id)).filter(Boolean)
++            return (
++              <div className="axi-domain" key={domain.id}>
++                <h3>
++                  <em className="x-mono">{domain.num}</em>
++                  {domain.titleZh}
++                  <span className="x-mono axi-domain-count">
++                    {list.length} 台 · {list.reduce((sum, card) => sum + card.stage.claims.length, 0)} 条
++                  </span>
++                </h3>
++                {list.length ? (
++                  <ul className="axi-stage-list">
++                    {list.map(({ stage, zones, compare }) => (
++                      <li key={stage.id}>
++                        <a className="axi-stage" href={`#/atlas/${stage.id}`}>
++                          <b>{stage.titleZh}</b>
++                          <span className="axi-stage-en x-mono">{stage.titleEn}</span>
++                          <p>{stage.summaryZh}</p>
++                          <span className="axi-stage-meta x-mono">
++                            <em>{stage.claims.length} 条认领</em>
++                            <em>{zones} 个分区</em>
++                            <em>{compare ? `${compare} 组对照` : '无对照组'}</em>
++                          </span>
++                        </a>
++                      </li>
++                    ))}
++                  </ul>
++                ) : (
++                  <p className="axi-domain-empty">
++                    还没有台。本轮语料没有按这个领域标注，所以也给不出「语料里有几条」——
++                    不写「规划中」三个字了事。
++                  </p>
++                )}
++              </div>
++            )
++          })}
++        </section>
++
++        {/* ③ 我知道它在页面哪里 */}
++        <section className="axi-card axi-position-card" aria-labelledby="axi-h-pos">
++          <h2 id="axi-h-pos"><span className="axi-num x-mono">03</span>我知道它在页面的哪个位置</h2>
++          <p className="axi-sub">
++            按版面位置检索，而不是按名字。为 0 的区域也留着——「这一区还没有台」比藏起来诚实。
++          </p>
++          <PositionMap positions={POSITIONS} index={INDEX} manifests={MANIFESTS} />
++        </section>
++      </div>
++    </div>
++  )
++}
+diff --git a/frontend/src/views/AtlasStage.jsx b/frontend/src/views/AtlasStage.jsx
+new file mode 100644
+index 0000000..5edc83e
+--- /dev/null
++++ b/frontend/src/views/AtlasStage.jsx
+@@ -0,0 +1,420 @@
++import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
++import atlas from '../data/visual-atlas.json'
++import { MANIFESTS, componentFor } from '../stages/registry.js'
++import {
++  buildStageIndex, stageById, defaultValuesFor, crossRefs, getDomainForStage,
++} from '../lib/stage-index.js'
++import { zoneMemberIds } from '../lib/stage-zones.js'
++import { statusLabelsOf } from '../lib/atlas-status.js'
++import { buildSiteLinkIndexes, sitesForTerm } from '../lib/atlas-source-link.js'
++import { useRoute, navigate } from '../router.js'
++import StageOverview from '../components/atlas/StageOverview.jsx'
++import ZoneNav from '../components/atlas/ZoneNav.jsx'
++import ParamPanel from '../components/atlas/ParamPanel.jsx'
++import TermPanel from '../components/atlas/TermPanel.jsx'
++import CompareMatrix from '../components/atlas/CompareMatrix.jsx'
++
++/* ============ 舞台页 · 三态结构（方案 §5.2） ============
++ *   总览态  全部热区同时编号标注，右下是编号图例。默认态。
++ *   分区态  只亮一个分区的 3–7 条，其余降对比。
++ *   对照态  有 compareSets 的台才出现：同屏活体 + 五轴判据矩阵。
++ * 选中一条术语时叠加「单词态」：面板打开，该部件描边。
++ *
++ * 态写在 hash query 上（`?zone=…` / `?view=compare`），所以每一态都能被链接、
++ * 被后退键还原、被截图。路由段名仍是冻结的三段，没有新增段。
++ *
++ * 数字全部由 stage-index / manifest 现算，本文件没有统计量字面量。
++ */
++
++const INDEX = buildStageIndex(MANIFESTS, atlas)
++
++/** 一台的编号模型：编号沿分区顺序连排，舞台角标与图例共用同一套号。 */
++function buildModel(stage) {
++  const claimByTerm = new Map(stage.claims.map((claim) => [claim.termId, claim]))
++  const byTerm = new Map()
++  let n = 0
++  const zones = stage.zones.map((zone) => {
++    const members = zoneMemberIds(zone).map((termId) => {
++      const claim = claimByTerm.get(termId)
++      n += 1
++      const under = claim.underVariant ? claimByTerm.get(claim.underVariant) : null
++      const member = {
++        n,
++        termId,
++        claim,
++        slot: claim.slot,
++        node: claim.node ?? null,
++        param: claim.param ?? null,
++        termEn: claim.term.termEn,
++        displayZh: claim.displayZh,
++        zoneId: zone.id,
++        underVariantZh: under ? under.displayZh : null,
++      }
++      byTerm.set(termId, member)
++      return member
++    })
++    return {
++      id: zone.id, labelZh: zone.labelZh, descriptionZh: zone.descriptionZh, members,
++    }
++  })
++  return { zones, byTerm, members: [...byTerm.values()] }
++}
++
++/** 只在客户端问一次 matchMedia，SSR/首帧按窄屏算（移动优先）。 */
++function useWide() {
++  const [wide, setWide] = useState(
++    () => typeof window !== 'undefined' && window.matchMedia('(min-width: 768px)').matches,
++  )
++  useEffect(() => {
++    const mq = window.matchMedia('(min-width: 768px)')
++    const onChange = () => setWide(mq.matches)
++    mq.addEventListener('change', onChange)
++    onChange()
++    return () => mq.removeEventListener('change', onChange)
++  }, [])
++  return wide
++}
++
++function hashFor(stageId, { termId, zone, view, set } = {}) {
++  const query = new URLSearchParams()
++  if (zone) query.set('zone', zone)
++  if (view) query.set('view', view)
++  if (set) query.set('set', set)
++  const search = query.toString()
++  return `#/atlas/${stageId}${termId ? `/${termId}` : ''}${search ? `?${search}` : ''}`
++}
++
++export default function AtlasStage({ stageId, termId }) {
++  const route = useRoute()
++  const wide = useWide()
++  const stage = stageById(INDEX, stageId)
++  const [values, setValues] = useState(() => defaultValuesFor(stage))
++  const [replayKey, setReplayKey] = useState(0)
++  const [hoverNode, setHoverNode] = useState(null)
++  const [sheetOpen, setSheetOpen] = useState(false)
++  const [sites, setSites] = useState(null)
++  const panelRef = useRef(null)
++
++  useEffect(() => {
++    setValues(defaultValuesFor(stage))
++    setSheetOpen(false)
++  }, [stage])
++
++  /* 站点索引只在舞台页用得上一次：术语面板的「真实网站里长这样」。 */
++  useEffect(() => {
++    let alive = true
++    fetch('/data/site-index.json')
++      .then((res) => (res.ok ? res.json() : null))
++      .then((data) => { if (alive) setSites(data) })
++      .catch(() => { if (alive) setSites(null) })
++    return () => { alive = false }
++  }, [])
++
++  const siteIndexes = useMemo(() => buildSiteLinkIndexes(sites), [sites])
++  const model = useMemo(() => (stage ? buildModel(stage) : null), [stage])
++
++  const compareSets = stage?.compareSets ?? []
++  const viewParam = route.query.view === 'compare' && compareSets.length ? 'compare' : null
++  const zoneParam = model?.zones.some((zone) => zone.id === route.query.zone)
++    ? route.query.zone
++    : null
++
++  const selected = termId && model ? model.byTerm.get(termId) ?? null : null
++  const activeZoneId = zoneParam
++  const mode = viewParam ? 'compare' : (activeZoneId ? 'zone' : 'overview')
++  /* 手机上的总览态降级为分区列表：21 个角标在 390px 宽的表单上会互相压住。 */
++  const annotate = mode !== 'compare' && (wide || mode === 'zone')
++
++  const compareSet = useMemo(() => {
++    if (mode !== 'compare') return null
++    return compareSets.find((set) => set.id === route.query.set) || compareSets[0]
++  }, [mode, compareSets, route.query.set])
++
++  const setParam = route.query.set
++  const go = useCallback((next) => {
++    const view = 'view' in next ? next.view : viewParam
++    navigate(hashFor(stageId, {
++      termId: 'termId' in next ? next.termId : termId,
++      zone: 'zone' in next ? next.zone : zoneParam,
++      view,
++      set: view ? ('set' in next ? next.set : setParam) : undefined,
++    }))
++  }, [stageId, termId, zoneParam, viewParam, setParam])
++
++  const selectTerm = useCallback((nextTerm) => {
++    go({ termId: nextTerm || undefined })
++    setReplayKey((key) => key + 1)
++  }, [go])
++
++  /* 键盘：←/→ 在本台术语间移动。只在焦点不在录入控件上时生效
++   * （方案 §7.4 第 4 条：旧版没排除 select，用键盘操作枚举下拉会同时切术语）。 */
++  const onKeyDown = useCallback((event) => {
++    const el = event.target
++    const tag = el?.tagName
++    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return
++    if (el?.isContentEditable || el?.getAttribute?.('role') === 'slider') return
++    if (event.key === 'Escape' && termId) {
++      go({ termId: undefined })
++      return
++    }
++    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return
++    if (!model?.members.length) return
++    const flow = model.members.map((member) => member.termId)
++    const at = flow.indexOf(termId)
++    const step = event.key === 'ArrowRight' ? 1 : -1
++    event.preventDefault()
++    selectTerm(flow[(at + step + flow.length) % flow.length])
++  }, [model, termId, go, selectTerm])
++
++  /* 面板打开时把焦点交给它，关掉时不抢焦点。 */
++  useEffect(() => {
++    if (!termId || !panelRef.current) return
++    panelRef.current.focus({ preventScroll: true })
++  }, [termId])
++
++  if (!stage || !model) {
++    return (
++      <section className="axs-missing">
++        <h1>没有这一台</h1>
++        <p>
++          <span className="x-mono">{stageId}</span> 不是九个舞台之一。
++          <a href="#/atlas">回图鉴索引 →</a>
++        </p>
++      </section>
++    )
++  }
++
++  const StageComponent = componentFor(stage.id)
++  const domain = getDomainForStage(stage.id)
++  const zonesInView = activeZoneId
++    ? model.zones.filter((zone) => zone.id === activeZoneId)
++    : model.zones
++  const membersInView = zonesInView.flatMap((zone) => zone.members)
++  const hotspotItems = membersInView.filter((member) => member.slot === 'hotspot')
++  const variantItems = membersInView.filter((member) => member.slot === 'variant')
++  const paramItems = membersInView.filter((member) => member.slot === 'param')
++
++  const variantClaim = selected?.slot === 'variant'
++    ? selected.claim
++    : (selected?.claim?.underVariant
++      ? model.byTerm.get(selected.claim.underVariant)?.claim ?? null
++      : null)
++  const activeNode = selected?.slot === 'hotspot' ? selected.node : null
++
++  const term = selected?.claim.term ?? null
++  const status = term ? statusLabelsOf(term, INDEX) : null
++  const siteLinks = term ? sitesForTerm(term, siteIndexes) : []
++  const zoneOfSelected = selected
++    ? model.zones.find((zone) => zone.id === selected.zoneId)
++    : null
++  const neighbors = zoneOfSelected
++    ? zoneOfSelected.members.filter((member) => member.termId !== selected.termId)
++    : []
++
++  const paramCount = paramItems.length + stage.knobs.length
++  const renderParams = (idPrefix) => (
++    <ParamPanel
++      idPrefix={idPrefix}
++      params={paramItems}
++      knobs={stage.knobs}
++      values={values}
++      selectedTermId={termId}
++      onSelectTerm={selectTerm}
++      onChange={(key, value) => setValues((prev) => ({ ...prev, [key]: value }))}
++    />
++  )
++
++  return (
++    <div className="axs" onKeyDown={onKeyDown}>
++      <header className="axs-head">
++        <p className="axs-crumb x-mono">
++          <a href="#/atlas">图鉴</a>
++          {domain && <span> / {domain.num} {domain.titleZh}</span>}
++        </p>
++        <div className="axs-headline">
++          <h1>{stage.titleZh}</h1>
++          <span className="axs-en x-mono">{stage.titleEn}</span>
++          <span className="axs-count x-mono">
++            {stage.claims.length} 条术语 · {model.zones.length} 个分区
++          </span>
++        </div>
++        <p className="axs-summary">{stage.summaryZh}</p>
++      </header>
++
++      <div className="axs-tabs" role="group" aria-label="舞台视图">
++        <button
++          type="button"
++          className={`axs-tab ${mode === 'overview' ? 'on' : ''}`}
++          aria-pressed={mode === 'overview'}
++          onClick={() => go({ zone: undefined, view: undefined })}
++        >
++          总览
++          <em className="x-mono">{stage.claims.length}</em>
++        </button>
++        <div className="axs-zonetabs">
++          {model.zones.map((zone) => (
++            <button
++              key={zone.id}
++              type="button"
++              className={`axs-tab ${activeZoneId === zone.id ? 'on' : ''}`}
++              aria-pressed={activeZoneId === zone.id}
++              onClick={() => go({ zone: zone.id, view: undefined })}
++            >
++              {zone.labelZh}
++              <em className="x-mono">{zone.members.length}</em>
++            </button>
++          ))}
++        </div>
++        {compareSets.length > 0 && (
++          <button
++            type="button"
++            className={`axs-tab axs-tab-compare ${mode === 'compare' ? 'on' : ''}`}
++            aria-pressed={mode === 'compare'}
++            onClick={() => go({ view: 'compare', zone: undefined })}
++          >
++            对照
++            <em className="x-mono">{compareSets.length}</em>
++          </button>
++        )}
++        <button
++          type="button"
++          className="axs-tab axs-replay"
++          onClick={() => setReplayKey((key) => key + 1)}
++        >
++          重演动效
++        </button>
++      </div>
++
++      <div className="axs-body">
++        <div className="axs-main">
++          {mode === 'compare' && compareSet ? (
++            <>
++              {compareSets.length > 1 && (
++                <div className="axs-setpicker" role="group" aria-label="选择对照组">
++                  {compareSets.map((set) => (
++                    <button
++                      key={set.id}
++                      type="button"
++                      className={`axs-tab ${set.id === compareSet.id ? 'on' : ''}`}
++                      onClick={() => go({ view: 'compare', zone: undefined, set: set.id })}
++                    >
++                      {set.titleZh}
++                    </button>
++                  ))}
++                </div>
++              )}
++              <CompareMatrix
++                set={compareSet}
++                stage={stage}
++                StageComponent={StageComponent}
++                values={values}
++                model={model}
++                replayKey={replayKey}
++                selectedTermId={termId}
++                onSelectTerm={selectTerm}
++              />
++            </>
++          ) : (
++            <StageOverview
++              StageComponent={StageComponent}
++              stage={stage}
++              variant={variantClaim}
++              values={values}
++              activeNode={activeNode}
++              hoverNode={hoverNode}
++              onHover={setHoverNode}
++              replayKey={replayKey}
++              items={membersInView}
++              hotspotItems={hotspotItems}
++              variantItems={variantItems}
++              activeZoneId={activeZoneId}
++              selectedTermId={termId}
++              onSelect={selectTerm}
++              annotate={annotate}
++            />
++          )}
++
++          {mode !== 'compare' && (
++            <div className="axs-legend">
++              <h2 className="axs-legend-h">
++                {activeZoneId ? '本区的术语' : '这一屏上一共这些名字'}
++                <em className="x-mono">{membersInView.length}</em>
++              </h2>
++              {!annotate && (
++                <p className="axs-legend-note">
++                  屏幕太窄，编号角标会互相压住，所以总览态在这里换成分区列表。点一个分区，舞台只亮那一区。
++                </p>
++              )}
++              <ZoneNav
++                zones={model.zones}
++                activeZoneId={activeZoneId}
++                selectedTermId={termId}
++                accordion={!wide}
++                onSelectZone={(zoneId) => go({ zone: zoneId || undefined, view: undefined })}
++                onSelectTerm={selectTerm}
++              />
++            </div>
++          )}
++        </div>
++
++        <div className="axs-side">
++          <section className="axs-sidecard axs-params" aria-labelledby="axs-params-h">
++            <h2 id="axs-params-h" className="axs-sidecard-h">
++              参数
++              <em className="x-mono">{paramCount}</em>
++            </h2>
++            {renderParams('side')}
++          </section>
++        </div>
++
++        {/* 手机：参数从底部升起；关闭态 inert，Tab 进不去 */}
++        <button
++          type="button"
++          className="axs-sheet-open"
++          onClick={() => setSheetOpen(true)}
++          aria-expanded={sheetOpen}
++          aria-controls="axs-sheet"
++        >
++          调参数 {paramCount} 项
++        </button>
++        <div
++          className={`axs-sheet ${sheetOpen ? 'open' : ''}`}
++          id="axs-sheet"
++          hidden={!sheetOpen}
++          inert={!sheetOpen}
++          aria-label="参数"
++        >
++          <div className="axs-sheet-bar">
++            <span className="x-mono">参数 {paramCount} 项</span>
++            <button type="button" onClick={() => setSheetOpen(false)} aria-label="关闭参数面板">✕</button>
++          </div>
++          <div className="axs-sheet-body">{renderParams('sheet')}</div>
++        </div>
++      </div>
++
++      {/* 术语面板：桌面在右栏，手机从底部升起；关闭态 hidden + inert */}
++      <div
++        className={`axs-termpanel ${termId ? 'open' : ''}`}
++        hidden={!termId}
++        inert={!termId}
++        tabIndex={-1}
++        ref={panelRef}
++      >
++        {term && (
++          <TermPanel
++            term={term}
++            claim={selected.claim}
++            status={status}
++            siteLinks={siteLinks}
++            neighbors={neighbors}
++            zone={zoneOfSelected}
++            crossStage={crossRefs(INDEX, term.id, stage.id)}
++            onSelectTerm={selectTerm}
++            onClose={() => go({ termId: undefined })}
++          />
++        )}
++      </div>
++
++    </div>
++  )
++}
+diff --git a/frontend/src/views/SiteDetail.jsx b/frontend/src/views/SiteDetail.jsx
+index e3d4660..6511258 100644
+--- a/frontend/src/views/SiteDetail.jsx
++++ b/frontend/src/views/SiteDetail.jsx
+@@ -1,5 +1,6 @@
+ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
+ import { createPortal } from 'react-dom'
++import atlasCorpus from '../data/visual-atlas.json'
+ import DomainMark from '../components/DomainMark.jsx'
+ import EvidenceTrio from '../components/EvidenceTrio.jsx'
+ import ArchiveDisclosure from '../components/ArchiveDisclosure.jsx'
+@@ -22,10 +23,14 @@ const ENTRY_ID_RE = /^[A-Za-z0-9][A-Za-z0-9._-]*$/
+ /* 「拿得走」的动作：能把东西带离本站的那几个，其余（browse/search/learn…）不算。 */
+ const ACQUIRE_ACTIONS = ['copy', 'install', 'download', 'purchase']
+ 
+-/* 术语名在构建期就解析好了（termEn 来自图鉴，termZh 只认人工校订值），
+-   所以这里不再 import 674kB 的 visual-atlas.json。两个都没有才退回 id。 */
+-function termName(term) {
+-  return term.termZh || term.termEn || term.termId
++let TERM_NAMES = null
++/* 术语 id → 图鉴里的术语名。语料里没有这条 id 就原样显示 id，不猜名字。
++   （termZh 是机器翻译，"Skeleton"→"骷髅" 这类不能上界面，所以取 termEn。） */
++function termName(termId) {
++  if (!TERM_NAMES) {
++    TERM_NAMES = new Map((atlasCorpus.entries || []).map((entry) => [entry.id, entry.termEn]))
++  }
++  return TERM_NAMES.get(termId) || termId
+ }
+ 
+ function domainOf(url) {
+@@ -136,7 +141,7 @@ function AtlasTerms({ curation }) {
+       ) : (
+         <ul className="sd-terms">
+           {terms.map((term) => {
+-            const label = termName(term)
++            const label = termName(term.termId)
+             return (
+               <li className="sd-term" key={`${term.stageId}/${term.termId}`}>
+                 <a className="sd-term-link" href={`#/atlas/${term.stageId}/${term.termId}`}>
+@@ -366,19 +371,16 @@ export default function SiteDetail({ entryId, onClose }) {
+           </p>
+         ) : null}
+ 
+-        {/* ② 一句编辑判断 + 编辑手记：整页给人读的主体
+-             手记缺失时显示占位，不用 descriptionZh 顶替——那是正式简介，不是人话。 */}
+-        <section className="sd-section sd-voice">
++        {/* ② 一句编辑判断 */}
++        <section className="sd-section">
+           {data.editorial?.takeawayZh ? (
+             <p className="sd-takeaway">{data.editorial.takeawayZh}</p>
+           ) : (
+             <p className="sd-takeaway sd-unknown">编辑判断：未写</p>
+           )}
+-          {data.editorial?.noteZh ? (
+-            <p className="sd-note">{data.editorial.noteZh}</p>
+-          ) : (
+-            <p className="sd-note sd-note-empty">编辑手记尚未写</p>
+-          )}
++          {data.editorial?.descriptionZh ? (
++            <p className="sd-desc">{data.editorial.descriptionZh}</p>
++          ) : null}
+         </section>
+ 
+         {/* ③ 三张证据图 */}

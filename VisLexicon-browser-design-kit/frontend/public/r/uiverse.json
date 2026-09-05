@@ -1,0 +1,227 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T11:41:58.835Z",
+  "entryId": "uiverse",
+  "entityId": "entity-uiverse",
+  "status": "APPROVED",
+  "voiceStatus": "exemplar",
+  "official": {
+    "inputUrl": "https://uiverse.io/",
+    "finalUrl": "https://uiverse.io/",
+    "checkedAt": "2026-09-01T07:38:55.493Z"
+  },
+  "editorial": {
+    "name": "Uiverse",
+    "descriptionZh": "社区共建的开源 UI 元素库，可按按钮、卡片、加载器与表单等类别浏览；单项页面给出实时效果和可复制的 HTML/CSS，并可导出 React、支持 Tailwind 与 Figma，站内 UI 元素统一采用 MIT 许可。",
+    "takeawayZh": "一个个小元素，看效果、复制代码，站内统一 MIT",
+    "noteZh": "它长得像画廊，其实是代码库。我们随手点开一个社区做的 Loader，页面左边是它在动，右边就是 HTML/CSS，还能导出 React。按钮、卡片、开关、加载器按类别排开，量很大，质量参差是社区库的常态——挑的时候多看两眼。好在页脚写得明白：站内所有 UI 元素都是 MIT，复制走不用犹豫。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "该入口的主要动作是搜索、预览并复制社区提交的 UI 元素源码，而不是参与泛社区讨论。",
+        "evidenceUrl": "https://uiverse.io/"
+      },
+      {
+        "statement": "单项页面同时给出运行效果、HTML/CSS 源码和 React 导出，主要交付物是通用界面组件实现。",
+        "evidenceUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20"
+      }
+    ],
+    "confirmedAt": "2026-09-01T16:45:57.625Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "copy",
+      "export",
+      "submit",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "css"
+    ],
+    "workflowStages": [
+      "discovery",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "community-feed",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://uiverse.io/",
+      "finalUrl": "https://uiverse.io/",
+      "title": "Uiverse — Community UI Elements",
+      "selectionRationale": "首页告诉你这是谁：一个社区共建的元素库，搜索框和画廊就是全部入口。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/uiverse/v2-identity.png",
+        "sha256": "559547761171365efbde26c434674dd2c256a028b9a27093e3d7aea1072d8675",
+        "width": 1280,
+        "height": 900,
+        "bytes": 191898,
+        "alt": "Uiverse 首页的开源 UI 元素画廊与搜索"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://uiverse.io/elements",
+      "finalUrl": "https://uiverse.io/elements",
+      "title": "Uiverse Elements",
+      "selectionRationale": "Elements 页是一整面瀑布流，加载器、按钮、卡片混排，能看出体量和分类方式。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/uiverse/v2-breadth.png",
+        "sha256": "345d549835859272eb68c1bf180747653226e0a11873b45e5ea465a746d2a588",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144394,
+        "alt": "Uiverse Elements 页面中的社区组件瀑布流"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20",
+      "finalUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20",
+      "title": "Fresh Lizard 20 — Uiverse",
+      "selectionRationale": "随便点开一个 Loader：左边在动，右边是源码。这一页就是它「能拿走」的证明。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/uiverse/v2-proof.png",
+        "sha256": "5ccf719527df05f46a9d8f232a6d630708456f98311d895d20b8bc74e199732e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 166446,
+        "alt": "Uiverse 单个 CSS Loader 的实时预览与源码面板"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Uiverse community contributors",
+      "sourceUrl": "https://uiverse.io/",
+      "evidence": "首页明确自述为 Community-built library，单项页面分别标注具体投稿作者。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://uiverse.io/",
+      "evidence": "官网页脚明确写 All content (UI elements) on this site are published under the MIT License。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Pixel Galaxies",
+      "sourceUrl": "https://uiverse.io/",
+      "evidence": "官网页脚版权行写明 2026 Pixel Galaxies - Uiverse.io。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/uiverse-io/galaxy",
+      "sourceUrl": "https://uiverse.io/",
+      "evidence": "首页直接提供 Star on GitHub 链接到 uiverse-io/galaxy。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://uiverse.io/",
+      "evidence": "核心元素库公开浏览与复制，并在站点范围声明 UI elements 使用 MIT。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "state-loading",
+        "termId": "atlas-component-component-loader",
+        "evidenceUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20",
+        "note": "这个证据页本身就是一个纯 CSS 加载指示器的单项页，是最直接的野生样本。",
+        "termEn": "Loader",
+        "termZh": "加载指示器"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-switch",
+        "evidenceUrl": "https://uiverse.io/elements",
+        "note": "Elements 目录设有 Toggle switches 一级类别，整类都是开关的不同做法。",
+        "termEn": "Switch",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-radio-button",
+        "evidenceUrl": "https://uiverse.io/elements",
+        "note": "同一目录设有 Radio buttons 类别，可以对照表单解剖台的单选按钮热区。",
+        "termEn": "Radio Button",
+        "termZh": null
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://uiverse.io/elements",
+        "note": "目录里的 Tooltips 类别提供大量提示气泡样式，对应浮层台的 Tooltip 变体。",
+        "termEn": "Tooltip",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-02-28",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/uiverse",
+    "designMdUrl": "https://vislexicon.com/site/uiverse.md",
+    "checkedAt": "2026-09-01T07:38:55.493Z",
+    "license": "MIT"
+  }
+}
