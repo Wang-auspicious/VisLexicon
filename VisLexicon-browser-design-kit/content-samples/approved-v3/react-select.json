@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "entryId": "react-select",
+  "entityId": "entity-react-select",
+  "attemptId": "swarm-curator-batch-k-react-select-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://react-select.com/",
+    "finalUrl": "https://react-select.com/",
+    "checkedAt": "2026-09-06T04:45:00.000Z"
+  },
+  "editorial": {
+    "name": "React Select",
+    "descriptionZh": "Jed Watson 维护的 React 选择控件 react-select，现为 v5.10.2，含多选、异步与可创建选项。Thinkmill 与 Atlassian 资助。LICENSE 标 MIT。",
+    "takeawayZh": "装上 Select，单选多选异步都能抄",
+    "noteZh": "打开 react-select.com，蓝底标题 A flexible and beautiful Select Input control，现场 Single 选 Ocean、Multi 选 Purple/Red。/home 与首页相同，breadth 改看 Async：loadOptions 回调和 Promise。Creatable 页是可新建选项的下拉。这是 Jed Watson 的独立包，不是 MUI Select。MIT。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-react-select",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 React Select 定义为 flexible and beautiful Select Input control，并提供可交互的 Single、Multi 演示。",
+        "evidenceUrl": "https://react-select.com/"
+      },
+      {
+        "statement": "Async 与 Creatable 文档给出从 react-select/async、react-select/creatable 导入的可嵌入选择控件，而不是完整设计系统。",
+        "evidenceUrl": "https://react-select.com/async"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-k",
+    "reviewerId": "swarm-reviewer-grok-m",
+    "confirmedAt": "2026-09-06T22:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://react-select.com/",
+        "note": "首页现场 Single/Multi 选择控件，仓库关键词含 combobox、select。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://react-select.com/",
+      "finalUrl": "https://react-select.com/",
+      "title": "React Select",
+      "selectionRationale": "先看首页：蓝底标题和可点的 Single、Multi 选择框。",
+      "shot": {
+        "src": "/shots/react-select/v2-identity.png",
+        "sha256": "a07b382d61070e43e218a0426f7d6c50154f5ec7e3c1b147e402e79ff7dbf703",
+        "width": 1280,
+        "height": 900,
+        "bytes": 259811,
+        "alt": "React Select 首页蓝底标题 A flexible and beautiful Select Input control，下方 Single 选 Ocean、Multi 选 Purple 与 Red"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://react-select.com/async",
+      "finalUrl": "https://react-select.com/async",
+      "title": "Async",
+      "selectionRationale": "再翻 Async：远程加载选项的 Callbacks 和 Promises。",
+      "shot": {
+        "src": "/shots/react-select/v2-breadth.png",
+        "sha256": "6f3ac005dbab1a02c9fe9e72b8954b63328751ac3bdace6d78ae1eaa37bd38cc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 120874,
+        "alt": "React Select Async 文档，import Async from react-select/async，下方 Callbacks、Promises、Async MultiSelect"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://react-select.com/creatable",
+      "finalUrl": "https://react-select.com/creatable",
+      "title": "Creatable",
+      "selectionRationale": "最后开 Creatable：可新建选项的下拉和 onCreateOption。",
+      "shot": {
+        "src": "/shots/react-select/v2-proof.png",
+        "sha256": "646987dcade0c6f3d4754da734a07f3ba8fa6522766a3cc13d5c96b2344bd3b1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114817,
+        "alt": "React Select Creatable 文档，import Creatable from react-select/creatable，下方 Creatable Example 与 Creatable Multiselect"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Jed Watson",
+      "sourceUrl": "https://github.com/JedWatson/react-select/blob/master/LICENSE",
+      "evidence": "LICENSE 写 MIT Licensed. Copyright (c) Jed Watson 2022。packages/react-select/package.json author 为 Jed Watson。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Thinkmill",
+      "sourceUrl": "https://github.com/JedWatson/react-select/blob/master/README.md",
+      "evidence": "README 写 react-select is funded by Thinkmill and Atlassian。仓库徽章 Supported by Thinkmill。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/JedWatson/react-select",
+      "sourceUrl": "https://github.com/JedWatson/react-select/blob/master/README.md",
+      "evidence": "README 链到 github.com/JedWatson/react-select。package.json repository 指向该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/JedWatson/react-select/blob/master/LICENSE",
+      "evidence": "LICENSE 以 The MIT License (MIT) 开头，Copyright (c) 2022 Jed Watson。packages/react-select/package.json license 为 MIT。该许可覆盖 react-select 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://react-select.com/",
+      "evidence": "文档与演示公开可读。README 写 yarn add react-select。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "react-select",
+      "sourceUrl": "https://github.com/JedWatson/react-select/blob/master/packages/react-select/package.json",
+      "evidence": "packages/react-select/package.json name 为 react-select，version 5.10.2。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-k",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-m",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-m"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-k 进站起草。/ 与 /home 同页，breadth 改 Async，proof 改 Creatable。与 MUI Select 不是同一产品。status 仍 DRAFT。 swarm-reviewer-grok-m 复核活页、截图哈希与许可后 APPROVED。"
+  }
+}

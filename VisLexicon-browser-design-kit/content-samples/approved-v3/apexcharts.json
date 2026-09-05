@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 3,
+  "entryId": "apexcharts",
+  "entityId": "entity-apexcharts",
+  "attemptId": "swarm-curator-batch-k-apexcharts-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://apexcharts.com/",
+    "finalUrl": "https://apexcharts.com/",
+    "checkedAt": "2026-09-06T04:45:00.000Z"
+  },
+  "editorial": {
+    "name": "ApexCharts",
+    "descriptionZh": "Juned Chhipa 维护的 SVG JavaScript 图表库 apexcharts，现为 v7.1.0。年营收低于 200 万美元可用社区许可；超过须购商业许可，且不得做成竞品。",
+    "takeawayZh": "抄柱状图 demo，先看社区许可够不够用",
+    "noteZh": "首页截图超时，identity 改看 Installation：npm install apexcharts --save。Demos 左侧 Line 到 Raincloud，格子里折线和股票图。Column Charts 六张柱状图都能点进去看源码。适合要现成 SVG 图表配置的人。社区许可限年营收 200 万美元以下，禁止做成竞品；不要当成 MIT。",
+    "pricing": "Community free under $2M USD annual revenue; paid plans from $199 per developer / year"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-apexcharts",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 ApexCharts 定义为 JavaScript Charts，安装页给出 npm install apexcharts，并列出 Line、Column 等到框架包装。",
+        "evidenceUrl": "https://apexcharts.com/docs/installation/"
+      },
+      {
+        "statement": "JavaScript Chart Demos 与 Column Charts 页提供可点预览的折线、柱状、堆叠柱示例，证明交付物是图表实现代码。",
+        "evidenceUrl": "https://apexcharts.com/javascript-chart-demos/column-charts/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-k",
+    "reviewerId": "swarm-reviewer-grok-m",
+    "confirmedAt": "2026-09-06T22:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "admin",
+      "finance"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn",
+      "purchase"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "svg",
+      "canvas"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://apexcharts.com/docs/installation/",
+      "finalUrl": "https://apexcharts.com/docs/installation/",
+      "title": "Installing ApexCharts.js",
+      "selectionRationale": "首页截图超时。改看 Installation：npm 安装和 CDN 写在上面。",
+      "shot": {
+        "src": "/shots/apexcharts/v2-identity.png",
+        "sha256": "83ac87ead1afaeda15e38541d262430bffd980ee5ed4fea94ebad51f2d248799",
+        "width": 1280,
+        "height": 900,
+        "bytes": 122909,
+        "alt": "ApexCharts Installation 文档，左侧 Get Started，正文 npm install apexcharts --save 与 import ApexCharts"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://apexcharts.com/javascript-chart-demos/",
+      "finalUrl": "https://apexcharts.com/javascript-chart-demos/",
+      "title": "JavaScript Chart Demos",
+      "selectionRationale": "再翻 Demos：左侧图表类型，格子里折线和股票图。",
+      "shot": {
+        "src": "/shots/apexcharts/v2-breadth.png",
+        "sha256": "baaeff194b4f02eb1d23aeb7f7d985439f5ff14897e64352d84c1002b288aa89",
+        "width": 1280,
+        "height": 900,
+        "bytes": 177270,
+        "alt": "ApexCharts JavaScript Chart Demos，左侧 Line 到 Raincloud 类型目录，右侧 Basic Line Chart 等预览卡"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://apexcharts.com/javascript-chart-demos/column-charts/",
+      "finalUrl": "https://apexcharts.com/javascript-chart-demos/column-charts/",
+      "title": "JavaScript Column Charts",
+      "selectionRationale": "最后开 Column Charts：六张柱状图预览都能点进去看源码。",
+      "shot": {
+        "src": "/shots/apexcharts/v2-proof.png",
+        "sha256": "05f111ed0842d6d6e4eb1e4de342095a2e4887d7435eb9c49d5da8b818de62e2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121778,
+        "alt": "ApexCharts JavaScript Column Charts，BASIC COLUMN、COLUMN WITH DATA LABELS、STACKED COLUMN 六张预览"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Juned Chhipa",
+      "sourceUrl": "https://apexcharts.com/about-us/",
+      "evidence": "About Us 写 Juned Chhipa is the brain and the founder of the project。GitHub 发版账号为 junedchhipa。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "ApexCharts",
+      "sourceUrl": "https://apexcharts.com/about-us/",
+      "evidence": "About Us 与定价页均以 ApexCharts 为产品身份。GitHub 组织为 apexcharts。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/apexcharts/apexcharts.js",
+      "sourceUrl": "https://github.com/apexcharts/apexcharts.js/blob/main/package.json",
+      "evidence": "package.json 的 repository.url 为 https://github.com/apexcharts/apexcharts.js.git。官网导航有 GitHub 图标。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "custom",
+      "sourceUrl": "https://apexcharts.com/license/community/",
+      "evidence": "Community License 写免费仅限年营收低于 200 万美元的 Small Organization，禁止做成竞品。仓库 LICENSE 为双许可说明，package.json license 为 SEE LICENSE IN LICENSE。不得标 MIT 或开源。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Community free under $2M USD annual revenue; paid plans from $199 per developer / year",
+      "sourceUrl": "https://apexcharts.com/pricing/",
+      "evidence": "Pricing 写 Community Free for Orgs under $2m in Revenue，否则 $199 per developer / year；Pro $349、Premium $599、OEM $14,999 per year。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "apexcharts",
+      "sourceUrl": "https://apexcharts.com/docs/installation/",
+      "evidence": "Installation 写 npm install apexcharts --save。package.json name 为 apexcharts，version 7.1.0。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-k",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-m",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-m"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-k 进站起草。apexcharts.com 首页截图超时，identity 改用 Installation。许可为营收门槛双许可，未标开源。status 仍 DRAFT。 swarm-reviewer-grok-m 复核活页、截图哈希与许可后 APPROVED。"
+  }
+}

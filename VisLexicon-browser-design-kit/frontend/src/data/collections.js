@@ -56,6 +56,10 @@ export const COLLECTIONS = [
       'semi-design',
       'embla-carousel',
       'swiper',
+      'downshift',
+      'react-select',
+      'tanstack-table',
+      'ag-grid',
     ],
     createdAt: '2026-09-05',
   },
@@ -92,7 +96,7 @@ export const COLLECTIONS = [
     titleEn: 'Charts and visualization',
     blurbZh: '这些站交付的是图表实现：用组件、canvas 或比例尺把数据画出来。',
     blurbEn: 'Chart implementations: components, canvas, and scales.',
-    entryIds: ['d3', 'recharts', 'chartjs', 'nivo', 'tremor', 'visx', 'echarts'],
+    entryIds: ['d3', 'recharts', 'chartjs', 'nivo', 'tremor', 'visx', 'echarts', 'observable-plot', 'apexcharts'],
     createdAt: '2026-09-06',
   },
   {
@@ -110,7 +114,7 @@ export const COLLECTIONS = [
     titleEn: 'CSS tools',
     blurbZh: '这些站交付的是 CSS 框架或引擎：用工具类或构建期原子样式接到现有项目，不是现成组件包。',
     blurbEn: 'CSS frameworks and engines. Utility classes or build-time atomic styles, not ready-made component packs.',
-    entryIds: ['tailwind-css', 'panda-css', 'unocss'],
+    entryIds: ['tailwind-css', 'panda-css', 'unocss', 'cva'],
     createdAt: '2026-09-06',
   },
 ]

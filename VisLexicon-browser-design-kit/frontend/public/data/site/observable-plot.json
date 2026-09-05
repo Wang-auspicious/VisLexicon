@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T21:13:02.745Z",
+  "entryId": "observable-plot",
+  "entityId": "entity-observable-plot",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "observablehq.com",
+  "official": {
+    "inputUrl": "https://observablehq.com/plot/",
+    "finalUrl": "https://observablehq.com/plot/",
+    "checkedAt": "2026-09-06T04:45:00.000Z"
+  },
+  "editorial": {
+    "name": "Observable Plot",
+    "descriptionZh": "Observable, Inc. 维护的表格数据可视化库 @observablehq/plot，现为 v0.6.17。用分层标记与比例尺写图形语法图表。仓库 LICENSE 为 ISC，文档公开。",
+    "takeawayZh": "用 barY 和 binX 写柱状图，代码即出图",
+    "noteZh": "打开首页，大字 exploratory data visualization，旁边是拼成 PLOT 的色块，下面一排六边形图例。Getting started 左侧 Marks、Scales，正文直方图和 rectY 代码。Bar mark 页是英文字母柱状图，下面 Plot.barY。适合要图形语法、不想先选图表类型的人。ISC，文档公开。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Observable Plot 定义为 The JavaScript library for exploratory data visualization，并提供 Get started、What is Plot?、Examples。",
+        "evidenceUrl": "https://observablehq.com/plot/"
+      },
+      {
+        "statement": "Bar mark 文档同时给出英文字母频率柱状图和 Plot.barY(alphabet, {x: \"letter\", y: \"frequency\"}).plot()，证明交付物是可视化实现代码。",
+        "evidenceUrl": "https://observablehq.com/plot/marks/bar"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "svg",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "ISC"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://observablehq.com/plot/",
+      "finalUrl": "https://observablehq.com/plot/",
+      "title": "Observable Plot",
+      "selectionRationale": "先看首页：exploratory data visualization 和拼成 PLOT 的色块。",
+      "shot": {
+        "src": "/shots/observable-plot/v2-identity.png",
+        "sha256": "e2673bfaf1ea40095f877c890145950d55c97cbda07f427fe11757a43185208b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 596681,
+        "alt": "Observable Plot 首页，标题 The JavaScript library for exploratory data visualization，右侧拼成 PLOT 的色块，下方六边形图例"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://observablehq.com/plot/getting-started",
+      "finalUrl": "https://observablehq.com/plot/getting-started",
+      "title": "Getting started",
+      "selectionRationale": "再翻 Getting started：左侧 Marks 目录，正文直方图和 rectY。",
+      "shot": {
+        "src": "/shots/observable-plot/v2-breadth.png",
+        "sha256": "60e0965ad68a17f38ae891c2f078fbace3b3890902a2765ff9ba9a19d772b0d0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113104,
+        "alt": "Observable Plot Getting started，左侧 Introduction 与 Features 目录，正文正态分布直方图和 Plot.rectY 代码"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://observablehq.com/plot/marks/bar",
+      "finalUrl": "https://observablehq.com/plot/marks/bar",
+      "title": "Bar mark",
+      "selectionRationale": "最后开 Bar mark：字母柱状图和 barY 代码叠在一起。",
+      "shot": {
+        "src": "/shots/observable-plot/v2-proof.png",
+        "sha256": "fab79614fe951298be4ac01ed02db4ed21ddc13fdbcc34428ad82c43f78fd206",
+        "width": 1280,
+        "height": 900,
+        "bytes": 111319,
+        "alt": "Observable Plot Bar mark 页，英文字母频率柱状图下方是 Plot.barY(alphabet, {x: letter, y: frequency})"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Observable, Inc.",
+      "sourceUrl": "https://github.com/observablehq/plot/blob/main/package.json",
+      "evidence": "package.json 的 author.name 为 Observable, Inc.，url 为 https://observablehq.com。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Observable, Inc.",
+      "sourceUrl": "https://github.com/observablehq/plot/blob/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright 2020-2025 Observable, Inc.。GitHub 组织为 observablehq。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/observablehq/plot",
+      "sourceUrl": "https://github.com/observablehq/plot/blob/main/package.json",
+      "evidence": "package.json 的 repository.url 为 https://github.com/observablehq/plot.git。文档顶栏 GitHub 链到该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/observablehq/plot/blob/main/LICENSE",
+      "evidence": "LICENSE 为 ISC 许可文本，Copyright 2020-2025 Observable, Inc.。package.json 的 license 字段为 ISC。该许可覆盖 @observablehq/plot 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://observablehq.com/plot/",
+      "evidence": "README 写 Observable Plot is a free, open-source JavaScript library。文档与示例公开可读，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@observablehq/plot",
+      "sourceUrl": "https://github.com/observablehq/plot/blob/main/package.json",
+      "evidence": "package.json name 为 @observablehq/plot，version 0.6.17。Getting started 写 npm install @observablehq/plot。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/observable-plot.md",
+  "registryUrl": "/r/observable-plot.json"
+}

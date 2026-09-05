@@ -1,0 +1,197 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T21:13:02.745Z",
+  "entryId": "tanstack-table",
+  "entityId": "entity-tanstack-table",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://tanstack.com/table/latest",
+    "finalUrl": "https://tanstack.com/table/latest",
+    "checkedAt": "2026-09-06T04:45:00.000Z"
+  },
+  "editorial": {
+    "name": "TanStack Table",
+    "descriptionZh": "Tanner Linsley 的无样式表格引擎 TanStack Table，现为 v9。本条只收 Table 文档入口，不含 Query 等兄弟库。@tanstack/table-core 为 MIT。",
+    "takeawayZh": "无样式表格引擎，标记和样式自己写",
+    "noteZh": "打开 tanstack.com/table/latest，大字 TABLE，副题 headless engine for building Data Grids，右侧 Issue Workbench 演示表。Overview 写它不是 AG Grid 那种现成组件，而是无样式引擎。Quick Start 给 npm install @tanstack/react-table 和 useTable 示例。本条只收 Table，不是整个 TanStack。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Table 首页把产品定义为 headless engine for sorting, pagination, filtering…，并强调不规定 markup 或样式。",
+        "evidenceUrl": "https://tanstack.com/table/latest"
+      },
+      {
+        "statement": "Overview 写 TanStack Table is a headless UI library，不是预构建表格组件；Quick Start 给出 useTable 与自行渲染的 table 标记。",
+        "evidenceUrl": "https://tanstack.com/table/latest/docs/overview"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "primitive",
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://tanstack.com/table/latest",
+      "finalUrl": "https://tanstack.com/table/latest",
+      "title": "TanStack Table",
+      "selectionRationale": "先看 Table 首页：headless engine 和右侧演示表。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/tanstack-table/v2-identity.png",
+        "sha256": "76bab53633660e7faff141dd6cddb6b2b161a8ad1c3c6b031d36b7c4b4114ddc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 225164,
+        "alt": "TanStack Table 首页大字 TABLE，副题 A powerful engine for building Data Grids，右侧 Issue Workbench 演示表"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://tanstack.com/table/latest/docs/overview",
+      "finalUrl": "https://tanstack.com/table/latest/docs/overview",
+      "title": "Overview | TanStack Table Docs",
+      "selectionRationale": "再翻 Overview：写明 headless，不是 AG Grid 那种现成组件。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/tanstack-table/v2-breadth.png",
+        "sha256": "22113629ed580addb9f680f85ecdaed2812bbc80e01a69f24147993ae226f8bc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 189577,
+        "alt": "TanStack Table Overview，正文写 headless UI library，并对比它不是 AG Grid 那种预构建表格"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://tanstack.com/table/latest/docs/framework/react/quick-start",
+      "finalUrl": "https://tanstack.com/table/latest/docs/framework/react/quick-start",
+      "title": "Quick Start | TanStack Table React Docs",
+      "selectionRationale": "最后开 React Quick Start：安装命令和 useTable 源码。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/tanstack-table/v2-proof.png",
+        "sha256": "f9f50687ee4a4f4d3f50a4378c70fa3686e213e6b98977bd1ba914e9da186a18",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127024,
+        "alt": "TanStack Table React Quick Start，npm install @tanstack/react-table，下方 useTable 与 ColumnDef 示例代码"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Tanner Linsley",
+      "sourceUrl": "https://raw.githubusercontent.com/tanstack/table/main/packages/table-core/package.json",
+      "evidence": "packages/table-core/package.json 的 author 字段为 Tanner Linsley。LICENSE 版权行为 Copyright (c) 2016 Tanner Linsley。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "TanStack",
+      "sourceUrl": "https://tanstack.com/table/latest",
+      "evidence": "文档顶栏与品牌为 TanStack。GitHub 组织为 TanStack。本条只收录 Table 入口，不把整个公司压成一张卡。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/tanstack/table",
+      "sourceUrl": "https://raw.githubusercontent.com/tanstack/table/main/packages/table-core/package.json",
+      "evidence": "package.json repository.url 为 https://github.com/TanStack/table.git。首页 Built in public 链到 github.com/tanstack/table。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/tanstack/table/main/LICENSE",
+      "evidence": "LICENSE 以 MIT License 开头，Copyright (c) 2016 Tanner Linsley。packages/table-core/package.json license 为 MIT。该许可覆盖 TanStack Table 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://tanstack.com/table/latest/docs/framework/react/quick-start",
+      "evidence": "Quick Start 写 npm install @tanstack/react-table。文档公开可读，未见付费墙。赞助与 Partners 不是买断库本身。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@tanstack/table-core",
+      "sourceUrl": "https://raw.githubusercontent.com/tanstack/table/main/packages/table-core/package.json",
+      "evidence": "packages/table-core/package.json name 为 @tanstack/table-core，version 9.2.4。React 适配包安装命令为 @tanstack/react-table。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/tanstack-table",
+    "designMdUrl": "https://vislexicon.com/site/tanstack-table.md",
+    "checkedAt": "2026-09-06T04:45:00.000Z",
+    "license": "MIT"
+  }
+}

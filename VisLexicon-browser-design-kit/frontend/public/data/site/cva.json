@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T21:13:02.745Z",
+  "entryId": "cva",
+  "entityId": "entity-cva",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "cva.style",
+  "official": {
+    "inputUrl": "https://cva.style/",
+    "finalUrl": "https://cva.style/",
+    "checkedAt": "2026-09-06T04:45:00.000Z"
+  },
+  "editorial": {
+    "name": "Class Variance Authority",
+    "descriptionZh": "Joe Bell 维护的 Class Variance Authority。npm 包 class-variance-authority 按 variants 生成类型安全 className。LICENSE 为 Apache-2.0。",
+    "takeawayZh": "用 cva 写按钮变体，className 自己拼",
+    "noteZh": "打开 cva.style，标题 Class Variance Authority，中间黑白几何 logo，侧栏 Introduction 到 Variants。Installation 写 pnpm i class-variance-authority，并说明 npm 短名 cva 要到 v1。Variants 页用 button 的 intent、size、compoundVariants 示范。站点薄，三页都是文档。适合要 Tailwind 变体、又不想上 CSS-in-TS 的人。Apache-2.0，赞助不是买断。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 cva 定义为 builds type-safe, variant-driven class names for any styling approach，交付物是 className 工具而不是组件包。",
+        "evidenceUrl": "https://cva.style/"
+      },
+      {
+        "statement": "Installation 给出 pnpm i class-variance-authority；Variants 页用 cva() 配置 intent/size 生成按钮 class 字符串。",
+        "evidenceUrl": "https://cva.style/docs/getting-started/variants"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "css",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://cva.style/",
+      "finalUrl": "https://cva.style/",
+      "title": "Class Variance Authority | cva",
+      "selectionRationale": "先看首页：Class Variance Authority 和黑白几何 logo。",
+      "shot": {
+        "src": "/shots/cva/v2-identity.png",
+        "sha256": "536e4350e06b6264b6cca1762ae63d063824bc0cee7f8383f0400099f2c2964b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 188753,
+        "alt": "cva.style 首页标题 Class Variance Authority，中间黑白几何 logo，侧栏 Introduction 与 Getting Started"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://cva.style/docs/getting-started/installation",
+      "finalUrl": "https://cva.style/getting-started/installation/",
+      "title": "Installation | cva",
+      "selectionRationale": "再翻 Installation：pnpm i class-variance-authority。",
+      "shot": {
+        "src": "/shots/cva/v2-breadth.png",
+        "sha256": "5a0f6d29e8a81a25ee18c4c51ea907ff6f4143d7a8e9e2b64ec2da6a1c875e75",
+        "width": 1280,
+        "height": 900,
+        "bytes": 73366,
+        "alt": "cva Installation 文档，命令 pnpm i class-variance-authority，下方 Tailwind CSS IntelliSense 配置"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://cva.style/docs/getting-started/variants",
+      "finalUrl": "https://cva.style/getting-started/variants/",
+      "title": "Variants | cva",
+      "selectionRationale": "最后开 Variants：button 的 intent、size 和 compoundVariants。",
+      "shot": {
+        "src": "/shots/cva/v2-proof.png",
+        "sha256": "1fe45e39f040bc23f22904e898ef833a428dbc17dc3d7286c57b1b347bb3e6cf",
+        "width": 1280,
+        "height": 900,
+        "bytes": 87909,
+        "alt": "cva Variants 文档，import { cva } from class-variance-authority，button 配置 intent、size 变体"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Joe Bell",
+      "sourceUrl": "https://github.com/joe-bell/cva/blob/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright 2022 Joe Bell。packages/cva/package.json author 为 Joe Bell (https://joebell.studio)。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://cva.style/",
+      "evidence": "首页写 cva is a privately-maintained free open-source project。未见公司主体，版权只署 Joe Bell。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/joe-bell/cva",
+      "sourceUrl": "https://github.com/joe-bell/cva/blob/main/packages/cva/package.json",
+      "evidence": "packages/cva/package.json repository 为 https://github.com/joe-bell/cva.git。文档 License 链到该仓库 LICENSE。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/joe-bell/cva/blob/main/LICENSE",
+      "evidence": "LICENSE 为 Apache License Version 2.0，Copyright 2022 Joe Bell。首页 License 节写 Apache-2.0 License © Joe Bell。package.json license 为 Apache-2.0。该许可覆盖 cva 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://cva.style/",
+      "evidence": "首页写 privately-maintained free open-source project。文档公开可读。赞助页是捐赠，不是买断。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "class-variance-authority",
+      "sourceUrl": "https://cva.style/docs/getting-started/installation",
+      "evidence": "Installation 写 pnpm i class-variance-authority。v1 beta 的 packages/cva/package.json name 为 cva，文档说明短名从 v1 起使用。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/cva.md",
+  "registryUrl": "/r/cva.json"
+}

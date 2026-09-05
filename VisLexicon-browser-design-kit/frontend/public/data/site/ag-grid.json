@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T21:13:02.745Z",
+  "entryId": "ag-grid",
+  "entityId": "entity-ag-grid",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "ag-grid.com",
+  "official": {
+    "inputUrl": "https://www.ag-grid.com/",
+    "finalUrl": "https://www.ag-grid.com/",
+    "checkedAt": "2026-09-06T04:45:00.000Z"
+  },
+  "editorial": {
+    "name": "AG Grid",
+    "descriptionZh": "AG Grid 的 JavaScript 数据表格。Community 包 ag-grid-community 为 MIT 免费；Enterprise 需商业许可，定价页写每开发者 999 美元。本条只收 AG Grid。",
+    "takeawayZh": "Community 免费能筛能排，透视和 Excel 导出要买",
+    "noteZh": "打开 ag-grid.com，标题轮播 The Best Angular Grid，下面债券行情表在跑。Quick Start 写 Community 与 Enterprise 两档，并给出 CDN 装 ag-grid-community。Community vs Enterprise 页写 Community 生产可用、无需许可；Enterprise 生产要许可，本地可试，定价页每开发者 999 美元。别把 Community MIT 当成 Enterprise 也能免费商用。",
+    "pricing": "Community MIT free; Enterprise $999 USD per developer",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 AG Grid 定义为可嵌入应用的 Data Grid，并提供 React、Angular、Vue、JavaScript 入口和现场行情表。",
+        "evidenceUrl": "https://www.ag-grid.com/"
+      },
+      {
+        "statement": "Quick Start 给出 createGrid 与 columnDefs 的可运行表格；Community vs Enterprise 把核心网格与透视、Excel 导出等企业功能分开。",
+        "evidenceUrl": "https://www.ag-grid.com/javascript-data-grid/getting-started/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin",
+      "finance"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "preview",
+      "learn",
+      "purchase",
+      "compare"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "angular",
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "open-source",
+      "paid"
+    ],
+    "licenses": [
+      "MIT",
+      "proprietary"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.ag-grid.com/",
+      "finalUrl": "https://www.ag-grid.com/",
+      "title": "AG Grid: High-Performance React Grid, Angular Grid, JavaScript Grid",
+      "selectionRationale": "先看首页：The Best Grid 和现场债券行情表。",
+      "shot": {
+        "src": "/shots/ag-grid/v2-identity.png",
+        "sha256": "7dedfd91256208d52f4a54265c26e799f040ada997ef75ed8a0401609c0e617b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135704,
+        "alt": "AG Grid 首页标题 The Best Angular Grid in the World，下方债券与股票行情数据表"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.ag-grid.com/javascript-data-grid/getting-started/",
+      "finalUrl": "https://www.ag-grid.com/javascript-data-grid/getting-started/",
+      "title": "Quick Start | AG Grid",
+      "selectionRationale": "再翻 Quick Start：Community/Enterprise 说明和 CDN 安装。",
+      "shot": {
+        "src": "/shots/ag-grid/v2-breadth.png",
+        "sha256": "d125a2bd0c3577edfb25ce191953a7932e8738d474c9ae87ef6cfc843b009685",
+        "width": 1280,
+        "height": 900,
+        "bytes": 167098,
+        "alt": "AG Grid JavaScript Quick Start，正文写 Community and Enterprise editions，代码块加载 ag-grid-community.min.js"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.ag-grid.com/javascript-data-grid/community-vs-enterprise/",
+      "finalUrl": "https://www.ag-grid.com/javascript-data-grid/community-vs-enterprise/",
+      "title": "Community vs. Enterprise | AG Grid",
+      "selectionRationale": "最后开 Community vs Enterprise：免费档和生产许可写清楚。",
+      "shot": {
+        "src": "/shots/ag-grid/v2-proof.png",
+        "sha256": "bf82cac2febcd5f0a50861b92e9fa232e17b4836b299aad79e456e70c0c6af67",
+        "width": 1280,
+        "height": 900,
+        "bytes": 145999,
+        "alt": "AG Grid Community vs Enterprise，写 Community 生产免费无需许可，Enterprise 生产需要许可"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "AG Grid",
+      "sourceUrl": "https://www.ag-grid.com/",
+      "evidence": "官网与文档均以 AG Grid 为产品署名。GitHub 组织为 ag-grid。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "AG Grid Ltd",
+      "sourceUrl": "https://www.ag-grid.com/license-pricing/",
+      "evidence": "Licence & Pricing 与商务购买流程以 AG Grid 商业许可主体出现。仓库组织为 ag-grid。",
+      "confidence": 0.8
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/ag-grid/ag-grid",
+      "sourceUrl": "https://github.com/ag-grid/ag-grid/blob/latest/LICENSE.txt",
+      "evidence": "LICENSE.txt 列出 ag-grid-community 等 MIT 包与 ag-grid-enterprise 商业包。官网文档链到 github.com/ag-grid/ag-grid。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://www.ag-grid.com/javascript-data-grid/community-vs-enterprise/",
+      "evidence": "Community vs Enterprise 写 AG Grid Community is available under the MIT licence；AG Grid Enterprise requires a commercial, EULA licence。仓库 LICENSE.txt 把 ag-grid-community 列为 MIT，ag-grid-enterprise 列为 Commercial。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Community MIT free; Enterprise $999 USD per developer",
+      "sourceUrl": "https://www.ag-grid.com/license-pricing/",
+      "evidence": "Pricing 表：AG Grid Community Free；AG Grid Enterprise $999 USD per developer。Community vs Enterprise 写 Community 生产可用、无需许可；Enterprise 生产要许可，本地可试，另有 30 天 Bundle 试用。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "ag-grid-community",
+      "sourceUrl": "https://www.ag-grid.com/javascript-data-grid/getting-started/",
+      "evidence": "Quick Start CDN 示例加载 ag-grid-community.min.js。LICENSE.txt 将 ag-grid-community 列为 MIT 包。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。MIT：Community vs Enterprise 写 AG Grid Community is available under the MIT licence；AG Grid Enterprise requires a commercial, EULA licence。仓库 LICENSE.txt 把 ag-grid-community 列为 MIT，ag-grid-enterprise 列为 Commercial。",
+      "该条目登记了多个许可值（MIT / proprietary），目录之间可能不同，逐目录确认。",
+      "存在付费层：Community MIT free; Enterprise $999 USD per developer。"
+    ],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/ag-grid.md",
+  "registryUrl": "/r/ag-grid.json"
+}

@@ -378,6 +378,34 @@ const VOICE = {
     lede: { zh: '平滑滚动库。MIT。', en: 'Smooth-scroll library. MIT.' },
     style: { zh: '深色全出血营销。大号无衬线。动效即内容。', en: 'Dark full-bleed marketing. Oversized sans. Motion as content.' },
   },
+  'observable-plot': {
+    lede: { zh: 'Observable 的简明图表语法。ISC。', en: 'Concise chart grammar from Observable. ISC.' },
+    style: { zh: '浅色文档。图表标本。中性。', en: 'Light docs. Chart specimens. Neutral.' },
+  },
+  apexcharts: {
+    lede: { zh: 'JavaScript 图表。双许可，营收上限。', en: 'JavaScript charts. Dual license with a revenue cap.' },
+    style: { zh: '浅色营销文档。大号图表标本。品牌蓝。', en: 'Light marketing docs. Large chart specimens. Brand blue.' },
+  },
+  downshift: {
+    lede: { zh: '无样式下拉与组合框原语。MIT。', en: 'Unstyled select and combobox primitives. MIT.' },
+    style: { zh: '浅色文档。代码与演示并置。', en: 'Light docs. Code beside demo.' },
+  },
+  'react-select': {
+    lede: { zh: 'React 选择器组件。MIT。', en: 'React select component. MIT.' },
+    style: { zh: '浅色文档。控件标本。中性。', en: 'Light docs. Control specimens. Neutral.' },
+  },
+  'tanstack-table': {
+    lede: { zh: '无头表格。MIT。本条只收 Table。', en: 'Headless table. MIT. This entry is Table only.' },
+    style: { zh: '深色文档。等宽代码。中性。', en: 'Dark docs. Monospace code. Neutral.' },
+  },
+  'ag-grid': {
+    lede: { zh: '数据表格。Community MIT，Enterprise 收费。', en: 'Data grid. Community is MIT; Enterprise is paid.' },
+    style: { zh: '浅色文档。高密度表格标本。品牌蓝。', en: 'Light docs. High-density grid specimens. Brand blue.' },
+  },
+  cva: {
+    lede: { zh: 'Class Variance Authority。Apache-2.0。', en: 'Class Variance Authority. Apache-2.0.' },
+    style: { zh: '浅色文档。等宽代码。留白宽。', en: 'Light docs. Monospace code. Generous whitespace.' },
+  },
 }
 
 export function entryVoice(entryId) {

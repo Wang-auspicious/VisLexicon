@@ -1,0 +1,204 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T21:13:02.745Z",
+  "entryId": "downshift",
+  "entityId": "entity-downshift",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://www.downshift-js.com/",
+    "finalUrl": "https://www.downshift-js.com/",
+    "checkedAt": "2026-09-06T04:45:00.000Z"
+  },
+  "editorial": {
+    "name": "Downshift",
+    "descriptionZh": "Kent C. Dodds 发起、现由 downshift-js 维护的无样式 React 原语，npm 包 downshift 提供 useSelect 与 useCombobox。LICENSE 标 MIT，版权署 PayPal。",
+    "takeawayZh": "无样式 hooks 管下拉，皮和选项自己画",
+    "noteZh": "打开 downshift-js.com，标题写 WAI-ARIA 的 autocomplete/combobox 或 select。左侧 Hooks 列出 useSelect、useCombobox。useSelect 页讲 getter props 对标原生 select。useCombobox 页讲输入框加列表的无障碍组合框。适合要自己画皮下拉、还要把键盘和读屏做对的人。MIT；版权行仍署 PayPal。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "文档首页把 Downshift 定义为 WAI-ARIA compliant React autocomplete/combobox or select 原语，并推荐 useSelect、useCombobox、useMultipleSelection。",
+        "evidenceUrl": "https://www.downshift-js.com/"
+      },
+      {
+        "statement": "useSelect 与 useCombobox 文档说明 hooks 只返回 getter props、ARIA 属性与状态，UI 由调用方渲染。",
+        "evidenceUrl": "https://www.downshift-js.com/use-select"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.downshift-js.com/",
+      "finalUrl": "https://www.downshift-js.com/",
+      "title": "Introduction | Downshift",
+      "selectionRationale": "先看 Introduction：WAI-ARIA 原语和三个 hooks 名单。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/downshift/v2-identity.png",
+        "sha256": "2028a02f78163dfc8bb9f83d8c5fd473c853f07afd0674a651d6e790ab7f5802",
+        "width": 1280,
+        "height": 900,
+        "bytes": 91111,
+        "alt": "Downshift Introduction，标题写 WAI-ARIA compliant React autocomplete/combobox or select，下列 useSelect、useCombobox、useMultipleSelection"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.downshift-js.com/use-select",
+      "finalUrl": "https://www.downshift-js.com/use-select/",
+      "title": "useSelect | Downshift",
+      "selectionRationale": "再翻 useSelect：无样式 select 的 getter props 和 ARIA。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/downshift/v2-breadth.png",
+        "sha256": "a7ffbbfa9392b249176d0396e543e534f0bf3ef24b5107428382aaf6291f7318",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113321,
+        "alt": "Downshift useSelect 文档，左侧 Hooks 目录，正文讲 getter props 与 ARIA design pattern"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.downshift-js.com/use-combobox",
+      "finalUrl": "https://www.downshift-js.com/use-combobox/",
+      "title": "useCombobox | Downshift",
+      "selectionRationale": "最后开 useCombobox：输入框加列表的无障碍组合框。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/downshift/v2-proof.png",
+        "sha256": "420ffd574e31c5065c28b3c84b8df7057ae1260a1a9bce5b9f42a9248ccf1b3b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 112720,
+        "alt": "Downshift useCombobox 文档，标题 useCombobox，正文讲 combobox/autocomplete 的 getter props"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Kent C. Dodds",
+      "sourceUrl": "https://github.com/downshift-js/downshift/blob/master/package.json",
+      "evidence": "package.json 的 author 字段为 Kent C. Dodds <kent@doddsfamily.us>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "PayPal",
+      "sourceUrl": "https://github.com/downshift-js/downshift/blob/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2017 PayPal。仓库现属 GitHub 组织 downshift-js。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/downshift-js/downshift",
+      "sourceUrl": "https://github.com/downshift-js/downshift/blob/master/package.json",
+      "evidence": "package.json 的 repository.url 为 https://github.com/downshift-js/downshift.git。文档顶栏 GitHub 链到该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/downshift-js/downshift/blob/master/LICENSE",
+      "evidence": "LICENSE 以 The MIT License (MIT) 开头，Copyright (c) 2017 PayPal。package.json 的 license 字段为 MIT。该许可覆盖 downshift 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.downshift-js.com/",
+      "evidence": "文档公开可读。README 写 MIT。未见付费档。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "downshift",
+      "sourceUrl": "https://github.com/downshift-js/downshift/blob/master/package.json",
+      "evidence": "package.json name 为 downshift。文档顶栏 npm 链到该包。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://www.downshift-js.com/use-combobox",
+        "note": "useCombobox 文档把该 hook 定义为 combobox/autocomplete 的无样式逻辑。",
+        "termEn": "Combobox",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/downshift",
+    "designMdUrl": "https://vislexicon.com/site/downshift.md",
+    "checkedAt": "2026-09-06T04:45:00.000Z",
+    "license": "MIT"
+  }
+}
