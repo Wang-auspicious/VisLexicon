@@ -4,44 +4,39 @@
 
 ## 当前阶段
 
-**第 8 节语料欠账**（手册写明「顺手处理，不要绕过」）。未完成前不扩新站。
+**第 8 节语料欠账：已清完。** `npm run data` 通过，12 条 APPROVED。下一步按第 6 节做新站。
 
 ## 第 8 节清单
 
-| 项 | 状态 | 负责 | 备注 |
-|---|---|---|---|
-| origin-ui 身份/许可（Coss / Cal.com，MIT vs MIT/AGPLv3） | 进行中 | curator-2 | 保留 `entryId: origin-ui`，只更新事实，除非证据证明必须改 id |
-| a11y-project proof「可勾选控制」 | 进行中 | curator-3 | 人工开 Checklist 页核对 |
-| 9 条空 `noteZh` | 进行中 | curator-1/2/3 | 见下表 |
-| 英文模板 `shot.alt` | 进行中 | curator-3 为主 | ecomm-design、a11y-project；顺手扫 laws-of-ux |
-| facts.evidence 拼「独立复核来源」 | 进行中 | 各 curator 改自己的文件 | 新写/改写时删掉该后缀 |
+| 项 | 状态 | 备注 |
+|---|---|---|
+| origin-ui 身份/许可 | 完成 | 保留 `entryId: origin-ui`。产品（apps/ui）MIT，仓库其余 AGPL-3.0-or-later。facets 两者都标。 |
+| a11y-project proof「可勾选控制」 | 完成 | HTML 有 64 个真实 checkbox。identity/breadth 截图与 URL 曾对调，已按画面改 URL。 |
+| 9 条空 `noteZh` | 完成 | 见下表。每条独立 commit 并 push。 |
+| 英文模板 `shot.alt` | 完成 | ecomm-design、a11y-project、laws-of-ux |
+| facts.evidence 拼「独立复核来源」 | 完成 | a11y / ecomm 已删 |
 
 ## 9 条 noteZh
 
-| entryId | 状态 | curator | reviewer |
-|---|---|---|---|
-| 21st-dev | 进站中 | curator-1 | 待派 |
-| magic-ui | 进站中 | curator-1 | 待派 |
-| hover-dev | 进站中 | curator-1 | 待派 |
-| origin-ui | 进站中 | curator-2 | 待派 |
-| entry-chakra-ui-react | 进站中 | curator-2 | 待派 |
-| entry-ant-design-react | 进站中 | curator-2 | 待派 |
-| entry-shadcn-studio-blocks | 进站中 | curator-3 | 待派 |
-| a11y-project | 进站中 | curator-3 | 待派 |
-| ecomm-design | 进站中 | curator-3 | 待派 |
+| entryId | 状态 | curator | reviewer | commit |
+|---|---|---|---|---|
+| 21st-dev | 已发布 | curator-1 | swarm-reviewer-grok | 247146d |
+| magic-ui | 已发布 | curator-1 | swarm-reviewer-grok（改正「Marquee 排在最前」） | 4e14866 |
+| hover-dev | 已发布 | curator-1 | swarm-reviewer-grok | c1c6a5a |
+| origin-ui | 已发布 | curator-2 | swarm-reviewer-grok | 83beefe |
+| entry-chakra-ui-react | 已发布 | curator-2 | swarm-reviewer-grok | 93c50aa |
+| entry-ant-design-react | 已发布 | curator-2 | swarm-reviewer-grok | be8e948 |
+| a11y-project | 已发布 | curator-3 | swarm-reviewer-grok | c0d8c89 |
+| ecomm-design | 已发布 | curator-3 | swarm-reviewer-grok | 6dc00dd |
+| entry-shadcn-studio-blocks | 已发布 | curator-3 | swarm-reviewer-grok | de7a04e |
 
-样例已有、不改人话：`shadcn-ui`、`uiverse`、`laws-of-ux`（`editorialVoice.status: exemplar`）。
+样例未改人话：`shadcn-ui`、`uiverse`、`laws-of-ux`。
 
-## 编制
+## 第 6 节新站（进行中）
 
-- 主控：收口、taxonomy、build、commit、push
-- curator-1 / 2 / 3：并行进站，各 3 条
-- reviewer：JSON 落地后独立复核（`reviewerId ≠ curatorId`）
-
-## 提交约定
-
-每条过复核后单独 commit：`content: write noteZh for <entryId>`，立刻 push。欠账全部清完后再按第 6 节做新站。
+候选须查重后再进站。未 APPROVED 前只放 `content-samples/drafts/`。
 
 ## 日志
 
-- 2026-09-05：拉 swarm，开始第 8 节。
+- 2026-09-05：拉 swarm（3 curator + 主控复核），开始第 8 节。
+- 2026-09-05：第 8 节清完，`npm run data` 12 条通过。
