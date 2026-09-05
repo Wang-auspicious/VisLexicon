@@ -21,6 +21,7 @@ export const COLLECTIONS = [
       'entry-chakra-ui-react',
       'entry-ant-design-react',
       'entry-shadcn-studio-blocks',
+      'base-ui',
     ],
     createdAt: '2026-09-05',
   },
