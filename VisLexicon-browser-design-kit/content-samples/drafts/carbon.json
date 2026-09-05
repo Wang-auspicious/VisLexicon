@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "entryId": "carbon",
+  "entityId": "entity-carbon",
+  "attemptId": "swarm-curator-batch-e-carbon-20260906",
+  "status": "DRAFT",
+  "official": {
+    "inputUrl": "https://carbondesignsystem.com/",
+    "finalUrl": "https://carbondesignsystem.com/",
+    "checkedAt": "2026-09-06T04:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Carbon Design System",
+    "descriptionZh": "IBM 开源设计系统文档站，覆盖工作代码、设计工具、人机界面指南与社区；核心仓库 carbon-design-system/carbon 采用 Apache-2.0，版权署 IBM Corp。",
+    "takeawayZh": "查 IBM 开源系统怎么写、怎么装",
+    "noteZh": "我们打开首页，正文写 IBM 开源设计系统。组件总览截图超时，改看 GitHub：侧栏 Apache-2.0。再进 Button 目录，源码和 stories 排在一起。适合要对齐 IBM 产品界面的人。仓库 Apache-2.0 免费；站点目录这次没截到。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-carbon",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "needs-review",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Carbon 定义为 IBM 的开源设计系统，由工作代码、设计工具与资源、人机界面指南和贡献者社区组成。",
+        "evidenceUrl": "https://carbondesignsystem.com/"
+      },
+      {
+        "statement": "组件总览页（本次截图超时，内容已抓取）按 Accordion、Button、Data table 等列出可复用组件；仓库 packages/react/src/components/Button 含 Button.tsx 与 stories，证明有可实现的组件套件。",
+        "evidenceUrl": "https://carbondesignsystem.com/components/overview/components/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-e"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library",
+      "design-file"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma",
+      "sketch"
+    ],
+    "technologies": [
+      "react",
+      "angular",
+      "vue",
+      "svelte",
+      "web-components",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://carbondesignsystem.com/",
+      "finalUrl": "https://carbondesignsystem.com/",
+      "title": "Carbon Design System",
+      "selectionRationale": "先看首页。IBM 开源设计系统写在首屏。",
+      "shot": {
+        "src": "/shots/carbon/v2-identity.png",
+        "sha256": "eb0c6de63477afd136364d6fff07968c4ec30747fa533b958420b27cdccd1035",
+        "width": 1280,
+        "height": 900,
+        "bytes": 173383,
+        "alt": "Carbon Design System 首页：蓝条提示站点已改版，正文 Carbon is IBM’s open source design system，左侧 Designing Developing Components 导航"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon",
+      "finalUrl": "https://github.com/carbon-design-system/carbon",
+      "title": "GitHub - carbon-design-system/carbon: A design system for IBM",
+      "selectionRationale": "再翻 GitHub。站点超时，仓库能看出范围。",
+      "shot": {
+        "src": "/shots/carbon/v2-breadth.png",
+        "sha256": "9b3284cf9bc9368e908e6dee8146876a6a4ce49685b14ceaf4f53382b478b060",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134086,
+        "alt": "GitHub carbon-design-system/carbon 仓库页，About 写 A design system built by IBM，侧栏 Apache-2.0 license，目录含 packages docs examples"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon/tree/main/packages/react/src/components/Button",
+      "finalUrl": "https://github.com/carbon-design-system/carbon/tree/main/packages/react/src/components/Button",
+      "title": "carbon/packages/react/src/components/Button at main · carbon-design-system/carbon",
+      "selectionRationale": "最后开 Button 源码目录。tsx 和 stories 在一起。",
+      "shot": {
+        "src": "/shots/carbon/v2-proof.png",
+        "sha256": "78fa81c9609b8c2037e8740da11dea175a9f14168c156fba36f775867a6511bc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114116,
+        "alt": "GitHub carbon packages/react/src/components/Button 目录，列出 Button.tsx Button.stories.js Button.mdx 与 _story_ _tests_"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "IBM Corp.",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 附录写 Copyright 2015 IBM Corp. Licensed under the Apache License, Version 2.0。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "IBM / carbon-design-system",
+      "sourceUrl": "https://carbondesignsystem.com/",
+      "evidence": "首页正文写 Carbon is IBM’s open source design system。GitHub 组织 carbon-design-system 维护核心仓库，About 回链 www.carbondesignsystem.com。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/carbon-design-system/carbon",
+      "sourceUrl": "https://carbondesignsystem.com/",
+      "evidence": "首页 Explore libraries 链到 Carbon React components 的 GitHub 路径 carbon-design-system/carbon/tree/main/packages/react。仓库 About 回链 carbondesignsystem.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+      "evidence": "LICENSE 文件为 Apache License Version 2.0，附录 Copyright 2015 IBM Corp.。GitHub 仓库侧栏标 Apache-2.0 license。许可覆盖该仓库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://carbondesignsystem.com/",
+      "evidence": "首页写 IBM’s open source design system，文档与 GitHub 仓库公开可浏览，未见组件库付费墙。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-e",
+    "technicalPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-e 进站起草。组件总览与按钮用法页两次截图超时，breadth/proof 改用 GitHub 仓库与 Button 源码目录。status 仍 DRAFT。"
+  }
+}

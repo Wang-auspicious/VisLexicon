@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 3,
+  "entryId": "nivo",
+  "entityId": "entity-nivo",
+  "attemptId": "swarm-curator-batch-e-nivo-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://nivo.rocks/",
+    "finalUrl": "https://nivo.rocks/",
+    "checkedAt": "2026-09-06T04:00:00.000Z"
+  },
+  "editorial": {
+    "name": "nivo",
+    "descriptionZh": "Raphaël Benitte 维护的 React 数据可视化组件库，建立在 D3 之上，文档站提供 SVG、HTML、Canvas 与 HTTP API 的图表目录与 Playground；仓库 MIT。",
+    "takeawayZh": "打开 Playground，调好再把图表装走",
+    "noteZh": "我们打开首页，橙底写建立在 D3 和 React 上，四周是弦图和折线。Components 页把 AreaBump 到 Pie 铺开。点开 Bar：右侧可点堆叠柱，左侧写包名。适合要在 React 里声明式画图的人。仓库 MIT 免费；捐赠不是买断。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-nivo",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页与 About 页把 nivo 定义为 built on top of D3 and React 的 dataviz 组件集，并强调服务端渲染与声明式图表。",
+        "evidenceUrl": "https://nivo.rocks/"
+      },
+      {
+        "statement": "Components 目录按 AreaBump、Bar、Calendar 等列出 SVG/HTML/Canvas/API 变体；Bar 单项页提供可交互 Playground 与 @nivo/bar 包名。",
+        "evidenceUrl": "https://nivo.rocks/components/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-e",
+    "reviewerId": "swarm-reviewer-grok-e2",
+    "confirmedAt": "2026-09-06T16:45:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "install",
+      "learn",
+      "copy"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "svg",
+      "canvas"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://nivo.rocks/",
+      "finalUrl": "https://nivo.rocks/",
+      "title": "Home | nivo",
+      "selectionRationale": "先看首页。橙底那句 D3 and React，四周全是图表。",
+      "shot": {
+        "src": "/shots/nivo/v2-identity.png",
+        "sha256": "a15d25de0da4b4230b4862bdf5739640701fa02c82c278a4e77395657e34f30e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 257540,
+        "alt": "nivo 首页橙底，中心 logo 与 dataviz components built on top of D3 and React，四周 Chord Line Bar Pie 等图表缩略"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://nivo.rocks/components/",
+      "finalUrl": "https://nivo.rocks/components/",
+      "title": "Components | nivo",
+      "selectionRationale": "再翻组件目录。AreaBump 到 Pie 一格格排开。",
+      "shot": {
+        "src": "/shots/nivo/v2-breadth.png",
+        "sha256": "79f001baeba1560e18481bcc2ceeee16864e8edc7a3f72f0512b938c860261d6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 216992,
+        "alt": "nivo Components 目录，筛选 All SVG HTML Canvas API，卡片列出 AreaBump Bar BoxPlot Calendar HeatMap Line Pie"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://nivo.rocks/bar/",
+      "finalUrl": "https://nivo.rocks/bar/",
+      "title": "Bar chart | nivo",
+      "selectionRationale": "最后开 Bar。右侧柱子能点，包名写在标题下。",
+      "shot": {
+        "src": "/shots/nivo/v2-proof.png",
+        "sha256": "a39ecfd38301f06a2b59860a832c3d8495651fa2f2160c68097d1cad40239bb9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 280211,
+        "alt": "nivo Bar 页：标题旁 @nivo/bar，右侧按国家堆叠的柱状图 Playground，左侧 BASE DIMENSIONS STYLE 配置"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Raphaël Benitte",
+      "sourceUrl": "https://github.com/plouc/nivo/blob/master/LICENSE.md",
+      "evidence": "仓库 LICENSE.md 写 Copyright (c) Raphaël Benitte。GitHub 账号 plouc 维护 nivo 单仓。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/plouc/nivo",
+      "evidence": "官方仓库位于个人账号 plouc/nivo，LICENSE 版权人为 Raphaël Benitte，未见独立公司或组织作为发布主体。README 有 Open Collective 赞助区，那是捐赠渠道。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/plouc/nivo",
+      "sourceUrl": "https://nivo.rocks/about/",
+      "evidence": "About 页把 nivo 链到 https://github.com/plouc/nivo，并写 provides supercharged React components to easily build dataviz apps, it's built on top of d3。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/plouc/nivo/blob/master/LICENSE.md",
+      "evidence": "LICENSE.md 为 MIT 许可文本，Copyright (c) Raphaël Benitte。GitHub 仓库徽章链到该文件。许可覆盖该仓库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://nivo.rocks/about/",
+      "evidence": "About 与文档站公开提供组件 Playground 与安装说明。README 写 Donations are welcome via Open Collective，未见付费组件墙。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-e",
+    "technicalPassed": true,
+    "reviewerId": "swarm-reviewer-grok-e2"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-e 进站起草。 swarm-reviewer-grok-e2 复核三页活页、三张 PNG sha256 与 facts 后 APPROVED。"
+  }
+}

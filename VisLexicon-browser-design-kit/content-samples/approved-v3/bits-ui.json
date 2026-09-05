@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 3,
+  "entryId": "bits-ui",
+  "entityId": "entity-bits-ui",
+  "attemptId": "swarm-curator-batch-e-bits-ui-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://www.bits-ui.com/",
+    "finalUrl": "https://www.bits-ui.com/",
+    "checkedAt": "2026-09-06T04:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Bits UI",
+    "descriptionZh": "Hunter Johnston 维护的 Svelte 无样式无障碍原语库，文档站 bits-ui.com 提供安装、组件 API 与示例；npm 包 bits-ui 采用 MIT 许可，可自带样式搭建组件库。",
+    "takeawayZh": "无样式 Svelte 原语，自己画皮",
+    "noteZh": "我们打开首页，标题写 Svelte 无样式组件。文档左侧从 Accordion 往下排。点开 Accordion：问句可折叠，底下是 bits-ui 的 import。适合在 Svelte 里自绘设计系统的人。仓库 MIT。Dialog 页被赞助图挡住，改用手风琴。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-bits-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页与文档 Introduction 把 Bits UI 定义为 Flexible, unstyled, and accessible primitives，面向 Svelte，并声明 Bring Your Own Styles。",
+        "evidenceUrl": "https://www.bits-ui.com/docs"
+      },
+      {
+        "statement": "Accordion 单项页同时给出可折叠演示和 import { Accordion } from \"bits-ui\" 源码，证明交付物是无样式原语。",
+        "evidenceUrl": "https://www.bits-ui.com/docs/components/accordion"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-e",
+    "reviewerId": "swarm-reviewer-grok-e2",
+    "confirmedAt": "2026-09-06T16:45:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.bits-ui.com/",
+      "finalUrl": "https://www.bits-ui.com/",
+      "title": "Bits UI",
+      "selectionRationale": "先看首页。Svelte 无样式组件这句把对象说完。",
+      "shot": {
+        "src": "/shots/bits-ui/v2-identity.png",
+        "sha256": "c24f89037c1c4b83652f8c5cc669383946c9e274e54e7683abe01e45eb5496c1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 83456,
+        "alt": "Bits UI 首页大标题 The headless components for Svelte，按钮 Start building，下方空调与计时器演示卡片"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.bits-ui.com/docs",
+      "finalUrl": "https://www.bits-ui.com/docs",
+      "title": "Introduction - Bits UI",
+      "selectionRationale": "再翻文档首页。左侧组件栏能看见原语有多少。",
+      "shot": {
+        "src": "/shots/bits-ui/v2-breadth.png",
+        "sha256": "74352f210cda0a560550e77048d930a05a2d54f1ce7dd920e21cc7a1ec09abbb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 142966,
+        "alt": "Bits UI Introduction 文档，左侧 COMPONENTS 列出 Accordion 到 Context Menu，正文写 headless component library for Svelte"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.bits-ui.com/docs/components/accordion",
+      "finalUrl": "https://www.bits-ui.com/docs/components/accordion",
+      "title": "Accordion - Bits UI",
+      "selectionRationale": "最后开 Accordion。问句能折，底下就是 import。",
+      "shot": {
+        "src": "/shots/bits-ui/v2-proof.png",
+        "sha256": "18d05aac7fd225bd80ee28637a810a080eeedf5c4cdc6dba0a46f5ecde099959",
+        "width": 1280,
+        "height": 900,
+        "bytes": 133884,
+        "alt": "Bits UI Accordion 文档：三条可折叠问句演示，下方 app.svelte 中 import { Accordion } from bits-ui"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Hunter Johnston",
+      "sourceUrl": "https://www.bits-ui.com/docs",
+      "evidence": "Introduction 页 Community 节写 Bits UI was built and is maintained by Hunter Johnston。仓库 LICENSE 写 Copyright (c) 2024 Hunter Johnston <https://github.com/huntabyte>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/huntabyte/bits-ui",
+      "evidence": "官方仓库位于个人账号 huntabyte/bits-ui，未见独立公司或 GitHub 组织作为发布主体。文档提到设计支持来自 Pavel Stianko 与 Bitworks Studio，那是协作关系，不是仓库所有者。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/huntabyte/bits-ui",
+      "sourceUrl": "https://www.bits-ui.com/docs",
+      "evidence": "Introduction 页 Found an issue? Open one 链到 https://github.com/huntabyte/bits-ui/issues/new。仓库 README 回链 https://bits-ui.com/docs。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/huntabyte/bits-ui/blob/main/LICENSE",
+      "evidence": "LICENSE 文件以 MIT License 开头，版权行为 Hunter Johnston、Pavel Stianko、CokaKoala。README 写 Published under the MIT license。许可覆盖该仓库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.bits-ui.com/docs/getting-started",
+      "evidence": "Getting Started 页给出 npm install bits-ui，文档与组件可公开浏览，未见付费墙或订阅套餐。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-e",
+    "technicalPassed": true,
+    "reviewerId": "swarm-reviewer-grok-e2"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-e 进站起草。Dialog 页截到赞助 GitHub 图形，proof 改用 Accordion。 swarm-reviewer-grok-e2 复核三页活页、三张 PNG sha256 与 facts 后 APPROVED。"
+  }
+}

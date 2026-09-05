@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "entryId": "flowbite",
+  "entityId": "entity-flowbite",
+  "attemptId": "swarm-curator-batch-e-flowbite-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://flowbite.com/",
+    "finalUrl": "https://flowbite.com/",
+    "checkedAt": "2026-09-06T04:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Flowbite",
+    "descriptionZh": "Themesberg（Bergside Inc.）维护的 Tailwind CSS 交互组件库，核心源码采用 MIT 许可，文档代码另标 CC BY 3.0；官网另售 Flowbite Pro 区块与 Figma 设计文件。",
+    "takeawayZh": "复制 Tailwind 组件，核心库 MIT 免费",
+    "noteZh": "我们打开入门页，它自称开源 Tailwind 组件库，左侧是 React、Vue 接入。再翻手风琴页，组件栏从 Accordion 往下排。最后开按钮页：Default 到 Dark 一排预览，底下是可复制 HTML。适合要现成片段的人。核心库 MIT 免费；Pro 走 EULA，别混成一回事。",
+    "pricing": "Core flowbite npm package is MIT and free; Flowbite Pro is a paid EULA product"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-flowbite",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "入门页把 Flowbite 定义为基于 Tailwind CSS 的开源交互 UI 组件库，并给出 npm install flowbite 与 @plugin 接入步骤。",
+        "evidenceUrl": "https://flowbite.com/docs/getting-started/introduction/"
+      },
+      {
+        "statement": "按钮单项页同时给出 Default 到 Dark 预览和可复制 HTML class，证明交付物是可拿走的组件源码而不是纯规范。",
+        "evidenceUrl": "https://flowbite.com/docs/components/buttons/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-e",
+    "reviewerId": "swarm-reviewer-grok-e2",
+    "confirmedAt": "2026-09-06T16:45:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "preview",
+      "learn",
+      "purchase"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "tailwind",
+      "css",
+      "javascript",
+      "typescript",
+      "react",
+      "vue",
+      "svelte",
+      "angular"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://flowbite.com/docs/getting-started/introduction/",
+      "finalUrl": "https://flowbite.com/docs/getting-started/introduction/",
+      "title": "Flowbite - Tailwind CSS component library",
+      "selectionRationale": "先看入门页。它把开源 Tailwind 组件库说清楚。",
+      "shot": {
+        "src": "/shots/flowbite/v2-identity.png",
+        "sha256": "d8ff46d033540aab0ba54a3aee72d99b09f9a3e546fdc8794a8b482328e6f282",
+        "width": 1280,
+        "height": 900,
+        "bytes": 482456,
+        "alt": "Flowbite 入门页标题 Tailwind CSS component library，左侧 Getting Started 与 React Vue Svelte 接入，右下角有 Google Cloud 广告"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://flowbite.com/docs/components/accordion/",
+      "finalUrl": "https://flowbite.com/docs/components/accordion/",
+      "title": "Tailwind CSS Accordion - Flowbite",
+      "selectionRationale": "再翻手风琴页。左侧组件栏能看见目录有多长。",
+      "shot": {
+        "src": "/shots/flowbite/v2-breadth.png",
+        "sha256": "e6180c2074f453c76b12faf87f167578f1a6023185dd4b996c22ef97f76c0a9a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 248057,
+        "alt": "Flowbite Accordion 文档页，左侧 COMPONENTS 列出 Accordion 到 Chat Bubble，正文写 data-accordion 用法"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://flowbite.com/docs/components/buttons/",
+      "finalUrl": "https://flowbite.com/docs/components/buttons/",
+      "title": "Tailwind CSS Buttons - Flowbite",
+      "selectionRationale": "最后开按钮页。预览和可复制 HTML 在一起。",
+      "shot": {
+        "src": "/shots/flowbite/v2-proof.png",
+        "sha256": "acc1034a05446aeb4d8cfd6d59cafdee4b80cea0e2de73fe47f9f8b8afec0557",
+        "width": 1280,
+        "height": 900,
+        "bytes": 238072,
+        "alt": "Flowbite 按钮页 Default Secondary Tertiary Success Danger Warning Dark 预览，下方 HTML 源码可复制"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Zoltán Szőgyényi and Robert Tanislav",
+      "sourceUrl": "https://flowbite.com/docs/getting-started/introduction/",
+      "evidence": "入门页 Authors 节列出 Zoltán Szőgyényi (web developer) 与 Robert Tanislav (web designer)。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Themesberg (Bergside Inc.)",
+      "sourceUrl": "https://flowbite.com/docs/getting-started/license/",
+      "evidence": "许可页 Copyright 节写 The Flowbite name and logos are trademarks of Bergside Inc.；Released code 节写 Copyright (c) Themesberg (Bergside Inc.)。仓库由 GitHub 组织 themesberg 维护。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/themesberg/flowbite",
+      "sourceUrl": "https://flowbite.com/docs/getting-started/introduction/",
+      "evidence": "入门页 Contributions 节写 Please reach out to us via the official Github repository，链到 https://github.com/themesberg/flowbite。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://flowbite.com/docs/getting-started/license/",
+      "evidence": "许可页 Released code 节写 The released code is licensed under the MIT license，并给出 Copyright (c) Themesberg (Bergside Inc.) 全文。同一页写文档代码为 CC BY 3.0，Pro version 走网站 EULA。MIT 只覆盖发布的库源码，不覆盖文档与 Pro。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core library MIT and free; Flowbite Pro is paid under EULA",
+      "sourceUrl": "https://flowbite.com/docs/getting-started/introduction/",
+      "evidence": "入门页 Licensing 节写 The library of components from Flowbite is open source under the MIT License。许可页 Pro version 节写 The pro version is licensed under the EULA from our website。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-e",
+    "technicalPassed": true,
+    "reviewerId": "swarm-reviewer-grok-e2"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-e 进站起草。首页 fetch 为空，身份页改用入门文档。截图右下角有 Carbon 广告，正文仍可读。 swarm-reviewer-grok-e2 复核三页活页、三张 PNG sha256 与 facts 后 APPROVED。"
+  }
+}

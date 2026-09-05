@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T17:44:45.943Z",
+  "entryId": "primer",
+  "entityId": "entity-primer",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "primer.style",
+  "official": {
+    "inputUrl": "https://primer.style/",
+    "finalUrl": "https://primer.style/",
+    "checkedAt": "2026-09-06T04:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Primer",
+    "descriptionZh": "GitHub 的设计系统站点，入口覆盖 Product UI、Brand UI、Octicons 与无障碍基础；配套 React 实现 primer/react 采用 MIT 许可，版权署 GitHub, Inc。",
+    "takeawayZh": "按 GitHub 产品界面规范做组件",
+    "noteZh": "我们打开首页，写 GitHub 的设计系统。Components 页从 ActionBar 开始排。点开 Button：React 标 Ready，底下有 Activate 预览。适合要对齐 GitHub 产品界面的人。primer/react 仓库 MIT。Brand UI 是兄弟入口，这条只收 Product UI。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Primer 定义为 The design system for GitHub，并分出 Product UI、Brand toolkit、Brand UI、Accessibility、Octicons 与 Primitives。",
+        "evidenceUrl": "https://primer.style/"
+      },
+      {
+        "statement": "Product UI Components 目录列出 ActionBar 到 UnderlinePanels；Button 页同时给出 React 预览、Rails 文档和 Figma 链接，证明是可实现的完整套件。",
+        "evidenceUrl": "https://primer.style/product/components"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library",
+      "icon",
+      "design-file"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "preview",
+      "install"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "css",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://primer.style/",
+      "finalUrl": "https://primer.style/",
+      "title": "Primer",
+      "selectionRationale": "先看首页。GitHub 设计系统和 Product UI 卡片在一起。",
+      "shot": {
+        "src": "/shots/primer/v2-identity.png",
+        "sha256": "4b4fe072635a17d1309fd5f28f8996c6437b8e46522b929ef2478726b2f35145",
+        "width": 1280,
+        "height": 900,
+        "bytes": 164462,
+        "alt": "Primer 首页标题 The design system for GitHub，左侧 Product UI 卡片，右侧 Brand toolkit 与 Mona 插画"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://primer.style/product/components",
+      "finalUrl": "https://primer.style/product/components",
+      "title": "Components | Primer",
+      "selectionRationale": "再翻组件目录。ActionBar 两张大卡后面还有一长串。",
+      "shot": {
+        "src": "/shots/primer/v2-breadth.png",
+        "sha256": "bd0c33bfe337bac4e90d0a4448ab60b0d5d3894251aba642bc3d63b8f2d014ac",
+        "width": 1280,
+        "height": 900,
+        "bytes": 147192,
+        "alt": "Primer Product UI Components 页，ActionBar 与 ActionList 卡片带预览，左侧 Getting Started 与 Primitives 导航"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://primer.style/product/components/button",
+      "finalUrl": "https://primer.style/product/components/button",
+      "title": "Button | Primer",
+      "selectionRationale": "最后开 Button。React 标 Ready，Activate 就在页上。",
+      "shot": {
+        "src": "/shots/primer/v2-proof.png",
+        "sha256": "068d7237b57d457f02892c0e36706c74b0c826051ac554b3fe738d1f723f4d39",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86843,
+        "alt": "Primer Button 页：React Rails Figma 三张资源卡，React examples Default 下有 Activate 按钮预览"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "GitHub, Inc.",
+      "sourceUrl": "https://github.com/primer/react/blob/main/LICENSE",
+      "evidence": "primer/react LICENSE 写 MIT License，Copyright (c) 2018 GitHub, Inc.。站点首页写 The design system for GitHub。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "GitHub",
+      "sourceUrl": "https://primer.style/",
+      "evidence": "首页标题 The design system for GitHub。组件与文档仓库由 GitHub 组织 primer 维护。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/primer/react",
+      "sourceUrl": "https://primer.style/product/components/button",
+      "evidence": "Button 页 React Source 链到 https://github.com/primer/react/tree/main/packages/react/src/Button。站点文档另有 primer/primer-docs。本条以 Product UI 的 React 实现仓为仓库事实。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/primer/react/blob/main/LICENSE",
+      "evidence": "primer/react LICENSE 以 MIT License 开头，Copyright (c) 2018 GitHub, Inc.。许可覆盖该 React 实现源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://primer.style/",
+      "evidence": "设计系统站点、组件文档与 primer/react 仓库公开可浏览，未见付费墙。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/primer.md",
+  "registryUrl": "/r/primer.json"
+}

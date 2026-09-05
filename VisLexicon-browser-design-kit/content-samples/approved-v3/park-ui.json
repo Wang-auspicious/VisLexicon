@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 3,
+  "entryId": "park-ui",
+  "entityId": "entity-park-ui",
+  "attemptId": "swarm-curator-batch-e-park-ui-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://park-ui.com/",
+    "finalUrl": "https://park-ui.com/",
+    "checkedAt": "2026-09-06T04:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Park UI",
+    "descriptionZh": "Chakra 组织下由 Christian Busch 发起的开源组件与代码分发站，基于 Ark UI 与 Panda CSS，用 CLI 或文档把组件源码装进项目；仓库 MIT，页脚署 Chakra Systems。",
+    "takeawayZh": "把带样式组件源码装进你的仓库",
+    "noteZh": "我们打开首页，标题写自绘设计系统，旁边是注册表和通知开关。文档总览超时，改看 GitHub：components 和 packages 并排，侧栏 MIT。按钮页有预览和 CLI 安装命令。适合想把代码握在手里的人。首页月费数字是演示卡片，不是定价。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-park-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "文档 Introduction 把 Park UI 定义为用 Panda CSS 构建、把组件源码经 CLI 或文档分发进项目的组件系统，而不是 npm 黑盒依赖。",
+        "evidenceUrl": "https://park-ui.com/docs"
+      },
+      {
+        "statement": "Button 页给出实时预览、npx @park-ui/cli add button 和可复制的 React 实现，证明交付物是可装走的带样式组件。",
+        "evidenceUrl": "https://park-ui.com/docs/components/button"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-e",
+    "reviewerId": "swarm-reviewer-grok-e2",
+    "confirmedAt": "2026-09-06T16:45:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "css",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://park-ui.com/",
+      "finalUrl": "https://park-ui.com/",
+      "title": "Home | Park UI",
+      "selectionRationale": "先看首页。标题和拼好的表单卡片把定位说完。",
+      "shot": {
+        "src": "/shots/park-ui/v2-identity.png",
+        "sha256": "0e5f7848d7cd18bdbf3d1ff7cfc0809b2524aed4596678dfe163fd0a5420249c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 175608,
+        "alt": "Park UI 首页大标题 Build your own Design System，右侧 Sign Up 与 Notifications 组件示例，页脚 © 2025 Chakra Systems"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/chakra-ui/park-ui",
+      "finalUrl": "https://github.com/chakra-ui/park-ui",
+      "title": "GitHub - chakra-ui/park-ui: Beautifully designed components built with Ark UI and Panda CSS that work with a variety of JS frameworks.",
+      "selectionRationale": "再翻 GitHub。文档超时，仓库目录和 MIT 并排。",
+      "shot": {
+        "src": "/shots/park-ui/v2-breadth.png",
+        "sha256": "769c7d1f3c44c02b1f26076108e3a65a625474049b5a4b4626398e3566056cdc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 138599,
+        "alt": "GitHub chakra-ui/park-ui 仓库页，列出 components packages website，侧栏 MIT license 与 park-ui.com"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://park-ui.com/docs/components/button",
+      "finalUrl": "https://park-ui.com/docs/components/button",
+      "title": "Button | Park UI",
+      "selectionRationale": "最后开按钮页。预览和 CLI 安装命令在同一屏。",
+      "shot": {
+        "src": "/shots/park-ui/v2-proof.png",
+        "sha256": "38bcda877aefbe0c816399ef037338e53bf8a662726db82423f97380c38950bb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 70921,
+        "alt": "Park UI Button 文档：Park UI 按钮预览、npx @park-ui/cli add button 与 import { Button } 用法"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Christian Busch",
+      "sourceUrl": "https://park-ui.com/docs/about",
+      "evidence": "About 页 Creator 节写 https://park-ui.com is a project by grizzly_codes。加入 Chakra 的博文写 Park UI was created by Christian Busch (@grizzly_codes)。LICENSE 版权行为 Copyright (c) 2025 cschroeter。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Chakra Systems / Chakra UI",
+      "sourceUrl": "https://park-ui.com/",
+      "evidence": "首页页脚写 © 2025 Chakra Systems. All rights reserved。仓库现属 GitHub 组织 chakra-ui，路径 https://github.com/chakra-ui/park-ui。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/chakra-ui/park-ui",
+      "sourceUrl": "https://park-ui.com/",
+      "evidence": "首页导航 GitHub 图标链到 https://github.com/chakra-ui/park-ui。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/chakra-ui/park-ui/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 以 MIT License 开头，Copyright (c) 2025 cschroeter。About 页 License 节写 MIT © grizzly_codes。许可覆盖该仓库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://park-ui.com/docs",
+      "evidence": "Introduction 页说明用 CLI 或文档复制组件源码，未见付费墙。About 页写 MIT。首页 Starter Plan $19/month 卡片是组件演示，不是站方套餐。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-e",
+    "technicalPassed": true,
+    "reviewerId": "swarm-reviewer-grok-e2"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-e 进站起草。park-ui.com/docs 截图两次超时，breadth 改用 GitHub 仓库。 swarm-reviewer-grok-e2 复核三页活页、三张 PNG sha256 与 facts 后 APPROVED。"
+  }
+}

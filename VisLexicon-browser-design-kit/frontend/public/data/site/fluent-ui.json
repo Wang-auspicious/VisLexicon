@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T17:44:45.943Z",
+  "entryId": "fluent-ui",
+  "entityId": "entity-fluent-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "fluent2.microsoft.design",
+  "official": {
+    "inputUrl": "https://fluent2.microsoft.design/",
+    "finalUrl": "https://fluent2.microsoft.design/",
+    "checkedAt": "2026-09-06T04:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Fluent 2 Design System",
+    "descriptionZh": "Microsoft 的 Fluent 2 设计系统文档站，覆盖 Web、iOS、Android、Windows 的组件用法与 Figma 资源；配套开源实现 microsoft/fluentui 采用 MIT 许可，字体与图标另有资产条款。",
+    "takeawayZh": "先看 Web 按钮怎么写，再去装 React",
+    "noteZh": "我们打开首页，欢迎语下面是 Design 与 Develop。Web overview 侧栏列出 Accordion 到 Button，并链到 React Storybook。Button 页有 Example 预览。适合要对齐 Microsoft 产品界面的人。库源码 MIT；字体图标另有资产条款。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Fluent 2 拆成 Design（Figma UI kits）与 Develop（安装与工具），并按 Web、iOS、Android、Windows 提供组件入口，是完整设计系统套件而不是单库文档。",
+        "evidenceUrl": "https://fluent2.microsoft.design/"
+      },
+      {
+        "statement": "Web overview 列出 Accordion 到 Tree 等组件，并链到 Fluent UI React v9 与 Web Components Storybook；Button 页给出用法、预览和跨平台资源。",
+        "evidenceUrl": "https://fluent2.microsoft.design/components/web/react"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library",
+      "design-file"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "preview",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android",
+      "desktop",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "web-components",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://fluent2.microsoft.design/",
+      "finalUrl": "https://fluent2.microsoft.design/",
+      "title": "Home - Fluent 2 Design System",
+      "selectionRationale": "先看首页。Design 和 Develop 两张入口把边界画出来。",
+      "shot": {
+        "src": "/shots/fluent-ui/v2-identity.png",
+        "sha256": "2c887226429e163d63bc66f52daf39f4adb5423ba374831a812dd93df1260c10",
+        "width": 1280,
+        "height": 900,
+        "bytes": 375295,
+        "alt": "Fluent 2 首页 WELCOME TO Fluent 2 Let the {ideas} flow，下方 Design 与 Develop 入口卡片"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://fluent2.microsoft.design/components/web/react",
+      "finalUrl": "https://fluent2.microsoft.design/components/web/react",
+      "title": "React Overview - Fluent 2 Design System",
+      "selectionRationale": "再翻 Web overview。侧栏列出组件，并链到 Storybook。",
+      "shot": {
+        "src": "/shots/fluent-ui/v2-breadth.png",
+        "sha256": "ac5145020c3b762a25c2b7dbfc03c3a7d994c3bd86806e0790d890971ebc43e5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 93379,
+        "alt": "Fluent 2 Web overview：Resources 链到 Figma 与 React v9 Storybook，侧栏 Components 列出 Accordion Avatar Button"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+      "finalUrl": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+      "title": "React Button - Fluent 2 Design System",
+      "selectionRationale": "最后开 Button。Example 预览写在同一页。",
+      "shot": {
+        "src": "/shots/fluent-ui/v2-proof.png",
+        "sha256": "cedf8c45726a5c07f958580e5d4773ff6fd1a028f13a2390f73ef87321cafcf8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78188,
+        "alt": "Fluent 2 Button 用法页：标题 A button triggers a single action or event，中间 Example 预览，下方 React 与 Web Components Storybook 卡片"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Microsoft Corporation",
+      "sourceUrl": "https://github.com/microsoft/fluentui/blob/master/LICENSE",
+      "evidence": "官方仓库 LICENSE 写 Copyright (c) Microsoft Corporation. 站点 fluent2.microsoft.design 由 Microsoft 发布。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Microsoft",
+      "sourceUrl": "https://fluent2.microsoft.design/",
+      "evidence": "站点域名为 fluent2.microsoft.design，导航含 Employee sign-in。配套实现仓库由 GitHub 组织 microsoft 维护。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/microsoft/fluentui",
+      "sourceUrl": "https://fluent2.microsoft.design/components/web/react",
+      "evidence": "Web overview Resources 链到 Fluent UI React v9 Component storybook（react.fluentui.dev）。该 Storybook 对应 microsoft/fluentui 单仓。本条目分类的是设计系统文档站，仓库是配套开源实现。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/microsoft/fluentui/blob/master/LICENSE",
+      "evidence": "LICENSE 以 MIT License 开头，Copyright (c) Microsoft Corporation。文末 NOTE: Usage of the fonts and icons referenced in Fluent UI React is subject to the terms listed at https://aka.ms/fluentui-assets-license。MIT 覆盖源码，不覆盖字体与图标资产。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://fluent2.microsoft.design/",
+      "evidence": "设计系统文档、Figma Community 资源与 microsoft/fluentui 源码均可公开访问，未见组件库订阅套餐。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/fluent-ui.md",
+  "registryUrl": "/r/fluent-ui.json"
+}

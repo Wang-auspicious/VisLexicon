@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 3,
+  "entryId": "rive",
+  "entityId": "entity-rive",
+  "attemptId": "swarm-curator-batch-f-rive-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://rive.app/",
+    "finalUrl": "https://rive.app/",
+    "checkedAt": "2026-09-05T16:52:00.000Z"
+  },
+  "editorial": {
+    "name": "Rive",
+    "descriptionZh": "Rive 的交互体验引擎，在编辑器里设计、做动画并写状态机，再用开源运行时装进 Web、iOS、Android 与游戏引擎。编辑器可免费创建；导出 .riv 上线从 Cadet 每月 9 美元/席位起。官方运行时 MIT。",
+    "takeawayZh": "在编辑器里做交互动画，运行时开源可装",
+    "noteZh": "我们进首页，大标题下面一排 Product UI、Game UI 卡片。Runtimes 页把 Web、iOS、Android、Unity 排成 logo 墙。GitHub rive-wasm 侧栏标 MIT，证明能装进网页。适合要交互动画且设计开发共用一份文件的人。编辑器可免费练；要导出上线，定价页从 Cadet 档起。",
+    "pricing": "Editor free to create; Cadet from $9/seat/mo to export and ship"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-rive",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "visual-implementation",
+        "subcategory": "motion-interaction-code"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "首页把 Rive 定义为在同一处设计、动画和写代码的交互体验引擎，而不是现成素材包。",
+        "evidenceUrl": "https://rive.app/"
+      },
+      {
+        "statement": "Runtimes 页列出 Web、iOS、Android、Unity 等开源库，用来在应用和游戏里加载并控制 .riv 文件。",
+        "evidenceUrl": "https://rive.app/runtimes"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-f",
+    "reviewerId": "swarm-reviewer-grok-f",
+    "confirmedAt": "2026-09-06T14:00:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "edit",
+      "prototype",
+      "install",
+      "export"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android",
+      "framer",
+      "webflow"
+    ],
+    "technologies": [
+      "react",
+      "react-native",
+      "flutter",
+      "javascript",
+      "webgl"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT",
+      "proprietary"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://rive.app/",
+      "finalUrl": "https://rive.app/",
+      "title": "Rive — the interactive experience engine",
+      "selectionRationale": "先看首页：大标题下面就是产品卡片。",
+      "shot": {
+        "src": "/shots/rive/v2-identity.png",
+        "sha256": "d76cb0461777de4e72ad5e741cff22bfcd28a17906c63028deec25efee222b64",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135880,
+        "alt": "Rive 首页黑底大标题 THE INTERACTIVE EXPERIENCE ENGINE，下方 Product UI、Game UI、Mobile Apps 卡片"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://rive.app/runtimes",
+      "finalUrl": "https://rive.app/runtimes",
+      "title": "Rive Runtimes",
+      "selectionRationale": "再翻 Runtimes：Web 到 Unity 的 logo 墙，写开源库可到处跑。",
+      "shot": {
+        "src": "/shots/rive/v2-breadth.png",
+        "sha256": "47d3f78f5b74032fb7f28c66a887f3faec2bc72fdbc067cfb11ff2a741159e28",
+        "width": 1280,
+        "height": 900,
+        "bytes": 76036,
+        "alt": "Rive Runtimes 页 RUN RIVE ANYWHERE，平台 logo 包括 Web、Apple、Unity、Android、Unreal"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/rive-app/rive-wasm",
+      "finalUrl": "https://github.com/rive-app/rive-wasm",
+      "title": "GitHub - rive-app/rive-wasm: Wasm/JS runtime for Rive",
+      "selectionRationale": "最后开 rive-wasm：侧栏 MIT，证明网页运行时可以装。",
+      "shot": {
+        "src": "/shots/rive/v2-proof.png",
+        "sha256": "0b991fc887a9156ab67a7da208964b85c9953229018d547a2a7ee2508d557fc5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 141837,
+        "alt": "GitHub rive-app/rive-wasm 仓库，About 写 Wasm/JS runtime for Rive，侧栏 MIT license"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "unknown",
+      "sourceUrl": "https://rive.app/",
+      "evidence": "首页与定价页以产品 Rive 自称，未在这三页列出个人创始人姓名，故记 unknown。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Rive",
+      "sourceUrl": "https://rive.app/",
+      "evidence": "首页品牌为 RIVE。运行时 LICENSE 版权行为 Copyright (c) 2020-2021 Rive。GitHub 组织为 rive-app。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/rive-app/rive-wasm",
+      "sourceUrl": "https://rive.app/docs/runtimes/getting-started",
+      "evidence": "运行时入门文档把 Web 运行时指向 GitHub rive-app/rive-wasm 与 npm @rive-app/canvas。这是官方 Web 运行时仓库之一，不是编辑器源码。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://rive.app/docs/runtimes/getting-started",
+      "evidence": "Getting Started 的 Licensing 节写 Our official runtimes are all open-source and licensed under the MIT License。rive-wasm LICENSE 为 MIT License，Copyright (c) 2020-2021 Rive。该 MIT 覆盖官方运行时，不覆盖 Rive Editor；编辑器为专有产品。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free to create; Cadet from $9/seat/mo to ship",
+      "sourceUrl": "https://rive.app/pricing",
+      "evidence": "定价页标题 Free to create / $9/mo to ship。Free 档 $0/seat/mo，可在编辑器学习，3 个协作文件。Cadet $9/seat/mo 含 Unlimited files 与 Export .riv files。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-f",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-f",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-f"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-f 进站起草。docs.rive.app 运行时入门页截图时连接断开，proof 改用 GitHub rive-wasm。status 仍 DRAFT。 swarm-reviewer-grok-f 复核活页、截图哈希与许可后 APPROVED。"
+  }
+}

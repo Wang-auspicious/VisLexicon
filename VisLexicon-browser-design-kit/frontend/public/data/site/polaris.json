@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T17:44:45.943Z",
+  "entryId": "polaris",
+  "entityId": "entity-polaris",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "shopify.dev",
+  "official": {
+    "inputUrl": "https://polaris.shopify.com/",
+    "finalUrl": "https://shopify.dev/docs/api/polaris",
+    "checkedAt": "2026-09-06T04:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Polaris",
+    "descriptionZh": "Shopify 统一 UI 框架的开发者文档入口，现托管在 shopify.dev；面向 App Home、Admin、Checkout、Customer accounts 与 POS 等应用表面的 Web Components。当前 Web Components 未开源，旧版 React 库已归档。",
+    "takeawayZh": "按 Shopify 后台规范写应用界面",
+    "noteZh": "我们打开 polaris.shopify.com，它跳到 shopify.dev。六张卡片把 App Home、Admin、Checkout 分开。组件目录用格子展示 Button。Button 页写 s-button。适合做 Shopify 应用的人。当前 Web Components 未开源，别把归档 React 库当成还在维护。",
+    "pricing": "Free to use in Shopify app surfaces; documentation is public",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Polaris references 页写 All app surfaces use Polaris, Shopify's unified UI framework built on web components，并按 App Home、Admin、Checkout、Customer accounts、POS 分入口。",
+        "evidenceUrl": "https://shopify.dev/docs/api/polaris"
+      },
+      {
+        "statement": "Admin Web components 目录按 Actions、Forms 等列出 Button 等到 Tooltip；Button 单项页给出 s-button 属性、用例和 HTML 示例。",
+        "evidenceUrl": "https://shopify.dev/docs/api/admin-extensions/latest/web-components"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce",
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "web-components",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "closed-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://polaris.shopify.com/",
+      "finalUrl": "https://shopify.dev/docs/api/polaris",
+      "title": "Polaris references",
+      "selectionRationale": "先看跳转后的入口。六张卡片把服务谁说清楚。",
+      "shot": {
+        "src": "/shots/polaris/v2-identity.png",
+        "sha256": "f4b206357e67dc30712201433069834c7be48121e8dcccdd33ca148d2c07790a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 85322,
+        "alt": "shopify.dev Polaris references 页，标题下写 unified UI framework built on web components，六张 App Home Admin Checkout POS 卡片"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://shopify.dev/docs/api/admin-extensions/latest/web-components",
+      "finalUrl": "https://shopify.dev/docs/api/admin-extensions/latest/web-components",
+      "title": "Web components",
+      "selectionRationale": "再翻组件目录。Button 到 Menu 一格格排开。",
+      "shot": {
+        "src": "/shots/polaris/v2-breadth.png",
+        "sha256": "edbbbe5c46e293e2a1affa2d7faddd431e30de91364c032cfac974b2bd6dd73b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 141678,
+        "alt": "Shopify Admin Web components 目录，Actions 分组下 Button Button group Clickable 等带预览的组件卡片"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://shopify.dev/docs/api/admin-extensions/latest/web-components/actions/button",
+      "finalUrl": "https://shopify.dev/docs/api/admin-extensions/latest/web-components/actions/button",
+      "title": "Button",
+      "selectionRationale": "最后开 Button。属性表和示例证明能装进扩展。",
+      "shot": {
+        "src": "/shots/polaris/v2-proof.png",
+        "sha256": "c0e15f7924a5765a8993514d08201422cbfa535aca3ed88b807a60fa51f50ea2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 155650,
+        "alt": "Shopify Polaris Button 文档：用途说明、Targets 48、Properties 中 disabled 与 icon 枚举"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Shopify Inc.",
+      "sourceUrl": "https://shopify.dev/docs/api/polaris",
+      "evidence": "Polaris references 页把 Polaris 定义为 Shopify's unified UI framework。归档 React 库 LICENSE 写 Copyright (c) 2017-present Shopify Inc.。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Shopify",
+      "sourceUrl": "https://shopify.dev/docs/api/polaris",
+      "evidence": "文档托管在 shopify.dev，文案写 All app surfaces use Polaris, Shopify's unified UI framework built on web components。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "unknown",
+      "sourceUrl": "https://community.shopify.dev/t/is-polaris-web-components-open-source/24921",
+      "evidence": "Shopify 开发者论坛 2025-11-05 回复写 Polaris Web Components It’s not open source。旧 React 实现已归档为 https://github.com/Shopify/polaris-react-archive，README 指向 shopify.dev/docs/api/polaris。当前 Web Components 未找到公开源码仓。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://community.shopify.dev/t/is-polaris-web-components-open-source/24921",
+      "evidence": "当前 Web Components 未开源，许可条款未在 shopify.dev 文档页写明 SPDX。归档的 polaris-react LICENSE.md 是带 Shopify 互操作限制的自定义 MIT，不代表现行 Web Components。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free to use in Shopify app surfaces; documentation is public",
+      "sourceUrl": "https://shopify.dev/docs/api/polaris",
+      "evidence": "Polaris references 与 Web components 文档公开可浏览，组件用于 Shopify 应用表面。未见独立的组件库订阅商品页。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "源码不公开，站上展示的实现不可直接取用。"
+    ],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/polaris.md",
+  "registryUrl": "/r/polaris.json"
+}

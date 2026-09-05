@@ -114,6 +114,34 @@ const VOICE = {
     lede: { zh: 'Tailwind Labs 出品的 MIT 图标。', en: 'MIT icons from Tailwind Labs.' },
     style: { zh: '浅色图标网格。线型与填色并置。', en: 'Light icon grid. Outline beside solid.' },
   },
+  'flowbite': {
+    lede: { zh: 'Tailwind 组件。文档即目录。', en: 'Tailwind components. Docs as catalog.' },
+    style: { zh: '浅色文档。中性灰。控件标本。', en: 'Light docs. Neutral gray. Control specimens.' },
+  },
+  'park-ui': {
+    lede: { zh: '多框架组件。Ark 原语加样式。', en: 'Multi-framework components. Ark primitives with style.' },
+    style: { zh: '浅色文档。品牌青。按钮标本。', en: 'Light docs. Brand teal. Button specimens.' },
+  },
+  'bits-ui': {
+    lede: { zh: 'Svelte 无样式无障碍原语。', en: 'Unstyled accessible primitives for Svelte.' },
+    style: { zh: '深色文档。代码与演示并置。', en: 'Dark docs. Code beside demo.' },
+  },
+  'fluent-ui': {
+    lede: { zh: 'Fluent 2 Web React 组件。', en: 'Fluent 2 Web React components.' },
+    style: { zh: '浅色企业文档。系统控件。圆角克制。', en: 'Light enterprise docs. System controls. Restrained radii.' },
+  },
+  'polaris': {
+    lede: { zh: 'Shopify 管理界面参考。Web Components。', en: 'Shopify admin interface reference. Web Components.' },
+    style: { zh: '浅色文档。绿色强调。管理后台密度。', en: 'Light docs. Green accent. Admin density.' },
+  },
+  'primer': {
+    lede: { zh: 'GitHub Primer 产品界面。', en: 'GitHub Primer product UI.' },
+    style: { zh: '浅色文档。中性。产品控件目录。', en: 'Light docs. Neutral. Product control catalog.' },
+  },
+  'nivo': {
+    lede: { zh: 'React 数据可视化。可配置图表。', en: 'React data visualization. Configurable charts.' },
+    style: { zh: '浅色图表画廊。标本式演示。', en: 'Light chart gallery. Specimen demos.' },
+  },
   'laws-of-ux': {
     lede: { zh: '界面心理学定律卡片。', en: 'UX psychology law cards.' },
     style: { zh: '浅色编辑式卡片。衬线标题。', en: 'Light editorial cards. Serif titles.' },

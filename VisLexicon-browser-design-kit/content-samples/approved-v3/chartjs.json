@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 3,
+  "entryId": "chartjs",
+  "entityId": "entity-chartjs",
+  "attemptId": "swarm-curator-batch-f-chartjs-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://www.chartjs.org/",
+    "finalUrl": "https://www.chartjs.org/",
+    "checkedAt": "2026-09-05T16:52:00.000Z"
+  },
+  "editorial": {
+    "name": "Chart.js",
+    "descriptionZh": "社区维护的开源 HTML5 Canvas 图表库，内置柱状、折线、饼图等类型，可用 npm 包 chart.js 安装。文档与 LICENSE 均标 MIT。",
+    "takeawayZh": "在 canvas 上画柱状图，配置即出图",
+    "noteZh": "我们进首页，粉字标题下面四个按钮。文档总览把图表类型、插件、canvas 渲染讲清楚。我们打开 Bar Chart：上面是柱状图，下面是 type bar 的 config。适合要 canvas 图表、按类型抄配置的人。MIT，社区维护，没有付费档。别把它当成 React 组件库，坐标轴要自己配。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-chartjs",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 Chart.js 定义为面向现代 Web 的开源 JavaScript 图表库，用 HTML5 Canvas 渲染，而不是 SVG 组件套件。",
+        "evidenceUrl": "https://www.chartjs.org/"
+      },
+      {
+        "statement": "Bar Chart 文档同时给出彩色柱状图预览和 type: 'bar' 的 config，证明可以按类型抄配置出图。",
+        "evidenceUrl": "https://www.chartjs.org/docs/latest/charts/bar.html"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-f",
+    "reviewerId": "swarm-reviewer-grok-f",
+    "confirmedAt": "2026-09-06T14:00:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "canvas",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.chartjs.org/",
+      "finalUrl": "https://www.chartjs.org/",
+      "title": "Chart.js | Open source HTML5 Charts for your website",
+      "selectionRationale": "先看首页：粉字 Chart.js，下面 Get Started 和 Samples。",
+      "shot": {
+        "src": "/shots/chartjs/v2-identity.png",
+        "sha256": "b3da1d655d967f4b2bc532607af8726d52336859a33fa28343466961c13d517c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 83368,
+        "alt": "Chart.js 首页粉字标题 Simple yet flexible JavaScript charting library，下方 Get Started、Samples、Ecosystem、GitHub 四钮"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.chartjs.org/docs/latest/",
+      "finalUrl": "https://www.chartjs.org/docs/latest/",
+      "title": "Chart.js | Chart.js",
+      "selectionRationale": "再翻文档总览：侧栏 Chart Types，正文讲 canvas 和 MIT。",
+      "shot": {
+        "src": "/shots/chartjs/v2-breadth.png",
+        "sha256": "368f2bba908f76746f892357c23b570dba76f36aef48c18b5dcc3fef35e1f239",
+        "width": 1280,
+        "height": 900,
+        "bytes": 93405,
+        "alt": "Chart.js 文档首页 Why Chart.js，左侧 Chart Types 与 Axes，正文写 MIT license"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.chartjs.org/docs/latest/charts/bar.html",
+      "finalUrl": "https://www.chartjs.org/docs/latest/charts/bar.html",
+      "title": "Bar Chart | Chart.js",
+      "selectionRationale": "最后开 Bar Chart：柱状图在上面，type bar 的 config 在下面。",
+      "shot": {
+        "src": "/shots/chartjs/v2-proof.png",
+        "sha256": "fd33d8ba16a44fda8745f71cd4b37a38331c3e89b8ce7a3c3602d331a16ea693",
+        "width": 1280,
+        "height": 900,
+        "bytes": 58584,
+        "alt": "Chart.js Bar Chart 页，彩色柱状图预览下方是 type: 'bar' 的 config 代码"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Chart.js Contributors",
+      "sourceUrl": "https://github.com/chartjs/Chart.js/blob/master/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2014-2024 Chart.js Contributors。文档写 It's open-source … and maintained by an active community。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Chart.js",
+      "sourceUrl": "https://www.chartjs.org/",
+      "evidence": "官网与 GitHub 组织均以 Chart.js / chartjs 为项目身份。文档标题 Chart.js。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/chartjs/Chart.js",
+      "sourceUrl": "https://www.chartjs.org/",
+      "evidence": "首页 GitHub 按钮链到 https://github.com/chartjs/Chart.js。package.json 的 repository.url 为 https://github.com/chartjs/Chart.js.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/chartjs/Chart.js/blob/master/LICENSE.md",
+      "evidence": "LICENSE.md 以 The MIT License (MIT) 开头，Copyright (c) 2014-2024 Chart.js Contributors。文档 Why Chart.js 写 licensed under the very permissive MIT license。package.json 的 license 字段为 MIT。该许可覆盖 Chart.js 仓库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.chartjs.org/docs/latest/",
+      "evidence": "文档写 It's open-source, licensed under the very permissive MIT license。文档与示例公开可读，未见付费墙。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-f",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-f",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-f"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-f 进站起草。status 仍 DRAFT，待独立复核。 swarm-reviewer-grok-f 复核活页、截图哈希与许可后 APPROVED。"
+  }
+}
