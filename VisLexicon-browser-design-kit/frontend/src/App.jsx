@@ -3,7 +3,9 @@ import { useRoute } from './router.js'
 import { loadStored } from './store.js'
 import GlobalSearch from './components/GlobalSearch.jsx'
 import ThemeToggle from './components/ThemeToggle.jsx'
+import LangToggle from './components/LangToggle.jsx'
 import SiteFooter from './components/SiteFooter.jsx'
+import { useT } from './i18n.js'
 import About from './views/About.jsx'
 
 /* 视图按路由分包：图鉴要载 1MB 语料，策展要载站点索引，
@@ -18,9 +20,9 @@ loadStored()
 /* 三个频道。旧版是四个（策展 / 图鉴 / 工具 / 提交）：
  * 工具降级成关于页里的一个演示，提交降级成页脚一个框（方案 §2.1）。 */
 const CHANNELS = [
-  { hash: '#/', labelZh: '策展', match: (name) => name === 'curation' || name === 'sites' || name === 'site' },
-  { hash: '#/atlas', labelZh: '图鉴', match: (name) => name === 'atlas' },
-  { hash: '#/about', labelZh: '关于', match: (name) => name === 'about' },
+  { hash: '#/', key: 'curation', match: (name) => name === 'curation' || name === 'sites' || name === 'site' },
+  { hash: '#/atlas', key: 'atlas', match: (name) => name === 'atlas' },
+  { hash: '#/about', key: 'about', match: (name) => name === 'about' },
 ]
 
 function NotFound({ hash }) {
@@ -45,11 +47,13 @@ function NotFound({ hash }) {
 }
 
 function RouteFallback() {
-  return <p className="route-loading" role="status">加载中…</p>
+  const t = useT()
+  return <p className="route-loading" role="status">{t('loading')}</p>
 }
 
 export default function App() {
   const route = useRoute()
+  const t = useT()
   const [menuOpen, setMenuOpen] = useState(false)
 
   /* 站点详情是叠层：底下继续渲染点进来的那个列表路由。
@@ -97,9 +101,9 @@ export default function App() {
 
   return (
     <div className="site" data-view={baseRoute}>
-      <a className="skip-link" href="#main-content">跳到主要内容</a>
+      <a className="skip-link" href="#main-content">{t('skip')}</a>
 
-      <nav className="nav" aria-label="全站导航" inert={overlayOpen}>
+      <nav className="nav" aria-label={t('nav')} inert={overlayOpen}>
         <div className="nav-left">
           <a className="nav-brand" href="#/" aria-label="VisLexicon 首页">VisLexicon</a>
           <div className="nav-links">
@@ -112,7 +116,7 @@ export default function App() {
                   href={channel.hash}
                   aria-current={active ? 'page' : undefined}
                 >
-                  {channel.labelZh}
+                  {t(channel.key)}
                 </a>
               )
             })}
@@ -121,11 +125,12 @@ export default function App() {
 
         <div className="nav-right">
           <GlobalSearch />
+          <LangToggle />
           <ThemeToggle />
           <button
             type="button"
             className={`nav-hamburger ${menuOpen ? 'open' : ''}`}
-            aria-label={menuOpen ? '关闭导航菜单' : '打开导航菜单'}
+            aria-label={menuOpen ? t('menuClose') : t('menuOpen')}
             aria-controls="mobile-menu"
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((open) => !open)}
@@ -147,7 +152,7 @@ export default function App() {
                 aria-current={active ? 'page' : undefined}
                 onClick={() => setMenuOpen(false)}
               >
-                {channel.labelZh}
+                {t(channel.key)}
               </a>
             )
           })}

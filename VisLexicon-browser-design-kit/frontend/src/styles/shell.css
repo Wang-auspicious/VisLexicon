@@ -235,6 +235,26 @@
   min-width: 0;
 }
 
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--vl-line);
+  border-radius: var(--vl-r-pill);
+  overflow: hidden;
+}
+.lang-opt {
+  min-width: 32px;
+  min-height: 28px;
+  padding: 0 8px;
+  color: var(--vl-ink-3);
+  font-size: var(--vl-fs-xs);
+  letter-spacing: 0.04em;
+}
+.lang-opt.on {
+  background: var(--vl-surface-sunk);
+  color: var(--vl-ink);
+}
+
 /* ---- 全站搜索 ---- */
 .gs { position: relative; display: flex; align-items: center; }
 

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
 import { buildSearchIndex, searchAll, siteHref, termHref } from '../lib/search-index.js'
 import { navigate } from '../router.js'
+import { useT } from '../i18n.js'
 
 /* ============ 顶栏全站搜索（方案 §3.6） ============
  * 全站唯一的搜索框，跨「图鉴术语」与「站点库」两份语料，结果分两组，
@@ -15,6 +16,7 @@ import { navigate } from '../router.js'
 const GROUP_LIMIT = 6
 
 export default function GlobalSearch() {
+  const t = useT()
   const [open, setOpen] = useState(false)      /* 移动端：搜索框是否展开 */
   const [keyword, setKeyword] = useState('')
   const [active, setActive] = useState(0)
@@ -203,13 +205,13 @@ export default function GlobalSearch() {
           type="text"
           className="gs-input"
           role="combobox"
-          aria-label="搜索站点与术语"
+          aria-label={t('search')}
           aria-expanded={listOpen}
           aria-controls={listId}
           aria-autocomplete="list"
           aria-activedescendant={activeId}
           autoComplete="off"
-          placeholder="搜站点与术语"
+          placeholder={t('search')}
           value={keyword}
           onFocus={ensureIndex}
           onChange={(event) => { setKeyword(event.target.value); setActive(0) }}

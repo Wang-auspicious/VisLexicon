@@ -1,72 +1,104 @@
+import { useState } from 'react'
+import { flushSync } from 'react-dom'
 import DomainMark from './DomainMark.jsx'
-import { pageRoleLabel } from '../lib/site-detail-labels.js'
+import { useT } from '../i18n.js'
 
 /**
- * 三张证据图（方案 §4.6 第 ② 段）。
- * 主角是 selectionRationale——「为什么选这一页」，不是图本身。
- * 每张图各有自己的 sourceUrl（L4），三条链接不共用一个地址。
+ * 三张页面预览：左侧主图 + 右侧上下两张。
+ * 点右侧图时，该图与主图互换位置（View Transition / 即时切换）。
+ * 简介只写在主图下方，用页面 title，不用导览句。
  */
 
-/* shot.alt 缺失时按 role 生成，避免三张图拿到同一个 alt（方案 §7.4 第 7 条）。 */
 function altFor(page, name) {
   if (page?.shot?.alt) return page.shot.alt
-  return `${name} 的${pageRoleLabel(page?.role)}页截图`
+  return `${name} 页面预览`
 }
 
-function EvidenceCard({ page, name, homepage }) {
+function captionFor(page) {
+  const title = typeof page?.title === 'string' ? page.title.trim() : ''
+  return title || null
+}
+
+function ShotFrame({ page, name, homepage, featured }) {
   const shot = page?.shot
-  const roleLabel = pageRoleLabel(page?.role)
+  const transitionName = page?.role ? `vl-shot-${page.role}` : undefined
   return (
-    <figure className="sd-ev">
-      <span className="sd-ev-role">{roleLabel}</span>
-      <div className="sd-ev-frame">
-        {shot?.src ? (
-          <img
-            src={shot.src}
-            alt={altFor(page, name)}
-            width={shot.width || undefined}
-            height={shot.height || undefined}
-            loading="lazy"
-            decoding="async"
-          />
-        ) : (
-          <div className="sd-ev-empty">
-            <DomainMark url={page?.sourceUrl || homepage} name={name} />
-            <span>该页面暂无法直接预览</span>
-          </div>
-        )}
-      </div>
-      <figcaption className="sd-ev-why">{page?.selectionRationale}</figcaption>
-      {page?.sourceUrl ? (
-        <a
-          className="sd-ev-link"
-          href={page.sourceUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`在新标签打开 ${name} 的${roleLabel}页原页`}
-        >
-          看原页 <span aria-hidden="true">↗</span>
-        </a>
-      ) : null}
-    </figure>
+    <div className={featured ? 'sd-ev-frame sd-ev-frame-hero' : 'sd-ev-frame'}>
+      {shot?.src ? (
+        <img
+          src={shot.src}
+          alt={altFor(page, name)}
+          width={shot.width || undefined}
+          height={shot.height || undefined}
+          loading={featured ? 'eager' : 'lazy'}
+          decoding="async"
+          style={transitionName ? { viewTransitionName: transitionName } : undefined}
+        />
+      ) : (
+        <div className="sd-ev-empty">
+          <DomainMark url={page?.sourceUrl || homepage} name={name} />
+          <span>该页面暂无法直接预览</span>
+        </div>
+      )}
+    </div>
   )
 }
 
 export default function EvidenceTrio({ pages, name, homepage }) {
+  const t = useT()
   const list = (pages ?? []).filter(Boolean)
+  const [heroIndex, setHeroIndex] = useState(0)
+
   if (list.length === 0) {
-    return <p className="sd-empty-note">这条记录没有登记证据页。</p>
+    return <p className="sd-empty-note">{t('noPreview')}</p>
   }
+
+  const safeHero = Math.min(heroIndex, list.length - 1)
+  const hero = list[safeHero]
+  const rest = list.filter((_, index) => index !== safeHero)
+  const caption = captionFor(hero)
+
+  const promote = (absoluteIndex) => {
+    if (absoluteIndex === safeHero) return
+    const reduce = typeof window !== 'undefined'
+      && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const start = typeof document !== 'undefined' ? document.startViewTransition : null
+    if (reduce || typeof start !== 'function') {
+      setHeroIndex(absoluteIndex)
+      return
+    }
+    start.call(document, () => {
+      flushSync(() => setHeroIndex(absoluteIndex))
+    })
+  }
+
   return (
-    <div className="sd-ev-row">
-      {list.map((page) => (
-        <EvidenceCard
-          key={page.sourceUrl || page.role}
-          page={page}
-          name={name}
-          homepage={homepage}
-        />
-      ))}
+    <div className="sd-ev-block">
+      <div className="sd-ev-stage">
+        <div className="sd-ev-hero">
+          <ShotFrame page={hero} name={name} homepage={homepage} featured />
+        </div>
+        {rest.length > 0 ? (
+          <div className="sd-ev-thumbs">
+            {rest.map((page) => {
+              const absoluteIndex = list.indexOf(page)
+              const label = captionFor(page) || altFor(page, name)
+              return (
+                <button
+                  type="button"
+                  className="sd-ev-thumb"
+                  key={page.sourceUrl || page.role || absoluteIndex}
+                  onClick={() => promote(absoluteIndex)}
+                  aria-label={`将「${label}」放到主预览`}
+                >
+                  <ShotFrame page={page} name={name} homepage={homepage} featured={false} />
+                </button>
+              )
+            })}
+          </div>
+        ) : null}
+      </div>
+      {caption ? <p className="sd-ev-cap">{caption}</p> : null}
     </div>
   )
 }

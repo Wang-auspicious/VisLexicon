@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { aspectFor, templateFor } from '../lib/site-card-template.js'
 import { valueLabel } from '../lib/facet-chips.js'
 import { formatCheckedAt, isModifiedClick, licenseValues, navigateTo } from '../lib/site-browser.js'
+import { useT, useLocale } from '../i18n.js'
+import { voiceText } from '../lib/entry-voice.js'
 
 /* 域名首字母块：主图缺失或加载失败时的替身。
  * WP-E 会把同名组件提到 components/DomainMark.jsx，本轮两个包各留一份最小实现，
@@ -53,12 +55,13 @@ export function LicenseMark({ item }) {
 
 /** 核验于：日期用等宽，前面一个方点——绿色全站只表示「已核验」这一件事。 */
 export function CheckedAt({ item, prefix = true }) {
+  const t = useT()
   const date = formatCheckedAt(item?.checkedAt)
   if (!date) return null
   return (
     <span className="vl-checked">
       <span className="vl-checked-dot" aria-hidden="true" />
-      {prefix ? <span className="vl-checked-label">核验于</span> : null}
+      {prefix ? <span className="vl-checked-label">{t('checked')}</span> : null}
       <time className="x-mono" dateTime={date}>{date}</time>
     </span>
   )
@@ -66,11 +69,14 @@ export function CheckedAt({ item, prefix = true }) {
 
 /** 一句「拿走什么」。没写就说没写，不用简介截断冒充（数据契约 takeawayZh 一栏）。 */
 export function Takeaway({ item }) {
-  const text = typeof item?.takeawayZh === 'string' ? item.takeawayZh.trim() : ''
+  const t = useT()
+  const locale = useLocale()
+  const voiced = voiceText(item?.entryId, 'lede', locale)
+  const text = voiced || (typeof item?.takeawayZh === 'string' ? item.takeawayZh.trim() : '')
   if (text) return <span className="vl-take">{text}</span>
   return (
     <span className="vl-take is-unwritten">
-      <span className="vl-unwritten">未写</span>
+      <span className="vl-unwritten">{t('unwritten')}</span>
     </span>
   )
 }

@@ -4,6 +4,7 @@ import { MANIFESTS } from '../stages/manifests.js'
 import { siteWideCounts } from '../lib/counts.js'
 import { formatCheckedAt, loadSiteIndex } from '../lib/site-browser.js'
 import SiteCard from '../components/SiteCard.jsx'
+import { useT, useLocale } from '../i18n.js'
 
 /* ============ 策展首页 ============
  * 策展就是罗列。首页 = 承诺句 + 一行真实数字 + 若干编辑分组的卡片墙。
@@ -19,6 +20,8 @@ function Num({ value }) {
 }
 
 export default function Curation() {
+  const t = useT()
+  const locale = useLocale()
   const [state, setState] = useState({ status: 'loading', index: null, error: null })
   const [atlas, setAtlas] = useState(null)
 
@@ -62,16 +65,16 @@ export default function Curation() {
   return (
     <div className="vl-curation">
       <section className="vl-promise" aria-labelledby="vl-promise-title">
-        <h1 className="vl-promise-title" id="vl-promise-title">同类的东西，摆在一起看。</h1>
+        <h1 className="vl-promise-title" id="vl-promise-title">{t('promise')}</h1>
         <p className="vl-promise-line">
           <span className="vl-promise-part">
-            <Num value={counts.approvedEntries} /> 个站点由人进站核验并独立复核
+            <Num value={counts.approvedEntries} /> {t('promiseSites')}
           </span>
           <span className="vl-promise-part">
-            <Num value={counts.atlasTermsOnStage} /> 条术语在 <Num value={counts.stages} /> 个活舞台上可调
+            <Num value={counts.atlasTermsOnStage} /> {t('promiseTerms')} <Num value={counts.stages} /> {t('promiseStages')}
           </span>
           <span className="vl-promise-part">
-            最近一次核验{' '}
+            {t('promiseChecked')}{' '}
             {checked ? (
               <time className="x-mono" dateTime={checked}>{checked}</time>
             ) : (
@@ -79,15 +82,15 @@ export default function Curation() {
             )}
           </span>
           <span className="vl-promise-part">
-            <a className="vl-quiet-link" href="#/about">数字口径<span aria-hidden="true"> →</span></a>
+            <a className="vl-quiet-link" href="#/about">{t('promiseCounts')}<span aria-hidden="true"> →</span></a>
           </span>
         </p>
       </section>
 
       {state.status === 'error' ? (
         <p className="vl-alert" role="alert">
-          站点数据没能加载出来，页面上的数字与分组暂时是空的。
-          <button type="button" onClick={() => window.location.reload()}>重试</button>
+          {t('loadFail')}
+          <button type="button" onClick={() => window.location.reload()}>{t('retry')}</button>
         </p>
       ) : null}
 
@@ -100,13 +103,14 @@ export default function Curation() {
               group={group}
               itemsById={itemsById}
               priority={index === 0}
+              locale={locale}
             />
           ))
         : null}
 
       <section className="vl-allsites-entry">
         <a className="vl-allsites-link" href="#/sites">
-          全部 <Num value={counts.approvedEntries} /> 个站点<span aria-hidden="true"> →</span>
+          {t('allSites')} <Num value={counts.approvedEntries} /><span aria-hidden="true"> →</span>
         </a>
         <p className="vl-allsites-note">
           默认按最近核验排序。收口用的切面条件在结果页出现，首页不放筛选器。
@@ -118,16 +122,18 @@ export default function Curation() {
 
 /* 一组 = 标题 + 一句说明 + 一排卡片。成员在语料里缺席就直接不渲染它，
  * 整组一个都没剩下就整组不出现——不留空壳。 */
-function CollectionGroup({ group, itemsById, priority = false }) {
+function CollectionGroup({ group, itemsById, priority = false, locale = 'zh' }) {
   const titleId = useId()
   const members = group.entryIds.map((id) => itemsById.get(id)).filter(Boolean)
   if (!members.length) return null
+  const title = locale === 'en' && group.titleEn ? group.titleEn : group.titleZh
+  const blurb = locale === 'en' && group.blurbEn ? group.blurbEn : group.blurbZh
 
   return (
     <section className="vl-group" aria-labelledby={titleId}>
       <header className="vl-group-head">
-        <h2 className="vl-group-title" id={titleId}>{group.titleZh}</h2>
-        <p className="vl-group-blurb">{group.blurbZh}</p>
+        <h2 className="vl-group-title" id={titleId}>{title}</h2>
+        <p className="vl-group-blurb">{blurb}</p>
       </header>
       <div className="vl-group-grid">
         {members.map((item, index) => (

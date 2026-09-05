@@ -12,9 +12,11 @@ import { useSyncExternalStore } from 'react'
  */
 
 const THEMES = ['system', 'light', 'dark']
+const LOCALES = ['zh', 'en']
 const STORAGE_KEY = 'vl-theme'
+const STORAGE_LOCALE = 'vl-locale'
 
-const state = { theme: 'system' }
+const state = { theme: 'system', locale: 'zh' }
 let snap = { ...state }
 const listeners = new Set()
 const emit = () => { snap = { ...state }; listeners.forEach((listener) => listener()) }
@@ -47,13 +49,30 @@ export function setTheme(theme) {
   emit()
 }
 
-export function loadStored() {
-  let stored = null
-  try { stored = localStorage.getItem(STORAGE_KEY) } catch { /* storage unavailable */ }
-  /* 旧版只存过 light / dark，没有 system；读不出合法值就回到跟随系统。 */
-  state.theme = THEMES.includes(stored) ? stored : 'system'
-  applyTheme(state.theme)
+function applyLocale(locale) {
+  if (typeof document === 'undefined') return
+  document.documentElement.lang = locale === 'en' ? 'en' : 'zh-CN'
+}
+
+export function setLocale(locale) {
+  if (!LOCALES.includes(locale)) return
+  state.locale = locale
+  applyLocale(locale)
+  try { localStorage.setItem(STORAGE_LOCALE, locale) } catch { /* ignore */ }
   emit()
 }
 
-export { THEMES }
+export function loadStored() {
+  let stored = null
+  let storedLocale = null
+  try { stored = localStorage.getItem(STORAGE_KEY) } catch { /* storage unavailable */ }
+  try { storedLocale = localStorage.getItem(STORAGE_LOCALE) } catch { /* ignore */ }
+  /* 旧版只存过 light / dark，没有 system；读不出合法值就回到跟随系统。 */
+  state.theme = THEMES.includes(stored) ? stored : 'system'
+  state.locale = LOCALES.includes(storedLocale) ? storedLocale : 'zh'
+  applyTheme(state.theme)
+  applyLocale(state.locale)
+  emit()
+}
+
+export { THEMES, LOCALES }

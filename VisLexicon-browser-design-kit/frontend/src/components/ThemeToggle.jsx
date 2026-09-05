@@ -1,4 +1,5 @@
 import { setTheme, useStore } from '../store.js'
+import { useT } from '../i18n.js'
 
 /* ============ 主题三态开关 ============
  * 跟随系统 / 浅 / 深。「跟随系统」写的不是 data-theme="system"，
@@ -10,18 +11,20 @@ import { setTheme, useStore } from '../store.js'
  */
 
 const OPTIONS = [
-  { value: 'system', labelZh: '跟随系统', glyph: '◐' },
-  { value: 'light', labelZh: '浅色', glyph: '○' },
-  { value: 'dark', labelZh: '深色', glyph: '●' },
+  { value: 'system', key: 'themeSystem', glyph: '◐' },
+  { value: 'light', key: 'themeLight', glyph: '○' },
+  { value: 'dark', key: 'themeDark', glyph: '●' },
 ]
 
 export default function ThemeToggle() {
   const { theme } = useStore()
+  const t = useT()
 
   return (
-    <div className="theme-toggle" role="radiogroup" aria-label="配色主题">
+    <div className="theme-toggle" role="radiogroup" aria-label={t('theme')}>
       {OPTIONS.map((option) => {
         const on = theme === option.value
+        const label = t(option.key)
         return (
           <button
             key={option.value}
@@ -29,11 +32,11 @@ export default function ThemeToggle() {
             role="radio"
             aria-checked={on}
             className={`theme-opt ${on ? 'on' : ''}`}
-            title={option.labelZh}
+            title={label}
             onClick={() => setTheme(option.value)}
           >
             <span aria-hidden="true">{option.glyph}</span>
-            <span className="sr-only">{option.labelZh}</span>
+            <span className="sr-only">{label}</span>
           </button>
         )
       })}
