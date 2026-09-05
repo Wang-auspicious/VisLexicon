@@ -1,0 +1,63 @@
+{
+  "lever": "lexicon",
+  "id": "dock",
+  "term_en": "Floating Dock",
+  "term_zh": "悬浮坞",
+  "axis": "layout",
+  "aliases": [
+    "dock",
+    "底部导航",
+    "macOS dock"
+  ],
+  "definition_zh": "悬浮于底边的图标坞，hover 放大。",
+  "notation": "L[dock] · pos:bottom · radius:999 · lift:pring",
+  "genes": [
+    {
+      "gene": "缩放",
+      "value": "就近放大 / 整体放大 + 邻位外扩"
+    },
+    {
+      "gene": "弹出",
+      "value": "正常 / spring 物理"
+    }
+  ],
+  "minimal_code": {
+    "css": ".dock{position:fixed;bottom:16px;border-radius:999px}\n.dock i:hover{transform:scale(1.3)}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "桌面端吸底会挤压内容区；适合工具型短导航而非长菜单。"
+  ],
+  "tech_notes": [
+    "fixed 底部 + 圆角胶囊容器；hover 邻位用 margin 微调防溢出。"
+  ],
+  "common_pairings": [
+    "spring"
+  ],
+  "related": [
+    "sidebar-shell"
+  ],
+  "wild": [
+    {
+      "what": "macOS Dock",
+      "source": "Apple 系统",
+      "note": "放大镜式 dock 的最高形态"
+    },
+    {
+      "what": "ig 移动端底部 dock",
+      "source": "Instagram",
+      "note": "移动端主导航的现代形态"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/dock/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/dock.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

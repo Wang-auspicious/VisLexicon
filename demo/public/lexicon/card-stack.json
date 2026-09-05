@@ -1,0 +1,63 @@
+{
+  "lever": "lexicon",
+  "id": "card-stack",
+  "term_en": "Card Stack",
+  "term_zh": "卡片堆叠",
+  "axis": "layout",
+  "aliases": [
+    "卡片叠放",
+    "deck",
+    " tinder 滑卡"
+  ],
+  "definition_zh": "多张卡片同位叠放，顶层滑走后露出下一张。",
+  "notation": "L[stack] · z:desc · scale:1-.05i · top:flyOut",
+  "genes": [
+    {
+      "gene": "层阶",
+      "value": "缩放/位移递减表达深度"
+    },
+    {
+      "gene": "顶层去向",
+      "value": "滑出/上抛/缩小回收"
+    }
+  ],
+  "minimal_code": {
+    "css": ".stack{position:relative}\n.card{position:absolute;inset:0;transform:scale(calc(1 - var(--i)*0.05))}\n.top{animation:flyOut .4s ease-in both}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "超过 3 层的可见堆叠会显乱；底层卡保持低对比即可。"
+  ],
+  "tech_notes": [
+    "绝对定位 + z 递减 + transform 递减；顶层交互结束再从 DOM 挪位。"
+  ],
+  "common_pairings": [
+    "spring"
+  ],
+  "related": [
+    "flip"
+  ],
+  "wild": [
+    {
+      "what": "Tinder 滑卡",
+      "source": "tinder.com",
+      "note": "卡片堆叠决策交互的原型"
+    },
+    {
+      "what": "各类闪卡记忆应用",
+      "source": "anki 类",
+      "note": "一屏一判断的注意力聚焦"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/card-stack/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/card-stack.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

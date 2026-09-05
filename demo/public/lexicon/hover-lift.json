@@ -1,0 +1,68 @@
+{
+  "lever": "lexicon",
+  "id": "hover-lift",
+  "term_en": "Hover Lift",
+  "term_zh": "悬浮抬升",
+  "axis": "interaction",
+  "aliases": [
+    "hover 浮起",
+    "抬升阴影",
+    "elevate on hover"
+  ],
+  "definition_zh": "hover 时卡片整体上移数像素并加深投影，模拟被拿起。",
+  "notation": "I[lift] · y:-4 · shadow:deepen · t:200ms",
+  "genes": [
+    {
+      "gene": "位移",
+      "value": "2–6px 够用，别飘"
+    },
+    {
+      "gene": "影子",
+      "value": "同步放大下移，别只动 translate"
+    }
+  ],
+  "minimal_code": {
+    "css": ".card{transition:transform .2s, box-shadow .2s}\n.card:hover{transform:translateY(-4px);\n  box-shadow:0 12px 24px -8px rgb(0 0 0/.25)}"
+  },
+  "params": [
+    {
+      "key": "lift",
+      "label": "抬升量",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "unit": "px",
+      "default": 4
+    }
+  ],
+  "anti_patterns": [
+    "整页所有卡都抬升等于没有抬升；只给可点击卡。"
+  ],
+  "tech_notes": [
+    "只动 transform/box-shadow 两个合成友好属性；时长 150–250ms。"
+  ],
+  "common_pairings": [
+    "spring"
+  ],
+  "related": [
+    "hover-tilt"
+  ],
+  "wild": [
+    {
+      "what": "Material Design 卡片",
+      "source": "m3.material.io",
+      "note": "海拔体系的官方范式"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/hover-lift/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/hover-lift.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

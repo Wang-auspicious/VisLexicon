@@ -1,0 +1,72 @@
+{
+  "lever": "lexicon",
+  "id": "neumorphism",
+  "term_en": "Neumorphism",
+  "term_zh": "新拟物",
+  "axis": "aesthetic",
+  "aliases": [
+    "软 UI",
+    "soft ui",
+    "凹凸拟物"
+  ],
+  "definition_zh": "同色背景上用双向内外阴影挤出浅浮雕，控件像从面板上长出来。",
+  "notation": "A[neu] · bg:same · dual:in/out · soft:16",
+  "genes": [
+    {
+      "gene": "同色底",
+      "value": "背景与控件同色是前提"
+    },
+    {
+      "gene": "双向影",
+      "value": "左上白光 + 右下深影"
+    },
+    {
+      "gene": "凹凸",
+      "value": "inset 反向阴影做按压态"
+    }
+  ],
+  "minimal_code": {
+    "css": ".neu{background:#e8ebf2;border-radius:16px;\n  box-shadow:8px 8px 16px #c9cedb,-8px -8px 16px #ffffff}"
+  },
+  "params": [
+    {
+      "key": "soft",
+      "label": "柔和度",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    }
+  ],
+  "anti_patterns": [
+    "对比度天生偏弱，正文按钮别用它；装饰控件才用。"
+  ],
+  "tech_notes": [
+    "阴影颜色取背景色的加深/提亮版本；按压态切 inset。"
+  ],
+  "common_pairings": [
+    "claymorphism"
+  ],
+  "related": [
+    "neo-brutalism"
+  ],
+  "wild": [
+    {
+      "what": "2020 一批音乐/智能家居概念稿",
+      "source": "dribbble",
+      "note": " soft UI 的黄金期"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/neumorphism/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/neumorphism.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

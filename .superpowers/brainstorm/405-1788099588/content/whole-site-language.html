@@ -1,0 +1,71 @@
+<style>
+  .direction-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:24px}
+  .direction{cursor:pointer;border:1px solid #ddd9d0;border-radius:20px;overflow:hidden;background:#fff;transition:.2s ease;box-shadow:0 8px 30px rgba(28,25,20,.05)}
+  .direction:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(28,25,20,.10)}
+  .direction.selected{outline:3px solid #5f54d8;outline-offset:3px}
+  .mini-browser{background:#efeee9;padding:10px;aspect-ratio:1.28;display:flex;flex-direction:column;gap:8px}
+  .mini-nav{height:30px;border-radius:10px;background:#fff;display:flex;align-items:center;padding:0 10px;gap:8px;font-size:8px;color:#8c897f}
+  .mini-nav b{font-size:10px;color:#171714;margin-right:auto}.mini-nav i{font-style:normal}
+  .mini-shell{flex:1;border-radius:14px;background:#fff;border:1px solid #e4e1d9;padding:8px;display:grid;gap:7px}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .gallery span{border-radius:8px;background:linear-gradient(145deg,#ecebe6,#fafaf8);border:1px solid #e0ded7;position:relative}
+  .gallery span:after{content:'';position:absolute;left:7px;right:7px;bottom:7px;height:12px;border-radius:5px;background:#e8f6ed}
+  .shared{grid-template-columns:28% 1fr}
+  .shared .rail{border-radius:8px;background:#f4f2ec;padding:5px;display:flex;flex-direction:column;gap:5px}
+  .shared .rail i{height:11px;border-radius:4px;background:#fff}
+  .shared .stage{display:grid;grid-template-rows:1fr 21px;gap:6px}
+  .shared .stage b{border-radius:9px;background:radial-gradient(circle at 60% 40%,#dfe4ff,#f5f4ee 60%);border:1px solid #e0ded6}
+  .shared .stage i{border-radius:6px;background:#f0eefb;border:1px solid #ddd9f4}
+  .dual{grid-template-columns:1.2fr .8fr;background:#171817;border-color:#262826}
+  .dual .art{border-radius:9px;background:linear-gradient(140deg,#f6f3e9 0 50%,#cbd7ff);position:relative;overflow:hidden}
+  .dual .art:after{content:'CURATED';position:absolute;left:8px;bottom:7px;font-size:7px;font-weight:700;color:#222}
+  .dual .lab{border-radius:9px;background:#242624;border:1px solid #343734;display:grid;gap:5px;padding:6px}
+  .dual .lab i{border-radius:4px;background:#333633}.dual .lab i:nth-child(2){background:#315b4b}
+  .direction-body{padding:16px 16px 18px}.direction-body h3{margin:0 0 7px;font-size:17px;color:#1c1b18}.direction-body p{margin:0;color:#6f6b63;font-size:13px;line-height:1.55}
+  .badge{display:inline-block;margin-top:12px;padding:4px 8px;border-radius:999px;background:#f1effd;color:#5851d8;font-size:11px;font-weight:700}
+  @media(max-width:900px){.direction-grid{grid-template-columns:1fr}}
+</style>
+
+<h2>整站应该“像一个产品”，还是“像几个相邻的空间”？</h2>
+<p class="subtitle">首页已确定为策展。这里决定策展、词典、解剖台、工具和提交是否共用同一种视觉语法。点击一个方向进行选择。</p>
+
+<div class="direction-grid">
+  <div class="direction" data-choice="a" onclick="toggleSelect(this)">
+    <div class="mini-browser">
+      <div class="mini-nav"><b>VisLexicon</b><i>策展</i><i>词典</i><i>工具</i><i>提交</i></div>
+      <div class="mini-shell shared">
+        <div class="rail"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="stage"><b></b><i></i></div>
+      </div>
+    </div>
+    <div class="direction-body">
+      <h3>A · 同一画布，不同仪器</h3>
+      <p>全站共用暖灰画布、极简顶栏、圆角底板和字体体系；策展是画廊，词典是标本册，工具是实验台。频道保留自己的最佳结构。</p>
+      <span class="badge">推荐 · 统一而不僵硬</span>
+    </div>
+  </div>
+
+  <div class="direction" data-choice="b" onclick="toggleSelect(this)">
+    <div class="mini-browser">
+      <div class="mini-nav"><b>VisLexicon</b><i>策展</i><i>词典</i><i>工具</i><i>提交</i></div>
+      <div class="mini-shell gallery"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="direction-body">
+      <h3>B · 全站 Oreo 卡片化</h3>
+      <p>所有频道都变成相同的大圆角卡片网格。品牌一致性最强，开发最快；但动效解剖台和测量工具可能被卡片语言束缚。</p>
+      <span class="badge">最统一 · 工具感较弱</span>
+    </div>
+  </div>
+
+  <div class="direction" data-choice="c" onclick="toggleSelect(this)">
+    <div class="mini-browser" style="background:#111211">
+      <div class="mini-nav" style="background:#f7f5ef"><b>VisLexicon</b><i>策展</i><i>词典</i><i>工具</i><i>提交</i></div>
+      <div class="mini-shell dual"><div class="art"></div><div class="lab"><i></i><i></i><i></i><i></i></div></div>
+    </div>
+    <div class="direction-body">
+      <h3>C · 画廊与实验室双空间</h3>
+      <p>策展使用温暖明亮的 Oreo 画廊；词典、解剖和工具切换为深色专业工作台。对比强烈、记忆点高，但整站容易产生割裂。</p>
+      <span class="badge">戏剧性强 · 品牌风险高</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+{
+  "lever": "lexicon",
+  "id": "glassmorphism",
+  "term_en": "Glassmorphism",
+  "term_zh": "毛玻璃拟态",
+  "axis": "aesthetic",
+  "aliases": [
+    "毛玻璃",
+    "磨砂玻璃",
+    "frosted glass",
+    "backdrop blur"
+  ],
+  "definition_zh": "半透明面板 + backdrop blur + 细描边，悬浮于彩色背景之上。",
+  "notation": "A[glass] · blur:14 · tint:255/.08 · edge:1/.14",
+  "genes": [
+    {
+      "gene": "模糊",
+      "value": "blur(14px) 决定虚实"
+    },
+    {
+      "gene": "着色",
+      "value": "低饱和白叠加"
+    },
+    {
+      "gene": "描边",
+      "value": "1px 半透明白描轮廓"
+    }
+  ],
+  "minimal_code": {
+    "css": ".glass{backdrop-filter:blur(14px);\n  background:rgb(255 255 255/.08);\n  border:1px solid rgb(255 255 255/.14);}"
+  },
+  "params": [
+    {
+      "key": "blur",
+      "label": "模糊半径",
+      "min": 4,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    }
+  ],
+  "anti_patterns": [
+    "背景平淡时玻璃感消失；压不住复杂背景就加渐变叠加。"
+  ],
+  "tech_notes": [
+    "backdrop-filter 有合成层开销；低端设备降级为深色半透明纯色。"
+  ],
+  "common_pairings": [
+    "aurora-gradient",
+    "bento-grid"
+  ],
+  "related": [
+    "claymorphism"
+  ],
+  "wild": [
+    {
+      "what": "Apple 控制中心 / 通知",
+      "source": "iOS",
+      "note": "backdrop blur 的祖师爷"
+    },
+    {
+      "what": "Windows Fluent 界面",
+      "source": "Win 11",
+      "note": "亚克力材质拟态"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/glassmorphism/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/glassmorphism.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

@@ -1,0 +1,62 @@
+{
+  "lever": "lexicon",
+  "id": "sidebar-shell",
+  "term_en": "Sidebar Shell",
+  "term_zh": "侧栏外壳",
+  "axis": "layout",
+  "aliases": [
+    "侧边栏",
+    "侧栏导航",
+    "app shell"
+  ],
+  "definition_zh": "定宽侧栏 + 自适应主区，工具型产品的标准外壳。",
+  "notation": "L[shell] · side:232 · main:1fr · nav:sticky",
+  "genes": [
+    {
+      "gene": "栏宽",
+      "value": "200–260px 定宽，图标态 64px"
+    },
+    {
+      "gene": "层级",
+      "value": "一级导航在侧栏，二级在主区顶栏"
+    },
+    {
+      "gene": "折叠",
+      "value": "可折叠为图标栏（rail）"
+    }
+  ],
+  "minimal_code": {
+    "css": ".shell{display:grid;grid-template-columns:232px 1fr}\n.side{border-inline-end:1px solid var(--line)}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "内容型站点别乱用侧栏——阅读场景要的是单一主轴。"
+  ],
+  "tech_notes": [
+    "sticky 侧栏 + 独立滚动主区；折叠动画只动 width 不动内容。"
+  ],
+  "common_pairings": [
+    "holy-grail"
+  ],
+  "related": [
+    "split-screen"
+  ],
+  "wild": [
+    {
+      "what": "Notion / Slack / Linear",
+      "source": "普遍",
+      "note": "生产力工具几乎全是这个外壳"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/sidebar-shell/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/sidebar-shell.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

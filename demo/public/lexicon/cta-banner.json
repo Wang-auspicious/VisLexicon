@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "cta-banner",
+  "term_en": "CTA Banner",
+  "term_zh": "行动号召横幅",
+  "axis": "component",
+  "aliases": [
+    "cta 区",
+    "结尾横幅",
+    "转化块"
+  ],
+  "definition_zh": "页尾前的最后一块高对比横幅：一句主张 + 一个按钮。",
+  "notation": "C[cta] · bg:ink-inverse · line:1 · btn:1",
+  "genes": [
+    {
+      "gene": "反色",
+      "value": "全页最深/最艳的色块"
+    },
+    {
+      "gene": "文案",
+      "value": "一句主张 + 一个动作，无第二选择"
+    }
+  ],
+  "minimal_code": {
+    "css": ".cta{background:var(--ink);color:#fff;\n  border-radius:20px;padding:48px;text-align:center}\n.cta .btn{background:#fff;color:var(--ink)}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "别在这里塞次级链接或社交图标，那是 footer 的事。"
+  ],
+  "tech_notes": [
+    "大圆角容器 + 反色；按钮对比度过 WCAG AA。"
+  ],
+  "common_pairings": [
+    "hero"
+  ],
+  "related": [
+    "footer"
+  ],
+  "wild": [
+    {
+      "what": "几乎所有 SaaS 页尾",
+      "source": "普遍",
+      "note": "转化收口的标准件"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/cta-banner/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/cta-banner.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

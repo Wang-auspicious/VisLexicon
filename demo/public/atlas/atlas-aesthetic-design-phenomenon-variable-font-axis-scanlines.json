@@ -1,0 +1,49 @@
+{
+  "termEn": "Variable font axis: Scanlines",
+  "termZh": "可变字体轴: 扫描线",
+  "definitionZh": "将形状分解为水平区段,整体宽度,字母间隔,或kerning没有任何变化,因此没有换行或页面布局变化. 负值使扫描线变薄,正值使其变厚.",
+  "sourceDefinition": "Break up shapes into horizontal segments without any changes in overall width, letter spacing, or kerning, so there are no line breaks or page layout changes. Negative values make the scanlines thinner, and positive values make them thicker.",
+  "axis": "aesthetic",
+  "recordType": "design-phenomenon",
+  "aliases": [
+    "SCAN",
+    "Scanlines"
+  ],
+  "scenes": [],
+  "mediaBindings": [
+    "font/opentype",
+    "web/css"
+  ],
+  "status": "candidate",
+  "countedAtlas": true,
+  "translationQuality": "machine",
+  "sourceEvidence": [
+    {
+      "sourceId": "google-fonts-axis-registry",
+      "sourceName": "Google Fonts Axis Registry",
+      "sourceRecordId": "axis-scan",
+      "url": "https://github.com/googlefonts/axisregistry/blob/c3bd6015d8c8f2a4c85f15226c631c72070c0e62/Lib/axisregistry/data/scanlines.textproto",
+      "sourcePath": "Lib/axisregistry/data/scanlines.textproto",
+      "sourceCategory": "variable-font-axis",
+      "sourceDefinition": "Break up shapes into horizontal segments without any changes in overall width, letter spacing, or kerning, so there are no line breaks or page layout changes. Negative values make the scanlines thinner, and positive values make them thicker.",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://github.com/googlefonts/axisregistry/blob/main/LICENSE.txt",
+      "retrievedAt": "2026-09-04",
+      "revision": "c3bd6015d8c8f2a4c85f15226c631c72070c0e62",
+      "sourceMetadata": {
+        "tag": "SCAN",
+        "minValue": -100,
+        "defaultValue": 0,
+        "maxValue": 100,
+        "precision": 0,
+        "fallbackOnly": false,
+        "aliases": [
+          "SCAN",
+          "Scanlines"
+        ],
+        "registryStatus": "official-upstream"
+      }
+    }
+  ],
+  "id": "atlas-aesthetic-design-phenomenon-variable-font-axis-scanlines"
+}

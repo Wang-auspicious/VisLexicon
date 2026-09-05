@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "pricing-table",
+  "term_en": "Pricing Table",
+  "term_zh": "定价表",
+  "axis": "component",
+  "aliases": [
+    "价格表",
+    "套餐表",
+    "定价卡片"
+  ],
+  "definition_zh": "三档卡片并排，Popular 档用强调色与放大打破对称。",
+  "notation": "C[pricing] · tiers:3 · pop:scale1.06 · cta:primary",
+  "genes": [
+    {
+      "gene": "档位",
+      "value": "3 档，中间为 Popular"
+    },
+    {
+      "gene": "强调",
+      "value": "scale 放大 + accent 描边"
+    }
+  ],
+  "minimal_code": {
+    "css": ".price.pop{transform:scale(1.06);\n  border-color:var(--acc);\n  background:linear-gradient(180deg,var(--acc-bg),transparent)}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "Popular 用“红”“荐”标签过度抢戏会廉价；温和放大+描边即可。"
+  ],
+  "tech_notes": [
+    "默认档 scale(1)；Popular 档用边框色与渐变垫高。"
+  ],
+  "common_pairings": [
+    "spring"
+  ],
+  "related": [
+    "hero"
+  ],
+  "wild": [
+    {
+      "what": "Stripe / Linear 定价页",
+      "source": "stripe.com",
+      "note": "三档结构的稳定成熟范式"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/pricing-table/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/pricing-table.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

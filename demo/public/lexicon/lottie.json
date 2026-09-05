@@ -1,0 +1,67 @@
+{
+  "lever": "lexicon",
+  "id": "lottie",
+  "term_en": "Lottie",
+  "term_zh": "Lottie 动画",
+  "axis": "toolkit",
+  "aliases": [
+    "lottie",
+    "bodymovin",
+    "ae 导出动画"
+  ],
+  "definition_zh": "把 After Effects 动画导出为 JSON，Web/端上矢量回放的行业标准。",
+  "notation": "T[lottie] · ae:json · renderer:svg · loop:true",
+  "genes": [
+    {
+      "gene": "管线",
+      "value": "AE → Bodymovin 插件 → JSON"
+    },
+    {
+      "gene": "渲染器",
+      "value": "SVG / Canvas / HTML"
+    },
+    {
+      "gene": "交换",
+      "value": "设计给动画、工程给承载"
+    }
+  ],
+  "minimal_code": {
+    "css": "import lottie from 'lottie-web';\nlottie.loadAnimation({\n  container: el, renderer: 'svg', loop: true,\n  path: '/anim/loading.json',\n});"
+  },
+  "params": [],
+  "anti_patterns": [
+    "能 CSS 解决的别上 Lottie——JSON 体积与解析成本不值；复杂插画/序列帧才是主场。"
+  ],
+  "tech_notes": [
+    "lottie-web 体积较大（可按需裁剪）；大量实例注意销毁动画实例防内存泄漏。"
+  ],
+  "common_pairings": [
+    "shimmer"
+  ],
+  "related": [
+    "path-morph"
+  ],
+  "wild": [
+    {
+      "what": "Airbnb 开源",
+      "source": "airbnb.io/lottie",
+      "note": "设计工程协作动画的起点"
+    },
+    {
+      "what": "lottiefiles.com 社区库",
+      "source": "lottiefiles.com",
+      "note": "最大共享图床"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/lottie/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/lottie.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

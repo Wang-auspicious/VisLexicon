@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "feature-grid",
+  "term_en": "Feature Grid",
+  "term_zh": "功能网格",
+  "axis": "component",
+  "aliases": [
+    "功能卡",
+    "三列功能",
+    "features"
+  ],
+  "definition_zh": "图标 + 标题 + 两行说明的等宽网格，功能叙事的默认容器。",
+  "notation": "C[feat] · cols:3 · cell:icon+title+2line",
+  "genes": [
+    {
+      "gene": "节奏",
+      "value": "3 列 × 2 行是甜点区"
+    },
+    {
+      "gene": "图标",
+      "value": "同族图标 + 统一底色 chip"
+    }
+  ],
+  "minimal_code": {
+    "css": ".feat{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}\n.feat i{width:36px;height:36px;border-radius:10px}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "六张卡每张都长一样时，读者一张也不会读。"
+  ],
+  "tech_notes": [
+    "图标用 lucide 等同源库；网格移动端塌单列。"
+  ],
+  "common_pairings": [
+    "bento-grid"
+  ],
+  "related": [
+    "pricing-table"
+  ],
+  "wild": [
+    {
+      "what": "所有 SaaS 功能区",
+      "source": "普遍",
+      "note": "最通用也最容易被做平的区块"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/feature-grid/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/feature-grid.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

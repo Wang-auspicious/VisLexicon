@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "scroll-reveal",
+  "term_en": "Scroll Triggered Reveal",
+  "term_zh": "滚动进场",
+  "axis": "interaction",
+  "aliases": [
+    "滚动显现",
+    "reveal on scroll",
+    "aos"
+  ],
+  "definition_zh": "元素进入视口时才播放进场动画，配合 stagger 更有节奏。",
+  "notation": "I[reveal] · trigger:io.2 · y:16→0 · once:true",
+  "genes": [
+    {
+      "gene": "触发线",
+      "value": "视口下缘 up 10–20% 处"
+    },
+    {
+      "gene": "一次 or 往复",
+      "value": "once:true 是主流"
+    }
+  ],
+  "minimal_code": {
+    "css": "const io = new IntersectionObserver(es =>\n  es.forEach(e => e.isIntersecting && e.target.classList.add('in')))\n.div{opacity:0;translate:0 16px;transition:.6s}\n.div.in{opacity:1;translate:0 0}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "所有东西都飞入等于没有进场；一屏一两个焦点即可。"
+  ],
+  "tech_notes": [
+    "IntersectionObserver 懒触发；reduced-motion 直接显示。"
+  ],
+  "common_pairings": [
+    "stagger-reveal"
+  ],
+  "related": [
+    "scroll-scrub"
+  ],
+  "wild": [
+    {
+      "what": "所有现代 landing",
+      "source": "普遍",
+      "note": "长页叙事的基本节奏器"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/scroll-reveal/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/scroll-reveal.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

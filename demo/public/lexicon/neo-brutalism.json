@@ -1,0 +1,73 @@
+{
+  "lever": "lexicon",
+  "id": "neo-brutalism",
+  "term_en": "Neo-Brutalism",
+  "term_zh": "新粗野主义",
+  "axis": "aesthetic",
+  "aliases": [
+    "新粗野",
+    "硬阴影",
+    "粗边框",
+    "neobrutal"
+  ],
+  "definition_zh": "高饱和撞色 + 硬描边 + 无模糊硬阴影，反精致。",
+  "notation": "A[brut] · edge:2px · shadow:offset · move:(-2,-2)",
+  "genes": [
+    {
+      "gene": "描边",
+      "value": "2px 硬边 vs 细边"
+    },
+    {
+      "gene": "阴影",
+      "value": "硬阴影无模糊，offset 可调"
+    },
+    {
+      "gene": "按压",
+      "value": "hover 整体位移制造“按下”"
+    }
+  ],
+  "minimal_code": {
+    "css": ".brut{border:2px solid #000;\n  box-shadow:6px 6px 0 #000;\n  transition:transform .15s}\n.brut:hover{transform:translate(-2px,-2px)}"
+  },
+  "params": [
+    {
+      "key": "offset",
+      "label": "阴影偏移",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    }
+  ],
+  "anti_patterns": [
+    "全站高饱和对撞易疲劳；撞色控制在 1–2 个主色。"
+  ],
+  "tech_notes": [
+    "box-shadow 硬位移即可；hover 位移 = -offset 制造体积按下。"
+  ],
+  "common_pairings": [
+    "spring"
+  ],
+  "related": [
+    "glassmorphism"
+  ],
+  "wild": [
+    {
+      "what": "Gumroad 部分页面",
+      "source": "gumroad.com",
+      "note": "用硬阴影与粗框做“个性”"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/neo-brutalism/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/neo-brutalism.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

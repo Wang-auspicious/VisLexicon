@@ -1,0 +1,62 @@
+{
+  "lever": "lexicon",
+  "id": "view-transition",
+  "term_en": "View Transition",
+  "term_zh": "视图过渡",
+  "axis": "motion",
+  "aliases": [
+    "页面过渡",
+    "shared element transition",
+    "vt"
+  ],
+  "definition_zh": "浏览器原生 API：新旧两帧快照间做过渡，共享元素丝滑换位。",
+  "notation": "M[vt] · api:stVT · old:fade-out · new:rise-in",
+  "genes": [
+    {
+      "gene": "快照",
+      "value": "旧页截图 → 改 DOM → 新页截图"
+    },
+    {
+      "gene": "共享元素",
+      "value": "view-transition-name 配对"
+    },
+    {
+      "gene": "降级",
+      "value": "不支持时直接切换，无感退化"
+    }
+  ],
+  "minimal_code": {
+    "css": "document.startViewTransition(() => updateDOM());\n::view-transition-old(root){animation:fade-out .2s}\n::view-transition-new(root){animation:fade-in .25s}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "过渡超 400ms 用户开始等；快门感要轻。"
+  ],
+  "tech_notes": [
+    "startViewTransition 包裹 DOM 更新；配 view-transition-name。"
+  ],
+  "common_pairings": [
+    "flip"
+  ],
+  "related": [
+    "stagger-reveal"
+  ],
+  "wild": [
+    {
+      "what": "Chrome 111+ 各类 MPA 过渡",
+      "source": "developer.chrome.com",
+      "note": "same-document/跨文档都支持"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/view-transition/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/view-transition.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

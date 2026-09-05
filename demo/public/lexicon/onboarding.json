@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "onboarding",
+  "term_en": "Onboarding Steps",
+  "term_zh": "引导步骤",
+  "axis": "component",
+  "aliases": [
+    "新手引导",
+    "stepper",
+    "分步引导"
+  ],
+  "definition_zh": "分步引导条 + 当前步高亮，完成态打勾推进。",
+  "notation": "C[onb] · steps:3 · state:done/on/todo",
+  "genes": [
+    {
+      "gene": "步进器",
+      "value": "圆点/数字 + 连接线"
+    },
+    {
+      "gene": "状态",
+      "value": "done 打勾 / on 高亮 / todo 灰"
+    }
+  ],
+  "minimal_code": {
+    "css": ".step.done .dot{background:var(--ok)}\n.step.on .dot{outline:2px solid var(--acc);outline-offset:3px}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "超过 4 步的引导完成率断崖；合并或后置。"
+  ],
+  "tech_notes": [
+    "状态机驱动；连接线用伪元素按进度填充。"
+  ],
+  "common_pairings": [
+    "slide-swap"
+  ],
+  "related": [
+    "form"
+  ],
+  "wild": [
+    {
+      "what": "各家 SaaS 首次进入清单",
+      "source": "普遍",
+      "note": "激活率的第一杠杆"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/onboarding/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/onboarding.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

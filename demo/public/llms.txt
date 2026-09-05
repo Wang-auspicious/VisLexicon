@@ -1,0 +1,102 @@
+# VisLexicon（视元）
+
+> 给人类用的「前端视觉选型器」，给 Agent 用的「设计上下文供给站」。
+> 挑的结果是 Design Spec；词表可解引用；每词条/组件有稳定 JSON 端点。
+
+## 关键端点（部署根相对路径，静态托管即生效）
+- /llms.txt (本文件)
+- /llms-full.txt (全库数据)
+- /lexicon/index.json (词表清单)
+- /lexicon/{id}.json (单词条, 无鉴权)
+- /spec/{id}.json (Design Spec)
+- /spec/{id}/agent.md (Spec 使用指引, LLM 优化)
+
+## 生态接入（真实可用的组件级协议）
+- npx shadcn@latest mcp — shadcn 官方 MCP server，Agent 直连 Registry
+- npx shadcn@latest add "https://magicui.design/r/bento-grid.json" — Registry 端点直装
+- https://ui.shadcn.com/docs/mcp — MCP 配置文档
+
+## 五轴
+- 布局 (LAYOUT, ◧): Bento Grid (bento-grid), Holy Grail (holy-grail), Masonry (masonry), Split Screen (split-screen), Sidebar Shell (sidebar-shell), Sticky Scroll (sticky-scroll), Kanban (kanban), Timeline (timeline), Card Stack (card-stack), Floating Dock (dock)
+- 交互 (INTERACT, ✦): Hover Tilt / 3D Card (hover-tilt), Magnetic Button (magnetic-button), Spotlight Card (spotlight-card), Cursor Follower (cursor-follower), Hover Lift (hover-lift), Link Underline Draw (link-underline), Text Scramble (text-scramble), Number Ticker (number-ticker), Marquee (marquee), Drag to Reorder (drag-reorder), Scroll Triggered Reveal (scroll-reveal), Image Compare (image-compare)
+- 美学 (AESTHETIC, ◐): Glassmorphism (glassmorphism), Neumorphism (neumorphism), Claymorphism (claymorphism), Neo-Brutalism (neo-brutalism), Minimal Flat (minimal-flat), Swiss / International (swiss-intl), Editorial (editorial), Cyberpunk / Terminal (terminal), Aurora / Gradient Mesh (aurora-gradient), Skeuomorphism (skeuomorphism), Y2K Chrome (y2k-chrome), Pixel Retro (pixel-retro)
+- 动效 (MOTION, ➤): Spring Physics (spring), Stagger Reveal (stagger-reveal), FLIP (flip), Shimmer / Skeleton (shimmer), Parallax Layers (parallax), Scroll Scrub (scroll-scrub), View Transition (view-transition), Typewriter (typewriter), Blur In (blur-in), Slide Swap (slide-swap), SVG Path Morph (path-morph), Container Transform (container-transform)
+- 组件 (COMPONENT, ▣): Hero (hero), Navbar (navbar), Feature Grid (feature-grid), Pricing Table (pricing-table), Testimonial (testimonial), CTA Banner (cta-banner), Form Field (form), Modal (modal), Toast / Notification (toast), Chart Card (chart-card), FAQ Accordion (faq), Footer (footer), Onboarding Steps (onboarding)
+
+## 词表全目录（lex: 前缀可解引用）
+- lex:bento-grid — Bento Grid / 便当盒网格 — 不等分网格拼贴，大小模块承载不同信息密度，一眼分层。 — G[grid] · cells:4 · rows:96 · gap:12 · hero:span(2,2) — /lexicon/bento-grid.json
+- lex:holy-grail — Holy Grail / 圣杯布局 — 顶栏 + 三栏主体 + 底栏的经典骨架，中栏自适应、两侧栏定宽。 — L[grail] · rows:hd/body/ft · cols:220/1fr/220 — /lexicon/holy-grail.json
+- lex:masonry — Masonry / 瀑布流 — 按列堆叠的不等高卡片流，密度高而不乱。 — L[masonry] · cols:4 · gutter:12 · flow:column — /lexicon/masonry.json
+- lex:split-screen — Split Screen / 分屏对峙 — 垂直分割两个等权内容区，分界线即视觉锚点。 — L[split] · ratio:50/50 · spine:1px · mode:对峙 — /lexicon/split-screen.json
+- lex:sidebar-shell — Sidebar Shell / 侧栏外壳 — 定宽侧栏 + 自适应主区，工具型产品的标准外壳。 — L[shell] · side:232 · main:1fr · nav:sticky — /lexicon/sidebar-shell.json
+- lex:sticky-scroll — Sticky Scroll / 钉住滚动 — 一栏内容滚动、另一栏 position:sticky 钉住，形成叙事对比。 — L[sticky] · pin:20vh · span:60vh · scroll:right — /lexicon/sticky-scroll.json
+- lex:kanban — Kanban / 看板 — 按状态分列的卡片流，配合拖拽重排。 — L[kanban] · cols:TODO/DOING/DONE · flow:column — /lexicon/kanban.json
+- lex:timeline — Timeline / 时间线 — 沿中轴交替展开的节点叙事。 — L[timeline] · axis:center · nodes:alternating — /lexicon/timeline.json
+- lex:card-stack — Card Stack / 卡片堆叠 — 多张卡片同位叠放，顶层滑走后露出下一张。 — L[stack] · z:desc · scale:1-.05i · top:flyOut — /lexicon/card-stack.json
+- lex:dock — Floating Dock / 悬浮坞 — 悬浮于底边的图标坞，hover 放大。 — L[dock] · pos:bottom · radius:999 · lift:pring — /lexicon/dock.json
+- lex:hover-tilt — Hover Tilt / 3D Card / 3D 倾斜卡 — 卡片随光标做透视倾斜，深度由 rotateX/Y 与层级投影共同塑造。 — I[persp] · axis:XY · max:12° · ease:linear/ease-out — /lexicon/hover-tilt.json
+- lex:magnetic-button — Magnetic Button / 磁吸按钮 — 按钮被光标“磁化”吸引，松手后 spring 回位。 — I[magnet] · pull:s×Δ · relax:spring · reset:0 — /lexicon/magnetic-button.json
+- lex:spotlight-card — Spotlight Card / 光斑卡片 — radial-gradient 跟随光标，在边框与卡面点亮一圈光晕。 — I[spot] · shape:radial · r:radius · anchor:pointer — /lexicon/spotlight-card.json
+- lex:cursor-follower — Cursor Follower / 光标跟随物 — 一个装饰元素以弹性延迟跟随光标，替代或增强系统指针。 — I[cursor] · follow:lag·0.15 · shape:ring+dot — /lexicon/cursor-follower.json
+- lex:hover-lift — Hover Lift / 悬浮抬升 — hover 时卡片整体上移数像素并加深投影，模拟被拿起。 — I[lift] · y:-4 · shadow:deepen · t:200ms — /lexicon/hover-lift.json
+- lex:link-underline — Link Underline Draw / 下划线绘制 — hover 时下划线从一侧划入（或从中间长出），退场时从另一侧划出。 — I[uline] · from:left · 1.5px · t:280ms — /lexicon/link-underline.json
+- lex:text-scramble — Text Scramble / 解码文字 — 字符随机翻滚后逐位落定，科技感文本进场。 — I[scramble] · frame:speed · resolve:fwd · charset:ascii — /lexicon/text-scramble.json
+- lex:number-ticker — Number Ticker / 数字滚动 — 数值变化时沿纵向滚动到新数字，仪表盘的呼吸感。 — I[ticker] · axis:y · ease:ease-out · t:900ms — /lexicon/number-ticker.json
+- lex:marquee — Marquee / 无缝跑马灯 — 内容首尾相接的无限横滚，需 duplicate 轨道实现无缝。 — I[marquee] · dir:x · loop:infinite · gap:none — /lexicon/marquee.json
+- lex:drag-reorder — Drag to Reorder / 拖拽重排 — 按住卡片拖动，其余卡片实时让位，松手落位。 — I[drag] · grabbed:scale1.03 · others:flip-shift — /lexicon/drag-reorder.json
+- lex:scroll-reveal — Scroll Triggered Reveal / 滚动进场 — 元素进入视口时才播放进场动画，配合 stagger 更有节奏。 — I[reveal] · trigger:io.2 · y:16→0 · once:true — /lexicon/scroll-reveal.json
+- lex:image-compare — Image Compare / 图像对比滑块 — 拖动分割线对比前后两张图，处理类产品的天然演示。 — I[compare] · clip:inset-x · handle:1px+grip — /lexicon/image-compare.json
+- lex:glassmorphism — Glassmorphism / 毛玻璃拟态 — 半透明面板 + backdrop blur + 细描边，悬浮于彩色背景之上。 — A[glass] · blur:14 · tint:255/.08 · edge:1/.14 — /lexicon/glassmorphism.json
+- lex:neumorphism — Neumorphism / 新拟物 — 同色背景上用双向内外阴影挤出浅浮雕，控件像从面板上长出来。 — A[neu] · bg:same · dual:in/out · soft:16 — /lexicon/neumorphism.json
+- lex:claymorphism — Claymorphism / 黏土拟物 — 大圆角 + 双层内阴影，捏出软陶体积感。 — A[clay] · radius:28 · inner:soft · bevel:both — /lexicon/claymorphism.json
+- lex:neo-brutalism — Neo-Brutalism / 新粗野主义 — 高饱和撞色 + 硬描边 + 无模糊硬阴影，反精致。 — A[brut] · edge:2px · shadow:offset · move:(-2,-2) — /lexicon/neo-brutalism.json
+- lex:minimal-flat — Minimal Flat / 极简扁平 — 去装饰、靠留白与层级说话；一个强调色点睛。 — A[flat] · deco:none · space:8px网 · acc:1 — /lexicon/minimal-flat.json
+- lex:swiss-intl — Swiss / International / 瑞士国际主义 — 严格网格、无衬线大字、不对称排版、大面积单色块。 — A[swiss] · grid:12 · type:grot · align:flush-left — /lexicon/swiss-intl.json
+- lex:editorial — Editorial / 杂志编辑风 — 衬线大标题、首字下沉、细分栏线，纸刊排版的数字转译。 — A[ed] · display:serif · dropcap:yes · rule:1px — /lexicon/editorial.json
+- lex:terminal — Cyberpunk / Terminal / 终端机能风 — 等宽字体 + 荧光绿/琥珀 + 扫描线与光标闪烁。 — A[term] · font:mono · accent:#4af6 · caret:blink — /lexicon/terminal.json
+- lex:aurora-gradient — Aurora / Gradient Mesh / 极光渐变 — 多个大半径模糊色斑缓慢漂移，制造流动的极光底色。 — A[aurora] · blot:3 · blur:80 · drift:18s — /lexicon/aurora-gradient.json
+- lex:skeuomorphism — Skeuomorphism / 拟物化 — 复刻真实材质光影：皮革纹理、拉丝金属、按下有物理行程的按钮。 — A[skeuo] · light:top-left · mat:metal/leather — /lexicon/skeuomorphism.json
+- lex:y2k-chrome — Y2K Chrome / Y2K 金属 — 液态金属质感 + 星形闪光 + 高饱和蓝紫粉渐变，千禧复古未来。 — A[y2k] · grad:blue-purple-pink · glyph:star/wing — /lexicon/y2k-chrome.json
+- lex:pixel-retro — Pixel Retro / 像素复古 — 整数倍放大的低分辨率像素图 + 硬边无抗锯齿 + 有限色板。 — A[pixel] · scale:int ×4 · aa:off · palette:8 — /lexicon/pixel-retro.json
+- lex:spring — Spring Physics / 弹簧物理 — 用过冲曲线模拟弹簧，元素到位时轻微越界再回弹。 — M[spring] · k:260 · c:20 · o:overshoot:18% — /lexicon/spring.json
+- lex:stagger-reveal — Stagger Reveal / 交错入场 — 列表项按固定间隔依次进场，节奏感来自 delay 阶梯。 — M[stagger] · d:90ms · step:var(--n) · ease:rise — /lexicon/stagger-reveal.json
+- lex:flip — FLIP / FLIP 重排 — First-Last-Invert-Play：先记终点，反向位移，再过渡到零。 — M[flip] · F→L·invert·play · prop:transform — /lexicon/flip.json
+- lex:shimmer — Shimmer / Skeleton / 骨架微光 — 灰阶占位块上扫过一道斜向高光，暗示“加载中”。 — M[shimmer] · slope:100° · t:duration · pos:scan — /lexicon/shimmer.json
+- lex:parallax — Parallax Layers / 视差层 — 多层背景以不同速率移动，营造景深。 — M[parallax] · layers:2 · Δ:depth · drive:pointer — /lexicon/parallax.json
+- lex:scroll-scrub — Scroll Scrub / 滚动擦洗 — 动画进度直接映射滚动位置：滚到哪播到哪，倒滚也倒放。 — M[scrub] · map:scrollY→p · apply:direct · rev:true — /lexicon/scroll-scrub.json
+- lex:view-transition — View Transition / 视图过渡 — 浏览器原生 API：新旧两帧快照间做过渡，共享元素丝滑换位。 — M[vt] · api:stVT · old:fade-out · new:rise-in — /lexicon/view-transition.json
+- lex:typewriter — Typewriter / 打字机 — 文字逐字出现，光标闪烁，可选删除回打形成循环。 — M[type] · unit:char · cps:12 · caret:blink — /lexicon/typewriter.json
+- lex:blur-in — Blur In / 虚化入场 — 从模糊+透明过渡到清晰，比纯 fade 更有对焦仪式感。 — M[blurIn] · from:blur(12px)+o0 · t:600ms — /lexicon/blur-in.json
+- lex:slide-swap — Slide Swap / 滑动换位 — 内容块沿固定轴向滑入滑出完成替换，方向即语义。 — M[swap] · dir:x+ · old:-24 · new:+24 · t:380ms — /lexicon/slide-swap.json
+- lex:path-morph — SVG Path Morph / 路径变形 — 两个同点数 SVG path 之间插值，图标与图形的液态变形。 — M[morph] · api:smil/flubber · pts:match · t:1.2s — /lexicon/path-morph.json
+- lex:container-transform — Container Transform / 容器变形 — 一个容器连续变形为另一个容器，形状、尺寸、圆角与内容同时过渡，空间连续性不断。 — CT[circle→card] · corner:continuous · content:fade-through · spring(0.85,22) · origin:tap-point · 340ms — /lexicon/container-transform.json
+- lex:hero — Hero / 首屏主视觉 — 第一屏主张 + 主 CTA，3–4 层元素交错进场。 — C[hero] · layers:3-4 · stagger · cta:primary — /lexicon/hero.json
+- lex:navbar — Navbar / 导航栏 — 站点级导航：logo + 链接 + 行动点，滚动时收缩或变玻璃。 — C[nav] · sticky · blur:10 · shrink:on-scroll — /lexicon/navbar.json
+- lex:feature-grid — Feature Grid / 功能网格 — 图标 + 标题 + 两行说明的等宽网格，功能叙事的默认容器。 — C[feat] · cols:3 · cell:icon+title+2line — /lexicon/feature-grid.json
+- lex:pricing-table — Pricing Table / 定价表 — 三档卡片并排，Popular 档用强调色与放大打破对称。 — C[pricing] · tiers:3 · pop:scale1.06 · cta:primary — /lexicon/pricing-table.json
+- lex:testimonial — Testimonial / 用户证言 — 引言 + 头像署名，双列交错制造节奏。 — C[testi] · cols:2 · attr:avatar · sync:rhythm — /lexicon/testimonial.json
+- lex:cta-banner — CTA Banner / 行动号召横幅 — 页尾前的最后一块高对比横幅：一句主张 + 一个按钮。 — C[cta] · bg:ink-inverse · line:1 · btn:1 — /lexicon/cta-banner.json
+- lex:form — Form Field / 表单输入 — focus 时描边变亮 + 外圈光晕，标签上浮。 — C[form] · focus:accent+glow · label:float — /lexicon/form.json
+- lex:modal — Modal / 模态对话框 — 遮罩之上居中浮层，入场 scale+fade，焦点被圈住。 — C[modal] · veil:blur2 · enter:pop.3s · esc:close — /lexicon/modal.json
+- lex:toast — Toast / Notification / 吐司通知 — 角落堆叠滑入，自动消退，状态色区分语义。 — C[toast] · pos:top-right · slide:spring · auto:dismiss — /lexicon/toast.json
+- lex:chart-card — Chart Card / 图表卡 — 指标数字 + 趋势图 + 同比标记的仪表盘原子。 — C[chart] · num:tabular · trend:spark · delta:±% — /lexicon/chart-card.json
+- lex:faq — FAQ Accordion / 折叠问答 — 问题行 + 展开区，grid-rows 0fr→1fr 实现高度自然过渡。 — C[faq] · open:0fr→1fr · chevron:rotate — /lexicon/faq.json
+- lex:footer — Footer / 页脚 — 多列链接 + 版权行 + 状态指示，站点收尾与 SEO 承重墙。 — C[footer] · cols:brand+4 · legal:bottom-bar — /lexicon/footer.json
+- lex:onboarding — Onboarding Steps / 引导步骤 — 分步引导条 + 当前步高亮，完成态打勾推进。 — C[onb] · steps:3 · state:done/on/todo — /lexicon/onboarding.json
+- lex:gsap — GSAP / GSAP 动画引擎 — JavaScript 动画引擎：时间线编排、跨浏览器一致性、3.13 起全部插件免费商用。 — T[gsap] · tl:seq · ease:power3 · stagger:0.08 — /lexicon/gsap.json
+- lex:motion-lib — Motion / Motion（原 Framer Motion） — React 生态动效库：声明式 spring 物理、手势、布局动画与 exit 编排。 — T[motion] · type:spring · k:320 · c:24 · whileHover — /lexicon/motion-lib.json
+- lex:lottie — Lottie / Lottie 动画 — 把 After Effects 动画导出为 JSON，Web/端上矢量回放的行业标准。 — T[lottie] · ae:json · renderer:svg · loop:true — /lexicon/lottie.json
+
+## 生态索引（组件级，Registry 超集）
+- magicui/bento-grid — Bento Grid — 带 hover 光效的便当网格，结构性 SEO 组件。 — https://magicui.design/docs/components/bento-grid
+- aceternity/3d-card-effect — 3D Card Effect — 透视倾斜 + 内部元素视差，hover-tilt 的完整实现。 — https://ui.aceternity.com/components/3d-card-effect
+- magicui/aurora-text — Aurora Text — 极光渐变流动字，标题级氛围担当。 — https://magicui.design/docs/components/aurora-text
+- magicui/marquee — Marquee — 无缝跑马灯，Logo 墙即插即用。 — https://magicui.design/docs/components/marquee
+- originui/dock — Dock — macOS 风格放大 dock。 — https://coss.com/ui
+- hover/buttons — Magnetic Button — 磁吸 CTA，含 spring 回位。 — https://hover.dev/components/buttons
+- uiverse/loaders — Shimmer Loader — 纯 CSS 骨架屏占位。 — https://uiverse.io/loaders
+- gsap/scramble-text — ScrambleTextPlugin — 解码乱码文字的工业级实现。 — https://gsap.com/docs/v3/Plugins/ScrambleTextPlugin/
+- hover/pricing — Pricing Sections — 成套定价区块，三档结构现成。 — https://hover.dev/components/pricing
+- shadcn/sonner — Sonner / Toast — 吐司通知现成方案。 — https://ui.shadcn.com/docs/components/sonner
+- magicui/border-beam — Border Beam — 沿边框流动的光束。 — https://magicui.design/docs/components/border-beam
+- magicui/globe — Globe — Three.js 地球组件，展示型。 — https://magicui.design/docs/components/globe

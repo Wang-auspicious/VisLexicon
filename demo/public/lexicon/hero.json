@@ -1,0 +1,60 @@
+{
+  "lever": "lexicon",
+  "id": "hero",
+  "term_en": "Hero",
+  "term_zh": "首屏主视觉",
+  "axis": "component",
+  "aliases": [
+    "首屏",
+    "hero 区",
+    "banner 区",
+    "头图"
+  ],
+  "definition_zh": "第一屏主张 + 主 CTA，3–4 层元素交错进场。",
+  "notation": "C[hero] · layers:3-4 · stagger · cta:primary",
+  "genes": [
+    {
+      "gene": "元素",
+      "value": "eyebrow / 大标题 / 副文案 / CTA"
+    },
+    {
+      "gene": "进场",
+      "value": "交错 rise，间隔 120ms"
+    }
+  ],
+  "minimal_code": {
+    "css": ".hero strong{font-size:clamp(2.5rem,7vw,5.5rem);letter-spacing:-.04em}\n.rise{animation:rise .7s both;animation-delay:var(--d)}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "hero 不是横幅，别堆多个 CTA 和贴图；一句主张一个动作。"
+  ],
+  "tech_notes": [
+    "clamp() 响应式大标题；letter-spacing 收紧平台感。"
+  ],
+  "common_pairings": [
+    "stagger-reveal",
+    "aurora-gradient"
+  ],
+  "related": [
+    "pricing-table"
+  ],
+  "wild": [
+    {
+      "what": "所有 SaaS 首页",
+      "source": "普遍",
+      "note": "hero 是第一屏的通用结构"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/hero/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/hero.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

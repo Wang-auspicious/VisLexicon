@@ -1,0 +1,57 @@
+{
+  "lever": "lexicon",
+  "id": "timeline",
+  "term_en": "Timeline",
+  "term_zh": "时间线",
+  "axis": "layout",
+  "aliases": [
+    "时间轴",
+    "历程线"
+  ],
+  "definition_zh": "沿中轴交替展开的节点叙事。",
+  "notation": "L[timeline] · axis:center · nodes:alternating",
+  "genes": [
+    {
+      "gene": "中轴",
+      "value": "实线 / 虚线 / 点线"
+    },
+    {
+      "gene": "节点侧",
+      "value": "左 / 右 / 交替"
+    }
+  ],
+  "minimal_code": {
+    "css": ".tl{position:relative}\n.node{width:50%}.node.r{margin-left:50%}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "节点过多时响应式塌陷成左侧单列，否则移动端拥挤。"
+  ],
+  "tech_notes": [
+    "定位+伪元素画轴线；nth-child(odd/even) 控制左右交替。"
+  ],
+  "common_pairings": [
+    "stagger-reveal"
+  ],
+  "related": [
+    "kanban"
+  ],
+  "wild": [
+    {
+      "what": "Notion 产品迭代页",
+      "source": "notion.so",
+      "note": "中轴双列交替的经典"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/timeline/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/timeline.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

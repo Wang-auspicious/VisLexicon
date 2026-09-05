@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "sticky-scroll",
+  "term_en": "Sticky Scroll",
+  "term_zh": "钉住滚动",
+  "axis": "layout",
+  "aliases": [
+    "吸顶",
+    "sticky 区域",
+    "滚动钉住"
+  ],
+  "definition_zh": "一栏内容滚动、另一栏 position:sticky 钉住，形成叙事对比。",
+  "notation": "L[sticky] · pin:20vh · span:60vh · scroll:right",
+  "genes": [
+    {
+      "gene": "钉住侧",
+      "value": "图钉在视口 20vh 起"
+    },
+    {
+      "gene": "切换触发器",
+      "value": "滚动到该区块即钉住"
+    }
+  ],
+  "minimal_code": {
+    "css": ".wrap{display:grid;grid-template-columns:1fr 1fr;align-items:start}\n.card{position:sticky;top:20vh;height:60vh}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "两侧都长且都在动时体验混乱；钉住侧要保持视觉焦点稳定。"
+  ],
+  "tech_notes": [
+    "sticky 需要父容器撑高；align-items:start 否则不生效。"
+  ],
+  "common_pairings": [
+    "parallax"
+  ],
+  "related": [
+    "scroll-scrub"
+  ],
+  "wild": [
+    {
+      "what": "Apple AirPods Pro 页",
+      "source": "apple.com",
+      "note": "文字滚动、产品图钉住，长页叙事标配"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/sticky-scroll/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/sticky-scroll.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

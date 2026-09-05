@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 3,
+  "entryId": "uiverse",
+  "entityId": "entity-uiverse",
+  "attemptId": "legacy-curation-v2-uiverse-20260901-v3-41a34de931c6",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://uiverse.io/",
+    "finalUrl": "https://uiverse.io/",
+    "checkedAt": "2026-09-01T07:38:55.493Z"
+  },
+  "editorial": {
+    "name": "Uiverse",
+    "descriptionZh": "社区共建的开源 UI 元素库，可按按钮、卡片、加载器与表单等类别浏览；单项页面给出实时效果和可复制的 HTML/CSS，并可导出 React、支持 Tailwind 与 Figma，站内 UI 元素统一采用 MIT 许可。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-uiverse",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "该入口的主要动作是搜索、预览并复制社区提交的 UI 元素源码，而不是参与泛社区讨论。",
+        "evidenceUrl": "https://uiverse.io/"
+      },
+      {
+        "statement": "单项页面同时给出运行效果、HTML/CSS 源码和 React 导出，主要交付物是通用界面组件实现。",
+        "evidenceUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20"
+      }
+    ],
+    "curatorId": "root-contact-sheet-review-20260901",
+    "reviewerId": "independent-six-v3-editorial-reviewer",
+    "confirmedAt": "2026-09-01T16:45:57.625Z"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "copy",
+      "export",
+      "submit",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "css"
+    ],
+    "workflowStages": [
+      "discovery",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "community-feed",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://uiverse.io/",
+      "finalUrl": "https://uiverse.io/",
+      "title": "Uiverse — Community UI Elements",
+      "selectionRationale": "首页展示 Uiverse 身份、社区元素画廊与代码搜索入口。",
+      "shot": {
+        "src": "/shots/uiverse/v2-identity.png",
+        "sha256": "559547761171365efbde26c434674dd2c256a028b9a27093e3d7aea1072d8675",
+        "width": 1280,
+        "height": 900,
+        "bytes": 191898,
+        "alt": "Uiverse 首页的开源 UI 元素画廊与搜索"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://uiverse.io/elements",
+      "finalUrl": "https://uiverse.io/elements",
+      "title": "Uiverse Elements",
+      "selectionRationale": "Elements 瀑布流体现加载器、按钮、卡片等组件的广度。",
+      "shot": {
+        "src": "/shots/uiverse/v2-breadth.png",
+        "sha256": "345d549835859272eb68c1bf180747653226e0a11873b45e5ea465a746d2a588",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144394,
+        "alt": "Uiverse Elements 页面中的社区组件瀑布流"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20",
+      "finalUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20",
+      "title": "Fresh Lizard 20 — Uiverse",
+      "selectionRationale": "单个 Loader 页面同时展示实时效果和可复制的 HTML/CSS 源码。",
+      "shot": {
+        "src": "/shots/uiverse/v2-proof.png",
+        "sha256": "5ccf719527df05f46a9d8f232a6d630708456f98311d895d20b8bc74e199732e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 166446,
+        "alt": "Uiverse 单个 CSS Loader 的实时预览与源码面板"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Uiverse community contributors",
+      "sourceUrl": "https://uiverse.io/",
+      "evidence": "首页明确自述为 Community-built library，单项页面分别标注具体投稿作者。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://uiverse.io/",
+      "evidence": "官网页脚明确写 All content (UI elements) on this site are published under the MIT License。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Pixel Galaxies",
+      "sourceUrl": "https://uiverse.io/",
+      "evidence": "官网页脚版权行写明 2026 Pixel Galaxies - Uiverse.io。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/uiverse-io/galaxy",
+      "sourceUrl": "https://uiverse.io/",
+      "evidence": "首页直接提供 Star on GitHub 链接到 uiverse-io/galaxy。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://uiverse.io/",
+      "evidence": "核心元素库公开浏览与复制，并在站点范围声明 UI elements 使用 MIT。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "root-contact-sheet-review-20260901",
+    "technicalPassed": true,
+    "semanticReviewerId": "independent-six-v3-editorial-reviewer",
+    "semanticPassed": true,
+    "editorialReviewerId": "independent-six-v3-editorial-reviewer"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "lever": "lexicon",
+  "id": "holy-grail",
+  "term_en": "Holy Grail",
+  "term_zh": "圣杯布局",
+  "axis": "layout",
+  "aliases": [
+    "圣杯",
+    "三栏布局",
+    "header-footer 布局"
+  ],
+  "definition_zh": "顶栏 + 三栏主体 + 底栏的经典骨架，中栏自适应、两侧栏定宽。",
+  "notation": "L[grail] · rows:hd/body/ft · cols:220/1fr/220",
+  "genes": [
+    {
+      "gene": "命名网格区",
+      "value": "grid-template-areas 三行三列"
+    },
+    {
+      "gene": "中栏弹性",
+      "value": "1fr 吃掉全部剩余宽度"
+    },
+    {
+      "gene": "侧栏职责",
+      "value": "导航 vs 辅助信息分工"
+    }
+  ],
+  "minimal_code": {
+    "css": ".grail{display:grid;grid-template:\n  \"hd hd hd\" 56px \"side main aside\" 1fr \"ft ft ft\" 48px / 220px 1fr 220px}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "移动端别硬塞三栏，塌成单列 + 抽屉侧栏是标准解。"
+  ],
+  "tech_notes": [
+    "grid-template-areas 命名区域最可读；body 区内部再滚动，避免整页跳。"
+  ],
+  "common_pairings": [
+    "sidebar-shell"
+  ],
+  "related": [
+    "sidebar-shell"
+  ],
+  "wild": [
+    {
+      "what": "各类文档站 / 后台",
+      "source": "普遍",
+      "note": "内容型产品的默认骨架"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/holy-grail/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/holy-grail.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

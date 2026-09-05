@@ -1,0 +1,69 @@
+{
+  "lever": "lexicon",
+  "id": "claymorphism",
+  "term_en": "Claymorphism",
+  "term_zh": "黏土拟物",
+  "axis": "aesthetic",
+  "aliases": [
+    "黏土风",
+    "软糖风",
+    "clay",
+    "3d 软按钮"
+  ],
+  "definition_zh": "大圆角 + 双层内阴影，捏出软陶体积感。",
+  "notation": "A[clay] · radius:28 · inner:soft · bevel:both",
+  "genes": [
+    {
+      "gene": "圆角",
+      "value": "28px 起，同色背景融为一体"
+    },
+    {
+      "gene": "内阴影",
+      "value": "双向内阴影制造受光/背光"
+    }
+  ],
+  "minimal_code": {
+    "css": ".clay{border-radius:28px;\n  box-shadow:inset -14px -14px 24px rgb(0 0 0/.18),\n             inset 14px 14px 24px rgb(255 255 255/.5);}"
+  },
+  "params": [
+    {
+      "key": "softness",
+      "label": "柔软度",
+      "min": 6,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    }
+  ],
+  "anti_patterns": [
+    "clay 需要同色系浅底才成立；放白底上内阴影会显脏。"
+  ],
+  "tech_notes": [
+    "两方向 inset 阴影，光源方向要一致；配同色浅背景。"
+  ],
+  "common_pairings": [
+    "spring"
+  ],
+  "related": [
+    "glassmorphism"
+  ],
+  "wild": [
+    {
+      "what": "众多“可爱”产品",
+      "source": "多个 App",
+      "note": "软陶果冻感的组件风"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/claymorphism/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/claymorphism.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

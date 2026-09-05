@@ -1,0 +1,62 @@
+{
+  "lever": "lexicon",
+  "id": "chart-card",
+  "term_en": "Chart Card",
+  "term_zh": "图表卡",
+  "axis": "component",
+  "aliases": [
+    "图表",
+    "统计卡",
+    "kpi card"
+  ],
+  "definition_zh": "指标数字 + 趋势图 + 同比标记的仪表盘原子。",
+  "notation": "C[chart] · num:tabular · trend:spark · delta:±%",
+  "genes": [
+    {
+      "gene": "数字",
+      "value": "tabular-nums 防抖动"
+    },
+    {
+      "gene": "趋势",
+      "value": "sparkline 30d，涨绿跌红"
+    },
+    {
+      "gene": "增量",
+      "value": "±x.x% 徽标，色随涨跌"
+    }
+  ],
+  "minimal_code": {
+    "css": ".kpi strong{font-size:28px;font-variant-numeric:tabular-nums}\n.up{color:#16a34a}svg path{fill:none;stroke:var(--acc)}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "一屏超过 6 张卡时，重点 KPI 必须在尺寸或位置上突出。"
+  ],
+  "tech_notes": [
+    "sparkline 用 SVG polyline；数字滚动配 number-ticker。"
+  ],
+  "common_pairings": [
+    "number-ticker"
+  ],
+  "related": [
+    "feature-grid"
+  ],
+  "wild": [
+    {
+      "what": "Vercel / Stripe Dashboard",
+      "source": "vercel.com",
+      "note": "克制的仪表盘配色范本"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/chart-card/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/chart-card.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

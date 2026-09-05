@@ -1,0 +1,69 @@
+{
+  "lever": "lexicon",
+  "id": "gsap",
+  "term_en": "GSAP",
+  "term_zh": "GSAP 动画引擎",
+  "axis": "toolkit",
+  "aliases": [
+    "gsap",
+    "greensock",
+    "tweenmax 继任",
+    "时间线动画"
+  ],
+  "definition_zh": "JavaScript 动画引擎：时间线编排、跨浏览器一致性、3.13 起全部插件免费商用。",
+  "notation": "T[gsap] · tl:seq · ease:power3 · stagger:0.08",
+  "genes": [
+    {
+      "gene": "时间线",
+      "value": "timeline 串联/嵌套/定位标签"
+    },
+    {
+      "gene": "插件族",
+      "value": "ScrollTrigger / Flip / ScrambleText / MorphSVG"
+    },
+    {
+      "gene": "许可",
+      "value": "3.13 起全插件免费（Webflow 收购后）"
+    }
+  ],
+  "minimal_code": {
+    "css": "gsap.timeline({ defaults: { ease: 'power3.out' } })\n  .from('.hero', { y: 24, opacity: 0, stagger: 0.08 })\n  .to('.card', { rotate: 6, yoyo: true, repeat: 1 });"
+  },
+  "params": [],
+  "anti_patterns": [
+    "简单 UI 微交互别上 GSAP——CSS transition 更省；它强在编排与滚动联动。"
+  ],
+  "tech_notes": [
+    "rAF 驱动，可控可暂停可倒放；ScrollTrigger 是滚动叙事的核心插件。"
+  ],
+  "common_pairings": [
+    "spring",
+    "stagger-reveal"
+  ],
+  "related": [
+    "motion-lib"
+  ],
+  "wild": [
+    {
+      "what": "Awwwards 获奖站重度用户",
+      "source": "awwwards",
+      "note": "叙事长页的事实标准引擎"
+    },
+    {
+      "what": "官方 Eases 文档内嵌可视化",
+      "source": "gsap.com/docs/v3/Eases",
+      "note": "词条页内嵌交互工具的范本"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/gsap/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/gsap.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "testimonial",
+  "term_en": "Testimonial",
+  "term_zh": "用户证言",
+  "axis": "component",
+  "aliases": [
+    "证言卡片",
+    "用户评价",
+    "口碑墙"
+  ],
+  "definition_zh": "引言 + 头像署名，双列交错制造节奏。",
+  "notation": "C[testi] · cols:2 · attr:avatar · sync:rhythm",
+  "genes": [
+    {
+      "gene": "列排布",
+      "value": "双列/交错 masonry"
+    },
+    {
+      "gene": "署名",
+      "value": "头像 + 人名 + 头衔"
+    }
+  ],
+  "minimal_code": {
+    "css": ".testi{columns:2;column-gap:16px}\n.q{break-inside:avoid;margin-bottom:16px}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "证言必须是真话；随机头像库一眼假。"
+  ],
+  "tech_notes": [
+    "CSS columns 交错；证言与产品截图共处省空间。"
+  ],
+  "common_pairings": [
+    "shimmer"
+  ],
+  "related": [
+    "pricing-table"
+  ],
+  "wild": [
+    {
+      "what": "各类落地页",
+      "source": "普遍",
+      "note": "社会证明的标准结构"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/testimonial/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/testimonial.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

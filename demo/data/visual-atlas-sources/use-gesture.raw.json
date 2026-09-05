@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "id": "use-gesture",
+    "name": "@use-gesture",
+    "url": "https://use-gesture.netlify.app/docs",
+    "repository": "https://github.com/pmndrs/use-gesture",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/pmndrs/use-gesture/blob/main/LICENSE",
+    "retrievedAt": "2026-09-03",
+    "revision": "c779631aa05959638dee81b9a25fb1299a7467f6",
+    "verifiedCount": 36,
+    "countedAtlas": true,
+    "retrieval": "live-site"
+  },
+  "records": [
+    {
+      "sourceRecordId": "anglebounds",
+      "termEn": "angleBounds",
+      "sourceDefinition": "See also [scaleBounds](#scalebounds).",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "axis",
+      "termEn": "axis",
+      "sourceDefinition": "axis makes it easy to constrain the user gesture to a specific axis.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "axisthreshold",
+      "termEn": "axisThreshold",
+      "sourceDefinition": "A gesture axis is determined whenever x-axis and y-axis displacements reach a threshold.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "bounds",
+      "termEn": "bounds",
+      "sourceDefinition": "If you want to set constraints to the user gesture, then you should use the bounds option. In that case, **both** the gesture movement and offset will be clamped to the specified bounds. bounds will be defaulted to Infinity when not set.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "delay",
+      "termEn": "delay",
+      "sourceDefinition": "delay delays the drag gesture for the amount of milliseconds you specify. This might be useful if you don't want your logic to fire right away. The below example has a delay set to 1000. Try clicking on the square without moving your mouse.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "enabled",
+      "termEn": "enabled",
+      "sourceDefinition": "Whether the gesture is enabled.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "eventoptions",
+      "termEn": "eventOptions",
+      "sourceDefinition": "When eventOptions.capture is set to true, [events will be captured](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture).",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "filtertaps",
+      "termEn": "filterTaps",
+      "sourceDefinition": "Making a draggable component tappable or clickable can be tricky: differenciating a click from a drag is not always trivial. When you set filterTaps to true, the [tap](/docs/state/#tap) state attribute will be true on release if the total displacement is inferior to 3 pixels while down will remain false all along.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "from",
+      "termEn": "from",
+      "sourceDefinition": "Everytime a gesture starts, the offset state attribute starts with its previous value. But in some cases, you might want to start offset from an initial position that is external to your logic[^1].",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "modifierkey",
+      "termEn": "modifierKey",
+      "sourceDefinition": "This option lets you set the modifier key that triggers a scale gesture when using wheel inside the onPinch handler.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "pointer-buttons",
+      "termEn": "pointer.buttons",
+      "sourceDefinition": "Most of the time you'll want the drag gesture to start when the left / main button of your device is pressed. You can change that behavior by submitting a [buttons combination](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/buttons) that matches one or several buttons to be pressed at once in order for the drag gesture to start.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "pointer-capture",
+      "termEn": "pointer.capture",
+      "sourceDefinition": "By default, drag uses [setPointerCapture](https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture) to track the pointer movement. When a pointer is captured by a target, it won't trigger any listener from another target (even a CSS :hover). Most of the time this is fine, but in some situations, you may want to drag an element and still receive events from another target.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "pointer-keys",
+      "termEn": "pointer.keys",
+      "sourceDefinition": "By default, the drag gesture is accessible, meaning you can control the drag of an element with arrow keys. The shiftKey modifier will make the drag 10x faster, the altKey will make the drag 10x slower.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "pointer-lock",
+      "termEn": "pointer.lock",
+      "sourceDefinition": "Set lock to true and the drag gesture will [requestPointerLock](https://developer.mozilla.org/en-US/docs/Web/API/Element/requestPointerLock) when the drag starts and exitPointerLock when the drag gesture ends. This feature is only relevant on non-touch devices.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "pointer-touch",
+      "termEn": "pointer.touch",
+      "sourceDefinition": "Most gestures, drag included, use [pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events). This works well in 99 situations in 100, but pointer events get canceled on touch devices when the user starts scrolling. Usually this is what you actually want, and the browser does it for you. But in some situations you may want the drag to persist while scrolling. In that case you'll need to indicate to use touch events, which aren't canceled on scroll.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "preventdefault",
+      "termEn": "preventDefault",
+      "sourceDefinition": "Will run event.cancelable && event.preventDefault() on all events triggered by the handler. Can be useful when dragging links or images.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "preventscroll",
+      "termEn": "preventScroll",
+      "sourceDefinition": "**This is an experimental feature, relevant for mobile devices**.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "preventscrollaxis",
+      "termEn": "preventScrollAxis",
+      "sourceDefinition": "This can optionally be used together with preventScroll. This defines the axis/axes in which scrolling is permitted, unless the user taps and holds on the element for the specified duration. Afterwhich, all scrolling is blocked. Depending on the complexity of the nesting of the element, you may need to assign the property touch-action: pan-x, touch-action: pan-y, or both, to the element to allow for the correct behavior.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "rubberband",
+      "termEn": "rubberband",
+      "sourceDefinition": "In some cases, you may want to simulate resistance when the user drags a component, for example when the end of a content is reached[^4].",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "scalebounds",
+      "termEn": "scaleBounds",
+      "sourceDefinition": "See also [angleBounds](#anglebounds).",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "swipe-distance",
+      "termEn": "swipe.distance",
+      "sourceDefinition": "See the [swipe](/docs/state/#swipe) state attribute for more.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "swipe-duration",
+      "termEn": "swipe.duration",
+      "sourceDefinition": "A drag gesture lasting more than swipe.duration (in milliseconds) will never be considered a swipe. See the [swipe](/docs/state/#swipe) state attribute for more.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "swipe-velocity",
+      "termEn": "swipe.velocity",
+      "sourceDefinition": "See the [swipe](/docs/state/#swipe) state attribute for more.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "tapsthreshold",
+      "termEn": "tapsThreshold",
+      "sourceDefinition": "When using the [filterTaps](#filterTaps) option, taps are only triggered when the displacement is inferior to 3 pixels. You can customize that value by using tapsThreshold.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "target",
+      "termEn": "target",
+      "sourceDefinition": "> In , you need to attach a target to the gesture as its first argument. Therefore this options is irrelevant.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "threshold",
+      "termEn": "threshold",
+      "sourceDefinition": "By default, your gesture handler will be triggered as soon as an event is fired. However, there are situations where you want to make sure the user action is **intentional**: that's where threshold comes into play.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "transform",
+      "termEn": "transform",
+      "sourceDefinition": "When you're interacting with canvas objects, you're dealing with space coordinates that aren't measured in pixels. In that case, you can tell to map screen values to the space with a transform function.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "triggerallevents",
+      "termEn": "triggerAllEvents",
+      "sourceDefinition": "Forces the handler to fire even for non intentional displacement (ignores the threshold). In that case, the intentional attribute from state will remain false until the threshold is reached.",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    },
+    {
+      "sourceRecordId": "usedrag",
+      "termEn": "useDrag",
+      "sourceDefinition": "Handles the drag gesture",
+      "sourceCategory": "gesture",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/gestures",
+      "sourcePath": "documentation/pages/docs/gestures.mdx",
+      "sourceMetadata": {
+        "kind": "gesture"
+      }
+    },
+    {
+      "sourceRecordId": "usegesture",
+      "termEn": "useGesture",
+      "sourceDefinition": "Handles multiple gestures in one hook",
+      "sourceCategory": "gesture",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/gestures",
+      "sourcePath": "documentation/pages/docs/gestures.mdx",
+      "sourceMetadata": {
+        "kind": "gesture"
+      }
+    },
+    {
+      "sourceRecordId": "usehover",
+      "termEn": "useHover",
+      "sourceDefinition": "Handles mouse enter and mouse leave events",
+      "sourceCategory": "gesture",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/gestures",
+      "sourcePath": "documentation/pages/docs/gestures.mdx",
+      "sourceMetadata": {
+        "kind": "gesture"
+      }
+    },
+    {
+      "sourceRecordId": "usemove",
+      "termEn": "useMove",
+      "sourceDefinition": "Handles mouse move events",
+      "sourceCategory": "gesture",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/gestures",
+      "sourcePath": "documentation/pages/docs/gestures.mdx",
+      "sourceMetadata": {
+        "kind": "gesture"
+      }
+    },
+    {
+      "sourceRecordId": "usepinch",
+      "termEn": "usePinch",
+      "sourceDefinition": "Handles the pinch gesture",
+      "sourceCategory": "gesture",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/gestures",
+      "sourcePath": "documentation/pages/docs/gestures.mdx",
+      "sourceMetadata": {
+        "kind": "gesture"
+      }
+    },
+    {
+      "sourceRecordId": "usescroll",
+      "termEn": "useScroll",
+      "sourceDefinition": "Handles scroll events",
+      "sourceCategory": "gesture",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/gestures",
+      "sourcePath": "documentation/pages/docs/gestures.mdx",
+      "sourceMetadata": {
+        "kind": "gesture"
+      }
+    },
+    {
+      "sourceRecordId": "usewheel",
+      "termEn": "useWheel",
+      "sourceDefinition": "Handles wheel events",
+      "sourceCategory": "gesture",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/gestures",
+      "sourcePath": "documentation/pages/docs/gestures.mdx",
+      "sourceMetadata": {
+        "kind": "gesture"
+      }
+    },
+    {
+      "sourceRecordId": "window",
+      "termEn": "window",
+      "sourceDefinition": "Lets you specify which window element the gesture should bind events to (only relevant for the drag gesture).",
+      "sourceCategory": "gesture-option",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    }
+  ]
+}

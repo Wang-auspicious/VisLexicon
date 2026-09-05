@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "footer",
+  "term_en": "Footer",
+  "term_zh": "页脚",
+  "axis": "component",
+  "aliases": [
+    "页尾",
+    "网站底部",
+    "footer 栏"
+  ],
+  "definition_zh": "多列链接 + 版权行 + 状态指示，站点收尾与 SEO 承重墙。",
+  "notation": "C[footer] · cols:brand+4 · legal:bottom-bar",
+  "genes": [
+    {
+      "gene": "结构",
+      "value": "品牌列 + 3–4 组链接列 + 法务行"
+    },
+    {
+      "gene": "信号",
+      "value": "状态页链接 / 语言切换 / 社交"
+    }
+  ],
+  "minimal_code": {
+    "css": ".ft{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:32px}\n.ft small{color:#888}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "页脚不是垃圾场；塞 100 个 SEO 链接不如不放。"
+  ],
+  "tech_notes": [
+    "grid 多列；移动端塌手风琴或简化为两列。"
+  ],
+  "common_pairings": [
+    "navbar"
+  ],
+  "related": [
+    "cta-banner"
+  ],
+  "wild": [
+    {
+      "what": "Apple / Vercel 页脚",
+      "source": "apple.com",
+      "note": "信息架构最完整的页脚样本"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/footer/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/footer.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

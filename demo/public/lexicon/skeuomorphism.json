@@ -1,0 +1,67 @@
+{
+  "lever": "lexicon",
+  "id": "skeuomorphism",
+  "term_en": "Skeuomorphism",
+  "term_zh": "拟物化",
+  "axis": "aesthetic",
+  "aliases": [
+    "拟物",
+    "仿真质感",
+    "skeuo"
+  ],
+  "definition_zh": "复刻真实材质光影：皮革纹理、拉丝金属、按下有物理行程的按钮。",
+  "notation": "A[skeuo] · light:top-left · mat:metal/leather",
+  "genes": [
+    {
+      "gene": "光源",
+      "value": "统一左上高光 + 右下投影"
+    },
+    {
+      "gene": "材质",
+      "value": "渐变 + 纹理贴图模拟实物"
+    },
+    {
+      "gene": "隐喻",
+      "value": "控件长得像它的实体原型"
+    }
+  ],
+  "minimal_code": {
+    "css": ".knob{border-radius:50%;\n  background:radial-gradient(at 30% 30%,#f8f8f8,#c9c9cf 60%,#8f8f96);\n  box-shadow:0 2px 6px rgb(0 0 0/.4), inset 0 1px 1px #fff}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "信息密度高的现代产品别整体拟物；单个“实体感”控件点睛即可。"
+  ],
+  "tech_notes": [
+    "多层 radial/linear 渐变 + 内外阴影叠加；纹理用 SVG noise 成本最低。"
+  ],
+  "common_pairings": [
+    "neumorphism"
+  ],
+  "related": [
+    "minimal-flat"
+  ],
+  "wild": [
+    {
+      "what": "iOS 1–6 原生界面",
+      "source": "Apple",
+      "note": "拟物的黄金时代"
+    },
+    {
+      "what": "GarageBand / 仿真调音台",
+      "source": "Apple",
+      "note": "功能性拟物的活标本"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/skeuomorphism/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/skeuomorphism.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

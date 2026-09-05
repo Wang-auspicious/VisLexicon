@@ -1,0 +1,159 @@
+{
+  "termEn": "Switch",
+  "termZh": "开关",
+  "definitionZh": "开关是一个输入小部件，允许用户选择两个值之一： on 或 off 。开关类似于复选框和切换按钮，也可以用作二进制输入。然而，一个区别是开关只能用于二进制输入，而复选框和切换按钮允许实现支持第三种中间状态的选项。复选框可以被选中或不被选中，并且还可以选择允许部分选中状态。切换按钮可以按下或不按下，并且可以选择允许部分按下状态。",
+  "sourceDefinition": "A switch is an input widget that allows users to choose one of two values: on or off . Switches are similar to checkboxes and toggle buttons , which can also serve as binary inputs. One difference, however, is that switches can only be used for binary input while checkboxes and toggle buttons allow implementations the option of supporting a third middle state. Checkboxes can be checked or not checked and can optionally also allow for a partially checked state. Toggle buttons can be pressed or not pressed and can optionally allow for a partially pressed state.",
+  "axis": "component",
+  "recordType": "component",
+  "aliases": [
+    "on off",
+    "toggle",
+    "toggle switch"
+  ],
+  "scenes": [],
+  "mediaBindings": [
+    "web",
+    "web/react"
+  ],
+  "status": "candidate",
+  "countedAtlas": true,
+  "translationQuality": "machine",
+  "sourceEvidence": [
+    {
+      "sourceId": "ark-ui",
+      "sourceName": "Ark UI",
+      "sourceRecordId": "switch",
+      "url": "https://ark-ui.com/docs/components/switch",
+      "sourcePath": "website/src/content/pages/components/switch.mdx",
+      "sourceCategory": "headless-component",
+      "sourceDefinition": "A control element that allows for a binary selection.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/chakra-ui/ark/blob/main/LICENSE",
+      "retrievedAt": "2026-09-03",
+      "revision": "7e1a3a702ba629b4651670530742dfb72d6db769",
+      "sourceMetadata": {}
+    },
+    {
+      "sourceId": "chakra-ui",
+      "sourceName": "Chakra UI",
+      "sourceRecordId": "switch",
+      "url": "https://chakra-ui.com/docs/components/switch",
+      "sourcePath": "/docs/components/switch",
+      "sourceCategory": "react-component",
+      "sourceDefinition": "The Switch.Control renders the Switch.Thumb within it by default.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE",
+      "retrievedAt": "2026-08-31",
+      "revision": "0b5eeb3f23ad6caff26395383ac535f415958950",
+      "sourceMetadata": {
+        "framework": "react",
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "headless-ui",
+      "sourceName": "Headless UI",
+      "sourceRecordId": "switch",
+      "url": "https://headlessui.com/react/switch",
+      "sourcePath": "/react/switch",
+      "sourceCategory": "react-primitive",
+      "sourceDefinition": "Switches are a pleasant interface for toggling a value between two states, and offer the same semantics and keyboard navigation as native checkbox elements.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/tailwindlabs/headlessui/blob/main/LICENSE",
+      "retrievedAt": "2026-08-31",
+      "revision": "39f9d51d7a2e31ddb6240f63080ee9b9681c1a25",
+      "sourceMetadata": {
+        "framework": "react",
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "mantine",
+      "sourceName": "Mantine",
+      "sourceRecordId": "component-Switch",
+      "url": "https://mantine.dev/core/switch",
+      "sourcePath": "apps/mantine.dev/src/mdx/data/mdx-core-data.ts",
+      "sourceCategory": "react-component",
+      "sourceDefinition": "Capture boolean input from user",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mantinedev/mantine/blob/master/LICENSE",
+      "retrievedAt": "2026-09-03",
+      "revision": "3862b09668c4523161a5b635666e0d68a3fe347b",
+      "sourceMetadata": {
+        "kind": "component"
+      }
+    },
+    {
+      "sourceId": "mui",
+      "sourceName": "Material UI (MUI)",
+      "sourceRecordId": "react-switch",
+      "url": "https://mui.com/material-ui/react-switch/",
+      "sourcePath": "/material-ui/react-switch/",
+      "sourceCategory": "react-component",
+      "sourceDefinition": "Switches toggle the state of a single setting on or off.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mui/material-ui/blob/master/LICENSE",
+      "retrievedAt": "2026-08-31",
+      "revision": "90d5cf039dfd6361e5d57801d2a5eadcfb1556ab",
+      "sourceMetadata": {
+        "framework": "react",
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "radix-ui",
+      "sourceName": "Radix UI Primitives",
+      "sourceRecordId": "switch",
+      "url": "https://www.radix-ui.com/primitives/docs/components/switch",
+      "sourcePath": "/primitives/docs/components/switch",
+      "sourceCategory": "react-primitive",
+      "sourceDefinition": "A control that allows the user to toggle between checked and not checked.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/radix-ui/primitives/blob/main/LICENSE",
+      "retrievedAt": "2026-08-31",
+      "revision": "34b165907b4609ef18ad1cb7124e63dc319ee333",
+      "sourceMetadata": {
+        "framework": "react",
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "wai-aria-apg",
+      "sourceName": "WAI-ARIA Authoring Practices Guide",
+      "sourceRecordId": "switch",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/switch/",
+      "sourcePath": "content/patterns/switch/switch-pattern.html",
+      "sourceCategory": "accessibility-pattern",
+      "sourceDefinition": "A switch is an input widget that allows users to choose one of two values: on or off . Switches are similar to checkboxes and toggle buttons , which can also serve as binary inputs. One difference, however, is that switches can only be used for binary input while checkboxes and toggle buttons allow implementations the option of supporting a third middle state. Checkboxes can be checked or not checked and can optionally also allow for a partially checked state. Toggle buttons can be pressed or not pressed and can optionally allow for a partially pressed state.",
+      "license": "W3C Software and Document License",
+      "licenseUrl": "https://github.com/w3c/aria-practices/blob/main/LICENSE.md",
+      "retrievedAt": "2026-08-31",
+      "revision": "7e4034b262bc0d25332e330d8a582aaf34113829",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "web-awesome",
+      "sourceName": "Web Awesome (Shoelace)",
+      "sourceRecordId": "switch",
+      "url": "https://webawesome.com/docs/components/switch",
+      "sourcePath": "packages/webawesome/docs/docs/components/switch.md",
+      "sourceCategory": "Forms",
+      "sourceDefinition": "Add label text as the switch's default content. For labels that contain HTML, slot the markup in directly.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/shoelace-style/webawesome/blob/next/LICENSE.md",
+      "retrievedAt": "2026-09-03",
+      "revision": "f1981f73d9c53977108da7d30ed90c6a3eda8145",
+      "sourceMetadata": {
+        "aliases": [
+          "toggle",
+          "toggle switch",
+          "on off"
+        ],
+        "docsCategory": "Forms"
+      }
+    }
+  ],
+  "id": "atlas-component-component-switch"
+}

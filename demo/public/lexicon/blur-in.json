@@ -1,0 +1,68 @@
+{
+  "lever": "lexicon",
+  "id": "blur-in",
+  "term_en": "Blur In",
+  "term_zh": "虚化入场",
+  "axis": "motion",
+  "aliases": [
+    "模糊入场",
+    "focus-in",
+    "blur fade"
+  ],
+  "definition_zh": "从模糊+透明过渡到清晰，比纯 fade 更有对焦仪式感。",
+  "notation": "M[blurIn] · from:blur(12px)+o0 · t:600ms",
+  "genes": [
+    {
+      "gene": "起点",
+      "value": "blur(8–16px) + opacity 0"
+    },
+    {
+      "gene": "节奏",
+      "value": "标题慢、正文快，制造对焦层次"
+    }
+  ],
+  "minimal_code": {
+    "css": ".in{animation:blurIn .6s both}\n@keyframes blurIn{from{opacity:0;filter:blur(12px)}\n  to{opacity:1;filter:blur(0)}}"
+  },
+  "params": [
+    {
+      "key": "blur",
+      "label": "起始模糊",
+      "min": 4,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    }
+  ],
+  "anti_patterns": [
+    "filter:blur 是高开销属性，列表级元素别全用。"
+  ],
+  "tech_notes": [
+    "只在标题级用；与 opacity 同步过渡避免闪帧。"
+  ],
+  "common_pairings": [
+    "stagger-reveal"
+  ],
+  "related": [
+    "shimmer"
+  ],
+  "wild": [
+    {
+      "what": "Apple 发布会大屏文案",
+      "source": "apple.com",
+      "note": "对焦式出场的最大舞台"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/blur-in/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/blur-in.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

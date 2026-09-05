@@ -1,0 +1,63 @@
+{
+  "lever": "lexicon",
+  "id": "editorial",
+  "term_en": "Editorial",
+  "term_zh": "杂志编辑风",
+  "axis": "aesthetic",
+  "aliases": [
+    "杂志风",
+    "编辑排版",
+    "刊物风",
+    "serif 大标题"
+  ],
+  "definition_zh": "衬线大标题、首字下沉、细分栏线，纸刊排版的数字转译。",
+  "notation": "A[ed] · display:serif · dropcap:yes · rule:1px",
+  "genes": [
+    {
+      "gene": "字体",
+      "value": "衬线 display + 非衬线正文"
+    },
+    {
+      "gene": "首字下沉",
+      "value": "::first-letter 大号"
+    },
+    {
+      "gene": "栏线",
+      "value": "细分界线 / 花饰分隔"
+    }
+  ],
+  "minimal_code": {
+    "css": ".ed h3{font-family:Georgia,serif;font-size:clamp(2rem,6vw,4rem)}\n.ed p::first-letter{float:left;font-size:3.2em;line-height:.8}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "字间距/行高不精致就像“没排版的 Word”；移动端降级 font clamp。"
+  ],
+  "tech_notes": [
+    "clamp() 做响应式字号；首字下沉用 float 保证中文兼容。"
+  ],
+  "common_pairings": [
+    "marquee"
+  ],
+  "related": [
+    "terminal"
+  ],
+  "wild": [
+    {
+      "what": "NYT / 各类 literary 站",
+      "source": "nytimes.com",
+      "note": "纸刊排版的数字继承"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/editorial/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/editorial.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

@@ -1,0 +1,62 @@
+{
+  "lever": "lexicon",
+  "id": "pixel-retro",
+  "term_en": "Pixel Retro",
+  "term_zh": "像素复古",
+  "axis": "aesthetic",
+  "aliases": [
+    "像素风",
+    "8bit",
+    "retro pixel"
+  ],
+  "definition_zh": "整数倍放大的低分辨率像素图 + 硬边无抗锯齿 + 有限色板。",
+  "notation": "A[pixel] · scale:int ×4 · aa:off · palette:8",
+  "genes": [
+    {
+      "gene": "缩放",
+      "value": "整数倍放大，image-rendering:pixelated"
+    },
+    {
+      "gene": "色板",
+      "value": "≤16 色，自带复古滤镜"
+    },
+    {
+      "gene": "字",
+      "value": "点阵字体，字号也走整数"
+    }
+  ],
+  "minimal_code": {
+    "css": ".pix{image-rendering:pixelated;width:64px;height:64px}\n.pixfont{font-family:'Press Start 2P',monospace}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "像素风与大段正文互斥；信息密度高的界面别用。"
+  ],
+  "tech_notes": [
+    "box-shadow 画像素或 SVG shape-rendering:crispEdges；禁平滑插值。"
+  ],
+  "common_pairings": [
+    "terminal"
+  ],
+  "related": [
+    "editorial"
+  ],
+  "wild": [
+    {
+      "what": "itch.io 独立游戏页",
+      "source": "itch.io",
+      "note": "像素游戏的天然主场"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/pixel-retro/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/pixel-retro.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

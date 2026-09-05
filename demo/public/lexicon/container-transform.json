@@ -1,0 +1,118 @@
+{
+  "lever": "lexicon",
+  "id": "container-transform",
+  "term_en": "Container Transform",
+  "term_zh": "容器变形",
+  "axis": "motion",
+  "aliases": [
+    "容器转场",
+    "circle to pill",
+    "圆变胶囊",
+    "卡片展开",
+    "shared element",
+    "共享元素转场"
+  ],
+  "definition_zh": "一个容器连续变形为另一个容器，形状、尺寸、圆角与内容同时过渡，空间连续性不断。",
+  "notation": "CT[circle→card] · corner:continuous · content:fade-through · spring(0.85,22) · origin:tap-point · 340ms",
+  "genes": [
+    {
+      "gene": "形状通道",
+      "value": "circle → pill → card → sheet（from/to 各取一值）"
+    },
+    {
+      "gene": "圆角通道",
+      "value": "线性插值 / 连续曲率(超椭圆) / 先方后圆"
+    },
+    {
+      "gene": "内容通道",
+      "value": "crossfade / fade-through / reflow / clip 显露"
+    },
+    {
+      "gene": "原点通道",
+      "value": "原地 / 从触点生长 / 贴边展开"
+    },
+    {
+      "gene": "时间通道",
+      "value": "时长档位 × 缓动族 × 是否 stagger 子元素"
+    },
+    {
+      "gene": "逆过程",
+      "value": "对称收回 / 不对称收回 / 直接消失"
+    }
+  ],
+  "minimal_code": {
+    "css": "/* from/to 用同一个元素，别用两个元素做假淡入淡出 */\n.ct{transition:width .34s var(--e),height .34s var(--e),border-radius .34s var(--e)}\n.ct[data-state=\"closed\"]{width:52px;height:52px;border-radius:999px}\n.ct[data-state=\"open\"]{width:100%;height:180px;border-radius:16px}\n.ct .old{transition:opacity .12s linear}          /* 先出 */\n.ct .new{transition:opacity .18s linear .12s}     /* 后入 = fade-through */"
+  },
+  "params": [
+    {
+      "key": "dur",
+      "label": "时长",
+      "min": 160,
+      "max": 900,
+      "step": 20,
+      "unit": "ms",
+      "default": 340
+    },
+    {
+      "key": "radius",
+      "label": "终态圆角",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "key": "overshoot",
+      "label": "过冲",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "%",
+      "default": 18
+    }
+  ],
+  "anti_patterns": [
+    "两个元素做假的淡入淡出不叫容器变形——用户看得出空间断了；也别在列表里给每一项都上，会晕。"
+  ],
+  "tech_notes": [
+    "FLIP 或 View Transitions API 最稳；width/height 过渡触发布局，量大时改用 scale + 反向缩放子元素补偿。"
+  ],
+  "common_pairings": [
+    "spring",
+    "view-transition",
+    "card-stack"
+  ],
+  "related": [
+    "flip",
+    "view-transition"
+  ],
+  "wild": [
+    {
+      "what": "Material 3 Container Transform",
+      "source": "m3.material.io",
+      "note": "官方正式术语，本词条严格对齐其命名"
+    },
+    {
+      "what": "iOS App 图标 → 全屏",
+      "source": "iOS Springboard",
+      "note": "连续曲率圆角 + 触点生长的工业级样本"
+    },
+    {
+      "what": "Arc 浏览器新建标签",
+      "source": "arc.net",
+      "note": "胶囊 → 卡片，内容 reflow 而非淡入"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/container-transform/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/container-transform.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

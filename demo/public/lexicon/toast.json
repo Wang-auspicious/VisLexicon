@@ -1,0 +1,59 @@
+{
+  "lever": "lexicon",
+  "id": "toast",
+  "term_en": "Toast / Notification",
+  "term_zh": "吐司通知",
+  "axis": "component",
+  "aliases": [
+    "toast",
+    "通知条",
+    "消息提醒",
+    "snackbar"
+  ],
+  "definition_zh": "角落堆叠滑入，自动消退，状态色区分语义。",
+  "notation": "C[toast] · pos:top-right · slide:spring · auto:dismiss",
+  "genes": [
+    {
+      "gene": "位置",
+      "value": "top-right 堆叠"
+    },
+    {
+      "gene": "状态色",
+      "value": "ok/warn/info 三态"
+    }
+  ],
+  "minimal_code": {
+    "css": ".toast{animation:slideIn .35s cubic-bezier(.3,1.2,.55,1) both}\n.toast i{width:8px;border-radius:99px;background:var(--ok)}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "toast 过多=提醒轰炸；破坏性操作要配可撤销而非自动消退。"
+  ],
+  "tech_notes": [
+    "栈式堆叠 + 滑入 spring + 定时退场；区分必要/可选通知。"
+  ],
+  "common_pairings": [
+    "spring"
+  ],
+  "related": [
+    "modal"
+  ],
+  "wild": [
+    {
+      "what": "Sonner（shadcn 生态）",
+      "source": "sonner.emilkowal.ski",
+      "note": "web toast 的当代默认"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/toast/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/toast.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

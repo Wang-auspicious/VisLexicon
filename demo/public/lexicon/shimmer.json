@@ -1,0 +1,69 @@
+{
+  "lever": "lexicon",
+  "id": "shimmer",
+  "term_en": "Shimmer / Skeleton",
+  "term_zh": "骨架微光",
+  "axis": "motion",
+  "aliases": [
+    "骨架屏",
+    "加载 shimmer",
+    "占位微光",
+    "skeleton screen"
+  ],
+  "definition_zh": "灰阶占位块上扫过一道斜向高光，暗示“加载中”。",
+  "notation": "M[shimmer] · slope:100° · t:duration · pos:scan",
+  "genes": [
+    {
+      "gene": "斜度",
+      "value": "100° 高光扫过"
+    },
+    {
+      "gene": "形状",
+      "value": "占位应与真实内容同构"
+    }
+  ],
+  "minimal_code": {
+    "css": ".sk{background:linear-gradient(100deg,#2222 40%,#fff3 50%,#2222 60%);\n  background-size:200% 100%;animation:sh 1.6s infinite}"
+  },
+  "params": [
+    {
+      "key": "duration",
+      "label": "周期",
+      "min": 0.8,
+      "max": 3,
+      "step": 0.1,
+      "unit": "s",
+      "default": 1.6
+    }
+  ],
+  "anti_patterns": [
+    "已加载的内容不要残留骨架位；高频闪烁要克制。"
+  ],
+  "tech_notes": [
+    "渐变 background-size 200% 平移；尊重 reduced-motion。"
+  ],
+  "common_pairings": [
+    "masonry"
+  ],
+  "related": [
+    "stagger-reveal"
+  ],
+  "wild": [
+    {
+      "what": "各种 feed 加载",
+      "source": "多平台",
+      "note": "骨架屏替代转圈成为事实标准"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/shimmer/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/shimmer.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

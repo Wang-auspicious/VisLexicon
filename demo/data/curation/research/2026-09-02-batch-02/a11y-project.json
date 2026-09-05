@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 3,
+  "draftKind": "real-site-curation",
+  "batchId": "2026-09-02-batch-02",
+  "siteId": "a11y-project",
+  "status": "CAPTURED_PENDING_INDEPENDENT_REVIEW",
+  "entity": {
+    "entityId": "entity-a11y-project",
+    "entityKey": "domain:a11yproject.com",
+    "name": "A11Y Project",
+    "aliases": [
+      "https://a11yproject.com/"
+    ],
+    "canonicalUrl": "https://www.a11yproject.com/",
+    "candidateIds": [
+      "a11y-project-frozen-candidate"
+    ],
+    "identityDecision": "a11yproject.com 与 a11yproject/a11yproject.com 官方仓库属于同一社区项目；WCAG 本身和外部培训资源不并入该 entry。"
+  },
+  "official": {
+    "inputUrl": "https://www.a11yproject.com/",
+    "finalUrl": "https://www.a11yproject.com/",
+    "checkedAt": "2026-09-02T02:11:30.000Z"
+  },
+  "research": {
+    "explorationMethod": "真实浏览器访问官网首页、About 页面和 Checklist 页面；用官方仓库 README、LICENSE-APLv2 与 accessibility statement 核对开放源码、维护方式和审核动作。",
+    "internalEssenceZh": "社区维护的无障碍教育与审核参考站，提供基础知识、资源索引和可逐项检查的 WCAG 清单。",
+    "descriptionZh": "A11Y Project 是社区驱动的数字无障碍教育与实践资源，首页、About 和 Checklist 将基础概念、工具资源与可逐项执行的 WCAG 检查连接起来；适合设计师和开发者学习、审计并改进网页，无障碍内容与站点代码均有清晰来源。",
+    "descriptionCodePointLength": 120,
+    "importantLimitZh": "Checklist 是帮助发现问题的参考，不承诺网站达到 100% 无障碍；WCAG 规范和外部资源仍需按各自许可使用。",
+    "classificationScopeNoteZh": "本 entry 覆盖 A11Y Project 社区站点及其清单入口，不把 WCAG 标准或第三方课程合并成同一实体。"
+  },
+  "classification": {
+    "name": "A11Y Project",
+    "recordLevel": "entry",
+    "entryId": "a11y-project",
+    "entityId": "entity-a11y-project",
+    "primaryCategory": "research-quality-tools",
+    "subcategory": "accessibility-audit-remediation",
+    "status": "needs-review",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网提供可逐项执行的 accessibility checklist，主要动作是审计和修复网页无障碍问题。",
+        "evidenceUrl": "https://www.a11yproject.com/checklist/"
+      },
+      {
+        "statement": "About 与 accessibility statement 同时提供学习资源、自动/人工检查方法和社区维护边界。",
+        "evidenceUrl": "https://www.a11yproject.com/about/"
+      }
+    ]
+  },
+  "facets": {
+    "scenarios": [
+      "education"
+    ],
+    "deliverables": [
+      "standard",
+      "report",
+      "glossary"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "learn",
+      "audit"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "svg"
+    ],
+    "workflowStages": [
+      "discovery",
+      "design",
+      "test"
+    ],
+    "audiences": [
+      "designer",
+      "developer",
+      "educator",
+      "researcher"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "course",
+      "editorial-feed",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "The A11Y Project community and maintainers",
+      "sourceUrl": "https://www.a11yproject.com/about/",
+      "evidence": "About 页说明项目由社区和维护者共同维护，不指向单一作者。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "The A11Y Project",
+      "sourceUrl": "https://www.a11yproject.com/",
+      "evidence": "官网首页与页脚使用 The A11Y Project 作为项目身份。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/a11yproject/a11yproject.com",
+      "sourceUrl": "https://www.a11yproject.com/about/",
+      "evidence": "About 页直接链接官方 GitHub 仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/a11yproject/a11yproject.com/blob/main/LICENSE-APLv2",
+      "evidence": "官方仓库以 LICENSE-APLv2 文件发布站点源码许可，名称对应 Apache License 2.0。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free public resource",
+      "sourceUrl": "https://www.a11yproject.com/checklist/",
+      "evidence": "Checklist 与教育内容无需付费即可公开访问。",
+      "confidence": 1
+    }
+  ],
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.a11yproject.com/",
+      "finalUrl": "https://www.a11yproject.com/",
+      "title": "Home - The A11Y Project",
+      "selectionRationale": "首页同时呈现社区使命、无障碍教育入口和项目名称，是识别实体与范围的最完整页面。",
+      "shot": {
+        "src": "/shots/a11y-project/v2-identity.png",
+        "sha256": "9667918e6261fcdcdf65003adf79707ac42b7c75299377e62ceb8f098908037d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86179,
+        "alt": "A11Y Project identity evidence screenshot"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.a11yproject.com/about/",
+      "finalUrl": "https://www.a11yproject.com/about/",
+      "title": "About - The A11Y Project",
+      "selectionRationale": "About 页把基础概念、包容性、社区、技术栈和资源入口组织在同一站点范围内。",
+      "shot": {
+        "src": "/shots/a11y-project/v2-breadth.png",
+        "sha256": "edd80ed69f01ec123f394ae37fca3a1d54b90e1fb2a1de80c3046ad06d449647",
+        "width": 1280,
+        "height": 900,
+        "bytes": 120128,
+        "alt": "A11Y Project breadth evidence screenshot"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.a11yproject.com/checklist/#use-plain-language-and-avoid-figures-of-speech-idioms-and-complicated-metaphors",
+      "finalUrl": "https://www.a11yproject.com/checklist/#use-plain-language-and-avoid-figures-of-speech-idioms-and-complicated-metaphors",
+      "title": "Checklist - The A11Y Project",
+      "selectionRationale": "Checklist 画面显示真实的 Content 检查项、WCAG 3.1.5 引用和可勾选控制，证明清单可执行。",
+      "shot": {
+        "src": "/shots/a11y-project/v2-proof.png",
+        "sha256": "8048e597691ba7054affc197c1eaf7f50d7265bbca77d97d779cffd5a7e087cb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 76728,
+        "alt": "A11Y Project proof evidence screenshot"
+      }
+    }
+  ],
+  "qa": {
+    "curatorId": "real-sites-batch-02-agent",
+    "technicalCapturePassed": true,
+    "selfVisualCheckPassed": true,
+    "descriptionLengthPassed": true,
+    "classificationValidated": true,
+    "facetsValidated": true,
+    "independentReviewRequired": true,
+    "publicationEligible": false
+  },
+  "independentReview": {
+    "required": true,
+    "status": "PENDING"
+  }
+}

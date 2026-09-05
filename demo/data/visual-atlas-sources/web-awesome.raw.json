@@ -1,0 +1,1469 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "id": "web-awesome",
+    "name": "Web Awesome (Shoelace)",
+    "url": "https://webawesome.com/docs/components",
+    "repository": "https://github.com/shoelace-style/webawesome",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/shoelace-style/webawesome/blob/next/LICENSE.md",
+    "retrievedAt": "2026-09-03",
+    "revision": "f1981f73d9c53977108da7d30ed90c6a3eda8145",
+    "verifiedCount": 89,
+    "countedAtlas": true,
+    "retrieval": "live-site"
+  },
+  "records": [
+    {
+      "sourceRecordId": "accordion-item",
+      "termEn": "Accordion Item",
+      "sourceDefinition": "This component must be used as a child of ` `. Please see the [Accordion docs](/docs/components/accordion) to see examples of this component in action.",
+      "sourceCategory": "Layout",
+      "sourceUrl": "https://webawesome.com/docs/components/accordion-item",
+      "sourcePath": "packages/webawesome/docs/docs/components/accordion-item.md",
+      "sourceMetadata": {
+        "aliases": [
+          "collapsible section",
+          "expandable section",
+          "disclosure item",
+          "panel",
+          "expandable panel"
+        ],
+        "docsCategory": "Layout"
+      }
+    },
+    {
+      "sourceRecordId": "accordion",
+      "termEn": "Accordion",
+      "sourceDefinition": "Accordions use [accordion items](/docs/components/accordion-item) to create a vertically stacked set of expandable sections.",
+      "sourceCategory": "Layout",
+      "sourceUrl": "https://webawesome.com/docs/components/accordion",
+      "sourcePath": "packages/webawesome/docs/docs/components/accordion.md",
+      "sourceMetadata": {
+        "aliases": [
+          "collapsible",
+          "expandable",
+          "disclosure",
+          "FAQ",
+          "panel group",
+          "details list"
+        ],
+        "docsCategory": "Layout"
+      }
+    },
+    {
+      "sourceRecordId": "animated-image",
+      "termEn": "Animated Image",
+      "sourceDefinition": "Both GIF and WEBP images are supported.",
+      "sourceCategory": "Media",
+      "sourceUrl": "https://webawesome.com/docs/components/animated-image",
+      "sourcePath": "packages/webawesome/docs/docs/components/animated-image.md",
+      "sourceMetadata": {
+        "aliases": [
+          "gif",
+          "webp",
+          "motion image"
+        ],
+        "docsCategory": "Media"
+      }
+    },
+    {
+      "sourceRecordId": "animation",
+      "termEn": "Animation",
+      "sourceDefinition": "To animate an element, wrap it in ` ` and set the `name` attribute. The animation will not start until you add the `play` attribute. Refer to the [properties table](#attributes-and-properties) for a list of all animation options.",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/animation",
+      "sourcePath": "packages/webawesome/docs/docs/components/animation.md",
+      "sourceMetadata": {
+        "aliases": [
+          "motion",
+          "transition",
+          "keyframes",
+          "animate"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "avatar",
+      "termEn": "Avatar",
+      "sourceDefinition": "By default, a generic icon will be shown. You can personalize avatars by adding [images](#image), [initials](#initials), and [custom icons](#custom-icon). You should always provide a `label` for assistive devices.",
+      "sourceCategory": "Media",
+      "sourceUrl": "https://webawesome.com/docs/components/avatar",
+      "sourcePath": "packages/webawesome/docs/docs/components/avatar.md",
+      "sourceMetadata": {
+        "aliases": [
+          "profile picture",
+          "user image",
+          "profile photo",
+          "user icon"
+        ],
+        "docsCategory": "Media"
+      }
+    },
+    {
+      "sourceRecordId": "badge",
+      "termEn": "Badge",
+      "sourceDefinition": "Set the `variant` attribute to change the badge's variant.",
+      "sourceCategory": "Feedback",
+      "sourceUrl": "https://webawesome.com/docs/components/badge",
+      "sourcePath": "packages/webawesome/docs/docs/components/badge.md",
+      "sourceMetadata": {
+        "aliases": [
+          "chip",
+          "label",
+          "count",
+          "indicator",
+          "pill"
+        ],
+        "docsCategory": "Feedback"
+      }
+    },
+    {
+      "sourceRecordId": "breadcrumb-item",
+      "termEn": "Breadcrumb Item",
+      "sourceDefinition": "This component must be used as a child of ` `. Please see the [Breadcrumb docs](/docs/components/breadcrumb) to see examples of this component in action.",
+      "sourceCategory": "Navigation",
+      "sourceUrl": "https://webawesome.com/docs/components/breadcrumb-item",
+      "sourcePath": "packages/webawesome/docs/docs/components/breadcrumb-item.md",
+      "sourceMetadata": {
+        "aliases": [
+          "breadcrumb link",
+          "crumb"
+        ],
+        "docsCategory": "Navigation"
+      }
+    },
+    {
+      "sourceRecordId": "breadcrumb",
+      "termEn": "Breadcrumb",
+      "sourceDefinition": "Breadcrumbs are usually placed before a page's main content with the current page shown last to indicate the user's position in the navigation.",
+      "sourceCategory": "Navigation",
+      "sourceUrl": "https://webawesome.com/docs/components/breadcrumb",
+      "sourcePath": "packages/webawesome/docs/docs/components/breadcrumb.md",
+      "sourceMetadata": {
+        "aliases": [
+          "breadcrumbs",
+          "navigation trail",
+          "path"
+        ],
+        "docsCategory": "Navigation"
+      }
+    },
+    {
+      "sourceRecordId": "button-group",
+      "termEn": "Button Group",
+      "sourceDefinition": "Set the `orientation` attribute to `vertical` to stack the buttons instead of placing them side by side.",
+      "sourceCategory": "Actions",
+      "sourceUrl": "https://webawesome.com/docs/components/button-group",
+      "sourcePath": "packages/webawesome/docs/docs/components/button-group.md",
+      "sourceMetadata": {
+        "aliases": [
+          "button bar",
+          "toolbar",
+          "action group",
+          "segmented control"
+        ],
+        "docsCategory": "Actions"
+      }
+    },
+    {
+      "sourceRecordId": "button",
+      "termEn": "Button",
+      "sourceDefinition": "Use the `variant` attribute to set the button's [semantic variant](/docs/theming-overview#variants).",
+      "sourceCategory": "Actions",
+      "sourceUrl": "https://webawesome.com/docs/components/button",
+      "sourcePath": "packages/webawesome/docs/docs/components/button.md",
+      "sourceMetadata": {
+        "aliases": [
+          "btn",
+          "action",
+          "CTA",
+          "submit"
+        ],
+        "docsCategory": "Actions"
+      }
+    },
+    {
+      "sourceRecordId": "callout",
+      "termEn": "Callout",
+      "sourceDefinition": "Set the `variant` attribute to match the callout to its message.",
+      "sourceCategory": "Feedback",
+      "sourceUrl": "https://webawesome.com/docs/components/callout",
+      "sourcePath": "packages/webawesome/docs/docs/components/callout.md",
+      "sourceMetadata": {
+        "aliases": [
+          "alert",
+          "admonition",
+          "notice",
+          "banner",
+          "infobox"
+        ],
+        "docsCategory": "Feedback"
+      }
+    },
+    {
+      "sourceRecordId": "card",
+      "termEn": "Card",
+      "sourceDefinition": "A card can hold any content. Media, a header, and a footer are all optional.",
+      "sourceCategory": "Layout",
+      "sourceUrl": "https://webawesome.com/docs/components/card",
+      "sourcePath": "packages/webawesome/docs/docs/components/card.md",
+      "sourceMetadata": {
+        "aliases": [
+          "tile",
+          "panel",
+          "content box",
+          "surface"
+        ],
+        "docsCategory": "Layout"
+      }
+    },
+    {
+      "sourceRecordId": "carousel-item",
+      "termEn": "Carousel Item",
+      "sourceDefinition": "This component must be used as a child of ` `. Please see the [Carousel docs](/docs/components/carousel) to see examples of this component in action.",
+      "sourceCategory": "Media",
+      "sourceUrl": "https://webawesome.com/docs/components/carousel-item",
+      "sourcePath": "packages/webawesome/docs/docs/components/carousel-item.md",
+      "sourceMetadata": {
+        "aliases": [
+          "slide",
+          "carousel slide"
+        ],
+        "docsCategory": "Media"
+      }
+    },
+    {
+      "sourceRecordId": "carousel",
+      "termEn": "Carousel",
+      "sourceDefinition": "Use the `pagination` attribute to show the total number of slides and the current slide as a set of interactive dots.",
+      "sourceCategory": "Media",
+      "sourceUrl": "https://webawesome.com/docs/components/carousel",
+      "sourcePath": "packages/webawesome/docs/docs/components/carousel.md",
+      "sourceMetadata": {
+        "aliases": [
+          "slider",
+          "slideshow",
+          "image gallery",
+          "rotator",
+          "swiper"
+        ],
+        "docsCategory": "Media"
+      }
+    },
+    {
+      "sourceRecordId": "checkbox-group",
+      "termEn": "Checkbox Group",
+      "sourceDefinition": "Checkbox groups give a set of related checkboxes or switches a shared label, hint, and grouping semantics.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/checkbox-group",
+      "sourcePath": "packages/webawesome/docs/docs/components/checkbox-group.md",
+      "sourceMetadata": {
+        "aliases": [
+          "checkbox list",
+          "option group",
+          "multi-select"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "checkbox",
+      "termEn": "Checkbox",
+      "sourceDefinition": "Use the `checked` attribute to activate the checkbox.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/checkbox",
+      "sourcePath": "packages/webawesome/docs/docs/components/checkbox.md",
+      "sourceMetadata": {
+        "aliases": [
+          "check",
+          "tick",
+          "checkmark"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "color-picker",
+      "termEn": "Color Picker",
+      "sourceDefinition": "Use the `label` attribute to give the color picker an accessible label. For labels that contain HTML, use the `label` slot instead.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/color-picker",
+      "sourcePath": "packages/webawesome/docs/docs/components/color-picker.md",
+      "sourceMetadata": {
+        "aliases": [
+          "color chooser",
+          "color selector",
+          "colour picker",
+          "eyedropper"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "comparison",
+      "termEn": "Comparison",
+      "sourceDefinition": "Compare two pieces of content with a divider users can drag across them. It's most often used for before/after images — for best results, the two sides should share the same dimensions. Any content works, though; see the [theme page](/docs/themes) for a full-UI example.",
+      "sourceCategory": "Media",
+      "sourceUrl": "https://webawesome.com/docs/components/comparison",
+      "sourcePath": "packages/webawesome/docs/docs/components/comparison.md",
+      "sourceMetadata": {
+        "aliases": [
+          "before after",
+          "image compare",
+          "diff slider"
+        ],
+        "docsCategory": "Media"
+      }
+    },
+    {
+      "sourceRecordId": "copy-button",
+      "termEn": "Copy Button",
+      "sourceDefinition": "Set the `value` attribute to copy a literal string, or point the `from` attribute at another element's `id` to copy live content. When both are present, `from` wins.",
+      "sourceCategory": "Actions",
+      "sourceUrl": "https://webawesome.com/docs/components/copy-button",
+      "sourcePath": "packages/webawesome/docs/docs/components/copy-button.md",
+      "sourceMetadata": {
+        "aliases": [
+          "clipboard",
+          "copy to clipboard",
+          "copy icon"
+        ],
+        "docsCategory": "Actions"
+      }
+    },
+    {
+      "sourceRecordId": "details",
+      "termEn": "Details",
+      "sourceDefinition": "Use the `open` attribute to expand the details initially.",
+      "sourceCategory": "Layout",
+      "sourceUrl": "https://webawesome.com/docs/components/details",
+      "sourcePath": "packages/webawesome/docs/docs/components/details.md",
+      "sourceMetadata": {
+        "aliases": [
+          "accordion",
+          "collapsible",
+          "expandable",
+          "disclosure",
+          "expander"
+        ],
+        "docsCategory": "Layout"
+      }
+    },
+    {
+      "sourceRecordId": "dialog",
+      "termEn": "Dialog",
+      "sourceDefinition": "openButton.addEventListener('click', () => (dialog.open = true)); ```",
+      "sourceCategory": "Layout",
+      "sourceUrl": "https://webawesome.com/docs/components/dialog",
+      "sourcePath": "packages/webawesome/docs/docs/components/dialog.md",
+      "sourceMetadata": {
+        "aliases": [
+          "modal",
+          "popup",
+          "lightbox",
+          "overlay",
+          "modal dialog"
+        ],
+        "docsCategory": "Layout"
+      }
+    },
+    {
+      "sourceRecordId": "divider",
+      "termEn": "Divider",
+      "sourceDefinition": "Use the `--width` custom property to change the width of the divider.",
+      "sourceCategory": "Layout",
+      "sourceUrl": "https://webawesome.com/docs/components/divider",
+      "sourcePath": "packages/webawesome/docs/docs/components/divider.md",
+      "sourceMetadata": {
+        "aliases": [
+          "separator",
+          "rule",
+          "line",
+          "hr",
+          "horizontal rule"
+        ],
+        "docsCategory": "Layout"
+      }
+    },
+    {
+      "sourceRecordId": "drawer",
+      "termEn": "Drawer",
+      "sourceDefinition": "openButton.addEventListener('click', () => (drawer.open = true)); ```",
+      "sourceCategory": "Layout",
+      "sourceUrl": "https://webawesome.com/docs/components/drawer",
+      "sourcePath": "packages/webawesome/docs/docs/components/drawer.md",
+      "sourceMetadata": {
+        "aliases": [
+          "sidebar",
+          "side panel",
+          "offcanvas",
+          "slide-out",
+          "tray",
+          "sheet"
+        ],
+        "docsCategory": "Layout"
+      }
+    },
+    {
+      "sourceRecordId": "dropdown-item",
+      "termEn": "Dropdown Item",
+      "sourceDefinition": "This component must be used as a child of ` `. Please see the [Dropdown docs](/docs/components/dropdown) to see examples of this component in action.",
+      "sourceCategory": "Actions",
+      "sourceUrl": "https://webawesome.com/docs/components/dropdown-item",
+      "sourcePath": "packages/webawesome/docs/docs/components/dropdown-item.md",
+      "sourceMetadata": {
+        "aliases": [
+          "menu item",
+          "action item",
+          "list item"
+        ],
+        "docsCategory": "Actions"
+      }
+    },
+    {
+      "sourceRecordId": "dropdown",
+      "termEn": "Dropdown",
+      "sourceDefinition": "A dropdown pairs a trigger with a panel: activating the trigger opens the panel, and interacting outside it closes the panel. Most dropdowns hold [dropdown items](/docs/components/dropdown-item), but the API also gives you direct control over showing, hiding, and positioning the panel for lower-level uses.",
+      "sourceCategory": "Actions",
+      "sourceUrl": "https://webawesome.com/docs/components/dropdown",
+      "sourcePath": "packages/webawesome/docs/docs/components/dropdown.md",
+      "sourceMetadata": {
+        "aliases": [
+          "menu",
+          "context menu",
+          "action menu",
+          "popout"
+        ],
+        "docsCategory": "Actions"
+      }
+    },
+    {
+      "sourceRecordId": "format-bytes",
+      "termEn": "Format Bytes",
+      "sourceDefinition": "input.addEventListener('input', () => (formatter.value = input.value || 0)); ```",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/format-bytes",
+      "sourcePath": "packages/webawesome/docs/docs/components/format-bytes.md",
+      "sourceMetadata": {
+        "aliases": [
+          "file size",
+          "byte formatter",
+          "size formatter"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "format-date",
+      "termEn": "Format Date",
+      "sourceDefinition": "Localization is handled by the browser's [`Intl.DateTimeFormat` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat). No language packs are required.",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/format-date",
+      "sourcePath": "packages/webawesome/docs/docs/components/format-date.md",
+      "sourceMetadata": {
+        "aliases": [
+          "date formatter",
+          "time formatter",
+          "datetime"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "format-number",
+      "termEn": "Format Number",
+      "sourceDefinition": "input.addEventListener('input', () => (formatter.value = input.value || 0)); ```",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/format-number",
+      "sourcePath": "packages/webawesome/docs/docs/components/format-number.md",
+      "sourceMetadata": {
+        "aliases": [
+          "number formatter",
+          "currency",
+          "percent"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "icon",
+      "termEn": "Icon",
+      "sourceDefinition": "Web Awesome comes bundled with over 2,000 free icons courtesy of [Font Awesome](https://fontawesome.com/). These icons are part of the `default` icon library. Font Awesome Pro users can unlock additional [icon families](#family-and-variant). Or, if you prefer, you can register your own [custom icon library](#third-party-icon-libraries).",
+      "sourceCategory": "Media",
+      "sourceUrl": "https://webawesome.com/docs/components/icon",
+      "sourcePath": "packages/webawesome/docs/docs/components/icon.md",
+      "sourceMetadata": {
+        "aliases": [
+          "symbol",
+          "glyph",
+          "pictogram",
+          "fa icon"
+        ],
+        "docsCategory": "Media"
+      }
+    },
+    {
+      "sourceRecordId": "include",
+      "termEn": "Include",
+      "sourceDefinition": "Included files are asynchronously requested using `window.fetch()`. Requests are cached, so the same file can be included multiple times, but only one request will be made.",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/include",
+      "sourcePath": "packages/webawesome/docs/docs/components/include.md",
+      "sourceMetadata": {
+        "aliases": [
+          "html include",
+          "embed",
+          "html import"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "input",
+      "termEn": "Input",
+      "sourceDefinition": "Use the `label` attribute to give the input an accessible label. For labels that contain HTML, use the `label` slot instead.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/input",
+      "sourcePath": "packages/webawesome/docs/docs/components/input.md",
+      "sourceMetadata": {
+        "aliases": [
+          "text field",
+          "text box",
+          "form field",
+          "text input"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "intersection-observer",
+      "termEn": "Intersection Observer",
+      "sourceDefinition": "This component uses the [IntersectionObserver API](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver) to track when its direct children enter or leave a designated root element. The `wa-intersect` event fires whenever elements cross the visibility threshold.",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/intersection-observer",
+      "sourcePath": "packages/webawesome/docs/docs/components/intersection-observer.md",
+      "sourceMetadata": {
+        "aliases": [
+          "scroll spy",
+          "lazy load trigger",
+          "viewport observer"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "known-date",
+      "termEn": "Known Date",
+      "sourceDefinition": "Known Date collects a date the user already knows — a birthday, a passport issue date, an expiration — through three separate fields for day, month, and year. It follows the [UK Government Design System date input pattern](https://design-system.service.gov.uk/components/date-input/): a labeled ` ` wraps three plain ` ` elements, the user types each part themselves, and the host submits a single canonical ISO date.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/known-date",
+      "sourcePath": "packages/webawesome/docs/docs/components/known-date.md",
+      "sourceMetadata": {
+        "aliases": [
+          "dmy input",
+          "birthday input",
+          "date fields",
+          "split date input",
+          "gov.uk date input",
+          "manual date entry"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "markdown",
+      "termEn": "Markdown",
+      "sourceDefinition": "The markdown component turns raw markdown into rendered HTML using the [Marked](https://marked.js.org/) library. Indentation is handled automatically. You can nest your markdown at any depth to match the surrounding HTML structure and the common leading whitespace will be stripped before parsing.",
+      "sourceCategory": "Media",
+      "sourceUrl": "https://webawesome.com/docs/components/markdown",
+      "sourcePath": "packages/webawesome/docs/docs/components/markdown.md",
+      "sourceMetadata": {
+        "aliases": [
+          "md",
+          "markdown renderer",
+          "rich text",
+          "gfm",
+          "marked.js",
+          "rendered markdown"
+        ],
+        "docsCategory": "Media"
+      }
+    },
+    {
+      "sourceRecordId": "mutation-observer",
+      "termEn": "Mutation Observer",
+      "sourceDefinition": "// Change the button's variant attribute button.addEventListener('click', () => { clicks++; button.setAttribute('variant', variants[clicks % variants.length]); });",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/mutation-observer",
+      "sourcePath": "packages/webawesome/docs/docs/components/mutation-observer.md",
+      "sourceMetadata": {
+        "aliases": [
+          "dom watcher",
+          "dom observer",
+          "change detector"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "number-input",
+      "termEn": "Number Input",
+      "sourceDefinition": "Use the `label` attribute to give the input an accessible label. For labels that contain HTML, use the `label` slot instead.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/number-input",
+      "sourcePath": "packages/webawesome/docs/docs/components/number-input.md",
+      "sourceMetadata": {
+        "aliases": [
+          "numeric input",
+          "stepper",
+          "spin button",
+          "counter"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "option",
+      "termEn": "Option",
+      "sourceDefinition": "This component must be used as a child of ` `. Please see the [Select docs](/docs/components/select) to see examples of this component in action.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/option",
+      "sourcePath": "packages/webawesome/docs/docs/components/option.md",
+      "sourceMetadata": {
+        "aliases": [
+          "select option",
+          "list option",
+          "choice"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "otp-input",
+      "termEn": "OTP Input",
+      "sourceDefinition": "Use the `label` attribute to give the field an accessible label. For labels that contain HTML, use the `label` slot instead.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/otp-input",
+      "sourcePath": "packages/webawesome/docs/docs/components/otp-input.md",
+      "sourceMetadata": {
+        "aliases": [
+          "passcode",
+          "one-time password",
+          "PIN",
+          "verification code",
+          "2FA code"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "documentation",
+      "termEn": "Sample Documentation Page",
+      "sourceDefinition": "A sample page for a documentation website using Web Awesome's page component.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/documentation",
+      "sourcePath": "packages/webawesome/docs/docs/components/page-samples/documentation.md",
+      "sourceMetadata": {}
+    },
+    {
+      "sourceRecordId": "media-app",
+      "termEn": "Sample Media App Page",
+      "sourceDefinition": "A sample page for a media app using Web Awesome's page component.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/media-app",
+      "sourcePath": "packages/webawesome/docs/docs/components/page-samples/media-app.md",
+      "sourceMetadata": {}
+    },
+    {
+      "sourceRecordId": "page",
+      "termEn": "Page",
+      "sourceDefinition": "The page component is designed to power full webpages. It is flexible enough to handle most modern designs and includes a simple mechanism for handling desktop and mobile navigation.",
+      "sourceCategory": "Layout",
+      "sourceUrl": "https://webawesome.com/docs/components/page",
+      "sourcePath": "packages/webawesome/docs/docs/components/page.md",
+      "sourceMetadata": {
+        "aliases": [
+          "layout",
+          "page layout",
+          "scaffold",
+          "shell"
+        ],
+        "docsCategory": "Layout"
+      }
+    },
+    {
+      "sourceRecordId": "pagination",
+      "termEn": "Pagination",
+      "sourceDefinition": "Set `total` and `page-size` to generate numbered page buttons with previous and next controls. Use the `label` attribute to give the control an accessible name, which is especially helpful when more than one appears on the same page.",
+      "sourceCategory": "Navigation",
+      "sourceUrl": "https://webawesome.com/docs/components/pagination",
+      "sourcePath": "packages/webawesome/docs/docs/components/pagination.md",
+      "sourceMetadata": {
+        "aliases": [
+          "pager",
+          "pages",
+          "paging"
+        ],
+        "docsCategory": "Navigation"
+      }
+    },
+    {
+      "sourceRecordId": "popover",
+      "termEn": "Popover",
+      "sourceDefinition": "Unlike [tooltips](/docs/components/tooltip), popovers can contain links, buttons, and form controls. They appear without an overlay and close when you click outside or press [[Escape]]. Only one popover can be open at a time.",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/popover",
+      "sourcePath": "packages/webawesome/docs/docs/components/popover.md",
+      "sourceMetadata": {
+        "aliases": [
+          "popup content",
+          "info popup",
+          "interactive popup"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "popup",
+      "termEn": "Popup",
+      "sourceDefinition": "const container = document.querySelector('.popup-overview'); const popup = container.querySelector('wa-popup'); const placement = container.querySelector('wa-combobox[name=\"placement\"]'); const distance = container.querySelector('wa-input[name=\"distance\"]'); const skidding = container.querySelector('wa-input[name=\"skidding\"]'); const active = container.querySelector('wa-switch[name=\"active\"]'); const arrow = container.querySelector('wa-switch[name=\"arrow\"]');",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/popup",
+      "sourcePath": "packages/webawesome/docs/docs/components/popup.md",
+      "sourceMetadata": {
+        "aliases": [
+          "floating element",
+          "anchor",
+          "positioned element"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "progress-bar",
+      "termEn": "Progress Bar",
+      "sourceDefinition": "Use the `label` attribute to tell assistive devices how to announce the progress bar.",
+      "sourceCategory": "Feedback",
+      "sourceUrl": "https://webawesome.com/docs/components/progress-bar",
+      "sourcePath": "packages/webawesome/docs/docs/components/progress-bar.md",
+      "sourceMetadata": {
+        "aliases": [
+          "loading bar",
+          "progress indicator",
+          "status bar"
+        ],
+        "docsCategory": "Feedback"
+      }
+    },
+    {
+      "sourceRecordId": "progress-ring",
+      "termEn": "Progress Ring",
+      "sourceDefinition": "Use the `label` attribute to tell assistive devices how to announce the progress ring.",
+      "sourceCategory": "Feedback",
+      "sourceUrl": "https://webawesome.com/docs/components/progress-ring",
+      "sourcePath": "packages/webawesome/docs/docs/components/progress-ring.md",
+      "sourceMetadata": {
+        "aliases": [
+          "circular progress",
+          "donut chart",
+          "radial progress"
+        ],
+        "docsCategory": "Feedback"
+      }
+    },
+    {
+      "sourceRecordId": "qr-code",
+      "termEn": "QR Code",
+      "sourceDefinition": "QR codes are useful for providing small pieces of information to users who can quickly scan them with a smartphone. Most smartphones have built-in QR code scanners, so pointing the camera at a QR code will decode it and allow the user to visit a website, dial a phone number, read a message, etc.",
+      "sourceCategory": "Media",
+      "sourceUrl": "https://webawesome.com/docs/components/qr-code",
+      "sourcePath": "packages/webawesome/docs/docs/components/qr-code.md",
+      "sourceMetadata": {
+        "aliases": [
+          "barcode",
+          "quick response code"
+        ],
+        "docsCategory": "Media"
+      }
+    },
+    {
+      "sourceRecordId": "radio-group",
+      "termEn": "Radio Group",
+      "sourceDefinition": "Use the `value` attribute on the radio group to set the initially selected radio. Match it to the `value` of the radio that should start checked, just like native HTML.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/radio-group",
+      "sourcePath": "packages/webawesome/docs/docs/components/radio-group.md",
+      "sourceMetadata": {
+        "aliases": [
+          "radio buttons",
+          "option group",
+          "button group"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "radio",
+      "termEn": "Radio",
+      "sourceDefinition": "This component must be used as a child of ` `. Please see the [Radio Group docs](/docs/components/radio-group) to see examples of this component in action.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/radio",
+      "sourcePath": "packages/webawesome/docs/docs/components/radio.md",
+      "sourceMetadata": {
+        "aliases": [
+          "radio button",
+          "option button"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "random-content",
+      "termEn": "Random Content",
+      "sourceDefinition": "Randomly picks and displays one or more of its slotted children, hiding the rest. Use it to rotate testimonials, surface featured content, show a tip of the day, or add variety to an otherwise static page.",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/random-content",
+      "sourcePath": "packages/webawesome/docs/docs/components/random-content.md",
+      "sourceMetadata": {
+        "aliases": [
+          "rotate",
+          "shuffle",
+          "variety",
+          "rotator"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "rating",
+      "termEn": "Rating",
+      "sourceDefinition": "Ratings are usually identified by context, so the label isn't displayed. Always provide one with the `label` attribute so assistive devices can announce the control.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/rating",
+      "sourcePath": "packages/webawesome/docs/docs/components/rating.md",
+      "sourceMetadata": {
+        "aliases": [
+          "stars",
+          "star rating",
+          "review"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "relative-time",
+      "termEn": "Relative Time",
+      "sourceDefinition": "Localization is handled by the browser's [`Intl.RelativeTimeFormat` API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat). No language packs are required.",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/relative-time",
+      "sourcePath": "packages/webawesome/docs/docs/components/relative-time.md",
+      "sourceMetadata": {
+        "aliases": [
+          "time ago",
+          "timeago",
+          "moment",
+          "from now"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "resize-observer",
+      "termEn": "Resize Observer",
+      "sourceDefinition": "resizeObserver.addEventListener('wa-resize', event => { const { width, height } = event.detail.entries[0].contentRect; dimensions.textContent = `${Math.round(width)} × ${Math.round(height)}`; });",
+      "sourceCategory": "Helpers",
+      "sourceUrl": "https://webawesome.com/docs/components/resize-observer",
+      "sourcePath": "packages/webawesome/docs/docs/components/resize-observer.md",
+      "sourceMetadata": {
+        "aliases": [
+          "size watcher",
+          "resize listener",
+          "dimension observer"
+        ],
+        "docsCategory": "Helpers"
+      }
+    },
+    {
+      "sourceRecordId": "scroller",
+      "termEn": "Scroller",
+      "sourceDefinition": "th, td { white-space: nowrap; }",
+      "sourceCategory": "Layout",
+      "sourceUrl": "https://webawesome.com/docs/components/scroller",
+      "sourcePath": "packages/webawesome/docs/docs/components/scroller.md",
+      "sourceMetadata": {
+        "aliases": [
+          "scrollable",
+          "scroll container",
+          "overflow"
+        ],
+        "docsCategory": "Layout"
+      }
+    },
+    {
+      "sourceRecordId": "select",
+      "termEn": "Select",
+      "sourceDefinition": "Use the `label` attribute to give the select an accessible label. For labels that contain HTML, use the `label` slot instead.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/select",
+      "sourcePath": "packages/webawesome/docs/docs/components/select.md",
+      "sourceMetadata": {
+        "aliases": [
+          "dropdown select",
+          "combobox",
+          "picker",
+          "chooser",
+          "pulldown"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "skeleton",
+      "termEn": "Skeleton",
+      "sourceDefinition": ".skeleton-overview header wa-skeleton:last-child { flex: 0 0 auto; width: 30%; }",
+      "sourceCategory": "Feedback",
+      "sourceUrl": "https://webawesome.com/docs/components/skeleton",
+      "sourcePath": "packages/webawesome/docs/docs/components/skeleton.md",
+      "sourceMetadata": {
+        "aliases": [
+          "placeholder",
+          "shimmer",
+          "loading placeholder",
+          "ghost"
+        ],
+        "docsCategory": "Feedback"
+      }
+    },
+    {
+      "sourceRecordId": "slider",
+      "termEn": "Slider",
+      "sourceDefinition": "Use the `label` attribute to give the slider an accessible label. For labels that contain HTML, use the `label` slot instead.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/slider",
+      "sourcePath": "packages/webawesome/docs/docs/components/slider.md",
+      "sourceMetadata": {
+        "aliases": [
+          "range",
+          "range slider",
+          "range input",
+          "scrubber"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "spinner",
+      "termEn": "Spinner",
+      "sourceDefinition": "Spinners are sized based on the current font size. To change the size, set `font-size` on the spinner itself or on a parent element.",
+      "sourceCategory": "Feedback",
+      "sourceUrl": "https://webawesome.com/docs/components/spinner",
+      "sourcePath": "packages/webawesome/docs/docs/components/spinner.md",
+      "sourceMetadata": {
+        "aliases": [
+          "loading",
+          "loader",
+          "busy indicator",
+          "throbber"
+        ],
+        "docsCategory": "Feedback"
+      }
+    },
+    {
+      "sourceRecordId": "split-panel",
+      "termEn": "Split Panel",
+      "sourceDefinition": "Set the `position` attribute to change the divider's starting position, given as a percentage of the available space (`50` by default). To set it in pixels instead, use the `position-in-pixels` attribute.",
+      "sourceCategory": "Layout",
+      "sourceUrl": "https://webawesome.com/docs/components/split-panel",
+      "sourcePath": "packages/webawesome/docs/docs/components/split-panel.md",
+      "sourceMetadata": {
+        "aliases": [
+          "resizable panels",
+          "pane splitter",
+          "split view",
+          "splitter"
+        ],
+        "docsCategory": "Layout"
+      }
+    },
+    {
+      "sourceRecordId": "switch",
+      "termEn": "Switch",
+      "sourceDefinition": "Add label text as the switch's default content. For labels that contain HTML, slot the markup in directly.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/switch",
+      "sourcePath": "packages/webawesome/docs/docs/components/switch.md",
+      "sourceMetadata": {
+        "aliases": [
+          "toggle",
+          "toggle switch",
+          "on off"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "tab-group",
+      "termEn": "Tab Group",
+      "sourceDefinition": "Tab groups make use of [tabs](/docs/components/tab) and [tab panels](/docs/components/tab-panel). Each panel should have a name that's unique within the tab group, and tabs should have a `panel` attribute that points to the respective panel's name.",
+      "sourceCategory": "Navigation",
+      "sourceUrl": "https://webawesome.com/docs/components/tab-group",
+      "sourcePath": "packages/webawesome/docs/docs/components/tab-group.md",
+      "sourceMetadata": {
+        "aliases": [
+          "tabs",
+          "tabbed interface",
+          "tab bar",
+          "tab panel",
+          "tab set"
+        ],
+        "docsCategory": "Navigation"
+      }
+    },
+    {
+      "sourceRecordId": "tab-panel",
+      "termEn": "Tab Panel",
+      "sourceDefinition": "This component must be used as a child of ` `. Please see the [Tab Group docs](/docs/components/tab-group) to see examples of this component in action.",
+      "sourceCategory": "Navigation",
+      "sourceUrl": "https://webawesome.com/docs/components/tab-panel",
+      "sourcePath": "packages/webawesome/docs/docs/components/tab-panel.md",
+      "sourceMetadata": {
+        "aliases": [
+          "tab content",
+          "tab pane"
+        ],
+        "docsCategory": "Navigation"
+      }
+    },
+    {
+      "sourceRecordId": "tab",
+      "termEn": "Tab",
+      "sourceDefinition": "This component must be used as a child of ` `. Please see the [Tab Group docs](/docs/components/tab-group) to see examples of this component in action.",
+      "sourceCategory": "Navigation",
+      "sourceUrl": "https://webawesome.com/docs/components/tab",
+      "sourcePath": "packages/webawesome/docs/docs/components/tab.md",
+      "sourceMetadata": {
+        "aliases": [
+          "tab button",
+          "tab header"
+        ],
+        "docsCategory": "Navigation"
+      }
+    },
+    {
+      "sourceRecordId": "tag",
+      "termEn": "Tag",
+      "sourceDefinition": "Set the `variant` attribute to match the tag to its meaning.",
+      "sourceCategory": "Feedback",
+      "sourceUrl": "https://webawesome.com/docs/components/tag",
+      "sourcePath": "packages/webawesome/docs/docs/components/tag.md",
+      "sourceMetadata": {
+        "aliases": [
+          "chip",
+          "label",
+          "pill",
+          "token",
+          "badge"
+        ],
+        "docsCategory": "Feedback"
+      }
+    },
+    {
+      "sourceRecordId": "textarea",
+      "termEn": "Textarea",
+      "sourceDefinition": "Use the `label` attribute to give the textarea an accessible label. For labels that contain HTML, use the `label` slot instead.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/textarea",
+      "sourcePath": "packages/webawesome/docs/docs/components/textarea.md",
+      "sourceMetadata": {
+        "aliases": [
+          "text area",
+          "multiline input",
+          "text box"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "time-input",
+      "termEn": "Time Input",
+      "sourceDefinition": "Time Input is the time-of-day counterpart to [Date Input](/docs/components/date-input). It renders a segmented input with hour, minute, optional seconds, and optional AM/PM spinbutton segments in the user's locale order, alongside a popup column picker modeled on Chrome's native time UI.",
+      "sourceCategory": "Forms",
+      "sourceUrl": "https://webawesome.com/docs/components/time-input",
+      "sourcePath": "packages/webawesome/docs/docs/components/time-input.md",
+      "sourceMetadata": {
+        "aliases": [
+          "time input",
+          "clock input",
+          "timepicker",
+          "time field",
+          "time of day input",
+          "clock picker"
+        ],
+        "docsCategory": "Forms"
+      }
+    },
+    {
+      "sourceRecordId": "toast-item",
+      "termEn": "Toast Item",
+      "sourceDefinition": "Use the `variant` attribute to change the toast item's visual style. The variant determines the accent color on the left side and the icon color. Available variants are `neutral` (default), `brand`, `success`, `warning`, and `danger`.",
+      "sourceCategory": "Feedback",
+      "sourceUrl": "https://webawesome.com/docs/components/toast-item",
+      "sourcePath": "packages/webawesome/docs/docs/components/toast-item.md",
+      "sourceMetadata": {
+        "aliases": [
+          "notification item",
+          "alert item",
+          "snackbar item"
+        ],
+        "docsCategory": "Feedback"
+      }
+    },
+    {
+      "sourceRecordId": "toast",
+      "termEn": "Toast",
+      "sourceDefinition": "button.addEventListener('click', () => { toast.create('This is a toast notification!'); }); ```",
+      "sourceCategory": "Feedback",
+      "sourceUrl": "https://webawesome.com/docs/components/toast",
+      "sourcePath": "packages/webawesome/docs/docs/components/toast.md",
+      "sourceMetadata": {
+        "aliases": [
+          "notification",
+          "snackbar",
+          "flash message",
+          "alert popup"
+        ],
+        "docsCategory": "Feedback"
+      }
+    },
+    {
+      "sourceRecordId": "tooltip",
+      "termEn": "Tooltip",
+      "sourceDefinition": "Point the `for` attribute at the `id` of the element the tooltip describes, and Web Awesome wires up positioning and accessibility for you.",
+      "sourceCategory": "Feedback",
+      "sourceUrl": "https://webawesome.com/docs/components/tooltip",
+      "sourcePath": "packages/webawesome/docs/docs/components/tooltip.md",
+      "sourceMetadata": {
+        "aliases": [
+          "hint",
+          "hover text",
+          "info bubble",
+          "title attribute"
+        ],
+        "docsCategory": "Feedback"
+      }
+    },
+    {
+      "sourceRecordId": "tree-item",
+      "termEn": "Tree Item",
+      "sourceDefinition": "This component must be used as a child of ` `. Please see the [Tree docs](/docs/components/tree) to see examples of this component in action.",
+      "sourceCategory": "Navigation",
+      "sourceUrl": "https://webawesome.com/docs/components/tree-item",
+      "sourcePath": "packages/webawesome/docs/docs/components/tree-item.md",
+      "sourceMetadata": {
+        "aliases": [
+          "tree node",
+          "tree leaf",
+          "tree branch"
+        ],
+        "docsCategory": "Navigation"
+      }
+    },
+    {
+      "sourceRecordId": "tree",
+      "termEn": "Tree",
+      "sourceDefinition": "Set the `selection` attribute to change what a tree lets you select.",
+      "sourceCategory": "Navigation",
+      "sourceUrl": "https://webawesome.com/docs/components/tree",
+      "sourcePath": "packages/webawesome/docs/docs/components/tree.md",
+      "sourceMetadata": {
+        "aliases": [
+          "treeview",
+          "tree view",
+          "file tree",
+          "hierarchy"
+        ],
+        "docsCategory": "Navigation"
+      }
+    },
+    {
+      "sourceRecordId": "zoomable-frame",
+      "termEn": "Zoomable Frame",
+      "sourceDefinition": "Use the `src` attribute to embed external websites or resources. The URL must be accessible, and cross-origin restrictions may apply due to the Same-Origin Policy, potentially limiting access to the iframe's content.",
+      "sourceCategory": "Media",
+      "sourceUrl": "https://webawesome.com/docs/components/zoomable-frame",
+      "sourcePath": "packages/webawesome/docs/docs/components/zoomable-frame.md",
+      "sourceMetadata": {
+        "aliases": [
+          "iframe zoom",
+          "preview frame",
+          "minimap"
+        ],
+        "docsCategory": "Media"
+      }
+    },
+    {
+      "sourceRecordId": "align-items",
+      "termEn": "Align Items",
+      "sourceDefinition": "Control cross-axis alignment in flex and grid containers with align-items and align-self utility classes.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/align-items",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/align-items.md",
+      "sourceMetadata": {
+        "aliases": [
+          "vertical align",
+          "cross axis",
+          "align"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "cluster",
+      "termEn": "Cluster",
+      "sourceDefinition": "Use the `wa-cluster` class to arrange elements inline with even spacing, allowing items to wrap when space is limited.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/cluster",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/cluster.md",
+      "sourceMetadata": {
+        "aliases": [
+          "inline group",
+          "horizontal group",
+          "tag group",
+          "flow layout"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "color",
+      "termEn": "Color Variants",
+      "sourceDefinition": "Color utilities allow you to apply the brand, neutral, success, warning, and danger colors from your theme to any element.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/color",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/color.md",
+      "sourceMetadata": {
+        "aliases": [
+          "text color",
+          "foreground color",
+          "colour",
+          "color utility",
+          "semantic color"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "flank",
+      "termEn": "Flank",
+      "sourceDefinition": "Use the `wa-flank` class to position two items side-by-side, with one item positioned alongside, or _flanking_, content that stretches to fill the available space.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/flank",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/flank.md",
+      "sourceMetadata": {
+        "aliases": [
+          "media object",
+          "side by side",
+          "horizontal layout"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "flex-wrap",
+      "termEn": "Flex Wrap",
+      "sourceDefinition": "Flex wrap utilities specify how items within flex containers wrap.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/flex-wrap",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/flex-wrap.md",
+      "sourceMetadata": {
+        "aliases": [
+          "wrapping",
+          "flow",
+          "line wrap"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "fouce",
+      "termEn": "Reducing FOUCE",
+      "sourceDefinition": "Utility to improve the loading experience by hiding non-prerendered custom elements until they are registered.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/fouce",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/fouce.md",
+      "sourceMetadata": {
+        "aliases": [
+          "flash of unstyled content",
+          "custom element flash",
+          "FOUC",
+          "CLS"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "frame",
+      "termEn": "Frame",
+      "sourceDefinition": "Use the `wa-frame` class to create a responsive container with consistent proportions to enclose content.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/frame",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/frame.md",
+      "sourceMetadata": {
+        "aliases": [
+          "aspect ratio",
+          "media frame",
+          "ratio box"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "gap",
+      "termEn": "Gap",
+      "sourceDefinition": "Gap utilities set the gap property of flex and grid containers, like other Web Awesome layout utilities.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/gap",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/gap.md",
+      "sourceMetadata": {
+        "aliases": [
+          "spacing",
+          "gutter",
+          "margin",
+          "space between"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "grid",
+      "termEn": "Grid",
+      "sourceDefinition": "Use the `wa-grid` class to arrange elements into rows and columns that automatically adapt to the available space.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/grid",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/grid.md",
+      "sourceMetadata": {
+        "aliases": [
+          "columns",
+          "layout grid",
+          "css grid"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "justify-content",
+      "termEn": "Justify Content",
+      "sourceDefinition": "Justify content utilities determine how space is distributed between items in flex and grid containers.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/justify-content",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/justify-content.md",
+      "sourceMetadata": {
+        "aliases": [
+          "horizontal align",
+          "main axis",
+          "distribute"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "native",
+      "termEn": "Native Styles",
+      "sourceDefinition": "Native styles apply your theme to native HTML elements so they match the look and feel of Web Awesome components.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/native",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/native.md",
+      "sourceMetadata": {
+        "aliases": [
+          "browser default",
+          "native styles",
+          "global styles"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "prose",
+      "termEn": "Prose",
+      "sourceDefinition": "The wa-prose utility applies hierarchical, asymmetric typographic rhythm to long-form content like documentation, articles, and marketing copy.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/prose",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/prose.md",
+      "sourceMetadata": {
+        "aliases": [
+          "prose",
+          "longform",
+          "article",
+          "copy",
+          "typography rhythm"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "rounding",
+      "termEn": "Rounding Utilities",
+      "sourceDefinition": "Border radius utilities set an element's border radius property.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/rounding",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/rounding.md",
+      "sourceMetadata": {
+        "aliases": [
+          "border radius",
+          "rounded corners",
+          "pill shape"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "split",
+      "termEn": "Split",
+      "sourceDefinition": "Use the `wa-split` class to distribute two or more items evenly across available space, either in a row or a column.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/split",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/split.md",
+      "sourceMetadata": {
+        "aliases": [
+          "holy grail",
+          "sidebar layout",
+          "main aside"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "stack",
+      "termEn": "Stack",
+      "sourceDefinition": "Use `wa-stack` to arrange elements in the block direction with even spacing.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/stack",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/stack.md",
+      "sourceMetadata": {
+        "aliases": [
+          "vertical stack",
+          "vstack",
+          "column layout"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "text",
+      "termEn": "Text",
+      "sourceDefinition": "Text utility classes use design tokens from your Web Awesome theme and standard CSS properties to style text elements on the fly.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/text",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/text.md",
+      "sourceMetadata": {
+        "aliases": [
+          "typography",
+          "font",
+          "text style"
+        ]
+      }
+    },
+    {
+      "sourceRecordId": "visually-hidden",
+      "termEn": "Visually Hidden",
+      "sourceDefinition": "The visually hidden utility makes content accessible to assistive devices without displaying it on the screen.",
+      "sourceCategory": "web-component",
+      "sourceUrl": "https://webawesome.com/docs/components/visually-hidden",
+      "sourcePath": "packages/webawesome/docs/docs/utilities/visually-hidden.md",
+      "sourceMetadata": {
+        "aliases": [
+          "screen reader only",
+          "sr-only",
+          "accessible hide"
+        ]
+      }
+    }
+  ]
+}

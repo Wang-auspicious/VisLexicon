@@ -1,0 +1,63 @@
+{
+  "lever": "lexicon",
+  "id": "terminal",
+  "term_en": "Cyberpunk / Terminal",
+  "term_zh": "终端机能风",
+  "axis": "aesthetic",
+  "aliases": [
+    "终端风",
+    "黑客风",
+    "cyberpunk",
+    "命令行"
+  ],
+  "definition_zh": "等宽字体 + 荧光绿/琥珀 + 扫描线与光标闪烁。",
+  "notation": "A[term] · font:mono · accent:#4af6 · caret:blink",
+  "genes": [
+    {
+      "gene": "字体",
+      "value": "ui-monospace 保底"
+    },
+    {
+      "gene": "荧光色",
+      "value": "#4af626 绿 / 琥珀"
+    },
+    {
+      "gene": "扫描线",
+      "value": "低透明细横线纹理"
+    }
+  ],
+  "minimal_code": {
+    "css": ".term{font-family:ui-monospace;color:#4af626}\n.caret{animation:blink 1s steps(1) infinite}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "终端风必须真机可用（等宽+高对比）；装饰扫描线别压可读性。"
+  ],
+  "tech_notes": [
+    "等宽字 + 荧光 + caret blink steps() 制造机械感。"
+  ],
+  "common_pairings": [
+    "text-scramble"
+  ],
+  "related": [
+    "editorial"
+  ],
+  "wild": [
+    {
+      "what": "tmux 主题站 / CLI 工具官网",
+      "source": "多个 dev 站",
+      "note": "CLI 美学的 web 化"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/terminal/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/terminal.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

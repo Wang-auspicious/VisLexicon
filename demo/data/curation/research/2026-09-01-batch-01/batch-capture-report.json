@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "reportKind": "real-site-batch-capture",
+  "batchId": "2026-09-01-batch-01",
+  "status": "CAPTURED_PENDING_INDEPENDENT_REVIEW",
+  "generatedAt": "2026-09-01T15:45:42.521Z",
+  "captureAgentId": "real-sites-batch-01-agent",
+  "captureMethod": "project-native Chromium CDP via runCaptures(customManifest), with loader-bound ready-state/content fallback and visible loading-placeholder rejection",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "summary": {
+    "siteCount": 3,
+    "captureCount": 9,
+    "decodedCaptureCount": 9,
+    "uniqueSha256Count": 9,
+    "selfVisualCheckPassedCount": 9,
+    "independentReviewPassedCount": 2,
+    "independentReviewPendingReReviewCount": 1,
+    "correctionSummary": "Ant Design 与 Chakra UI 已通过独立预审；Shadcn Studio 已按 requiredCorrections 收紧为 Blocks entry，等待原 reviewer 复核。",
+    "publicationEligibleCount": 0
+  },
+  "quarantine": [
+    {
+      "siteId": "ant-design",
+      "role": "identity",
+      "path": "data/curation/quarantine/captures/2026-09-01-batch-01/ant-design-v2-identity-skeleton.png",
+      "reason": "首次技术捕获成功但三张新闻卡仍为明显骨架占位，人工语义 QA 拒绝后由主任务隔离。",
+      "sha256": "30f9769c82fc08fdfc214ffa8a977078436fa0ee6ff6bec81505b64fa334fcdc",
+      "width": 1280,
+      "height": 900,
+      "bytes": 317042,
+      "replacedBySha256": "38e3dba3b7497012771e58832b5b759e7a869ab8f75f60543a811b1d154cc393"
+    }
+  ],
+  "pipelineNotes": [
+    "Shadcn Studio proof 与 Chakra UI identity 初次因 SPA 未发 Page.loadEventFired 而未写文件；截图底座修复后在相同页面成功，未换页规避。",
+    "Chakra UI 首页在修复后仍没有满足 main 选择器；目标文件为空时保持相同 URL，仅将主内容选择器改为实际存在的 body，再通过正文、HTTP、错误页与骨架门。",
+    "Ant Design identity 重拍等待 12000ms；新图三张新闻卡均已加载，人工查看无骨架、错误页或登录墙。",
+    "九张公开目标图逐张用原始分辨率查看；本报告只记录自检，不能替代独立审核。"
+  ],
+  "sites": [
+    {
+      "siteId": "shadcn-studio",
+      "draftPath": "data/curation/research/2026-09-01-batch-01/shadcn-studio.json",
+      "officialInputUrl": "https://shadcnstudio.com/",
+      "officialFinalUrl": "https://shadcnstudio.com/",
+      "suggestedClassification": {
+        "name": "Shadcn Studio Blocks",
+        "entryId": "entry-shadcn-studio-blocks",
+        "canonicalUrl": "https://shadcnstudio.com/blocks",
+        "primaryCategory": "ui-implementation",
+        "subcategory": "page-blocks-embeddable-controls",
+        "status": "needs-review",
+        "scopeNote": "只覆盖 /blocks 的页面区块入口；根首页仅作 Source Entity 身份证据，Templates、Figma、MCP 与生成器不属于本 entry。"
+      },
+      "descriptionCodePointLength": 120,
+      "unknownFields": [
+        "author"
+      ],
+      "evidenceUrls": [
+        "https://shadcnstudio.com/",
+        "https://shadcnstudio.com/blocks",
+        "https://shadcnstudio.com/blocks/marketing-ui/hero-section",
+        "https://shadcnstudio.com/pricing",
+        "https://shadcnstudio.com/license",
+        "https://shadcnstudio.com/credits",
+        "https://github.com/shadcnstudio/shadcn-studio",
+        "https://github.com/shadcnstudio/shadcn-studio/blob/main/LICENSE.md"
+      ],
+      "pages": [
+        {
+          "role": "identity",
+          "inputUrl": "https://shadcnstudio.com/",
+          "finalUrl": "https://shadcnstudio.com/",
+          "title": "Shadcn Studio - Shadcn UI Components, Blocks & Templates",
+          "capturedAt": "2026-09-01T15:15:54.045Z",
+          "src": "/shots/shadcn-studio/v2-identity.png",
+          "sha256": "d53bc77e8d9ca40106da6bb40c07e62f7f212c110c39006f7688f3ddf5eb2b55",
+          "bytes": 333035,
+          "width": 1280,
+          "height": 900
+        },
+        {
+          "role": "breadth",
+          "inputUrl": "https://shadcnstudio.com/blocks",
+          "finalUrl": "https://shadcnstudio.com/blocks",
+          "title": "800+ Shadcn UI Blocks - Free & Pro - Shadcn Studio",
+          "capturedAt": "2026-09-01T15:16:15.599Z",
+          "src": "/shots/shadcn-studio/v2-breadth.png",
+          "sha256": "8f47fabbf23338824a7b7e9f80f14854cd335e20bd7c6bb64b5304c6e0fb7b23",
+          "bytes": 302215,
+          "width": 1280,
+          "height": 900
+        },
+        {
+          "role": "proof",
+          "inputUrl": "https://shadcnstudio.com/blocks/marketing-ui/hero-section",
+          "finalUrl": "https://shadcnstudio.com/blocks/marketing-ui/hero-section",
+          "title": "Shadcn Hero Section - Shadcn Studio",
+          "capturedAt": "2026-09-01T15:39:06.686Z",
+          "src": "/shots/shadcn-studio/v2-proof.png",
+          "sha256": "65575106bf3c0263c7ae1cd49cdc2aa66f279f4f3ae94cdcfa533a8788b246a0",
+          "bytes": 204096,
+          "width": 1280,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "siteId": "ant-design",
+      "draftPath": "data/curation/research/2026-09-01-batch-01/ant-design.json",
+      "officialInputUrl": "https://ant.design/",
+      "officialFinalUrl": "https://ant.design/index-cn",
+      "suggestedClassification": {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "design-system-suites",
+        "status": "needs-review"
+      },
+      "descriptionCodePointLength": 95,
+      "unknownFields": [
+        "author"
+      ],
+      "evidenceUrls": [
+        "https://ant.design/index-cn",
+        "https://ant.design/docs/react/introduce-cn",
+        "https://ant.design/components/overview-cn/",
+        "https://ant.design/components/table-cn#table-demo-basic",
+        "https://github.com/ant-design/ant-design",
+        "https://github.com/ant-design/ant-design/blob/master/LICENSE",
+        "https://github.com/ant-design/ant-design/blob/master/package.json"
+      ],
+      "pages": [
+        {
+          "role": "identity",
+          "inputUrl": "https://ant.design/",
+          "finalUrl": "https://ant.design/index-cn",
+          "title": "Ant Design - 一套企业级 UI 设计语言和 React 组件库",
+          "capturedAt": "2026-09-01T15:40:22.233Z",
+          "src": "/shots/ant-design/v2-identity.png",
+          "sha256": "38e3dba3b7497012771e58832b5b759e7a869ab8f75f60543a811b1d154cc393",
+          "bytes": 496476,
+          "width": 1280,
+          "height": 900
+        },
+        {
+          "role": "breadth",
+          "inputUrl": "https://ant.design/components/overview-cn/",
+          "finalUrl": "https://ant.design/components/overview-cn",
+          "title": "组件总览 - Ant Design",
+          "capturedAt": "2026-09-01T15:17:33.647Z",
+          "src": "/shots/ant-design/v2-breadth.png",
+          "sha256": "a94951799b03ef38b660cd8e3590f672f004a67244dfb6b8391742156716b1af",
+          "bytes": 126007,
+          "width": 1280,
+          "height": 900
+        },
+        {
+          "role": "proof",
+          "inputUrl": "https://ant.design/components/table-cn#table-demo-basic",
+          "finalUrl": "https://ant.design/components/table-cn#table-demo-basic",
+          "title": "表格 Table - Ant Design",
+          "capturedAt": "2026-09-01T15:17:57.720Z",
+          "src": "/shots/ant-design/v2-proof.png",
+          "sha256": "f1e816c4dbc145c9b7032a6e2d9cbb280640a0dbdd4ffe79443bb8bc6f339c22",
+          "bytes": 160902,
+          "width": 1280,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "siteId": "chakra-ui",
+      "draftPath": "data/curation/research/2026-09-01-batch-01/chakra-ui.json",
+      "officialInputUrl": "https://chakra-ui.com/",
+      "officialFinalUrl": "https://chakra-ui.com/",
+      "suggestedClassification": {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "design-system-suites",
+        "status": "needs-review"
+      },
+      "descriptionCodePointLength": 96,
+      "unknownFields": [],
+      "evidenceUrls": [
+        "https://chakra-ui.com/",
+        "https://chakra-ui.com/docs/get-started/installation",
+        "https://chakra-ui.com/docs/components/concepts/overview",
+        "https://chakra-ui.com/docs/components/button",
+        "https://github.com/chakra-ui/chakra-ui",
+        "https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE",
+        "https://github.com/chakra-ui/chakra-ui/blob/main/package.json"
+      ],
+      "pages": [
+        {
+          "role": "identity",
+          "inputUrl": "https://chakra-ui.com/",
+          "finalUrl": "https://chakra-ui.com/",
+          "title": "Chakra UI",
+          "capturedAt": "2026-09-01T15:41:38.214Z",
+          "src": "/shots/chakra-ui/v2-identity.png",
+          "sha256": "b12f3ccbf3ad0fad6a904fd9e7b8fd87fc1b1dadd806ca7333f5dc302247ca34",
+          "bytes": 389883,
+          "width": 1280,
+          "height": 900
+        },
+        {
+          "role": "breadth",
+          "inputUrl": "https://chakra-ui.com/docs/components/concepts/overview",
+          "finalUrl": "https://chakra-ui.com/docs/components/concepts/overview",
+          "title": "Components | Chakra UI",
+          "capturedAt": "2026-09-01T15:19:26.913Z",
+          "src": "/shots/chakra-ui/v2-breadth.png",
+          "sha256": "48f59db0ee116ae297c66b6a07b6db39b72807a3005b06bed1a9505f869f6ba2",
+          "bytes": 176854,
+          "width": 1280,
+          "height": 900
+        },
+        {
+          "role": "proof",
+          "inputUrl": "https://chakra-ui.com/docs/components/button",
+          "finalUrl": "https://chakra-ui.com/docs/components/button",
+          "title": "Button | Chakra UI",
+          "capturedAt": "2026-09-01T15:19:33.132Z",
+          "src": "/shots/chakra-ui/v2-proof.png",
+          "sha256": "40838eabbdf768eeb31646c23df9abd8f5a2586d3cbb02efb9fee660623ca826",
+          "bytes": 182659,
+          "width": 1280,
+          "height": 900
+        }
+      ]
+    }
+  ],
+  "independentReview": {
+    "required": true,
+    "status": "PENDING"
+  },
+  "publication": {
+    "eligible": false,
+    "publicIndexModified": false,
+    "approvedBundlesModified": false,
+    "reviewedCaptureLedgerModified": false
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "lever": "lexicon",
+  "id": "hover-tilt",
+  "term_en": "Hover Tilt / 3D Card",
+  "term_zh": "3D 倾斜卡",
+  "axis": "interaction",
+  "aliases": [
+    "3d 卡片",
+    "tilt",
+    "鼠标倾斜",
+    "视差卡片"
+  ],
+  "definition_zh": "卡片随光标做透视倾斜，深度由 rotateX/Y 与层级投影共同塑造。",
+  "notation": "I[persp] · axis:XY · max:12° · ease:linear/ease-out",
+  "genes": [
+    {
+      "gene": "透视基线",
+      "value": "perspective(640px) 决定纵深"
+    },
+    {
+      "gene": "旋转",
+      "value": "rotateY = fx，rotateX = -fy"
+    },
+    {
+      "gene": "复位",
+      "value": "离开时回零（可 spring）"
+    }
+  ],
+  "minimal_code": {
+    "css": "el.addEventListener('pointermove', e=>{\n  const x = (e.clientX/innerWidth - .5) * MAX;\n  card.style.transform =\n    `perspective(640px) rotateY(${x}deg) rotateX(${-y}deg)`;\n});"
+  },
+  "params": [
+    {
+      "key": "max",
+      "label": "倾斜上限",
+      "min": 4,
+      "max": 20,
+      "step": 1,
+      "unit": "°",
+      "default": 12
+    }
+  ],
+  "anti_patterns": [
+    "纯装饰性倾斜要克制 max 角（≤15°）；大幅倾斜会干扰点击目标。"
+  ],
+  "tech_notes": [
+    "pointermove 算相对中心偏移；perspective 在父层；几十个倾斜卡要节流。"
+  ],
+  "common_pairings": [
+    "spotlight-card",
+    "spring"
+  ],
+  "related": [
+    "magnetic-button"
+  ],
+  "wild": [
+    {
+      "what": "Stripe 部分交互卡",
+      "source": "stripe.com",
+      "note": "3D 倾斜卡推广者之一"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/hover-tilt/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/hover-tilt.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

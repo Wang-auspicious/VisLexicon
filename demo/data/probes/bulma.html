@@ -1,0 +1,4188 @@
+<!doctype html>
+<html lang="en" class="bd-theme-docs">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta
+  name="description"
+  content="Bulma is a free, open source CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free."
+>
+
+<title>
+  Official Bulma Documentation
+ | Bulma: Free, open source, and modern CSS framework based on Flexbox
+
+</title>
+
+  <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-6.5.2-web/css/all.min.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+<link
+  rel="stylesheet"
+  href="https://bulma.io/assets/css/website.min.css?v="
+>
+
+<link rel="canonical" href="https://bulma.io/documentation/">
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Bulma: Free, open source, and modern CSS framework based on Flexbox"
+  href="https://bulma.io/atom.xml"
+>
+
+<meta property="og:url" content="https://bulma.io">
+<meta property="og:type" content="website">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@jgthms">
+<meta name="twitter:creator" content="@jgthms">
+
+<!-- Shared social media -->
+
+  <meta property="og:title" content="Official Bulma Documentation">
+  <meta name="twitter:title" content="Official Bulma Documentation">
+
+
+
+  <meta property="og:description" content="Bulma is a free, open source CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.">
+  <meta name="twitter:description" content="Bulma is a free, open source CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.">
+
+
+
+  <meta property="og:image" content="https://bulma.io/assets/images/bulma-banner.png">
+  <meta name="twitter:image" content="https://bulma.io/assets/images/bulma-banner.png">
+
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://bulma.io/favicons/apple-touch-icon.png?v=201701041855">
+<link rel="icon" type="image/png" href="https://bulma.io/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+<link rel="icon" type="image/png" href="https://bulma.io/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+<!-- link rel="manifest" href="https://bulma.io/favicons/manifest.json?v=201701041855" -->
+<link rel="mask-icon" href="https://bulma.io/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+<link rel="shortcut icon" href="https://bulma.io/favicons/favicon.ico?v=201701041855">
+<meta name="msapplication-config" content="https://bulma.io/favicons/browserconfig.xml?v=201701041855">
+<meta name="theme-color" content="#00d1b2">
+
+  </head>
+  <body>
+    <a href="https://cssmasterclass.io/" target="_blank" class="launch-code is-animated">
+  <h3><img
+        src="https://bulma.io/assets/images/masterclass/logo-desktop.png"
+        height="40"
+        width="300"
+    />
+  </h3>
+
+  <small>
+    Learn CSS with 🎓 online interactive courses,📺 educational videos, and
+    🧑🏻‍💻project-building tutorials.
+  </small>
+</a>
+
+
+    
+
+
+
+
+<header class="bd-header">
+  <a class="bulma-logo" href="https://bulma.io/">
+    <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z" fill="black" class="bd-svg-black" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z" fill="#00D1B2"/>
+</svg>
+
+  </a>
+
+  <nav id="js-nav" class="bd-nav">
+      
+
+<a
+  class="
+    bd-nav-item
+    bd-theme-docs
+    is-docs
+    
+    
+      is-active
+    
+    
+  "
+  title="Everything you need to create a website with Bulma"
+  
+  href="https://bulma.io/documentation/"
+  
+>
+  <span class="icon">
+    <i class="fa-solid fa-book"></i>
+  </span>
+
+  
+  <span class="bd-nav-item-name">
+    
+    <span class="is-hidden-fullhd">Docs</span>
+    <span class="is-hidden is-block-fullhd">Documentation</span>
+    
+  </span>
+  
+</a>
+   
+
+<a
+  class="
+    bd-nav-item
+    bd-theme-expo
+    is-expo
+    
+    
+    
+  "
+  title="Official Bulma showcase"
+  
+  href="https://bulma.io/expo/"
+  
+>
+  <span class="icon">
+    <i class="fa-solid fa-star"></i>
+  </span>
+
+  
+  <span class="bd-nav-item-name">
+     Expo 
+  </span>
+  
+</a>
+   
+
+<a
+  class="
+    bd-nav-item
+    bd-theme-love
+    is-love
+    
+    
+    
+  "
+  title="Fans of Bulma around the world"
+  
+  href="https://bulma.io/love/"
+  
+>
+  <span class="icon">
+    <i class="fa-solid fa-heart"></i>
+  </span>
+
+  
+  <span class="bd-nav-item-name">
+     Love 
+  </span>
+  
+</a>
+   
+
+<a
+  class="
+    bd-nav-item
+    bd-theme-sponsor
+    is-sponsor
+    
+    
+    
+  "
+  title="Sponsor Bulma and Open Source via Patreon and GitHub"
+  
+  href="https://bulma.io/become-a-bulma-sponsor/"
+  
+>
+  <span class="icon">
+    <i class="fa-brands fa-patreon"></i>
+  </span>
+
+  
+  <span class="bd-nav-item-name">
+     Sponsor 
+  </span>
+  
+</a>
+ 
+
+    <div class="bd-nav-icons">
+        
+
+<a
+  class="
+    bd-nav-item
+    bd-theme-github
+    is-github
+    
+      is-icon
+    
+    
+    
+  "
+  title="Open Source on GitHub"
+  
+  href="https://github.com/jgthms/bulma"
+  target="_blank"
+  
+>
+  <span class="icon">
+    <i class="fa-brands fa-github-alt fa-lg"></i>
+  </span>
+
+  
+</a>
+   
+
+<a
+  class="
+    bd-nav-item
+    bd-theme-twitter
+    is-twitter
+    
+      is-icon
+    
+    
+    
+  "
+  title="Follow me on Twitter"
+  
+  href="https://twitter.com/jgthms"
+  target="_blank"
+  
+>
+  <span class="icon">
+    <i class="fa-brands fa-twitter fa-lg"></i>
+  </span>
+
+  
+</a>
+ 
+
+      <button class="bd-nav-item is-search is-icon">
+        <span class="icon">
+          <i class="fas fa-search fa-lg"></i>
+        </span>
+      </button>
+
+      <button
+        class="bd-nav-item is-icon is-ellipsis js-burger"
+        data-target="js-more"
+      >
+        <span class="icon">
+          <i class="fas fa-ellipsis-h fa-lg"></i>
+        </span>
+      </button>
+
+      <div id="js-more" class="bd-nav-menu is-more js-menu">
+          
+
+<a
+  class="
+    bd-nav-item
+    bd-theme-made-with-bulma
+    is-made-with-bulma
+    
+    
+    
+  "
+  title="The official community badge"
+  
+  href="https://bulma.io/made-with-bulma/"
+  
+>
+  <span class="icon">
+    <i class="fa-solid fa-certificate"></i>
+  </span>
+
+  
+  <span class="bd-nav-item-name">
+     Made with Bulma 
+  </span>
+  
+</a>
+   
+
+<a
+  class="
+    bd-nav-item
+    bd-theme-backers
+    is-backers
+    
+    
+    
+  "
+  title="Everyone who is supporting Bulma via Patreon and GitHub"
+  
+  href="https://bulma.io/backers/"
+  
+>
+  <span class="icon">
+    <i class="fa-solid fa-hand-holding-heart"></i>
+  </span>
+
+  
+  <span class="bd-nav-item-name">
+     Backers 
+  </span>
+  
+</a>
+   
+
+<a
+  class="
+    bd-nav-item
+    bd-theme-brand
+    is-brand
+    
+    
+    
+  "
+  title="The official Bulma logos"
+  
+  href="https://bulma.io/brand/"
+  
+>
+  <span class="icon">
+    <i class="fa-solid fa-medal"></i>
+  </span>
+
+  
+  <span class="bd-nav-item-name">
+     Bulma Brand 
+  </span>
+  
+</a>
+   
+
+<a
+  class="
+    bd-nav-item
+    bd-theme-extensions
+    is-extensions
+    
+    
+    
+  "
+  title="Side projects to enhance Bulma"
+  
+  href="https://bulma.io/extensions/"
+  
+>
+  <span class="icon">
+    <i class="fa-solid fa-plug"></i>
+  </span>
+
+  
+  <span class="bd-nav-item-name">
+     Bulma Extensions 
+  </span>
+  
+</a>
+ 
+      </div>
+    </div>
+
+    <a
+      class="button is-primary bd-nav-mobile-download"
+      href="https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"
+    >
+      Download
+    </a>
+  </nav>
+
+  <div class="bd-nav-themes">
+    <button id="js-cycle" class="bd-cycle js-burger" data-target="js-themes">
+      <div class="bd-cycles">
+        <div class="bd-cycle-sun">
+          <span class="icon">
+            <i class="fas fa-lg fa-sun" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="bd-cycle-moon">
+          <span class="icon">
+            <i class="fas fa-lg fa-moon" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </button>
+
+    <div id="js-themes" class="bd-nav-menu is-cycles js-menu js-themes">
+      <button
+        data-scheme="light"
+        class="bd-nav-item is-sun"
+        aria-label="Light mode"
+      >
+        <span class="icon">
+          <i class="fas fa-sun" aria-hidden="true"></i>
+        </span>
+        <span>Light</span>
+      </button>
+
+      <button
+        data-scheme="dark"
+        class="bd-nav-item is-moon"
+        aria-label="Dark mode"
+      >
+        <span class="icon">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </span>
+        <span>Dark</span>
+      </button>
+
+      <button
+        data-scheme="system"
+        class="bd-nav-item is-system"
+        aria-label="System mode"
+      >
+        <span class="icon">
+          <i class="fas fa-desktop" aria-hidden="true"></i>
+        </span>
+        <span>System</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="bd-nav-search">
+    <button
+      class="bd-nav-item is-search-desktop is-icon js-burger"
+      data-target="js-search"
+    >
+      <span class="icon">
+        <i class="fas fa-search fa-lg"></i>
+      </span>
+    </button>
+
+    <div id="js-search" class="bd-nav-menu is-search js-menu">
+      <input id="algoliaSearch" class="input" type="text" placeholder="Search" />
+    </div>
+  </div>
+
+  <a
+    class="button is-primary bd-nav-desktop-download"
+    href="https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"
+  >
+    Download
+  </a>
+
+  <button class="navbar-burger bd-nav-burger js-burger" data-target="js-nav">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+
+<main id="js-docs" class="bd-docs ">
+  <div class="bd-docs-overlay js-toggle" data-target="js-docs"></div>
+
+  <button id="js-menu-toggle" class="button bd-docs-button js-toggle" data-target="js-docs">
+    <i class="fas fa-arrow-right-from-bracket"></i>
+  </button>
+
+  <div class="bd-docs-menu">
+    <div class="bd-menu">
+  <div class="bd-menu-section is-start">
+    <h3 class="bd-menu-heading js-menu-heading">
+  
+    <span class="icon">
+      <i class="fas fa-arrow-right"></i>
+    </span>
+  
+  <strong>Start Here</strong>
+</h3>
+
+    
+
+<ul class="bd-menu-list js-menu-list" style="--size: 7">
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/start/overview/"
+  data-current-link-id=""
+  data-name="Overview"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Overview</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/start/installation/"
+  data-current-link-id=""
+  data-name="Installation"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Installation</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/start/alternative-versions/"
+  data-current-link-id=""
+  data-name="Alternative Versions"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Alternative Versions</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/start/syntax/"
+  data-current-link-id=""
+  data-name="Syntax"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Syntax</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/start/modular/"
+  data-current-link-id=""
+  data-name="Modularity"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Modularity</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/start/responsiveness/"
+  data-current-link-id=""
+  data-name="Responsiveness"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Responsiveness</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/start/migrating-to-v1/"
+  data-current-link-id=""
+  data-name="Migrating to v1"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Migrating to v1</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+</ul>
+
+  </div>
+
+  <div class="bd-menu-section is-features">
+    <h3 class="bd-menu-heading js-menu-heading">
+  
+    <span class="icon">
+      <i class="fas fa-medal"></i>
+    </span>
+  
+  <strong>Features</strong>
+</h3>
+
+    
+
+<ul class="bd-menu-list js-menu-list" style="--size: 5">
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/features/css-variables/"
+  data-current-link-id=""
+  data-name="CSS Variables"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">CSS Variables</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/features/themes/"
+  data-current-link-id=""
+  data-name="Themes"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Themes</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/features/dark-mode/"
+  data-current-link-id=""
+  data-name="Dark Mode"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Dark Mode</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/features/color-palettes/"
+  data-current-link-id=""
+  data-name="Color Palettes"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Color Palettes</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/features/skeletons/"
+  data-current-link-id=""
+  data-name="Skeletons"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Skeletons</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+</ul>
+
+  </div>
+
+  <div class="bd-menu-section is-sass">
+    <h3 class="bd-menu-heading js-menu-heading">
+  
+    <span class="icon">
+      <i class="fab fa-sass"></i>
+    </span>
+  
+  <strong>Sass Tools</strong>
+</h3>
+
+    
+
+<ul class="bd-menu-list js-menu-list" style="--size: 4">
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/sass/mixins/"
+  data-current-link-id=""
+  data-name="Mixins"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Mixins</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/sass/responsive-mixins/"
+  data-current-link-id=""
+  data-name="Responsive mixins"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Responsive mixins</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/sass/form-control-mixins/"
+  data-current-link-id=""
+  data-name="Form Control mixins"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Form Control mixins</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/sass/extends/"
+  data-current-link-id=""
+  data-name="Extends"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Extends</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+</ul>
+
+  </div>
+
+  <div class="bd-menu-section is-custom">
+    <h3 class="bd-menu-heading js-menu-heading">
+  
+    <span class="icon">
+      <i class="fas fa-palette"></i>
+    </span>
+  
+  <strong>Customization</strong>
+</h3>
+
+    
+
+<ul class="bd-menu-list js-menu-list" style="--size: 5">
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/customize/concepts/"
+  data-current-link-id=""
+  data-name="Concepts"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Concepts</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/customize/with-sass/"
+  data-current-link-id=""
+  data-name="With Sass"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">With Sass</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/customize/with-modular-sass/"
+  data-current-link-id=""
+  data-name="With Modular Sass"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">With Modular Sass</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/customize/with-css-variables/"
+  data-current-link-id=""
+  data-name="With CSS Variables"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">With CSS Variables</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/customize/list-of-sass-variables/"
+  data-current-link-id=""
+  data-name="List of Sass variables"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">List of Sass variables</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+</ul>
+
+  </div>
+
+  <div class="bd-menu-section is-library">
+    <h3 class="bd-menu-heading js-menu-heading">
+  
+    <span class="icon">
+      <i class="fas fa-code"></i>
+    </span>
+  
+  <strong>CSS Library</strong>
+</h3>
+
+
+    
+    
+    
+    
+    
+    
+
+    <ul
+      id="js-library-menu"
+      class="bd-menu-list bd-menu-library-list js-menu-list "
+      style="
+        --size: 5;
+        
+      "
+    >
+      
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+      js-sublist-link
+      has-sublist
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/"
+  data-current-link-id=""
+  data-name="Elements"
+  data-size="12"
+>
+  <span class="bd-menu-link-name">Elements</span>
+
+  
+    <span class="icon is-small">
+      <i class="fas fa-angle-right"></i>
+    </span>
+  
+</a>
+
+
+  
+    <ul
+      class="bd-menu-sublist "
+      style="--subsize: 12"
+    >
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/block/"
+  data-current-link-id=""
+  data-name="Block"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Block</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/box/"
+  data-current-link-id=""
+  data-name="Box"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Box</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/button/"
+  data-current-link-id=""
+  data-name="Button"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Button</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/content/"
+  data-current-link-id=""
+  data-name="Content"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Content</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/delete/"
+  data-current-link-id=""
+  data-name="Delete"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Delete</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/icon/"
+  data-current-link-id=""
+  data-name="Icon"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Icon</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/image/"
+  data-current-link-id=""
+  data-name="Image"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Image</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/notification/"
+  data-current-link-id=""
+  data-name="Notification"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Notification</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/progress/"
+  data-current-link-id=""
+  data-name="Progress bars"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Progress bars</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/table/"
+  data-current-link-id=""
+  data-name="Table"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Table</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/tag/"
+  data-current-link-id=""
+  data-name="Tag"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Tag</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/elements/title/"
+  data-current-link-id=""
+  data-name="Title"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Title</span>
+
+  
+</a>
+
+        </li>
+      
+    </ul>
+  
+</li>
+
+      
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+      js-sublist-link
+      has-sublist
+    
+    
+  "
+  href="https://bulma.io/documentation/components/"
+  data-current-link-id=""
+  data-name="Components"
+  data-size="10"
+>
+  <span class="bd-menu-link-name">Components</span>
+
+  
+    <span class="icon is-small">
+      <i class="fas fa-angle-right"></i>
+    </span>
+  
+</a>
+
+
+  
+    <ul
+      class="bd-menu-sublist "
+      style="--subsize: 10"
+    >
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/components/breadcrumb/"
+  data-current-link-id=""
+  data-name="Breadcrumb"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Breadcrumb</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/components/card/"
+  data-current-link-id=""
+  data-name="Card"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Card</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/components/dropdown/"
+  data-current-link-id=""
+  data-name="Dropdown"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Dropdown</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/components/menu/"
+  data-current-link-id=""
+  data-name="Menu"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Menu</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/components/message/"
+  data-current-link-id=""
+  data-name="Message"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Message</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/components/modal/"
+  data-current-link-id=""
+  data-name="Modal"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Modal</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/components/navbar/"
+  data-current-link-id=""
+  data-name="Navbar"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Navbar</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/components/pagination/"
+  data-current-link-id=""
+  data-name="Pagination"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Pagination</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/components/panel/"
+  data-current-link-id=""
+  data-name="Panel"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Panel</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/components/tabs/"
+  data-current-link-id=""
+  data-name="Tabs"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Tabs</span>
+
+  
+</a>
+
+        </li>
+      
+    </ul>
+  
+</li>
+
+      
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+      js-sublist-link
+      has-sublist
+    
+    
+  "
+  href="https://bulma.io/documentation/form/"
+  data-current-link-id=""
+  data-name="Form"
+  data-size="7"
+>
+  <span class="bd-menu-link-name">Form</span>
+
+  
+    <span class="icon is-small">
+      <i class="fas fa-angle-right"></i>
+    </span>
+  
+</a>
+
+
+  
+    <ul
+      class="bd-menu-sublist "
+      style="--subsize: 7"
+    >
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/form/general/"
+  data-current-link-id=""
+  data-name="General"
+  data-size=""
+>
+  <span class="bd-menu-link-name">General</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/form/input/"
+  data-current-link-id=""
+  data-name="Input"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Input</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/form/textarea/"
+  data-current-link-id=""
+  data-name="Textarea"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Textarea</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/form/select/"
+  data-current-link-id=""
+  data-name="Select"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Select</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/form/checkbox/"
+  data-current-link-id=""
+  data-name="Checkbox"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Checkbox</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/form/radio/"
+  data-current-link-id=""
+  data-name="Radio"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Radio</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/form/file/"
+  data-current-link-id=""
+  data-name="File"
+  data-size=""
+>
+  <span class="bd-menu-link-name">File</span>
+
+  
+</a>
+
+        </li>
+      
+    </ul>
+  
+</li>
+
+      
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+      js-sublist-link
+      has-sublist
+    
+    
+  "
+  href="https://bulma.io/documentation/columns/"
+  data-current-link-id=""
+  data-name="Columns"
+  data-size="6"
+>
+  <span class="bd-menu-link-name">Columns</span>
+
+  
+    <span class="icon is-small">
+      <i class="fas fa-angle-right"></i>
+    </span>
+  
+</a>
+
+
+  
+    <ul
+      class="bd-menu-sublist "
+      style="--subsize: 6"
+    >
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/columns/basics/"
+  data-current-link-id=""
+  data-name="Basics"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Basics</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/columns/sizes/"
+  data-current-link-id=""
+  data-name="Sizes"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Sizes</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/columns/responsiveness/"
+  data-current-link-id=""
+  data-name="Responsiveness"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Responsiveness</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/columns/nesting/"
+  data-current-link-id=""
+  data-name="Nesting"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Nesting</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/columns/gap/"
+  data-current-link-id=""
+  data-name="Gap"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Gap</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/columns/options/"
+  data-current-link-id=""
+  data-name="Options"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Options</span>
+
+  
+</a>
+
+        </li>
+      
+    </ul>
+  
+</li>
+
+      
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+      js-sublist-link
+      has-sublist
+    
+    
+  "
+  href="https://bulma.io/documentation/grid/"
+  data-current-link-id=""
+  data-name="Grid"
+  data-size="4"
+>
+  <span class="bd-menu-link-name">Grid</span>
+
+  
+    <span class="icon is-small">
+      <i class="fas fa-angle-right"></i>
+    </span>
+  
+</a>
+
+
+  
+    <ul
+      class="bd-menu-sublist "
+      style="--subsize: 4"
+    >
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/grid/smart-grid/"
+  data-current-link-id=""
+  data-name="Smart Grid"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Smart Grid</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/grid/fixed-grid/"
+  data-current-link-id=""
+  data-name="Fixed Grid"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Fixed Grid</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/grid/grid-cells/"
+  data-current-link-id=""
+  data-name="Grid Cells"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Grid Cells</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/grid/playground/"
+  data-current-link-id=""
+  data-name="Playground"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Playground</span>
+
+  
+</a>
+
+        </li>
+      
+    </ul>
+  
+</li>
+
+      
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+      js-sublist-link
+      has-sublist
+    
+    
+  "
+  href="https://bulma.io/documentation/layout/"
+  data-current-link-id=""
+  data-name="Layout"
+  data-size="6"
+>
+  <span class="bd-menu-link-name">Layout</span>
+
+  
+    <span class="icon is-small">
+      <i class="fas fa-angle-right"></i>
+    </span>
+  
+</a>
+
+
+  
+    <ul
+      class="bd-menu-sublist "
+      style="--subsize: 6"
+    >
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/layout/container/"
+  data-current-link-id=""
+  data-name="Container"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Container</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/layout/hero/"
+  data-current-link-id=""
+  data-name="Hero"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Hero</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/layout/section/"
+  data-current-link-id=""
+  data-name="Section"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Section</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/layout/level/"
+  data-current-link-id=""
+  data-name="Level"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Level</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/layout/media-object/"
+  data-current-link-id=""
+  data-name="Media Object"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Media Object</span>
+
+  
+</a>
+
+        </li>
+      
+        
+        <li>
+          
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/layout/footer/"
+  data-current-link-id=""
+  data-name="Footer"
+  data-size=""
+>
+  <span class="bd-menu-link-name">Footer</span>
+
+  
+</a>
+
+        </li>
+      
+    </ul>
+  
+</li>
+
+    </ul>
+  </div>
+
+  <div class="bd-menu-section is-utilities">
+    <h3 class="bd-menu-heading js-menu-heading">
+  
+    <span class="icon">
+      <i class="fab fa-css3"></i>
+    </span>
+  
+  <strong>CSS Helpers</strong>
+</h3>
+
+    
+
+<ul class="bd-menu-list js-menu-list" style="--size: 7">
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/helpers/color-helpers/"
+  data-current-link-id=""
+  data-name="Color"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Color</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/helpers/palette-helpers/"
+  data-current-link-id=""
+  data-name="Color Palette"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Color Palette</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/helpers/spacing-helpers/"
+  data-current-link-id=""
+  data-name="Spacing"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Spacing</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/helpers/typography-helpers/"
+  data-current-link-id=""
+  data-name="Typography"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Typography</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/helpers/visibility-helpers/"
+  data-current-link-id=""
+  data-name="Visibility"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Visibility</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/helpers/flexbox-helpers/"
+  data-current-link-id=""
+  data-name="Flexbox"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Flexbox</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+    
+
+
+
+
+
+<li>
+  
+
+<a
+  class="
+    bd-menu-link
+    
+    
+  "
+  href="https://bulma.io/documentation/helpers/other-helpers/"
+  data-current-link-id=""
+  data-name="Other"
+  data-size="0"
+>
+  <span class="bd-menu-link-name">Other</span>
+
+  
+</a>
+
+
+  
+</li>
+
+  
+</ul>
+
+  </div>
+</div>
+
+<div class="bd-side-sponsrs">
+  <p class="bd-side-sponsor-label">Sponsor</p>
+
+  <a class="bd-side-sponsor" href="https://www.route4me.com/" target="_blank">
+    <img
+  src="https://bulma.io/assets/images/amis/route4me.png"
+  srcset="https://bulma.io/assets/images/amis/route4me.png 1x,
+          https://bulma.io/assets/images/amis/route4me@2x.png 2x"
+  alt="Route Planner and Route Optimizer"
+  width="224"
+  height="57">
+
+  </a>
+</div>
+
+
+  </div>
+
+  <div class="bd-docs-lead bd-theme-">
+    
+    
+
+    <section class="bd-hero is-docs">
+  <div class="bd-hero-body">
+    <h1 class="bd-hero-title algolia-lvl0">
+      <p>Official Bulma Documentation</p>
+
+    </h1>
+
+    <hr class="bd-hr">
+
+    <h2 class="bd-hero-subtitle algolia-lvl1">
+      
+
+    </h2>
+
+    
+      <div class="bd-hero-prints">
+        
+          <a class="bd-hero-print icon-text" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+            <span class="icon">
+              <i class="fab fa-creative-commons"></i>
+            </span>
+            <span>Creative Commons</span>
+          </a>
+        
+          <a class="bd-hero-print icon-text" href="https://github.com/jgthms/bulma" target="_blank">
+            <span class="icon">
+              <i class="fas fa-code-pull-request"></i>
+            </span>
+            <span>Contribute on GitHub</span>
+          </a>
+        
+      </div>
+    
+  </div>
+
+  
+    <div class="bd-hero-carbon">
+      <div id="carboncontainer" class="bd-carbon">
+  <div id="carbon">
+    <a id="masterclass-carbon" href="https://cssmasterclass.io/" target="_blank" style="display: none; aspect-ratio: 40 / 28; max-width: 400px; max-height: 280px; width: 100%;">
+      <img src="https://bulma.io/assets/images/masterclass/masterclass-carbon.png" height="260" width="400" alt="CSS Masterclass">
+    </a>
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CWYIE237&placement=bulmaio&format=cover" id="_carbonads_js" onerror="this.previousElementSibling.style.display = 'flex'"></script>
+  </div>
+</div>
+
+    </div>
+  
+</section>
+
+
+    <div class="bd-docs-content algolia-content">
+      
+        
+
+<div class="bd-stack">
+  
+    
+    
+
+    <h3 class="bd-link-heading bd-theme-start">
+      <span class="icon">
+        <i class="fa-solid fa-arrow-right"></i>
+      </span>
+      <strong>Start</strong>
+    </h3>
+
+    <div class="bd-links bd-theme-start">
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/start/overview/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-regular fa-eye fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Overview
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      You only need <strong>1 CSS file</strong> to use Bulma
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/start/installation/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-download fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Installation
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Create your <strong>own theme</strong> with a simple set of <strong>variables</strong>
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/start/alternative-versions/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-download fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Alternative Versions
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Use one of the <strong>pre-built</strong> alternative versions of Bulma
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/start/syntax/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-code fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Syntax
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      <strong>How to use</strong> Bulma components and their alternative styles
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/start/modular/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-cubes fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Modularity
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Just import what you <strong>need</strong>
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/start/responsiveness/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-arrows-alt-h fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Responsiveness
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Bulma is a <strong>mobile-first</strong> framework
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/start/migrating-to-v1/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-arrow-up fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Migrating to v1
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      How to <strong>migrate</strong> to Bulma v1
+    </div>
+
+    
+  </div>
+</a>
+
+      
+    </div>
+  
+    
+    
+
+    <h3 class="bd-link-heading bd-theme-features">
+      <span class="icon">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+      </span>
+      <strong>Features</strong>
+    </h3>
+
+    <div class="bd-links bd-theme-features">
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/features/css-variables/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-brands fa-css3 fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      CSS Variables
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Customizing with <strong>CSS only</strong>
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/features/themes/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-palette fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Themes
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      How Bulma styles its components with <strong>CSS variables</strong>
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/features/dark-mode/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-moon fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Dark Mode
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Bulma comes with an <strong>automatic Dark mode</strong>
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/features/color-palettes/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-swatchbook fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Color Palettes
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Input <strong>1 color</strong>, Receive <strong>dozens</strong> of different <strong>shades</strong> for that color
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/features/skeletons/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-spinner fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Skeletons
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Transform almost any Bulma component into a <strong>skeleton loader</strong>, or use one of the pre-built utility elements
+    </div>
+
+    
+  </div>
+</a>
+
+      
+    </div>
+  
+    
+    
+
+    <h3 class="bd-link-heading bd-theme-sass">
+      <span class="icon">
+        <i class="fa-brands fa-sass"></i>
+      </span>
+      <strong>Sass Utilities</strong>
+    </h3>
+
+    <div class="bd-links bd-theme-sass">
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/sass/mixins/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-at fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Mixins
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Utility mixins for custom elements and other CSS helpers
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/sass/responsive-mixins/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-arrows-alt-h fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Responsive mixins
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Mixins that allows you to define different styles for each screen size
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/sass/form-control-mixins/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-regular fa-hand-pointer fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Form Control mixins
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      <strong>Mixins</strong> for Bulma's buttons and form controls
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/sass/extends/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-percentage fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Extends
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Sass extends to keep your <strong>CSS code DRY</strong>
+    </div>
+
+    
+  </div>
+</a>
+
+      
+    </div>
+  
+    
+    
+
+    <h3 class="bd-link-heading bd-theme-customize">
+      <span class="icon">
+        <i class="fa-solid fa-paint-brush"></i>
+      </span>
+      <strong>Customize</strong>
+    </h3>
+
+    <div class="bd-links bd-theme-customize">
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/customize/concepts/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-lightbulb fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Concepts
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      What makes Bulma <strong>customizable</strong>
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/customize/with-sass/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-brands fa-sass fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      With Sass
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Customize Bulma with Sass variables
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/customize/with-modular-sass/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-cubes fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      With Modular Sass
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Import <strong>only</strong> what you need and <strong>customize</strong> it
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/customize/with-css-variables/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-brands fa-css3 fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      With CSS Variables
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      See how Bulma uses <strong>Sass variables</strong> to allow easy customization
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/customize/list-of-sass-variables/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-list fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      List of Sass variables
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      All <strong>Sass</strong> variables defined by Bulma
+    </div>
+
+    
+  </div>
+</a>
+
+      
+    </div>
+  
+    
+    
+
+    <h3 class="bd-link-heading bd-theme-library">
+      <span class="icon">
+        <i class="fa-solid fa-cubes"></i>
+      </span>
+      <strong>CSS Library</strong>
+    </h3>
+
+    <div class="bd-links bd-theme-library">
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/columns/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-columns fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Columns
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      The power of <strong>Flexbox</strong> in a simple interface
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/grid/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-th fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Grid
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      A <strong>2 dimensional</strong> layout component
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/elements/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-cube fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Elements
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Essential interface elements that only require a <strong>single CSS class</strong>
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/components/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-cubes fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Components
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Advanced multi-part components with lots of possibilities
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/form/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-align-left fa-flip-vertical fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Form
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      The indispensable <strong>form controls</strong>, designed for maximum clarity
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/layout/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-border-none fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Layout
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Design the <strong>structure</strong> of your webpage with these CSS classes
+    </div>
+
+    
+  </div>
+</a>
+
+      
+    </div>
+  
+    
+    
+
+    <h3 class="bd-link-heading bd-theme-helpers">
+      <span class="icon">
+        <i class="fa-brands fa-css3"></i>
+      </span>
+      <strong>Helpers</strong>
+    </h3>
+
+    <div class="bd-links bd-theme-helpers">
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/helpers/color-helpers/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-tint fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Color
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Change the <strong>color</strong> of the text and/or background
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/helpers/palette-helpers/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-swatchbook fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Color Palette
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Use a color's <strong>palette</strong> as text color and/or background
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/helpers/spacing-helpers/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-arrows-alt-h fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Spacing
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Change the <strong>size</strong> and <strong>color</strong> of the text for one or multiple viewport width
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/helpers/typography-helpers/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-font fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Typography
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Change the <strong>size</strong>, weight, and other font properties of the text
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/helpers/visibility-helpers/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-regular fa-eye fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Visibility
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      <strong>Show/hide content</strong> depending on the width of the viewport
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/helpers/flexbox-helpers/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-regular fa-square fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Flexbox
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Helpers for all <strong>Flexbox</strong> properties
+    </div>
+
+    
+  </div>
+</a>
+
+      
+        
+
+        <a class="bd-link" href="https://bulma.io/documentation/helpers/other-helpers/">
+  
+
+  <header class="bd-link-header">
+    
+      <span class="icon bd-link-icon">
+        <i
+          class="fa-solid fa-ellipsis-h fa-lg"
+        ></i>
+      </span>
+    
+
+    <h4 class="bd-link-title algolia-lvl1">
+      Other
+    </h4>
+  </header>
+
+  <div class="bd-link-body">
+    <div class="bd-link-subtitle">
+      Other useful Bulma helpers
+    </div>
+
+    
+  </div>
+</a>
+
+      
+    </div>
+  
+</div>
+
+      
+
+        
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Previous link -->
+<!-- If first index in list -->
+
+
+<!-- Next link -->
+<!-- If last index in list -->
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  </div>
+</main>
+
+<script type="text/javascript" src="https://bulma.io/assets/javascript/docs.js"></script>
+
+
+    
+
+    
+      <div class="bd-home-section is-support bd-theme-docs has-text-centered">
+  <h3 class="title">
+    How to support Bulma
+  </h3>
+
+  <div class="bd-footer-donations columns is-multiline">
+    <div class="bd-footer-donation column">
+      <p class="bd-footer-donation-title"><strong>One-time</strong> donation</p>
+      <div class="bd-footer-donation-action">
+        <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="8WMKYSRFN6A78">
+          <input
+            type="image"
+            src="https://bulma.io/assets/images/paypal-donate.png"
+            border="0"
+            name="submit"
+            alt="PayPal – The safer, easier way to pay online."
+            height="30"
+          >
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+    </div>
+
+    <div class="bd-footer-donation column">
+      <p class="bd-footer-donation-title"><strong>Browser testing</strong> via</p>
+      <div class="bd-footer-donation-action">
+        <a class="bd-hidden-dark" href="https://www.lambdatest.com/" target="_blank"><img src="https://assets.testmuai.com/resources/images/logos/logo.svg" style="vertical-align: middle;margin-left:5px" width="147" height="26" /></a>
+        <a class="bd-hidden-light" href="https://www.lambdatest.com/" target="_blank"><img src="https://assets.testmuai.com/resources/images/logos/logo.svg" style="vertical-align: middle;margin-left:5px" width="147" height="26" /></a>
+      </div>
+    </div>
+
+    
+      <div class="bd-footer-donation column">
+        <p class="bd-footer-donation-title">Visit our <strong>Sponsors</strong></p>
+
+        <div class="bd-footer-donation-items" id="pied"></div>
+      </div>
+    
+
+    <div class="bd-footer-donation column">
+      <p class="bd-footer-donation-title"><strong>Monthly</strong> donation</p>
+      <div class="bd-footer-donation-action">
+        <a class="button is-patreon"
+  href="https://bulma.io/become-a-bulma-sponsor/">
+  <span>
+    Become a sponsor
+  </span>
+</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="https://bulma.io/assets/vendor/native.js"></script>
+<script>
+  _native.init('CVAIKK3E', {
+    targetClass: 'native-js',
+    fallback: `<a href="https://gum.co/css-44-deluxe" class="native-flex" target="_blank">
+      <style>
+        .native-js {
+          background: linear-gradient(-30deg, #4f38a4, #a244bc 45%, #4f38a4 45%) #4f38a4;
+        }
+
+        .native-details {
+          color: #FFFFFF !important;
+        }
+
+        .native-details:hover {
+          color: #FFFFFF !important;
+        }
+
+        .native-cta {
+          color: #FFFFFF;
+          background-color: #3bb76d;
+        }
+
+        .native-cta:hover {
+          color: #native_cta_color_hover;
+          background-color: #3bb76d;
+        }
+      </style>
+      <div class="native-main">
+        <img class="native-img" src="https://bulma.io/assets/images/fortyfour-native.png">
+        <div class="native-details">
+          <span class="native-company">CSS in 44 minutes</span>
+          <span class="native-desc">Learn how to build your own webpage from scratch!</span>
+        </div>
+      </div>
+      <span class="native-cta">Buy the book</span>
+    </a>`,
+  });
+</script>
+
+<div class="bd-native">
+<div class="native-js">
+  <a href="#native_link#" class="native-flex">
+    <style>
+      .native-js {
+        background: linear-gradient(-30deg, #native_bg_color#E5, #native_bg_color#E5 45%, #native_bg_color# 45%) #fff;
+      }
+
+      .native-details {
+        color: #native_color# !important;
+      }
+
+      .native-details:hover {
+        color: #native_color_hover# !important;
+      }
+
+      .native-cta {
+        color: #native_cta_color#;
+        background-color: #native_cta_bg_color#;
+      }
+
+      .native-cta:hover {
+        color: #native_cta_color_hover#;
+        background-color: #native_cta_bg_color_hover#;
+      }
+    </style>
+    <div class="native-main">
+      <img class="native-img" src="#native_logo#">
+      <div class="native-details">
+        <span class="native-company">#native_company#</span>
+        <span class="native-desc">#native_desc#</span>
+      </div>
+    </div>
+    <span class="button is-medium native-cta">#native_cta#</span>
+  </a>
+</div>
+</div>
+
+    
+
+    <footer class="bd-footer footer has-text-centered">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4">
+        <h4 class="bd-footer-title">
+  <strong xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Bulma</strong> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://jgthms.com" property="cc:attributionName" rel="cc:attributionURL" target="_blank">Jeremy Thomas</a>.
+</h4>
+
+<div class="bd-footer-iframe">
+  <a href="https://twitter.com/jgthms" class="button is-twitter" data-related="jgthms:Creator of Bulma">
+    <span class="icon"><i class="fab fa-twitter"></i></span>
+    <span>Follow @jgthms</span>
+  </a>
+</div>
+
+      </div>
+      <div class="column is-4">
+        <h4 class="bd-footer-title">
+  <strong>Contribute</strong> on GitHub
+</h4>
+
+<div class="bd-footer-iframe is-github">
+  <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=star&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="170px" height="30px"></iframe>
+</div>
+
+      </div>
+      <div class="column is-4">
+        <h4 class="bd-footer-title">
+  <strong>Share</strong> on social media
+</h4>
+
+<div class="bd-footer-iframe">
+  <a href="https://twitter.com/share" class="button is-twitter" data-text="Bulma: Free, open source, and modern CSS framework based on Flexbox" data-url="https://bulma.io" data-count="horizontal" data-via="jgthms" data-related="jgthms:Creator of Bulma">
+    <span class="icon"><i class="fab fa-twitter"></i></span>
+    <span>Twitter</span>
+  </a>
+
+  <a class="button is-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fbulma.io">
+    <span class="icon"><i class="fab fa-facebook"></i></span>
+    <span>Facebook</span>
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <div class="bd-footer-tsp has-text-centered">
+      Source code licensed <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+      Website content licensed <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://bulma.io/assets/vendor/clipboard-2.0.11.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script type="text/javascript"> docsearch({
+      apiKey: 'cb93c14bebd90678e789c946d95ea94d',
+      indexName: 'bulma',
+      inputSelector: '#algoliaSearch',
+      debug: false // Set debug to true if you want to inspect the dropdown
+    });
+    </script>
+    <script src="https://bulma.io/assets/javascript/main.js"></script>
+    <div id="bulma-customizer-app" class="is-hidden-mobile"></div>
+<div id="scope" class="is-hidden">
+  <div class="breadcrumb"></div>
+  <div class="card"></div>
+  <div class="dropdown"></div>
+  <div class="menu"></div>
+  <div class="message"></div>
+  <div class="modal"></div>
+  <div class="navbar"></div>
+  <div class="pagination"></div>
+  <div class="panel"></div>
+  <div class="tabs"></div>
+  <div class="box"></div>
+  <div class="content"></div>
+  <div class="delete"></div>
+  <div class="icon"></div>
+  <div class="notification"></div>
+  <div class="progress"></div>
+  <div class="table"></div>
+  <div class="tag"></div>
+  <div class="title"></div>
+  <input class="input" />
+  <div class="file"></div>
+  <div class="columns"></div>
+  <div class="grid"></div>
+  <div class="footer"></div>
+  <div class="hero"></div>
+  <div class="media"></div>
+  <div class="section"></div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://bulma.io/assets/javascript/bulma-customizer/index.css"
+/>
+<script
+  defer
+  src="https://bulma.io/assets/javascript/bulma-customizer/index.js"
+></script>
+
+    <div id="masterclass" class="masterclass">
+  <div id="masterclass-background" class="masterclass-background"></div>
+
+  <a class="masterclass-body" href="https://cssmasterclass.io/" target="_blank">
+    <div class="masterclass-content is-hidden-desktop">
+      <img
+        src="https://bulma.io/assets/images/masterclass/logo-mobile.png"
+        height="68"
+        width="240"
+      />
+      <img
+        src="https://bulma.io/assets/images/masterclass/text-mobile.png"
+        height="99"
+        width="228"
+      />
+      <div class="shine">
+        <span>Get started for Free</span>
+      </div>
+    </div>
+
+    <div class="masterclass-content is-hidden-touch">
+      <img
+        src="https://bulma.io/assets/images/masterclass/logo-desktop.png"
+        height="50"
+        width="378"
+      />
+      <img
+        src="https://bulma.io/assets/images/masterclass/text-desktop.png"
+        height="58"
+        width="571"
+      />
+      <div class="shine">
+        <span>Get started for Free</span>
+      </div>
+    </div>
+  </a>
+
+  <button
+    id="masterclass-close"
+    class="modal-close is-large"
+    aria-label="close"
+  ></button>
+</div>
+
+  </body>
+</html>

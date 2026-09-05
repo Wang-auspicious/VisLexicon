@@ -1,0 +1,69 @@
+{
+  "lever": "lexicon",
+  "id": "text-scramble",
+  "term_en": "Text Scramble",
+  "term_zh": "解码文字",
+  "axis": "interaction",
+  "aliases": [
+    "乱码文字",
+    "解码动画",
+    "hacker text",
+    "字符翻转"
+  ],
+  "definition_zh": "字符随机翻滚后逐位落定，科技感文本进场。",
+  "notation": "I[scramble] · frame:speed · resolve:fwd · charset:ascii",
+  "genes": [
+    {
+      "gene": "解码",
+      "value": "从右/随机位置逐位落定"
+    },
+    {
+      "gene": "字符集",
+      "value": "ASCII 乱码 / 中文混排"
+    }
+  ],
+  "minimal_code": {
+    "css": "const CHARS = '!<>-_\\\\/[]{}—=+*^?#';\n// 每帧：已落定位照抄，未落定位随机字符"
+  },
+  "params": [
+    {
+      "key": "speed",
+      "label": "翻滚间隔",
+      "min": 20,
+      "max": 120,
+      "step": 5,
+      "unit": "ms",
+      "default": 55
+    }
+  ],
+  "anti_patterns": [
+    "连续长段解码会累；只用于标题级一两次。"
+  ],
+  "tech_notes": [
+    "rAF 轮换随机字符，已揭示位冻结；避免高频重建字符串。"
+  ],
+  "common_pairings": [
+    "terminal"
+  ],
+  "related": [
+    "typewriter"
+  ],
+  "wild": [
+    {
+      "what": "Netflix 大标题动效",
+      "source": "netflix.com",
+      "note": "text scramble 进入大众视野"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/text-scramble/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/text-scramble.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

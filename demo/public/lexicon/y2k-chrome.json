@@ -1,0 +1,63 @@
+{
+  "lever": "lexicon",
+  "id": "y2k-chrome",
+  "term_en": "Y2K Chrome",
+  "term_zh": "Y2K 金属",
+  "axis": "aesthetic",
+  "aliases": [
+    "y2k 风",
+    "镀铬",
+    "千禧风",
+    "liquid metal"
+  ],
+  "definition_zh": "液态金属质感 + 星形闪光 + 高饱和蓝紫粉渐变，千禧复古未来。",
+  "notation": "A[y2k] · grad:blue-purple-pink · glyph:star/wing",
+  "genes": [
+    {
+      "gene": "金属",
+      "value": "多段渐变 clip 到文字/形体"
+    },
+    {
+      "gene": "图形",
+      "value": "四角星、翅膀、气泡字"
+    },
+    {
+      "gene": "色",
+      "value": "蓝紫粉高饱和 + 银白高光"
+    }
+  ],
+  "minimal_code": {
+    "css": ".y2k{background:linear-gradient(120deg,#cdd8ff,#f3c4ff 45%,#9df1ff);\n  -webkit-background-clip:text;color:transparent}\n.star{clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "Y2K 是「事件风」，整年全站用会迅速过时；活动页限定。"
+  ],
+  "tech_notes": [
+    "background-clip:text 做金属字；星形用 clip-path polygon。"
+  ],
+  "common_pairings": [
+    "aurora-gradient"
+  ],
+  "related": [
+    "minimal-flat"
+  ],
+  "wild": [
+    {
+      "what": "Spotify Wrapped 2023",
+      "source": "spotify.com",
+      "note": "Y2K 复兴的年度级案例"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/y2k-chrome/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/y2k-chrome.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

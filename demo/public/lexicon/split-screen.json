@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "split-screen",
+  "term_en": "Split Screen",
+  "term_zh": "分屏对峙",
+  "axis": "layout",
+  "aliases": [
+    "左右分栏",
+    "对半布局",
+    "50/50"
+  ],
+  "definition_zh": "垂直分割两个等权内容区，分界线即视觉锚点。",
+  "notation": "L[split] · ratio:50/50 · spine:1px · mode:对峙",
+  "genes": [
+    {
+      "gene": "分栏比例",
+      "value": "50/50 · 60/40 · 锈蚀分割"
+    },
+    {
+      "gene": "中轴",
+      "value": "硬分线 / 渐变带 / 元素侵入"
+    }
+  ],
+  "minimal_code": {
+    "css": ".split{display:grid;grid-template-columns:1fr 1px 1fr}\n.split .mid{border-inline:1px solid #fff2}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "内容明显不等权时别硬用 50/50，次要内容会浪费半屏。"
+  ],
+  "tech_notes": [
+    "1fr 1px 1fr 三列最稳；中轴用 1px 背景或渐变带制造分界。"
+  ],
+  "common_pairings": [
+    "editorial"
+  ],
+  "related": [
+    "sidebar-shell"
+  ],
+  "wild": [
+    {
+      "what": "品牌车型页“纯电 vs 燃油”",
+      "source": "车企官网",
+      "note": "二分法最强的叙事用法"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/split-screen/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/split-screen.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

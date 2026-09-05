@@ -1,0 +1,629 @@
+{
+  "schemaVersion": 1,
+  "reviewKind": "independent-real-site-semantic-visual-review",
+  "batchId": "2026-09-02-batch-02",
+  "reviewerId": "independent-batch-02-reviewer",
+  "reviewedAt": "2026-09-02T00:00:00.000Z",
+  "overallVerdict": "PASS",
+  "publicationEligible": false,
+  "summary": {
+    "siteCount": 3,
+    "passCount": 3,
+    "needsCorrectionCount": 0,
+    "failCount": 0,
+    "pagePassCount": 9,
+    "shotPassCount": 9,
+    "reason": "Laws of UX、A11Y Project 和 ecomm.design 均已按官方页面、三页截图、分类/facets、简介与权利边界完成独立复核；三站均通过，但本文件不生成 approved bundle。"
+  },
+  "reviewRules": [
+    "只使用官方站点、官方仓库和官方页面作为事实来源，不采信第三方摘要。",
+    "分类对象是 Site Entry，不是整个 Source Entity。",
+    "每站都必须同时通过 identity、breadth 和 proof 三页证据。",
+    "许可与作者边界只按官方页面和官方仓库确认，不把可公开访问误写成可自由再分发。"
+  ],
+  "networkAccess": {
+    "routes": [
+      {
+        "channel": "agent-reach:web",
+        "backend": "Jina Reader",
+        "status": "USED",
+        "purpose": "重新访问 Laws of UX、A11Y Project 与 ecomm.design 的官方首页、About/Info、Checklist/Proof 页面。"
+      }
+    ],
+    "observedLimitations": [
+      "URL fragment 不会在网页抓取里完整传递，因此 A11Y Project 的 checklist 锚点以页面正文和截图语义共同确认。",
+      "ecomm.design 首页会弹出反馈浮层或订阅提示，已按捕获记录确认相关内容后再判断。"
+    ]
+  },
+  "localChecks": {
+    "taxonomyValidator": "demo/src/data/curation-taxonomy.js",
+    "evidenceValidator": "demo/src/lib/curation-evidence.js",
+    "classificationErrors": [],
+    "facetErrors": [],
+    "batchNotes": [
+      "三站的分类对象、主类与小类均符合 taxonomy registry。",
+      "三站的 facets 未出现 AI / Agent / React / 平台混类等违规维度。",
+      "本次复核未修改 draft、code 或 approved bundle。"
+    ]
+  },
+  "sites": [
+    {
+      "siteId": "laws-of-ux",
+      "verdict": "PASS",
+      "reviewPassed": true,
+      "reviewedScope": "lawsofux.com 的交互心理学参考站入口，不包含同名书籍商店或第三方转载。",
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "verdict": "PASS",
+          "sourceUrl": "https://lawsofux.com/info/",
+          "observedFinalUrl": "https://lawsofux.com/info/",
+          "observedTitle": "Info | Laws of UX",
+          "reason": "Info 页明确说明该站由 Jon Yablonski 创建，并说明其目标是把心理学启发式整理成面向 UX 设计师的交互式资源。"
+        },
+        {
+          "role": "breadth",
+          "verdict": "PASS",
+          "sourceUrl": "https://lawsofux.com/",
+          "observedFinalUrl": "https://lawsofux.com/",
+          "observedTitle": "Home | Laws of UX",
+          "reason": "首页直接展示多条 Laws 卡片及简述，能看到内容组织方式与站点广度。"
+        },
+        {
+          "role": "proof",
+          "verdict": "PASS",
+          "sourceUrl": "https://lawsofux.com/hicks-law/",
+          "observedFinalUrl": "https://lawsofux.com/hicks-law/",
+          "observedTitle": "Hick’s Law | Laws of UX",
+          "reason": "具体条目提供定义、要点与案例，足以证明这是可浏览、可学习的规范参考站，而非单纯静态宣传页。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/laws-of-ux/v2-identity.png",
+          "sha256": "00e1cfb362233349207f517bb207d4e75592b225e7253c7b5a18f920f88fb36a",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；Info 页与站点身份、作者、许可边界同时可见，截图完整。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/laws-of-ux/v2-breadth.png",
+          "sha256": "a991388306b5117e8baaf0bd6bac599a558884c48db86382be98fce3f1c311e3",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；首页卡片列表完整、无骨架或空白，能清楚看出多条 UX 法则目录。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/laws-of-ux/v2-proof.png",
+          "sha256": "e77af14ab8aab390007dea25ccb7dee4333fbfc0175ab88de134fb2643e886eb",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；Hick’s Law 条目显示定义、要点与案例，证明内容深度足够。"
+        }
+      ],
+      "descriptionVerdict": {
+        "verdict": "PASS",
+        "codePoints": 95,
+        "factAccuracy": "PASS",
+        "reason": "简介准确表达了心理学参考站、可浏览/检索、学习用途与 CC BY-NC-ND 限制，没有把内容写成可任意改编素材。"
+      },
+      "classificationVerdict": {
+        "verdict": "PASS",
+        "primaryCategory": "reference-standards",
+        "subcategory": "standards-guidelines-checklists",
+        "reason": "官网内容是 UX 心理学启发式参考与条目化标准说明，最接近规范/检查清单类参考站。"
+      },
+      "confirmedClassification": {
+        "recordLevel": "entry",
+        "entityId": "entity-laws-of-ux",
+        "primaryCategory": "reference-standards",
+        "subcategory": "standards-guidelines-checklists",
+        "status": "confirmed",
+        "alternatives": [],
+        "reasons": [
+          {
+            "statement": "Info 页说明该站将心理学启发式整理为面向 UX 设计的交互式资源。",
+            "evidenceUrl": "https://lawsofux.com/info/"
+          },
+          {
+            "statement": "首页与 Hick’s Law 条目都以条目化的方式呈现定义、要点与案例，符合标准/规范参考的使用方式。",
+            "evidenceUrl": "https://lawsofux.com/hicks-law/"
+          }
+        ],
+        "curatorId": "real-sites-batch-02-agent",
+        "reviewerId": "independent-batch-02-reviewer",
+        "confirmedAt": "2026-09-02T00:00:00.000Z"
+      },
+      "confirmedFacets": {
+        "scenarios": [
+          "education"
+        ],
+        "deliverables": [
+          "standard",
+          "glossary",
+          "case-screenshot"
+        ],
+        "actions": [
+          "browse",
+          "search",
+          "learn"
+        ],
+        "media": [
+          "ui",
+          "typography"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [],
+        "workflowStages": [
+          "discovery",
+          "design"
+        ],
+        "audiences": [
+          "designer",
+          "developer",
+          "educator"
+        ],
+        "access": [
+          "free",
+          "closed-source"
+        ],
+        "licenses": [
+          "custom"
+        ],
+        "contentOrganization": [
+          "standards-documentation",
+          "searchable-directory",
+          "case-gallery"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "facts": [
+        {
+          "field": "author",
+          "verdict": "PASS",
+          "confirmedValue": "Jon Yablonski",
+          "sourceUrls": [
+            "https://lawsofux.com/info/"
+          ],
+          "scopeNote": "Info 页明确写明该网站由 Jon Yablonski 创建。"
+        },
+        {
+          "field": "organization",
+          "verdict": "PASS",
+          "confirmedValue": "Laws of UX",
+          "sourceUrls": [
+            "https://lawsofux.com/info/"
+          ],
+          "scopeNote": "官网以 Laws of UX 作为站点项目身份；没有单独法人组织页时保留为项目名。"
+        },
+        {
+          "field": "repository",
+          "verdict": "PASS",
+          "confirmedValue": "unknown",
+          "sourceUrls": [
+            "https://lawsofux.com/info/"
+          ],
+          "scopeNote": "官方 Info 页未提供站点源码仓库链接，因此按 unknown 记录。"
+        },
+        {
+          "field": "license",
+          "verdict": "PASS",
+          "confirmedValue": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International",
+          "sourceUrls": [
+            "https://lawsofux.com/info/"
+          ],
+          "scopeNote": "官网 Info 页明确给出全站许可。"
+        },
+        {
+          "field": "pricing",
+          "verdict": "PASS",
+          "confirmedValue": "Free public reference; posters and book are separate paid products",
+          "sourceUrls": [
+            "https://lawsofux.com/info/",
+            "https://lawsofux.com/"
+          ],
+          "scopeNote": "参考内容可免费访问，但海报和书是独立商品。"
+        }
+      ],
+      "networkEvidence": [
+        {
+          "route": "agent-reach:web/Jina Reader",
+          "urls": [
+            "https://lawsofux.com/",
+            "https://lawsofux.com/info/",
+            "https://lawsofux.com/hicks-law/"
+          ]
+        }
+      ],
+      "requiredCorrections": []
+    },
+    {
+      "siteId": "a11y-project",
+      "verdict": "PASS",
+      "reviewPassed": true,
+      "reviewedScope": "www.a11yproject.com 的社区无障碍教育与 checklist 入口，不把 WCAG 或外部课程并入同一 entry。",
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "verdict": "PASS",
+          "sourceUrl": "https://www.a11yproject.com/",
+          "observedFinalUrl": "https://www.a11yproject.com/",
+          "observedTitle": "Home - The A11Y Project",
+          "reason": "首页直接呈现 A11Y Project 的项目身份、学习入口和社区内容。"
+        },
+        {
+          "role": "breadth",
+          "verdict": "PASS",
+          "sourceUrl": "https://www.a11yproject.com/about/",
+          "observedFinalUrl": "https://www.a11yproject.com/about/",
+          "observedTitle": "About - The A11Y Project",
+          "reason": "About 页将无障碍、包容性、法律和机会等主题组织在同一站点范围内，能看出其内容广度。"
+        },
+        {
+          "role": "proof",
+          "verdict": "PASS",
+          "sourceUrl": "https://www.a11yproject.com/checklist/",
+          "observedFinalUrl": "https://www.a11yproject.com/checklist/#use-plain-language-and-avoid-figures-of-speech-idioms-and-complicated-metaphors",
+          "observedTitle": "Checklist - The A11Y Project",
+          "reason": "Checklist 页面提供逐项可执行的无障碍检查项，证明站点不仅是说明文，而是实用审计参考。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/a11y-project/v2-identity.png",
+          "sha256": "9667918e6261fcdcdf65003adf79707ac42b7c75299377e62ceb8f098908037d",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；首页身份清楚、内容正常加载，无错误态。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/a11y-project/v2-breadth.png",
+          "sha256": "edd80ed69f01ec123f394ae37fca3a1d54b90e1fb2a1de80c3046ad06d449647",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；About 页展示学习资源、社区与维护方式，结构清晰。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/a11y-project/v2-proof.png",
+          "sha256": "8048e597691ba7054affc197c1eaf7f50d7265bbca77d97d779cffd5a7e087cb",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；Checklist 条目与勾选控件同屏，证明可用于审计和修复。"
+        }
+      ],
+      "descriptionVerdict": {
+        "verdict": "PASS",
+        "codePoints": 120,
+        "factAccuracy": "PASS",
+        "reason": "简介准确写出社区驱动的无障碍教育/实践资源、学习与审计用途，以及开源边界，没有夸大为自动修复工具。"
+      },
+      "classificationVerdict": {
+        "verdict": "PASS",
+        "primaryCategory": "research-quality-tools",
+        "subcategory": "accessibility-audit-remediation",
+        "reason": "站点核心动作是用 checklist 做无障碍审计和改进，属于研究/测试/无障碍工具。"
+      },
+      "confirmedClassification": {
+        "recordLevel": "entry",
+        "entityId": "entity-a11y-project",
+        "primaryCategory": "research-quality-tools",
+        "subcategory": "accessibility-audit-remediation",
+        "status": "confirmed",
+        "alternatives": [],
+        "reasons": [
+          {
+            "statement": "Checklist 提供可逐项执行的无障碍检查项，主要动作是审计网页并发现问题。",
+            "evidenceUrl": "https://www.a11yproject.com/checklist/"
+          },
+          {
+            "statement": "About 页明确说明项目服务于可访问、包容的数字体验，并链接到社区维护的 GitHub 仓库。",
+            "evidenceUrl": "https://www.a11yproject.com/about/"
+          }
+        ],
+        "curatorId": "real-sites-batch-02-agent",
+        "reviewerId": "independent-batch-02-reviewer",
+        "confirmedAt": "2026-09-02T00:00:00.000Z"
+      },
+      "confirmedFacets": {
+        "scenarios": [
+          "education"
+        ],
+        "deliverables": [
+          "standard",
+          "report",
+          "glossary"
+        ],
+        "actions": [
+          "browse",
+          "search",
+          "learn",
+          "audit"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "css",
+          "javascript",
+          "svg"
+        ],
+        "workflowStages": [
+          "discovery",
+          "design",
+          "test"
+        ],
+        "audiences": [
+          "designer",
+          "developer",
+          "educator",
+          "researcher"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "contentOrganization": [
+          "standards-documentation",
+          "course",
+          "editorial-feed",
+          "searchable-directory"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "facts": [
+        {
+          "field": "author",
+          "verdict": "PASS",
+          "confirmedValue": "The A11Y Project community and maintainers",
+          "sourceUrls": [
+            "https://www.a11yproject.com/about/"
+          ],
+          "scopeNote": "About 页说明项目由社区和维护者共同维护，不是单一作者。"
+        },
+        {
+          "field": "organization",
+          "verdict": "PASS",
+          "confirmedValue": "The A11Y Project",
+          "sourceUrls": [
+            "https://www.a11yproject.com/"
+          ],
+          "scopeNote": "官网首页使用 The A11Y Project 作为项目身份。"
+        },
+        {
+          "field": "repository",
+          "verdict": "PASS",
+          "confirmedValue": "https://github.com/a11yproject/a11yproject.com",
+          "sourceUrls": [
+            "https://www.a11yproject.com/about/"
+          ],
+          "scopeNote": "About 页直接链接官方仓库。"
+        },
+        {
+          "field": "license",
+          "verdict": "PASS",
+          "confirmedValue": "Apache-2.0",
+          "sourceUrls": [
+            "https://github.com/a11yproject/a11yproject.com/blob/main/LICENSE-APLv2"
+          ],
+          "scopeNote": "站点源码许可按官方仓库文件记录。"
+        }
+      ],
+      "networkEvidence": [
+        {
+          "route": "agent-reach:web/Jina Reader",
+          "urls": [
+            "https://www.a11yproject.com/",
+            "https://www.a11yproject.com/about/",
+            "https://www.a11yproject.com/checklist/"
+          ]
+        }
+      ],
+      "requiredCorrections": []
+    },
+    {
+      "siteId": "ecomm-design",
+      "verdict": "PASS",
+      "reviewPassed": true,
+      "reviewedScope": "ecomm.design 的电商案例与模板集合入口，不把单个品牌商店或外部模板站点并入同一 entry。",
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "verdict": "PASS",
+          "sourceUrl": "https://ecomm.design/about/",
+          "observedFinalUrl": "https://ecomm.design/about/",
+          "observedTitle": "About | eCommerce Website Design Gallery & Tech Inspiration",
+          "reason": "About 页直接说明 ecomm.design 是电商网站集合，并给出策展团队与站点定位。"
+        },
+        {
+          "role": "breadth",
+          "verdict": "PASS",
+          "sourceUrl": "https://ecomm.design/",
+          "observedFinalUrl": "https://ecomm.design/",
+          "observedTitle": "eCommerce Website Design: Gallery & Tech Inspiration",
+          "reason": "首页以大量真实商店卡片、平台筛选和标签体系展示案例广度。"
+        },
+        {
+          "role": "proof",
+          "verdict": "PASS",
+          "sourceUrl": "https://ecomm.design/ecommerce-website-templates/",
+          "observedFinalUrl": "https://ecomm.design/ecommerce-website-templates/",
+          "observedTitle": "Templates Archive | eCommerce Website Design Gallery & Tech Inspiration",
+          "reason": "Templates 归档页说明其提供电商模板灵感与外链，进一步证明该站是案例/模板集合，而不是单一产品官网。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/ecomm-design/v2-identity.png",
+          "sha256": "258137d3b61111d9b8bbdb85d278d1c0a88adee0ee9f2547ea35acb22e2e6336",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；About 页可见团队、站点定位和电商策展范围。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/ecomm-design/v2-breadth.png",
+          "sha256": "fdbd0276374313a5748487f6c7623fe3529d279fe4bf44e5937f22b99d0be155",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；首页展示大量案例卡、平台与分类筛选，广度清晰。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/ecomm-design/v2-proof.png",
+          "sha256": "d377dc907f3a552ec428f7cdc071a28cf1f521a9a1bc67fb6dcb36053d47af9d",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；模板归档页与具体模板卡片加载完整，可继续深入查看。"
+        }
+      ],
+      "descriptionVerdict": {
+        "verdict": "PASS",
+        "codePoints": 109,
+        "factAccuracy": "PASS",
+        "reason": "简介准确写出电商案例与灵感集合、平台/标签/价格筛选、模板与工具补充，以及不能默认复制素材或商店代码。"
+      },
+      "classificationVerdict": {
+        "verdict": "PASS",
+        "primaryCategory": "case-inspiration-collections",
+        "subcategory": "website-landing-page-cases",
+        "reason": "网站主价值是浏览和比较电商站点案例，用作灵感参考，符合案例与灵感集合。"
+      },
+      "confirmedClassification": {
+        "recordLevel": "entry",
+        "entityId": "entity-ecomm-design",
+        "primaryCategory": "case-inspiration-collections",
+        "subcategory": "website-landing-page-cases",
+        "status": "confirmed",
+        "alternatives": [],
+        "reasons": [
+          {
+            "statement": "首页用案例卡和平台/类别筛选组织内容，核心动作是浏览电商网站参考。",
+            "evidenceUrl": "https://ecomm.design/"
+          },
+          {
+            "statement": "About 页明确写出这是一个收集并策展电商网站的 gallery。",
+            "evidenceUrl": "https://ecomm.design/about/"
+          }
+        ],
+        "curatorId": "real-sites-batch-02-agent",
+        "reviewerId": "independent-batch-02-reviewer",
+        "confirmedAt": "2026-09-02T00:00:00.000Z"
+      },
+      "confirmedFacets": {
+        "scenarios": [
+          "ecommerce",
+          "marketing"
+        ],
+        "deliverables": [
+          "case-screenshot",
+          "template",
+          "report"
+        ],
+        "actions": [
+          "browse",
+          "search",
+          "learn",
+          "preview",
+          "submit"
+        ],
+        "media": [
+          "ui",
+          "image",
+          "typography"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [],
+        "workflowStages": [
+          "discovery",
+          "design"
+        ],
+        "audiences": [
+          "designer",
+          "developer",
+          "brand-team"
+        ],
+        "access": [
+          "free",
+          "closed-source"
+        ],
+        "licenses": [
+          "unknown"
+        ],
+        "contentOrganization": [
+          "case-gallery",
+          "searchable-directory",
+          "editorial-feed"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "facts": [
+        {
+          "field": "author",
+          "verdict": "PASS",
+          "confirmedValue": "ecomm.design editorial team",
+          "sourceUrls": [
+            "https://ecomm.design/about/"
+          ],
+          "scopeNote": "About 页列出策展与开发团队成员。"
+        },
+        {
+          "field": "organization",
+          "verdict": "PASS",
+          "confirmedValue": "ecomm.design",
+          "sourceUrls": [
+            "https://ecomm.design/about/"
+          ],
+          "scopeNote": "About 页以站点品牌身份说明其策展定位。"
+        },
+        {
+          "field": "repository",
+          "verdict": "PASS",
+          "confirmedValue": "unknown",
+          "sourceUrls": [
+            "https://ecomm.design/about/"
+          ],
+          "scopeNote": "官方 About 页未给出源码仓库地址，因此按 unknown 记录。"
+        },
+        {
+          "field": "license",
+          "verdict": "PASS",
+          "confirmedValue": "unknown",
+          "sourceUrls": [
+            "https://ecomm.design/about/"
+          ],
+          "scopeNote": "官方页面未统一声明案例图片、商标或外链内容的再分发许可。"
+        }
+      ],
+      "networkEvidence": [
+        {
+          "route": "agent-reach:web/Jina Reader",
+          "urls": [
+            "https://ecomm.design/",
+            "https://ecomm.design/about/",
+            "https://ecomm.design/ecommerce-website-templates/"
+          ]
+        }
+      ],
+      "requiredCorrections": []
+    }
+  ],
+  "batchRequiredCorrections": [],
+  "publicationRequirements": [
+    "本 review 只做独立复核，不写 approved bundle。",
+    "如果后续生成正式 bundle，仍需保持 classification 与 facets 的受控字典约束，并保留三页证据。"
+  ]
+}

@@ -1,0 +1,38 @@
+# dependencies
+node_modules/
+
+# archives
+*.zip
+
+# incoming extract (local merge staging)
+_fable51_incoming/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# local env
+*.local
+.env
+.env.*
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# agent scratch
+.claude/
+
+# vendored skill files only, not nested git metadata
+references/web-to-design-md/.git/
+references/web-to-design-md/.git.nested.bak/

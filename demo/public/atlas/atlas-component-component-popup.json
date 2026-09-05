@@ -1,0 +1,64 @@
+{
+  "termEn": "Popup",
+  "termZh": "弹出窗口",
+  "definitionZh": "弹出窗口是一段短暂的 UI，它在所有其他 Web 应用程序 UI 上“弹出”，即“在顶层”。弹出窗口可以是它自己的独立元素（例如教学气泡），也可以是更大的复合组件（例如组合框）的一部分。弹出窗口与其他顶层 UI 的不同之处在于，它们本质上是瞬态的：一次只能显示一个，除非通过祖先链接，并且弹出窗口会在“轻微关闭”用户交互时关闭（例如，将焦点移出弹出窗口或按 ESC 键）。它们可以包含任意内容，包括交互式后代。",
+  "sourceDefinition": "A popup is a piece of transient UI that “pops up” over all other web app UI, i.e. “on the top layer”. A popup may be its own standalone element (such as a teaching bubble) or it may be part of a larger composited component (such as a combobox). Popups differ from other top-layer UI in that they are inherently transient: only one can be shown at a time unless chained by ancestry, and popups are dismissed upon “light dismiss” user interactions (e.g. sending focus out of the popup or hitting the ESC key). They can contain arbitrary content, including interactive descendents.",
+  "axis": "component",
+  "recordType": "component",
+  "aliases": [
+    "anchor",
+    "floating element",
+    "positioned element"
+  ],
+  "scenes": [],
+  "mediaBindings": [
+    "web"
+  ],
+  "status": "candidate",
+  "countedAtlas": true,
+  "translationQuality": "machine",
+  "sourceEvidence": [
+    {
+      "sourceId": "open-ui",
+      "sourceName": "Open UI",
+      "sourceRecordId": "popup",
+      "url": "https://github.com/openui/open-ui/blob/93671dc549f262b1a33e7c221caddfcd75e8f126/site/src/pages/components/popup.research.mdx",
+      "sourcePath": "site/src/pages/components/popup.research.mdx",
+      "sourceCategory": "component-research",
+      "sourceDefinition": "A popup is a piece of transient UI that “pops up” over all other web app UI, i.e. “on the top layer”. A popup may be its own standalone element (such as a teaching bubble) or it may be part of a larger composited component (such as a combobox). Popups differ from other top-layer UI in that they are inherently transient: only one can be shown at a time unless chained by ancestry, and popups are dismissed upon “light dismiss” user interactions (e.g. sending focus out of the popup or hitting the ESC key). They can contain arbitrary content, including interactive descendents.",
+      "license": "W3C Software and Document License",
+      "licenseUrl": "https://github.com/openui/open-ui/blob/main/LICENSE.md",
+      "retrievedAt": "2026-08-31",
+      "revision": "93671dc549f262b1a33e7c221caddfcd75e8f126",
+      "sourceMetadata": {
+        "sourcePaths": [
+          "site/src/pages/components/popup.research.explainer-v1.mdx",
+          "site/src/pages/components/popup.research.mdx"
+        ],
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "web-awesome",
+      "sourceName": "Web Awesome (Shoelace)",
+      "sourceRecordId": "popup",
+      "url": "https://webawesome.com/docs/components/popup",
+      "sourcePath": "packages/webawesome/docs/docs/components/popup.md",
+      "sourceCategory": "Helpers",
+      "sourceDefinition": "const container = document.querySelector('.popup-overview'); const popup = container.querySelector('wa-popup'); const placement = container.querySelector('wa-combobox[name=\"placement\"]'); const distance = container.querySelector('wa-input[name=\"distance\"]'); const skidding = container.querySelector('wa-input[name=\"skidding\"]'); const active = container.querySelector('wa-switch[name=\"active\"]'); const arrow = container.querySelector('wa-switch[name=\"arrow\"]');",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/shoelace-style/webawesome/blob/next/LICENSE.md",
+      "retrievedAt": "2026-09-03",
+      "revision": "f1981f73d9c53977108da7d30ed90c6a3eda8145",
+      "sourceMetadata": {
+        "aliases": [
+          "floating element",
+          "anchor",
+          "positioned element"
+        ],
+        "docsCategory": "Helpers"
+      }
+    }
+  ],
+  "id": "atlas-component-component-popup"
+}

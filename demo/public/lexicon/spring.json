@@ -1,0 +1,79 @@
+{
+  "lever": "lexicon",
+  "id": "spring",
+  "term_en": "Spring Physics",
+  "term_zh": "弹簧物理",
+  "axis": "motion",
+  "aliases": [
+    "弹性动画",
+    "回弹",
+    "spring easing",
+    "overshoot"
+  ],
+  "definition_zh": "用过冲曲线模拟弹簧，元素到位时轻微越界再回弹。",
+  "notation": "M[spring] · k:260 · c:20 · o:overshoot:18%",
+  "genes": [
+    {
+      "gene": "刚度",
+      "value": "stiffness 越高越快"
+    },
+    {
+      "gene": "阻尼",
+      "value": "damping 越低越弹"
+    },
+    {
+      "gene": "过冲",
+      "value": "cubic-bezier y>1"
+    }
+  ],
+  "minimal_code": {
+    "css": "transition:transform .6s cubic-bezier(.3, 1.18, .55, 1);\n/* y > 1 即过冲；framer-motion: type:'spring' */"
+  },
+  "params": [
+    {
+      "key": "overshoot",
+      "label": "过冲量",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "%",
+      "default": 18
+    }
+  ],
+  "anti_patterns": [
+    "「进入消失」类动效用 spring 反而拖沓；入场用、退场用 ease-out。"
+  ],
+  "tech_notes": [
+    "CSS 用 cubic-bezier(.3,1.18,.55,1) 近似；精确物理用 framer-motion。"
+  ],
+  "common_pairings": [
+    "magnetic-button",
+    "stagger-reveal"
+  ],
+  "related": [
+    "stagger-reveal"
+  ],
+  "wild": [
+    {
+      "what": "iOS 系统交互",
+      "source": "iOS",
+      "note": "spring 让界面“活”起来"
+    },
+    {
+      "what": "Framer Motion 默认动效",
+      "source": "motion.dev",
+      "note": "type:\"spring\" 的默认选择"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/spring/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/spring.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

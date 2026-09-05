@@ -1,0 +1,57 @@
+{
+  "lever": "lexicon",
+  "id": "image-compare",
+  "term_en": "Image Compare",
+  "term_zh": "图像对比滑块",
+  "axis": "interaction",
+  "aliases": [
+    "对比滑块",
+    "before-after slider"
+  ],
+  "definition_zh": "拖动分割线对比前后两张图，处理类产品的天然演示。",
+  "notation": "I[compare] · clip:inset-x · handle:1px+grip",
+  "genes": [
+    {
+      "gene": "裁切",
+      "value": "clip-path inset 由滑杆值驱动"
+    },
+    {
+      "gene": "手柄",
+      "value": "竖线 + 圆形把手，hover 放大"
+    }
+  ],
+  "minimal_code": {
+    "css": ".cmp input{position:absolute;inset:0;opacity:0}\n.after{clip-path:inset(0 0 0 var(--x))}\n线 + 手柄跟随 --x"
+  },
+  "params": [],
+  "anti_patterns": [
+    "两张图必须像素级对齐，否则对比意义崩塌。"
+  ],
+  "tech_notes": [
+    "input[type=range] 透明覆盖或 pointer events 驱动 clip-path。"
+  ],
+  "common_pairings": [
+    "split-screen"
+  ],
+  "related": [
+    "drag-reorder"
+  ],
+  "wild": [
+    {
+      "what": "各修图 / AI 生图产品",
+      "source": "普遍",
+      "note": "before/after 的标准交互"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/image-compare/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/image-compare.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

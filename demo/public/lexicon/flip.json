@@ -1,0 +1,59 @@
+{
+  "lever": "lexicon",
+  "id": "flip",
+  "term_en": "FLIP",
+  "term_zh": "FLIP 重排",
+  "axis": "motion",
+  "aliases": [
+    "flip 动画",
+    "位移动画",
+    "重排过渡",
+    "share element"
+  ],
+  "definition_zh": "First-Last-Invert-Play：先记终点，反向位移，再过渡到零。",
+  "notation": "M[flip] · F→L·invert·play · prop:transform",
+  "genes": [
+    {
+      "gene": "四步",
+      "value": "First → Last → Invert → Play"
+    },
+    {
+      "gene": "作用属性",
+      "value": "transform 可合成"
+    }
+  ],
+  "minimal_code": {
+    "css": "const dy = first.top - last.top;\nel.style.transform = `translateY(${dy}px)`;\nrequestAnimationFrame(()=>el.style.transform = '');"
+  },
+  "params": [],
+  "anti_patterns": [
+    "布局突变前后都要同步测量；动画中途再变会丢第一帧。"
+  ],
+  "tech_notes": [
+    "getBoundingClientRect 取首末，反向 transform 后过渡归零。"
+  ],
+  "common_pairings": [
+    "kanban"
+  ],
+  "related": [
+    "drag-reorder"
+  ],
+  "wild": [
+    {
+      "what": "列表重排类 UI",
+      "source": "各类 Dashboard",
+      "note": "FLIP 是“位置变化也能动画”的底牌"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/flip/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/flip.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

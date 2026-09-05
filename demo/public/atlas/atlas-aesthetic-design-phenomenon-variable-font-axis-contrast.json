@@ -1,0 +1,49 @@
+{
+  "termEn": "Variable font axis: Contrast",
+  "termZh": "可变字体轴: 对比",
+  "definitionZh": "Contrast描述了字体的粗细部分之间的中风宽度差. 数值为0表示没有可见/明显对比. 一个正数表明,相对于通过使细中风变薄而实现的零相位厚度而言,相对增高. 值为100表示细中风已完全消失. 一个负值表示\"反向对比\":在写作系统中通常会厚的划线反而变薄. 在西语字体中,这可能被认为是19世纪的一种\"circus\"或\"old West\"效应. 数值为 -100 表示通常厚的中风已完全消失。",
+  "sourceDefinition": "Contrast describes the stroke width difference between the thick and thin parts of the font glyphs. A value of zero indicates no visible/apparent contrast. A positive number indicates an increase in contrast relative to the zero-contrast thickness, achieved by making the thin stroke thinner. A value of 100 indicates that the thin stroke has disappeared completely. A negative value indicates \"reverse contrast\": the strokes which would conventionally be thick in the writing system are instead made thinner. In western-language fonts this might be perceived as a 19th-century, \"circus\" or \"old West\" effect. A value of -100 indicates that the strokes which would normally be thick have disappeared completely.",
+  "axis": "aesthetic",
+  "recordType": "design-phenomenon",
+  "aliases": [
+    "Contrast",
+    "CTRS"
+  ],
+  "scenes": [],
+  "mediaBindings": [
+    "font/opentype",
+    "web/css"
+  ],
+  "status": "candidate",
+  "countedAtlas": true,
+  "translationQuality": "machine",
+  "sourceEvidence": [
+    {
+      "sourceId": "google-fonts-axis-registry",
+      "sourceName": "Google Fonts Axis Registry",
+      "sourceRecordId": "axis-ctrs",
+      "url": "https://github.com/googlefonts/axisregistry/blob/c3bd6015d8c8f2a4c85f15226c631c72070c0e62/Lib/axisregistry/data/contrast.textproto",
+      "sourcePath": "Lib/axisregistry/data/contrast.textproto",
+      "sourceCategory": "variable-font-axis",
+      "sourceDefinition": "Contrast describes the stroke width difference between the thick and thin parts of the font glyphs. A value of zero indicates no visible/apparent contrast. A positive number indicates an increase in contrast relative to the zero-contrast thickness, achieved by making the thin stroke thinner. A value of 100 indicates that the thin stroke has disappeared completely. A negative value indicates \"reverse contrast\": the strokes which would conventionally be thick in the writing system are instead made thinner. In western-language fonts this might be perceived as a 19th-century, \"circus\" or \"old West\" effect. A value of -100 indicates that the strokes which would normally be thick have disappeared completely.",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://github.com/googlefonts/axisregistry/blob/main/LICENSE.txt",
+      "retrievedAt": "2026-09-04",
+      "revision": "c3bd6015d8c8f2a4c85f15226c631c72070c0e62",
+      "sourceMetadata": {
+        "tag": "CTRS",
+        "minValue": -100,
+        "defaultValue": 0,
+        "maxValue": 100,
+        "precision": 1,
+        "fallbackOnly": false,
+        "aliases": [
+          "CTRS",
+          "Contrast"
+        ],
+        "registryStatus": "official-upstream"
+      }
+    }
+  ],
+  "id": "atlas-aesthetic-design-phenomenon-variable-font-axis-contrast"
+}

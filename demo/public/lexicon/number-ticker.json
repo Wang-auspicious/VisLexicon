@@ -1,0 +1,68 @@
+{
+  "lever": "lexicon",
+  "id": "number-ticker",
+  "term_en": "Number Ticker",
+  "term_zh": "数字滚动",
+  "axis": "interaction",
+  "aliases": [
+    "数字翻牌",
+    "odometer",
+    "count-up"
+  ],
+  "definition_zh": "数值变化时沿纵向滚动到新数字，仪表盘的呼吸感。",
+  "notation": "I[ticker] · axis:y · ease:ease-out · t:900ms",
+  "genes": [
+    {
+      "gene": "轨道",
+      "value": "每位一列 0-9 纵排，位移取余"
+    },
+    {
+      "gene": "进位",
+      "value": "同步滚 vs 逐位延迟（更机械感）"
+    }
+  ],
+  "minimal_code": {
+    "css": "<span class=\"col\">{digits.map(d =>\n  <i style={{transform:`translateY(${-d}em)`}}>0123456789</i>)}\n</span>"
+  },
+  "params": [
+    {
+      "key": "dur",
+      "label": "滚动时长",
+      "min": 300,
+      "max": 2000,
+      "step": 100,
+      "unit": "ms",
+      "default": 900
+    }
+  ],
+  "anti_patterns": [
+    "整页十几个 ticker 同时滚会变成老虎机；只滚关键 KPI。"
+  ],
+  "tech_notes": [
+    "每位一个 overflow:hidden 视窗 + translateY；用 tabular-nums 防抖动。"
+  ],
+  "common_pairings": [
+    "stagger-reveal"
+  ],
+  "related": [
+    "text-scramble"
+  ],
+  "wild": [
+    {
+      "what": "Kinfolk 订阅页 / 股票 App",
+      "source": "普遍",
+      "note": "数字变动的仪式感"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/number-ticker/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/number-ticker.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

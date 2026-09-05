@@ -1,0 +1,63 @@
+{
+  "lever": "lexicon",
+  "id": "modal",
+  "term_en": "Modal",
+  "term_zh": "模态对话框",
+  "axis": "component",
+  "aliases": [
+    "弹窗",
+    "对话框",
+    "dialog"
+  ],
+  "definition_zh": "遮罩之上居中浮层，入场 scale+fade，焦点被圈住。",
+  "notation": "C[modal] · veil:blur2 · enter:pop.3s · esc:close",
+  "genes": [
+    {
+      "gene": "遮罩",
+      "value": "半透明黑 + 轻模糊"
+    },
+    {
+      "gene": "入场",
+      "value": "scale .92→1 + spring"
+    },
+    {
+      "gene": "约束",
+      "value": "Esc / 点遮罩关闭，焦点圈定"
+    }
+  ],
+  "minimal_code": {
+    "css": ".veil{background:rgb(0 0 0/.5);backdrop-filter:blur(2px)}\n.modal{animation:pop .3s cubic-bezier(.3,1.3,.5,1) both}\n@keyframes pop{from{scale:.92;opacity:0}}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "别用 modal 呈现长内容；嵌套 modal 是设计失败。"
+  ],
+  "tech_notes": [
+    "原生 <dialog> 或 Radix；focus trap + 滚动锁定。"
+  ],
+  "common_pairings": [
+    "spring",
+    "glassmorphism"
+  ],
+  "related": [
+    "toast"
+  ],
+  "wild": [
+    {
+      "what": "Radix / shadcn Dialog",
+      "source": "ui.shadcn.com",
+      "note": "可访问性事实标准"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/modal/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/modal.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

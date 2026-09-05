@@ -1,0 +1,62 @@
+{
+  "lever": "lexicon",
+  "id": "minimal-flat",
+  "term_en": "Minimal Flat",
+  "term_zh": "极简扁平",
+  "axis": "aesthetic",
+  "aliases": [
+    "扁平化",
+    "极简",
+    "minimalism"
+  ],
+  "definition_zh": "去装饰、靠留白与层级说话；一个强调色点睛。",
+  "notation": "A[flat] · deco:none · space:8px网 · acc:1",
+  "genes": [
+    {
+      "gene": "装饰",
+      "value": "无阴影/渐变，边框细到 1px"
+    },
+    {
+      "gene": "层级",
+      "value": "字号字重 + 留白，不靠色块"
+    },
+    {
+      "gene": "强调",
+      "value": "全页只有一个主强调色"
+    }
+  ],
+  "minimal_code": {
+    "css": ".flat{background:#fff;color:#111;\n  border:1px solid #eee;border-radius:10px}\n.acc{color:#0055ff}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "极简不等于简陋——留白节奏错了比华丽风更难看。"
+  ],
+  "tech_notes": [
+    "8px 网格 + 两档字重（400/600）撑层级；色板 ≤ 5。"
+  ],
+  "common_pairings": [
+    "swiss-intl"
+  ],
+  "related": [
+    "neo-brutalism"
+  ],
+  "wild": [
+    {
+      "what": "Notion / Things",
+      "source": "notion.so",
+      "note": "内容优先产品的共同选择"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/minimal-flat/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/minimal-flat.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

@@ -1,0 +1,72 @@
+{
+  "lever": "lexicon",
+  "id": "cursor-follower",
+  "term_en": "Cursor Follower",
+  "term_zh": "光标跟随物",
+  "axis": "interaction",
+  "aliases": [
+    "自定义光标",
+    "cursor blob",
+    "跟随圆环"
+  ],
+  "definition_zh": "一个装饰元素以弹性延迟跟随光标，替代或增强系统指针。",
+  "notation": "I[cursor] · follow:lag·0.15 · shape:ring+dot",
+  "genes": [
+    {
+      "gene": "跟随",
+      "value": "lerp 插值，lag 越小越跟手"
+    },
+    {
+      "gene": "形态",
+      "value": "圆环 / 斑点 / 混合（hover 时放大）"
+    },
+    {
+      "gene": "降级",
+      "value": "触屏设备隐藏，保留系统指针"
+    }
+  ],
+  "minimal_code": {
+    "css": "let x = 0; // 每帧：x += (mouseX - x) * lag\nfollower.style.transform = `translate(${x}px, ${y}px)`;"
+  },
+  "params": [
+    {
+      "key": "lag",
+      "label": "跟随延迟",
+      "min": 0.05,
+      "max": 0.4,
+      "step": 0.05,
+      "unit": "",
+      "default": 0.15
+    }
+  ],
+  "anti_patterns": [
+    "别替换掉系统光标本身——可用性优先，跟随物只做环境层。"
+  ],
+  "tech_notes": [
+    "rAF + lerp；transform 合成层；pointer:fine 媒体查询里才启用。"
+  ],
+  "common_pairings": [
+    "hover-tilt"
+  ],
+  "related": [
+    "magnetic-button"
+  ],
+  "wild": [
+    {
+      "what": "大量作品集网站",
+      "source": "awwwards 生态",
+      "note": "个性站点的第一件装饰品"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/cursor-follower/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/cursor-follower.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

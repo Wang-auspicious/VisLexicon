@@ -1,0 +1,881 @@
+{
+  "schemaVersion": 1,
+  "reviewKind": "independent-real-site-semantic-visual-review",
+  "batchId": "2026-09-01-batch-01",
+  "reviewerId": "independent-batch-01-reviewer",
+  "reviewedAt": "2026-09-01T17:16:10.314Z",
+  "overallVerdict": "PASS",
+  "publicationEligible": false,
+  "summary": {
+    "siteCount": 3,
+    "passCount": 3,
+    "needsCorrectionCount": 0,
+    "failCount": 0,
+    "pagePassCount": 9,
+    "shotPassCount": 9,
+    "reason": "Ant Design、Chakra UI 与 Shadcn Studio Blocks 的实体/entry 边界、三页证据、截图、60–120 字简介、分类、facets 与事实均经独立复核通过；三个站点仍须生成正式 v3 bundle 并通过事务发布，因此 publicationEligible 保持 false。"
+  },
+  "reviewRules": [
+    "草稿只作为待核对象，任何事实结论都重新打开官方页面或官方 GitHub 仓库核验。",
+    "分类对象是 Site Entry，不是整个 Source Entity；导航中出现的兄弟产品不自动继承到当前 entry。",
+    "每站必须同时通过 identity、breadth、proof 三页及三张互不重复的有效截图。",
+    "MIT 仅能用于已核验的核心仓库范围；Shadcn Studio 的 MIT 文本附 Commons Clause，按 source-available/custom 处理，不得写成 open-source。",
+    "本文件只代表独立语义、视觉和编辑审核；即使 verdict 为 PASS，仍需生成正式 v3 bundle、通过 validator 并经事务发布。"
+  ],
+  "networkAccess": {
+    "routes": [
+      {
+        "channel": "agent-reach:web",
+        "backend": "Jina Reader",
+        "status": "USED",
+        "purpose": "重新访问三个站点的官方 identity、breadth、proof 页面以及定价、许可、安装等官方页面。"
+      },
+      {
+        "channel": "agent-reach:dev",
+        "backend": "gh CLI / official GitHub API",
+        "status": "USED",
+        "purpose": "核对官方仓库、仓库 homepage、package.json、LICENSE、GitHub SPDX 元数据与 Ant Design 官方站点标题测试。"
+      },
+      {
+        "channel": "web-access:web",
+        "backend": "official raw HTML",
+        "status": "USED_AS_FALLBACK",
+        "purpose": "Shadcn Studio Credits 的 Jina TLS 握手失败后，直接读取官网原始 HTML；另核对动态 proof 页中的 Get Code、Copy Prompt、下载与 CLI 安装文本。"
+      }
+    ],
+    "directSourcePolicy": "只使用官方站点、官方仓库和官方仓库文件；搜索结果、第三方评测、社交媒体宣传与草稿自身均未作为事实证明。",
+    "observedLimitations": [
+      "Ant Design 根 URL 会依浏览器语言选择本地化入口；Jina 访问根页保持在 /，而指定 /index-cn 后得到中文正文。官方仓库 scripts/check-site.ts 明确断言 /index-cn 的中文 title，因此接受捕获记录中的本地化 finalUrl 与 title。",
+      "URL fragment 不会发送给 HTTP/Jina；Ant Design proof 的 #table-demo-basic 由截图中的锚点位置和官方 Table 页面正文共同确认。",
+      "Shadcn Studio Credits 的 Jina 请求失败一次，已改用官网原始 HTML；页面未给出可作为 author 字段的个人署名。"
+    ]
+  },
+  "localChecks": {
+    "taxonomyValidator": "demo/src/data/curation-taxonomy.js",
+    "evidenceValidator": "demo/src/lib/curation-evidence.js",
+    "draftStructuralChecks": {
+      "shadcn-studio": {
+        "classificationErrors": [],
+        "facetErrors": [],
+        "descriptionCodePoints": 120
+      },
+      "ant-design": {
+        "classificationErrors": [],
+        "facetErrors": [],
+        "descriptionCodePoints": 95
+      },
+      "chakra-ui": {
+        "classificationErrors": [],
+        "facetErrors": [],
+        "descriptionCodePoints": 96
+      }
+    },
+    "imageChecks": {
+      "decodedCount": 9,
+      "expectedCount": 9,
+      "uniqueSha256Count": 9,
+      "width": 1280,
+      "height": 900,
+      "allHashesMatchDraft": true,
+      "allFilesOver20000Bytes": true,
+      "allViewedAtOriginalResolution": true
+    },
+    "inMemoryV3BundleSimulation": {
+      "publicFilesModified": false,
+      "ant-design": {
+        "entryIdUsedToMatchShotDirectory": "ant-design",
+        "validatorErrors": []
+      },
+      "chakra-ui": {
+        "entryIdUsedToMatchShotDirectory": "chakra-ui",
+        "validatorErrors": []
+      },
+      "shadcn-studio": {
+        "entryIdUsedToMatchShotDirectory": "shadcn-studio",
+        "descriptionCodePoints": 120,
+        "validatorErrors": [],
+        "note": "修订后的 Shadcn Studio Blocks 数据已按正式 confirmed classification 在内存中组装，当前 v3 validator 返回零错误；未写 approved 或公开索引。"
+      }
+    }
+  },
+  "sites": [
+    {
+      "siteId": "shadcn-studio",
+      "verdict": "PASS",
+      "reviewPassed": true,
+      "publicationEligible": false,
+      "reviewedScope": "当前三页实际聚焦 Shadcn Studio Blocks 浏览入口；Source Entity 仍是整个 Shadcn Studio 品牌。",
+      "fieldVerdicts": {
+        "entityAndAliases": {
+          "verdict": "PASS",
+          "reason": "shadcnstudio.com 与 shadcnstudio/shadcn-studio 官方仓库互相回链；官网明确声明项目独立于 shadcn/ui 与 Figma，未与 shadcn/ui 误合并。"
+        },
+        "entryBoundary": {
+          "verdict": "PASS",
+          "reason": "entry 已明确命名为 Shadcn Studio Blocks，canonical scope 固定为 /blocks；根首页只承担 Source Entity 身份页，Templates、Figma Kit、Theme Generator 与 MCP 明确留作兄弟 entry。"
+        },
+        "officialUrl": {
+          "verdict": "PASS",
+          "reason": "https://shadcnstudio.com/ 可达且为官网，官方仓库 homepage 回链该域名。"
+        },
+        "authorUnknown": {
+          "verdict": "PASS",
+          "reason": "官网 Credits 仅致谢社区资源与伙伴，官方 package.json 的 author 为空；保留 unknown 比从宣传内容猜个人作者更诚实。"
+        },
+        "rightsScope": {
+          "verdict": "PASS",
+          "reason": "public repository 的 LICENSE.md 是 MIT 文本加 Commons Clause，GitHub SPDX 为 NOASSERTION；draft 使用 source-available/custom 而非 open-source，范围正确。"
+        }
+      },
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "verdict": "PASS",
+          "sourceUrl": "https://shadcnstudio.com/",
+          "observedFinalUrl": "https://shadcnstudio.com/",
+          "observedTitle": "Shadcn Studio - Shadcn UI Components, Blocks & Templates",
+          "reason": "官网首页明确列出组件、Blocks、Templates、Figma 与工具生态，并回链官方仓库；适合作为 Source Entity 身份页。"
+        },
+        {
+          "role": "breadth",
+          "verdict": "PASS",
+          "sourceUrl": "https://shadcnstudio.com/blocks",
+          "observedFinalUrl": "https://shadcnstudio.com/blocks",
+          "observedTitle": "800+ Shadcn UI Blocks - Free & Pro - Shadcn Studio",
+          "reason": "页面实际按 Marketing、Dashboard & App、eCommerce、Datatable、Bento、Free 组织 800+ Blocks，并公开说明 57 个免费 Blocks，覆盖面真实。"
+        },
+        {
+          "role": "proof",
+          "verdict": "PASS",
+          "sourceUrl": "https://shadcnstudio.com/blocks/marketing-ui/hero-section",
+          "observedFinalUrl": "https://shadcnstudio.com/blocks/marketing-ui/hero-section",
+          "observedTitle": "Shadcn Hero Section - Shadcn Studio",
+          "reason": "官网原始 HTML 独立检出 Get Code、Copy Prompt、npx shadcn add 与 hero-section-42；截图同时展示真实预览、下载、设备切换和 CLI 命令，足以证明可取得的实现。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/shadcn-studio/v2-identity.png",
+          "sha256": "d53bc77e8d9ca40106da6bb40c07e62f7f212c110c39006f7688f3ddf5eb2b55",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；品牌、主张、资源类型、付费入口与多个完整模板预览均已加载，无骨架、错误页、遮挡或空白。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/shadcn-studio/v2-breadth.png",
+          "sha256": "8f47fabbf23338824a7b7e9f80f14854cd335e20bd7c6bb64b5304c6e0fb7b23",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；800+ 标题、场景分类、搜索框和多张不同 Block 卡片清晰可见，无懒加载占位。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/shadcn-studio/v2-proof.png",
+          "sha256": "65575106bf3c0263c7ae1cd49cdc2aa66f279f4f3ae94cdcfa533a8788b246a0",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；实际 Hero 预览、Get Code、Copy Prompt、下载、设备预览与 npx shadcn add 命令同屏出现，内容完整且与另两张不重复。"
+        }
+      ],
+      "descriptionVerdict": {
+        "verdict": "PASS",
+        "codePoints": 120,
+        "factAccuracy": "PASS",
+        "reason": "修订文字逐字采用独立审核提案，只覆盖 Blocks 的场景、预览/复制/下载/CLI 动作、免费与一次性付费边界及限制性许可；长度 120 个 Unicode code point。"
+      },
+      "classificationVerdict": {
+        "verdict": "PASS",
+        "structuralValidatorErrors": [],
+        "primaryCategory": "ui-implementation",
+        "subcategory": "page-blocks-embeddable-controls",
+        "facetValidatorErrors": [],
+        "reason": "主分类继续准确指向页面区块与可嵌入复合控件；facets 已精确删除 template、design-file、generate、figma、mcp 与 handoff，不再让兄弟入口污染当前 Blocks entry。"
+      },
+      "confirmedClassification": {
+        "recordLevel": "entry",
+        "entityId": "entity-shadcn-studio",
+        "primaryCategory": "ui-implementation",
+        "subcategory": "page-blocks-embeddable-controls",
+        "status": "confirmed",
+        "alternatives": [],
+        "reasons": [
+          {
+            "statement": "Blocks 总览把站内主内容组织为营销、后台、电商、数据表和 Bento 等可复用页面区块。",
+            "evidenceUrl": "https://shadcnstudio.com/blocks"
+          },
+          {
+            "statement": "Hero Section 详情提供真实预览、Get Code、Copy Prompt、下载和 shadcn CLI 安装动作，证明交付物是可复用实现而非纯灵感截图。",
+            "evidenceUrl": "https://shadcnstudio.com/blocks/marketing-ui/hero-section"
+          }
+        ],
+        "curatorId": "real-sites-batch-01-agent",
+        "reviewerId": "independent-batch-01-reviewer",
+        "confirmedAt": "2026-09-01T17:16:10.314Z"
+      },
+      "confirmedFacets": {
+          "scenarios": [
+            "saas",
+            "ecommerce",
+            "marketing",
+            "admin"
+          ],
+          "deliverables": [
+            "component",
+            "block",
+            "full-page",
+            "prompt"
+          ],
+          "actions": [
+            "browse",
+            "preview",
+            "copy",
+            "install",
+            "download",
+            "purchase"
+          ],
+          "media": [
+            "ui",
+            "motion"
+          ],
+          "platforms": [
+            "web",
+            "cli"
+          ],
+          "technologies": [
+            "react",
+            "tailwind",
+            "radix-ui",
+            "base-ui",
+            "shadcn-ui",
+            "motion"
+          ],
+          "workflowStages": [
+            "discovery",
+            "design",
+            "build"
+          ],
+          "audiences": [
+            "designer",
+            "developer"
+          ],
+          "access": [
+            "freemium",
+            "source-available",
+            "paid"
+          ],
+          "licenses": [
+            "custom"
+          ],
+          "contentOrganization": [
+            "component-registry",
+            "searchable-directory"
+          ],
+          "languages": [
+            "en"
+          ]
+      },
+      "facts": [
+        {
+          "field": "author",
+          "verdict": "PASS",
+          "confirmedValue": "unknown",
+          "sourceUrls": [
+            "https://shadcnstudio.com/credits",
+            "https://github.com/shadcnstudio/shadcn-studio/blob/main/package.json"
+          ],
+          "scopeNote": "未发现官网或仓库对单一个人作者的正式署名。"
+        },
+        {
+          "field": "organization",
+          "verdict": "PASS",
+          "confirmedValue": "CleVision Technologies Private Limited",
+          "sourceUrls": [
+            "https://shadcnstudio.com/license"
+          ],
+          "scopeNote": "确认为 Resources 的 licensor/rights holder；不要据此推断单一个人作者。"
+        },
+        {
+          "field": "repository",
+          "verdict": "PASS",
+          "confirmedValue": "https://github.com/shadcnstudio/shadcn-studio",
+          "sourceUrls": [
+            "https://shadcnstudio.com/",
+            "https://github.com/shadcnstudio/shadcn-studio"
+          ],
+          "scopeNote": "官网与仓库 homepage 双向关联。"
+        },
+        {
+          "field": "license",
+          "verdict": "PASS",
+          "confirmedValue": "MIT terms with Commons Clause restriction for the public repository; separate proprietary licenses for paid resources",
+          "sourceUrls": [
+            "https://shadcnstudio.com/license",
+            "https://github.com/shadcnstudio/shadcn-studio/blob/main/LICENSE.md"
+          ],
+          "scopeNote": "GitHub SPDX 为 NOASSERTION；只能标 source-available/custom，不得标 open-source。"
+        },
+        {
+          "field": "repositoryLicenseFile",
+          "verdict": "PASS",
+          "confirmedValue": "https://github.com/shadcnstudio/shadcn-studio/blob/main/LICENSE.md",
+          "sourceUrls": [
+            "https://github.com/shadcnstudio/shadcn-studio/blob/main/LICENSE.md"
+          ],
+          "scopeNote": "文件正文同时含 MIT 条款和 Commons Clause Restriction。"
+        },
+        {
+          "field": "pricing",
+          "verdict": "PASS",
+          "confirmedValue": "Freemium; Community free forever; paid lifetime tiers shown as Basic $99, Pro $199, Team $449, Enterprise $849 on 2026-09-01",
+          "sourceUrls": [
+            "https://shadcnstudio.com/pricing"
+          ],
+          "scopeNote": "专用 pricing 页仍显示上述价格和 one-time pay；价格是时点事实，发布时应保留核验日期。"
+        },
+        {
+          "field": "officialRelationship",
+          "verdict": "PASS",
+          "confirmedValue": "Independent from shadcn/ui and Figma",
+          "sourceUrls": [
+            "https://shadcnstudio.com/"
+          ],
+          "scopeNote": "官网页脚明确作出独立性声明。"
+        }
+      ],
+      "networkEvidence": [
+        {
+          "route": "agent-reach:web/Jina Reader",
+          "urls": [
+            "https://shadcnstudio.com/",
+            "https://shadcnstudio.com/blocks",
+            "https://shadcnstudio.com/blocks/marketing-ui/hero-section",
+            "https://shadcnstudio.com/pricing",
+            "https://shadcnstudio.com/license"
+          ]
+        },
+        {
+          "route": "web-access:web/official raw HTML",
+          "urls": [
+            "https://shadcnstudio.com/credits",
+            "https://shadcnstudio.com/blocks/marketing-ui/hero-section"
+          ]
+        },
+        {
+          "route": "agent-reach:dev/gh CLI official GitHub API",
+          "urls": [
+            "https://github.com/shadcnstudio/shadcn-studio",
+            "https://github.com/shadcnstudio/shadcn-studio/blob/main/LICENSE.md",
+            "https://github.com/shadcnstudio/shadcn-studio/blob/main/package.json"
+          ]
+        }
+      ],
+      "bundleGuidance": {
+        "v3SimulationValidatorErrors": [],
+        "note": "confirmedClassification 已主动去掉 staging-only 的 name 与 entryId；正式 bundle 的 top-level entryId 必须与 /shots/<entryId>/ 目录对齐。"
+      },
+      "requiredCorrections": []
+    },
+    {
+      "siteId": "ant-design",
+      "verdict": "PASS",
+      "reviewPassed": true,
+      "publicationEligible": false,
+      "reviewedScope": "ant.design 的 Ant Design React 主设计系统 entry；Ant Design Mobile、Charts、Pro、NG-ZORRO 等生态项目不在本条许可和分类范围内。",
+      "fieldVerdicts": {
+        "entityAndAliases": {
+          "verdict": "PASS",
+          "reason": "ant.design、npm 包 antd 与 ant-design/ant-design 官方仓库形成明确闭环；antd 与 Ant Design of React 均为官方用名。"
+        },
+        "entryBoundary": {
+          "verdict": "PASS",
+          "reason": "三页和简介均聚焦 React 主库；生态项目只作为相关资源链接出现，没有把它们的交付物或许可并入本 entry。"
+        },
+        "officialUrl": {
+          "verdict": "PASS",
+          "reason": "根页与 /index-cn 均为官网；本地化 finalUrl 和 title 由官方仓库站点测试直接确认。"
+        },
+        "authorUnknown": {
+          "verdict": "PASS",
+          "reason": "官方 package.json 的 author 为 null，官网以蚂蚁集团和开源社区署名；不猜单一作者。"
+        },
+        "rightsScope": {
+          "verdict": "PASS",
+          "reason": "官方仓库 LICENSE 和 GitHub 元数据均为 MIT，draft 明确把许可限制在 React 核心仓库。"
+        }
+      },
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "verdict": "PASS",
+          "sourceUrl": "https://ant.design/",
+          "observedFinalUrl": "https://ant.design/index-cn",
+          "observedTitle": "Ant Design - 一套企业级 UI 设计语言和 React 组件库",
+          "reason": "指定 /index-cn 后得到中文官网正文；官方仓库 scripts/check-site.ts 对该路径精确断言此 title。根 URL 是否自动跳转取决于语言环境，不构成伪造 finalUrl。"
+        },
+        {
+          "role": "breadth",
+          "verdict": "PASS",
+          "sourceUrl": "https://ant.design/components/overview-cn/",
+          "observedFinalUrl": "https://ant.design/components/overview-cn",
+          "observedTitle": "组件总览 - Ant Design",
+          "reason": "页面按通用、布局、导航、数据录入、数据展示、反馈与其他分组列出大量组件及预览，覆盖面明确。"
+        },
+        {
+          "role": "proof",
+          "verdict": "PASS",
+          "sourceUrl": "https://ant.design/components/table-cn#table-demo-basic",
+          "observedFinalUrl": "https://ant.design/components/table-cn#table-demo-basic",
+          "observedTitle": "表格 Table - Ant Design",
+          "reason": "官方 Table 页重新访问后包含基本表格、交互操作、筛选、排序、远程加载、固定列等大量真实示例与 API 说明；fragment 由截图位置确认。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/ant-design/v2-identity.png",
+          "sha256": "38e3dba3b7497012771e58832b5b759e7a869ab8f75f60543a811b1d154cc393",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；品牌、设计系统主张、开始使用与设计语言入口、三张已加载新闻卡及主题能力均清晰，无首次捕获的骨架。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/ant-design/v2-breadth.png",
+          "sha256": "a94951799b03ef38b660cd8e3590f672f004a67244dfb6b8391742156716b1af",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；组件总览、左侧分类、通用与布局组件卡片均完整，图标预览已加载。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/ant-design/v2-proof.png",
+          "sha256": "f1e816c4dbc145c9b7032a6e2d9cbb280640a0dbdd4ffe79443bb8bc6f339c22",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；Table 基本示例、分页、操作列、说明和后续变体目录同屏，是真实组件文档而非静态宣传图。"
+        }
+      ],
+      "descriptionVerdict": {
+        "verdict": "PASS",
+        "codePoints": 95,
+        "reason": "官方 React 介绍页逐项支持企业级中后台/前台桌面网站、React、TypeScript、国际化、主题定制与工具体系；组件页支持大量可运行示例；MIT 明确限定核心仓库。文字自然、无夸张和模板句。"
+      },
+      "classificationVerdict": {
+        "verdict": "PASS",
+        "structuralValidatorErrors": [],
+        "primaryCategory": "ui-implementation",
+        "subcategory": "design-system-suites",
+        "facetValidatorErrors": [],
+        "reason": "官方同时提供设计语言、设计指引、完整 React 组件套件、主题、国际化和开发工具链，属于设计系统套件而非普通零散组件库；admin 与 SaaS 作为场景 facets，不提升为主分类。"
+      },
+      "confirmedClassification": {
+        "recordLevel": "entry",
+        "entityId": "entity-ant-design",
+        "primaryCategory": "ui-implementation",
+        "subcategory": "design-system-suites",
+        "status": "confirmed",
+        "alternatives": [],
+        "reasons": [
+          {
+            "statement": "官方 React 介绍页将 antd 定义为基于 Ant Design 体系、用于企业级中后台与前台桌面网站的 React UI 组件库，并列出完整设计和开发工具、国际化及主题能力。",
+            "evidenceUrl": "https://ant.design/docs/react/introduce-cn"
+          },
+          {
+            "statement": "组件总览按通用、布局、导航、数据录入、数据展示与反馈等类别提供大规模组件清单和预览，符合完整设计系统套件。",
+            "evidenceUrl": "https://ant.design/components/overview-cn/"
+          }
+        ],
+        "curatorId": "real-sites-batch-01-agent",
+        "reviewerId": "independent-batch-01-reviewer",
+        "confirmedAt": "2026-09-01T16:54:57.048Z"
+      },
+      "confirmedFacets": {
+        "scenarios": [
+          "admin",
+          "saas"
+        ],
+        "deliverables": [
+          "component",
+          "standard",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "preview",
+          "copy",
+          "install",
+          "learn"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "typescript",
+          "javascript",
+          "css"
+        ],
+        "workflowStages": [
+          "design",
+          "build",
+          "test"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "zh-hans",
+          "en"
+        ]
+      },
+      "facts": [
+        {
+          "field": "author",
+          "verdict": "PASS",
+          "confirmedValue": "unknown",
+          "sourceUrls": [
+            "https://github.com/ant-design/ant-design/blob/master/package.json"
+          ],
+          "scopeNote": "package.json author 为 null；社区型项目不强猜单一作者。"
+        },
+        {
+          "field": "organization",
+          "verdict": "PASS",
+          "confirmedValue": "蚂蚁集团和 Ant Design 开源社区",
+          "sourceUrls": [
+            "https://ant.design/index-cn"
+          ],
+          "scopeNote": "官网页脚直接署名。"
+        },
+        {
+          "field": "repository",
+          "verdict": "PASS",
+          "confirmedValue": "https://github.com/ant-design/ant-design",
+          "sourceUrls": [
+            "https://ant.design/docs/react/introduce-cn",
+            "https://github.com/ant-design/ant-design"
+          ],
+          "scopeNote": "官网编辑、贡献和 GitHub 入口均指向该仓库，仓库 homepage 回链 ant.design。"
+        },
+        {
+          "field": "license",
+          "verdict": "PASS",
+          "confirmedValue": "MIT",
+          "sourceUrls": [
+            "https://github.com/ant-design/ant-design/blob/master/LICENSE"
+          ],
+          "scopeNote": "仅确认 ant-design/ant-design React 核心仓库；不扩张到官网媒体、Pro、Mobile、Charts 或其他生态仓库。"
+        },
+        {
+          "field": "pricing",
+          "verdict": "PASS",
+          "confirmedValue": "Free and open source for the core Ant Design React library",
+          "sourceUrls": [
+            "https://ant.design/docs/react/introduce-cn",
+            "https://github.com/ant-design/ant-design/blob/master/LICENSE"
+          ],
+          "scopeNote": "公开 npm 安装与 MIT 仓库支持核心库免费开源；不代表生态商业产品免费。"
+        },
+        {
+          "field": "package",
+          "verdict": "PASS",
+          "confirmedValue": "antd",
+          "sourceUrls": [
+            "https://ant.design/docs/react/introduce-cn",
+            "https://github.com/ant-design/ant-design/blob/master/package.json"
+          ],
+          "scopeNote": "官方安装命令为 npm install antd --save。"
+        }
+      ],
+      "networkEvidence": [
+        {
+          "route": "agent-reach:web/Jina Reader",
+          "urls": [
+            "https://ant.design/",
+            "https://ant.design/index-cn",
+            "https://ant.design/components/overview-cn/",
+            "https://ant.design/components/table-cn#table-demo-basic",
+            "https://ant.design/docs/react/introduce-cn"
+          ]
+        },
+        {
+          "route": "agent-reach:dev/gh CLI official GitHub API",
+          "urls": [
+            "https://github.com/ant-design/ant-design",
+            "https://github.com/ant-design/ant-design/blob/master/LICENSE",
+            "https://github.com/ant-design/ant-design/blob/master/package.json",
+            "https://github.com/ant-design/ant-design/blob/master/scripts/check-site.ts"
+          ]
+        }
+      ],
+      "bundleGuidance": {
+        "v3SimulationValidatorErrors": [],
+        "note": "confirmedClassification 已主动去掉 staging-only 的 name 与 entryId；正式 bundle 的 top-level entryId 必须与 /shots/<entryId>/ 目录对齐。"
+      },
+      "requiredCorrections": []
+    },
+    {
+      "siteId": "chakra-ui",
+      "verdict": "PASS",
+      "reviewPassed": true,
+      "publicationEligible": false,
+      "reviewedScope": "chakra-ui.com 的免费开源 Chakra UI React 核心组件系统 entry；Chakra UI Pro、Ark UI、Zag.js 与旧 Vue 实现不继承本条 MIT 结论。",
+      "fieldVerdicts": {
+        "entityAndAliases": {
+          "verdict": "PASS",
+          "reason": "chakra-ui.com、@chakra-ui/react 与 chakra-ui/chakra-ui 官方仓库形成明确闭环；官网把 Chakra UI、Ark UI、Zag.js 分列为不同项目。"
+        },
+        "entryBoundary": {
+          "verdict": "PASS",
+          "reason": "三页、描述与分类均聚焦核心 React 组件系统；Pro 只作为独立 premium offering 说明，没有把其页面和素材许可并入。"
+        },
+        "officialUrl": {
+          "verdict": "PASS",
+          "reason": "https://chakra-ui.com/ 可达，官网 GitHub 入口和仓库 homepage 双向关联。"
+        },
+        "author": {
+          "verdict": "PASS",
+          "reason": "官方根 package.json author 为 Segun Adebayo，官网页脚写 Maintained by Sage and contributors，姓名与别名可交叉确认。"
+        },
+        "rightsScope": {
+          "verdict": "PASS",
+          "reason": "官方仓库 LICENSE、package.json 与 GitHub SPDX 都是 MIT；draft 明确排除另售的 Chakra UI Pro。"
+        }
+      },
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "verdict": "PASS",
+          "sourceUrl": "https://chakra-ui.com/",
+          "observedFinalUrl": "https://chakra-ui.com/",
+          "observedTitle": "Chakra UI",
+          "reason": "官网首页明确称其为用于快速构建产品的 accessible React component system，并展示 @chakra-ui/react 安装、Next.js RSC、Tokens、Typography 与 Recipes。"
+        },
+        {
+          "role": "breadth",
+          "verdict": "PASS",
+          "sourceUrl": "https://chakra-ui.com/docs/components/concepts/overview",
+          "observedFinalUrl": "https://chakra-ui.com/docs/components/concepts/overview",
+          "observedTitle": "Components | Chakra UI",
+          "reason": "页面重新访问后列出从布局、表单、浮层、反馈、数据展示到富文本编辑器的大量组件，且每项有用途说明和详情链接。"
+        },
+        {
+          "role": "proof",
+          "verdict": "PASS",
+          "sourceUrl": "https://chakra-ui.com/docs/components/button",
+          "observedFinalUrl": "https://chakra-ui.com/docs/components/button",
+          "observedTitle": "Button | Chakra UI",
+          "reason": "官方 Button 页提供导入与 JSX、sizes、variants、icon、color、disabled、loading、responsive、customization 和 props，能证明可安装实现与文档深度。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/chakra-ui/v2-identity.png",
+          "sha256": "b12f3ccbf3ad0fad6a904fd9e7b8fd87fc1b1dadd806ca7333f5dc302247ca34",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；核心组件系统主张、可访问性、Next.js RSC、安装命令与多个真实组件预览完整；顶部 Pro 横幅清楚表明另有 premium 产品。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/chakra-ui/v2-breadth.png",
+          "sha256": "48f59db0ee116ae297c66b6a07b6db39b72807a3005b06bed1a9505f869f6ba2",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；组件总览、左侧功能目录与多张不同组件卡片已加载，无骨架或错误页。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/chakra-ui/v2-proof.png",
+          "sha256": "40838eabbdf768eeb31646c23df9abd8f5a2586d3cbb02efb9fee660623ca826",
+          "verdict": "PASS",
+          "visualFindings": "1280×900；Button 实时 Preview、Code 切换、import 与 JSX 用法、Source/Storybook/Recipe 入口及完整变体目录同屏。"
+        }
+      ],
+      "descriptionVerdict": {
+        "verdict": "PASS",
+        "codePoints": 96,
+        "reason": "官网和安装/组件页逐项支持 React、Next.js、可访问组件、实时预览、代码、Tokens、Recipes 与主题能力；官方 LICENSE 支持核心库 MIT，首页明确 Pro 另售。文字自然且没有把 Pro 许可混入核心库。"
+      },
+      "classificationVerdict": {
+        "verdict": "PASS",
+        "structuralValidatorErrors": [],
+        "primaryCategory": "ui-implementation",
+        "subcategory": "design-system-suites",
+        "facetValidatorErrors": [],
+        "reason": "首页把 Chakra UI 定义为 component system，并明确用于构建设计系统；完整组件目录和系统级 tokens/recipes/theming 使其高于普通组件集合。SaaS 仅为官方仓库描述支持的场景 facet。"
+      },
+      "confirmedClassification": {
+        "recordLevel": "entry",
+        "entityId": "entity-chakra-ui",
+        "primaryCategory": "ui-implementation",
+        "subcategory": "design-system-suites",
+        "status": "confirmed",
+        "alternatives": [],
+        "reasons": [
+          {
+            "statement": "官网将 Chakra UI 定义为用于构建高质量 Web 应用和设计系统的可访问 React component system，并展示 tokens、typography 与 recipes。",
+            "evidenceUrl": "https://chakra-ui.com/"
+          },
+          {
+            "statement": "组件总览列出覆盖布局、表单、浮层、反馈、数据展示和富文本等任务的大规模组件套件，证明它不是单一组件集合。",
+            "evidenceUrl": "https://chakra-ui.com/docs/components/concepts/overview"
+          }
+        ],
+        "curatorId": "real-sites-batch-01-agent",
+        "reviewerId": "independent-batch-01-reviewer",
+        "confirmedAt": "2026-09-01T16:54:57.048Z"
+      },
+      "confirmedFacets": {
+        "scenarios": [
+          "saas"
+        ],
+        "deliverables": [
+          "component",
+          "primitive",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "preview",
+          "copy",
+          "install",
+          "learn"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "typescript",
+          "css"
+        ],
+        "workflowStages": [
+          "design",
+          "build",
+          "test"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "facts": [
+        {
+          "field": "author",
+          "verdict": "PASS",
+          "confirmedValue": "Segun Adebayo (Sage)",
+          "sourceUrls": [
+            "https://github.com/chakra-ui/chakra-ui/blob/main/package.json",
+            "https://chakra-ui.com/"
+          ],
+          "scopeNote": "package.json 给出 Segun Adebayo，官网用 Sage 作为维护者别名，同时注明 contributors。"
+        },
+        {
+          "field": "organization",
+          "verdict": "PASS",
+          "confirmedValue": "Chakra Systems",
+          "sourceUrls": [
+            "https://chakra-ui.com/",
+            "https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE"
+          ],
+          "scopeNote": "官网写 Project by Chakra Systems；LICENSE 写 Chakra Systems Inc.。"
+        },
+        {
+          "field": "repository",
+          "verdict": "PASS",
+          "confirmedValue": "https://github.com/chakra-ui/chakra-ui",
+          "sourceUrls": [
+            "https://chakra-ui.com/",
+            "https://github.com/chakra-ui/chakra-ui"
+          ],
+          "scopeNote": "官网 GitHub 与组件 Source 链接均指向该仓库，仓库 homepage 回链官网。"
+        },
+        {
+          "field": "license",
+          "verdict": "PASS",
+          "confirmedValue": "MIT",
+          "sourceUrls": [
+            "https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE"
+          ],
+          "scopeNote": "仅适用于 chakra-ui/chakra-ui 核心仓库；不覆盖 Chakra UI Pro 模板、图片或商业素材。"
+        },
+        {
+          "field": "pricing",
+          "verdict": "PASS",
+          "confirmedValue": "Core Chakra UI library is free and open source; Chakra UI Pro is a separate paid offering",
+          "sourceUrls": [
+            "https://chakra-ui.com/",
+            "https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE"
+          ],
+          "scopeNote": "官网核心安装公开且仓库 MIT；首页另列 Premium Chakra UI Components 与 Chakra UI Pro。"
+        },
+        {
+          "field": "package",
+          "verdict": "PASS",
+          "confirmedValue": "@chakra-ui/react",
+          "sourceUrls": [
+            "https://chakra-ui.com/docs/get-started/installation"
+          ],
+          "scopeNote": "官方安装命令为 npm i @chakra-ui/react @emotion/react。"
+        }
+      ],
+      "networkEvidence": [
+        {
+          "route": "agent-reach:web/Jina Reader",
+          "urls": [
+            "https://chakra-ui.com/",
+            "https://chakra-ui.com/docs/components/concepts/overview",
+            "https://chakra-ui.com/docs/components/button",
+            "https://chakra-ui.com/docs/get-started/installation"
+          ]
+        },
+        {
+          "route": "agent-reach:dev/gh CLI official GitHub API",
+          "urls": [
+            "https://github.com/chakra-ui/chakra-ui",
+            "https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE",
+            "https://github.com/chakra-ui/chakra-ui/blob/main/package.json"
+          ]
+        }
+      ],
+      "bundleGuidance": {
+        "v3SimulationValidatorErrors": [],
+        "note": "confirmedClassification 已主动去掉 staging-only 的 name 与 entryId；正式 bundle 的 top-level entryId 必须与 /shots/<entryId>/ 目录对齐。"
+      },
+      "requiredCorrections": []
+    }
+  ],
+  "batchRequiredCorrections": [],
+  "publicationRequirements": [
+    "正式发布前为 PASS 站点构造 immutable v3 bundles，保持 classification 中不含 name/entryId，并让 top-level entryId 与截图目录一致。",
+    "运行完整 v3 evidence validator 与事务发布检查；本审核不得直接写 approved、queue 或公开索引。"
+  ]
+}

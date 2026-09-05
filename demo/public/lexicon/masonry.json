@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "masonry",
+  "term_en": "Masonry",
+  "term_zh": "瀑布流",
+  "axis": "layout",
+  "aliases": [
+    "瀑布流",
+    "砖石布局",
+    "pinterest 布局"
+  ],
+  "definition_zh": "按列堆叠的不等高卡片流，密度高而不乱。",
+  "notation": "L[masonry] · cols:4 · gutter:12 · flow:column",
+  "genes": [
+    {
+      "gene": "列数",
+      "value": "4（桌面）→ 2（平板）"
+    },
+    {
+      "gene": "排序",
+      "value": "DOM 顺序 vs 视觉高度一致与否"
+    }
+  ],
+  "minimal_code": {
+    "css": ".masonry{columns:4;column-gap:12px}\n.item{break-inside:avoid;margin-bottom:12px}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "对「流式阅读」的正文用瀑布流是灾难；只适合等宽不定高卡片。"
+  ],
+  "tech_notes": [
+    "CSS columns 最简单，break-inside:avoid 防断卡；原生 masonry 支持仍有限。"
+  ],
+  "common_pairings": [
+    "shimmer"
+  ],
+  "related": [
+    "bento-grid"
+  ],
+  "wild": [
+    {
+      "what": "Pinterest / 花瓣",
+      "source": "pinterest.com",
+      "note": "图库瀑布流的代名词"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/masonry/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/masonry.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

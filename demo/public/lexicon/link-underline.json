@@ -1,0 +1,68 @@
+{
+  "lever": "lexicon",
+  "id": "link-underline",
+  "term_en": "Link Underline Draw",
+  "term_zh": "下划线绘制",
+  "axis": "interaction",
+  "aliases": [
+    "下划线动画",
+    "划线 hover",
+    "underline slide"
+  ],
+  "definition_zh": "hover 时下划线从一侧划入（或从中间长出），退场时从另一侧划出。",
+  "notation": "I[uline] · from:left · 1.5px · t:280ms",
+  "genes": [
+    {
+      "gene": "方向",
+      "value": "左入右出 / 中间长出 / 粗细变化"
+    },
+    {
+      "gene": "线型",
+      "value": "1.5px 实线 / 波浪 / 手绘抖动"
+    }
+  ],
+  "minimal_code": {
+    "css": "a{background:linear-gradient(currentColor,currentColor)\n  no-repeat 100% 100%/0 1.5px;transition:.28s}\na:hover{background-size:100% 1.5px;background-position:0 100%}"
+  },
+  "params": [
+    {
+      "key": "dur",
+      "label": "时长",
+      "min": 120,
+      "max": 600,
+      "step": 20,
+      "unit": "ms",
+      "default": 280
+    }
+  ],
+  "anti_patterns": [
+    "正文里长段落的链接别加动画，成本高于收益；导航短词才用。"
+  ],
+  "tech_notes": [
+    "background-size 动画或 ::after scaleX；transform-origin 控制方向。"
+  ],
+  "common_pairings": [
+    "editorial"
+  ],
+  "related": [
+    "marquee"
+  ],
+  "wild": [
+    {
+      "what": "NYT / 编辑类站点导航",
+      "source": "nytimes.com",
+      "note": "serif 站点的标准 hover"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/link-underline/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/link-underline.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

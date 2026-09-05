@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 3,
+  "draftKind": "real-site-curation",
+  "batchId": "2026-09-01-batch-01",
+  "siteId": "shadcn-studio",
+  "status": "CAPTURED_PENDING_INDEPENDENT_REVIEW",
+  "entity": {
+    "entityId": "entity-shadcn-studio",
+    "entityKey": "domain:shadcnstudio.com",
+    "name": "Shadcn Studio",
+    "aliases": [
+      "shadcn/studio",
+      "Shadcn studio"
+    ],
+    "canonicalUrl": "https://shadcnstudio.com/",
+    "candidateIds": [
+      "shadcn-studio-5b5c3c44"
+    ],
+    "identityDecision": "同一根域、品牌名和官方仓库均指向 Shadcn Studio；不得与独立项目 shadcn/ui 合并。"
+  },
+  "official": {
+    "inputUrl": "https://shadcnstudio.com/",
+    "finalUrl": "https://shadcnstudio.com/",
+    "checkedAt": "2026-09-01T15:45:42.521Z"
+  },
+  "research": {
+    "explorationMethod": "官方页面经 Jina Reader 核对静态事实，并在真实浏览器中从首页进入 Blocks 目录与 Hero Section 详情，检查页面动作、内容单元、付费边界和实际预览。",
+    "internalEssenceZh": "以按场景浏览的可复用 React 页面区块为内容单元，用户可预览、复制、下载或通过 shadcn CLI 安装，并受免费与付费资源的许可边界约束。",
+    "descriptionZh": "聚焦 Shadcn Studio 的 Blocks 入口，按营销、后台、电商与数据表等场景提供可预览、复制、下载或用 CLI 安装的 React 区块，并附提示词；含少量免费内容和一次性付费资源，均受限制性许可约束，不能按纯开源组件库理解。",
+    "descriptionCodePointLength": 120,
+    "importantLimitZh": "免费仓库不是标准 MIT：许可另加 Commons Clause 限制；付费资源适用单独商业许可，均不得原样转售、再分发或用于直接竞争产品。",
+    "classificationScopeNoteZh": "本 entry 的 canonical 入口是 https://shadcnstudio.com/blocks，仅覆盖 Blocks；根首页只用于 Source Entity 身份，Templates、Figma Kit、Theme Generator 与 MCP 需另建兄弟 entry 并各自取证。"
+  },
+  "classification": {
+    "name": "Shadcn Studio Blocks",
+    "recordLevel": "entry",
+    "entryId": "entry-shadcn-studio-blocks",
+    "entityId": "entity-shadcn-studio",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "needs-review",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "general-ui-components"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "Blocks 总览把站内主内容组织为营销、后台、电商、数据表和 Bento 等可复用页面区块。",
+        "evidenceUrl": "https://shadcnstudio.com/blocks"
+      },
+      {
+        "statement": "Hero Section 详情提供真实预览、Get Code、Copy Prompt、下载和 shadcn CLI 安装动作，证明交付物是可复用实现而非纯灵感截图。",
+        "evidenceUrl": "https://shadcnstudio.com/blocks/marketing-ui/hero-section"
+      }
+    ]
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "ecommerce",
+      "marketing",
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "block",
+      "full-page",
+      "prompt"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "copy",
+      "install",
+      "download",
+      "purchase"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "radix-ui",
+      "base-ui",
+      "shadcn-ui",
+      "motion"
+    ],
+    "workflowStages": [
+      "discovery",
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "source-available",
+      "paid"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "unknown",
+      "sourceUrl": "https://shadcnstudio.com/credits",
+      "evidence": "官网 Credits、首页和仓库没有明确给出可作为作者字段的个人署名。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "CleVision Technologies Private Limited",
+      "sourceUrl": "https://shadcnstudio.com/license",
+      "evidence": "官网许可页明确写明 Resources 的版权由 CleVision Technologies Private Limited 持有；页脚另写 Supported by ThemeSelection。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/shadcnstudio/shadcn-studio",
+      "sourceUrl": "https://shadcnstudio.com/",
+      "evidence": "官网导航和页脚的 GitHub 链接直接指向该仓库，仓库 homepage 也回链 shadcnstudio.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT terms with Commons Clause restriction for the public repository; separate proprietary licenses for paid resources",
+      "sourceUrl": "https://shadcnstudio.com/license",
+      "evidence": "免费许可在 MIT 文本后增加禁止原样销售/再分发和禁止竞争产品的限制；Basic、Pro、Team、Enterprise 资源适用官网列出的单独许可。该结论不得扩大为网站图片或付费素材的标准 MIT 授权。",
+      "confidence": 1
+    },
+    {
+      "field": "repositoryLicenseFile",
+      "value": "https://github.com/shadcnstudio/shadcn-studio/blob/main/LICENSE.md",
+      "sourceUrl": "https://github.com/shadcnstudio/shadcn-studio/blob/main/LICENSE.md",
+      "evidence": "仓库许可正文含 MIT 条款及 Commons Clause Restriction；GitHub API 将其识别为 Other，而非纯 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Freemium; Community free forever; paid lifetime tiers shown as Basic $99, Pro $199, Team $449, Enterprise $849 on 2026-09-01",
+      "sourceUrl": "https://shadcnstudio.com/pricing",
+      "evidence": "官网价格表显示免费 Community 层和一次性付费的四个层级；页面同时提示价格未来可能变化。",
+      "confidence": 1
+    },
+    {
+      "field": "officialRelationship",
+      "value": "Independent from shadcn/ui and Figma",
+      "sourceUrl": "https://shadcnstudio.com/",
+      "evidence": "官网页脚明确声明该项目独立，不隶属于 Figma 或 shadcn/ui。",
+      "confidence": 1
+    }
+  ],
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://shadcnstudio.com/",
+      "finalUrl": "https://shadcnstudio.com/",
+      "title": "Shadcn Studio - Shadcn UI Components, Blocks & Templates",
+      "selectionRationale": "首页同时说明组件、区块、模板、主题、Figma 与 AI 工具，并明确 React、Tailwind、Radix UI、Base UI 及代码所有权，是品牌身份与边界最完整的一页。",
+      "shot": {
+        "src": "/shots/shadcn-studio/v2-identity.png",
+        "sha256": "d53bc77e8d9ca40106da6bb40c07e62f7f212c110c39006f7688f3ddf5eb2b55",
+        "width": 1280,
+        "height": 900,
+        "bytes": 333035,
+        "alt": "Shadcn Studio 首页的产品主张、资源类型与项目预览"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://shadcnstudio.com/blocks",
+      "finalUrl": "https://shadcnstudio.com/blocks",
+      "title": "800+ Shadcn UI Blocks - Free & Pro - Shadcn Studio",
+      "selectionRationale": "Blocks 总览把 800+ 免费与付费资源按营销、后台、电商、数据表和 Bento 等任务组织，直接展示覆盖面和内容计数。",
+      "shot": {
+        "src": "/shots/shadcn-studio/v2-breadth.png",
+        "sha256": "8f47fabbf23338824a7b7e9f80f14854cd335e20bd7c6bb64b5304c6e0fb7b23",
+        "width": 1280,
+        "height": 900,
+        "bytes": 302215,
+        "alt": "Shadcn Studio 区块总览与营销、后台、电商等分类"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://shadcnstudio.com/blocks/marketing-ui/hero-section",
+      "finalUrl": "https://shadcnstudio.com/blocks/marketing-ui/hero-section",
+      "title": "Shadcn Hero Section - Shadcn Studio",
+      "selectionRationale": "具体 Hero 区块页把真实响应式预览与 Get Code、Copy Prompt、下载、主题切换和 npx shadcn add 并列，证明资源可查看、取得并安装。",
+      "shot": {
+        "src": "/shots/shadcn-studio/v2-proof.png",
+        "sha256": "65575106bf3c0263c7ae1cd49cdc2aa66f279f4f3ae94cdcfa533a8788b246a0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 204096,
+        "alt": "Shadcn Studio Hero 区块的真实预览、代码与 CLI 安装操作"
+      }
+    }
+  ],
+  "qa": {
+    "curatorId": "real-sites-batch-01-agent",
+    "technicalCapturePassed": true,
+    "selfVisualCheckPassed": true,
+    "descriptionLengthPassed": true,
+    "classificationValidated": true,
+    "facetsValidated": true,
+    "independentReviewRequired": true,
+    "publicationEligible": false
+  },
+  "independentReview": {
+    "required": true,
+    "status": "PENDING"
+  }
+}

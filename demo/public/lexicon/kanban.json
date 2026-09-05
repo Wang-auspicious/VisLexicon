@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "kanban",
+  "term_en": "Kanban",
+  "term_zh": "看板",
+  "axis": "layout",
+  "aliases": [
+    "看板",
+    "任务板",
+    "拖拽列"
+  ],
+  "definition_zh": "按状态分列的卡片流，配合拖拽重排。",
+  "notation": "L[kanban] · cols:TODO/DOING/DONE · flow:column",
+  "genes": [
+    {
+      "gene": "列聚合",
+      "value": "按状态/优先级/负责人"
+    },
+    {
+      "gene": "重排",
+      "value": "同列排序 / 跨列移动 / 溢出回弹"
+    }
+  ],
+  "minimal_code": {
+    "css": ".kanban{display:grid;grid-auto-flow:column;gap:16px;overflow-x:auto}\n.col{min-width:260px}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "列数超过 5 或单列过长会失去「扫一眼」的效力。"
+  ],
+  "tech_notes": [
+    "auto-flow:column + min-width 保底横向滚动；拖拽库负责 FLIP 过渡。"
+  ],
+  "common_pairings": [
+    "flip"
+  ],
+  "related": [
+    "timeline"
+  ],
+  "wild": [
+    {
+      "what": "Trello / Linear / Notion",
+      "source": "trello.com",
+      "note": "看板从物理白板到软件的移植"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/kanban/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/kanban.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

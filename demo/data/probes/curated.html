@@ -1,0 +1,997 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth selection:bg-accent-50 selection:text-accent-500"><head><!-- Charset and viewport must precede executable content in the document head. --><!-- Base meta (title/description/OG live in Seo.astro) --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="author" content="Curated"><!-- Parsed before any stylesheet, so the browser paints its own canvas — the
+     frame between two documents included — in the right scheme instead of
+     defaulting to white. --><meta name="color-scheme" content="light dark"><!-- Browser chrome color, follows the OS theme --><meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f0f0f"><!-- Theme: applied before paint to avoid a flash; auto (system) unless the user picked one --><script>
+  (() => {
+    const stored = localStorage.getItem("theme");
+    const media = window.matchMedia("(prefers-color-scheme: dark)");
+    // Also paint the background + color-scheme inline, before any CSS loads,
+    // so dark-mode navigation never flashes white.
+    const apply = (dark) => {
+      const root = document.documentElement;
+      root.classList.toggle("dark", dark);
+      root.style.colorScheme = dark ? "dark" : "light";
+      root.style.backgroundColor = dark ? "oklch(0.17 0 0)" : "#ffffff";
+    };
+    window.__applyTheme = apply;
+    apply(stored ? stored === "dark" : media.matches);
+    // Follow system changes while in auto mode
+    media.addEventListener("change", (e) => {
+      if (!localStorage.getItem("theme")) apply(e.matches);
+    });
+  })();
+</script><title>Web design inspiration from real, live websites — Curated</title><meta name="description" content="Live websites and landing pages, reviewed one at a time. Filter by style or industry, then click straight through to the real site."><link rel="canonical" href="https://curated.design/"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:url" content="https://curated.design/"><meta property="og:site_name" content="Curated"><meta property="og:locale" content="en_US"><meta property="og:title" content="Web design inspiration from real, live websites — Curated"><meta property="og:description" content="Live websites and landing pages, reviewed one at a time. Filter by style or industry, then click straight through to the real site."><meta property="og:image" content="https://curated.design/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Curated, a gallery of live websites"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@CuratedDesignHQ"><meta name="twitter:creator" content="@CuratedDesignHQ"><meta name="twitter:title" content="Web design inspiration from real, live websites — Curated"><meta name="twitter:description" content="Live websites and landing pages, reviewed one at a time. Filter by style or industry, then click straight through to the real site."><meta name="twitter:image" content="https://curated.design/og.png"><meta name="twitter:image:alt" content="Curated, a gallery of live websites"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://curated.design/#organization","name":"Curated","url":"https://curated.design/","logo":{"@type":"ImageObject","@id":"https://curated.design/#logo","url":"https://curated.design/icon-512.png","width":512,"height":512},"sameAs":["https://x.com/CuratedDesignHQ","https://www.instagram.com/craftwork.design/","https://dribbble.com/Craftwork/"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://curated.design/#website","name":"Curated","alternateName":"curated.design","url":"https://curated.design/","description":"Live websites and landing pages, reviewed one at a time. Filter by style or industry, then click straight through to the real site.","publisher":{"@id":"https://curated.design/#organization"},"inLanguage":"en-US"}</script><!-- Self-hosted fonts, preloaded: no CDN round-trips, no font-swap flash
+     between page navigations. Files live in public/fonts/.
+     Euclid Circular A carries all UI text; Hedvig Letters Serif is display only.
+     Only the two most-used Euclid cuts are preloaded — Light and Semibold are
+     rarer and can arrive a beat later without a visible reflow. --><link rel="preload" href="/fonts/EuclidCircularA-Regular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/EuclidCircularA-Medium.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/HedvigLettersSerif.woff2" as="font" type="font/woff2" crossorigin><style>
+  /* Euclid has no cut below Light, so 100–300 all resolve to Light rather
+     than letting the browser synthesise a thin. */
+  @font-face {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 100 300;
+    font-display: swap;
+    src: url("/fonts/EuclidCircularA-Light.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/EuclidCircularA-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/EuclidCircularA-Medium.woff2") format("woff2");
+  }
+  /* Semibold is the heaviest cut licensed here; 700+ maps to it instead of a
+     faux-bold smear. */
+  @font-face {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 600 900;
+    font-display: swap;
+    src: url("/fonts/EuclidCircularA-Semibold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Hedvig Letters Serif";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url("/fonts/HedvigLettersSerif.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+      U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+      U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+</style><!-- Favicons (generated by scripts/generate-icons.mjs — run `npm run icons` to rebuild) --><!-- Adaptive SVG: black eye in light UI, white eye in dark UI --><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" type="application/rss+xml" title="Curated — web design inspiration" href="/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="preconnect" href="https://marketstorage.b-cdn.net"><link rel="dns-prefetch" href="//marketstorage.b-cdn.net"><link rel="dns-prefetch" href="//client.crisp.chat"><!--
+  Browser ingestion stays on the Curated origin. The matching Astro route
+  forwards this opaque path to PostHog's EU ingest and asset hosts.
+--><script>(function(){const posthogKey = "phc_qYaXsKuigkpj2SCszt7bVLYsuyZJYfCQLDJTnj7GNeC6";
+const posthogHost = "https://eu.posthog.com";
+const posthogProxyPath = "/curated-published-web-826";
+const analyticsUserId = null;
+const analyticsUserEmail = null;
+const analyticsUserIsPro = false;
+const appProperties = {"app":"curated","app_version":"v2","source":"curated_design"};
+
+  (() => {
+    const APP_PROPERTIES = appProperties;
+    // A dev server points at the same project as production, so browsing
+    // locally used to file its own pageviews next to real traffic — and left
+    // `localhost:4399` sitting in the referrer list. Nothing initializes off a
+    // development host, so `init` never runs and no request goes out.
+    const LOCAL_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0", "::1", "[::1]"];
+    const isLocalHost =
+      LOCAL_HOSTS.includes(location.hostname) ||
+      location.hostname.endsWith(".local");
+    const ENABLED = Boolean(posthogKey) && !isLocalHost;
+    let initialized = false;
+
+    // PostHog's array bootstrap keeps early events in order until the remote
+    // client arrives through our first-party proxy.
+    !(function (document, posthog) {
+      if (posthog.__SV) return;
+      window.posthog = posthog;
+      posthog._i = [];
+      posthog.init = function (token, config, name) {
+        function stub(target, method) {
+          const parts = method.split(".");
+          if (parts.length === 2) {
+            target = target[parts[0]];
+            method = parts[1];
+          }
+          target[method] = function () {
+            target.push([method].concat(Array.prototype.slice.call(arguments)));
+          };
+        }
+
+        const script = document.createElement("script");
+        script.type = "text/javascript";
+        script.crossOrigin = "anonymous";
+        script.async = true;
+        script.src = config.api_host + "/static/array.js";
+        document.head.appendChild(script);
+
+        let instance = posthog;
+        name = name || "posthog";
+        if (name !== "posthog") instance = posthog[name] = [];
+        instance.people = instance.people || [];
+        instance.toString = function (asStub) {
+          let label = name;
+          if (name !== "posthog") label += "." + name;
+          if (!asStub) label += " (stub)";
+          return label;
+        };
+        instance.people.toString = function () {
+          return instance.toString(1) + ".people (stub)";
+        };
+        [
+          "init",
+          "capture",
+          "register",
+          "register_once",
+          "unregister",
+          "identify",
+          "reset",
+          "opt_in_capturing",
+          "opt_out_capturing",
+          "has_opted_out_capturing",
+          "setPersonProperties",
+        ].forEach((method) => stub(instance, method));
+        posthog._i.push([token, config, name]);
+      };
+      posthog.__SV = 1;
+    })(document, window.posthog || []);
+
+    const normalizeEventName = (name) => {
+      return String(name || "event")
+        .toLowerCase()
+        .replace(/[^a-z0-9_]+/g, "_")
+        .replace(/^_+|_+$/g, "");
+    };
+
+    const pageProperties = () => ({
+      ...APP_PROPERTIES,
+      page_path: location.pathname,
+      page_title: document.title,
+      user_state: analyticsUserId ? "identified" : "anonymous",
+      plan: analyticsUserIsPro ? "pro" : "free",
+    });
+
+    const stripUrlQuery = (value) => {
+      if (typeof value !== "string" || !/^https?:\/\//i.test(value)) return value;
+      try {
+        const url = new URL(value);
+        return url.origin + url.pathname;
+      } catch {
+        return undefined;
+      }
+    };
+
+    const initialize = () => {
+      if (initialized || !ENABLED) return;
+      initialized = true;
+
+      window.posthog.init(posthogKey, {
+        api_host: posthogProxyPath,
+        ui_host: posthogHost,
+        defaults: "2026-05-30",
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: true,
+        capture_exceptions: true,
+        capture_performance: true,
+        disable_session_recording: true,
+        person_profiles: "identified_only",
+        request_batching: true,
+        before_send: (event) => {
+          if (!event) return event;
+          if (!String(event.event).startsWith("$")) {
+            event.event = normalizeEventName(event.event);
+          }
+          event.properties ||= {};
+          [
+            "$current_url",
+            "$referrer",
+            "$initial_current_url",
+            "$initial_referrer",
+          ].forEach((property) => {
+            if (property in event.properties) {
+              event.properties[property] = stripUrlQuery(
+                event.properties[property]
+              );
+            }
+          });
+          return event;
+        },
+      });
+      window.posthog.register(APP_PROPERTIES);
+      if (analyticsUserId) {
+        window.posthog.identify(analyticsUserId, {
+          email: analyticsUserEmail || undefined,
+          plan: analyticsUserIsPro ? "pro" : "free",
+          app: "curated",
+        });
+      }
+      window.posthog.capture("$pageview", pageProperties());
+    };
+
+    const capture = (name, properties = {}) => {
+      if (!ENABLED) return;
+      initialize();
+      window.posthog.capture(normalizeEventName(name), {
+        ...pageProperties(),
+        ...properties,
+      });
+    };
+
+    window.curatedAnalytics = { capture, initialize, enabled: ENABLED };
+    initialize();
+
+    const compactText = (value) =>
+      String(value || "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .slice(0, 80);
+
+    const safeLabel = (element) => {
+      if (!element || element.closest("[data-analytics-private]")) return undefined;
+      let label = element.getAttribute("data-analytics-label");
+      if (!label) label = element.getAttribute("aria-label");
+      if (!label && element.matches("a, button, summary, [role='button']")) {
+        label = element.textContent;
+      }
+      label = compactText(label);
+      // Do not let account identifiers accidentally become analytics labels.
+      if (!label || /\S+@\S+\.\S+/.test(label)) return undefined;
+      return label;
+    };
+
+    const classifyClick = (element) => {
+      if (!element) return "page";
+      if (element.closest("[data-bookmark-site]")) return "bookmark";
+      if (element.closest("[data-newsletter-submit]")) return "newsletter";
+      if (element.closest("[data-skip-queue-checkout]")) return "checkout";
+      if (element.closest("[data-craftwork-cart-link]")) return "checkout";
+      if (
+        element.closest(
+          "[data-curated-product-link], [data-craftwork-product-link]"
+        )
+      ) {
+        return "product";
+      }
+      if (element.id === "searchButton" || element.closest("#searchButton")) {
+        return "search";
+      }
+      if (element.closest("nav")) return "navigation";
+      if (element.matches("a")) return "link";
+      if (element.matches("button, [role='button']")) return "button";
+      if (element.matches("input, select, textarea")) return "control";
+      return "element";
+    };
+
+    document.addEventListener(
+      "click",
+      (event) => {
+        const target = event.target instanceof Element ? event.target : null;
+        const interactive = target?.closest(
+          "a, button, input, select, textarea, summary, [role='button'], [data-analytics-label]"
+        );
+        const element = interactive || target;
+        const properties = {
+          click_kind: classifyClick(element),
+          element_type: element?.tagName?.toLowerCase() || "unknown",
+          label: safeLabel(element),
+          modified_click: Boolean(
+            event.metaKey || event.ctrlKey || event.shiftKey || event.altKey
+          ),
+        };
+
+        const anchor = element?.closest?.("a[href]");
+        let semanticEvent;
+        if (anchor) {
+          try {
+            const targetUrl = new URL(anchor.href, location.href);
+            if (targetUrl.origin === location.origin) {
+              properties.target_path = targetUrl.pathname;
+              if (anchor.matches("[data-curated-product-link]")) {
+                properties.click_kind = "product";
+                properties.product_slug = anchor.dataset.productSlug;
+                properties.product_placement = anchor.dataset.productPlacement;
+                semanticEvent = "product_opened";
+              } else if (targetUrl.pathname === "/api/bookmarks/export.csv") {
+                properties.click_kind = "export";
+                semanticEvent = "bookmarks_export_started";
+              } else if (anchor.matches("[data-section-card]")) {
+                properties.click_kind = "section";
+                properties.section_id = anchor.dataset.sectionId;
+                properties.section_locked = anchor.dataset.sectionLocked === "true";
+                semanticEvent = properties.section_locked
+                  ? "section_paywall_opened"
+                  : "section_opened";
+              } else if (targetUrl.pathname.startsWith("/sites/s/")) {
+                properties.click_kind = "website";
+                properties.website_id = targetUrl.pathname.split("/").filter(Boolean).at(-1);
+                semanticEvent = "website_opened";
+              } else if (targetUrl.pathname.startsWith("/collections/")) {
+                properties.click_kind = "collection";
+                properties.collection_slug = targetUrl.pathname.split("/").filter(Boolean).at(-1);
+                semanticEvent = "collection_opened";
+              }
+            } else {
+              properties.outbound_host = targetUrl.hostname;
+              if (anchor.matches("[data-craftwork-cart-link]")) {
+                properties.click_kind = "checkout";
+                properties.product_slug = anchor.dataset.productSlug;
+                semanticEvent = "craftwork_cart_opened";
+              } else if (anchor.matches("[data-craftwork-product-link]")) {
+                properties.click_kind = "product";
+                properties.product_slug = anchor.dataset.productSlug;
+                semanticEvent = "craftwork_product_opened";
+              } else if (targetUrl.hostname.endsWith("lemonsqueezy.com")) {
+                const checkoutId =
+                  anchor.dataset.checkoutId ||
+                  globalThis.crypto?.randomUUID?.() ||
+                  `checkout_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+                anchor.dataset.checkoutId = checkoutId;
+                targetUrl.searchParams.set(
+                  "checkout[custom][curated_v2_analytics_id]",
+                  checkoutId
+                );
+                anchor.href = targetUrl.toString();
+                properties.click_kind = "checkout";
+                properties.checkout_provider = "lemonsqueezy";
+                properties.transaction = anchor.dataset.lemonCheckout;
+                properties.checkout_id = checkoutId;
+                properties.user_state = analyticsUserId ? "identified" : "anonymous";
+                semanticEvent = "checkout_started";
+              } else {
+                semanticEvent = "outbound_link_opened";
+              }
+            }
+          } catch {
+            // Invalid URLs are ignored; the click itself is still recorded.
+          }
+        }
+
+        const section = element?.closest?.(
+          "[data-analytics-section], main > section, header, nav, footer"
+        );
+        if (section) {
+          properties.section = compactText(
+            section.getAttribute("data-analytics-section") ||
+              section.id ||
+              section.tagName.toLowerCase()
+          );
+        }
+
+        capture("click", properties);
+        if (semanticEvent) {
+          capture(semanticEvent, {
+            label: properties.label,
+            target_path: properties.target_path,
+            outbound_host: properties.outbound_host,
+            product_slug: properties.product_slug,
+            product_placement: properties.product_placement,
+            section_id: properties.section_id,
+            section_locked: properties.section_locked,
+            website_id: properties.website_id,
+            collection_slug: properties.collection_slug,
+            checkout_provider: properties.checkout_provider,
+            transaction: properties.transaction,
+            checkout_id: properties.checkout_id,
+            user_state: properties.user_state,
+            section: properties.section,
+          });
+        }
+
+        const paywallAction = anchor?.getAttribute("data-paywall-action");
+        if (paywallAction) {
+          capture("paywall_cta_clicked", {
+            paywall: anchor.getAttribute("data-paywall") || "unknown",
+            action: paywallAction,
+            target_path: properties.target_path,
+            checkout_provider: properties.checkout_provider,
+          });
+        }
+
+        if (anchor) {
+          const targetUrl = new URL(anchor.href, location.href);
+          const targetType = targetUrl.pathname.match(
+            /^\/sections\/type\/([^/]+)\/$/
+          )?.[1];
+          const isSectionFilterTarget =
+            targetUrl.pathname === "/sections/" || Boolean(targetType);
+          const filterChanged =
+            targetUrl.pathname !== location.pathname ||
+            targetUrl.search !== location.search;
+          if (isSectionFilterTarget && filterChanged) {
+            capture("section_filters_changed", {
+              type:
+                targetType ||
+                targetUrl.searchParams.get("type") ||
+                undefined,
+              category: targetUrl.searchParams.get("category") || undefined,
+              style: targetUrl.searchParams.get("style") || undefined,
+              page: Number(targetUrl.searchParams.get("page") || 1),
+            });
+          }
+        }
+      },
+      { capture: true, passive: true }
+    );
+
+    document.addEventListener("submit", (event) => {
+      const form = event.target instanceof HTMLFormElement ? event.target : null;
+      if (!form) return;
+      let actionPath = location.pathname;
+      try {
+        actionPath = new URL(form.action || location.href, location.href).pathname;
+      } catch {
+        // Keep the current pathname.
+      }
+      capture("form_submitted", {
+        form_name:
+          compactText(form.getAttribute("data-analytics-form") || form.id) ||
+          "anonymous_form",
+        form_method: (form.method || "get").toLowerCase(),
+        form_action_path: actionPath,
+      });
+    });
+
+    document.addEventListener("change", (event) => {
+      const control = event.target;
+      if (!(control instanceof HTMLSelectElement || control instanceof HTMLInputElement)) {
+        return;
+      }
+      const type =
+        control instanceof HTMLSelectElement ? "select" : control.type.toLowerCase();
+      if (!["select", "checkbox", "radio", "range"].includes(type)) return;
+      capture("control_changed", {
+        control_type: type,
+        control_name: compactText(control.name || control.id) || undefined,
+        checked:
+          control instanceof HTMLInputElement && ["checkbox", "radio"].includes(type)
+            ? control.checked
+            : undefined,
+        selected_index:
+          control instanceof HTMLSelectElement ? control.selectedIndex : undefined,
+      });
+    });
+
+    const seenDepths = new Set();
+    const trackScrollDepth = () => {
+      const scrollable = document.documentElement.scrollHeight - innerHeight;
+      if (scrollable <= 0) return;
+      const depth = Math.min(100, Math.round((scrollY / scrollable) * 100));
+      [25, 50, 75, 100].forEach((threshold) => {
+        if (depth < threshold || seenDepths.has(threshold)) return;
+        seenDepths.add(threshold);
+        capture("scroll_depth", { depth_percent: threshold });
+      });
+    };
+    window.addEventListener("scroll", trackScrollDepth, { passive: true });
+  })();
+})();</script><link rel="stylesheet" href="/_astro/BaseLayout.BrbJj0Rt.css?dpl=dpl_9JwvNUengGPoj4MKPSVdxBZaFaVP"><style>[data-edge-scroll]{--edge-fade-l:0px;--edge-fade-r:0px;-webkit-mask-image:linear-gradient(to right, transparent -1px, #000 var(--edge-fade-l), #000 calc(100% - var(--edge-fade-r)), transparent calc(100% + 1px));mask-image:linear-gradient(to right, transparent -1px, #000 var(--edge-fade-l), #000 calc(100% - var(--edge-fade-r)), transparent calc(100% + 1px))}.edge-fade[data-astro-cid-p2kvcvyo]{pointer-events:none;z-index:1;opacity:0;width:6rem;position:absolute;top:0;bottom:0}.edge-fade-left[data-astro-cid-p2kvcvyo]{left:0}.edge-fade-right[data-astro-cid-p2kvcvyo]{right:0}.edge-fade[data-astro-cid-p2kvcvyo]:before,.edge-fade[data-astro-cid-p2kvcvyo]:after{content:"";position:absolute;inset:0}.edge-fade[data-astro-cid-p2kvcvyo]:before{backdrop-filter:blur(2px)}.edge-fade[data-astro-cid-p2kvcvyo]:after{backdrop-filter:blur(6px)}.edge-fade-right[data-astro-cid-p2kvcvyo]:before{mask-image:linear-gradient(270deg,#000 34%,#0000 82%)}.edge-fade-right[data-astro-cid-p2kvcvyo]:after{mask-image:linear-gradient(270deg,#000 8%,#0000 52%)}.edge-fade-left[data-astro-cid-p2kvcvyo]:before{mask-image:linear-gradient(90deg,#000 34%,#0000 82%)}.edge-fade-left[data-astro-cid-p2kvcvyo]:after{mask-image:linear-gradient(90deg,#000 8%,#0000 52%)}
+[data-astro-cid-hb64vyb7][data-bookmark-site][aria-pressed=true] svg[data-astro-cid-hb64vyb7]{color:var(--color-accent-500);fill:var(--color-accent-500)}
+.sponsor-slot[data-astro-cid-de2j2klb]{flex-direction:column;justify-content:center;align-items:center;padding:7% 9% 9%;display:flex;container-type:inline-size}.sponsor-headline[data-astro-cid-de2j2klb]{letter-spacing:-.01em;overflow-wrap:break-word;text-wrap:balance;font-size:clamp(.9375rem,5cqw,1.75rem);line-height:1.02}.sponsor-price[data-astro-cid-de2j2klb]{letter-spacing:.004em;margin-top:clamp(.25rem,1.2cqw,.5rem);font-size:clamp(.6875rem,2.9cqw,1rem);line-height:1.1}[data-astro-cid-hkrreirz][data-sites-category][aria-pressed=true]{color:var(--color-white);background-color:var(--color-base-900)}
+</style><link rel="preload" as="fetch" href="/_server-islands/SitesPreview/?e=76E325B5240FF2A4494700EDNpNqDQnGGvm%2BrQ0liZkAQUzkvEdeAtc%3D&amp;p=&amp;s=" crossorigin="anonymous"></head><body class="bg-white flex flex-col lg:min-h-svh"><nav class="fixed inset-x-0 top-0 z-40 bg-white lg:hidden" data-auth-root data-auth-state="anonymous"><div class="mx-auto px-8 max-w-[110rem] py-3"><div class="flex items-center justify-between"><a href="/" aria-label="Go to homepage"><svg class="h-6 w-auto text-base-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.1133 2.33154C17.8828 2.33155 22.7186 6.32972 24.001 11.7065C22.7186 17.0835 17.8829 21.0815 12.1133 21.0815C6.34377 21.0815 1.509 17.0833 0.226562 11.7065C1.50906 6.32984 6.34383 2.33157 12.1133 2.33154ZM12 8.00049C9.79089 8.00052 8 9.79137 8 12.0005C8.00026 14.2094 9.79105 16.0005 12 16.0005C14.209 16.0005 15.9997 14.2094 16 12.0005C16 9.79135 14.2091 8.00049 12 8.00049Z" fill="currentColor"></path></svg></a><div class="flex items-center gap-2"><button type="button" data-search-open aria-label="Search Curated" class="flex items-center justify-center size-8 rounded-lg text-base-600 hover:text-base-900 hover:bg-base-50 transition-colors duration-300 cursor-pointer shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" class="icon size-4"><path d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"></path></svg></button><button type="button" data-theme-toggle aria-label="Toggle dark mode" class="flex items-center justify-center size-8 rounded-lg text-base-600 hover:text-base-900 hover:bg-base-50 transition-colors duration-300 cursor-pointer shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" class="icon size-4 dark:hidden"><path d="M236.37,139.4a12,12,0,0,0-12-3A84.07,84.07,0,0,1,119.6,31.59a12,12,0,0,0-15-15A108.86,108.86,0,0,0,49.69,55.07,108,108,0,0,0,136,228a107.09,107.09,0,0,0,64.93-21.69,108.86,108.86,0,0,0,38.44-54.94A12,12,0,0,0,236.37,139.4Zm-49.88,47.74A84,84,0,0,1,68.86,69.51,84.93,84.93,0,0,1,92.27,48.29Q92,52.13,92,56A108.12,108.12,0,0,0,200,164q3.87,0,7.71-.27A84.79,84.79,0,0,1,186.49,187.14Z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" class="icon size-4 hidden dark:block"><path d="M116,36V20a12,12,0,0,1,24,0V36a12,12,0,0,1-24,0Zm80,92a68,68,0,1,1-68-68A68.07,68.07,0,0,1,196,128Zm-24,0a44,44,0,1,0-44,44A44.05,44.05,0,0,0,172,128ZM51.51,68.49a12,12,0,1,0,17-17l-12-12a12,12,0,0,0-17,17Zm0,119-12,12a12,12,0,0,0,17,17l12-12a12,12,0,1,0-17-17ZM196,72a12,12,0,0,0,8.49-3.51l12-12a12,12,0,0,0-17-17l-12,12A12,12,0,0,0,196,72Zm8.49,115.51a12,12,0,0,0-17,17l12,12a12,12,0,0,0,17-17ZM48,128a12,12,0,0,0-12-12H20a12,12,0,0,0,0,24H36A12,12,0,0,0,48,128Zm80,80a12,12,0,0,0-12,12v16a12,12,0,0,0,24,0V220A12,12,0,0,0,128,208Zm108-92H220a12,12,0,0,0,0,24h16a12,12,0,0,0,0-24Z"></path></svg></button><script>
+  document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+    if (button.dataset.themeBound) return;
+    button.dataset.themeBound = "true";
+    button.addEventListener("click", () => {
+      const dark = !document.documentElement.classList.contains("dark");
+      if (window.__applyTheme) window.__applyTheme(dark);
+      else document.documentElement.classList.toggle("dark", dark);
+      // A manual choice overrides auto mode; matching the system resets to auto
+      const system = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (dark === system) localStorage.removeItem("theme");
+      else localStorage.setItem("theme", dark ? "dark" : "light");
+    });
+  });
+</script><button class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-white bg-base-800 hover:bg-base-700 active:bg-base-600 focus-visible:outline-base-700 size-8 text-xs  rounded-lg" type="button" data-mobile-nav-toggle="true" aria-expanded="false" aria-label="Open menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" class="icon size-4" slot="icon"><path d="M228,160a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,160ZM40,108H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24Z"></path></svg></button></div></div></div><div class="hidden lg:hidden bg-white" data-mobile-nav-panel><div class="mx-auto px-8 max-w-[110rem] py-4"><div class="flex flex-col"><a class="text-lg font-medium py-1 border-b border-base-100 last:border-b-0 transition-colors duration-300 text-accent-600" aria-current="page" href="/">Websites</a><a class="text-lg font-medium py-1 border-b border-base-100 last:border-b-0 transition-colors duration-300 text-base-900" href="/sections/">Sections</a><a class="text-lg font-medium py-1 border-b border-base-100 last:border-b-0 transition-colors duration-300 text-base-900" href="/store/">Store</a><a class="text-lg font-medium py-1 border-b border-base-100 last:border-b-0 transition-colors duration-300 text-base-900" href="/pricing/">Pricing</a><a class="text-lg font-medium py-1 border-b border-base-100 last:border-b-0 transition-colors duration-300 text-base-900" href="/submit/">Submit</a><a class="text-lg font-medium py-1 border-b border-base-100 last:border-b-0 transition-colors duration-300 text-base-900" href="/advertise/">Sponsors</a><a class="text-lg font-medium py-1 border-b border-base-100 last:border-b-0 transition-colors duration-300 text-base-900" href="/studio/">Studio</a><a class="text-lg font-medium py-1 border-b border-base-100 last:border-b-0 transition-colors duration-300 text-base-900" href="/about/">About</a></div><div class="mt-8 flex items-center gap-2" data-auth-anonymous><a href="/signin/" class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-base-900 bg-base-50 hover:bg-base-100 active:bg-base-200 focus-visible:outline-base-300 h-8 px-4 py-3 text-xs  rounded-lg shrink-0" href="/signin/">Sign in</a><a href="/signup/" class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-white bg-base-800 hover:bg-base-700 active:bg-base-600 focus-visible:outline-base-700 h-8 px-4 py-3 text-xs  rounded-lg shrink-0" href="/signup/">Sign up</a></div><div class="mt-8 flex items-center gap-2 hidden" data-auth-user><a href="/dashboard/" class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-white bg-base-800 hover:bg-base-700 active:bg-base-600 focus-visible:outline-base-700 h-8 px-4 py-3 text-xs  rounded-lg shrink-0" href="/dashboard/">Dashboard</a><button class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-base-900 bg-base-50 hover:bg-base-100 active:bg-base-200 focus-visible:outline-base-300 h-8 px-4 py-3 text-xs  rounded-lg" type="button" data-auth-sign-out="true">Sign out</button></div></div></div></nav><script>
+  (() => {
+    const toggle = document.querySelector("[data-mobile-nav-toggle]");
+    const panel = document.querySelector("[data-mobile-nav-panel]");
+    if (!toggle || !panel) return;
+    const close = () => {
+      panel.classList.add("hidden");
+      toggle.setAttribute("aria-expanded", "false");
+    };
+    const open = () => {
+      panel.classList.remove("hidden");
+      toggle.setAttribute("aria-expanded", "true");
+    };
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      if (isOpen) close();
+      else open();
+    });
+    document.addEventListener("click", (e) => {
+      if (!panel.contains(e.target) && !toggle.contains(e.target)) {
+        close();
+      }
+    });
+  })();
+</script><nav class="fixed w-full top-0 z-20 py-4 hidden lg:block" data-auth-root data-auth-state="anonymous"><div class="progressive-blur" aria-hidden="true" data-astro-cid-lr5vypn3><div data-astro-cid-lr5vypn3></div><div data-astro-cid-lr5vypn3></div><div data-astro-cid-lr5vypn3></div><div data-astro-cid-lr5vypn3></div><div data-astro-cid-lr5vypn3></div></div><div class="mx-auto px-8 max-w-[110rem]"><div class="flex items-center justify-between w-full gap-6 relative"><a href="/" class="shrink-0 foucs:outline-none" aria-label="Go to homepage"><svg class="h-6 w-auto text-base-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.1133 2.33154C17.8828 2.33155 22.7186 6.32972 24.001 11.7065C22.7186 17.0835 17.8829 21.0815 12.1133 21.0815C6.34377 21.0815 1.509 17.0833 0.226562 11.7065C1.50906 6.32984 6.34383 2.33157 12.1133 2.33154ZM12 8.00049C9.79089 8.00052 8 9.79137 8 12.0005C8.00026 14.2094 9.79105 16.0005 12 16.0005C14.209 16.0005 15.9997 14.2094 16 12.0005C16 9.79135 14.2091 8.00049 12 8.00049Z" fill="currentColor"></path></svg></a><div class="flex items-center gap-2 xl:gap-3 ml-auto"><div class="flex items-center gap-3 xl:gap-4"><a class="text-[13px] whitespace-nowrap transition-colors duration-300 text-base-900 font-medium" aria-current="page" href="/">Websites</a><a class="text-[13px] whitespace-nowrap transition-colors duration-300 text-base-600 hover:text-base-900" href="/sections/">Sections</a><a class="text-[13px] whitespace-nowrap transition-colors duration-300 text-base-600 hover:text-base-900" href="/store/">Store</a><a class="text-[13px] whitespace-nowrap transition-colors duration-300 text-base-600 hover:text-base-900" href="/pricing/">Pricing</a><a class="text-[13px] whitespace-nowrap transition-colors duration-300 text-base-600 hover:text-base-900" href="/submit/">Submit</a><a class="text-[13px] whitespace-nowrap transition-colors duration-300 text-base-600 hover:text-base-900" href="/advertise/">Sponsors</a><a class="text-[13px] whitespace-nowrap transition-colors duration-300 text-base-600 hover:text-base-900" href="/studio/">Studio</a><a class="text-[13px] whitespace-nowrap transition-colors duration-300 text-base-600 hover:text-base-900" href="/about/">About</a></div><!-- The dialog answers ⌘K on every page; this is that shortcut for
+             everyone who reaches for a mouse first. --><button type="button" data-search-open aria-label="Search Curated" title="Search (⌘K)" class="flex items-center gap-1.5 h-8 pl-2.5 pr-2 rounded-lg text-base-600 hover:text-base-900 hover:bg-base-50 transition-colors duration-300 cursor-pointer shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" class="icon size-4"><path d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"></path></svg><span class="text-[10px] leading-none rounded bg-base-50 px-1 py-1 hidden xl:inline">⌘K</span></button><button type="button" data-theme-toggle aria-label="Toggle dark mode" class="flex items-center justify-center size-8 rounded-lg text-base-600 hover:text-base-900 hover:bg-base-50 transition-colors duration-300 cursor-pointer shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" class="icon size-4 dark:hidden"><path d="M236.37,139.4a12,12,0,0,0-12-3A84.07,84.07,0,0,1,119.6,31.59a12,12,0,0,0-15-15A108.86,108.86,0,0,0,49.69,55.07,108,108,0,0,0,136,228a107.09,107.09,0,0,0,64.93-21.69,108.86,108.86,0,0,0,38.44-54.94A12,12,0,0,0,236.37,139.4Zm-49.88,47.74A84,84,0,0,1,68.86,69.51,84.93,84.93,0,0,1,92.27,48.29Q92,52.13,92,56A108.12,108.12,0,0,0,200,164q3.87,0,7.71-.27A84.79,84.79,0,0,1,186.49,187.14Z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" class="icon size-4 hidden dark:block"><path d="M116,36V20a12,12,0,0,1,24,0V36a12,12,0,0,1-24,0Zm80,92a68,68,0,1,1-68-68A68.07,68.07,0,0,1,196,128Zm-24,0a44,44,0,1,0-44,44A44.05,44.05,0,0,0,172,128ZM51.51,68.49a12,12,0,1,0,17-17l-12-12a12,12,0,0,0-17,17Zm0,119-12,12a12,12,0,0,0,17,17l12-12a12,12,0,1,0-17-17ZM196,72a12,12,0,0,0,8.49-3.51l12-12a12,12,0,0,0-17-17l-12,12A12,12,0,0,0,196,72Zm8.49,115.51a12,12,0,0,0-17,17l12,12a12,12,0,0,0,17-17ZM48,128a12,12,0,0,0-12-12H20a12,12,0,0,0,0,24H36A12,12,0,0,0,48,128Zm80,80a12,12,0,0,0-12,12v16a12,12,0,0,0,24,0V220A12,12,0,0,0,128,208Zm108-92H220a12,12,0,0,0,0,24h16a12,12,0,0,0,0-24Z"></path></svg></button><script>
+  document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+    if (button.dataset.themeBound) return;
+    button.dataset.themeBound = "true";
+    button.addEventListener("click", () => {
+      const dark = !document.documentElement.classList.contains("dark");
+      if (window.__applyTheme) window.__applyTheme(dark);
+      else document.documentElement.classList.toggle("dark", dark);
+      // A manual choice overrides auto mode; matching the system resets to auto
+      const system = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (dark === system) localStorage.removeItem("theme");
+      else localStorage.setItem("theme", dark ? "dark" : "light");
+    });
+  });
+</script><div class="flex items-center gap-2" data-auth-anonymous><a href="/signin/" class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-base-900 bg-base-50 hover:bg-base-100 active:bg-base-200 focus-visible:outline-base-300 h-8 px-4 py-3 text-xs  rounded-lg shrink-0 text-[13px]" href="/signin/">Sign in</a><a href="/signup/" class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-white bg-base-800 hover:bg-base-700 active:bg-base-600 focus-visible:outline-base-700 h-8 px-4 py-3 text-xs  rounded-lg shrink-0 text-[13px]" href="/signup/">Sign up</a></div><div class="flex items-center gap-2 hidden" data-auth-user><a href="/dashboard/" class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-white bg-base-800 hover:bg-base-700 active:bg-base-600 focus-visible:outline-base-700 h-8 px-4 py-3 text-xs  rounded-lg shrink-0 text-[13px]" href="/dashboard/">Dashboard</a><button class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-base-900 bg-base-50 hover:bg-base-100 active:bg-base-200 focus-visible:outline-base-300 h-8 px-4 py-3 text-xs  rounded-lg text-[13px]" type="button" data-auth-sign-out="true">Sign out</button></div></div></div></div></nav><script>
+  (() => {
+    const roots = [...document.querySelectorAll("[data-auth-root]")];
+    if (!roots.length) return;
+
+    const render = (signedIn) => {
+      roots.forEach((root) => {
+        root.dataset.authState = signedIn ? "user" : "anonymous";
+        root
+          .querySelectorAll("[data-auth-anonymous]")
+          .forEach((element) => element.classList.toggle("hidden", signedIn));
+        root
+          .querySelectorAll("[data-auth-user]")
+          .forEach((element) => element.classList.toggle("hidden", !signedIn));
+      });
+    };
+
+    document.querySelectorAll("[data-auth-sign-out]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        button.disabled = true;
+        await fetch("/api/auth/sign-out/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: "{}",
+        }).catch(() => {});
+        window.curatedAnalytics?.capture("sign_out_succeeded");
+        window.posthog?.reset?.();
+        location.href = "/";
+      });
+    });
+
+    if (roots.some((root) => root.dataset.authState === "user")) {
+      render(true);
+      return;
+    }
+
+    fetch("/api/auth/get-session/", { headers: { accept: "application/json" } })
+      .then((response) => (response.ok ? response.json() : null))
+      .then((session) => render(Boolean(session?.user)))
+      .catch(() => render(false));
+  })();
+</script><main class="grow"><div class="relative p-4"><div class="fixed bottom-6 left-1/2 w-full justify-center -translate-x-1/2 z-40 flex bg-base-100 max-w-xs p-2 rounded-xl"><button type="button" data-search-open class="mx-auto flex gap-2 items-center w-full px-4 text-xs text-left leading-tight h-9 rounded-lg bg-white text-base-600 hover:text-base-900 focus:outline-none transition-colors duration-300 cursor-pointer" aria-label="Search websites, sections and templates"><span class="sr-only">Search</span>Search Curated<span class="flex gap-0.5 items-center ml-auto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" class="icon size-4"><path d="M180,140H164V116h16a40,40,0,1,0-40-40V92H116V76a40,40,0,1,0-40,40H92v24H76a40,40,0,1,0,40,40V164h24v16a40,40,0,1,0,40-40ZM164,76a16,16,0,1,1,16,16H164ZM60,76a16,16,0,0,1,32,0V92H76A16,16,0,0,1,60,76ZM92,180a16,16,0,1,1-16-16H92Zm24-64h24v24H116Zm64,80a16,16,0,0,1-16-16V164h16a16,16,0,0,1,0,32Z"></path></svg>K</span></button></div></div><div id="searchModal" class="fixed inset-0 z-50 overflow-y-auto hidden" role="dialog" aria-modal="true" aria-label="Search Curated"><div class="min-h-screen px-4 text-center"><div class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity" data-search-close></div><div class="inline-block w-full max-w-2xl mb-8 mt-12 lg:mt-32 bg-white rounded-xl text-left align-middle relative overflow-hidden"><div class="relative border-b border-base-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" class="icon size-4 absolute left-5 top-1/2 -translate-y-1/2 text-base-400 pointer-events-none"><path d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"></path></svg><input type="text" id="searchInput" role="combobox" aria-expanded="true" aria-controls="searchResults" aria-autocomplete="list" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Search websites, sections and templates..." class="block w-full h-14 pl-12 pr-12 text-sm bg-transparent text-base-900 placeholder-base-400 border-0 ring-0 shadow-none focus:ring-0 focus:outline-none"><span data-search-busy aria-hidden="true" class="hidden absolute right-5 top-1/2 -translate-y-1/2 size-3.5 rounded-full border border-base-300 border-t-transparent animate-spin"></span></div><div class="flex items-center gap-4 px-5 pt-3" role="group" aria-label="Filter results by kind"><button type="button" data-scope="all" aria-pressed="true" class="text-xs whitespace-nowrap transition-colors duration-300 cursor-pointer text-base-500 hover:text-base-900 aria-pressed:text-base-900">All<span data-scope-count class="ml-1 tabular-nums text-base-400"></span></button><button type="button" data-scope="site" aria-pressed="false" class="text-xs whitespace-nowrap transition-colors duration-300 cursor-pointer text-base-500 hover:text-base-900 aria-pressed:text-base-900">Websites<span data-scope-count class="ml-1 tabular-nums text-base-400"></span></button><button type="button" data-scope="section" aria-pressed="false" class="text-xs whitespace-nowrap transition-colors duration-300 cursor-pointer text-base-500 hover:text-base-900 aria-pressed:text-base-900">Sections<span data-scope-count class="ml-1 tabular-nums text-base-400"></span></button><button type="button" data-scope="template" aria-pressed="false" class="text-xs whitespace-nowrap transition-colors duration-300 cursor-pointer text-base-500 hover:text-base-900 aria-pressed:text-base-900">Templates<span data-scope-count class="ml-1 tabular-nums text-base-400"></span></button></div><div id="searchResults" role="listbox" aria-label="Search results" class="w-full px-2 pb-2 max-h-[min(60vh,28rem)] overflow-y-auto scrollbar-hide"></div><div class="hidden sm:flex items-center gap-3 px-5 py-3 border-t border-base-100 text-[11px] text-base-400"><span>↑↓ navigate</span><span>↵ open</span><span class="ml-auto">esc close</span></div></div></div></div><script type="module" src="/_astro/Search.astro_astro_type_script_index_0_lang.y90UscUw.js?dpl=dpl_9JwvNUengGPoj4MKPSVdxBZaFaVP"></script><section><div class="mx-auto px-8 max-w-[110rem] pt-24 lg:pt-32"><div class="text-balance max-w-3xl mx-auto text-center"><h1 class="text-3xl  sm:text-3xl md:text-4xl lg:text-5xl text-base-900 font-display font-light"><span class="block">Handpicked websites</span><span class="block">worth studying.</span></h1><p class="text-base text-base-600 mt-4">A growing gallery of live sites, sorted by industry and style.</p></div></div></section><script>async function replaceServerIsland(id, r) { let s = document.querySelector(`script[data-island-id="${id}"]`); if (!s || r.status !== 200 || r.headers.get('content-type')?.split(';')[0].trim() !== 'text/html') return; let html = await r.text(); while (s.previousSibling && s.previousSibling.nodeType !== 8 && s.previousSibling.data !== '[if astro]>server-island-start<![endif]') s.previousSibling.remove(); s.previousSibling?.remove(); s.before(document.createRange().createContextualFragment(html)); s.remove(); }</script><!--[if astro]>server-island-start<![endif]--><section aria-label="Loading websites" aria-busy="true"><div class="mx-auto px-8 max-w-[110rem] py-24"><span class="sr-only">Loading websites…</span><div class="flex gap-1 py-2 overflow-hidden motion-safe:animate-pulse" aria-hidden="true"><span class="h-7 shrink-0 rounded-md bg-base-100 w-16"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-24"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-20"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-28"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-16"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-24"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-20"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-32"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-24"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-16"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-28"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-20"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-24"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-16"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-28"></span><span class="h-7 shrink-0 rounded-md bg-base-100 w-20"></span></div><div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 grid-cards mt-8" aria-hidden="true"><div class="motion-safe:animate-pulse"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse hidden md:block"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse hidden md:block"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse hidden md:block"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse hidden md:block"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse hidden lg:block"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse hidden lg:block"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse hidden lg:block"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div><div class="motion-safe:animate-pulse hidden lg:block"><div class="rounded-lg overflow-hidden"><div class="aspect-video w-full bg-base-100"></div></div><div class="mt-3 h-4 w-2/5 rounded bg-base-100"></div></div></div></div></section><script type="module" data-astro-rerun data-island-id="a563ce06-0952-4425-8776-13bd2233b951">const headers = new Headers({"x-deployment-id":"dpl_9JwvNUengGPoj4MKPSVdxBZaFaVP"});
+let response = await fetch("/_server-islands/SitesPreview/?e=76E325B5240FF2A4494700EDNpNqDQnGGvm%2BrQ0liZkAQUzkvEdeAtc%3D&p=&s=", { headers });replaceServerIsland("a563ce06-0952-4425-8776-13bd2233b951", response);</script><section><div class="mx-auto px-8 max-w-[110rem] py-24"><div class="flex flex-wrap gap-4 justify-between items-center"><h2 class="text-lg  sm:text-xl md:text-2xl lg:text-3xl text-base-900 font-display font-thin">Our latest templates</h2><a href="/store/" class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-base-900 bg-base-50 hover:bg-base-100 active:bg-base-200 focus-visible:outline-base-300 h-9 px-4 py-3 text-sm rounded-lg" href="/store/">See them all!</a></div><div class="grid-rows-3-4 is-featured-row gap-5 mt-12"><article class="card-lift relative"><a href="/store/nordhjem-vacation-rental-framer-template/" title="Nordhjem Vacation Rental" class="absolute inset-0 z-10" aria-label="View Nordhjem Vacation Rental" data-curated-product-link data-product-slug="nordhjem-vacation-rental-framer-template" data-product-placement="curated_home_latest_templates" data-analytics-label="Nordhjem Vacation Rental"></a><div class="card-media overflow-hidden rounded-lg bg-base-50"><div data-media-frame class="aspect-4/3 w-full"><span class="media-skeleton" aria-hidden="true"></span><img src="https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/884a1b1e-dcf0-4807-a9ee-6744b6633e10/Framer_2400x1800_01.jpg?width=800" srcset="https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/884a1b1e-dcf0-4807-a9ee-6744b6633e10/Framer_2400x1800_01.jpg?width=480 480w, https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/884a1b1e-dcf0-4807-a9ee-6744b6633e10/Framer_2400x1800_01.jpg?width=800 800w, https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/884a1b1e-dcf0-4807-a9ee-6744b6633e10/Framer_2400x1800_01.jpg?width=1200 1200w" sizes="(min-width: 1024px) 32vw, (min-width: 768px) 46vw, 92vw" alt="Nordhjem Vacation Rental preview" width="800" height="600" loading="eager" decoding="sync" fetchpriority="high" class="media-in size-full object-cover"></div></div><div class="pt-3"><div class="flex items-start justify-between gap-4"><h3 class="text-sm  font-medium text-base-900">Nordhjem Vacation Rental</h3><span class="text-sm  shrink-0 text-base-600">Free</span></div><p class="text-sm  mt-1 line-clamp-2 text-base-600">A one page rental site that answers everything a guest checks before booking.</p><p class="text-xs  mt-2 text-base-500">by Pixco on Craftwork</p></div></article><article class="card-lift relative"><a href="/store/aromatic-saas-startup-framer-template/" title="Aromatic SaaS Startup" class="absolute inset-0 z-10" aria-label="View Aromatic SaaS Startup" data-curated-product-link data-product-slug="aromatic-saas-startup-framer-template" data-product-placement="curated_home_latest_templates" data-analytics-label="Aromatic SaaS Startup"></a><div class="card-media overflow-hidden rounded-lg bg-base-50"><div data-media-frame class="aspect-4/3 w-full"><span class="media-skeleton" aria-hidden="true"></span><img src="https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/f5edbc1b-ca20-43e4-af5f-eddfd04666cf/Framer_2400x1800_01.jpg?width=800" srcset="https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/f5edbc1b-ca20-43e4-af5f-eddfd04666cf/Framer_2400x1800_01.jpg?width=480 480w, https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/f5edbc1b-ca20-43e4-af5f-eddfd04666cf/Framer_2400x1800_01.jpg?width=800 800w, https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/f5edbc1b-ca20-43e4-af5f-eddfd04666cf/Framer_2400x1800_01.jpg?width=1200 1200w" sizes="(min-width: 1024px) 32vw, (min-width: 768px) 46vw, 92vw" alt="Aromatic SaaS Startup preview" width="800" height="600" loading="eager" decoding="sync" fetchpriority="high" class="media-in size-full object-cover"></div></div><div class="pt-3"><div class="flex items-start justify-between gap-4"><h3 class="text-sm  font-medium text-base-900">Aromatic SaaS Startup</h3><span class="text-sm  shrink-0 text-base-600">Free</span></div><p class="text-sm  mt-1 line-clamp-2 text-base-600">A SaaS marketing site that explains the product, answers the obvious questions and moves people to a trial.00</p><p class="text-xs  mt-2 text-base-500">by Pixco on Craftwork</p></div></article><article class="card-lift relative"><a href="/store/kosmetisk-beauty-salon-framer-template/" title="Kosmetisk Beauty Salon" class="absolute inset-0 z-10" aria-label="View Kosmetisk Beauty Salon" data-curated-product-link data-product-slug="kosmetisk-beauty-salon-framer-template" data-product-placement="curated_home_latest_templates" data-analytics-label="Kosmetisk Beauty Salon"></a><div class="card-media overflow-hidden rounded-lg bg-base-50"><div data-media-frame class="aspect-4/3 w-full"><span class="media-skeleton" aria-hidden="true"></span><img src="https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/27989bd3-63be-4837-b43c-18dac3badc2d/Awwwards_1600x1200_01.jpg?width=800" srcset="https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/27989bd3-63be-4837-b43c-18dac3badc2d/Awwwards_1600x1200_01.jpg?width=480 480w, https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/27989bd3-63be-4837-b43c-18dac3badc2d/Awwwards_1600x1200_01.jpg?width=800 800w, https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/27989bd3-63be-4837-b43c-18dac3badc2d/Awwwards_1600x1200_01.jpg?width=1200 1200w" sizes="(min-width: 1024px) 32vw, (min-width: 768px) 46vw, 92vw" alt="Kosmetisk Beauty Salon preview" width="800" height="600" loading="eager" decoding="sync" fetchpriority="high" class="media-in size-full object-cover"></div></div><div class="pt-3"><div class="flex items-start justify-between gap-4"><h3 class="text-sm  font-medium text-base-900">Kosmetisk Beauty Salon</h3><span class="text-sm  shrink-0 text-base-600">from $99</span></div><p class="text-sm  mt-1 line-clamp-2 text-base-600">A booking-ready website for beauty clinics, hair salons, spas and wellness studios.</p><p class="text-xs  mt-2 text-base-500">by Pixco on Craftwork</p></div></article><article class="card-lift relative"><a href="/store/swiper-fintech-saas-framer-template/" title="Swiper Fintech SaaS Framer Template" class="absolute inset-0 z-10" aria-label="View Swiper Fintech SaaS Framer Template" data-curated-product-link data-product-slug="swiper-fintech-saas-framer-template" data-product-placement="curated_home_latest_templates" data-analytics-label="Swiper Fintech SaaS Framer Template"></a><div class="card-media overflow-hidden rounded-lg bg-base-50"><div data-media-frame class="aspect-4/3 w-full"><span class="media-skeleton" aria-hidden="true"></span><img src="https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/b9ad95ca-09da-44ac-a79f-1bad3a2ef186/Awwwards_1600x1200_01.jpg?width=800" srcset="https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/b9ad95ca-09da-44ac-a79f-1bad3a2ef186/Awwwards_1600x1200_01.jpg?width=480 480w, https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/b9ad95ca-09da-44ac-a79f-1bad3a2ef186/Awwwards_1600x1200_01.jpg?width=800 800w, https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/b9ad95ca-09da-44ac-a79f-1bad3a2ef186/Awwwards_1600x1200_01.jpg?width=1200 1200w" sizes="(min-width: 1024px) 32vw, (min-width: 768px) 46vw, 92vw" alt="Swiper Fintech SaaS Framer Template preview" width="800" height="600" loading="lazy" decoding="async" fetchpriority="auto" class="media-in size-full object-cover"></div></div><div class="pt-3"><div class="flex items-start justify-between gap-4"><h3 class="text-sm  font-medium text-base-900">Swiper Fintech SaaS Framer Template</h3><span class="text-sm  shrink-0 text-base-600">Free</span></div><p class="text-sm  mt-1 line-clamp-2 text-base-600">A complete fintech website with a real product UI, a working pricing table and a full dark mode.</p><p class="text-xs  mt-2 text-base-500">by Pixco on Craftwork</p></div></article><article class="card-lift relative"><a href="/store/kierkegaard-portfolio-framer-template/" title="Kierkegaard Portfolio Framer Template" class="absolute inset-0 z-10" aria-label="View Kierkegaard Portfolio Framer Template" data-curated-product-link data-product-slug="kierkegaard-portfolio-framer-template" data-product-placement="curated_home_latest_templates" data-analytics-label="Kierkegaard Portfolio Framer Template"></a><div class="card-media overflow-hidden rounded-lg bg-base-50"><div data-media-frame class="aspect-4/3 w-full"><span class="media-skeleton" aria-hidden="true"></span><img src="https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/b4a65de7-2964-48e3-9b3f-e3e01d57716b/Awwwards_1600x1200_01.jpg?width=800" srcset="https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/b4a65de7-2964-48e3-9b3f-e3e01d57716b/Awwwards_1600x1200_01.jpg?width=480 480w, https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/b4a65de7-2964-48e3-9b3f-e3e01d57716b/Awwwards_1600x1200_01.jpg?width=800 800w, https://marketstorage.b-cdn.net/users/SSEnyowxYebOLM3JygdqpHniTDoGb8gT/previews/b4a65de7-2964-48e3-9b3f-e3e01d57716b/Awwwards_1600x1200_01.jpg?width=1200 1200w" sizes="(min-width: 1024px) 32vw, (min-width: 768px) 46vw, 92vw" alt="Kierkegaard Portfolio Framer Template preview" width="800" height="600" loading="lazy" decoding="async" fetchpriority="auto" class="media-in size-full object-cover"></div></div><div class="pt-3"><div class="flex items-start justify-between gap-4"><h3 class="text-sm  font-medium text-base-900">Kierkegaard Portfolio Framer Template</h3><span class="text-sm  shrink-0 text-base-600">Free</span></div><p class="text-sm  mt-1 line-clamp-2 text-base-600">A Nordic portfolio site for boutique studios, agencies and creatives who would rather show than shout.</p><p class="text-xs  mt-2 text-base-500">by Pixco on Craftwork</p></div></article><article class="card-lift relative"><a href="/store/interactive-coming-soon-page-template/" title="Interactive Coming Soon Page" class="absolute inset-0 z-10" aria-label="View Interactive Coming Soon Page" data-curated-product-link data-product-slug="interactive-coming-soon-page-template" data-product-placement="curated_home_latest_templates" data-analytics-label="Interactive Coming Soon Page"></a><div class="card-media overflow-hidden rounded-lg bg-base-50"><div class="aspect-4/3 w-full bg-base-100" aria-hidden="true"></div></div><div class="pt-3"><div class="flex items-start justify-between gap-4"><h3 class="text-sm  font-medium text-base-900">Interactive Coming Soon Page</h3><span class="text-sm  shrink-0 text-base-600">Free</span></div><p class="text-sm  mt-1 line-clamp-2 text-base-600">A bold, interactive coming soon page template with infinite scrolling, vertical image loops, smooth animations, and a minimal black, white, and red design.</p><p class="text-xs  mt-2 text-base-500">by Iconic Graphics on Craftwork</p></div></article><article class="card-lift relative"><a href="/store/dentara/" title="Dentara " class="absolute inset-0 z-10" aria-label="View Dentara " data-curated-product-link data-product-slug="dentara" data-product-placement="curated_home_latest_templates" data-analytics-label="Dentara "></a><div class="card-media overflow-hidden rounded-lg bg-base-50"><div data-media-frame class="aspect-4/3 w-full"><span class="media-skeleton" aria-hidden="true"></span><img src="https://marketstorage.b-cdn.net/users/9766c201-9ab9-4d4f-b7fd-870cb4e9661c/previews/e3bb9696-94dc-40f5-8f46-7b1dc0665d2e/Image-48-1.png?width=800" srcset="https://marketstorage.b-cdn.net/users/9766c201-9ab9-4d4f-b7fd-870cb4e9661c/previews/e3bb9696-94dc-40f5-8f46-7b1dc0665d2e/Image-48-1.png?width=480 480w, https://marketstorage.b-cdn.net/users/9766c201-9ab9-4d4f-b7fd-870cb4e9661c/previews/e3bb9696-94dc-40f5-8f46-7b1dc0665d2e/Image-48-1.png?width=800 800w, https://marketstorage.b-cdn.net/users/9766c201-9ab9-4d4f-b7fd-870cb4e9661c/previews/e3bb9696-94dc-40f5-8f46-7b1dc0665d2e/Image-48-1.png?width=1200 1200w" sizes="(min-width: 1024px) 32vw, (min-width: 768px) 46vw, 92vw" alt="Dentara  preview" width="800" height="600" loading="lazy" decoding="async" fetchpriority="auto" class="media-in size-full object-cover"></div></div><div class="pt-3"><div class="flex items-start justify-between gap-4"><h3 class="text-sm  font-medium text-base-900">Dentara </h3><span class="text-sm  shrink-0 text-base-600">Free</span></div><p class="text-sm  mt-1 line-clamp-2 text-base-600">Dentara is a modern Framer template built for dental clinics, professional dentists, and healthcare practice owners.</p><p class="text-xs  mt-2 text-base-500">by Flowgen Studio on Craftwork</p></div></article></div><div class="mt-12 flex justify-center"><a href="/store/" class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-base-900 bg-base-50 hover:bg-base-100 active:bg-base-200 focus-visible:outline-base-300 h-9 px-4 py-3 text-sm rounded-lg px-6" href="/store/" data-analytics-label="Browse all Framer templates from home">Browse all templates</a></div></div></section></main><footer class="bg-base-50 overflow-hidden"><div class="mx-auto px-8 max-w-[110rem] py-24"><div class="max-w-2xl mx-auto"><div class="text-center text-balance"><svg class="inline-block size-12 text-base-900" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 0C33.6306 0 38.4462 0.000251249 41.9053 2.31152C43.4025 3.31199 44.688 4.5975 45.6885 6.09473C47.9998 9.55379 48 14.3694 48 24C48 33.6306 47.9998 38.4462 45.6885 41.9053C44.688 43.4025 43.4025 44.688 41.9053 45.6885C38.4462 47.9998 33.6306 48 24 48C14.3694 48 9.55379 47.9998 6.09473 45.6885C4.5975 44.688 3.31199 43.4025 2.31152 41.9053C0.000251249 38.4462 0 33.6306 0 24C0 14.3694 0.000251325 9.55379 2.31152 6.09473C3.31199 4.59751 4.59751 3.31199 6.09473 2.31152C9.55379 0.000251325 14.3694 0 24 0ZM23.9971 9.25977C14.6791 9.25997 6.86941 15.5459 4.79785 23.999C6.86885 32.453 14.6786 38.74 23.9971 38.7402C33.3157 38.7402 41.1242 32.453 43.1953 23.999C41.1236 15.5459 33.315 9.25984 23.9971 9.25977ZM23.8809 18.1172C27.3908 18.1172 30.2362 20.887 30.2363 24.3037C30.2363 27.7205 27.3908 30.4902 23.8809 30.4902C20.3711 30.49 17.5254 27.7204 17.5254 24.3037C17.5255 20.8871 20.3711 18.1174 23.8809 18.1172Z" fill="currentColor"></path></svg><h2 class="text-3xl  sm:text-3xl md:text-4xl lg:text-5xl text-base-900 font-display font-light mt-12">One email a week, with the best of what came in</h2></div><form class="flex flex-col gap-2 max-w-md mx-auto items-start sm:items-center mt-8" id="newsletter-form" novalidate><label class="sr-only" for="footer-email">Email address</label><input id="footer-email" name="email" type="email" autocomplete="email" autocapitalize="none" spellcheck="false" maxlength="254" placeholder="you@example.com" class="block w-full h-10 px-4 text-sm rounded-lg bg-white text-base-900 placeholder-base-600 border-0 ring-0 shadow-none focus:ring-0 focus:outline-none transition-colors duration-300" required><input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true"><button class="flex justify-center text-center font-medium items-center duration-500 ease-in-out transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline-inset text-on-accent bg-accent-600 hover:bg-accent-500 active:bg-accent-400 focus-visible:outline-accent-500 h-9 px-4 py-3 text-sm rounded-lg w-full disabled:cursor-not-allowed disabled:opacity-50" animated="true" withArrow="true" type="submit" data-newsletter-submit="true">Subscribe</button><p class="hidden w-full text-center text-sm text-base-600" role="status" aria-live="polite" data-newsletter-message></p></form><div class="text-center mt-12"><p class="text-sm  text-base-600 text-balance">Want a site like the ones in here? The team behind Curated designs and builds them, one page at a time, at <a href="/studio/" class="text-base-900 underline underline-offset-2 hover:text-accent-600">Curated Studio</a>.</p></div><div class="flex flex-wrap gap-4 mt-8 justify-center"><a href="/inspiration/" class="text-base-600 hover:text-accent-600">Browse by style</a><a href="/changelog/" class="text-base-600 hover:text-accent-600">Changelog</a><a href="https://x.com/CuratedDesignHQ" class="text-base-600 hover:text-accent-600">X (Twitter)</a><a href="https://dribbble.com/Craftwork/" class="text-base-600 hover:text-accent-600">Dribbble</a><a href="https://www.instagram.com/craftwork.design/" class="text-base-600 hover:text-accent-600">Instagram</a><a href="/legal/privacy/" class="text-base-600 hover:text-accent-600">Privacy</a><a href="/legal/terms/" class="text-base-600 hover:text-accent-600">Terms</a></div></div></div><svg class="text-base-100 mt-8 -mx-24 -mb-24" viewBox="0 0 362 84" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="0" y="68" font-family="Hedvig Letters Serif, serif" font-size="78" font-weight="300" letter-spacing="-2" textLength="360" lengthAdjust="spacingAndGlyphs" fill="currentColor">Curated</text></svg></footer><script>
+  (() => {
+    const form = document.getElementById("newsletter-form");
+    if (!form) return;
+
+    const input = form.querySelector('input[name="email"]');
+    const submit = form.querySelector("[data-newsletter-submit]");
+    const message = form.querySelector("[data-newsletter-message]");
+    const storageKey = "curated:newsletter:last-subscription-at";
+    const cooldown = 24 * 60 * 60 * 1000;
+
+    const readLastSubscription = () => {
+      try {
+        return Number(localStorage.getItem(storageKey) || 0);
+      } catch {
+        return 0;
+      }
+    };
+    const rememberSubscription = () => {
+      try {
+        localStorage.setItem(storageKey, String(Date.now()));
+      } catch {
+        // Privacy mode can disable storage; the database still deduplicates.
+      }
+    };
+    const showMessage = (text, isError = false) => {
+      message.textContent = text;
+      message.classList.remove("hidden", "text-accent-600", "text-base-600");
+      message.classList.add(isError ? "text-accent-600" : "text-base-600");
+    };
+    const setDisabled = (disabled) => {
+      input.disabled = disabled;
+      submit.disabled = disabled;
+    };
+    const applyCooldown = () => {
+      const remaining = cooldown - (Date.now() - readLastSubscription());
+      if (remaining <= 0) return false;
+      const hours = Math.max(1, Math.ceil(remaining / (60 * 60 * 1000)));
+      setDisabled(true);
+      showMessage(`You can subscribe again in ${hours}h.`);
+      return true;
+    };
+
+    applyCooldown();
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (applyCooldown()) return;
+
+      const email = input.value.trim().toLowerCase();
+      if (
+        email.length > 254 ||
+        !/^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)+$/i.test(
+          email
+        )
+      ) {
+        showMessage("Enter a valid email address.", true);
+        return;
+      }
+
+      setDisabled(true);
+      showMessage("Subscribing…");
+      try {
+        const response = await fetch("/api/newsletter/subscribe/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email,
+            website: new FormData(form).get("website"),
+          }),
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok) throw new Error(result.message || "Subscription failed.");
+
+        rememberSubscription();
+        input.value = "";
+        setDisabled(true);
+        showMessage(result.message || "You're subscribed. Welcome to Curated.");
+        window.curatedAnalytics?.capture("newsletter_subscribed", {
+          placement: "footer",
+        });
+      } catch (error) {
+        setDisabled(false);
+        showMessage(error.message || "Could not subscribe. Try again.", true);
+        window.curatedAnalytics?.capture("newsletter_subscription_failed", {
+          placement: "footer",
+        });
+      }
+    });
+  })();
+</script><script>(function(){const websiteId = "635edca3-a53f-44e7-97da-03f3696c8994";
+const email = null;
+const name = null;
+
+      (() => {
+        if (window.__curatedCrispInitialized) return;
+        window.__curatedCrispInitialized = true;
+
+        window.$crisp = window.$crisp || [];
+        window.CRISP_WEBSITE_ID = websiteId;
+        if (email) window.$crisp.push(["set", "user:email", [email]]);
+        if (name) window.$crisp.push(["set", "user:nickname", [name]]);
+
+        let loaded = false;
+        let fallbackTimer;
+        let idleHandle;
+        const interactionEvents = ["scroll", "touchstart", "click", "keydown"];
+
+        const removeInteractionListeners = () => {
+          interactionEvents.forEach((event) =>
+            window.removeEventListener(event, handleInteraction)
+          );
+        };
+        const cancelFallback = () => {
+          window.clearTimeout(fallbackTimer);
+          if (idleHandle && "cancelIdleCallback" in window) {
+            window.cancelIdleCallback(idleHandle);
+          }
+        };
+        const load = () => {
+          if (loaded || document.querySelector('script[data-curated-crisp]')) return;
+          loaded = true;
+          cancelFallback();
+          removeInteractionListeners();
+          const script = document.createElement("script");
+          script.src = "https://client.crisp.chat/l.js";
+          script.async = true;
+          script.dataset.curatedCrisp = "";
+          document.head.append(script);
+        };
+        function handleInteraction() {
+          load();
+        }
+
+        interactionEvents.forEach((event) =>
+          window.addEventListener(event, handleInteraction, { passive: true })
+        );
+        fallbackTimer = window.setTimeout(() => {
+          if ("requestIdleCallback" in window) {
+            idleHandle = window.requestIdleCallback(load, { timeout: 5000 });
+          } else {
+            load();
+          }
+        }, 15000);
+      })();
+    })();</script><script>
+      // Card media stays behind a fixed-size skeleton until the browser has
+      // fully decoded it. The observer also covers cards injected by filters
+      // and Show more after the initial document has loaded.
+      (() => {
+        const markReady = (el) => {
+          el.classList.add("loaded");
+          el.closest("[data-media-frame]")?.classList.add("media-ready");
+        };
+        const reveal = (el) => {
+          if (el instanceof HTMLImageElement && typeof el.decode === "function") {
+            void el.decode().catch(() => {}).finally(() => markReady(el));
+            return;
+          }
+          markReady(el);
+        };
+        const wire = (el, isReady, readyEvent) => {
+          if (el.dataset.mediaWired !== undefined) return;
+          el.dataset.mediaWired = "";
+          if (isReady()) return reveal(el);
+          el.classList.add("pending");
+          el.addEventListener(readyEvent, () => reveal(el), { once: true });
+          // A file the browser cannot draw would otherwise shimmer behind the
+          // skeleton forever; drop the skeleton and let the card's own
+          // background stand in.
+          el.addEventListener(
+            "error",
+            () => {
+              el.classList.remove("pending");
+              el.closest("[data-media-frame]")?.classList.add("media-ready");
+            },
+            { once: true }
+          );
+        };
+        const wireMedia = (root) => {
+          const media = [
+            ...(root.matches?.("img.media-in, video.media-in") ? [root] : []),
+            ...(root.querySelectorAll?.("img.media-in, video.media-in") || []),
+          ];
+          media.forEach((item) => {
+            if (item instanceof HTMLImageElement) {
+              wire(item, () => item.complete && item.naturalWidth > 0, "load");
+            } else if (item instanceof HTMLVideoElement) {
+              wire(item, () => item.readyState >= 2, "loadeddata");
+            }
+          });
+        };
+
+        wireMedia(document);
+        new MutationObserver((mutations) => {
+          mutations.forEach((mutation) =>
+            mutation.addedNodes.forEach((node) => {
+              if (node.nodeType === Node.ELEMENT_NODE) wireMedia(node);
+            })
+          );
+        }).observe(document.body, { childList: true, subtree: true });
+      })();
+    </script><script>
+      // Every sign in / sign up link carries the page it was clicked from, so
+      // the auth pages can return the visitor there instead of dropping
+      // everyone on the dashboard. Stamped in the browser, not at render time:
+      // pages are cached and served to both signed-in and anonymous visitors,
+      // and only the live URL still holds the filter query string.
+      (() => {
+        const authPage = /^\/(?:signin|signup|forgot-password|reset-password)\/?$/;
+        const selector = 'a[href^="/signin"], a[href^="/signup"]';
+        const stamp = (root) => {
+          if (authPage.test(location.pathname)) return;
+          const from = location.pathname + location.search;
+          const links = [
+            ...(root.matches?.(selector) ? [root] : []),
+            ...(root.querySelectorAll?.(selector) || []),
+          ];
+          links.forEach((link) => {
+            const url = new URL(link.getAttribute("href"), location.origin);
+            if (url.searchParams.has("redirect")) return;
+            url.searchParams.set("redirect", from);
+            link.setAttribute("href", url.pathname + url.search);
+          });
+        };
+
+        stamp(document);
+        // The navigation and the landing grid can arrive after this script.
+        new MutationObserver((mutations) => {
+          mutations.forEach((mutation) =>
+            mutation.addedNodes.forEach((node) => {
+              if (node.nodeType === Node.ELEMENT_NODE) stamp(node);
+            })
+          );
+        }).observe(document.body, { childList: true, subtree: true });
+      })();
+    </script><script>
+      // Bookmark controls are rendered in regular pages and in the deferred
+      // homepage grid. One shared state request keeps every copy in sync.
+      (() => {
+        const loadState = () =>
+          fetch("/api/bookmarks/", { headers: { Accept: "application/json" } })
+            .then((response) => (response.ok ? response.json() : Promise.reject()))
+            .catch(() => ({
+              authenticated: false,
+              isPro: false,
+              savedSiteIds: [],
+              bookmarkCount: 0,
+              limit: 5,
+            }));
+        let statePromise = null;
+
+        const updateButtons = (siteId, saved) => {
+          document
+            .querySelectorAll(`[data-bookmark-site="${siteId}"]`)
+            .forEach((button) => {
+              button.setAttribute("aria-pressed", String(saved));
+              button.setAttribute(
+                "aria-label",
+                saved ? "Remove from saved" : "Save website"
+              );
+              button.setAttribute(
+                "title",
+                saved ? "Remove from saved" : "Save website"
+              );
+            });
+        };
+
+        const applyState = (state, root = document) => {
+          const saved = new Set(state.savedSiteIds || []);
+          const buttons = [
+            ...(root.matches?.("[data-bookmark-site]") ? [root] : []),
+            ...(root.querySelectorAll?.("[data-bookmark-site]") || []),
+          ];
+          buttons.forEach((button) => {
+            const siteId = Number(button.dataset.bookmarkSite);
+            button.setAttribute("aria-pressed", String(saved.has(siteId)));
+            button.setAttribute(
+              "aria-label",
+              saved.has(siteId) ? "Remove from saved" : "Save website"
+            );
+            button.setAttribute(
+              "title",
+              saved.has(siteId) ? "Remove from saved" : "Save website"
+            );
+          });
+        };
+
+        const ensureState = () => {
+          if (statePromise) return statePromise;
+          const source = window.__curatedBookmarksPromise || loadState();
+          statePromise = Promise.resolve(source).then((state) => {
+            window.__curatedBookmarksState = state;
+            applyState(state);
+            window.dispatchEvent(
+              new CustomEvent("curated:bookmarks-ready", { detail: state })
+            );
+            return state;
+          });
+          window.__curatedBookmarksPromise = statePromise;
+          return statePromise;
+        };
+
+        const hydrateIfNeeded = (root) => {
+          const hasControls =
+            root.matches?.("[data-bookmark-site]") ||
+            root.querySelector?.("[data-bookmark-site]");
+          if (!hasControls) return;
+          ensureState().then((state) => applyState(state, root));
+        };
+
+        const showNotice = (message, withUpgrade = false) => {
+          document.querySelector("[data-bookmark-notice]")?.remove();
+          const notice = document.createElement("div");
+          notice.dataset.bookmarkNotice = "";
+          notice.setAttribute("role", "status");
+          notice.className =
+            "fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 items-center gap-3 rounded-lg bg-base-900 px-4 py-3 text-sm text-white shadow-xl";
+          const text = document.createElement("span");
+          text.textContent = message;
+          notice.append(text);
+          if (withUpgrade) {
+            const link = document.createElement("a");
+            link.href = "/pricing/";
+            link.className = "font-medium text-accent-200 underline underline-offset-2";
+            link.textContent = "View Pro";
+            notice.append(link);
+          }
+          document.body.append(notice);
+          setTimeout(() => notice.remove(), 6000);
+        };
+
+        hydrateIfNeeded(document);
+
+        // The landing grid is a server island and can arrive after this script.
+        new MutationObserver((mutations) => {
+          for (const mutation of mutations) {
+            mutation.addedNodes.forEach((node) => {
+              if (node.nodeType === Node.ELEMENT_NODE) hydrateIfNeeded(node);
+            });
+          }
+        }).observe(document.body, { childList: true, subtree: true });
+
+        document.addEventListener("click", async (event) => {
+          const button = event.target.closest?.("[data-bookmark-site]");
+          if (!button) return;
+          event.preventDefault();
+          event.stopPropagation();
+
+          const state = await ensureState();
+          if (!state.authenticated) {
+            location.href = `/signin/?redirect=${encodeURIComponent(location.pathname + location.search)}`;
+            return;
+          }
+
+          const siteId = Number(button.dataset.bookmarkSite);
+          const wasSaved = button.getAttribute("aria-pressed") === "true";
+          document
+            .querySelectorAll(`[data-bookmark-site="${siteId}"]`)
+            .forEach((item) => (item.disabled = true));
+          try {
+            const response = await fetch("/api/bookmarks/", {
+              method: wasSaved ? "DELETE" : "POST",
+              headers: { "Content-Type": "application/json", Accept: "application/json" },
+              body: JSON.stringify({ siteId }),
+            });
+            const result = await response.json().catch(() => ({}));
+            if (response.status === 401) {
+              location.href = `/signin/?redirect=${encodeURIComponent(location.pathname + location.search)}`;
+              return;
+            }
+            if (!response.ok) {
+              window.curatedAnalytics?.capture(
+                result.code === "BOOKMARK_LIMIT_REACHED"
+                  ? "bookmark_limit_reached"
+                  : "bookmark_failed",
+                {
+                  site_id: siteId,
+                  bookmark_count: result.bookmarkCount,
+                }
+              );
+              showNotice(
+                result.message || "Could not update the bookmark.",
+                result.code === "BOOKMARK_LIMIT_REACHED"
+              );
+              return;
+            }
+
+            const saved = Boolean(result.saved);
+            updateButtons(siteId, saved);
+            state.savedSiteIds = saved
+              ? Array.from(new Set([...(state.savedSiteIds || []), siteId]))
+              : (state.savedSiteIds || []).filter((id) => id !== siteId);
+            state.bookmarkCount = result.bookmarkCount;
+            window.curatedAnalytics?.capture(
+              saved ? "bookmark_saved" : "bookmark_removed",
+              {
+                site_id: siteId,
+                bookmark_count: result.bookmarkCount,
+                plan: state.isPro ? "pro" : "free",
+              }
+            );
+            window.__curatedBookmarksState = state;
+            window.dispatchEvent(
+              new CustomEvent("curated:bookmark-change", {
+                detail: { siteId, saved, bookmarkCount: result.bookmarkCount },
+              })
+            );
+          } catch {
+            window.curatedAnalytics?.capture("bookmark_failed", {
+              site_id: siteId,
+            });
+            showNotice("Could not update the bookmark. Try again.");
+          } finally {
+            document
+              .querySelectorAll(`[data-bookmark-site="${siteId}"]`)
+              .forEach((item) => (item.disabled = false));
+          }
+        });
+      })();
+    </script></body></html>

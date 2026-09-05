@@ -1,0 +1,69 @@
+{
+  "lever": "lexicon",
+  "id": "typewriter",
+  "term_en": "Typewriter",
+  "term_zh": "打字机",
+  "axis": "motion",
+  "aliases": [
+    "打字效果",
+    "typing effect",
+    "逐字"
+  ],
+  "definition_zh": "文字逐字出现，光标闪烁，可选删除回打形成循环。",
+  "notation": "M[type] · unit:char · cps:12 · caret:blink",
+  "genes": [
+    {
+      "gene": "粒度",
+      "value": "按字符 / 按词"
+    },
+    {
+      "gene": "循环",
+      "value": "单次 / 打完删除回打"
+    }
+  ],
+  "minimal_code": {
+    "css": "const id = setInterval(() =>\n  out += text[i++ % text.length], 1000 / cps);\n.caret{animation:blink 1s steps(1) infinite}"
+  },
+  "params": [
+    {
+      "key": "cps",
+      "label": "字速",
+      "min": 4,
+      "max": 30,
+      "step": 1,
+      "unit": "字/s",
+      "default": 12
+    }
+  ],
+  "anti_patterns": [
+    "长段落打字让人等得发慌；只用于一句话级文案。"
+  ],
+  "tech_notes": [
+    "setInterval/rAF 递增子串；中英混排注意宽度抖动。"
+  ],
+  "common_pairings": [
+    "text-scramble",
+    "terminal"
+  ],
+  "related": [
+    "text-scramble"
+  ],
+  "wild": [
+    {
+      "what": "各类 AI 产品输出流",
+      "source": "普遍",
+      "note": "LLM token 流让打字机翻红"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/typewriter/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/typewriter.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

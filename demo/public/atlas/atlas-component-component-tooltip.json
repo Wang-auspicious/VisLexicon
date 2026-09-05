@@ -1,0 +1,194 @@
+{
+  "termEn": "Tooltip",
+  "termZh": "工具提示",
+  "definitionZh": "注意：此设计模式正在开发中；工作组尚未达成共识。第 128 期记录了进展和讨论。",
+  "sourceDefinition": "NOTE: This design pattern is work in progress; it does not yet have task force consensus. Progress and discussions are captured in issue 128.",
+  "axis": "component",
+  "recordType": "component",
+  "aliases": [
+    "hint",
+    "hover text",
+    "info bubble",
+    "title attribute"
+  ],
+  "scenes": [],
+  "mediaBindings": [
+    "web",
+    "web/react"
+  ],
+  "status": "candidate",
+  "countedAtlas": true,
+  "translationQuality": "machine",
+  "sourceEvidence": [
+    {
+      "sourceId": "ark-ui",
+      "sourceName": "Ark UI",
+      "sourceRecordId": "tooltip",
+      "url": "https://ark-ui.com/docs/components/tooltip",
+      "sourcePath": "website/src/content/pages/components/tooltip.mdx",
+      "sourceCategory": "headless-component",
+      "sourceDefinition": "A label that provides information on hover or focus.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/chakra-ui/ark/blob/main/LICENSE",
+      "retrievedAt": "2026-09-03",
+      "revision": "7e1a3a702ba629b4651670530742dfb72d6db769",
+      "sourceMetadata": {}
+    },
+    {
+      "sourceId": "chakra-ui",
+      "sourceName": "Chakra UI",
+      "sourceRecordId": "tooltip",
+      "url": "https://chakra-ui.com/docs/components/tooltip",
+      "sourcePath": "/docs/components/tooltip",
+      "sourceCategory": "react-component",
+      "sourceDefinition": "Used to display additional information when a user hovers over an element.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE",
+      "retrievedAt": "2026-08-31",
+      "revision": "0b5eeb3f23ad6caff26395383ac535f415958950",
+      "sourceMetadata": {
+        "framework": "react",
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "mantine",
+      "sourceName": "Mantine",
+      "sourceRecordId": "component-Tooltip",
+      "url": "https://mantine.dev/core/tooltip",
+      "sourcePath": "apps/mantine.dev/src/mdx/data/mdx-core-data.ts",
+      "sourceCategory": "react-component",
+      "sourceDefinition": "Renders tooltip at given element on mouse over or other event",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mantinedev/mantine/blob/master/LICENSE",
+      "retrievedAt": "2026-09-03",
+      "revision": "3862b09668c4523161a5b635666e0d68a3fe347b",
+      "sourceMetadata": {
+        "kind": "component"
+      }
+    },
+    {
+      "sourceId": "mui",
+      "sourceName": "Material UI (MUI)",
+      "sourceRecordId": "react-tooltip",
+      "url": "https://mui.com/material-ui/react-tooltip/",
+      "sourcePath": "/material-ui/react-tooltip/",
+      "sourceCategory": "react-component",
+      "sourceDefinition": "Tooltips display informative text when users hover over, focus on, or tap an element.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mui/material-ui/blob/master/LICENSE",
+      "retrievedAt": "2026-08-31",
+      "revision": "90d5cf039dfd6361e5d57801d2a5eadcfb1556ab",
+      "sourceMetadata": {
+        "framework": "react",
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "open-ui",
+      "sourceName": "Open UI",
+      "sourceRecordId": "tooltip",
+      "url": "https://github.com/openui/open-ui/blob/93671dc549f262b1a33e7c221caddfcd75e8f126/site/src/pages/components/tooltip.research.mdx",
+      "sourcePath": "site/src/pages/components/tooltip.research.mdx",
+      "sourceCategory": "component-research",
+      "sourceDefinition": "| UI Library | Can be nested? | Closes other tooltips? | Note | | ------------------------------------------------------------------------------------------------------------------------- | ------------------ | ---------------------------------------------- | ------------------------------------------------------------------------------ | | Ant Design | No | Yes (default, but can be changed) | Only accepts textual content | | Atlaskit | No | Yes | Only accepts textual content | | Bootstrap | No | Yes, but stays open when clicked | Only accepts textual content | | Carbon design system | No | Yes | Only accepts textual content | | Evergreen | No | Yes | Only accepts textual content | | UI Fabrik | No | Yes | Linked example could potentially be nested, but not intentional | | FAST | Yes | Yes (but not when nested, previous stays open) | In the sandbox (link on library) nesting was possible to achieve | | KoliBri | To be investigated | To be investigated | | | Lightning Design System | To be investigated | To be investigated | | | Material Components Web | To be investigated | Yes | It can contain custom HTML, further investigation necessary for nesting | | Semantic UI | No | Not the parent when nested | Linked example could potentially be nested, but not intentional | | Stardust UI | No | can be prevented | Only in other elements, but not nested in tooltip (according to documentation) | | Boosted | No | Not when other tooltip is clicked | Only accepts textual content |",
+      "license": "W3C Software and Document License",
+      "licenseUrl": "https://github.com/openui/open-ui/blob/main/LICENSE.md",
+      "retrievedAt": "2026-08-31",
+      "revision": "93671dc549f262b1a33e7c221caddfcd75e8f126",
+      "sourceMetadata": {
+        "sourcePaths": [
+          "site/src/pages/components/tooltip.research.mdx"
+        ],
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "primer",
+      "sourceName": "Primer (GitHub Design System)",
+      "sourceRecordId": "tooltip",
+      "url": "https://primer.style/product/components/tooltip",
+      "sourcePath": "/product/components/tooltip",
+      "sourceCategory": "react-component",
+      "sourceDefinition": "Tooltips add additional context to interactive UI elements and appear on mouse hover or keyboard focus.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/primer/react/blob/main/LICENSE",
+      "retrievedAt": "2026-08-31",
+      "revision": "8b065584ebe8e78b742950108e7cb4cccdec2d0f",
+      "sourceMetadata": {
+        "framework": "react",
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "quasar",
+      "sourceName": "Quasar",
+      "sourceRecordId": "tooltip",
+      "url": "https://quasar.dev/vue-components/tooltip",
+      "sourcePath": "docs/src/pages/vue-components/tooltip/tooltip.md",
+      "sourceCategory": "vue-component",
+      "sourceDefinition": "The QTooltip Vue component is to be used when you want to offer the user more information about a certain area in your App. When hovering the mouse over the target element (or touching and holding on touch-capable devices), the tooltip will appear.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/quasarframework/quasar/blob/dev/LICENSE",
+      "retrievedAt": "2026-09-03",
+      "revision": "b4b008b1c5c08079ee9b3267762d7549b784f18a",
+      "sourceMetadata": {}
+    },
+    {
+      "sourceId": "radix-ui",
+      "sourceName": "Radix UI Primitives",
+      "sourceRecordId": "tooltip",
+      "url": "https://www.radix-ui.com/primitives/docs/components/tooltip",
+      "sourcePath": "/primitives/docs/components/tooltip",
+      "sourceCategory": "react-primitive",
+      "sourceDefinition": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/radix-ui/primitives/blob/main/LICENSE",
+      "retrievedAt": "2026-08-31",
+      "revision": "34b165907b4609ef18ad1cb7124e63dc319ee333",
+      "sourceMetadata": {
+        "framework": "react",
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "wai-aria-apg",
+      "sourceName": "WAI-ARIA Authoring Practices Guide",
+      "sourceRecordId": "tooltip",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/",
+      "sourcePath": "content/patterns/tooltip/tooltip-pattern.html",
+      "sourceCategory": "accessibility-pattern",
+      "sourceDefinition": "NOTE: This design pattern is work in progress; it does not yet have task force consensus. Progress and discussions are captured in issue 128.",
+      "license": "W3C Software and Document License",
+      "licenseUrl": "https://github.com/w3c/aria-practices/blob/main/LICENSE.md",
+      "retrievedAt": "2026-08-31",
+      "revision": "7e4034b262bc0d25332e330d8a582aaf34113829",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceId": "web-awesome",
+      "sourceName": "Web Awesome (Shoelace)",
+      "sourceRecordId": "tooltip",
+      "url": "https://webawesome.com/docs/components/tooltip",
+      "sourcePath": "packages/webawesome/docs/docs/components/tooltip.md",
+      "sourceCategory": "Feedback",
+      "sourceDefinition": "Point the `for` attribute at the `id` of the element the tooltip describes, and Web Awesome wires up positioning and accessibility for you.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/shoelace-style/webawesome/blob/next/LICENSE.md",
+      "retrievedAt": "2026-09-03",
+      "revision": "f1981f73d9c53977108da7d30ed90c6a3eda8145",
+      "sourceMetadata": {
+        "aliases": [
+          "hint",
+          "hover text",
+          "info bubble",
+          "title attribute"
+        ],
+        "docsCategory": "Feedback"
+      }
+    }
+  ],
+  "id": "atlas-component-component-tooltip"
+}

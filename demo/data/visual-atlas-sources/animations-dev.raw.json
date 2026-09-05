@@ -1,0 +1,1018 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "id": "animations-dev",
+    "name": "animations.dev Animation Vocabulary",
+    "url": "https://animations.dev/vocabulary",
+    "repository": "https://github.com/emilkowalski/skills",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/emilkowalski/skills/blob/main/LICENSE",
+    "retrievedAt": "2026-08-31",
+    "revision": "d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7",
+    "verifiedCount": 91,
+    "countedAtlas": true
+  },
+  "records": [
+    {
+      "sourceRecordId": "fade-in-fade-out",
+      "termEn": "Fade in / Fade out",
+      "sourceDefinition": "Element appears or disappears by changing opacity.",
+      "sourceCategory": "Entrances & Exits",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Entrances & Exits"
+      }
+    },
+    {
+      "sourceRecordId": "slide-in",
+      "termEn": "Slide in",
+      "sourceDefinition": "Element enters by sliding in from off-screen (left, right, top, or bottom).",
+      "sourceCategory": "Entrances & Exits",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Entrances & Exits"
+      }
+    },
+    {
+      "sourceRecordId": "scale-in",
+      "termEn": "Scale in",
+      "sourceDefinition": "Element grows from smaller to full size as it appears, often paired with a fade.",
+      "sourceCategory": "Entrances & Exits",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Entrances & Exits"
+      }
+    },
+    {
+      "sourceRecordId": "pop-in",
+      "termEn": "Pop in",
+      "sourceDefinition": "Element appears with a slight overshoot, like it bounces into place.",
+      "sourceCategory": "Entrances & Exits",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Entrances & Exits"
+      }
+    },
+    {
+      "sourceRecordId": "reveal",
+      "termEn": "Reveal",
+      "sourceDefinition": "Content is uncovered gradually, often by animating a clip-path or mask.",
+      "sourceCategory": "Entrances & Exits",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Entrances & Exits"
+      }
+    },
+    {
+      "sourceRecordId": "enter-exit",
+      "termEn": "Enter / Exit",
+      "sourceDefinition": "The animation an element plays when it's added to or removed from the screen.",
+      "sourceCategory": "Entrances & Exits",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Entrances & Exits"
+      }
+    },
+    {
+      "sourceRecordId": "keyframes",
+      "termEn": "Keyframes",
+      "sourceDefinition": "Defined points in an animation (0%, 50%, 100%) that the browser fills the gaps between.",
+      "sourceCategory": "Sequencing & Timing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Sequencing & Timing"
+      }
+    },
+    {
+      "sourceRecordId": "interpolation-tween",
+      "termEn": "Interpolation / Tween",
+      "sourceDefinition": "Generating all the in-between frames between a start and end value, so motion is continuous.",
+      "sourceCategory": "Sequencing & Timing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Sequencing & Timing"
+      }
+    },
+    {
+      "sourceRecordId": "stagger",
+      "termEn": "Stagger",
+      "sourceDefinition": "Animate several items one after another with a small delay between each, creating a cascade.",
+      "sourceCategory": "Sequencing & Timing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Sequencing & Timing"
+      }
+    },
+    {
+      "sourceRecordId": "orchestration",
+      "termEn": "Orchestration",
+      "sourceDefinition": "Deliberately timing multiple animations so they feel like one coordinated motion.",
+      "sourceCategory": "Sequencing & Timing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Sequencing & Timing"
+      }
+    },
+    {
+      "sourceRecordId": "delay",
+      "termEn": "Delay",
+      "sourceDefinition": "Time before an animation starts.",
+      "sourceCategory": "Sequencing & Timing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Sequencing & Timing"
+      }
+    },
+    {
+      "sourceRecordId": "duration",
+      "termEn": "Duration",
+      "sourceDefinition": "How long an animation takes.",
+      "sourceCategory": "Sequencing & Timing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Sequencing & Timing"
+      }
+    },
+    {
+      "sourceRecordId": "fill-mode",
+      "termEn": "Fill mode",
+      "sourceDefinition": "Whether an element keeps its first or last frame's styles before the animation starts or after it ends (e.g. forwards).",
+      "sourceCategory": "Sequencing & Timing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Sequencing & Timing"
+      }
+    },
+    {
+      "sourceRecordId": "stepped-animation",
+      "termEn": "Stepped animation",
+      "sourceDefinition": "An animation that is divided into discrete steps, like a countdown timer.",
+      "sourceCategory": "Sequencing & Timing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Sequencing & Timing"
+      }
+    },
+    {
+      "sourceRecordId": "translate",
+      "termEn": "Translate",
+      "sourceDefinition": "Move an element along the X or Y axis.",
+      "sourceCategory": "Movement & Transforms",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Movement & Transforms"
+      }
+    },
+    {
+      "sourceRecordId": "scale",
+      "termEn": "Scale",
+      "sourceDefinition": "Make an element bigger or smaller.",
+      "sourceCategory": "Movement & Transforms",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Movement & Transforms"
+      }
+    },
+    {
+      "sourceRecordId": "rotate",
+      "termEn": "Rotate",
+      "sourceDefinition": "Spin an element around a point.",
+      "sourceCategory": "Movement & Transforms",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Movement & Transforms"
+      }
+    },
+    {
+      "sourceRecordId": "skew",
+      "termEn": "Skew",
+      "sourceDefinition": "Slant an element along the X or Y axis, shearing it out of its rectangular shape.",
+      "sourceCategory": "Movement & Transforms",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Movement & Transforms"
+      }
+    },
+    {
+      "sourceRecordId": "3d-tilt-flip",
+      "termEn": "3D tilt / Flip",
+      "sourceDefinition": "Rotate in 3D space (rotateX / rotateY) to add depth.",
+      "sourceCategory": "Movement & Transforms",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Movement & Transforms"
+      }
+    },
+    {
+      "sourceRecordId": "perspective",
+      "termEn": "Perspective",
+      "sourceDefinition": "How strong the 3D effect looks — a lower value exaggerates depth, like the viewer is closer.",
+      "sourceCategory": "Movement & Transforms",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Movement & Transforms"
+      }
+    },
+    {
+      "sourceRecordId": "transform-origin",
+      "termEn": "Transform origin",
+      "sourceDefinition": "The anchor point a scale or rotation grows or spins from.",
+      "sourceCategory": "Movement & Transforms",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Movement & Transforms"
+      }
+    },
+    {
+      "sourceRecordId": "origin-aware-animation",
+      "termEn": "Origin-aware animation",
+      "sourceDefinition": "An element animates out of its trigger, like a popover growing from the button that opened it instead of from its own center which is the default in CSS.",
+      "sourceCategory": "Movement & Transforms",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Movement & Transforms"
+      }
+    },
+    {
+      "sourceRecordId": "crossfade",
+      "termEn": "Crossfade",
+      "sourceDefinition": "One element fades out as another fades in, in the same spot.",
+      "sourceCategory": "Transitions Between States",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Transitions Between States"
+      }
+    },
+    {
+      "sourceRecordId": "continuity-transition",
+      "termEn": "Continuity transition",
+      "sourceDefinition": "A change that keeps the user oriented by visually connecting before and after. For example, making the same rectangle bigger and smaller.",
+      "sourceCategory": "Transitions Between States",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Transitions Between States"
+      }
+    },
+    {
+      "sourceRecordId": "morph",
+      "termEn": "Morph",
+      "sourceDefinition": "One shape smoothly turns into another shape, e.g. Dynamic Island.",
+      "sourceCategory": "Transitions Between States",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Transitions Between States"
+      }
+    },
+    {
+      "sourceRecordId": "shared-element-transition",
+      "termEn": "Shared element transition",
+      "sourceDefinition": "An element travels and transforms from one position into another, like a thumbnail expanding into a card.",
+      "sourceCategory": "Transitions Between States",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Transitions Between States"
+      }
+    },
+    {
+      "sourceRecordId": "layout-animation",
+      "termEn": "Layout animation",
+      "sourceDefinition": "When an element's size or position changes, it animates to the new spot instead of snapping.",
+      "sourceCategory": "Transitions Between States",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Transitions Between States"
+      }
+    },
+    {
+      "sourceRecordId": "accordion-collapse",
+      "termEn": "Accordion / Collapse",
+      "sourceDefinition": "A section smoothly expands and collapses its height to show or hide content.",
+      "sourceCategory": "Transitions Between States",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Transitions Between States"
+      }
+    },
+    {
+      "sourceRecordId": "direction-aware-transition",
+      "termEn": "Direction-aware transition",
+      "sourceDefinition": "Content slides one way going forward and the opposite way going back, so navigation has a sense of direction.",
+      "sourceCategory": "Transitions Between States",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Transitions Between States"
+      }
+    },
+    {
+      "sourceRecordId": "scroll-reveal",
+      "termEn": "Scroll reveal",
+      "sourceDefinition": "Elements fade or slide into place as they enter the viewport.",
+      "sourceCategory": "Scroll",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Scroll"
+      }
+    },
+    {
+      "sourceRecordId": "scroll-driven-animation",
+      "termEn": "Scroll-driven animation",
+      "sourceDefinition": "An animation whose progress is tied directly to scroll position.",
+      "sourceCategory": "Scroll",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Scroll"
+      }
+    },
+    {
+      "sourceRecordId": "parallax",
+      "termEn": "Parallax",
+      "sourceDefinition": "Background and foreground move at different speeds while scrolling, creating depth.",
+      "sourceCategory": "Scroll",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Scroll"
+      }
+    },
+    {
+      "sourceRecordId": "page-transition",
+      "termEn": "Page transition",
+      "sourceDefinition": "An animation that plays when navigating from one page or route to another.",
+      "sourceCategory": "Scroll",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Scroll"
+      }
+    },
+    {
+      "sourceRecordId": "view-transition",
+      "termEn": "View transition",
+      "sourceDefinition": "The browser morphs between two states or pages, connecting shared elements.",
+      "sourceCategory": "Scroll",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Scroll"
+      }
+    },
+    {
+      "sourceRecordId": "hover-effect",
+      "termEn": "Hover effect",
+      "sourceDefinition": "Visual change when the cursor moves over an element.",
+      "sourceCategory": "Feedback & Interaction",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Feedback & Interaction"
+      }
+    },
+    {
+      "sourceRecordId": "press-tap-feedback",
+      "termEn": "Press / Tap feedback",
+      "sourceDefinition": "A subtle scale-down when an element is clicked, so it feels physical.",
+      "sourceCategory": "Feedback & Interaction",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Feedback & Interaction"
+      }
+    },
+    {
+      "sourceRecordId": "hold-to-confirm",
+      "termEn": "Hold to confirm",
+      "sourceDefinition": "A progress effect that fills up while the user holds a button.",
+      "sourceCategory": "Feedback & Interaction",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Feedback & Interaction"
+      }
+    },
+    {
+      "sourceRecordId": "drag",
+      "termEn": "Drag",
+      "sourceDefinition": "Moving an element by grabbing it, often with momentum when released.",
+      "sourceCategory": "Feedback & Interaction",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Feedback & Interaction"
+      }
+    },
+    {
+      "sourceRecordId": "drag-to-reorder",
+      "termEn": "Drag to reorder",
+      "sourceDefinition": "Dragging items in a list to rearrange them, while the others shift to make room.",
+      "sourceCategory": "Feedback & Interaction",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Feedback & Interaction"
+      }
+    },
+    {
+      "sourceRecordId": "swipe-to-dismiss",
+      "termEn": "Swipe to dismiss",
+      "sourceDefinition": "Dragging an element off-screen to close it, like a drawer or toast.",
+      "sourceCategory": "Feedback & Interaction",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Feedback & Interaction"
+      }
+    },
+    {
+      "sourceRecordId": "rubber-banding",
+      "termEn": "Rubber-banding",
+      "sourceDefinition": "Resistance and snap-back when you drag past a boundary (the iOS overscroll feel).",
+      "sourceCategory": "Feedback & Interaction",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Feedback & Interaction"
+      }
+    },
+    {
+      "sourceRecordId": "shake-wiggle",
+      "termEn": "Shake / Wiggle",
+      "sourceDefinition": "A quick side-to-side jitter signaling an error or rejected input.",
+      "sourceCategory": "Feedback & Interaction",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Feedback & Interaction"
+      }
+    },
+    {
+      "sourceRecordId": "ripple",
+      "termEn": "Ripple",
+      "sourceDefinition": "A circle expanding from the point of a tap, confirming the press.",
+      "sourceCategory": "Feedback & Interaction",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Feedback & Interaction"
+      }
+    },
+    {
+      "sourceRecordId": "easing",
+      "termEn": "Easing",
+      "sourceDefinition": "The rate at which an animation speeds up or slows down.",
+      "sourceCategory": "Easing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Easing"
+      }
+    },
+    {
+      "sourceRecordId": "ease-out",
+      "termEn": "Ease-out",
+      "sourceDefinition": "Starts fast, ends slow. The default for most UI and anything responding to the user.",
+      "sourceCategory": "Easing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Easing"
+      }
+    },
+    {
+      "sourceRecordId": "ease-in",
+      "termEn": "Ease-in",
+      "sourceDefinition": "Starts slow, ends fast. Usually avoided; can feel sluggish.",
+      "sourceCategory": "Easing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Easing"
+      }
+    },
+    {
+      "sourceRecordId": "ease-in-out",
+      "termEn": "Ease-in-out",
+      "sourceDefinition": "Slow, fast, slow. Good for elements already on screen moving from A to B.",
+      "sourceCategory": "Easing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Easing"
+      }
+    },
+    {
+      "sourceRecordId": "linear",
+      "termEn": "Linear",
+      "sourceDefinition": "Constant speed. Avoid for UI; reserve for spinners or marquees.",
+      "sourceCategory": "Easing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Easing"
+      }
+    },
+    {
+      "sourceRecordId": "cubic-bezier",
+      "termEn": "Cubic-bezier",
+      "sourceDefinition": "A custom easing curve you define for precise control.",
+      "sourceCategory": "Easing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Easing"
+      }
+    },
+    {
+      "sourceRecordId": "asymmetric-easing",
+      "termEn": "Asymmetric easing",
+      "sourceDefinition": "A curve that accelerates and decelerates at different rates. Feels more alive than a symmetric one.",
+      "sourceCategory": "Easing",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Easing"
+      }
+    },
+    {
+      "sourceRecordId": "spring",
+      "termEn": "Spring",
+      "sourceDefinition": "Motion driven by physics (tension, mass, damping) rather than a set duration.",
+      "sourceCategory": "Spring Animations",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Spring Animations"
+      }
+    },
+    {
+      "sourceRecordId": "stiffness-tension",
+      "termEn": "Stiffness / Tension",
+      "sourceDefinition": "How strongly the spring pulls toward its target. Higher feels snappier.",
+      "sourceCategory": "Spring Animations",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Spring Animations"
+      }
+    },
+    {
+      "sourceRecordId": "damping",
+      "termEn": "Damping",
+      "sourceDefinition": "How quickly a spring settles. Lower damping means more bounce and oscillation.",
+      "sourceCategory": "Spring Animations",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Spring Animations"
+      }
+    },
+    {
+      "sourceRecordId": "mass",
+      "termEn": "Mass",
+      "sourceDefinition": "How heavy the animated element feels. More mass makes it slower and more sluggish.",
+      "sourceCategory": "Spring Animations",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Spring Animations"
+      }
+    },
+    {
+      "sourceRecordId": "bounce",
+      "termEn": "Bounce",
+      "sourceDefinition": "A spring that overshoots and settles, adding playfulness.",
+      "sourceCategory": "Spring Animations",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Spring Animations"
+      }
+    },
+    {
+      "sourceRecordId": "perceptual-duration",
+      "termEn": "Perceptual duration",
+      "sourceDefinition": "How long a spring feels finished, even though it keeps micro-settling underneath.",
+      "sourceCategory": "Spring Animations",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Spring Animations"
+      }
+    },
+    {
+      "sourceRecordId": "momentum",
+      "termEn": "Momentum",
+      "sourceDefinition": "Motion that carries velocity, especially after a drag or interruption.",
+      "sourceCategory": "Spring Animations",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Spring Animations"
+      }
+    },
+    {
+      "sourceRecordId": "velocity",
+      "termEn": "Velocity",
+      "sourceDefinition": "How fast and in which direction an element is moving. A spring carries it into the next animation when interrupted, so a flicked element keeps its speed.",
+      "sourceCategory": "Spring Animations",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Spring Animations"
+      }
+    },
+    {
+      "sourceRecordId": "interruptible-animation",
+      "termEn": "Interruptible animation",
+      "sourceDefinition": "An animation that can be smoothly redirected mid-flight instead of finishing first.",
+      "sourceCategory": "Spring Animations",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Spring Animations"
+      }
+    },
+    {
+      "sourceRecordId": "marquee",
+      "termEn": "Marquee",
+      "sourceDefinition": "Text or content that scrolls continuously in a loop.",
+      "sourceCategory": "Looping & Ambient Motion",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Looping & Ambient Motion"
+      }
+    },
+    {
+      "sourceRecordId": "loop",
+      "termEn": "Loop",
+      "sourceDefinition": "An animation that repeats, a set number of times or infinitely.",
+      "sourceCategory": "Looping & Ambient Motion",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Looping & Ambient Motion"
+      }
+    },
+    {
+      "sourceRecordId": "alternate-yoyo",
+      "termEn": "Alternate (yoyo)",
+      "sourceDefinition": "A loop that plays forward then reverses each iteration, instead of jumping back to the start.",
+      "sourceCategory": "Looping & Ambient Motion",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Looping & Ambient Motion"
+      }
+    },
+    {
+      "sourceRecordId": "orbit",
+      "termEn": "Orbit",
+      "sourceDefinition": "An element circling around another in a continuous path.",
+      "sourceCategory": "Looping & Ambient Motion",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Looping & Ambient Motion"
+      }
+    },
+    {
+      "sourceRecordId": "pulse",
+      "termEn": "Pulse",
+      "sourceDefinition": "A gentle repeating scale or opacity change to draw attention.",
+      "sourceCategory": "Looping & Ambient Motion",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Looping & Ambient Motion"
+      }
+    },
+    {
+      "sourceRecordId": "float",
+      "termEn": "Float",
+      "sourceDefinition": "A gentle, continuous up-and-down drift that makes a static element feel alive and weightless.",
+      "sourceCategory": "Looping & Ambient Motion",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Looping & Ambient Motion"
+      }
+    },
+    {
+      "sourceRecordId": "idle-animation",
+      "termEn": "Idle animation",
+      "sourceDefinition": "Subtle motion that plays while an element is just sitting there, waiting to be interacted with.",
+      "sourceCategory": "Looping & Ambient Motion",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Looping & Ambient Motion"
+      }
+    },
+    {
+      "sourceRecordId": "blur",
+      "termEn": "Blur",
+      "sourceDefinition": "A blur filter used to soften an element or mask tiny imperfections.",
+      "sourceCategory": "Polish & Effects",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Polish & Effects"
+      }
+    },
+    {
+      "sourceRecordId": "clip-path",
+      "termEn": "Clip-path",
+      "sourceDefinition": "Clipping an element to a shape, used for reveals, masks, and before/after sliders.",
+      "sourceCategory": "Polish & Effects",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Polish & Effects"
+      }
+    },
+    {
+      "sourceRecordId": "mask",
+      "termEn": "Mask",
+      "sourceDefinition": "Hiding or revealing parts of an element using a shape or gradient — like clip-path, but with soft, fadeable edges.",
+      "sourceCategory": "Polish & Effects",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Polish & Effects"
+      }
+    },
+    {
+      "sourceRecordId": "before-after-slider",
+      "termEn": "Before / after slider",
+      "sourceDefinition": "A draggable divider that wipes between two overlaid images to compare them.",
+      "sourceCategory": "Polish & Effects",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Polish & Effects"
+      }
+    },
+    {
+      "sourceRecordId": "line-drawing",
+      "termEn": "Line drawing",
+      "sourceDefinition": "An SVG path that draws itself in, like an invisible pen tracing it.",
+      "sourceCategory": "Polish & Effects",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Polish & Effects"
+      }
+    },
+    {
+      "sourceRecordId": "text-morph",
+      "termEn": "Text morph",
+      "sourceDefinition": "Text that animates character by character when it changes, drawing attention to the new value.",
+      "sourceCategory": "Polish & Effects",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Polish & Effects"
+      }
+    },
+    {
+      "sourceRecordId": "skeleton-shimmer",
+      "termEn": "Skeleton / Shimmer",
+      "sourceDefinition": "A placeholder with a moving sheen shown while content loads.",
+      "sourceCategory": "Polish & Effects",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Polish & Effects"
+      }
+    },
+    {
+      "sourceRecordId": "number-ticker",
+      "termEn": "Number ticker",
+      "sourceDefinition": "Digits rolling or counting up to a value.",
+      "sourceCategory": "Polish & Effects",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Polish & Effects"
+      }
+    },
+    {
+      "sourceRecordId": "tabular-numbers",
+      "termEn": "Tabular numbers",
+      "sourceDefinition": "Fixed-width digits so numbers don't shift around as they change. Essential for tickers, timers, and counters.",
+      "sourceCategory": "Polish & Effects",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Polish & Effects"
+      }
+    },
+    {
+      "sourceRecordId": "typewriter",
+      "termEn": "Typewriter",
+      "sourceDefinition": "Text appearing one character at a time, as if being typed.",
+      "sourceCategory": "Polish & Effects",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Polish & Effects"
+      }
+    },
+    {
+      "sourceRecordId": "frame-rate-fps",
+      "termEn": "Frame rate (FPS)",
+      "sourceDefinition": "Frames drawn per second. 60fps is the baseline for smooth motion; 120fps on newer displays.",
+      "sourceCategory": "Performance",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Performance"
+      }
+    },
+    {
+      "sourceRecordId": "jank",
+      "termEn": "Jank",
+      "sourceDefinition": "Visible stutter when the browser drops frames because it can't keep up with the animation.",
+      "sourceCategory": "Performance",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Performance"
+      }
+    },
+    {
+      "sourceRecordId": "dropped-frame",
+      "termEn": "Dropped frame",
+      "sourceDefinition": "A frame the browser missed its deadline to draw, causing a tiny hitch in motion.",
+      "sourceCategory": "Performance",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Performance"
+      }
+    },
+    {
+      "sourceRecordId": "compositing",
+      "termEn": "Compositing",
+      "sourceDefinition": "Letting the GPU move or fade an element on its own layer without redoing layout or paint.",
+      "sourceCategory": "Performance",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Performance"
+      }
+    },
+    {
+      "sourceRecordId": "will-change",
+      "termEn": "will-change",
+      "sourceDefinition": "A CSS hint that an element is about to animate, so the browser can promote it to its own layer ahead of time.",
+      "sourceCategory": "Performance",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Performance"
+      }
+    },
+    {
+      "sourceRecordId": "layout-thrashing",
+      "termEn": "Layout thrashing",
+      "sourceDefinition": "Animating properties like width, height, top, or left that force the browser to recalculate layout every frame, causing jank.",
+      "sourceCategory": "Performance",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Performance"
+      }
+    },
+    {
+      "sourceRecordId": "purposeful-animation",
+      "termEn": "Purposeful animation",
+      "sourceDefinition": "Motion should serve a function — orient, give feedback, show relationships — not just decorate.",
+      "sourceCategory": "Principles to Know",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Principles to Know"
+      }
+    },
+    {
+      "sourceRecordId": "anticipation",
+      "termEn": "Anticipation",
+      "sourceDefinition": "A small wind-up in the opposite direction before a move, hinting at what's about to happen.",
+      "sourceCategory": "Principles to Know",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Principles to Know"
+      }
+    },
+    {
+      "sourceRecordId": "follow-through",
+      "termEn": "Follow-through",
+      "sourceDefinition": "Parts of an element keep moving and settle slightly after the main motion stops, adding weight.",
+      "sourceCategory": "Principles to Know",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Principles to Know"
+      }
+    },
+    {
+      "sourceRecordId": "squash-and-stretch",
+      "termEn": "Squash & stretch",
+      "sourceDefinition": "Deforming an element as it moves to convey weight, speed, and flexibility.",
+      "sourceCategory": "Principles to Know",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Principles to Know"
+      }
+    },
+    {
+      "sourceRecordId": "perceived-performance",
+      "termEn": "Perceived performance",
+      "sourceDefinition": "The right animation makes an interface feel faster, even when it isn't.",
+      "sourceCategory": "Principles to Know",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Principles to Know"
+      }
+    },
+    {
+      "sourceRecordId": "frequency-of-use",
+      "termEn": "Frequency of use",
+      "sourceDefinition": "The more often a user sees an animation, the shorter and subtler it should be.",
+      "sourceCategory": "Principles to Know",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Principles to Know"
+      }
+    },
+    {
+      "sourceRecordId": "spatial-consistency",
+      "termEn": "Spatial consistency",
+      "sourceDefinition": "Animating so an element keeps its identity and position across states, so users never lose track of where things went.",
+      "sourceCategory": "Principles to Know",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Principles to Know"
+      }
+    },
+    {
+      "sourceRecordId": "hardware-acceleration",
+      "termEn": "Hardware acceleration",
+      "sourceDefinition": "Animating transform and opacity lets the GPU keep motion smooth.",
+      "sourceCategory": "Principles to Know",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Principles to Know"
+      }
+    },
+    {
+      "sourceRecordId": "reduced-motion",
+      "termEn": "Reduced motion",
+      "sourceDefinition": "Respecting the user's prefers-reduced-motion setting by toning down or removing motion.",
+      "sourceCategory": "Principles to Know",
+      "sourceUrl": "https://animations.dev/vocabulary",
+      "sourcePath": "skills/animation-vocabulary/SKILL.md",
+      "sourceMetadata": {
+        "category": "Principles to Know"
+      }
+    }
+  ]
+}

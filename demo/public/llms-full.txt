@@ -1,0 +1,563 @@
+# VisLexicon 全库数据（机器可读索引）
+
+## 词条 JSON
+- /lexicon/bento-grid.json
+- /lexicon/holy-grail.json
+- /lexicon/masonry.json
+- /lexicon/split-screen.json
+- /lexicon/sidebar-shell.json
+- /lexicon/sticky-scroll.json
+- /lexicon/kanban.json
+- /lexicon/timeline.json
+- /lexicon/card-stack.json
+- /lexicon/dock.json
+- /lexicon/hover-tilt.json
+- /lexicon/magnetic-button.json
+- /lexicon/spotlight-card.json
+- /lexicon/cursor-follower.json
+- /lexicon/hover-lift.json
+- /lexicon/link-underline.json
+- /lexicon/text-scramble.json
+- /lexicon/number-ticker.json
+- /lexicon/marquee.json
+- /lexicon/drag-reorder.json
+- /lexicon/scroll-reveal.json
+- /lexicon/image-compare.json
+- /lexicon/glassmorphism.json
+- /lexicon/neumorphism.json
+- /lexicon/claymorphism.json
+- /lexicon/neo-brutalism.json
+- /lexicon/minimal-flat.json
+- /lexicon/swiss-intl.json
+- /lexicon/editorial.json
+- /lexicon/terminal.json
+- /lexicon/aurora-gradient.json
+- /lexicon/skeuomorphism.json
+- /lexicon/y2k-chrome.json
+- /lexicon/pixel-retro.json
+- /lexicon/spring.json
+- /lexicon/stagger-reveal.json
+- /lexicon/flip.json
+- /lexicon/shimmer.json
+- /lexicon/parallax.json
+- /lexicon/scroll-scrub.json
+- /lexicon/view-transition.json
+- /lexicon/typewriter.json
+- /lexicon/blur-in.json
+- /lexicon/slide-swap.json
+- /lexicon/path-morph.json
+- /lexicon/container-transform.json
+- /lexicon/hero.json
+- /lexicon/navbar.json
+- /lexicon/feature-grid.json
+- /lexicon/pricing-table.json
+- /lexicon/testimonial.json
+- /lexicon/cta-banner.json
+- /lexicon/form.json
+- /lexicon/modal.json
+- /lexicon/toast.json
+- /lexicon/chart-card.json
+- /lexicon/faq.json
+- /lexicon/footer.json
+- /lexicon/onboarding.json
+- /lexicon/gsap.json
+- /lexicon/motion-lib.json
+- /lexicon/lottie.json
+
+## 词条完整内容
+
+### lex:bento-grid — Bento Grid (便当盒网格)
+- 轴: layout
+- 定义: 不等分网格拼贴，大小模块承载不同信息密度，一眼分层。
+- 记谱: G[grid] · cells:4 · rows:96 · gap:12 · hero:span(2,2)
+- 别名: bento / 便当格 / 不对称网格 / 模块拼盘
+- 最小实现: .bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:96px;gap:12px}…
+- 端点: /lexicon/bento-grid.json
+
+### lex:holy-grail — Holy Grail (圣杯布局)
+- 轴: layout
+- 定义: 顶栏 + 三栏主体 + 底栏的经典骨架，中栏自适应、两侧栏定宽。
+- 记谱: L[grail] · rows:hd/body/ft · cols:220/1fr/220
+- 别名: 圣杯 / 三栏布局 / header-footer 布局
+- 最小实现: .grail{display:grid;grid-template:…
+- 端点: /lexicon/holy-grail.json
+
+### lex:masonry — Masonry (瀑布流)
+- 轴: layout
+- 定义: 按列堆叠的不等高卡片流，密度高而不乱。
+- 记谱: L[masonry] · cols:4 · gutter:12 · flow:column
+- 别名: 瀑布流 / 砖石布局 / pinterest 布局
+- 最小实现: .masonry{columns:4;column-gap:12px}…
+- 端点: /lexicon/masonry.json
+
+### lex:split-screen — Split Screen (分屏对峙)
+- 轴: layout
+- 定义: 垂直分割两个等权内容区，分界线即视觉锚点。
+- 记谱: L[split] · ratio:50/50 · spine:1px · mode:对峙
+- 别名: 左右分栏 / 对半布局 / 50/50
+- 最小实现: .split{display:grid;grid-template-columns:1fr 1px 1fr}…
+- 端点: /lexicon/split-screen.json
+
+### lex:sidebar-shell — Sidebar Shell (侧栏外壳)
+- 轴: layout
+- 定义: 定宽侧栏 + 自适应主区，工具型产品的标准外壳。
+- 记谱: L[shell] · side:232 · main:1fr · nav:sticky
+- 别名: 侧边栏 / 侧栏导航 / app shell
+- 最小实现: .shell{display:grid;grid-template-columns:232px 1fr}…
+- 端点: /lexicon/sidebar-shell.json
+
+### lex:sticky-scroll — Sticky Scroll (钉住滚动)
+- 轴: layout
+- 定义: 一栏内容滚动、另一栏 position:sticky 钉住，形成叙事对比。
+- 记谱: L[sticky] · pin:20vh · span:60vh · scroll:right
+- 别名: 吸顶 / sticky 区域 / 滚动钉住
+- 最小实现: .wrap{display:grid;grid-template-columns:1fr 1fr;align-items:start}…
+- 端点: /lexicon/sticky-scroll.json
+
+### lex:kanban — Kanban (看板)
+- 轴: layout
+- 定义: 按状态分列的卡片流，配合拖拽重排。
+- 记谱: L[kanban] · cols:TODO/DOING/DONE · flow:column
+- 别名: 看板 / 任务板 / 拖拽列
+- 最小实现: .kanban{display:grid;grid-auto-flow:column;gap:16px;overflow-x:auto}…
+- 端点: /lexicon/kanban.json
+
+### lex:timeline — Timeline (时间线)
+- 轴: layout
+- 定义: 沿中轴交替展开的节点叙事。
+- 记谱: L[timeline] · axis:center · nodes:alternating
+- 别名: 时间轴 / 历程线
+- 最小实现: .tl{position:relative}…
+- 端点: /lexicon/timeline.json
+
+### lex:card-stack — Card Stack (卡片堆叠)
+- 轴: layout
+- 定义: 多张卡片同位叠放，顶层滑走后露出下一张。
+- 记谱: L[stack] · z:desc · scale:1-.05i · top:flyOut
+- 别名: 卡片叠放 / deck /  tinder 滑卡
+- 最小实现: .stack{position:relative}…
+- 端点: /lexicon/card-stack.json
+
+### lex:dock — Floating Dock (悬浮坞)
+- 轴: layout
+- 定义: 悬浮于底边的图标坞，hover 放大。
+- 记谱: L[dock] · pos:bottom · radius:999 · lift:pring
+- 别名: dock / 底部导航 / macOS dock
+- 最小实现: .dock{position:fixed;bottom:16px;border-radius:999px}…
+- 端点: /lexicon/dock.json
+
+### lex:hover-tilt — Hover Tilt / 3D Card (3D 倾斜卡)
+- 轴: interaction
+- 定义: 卡片随光标做透视倾斜，深度由 rotateX/Y 与层级投影共同塑造。
+- 记谱: I[persp] · axis:XY · max:12° · ease:linear/ease-out
+- 别名: 3d 卡片 / tilt / 鼠标倾斜 / 视差卡片
+- 最小实现: el.addEventListener('pointermove', e=>{…
+- 端点: /lexicon/hover-tilt.json
+
+### lex:magnetic-button — Magnetic Button (磁吸按钮)
+- 轴: interaction
+- 定义: 按钮被光标“磁化”吸引，松手后 spring 回位。
+- 记谱: I[magnet] · pull:s×Δ · relax:spring · reset:0
+- 别名: 磁力按钮 / 磁性按钮 / 光标吸附
+- 最小实现: const dx = e.clientX - cx;…
+- 端点: /lexicon/magnetic-button.json
+
+### lex:spotlight-card — Spotlight Card (光斑卡片)
+- 轴: interaction
+- 定义: radial-gradient 跟随光标，在边框与卡面点亮一圈光晕。
+- 记谱: I[spot] · shape:radial · r:radius · anchor:pointer
+- 别名: 光晕边框 / 鼠标高光 / glow border / radial hover
+- 最小实现: card.style.setProperty('--mx', e.offsetX + 'px');…
+- 端点: /lexicon/spotlight-card.json
+
+### lex:cursor-follower — Cursor Follower (光标跟随物)
+- 轴: interaction
+- 定义: 一个装饰元素以弹性延迟跟随光标，替代或增强系统指针。
+- 记谱: I[cursor] · follow:lag·0.15 · shape:ring+dot
+- 别名: 自定义光标 / cursor blob / 跟随圆环
+- 最小实现: let x = 0; // 每帧：x += (mouseX - x) * lag…
+- 端点: /lexicon/cursor-follower.json
+
+### lex:hover-lift — Hover Lift (悬浮抬升)
+- 轴: interaction
+- 定义: hover 时卡片整体上移数像素并加深投影，模拟被拿起。
+- 记谱: I[lift] · y:-4 · shadow:deepen · t:200ms
+- 别名: hover 浮起 / 抬升阴影 / elevate on hover
+- 最小实现: .card{transition:transform .2s, box-shadow .2s}…
+- 端点: /lexicon/hover-lift.json
+
+### lex:link-underline — Link Underline Draw (下划线绘制)
+- 轴: interaction
+- 定义: hover 时下划线从一侧划入（或从中间长出），退场时从另一侧划出。
+- 记谱: I[uline] · from:left · 1.5px · t:280ms
+- 别名: 下划线动画 / 划线 hover / underline slide
+- 最小实现: a{background:linear-gradient(currentColor,currentColor)…
+- 端点: /lexicon/link-underline.json
+
+### lex:text-scramble — Text Scramble (解码文字)
+- 轴: interaction
+- 定义: 字符随机翻滚后逐位落定，科技感文本进场。
+- 记谱: I[scramble] · frame:speed · resolve:fwd · charset:ascii
+- 别名: 乱码文字 / 解码动画 / hacker text / 字符翻转
+- 最小实现: const CHARS = '!<>-_\\/[]{}—=+*^?#';…
+- 端点: /lexicon/text-scramble.json
+
+### lex:number-ticker — Number Ticker (数字滚动)
+- 轴: interaction
+- 定义: 数值变化时沿纵向滚动到新数字，仪表盘的呼吸感。
+- 记谱: I[ticker] · axis:y · ease:ease-out · t:900ms
+- 别名: 数字翻牌 / odometer / count-up
+- 最小实现: <span class="col">{digits.map(d =>…
+- 端点: /lexicon/number-ticker.json
+
+### lex:marquee — Marquee (无缝跑马灯)
+- 轴: interaction
+- 定义: 内容首尾相接的无限横滚，需 duplicate 轨道实现无缝。
+- 记谱: I[marquee] · dir:x · loop:infinite · gap:none
+- 别名: 跑马灯 / 滚动横幅 / 无限滚动条
+- 最小实现: .track{animation:mq 14s linear infinite}…
+- 端点: /lexicon/marquee.json
+
+### lex:drag-reorder — Drag to Reorder (拖拽重排)
+- 轴: interaction
+- 定义: 按住卡片拖动，其余卡片实时让位，松手落位。
+- 记谱: I[drag] · grabbed:scale1.03 · others:flip-shift
+- 别名: 拖拽排序 / sortable / 抓起重排
+- 最小实现: onDragMove: 被拖卡 transform 跟手;…
+- 端点: /lexicon/drag-reorder.json
+
+### lex:scroll-reveal — Scroll Triggered Reveal (滚动进场)
+- 轴: interaction
+- 定义: 元素进入视口时才播放进场动画，配合 stagger 更有节奏。
+- 记谱: I[reveal] · trigger:io.2 · y:16→0 · once:true
+- 别名: 滚动显现 / reveal on scroll / aos
+- 最小实现: const io = new IntersectionObserver(es =>…
+- 端点: /lexicon/scroll-reveal.json
+
+### lex:image-compare — Image Compare (图像对比滑块)
+- 轴: interaction
+- 定义: 拖动分割线对比前后两张图，处理类产品的天然演示。
+- 记谱: I[compare] · clip:inset-x · handle:1px+grip
+- 别名: 对比滑块 / before-after slider
+- 最小实现: .cmp input{position:absolute;inset:0;opacity:0}…
+- 端点: /lexicon/image-compare.json
+
+### lex:glassmorphism — Glassmorphism (毛玻璃拟态)
+- 轴: aesthetic
+- 定义: 半透明面板 + backdrop blur + 细描边，悬浮于彩色背景之上。
+- 记谱: A[glass] · blur:14 · tint:255/.08 · edge:1/.14
+- 别名: 毛玻璃 / 磨砂玻璃 / frosted glass / backdrop blur
+- 最小实现: .glass{backdrop-filter:blur(14px);…
+- 端点: /lexicon/glassmorphism.json
+
+### lex:neumorphism — Neumorphism (新拟物)
+- 轴: aesthetic
+- 定义: 同色背景上用双向内外阴影挤出浅浮雕，控件像从面板上长出来。
+- 记谱: A[neu] · bg:same · dual:in/out · soft:16
+- 别名: 软 UI / soft ui / 凹凸拟物
+- 最小实现: .neu{background:#e8ebf2;border-radius:16px;…
+- 端点: /lexicon/neumorphism.json
+
+### lex:claymorphism — Claymorphism (黏土拟物)
+- 轴: aesthetic
+- 定义: 大圆角 + 双层内阴影，捏出软陶体积感。
+- 记谱: A[clay] · radius:28 · inner:soft · bevel:both
+- 别名: 黏土风 / 软糖风 / clay / 3d 软按钮
+- 最小实现: .clay{border-radius:28px;…
+- 端点: /lexicon/claymorphism.json
+
+### lex:neo-brutalism — Neo-Brutalism (新粗野主义)
+- 轴: aesthetic
+- 定义: 高饱和撞色 + 硬描边 + 无模糊硬阴影，反精致。
+- 记谱: A[brut] · edge:2px · shadow:offset · move:(-2,-2)
+- 别名: 新粗野 / 硬阴影 / 粗边框 / neobrutal
+- 最小实现: .brut{border:2px solid #000;…
+- 端点: /lexicon/neo-brutalism.json
+
+### lex:minimal-flat — Minimal Flat (极简扁平)
+- 轴: aesthetic
+- 定义: 去装饰、靠留白与层级说话；一个强调色点睛。
+- 记谱: A[flat] · deco:none · space:8px网 · acc:1
+- 别名: 扁平化 / 极简 / minimalism
+- 最小实现: .flat{background:#fff;color:#111;…
+- 端点: /lexicon/minimal-flat.json
+
+### lex:swiss-intl — Swiss / International (瑞士国际主义)
+- 轴: aesthetic
+- 定义: 严格网格、无衬线大字、不对称排版、大面积单色块。
+- 记谱: A[swiss] · grid:12 · type:grot · align:flush-left
+- 别名: 瑞士风 / 国际主义风格 / 网格排版
+- 最小实现: .swiss{display:grid;grid-template-columns:repeat(12,1fr)}…
+- 端点: /lexicon/swiss-intl.json
+
+### lex:editorial — Editorial (杂志编辑风)
+- 轴: aesthetic
+- 定义: 衬线大标题、首字下沉、细分栏线，纸刊排版的数字转译。
+- 记谱: A[ed] · display:serif · dropcap:yes · rule:1px
+- 别名: 杂志风 / 编辑排版 / 刊物风 / serif 大标题
+- 最小实现: .ed h3{font-family:Georgia,serif;font-size:clamp(2rem,6vw,4rem)}…
+- 端点: /lexicon/editorial.json
+
+### lex:terminal — Cyberpunk / Terminal (终端机能风)
+- 轴: aesthetic
+- 定义: 等宽字体 + 荧光绿/琥珀 + 扫描线与光标闪烁。
+- 记谱: A[term] · font:mono · accent:#4af6 · caret:blink
+- 别名: 终端风 / 黑客风 / cyberpunk / 命令行
+- 最小实现: .term{font-family:ui-monospace;color:#4af626}…
+- 端点: /lexicon/terminal.json
+
+### lex:aurora-gradient — Aurora / Gradient Mesh (极光渐变)
+- 轴: aesthetic
+- 定义: 多个大半径模糊色斑缓慢漂移，制造流动的极光底色。
+- 记谱: A[aurora] · blot:3 · blur:80 · drift:18s
+- 别名: 极光背景 / 渐变网格 / mesh gradient / 流体渐变
+- 最小实现: .aurora i{position:absolute;width:40vmax;aspect-ratio:1;…
+- 端点: /lexicon/aurora-gradient.json
+
+### lex:skeuomorphism — Skeuomorphism (拟物化)
+- 轴: aesthetic
+- 定义: 复刻真实材质光影：皮革纹理、拉丝金属、按下有物理行程的按钮。
+- 记谱: A[skeuo] · light:top-left · mat:metal/leather
+- 别名: 拟物 / 仿真质感 / skeuo
+- 最小实现: .knob{border-radius:50%;…
+- 端点: /lexicon/skeuomorphism.json
+
+### lex:y2k-chrome — Y2K Chrome (Y2K 金属)
+- 轴: aesthetic
+- 定义: 液态金属质感 + 星形闪光 + 高饱和蓝紫粉渐变，千禧复古未来。
+- 记谱: A[y2k] · grad:blue-purple-pink · glyph:star/wing
+- 别名: y2k 风 / 镀铬 / 千禧风 / liquid metal
+- 最小实现: .y2k{background:linear-gradient(120deg,#cdd8ff,#f3c4ff 45%,#9df1ff);…
+- 端点: /lexicon/y2k-chrome.json
+
+### lex:pixel-retro — Pixel Retro (像素复古)
+- 轴: aesthetic
+- 定义: 整数倍放大的低分辨率像素图 + 硬边无抗锯齿 + 有限色板。
+- 记谱: A[pixel] · scale:int ×4 · aa:off · palette:8
+- 别名: 像素风 / 8bit / retro pixel
+- 最小实现: .pix{image-rendering:pixelated;width:64px;height:64px}…
+- 端点: /lexicon/pixel-retro.json
+
+### lex:spring — Spring Physics (弹簧物理)
+- 轴: motion
+- 定义: 用过冲曲线模拟弹簧，元素到位时轻微越界再回弹。
+- 记谱: M[spring] · k:260 · c:20 · o:overshoot:18%
+- 别名: 弹性动画 / 回弹 / spring easing / overshoot
+- 最小实现: transition:transform .6s cubic-bezier(.3, 1.18, .55, 1);…
+- 端点: /lexicon/spring.json
+
+### lex:stagger-reveal — Stagger Reveal (交错入场)
+- 轴: motion
+- 定义: 列表项按固定间隔依次进场，节奏感来自 delay 阶梯。
+- 记谱: M[stagger] · d:90ms · step:var(--n) · ease:rise
+- 别名: 交错动画 / 逐项入场 / 列表 stagger / 瀑布入场
+- 最小实现: .row{animation:rise .5s both;animation-delay:calc(var(--n) * 90ms)}…
+- 端点: /lexicon/stagger-reveal.json
+
+### lex:flip — FLIP (FLIP 重排)
+- 轴: motion
+- 定义: First-Last-Invert-Play：先记终点，反向位移，再过渡到零。
+- 记谱: M[flip] · F→L·invert·play · prop:transform
+- 别名: flip 动画 / 位移动画 / 重排过渡 / share element
+- 最小实现: const dy = first.top - last.top;…
+- 端点: /lexicon/flip.json
+
+### lex:shimmer — Shimmer / Skeleton (骨架微光)
+- 轴: motion
+- 定义: 灰阶占位块上扫过一道斜向高光，暗示“加载中”。
+- 记谱: M[shimmer] · slope:100° · t:duration · pos:scan
+- 别名: 骨架屏 / 加载 shimmer / 占位微光 / skeleton screen
+- 最小实现: .sk{background:linear-gradient(100deg,#2222 40%,#fff3 50%,#2222 60%);…
+- 端点: /lexicon/shimmer.json
+
+### lex:parallax — Parallax Layers (视差层)
+- 轴: motion
+- 定义: 多层背景以不同速率移动，营造景深。
+- 记谱: M[parallax] · layers:2 · Δ:depth · drive:pointer
+- 别名: 视差 / 多层滚动 / 景深
+- 最小实现: .grid{transform:translate(calc(var(--px)*24px),calc(var(--py)*24px))}…
+- 端点: /lexicon/parallax.json
+
+### lex:scroll-scrub — Scroll Scrub (滚动擦洗)
+- 轴: motion
+- 定义: 动画进度直接映射滚动位置：滚到哪播到哪，倒滚也倒放。
+- 记谱: M[scrub] · map:scrollY→p · apply:direct · rev:true
+- 别名: 滚动驱动 / scrub 动画 / scroll-linked
+- 最小实现: const p = scrollY / (docHeight - vh);…
+- 端点: /lexicon/scroll-scrub.json
+
+### lex:view-transition — View Transition (视图过渡)
+- 轴: motion
+- 定义: 浏览器原生 API：新旧两帧快照间做过渡，共享元素丝滑换位。
+- 记谱: M[vt] · api:stVT · old:fade-out · new:rise-in
+- 别名: 页面过渡 / shared element transition / vt
+- 最小实现: document.startViewTransition(() => updateDOM());…
+- 端点: /lexicon/view-transition.json
+
+### lex:typewriter — Typewriter (打字机)
+- 轴: motion
+- 定义: 文字逐字出现，光标闪烁，可选删除回打形成循环。
+- 记谱: M[type] · unit:char · cps:12 · caret:blink
+- 别名: 打字效果 / typing effect / 逐字
+- 最小实现: const id = setInterval(() =>…
+- 端点: /lexicon/typewriter.json
+
+### lex:blur-in — Blur In (虚化入场)
+- 轴: motion
+- 定义: 从模糊+透明过渡到清晰，比纯 fade 更有对焦仪式感。
+- 记谱: M[blurIn] · from:blur(12px)+o0 · t:600ms
+- 别名: 模糊入场 / focus-in / blur fade
+- 最小实现: .in{animation:blurIn .6s both}…
+- 端点: /lexicon/blur-in.json
+
+### lex:slide-swap — Slide Swap (滑动换位)
+- 轴: motion
+- 定义: 内容块沿固定轴向滑入滑出完成替换，方向即语义。
+- 记谱: M[swap] · dir:x+ · old:-24 · new:+24 · t:380ms
+- 别名: 轮播 / carousel / 走马灯切换
+- 最小实现: .out{animation:slideOut .38s both}…
+- 端点: /lexicon/slide-swap.json
+
+### lex:path-morph — SVG Path Morph (路径变形)
+- 轴: motion
+- 定义: 两个同点数 SVG path 之间插值，图标与图形的液态变形。
+- 记谱: M[morph] · api:smil/flubber · pts:match · t:1.2s
+- 别名: 路径动画 / morph svg / 形变
+- 最小实现: <path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80">…
+- 端点: /lexicon/path-morph.json
+
+### lex:container-transform — Container Transform (容器变形)
+- 轴: motion
+- 定义: 一个容器连续变形为另一个容器，形状、尺寸、圆角与内容同时过渡，空间连续性不断。
+- 记谱: CT[circle→card] · corner:continuous · content:fade-through · spring(0.85,22) · origin:tap-point · 340ms
+- 别名: 容器转场 / circle to pill / 圆变胶囊 / 卡片展开 / shared element / 共享元素转场
+- 最小实现: /* from/to 用同一个元素，别用两个元素做假淡入淡出 */…
+- 端点: /lexicon/container-transform.json
+
+### lex:hero — Hero (首屏主视觉)
+- 轴: component
+- 定义: 第一屏主张 + 主 CTA，3–4 层元素交错进场。
+- 记谱: C[hero] · layers:3-4 · stagger · cta:primary
+- 别名: 首屏 / hero 区 / banner 区 / 头图
+- 最小实现: .hero strong{font-size:clamp(2.5rem,7vw,5.5rem);letter-spacing:-.04em}…
+- 端点: /lexicon/hero.json
+
+### lex:navbar — Navbar (导航栏)
+- 轴: component
+- 定义: 站点级导航：logo + 链接 + 行动点，滚动时收缩或变玻璃。
+- 记谱: C[nav] · sticky · blur:10 · shrink:on-scroll
+- 别名: 顶栏 / 导航条 / header
+- 最小实现: .nav{position:sticky;top:0;backdrop-filter:blur(10px)}…
+- 端点: /lexicon/navbar.json
+
+### lex:feature-grid — Feature Grid (功能网格)
+- 轴: component
+- 定义: 图标 + 标题 + 两行说明的等宽网格，功能叙事的默认容器。
+- 记谱: C[feat] · cols:3 · cell:icon+title+2line
+- 别名: 功能卡 / 三列功能 / features
+- 最小实现: .feat{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}…
+- 端点: /lexicon/feature-grid.json
+
+### lex:pricing-table — Pricing Table (定价表)
+- 轴: component
+- 定义: 三档卡片并排，Popular 档用强调色与放大打破对称。
+- 记谱: C[pricing] · tiers:3 · pop:scale1.06 · cta:primary
+- 别名: 价格表 / 套餐表 / 定价卡片
+- 最小实现: .price.pop{transform:scale(1.06);…
+- 端点: /lexicon/pricing-table.json
+
+### lex:testimonial — Testimonial (用户证言)
+- 轴: component
+- 定义: 引言 + 头像署名，双列交错制造节奏。
+- 记谱: C[testi] · cols:2 · attr:avatar · sync:rhythm
+- 别名: 证言卡片 / 用户评价 / 口碑墙
+- 最小实现: .testi{columns:2;column-gap:16px}…
+- 端点: /lexicon/testimonial.json
+
+### lex:cta-banner — CTA Banner (行动号召横幅)
+- 轴: component
+- 定义: 页尾前的最后一块高对比横幅：一句主张 + 一个按钮。
+- 记谱: C[cta] · bg:ink-inverse · line:1 · btn:1
+- 别名: cta 区 / 结尾横幅 / 转化块
+- 最小实现: .cta{background:var(--ink);color:#fff;…
+- 端点: /lexicon/cta-banner.json
+
+### lex:form — Form Field (表单输入)
+- 轴: component
+- 定义: focus 时描边变亮 + 外圈光晕，标签上浮。
+- 记谱: C[form] · focus:accent+glow · label:float
+- 别名: 输入框 / 表单 / 文本框
+- 最小实现: .field input:focus{outline:none;border-color:var(--acc);…
+- 端点: /lexicon/form.json
+
+### lex:modal — Modal (模态对话框)
+- 轴: component
+- 定义: 遮罩之上居中浮层，入场 scale+fade，焦点被圈住。
+- 记谱: C[modal] · veil:blur2 · enter:pop.3s · esc:close
+- 别名: 弹窗 / 对话框 / dialog
+- 最小实现: .veil{background:rgb(0 0 0/.5);backdrop-filter:blur(2px)}…
+- 端点: /lexicon/modal.json
+
+### lex:toast — Toast / Notification (吐司通知)
+- 轴: component
+- 定义: 角落堆叠滑入，自动消退，状态色区分语义。
+- 记谱: C[toast] · pos:top-right · slide:spring · auto:dismiss
+- 别名: toast / 通知条 / 消息提醒 / snackbar
+- 最小实现: .toast{animation:slideIn .35s cubic-bezier(.3,1.2,.55,1) both}…
+- 端点: /lexicon/toast.json
+
+### lex:chart-card — Chart Card (图表卡)
+- 轴: component
+- 定义: 指标数字 + 趋势图 + 同比标记的仪表盘原子。
+- 记谱: C[chart] · num:tabular · trend:spark · delta:±%
+- 别名: 图表 / 统计卡 / kpi card
+- 最小实现: .kpi strong{font-size:28px;font-variant-numeric:tabular-nums}…
+- 端点: /lexicon/chart-card.json
+
+### lex:faq — FAQ Accordion (折叠问答)
+- 轴: component
+- 定义: 问题行 + 展开区，grid-rows 0fr→1fr 实现高度自然过渡。
+- 记谱: C[faq] · open:0fr→1fr · chevron:rotate
+- 别名: 手风琴 / accordion / 常见问题
+- 最小实现: .faq div{display:grid;grid-template-rows:0fr;transition:.3s}…
+- 端点: /lexicon/faq.json
+
+### lex:footer — Footer (页脚)
+- 轴: component
+- 定义: 多列链接 + 版权行 + 状态指示，站点收尾与 SEO 承重墙。
+- 记谱: C[footer] · cols:brand+4 · legal:bottom-bar
+- 别名: 页尾 / 网站底部 / footer 栏
+- 最小实现: .ft{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:32px}…
+- 端点: /lexicon/footer.json
+
+### lex:onboarding — Onboarding Steps (引导步骤)
+- 轴: component
+- 定义: 分步引导条 + 当前步高亮，完成态打勾推进。
+- 记谱: C[onb] · steps:3 · state:done/on/todo
+- 别名: 新手引导 / stepper / 分步引导
+- 最小实现: .step.done .dot{background:var(--ok)}…
+- 端点: /lexicon/onboarding.json
+
+### lex:gsap — GSAP (GSAP 动画引擎)
+- 轴: toolkit
+- 定义: JavaScript 动画引擎：时间线编排、跨浏览器一致性、3.13 起全部插件免费商用。
+- 记谱: T[gsap] · tl:seq · ease:power3 · stagger:0.08
+- 别名: gsap / greensock / tweenmax 继任 / 时间线动画
+- 最小实现: gsap.timeline({ defaults: { ease: 'power3.out' } })…
+- 端点: /lexicon/gsap.json
+
+### lex:motion-lib — Motion (Motion（原 Framer Motion）)
+- 轴: toolkit
+- 定义: React 生态动效库：声明式 spring 物理、手势、布局动画与 exit 编排。
+- 记谱: T[motion] · type:spring · k:320 · c:24 · whileHover
+- 别名: framer motion / motion one / motion.dev / spring 库
+- 最小实现: <motion.button…
+- 端点: /lexicon/motion-lib.json
+
+### lex:lottie — Lottie (Lottie 动画)
+- 轴: toolkit
+- 定义: 把 After Effects 动画导出为 JSON，Web/端上矢量回放的行业标准。
+- 记谱: T[lottie] · ae:json · renderer:svg · loop:true
+- 别名: lottie / bodymovin / ae 导出动画
+- 最小实现: import lottie from 'lottie-web';…
+- 端点: /lexicon/lottie.json

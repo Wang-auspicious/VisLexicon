@@ -1,0 +1,1505 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "six-v3-editorial-review-20260902",
+  "reviewerId": "independent-six-v3-editorial-reviewer",
+  "overallVerdict": "PASS",
+  "reviewedAt": "2026-09-01T16:45:57.625Z",
+  "siteIds": [
+    "magic-ui",
+    "origin-ui",
+    "hover-dev",
+    "shadcn-ui",
+    "uiverse",
+    "21st-dev"
+  ],
+  "inputHashes": {
+    "magic-ui": "63b47bc7d2615a534cb9c87faf0fdfce10aba600428081e1d863c9370437a3d1",
+    "origin-ui": "ca79808059b7c9484345e1b2bf7dbbefb5a7b95927b497017cbdf6d02e4485d4",
+    "hover-dev": "34f73d21362172e93fe501124f7435af56a783c6f37e27bf6ee90d8902aa2fff",
+    "shadcn-ui": "b6883d0294a49ac4bf233a200a738077bd92c61fc90ced59cdb54beabe5cee4f",
+    "uiverse": "41a34de931c678d834965873e0324994feb2a8c47b20b1f670c9506bc180baa6",
+    "21st-dev": "5df5dc37ba21b25a65ff225fe1a3b4c07179de9fd7d8378a2d6d52e46af9954c"
+  },
+  "sites": [
+    {
+      "siteId": "magic-ui",
+      "sourceSiteId": "magic-ui",
+      "sourceV2BundleSha256": "63b47bc7d2615a534cb9c87faf0fdfce10aba600428081e1d863c9370437a3d1",
+      "sourceBundleSha256": "63b47bc7d2615a534cb9c87faf0fdfce10aba600428081e1d863c9370437a3d1",
+      "entryId": "magic-ui",
+      "entityId": "entity-magic-ui",
+      "descriptionZh": "面向营销页面的动效 UI 库，提供 150+ 个基于 React、Tailwind CSS 与 Motion 的组件和效果；文档可实时预览、复制并用 shadcn CLI 安装。免费仓库采用 MIT，Pro 模板与高级区块另行付费。",
+      "editorial": {
+        "name": "Magic UI",
+        "descriptionZh": "面向营销页面的动效 UI 库，提供 150+ 个基于 React、Tailwind CSS 与 Motion 的组件和效果；文档可实时预览、复制并用 shadcn CLI 安装。免费仓库采用 MIT，Pro 模板与高级区块另行付费。",
+        "pricing": "Free core components + paid Magic UI Pro",
+        "evidence": [
+          {
+            "field": "name",
+            "evidenceUrl": "https://magicui.design/",
+            "statement": "首页以 Magic UI 标识该入口。"
+          },
+          {
+            "field": "descriptionZh",
+            "evidenceUrl": "https://magicui.design/",
+            "statement": "首页说明有 150+ 个基于 React、TypeScript、Tailwind CSS 与 Motion 的免费开源动效组件和效果。"
+          },
+          {
+            "field": "pricing",
+            "evidenceUrl": "https://magicui.design/",
+            "statement": "首页区分 150+ 免费组件与另行销售的 Magic UI Pro 区块和模板。"
+          }
+        ],
+        "verdict": "PASS"
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "page-blocks-embeddable-controls",
+      "classificationStatus": "confirmed",
+      "facets": {
+        "scenarios": [
+          "marketing"
+        ],
+        "deliverables": [
+          "component",
+          "block"
+        ],
+        "actions": [
+          "browse",
+          "copy",
+          "install",
+          "preview"
+        ],
+        "media": [
+          "ui",
+          "motion"
+        ],
+        "platforms": [
+          "web",
+          "cli"
+        ],
+        "technologies": [
+          "react",
+          "tailwind",
+          "typescript",
+          "motion",
+          "shadcn-ui"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "freemium",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "classificationReasons": [
+        {
+          "statement": "该入口反复提供可预览、复制并安装到项目中的动效 UI 组件和营销页面区块。",
+          "evidenceUrl": "https://magicui.design/"
+        },
+        {
+          "statement": "单项文档给出源码、安装命令、用法和参数，主要交付物是可嵌入代码而不是灵感截图。",
+          "evidenceUrl": "https://magicui.design/docs/components/glyph-matrix"
+        }
+      ],
+      "reasons": [
+        {
+          "statement": "该入口反复提供可预览、复制并安装到项目中的动效 UI 组件和营销页面区块。",
+          "evidenceUrl": "https://magicui.design/"
+        },
+        {
+          "statement": "单项文档给出源码、安装命令、用法和参数，主要交付物是可嵌入代码而不是灵感截图。",
+          "evidenceUrl": "https://magicui.design/docs/components/glyph-matrix"
+        }
+      ],
+      "editorialReviewerId": "independent-six-v3-editorial-reviewer",
+      "reviewedAt": "2026-09-01T16:45:57.625Z",
+      "verdict": "PASS",
+      "factCorrections": [
+        {
+          "operation": "replace",
+          "field": "author",
+          "value": "Dillion Verma (@dillionverma)",
+          "sourceUrl": "https://magicui.design/",
+          "evidence": "官网页脚直接写明 Built by dillion，并链接 @dillionverma。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "organization",
+          "value": "unknown",
+          "sourceUrl": "https://magicui.design/",
+          "evidence": "复核首页、组件目录和详情页后仅确认项目名与个人作者，未发现可证明法律组织名称的一手声明。",
+          "confidence": 1
+        },
+        {
+          "operation": "replace",
+          "field": "repository",
+          "value": "https://github.com/magicuidesign/magicui",
+          "sourceUrl": "https://magicui.design/",
+          "evidence": "官网导航和页脚直接链接 magicuidesign/magicui，并说明 source code is available on GitHub。",
+          "confidence": 1
+        },
+        {
+          "operation": "replace",
+          "field": "license",
+          "value": "MIT",
+          "sourceUrl": "https://github.com/magicuidesign/magicui/blob/main/LICENSE.md",
+          "evidence": "官方仓库 LICENSE.md 是 MIT License，版权行归 Magic UI。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "pricing",
+          "value": "Free core components + paid Magic UI Pro",
+          "sourceUrl": "https://magicui.design/",
+          "evidence": "首页将 150+ 免费开源组件与付费 Magic UI Pro 区块、模板明确分开。",
+          "confidence": 1
+        }
+      ],
+      "factVerdicts": [
+        {
+          "field": "author",
+          "finalValue": "Dillion Verma (@dillionverma)",
+          "sourceUrl": "https://magicui.design/",
+          "evidence": "官网页脚直接写明 Built by dillion，并链接 @dillionverma。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "repository",
+          "finalValue": "https://github.com/magicuidesign/magicui",
+          "sourceUrl": "https://magicui.design/",
+          "evidence": "官网导航和页脚直接链接 magicuidesign/magicui，并说明 source code is available on GitHub。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "license",
+          "finalValue": "MIT",
+          "sourceUrl": "https://github.com/magicuidesign/magicui/blob/main/LICENSE.md",
+          "evidence": "官方仓库 LICENSE.md 是 MIT License，版权行归 Magic UI。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "organization",
+          "finalValue": "unknown",
+          "sourceUrl": "https://magicui.design/",
+          "evidence": "复核首页、组件目录和详情页后仅确认项目名与个人作者，未发现可证明法律组织名称的一手声明。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "pricing",
+          "finalValue": "Free core components + paid Magic UI Pro",
+          "sourceUrl": "https://magicui.design/",
+          "evidence": "首页将 150+ 免费开源组件与付费 Magic UI Pro 区块、模板明确分开。",
+          "confidence": 1,
+          "verdict": "PASS"
+        }
+      ],
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "sourceUrl": "https://magicui.design/",
+          "finalUrl": "https://magicui.design/",
+          "title": "Magic UI — Animated UI Components",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；首页明确给出项目名、150+ 免费开源动效组件定位、技术栈与组件入口。"
+        },
+        {
+          "role": "breadth",
+          "sourceUrl": "https://magicui.design/docs/components",
+          "finalUrl": "https://magicui.design/docs/components",
+          "title": "Magic UI Components",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；目录列出动效、文字、按钮、背景、设备模拟等大量不同组件。"
+        },
+        {
+          "role": "proof",
+          "sourceUrl": "https://magicui.design/docs/components/glyph-matrix",
+          "finalUrl": "https://magicui.design/docs/components/glyph-matrix",
+          "title": "Magic UI Glyph Matrix",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；详情页含实际代码、CLI 安装、用法、Props 与编辑仓库链接。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/magic-ui/v2-identity.png",
+          "sha256": "b519f4d28f983ede78f70d8be54a026eca47e0fd16ceea1f245ef86f9484d34a",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面清楚呈现 Magic UI 名称、150+ 组件定位和技术栈，无空白、错误页或骨架屏。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/magic-ui/v2-breadth.png",
+          "sha256": "147bf9bcf398c31815c6a7a95baaa24a16af63ad980f954eb8ab13fd8f8eaf61",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面展示多列组件目录和不同组件名称，与身份图内容互补。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/magic-ui/v2-proof.png",
+          "sha256": "486f68cb73d264e6993612953cbd90c91228ee73418728b2025997721989ab87",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面显示 Glyph Matrix 实际预览和安装区域，且与前两张不重复。"
+        }
+      ],
+      "scopeNotes": "审核对象是 https://magicui.design/ 的免费组件与文档入口；Pro 模板、Showcase 中的第三方站点和单个外部案例不是本条目的独立分类对象。",
+      "rightsNotes": "MIT 结论仅覆盖 magicuidesign/magicui 官方仓库中的软件及相关文档；不把该 MIT 扩大到 Magic UI Pro 的付费模板、第三方 Showcase 图片、品牌资产或外链内容。"
+    },
+    {
+      "siteId": "origin-ui",
+      "sourceSiteId": "origin-ui",
+      "sourceV2BundleSha256": "ca79808059b7c9484345e1b2bf7dbbefb5a7b95927b497017cbdf6d02e4485d4",
+      "sourceBundleSha256": "ca79808059b7c9484345e1b2bf7dbbefb5a7b95927b497017cbdf6d02e4485d4",
+      "entryId": "origin-ui",
+      "entityId": "entity-origin-ui",
+      "descriptionZh": "Cal.com 团队公开构建的组件与设计系统，基于 Base UI 和 Tailwind CSS，提供可复制到项目中自行维护的基础组件与复合控件；目前仍处早期开发阶段，可能随 Base UI 演进产生破坏性变更。",
+      "editorial": {
+        "name": "Coss UI",
+        "descriptionZh": "Cal.com 团队公开构建的组件与设计系统，基于 Base UI 和 Tailwind CSS，提供可复制到项目中自行维护的基础组件与复合控件；目前仍处早期开发阶段，可能随 Base UI 演进产生破坏性变更。",
+        "pricing": "Free",
+        "evidence": [
+          {
+            "field": "name",
+            "evidenceUrl": "https://coss.com/ui",
+            "statement": "入口页以 coss.com ui / coss ui 标识当前产品，不再是 Origin UI 演示站。"
+          },
+          {
+            "field": "descriptionZh",
+            "evidenceUrl": "https://coss.com/ui/docs",
+            "statement": "官方介绍说明它是 Cal.com 将逐步采用的 Base UI + Tailwind CSS 组件系统，源码复制到项目中，并明确处于 early development。"
+          },
+          {
+            "field": "pricing",
+            "evidenceUrl": "https://coss.com/ui/docs",
+            "statement": "官方文档声明项目在公开环境中构建并为开源项目，组件文档提供直接复制与安装。"
+          }
+        ],
+        "verdict": "PASS"
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "general-ui-components",
+      "classificationStatus": "confirmed",
+      "facets": {
+        "scenarios": [
+          "saas",
+          "admin"
+        ],
+        "deliverables": [
+          "component",
+          "primitive",
+          "block"
+        ],
+        "actions": [
+          "browse",
+          "search",
+          "copy",
+          "install",
+          "preview"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "cli"
+        ],
+        "technologies": [
+          "react",
+          "tailwind",
+          "base-ui"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation",
+          "searchable-directory"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "classificationReasons": [
+        {
+          "statement": "该入口主要交付可复制、安装并自行维护的 Base UI 组件、基础原语和复合控件。",
+          "evidenceUrl": "https://coss.com/ui/docs"
+        },
+        {
+          "statement": "Calendar 详情页给出可运行示例、shadcn CLI 安装命令、用法、API 和多个变体，证明它是组件实现而非案例画廊。",
+          "evidenceUrl": "https://coss.com/ui/docs/components/calendar"
+        }
+      ],
+      "reasons": [
+        {
+          "statement": "该入口主要交付可复制、安装并自行维护的 Base UI 组件、基础原语和复合控件。",
+          "evidenceUrl": "https://coss.com/ui/docs"
+        },
+        {
+          "statement": "Calendar 详情页给出可运行示例、shadcn CLI 安装命令、用法、API 和多个变体，证明它是组件实现而非案例画廊。",
+          "evidenceUrl": "https://coss.com/ui/docs/components/calendar"
+        }
+      ],
+      "editorialReviewerId": "independent-six-v3-editorial-reviewer",
+      "reviewedAt": "2026-09-01T16:45:57.625Z",
+      "verdict": "PASS",
+      "factCorrections": [
+        {
+          "operation": "replace",
+          "field": "author",
+          "value": "Cal.com, Inc. team",
+          "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+          "evidence": "组件文档页脚明确写明 Built by and for the team of Cal.com, Inc.。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "organization",
+          "value": "Cal.com, Inc.",
+          "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+          "evidence": "组件文档页脚直接给出 Cal.com, Inc. 法人名称。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "repository",
+          "value": "https://github.com/cosscom/coss",
+          "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+          "evidence": "官方组件文档导航直接链接 cosscom/coss 仓库。",
+          "confidence": 1
+        },
+        {
+          "operation": "replace",
+          "field": "license",
+          "value": "MIT",
+          "sourceUrl": "https://github.com/cosscom/coss/blob/main/apps/ui/package.json",
+          "evidence": "承载 coss.com/ui 文档、registry 与 particles 的 apps/ui/package.json 明确声明 license 为 MIT。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "pricing",
+          "value": "Free",
+          "sourceUrl": "https://coss.com/ui/docs",
+          "evidence": "官方介绍将该入口描述为公开构建的开源项目，并提供直接复制与安装源码的流程。",
+          "confidence": 1
+        }
+      ],
+      "factVerdicts": [
+        {
+          "field": "author",
+          "finalValue": "Cal.com, Inc. team",
+          "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+          "evidence": "组件文档页脚明确写明 Built by and for the team of Cal.com, Inc.。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "license",
+          "finalValue": "MIT",
+          "sourceUrl": "https://github.com/cosscom/coss/blob/main/apps/ui/package.json",
+          "evidence": "承载 coss.com/ui 文档、registry 与 particles 的 apps/ui/package.json 明确声明 license 为 MIT。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "organization",
+          "finalValue": "Cal.com, Inc.",
+          "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+          "evidence": "组件文档页脚直接给出 Cal.com, Inc. 法人名称。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "repository",
+          "finalValue": "https://github.com/cosscom/coss",
+          "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+          "evidence": "官方组件文档导航直接链接 cosscom/coss 仓库。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "pricing",
+          "finalValue": "Free",
+          "sourceUrl": "https://coss.com/ui/docs",
+          "evidence": "官方介绍将该入口描述为公开构建的开源项目，并提供直接复制与安装源码的流程。",
+          "confidence": 1,
+          "verdict": "PASS"
+        }
+      ],
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "sourceUrl": "https://coss.com/ui",
+          "finalUrl": "https://coss.com/ui",
+          "title": "Coss UI — Origin UI Components",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；当前页面身份是基于 Base UI 的 coss ui 组件库，并列出大量真实组件。旧标题中的 Origin UI 仅作为历史标签，不再用于最终简介。"
+        },
+        {
+          "role": "breadth",
+          "sourceUrl": "https://coss.com/ui/particles",
+          "finalUrl": "https://coss.com/ui/particles",
+          "title": "Coss UI Particles",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；页面提供筛选，并覆盖日历、表单、菜单、表格、导航等多种复合控件。"
+        },
+        {
+          "role": "proof",
+          "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+          "finalUrl": "https://coss.com/ui/docs/components/calendar",
+          "title": "Coss UI Calendar",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；Calendar 页面包含预览、CLI 安装、用法、API、响应式定制和多种选择模式。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/origin-ui/v2-identity.png",
+          "sha256": "1e2f4f36dd12a5a290cf36c071612d680cb1a3380139454f5c082ac68d00218b",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面清楚显示 coss.com ui、Base UI 定位、508 particles 入口和组件预览，无错误态。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/origin-ui/v2-breadth.png",
+          "sha256": "afec6e2a53e2e020cc177d8bbc3e8b3b6922b42ce61c91a78ea737d148ec28a6",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面显示 Browse Particles 搜索与类别筛选，角色与首页不同。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/origin-ui/v2-proof.png",
+          "sha256": "c10a60b4bf94f43811c7ad6e219fae6e6107ae2cf0a0348a2c608ec8f3d112fc",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面显示 Calendar 运行预览、安装命令和用法导航，是具体实现证据。"
+        }
+      ],
+      "scopeNotes": "审核对象是稳定入口 https://coss.com/ui，而不是把整个 coss.com、Cal.com Atoms、旧 Origin UI 入口或 cosscom/coss 单体仓库整体压成同一分类。entryId 继续保留 origin-ui 仅为稳定迁移标识。",
+      "rightsNotes": "MIT 结论严格限定到实际承载该入口页面、registry 与 particles 的 cosscom/coss/apps/ui 包。仓库根 package.json 和 packages/ui 声明 AGPL-3.0-or-later，apps/origin 等其他包也有各自许可；不得把 apps/ui 的 MIT 扩大成整仓统一 MIT。"
+    },
+    {
+      "siteId": "hover-dev",
+      "sourceSiteId": "hover-dev",
+      "sourceV2BundleSha256": "34f73d21362172e93fe501124f7435af56a783c6f37e27bf6ee90d8902aa2fff",
+      "sourceBundleSha256": "34f73d21362172e93fe501124f7435af56a783c6f37e27bf6ee90d8902aa2fff",
+      "entryId": "hover-dev",
+      "entityId": "entity-hover-dev",
+      "descriptionZh": "面向 React 与 Tailwind 项目的动效组件和页面区块库，覆盖按钮、轮播、看板、营销区块与 3D 场景；可先预览再复制源码，基础组件免费，更多内容需购买 Hover Pro，并受禁止单独转售或搭建竞品的自定义许可约束。",
+      "editorial": {
+        "name": "Hover.dev",
+        "descriptionZh": "面向 React 与 Tailwind 项目的动效组件和页面区块库，覆盖按钮、轮播、看板、营销区块与 3D 场景；可先预览再复制源码，基础组件免费，更多内容需购买 Hover Pro，并受禁止单独转售或搭建竞品的自定义许可约束。",
+        "pricing": "Free basic components + paid lifetime Hover Pro",
+        "evidence": [
+          {
+            "field": "name",
+            "evidenceUrl": "https://www.hover.dev/",
+            "statement": "官网品牌、法律页脚和邮件域均指向 Hover.dev。"
+          },
+          {
+            "field": "descriptionZh",
+            "evidenceUrl": "https://www.hover.dev/",
+            "statement": "首页说明组件以 React、Tailwind CSS 和 Motion 等技术构建，并可切换 CODE 取得源码。"
+          },
+          {
+            "field": "pricing",
+            "evidenceUrl": "https://www.hover.dev/pricing",
+            "statement": "官方价格页说明基础组件免费，Hover Pro 为一次购买的终身访问。"
+          }
+        ],
+        "verdict": "PASS"
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "page-blocks-embeddable-controls",
+      "classificationStatus": "confirmed",
+      "facets": {
+        "scenarios": [
+          "marketing"
+        ],
+        "deliverables": [
+          "component",
+          "block",
+          "template"
+        ],
+        "actions": [
+          "browse",
+          "copy",
+          "purchase",
+          "preview"
+        ],
+        "media": [
+          "ui",
+          "3d",
+          "motion"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "tailwind",
+          "motion"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "freemium",
+          "source-available"
+        ],
+        "licenses": [
+          "custom"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "searchable-directory"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "classificationReasons": [
+        {
+          "statement": "用户在该入口按组件和页面区块分类预览，并取得 React 与 Tailwind 源码，主要交付物是可嵌入实现。",
+          "evidenceUrl": "https://www.hover.dev/"
+        },
+        {
+          "statement": "按钮与 3D 分类持续展示可取得代码的单项实现，动效和三维只是媒介标签，不另立主类。",
+          "evidenceUrl": "https://www.hover.dev/components/three-d"
+        }
+      ],
+      "reasons": [
+        {
+          "statement": "用户在该入口按组件和页面区块分类预览，并取得 React 与 Tailwind 源码，主要交付物是可嵌入实现。",
+          "evidenceUrl": "https://www.hover.dev/"
+        },
+        {
+          "statement": "按钮与 3D 分类持续展示可取得代码的单项实现，动效和三维只是媒介标签，不另立主类。",
+          "evidenceUrl": "https://www.hover.dev/components/three-d"
+        }
+      ],
+      "editorialReviewerId": "independent-six-v3-editorial-reviewer",
+      "reviewedAt": "2026-09-01T16:45:57.625Z",
+      "verdict": "PASS",
+      "factCorrections": [
+        {
+          "operation": "replace",
+          "field": "author",
+          "value": "Tom Is Loading (@tomisloading)",
+          "sourceUrl": "https://www.hover.dev/",
+          "evidence": "官网页脚写明 Made with banana by @tomisloading，并链接作者账号。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "organization",
+          "value": "Hover Dev, LLC",
+          "sourceUrl": "https://www.hover.dev/license",
+          "evidence": "官方许可正文明确以 Hover Dev, LLC 为授权方。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "license",
+          "value": "Hover Dev Component License",
+          "sourceUrl": "https://www.hover.dev/license",
+          "evidence": "官方自定义许可允许商用、修改和项目内使用，但禁止作为独立产品转售、再分发或复制竞品服务。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "pricing",
+          "value": "Free basic components + paid lifetime Hover Pro",
+          "sourceUrl": "https://www.hover.dev/pricing",
+          "evidence": "价格页说明基础组件免费，Hover Pro 一次购买、终身访问全部组件和模板。",
+          "confidence": 1
+        }
+      ],
+      "factVerdicts": [
+        {
+          "field": "author",
+          "finalValue": "Tom Is Loading (@tomisloading)",
+          "sourceUrl": "https://www.hover.dev/",
+          "evidence": "官网页脚写明 Made with banana by @tomisloading，并链接作者账号。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "organization",
+          "finalValue": "Hover Dev, LLC",
+          "sourceUrl": "https://www.hover.dev/license",
+          "evidence": "官方许可正文明确以 Hover Dev, LLC 为授权方。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "license",
+          "finalValue": "Hover Dev Component License",
+          "sourceUrl": "https://www.hover.dev/license",
+          "evidence": "官方自定义许可允许商用、修改和项目内使用，但禁止作为独立产品转售、再分发或复制竞品服务。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "pricing",
+          "finalValue": "Free basic components + paid lifetime Hover Pro",
+          "sourceUrl": "https://www.hover.dev/pricing",
+          "evidence": "价格页说明基础组件免费，Hover Pro 一次购买、终身访问全部组件和模板。",
+          "confidence": 1,
+          "verdict": "PASS"
+        }
+      ],
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "sourceUrl": "https://www.hover.dev/",
+          "finalUrl": "https://www.hover.dev/",
+          "title": "Hover.dev — Animated React Components",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；首页直接说明是 React 与 Tailwind 动效组件和模板，并展示取得源码的操作。"
+        },
+        {
+          "role": "breadth",
+          "sourceUrl": "https://www.hover.dev/components/buttons",
+          "finalUrl": "https://www.hover.dev/components/buttons",
+          "title": "Hover.dev Buttons",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；按钮页同时列出多个免费与 Pro 项目，并保留代码入口。"
+        },
+        {
+          "role": "proof",
+          "sourceUrl": "https://www.hover.dev/components/three-d",
+          "finalUrl": "https://www.hover.dev/components/three-d",
+          "title": "Hover.dev Three D Components",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；3D 页面包含多个可预览项目、免费标记或 Pro 代码入口。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/hover-dev/v2-identity.png",
+          "sha256": "6d36f960d58b8e6559c77b0c414fbf56308f78a0bcef752a893aeb7794e9b6d0",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面展示 Animated UI Components for React & Tailwind、导航和源码说明，无错误页。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/hover-dev/v2-breadth.png",
+          "sha256": "05f11262d054fc84f79cd048214662ac2e837aa798ba9331574ed5211ae0f7c2",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面清楚展示 Wet Paint、Marquee 等按钮及完整类别栏，与首页互补。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/hover-dev/v2-proof.png",
+          "sha256": "5abe552cdc58ea0b23b303bad72f72c1ae0c0b5d0b96e9dc7b0df2ef28e97e78",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面呈现具体 Light Rubik's Cube 3D 组件及 Get the code 入口。"
+        }
+      ],
+      "scopeNotes": "审核对象是 Hover.dev 的组件与页面区块入口；模板商店和颜色生成器虽同域存在，但不是本条目主分类的独立 Content Unit。",
+      "rightsNotes": "Hover Dev Component License 是自定义、源码可取得但受限的许可。它允许在项目中商用和修改，却禁止把组件作为独立产品转售、再分发或用于复制竞品服务，因此 facets 必须是 source-available + custom，不能写 open-source。已复核官网、三页证据、许可和价格页，官方未声明一个覆盖该组件集合的源码仓库。"
+    },
+    {
+      "siteId": "shadcn-ui",
+      "sourceSiteId": "shadcn-ui",
+      "sourceV2BundleSha256": "b6883d0294a49ac4bf233a200a738077bd92c61fc90ced59cdb54beabe5cee4f",
+      "sourceBundleSha256": "b6883d0294a49ac4bf233a200a738077bd92c61fc90ced59cdb54beabe5cee4f",
+      "entryId": "shadcn-ui",
+      "entityId": "entity-shadcn-ui",
+      "descriptionZh": "开放源码的组件集合与代码分发平台，通过 registry 和 CLI 将组件源码装入项目，由使用者直接修改并组成自己的组件库；官方还提供区块、主题与跨框架文档，适合希望掌控实现细节的设计师和开发者。",
+      "editorial": {
+        "name": "shadcn/ui",
+        "descriptionZh": "开放源码的组件集合与代码分发平台，通过 registry 和 CLI 将组件源码装入项目，由使用者直接修改并组成自己的组件库；官方还提供区块、主题与跨框架文档，适合希望掌控实现细节的设计师和开发者。",
+        "pricing": "Free",
+        "evidence": [
+          {
+            "field": "name",
+            "evidenceUrl": "https://ui.shadcn.com/",
+            "statement": "官方首页与文档一致使用 shadcn/ui 名称。"
+          },
+          {
+            "field": "descriptionZh",
+            "evidenceUrl": "https://ui.shadcn.com/docs",
+            "statement": "官方介绍将其定义为组件集合和代码分发平台，强调不是传统包式组件库，而是用可修改源码构建自己的组件库。"
+          },
+          {
+            "field": "pricing",
+            "evidenceUrl": "https://ui.shadcn.com/docs",
+            "statement": "官方介绍明确写 Open Source 与 Open Code，组件、registry 和 CLI 文档可公开使用。"
+          }
+        ],
+        "verdict": "PASS"
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "design-system-suites",
+      "classificationStatus": "confirmed",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "primitive",
+          "block",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "copy",
+          "install",
+          "edit",
+          "preview"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "cli",
+          "mcp"
+        ],
+        "technologies": [
+          "react",
+          "tailwind",
+          "radix-ui",
+          "base-ui",
+          "shadcn-ui"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "classificationReasons": [
+        {
+          "statement": "该入口以一致 schema、CLI、registry、主题和大量组件帮助用户建立自己的完整组件系统。",
+          "evidenceUrl": "https://ui.shadcn.com/docs"
+        },
+        {
+          "statement": "Blocks 页面把组件组合成可安装的后台、登录和应用区块，证明它超过单个原语而形成完整套件。",
+          "evidenceUrl": "https://ui.shadcn.com/blocks"
+        }
+      ],
+      "reasons": [
+        {
+          "statement": "该入口以一致 schema、CLI、registry、主题和大量组件帮助用户建立自己的完整组件系统。",
+          "evidenceUrl": "https://ui.shadcn.com/docs"
+        },
+        {
+          "statement": "Blocks 页面把组件组合成可安装的后台、登录和应用区块，证明它超过单个原语而形成完整套件。",
+          "evidenceUrl": "https://ui.shadcn.com/blocks"
+        }
+      ],
+      "editorialReviewerId": "independent-six-v3-editorial-reviewer",
+      "reviewedAt": "2026-09-01T16:45:57.625Z",
+      "verdict": "PASS",
+      "factCorrections": [
+        {
+          "operation": "replace",
+          "field": "author",
+          "value": "shadcn",
+          "sourceUrl": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md",
+          "evidence": "官方仓库 LICENSE.md 的版权行为 Copyright (c) 2023 shadcn。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "organization",
+          "value": "shadcn-ui",
+          "sourceUrl": "https://github.com/shadcn-ui/ui",
+          "evidence": "官方代码仓库由 shadcn-ui GitHub 组织维护，仓库主页回链 https://ui.shadcn.com。",
+          "confidence": 1
+        },
+        {
+          "operation": "replace",
+          "field": "repository",
+          "value": "https://github.com/shadcn-ui/ui",
+          "sourceUrl": "https://github.com/shadcn-ui/ui",
+          "evidence": "仓库描述和 homepage 字段直接对应 ui.shadcn.com，身份闭环。",
+          "confidence": 1
+        },
+        {
+          "operation": "replace",
+          "field": "license",
+          "value": "MIT",
+          "sourceUrl": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md",
+          "evidence": "官方仓库许可文件明确为 MIT License。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "pricing",
+          "value": "Free",
+          "sourceUrl": "https://ui.shadcn.com/docs",
+          "evidence": "官方文档声明 Open Source、Open Code，并提供公开的组件分发流程。",
+          "confidence": 1
+        }
+      ],
+      "factVerdicts": [
+        {
+          "field": "author",
+          "finalValue": "shadcn",
+          "sourceUrl": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md",
+          "evidence": "官方仓库 LICENSE.md 的版权行为 Copyright (c) 2023 shadcn。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "repository",
+          "finalValue": "https://github.com/shadcn-ui/ui",
+          "sourceUrl": "https://github.com/shadcn-ui/ui",
+          "evidence": "仓库描述和 homepage 字段直接对应 ui.shadcn.com，身份闭环。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "license",
+          "finalValue": "MIT",
+          "sourceUrl": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md",
+          "evidence": "官方仓库许可文件明确为 MIT License。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "organization",
+          "finalValue": "shadcn-ui",
+          "sourceUrl": "https://github.com/shadcn-ui/ui",
+          "evidence": "官方代码仓库由 shadcn-ui GitHub 组织维护，仓库主页回链 https://ui.shadcn.com。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "pricing",
+          "finalValue": "Free",
+          "sourceUrl": "https://ui.shadcn.com/docs",
+          "evidence": "官方文档声明 Open Source、Open Code，并提供公开的组件分发流程。",
+          "confidence": 1,
+          "verdict": "PASS"
+        }
+      ],
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "sourceUrl": "https://ui.shadcn.com/",
+          "finalUrl": "https://ui.shadcn.com/",
+          "title": "shadcn/ui — Build Your Component Library",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；首页把产品定位为设计系统基础，并强调组件可组合、可访问、可自行修改。"
+        },
+        {
+          "role": "breadth",
+          "sourceUrl": "https://ui.shadcn.com/docs/components",
+          "finalUrl": "https://ui.shadcn.com/docs/components",
+          "title": "shadcn/ui Components",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；目录覆盖表单、导航、数据展示、反馈和应用组件，并区分 Base 与 Radix 文档。"
+        },
+        {
+          "role": "proof",
+          "sourceUrl": "https://ui.shadcn.com/blocks",
+          "finalUrl": "https://ui.shadcn.com/blocks",
+          "title": "shadcn/ui Blocks",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；Blocks 页面展示可预览、查看代码并用 npx shadcn 安装的应用级区块。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/shadcn-ui/v2-identity.png",
+          "sha256": "03c1d95841d2ff7ebc8244e5086f5aab5bdd89192e003a3c34ac06f051effde1",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面显示 The Foundation for your Design System 与完整组合示例，无加载错误。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/shadcn-ui/v2-breadth.png",
+          "sha256": "64017b107977d16bb8ceab7186949dd40b6809481d0e2de4b2069f13ebb97049",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面完整列出多列组件目录，与身份图不同。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/shadcn-ui/v2-proof.png",
+          "sha256": "1d84d35f937e5d5af952e9b78826fa3c2c0929e27597588af9507f2fe51a4ad2",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面显示可预览和 npx 安装的 dashboard 区块，是具体组合能力证据。"
+        }
+      ],
+      "scopeNotes": "审核对象是 ui.shadcn.com 的官方组件、registry、CLI 与 Blocks 入口，不把第三方 registry 目录中的每个外部提供者或具体组件包自动并入同一 Source Entity。",
+      "rightsNotes": "MIT 结论覆盖 shadcn-ui/ui 官方仓库的软件与文档。组件依赖的 Radix、Base UI、图标、字体和第三方 registry 项目各有自己的许可；不能把 shadcn/ui 的 MIT 自动扩大到这些依赖或第三方内容。"
+    },
+    {
+      "siteId": "uiverse",
+      "sourceSiteId": "uiverse",
+      "sourceV2BundleSha256": "41a34de931c678d834965873e0324994feb2a8c47b20b1f670c9506bc180baa6",
+      "sourceBundleSha256": "41a34de931c678d834965873e0324994feb2a8c47b20b1f670c9506bc180baa6",
+      "entryId": "uiverse",
+      "entityId": "entity-uiverse",
+      "descriptionZh": "社区共建的开源 UI 元素库，可按按钮、卡片、加载器与表单等类别浏览；单项页面给出实时效果和可复制的 HTML/CSS，并可导出 React、支持 Tailwind 与 Figma，站内 UI 元素统一采用 MIT 许可。",
+      "editorial": {
+        "name": "Uiverse",
+        "descriptionZh": "社区共建的开源 UI 元素库，可按按钮、卡片、加载器与表单等类别浏览；单项页面给出实时效果和可复制的 HTML/CSS，并可导出 React、支持 Tailwind 与 Figma，站内 UI 元素统一采用 MIT 许可。",
+        "pricing": "Free",
+        "evidence": [
+          {
+            "field": "name",
+            "evidenceUrl": "https://uiverse.io/",
+            "statement": "首页与页脚使用 Uiverse 名称。"
+          },
+          {
+            "field": "descriptionZh",
+            "evidenceUrl": "https://uiverse.io/",
+            "statement": "首页将其定义为社区共建 UI 库，并明确可复制为 HTML/CSS、Tailwind、React 与 Figma。"
+          },
+          {
+            "field": "pricing",
+            "evidenceUrl": "https://uiverse.io/",
+            "statement": "首页将核心元素库标为开源，元素详情无需购买即可查看和复制代码。"
+          }
+        ],
+        "verdict": "PASS"
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "general-ui-components",
+      "classificationStatus": "confirmed",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component"
+        ],
+        "actions": [
+          "browse",
+          "search",
+          "copy",
+          "export",
+          "submit",
+          "preview"
+        ],
+        "media": [
+          "ui",
+          "motion"
+        ],
+        "platforms": [
+          "web",
+          "figma"
+        ],
+        "technologies": [
+          "react",
+          "tailwind",
+          "css"
+        ],
+        "workflowStages": [
+          "discovery",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "community-feed",
+          "searchable-directory"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "classificationReasons": [
+        {
+          "statement": "该入口的主要动作是搜索、预览并复制社区提交的 UI 元素源码，而不是参与泛社区讨论。",
+          "evidenceUrl": "https://uiverse.io/"
+        },
+        {
+          "statement": "单项页面同时给出运行效果、HTML/CSS 源码和 React 导出，主要交付物是通用界面组件实现。",
+          "evidenceUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20"
+        }
+      ],
+      "reasons": [
+        {
+          "statement": "该入口的主要动作是搜索、预览并复制社区提交的 UI 元素源码，而不是参与泛社区讨论。",
+          "evidenceUrl": "https://uiverse.io/"
+        },
+        {
+          "statement": "单项页面同时给出运行效果、HTML/CSS 源码和 React 导出，主要交付物是通用界面组件实现。",
+          "evidenceUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20"
+        }
+      ],
+      "editorialReviewerId": "independent-six-v3-editorial-reviewer",
+      "reviewedAt": "2026-09-01T16:45:57.625Z",
+      "verdict": "PASS",
+      "factCorrections": [
+        {
+          "operation": "replace",
+          "field": "author",
+          "value": "Uiverse community contributors",
+          "sourceUrl": "https://uiverse.io/",
+          "evidence": "首页明确自述为 Community-built library，单项页面分别标注具体投稿作者。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "organization",
+          "value": "Pixel Galaxies",
+          "sourceUrl": "https://uiverse.io/",
+          "evidence": "官网页脚版权行写明 2026 Pixel Galaxies - Uiverse.io。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "repository",
+          "value": "https://github.com/uiverse-io/galaxy",
+          "sourceUrl": "https://uiverse.io/",
+          "evidence": "首页直接提供 Star on GitHub 链接到 uiverse-io/galaxy。",
+          "confidence": 1
+        },
+        {
+          "operation": "replace",
+          "field": "license",
+          "value": "MIT",
+          "sourceUrl": "https://uiverse.io/",
+          "evidence": "官网页脚明确写 All content (UI elements) on this site are published under the MIT License。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "pricing",
+          "value": "Free",
+          "sourceUrl": "https://uiverse.io/",
+          "evidence": "核心元素库公开浏览与复制，并在站点范围声明 UI elements 使用 MIT。",
+          "confidence": 1
+        }
+      ],
+      "factVerdicts": [
+        {
+          "field": "author",
+          "finalValue": "Uiverse community contributors",
+          "sourceUrl": "https://uiverse.io/",
+          "evidence": "首页明确自述为 Community-built library，单项页面分别标注具体投稿作者。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "license",
+          "finalValue": "MIT",
+          "sourceUrl": "https://uiverse.io/",
+          "evidence": "官网页脚明确写 All content (UI elements) on this site are published under the MIT License。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "organization",
+          "finalValue": "Pixel Galaxies",
+          "sourceUrl": "https://uiverse.io/",
+          "evidence": "官网页脚版权行写明 2026 Pixel Galaxies - Uiverse.io。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "repository",
+          "finalValue": "https://github.com/uiverse-io/galaxy",
+          "sourceUrl": "https://uiverse.io/",
+          "evidence": "首页直接提供 Star on GitHub 链接到 uiverse-io/galaxy。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "pricing",
+          "finalValue": "Free",
+          "sourceUrl": "https://uiverse.io/",
+          "evidence": "核心元素库公开浏览与复制，并在站点范围声明 UI elements 使用 MIT。",
+          "confidence": 1,
+          "verdict": "PASS"
+        }
+      ],
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "sourceUrl": "https://uiverse.io/",
+          "finalUrl": "https://uiverse.io/",
+          "title": "Uiverse — Community UI Elements",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；首页说明社区共建、可搜索，并明确 HTML/CSS、Tailwind、React 与 Figma 交付形式。"
+        },
+        {
+          "role": "breadth",
+          "sourceUrl": "https://uiverse.io/elements",
+          "finalUrl": "https://uiverse.io/elements",
+          "title": "Uiverse Elements",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；页面按按钮、复选框、开关、卡片、加载器、输入、表单和图案等类别呈现大量元素。"
+        },
+        {
+          "role": "proof",
+          "sourceUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20",
+          "finalUrl": "https://uiverse.io/kennyotsu/fresh-lizard-20",
+          "title": "Fresh Lizard 20 — Uiverse",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；具体 Loader 页面含作者、实时效果、完整 HTML/CSS、复制和 React 导出。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/uiverse/v2-identity.png",
+          "sha256": "559547761171365efbde26c434674dd2c256a028b9a27093e3d7aea1072d8675",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面清楚显示开源 UI 库定位、搜索与多种交付格式，无错误态。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/uiverse/v2-breadth.png",
+          "sha256": "345d549835859272eb68c1bf180747653226e0a11873b45e5ea465a746d2a588",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面展示分类栏、不同作者和多种 UI 元素预览，与首页互补。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/uiverse/v2-proof.png",
+          "sha256": "5ccf719527df05f46a9d8f232a6d630708456f98311d895d20b8bc74e199732e",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面呈现 Loader 运行效果、CSS 源码、React 导出和作者信息，是具体可用性证据。"
+        }
+      ],
+      "scopeNotes": "审核对象是 uiverse.io 的社区 UI elements 入口；Challenges、Blog、AI Design Systems 和 UI Kits 可在后续按不同主要动作拆成独立 Site Entry，不继承本分类。",
+      "rightsNotes": "许可结论直接来自 Uiverse 官网对站内 UI elements 的 MIT 声明。该声明不自动覆盖广告素材、用户头像、评论、第三方链接、Pixel Galaxies 的商标或站内其他产品线；仓库 MIT 也不被反向扩大到这些内容。"
+    },
+    {
+      "siteId": "21st-dev",
+      "sourceSiteId": "21st-dev",
+      "sourceV2BundleSha256": "5df5dc37ba21b25a65ff225fe1a3b4c07179de9fd7d8378a2d6d52e46af9954c",
+      "sourceBundleSha256": "5df5dc37ba21b25a65ff225fe1a3b4c07179de9fd7d8378a2d6d52e46af9954c",
+      "entryId": "21st-dev",
+      "entityId": "entity-21st-dev",
+      "descriptionZh": "21st Labs Inc. 运营社区 UI 注册表，收录 12,000+ 组件、模板与 shadcn 主题，可预览后复制 AI 提示词或用 CLI 安装。浏览免费但复制次数受限，会员与部分模板付费；内容权利按作者和平台条款分别管理。",
+      "editorial": {
+        "name": "21st.dev",
+        "descriptionZh": "21st Labs Inc. 运营社区 UI 注册表，收录 12,000+ 组件、模板与 shadcn 主题，可预览后复制 AI 提示词或用 CLI 安装。浏览免费但复制次数受限，会员与部分模板付费；内容权利按作者和平台条款分别管理。",
+        "pricing": "Freemium + paid membership/AI plans + per-template purchases",
+        "evidence": [
+          {
+            "field": "name",
+            "evidenceUrl": "https://21st.dev/",
+            "statement": "官网使用 21st 品牌并由 21st.dev 域名承载社区注册表。"
+          },
+          {
+            "field": "descriptionZh",
+            "evidenceUrl": "https://21st.dev/",
+            "statement": "首页声明有 12,000+ 组件、模板和 shadcn 主题，并说明可复制 AI 提示词或用 shadcn CLI 安装。"
+          },
+          {
+            "field": "pricing",
+            "evidenceUrl": "https://21st.dev/pricing",
+            "statement": "价格页区分 Builder、Builder + AI、Team、AI credits 与作者单独销售的模板。"
+          }
+        ],
+        "verdict": "PASS"
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "general-ui-components",
+      "classificationStatus": "confirmed",
+      "facets": {
+        "scenarios": [
+          "ai",
+          "agent"
+        ],
+        "deliverables": [
+          "component",
+          "block",
+          "template",
+          "prompt"
+        ],
+        "actions": [
+          "browse",
+          "search",
+          "copy",
+          "install",
+          "submit",
+          "purchase",
+          "preview"
+        ],
+        "media": [
+          "ui",
+          "motion"
+        ],
+        "platforms": [
+          "web",
+          "cli",
+          "mcp"
+        ],
+        "technologies": [
+          "react",
+          "tailwind",
+          "shadcn-ui"
+        ],
+        "workflowStages": [
+          "discovery",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "freemium",
+          "login-required",
+          "source-available"
+        ],
+        "licenses": [
+          "custom"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "community-feed",
+          "marketplace",
+          "searchable-directory"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "classificationReasons": [
+        {
+          "statement": "用户在站内搜索、预览并把社区组件以 AI 提示词或 shadcn CLI 安装到自己的项目，主要交付物是界面组件实现。",
+          "evidenceUrl": "https://21st.dev/"
+        },
+        {
+          "statement": "Community Components 页面反复展示带作者、预览和分类的组件单元；社区和市场结构作为组织标签，不改变组件主类。",
+          "evidenceUrl": "https://21st.dev/community/components"
+        }
+      ],
+      "reasons": [
+        {
+          "statement": "用户在站内搜索、预览并把社区组件以 AI 提示词或 shadcn CLI 安装到自己的项目，主要交付物是界面组件实现。",
+          "evidenceUrl": "https://21st.dev/"
+        },
+        {
+          "statement": "Community Components 页面反复展示带作者、预览和分类的组件单元；社区和市场结构作为组织标签，不改变组件主类。",
+          "evidenceUrl": "https://21st.dev/community/components"
+        }
+      ],
+      "editorialReviewerId": "independent-six-v3-editorial-reviewer",
+      "reviewedAt": "2026-09-01T16:45:57.625Z",
+      "verdict": "PASS",
+      "factCorrections": [
+        {
+          "operation": "replace",
+          "field": "author",
+          "value": "21st Labs Inc. and respective marketplace authors",
+          "sourceUrl": "https://21st.dev/terms",
+          "evidence": "Marketplace 条款说明代码、内容和材料由相应作者与 21st Labs Inc. 分别拥有，不能只写笼统的 21st.dev 团队。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "organization",
+          "value": "21st Labs Inc.",
+          "sourceUrl": "https://21st.dev/terms",
+          "evidence": "Terms 第 1 节明确服务由 21st Labs Inc. 运营。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "license",
+          "value": "21st Marketplace Terms (per-author underlying licenses)",
+          "sourceUrl": "https://21st.dev/terms",
+          "evidence": "条款规定 Marketplace 内容、预览和元数据的使用限制，同时说明底层第三方组件可由作者另行授权；不存在可扩大到全站的统一 SPDX 许可。",
+          "confidence": 1
+        },
+        {
+          "operation": "add",
+          "field": "pricing",
+          "value": "Freemium + paid membership/AI plans + per-template purchases",
+          "sourceUrl": "https://21st.dev/pricing",
+          "evidence": "价格页列出付费 Builder、Builder + AI、Team 与模板逐项购买；首页说明浏览免费且每日有有限免费复制。",
+          "confidence": 1
+        }
+      ],
+      "factVerdicts": [
+        {
+          "field": "author",
+          "finalValue": "21st Labs Inc. and respective marketplace authors",
+          "sourceUrl": "https://21st.dev/terms",
+          "evidence": "Marketplace 条款说明代码、内容和材料由相应作者与 21st Labs Inc. 分别拥有，不能只写笼统的 21st.dev 团队。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "organization",
+          "finalValue": "21st Labs Inc.",
+          "sourceUrl": "https://21st.dev/terms",
+          "evidence": "Terms 第 1 节明确服务由 21st Labs Inc. 运营。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "license",
+          "finalValue": "21st Marketplace Terms (per-author underlying licenses)",
+          "sourceUrl": "https://21st.dev/terms",
+          "evidence": "条款规定 Marketplace 内容、预览和元数据的使用限制，同时说明底层第三方组件可由作者另行授权；不存在可扩大到全站的统一 SPDX 许可。",
+          "confidence": 1,
+          "verdict": "PASS"
+        },
+        {
+          "field": "pricing",
+          "finalValue": "Freemium + paid membership/AI plans + per-template purchases",
+          "sourceUrl": "https://21st.dev/pricing",
+          "evidence": "价格页列出付费 Builder、Builder + AI、Team 与模板逐项购买；首页说明浏览免费且每日有有限免费复制。",
+          "confidence": 1,
+          "verdict": "PASS"
+        }
+      ],
+      "pageVerdicts": [
+        {
+          "role": "identity",
+          "sourceUrl": "https://21st.dev/",
+          "finalUrl": "https://21st.dev/",
+          "title": "21st.dev — The NPM for Design Engineers",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；首页直接说明 12,000+ 组件、模板和主题，并解释提示词复制、CLI 安装、作者与付费边界。"
+        },
+        {
+          "role": "breadth",
+          "sourceUrl": "https://21st.dev/community/components",
+          "finalUrl": "https://21st.dev/community/components",
+          "title": "21st.dev Community Components",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；页面展示大量不同作者和类别的社区组件、预览图与单项详情入口。"
+        },
+        {
+          "role": "proof",
+          "sourceUrl": "https://21st.dev/community/themes",
+          "finalUrl": "https://21st.dev/community/themes",
+          "title": "21st.dev Community Themes",
+          "verdict": "PASS",
+          "evidence": "2026-09-02 重新读取成功；页面展示具名作者的 shadcn 主题、标签筛选、创建主题入口及通过 21st CLI 发布主题的说明，具体证明注册表不仅是外链目录。"
+        }
+      ],
+      "shotVerdicts": [
+        {
+          "role": "identity",
+          "src": "/shots/21st-dev/v2-identity.png",
+          "sha256": "ccfa3b426c1249541a0d7823dacacd857cf7f74bcac28f585cad8d7cb72a04cd",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面清楚显示 The living library、12,000+ 资源和营销区块预览，无错误态。"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/21st-dev/v2-breadth.png",
+          "sha256": "3fdc7c74523741e90d355ed7ece2a575b8fcc09d0ea2a20190b9ed2c6602b76a",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面显示组件搜索、作者与类别导航，以及多个具体动态和三维组件预览。"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/21st-dev/v2-proof.png",
+          "sha256": "c6ccb8f57f7045b73743a5c0beb8fffc67e1099d755c77113e505b196435af5a",
+          "width": 1280,
+          "height": 900,
+          "verdict": "PASS",
+          "evidence": "本地 PNG 可解码；画面展示可搜索、可创建、按作者署名的社区 shadcn 主题集合，与组件目录图互补。"
+        }
+      ],
+      "scopeNotes": "审核对象是 21st.dev 的社区 UI 注册表入口。Templates、Themes、Icons、21st AI、Agents Platform 和官方 GitHub 子项目可在后续按稳定 URL 与主要动作拆分；本条目不把 21st Labs Inc. 整个实体压成唯一分类。",
+      "rightsNotes": "21st.dev 没有可覆盖整个 Marketplace 的统一 SPDX 许可。Marketplace Terms 对平台预览、元数据和再发布设置限制，底层组件权利由相应作者及其单项许可决定；21st-dev/magic-mcp 的 ISC、其他官方插件的 Apache-2.0 或第三方组件的 MIT 均不得扩大成全站许可。官网页脚只链接 GitHub 组织，未确认一个覆盖整个 Marketplace、社区组件和预览资产的单一仓库。"
+    }
+  ]
+}

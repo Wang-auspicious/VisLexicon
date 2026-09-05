@@ -1,0 +1,68 @@
+{
+  "lever": "lexicon",
+  "id": "slide-swap",
+  "term_en": "Slide Swap",
+  "term_zh": "滑动换位",
+  "axis": "motion",
+  "aliases": [
+    "轮播",
+    "carousel",
+    "走马灯切换"
+  ],
+  "definition_zh": "内容块沿固定轴向滑入滑出完成替换，方向即语义。",
+  "notation": "M[swap] · dir:x+ · old:-24 · new:+24 · t:380ms",
+  "genes": [
+    {
+      "gene": "方向",
+      "value": "前进向左 / 返回向右（方向语义）"
+    },
+    {
+      "gene": "新旧交叠",
+      "value": "同时动（连贯）vs 先出后进（利落）"
+    }
+  ],
+  "minimal_code": {
+    "css": ".out{animation:slideOut .38s both}\n.in{animation:slideIn .38s both}\n@keyframes slideIn{from{translate:24px 0;opacity:0}}"
+  },
+  "params": [
+    {
+      "key": "dur",
+      "label": "时长",
+      "min": 200,
+      "max": 800,
+      "step": 50,
+      "unit": "ms",
+      "default": 380
+    }
+  ],
+  "anti_patterns": [
+    "别让方向与导航语义打架：前进后退必须反向。"
+  ],
+  "tech_notes": [
+    "入场/退场各一套 keyframes；容器 overflow:hidden 裁切。"
+  ],
+  "common_pairings": [
+    "spring"
+  ],
+  "related": [
+    "flip"
+  ],
+  "wild": [
+    {
+      "what": "iOS 设置二级页推入",
+      "source": "iOS",
+      "note": "方向即导航层级的教科书"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/slide-swap/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/slide-swap.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

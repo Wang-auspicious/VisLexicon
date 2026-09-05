@@ -1,0 +1,62 @@
+{
+  "lever": "lexicon",
+  "id": "swiss-intl",
+  "term_en": "Swiss / International",
+  "term_zh": "瑞士国际主义",
+  "axis": "aesthetic",
+  "aliases": [
+    "瑞士风",
+    "国际主义风格",
+    "网格排版"
+  ],
+  "definition_zh": "严格网格、无衬线大字、不对称排版、大面积单色块。",
+  "notation": "A[swiss] · grid:12 · type:grot · align:flush-left",
+  "genes": [
+    {
+      "gene": "网格",
+      "value": "12 列，元素严格贴格"
+    },
+    {
+      "gene": "字",
+      "value": "Grotesque 无衬线，特大号，紧字距"
+    },
+    {
+      "gene": "色",
+      "value": "黑 + 白 + 一个原色（红/蓝）"
+    }
+  ],
+  "minimal_code": {
+    "css": ".swiss{display:grid;grid-template-columns:repeat(12,1fr)}\n.swiss h1{font:800 clamp(2rem,8vw,6rem)/0.95 sans-serif;\n  letter-spacing:-.04em;text-transform:uppercase}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "没有真的网格系统就只是「字很大」，会立刻露馅。"
+  ],
+  "tech_notes": [
+    "先画网格再放内容；大标题用 clamp + 负字距。"
+  ],
+  "common_pairings": [
+    "minimal-flat"
+  ],
+  "related": [
+    "editorial"
+  ],
+  "wild": [
+    {
+      "what": "众多设计工作室官网",
+      "source": "awwwards",
+      "note": "海报逻辑搬上网页"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/swiss-intl/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/swiss-intl.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

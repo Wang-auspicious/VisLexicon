@@ -1,0 +1,70 @@
+{
+  "lever": "lexicon",
+  "id": "stagger-reveal",
+  "term_en": "Stagger Reveal",
+  "term_zh": "交错入场",
+  "axis": "motion",
+  "aliases": [
+    "交错动画",
+    "逐项入场",
+    "列表 stagger",
+    "瀑布入场"
+  ],
+  "definition_zh": "列表项按固定间隔依次进场，节奏感来自 delay 阶梯。",
+  "notation": "M[stagger] · d:90ms · step:var(--n) · ease:rise",
+  "genes": [
+    {
+      "gene": "步长",
+      "value": "每项延迟 90ms"
+    },
+    {
+      "gene": "方向",
+      "value": "上移/左滑/展开"
+    }
+  ],
+  "minimal_code": {
+    "css": ".row{animation:rise .5s both;animation-delay:calc(var(--n) * 90ms)}\n@keyframes rise{from{opacity:0;transform:translateY(12px)}}"
+  },
+  "params": [
+    {
+      "key": "step",
+      "label": "项间隔",
+      "min": 30,
+      "max": 300,
+      "step": 10,
+      "unit": "ms",
+      "default": 90
+    }
+  ],
+  "anti_patterns": [
+    "步长 > 200ms 显拖沓；列表过长时只对首屏交错。"
+  ],
+  "tech_notes": [
+    "animation-delay: calc(var(--n) * step)；CSS 变量编号。"
+  ],
+  "common_pairings": [
+    "spring",
+    "shimmer"
+  ],
+  "related": [
+    "shimmer"
+  ],
+  "wild": [
+    {
+      "what": "众多 hero 列表",
+      "source": "各 SaaS",
+      "note": "首屏元素按序浮现的常规"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/stagger-reveal/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/stagger-reveal.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

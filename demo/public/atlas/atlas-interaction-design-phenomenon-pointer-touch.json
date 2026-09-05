@@ -1,0 +1,33 @@
+{
+  "termEn": "pointer.touch",
+  "termZh": "指针.触摸",
+  "definitionZh": "大多数手势（包括拖动）都使用[指针事件](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)。这在 100 种情况中的 99 种情况下效果很好，但当用户开始滚动时，指针事件在触摸设备上被取消。通常这是您真正想要的，浏览器会为您完成。但在某些情况下，您可能希望在滚动时持续拖动。在这种情况下，您需要指示使用触摸事件，这些事件不会在滚动时取消。",
+  "sourceDefinition": "Most gestures, drag included, use [pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events). This works well in 99 situations in 100, but pointer events get canceled on touch devices when the user starts scrolling. Usually this is what you actually want, and the browser does it for you. But in some situations you may want the drag to persist while scrolling. In that case you'll need to indicate to use touch events, which aren't canceled on scroll.",
+  "axis": "interaction",
+  "recordType": "design-phenomenon",
+  "aliases": [],
+  "scenes": [],
+  "mediaBindings": [],
+  "status": "candidate",
+  "countedAtlas": true,
+  "translationQuality": "machine",
+  "sourceEvidence": [
+    {
+      "sourceId": "use-gesture",
+      "sourceName": "@use-gesture",
+      "sourceRecordId": "pointer-touch",
+      "url": "https://use-gesture.netlify.app/docs/options",
+      "sourcePath": "documentation/pages/docs/options.mdx",
+      "sourceCategory": "gesture-option",
+      "sourceDefinition": "Most gestures, drag included, use [pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events). This works well in 99 situations in 100, but pointer events get canceled on touch devices when the user starts scrolling. Usually this is what you actually want, and the browser does it for you. But in some situations you may want the drag to persist while scrolling. In that case you'll need to indicate to use touch events, which aren't canceled on scroll.",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/pmndrs/use-gesture/blob/main/LICENSE",
+      "retrievedAt": "2026-09-03",
+      "revision": "c779631aa05959638dee81b9a25fb1299a7467f6",
+      "sourceMetadata": {
+        "kind": "gesture-option"
+      }
+    }
+  ],
+  "id": "atlas-interaction-design-phenomenon-pointer-touch"
+}

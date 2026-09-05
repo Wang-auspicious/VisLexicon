@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "navbar",
+  "term_en": "Navbar",
+  "term_zh": "导航栏",
+  "axis": "component",
+  "aliases": [
+    "顶栏",
+    "导航条",
+    "header"
+  ],
+  "definition_zh": "站点级导航：logo + 链接 + 行动点，滚动时收缩或变玻璃。",
+  "notation": "C[nav] · sticky · blur:10 · shrink:on-scroll",
+  "genes": [
+    {
+      "gene": "结构",
+      "value": "logo 左 / 链接中 / CTA 右"
+    },
+    {
+      "gene": "滚动态",
+      "value": "收缩高度 / 上滑隐藏下滑出现"
+    }
+  ],
+  "minimal_code": {
+    "css": ".nav{position:sticky;top:0;backdrop-filter:blur(10px)}\n.nav.scrolled{background:rgb(255 255 255/.72);border-bottom:1px solid #eee}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "链接超过 7 个就该收进 mega menu，别横向硬塞。"
+  ],
+  "tech_notes": [
+    "sticky + 滚动方向判断；玻璃态配 backdrop-filter。"
+  ],
+  "common_pairings": [
+    "glassmorphism"
+  ],
+  "related": [
+    "dock"
+  ],
+  "wild": [
+    {
+      "what": "Stripe / Linear 导航",
+      "source": "stripe.com",
+      "note": "玻璃化 + mega menu 的标杆"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/navbar/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/navbar.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

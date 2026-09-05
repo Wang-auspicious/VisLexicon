@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 3,
+  "draftKind": "real-site-curation",
+  "batchId": "2026-09-01-batch-01",
+  "siteId": "ant-design",
+  "status": "CAPTURED_PENDING_INDEPENDENT_REVIEW",
+  "entity": {
+    "entityId": "entity-ant-design",
+    "entityKey": "domain:ant.design",
+    "name": "Ant Design",
+    "aliases": [
+      "antd",
+      "Ant Design of React"
+    ],
+    "canonicalUrl": "https://ant.design/",
+    "candidateIds": [
+      "ant-design-51c9a915"
+    ],
+    "identityDecision": "根域、官方文档、npm 包名 antd 与 ant-design/ant-design 仓库属于同一 Ant Design React 设计系统；Ant Design Mobile、NG-ZORRO、AntV 等生态项目不得并入本 entry。"
+  },
+  "official": {
+    "inputUrl": "https://ant.design/",
+    "finalUrl": "https://ant.design/index-cn",
+    "checkedAt": "2026-09-01T15:45:42.521Z"
+  },
+  "research": {
+    "explorationMethod": "官方文档经 Jina Reader 核对静态事实，并在真实浏览器中从首页进入组件总览，再进入 Table 详情与基本用法演示，检查设计规范、组件覆盖、安装方式和具体代码示例。",
+    "internalEssenceZh": "把企业级交互语言、视觉规范、主题体系与一套可安装的 React/TypeScript 组件实现放在同一文档体系中。",
+    "descriptionZh": "面向企业级中后台与桌面 Web 产品的完整设计系统，提供可安装的 React/TypeScript 组件、主题定制、国际化、设计规范和大量可运行示例；核心仓库采用 MIT 许可并可免费使用。",
+    "descriptionCodePointLength": 95,
+    "importantLimitZh": "本条只描述 Ant Design React 主库；官网列出的 Angular、Vue、Mobile、Charts、Pro 等相关项目各有独立入口、仓库或许可，不能据主库 MIT 许可一并推断。",
+    "classificationScopeNoteZh": "分类仅覆盖 ant.design 的 React 主设计系统；相关生态产品保持独立 entry。"
+  },
+  "classification": {
+    "name": "Ant Design",
+    "recordLevel": "entry",
+    "entryId": "entry-ant-design-react",
+    "entityId": "entity-ant-design",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "needs-review",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 Ant Design 明确定义为企业级 UI 设计语言和 React 组件库，并同时提供设计价值观、设计指引与研发框架。",
+        "evidenceUrl": "https://ant.design/index-cn"
+      },
+      {
+        "statement": "React 介绍页列出完整组件、TypeScript 类型、国际化、主题定制以及设计和开发工具链，超出单纯组件集合。",
+        "evidenceUrl": "https://ant.design/docs/react/introduce-cn"
+      }
+    ]
+  },
+  "facets": {
+    "scenarios": [
+      "admin",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "copy",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans",
+      "en"
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/ant-design/ant-design/blob/master/package.json",
+      "evidence": "官方仓库 package.json 未提供 author 字段；官网以团队和开源社区名义署名，没有可核定为单一作者的个人。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "蚂蚁集团和 Ant Design 开源社区",
+      "sourceUrl": "https://ant.design/index-cn",
+      "evidence": "官网页脚明确写明 Made with love by 蚂蚁集团和 Ant Design 开源社区。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/ant-design/ant-design",
+      "sourceUrl": "https://ant.design/docs/react/introduce-cn",
+      "evidence": "官网研发文档的 GitHub、编辑页面、问题与贡献入口均直接指向该仓库，仓库 homepage 回链 ant.design。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/ant-design/ant-design/blob/master/LICENSE",
+      "evidence": "官方仓库 LICENSE 与 GitHub license metadata 均标记 MIT；该许可范围只用于该仓库代码，不自动覆盖官网媒体或其他 Ant Design 生态项目。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free and open source for the core Ant Design React library",
+      "sourceUrl": "https://ant.design/docs/react/introduce-cn",
+      "evidence": "官方文档提供公开 npm 安装命令与公共 GitHub 仓库，主库采用 MIT 许可；未发现主库访问或安装的付费门槛。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "antd",
+      "sourceUrl": "https://ant.design/docs/react/introduce-cn",
+      "evidence": "官方安装文档给出 npm install antd --save，并说明它是基于 Ant Design 体系的 React UI 组件库。",
+      "confidence": 1
+    }
+  ],
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ant.design/",
+      "finalUrl": "https://ant.design/index-cn",
+      "title": "Ant Design - 一套企业级 UI 设计语言和 React 组件库",
+      "selectionRationale": "首页直接陈述企业级设计系统身份，并并列设计语言、组件、主题定制和生态入口；重拍后新闻卡内容完整，无骨架占位。",
+      "shot": {
+        "src": "/shots/ant-design/v2-identity.png",
+        "sha256": "38e3dba3b7497012771e58832b5b759e7a869ab8f75f60543a811b1d154cc393",
+        "width": 1280,
+        "height": 900,
+        "bytes": 496476,
+        "alt": "Ant Design 首页的企业级设计系统主张与已加载新闻卡"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ant.design/components/overview-cn/",
+      "finalUrl": "https://ant.design/components/overview-cn",
+      "title": "组件总览 - Ant Design",
+      "selectionRationale": "组件总览按通用、布局、导航、数据录入、数据展示、反馈等任务列出组件及预览，直接证明套件广度。",
+      "shot": {
+        "src": "/shots/ant-design/v2-breadth.png",
+        "sha256": "a94951799b03ef38b660cd8e3590f672f004a67244dfb6b8391742156716b1af",
+        "width": 1280,
+        "height": 900,
+        "bytes": 126007,
+        "alt": "Ant Design 组件总览中的通用和布局组件分类"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ant.design/components/table-cn#table-demo-basic",
+      "finalUrl": "https://ant.design/components/table-cn#table-demo-basic",
+      "title": "表格 Table - Ant Design",
+      "selectionRationale": "Table 详情的基本用法展示可运行表格、交互操作、说明以及大量后续变体，证明组件不是静态示意图而是有代码和 API 的实现。",
+      "shot": {
+        "src": "/shots/ant-design/v2-proof.png",
+        "sha256": "f1e816c4dbc145c9b7032a6e2d9cbb280640a0dbdd4ffe79443bb8bc6f339c22",
+        "width": 1280,
+        "height": 900,
+        "bytes": 160902,
+        "alt": "Ant Design Table 基本用法的运行结果与文档导航"
+      }
+    }
+  ],
+  "qa": {
+    "curatorId": "real-sites-batch-01-agent",
+    "technicalCapturePassed": true,
+    "selfVisualCheckPassed": true,
+    "descriptionLengthPassed": true,
+    "classificationValidated": true,
+    "facetsValidated": true,
+    "independentReviewRequired": true,
+    "publicationEligible": false
+  },
+  "independentReview": {
+    "required": true,
+    "status": "PENDING"
+  }
+}

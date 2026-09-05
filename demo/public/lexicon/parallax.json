@@ -1,0 +1,68 @@
+{
+  "lever": "lexicon",
+  "id": "parallax",
+  "term_en": "Parallax Layers",
+  "term_zh": "视差层",
+  "axis": "motion",
+  "aliases": [
+    "视差",
+    "多层滚动",
+    "景深"
+  ],
+  "definition_zh": "多层背景以不同速率移动，营造景深。",
+  "notation": "M[parallax] · layers:2 · Δ:depth · drive:pointer",
+  "genes": [
+    {
+      "gene": "层数",
+      "value": "前景/中景/背景倍率递增"
+    },
+    {
+      "gene": "驱动",
+      "value": "鼠标 / 滚动"
+    }
+  ],
+  "minimal_code": {
+    "css": ".grid{transform:translate(calc(var(--px)*24px),calc(var(--py)*24px))}\n.ring{transform:translate(calc(var(--px)*48px),calc(var(--py)*48px))}"
+  },
+  "params": [
+    {
+      "key": "depth",
+      "label": "层深",
+      "min": 8,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    }
+  ],
+  "anti_patterns": [
+    "幅度别大，移动端滚动视差会卡；优先 transform 合成层。"
+  ],
+  "tech_notes": [
+    "CSS 变量 + rAF 写 transform；避免触发 layout。"
+  ],
+  "common_pairings": [
+    "sticky-scroll"
+  ],
+  "related": [
+    "scroll-scrub"
+  ],
+  "wild": [
+    {
+      "what": "苹果产品页视差",
+      "source": "apple.com",
+      "note": "滚动驱动的视差景深"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/parallax/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/parallax.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

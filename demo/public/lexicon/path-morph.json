@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "path-morph",
+  "term_en": "SVG Path Morph",
+  "term_zh": "路径变形",
+  "axis": "motion",
+  "aliases": [
+    "路径动画",
+    "morph svg",
+    "形变"
+  ],
+  "definition_zh": "两个同点数 SVG path 之间插值，图标与图形的液态变形。",
+  "notation": "M[morph] · api:smil/flubber · pts:match · t:1.2s",
+  "genes": [
+    {
+      "gene": "点数匹配",
+      "value": "起止路径命令结构必须一致"
+    },
+    {
+      "gene": "驱动",
+      "value": "SMIL / WAAPI / flubber 库"
+    }
+  ],
+  "minimal_code": {
+    "css": "<path d=\"M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80\">\n  <animate attributeName=\"d\" dur=\"1.2s\" repeatCount=\"indefinite\"\n    values=\"…;…;…\"/></path>"
+  },
+  "params": [],
+  "anti_patterns": [
+    "形状差异过大时中间帧会“烂掉”；用中间关键帧垫一步。"
+  ],
+  "tech_notes": [
+    "SMIL animate 或 flubber 插值；图标配对汉堡⇄叉最稳。"
+  ],
+  "common_pairings": [
+    "view-transition"
+  ],
+  "related": [
+    "flip"
+  ],
+  "wild": [
+    {
+      "what": "汉堡菜单 ⇄ 关闭叉",
+      "source": "普遍",
+      "note": "最小也最常见的 path morph"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/path-morph/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/path-morph.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

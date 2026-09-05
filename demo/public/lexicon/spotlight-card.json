@@ -1,0 +1,69 @@
+{
+  "lever": "lexicon",
+  "id": "spotlight-card",
+  "term_en": "Spotlight Card",
+  "term_zh": "光斑卡片",
+  "axis": "interaction",
+  "aliases": [
+    "光晕边框",
+    "鼠标高光",
+    "glow border",
+    "radial hover"
+  ],
+  "definition_zh": "radial-gradient 跟随光标，在边框与卡面点亮一圈光晕。",
+  "notation": "I[spot] · shape:radial · r:radius · anchor:pointer",
+  "genes": [
+    {
+      "gene": "光形态",
+      "value": "填充 highlight / 边框 glow"
+    },
+    {
+      "gene": "跟踪",
+      "value": "鼠标坐标 → CSS 变量"
+    }
+  ],
+  "minimal_code": {
+    "css": "card.style.setProperty('--mx', e.offsetX + 'px');\nbackground: radial-gradient(160px circle at var(--mx) var(--my), …);"
+  },
+  "params": [
+    {
+      "key": "radius",
+      "label": "光斑半径",
+      "min": 80,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 160
+    }
+  ],
+  "anti_patterns": [
+    "光斑别做成“跟踪白点”，要扩散成环境光才高级；radius 过大会盖住内容。"
+  ],
+  "tech_notes": [
+    "CSS 变量 + radial-gradient 单层；border 发光可叠加 mask 合成。"
+  ],
+  "common_pairings": [
+    "glassmorphism"
+  ],
+  "related": [
+    "hover-tilt"
+  ],
+  "wild": [
+    {
+      "what": "21st.dev 卡片",
+      "source": "21st.dev",
+      "note": "glow border 的推广者"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/spotlight-card/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/spotlight-card.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

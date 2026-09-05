@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 3,
+  "entryId": "entry-chakra-ui-react",
+  "entityId": "entity-chakra-ui",
+  "attemptId": "editorial-2026-09-01-batch-01-chakra-ui-v3-b92a63f3ea8c",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://chakra-ui.com/",
+    "finalUrl": "https://chakra-ui.com/",
+    "checkedAt": "2026-09-01T15:45:42.521Z"
+  },
+  "editorial": {
+    "name": "Chakra UI",
+    "descriptionZh": "面向 React 与 Next.js 产品团队的可访问组件系统，提供可安装组件、实时预览、代码示例以及令牌、配方和主题能力，适合搭建设计系统；核心库 MIT 免费开源，付费 Pro 模板另售。",
+    "pricing": "Core Chakra UI library is free and open source; Chakra UI Pro is a separate paid offering"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-chakra-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网将 Chakra UI 定义为用于构建高质量 Web 应用和设计系统的可访问 React component system，并展示 tokens、typography 与 recipes。",
+        "evidenceUrl": "https://chakra-ui.com/"
+      },
+      {
+        "statement": "组件总览列出覆盖布局、表单、浮层、反馈、数据展示和富文本等任务的大规模组件套件，证明它不是单一组件集合。",
+        "evidenceUrl": "https://chakra-ui.com/docs/components/concepts/overview"
+      }
+    ],
+    "curatorId": "real-sites-batch-01-agent",
+    "reviewerId": "independent-batch-01-reviewer",
+    "confirmedAt": "2026-09-01T16:54:57.048Z"
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "copy",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://chakra-ui.com/",
+      "finalUrl": "https://chakra-ui.com/",
+      "title": "Chakra UI",
+      "selectionRationale": "首页直接说明它是用于快速构建产品和设计系统的可访问 React 组件系统，并给出安装命令、Next.js RSC 支持、令牌和 Recipes。",
+      "shot": {
+        "src": "/shots/entry-chakra-ui-react/v2-identity.png",
+        "sha256": "b12f3ccbf3ad0fad6a904fd9e7b8fd87fc1b1dadd806ca7333f5dc302247ca34",
+        "width": 1280,
+        "height": 900,
+        "bytes": 389883,
+        "alt": "Chakra UI 首页的组件系统主张、安装命令和交互组件预览"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://chakra-ui.com/docs/components/concepts/overview",
+      "finalUrl": "https://chakra-ui.com/docs/components/concepts/overview",
+      "title": "Components | Chakra UI",
+      "selectionRationale": "组件总览按布局、排版、按钮、表单、集合、浮层、披露、反馈和数据展示等任务列出带说明的完整组件清单。",
+      "shot": {
+        "src": "/shots/entry-chakra-ui-react/v2-breadth.png",
+        "sha256": "48f59db0ee116ae297c66b6a07b6db39b72807a3005b06bed1a9505f869f6ba2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 176854,
+        "alt": "Chakra UI 组件总览及按功能组织的组件卡片"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://chakra-ui.com/docs/components/button",
+      "finalUrl": "https://chakra-ui.com/docs/components/button",
+      "title": "Button | Chakra UI",
+      "selectionRationale": "Button 详情把真实预览、导入与 JSX 代码、尺寸、变体、颜色、禁用、加载和定制方法放在同一页，证明可安装实现和文档深度。",
+      "shot": {
+        "src": "/shots/entry-chakra-ui-react/v2-proof.png",
+        "sha256": "40838eabbdf768eeb31646c23df9abd8f5a2586d3cbb02efb9fee660623ca826",
+        "width": 1280,
+        "height": 900,
+        "bytes": 182659,
+        "alt": "Chakra UI Button 的实时预览、导入代码与 JSX 用法"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Segun Adebayo (Sage)",
+      "sourceUrl": "https://github.com/chakra-ui/chakra-ui/blob/main/package.json",
+      "evidence": "package.json 给出 Segun Adebayo，官网用 Sage 作为维护者别名，同时注明 contributors。；独立复核来源：https://github.com/chakra-ui/chakra-ui/blob/main/package.json；https://chakra-ui.com/",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Chakra Systems",
+      "sourceUrl": "https://chakra-ui.com/",
+      "evidence": "官网写 Project by Chakra Systems；LICENSE 写 Chakra Systems Inc.。；独立复核来源：https://chakra-ui.com/；https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/chakra-ui/chakra-ui",
+      "sourceUrl": "https://chakra-ui.com/",
+      "evidence": "官网 GitHub 与组件 Source 链接均指向该仓库，仓库 homepage 回链官网。；独立复核来源：https://chakra-ui.com/；https://github.com/chakra-ui/chakra-ui",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE",
+      "evidence": "仅适用于 chakra-ui/chakra-ui 核心仓库；不覆盖 Chakra UI Pro 模板、图片或商业素材。；独立复核来源：https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core Chakra UI library is free and open source; Chakra UI Pro is a separate paid offering",
+      "sourceUrl": "https://chakra-ui.com/",
+      "evidence": "官网核心安装公开且仓库 MIT；首页另列 Premium Chakra UI Components 与 Chakra UI Pro。；独立复核来源：https://chakra-ui.com/；https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@chakra-ui/react",
+      "sourceUrl": "https://chakra-ui.com/docs/get-started/installation",
+      "evidence": "官方安装命令为 npm i @chakra-ui/react @emotion/react。；独立复核来源：https://chakra-ui.com/docs/get-started/installation",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "real-sites-batch-01-agent",
+    "technicalPassed": true,
+    "semanticReviewerId": "independent-batch-01-reviewer",
+    "semanticPassed": true,
+    "editorialReviewerId": "independent-batch-01-reviewer"
+  }
+}

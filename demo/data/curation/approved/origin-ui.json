@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "siteId": "origin-ui",
+  "entityKey": "origin-ui:coss.com",
+  "attemptId": "legacy-curation-v2-origin-ui-20260901",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://coss.com/ui",
+    "finalUrl": "https://coss.com/ui",
+    "checkedAt": "2026-09-01T07:34:41.111Z"
+  },
+  "curation": {
+    "name": "Coss UI",
+    "descriptionZh": "Origin UI 的官方演示站：508 个粒子级可筛选界面组件，专注真实 SaaS 后台的日历、自动补全、抽屉、命令面板等工业级控件。基于 Base UI + Tailwind 构建，全部开源、代码即取即用。",
+    "resourceEssence": "reusable-implementation",
+    "subcategory": "application-dashboard-ui",
+    "score": 90,
+    "tags": [
+      "react",
+      "base-ui",
+      "tailwind-css",
+      "application-ui",
+      "calendar",
+      "autocomplete",
+      "drawer",
+      "command-palette",
+      "open-source"
+    ],
+    "pricing": "Free · Open source"
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://coss.com/ui",
+      "finalUrl": "https://coss.com/ui",
+      "title": "Coss UI — Origin UI Components",
+      "selectionRationale": "首页展示 Coss UI 身份、Base UI 技术基础与应用组件示例。",
+      "shot": {
+        "src": "/shots/origin-ui/v2-identity.png",
+        "sha256": "1e2f4f36dd12a5a290cf36c071612d680cb1a3380139454f5c082ac68d00218b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 118884,
+        "alt": "Coss UI 首页与 Base UI 组件概览"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://coss.com/ui/particles",
+      "finalUrl": "https://coss.com/ui/particles",
+      "title": "Coss UI Particles",
+      "selectionRationale": "Particles 目录体现大量可筛选界面组件及其覆盖范围。",
+      "shot": {
+        "src": "/shots/origin-ui/v2-breadth.png",
+        "sha256": "afec6e2a53e2e020cc177d8bbc3e8b3b6922b42ce61c91a78ea737d148ec28a6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78897,
+        "alt": "Coss UI 的 508 个可筛选界面 particles 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+      "finalUrl": "https://coss.com/ui/docs/components/calendar",
+      "title": "Coss UI Calendar",
+      "selectionRationale": "Calendar 文档通过日期选择器实例证明组件可用于真实应用界面。",
+      "shot": {
+        "src": "/shots/origin-ui/v2-proof.png",
+        "sha256": "c10a60b4bf94f43811c7ad6e219fae6e6107ae2cf0a0348a2c608ec8f3d112fc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114735,
+        "alt": "Coss UI Calendar 组件文档与日期选择器预览"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "COSS 团队",
+      "sourceUrl": "https://coss.com/ui",
+      "evidence": "旧人工核验记录将 Coss UI 的作者或维护方记为“COSS 团队”。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Open source (specific license not recorded)",
+      "sourceUrl": "https://coss.com/ui",
+      "evidence": "旧人工核验记录明确说明这些组件全部开源，但未记录许可证标识符。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "capture-tool-v2",
+    "technicalPassed": true,
+    "semanticReviewerId": "root-contact-sheet-review-20260901",
+    "semanticPassed": true
+  }
+}

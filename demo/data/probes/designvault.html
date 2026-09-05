@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      html,
+      body,
+      #root {
+        background: #ffffff;
+      }
+
+      html[data-theme="dark"],
+      html[data-theme="dark"] body,
+      html[data-theme="dark"] #root {
+        background: #050505;
+      }
+    </style>
+    <script>
+      (function () {
+        try {
+          var storageKey = "sd-theme-mode";
+          var storedMode = window.localStorage.getItem(storageKey);
+          var mode = storedMode === "light" || storedMode === "dark" || storedMode === "system" ? storedMode : "dark";
+          var resolved = mode === "system"
+            ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+            : mode;
+          document.documentElement.dataset.theme = resolved;
+          document.documentElement.style.colorScheme = resolved;
+          document.documentElement.style.backgroundColor = resolved === "dark" ? "#050505" : "#ffffff";
+        } catch (error) {
+          document.documentElement.dataset.theme = "dark";
+          document.documentElement.style.colorScheme = "dark";
+          document.documentElement.style.backgroundColor = "#050505";
+        }
+      })();
+    </script>
+    <script>
+      window.__SD_PRICING_COUNTRY__ = "CN";
+    </script>
+    
+    <link rel="stylesheet" href="/static/vite/app-D8IadsJm.css">
+    
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "x52edep35s");
+    </script>
+
+    <link rel="preconnect" href="https://cdn.tolt.io" crossorigin>
+    <link rel="preconnect" href="https://assets.mediadelivery.net" crossorigin>
+    <link rel="preconnect" href="https://player.mediadelivery.net" crossorigin>
+
+    <link rel="icon" type="image/svg+xml" href="https://screensdesign.com/img/favicon.svg">
+    <link rel="apple-touch-icon" href="https://screensdesign.com/img/favicon.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#5354FE">
+
+    
+    <title>ScreensDesign: App Design Library &amp; UI Inspiration | iOS Examples</title>
+    <meta name="description" content="Discover how successful iOS apps design their screens, onboarding &amp; paywalls. Perfect for designers, developers &amp; product teams.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://screensdesign.com/">
+
+    <meta property="og:site_name" content="ScreensDesign">
+    <meta property="og:title" content="ScreensDesign - App Design Library &amp; UI Inspiration from Top iOS Apps">
+    <meta property="og:description" content="Discover how successful iOS apps design their screens, onboarding &amp; paywalls. Perfect for designers, developers &amp; product teams.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://screensdesign.com/">
+    <meta property="og:image" content="https://screensdesign.com/img/sd_preview_v2.jpg?v=2">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://screensdesign.com/">
+    <meta name="twitter:title" content="ScreensDesign - App Design Library &amp; UI Inspiration from Top iOS Apps">
+    <meta name="twitter:description" content="Discover how successful iOS apps design their screens, onboarding &amp; paywalls. Perfect for designers, developers &amp; product teams.">
+    <meta name="twitter:image" content="https://screensdesign.com/img/sd_preview_v2.jpg?v=2">
+    
+
+    
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ScreensDesign",
+      "url": "https://screensdesign.com/",
+      "logo": "https://screensdesign.com/img/favicon.svg"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ScreensDesign",
+      "url": "https://screensdesign.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://screensdesign.com/search/?q={search_term_string}&smode=elements",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebPage", "name": "ScreensDesign", "url": "https://screensdesign.com/", "description": "Discover how successful iOS apps design their screens, onboarding & paywalls. Perfect for designers, developers & product teams.", "isPartOf": {"@type": "WebSite", "name": "ScreensDesign", "url": "https://screensdesign.com/"}}
+</script>
+
+
+
+    <link rel="preload" href="/static/fonts/Grifter-Bold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/static/fonts/RethinkSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+
+    <link rel="preload" href="/img/gradientIcon/Grid.svg" as="image">
+    <link rel="preload" href="/img/gradientIcon/MagicWand.svg" as="image">
+
+    <link rel="preload" href="/img/blackIcon/EnterButton.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/smart-phone-01.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/motion-01.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/smart-phone-01-1.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/browser.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/filter-icon.svg" as="image">
+
+    <link rel="preload" href="/img/blackIcon/Grid.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/Categorie.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/Install.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/Revenue.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/PaywallType.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/OnboardingStep.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/Rocket.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/LastUpdated.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/Star.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/MagicWand.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/Sort.svg" as="image">
+
+    <link rel="preload" href="/img/blackIcon/SmartSearch.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/Search.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/Screen.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/Screen2.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/UI.svg" as="image">
+
+    <link rel="preload" href="/img/smart-phone-grey.svg" as="image">
+    <link rel="preload" href="/img/message-add-menu.svg" as="image">
+    <link rel="preload" href="/img/showcase-icon.svg" as="image">
+    <link rel="preload" href="/img/similar-icon.svg" as="image">
+    <link rel="preload" href="/img/see-video-icon.svg" as="image">
+    <link rel="preload" href="/img/blackIcon/Download.svg" as="image">
+    <link rel="preload" href="/img/whiteIcon/PlusBold.svg" as="image">
+    <link rel="preload" href="/img/whiteIcon/NewGroup.svg" as="image">
+    <link rel="preload" href="/img/SearchIcon.svg" as="image">
+
+    <link rel="preload" href="/img/apps-icon.svg" as="image">
+    <link rel="preload" href="/img/screens-black-icon.svg" as="image">
+    <link rel="preload" href="/img/screens-grey-icon.svg" as="image">
+    <link rel="preload" href="/img/app-store-icon.svg" as="image">
+
+    <script async src="https://cdn.tolt.io/tolt.js" data-tolt="pk_AY6fMj4HHaL3USc2KALjYhBY"></script>
+    <script src="https://assets.mediadelivery.net/playerjs/playerjs-latest.min.js" defer></script>
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1215017590348938");
+      fbq("track", "PageView");
+    </script>
+</head>
+<body>
+    <noscript><img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=1215017590348938&ev=PageView&noscript=1"></noscript>
+
+    
+
+    <div id="root"></div>
+    
+        <script type="module" src="/static/vite/app-D1GenclO.js"></script>
+    
+    <div id="modal"></div>
+    
+<footer class="sd-directory-footer">
+  <style>
+    .sd-directory-footer {
+      background: #f6f7fa;
+      color: #46505f;
+      border-top: 1px solid #e3e6ee;
+      padding: 40px 24px 56px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    html[data-theme="dark"] .sd-directory-footer {
+      background: #101016;
+      color: #9aa2b3;
+      border-top-color: #24242f;
+    }
+    .sd-directory-footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+    }
+    .sd-directory-footer h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin: 0 0 12px;
+      color: #6d7688;
+    }
+    html[data-theme="dark"] .sd-directory-footer h2 { color: #7d8698; }
+    .sd-directory-footer ul { list-style: none; margin: 0; padding: 0; }
+    .sd-directory-footer li { margin: 0 0 7px; }
+    .sd-directory-footer a { color: inherit; text-decoration: none; }
+    .sd-directory-footer a:hover { text-decoration: underline; }
+    .sd-directory-footer .sd-directory-more { font-weight: 600; }
+  </style>
+  <div class="sd-directory-footer-inner">
+    <section>
+      <h2>Browse by category</h2>
+      <ul>
+        
+        <li><a href="/categories/360-photo-viewer-apps/">360° photo viewer apps</a></li>
+        
+        <li><a href="/categories/3-day-split-workout-apps/">3-day split workout apps</a></li>
+        
+        <li><a href="/categories/3d-photo-apps/">3D photo apps</a></li>
+        
+        <li><a href="/categories/5-day-gym-routine-apps/">5-day gym routine apps</a></li>
+        
+        <li><a href="/categories/acne-tracker-apps/">acne tracker apps</a></li>
+        
+        <li><a href="/categories/activism-apps/">activism apps</a></li>
+        
+        <li><a href="/categories/acupuncture-tracker-apps/">acupuncture tracker apps</a></li>
+        
+        <li><a href="/categories/ad-blocker-apps/">ad blocker apps</a></li>
+        
+        <li><a href="/categories/addiction-recovery-apps/">addiction recovery apps</a></li>
+        
+        <li><a href="/categories/adhd-focus-apps/">ADHD focus apps</a></li>
+        
+        <li><a href="/categories/advanced-bodybuilding-apps/">advanced bodybuilding apps</a></li>
+        
+        <li><a href="/categories/aesthetic-font-apps/">aesthetic font apps</a></li>
+        
+        <li><a href="/categories/ai-assistant-apps/">AI assistant apps</a></li>
+        
+        <li><a href="/categories/ai-assistant-for-research-apps/">AI assistant for research apps</a></li>
+        
+        <li><a href="/categories/ai-astrology-apps/">AI astrology apps</a></li>
+        
+        <li><a href="/categories/ai-audio-enhancer-apps/">AI audio enhancer apps</a></li>
+        
+        <li><a href="/categories/ai-avatar-generator-apps/">AI avatar generator apps</a></li>
+        
+        <li><a href="/categories/ai-baby-sleep-coach-apps/">AI baby sleep coach apps</a></li>
+        
+        <li><a href="/categories/ai-beat-maker-apps/">AI beat maker apps</a></li>
+        
+        <li><a href="/categories/ai-body-transformation-apps/">AI body transformation apps</a></li>
+        
+        <li><a href="/categories/ai-book-summary-apps/">AI book summary apps</a></li>
+        
+        <li><a href="/categories/ai-boyfriend-apps/">AI boyfriend apps</a></li>
+        
+        <li><a href="/categories/ai-calorie-tracker-apps/">AI calorie tracker apps</a></li>
+        
+        <li><a href="/categories/ai-chatbot-apps/">AI chatbot apps</a></li>
+        
+        <li><a href="/categories/ai-chat-companion-apps/">AI chat companion apps</a></li>
+        
+        <li><a href="/categories/ai-emotion-tracking-apps/">AI emotion tracking apps</a></li>
+        
+        <li><a href="/categories/ai-fasting-tracker-apps/">AI fasting tracker apps</a></li>
+        
+        <li><a href="/categories/ai-fitness-coach-apps/">AI fitness coach apps</a></li>
+        
+        <li><a href="/categories/ai-girlfriend-apps/">AI girlfriend apps</a></li>
+        
+        <li><a href="/categories/ai-gym-assistant-apps/">AI gym assistant apps</a></li>
+        
+        <li class="sd-directory-more"><a href="/library">All apps in the library</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Featured app teardowns</h2>
+      <ul>
+        
+        <li><a href="/apps/tcg-card-scanner-value-foloy/">TCG Card Scanner &amp; Value-Foloy</a></li>
+        
+        <li><a href="/apps/modyfy-ai-car-designer/">Modyfy: AI Car Designer</a></li>
+        
+        <li><a href="/apps/menace-ai-photo-video-editor/">Menace: AI Photo Video Editor</a></li>
+        
+        <li><a href="/apps/1111-faster-internet/">1.1.1.1: Faster Internet</a></li>
+        
+        <li><a href="/apps/claude-by-anthropic/">Claude by Anthropic</a></li>
+        
+        <li><a href="/apps/linear-mobile/">Linear Mobile</a></li>
+        
+        <li><a href="/apps/calorie-counter-food-tracker-weight-loss-macro-meal-planner/">Calorie Counter by Numify</a></li>
+        
+        <li><a href="/apps/brainbuddy-quit-porn-now/">Brainbuddy: Quit PMO</a></li>
+        
+        <li><a href="/apps/google-gemini/">Google Gemini</a></li>
+        
+        <li><a href="/apps/deezer-music-player-podcast/">Deezer: Music Player, Podcast</a></li>
+        
+        <li><a href="/apps/vsco-photo-video-editor/">VSCO: Photo &amp; Video Editor</a></li>
+        
+        <li><a href="/apps/udemy-online-video-courses/">Udemy Online Video Courses</a></li>
+        
+        <li class="sd-directory-more"><a href="/store-screenshots/">App Store screenshots</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Latest articles</h2>
+      <ul>
+        
+        <li><a href="/articles/sleep-app-onboarding-examples/">10 Sleep App Onboarding Examples</a></li>
+        
+        <li><a href="/articles/meditation-app-onboarding-examples/">10 Meditation App Onboarding Examples</a></li>
+        
+        <li><a href="/articles/in-app-feedback-survey-design-examples/">10 In-App Feedback Survey Design Examples</a></li>
+        
+        <li><a href="/articles/mobile-app-loyalty-rewards-design-examples/">10 Mobile App Loyalty Rewards Design Examples</a></li>
+        
+        <li><a href="/articles/promo-code-redemption-ux-examples/">10 Promo Code Redemption UX Examples</a></li>
+        
+        <li><a href="/articles/mobile-app-pricing-plan-comparison-examples/">10 Mobile App Pricing Plan Comparison Examples</a></li>
+        
+        <li class="sd-directory-more"><a href="/articles/">All articles</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Guides</h2>
+      <ul>
+        <li><a href="/guides/mobile-app-design/">Mobile App Design</a></li>
+        <li><a href="/guides/mobile-app-ui-design/">Mobile App UI Design</a></li>
+        <li><a href="/guides/ios-app-design/">iOS App Design</a></li>
+        <li><a href="/guides/ui-design-inspiration/">UI Design Inspiration</a></li>
+        <li><a href="/guides/app-screen-design/">App Screen Design</a></li>
+        <li><a href="/guides/app-screens/">App Screens</a></li>
+        <li><a href="/guides/app-onboarding-screens/">App Onboarding Screens</a></li>
+        <li><a href="/guides/app-design-inspiration/">App Design Inspiration</a></li>
+      </ul>
+    </section>
+  </div>
+</footer>
+
+
+</body>
+</html>

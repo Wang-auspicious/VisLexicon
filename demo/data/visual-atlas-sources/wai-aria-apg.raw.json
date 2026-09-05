@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "id": "wai-aria-apg",
+    "name": "WAI-ARIA Authoring Practices Guide",
+    "url": "https://www.w3.org/WAI/ARIA/apg/patterns/",
+    "repository": "https://github.com/w3c/aria-practices",
+    "license": "W3C Software and Document License",
+    "licenseUrl": "https://github.com/w3c/aria-practices/blob/main/LICENSE.md",
+    "retrievedAt": "2026-08-31",
+    "revision": "7e4034b262bc0d25332e330d8a582aaf34113829",
+    "verifiedCount": 30,
+    "countedAtlas": true
+  },
+  "records": [
+    {
+      "sourceRecordId": "accordion",
+      "termEn": "Accordion",
+      "sourceDefinition": "An accordion is a vertically stacked set of interactive headings that each contain a title, content snippet, or thumbnail representing a section of content. The headings function as controls that enable users to reveal or hide their associated sections of content. Accordions are commonly used to reduce the need to scroll when presenting multiple sections of content on a single page.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/accordion/",
+      "sourcePath": "content/patterns/accordion/accordion-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "alert",
+      "termEn": "Alert",
+      "sourceDefinition": "An alert is an element that displays a brief, important message in a way that attracts the user's attention without interrupting the user's task. Dynamically rendered alerts are automatically announced by most screen readers, and in some operating systems, they may trigger an alert sound. It is important to note that, at this time, screen readers do not inform users of alerts that are present on the page before page load completes.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/alert/",
+      "sourcePath": "content/patterns/alert/alert-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "alertdialog",
+      "termEn": "Alert and Message Dialogs",
+      "sourceDefinition": "An alert dialog is a modal dialog that interrupts the user's workflow to communicate an important message and acquire a response. Examples include action confirmation prompts and error message confirmations. The alertdialog role enables assistive technologies and browsers to distinguish alert dialogs from other dialogs so they have the option of giving alert dialogs special treatment, such as playing a system alert sound.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/alertdialog/",
+      "sourcePath": "content/patterns/alertdialog/alertdialog-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "breadcrumb",
+      "termEn": "Breadcrumb",
+      "sourceDefinition": "A breadcrumb trail consists of a list of links to the parent pages of the current page in hierarchical order. It helps users find their place within a website or web application. Breadcrumbs are often placed horizontally before a page's main content.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/",
+      "sourcePath": "content/patterns/breadcrumb/breadcrumb-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "button",
+      "termEn": "Button",
+      "sourceDefinition": "A button is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation. A common convention for informing users that a button launches a dialog is to append \"&#8230;\" (ellipsis) to the button label, e.g., \"Save as&#8230;\".",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
+      "sourcePath": "content/patterns/button/button-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "carousel",
+      "termEn": "Carousel (Slide Show or Image Rotator)",
+      "sourceDefinition": "A carousel presents a set of items, referred to as slides, by sequentially displaying a subset of one or more slides. Typically, one slide is displayed at a time, and users can activate a next or previous slide control that hides the current slide and \"rotates\" the next or previous slide into view. In some implementations, rotation automatically starts when the page loads, and it may also automatically stop once all the slides have been displayed. While a slide may contain any type of content, image carousels where each slide contains nothing more than a single image are common.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/carousel/",
+      "sourcePath": "content/patterns/carousel/carousel-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "checkbox",
+      "termEn": "Checkbox",
+      "sourceDefinition": "WAI-ARIA supports two types of checkbox widgets: dual-state checkboxes toggle between two choices -- checked and not checked -- and tri-state checkboxes, which allow an additional third state known as partially checked.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/",
+      "sourcePath": "content/patterns/checkbox/checkbox-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "combobox",
+      "termEn": "Combobox",
+      "sourceDefinition": "A combobox is an input widget that has an associated popup. The popup enables users to choose a value for the input from a collection. The popup may be a listbox , grid , tree , or dialog.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/",
+      "sourcePath": "content/patterns/combobox/combobox-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "dialog-modal",
+      "termEn": "Dialog (Modal)",
+      "sourceDefinition": "A dialog is a window overlaid on either the primary window or another dialog window. Windows under a modal dialog are inert. That is, users cannot interact with content outside an active dialog window. Inert content outside an active dialog is typically visually obscured or dimmed so it is difficult to discern, and in some implementations, attempts to interact with the inert content cause the dialog to close.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "sourcePath": "content/patterns/dialog-modal/dialog-modal-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "disclosure",
+      "termEn": "Disclosure (Show/Hide)",
+      "sourceDefinition": "A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible). It has two elements: a disclosure button and a section of content whose visibility is controlled by the button. When the controlled content is hidden, the button is often styled as a typical push button with a right-pointing arrow or triangle to hint that activating the button will display additional content. When the content is visible, the arrow or triangle typically points down.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/",
+      "sourcePath": "content/patterns/disclosure/disclosure-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "feed",
+      "termEn": "Feed",
+      "sourceDefinition": "A feed is a section of a page that automatically loads new sections of content as the user scrolls. The sections of content in a feed are presented in article elements. So, a feed can be thought of as a dynamic list of articles that often appears to scroll infinitely.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/feed/",
+      "sourcePath": "content/patterns/feed/feed-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "grid",
+      "termEn": "Grid (Interactive Tabular Data or Layout Container)",
+      "sourceDefinition": "A grid widget is a container that enables users to navigate the information or interactive elements it contains using directional navigation keys, such as arrow keys, Home , and End . As a generic container widget that offers flexible keyboard navigation, it can serve a wide variety of needs. It can be used for purposes as simple as grouping a collection of checkboxes or navigation links or as complex as creating a full-featured spreadsheet application. While the words \"row\" and \"column\" are used in the names of WAI-ARIA attributes and by assistive technologies when describing and presenting the logical structure of elements with the grid role, using the grid role on an element does not necessarily imply that its visual presentation is tabular.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/grid/",
+      "sourcePath": "content/patterns/grid/grid-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "landmarks",
+      "termEn": "Landmarks",
+      "sourceDefinition": "Landmarks are a set of eight roles that identify the major sections of a page. Each landmark role enables assistive technology users to perceive the start and end of a feature of the high-level page structure that is usually conveyed visually with placement, spacing, color, or borders. For example, the main landmark designates the section that contains the main content of the page. In addition to conveying structure, landmarks enable browsers and assistive technologies to facilitate efficient keyboard navigation among sections of a page.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/",
+      "sourcePath": "content/patterns/landmarks/landmarks-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "link",
+      "termEn": "Link",
+      "sourceDefinition": "A link widget provides an interactive reference to a resource. The target resource can be either external or local, i.e., either outside or within the current page or application.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/link/",
+      "sourcePath": "content/patterns/link/link-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "listbox",
+      "termEn": "Listbox",
+      "sourceDefinition": "A listbox widget presents a list of options and allows a user to select one or more of them. A listbox that allows a single option to be chosen is a single-select listbox; one that allows multiple options to be selected is a multi-select listbox.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/listbox/",
+      "sourcePath": "content/patterns/listbox/listbox-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "menu-button",
+      "termEn": "Menu Button",
+      "sourceDefinition": "A menu button is a button that opens a menu as described in the Menu and Menubar Pattern . It is often styled as a typical push button with a downward pointing arrow or triangle to hint that activating the button will display a menu.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/",
+      "sourcePath": "content/patterns/menu-button/menu-button-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "menubar",
+      "termEn": "Menu and Menubar",
+      "sourceDefinition": "A menu is a widget that offers a list of choices to the user, such as a set of actions or functions. Menu widgets behave like native operating system menus, such as the menus that pull down from the menubars commonly found at the top of many desktop application windows. A menu is usually opened, or made visible, by activating a menu button , choosing an item in a menu that opens a sub menu, or by invoking a command, such as Shift + F10 in Windows, that opens a context specific menu. When a user activates a choice in a menu, the menu usually closes unless the choice opened a submenu.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/menubar/",
+      "sourcePath": "content/patterns/menubar/menu-and-menubar-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "meter",
+      "termEn": "Meter",
+      "sourceDefinition": "A meter is a graphical display of a numeric value that varies within a defined range. For example, a meter could be used to depict a device's current battery percentage or a car's fuel level.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/meter/",
+      "sourcePath": "content/patterns/meter/meter-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "radio",
+      "termEn": "Radio Group",
+      "sourceDefinition": "A radio group is a set of checkable buttons, known as radio buttons, where no more than one of the buttons can be checked at a time. Some implementations may initialize the set with all buttons in the unchecked state in order to force the user to check one of the buttons before moving past a certain point in the workflow.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/radio/",
+      "sourcePath": "content/patterns/radio/radio-group-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "slider-multithumb",
+      "termEn": "Slider (Multi-Thumb)",
+      "sourceDefinition": "A multi-thumb slider implements the Slider Pattern but includes two or more thumbs, often on a single rail. Each thumb sets one of the values in a group of related values. For example, in a product search, a two-thumb slider could be used to enable users to set the minimum and maximum price limits for the search. In many two-thumb sliders, the thumbs are not allowed to pass one another, such as when the slider sets the minimum and maximum values for a range. For example, in a price range selector, the maximum value of the thumb that sets the lower end of the range is limited by the current value of the thumb that sets the upper end of the range. Conversely, the minimum value of the upper end thumb is limited by the current value of the lower end thumb. However, in some multi-thumb sliders, each thumb sets a value that does not depend on the other thumb values.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/slider-multithumb/",
+      "sourcePath": "content/patterns/slider-multithumb/slider-multithumb-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "slider",
+      "termEn": "Slider",
+      "sourceDefinition": "A slider is an input where the user selects a value from within a given range. Sliders typically have a slider thumb that can be moved along a bar, rail, or track to change the value of the slider.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/slider/",
+      "sourcePath": "content/patterns/slider/slider-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "spinbutton",
+      "termEn": "Spinbutton",
+      "sourceDefinition": "A spinbutton is an input widget that restricts its value to a set or range of discrete values. For example, in a widget that enables users to set an alarm, a spinbutton could allow users to select a number from 0 to 59 for the minute of an hour.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/spinbutton/",
+      "sourcePath": "content/patterns/spinbutton/spinbutton-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "switch",
+      "termEn": "Switch",
+      "sourceDefinition": "A switch is an input widget that allows users to choose one of two values: on or off . Switches are similar to checkboxes and toggle buttons , which can also serve as binary inputs. One difference, however, is that switches can only be used for binary input while checkboxes and toggle buttons allow implementations the option of supporting a third middle state. Checkboxes can be checked or not checked and can optionally also allow for a partially checked state. Toggle buttons can be pressed or not pressed and can optionally allow for a partially pressed state.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/switch/",
+      "sourcePath": "content/patterns/switch/switch-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "table",
+      "termEn": "Table",
+      "sourceDefinition": "Like an HTML table element, a WAI-ARIA table is a static tabular structure containing one or more rows that each contain one or more cells; it is not an interactive widget. Thus, its cells are not focusable or selectable. The grid pattern is used to make an interactive widget that has a tabular structure.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/table/",
+      "sourcePath": "content/patterns/table/table-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "tabs",
+      "termEn": "Tabs",
+      "sourceDefinition": "Tabs are a set of layered sections of content, known as tab panels, that display one panel of content at a time. Each tab panel has an associated tab element, that when activated, displays the panel. The list of tab elements is arranged along one edge of the currently displayed panel, most commonly the top edge.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/",
+      "sourcePath": "content/patterns/tabs/tabs-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "toolbar",
+      "termEn": "Toolbar",
+      "sourceDefinition": "A toolbar is a container for grouping a set of controls, such as buttons, menubuttons, or checkboxes.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/",
+      "sourcePath": "content/patterns/toolbar/toolbar-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "tooltip",
+      "termEn": "Tooltip",
+      "sourceDefinition": "NOTE: This design pattern is work in progress; it does not yet have task force consensus. Progress and discussions are captured in issue 128.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/",
+      "sourcePath": "content/patterns/tooltip/tooltip-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "treegrid",
+      "termEn": "Treegrid",
+      "sourceDefinition": "A treegrid widget presents a hierarchical data grid consisting of tabular information that is editable or interactive. Any row in the hierarchy may have child rows, and rows with children may be expanded or collapsed to show or hide the children. For example, in a treegrid used to display messages and message responses for a e-mail discussion list, messages with responses would be in rows that can be expanded to reveal the response messages.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/treegrid/",
+      "sourcePath": "content/patterns/treegrid/treegrid-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "treeview",
+      "termEn": "Tree View",
+      "sourceDefinition": "A tree view widget presents a hierarchical list. Any item in the hierarchy may have child items, and items that have children may be expanded or collapsed to show or hide the children. For example, in a file system navigator that uses a tree view to display folders and files, an item representing a folder can be expanded to reveal the contents of the folder, which may be files, folders, or both.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/treeview/",
+      "sourcePath": "content/patterns/treeview/treeview-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    },
+    {
+      "sourceRecordId": "windowsplitter",
+      "termEn": "Window Splitter",
+      "sourceDefinition": "NOTE: ARIA 1.1 introduced changes to the separator role so it behaves as a widget when focusable. While this pattern has been revised to match the ARIA 1.1 specification, the task force will not complete its review until a functional example that matches the ARIA 1.1 specification is complete. Progress on this pattern is tracked by issue 129.",
+      "sourceCategory": "accessibility-pattern",
+      "sourceUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/windowsplitter/",
+      "sourcePath": "content/patterns/windowsplitter/windowsplitter-pattern.html",
+      "sourceMetadata": {
+        "summaryQuality": "source-prose"
+      }
+    }
+  ]
+}

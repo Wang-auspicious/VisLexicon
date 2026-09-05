@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 3,
+  "draftKind": "real-site-curation",
+  "batchId": "2026-09-01-batch-01",
+  "siteId": "chakra-ui",
+  "status": "CAPTURED_PENDING_INDEPENDENT_REVIEW",
+  "entity": {
+    "entityId": "entity-chakra-ui",
+    "entityKey": "domain:chakra-ui.com",
+    "name": "Chakra UI",
+    "aliases": [
+      "@chakra-ui/react",
+      "Chakra"
+    ],
+    "canonicalUrl": "https://chakra-ui.com/",
+    "candidateIds": [
+      "chakra-ui-a76da7af"
+    ],
+    "identityDecision": "chakra-ui.com、@chakra-ui/react 和 chakra-ui/chakra-ui 仓库属于同一 React 组件系统；Chakra UI Pro、Ark UI、Zag.js 和旧 Chakra UI Vue 保持独立 entry。"
+  },
+  "official": {
+    "inputUrl": "https://chakra-ui.com/",
+    "finalUrl": "https://chakra-ui.com/",
+    "checkedAt": "2026-09-01T15:45:42.521Z"
+  },
+  "research": {
+    "explorationMethod": "官方首页经 Jina Reader 核对静态事实，并在真实浏览器中从首页进入安装文档、组件总览和 Button 详情，检查核心动作、主题能力、可访问性主张、代码预览和付费 Pro 的产品边界。",
+    "internalEssenceZh": "一套带默认样式与可访问性基础的 React 组件系统，并通过令牌、配方、主题和文档帮助团队在其上建立自己的设计系统。",
+    "descriptionZh": "面向 React 与 Next.js 产品团队的可访问组件系统，提供可安装组件、实时预览、代码示例以及令牌、配方和主题能力，适合搭建设计系统；核心库 MIT 免费开源，付费 Pro 模板另售。",
+    "descriptionCodePointLength": 96,
+    "importantLimitZh": "MIT 仅覆盖 chakra-ui/chakra-ui 核心仓库；Chakra UI Pro 是另售的组件和页面产品，不应从核心仓库许可推断其模板、图片或商业素材同样为 MIT。",
+    "classificationScopeNoteZh": "该分类只覆盖免费开源的 Chakra UI React 核心组件系统；Chakra UI Pro 应作为独立付费模板/页面 entry。"
+  },
+  "classification": {
+    "name": "Chakra UI",
+    "recordLevel": "entry",
+    "entryId": "entry-chakra-ui-react",
+    "entityId": "entity-chakra-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "needs-review",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "general-ui-components"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "首页把 Chakra UI 定义为用于构建产品的组件系统，并展示语义令牌、排版与 Recipes 等建立设计系统的能力。",
+        "evidenceUrl": "https://chakra-ui.com/"
+      },
+      {
+        "statement": "组件总览与 Theming、Styling 文档共同提供完整套件和系统级定制，不是无样式原语或单一组件集合。",
+        "evidenceUrl": "https://chakra-ui.com/docs/components/concepts/overview"
+      }
+    ]
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "copy",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "Segun Adebayo (Sage)",
+      "sourceUrl": "https://github.com/chakra-ui/chakra-ui/blob/main/package.json",
+      "evidence": "官方仓库根 package.json 的 author 为 Segun Adebayo；官网页脚写明由 Sage 和贡献者维护。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Chakra Systems",
+      "sourceUrl": "https://chakra-ui.com/",
+      "evidence": "官网页脚明确写明 Project by Chakra Systems。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/chakra-ui/chakra-ui",
+      "sourceUrl": "https://chakra-ui.com/",
+      "evidence": "官网 GitHub 导航和每个组件的 Source/Edit page 链接直接指向该仓库，仓库 homepage 回链 chakra-ui.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE",
+      "evidence": "官方仓库 LICENSE、package.json 与 GitHub license metadata 均标记 MIT；范围只限核心仓库代码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core Chakra UI library is free and open source; Chakra UI Pro is a separate paid offering",
+      "sourceUrl": "https://chakra-ui.com/",
+      "evidence": "核心库公开安装和 MIT 仓库；首页另外以 Premium Chakra UI Components 和 Chakra UI Pro 链接推广付费预制组件与页面。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@chakra-ui/react",
+      "sourceUrl": "https://chakra-ui.com/docs/get-started/installation",
+      "evidence": "官方安装页给出 npm i @chakra-ui/react @emotion/react，并说明最低 Node.js 版本与 Provider 配置。",
+      "confidence": 1
+    }
+  ],
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://chakra-ui.com/",
+      "finalUrl": "https://chakra-ui.com/",
+      "title": "Chakra UI",
+      "selectionRationale": "首页直接说明它是用于快速构建产品和设计系统的可访问 React 组件系统，并给出安装命令、Next.js RSC 支持、令牌和 Recipes。",
+      "shot": {
+        "src": "/shots/chakra-ui/v2-identity.png",
+        "sha256": "b12f3ccbf3ad0fad6a904fd9e7b8fd87fc1b1dadd806ca7333f5dc302247ca34",
+        "width": 1280,
+        "height": 900,
+        "bytes": 389883,
+        "alt": "Chakra UI 首页的组件系统主张、安装命令和交互组件预览"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://chakra-ui.com/docs/components/concepts/overview",
+      "finalUrl": "https://chakra-ui.com/docs/components/concepts/overview",
+      "title": "Components | Chakra UI",
+      "selectionRationale": "组件总览按布局、排版、按钮、表单、集合、浮层、披露、反馈和数据展示等任务列出带说明的完整组件清单。",
+      "shot": {
+        "src": "/shots/chakra-ui/v2-breadth.png",
+        "sha256": "48f59db0ee116ae297c66b6a07b6db39b72807a3005b06bed1a9505f869f6ba2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 176854,
+        "alt": "Chakra UI 组件总览及按功能组织的组件卡片"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://chakra-ui.com/docs/components/button",
+      "finalUrl": "https://chakra-ui.com/docs/components/button",
+      "title": "Button | Chakra UI",
+      "selectionRationale": "Button 详情把真实预览、导入与 JSX 代码、尺寸、变体、颜色、禁用、加载和定制方法放在同一页，证明可安装实现和文档深度。",
+      "shot": {
+        "src": "/shots/chakra-ui/v2-proof.png",
+        "sha256": "40838eabbdf768eeb31646c23df9abd8f5a2586d3cbb02efb9fee660623ca826",
+        "width": 1280,
+        "height": 900,
+        "bytes": 182659,
+        "alt": "Chakra UI Button 的实时预览、导入代码与 JSX 用法"
+      }
+    }
+  ],
+  "qa": {
+    "curatorId": "real-sites-batch-01-agent",
+    "technicalCapturePassed": true,
+    "selfVisualCheckPassed": true,
+    "descriptionLengthPassed": true,
+    "classificationValidated": true,
+    "facetsValidated": true,
+    "independentReviewRequired": true,
+    "publicationEligible": false
+  },
+  "independentReview": {
+    "required": true,
+    "status": "PENDING"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "spec_version": "1.0",
+  "spec_id": "sp_9f3k2",
+  "intent": "landing page, dark, dev-tool vibe",
+  "target": {
+    "framework": "react",
+    "style": "tailwind",
+    "motion": "css"
+  },
+  "lexicon": {
+    "aesthetic": [
+      "lex:aurora-gradient",
+      "lex:glassmorphism"
+    ],
+    "layout": [
+      "lex:bento-grid"
+    ],
+    "interaction": [
+      "lex:magnetic-button"
+    ],
+    "motion": [
+      "lex:spring"
+    ]
+  },
+  "interactions": [
+    {
+      "target": "cta-button",
+      "pattern": "lex:magnetic-button",
+      "params": {
+        "strength": 0.4
+      }
+    }
+  ],
+  "tokens": {
+    "colors": {
+      "bg": "#0B0B0E",
+      "accent": "#6E56CF"
+    },
+    "radius": "14px",
+    "breakpoints": [
+      "sm:640",
+      "md:768",
+      "lg:1024",
+      "xl:1280"
+    ]
+  },
+  "acceptance": [
+    "bento grid 在 md 断点降为单列",
+    "magnetic button 使用 spring 物理而非 linear ease",
+    "对比度满足 WCAG AA"
+  ],
+  "assets": [
+    {
+      "id": "i/abc123",
+      "fetch_via": "vislexicon-reader",
+      "fallback_thumb": "cdn://…"
+    }
+  ],
+  "agent_instructions_url": "/spec/sp_9f3k2/agent.md"
+}

@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "form",
+  "term_en": "Form Field",
+  "term_zh": "表单输入",
+  "axis": "component",
+  "aliases": [
+    "输入框",
+    "表单",
+    "文本框"
+  ],
+  "definition_zh": "focus 时描边变亮 + 外圈光晕，标签上浮。",
+  "notation": "C[form] · focus:accent+glow · label:float",
+  "genes": [
+    {
+      "gene": "focus 态",
+      "value": "描边变亮 + 外圈光晕"
+    },
+    {
+      "gene": "标签",
+      "value": "placeholder 上浮/常驻 label"
+    }
+  ],
+  "minimal_code": {
+    "css": ".field input:focus{outline:none;border-color:var(--acc);\n  box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 22%,transparent)}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "光晕半径别过大，focus 视觉要显眼且不闪烁。"
+  ],
+  "tech_notes": [
+    "focus 用 box-shadow 外圈 + color-mix 做同系光晕。"
+  ],
+  "common_pairings": [
+    "glassmorphism"
+  ],
+  "related": [
+    "toast"
+  ],
+  "wild": [
+    {
+      "what": "各类表单页",
+      "source": "普遍",
+      "note": "focus 视觉反馈的通用标准"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/form/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/form.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

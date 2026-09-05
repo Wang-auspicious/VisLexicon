@@ -1,0 +1,73 @@
+{
+  "lever": "lexicon",
+  "id": "aurora-gradient",
+  "term_en": "Aurora / Gradient Mesh",
+  "term_zh": "极光渐变",
+  "axis": "aesthetic",
+  "aliases": [
+    "极光背景",
+    "渐变网格",
+    "mesh gradient",
+    "流体渐变"
+  ],
+  "definition_zh": "多个大半径模糊色斑缓慢漂移，制造流动的极光底色。",
+  "notation": "A[aurora] · blot:3 · blur:80 · drift:18s",
+  "genes": [
+    {
+      "gene": "色斑",
+      "value": "2–4 个大半径渐变 blob"
+    },
+    {
+      "gene": "模糊",
+      "value": "blur(80px) 磨平边界"
+    },
+    {
+      "gene": "漂移",
+      "value": "18s alternate 缓慢位移"
+    }
+  ],
+  "minimal_code": {
+    "css": ".aurora i{position:absolute;width:40vmax;aspect-ratio:1;\n  filter:blur(80px);border-radius:50%;\n  animation:drift 18s ease-in-out infinite alternate}"
+  },
+  "params": [
+    {
+      "key": "hue",
+      "label": "色相偏移",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "°",
+      "default": 0
+    }
+  ],
+  "anti_patterns": [
+    "色斑过艳=廉价；统一低饱和、大模糊、超慢动。"
+  ],
+  "tech_notes": [
+    "绝对定位 blob + blur + 各自 keyframes；blur 是合成层开销。"
+  ],
+  "common_pairings": [
+    "glassmorphism"
+  ],
+  "related": [
+    "y2k-chrome"
+  ],
+  "wild": [
+    {
+      "what": "Vercel / Linear 背景",
+      "source": "vercel.com",
+      "note": "低饱和极光做公司色氛围"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/aurora-gradient/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/aurora-gradient.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

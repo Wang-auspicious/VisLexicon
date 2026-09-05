@@ -1,0 +1,69 @@
+{
+  "lever": "lexicon",
+  "id": "bento-grid",
+  "term_en": "Bento Grid",
+  "term_zh": "便当盒网格",
+  "axis": "layout",
+  "aliases": [
+    "bento",
+    "便当格",
+    "不对称网格",
+    "模块拼盘"
+  ],
+  "definition_zh": "不等分网格拼贴，大小模块承载不同信息密度，一眼分层。",
+  "notation": "G[grid] · cells:4 · rows:96 · gap:12 · hero:span(2,2)",
+  "genes": [
+    {
+      "gene": "底框",
+      "value": "repeat(4,1fr) · auto-rows 96px"
+    },
+    {
+      "gene": "跨格",
+      "value": "hero 占 2×2 打破对称"
+    },
+    {
+      "gene": "信息密度",
+      "value": "大块=叙事，小块=数据"
+    }
+  ],
+  "minimal_code": {
+    "css": ".bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:96px;gap:12px}\n.t1{grid-column:span 2;grid-row:span 2}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "每个格子都想要跨格会退化成烂漫拼贴；先把信息分级，再决定谁占大。"
+  ],
+  "tech_notes": [
+    "CSS Grid + grid-auto-rows 统一行高；跨格用 span；移动端塌陷为单列。"
+  ],
+  "common_pairings": [
+    "glassmorphism",
+    "aurora-gradient"
+  ],
+  "related": [
+    "masonry"
+  ],
+  "wild": [
+    {
+      "what": "Apple 产品页",
+      "source": "apple.com",
+      "note": "bento 命名的出处，跨格图+数据混排的教科书"
+    },
+    {
+      "what": "Linear App 首页",
+      "source": "linear.app",
+      "note": "窄格布局，卡片即功能入口"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/bento-grid/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/bento-grid.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

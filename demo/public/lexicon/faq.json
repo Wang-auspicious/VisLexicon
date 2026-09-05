@@ -1,0 +1,58 @@
+{
+  "lever": "lexicon",
+  "id": "faq",
+  "term_en": "FAQ Accordion",
+  "term_zh": "折叠问答",
+  "axis": "component",
+  "aliases": [
+    "手风琴",
+    "accordion",
+    "常见问题"
+  ],
+  "definition_zh": "问题行 + 展开区，grid-rows 0fr→1fr 实现高度自然过渡。",
+  "notation": "C[faq] · open:0fr→1fr · chevron:rotate",
+  "genes": [
+    {
+      "gene": "展开",
+      "value": "grid-rows 0fr→1fr 纯 CSS 高度动画"
+    },
+    {
+      "gene": "指示",
+      "value": "chevron 旋转 / 加减号切换"
+    }
+  ],
+  "minimal_code": {
+    "css": ".faq div{display:grid;grid-template-rows:0fr;transition:.3s}\n.faq.open div{grid-template-rows:1fr}\ndiv>p{overflow:hidden}"
+  },
+  "params": [],
+  "anti_patterns": [
+    "默认全部展开等于放弃该组件；也别超过 8 条，多的进文档。"
+  ],
+  "tech_notes": [
+    "grid-template-rows 过渡免 JS 量高度；键盘可达性用原生 details 也可。"
+  ],
+  "common_pairings": [
+    "spring"
+  ],
+  "related": [
+    "timeline"
+  ],
+  "wild": [
+    {
+      "what": "Stripe / Vercel FAQ",
+      "source": "stripe.com",
+      "note": "单列窄容器是主流"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/faq/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/faq.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

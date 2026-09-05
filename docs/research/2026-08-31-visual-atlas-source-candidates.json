@@ -1,0 +1,586 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31",
+  "scope": "Verified source inventories only. This file intentionally contains no proposed or fabricated lexicon entries.",
+  "countPolicy": {
+    "verifiedCount": "A value reproducible from a first-party page, public endpoint, or official source repository as of generatedAt.",
+    "warning": "Counts are source records, not deduplicated VisLexicon terms. Do not sum them to claim unique coverage.",
+    "documentedLowerBound": "The source page names at least this many items but does not expose a complete inventory."
+  },
+  "totals": {
+    "sourceCount": 25,
+    "verifiedSourceRecordsAll": 1971,
+    "verifiedSourceRecordsExcludingDerivativeMotionRenderers": 1693,
+    "permissiveOrAttributionLicensedStructuredRecords": 912,
+    "conditionalGplStructuredRecords": 30,
+    "recommendedNormalizedCandidatePool": 515,
+    "recommendedLaunchEntries": 400,
+    "actualCountedSourceRecords": 466,
+    "actualCoverageDimensionRecords": 194,
+    "actualMergedCountedVisualAtlasRecords": 419,
+    "actualMergedExactDuplicates": 47,
+    "actualAtlasCandidates": 417,
+    "actualPublishedLexemeMatches": 2,
+    "aiInteractionAtlasDirectCountedContribution": 0
+  },
+  "sources": [
+    {
+      "id": "ui-anatomy",
+      "name": "UI Anatomy",
+      "domain": "uianatomy.dev",
+      "officialUrl": "https://uianatomy.dev/",
+      "verifiedCount": {
+        "value": 41,
+        "unit": "canonical component records",
+        "semantics": "exact-current-index",
+        "breakdown": { "components": 41 },
+        "basis": "GET /api/components.json and count components.length; official repository has 41 content/components/*.yaml files."
+      },
+      "evidenceUrls": [
+        "https://uianatomy.dev/api/components.json",
+        "https://uianatomy.dev/integrate",
+        "https://github.com/DominikPieper/uianatomy/tree/main/content/components"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "name-that-ui",
+      "name": "NameThatUI",
+      "domain": "namethatui.com",
+      "officialUrl": "https://namethatui.com/",
+      "verifiedCount": {
+        "value": 76,
+        "unit": "term pages",
+        "semantics": "exact-current-index",
+        "breakdown": { "macos": 32, "web": 44 },
+        "basis": "Count unique first-party homepage links matching /macos/{slug} and /web/{slug}."
+      },
+      "evidenceUrls": [
+        "https://namethatui.com/",
+        "https://namethatui.com/sitemap.xml",
+        "https://namethatui.com/methodology"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "component-gallery",
+      "name": "The Component Gallery",
+      "domain": "component.gallery",
+      "officialUrl": "https://component.gallery/components/",
+      "verifiedCount": {
+        "value": 60,
+        "unit": "component pages",
+        "semantics": "exact-current-index",
+        "breakdown": { "componentPages": 60 },
+        "basis": "Count unique links matching /components/{slug} on the official components index."
+      },
+      "evidenceUrls": [
+        "https://component.gallery/components/",
+        "https://github.com/inbn/component-gallery"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "ui-guideline",
+      "name": "UI Guideline",
+      "domain": "uiguideline.com",
+      "officialUrl": "https://www.uiguideline.com/components",
+      "verifiedCount": {
+        "value": 38,
+        "unit": "component specifications",
+        "semantics": "exact-current-catalog",
+        "breakdown": { "currentCatalogComponents": 38, "routableSitemapPages": 45, "systemsAnalyzed": 20 },
+        "basis": "Official pricing page states +38 components and sells the full library as all 38 components; components index exposes 38 component links."
+      },
+      "evidenceUrls": [
+        "https://www.uiguideline.com/components",
+        "https://www.uiguideline.com/pricing",
+        "https://mcp.uiguideline.com/"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "wai-aria-apg",
+      "name": "WAI-ARIA Authoring Practices Guide",
+      "domain": "w3.org",
+      "officialUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/",
+      "verifiedCount": {
+        "value": 30,
+        "unit": "pattern directories",
+        "semantics": "exact-source-tree",
+        "breakdown": { "patterns": 30 },
+        "basis": "Count unique first-level directories under content/patterns in the official w3c/aria-practices repository. README.md is a file and is excluded."
+      },
+      "evidenceUrls": [
+        "https://www.w3.org/WAI/ARIA/apg/patterns/",
+        "https://github.com/w3c/aria-practices/tree/main/content/patterns",
+        "https://github.com/w3c/aria-practices/blob/main/LICENSE.md"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "open-ui",
+      "name": "Open UI",
+      "domain": "open-ui.org",
+      "officialUrl": "https://open-ui.org/",
+      "verifiedCount": {
+        "value": 31,
+        "unit": "component research topics",
+        "semantics": "exact-source-tree",
+        "breakdown": { "researchTopics": 31, "researchFiles": 41 },
+        "basis": "Normalize the 41 official site/src/pages/components/*.research*.mdx files to the base topic before .research, producing 31 distinct topics."
+      },
+      "evidenceUrls": [
+        "https://github.com/openui/open-ui/tree/main/site/src/pages/components",
+        "https://github.com/openui/open-ui/blob/main/LICENSE.md"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "govuk-design-system",
+      "name": "GOV.UK Design System",
+      "domain": "design-system.service.gov.uk",
+      "officialUrl": "https://design-system.service.gov.uk/",
+      "verifiedCount": {
+        "value": 72,
+        "unit": "component and service-pattern directories",
+        "semantics": "exact-source-tree",
+        "breakdown": { "components": 37, "patterns": 35 },
+        "basis": "Count unique first-level directories under src/components and src/patterns in alphagov/govuk-design-system."
+      },
+      "evidenceUrls": [
+        "https://github.com/alphagov/govuk-design-system/tree/main/src/components",
+        "https://github.com/alphagov/govuk-design-system/tree/main/src/patterns",
+        "https://github.com/alphagov/govuk-design-system/blob/main/LICENSE.txt"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "animations-dev-vocabulary",
+      "name": "animations.dev Animation Vocabulary",
+      "domain": "animations.dev",
+      "officialUrl": "https://animations.dev/vocabulary",
+      "verifiedCount": {
+        "value": 91,
+        "unit": "motion glossary terms",
+        "semantics": "exact-current-glossary",
+        "breakdown": {
+          "entrancesAndExits": 6,
+          "sequencingAndTiming": 8,
+          "movementAndTransforms": 8,
+          "transitionsBetweenStates": 7,
+          "scroll": 5,
+          "feedbackAndInteraction": 9,
+          "easing": 7,
+          "springAnimations": 9,
+          "loopingAndAmbientMotion": 7,
+          "polishAndEffects": 10,
+          "performance": 6,
+          "principles": 9
+        },
+        "basis": "Sum the 12 category counts on the official vocabulary page; cross-check against the official MIT animation-vocabulary skill."
+      },
+      "evidenceUrls": [
+        "https://animations.dev/vocabulary",
+        "https://github.com/emilkowalski/skills/blob/main/skills/animation-vocabulary/SKILL.md",
+        "https://github.com/emilkowalski/skills/blob/main/LICENSE"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "motion-vocabulary-vercel",
+      "name": "The Vocabulary of Motion",
+      "domain": "motion-vocabulary.vercel.app",
+      "officialUrl": "https://motion-vocabulary.vercel.app/",
+      "verifiedCount": {
+        "value": 96,
+        "unit": "displayed glossary records",
+        "semantics": "exact-current-deployment",
+        "breakdown": { "liveDemoRecords": 84, "referenceRecords": 12 },
+        "basis": "The deployed first-party page bundle computes total as D.length + sum(S[].terms.length); D has 84 records and S has 12."
+      },
+      "evidenceUrls": [
+        "https://motion-vocabulary.vercel.app/",
+        "https://animations.dev/vocabulary"
+      ],
+      "derivativeOf": "animations-dev-vocabulary",
+      "includedInNonDerivativeTotal": false
+    },
+    {
+      "id": "vikingz-motion-lab",
+      "name": "Animation Vocabulary Interactive Glossary",
+      "domain": "vocabulary.vikingz.me",
+      "officialUrl": "https://vocabulary.vikingz.me/",
+      "verifiedCount": {
+        "value": 91,
+        "unit": "motion glossary terms",
+        "semantics": "exact-current-index",
+        "breakdown": {
+          "entrancesAndExits": 6,
+          "sequencingAndTiming": 8,
+          "movementAndTransforms": 8,
+          "transitionsBetweenStates": 7,
+          "scroll": 5,
+          "feedbackAndInteraction": 9,
+          "easing": 7,
+          "springAnimations": 9,
+          "loopingAndAmbientMotion": 7,
+          "polishAndEffects": 10,
+          "performance": 6,
+          "principles": 9
+        },
+        "basis": "The official page displays all 12 category counts, which sum to 91, and states that terms are adapted from animations.dev."
+      },
+      "evidenceUrls": [
+        "https://vocabulary.vikingz.me/",
+        "https://animations.dev/vocabulary"
+      ],
+      "derivativeOf": "animations-dev-vocabulary",
+      "includedInNonDerivativeTotal": false
+    },
+    {
+      "id": "easings-net",
+      "name": "easings.net",
+      "domain": "easings.net",
+      "officialUrl": "https://easings.net/",
+      "verifiedCount": {
+        "value": 30,
+        "unit": "easing function records",
+        "semantics": "exact-current-index",
+        "breakdown": { "easingFunctions": 30 },
+        "basis": "Count unique official page anchors matching #ease{Family}{Direction}."
+      },
+      "evidenceUrls": [
+        "https://easings.net/",
+        "https://github.com/ai/easings.net",
+        "https://github.com/ai/easings.net/blob/master/LICENSE"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "adobe-animate-visual-glossary",
+      "name": "Adobe Animate Visual Glossary",
+      "domain": "helpx.adobe.com",
+      "officialUrl": "https://helpx.adobe.com/animate/using/visual-glossary.html",
+      "verifiedCount": {
+        "value": 19,
+        "unit": "visual glossary links",
+        "semantics": "exact-current-page",
+        "breakdown": { "toolsWorkspaceColors": 3, "time": 5, "elements": 8, "tweens": 3 },
+        "basis": "Count the 19 unique article links in the four official visual-glossary tables."
+      },
+      "evidenceUrls": [
+        "https://helpx.adobe.com/animate/using/visual-glossary.html"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "figma-plugin-vocabularies",
+      "name": "Figma Plugin API Type Vocabularies",
+      "domain": "developers.figma.com",
+      "officialUrl": "https://developers.figma.com/docs/plugins/api/Transition/",
+      "verifiedCount": {
+        "value": 82,
+        "unit": "declared namespaced options",
+        "semantics": "exact-selected-contract",
+        "breakdown": {
+          "blendMode": 19,
+          "textCase": 6,
+          "textDecoration": 3,
+          "constraintType": 5,
+          "overlayPositionType": 8,
+          "simpleTransitionType": 3,
+          "directionalTransitionType": 5,
+          "direction": 4,
+          "easingType": 13,
+          "layoutMode": 4,
+          "layoutWrap": 2,
+          "primaryAxisAlignItems": 4,
+          "counterAxisAlignItems": 4,
+          "counterAxisAlignContent": 2,
+          "uniqueStringLiteralsAcrossNamespaces": 73
+        },
+        "basis": "Parse the listed types and properties from the official figma/plugin-typings plugin-api.d.ts. Count is namespaced options; repeated literals in different namespaces remain separate records."
+      },
+      "evidenceUrls": [
+        "https://developers.figma.com/docs/plugins/api/Transition/",
+        "https://github.com/figma/plugin-typings/blob/master/plugin-api.d.ts",
+        "https://github.com/figma/plugin-typings/blob/master/LICENSE"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "powerpoint-mso-animation-effects",
+      "name": "Microsoft PowerPoint MsoAnimEffect Inventory",
+      "domain": "learn.microsoft.com",
+      "officialUrl": "https://learn.microsoft.com/en-us/office/vba/api/powerpoint.effect.effecttype",
+      "verifiedCount": {
+        "value": 149,
+        "unit": "unique MsoAnimEffect constants",
+        "semantics": "exact-current-reference-page",
+        "breakdown": { "uniqueConstants": 149 },
+        "basis": "Extract and deduplicate tokens matching msoAnimEffect[A-Za-z0-9]+ on the official Effect.EffectType reference page."
+      },
+      "evidenceUrls": [
+        "https://learn.microsoft.com/en-us/office/vba/api/powerpoint.effect.effecttype",
+        "https://github.com/MicrosoftDocs/VBA-Docs",
+        "https://github.com/MicrosoftDocs/VBA-Docs/blob/main/LICENSE"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "after-effects-effect-list",
+      "name": "Adobe After Effects Effect List",
+      "domain": "helpx.adobe.com",
+      "officialUrl": "https://helpx.adobe.com/after-effects/desktop/apply-effects-and-animation-presets/effects-and-animation-presets/effect-list.html",
+      "verifiedCount": {
+        "value": 290,
+        "unit": "effect rows",
+        "semantics": "exact-current-page",
+        "breakdown": { "categoryTables": 22, "allTableRows": 312, "headerRows": 22, "effectRows": 290 },
+        "basis": "Count 312 rows across the 22 official effect tables and subtract one header row per table."
+      },
+      "evidenceUrls": [
+        "https://helpx.adobe.com/after-effects/desktop/apply-effects-and-animation-presets/effects-and-animation-presets/effect-list.html",
+        "https://helpx.adobe.com/after-effects/desktop/apply-effects-and-animation-presets/effects-and-animation-presets/effects-animation-presets-overview.html"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "photoshop-filter-reference",
+      "name": "Adobe Photoshop Filter Effects Reference",
+      "domain": "helpx.adobe.com",
+      "officialUrl": "https://helpx.adobe.com/photoshop/using/filter-effects-reference.html",
+      "verifiedCount": {
+        "value": 99,
+        "unit": "named filter reference records",
+        "semantics": "exact-current-page",
+        "breakdown": { "filterReferenceRecords": 99 },
+        "basis": "Count unique official filter titles rendered as help-variable-title records on the reference page. Combined titles such as 'Blur and Blur More' remain one source record."
+      },
+      "evidenceUrls": [
+        "https://helpx.adobe.com/photoshop/using/filter-effects-reference.html",
+        "https://helpx.adobe.com/photoshop/desktop/effects-filters/get-started-with-filters/filter-gallery.html"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "keynote-animation-docs",
+      "name": "Apple Keynote Animation Documentation",
+      "domain": "support.apple.com",
+      "officialUrl": "https://support.apple.com/guide/keynote/animate-objects-on-a-slide-tanf96d92cb6/mac",
+      "verifiedCount": {
+        "value": 8,
+        "unit": "explicitly named animation mechanisms",
+        "semantics": "documented-lower-bound",
+        "breakdown": { "actionBuildNames": 6, "transitionNames": 2 },
+        "basis": "Two official pages explicitly name Opacity, Rotate, Scale, Move, Bounce, Flip, Push, and Magic Move. Apple does not publish a complete machine-readable effect inventory on these pages."
+      },
+      "evidenceUrls": [
+        "https://support.apple.com/guide/keynote/animate-objects-on-a-slide-tanf96d92cb6/mac",
+        "https://support.apple.com/guide/keynote/add-transitions-between-slides-tanff5ae749e/mac",
+        "https://support.apple.com/guide/keynote/animate-objects-onto-and-off-a-slide-tan72234bb6/mac"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "ai-interaction-atlas",
+      "name": "AI Interaction Atlas",
+      "domain": "ai-interaction.com",
+      "officialUrl": "https://ai-interaction.com/atlas",
+      "verifiedCount": {
+        "value": 194,
+        "unit": "structured taxonomy records",
+        "semantics": "exact-source-data",
+        "breakdown": {
+          "aiTasks": 25,
+          "humanActions": 24,
+          "systemOperations": 22,
+          "dataTypes": 47,
+          "constraints": 38,
+          "touchpoints": 38
+        },
+        "basis": "Count prefixed top-level IDs in the six authoritative TypeScript data files; values match the official Atlas page counters."
+      },
+      "evidenceUrls": [
+        "https://ai-interaction.com/atlas",
+        "https://github.com/quietloudlab/ai-interaction-atlas/tree/main/data",
+        "https://github.com/quietloudlab/ai-interaction-atlas/blob/main/LICENSE",
+        "https://www.npmjs.com/package/@quietloudlab/ai-interaction-atlas"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "assistant-ui",
+      "name": "assistant-ui",
+      "domain": "assistant-ui.com",
+      "officialUrl": "https://www.assistant-ui.com/elements",
+      "verifiedCount": {
+        "value": 139,
+        "unit": "catalog documentation records",
+        "semantics": "exact-source-tree",
+        "breakdown": { "elementDocs": 120, "primitiveReferenceDocs": 19, "installableRegistryRecords": 96, "registryHelpers": 2, "registryCandidateRecords": 94 },
+        "basis": "Count apps/docs/content/elements/*.mdx plus non-index primitive API MDX pages. The value 139 is documentation records, not 139 independent components; the import pipeline uses only the 120 element docs."
+      },
+      "evidenceUrls": [
+        "https://www.assistant-ui.com/elements",
+        "https://github.com/assistant-ui/assistant-ui/tree/main/apps/docs/content/elements",
+        "https://github.com/assistant-ui/assistant-ui/tree/main/apps/docs/content/docs/(reference)/api-reference/primitives",
+        "https://github.com/assistant-ui/assistant-ui/blob/main/LICENSE"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "vercel-ai-elements",
+      "name": "Vercel AI Elements",
+      "domain": "elements.ai-sdk.dev",
+      "officialUrl": "https://elements.ai-sdk.dev/components",
+      "verifiedCount": {
+        "value": 48,
+        "unit": "component pages and registry records",
+        "semantics": "exact-current-index",
+        "breakdown": { "liveCatalogComponents": 48, "repositoryComponentDocs": 49, "unpublishedRepositoryComponents": 1 },
+        "basis": "Count unique live links matching /components/{slug}. Repository main has one additional unpublished question component whose live page returns 404, so the verified live count remains 48."
+      },
+      "evidenceUrls": [
+        "https://elements.ai-sdk.dev/components",
+        "https://elements.ai-sdk.dev/api/registry/prompt-input",
+        "https://github.com/vercel/ai-elements",
+        "https://github.com/vercel/ai-elements/blob/main/LICENSE"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "prompt-kit",
+      "name": "Prompt Kit",
+      "domain": "prompt-kit.com",
+      "officialUrl": "https://www.prompt-kit.com/chat-ui",
+      "verifiedCount": {
+        "value": 23,
+        "unit": "public registry items",
+        "semantics": "exact-current-registry",
+        "breakdown": { "uiComponents": 21, "composedItems": 2 },
+        "basis": "GET the first-party /c/registry.json and count items.length."
+      },
+      "evidenceUrls": [
+        "https://www.prompt-kit.com/c/registry.json",
+        "https://github.com/ibelick/prompt-kit",
+        "https://github.com/ibelick/prompt-kit/blob/main/LICENSE"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "loquix",
+      "name": "Loquix",
+      "domain": "loquix.dev",
+      "officialUrl": "https://loquix.dev/",
+      "verifiedCount": {
+        "value": 53,
+        "unit": "custom element declarations",
+        "semantics": "exact-current-manifest",
+        "breakdown": { "taggedDeclarations": 53, "categories": 10 },
+        "basis": "Parse the official packages/core/custom-elements.json manifest and count unique declarations with tagName."
+      },
+      "evidenceUrls": [
+        "https://loquix.dev/",
+        "https://github.com/loquix-dev/loquix/blob/main/packages/core/custom-elements.json",
+        "https://github.com/loquix-dev/loquix/blob/main/LICENSE"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "ui-terms",
+      "name": "UI Terms",
+      "domain": "uiterms.com",
+      "officialUrl": "https://uiterms.com/",
+      "verifiedCount": {
+        "value": 64,
+        "unit": "visual dictionary records",
+        "semantics": "exact-embedded-index",
+        "breakdown": {
+          "animations": 10,
+          "components": 25,
+          "interactions": 9,
+          "layouts": 9,
+          "patterns": 11,
+          "aliasStrings": 163
+        },
+        "basis": "Parse the first-party application/json script marked data-search-index; it contains 64 unique slugs and 163 alias strings."
+      },
+      "evidenceUrls": [
+        "https://uiterms.com/"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    },
+    {
+      "id": "moro",
+      "name": "Moro Motion Principles and Vocabulary",
+      "domain": "moro.davidumoru.me",
+      "officialUrl": "https://moro.davidumoru.me/vocabulary",
+      "verifiedCount": {
+        "value": 91,
+        "unit": "motion vocabulary terms",
+        "semantics": "exact-current-catalog",
+        "breakdown": {
+          "vocabularyTerms": 91,
+          "interactivePrinciplePagesSubset": 15
+        },
+        "basis": "The official vocabulary page states 91 terms; the official homepage exposes 15 interactive principle pages that are a subset/view of that vocabulary and are not additive."
+      },
+      "evidenceUrls": [
+        "https://moro.davidumoru.me/vocabulary",
+        "https://moro.davidumoru.me/",
+        "https://github.com/davidumoru/moro",
+        "https://animations.dev/vocabulary"
+      ],
+      "derivativeOf": "animations-dev-vocabulary",
+      "includedInNonDerivativeTotal": false
+    },
+    {
+      "id": "motionary",
+      "name": "Motionary",
+      "domain": "motionary.dev",
+      "officialUrl": "https://motionary.dev/animations",
+      "verifiedCount": {
+        "value": 56,
+        "unit": "published animation drops",
+        "semantics": "exact-current-index",
+        "breakdown": {
+          "animationPages": 56,
+          "sitemapAnimationUrls": 56
+        },
+        "basis": "Count 56 unique /animations/{slug} links on the official index and cross-check against 56 animation URLs in the official sitemap. The homepage also states 56 drops; no evidence supports a 500+ claim."
+      },
+      "evidenceUrls": [
+        "https://motionary.dev/",
+        "https://motionary.dev/animations",
+        "https://motionary.dev/sitemap.xml",
+        "https://motionary.dev/license",
+        "https://motionary.dev/terms"
+      ],
+      "derivativeOf": null,
+      "includedInNonDerivativeTotal": true
+    }
+  ]
+}

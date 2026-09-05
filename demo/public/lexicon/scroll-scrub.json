@@ -1,0 +1,59 @@
+{
+  "lever": "lexicon",
+  "id": "scroll-scrub",
+  "term_en": "Scroll Scrub",
+  "term_zh": "滚动擦洗",
+  "axis": "motion",
+  "aliases": [
+    "滚动驱动",
+    "scrub 动画",
+    "scroll-linked"
+  ],
+  "definition_zh": "动画进度直接映射滚动位置：滚到哪播到哪，倒滚也倒放。",
+  "notation": "M[scrub] · map:scrollY→p · apply:direct · rev:true",
+  "genes": [
+    {
+      "gene": "映射",
+      "value": "滚动区间 → 动画时间轴"
+    },
+    {
+      "gene": "平滑",
+      "value": "scrub:0.5 = 轻微追赶延迟"
+    }
+  ],
+  "minimal_code": {
+    "css": "const p = scrollY / (docHeight - vh);\nel.style.transform = `rotate(${p * 360}deg)`;\n/* GSAP: scrollTrigger:{scrub:0.5} */"
+  },
+  "params": [],
+  "anti_patterns": [
+    "整页都在 scrub 会晕；只在叙事段使用并给跳过手段。"
+  ],
+  "tech_notes": [
+    "scroll listener + 进度归一，或 GSAP scrollTrigger/Web Animations。"
+  ],
+  "common_pairings": [
+    "sticky-scroll",
+    "parallax"
+  ],
+  "related": [
+    "scroll-reveal"
+  ],
+  "wild": [
+    {
+      "what": "Apple 产品页参数逐条点亮",
+      "source": "apple.com",
+      "note": "scrub 叙事的标准样本"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/scroll-scrub/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/scroll-scrub.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

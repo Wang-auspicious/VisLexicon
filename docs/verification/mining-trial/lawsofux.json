@@ -1,0 +1,201 @@
+{
+  "context": {
+    "url": "https://lawsofux.com",
+    "finalUrl": "https://lawsofux.com",
+    "status": 0,
+    "sheets": 0,
+    "cssBytes": 0,
+    "notes": [
+      "html fetch failed: fetch failed"
+    ]
+  },
+  "probe": {
+    "probeVersion": 1,
+    "url": "https://lawsofux.com",
+    "finalUrl": "https://lawsofux.com",
+    "capturedAt": "2026-09-02T14:26:24.134Z",
+    "viewports": [
+      {
+        "label": "browser-window",
+        "width": 1259,
+        "horizontalOverflowPx": 0,
+        "overlapHits": 11
+      }
+    ],
+    "hero": {
+      "backgroundColor": "rgb(45, 45, 45)",
+      "coverage": 1
+    },
+    "radii": {
+      "measuredElements": 15,
+      "zeroRadiusElements": 15
+    },
+    "borders": {
+      "thickElements": 0
+    },
+    "typography": {
+      "bodyMeasureCh": null,
+      "headingFamilies": [
+        "\"Segoe UI\", Arial, \"Microsoft Yahei\", sans-serif"
+      ]
+    },
+    "motion": {
+      "scalePopKeyframes": 0,
+      "scrollDriven": false,
+      "scrollTransformSites": 0,
+      "transformProperties": [
+        "rotate",
+        "translate"
+      ]
+    },
+    "render": {
+      "imageRenderingPixelated": false,
+      "largeAreaGradients": 0,
+      "pixelFontMatch": false,
+      "threeJsSignature": false,
+      "webglContexts": 0
+    },
+    "contrastSamples": [
+      {
+        "background": "rgb(45, 45, 45)",
+        "foreground": "rgb(255, 255, 255)"
+      },
+      {
+        "background": "rgb(45, 45, 45)",
+        "foreground": "rgb(255, 255, 255)"
+      },
+      {
+        "background": "rgb(45, 45, 45)",
+        "foreground": "rgb(255, 255, 255)"
+      }
+    ]
+  },
+  "result": {
+    "extractorVersion": "mining-extractor-v1",
+    "tiersRun": [
+      "dom"
+    ],
+    "metrics": {
+      "heroBackgroundLuminance": 0.026241221894849894,
+      "heroBackgroundCoverage": 1,
+      "zeroRadiusShare": 1,
+      "thickBorderElements": 0,
+      "hasSerifHeading": false,
+      "transformDimensions": 2,
+      "scrollDriven": false,
+      "scrollTransformSites": 0,
+      "scalePopKeyframes": 0,
+      "hasWebGLContext": false,
+      "threeJsSignature": false,
+      "imageRenderingPixelated": false,
+      "pixelFontMatch": false,
+      "largeAreaGradients": 0,
+      "maxContrastRatio": 13.772077281869057
+    },
+    "provenance": {
+      "heroBackgroundLuminance": "dom",
+      "heroBackgroundCoverage": "dom",
+      "zeroRadiusShare": "dom",
+      "thickBorderElements": "dom",
+      "hasSerifHeading": "dom",
+      "transformDimensions": "dom",
+      "scrollDriven": "dom",
+      "scrollTransformSites": "dom",
+      "scalePopKeyframes": "dom",
+      "hasWebGLContext": "dom",
+      "threeJsSignature": "dom",
+      "imageRenderingPixelated": "dom",
+      "pixelFontMatch": "dom",
+      "largeAreaGradients": "dom",
+      "maxContrastRatio": "dom"
+    },
+    "conflicts": [],
+    "signalTags": [
+      {
+        "tag": "style.dark-canvas",
+        "evidence": {
+          "heroBackgroundLuminance": 0.026241221894849894,
+          "heroBackgroundCoverage": 1
+        }
+      }
+    ],
+    "refutedTags": [
+      "motion.scroll-driven",
+      "style.pixel-art",
+      "style.brutalist",
+      "style.editorial",
+      "style.gradient-led",
+      "style.3d-webgl"
+    ],
+    "undecidableTags": [
+      {
+        "tag": "motion.coherent",
+        "missingMetrics": [
+          "motionDeclarations",
+          "dominantEasingShare",
+          "medianDuration",
+          "durationFamilies"
+        ]
+      },
+      {
+        "tag": "motion.still",
+        "missingMetrics": [
+          "motionDeclarations",
+          "hasSpringOrBounce",
+          "medianDuration"
+        ]
+      },
+      {
+        "tag": "motion.expressive",
+        "missingMetrics": [
+          "keyframeAnimations",
+          "hasSpringOrBounce"
+        ]
+      },
+      {
+        "tag": "style.glass",
+        "missingMetrics": [
+          "backdropBlurRules"
+        ]
+      },
+      {
+        "tag": "style.monochrome",
+        "missingMetrics": [
+          "chromaticColors"
+        ]
+      },
+      {
+        "tag": "craft.type-scale-disciplined",
+        "missingMetrics": [
+          "typeSizeCount",
+          "scaleRatioStdDev"
+        ]
+      },
+      {
+        "tag": "craft.color-restraint",
+        "missingMetrics": [
+          "chromaticColors"
+        ]
+      },
+      {
+        "tag": "craft.responsive-verified",
+        "missingMetrics": [
+          "responsiveBreakpointsTested",
+          "responsiveOverflowHits",
+          "responsiveOverlapHits"
+        ]
+      },
+      {
+        "tag": "craft.a11y-contrast-ok",
+        "missingMetrics": [
+          "contrastSamples",
+          "contrastFailures"
+        ]
+      }
+    ],
+    "notes": [
+      "dom: only 1 breakpoint(s) measured; responsive metrics withheld (needs 3)",
+      "dom: only 3 opaque contrast pair(s) sampled; pass/fail withheld (needs 10)"
+    ]
+  }
+}

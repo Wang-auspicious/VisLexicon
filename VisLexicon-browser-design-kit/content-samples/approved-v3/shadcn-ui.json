@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 3,
+  "entryId": "shadcn-ui",
+  "entityId": "entity-shadcn-ui",
+  "attemptId": "legacy-curation-v2-shadcn-ui-20260901-v3-b6883d0294a4",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://ui.shadcn.com/",
+    "finalUrl": "https://ui.shadcn.com/",
+    "checkedAt": "2026-09-01T07:35:14.634Z"
+  },
+  "editorial": {
+    "name": "shadcn/ui",
+    "descriptionZh": "开放源码的组件集合与代码分发平台，通过 registry 和 CLI 将组件源码装入项目，由使用者直接修改并组成自己的组件库；官方还提供区块、主题与跨框架文档，适合希望掌控实现细节的设计师和开发者。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-shadcn-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "该入口以一致 schema、CLI、registry、主题和大量组件帮助用户建立自己的完整组件系统。",
+        "evidenceUrl": "https://ui.shadcn.com/docs"
+      },
+      {
+        "statement": "Blocks 页面把组件组合成可安装的后台、登录和应用区块，证明它超过单个原语而形成完整套件。",
+        "evidenceUrl": "https://ui.shadcn.com/blocks"
+      }
+    ],
+    "curatorId": "root-contact-sheet-review-20260901",
+    "reviewerId": "independent-six-v3-editorial-reviewer",
+    "confirmedAt": "2026-09-01T16:45:57.625Z"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive",
+      "block",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "edit",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli",
+      "mcp"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "radix-ui",
+      "base-ui",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ui.shadcn.com/",
+      "finalUrl": "https://ui.shadcn.com/",
+      "title": "shadcn/ui — Build Your Component Library",
+      "selectionRationale": "首页组合示例清楚表达可复制代码与自主定制的设计系统定位。",
+      "shot": {
+        "src": "/shots/shadcn-ui/v2-identity.png",
+        "sha256": "03c1d95841d2ff7ebc8244e5086f5aab5bdd89192e003a3c34ac06f051effde1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 140314,
+        "alt": "shadcn/ui 首页的设计系统组件组合示例"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ui.shadcn.com/docs/components",
+      "finalUrl": "https://ui.shadcn.com/docs/components",
+      "title": "shadcn/ui Components",
+      "selectionRationale": "组件文档目录展示无障碍原语和基础控件的完整范围。",
+      "shot": {
+        "src": "/shots/shadcn-ui/v2-breadth.png",
+        "sha256": "64017b107977d16bb8ceab7186949dd40b6809481d0e2de4b2069f13ebb97049",
+        "width": 1280,
+        "height": 900,
+        "bytes": 138969,
+        "alt": "shadcn/ui 官方组件目录与文档导航"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ui.shadcn.com/blocks",
+      "finalUrl": "https://ui.shadcn.com/blocks",
+      "title": "shadcn/ui Blocks",
+      "selectionRationale": "Blocks 页面以后台区块证明这些原语能组合成应用级界面。",
+      "shot": {
+        "src": "/shots/shadcn-ui/v2-proof.png",
+        "sha256": "1d84d35f937e5d5af952e9b78826fa3c2c0929e27597588af9507f2fe51a4ad2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 153929,
+        "alt": "shadcn/ui Building Blocks 页面与后台区块预览"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "shadcn",
+      "sourceUrl": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md",
+      "evidence": "官方仓库 LICENSE.md 的版权行为 Copyright (c) 2023 shadcn。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/shadcn-ui/ui",
+      "sourceUrl": "https://github.com/shadcn-ui/ui",
+      "evidence": "仓库描述和 homepage 字段直接对应 ui.shadcn.com，身份闭环。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/shadcn-ui/ui/blob/main/LICENSE.md",
+      "evidence": "官方仓库许可文件明确为 MIT License。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "shadcn-ui",
+      "sourceUrl": "https://github.com/shadcn-ui/ui",
+      "evidence": "官方代码仓库由 shadcn-ui GitHub 组织维护，仓库主页回链 https://ui.shadcn.com。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://ui.shadcn.com/docs",
+      "evidence": "官方文档声明 Open Source、Open Code，并提供公开的组件分发流程。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "root-contact-sheet-review-20260901",
+    "technicalPassed": true,
+    "semanticReviewerId": "independent-six-v3-editorial-reviewer",
+    "semanticPassed": true,
+    "editorialReviewerId": "independent-six-v3-editorial-reviewer"
+  }
+}

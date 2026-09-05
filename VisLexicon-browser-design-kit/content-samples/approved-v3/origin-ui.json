@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 3,
+  "entryId": "origin-ui",
+  "entityId": "entity-origin-ui",
+  "attemptId": "legacy-curation-v2-origin-ui-20260901-v3-ca79808059b7",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://coss.com/ui",
+    "finalUrl": "https://coss.com/ui",
+    "checkedAt": "2026-09-01T07:34:41.111Z"
+  },
+  "editorial": {
+    "name": "Coss UI",
+    "descriptionZh": "Cal.com 团队公开构建的组件与设计系统，基于 Base UI 和 Tailwind CSS，提供可复制到项目中自行维护的基础组件与复合控件；目前仍处早期开发阶段，可能随 Base UI 演进产生破坏性变更。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-origin-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "该入口主要交付可复制、安装并自行维护的 Base UI 组件、基础原语和复合控件。",
+        "evidenceUrl": "https://coss.com/ui/docs"
+      },
+      {
+        "statement": "Calendar 详情页给出可运行示例、shadcn CLI 安装命令、用法、API 和多个变体，证明它是组件实现而非案例画廊。",
+        "evidenceUrl": "https://coss.com/ui/docs/components/calendar"
+      }
+    ],
+    "curatorId": "root-contact-sheet-review-20260901",
+    "reviewerId": "independent-six-v3-editorial-reviewer",
+    "confirmedAt": "2026-09-01T16:45:57.625Z"
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "primitive",
+      "block"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "copy",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "base-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://coss.com/ui",
+      "finalUrl": "https://coss.com/ui",
+      "title": "Coss UI — Origin UI Components",
+      "selectionRationale": "首页展示 Coss UI 身份、Base UI 技术基础与应用组件示例。",
+      "shot": {
+        "src": "/shots/origin-ui/v2-identity.png",
+        "sha256": "1e2f4f36dd12a5a290cf36c071612d680cb1a3380139454f5c082ac68d00218b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 118884,
+        "alt": "Coss UI 首页与 Base UI 组件概览"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://coss.com/ui/particles",
+      "finalUrl": "https://coss.com/ui/particles",
+      "title": "Coss UI Particles",
+      "selectionRationale": "Particles 目录体现大量可筛选界面组件及其覆盖范围。",
+      "shot": {
+        "src": "/shots/origin-ui/v2-breadth.png",
+        "sha256": "afec6e2a53e2e020cc177d8bbc3e8b3b6922b42ce61c91a78ea737d148ec28a6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78897,
+        "alt": "Coss UI 的 508 个可筛选界面 particles 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+      "finalUrl": "https://coss.com/ui/docs/components/calendar",
+      "title": "Coss UI Calendar",
+      "selectionRationale": "Calendar 文档通过日期选择器实例证明组件可用于真实应用界面。",
+      "shot": {
+        "src": "/shots/origin-ui/v2-proof.png",
+        "sha256": "c10a60b4bf94f43811c7ad6e219fae6e6107ae2cf0a0348a2c608ec8f3d112fc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114735,
+        "alt": "Coss UI Calendar 组件文档与日期选择器预览"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Cal.com, Inc. team",
+      "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+      "evidence": "组件文档页脚明确写明 Built by and for the team of Cal.com, Inc.。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/cosscom/coss/blob/main/apps/ui/package.json",
+      "evidence": "承载 coss.com/ui 文档、registry 与 particles 的 apps/ui/package.json 明确声明 license 为 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Cal.com, Inc.",
+      "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+      "evidence": "组件文档页脚直接给出 Cal.com, Inc. 法人名称。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/cosscom/coss",
+      "sourceUrl": "https://coss.com/ui/docs/components/calendar",
+      "evidence": "官方组件文档导航直接链接 cosscom/coss 仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://coss.com/ui/docs",
+      "evidence": "官方介绍将该入口描述为公开构建的开源项目，并提供直接复制与安装源码的流程。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "root-contact-sheet-review-20260901",
+    "technicalPassed": true,
+    "semanticReviewerId": "independent-six-v3-editorial-reviewer",
+    "semanticPassed": true,
+    "editorialReviewerId": "independent-six-v3-editorial-reviewer"
+  }
+}

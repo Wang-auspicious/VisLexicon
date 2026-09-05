@@ -1,0 +1,63 @@
+{
+  "lever": "lexicon",
+  "id": "drag-reorder",
+  "term_en": "Drag to Reorder",
+  "term_zh": "拖拽重排",
+  "axis": "interaction",
+  "aliases": [
+    "拖拽排序",
+    "sortable",
+    "抓起重排"
+  ],
+  "definition_zh": "按住卡片拖动，其余卡片实时让位，松手落位。",
+  "notation": "I[drag] · grabbed:scale1.03 · others:flip-shift",
+  "genes": [
+    {
+      "gene": "抓起态",
+      "value": "放大 1.02–1.05 + 深影 + 微旋转"
+    },
+    {
+      "gene": "让位",
+      "value": "FLIP 位移过渡，≤180ms"
+    }
+  ],
+  "minimal_code": {
+    "css": "onDragMove: 被拖卡 transform 跟手;\n其余卡片按插入索引做 FLIP 位移过渡"
+  },
+  "params": [],
+  "anti_patterns": [
+    "触屏上必须与滚动手势区分（长按或手柄触发）。"
+  ],
+  "tech_notes": [
+    "pointer events + FLIP；拖影用 transform 而非改布局。"
+  ],
+  "common_pairings": [
+    "flip"
+  ],
+  "related": [
+    "card-stack"
+  ],
+  "wild": [
+    {
+      "what": "iOS 主屏图标重排",
+      "source": "iOS",
+      "note": "让位抖动的鼻祖"
+    },
+    {
+      "what": "Linear / Notion 拖拽",
+      "source": "linear.app",
+      "note": "现代 web 实现"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/drag-reorder/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/drag-reorder.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

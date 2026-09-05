@@ -1,0 +1,68 @@
+{
+  "lever": "lexicon",
+  "id": "marquee",
+  "term_en": "Marquee",
+  "term_zh": "无缝跑马灯",
+  "axis": "interaction",
+  "aliases": [
+    "跑马灯",
+    "滚动横幅",
+    "无限滚动条"
+  ],
+  "definition_zh": "内容首尾相接的无限横滚，需 duplicate 轨道实现无缝。",
+  "notation": "I[marquee] · dir:x · loop:infinite · gap:none",
+  "genes": [
+    {
+      "gene": "无缝",
+      "value": "轨道翻倍，-50% 循环"
+    },
+    {
+      "gene": "暂停",
+      "value": "hover 暂停（accessibility）"
+    }
+  ],
+  "minimal_code": {
+    "css": ".track{animation:mq 14s linear infinite}\n@keyframes mq{to{transform:translateX(-50%)}}"
+  },
+  "params": [
+    {
+      "key": "duration",
+      "label": "一圈时长",
+      "min": 6,
+      "max": 30,
+      "step": 1,
+      "unit": "s",
+      "default": 14
+    }
+  ],
+  "anti_patterns": [
+    "不允许 motion 的用户应看到静态；给 aria 与 reduced-motion 处理。"
+  ],
+  "tech_notes": [
+    "轨道复制两份 translateX(-50%)；gap 打进单元内部才无缝。"
+  ],
+  "common_pairings": [
+    "editorial"
+  ],
+  "related": [
+    "number-ticker"
+  ],
+  "wild": [
+    {
+      "what": "众多 branding 页",
+      "source": "多个作品集",
+      "note": "Logo 墙、金句墙的常客"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/marquee/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/marquee.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}

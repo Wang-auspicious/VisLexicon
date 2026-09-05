@@ -1,0 +1,69 @@
+{
+  "lever": "lexicon",
+  "id": "motion-lib",
+  "term_en": "Motion",
+  "term_zh": "Motion（原 Framer Motion）",
+  "axis": "toolkit",
+  "aliases": [
+    "framer motion",
+    "motion one",
+    "motion.dev",
+    "spring 库"
+  ],
+  "definition_zh": "React 生态动效库：声明式 spring 物理、手势、布局动画与 exit 编排。",
+  "notation": "T[motion] · type:spring · k:320 · c:24 · whileHover",
+  "genes": [
+    {
+      "gene": "声明式",
+      "value": "组件属性即动画，随状态重渲"
+    },
+    {
+      "gene": "spring 物理",
+      "value": "stiffness/damping 而非时长"
+    },
+    {
+      "gene": "布局动画",
+      "value": "layout prop 自动 FLIP"
+    }
+  ],
+  "minimal_code": {
+    "css": "<motion.button\n  whileHover={{ scale: 1.04 }}\n  transition={{ type: 'spring', stiffness: 320, damping: 24 }}\n/>"
+  },
+  "params": [],
+  "anti_patterns": [
+    "非 React 项目用 Motion One / 原生 WAAPI；巨型时间线编排 GSAP 更顺手。"
+  ],
+  "tech_notes": [
+    "布局动画内置 FLIP；exit 需要 AnimatePresence 包裹。"
+  ],
+  "common_pairings": [
+    "spring",
+    "magnetic-button"
+  ],
+  "related": [
+    "gsap"
+  ],
+  "wild": [
+    {
+      "what": "shadcn 生态组件默认搭配",
+      "source": "21st.dev",
+      "note": "React 组件动效的第一选择"
+    },
+    {
+      "what": "官方 docs 概念树",
+      "source": "motion.dev/docs",
+      "note": "概念即导航的 docs 范式"
+    }
+  ],
+  "media": {
+    "poster": "cdn://lexicon/motion-lib/poster@2x.png",
+    "keyframes": [
+      "f0.png",
+      "f1.png",
+      "f2.png",
+      "f3.png"
+    ]
+  },
+  "endpoint": "/lexicon/motion-lib.json",
+  "license": "CC BY-SA 4.0 (词条数据)"
+}
