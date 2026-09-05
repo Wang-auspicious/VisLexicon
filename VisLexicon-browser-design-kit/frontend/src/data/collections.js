@@ -46,6 +46,9 @@ export const COLLECTIONS = [
       'kobalte',
       'diceui',
       'shadcnblocks',
+      'sonner',
+      'vaul',
+      'floating-ui',
     ],
     createdAt: '2026-09-05',
   },
@@ -64,7 +67,7 @@ export const COLLECTIONS = [
     titleEn: 'Motion and micro-interaction',
     blurbZh: '这些站交付的是会动的实现：时间轴、class 动画和弹簧，用来看效果怎么接到界面上。',
     blurbEn: 'Motion implementations: timelines, class animation, springs.',
-    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles', 'react-bits'],
+    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles', 'react-bits', 'animejs'],
     createdAt: '2026-09-06',
   },
   {
@@ -82,7 +85,7 @@ export const COLLECTIONS = [
     titleEn: 'Charts and visualization',
     blurbZh: '这些站交付的是图表实现：用组件、canvas 或比例尺把数据画出来。',
     blurbEn: 'Chart implementations: components, canvas, and scales.',
-    entryIds: ['d3', 'recharts', 'chartjs', 'nivo', 'tremor'],
+    entryIds: ['d3', 'recharts', 'chartjs', 'nivo', 'tremor', 'visx', 'echarts'],
     createdAt: '2026-09-06',
   },
   {

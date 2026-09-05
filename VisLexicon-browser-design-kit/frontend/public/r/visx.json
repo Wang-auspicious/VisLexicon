@@ -1,0 +1,201 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:28:49.738Z",
+  "entryId": "visx",
+  "entityId": "entity-visx",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://airbnb.io/visx/",
+    "finalUrl": "https://visx.airbnb.tech/",
+    "checkedAt": "2026-09-06T02:50:00.000Z"
+  },
+  "editorial": {
+    "name": "visx",
+    "descriptionZh": "Airbnb 的 React 可视化原语集，把 D3 计算接到 React 更新。仓库 visx 现为 v4，需 React 18 或 19；LICENSE 标 MIT，文档站已迁至 visx.airbnb.tech。",
+    "takeawayZh": "用 React 原语自己拼柱状图，不是现成套件",
+    "noteZh": "airbnb.io/visx 会跳到 visx.airbnb.tech。首页红底大 X，下面写 low-level visualization primitives for React。Gallery 左侧 annotation 到 responsive，格子里 Bars、Dots。打开 Bar Stack：纽约、旧金山、奥斯汀堆叠柱，底下 @visx/shape。适合要自己拼图、不想要整套图表库的人。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "现官网把 visx 定义为 a collection of expressive, low-level visualization primitives for React，并写明 Not a charting library。",
+        "evidenceUrl": "https://visx.airbnb.tech/"
+      },
+      {
+        "statement": "Bar Stack 页给出纽约 / 旧金山 / 奥斯汀堆叠柱预览，以及 @visx/shape 等包名，证明交付物是可视化实现代码。",
+        "evidenceUrl": "https://visx.airbnb.tech/barstack"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:40:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript",
+      "svg"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://visx.airbnb.tech/",
+      "finalUrl": "https://visx.airbnb.tech/",
+      "title": "visx",
+      "selectionRationale": "先看新站首页。红底 X 下面就是 primitives for React。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/visx/v2-identity.png",
+        "sha256": "1da9d3bf5f0bf63aebcad9b59bf313b0419f6ca644f0665bd063da9bf75e84db",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113831,
+        "alt": "visx 首页红底几何 X 标志，标题 visx a collection of expressive, low-level visualization primitives for React"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://visx.airbnb.tech/gallery",
+      "finalUrl": "https://visx.airbnb.tech/gallery",
+      "title": "visx Gallery",
+      "selectionRationale": "再翻 Gallery。Bars、Dots、Patterns 铺成格子。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/visx/v2-breadth.png",
+        "sha256": "b2a2683ce1091828cfcc622be821b325f6bd8e74f082067944c241810810b46d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135383,
+        "alt": "visx Gallery 左侧 Filter 列出 annotation 到 responsive，右侧 Bars、Dots、Patterns、AreaClosed 卡片"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://visx.airbnb.tech/barstack",
+      "finalUrl": "https://visx.airbnb.tech/barstack",
+      "title": "Bar Stack",
+      "selectionRationale": "最后开 Bar Stack。三城堆叠柱和 @visx/shape 都在。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/visx/v2-proof.png",
+        "sha256": "6820f44981f999e4cd0e4994c5b9226e0a48ec7ef1b3a4fb78c8e62d6917b74c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 27809,
+        "alt": "visx Bar Stack 页，New York / San Francisco / Austin 堆叠柱，下方列出 @visx/shape 等包"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Harrison Shoff",
+      "sourceUrl": "https://github.com/airbnb/visx/blob/master/LICENSE",
+      "evidence": "LICENSE 版权行 Copyright (c) 2017-2018 Harrison Shoff。@visx/shape 的 package.json author 为 @hshoff。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Airbnb",
+      "sourceUrl": "https://visx.airbnb.tech/",
+      "evidence": "首页写 At Airbnb, we made it a goal to unify our visualization stack。仓库位于 github.com/airbnb/visx。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/airbnb/visx",
+      "sourceUrl": "https://visx.airbnb.tech/",
+      "evidence": "首页 View on GitHub 与 README 均指向 https://github.com/airbnb/visx。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/airbnb/visx/blob/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2017-2018 Harrison Shoff。README 末行 [MIT](./LICENSE)。@visx/shape package.json license 为 MIT。覆盖 visx 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://visx.airbnb.tech/",
+      "evidence": "文档与 Gallery 公开可读，未见付费墙。MIT 允许免费用于个人与商业项目。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@visx/shape",
+      "sourceUrl": "https://github.com/airbnb/visx/blob/master/README.md",
+      "evidence": "README 写 visx v4 is the current stable release，安装示例 npm install @visx/shape。包按模块拆分，不是单一 visx 包。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/visx",
+    "designMdUrl": "https://vislexicon.com/site/visx.md",
+    "checkedAt": "2026-09-06T02:50:00.000Z",
+    "license": "MIT"
+  }
+}

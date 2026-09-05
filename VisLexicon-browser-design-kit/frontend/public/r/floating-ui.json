@@ -1,0 +1,204 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:28:49.738Z",
+  "entryId": "floating-ui",
+  "entityId": "entity-floating-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://floating-ui.com/",
+    "finalUrl": "https://floating-ui.com/",
+    "checkedAt": "2026-09-06T02:50:00.000Z"
+  },
+  "editorial": {
+    "name": "Floating UI",
+    "descriptionZh": "Floating UI 贡献者维护的定位库，用于锚点提示、弹出层和下拉。提供 @floating-ui/dom 与 React 交互钩子；LICENSE 标 MIT，文档写明免费开源。",
+    "takeawayZh": "用钩子把提示锚到按钮，并避开视口碰撞",
+    "noteZh": "我们进首页，气球标题 FLOATING UI，副标题 position floating elements and create interactions。Getting Started 左侧 offset、shift、flip。打开 Tooltip：Essentials 写动态锚点、悬停焦点、esc 关闭。适合要自己拼提示/菜单、不要预置外观的人。MIT。首页另推 Base UI，那是兄弟库，不收入本条。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Getting Started 把 Floating UI 定义为定位工具包加 React 交互原语，用来做 tooltips、popovers、dropdowns，不提供预置外观。",
+        "evidenceUrl": "https://floating-ui.com/docs/getting-started"
+      },
+      {
+        "statement": "Tooltip 文档列出动态锚点、悬停/焦点、esc 关闭与 ARIA role，并给出 useFloating / useHover 组装步骤，证明交付物是无样式原语。",
+        "evidenceUrl": "https://floating-ui.com/docs/tooltip"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:40:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://floating-ui.com/",
+      "finalUrl": "https://floating-ui.com/",
+      "title": "Floating UI - Create tooltips, popovers, dropdowns, and more",
+      "selectionRationale": "先看首页。FLOATING UI 下面就是定位与交互那句。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/floating-ui/v2-identity.png",
+        "sha256": "ff74486f5f918af28bc7e1c46c4c1745a5b905023cb55a01b94d2c541d75c255",
+        "width": 1280,
+        "height": 900,
+        "bytes": 306691,
+        "alt": "Floating UI 首页气球与几何体，标题 FLOATING UI，副标题 position floating elements，下方 Smart Anchor Positioning"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://floating-ui.com/docs/getting-started",
+      "finalUrl": "https://floating-ui.com/docs/getting-started",
+      "title": "Getting Started | Floating UI",
+      "selectionRationale": "再翻 Getting Started。左侧 offset 到 Virtual Elements 就是范围。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/floating-ui/v2-breadth.png",
+        "sha256": "2d2ab9f5465522bb4d32e6b8049e73b440c198934a9101a3fa172a404d49b2e0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 308652,
+        "alt": "Floating UI Getting Started，左侧 Middleware 列出 offset、shift、flip，正文 Positioning 说明，顶栏 DOM v1.8.0"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://floating-ui.com/docs/tooltip",
+      "finalUrl": "https://floating-ui.com/docs/tooltip",
+      "title": "Tooltip | Floating UI",
+      "selectionRationale": "最后开 Tooltip。锚点、悬停、esc 三条写清楚。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/floating-ui/v2-proof.png",
+        "sha256": "30d3be3f532914fb3dd934aed012873a1606f6ee0c764bbd334009a6faf0ad67",
+        "width": 1280,
+        "height": 900,
+        "bytes": 242387,
+        "alt": "Floating UI Tooltip 文档，Essentials 列出 Dynamic anchor positioning、Events、Dismissal"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "atomiks",
+      "sourceUrl": "https://github.com/floating-ui/floating-ui/blob/master/packages/dom/package.json",
+      "evidence": "@floating-ui/dom 的 package.json author 字段写 atomiks。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Floating UI contributors",
+      "sourceUrl": "https://github.com/floating-ui/floating-ui/blob/master/LICENSE",
+      "evidence": "LICENSE 版权行 Copyright (c) 2021 Floating UI contributors。GitHub 组织为 floating-ui。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/floating-ui/floating-ui",
+      "sourceUrl": "https://floating-ui.com/",
+      "evidence": "首页 GitHub 按钮与文档顶栏 GitHub 链到 github.com/floating-ui/floating-ui。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/floating-ui/floating-ui/blob/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2021 Floating UI contributors。@floating-ui/dom package.json license 为 MIT。README License 节写 MIT。覆盖定位与 React 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://floating-ui.com/",
+      "evidence": "首页写 Floating UI is free and open source。文档公开，赞助走 Open Collective，不是买断。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@floating-ui/dom",
+      "sourceUrl": "https://floating-ui.com/docs/getting-started",
+      "evidence": "Getting Started 安装命令 npm install @floating-ui/dom；React 另装 @floating-ui/react。@floating-ui/dom version 1.8.0，与文档顶栏 DOM v1.8.0 一致。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://floating-ui.com/docs/tooltip",
+        "note": "该页就是 Tooltip 指南，含锚点、悬停焦点、esc 与 role=tooltip。",
+        "termEn": "Tooltip",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/floating-ui",
+    "designMdUrl": "https://vislexicon.com/site/floating-ui.md",
+    "checkedAt": "2026-09-06T02:50:00.000Z",
+    "license": "MIT"
+  }
+}

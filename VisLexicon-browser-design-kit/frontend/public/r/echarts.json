@@ -1,0 +1,199 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:28:49.738Z",
+  "entryId": "echarts",
+  "entityId": "entity-echarts",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://echarts.apache.org/en/index.html",
+    "finalUrl": "https://echarts.apache.org/en/index.html",
+    "checkedAt": "2026-09-06T02:50:00.000Z"
+  },
+  "editorial": {
+    "name": "Apache ECharts",
+    "descriptionZh": "Apache 软件基金会的 JavaScript 可视化库，现为 6.1。内置二十余种图表，可在 Canvas 与 SVG 间切换；仓库 LICENSE 为 Apache-2.0，文档与示例公开。",
+    "takeawayZh": "改 option 就能出柱状图，编辑器可当场跑",
+    "noteZh": "我们进英文首页，大标题 Apache ECharts，副标题 Open Source JavaScript Visualization Library，6.1 已发布。Examples 左侧 Line 到 PictorialBar，格子里折线、面积。打开 bar-simple：左边 option type bar，右边周一到周日柱。适合要配置出图、不必自己拼比例尺的人。Apache-2.0。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 Apache ECharts 定义为 An Open Source JavaScript Visualization Library，并强调二十余种图表类型与 Canvas/SVG 渲染。",
+        "evidenceUrl": "https://echarts.apache.org/en/index.html"
+      },
+      {
+        "statement": "Examples 编辑器 bar-simple 同时给出 type: 'bar' 的 option 与现场柱状图，证明可以按配置出图。",
+        "evidenceUrl": "https://echarts.apache.org/examples/en/editor.html?c=bar-simple"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:40:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "canvas",
+      "svg"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "case-gallery"
+    ],
+    "languages": [
+      "en",
+      "zh-hans"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://echarts.apache.org/en/index.html",
+      "finalUrl": "https://echarts.apache.org/en/index.html",
+      "title": "Apache ECharts",
+      "selectionRationale": "先看英文首页。Open Source JavaScript Visualization Library 那句。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/echarts/v2-identity.png",
+        "sha256": "02d9de03637de473c59fef1605079932ef99568c0060e511e9e5acb4dc4b446e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 74164,
+        "alt": "Apache ECharts 首页大标题与 Get Started、Demo 按钮，右侧彩色扇形图，底栏写 6.1 is out"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://echarts.apache.org/examples/en/index.html",
+      "finalUrl": "https://echarts.apache.org/examples/en/index.html",
+      "title": "Examples - Apache ECharts",
+      "selectionRationale": "再翻 Examples。Line、Bar、Pie 分栏，格子里已经出图。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/echarts/v2-breadth.png",
+        "sha256": "29a6a6cd9884628f5e1088481d8c6284113d8d44a8f02e2fc7cee790730146cc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 287237,
+        "alt": "ECharts Examples 左侧 Line 到 PictorialBar，右侧 Basic Line Chart 等到 Distribution of Electricity 缩略图"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://echarts.apache.org/examples/en/editor.html?c=bar-simple",
+      "finalUrl": "https://echarts.apache.org/examples/en/editor.html?c=bar-simple",
+      "title": "Examples - Apache ECharts",
+      "selectionRationale": "最后开 bar-simple。左边 option，右边柱状图。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/echarts/v2-proof.png",
+        "sha256": "d91914c987bb86721c26071f97873f5c5e148823fc1277350181bcc744277b93",
+        "width": 1280,
+        "height": 900,
+        "bytes": 45965,
+        "alt": "ECharts 编辑器左侧 type bar 的 option，右侧 Mon 到 Sun 蓝色柱状图"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "unknown",
+      "sourceUrl": "https://echarts.apache.org/en/index.html",
+      "evidence": "首页与 package.json 未列出自然人作者。NOTICE 写 This product includes software developed at The Apache Software Foundation。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "The Apache Software Foundation",
+      "sourceUrl": "https://github.com/apache/echarts/blob/master/NOTICE",
+      "evidence": "NOTICE 写 Apache ECharts Copyright 2017-2026 The Apache Software Foundation。仓库位于 github.com/apache/echarts。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/apache/echarts",
+      "sourceUrl": "https://echarts.apache.org/en/index.html",
+      "evidence": "首页 Follow 区 GitHub 链到 https://github.com/apache/echarts。package.json repository 同此地址。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/apache/echarts/blob/master/LICENSE",
+      "evidence": "LICENSE 为 Apache License Version 2.0。package.json license 字段 Apache-2.0。附录注明部分 treemap/tree/graph 文件嵌入 d3.js 的 BSD 3-Clause。覆盖 echarts 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://echarts.apache.org/en/index.html",
+      "evidence": "首页写 Open Source。文档、Handbook 与 Examples 公开可读，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "echarts",
+      "sourceUrl": "https://github.com/apache/echarts/blob/master/package.json",
+      "evidence": "package.json name 为 echarts，version 6.1.0，与首页 Apache ECharts 6.1 is out 一致。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/echarts",
+    "designMdUrl": "https://vislexicon.com/site/echarts.md",
+    "checkedAt": "2026-09-06T02:50:00.000Z",
+    "license": "Apache-2.0"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 3,
+  "entryId": "sonner",
+  "entityId": "entity-sonner",
+  "attemptId": "swarm-curator-batch-i-sonner-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://sonner.emilkowal.ski/",
+    "finalUrl": "https://sonner.emilkowal.ski/",
+    "checkedAt": "2026-09-06T02:50:00.000Z"
+  },
+  "editorial": {
+    "name": "Sonner",
+    "descriptionZh": "Emil Kowalski 的 React 通知条组件。安装 sonner 后在根节点放 Toaster，再调用 toast() 弹出；仓库 LICENSE 为 MIT，文档站公开、无付费墙。",
+    "takeawayZh": "根节点放 Toaster，调用 toast() 即弹出",
+    "noteZh": "域名仍是 sonner.emilkowal.ski，没有搬家。首页写 An opinionated toast component for React，下面 npm install sonner。Getting Started 左侧 toast()、Toaster。打开 toast()：Preview 里 Render toast 按钮，旁边 Success 到 Headless。适合只要一条通知、不要整套组件库的人。MIT。页顶 aiforui.dev 是作者课程，不是本库。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-sonner",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Sonner 定义为 An opinionated toast component for React，安装命令 npm install sonner，交付物是可嵌入的通知条而不是组件套件。",
+        "evidenceUrl": "https://sonner.emilkowal.ski/"
+      },
+      {
+        "statement": "toast() 文档给出 Preview 按钮、Success/Error/Promise 等类型和 API 表，证明单条通知可以复制进页面。",
+        "evidenceUrl": "https://sonner.emilkowal.ski/toast"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-i",
+    "reviewerId": "swarm-reviewer-grok-j",
+    "confirmedAt": "2026-09-06T16:40:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-toast",
+        "evidenceUrl": "https://sonner.emilkowal.ski/toast",
+        "note": "该页就是 toast() 文档，含 Render toast 预览和 Success 到 Headless 变体。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://sonner.emilkowal.ski/",
+      "finalUrl": "https://sonner.emilkowal.ski/",
+      "title": "Sonner",
+      "selectionRationale": "先看首页。opinionated toast 那句，下面就是安装。",
+      "shot": {
+        "src": "/shots/sonner/v2-identity.png",
+        "sha256": "e35fd801acb37e71cadf7672725d1d19e544cf8393987e13f7401fcd7853d2c8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 39918,
+        "alt": "Sonner 首页标题 An opinionated toast component for React，按钮 Render a toast 与 GitHub，下方 npm install sonner"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://sonner.emilkowal.ski/getting-started",
+      "finalUrl": "https://sonner.emilkowal.ski/getting-started",
+      "title": "Getting Started – Sonner",
+      "selectionRationale": "再翻 Getting Started。左侧 toast()、Toaster 能看见范围。",
+      "shot": {
+        "src": "/shots/sonner/v2-breadth.png",
+        "sha256": "3330e251a99c650a102a4fd554ef3f8ca3ac1948e0e6453ceff84eb67223ab51",
+        "width": 1280,
+        "height": 900,
+        "bytes": 87951,
+        "alt": "Sonner Getting Started，左侧 toast() 与 Toaster，正文 pnpm i sonner 和 layout.tsx 里的 Toaster"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://sonner.emilkowal.ski/toast",
+      "finalUrl": "https://sonner.emilkowal.ski/toast",
+      "title": "Toast – Sonner",
+      "selectionRationale": "最后开 toast()。Preview 里 Render toast，右侧列出 Success 到 Headless。",
+      "shot": {
+        "src": "/shots/sonner/v2-proof.png",
+        "sha256": "a13f3ed3aee414d41a83a26c5f4807a09182835ab97734e41e83e64a971eeea6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 79010,
+        "alt": "Sonner toast() 文档，Preview 区 Render toast 按钮，右侧 On this page 列出 Success、Error、Promise、Headless"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Emil Kowalski",
+      "sourceUrl": "https://github.com/emilkowalski/sonner/blob/main/package.json",
+      "evidence": "package.json author 写 Emil Kowalski <e@emilkowal.ski>。文档侧栏写 Sonner by Emil Kowalski。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://sonner.emilkowal.ski/",
+      "evidence": "首页与 LICENSE 只署 Emil Kowalski，未见公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/emilkowalski/sonner",
+      "sourceUrl": "https://sonner.emilkowal.ski/",
+      "evidence": "首页 GitHub 按钮链到 github.com/emilkowalski/sonner。package.json repository 同此地址。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/emilkowalski/sonner/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 标题 MIT License，Copyright (c) 2023 Emil Kowalski。package.json license 为 MIT。覆盖 sonner 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://sonner.emilkowal.ski/",
+      "evidence": "文档与示例公开可读，未见付费墙。页顶 aiforui.dev 是作者另售课程，不覆盖本库。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "sonner",
+      "sourceUrl": "https://sonner.emilkowal.ski/",
+      "evidence": "首页安装命令 npm install sonner。package.json name 为 sonner，version 2.0.8。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-i",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-j",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-j"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-i 进站起草。sonner.emilkowal.ski 仍为官网，未搬家。 swarm-reviewer-grok-j 复核活页、截图哈希与许可后 APPROVED。"
+  }
+}

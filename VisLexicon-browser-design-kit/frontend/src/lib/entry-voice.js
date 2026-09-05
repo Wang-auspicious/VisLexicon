@@ -290,6 +290,34 @@ const VOICE = {
     lede: { zh: 'React 动效组件。MIT 加 Commons Clause。', en: 'React motion components. MIT plus Commons Clause.' },
     style: { zh: '深色全出血营销。高饱和点缀。动效即内容。', en: 'Dark full-bleed marketing. Saturated accents. Motion as content.' },
   },
+  threejs: {
+    lede: { zh: 'JavaScript 3D 库。WebGL 与 WebGPU。', en: 'JavaScript 3D library. WebGL and WebGPU.' },
+    style: { zh: '深色文档。等宽代码。示例网格。', en: 'Dark docs. Monospace code. Example grid.' },
+  },
+  animejs: {
+    lede: { zh: 'JavaScript 动画引擎。MIT。', en: 'JavaScript animation engine. MIT.' },
+    style: { zh: '浅色文档。大号演示字。时间轴标本。', en: 'Light docs. Oversized demo type. Timeline specimens.' },
+  },
+  visx: {
+    lede: { zh: 'Airbnb 的 React 可视化原语。', en: 'Airbnb React visualization primitives.' },
+    style: { zh: '浅色文档。图表标本。中性。', en: 'Light docs. Chart specimens. Neutral.' },
+  },
+  echarts: {
+    lede: { zh: 'Apache 的 JavaScript 图表库。', en: 'Apache JavaScript charting library.' },
+    style: { zh: '浅色文档。示例编辑器。品牌蓝。', en: 'Light docs. Example editor. Brand blue.' },
+  },
+  sonner: {
+    lede: { zh: 'React 通知条。npm 安装。', en: 'React toast. Installed from npm.' },
+    style: { zh: '浅色单页文档。现场通知标本。', en: 'Light single-page docs. Live toast specimens.' },
+  },
+  vaul: {
+    lede: { zh: 'React 抽屉。基于 Radix Dialog。', en: 'React drawer. Built on Radix Dialog.' },
+    style: { zh: '浅色单页文档。抽屉标本。', en: 'Light single-page docs. Drawer specimens.' },
+  },
+  'floating-ui': {
+    lede: { zh: '锚点定位原语。提示与弹出层。', en: 'Anchor positioning primitives. Tooltips and popovers.' },
+    style: { zh: '浅色文档。中性。解剖式演示。', en: 'Light docs. Neutral. Anatomical demos.' },
+  },
 }
 
 export function entryVoice(entryId) {

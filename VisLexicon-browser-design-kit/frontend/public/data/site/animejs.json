@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:28:49.738Z",
+  "entryId": "animejs",
+  "entityId": "entity-animejs",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "animejs.com",
+  "official": {
+    "inputUrl": "https://animejs.com/",
+    "finalUrl": "https://animejs.com/",
+    "checkedAt": "2026-09-06T02:50:00.000Z"
+  },
+  "editorial": {
+    "name": "Anime.js",
+    "descriptionZh": "Julian Garnier 开发的 JavaScript 动画引擎，现为 v4.5.0。可用 animate() 编排 CSS、SVG 与 DOM；npm 包 animejs 采用 MIT，文档写明 100% 免费。",
+    "takeawayZh": "用 animate() 编排 CSS 与 SVG 关键帧",
+    "noteZh": "我们进首页，大标题 All-in-one animation engine，旁边是仪表盘动效，底下 npm i animejs。文档总览左侧从 Timer 排到 Adapters。打开 Animation：HELLO WORLD 在跳，右边是 import { animate } from 'animejs'。适合要一条 API 带动画的人。MIT，赞助不是买断。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Anime.js 定义为 fast and flexible JavaScript library to animate the web，并给出 npm i animejs，而不是素材包或设计工具。",
+        "evidenceUrl": "https://animejs.com/"
+      },
+      {
+        "statement": "Animation 文档用 animate() 示例和 HELLO WORLD 现场预览，证明交付物是可装进项目的动效代码。",
+        "evidenceUrl": "https://animejs.com/documentation/animation"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:40:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css",
+      "svg"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://animejs.com/",
+      "finalUrl": "https://animejs.com/",
+      "title": "Anime.js | JavaScript Animation Engine",
+      "selectionRationale": "先看首页。All-in-one animation engine 旁边就是仪表盘。",
+      "shot": {
+        "src": "/shots/animejs/v2-identity.png",
+        "sha256": "5930b0428de156c5f68e5ecabd7bb4ce0049cdf37ab839fe04cc290177d9682c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 206912,
+        "alt": "Anime.js 首页大标题 All-in-one animation engine，右侧彩色仪表盘，底部 npm i animejs"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://animejs.com/documentation/",
+      "finalUrl": "https://animejs.com/documentation/",
+      "title": "Documentation | Anime.js | JavaScript Animation Engine",
+      "selectionRationale": "再翻文档总览。左侧 Timer 到 Adapters 就是范围。",
+      "shot": {
+        "src": "/shots/animejs/v2-breadth.png",
+        "sha256": "686515da3c007dfcceecc1aec71c3f90ab204ca0c102b8fad67376beca9a4047",
+        "width": 1280,
+        "height": 900,
+        "bytes": 97638,
+        "alt": "Anime.js Documentation 页，左侧 GETTING STARTED 到 ADAPTERS 目录，正文 Platinum / Silver sponsors"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://animejs.com/documentation/animation",
+      "finalUrl": "https://animejs.com/documentation/animation",
+      "title": "Animation | Documentation | Anime.js | JavaScript Animation Engine",
+      "selectionRationale": "最后开 Animation。HELLO WORLD 在跳，旁边就是 animate()。",
+      "shot": {
+        "src": "/shots/animejs/v2-proof.png",
+        "sha256": "2b04598fcd8d5d027db39f8c8d83eecab8b132a6f8dd3e874f8c1b795fafa921",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134054,
+        "alt": "Anime.js Animation 文档，预览区 HELLO WORLD 弧形文字，右侧 import { animate } from 'animejs'"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Julian Garnier",
+      "sourceUrl": "https://github.com/juliangarnier/anime/blob/master/package.json",
+      "evidence": "package.json author 写 Julian Garnier <julian@animejs.com>。README 页脚 © Julian Garnier。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://animejs.com/",
+      "evidence": "首页与 LICENSE 只署 Julian Garnier，未见公司或基金会。靠 GitHub Sponsors 维持。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/juliangarnier/anime",
+      "sourceUrl": "https://github.com/juliangarnier/anime/blob/master/package.json",
+      "evidence": "package.json repository 为 git+https://github.com/juliangarnier/anime.git，homepage 为 https://animejs.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/juliangarnier/anime/blob/master/LICENSE.md",
+      "evidence": "LICENSE.md 标题 The MIT License，Copyright (c) 2025 Julian Garnier。package.json license 为 MIT。README 页脚链到该文件。覆盖 animejs 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://animejs.com/",
+      "evidence": "首页写 Anime.js is 100% free and is only made possible with the help of our sponsors。文档公开，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "animejs",
+      "sourceUrl": "https://github.com/juliangarnier/anime/blob/master/package.json",
+      "evidence": "package.json name 为 animejs，version 4.5.0。首页安装命令 npm i animejs。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/animejs.md",
+  "registryUrl": "/r/animejs.json"
+}

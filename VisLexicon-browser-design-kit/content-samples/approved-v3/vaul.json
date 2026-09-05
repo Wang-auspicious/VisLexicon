@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "entryId": "vaul",
+  "entityId": "entity-vaul",
+  "attemptId": "swarm-curator-batch-i-vaul-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://vaul.emilkowal.ski/",
+    "finalUrl": "https://vaul.emilkowal.ski/",
+    "checkedAt": "2026-09-06T02:50:00.000Z"
+  },
+  "editorial": {
+    "name": "Vaul",
+    "descriptionZh": "Emil Kowalski 的 React 抽屉组件，基于 Radix Dialog。用 Drawer.Root 组合 Trigger、Portal 与 Content；仓库 LICENSE 为 MIT，文档含可复制示例。",
+    "takeawayZh": "用 Drawer.Root 从底部滑出面板",
+    "noteZh": "域名仍是 vaul.emilkowal.ski。首页就一句 Drawer component for React，按钮 Open Drawer。Getting Started 给出 pnpm i vaul 和 Drawer.Root 骨架。打开 Default：Preview 里 Open Drawer，下面 Side drawer、Nested、Scrollable。适合要手机式抽屉、样式自己写的人。MIT。依赖 @radix-ui/react-dialog。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-vaul",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Vaul 定义为 Drawer component for React，主动作是打开抽屉，而不是提供整套界面组件。",
+        "evidenceUrl": "https://vaul.emilkowal.ski/"
+      },
+      {
+        "statement": "Default 示例页给出 Open Drawer 预览，以及 Side drawer、Nested Drawers、Scrollable、Controlled 变体。",
+        "evidenceUrl": "https://vaul.emilkowal.ski/default"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-i",
+    "reviewerId": "swarm-reviewer-grok-j",
+    "confirmedAt": "2026-09-06T16:40:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://vaul.emilkowal.ski/getting-started",
+        "note": "Getting Started 用 Drawer.Root / Trigger / Portal / Overlay / Content 组装抽屉；package.json 依赖 @radix-ui/react-dialog。图集无独立 Drawer 词条，记到 Dialog。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "radix-ui"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vaul.emilkowal.ski/",
+      "finalUrl": "https://vaul.emilkowal.ski/",
+      "title": "Vaul",
+      "selectionRationale": "先看首页。Drawer component for React 下面就是 Open Drawer。",
+      "shot": {
+        "src": "/shots/vaul/v2-identity.png",
+        "sha256": "4f1c4bb831a6a3e08ff3e8040b56a3f5b99a3e855956312470f42b9495f61238",
+        "width": 1280,
+        "height": 900,
+        "bytes": 41074,
+        "alt": "Vaul 首页大标题 Drawer component for React，按钮 Open Drawer 与 GitHub，下方 Documentation"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://vaul.emilkowal.ski/getting-started",
+      "finalUrl": "https://vaul.emilkowal.ski/getting-started",
+      "title": "Getting Started – Vaul",
+      "selectionRationale": "再翻 Getting Started。左侧 Default、Snap Points 就是范围。",
+      "shot": {
+        "src": "/shots/vaul/v2-breadth.png",
+        "sha256": "b513e63abaec6a16299574ed87d31c2d3121452297052b8e1195b49505fcae76",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106488,
+        "alt": "Vaul Getting Started，左侧 Default 到 Other，正文 pnpm i vaul 和 Drawer.Root 示例代码"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://vaul.emilkowal.ski/default",
+      "finalUrl": "https://vaul.emilkowal.ski/default",
+      "title": "Default – Vaul",
+      "selectionRationale": "最后开 Default。Preview 里 Open Drawer，下面还有侧向抽屉。",
+      "shot": {
+        "src": "/shots/vaul/v2-proof.png",
+        "sha256": "6fd656681369f91afcb4fc1a7eb3454c931445f2c91ad1cac07ca7eedfed63d1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 77784,
+        "alt": "Vaul Default 文档，Preview 区 Open Drawer 按钮，下方 Side drawer 说明"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Emil Kowalski",
+      "sourceUrl": "https://github.com/emilkowalski/vaul/blob/main/package.json",
+      "evidence": "package.json author 写 Emil Kowalski <e@emilkowal.ski>。文档侧栏写 Vaul by Emil Kowalski。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://vaul.emilkowal.ski/",
+      "evidence": "首页与 LICENSE 只署 Emil Kowalski，未见公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/emilkowalski/vaul",
+      "sourceUrl": "https://vaul.emilkowal.ski/",
+      "evidence": "首页 GitHub 链到 github.com/emilkowalski/vaul。package.json repository 同此地址。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/emilkowalski/vaul/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 标题 MIT License，Copyright (c) 2023 Emil Kowalski。package.json license 为 MIT。覆盖 vaul 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://vaul.emilkowal.ski/",
+      "evidence": "文档与示例公开可读，未见付费墙。页顶 aiforui.dev 是作者另售课程，不覆盖本库。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "vaul",
+      "sourceUrl": "https://vaul.emilkowal.ski/getting-started",
+      "evidence": "Getting Started 安装命令 pnpm i vaul。package.json name 为 vaul，version 1.1.2。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-i",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-j",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-j"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-i 进站起草。vaul.emilkowal.ski 仍为官网。 swarm-reviewer-grok-j 复核活页、截图哈希与许可后 APPROVED。"
+  }
+}

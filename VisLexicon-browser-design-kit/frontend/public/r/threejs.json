@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:28:49.738Z",
+  "entryId": "threejs",
+  "entityId": "entity-threejs",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://threejs.org/",
+    "finalUrl": "https://threejs.org/",
+    "checkedAt": "2026-09-06T02:50:00.000Z"
+  },
+  "editorial": {
+    "name": "three.js",
+    "descriptionZh": "mrdoob 等人维护的 JavaScript 3D 库，现为 r185。用 WebGL 与 WebGPU 在浏览器里建场景、相机与渲染器；npm 包 three 标 MIT，文档与示例公开。",
+    "takeawayZh": "先建 Scene、相机和 WebGLRenderer，再往里放网格",
+    "noteZh": "我们进首页，左侧 Learn / Tools，右侧是作品墙，顶栏 three.js r185。文档页左侧 Core 从 Animation 排到 Cameras，右侧先空着。手册 Creating a scene：一段 import * as THREE，下面 new THREE.Scene()。适合要在浏览器里画 3D 的人。MIT；示例页 WebGL 画布在无头截图里没画出来，改用手册当 proof。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "three-d-spatial-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网标题把 three.js 定义为 JavaScript 3D Library，首页左侧给出 examples、documentation、editor，右侧是 WebGL 作品墙。",
+        "evidenceUrl": "https://threejs.org/"
+      },
+      {
+        "statement": "手册 Creating a scene 给出 Scene、PerspectiveCamera、WebGLRenderer 的可复制代码，证明交付物是 3D 实现代码而不是素材包。",
+        "evidenceUrl": "https://threejs.org/manual/#en/creating-a-scene"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:40:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "3d",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "webgl",
+      "three-js",
+      "canvas"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://threejs.org/",
+      "finalUrl": "https://threejs.org/",
+      "title": "Three.js – JavaScript 3D Library",
+      "selectionRationale": "先看首页。左侧 Learn，右侧已经是作品墙。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/threejs/v2-identity.png",
+        "sha256": "7bb217ad95e43ea9a665615e566a4a69d887105c319b6b84ada787e20868d239",
+        "width": 1280,
+        "height": 900,
+        "bytes": 1351535,
+        "alt": "three.js 首页左侧 three.js r185 与 Learn、Tools 导航，右侧多格 3D 作品墙"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://threejs.org/docs/",
+      "finalUrl": "https://threejs.org/docs/",
+      "title": "three.js docs",
+      "selectionRationale": "再翻文档目录。Core 从 Animation 排到 Cameras。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/threejs/v2-breadth.png",
+        "sha256": "421b223ef702e732447962d991d24cfe164b173025caccd13a906762754c488f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 54756,
+        "alt": "three.js docs 左侧 Core 分组列出 Animation、Audio、Cameras，docs 标签高亮"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://threejs.org/manual/#en/creating-a-scene",
+      "finalUrl": "https://threejs.org/manual/#en/creating-a-scene",
+      "title": "three.js manual",
+      "selectionRationale": "最后开 Creating a scene。Scene、相机、渲染器三行就能跑。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/threejs/v2-proof.png",
+        "sha256": "2152974495781e2eadfee9d3aa50e012beb9170d2e880d311d13f413ca73644e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 141468,
+        "alt": "three.js 手册 Creating a scene，正文含 THREE.Scene、PerspectiveCamera、WebGLRenderer 代码块"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "mrdoob",
+      "sourceUrl": "https://github.com/mrdoob/three.js/blob/dev/package.json",
+      "evidence": "package.json 的 author 字段写 mrdoob。仓库位于 github.com/mrdoob/three.js。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "three.js authors",
+      "sourceUrl": "https://github.com/mrdoob/three.js/blob/dev/LICENSE",
+      "evidence": "LICENSE 版权行写 Copyright © 2010-2026 three.js authors。未见公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/mrdoob/three.js",
+      "sourceUrl": "https://threejs.org/",
+      "evidence": "首页 Code 区 github 链到 https://github.com/mrdoob/three.js/。package.json homepage 为 https://threejs.org/。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/mrdoob/three.js/blob/dev/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License，Copyright © 2010-2026 three.js authors。package.json license 字段为 MIT。覆盖 three 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://threejs.org/",
+      "evidence": "文档、示例与手册公开可读，未见付费墙。MIT 允许免费用于个人与商业项目。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "three",
+      "sourceUrl": "https://github.com/mrdoob/three.js/blob/dev/package.json",
+      "evidence": "package.json name 为 three，version 0.185.0，与首页 r185 一致。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/threejs",
+    "designMdUrl": "https://vislexicon.com/site/threejs.md",
+    "checkedAt": "2026-09-06T02:50:00.000Z",
+    "license": "MIT"
+  }
+}
