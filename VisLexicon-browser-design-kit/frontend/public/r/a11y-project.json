@@ -1,11 +1,11 @@
 {
   "$schema": "https://vislexicon.com/schema/registry-item.json",
   "schemaVersion": 3,
-  "generatedAt": "2026-09-05T11:41:58.835Z",
+  "generatedAt": "2026-09-05T13:10:07.244Z",
   "entryId": "a11y-project",
   "entityId": "entity-a11y-project",
   "status": "APPROVED",
-  "voiceStatus": null,
+  "voiceStatus": "written",
   "official": {
     "inputUrl": "https://www.a11yproject.com/",
     "finalUrl": "https://www.a11yproject.com/",
@@ -15,7 +15,7 @@
     "name": "A11Y Project",
     "descriptionZh": "A11Y Project 是社区驱动的数字无障碍教育与实践资源，首页、About 和 Checklist 将基础概念、工具资源与可逐项执行的 WCAG 检查连接起来；适合设计师和开发者学习、审计并改进网页，无障碍内容与站点代码均有清晰来源。",
     "takeawayZh": "拿一份可逐项执行的无障碍检查清单去审页面",
-    "noteZh": null,
+    "noteZh": "我们进去先停在首页那张黑卡片：紫色大字把 a11y 拆成 accessibility。要干活就点 Checklist，滚到 Content 第一条「用平实语言」——左边是真能勾的框，展开后是 WCAG 3.1.5 和分享链接。About 写明这是社区维护的开源站，源码在 GitHub。适合拿去逐项审页面的人；页上自己说了，勾完不等于已经无障碍。",
     "pricing": "unknown",
     "pricingNote": "Pricing not stated in reviewed facts"
   },
@@ -95,32 +95,32 @@
   "pages": [
     {
       "role": "identity",
-      "sourceUrl": "https://www.a11yproject.com/",
-      "finalUrl": "https://www.a11yproject.com/",
-      "title": "Home - The A11Y Project",
-      "selectionRationale": "首页同时呈现社区使命、无障碍教育入口和项目名称，是识别实体与范围的最完整页面。",
+      "sourceUrl": "https://www.a11yproject.com/about/",
+      "finalUrl": "https://www.a11yproject.com/about/",
+      "title": "About - The A11Y Project",
+      "selectionRationale": "About 页把项目名称、社区定位和技术栈放在一起，先认清这是谁。",
       "shot": {
         "src": "https://vislexicon.com/shots/a11y-project/v2-identity.png",
         "sha256": "9667918e6261fcdcdf65003adf79707ac42b7c75299377e62ceb8f098908037d",
         "width": 1280,
         "height": 900,
         "bytes": 86179,
-        "alt": "A11Y Project identity evidence screenshot"
+        "alt": "About 页蓝底金字大标题 About，中间横条写 All about this project"
       }
     },
     {
       "role": "breadth",
-      "sourceUrl": "https://www.a11yproject.com/about/",
-      "finalUrl": "https://www.a11yproject.com/about/",
-      "title": "About - The A11Y Project",
-      "selectionRationale": "About 页把基础概念、包容性、社区、技术栈和资源入口组织在同一站点范围内。",
+      "sourceUrl": "https://www.a11yproject.com/",
+      "finalUrl": "https://www.a11yproject.com/",
+      "title": "Home - The A11Y Project",
+      "selectionRationale": "首页把无障碍缩写拆开，并给出 Checklist、Posts、Resources 入口。",
       "shot": {
         "src": "https://vislexicon.com/shots/a11y-project/v2-breadth.png",
         "sha256": "edd80ed69f01ec123f394ae37fca3a1d54b90e1fb2a1de80c3046ad06d449647",
         "width": 1280,
         "height": 900,
         "bytes": 120128,
-        "alt": "A11Y Project breadth evidence screenshot"
+        "alt": "首页深绿底紫色大字 a11y，黑卡片解释 accessibility 缩写"
       }
     },
     {
@@ -128,14 +128,14 @@
       "sourceUrl": "https://www.a11yproject.com/checklist/#use-plain-language-and-avoid-figures-of-speech-idioms-and-complicated-metaphors",
       "finalUrl": "https://www.a11yproject.com/checklist/#use-plain-language-and-avoid-figures-of-speech-idioms-and-complicated-metaphors",
       "title": "Checklist - The A11Y Project",
-      "selectionRationale": "Checklist 画面显示真实的 Content 检查项、WCAG 3.1.5 引用和可勾选控制，证明清单可执行。",
+      "selectionRationale": "先看 Content 第一条：左边能勾选，展开后是 WCAG 3.1.5。",
       "shot": {
         "src": "https://vislexicon.com/shots/a11y-project/v2-proof.png",
         "sha256": "8048e597691ba7054affc197c1eaf7f50d7265bbca77d97d779cffd5a7e087cb",
         "width": 1280,
         "height": 900,
         "bytes": 76728,
-        "alt": "A11Y Project proof evidence screenshot"
+        "alt": "Checklist 的 Content 区：左侧空勾选框，第一条展开显示 WCAG 3.1.5"
       }
     }
   ],
@@ -144,28 +144,28 @@
       "field": "author",
       "value": "The A11Y Project community and maintainers",
       "sourceUrl": "https://www.a11yproject.com/about/",
-      "evidence": "About 页说明项目由社区和维护者共同维护，不是单一作者。；独立复核来源：https://www.a11yproject.com/about/",
+      "evidence": "About 页说明项目由社区和维护者共同维护，不是单一作者。",
       "confidence": 1
     },
     {
       "field": "organization",
       "value": "The A11Y Project",
       "sourceUrl": "https://www.a11yproject.com/",
-      "evidence": "官网首页使用 The A11Y Project 作为项目身份。；独立复核来源：https://www.a11yproject.com/",
+      "evidence": "官网首页使用 The A11Y Project 作为项目身份。",
       "confidence": 1
     },
     {
       "field": "repository",
       "value": "https://github.com/a11yproject/a11yproject.com",
       "sourceUrl": "https://www.a11yproject.com/about/",
-      "evidence": "About 页直接链接官方仓库。；独立复核来源：https://www.a11yproject.com/about/",
+      "evidence": "About 页直接链接官方仓库。",
       "confidence": 1
     },
     {
       "field": "license",
       "value": "Apache-2.0",
       "sourceUrl": "https://github.com/a11yproject/a11yproject.com/blob/main/LICENSE-APLv2",
-      "evidence": "站点源码许可按官方仓库文件记录。；独立复核来源：https://github.com/a11yproject/a11yproject.com/blob/main/LICENSE-APLv2",
+      "evidence": "站点源码许可按官方仓库文件记录。",
       "confidence": 1
     }
   ],

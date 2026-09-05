@@ -19,4 +19,4 @@ A11Y Project 是社区驱动的数字无障碍教育与实践资源，首页、A
 ## Do's and Don'ts
 
 - 许可登记为 Apache-2.0（宽松 SPDX），再分发时须保留版权与许可声明。
-- 许可原始记录 Apache-2.0：站点源码许可按官方仓库文件记录。；独立复核来源：https://github.com/a11yproject/a11yproject.com/blob/main/LICENSE-APLv2（证据：https://github.com/a11yproject/a11yproject.com/blob/main/LICENSE-APLv2）
+- 许可原始记录 Apache-2.0：站点源码许可按官方仓库文件记录。（证据：https://github.com/a11yproject/a11yproject.com/blob/main/LICENSE-APLv2）

@@ -1,21 +1,21 @@
 {
   "$schema": "https://vislexicon.com/schema/registry-item.json",
   "schemaVersion": 3,
-  "generatedAt": "2026-09-05T11:41:58.835Z",
+  "generatedAt": "2026-09-05T13:10:07.244Z",
   "entryId": "origin-ui",
   "entityId": "entity-origin-ui",
   "status": "APPROVED",
-  "voiceStatus": null,
+  "voiceStatus": "written",
   "official": {
     "inputUrl": "https://coss.com/ui",
     "finalUrl": "https://coss.com/ui",
-    "checkedAt": "2026-09-01T07:34:41.111Z"
+    "checkedAt": "2026-09-05T13:10:00.000Z"
   },
   "editorial": {
     "name": "Coss UI",
     "descriptionZh": "Cal.com 团队公开构建的组件与设计系统，基于 Base UI 和 Tailwind CSS，提供可复制到项目中自行维护的基础组件与复合控件；目前仍处早期开发阶段，可能随 Base UI 演进产生破坏性变更。",
     "takeawayZh": "复制走的 Base UI 组件，仍在早期，接口可能变",
-    "noteZh": null,
+    "noteZh": "我们进去先打开 Coss UI 首页，它已并进 Cal.com，不再叫 Origin UI。首页铺着可点的组件卡，文档写明拷走源码自己改。我们点进 Calendar：九月日历在跑，旁边是源码和安装命令。适合要自己改、也能接受还在早期的人。仓库默认 AGPL，只有 apps/ui 和 apps/origin 仍是 MIT，别把整仓当 MIT 拿走。",
     "pricing": "Free",
     "pricingNote": null
   },
@@ -80,7 +80,8 @@
       "open-source"
     ],
     "licenses": [
-      "MIT"
+      "MIT",
+      "AGPL-3.0-or-later"
     ],
     "contentOrganization": [
       "component-registry",
@@ -149,8 +150,8 @@
     {
       "field": "license",
       "value": "MIT",
-      "sourceUrl": "https://github.com/cosscom/coss/blob/main/apps/ui/package.json",
-      "evidence": "承载 coss.com/ui 文档、registry 与 particles 的 apps/ui/package.json 明确声明 license 为 MIT。",
+      "sourceUrl": "https://github.com/cosscom/coss/blob/main/LICENSING.md",
+      "evidence": "本入口对应 coss.com/ui，即 apps/ui：LICENSING.md 写明 apps/ui/ 与 apps/origin/ 保留 MIT，apps/ui/package.json 的 license 字段为 MIT。仓库其余目录默认 AGPLv3.0（根 LICENSE 与根 package.json 为 AGPL-3.0-or-later），不能把整仓当 MIT。",
       "confidence": 1
     },
     {
@@ -213,18 +214,21 @@
     "atlasTermsStatus": "editor-draft"
   },
   "agentGuidance": {
-    "safeToRedistributeCode": true,
-    "requiresAttribution": true,
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
     "licenseMachineReadable": true,
-    "cautions": [],
-    "recheckAfter": "2027-02-28",
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。MIT：本入口对应 coss.com/ui，即 apps/ui：LICENSING.md 写明 apps/ui/ 与 apps/origin/ 保留 MIT，apps/ui/package.json 的 license 字段为 MIT。仓库其余目录默认 AGPLv3.0（根 LICENSE 与根 package.json 为 AGPL-3.0-or-later），不能把整仓当 MIT。",
+      "该条目登记了多个许可值（MIT / AGPL-3.0-or-later），目录之间可能不同，逐目录确认。"
+    ],
+    "recheckAfter": "2027-03-04",
     "recheckPolicy": "checkedAt + P180D",
     "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
   },
   "meta": {
     "vislexiconUrl": "https://vislexicon.com/#/site/origin-ui",
     "designMdUrl": "https://vislexicon.com/site/origin-ui.md",
-    "checkedAt": "2026-09-01T07:34:41.111Z",
-    "license": "MIT"
+    "checkedAt": "2026-09-05T13:10:00.000Z",
+    "license": "MIT / AGPL-3.0-or-later"
   }
 }

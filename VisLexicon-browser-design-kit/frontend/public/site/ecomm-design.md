@@ -20,4 +20,4 @@ ecomm.design 是面向电商的案例与灵感集合，按平台、标签和价�
 
 - 站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。
 - 源码不公开，站上展示的实现不可直接取用。
-- 许可原始记录 unknown：官方页面未统一声明案例图片、商标或外链内容的再分发许可。；独立复核来源：https://ecomm.design/about/（证据：https://ecomm.design/about/）
+- 许可原始记录 unknown：官方页面未统一声明案例图片、商标或外链内容的再分发许可。（证据：https://ecomm.design/about/）
