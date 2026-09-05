@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-05T19:28:49.738Z",
+  "generatedAt": "2026-09-05T19:32:18.485Z",
   "counts": {
-    "approvedEntries": 69
+    "approvedEntries": 76
   },
   "items": [
     {
@@ -330,6 +330,93 @@
       "detailUrl": "/data/site/aceternity-ui.json",
       "designMdUrl": "/site/aceternity-ui.md",
       "registryUrl": "/r/aceternity-ui.json"
+    },
+    {
+      "entryId": "adobe-spectrum",
+      "name": "Adobe Spectrum",
+      "domain": "spectrum.adobe.com",
+      "homepage": "https://spectrum.adobe.com/",
+      "descriptionZh": "Adobe Spectrum 是 Adobe 的设计系统文档站，覆盖原则、设计令牌与组件指南；配套实现 adobe/react-spectrum 采用 Apache-2.0。本条不含已单独收录的 React Aria。",
+      "takeawayZh": "按 Spectrum 令牌装 React 按钮",
+      "noteZh": "我们打开 spectrum.adobe.com，标题 Spectrum, Adobe’s design system，侧栏有 Foundation、Components，以及 React Spectrum。Design tokens 页把令牌叫 source of truth。证明页改看 React Spectrum Button：yarn add @adobe/react-spectrum，底下 Example。适合要对齐 Adobe 产品界面的人。实现仓 Apache-2.0；这不是 React Aria 那套无样式原语。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "standard",
+          "code-library",
+          "design-file"
+        ],
+        "actions": [
+          "browse",
+          "learn",
+          "install",
+          "preview"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "css",
+          "javascript",
+          "typescript",
+          "web-components"
+        ],
+        "workflowStages": [
+          "design",
+          "build",
+          "handoff"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "design-system-suites",
+      "license": "Apache-2.0",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "licenseSourceUrl": "https://github.com/adobe/react-spectrum/blob/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T18:30:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/adobe-spectrum/v2-identity.png",
+        "alt": "Spectrum 首页标题 Spectrum, Adobe’s design system，侧栏 Foundation Components Patterns，左下 React Spectrum 与 Spectrum Web Components",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/adobe-spectrum.json",
+      "designMdUrl": "/site/adobe-spectrum.md",
+      "registryUrl": "/r/adobe-spectrum.json"
     },
     {
       "entryId": "animate-css",
@@ -733,6 +820,97 @@
       "registryUrl": "/r/ark-ui.json"
     },
     {
+      "entryId": "atlassian-design",
+      "name": "Atlassian Design System",
+      "domain": "atlassian.design",
+      "homepage": "https://atlassian.design/",
+      "descriptionZh": "Atlassian Design System 文档站，提供基础、组件与 Figma 资源。站点许可限定用于与 Atlassian 产品互通的插件；npm 包 @atlaskit/button 标 Apache-2.0。文档公开可读。",
+      "takeawayZh": "按 Atlassian 规范写插件界面",
+      "noteZh": "首页截图超时，我们改看 Get started：Design、Develop、Content design 三张卡。Components 目录 Forms and inputs 下列 Button、Calendar、Checkbox。点开 Button：Default button 预览和 import Button from '@atlaskit/button/default/button'。适合做 Atlassian 插件的人。文档免费；ADS 许可限制用途，别把整站当成可任意商用的 MIT 套件。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [
+          "admin",
+          "saas"
+        ],
+        "deliverables": [
+          "component",
+          "standard",
+          "code-library",
+          "design-file"
+        ],
+        "actions": [
+          "browse",
+          "learn",
+          "copy",
+          "preview",
+          "install"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "figma"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "typescript",
+          "css"
+        ],
+        "workflowStages": [
+          "design",
+          "build",
+          "handoff"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free"
+        ],
+        "licenses": [
+          "custom",
+          "Apache-2.0"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "design-system-suites",
+      "license": "custom",
+      "licenses": [
+        "custom",
+        "Apache-2.0"
+      ],
+      "licenseSourceUrl": "https://atlassian.design/license",
+      "access": [
+        "free"
+      ],
+      "checkedAt": "2026-09-06T18:30:00.000Z",
+      "pricing": "Documentation is public; ADS license limits use to Atlassian add-ons; @atlaskit packages are Apache-2.0",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/atlassian-design/v2-identity.png",
+        "alt": "Atlassian Design Get started 页：标题 Start designing and developing beautiful interfaces，下方 Design Develop Content design 三张卡片",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/atlassian-design.json",
+      "designMdUrl": "/site/atlassian-design.md",
+      "registryUrl": "/r/atlassian-design.json"
+    },
+    {
       "entryId": "base-ui",
       "name": "Base UI",
       "domain": "base-ui.com",
@@ -1015,6 +1193,97 @@
       "detailUrl": "/data/site/bootstrap.json",
       "designMdUrl": "/site/bootstrap.md",
       "registryUrl": "/r/bootstrap.json"
+    },
+    {
+      "entryId": "carbon",
+      "name": "Carbon Design System",
+      "domain": "carbondesignsystem.com",
+      "homepage": "https://carbondesignsystem.com/",
+      "descriptionZh": "IBM Carbon 开源设计系统，现以 preview 站点提供组件总览与按钮用法。核心仓库 carbon-design-system/carbon 采用 Apache-2.0，版权署 IBM Corp。",
+      "takeawayZh": "按 IBM Carbon 规范查看按钮用法",
+      "noteZh": "carbondesignsystem.com 首页与组件页多次截图超时。我们改看 preview.carbondesignsystem.com：About Carbon 写 IBM’s open-source design system，底下有 cookie 条。组件总览侧栏 Accordion 到 Button。Button 页有 Live Demo 标题。适合要对齐 IBM 产品界面的人。仓库 Apache-2.0 免费。旧 GitHub 目录截图已替换。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "standard",
+          "code-library",
+          "design-file"
+        ],
+        "actions": [
+          "browse",
+          "learn",
+          "install",
+          "preview"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "figma",
+          "sketch"
+        ],
+        "technologies": [
+          "react",
+          "angular",
+          "vue",
+          "svelte",
+          "web-components",
+          "javascript",
+          "css"
+        ],
+        "workflowStages": [
+          "design",
+          "build",
+          "handoff"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "design-system-suites",
+      "license": "Apache-2.0",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "licenseSourceUrl": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T18:30:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/carbon/v2-identity.png",
+        "alt": "Carbon preview About Carbon 页：标题 Carbon Design System is IBM's open-source design system，底部 IBM cookie 条",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/carbon.json",
+      "designMdUrl": "/site/carbon.md",
+      "registryUrl": "/r/carbon.json"
     },
     {
       "entryId": "chartjs",
@@ -5333,6 +5602,97 @@
       "registryUrl": "/r/rive.json"
     },
     {
+      "entryId": "semi-design",
+      "name": "Semi Design",
+      "domain": "semi.design",
+      "homepage": "https://semi.design/",
+      "descriptionZh": "抖音前端与 UED 团队维护的 Semi Design，提供 70+ React 组件、主题与 Figma UI Kit。npm 包 @douyinfe/semi-ui 采用 MIT，版权署 DouyinFE。",
+      "takeawayZh": "装 @douyinfe/semi-ui 再抄按钮",
+      "noteZh": "我们打开首页，中文标题连接设计师与开发者，GitHub 约 10k。英文 Getting Started 实际仍显示中文快速开始，安装 npm i @douyinfe/semi-ui，侧栏列出 Button 到 Table。Button 页路径 /en-US/basic/button，正文 import { Button, SplitButtonGroup } from '@douyinfe/semi-ui'。适合要中后台 React 组件的人。仓库 MIT。作业里的 /en-US/input/button 已改到 basic/button。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [
+          "admin"
+        ],
+        "deliverables": [
+          "component",
+          "code-library",
+          "standard",
+          "design-file"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "preview",
+          "learn"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "figma"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "typescript",
+          "css"
+        ],
+        "workflowStages": [
+          "design",
+          "build",
+          "handoff"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "zh-hans",
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "design-system-suites",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/DouyinFE/semi-design/blob/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T18:30:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/semi-design/v2-identity.png",
+        "alt": "Semi Design 首页标题连接设计师与开发者，按钮开始使用与 GitHub 10k，右侧后台界面演示",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/semi-design.json",
+      "designMdUrl": "/site/semi-design.md",
+      "registryUrl": "/r/semi-design.json"
+    },
+    {
       "entryId": "shadcn-ui",
       "name": "shadcn/ui",
       "domain": "ui.shadcn.com",
@@ -5712,6 +6072,92 @@
       "detailUrl": "/data/site/sonner.json",
       "designMdUrl": "/site/sonner.md",
       "registryUrl": "/r/sonner.json"
+    },
+    {
+      "entryId": "storybook",
+      "name": "Storybook",
+      "domain": "storybook.js.org",
+      "homepage": "https://storybook.js.org/",
+      "descriptionZh": "Storybook 是开源前端工坊，用于在隔离环境中构建、测试并文档化界面组件；核心仓库 MIT，安装命令为 npm create storybook@latest。顶栏 Visual Test 与 Enterprise 为另售产品。",
+      "takeawayZh": "隔离写组件，用 stories 做测试和文档",
+      "noteZh": "我们打开首页，大标题 Build, test & document components，旁边是 npm create storybook@latest。Docs 入门页把 Next.js、React、Vue、Angular 排成格子。安装页再给同一条 CLI。适合要在隔离环境里写组件的人。核心 MIT 免费；顶栏 Visual Test、Enterprise 是另售，别和这份工坊混成一回事。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "learn",
+          "test",
+          "preview"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "cli"
+        ],
+        "technologies": [
+          "javascript",
+          "typescript",
+          "react",
+          "vue",
+          "angular",
+          "web-components"
+        ],
+        "workflowStages": [
+          "build",
+          "test",
+          "design"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "delivery-development-tools",
+      "subcategory": "build-deploy-dev-workflow",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/storybookjs/storybook/blob/next/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T18:30:00.000Z",
+      "pricing": "Core Storybook is MIT and free; Visual Test and Enterprise are separate paid products",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/storybook/v2-identity.png",
+        "alt": "Storybook 首页大标题 Build, test & document components，按钮 Get Started 与 npm create storybook@latest，下方 localhost:6006 工坊预览",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/storybook.json",
+      "designMdUrl": "/site/storybook.md",
+      "registryUrl": "/r/storybook.json"
     },
     {
       "entryId": "tabler-icons",
@@ -6275,6 +6721,88 @@
       "registryUrl": "/r/uiverse.json"
     },
     {
+      "entryId": "unocss",
+      "name": "UnoCSS",
+      "domain": "unocss.dev",
+      "homepage": "https://unocss.dev/",
+      "descriptionZh": "Anthony Fu 维护的按需原子 CSS 引擎，功能全部由预设提供。npm 包 unocss 现为 v66.10.0，采用 MIT。默认 preset-uno 已更名为 preset-wind3。",
+      "takeawayZh": "按需原子 CSS，功能靠预设装",
+      "noteZh": "我们打开首页，大标题 Instant On-demand Atomic CSS Engine，版本 v66.10.0。Guide 页写 core is un-opinionated，示例 m-1 生成 margin: 1px。/presets/uno 返回 404，证明页改看 Official Packages：preset-mini、preset-wind3，并写 preset-uno 已更名为 preset-wind3。适合要按需原子 CSS 的人。页脚 MIT，作者 Anthony Fu。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn"
+        ],
+        "media": [
+          "ui",
+          "typography"
+        ],
+        "platforms": [
+          "web",
+          "cli"
+        ],
+        "technologies": [
+          "css",
+          "javascript",
+          "typescript"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "delivery-development-tools",
+      "subcategory": "build-deploy-dev-workflow",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://unocss.dev/",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T18:30:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/unocss/v2-identity.png",
+        "alt": "UnoCSS 首页大标题 Instant On-demand Atomic CSS Engine，按钮 Getting Started Playground，卡片 Fully Customizable Instant Lightweight",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/unocss.json",
+      "designMdUrl": "/site/unocss.md",
+      "registryUrl": "/r/unocss.json"
+    },
+    {
       "entryId": "vaul",
       "name": "Vaul",
       "domain": "vaul.emilkowal.ski",
@@ -6534,6 +7062,92 @@
       "detailUrl": "/data/site/web-dev.json",
       "designMdUrl": "/site/web-dev.md",
       "registryUrl": "/r/web-dev.json"
+    },
+    {
+      "entryId": "webawesome",
+      "name": "Web Awesome",
+      "domain": "webawesome.com",
+      "homepage": "https://webawesome.com/",
+      "descriptionZh": "Fonticons 维护的 Web Awesome 设计系统，由 Shoelace 演进而来，提供 50+ 框架无关 Web Components。核心 MIT 免费；Pro 含额外组件、主题与 Figma 套件。",
+      "takeawayZh": "复制 wa-button，核心组件免费",
+      "noteZh": "首页没有付费墙，标题 The Web's Open Source Design System，版本 3.12.0，底下 CDN 片段。Components 目录 Over 80 Components，Accordion 标 Experimental，Button 标 Stable。点开 Button：<wa-button> 和 Save 预览。核心 MIT；Figma Design Kit 与 Patterns 标 Pro。这是 Shoelace 后继，不另开 shoelace 条。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library",
+          "standard"
+        ],
+        "actions": [
+          "browse",
+          "copy",
+          "install",
+          "preview",
+          "learn",
+          "purchase"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "web-components",
+          "javascript",
+          "css",
+          "typescript"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "freemium",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "design-system-suites",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://webawesome.com/license",
+      "access": [
+        "freemium",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T18:30:00.000Z",
+      "pricing": "Core is MIT and free; Web Awesome Pro is a separate paid catalog",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/webawesome/v2-identity.png",
+        "alt": "Web Awesome 首页标题 The Web's Open Source Design System，按钮 Get Started Components，版本 3.12.0 与 CDN 代码块",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/webawesome.json",
+      "designMdUrl": "/site/webawesome.md",
+      "registryUrl": "/r/webawesome.json"
     },
     {
       "entryId": "zagjs",

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 3,
+  "entryId": "carbon",
+  "entityId": "entity-carbon",
+  "attemptId": "swarm-curator-batch-h-carbon-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://carbondesignsystem.com/",
+    "finalUrl": "https://carbondesignsystem.com/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Carbon Design System",
+    "descriptionZh": "IBM Carbon 开源设计系统，现以 preview 站点提供组件总览与按钮用法。核心仓库 carbon-design-system/carbon 采用 Apache-2.0，版权署 IBM Corp。",
+    "takeawayZh": "按 IBM Carbon 规范查看按钮用法",
+    "noteZh": "carbondesignsystem.com 首页与组件页多次截图超时。我们改看 preview.carbondesignsystem.com：About Carbon 写 IBM’s open-source design system，底下有 cookie 条。组件总览侧栏 Accordion 到 Button。Button 页有 Live Demo 标题。适合要对齐 IBM 产品界面的人。仓库 Apache-2.0 免费。旧 GitHub 目录截图已替换。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-carbon",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "About Carbon 把系统定义为 IBM’s open-source design system for products and digital experiences，含工作代码、设计工具、人机界面指南与贡献者社区。",
+        "evidenceUrl": "https://preview.carbondesignsystem.com/getting-started/about-carbon"
+      },
+      {
+        "statement": "组件总览按 Accordion、Button、Data table 等列出可复用组件；Button 页含 Live Demo，并链到 react.carbondesignsystem.com Storybook。",
+        "evidenceUrl": "https://preview.carbondesignsystem.com/building-blocks/core/components/overview"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-h",
+    "reviewerId": "swarm-reviewer-grok-k",
+    "confirmedAt": "2026-09-06T20:15:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library",
+      "design-file"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma",
+      "sketch"
+    ],
+    "technologies": [
+      "react",
+      "angular",
+      "vue",
+      "svelte",
+      "web-components",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://carbondesignsystem.com/",
+      "finalUrl": "https://preview.carbondesignsystem.com/getting-started/about-carbon",
+      "title": "About Carbon | Carbon Design System",
+      "selectionRationale": "生产站首页超时，改看 preview 的 About Carbon。IBM 开源设计系统写在首屏。",
+      "shot": {
+        "src": "/shots/carbon/v2-identity.png",
+        "sha256": "fdb47ecc4061630f8a91df931feb29d48d3f83e977ac2fbdc34036e2296c9d86",
+        "width": 1280,
+        "height": 900,
+        "bytes": 102560,
+        "alt": "Carbon preview About Carbon 页：标题 Carbon Design System is IBM's open-source design system，底部 IBM cookie 条"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://carbondesignsystem.com/components/overview/components/",
+      "finalUrl": "https://preview.carbondesignsystem.com/building-blocks/core/components/overview/components",
+      "title": "Overview | Carbon Design System",
+      "selectionRationale": "再翻 preview 组件总览。侧栏 Accordion 到 Button 列出范围。",
+      "shot": {
+        "src": "/shots/carbon/v2-breadth.png",
+        "sha256": "772949dfa048bd99164eac6a787f61abb9053be8c5a493f8dcfa21ce19332904",
+        "width": 1280,
+        "height": 900,
+        "bytes": 56893,
+        "alt": "Carbon preview Components Overview：侧栏 Accordion AI label Breadcrumb Button Checkbox，正文 Components are one of the key building blocks"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://carbondesignsystem.com/components/button/usage/",
+      "finalUrl": "https://preview.carbondesignsystem.com/building-blocks/core/components/button/guidelines",
+      "title": "Button | Carbon Design System",
+      "selectionRationale": "最后开 Button。Live Demo 标题证明有现场组件。",
+      "shot": {
+        "src": "/shots/carbon/v2-proof.png",
+        "sha256": "73123f6de02856c1775ea5cfc8342164af3895742f64410a379be0f47d2101c5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 58889,
+        "alt": "Carbon preview Button 页：Stable 标记、Guidelines 与 Live Demo 标题，左侧组件目录高亮 Button"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "IBM Corp.",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 附录写 Copyright 2015 IBM Corp. Licensed under the Apache License, Version 2.0。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "IBM / carbon-design-system",
+      "sourceUrl": "https://preview.carbondesignsystem.com/getting-started/about-carbon",
+      "evidence": "About Carbon 写 Carbon is IBM’s open-source design system。GitHub 组织 carbon-design-system 维护核心仓库，About 回链 carbondesignsystem.com。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/carbon-design-system/carbon",
+      "sourceUrl": "https://carbondesignsystem.com/",
+      "evidence": "生产站 Explore libraries 链到 carbon-design-system/carbon。仓库 LICENSE 与 README 回链 carbondesignsystem.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+      "evidence": "LICENSE 为 Apache License Version 2.0，附录 Copyright 2015 IBM Corp.。GitHub 仓库侧栏标 Apache-2.0 license。许可覆盖该仓库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://preview.carbondesignsystem.com/getting-started/about-carbon",
+      "evidence": "About Carbon 写 IBM’s open-source design system，文档与 GitHub 仓库公开可浏览，未见组件库付费墙。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-h",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-k",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-k"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-h 更新既有 carbon DRAFT。carbondesignsystem.com 组件页 20s 超时，三页改截 preview.carbondesignsystem.com 活页，替换旧 GitHub tree 截图。identity 有 cookie 条。 swarm-reviewer-grok-k 复核活页、截图 sha256 与许可后 APPROVED。"
+  }
+}

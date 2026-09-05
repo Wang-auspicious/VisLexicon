@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:32:18.485Z",
+  "entryId": "adobe-spectrum",
+  "entityId": "entity-adobe-spectrum",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "spectrum.adobe.com",
+  "official": {
+    "inputUrl": "https://spectrum.adobe.com/",
+    "finalUrl": "https://spectrum.adobe.com/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Adobe Spectrum",
+    "descriptionZh": "Adobe Spectrum 是 Adobe 的设计系统文档站，覆盖原则、设计令牌与组件指南；配套实现 adobe/react-spectrum 采用 Apache-2.0。本条不含已单独收录的 React Aria。",
+    "takeawayZh": "按 Spectrum 令牌装 React 按钮",
+    "noteZh": "我们打开 spectrum.adobe.com，标题 Spectrum, Adobe’s design system，侧栏有 Foundation、Components，以及 React Spectrum。Design tokens 页把令牌叫 source of truth。证明页改看 React Spectrum Button：yarn add @adobe/react-spectrum，底下 Example。适合要对齐 Adobe 产品界面的人。实现仓 Apache-2.0；这不是 React Aria 那套无样式原语。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Spectrum 定义为 Adobe’s design system，提供组件与工具让产品团队更高效，并使 Adobe 应用更统一，侧栏分出 Foundation、Components、Patterns 与 React Spectrum。",
+        "evidenceUrl": "https://spectrum.adobe.com/"
+      },
+      {
+        "statement": "React Spectrum Button 页给出 yarn add @adobe/react-spectrum、import {Button} from '@adobe/react-spectrum' 与可复制示例，证明有可实现的组件套件。",
+        "evidenceUrl": "https://react-spectrum.adobe.com/react-spectrum/Button.html"
+      }
+    ],
+    "confirmedAt": "2026-09-06T20:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library",
+      "design-file"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "css",
+      "javascript",
+      "typescript",
+      "web-components"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://spectrum.adobe.com/",
+      "finalUrl": "https://spectrum.adobe.com/",
+      "title": "Spectrum, Adobe’s design system",
+      "selectionRationale": "先看首页。Adobe 设计系统和 React Spectrum 入口在一起。",
+      "shot": {
+        "src": "/shots/adobe-spectrum/v2-identity.png",
+        "sha256": "a217f856c462a949a7876f4d65d0d11d48c82b4e759df8f77cfbc7ff2989af0d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144550,
+        "alt": "Spectrum 首页标题 Spectrum, Adobe’s design system，侧栏 Foundation Components Patterns，左下 React Spectrum 与 Spectrum Web Components"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://spectrum.adobe.com/page/design-tokens/",
+      "finalUrl": "https://spectrum.adobe.com/page/design-tokens/",
+      "title": "Design tokens - Spectrum",
+      "selectionRationale": "再翻 Design tokens。令牌目录把系统范围说清楚。",
+      "shot": {
+        "src": "/shots/adobe-spectrum/v2-breadth.png",
+        "sha256": "171dd557e2a21b8ee9cdc0262b3d7b6ad542bcf7d0d12b9bf3c9ac56448deb32",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117021,
+        "alt": "Spectrum Design tokens 页：标题 Design tokens，侧栏 Platform scale Theming Color Typography，正文 Table of contents"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://react-spectrum.adobe.com/react-spectrum/Button.html",
+      "finalUrl": "https://react-spectrum.adobe.com/v3/Button.html",
+      "title": "Button – V3",
+      "selectionRationale": "最后开 React Spectrum Button。安装命令和 Example 都在。",
+      "shot": {
+        "src": "/shots/adobe-spectrum/v2-proof.png",
+        "sha256": "fa57d58a93b2ee9aaca7064367c0ebfd88e6dd6ca63caf95986e410f77a15387",
+        "width": 1280,
+        "height": 900,
+        "bytes": 173034,
+        "alt": "React Spectrum Button 页：yarn add @adobe/react-spectrum，import {Button} from '@adobe/react-spectrum'，下方 Example 代码块"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Adobe",
+      "sourceUrl": "https://github.com/adobe/react-spectrum/blob/main/LICENSE",
+      "evidence": "adobe/react-spectrum LICENSE 附录写 Copyright 2019 Adobe。spectrum.adobe.com 由 Adobe 发布。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Adobe",
+      "sourceUrl": "https://spectrum.adobe.com/",
+      "evidence": "首页标题 Spectrum, Adobe’s design system。配套实现仓库由 GitHub 组织 adobe 维护。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/adobe/react-spectrum",
+      "sourceUrl": "https://react-spectrum.adobe.com/react-spectrum/Button.html",
+      "evidence": "Button 页 View repository 链到 github.com/adobe/react-spectrum/tree/main/packages/@react-spectrum/button。本条以 Spectrum 的 React 实现仓为仓库事实；React Aria 已另条收录。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/adobe/react-spectrum/blob/main/LICENSE",
+      "evidence": "LICENSE 为 Apache License Version 2.0，附录 Copyright 2019 Adobe。该许可覆盖 adobe/react-spectrum 源码，不覆盖 Adobe 商标或 Spectrum 设计资产。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://spectrum.adobe.com/",
+      "evidence": "设计系统文档与 adobe/react-spectrum 仓库公开可浏览，未见组件库订阅套餐。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@adobe/react-spectrum",
+      "sourceUrl": "https://react-spectrum.adobe.com/react-spectrum/Button.html",
+      "evidence": "Button 页 install 为 yarn add @adobe/react-spectrum，usage 为 import {Button} from '@adobe/react-spectrum'。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/adobe-spectrum.md",
+  "registryUrl": "/r/adobe-spectrum.json"
+}

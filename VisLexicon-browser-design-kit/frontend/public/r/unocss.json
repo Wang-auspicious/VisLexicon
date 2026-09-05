@@ -1,0 +1,197 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:32:18.485Z",
+  "entryId": "unocss",
+  "entityId": "entity-unocss",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://unocss.dev/",
+    "finalUrl": "https://unocss.dev/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "UnoCSS",
+    "descriptionZh": "Anthony Fu 维护的按需原子 CSS 引擎，功能全部由预设提供。npm 包 unocss 现为 v66.10.0，采用 MIT。默认 preset-uno 已更名为 preset-wind3。",
+    "takeawayZh": "按需原子 CSS，功能靠预设装",
+    "noteZh": "我们打开首页，大标题 Instant On-demand Atomic CSS Engine，版本 v66.10.0。Guide 页写 core is un-opinionated，示例 m-1 生成 margin: 1px。/presets/uno 返回 404，证明页改看 Official Packages：preset-mini、preset-wind3，并写 preset-uno 已更名为 preset-wind3。适合要按需原子 CSS 的人。页脚 MIT，作者 Anthony Fu。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 UnoCSS 定义为 Instant On-demand Atomic CSS Engine，并写 No core utilities, all functionalities are provided via presets。",
+        "evidenceUrl": "https://unocss.dev/"
+      },
+      {
+        "statement": "Guide 用 defineConfig 与 class=\"m-1\" 证明交付物是原子 CSS 引擎；Official Packages 列出 preset-mini、preset-wind3 等可安装预设，preset-uno 已弃用。",
+        "evidenceUrl": "https://unocss.dev/guide/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T20:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://unocss.dev/",
+      "finalUrl": "https://unocss.dev/",
+      "title": "UnoCSS: The instant on-demand Atomic CSS engine",
+      "selectionRationale": "先看首页。大标题和 Getting Started 把对象说完。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/unocss/v2-identity.png",
+        "sha256": "837f0c977ca8b7a163bb996bd040053a36239a19ca35674de6d7010f3bbcd497",
+        "width": 1280,
+        "height": 900,
+        "bytes": 185450,
+        "alt": "UnoCSS 首页大标题 Instant On-demand Atomic CSS Engine，按钮 Getting Started Playground，卡片 Fully Customizable Instant Lightweight"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://unocss.dev/guide/",
+      "finalUrl": "https://unocss.dev/guide/",
+      "title": "Guide | UnoCSS",
+      "selectionRationale": "再翻 Guide。左侧 Guides 到 Integrations 能看见文档有多大。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/unocss/v2-breadth.png",
+        "sha256": "ba403123a331212e8d1d1458b48fe71aec2673c171f7da9262feb665bcb8e2c0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 82539,
+        "alt": "UnoCSS Guide：What is UnoCSS，uno.config.ts 示例与 class m-1 生成 margin: 1px，左侧 Getting Started Presets 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://unocss.dev/presets/uno",
+      "finalUrl": "https://unocss.dev/presets/",
+      "title": "Official Packages | UnoCSS",
+      "selectionRationale": "/presets/uno 已 404，改看预设目录。wind3 和弃用说明都在。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/unocss/v2-proof.png",
+        "sha256": "89d6d0da6eaddb7a199fc0cc68c74511ad92450d946ceb477c0e7b8446252c4b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 93381,
+        "alt": "UnoCSS Official Packages：Presets 表列出 preset-mini preset-wind3，Deprecated 写 preset-uno renamed to preset-wind3"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Anthony Fu",
+      "sourceUrl": "https://unocss.dev/",
+      "evidence": "站点页脚写 Copyright © 2021-PRESENT Anthony Fu。npm 包 unocss 的 author 字段为 Anthony Fu <anthonyfu117@hotmail.com>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unocss",
+      "sourceUrl": "https://github.com/unocss/unocss",
+      "evidence": "官方仓库位于 GitHub 组织 unocss/unocss。站点回链该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/unocss/unocss",
+      "sourceUrl": "https://unocss.dev/",
+      "evidence": "首页 GitHub 图标链到 github.com/unocss/unocss。npm 包 repository 字段同此地址。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://unocss.dev/",
+      "evidence": "站点页脚写 Released under the MIT License。npm 包 unocss 66.10.0 的 license 字段为 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://unocss.dev/",
+      "evidence": "文档、Guide 与预设页公开可浏览，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "unocss",
+      "sourceUrl": "https://unocss.dev/guide/",
+      "evidence": "Guide 示例为 import { defineConfig } from 'unocss'。npm 包名 unocss，当前文档顶栏 v66.10.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/unocss",
+    "designMdUrl": "https://vislexicon.com/site/unocss.md",
+    "checkedAt": "2026-09-06T18:30:00.000Z",
+    "license": "MIT"
+  }
+}

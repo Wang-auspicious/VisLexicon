@@ -318,6 +318,34 @@ const VOICE = {
     lede: { zh: '锚点定位原语。提示与弹出层。', en: 'Anchor positioning primitives. Tooltips and popovers.' },
     style: { zh: '浅色文档。中性。解剖式演示。', en: 'Light docs. Neutral. Anatomical demos.' },
   },
+  storybook: {
+    lede: { zh: '组件工坊。核心 MIT。', en: 'Component workshop. Core is MIT.' },
+    style: { zh: '浅色文档。粉紫强调。侧栏目录。', en: 'Light docs. Magenta accent. Sidebar catalog.' },
+  },
+  'adobe-spectrum': {
+    lede: { zh: 'Adobe Spectrum 设计系统。React 实现 Apache-2.0。', en: 'Adobe Spectrum design system. React implementation is Apache-2.0.' },
+    style: { zh: '浅色文档。光谱色阶。系统控件标本。', en: 'Light docs. Spectral scales. System control specimens.' },
+  },
+  'atlassian-design': {
+    lede: { zh: 'Atlassian 设计系统。组件 Apache-2.0，附加条款自定。', en: 'Atlassian Design System. Components Apache-2.0; add-ons custom.' },
+    style: { zh: '浅色文档。品牌蓝。管理后台密度。', en: 'Light docs. Brand blue. Admin density.' },
+  },
+  carbon: {
+    lede: { zh: 'IBM Carbon 设计系统。Apache-2.0。', en: 'IBM Carbon design system. Apache-2.0.' },
+    style: { zh: '浅色企业文档。高密度。克制圆角。', en: 'Light enterprise docs. High density. Restrained radii.' },
+  },
+  unocss: {
+    lede: { zh: '即时按需原子 CSS 引擎。', en: 'On-demand atomic CSS engine.' },
+    style: { zh: '深色文档。等宽代码。中性。', en: 'Dark docs. Monospace code. Neutral.' },
+  },
+  webawesome: {
+    lede: { zh: 'Web Awesome 组件。核心 MIT，Pro 付费。', en: 'Web Awesome components. Core is MIT; Pro is paid.' },
+    style: { zh: '浅色文档。品牌橙。控件标本。', en: 'Light docs. Brand orange. Control specimens.' },
+  },
+  'semi-design': {
+    lede: { zh: 'Semi Design React 组件。MIT。', en: 'Semi Design React components. MIT.' },
+    style: { zh: '浅色文档。品牌蓝。企业控件目录。', en: 'Light docs. Brand blue. Enterprise control catalog.' },
+  },
 }
 
 export function entryVoice(entryId) {

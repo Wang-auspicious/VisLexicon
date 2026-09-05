@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 3,
+  "entryId": "storybook",
+  "entityId": "entity-storybook",
+  "attemptId": "swarm-curator-batch-h-storybook-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://storybook.js.org/",
+    "finalUrl": "https://storybook.js.org/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Storybook",
+    "descriptionZh": "Storybook 是开源前端工坊，用于在隔离环境中构建、测试并文档化界面组件；核心仓库 MIT，安装命令为 npm create storybook@latest。顶栏 Visual Test 与 Enterprise 为另售产品。",
+    "takeawayZh": "隔离写组件，用 stories 做测试和文档",
+    "noteZh": "我们打开首页，大标题 Build, test & document components，旁边是 npm create storybook@latest。Docs 入门页把 Next.js、React、Vue、Angular 排成格子。安装页再给同一条 CLI。适合要在隔离环境里写组件的人。核心 MIT 免费；顶栏 Visual Test、Enterprise 是另售，别和这份工坊混成一回事。",
+    "pricing": "Core Storybook is MIT and free; Visual Test and Enterprise are separate paid products"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-storybook",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Storybook 定义为 frontend workshop for building UI components and pages in isolation，用于开发、测试与文档，而不是一份现成组件包。",
+        "evidenceUrl": "https://storybook.js.org/"
+      },
+      {
+        "statement": "Get started 与 Install 页给出 npm create storybook@latest，并按 React、Vue、Angular、Web Components 等框架列出安装入口，证明交付物是可安装的开发工坊。",
+        "evidenceUrl": "https://storybook.js.org/docs/get-started/install"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-h",
+    "reviewerId": "swarm-reviewer-grok-k",
+    "confirmedAt": "2026-09-06T20:15:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "test",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue",
+      "angular",
+      "web-components"
+    ],
+    "workflowStages": [
+      "build",
+      "test",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://storybook.js.org/",
+      "finalUrl": "https://storybook.js.org/",
+      "title": "Storybook: Frontend workshop for UI development",
+      "selectionRationale": "先看首页。大标题和安装命令把对象说完。",
+      "shot": {
+        "src": "/shots/storybook/v2-identity.png",
+        "sha256": "2814ab1fa14e9208245c8cf175f5cc25a350641ec81b1c345fbc3aae6ce8575a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 1146188,
+        "alt": "Storybook 首页大标题 Build, test & document components，按钮 Get Started 与 npm create storybook@latest，下方 localhost:6006 工坊预览"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://storybook.js.org/docs",
+      "finalUrl": "https://storybook.js.org/docs",
+      "title": "Get started with Storybook | Storybook docs",
+      "selectionRationale": "再翻 Docs 入门。左侧目录和框架格子能看见范围。",
+      "shot": {
+        "src": "/shots/storybook/v2-breadth.png",
+        "sha256": "d05a55bcfe51c1fa2d633718c12a1397e238a6108f76257153581d3f44a27ff6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 167070,
+        "alt": "Storybook Docs Get started 页：标题 Get started with Storybook，安装命令 npm create storybook@latest，左侧 Get Started 与 Stories 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://storybook.js.org/docs/get-started/install",
+      "finalUrl": "https://storybook.js.org/docs/get-started/install",
+      "title": "Install Storybook | Storybook docs",
+      "selectionRationale": "最后开安装页。单条 CLI 就是能拿走的起步。",
+      "shot": {
+        "src": "/shots/storybook/v2-proof.png",
+        "sha256": "180029b153459358ee29883ac2601330593b57f65647cc0e3a83fc1388ceb0e8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 165446,
+        "alt": "Storybook Install 页：标题 Install Storybook，React Vue Angular Web Components 切换，命令 npm create storybook@latest"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Storybook",
+      "sourceUrl": "https://github.com/storybookjs/storybook/blob/next/LICENSE",
+      "evidence": "仓库 LICENSE 版权行 Copyright (c) 2024 Storybook。未见单独的个人作者字段。",
+      "confidence": 0.8
+    },
+    {
+      "field": "organization",
+      "value": "storybookjs",
+      "sourceUrl": "https://storybook.js.org/",
+      "evidence": "首页 GitHub 链到 github.com/storybookjs/storybook。文档与发行由 GitHub 组织 storybookjs 维护。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/storybookjs/storybook",
+      "sourceUrl": "https://storybook.js.org/",
+      "evidence": "首页 Star on Github 与版本发行链到 github.com/storybookjs/storybook。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/storybookjs/storybook/blob/next/LICENSE",
+      "evidence": "LICENSE 以 The MIT License (MIT) 开头，Copyright (c) 2024 Storybook。该许可覆盖 Storybook 源码，不覆盖顶栏 Visual Test、Enterprise 等另售产品。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core Storybook is MIT and free; Visual Test and Enterprise are separate paid products",
+      "sourceUrl": "https://storybook.js.org/",
+      "evidence": "首页写 It's open source and free，并给出 npm create storybook@latest。顶栏 Visual Test、Enterprise 带外链箭头，与核心工坊分开。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "storybook",
+      "sourceUrl": "https://storybook.js.org/docs/get-started/install",
+      "evidence": "Install 页命令为 npm create storybook@latest。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-h",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-k",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-k"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-h 进站起草。Site Entry 是 storybook.js.org 工坊文档，不混 Chromatic Visual Test 或 Enterprise。 swarm-reviewer-grok-k 复核活页、截图 sha256 与许可后 APPROVED。"
+  }
+}

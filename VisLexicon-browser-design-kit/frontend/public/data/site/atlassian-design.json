@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:32:18.485Z",
+  "entryId": "atlassian-design",
+  "entityId": "entity-atlassian-design",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "atlassian.design",
+  "official": {
+    "inputUrl": "https://atlassian.design/",
+    "finalUrl": "https://atlassian.design/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Atlassian Design System",
+    "descriptionZh": "Atlassian Design System 文档站，提供基础、组件与 Figma 资源。站点许可限定用于与 Atlassian 产品互通的插件；npm 包 @atlaskit/button 标 Apache-2.0。文档公开可读。",
+    "takeawayZh": "按 Atlassian 规范写插件界面",
+    "noteZh": "首页截图超时，我们改看 Get started：Design、Develop、Content design 三张卡。Components 目录 Forms and inputs 下列 Button、Calendar、Checkbox。点开 Button：Default button 预览和 import Button from '@atlaskit/button/default/button'。适合做 Atlassian 插件的人。文档免费；ADS 许可限制用途，别把整站当成可任意商用的 MIT 套件。",
+    "pricing": "Documentation is public; ADS license limits use to Atlassian add-ons; @atlaskit packages are Apache-2.0",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Get started 把入口定义为用 Atlassian Design System 的 foundations、components and standards 来设计与开发界面，并分出 Design、Develop、Content design。",
+        "evidenceUrl": "https://atlassian.design/get-started"
+      },
+      {
+        "statement": "Components 目录按 Forms and inputs 列出 Button 等到 Toggle；Button 示例页给出 Default button 预览与 @atlaskit/button 源码。",
+        "evidenceUrl": "https://atlassian.design/components"
+      }
+    ],
+    "confirmedAt": "2026-09-06T20:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library",
+      "design-file"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "copy",
+      "preview",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "custom",
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://atlassian.design/",
+      "finalUrl": "https://atlassian.design/get-started",
+      "title": "Overview - Get started - Atlassian Design",
+      "selectionRationale": "首页超时，改看 Get started。三张卡把设计开发内容分开。",
+      "shot": {
+        "src": "/shots/atlassian-design/v2-identity.png",
+        "sha256": "e1f5615ac3ab83118ce550d9fd908419f8c63b7678e2b917c7e78a364709a2c4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 103275,
+        "alt": "Atlassian Design Get started 页：标题 Start designing and developing beautiful interfaces，下方 Design Develop Content design 三张卡片"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://atlassian.design/components",
+      "finalUrl": "https://atlassian.design/components",
+      "title": "Overview - Components - Atlassian Design",
+      "selectionRationale": "再翻组件目录。Button 到 Checkbox 一格格排开。",
+      "shot": {
+        "src": "/shots/atlassian-design/v2-breadth.png",
+        "sha256": "7919421d125c7960914c0b4a00bc0486462ad7c0c118dabdd08ab892317f987c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 122925,
+        "alt": "Atlassian Design Components 页：Forms and inputs 下 Button Calendar Checkbox 卡片，左侧组件目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://atlassian.design/components/button/examples",
+      "finalUrl": "https://atlassian.design/components/button/examples",
+      "title": "Button",
+      "selectionRationale": "最后开 Button。现场预览和 @atlaskit/button 源码都在。",
+      "shot": {
+        "src": "/shots/atlassian-design/v2-proof.png",
+        "sha256": "854b8c1ba82fe69bda60b1e1eed925e1c70299fe779de9d71b8aa1d07f2bbccf",
+        "width": 1280,
+        "height": 900,
+        "bytes": 122912,
+        "alt": "Atlassian Button 示例页：Default button 预览，源码 import Button from '@atlaskit/button/default/button'"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Atlassian Pty Ltd",
+      "sourceUrl": "https://atlassian.design/license",
+      "evidence": "License 页写 Atlassian Pty Ltd（Atlassian）授予 ADS 许可。npm @atlaskit/button 的 author 字段为 Atlassian Pty Ltd。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Atlassian",
+      "sourceUrl": "https://atlassian.design/get-started",
+      "evidence": "站点域名为 atlassian.design，Get started 把系统称为 Atlassian Design System。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://bitbucket.org/atlassian/atlassian-frontend-mirror",
+      "sourceUrl": "https://unpkg.com/@atlaskit/button/package.json",
+      "evidence": "@atlaskit/button package.json 的 repository 字段为 https://bitbucket.org/atlassian/atlassian-frontend-mirror。未见独立的公开 GitHub 单仓作为整站源码。",
+      "confidence": 0.8
+    },
+    {
+      "field": "license",
+      "value": "custom",
+      "sourceUrl": "https://atlassian.design/license",
+      "evidence": "License 页把 ADS（文档、视觉资产、代码包等）限定为用于与 Atlassian 软件和云产品互通的插件与扩展，并禁止修改、反向工程与向第三方分发。npm @atlaskit/button 的 license 字段另为 Apache-2.0，覆盖该包源码，不覆盖整站视觉系统。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Documentation is public; ADS license limits use to Atlassian add-ons; @atlaskit packages are Apache-2.0",
+      "sourceUrl": "https://atlassian.design/license",
+      "evidence": "组件文档公开可浏览。ADS License Grant 为免费但用途受限。@atlaskit/button package.json 标 Apache-2.0。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@atlaskit/button",
+      "sourceUrl": "https://atlassian.design/components/button/examples",
+      "evidence": "Button 示例源码为 import Button from '@atlaskit/button/default/button'。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。custom：License 页把 ADS（文档、视觉资产、代码包等）限定为用于与 Atlassian 软件和云产品互通的插件与扩展，并禁止修改、反向工程与向第三方分发。npm @atlaskit/button 的 license 字段另为 Apache-2.0，覆盖该包源码，不覆盖整站视觉系统。",
+      "该条目登记了多个许可值（custom / Apache-2.0），目录之间可能不同，逐目录确认。"
+    ],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/atlassian-design.md",
+  "registryUrl": "/r/atlassian-design.json"
+}

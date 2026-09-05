@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 3,
+  "entryId": "semi-design",
+  "entityId": "entity-semi-design",
+  "attemptId": "swarm-curator-batch-h-semi-design-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://semi.design/",
+    "finalUrl": "https://semi.design/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Semi Design",
+    "descriptionZh": "抖音前端与 UED 团队维护的 Semi Design，提供 70+ React 组件、主题与 Figma UI Kit。npm 包 @douyinfe/semi-ui 采用 MIT，版权署 DouyinFE。",
+    "takeawayZh": "装 @douyinfe/semi-ui 再抄按钮",
+    "noteZh": "我们打开首页，中文标题连接设计师与开发者，GitHub 约 10k。英文 Getting Started 实际仍显示中文快速开始，安装 npm i @douyinfe/semi-ui，侧栏列出 Button 到 Table。Button 页路径 /en-US/basic/button，正文 import { Button, SplitButtonGroup } from '@douyinfe/semi-ui'。适合要中后台 React 组件的人。仓库 MIT。作业里的 /en-US/input/button 已改到 basic/button。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-semi-design",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Semi Design 定义为由抖音前端与 UED 团队维护、易于定制的现代化设计系统，并分出组件文档与 Figma UIKit。",
+        "evidenceUrl": "https://semi.design/"
+      },
+      {
+        "statement": "快速开始写提供 70+ React 组件与 Figma Variant UI Kit，安装 npm i @douyinfe/semi-ui；Button 页给出 import { Button, SplitButtonGroup } from '@douyinfe/semi-ui'。",
+        "evidenceUrl": "https://semi.design/en-US/start/getting-started"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-h",
+    "reviewerId": "swarm-reviewer-grok-k",
+    "confirmedAt": "2026-09-06T20:15:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "standard",
+      "design-file"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans",
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://semi.design/",
+      "finalUrl": "https://semi.design/",
+      "title": "Semi Design",
+      "selectionRationale": "先看首页。抖音团队和维护设计系统写在首屏。",
+      "shot": {
+        "src": "/shots/semi-design/v2-identity.png",
+        "sha256": "028c18246498cc24ae28cd6bf186ae3e3bcfad48b27276fba2aa2070b062b637",
+        "width": 1280,
+        "height": 900,
+        "bytes": 203429,
+        "alt": "Semi Design 首页标题连接设计师与开发者，按钮开始使用与 GitHub 10k，右侧后台界面演示"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://semi.design/en-US/start/getting-started",
+      "finalUrl": "https://semi.design/en-US/start/getting-started",
+      "title": "Quick Start - Semi Design",
+      "selectionRationale": "再翻快速开始。安装命令和左侧组件目录能看见范围。",
+      "shot": {
+        "src": "/shots/semi-design/v2-breadth.png",
+        "sha256": "9e4b7352e337bf761e78836de0cf3abdf6601219ec91f8761b6320d38ed4ff66",
+        "width": 1280,
+        "height": 900,
+        "bytes": 153936,
+        "alt": "Semi Design 快速开始：70+ 组件说明、注意事项与 npm i @douyinfe/semi-ui，左侧 Introduction 到 Overview 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://semi.design/en-US/basic/button",
+      "finalUrl": "https://semi.design/en-US/basic/button",
+      "title": "Button - Semi Design",
+      "selectionRationale": "最后开 Button。引入语句证明能装进 React 项目。",
+      "shot": {
+        "src": "/shots/semi-design/v2-proof.png",
+        "sha256": "a491b1565c3dea4f0455d4c42687f5690188085d66b14501b151511cfd206d8e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 119330,
+        "alt": "Semi Design 按钮页：标题按钮，代码演示如何引入 import { Button, SplitButtonGroup } from '@douyinfe/semi-ui'"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "DouyinFE",
+      "sourceUrl": "https://github.com/DouyinFE/semi-design/blob/main/LICENSE",
+      "evidence": "LICENSE 版权行 Copyright (c) 2021 DouyinFE。首页写由抖音前端与 UED 团队维护。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "DouyinFE / ByteDance",
+      "sourceUrl": "https://semi.design/",
+      "evidence": "首页写由抖音前端与 UED 团队维护。仓库位于 GitHub 组织 DouyinFE。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/DouyinFE/semi-design",
+      "sourceUrl": "https://semi.design/",
+      "evidence": "首页 GitHub 按钮链到 github.com/DouyinFE/semi-design。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/DouyinFE/semi-design/blob/main/LICENSE",
+      "evidence": "LICENSE 以 MIT License 开头，Copyright (c) 2021 DouyinFE。该许可覆盖 semi-design 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://semi.design/en-US/start/getting-started",
+      "evidence": "快速开始公开 npm i @douyinfe/semi-ui，文档与仓库可浏览，未见组件库付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@douyinfe/semi-ui",
+      "sourceUrl": "https://semi.design/en-US/start/getting-started",
+      "evidence": "快速开始安装命令为 npm i @douyinfe/semi-ui。React 19 需改用 @douyinfe/semi-ui-19。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-h",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-k",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-k"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-h 进站起草。英文路径仍渲染中文界面。proof 使用 /en-US/basic/button，因 /en-US/input/button 不是按钮页。 swarm-reviewer-grok-k 复核活页、截图 sha256 与许可后 APPROVED。"
+  }
+}
