@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-05T13:10:07.244Z",
+  "generatedAt": "2026-09-05T13:34:00.530Z",
   "counts": {
-    "approvedEntries": 12
+    "approvedEntries": 14
   },
   "items": [
     {
@@ -241,6 +241,124 @@
       "detailUrl": "/data/site/a11y-project.json",
       "designMdUrl": "/site/a11y-project.md",
       "registryUrl": "/r/a11y-project.json"
+    },
+    {
+      "entryId": "base-ui",
+      "name": "Base UI",
+      "domain": "base-ui.com",
+      "homepage": "https://base-ui.com/",
+      "descriptionZh": "Radix、Floating UI 与 Material UI 创作者推出的无样式 React 组件库，通过 npm 包 @base-ui/react 提供可组合的无障碍原语，不捆绑 CSS、不指定样式方案；仓库采用 MIT 许可，文档写明可免费商用。",
+      "takeawayZh": "装上无样式原语，皮自己画，无障碍它管",
+      "noteZh": "我们进去先看首页那句无样式、可访问，并写清来自 Radix 与 Material UI。组件目录从 Accordion 排到 Slider，侧栏接着 Handbook。我们点开 Dialog：上面演示能点，下面是源码和 Anatomy。适合要自己画皮、还要把无障碍做对的人；FAQ 写明 MIT 可商用，想开箱有视觉就去 shadcn。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "primitive",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "search",
+          "install",
+          "copy",
+          "preview",
+          "learn"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "typescript",
+          "base-ui"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "headless-accessible-primitives",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/mui/base-ui/blob/master/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-05T13:24:56.304Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/base-ui/v2-identity.png",
+        "alt": "Base UI 首页的无样式组件大标题、Documentation 入口和来自 Radix 的介绍段落",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [
+        {
+          "stageId": "overlay-layers",
+          "termId": "atlas-component-component-dialog",
+          "evidenceUrl": "https://base-ui.com/react/components/dialog",
+          "note": "Dialog 单项页本身就是对话框演示、源码和零件拆解，对应浮层台的 Dialog。",
+          "termEn": "Dialog",
+          "termZh": null
+        },
+        {
+          "stageId": "overlay-layers",
+          "termId": "atlas-component-component-tooltip",
+          "evidenceUrl": "https://base-ui.com/react/components",
+          "note": "组件目录列出 Tooltip，并链到独立内容页。",
+          "termEn": "Tooltip",
+          "termZh": null
+        },
+        {
+          "stageId": "form-anatomy",
+          "termId": "atlas-component-component-combobox",
+          "evidenceUrl": "https://base-ui.com/react/components",
+          "note": "同一目录列出 Combobox，对应表单解剖台的组合框。",
+          "termEn": "Combobox",
+          "termZh": null
+        },
+        {
+          "stageId": "form-anatomy",
+          "termId": "atlas-component-component-switch",
+          "evidenceUrl": "https://base-ui.com/react/components",
+          "note": "同一目录列出 Switch，对应表单解剖台的开关。",
+          "termEn": "Switch",
+          "termZh": null
+        }
+      ],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/base-ui.json",
+      "designMdUrl": "/site/base-ui.md",
+      "registryUrl": "/r/base-ui.json"
     },
     {
       "entryId": "ecomm-design",
@@ -906,6 +1024,97 @@
       "detailUrl": "/data/site/laws-of-ux.json",
       "designMdUrl": "/site/laws-of-ux.md",
       "registryUrl": "/r/laws-of-ux.json"
+    },
+    {
+      "entryId": "lucide",
+      "name": "Lucide",
+      "domain": "lucide.dev",
+      "homepage": "https://lucide.dev/",
+      "descriptionZh": "社区维护的开源线型图标库，可在官网按类别浏览、搜索并复制 SVG 或 JSX，同时提供 React、Vue、Svelte 等官方包；主体使用 ISC 许可，部分从 Feather 继承的图标另适用 MIT。",
+      "takeawayZh": "搜线型图标，复制 SVG 或直接装进代码",
+      "noteZh": "我们进首页，粉字大标题下面写着社区做的，搜索框就在按钮底下。真正该先点的是图标目录：左边能改颜色和线宽，右边一整面图标格。我们点开 house，大预览旁边就能复制 SVG 和 JSX，代码还能切到 React。许可页主体是 ISC，页脚也这么写；从 Feather 继承的那批另外标了 MIT。适合要一套统一线型、复制走或装包的人。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "icon",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "search",
+          "copy",
+          "install",
+          "preview"
+        ],
+        "media": [
+          "icon",
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "figma"
+        ],
+        "technologies": [
+          "react",
+          "vue",
+          "svelte",
+          "angular",
+          "javascript",
+          "typescript",
+          "svg",
+          "react-native"
+        ],
+        "workflowStages": [
+          "discovery",
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "ISC"
+        ],
+        "contentOrganization": [
+          "asset-library",
+          "searchable-directory"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "visual-assets",
+      "subcategory": "icons-symbols",
+      "license": "ISC",
+      "licenses": [
+        "ISC"
+      ],
+      "licenseSourceUrl": "https://lucide.dev/license",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-05T13:25:53.758Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/lucide/v2-identity.png",
+        "alt": "Lucide 首页深色底，粉字 Beautiful & consistent icons，右侧螺旋线标，下方三张特性卡",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/lucide.json",
+      "designMdUrl": "/site/lucide.md",
+      "registryUrl": "/r/lucide.json"
     },
     {
       "entryId": "magic-ui",

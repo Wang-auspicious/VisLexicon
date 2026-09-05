@@ -1,0 +1,233 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T13:34:00.530Z",
+  "entryId": "base-ui",
+  "entityId": "entity-base-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://base-ui.com/",
+    "finalUrl": "https://base-ui.com/",
+    "checkedAt": "2026-09-05T13:24:56.304Z"
+  },
+  "editorial": {
+    "name": "Base UI",
+    "descriptionZh": "Radix、Floating UI 与 Material UI 创作者推出的无样式 React 组件库，通过 npm 包 @base-ui/react 提供可组合的无障碍原语，不捆绑 CSS、不指定样式方案；仓库采用 MIT 许可，文档写明可免费商用。",
+    "takeawayZh": "装上无样式原语，皮自己画，无障碍它管",
+    "noteZh": "我们进去先看首页那句无样式、可访问，并写清来自 Radix 与 Material UI。组件目录从 Accordion 排到 Slider，侧栏接着 Handbook。我们点开 Dialog：上面演示能点，下面是源码和 Anatomy。适合要自己画皮、还要把无障碍做对的人；FAQ 写明 MIT 可商用，想开箱有视觉就去 shadcn。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 Base UI 定义为不捆绑 CSS 的无样式 React 组件库，用来搭建可访问的用户界面与组件库。",
+        "evidenceUrl": "https://base-ui.com/"
+      },
+      {
+        "statement": "组件目录列出 Accordion 到 Tooltip 的无样式原语；Dialog 单项页同时给出可点演示、源码和 Anatomy。",
+        "evidenceUrl": "https://base-ui.com/react/components/dialog"
+      }
+    ],
+    "confirmedAt": "2026-09-05T13:40:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "base-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://base-ui.com/",
+      "finalUrl": "https://base-ui.com/",
+      "title": "Unstyled UI components for accessible design systems · Base UI",
+      "selectionRationale": "先看首页。大标题说无样式、可访问，旁边就是文档入口。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/base-ui/v2-identity.png",
+        "sha256": "bd8c1013a2372a3a00b973038a5708e8a06937bbb2e834087b16cc387ed547ed",
+        "width": 1280,
+        "height": 900,
+        "bytes": 72162,
+        "alt": "Base UI 首页的无样式组件大标题、Documentation 入口和来自 Radix 的介绍段落"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://base-ui.com/react/components",
+      "finalUrl": "https://base-ui.com/react/components",
+      "title": "Components · Base UI",
+      "selectionRationale": "再翻组件目录。Accordion 到 Slider 列成清单，体量一眼能看完。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/base-ui/v2-breadth.png",
+        "sha256": "23b374ef15a2f57a539b8ed30e50e631573d4bdd162fe17dad1f1d53ae2f13ae",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116201,
+        "alt": "Base UI Components 页左侧 Handbook 导航与右侧 Accordion 到 Slider 的组件清单"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://base-ui.com/react/components/dialog",
+      "finalUrl": "https://base-ui.com/react/components/dialog",
+      "title": "Dialog · Base UI",
+      "selectionRationale": "最后开 Dialog。点开通知演示，源码和 Anatomy 就在下面。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/base-ui/v2-proof.png",
+        "sha256": "4c705fc2cbde96f922a4cbf2e0460f01602753312b2e5ec445effb50d960d052",
+        "width": 1280,
+        "height": 900,
+        "bytes": 99547,
+        "alt": "Base UI Dialog 页的 View notifications 演示、index.tsx 导入代码和 Anatomy 零件图"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "MUI Team",
+      "sourceUrl": "https://github.com/mui/base-ui/blob/master/packages/react/package.json",
+      "evidence": "packages/react/package.json 的 author 字段写 MUI Team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Material-UI SAS",
+      "sourceUrl": "https://github.com/mui/base-ui/blob/master/LICENSE",
+      "evidence": "仓库 LICENSE 版权行为 Copyright (c) 2019 Material-UI SAS；代码托管在 GitHub 组织 mui。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/mui/base-ui",
+      "sourceUrl": "https://base-ui.com/",
+      "evidence": "首页页顶与页脚均链到 https://github.com/mui/base-ui，仓库 About 回链 https://base-ui.com/。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/mui/base-ui/blob/master/LICENSE",
+      "evidence": "仓库 LICENSE 文件标题为 MIT License，版权 Material-UI SAS；覆盖 mui/base-ui 源码与 @base-ui/react 包，不覆盖 Community 页列出的第三方 styled libraries。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://base-ui.com/",
+      "evidence": "首页 FAQ「Is Base UI free for commercial use?」原文：Yes. Base UI is licensed under the MIT license, and is free for commercial use.",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@base-ui/react",
+      "sourceUrl": "https://base-ui.com/react/overview/quick-start",
+      "evidence": "Quick start 安装命令为 npm i @base-ui/react，并注明旧包名 @base-ui-components/react 已更名。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://base-ui.com/react/components/dialog",
+        "note": "Dialog 单项页本身就是对话框演示、源码和零件拆解，对应浮层台的 Dialog。",
+        "termEn": "Dialog",
+        "termZh": null
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-tooltip",
+        "evidenceUrl": "https://base-ui.com/react/components",
+        "note": "组件目录列出 Tooltip，并链到独立内容页。",
+        "termEn": "Tooltip",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://base-ui.com/react/components",
+        "note": "同一目录列出 Combobox，对应表单解剖台的组合框。",
+        "termEn": "Combobox",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-switch",
+        "evidenceUrl": "https://base-ui.com/react/components",
+        "note": "同一目录列出 Switch，对应表单解剖台的开关。",
+        "termEn": "Switch",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/base-ui",
+    "designMdUrl": "https://vislexicon.com/site/base-ui.md",
+    "checkedAt": "2026-09-05T13:24:56.304Z",
+    "license": "MIT"
+  }
+}
