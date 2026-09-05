@@ -102,6 +102,18 @@ const VOICE = {
     lede: { zh: '开源图标集。描边几何。', en: 'Open icon set. Stroke geometry.' },
     style: { zh: '浅色图标网格。等线描边。', en: 'Light icon grid. Even stroke.' },
   },
+  'phosphor-icons': {
+    lede: { zh: '六字重开源图标家族。', en: 'Open icon family in six weights.' },
+    style: { zh: '浅色图标网格。几何描边。字重可切换。', en: 'Light icon grid. Geometric stroke. Switchable weights.' },
+  },
+  'tabler-icons': {
+    lede: { zh: 'MIT 线型 SVG 图标。源码免费。', en: 'MIT outline SVG icons. Source is free.' },
+    style: { zh: '深色营销页。24 网格。统一线宽。', en: 'Dark marketing page. 24-grid. Uniform stroke.' },
+  },
+  'heroicons': {
+    lede: { zh: 'Tailwind Labs 出品的 MIT 图标。', en: 'MIT icons from Tailwind Labs.' },
+    style: { zh: '浅色图标网格。线型与填色并置。', en: 'Light icon grid. Outline beside solid.' },
+  },
   'laws-of-ux': {
     lede: { zh: '界面心理学定律卡片。', en: 'UX psychology law cards.' },
     style: { zh: '浅色编辑式卡片。衬线标题。', en: 'Light editorial cards. Serif titles.' },

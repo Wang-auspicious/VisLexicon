@@ -62,7 +62,7 @@ export const COLLECTIONS = [
     titleEn: 'Icons and type',
     blurbZh: '这些站交付的是可复制或安装的符号，用来给界面配上一套统一的线标。',
     blurbEn: 'Installable or copyable marks for a coherent symbol language.',
-    entryIds: ['lucide', 'remixicon', 'radix-icons'],
+    entryIds: ['lucide', 'remixicon', 'radix-icons', 'phosphor-icons', 'tabler-icons', 'heroicons'],
     createdAt: '2026-09-06',
   },
 ]

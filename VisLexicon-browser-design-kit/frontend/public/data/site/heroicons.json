@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T16:45:20.701Z",
+  "entryId": "heroicons",
+  "entityId": "entity-heroicons",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "heroicons.com",
+  "official": {
+    "inputUrl": "https://heroicons.com/",
+    "finalUrl": "https://heroicons.com/",
+    "checkedAt": "2026-09-05T14:47:03.000Z"
+  },
+  "editorial": {
+    "name": "Heroicons",
+    "descriptionZh": "Tailwind Labs 出品的 MIT 开源 SVG 图标集，官网可按 Outline、Solid、Mini、Micro 浏览并复制图标，同时提供官方 React 与 Vue 包。",
+    "takeawayZh": "搜图标，复制 SVG，或装进 React 和 Vue",
+    "noteZh": "我们进首页，大标题写着 Tailwind 团队做的手绘 SVG，旁边就标了 MIT，还写着有 React 和 Vue 包。顶栏能切 Outline、Solid、Mini、Micro，底下是一整面图标格。我们切到 Solid 看填色版，再打开 /home 当单图标入口。适合要和 Tailwind 对齐、复制走或装官方包的人。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "icons-symbols",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把线型与填色图标按 Outline / Solid / Mini / Micro 铺成可浏览网格，主要交付物是 SVG 图标素材。",
+        "evidenceUrl": "https://heroicons.com/"
+      },
+      {
+        "statement": "/solid 路径切换到填色版整面图标格，证明同一套图标有可切换的风格目录，而不是组件库。",
+        "evidenceUrl": "https://heroicons.com/solid"
+      }
+    ],
+    "confirmedAt": "2026-09-06T04:20:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "icon",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "copy",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "icon",
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "svg",
+      "react",
+      "vue",
+      "tailwind",
+      "javascript"
+    ],
+    "workflowStages": [
+      "discovery",
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "asset-library",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://heroicons.com/",
+      "finalUrl": "https://heroicons.com/",
+      "title": "Heroicons",
+      "selectionRationale": "先看首页：大标题、MIT、Outline 到 Micro 四个档。",
+      "shot": {
+        "src": "/shots/heroicons/v2-identity.png",
+        "sha256": "fcc334704c564b69cb536dc7745fb0eec0a61ebe3a6c4be1005e319dee3d44c6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 176180,
+        "alt": "Heroicons 首页大标题 Beautiful hand-crafted SVG icons，旁标 MIT 与 React & Vue libraries，下方 Outline 图标格"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/tailwindlabs/heroicons",
+      "finalUrl": "https://github.com/tailwindlabs/heroicons",
+      "title": "GitHub - tailwindlabs/heroicons: A set of free MIT-licensed high-quality SVG icons for UI development.",
+      "selectionRationale": "再翻 GitHub 仓库：react / vue / src 目录和 MIT license 并排。",
+      "shot": {
+        "src": "/shots/heroicons/v2-breadth.png",
+        "sha256": "76de3dad659fbf090e480e177adffff515f3971ae5bf12a0887dd2390eb914dd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121871,
+        "alt": "GitHub tailwindlabs/heroicons 仓库页，About 写 MIT-licensed SVG icons，侧栏 MIT license 与 Release v2.2.0"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/tailwindlabs/heroicons/tree/master/src/24/outline",
+      "finalUrl": "https://github.com/tailwindlabs/heroicons/tree/master/src/24/outline",
+      "title": "heroicons/src/24/outline at master · tailwindlabs/heroicons",
+      "selectionRationale": "最后开 src/24/outline，academic-cap.svg 等线型源文件排成清单。npm heroicons 被 Cloudflare 挡住。",
+      "shot": {
+        "src": "/shots/heroicons/v2-proof.png",
+        "sha256": "baea927d35f08adaeabc3133590d30e1265f0ca3ea92555ff00f322d6a54c6b9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 115375,
+        "alt": "GitHub heroicons/src/24/outline 目录，列出 academic-cap.svg 等 24×24 线型 SVG 源文件"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Steve Schoger",
+      "sourceUrl": "https://heroicons.com/",
+      "evidence": "首页分享链文案为 Check out Heroicons by @steveschoger and the @tailwindcss team，指向 https://twitter.com/intent/tweet?text=Check%20out%20Heroicons%20by%20%40steveschoger%20and%20the%20%40tailwindcss%20team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Tailwind Labs, Inc.",
+      "sourceUrl": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE",
+      "evidence": "仓库 LICENSE 原文为 MIT License，Copyright (c) Tailwind Labs, Inc.。首页 GitHub 按钮链到 https://github.com/tailwindlabs/heroicons。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/tailwindlabs/heroicons",
+      "sourceUrl": "https://heroicons.com/",
+      "evidence": "首页导航 GitHub 图标链到 https://github.com/tailwindlabs/heroicons。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE",
+      "evidence": "LICENSE 文件以 MIT License 开头，Copyright (c) Tailwind Labs, Inc.。首页首屏亦写 MIT license。许可覆盖该仓库源码与图标，不另设站内付费条款。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://heroicons.com/",
+      "evidence": "首页首屏写 MIT license 与 React & Vue libraries，图标网格可公开浏览；仓库 README 写 This library is MIT licensed。未见付费墙或订阅套餐。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/heroicons.md",
+  "registryUrl": "/r/heroicons.json"
+}
