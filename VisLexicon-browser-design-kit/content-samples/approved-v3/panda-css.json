@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 3,
+  "entryId": "panda-css",
+  "entityId": "entity-panda-css",
+  "attemptId": "swarm-curator-batch-g-panda-css-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://panda-css.com/",
+    "finalUrl": "https://panda-css.com/",
+    "checkedAt": "2026-09-06T16:45:00.000Z"
+  },
+  "editorial": {
+    "name": "Panda CSS",
+    "descriptionZh": "Segun Adebayo 等人维护的构建期 CSS-in-JS 引擎。用 css() 与 recipes 写类型安全样式，构建时生成原子 CSS。@pandacss/dev 为 MIT。Panda Mastery 是另售课程。",
+    "takeawayZh": "构建期吐出原子 CSS，写法还能类型检查",
+    "noteZh": "我们打开首页，大字 panda 旁边是喝奶茶的熊猫，安装写 npm i -D @pandacss/dev。入门页把 CLI、PostCSS 和框架指南列出来。Recipes 用 cva 示范按钮变体。适合要 CSS-in-JS 手感、又不想运行时插样式的人。仓库 MIT；顶栏 Mastery 是另售课。",
+    "pricing": "Core @pandacss/dev is MIT and free; Panda Mastery is a separate paid course"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-panda-css",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Panda 定义为 build time generated、type-safe 的 CSS-in-JS，并给出 npm i -D @pandacss/dev。",
+        "evidenceUrl": "https://panda-css.com/"
+      },
+      {
+        "statement": "Getting Started 写它是生成原子 CSS 的 CSS-in-JS 引擎；Recipes 页用 cva 给出按钮变体，证明交付物是样式引擎而不是现成组件包。",
+        "evidenceUrl": "https://panda-css.com/docs/overview/getting-started"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-g",
+    "reviewerId": "swarm-reviewer-grok-i",
+    "confirmedAt": "2026-09-06T19:20:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "typescript",
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://panda-css.com/",
+      "finalUrl": "https://panda-css.com/",
+      "title": "Panda CSS - Build modern websites using build time and type-safe CSS-in-JS",
+      "selectionRationale": "先看首页。大字 panda 和安装命令把对象说完。",
+      "shot": {
+        "src": "/shots/panda-css/v2-identity.png",
+        "sha256": "40f6f7d36b19ca7c0362feef8fa38057be4d91d9f795507c1e43d895b461c480",
+        "width": 1280,
+        "height": 900,
+        "bytes": 154640,
+        "alt": "Panda CSS 首页大标题 panda，按钮 Get Started，安装命令 npm i -D @pandacss/dev，右侧喝奶茶的熊猫插画"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://panda-css.com/docs/overview/getting-started",
+      "finalUrl": "https://panda-css.com/docs/overview/getting-started",
+      "title": "Get started with Panda | Panda CSS - Panda CSS",
+      "selectionRationale": "再翻入门页。左侧 Overview 到 Theming，能看见文档有多大。",
+      "shot": {
+        "src": "/shots/panda-css/v2-breadth.png",
+        "sha256": "4f07435336307e9b46c5b91970870b637daa3e3796934eeb8b4ddce9b0eb17f7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 119719,
+        "alt": "Panda CSS Getting Started：TLDR 写 CSS-in-JS 构建期生成原子 CSS，左侧 Overview、Installation、Concepts 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://panda-css.com/docs/concepts/recipes",
+      "finalUrl": "https://panda-css.com/docs/concepts/recipes",
+      "title": "Recipes | Panda CSS - Panda CSS",
+      "selectionRationale": "最后开 Recipes。cva 按钮变体就是它能拿走的写法。",
+      "shot": {
+        "src": "/shots/panda-css/v2-proof.png",
+        "sha256": "3a6d0853a6d55489674e678032c028f5cdee6113cb77f120990b5c1e42601ec0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 178534,
+        "alt": "Panda CSS Recipes 文档：base、variants、compoundVariants、defaultVariants 四条，以及 Atomic Recipe (or cva) 说明"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Segun Adebayo",
+      "sourceUrl": "https://github.com/chakra-ui/panda/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 版权行 Copyright (c) 2023 Segun Adebayo。Team 页把 Segun Adebayo 标为 Creator & Maintainer。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Chakra UI",
+      "sourceUrl": "https://github.com/chakra-ui/panda",
+      "evidence": "官方仓库位于 GitHub 组织 chakra-ui/panda。README 回链 panda-css.com。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/chakra-ui/panda",
+      "sourceUrl": "https://panda-css.com/",
+      "evidence": "首页导航 GitHub 图标链到 https://github.com/chakra-ui/panda。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/chakra-ui/panda/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 以 MIT License 开头，版权 Segun Adebayo。README 写 MIT License © 2023-Present Segun Adebayo。覆盖 panda 源码，不覆盖 Panda Mastery 课程。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core @pandacss/dev is MIT and free; Panda Mastery is a separate paid course",
+      "sourceUrl": "https://panda-css.com/",
+      "evidence": "首页公开 npm i -D @pandacss/dev。顶栏与黄条把 Panda Mastery / pandamastery.com 标为官方课程，与核心包分开。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@pandacss/dev",
+      "sourceUrl": "https://panda-css.com/",
+      "evidence": "首页安装命令为 npm i -D @pandacss/dev。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-g",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-i",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-i"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-g 进站起草。Site Entry 是 Panda CSS 文档站，不混 Chakra UI 组件库或 Park UI。swarm-reviewer-grok-i 复核活页、三张 PNG sha256 与 MIT 许可后 APPROVED。"
+  }
+}

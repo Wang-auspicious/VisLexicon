@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:23:30.542Z",
+  "entryId": "zagjs",
+  "entityId": "entity-zagjs",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "zagjs.com",
+  "official": {
+    "inputUrl": "https://zagjs.com/",
+    "finalUrl": "https://zagjs.com/",
+    "checkedAt": "2026-09-06T16:45:00.000Z"
+  },
+  "editorial": {
+    "name": "Zag.js",
+    "descriptionZh": "Chakra 团队的框架无关状态机库。把 accordion、dialog 写成 machine，经 React、Vue、Solid、Svelte 适配器接到 DOM。仓库 MIT。本条不收 Ark UI 或 Chakra UI。",
+    "takeawayZh": "状态机写一次，React Vue Svelte 都能接",
+    "noteZh": "我们打开首页，右边是 open、opening、closed 的状态图。Introduction 左侧从 Accordion 往下排。点开 Dialog：Open Dialog 在动，安装写 @zag-js/dialog。适合要自绘设计系统、只拿走行为的人。仓库 MIT；别和 Ark UI、Chakra UI 当成同一个入口。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Zag 定义为 framework-agnostic UI component patterns，用有限状态机驱动 accordion、menu、dialog，并列出 React、Vue、Solid.js、Svelte。",
+        "evidenceUrl": "https://zagjs.com/"
+      },
+      {
+        "statement": "React Dialog 页给出 Open Dialog 演示、npm install @zag-js/dialog @zag-js/react，以及 getTriggerProps 等无样式 API，证明交付物是无样式原语。",
+        "evidenceUrl": "https://zagjs.com/components/react/dialog"
+      }
+    ],
+    "confirmedAt": "2026-09-06T19:20:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue",
+      "svelte"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://zagjs.com/",
+      "finalUrl": "https://zagjs.com/",
+      "title": "Zag - Rapidly build UI components without sweating over the logic.",
+      "selectionRationale": "先看首页。状态图和 accordion、dialog 这句把对象说完。",
+      "shot": {
+        "src": "/shots/zagjs/v2-identity.png",
+        "sha256": "37fcb89b3a63b5f791d23d87765787b6dc4c99ffec200f15a75a3e69d36166a1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98527,
+        "alt": "Zag.js 首页大标题 UI components powered by Finite State Machines，右侧 open、opening、closed 状态图"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://zagjs.com/overview/introduction",
+      "finalUrl": "https://zagjs.com/overview/introduction",
+      "title": "Introduction - Zag",
+      "selectionRationale": "再翻 Introduction。左侧 COMPONENTS 能看见机器有多少。",
+      "shot": {
+        "src": "/shots/zagjs/v2-breadth.png",
+        "sha256": "b2b0d760d21fdf8af5305ecaee80279eb3b0e58716f4b8d038685e2dfb947b01",
+        "width": 1280,
+        "height": 900,
+        "bytes": 179140,
+        "alt": "Zag.js Introduction：正文写 framework agnostic toolkit，左侧 COMPONENTS 列出 Accordion、Checkbox 等"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://zagjs.com/components/react/dialog",
+      "finalUrl": "https://zagjs.com/components/react/dialog",
+      "title": "Dialog - Zag",
+      "selectionRationale": "最后开 Dialog。按钮能开，旁边是 preventScroll 开关。",
+      "shot": {
+        "src": "/shots/zagjs/v2-proof.png",
+        "sha256": "f656388ad29c069bd6237d1d0acc25f44964bf665ccfdad69958ce102b34521f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 125118,
+        "alt": "Zag.js React Dialog 页：Open Dialog 预览、preventScroll 等属性开关，以及 @zag-js/dialog 版本标记"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Segun Adebayo",
+      "sourceUrl": "https://zagjs.com/overview/introduction",
+      "evidence": "Introduction 页演讲卡片署名 Segun Adebayo，Designer, Developer, Creator of Chakra UI。首页亦介绍状态机方案由该团队提出。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Chakra Systems Inc.",
+      "sourceUrl": "https://github.com/chakra-ui/zag",
+      "evidence": "仓库 README License 节写 MIT © Chakra Systems Inc.。代码托管在 GitHub 组织 chakra-ui/zag。LICENSE 文件版权行写 Copyright (c) 2021 Chakra UI。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/chakra-ui/zag",
+      "sourceUrl": "https://zagjs.com/",
+      "evidence": "首页与文档导航 View Zag.js on Github 链到 https://github.com/chakra-ui/zag。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/chakra-ui/zag/blob/main/LICENSE",
+      "evidence": "LICENSE 以 MIT License 开头，版权 Copyright (c) 2021 Chakra UI。README 写 MIT © Chakra Systems Inc.。覆盖 zag 源码与 @zag-js/* 包，不覆盖 Chakra UI Pro 或 Ark Plus。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://zagjs.com/components/react/dialog",
+      "evidence": "Dialog 页公开 npm install @zag-js/dialog @zag-js/react。文档与机器可公开浏览，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@zag-js/dialog",
+      "sourceUrl": "https://zagjs.com/components/react/dialog",
+      "evidence": "React Dialog 安装命令为 npm install @zag-js/dialog @zag-js/react。机器按组件分包。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://zagjs.com/components/react/dialog",
+        "note": "该页就是 Dialog 文档，含 Open Dialog 演示和 modal 说明。",
+        "termEn": "Dialog",
+        "termZh": null
+      },
+      {
+        "stageId": "surface-transition",
+        "termId": "atlas-component-component-accordion",
+        "evidenceUrl": "https://zagjs.com/overview/introduction",
+        "note": "Introduction 左侧 COMPONENTS 第一项列出 Accordion。",
+        "termEn": "Accordion",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/zagjs.md",
+  "registryUrl": "/r/zagjs.json"
+}

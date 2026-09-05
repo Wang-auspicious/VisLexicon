@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-05T17:48:31.698Z",
+  "generatedAt": "2026-09-05T19:23:30.542Z",
   "counts": {
-    "approvedEntries": 54
+    "approvedEntries": 62
   },
   "items": [
     {
@@ -1212,6 +1212,107 @@
       "detailUrl": "/data/site/daisyui.json",
       "designMdUrl": "/site/daisyui.md",
       "registryUrl": "/r/daisyui.json"
+    },
+    {
+      "entryId": "diceui",
+      "name": "Dice UI",
+      "domain": "diceui.com",
+      "homepage": "https://diceui.com/",
+      "descriptionZh": "Sadman Sakib 维护的 shadcn/ui 扩展组件。提供 Action Bar、Combobox、Data Table 等控件，经 CLI 复制进项目。仓库 MIT。以 diceui.com 为准，www 证书无效。",
+      "takeawayZh": "往 shadcn 上再贴一层可组合控件",
+      "noteZh": "我们打开首页，标题写给 shadcn/ui 的可组合组件，页脚 Built by sadman。目录把 Action Bar 到 Tour 排成三列。点开 Action Bar：任务列表在上，安装写 shadcn add @diceui/action-bar。适合已经在用 shadcn、还缺复杂控件的人。仓库 MIT。www 证书失效，请走无 www。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "preview"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "cli"
+        ],
+        "technologies": [
+          "react",
+          "typescript",
+          "tailwind",
+          "radix-ui",
+          "shadcn-ui"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "general-ui-components",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/sadmann7/diceui/blob/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T16:45:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/diceui/v2-identity.png",
+        "alt": "Dice UI 首页大标题 Composable components for shadcn/ui，按钮 View Components 与 GitHub，页脚 Built by sadman",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [
+        {
+          "stageId": "form-anatomy",
+          "termId": "atlas-component-component-checkbox",
+          "evidenceUrl": "https://diceui.com/docs/components",
+          "note": "组件目录列出 Checkbox Group。",
+          "termEn": "Checkbox",
+          "termZh": null
+        },
+        {
+          "stageId": "overlay-layers",
+          "termId": "atlas-component-component-dialog",
+          "evidenceUrl": "https://diceui.com/docs/components",
+          "note": "组件目录列出 Responsive Dialog。",
+          "termEn": "Dialog",
+          "termZh": null
+        }
+      ],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/diceui.json",
+      "designMdUrl": "/site/diceui.md",
+      "registryUrl": "/r/diceui.json"
     },
     {
       "entryId": "ecomm-design",
@@ -2710,6 +2811,115 @@
       "registryUrl": "/r/inclusive-components.json"
     },
     {
+      "entryId": "kobalte",
+      "name": "Kobalte",
+      "domain": "kobalte.dev",
+      "homepage": "https://kobalte.dev/docs/core/overview/introduction",
+      "descriptionZh": "面向 SolidJS 的无样式无障碍原语。@kobalte/core 提供 Dialog、Button 等低层部件，需自备样式。仓库 MIT。本条只收 Kobalte 文档，不收 Solid 框架本身。",
+      "takeawayZh": "无样式 Solid 原语，自己画皮",
+      "noteZh": "官网会跳到 Introduction。我们先看到 Unstyled 一条，左侧从 Accordion 往下排。点开 Dialog：import 写 @kobalte/core/dialog，功能表写焦点陷阱和 Esc。适合在 Solid 里自绘设计系统的人。仓库 MIT。LICENSE 版权行与 README 署名不是同一人，作者按 README。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "primitive",
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript",
+          "typescript",
+          "css"
+        ],
+        "workflowStages": [
+          "design",
+          "build",
+          "test"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "headless-accessible-primitives",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/kobaltedev/kobalte/blob/main/LICENSE.md",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T16:45:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/kobalte/v2-identity.png",
+        "alt": "Kobalte Introduction：Accessible、Composable、Unstyled 三条，左侧 COMPONENTS 列出 Accordion、Alert Dialog、Button",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [
+        {
+          "stageId": "overlay-layers",
+          "termId": "atlas-component-component-dialog",
+          "evidenceUrl": "https://kobalte.dev/docs/core/components/dialog",
+          "note": "该页就是 Dialog 文档，含 import 与 WAI-ARIA Dialog 模式。",
+          "termEn": "Dialog",
+          "termZh": null
+        },
+        {
+          "stageId": "surface-transition",
+          "termId": "atlas-component-component-accordion",
+          "evidenceUrl": "https://kobalte.dev/docs/core/overview/introduction",
+          "note": "Introduction 左侧 COMPONENTS 列出 Accordion。",
+          "termEn": "Accordion",
+          "termZh": null
+        },
+        {
+          "stageId": "form-anatomy",
+          "termId": "atlas-component-component-checkbox",
+          "evidenceUrl": "https://kobalte.dev/docs/core/overview/introduction",
+          "note": "同一侧栏列出 Checkbox。",
+          "termEn": "Checkbox",
+          "termZh": null
+        }
+      ],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/kobalte.json",
+      "designMdUrl": "/site/kobalte.md",
+      "registryUrl": "/r/kobalte.json"
+    },
+    {
       "entryId": "laws-of-ux",
       "name": "Laws of UX",
       "domain": "lawsofux.com",
@@ -3610,6 +3820,89 @@
       "registryUrl": "/r/origin-ui.json"
     },
     {
+      "entryId": "panda-css",
+      "name": "Panda CSS",
+      "domain": "panda-css.com",
+      "homepage": "https://panda-css.com/",
+      "descriptionZh": "Segun Adebayo 等人维护的构建期 CSS-in-JS 引擎。用 css() 与 recipes 写类型安全样式，构建时生成原子 CSS。@pandacss/dev 为 MIT。Panda Mastery 是另售课程。",
+      "takeawayZh": "构建期吐出原子 CSS，写法还能类型检查",
+      "noteZh": "我们打开首页，大字 panda 旁边是喝奶茶的熊猫，安装写 npm i -D @pandacss/dev。入门页把 CLI、PostCSS 和框架指南列出来。Recipes 用 cva 示范按钮变体。适合要 CSS-in-JS 手感、又不想运行时插样式的人。仓库 MIT；顶栏 Mastery 是另售课。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn"
+        ],
+        "media": [
+          "ui",
+          "typography"
+        ],
+        "platforms": [
+          "web",
+          "cli"
+        ],
+        "technologies": [
+          "css",
+          "javascript",
+          "typescript",
+          "react"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "delivery-development-tools",
+      "subcategory": "build-deploy-dev-workflow",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/chakra-ui/panda/blob/main/LICENSE.md",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T16:45:00.000Z",
+      "pricing": "Core @pandacss/dev is MIT and free; Panda Mastery is a separate paid course",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/panda-css/v2-identity.png",
+        "alt": "Panda CSS 首页大标题 panda，按钮 Get Started，安装命令 npm i -D @pandacss/dev，右侧喝奶茶的熊猫插画",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/panda-css.json",
+      "designMdUrl": "/site/panda-css.md",
+      "registryUrl": "/r/panda-css.json"
+    },
+    {
       "entryId": "park-ui",
       "name": "Park UI",
       "domain": "park-ui.com",
@@ -4426,6 +4719,109 @@
       "registryUrl": "/r/react-aria.json"
     },
     {
+      "entryId": "react-bits",
+      "name": "React Bits",
+      "domain": "reactbits.dev",
+      "homepage": "https://www.reactbits.dev/",
+      "descriptionZh": "David Haz 维护的 React 动效组件文档站。免费库可预览、复制 Split Text 等文字与背景效果；仓库采用 MIT 加 Commons Clause，禁止把组件本身当商品转售。React Bits Pro 是另售产品。",
+      "takeawayZh": "把会动的文字和背景效果复制走",
+      "noteZh": "我们打开首页，右边 ColorBends 代码能改颜色。点开 Split Text：Hello, you 在拆字，下面有 Stagger Delay。适合要营销页动效、已经会 React 的人。许可不是纯 MIT，Commons Clause 限制转售组件；顶栏 Pro 另买。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [
+          "marketing"
+        ],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "copy",
+          "preview",
+          "purchase"
+        ],
+        "media": [
+          "ui",
+          "motion"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "typescript",
+          "css",
+          "tailwind"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "freemium",
+          "source-available"
+        ],
+        "licenses": [
+          "custom"
+        ],
+        "contentOrganization": [
+          "component-registry"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "visual-implementation",
+      "subcategory": "motion-interaction-code",
+      "license": "custom",
+      "licenses": [
+        "custom"
+      ],
+      "licenseSourceUrl": "https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md",
+      "access": [
+        "freemium",
+        "source-available"
+      ],
+      "checkedAt": "2026-09-06T16:45:00.000Z",
+      "pricing": "Free library with MIT + Commons Clause; React Bits Pro is a separate paid product",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/react-bits/v2-identity.png",
+        "alt": "React Bits 首页大标题 React components for creative developers，右侧 ColorBends 可编辑代码，顶栏 Get React Bits Pro",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [
+        {
+          "stageId": "text-reveal",
+          "termId": "atlas-motion-design-phenomenon-stagger",
+          "evidenceUrl": "https://www.reactbits.dev/text-animations/split-text",
+          "note": "Split Text 页 Customize 提供 Stagger Delay 控件。",
+          "termEn": "Stagger",
+          "termZh": null
+        },
+        {
+          "stageId": "text-reveal",
+          "termId": "atlas-motion-design-phenomenon-scroll-reveal",
+          "evidenceUrl": "https://www.reactbits.dev/text-animations/split-text",
+          "note": "该页左侧组件栏列出 Scroll Reveal。",
+          "termEn": "Scroll reveal",
+          "termZh": "洗色揭示 (Scrub Wipe)"
+        }
+      ],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/react-bits.json",
+      "designMdUrl": "/site/react-bits.md",
+      "registryUrl": "/r/react-bits.json"
+    },
+    {
       "entryId": "recharts",
       "name": "Recharts",
       "domain": "recharts.github.io",
@@ -4804,6 +5200,96 @@
       "registryUrl": "/r/shadcn-ui.json"
     },
     {
+      "entryId": "shadcnblocks",
+      "name": "Shadcnblocks",
+      "domain": "shadcnblocks.com",
+      "homepage": "https://www.shadcnblocks.com/",
+      "descriptionZh": "Robert Austin 团队的 shadcn/ui 区块目录。按 Hero、Dashboard 等分类预览，可用 CLI 安装。少量免费，其余一次性付费，禁止单独转售。与 shadcnstudio.com 不是同一入口。",
+      "takeawayZh": "整段营销区块用 CLI 装进 shadcn 项目",
+      "noteZh": "我们打开首页，标题写给 Shadcn UI 的区块集。Blocks 页把 Dashboard、Hero 排成格子。点开标了 Free 的 Hero 1：双栏首屏，工具条给 shadcn add @shadcnblocks/hero1。适合要整段落地页、已经在用 shadcn 的人。许可是自定条款，不是 MIT；别和 Studio Blocks 那条混。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [
+          "marketing",
+          "saas",
+          "admin",
+          "ecommerce"
+        ],
+        "deliverables": [
+          "block",
+          "component",
+          "template"
+        ],
+        "actions": [
+          "browse",
+          "copy",
+          "install",
+          "preview",
+          "purchase"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "cli",
+          "figma"
+        ],
+        "technologies": [
+          "react",
+          "tailwind",
+          "shadcn-ui",
+          "radix-ui"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "freemium"
+        ],
+        "licenses": [
+          "custom"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "marketplace"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "page-blocks-embeddable-controls",
+      "license": "custom",
+      "licenses": [
+        "custom"
+      ],
+      "licenseSourceUrl": "https://www.shadcnblocks.com/license",
+      "access": [
+        "freemium"
+      ],
+      "checkedAt": "2026-09-06T16:45:00.000Z",
+      "pricing": "Freemium; Pro $149 / Premium $299 / Elite $399 one-time on 2026-09-06; some blocks marked Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/shadcnblocks/v2-identity.png",
+        "alt": "Shadcnblocks 首页大标题 The ultimate block set for Shadcn UI & Tailwind，按钮 Browse Blocks，下方落地页预览卡片",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/shadcnblocks.json",
+      "designMdUrl": "/site/shadcnblocks.md",
+      "registryUrl": "/r/shadcnblocks.json"
+    },
+    {
       "entryId": "simple-icons",
       "name": "Simple Icons",
       "domain": "simpleicons.org",
@@ -4977,6 +5463,88 @@
       "registryUrl": "/r/tabler-icons.json"
     },
     {
+      "entryId": "tailwind-css",
+      "name": "Tailwind CSS",
+      "domain": "tailwindcss.com",
+      "homepage": "https://tailwindcss.com/",
+      "descriptionZh": "Tailwind Labs 的 utility-first CSS 框架。用 flex、pt-4 等 class 在 HTML 里组界面。npm 包 tailwindcss 为 MIT。Plus 是另售模板，不在本条范围内。",
+      "takeawayZh": "工具类写进 HTML，不用再开 CSS",
+      "noteZh": "我们打开首页，大标题写不用离开 HTML 就能搭现代网站，下面就是带 flex、pt-4 的示例卡片。安装页把 Vite、PostCSS、CLI 并排，左侧还列出工具类目录。点开 flex：class 对照 CSS，底下有粉条演示。适合要在标记里直接改外观的人。核心库 MIT 免费；顶栏 Plus 是另售模板，别和这份框架混成一回事。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn"
+        ],
+        "media": [
+          "ui",
+          "typography"
+        ],
+        "platforms": [
+          "web",
+          "cli"
+        ],
+        "technologies": [
+          "css",
+          "javascript",
+          "typescript"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "delivery-development-tools",
+      "subcategory": "build-deploy-dev-workflow",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/tailwindlabs/tailwindcss/blob/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T16:45:00.000Z",
+      "pricing": "Core tailwindcss package is MIT and free; Tailwind Plus is a separate paid catalog",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/tailwind-css/v2-identity.png",
+        "alt": "Tailwind CSS 首页大标题 Rapidly build modern websites without ever leaving your HTML，下方示例代码和封面卡片",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/tailwind-css.json",
+      "designMdUrl": "/site/tailwind-css.md",
+      "registryUrl": "/r/tailwind-css.json"
+    },
+    {
       "entryId": "toools-design",
       "name": "TOOOLS.design",
       "domain": "toools.design",
@@ -5045,6 +5613,120 @@
       "detailUrl": "/data/site/toools-design.json",
       "designMdUrl": "/site/toools-design.md",
       "registryUrl": "/r/toools-design.json"
+    },
+    {
+      "entryId": "tremor",
+      "name": "Tremor",
+      "domain": "tremor.so",
+      "homepage": "https://www.tremor.so/",
+      "descriptionZh": "Tremor Labs 的 React 图表与仪表盘组件，基于 Tailwind 与 Radix，源码复制进项目。核心仓库 Apache-2.0。Blocks 另售。页顶写 Tremor is joining Vercel。",
+      "takeawayZh": "复制图表组件，先把仪表盘搭起来",
+      "noteZh": "我们打开首页，下面已经在跑折线和柱状图。安装页左侧把 Area Chart 到 Tracker 列完。点开 Donut Chart：甜甜圈和饼图并排，能切 Code。适合要仪表盘、不想从空白画起的人。核心复制走 Apache-2.0；Blocks 另售。页顶写加入 Vercel，归属以后可能变。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [
+          "admin",
+          "finance"
+        ],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "copy",
+          "install",
+          "preview",
+          "learn"
+        ],
+        "media": [
+          "ui",
+          "data-visualization"
+        ],
+        "platforms": [
+          "web",
+          "figma"
+        ],
+        "technologies": [
+          "react",
+          "tailwind",
+          "typescript",
+          "radix-ui"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "freemium",
+          "open-source"
+        ],
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "visual-implementation",
+      "subcategory": "data-visualization-code",
+      "license": "Apache-2.0",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "licenseSourceUrl": "https://github.com/tremorlabs/tremor/blob/main/LICENSE",
+      "access": [
+        "freemium",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T16:45:00.000Z",
+      "pricing": "Core copy-and-paste components are Apache-2.0 and free; Tremor Blocks & Templates are a separate paid catalog",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/tremor/v2-identity.png",
+        "alt": "Tremor 首页大标题 React components to build charts and dashboards，下方 Portfolio Value 折线图与柱状图预览，顶栏写 joining Vercel",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [
+        {
+          "stageId": "form-anatomy",
+          "termId": "atlas-component-component-checkbox",
+          "evidenceUrl": "https://www.tremor.so/docs/getting-started/installation",
+          "note": "安装页左侧 Inputs 列出 Checkbox。",
+          "termEn": "Checkbox",
+          "termZh": null
+        },
+        {
+          "stageId": "form-anatomy",
+          "termId": "atlas-component-component-switch",
+          "evidenceUrl": "https://www.tremor.so/docs/getting-started/installation",
+          "note": "同一侧栏 Inputs 列出 Switch。",
+          "termEn": "Switch",
+          "termZh": null
+        },
+        {
+          "stageId": "overlay-layers",
+          "termId": "atlas-component-component-dialog",
+          "evidenceUrl": "https://www.tremor.so/docs/getting-started/installation",
+          "note": "安装页导航 UI 分组含 Dialog。",
+          "termEn": "Dialog",
+          "termZh": null
+        }
+      ],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/tremor.json",
+      "designMdUrl": "/site/tremor.md",
+      "registryUrl": "/r/tremor.json"
     },
     {
       "entryId": "uiverse",
@@ -5249,6 +5931,110 @@
       "detailUrl": "/data/site/web-dev.json",
       "designMdUrl": "/site/web-dev.md",
       "registryUrl": "/r/web-dev.json"
+    },
+    {
+      "entryId": "zagjs",
+      "name": "Zag.js",
+      "domain": "zagjs.com",
+      "homepage": "https://zagjs.com/",
+      "descriptionZh": "Chakra 团队的框架无关状态机库。把 accordion、dialog 写成 machine，经 React、Vue、Solid、Svelte 适配器接到 DOM。仓库 MIT。本条不收 Ark UI 或 Chakra UI。",
+      "takeawayZh": "状态机写一次，React Vue Svelte 都能接",
+      "noteZh": "我们打开首页，右边是 open、opening、closed 的状态图。Introduction 左侧从 Accordion 往下排。点开 Dialog：Open Dialog 在动，安装写 @zag-js/dialog。适合要自绘设计系统、只拿走行为的人。仓库 MIT；别和 Ark UI、Chakra UI 当成同一个入口。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "primitive",
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "preview",
+          "learn"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript",
+          "typescript",
+          "react",
+          "vue",
+          "svelte"
+        ],
+        "workflowStages": [
+          "design",
+          "build",
+          "test"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "headless-accessible-primitives",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/chakra-ui/zag/blob/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T16:45:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/zagjs/v2-identity.png",
+        "alt": "Zag.js 首页大标题 UI components powered by Finite State Machines，右侧 open、opening、closed 状态图",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [
+        {
+          "stageId": "overlay-layers",
+          "termId": "atlas-component-component-dialog",
+          "evidenceUrl": "https://zagjs.com/components/react/dialog",
+          "note": "该页就是 Dialog 文档，含 Open Dialog 演示和 modal 说明。",
+          "termEn": "Dialog",
+          "termZh": null
+        },
+        {
+          "stageId": "surface-transition",
+          "termId": "atlas-component-component-accordion",
+          "evidenceUrl": "https://zagjs.com/overview/introduction",
+          "note": "Introduction 左侧 COMPONENTS 第一项列出 Accordion。",
+          "termEn": "Accordion",
+          "termZh": null
+        }
+      ],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/zagjs.json",
+      "designMdUrl": "/site/zagjs.md",
+      "registryUrl": "/r/zagjs.json"
     }
   ]
 }

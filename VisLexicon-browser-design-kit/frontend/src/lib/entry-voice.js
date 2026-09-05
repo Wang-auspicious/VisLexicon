@@ -258,6 +258,38 @@ const VOICE = {
     lede: { zh: '设计资源外链目录。', en: 'Outbound directory of design resources.' },
     style: { zh: '浅色目录网格。卡片索引。中性。', en: 'Light directory grid. Card index. Neutral.' },
   },
+  'tailwind-css': {
+    lede: { zh: 'Utility-first CSS 框架。核心 MIT，Plus 另售。', en: 'Utility-first CSS framework. Core is MIT; Plus is paid.' },
+    style: { zh: '浅色营销文档。青绿强调。工具类标本。大号无衬线。', en: 'Light marketing docs. Cyan-green accent. Utility specimens. Oversized sans.' },
+  },
+  'panda-css': {
+    lede: { zh: '构建期 CSS-in-JS 引擎。', en: 'Build-time CSS-in-JS engine.' },
+    style: { zh: '浅色文档。品牌黄。代码与配方并置。', en: 'Light docs. Brand yellow. Code beside recipes.' },
+  },
+  zagjs: {
+    lede: { zh: '无样式、框架无关状态机。', en: 'Unstyled, framework-agnostic state machines.' },
+    style: { zh: '深色文档。状态图演示。中性。', en: 'Dark docs. State-diagram demos. Neutral.' },
+  },
+  kobalte: {
+    lede: { zh: 'SolidJS 无样式无障碍原语。', en: 'Unstyled accessible primitives for SolidJS.' },
+    style: { zh: '深色文档。代码块优先。低饱和。', en: 'Dark docs. Code-first. Low saturation.' },
+  },
+  diceui: {
+    lede: { zh: 'shadcn 扩展组件。经 CLI 复制。', en: 'shadcn extension components. Copied via CLI.' },
+    style: { zh: '浅色文档。中性灰。控件标本。', en: 'Light docs. Neutral gray. Control specimens.' },
+  },
+  tremor: {
+    lede: { zh: 'React 图表与仪表盘组件。核心 Apache-2.0。', en: 'React chart and dashboard components. Core is Apache-2.0.' },
+    style: { zh: '浅色文档。图表标本。克制圆角。', en: 'Light docs. Chart specimens. Restrained radii.' },
+  },
+  shadcnblocks: {
+    lede: { zh: 'shadcn 页面区块目录。许可禁止转售。', en: 'shadcn page-block catalog. License forbids resale.' },
+    style: { zh: '浅色区块画廊。卡片网格。产品营销。', en: 'Light block gallery. Card grid. Product marketing.' },
+  },
+  'react-bits': {
+    lede: { zh: 'React 动效组件。MIT 加 Commons Clause。', en: 'React motion components. MIT plus Commons Clause.' },
+    style: { zh: '深色全出血营销。高饱和点缀。动效即内容。', en: 'Dark full-bleed marketing. Saturated accents. Motion as content.' },
+  },
 }
 
 export function entryVoice(entryId) {

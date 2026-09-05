@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:23:30.542Z",
+  "entryId": "kobalte",
+  "entityId": "entity-kobalte",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "kobalte.dev",
+  "official": {
+    "inputUrl": "https://kobalte.dev/",
+    "finalUrl": "https://kobalte.dev/docs/core/overview/introduction",
+    "checkedAt": "2026-09-06T16:45:00.000Z"
+  },
+  "editorial": {
+    "name": "Kobalte",
+    "descriptionZh": "面向 SolidJS 的无样式无障碍原语。@kobalte/core 提供 Dialog、Button 等低层部件，需自备样式。仓库 MIT。本条只收 Kobalte 文档，不收 Solid 框架本身。",
+    "takeawayZh": "无样式 Solid 原语，自己画皮",
+    "noteZh": "官网会跳到 Introduction。我们先看到 Unstyled 一条，左侧从 Accordion 往下排。点开 Dialog：import 写 @kobalte/core/dialog，功能表写焦点陷阱和 Esc。适合在 Solid 里自绘设计系统的人。仓库 MIT。LICENSE 版权行与 README 署名不是同一人，作者按 README。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Introduction 把 Kobalte 定义为 SolidJS 的 low-level UI components and primitives，并写明 Unstyled、Accessible。",
+        "evidenceUrl": "https://kobalte.dev/docs/core/overview/introduction"
+      },
+      {
+        "statement": "Dialog 单项页给出 import { Dialog } from \"@kobalte/core/dialog\"、WAI-ARIA 模式和 Esc 关闭，证明交付物是无样式原语。",
+        "evidenceUrl": "https://kobalte.dev/docs/core/components/dialog"
+      }
+    ],
+    "confirmedAt": "2026-09-06T19:20:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://kobalte.dev/docs/core/overview/introduction",
+      "finalUrl": "https://kobalte.dev/docs/core/overview/introduction",
+      "title": "Introduction – Kobalte",
+      "selectionRationale": "先看 Introduction。Unstyled 三条把对象说完。",
+      "shot": {
+        "src": "/shots/kobalte/v2-identity.png",
+        "sha256": "2bb9c5c2688917251283d07b0caf83493bcc44a5ca4d63e971b92a64e63b6d6c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 138912,
+        "alt": "Kobalte Introduction：Accessible、Composable、Unstyled 三条，左侧 COMPONENTS 列出 Accordion、Alert Dialog、Button"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://kobalte.dev/docs/core/components/accordion",
+      "finalUrl": "https://kobalte.dev/docs/core/components/accordion",
+      "title": "Accordion – Kobalte",
+      "selectionRationale": "再看 Accordion。左侧 COMPONENTS 列出 Accordion 到 Color Swatch，证明文档站的原语范围。",
+      "shot": {
+        "src": "/shots/kobalte/v2-breadth.png",
+        "sha256": "54cc12ff766405c7c723e7b83301ddfcddcde18505e3b6e13e295b3051e011d4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139919,
+        "alt": "Kobalte Accordion 文档：左侧 COMPONENTS 列出 Accordion、Alert Dialog、Button，正文 Import 与 Features"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://kobalte.dev/docs/core/components/dialog",
+      "finalUrl": "https://kobalte.dev/docs/core/components/dialog",
+      "title": "Dialog – Kobalte",
+      "selectionRationale": "最后开 Dialog。import 和 Esc 关闭写在同一页。",
+      "shot": {
+        "src": "/shots/kobalte/v2-proof.png",
+        "sha256": "5934e2bcc977bfee03d431bf306ad040e215a138d328114dff7580405968c638",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135478,
+        "alt": "Kobalte Dialog 文档：import { Dialog } from @kobalte/core/dialog，Features 写焦点陷阱和 Esc 关闭"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Fabien Marie-Louise",
+      "sourceUrl": "https://github.com/kobaltedev/kobalte",
+      "evidence": "仓库 README 文末写 Created by Fabien Marie-Louise。LICENSE.md 版权行另写 Copyright (c) 2024 jer3m01 <jer3m01@jer3m01.com>，作者字段按 README 署名。",
+      "confidence": 0.8
+    },
+    {
+      "field": "organization",
+      "value": "kobaltedev",
+      "sourceUrl": "https://github.com/kobaltedev/kobalte",
+      "evidence": "官方仓库位于 GitHub 组织 kobaltedev。README 写 Officially Sponsored by SolidJS，那是赞助关系，不是仓库所有者。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/kobaltedev/kobalte",
+      "sourceUrl": "https://kobalte.dev/docs/core/overview/introduction",
+      "evidence": "Introduction 页 Edit this page on GitHub 链到 kobaltedev/kobalte。仓库 README 回链 kobalte.dev。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/kobaltedev/kobalte/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 以 MIT License 开头，版权 jer3m01。README 徽章与 License 节均写 MIT。覆盖该仓库源码与 @kobalte/core 等包。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://kobalte.dev/docs/core/components/dialog",
+      "evidence": "Dialog 页公开 import { Dialog } from \"@kobalte/core/dialog\"。文档与组件可公开浏览，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@kobalte/core",
+      "sourceUrl": "https://kobalte.dev/docs/core/components/dialog",
+      "evidence": "Dialog 安装/导入为 @kobalte/core/dialog。仓库 Releases 显示 @kobalte/core@0.13.13。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://kobalte.dev/docs/core/components/dialog",
+        "note": "该页就是 Dialog 文档，含 import 与 WAI-ARIA Dialog 模式。",
+        "termEn": "Dialog",
+        "termZh": null
+      },
+      {
+        "stageId": "surface-transition",
+        "termId": "atlas-component-component-accordion",
+        "evidenceUrl": "https://kobalte.dev/docs/core/overview/introduction",
+        "note": "Introduction 左侧 COMPONENTS 列出 Accordion。",
+        "termEn": "Accordion",
+        "termZh": null
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://kobalte.dev/docs/core/overview/introduction",
+        "note": "同一侧栏列出 Checkbox。",
+        "termEn": "Checkbox",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/kobalte.md",
+  "registryUrl": "/r/kobalte.json"
+}

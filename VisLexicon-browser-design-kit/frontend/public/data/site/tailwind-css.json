@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T19:23:30.542Z",
+  "entryId": "tailwind-css",
+  "entityId": "entity-tailwind-css",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "tailwindcss.com",
+  "official": {
+    "inputUrl": "https://tailwindcss.com/",
+    "finalUrl": "https://tailwindcss.com/",
+    "checkedAt": "2026-09-06T16:45:00.000Z"
+  },
+  "editorial": {
+    "name": "Tailwind CSS",
+    "descriptionZh": "Tailwind Labs 的 utility-first CSS 框架。用 flex、pt-4 等 class 在 HTML 里组界面。npm 包 tailwindcss 为 MIT。Plus 是另售模板，不在本条范围内。",
+    "takeawayZh": "工具类写进 HTML，不用再开 CSS",
+    "noteZh": "我们打开首页，大标题写不用离开 HTML 就能搭现代网站，下面就是带 flex、pt-4 的示例卡片。安装页把 Vite、PostCSS、CLI 并排，左侧还列出工具类目录。点开 flex：class 对照 CSS，底下有粉条演示。适合要在标记里直接改外观的人。核心库 MIT 免费；顶栏 Plus 是另售模板，别和这份框架混成一回事。",
+    "pricing": "Core tailwindcss package is MIT and free; Tailwind Plus is a separate paid catalog",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Tailwind CSS 定义为 utility-first CSS framework，用 flex、pt-4、text-center 这类 class 在标记里组设计。",
+        "evidenceUrl": "https://tailwindcss.com/"
+      },
+      {
+        "statement": "安装页给出 npm install tailwindcss @tailwindcss/vite，flex 单项页用 class 对照 CSS 证明交付物是可复制的工具类，不是现成组件包。",
+        "evidenceUrl": "https://tailwindcss.com/docs/installation/using-vite"
+      }
+    ],
+    "confirmedAt": "2026-09-06T19:20:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://tailwindcss.com/",
+      "finalUrl": "https://tailwindcss.com/",
+      "title": "Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.",
+      "selectionRationale": "先看首页。大标题和 flex、pt-4 示例把对象说完。",
+      "shot": {
+        "src": "/shots/tailwind-css/v2-identity.png",
+        "sha256": "008a4321a237003c870893bfd77fd14b2bdd30d8acb44f368fb1470df14bb303",
+        "width": 1280,
+        "height": 900,
+        "bytes": 145048,
+        "alt": "Tailwind CSS 首页大标题 Rapidly build modern websites without ever leaving your HTML，下方示例代码和封面卡片"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://tailwindcss.com/docs/installation/using-vite",
+      "finalUrl": "https://tailwindcss.com/docs/installation/using-vite",
+      "title": "Installing Tailwind CSS with Vite - Tailwind CSS",
+      "selectionRationale": "再翻安装页。Vite、PostCSS、CLI 并排，左侧是整份文档目录。",
+      "shot": {
+        "src": "/shots/tailwind-css/v2-breadth.png",
+        "sha256": "6d93c95d42cd2ea377671676968648ff8106aed62d06432df8230816271f215e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 150074,
+        "alt": "Tailwind CSS 安装页：Using Vite 步骤、npm install tailwindcss @tailwindcss/vite，左侧 Documentation 与工具类目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://tailwindcss.com/docs/flex",
+      "finalUrl": "https://tailwindcss.com/docs/flex",
+      "title": "flex - Flexbox & Grid - Tailwind CSS",
+      "selectionRationale": "最后开 flex。class 对照 CSS，底下粉条就是它能拿走的证明。",
+      "shot": {
+        "src": "/shots/tailwind-css/v2-proof.png",
+        "sha256": "1ebf7806758c524cdfba6430abfc64e9c951a18b20dc4554567e8e363eb76e03",
+        "width": 1280,
+        "height": 900,
+        "bytes": 155087,
+        "alt": "Tailwind CSS flex 文档：flex-auto、flex-none 等 class 对照 CSS，左侧 Flexbox & Grid 工具类列表"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Tailwind Labs",
+      "sourceUrl": "https://github.com/tailwindlabs/tailwindcss/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 版权行 Copyright (c) Tailwind Labs, Inc.。未见单独的个人作者字段。",
+      "confidence": 0.8
+    },
+    {
+      "field": "organization",
+      "value": "Tailwind Labs Inc.",
+      "sourceUrl": "https://tailwindcss.com/",
+      "evidence": "首页页脚写 Copyright © 2026 Tailwind Labs Inc.。代码托管在 GitHub 组织 tailwindlabs。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/tailwindlabs/tailwindcss",
+      "sourceUrl": "https://tailwindcss.com/",
+      "evidence": "首页导航 GitHub 图标链到 https://github.com/tailwindlabs/tailwindcss。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/tailwindlabs/tailwindcss/blob/main/LICENSE",
+      "evidence": "LICENSE 以 MIT License 开头，版权 Tailwind Labs, Inc.。覆盖 tailwindcss 源码，不覆盖 Tailwind Plus 模板、区块或商标。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core tailwindcss package is MIT and free; Tailwind Plus is a separate paid catalog",
+      "sourceUrl": "https://tailwindcss.com/",
+      "evidence": "安装页公开 npm install tailwindcss。首页 Ready-made Components 节把 Tailwind Plus 标为另售 UI components、Templates、UI Blocks。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "tailwindcss",
+      "sourceUrl": "https://tailwindcss.com/docs/installation/using-vite",
+      "evidence": "Using Vite 安装命令为 npm install tailwindcss @tailwindcss/vite。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/tailwind-css.md",
+  "registryUrl": "/r/tailwind-css.json"
+}

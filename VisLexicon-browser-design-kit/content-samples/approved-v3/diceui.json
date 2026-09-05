@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 3,
+  "entryId": "diceui",
+  "entityId": "entity-diceui",
+  "attemptId": "swarm-curator-batch-g-diceui-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://diceui.com/",
+    "finalUrl": "https://diceui.com/",
+    "checkedAt": "2026-09-06T16:45:00.000Z"
+  },
+  "editorial": {
+    "name": "Dice UI",
+    "descriptionZh": "Sadman Sakib 维护的 shadcn/ui 扩展组件。提供 Action Bar、Combobox、Data Table 等控件，经 CLI 复制进项目。仓库 MIT。以 diceui.com 为准，www 证书无效。",
+    "takeawayZh": "往 shadcn 上再贴一层可组合控件",
+    "noteZh": "我们打开首页，标题写给 shadcn/ui 的可组合组件，页脚 Built by sadman。目录把 Action Bar 到 Tour 排成三列。点开 Action Bar：任务列表在上，安装写 shadcn add @diceui/action-bar。适合已经在用 shadcn、还缺复杂控件的人。仓库 MIT。www 证书失效，请走无 www。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-diceui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Dice UI 定义为 Accessible shadcn/ui components，基于 React、TypeScript 与 Tailwind CSS，Copy-paste ready。",
+        "evidenceUrl": "https://diceui.com/"
+      },
+      {
+        "statement": "Components 目录列出 Action Bar 到 Tour；Action Bar 单项页给出任务列表预览和 npx shadcn@latest add \"@diceui/action-bar\"。",
+        "evidenceUrl": "https://diceui.com/docs/components"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-g",
+    "reviewerId": "swarm-reviewer-grok-i",
+    "confirmedAt": "2026-09-06T19:20:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-checkbox",
+        "evidenceUrl": "https://diceui.com/docs/components",
+        "note": "组件目录列出 Checkbox Group。"
+      },
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog",
+        "evidenceUrl": "https://diceui.com/docs/components",
+        "note": "组件目录列出 Responsive Dialog。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "tailwind",
+      "radix-ui",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://diceui.com/",
+      "finalUrl": "https://diceui.com/",
+      "title": "Dice UI",
+      "selectionRationale": "先看首页。shadcn/ui 这句和页脚 sadman 把对象说完。",
+      "shot": {
+        "src": "/shots/diceui/v2-identity.png",
+        "sha256": "5bf14554e9b0971f5c9b3cb6aef5784e48629b4b1e088f96b8813f689628d58e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 58949,
+        "alt": "Dice UI 首页大标题 Composable components for shadcn/ui，按钮 View Components 与 GitHub，页脚 Built by sadman"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://diceui.com/docs/components",
+      "finalUrl": "https://diceui.com/docs/components",
+      "title": "Components",
+      "selectionRationale": "再翻组件目录。三列名单能看见库有多大。",
+      "shot": {
+        "src": "/shots/diceui/v2-breadth.png",
+        "sha256": "c7b6e773bd733ca03058dcc32ade668674511c36cf3cc3921819ae61ac52bc23",
+        "width": 1280,
+        "height": 900,
+        "bytes": 95587,
+        "alt": "Dice UI Components 目录：Action Bar、Combobox、Data Table、Kanban 等三列组件名"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://diceui.com/docs/components/radix/action-bar",
+      "finalUrl": "https://diceui.com/docs/components/radix/action-bar",
+      "title": "Action Bar",
+      "selectionRationale": "最后开 Action Bar。任务列表在动，底下就是 CLI 安装。",
+      "shot": {
+        "src": "/shots/diceui/v2-proof.png",
+        "sha256": "4638dcd3023cd4f9e372b2d8c9a2b49857898a35d83727849a0072210555ca16",
+        "width": 1280,
+        "height": 900,
+        "bytes": 99649,
+        "alt": "Dice UI Action Bar 文档：任务复选列表预览、Radix UI / Base UI 切换，以及 Installation 命令区"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Sadman Sakib",
+      "sourceUrl": "https://diceui.com/",
+      "evidence": "首页页脚写 Built by sadman。仓库 LICENSE 版权行 Copyright (c) 2024 Sadman Sakib。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/sadmann7/diceui",
+      "evidence": "官方仓库位于个人账号 sadmann7/diceui，未见独立公司或 GitHub 组织作为发布主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/sadmann7/diceui",
+      "sourceUrl": "https://diceui.com/",
+      "evidence": "首页 GitHub 按钮链到 https://github.com/sadmann7/diceui。仓库 README 回链 diceui.com/docs。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/sadmann7/diceui/blob/main/LICENSE",
+      "evidence": "LICENSE 以 MIT License 开头，版权 Sadman Sakib。覆盖该仓库源码与可复制组件。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://diceui.com/docs/components/radix/action-bar",
+      "evidence": "Action Bar 页公开 npx shadcn@latest add \"@diceui/action-bar\"。文档与组件可公开浏览，未见付费墙。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-g",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-i",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-i"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-g 进站起草。www.diceui.com 返回 Cloudflare 526，改用 diceui.com。swarm-reviewer-grok-i 复核活页、三张 PNG sha256 与 MIT 许可后 APPROVED。"
+  }
+}
