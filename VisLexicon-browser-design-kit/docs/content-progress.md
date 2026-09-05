@@ -32,11 +32,18 @@
 
 样例未改人话：`shadcn-ui`、`uiverse`、`laws-of-ux`。
 
-## 第 6 节新站（进行中）
+## 第 6 节新站
 
-候选须查重后再进站。未 APPROVED 前只放 `content-samples/drafts/`。
+| entryId | 状态 | 备注 |
+|---|---|---|
+| base-ui | APPROVED | 无样式原语。入组「组件与区块」。commit `dd31307` |
+| lucide | APPROVED | 图标素材。成员不够 3，未开新组，只出现在全部站点。commit `3f2d41d` |
+| radix-ui | DRAFT | 首页是 Themes、目录/证明是 Primitives，entity 与 Site Entry 可能要拆。见 `drafts/radix-ui.questions.md`。未 APPROVED。 |
+
+`npm run data` 现为 14 条 APPROVED。
 
 ## 日志
 
 - 2026-09-05：拉 swarm（3 curator + 主控复核），开始第 8 节。
 - 2026-09-05：第 8 节清完，`npm run data` 12 条通过。
+- 2026-09-05：新站 swarm 进站；base-ui、lucide 复核后发布；radix-ui 因拆分问题留 drafts。
