@@ -1,0 +1,196 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T20:27:06.399Z",
+  "entryId": "coolors",
+  "entityId": "entity-coolors",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://coolors.co/",
+    "finalUrl": "https://coolors.co/",
+    "checkedAt": "2026-09-06T20:20:00.000Z"
+  },
+  "editorial": {
+    "name": "Coolors",
+    "descriptionZh": "Fabrizio 开发的色板生成 SaaS。免费档可生成并浏览色板，保存数量有限；Pro 现标每月 3 美元、年付 36 美元。核心工具闭源，未见开源许可。",
+    "takeawayZh": "生成或浏览色板，Pro 解锁保存与导出",
+    "noteZh": "首页标题 The super fast color palettes generator。Palettes 页为 Trending 目录，截图时叠 Fabrizio 介绍弹窗。生成器与对比检查页超时，证明页改用定价：Free 0 美元，Pro 每月 3 美元。",
+    "pricing": "Freemium; Pro $3/month or $36/year",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "brand-presentation-content-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Coolors 定义为 The super fast color palettes generator，主动作是生成色板，而不是下载现成素材包。",
+        "evidenceUrl": "https://coolors.co/"
+      },
+      {
+        "statement": "Palettes 页提供可搜索的色板目录；定价页区分 Free 与 Pro 订阅，证明这是带付费档的创作工具。",
+        "evidenceUrl": "https://coolors.co/pricing"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "generate",
+      "browse",
+      "search",
+      "export",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "figma",
+      "browser-extension"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "ideation",
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "brand-team"
+    ],
+    "access": [
+      "freemium",
+      "closed-source"
+    ],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [
+      "asset-library",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://coolors.co/",
+      "finalUrl": "https://coolors.co/",
+      "title": "Coolors - The super fast color palettes generator!",
+      "selectionRationale": "首页给出生成器定位与 Start the Generator、Explore 10M+ Palettes。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/coolors/v2-identity.png",
+        "sha256": "b387e338d11c82ecb96909cda860fb032cb2fe4907fe41489bbcf3e6958ca902",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117812,
+        "alt": "Coolors 首页大标题 The super fast color palettes generator，按钮 Start the Generator 与 Explore 10M+ Palettes，右侧色板拼贴"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://coolors.co/palettes",
+      "finalUrl": "https://coolors.co/palettes",
+      "title": "Color Palettes for Designers and Artists - Coolors",
+      "selectionRationale": "Palettes 目录列出 Trending 色板；截图时叠创作者介绍弹窗。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/coolors/v2-breadth.png",
+        "sha256": "8560c1fb96df08deaf55103cf5182ce4bd9b13f59fac411392cbb9cdc1a703fb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 201579,
+        "alt": "Coolors Palettes 页背景为 Trending 色板，前景 Howdy 弹窗写 I'm Fabrizio, creator and maintainer of Coolors"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://coolors.co/pricing",
+      "finalUrl": "https://coolors.co/pricing",
+      "title": "Pricing - Coolors",
+      "selectionRationale": "生成器页超时，改用定价页：Free 0 美元与 Pro 每月 3 美元并列。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/coolors/v2-proof.png",
+        "sha256": "e483fad953530ffca46ce0f8f8632bd8265a5557a878addb0658c1fad255cb50",
+        "width": 1280,
+        "height": 900,
+        "bytes": 210673,
+        "alt": "Coolors Go Pro 定价页，Free $0 与 Pro $3 per month $36 billed yearly，前景仍叠 Fabrizio Howdy 弹窗"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Fabrizio",
+      "sourceUrl": "https://coolors.co/pricing",
+      "evidence": "定价页与 Palettes 页弹窗写 I'm Fabrizio, creator and maintainer of Coolors，并链到 fabrizio.io 与 twitter.com/_fbrz。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Coolors s.r.l.",
+      "sourceUrl": "https://coolors.co/terms-of-service",
+      "evidence": "Terms of Service 写 Coolors is provided by: Coolors s.r.l.，地址 Viale G. Ribotta, 21 Roma - Italia。定价页另写 Support me as an indie developer。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "none",
+      "sourceUrl": "https://coolors.co/",
+      "evidence": "官网与定价页未提供公开源码仓库；产品为闭源 Web 应用，另有 iOS App、Figma 插件与 Chrome 扩展。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "proprietary",
+      "sourceUrl": "https://coolors.co/terms-of-service",
+      "evidence": "站点提供 Terms of Service，未见 MIT 或其他开源 SPDX。产品为闭源 SaaS，生成的色板可导出，源码本身不开放。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Freemium; Pro $3/month or $36/year",
+      "sourceUrl": "https://coolors.co/pricing",
+      "evidence": "定价页 Free 列为 $0；Pro 列为 $3 per month，$36 billed yearly。FAQ 写 Coolors is always free to use for everyone. You can choose to upgrade to Coolors Pro。免费档限制包括可见广告、最多保存 10 个色板、1 个 project 与 1 个 collection。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。proprietary：站点提供 Terms of Service，未见 MIT 或其他开源 SPDX。产品为闭源 SaaS，生成的色板可导出，源码本身不开放。",
+      "存在付费层：Freemium; Pro $3/month or $36/year。",
+      "源码不公开，站上展示的实现不可直接取用。"
+    ],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/coolors",
+    "designMdUrl": "https://vislexicon.com/site/coolors.md",
+    "checkedAt": "2026-09-06T20:20:00.000Z",
+    "license": "proprietary"
+  }
+}

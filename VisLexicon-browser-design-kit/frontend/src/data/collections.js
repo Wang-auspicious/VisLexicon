@@ -54,6 +54,8 @@ export const COLLECTIONS = [
       'carbon',
       'webawesome',
       'semi-design',
+      'embla-carousel',
+      'swiper',
     ],
     createdAt: '2026-09-05',
   },
@@ -72,7 +74,7 @@ export const COLLECTIONS = [
     titleEn: 'Motion and micro-interaction',
     blurbZh: '这些站交付的是会动的实现：时间轴、class 动画和弹簧，用来看效果怎么接到界面上。',
     blurbEn: 'Motion implementations: timelines, class animation, springs.',
-    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles', 'react-bits', 'animejs'],
+    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles', 'react-bits', 'animejs', 'lenis'],
     createdAt: '2026-09-06',
   },
   {
@@ -81,7 +83,7 @@ export const COLLECTIONS = [
     titleEn: 'Icons and type',
     blurbZh: '这些站交付的是可复制或安装的符号，用来给界面配上一套统一的线标。',
     blurbEn: 'Installable or copyable marks for a coherent symbol language.',
-    entryIds: ['lucide', 'remixicon', 'radix-icons', 'radix-colors', 'phosphor-icons', 'tabler-icons', 'heroicons', 'iconoir', 'simple-icons'],
+    entryIds: ['lucide', 'remixicon', 'radix-icons', 'radix-colors', 'phosphor-icons', 'tabler-icons', 'heroicons', 'iconoir', 'simple-icons', 'iconify', 'google-fonts', 'fontsource', 'open-color'],
     createdAt: '2026-09-06',
   },
   {

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T20:27:06.399Z",
+  "entryId": "fontsource",
+  "entityId": "entity-fontsource",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "fontsource.org",
+  "official": {
+    "inputUrl": "https://fontsource.org/",
+    "finalUrl": "https://fontsource.org/",
+    "checkedAt": "2026-09-06T20:10:00.000Z"
+  },
+  "editorial": {
+    "name": "Fontsource",
+    "descriptionZh": "Fontsource 将开源字体打成可自托管的 npm 包，目录现列约 2100 个字族。打包仓库 MIT；具体字体仍须遵守各包 README 中的 OFL 或 Apache 许可。",
+    "takeawayZh": "用 npm 自托管开源字体",
+    "noteZh": "首页目录写 2,100 font families，格子为 Inter、Roboto、Geist。Install 文档给出 npm install @fontsource/open-sans。Inter 字族页提供 Preview、Install、Download、CDN。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "fonts-typefaces",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 2100 个开源字族铺成可搜索目录，主要交付物是可自托管的字体包，而不是组件库。",
+        "evidenceUrl": "https://fontsource.org/"
+      },
+      {
+        "statement": "Install 文档给出 npm install @fontsource/open-sans 与 CSS font-family 用法；Inter 字族页提供 Preview、Install、Download、CDN。",
+        "evidenceUrl": "https://fontsource.org/docs/getting-started/install"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "font",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "download",
+      "preview"
+    ],
+    "media": [
+      "font",
+      "typography"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT",
+      "OFL-1.1"
+    ],
+    "contentOrganization": [
+      "asset-library",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://fontsource.org/",
+      "finalUrl": "https://fontsource.org/",
+      "title": "Fontsource — Self-host Open Source Fonts",
+      "selectionRationale": "首页目录给出 2100 个字族与 Inter、Roboto、Geist 预览卡。",
+      "shot": {
+        "src": "/shots/fontsource/v2-identity.png",
+        "sha256": "b48663163e47bf39777b6f396181f0f7e33ad1948f9a1e749011ac24a82935c2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98652,
+        "alt": "Fontsource 首页搜索栏与 2,100 font families，格子预览 Inter、Roboto、Geist 的 Sphinx of black quartz"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://fontsource.org/docs/getting-started/install",
+      "finalUrl": "https://fontsource.org/docs/getting-started/install",
+      "title": "Install | Documentation | Fontsource",
+      "selectionRationale": "Install 文档说明 npm 安装与按字重导入。",
+      "shot": {
+        "src": "/shots/fontsource/v2-breadth.png",
+        "sha256": "d5c557d4b9c7c1d1988d091e8830bb71af0e06346221201077c326c80e5e493a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 124751,
+        "alt": "Fontsource Install 文档，侧栏 Getting Started，正文 Prerequisites 与 Variable Fonts 提示"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://fontsource.org/fonts/inter",
+      "finalUrl": "https://fontsource.org/fonts/inter",
+      "title": "Inter | Fontsource",
+      "selectionRationale": "Inter 字族页给出字重预览与 Install、Download、CDN。",
+      "shot": {
+        "src": "/shots/fontsource/v2-proof.png",
+        "sha256": "1d78151957f8621e27d1b52401bf8cb8f8585454867b1c6571c2d74aaee4ead9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 72597,
+        "alt": "Fontsource Inter 页，标签 sans-serif google，Preview 下列 Thin 100 到 Regular 400，右侧 Variable Axes"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Ayuhito",
+      "sourceUrl": "https://github.com/fontsource/fontsource/blob/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2024 Ayuhito。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Fontsource",
+      "sourceUrl": "https://github.com/fontsource/fontsource",
+      "evidence": "仓库位于 GitHub 组织 fontsource 下。站点 schema.org 将 Organization name 标为 Fontsource。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/fontsource/fontsource",
+      "sourceUrl": "https://fontsource.org/docs/getting-started/install",
+      "evidence": "Install 页 Edit this page on GitHub 链到 github.com/fontsource/fontsource。仓库 README 回链 fontsource.org。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/fontsource/fontsource/blob/main/LICENSE",
+      "evidence": "打包仓库 LICENSE 为 MIT License，Copyright (c) 2024 Ayuhito。README Licensing 节写 Always make sure to read the license for each font you use. Most of the fonts in the collection use the SIL Open Font License, v1.1. Some fonts use the Apache 2 license。MIT 覆盖打包工具与网站源码，不覆盖各字体文件。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://fontsource.org/",
+      "evidence": "目录、文档与字族页均可公开使用；安装命令为 npm install @fontsource/...。未见付费墙。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。MIT：打包仓库 LICENSE 为 MIT License，Copyright (c) 2024 Ayuhito。README Licensing 节写 Always make sure to read the license for each font you use. Most of the fonts in the collection use the SIL Open Font License, v1.1. Some fonts use the Apache 2 license。MIT 覆盖打包工具与网站源码，不覆盖各字体文件。",
+      "该条目登记了多个许可值（MIT / OFL-1.1），目录之间可能不同，逐目录确认。"
+    ],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/fontsource.md",
+  "registryUrl": "/r/fontsource.json"
+}

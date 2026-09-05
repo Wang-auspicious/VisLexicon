@@ -346,6 +346,38 @@ const VOICE = {
     lede: { zh: 'Semi Design React 组件。MIT。', en: 'Semi Design React components. MIT.' },
     style: { zh: '浅色文档。品牌蓝。企业控件目录。', en: 'Light docs. Brand blue. Enterprise control catalog.' },
   },
+  iconify: {
+    lede: { zh: '多套图标的统一框架。框架 MIT，图标集许可各异。', en: 'Unified framework over many icon sets. Framework is MIT; sets vary.' },
+    style: { zh: '浅色图标网格。检索优先。中性。', en: 'Light icon grid. Search-first. Neutral.' },
+  },
+  'google-fonts': {
+    lede: { zh: 'Google 字体目录。字族许可各异。', en: 'Google Fonts catalog. Family licenses vary.' },
+    style: { zh: '浅色字体标本。大号字样。留白宽。', en: 'Light type specimens. Oversized samples. Generous whitespace.' },
+  },
+  fontsource: {
+    lede: { zh: '自托管字体 npm 包。包装 MIT。', en: 'Self-hosted font npm packages. Packaging is MIT.' },
+    style: { zh: '浅色文档。字体目录。中性。', en: 'Light docs. Font directory. Neutral.' },
+  },
+  coolors: {
+    lede: { zh: '配色生成器。专有 SaaS。', en: 'Palette generator. Proprietary SaaS.' },
+    style: { zh: '浅色工具台。大色块。高对比。', en: 'Light tool surface. Large swatches. High contrast.' },
+  },
+  'open-color': {
+    lede: { zh: '开源色阶。MIT。', en: 'Open color scales. MIT.' },
+    style: { zh: '浅色色阶标本。水平色带。系统化明度。', en: 'Light scale specimens. Horizontal swatches. Systematic lightness.' },
+  },
+  'embla-carousel': {
+    lede: { zh: '无样式轮播库。MIT。', en: 'Unstyled carousel library. MIT.' },
+    style: { zh: '浅色文档。现场轮播标本。中性。', en: 'Light docs. Live carousel specimens. Neutral.' },
+  },
+  swiper: {
+    lede: { zh: '轮播库。核心 MIT，Studio 付费。', en: 'Carousel library. Core is MIT; Studio is paid.' },
+    style: { zh: '浅色营销文档。大号演示。品牌蓝。', en: 'Light marketing docs. Large demos. Brand blue.' },
+  },
+  lenis: {
+    lede: { zh: '平滑滚动库。MIT。', en: 'Smooth-scroll library. MIT.' },
+    style: { zh: '深色全出血营销。大号无衬线。动效即内容。', en: 'Dark full-bleed marketing. Oversized sans. Motion as content.' },
+  },
 }
 
 export function entryVoice(entryId) {
