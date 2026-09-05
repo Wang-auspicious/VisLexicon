@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "entryId": "vuetify",
+  "entityId": "entity-vuetify",
+  "attemptId": "swarm-curator-batch-l-vuetify-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://vuetifyjs.com/",
+    "finalUrl": "https://vuetifyjs.com/",
+    "checkedAt": "2026-09-06T22:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Vuetify",
+    "descriptionZh": "Vuetify, LLC 维护的 Vue 设计系统，现为 4.2.0，可用 create-vuetify 安装。核心包 vuetify 为 MIT 免费；Vuetify One 订阅与商店模板另售。",
+    "takeawayZh": "pnpm create vuetify，再抄 v-btn",
+    "noteZh": "我们打开 vuetifyjs.com，标题 A complete design system that works，徽章 #1 Vue UI Library，版本 4.2.0。安装页 Get started with Vuetify 4，命令 pnpm create vuetify。Button 页 v-btn 预览 Default 到 Plain。适合要 Material 风格 Vue 组件的人。核心库 MIT 免费；顶栏 One 与商店是订阅和模板，别和这份组件库混成一回事。",
+    "pricing": "Core vuetify package is MIT and free; Vuetify One subscription and store templates are paid"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-vuetify",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Vuetify 定义为 A complete design system that works，并给出 yarn create vuetify 与 <v-btn> 示例。",
+        "evidenceUrl": "https://vuetifyjs.com/"
+      },
+      {
+        "statement": "安装页写 Get started with Vuetify, the world's most popular Vue.js framework；Buttons 页给出 v-btn 的 Default/Outlined/Tonal/Text/Plain 现场示例与 Figma Design 链。",
+        "evidenceUrl": "https://vuetifyjs.com/en/getting-started/installation/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-l",
+    "reviewerId": "swarm-reviewer-grok-n",
+    "confirmedAt": "2026-09-06T23:50:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library",
+      "starter"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "preview",
+      "learn",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "vue",
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source",
+      "freemium"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vuetifyjs.com/",
+      "finalUrl": "https://vuetifyjs.com/",
+      "title": "Vuetify — A Vue Component Framework",
+      "selectionRationale": "先看首页。complete design system 那句和 create vuetify 命令在首屏。",
+      "shot": {
+        "src": "/shots/vuetify/v2-identity.png",
+        "sha256": "4c1ab68fd3e02d8edf0ff7bba9c1931de529795130b0e26ce41e696403a6c91d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 157065,
+        "alt": "Vuetify 首页：A complete design system that works，徽章 #1 Vue UI Library，代码示例 v-btn，版本 4.2.0"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://vuetifyjs.com/en/getting-started/installation/",
+      "finalUrl": "https://vuetifyjs.com/en/getting-started/installation/",
+      "title": "Get started with Vuetify 4 — Vuetify",
+      "selectionRationale": "再翻安装页。create-vuetify 和 Vite/Nuxt 路径列出范围。",
+      "shot": {
+        "src": "/shots/vuetify/v2-breadth.png",
+        "sha256": "09310484b76b69849c9d3a2910c41670f522f4e4a5eb668a5b8f09dfa616eb21",
+        "width": 1280,
+        "height": 900,
+        "bytes": 201232,
+        "alt": "Vuetify 安装页：Get started with Vuetify 4，Installation 写 create-vuetify，下方 Using Vite 与 pnpm create vuetify"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://vuetifyjs.com/en/components/buttons/",
+      "finalUrl": "https://vuetifyjs.com/en/components/buttons/",
+      "title": "Buttons — Vuetify",
+      "selectionRationale": "最后开 Buttons。v-btn 预览 Default 到 Plain 都在。",
+      "shot": {
+        "src": "/shots/vuetify/v2-proof.png",
+        "sha256": "a7dc98dc8115ba16bda6be9736dc8fe033c59610f3891c27117da2e24dbaf06e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 190094,
+        "alt": "Vuetify Buttons 页：v-btn 说明，Usage 预览 Default Outlined Tonal Text Plain，并有 Figma Design 按钮"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Vuetify, LLC",
+      "sourceUrl": "https://github.com/vuetifyjs/vuetify/blob/master/packages/vuetify/LICENSE.md",
+      "evidence": "packages/vuetify/LICENSE.md 版权行为 Copyright (c) 2016-now Vuetify, LLC。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Vuetify, LLC",
+      "sourceUrl": "https://vuetifyjs.com/en/about/licensing/",
+      "evidence": "Licensing 页写 Vuetify is an open-source project that is free to use，并链 MIT。GitHub 组织 vuetifyjs。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/vuetifyjs/vuetify",
+      "sourceUrl": "https://vuetifyjs.com/en/components/buttons/",
+      "evidence": "Buttons 页 View on GitHub 链到 vuetifyjs/vuetify。安装页脚手架 create-vuetify 对应同一生态。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://vuetifyjs.com/en/about/licensing/",
+      "evidence": "Licensing 页写 It is licensed under the MIT License。packages/vuetify/LICENSE.md 为 The MIT License (MIT)，Copyright (c) 2016-now Vuetify, LLC。覆盖核心 vuetify 包，不覆盖 Vuetify One 订阅或商店模板。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Core vuetify package is MIT and free; Vuetify One subscription and store templates are paid",
+      "sourceUrl": "https://vuetifyjs.com/en/about/licensing/",
+      "evidence": "Licensing 页写 Vuetify is an open-source project that is free to use。顶栏 One 与商店另售订阅和模板，不是核心库售价。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "vuetify",
+      "sourceUrl": "https://vuetifyjs.com/en/getting-started/installation/",
+      "evidence": "安装页脚手架为 create vuetify；核心 npm 包名为 vuetify。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-l",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-n",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-n"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-l 进站起草。首页有 July 2026 更新条与 One/Login。核心库 MIT；One 订阅另计。 swarm-reviewer-grok-n 复核活页、截图 sha256 与许可后 APPROVED。"
+  }
+}

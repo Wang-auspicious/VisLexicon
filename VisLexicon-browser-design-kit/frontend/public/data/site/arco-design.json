@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T22:20:32.679Z",
+  "entryId": "arco-design",
+  "entityId": "entity-arco-design",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "arco.design",
+  "official": {
+    "inputUrl": "https://arco.design/",
+    "finalUrl": "https://arco.design/",
+    "checkedAt": "2026-09-06T22:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Arco Design",
+    "descriptionZh": "字节跳动出品的企业级设计系统 Arco Design，本条收录 React 实现 @arco-design/web-react。核心库 MIT 免费；ArcoPro 中后台模板是另一条产品线。",
+    "takeawayZh": "装 @arco-design/web-react 再抄按钮",
+    "noteZh": "我们打开 arco.design，标题智能设计体系，副标题字节跳动出品的企业级设计系统。本条只走 React：快速上手写 npm i @arco-design/web-react。Button 页有 Primary 到 Text 五种。适合要字节中后台 React 组件的人。仓库 MIT。ArcoPro 是中后台模板，别和这份组件库混成一回事。无头 Chrome 对 arco.design 超时，三页改用 Playwright 截到。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Arco Design 定义为字节跳动出品的企业级设计系统，并展示按钮变体与 from '@arco-design/web-react' 导入。",
+        "evidenceUrl": "https://arco.design/"
+      },
+      {
+        "statement": "React 快速上手给出 npm i @arco-design/web-react；Button 页提供 Primary、Secondary、Dashed、Outline、Text 现场示例。本条不收录 Vue 实现。",
+        "evidenceUrl": "https://arco.design/react/docs/start"
+      }
+    ],
+    "confirmedAt": "2026-09-06T23:50:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://arco.design/",
+      "finalUrl": "https://arco.design/",
+      "title": "Arco Design - 企业级产品的完整设计和开发解决方案",
+      "selectionRationale": "先看首页。字节跳动出品的企业级设计系统写在首屏。",
+      "shot": {
+        "src": "/shots/arco-design/v2-identity.png",
+        "sha256": "6a9027e8eb8febb512712afcff897fb58535b04104e7f6e6ac3bb04b579e6269",
+        "width": 1280,
+        "height": 900,
+        "bytes": 151185,
+        "alt": "Arco Design 首页：智能设计体系 连接轻盈体验，副标题字节跳动出品的企业级设计系统，右侧 Primary 按钮与导入示例"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://arco.design/react/docs/start",
+      "finalUrl": "https://arco.design/react/docs/start",
+      "title": "快速上手 | ArcoDesign",
+      "selectionRationale": "再翻 React 快速上手。安装命令和组件索引都在侧栏。本条不收录 Vue。",
+      "shot": {
+        "src": "/shots/arco-design/v2-breadth.png",
+        "sha256": "4d45a0abc9136ed15cad6944bd60bace4e95e23f2e04c990f008c1f31c0d2701",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78593,
+        "alt": "Arco React 快速上手：安装 npm i @arco-design/web-react，左上 React/Vue 切换停在 React，侧栏有组件索引 Overview"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://arco.design/react/components/button",
+      "finalUrl": "https://arco.design/react/components/button",
+      "title": "按钮 Button | ArcoDesign",
+      "selectionRationale": "最后开 Button。五种按钮变体排在基本用法里。",
+      "shot": {
+        "src": "/shots/arco-design/v2-proof.png",
+        "sha256": "91e346bce841c6a3472ec27d5b6835efb184ec99578ae5551e3db457853420dd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 64032,
+        "alt": "Arco React Button 页：基本用法展示 Primary Secondary Dashed Outline Text，下方图标按钮 + 与 Delete"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Bytedance, Inc. and its affiliates",
+      "sourceUrl": "https://github.com/arco-design/arco-design/blob/main/LICENSE",
+      "evidence": "arco-design/arco-design LICENSE 版权行为 Copyright (c) 2021 Bytedance, Inc. and its affiliates。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "ByteDance",
+      "sourceUrl": "https://arco.design/",
+      "evidence": "首页写字节跳动出品的企业级设计系统。GitHub 组织 arco-design 维护 React 实现仓。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/arco-design/arco-design",
+      "sourceUrl": "https://arco.design/react/docs/start",
+      "evidence": "快速上手安装 @arco-design/web-react，该包由 arco-design/arco-design 发布。本条分类的是 React 实现，不含 Vue 仓 arco-design-vue。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/arco-design/arco-design/blob/main/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2021 Bytedance, Inc. and its affiliates。覆盖 @arco-design/web-react 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://arco.design/react/docs/start",
+      "evidence": "快速上手给出 npm i @arco-design/web-react，文档公开可浏览。ArcoPro 是中后台模板/最佳实践，不是这份组件库的付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@arco-design/web-react",
+      "sourceUrl": "https://arco.design/react/docs/start",
+      "evidence": "快速上手安装节写 npm i @arco-design/web-react 与 yarn add @arco-design/web-react。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/arco-design.md",
+  "registryUrl": "/r/arco-design.json"
+}

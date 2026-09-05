@@ -406,6 +406,34 @@ const VOICE = {
     lede: { zh: 'Class Variance Authority。Apache-2.0。', en: 'Class Variance Authority. Apache-2.0.' },
     style: { zh: '浅色文档。等宽代码。留白宽。', en: 'Light docs. Monospace code. Generous whitespace.' },
   },
+  'elastic-ui': {
+    lede: { zh: 'Elastic UI。SSPL 或 Elastic-2.0，源码可见。', en: 'Elastic UI. SSPL or Elastic-2.0; source-available.' },
+    style: { zh: '浅色文档。高密度。克制圆角。', en: 'Light docs. High density. Restrained radii.' },
+  },
+  tdesign: {
+    lede: { zh: 'TDesign React 组件。MIT。本条只收 React。', en: 'TDesign React components. MIT. This entry is React only.' },
+    style: { zh: '浅色文档。品牌蓝。控件标本。', en: 'Light docs. Brand blue. Control specimens.' },
+  },
+  'arco-design': {
+    lede: { zh: 'Arco Design React 组件。MIT。本条只收 React。', en: 'Arco Design React components. MIT. This entry is React only.' },
+    style: { zh: '浅色文档。品牌蓝。企业控件目录。', en: 'Light docs. Brand blue. Enterprise control catalog.' },
+  },
+  'naive-ui': {
+    lede: { zh: 'Vue 3 组件库。MIT。', en: 'Vue 3 component library. MIT.' },
+    style: { zh: '浅色文档。中性。控件标本。', en: 'Light docs. Neutral. Control specimens.' },
+  },
+  'element-plus': {
+    lede: { zh: 'Vue 3 组件库。MIT。', en: 'Vue 3 component library. MIT.' },
+    style: { zh: '浅色文档。品牌蓝。控件目录。', en: 'Light docs. Brand blue. Control catalog.' },
+  },
+  vuetify: {
+    lede: { zh: 'Vuetify。核心 MIT，One 与模板另售。', en: 'Vuetify. Core is MIT; One and templates are paid.' },
+    style: { zh: '浅色文档。Material 密度。品牌蓝。', en: 'Light docs. Material density. Brand blue.' },
+  },
+  quasar: {
+    lede: { zh: 'Quasar Vue 组件。MIT。', en: 'Quasar Vue components. MIT.' },
+    style: { zh: '浅色文档。品牌蓝。控件标本。', en: 'Light docs. Brand blue. Control specimens.' },
+  },
 }
 
 export function entryVoice(entryId) {

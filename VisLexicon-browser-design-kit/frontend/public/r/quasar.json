@@ -1,0 +1,202 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T22:20:32.679Z",
+  "entryId": "quasar",
+  "entityId": "entity-quasar",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://quasar.dev/",
+    "finalUrl": "https://quasar.dev/",
+    "checkedAt": "2026-09-06T22:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Quasar",
+    "descriptionZh": "Razvan Stoenescu 维护的跨平台 Vue 框架 Quasar，现为 v2.30.0，含 CLI 与 QBtn 等组件。仓库 quasarframework/quasar 采用 MIT，可免费用于商业项目。",
+    "takeawayZh": "pnpm create quasar，再抄 QBtn",
+    "noteZh": "我们打开 quasar.dev，标题 BEYOND THE FRAMEWORK，副标题 enterprise-ready cross-platform VueJs framework，版本 v2.30.0。Quick Start 写 CLI 加 UI library，命令 pnpm create quasar@latest。Button 页介绍 QBtn，下面 Props 表。适合要一套代码打 SPA/PWA/移动端桌面端的人。仓库 MIT。页脚有 cookie 条。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Quasar 定义为 The enterprise-ready cross-platform VueJs framework，导航含 Docs 与 Components。",
+        "evidenceUrl": "https://quasar.dev/"
+      },
+      {
+        "statement": "Quick Start 写 via Quasar's CLI and also ready with Quasar's own powerful UI library；Button 页介绍 QBtn 并给出 Props、Slots、Events。",
+        "evidenceUrl": "https://quasar.dev/start/quick-start"
+      }
+    ],
+    "confirmedAt": "2026-09-06T23:50:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "starter"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android",
+      "desktop",
+      "cli"
+    ],
+    "technologies": [
+      "vue",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://quasar.dev/",
+      "finalUrl": "https://quasar.dev/",
+      "title": "Quasar Framework",
+      "selectionRationale": "先看首页。Beyond the Framework 和 VueJs framework 那句在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/quasar/v2-identity.png",
+        "sha256": "58a032e42d16728a5ce98fd90d6bbd054279e213ca95aa4c37f8abe27004d142",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84018,
+        "alt": "Quasar 首页：BEYOND THE FRAMEWORK，副标题 The enterprise-ready cross-platform VueJs framework，版本 v2.30.0，右下 cookie 条"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://quasar.dev/start/quick-start",
+      "finalUrl": "https://quasar.dev/start/quick-start",
+      "title": "Quick Start | Quasar Framework",
+      "selectionRationale": "再翻 Quick Start。CLI 加 UI library 和 create quasar 命令都在。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/quasar/v2-breadth.png",
+        "sha256": "8ea9252a1d3e0e0609ce59917fa8e538466f22982a68257f0bdf3d48fa43066e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 129905,
+        "alt": "Quasar Quick Start：说明 CLI 与 UI library，Prerequisites 与 Step 1 Create a Project，底部 pnpm create quasar，右下 cookie 条"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://quasar.dev/vue-components/button",
+      "finalUrl": "https://quasar.dev/vue-components/button",
+      "title": "Button | Quasar Framework",
+      "selectionRationale": "最后开 Button。QBtn API 与 Props 表证明能装进页面。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/quasar/v2-proof.png",
+        "sha256": "00aaa01a96396d6c2fb67f72a2a7eddb450e9253b75aec34d1e80270d994d9b3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 160960,
+        "alt": "Quasar Button 文档：介绍 QBtn，QBtn API 页签 Props 35，列出 loading 与 percentage，右下 cookie 条"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Razvan Stoenescu",
+      "sourceUrl": "https://github.com/quasarframework/quasar/blob/dev/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2015-present Razvan Stoenescu。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Quasar Framework",
+      "sourceUrl": "https://quasar.dev/",
+      "evidence": "站点 quasar.dev 品牌为 QUASAR。GitHub 组织 quasarframework 维护核心仓。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/quasarframework/quasar",
+      "sourceUrl": "https://github.com/quasarframework/quasar/blob/dev/LICENSE",
+      "evidence": "仓库 README 回链 quasar.dev。LICENSE 与文档均指向 quasarframework/quasar。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/quasarframework/quasar/blob/dev/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2015-present Razvan Stoenescu。覆盖 Quasar 框架与 UI 组件源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://quasar.dev/start/quick-start",
+      "evidence": "Quick Start 给出 pnpm create quasar@latest，文档公开可浏览，未见核心框架付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "quasar",
+      "sourceUrl": "https://quasar.dev/start/quick-start",
+      "evidence": "Quick Start 脚手架为 create quasar@latest；核心 npm 包名为 quasar。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/quasar",
+    "designMdUrl": "https://vislexicon.com/site/quasar.md",
+    "checkedAt": "2026-09-06T22:00:00.000Z",
+    "license": "MIT"
+  }
+}

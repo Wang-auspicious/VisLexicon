@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 3,
+  "entryId": "tdesign",
+  "entityId": "entity-tdesign",
+  "attemptId": "swarm-curator-batch-l-tdesign-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://tdesign.tencent.com/",
+    "finalUrl": "https://tdesign.tencent.com/",
+    "checkedAt": "2026-09-06T22:00:00.000Z"
+  },
+  "editorial": {
+    "name": "TDesign",
+    "descriptionZh": "腾讯 TDesign 企业级设计体系，本条收录 React 实现（概览现为 1.18.3）。npm 包 tdesign-react 与 Tencent/tdesign-react 仓库均标 MIT，不含 Vue 站点。",
+    "takeawayZh": "装 tdesign-react，先看按钮示例",
+    "noteZh": "我们打开 tdesign.tencent.com，标题为设计师与开发者打造工作美学。Vue 与小程序另有站点，本条只走 React：组件概览 1.18.3，基础栏 Button、Icon、Link。Button 页有确定按钮和 block/disabled 开关。适合要腾讯设计语言 React 组件的人。仓库 MIT。作业 React overview 曾超时，后用加长等待截到。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-tdesign",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 TDesign 定位为开源企业级设计体系；配套 React 仓 README 写 TDesign React is a UI component library for React 16.x and desktop application，并列出主题与 tree-shaking。",
+        "evidenceUrl": "https://tdesign.tencent.com/"
+      },
+      {
+        "statement": "React 组件概览按基础列出 Button、Icon、Link、Typography；Button 页提供可配置示例与 import 路径，证明有可安装组件套件。",
+        "evidenceUrl": "https://tdesign.tencent.com/react/overview"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-l",
+    "reviewerId": "swarm-reviewer-grok-n",
+    "confirmedAt": "2026-09-06T23:50:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://tdesign.tencent.com/",
+      "finalUrl": "https://tdesign.tencent.com/",
+      "title": "TDesign - 开源的企业级设计体系，为设计师 & 开发者，打造工作美学",
+      "selectionRationale": "先看总站首页。TDesign 与为设计师与开发者那句在首屏。",
+      "shot": {
+        "src": "/shots/tdesign/v2-identity.png",
+        "sha256": "8ba08d952fcb27e0d4bb02b5e6765aad1623ac6953504f60fe107c3194b80b0d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 661406,
+        "alt": "TDesign 首页：大标题 TDesign 为设计师 & 开发者，打造工作美学，导航含设计、基础组件、页面模板"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://tdesign.tencent.com/react/overview",
+      "finalUrl": "https://tdesign.tencent.com/react/overview",
+      "title": "组件概览 | TDesign",
+      "selectionRationale": "再翻 React 组件概览。基础栏 Button 到 Typography 排出范围。本条不收录 Vue。",
+      "shot": {
+        "src": "/shots/tdesign/v2-breadth.png",
+        "sha256": "09031e0f93ed9aed4d9a02b431831d4a21781399f0be446da5a9694e15d894ca",
+        "width": 1280,
+        "height": 900,
+        "bytes": 63959,
+        "alt": "TDesign React 组件概览：React for Web 1.18.3，基础卡片 Button 按钮、Icon 图标、Link 链接、Typography 排版"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://tdesign.tencent.com/react/components/button",
+      "finalUrl": "https://tdesign.tencent.com/react/components/button",
+      "title": "Button 按钮 | TDesign",
+      "selectionRationale": "最后开 React Button。现场确定按钮和配置开关都在。",
+      "shot": {
+        "src": "/shots/tdesign/v2-proof.png",
+        "sha256": "247b1fa4cceb72b58960f036cf8c10b060c78af1112da9434f6471ef486679f5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 96588,
+        "alt": "TDesign React Button 页：标题 Button 按钮，示例区蓝色确定按钮，右侧 block disabled loading 开关"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "TDesign",
+      "sourceUrl": "https://github.com/Tencent/tdesign-react/blob/develop/LICENSE",
+      "evidence": "Tencent/tdesign-react LICENSE 版权行为 Copyright (c) 2021-present TDesign。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Tencent",
+      "sourceUrl": "https://tdesign.tencent.com/",
+      "evidence": "站点域名为 tdesign.tencent.com，GitHub 组织 Tencent 维护 tdesign-react。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/Tencent/tdesign-react",
+      "sourceUrl": "https://github.com/Tencent/tdesign-react/blob/develop/README.md",
+      "evidence": "README 徽章与 npm 包均指向 tdesign-react，并回链 https://tdesign.tencent.com/。本条分类的是 TDesign 的 React 实现，不含 tdesign-vue-next。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/Tencent/tdesign-react/blob/develop/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2021-present TDesign。README 写 The MIT License。覆盖 tdesign-react 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/Tencent/tdesign-react/blob/develop/README.md",
+      "evidence": "README 给出 npm i tdesign-react，文档公开可浏览，未见组件库付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "tdesign-react",
+      "sourceUrl": "https://github.com/Tencent/tdesign-react/blob/develop/README.md",
+      "evidence": "README Installation 写 npm i tdesign-react，Usage 示例 import { Button } from 'tdesign-react'。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-l",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-n",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-n"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-l 进站起草。TDesign 另有 Vue / 小程序站，本条只收录 React 实现，不把多框架合成一条混合实体。 swarm-reviewer-grok-n 复核活页、截图 sha256 与许可后 APPROVED。"
+  }
+}

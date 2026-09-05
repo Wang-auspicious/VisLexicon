@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 3,
+  "entryId": "naive-ui",
+  "entityId": "entity-naive-ui",
+  "attemptId": "swarm-curator-batch-l-naive-ui-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://www.naiveui.com/",
+    "finalUrl": "https://www.naiveui.com/",
+    "checkedAt": "2026-09-06T22:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Naive UI",
+    "descriptionZh": "TuSimple 开源的 Vue 3 组件库 Naive UI，现为 2.45.3，安装命令 npm i naive-ui。仓库 LICENSE 标 MIT，文档写明仅支持 Vue 3。",
+    "takeawayZh": "装 naive-ui，先看四种按钮层级",
+    "noteZh": "我们打开 naiveui.com，中文首页写一个 Vue 3 组件库，版本 2.45.3。安装页英文：Please note that naive-ui only supports Vue3，下面 npm i naive-ui。Button 页 Basic 到 Quaternary 现场色块都在。适合要 Vue 3 主题可调组件的人。仓库 MIT。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-naive-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "中文首页把 Naive UI 定义为一个 Vue 3 组件库，并写比较完整、主题可调、使用 TypeScript。",
+        "evidenceUrl": "https://www.naiveui.com/"
+      },
+      {
+        "statement": "Installation 页给出 npm i naive-ui，并声明 only supports Vue3；Button 页提供 Basic 到 Quaternary 可复制演示。",
+        "evidenceUrl": "https://www.naiveui.com/en-US/os-theme/docs/installation"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-l",
+    "reviewerId": "swarm-reviewer-grok-n",
+    "confirmedAt": "2026-09-06T23:50:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans",
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.naiveui.com/",
+      "finalUrl": "https://www.naiveui.com/",
+      "title": "Naive UI",
+      "selectionRationale": "先看首页。Vue 3 组件库那句和 2.45.3 写在首屏。",
+      "shot": {
+        "src": "/shots/naive-ui/v2-identity.png",
+        "sha256": "e0f04045d082129aec3ff1ee98527e4148fb958308d9b45d35becc55acebc518",
+        "width": 1280,
+        "height": 900,
+        "bytes": 53205,
+        "alt": "Naive UI 中文首页：标题 Naive UI，副标题一个 Vue 3 组件库，版本 2.45.3，按钮换个主题与开始使用"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.naiveui.com/en-US/os-theme/docs/installation",
+      "finalUrl": "https://www.naiveui.com/en-US/os-theme/docs/installation",
+      "title": "Installation | Naive UI",
+      "selectionRationale": "再翻安装页。只支持 Vue3 和 npm i naive-ui 写在上面。",
+      "shot": {
+        "src": "/shots/naive-ui/v2-breadth.png",
+        "sha256": "f651f56c0224d0ae3fc9577b7c4144f94a7b837dcadc5d5b8278d094f13ce5b6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 96090,
+        "alt": "Naive UI Installation 页：注明 only supports Vue3，下面 npm i naive-ui 与 npm i vfonts"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.naiveui.com/en-US/os-theme/components/button",
+      "finalUrl": "https://www.naiveui.com/en-US/os-theme/components/button",
+      "title": "Button | Naive UI",
+      "selectionRationale": "最后开 Button。Basic 到 Quaternary 现场按钮都在。",
+      "shot": {
+        "src": "/shots/naive-ui/v2-proof.png",
+        "sha256": "e738f164a6735c4cb1939be5572cf65272271a84090ef3c9f4358ab8685aa76e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 149768,
+        "alt": "Naive UI Button 文档：Demos 区 Basic、Secondary、Tertiary、Quaternary 按钮色板，左侧 Common Components 目录"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "TuSimple",
+      "sourceUrl": "https://github.com/TuSimple/naive-ui/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 版权行为 Copyright (c) 2021 TuSimple。文档站 naiveui.com 与 GitHub 组织 TuSimple 对应。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "TuSimple",
+      "sourceUrl": "https://github.com/TuSimple/naive-ui/blob/main/LICENSE",
+      "evidence": "GitHub 仓库 TuSimple/naive-ui，LICENSE 署 TuSimple。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/TuSimple/naive-ui",
+      "sourceUrl": "https://www.naiveui.com/",
+      "evidence": "首页 GitHub 链到该仓库。安装页与文档均使用 npm 包 naive-ui。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/TuSimple/naive-ui/blob/main/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2021 TuSimple。覆盖 naive-ui 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.naiveui.com/en-US/os-theme/docs/installation",
+      "evidence": "Installation 页给出 npm i naive-ui，文档公开可浏览，未见组件库付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "naive-ui",
+      "sourceUrl": "https://www.naiveui.com/en-US/os-theme/docs/installation",
+      "evidence": "Installation 页 npm 节写 npm i naive-ui。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-l",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-n",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-n"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-l 进站起草。首页实际渲染中文。 swarm-reviewer-grok-n 复核活页、截图 sha256 与许可后 APPROVED。"
+  }
+}

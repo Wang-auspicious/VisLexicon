@@ -1,0 +1,204 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T22:20:32.679Z",
+  "entryId": "elastic-ui",
+  "entityId": "entity-elastic-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://eui.elastic.co/",
+    "finalUrl": "https://eui.elastic.co/",
+    "checkedAt": "2026-09-06T22:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Elastic UI",
+    "descriptionZh": "Elasticsearch B.V. 维护的 Elastic UI React 组件框架，现为 v120.0.0，以 yarn add @elastic/eui 安装。默认双许可 SSPL-1.0 或 Elastic-2.0，不是 MIT。",
+    "takeawayZh": "用 yarn 装 @elastic/eui，先看 EuiButton",
+    "noteZh": "我们打开 eui.elastic.co，标题 Meet the EUI framework，导航 Getting started 与 Components，版本 v120.0.0。作业里的 #/getting-started 与 #/navigation/button 已失效，范围改截 Setup：yarn add @elastic/eui，并写 npm is not supported。Button 页有 EuiButton 现场预览和 Show source。适合要 Elastic 产品界面组件的人。默认双许可 SSPL-1.0 或 Elastic-2.0，源码可见但不是 OSI 开源。",
+    "pricing": "Free; source-available under SSPL-1.0 or Elastic-2.0",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 EUI 定义为可组合、无障碍、带文档的 UI framework，导航含 Getting started、Components、Utilities、Patterns、Content 与 Data visualisation。",
+        "evidenceUrl": "https://eui.elastic.co/"
+      },
+      {
+        "statement": "Setup 页给出 yarn add @elastic/eui 与 EuiProvider 包装；Button 页提供 EuiButton 现场预览、类型说明和 Show source。",
+        "evidenceUrl": "https://eui.elastic.co/docs/getting-started/setup/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T23:50:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "source-available"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://eui.elastic.co/",
+      "finalUrl": "https://eui.elastic.co/",
+      "title": "Elastic UI Framework",
+      "selectionRationale": "先看首页。Meet the EUI framework，旁边 Get started，版本 v120.0.0。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/elastic-ui/v2-identity.png",
+        "sha256": "3d3f2f2237c5e5fccbccc846e9f6278d76967ab81af07230b3200ae96b671066",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106558,
+        "alt": "EUI 首页：标题 Meet the EUI framework, shared to build your ideas，按钮 Get started，导航 Getting started Components"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://eui.elastic.co/docs/getting-started/setup/",
+      "finalUrl": "https://eui.elastic.co/docs/getting-started/setup/",
+      "title": "Setup | Elastic UI Framework",
+      "selectionRationale": "哈希路由已失效，改看 Setup。yarn add 命令和 React 支持表都在。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/elastic-ui/v2-breadth.png",
+        "sha256": "4c230b65d45377d95b06dd46a3454293055228a1901ca060f7cf525885546380",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144317,
+        "alt": "EUI Setup 页：Installation 写 yarn add @elastic/eui，并注明 npm is not supported，下方 Supported environments 表"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://eui.elastic.co/docs/components/navigation/buttons/button",
+      "finalUrl": "https://eui.elastic.co/docs/components/navigation/buttons/button",
+      "title": "Button | Elastic UI Framework",
+      "selectionRationale": "最后开 Button。EuiButton 预览和 Show source 写在同一页。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/elastic-ui/v2-proof.png",
+        "sha256": "1c3bbef326164c19e1db26df993475e3ad49a74489ffaccd9ebb54a93add8e9b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 168127,
+        "alt": "EUI Button 文档：EuiButton 说明、Color primary 与 Fill 开关，中间 Button 预览和 Show source"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Elasticsearch B.V.",
+      "sourceUrl": "https://github.com/elastic/eui/blob/main/packages/eui/NOTICE.txt",
+      "evidence": "packages/eui/NOTICE.txt 写 EUI Copyright 2012-2024 Elasticsearch B.V.。仓库由 GitHub 组织 elastic 维护。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Elastic",
+      "sourceUrl": "https://eui.elastic.co/",
+      "evidence": "文档托管在 eui.elastic.co，品牌为 Elastic UI。配套实现仓 elastic/eui。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/elastic/eui",
+      "sourceUrl": "https://eui.elastic.co/docs/getting-started/setup/",
+      "evidence": "Setup 页 Contributing 与 consume EUI 均指向 github.com/elastic/eui。npm 包为 @elastic/eui。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "SSPL-1.0 OR Elastic-2.0",
+      "sourceUrl": "https://github.com/elastic/eui/blob/main/LICENSE.txt",
+      "evidence": "LICENSE.txt 写默认 dual license under the Server Side Public License, v 1 and the Elastic License 2.0，除非文件头另标 Apache-2.0 compatible 或仅 Elastic-2.0。该组合不在 OSI 开源之列，故 facets.licenses 记 custom，access 记 source-available。覆盖 elastic/eui 默认源码，不把个别 Apache 头文件当成全仓许可。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free; source-available under SSPL-1.0 or Elastic-2.0",
+      "sourceUrl": "https://eui.elastic.co/docs/getting-started/setup/",
+      "evidence": "文档与 yarn add @elastic/eui 公开可访问，未见独立的 EUI 组件订阅页。使用受 SSPL / Elastic License 2.0 约束，不是付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@elastic/eui",
+      "sourceUrl": "https://eui.elastic.co/docs/getting-started/setup/",
+      "evidence": "Setup 页 Installation 写 yarn add @elastic/eui，并注明 npm is not supported。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。SSPL-1.0 OR Elastic-2.0：LICENSE.txt 写默认 dual license under the Server Side Public License, v 1 and the Elastic License 2.0，除非文件头另标 Apache-2.0 compatible 或仅 Elastic-2.0。该组合不在 OSI 开源之列，故 facets.licenses 记 custom，access 记 source-available。覆盖 elastic/eui 默认源码，不把个别 Apache 头文件当成全仓许可。"
+    ],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/elastic-ui",
+    "designMdUrl": "https://vislexicon.com/site/elastic-ui.md",
+    "checkedAt": "2026-09-06T22:00:00.000Z",
+    "license": "custom"
+  }
+}
