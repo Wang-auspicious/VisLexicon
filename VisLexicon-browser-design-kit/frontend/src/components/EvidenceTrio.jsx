@@ -9,9 +9,9 @@ import { useT } from '../i18n.js'
  * 简介只写在主图下方，用页面 title，不用导览句。
  */
 
-function altFor(page, name) {
+function altFor(page, name, fallback) {
   if (page?.shot?.alt) return page.shot.alt
-  return `${name} 页面预览`
+  return fallback || name
 }
 
 function captionFor(page) {
@@ -19,7 +19,7 @@ function captionFor(page) {
   return title || null
 }
 
-function ShotFrame({ page, name, homepage, featured }) {
+function ShotFrame({ page, name, homepage, featured, emptyLabel }) {
   const shot = page?.shot
   const transitionName = page?.role ? `vl-shot-${page.role}` : undefined
   return (
@@ -27,7 +27,7 @@ function ShotFrame({ page, name, homepage, featured }) {
       {shot?.src ? (
         <img
           src={shot.src}
-          alt={altFor(page, name)}
+          alt={altFor(page, name, emptyLabel)}
           width={shot.width || undefined}
           height={shot.height || undefined}
           loading={featured ? 'eager' : 'lazy'}
@@ -37,7 +37,7 @@ function ShotFrame({ page, name, homepage, featured }) {
       ) : (
         <div className="sd-ev-empty">
           <DomainMark url={page?.sourceUrl || homepage} name={name} />
-          <span>该页面暂无法直接预览</span>
+          <span>{emptyLabel}</span>
         </div>
       )}
     </div>
@@ -76,22 +76,22 @@ export default function EvidenceTrio({ pages, name, homepage }) {
     <div className="sd-ev-block">
       <div className="sd-ev-stage">
         <div className="sd-ev-hero">
-          <ShotFrame page={hero} name={name} homepage={homepage} featured />
+          <ShotFrame page={hero} name={name} homepage={homepage} featured emptyLabel={t('noShot')} />
         </div>
         {rest.length > 0 ? (
           <div className="sd-ev-thumbs">
             {rest.map((page) => {
               const absoluteIndex = list.indexOf(page)
-              const label = captionFor(page) || altFor(page, name)
+              const label = captionFor(page) || altFor(page, name, t('noShot'))
               return (
                 <button
                   type="button"
                   className="sd-ev-thumb"
                   key={page.sourceUrl || page.role || absoluteIndex}
                   onClick={() => promote(absoluteIndex)}
-                  aria-label={`将「${label}」放到主预览`}
+                  aria-label={t('promoteShot').replace('{label}', label)}
                 >
-                  <ShotFrame page={page} name={name} homepage={homepage} featured={false} />
+                  <ShotFrame page={page} name={name} homepage={homepage} featured={false} emptyLabel={t('noShot')} />
                 </button>
               )
             })}

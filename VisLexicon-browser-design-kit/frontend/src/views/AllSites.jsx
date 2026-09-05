@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import FacetChips from '../components/FacetChips.jsx'
 import SiteCard from '../components/SiteCard.jsx'
-import { axisLabel, valueLabel } from '../lib/facet-chips.js'
 import { latestCheckedAt } from '../lib/counts.js'
 import {
   SORTS,
@@ -14,6 +13,7 @@ import {
   toggleSelection,
   writeSitesHash,
 } from '../lib/site-browser.js'
+import { useLocale, useT } from '../i18n.js'
 
 /* ============ 全部站点（方案 §3.7 / §4.5） ============
  * 编辑策划的入口没有覆盖保证，所以必须有一格保证「每个条目都能被够到」。
@@ -25,6 +25,8 @@ import {
 let lastResultCount = null
 
 export default function AllSites() {
+  const t = useT()
+  const locale = useLocale()
   const [state, setState] = useState({ status: 'loading', index: null, error: null })
   const [browse, setBrowse] = useState(() => readSitesState())
 
@@ -73,28 +75,19 @@ export default function AllSites() {
     }
   }
 
-  const openSubmitCheck = (event) => {
-    /* 页脚查重框由 WP-C 提供；还没有就退回关于页的提交段落，不假装它在。 */
-    const input = document.querySelector('#submit-check input')
-    if (!input) return
-    event.preventDefault()
-    input.scrollIntoView({ block: 'center' })
-    input.focus()
-  }
-
   return (
     <div className="vl-allsites">
       <header className="vl-page-head">
         <a className="vl-back" href="#/">
-          <span aria-hidden="true">← </span>回策展
+          <span aria-hidden="true">← </span>{t('backCuration')}
         </a>
-        <h1 className="vl-page-title">全部站点</h1>
+        <h1 className="vl-page-title">{t('allSites')}</h1>
         <p className="vl-page-meta">
-          {state.status === 'ready' ? `${items.length} 个` : '—'}
+          {state.status === 'ready' ? items.length : '—'}
           {latest ? (
             <>
               <span className="vl-sep" aria-hidden="true">·</span>
-              最近核验 <time className="x-mono" dateTime={latest}>{latest}</time>
+              {t('promiseChecked')} <time className="x-mono" dateTime={latest}>{latest}</time>
             </>
           ) : null}
         </p>
@@ -102,23 +95,25 @@ export default function AllSites() {
 
       <div className="vl-tools">
         <div className="vl-search">
-          <label className="sr-only" htmlFor="vl-sites-q">在已核验的站点里搜索</label>
+          <label className="sr-only" htmlFor="vl-sites-q">{t('searchSitesLabel')}</label>
           <input
             id="vl-sites-q"
             type="search"
             value={browse.q}
-            placeholder="搜站名、域名、一句话或切面值"
+            placeholder={t('searchSites')}
             onChange={(event) => update({ ...browse, q: event.target.value })}
           />
         </div>
         <label className="vl-sort">
-          <span>排序</span>
+          <span>{t('sort')}</span>
           <select
             value={browse.sort}
             onChange={(event) => update({ ...browse, sort: event.target.value })}
           >
             {SORTS.map((sort) => (
-              <option key={sort.id} value={sort.id}>{sort.labelZh}</option>
+              <option key={sort.id} value={sort.id}>
+                {locale === 'en' ? sort.labelEn : sort.labelZh}
+              </option>
             ))}
           </select>
         </label>
@@ -136,13 +131,15 @@ export default function AllSites() {
       ) : null}
 
       <p className="vl-result-count" aria-live="polite">
-        {state.status === 'ready' ? `显示 ${results.length} / ${items.length} 个站点` : ' '}
+        {state.status === 'ready'
+          ? t('resultCount').replace('{n}', String(results.length)).replace('{total}', String(items.length))
+          : ' '}
       </p>
 
       {state.status === 'error' ? (
         <p className="vl-alert" role="alert">
-          站点索引没能加载出来。
-          <button type="button" onClick={() => window.location.reload()}>重试</button>
+          {t('loadFail')}
+          <button type="button" onClick={() => window.location.reload()}>{t('retry')}</button>
         </p>
       ) : null}
 
@@ -158,28 +155,12 @@ export default function AllSites() {
 
       {state.status === 'ready' && results.length === 0 ? (
         <div className="vl-empty" role="status">
-          <h2>这些条件下没有站点。</h2>
+          <h2>{t('emptySites')}</h2>
           {worst ? (
-            <>
-              <p>
-                排除得最多的是
-                {worst.kind === 'q' ? (
-                  <> 搜索词「<b>{worst.value}</b>」</>
-                ) : (
-                  <> {axisLabel(worst.axis)}「<b>{valueLabel(worst.value)}</b>」</>
-                )}
-                ：单独松开它能放回 {worst.restored} 个站点。
-              </p>
-              <button type="button" className="vl-empty-action" onClick={() => clearOne(worst)}>
-                清除这个条件
-              </button>
-            </>
+            <button type="button" className="vl-empty-action" onClick={() => clearOne(worst)}>
+              {t('clearFilters')}
+            </button>
           ) : null}
-          <p className="vl-empty-note">
-            如果你要找的站根本不在库里，
-            <a href="#/about#submit" onClick={openSubmitCheck}>去页脚的查重框粘一个地址</a>
-            ，看我们收没收。
-          </p>
         </div>
       ) : null}
     </div>
@@ -187,7 +168,8 @@ export default function AllSites() {
 }
 
 function GridSkeleton({ count }) {
-  if (!count) return <p className="vl-result-count">正在取站点索引…</p>
+  const t = useT()
+  if (!count) return <p className="vl-result-count">{t('loadingIndex')}</p>
   return (
     <div className="vl-grid" aria-hidden="true">
       {Array.from({ length: count }, (_, index) => (

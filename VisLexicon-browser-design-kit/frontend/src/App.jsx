@@ -26,21 +26,18 @@ const CHANNELS = [
 ]
 
 function NotFound({ hash }) {
+  const t = useT()
   return (
     <section className="notfound">
       <p className="x-mono">404</p>
-      <h1>这个地址上没有东西</h1>
+      <h1>{t('notFoundTitle')}</h1>
       <p>
-        <span className="x-mono">{hash}</span> 不是本站的路径。
-        旧版的工具页、提交页与 62 条旧词典（<span className="x-mono">#/entry/…</span>、
-        <span className="x-mono">#/key</span>、<span className="x-mono">#/compare</span>、
-        <span className="x-mono">#/matrix</span>）已经删除，不是暂时打不开。
-        为什么删、删掉的东西去了哪里，写在关于页。
+        <span className="x-mono">{hash}</span> {t('notFoundBody')}
       </p>
-      <nav className="notfound-links" aria-label="回到主要频道">
-        <a className="btn-primary" href="#/">回策展首页</a>
-        <a className="btn-ghost" href="#/atlas">去图鉴</a>
-        <a className="btn-ghost" href="#/about">看关于页</a>
+      <nav className="notfound-links" aria-label={t('nav')}>
+        <a className="btn-primary" href="#/">{t('backHome')}</a>
+        <a className="btn-ghost" href="#/atlas">{t('goAtlas')}</a>
+        <a className="btn-ghost" href="#/about">{t('goAbout')}</a>
       </nav>
     </section>
   )

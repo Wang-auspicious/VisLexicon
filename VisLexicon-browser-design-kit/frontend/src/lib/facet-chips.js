@@ -39,10 +39,18 @@ export const DECISION_AXES = [
 
 export const AXIS_LABELS_ZH = {
   licenses: '许可',
-  access: '获取方式',
-  deliverables: '交付物',
-  actions: '拿走方式',
-  contentOrganization: '内容组织',
+  access: '取用',
+  deliverables: '产物',
+  actions: '动作',
+  contentOrganization: '组织方式',
+}
+
+export const AXIS_LABELS_EN = {
+  licenses: 'License',
+  access: 'Access',
+  deliverables: 'Output',
+  actions: 'Action',
+  contentOrganization: 'Structure',
 }
 
 /* 切面值是英文 slug。这里只做「同一个意思的中文说法」，不添加任何原值里没有的判断；
@@ -96,12 +104,57 @@ export const VALUE_LABELS_ZH = {
   course: '课程',
 }
 
-export function axisLabel(axis) {
+export function axisLabel(axis, locale = 'zh') {
+  if (locale === 'en') return AXIS_LABELS_EN[axis] ?? axis
   return AXIS_LABELS_ZH[axis] ?? axis
 }
 
-export function valueLabel(value) {
+export function valueLabel(value, locale = 'zh') {
+  if (locale === 'en') return VALUE_LABELS_EN[value] ?? value
   return VALUE_LABELS_ZH[value] ?? value
+}
+
+export const VALUE_LABELS_EN = {
+  custom: 'Custom',
+  unknown: 'Unknown',
+  free: 'Free',
+  'open-source': 'Open source',
+  freemium: 'Freemium',
+  'source-available': 'Source available',
+  'closed-source': 'Closed source',
+  'login-required': 'Sign-in required',
+  paid: 'Paid',
+  component: 'Component',
+  block: 'Block',
+  template: 'Template',
+  standard: 'Standard',
+  'code-library': 'Code library',
+  primitive: 'Primitive',
+  prompt: 'Prompt',
+  report: 'Report',
+  glossary: 'Glossary',
+  'case-screenshot': 'Case screenshot',
+  'full-page': 'Full page',
+  browse: 'Browse',
+  preview: 'Preview',
+  copy: 'Copy',
+  install: 'Install',
+  search: 'Search',
+  learn: 'Learn',
+  submit: 'Submit',
+  purchase: 'Purchase',
+  download: 'Download',
+  edit: 'Edit',
+  export: 'Export',
+  audit: 'Audit',
+  'component-registry': 'Component registry',
+  'searchable-directory': 'Searchable directory',
+  'standards-documentation': 'Standards documentation',
+  'case-gallery': 'Case gallery',
+  'editorial-feed': 'Editorial feed',
+  'community-feed': 'Community feed',
+  marketplace: 'Marketplace',
+  course: 'Course',
 }
 
 const asArray = (value) => (Array.isArray(value) ? value : [])
@@ -129,7 +182,7 @@ export function countAxis(items, axis) {
  *                             点完就看不到自己点了什么，也取消不掉。
  * @returns {Array} `[{ axis, label, values: [{ value, label, count, selected }] }]`
  */
-export function chipAxes(items, selections = {}) {
+export function chipAxes(items, selections = {}, locale = 'zh') {
   const list = asArray(items)
   const total = list.length
   const groups = []
@@ -145,10 +198,10 @@ export function chipAxes(items, selections = {}) {
     if (values.length < MIN_VALUES_PER_AXIS) continue
     groups.push({
       axis,
-      label: axisLabel(axis),
+      label: axisLabel(axis, locale),
       values: values.map(({ value, count }) => ({
         value,
-        label: valueLabel(value),
+        label: valueLabel(value, locale),
         count,
         selected: chosen.has(value),
       })),

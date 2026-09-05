@@ -12,8 +12,8 @@ import { DECISION_AXES } from './facet-chips.js'
 export const SITE_INDEX_URL = '/data/site-index.json'
 
 export const SORTS = [
-  { id: 'checked', labelZh: '最近核验' },
-  { id: 'name', labelZh: '名称' },
+  { id: 'checked', labelZh: '最近核验', labelEn: 'Last verified' },
+  { id: 'name', labelZh: '名称', labelEn: 'Name' },
 ]
 
 export const DEFAULT_SORT = 'checked'

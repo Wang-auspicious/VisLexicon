@@ -30,8 +30,8 @@ const VOICE = {
       en: 'Community component registry. Preview, then copy prompt, source, image, or CLI.',
     },
     style: {
-      zh: '深色全bleed动效营销。组件即广告。高饱和点缀。',
-      en: 'Dark full-bleed motion marketing. Component-as-advert. Saturated accents.',
+      zh: '深色全出血营销。超大无衬线标题配斜体强调。横向组件标本轮播。低对比导航。饱和主按钮。',
+      en: 'Dark full-bleed marketing. Oversized sans display with italic accent. Horizontal specimen carousel. Low-contrast nav. Saturated primary CTA.',
     },
     acquire: {
       zh: [
@@ -153,6 +153,110 @@ const VOICE = {
   'ecomm-design': {
     lede: { zh: '电商界面模式图鉴。', en: 'E-commerce interface patterns.' },
     style: { zh: '浅色模式图鉴。截图网格。', en: 'Light pattern atlas. Screenshot grid.' },
+  },
+  'radix-themes': {
+    lede: { zh: '预样式 React 组件。主题与布局一包提供。', en: 'Pre-styled React components. Theme and layout in one package.' },
+    style: { zh: '浅色文档。中性灰。开箱控件标本。圆角克制。', en: 'Light docs. Neutral gray. Out-of-the-box control specimens. Restrained radii.' },
+  },
+  'radix-primitives': {
+    lede: { zh: '无样式无障碍 React 原语。', en: 'Unstyled accessible React primitives.' },
+    style: { zh: '浅色文档。中性。解剖式演示。', en: 'Light docs. Neutral. Anatomical demos.' },
+  },
+  'radix-icons': {
+    lede: { zh: '15×15 开源线型图标。', en: '15×15 open outline icons.' },
+    style: { zh: '浅色图标网格。等线描边。高密度。', en: 'Light icon grid. Even stroke. High density.' },
+  },
+  'radix-colors': {
+    lede: { zh: '为界面设计的开源色阶。', en: 'Open color scales for interface design.' },
+    style: { zh: '浅色色阶标本。水平色带。系统化明度。', en: 'Light scale specimens. Horizontal swatches. Systematic lightness.' },
+  },
+  daisyui: {
+    lede: { zh: 'Tailwind 插件。语义 class 组件。', en: 'Tailwind plugin. Semantic class components.' },
+    style: { zh: '浅色营销文档。多主题标本。圆角按钮。', en: 'Light marketing docs. Multi-theme specimens. Rounded buttons.' },
+  },
+  'headless-ui': {
+    lede: { zh: 'Tailwind Labs 无样式组件。', en: 'Unstyled components from Tailwind Labs.' },
+    style: { zh: '浅色文档。中性。示例与 API 并置。', en: 'Light docs. Neutral. Example beside API.' },
+  },
+  'ark-ui': {
+    lede: { zh: '无头组件。多框架。', en: 'Headless components. Multiple frameworks.' },
+    style: { zh: '深色文档。品牌青。代码与演示分栏。', en: 'Dark docs. Brand teal. Code beside demo.' },
+  },
+  mantine: {
+    lede: { zh: 'React 组件库。钩子与表单配套。', en: 'React components with hooks and forms.' },
+    style: { zh: '浅色文档。蓝色强调。控件目录。', en: 'Light docs. Blue accent. Control catalog.' },
+  },
+  'react-aria': {
+    lede: { zh: 'Adobe 无样式无障碍 React 钩子与组件。', en: 'Adobe unstyled accessible React hooks and components.' },
+    style: { zh: '浅色 Spectrum 文档。中性。规格表。', en: 'Light Spectrum docs. Neutral. Spec tables.' },
+  },
+  'aceternity-ui': {
+    lede: { zh: 'React 与 Tailwind 动效组件。许可非 MIT。', en: 'React and Tailwind motion components. License is not MIT.' },
+    style: { zh: '深色全出血营销。高饱和点缀。组件即广告。', en: 'Dark full-bleed marketing. Saturated accents. Component-as-advert.' },
+  },
+  godly: {
+    lede: { zh: '设计灵感目录。现名 Recent。', en: 'Design inspiration directory. Now Recent.' },
+    style: { zh: '深色海报瀑布。大图优先。编辑式封面。', en: 'Dark poster masonry. Image-led. Editorial covers.' },
+  },
+  gsap: {
+    lede: { zh: 'JavaScript 时间轴动画库。', en: 'JavaScript timeline animation library.' },
+    style: { zh: '深色动效营销。全出血演示。高对比绿强调。', en: 'Dark motion marketing. Full-bleed demos. High-contrast green accent.' },
+  },
+  d3: {
+    lede: { zh: '数据驱动文档的可视化库。', en: 'Visualization library for data-driven documents.' },
+    style: { zh: '浅色文档。等宽代码。图表标本。', en: 'Light docs. Monospace code. Chart specimens.' },
+  },
+  remixicon: {
+    lede: { zh: '开源图标集。线型与填色。许可非 MIT。', en: 'Open icon set. Outline and filled. License is not MIT.' },
+    style: { zh: '浅色图标网格。几何描边。高密度。', en: 'Light icon grid. Geometric stroke. High density.' },
+  },
+  'animate-css': {
+    lede: { zh: 'CSS 关键帧动画 class。', en: 'CSS keyframe animation classes.' },
+    style: { zh: '浅色演示页。大号交互标本。', en: 'Light demo page. Large interactive specimens.' },
+  },
+  'web-dev': {
+    lede: { zh: 'Chrome 团队的 Web 开发参考。', en: 'Web development reference from the Chrome team.' },
+    style: { zh: '浅色文档。蓝色强调。文章排版。', en: 'Light docs. Blue accent. Article typography.' },
+  },
+  'inclusive-components': {
+    lede: { zh: '包容性界面模式文章。', en: 'Inclusive interface pattern essays.' },
+    style: { zh: '浅色长文。衬线正文。编辑式。', en: 'Light long-form. Serif body. Editorial.' },
+  },
+  iconoir: {
+    lede: { zh: '24 网格开源线型图标。', en: '24-grid open outline icons.' },
+    style: { zh: '浅色图标网格。等线描边。留白宽。', en: 'Light icon grid. Even stroke. Generous whitespace.' },
+  },
+  'simple-icons': {
+    lede: { zh: '品牌 SVG 图标集。', en: 'Brand SVG icons.' },
+    style: { zh: '浅色品牌色网格。单色填色标志。', en: 'Light brand-color grid. Monochrome filled marks.' },
+  },
+  rive: {
+    lede: { zh: '交互矢量动画。运行时开源，导出收费。', en: 'Interactive vector animation. Runtime is open; export is paid.' },
+    style: { zh: '深色产品营销。全出血动效。高饱和强调。', en: 'Dark product marketing. Full-bleed motion. Saturated accents.' },
+  },
+  lottiefiles: {
+    lede: { zh: 'Lottie 播放器与格式文档。', en: 'Lottie player and format documentation.' },
+    style: { zh: '浅色文档。卡片分区。中性。', en: 'Light docs. Carded sections. Neutral.' },
+  },
+  recharts: {
+    lede: { zh: '基于 D3 的 React 图表组件。', en: 'React chart components built on D3.' },
+    style: { zh: '浅色文档。图表标本。中性灰。', en: 'Light docs. Chart specimens. Neutral gray.' },
+  },
+  chartjs: {
+    lede: { zh: 'Canvas 图表库。', en: 'Canvas charting library.' },
+    style: { zh: '浅色文档。简单折线标本。品牌绿。', en: 'Light docs. Simple line specimens. Brand green.' },
+  },
+  'every-layout': {
+    lede: { zh: 'CSS 布局原语与教程。入门免费。', en: 'CSS layout primitives and tutorials. Rudiments are free.' },
+    style: { zh: '浅色编辑式。衬线标题。图解盒模型。', en: 'Light editorial. Serif titles. Diagrammed box model.' },
+  },
+  bootstrap: {
+    lede: { zh: 'HTML、CSS 与 JS 前端工具包。', en: 'HTML, CSS, and JS frontend toolkit.' },
+    style: { zh: '浅色文档。紫色强调。示例与代码并置。', en: 'Light docs. Purple accent. Example beside code.' },
+  },
+  'toools-design': {
+    lede: { zh: '设计资源外链目录。', en: 'Outbound directory of design resources.' },
+    style: { zh: '浅色目录网格。卡片索引。中性。', en: 'Light directory grid. Card index. Neutral.' },
   },
 }
 

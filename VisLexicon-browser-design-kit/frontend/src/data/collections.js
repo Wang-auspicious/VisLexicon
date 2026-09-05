@@ -39,6 +39,7 @@ export const COLLECTIONS = [
       'park-ui',
       'bits-ui',
       'fluent-ui',
+      'polaris',
       'primer',
       'bootstrap',
     ],
@@ -59,7 +60,7 @@ export const COLLECTIONS = [
     titleEn: 'Motion and micro-interaction',
     blurbZh: '这些站交付的是会动的实现：时间轴、class 动画和弹簧，用来看效果怎么接到界面上。',
     blurbEn: 'Motion implementations: timelines, class animation, springs.',
-    entryIds: ['motion', 'gsap', 'animate-css'],
+    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles'],
     createdAt: '2026-09-06',
   },
   {
@@ -68,7 +69,7 @@ export const COLLECTIONS = [
     titleEn: 'Icons and type',
     blurbZh: '这些站交付的是可复制或安装的符号，用来给界面配上一套统一的线标。',
     blurbEn: 'Installable or copyable marks for a coherent symbol language.',
-    entryIds: ['lucide', 'remixicon', 'radix-icons', 'phosphor-icons', 'tabler-icons', 'heroicons', 'iconoir', 'simple-icons'],
+    entryIds: ['lucide', 'remixicon', 'radix-icons', 'radix-colors', 'phosphor-icons', 'tabler-icons', 'heroicons', 'iconoir', 'simple-icons'],
     createdAt: '2026-09-06',
   },
   {
@@ -77,7 +78,16 @@ export const COLLECTIONS = [
     titleEn: 'Charts and visualization',
     blurbZh: '这些站交付的是图表实现：用组件、canvas 或比例尺把数据画出来。',
     blurbEn: 'Chart implementations: components, canvas, and scales.',
-    entryIds: ['d3', 'recharts', 'chartjs'],
+    entryIds: ['d3', 'recharts', 'chartjs', 'nivo'],
+    createdAt: '2026-09-06',
+  },
+  {
+    id: 'inspiration-and-indexes',
+    titleZh: '灵感与目录：按案例或索引浏览',
+    titleEn: 'Inspiration and indexes',
+    blurbZh: '这些站交付的是可浏览的案例或外链目录，用来对照视觉，不提供可安装的界面源码。',
+    blurbEn: 'Browsable cases or outbound indexes. Visual reference, not installable UI source.',
+    entryIds: ['godly', 'toools-design'],
     createdAt: '2026-09-06',
   },
 ]

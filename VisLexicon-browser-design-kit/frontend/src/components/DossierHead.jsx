@@ -46,7 +46,7 @@ export default function DossierHead({ data }) {
     || (locale === 'zh' ? data.editorial?.descriptionZh : null)
 
   const license = displayValue(factOf(facts, 'license')?.value) || displayValue((facets.licenses ?? [])[0])
-  const access = (facets.access ?? []).map((value) => facetLabel('access', value)).filter(Boolean)
+  const access = (facets.access ?? []).map((value) => facetLabel('access', value, locale)).filter(Boolean)
   const author = factOf(facts, 'author')
   const org = factOf(facts, 'organization')
   const repo = factOf(facts, 'repository')
@@ -91,7 +91,7 @@ export default function DossierHead({ data }) {
     facets[axis].map((value) => ({
       axis,
       label: t(axis),
-      value: facetLabel(axis, value),
+      value: facetLabel(axis, value, locale),
     }))
   ))
 

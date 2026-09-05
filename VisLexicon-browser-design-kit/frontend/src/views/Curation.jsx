@@ -113,7 +113,7 @@ export default function Curation() {
           {t('allSites')} <Num value={counts.approvedEntries} /><span aria-hidden="true"> →</span>
         </a>
         <p className="vl-allsites-note">
-          默认按最近核验排序。收口用的切面条件在结果页出现，首页不放筛选器。
+          {t('allSitesSort')}
         </p>
       </section>
     </div>

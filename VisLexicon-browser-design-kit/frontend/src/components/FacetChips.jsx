@@ -1,6 +1,7 @@
 import { useId, useState } from 'react'
 import { chipAxes } from '../lib/facet-chips.js'
 import { countSelections } from '../lib/site-browser.js'
+import { useLocale, useT } from '../i18n.js'
 
 /* ============ 切面 chips（方案 §3.4） ============
  * 只在已经有结果集之后出现，首页零筛选器。
@@ -9,9 +10,11 @@ import { countSelections } from '../lib/site-browser.js'
  * 知道深度，编辑部一眼看见哪个值已经死了。
  */
 export default function FacetChips({ items, selections, onToggle, onClear }) {
+  const t = useT()
+  const locale = useLocale()
   const [open, setOpen] = useState(false)
   const panelId = useId()
-  const groups = chipAxes(items, selections)
+  const groups = chipAxes(items, selections, locale)
   const chosen = countSelections(selections)
 
   if (!groups.length) return null
@@ -21,11 +24,11 @@ export default function FacetChips({ items, selections, onToggle, onClear }) {
   const chosenLabels = groups
     .flatMap((group) => group.values.filter((chip) => chip.selected).map((chip) => chip.label))
   const toggleLabel = chosenLabels.length
-    ? `筛选 · ${chosenLabels.slice(0, 2).join(' / ')}${chosenLabels.length > 2 ? ` 等 ${chosenLabels.length} 项` : ''}`
-    : '筛选'
+    ? `${t('filter')} · ${chosenLabels.slice(0, 2).join(' / ')}${chosenLabels.length > 2 ? ` · ${chosenLabels.length}` : ''}`
+    : t('filter')
 
   return (
-    <section className={`vl-chips${open ? ' is-open' : ''}`} aria-label="按切面收口">
+    <section className={`vl-chips${open ? ' is-open' : ''}`} aria-label={t('filter')} >
       <button
         type="button"
         className="vl-chips-toggle"
@@ -59,7 +62,7 @@ export default function FacetChips({ items, selections, onToggle, onClear }) {
 
         {chosen ? (
           <button type="button" className="vl-chips-clear" onClick={onClear}>
-            清除全部条件
+            {t('clearFilters')}
           </button>
         ) : null}
       </div>

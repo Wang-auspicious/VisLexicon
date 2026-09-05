@@ -43,12 +43,13 @@ function CardShot({ item, aspect, priority }) {
 
 /** 许可微标。unknown 用 caution 色标出来——空值本身是差异化，不是缺陷。 */
 export function LicenseMark({ item }) {
+  const locale = useLocale()
   const values = licenseValues(item)
   const unknown = values.includes('unknown')
   const code = values.some((value) => value !== 'custom' && value !== 'unknown')
   return (
     <span className={`vl-license${unknown ? ' is-unknown' : ''}${code ? ' is-code' : ''}`}>
-      {values.map((value) => valueLabel(value)).join(' · ')}
+      {values.map((value) => valueLabel(value, locale)).join(' · ')}
     </span>
   )
 }
@@ -72,7 +73,7 @@ export function Takeaway({ item }) {
   const t = useT()
   const locale = useLocale()
   const voiced = voiceText(item?.entryId, 'lede', locale)
-  const text = voiced || (typeof item?.takeawayZh === 'string' ? item.takeawayZh.trim() : '')
+  const text = voiced || (locale === 'zh' && typeof item?.takeawayZh === 'string' ? item.takeawayZh.trim() : '')
   if (text) return <span className="vl-take">{text}</span>
   return (
     <span className="vl-take is-unwritten">
@@ -89,6 +90,7 @@ export function Takeaway({ item }) {
  * 右下角另有「去源站」，两个出口都画出来，不靠隐藏手势（方案 §4.5）。
  */
 export default function SiteCard({ item, priority = false }) {
+  const t = useT()
   if (!item) return null
   const href = `#/site/${item.entryId}`
   const aspect = aspectFor(item)
@@ -118,8 +120,8 @@ export default function SiteCard({ item, priority = false }) {
             target="_blank"
             rel="noreferrer"
           >
-            去源站<span aria-hidden="true"> ↗</span>
-            <span className="sr-only">（{item.name} 官网，新标签页打开）</span>
+            {t('visitCard')}<span aria-hidden="true"> ↗</span>
+            <span className="sr-only">（{item.name} {t('visitCardSr')}）</span>
           </a>
         ) : null}
       </div>

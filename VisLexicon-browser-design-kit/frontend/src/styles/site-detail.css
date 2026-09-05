@@ -16,6 +16,12 @@
   animation: sd-fade var(--vl-dur-2) var(--vl-ease-out) both;
 }
 
+@property --sd-sheen {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
 .sd-panel {
   position: relative;
   isolation: isolate;
@@ -28,11 +34,46 @@
   background: var(--vl-surface);
   border-top: 1px solid var(--vl-line);
   border-radius: var(--vl-r-lg) var(--vl-r-lg) 0 0;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.42),
-    var(--vl-shadow-3);
+  box-shadow: var(--vl-shadow-3);
   outline: none;
   animation: sd-rise var(--vl-dur-2) var(--vl-ease-emph) both;
+}
+.sd-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--sd-sheen),
+    transparent 0deg,
+    var(--vl-orb-1) 36deg,
+    transparent 88deg,
+    var(--vl-orb-2) 168deg,
+    transparent 230deg,
+    var(--vl-orb-3) 300deg,
+    transparent 360deg
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: sd-sheen 12s linear infinite;
+}
+.sd-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background:
+    linear-gradient(115deg, transparent 20%, var(--vl-sheen-wash) 48%, transparent 62%);
+  background-size: 240% 240%;
+  animation: sd-flow 16s var(--vl-ease-io) infinite alternate;
 }
 
 .sd-orb {
@@ -44,28 +85,28 @@
   will-change: transform;
 }
 .sd-orb-a {
-  width: 18rem;
-  height: 18rem;
-  top: -6rem;
-  left: -4rem;
+  width: 22rem;
+  height: 22rem;
+  top: -7rem;
+  left: -5rem;
   background: var(--vl-orb-1);
-  animation: sd-orb-a 22s var(--vl-ease-io) infinite alternate;
+  animation: sd-orb-a 18s var(--vl-ease-io) infinite alternate;
 }
 .sd-orb-b {
-  width: 16rem;
-  height: 16rem;
-  top: 28%;
-  right: -5rem;
+  width: 20rem;
+  height: 20rem;
+  top: 24%;
+  right: -6rem;
   background: var(--vl-orb-2);
-  animation: sd-orb-b 26s var(--vl-ease-io) infinite alternate;
+  animation: sd-orb-b 22s var(--vl-ease-io) infinite alternate;
 }
 .sd-orb-c {
-  width: 14rem;
-  height: 14rem;
-  bottom: -4rem;
-  left: 32%;
+  width: 18rem;
+  height: 18rem;
+  bottom: -5rem;
+  left: 28%;
   background: var(--vl-orb-3);
-  animation: sd-orb-c 20s var(--vl-ease-io) infinite alternate;
+  animation: sd-orb-c 16s var(--vl-ease-io) infinite alternate;
 }
 @keyframes sd-orb-a {
   from { transform: translate3d(0, 0, 0) scale(1); }
@@ -85,8 +126,11 @@
 @keyframes sd-pop { from { opacity: 0; transform: scale(.985); } to { opacity: 1; transform: none; } }
 @keyframes sd-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .55; } }
 @keyframes sd-flow {
-  from { transform: translate3d(-4%, -2%, 0) scale(1); }
-  to { transform: translate3d(5%, 6%, 0) scale(1.08); }
+  from { background-position: 0% 40%; }
+  to { background-position: 100% 60%; }
+}
+@keyframes sd-sheen {
+  to { --sd-sheen: 360deg; }
 }
 
 /* 顶栏：实底，抽屉的抓手与关闭键都在这里。
@@ -139,7 +183,7 @@
   overscroll-behavior: contain;
   display: flex;
   flex-direction: column;
-  gap: var(--vl-s4);
+  gap: var(--vl-s2);
   padding: 0 var(--vl-s5) var(--vl-s5);
   scrollbar-width: thin;
   scrollbar-color: var(--vl-scroll-thumb) transparent;
@@ -189,8 +233,8 @@
 /* ---- 身份条：favicon + 站名 + 域名 ---- */
 .sd-source {
   display: flex;
-  align-items: baseline;
-  gap: var(--vl-s2);
+  align-items: center;
+  gap: 8px;
   margin: 0;
   border-radius: var(--vl-r-md);
   text-decoration: none;
@@ -241,17 +285,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   overflow: hidden;
   border-radius: 4px;
   background: transparent;
-  transform: translateY(2px);
 }
 .sd-panel .vl-site-favicon img {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   image-rendering: auto;
 }
 .sd-panel .vl-site-favicon-fallback {
@@ -279,24 +322,24 @@
 .sd-dossier {
   display: flex;
   flex-direction: column;
-  gap: var(--vl-s4);
-}
-
-.sd-dossier {
-  display: grid;
   gap: var(--vl-s3);
+  width: 100%;
 }
 .sd-lede {
   margin: 0;
-  max-width: 46em;
+  width: 100%;
+  max-width: none;
   color: var(--vl-ink);
   font-size: var(--vl-fs-sm);
-  line-height: 1.55;
+  line-height: 1.5;
   overflow-wrap: anywhere;
 }
 .sd-headgrid {
   display: grid;
   gap: var(--vl-s3);
+  width: 100%;
+  padding-top: var(--vl-s3);
+  border-top: 1px solid var(--vl-line);
 }
 .sd-facet-row {
   display: flex;
@@ -843,9 +886,9 @@ a.sd-fact-value { text-decoration: underline; text-underline-offset: 3px; }
   }
   .sd-grab { display: none; }
   .sd-src { min-height: 26px; padding: 2px var(--vl-s2); }
-  .sd-bar { padding: 4px var(--vl-s4) 0; }
+  .sd-bar { padding: 2px var(--vl-s4) 0; }
   .sd-scroll {
-    gap: var(--vl-s4);
+    gap: var(--vl-s2);
     padding: 0 var(--vl-s6) var(--vl-s6);
   }
   .sd-scroll > .sd-section,
@@ -903,7 +946,9 @@ a.sd-fact-value { text-decoration: underline; text-underline-offset: 3px; }
   .sd-layer,
   .sd-panel,
   .sd-sk,
-  .sd-orb { animation: none; }
+  .sd-orb,
+  .sd-panel::before,
+  .sd-panel::after { animation: none; }
   .sd-ev-thumb .sd-ev-frame { transition: none; }
 }
 
