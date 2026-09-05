@@ -1,0 +1,197 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T17:48:31.698Z",
+  "entryId": "every-layout",
+  "entityId": "entity-every-layout",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://every-layout.dev/",
+    "finalUrl": "https://every-layout.dev/",
+    "checkedAt": "2026-09-05T16:52:00.000Z"
+  },
+  "editorial": {
+    "name": "Every Layout",
+    "descriptionZh": "Heydon Pickering 与 Andy Bell 的 CSS 布局教程与原语集，现为第三版。盒模型等 rudiments 免费可读；完整布局、生成器、自定义元素与 EPUB 售 69 美元。",
+    "takeawayZh": "先读盒子模型，再拿 Stack 当布局原语",
+    "noteZh": "我们进首页，封面旁边就是购买按钮和免费 rudiments 链接。Boxes 页把盒模型图画出来，左侧列出 Stack、Box、Center。我们打开 The Stack：问题、解决方案、生成器和自定义元素分节写。适合要少写断点、用原语拼布局的人。入门免费；完整布局、生成器和书要付费。",
+    "pricing": "$69 for full access; rudiments are free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "reference-standards",
+    "subcategory": "ui-patterns-anatomy",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "learning-editorial",
+        "subcategory": "tutorials-courses-workshops"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "站点把布局拆成 Stack、Box、Center 等可组合原语，并配盒模型等 rudiments，主要交付物是布局模式参考。",
+        "evidenceUrl": "https://every-layout.dev/"
+      },
+      {
+        "statement": "The Stack 页给出问题、owl 选择器解法、生成器和 stack-l 自定义元素，证明一条原语可以读完并拿走。",
+        "evidenceUrl": "https://every-layout.dev/layouts/stack/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T14:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "standard",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "web-components"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer",
+      "educator"
+    ],
+    "access": [
+      "freemium",
+      "paid"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [
+      "course",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://every-layout.dev/",
+      "finalUrl": "https://every-layout.dev/",
+      "title": "Relearn CSS layout: Every Layout",
+      "selectionRationale": "先看首页：封面、69 美元购买、免费 rudiments 链接。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/every-layout/v2-identity.png",
+        "sha256": "348cac73cfef878f472464bac35e8eac16dcf4f197849a91b71dee7bb05791e2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 110013,
+        "alt": "Every Layout 首页左侧第三版封面，右侧 Learn to write better, resilient CSS 与 Buy Every Layout For $69"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://every-layout.dev/rudiments/boxes",
+      "finalUrl": "https://every-layout.dev/rudiments/boxes",
+      "title": "Boxes: Every Layout",
+      "selectionRationale": "再翻 Boxes：盒模型图，左侧列出 Stack 到 Sidebar。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/every-layout/v2-breadth.png",
+        "sha256": "411cab86b00fd82b2eb6f8cd4f45b2cc165ffeabdd209a95679a90e050c343a1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106013,
+        "alt": "Every Layout Boxes 页，左侧 Rudiments 与 Layouts 目录，右侧盒模型 content-padding-border-margin 图"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://every-layout.dev/layouts/stack/",
+      "finalUrl": "https://every-layout.dev/layouts/stack/",
+      "title": "The Stack: Every Layout",
+      "selectionRationale": "最后开 The Stack：问题、解法、生成器和组件分节都在。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/every-layout/v2-proof.png",
+        "sha256": "c1d7153231b4276bff3006440ffe963f1749cd0b0934500db158272f6a10b8ed",
+        "width": 1280,
+        "height": 900,
+        "bytes": 104503,
+        "alt": "The Stack 页目录含 The problem、The generator、The component，正文讲 margin 与设计系统"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Heydon Pickering and Andy Bell",
+      "sourceUrl": "https://every-layout.dev/",
+      "evidence": "首页封面署 Heydon Pickering & Andy Bell。Meet the authors 节分别介绍 Heydon Pickering 与 Andy Bell。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Every Layout",
+      "sourceUrl": "https://every-layout.dev/",
+      "evidence": "站点以 Every Layout 为产品名。未在首页给出独立公司主体，故保留为项目名。",
+      "confidence": 1
+    },
+    {
+      "field": "repositoryStatus",
+      "value": "unknown",
+      "sourceUrl": "https://every-layout.dev/",
+      "evidence": "首页、Boxes 与 The Stack 均未提供公开源码仓库链接，故记 unknown。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "custom",
+      "sourceUrl": "https://every-layout.dev/",
+      "evidence": "首页将完整站点内容、EPUB 与自定义元素作为 69 美元商品出售，未给出 SPDX 开源许可。rudiments 可公开阅读；付费范围覆盖完整布局、生成器、自定义元素与终身更新。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "$69 for full access; rudiments free",
+      "sourceUrl": "https://every-layout.dev/",
+      "evidence": "首页按钮 Buy Every Layout For $69。同页写 Read the free rudiments and axioms，并列出 Access to all the site content、EPUB、custom elements、Free updates for life。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。custom：首页将完整站点内容、EPUB 与自定义元素作为 69 美元商品出售，未给出 SPDX 开源许可。rudiments 可公开阅读；付费范围覆盖完整布局、生成器、自定义元素与终身更新。",
+      "存在付费层：$69 for full access; rudiments are free。"
+    ],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/every-layout",
+    "designMdUrl": "https://vislexicon.com/site/every-layout.md",
+    "checkedAt": "2026-09-05T16:52:00.000Z",
+    "license": "custom"
+  }
+}

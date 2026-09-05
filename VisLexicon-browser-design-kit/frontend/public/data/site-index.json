@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-05T17:44:45.943Z",
+  "generatedAt": "2026-09-05T17:48:31.698Z",
   "counts": {
-    "approvedEntries": 46
+    "approvedEntries": 54
   },
   "items": [
     {
@@ -854,6 +854,166 @@
       "registryUrl": "/r/bits-ui.json"
     },
     {
+      "entryId": "bootstrap",
+      "name": "Bootstrap",
+      "domain": "getbootstrap.com",
+      "homepage": "https://getbootstrap.com/",
+      "descriptionZh": "The Bootstrap Authors 维护的 HTML、CSS 与 JS 前端工具包，现为 v5.3.8，含栅格、组件和 JavaScript 插件。仓库与 License FAQs 均标 MIT，可免费用于个人与商业项目。",
+      "takeawayZh": "用 CDN 装上组件，先看手风琴怎么写",
+      "noteZh": "首页截图时连接被掐，我们改看 Getting started：标题写 frontend toolkit，下面 CDN 快速开始。Examples 页先是 CDN、Sass、React、Vite 起步格子。我们打开 Accordion：现场手风琴和完整 HTML。适合要现成 CSS 组件和示例页的人。MIT，文档写明保留版权声明即可用。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "css",
+          "javascript"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "general-ui-components",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://getbootstrap.com/docs/5.3/about/license/",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-05T16:52:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/bootstrap/v2-identity.png",
+        "alt": "Bootstrap Getting started 页，标题 Get started with Bootstrap，下方 Quick start 与 index.html 代码块",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/bootstrap.json",
+      "designMdUrl": "/site/bootstrap.md",
+      "registryUrl": "/r/bootstrap.json"
+    },
+    {
+      "entryId": "chartjs",
+      "name": "Chart.js",
+      "domain": "chartjs.org",
+      "homepage": "https://www.chartjs.org/",
+      "descriptionZh": "社区维护的开源 HTML5 Canvas 图表库，内置柱状、折线、饼图等类型，可用 npm 包 chart.js 安装。文档与 LICENSE 均标 MIT。",
+      "takeawayZh": "在 canvas 上画柱状图，配置即出图",
+      "noteZh": "我们进首页，粉字标题下面四个按钮。文档总览把图表类型、插件、canvas 渲染讲清楚。我们打开 Bar Chart：上面是柱状图，下面是 type bar 的 config。适合要 canvas 图表、按类型抄配置的人。MIT，社区维护，没有付费档。别把它当成 React 组件库，坐标轴要自己配。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "learn",
+          "preview"
+        ],
+        "media": [
+          "data-visualization",
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript",
+          "canvas",
+          "typescript"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "visual-implementation",
+      "subcategory": "data-visualization-code",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/chartjs/Chart.js/blob/master/LICENSE.md",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-05T16:52:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/chartjs/v2-identity.png",
+        "alt": "Chart.js 首页粉字标题 Simple yet flexible JavaScript charting library，下方 Get Started、Samples、Ecosystem、GitHub 四钮",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/chartjs.json",
+      "designMdUrl": "/site/chartjs.md",
+      "registryUrl": "/r/chartjs.json"
+    },
+    {
       "entryId": "d3",
       "name": "D3",
       "domain": "d3js.org",
@@ -1514,6 +1674,87 @@
       "detailUrl": "/data/site/entry-shadcn-studio-blocks.json",
       "designMdUrl": "/site/entry-shadcn-studio-blocks.md",
       "registryUrl": "/r/entry-shadcn-studio-blocks.json"
+    },
+    {
+      "entryId": "every-layout",
+      "name": "Every Layout",
+      "domain": "every-layout.dev",
+      "homepage": "https://every-layout.dev/",
+      "descriptionZh": "Heydon Pickering 与 Andy Bell 的 CSS 布局教程与原语集，现为第三版。盒模型等 rudiments 免费可读；完整布局、生成器、自定义元素与 EPUB 售 69 美元。",
+      "takeawayZh": "先读盒子模型，再拿 Stack 当布局原语",
+      "noteZh": "我们进首页，封面旁边就是购买按钮和免费 rudiments 链接。Boxes 页把盒模型图画出来，左侧列出 Stack、Box、Center。我们打开 The Stack：问题、解决方案、生成器和自定义元素分节写。适合要少写断点、用原语拼布局的人。入门免费；完整布局、生成器和书要付费。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "standard",
+          "component"
+        ],
+        "actions": [
+          "browse",
+          "learn"
+        ],
+        "media": [
+          "ui",
+          "typography"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "css",
+          "web-components"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer",
+          "educator"
+        ],
+        "access": [
+          "freemium",
+          "paid"
+        ],
+        "licenses": [
+          "custom"
+        ],
+        "contentOrganization": [
+          "course",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "reference-standards",
+      "subcategory": "ui-patterns-anatomy",
+      "license": "custom",
+      "licenses": [
+        "custom"
+      ],
+      "licenseSourceUrl": "https://every-layout.dev/",
+      "access": [
+        "freemium",
+        "paid"
+      ],
+      "checkedAt": "2026-09-05T16:52:00.000Z",
+      "pricing": "$69 for full access; rudiments are free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/every-layout/v2-identity.png",
+        "alt": "Every Layout 首页左侧第三版封面，右侧 Learn to write better, resilient CSS 与 Buy Every Layout For $69",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/every-layout.json",
+      "designMdUrl": "/site/every-layout.md",
+      "registryUrl": "/r/every-layout.json"
     },
     {
       "entryId": "flowbite",
@@ -2298,6 +2539,96 @@
       "registryUrl": "/r/hover-dev.json"
     },
     {
+      "entryId": "iconoir",
+      "name": "Iconoir",
+      "domain": "iconoir.com",
+      "homepage": "https://iconoir.com/",
+      "descriptionZh": "Luca Burgio 发起的开源线型图标库，按 24×24 网格绘制，可在官网浏览并提供 SVG、字体、React、Vue、Flutter、Figma 与 Framer 包；仓库与页脚均标 MIT，无付费档。",
+      "takeawayZh": "搜线型图标，复制 SVG 或装进 React",
+      "noteZh": "我们进首页，大标题下面四块写着免费。真正该先点的是 Documentation：侧栏把 React、Vue、Flutter 列成库。我们打开 React 页，安装表下面就是 import { Iconoir }，还能复制。适合要免费线型、装包或复制 SVG 的人。页脚写 MIT，没有付费档。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "icon",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "search",
+          "copy",
+          "install",
+          "download",
+          "preview"
+        ],
+        "media": [
+          "icon",
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "figma",
+          "framer"
+        ],
+        "technologies": [
+          "react",
+          "vue",
+          "flutter",
+          "svg",
+          "react-native",
+          "css"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "asset-library",
+          "searchable-directory"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "visual-assets",
+      "subcategory": "icons-symbols",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/iconoir-icons/iconoir/blob/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-05T16:52:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/iconoir/v2-identity.png",
+        "alt": "Iconoir 首页大标题 Say hello to your new free icon library，下方 1671、100% free 四块数字",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/iconoir.json",
+      "designMdUrl": "/site/iconoir.md",
+      "registryUrl": "/r/iconoir.json"
+    },
+    {
       "entryId": "inclusive-components",
       "name": "Inclusive Components",
       "domain": "inclusive-components.design",
@@ -2460,6 +2791,91 @@
       "detailUrl": "/data/site/laws-of-ux.json",
       "designMdUrl": "/site/laws-of-ux.md",
       "registryUrl": "/r/laws-of-ux.json"
+    },
+    {
+      "entryId": "lottiefiles",
+      "name": "LottieFiles",
+      "domain": "lottiefiles.com",
+      "homepage": "https://lottiefiles.com/",
+      "descriptionZh": "LottieFiles 官方文档门户，介绍 Creator、dotLottie 运行时与格式规格。React 等播放器 MIT。主站本次被 Cloudflare 挡住。",
+      "takeawayZh": "装官方播放器，把 Lottie 动画嵌进页面",
+      "noteZh": "主站遇到 Cloudflare 挑战，我们改看文档门户。首页三张卡：Creator、Runtimes、格式。Runtimes 页列出 React 到 Android 播放器，并写 MIT。我们打开 React 入门：安装命令下面就是 DotLottieReact。适合要把 Lottie 嵌进应用的人。播放器开源；市场和 Creator 价格这次没进去看。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "code-library",
+          "video"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "learn"
+        ],
+        "media": [
+          "motion",
+          "video"
+        ],
+        "platforms": [
+          "web",
+          "ios",
+          "android"
+        ],
+        "technologies": [
+          "lottie",
+          "react",
+          "vue",
+          "svelte",
+          "javascript",
+          "typescript"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "visual-implementation",
+      "subcategory": "motion-interaction-code",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/LottieFiles/dotlottie-web/blob/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-05T16:52:00.000Z",
+      "pricing": "unknown",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/lottiefiles/v2-identity.png",
+        "alt": "LottieFiles 文档首页 Lottie Documentation，三张卡分别是 Creator、dotLottie Runtimes、格式规格",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/lottiefiles.json",
+      "designMdUrl": "/site/lottiefiles.md",
+      "registryUrl": "/r/lottiefiles.json"
     },
     {
       "entryId": "lucide",
@@ -4010,6 +4426,88 @@
       "registryUrl": "/r/react-aria.json"
     },
     {
+      "entryId": "recharts",
+      "name": "Recharts",
+      "domain": "recharts.github.io",
+      "homepage": "https://recharts.github.io/",
+      "descriptionZh": "Recharts Group 维护的 React 图表库，用解耦组件组合 SVG 图表，底层依赖 D3 子模块。npm 包 recharts 采用 MIT。官网现为 recharts.github.io。",
+      "takeawayZh": "用 React 组件拼折线、坐标轴和提示",
+      "noteZh": "我们进新站 recharts.github.io，标题下就是一条可交互折线。Getting Started 左侧是指南目录，右边第一步只有 Line 和数据。我们打开 Simple Line Chart：图和源码叠在一起，还能复制。适合在 React 里用组件拼图表的人。仓库 MIT，文档公开，没有付费墙。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "code-library",
+          "component"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "preview"
+        ],
+        "media": [
+          "data-visualization",
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "typescript",
+          "svg"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en",
+          "zh-hans"
+        ]
+      },
+      "primaryCategory": "visual-implementation",
+      "subcategory": "data-visualization-code",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://github.com/recharts/recharts/blob/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-05T16:52:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/recharts/v2-identity.png",
+        "alt": "Recharts 首页深色底，标题 A composable charting library built on React components，下方双折线示例",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/recharts.json",
+      "designMdUrl": "/site/recharts.md",
+      "registryUrl": "/r/recharts.json"
+    },
+    {
       "entryId": "remixicon",
       "name": "Remix Icon",
       "domain": "remixicon.com",
@@ -4092,6 +4590,96 @@
       "detailUrl": "/data/site/remixicon.json",
       "designMdUrl": "/site/remixicon.md",
       "registryUrl": "/r/remixicon.json"
+    },
+    {
+      "entryId": "rive",
+      "name": "Rive",
+      "domain": "rive.app",
+      "homepage": "https://rive.app/",
+      "descriptionZh": "Rive 的交互体验引擎，在编辑器里设计、做动画并写状态机，再用开源运行时装进 Web、iOS、Android 与游戏引擎。编辑器可免费创建；导出 .riv 上线从 Cadet 每月 9 美元/席位起。官方运行时 MIT。",
+      "takeawayZh": "在编辑器里做交互动画，运行时开源可装",
+      "noteZh": "我们进首页，大标题下面一排 Product UI、Game UI 卡片。Runtimes 页把 Web、iOS、Android、Unity 排成 logo 墙。GitHub rive-wasm 侧栏标 MIT，证明能装进网页。适合要交互动画且设计开发共用一份文件的人。编辑器可免费练；要导出上线，定价页从 Cadet 档起。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "edit",
+          "prototype",
+          "install",
+          "export"
+        ],
+        "media": [
+          "motion",
+          "ui"
+        ],
+        "platforms": [
+          "web",
+          "ios",
+          "android",
+          "framer",
+          "webflow"
+        ],
+        "technologies": [
+          "react",
+          "react-native",
+          "flutter",
+          "javascript",
+          "webgl"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "freemium",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT",
+          "proprietary"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "creation-tools",
+      "subcategory": "video-motion-audio-creation",
+      "license": "MIT",
+      "licenses": [
+        "MIT",
+        "proprietary"
+      ],
+      "licenseSourceUrl": "https://rive.app/docs/runtimes/getting-started",
+      "access": [
+        "freemium",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-05T16:52:00.000Z",
+      "pricing": "Editor free to create; Cadet from $9/seat/mo to export and ship",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/rive/v2-identity.png",
+        "alt": "Rive 首页黑底大标题 THE INTERACTIVE EXPERIENCE ENGINE，下方 Product UI、Game UI、Mobile Apps 卡片",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/rive.json",
+      "designMdUrl": "/site/rive.md",
+      "registryUrl": "/r/rive.json"
     },
     {
       "entryId": "shadcn-ui",
@@ -4214,6 +4802,86 @@
       "detailUrl": "/data/site/shadcn-ui.json",
       "designMdUrl": "/site/shadcn-ui.md",
       "registryUrl": "/r/shadcn-ui.json"
+    },
+    {
+      "entryId": "simple-icons",
+      "name": "Simple Icons",
+      "domain": "simpleicons.org",
+      "homepage": "https://simpleicons.org/",
+      "descriptionZh": "社区维护的品牌 SVG 图标集，官网可搜索并下载单个图标，npm 包 simple-icons 同步提供；项目以 CC0-1.0 发布，但免责声明写明单个品牌图标可能另有许可和商标限制。",
+      "takeawayZh": "搜品牌 SVG，下载前先看商标限制",
+      "noteZh": "我们打开官网，深色网格里每张卡都有品牌色和下载按钮。GitHub 仓库侧栏标 CC0-1.0，icons 目录就在文件列表里。我们点开 DISCLAIMER：项目本身是 CC0，但单个品牌图标可能另有许可和商标。适合要品牌符号的人；用之前按卡片上的许可和品牌指南核一遍，别把商标当自由素材。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "icon"
+        ],
+        "actions": [
+          "browse",
+          "search",
+          "download",
+          "copy"
+        ],
+        "media": [
+          "icon"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "svg",
+          "javascript"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "designer",
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "CC0-1.0"
+        ],
+        "contentOrganization": [
+          "asset-library",
+          "searchable-directory"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "visual-assets",
+      "subcategory": "icons-symbols",
+      "license": "CC0-1.0",
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "licenseSourceUrl": "https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-05T16:52:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/simple-icons/v2-identity.png",
+        "alt": "Simple Icons 深色首页，搜索框下是 Sega、ZCOOL 等品牌 SVG 卡片，带色值和下载按钮",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/simple-icons.json",
+      "designMdUrl": "/site/simple-icons.md",
+      "registryUrl": "/r/simple-icons.json"
     },
     {
       "entryId": "tabler-icons",

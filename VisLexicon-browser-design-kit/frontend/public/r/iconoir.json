@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T17:48:31.698Z",
+  "entryId": "iconoir",
+  "entityId": "entity-iconoir",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://iconoir.com/",
+    "finalUrl": "https://iconoir.com/",
+    "checkedAt": "2026-09-05T16:52:00.000Z"
+  },
+  "editorial": {
+    "name": "Iconoir",
+    "descriptionZh": "Luca Burgio 发起的开源线型图标库，按 24×24 网格绘制，可在官网浏览并提供 SVG、字体、React、Vue、Flutter、Figma 与 Framer 包；仓库与页脚均标 MIT，无付费档。",
+    "takeawayZh": "搜线型图标，复制 SVG 或装进 React",
+    "noteZh": "我们进首页，大标题下面四块写着免费。真正该先点的是 Documentation：侧栏把 React、Vue、Flutter 列成库。我们打开 React 页，安装表下面就是 import { Iconoir }，还能复制。适合要免费线型、装包或复制 SVG 的人。页脚写 MIT，没有付费档。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "icons-symbols",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Iconoir 定义为可在 SVG、字体、React、Flutter、Figma 使用的免费图标库，主要交付物是图标素材。",
+        "evidenceUrl": "https://iconoir.com/"
+      },
+      {
+        "statement": "iconoir-react 文档给出 npm i iconoir-react 和 import { Iconoir } from 'iconoir-react'，证明单个图标可以当 React 组件拿走。",
+        "evidenceUrl": "https://iconoir.com/docs/packages/iconoir-react"
+      }
+    ],
+    "confirmedAt": "2026-09-06T14:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "icon",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "copy",
+      "install",
+      "download",
+      "preview"
+    ],
+    "media": [
+      "icon",
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma",
+      "framer"
+    ],
+    "technologies": [
+      "react",
+      "vue",
+      "flutter",
+      "svg",
+      "react-native",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "asset-library",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://iconoir.com/",
+      "finalUrl": "https://iconoir.com/",
+      "title": "Iconoir | Free Icons",
+      "selectionRationale": "先看首页：Say hello 大标题，下面 1671 和 100% free。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/iconoir/v2-identity.png",
+        "sha256": "783ed4c58f2cc91dbd32c4e32efaf25156b5832b1a4b3318967126f214dc7f14",
+        "width": 1280,
+        "height": 900,
+        "bytes": 164044,
+        "alt": "Iconoir 首页大标题 Say hello to your new free icon library，下方 1671、100% free 四块数字"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://iconoir.com/docs/introduction",
+      "finalUrl": "https://iconoir.com/docs/introduction",
+      "title": "Iconoir | Free Icons",
+      "selectionRationale": "再翻 Introduction：侧栏把 React 到 CSS 列成库。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/iconoir/v2-breadth.png",
+        "sha256": "ae63ba520e8c1795af2fe14236c6c4eb4da74bdcc02e8df87b78ff09872da77b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 88705,
+        "alt": "Iconoir 文档 Introduction，左侧 Libraries 列出 React 到 CSS，正文是 npm 安装表"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://iconoir.com/docs/packages/iconoir-react",
+      "finalUrl": "https://iconoir.com/docs/packages/iconoir-react",
+      "title": "Iconoir | Free Icons",
+      "selectionRationale": "最后开 React 包页：安装命令下面就能复制 import { Iconoir }。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/iconoir/v2-proof.png",
+        "sha256": "5ea4fdf91ae0fc45430e197aa9f217c0f4f9f2096f5e1660c33126609948690e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 93346,
+        "alt": "Iconoir React 文档，安装表与 import { Iconoir } from 'iconoir-react' 代码块"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Luca Burgio",
+      "sourceUrl": "https://github.com/iconoir-icons/iconoir/blob/main/LICENSE",
+      "evidence": "仓库 LICENSE 版权行为 Copyright (c) 2021 Luca Burgio。官网分享文案写 No premium options or signups by @burgioluca。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Iconoir",
+      "sourceUrl": "https://iconoir.com/",
+      "evidence": "页脚写 Parts of this content are ©2020-2026 by individual Iconoir contributors。GitHub 组织为 iconoir-icons。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/iconoir-icons/iconoir",
+      "sourceUrl": "https://iconoir.com/",
+      "evidence": "页脚 GitHub Repository 链到 https://github.com/iconoir-icons/iconoir。文档 Introduction 的徽章也指向该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/iconoir-icons/iconoir/blob/main/LICENSE",
+      "evidence": "LICENSE 以 MIT License 开头，Copyright (c) 2021 Luca Burgio。官网页脚写 Content available under a MIT License。该许可覆盖 iconoir 仓库源码与图标，不另设付费档。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://iconoir.com/",
+      "evidence": "首页写 100% free icons. Iconoir is open source；文档 React 页写 No premium icons, no email sign-up, no newsletters。可公开浏览并安装，捐款走 Open Collective，未见付费墙。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/iconoir",
+    "designMdUrl": "https://vislexicon.com/site/iconoir.md",
+    "checkedAt": "2026-09-05T16:52:00.000Z",
+    "license": "MIT"
+  }
+}

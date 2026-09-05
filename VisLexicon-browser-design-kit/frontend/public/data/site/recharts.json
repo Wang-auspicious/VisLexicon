@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T17:48:31.698Z",
+  "entryId": "recharts",
+  "entityId": "entity-recharts",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "recharts.github.io",
+  "official": {
+    "inputUrl": "https://recharts.org/",
+    "finalUrl": "https://recharts.github.io/",
+    "checkedAt": "2026-09-05T16:52:00.000Z"
+  },
+  "editorial": {
+    "name": "Recharts",
+    "descriptionZh": "Recharts Group 维护的 React 图表库，用解耦组件组合 SVG 图表，底层依赖 D3 子模块。npm 包 recharts 采用 MIT。官网现为 recharts.github.io。",
+    "takeawayZh": "用 React 组件拼折线、坐标轴和提示",
+    "noteZh": "我们进新站 recharts.github.io，标题下就是一条可交互折线。Getting Started 左侧是指南目录，右边第一步只有 Line 和数据。我们打开 Simple Line Chart：图和源码叠在一起，还能复制。适合在 React 里用组件拼图表的人。仓库 MIT，文档公开，没有付费墙。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "新官网把 Recharts 定义为用解耦 React 组件组合图表的库，而不是现成看板产品。",
+        "evidenceUrl": "https://recharts.github.io/"
+      },
+      {
+        "statement": "Simple Line Chart 示例同时给出双系列折线预览和可复制的 Line、XAxis、Tooltip 源码。",
+        "evidenceUrl": "https://recharts.github.io/en-US/examples/SimpleLineChart/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T14:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript",
+      "svg"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en",
+      "zh-hans"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://recharts.github.io/",
+      "finalUrl": "https://recharts.github.io/",
+      "title": "Recharts",
+      "selectionRationale": "先看新首页：标题下面就是一条可交互折线。",
+      "shot": {
+        "src": "/shots/recharts/v2-identity.png",
+        "sha256": "9921615a65231c22047d2281ed1f10f1f5189e1f91cf78be5a1639bd56d71797",
+        "width": 1280,
+        "height": 900,
+        "bytes": 67027,
+        "alt": "Recharts 首页深色底，标题 A composable charting library built on React components，下方双折线示例"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://recharts.github.io/en-US/guide/getting-started/",
+      "finalUrl": "https://recharts.github.io/en-US/guide/getting-started/",
+      "title": "Getting Started",
+      "selectionRationale": "再翻 Getting Started：左侧指南目录，右边第一步只有 Line。",
+      "shot": {
+        "src": "/shots/recharts/v2-breadth.png",
+        "sha256": "cad9b6b4150c3fc527bdca54bbf0b84eaea16910dfc333153d75d0d8362a981d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 80915,
+        "alt": "Recharts Getting Started，左侧 Guide 目录，右侧折线示例和 LineChart 源码"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://recharts.github.io/en-US/examples/SimpleLineChart/",
+      "finalUrl": "https://recharts.github.io/en-US/examples/SimpleLineChart/",
+      "title": "Simple Line Chart",
+      "selectionRationale": "最后开 Simple Line Chart：图在上面，源码在下面，能复制。",
+      "shot": {
+        "src": "/shots/recharts/v2-proof.png",
+        "sha256": "26e25032bb2309cc52fa4ca8d31278b929ad0cba35a197dd171e1ad3d5b321ba",
+        "width": 1280,
+        "height": 900,
+        "bytes": 148511,
+        "alt": "Simple Line Chart 示例，橙绿双折线预览下方是 Line、XAxis、Tooltip 源码"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "recharts group",
+      "sourceUrl": "https://github.com/recharts/recharts/blob/main/package.json",
+      "evidence": "package.json 的 author 字段为 name: recharts group。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Recharts Group",
+      "sourceUrl": "https://github.com/recharts/recharts",
+      "evidence": "仓库 README 写 Copyright (c) 2015-2026 Recharts Group。LICENSE 为 Copyright (c) 2015-present recharts。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/recharts/recharts",
+      "sourceUrl": "https://github.com/recharts/recharts/blob/main/package.json",
+      "evidence": "package.json 的 repository.url 为 git+https://github.com/recharts/recharts.git。新官网导航有 GitHub 链接。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/recharts/recharts/blob/main/LICENSE",
+      "evidence": "LICENSE 以 The MIT License (MIT) 开头，Copyright (c) 2015-present recharts。package.json 的 license 字段为 MIT。该许可覆盖 recharts 仓库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://recharts.github.io/",
+      "evidence": "文档与示例公开可读，首页提供 Install v3.10.1。README 写 npm install recharts。未见付费墙。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/recharts.md",
+  "registryUrl": "/r/recharts.json"
+}

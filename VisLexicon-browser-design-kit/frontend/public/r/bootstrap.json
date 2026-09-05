@@ -1,0 +1,194 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-05T17:48:31.698Z",
+  "entryId": "bootstrap",
+  "entityId": "entity-bootstrap",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://getbootstrap.com/",
+    "finalUrl": "https://getbootstrap.com/",
+    "checkedAt": "2026-09-05T16:52:00.000Z"
+  },
+  "editorial": {
+    "name": "Bootstrap",
+    "descriptionZh": "The Bootstrap Authors 维护的 HTML、CSS 与 JS 前端工具包，现为 v5.3.8，含栅格、组件和 JavaScript 插件。仓库与 License FAQs 均标 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "用 CDN 装上组件，先看手风琴怎么写",
+    "noteZh": "首页截图时连接被掐，我们改看 Getting started：标题写 frontend toolkit，下面 CDN 快速开始。Examples 页先是 CDN、Sass、React、Vite 起步格子。我们打开 Accordion：现场手风琴和完整 HTML。适合要现成 CSS 组件和示例页的人。MIT，文档写明保留版权声明即可用。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "design-system-suites"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "Getting started 把 Bootstrap 定义为用 Sass、栅格和 JavaScript 插件搭建站点的前端工具包，而不是单一组件演示。",
+        "evidenceUrl": "https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+      },
+      {
+        "statement": "Accordion 文档给出可展开的现场示例和完整 HTML，证明单个组件可以复制进页面。",
+        "evidenceUrl": "https://getbootstrap.com/docs/5.3/components/accordion/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T14:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
+      "finalUrl": "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
+      "title": "Get started with Bootstrap · Bootstrap v5.3",
+      "selectionRationale": "先看 Getting started：toolkit 那句，下面就是 CDN 起步。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/bootstrap/v2-identity.png",
+        "sha256": "c18dd499ceca54888b1d6ff7ed74c98fe2aad423831020be4ee492a1c8f33c77",
+        "width": 1280,
+        "height": 900,
+        "bytes": 123186,
+        "alt": "Bootstrap Getting started 页，标题 Get started with Bootstrap，下方 Quick start 与 index.html 代码块"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://getbootstrap.com/docs/5.3/examples/",
+      "finalUrl": "https://getbootstrap.com/docs/5.3/examples/",
+      "title": "Examples · Bootstrap v5.3",
+      "selectionRationale": "再翻 Examples：CDN、Sass、React、Vite 排成格子。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/bootstrap/v2-breadth.png",
+        "sha256": "4b159b0723995881290feb8c72182f529240724f776d139520193d66cbe4a180",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116901,
+        "alt": "Bootstrap Examples 页，Starters 区列出 CDN starter、Sass & JS、Parcel、React、Vite"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://getbootstrap.com/docs/5.3/components/accordion/",
+      "finalUrl": "https://getbootstrap.com/docs/5.3/components/accordion/",
+      "title": "Accordion · Bootstrap v5.3",
+      "selectionRationale": "最后开 Accordion：现场手风琴和完整 HTML 都在。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/bootstrap/v2-proof.png",
+        "sha256": "7ff7d630b6af6b356996b2ac58922535c948ae40dd0dfda2125669c179953857",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117680,
+        "alt": "Bootstrap Accordion 文档，左侧组件目录，正文 Example 下是已展开的 Accordion Item #1"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Mark Otto and Jacob Thornton",
+      "sourceUrl": "https://getbootstrap.com/docs/5.3/about/team/",
+      "evidence": "Team 页写 Bootstrap is maintained by the founding team，并列 Mark Otto @mdo 与 Jacob Thornton @fat 为创始成员。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "The Bootstrap Authors",
+      "sourceUrl": "https://github.com/twbs/bootstrap/blob/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2011-2026 The Bootstrap Authors。GitHub 组织为 twbs。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/twbs/bootstrap",
+      "sourceUrl": "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
+      "evidence": "Getting started 页 View on GitHub 链到 twbs/bootstrap 的 introduction.mdx。LICENSE 与文档均指向 https://github.com/twbs/bootstrap。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://getbootstrap.com/docs/5.3/about/license/",
+      "evidence": "License FAQs 写 Bootstrap is released under the MIT license and is copyright 2025。仓库 LICENSE 为 The MIT License (MIT)，Copyright (c) 2011-2026 The Bootstrap Authors。该许可覆盖 Bootstrap 的 CSS 与 JavaScript，要求保留版权声明。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://getbootstrap.com/docs/5.3/about/license/",
+      "evidence": "License FAQs 写 Freely download and use Bootstrap, in whole or in part, for personal, private, company internal, or commercial purposes。文档与示例公开可读，未见付费墙。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-04",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/bootstrap",
+    "designMdUrl": "https://vislexicon.com/site/bootstrap.md",
+    "checkedAt": "2026-09-05T16:52:00.000Z",
+    "license": "MIT"
+  }
+}
