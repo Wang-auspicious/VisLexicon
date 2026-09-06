@@ -31,10 +31,9 @@ function Pill({ tone, children }) {
   return <span className={`sd-pill sd-pill-${tone}`}>{children}</span>
 }
 
-function MetaGroup({ label, tone, items, extra }) {
-  if (!items.length && !extra) return null
+function MetaGroup({ area, label, tone, items, extra }) {
   return (
-    <div className="sd-meta-group">
+    <div className={`sd-meta-group sd-meta-${area}`}>
       <span className="sd-meta-k">{label}</span>
       <div className="sd-pills">
         {items.map((item) => (
@@ -121,19 +120,16 @@ export default function DossierHead({ data }) {
     <section className="sd-dossier">
       {summary ? <p className="sd-lede">{summary}</p> : null}
       <div className="sd-headgrid">
-        <div className="sd-meta-col">
-          <MetaGroup label={`${t('technologies')}${colon}`} tone="tech" items={tech} />
-          <MetaGroup label={`${t('licenseMedia')}${colon}`} tone="meta" items={licenseMedia} />
-        </div>
-        <div className="sd-meta-col">
-          <MetaGroup
-            label={`${t('catalog')}${colon}`}
-            tone="comp"
-            items={shownCatalog}
-            extra={catalogExtra}
-          />
-          <MetaGroup label={`${t('style')}${colon}`} tone="style" items={styles} />
-        </div>
+        <MetaGroup area="tech" label={`${t('technologies')}${colon}`} tone="tech" items={tech} />
+        <MetaGroup
+          area="catalog"
+          label={`${t('catalog')}${colon}`}
+          tone="comp"
+          items={shownCatalog}
+          extra={catalogExtra}
+        />
+        <MetaGroup area="license" label={`${t('licenseMedia')}${colon}`} tone="meta" items={licenseMedia} />
+        <MetaGroup area="style" label={`${t('style')}${colon}`} tone="style" items={styles} />
       </div>
     </section>
   )
