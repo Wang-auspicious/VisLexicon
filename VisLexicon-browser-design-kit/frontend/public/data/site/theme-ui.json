@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:19:31.540Z",
+  "entryId": "theme-ui",
+  "entityId": "entity-theme-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "theme-ui.com",
+  "official": {
+    "inputUrl": "https://theme-ui.com/",
+    "finalUrl": "https://theme-ui.com/",
+    "checkedAt": "2026-09-06T15:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Theme UI",
+    "descriptionZh": "Brent Jackson 维护的 React 主题框架 Theme UI，现为 v0.17.4。用 theme 对象与 sx 属性约束样式，并附原语组件。仓库标 MIT。",
+    "takeawayZh": "npm i theme-ui，先抄 Button",
+    "noteZh": "theme-ui.com 首页写 The Design Graph Framework，徽章 MIT、npm v0.17.4。Components 页给出内置组件与 Beep 示例。Button 页 import { Button } from theme-ui，现场青绿 Beep 与紫色 Boop。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Theme UI 定义为 library for creating themeable user interfaces based on constraint-based design principles，并列出 30+ Built-in primitive UI components。",
+        "evidenceUrl": "https://theme-ui.com/"
+      },
+      {
+        "statement": "Button 文档给出 import { Button } from 'theme-ui' 与 Beep/Boop 现场按钮，证明交付物包含可复制的界面组件。",
+        "evidenceUrl": "https://theme-ui.com/components/button"
+      }
+    ],
+    "confirmedAt": "2026-09-06T18:10:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://theme-ui.com/",
+      "finalUrl": "https://theme-ui.com/",
+      "title": "Theme UI: The Design Graph Framework",
+      "selectionRationale": "首页写 The Design Graph Framework，并标 MIT。",
+      "shot": {
+        "src": "/shots/theme-ui/v2-identity.png",
+        "sha256": "3e0c03857345053dc4af34607ca0de7f44eb8d5de49e63feed3b23d394fe9d83",
+        "width": 1280,
+        "height": 900,
+        "bytes": 77411,
+        "alt": "Theme UI 深色首页：The Design Graph Framework，彩色节点图，Documentation 与 GitHub，license MIT，npm v0.17.4"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://theme-ui.com/components",
+      "finalUrl": "https://theme-ui.com/components",
+      "title": "Components – Theme UI",
+      "selectionRationale": "Components 目录列出 Box、Button、Forms 等原语。",
+      "shot": {
+        "src": "/shots/theme-ui/v2-breadth.png",
+        "sha256": "e49f05966b9e3e7fcd00e33c427b5640508742fadb49c83c712fa20a952f2273",
+        "width": 1280,
+        "height": 900,
+        "bytes": 50651,
+        "alt": "Theme UI Components：内置组件说明、Beep 按钮示例与 Box/Flex 代码，左侧 Button/Card 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://theme-ui.com/components/button",
+      "finalUrl": "https://theme-ui.com/components/button",
+      "title": "Button – Theme UI",
+      "selectionRationale": "Button 页给出 theme-ui 导入与 Beep、Boop 现场按钮。",
+      "shot": {
+        "src": "/shots/theme-ui/v2-proof.png",
+        "sha256": "ef2d53e043fdccda0d3fac12669bb2746e5a2a35bb4d22fd43ca26847023f08c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 40278,
+        "alt": "Theme UI Button：import Button from theme-ui，青绿 Beep 与紫色 Boop 现场按钮"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Brent Jackson",
+      "sourceUrl": "https://raw.githubusercontent.com/system-ui/theme-ui/stable/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2019 Brent Jackson。package.json author 为 Brent Jackson <jxnblk@gmail.com>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "system-ui",
+      "sourceUrl": "https://theme-ui.com/",
+      "evidence": "GitHub 组织 system-ui 维护仓库 system-ui/theme-ui。首页 GitHub 链指向该组织。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/system-ui/theme-ui",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/theme-ui@0.17.4/package.json",
+      "evidence": "package.json repository 为 system-ui/theme-ui。首页 GitHub 链为 https://github.com/system-ui/theme-ui。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/system-ui/theme-ui/stable/LICENSE.md",
+      "evidence": "LICENSE.md 标题 The MIT License (MIT)，Copyright (c) 2019 Brent Jackson。package.json license 为 MIT。首页徽章写 MIT license。覆盖 Theme UI 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://theme-ui.com/getting-started",
+      "evidence": "Getting Started 写 npm install theme-ui @emotion/react。文档与 Button 示例公开可读。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "theme-ui",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/theme-ui@0.17.4/package.json",
+      "evidence": "package.json name 为 theme-ui，version 0.17.4。Getting Started 写 npm install theme-ui @emotion/react。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/theme-ui.md",
+  "registryUrl": "/r/theme-ui.json"
+}

@@ -818,6 +818,62 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'ng add @nebular/theme' }],
     },
   },
+  filepond: {
+    lede: { zh: 'JavaScript 文件上传库。核心 MIT，Pintura 另售。', en: 'JavaScript file-upload library. Core is MIT; Pintura is paid.' },
+    style: { zh: '深色全出血营销。超大无衬线标题。居中上传槽。青色 GitHub 按钮。黄色 Beta 胶囊。', en: 'Dark full-bleed marketing. Oversized sans title. Centered upload slot. Cyan GitHub button. Yellow beta pill.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install filepond' }],
+      en: [{ k: 'CLI', v: 'npm install filepond' }],
+    },
+  },
+  'bunny-fonts': {
+    lede: { zh: '隐私优先网页字体目录。字族许可各异。', en: 'Privacy-first web font catalog. Family licenses vary.' },
+    style: { zh: '浅色产品说明。大号无衬线标题。扁平插画。蓝字标。', en: 'Light product explainer. Large sans title. Flat illustration. Blue wordmark.' },
+    acquire: {
+      zh: [{ k: '替换主机', v: 'fonts.bunny.net/css' }],
+      en: [{ k: 'Host swap', v: 'fonts.bunny.net/css' }],
+    },
+  },
+  spartan: {
+    lede: { zh: 'Angular 无样式原语。MIT。用 CLI 写入皮肤。', en: 'Unstyled Angular primitives. MIT. CLI writes the skin.' },
+    style: { zh: '深色全出血。超大无衬线标题。标本卡网格。低对比导航。', en: 'Dark full-bleed. Oversized sans title. Specimen-card grid. Low-contrast nav.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'ng g @spartan-ng/cli:ui button' }],
+      en: [{ k: 'CLI', v: 'ng g @spartan-ng/cli:ui button' }],
+    },
+  },
+  'once-ui': {
+    lede: { zh: 'Next.js 设计系统。核心 MIT，Pro 另售。', en: 'Next.js design system. Core is MIT; Pro is paid.' },
+    style: { zh: '深色全出血营销。超大无衬线标题。青绿边缘光。语义布局代码标本。', en: 'Dark full-bleed marketing. Oversized sans title. Mint edge glow. Semantic layout code specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npx create-once-ui-app@latest' }],
+      en: [{ k: 'CLI', v: 'npx create-once-ui-app@latest' }],
+    },
+  },
+  'theme-ui': {
+    lede: { zh: 'React 主题框架。MIT。', en: 'React theming framework. MIT.' },
+    style: { zh: '深色文档营销。彩色节点图。超大无衬线标题。白底双按钮。徽章条。', en: 'Dark documentation marketing. Colored node graph. Oversized sans title. Dual white buttons. Badge row.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install theme-ui' }],
+      en: [{ k: 'CLI', v: 'npm install theme-ui' }],
+    },
+  },
+  cropperjs: {
+    lede: { zh: 'JavaScript 图像裁剪库。MIT。', en: 'JavaScript image cropper. MIT.' },
+    style: { zh: '深色文档。超大无衬线标题。蓝标。三张特性卡。页脚 MIT。', en: 'Dark docs. Oversized sans title. Blue mark. Three feature cards. MIT footer.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install cropperjs' }],
+      en: [{ k: 'CLI', v: 'npm install cropperjs' }],
+    },
+  },
+  colorbrewer: {
+    lede: { zh: '地图配色工具。Apache-2.0。', en: 'Cartographic color tool. Apache-2.0.' },
+    style: { zh: '浅灰工具台。左侧方案面板。右侧分级设色地图。系统控件。', en: 'Light-gray tool surface. Left-hand scheme panel. Right-hand choropleth. System controls.' },
+    acquire: {
+      zh: [{ k: '导出', v: 'HEX' }],
+      en: [{ k: 'Export', v: 'HEX' }],
+    },
+  },
   grommet: {
     lede: { zh: 'React 组件库。Apache-2.0。', en: 'React component library. Apache-2.0.' },
     style: { zh: '深色全出血。紫环徽标。薄荷绿字标。超大无衬线。几何窗口插画。胶囊导航。', en: 'Dark full-bleed. Purple ring mark. Mint wordmark. Oversized sans. Geometric window illustration. Capsule nav.' },

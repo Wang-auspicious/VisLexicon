@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:19:31.540Z",
+  "entryId": "colorbrewer",
+  "entityId": "entity-colorbrewer",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "colorbrewer2.org",
+  "official": {
+    "inputUrl": "https://colorbrewer2.org/",
+    "finalUrl": "https://colorbrewer2.org/",
+    "checkedAt": "2026-09-06T17:45:00.000Z"
+  },
+  "editorial": {
+    "name": "ColorBrewer",
+    "descriptionZh": "Cynthia Brewer 与 Axis Maps 的地图配色工具 ColorBrewer 2.0。可预览 sequential、diverging、qualitative 方案并导出 HEX。仓库标 Apache-2.0。",
+    "takeawayZh": "为分级设色图挑一套方案",
+    "noteZh": "colorbrewer2.org 默认打开 3-class BuGn sequential，页脚 Cynthia Brewer、Mark Harrower 与宾州州立大学。定性方案切到 12-class Set3。发散方案 11-class RdBu 列出 HEX。工具本身 Apache-2.0；引用须保留作者信息。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "illustrations-vectors",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页标题 COLORBREWER 2.0 color advice for cartography，并给出可切换的分级设色方案。",
+        "evidenceUrl": "https://colorbrewer2.org/"
+      },
+      {
+        "statement": "同一工具可打开 qualitative Set3 与 diverging RdBu，并导出 HEX，证明交付物是可取用的配色方案。",
+        "evidenceUrl": "https://colorbrewer2.org/#type=diverging&scheme=RdBu&n=11"
+      }
+    ],
+    "confirmedAt": "2026-09-06T18:10:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "image"
+    ],
+    "actions": [
+      "browse",
+      "compare",
+      "copy",
+      "export"
+    ],
+    "media": [
+      "image",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "discovery",
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer",
+      "researcher"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://colorbrewer2.org/",
+      "finalUrl": "https://colorbrewer2.org/",
+      "title": "ColorBrewer: Color Advice for Maps",
+      "selectionRationale": "默认首页展示 ColorBrewer 2.0 与 3-class BuGn。",
+      "shot": {
+        "src": "/shots/colorbrewer/v2-identity.png",
+        "sha256": "ef8eb84e81564542af89ed1ea55fbdc7f1d16533dca57939e7c914668b129fb6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 403140,
+        "alt": "ColorBrewer 2.0：3-class BuGn sequential，HEX #e5f5f9 #99d8c9 #2ca25f，页脚宾州州立大学"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://colorbrewer2.org/#type=qualitative&scheme=Set3&n=12",
+      "finalUrl": "https://colorbrewer2.org/#type=qualitative&scheme=Set3&n=12",
+      "title": "ColorBrewer: Color Advice for Maps",
+      "selectionRationale": "定性方案 12-class Set3 展示多类色带。",
+      "shot": {
+        "src": "/shots/colorbrewer/v2-breadth.png",
+        "sha256": "3a0921ec68470e42f0918c5fe59de5e522631a060b555320f1397ec00e634b5c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 417383,
+        "alt": "ColorBrewer qualitative：12-class Set3，多色分级地图与 HEX 列表"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://colorbrewer2.org/#type=diverging&scheme=RdBu&n=11",
+      "finalUrl": "https://colorbrewer2.org/#type=diverging&scheme=RdBu&n=11",
+      "title": "ColorBrewer: Color Advice for Maps",
+      "selectionRationale": "发散方案 11-class RdBu 给出可复制 HEX。",
+      "shot": {
+        "src": "/shots/colorbrewer/v2-proof.png",
+        "sha256": "1526f4419235acad42437bb832c78c45a5ec255891366ad56d14bd554d56bd6d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 407756,
+        "alt": "ColorBrewer diverging：11-class RdBu，红-白-蓝地图，HEX #67001f 至 #053061"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Cynthia Brewer, Mark Harrower",
+      "sourceUrl": "https://colorbrewer2.org/",
+      "evidence": "页脚写 © Cynthia Brewer, Mark Harrower and The Pennsylvania State University。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Axis Maps",
+      "sourceUrl": "https://github.com/axismaps/colorbrewer/blob/master/README.md",
+      "evidence": "README 写 Built and maintained by Axis Maps。页脚 axismaps 标志。研究归属宾州州立大学。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/axismaps/colorbrewer",
+      "sourceUrl": "https://colorbrewer2.org/",
+      "evidence": "页脚 Source code and feedback 指向 Axis Maps 的 colorbrewer 仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://raw.githubusercontent.com/axismaps/colorbrewer/master/LICENCE.txt",
+      "evidence": "LICENCE.txt 为 Apache License Version 2.0。覆盖 ColorBrewer 网页工具源码。页脚要求保留 Cynthia Brewer、Mark Harrower 与宾州州立大学署名。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://colorbrewer2.org/",
+      "evidence": "工具与三种方案视图公开可读，未见付费墙。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/colorbrewer.md",
+  "registryUrl": "/r/colorbrewer.json"
+}
