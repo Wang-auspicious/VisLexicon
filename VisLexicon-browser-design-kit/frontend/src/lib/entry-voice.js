@@ -645,6 +645,11 @@ const VOICE = {
     style: { zh: '深色文档。青绿标题。npm 徽章条。安装命令。', en: 'Dark docs. Teal title. npm badge row. Install command.' },
     acquire: { zh: [{ k: '命令行', v: 'npm i material-react-table' }], en: [{ k: 'CLI', v: 'npm i material-react-table' }] },
   },
+  gridstack: {
+    lede: { zh: '拖放仪表盘网格。MIT。', en: 'Drag-and-drop dashboard grid. MIT.' },
+    style: { zh: '浅色渐变营销。超大无衬线标题。紫胶囊按钮。', en: 'Light gradient marketing. Oversized sans title. Purple capsule button.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install gridstack' }], en: [{ k: 'CLI', v: 'npm install gridstack' }] },
+  },
   moveable: {
     lede: { zh: '可拖放缩放旋转的变换控件。MIT。', en: 'Draggable, resizable, rotatable transform control. MIT.' },
     style: { zh: '白画布编辑器。标尺。蓝变换框。黑底操作条。', en: 'White editor canvas. Rulers. Blue transform box. Black action bar.' },

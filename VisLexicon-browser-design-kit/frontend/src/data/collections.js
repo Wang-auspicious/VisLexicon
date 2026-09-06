@@ -132,6 +132,7 @@ export const COLLECTIONS = [
       'notistack',
       'fancybox',
       'yet-another-react-lightbox',
+      'gridstack',
     ],
     createdAt: '2026-09-05',
   },
