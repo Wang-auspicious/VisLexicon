@@ -931,6 +931,22 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm install cropperjs' }],
     },
   },
+  uppy: {
+    lede: { zh: '开源 JavaScript 文件上传器。MIT。', en: 'Open-source JavaScript file uploader. MIT.' },
+    style: { zh: '浅色产品营销。粉顶栏。超大无衬线标题。左侧拖放坞。右侧框架代码。', en: 'Light product marketing. Pink top bar. Oversized sans title. Left-hand drop dock. Right-hand framework snippet.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @uppy/core' }],
+      en: [{ k: 'CLI', v: 'npm install @uppy/core' }],
+    },
+  },
+  lightgallery: {
+    lede: { zh: 'JavaScript 图库灯箱。开源 GPLv3，商用须付费许可。', en: 'JavaScript gallery lightbox. OSS is GPLv3; commercial use needs a paid license.' },
+    style: { zh: '浅色营销。超大蓝字标。风景缩略图条。大量留白。', en: 'Light marketing. Oversized blue wordmark. Landscape thumbnail strip. Heavy whitespace.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install lightgallery' }],
+      en: [{ k: 'CLI', v: 'npm install lightgallery' }],
+    },
+  },
   colorbrewer: {
     lede: { zh: '地图配色工具。Apache-2.0。', en: 'Cartographic color tool. Apache-2.0.' },
     style: { zh: '浅灰工具台。左侧方案面板。右侧分级设色地图。系统控件。', en: 'Light-gray tool surface. Left-hand scheme panel. Right-hand choropleth. System controls.' },

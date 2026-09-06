@@ -103,6 +103,8 @@ export const COLLECTIONS = [
       'theme-ui',
       'filepond',
       'cropperjs',
+      'uppy',
+      'lightgallery',
       'grommet',
       'preline',
       'hyperui',

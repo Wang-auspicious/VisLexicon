@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:34:43.678Z",
+  "entryId": "uppy",
+  "entityId": "entity-uppy",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "uppy.io",
+  "official": {
+    "inputUrl": "https://uppy.io/",
+    "finalUrl": "https://uppy.io/",
+    "checkedAt": "2026-09-06T18:40:00.000Z"
+  },
+  "editorial": {
+    "name": "Uppy",
+    "descriptionZh": "Transloadit 维护的 JavaScript 文件上传器 Uppy，核心包 @uppy/core 现为 v6.0.0。仓库标 MIT。可用 npm install @uppy/core。Transloadit 托管服务另售。",
+    "takeawayZh": "装 @uppy/core，再加 Dashboard",
+    "noteZh": "uppy.io 首页写 The open source JavaScript file uploader，左侧拖放坞列出 Dropbox、Drive。Uppy core 页给出 npm install @uppy/core。Dashboard 页说明可插拔上传界面，并链到现场示例。核心 MIT；Transloadit 托管另售。",
+    "pricing": "Free core; Transloadit hosted paid",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Uppy 定义为 open source JavaScript file uploader，并给出现场拖放坞。",
+        "evidenceUrl": "https://uppy.io/"
+      },
+      {
+        "statement": "Dashboard 文档把 Dashboard 定义为可插拔上传界面，证明交付物是可嵌入的上传控件。",
+        "evidenceUrl": "https://uppy.io/docs/dashboard/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T18:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview",
+      "purchase"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source",
+      "paid"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://uppy.io/",
+      "finalUrl": "https://uppy.io/",
+      "title": "Uppy",
+      "selectionRationale": "首页标题与拖放坞说明它是开源 JavaScript 文件上传器。",
+      "shot": {
+        "src": "/shots/uppy/v2-identity.png",
+        "sha256": "af5cf3897ab9e93df73d3d61554f799c36dc1cdfe24e6b7f0ec66108cafead86",
+        "width": 1280,
+        "height": 900,
+        "bytes": 742549,
+        "alt": "Uppy 首页：The open source JavaScript file uploader，左侧 Drop files here 坞，右侧 Build with Agents 代码"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://uppy.io/docs/uppy/",
+      "finalUrl": "https://uppy.io/docs/uppy/",
+      "title": "Uppy core",
+      "selectionRationale": "Uppy core 文档给出 @uppy/core 安装与插件目录。",
+      "shot": {
+        "src": "/shots/uppy/v2-breadth.png",
+        "sha256": "c8c936ef33d8cf284b408f5a0dfdca9d6c1bb060cad6fff05d509c669a00b3fd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 154570,
+        "alt": "Uppy core：npm install @uppy/core，左侧 Companion、User interfaces、Sources 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://uppy.io/docs/dashboard/",
+      "finalUrl": "https://uppy.io/docs/dashboard/",
+      "title": "Dashboard",
+      "selectionRationale": "Dashboard 页说明可插拔上传界面并链到现场示例。",
+      "shot": {
+        "src": "/shots/uppy/v2-proof.png",
+        "sha256": "e1498309c1b53d64a77ffef242e6f536c9736843fcb3d3d823b97c648ca7a074",
+        "width": 1280,
+        "height": 900,
+        "bytes": 159172,
+        "alt": "Uppy Dashboard：powerful responsive and pluggable，TIP 链到 live example，左侧 Drag & Drop 目录"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Transloadit",
+      "sourceUrl": "https://raw.githubusercontent.com/transloadit/uppy/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2019 Transloadit (https://transloadit.com)。首页字标 Uppy by Transloadit。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Transloadit",
+      "sourceUrl": "https://uppy.io/",
+      "evidence": "站点品牌为 Uppy by Transloadit。GitHub 组织 transloadit 维护 uppy 仓。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/transloadit/uppy",
+      "sourceUrl": "https://uppy.io/",
+      "evidence": "文档与 GitHub 星标指向 transloadit/uppy。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/transloadit/uppy/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2019 Transloadit。package.json license 为 MIT。该 MIT 覆盖 Uppy 源码。Transloadit 托管编码服务不在此许可内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free core; Transloadit hosted paid",
+      "sourceUrl": "https://uppy.io/",
+      "evidence": "首页、Uppy core 与 Dashboard 文档公开可读。Transloadit 提供可选托管。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@uppy/core",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@uppy/core/package.json",
+      "evidence": "package.json name 为 @uppy/core，version 6.0.0。Uppy core 页写 npm install @uppy/core。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "存在付费层：Free core; Transloadit hosted paid。"
+    ],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/uppy.md",
+  "registryUrl": "/r/uppy.json"
+}

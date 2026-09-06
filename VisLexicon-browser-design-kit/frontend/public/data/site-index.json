@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-06T16:19:31.540Z",
+  "generatedAt": "2026-09-06T16:34:43.678Z",
   "counts": {
-    "approvedEntries": 172
+    "approvedEntries": 187
   },
   "items": [
     {
@@ -126,6 +126,93 @@
       "detailUrl": "/data/site/21st-dev.json",
       "designMdUrl": "/site/21st-dev.md",
       "registryUrl": "/r/21st-dev.json"
+    },
+    {
+      "entryId": "a11y-dialog",
+      "name": "a11y-dialog",
+      "domain": "a11y-dialog.netlify.app",
+      "homepage": "https://a11y-dialog.netlify.app/",
+      "descriptionZh": "Kitty Giraudel 维护的无样式无障碍对话框脚本 a11y-dialog，包现为 8.1.5。仓库 LICENSE 标 MIT。文档顶栏 Version 8.x.x。",
+      "takeawayZh": "用 data-a11y-dialog 挂无样式对话框",
+      "noteZh": "Introduction 写 accessible dialog windows，徽章 1.7 KB，顶栏 8.x.x。Markup 给出 overlay 与 role=document。Quick start 用 data-a11y-dialog-show 打开。MIT 覆盖 a11y-dialog 源码。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "primitive",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript",
+          "typescript"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "headless-accessible-primitives",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/KittyGiraudel/a11y-dialog/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T15:59:10.035Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/a11y-dialog/v2-identity.png",
+        "alt": "a11y-dialog Introduction：Version 8.x.x，minzipped size 1.7 KB，要点 Follows the Dialog (Modal) pattern",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [
+        {
+          "stageId": "overlay-layers",
+          "termId": "atlas-component-component-dialog-modal",
+          "evidenceUrl": "https://a11y-dialog.netlify.app/usage/quick_start",
+          "note": "Quick start 跟随 WAI-ARIA dialog modal pattern，含 overlay 与打开触发。",
+          "termEn": "Dialog (Modal)",
+          "termZh": null
+        }
+      ],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/a11y-dialog.json",
+      "designMdUrl": "/site/a11y-dialog.md",
+      "registryUrl": "/r/a11y-dialog.json"
     },
     {
       "entryId": "a11y-project",
@@ -4392,6 +4479,87 @@
       "registryUrl": "/r/fabricjs.json"
     },
     {
+      "entryId": "fancybox",
+      "name": "Fancybox",
+      "domain": "fancyapps.com",
+      "homepage": "https://fancyapps.com/fancybox/",
+      "descriptionZh": "Jānis Skarnelis 的 JavaScript 灯箱 Fancybox，文档顶栏 6.1.14，包 @fancyapps/ui。LICENSE.md 为 Fancyapps UI 专有授权，不是 MIT。",
+      "takeawayZh": "给链接加 data-fancybox 打开灯箱",
+      "noteZh": "Introduction 写 JavaScript lightbox，顶栏 6.1.14。Installation 写 npm install @fancyapps/ui。Images 用 data-fancybox 组图。定价 Single €29。LICENSE.md 为专有协议，不是 MIT。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn",
+          "purchase"
+        ],
+        "media": [
+          "ui",
+          "image"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript",
+          "typescript",
+          "css"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "paid",
+          "trial"
+        ],
+        "licenses": [
+          "proprietary"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "page-blocks-embeddable-controls",
+      "license": "proprietary",
+      "licenses": [
+        "proprietary"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/fancyapps/ui/main/LICENSE.md",
+      "access": [
+        "paid",
+        "trial"
+      ],
+      "checkedAt": "2026-09-06T15:59:10.035Z",
+      "pricing": "Paid; Single €29 one-time; staging trial",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/fancybox/v2-identity.png",
+        "alt": "Fancybox Introduction：顶栏 6.1.14，Key Features 列表含 images、iframes、videos，左侧 Introduction 高亮",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/fancybox.json",
+      "designMdUrl": "/site/fancybox.md",
+      "registryUrl": "/r/fancybox.json"
+    },
+    {
       "entryId": "filepond",
       "name": "FilePond",
       "domain": "pqina.nl",
@@ -6276,6 +6444,88 @@
       "registryUrl": "/r/inclusive-components.json"
     },
     {
+      "entryId": "jquery-ui",
+      "name": "jQuery UI",
+      "domain": "jqueryui.com",
+      "homepage": "https://jqueryui.com/",
+      "descriptionZh": "OpenJS Foundation 维护的 jQuery UI，在 jQuery 上提供交互、特效、控件与主题。首页下载盒标 1.14.2。LICENSE.txt 标 MIT。",
+      "takeawayZh": "下 1.14.2，先看手风琴怎么叠",
+      "noteZh": "首页下载盒标 1.14.2，正文写 interactions、widgets 与 themes。Demos 列出 Draggable 到 Accordion。Accordion 现场展开 Section 1。MIT 覆盖库源码；demos 示例另标 CC0。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "download",
+          "install",
+          "preview",
+          "learn"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript",
+          "css"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "general-ui-components",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/jquery/jquery-ui/main/LICENSE.txt",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T20:20:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/jquery-ui/v2-identity.png",
+        "alt": "jQuery UI 首页：正文写 interactions, effects, widgets, and themes，右侧 Download jQuery UI 1.14.2，左侧 Interactions 与 Widgets",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/jquery-ui.json",
+      "designMdUrl": "/site/jquery-ui.md",
+      "registryUrl": "/r/jquery-ui.json"
+    },
+    {
       "entryId": "kbar",
       "name": "kbar",
       "domain": "kbar.vercel.app",
@@ -7066,6 +7316,86 @@
       "registryUrl": "/r/lexical.json"
     },
     {
+      "entryId": "lightgallery",
+      "name": "lightGallery",
+      "domain": "lightgalleryjs.com",
+      "homepage": "https://www.lightgalleryjs.com/",
+      "descriptionZh": "Sachin Choolur 维护的 JavaScript 图库灯箱 lightGallery，npm 现为 v2.9.0。开源使用须兼容 GPLv3；商业站点、主题与应用须购买商业许可。",
+      "takeawayZh": "给缩略图挂上可缩放灯箱",
+      "noteZh": "lightgalleryjs.com 首页标题 lightGallery，定义为 JavaScript image and video lightbox。Get started 列出响应式、插件与触控缩放。Thumbnails 演示页给出风景缩略图与大图。开源 GPLv3；商用须另购许可。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "learn",
+          "preview",
+          "purchase"
+        ],
+        "media": [
+          "ui",
+          "image"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript",
+          "css"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "open-source",
+          "paid"
+        ],
+        "licenses": [
+          "GPL-3.0-only"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "page-blocks-embeddable-controls",
+      "license": "GPL-3.0-only",
+      "licenses": [
+        "GPL-3.0-only"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/sachinchoolur/lightGallery/master/LICENSE",
+      "access": [
+        "open-source",
+        "paid"
+      ],
+      "checkedAt": "2026-09-06T18:40:00.000Z",
+      "pricing": "Free GPLv3 for compatible OSS; paid commercial license",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/lightgallery/v2-identity.png",
+        "alt": "lightGallery 首页：超大蓝字标，JavaScript image and video lightbox，View on GitHub，底部风景缩略图",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/lightgallery.json",
+      "designMdUrl": "/site/lightgallery.md",
+      "registryUrl": "/r/lightgallery.json"
+    },
+    {
       "entryId": "lottiefiles",
       "name": "LottieFiles",
       "domain": "lottiefiles.com",
@@ -7477,6 +7807,89 @@
       "detailUrl": "/data/site/mantine.json",
       "designMdUrl": "/site/mantine.md",
       "registryUrl": "/r/mantine.json"
+    },
+    {
+      "entryId": "material-react-table",
+      "name": "Material React Table",
+      "domain": "material-react-table.com",
+      "homepage": "https://www.material-react-table.com/",
+      "descriptionZh": "Kevin Vandy 维护的 Material React Table，基于 Material UI v6 与 TanStack Table v8。现为 v3.2.1。仓库 LICENSE 标 MIT。",
+      "takeawayZh": "装 material-react-table，表自带筛排",
+      "noteZh": "首页写 Material React Table V3，徽章 MIT，安装 npm i material-react-table。Install 页写 3.x 要 React 18 与 MUI 6。Basic Example 现场表列姓名地址。MIT 覆盖该包源码。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [
+          "admin"
+        ],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "preview",
+          "learn"
+        ],
+        "media": [
+          "ui",
+          "data-visualization"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "typescript",
+          "javascript"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "page-blocks-embeddable-controls",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/KevinVandy/material-react-table/v3/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T20:20:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/material-react-table/v2-identity.png",
+        "alt": "Material React Table 首页：标题 Welcome To Material React Table V3，徽章 license MIT，安装 npm i material-react-table @mui/material",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/material-react-table.json",
+      "designMdUrl": "/site/material-react-table.md",
+      "registryUrl": "/r/material-react-table.json"
     },
     {
       "entryId": "material-ui",
@@ -7914,6 +8327,91 @@
       "registryUrl": "/r/motion.json"
     },
     {
+      "entryId": "moveable",
+      "name": "Moveable",
+      "domain": "daybrush.com",
+      "homepage": "https://daybrush.com/moveable/",
+      "descriptionZh": "Daybrush 维护的变换控件库 Moveable，可拖、缩放、旋转、扭曲。npm 包 moveable 现为 0.53.0。仓库 LICENSE 标 MIT。",
+      "takeawayZh": "new Moveable，给节点加拖放框",
+      "noteZh": "演示页画布里蓝色控制框写 Moveable，徽章 v0.53.0，下方 Download、API、Storybook。文档页标 MIT，网格列出 Draggable 到 Snappable。Draggable 页给出 new Moveable 与 throttleDrag 示例。MIT 覆盖 Moveable 源码。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "download",
+          "copy",
+          "preview",
+          "learn"
+        ],
+        "media": [
+          "ui",
+          "motion"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript",
+          "typescript",
+          "react",
+          "vue",
+          "angular",
+          "svelte"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "visual-implementation",
+      "subcategory": "motion-interaction-code",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/daybrush/moveable/master/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T20:20:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/moveable/v2-identity.png",
+        "alt": "Moveable 演示画布：蓝色控制框内写 Moveable，徽章 version v0.53.0，下方 Download、API、Storybook",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/moveable.json",
+      "designMdUrl": "/site/moveable.md",
+      "registryUrl": "/r/moveable.json"
+    },
+    {
       "entryId": "naive-ui",
       "name": "Naive UI",
       "domain": "naiveui.com",
@@ -8245,6 +8743,95 @@
       "detailUrl": "/data/site/nivo.json",
       "designMdUrl": "/site/nivo.md",
       "registryUrl": "/r/nivo.json"
+    },
+    {
+      "entryId": "notistack",
+      "name": "Notistack",
+      "domain": "notistack.com",
+      "homepage": "https://notistack.com/",
+      "descriptionZh": "Hossein Dehnokhalaji 维护的 React 可堆叠通知条库 Notistack，包 notistack 现为 3.0.2。仓库 LICENSE.md 标 MIT。文档顶栏 v3.x。",
+      "takeawayZh": "用 enqueueSnackbar 堆叠通知条",
+      "noteZh": "首页标题 React Snackbars，右侧 +97.0M downloads，按钮 Get started。Getting started 写 npm install notistack 与 SnackbarProvider。Basic features 给出 stack up to 3。MIT 覆盖 notistack 源码。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn",
+          "preview"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "typescript"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "page-blocks-embeddable-controls",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/iamhosseindhv/notistack/master/LICENSE.md",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T15:59:10.035Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/notistack/v2-identity.png",
+        "alt": "Notistack 首页：标题 React Snackbars，按钮 Get started 与 View on GitHub，右侧 +97.0M Total downloads，下方 Atlassian 与 Figma 示例卡",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [
+        {
+          "stageId": "overlay-layers",
+          "termId": "atlas-component-component-toast",
+          "evidenceUrl": "https://notistack.com/features/basic",
+          "note": "Basic features 把 Snackbar、Toast、Alert 当作同一类可堆叠通知。",
+          "termEn": "Toast",
+          "termZh": "轻提示"
+        }
+      ],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/notistack.json",
+      "designMdUrl": "/site/notistack.md",
+      "registryUrl": "/r/notistack.json"
     },
     {
       "entryId": "nutui",
@@ -10984,6 +11571,90 @@
       "registryUrl": "/r/react-bits.json"
     },
     {
+      "entryId": "react-bootstrap",
+      "name": "React Bootstrap",
+      "domain": "react-bootstrap.github.io",
+      "homepage": "https://react-bootstrap.github.io/",
+      "descriptionZh": "Stephen J. Collings 等人维护的 React Bootstrap，现为 3.0.0-beta.5，把 Bootstrap 5 重写成 React 组件。仓库 LICENSE 标 MIT。",
+      "takeawayZh": "按 variant 写出按钮",
+      "noteZh": "首页写 rebuilt for React，顶栏 v3.0.0-beta.5。Introduction 写 npm install react-bootstrap bootstrap。Buttons 页 RESULT 排出 Primary 到 Link，下附 LIVE EDITOR。MIT 覆盖 React Bootstrap 源码。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn",
+          "preview"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "typescript",
+          "css"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "general-ui-components",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T20:20:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/react-bootstrap/v2-identity.png",
+        "alt": "React Bootstrap 首页：标题 React Bootstrap，副题 rebuilt for React，按钮 Get started 与 Components，顶栏 v3.0.0-beta.5",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/react-bootstrap.json",
+      "designMdUrl": "/site/react-bootstrap.md",
+      "registryUrl": "/r/react-bootstrap.json"
+    },
+    {
       "entryId": "react-day-picker",
       "name": "React DayPicker",
       "domain": "daypicker.dev",
@@ -11062,6 +11733,87 @@
       "detailUrl": "/data/site/react-day-picker.json",
       "designMdUrl": "/site/react-day-picker.md",
       "registryUrl": "/r/react-day-picker.json"
+    },
+    {
+      "entryId": "react-dnd",
+      "name": "React DnD",
+      "domain": "react-dnd.github.io",
+      "homepage": "https://react-dnd.github.io/react-dnd/docs/overview",
+      "descriptionZh": "Dan Abramov 创建的 React 拖放库 React DnD，包 react-dnd 现为 16.0.1。仓库 LICENSE 标 MIT。文档用 item 与 type 描述拖放数据。",
+      "takeawayZh": "用 useDrag 与 useDrop 接拖放",
+      "noteZh": "Overview 解释 item 与 type，并写内部用 Redux。Examples 侧栏列出 Dustbin、Sortable、Customize。Handles and Previews 给出 Drag me by the handle。MIT 覆盖 react-dnd 源码。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "primitive",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn",
+          "preview"
+        ],
+        "media": [
+          "ui",
+          "motion"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "typescript"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "headless-accessible-primitives",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/react-dnd/react-dnd/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T15:59:10.035Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/react-dnd/v2-identity.png",
+        "alt": "React DnD Overview：顶栏 Drag and Drop for React，左侧 Hooks 含 useDrag 与 useDrop，正文 Items and Types",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/react-dnd.json",
+      "designMdUrl": "/site/react-dnd.md",
+      "registryUrl": "/r/react-dnd.json"
     },
     {
       "entryId": "react-hook-form",
@@ -11489,6 +12241,97 @@
       "registryUrl": "/r/recharts.json"
     },
     {
+      "entryId": "refine",
+      "name": "Refine",
+      "domain": "refine.dev",
+      "homepage": "https://refine.dev/",
+      "descriptionZh": "Refine Development Inc. 的 React 后台框架。开源 Refine Core 仓库 LICENSE 为 MIT；refine.dev 首页 AI 产品按套餐收费，不能把付费产品标成 MIT。",
+      "takeawayZh": "Core MIT 搭后台，AI 套餐另收费",
+      "noteZh": "首页标题讲用 AI 做内部软件，导航有定价与 Refine Core。Core 页自称开源 Retool，给出 npm create refine-app@latest。DataTable 文档顶栏 5.xx.xx。Core 源码 MIT；AI 套餐 Starter 0.99 美元/月，不能把付费产品标成 MIT。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [
+          "admin",
+          "ai",
+          "saas"
+        ],
+        "deliverables": [
+          "starter",
+          "code-library",
+          "component"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "learn",
+          "preview",
+          "purchase",
+          "generate"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "typescript",
+          "javascript",
+          "shadcn-ui"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "freemium",
+          "open-source",
+          "paid"
+        ],
+        "licenses": [
+          "MIT",
+          "proprietary"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "delivery-development-tools",
+      "subcategory": "site-app-builders",
+      "license": "MIT",
+      "licenses": [
+        "MIT",
+        "proprietary"
+      ],
+      "licenseSourceUrl": "https://refine.dev/core/docs/further-readings/license/",
+      "access": [
+        "freemium",
+        "open-source",
+        "paid"
+      ],
+      "checkedAt": "2026-09-06T20:20:00.000Z",
+      "pricing": "Refine Core MIT free; Refine AI Starter $0.99/month, Pro $20/month",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/refine/v2-identity.png",
+        "alt": "Refine 首页：标题 Internal software at the speed of AI，导航 Pricing 与 Refine Core，左下 Cookie 条，中央项目描述输入框",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/refine.json",
+      "designMdUrl": "/site/refine.md",
+      "registryUrl": "/r/refine.json"
+    },
+    {
       "entryId": "remixicon",
       "name": "Remix Icon",
       "domain": "remixicon.com",
@@ -11748,6 +12591,177 @@
       "detailUrl": "/data/site/rsuite.json",
       "designMdUrl": "/site/rsuite.md",
       "registryUrl": "/r/rsuite.json"
+    },
+    {
+      "entryId": "select2",
+      "name": "Select2",
+      "domain": "select2.org",
+      "homepage": "https://select2.org/",
+      "descriptionZh": "Kevin Brown 与 Igor Vaynberg 维护的 jQuery 选择框库 Select2，站点顶栏现为 4.1.0。仓库 LICENSE.md 标 MIT，文档公开、无付费墙。",
+      "takeawayZh": "给原生 select 套上可搜索下拉",
+      "noteZh": "首页标题 The jQuery replacement for select boxes。Installation 写 jsDelivr 的 select2@4.1.0。Basic usage 把 Alaska 原生框变成可搜下拉，并调用 .select2()。MIT 覆盖 Select2 源码。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn",
+          "preview"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript",
+          "css"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "page-blocks-embeddable-controls",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/select2/select2/develop/LICENSE.md",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T15:59:10.035Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/select2/v2-identity.png",
+        "alt": "Select2 首页：标题 Select2，副标题 The jQuery replacement for select boxes，按钮 Releases、Forums、GitHub，卡片 In your language 与 Remote data support",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [
+        {
+          "stageId": "form-anatomy",
+          "termId": "atlas-component-component-dropdown-select",
+          "evidenceUrl": "https://select2.org/getting-started/basic-usage",
+          "note": "Basic usage 把原生 select 换成可搜索的自绘下拉。",
+          "termEn": "Dropdown Select",
+          "termZh": "自绘下拉框"
+        }
+      ],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/select2.json",
+      "designMdUrl": "/site/select2.md",
+      "registryUrl": "/r/select2.json"
+    },
+    {
+      "entryId": "semantic-ui",
+      "name": "Semantic UI",
+      "domain": "semantic-ui.com",
+      "homepage": "https://semantic-ui.com/",
+      "descriptionZh": "Jack Lukic 维护的 Semantic UI，用语义 class 写界面。站点徽章 2.5.0。页脚与 LICENSE.md 标 MIT，可免费用于个人与商业项目。",
+      "takeawayZh": "装 semantic-ui，用 class 写按钮",
+      "noteZh": "首页大字 Semantic UI，徽章 2.5.0。Getting Started 写 NPM 安装与 semantic-ui-css。Button 页 Types 给出 Follow 与 Focusable。页脚标 MIT。MIT 覆盖 Semantic UI 源码。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "download",
+          "copy",
+          "learn",
+          "preview"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "css",
+          "javascript"
+        ],
+        "workflowStages": [
+          "design",
+          "build"
+        ],
+        "audiences": [
+          "developer",
+          "designer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "component-registry",
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "general-ui-components",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://semantic-ui.com/",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T20:20:00.000Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/semantic-ui/v2-identity.png",
+        "alt": "Semantic UI 首页：徽章 2.5.0，标题 Semantic UI，副题 User Interface is the language of the web，按钮 Get Started 与 New in 2.4",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/semantic-ui.json",
+      "designMdUrl": "/site/semantic-ui.md",
+      "registryUrl": "/r/semantic-ui.json"
     },
     {
       "entryId": "semi-design",
@@ -12133,6 +13147,86 @@
       "detailUrl": "/data/site/shadcnblocks.json",
       "designMdUrl": "/site/shadcnblocks.md",
       "registryUrl": "/r/shadcnblocks.json"
+    },
+    {
+      "entryId": "shopify-draggable",
+      "name": "Draggable",
+      "domain": "shopify.github.io",
+      "homepage": "https://shopify.github.io/draggable/",
+      "descriptionZh": "Shopify 发布的 JavaScript 拖放库 Draggable，npm 包 @shopify/draggable 现为 1.2.1。仓库 LICENSE.md 标 MIT。文档写原作者已不再维护。",
+      "takeawayZh": "装 @shopify/draggable，拖列表排序",
+      "noteZh": "首页蓝底标题 draggable，副标题 modern drag & drop library，按钮 download 与 examples。文档徽章 1.2.1，写原作者已不再维护。Simple list 给出 Sortable 列表 item one 到 item six。MIT 覆盖源码。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "primitive",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn",
+          "preview"
+        ],
+        "media": [
+          "ui",
+          "motion"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript",
+          "typescript"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "headless-accessible-primitives",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/Shopify/draggable/main/LICENSE.md",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T15:59:10.035Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/shopify-draggable/v2-identity.png",
+        "alt": "Draggable 首页蓝底：黄字 draggable，副标题 a lightweight, responsive, modern drag & drop library，按钮 download 与 examples，下方蓝紫立体字母积木",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/shopify-draggable.json",
+      "designMdUrl": "/site/shopify-draggable.md",
+      "registryUrl": "/r/shopify-draggable.json"
     },
     {
       "entryId": "simple-icons",
@@ -14304,6 +15398,86 @@
       "registryUrl": "/r/unocss.json"
     },
     {
+      "entryId": "uppy",
+      "name": "Uppy",
+      "domain": "uppy.io",
+      "homepage": "https://uppy.io/",
+      "descriptionZh": "Transloadit 维护的 JavaScript 文件上传器 Uppy，核心包 @uppy/core 现为 v6.0.0。仓库标 MIT。可用 npm install @uppy/core。Transloadit 托管服务另售。",
+      "takeawayZh": "装 @uppy/core，再加 Dashboard",
+      "noteZh": "uppy.io 首页写 The open source JavaScript file uploader，左侧拖放坞列出 Dropbox、Drive。Uppy core 页给出 npm install @uppy/core。Dashboard 页说明可插拔上传界面，并链到现场示例。核心 MIT；Transloadit 托管另售。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "learn",
+          "preview",
+          "purchase"
+        ],
+        "media": [
+          "ui"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "javascript"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source",
+          "paid"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "page-blocks-embeddable-controls",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/transloadit/uppy/main/LICENSE",
+      "access": [
+        "free",
+        "open-source",
+        "paid"
+      ],
+      "checkedAt": "2026-09-06T18:40:00.000Z",
+      "pricing": "Free core; Transloadit hosted paid",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/uppy/v2-identity.png",
+        "alt": "Uppy 首页：The open source JavaScript file uploader，左侧 Drop files here 坞，右侧 Build with Agents 代码",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/uppy.json",
+      "designMdUrl": "/site/uppy.md",
+      "registryUrl": "/r/uppy.json"
+    },
+    {
       "entryId": "use-gesture",
       "name": "@use-gesture",
       "domain": "use-gesture.netlify.app",
@@ -15235,6 +16409,87 @@
       "detailUrl": "/data/site/webawesome.json",
       "designMdUrl": "/site/webawesome.md",
       "registryUrl": "/r/webawesome.json"
+    },
+    {
+      "entryId": "yet-another-react-lightbox",
+      "name": "Yet Another React Lightbox",
+      "domain": "yet-another-react-lightbox.com",
+      "homepage": "https://yet-another-react-lightbox.com/",
+      "descriptionZh": "Igor Danchenko 维护的 React 灯箱 Yet Another React Lightbox，首页徽章 npm v3.32.2。仓库 LICENSE 标 MIT。文档公开、无付费墙。",
+      "takeawayZh": "装包后用 Lightbox 组件打开图",
+      "noteZh": "首页徽章 npm v3.32.2、bundle size 10.6 kB、license MIT。Examples 列出 Basic Examples、Playground、Photo Gallery。Basic Examples 有两组 Open Lightbox。MIT 覆盖该包源码。",
+      "voiceStatus": "written",
+      "facets": {
+        "scenarios": [],
+        "deliverables": [
+          "component",
+          "code-library"
+        ],
+        "actions": [
+          "browse",
+          "install",
+          "copy",
+          "learn",
+          "preview"
+        ],
+        "media": [
+          "ui",
+          "image"
+        ],
+        "platforms": [
+          "web"
+        ],
+        "technologies": [
+          "react",
+          "typescript",
+          "javascript"
+        ],
+        "workflowStages": [
+          "build"
+        ],
+        "audiences": [
+          "developer"
+        ],
+        "access": [
+          "free",
+          "open-source"
+        ],
+        "licenses": [
+          "MIT"
+        ],
+        "contentOrganization": [
+          "standards-documentation"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "primaryCategory": "ui-implementation",
+      "subcategory": "page-blocks-embeddable-controls",
+      "license": "MIT",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseSourceUrl": "https://raw.githubusercontent.com/igordanchenko/yet-another-react-lightbox/main/LICENSE",
+      "access": [
+        "free",
+        "open-source"
+      ],
+      "checkedAt": "2026-09-06T15:59:10.035Z",
+      "pricing": "Free",
+      "pricingNote": null,
+      "shot": {
+        "src": "/shots/yet-another-react-lightbox/v2-identity.png",
+        "alt": "Yet Another React Lightbox 首页：立方 logo，徽章 npm v3.32.2、bundle size 10.6 kB、license MIT，Overview 列表 Built for React",
+        "width": 1280,
+        "height": 900
+      },
+      "atlasTerms": [],
+      "atlasTermsStatus": "editor-draft",
+      "independentlyReviewed": true,
+      "detailUrl": "/data/site/yet-another-react-lightbox.json",
+      "designMdUrl": "/site/yet-another-react-lightbox.md",
+      "registryUrl": "/r/yet-another-react-lightbox.json"
     },
     {
       "entryId": "zagjs",
