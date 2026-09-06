@@ -828,6 +828,30 @@ const VOICE = {
       en: [{ k: 'Copy', v: 'HTML' }],
     },
   },
+  'keen-slider': {
+    lede: { zh: '无依赖轮播库。MIT。', en: 'Dependency-free slider. MIT.' },
+    style: { zh: '深色营销。蓝粉渐变字标。白底主按钮。双列现场轮播标本。', en: 'Dark marketing. Blue-to-pink gradient wordmark. White primary. Dual live slider specimens.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install keen-slider' }],
+      en: [{ k: 'CLI', v: 'npm install keen-slider' }],
+    },
+  },
+  rsuite: {
+    lede: { zh: 'React 企业组件套件。MIT。', en: 'React enterprise component suite. MIT.' },
+    style: { zh: '深色网格。超大无衬线标题。紫粉渐变强调。原子形徽标。双胶囊按钮。', en: 'Dark grid. Oversized sans title. Violet-to-pink gradient emphasis. Atomic mark. Dual capsule buttons.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install rsuite' }],
+      en: [{ k: 'CLI', v: 'npm install rsuite' }],
+    },
+  },
+  'nuxt-ui': {
+    lede: { zh: 'Vue UI 组件库。@nuxt/ui MIT。', en: 'Vue UI library. @nuxt/ui is MIT.' },
+    style: { zh: '深色产品营销。白绿超大无衬线。右侧深色界面标本。饱和绿主按钮。', en: 'Dark product marketing. White-and-green oversized sans. Dark UI specimens at right. Saturated green primary.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npx nuxi@latest module add ui' }],
+      en: [{ k: 'CLI', v: 'npx nuxi@latest module add ui' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

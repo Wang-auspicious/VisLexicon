@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 3,
+  "entryId": "rsuite",
+  "entityId": "entity-rsuite",
+  "attemptId": "swarm-curator-batch-a-w1-rsuite-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://rsuitejs.com/",
+    "finalUrl": "https://www.rsuitejs.com/",
+    "checkedAt": "2026-09-06T14:39:00.000Z"
+  },
+  "editorial": {
+    "name": "React Suite",
+    "descriptionZh": "React Suite Team 维护的企业级 React UI 组件库，npm 包 rsuite 现为 6.2.4。仓库 LICENSE 标 MIT。文档给出 npm install rsuite，首页称 80+ 组件，面向企业应用。",
+    "takeawayZh": "装 rsuite，先抄 primary 按钮",
+    "noteZh": "rsuitejs.com 308 至 www.rsuitejs.com。首页标题 Build elegant enterprise applications，并写 80+ 组件。组件总览按 Layout、Buttons、Form 分栏。Button 页给出 import 与 default、primary 现场按钮。MIT 覆盖组件源码。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-rsuite",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页徽章写 React Suite · Enterprise-grade UI Components，标题 Build elegant enterprise applications，并写 80+ carefully designed components covering forms, data display, navigation, feedback。",
+        "evidenceUrl": "https://www.rsuitejs.com/"
+      },
+      {
+        "statement": "Components 总览按 Layout、Buttons、Form、Data Grid 列出整套组件。Button 页给出 import { Button } from 'rsuite'，appearance 含 default、primary、link、subtle、ghost。",
+        "evidenceUrl": "https://www.rsuitejs.com/components/button/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-a-w1",
+    "reviewerId": "swarm-reviewer-grok-x",
+    "confirmedAt": "2026-09-06T15:53:22.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "starter"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en",
+      "zh-hans"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://rsuitejs.com/",
+      "finalUrl": "https://www.rsuitejs.com/",
+      "title": "React Suite - Enterprise React UI Component Library - React Suite",
+      "selectionRationale": "首页标题企业级组件，并写 80+ 组件。",
+      "shot": {
+        "src": "/shots/rsuite/v2-identity.png",
+        "sha256": "57520833dc9ff4e7e771ed1cd0e0d47470c8b24b657ab8ab97d13e062c94b340",
+        "width": 1280,
+        "height": 900,
+        "bytes": 548722,
+        "alt": "React Suite 首页：徽章 Enterprise-grade UI Components，标题 Build elegant enterprise applications，按钮 Getting started 与 Components，右侧折线 logo"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.rsuitejs.com/components/overview/",
+      "finalUrl": "https://www.rsuitejs.com/components/overview/",
+      "title": "Components - React Suite",
+      "selectionRationale": "组件总览按 Layout、Buttons、Form 分栏。",
+      "shot": {
+        "src": "/shots/rsuite/v2-breadth.png",
+        "sha256": "1d74c85753a172788e7aa7ec3de87243abe324b0a39d0c0c98f1c8dd1d07e55c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 66408,
+        "alt": "React Suite Components 总览：标题 Components，All components and hooks provided by React Suite，Layout 下 Box、Center，Buttons 下 Button"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.rsuitejs.com/components/button/",
+      "finalUrl": "https://www.rsuitejs.com/components/button/",
+      "title": "Button - React Suite",
+      "selectionRationale": "Button 页有 import 与现场按钮。",
+      "shot": {
+        "src": "/shots/rsuite/v2-proof.png",
+        "sha256": "c8779b5fd454630dc01bd23a6dbb736ff829ec439eb1ca145c4431b017216466",
+        "width": 1280,
+        "height": 900,
+        "bytes": 80084,
+        "alt": "React Suite Button 文档：标题 Button，import { Button } from 'rsuite'，Examples 下 Basic 与 Appearance"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "React Suite Team",
+      "sourceUrl": "https://raw.githubusercontent.com/rsuite/rsuite/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2016-present React Suite Team。package.json author 为 React Suite Team。首页 JSON-LD SoftwareSourceCode.author.name 同为 React Suite Team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "React Suite",
+      "sourceUrl": "https://www.rsuitejs.com/",
+      "evidence": "首页 JSON-LD Organization.name 为 React Suite。GitHub 组织 rsuite 维护仓库。LICENSE 署 React Suite Team，未见独立公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/rsuite/rsuite",
+      "sourceUrl": "https://raw.githubusercontent.com/rsuite/rsuite/main/package.json",
+      "evidence": "package.json repository.url 为 git@github.com:rsuite/rsuite.git，homepage 为 https://rsuitejs.com。首页 GitHub 链到该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/rsuite/rsuite/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2016-present React Suite Team。package.json license 为 MIT。该许可覆盖 rsuite React 组件源码。Figma 设计资源与文档站文案不在此文件声明范围内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.rsuitejs.com/",
+      "evidence": "首页 meta 写 Free and open source。JSON-LD SoftwareApplication.offers.price 为 0。Quick Start 给出 npm install rsuite。文档公开可读，未见组件库付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "rsuite",
+      "sourceUrl": "https://www.rsuitejs.com/guide/usage/",
+      "evidence": "Quick Start 写 npm install rsuite。npm 与仓库 package.json name 为 rsuite，version 6.2.4。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-a-w1",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-x",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-x"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-a-w1 进站起草。apex 308 至 www.rsuitejs.com。三页 HTML 先出 cube 加载格，hydration 后标题可见。status 仍 DRAFT。 swarm-reviewer-grok-x 复核活页、截图哈希与许可后 APPROVED。"
+  }
+}
