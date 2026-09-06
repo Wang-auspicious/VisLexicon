@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T01:12:28.259Z",
+  "entryId": "formik",
+  "entityId": "entity-formik",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "formik.org",
+  "official": {
+    "inputUrl": "https://formik.org/",
+    "finalUrl": "https://formik.org/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Formik",
+    "descriptionZh": "Jared Palmer 发起的 React 表单库 Formik，现为 2.4.9，负责取值、校验与提交。packages/formik 标 Apache-2.0。Formium 为另售产品，本条只收开源库。",
+    "takeawayZh": "用 <Formik> 管值，输入框自己画",
+    "noteZh": "打开 formik.org，标题 Build forms in React, without the tears，副题 world's most popular open source form library for React and React Native。Overview 写管 values/errors、校验和提交。API 页 <Formik /> 给出 initialValues 与 handleSubmit 示例。顶栏有 Enterprise 链到 formium.io 销售，那是另售产品。本条只收 Apache-2.0 的 formik 包。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Formik 定义为 open source form library for React and React Native，用来跟踪 values/errors、编排校验和提交，而不是带皮肤的表单组件。",
+        "evidenceUrl": "https://formik.org/"
+      },
+      {
+        "statement": "<Formik /> API 文档给出 render props 示例：initialValues、onSubmit 与 props.handleChange，输入标记由调用方提供。",
+        "evidenceUrl": "https://formik.org/docs/api/formik"
+      }
+    ],
+    "confirmedAt": "2026-09-06T20:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://formik.org/",
+      "finalUrl": "https://formik.org/",
+      "title": "Formik: Build forms in React, without the tears",
+      "selectionRationale": "先看首页。without the tears 和 open source form library 那句在首屏。",
+      "shot": {
+        "src": "/shots/formik/v2-identity.png",
+        "sha256": "93a7475fb150f7cf8684bb657b667d6da591d3329d591bf043aeeaadec3fbb47",
+        "width": 1280,
+        "height": 900,
+        "bytes": 326298,
+        "alt": "Formik 首页：Build forms in React, without the tears，副题 world's most popular open source form library for React and React Native"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://formik.org/docs/overview",
+      "finalUrl": "https://formik.org/docs/overview",
+      "title": "Overview | Formik",
+      "selectionRationale": "再翻 Overview。取值、校验、提交三件事写在这里。",
+      "shot": {
+        "src": "/shots/formik/v2-breadth.png",
+        "sha256": "d5872278275a303fee4c6152e547862f7501fe9985fa9e5143f15a2a6a3aefe0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 196886,
+        "alt": "Formik Overview：列出 Getting values in and out of form state、Validation and error messages、Handling form submission"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://formik.org/docs/api/formik",
+      "finalUrl": "https://formik.org/docs/api/formik",
+      "title": "<Formik /> | Formik",
+      "selectionRationale": "最后开 <Formik /> API。initialValues 和 handleSubmit 示例就是可复制证明。",
+      "shot": {
+        "src": "/shots/formik/v2-proof.png",
+        "sha256": "38f210f3665fe1276149f77e26e9578ddbef6ee80f0db349232695ab5872edbd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 184159,
+        "alt": "Formik API：<Formik /> 示例 import { Formik } from 'formik'，含 initialValues 与 onSubmit"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Jared Palmer",
+      "sourceUrl": "https://formik.org/docs/overview",
+      "evidence": "Overview Motivation 写 I (@jaredpalmer) wrote Formik。packages/formik/package.json author 为 Jared Palmer <jared@palmer.net>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Formium, Inc.",
+      "sourceUrl": "https://formik.org/",
+      "evidence": "页脚 Copyright © 2020 Formium, Inc. LICENSE 另写 Copyright 2020 Formik, Inc。顶栏 Enterprise 链到 formium.io 销售。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/jaredpalmer/formik",
+      "sourceUrl": "https://formik.org/",
+      "evidence": "首页 GitHub 按钮链到 github.com/formik/formik，该地址与 jaredpalmer/formik 为同一仓。package.json repository 为 jaredpalmer/formik。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://raw.githubusercontent.com/jaredpalmer/formik/main/LICENSE",
+      "evidence": "LICENSE 为 Apache License Version 2.0，Copyright 2020 Formik, Inc。packages/formik/package.json license 为 Apache-2.0。覆盖 formik 包源码，不是 MIT。Formium 商业产品不在此许可内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://formik.org/docs/overview",
+      "evidence": "Overview 给出 npm install formik --save。文档公开可浏览。顶栏 Enterprise 指向 Formium 销售，不是 formik 包付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "formik",
+      "sourceUrl": "https://formik.org/docs/overview",
+      "evidence": "Overview 写 npm install formik --save。packages/formik/package.json name 为 formik，version 2.4.9。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/formik.md",
+  "registryUrl": "/r/formik.json"
+}

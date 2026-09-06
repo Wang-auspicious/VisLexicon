@@ -498,6 +498,26 @@ const VOICE = {
     lede: { zh: '3D 设计编辑器。编辑器专有，React 包装 MIT。', en: '3D design editor. Editor is proprietary; React wrapper is MIT.' },
     style: { zh: '深色产品营销。全出血 3D。高饱和。', en: 'Dark product marketing. Full-bleed 3D. Saturated.' },
   },
+  framework7: {
+    lede: { zh: '移动端 HTML 框架。MIT。', en: 'Mobile HTML framework. MIT.' },
+    style: { zh: '浅色文档。品牌红。移动控件标本。', en: 'Light docs. Brand red. Mobile control specimens.' },
+  },
+  'react-hook-form': {
+    lede: { zh: 'React 表单钩子。MIT。', en: 'React form hooks. MIT.' },
+    style: { zh: '浅色文档。粉红强调。代码标本。', en: 'Light docs. Pink accent. Code specimens.' },
+  },
+  formik: {
+    lede: { zh: 'React 表单库。Apache-2.0。', en: 'React form library. Apache-2.0.' },
+    style: { zh: '浅色文档。品牌蓝。API 页。', en: 'Light docs. Brand blue. API pages.' },
+  },
+  'react-spring': {
+    lede: { zh: 'React 弹簧动画。MIT。与 Motion 不是同一库。', en: 'React spring animation. MIT. Distinct from Motion.' },
+    style: { zh: '浅色文档。弹簧演示。中性。', en: 'Light docs. Spring demos. Neutral.' },
+  },
+  'use-gesture': {
+    lede: { zh: '指针与手势钩子。MIT。', en: 'Pointer and gesture hooks. MIT.' },
+    style: { zh: '浅色文档。手势示意图。中性。', en: 'Light docs. Gesture diagrams. Neutral.' },
+  },
 }
 
 export function entryVoice(entryId) {

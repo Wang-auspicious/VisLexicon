@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T01:12:28.259Z",
+  "entryId": "react-spring",
+  "entityId": "entity-react-spring",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://www.react-spring.dev/",
+    "finalUrl": "https://www.react-spring.dev/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "React Spring",
+    "descriptionZh": "Poimandres 的弹簧动效库 React Spring，用 useSpring 与 animated 驱动 UI，不是 Motion（原 Framer Motion）。仓库 LICENSE 标 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "给 div 套 animated，再用 useSpring 推位移",
+    "noteZh": "打开 react-spring.dev，标题 With naturally fluid animations you will elevate your UI & interactions，命令 npm i @react-spring/web。Getting started 写 library for building interactive, data-driven, and animated UI components，React 19 用 yarn add @react-spring/web，React 18 及以下用 @react-spring/web@9。useSpring 页给出 import { useSpring, animated } from '@react-spring/web'。它是 pmndrs 的弹簧库，不是 Matt Perry 的 Motion。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 React Spring 定义为用自然流体动画提升 UI 与交互的代码库，安装命令为 npm i @react-spring/web。",
+        "evidenceUrl": "https://www.react-spring.dev/"
+      },
+      {
+        "statement": "useSpring 文档给出 import { useSpring, animated } from '@react-spring/web' 与 from/to opacity 示例，证明交付物是动效实现代码，不是 Motion（原 Framer Motion）。",
+        "evidenceUrl": "https://www.react-spring.dev/docs/components/use-spring"
+      }
+    ],
+    "confirmedAt": "2026-09-06T20:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript",
+      "react-native"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.react-spring.dev/",
+      "finalUrl": "https://www.react-spring.dev/",
+      "title": "react-spring",
+      "selectionRationale": "先看首页。流体动画那句和 npm i @react-spring/web 在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-spring/v2-identity.png",
+        "sha256": "1bd730047677138b460630ffddf06bb8ba32464e3c0908ee2f1ca1e59fb77fd6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 283466,
+        "alt": "React Spring 首页：With naturally fluid animations you will elevate your UI & interactions，命令 npm i @react-spring/web"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.react-spring.dev/docs/getting-started",
+      "finalUrl": "https://www.react-spring.dev/docs/getting-started",
+      "title": "Getting started | React Spring",
+      "selectionRationale": "再翻 Getting started。定义句和 React 19 / 旧版安装命令都在。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-spring/v2-breadth.png",
+        "sha256": "1d680b34e353b294475eb3d48d26a9642fc75434dee76e1960d9e9022221c07f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 103539,
+        "alt": "React Spring Getting started：library for building interactive, data-driven, and animated UI components，yarn add @react-spring/web"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.react-spring.dev/docs/components/use-spring",
+      "finalUrl": "https://www.react-spring.dev/docs/components/use-spring",
+      "title": "useSpring | React Spring",
+      "selectionRationale": "最后开 useSpring。flagship hook 和 animated.div 示例就是证明。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-spring/v2-proof.png",
+        "sha256": "0c37ec5dd69ecc1e650c15c055873125d46df5487738d0d13ec547ef2c20c2f7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 101357,
+        "alt": "useSpring 文档：Our flagship hook，示例 import { useSpring, animated } from '@react-spring/web'"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Paul Henschel",
+      "sourceUrl": "https://raw.githubusercontent.com/pmndrs/react-spring/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2018-present Paul Henschel, react-spring, all contributors。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Poimandres",
+      "sourceUrl": "https://www.react-spring.dev/",
+      "evidence": "站点页脚与生态链到 Poimandres / pmndrs。GitHub 组织为 pmndrs。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/pmndrs/react-spring",
+      "sourceUrl": "https://www.react-spring.dev/",
+      "evidence": "站点 GitHub 链到 github.com/pmndrs/react-spring。LICENSE 与文档均指向该仓。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/pmndrs/react-spring/main/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2018-present Paul Henschel, react-spring, all contributors。覆盖 React Spring 源码。本库不是 Motion（原 Framer Motion）。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.react-spring.dev/docs/getting-started",
+      "evidence": "Getting started 给出 yarn add @react-spring/web。文档公开可浏览，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@react-spring/web",
+      "sourceUrl": "https://www.react-spring.dev/docs/getting-started",
+      "evidence": "Getting started 对 React >= 19 写 yarn add @react-spring/web，对 React < 19 写 @react-spring/web@9。useSpring 示例 from '@react-spring/web'。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/react-spring",
+    "designMdUrl": "https://vislexicon.com/site/react-spring.md",
+    "checkedAt": "2026-09-06T18:30:00.000Z",
+    "license": "MIT"
+  }
+}

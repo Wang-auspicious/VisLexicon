@@ -71,6 +71,9 @@ export const COLLECTIONS = [
       'primevue',
       'vant',
       'nutui',
+      'framework7',
+      'react-hook-form',
+      'formik',
     ],
     createdAt: '2026-09-05',
   },
@@ -89,7 +92,7 @@ export const COLLECTIONS = [
     titleEn: 'Motion and micro-interaction',
     blurbZh: '这些站交付的是会动的实现：时间轴、class 动画和弹簧，用来看效果怎么接到界面上。',
     blurbEn: 'Motion implementations: timelines, class animation, springs.',
-    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles', 'react-bits', 'animejs', 'lenis', 'theatre-js', 'auto-animate', 'barba'],
+    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles', 'react-bits', 'animejs', 'lenis', 'theatre-js', 'auto-animate', 'barba', 'react-spring', 'use-gesture'],
     createdAt: '2026-09-06',
   },
   {

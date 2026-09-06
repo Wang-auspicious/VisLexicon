@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "entryId": "react-hook-form",
+  "entityId": "entity-react-hook-form",
+  "attemptId": "swarm-curator-batch-o-react-hook-form-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://react-hook-form.com/",
+    "finalUrl": "https://react-hook-form.com/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "React Hook Form",
+    "descriptionZh": "Beier Luo 维护的 React 表单库 React Hook Form，现为 7.87.0，用 useForm 做校验与提交。仓库 LICENSE 标 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "npm i react-hook-form，先 register 输入框",
+    "noteZh": "打开 react-hook-form.com，标题 React Hook Form，副题 Performant, flexible and extensible forms with easy-to-use validation。Get Started 写 npm install react-hook-form，下面 useForm 示例。useForm 页称 primary hook for form initialization，列出 mode、reValidateMode。无样式，输入自己画。MIT。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-react-hook-form",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 React Hook Form 定义为 Performant, flexible and extensible forms with easy-to-use validation，交付物是表单状态与校验逻辑，不是现成皮肤。",
+        "evidenceUrl": "https://react-hook-form.com/"
+      },
+      {
+        "statement": "useForm 文档称它是 primary hook for form initialization，并列出 register、handleSubmit 与校验策略，UI 由调用方渲染。",
+        "evidenceUrl": "https://react-hook-form.com/docs/useform"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-o",
+    "reviewerId": "swarm-reviewer-grok-q",
+    "confirmedAt": "2026-09-06T20:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://react-hook-form.com/",
+      "finalUrl": "https://react-hook-form.com/",
+      "title": "React Hook Form - performant, flexible and extensible form library | React Hook Form",
+      "selectionRationale": "先看首页。表单校验那句和 Demo / Get Started 在首屏。",
+      "shot": {
+        "src": "/shots/react-hook-form/v2-identity.png",
+        "sha256": "6b403ee773e7545afadbba1f4cd61c0bc0f87f7c3adf81e0b0dc70b4b941d096",
+        "width": 1280,
+        "height": 900,
+        "bytes": 224696,
+        "alt": "React Hook Form 首页：标题 React Hook Form，副题 Performant, flexible and extensible forms with easy-to-use validation，下方 Demo 与 Get Started"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://react-hook-form.com/get-started",
+      "finalUrl": "https://react-hook-form.com/get-started",
+      "title": "Get Started | React Hook Form",
+      "selectionRationale": "再翻 Get Started。安装命令和 useForm 示例排出用法面。",
+      "shot": {
+        "src": "/shots/react-hook-form/v2-breadth.png",
+        "sha256": "d223db27b9ff802f7b9dd4f5361e460da78cbf2fd0601e12178470b499d10053",
+        "width": 1280,
+        "height": 900,
+        "bytes": 88639,
+        "alt": "React Hook Form Get Started：npm install react-hook-form，下方 import { useForm, SubmitHandler } from \"react-hook-form\""
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://react-hook-form.com/docs/useform",
+      "finalUrl": "https://react-hook-form.com/docs/useform",
+      "title": "useForm | React Hook Form",
+      "selectionRationale": "最后开 useForm。主 hook 和校验策略表就是可复制证明。",
+      "shot": {
+        "src": "/shots/react-hook-form/v2-proof.png",
+        "sha256": "3d4bc25ae179833637368e0b4afc47ceec751adb1caa6c9c213f37a102f662e1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 79025,
+        "alt": "useForm 文档：React Hook Form's primary hook for form initialization，列出 mode、reValidateMode、defaultValues"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Beier(Bill) Luo",
+      "sourceUrl": "https://raw.githubusercontent.com/react-hook-form/react-hook-form/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2019-present Beier(Bill) Luo。package.json author 为 Beier(Bill) Luo <bluebill1049@hotmail.com>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://raw.githubusercontent.com/react-hook-form/react-hook-form/master/LICENSE",
+      "evidence": "LICENSE 与 package.json 只署 Beier(Bill) Luo，未见公司。GitHub 组织为 react-hook-form。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/react-hook-form/react-hook-form",
+      "sourceUrl": "https://react-hook-form.com/",
+      "evidence": "首页 GitHub 按钮链到 react-hook-form/react-hook-form。package.json repository 为 https://github.com/react-hook-form/react-hook-form。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/react-hook-form/react-hook-form/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2019-present Beier(Bill) Luo。package.json license 为 MIT。覆盖 react-hook-form 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://react-hook-form.com/get-started",
+      "evidence": "Get Started 写 npm install react-hook-form。文档公开可浏览，Open Collective 赞助不是买断库本身。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "react-hook-form",
+      "sourceUrl": "https://react-hook-form.com/get-started",
+      "evidence": "Get Started 写 npm install react-hook-form。package.json name 为 react-hook-form，version 7.87.0。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-o",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-q",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-q"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-o 进站起草。分类对象是无样式表单 hook，不是带皮肤的表单组件。status 仍 DRAFT。 swarm-reviewer-grok-q 复核活页、截图哈希与许可后 APPROVED。"
+  }
+}

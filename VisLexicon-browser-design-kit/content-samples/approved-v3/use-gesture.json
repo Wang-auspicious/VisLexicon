@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "entryId": "use-gesture",
+  "entityId": "entity-use-gesture",
+  "attemptId": "swarm-curator-batch-o-use-gesture-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://use-gesture.netlify.app/",
+    "finalUrl": "https://use-gesture.netlify.app/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "@use-gesture",
+    "descriptionZh": "Poimandres 的手势库 @use-gesture，提供 useDrag、usePinch 等 hooks，常与 React Spring 搭配。仓库 LICENSE 标 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "给节点绑 useDrag，位移交给弹簧库",
+    "noteZh": "打开 use-gesture.netlify.app，标题 move it, zoom it, drag it, scroll it, pinch it，中间 Drag me 卡片。Getting started 写 bind mouse and touch events to any node，安装 npm install @use-gesture/react。/docs/hooks/ 是 404，proof 改 Gestures：表列 useDrag、useMove、useHover、useScroll、useWheel、usePinch、useGesture。文档写常与 react-spring 搭配，本身不是动画库。MIT。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-use-gesture",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 @use-gesture 定义为 the only gesture lib you'll need，用来实现拖拽、缩放、滚动与捏合等交互。",
+        "evidenceUrl": "https://use-gesture.netlify.app/"
+      },
+      {
+        "statement": "Gestures 文档列出 useDrag、usePinch 等 hooks，并说明库只提供手势数据，位移需交给 react-spring 等动画库。",
+        "evidenceUrl": "https://use-gesture.netlify.app/docs/gestures"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-o",
+    "reviewerId": "swarm-reviewer-grok-q",
+    "confirmedAt": "2026-09-06T20:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://use-gesture.netlify.app/",
+      "finalUrl": "https://use-gesture.netlify.app/",
+      "title": "Home - @use-gesture documentation",
+      "selectionRationale": "先看首页。Drag me 和 pinch/scroll 那句在首屏。",
+      "shot": {
+        "src": "/shots/use-gesture/v2-identity.png",
+        "sha256": "33ad6e0e3b3836826806f8d429c57f09654a2640ddb9f6314c42f1b522385f0e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86188,
+        "alt": "@use-gesture 首页：Drag me 卡片，标题 move it, zoom it, drag it, scroll it, pinch it"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/",
+      "finalUrl": "https://use-gesture.netlify.app/docs/",
+      "title": "Introduction - @use-gesture documentation",
+      "selectionRationale": "再翻 Getting started。安装命令和 react-spring 搭配说明都在。",
+      "shot": {
+        "src": "/shots/use-gesture/v2-breadth.png",
+        "sha256": "8b326ab0952d2e4146113fae41d3d23b4543b2ddbd9500acc0f01e2256cdb49e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86646,
+        "alt": "@use-gesture Getting started：bind mouse and touch events to any node，npm install @use-gesture/react"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/gestures",
+      "finalUrl": "https://use-gesture.netlify.app/docs/gestures",
+      "title": "Gestures - @use-gesture documentation",
+      "selectionRationale": "原 /docs/hooks/ 404。改开 Gestures：useDrag 表就是可复制证明。",
+      "shot": {
+        "src": "/shots/use-gesture/v2-proof.png",
+        "sha256": "05920031ef64e6393ef81b012f9155ae40e923796603dfbf12887ffd48fdc21b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 107290,
+        "alt": "@use-gesture Gestures：React 表列出 useDrag、useMove、useHover、useScroll、useWheel、usePinch、useGesture"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Paul Henschel",
+      "sourceUrl": "https://raw.githubusercontent.com/pmndrs/use-gesture/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2018-present Paul Henschel <drcmda@gmail.com>。packages/react/package.json author 为 Paul Henschel，contributors 含 David Bismut。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Poimandres",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/",
+      "evidence": "文档把 @use-gesture 与 react-spring 同列。GitHub 组织为 pmndrs。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/pmndrs/use-gesture",
+      "sourceUrl": "https://use-gesture.netlify.app/",
+      "evidence": "站点 GitHub 链到 pmndrs/use-gesture。packages/react/package.json repository 为 https://github.com/pmndrs/use-gesture.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/pmndrs/use-gesture/main/LICENSE",
+      "evidence": "LICENSE 为 MIT 许可正文，Copyright (c) 2018-present Paul Henschel。packages/react/package.json license 为 MIT。覆盖 @use-gesture/react 与 @use-gesture/core。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/",
+      "evidence": "Getting started 写 npm install @use-gesture/react。文档公开可浏览，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@use-gesture/react",
+      "sourceUrl": "https://use-gesture.netlify.app/docs/",
+      "evidence": "Getting started 写 npm install @use-gesture/react。packages/react/package.json name 为 @use-gesture/react，version 10.3.1。另有 @use-gesture/vanilla。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-o",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-q",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-q"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-o 进站起草。原 proof /docs/hooks/ 404，改 /docs/gestures。本库是手势数据，常搭配 React Spring，不是 Motion。status 仍 DRAFT。 swarm-reviewer-grok-q 复核活页、截图哈希与许可后 APPROVED。"
+  }
+}
