@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:14:08.207Z",
+  "entryId": "skeleton",
+  "entityId": "entity-skeleton",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "skeleton.dev",
+  "official": {
+    "inputUrl": "https://www.skeleton.dev/",
+    "finalUrl": "https://www.skeleton.dev/",
+    "checkedAt": "2026-09-07T04:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Skeleton",
+    "descriptionZh": "Skeleton Labs 维护的 Tailwind 自适应设计系统 Skeleton，现为 v5.0.1，提供主题与框架组件。仓库 LICENSE 标 MIT，可免费使用。",
+    "takeawayZh": "先装主题，再抄 btn 按钮",
+    "noteZh": "首页横幅 Skeleton v5 is now available，标题 adaptive design system for Tailwind CSS，顶栏 v5.0.1。安装页列出 Next.js 与 SvelteKit。Buttons 页现场 Button。本条是 skeleton.dev，不是 getskeleton.com。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Skeleton 定义为 The adaptive design system for Tailwind CSS，横幅写 Skeleton v5 is now available，顶栏 v5.0.1。",
+        "evidenceUrl": "https://www.skeleton.dev/"
+      },
+      {
+        "statement": "Buttons 文档写 Provide a variety of button, including customizable sizes and types，并给出现场 Button 与 btn-{size} 尺寸对照。",
+        "evidenceUrl": "https://www.skeleton.dev/docs/svelte/tailwind-components/buttons"
+      }
+    ],
+    "confirmedAt": "2026-09-07T01:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "react",
+      "vue",
+      "tailwind",
+      "css",
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.skeleton.dev/",
+      "finalUrl": "https://www.skeleton.dev/",
+      "title": "Skeleton",
+      "selectionRationale": "先看首页。v5 横幅和 Tailwind 那句在首屏。",
+      "shot": {
+        "src": "/shots/skeleton/v2-identity.png",
+        "sha256": "5338dcda845ad005e3d6bcbc33f3ff7a35dd407ad03ecd719b32319996cdd68b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 457933,
+        "alt": "Skeleton 首页：横幅 Skeleton v5 is now available，标题 The adaptive design system for Tailwind CSS，Get Started，下方 Live Demos 的 React/Svelte/Vue/Solid/Astro，顶栏 v5.0.1"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.skeleton.dev/docs/svelte/get-started/installation",
+      "finalUrl": "https://www.skeleton.dev/docs/svelte/get-started/installation",
+      "title": "Installation · Skeleton",
+      "selectionRationale": "再翻安装页。框架卡片排出起步范围。",
+      "shot": {
+        "src": "/shots/skeleton/v2-breadth.png",
+        "sha256": "7b0ce25b894daef8f30a70c32234d3cb331661e38b68151bf1441ab0d55e9b50",
+        "width": 1280,
+        "height": 900,
+        "bytes": 244724,
+        "alt": "Installation 页：Learn how to install and setup Skeleton for your project，Guides 卡片 Next.js、SvelteKit、Vite + React、Vite + Svelte、Astro、Other Frameworks，左侧 Installation 选中，顶栏 Svelte v5.0.1"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.skeleton.dev/docs/svelte/tailwind-components/buttons",
+      "finalUrl": "https://www.skeleton.dev/docs/svelte/tailwind-components/buttons",
+      "title": "Buttons · Skeleton",
+      "selectionRationale": "最后开 Buttons。现场按钮和尺寸对照即证明。",
+      "shot": {
+        "src": "/shots/skeleton/v2-proof.png",
+        "sha256": "9e9b1c5c1bfd1d7b52485b0cab7f2f25584475cb8d597a752eaaee62dcd70f82",
+        "width": 1280,
+        "height": 900,
+        "bytes": 267971,
+        "alt": "Buttons 文档：包屑 Tailwind Components > Buttons，现场 Button 与带箭头按钮，Sizes 写 btn-{size} 并给出多档按钮预览，顶栏 Svelte v5.0.1"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "endigo9740",
+      "sourceUrl": "https://raw.githubusercontent.com/skeletonlabs/skeleton/main/packages/skeleton/package.json",
+      "evidence": "packages/skeleton/package.json author 为 endigo9740 <chris@skeletonlabs.dev>。@skeletonlabs/skeleton-svelte 同署。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Skeleton Labs, LLC",
+      "sourceUrl": "https://raw.githubusercontent.com/skeletonlabs/skeleton/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2023 Skeleton Labs, LLC。首页写 Tended by Skeleton Labs。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/skeletonlabs/skeleton",
+      "sourceUrl": "https://raw.githubusercontent.com/skeletonlabs/skeleton/main/packages/skeleton/package.json",
+      "evidence": "package.json repository.url 为 git+https://github.com/skeletonlabs/skeleton.git。文档 Edit on GitHub 链到同一仓。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/skeletonlabs/skeleton/main/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2023 Skeleton Labs, LLC。@skeletonlabs/skeleton 与 @skeletonlabs/skeleton-svelte 的 package.json license 均为 MIT。覆盖设计系统源码，不是 getskeleton.com 的 Skeleton CSS。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.skeleton.dev/",
+      "evidence": "首页写 Open Source 与 MIT License。安装文档与 Buttons 预览公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@skeletonlabs/skeleton",
+      "sourceUrl": "https://www.skeleton.dev/docs/svelte/design/themes",
+      "evidence": "主题文档写 @import '@skeletonlabs/skeleton/themes/{theme-name}'。核心包 @skeletonlabs/skeleton 与 @skeletonlabs/skeleton-svelte 现均为 5.0.1，与顶栏 v5.0.1 一致。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/skeleton.md",
+  "registryUrl": "/r/skeleton.json"
+}

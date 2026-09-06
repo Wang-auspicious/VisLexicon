@@ -898,6 +898,38 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm install vditor' }],
     },
   },
+  'angular-material': {
+    lede: { zh: 'Angular Material 组件。MIT。不是 React MUI。', en: 'Angular Material components. MIT. Not React MUI.' },
+    style: { zh: '浅蓝产品页。超大无衬线字标。白胶囊按钮。几何 A 底纹。', en: 'Light-blue product page. Oversized sans wordmark. White capsule button. Geometric A ground.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'ng add @angular/material' }],
+      en: [{ k: 'CLI', v: 'ng add @angular/material' }],
+    },
+  },
+  'ant-design-vue': {
+    lede: { zh: 'Ant Design 的 Vue 实现。MIT。', en: 'Ant Design for Vue. MIT.' },
+    style: { zh: '浅色文档。品牌蓝绿徽标。左侧目录。介绍页。', en: 'Light docs. Brand blue-green marks. Left-hand TOC. Introduction page.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i ant-design-vue' }],
+      en: [{ k: 'CLI', v: 'npm i ant-design-vue' }],
+    },
+  },
+  vuestic: {
+    lede: { zh: 'Vue 3 UI 框架。MIT。', en: 'Vue 3 UI framework. MIT.' },
+    style: { zh: '饱和蓝全出血。超大无衬线。白主按钮。叠层控件标本。', en: 'Saturated-blue full bleed. Oversized sans. White primary. Stacked control specimens.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i vuestic-ui' }],
+      en: [{ k: 'CLI', v: 'npm i vuestic-ui' }],
+    },
+  },
+  skeleton: {
+    lede: { zh: 'Tailwind 自适应设计系统。MIT。', en: 'Adaptive design system for Tailwind. MIT.' },
+    style: { zh: '深色产品营销。王冠骷髅徽标。超大无衬线。框架圆形图标排。', en: 'Dark product marketing. Crowned-skull mark. Oversized sans. Framework icon row.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i -D @skeletonlabs/skeleton' }],
+      en: [{ k: 'CLI', v: 'npm i -D @skeletonlabs/skeleton' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

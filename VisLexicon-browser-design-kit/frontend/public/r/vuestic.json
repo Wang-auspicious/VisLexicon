@@ -1,0 +1,202 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:14:08.207Z",
+  "entryId": "vuestic",
+  "entityId": "entity-vuestic",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://ui.vuestic.dev/",
+    "finalUrl": "https://ui.vuestic.dev/",
+    "checkedAt": "2026-09-07T04:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Vuestic UI",
+    "descriptionZh": "Epicmax 维护的 Vue 3 UI 库 Vuestic UI，现为 1.10.3，提供 va-button 等组件。仓库 LICENSE.MD 标 MIT，可免费安装使用。",
+    "takeawayZh": "先装 vuestic-ui 再抄按钮",
+    "noteZh": "首页标题 Vue 3 UI Framework，按钮 Get Started。安装页给出 npm create vuestic@latest，并写可脚手架 Vuestic Admin。Button 页现场 Button 与 Show Code。VueConf 条未挡住标题。本条只收 Vuestic UI，不把 Admin 并入。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Vuestic UI 定义为 Vue 3 UI Framework，并给出 Get Started 与 View on GitHub。",
+        "evidenceUrl": "https://ui.vuestic.dev/"
+      },
+      {
+        "statement": "Button 文档写 The va-button component replaces the standard HTML button，并给出现场 Button 与 Show Code。",
+        "evidenceUrl": "https://ui.vuestic.dev/ui-elements/button"
+      }
+    ],
+    "confirmedAt": "2026-09-07T01:45:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library",
+      "starter"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "vue",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ui.vuestic.dev/",
+      "finalUrl": "https://ui.vuestic.dev/",
+      "title": "Vuestic UI — Vue 3 UI framework",
+      "selectionRationale": "先看首页。Vue 3 标题和 Get Started 在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vuestic/v2-identity.png",
+        "sha256": "6bdddba9bd70c0a0dedb24643e52479465999944cf267b3cb86ea27d2b827401",
+        "width": 1280,
+        "height": 900,
+        "bytes": 203686,
+        "alt": "Vuestic UI 首页：大标题 Vue 3 UI Framework，Get Started 与 View on GitHub，下方 Setup Personal Account 等组件拼贴，底栏 Epicmax 与赞助商 logo"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ui.vuestic.dev/getting-started/installation",
+      "finalUrl": "https://ui.vuestic.dev/getting-started/installation",
+      "title": "Vuestic UI - Installation",
+      "selectionRationale": "再翻安装页。create-vuestic 命令排出起步面。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vuestic/v2-breadth.png",
+        "sha256": "23f075fcabd030f8ed62ca39b191536ef7155133beb5501ab51a0d31815cf390",
+        "width": 1280,
+        "height": 900,
+        "bytes": 119044,
+        "alt": "Installation 页：npm create vuestic@latest，说明可脚手架 Vuestic Admin、create-vue 与 Nuxt，下方 Manual installation，顶栏 VueConf US 2026 与 v1.10.3"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ui.vuestic.dev/ui-elements/button",
+      "finalUrl": "https://ui.vuestic.dev/ui-elements/button",
+      "title": "Vuestic UI - Button",
+      "selectionRationale": "最后开 Button。现场按钮和 Show Code 即证明。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vuestic/v2-proof.png",
+        "sha256": "5a365472c3b75e0a367c5db059e198b8fd864b6b6341e13a8b8ae4c3b05ff214",
+        "width": 1280,
+        "height": 900,
+        "bytes": 90263,
+        "alt": "Button 文档：va-button 说明，Default 现场蓝色 Button，Presets 的 Primary/Secondary/Plain，每块下方 Show Code 与 Copy code，顶栏 v1.10.3"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Epicmax",
+      "sourceUrl": "https://raw.githubusercontent.com/epicmaxco/vuestic-ui/develop/LICENSE.MD",
+      "evidence": "LICENSE.MD 标题 MIT License，版权行为 Copyright (c) 2024 Epicmax。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Epicmax",
+      "sourceUrl": "https://ui.vuestic.dev/",
+      "evidence": "首页底栏品牌为 Epicmax。GitHub 组织 epicmaxco 维护 vuestic-ui。站点文案写 initially released in May 2021 by Epicmax。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/epicmaxco/vuestic-ui",
+      "sourceUrl": "https://ui.vuestic.dev/",
+      "evidence": "首页 View on GitHub 链到 epicmaxco/vuestic-ui。packages/ui/package.json repository 为 https://github.com/epicmaxco/vuestic-ui。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/epicmaxco/vuestic-ui/develop/LICENSE.MD",
+      "evidence": "LICENSE.MD 标题 MIT License，Copyright (c) 2024 Epicmax。packages/ui/package.json license 为 MIT。覆盖 vuestic-ui 源码。Vuestic Admin 是另一仓库，不在本条许可陈述内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://ui.vuestic.dev/getting-started/installation",
+      "evidence": "安装页给出 npm create vuestic@latest 与 npm install vuestic-ui。文档公开可浏览。create-vuestic 可脚手架的 Vuestic Admin 是另一产品，不是本库付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "vuestic-ui",
+      "sourceUrl": "https://ui.vuestic.dev/getting-started/installation",
+      "evidence": "安装页手动安装命令为 npm install vuestic-ui。packages/ui/package.json name 为 vuestic-ui，version 1.10.3，与顶栏一致。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/vuestic",
+    "designMdUrl": "https://vislexicon.com/site/vuestic.md",
+    "checkedAt": "2026-09-07T04:30:00.000Z",
+    "license": "MIT"
+  }
+}

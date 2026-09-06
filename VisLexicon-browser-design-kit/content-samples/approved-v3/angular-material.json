@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 3,
+  "entryId": "angular-material",
+  "entityId": "entity-angular-material",
+  "attemptId": "swarm-curator-batch-b-w2b-angular-material-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://material.angular.dev/",
+    "finalUrl": "https://material.angular.dev/",
+    "checkedAt": "2026-09-07T04:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Angular Material",
+    "descriptionZh": "Google 维护的 Angular Material，现为 22.1.5，含 Material 与 CDK。仓库 LICENSE 标 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "ng add 后先抄 matButton",
+    "noteZh": "首页标题 Angular Material，副题 Material Design components for Angular，顶栏 22.1.5。组件目录列出 Autocomplete、Button。Button 页给出 Text 到 Tonal 现场按钮。Cookie 条未挡住标题。本条是 Angular 实现，不是已发布的 React MUI。MIT。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-angular-material",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Angular Material 定义为 Material Design components for Angular，顶栏写 22.1.5，导航分出 Material、Components、CDK、Guides。",
+        "evidenceUrl": "https://material.angular.dev/"
+      },
+      {
+        "statement": "Button 概览写 Angular Material buttons are native <button> or <a> elements enhanced with Material Design styling，并给出 Text、Elevated、Outlined、Filled、Tonal 现场按钮。",
+        "evidenceUrl": "https://material.angular.dev/components/button/overview"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-b-w2b",
+    "reviewerId": "swarm-reviewer-grok-y",
+    "confirmedAt": "2026-09-07T01:45:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "angular",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://material.angular.dev/",
+      "finalUrl": "https://material.angular.dev/",
+      "title": "Angular Material UI Component Library",
+      "selectionRationale": "先看首页。标题、Get started 和版本都在首屏。",
+      "shot": {
+        "src": "/shots/angular-material/v2-identity.png",
+        "sha256": "a691089460efb68c7945d67d250f9e6eba8ec2157eb6225d0bca82d6c17fd2c2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 89869,
+        "alt": "Angular Material 首页：大标题 Angular Material，副题 Material Design components for Angular，Get started 按钮，下方 High quality / Versatile / Frictionless，顶栏 22.1.5，左下 Google Cookie 条"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://material.angular.dev/components/categories",
+      "finalUrl": "https://material.angular.dev/components/categories",
+      "title": "Components • Angular Material",
+      "selectionRationale": "再翻组件目录。卡片排出 Autocomplete 到 Card。",
+      "shot": {
+        "src": "/shots/angular-material/v2-breadth.png",
+        "sha256": "776036a72a721a6868015241d1c27db2dbc625bde6d57986131e3c0819305f48",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135481,
+        "alt": "Angular Material 组件目录：based on the Material Design specification，卡片 Autocomplete、Badge、Bottom Sheet、Button、Button Toggle、Card，左侧组件列表，左下 Cookie 条"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://material.angular.dev/components/button/overview",
+      "finalUrl": "https://material.angular.dev/components/button/overview",
+      "title": "Button • Angular Material",
+      "selectionRationale": "最后开 Button。Text 到 Tonal 现场按钮即证明。",
+      "shot": {
+        "src": "/shots/angular-material/v2-proof.png",
+        "sha256": "a200b93313ac43bd0be5afdd4be21b4c736a6d37777d3cb42df11c2dce42f6f7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 115582,
+        "alt": "Button 概览：Text/Elevated/Outlined/Filled/Tonal 的 Basic、Disabled、Link 现场按钮，左侧 Button 选中，顶栏 22.1.5，左下 Cookie 条"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Google LLC",
+      "sourceUrl": "https://raw.githubusercontent.com/angular/components/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License，版权行为 Copyright (c) 2026 Google LLC。站点 meta author 为 Angular Components Team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Angular",
+      "sourceUrl": "https://material.angular.dev/",
+      "evidence": "首页 JSON-LD author.name 为 Angular。仓库由 angular/components 维护，文档站 material.angular.dev。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/angular/components",
+      "sourceUrl": "https://raw.githubusercontent.com/angular/components/main/package.json",
+      "evidence": "根 package.json repository.url 为 https://github.com/angular/components.git。顶栏 GitHub 链到同一仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/angular/components/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License，Copyright (c) 2026 Google LLC。package.json license 为 MIT。覆盖 @angular/material 与 @angular/cdk 源码，不是 React MUI。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://material.angular.dev/",
+      "evidence": "文档与组件预览公开可浏览。安装指南给出 ng add @angular/material，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@angular/material",
+      "sourceUrl": "https://material.angular.dev/guide/getting-started",
+      "evidence": "Getting started 写 ng add @angular/material，并说明会安装 Angular Material 与 CDK。npm latest 为 22.1.5，与顶栏版本一致。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-b-w2b",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-y",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-y"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-b-w2b 进站起草。三页均有 Google Cookie 条，未挡住标题与 22.1.5。分类对象是 material.angular.dev 的 Angular Material/CDK，不是已发布的 React material-ui。status 仍 DRAFT。 swarm-reviewer-grok-y 独立打开活页、LICENSE 原文与三张 PNG sha256 后 APPROVED。"
+  }
+}
