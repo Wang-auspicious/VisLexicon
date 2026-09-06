@@ -1,0 +1,193 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T15:33:29.995Z",
+  "entryId": "patternfly",
+  "entityId": "entity-patternfly",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://www.patternfly.org/",
+    "finalUrl": "https://www.patternfly.org/",
+    "checkedAt": "2026-09-06T16:00:00.000Z"
+  },
+  "editorial": {
+    "name": "PatternFly",
+    "descriptionZh": "Red Hat 赞助的开源设计系统 PatternFly，文档站现为 v6.6.1。仓库标 MIT。提供 React 与 HTML 组件，以及可下载的设计套件。",
+    "takeawayZh": "先看 HTML Button，再下设计套件",
+    "noteZh": "patternfly.org 首页写 Design and build better product experiences in the open。Design 页写 PatternFly 6 design kit。Button HTML 页现场 Primary、Secondary、Danger。导航改版提示未挡住标题。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 PatternFly 定义为 open source design system，由 Red Hat 赞助、对所有人开放。",
+        "evidenceUrl": "https://www.patternfly.org/"
+      },
+      {
+        "statement": "Button HTML 页给出 Primary/Secondary/Danger 等现场按钮，证明交付物含可复制的界面组件。",
+        "evidenceUrl": "https://www.patternfly.org/components/button/html"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "design-file",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "download",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.patternfly.org/",
+      "finalUrl": "https://www.patternfly.org/",
+      "title": "PatternFly",
+      "selectionRationale": "首页把 PatternFly 定义为开放的产品体验设计系统。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/patternfly/v2-identity.png",
+        "sha256": "ea16fb0edc39a27a89b46638e50aa2a76ac8339dbac67c6612cb771c0ae290d6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 209889,
+        "alt": "PatternFly 首页：product experiences in the open with PatternFly，Start designing/developing，顶栏导航改版提示，底栏 Cookie 条"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.patternfly.org/get-started/design",
+      "finalUrl": "https://www.patternfly.org/get-started/design",
+      "title": "PatternFly 6 design kit",
+      "selectionRationale": "Design 页说明 PatternFly 6 design kit、字体与 tokens。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/patternfly/v2-breadth.png",
+        "sha256": "35d17bc2762351069c785a4ecca95ea2c3b54fccd3f280eecb7a9a2d95e393bd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128555,
+        "alt": "PatternFly Design：PatternFly 6 design kit，Install the PatternFly 6 design kit 按钮，左侧 Get started 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.patternfly.org/components/button/html",
+      "finalUrl": "https://www.patternfly.org/components/button/html",
+      "title": "PatternFly • Button",
+      "selectionRationale": "Button HTML 页现场 Primary 到 Warning 等按钮。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/patternfly/v2-proof.png",
+        "sha256": "a08d985346fd33802b5e45bbef7f6f6ecfc07975cc42fde025f546550238b636",
+        "width": 1280,
+        "height": 900,
+        "bytes": 110469,
+        "alt": "PatternFly Button HTML：Primary Secondary Danger Warning 现场按钮，左侧组件目录，顶栏改版提示"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Red Hat, Inc.",
+      "sourceUrl": "https://raw.githubusercontent.com/patternfly/patternfly/main/LICENSE.txt",
+      "evidence": "LICENSE.txt 版权行为 Copyright (c) 2019 Red Hat, Inc.。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "PatternFly",
+      "sourceUrl": "https://www.patternfly.org/",
+      "evidence": "首页写 PatternFly is sponsored and maintained by Red Hat。页脚 Red Hat, Inc.。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/patternfly/patternfly",
+      "sourceUrl": "https://www.patternfly.org/components/button/html",
+      "evidence": "Button 页 Edit this page on GitHub 指向 patternfly/patternfly。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/patternfly/patternfly/main/LICENSE.txt",
+      "evidence": "LICENSE.txt 标题 MIT License，Copyright (c) 2019 Red Hat, Inc.。覆盖 PatternFly 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.patternfly.org/",
+      "evidence": "首页写 open source。Design kit 与 Button 页公开可读。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/patternfly",
+    "designMdUrl": "https://vislexicon.com/site/patternfly.md",
+    "checkedAt": "2026-09-06T16:00:00.000Z",
+    "license": "MIT"
+  }
+}

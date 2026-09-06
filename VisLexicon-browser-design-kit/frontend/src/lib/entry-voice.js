@@ -748,6 +748,62 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm install kbar' }],
     },
   },
+  'taiga-ui': {
+    lede: { zh: 'Angular 组件库。Apache-2.0。', en: 'Angular component library. Apache-2.0.' },
+    style: { zh: '浅色对开。超大无衬线标题。橙色主按钮。右侧绿色等高线。', en: 'Light split layout. Oversized sans title. Orange primary. Green topographic panel.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'ng add taiga-ui' }],
+      en: [{ k: 'CLI', v: 'ng add taiga-ui' }],
+    },
+  },
+  primeng: {
+    lede: { zh: 'Angular 组件库。Community MIT，LTS 与 PRO 另售。', en: 'Angular component library. Community is MIT; LTS and PRO are paid.' },
+    style: { zh: '深色产品营销。超大无衬线标题。白底与描边双按钮。底部组件标本坞。', en: 'Dark product marketing. Oversized sans title. White and outline dual CTAs. Component specimen dock.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install primeng' }],
+      en: [{ k: 'CLI', v: 'npm install primeng' }],
+    },
+  },
+  'shadcn-vue': {
+    lede: { zh: 'Vue 组件注册表。CLI 写入源码。MIT。', en: 'Vue component registry. CLI writes source. MIT.' },
+    style: { zh: '深色标本墙。超大无衬线标题。绿色主按钮。仪表盘卡片。', en: 'Dark specimen wall. Oversized sans title. Green primary. Dashboard cards.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npx shadcn-vue@latest add button' }],
+      en: [{ k: 'CLI', v: 'npx shadcn-vue@latest add button' }],
+    },
+  },
+  patternfly: {
+    lede: { zh: 'Red Hat 开源设计系统。MIT。', en: 'Red Hat open-source design system. MIT.' },
+    style: { zh: '深色文档。左侧目录。紫提示条。Cookie 底栏。', en: 'Dark documentation. Left-hand TOC. Purple notice bar. Cookie footer.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @patternfly/react-core' }],
+      en: [{ k: 'CLI', v: 'npm install @patternfly/react-core' }],
+    },
+  },
+  oruga: {
+    lede: { zh: '无内置样式的 Vue 组件。MIT。', en: 'Unstyled Vue components. MIT.' },
+    style: { zh: '浅色营销。绿色字标。毛虫徽标。四张特性卡。', en: 'Light marketing. Green wordmark. Caterpillar mark. Four feature cards.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @oruga-ui/oruga-next' }],
+      en: [{ k: 'CLI', v: 'npm install @oruga-ui/oruga-next' }],
+    },
+  },
+  konsta: {
+    lede: { zh: 'Tailwind 移动组件。MIT。不是 Framework7。', en: 'Tailwind mobile components. MIT. Not Framework7.' },
+    style: { zh: '深色移动营销。橙色手机标。超大无衬线标题。版本徽章。', en: 'Dark mobile marketing. Orange phone mark. Oversized sans title. Version badge.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install konsta' }],
+      en: [{ k: 'CLI', v: 'npm install konsta' }],
+    },
+  },
+  nebular: {
+    lede: { zh: 'Angular UI 套件。MIT。基于 Eva Design。', en: 'Angular UI kit. MIT. Based on Eva Design.' },
+    style: { zh: '蓝紫全出血营销。超大无衬线标题。三枚白底按钮。产品插画。', en: 'Blue-violet full-bleed marketing. Oversized sans title. Three white CTAs. Product illustration.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'ng add @nebular/theme' }],
+      en: [{ k: 'CLI', v: 'ng add @nebular/theme' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

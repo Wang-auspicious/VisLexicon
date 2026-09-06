@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T15:33:29.995Z",
+  "entryId": "oruga",
+  "entityId": "entity-oruga",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "oruga-ui.com",
+  "official": {
+    "inputUrl": "https://oruga-ui.com/",
+    "finalUrl": "https://oruga-ui.com/",
+    "checkedAt": "2026-09-06T15:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Oruga",
+    "descriptionZh": "Walter Tommasi 维护的 Vue 3 组件库 Oruga，现为 v0.14.3。默认不带 CSS，用 class-mapping 对接任意样式框架。包名 @oruga-ui/oruga-next。仓库标 MIT。",
+    "takeawayZh": "装 oruga-next，自己映射 class",
+    "noteZh": "oruga-ui.com 首页写 CSS agnostic UI components for Vue.js。文档说明无内置样式、可接官方主题。Button 页给出 o-button 与 class inspector。oruga.io 现为无关博彩页，本条只收 oruga-ui.com。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Oruga 定义为 CSS agnostic UI components for Vue.js，并写默认不带 CSS 框架依赖。",
+        "evidenceUrl": "https://oruga-ui.com/"
+      },
+      {
+        "statement": "Button 文档给出 <o-button> 示例与 class inspector，证明交付物是可配置 class 的无样式 Vue 组件。",
+        "evidenceUrl": "https://oruga-ui.com/components/button"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://oruga-ui.com/",
+      "finalUrl": "https://oruga-ui.com/",
+      "title": "Oruga",
+      "selectionRationale": "首页写 CSS agnostic UI components for Vue.js。",
+      "shot": {
+        "src": "/shots/oruga/v2-identity.png",
+        "sha256": "1d8753259099eee956bee70d3796dd9c4404f1116a96046617d244152544369c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121601,
+        "alt": "Oruga UI 首页：CSS agnostic UI components for Vue.js，绿色毛虫标，四张特性卡，顶栏 v0.14.3"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://oruga-ui.com/documentation/",
+      "finalUrl": "https://oruga-ui.com/documentation/",
+      "title": "Introduction | Oruga",
+      "selectionRationale": "文档 Introduction 说明无内置样式与官方主题。",
+      "shot": {
+        "src": "/shots/oruga/v2-breadth.png",
+        "sha256": "c15beded875cec05ec72955d9e34514637b989c47c2b3c95928c694ed42563ba",
+        "width": 1280,
+        "height": 900,
+        "bytes": 189237,
+        "alt": "Oruga Introduction：lightweight UI component library for Vue.js without any dependency，左侧组件目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://oruga-ui.com/components/button",
+      "finalUrl": "https://oruga-ui.com/components/button",
+      "title": "Button | Oruga",
+      "selectionRationale": "Button 页给出 o-button 示例与 class inspector。",
+      "shot": {
+        "src": "/shots/oruga/v2-proof.png",
+        "sha256": "b64486dda3f9ff732148fa7a5c2f05de73611c3577f98940446374c765fc9703",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109675,
+        "alt": "Oruga Button：Base 示例，Size/Variant 控件，左侧 Button 高亮，顶栏 v0.14.3"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Walter Tommasi",
+      "sourceUrl": "https://raw.githubusercontent.com/oruga-ui/oruga/develop/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2025 Walter Tommasi。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Oruga UI",
+      "sourceUrl": "https://oruga-ui.com/",
+      "evidence": "站点品牌为 Oruga。GitHub 组织 oruga-ui 维护核心仓，组织主页指向 https://oruga-ui.com。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/oruga-ui/oruga",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@oruga-ui/oruga-next@0.14.3/package.json",
+      "evidence": "package.json repository.url 为 git+https://github.com/oruga-ui/oruga.git，homepage 为 https://oruga-ui.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/oruga-ui/oruga/develop/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2025 Walter Tommasi。package.json license 为 MIT。覆盖 Oruga 组件源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://oruga-ui.com/",
+      "evidence": "文档与 Button 示例公开可读。安装走 npm 包 @oruga-ui/oruga-next。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@oruga-ui/oruga-next",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@oruga-ui/oruga-next@0.14.3/package.json",
+      "evidence": "package.json name 为 @oruga-ui/oruga-next，version 0.14.3。文档安装命令为 npm install @oruga-ui/oruga-next。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/oruga.md",
+  "registryUrl": "/r/oruga.json"
+}

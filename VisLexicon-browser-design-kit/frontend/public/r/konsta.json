@@ -1,0 +1,205 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T15:33:29.995Z",
+  "entryId": "konsta",
+  "entityId": "entity-konsta",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://konstaui.com/",
+    "finalUrl": "https://konstaui.com/",
+    "checkedAt": "2026-09-06T15:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Konsta UI",
+    "descriptionZh": "Vladimir Kharlampidi 维护的移动 UI 库 Konsta UI，现为 v5.4.0。用 Tailwind 做 iOS 与 Material 组件，提供 React、Vue、Svelte 绑定。仓库标 MIT。",
+    "takeawayZh": "npm i konsta，先抄 Button",
+    "noteZh": "konstaui.com 首页标题 Pixel perfect mobile UI components built with Tailwind CSS，顶栏 v5.4.0。React 文档给出 konsta/react 示例。Button 页列出 Button Props。订阅弹层未挡住标题。不是 Framework7。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Konsta UI 定义为 Pixel perfect mobile UI components built with Tailwind CSS，并写 MIT Licensed, v5.4.0。",
+        "evidenceUrl": "https://konstaui.com/"
+      },
+      {
+        "statement": "Button 文档给出 import { Button } from 'konsta/react' 与 iOS/Material 现场按钮，证明交付物是可安装的移动界面组件。",
+        "evidenceUrl": "https://konstaui.com/react/button"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "react",
+      "vue",
+      "svelte",
+      "tailwind",
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://konstaui.com/",
+      "finalUrl": "https://konstaui.com/",
+      "title": "Konsta UI - Mobile UI components built with Tailwind CSS",
+      "selectionRationale": "首页写 Tailwind 移动组件，并标 MIT 与 v5.4.0。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/konsta/v2-identity.png",
+        "sha256": "c8ca66ca1741efcf649790d850643c25a085d3cc44fbfb7c0a13a1cf6fffd6d1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 73663,
+        "alt": "Konsta UI 首页：Pixel perfect mobile UI components built with Tailwind CSS，橙色手机标，顶栏 v5.4.0"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://konstaui.com/react",
+      "finalUrl": "https://konstaui.com/react",
+      "title": "Konsta UI React",
+      "selectionRationale": "React 文档侧栏列出 Button、Navbar、Dialog 等组件。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/konsta/v2-breadth.png",
+        "sha256": "4d698dd8f06d42bf000c947e82ffbbf25d239ee918b63039ec8e9e3fb4e8c703",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106209,
+        "alt": "Konsta UI React：Introduction，konsta/react 的 App/Page/Navbar 示例代码，右下订阅弹层"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://konstaui.com/react/button",
+      "finalUrl": "https://konstaui.com/react/button",
+      "title": "Button React Component | Konsta UI React",
+      "selectionRationale": "Button 页给出 konsta/react 导入与 iOS/Material 现场按钮。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/konsta/v2-proof.png",
+        "sha256": "9a177e8c984047ecb7d5b0e0676b6a457f79c2bb67c4d1e00e6c14519a07362c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 81820,
+        "alt": "Konsta Button React Component：Button Props 表，clear/clearIos，右下 User Experienced 订阅弹层"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Vladimir Kharlampidi",
+      "sourceUrl": "https://raw.githubusercontent.com/konstaui/konsta/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2021 Vladimir Kharlampidi。package.json author 同为 Vladimir Kharlampidi。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Konsta UI",
+      "sourceUrl": "https://konstaui.com/",
+      "evidence": "站点品牌为 Konsta UI。GitHub 组织 konstaui 维护核心仓。页脚写 Konsta UI by nolimits4web。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/konstaui/konsta",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/konsta@5.4.0/package.json",
+      "evidence": "package.json repository.url 为 https://github.com/konstaui/konsta.git，homepage 为 https://konstaui.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/konstaui/konsta/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2021 Vladimir Kharlampidi。首页写 MIT Licensed。覆盖 Konsta UI 源码。PaneFlow、Cladd、UI Initiative 等周边产品不在此许可内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://konstaui.com/",
+      "evidence": "首页写 MIT Licensed, v5.4.0。起步命令为 npm i konsta。文档与 Button 示例公开可浏览。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "konsta",
+      "sourceUrl": "https://konstaui.com/",
+      "evidence": "首页起步命令为 npm i konsta。package.json name 为 konsta，version 5.4.0。React 绑定从 konsta/react 导入。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/konsta",
+    "designMdUrl": "https://vislexicon.com/site/konsta.md",
+    "checkedAt": "2026-09-06T15:00:00.000Z",
+    "license": "MIT"
+  }
+}
