@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "entryId": "milligram",
+  "entityId": "entity-milligram",
+  "attemptId": "swarm-curator-batch-q-milligram-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://milligram.io/",
+    "finalUrl": "https://milligram.io/",
+    "checkedAt": "2026-09-06T03:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Milligram",
+    "descriptionZh": "CJ Patoilo 维护的极简 CSS 框架 Milligram，现为 v1.4.1。仓库 license 标 MIT。gzip 约 2kb，给语义 HTML 套默认样式。",
+    "takeawayZh": "链上 milligram.css，按钮三类现成",
+    "noteZh": "milligram.io 首页标题 Milligram，A minimalist CSS framework，v1.4.1。Getting Started 给出 npm install milligram。Buttons 页现场 Default、Outlined、Clear，并附 a.button 代码。三页有广告，未挡标题。MIT 覆盖源码。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-milligram",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Milligram 定义为 A minimalist CSS framework，并标 Currently v1.4.1。",
+        "evidenceUrl": "https://milligram.io/"
+      },
+      {
+        "statement": "Buttons 页给出 Default、Outlined、Clear 现场按钮与 a.button / .button-outline 代码，证明交付物是可复制的界面组件。",
+        "evidenceUrl": "https://milligram.io/buttons.html"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-q",
+    "reviewerId": "swarm-reviewer-grok-t",
+    "confirmedAt": "2026-09-06T22:00:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://milligram.io/",
+      "finalUrl": "https://milligram.io/",
+      "title": "Milligram - A minimalist CSS framework",
+      "selectionRationale": "首页标题 Milligram，副标题极简 CSS，现为 v1.4.1。",
+      "shot": {
+        "src": "/shots/milligram/v2-identity.png",
+        "sha256": "9da9e7af4a282c329af538a868db1b613a1ab001ac4e8a63fd299863cf2cf621",
+        "width": 1280,
+        "height": 900,
+        "bytes": 41834,
+        "alt": "Milligram 首页：水滴 logo，标题 Milligram，A minimalist CSS framework，Currently v1.4.1，下方 Carbon 广告"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://milligram.io/getting-started.html",
+      "finalUrl": "https://milligram.io/getting-started.html",
+      "title": "Getting Started | Milligram - A minimalist CSS framework",
+      "selectionRationale": "Getting Started 列出 npm、bower、yarn 安装命令。",
+      "shot": {
+        "src": "/shots/milligram/v2-breadth.png",
+        "sha256": "6683474da071ca9d0ed83695b0516d2d0ee003294db8561477d3e023fe5fe8e2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 59714,
+        "alt": "Milligram Getting Started：Download Milligram，bower install milligram 与 npm install milligram，上方 Carbon 广告"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://milligram.io/buttons.html",
+      "finalUrl": "https://milligram.io/buttons.html",
+      "title": "Buttons | Milligram - A minimalist CSS framework",
+      "selectionRationale": "Buttons 页给出三类现场按钮和对应代码。",
+      "shot": {
+        "src": "/shots/milligram/v2-proof.png",
+        "sha256": "899ed7242e5e63ffad52cd1f9b9c24f7f7d45952ae749771e12c25b9bd7ac28c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 44756,
+        "alt": "Milligram Buttons：Default Button、Outlined Button、Clear Button 现场按钮，下方 a.button 与 button-outline 代码"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "CJ Patoilo",
+      "sourceUrl": "https://raw.githubusercontent.com/milligram/milligram/master/license",
+      "evidence": "license 版权行为 Copyright (c) CJ Patoilo <cjpatoilo@gmail.com>。package.json author 同为 CJ Patoilo <cjpatoilo@gmail.com>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://milligram.io/",
+      "evidence": "GitHub 组织 milligram 维护仓库。LICENSE 与 package.json 只署 CJ Patoilo，未见独立公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/milligram/milligram",
+      "sourceUrl": "https://raw.githubusercontent.com/milligram/milligram/master/package.json",
+      "evidence": "package.json repository 为 milligram/milligram，homepage 为 https://milligram.io。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/milligram/milligram/master/license",
+      "evidence": "license 标题 The MIT License (MIT)，Copyright (c) CJ Patoilo。package.json license 为 MIT。该许可覆盖 Milligram CSS 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://milligram.io/getting-started.html",
+      "evidence": "Getting Started 与 Buttons 公开可读。安装走 npm/bower/yarn。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "milligram",
+      "sourceUrl": "https://milligram.io/getting-started.html",
+      "evidence": "Getting Started 写 npm install milligram 与 yarn add milligram。package.json name 为 milligram，version 1.4.1。首页写 Currently v1.4.1。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-q",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-t",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-t"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-q 进站起草。三页均有 Carbon 广告，未挡住标题。 swarm-reviewer-grok-t 复核活页、截图哈希与 LICENSE 后 APPROVED。"
+  }
+}

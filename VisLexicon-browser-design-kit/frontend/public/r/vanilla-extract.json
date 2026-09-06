@@ -1,0 +1,195 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T14:33:45.100Z",
+  "entryId": "vanilla-extract",
+  "entityId": "entity-vanilla-extract",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://vanilla-extract.style/",
+    "finalUrl": "https://vanilla-extract.style/",
+    "checkedAt": "2026-09-06T03:30:00.000Z"
+  },
+  "editorial": {
+    "name": "vanilla-extract",
+    "descriptionZh": "SEEK 维护的零运行时 CSS-in-TypeScript 方案 vanilla-extract。npm 包 @vanilla-extract/css。仓库 LICENSE 标 MIT，构建期生成静态 CSS。",
+    "takeawayZh": "用 TS 写样式，构建期吐出 CSS",
+    "noteZh": "vanilla-extract.style 标题 Zero-runtime Stylesheets in TypeScript。首页命令 npm install @vanilla-extract/css。入门页列出 Vite/esbuild。Sprinkles 定义为原子 CSS 并给出安装命令。MIT 覆盖源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 vanilla-extract 定义为 Zero-runtime Stylesheets in TypeScript，并给出 npm install @vanilla-extract/css 与构建期静态 CSS。",
+        "evidenceUrl": "https://vanilla-extract.style/"
+      },
+      {
+        "statement": "Getting Started 写它需要打包器处理 CSS，并用 style() 在 .css.ts 里生成局部作用域 class，证明交付物是样式引擎而不是现成组件包。",
+        "evidenceUrl": "https://vanilla-extract.style/documentation/getting-started/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vanilla-extract.style/",
+      "finalUrl": "https://vanilla-extract.style/",
+      "title": "vanilla-extract — Zero-runtime Stylesheets-in-TypeScript.",
+      "selectionRationale": "首页标题零运行时 TS 样式，并给出 @vanilla-extract/css。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vanilla-extract/v2-identity.png",
+        "sha256": "a0cfc33c88de17d6119dbad08309a38bfed9919d5a87c065847d8013e9029e42",
+        "width": 1280,
+        "height": 900,
+        "bytes": 81533,
+        "alt": "vanilla-extract 首页：Zero-runtime Stylesheets in TypeScript，npm install @vanilla-extract/css，右侧 styles.css.ts 的 createTheme 示例"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://vanilla-extract.style/documentation/getting-started",
+      "finalUrl": "https://vanilla-extract.style/documentation/getting-started/",
+      "title": "Getting Started — vanilla-extract",
+      "selectionRationale": "Getting Started 列出安装、打包集成与 API 侧栏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vanilla-extract/v2-breadth.png",
+        "sha256": "b865c2c45422c10a9f03dd72adf730d402c4455db1f1a4075ff15264cd4a215d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75173,
+        "alt": "vanilla-extract Getting Started：npm install @vanilla-extract/css，Bundler Integration 列出 vite、esbuild，左侧 API 与 Packages 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://vanilla-extract.style/documentation/packages/sprinkles",
+      "finalUrl": "https://vanilla-extract.style/documentation/packages/sprinkles/",
+      "title": "Sprinkles — vanilla-extract",
+      "selectionRationale": "Sprinkles 页定义原子 CSS 包，并给出 Setup 命令。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vanilla-extract/v2-proof.png",
+        "sha256": "4ce0163427096932b20a2776768e3412b62e4a96b444242c77f586148b2e599f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 96416,
+        "alt": "vanilla-extract Sprinkles：A zero-runtime atomic CSS framework for vanilla-extract，下方 Setup 与 npm install 提示"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "SEEK",
+      "sourceUrl": "https://raw.githubusercontent.com/vanilla-extract-css/vanilla-extract/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2021 SEEK。根 package.json 与 packages/css/package.json author 均为 SEEK。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "SEEK",
+      "sourceUrl": "https://raw.githubusercontent.com/vanilla-extract-css/vanilla-extract/master/LICENSE",
+      "evidence": "LICENSE 与 package.json 均署 SEEK。GitHub 组织 vanilla-extract-css 维护仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/vanilla-extract-css/vanilla-extract",
+      "sourceUrl": "https://raw.githubusercontent.com/vanilla-extract-css/vanilla-extract/master/packages/css/package.json",
+      "evidence": "packages/css/package.json repository.url 为 https://github.com/vanilla-extract-css/vanilla-extract.git。首页 GitHub 按钮链到该仓。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/vanilla-extract-css/vanilla-extract/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2021 SEEK。packages/css/package.json license 为 MIT。该许可覆盖 vanilla-extract 仓库源码，含 @vanilla-extract/css 与 @vanilla-extract/sprinkles。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://vanilla-extract.style/",
+      "evidence": "首页、Getting Started 与 Sprinkles 公开可读。安装走 npm。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@vanilla-extract/css",
+      "sourceUrl": "https://vanilla-extract.style/documentation/getting-started/",
+      "evidence": "Getting Started 写 npm install @vanilla-extract/css。packages/css/package.json name 为 @vanilla-extract/css。Sprinkles 另装 @vanilla-extract/sprinkles。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/vanilla-extract",
+    "designMdUrl": "https://vislexicon.com/site/vanilla-extract.md",
+    "checkedAt": "2026-09-06T03:30:00.000Z",
+    "license": "MIT"
+  }
+}

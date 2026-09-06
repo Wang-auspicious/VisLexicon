@@ -1,0 +1,196 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T14:33:45.100Z",
+  "entryId": "splide",
+  "entityId": "entity-splide",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://splidejs.com/",
+    "finalUrl": "https://splidejs.com/",
+    "checkedAt": "2026-09-06T03:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Splide",
+    "descriptionZh": "Naotoshi Fujita 维护的 TypeScript 轮播库 Splide，npm 包 @splidejs/splide 现为 v4.1.4。仓库 MIT。赞助者专享的 WebGL 过渡不在本条。",
+    "takeawayZh": "用选项拼无依赖无障碍轮播",
+    "noteZh": "splidejs.com 首页定义为 accessible slider/carousel，按钮 Download、Get Started，提示 v4。Options 用 JS 改 type、perPage。Thumbnail Carousel 给出 sync() 与现场咖啡轮播。MIT 覆盖开源轮播；Premium/WebGL 另计。",
+    "pricing": "Free MIT slider; WebGL premium is sponsor-only",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Splide 定义为 lightweight, flexible and accessible slider/carousel written in TypeScript，并提供 Download 与 Get Started。",
+        "evidenceUrl": "https://splidejs.com/"
+      },
+      {
+        "statement": "Thumbnail Carousel 教程给出 sync()、isNavigation 与现场缩略图轮播，证明开源库可做出可嵌入的轮播控件。",
+        "evidenceUrl": "https://splidejs.com/tutorials/thumbnail-carousel/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://splidejs.com/",
+      "finalUrl": "https://splidejs.com/",
+      "title": "Splide - The lightweight, flexible and accessible slider/carousel",
+      "selectionRationale": "首页定义无依赖无障碍轮播，并提示 Splide v4。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/splide/v2-identity.png",
+        "sha256": "4c44c957e91e4d74ba8ae0918bfa53636d900bd870577618040fa03ed0ba98f7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 295372,
+        "alt": "Splide 首页：绿色首屏定义 lightweight, flexible and accessible slider/carousel，按钮 Download 与 Get Started，提示 Splide v4"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://splidejs.com/guides/options/",
+      "finalUrl": "https://splidejs.com/guides/options/",
+      "title": "Options - Splide",
+      "selectionRationale": "Options 用 JS 示例与侧栏目录排出可调范围。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/splide/v2-breadth.png",
+        "sha256": "03c8e67f73d48e6398741a2a343be7586e5dcb42b9e592e588ed8e7c1baf95ff",
+        "width": 1280,
+        "height": 900,
+        "bytes": 105587,
+        "alt": "Splide Options：Changing Options，new Splide type loop perPage 3，右侧 User's Guide 列出 Getting Started、Themes、Arrows"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://splidejs.com/tutorials/thumbnail-carousel/",
+      "finalUrl": "https://splidejs.com/tutorials/thumbnail-carousel/",
+      "title": "Thumbnail Carousel - Splide",
+      "selectionRationale": "Thumbnail Carousel 给出 sync 代码与现场咖啡轮播。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/splide/v2-proof.png",
+        "sha256": "5854927c56fc12e223b80e9ffd8ed6b106444971637bd4f4553b4f3bd33e580f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 326903,
+        "alt": "Splide Thumbnail Carousel：Introduction 写 sync() 与 isNavigation，下方咖啡拉花现场轮播"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Naotoshi Fujita",
+      "sourceUrl": "https://raw.githubusercontent.com/Splidejs/splide/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2022 Naotoshi Fujita。package.json author 同为 Naotoshi Fujita。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Splidejs",
+      "sourceUrl": "https://github.com/Splidejs/splide",
+      "evidence": "GitHub 组织 Splidejs 维护核心仓 splide。站点品牌为 Splide。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/Splidejs/splide",
+      "sourceUrl": "https://raw.githubusercontent.com/Splidejs/splide/master/package.json",
+      "evidence": "package.json repository.url 为 git+https://github.com/Splidejs/splide.git。README 回链 splidejs.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/Splidejs/splide/master/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2022 Naotoshi Fujita。README 写 Splide is released under MIT license。该许可覆盖开源轮播源码。顶栏 Premium 与赞助者专享 WebGL 过渡不在此许可内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free MIT slider; WebGL premium is sponsor-only",
+      "sourceUrl": "https://splidejs.com/",
+      "evidence": "开源文档与示例公开可读。顶栏另有 Premium。站点曾写 WebGL 过渡 Available in the sponsor-only repository，不在本条开源轮播范围内。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@splidejs/splide",
+      "sourceUrl": "https://raw.githubusercontent.com/Splidejs/splide/master/package.json",
+      "evidence": "package.json name 为 @splidejs/splide，version 4.1.4。首页提示 Splide v4 has been released。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/splide",
+    "designMdUrl": "https://vislexicon.com/site/splide.md",
+    "checkedAt": "2026-09-06T03:30:00.000Z",
+    "license": "MIT"
+  }
+}

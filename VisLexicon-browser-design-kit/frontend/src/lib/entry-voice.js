@@ -614,6 +614,76 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm install vega' }],
     },
   },
+  tabler: {
+    lede: { zh: 'Bootstrap 后台模板。开源 MIT，Pro 另售。', en: 'Bootstrap admin template. MIT for the OSS kit; Pro is paid.' },
+    style: { zh: '深色营销。超大无衬线标题。饱和蓝主按钮。顶栏渐变促销条。订阅弹层压在仪表盘标本上。', en: 'Dark marketing. Oversized sans title. Saturated blue primary. Gradient promo bar. Subscribe modal over a dashboard specimen.' },
+    acquire: {
+      zh: [
+        { k: '命令行', v: 'npm install @tabler/core' },
+        { k: '下载', v: '开源模板 ZIP' },
+      ],
+      en: [
+        { k: 'CLI', v: 'npm install @tabler/core' },
+        { k: 'Download', v: 'OSS template ZIP' },
+      ],
+    },
+  },
+  'react-day-picker': {
+    lede: { zh: 'React 日期选择组件。MIT。', en: 'React date picker. MIT.' },
+    style: { zh: '深色文档系统。左侧目录。顶栏版本号。代码标本。', en: 'Dark documentation system. Left-hand TOC. Version in the top bar. Code specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @daypicker/react' }],
+      en: [{ k: 'CLI', v: 'npm install @daypicker/react' }],
+    },
+  },
+  photoswipe: {
+    lede: { zh: 'JavaScript 图库灯箱。MIT。', en: 'JavaScript image gallery and lightbox. MIT.' },
+    style: { zh: '浅色画廊首页。超大无衬线字标。风景拼图标本。细线顶栏。', en: 'Light gallery homepage. Oversized sans wordmark. Landscape mosaic specimen. Hairline top bar.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install photoswipe' }],
+      en: [{ k: 'CLI', v: 'npm install photoswipe' }],
+    },
+  },
+  splide: {
+    lede: { zh: '无依赖无障碍轮播。MIT。', en: 'Dependency-free accessible carousel. MIT.' },
+    style: { zh: '高饱和黄绿全出血。几何菱形徽标。居中卡片。双黑底胶囊按钮。', en: 'High-chroma yellow-green full bleed. Geometric diamond mark. Centered card. Dual black capsule buttons.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @splidejs/splide' }],
+      en: [{ k: 'CLI', v: 'npm install @splidejs/splide' }],
+    },
+  },
+  milligram: {
+    lede: { zh: '极简 CSS 框架。MIT。', en: 'Minimalist CSS framework. MIT.' },
+    style: { zh: '浅灰极简。紫色水滴徽标。居中标题。单一紫主按钮。Carbon 广告卡。', en: 'Light-gray minimal. Purple drop mark. Centered title. Single purple primary. Carbon ad card.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install milligram' }],
+      en: [{ k: 'CLI', v: 'npm install milligram' }],
+    },
+  },
+  'vanilla-extract': {
+    lede: { zh: '零运行时 CSS-in-TypeScript。MIT。', en: 'Zero-runtime CSS-in-TypeScript. MIT.' },
+    style: { zh: '深色产品营销。斜体衬线大标题。纸杯蛋糕插画。右侧 TypeScript 标本。', en: 'Dark product marketing. Italic serif display. Cupcake illustration. TypeScript specimen on the right.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @vanilla-extract/css' }],
+      en: [{ k: 'CLI', v: 'npm install @vanilla-extract/css' }],
+    },
+  },
+  lexical: {
+    lede: { zh: '可扩展文本编辑器框架。MIT。', en: 'Extensible text-editor framework. MIT.' },
+    style: { zh: '浅色产品营销。超大无衬线标题。青蓝渐变强调词。右侧现场编辑器标本。', en: 'Light product marketing. Oversized sans title. Teal-to-green gradient emphasis. Live editor specimen on the right.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install lexical' }],
+      en: [{ k: 'CLI', v: 'npm install lexical' }],
+    },
+  },
+  quill: {
+    lede: { zh: '富文本编辑器。BSD-3-Clause。', en: 'Rich-text editor. BSD-3-Clause.' },
+    style: { zh: '浅色产品营销。超大无衬线标题。黄徽章。嵌入工具栏编辑器标本。', en: 'Light product marketing. Oversized sans title. Yellow badges. Embedded toolbar editor specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install quill' }],
+      en: [{ k: 'CLI', v: 'npm install quill' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

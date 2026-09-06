@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "entryId": "react-day-picker",
+  "entityId": "entity-react-day-picker",
+  "attemptId": "swarm-curator-batch-q-react-day-picker-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://daypicker.dev/",
+    "finalUrl": "https://daypicker.dev/",
+    "checkedAt": "2026-09-06T03:30:00.000Z"
+  },
+  "editorial": {
+    "name": "React DayPicker",
+    "descriptionZh": "Giampaolo Bellavite 维护的 React 日期选择组件 DayPicker，文档顶栏现为 v10.0.1。新项目应安装 @daypicker/react；旧包名 react-day-picker 仍可用。仓库 MIT。",
+    "takeawayZh": "装 @daypicker/react，先抄单日选择",
+    "noteZh": "daypicker.dev 标题 React DayPicker，示例从 @daypicker/react 导入。Getting Started 写 npm install @daypicker/react，旧包名仅作 v10 兼容。Single Mode 给出 mode=\"single\" 与 September 2026 现场日历。MIT 覆盖组件源码。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-react-day-picker",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 DayPicker 定义为 React component for creating date pickers, calendars, and date inputs，示例从 @daypicker/react 导入。",
+        "evidenceUrl": "https://daypicker.dev/"
+      },
+      {
+        "statement": "Single Mode 页给出 <DayPicker mode=\"single\" /> 与 September 2026 现场日历，证明交付物是可嵌入的日期选择控件。",
+        "evidenceUrl": "https://daypicker.dev/selections/single-mode"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-q",
+    "reviewerId": "swarm-reviewer-grok-t",
+    "confirmedAt": "2026-09-06T22:00:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://daypicker.dev/",
+      "finalUrl": "https://daypicker.dev/",
+      "title": "Date Picker Component for React | React DayPicker",
+      "selectionRationale": "首页标题 React DayPicker，示例导入新包名。",
+      "shot": {
+        "src": "/shots/react-day-picker/v2-identity.png",
+        "sha256": "1a8a0fdc06e00e0f7a226a3861ded57b6b423e0f75c20c7b81e1649df184112d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 160683,
+        "alt": "React DayPicker 首页：标题 React DayPicker，顶栏 10.0.1，示例 import { DayPicker } from \"@daypicker/react\""
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://daypicker.dev/start",
+      "finalUrl": "https://daypicker.dev/start",
+      "title": "Getting Started | React DayPicker",
+      "selectionRationale": "入门页写 npm install @daypicker/react。",
+      "shot": {
+        "src": "/shots/react-day-picker/v2-breadth.png",
+        "sha256": "055a1b04d44b33966dfcb522c3b4d7c6ed9c0d80030ef1d06b2e756bb08f24ab",
+        "width": 1280,
+        "height": 900,
+        "bytes": 138219,
+        "alt": "DayPicker Getting Started：npm install @daypicker/react，Legacy package name 说明 react-day-picker 仅作 v10 兼容"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://daypicker.dev/selections/single-mode",
+      "finalUrl": "https://daypicker.dev/selections/single-mode",
+      "title": "Single Mode | React DayPicker",
+      "selectionRationale": "Single Mode 给出 mode=single 与现场日历。",
+      "shot": {
+        "src": "/shots/react-day-picker/v2-proof.png",
+        "sha256": "1f9abb57684f70160295c058a7fe38ac50198970f686dae98e70815fbd1cfcd9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121148,
+        "alt": "DayPicker Single Mode：<DayPicker mode=\"single\" />，下方 September 2026 现场日历"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Giampaolo Bellavite",
+      "sourceUrl": "https://raw.githubusercontent.com/gpbl/react-day-picker/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2014-2026 Giampaolo Bellavite <io@gpbl.dev> and contributors。packages/react/package.json author 同为 Giampaolo Bellavite。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://daypicker.dev/",
+      "evidence": "仓库由个人账户 gpbl 维护。LICENSE 与 package.json 均署 Giampaolo Bellavite，未见独立公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/gpbl/react-day-picker",
+      "sourceUrl": "https://raw.githubusercontent.com/gpbl/react-day-picker/main/packages/react/package.json",
+      "evidence": "packages/react/package.json repository.url 为 git+https://github.com/gpbl/react-day-picker.git。文档顶栏 GitHub 链到该仓。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/gpbl/react-day-picker/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2014-2026 Giampaolo Bellavite。首页 License 节写 DayPicker is released under the MIT License。该许可覆盖 DayPicker 组件源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://daypicker.dev/start",
+      "evidence": "Getting Started 与 Single Mode 公开可读。安装走 npm。赞助入口是 GitHub Sponsors，不是买断。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@daypicker/react",
+      "sourceUrl": "https://daypicker.dev/start",
+      "evidence": "Getting Started 写 DayPicker is available as the @daypicker/react npm package，命令 npm install @daypicker/react。并说明 react-day-picker 包名在 v10 仍可用，新项目应改用 @daypicker/react。顶栏现为 10.0.1。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-q",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-t",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-t"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-q 进站起草。文档写明新包名为 @daypicker/react。 swarm-reviewer-grok-t 复核活页、截图哈希与 LICENSE 后 APPROVED。"
+  }
+}

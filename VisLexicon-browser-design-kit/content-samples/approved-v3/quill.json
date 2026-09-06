@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "entryId": "quill",
+  "entityId": "entity-quill",
+  "attemptId": "swarm-curator-batch-q-quill-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://quilljs.com/",
+    "finalUrl": "https://quilljs.com/",
+    "checkedAt": "2026-09-06T03:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Quill",
+    "descriptionZh": "Slab 维护的富文本编辑器 Quill，站点徽章 v2.0.3。LICENSE 为 BSD-3-Clause，版权含 Slab、Jason Chen 与 salesforce.com。可免费用于个人与商业项目。",
+    "takeawayZh": "挂 Snow 主题，先跑出工具栏编辑器",
+    "noteZh": "quilljs.com 标题 Your powerful rich text editor，徽章 v2.0.3，框内已有 Snow 工具栏。Quickstart 给出 quill@2.0.3 的 snow.css 与 theme: snow。Themes 页示范 bubble.css 初始化与 Bubble、Snow。BSD-3-Clause 覆盖源码。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-quill",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Quill 定义为 Your powerful rich text editor，笔记本框内已有 Snow 工具栏与现场正文。",
+        "evidenceUrl": "https://quilljs.com/"
+      },
+      {
+        "statement": "Quickstart 给出 quill@2.0.3 的 snow.css/quill.js 与 new Quill('#editor', { theme: 'snow' })，页脚写 permissively licensed under BSD。",
+        "evidenceUrl": "https://quilljs.com/docs/quickstart"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-q",
+    "reviewerId": "swarm-reviewer-grok-t",
+    "confirmedAt": "2026-09-06T22:00:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "edit",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://quilljs.com/",
+      "finalUrl": "https://quilljs.com/",
+      "title": "Quill - Your powerful rich text editor",
+      "selectionRationale": "首页标题富文本编辑器，笔记本框内已有 Snow 工具栏。",
+      "shot": {
+        "src": "/shots/quill/v2-identity.png",
+        "sha256": "5e18088ebdf86cd6a45303761ef1e6375c1ca3811c5081c8c91635089c654c24",
+        "width": 1280,
+        "height": 900,
+        "bytes": 66818,
+        "alt": "Quill 首页：Your powerful rich text editor，徽章 v2.0.3，笔记本框内 Snow 工具栏与 Quill Rich Text Editor 正文"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://quilljs.com/docs/quickstart",
+      "finalUrl": "https://quilljs.com/docs/quickstart",
+      "title": "Quickstart - Quill Rich Text Editor",
+      "selectionRationale": "Quickstart 给出 v2.0.3 CDN 代码与 Run Code。",
+      "shot": {
+        "src": "/shots/quill/v2-breadth.png",
+        "sha256": "0e92e1484cf6ebb30ef38399e72a7be82590c0cfb43c8c6869f4205341d88243",
+        "width": 1280,
+        "height": 900,
+        "bytes": 73223,
+        "alt": "Quill Quickstart：quill@2.0.3 的 snow.css 与 quill.js，new Quill theme snow，黄色 Run Code，左侧文档目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://quilljs.com/docs/customization/themes",
+      "finalUrl": "https://quilljs.com/docs/customization/themes",
+      "title": "Themes - Quill Rich Text Editor",
+      "selectionRationale": "Themes 页给出 bubble 初始化代码，并介绍 Bubble/Snow。",
+      "shot": {
+        "src": "/shots/quill/v2-proof.png",
+        "sha256": "3e211368c532f21b842fd38493e6e151af4540fbbf205c6f9ca4e4cd389aace4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 66922,
+        "alt": "Quill Themes：Usage 代码加载 quill.bubble.css 并 theme: bubble，下方 Bubble is a simple tooltip based theme"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Jason Chen",
+      "sourceUrl": "https://raw.githubusercontent.com/slab/quill/main/packages/quill/package.json",
+      "evidence": "packages/quill/package.json author 为 Jason Chen <jhchen7@gmail.com>。LICENSE 另列 Copyright (c) 2014, Jason Chen，以及 Slab 与 salesforce.com。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Slab",
+      "sourceUrl": "https://quilljs.com/docs/quickstart",
+      "evidence": "Quickstart 页脚写 Quill is developed and maintained by Slab。LICENSE 首行 Copyright (c) 2017-2024, Slab。仓库在 slab/quill。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/slab/quill",
+      "sourceUrl": "https://raw.githubusercontent.com/slab/quill/main/packages/quill/package.json",
+      "evidence": "packages/quill/package.json repository.url 为 git+https://github.com/slab/quill.git。文档 Edit page on GitHub 链到 slab/quill。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "BSD-3-Clause",
+      "sourceUrl": "https://raw.githubusercontent.com/slab/quill/main/LICENSE",
+      "evidence": "LICENSE 为三条款 BSD 文本，含 Neither the name of the copyright holder nor the names of its contributors 条款。package.json license 为 BSD-3-Clause。Quickstart 写 permissively licensed under BSD。该许可覆盖 Quill 编辑器源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://quilljs.com/docs/quickstart",
+      "evidence": "Quickstart 写 Use it freely in personal or commercial projects。文档与首页编辑器公开可浏览。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "quill",
+      "sourceUrl": "https://quilljs.com/docs/quickstart",
+      "evidence": "Quickstart CDN 为 npm/quill@2.0.3。packages/quill/package.json name 为 quill，version 2.0.3。首页徽章 v2.0.3。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-q",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-t",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-t"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-q 进站起草。LICENSE 为 BSD-3-Clause，不是 MIT。Themes 页 headless 超时后改用 Playwright 截到 customization/themes。 swarm-reviewer-grok-t 复核活页、截图哈希与 LICENSE 后 APPROVED。"
+  }
+}

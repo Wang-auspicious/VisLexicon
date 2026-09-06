@@ -1,0 +1,195 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T14:33:45.100Z",
+  "entryId": "photoswipe",
+  "entityId": "entity-photoswipe",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://photoswipe.com/",
+    "finalUrl": "https://photoswipe.com/",
+    "checkedAt": "2026-09-06T03:30:00.000Z"
+  },
+  "editorial": {
+    "name": "PhotoSwipe",
+    "descriptionZh": "Dmitry Semenov 维护的 JavaScript 图库灯箱 PhotoSwipe，站点现为 v5.4.4。仓库 LICENSE 标 MIT，可用于个人与商业项目。",
+    "takeawayZh": "给缩略图挂上可缩放灯箱",
+    "noteZh": "photoswipe.com 标题 PhotoSwipe 5.4.4，下方 Luca Bravo 风景拼图。Getting Started 列出 Core、Lightbox、CSS 与侧栏目录。Styling 页给出自定义箭头代码与四张缩略图。MIT 覆盖 PhotoSwipe 源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 PhotoSwipe 定义为 JavaScript image gallery and lightbox，并给出可点击的现场图库。",
+        "evidenceUrl": "https://photoswipe.com/"
+      },
+      {
+        "statement": "Getting Started 给出 PhotoSwipeLightbox 初始化代码与带 data-pswp-width/height 的图库标记，证明交付物是可嵌入的灯箱控件。",
+        "evidenceUrl": "https://photoswipe.com/getting-started/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://photoswipe.com/",
+      "finalUrl": "https://photoswipe.com/",
+      "title": "PhotoSwipe: Responsive JavaScript Image Gallery",
+      "selectionRationale": "首页标题 PhotoSwipe 5.4.4，下方是风景拼图灯箱。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/photoswipe/v2-identity.png",
+        "sha256": "79aaeafbf849e642d1afd7eae29cb0c4a79f6a7e8307e215d242d05a277676c9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 873120,
+        "alt": "PhotoSwipe 首页：标题 PhotoSwipe 5.4.4，JavaScript image gallery and lightbox，下方 Luca Bravo 五张风景拼图"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://photoswipe.com/getting-started",
+      "finalUrl": "https://photoswipe.com/getting-started/",
+      "title": "Getting Started | PhotoSwipe",
+      "selectionRationale": "入门页列出 Core、Lightbox、CSS 与侧栏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/photoswipe/v2-breadth.png",
+        "sha256": "c83af4bc2b3e987fd86f05e40778fe649307cecc3fbc60eb52a4d5bf932cb832",
+        "width": 1280,
+        "height": 900,
+        "bytes": 103915,
+        "alt": "PhotoSwipe Getting Started：Initialization 列出 Core、Lightbox、CSS，左侧 Styling、Options、for React/Vue/Svelte"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://photoswipe.com/styling",
+      "finalUrl": "https://photoswipe.com/styling/",
+      "title": "Styling PhotoSwipe | PhotoSwipe",
+      "selectionRationale": "Styling 页给出自定义图标代码和四张缩略图。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/photoswipe/v2-proof.png",
+        "sha256": "89b870aaa993aa7b80e473f0668da5f50598ea0ee5b004b40416c7ba6cda1e76",
+        "width": 1280,
+        "height": 900,
+        "bytes": 151797,
+        "alt": "PhotoSwipe Styling：Modifying icons，import PhotoSwipeLightbox 代码旁四张风景缩略图"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Dmitry Semenov",
+      "sourceUrl": "https://raw.githubusercontent.com/dimsemenov/PhotoSwipe/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2014-2022 Dmitry Semenov, https://dimsemenov.com。package.json author 写 Dmytro Semenov (https://dimsemenov.com)。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://photoswipe.com/",
+      "evidence": "仓库由个人账户 dimsemenov 维护。LICENSE 与 package.json 均署 Semenov，未见独立公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/dimsemenov/PhotoSwipe",
+      "sourceUrl": "https://raw.githubusercontent.com/dimsemenov/PhotoSwipe/master/package.json",
+      "evidence": "package.json repository.url 为 git://github.com/dimsemenov/Photoswipe.git。首页 GitHub 按钮链到该仓。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/dimsemenov/PhotoSwipe/master/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2014-2022 Dmitry Semenov。首页 License 节写 PhotoSwipe is free for personal or commercial projects (MIT license)。该许可覆盖 PhotoSwipe 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://photoswipe.com/",
+      "evidence": "首页写 MIT license，并链 Open Collective 寻求赞助。文档与示例公开可读，不是付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "photoswipe",
+      "sourceUrl": "https://photoswipe.com/getting-started/",
+      "evidence": "Getting Started 写 npm i photoswipe --save。package.json name 为 photoswipe，version 5.4.4。首页徽章 5.4.4。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/photoswipe",
+    "designMdUrl": "https://vislexicon.com/site/photoswipe.md",
+    "checkedAt": "2026-09-06T03:30:00.000Z",
+    "license": "MIT"
+  }
+}

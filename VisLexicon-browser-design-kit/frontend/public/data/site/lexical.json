@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T14:33:45.100Z",
+  "entryId": "lexical",
+  "entityId": "entity-lexical",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "lexical.dev",
+  "official": {
+    "inputUrl": "https://lexical.dev/",
+    "finalUrl": "https://lexical.dev/",
+    "checkedAt": "2026-09-06T03:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Lexical",
+    "descriptionZh": "Meta 维护的可扩展 Web 文本编辑器框架 Lexical，核心 npm 包 lexical 现为 v0.50.0。仓库 LICENSE 标 MIT。框架不自带完整工具栏 UI，功能靠插件组装。",
+    "takeawayZh": "用插件拼无界面编辑器内核",
+    "noteZh": "lexical.dev 标题 A text editor framework that does things differently，右侧带工具栏的现场编辑器。Introduction 用模块图列出 lexical 核心与插件。playground.lexical.dev 给出工具栏、Welcome 正文与 EditorState 树。MIT 覆盖源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Lexical 定义为 lean text editor framework，并写功能通过 modular packages / plugin interface 加入，不直接提供完整 UI。",
+        "evidenceUrl": "https://lexical.dev/"
+      },
+      {
+        "statement": "playground.lexical.dev 给出完整工具栏、Welcome to the playground 正文与 EditorState 调试树，证明框架可以组装成现场编辑器。",
+        "evidenceUrl": "https://playground.lexical.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "edit",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://lexical.dev/",
+      "finalUrl": "https://lexical.dev/",
+      "title": "Lexical",
+      "selectionRationale": "首页标题编辑器框架，右侧已有带工具栏的现场编辑器。",
+      "shot": {
+        "src": "/shots/lexical/v2-identity.png",
+        "sha256": "10386cb5858e5e8066c54e1448b8f4e7934d377c6ee65a32f92fe9ab34a462b8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 66876,
+        "alt": "Lexical 首页：A text editor framework that does things differently，右侧 Normal/B/I/U 工具栏与 Enter some text 现场编辑器"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://lexical.dev/docs/intro",
+      "finalUrl": "https://lexical.dev/docs/intro",
+      "title": "Introduction | Lexical",
+      "selectionRationale": "Introduction 用模块图和侧栏排出核心与插件范围。",
+      "shot": {
+        "src": "/shots/lexical/v2-breadth.png",
+        "sha256": "b7a8b23f841f21144b402acf80e53a93b6ba41c0b27396d8ee6e520f986d4dda",
+        "width": 1280,
+        "height": 900,
+        "bytes": 104110,
+        "alt": "Lexical Introduction：模块图列出 lexical 核心与 @lexical/rich-text、@lexical/history 等插件，左侧 Getting Started/Packages 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://playground.lexical.dev/",
+      "finalUrl": "https://playground.lexical.dev/",
+      "title": "Lexical Playground",
+      "selectionRationale": "Playground 给出完整工具栏、正文和 EditorState 调试树。",
+      "shot": {
+        "src": "/shots/lexical/v2-proof.png",
+        "sha256": "56327318f8ff16e03f0bf51bea648ba9731f6fde20054fba3509ef378c0cf61a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 76571,
+        "alt": "Lexical Playground：Welcome to the playground 富文本，顶部完整工具栏，底部 EditorState 调试树"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Meta Platforms, Inc. and affiliates",
+      "sourceUrl": "https://raw.githubusercontent.com/facebook/lexical/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) Meta Platforms, Inc. and affiliates。核心 package.json 未另署个人作者。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Meta",
+      "sourceUrl": "https://lexical.dev/docs/intro",
+      "evidence": "Introduction 写 At Meta, Lexical powers web text editing experiences。LICENSE 署 Meta Platforms, Inc. and affiliates。仓库在 facebook/lexical。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/facebook/lexical",
+      "sourceUrl": "https://raw.githubusercontent.com/facebook/lexical/main/packages/lexical/package.json",
+      "evidence": "packages/lexical/package.json repository.url 为 git+https://github.com/facebook/lexical.git。Playground 写 Check out the code on our GitHub repository。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/facebook/lexical/main/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) Meta Platforms, Inc. and affiliates。根 package.json 与 packages/lexical/package.json license 均为 MIT。该许可覆盖 Lexical 框架源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://lexical.dev/",
+      "evidence": "首页、文档与 playground.lexical.dev 公开可浏览。安装走 npm。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "lexical",
+      "sourceUrl": "https://raw.githubusercontent.com/facebook/lexical/main/packages/lexical/package.json",
+      "evidence": "packages/lexical/package.json name 为 lexical，version 0.50.0。文档 Getting Started with React 写 npm install --save lexical @lexical/react。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/lexical.md",
+  "registryUrl": "/r/lexical.json"
+}
