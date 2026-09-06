@@ -620,6 +620,71 @@ const VOICE = {
       ],
     },
   },
+  'react-bootstrap': {
+    lede: { zh: 'Bootstrap 的 React 组件。MIT。', en: 'Bootstrap components for React. MIT.' },
+    style: { zh: '深色营销。紫顶栏。双紫胶囊按钮。三栏正文。', en: 'Dark marketing. Purple top bar. Dual purple capsule buttons. Three-column body.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install react-bootstrap bootstrap' }], en: [{ k: 'CLI', v: 'npm install react-bootstrap bootstrap' }] },
+  },
+  'semantic-ui': {
+    lede: { zh: '语义化 CSS 组件框架。MIT。', en: 'Semantic CSS component framework. MIT.' },
+    style: { zh: '全出血渐变英雄。超大白无衬线。描边双按钮。底部设备标本。', en: 'Full-bleed gradient hero. Oversized white sans. Dual outlined buttons. Device specimens below.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install semantic-ui' }], en: [{ k: 'CLI', v: 'npm install semantic-ui' }] },
+  },
+  refine: {
+    lede: { zh: 'React 后台框架。核心 MIT，AI/Pro 另售。', en: 'React admin framework. Core is MIT; AI/Pro is paid.' },
+    style: { zh: '深色产品营销。青绿强调。Cookie 弹层。提示输入框。', en: 'Dark product marketing. Teal accent. Cookie modal. Prompt input.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install @refinedev/core' }], en: [{ k: 'CLI', v: 'npm install @refinedev/core' }] },
+  },
+  'jquery-ui': {
+    lede: { zh: 'jQuery 界面控件。MIT。', en: 'jQuery UI widgets. MIT.' },
+    style: { zh: '橙色经典文档。左侧控件目录。下载面板。衬线字标。', en: 'Orange classic docs. Left-hand widget list. Download panel. Serif wordmark.' },
+    acquire: { zh: [{ k: '下载', v: 'Custom Download v1.14.2' }], en: [{ k: 'Download', v: 'Custom Download v1.14.2' }] },
+  },
+  'material-react-table': {
+    lede: { zh: 'Material UI 与 TanStack Table 的 React 表。MIT。', en: 'React table on Material UI and TanStack Table. MIT.' },
+    style: { zh: '深色文档。青绿标题。npm 徽章条。安装命令。', en: 'Dark docs. Teal title. npm badge row. Install command.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm i material-react-table' }], en: [{ k: 'CLI', v: 'npm i material-react-table' }] },
+  },
+  moveable: {
+    lede: { zh: '可拖放缩放旋转的变换控件。MIT。', en: 'Draggable, resizable, rotatable transform control. MIT.' },
+    style: { zh: '白画布编辑器。标尺。蓝变换框。黑底操作条。', en: 'White editor canvas. Rulers. Blue transform box. Black action bar.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install moveable' }], en: [{ k: 'CLI', v: 'npm install moveable' }] },
+  },
+  'shopify-draggable': {
+    lede: { zh: 'Shopify 拖放库。MIT。', en: 'Shopify drag-and-drop library. MIT.' },
+    style: { zh: '高饱和蓝。黄无衬线字标。等轴测积木。描边黄按钮。', en: 'High-chroma blue. Yellow sans wordmark. Isometric blocks. Outlined yellow buttons.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install @shopify/draggable' }], en: [{ k: 'CLI', v: 'npm install @shopify/draggable' }] },
+  },
+  'react-dnd': {
+    lede: { zh: 'React 拖放原语。MIT。', en: 'React drag-and-drop primitives. MIT.' },
+    style: { zh: '浅色文档。左侧蓝链目录。衬线标题。代码标本。', en: 'Light docs. Left-hand blue TOC. Serif titles. Code specimens.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install react-dnd' }], en: [{ k: 'CLI', v: 'npm install react-dnd' }] },
+  },
+  select2: {
+    lede: { zh: '可搜索的 select 替换。MIT。', en: 'Searchable select replacement. MIT.' },
+    style: { zh: '深灰文档。红蓝菱形徽标。描边按钮。四宫格卡片。', en: 'Dark-gray docs. Red-blue diamond mark. Outlined buttons. Four-up cards.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install select2' }], en: [{ k: 'CLI', v: 'npm install select2' }] },
+  },
+  'a11y-dialog': {
+    lede: { zh: '无障碍对话框脚本。MIT。', en: 'Accessible dialog script. MIT.' },
+    style: { zh: '浅色文档。左侧目录。版本徽章。正文列表。', en: 'Light docs. Left-hand TOC. Version badge. Body list.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install a11y-dialog' }], en: [{ k: 'CLI', v: 'npm install a11y-dialog' }] },
+  },
+  notistack: {
+    lede: { zh: 'React 通知条。MIT。', en: 'React snackbars. MIT.' },
+    style: { zh: '浅色营销。绿方徽标。蓝主按钮。圆形指标。', en: 'Light marketing. Green square mark. Blue primary. Circular metrics.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install notistack' }], en: [{ k: 'CLI', v: 'npm install notistack' }] },
+  },
+  fancybox: {
+    lede: { zh: 'JavaScript 灯箱。现行专有许可。', en: 'JavaScript lightbox. Current license is proprietary.' },
+    style: { zh: '浅色文档。左侧目录。橙红导航。正文列表。', en: 'Light docs. Left-hand TOC. Orange-red nav. Body list.' },
+    acquire: { zh: [{ k: '许可', v: 'Fancyapps UI，单站 €29' }], en: [{ k: 'License', v: 'Fancyapps UI, Single €29' }] },
+  },
+  'yet-another-react-lightbox': {
+    lede: { zh: 'React 灯箱组件。MIT。', en: 'React lightbox component. MIT.' },
+    style: { zh: '深蓝文档。橙顶栏。3D 图标。徽章条。', en: 'Navy docs. Orange top bar. 3D icon. Badge row.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install yet-another-react-lightbox' }], en: [{ k: 'CLI', v: 'npm install yet-another-react-lightbox' }] },
+  },
   vega: {
     lede: { zh: '可视化语法。BSD-3-Clause。', en: 'Visualization grammar. BSD-3-Clause.' },
     style: { zh: '浅色学术文档。靛蓝顶栏。可视化标本墙。衬线标题。', en: 'Light academic docs. Indigo top bar. Visualization specimen wall. Serif titles.' },

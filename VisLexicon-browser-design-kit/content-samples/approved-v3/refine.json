@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 3,
+  "entryId": "refine",
+  "entityId": "entity-refine",
+  "attemptId": "swarm-curator-batch-d-w1-refine-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://refine.dev/",
+    "finalUrl": "https://refine.dev/",
+    "checkedAt": "2026-09-06T20:20:00.000Z"
+  },
+  "editorial": {
+    "name": "Refine",
+    "descriptionZh": "Refine Development Inc. 的 React 后台框架。开源 Refine Core 仓库 LICENSE 为 MIT；refine.dev 首页 AI 产品按套餐收费，不能把付费产品标成 MIT。",
+    "takeawayZh": "Core MIT 搭后台，AI 套餐另收费",
+    "noteZh": "首页标题讲用 AI 做内部软件，导航有定价与 Refine Core。Core 页自称开源 Retool，给出 npm create refine-app@latest。DataTable 文档顶栏 5.xx.xx。Core 源码 MIT；AI 套餐 Starter 0.99 美元/月，不能把付费产品标成 MIT。",
+    "pricing": "Refine Core MIT free; Refine AI Starter $0.99/month, Pro $20/month"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-refine",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "page-blocks-embeddable-controls"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "Refine Core 页把产品定义为 Open-source Retool for Enterprise，用来搭建 React 内部工具、后台、仪表盘与 B2B 应用，并给出 npm create refine-app@latest。",
+        "evidenceUrl": "https://refine.dev/core/"
+      },
+      {
+        "statement": "shadcn/ui DataTable 文档给出 npx shadcn@latest add https://ui.refine.dev/r/data-table.json，以及基于 TanStack Table 的后台表格组件。",
+        "evidenceUrl": "https://refine.dev/core/docs/ui-integrations/shadcn/components/data-table/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d-w1",
+    "reviewerId": "swarm-reviewer-grok-w2",
+    "confirmedAt": "2026-09-06T16:26:35.117Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [
+      "admin",
+      "ai",
+      "saas"
+    ],
+    "deliverables": [
+      "starter",
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview",
+      "purchase",
+      "generate"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "open-source",
+      "paid"
+    ],
+    "licenses": [
+      "MIT",
+      "proprietary"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://refine.dev/",
+      "finalUrl": "https://refine.dev/",
+      "title": "Refine: Build Enterprise Grade Internal Tools With AI",
+      "selectionRationale": "首页写用 AI 做内部软件，导航有定价。",
+      "shot": {
+        "src": "/shots/refine/v2-identity.png",
+        "sha256": "f3812f71df122fcfbc45c20d46a28b8adb417e8cbae7b4feb22668c57ce5f6ec",
+        "width": 1280,
+        "height": 900,
+        "bytes": 198499,
+        "alt": "Refine 首页：标题 Internal software at the speed of AI，导航 Pricing 与 Refine Core，左下 Cookie 条，中央项目描述输入框"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://refine.dev/core/",
+      "finalUrl": "https://refine.dev/core/",
+      "title": "Refine Core: Open-Source Retool For Enterprise",
+      "selectionRationale": "Core 页写开源 Retool，给出 create 命令。",
+      "shot": {
+        "src": "/shots/refine/v2-breadth.png",
+        "sha256": "53e1c3e8d1cfb917adad857cb776f1bb5b41390ff6b34321ce992549b0f798d8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144005,
+        "alt": "Refine CORE 页：标题 Open-source Retool for Enterprise，按钮 See Docs 与 npm create refine-app@latest，下方 CRM Application 预览"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://refine.dev/core/docs/ui-integrations/shadcn/components/data-table/",
+      "finalUrl": "https://refine.dev/core/docs/ui-integrations/shadcn/components/data-table/",
+      "title": "shadcn/ui DataTable Component | Data Table in Refine v5 | Refine",
+      "selectionRationale": "DataTable 文档顶栏 5.xx.xx，给安装命令。",
+      "shot": {
+        "src": "/shots/refine/v2-proof.png",
+        "sha256": "310ce4bcade46a01e36a781c0fbc8b9a29723f538677524de5abb625e8a5ee7e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 203972,
+        "alt": "Refine CORE DataTable 文档：标题 <DataTable />，Version 5.xx.xx，安装命令 npx shadcn@latest add https://ui.refine.dev/r/data-table.json"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "refine",
+      "sourceUrl": "https://raw.githubusercontent.com/refinedev/refine/next/packages/core/package.json",
+      "evidence": "packages/core/package.json author 为 refine。License 文档版权行为 Copyright (c) 2021 Refine Development Inc。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Refine Development Inc.",
+      "sourceUrl": "https://refine.dev/core/docs/further-readings/license/",
+      "evidence": "License 页版权行为 Copyright (c) 2021 Refine Development Inc。schema.org Organization name 为 refine.dev。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/refinedev/refine",
+      "sourceUrl": "https://refine.dev/core/",
+      "evidence": "Core 页 Refine Core on GitHub 链到 github.com/refinedev/refine。packages/core/package.json repository.url 同为该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://refine.dev/core/docs/further-readings/license/",
+      "evidence": "License 页写 Refine is licensed under the MIT License，Copyright (c) 2021 Refine Development Inc。仓库 LICENSE 同为 MIT。该许可只覆盖开源 Refine Core 源码，不覆盖 refine.dev 首页的 AI 内部工具付费产品。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Refine Core MIT free; Refine AI Starter $0.99/month, Pro $20/month",
+      "sourceUrl": "https://refine.dev/pricing",
+      "evidence": "Pricing 页 Starter 300 credits/month $0.99/month；Pro 1,500 credits/month $20.00/month；Enterprise Contact us。Core 页 npm create refine-app@latest，文档公开可读。不能把付费 AI 产品标成 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@refinedev/core",
+      "sourceUrl": "https://refine.dev/core/",
+      "evidence": "Core 页起步命令为 npm create refine-app@latest。packages/core/package.json name 为 @refinedev/core，license MIT。文档顶栏现为 5.xx.xx。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d-w1",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w2",
+    "semanticPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-d-w1 进站起草。identity 是 refine.dev 付费 AI 产品，breadth/proof 是 Refine Core。MIT 只覆盖 Core，付费产品不标 MIT。三页有 Cookie 条，标题仍可见。status 仍 DRAFT。"
+  }
+}

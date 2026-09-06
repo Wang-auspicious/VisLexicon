@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 3,
+  "entryId": "moveable",
+  "entityId": "entity-moveable",
+  "attemptId": "swarm-curator-batch-d-w1-moveable-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://daybrush.com/moveable/",
+    "finalUrl": "https://daybrush.com/moveable/",
+    "checkedAt": "2026-09-06T20:20:00.000Z"
+  },
+  "editorial": {
+    "name": "Moveable",
+    "descriptionZh": "Daybrush 维护的变换控件库 Moveable，可拖、缩放、旋转、扭曲。npm 包 moveable 现为 0.53.0。仓库 LICENSE 标 MIT。",
+    "takeawayZh": "new Moveable，给节点加拖放框",
+    "noteZh": "演示页画布里蓝色控制框写 Moveable，徽章 v0.53.0，下方 Download、API、Storybook。文档页标 MIT，网格列出 Draggable 到 Snappable。Draggable 页给出 new Moveable 与 throttleDrag 示例。MIT 覆盖 Moveable 源码。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-moveable",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "page-blocks-embeddable-controls"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "演示页把 Moveable 定义为 Draggable、Resizable、Scalable、Rotatable、Warpable、Pinchable，并在画布上给出带控制点的变换框。",
+        "evidenceUrl": "https://daybrush.com/moveable/"
+      },
+      {
+        "statement": "Draggable 文档给出 import Moveable from \"moveable\" 与 new Moveable(document.body)，以及 throttleDrag、throttleDragRotate 示例。",
+        "evidenceUrl": "https://daybrush.com/moveable/release/latest/doc/Moveable.Draggable.html"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d-w1",
+    "reviewerId": "swarm-reviewer-grok-w2",
+    "confirmedAt": "2026-09-06T16:26:35.117Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "download",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue",
+      "angular",
+      "svelte"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://daybrush.com/moveable/",
+      "finalUrl": "https://daybrush.com/moveable/",
+      "title": "Moveable",
+      "selectionRationale": "演示画布蓝色控制框写 Moveable，徽章 v0.53.0。",
+      "shot": {
+        "src": "/shots/moveable/v2-identity.png",
+        "sha256": "be160aa898b46fb7612776070d652610b969e9f76db9a62d5dd26b5fe7c131a8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 43068,
+        "alt": "Moveable 演示画布：蓝色控制框内写 Moveable，徽章 version v0.53.0，下方 Download、API、Storybook"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://daybrush.com/moveable/release/latest/doc/",
+      "finalUrl": "https://daybrush.com/moveable/release/latest/doc/",
+      "title": "Home - Documentation",
+      "selectionRationale": "文档页标 MIT，网格列出拖放能力。",
+      "shot": {
+        "src": "/shots/moveable/v2-breadth.png",
+        "sha256": "e5a0be7f6bc6c956130369695ad6279054cc7b8435f39c099075fc0975987905",
+        "width": 1280,
+        "height": 900,
+        "bytes": 96990,
+        "alt": "Moveable 文档首页：徽章 license MIT、version v0.53.0，网格列出 Draggable、Resizable、Scalable、Rotatable"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://daybrush.com/moveable/release/latest/doc/Moveable.Draggable.html",
+      "finalUrl": "https://daybrush.com/moveable/release/latest/doc/Moveable.Draggable.html",
+      "title": "Draggable - Documentation",
+      "selectionRationale": "Draggable 页给出 new Moveable 示例。",
+      "shot": {
+        "src": "/shots/moveable/v2-proof.png",
+        "sha256": "55dcdbd1579541af345dc97fa1c1a9f53937cb1290c6eb9b7b9f5eb16a03d663",
+        "width": 1280,
+        "height": 900,
+        "bytes": 66381,
+        "alt": "Moveable Draggable 文档：标题 Draggable，示例 import Moveable from \"moveable\"，以及 throttleDragRotate 与 throttleDrag"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Daybrush",
+      "sourceUrl": "https://raw.githubusercontent.com/daybrush/moveable/master/packages/moveable/package.json",
+      "evidence": "packages/moveable/package.json author 为 Daybrush。LICENSE 版权行为 Copyright (c) 2019 Daybrush。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Daybrush",
+      "sourceUrl": "https://daybrush.com/moveable/",
+      "evidence": "演示与文档托管在 daybrush.com。GitHub 组织/用户为 daybrush。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/daybrush/moveable",
+      "sourceUrl": "https://daybrush.com/moveable/release/latest/doc/",
+      "evidence": "文档页 Github 链到 github.com/daybrush/moveable。packages/moveable/package.json repository.url 指向该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/daybrush/moveable/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2019 Daybrush。packages/moveable/package.json license 为 MIT。文档页徽章 license MIT。该许可覆盖 Moveable 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://daybrush.com/moveable/release/latest/doc/",
+      "evidence": "文档写 npm i moveable，并提供脚本 CDN。演示与 API 公开可读，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "moveable",
+      "sourceUrl": "https://raw.githubusercontent.com/daybrush/moveable/master/packages/moveable/package.json",
+      "evidence": "packages/moveable/package.json name 为 moveable，version 0.53.0。演示页徽章 version v0.53.0。文档写 npm i moveable。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d-w1",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w2",
+    "semanticPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-d-w1 进站起草。三图齐全故收录。MIT。status 仍 DRAFT。"
+  }
+}

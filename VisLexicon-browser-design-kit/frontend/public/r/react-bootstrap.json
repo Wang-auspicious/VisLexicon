@@ -1,0 +1,199 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:32:41.778Z",
+  "entryId": "react-bootstrap",
+  "entityId": "entity-react-bootstrap",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://react-bootstrap.github.io/",
+    "finalUrl": "https://react-bootstrap.github.io/",
+    "checkedAt": "2026-09-06T20:20:00.000Z"
+  },
+  "editorial": {
+    "name": "React Bootstrap",
+    "descriptionZh": "Stephen J. Collings 等人维护的 React Bootstrap，现为 3.0.0-beta.5，把 Bootstrap 5 重写成 React 组件。仓库 LICENSE 标 MIT。",
+    "takeawayZh": "按 variant 写出按钮",
+    "noteZh": "首页写 rebuilt for React，顶栏 v3.0.0-beta.5。Introduction 写 npm install react-bootstrap bootstrap。Buttons 页 RESULT 排出 Primary 到 Link，下附 LIVE EDITOR。MIT 覆盖 React Bootstrap 源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 React Bootstrap 定义为 The most popular front-end framework, rebuilt for React，并写每项都是真正的 React 组件、不依赖 jQuery。",
+        "evidenceUrl": "https://react-bootstrap.github.io/"
+      },
+      {
+        "statement": "Buttons 文档给出 Primary 到 Link 的现场预览，以及 import Button from 'react-bootstrap/Button' 与 variant 源码。",
+        "evidenceUrl": "https://react-bootstrap.github.io/docs/components/buttons"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:26:35.117Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://react-bootstrap.github.io/",
+      "finalUrl": "https://react-bootstrap.github.io/",
+      "title": "React Bootstrap | React Bootstrap",
+      "selectionRationale": "首页标题 rebuilt for React，双按钮起步。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-bootstrap/v2-identity.png",
+        "sha256": "6a80907d297a0efd55ea0a204b8a64b531b5b5afa92878b87a12437cbf6d0b05",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86864,
+        "alt": "React Bootstrap 首页：标题 React Bootstrap，副题 rebuilt for React，按钮 Get started 与 Components，顶栏 v3.0.0-beta.5"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://react-bootstrap.github.io/docs/getting-started/introduction",
+      "finalUrl": "https://react-bootstrap.github.io/docs/getting-started/introduction",
+      "title": "Introduction | React Bootstrap",
+      "selectionRationale": "Introduction 写 npm 安装命令。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-bootstrap/v2-breadth.png",
+        "sha256": "4ce1c3966b846511d040e375c74b5baf75d1d43805f4ef4933ede417e9e73663",
+        "width": 1280,
+        "height": 900,
+        "bytes": 99054,
+        "alt": "React Bootstrap Introduction：Installation 写 npm install react-bootstrap bootstrap，下方 Importing Components 与 Button 导入示例"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://react-bootstrap.github.io/docs/components/buttons",
+      "finalUrl": "https://react-bootstrap.github.io/docs/components/buttons",
+      "title": "Buttons | React Bootstrap",
+      "selectionRationale": "Buttons 页 RESULT 与 LIVE EDITOR。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-bootstrap/v2-proof.png",
+        "sha256": "12ccedc3b89a9279a323f01e96f04f39bd7578adafa5674a3b52fdd495d819f6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 102506,
+        "alt": "React Bootstrap Buttons：RESULT 排出 Primary 到 Link，下方 LIVE EDITOR 写 import Button from 'react-bootstrap/Button'"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Stephen J. Collings",
+      "sourceUrl": "https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/package.json",
+      "evidence": "package.json author.name 为 Stephen J. Collings。LICENSE 版权行为 Copyright (c) 2014-present Stephen J. Collings, Matthew Honnibal, Pieter Vanderwerff。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "React Bootstrap",
+      "sourceUrl": "https://react-bootstrap.github.io/",
+      "evidence": "文档站品牌为 React Bootstrap。GitHub 组织为 react-bootstrap。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/react-bootstrap/react-bootstrap",
+      "sourceUrl": "https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/package.json",
+      "evidence": "package.json repository.url 为 git+https://github.com/react-bootstrap/react-bootstrap.git。顶栏 GitHub 链到该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2014-present Stephen J. Collings, Matthew Honnibal, Pieter Vanderwerff。package.json license 为 MIT。该许可覆盖 React Bootstrap 源码，不覆盖需另行安装的 Bootstrap CSS。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://react-bootstrap.github.io/docs/getting-started/introduction",
+      "evidence": "Introduction 写 npm install react-bootstrap bootstrap。文档公开可读，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "react-bootstrap",
+      "sourceUrl": "https://react-bootstrap.github.io/docs/getting-started/introduction",
+      "evidence": "Introduction 写 npm install react-bootstrap bootstrap。package.json name 为 react-bootstrap，version 3.0.0-beta.5。文档顶栏现为 v3.0.0-beta.5 (Bootstrap 5)。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/react-bootstrap",
+    "designMdUrl": "https://vislexicon.com/site/react-bootstrap.md",
+    "checkedAt": "2026-09-06T20:20:00.000Z",
+    "license": "MIT"
+  }
+}

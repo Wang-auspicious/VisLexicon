@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 3,
+  "entryId": "a11y-dialog",
+  "entityId": "entity-a11y-dialog",
+  "attemptId": "swarm-curator-batch-d-w2-a11y-dialog-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://a11y-dialog.netlify.app/",
+    "finalUrl": "https://a11y-dialog.netlify.app/",
+    "checkedAt": "2026-09-06T15:59:10.035Z"
+  },
+  "editorial": {
+    "name": "a11y-dialog",
+    "descriptionZh": "Kitty Giraudel 维护的无样式无障碍对话框脚本 a11y-dialog，包现为 8.1.5。仓库 LICENSE 标 MIT。文档顶栏 Version 8.x.x。",
+    "takeawayZh": "用 data-a11y-dialog 挂无样式对话框",
+    "noteZh": "Introduction 写 accessible dialog windows，徽章 1.7 KB，顶栏 8.x.x。Markup 给出 overlay 与 role=document。Quick start 用 data-a11y-dialog-show 打开。MIT 覆盖 a11y-dialog 源码。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-a11y-dialog",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Introduction 把 a11y-dialog 定义为 lightweight yet flexible script to create accessible dialog windows，并写 Is unopinionated with styling。",
+        "evidenceUrl": "https://a11y-dialog.netlify.app/"
+      },
+      {
+        "statement": "Quick start 给出 data-a11y-dialog-show 与 new A11yDialog(el)，证明可嵌入的无障碍对话框。",
+        "evidenceUrl": "https://a11y-dialog.netlify.app/usage/quick_start"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d-w2",
+    "reviewerId": "swarm-reviewer-grok-w1",
+    "confirmedAt": "2026-09-06T16:27:52.182Z"
+  },
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog-modal",
+        "evidenceUrl": "https://a11y-dialog.netlify.app/usage/quick_start",
+        "note": "Quick start 跟随 WAI-ARIA dialog modal pattern，含 overlay 与打开触发。"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://a11y-dialog.netlify.app/",
+      "finalUrl": "https://a11y-dialog.netlify.app/",
+      "title": "Introduction | a11y-dialog",
+      "selectionRationale": "Introduction 徽章 1.7 KB，顶栏 8.x.x。",
+      "shot": {
+        "src": "/shots/a11y-dialog/v2-identity.png",
+        "sha256": "2bf009bf7237b523a60c403d7e075cddb397dbd249a6e277a568ccbd98d0e3e5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 87361,
+        "alt": "a11y-dialog Introduction：Version 8.x.x，minzipped size 1.7 KB，要点 Follows the Dialog (Modal) pattern"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://a11y-dialog.netlify.app/usage/markup",
+      "finalUrl": "https://a11y-dialog.netlify.app/usage/markup",
+      "title": "Markup | a11y-dialog",
+      "selectionRationale": "Markup 给出 overlay 与 role=document。",
+      "shot": {
+        "src": "/shots/a11y-dialog/v2-breadth.png",
+        "sha256": "a158b63dc490c421d794264fcdc5897680a950907f65be74aadb92ba0feb7929",
+        "width": 1280,
+        "height": 900,
+        "bytes": 85054,
+        "alt": "a11y-dialog Markup：深色代码块含 id your-dialog-id、data-a11y-dialog-hide、role=document，左侧 Markup 高亮"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://a11y-dialog.netlify.app/usage/quick_start",
+      "finalUrl": "https://a11y-dialog.netlify.app/usage/quick_start",
+      "title": "Quick start | a11y-dialog",
+      "selectionRationale": "Quick start 用 data-a11y-dialog-show 打开。",
+      "shot": {
+        "src": "/shots/a11y-dialog/v2-proof.png",
+        "sha256": "a9dba8ef7d8ab86d2244595ab6b16f74983a31da326baf0977c2bd24ff098afd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 90323,
+        "alt": "a11y-dialog Quick start：代码含 data-a11y-dialog-show 与 data-a11y-dialog，左侧 Quick start 高亮"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Kitty Giraudel",
+      "sourceUrl": "https://raw.githubusercontent.com/KittyGiraudel/a11y-dialog/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2025 Kitty Giraudel。package.json author 为 Kitty Giraudel (https://kittygiraudel.com)。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://raw.githubusercontent.com/KittyGiraudel/a11y-dialog/main/LICENSE",
+      "evidence": "LICENSE 与 package.json 只署 Kitty Giraudel，未见独立公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/KittyGiraudel/a11y-dialog",
+      "sourceUrl": "https://a11y-dialog.netlify.app/",
+      "evidence": "文档顶栏 GitHub 链到 KittyGiraudel/a11y-dialog。package.json repository.url 为 https://github.com/KittyGiraudel/a11y-dialog。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/KittyGiraudel/a11y-dialog/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2025 Kitty Giraudel。package.json license 为 MIT。覆盖 a11y-dialog 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://a11y-dialog.netlify.app/",
+      "evidence": "文档公开可浏览。Installation 写 npm install a11y-dialog，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "a11y-dialog",
+      "sourceUrl": "https://a11y-dialog.netlify.app/",
+      "evidence": "文档顶栏 Version 8.x.x。package.json name 为 a11y-dialog，version 8.1.5。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d-w2",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w1",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-w1"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-d-w2 进站起草。LICENSE 署 Kitty Giraudel，MIT。 swarm-reviewer-grok-w1 独立打开活页、LICENSE 原文与三张 PNG sha256 后 APPROVED。"
+  }
+}

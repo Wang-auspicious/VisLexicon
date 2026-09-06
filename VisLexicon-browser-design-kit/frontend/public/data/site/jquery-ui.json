@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:32:41.778Z",
+  "entryId": "jquery-ui",
+  "entityId": "entity-jquery-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "jqueryui.com",
+  "official": {
+    "inputUrl": "https://jqueryui.com/",
+    "finalUrl": "https://jqueryui.com/",
+    "checkedAt": "2026-09-06T20:20:00.000Z"
+  },
+  "editorial": {
+    "name": "jQuery UI",
+    "descriptionZh": "OpenJS Foundation 维护的 jQuery UI，在 jQuery 上提供交互、特效、控件与主题。首页下载盒标 1.14.2。LICENSE.txt 标 MIT。",
+    "takeawayZh": "下 1.14.2，先看手风琴怎么叠",
+    "noteZh": "首页下载盒标 1.14.2，正文写 interactions、widgets 与 themes。Demos 列出 Draggable 到 Accordion。Accordion 现场展开 Section 1。MIT 覆盖库源码；demos 示例另标 CC0。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "page-blocks-embeddable-controls"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "首页把 jQuery UI 定义为 curated set of user interface interactions, effects, widgets, and themes，构建在 jQuery 之上。",
+        "evidenceUrl": "https://jqueryui.com/"
+      },
+      {
+        "statement": "Accordion 演示页给出可展开的 Section 1 现场控件，并说明底层是标题与内容 div，证明单个 widget 可以复制进页面。",
+        "evidenceUrl": "https://jqueryui.com/accordion/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:26:35.117Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "download",
+      "install",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://jqueryui.com/",
+      "finalUrl": "https://jqueryui.com/",
+      "title": "jQuery UI",
+      "selectionRationale": "首页下载盒标 1.14.2。",
+      "shot": {
+        "src": "/shots/jquery-ui/v2-identity.png",
+        "sha256": "3dbdfe26388cc4ff240f9bbc5533cbabc6a281a1fddc981a7b28ed6fad64c8b5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 272121,
+        "alt": "jQuery UI 首页：正文写 interactions, effects, widgets, and themes，右侧 Download jQuery UI 1.14.2，左侧 Interactions 与 Widgets"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://jqueryui.com/demos/",
+      "finalUrl": "https://jqueryui.com/demos/",
+      "title": "jQuery UI Demos | jQuery UI",
+      "selectionRationale": "Demos 页列出 Draggable 到 Accordion 控件。",
+      "shot": {
+        "src": "/shots/jquery-ui/v2-breadth.png",
+        "sha256": "72fffaf448d80488e91860c32163a9a0468013f2790670e85eb751b46a1f2da0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135251,
+        "alt": "jQuery UI Demos：Interactions 列出 Draggable 到 Sortable，Widgets 列出 Accordion、Autocomplete、Button"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://jqueryui.com/accordion/",
+      "finalUrl": "https://jqueryui.com/accordion/",
+      "title": "Accordion | jQuery UI",
+      "selectionRationale": "Accordion 现场展开 Section 1，右侧示例列表。",
+      "shot": {
+        "src": "/shots/jquery-ui/v2-proof.png",
+        "sha256": "3351c45dd8f0caf8a904598f67e64da509e369a10fea9c83f6e70f440dd7aa90",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134166,
+        "alt": "jQuery UI Accordion：蓝色 Section 1 已展开，下方 Section 2 到 4 折叠，右侧 Examples 列出 Default functionality"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "OpenJS Foundation and other contributors",
+      "sourceUrl": "https://raw.githubusercontent.com/jquery/jquery-ui/main/package.json",
+      "evidence": "package.json author.name 为 OpenJS Foundation and other contributors。LICENSE.txt 版权行为 Copyright OpenJS Foundation and other contributors, https://openjsf.org/。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "OpenJS Foundation",
+      "sourceUrl": "https://jqueryui.com/",
+      "evidence": "站点顶栏 OpenJS Foundation。LICENSE.txt 版权主体为 OpenJS Foundation。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/jquery/jquery-ui",
+      "sourceUrl": "https://jqueryui.com/",
+      "evidence": "首页 Developer Links 写 Source Code (GitHub) 链到 github.com/jquery/jquery-ui。package.json repository.url 为 git://github.com/jquery/jquery-ui.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/jquery/jquery-ui/main/LICENSE.txt",
+      "evidence": "LICENSE.txt 为 MIT 许可正文，Copyright OpenJS Foundation and other contributors。package.json license 为 MIT。该许可覆盖 jQuery UI 源码；LICENSE.txt 另写 demos 目录示例代码以 CC0 放弃版权。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://jqueryui.com/",
+      "evidence": "首页提供 Download jQuery UI 1.14.2 的 Custom Download 与 Stable 下载。文档与演示公开可读，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "jquery-ui",
+      "sourceUrl": "https://raw.githubusercontent.com/jquery/jquery-ui/main/package.json",
+      "evidence": "package.json name 为 jquery-ui。首页下载盒现为 jQuery UI 1.14.2。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/jquery-ui.md",
+  "registryUrl": "/r/jquery-ui.json"
+}

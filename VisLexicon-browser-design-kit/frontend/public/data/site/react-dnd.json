@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:32:41.778Z",
+  "entryId": "react-dnd",
+  "entityId": "entity-react-dnd",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "react-dnd.github.io",
+  "official": {
+    "inputUrl": "https://react-dnd.github.io/react-dnd/",
+    "finalUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+    "checkedAt": "2026-09-06T15:59:10.035Z"
+  },
+  "editorial": {
+    "name": "React DnD",
+    "descriptionZh": "Dan Abramov 创建的 React 拖放库 React DnD，包 react-dnd 现为 16.0.1。仓库 LICENSE 标 MIT。文档用 item 与 type 描述拖放数据。",
+    "takeawayZh": "用 useDrag 与 useDrop 接拖放",
+    "noteZh": "Overview 解释 item 与 type，并写内部用 Redux。Examples 侧栏列出 Dustbin、Sortable、Customize。Handles and Previews 给出 Drag me by the handle。MIT 覆盖 react-dnd 源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Overview 把 React DnD 定义为 Drag and Drop for React，并用 item 与 type 描述拖放数据，而不是整套皮肤组件。",
+        "evidenceUrl": "https://react-dnd.github.io/react-dnd/docs/overview"
+      },
+      {
+        "statement": "Handles and Previews 示例给出 Drag me by the handle 预览，证明可自定义拖动手柄与预览节点。",
+        "evidenceUrl": "https://react-dnd.github.io/react-dnd/examples/customize/handles-and-previews"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:27:52.182Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+      "finalUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+      "title": "Overview | React DnD",
+      "selectionRationale": "Overview 正文解释 item 与 type。",
+      "shot": {
+        "src": "/shots/react-dnd/v2-identity.png",
+        "sha256": "526f768053b0ae6cd1fa2410a27a40d47b34c21a62e2ca8802cdf034c05ca5b3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 147357,
+        "alt": "React DnD Overview：顶栏 Drag and Drop for React，左侧 Hooks 含 useDrag 与 useDrop，正文 Items and Types"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/examples",
+      "finalUrl": "https://react-dnd.github.io/react-dnd/examples",
+      "title": "Examples | React DnD",
+      "selectionRationale": "Examples About 侧栏列出 Dustbin 到 Sortable。",
+      "shot": {
+        "src": "/shots/react-dnd/v2-breadth.png",
+        "sha256": "190d00cafe9ac0566cabaf4c9b38e847a61a05e71b63216c632c2e0e1eed1e66",
+        "width": 1280,
+        "height": 900,
+        "bytes": 96220,
+        "alt": "React DnD Examples About：左侧 Dustbin、Drag Around、Sortable、Customize，正文 The examples here perform a lot of jobs"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/examples/customize/handles-and-previews",
+      "finalUrl": "https://react-dnd.github.io/react-dnd/examples/customize/handles-and-previews",
+      "title": "Handles and Previews | React DnD",
+      "selectionRationale": "Customize 页预览 Drag me by the handle。",
+      "shot": {
+        "src": "/shots/react-dnd/v2-proof.png",
+        "sha256": "43e9d9e1f815b2fb20c66391a82fb59f8c6fcd2d679d6ce0d61700e1f1e7e880",
+        "width": 1280,
+        "height": 900,
+        "bytes": 69339,
+        "alt": "React DnD Handles and Previews：标签 Example，预览框 Drag me by the handle 与 Drag me to see an image"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Dan Abramov",
+      "sourceUrl": "https://raw.githubusercontent.com/react-dnd/react-dnd/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2015 Dan Abramov。根 package.json author 为 Dan Abramov <dan.abramov@me.com>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "React DnD",
+      "sourceUrl": "https://github.com/react-dnd/react-dnd",
+      "evidence": "仓库位于 github.com/react-dnd/react-dnd。根 package.json name 为 react-dnd-parent。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/react-dnd/react-dnd",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+      "evidence": "文档顶栏 GitHub 链到 react-dnd/react-dnd。根 package.json repository.url 为 https://github.com/react-dnd/react-dnd.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/react-dnd/react-dnd/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2015 Dan Abramov。根 package.json 与 packages/react-dnd/package.json license 均为 MIT。覆盖 react-dnd 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+      "evidence": "Overview 与 Examples 公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "react-dnd",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+      "evidence": "packages/react-dnd/package.json name 为 react-dnd，version 16.0.1。文档站品牌为 React DnD。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/react-dnd.md",
+  "registryUrl": "/r/react-dnd.json"
+}

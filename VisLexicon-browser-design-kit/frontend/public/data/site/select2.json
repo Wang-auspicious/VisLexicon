@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:32:41.778Z",
+  "entryId": "select2",
+  "entityId": "entity-select2",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "select2.org",
+  "official": {
+    "inputUrl": "https://select2.org/",
+    "finalUrl": "https://select2.org/",
+    "checkedAt": "2026-09-06T15:59:10.035Z"
+  },
+  "editorial": {
+    "name": "Select2",
+    "descriptionZh": "Kevin Brown 与 Igor Vaynberg 维护的 jQuery 选择框库 Select2，站点顶栏现为 4.1.0。仓库 LICENSE.md 标 MIT，文档公开、无付费墙。",
+    "takeawayZh": "给原生 select 套上可搜索下拉",
+    "noteZh": "首页标题 The jQuery replacement for select boxes。Installation 写 jsDelivr 的 select2@4.1.0。Basic usage 把 Alaska 原生框变成可搜下拉，并调用 .select2()。MIT 覆盖 Select2 源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Select2 定义为 The jQuery replacement for select boxes，并列出 searching、tagging、remote data sets。",
+        "evidenceUrl": "https://select2.org/"
+      },
+      {
+        "statement": "Basic usage 把原生 select 变成可搜索下拉，并给出 $('.js-example-basic-single').select2()。",
+        "evidenceUrl": "https://select2.org/getting-started/basic-usage"
+      }
+    ],
+    "confirmedAt": "2026-09-06T16:27:52.182Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://select2.org/",
+      "finalUrl": "https://select2.org/",
+      "title": "Select2",
+      "selectionRationale": "首页标题与 Releases、Forums、GitHub 按钮。",
+      "shot": {
+        "src": "/shots/select2/v2-identity.png",
+        "sha256": "45649ef09d11bbe7d4728fd1f800111dc967db7b6d1b9ab23c5124203f0c70ca",
+        "width": 1280,
+        "height": 900,
+        "bytes": 110579,
+        "alt": "Select2 首页：标题 Select2，副标题 The jQuery replacement for select boxes，按钮 Releases、Forums、GitHub，卡片 In your language 与 Remote data support"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://select2.org/getting-started/installation",
+      "finalUrl": "https://select2.org/getting-started/installation",
+      "title": "Installation - Select2",
+      "selectionRationale": "Installation 列出 CDN 与 Bower。",
+      "shot": {
+        "src": "/shots/select2/v2-breadth.png",
+        "sha256": "7082270282d1e4b35a191b3ddcdcf632185cc53b383e8eeb6585eed9f6a57a64",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139250,
+        "alt": "Select2 Installation：Using Select2 from a CDN，代码块 cdn.jsdelivr.net/npm/select2@4.1.0，下方 Installing with Bower"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://select2.org/getting-started/basic-usage",
+      "finalUrl": "https://select2.org/getting-started/basic-usage",
+      "title": "Basic usage - Select2",
+      "selectionRationale": "Basic usage 把 Alaska 原生框变成可搜下拉。",
+      "shot": {
+        "src": "/shots/select2/v2-proof.png",
+        "sha256": "39a3bc8382b22967e67c222e0ce90c35c5f57b5465704445b866abe4a7eda564",
+        "width": 1280,
+        "height": 900,
+        "bytes": 132847,
+        "alt": "Select2 Basic usage：Single select boxes，Alaska 原生框与展开的 Ale 可搜下拉，下方 js-example-basic-single 代码"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Kevin Brown, Igor Vaynberg",
+      "sourceUrl": "https://raw.githubusercontent.com/select2/select2/develop/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors。package.json author 为 Kevin Brown。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Select2",
+      "sourceUrl": "https://select2.org/",
+      "evidence": "站点品牌为 Select2。仓库位于 github.com/select2/select2。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/select2/select2",
+      "sourceUrl": "https://select2.org/",
+      "evidence": "首页 GitHub 按钮链到 github.com/select2/select2。package.json repository.url 为 git://github.com/select2/select2.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/select2/select2/develop/LICENSE.md",
+      "evidence": "LICENSE.md 标题 The MIT License (MIT)，Copyright (c) 2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors。package.json license 为 MIT。覆盖 Select2 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://select2.org/getting-started/installation",
+      "evidence": "Installation 写 jsDelivr 与 cdnjs CDN。文档公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "select2",
+      "sourceUrl": "https://select2.org/getting-started/installation",
+      "evidence": "Installation CDN 示例写 select2@4.1.0。顶栏 GitHub 徽章 4.1.0。package.json name 为 select2，version 4.1.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-dropdown-select",
+        "evidenceUrl": "https://select2.org/getting-started/basic-usage",
+        "note": "Basic usage 把原生 select 换成可搜索的自绘下拉。",
+        "termEn": "Dropdown Select",
+        "termZh": "自绘下拉框"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/select2.md",
+  "registryUrl": "/r/select2.json"
+}
