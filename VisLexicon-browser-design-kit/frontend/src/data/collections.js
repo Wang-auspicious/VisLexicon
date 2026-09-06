@@ -128,6 +128,15 @@ export const COLLECTIONS = [
     entryIds: ['tailwind-css', 'panda-css', 'unocss', 'cva'],
     createdAt: '2026-09-06',
   },
+  {
+    id: 'canvas-and-spatial',
+    titleZh: '画布与空间：把图形画到场景里',
+    titleEn: 'Canvas and spatial',
+    blurbZh: '这些站交付的是画布、矢量或空间实现：用 2D、WebGL 或物理引擎把图形画出来。',
+    blurbEn: 'Canvas, vector, or spatial implementations: 2D, WebGL, or physics.',
+    entryIds: ['threejs', 'p5js', 'pixijs', 'paperjs', 'twojs', 'konva', 'fabricjs', 'matter-js'],
+    createdAt: '2026-09-06',
+  },
 ]
 
 export const COLLECTION_MIN_MEMBERS = 1

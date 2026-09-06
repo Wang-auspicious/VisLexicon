@@ -466,6 +466,38 @@ const VOICE = {
     lede: { zh: '可商用字体目录。Satoshi 闭源。', en: 'Commercial-free font catalog. Satoshi is closed source.' },
     style: { zh: '浅色字体标本。大号字样。编辑式。', en: 'Light type specimens. Oversized samples. Editorial.' },
   },
+  p5js: {
+    lede: { zh: '创意编程库。GNU LGPL-2.1。', en: 'Creative-coding library. GNU LGPL-2.1.' },
+    style: { zh: '浅色文档。示例网格。品牌粉。', en: 'Light docs. Example grid. Brand pink.' },
+  },
+  pixijs: {
+    lede: { zh: '2D WebGL 渲染器。MIT。', en: '2D WebGL renderer. MIT.' },
+    style: { zh: '深色营销文档。示例网格。高饱和。', en: 'Dark marketing docs. Example grid. Saturated.' },
+  },
+  paperjs: {
+    lede: { zh: '矢量图形脚本。MIT。', en: 'Vector graphics scripting. MIT.' },
+    style: { zh: '浅色文档。示例画廊。中性。', en: 'Light docs. Example gallery. Neutral.' },
+  },
+  twojs: {
+    lede: { zh: '二维绘图 API。MIT。', en: 'Two-dimensional drawing API. MIT.' },
+    style: { zh: '浅色文档。示例网格。中性。', en: 'Light docs. Example grid. Neutral.' },
+  },
+  konva: {
+    lede: { zh: '2D Canvas 框架。MIT。', en: '2D canvas framework. MIT.' },
+    style: { zh: '浅色文档。代码与画布并置。', en: 'Light docs. Code beside canvas.' },
+  },
+  fabricjs: {
+    lede: { zh: 'Canvas 对象模型。MIT。', en: 'Canvas object model. MIT.' },
+    style: { zh: '浅色文档。交互画布标本。', en: 'Light docs. Interactive canvas specimens.' },
+  },
+  'matter-js': {
+    lede: { zh: '2D 刚体物理引擎。MIT。', en: '2D rigid-body physics engine. MIT.' },
+    style: { zh: '浅色文档。现场物理演示。', en: 'Light docs. Live physics demos.' },
+  },
+  spline: {
+    lede: { zh: '3D 设计编辑器。编辑器专有，React 包装 MIT。', en: '3D design editor. Editor is proprietary; React wrapper is MIT.' },
+    style: { zh: '深色产品营销。全出血 3D。高饱和。', en: 'Dark product marketing. Full-bleed 3D. Saturated.' },
+  },
 }
 
 export function entryVoice(entryId) {

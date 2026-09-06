@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 3,
+  "entryId": "twojs",
+  "entityId": "entity-twojs",
+  "attemptId": "swarm-curator-batch-n-twojs-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://two.js.org/",
+    "finalUrl": "https://two.js.org/",
+    "checkedAt": "2026-09-06T20:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Two.js",
+    "descriptionZh": "jonobr1 开发的二维绘图 API，现为 v0.8.24。同一套接口可渲染到 SVG、Canvas 与 WebGL；npm 包 two.js 标 MIT，文档与示例公开。",
+    "takeawayZh": "同一套接口画到 SVG 或 WebGL",
+    "noteZh": "我们进首页，副标题写 renderer agnostic，可画到 svg、canvas 和 webgl，下面是 npm 安装。文档 Two 页左侧 Types、renderer，右侧 Constructor 表。Examples 卡片缩略图在无头里是空的，但 Advanced Anchors 标签还在。MIT。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-twojs",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Two.js 定义为面向现代浏览器的二维绘图 API，同一套接口可渲染到 SVG、Canvas 与 WebGL，而不是素材包。",
+        "evidenceUrl": "https://two.js.org/"
+      },
+      {
+        "statement": "文档 Two 页把 new Two 标为场景入口，并给出 fullscreen、fitted、type 等构造参数，证明交付物是可装进项目的绘图代码。",
+        "evidenceUrl": "https://two.js.org/docs/two/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-n",
+    "reviewerId": "swarm-reviewer-grok-p",
+    "confirmedAt": "2026-09-06T22:15:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "svg",
+      "canvas",
+      "webgl"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://two.js.org/",
+      "finalUrl": "https://two.js.org/",
+      "title": "Two.js • Homepage",
+      "selectionRationale": "先看首页。renderer agnostic 那句和 npm 安装在首屏。",
+      "shot": {
+        "src": "/shots/twojs/v2-identity.png",
+        "sha256": "734c9e5dd96fe0c3791f09d90d1370df52e336fe45cad6d8fb89791bce4b7b51",
+        "width": 1280,
+        "height": 900,
+        "bytes": 70624,
+        "alt": "Two.js 首页副标题 A two-dimensional drawing api，按钮 Github、Package，以及 npm install two.js@latest"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://two.js.org/docs/two/",
+      "finalUrl": "https://two.js.org/docs/two/",
+      "title": "Two",
+      "selectionRationale": "再翻 Two 文档。Constructor 表就是它的范围。",
+      "shot": {
+        "src": "/shots/twojs/v2-breadth.png",
+        "sha256": "c704ec3c6ffb9aceaac60d139f29ea8a619ec811e681fe9386ade0361efbbf51",
+        "width": 1280,
+        "height": 900,
+        "bytes": 102214,
+        "alt": "Two.js 文档 Two 页，左侧 Types、renderer、scene，右侧 Constructor 表含 options.fullscreen、options.type"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://two.js.org/examples/",
+      "finalUrl": "https://two.js.org/examples/",
+      "title": "Two.js Examples",
+      "selectionRationale": "最后开 Examples。Advanced Anchors 那张卡就是入口。",
+      "shot": {
+        "src": "/shots/twojs/v2-proof.png",
+        "sha256": "4787e4d9057ac37fd2e6c66e2bc08f15bca8f35e5920f3bb28e8ad4b6dbf80bd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 55646,
+        "alt": "Two.js Examples 页 Official Examples，卡片 Advanced Anchors、Animate Strokes、Clipping Mask、Depth via Groups"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "jonobr1",
+      "sourceUrl": "https://github.com/jonobr1/two.js/blob/dev/package.json",
+      "evidence": "package.json author.name 为 jonobr1，url 为 http://jono.fyi/。LICENSE 版权行 Copyright (c) 2012 - 2025 @jonobr1 / http://jono.fyi。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://two.js.org/",
+      "evidence": "首页与 LICENSE 只署 jonobr1，未见公司或基金会。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/jonobr1/two.js",
+      "sourceUrl": "https://github.com/jonobr1/two.js/blob/dev/package.json",
+      "evidence": "package.json repository 为 https://github.com/jonobr1/two.js，homepage 为 https://two.js.org/。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/jonobr1/two.js/blob/dev/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2012 - 2025 @jonobr1 / http://jono.fyi。package.json license 为 MIT。覆盖 two.js 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://two.js.org/",
+      "evidence": "首页提供 Development / Production 下载与 npm install two.js@latest。文档与示例公开，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "two.js",
+      "sourceUrl": "https://github.com/jonobr1/two.js/blob/dev/package.json",
+      "evidence": "package.json name 为 two.js，version v0.8.24。首页安装命令 npm install --save two.js@latest。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-n",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-p",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-p"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-n 进站起草。作业 breadth https://two.js.org/docs/overview/ 为 404，改截 https://two.js.org/docs/two/。Examples 缩略图无头未画出。swarm-reviewer-grok-p 复核活页、截图哈希与许可后 APPROVED。无 canvas/3d 分组，不塞进 components-and-blocks。"
+  }
+}

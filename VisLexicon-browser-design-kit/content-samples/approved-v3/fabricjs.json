@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 3,
+  "entryId": "fabricjs",
+  "entityId": "entity-fabricjs",
+  "attemptId": "swarm-curator-batch-n-fabricjs-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "http://fabricjs.com/",
+    "finalUrl": "https://fabricjs.com/",
+    "checkedAt": "2026-09-06T20:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Fabric.js",
+    "descriptionZh": "Juriy Zaytsev 等人开发的 HTML5 Canvas 对象模型库，现为 v7.4.0。可在画布上选中、缩放对象并做 SVG 互转；npm 包 fabric 标 MIT。",
+    "takeawayZh": "在 Canvas 上选中、缩放可交互对象",
+    "noteZh": "我们进首页，顶上有广告拦截提示，标题仍写 Javascript HTML5 canvas library，画布上有猫和可编辑文字。Docs 左侧 Getting started。Demos 把 Clipping and masking 排成格子。适合要做画布编辑器的人。MIT。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-fabricjs",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Fabric.js 定义为在 canvas 之上提供交互对象模型，并带 SVG 与 canvas 互转解析器，而不是设计工具或素材包。",
+        "evidenceUrl": "https://fabricjs.com/"
+      },
+      {
+        "statement": "Demos 页给出 Animation easing、Clipping and masking、Cropping controls 等可打开演示，证明交付物是可交互的画布代码。",
+        "evidenceUrl": "https://fabricjs.com/demos/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-n",
+    "reviewerId": "swarm-reviewer-grok-p",
+    "confirmedAt": "2026-09-06T22:15:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "canvas",
+      "svg"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://fabricjs.com/",
+      "finalUrl": "https://fabricjs.com/",
+      "title": "Fabric.js Javascript Library",
+      "selectionRationale": "先看首页。对象模型那句和现场画布在首屏。",
+      "shot": {
+        "src": "/shots/fabricjs/v2-identity.png",
+        "sha256": "0a034d3c324fcce8ac78ac432f6af086dd331ca54c6e0f98d3d348de5a37f0c7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 200902,
+        "alt": "Fabric.js 首页标题 Javascript HTML5 canvas library，画布上有猫、渐变矩形与可编辑文字，顶栏 Latest release 7.4.0"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://fabricjs.com/docs/",
+      "finalUrl": "https://fabricjs.com/docs/",
+      "title": "Introduction to Fabric.js | Docs and Guides",
+      "selectionRationale": "再翻 Docs。左侧 Getting started 就是范围。",
+      "shot": {
+        "src": "/shots/fabricjs/v2-breadth.png",
+        "sha256": "aa18fb08472720624b99db359cc3c6e75b5c0817c6ff324ef0d6797383fdb6eb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86525,
+        "alt": "Fabric.js Docs 左侧 Getting started、Core concepts，正文 Introduction to Fabric.js"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://fabricjs.com/demos/",
+      "finalUrl": "https://fabricjs.com/demos/",
+      "title": "Fabric.js Demos",
+      "selectionRationale": "最后开 Demos。Clipping and masking 那张卡就是证明。",
+      "shot": {
+        "src": "/shots/fabricjs/v2-proof.png",
+        "sha256": "13a6549dcb42c0e161e957056c6a67121f1f5358c396bb1bae26b3ef6e1da775",
+        "width": 1280,
+        "height": 900,
+        "bytes": 185053,
+        "alt": "Fabric.js Demos 格子列出 Animation easing、Clipping and masking、Cropping controls、Custom filter"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Juriy Zaytsev, Andrea Bogazzi, Shachar Nencel",
+      "sourceUrl": "https://github.com/fabricjs/fabric.js/blob/master/package.json",
+      "evidence": "package.json author 为 Juriy Zaytsev <kangax@gmail.com>，contributors 列 Andrea Bogazzi 与 Shachar Nencel。首页 Contributors 把 kangax、asturur、ShaMan123 放在前面。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/fabricjs/fabric.js/blob/master/LICENSE",
+      "evidence": "LICENSE 早期版权为 Printio (Juriy Zaytsev, Maxim Chernyak)，2016 年起为 Andrea Bogazzi, Shachar Nen and Fabric.js contributors。未见独立公司主体。GitHub 组织为 fabricjs。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/fabricjs/fabric.js",
+      "sourceUrl": "https://github.com/fabricjs/fabric.js/blob/master/package.json",
+      "evidence": "package.json repository 为 git+https://github.com/fabricjs/fabric.js.git，homepage 为 http://fabricjs.com/。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/fabricjs/fabric.js/blob/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2008-2015 Printio (Juriy Zaytsev, Maxim Chernyak)；Copyright (c) 2016-present Andrea Bogazzi, Shachar Nen and Fabric.js contributors。package.json license 为 MIT。覆盖 fabric 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://fabricjs.com/",
+      "evidence": "首页、文档与 Demos 公开可读，顶栏提供 GitHub 下载 7.4.0。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "fabric",
+      "sourceUrl": "https://github.com/fabricjs/fabric.js/blob/master/package.json",
+      "evidence": "package.json name 为 fabric，version 7.4.0，与首页 Latest release 7.4.0 一致。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-n",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-p",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-p"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-n 进站起草。作业 URL 为 http://fabricjs.com/，HTTPS 可打开，official.finalUrl 升为 https。首页与 Demos 有广告拦截提示。swarm-reviewer-grok-p 复核活页、截图哈希与许可后 APPROVED。无 canvas/3d 分组，不塞进 components-and-blocks。"
+  }
+}

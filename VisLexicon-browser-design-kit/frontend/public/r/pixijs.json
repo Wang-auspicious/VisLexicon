@@ -1,0 +1,199 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T00:15:11.097Z",
+  "entryId": "pixijs",
+  "entityId": "entity-pixijs",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://pixijs.com/",
+    "finalUrl": "https://pixijs.com/",
+    "checkedAt": "2026-09-06T20:30:00.000Z"
+  },
+  "editorial": {
+    "name": "PixiJS",
+    "descriptionZh": "PixiJS Team 维护的 HTML5 2D 渲染引擎，现为 v8.20.1。基于 WebGL 与 WebGPU 画游戏和交互内容；npm 包 pixi.js 标 MIT，文档与示例公开。",
+    "takeawayZh": "用 WebGL 在网页里画可交互 2D",
+    "noteZh": "我们进首页，大标题 The HTML5 Creation Engine，下面写 fastest 2D WebGPU/WebGL renderer。Introduction 把 WebGL、资源加载、遮罩列成清单。Examples 左侧 Animated Sprite、Filters 分组，右边要先点一条才出代码。适合做高性能 2D 的人。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "three-d-spatial-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 PixiJS 定义为用最快的 2D WebGPU/WebGL 渲染器创建游戏、应用与交互内容的 HTML5 Creation Engine，而不是素材包。",
+        "evidenceUrl": "https://pixijs.com/"
+      },
+      {
+        "statement": "Introduction 写 PixiJS is an advanced, open-source 2D rendering engine，并列出 WebGL 与 WebGPU 渲染器、场景图与资源加载。",
+        "evidenceUrl": "https://pixijs.com/8.x/guides/getting-started/intro"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "gaming"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "webgl",
+      "canvas"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://pixijs.com/",
+      "finalUrl": "https://pixijs.com/",
+      "title": "PixiJS | The HTML5 Creation Engine | PixiJS",
+      "selectionRationale": "先看首页。Creation Engine 那句和 WebGL 说明在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pixijs/v2-identity.png",
+        "sha256": "a6e764d38944d0334ca4546dfa45c807f90715248e1044cf53ecb48af1faf40e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 68662,
+        "alt": "PixiJS 首页黑底大标题 The HTML5 Creation Engine，副标题 fastest 2D WebGPU/WebGL renderer"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://pixijs.com/8.x/guides/getting-started/intro",
+      "finalUrl": "https://pixijs.com/8.x/guides/getting-started/intro",
+      "title": "Introduction | PixiJS",
+      "selectionRationale": "再翻 Introduction。WebGL、资源加载、遮罩排成清单。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pixijs/v2-breadth.png",
+        "sha256": "400a0034ac09d94bb0c7262b5bfb6f850875e542389ca29a538e571dc47c7eef",
+        "width": 1280,
+        "height": 900,
+        "bytes": 133275,
+        "alt": "PixiJS Introduction，npm v8.20.1 徽章，Features 列出 WebGL 与 WebGPU Renderers、Asset Loader"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://pixijs.com/8.x/examples",
+      "finalUrl": "https://pixijs.com/8.x/examples",
+      "title": "Examples | PixiJS",
+      "selectionRationale": "最后开 Examples。左侧分组，点进去才有代码。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pixijs/v2-proof.png",
+        "sha256": "6455d4c41cc06409c55fcaa6f333897fe236fee16fabc327ae7c6b81ab08d268",
+        "width": 1280,
+        "height": 900,
+        "bytes": 58400,
+        "alt": "PixiJS Examples 页左侧列出 Animated Sprite、Filters、Mesh 等分组，右侧写 Select an example to view its code"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Mathew Groves, Chad Engler",
+      "sourceUrl": "https://github.com/pixijs/pixijs/blob/dev/LICENSE",
+      "evidence": "LICENSE 版权行写 Copyright (c) 2013-2023 Mathew Groves, Chad Engler。package.json author 为 PixiJS Team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "PixiJS Team",
+      "sourceUrl": "https://github.com/pixijs/pixijs/blob/dev/package.json",
+      "evidence": "package.json author 字段写 PixiJS Team。GitHub 组织为 pixijs。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/pixijs/pixijs",
+      "sourceUrl": "https://github.com/pixijs/pixijs/blob/dev/package.json",
+      "evidence": "package.json repository 为 https://github.com/pixijs/pixijs.git，homepage 为 http://pixijs.com/。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/pixijs/pixijs/blob/dev/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License，Copyright (c) 2013-2023 Mathew Groves, Chad Engler。package.json license 为 MIT。README 写 This content is released under the MIT License。覆盖 pixi.js 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://pixijs.com/8.x/guides/getting-started/intro",
+      "evidence": "Introduction 写 PixiJS is an advanced, open-source 2D rendering engine。文档与示例公开，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "pixi.js",
+      "sourceUrl": "https://github.com/pixijs/pixijs/blob/dev/package.json",
+      "evidence": "package.json name 为 pixi.js，version 8.20.1，与 Introduction 页 npm 徽章一致。安装命令 npm install pixi.js。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/pixijs",
+    "designMdUrl": "https://vislexicon.com/site/pixijs.md",
+    "checkedAt": "2026-09-06T20:30:00.000Z",
+    "license": "MIT"
+  }
+}

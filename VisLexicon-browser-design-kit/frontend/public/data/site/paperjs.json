@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T00:15:11.097Z",
+  "entryId": "paperjs",
+  "entityId": "entity-paperjs",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "paperjs.org",
+  "official": {
+    "inputUrl": "http://paperjs.org/",
+    "finalUrl": "https://paperjs.org/",
+    "checkedAt": "2026-09-06T20:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Paper.js",
+    "descriptionZh": "Jürg Lehni 与 Jonathan Puckey 开发的矢量图形脚本框架，现为 0.12.18。在 HTML5 Canvas 上操作路径与场景图；npm 包 paper 标 MIT，教程与示例公开。",
+    "takeawayZh": "用矢量路径在 Canvas 上写图形",
+    "noteZh": "我们进首页，左侧 About、Examples、Tutorials，右侧是带控制点的黑色曲线。Tutorials 把 Geometry、Paths 分成栏目。Examples 缩略图里 Boolean Operations、Tadpoles 一眼能看出它在做什么。适合要在 Canvas 上操作贝塞尔的人。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "About 页把 Paper.js 定义为运行在 HTML5 Canvas 上的开源矢量图形脚本框架，提供场景图与贝塞尔路径，而不是设计工具或素材包。",
+        "evidenceUrl": "https://paperjs.org/about/"
+      },
+      {
+        "statement": "Examples 页给出 Boolean Operations、Path Intersections 等可运行矢量示例，证明交付物是可装进项目的图形代码。",
+        "evidenceUrl": "https://paperjs.org/examples/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "canvas",
+      "svg"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://paperjs.org/",
+      "finalUrl": "https://paperjs.org/",
+      "title": "Paper.js",
+      "selectionRationale": "先看首页。左侧导航，右侧就是带锚点的曲线。",
+      "shot": {
+        "src": "/shots/paperjs/v2-identity.png",
+        "sha256": "6d13cb4f5a1b7cc2e22c6b9fe1ffc9af019411b9857568cab66523dbdf426b4b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 53595,
+        "alt": "Paper.js 首页左侧 About、Examples、Tutorials 导航，右侧黑色曲线山带蓝色贝塞尔控制柄"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://paperjs.org/tutorials/",
+      "finalUrl": "https://paperjs.org/tutorials/",
+      "title": "Paper.js — Tutorials",
+      "selectionRationale": "再翻 Tutorials。Geometry 和 Paths 分成栏目。",
+      "shot": {
+        "src": "/shots/paperjs/v2-breadth.png",
+        "sha256": "768f4be34ec3aa9121b95d7e804a5e34b84d6775dd0f632958ffdab7a6b066fe",
+        "width": 1280,
+        "height": 900,
+        "bytes": 94996,
+        "alt": "Paper.js Tutorials 页列出 Getting Started、Geometry、Paths、Interaction、Project & Items"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://paperjs.org/examples/",
+      "finalUrl": "https://paperjs.org/examples/",
+      "title": "Paper.js — Examples",
+      "selectionRationale": "最后开 Examples。Boolean Operations 缩略图就是证明。",
+      "shot": {
+        "src": "/shots/paperjs/v2-proof.png",
+        "sha256": "5850d25c2bfa541f78ab0bbe078592dfdd0e32775d1028d4b5b873355d5d003d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 200310,
+        "alt": "Paper.js Examples 缩略图墙，含 Boolean Operations、Candy Crash、Tadpoles、Meta Balls"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Jürg Lehni & Jonathan Puckey",
+      "sourceUrl": "https://paperjs.org/about/",
+      "evidence": "About 页写 Paper.js is developed by Jürg Lehni & Jonathan Puckey。LICENSE 版权行为 Copyright (c) 2011 - 2020, Jürg Lehni & Jonathan Puckey。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://paperjs.org/about/",
+      "evidence": "About 与 LICENSE 只署两位作者，未见公司或基金会。仓库组织名为 paperjs。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/paperjs/paper.js",
+      "sourceUrl": "https://paperjs.org/about/",
+      "evidence": "About 页 Github Repository 链到 github.com/paperjs/paper.js。package.json repository 为 https://github.com/paperjs/paper.js。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://paperjs.org/license/",
+      "evidence": "License 页写 Paper.js is distributed under the permissive MIT License。仓库 LICENSE.txt 标题 The MIT License (MIT)，Copyright (c) 2011 - 2020, Jürg Lehni & Jonathan Puckey。package.json license 为 MIT。覆盖 paper 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://paperjs.org/about/",
+      "evidence": "About 写 Paper.js is an open source vector graphics scripting framework。教程、示例与许可页公开可读，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "paper",
+      "sourceUrl": "https://github.com/paperjs/paper.js/blob/develop/package.json",
+      "evidence": "package.json name 为 paper，version 0.12.18，description 为 The Swiss Army Knife of Vector Graphics Scripting。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/paperjs.md",
+  "registryUrl": "/r/paperjs.json"
+}

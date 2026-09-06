@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "entryId": "matter-js",
+  "entityId": "entity-matter-js",
+  "attemptId": "swarm-curator-batch-n-matter-js-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://brm.io/matter-js/",
+    "finalUrl": "https://brm.io/matter-js/",
+    "checkedAt": "2026-09-06T20:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Matter.js",
+    "descriptionZh": "Liam Brummitt 开发的网页二维刚体物理引擎，现为 v0.20.0。提供碰撞、约束与重力模拟；npm 包 matter-js 标 MIT，文档与演示公开。",
+    "takeawayZh": "给网页里的刚体加上碰撞和重力",
+    "noteZh": "我们进首页，标题 Matter.js is a 2D physics engine for the web，右侧有一根细杆在摆。文档把 Engine、Render、Body、Constraint 列成主模块。Demo 默认 Mixed Shapes：一箱多边形在堆叠。适合要在网页里做物理交互的人。MIT。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-matter-js",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "three-d-spatial-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Matter.js 定义为面向网页的 2D 物理引擎，并列出刚体、碰撞、约束与重力，而不是素材包或通用 UI 库。",
+        "evidenceUrl": "https://brm.io/matter-js/"
+      },
+      {
+        "statement": "Demo 页 Mixed Shapes 现场堆叠多边形并显示碰撞，证明交付物是可运行的空间物理实现。",
+        "evidenceUrl": "https://brm.io/matter-js/demo/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-n",
+    "reviewerId": "swarm-reviewer-grok-p",
+    "confirmedAt": "2026-09-06T22:15:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [
+      "gaming"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "canvas"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://brm.io/matter-js/",
+      "finalUrl": "https://brm.io/matter-js/",
+      "title": "Matter.js - a 2D rigid body JavaScript physics engine · code by @liabru",
+      "selectionRationale": "先看首页。2D physics engine 那句和细杆演示在首屏。",
+      "shot": {
+        "src": "/shots/matter-js/v2-identity.png",
+        "sha256": "44ffdcef789eb2f6ea32a66236b45929b59fe3cc8adfe5182087c62be0e6e2ad",
+        "width": 1280,
+        "height": 900,
+        "bytes": 49687,
+        "alt": "Matter.js 首页标题 a 2D physics engine for the web，链接 github、docs、see demos，右侧细杆约束演示"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://brm.io/matter-js/docs/",
+      "finalUrl": "https://brm.io/matter-js/docs/",
+      "title": "Matter.js Physics Engine API Docs - matter-js 0.20.0",
+      "selectionRationale": "再翻文档。Engine、Body、Constraint 就是模块范围。",
+      "shot": {
+        "src": "/shots/matter-js/v2-breadth.png",
+        "sha256": "803f456f6472fc5250cbff5a8b6ccdec6e3b92fd8d4e6bb5a8e492fd55e2cb1f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 50635,
+        "alt": "Matter.js Documentation 0.20.0，Main module APIs 列出 Engine、Render、Runner、Body、Constraint"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://brm.io/matter-js/demo/",
+      "finalUrl": "https://brm.io/matter-js/demo/",
+      "title": "Matter.js Demo",
+      "selectionRationale": "最后开 Demo。Mixed Shapes 一箱多边形就是证明。",
+      "shot": {
+        "src": "/shots/matter-js/v2-proof.png",
+        "sha256": "652cca80f4e27913c24813f941146719053c3be545a3d75ea92ada70711fea59",
+        "width": 1280,
+        "height": 900,
+        "bytes": 80258,
+        "alt": "Matter.js Demo 顶栏 Mixed Shapes，画布里一箱圆、多边形与矩形在堆叠，带红色速度标记"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Liam Brummitt",
+      "sourceUrl": "https://github.com/liabru/matter-js/blob/master/package.json",
+      "evidence": "package.json author 写 Liam Brummitt <liam@brm.io> (http://brm.io/)。LICENSE 版权行 Copyright (c) Liam Brummitt and contributors。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://brm.io/matter-js/",
+      "evidence": "首页以个人站点 brm.io 与 @liabru 署名，未见公司或基金会。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/liabru/matter-js",
+      "sourceUrl": "https://brm.io/matter-js/",
+      "evidence": "首页 github 链到 https://github.com/liabru/matter-js。package.json repository 为 https://github.com/liabru/matter-js.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/liabru/matter-js/blob/master/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) Liam Brummitt and contributors。package.json license 为 MIT。文档页脚写 0.20.0 · MIT License。覆盖 matter-js 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://brm.io/matter-js/",
+      "evidence": "首页、文档与 Demo 公开可读，并链到 npm package。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "matter-js",
+      "sourceUrl": "https://github.com/liabru/matter-js/blob/master/package.json",
+      "evidence": "package.json name 为 matter-js，version 0.20.0，与文档标题 matter-js 0.20.0 一致。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-n",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-p",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-p"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-n 进站起草。主类放 three-d-spatial-code，因交付物是空间物理实现，虽为 2D。swarm-reviewer-grok-p 复核活页、截图哈希与许可后 APPROVED。无 canvas/3d 分组，不塞进 components-and-blocks。"
+  }
+}

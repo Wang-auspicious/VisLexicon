@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "entryId": "spline",
+  "entityId": "entity-spline",
+  "attemptId": "swarm-curator-batch-n-spline-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://spline.design/",
+    "finalUrl": "https://spline.design/",
+    "checkedAt": "2026-09-06T20:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Spline",
+    "descriptionZh": "Spline, Inc. 的浏览器 3D 设计工具，可把场景导出到 Web、iOS 与 Android。编辑器免费档带水印；@splinetool/react-spline 为 MIT，运行时包未标 SPDX。",
+    "takeawayZh": "在浏览器里做可导出的交互 3D",
+    "noteZh": "我们进首页，标题 Make anything 3D，中间是 AI 输入框。文档写它是网页端 3D 设计工具，可发到 web 与 iOS。Exporting as Code 列出 Vanilla JS 运行时和 React 包装。编辑器专有；react-spline 为 MIT；运行时 npm 包未标 license。",
+    "pricing": "Free with watermark; Hobby from $12/seat/mo billed yearly"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-spline",
+    "primaryCategory": "creation-tools",
+    "subcategory": "three-d-spatial-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "文档 What is Spline 把产品定义为在浏览器里创建交互 3D 与 2D 体验并发布到 Web、iOS、Android 的设计工具，主动作是在编辑器里创作。",
+        "evidenceUrl": "https://docs.spline.design/basics/what-is-spline"
+      },
+      {
+        "statement": "Exporting as Code 把同一场景导出为 Vanilla JS 运行时、React、Next.js 或 Three.js，证明另有可安装的运行时代码，但入口仍是编辑器导出。",
+        "evidenceUrl": "https://docs.spline.design/exporting-your-scene/web/exporting-as-code"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-n",
+    "reviewerId": "swarm-reviewer-grok-p",
+    "confirmedAt": "2026-09-06T22:15:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "three-d-model"
+    ],
+    "actions": [
+      "browse",
+      "edit",
+      "export",
+      "install",
+      "prototype"
+    ],
+    "media": [
+      "3d",
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "javascript",
+      "webgl",
+      "react",
+      "three-js"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "proprietary",
+      "MIT",
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://spline.design/",
+      "finalUrl": "https://spline.design/",
+      "title": "Spline - 3D Design tool in the browser with real-time collaboration",
+      "selectionRationale": "先看首页。Make anything 3D 和 AI 输入框在首屏。",
+      "shot": {
+        "src": "/shots/spline/v2-identity.png",
+        "sha256": "772a70a4bb1af0e3f378568a736357320a8eb98086db7a98e21770b3bfe234a5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 188132,
+        "alt": "Spline 首页黑底标题 Make anything 3D，中间 Describe what you want to create 输入框，周围漂浮彩色 3D 体"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://docs.spline.design/basics/what-is-spline",
+      "finalUrl": "https://docs.spline.design/basics/what-is-spline",
+      "title": "What is Spline? | Spline Documentation",
+      "selectionRationale": "再翻 What is Spline。3D 编辑器、交互、导出分成侧栏。",
+      "shot": {
+        "src": "/shots/spline/v2-breadth.png",
+        "sha256": "72cb9384a9ad526c97a6dd263ca3a2191ef2fc85780ad721af2985d15e998419",
+        "width": 1280,
+        "height": 900,
+        "bytes": 214341,
+        "alt": "Spline Docs What is Spline，正文称网页端 3D/2D 设计工具，配 3D 编辑器里 rainbow design 字样的截图"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://docs.spline.design/exporting-your-scene/web/exporting-as-code",
+      "finalUrl": "https://docs.spline.design/exporting-your-scene/web/exporting-as-code",
+      "title": "Exporting as Code | Spline Documentation",
+      "selectionRationale": "最后开 Exporting as Code。运行时链接就是证明。",
+      "shot": {
+        "src": "/shots/spline/v2-proof.png",
+        "sha256": "1ef57db7315b55a8b33c84f6cfb1944358bae0033f3e6a7c6b919a61b6e7a12b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 137850,
+        "alt": "Exporting as Code 列出 Vanilla JS 运行时 @splinetool/runtime、React 包装 react-spline、Three.js loader"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "unknown",
+      "sourceUrl": "https://spline.design/",
+      "evidence": "首页与定价页以产品 Spline 自称，未在这三页列出个人创始人姓名，故记 unknown。npm 维护者邮箱域为 spline.design。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Spline, Inc.",
+      "sourceUrl": "https://github.com/splinetool/react-spline/blob/main/LICENSE",
+      "evidence": "react-spline LICENSE 版权行 Copyright (c) 2022 Spline, Inc.。@splinetool/runtime 描述写 © 2026 Spline, Inc.。GitHub 组织为 splinetool。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/splinetool/react-spline",
+      "sourceUrl": "https://docs.spline.design/exporting-your-scene/web/exporting-as-code",
+      "evidence": "Exporting as Code 把 React 文档指向 github.com/splinetool/react-spline。这是公开的 React 包装仓库，不是编辑器源码。npm 上 @splinetool/runtime 的 repository 指向 git+https://github.com/splinetool/spline.git，该仓未以公开页核到 LICENSE。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "proprietary (editor); MIT (react-spline); unknown (runtime)",
+      "sourceUrl": "https://github.com/splinetool/react-spline/blob/main/LICENSE",
+      "evidence": "编辑器为专有 SaaS，定价页按席位收费。react-spline LICENSE 为 MIT License，Copyright (c) 2022 Spline, Inc.，覆盖 React 包装。registry.npmjs.org/@splinetool/runtime/latest 的 package.json 无 license 字段，故运行时记 unknown，不得标开源。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free with watermark; Hobby from $12/seat/mo billed yearly",
+      "sourceUrl": "https://spline.design/pricing",
+      "evidence": "定价页 Free 档 $0/month，Limited Personal Files，Web exports with watermark。Hobby $12/seat/month billed annually（月付 $15），含 Unlimited 3D & 2D files 与 No watermark on web exports。Pro $25/seat/month billed annually。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@splinetool/runtime",
+      "sourceUrl": "https://docs.spline.design/exporting-your-scene/web/exporting-as-code",
+      "evidence": "Exporting as Code 把 Vanilla JS 运行时文档指向 npm @splinetool/runtime。React 包装为 @splinetool/react-spline。registry 上 runtime 当前 version 2.0.37。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-n",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-p",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-p"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-n 进站起草。作业 breadth docs.spline.design 首屏超时、proof /exporting-your-scene 为 404，改截 What is Spline 与 Exporting as Code。编辑器专有，react-spline MIT，runtime npm 无 license。主类 creation-tools/three-d-spatial-creation，备选 visual-implementation。swarm-reviewer-grok-p 复核活页、截图哈希与许可后 APPROVED。无 canvas/3d 分组，不塞进 components-and-blocks。"
+  }
+}

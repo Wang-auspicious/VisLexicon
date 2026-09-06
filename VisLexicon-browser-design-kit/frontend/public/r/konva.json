@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T00:15:11.097Z",
+  "entryId": "konva",
+  "entityId": "entity-konva",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://konvajs.org/",
+    "finalUrl": "https://konvajs.org/",
+    "checkedAt": "2026-09-06T20:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Konva",
+    "descriptionZh": "Anton Lavrenov 维护的 HTML5 Canvas 2D 库，现为 v10.3.3。用 Stage、Layer 与 Shape 做可拖放画布；npm 包 konva 标 MIT，自 2015 年起公开维护。",
+    "takeawayZh": "用 Stage 和 Layer 搭可拖的画布",
+    "noteZh": "我们进首页，标题 Build interactive graphics for the web，右侧是带变换手柄的矩形。Overview 讲 Stage 分 Layer，再讲 hit graph。Rectangle 教程给出 import Konva 和 new Konva.Rect。适合做编辑器或白板的人。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Konva 定义为 2D canvas scene graph，用来画形状、处理指针与触控、做动画并导出，而不是组件套件或素材包。",
+        "evidenceUrl": "https://konvajs.org/"
+      },
+      {
+        "statement": "Rectangle 教程用 Konva.Stage、Layer 与 Konva.Rect 给出可复制代码，证明交付物是可装进项目的画布实现。",
+        "evidenceUrl": "https://konvajs.org/docs/shapes/Rect.html"
+      }
+    ],
+    "confirmedAt": "2026-09-06T22:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview",
+      "copy"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "canvas",
+      "react",
+      "vue"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://konvajs.org/",
+      "finalUrl": "https://konvajs.org/",
+      "title": "Konva - JavaScript Canvas 2d Library",
+      "selectionRationale": "先看首页。交互图形那句和现场 Stage 在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/konva/v2-identity.png",
+        "sha256": "c040e08d00eeb4c19ffcf85938277b420b4214a952b9b5eae0328f495ad57a2d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 500594,
+        "alt": "Konva 首页标题 Build interactive graphics for the web，npm install konva，右侧带变换手柄的蓝色矩形"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://konvajs.org/docs/overview.html",
+      "finalUrl": "https://konvajs.org/docs/overview.html",
+      "title": "Konva Framework Overview | Konva - JavaScript Canvas 2d Library",
+      "selectionRationale": "再翻 Overview。Stage、Layer、hit graph 把范围说清。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/konva/v2-breadth.png",
+        "sha256": "72ee05fca3ac0bcec8650c44d843d38164dc1b8de4b2fa94505b5f477ea7da49",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113027,
+        "alt": "Konva Framework Overview，正文 What's Konva 与 How does it work，含 Stage 到 Layer 的节点层次图"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://konvajs.org/docs/shapes/Rect.html",
+      "finalUrl": "https://konvajs.org/docs/shapes/Rect.html",
+      "title": "HTML5 canvas Rectangle Tutorial | Konva - JavaScript Canvas 2d Library",
+      "selectionRationale": "最后开 Rectangle。一段 Konva.Rect 就是它能画的证明。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/konva/v2-proof.png",
+        "sha256": "984f4dec4652dfc4ff3cac7139f19158f3c9840eeb6d5bba3b7dfe3ebafd0478",
+        "width": 1280,
+        "height": 900,
+        "bytes": 81365,
+        "alt": "Konva Rectangle 教程，代码块含 import Konva、new Konva.Stage 与 const rect1 = new Konva.Rect"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Anton Lavrenov",
+      "sourceUrl": "https://konvajs.org/docs/about.html",
+      "evidence": "About 页 Key Facts 写 Creator Anton Lavrenov。LICENSE 写 Modified work Copyright (C) 2014 - present by Anton Lavrenov (Konva)。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://konvajs.org/docs/about.html",
+      "evidence": "About 页以个人维护者 Anton Lavrenov 署名，GitHub 组织为 konvajs，未见独立公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/konvajs/konva",
+      "sourceUrl": "https://konvajs.org/docs/about.html",
+      "evidence": "About 页 GitHub 列为 github.com/konvajs/konva。package.json repository 为 git://github.com/konvajs/konva.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://konvajs.org/",
+      "evidence": "首页写 MIT licensed。About 页 License 列为 MIT (free for commercial and personal use)。仓库 LICENSE 为 MIT License。覆盖 konva 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://konvajs.org/",
+      "evidence": "首页给出 npm install konva，并写 MIT licensed。文档公开，未见付费墙。同页另推商业 SDK Polotno，不覆盖 Konva 本身。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "konva",
+      "sourceUrl": "https://konvajs.org/",
+      "evidence": "首页安装命令 $ npm install konva。package.json name 为 konva，version 10.3.3。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/konva",
+    "designMdUrl": "https://vislexicon.com/site/konva.md",
+    "checkedAt": "2026-09-06T20:30:00.000Z",
+    "license": "MIT"
+  }
+}
