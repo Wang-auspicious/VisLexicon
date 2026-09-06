@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "entryId": "editorjs",
+  "entityId": "entity-editorjs",
+  "attemptId": "swarm-curator-batch-a2b-editorjs-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://editorjs.io/",
+    "finalUrl": "https://editorjs.io/",
+    "checkedAt": "2026-09-06T12:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Editor.js",
+    "descriptionZh": "CodeX 维护的块式编辑器 Editor.js，npm 包 @editorjs/editorjs 现为 v2.31.6。LICENSE 为 Apache-2.0。输出结构化 JSON 而非 HTML，可免费用于个人与商业项目。",
+    "takeawayZh": "装核心包并保存为 JSON",
+    "noteZh": "首页标题 A Free, Block-Style Editor with Universal JSON Output，署名 Powered by CodeX。入门页给出 npm i @editorjs/editorjs --save。Base concepts 给出 JSON 标本。Apache-2.0 覆盖核心源码。本体无付费墙。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-editorjs",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Editor.js 定义为 A Free, Block-Style Editor with Universal JSON Output，并署名 Powered by CodeX。",
+        "evidenceUrl": "https://editorjs.io/"
+      },
+      {
+        "statement": "Base concepts 给出块式 JSON 输出标本，对照 HTML 说明 clean data；Getting started 给出 npm i @editorjs/editorjs --save。",
+        "evidenceUrl": "https://editorjs.io/base-concepts"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-a2b",
+    "reviewerId": "swarm-reviewer-grok-u",
+    "confirmedAt": "2026-09-06T23:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://editorjs.io/",
+      "finalUrl": "https://editorjs.io/",
+      "title": "Editor.js",
+      "selectionRationale": "首页免费块式编辑器与 JSON 输出定位。",
+      "shot": {
+        "src": "/shots/editorjs/v2-identity.png",
+        "sha256": "3bdb851f13ac0c46341ae003d243eb654b033e01afe84fec4dd7192dc166d83e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 96095,
+        "alt": "Editor.js 首页：A Free, Block-Style Editor with Universal JSON Output，Get Started，底栏 Powered by CodeX"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://editorjs.io/getting-started",
+      "finalUrl": "https://editorjs.io/getting-started",
+      "title": "Getting started",
+      "selectionRationale": "入门页给出安装命令与工具连接步骤。",
+      "shot": {
+        "src": "/shots/editorjs/v2-breadth.png",
+        "sha256": "89611229a0b9b5fa9ad9f46cd7fa19e87da8f1f110017afc90db9476022b49c5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 100227,
+        "alt": "Getting started：npm i @editorjs/editorjs --save 与 yarn add，左侧 Base concepts/Configuration 目录，右侧 Carbon 广告"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://editorjs.io/base-concepts",
+      "finalUrl": "https://editorjs.io/base-concepts",
+      "title": "Base concepts",
+      "selectionRationale": "Base concepts 给出 JSON 输出标本。",
+      "shot": {
+        "src": "/shots/editorjs/v2-proof.png",
+        "sha256": "b6d160b48e7f977d18c445138babd527cd5cdf50ae705877483433e657e3871a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116808,
+        "alt": "Base concepts：块式编辑说明与 The first header 标本，对照 HTML 讲解 clean JSON 输出"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "CodeX",
+      "sourceUrl": "https://raw.githubusercontent.com/codex-team/editor.js/next/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright © 2015-present CodeX。package.json author 为 CodeX。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "CodeX",
+      "sourceUrl": "https://editorjs.io/",
+      "evidence": "首页写 Powered by CodeX。页脚 Copyright © 2025 CodeX。仓库组织为 codex-team。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/codex-team/editor.js",
+      "sourceUrl": "https://raw.githubusercontent.com/codex-team/editor.js/next/package.json",
+      "evidence": "package.json repository.url 为 git+https://github.com/codex-team/editor.js.git。首页 GitHub 链到同一仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://raw.githubusercontent.com/codex-team/editor.js/next/LICENSE",
+      "evidence": "LICENSE 为 Apache License Version 2.0，版权 Copyright © 2015-present CodeX。package.json license 为 Apache-2.0。页脚写 Released under the Apache 2 License。覆盖 Editor.js 核心源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://editorjs.io/",
+      "evidence": "首页写 A Free, Block-Style Editor 与 Free and open-source。文档公开可浏览。页脚可经 Open Collective 赞助，不是产品付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@editorjs/editorjs",
+      "sourceUrl": "https://editorjs.io/getting-started",
+      "evidence": "Getting started 写 npm i @editorjs/editorjs --save。package.json name 为 @editorjs/editorjs，version 2.31.6。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-a2b",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-u",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-u"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-a2b 进站起草。页脚 Apache 2 已用 github.com/codex-team/editor.js next 分支 LICENSE 复核。Getting started 有 Carbon 广告，未挡住标题与安装命令。status 仍 DRAFT。 swarm-reviewer-grok-u 独立打开活页、LICENSE 原文与三张 PNG sha256 后 APPROVED。"
+  }
+}

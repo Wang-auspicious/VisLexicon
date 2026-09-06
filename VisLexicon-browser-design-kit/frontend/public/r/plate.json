@@ -1,0 +1,204 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T15:09:24.084Z",
+  "entryId": "plate",
+  "entityId": "entity-plate",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://platejs.org/",
+    "finalUrl": "https://platejs.org/",
+    "checkedAt": "2026-09-06T12:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Plate",
+    "descriptionZh": "udecode 维护的 React 富文本编辑器框架 Plate，核心包 platejs 现为 v53.3.11。仓库 LICENSE 标 MIT。Plate UI 经 shadcn CLI 复制进应用；Plus 模板另售。",
+    "takeawayZh": "用 shadcn CLI 复制编辑器组件",
+    "noteZh": "首页标题 Build your rich-text editor，首屏已有 Playground 与 shadcn 命令。文档 Introduction 列出 platejs 与 Plate UI registry。Code Block Nodes 给出 CLI 与现场代码块。MIT 覆盖开源仓；Plus 另售。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Plate 定义为 Build your rich-text editor，并给出 npx shadcn@latest add @plate/editor-ai 与现场 Playground。",
+        "evidenceUrl": "https://platejs.org/"
+      },
+      {
+        "statement": "Code Block Nodes 页给出 npx shadcn@latest add @plate/code-block-node 与现场代码块预览，证明组件可经 shadcn CLI 安装。",
+        "evidenceUrl": "https://platejs.org/docs/components/code-block-node"
+      }
+    ],
+    "confirmedAt": "2026-09-06T23:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "starter"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript",
+      "tailwind",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://platejs.org/",
+      "finalUrl": "https://platejs.org/",
+      "title": "Build your rich-text editor - Plate",
+      "selectionRationale": "首页标题、shadcn 命令与现场 Playground。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/plate/v2-identity.png",
+        "sha256": "3ab901f73b6085fb46bf8f4ce0afdb84c5292fdcc9b89f7ed217023a03ea03d2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 83478,
+        "alt": "Plate 首页：Build your rich-text editor，命令 npx shadcn@latest add @plate/editor-ai，下方 Welcome to the Plate Playground 现场编辑器"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://platejs.org/docs",
+      "finalUrl": "https://platejs.org/docs",
+      "title": "Introduction - Plate",
+      "selectionRationale": "文档总览列出核心、插件与 Plate UI。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/plate/v2-breadth.png",
+        "sha256": "9a48a62db5285b9a3c210481e9a9eebb29a4a7432c34932d33b1053f80e846b9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 102939,
+        "alt": "Plate Introduction：Choose a Path 与 What Plate Owns 表，列出 platejs、@platejs/* 与 Plate UI registry，右侧 Get all-access"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://platejs.org/docs/components/code-block-node",
+      "finalUrl": "https://platejs.org/docs/components/code-block-node",
+      "title": "Code Block Nodes - Plate",
+      "selectionRationale": "代码块组件页给出 CLI 安装与现场预览。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/plate/v2-proof.png",
+        "sha256": "f8fe761dc1f053f641234a82c0c7be641ea37b240723c8bae765381d2c9c1282",
+        "width": 1280,
+        "height": 900,
+        "bytes": 85670,
+        "alt": "Code Block Nodes：安装命令 npx shadcn@latest add @plate/code-block-node，下方带工具栏的代码块现场预览"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Ziad Beyens, Dylan Schiemann, Joe Anderson, Felix Feng",
+      "sourceUrl": "https://raw.githubusercontent.com/udecode/plate/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) Ziad Beyens, Dylan Schiemann, Joe Anderson, Felix Feng。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "udecode",
+      "sourceUrl": "https://raw.githubusercontent.com/udecode/plate/main/packages/plate/package.json",
+      "evidence": "platejs package.json repository.url 为 https://github.com/udecode/plate.git，组织 udecode。站点品牌为 Plate。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/udecode/plate",
+      "sourceUrl": "https://raw.githubusercontent.com/udecode/plate/main/packages/plate/package.json",
+      "evidence": "platejs package.json repository.url 为 https://github.com/udecode/plate.git。文档顶栏 GitHub 链到同一仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/udecode/plate/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)。根 package.json 与 platejs、@platejs/core 的 license 均为 MIT。覆盖 udecode/plate 开源框架与插件源码，除非个别包目录另附 LICENSE。Plate Plus / Potion 模板在 pro.platejs.org 另售，不在此 MIT 内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://platejs.org/docs",
+      "evidence": "文档 FAQ 写 Plate and Plate UI are free for personal and commercial projects。首页与组件页公开可浏览。文档侧栏 Get all-access 指向另售 Plate Plus，不是开源仓付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "platejs",
+      "sourceUrl": "https://raw.githubusercontent.com/udecode/plate/main/packages/plate/package.json",
+      "evidence": "packages/plate/package.json name 为 platejs，version 53.3.11，license MIT。文档 What Plate Owns 将核心运行时标为 platejs。组件页安装走 npx shadcn@latest add @plate/code-block-node。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/plate",
+    "designMdUrl": "https://vislexicon.com/site/plate.md",
+    "checkedAt": "2026-09-06T12:00:00.000Z",
+    "license": "MIT"
+  }
+}

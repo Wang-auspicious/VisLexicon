@@ -684,6 +684,38 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm install quill' }],
     },
   },
+  plate: {
+    lede: { zh: 'React 富文本编辑器框架。MIT，Plus 另售。', en: 'React rich-text editor framework. MIT; Plus is paid.' },
+    style: { zh: '浅色产品营销。超大无衬线标题。黑胶囊按钮。嵌入工具栏编辑器标本。', en: 'Light product marketing. Oversized sans title. Black capsule button. Embedded toolbar editor specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npx shadcn@latest add @plate/editor' }],
+      en: [{ k: 'CLI', v: 'npx shadcn@latest add @plate/editor' }],
+    },
+  },
+  blocknote: {
+    lede: { zh: '区块富文本编辑器。核心 MPL-2.0，XL 另计。', en: 'Block rich-text editor. Core is MPL-2.0; XL is separate.' },
+    style: { zh: '浅色产品营销。衬线大标题。紫强调。右侧编辑器窗口标本。', en: 'Light product marketing. Serif display title. Purple accent. Editor window specimen on the right.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @blocknote/core @blocknote/react @blocknote/mantine' }],
+      en: [{ k: 'CLI', v: 'npm install @blocknote/core @blocknote/react @blocknote/mantine' }],
+    },
+  },
+  editorjs: {
+    lede: { zh: '块式编辑器。Apache-2.0。输出 JSON。', en: 'Block-style editor. Apache-2.0. JSON output.' },
+    style: { zh: '浅色产品营销。超大无衬线标题。青蓝主按钮。圆形加号徽标。', en: 'Light product marketing. Oversized sans title. Cyan primary button. Circular plus mark.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i @editorjs/editorjs' }],
+      en: [{ k: 'CLI', v: 'npm i @editorjs/editorjs' }],
+    },
+  },
+  milkdown: {
+    lede: { zh: '无样式 Markdown 编辑器。MIT。', en: 'Headless Markdown editor. MIT.' },
+    style: { zh: '深色全出血。超大无衬线字标。双胶囊按钮。墨迹底纹。', en: 'Dark full bleed. Oversized sans wordmark. Dual capsule buttons. Ink-blot ground.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @milkdown/crepe' }],
+      en: [{ k: 'CLI', v: 'npm install @milkdown/crepe' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

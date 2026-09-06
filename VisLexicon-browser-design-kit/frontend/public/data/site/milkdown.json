@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T15:09:24.084Z",
+  "entryId": "milkdown",
+  "entityId": "entity-milkdown",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "milkdown.dev",
+  "official": {
+    "inputUrl": "https://milkdown.dev/",
+    "finalUrl": "https://milkdown.dev/",
+    "checkedAt": "2026-09-06T12:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Milkdown",
+    "descriptionZh": "Mirone 维护的无样式 Markdown 编辑器 Milkdown，基于 ProseMirror。核心包 @milkdown/core 现为 v7.22.1，LICENSE 标 MIT。可装 @milkdown/crepe 开箱即用。",
+    "takeawayZh": "装 crepe 包先跑 Markdown 编辑器",
+    "noteZh": "首页写 plugin driven framework to build WYSIWYG Markdown editor。入门页给出 npm install @milkdown/crepe。Playground 徽章 v7.22.1，左侧所见即所得，右侧 Markdown 源。MIT 覆盖源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Milkdown 定义为 plugin driven framework to build WYSIWYG Markdown editor，并写 Headless、built on ProseMirror。",
+        "evidenceUrl": "https://milkdown.dev/"
+      },
+      {
+        "statement": "Playground 给出 Crepe 现场编辑器与 Markdown 源对照，并写 npm install @milkdown/crepe。",
+        "evidenceUrl": "https://milkdown.dev/playground"
+      }
+    ],
+    "confirmedAt": "2026-09-06T23:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "edit",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://milkdown.dev/",
+      "finalUrl": "https://milkdown.dev/",
+      "title": "Milkdown",
+      "selectionRationale": "首页插件驱动 Markdown 编辑器定位。",
+      "shot": {
+        "src": "/shots/milkdown/v2-identity.png",
+        "sha256": "a1afd322c4fe558c314e39056b195427034ec8732e5268fd9f37cf1847e328b5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 50920,
+        "alt": "Milkdown 首页：A plugin driven framework to build WYSIWYG Markdown editor，按钮 Get Started 与 Playground"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://milkdown.dev/docs/guide/getting-started",
+      "finalUrl": "https://milkdown.dev/docs/guide/getting-started",
+      "title": "Getting Started | Milkdown",
+      "selectionRationale": "入门页给出 Crepe 安装命令与初始化代码。",
+      "shot": {
+        "src": "/shots/milkdown/v2-breadth.png",
+        "sha256": "b8b95cae095782b2238119d87f86158428a41efd1df0196857898446ee4e7879",
+        "width": 1280,
+        "height": 900,
+        "bytes": 77566,
+        "alt": "Getting Started with Milkdown：npm install @milkdown/crepe 与 Crepe 初始化代码，顶栏 Guide/Recipes/Plugin/Playground"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://milkdown.dev/playground",
+      "finalUrl": "https://milkdown.dev/playground",
+      "title": "Playground | Milkdown",
+      "selectionRationale": "Playground 给出所见即所得编辑器与源码对照。",
+      "shot": {
+        "src": "/shots/milkdown/v2-proof.png",
+        "sha256": "b9514cedf6c637c88c18b8a77473250c30a5d13147ecacf0db2562c87a71c9a9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 234642,
+        "alt": "Milkdown Playground v7.22.1：左侧 Welcome 正文与北极熊图，右侧 Markdown 源与 npm install @milkdown/crepe"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Mirone",
+      "sourceUrl": "https://raw.githubusercontent.com/Milkdown/milkdown/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2020-present Mirone。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Milkdown",
+      "sourceUrl": "https://milkdown.dev/",
+      "evidence": "站点品牌为 Milkdown。仓库由 GitHub 组织 Milkdown 维护。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/Milkdown/milkdown",
+      "sourceUrl": "https://raw.githubusercontent.com/Milkdown/milkdown/main/packages/core/package.json",
+      "evidence": "@milkdown/core package.json repository.url 为 git+https://github.com/Milkdown/milkdown.git。入门页 Edit on github 链到 Milkdown/website。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/Milkdown/milkdown/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2020-present Mirone。@milkdown/core 与 @milkdown/crepe 的 package.json license 均为 MIT。覆盖 Milkdown 核心与 Crepe 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://milkdown.dev/",
+      "evidence": "首页、入门文档与 Playground 公开可浏览。安装走 npm。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@milkdown/core",
+      "sourceUrl": "https://milkdown.dev/docs/guide/getting-started",
+      "evidence": "入门页写最快路径为 npm install @milkdown/crepe，并说明核心包为 @milkdown/core。@milkdown/core package.json version 7.22.1。Playground 徽章 v7.22.1。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/milkdown.md",
+  "registryUrl": "/r/milkdown.json"
+}
