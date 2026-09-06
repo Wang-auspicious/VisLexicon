@@ -69,6 +69,10 @@ const VOICE = {
       zh: ['玻璃拟态', '新拟态', '新粗野主义', '赛博霓虹', '纯代码几何纹理', '力学微交互'],
       en: ['Glassmorphism', 'Neumorphism', 'Neo-brutalism', 'Cyberpunk dark glow', 'Pure CSS shaders', 'Dynamic micro-interactions'],
     },
+    styleDetail: {
+      zh: '玻璃拟态：毛玻璃与半透明折射。新拟态：软阴影微凸起质感。新粗野主义：高饱和撞色与硬边阴影。赛博霓虹与暗黑微光。纯代码生成几何纹理。复杂力学微交互。',
+      en: 'Glassmorphism: frosted glass and translucent refraction. Neumorphism: soft extruded shadow. Neo-brutalism: saturated clash and hard-edge shadow. Cyberpunk dark glow. Procedural pure-CSS geometry. Dynamic micro-interactions.',
+    },
   },
   'magic-ui': {
     lede: { zh: 'React 动效组件。经 shadcn CLI 安装。', en: 'React motion components. Installed via the shadcn CLI.' },
