@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:09:00.509Z",
+  "entryId": "vditor",
+  "entityId": "entity-vditor",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://b3log.org/vditor/",
+    "finalUrl": "https://b3log.org/vditor/",
+    "checkedAt": "2026-09-06T16:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Vditor",
+    "descriptionZh": "B3log 开源维护的浏览器端 Markdown 编辑器 Vditor，npm 包 vditor 现为 v4.0.0。LICENSE 为 MIT。支持所见即所得、即时渲染与分屏预览，站点以简体中文为主。",
+    "takeawayZh": "装 vditor，三种编辑模式可切换",
+    "noteZh": "首页标题 Vditor，顶栏社区、API、Demo。Demo 总览列出使用场景、页面渲染、基本配置。preview 页调用 Vditor.preview() 并渲染教程。LICENSE 为 MIT，署 B3log 开源。页脚云南链滴科技有限公司。本体无付费墙。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Vditor 定义为浏览器端 Markdown 编辑器，支持所见即所得、即时渲染（类似 Typora）和分屏预览模式。",
+        "evidenceUrl": "https://b3log.org/vditor/"
+      },
+      {
+        "statement": "preview 页写出 Vditor.preview() 与 Vditor.outlineRender()，并现场渲染教程 Markdown 与右侧大纲。",
+        "evidenceUrl": "https://b3log.org/vditor/demo/preview.html"
+      }
+    ],
+    "confirmedAt": "2026-09-07T01:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview",
+      "edit"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue",
+      "angular"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://b3log.org/vditor/",
+      "finalUrl": "https://b3log.org/vditor/",
+      "title": "Vditor - 一款浏览器端的 Markdown 编辑器，支持所见即所得（富文本）、即时渲染（类似 Typora）和分屏预览模式",
+      "selectionRationale": "首页给出 Vditor 标题与编辑器截图。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vditor/v2-identity.png",
+        "sha256": "1d59cd6498ba1f5467080f3807a99cc5b903aedac879beb7526654da7260f860",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121342,
+        "alt": "Vditor 首页：顶栏社区/API/Demo，中央标题 Vditor 与音标，下方分屏预览编辑器截图显示 Markdown 源与预览"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://b3log.org/vditor/demo/index.html",
+      "finalUrl": "https://b3log.org/vditor/demo/index.html",
+      "title": "Demo 示例 - Vditor",
+      "selectionRationale": "Demo 总览排出场景、渲染与配置目录。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vditor/v2-breadth.png",
+        "sha256": "fed21fd3167c9c147b8e6b4db7940cb7a83eaaeb5c5ebfcfdf9a58950dd4aa5e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 61512,
+        "alt": "Vditor Demo 总览：使用场景（React/Vue/Angular）、页面渲染、基本配置（wysiwyg/ir/sv），顶栏 Demo 高亮"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://b3log.org/vditor/demo/preview.html",
+      "finalUrl": "https://b3log.org/vditor/demo/preview.html",
+      "title": "页面渲染完整示例 - Vditor",
+      "selectionRationale": "preview 页给出 Vditor.preview 渲染结果。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vditor/v2-proof.png",
+        "sha256": "63c9ee2081ca74daef507f36ce05820fb811fcf8453e9fcd4672eb1c751429af",
+        "width": 1280,
+        "height": 900,
+        "bytes": 76493,
+        "alt": "Vditor preview 页：相关 API Vditor.preview()，正文教程与语法指导已渲染，右侧大纲"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Vanessa",
+      "sourceUrl": "https://raw.githubusercontent.com/Vanessa219/vditor/master/package.json",
+      "evidence": "package.json author 为 Vanessa <v@b3log.org> (http://vanessa.b3log.org)。LICENSE 版权行为 Copyright (c) 2019-present B3log 开源, b3log.org。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "B3log",
+      "sourceUrl": "https://b3log.org/vditor/",
+      "evidence": "站点品牌为 Vditor / B3log。页脚 © 2023 云南链滴科技有限公司。LICENSE 署 B3log 开源, b3log.org。仓库 Vanessa219/vditor。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/Vanessa219/vditor",
+      "sourceUrl": "https://raw.githubusercontent.com/Vanessa219/vditor/master/package.json",
+      "evidence": "package.json repository.url 为 git://github.com/Vanessa219/vditor.git。首页 GitHub 源码地址链到同一仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/Vanessa219/vditor/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2019-present B3log 开源, b3log.org。package.json license 为 MIT。覆盖 Vditor 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://b3log.org/vditor/",
+      "evidence": "首页与 Demo 公开可浏览。顶栏有成为赞助者入口，不是产品付费墙。LICENSE 为 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "vditor",
+      "sourceUrl": "https://raw.githubusercontent.com/Vanessa219/vditor/master/package.json",
+      "evidence": "package.json name 为 vditor，version 4.0.0，homepage 为 https://b3log.org/vditor。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/vditor",
+    "designMdUrl": "https://vislexicon.com/site/vditor.md",
+    "checkedAt": "2026-09-06T16:00:00.000Z",
+    "license": "MIT"
+  }
+}

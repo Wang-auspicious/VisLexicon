@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 3,
+  "entryId": "toast-ui-editor",
+  "entityId": "entity-toast-ui-editor",
+  "attemptId": "swarm-curator-batch-b-w2a-toast-ui-editor-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://ui.toast.com/tui-editor",
+    "finalUrl": "https://ui.toast.com/tui-editor",
+    "checkedAt": "2026-09-06T16:00:00.000Z"
+  },
+  "editorial": {
+    "name": "TOAST UI Editor",
+    "descriptionZh": "NHN Cloud 维护的 Markdown 编辑器 TOAST UI Editor，@toast-ui/editor 现为 v3.2.2。LICENSE 为 MIT。本条只收 Editor，不含 Chart、Grid、Calendar。",
+    "takeawayZh": "装 @toast-ui/editor 先抄预览",
+    "noteZh": "产品页标题 Editor，徽章 v3.2.2 与 MIT，下方 Markdown/预览。文档站给出 Table of Contents 与 ToastUIEditor 类。示例 1. Editor 现场分栏编辑。MIT 覆盖 Editor 源码。Chart、Grid、Calendar 不在本条。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-toast-ui-editor",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "产品页把 Editor 定义为用 text 或 WYSIWYG 编辑 Markdown，并展示 npm v3.2.2 与 license MIT 徽章。",
+        "evidenceUrl": "https://ui.toast.com/tui-editor"
+      },
+      {
+        "statement": "示例 1. Editor 给出 Markdown/预览分栏、工具栏与 Awesome Editor! 现场实例，证明编辑器可运行。",
+        "evidenceUrl": "https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-b-w2a",
+    "reviewerId": "swarm-reviewer-grok-x",
+    "confirmedAt": "2026-09-07T01:30:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview",
+      "edit",
+      "copy"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ui.toast.com/tui-editor",
+      "finalUrl": "https://ui.toast.com/tui-editor",
+      "title": "Editor | TOAST UI :: Make Your Web Delicious!",
+      "selectionRationale": "产品页给出 Editor 标题、MIT 与现场预览。",
+      "shot": {
+        "src": "/shots/toast-ui-editor/v2-identity.png",
+        "sha256": "05c0f22252c916e871a5c14421393cc3bec05b5f9e7228406ddc760c61d9afd1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84920,
+        "alt": "TOAST UI Editor 产品页：标题 Editor，徽章 npm v3.2.2 与 license MIT，下方 Markdown 源与 TOAST UI Editor 预览分栏"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://nhn.github.io/tui.editor/latest/",
+      "finalUrl": "https://nhn.github.io/tui.editor/latest/",
+      "title": "TOAST UI Editor",
+      "selectionRationale": "文档总览排出目录与 ToastUIEditor 类。",
+      "shot": {
+        "src": "/shots/toast-ui-editor/v2-breadth.png",
+        "sha256": "e4d95231c1f6468dd92bb0e587c8028bf977b3395dc8f5f98f56c78efd9d17c4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 56628,
+        "alt": "TOAST UI Editor 文档：顶栏 github v3.2.2，左侧 CLASSES ToastUIEditor/Core/Viewer，右侧 Table of Contents 与 usageStatistics 代码"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic",
+      "finalUrl": "https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic",
+      "title": "1. Editor",
+      "selectionRationale": "示例 1. Editor 给出 Markdown 与预览。",
+      "shot": {
+        "src": "/shots/toast-ui-editor/v2-proof.png",
+        "sha256": "d21ea682f785244618fba03637c5f97258ca68c064bdc6b4414886cb5fee7046",
+        "width": 1280,
+        "height": 900,
+        "bytes": 87388,
+        "alt": "1. Editor 示例：左侧 Examples 目录，中央 Result 分栏 Markdown 与 Awesome Editor! 预览，右下 Markdown/WYSIWYG 切换"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "NHN Cloud Corp.",
+      "sourceUrl": "https://raw.githubusercontent.com/nhn/tui.editor/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2020 NHN Cloud Corp。apps/editor/package.json author 为 NHN Cloud FE Development Lab <dl_javascript@nhn.com>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "NHN Cloud Corp.",
+      "sourceUrl": "https://ui.toast.com/tui-editor",
+      "evidence": "站点品牌为 TOAST UI。页脚 © NHN Cloud Corp。GitHub 组织 nhn 维护 tui.editor 仓。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/nhn/tui.editor",
+      "sourceUrl": "https://raw.githubusercontent.com/nhn/tui.editor/master/apps/editor/package.json",
+      "evidence": "apps/editor/package.json repository.url 为 https://github.com/nhn/tui.editor.git。产品页 Github 按钮链到同一仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/nhn/tui.editor/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2020 NHN Cloud Corp。apps/editor/package.json license 为 MIT。产品页徽章 license MIT。覆盖 TOAST UI Editor 源码。同站 Chart、Grid、Calendar 为独立产品，不在本条。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://ui.toast.com/tui-editor",
+      "evidence": "产品页给出 API/Examples 与 Github，徽章 license MIT。文档与示例公开可浏览。未见 Editor 本体付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@toast-ui/editor",
+      "sourceUrl": "https://nhn.github.io/tui.editor/latest/",
+      "evidence": "文档徽章 npm v3.2.2。安装命令为 npm install --save @toast-ui/editor。apps/editor/package.json name 为 @toast-ui/editor。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-b-w2a",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-x",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-x"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-b-w2a 进站起草。分类对象是 TOAST UI Editor，不是 Chart/Grid/Calendar。LICENSE 为 MIT。breadth/proof 用 nhn.github.io 文档页，不是 GitHub tree/blob。status 仍 DRAFT。 swarm-reviewer-grok-x 独立打开活页、LICENSE 原文与三张 PNG sha256 后 APPROVED。"
+  }
+}

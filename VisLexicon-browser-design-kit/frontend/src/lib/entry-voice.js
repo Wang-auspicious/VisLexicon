@@ -606,6 +606,20 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm install babylonjs' }],
     },
   },
+  'new-css': {
+    lede: { zh: '无 class 的语义 HTML CSS 框架。MIT。', en: 'Classless CSS for semantic HTML. MIT.' },
+    style: { zh: '深色文档。白无衬线标题。蓝链。等宽代码块。高对比黑底。', en: 'Dark docs. White sans titles. Blue links. Monospace samples. High-contrast black ground.' },
+    acquire: {
+      zh: [
+        { k: '样式表', v: 'cdn.jsdelivr.net/npm/@exampledev/new.css' },
+        { k: '命令行', v: 'npm install @xz/new.css' },
+      ],
+      en: [
+        { k: 'Stylesheet', v: 'cdn.jsdelivr.net/npm/@exampledev/new.css' },
+        { k: 'CLI', v: 'npm install @xz/new.css' },
+      ],
+    },
+  },
   vega: {
     lede: { zh: '可视化语法。BSD-3-Clause。', en: 'Visualization grammar. BSD-3-Clause.' },
     style: { zh: '浅色学术文档。靛蓝顶栏。可视化标本墙。衬线标题。', en: 'Light academic docs. Indigo top bar. Visualization specimen wall. Serif titles.' },
@@ -850,6 +864,38 @@ const VOICE = {
     acquire: {
       zh: [{ k: '命令行', v: 'npx nuxi@latest module add ui' }],
       en: [{ k: 'CLI', v: 'npx nuxi@latest module add ui' }],
+    },
+  },
+  ckeditor: {
+    lede: { zh: 'CKEditor 5 富文本框架。GPL-2.0-or-later 或商业许可。', en: 'CKEditor 5 rich-text framework. GPL-2.0-or-later or commercial.' },
+    style: { zh: '深紫全出血营销。超大无衬线标题。青绿强调词。协作气泡标本。', en: 'Deep-purple full-bleed marketing. Oversized sans title. Lime-green emphasis. Collaboration-bubble specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install ckeditor5' }],
+      en: [{ k: 'CLI', v: 'npm install ckeditor5' }],
+    },
+  },
+  tinymce: {
+    lede: { zh: '富文本编辑器。GPL-2.0-or-later；Premium 另售。', en: 'Rich-text editor. GPL-2.0-or-later; Premium is paid.' },
+    style: { zh: '深色产品营销。等距插画。白蓝双按钮。几何编辑器图形。', en: 'Dark product marketing. Isometric illustration. White and blue dual buttons. Geometric editor graphics.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install tinymce' }],
+      en: [{ k: 'CLI', v: 'npm install tinymce' }],
+    },
+  },
+  'toast-ui-editor': {
+    lede: { zh: 'Markdown 与所见即所得编辑器。MIT。', en: 'Markdown and WYSIWYG editor. MIT.' },
+    style: { zh: '浅色产品页。蓝字标。双紫按钮。分栏 Markdown 标本。', en: 'Light product page. Blue wordmark. Dual purple buttons. Split Markdown specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @toast-ui/editor' }],
+      en: [{ k: 'CLI', v: 'npm install @toast-ui/editor' }],
+    },
+  },
+  vditor: {
+    lede: { zh: '浏览器端 Markdown 编辑器。MIT。', en: 'In-browser Markdown editor. MIT.' },
+    style: { zh: '浅色产品页。蓝字标。底部编辑器标本。中文导航。', en: 'Light product page. Blue wordmark. Editor specimen at the bottom. Chinese navigation.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install vditor' }],
+      en: [{ k: 'CLI', v: 'npm install vditor' }],
     },
   },
 }

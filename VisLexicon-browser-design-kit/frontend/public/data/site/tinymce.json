@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T16:09:00.509Z",
+  "entryId": "tinymce",
+  "entityId": "entity-tinymce",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "tiny.cloud",
+  "official": {
+    "inputUrl": "https://www.tiny.cloud/tinymce/",
+    "finalUrl": "https://www.tiny.cloud/tinymce/",
+    "checkedAt": "2026-09-06T16:00:00.000Z"
+  },
+  "editorial": {
+    "name": "TinyMCE",
+    "descriptionZh": "Tiny Technologies 维护的富文本编辑器 TinyMCE，npm 包 tinymce 现为 v8.9.0。LICENSE.md 为 GPL-2.0-or-later；闭源商用需商业许可。Premium 与 Cloud 另售。",
+    "takeawayZh": "装 tinymce，GPL 或买商业许可",
+    "noteZh": "产品页标题 TinyMCE。文档总览写 TinyMCE 8 Documentation，左侧 Getting started 与 Plugins。Basic setup 给出 tinymce.init 与 selector。LICENSE.md 为 GPL-2.0-or-later。Cloud 与 Premium 插件不在本条许可内。不是 MIT。",
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "产品页把 TinyMCE 定义为 The rich text editor behind great content creation experiences，并区分 Core features 与付费 Productivity/Collaboration。",
+        "evidenceUrl": "https://www.tiny.cloud/tinymce/"
+      },
+      {
+        "statement": "Basic setup 给出 tinymce.init({ selector: 'textarea' }) 以及 plugins、toolbar、menubar 配置与代码标本。",
+        "evidenceUrl": "https://www.tiny.cloud/docs/tinymce/latest/basic-setup/"
+      }
+    ],
+    "confirmedAt": "2026-09-07T01:30:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview",
+      "edit",
+      "purchase"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue",
+      "angular"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "open-source",
+      "paid"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.tiny.cloud/tinymce/",
+      "finalUrl": "https://www.tiny.cloud/tinymce/",
+      "title": "The Most Advanced WYSIWYG HTML Editor | TinyMCE",
+      "selectionRationale": "产品页首屏给出 TinyMCE 标题与 API Key。",
+      "shot": {
+        "src": "/shots/tinymce/v2-identity.png",
+        "sha256": "d74055fa323ebf9e5f1ccb4597052b92ddfd0119d38908aa947c168394f3e9ba",
+        "width": 1280,
+        "height": 900,
+        "bytes": 162032,
+        "alt": "TinyMCE 产品页深色首屏：标题 TinyMCE，副标题 The rich text editor behind great content creation experiences，按钮 Explore Features 与 Get Free API Key"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.tiny.cloud/docs/tinymce/latest/",
+      "finalUrl": "https://www.tiny.cloud/docs/tinymce/latest/",
+      "title": "TinyMCE 8 Documentation | TinyMCE Documentation",
+      "selectionRationale": "文档总览排出 Getting started 与现场编辑器。",
+      "shot": {
+        "src": "/shots/tinymce/v2-breadth.png",
+        "sha256": "307daaf8cd906be7c4916e9911c7d39ccc7f959e2a70f8edb68c184eb9ad43da",
+        "width": 1280,
+        "height": 900,
+        "bytes": 143787,
+        "alt": "TinyMCE 8 Documentation：左侧 Getting started/Plugins/License key，中央 Hello, World! 现场编辑器，左下 Free 14-Day Trial"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.tiny.cloud/docs/tinymce/latest/basic-setup/",
+      "finalUrl": "https://www.tiny.cloud/docs/tinymce/latest/basic-setup/",
+      "title": "Basic setup | TinyMCE Documentation",
+      "selectionRationale": "Basic setup 给出 tinymce.init 代码。",
+      "shot": {
+        "src": "/shots/tinymce/v2-proof.png",
+        "sha256": "97e246cd03b5eab386fd0c2a7ae7ff22ad1c7cf11c8ceeb642a17c82cc85219b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 209211,
+        "alt": "Basic setup 文档：标题 Basic setup，四项配置 Selector/Plugin/Toolbar/Menu，代码块 tinymce.init selector textarea"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Ephox Corporation DBA Tiny Technologies, Inc.",
+      "sourceUrl": "https://raw.githubusercontent.com/tinymce/tinymce/main/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2024, Ephox Corporation DBA Tiny Technologies, Inc。modules/tinymce/package.json author 同为 Ephox Corporation DBA Tiny Technologies, Inc。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Tiny Technologies, Inc.",
+      "sourceUrl": "https://www.tiny.cloud/tinymce/",
+      "evidence": "站点品牌为 Tiny / TinyMCE。LICENSE.md 署 Ephox Corporation DBA Tiny Technologies, Inc。GitHub 组织 tinymce 维护核心仓。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/tinymce/tinymce",
+      "sourceUrl": "https://raw.githubusercontent.com/tinymce/tinymce/main/modules/tinymce/package.json",
+      "evidence": "modules/tinymce/package.json repository.url 为 https://github.com/tinymce/tinymce。npm 包 tinymce 的 repository 同此仓。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "custom",
+      "sourceUrl": "https://raw.githubusercontent.com/tinymce/tinymce/main/LICENSE.md",
+      "evidence": "LICENSE.md 写 Licensed under the terms of GNU General Public License Version 2 or later。modules/tinymce/package.json license 为 GPL-2.0-or-later。字典无 GPL-2.0-or-later，facets 记 custom。覆盖核心编辑器源码。自托管需 license_key: 'gpl' 或商业密钥；Premium 插件与 Tiny Cloud 不在此 GPL 条款内。不是 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Freemium",
+      "sourceUrl": "https://www.tiny.cloud/tinymce/",
+      "evidence": "产品页 Free 套餐 0 美元（云托管开源编辑器、每月 1000 editor loads）；Essential 79 美元/月含商业许可。文档 License key 写 GPL 或 T8LK 商业密钥。PowerPaste、Comments、TinyMCE AI 等 Premium 另售。本条只收核心编辑器。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "tinymce",
+      "sourceUrl": "https://www.tiny.cloud/docs/tinymce/latest/",
+      "evidence": "文档现为 TinyMCE 8。npm 包名为 tinymce，version 8.9.0。Basic setup 示例从 cdn.tiny.cloud 加载 tinymce/8/tinymce.min.js。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。custom：LICENSE.md 写 Licensed under the terms of GNU General Public License Version 2 or later。modules/tinymce/package.json license 为 GPL-2.0-or-later。字典无 GPL-2.0-or-later，facets 记 custom。覆盖核心编辑器源码。自托管需 license_key: 'gpl' 或商业密钥；Premium 插件与 Tiny Cloud 不在此 GPL 条款内。不是 MIT。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/tinymce.md",
+  "registryUrl": "/r/tinymce.json"
+}
