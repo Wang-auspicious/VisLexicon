@@ -10,7 +10,7 @@ import { useT } from '../i18n.js'
 /**
  * 站点详情：`#/site/<entryId>` 的路由页。
  * 桌面浮窗、手机底部抽屉，由 CSS 在 768px 处切换。
- * 阅读顺序：身份 → 简介/切面 → 三图 → 组件目录与获取方式。
+ * 阅读顺序：身份 → 简介与双列元数据 → 三图 → 获取方式。点遮罩关闭。
  */
 
 const ENTRY_ID_RE = /^[A-Za-z0-9][A-Za-z0-9._-]*$/
@@ -21,14 +21,6 @@ function domainOf(url) {
   } catch {
     return ''
   }
-}
-
-function CloseIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-      <path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  )
 }
 
 function Skeleton() {
@@ -52,13 +44,12 @@ export default function SiteDetail({ entryId, onClose }) {
   const [state, setState] = useState({ status: 'loading', data: null })
   const [attempt, setAttempt] = useState(0)
   const dialogRef = useRef(null)
-  const closeRef = useRef(null)
   const [host] = useState(() =>
     typeof document === 'undefined' ? null : document.createElement('div'),
   )
 
   const close = useCallback(() => { onClose?.() }, [onClose])
-  const onKeyDown = useModalFocus({ open: true, dialogRef, initialFocusRef: closeRef, onClose: close })
+  const onKeyDown = useModalFocus({ open: true, dialogRef, initialFocusRef: dialogRef, onClose: close })
 
   /* Esc 与 Tab 陷阱挂在 document 上：点了浮窗里的正文（非可聚焦元素）之后
      activeElement 会退回 body，此时挂在浮窗节点上的 keydown 收不到事件。 */
@@ -223,16 +214,9 @@ export default function SiteDetail({ entryId, onClose }) {
         ref={dialogRef}
         tabIndex={-1}
       >
-        {/* 顶栏是实底的：内容滚动时从它下面走过，不会被关闭键压住 */}
         <span className="sd-orb sd-orb-a" aria-hidden="true" />
         <span className="sd-orb sd-orb-b" aria-hidden="true" />
         <span className="sd-orb sd-orb-c" aria-hidden="true" />
-        <div className="sd-bar">
-          <span className="sd-grab" aria-hidden="true" />
-          <button type="button" className="sd-close" onClick={close} ref={closeRef} aria-label={t('close')}>
-            <CloseIcon />
-          </button>
-        </div>
         {body}
         {status === 'ready' && homepage ? (
           <div className="sd-foot">

@@ -133,45 +133,6 @@
   to { --sd-sheen: 360deg; }
 }
 
-/* 顶栏：实底，抽屉的抓手与关闭键都在这里。
-   它是 flex 项不是浮层，所以滚动内容从它下面切过去，不会被压住。 */
-.sd-bar {
-  position: relative;
-  z-index: 1;
-  flex: none;
-  display: flex;
-  justify-content: flex-end;
-  padding: 6px var(--vl-s2) 0;
-  background: var(--vl-surface);
-  border-radius: var(--vl-r-lg) var(--vl-r-lg) 0 0;
-}
-
-/* 抓手：只在抽屉形态出现 */
-.sd-grab {
-  position: absolute;
-  top: var(--vl-s2);
-  left: 50%;
-  width: 36px;
-  height: 4px;
-  margin-left: -18px;
-  border-radius: var(--vl-r-pill);
-  background: var(--vl-line-strong);
-}
-
-.sd-close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border: 1px solid var(--vl-line);
-  border-radius: var(--vl-r-pill);
-  background: var(--vl-surface);
-  color: var(--vl-ink);
-  transition: background var(--vl-dur-1) var(--vl-ease-out);
-}
-.sd-close:hover { background: var(--vl-surface-sunk); }
-
 /* ---- 滚动区 ---- */
 .sd-scroll {
   position: relative;
@@ -184,7 +145,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--vl-s2);
-  padding: 0 var(--vl-s5) var(--vl-s5);
+  padding: var(--vl-s5) var(--vl-s5) var(--vl-s5);
   scrollbar-width: thin;
   scrollbar-color: var(--vl-scroll-thumb) transparent;
 }
@@ -331,51 +292,71 @@
   max-width: none;
   color: var(--vl-ink);
   font-size: var(--vl-fs-sm);
-  line-height: 1.5;
+  line-height: 1.7;
   overflow-wrap: anywhere;
 }
 .sd-headgrid {
   display: grid;
-  gap: var(--vl-s3);
+  gap: var(--vl-s4);
   width: 100%;
-  padding-top: var(--vl-s3);
+  padding-top: var(--vl-s4);
   border-top: 1px solid var(--vl-line);
 }
-.sd-facet-row {
+.sd-meta-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--vl-s3);
+  min-width: 0;
+}
+.sd-meta-group {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--vl-s2);
-}
-.sd-ktag {
-  display: inline-flex;
   align-items: baseline;
-  gap: 0.3em;
-  padding: 3px 8px;
-  border: 1px solid var(--vl-line);
-  border-radius: var(--vl-r-xs);
-  background: var(--vl-surface-sunk);
+  gap: 8px 10px;
+}
+.sd-meta-k {
+  flex: none;
+  color: var(--vl-ink-3);
   font-size: var(--vl-fs-xs);
   line-height: var(--vl-lh-xs);
 }
-.sd-ktag-k {
-  color: var(--vl-ink-3);
+.sd-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 0;
 }
-.sd-ktag-v,
-.sd-ktag-v a {
-  color: var(--vl-tag-sage);
+.sd-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border: 0;
+  border-radius: 999px;
+  font-size: var(--vl-fs-xs);
+  line-height: 1.4;
+  font-weight: var(--vl-fw-medium);
+  overflow-wrap: anywhere;
 }
-.sd-ktag-license .sd-ktag-v,
-.sd-ktag-deliverables .sd-ktag-v { color: var(--vl-tag-sage); }
-.sd-ktag-access .sd-ktag-v,
-.sd-ktag-platforms .sd-ktag-v { color: var(--vl-tag-teal); }
-.sd-ktag-author .sd-ktag-v,
-.sd-ktag-organization .sd-ktag-v { color: var(--vl-tag-clay); }
-.sd-ktag-repository .sd-ktag-v,
-.sd-ktag-package .sd-ktag-v { color: var(--vl-tag-slate); }
-.sd-ktag-technologies .sd-ktag-v { color: var(--vl-tag-mauve); }
-.sd-ktag-scenarios .sd-ktag-v,
-.sd-ktag-contentOrganization .sd-ktag-v,
-.sd-ktag-media .sd-ktag-v { color: var(--vl-tag-dust); }
+.sd-pill-tech {
+  background: var(--vl-pill-tech-bg);
+  color: var(--vl-pill-tech-ink);
+}
+.sd-pill-comp {
+  background: var(--vl-pill-comp-bg);
+  color: var(--vl-pill-comp-ink);
+}
+.sd-pill-style {
+  background: var(--vl-pill-style-bg);
+  color: var(--vl-pill-style-ink);
+}
+.sd-pill-meta {
+  background: var(--vl-pill-meta-bg);
+  color: var(--vl-pill-meta-ink);
+}
+.sd-more.sd-pill {
+  cursor: pointer;
+  letter-spacing: 0.12em;
+}
 
 /* ---- 页面预览：左主图 + 右上下两张 ---- */
 .sd-ev-block {
@@ -884,12 +865,10 @@ a.sd-fact-value { text-decoration: underline; text-underline-offset: 3px; }
     border-radius: var(--vl-r-lg);
     animation-name: sd-pop;
   }
-  .sd-grab { display: none; }
   .sd-src { min-height: 26px; padding: 2px var(--vl-s2); }
-  .sd-bar { padding: 2px var(--vl-s4) 0; }
   .sd-scroll {
     gap: var(--vl-s2);
-    padding: 0 var(--vl-s6) var(--vl-s6);
+    padding: var(--vl-s5) var(--vl-s6) var(--vl-s6);
   }
   .sd-scroll > .sd-section,
   .sd-scroll > .sd-cover { padding-top: var(--vl-s4); }

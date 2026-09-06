@@ -1,8 +1,10 @@
+import { useEffect, useState } from 'react'
 import { facetLabel, isUnknown } from '../lib/site-detail-labels.js'
 import { useLocale, useT } from '../i18n.js'
-import { voiceText } from '../lib/entry-voice.js'
+import { entryVoice, voiceText } from '../lib/entry-voice.js'
+import { coverageSourceOf, fetchLiveCoverage } from '../lib/live-coverage.js'
 
-const SKIP_AXES = new Set(['languages', 'licenses', 'access', 'workflowStages', 'audiences', 'actions'])
+const PREVIEW = 16
 
 function factOf(facts, field) {
   return (facts ?? []).find((fact) => fact.field === field) || null
@@ -13,27 +15,34 @@ function displayValue(value) {
   return value
 }
 
-function hostPath(url) {
-  try {
-    const parsed = new URL(url)
-    return `${parsed.hostname.replace(/^www\./, '')}${parsed.pathname}`.replace(/\/$/, '')
-  } catch {
-    return url
-  }
+function unique(values) {
+  return [...new Set(values.filter(Boolean))]
 }
 
-function Tag({ axis, label, value, href }) {
-  if (!value) return null
-  const inner = href ? (
-    <a href={href} target="_blank" rel="noopener noreferrer">
-      {value} <span aria-hidden="true">↗</span>
-    </a>
-  ) : value
+function stylePillsOf(entryId, locale) {
+  const listed = entryVoice(entryId)?.stylePills?.[locale]
+  if (Array.isArray(listed) && listed.length > 0) return listed
+  const text = voiceText(entryId, 'style', locale)
+  if (!text) return []
+  return text.split(/[。.]/).map((part) => part.trim()).filter(Boolean)
+}
+
+function Pill({ tone, children }) {
+  return <span className={`sd-pill sd-pill-${tone}`}>{children}</span>
+}
+
+function MetaGroup({ label, tone, items, extra }) {
+  if (!items.length && !extra) return null
   return (
-    <span className={`sd-ktag sd-ktag-${axis}`}>
-      <span className="sd-ktag-k">{label}</span>
-      <span className="sd-ktag-v">{inner}</span>
-    </span>
+    <div className="sd-meta-group">
+      <span className="sd-meta-k">{label}</span>
+      <div className="sd-pills">
+        {items.map((item) => (
+          <Pill key={item} tone={tone}>{item}</Pill>
+        ))}
+        {extra}
+      </div>
+    </div>
   )
 }
 
@@ -42,72 +51,88 @@ export default function DossierHead({ data }) {
   const locale = useLocale()
   const facets = data.facets || {}
   const facts = data.facts ?? []
-  const lede = voiceText(data.entryId, 'lede', locale)
+  const voice = entryVoice(data.entryId)
+  const summary = voiceText(data.entryId, 'summary', locale)
     || (locale === 'zh' ? data.editorial?.descriptionZh : null)
+    || voiceText(data.entryId, 'lede', locale)
 
-  const license = displayValue(factOf(facts, 'license')?.value) || displayValue((facets.licenses ?? [])[0])
-  const access = (facets.access ?? []).map((value) => facetLabel('access', value, locale)).filter(Boolean)
-  const author = factOf(facts, 'author')
-  const org = factOf(facts, 'organization')
-  const repo = factOf(facts, 'repository')
-  const pkg = factOf(facts, 'package')
+  const [liveNames, setLiveNames] = useState(null)
+  const [open, setOpen] = useState(false)
+  const canLive = Boolean(coverageSourceOf(data.entryId))
 
-  const left = [
-    license ? { axis: 'license', label: t('license'), value: license } : null,
-    ...access.map((value) => ({ axis: 'access', label: t('access'), value })),
-    author && displayValue(author.value) ? {
-      axis: 'author',
-      label: t('author'),
-      value: displayValue(author.value),
-    } : null,
-    org && displayValue(org.value) ? {
-      axis: 'organization',
-      label: t('organization'),
-      value: displayValue(org.value),
-    } : null,
-    repo && displayValue(repo.value) ? {
-      axis: 'repository',
-      label: t('repository'),
-      value: hostPath(repo.value),
-      href: /^https?:\/\//i.test(repo.value) ? repo.value : null,
-    } : null,
-    pkg && displayValue(pkg.value) ? {
-      axis: 'package',
-      label: t('package'),
-      value: displayValue(pkg.value),
-    } : null,
-  ].filter(Boolean)
+  useEffect(() => {
+    if (!canLive) return undefined
+    const controller = new AbortController()
+    fetchLiveCoverage(data.entryId, { signal: controller.signal })
+      .then((result) => { if (result?.names) setLiveNames(result.names) })
+      .catch(() => {})
+    return () => controller.abort()
+  }, [data.entryId, canLive])
 
-  const rightAxes = ['deliverables', 'technologies', 'platforms', 'scenarios', 'contentOrganization', 'media']
-    .filter((axis) => {
-      const values = facets[axis]
-      if (!Array.isArray(values) || values.length === 0) return false
-      if (SKIP_AXES.has(axis)) return false
-      if (axis === 'media' && values.length === 1 && values[0] === 'ui') return false
-      return true
-    })
+  const techOverride = voice?.tech?.[locale]
+  const tech = unique(
+    Array.isArray(techOverride) && techOverride.length > 0
+      ? techOverride
+      : [
+          ...(facets.technologies ?? []).map((value) => facetLabel('technologies', value, locale)),
+          (facets.platforms ?? []).includes('figma') ? 'Figma' : null,
+        ],
+  )
 
-  const right = rightAxes.flatMap((axis) => (
-    facets[axis].map((value) => ({
-      axis,
-      label: t(axis),
-      value: facetLabel(axis, value, locale),
-    }))
-  ))
+  const license = displayValue(factOf(facts, 'license')?.value)
+    || displayValue((facets.licenses ?? [])[0])
+  const access = facets.access ?? []
+  const media = facets.media ?? []
+  const accessPills = access.includes('free') && access.includes('open-source')
+    ? [locale === 'zh' ? '开源免费' : 'Free, open source']
+    : access.map((value) => facetLabel('access', value, locale)).filter(Boolean)
+  const mediaPills = media.map((value) => {
+    if (value === 'ui') return locale === 'zh' ? '网页界面' : 'Web UI'
+    if (value === 'motion') return locale === 'zh' ? '动效代码' : 'Motion code'
+    return facetLabel('media', value, locale)
+  }).filter(Boolean)
+  const licenseMedia = unique([
+    license,
+    ...accessPills,
+    ...mediaPills,
+  ])
+
+  const catalogOverride = voice?.components?.[locale]
+  const catalog = Array.isArray(catalogOverride) && catalogOverride.length > 0
+    ? catalogOverride
+    : (liveNames || [])
+  const shownCatalog = open ? catalog : catalog.slice(0, PREVIEW)
+  const overflow = catalog.length > PREVIEW
+  const catalogExtra = overflow ? (
+    <button
+      type="button"
+      className="sd-more sd-pill sd-pill-comp"
+      aria-expanded={open}
+      onClick={() => setOpen((value) => !value)}
+    >
+      {open ? t('collapse') : '···'}
+    </button>
+  ) : null
+
+  const styles = stylePillsOf(data.entryId, locale)
+  const colon = locale === 'zh' ? '：' : ':'
 
   return (
     <section className="sd-dossier">
-      {lede ? <p className="sd-lede">{lede}</p> : null}
+      {summary ? <p className="sd-lede">{summary}</p> : null}
       <div className="sd-headgrid">
-        <div className="sd-facet-row">
-          {left.map((item) => (
-            <Tag key={`${item.axis}-${item.value}`} {...item} />
-          ))}
+        <div className="sd-meta-col">
+          <MetaGroup label={`${t('technologies')}${colon}`} tone="tech" items={tech} />
+          <MetaGroup label={`${t('licenseMedia')}${colon}`} tone="meta" items={licenseMedia} />
         </div>
-        <div className="sd-facet-row">
-          {right.map((item) => (
-            <Tag key={`${item.axis}-${item.value}`} {...item} />
-          ))}
+        <div className="sd-meta-col">
+          <MetaGroup
+            label={`${t('catalog')}${colon}`}
+            tone="comp"
+            items={shownCatalog}
+            extra={catalogExtra}
+          />
+          <MetaGroup label={`${t('style')}${colon}`} tone="style" items={styles} />
         </div>
       </div>
     </section>

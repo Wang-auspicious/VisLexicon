@@ -51,8 +51,24 @@ const VOICE = {
     },
   },
   'uiverse': {
-    lede: { zh: '社区 UI 元素库。复制 HTML / CSS。', en: 'Community UI elements. Copy HTML / CSS.' },
-    style: { zh: '浅色画廊网格。卡片瀑布。社区标本。', en: 'Light gallery grid. Card masonry. Community specimens.' },
+    lede: { zh: '开源社区 UI 微交互库。复制 HTML、CSS 或 React。', en: 'Open community UI micro-interactions. Copy HTML, CSS, or React.' },
+    summary: {
+      zh: 'Uiverse 是一个开源社区驱动的前端 UI 微交互与视觉设计元素库，专注于汇集基于纯原生 CSS、Tailwind CSS 与 React 生态的高表现力组件。平台聚合全球开发者提交的免依赖交互片段，覆盖从基础原子级表单控件到复杂动态卡片的全栈资产。其核心价值在于为现代 Web 工程提供兼具前沿美学实验性与即插即用特性的无框架绑定代码实现。',
+      en: 'Uiverse is an open-source, community-driven library of UI micro-interactions and visual elements, collecting high-expression components in native CSS, Tailwind CSS, and React. It aggregates dependency-free interaction snippets from developers worldwide, from atomic form controls to complex animated cards. Its value is framework-agnostic, copy-ready code that also serves as a testing ground for contemporary visual styles.',
+    },
+    tech: {
+      zh: ['React', 'Tailwind CSS', '原生 CSS', 'Figma'],
+      en: ['React', 'Tailwind CSS', 'Pure CSS', 'Figma'],
+    },
+    components: {
+      zh: ['按钮', '复选框', '切换开关', '卡片', '加载动效', '输入框', '单选框', '表单', '纯代码背景纹理'],
+      en: ['Buttons', 'Checkboxes', 'Toggle switches', 'Cards', 'Loaders', 'Inputs', 'Radio buttons', 'Forms', 'Patterns'],
+    },
+    style: { zh: '玻璃拟态。新拟态。新粗野主义。赛博霓虹。纯代码几何纹理。力学微交互。', en: 'Glassmorphism. Neumorphism. Neo-brutalism. Cyberpunk dark glow. Pure CSS shaders. Dynamic micro-interactions.' },
+    stylePills: {
+      zh: ['玻璃拟态', '新拟态', '新粗野主义', '赛博霓虹', '纯代码几何纹理', '力学微交互'],
+      en: ['Glassmorphism', 'Neumorphism', 'Neo-brutalism', 'Cyberpunk dark glow', 'Pure CSS shaders', 'Dynamic micro-interactions'],
+    },
   },
   'magic-ui': {
     lede: { zh: 'React 动效组件。经 shadcn CLI 安装。', en: 'React motion components. Installed via the shadcn CLI.' },
