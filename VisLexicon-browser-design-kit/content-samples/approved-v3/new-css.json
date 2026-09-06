@@ -1,11 +1,9 @@
 {
-  "$schema": "https://vislexicon.com/schema/registry-item.json",
   "schemaVersion": 3,
-  "generatedAt": "2026-09-06T16:09:52.979Z",
   "entryId": "new-css",
   "entityId": "entity-new-css",
+  "attemptId": "swarm-curator-batch-d-w4-new-css-20260906",
   "status": "APPROVED",
-  "voiceStatus": "written",
   "official": {
     "inputUrl": "https://newcss.net/",
     "finalUrl": "https://newcss.net/",
@@ -16,11 +14,11 @@
     "descriptionZh": "Brendan Hersh 维护的 classless CSS 框架 new.css，体积约 4.5kb。仓库 LICENSE 标 MIT，给语义 HTML 套默认样式。",
     "takeawayZh": "链上 new.css，语义标签即有样式",
     "noteZh": "首页标题 Write modern websites using only HTML，正文写 classless CSS framework、约 4.5kb，源码 xz/new.css。Usage 页给出 HTML 样板与 jsDelivr 样式表。Elements 页示范语义 header 与把 button 包进 a 做成链接按钮。MIT 覆盖框架源码。",
-    "pricing": "Free",
-    "pricingNote": null
+    "pricing": "Free"
   },
   "classification": {
     "recordLevel": "entry",
+    "entityId": "entity-new-css",
     "primaryCategory": "ui-implementation",
     "subcategory": "general-ui-components",
     "status": "confirmed",
@@ -35,51 +33,27 @@
         "evidenceUrl": "https://newcss.net/usage/elements/"
       }
     ],
-    "confirmedAt": "2026-09-06T16:10:00.000Z",
-    "independentlyReviewed": true
+    "curatorId": "swarm-curator-batch-d-w4",
+    "reviewerId": "swarm-reviewer-grok-w",
+    "confirmedAt": "2026-09-06T16:10:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
   },
   "facets": {
     "scenarios": [],
-    "deliverables": [
-      "component",
-      "code-library"
-    ],
-    "actions": [
-      "browse",
-      "install",
-      "copy",
-      "learn"
-    ],
-    "media": [
-      "ui"
-    ],
-    "platforms": [
-      "web"
-    ],
-    "technologies": [
-      "css"
-    ],
-    "workflowStages": [
-      "design",
-      "build"
-    ],
-    "audiences": [
-      "developer",
-      "designer"
-    ],
-    "access": [
-      "free",
-      "open-source"
-    ],
-    "licenses": [
-      "MIT"
-    ],
-    "contentOrganization": [
-      "standards-documentation"
-    ],
-    "languages": [
-      "en"
-    ]
+    "deliverables": ["component", "code-library"],
+    "actions": ["browse", "install", "copy", "learn"],
+    "media": ["ui"],
+    "platforms": ["web"],
+    "technologies": ["css"],
+    "workflowStages": ["design", "build"],
+    "audiences": ["developer", "designer"],
+    "access": ["free", "open-source"],
+    "licenses": ["MIT"],
+    "contentOrganization": ["standards-documentation"],
+    "languages": ["en"]
   },
   "pages": [
     {
@@ -89,7 +63,7 @@
       "title": "new.css",
       "selectionRationale": "首页标题与 4.5kb、xz/new.css 在首屏。",
       "shot": {
-        "src": "https://vislexicon.com/shots/new-css/v2-identity.png",
+        "src": "/shots/new-css/v2-identity.png",
         "sha256": "82217ea675df166d43f5ceccdd65bc88935aa39e4728dd51511b6a78f2560a18",
         "width": 1280,
         "height": 900,
@@ -104,7 +78,7 @@
       "title": "Usage — new.css",
       "selectionRationale": "Usage 页给出 HTML 样板与样式表链接。",
       "shot": {
-        "src": "https://vislexicon.com/shots/new-css/v2-breadth.png",
+        "src": "/shots/new-css/v2-breadth.png",
         "sha256": "94ac3d0a81f79ddc536a7b99ebccf523261bc6ba56959967c91c56c699f3c149",
         "width": 1280,
         "height": 900,
@@ -119,7 +93,7 @@
       "title": "Elements — new.css",
       "selectionRationale": "Elements 页示范语义标签与链接按钮。",
       "shot": {
-        "src": "https://vislexicon.com/shots/new-css/v2-proof.png",
+        "src": "/shots/new-css/v2-proof.png",
         "sha256": "572cd0ef3505598bebf4edf41ccadcdda492c3e5a051bd20ed5f2cad41c877a6",
         "width": 1280,
         "height": 900,
@@ -172,23 +146,16 @@
       "confidence": 1
     }
   ],
-  "curation": {
-    "atlasTerms": [],
-    "atlasTermsStatus": "editor-draft"
+  "qa": {
+    "curatorId": "swarm-curator-batch-d-w4",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-w"
   },
-  "agentGuidance": {
-    "safeToRedistributeCode": true,
-    "requiresAttribution": true,
-    "licenseMachineReadable": true,
-    "cautions": [],
-    "recheckAfter": "2027-03-05",
-    "recheckPolicy": "checkedAt + P180D",
-    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
-  },
-  "meta": {
-    "vislexiconUrl": "https://vislexicon.com/#/site/new-css",
-    "designMdUrl": "https://vislexicon.com/site/new-css.md",
-    "checkedAt": "2026-09-06T16:05:00.000Z",
-    "license": "MIT"
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-d-w4 截图。swarm-reviewer-grok-w 独立核 LICENSE 原文、三图哈希互异与字数后 APPROVED。"
   }
 }
