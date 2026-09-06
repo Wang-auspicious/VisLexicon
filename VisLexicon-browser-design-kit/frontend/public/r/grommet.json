@@ -1,0 +1,199 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T15:38:46.310Z",
+  "entryId": "grommet",
+  "entityId": "entity-grommet",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://v2.grommet.io/",
+    "finalUrl": "https://v2.grommet.io/",
+    "checkedAt": "2026-09-06T14:47:11.000Z"
+  },
+  "editorial": {
+    "name": "Grommet",
+    "descriptionZh": "Hewlett Packard Enterprise 发起的 React 组件库 Grommet，现为 v2.56.1。仓库 LICENSE 标 Apache-2.0，提供无障碍、主题与响应式布局套件。",
+    "takeawayZh": "npm 装 grommet，先抄三类按钮",
+    "noteZh": "v2.grommet.io 首页写 part design system, part framework。Components 按 Layout、Type、Controls 列出 Box 与 Button，卡片现场 i'm a button。Button 页写 default、primary、secondary。Apache-2.0 覆盖仓库源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页标题 Grommet，首屏写 streamline the way you develop apps，并称 part design system, part framework；正文把 grommet 定义为 react-based framework，提供 accessibility, modularity, responsiveness, and theming。",
+        "evidenceUrl": "https://v2.grommet.io/"
+      },
+      {
+        "statement": "Components 页按 Layout、Type、Controls、Input、Data、Visualizations、Media、Utilities 列出 Box、Button 等组件，Button 卡片现场 i'm a button，证明交付物是可预览的整套界面组件。",
+        "evidenceUrl": "https://v2.grommet.io/components"
+      }
+    ],
+    "confirmedAt": "2026-09-06T15:33:48.414Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://v2.grommet.io/",
+      "finalUrl": "https://v2.grommet.io/",
+      "title": "Grommet",
+      "selectionRationale": "首页标题 Grommet，首屏 streamline the way you develop apps，并写 part design system, part framework。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/grommet/v2-identity.png",
+        "sha256": "c9b8393e34f831b6edf801de6ac09c47d2ec5389512e6d872bddaac40b352a6e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 56629,
+        "alt": "Grommet 首页：顶栏 grommet、docs、components，标题 streamline the way you develop apps，副标题 component library，下方 part design system, part framework 与 Menu、Edit、Connect、Delete 按钮"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://v2.grommet.io/components",
+      "finalUrl": "https://v2.grommet.io/components",
+      "title": "Components - Grommet",
+      "selectionRationale": "Components 页按 Layout、Type、Controls、Input 列出组件，Button 卡片现场 i'm a button。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/grommet/v2-breadth.png",
+        "sha256": "a1d28a861f932ff43c7b11e5905d7a69bae973458258bf12c8a5be8f2ae250c6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 42213,
+        "alt": "Grommet Components 页：标题 Components，副标题 building blocks of the grommet library，Layout 列出 Box、Card、Footer、Grid，Type 列出 Heading Chapter 1 与 Tag I'm a Tag"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://v2.grommet.io/button",
+      "finalUrl": "https://v2.grommet.io/button",
+      "title": "Button - Grommet",
+      "selectionRationale": "Button 文档给出 default、primary、secondary 三种按钮，并链到 Storybook 与 CodeSandbox。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/grommet/v2-proof.png",
+        "sha256": "7c1768412aba38de69bd8336e4e1c127c66374c65cb9998da657637275657e73",
+        "width": 1280,
+        "height": 900,
+        "bytes": 68479,
+        "alt": "Grommet Button 文档：标题 Button，链到 Storybook、CodeSandbox、Github，正文写 default、primary、secondary 三种按钮"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Hewlett Packard Enterprise Development LP",
+      "sourceUrl": "https://raw.githubusercontent.com/grommet/grommet/master/COPYRIGHT.md",
+      "evidence": "COPYRIGHT.md 写 SPDX-FileCopyrightText: © Hewlett Packard Enterprise Development LP。package.json authors 列为 Alan Souza、Bryan Jacquot、Chris Carlozzi、Eric Soderberg、Shimrit Yacobi。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Hewlett Packard Enterprise",
+      "sourceUrl": "https://raw.githubusercontent.com/grommet/grommet/master/COPYRIGHT.md",
+      "evidence": "COPYRIGHT.md 版权主体为 Hewlett Packard Enterprise Development LP。GitHub 组织 grommet 维护仓库。首页写 maintained by the core team with the help of our contributors。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/grommet/grommet",
+      "sourceUrl": "https://raw.githubusercontent.com/grommet/grommet/master/package.json",
+      "evidence": "package.json repository.url 为 https://github.com/grommet/grommet.git，homepage 为 http://grommet.io。首页 Share feedback on GitHub 链到 github.com/grommet/grommet。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://raw.githubusercontent.com/grommet/grommet/master/LICENSE",
+      "evidence": "LICENSE 标题 Apache License Version 2.0, January 2004。package.json license 字段为 Apache-2.0。COPYRIGHT.md 写 SPDX-License-Identifier: Apache-2.0。该许可覆盖 grommet 仓库源码，不覆盖 Designer、Icons 另站。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://v2.grommet.io/components",
+      "evidence": "Components 与 Button 文档公开可读。README 写 npm install grommet styled-components --save。未见组件库付费墙。Designer 与 Icons 是另站工具。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "grommet",
+      "sourceUrl": "https://raw.githubusercontent.com/grommet/grommet/master/package.json",
+      "evidence": "package.json name 为 grommet，version 2.56.1。README 写 npm install grommet styled-components --save。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/grommet",
+    "designMdUrl": "https://vislexicon.com/site/grommet.md",
+    "checkedAt": "2026-09-06T14:47:11.000Z",
+    "license": "Apache-2.0"
+  }
+}

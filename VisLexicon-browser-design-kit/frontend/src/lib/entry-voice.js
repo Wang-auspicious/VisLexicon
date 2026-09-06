@@ -804,6 +804,30 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'ng add @nebular/theme' }],
     },
   },
+  grommet: {
+    lede: { zh: 'React 组件库。Apache-2.0。', en: 'React component library. Apache-2.0.' },
+    style: { zh: '深色全出血。紫环徽标。薄荷绿字标。超大无衬线。几何窗口插画。胶囊导航。', en: 'Dark full-bleed. Purple ring mark. Mint wordmark. Oversized sans. Geometric window illustration. Capsule nav.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install grommet' }],
+      en: [{ k: 'CLI', v: 'npm install grommet' }],
+    },
+  },
+  preline: {
+    lede: { zh: 'Tailwind 组件文档。开源仓 MIT 加 Fair Use；Pro 另售。', en: 'Tailwind component docs. OSS is MIT plus Fair Use; Pro is paid.' },
+    style: { zh: '浅色产品营销。蓝字标。右侧悬浮界面标本。点阵底。双按钮与 npm 命令。', en: 'Light product marketing. Blue wordmark. Floating UI specimens. Dotted ground. Dual buttons and an npm command.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i preline' }],
+      en: [{ k: 'CLI', v: 'npm i preline' }],
+    },
+  },
+  hyperui: {
+    lede: { zh: '免费 Tailwind 组件示例。MIT。复制 HTML，无需安装。', en: 'Free Tailwind component examples. MIT. Copy HTML; no install.' },
+    style: { zh: '浅色文档营销。超大无衬线字标。大量留白。黑底 GitHub 胶囊。搜索条。', en: 'Light documentation marketing. Oversized sans wordmark. Heavy whitespace. Black GitHub pill. Search field.' },
+    acquire: {
+      zh: [{ k: '复制', v: 'HTML' }],
+      en: [{ k: 'Copy', v: 'HTML' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {
