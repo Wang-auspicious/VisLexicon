@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "entryId": "bulma",
+  "entityId": "entity-bulma",
+  "attemptId": "swarm-curator-batch-p-bulma-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://bulma.io/",
+    "finalUrl": "https://bulma.io/",
+    "checkedAt": "2026-09-06T01:49:50.498Z"
+  },
+  "editorial": {
+    "name": "Bulma",
+    "descriptionZh": "Jeremy Thomas 维护的 Flexbox CSS 框架 Bulma，官网提供 1.0.4 下载。仓库 LICENSE 标 MIT，可免费用于个人与商业项目。CSS Masterclass 课程另售。",
+    "takeawayZh": "给按钮加上 button 类即可套色",
+    "noteZh": "首页标题 The Modern CSS Framework，写 free, open source。文档总览 Official Bulma Documentation，左侧 Start Here。Button 页给出 class=\"button\" 与现场 Button。顶栏有 CSS Masterclass 广告。MIT 覆盖框架源码，不覆盖该课程。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-bulma",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Bulma 定义为 free, open source framework that provides ready-to-use frontend components，交付物是可组合的 CSS 组件。",
+        "evidenceUrl": "https://bulma.io/"
+      },
+      {
+        "statement": "Button 文档给出 <button class=\"button\"> 与现场 Button 预览，并列出颜色、尺寸与状态修饰类。",
+        "evidenceUrl": "https://bulma.io/documentation/elements/button/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-p",
+    "reviewerId": "swarm-reviewer-grok-s",
+    "confirmedAt": "2026-09-06T02:46:58.575Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "download"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://bulma.io/",
+      "finalUrl": "https://bulma.io/",
+      "title": "Bulma: Free, open source, and modern CSS framework based on Flexbox",
+      "selectionRationale": "首页标题与 Get Started、Download 在首屏。",
+      "shot": {
+        "src": "/shots/bulma/v2-identity.png",
+        "sha256": "c2dfb6a00276d31621ca2098e6c01723c5e2817327e5d0de81285e24e57b2400",
+        "width": 1280,
+        "height": 900,
+        "bytes": 242954,
+        "alt": "Bulma 首页：标题 The Modern CSS Framework，写 free, open source，按钮 Get Started 与 Download，顶栏 CSS Masterclass 广告"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://bulma.io/documentation",
+      "finalUrl": "https://bulma.io/documentation",
+      "title": "Official Bulma Documentation | Bulma: Free, open source, and modern CSS framework based on Flexbox",
+      "selectionRationale": "文档总览左侧 Start Here 与 Features 排出范围。",
+      "shot": {
+        "src": "/shots/bulma/v2-breadth.png",
+        "sha256": "52c322bf95ac4914afcae58bb390a9423338cca9922782b305f623cdbba2d4b0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 184150,
+        "alt": "Official Bulma Documentation：左侧 Start Here/Features/Sass Tools，正文 Overview、Installation、Alternative Versions 卡片"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://bulma.io/documentation/elements/button/",
+      "finalUrl": "https://bulma.io/documentation/elements/button/",
+      "title": "Button | Bulma: Free, open source, and modern CSS framework based on Flexbox",
+      "selectionRationale": "Button 页 class=button 与现场按钮就是可复制证明。",
+      "shot": {
+        "src": "/shots/bulma/v2-proof.png",
+        "sha256": "60de544b383ec0c12de19106481296be64c6067cee55e851b5717eb8944443fe",
+        "width": 1280,
+        "height": 900,
+        "bytes": 182710,
+        "alt": "Bulma Button 文档：标题 Button，现场 Button，下方 <button class=\"button\">Button</button>"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Jeremy Thomas",
+      "sourceUrl": "https://raw.githubusercontent.com/jgthms/bulma/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2023 Jeremy Thomas。package.json author.name 同为 Jeremy Thomas。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://raw.githubusercontent.com/jgthms/bulma/master/LICENSE",
+      "evidence": "LICENSE 与 package.json 只署 Jeremy Thomas，未见公司。站点品牌为 Bulma。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/jgthms/bulma",
+      "sourceUrl": "https://bulma.io/",
+      "evidence": "首页 Free 区块链到 github.com/jgthms/bulma。package.json repository.url 为 git+https://github.com/jgthms/bulma.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/jgthms/bulma/master/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2023 Jeremy Thomas。package.json license 为 MIT。覆盖 Bulma CSS 框架源码。CSS Masterclass 付费课程不在此许可内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://bulma.io/",
+      "evidence": "首页写 free, open source framework，Download 链到 GitHub Releases。文档公开可浏览。CSS Masterclass 是另售课程，不是框架本体付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "bulma",
+      "sourceUrl": "https://bulma.io/",
+      "evidence": "首页 Download 链到 github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip。npm 包名为 bulma。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-p",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-s",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-s"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-p 进站起草。三页顶栏均有 CSS Masterclass 广告条，未挡住标题与 Button 示例。分类对象是 bulma.io 开源框架，不是 CSS Masterclass。status 仍 DRAFT。 swarm-reviewer-grok-s 独立复核活页、LICENSE 原文与 sha256 后 APPROVED。"
+  }
+}

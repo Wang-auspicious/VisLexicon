@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T02:48:10.072Z",
+  "entryId": "dnd-kit",
+  "entityId": "entity-dnd-kit",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "dndkit.com",
+  "official": {
+    "inputUrl": "https://dndkit.com/",
+    "finalUrl": "https://dndkit.com/",
+    "checkedAt": "2026-09-06T01:49:50.498Z"
+  },
+  "editorial": {
+    "name": "dnd kit",
+    "descriptionZh": "Claudéric Demers 维护的拖放工具包 dnd kit，文档以 @dnd-kit/dom 为 DOM 层。仓库 LICENSE 标 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "装 @dnd-kit/dom，用 Draggable 拖",
+    "noteZh": "Overview 写 modular toolkit for building drag & drop interfaces。Quickstart 写 npm install @dnd-kit/dom。Draggable 页给出 Draggable 与 DragDropManager 代码及蓝色预览。MIT 覆盖 dnd kit 源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Overview 把 dnd kit 定义为 modular toolkit for building drag and drop interfaces，并强调 framework-agnostic 的 Draggable、Droppable、Sortable 原语。",
+        "evidenceUrl": "https://dndkit.com/"
+      },
+      {
+        "statement": "Draggable 文档给出 new Draggable({ id, element }, manager) 与现场 draggable 预览，UI 皮肤由调用方提供。",
+        "evidenceUrl": "https://dndkit.com/concepts/draggable"
+      }
+    ],
+    "confirmedAt": "2026-09-06T02:46:58.575Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue",
+      "svelte"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://dndkit.com/",
+      "finalUrl": "https://dndkit.com/",
+      "title": "dnd kit – The modern toolkit for building drag and drop interfaces",
+      "selectionRationale": "Overview 标题与 Key features 在首屏，左侧列出框架与概念。",
+      "shot": {
+        "src": "/shots/dnd-kit/v2-identity.png",
+        "sha256": "44107a987d48d8a0551365a2d92087f683d279dfa7319c24e7868608c9d839cf",
+        "width": 1280,
+        "height": 900,
+        "bytes": 252840,
+        "alt": "dnd kit Overview：A modular toolkit for building drag & drop interfaces，Key features 列出 Framework agnostic 与 Batteries included"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://dndkit.com/quickstart",
+      "finalUrl": "https://dndkit.com/quickstart",
+      "title": "Quickstart Guide - dnd kit",
+      "selectionRationale": "Quickstart 写安装命令，左侧 Concepts 排出 API 面。",
+      "shot": {
+        "src": "/shots/dnd-kit/v2-breadth.png",
+        "sha256": "3c0bf6cb2a1f0a13b9ae4240dd768b042bfcbab3de9cfdbf8ed7dd688c20bf03",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116338,
+        "alt": "dnd kit Quickstart：npm install @dnd-kit/dom，左侧 Concepts 含 DragDropManager、Draggable、Droppable、Sortable"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://dndkit.com/concepts/draggable",
+      "finalUrl": "https://dndkit.com/concepts/draggable",
+      "title": "Draggable Elements - Core Concepts | dnd kit",
+      "selectionRationale": "Draggable 页代码与蓝色 draggable 预览就是可复制证明。",
+      "shot": {
+        "src": "/shots/dnd-kit/v2-proof.png",
+        "sha256": "3b12ef6a0d8fb53d0f46ee04072c4ab9cf8dee2ec5e1349ea0be14c80ae18d6f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 178386,
+        "alt": "dnd kit Draggable：蓝色 draggable 预览，下方 import {Draggable, DragDropManager} from '@dnd-kit/dom'"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Claudéric Demers",
+      "sourceUrl": "https://raw.githubusercontent.com/clauderic/dnd-kit/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2021, Claudéric Demers。根 package.json author 同为 Claudéric Demers。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://raw.githubusercontent.com/clauderic/dnd-kit/master/LICENSE",
+      "evidence": "LICENSE 与 package.json 只署 Claudéric Demers，未见公司。站点品牌为 dnd kit。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/clauderic/dnd-kit",
+      "sourceUrl": "https://dndkit.com/",
+      "evidence": "文档顶栏 GitHub 图标链到 clauderic/dnd-kit。@dnd-kit/dom package.json repository.url 为 https://github.com/clauderic/dnd-kit。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/clauderic/dnd-kit/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2021, Claudéric Demers。@dnd-kit/dom package.json license 为 MIT。覆盖 dnd kit 源码与文档所述 DOM/框架适配层。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://dndkit.com/quickstart",
+      "evidence": "Quickstart 写 npm install @dnd-kit/dom。文档公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@dnd-kit/dom",
+      "sourceUrl": "https://dndkit.com/quickstart",
+      "evidence": "Quickstart 写 npm install @dnd-kit/dom。@dnd-kit/dom package.json version 为 0.5.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/dnd-kit.md",
+  "registryUrl": "/r/dnd-kit.json"
+}

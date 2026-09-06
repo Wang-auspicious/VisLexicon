@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T02:48:10.072Z",
+  "entryId": "tiptap",
+  "entityId": "entity-tiptap",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "tiptap.dev",
+  "official": {
+    "inputUrl": "https://tiptap.dev/",
+    "finalUrl": "https://tiptap.dev/",
+    "checkedAt": "2026-09-06T01:49:50.498Z"
+  },
+  "editorial": {
+    "name": "Tiptap",
+    "descriptionZh": "Tiptap GmbH 维护的无样式富文本编辑器框架 Tiptap，文档现为 v3.31.3。核心仓 LICENSE.md 标 MIT；Collaboration、Comments 等 Cloud 功能另按套餐收费。",
+    "takeawayZh": "装 @tiptap/core，扩展按需拼编辑器",
+    "noteZh": "首页首屏 Build AI-native editors faster，下方已有编辑器工具栏。文档写 headless、ProseMirror，徽章 v3.31.3 与 MIT。Heading 页给出 h1–h6 与 React 预览。MIT 覆盖开源编辑器；Cloud 与 Pro 另售。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "编辑器文档把 Tiptap 定义为 headless rich-text editor framework，基于 ProseMirror，UI 由调用方渲染。",
+        "evidenceUrl": "https://tiptap.dev/docs/editor/getting-started/overview"
+      },
+      {
+        "statement": "Heading extension 页给出 npm install @tiptap/extension-heading、setHeading 命令与 React 预览，证明开源扩展可安装、可调用。",
+        "evidenceUrl": "https://tiptap.dev/docs/editor/extensions/nodes/heading"
+      }
+    ],
+    "confirmedAt": "2026-09-06T02:46:58.575Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "edit"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://tiptap.dev/",
+      "finalUrl": "https://tiptap.dev/",
+      "title": "Tiptap - Dev Toolkit Editor Suite",
+      "selectionRationale": "首页首屏写 AI-native editors，下方已有编辑器工具栏。",
+      "shot": {
+        "src": "/shots/tiptap/v2-identity.png",
+        "sha256": "a7e5401bb362bd668a07c72991a898c6bee36418eb0ba571f48cc71aa18f09e9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 347867,
+        "alt": "Tiptap 首页：标题 Build AI-native editors faster with production-ready tools，按钮 Read the docs 与 View pricing，底部编辑器工具栏"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://tiptap.dev/docs/editor/getting-started/overview",
+      "finalUrl": "https://tiptap.dev/docs/editor/getting-started/overview",
+      "title": "Integrate the Tiptap Editor",
+      "selectionRationale": "总览写 headless 与 MIT，左侧排出扩展范围。",
+      "shot": {
+        "src": "/shots/tiptap/v2-breadth.png",
+        "sha256": "c4aba4756d857fc80c9497e73c4b33896e75f5094ea21ad66d56aceee38cfbc7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 149954,
+        "alt": "Tiptap Docs Integrate the Tiptap Editor：徽章 version v3.31.3、downloads 72M/month、license MIT，左侧 GET STARTED 与 EXTENSIONS"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://tiptap.dev/docs/editor/extensions/nodes/heading",
+      "finalUrl": "https://tiptap.dev/docs/editor/extensions/nodes/heading",
+      "title": "Heading extension",
+      "selectionRationale": "Heading 页 h1–h6 说明与 React 预览就是开源扩展证明。",
+      "shot": {
+        "src": "/shots/tiptap/v2-proof.png",
+        "sha256": "d8b01c7ca36c77e30c22376ab179f201a0d886a6f6a8e96e12b19f62eb20a671",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134720,
+        "alt": "Heading extension 文档：标题 Heading extension，徽章 v3.31.3，React 预览 H1/H2/H3 与 This is a 1st level heading"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Tiptap GmbH",
+      "sourceUrl": "https://raw.githubusercontent.com/ueberdosis/tiptap/main/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2025, Tiptap GmbH。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Tiptap GmbH",
+      "sourceUrl": "https://raw.githubusercontent.com/ueberdosis/tiptap/main/LICENSE.md",
+      "evidence": "LICENSE.md 署 Tiptap GmbH。GitHub 组织 ueberdosis 维护核心仓。站点品牌为 Tiptap。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/ueberdosis/tiptap",
+      "sourceUrl": "https://tiptap.dev/docs/editor/getting-started/overview",
+      "evidence": "文档社区区 GitHub 链到 github.com/ueberdosis/tiptap。@tiptap/core package.json repository.url 为 https://github.com/ueberdosis/tiptap。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/ueberdosis/tiptap/main/LICENSE.md",
+      "evidence": "LICENSE.md 标题 MIT License，Copyright (c) 2025, Tiptap GmbH。@tiptap/core package.json license 为 MIT。覆盖开源编辑器与开源扩展源码。Tiptap Cloud、Collaboration、Comments、Conversion、Pro 扩展与付费 UI 模板不在此许可内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://tiptap.dev/pricing",
+      "evidence": "定价页写 The Tiptap Editor is open source (MIT) and free. Only platform features and cloud documents are priced。Start 套餐月费 59 美元。本条只收开源编辑器。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@tiptap/core",
+      "sourceUrl": "https://tiptap.dev/docs/editor/getting-started/overview",
+      "evidence": "文档徽章 version v3.31.3、license MIT。核心 npm 包名为 @tiptap/core。Heading 页写 npm install @tiptap/extension-heading。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/tiptap.md",
+  "registryUrl": "/r/tiptap.json"
+}

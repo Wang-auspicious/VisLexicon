@@ -74,6 +74,9 @@ export const COLLECTIONS = [
       'framework7',
       'react-hook-form',
       'formik',
+      'bulma',
+      'tiptap',
+      'dnd-kit',
     ],
     createdAt: '2026-09-05',
   },
@@ -92,7 +95,7 @@ export const COLLECTIONS = [
     titleEn: 'Motion and micro-interaction',
     blurbZh: '这些站交付的是会动的实现：时间轴、class 动画和弹簧，用来看效果怎么接到界面上。',
     blurbEn: 'Motion implementations: timelines, class animation, springs.',
-    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles', 'react-bits', 'animejs', 'lenis', 'theatre-js', 'auto-animate', 'barba', 'react-spring', 'use-gesture'],
+    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles', 'react-bits', 'animejs', 'lenis', 'theatre-js', 'auto-animate', 'barba', 'react-spring', 'use-gesture', 'driverjs'],
     createdAt: '2026-09-06',
   },
   {
@@ -110,7 +113,7 @@ export const COLLECTIONS = [
     titleEn: 'Charts and visualization',
     blurbZh: '这些站交付的是图表实现：用组件、canvas 或比例尺把数据画出来。',
     blurbEn: 'Chart implementations: components, canvas, and scales.',
-    entryIds: ['d3', 'recharts', 'chartjs', 'nivo', 'tremor', 'visx', 'echarts', 'observable-plot', 'apexcharts'],
+    entryIds: ['d3', 'recharts', 'chartjs', 'nivo', 'tremor', 'visx', 'echarts', 'observable-plot', 'apexcharts', 'leaflet', 'vega'],
     createdAt: '2026-09-06',
   },
   {
@@ -128,7 +131,7 @@ export const COLLECTIONS = [
     titleEn: 'CSS tools',
     blurbZh: '这些站交付的是 CSS 框架或引擎：用工具类或构建期原子样式接到现有项目，不是现成组件包。',
     blurbEn: 'CSS frameworks and engines. Utility classes or build-time atomic styles, not ready-made component packs.',
-    entryIds: ['tailwind-css', 'panda-css', 'unocss', 'cva'],
+    entryIds: ['tailwind-css', 'panda-css', 'unocss', 'cva', 'pico-css'],
     createdAt: '2026-09-06',
   },
   {
@@ -137,7 +140,7 @@ export const COLLECTIONS = [
     titleEn: 'Canvas and spatial',
     blurbZh: '这些站交付的是画布、矢量或空间实现：用 2D、WebGL 或物理引擎把图形画出来。',
     blurbEn: 'Canvas, vector, or spatial implementations: 2D, WebGL, or physics.',
-    entryIds: ['threejs', 'p5js', 'pixijs', 'paperjs', 'twojs', 'konva', 'fabricjs', 'matter-js'],
+    entryIds: ['threejs', 'p5js', 'pixijs', 'paperjs', 'twojs', 'konva', 'fabricjs', 'matter-js', 'babylonjs'],
     createdAt: '2026-09-06',
   },
 ]

@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "entryId": "pico-css",
+  "entityId": "entity-pico-css",
+  "attemptId": "swarm-curator-batch-p-pico-css-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://picocss.com/",
+    "finalUrl": "https://picocss.com/",
+    "checkedAt": "2026-09-06T01:49:50.498Z"
+  },
+  "editorial": {
+    "name": "Pico CSS",
+    "descriptionZh": "Lucas Larroche 维护的语义 HTML 极简 CSS 框架 Pico CSS，现为 v2.1.1。仓库 LICENSE.md 标 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "链上 pico.css，原生标签即有样式",
+    "noteZh": "首页标题 Minimal CSS Framework for Semantic HTML。Quick start 写 pico.min.css 与 npm install @picocss/pico，顶栏 v2.1.1。Button 页用原生 button 示范默认样式与 secondary、contrast。MIT 覆盖 Pico CSS 源码。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-pico-css",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Pico CSS 定义为 Minimal CSS Framework for Semantic HTML，交付物是给语义 HTML 直接套默认样式的 CSS 框架。",
+        "evidenceUrl": "https://picocss.com/"
+      },
+      {
+        "statement": "Button 文档用原生 <button> 标签示范默认按钮，并给出 .secondary 与 .contrast 变体，证明交付物是可复制的界面组件。",
+        "evidenceUrl": "https://picocss.com/docs/button"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-p",
+    "reviewerId": "swarm-reviewer-grok-s",
+    "confirmedAt": "2026-09-06T02:46:58.575Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://picocss.com/",
+      "finalUrl": "https://picocss.com/",
+      "title": "Pico CSS • Minimal CSS Framework for semantic HTML",
+      "selectionRationale": "首页标题与 Get Started、Examples 按钮在首屏。",
+      "shot": {
+        "src": "/shots/pico-css/v2-identity.png",
+        "sha256": "ba645ffa2bdf2278d0ddf3a52d4aae286b113c345cb923587dd57e76d46f58df",
+        "width": 1280,
+        "height": 900,
+        "bytes": 68653,
+        "alt": "Pico CSS 首页：标题 Minimal CSS Framework for Semantic HTML，按钮 Get Started 与 Examples"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://picocss.com/docs",
+      "finalUrl": "https://picocss.com/docs",
+      "title": "Documentation • Pico CSS",
+      "selectionRationale": "文档 Quick start 列出手动、CDN、NPM 安装。",
+      "shot": {
+        "src": "/shots/pico-css/v2-breadth.png",
+        "sha256": "c1fa7ff408da52d638fd4f2eff094c1ed8838ab31864224940fe9fb3a5c3cae4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86601,
+        "alt": "Pico CSS Quick start：顶栏 v2.1.1，左侧 Getting started 目录，正文 Install manually 与 pico.min.css"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://picocss.com/docs/button",
+      "finalUrl": "https://picocss.com/docs/button",
+      "title": "Button • Pico CSS",
+      "selectionRationale": "Button 页原生 button 预览即默认样式证明。",
+      "shot": {
+        "src": "/shots/pico-css/v2-proof.png",
+        "sha256": "b7ffb733a4ea7a7e64128b7e7ebf98b1c0c09fb825b8f9064d69b3425d127ba0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 61466,
+        "alt": "Pico CSS Button 文档：标题 Button，蓝色 Button 预览与 <button>Button</button>，下方 Secondary 与 Contrast"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Lucas Larroche",
+      "sourceUrl": "https://raw.githubusercontent.com/picocss/pico/main/package.json",
+      "evidence": "package.json author 为 Lucas Larroche。composer.json authors.name 同为 Lucas Larroche。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Pico",
+      "sourceUrl": "https://raw.githubusercontent.com/picocss/pico/main/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2019-2024 Pico。站点品牌为 Pico CSS。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/picocss/pico",
+      "sourceUrl": "https://picocss.com/",
+      "evidence": "首页 GitHub Stars 链到 github.com/picocss/pico。package.json repository.url 为 git+https://github.com/picocss/pico.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/picocss/pico/main/LICENSE.md",
+      "evidence": "LICENSE.md 标题 MIT License，Copyright (c) 2019-2024 Pico。package.json license 为 MIT。覆盖 Pico CSS 框架源码，不覆盖第三方图标或文档站依赖。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://picocss.com/docs",
+      "evidence": "Quick start 写 Download Pico、jsDelivr CDN 与 npm install @picocss/pico。文档公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@picocss/pico",
+      "sourceUrl": "https://picocss.com/docs",
+      "evidence": "Quick start 写 npm install @picocss/pico。package.json name 为 @picocss/pico，version 2.1.1。文档顶栏现为 v2.1.1。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-p",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-s",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-s"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-p 进站起草。分类对象是 picocss.com 语义 CSS 框架，不是文档站本身。status 仍 DRAFT。 swarm-reviewer-grok-s 独立复核活页、LICENSE 原文与 sha256 后 APPROVED。"
+  }
+}

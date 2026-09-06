@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T02:48:10.072Z",
+  "entryId": "leaflet",
+  "entityId": "entity-leaflet",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "leafletjs.com",
+  "official": {
+    "inputUrl": "https://leafletjs.com/",
+    "finalUrl": "https://leafletjs.com/",
+    "checkedAt": "2026-09-06T01:49:50.498Z"
+  },
+  "editorial": {
+    "name": "Leaflet",
+    "descriptionZh": "Volodymyr Agafonkin 创建的交互地图库 Leaflet，首页宣布 2.0.0-alpha.1。仓库 LICENSE 标 BSD-2-Clause，可免费用于个人与商业项目。",
+    "takeawayZh": "L.map 设中心，再加 OSM 瓦片",
+    "noteZh": "首页副题 mobile-friendly interactive maps，下方伦敦地图，并宣布 2.0.0-alpha.1。Tutorials 列出 Quick Start。该页有伦敦地图、标记、红圈与弹出层。BSD-2-Clause 覆盖库源码；OSM 瓦片另需署名。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Leaflet 定义为 open-source JavaScript library for mobile-friendly interactive maps，并嵌入可缩放的伦敦地图。",
+        "evidenceUrl": "https://leafletjs.com/"
+      },
+      {
+        "statement": "Quick Start 页给出 L.map、tileLayer 与 marker，并展示带弹出层的现场地图，证明交付物是可运行的地图代码。",
+        "evidenceUrl": "https://leafletjs.com/examples/quick-start/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T02:46:58.575Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "BSD-2-Clause"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://leafletjs.com/",
+      "finalUrl": "https://leafletjs.com/",
+      "title": "Leaflet - a JavaScript library for interactive maps",
+      "selectionRationale": "首页副题与伦敦地图在首屏，并宣布 2.0.0-alpha.1。",
+      "shot": {
+        "src": "/shots/leaflet/v2-identity.png",
+        "sha256": "7cff737b9f62b8486ce76e252432923ae22cc9d190bda16072ec39c1293e160c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 385392,
+        "alt": "Leaflet 首页：副题 an open-source JavaScript library for mobile-friendly interactive maps，宣布 Leaflet 2.0.0-alpha.1，下方海德公园地图"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://leafletjs.com/examples.html",
+      "finalUrl": "https://leafletjs.com/examples.html",
+      "title": "Tutorials - Leaflet - a JavaScript library for interactive maps",
+      "selectionRationale": "Tutorials 列出 Quick Start 与 Mobile 教程。",
+      "shot": {
+        "src": "/shots/leaflet/v2-breadth.png",
+        "sha256": "edf1854b808535bced769f291ac8fd21f1728e75c8a42c6a24f1f8d4cff91366",
+        "width": 1280,
+        "height": 900,
+        "bytes": 198870,
+        "alt": "Leaflet Tutorials：Quick Start Guide 与 Leaflet on Mobile 两条教程，各带地图缩略图"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://leafletjs.com/examples/quick-start/",
+      "finalUrl": "https://leafletjs.com/examples/quick-start/",
+      "title": "Quick Start Guide - Leaflet - a JavaScript library for interactive maps",
+      "selectionRationale": "Quick Start 页现场地图、标记与弹出层就是可运行证明。",
+      "shot": {
+        "src": "/shots/leaflet/v2-proof.png",
+        "sha256": "1284e2a2ff4efa02632e09827e182545e02e72fc6294fd6bbb58bc6f04daef61",
+        "width": 1280,
+        "height": 900,
+        "bytes": 438035,
+        "alt": "Leaflet Quick Start Guide：伦敦地图含标记、红圈、蓝多边形与弹出层 I am a standalone popup"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Volodymyr Agafonkin",
+      "sourceUrl": "https://raw.githubusercontent.com/Leaflet/Leaflet/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2010-2026, Volodymyr Agafonkin 与 Copyright (c) 2010-2011, CloudMade。首页写 originally created by Volodymyr Agafonkin。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Leaflet",
+      "sourceUrl": "https://leafletjs.com/",
+      "evidence": "站点品牌为 Leaflet。GitHub 组织 Leaflet 维护核心仓。LICENSE 另列 CloudMade 为早期版权方。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/Leaflet/Leaflet",
+      "sourceUrl": "https://leafletjs.com/",
+      "evidence": "首页 source code 链到 github.com/Leaflet/Leaflet。package.json repository.url 为 git://github.com/Leaflet/Leaflet.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "BSD-2-Clause",
+      "sourceUrl": "https://raw.githubusercontent.com/Leaflet/Leaflet/main/LICENSE",
+      "evidence": "LICENSE 标题 BSD 2-Clause License。package.json license 为 BSD-2-Clause。覆盖 Leaflet 库源码。OpenStreetMap 瓦片与第三方底图另有署名与使用条款，不在此许可内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://leafletjs.com/",
+      "evidence": "首页写 leading open-source JavaScript library。文档与 Quick Start 示例公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "leaflet",
+      "sourceUrl": "https://leafletjs.com/",
+      "evidence": "首页宣布 Leaflet 2.0.0-alpha.1。package.json name 为 leaflet，version 2.0.0-alpha.1。Quick Start 示例仍引用 unpkg leaflet@1.9.4。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/leaflet.md",
+  "registryUrl": "/r/leaflet.json"
+}

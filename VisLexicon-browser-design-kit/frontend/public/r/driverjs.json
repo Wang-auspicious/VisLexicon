@@ -1,0 +1,196 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T02:48:10.072Z",
+  "entryId": "driverjs",
+  "entityId": "entity-driverjs",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://driverjs.com/",
+    "finalUrl": "https://driverjs.com/",
+    "checkedAt": "2026-09-06T01:49:50.498Z"
+  },
+  "editorial": {
+    "name": "driver.js",
+    "descriptionZh": "Kamran Ahmed 维护的产品导览库 driver.js，包版本 1.8.0。仓库 license 标 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "装 driver.js，调用 drive() 开导览",
+    "noteZh": "首页写 product tours, highlights，按钮 Show Demo 与 Get Started，底栏 MIT Licensed。Installation 写 npm install driver.js。API 页列出 drive、moveNext、highlight、destroy。MIT 覆盖库源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 driver.js 定义为 Lightweight JavaScript library for product tours, highlights, and contextual help，交付物是可嵌入的导览与高亮控件。",
+        "evidenceUrl": "https://driverjs.com/"
+      },
+      {
+        "statement": "API Reference 列出 drive、moveNext、highlight、destroy 等方法，证明调用方可用代码驱动产品导览。",
+        "evidenceUrl": "https://driverjs.com/docs/api"
+      }
+    ],
+    "confirmedAt": "2026-09-06T02:46:58.575Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://driverjs.com/",
+      "finalUrl": "https://driverjs.com/",
+      "title": "Driver.js - Product Tours & Highlights in Vanilla JS",
+      "selectionRationale": "首页标题、Show Demo 与 MIT Licensed 在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/driverjs/v2-identity.png",
+        "sha256": "6377713f1af3ebe3ce7081a65dae34bcef4b73a8bb0990894a3ea9d927faeaf3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 229980,
+        "alt": "driver.js 首页：标题 Lightweight JavaScript library for product tours, highlights, and contextual help，按钮 Show Demo 与 Get Started，底栏 MIT Licensed"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://driverjs.com/docs/installation",
+      "finalUrl": "https://driverjs.com/docs/installation",
+      "title": "Installation - Driver.js",
+      "selectionRationale": "Installation 写 npm 命令，左侧排出文档范围。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/driverjs/v2-breadth.png",
+        "sha256": "70903bf11b30eb4225575bb3167e0be16e2a13f8e676fb02c53924e4981f5f21",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86744,
+        "alt": "driver.js Installation：npm install driver.js、pnpm 与 yarn 命令，下方 jsDelivr CDN 脚本"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://driverjs.com/docs/api",
+      "finalUrl": "https://driverjs.com/docs/api",
+      "title": "API Reference - Driver.js",
+      "selectionRationale": "API 页 drive 与 highlight 方法列表即可调用。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/driverjs/v2-proof.png",
+        "sha256": "b742d15267807ed21f182ec26b3f13ae4a3b148079ea74b6d8ade0ccc207b954",
+        "width": 1280,
+        "height": 900,
+        "bytes": 97085,
+        "alt": "driver.js API Reference：代码块列出 driverObj.drive()、moveNext()、movePrevious()、highlight 等方法"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Kamran Ahmed",
+      "sourceUrl": "https://raw.githubusercontent.com/nilbuild/driver.js/master/license",
+      "evidence": "license 版权行为 Copyright (c) Kamran Ahmed。packages/driver/package.json author 为 Kamran Ahmed <kamranahmed.se@gmail.com>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "nilbuild",
+      "sourceUrl": "https://driverjs.com/",
+      "evidence": "页脚 GitHub 链到 github.com/nilbuild/driver.js。仓库组织为 nilbuild。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/nilbuild/driver.js",
+      "sourceUrl": "https://driverjs.com/",
+      "evidence": "首页 GitHub 按钮链到 github.com/nilbuild/driver.js。package.json repository.url 为 git+https://github.com/nilbuild/driver.js.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/nilbuild/driver.js/master/license",
+      "evidence": "license 标题 The MIT License，Copyright (c) Kamran Ahmed。package.json license 为 MIT。首页写 MIT Licensed 与 Free for everyone, forever。覆盖 driver.js 库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://driverjs.com/",
+      "evidence": "首页写 Free for everyone, forever 与 Personal projects、Commercial products、Unlimited projects、No attribution required。文档公开可浏览。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "driver.js",
+      "sourceUrl": "https://driverjs.com/docs/installation",
+      "evidence": "Installation 写 npm install driver.js。packages/driver/package.json name 为 driver.js，version 1.8.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/driverjs",
+    "designMdUrl": "https://vislexicon.com/site/driverjs.md",
+    "checkedAt": "2026-09-06T01:49:50.498Z",
+    "license": "MIT"
+  }
+}

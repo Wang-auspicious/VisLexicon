@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T02:48:10.072Z",
+  "entryId": "vega",
+  "entityId": "entity-vega",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "vega.github.io",
+  "official": {
+    "inputUrl": "https://vega.github.io/vega/",
+    "finalUrl": "https://vega.github.io/vega/",
+    "checkedAt": "2026-09-06T01:49:50.498Z"
+  },
+  "editorial": {
+    "name": "Vega",
+    "descriptionZh": "华盛顿大学 Interactive Data Lab 维护的可视化语法 Vega，现为 6.4.0。仓库 LICENSE 标 BSD-3-Clause，可免费用于个人与商业项目。",
+    "takeawayZh": "用 JSON 写图，Canvas 或 SVG 渲染",
+    "noteZh": "首页标题 A Visualization Grammar，图墙与 Version 6.4.0。Example Gallery 按 Bar Charts 等分组。Bar Chart 页给出钢蓝色柱状图与 Vega JSON Specification。BSD-3-Clause 覆盖 Vega 源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Vega 定义为 visualization grammar，用 JSON 描述视觉外观与交互，并由运行时生成 Canvas 或 SVG。",
+        "evidenceUrl": "https://vega.github.io/vega/"
+      },
+      {
+        "statement": "Bar Chart Example 页同时给出可交互柱状图与完整 Vega JSON Specification，证明交付物是可运行的可视化代码。",
+        "evidenceUrl": "https://vega.github.io/vega/examples/bar-chart/"
+      }
+    ],
+    "confirmedAt": "2026-09-06T02:46:58.575Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "svg",
+      "canvas"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "researcher"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "contentOrganization": [
+      "case-gallery",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vega.github.io/vega/",
+      "finalUrl": "https://vega.github.io/vega/",
+      "title": "A Visualization Grammar | Vega",
+      "selectionRationale": "首页标题、图墙与 Version 6.4.0 在首屏。",
+      "shot": {
+        "src": "/shots/vega/v2-identity.png",
+        "sha256": "40b6c070ba2917768291a1a745047b5e7b7bf8d2f0e3c28254194bad4ecd54b1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 401395,
+        "alt": "Vega 首页：标题 Vega – A Visualization Grammar，上方示例图墙，按钮 Version 6.4.0"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://vega.github.io/vega/examples/",
+      "finalUrl": "https://vega.github.io/vega/examples/",
+      "title": "Example Gallery | Vega",
+      "selectionRationale": "Example Gallery 按图种分组排出范围。",
+      "shot": {
+        "src": "/shots/vega/v2-breadth.png",
+        "sha256": "fef3a29e9754146bd7cd6e8bdda973805ccc4421aebf1cdb43af1938f7684d7a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117452,
+        "alt": "Vega Example Gallery：Bar Charts、Line & Area Charts、Circular Charts 分组缩略图"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://vega.github.io/vega/examples/bar-chart/",
+      "finalUrl": "https://vega.github.io/vega/examples/bar-chart/",
+      "title": "Bar Chart Example | Vega",
+      "selectionRationale": "Bar Chart 页现场柱状图与 JSON 规格就是可复制证明。",
+      "shot": {
+        "src": "/shots/vega/v2-proof.png",
+        "sha256": "bf34ae1b63d0b24002e8d1a42a825dec316e72711adaba9b87905668b2be4756",
+        "width": 1280,
+        "height": 900,
+        "bytes": 44379,
+        "alt": "Vega Bar Chart Example：钢蓝色柱状图 A–H，下方 Vega JSON Specification 含 $schema vega/v6.json"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "University of Washington Interactive Data Lab",
+      "sourceUrl": "https://raw.githubusercontent.com/vega/vega/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2015-2023, University of Washington Interactive Data Lab。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "University of Washington Interactive Data Lab",
+      "sourceUrl": "https://raw.githubusercontent.com/vega/vega/main/LICENSE",
+      "evidence": "LICENSE 署 University of Washington Interactive Data Lab。GitHub 组织 vega 维护仓库。About 页写 Vega project。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/vega/vega",
+      "sourceUrl": "https://vega.github.io/vega/",
+      "evidence": "首页导航 GitHub 链到 github.com/vega/vega。packages/vega/package.json repository.url 为 git+https://github.com/vega/vega.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "BSD-3-Clause",
+      "sourceUrl": "https://raw.githubusercontent.com/vega/vega/main/LICENSE",
+      "evidence": "LICENSE 含 BSD-3-Clause 三项条件，禁止用版权方名称背书。根 package.json 与 packages/vega/package.json license 均为 BSD-3-Clause。覆盖 Vega 源码与运行时。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://vega.github.io/vega/",
+      "evidence": "首页、Example Gallery 与 Bar Chart 示例公开可浏览。文档写 generate web-based views using Canvas or SVG，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "vega",
+      "sourceUrl": "https://vega.github.io/vega/",
+      "evidence": "首页按钮 Version 6.4.0。packages/vega/package.json name 为 vega，version 6.4.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/vega.md",
+  "registryUrl": "/r/vega.json"
+}

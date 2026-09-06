@@ -518,6 +518,82 @@ const VOICE = {
     lede: { zh: '指针与手势钩子。MIT。', en: 'Pointer and gesture hooks. MIT.' },
     style: { zh: '浅色文档。手势示意图。中性。', en: 'Light docs. Gesture diagrams. Neutral.' },
   },
+  'pico-css': {
+    lede: { zh: '语义 HTML 的极简 CSS 框架。MIT。', en: 'Minimal CSS framework for semantic HTML. MIT.' },
+    style: { zh: '深色营销首页。居中无衬线。紫白渐变标题。双按钮。低对比海军底。', en: 'Dark marketing homepage. Centered sans. Violet-to-white gradient title. Dual buttons. Low-contrast navy ground.' },
+    acquire: {
+      zh: [
+        { k: '样式表', v: 'css/pico.min.css' },
+        { k: '命令行', v: 'npm install @picocss/pico' },
+      ],
+      en: [
+        { k: 'Stylesheet', v: 'css/pico.min.css' },
+        { k: 'CLI', v: 'npm install @picocss/pico' },
+      ],
+    },
+  },
+  bulma: {
+    lede: { zh: 'Flexbox CSS 框架。MIT。', en: 'Flexbox CSS framework. MIT.' },
+    style: { zh: '浅色营销。超大无衬线标题。浮层粉彩标签。青绿主按钮。径向构造线。', en: 'Light marketing. Oversized sans title. Floating pastel tags. Teal primary button. Radial construction lines.' },
+    acquire: {
+      zh: [
+        { k: '下载', v: 'bulma-1.0.4.zip' },
+        { k: '命令行', v: 'npm install bulma' },
+      ],
+      en: [
+        { k: 'Download', v: 'bulma-1.0.4.zip' },
+        { k: 'CLI', v: 'npm install bulma' },
+      ],
+    },
+  },
+  tiptap: {
+    lede: { zh: '无样式富文本编辑器框架。核心 MIT，Cloud 另售。', en: 'Headless rich-text editor framework. Core is MIT; Cloud is paid.' },
+    style: { zh: '浅色产品营销。超大无衬线配斜体强调。柔和青绿光晕。胶囊导航。现场编辑器标本。', en: 'Light product marketing. Oversized sans with italic emphasis. Soft teal-green glow. Capsule nav. Live editor specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @tiptap/core' }],
+      en: [{ k: 'CLI', v: 'npm install @tiptap/core' }],
+    },
+  },
+  leaflet: {
+    lede: { zh: '交互地图库。BSD-2-Clause。', en: 'Interactive map library. BSD-2-Clause.' },
+    style: { zh: '浅色文档首页。衬线字标。绿色导航。嵌入 OSM 地图标本。', en: 'Light documentation homepage. Serif wordmark. Green navigation. Embedded OSM map specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install leaflet' }],
+      en: [{ k: 'CLI', v: 'npm install leaflet' }],
+    },
+  },
+  'dnd-kit': {
+    lede: { zh: '无样式拖放原语。MIT。', en: 'Unstyled drag-and-drop primitives. MIT.' },
+    style: { zh: '深色文档系统。左侧目录。插画横幅。饱和紫强调。几何徽标。', en: 'Dark documentation system. Left-hand TOC. Illustrated banner. Saturated purple accent. Geometric mark.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @dnd-kit/dom' }],
+      en: [{ k: 'CLI', v: 'npm install @dnd-kit/dom' }],
+    },
+  },
+  driverjs: {
+    lede: { zh: '产品导览库。MIT。', en: 'Product-tour library. MIT.' },
+    style: { zh: '高饱和黄英雄区。粗无衬线字标。角色插画。黑底滚动条。双胶囊按钮。', en: 'High-chroma yellow hero. Bold sans wordmark. Character illustration. Black ticker. Dual capsule buttons.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install driver.js' }],
+      en: [{ k: 'CLI', v: 'npm install driver.js' }],
+    },
+  },
+  babylonjs: {
+    lede: { zh: 'WebGL 与 WebGPU 3D 引擎。Apache-2.0。', en: 'WebGL and WebGPU 3D engine. Apache-2.0.' },
+    style: { zh: '深色产品营销。全出血星轨。等轴测立方徽标。轮播标题。', en: 'Dark product marketing. Full-bleed star trails. Isometric cube mark. Carousel title.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install babylonjs' }],
+      en: [{ k: 'CLI', v: 'npm install babylonjs' }],
+    },
+  },
+  vega: {
+    lede: { zh: '可视化语法。BSD-3-Clause。', en: 'Visualization grammar. BSD-3-Clause.' },
+    style: { zh: '浅色学术文档。靛蓝顶栏。可视化标本墙。衬线标题。', en: 'Light academic docs. Indigo top bar. Visualization specimen wall. Serif titles.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install vega' }],
+      en: [{ k: 'CLI', v: 'npm install vega' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {
