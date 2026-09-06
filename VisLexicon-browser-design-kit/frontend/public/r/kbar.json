@@ -1,0 +1,205 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T15:27:02.711Z",
+  "entryId": "kbar",
+  "entityId": "entity-kbar",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://kbar.vercel.app/",
+    "finalUrl": "https://kbar.vercel.app/",
+    "checkedAt": "2026-09-06T15:20:00.000Z"
+  },
+  "editorial": {
+    "name": "kbar",
+    "descriptionZh": "Tim Chang 维护的 React 命令面板 kbar，npm 现为 1.0.0。LICENSE 为 MIT。用 KBarProvider 包住应用后按 cmd+k 调出。与 cmdk 不是同一库。",
+    "takeawayZh": "用 KBarProvider 包住，按 cmd+k 调出",
+    "noteZh": "kbar.vercel.app 定义为站点的 command+k 界面，并提示按快捷键打开。入门页写 npm install kbar 与 KBarProvider。Overview 列出键盘导航、撤销与屏幕阅读器。MIT。本条不是 cmdk。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 kbar 定义为 fully extensible command+k interface for your site，并提示按 cmd+k 或 ctrl+k 打开。",
+        "evidenceUrl": "https://kbar.vercel.app/"
+      },
+      {
+        "statement": "Getting started 给出 npm install kbar 与 KBarProvider、KBarPortal、KBarSearch，证明命令面板可安装、可组装。",
+        "evidenceUrl": "https://kbar.vercel.app/docs/getting-started"
+      }
+    ],
+    "confirmedAt": "2026-09-07T00:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "search"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript",
+      "radix-ui"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://kbar.vercel.app/",
+      "finalUrl": "https://kbar.vercel.app/",
+      "title": "kbar – command+k interface for your site",
+      "selectionRationale": "先看首页。快捷键说明和安装命令在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/kbar/v2-identity.png",
+        "sha256": "5bfa55d656f9617c4c7d8fe80a7c533d7af7dfae330ba98a85aaff565bfb7359",
+        "width": 1280,
+        "height": 900,
+        "bytes": 80838,
+        "alt": "kbar 首页：kbar is a fully extensible command+k interface for your site，提示按 cmd+k 或 ctrl+k，下方 npm install kbar"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://kbar.vercel.app/docs/getting-started",
+      "finalUrl": "https://kbar.vercel.app/docs/getting-started",
+      "title": "kbar – command+k interface for your site",
+      "selectionRationale": "再翻入门。KBarProvider 排出用法面。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/kbar/v2-breadth.png",
+        "sha256": "8aaae1ae6de1ead34262e0d4ddf057f89ce2fb4b3fe9bda1fe595b8cdb7cd033",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75834,
+        "alt": "kbar Getting started：npm install kbar，代码块 import { KBarProvider } from \"kbar\"，左侧 Introduction / Concepts / API Reference"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://kbar.vercel.app/docs/overview",
+      "finalUrl": "https://kbar.vercel.app/docs/overview",
+      "title": "kbar – command+k interface for your site",
+      "selectionRationale": "最后开 Overview。功能列表和 API 侧栏在此。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/kbar/v2-proof.png",
+        "sha256": "710905f5142c1ad12b4e45e00b5ad385c030165ee1252350bcb034e42b4c47c8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78665,
+        "alt": "kbar Overview：Features 列出键盘导航、Undo/redo、Screen reader support，左侧 API Reference 含 KBarProvider、KBarSearch、useKBar"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Tim Chang",
+      "sourceUrl": "https://raw.githubusercontent.com/timc1/kbar/main/package.json",
+      "evidence": "package.json author 为 Tim Chang <timchang.tcc@gmail.com>。LICENSE 版权行为 Copyright (c) 2021 Tim。文档 Overview 页脚为 @timcchang。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://raw.githubusercontent.com/timc1/kbar/main/LICENSE",
+      "evidence": "LICENSE 与 package.json 只署 Tim / Tim Chang，未见公司。GitHub 用户为 timc1。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/timc1/kbar",
+      "sourceUrl": "https://kbar.vercel.app/",
+      "evidence": "首页 kbar 链到 https://github.com/timc1/kbar。package.json repository.url 为 https://github.com/timc1/kbar.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/timc1/kbar/main/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2021 Tim。package.json license 为 MIT。覆盖 kbar 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://kbar.vercel.app/docs/getting-started",
+      "evidence": "Getting started 写 npm install kbar。文档与首页演示公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "kbar",
+      "sourceUrl": "https://kbar.vercel.app/docs/getting-started",
+      "evidence": "Getting started 写 npm install kbar。npm kbar@1.0.0，package.json name 为 kbar。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-command-palette",
+        "evidenceUrl": "https://kbar.vercel.app/",
+        "note": "首页把 kbar 定义为 command+k interface，并提示按 cmd+k 或 ctrl+k 打开。",
+        "termEn": "Command palette",
+        "termZh": "命令面板"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/kbar",
+    "designMdUrl": "https://vislexicon.com/site/kbar.md",
+    "checkedAt": "2026-09-06T15:20:00.000Z",
+    "license": "MIT"
+  }
+}

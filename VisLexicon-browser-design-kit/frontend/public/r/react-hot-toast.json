@@ -1,0 +1,205 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T15:27:02.711Z",
+  "entryId": "react-hot-toast",
+  "entityId": "entity-react-hot-toast",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://react-hot-toast.com/",
+    "finalUrl": "https://react-hot-toast.com/",
+    "checkedAt": "2026-09-06T15:20:00.000Z"
+  },
+  "editorial": {
+    "name": "react-hot-toast",
+    "descriptionZh": "Timo Lins 维护的 React 通知条库 react-hot-toast，站点徽章 v2.6.0。仓库 LICENSE 为 MIT，文档公开、无付费墙。与已收录的 Sonner 不是同一库。",
+    "takeawayZh": "根节点放 Toaster，再调用 toast()",
+    "noteZh": "react-hot-toast.com 标题 The Best Toast in Town，徽章 v2.6.0。三步为安装、放置 Toaster、调用 toast()。文档写 pnpm add react-hot-toast。toast() 页列出 duration 与 position。MIT。本条不是 sonner。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把产品定义为 The Best Toast in Town / Smoking hot React notifications，徽章 v2.6.0，三步安装 Toaster 并调用 toast()。",
+        "evidenceUrl": "https://react-hot-toast.com/"
+      },
+      {
+        "statement": "toast() API 页给出 duration、position、iconTheme 与 success/error/promise 调用，证明单条通知可复制进页面。",
+        "evidenceUrl": "https://react-hot-toast.com/docs/toast"
+      }
+    ],
+    "confirmedAt": "2026-09-07T00:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://react-hot-toast.com/",
+      "finalUrl": "https://react-hot-toast.com/",
+      "title": "react-hot-toast - The Best React Notifications in Town - react-hot-toast",
+      "selectionRationale": "先看首页。招牌和 v2.6.0 都在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-hot-toast/v2-identity.png",
+        "sha256": "5bfeabcc56a5557277aef48186a7747850e0da5d4a1db214264bd89b92f9bf12",
+        "width": 1280,
+        "height": 900,
+        "bytes": 101430,
+        "alt": "react-hot-toast 首页：REACT HOT TOAST 招牌，The Best Toast in Town，按钮 Make me a toast 与 GitHub，徽章 Documentation · v2.6.0"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://react-hot-toast.com/docs",
+      "finalUrl": "https://react-hot-toast.com/docs",
+      "title": "Documentation - react-hot-toast",
+      "selectionRationale": "再翻入门。安装命令和 Toaster 示例在此。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-hot-toast/v2-breadth.png",
+        "sha256": "6ddc9467827e9896ecc5077de66043057a0d20a1e6eec421b0e91740def774f5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 53254,
+        "alt": "react-hot-toast Getting Started：pnpm add react-hot-toast 与 npm install react-hot-toast，下方 import toast, { Toaster } from 'react-hot-toast'"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://react-hot-toast.com/docs/toast",
+      "finalUrl": "https://react-hot-toast.com/docs/toast",
+      "title": "toast() API - react-hot-toast",
+      "selectionRationale": "最后开 toast()。时长与位置即是证明。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-hot-toast/v2-proof.png",
+        "sha256": "e8b66aa2ea9175d0ac6dcd888a9947fbb9cdb06ea43a4277cce254a15acf0f71",
+        "width": 1280,
+        "height": 900,
+        "bytes": 56731,
+        "alt": "toast() API 文档：Call it to create a toast from anywhere，代码块含 duration: 4000、position: 'top-center'、iconTheme"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Timo Lins",
+      "sourceUrl": "https://raw.githubusercontent.com/timolins/react-hot-toast/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2020 Timo Lins。package.json author 为 Timo Lins。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://raw.githubusercontent.com/timolins/react-hot-toast/main/LICENSE",
+      "evidence": "LICENSE 与 package.json 只署 Timo Lins，未见公司。GitHub 用户为 timolins。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/timolins/react-hot-toast",
+      "sourceUrl": "https://react-hot-toast.com/",
+      "evidence": "首页 GitHub 按钮链到 timolins/react-hot-toast。package.json repository 为 timolins/react-hot-toast。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/timolins/react-hot-toast/main/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2020 Timo Lins。package.json license 为 MIT。覆盖 react-hot-toast 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://react-hot-toast.com/docs",
+      "evidence": "Getting Started 写 pnpm add react-hot-toast 与 npm install react-hot-toast。文档公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "react-hot-toast",
+      "sourceUrl": "https://react-hot-toast.com/docs",
+      "evidence": "Getting Started 写 pnpm add react-hot-toast。首页徽章 v2.6.0。package.json name 为 react-hot-toast，version 2.6.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-toast",
+        "evidenceUrl": "https://react-hot-toast.com/docs/toast",
+        "note": "该页就是 toast() API，含 duration、position 与 success/error 调用。",
+        "termEn": "Toast",
+        "termZh": "轻提示"
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/react-hot-toast",
+    "designMdUrl": "https://vislexicon.com/site/react-hot-toast.md",
+    "checkedAt": "2026-09-06T15:20:00.000Z",
+    "license": "MIT"
+  }
+}

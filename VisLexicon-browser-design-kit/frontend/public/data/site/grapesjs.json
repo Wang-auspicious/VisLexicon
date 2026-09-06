@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-06T15:27:02.711Z",
+  "entryId": "grapesjs",
+  "entityId": "entity-grapesjs",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "grapesjs.com",
+  "official": {
+    "inputUrl": "https://grapesjs.com/",
+    "finalUrl": "https://grapesjs.com/",
+    "checkedAt": "2026-09-06T15:20:00.000Z"
+  },
+  "editorial": {
+    "name": "GrapesJS",
+    "descriptionZh": "Artur Arseniev 维护的开源网页构建框架 GrapesJS，npm 包 grapesjs 现为 0.23.6。LICENSE 为 BSD-3-Clause，不是 MIT。本条只收核心库，不含 Grapes Studio SDK。",
+    "takeawayZh": "npm i grapesjs，用 init 挂出画布",
+    "noteZh": "grapesjs.com 首页现推销 Studio SDK。文档把 GrapesJS 定义为网页构建框架，侧栏列出组件、区块与样式。演示页顶栏 v0.22.2，画布可拖列、文本和图片。核心库许可为 BSD-3-Clause，不是 MIT。Studio SDK 不在本条。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "ui-implementation",
+        "subcategory": "page-blocks-embeddable-controls"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "文档把 GrapesJS 定义为 multi-purpose, Web Builder Framework，下载区写 npm i grapesjs，交付物是可嵌入的网页构建器而非整站 SDK。",
+        "evidenceUrl": "https://grapesjs.com/docs/"
+      },
+      {
+        "statement": "demo.html 标题 GrapesJS Webpage Builder，画布可拖 1 Column、Text、Image 并现场编辑模板。",
+        "evidenceUrl": "https://grapesjs.com/demo.html"
+      }
+    ],
+    "confirmedAt": "2026-09-07T00:15:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "full-page"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "edit",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://grapesjs.com/",
+      "finalUrl": "https://grapesjs.com/",
+      "title": "Embed a Visual Editor for Emails, Landing Pages, Websites & Documents | GrapesJS Studio SDK",
+      "selectionRationale": "先看首页。现推销 Studio SDK，导航仍有文档。",
+      "shot": {
+        "src": "/shots/grapesjs/v2-identity.png",
+        "sha256": "79c7c235ea9d64e8a1e8546da97bb607046a6a3f34ce0d322754573dc51079e2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 760104,
+        "alt": "GrapesJS 首页：Embedded visual editor for newsletters and websites，按钮 Get Your Editor，导航 Grapes Studio / Docs / Sign In，下方 Newsletter Builder 预览框"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://grapesjs.com/docs/",
+      "finalUrl": "https://grapesjs.com/docs/",
+      "title": "Introduction | GrapesJS",
+      "selectionRationale": "再翻文档总览。构建框架与模块目录在此。",
+      "shot": {
+        "src": "/shots/grapesjs/v2-breadth.png",
+        "sha256": "4be61f9e7f0d6bbadbbdf6079c974dc27c0272b6a836537f1fea24d771eec7db",
+        "width": 1280,
+        "height": 900,
+        "bytes": 151400,
+        "alt": "GrapesJS 文档 Introduction：What is GrapesJS 定义为 Web Builder Framework，左侧 Getting Started 与 Modules（Components、Blocks、Assets）"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://grapesjs.com/demo.html",
+      "finalUrl": "https://grapesjs.com/demo.html",
+      "title": "GrapesJS Demo - Free Open Source Website Page Builder",
+      "selectionRationale": "最后开演示页。画布和右侧区块即证明。",
+      "shot": {
+        "src": "/shots/grapesjs/v2-proof.png",
+        "sha256": "70ee35a4b65bc8b380a7db872f976c1e766bc369bed4d58505ab6708b31c4586",
+        "width": 1280,
+        "height": 900,
+        "bytes": 406996,
+        "alt": "GrapesJS Webpage Builder 画布：标题 Build your templates without coding，顶栏 v0.22.2，右侧 Basic 区块 1 Column、Text、Image、Video"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Artur Arseniev",
+      "sourceUrl": "https://raw.githubusercontent.com/GrapesJS/grapesjs/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2017-current, Artur Arseniev。package.json author 为 Artur Arseniev。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "GrapesJS",
+      "sourceUrl": "https://grapesjs.com/docs/",
+      "evidence": "文档站品牌为 GrapesJS。GitHub 组织 GrapesJS 维护核心仓 grapesjs。LICENSE 第三款写 Neither the name \"GrapesJS\" nor the names of its contributors。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/GrapesJS/grapesjs",
+      "sourceUrl": "https://raw.githubusercontent.com/GrapesJS/grapesjs/master/package.json",
+      "evidence": "package.json repository.url 为 https://github.com/GrapesJS/grapesjs.git。文档 Download 写 git clone https://github.com/GrapesJS/grapesjs.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "BSD-3-Clause",
+      "sourceUrl": "https://raw.githubusercontent.com/GrapesJS/grapesjs/master/LICENSE",
+      "evidence": "LICENSE 为三款 BSD：保留版权声明、二进制再分发须附带声明、不得用名称 GrapesJS 背书。package.json 与 npm grapesjs@0.23.6 的 license 均为 BSD-3-Clause。README 写 BSD 3-clause。覆盖开源核心库 grapesjs，不是 MIT。Grapes Studio SDK 不在此许可内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://grapesjs.com/docs/",
+      "evidence": "文档 Download 写 npm i grapesjs，CDN 与 git clone 公开。demo.html 标题 Free Open Source Website Page Builder。Studio SDK 的 Get Started for Free 与付费许可不在本条。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "grapesjs",
+      "sourceUrl": "https://grapesjs.com/docs/",
+      "evidence": "文档 Download 写 npm i grapesjs。npm grapesjs@0.23.6，description 为 Free and Open Source Web Builder Framework。demo.html 顶栏徽章为 v0.22.2。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/grapesjs.md",
+  "registryUrl": "/r/grapesjs.json"
+}

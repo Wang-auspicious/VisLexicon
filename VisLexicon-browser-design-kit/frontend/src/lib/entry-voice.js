@@ -716,6 +716,38 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm install @milkdown/crepe' }],
     },
   },
+  'ace-editor': {
+    lede: { zh: '嵌入式网页代码编辑器。BSD-3-Clause。', en: 'Embeddable web code editor. BSD-3-Clause.' },
+    style: { zh: '浅色产品页。蓝云徽标。嵌入代码编辑器标本。GitHub 丝带。', en: 'Light product page. Blue cloud mark. Embedded code-editor specimen. GitHub ribbon.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install ace-builds' }],
+      en: [{ k: 'CLI', v: 'npm install ace-builds' }],
+    },
+  },
+  grapesjs: {
+    lede: { zh: '开源网页构建框架。BSD-3-Clause。不含 Studio SDK。', en: 'Open-source web builder. BSD-3-Clause. Studio SDK is out of scope.' },
+    style: { zh: '深紫全出血营销。超大无衬线标题。紫胶囊按钮。嵌入构建器标本。', en: 'Deep-purple full-bleed marketing. Oversized sans title. Purple capsule button. Embedded builder specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i grapesjs' }],
+      en: [{ k: 'CLI', v: 'npm i grapesjs' }],
+    },
+  },
+  'react-hot-toast': {
+    lede: { zh: 'React 通知条。MIT。不是 Sonner。', en: 'React toast notifications. MIT. Not Sonner.' },
+    style: { zh: '奶油底。悬挂吐司插画。色块字标。双胶囊按钮。', en: 'Cream canvas. Hanging toast illustration. Block wordmark. Dual capsule buttons.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install react-hot-toast' }],
+      en: [{ k: 'CLI', v: 'npm install react-hot-toast' }],
+    },
+  },
+  kbar: {
+    lede: { zh: 'React 命令面板。MIT。不是 cmdk。', en: 'React command palette. MIT. Not cmdk.' },
+    style: { zh: '浅色文档首页。几何线标。居中标题。命令行安装块。', en: 'Light documentation homepage. Geometric line mark. Centered title. CLI install block.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install kbar' }],
+      en: [{ k: 'CLI', v: 'npm install kbar' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

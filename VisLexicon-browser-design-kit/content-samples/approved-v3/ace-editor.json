@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "entryId": "ace-editor",
+  "entityId": "entity-ace-editor",
+  "attemptId": "swarm-curator-batch-b-w1b-ace-editor-20260906",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://ace.c9.io/",
+    "finalUrl": "https://ace.c9.io/",
+    "checkedAt": "2026-09-06T15:20:00.000Z"
+  },
+  "editorial": {
+    "name": "Ace",
+    "descriptionZh": "Ajax.org B.V. 维护的嵌入式网页代码编辑器 Ace，npm 包 ace-code 现为 1.44.0。LICENSE 为 BSD-3-Clause，不是 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "用 ace.edit 挂上主题和语言模式",
+    "noteZh": "ace.c9.io 首页写嵌入式 JavaScript 代码编辑器，首屏即是可编辑示例。How-To 给出 ace.edit、setOptions 与 setTheme。Kitchen Sink 左侧可切语言、主题和 Vim/Emacs，本次截图右侧编辑区为空。许可为 BSD-3-Clause，不是 MIT。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-ace-editor",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Ace 定义为 embeddable code editor written in JavaScript，首屏即是可编辑的 JavaScript 现场编辑器。",
+        "evidenceUrl": "https://ace.c9.io/"
+      },
+      {
+        "statement": "How-To Guide 给出 ace.edit 配置、setOptions 与 setTheme，证明交付物是可嵌入的代码编辑器。",
+        "evidenceUrl": "https://ace.c9.io/#nav=howto"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-b-w1b",
+    "reviewerId": "swarm-reviewer-grok-w",
+    "confirmedAt": "2026-09-07T00:15:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview",
+      "edit"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ace.c9.io/",
+      "finalUrl": "https://ace.c9.io/",
+      "title": "Ace - The High Performance Code Editor for the Web",
+      "selectionRationale": "先看首页。云标 Ace 和现场编辑器都在首屏。",
+      "shot": {
+        "src": "/shots/ace-editor/v2-identity.png",
+        "sha256": "c5e5b746d8a3f21c96492bc1200789c4d13c312d43f6102a3a892f9defc27a02",
+        "width": 1280,
+        "height": 900,
+        "bytes": 156967,
+        "alt": "Ace 首页：THE HIGH PERFORMANCE CODE EDITOR FOR THE WEB，About 写 Built for Code，下方 JavaScript 模式现场编辑器显示 add(x, y)"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ace.c9.io/#nav=howto",
+      "finalUrl": "https://ace.c9.io/#nav=howto",
+      "title": "Ace - The High Performance Code Editor for the Web",
+      "selectionRationale": "再翻 How-To。ace.edit 与 setTheme 排出用法。",
+      "shot": {
+        "src": "/shots/ace-editor/v2-breadth.png",
+        "sha256": "1356898491d12f7cd99f45c5a8c3a70c5c6449adb076a440646348f4393aa345",
+        "width": 1280,
+        "height": 900,
+        "bytes": 146609,
+        "alt": "Ace How-To Guide：标题 Working with Ace，Configuring the editor，代码块含 ace.edit 与 editor.setOptions"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ace.c9.io/build/kitchen-sink.html",
+      "finalUrl": "https://ace.c9.io/build/kitchen-sink.html",
+      "title": "Ace Kitchen Sink",
+      "selectionRationale": "最后开 Kitchen Sink。左侧 Mode/Theme 即证明。",
+      "shot": {
+        "src": "/shots/ace-editor/v2-proof.png",
+        "sha256": "cbbc87c064345107324050209239ba784a9f41da8a6aca54c9b3c7b794b4a2c8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 57855,
+        "alt": "Ace Kitchen Sink：左侧 Cloud9 蓝栏列出 Mode Text、Theme TextMate、Ace/Vim/Emacs/Sublime/VSCode，右侧编辑区画布为空，底栏 Enter a command"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Fabian Jakobs",
+      "sourceUrl": "https://raw.githubusercontent.com/ajaxorg/ace/master/package.json",
+      "evidence": "package.json author 为 Fabian Jakobs <fabian@c9.io>。npm 包 ace-code@1.44.0 的 author 同为 Fabian Jakobs。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Ajax.org B.V.",
+      "sourceUrl": "https://raw.githubusercontent.com/ajaxorg/ace/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2010, Ajax.org B.V.。第三款写 Neither the name of Ajax.org B.V. nor the names of its contributors。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/ajaxorg/ace",
+      "sourceUrl": "https://ace.c9.io/",
+      "evidence": "首页 GitHub 缎带链到 ajaxorg/ace。package.json repository.url 为 https://github.com/ajaxorg/ace.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "BSD-3-Clause",
+      "sourceUrl": "https://raw.githubusercontent.com/ajaxorg/ace/master/LICENSE",
+      "evidence": "LICENSE 为三款 BSD：保留版权声明、二进制再分发须附带声明、不得用 Ajax.org B.V. 名称背书。package.json license 为 BSD-3-Clause。覆盖 Ace 编辑器源码。首页只写 BSD license，以 LICENSE 文件为准，不是 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://ace.c9.io/",
+      "evidence": "Get the Open-Source Code 写 Ace source code is hosted on GitHub and released under the BSD license。文档与 Kitchen Sink 公开可浏览。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "ace-code",
+      "sourceUrl": "https://raw.githubusercontent.com/ajaxorg/ace/master/package.json",
+      "evidence": "源码仓 package.json name 为 ace-code，version 1.44.0。嵌入预构建包为 ace-builds@1.44.0，license 同为 BSD-3-Clause。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-b-w1b",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-w"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-06",
+    "note": "swarm-curator-batch-b-w1b 进站起草。LICENSE 与 package.json 均为 BSD-3-Clause，不是 MIT。Kitchen Sink 截图左侧控件完整，右侧编辑区空白。分类对象是 ace.c9.io 开源编辑器，不是 Cloud9 IDE。status 仍 DRAFT。 swarm-reviewer-grok-w 独立打开活页、LICENSE 原文与三张 PNG sha256 后 APPROVED。"
+  }
+}
