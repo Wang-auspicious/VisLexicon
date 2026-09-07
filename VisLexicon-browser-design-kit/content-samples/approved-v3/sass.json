@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "entryId": "sass",
+  "entityId": "entity-sass",
+  "attemptId": "swarm-curator-batch-a-w2-sass-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://sass-lang.com/",
+    "finalUrl": "https://sass-lang.com/",
+    "checkedAt": "2026-09-07T01:23:00.000Z"
+  },
+  "editorial": {
+    "name": "Sass",
+    "descriptionZh": "Sass 团队维护的 CSS 扩展语言站。现行实现为 Dart Sass 1.104.0。dart-sass LICENSE 经 GitHub SPDX 标 MIT。用变量、嵌套与 mixin 把样式编译成 CSS。",
+    "takeawayZh": "装 Dart Sass，先抄嵌套按钮规则",
+    "noteZh": "首页标题 CSS with superpowers，现发布 Dart Sass 1.104.0。文档页定义为编译到 CSS 的样式语言，侧栏列出 Syntax、Style Rules。Style Rules 页给出 .button 的 SCSS 与 CSS Output。页脚 MIT 链 dart-sass LICENSE。本条收语言站与现行实现。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-sass",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Sass 定义为 professional grade CSS extension language，Current Releases 列出 Dart Sass 1.104.0，LibSass 与 Ruby Sass 标停用。",
+        "evidenceUrl": "https://sass-lang.com/"
+      },
+      {
+        "statement": "Documentation 写 Sass is a stylesheet language that's compiled to CSS；Style Rules 给出 .button 的 SCSS、Sass 与 CSS Output，证明交付物是可编译的样式语言，不是现成组件包。",
+        "evidenceUrl": "https://sass-lang.com/documentation/style-rules/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-a-w2",
+    "reviewerId": "swarm-reviewer-grok-x",
+    "confirmedAt": "2026-09-07T02:24:31.407Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "download"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://sass-lang.com/",
+      "finalUrl": "https://sass-lang.com/",
+      "title": "Sass: Syntactically Awesome Style Sheets",
+      "selectionRationale": "首页标题 CSS with superpowers，现发布 Dart Sass 1.104.0。",
+      "shot": {
+        "src": "/shots/sass/v2-identity.png",
+        "sha256": "10af769524e6d412723c5141f806a2c196460731cdcf391d3c6c935da21d0c65",
+        "width": 1280,
+        "height": 900,
+        "bytes": 149058,
+        "alt": "Sass 首页：顶栏 Free Palestine 黑条，Sass logo，标题 CSS with superpowers，副标题 CSS extension language，眼镜插画，Current Releases Dart Sass 1.104.0"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://sass-lang.com/documentation/",
+      "finalUrl": "https://sass-lang.com/documentation/",
+      "title": "Sass: Documentation",
+      "selectionRationale": "Documentation 侧栏列出 Syntax、Style Rules、At-Rules。",
+      "shot": {
+        "src": "/shots/sass/v2-breadth.png",
+        "sha256": "7e8672ccd0ba22fc549c1aab85c3fffda10ab9a58a06d99a211807be01e50a8e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 151821,
+        "alt": "Sass Documentation：标题 Documentation，左侧 Contents 含 Syntax、Style Rules、At-Rules，正文 stylesheet language that's compiled to CSS"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://sass-lang.com/documentation/style-rules",
+      "finalUrl": "https://sass-lang.com/documentation/style-rules/",
+      "title": "Sass: Style Rules",
+      "selectionRationale": "Style Rules 给出 .button 的 SCSS、Sass 与 CSS Output。",
+      "shot": {
+        "src": "/shots/sass/v2-proof.png",
+        "sha256": "9c6d1026bc68f4f82029a170f36dd2b44d2dfa4fcab2d2d3afff778a1a105e02",
+        "width": 1280,
+        "height": 900,
+        "bytes": 138116,
+        "alt": "Sass Style Rules：标题 Style Rules，SCSS/Sass/CSS 三栏，.button padding 3px 10px 示例与 Playground 链"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Google Inc.",
+      "sourceUrl": "https://raw.githubusercontent.com/sass/dart-sass/main/LICENSE",
+      "evidence": "dart-sass LICENSE 版权行为 Copyright (c) 2016, Google Inc. AUTHORS 首行 Google Inc. npm 包 sass@1.104.0 author 为 Natalie Weizenbaum <nweiz@google.com>。首页页脚写 the Sass team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Sass",
+      "sourceUrl": "https://sass-lang.com/",
+      "evidence": "首页写 The Sass Core Team。页脚写 Sass © 2006–2026 the Sass team，并链 Sass on GitHub 到 github.com/sass。本条只收语言站，不把整个 Sass 组织当成同一入口。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/sass/dart-sass",
+      "sourceUrl": "https://sass-lang.com/dart-sass/",
+      "evidence": "Dart Sass 页写 primary implementation of Sass，并链 GitHub 仓库 sass/dart-sass。npm 包 sass@1.104.0 repository 为 git+https://github.com/sass/dart-sass.git。语言仓 sass/sass 不作为本条仓库字段。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/sass/dart-sass/main/LICENSE",
+      "evidence": "raw LICENSE 正文为 MIT 许可条款（Permission is hereby granted），版权行 Copyright (c) 2016, Google Inc.，文件无 SPDX-License-Identifier 行。GitHub License API 对 sass/dart-sass 返回 spdx_id MIT。npm 包 sass@1.104.0 license 字段为 MIT。首页页脚写 MIT License 并链该文件。该许可覆盖 Dart Sass 实现源码。语言仓 sass/sass LICENSE 同样 SPDX MIT（Copyright (c) 2019, Google LLC）。Install 所列 CodeKit、Prepros 为第三方付费应用，不在此许可内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://sass-lang.com/install/",
+      "evidence": "Documentation 与 Style Rules 公开可读。Install 给出 npm install -g sass 与独立发行包。未见 Sass 本体付费墙。Install 所列 CodeKit、Prepros 为第三方付费应用。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "sass",
+      "sourceUrl": "https://sass-lang.com/install/",
+      "evidence": "Install 写 npm install -g sass，并写 sass --version 成功时包含 1.104.0。Dart Sass 页写 npm install --save-dev sass。npm 包 name 为 sass，version 1.104.0。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-a-w2",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-x",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-x"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-a-w2 进站起草。https://sass-lang.com/ 200。/documentation 301 到 /documentation/。/documentation/style-rules 301 到 /documentation/style-rules/。LICENSE 为 MIT（GitHub SPDX），不是 Apache。本条收语言站与 Dart Sass 现行实现，不收已停用的 Ruby Sass/LibSass。截图哈希仍为零占位。status 仍 DRAFT。 swarm-reviewer-grok-x 复核活页、截图哈希与 LICENSE 后 APPROVED。"
+  }
+}

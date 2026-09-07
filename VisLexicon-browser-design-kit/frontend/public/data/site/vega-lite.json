@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:30:49.504Z",
+  "entryId": "vega-lite",
+  "entityId": "entity-vega-lite",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "vega.github.io",
+  "official": {
+    "inputUrl": "https://vega.github.io/vega-lite/",
+    "finalUrl": "https://vega.github.io/vega-lite/",
+    "checkedAt": "2026-09-07T01:44:00.000Z"
+  },
+  "editorial": {
+    "name": "Vega-Lite",
+    "descriptionZh": "华盛顿大学 Interactive Data Lab 维护的高级可视化语法 Vega-Lite，现为 6.4.3。仓库 LICENSE 标 BSD-3-Clause。本条只收 Vega-Lite，不是已收录的 Vega。",
+    "takeawayZh": "用 JSON 写柱状图，编译成 Vega",
+    "noteZh": "首页标题 A Grammar of Interactive Graphics，按钮 Latest Version: 6.4.3，并写明相对 Vega 更短。Example Gallery 按 Bar Charts、Maps 分组。Simple Bar Chart 页给出蓝色柱图和 v6.json。BSD-3-Clause 覆盖源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Vega-Lite 定义为 high-level grammar of interactive graphics，用声明式 JSON 描述图表，并由编译器生成 Vega。",
+        "evidenceUrl": "https://vega.github.io/vega-lite/"
+      },
+      {
+        "statement": "Simple Bar Chart 示例同时给出可交互柱状图与完整 Vega-Lite JSON Specification，证明交付物是可运行的可视化代码。",
+        "evidenceUrl": "https://vega.github.io/vega-lite/examples/bar.html"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:26:58.830Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "svg",
+      "canvas"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "researcher"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "contentOrganization": [
+      "case-gallery",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vega.github.io/vega-lite/",
+      "finalUrl": "https://vega.github.io/vega-lite/",
+      "title": "A High-Level Grammar of Interactive Graphics | Vega-Lite",
+      "selectionRationale": "首页标题、图墙与 Latest Version 6.4.3 在首屏。",
+      "shot": {
+        "src": "/shots/vega-lite/v2-identity.png",
+        "sha256": "dceb588a50074f85885a97643e02826e1902055ee97db5c555430937d713e5e9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 302972,
+        "alt": "Vega-Lite 首页：标题 A Grammar of Interactive Graphics，上方示例图墙，按钮 Latest Version: 6.4.3"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://vega.github.io/vega-lite/examples/",
+      "finalUrl": "https://vega.github.io/vega-lite/examples/",
+      "title": "Example Gallery | Vega-Lite",
+      "selectionRationale": "Gallery 按 Bar、Maps 分组排出图种。",
+      "shot": {
+        "src": "/shots/vega-lite/v2-breadth.png",
+        "sha256": "bd4bf0d12289f51656aa379b23a0947ea51f5b52738f71ada67ac24c1ea7e870",
+        "width": 1280,
+        "height": 900,
+        "bytes": 63934,
+        "alt": "Vega-Lite Example Gallery：Single-View Plots 下列 Bar Charts、Line Charts、Maps、Interactive"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://vega.github.io/vega-lite/examples/bar.html",
+      "finalUrl": "https://vega.github.io/vega-lite/examples/bar.html",
+      "title": "Simple Bar Chart | Vega-Lite",
+      "selectionRationale": "Simple Bar Chart 页现场柱状图与 JSON 规格就是可复制证明。",
+      "shot": {
+        "src": "/shots/vega-lite/v2-proof.png",
+        "sha256": "7e8ada850f5551621f83a415e4201d11597bdd0ceebfe6031d9086a1699a94a0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 37547,
+        "alt": "Vega-Lite Simple Bar Chart：蓝色柱状图 A–I，下方 JSON Specification 含 $schema vega-lite/v6.json"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "University of Washington Interactive Data Lab",
+      "sourceUrl": "https://raw.githubusercontent.com/vega/vega-lite/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2015, University of Washington Interactive Data Lab。首页 Team 写 development is led by alumni and members of UW IDL。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "University of Washington Interactive Data Lab",
+      "sourceUrl": "https://vega.github.io/vega-lite/",
+      "evidence": "LICENSE 署 University of Washington Interactive Data Lab。GitHub 组织 vega 维护仓库。首页写 Compared to Vega，本条不是 Vega。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/vega/vega-lite",
+      "sourceUrl": "https://vega.github.io/vega-lite/",
+      "evidence": "首页导航 GitHub 链到 github.com/vega/vega-lite。package.json repository.url 为 https://github.com/vega/vega-lite.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "BSD-3-Clause",
+      "sourceUrl": "https://raw.githubusercontent.com/vega/vega-lite/master/LICENSE",
+      "evidence": "LICENSE 含 BSD-3-Clause 三项条件，禁止用版权方名称背书。package.json license 为 BSD-3-Clause。覆盖 Vega-Lite 源码与编译器，不覆盖 Vega 运行时本身。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://vega.github.io/vega-lite/",
+      "evidence": "首页、Example Gallery 与 Simple Bar Chart 公开可浏览。按钮 Try online。无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "vega-lite",
+      "sourceUrl": "https://vega.github.io/vega-lite/",
+      "evidence": "首页按钮 Latest Version: 6.4.3。npm 包 vega-lite version 6.4.3。JSON 规格 $schema 为 vega-lite/v6.json。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/vega-lite.md",
+  "registryUrl": "/r/vega-lite.json"
+}

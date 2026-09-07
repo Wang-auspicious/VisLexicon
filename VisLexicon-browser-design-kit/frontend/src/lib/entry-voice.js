@@ -1252,6 +1252,22 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm install fomantic-ui' }],
     },
   },
+  sass: {
+    lede: { zh: 'CSS 扩展语言。Dart Sass MIT。', en: 'CSS extension language. Dart Sass is MIT.' },
+    style: { zh: '浅色营销。粉红手写字标。超大无衬线标题。眼镜插画。品红版本条。', en: 'Light marketing. Pink script wordmark. Oversized sans title. Glasses illustration. Magenta release bar.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install -g sass' }],
+      en: [{ k: 'CLI', v: 'npm install -g sass' }],
+    },
+  },
+  purecss: {
+    lede: { zh: '小型响应式 CSS 模块。BSD-3-Clause。', en: 'Small responsive CSS modules. BSD-3-Clause.' },
+    style: { zh: '浅色文档。蓝 P 方标。彩色模块条。左侧黑导航。', en: 'Light docs. Blue P tile. Colored module bar. Black left nav.' },
+    acquire: {
+      zh: [{ k: '样式表', v: 'pure-min.css' }],
+      en: [{ k: 'Stylesheet', v: 'pure-min.css' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

@@ -1,0 +1,195 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:30:49.504Z",
+  "entryId": "react-transition-group",
+  "entityId": "entity-react-transition-group",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://reactcommunity.org/react-transition-group/",
+    "finalUrl": "https://reactcommunity.org/react-transition-group/",
+    "checkedAt": "2026-09-07T01:44:00.000Z"
+  },
+  "editorial": {
+    "name": "React Transition Group",
+    "descriptionZh": "React Community 维护的进入/退出过渡组件库 react-transition-group，现为 4.4.5。仓库 LICENSE 标 BSD-3-Clause。它不自己做样式动画，只暴露阶段并管理 class。",
+    "takeawayZh": "管进出阶段，CSS 动画自己写",
+    "noteZh": "首页写明不是 React-Motion 那种动画库，只暴露 entering/exiting 阶段，并列出四个组件。TransitionGroup 页给 TodoList 沙盒，左边 index.js 引 CSSTransition。CSSTransition 页给 classNames 与 .my-node-enter。BSD-3-Clause 覆盖源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 React Transition Group 定义为暴露 entering/exiting 过渡阶段、管理 class 与 DOM 的组件，并写明它不是 React-Motion 那种动画库。",
+        "evidenceUrl": "https://reactcommunity.org/react-transition-group/"
+      },
+      {
+        "statement": "CSSTransition 文档给出 classNames 与 .my-node-enter / .my-node-enter-active 透明度过渡示例，证明交付物是可复制的动效实现代码。",
+        "evidenceUrl": "https://reactcommunity.org/react-transition-group/css-transition"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:26:58.830Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://reactcommunity.org/react-transition-group/",
+      "finalUrl": "https://reactcommunity.org/react-transition-group/",
+      "title": "React Transition Group",
+      "selectionRationale": "首页标题、安装命令与四个组件链接在首屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-transition-group/v2-identity.png",
+        "sha256": "603eda5d43a45e870572c08f3bca0d8a6473b389e52dd66720ab2e3a0a498ee2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 60745,
+        "alt": "React Transition Group 首页：标题、npm install 命令，下方 Components 列出 Transition、CSSTransition、SwitchTransition、TransitionGroup"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://reactcommunity.org/react-transition-group/transition-group",
+      "finalUrl": "https://reactcommunity.org/react-transition-group/transition-group",
+      "title": "TransitionGroup",
+      "selectionRationale": "TransitionGroup 页给列表进出沙盒，看出组件范围。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-transition-group/v2-breadth.png",
+        "sha256": "3339d00078091bea386d5cede95f4d2c9ac1635a878a80ffb5c17bec4ff37981",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109190,
+        "alt": "TransitionGroup 文档：标题 TransitionGroup，Example 分栏左边 index.js 引 CSSTransition，右边 Codesandbox"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://reactcommunity.org/react-transition-group/css-transition",
+      "finalUrl": "https://reactcommunity.org/react-transition-group/css-transition",
+      "title": "CSSTransition",
+      "selectionRationale": "CSSTransition 页 classNames 与 CSS 就是证明。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/react-transition-group/v2-proof.png",
+        "sha256": "b0759efe90b13cde3549073875986f5309893b06afc2d3c65561dd57fc6c7128",
+        "width": 1280,
+        "height": 900,
+        "bytes": 82143,
+        "alt": "CSSTransition 文档：JSX 示例 classNames=my-node，下方 .my-node-enter 与 opacity 过渡 CSS"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "React Community",
+      "sourceUrl": "https://raw.githubusercontent.com/reactjs/react-transition-group/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2018, React Community。Forked from React，Copyright 2013-present, Facebook, Inc。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "React Community",
+      "sourceUrl": "https://reactcommunity.org/react-transition-group/",
+      "evidence": "站点品牌为 React Transition Group。LICENSE 署 React Community。GitHub 组织 reactjs 维护仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/reactjs/react-transition-group",
+      "sourceUrl": "https://raw.githubusercontent.com/reactjs/react-transition-group/master/package.json",
+      "evidence": "package.json repository.url 为 https://github.com/reactjs/react-transition-group.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "BSD-3-Clause",
+      "sourceUrl": "https://raw.githubusercontent.com/reactjs/react-transition-group/master/LICENSE",
+      "evidence": "LICENSE 标题 BSD 3-Clause License，Copyright (c) 2018, React Community。package.json license 为 BSD-3-Clause。覆盖 react-transition-group 源码，不覆盖第三方动画库。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://reactcommunity.org/react-transition-group/",
+      "evidence": "首页给出 npm install react-transition-group --save 与 unpkg CDN。文档公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "react-transition-group",
+      "sourceUrl": "https://raw.githubusercontent.com/reactjs/react-transition-group/master/package.json",
+      "evidence": "package.json name 为 react-transition-group，version 4.4.5。首页安装命令 npm install react-transition-group --save。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/react-transition-group",
+    "designMdUrl": "https://vislexicon.com/site/react-transition-group.md",
+    "checkedAt": "2026-09-07T01:44:00.000Z",
+    "license": "BSD-3-Clause"
+  }
+}

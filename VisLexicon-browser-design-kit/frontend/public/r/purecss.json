@@ -1,0 +1,195 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:30:49.504Z",
+  "entryId": "purecss",
+  "entityId": "entity-purecss",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://purecss.io/",
+    "finalUrl": "https://pure-css.github.io/",
+    "checkedAt": "2026-09-07T01:23:37.000Z"
+  },
+  "editorial": {
+    "name": "Pure",
+    "descriptionZh": "Yahoo! Inc. 发起的 CSS 模块集 Pure，现为 v3.0.0。仓库 LICENSE 标 BSD-3-Clause，不是 MIT。在 Normalize.css 上提供网格、按钮、表单、菜单等模块。",
+    "takeawayZh": "链上 pure-min.css，先抄纯按钮",
+    "noteZh": "首页标题 Pure，副标题极小响应式 CSS 模块，现为 v3.0.0。Get Started 给出 jsDelivr 链 pure-min.css，并有三分栏网格。Buttons 页现场 A Pure Button 与 class=pure-button。本条收 CSS 模块集，不收 Yahoo 公司。BSD-3-Clause 覆盖源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Pure 定义为 A set of small, responsive CSS modules that you can use in every web project，并列出 base、grids、forms、buttons、tables、menus 模块体积。",
+        "evidenceUrl": "https://pure-css.github.io/"
+      },
+      {
+        "statement": "Buttons 页给出 class=\"pure-button\" 的 a 与 button 现场 A Pure Button，证明交付物是可复制的界面组件。",
+        "evidenceUrl": "https://pure-css.github.io/buttons/"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:24:31.407Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://purecss.io/",
+      "finalUrl": "https://pure-css.github.io/",
+      "title": "Pure",
+      "selectionRationale": "首页标题 Pure，副标题极小响应式 CSS 模块，现为 v3.0.0。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/purecss/v2-identity.png",
+        "sha256": "a9055a43a816beb029b79a7f670804c41dd1554dd46ddedf8e95f31d8c749f28",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86857,
+        "alt": "Pure 首页：标题 A set of small, responsive CSS modules，按钮 Get Started 与 View on GitHub，base 0.9KB grids 0.5KB forms 1.4KB buttons 0.7KB"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://pure-css.github.io/start/",
+      "finalUrl": "https://pure-css.github.io/start/",
+      "title": "Get Started - Pure",
+      "selectionRationale": "Get Started 给出 jsDelivr 链与三分栏网格现场。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/purecss/v2-breadth.png",
+        "sha256": "c47c77835c2e8dcb3437c1779bb20984a776f3ad26e565339e423d4cd1a96a33",
+        "width": 1280,
+        "height": 900,
+        "bytes": 103909,
+        "alt": "Pure Get Started：标题 Start your next web project with Pure，Add Pure to Your Page，jsDelivr 链 purecss@3.0.0/build/pure-min.css，三分栏 Thirds"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://pure-css.github.io/buttons/",
+      "finalUrl": "https://pure-css.github.io/buttons/",
+      "title": "Buttons - Pure",
+      "selectionRationale": "Buttons 页给出纯按钮现场和 pure-button 代码。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/purecss/v2-proof.png",
+        "sha256": "8d26fcfdf5e5f2035ee685535a60984ebcd4e13288af67a24d43f32cbd881677",
+        "width": 1280,
+        "height": 900,
+        "bytes": 70038,
+        "alt": "Pure Buttons：标题 Buttons，Simple CSS for buttons，现场 A Pure Button，下方 a.pure-button 与 button.pure-button 代码"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Yahoo! Inc.",
+      "sourceUrl": "https://raw.githubusercontent.com/pure-css/pure/main/LICENSE",
+      "evidence": "LICENSE 标题 Software License Agreement (BSD License)，版权行为 Copyright 2013 Yahoo! Inc. package.json authors 列为 ericf、tilomitra、msweeney、jamesalley。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Pure",
+      "sourceUrl": "https://pure-css.github.io/",
+      "evidence": "站点品牌为 Pure。页脚写 © 2014 - Present Yahoo Inc. LICENSE 版权主体为 Yahoo! Inc. GitHub 组织 pure-css 维护仓库。本条只收 Pure CSS 模块集，不把 Yahoo 整公司当主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/pure-css/pure",
+      "sourceUrl": "https://raw.githubusercontent.com/pure-css/pure/main/package.json",
+      "evidence": "package.json repository.url 为 git://github.com/pure-css/pure.git，homepage 为 https://purecss.io。首页 View on GitHub 与页脚 GitHub Project 链到 github.com/pure-css/pure。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "BSD-3-Clause",
+      "sourceUrl": "https://raw.githubusercontent.com/pure-css/pure/main/LICENSE",
+      "evidence": "LICENSE 为三款 BSD：保留版权声明、二进制再分发须附带声明、不得用 Yahoo! Inc. 名称背书。package.json license 为 BSD-3-Clause。README 写 Yahoo! Inc. BSD-3-Clause license。页脚写 Yahoo BSD License。该许可覆盖 Pure CSS 源码；CREDITS.md 中 Normalize.css 另标 MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://pure-css.github.io/start/",
+      "evidence": "Get Started 写 free jsDelivr CDN，链 https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css。Buttons 与文档公开可读。Tools 写 npm install purecss --save。未见模块集付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "purecss",
+      "sourceUrl": "https://pure-css.github.io/tools/",
+      "evidence": "Tools 页 Installing Pure with npm 写 npm install purecss --save。Get Started 链 purecss@3.0.0/build/pure-min.css。package.json name 为 purecss，version 3.0.0。页脚写 Pure v3.0.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/purecss",
+    "designMdUrl": "https://vislexicon.com/site/purecss.md",
+    "checkedAt": "2026-09-07T01:23:37.000Z",
+    "license": "BSD-3-Clause"
+  }
+}

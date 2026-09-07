@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:30:49.504Z",
+  "entryId": "pollen-css",
+  "entityId": "entity-pollen-css",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "pollen.style",
+  "official": {
+    "inputUrl": "https://pollen.style/",
+    "finalUrl": "https://www.pollen.style/",
+    "checkedAt": "2026-09-07T01:44:00.000Z"
+  },
+  "editorial": {
+    "name": "Pollen",
+    "descriptionZh": "Madeleine Ostoja 与 Hyperfocal 维护的 CSS 变量构建系统 Pollen，npm 包 pollen-css 现为 5.0.2。LICENSE.md 为 MIT。",
+    "takeawayZh": "装 pollen-css，用 --scale 写字号",
+    "noteZh": "首页标题 Introducing Pollen，副题 The CSS variables build system，署名 Hyperfocal。左侧列出 Typography、Layout、Colors。Getting started 写 npm i pollen-css。Typography 页给出 --scale-* 和一排绿色 A。MIT 覆盖源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Pollen 定义为 The CSS variables build system，并列出可配置的 CLI 构建工具。",
+        "evidenceUrl": "https://www.pollen.style/"
+      },
+      {
+        "statement": "Getting started 给出 npm i pollen-css 与 import 'pollen-css/pollen.css'；Typography 页给出可复制的 --scale-* 字号令牌。",
+        "evidenceUrl": "https://www.pollen.style/basics/getting-started"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:26:58.830Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.pollen.style/",
+      "finalUrl": "https://www.pollen.style/",
+      "title": "Introducing Pollen",
+      "selectionRationale": "首页标题与 CSS variables build system 在首屏。",
+      "shot": {
+        "src": "/shots/pollen-css/v2-identity.png",
+        "sha256": "c9c9827f4d588ce1b47e9e1d3c2c8f5007c79b6840c7b11734e973ab72861719",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135396,
+        "alt": "Pollen 首页：标题 Introducing Pollen，副题 The CSS variables build system，左侧 Typography/Layout/Colors 目录"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.pollen.style/basics/getting-started",
+      "finalUrl": "https://www.pollen.style/basics/getting-started",
+      "title": "Getting started",
+      "selectionRationale": "Getting started 给出 npm 与 CDN 三种安装。",
+      "shot": {
+        "src": "/shots/pollen-css/v2-breadth.png",
+        "sha256": "4fe23843fb792be0bb9d874e5637afd0cb5162ff937dd0bf710582adca7ed764",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134060,
+        "alt": "Pollen Getting started：Quick Start 标签 Module import，命令 npm i pollen-css 与 import pollen-css/pollen.css"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.pollen.style/modules/typography",
+      "finalUrl": "https://www.pollen.style/modules/typography",
+      "title": "Typography | Pollen",
+      "selectionRationale": "Typography 页 --scale 阶梯和代码就是可拿走的令牌。",
+      "shot": {
+        "src": "/shots/pollen-css/v2-proof.png",
+        "sha256": "dd75c2b28e7abff820f29ee4d7e3284e54360db2ba3d7d7b99979518f549574d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113322,
+        "alt": "Pollen Typography：Modular Scale，一排绿色 A，代码 font-size: var(--scale-4)，表列 --scale-000 为 0.75rem"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Madeleine Ostoja",
+      "sourceUrl": "https://raw.githubusercontent.com/hyperfocalHQ/pollen/main/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright 2021 Madeleine Ostoja <madi@heybokeh.com>。package.json author.name 为 Madeleine Ostoja <madi@heybokeh.com>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Hyperfocal",
+      "sourceUrl": "https://www.pollen.style/",
+      "evidence": "首页写 Made and maintained with ❤️ by the fine people at Hyperfocal。GitHub 组织 hyperfocalHQ 维护 pollen 仓。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/hyperfocalHQ/pollen",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/pollen-css/package.json",
+      "evidence": "当前 GitHub 仓库为 hyperfocalHQ/pollen。package.json repository.url 仍写 git+https://github.com/heybokeh/pollen.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/hyperfocalHQ/pollen/main/LICENSE.md",
+      "evidence": "LICENSE.md 为 MIT 许可正文，Copyright 2021 Madeleine Ostoja <madi@heybokeh.com>。package.json license 为 MIT。覆盖 pollen-css 源码与 CLI。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.pollen.style/basics/getting-started",
+      "evidence": "Getting started 写 npm i pollen-css 与 Unpkg CDN。文档公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "pollen-css",
+      "sourceUrl": "https://www.pollen.style/basics/getting-started",
+      "evidence": "Quick Start 写 npm i pollen-css 与 import 'pollen-css/pollen.css'。package.json name 为 pollen-css，version 5.0.2。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/pollen-css.md",
+  "registryUrl": "/r/pollen-css.json"
+}

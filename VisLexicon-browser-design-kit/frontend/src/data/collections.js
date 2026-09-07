@@ -205,7 +205,7 @@ export const COLLECTIONS = [
     titleEn: 'CSS tools',
     blurbZh: '这些站交付的是 CSS 框架或引擎：用工具类或构建期原子样式接到现有项目，不是现成组件包。',
     blurbEn: 'CSS frameworks and engines. Utility classes or build-time atomic styles, not ready-made component packs.',
-    entryIds: ['tailwind-css', 'panda-css', 'unocss', 'cva', 'pico-css', 'milligram', 'vanilla-extract', 'new-css', 'bootswatch', 'postcss', 'lightningcss', 'tachyons', 'spectre-css'],
+    entryIds: ['tailwind-css', 'panda-css', 'unocss', 'cva', 'pico-css', 'milligram', 'vanilla-extract', 'new-css', 'bootswatch', 'postcss', 'lightningcss', 'tachyons', 'spectre-css', 'sass', 'purecss'],
     createdAt: '2026-09-06',
   },
   {

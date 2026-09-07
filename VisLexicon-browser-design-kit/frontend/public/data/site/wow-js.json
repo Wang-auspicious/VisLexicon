@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:30:49.504Z",
+  "entryId": "wow-js",
+  "entityId": "entity-wow-js",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "wowjs.uk",
+  "official": {
+    "inputUrl": "https://wowjs.uk/",
+    "finalUrl": "https://wowjs.uk/",
+    "checkedAt": "2026-09-07T09:36:14.000Z"
+  },
+  "editorial": {
+    "name": "WOW.js",
+    "descriptionZh": "Matthieu Aussaguel 原作、Thomas Grainger 为保住 MIT 而分叉的滚动揭示库 WOW.js。加 wow 与 Animate.css 类，滚到视口再播。包 1.3.0。",
+    "takeawayZh": "加 wow class，滚到视口再播动画",
+    "noteZh": "首页大写 wow.js，写 Reveal Animations When You Scroll，100% MIT, not GPL。文档 Setup：先链 animate.css，再 new WOW().init()。demo.html 黄条 fadeInDown、红条 pulse 已在动。README 写暂时 deprecated，偏向 AOS。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 WOW.js 定义为 Reveal Animations When You Scroll，并标明与 Animate.css 配合，交付物是滚动揭示动效代码。",
+        "evidenceUrl": "https://wowjs.uk/"
+      },
+      {
+        "statement": "文档给出 <div class=\"wow bounceInUp\"> 与 new WOW().init()，demo.html 用 fadeInDown、pulse 色块证明滚动到视口会播放。",
+        "evidenceUrl": "https://wowjs.uk/docs.html"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:26:53.208Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://wowjs.uk/",
+      "finalUrl": "https://wowjs.uk/",
+      "title": "wow.js — Reveal Animations When Scrolling",
+      "selectionRationale": "先看首页：wow.js 标题和 MIT, not GPL。",
+      "shot": {
+        "src": "/shots/wow-js/v2-identity.png",
+        "sha256": "c5985b939f61c182a8d31e3ef07d377d09d69dbab16814bad2c60125ee633e55",
+        "width": 1280,
+        "height": 900,
+        "bytes": 290880,
+        "alt": "wow.js 首页：粉红 WOW 字标夹柴犬头像，文案 Reveal Animations When You Scroll 与 100% MIT Licensed, not GPL"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://wowjs.uk/docs.html",
+      "finalUrl": "https://wowjs.uk/docs.html",
+      "title": "wow.js — Documentation",
+      "selectionRationale": "再看文档：链 animate.css 和 new WOW().init()。",
+      "shot": {
+        "src": "/shots/wow-js/v2-breadth.png",
+        "sha256": "aecbb51df7bba1e3e8d5e7b175dec760d6ca3c69d259d6d37634d50ec745c4db",
+        "width": 1280,
+        "height": 900,
+        "bytes": 405169,
+        "alt": "wow.js Documentation：黑板标题 Documentation，Setup 第 1 步链 animate.css，第 2 步 new WOW().init()"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://wowjs.uk/demo.html",
+      "finalUrl": "https://wowjs.uk/demo.html",
+      "title": "WOW",
+      "selectionRationale": "最后打开 demo：黄条红条已经在播。",
+      "shot": {
+        "src": "/shots/wow-js/v2-proof.png",
+        "sha256": "3ba57aeecfcd53341f7d70ee1a5048a2feba27fd02c185bf6cc6a391ef7819bc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 14600,
+        "alt": "wow.js demo.html：标题 WOW.js，下方黄色色块与红色色块已显现"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Matthieu Aussaguel; Thomas Grainger (MIT fork)",
+      "sourceUrl": "https://wowjs.uk/",
+      "evidence": "页脚 Developed by Matt Aussaguel – Forked to remain under the MIT license by Thomas Grainger。package.json contributors 列出二人。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "graingert",
+      "sourceUrl": "https://wowjs.uk/",
+      "evidence": "首页 GitHub 链到 github.com/graingert/wow。当前 MIT 分叉由 Thomas Grainger 维护。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/graingert/WOW",
+      "sourceUrl": "https://wowjs.uk/",
+      "evidence": "首页 GitHub 链到 https://github.com/graingert/wow。package.json repository.url 为 git://github.com/graingert/WOW.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://wowjs.uk/",
+      "evidence": "首页写 100% MIT Licensed, not GPL。LICENSE 标题 The MIT License (MIT)，Copyright (c) 2016 Thomas Grainger，并致谢原作 Matthieu Aussaguel。覆盖本分叉源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://wowjs.uk/",
+      "evidence": "首页写 Free to use and modify wow.js under the MIT License，并提供文档与 demo，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "wow.js",
+      "sourceUrl": "https://raw.githubusercontent.com/graingert/WOW/master/package.json",
+      "evidence": "package.json name 为 wow.js，version 1.3.0，homepage 为 https://wowjs.uk。README 写 npm install wow.js。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/wow-js.md",
+  "registryUrl": "/r/wow-js.json"
+}

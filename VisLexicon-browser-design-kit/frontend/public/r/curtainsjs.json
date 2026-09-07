@@ -1,0 +1,204 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:30:49.504Z",
+  "entryId": "curtainsjs",
+  "entityId": "entity-curtainsjs",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://www.curtainsjs.com/",
+    "finalUrl": "https://www.curtainsjs.com/",
+    "checkedAt": "2026-09-07T09:36:14.000Z"
+  },
+  "editorial": {
+    "name": "curtains.js",
+    "descriptionZh": "Martin Laxenaire 的轻量 WebGL 库 curtains.js，把含图或视频的 DOM 转成可着色器动画的平面。包 curtainsjs 现为 8.1.6，MIT。",
+    "takeawayZh": "把 DOM 图片变成 WebGL 平面",
+    "noteZh": "首页粉蓝渐变大字 curtains.js，顶栏 Get started、Docs、Download。文档列出 Curtains、Plane、Texture、RenderTarget、ShaderPass。Simple plane 例是演唱会照片铺满视口。需要一点着色器基础；MIT，可商用。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "three-d-spatial-code",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "visual-implementation",
+        "subcategory": "motion-interaction-code"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "首页把 curtains.js 定义为 easy WebGL tool to animate images and videos，把含图片、视频的 HTML 转成 WebGL 纹理平面。",
+        "evidenceUrl": "https://www.curtainsjs.com/"
+      },
+      {
+        "statement": "文档列出 Curtains、Plane、Texture、RenderTarget、ShaderPass 等 WebGL 类；Simple plane 例用一张照片铺满视口证明可运行。",
+        "evidenceUrl": "https://www.curtainsjs.com/documentation.html"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:26:53.208Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "3d",
+      "motion",
+      "image",
+      "video"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "webgl",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.curtainsjs.com/",
+      "finalUrl": "https://www.curtainsjs.com/",
+      "title": "curtains.js | Home",
+      "selectionRationale": "先看首页：粉蓝渐变和 curtains.js 大字。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/curtainsjs/v2-identity.png",
+        "sha256": "6ca3d10b5c73999d2876a38c94df7e907a603b49eb0c3074996eeba86a17baaf",
+        "width": 1280,
+        "height": 900,
+        "bytes": 45065,
+        "alt": "curtains.js 首页：粉红顶栏 Get started Docs Download，粉蓝渐变背景上居中标题 curtains.js"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.curtainsjs.com/documentation.html",
+      "finalUrl": "https://www.curtainsjs.com/documentation.html",
+      "title": "curtains.js | Documentation",
+      "selectionRationale": "再看文档目录：Curtains、Plane、ShaderPass。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/curtainsjs/v2-breadth.png",
+        "sha256": "bad16f4c29a1a0c4adcfbf350b999c0ebd07326164dc990412de0242eafadd8d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78634,
+        "alt": "curtains.js Documentation：左侧 Core / Frame Buffer Objects 目录，正文 Basic concept 与 Curtains v1.0 类说明"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.curtainsjs.com/examples/simple-plane/index.html",
+      "finalUrl": "https://www.curtainsjs.com/examples/simple-plane/index.html",
+      "title": "curtains.js | Simple plane example",
+      "selectionRationale": "最后打开 Simple plane：演唱会照片铺满。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/curtainsjs/v2-proof.png",
+        "sha256": "7d36f04f528fab2d8ac1c32455b2ffe85f68b69b93354e0756f8a829ac4b0e3f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 806711,
+        "alt": "curtains.js Simple plane 例：演唱会舞台与烟雾观众照片铺满视口，右上 back to curtains.js website"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Martin Laxenaire",
+      "sourceUrl": "https://www.curtainsjs.com/",
+      "evidence": "首页 About 写 Author of this library is Martin Laxenaire。package.json author.name 为 Martin Laxenaire。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Martin Laxenaire",
+      "sourceUrl": "https://www.curtainsjs.com/",
+      "evidence": "站点 curtainsjs.com，仓库位于 github.com/martinlaxenaire/curtainsjs。About 写 french creative front-end developper based in Lyon。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/martinlaxenaire/curtainsjs",
+      "sourceUrl": "https://www.curtainsjs.com/",
+      "evidence": "首页 Download 写 Github，链到 github.com/martinlaxenaire/curtainsjs。package.json repository.url 同此。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://www.curtainsjs.com/",
+      "evidence": "首页 About 写 This library is released under the MIT license which means it is free to use for personnal and commercial projects。LICENSE.txt Copyright (c) 2018 Martin Laxenaire。覆盖库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.curtainsjs.com/",
+      "evidence": "首页 Installation 写 npm i curtainsjs，文档与示例公开，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "curtainsjs",
+      "sourceUrl": "https://www.curtainsjs.com/",
+      "evidence": "首页 Installation 写 npm i curtainsjs。package.json name 为 curtainsjs，version 8.1.6。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/curtainsjs",
+    "designMdUrl": "https://vislexicon.com/site/curtainsjs.md",
+    "checkedAt": "2026-09-07T09:36:14.000Z",
+    "license": "MIT"
+  }
+}

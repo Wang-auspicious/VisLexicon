@@ -1,0 +1,199 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:30:49.504Z",
+  "entryId": "toast-ui-grid",
+  "entityId": "entity-toast-ui-grid",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://ui.toast.com/tui-grid",
+    "finalUrl": "https://ui.toast.com/tui-grid",
+    "checkedAt": "2026-09-07T01:44:00.000Z"
+  },
+  "editorial": {
+    "name": "TOAST UI Grid",
+    "descriptionZh": "NHN Cloud 维护的数据表格 TOAST UI Grid，tui-grid 现为 v4.21.22。LICENSE 标 MIT。本条只收 Grid，不含同站 Editor、Chart、Calendar。",
+    "takeawayZh": "装 tui-grid，表格能筛能编",
+    "noteZh": "产品页标题 Grid，徽章 npm v4.21.22 与 license MIT，下面现场表列出 Beautiful Lies。文档站写 Install、Usage。示例 1. Basic 给出 Name/Artist 表。MIT 覆盖 Grid 源码。Chart、Editor 不在本条。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "产品页把 Grid 定义为可编辑、筛选、排序的数据表格库，并展示 npm v4.21.22 与 license MIT 徽章。",
+        "evidenceUrl": "https://ui.toast.com/tui-grid"
+      },
+      {
+        "statement": "示例 1. Basic 给出可运行的 Name/Artist/Type 表格，左侧列出 Tree、Filter、DatePicker 等实例，证明交付物是可嵌入的表格控件。",
+        "evidenceUrl": "https://nhn.github.io/tui.grid/latest/tutorial-example01-basic"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:26:58.830Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview",
+      "edit"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ui.toast.com/tui-grid",
+      "finalUrl": "https://ui.toast.com/tui-grid",
+      "title": "Grid | TOAST UI :: Make Your Web Delicious!",
+      "selectionRationale": "产品页给出 Grid 标题、MIT 与现场表格。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/toast-ui-grid/v2-identity.png",
+        "sha256": "530f2ad57089862a04b1febd31dc9c98c81eb9417d134c4c7f80b5ee862bf1de",
+        "width": 1280,
+        "height": 900,
+        "bytes": 62431,
+        "alt": "TOAST UI Grid 产品页：标题 Grid，徽章 npm v4.21.22 与 license MIT，下方 Name/Artist 现场表"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://nhn.github.io/tui.grid/latest/",
+      "finalUrl": "https://nhn.github.io/tui.grid/latest/",
+      "title": "TOAST UI Grid",
+      "selectionRationale": "文档总览排出 Install、Usage 与 Grid 类。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/toast-ui-grid/v2-breadth.png",
+        "sha256": "74241fdc9bea53ecff8219c6a177b96b3ac296e8f115236ad1304fb55d045852",
+        "width": 1280,
+        "height": 900,
+        "bytes": 53654,
+        "alt": "TOAST UI Grid 文档：顶栏 github v4.21.22，左侧 CLASSES Grid，右侧 Table of Contents 与 usageStatistics 代码"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://nhn.github.io/tui.grid/latest/tutorial-example01-basic",
+      "finalUrl": "https://nhn.github.io/tui.grid/latest/tutorial-example01-basic",
+      "title": "1. Basic",
+      "selectionRationale": "示例 1. Basic 给出可运行的歌曲表。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/toast-ui-grid/v2-proof.png",
+        "sha256": "8cb2af97890ebc6ff174065fe9f0955283866250e674e70986b3f42e2aac10d0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 57015,
+        "alt": "1. Basic 示例：左侧 Examples 目录，中央 Result 表列出 Beautiful Lies、Birdy，页脚 NHN Cloud FE Development Lab"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "NHN Cloud Corp.",
+      "sourceUrl": "https://raw.githubusercontent.com/nhn/tui.grid/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2019 NHN Cloud Corp。packages/toast-ui.grid/package.json author 为 NHN Cloud. FE Development Lab。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "NHN Cloud Corp.",
+      "sourceUrl": "https://ui.toast.com/tui-grid",
+      "evidence": "站点品牌为 TOAST UI。示例页脚 NHN Cloud | FE Development Lab。GitHub 组织 nhn 维护 tui.grid 仓。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/nhn/tui.grid",
+      "sourceUrl": "https://raw.githubusercontent.com/nhn/tui.grid/master/packages/toast-ui.grid/package.json",
+      "evidence": "packages/toast-ui.grid/package.json repository.url 为 https://github.com/nhn/tui.grid.git。产品页 Github 按钮链到同一仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/nhn/tui.grid/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2019 NHN Cloud Corp。package.json license 为 MIT。产品页徽章 license MIT。覆盖 TOAST UI Grid 源码。同站 Chart、Editor、Calendar 为独立产品，不在本条。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://ui.toast.com/tui-grid",
+      "evidence": "产品页给出 API/Examples 与 Github，徽章 license MIT。文档与示例公开可浏览。未见 Grid 本体付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "tui-grid",
+      "sourceUrl": "https://ui.toast.com/tui-grid",
+      "evidence": "产品页徽章 npm v4.21.22。文档安装命令 npm install --save tui-grid。packages/toast-ui.grid/package.json name 为 tui-grid。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/toast-ui-grid",
+    "designMdUrl": "https://vislexicon.com/site/toast-ui-grid.md",
+    "checkedAt": "2026-09-07T01:44:00.000Z",
+    "license": "MIT"
+  }
+}
