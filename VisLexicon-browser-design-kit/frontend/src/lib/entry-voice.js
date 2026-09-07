@@ -1132,6 +1132,22 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm i -D @skeletonlabs/skeleton' }],
     },
   },
+  blueprint: {
+    lede: { zh: 'React UI 工具包。Apache-2.0。', en: 'React UI toolkit. Apache-2.0.' },
+    style: { zh: '浅色文档系统。立方徽标。左侧包目录。等宽安装命令。蓝顶栏版本条。', en: 'Light documentation system. Cube mark. Left-hand package TOC. Monospace install. Blue version bar.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'pnpm add @blueprintjs/core react react-dom' }],
+      en: [{ k: 'CLI', v: 'pnpm add @blueprintjs/core react react-dom' }],
+    },
+  },
+  aframe: {
+    lede: { zh: 'WebXR 框架。MIT。用 HTML 搭 3D 场景。', en: 'WebXR framework. MIT. Build 3D scenes in HTML.' },
+    style: { zh: '浅色文档。粉红字标 A-FRAME。左侧导航。衬线感标题列表。', en: 'Light docs. Pink A-FRAME wordmark. Left-hand nav. Serif-like title list.' },
+    acquire: {
+      zh: [{ k: '脚本', v: 'aframe.min.js' }],
+      en: [{ k: 'Script', v: 'aframe.min.js' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

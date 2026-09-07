@@ -141,6 +141,7 @@ export const COLLECTIONS = [
       'air-datepicker',
       'react-datepicker',
       'react-modal',
+      'blueprint',
     ],
     createdAt: '2026-09-05',
   },
@@ -204,7 +205,7 @@ export const COLLECTIONS = [
     titleEn: 'Canvas and spatial',
     blurbZh: '这些站交付的是画布、矢量或空间实现：用 2D、WebGL 或物理引擎把图形画出来。',
     blurbEn: 'Canvas, vector, or spatial implementations: 2D, WebGL, or physics.',
-    entryIds: ['threejs', 'p5js', 'pixijs', 'paperjs', 'twojs', 'konva', 'fabricjs', 'matter-js', 'babylonjs'],
+    entryIds: ['threejs', 'p5js', 'pixijs', 'paperjs', 'twojs', 'konva', 'fabricjs', 'matter-js', 'babylonjs', 'aframe'],
     createdAt: '2026-09-06',
   },
 ]
