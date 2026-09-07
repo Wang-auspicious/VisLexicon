@@ -1148,6 +1148,46 @@ const VOICE = {
       en: [{ k: 'Script', v: 'aframe.min.js' }],
     },
   },
+  postcss: {
+    lede: { zh: '用 JavaScript 变换 CSS。MIT。', en: 'Transform CSS with JavaScript. MIT.' },
+    style: { zh: '浅色文献首页。雕刻圆章底。橙红字标。对照代码卡片。', en: 'Light documentary homepage. Engraved medallion ground. Orange-red wordmark. Before/after code cards.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install postcss' }],
+      en: [{ k: 'CLI', v: 'npm install postcss' }],
+    },
+  },
+  lightningcss: {
+    lede: { zh: 'Rust CSS 解析与压缩。MPL-2.0。', en: 'Rust CSS parser and minifier. MPL-2.0.' },
+    style: { zh: '深色产品营销。黄霓虹闪电图标与字标。星轨速度卡。', en: 'Dark product marketing. Yellow neon bolt and wordmark. Star-trail speed card.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install --save-dev lightningcss' }],
+      en: [{ k: 'CLI', v: 'npm install --save-dev lightningcss' }],
+    },
+  },
+  tachyons: {
+    lede: { zh: '原子 CSS 类。MIT。', en: 'Atomic CSS classes. MIT.' },
+    style: { zh: '浅色营销。超大无衬线标题。蓝下载按钮。黑底起步区。', en: 'Light marketing. Oversized sans title. Blue download buttons. Black getting-started band.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install tachyons' }],
+      en: [{ k: 'CLI', v: 'npm install tachyons' }],
+    },
+  },
+  'spectre-css': {
+    lede: { zh: '轻量 CSS 框架。MIT。', en: 'Lightweight CSS framework. MIT.' },
+    style: { zh: '浅灰营销。紫字标与双按钮。三栏特性。底栏广告胶囊。', en: 'Light-gray marketing. Purple wordmark and dual buttons. Three feature columns. Ad capsules at the foot.' },
+    acquire: {
+      zh: [{ k: '样式表', v: 'spectre.min.css' }],
+      en: [{ k: 'Stylesheet', v: 'spectre.min.css' }],
+    },
+  },
+  'fomantic-ui': {
+    lede: { zh: 'Semantic UI 社区分支。MIT。', en: 'Community fork of Semantic UI. MIT.' },
+    style: { zh: '暮色渐变英雄区。超大无衬线标题。描边双按钮。下方文档标本。', en: 'Dusk-gradient hero. Oversized sans title. Outline dual CTAs. Docs specimen below.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install fomantic-ui' }],
+      en: [{ k: 'CLI', v: 'npm install fomantic-ui' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

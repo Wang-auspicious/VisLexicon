@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:09:47.456Z",
+  "entryId": "postcss",
+  "entityId": "entity-postcss",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "postcss.org",
+  "official": {
+    "inputUrl": "https://postcss.org/",
+    "finalUrl": "https://postcss.org/",
+    "checkedAt": "2026-09-07T01:20:00.000Z"
+  },
+  "editorial": {
+    "name": "PostCSS",
+    "descriptionZh": "Andrey Sitnik 维护的 CSS 转换工具 PostCSS，现为 v8.5.28。仓库 LICENSE 标 MIT。用 JS 插件改写 CSS AST，Autoprefixer 与 stylelint 建立在其上。",
+    "takeawayZh": "装 postcss，插件改写 CSS AST",
+    "noteZh": "postcss.org 首页标题 PostCSS，A tool for transforming CSS with JavaScript。首屏 Autoprefixer 给出 :fullscreen 对照。Plugins 页列出 cssnano、autoprefixer。API 页给出 postcss(plugins).process。MIT 覆盖源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 PostCSS 定义为 A tool for transforming CSS with JavaScript，并给出 Autoprefixer 的 :fullscreen CSS input / CSS output。",
+        "evidenceUrl": "https://postcss.org/"
+      },
+      {
+        "statement": "Plugins 文档按 Control、Packs、Fallbacks 列出 cssnano、postcss-preset-env、autoprefixer，证明交付物是可扩展的 CSS 转换工具，而不是现成组件包。",
+        "evidenceUrl": "https://postcss.org/docs/postcss-plugins"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:03:55.773Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://postcss.org/",
+      "finalUrl": "https://postcss.org/",
+      "title": "PostCSS - a tool for transforming CSS with JavaScript",
+      "selectionRationale": "首页标题 PostCSS，副标题用 JS 转换 CSS。",
+      "shot": {
+        "src": "/shots/postcss/v2-identity.png",
+        "sha256": "7361dd31e932bf0886086689295caf9960706499348e4880634e6cc5a80609d9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 624953,
+        "alt": "PostCSS 首页：标题 PostCSS，副标题 A tool for transforming CSS with JavaScript，下方 Increase code readability 与 Autoprefixer 的 :fullscreen CSS input / CSS output"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://postcss.org/docs/postcss-plugins",
+      "finalUrl": "https://postcss.org/docs/postcss-plugins",
+      "title": "PostCSS Plugins",
+      "selectionRationale": "Plugins 页按 Packs、Fallbacks 列出插件。",
+      "shot": {
+        "src": "/shots/postcss/v2-breadth.png",
+        "sha256": "272480058413b113f41cda1610e24f2fdcfd44763d724daa818e227241d39147",
+        "width": 1280,
+        "height": 900,
+        "bytes": 179231,
+        "alt": "PostCSS Plugins 页：标题 PostCSS Plugins，Control 下列 postcss-plugin-context 与 postcss-use，Packs 列出 cssnano、stylelint、postcss-preset-env"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://postcss.org/api/",
+      "finalUrl": "https://postcss.org/api/",
+      "title": "PostCSS API",
+      "selectionRationale": "API 页给出 postcss(plugins).process。",
+      "shot": {
+        "src": "/shots/postcss/v2-proof.png",
+        "sha256": "3eac10bc649aa7f26b418c0ba4911a31b2c895b91ad4d917195e0ffa8b076e97",
+        "width": 1280,
+        "height": 900,
+        "bytes": 170428,
+        "alt": "PostCSS API 页：标题 postcss，说明 Create a new Processor instance，代码 let postcss = require('postcss') 与 postcss(plugins).process(css, { from, to })"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Andrey Sitnik",
+      "sourceUrl": "https://raw.githubusercontent.com/postcss/postcss/main/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright 2013 Andrey Sitnik <andrey@sitnik.es>。package.json author 同为 Andrey Sitnik <andrey@sitnik.es>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://postcss.org/",
+      "evidence": "LICENSE 与 package.json 只署 Andrey Sitnik。首页写 Built by community for community。GitHub 组织 postcss 维护仓库，未见独立公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/postcss/postcss",
+      "sourceUrl": "https://raw.githubusercontent.com/postcss/postcss/main/package.json",
+      "evidence": "package.json repository 为 postcss/postcss，homepage 为 https://postcss.org/。首页页脚 GitHub 链到 github.com/postcss/postcss。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/postcss/postcss/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright 2013 Andrey Sitnik。package.json license 为 MIT。SPDX 短名为 MIT。该许可覆盖 postcss 仓库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://postcss.org/docs/postcss-plugins",
+      "evidence": "Plugins 与 API 文档公开可读。未见付费墙。首页 OpenCollective 为捐赠入口。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "postcss",
+      "sourceUrl": "https://postcss.org/api/",
+      "evidence": "API 页写 let postcss = require('postcss') 与 postcss(plugins).process。package.json name 为 postcss，version 8.5.28。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/postcss.md",
+  "registryUrl": "/r/postcss.json"
+}

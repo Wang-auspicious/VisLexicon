@@ -1,0 +1,196 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:09:47.456Z",
+  "entryId": "lightningcss",
+  "entityId": "entity-lightningcss",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://lightningcss.dev/",
+    "finalUrl": "https://lightningcss.dev/",
+    "checkedAt": "2026-09-07T01:20:00.000Z"
+  },
+  "editorial": {
+    "name": "Lightning CSS",
+    "descriptionZh": "Devon Govett 维护的 CSS 解析、转译、打包与压缩器 Lightning CSS，现为 v1.33.0。仓库 LICENSE 标 MPL-2.0。文档覆盖 Node、CLI 与 Vite，不是 Parcel 打包器。",
+    "takeawayZh": "装 lightningcss，把现代 CSS 转译压缩",
+    "noteZh": "lightningcss.dev 首页标题 Lightning CSS，副题极快 CSS 解析转译压缩器。Getting Started 给出 npm install --save-dev lightningcss，并列 Node、Vite、CLI。Transpilation 把 lab 转成 hex。MPL-2.0 覆盖源码，不是 Parcel 打包器。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "asset-conversion-optimization",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页标题 Lightning CSS，副题 An extremely fast CSS parser, transformer, bundler, and minifier。Light speed 对照 CSSNano 544.81ms 与 Lightning CSS 4.16ms，交付物是 CSS 转译与压缩，不是界面组件。",
+        "evidenceUrl": "https://lightningcss.dev/"
+      },
+      {
+        "statement": "Getting Started 给出 npm install --save-dev lightningcss，并列 Node、Rust、Vite、CLI；Transpilation 用 transform 与 browserslist 目标做语法降级。Parcel 只是内置消费方，本条不是 Parcel 打包器文档。",
+        "evidenceUrl": "https://lightningcss.dev/docs.html"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:03:55.773Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MPL-2.0"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://lightningcss.dev/",
+      "finalUrl": "https://lightningcss.dev/",
+      "title": "Lightning CSS",
+      "selectionRationale": "首页标题 Lightning CSS，副题极快 CSS 解析转译压缩器。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/lightningcss/v2-identity.png",
+        "sha256": "443d3dbdc950eeae89c5468abb2bf14e731d7ad63649110c4df83d23946971b0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 757286,
+        "alt": "Lightning CSS 首页：金色闪电标，空心金字标题 Lightning CSS，副题 An extremely fast CSS parser, transformer, bundler, and minifier，链接 Playground、Docs、npm、GitHub"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://lightningcss.dev/docs.html",
+      "finalUrl": "https://lightningcss.dev/docs.html",
+      "title": "Getting Started – Lightning CSS",
+      "selectionRationale": "Getting Started 列出 npm 与 Node、Vite、CLI。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/lightningcss/v2-breadth.png",
+        "sha256": "78dd487cfe3e6da489eb5a0369df5614a2031fcd8b3de5b602ecbc2f45d79f88",
+        "width": 1280,
+        "height": 900,
+        "bytes": 231616,
+        "alt": "Getting Started：左侧 Docs 列出 Getting started、Transpilation、CSS Modules、Bundling、Minification、Custom transforms，正文 From Node 与 npm install --save-dev lightningcss"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://lightningcss.dev/transpilation.html",
+      "finalUrl": "https://lightningcss.dev/transpilation.html",
+      "title": "Transpilation – Lightning CSS",
+      "selectionRationale": "Transpilation 给出 transform 与目标浏览器。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/lightningcss/v2-proof.png",
+        "sha256": "e8f0eadc150b0a8ac1551e50f66b964525a6ec3e879c235f8f750c584a932a5b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 277622,
+        "alt": "Transpilation：标题 Transpilation，正文写 vendor prefixing 与 syntax lowering，示例 import { transform, browserslistToTargets } from lightningcss"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Devon Govett",
+      "sourceUrl": "https://raw.githubusercontent.com/parcel-bundler/lightningcss/master/Cargo.toml",
+      "evidence": "Cargo.toml authors 为 Devon Govett <devongovett@gmail.com>。页脚写 Copyright © 2024 Devon Govett and Parcel Contributors。npm 包 lightningcss 的 maintainers 为 devongovett。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://lightningcss.dev/",
+      "evidence": "页脚署 Devon Govett and Parcel Contributors。GitHub 组织 parcel-bundler 维护仓库。LICENSE 无公司版权行。未见独立公司主体。本条不把 Parcel 打包器当主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/parcel-bundler/lightningcss",
+      "sourceUrl": "https://raw.githubusercontent.com/parcel-bundler/lightningcss/master/package.json",
+      "evidence": "package.json repository.url 为 https://github.com/parcel-bundler/lightningcss.git。首页与文档顶栏 GitHub 链到同一仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MPL-2.0",
+      "sourceUrl": "https://raw.githubusercontent.com/parcel-bundler/lightningcss/master/LICENSE",
+      "evidence": "LICENSE 标题 Mozilla Public License Version 2.0。package.json 与 Cargo.toml license 字段均为 MPL-2.0。SPDX 短标识为 MPL-2.0。该许可覆盖 lightningcss 仓库源码，不覆盖 Parcel 打包器（parcel-bundler/parcel 为 MIT）。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://lightningcss.dev/docs.html",
+      "evidence": "Getting Started 与 Transpilation 公开可读。给出 npm install --save-dev lightningcss 与 lightningcss-cli。未见付费墙。Open Collective 为捐赠入口，不是产品标价。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "lightningcss",
+      "sourceUrl": "https://lightningcss.dev/docs.html",
+      "evidence": "Getting Started 写 npm install --save-dev lightningcss，CLI 另装 lightningcss-cli，浏览器/Deno 用 lightningcss-wasm。package.json name 为 lightningcss，version 1.33.0，license MPL-2.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。MPL-2.0：LICENSE 标题 Mozilla Public License Version 2.0。package.json 与 Cargo.toml license 字段均为 MPL-2.0。SPDX 短标识为 MPL-2.0。该许可覆盖 lightningcss 仓库源码，不覆盖 Parcel 打包器（parcel-bundler/parcel 为 MIT）。"
+    ],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/lightningcss",
+    "designMdUrl": "https://vislexicon.com/site/lightningcss.md",
+    "checkedAt": "2026-09-07T01:20:00.000Z",
+    "license": "MPL-2.0"
+  }
+}
