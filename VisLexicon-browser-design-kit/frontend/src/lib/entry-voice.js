@@ -1420,6 +1420,30 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm install less -g' }],
     },
   },
+  'antv-s2': {
+    lede: { zh: '多维交叉分析表格。MIT。', en: 'Multidimensional pivot table. MIT.' },
+    style: { zh: '浅色营销。紫标题。华夫饼宇航员。紫胶囊按钮。', en: 'Light marketing. Purple title. Waffle astronaut. Purple capsule button.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @antv/s2' }],
+      en: [{ k: 'CLI', v: 'npm install @antv/s2' }],
+    },
+  },
+  'antv-x6': {
+    lede: { zh: 'HTML/SVG 图编辑引擎。MIT。', en: 'HTML/SVG graph editor engine. MIT.' },
+    style: { zh: '浅色营销。紫标题。粉紫章鱼宇航员。紫胶囊。', en: 'Light marketing. Purple title. Pink-purple octopus astronaut. Purple capsule.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @antv/x6 --save' }],
+      en: [{ k: 'CLI', v: 'npm install @antv/x6 --save' }],
+    },
+  },
+  'antv-l7': {
+    lede: { zh: 'WebGL 地理空间可视化。MIT。', en: 'WebGL geospatial visualization. MIT.' },
+    style: { zh: '浅色营销。黑标题。青绿甲虫插画。紫胶囊按钮。', en: 'Light marketing. Black title. Teal beetle illustration. Purple capsule button.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install --save @antv/l7' }],
+      en: [{ k: 'CLI', v: 'npm install --save @antv/l7' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

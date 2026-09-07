@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:55:17.129Z",
+  "entryId": "antv-x6",
+  "entityId": "entity-antv-x6",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "x6.antv.antgroup.com",
+  "official": {
+    "inputUrl": "https://x6.antv.antgroup.com/",
+    "finalUrl": "https://x6.antv.antgroup.com/",
+    "checkedAt": "2026-09-07T01:44:00.000Z"
+  },
+  "editorial": {
+    "name": "AntV X6",
+    "descriptionZh": "AntV 的图编辑引擎 X6，基于 HTML 与 SVG，@antv/x6 现为 3.1.8。LICENSE 标 MIT。本条只收 X6 产品站，不是 G6、S2、L7。",
+    "takeawayZh": "用 Graph 搭流程图和 DAG",
+    "noteZh": "首页标题 X6 · 图编辑引擎，写明可搭 DAG、ER、流程图、血缘图。图表示例按智能体流程编排、流程图、ER 图、思维导图分组。画布页给出 import { Graph } from '@antv/x6' 与 new Graph。MIT 覆盖 @antv/x6 源码。G6、S2、L7 不在本条。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 X6 定义为基于 HTML 和 SVG 的图编辑引擎，用于快速搭建 DAG 图、ER 图、流程图、血缘图。",
+        "evidenceUrl": "https://x6.antv.antgroup.com/"
+      },
+      {
+        "statement": "画布文档给出 import { Graph } from '@antv/x6' 与 new Graph({ container }) 示例，证明交付物是可运行的图编辑代码。",
+        "evidenceUrl": "https://x6.antv.antgroup.com/tutorial/basic/graph"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:44:21.725Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin",
+      "agent"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "svg",
+      "react",
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "case-gallery",
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans",
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://x6.antv.antgroup.com/",
+      "finalUrl": "https://x6.antv.antgroup.com/",
+      "title": "X6 图编辑引擎 | AntV",
+      "selectionRationale": "先看官网首页：X6 · 图编辑引擎和开始使用。",
+      "shot": {
+        "src": "/shots/antv-x6/v2-identity.png",
+        "sha256": "e06aa5ff1f6b4bdf17152fb08ba65513402f3fec9334a297f30cdf8a145ab81d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 299519,
+        "alt": "AntV X6 首页：标题 X6 · 图编辑引擎，右侧粉色章鱼宇航员，按钮开始使用与图表示例"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://x6.antv.antgroup.com/examples",
+      "finalUrl": "https://x6.antv.antgroup.com/examples",
+      "title": "所有图表 | X6 图编辑引擎",
+      "selectionRationale": "图表示例按流程图、ER、思维导图分组。",
+      "shot": {
+        "src": "/shots/antv-x6/v2-breadth.png",
+        "sha256": "20576b0550b9c62f5f93ae22febf1d7bd631a0f3e4fb4acd11cfd8d167246a13",
+        "width": 1280,
+        "height": 900,
+        "bytes": 252814,
+        "alt": "X6 图表示例：使用场景卡片含智能体流程编排、流程图、ER 图、思维导图、BPMN"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://x6.antv.antgroup.com/tutorial/basic/graph",
+      "finalUrl": "https://x6.antv.antgroup.com/tutorial/basic/graph",
+      "title": "画布 | X6 图编辑引擎",
+      "selectionRationale": "画布页 Graph 实例化代码就是可复制证明。",
+      "shot": {
+        "src": "/shots/antv-x6/v2-proof.png",
+        "sha256": "510409ad757cb245e5e73c2f1457d8ec32b5ab42b1187b75811d70c563019c65",
+        "width": 1280,
+        "height": 900,
+        "bytes": 107389,
+        "alt": "X6 画布文档：import { Graph } from '@antv/x6' 与 new Graph({ container, width: 800, height: 500 })"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "AntV",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@antv/x6/package.json",
+      "evidence": "package.json author 为 antv。官网顶栏品牌 AntV | X6。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "AntV",
+      "sourceUrl": "https://x6.antv.antgroup.com/",
+      "evidence": "站点顶栏品牌 AntV | X6。LICENSE 版权行为 Copyright (c) 2021-2025 Alipay.inc。GitHub 组织 antvis 维护 x6 仓。本条不是整个 AntV 组织。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/antvis/x6",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@antv/x6/package.json",
+      "evidence": "package.json repository.url 为 https://github.com/antvis/x6.git。官网顶栏 Star 对应同一仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/antvis/X6/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2021-2025 Alipay.inc。package.json license 为 MIT。覆盖 @antv/x6 源码。G6、S2、L7 为独立产品，不在本条。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://x6.antv.antgroup.com/",
+      "evidence": "官网文档与图表示例公开可读。文档写 npm install @antv/x6 --save。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@antv/x6",
+      "sourceUrl": "https://x6.antv.antgroup.com/tutorial/basic/graph",
+      "evidence": "画布文档写 import { Graph } from '@antv/x6'。npm 包 @antv/x6 version 3.1.8。文档顶栏 3.x。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/antv-x6.md",
+  "registryUrl": "/r/antv-x6.json"
+}

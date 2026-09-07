@@ -188,7 +188,7 @@ export const COLLECTIONS = [
     titleEn: 'Charts and visualization',
     blurbZh: '这些站交付的是图表实现：用组件、canvas 或比例尺把数据画出来。',
     blurbEn: 'Chart implementations: components, canvas, and scales.',
-    entryIds: ['d3', 'recharts', 'chartjs', 'nivo', 'tremor', 'visx', 'echarts', 'observable-plot', 'apexcharts', 'leaflet', 'vega', 'vega-lite'],
+    entryIds: ['d3', 'recharts', 'chartjs', 'nivo', 'tremor', 'visx', 'echarts', 'observable-plot', 'apexcharts', 'leaflet', 'vega', 'vega-lite', 'antv-s2', 'antv-x6', 'antv-l7'],
     createdAt: '2026-09-06',
   },
   {
