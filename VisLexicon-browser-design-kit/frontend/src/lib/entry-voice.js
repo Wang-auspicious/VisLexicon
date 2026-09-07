@@ -1132,6 +1132,70 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm i -D @skeletonlabs/skeleton' }],
     },
   },
+  clarity: {
+    lede: { zh: 'Angular 企业设计系统。MIT。不是微软分析。', en: 'Enterprise Angular design system. MIT. Not Microsoft analytics.' },
+    style: { zh: '深蓝顶栏。VERSION 18 胶囊。等距纸飞机插画。白卡片三栏。', en: 'Navy top bar. VERSION 18 pill. Isometric paper-plane art. Three white cards.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i @clr/angular @clr/ui' }],
+      en: [{ k: 'CLI', v: 'npm i @clr/angular @clr/ui' }],
+    },
+  },
+  'react-admin': {
+    lede: { zh: 'React 后台框架。MIT。Enterprise 另售。', en: 'React admin framework. MIT. Enterprise is paid.' },
+    style: { zh: '深紫全出血。超大无衬线。粉胶囊按钮。CRM 列表标本。', en: 'Deep-purple full bleed. Oversized sans. Pink capsule button. CRM list specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i react-admin' }],
+      en: [{ k: 'CLI', v: 'npm i react-admin' }],
+    },
+  },
+  'ng-bootstrap': {
+    lede: { zh: 'Angular 的 Bootstrap 组件。MIT。', en: 'Bootstrap widgets for Angular. MIT.' },
+    style: { zh: '深色文档。叠放蓝 B 六边形。亮蓝顶栏。', en: 'Dark docs. Stacked blue B hex. Bright-blue top bar.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'ng add @ng-bootstrap/ng-bootstrap' }],
+      en: [{ k: 'CLI', v: 'ng add @ng-bootstrap/ng-bootstrap' }],
+    },
+  },
+  materialize: {
+    lede: { zh: 'Material Design CSS 框架。MIT。站点 1.0.0。', en: 'Material Design CSS framework. MIT. Site is 1.0.0.' },
+    style: { zh: '白底粉红字标。矩形粉按钮。侧栏 M。', en: 'White canvas. Pink wordmark. Rectangular pink buttons. Sidebar M.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i materialize-css@next' }],
+      en: [{ k: 'CLI', v: 'npm i materialize-css@next' }],
+    },
+  },
+  uikit: {
+    lede: { zh: '模块化前端框架。MIT。不含 Pro。', en: 'Modular front-end framework. MIT. Pro is separate.' },
+    style: { zh: '通栏饱和蓝。白六边形标。白胶囊按钮。', en: 'Full-bleed saturated blue. White hex mark. White capsule buttons.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i uikit' }],
+      en: [{ k: 'CLI', v: 'npm i uikit' }],
+    },
+  },
+  primeflex: {
+    lede: { zh: 'Prime 配套 CSS 工具类。MIT。已 sunset。', en: 'Prime CSS utilities. MIT. Sunset.' },
+    style: { zh: '深色营销。青色渐变大字。sunset 顶条。', en: 'Dark marketing. Cyan gradient display. Sunset banner.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i primeflex' }],
+      en: [{ k: 'CLI', v: 'npm i primeflex' }],
+    },
+  },
+  'shadcn-svelte': {
+    lede: { zh: 'shadcn 的 Svelte 移植。MIT。', en: 'Svelte port of shadcn. MIT.' },
+    style: { zh: '纯黑产品页。超大无衬线。白描边按钮。标本墙。', en: 'Black product page. Oversized sans. White outlined button. Specimen wall.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'pnpm dlx shadcn-svelte@latest init' }],
+      en: [{ k: 'CLI', v: 'pnpm dlx shadcn-svelte@latest init' }],
+    },
+  },
+  'melt-ui': {
+    lede: { zh: 'Svelte 无样式构建器。MIT。不是 Bits UI。', en: 'Svelte unstyled builders. MIT. Not Bits UI.' },
+    style: { zh: '黑底冰棍标。橙条 Runes。白胶囊 Get started。', en: 'Black canvas. Popsicle mark. Orange Runes bar. White Get started capsule.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npx @melt-ui/cli@latest init' }],
+      en: [{ k: 'CLI', v: 'npx @melt-ui/cli@latest init' }],
+    },
+  },
   blueprint: {
     lede: { zh: 'React UI 工具包。Apache-2.0。', en: 'React UI toolkit. Apache-2.0.' },
     style: { zh: '浅色文档系统。立方徽标。左侧包目录。等宽安装命令。蓝顶栏版本条。', en: 'Light documentation system. Cube mark. Left-hand package TOC. Monospace install. Blue version bar.' },

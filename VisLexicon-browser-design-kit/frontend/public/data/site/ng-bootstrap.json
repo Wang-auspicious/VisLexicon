@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:25:01.441Z",
+  "entryId": "ng-bootstrap",
+  "entityId": "entity-ng-bootstrap",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "ng-bootstrap.github.io",
+  "official": {
+    "inputUrl": "https://ng-bootstrap.github.io/#/home",
+    "finalUrl": "https://ng-bootstrap.github.io/#/home",
+    "checkedAt": "2026-09-07T06:00:00.000Z"
+  },
+  "editorial": {
+    "name": "ng-bootstrap",
+    "descriptionZh": "ng-bootstrap 团队维护的 Angular Bootstrap 组件库，现为 v21.0.0。只依赖 Angular、Bootstrap 5 CSS 与 Popper。仓库 LICENSE 标 MIT。",
+    "takeawayZh": "ng add 之后先看手风琴",
+    "noteZh": "首页标题 Bootstrap widgets，命令 ng add @ng-bootstrap/ng-bootstrap，v21.0.0。Getting Started 给出 Angular 与 Bootstrap CSS 对照。Accordion 现场 Simple。本条不是 Bootstrap 本体，也不是 react-bootstrap。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把产品定义为 Angular widgets built from the ground up using Bootstrap 5 CSS，并给出 ng add @ng-bootstrap/ng-bootstrap，Currently at v21.0.0。",
+        "evidenceUrl": "https://ng-bootstrap.github.io/#/home"
+      },
+      {
+        "statement": "Accordion Examples 页给出现场 Simple、Fancy title、Disabled 面板，以及 Code 与 StackBlitz。",
+        "evidenceUrl": "https://ng-bootstrap.github.io/#/components/accordion/examples"
+      }
+    ],
+    "confirmedAt": "2026-09-07T07:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "angular",
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ng-bootstrap.github.io/#/home",
+      "finalUrl": "https://ng-bootstrap.github.io/#/home",
+      "title": "Angular powered Bootstrap",
+      "selectionRationale": "先看首页。B 标、v21.0.0 和 ng add 在首屏。",
+      "shot": {
+        "src": "/shots/ng-bootstrap/v2-identity.png",
+        "sha256": "b4ec62eed84dae3dcb7d49bbd6acdb7c6b3846a6fc0ecee5907e6f5542a1b61b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 204517,
+        "alt": "ng-bootstrap 首页：叠放蓝色 B 六边形，标题 Bootstrap widgets The angular way，命令 ng add @ng-bootstrap/ng-bootstrap，Currently at v21.0.0，下方 Native Widgets Quality 三卡"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ng-bootstrap.github.io/#/getting-started",
+      "finalUrl": "https://ng-bootstrap.github.io/#/getting-started",
+      "title": "Getting Started - ng-bootstrap",
+      "selectionRationale": "再翻 Getting Started。依赖表排出 Angular 与 Bootstrap CSS。",
+      "shot": {
+        "src": "/shots/ng-bootstrap/v2-breadth.png",
+        "sha256": "edc280941a9a3cdba85b128f3753bd12f981b7677c80117f0f10edc0c06f2500",
+        "width": 1280,
+        "height": 900,
+        "bytes": 93692,
+        "alt": "Getting Started：Introduction 与 Dependencies 表，列 ng-bootstrap、Angular、Bootstrap CSS、Popper 版本对照，顶栏 ng-bootstrap v21.0.0"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ng-bootstrap.github.io/#/components/accordion/examples",
+      "finalUrl": "https://ng-bootstrap.github.io/#/components/accordion/examples",
+      "title": "Accordion - ng-bootstrap",
+      "selectionRationale": "最后开 Accordion Examples。现场面板即证明。",
+      "shot": {
+        "src": "/shots/ng-bootstrap/v2-proof.png",
+        "sha256": "e267006863a629b513ca97ccc3abac7d776034761ceaea6f1886d1bbbbdabf4d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113957,
+        "alt": "Accordion Examples：现场 Simple 展开面板、Fancy title、Disabled，右侧 Code 与 StackBlitz，左侧组件目录 Accordion 高亮"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Angular ng-bootstrap team",
+      "sourceUrl": "https://raw.githubusercontent.com/ng-bootstrap/ng-bootstrap/master/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，版权行为 Copyright (c) 2015-2018 Angular ng-bootstrap team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "ng-bootstrap",
+      "sourceUrl": "https://github.com/ng-bootstrap/ng-bootstrap",
+      "evidence": "GitHub 组织 ng-bootstrap 维护 ng-bootstrap 仓。package.json author 为 contributors 图。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/ng-bootstrap/ng-bootstrap",
+      "sourceUrl": "https://github.com/ng-bootstrap/ng-bootstrap",
+      "evidence": "package.json repository 为 git+https://github.com/ng-bootstrap/ng-bootstrap.git。LICENSE 位于该仓 master。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/ng-bootstrap/ng-bootstrap/master/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2015-2018 Angular ng-bootstrap team。package.json license 为 MIT。覆盖 @ng-bootstrap/ng-bootstrap 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://ng-bootstrap.github.io/#/home",
+      "evidence": "首页给出 ng add @ng-bootstrap/ng-bootstrap。文档与组件演示公开可浏览。无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@ng-bootstrap/ng-bootstrap",
+      "sourceUrl": "https://ng-bootstrap.github.io/#/home",
+      "evidence": "首页安装命令为 ng add @ng-bootstrap/ng-bootstrap。package.json name 为 @ng-bootstrap/ng-bootstrap，version 21.0.0，与顶栏 v21.0.0 一致。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/ng-bootstrap.md",
+  "registryUrl": "/r/ng-bootstrap.json"
+}

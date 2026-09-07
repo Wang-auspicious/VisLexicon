@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:25:01.441Z",
+  "entryId": "shadcn-svelte",
+  "entityId": "entity-shadcn-svelte",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "shadcn-svelte.com",
+  "official": {
+    "inputUrl": "https://www.shadcn-svelte.com/",
+    "finalUrl": "https://www.shadcn-svelte.com/",
+    "checkedAt": "2026-09-07T06:00:00.000Z"
+  },
+  "editorial": {
+    "name": "shadcn-svelte",
+    "descriptionZh": "Hunter Johnston 维护的非官方 Svelte 移植 shadcn-svelte。CLI 把组件源码写入项目。仓库标 MIT。本条不是已发布的 React 版 shadcn-ui，也不是 shadcn-vue。",
+    "takeawayZh": "CLI 把 Svelte 按钮源码写入仓",
+    "noteZh": "首页标题 The Foundation for your Design System，深色标本墙。安装页分 SvelteKit 等到 Manual，CLI 按组件建文件夹。Button 页现场按钮与 $lib 导入。MIT。由 Bits UI 驱动。本条只收 Svelte 移植，不是 shadcn-ui、shadcn-vue 或 bits-ui。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把产品定义为可定制、可扩展的开源组件，供设计系统打底，并给出 Build Your Own。",
+        "evidenceUrl": "https://www.shadcn-svelte.com/"
+      },
+      {
+        "statement": "Button 文档给出现场 Button 与从 $lib/components/ui/button/index.js 导入的源码，证明 CLI 写入的是项目内源码。",
+        "evidenceUrl": "https://www.shadcn-svelte.com/docs/components/button"
+      }
+    ],
+    "confirmedAt": "2026-09-07T07:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.shadcn-svelte.com/",
+      "finalUrl": "https://www.shadcn-svelte.com/",
+      "title": "The Foundation for your Design System - shadcn-svelte",
+      "selectionRationale": "首页标题与深色标本墙说明它是可定制的组件注册表。",
+      "shot": {
+        "src": "/shots/shadcn-svelte/v2-identity.png",
+        "sha256": "53e1c9b02b38a23a0a2290f1113ee402e071c02f09ae4c32ce0231464175e325",
+        "width": 1280,
+        "height": 900,
+        "bytes": 95607,
+        "alt": "shadcn-svelte 首页：The Foundation for your Design System，Introducing Rhea，按钮 Build Your Own，深色标本墙含 Button Secondary Outline、Contribution History 柱、二维码与 Transfer Funds"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.shadcn-svelte.com/docs/installation",
+      "finalUrl": "https://www.shadcn-svelte.com/docs/installation",
+      "title": "Installation - shadcn-svelte",
+      "selectionRationale": "再翻 Installation。四张指南卡排出起步面。",
+      "shot": {
+        "src": "/shots/shadcn-svelte/v2-breadth.png",
+        "sha256": "33e218533978e00f9fb3f6ee1616c9a20f9547b96187b60c868668b2c0fdc3da",
+        "width": 1280,
+        "height": 900,
+        "bytes": 110702,
+        "alt": "Installation 页：Guides 列出 SvelteKit、Astro、Vite、Manual，Imports 写 Unlike the original shadcn/ui for React，侧栏 Epicenter 赞助卡"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.shadcn-svelte.com/docs/components/button",
+      "finalUrl": "https://www.shadcn-svelte.com/docs/components/button",
+      "title": "Button - shadcn-svelte",
+      "selectionRationale": "最后开 Button。现场按钮与 Svelte 导入代码。",
+      "shot": {
+        "src": "/shots/shadcn-svelte/v2-proof.png",
+        "sha256": "cb51a023528ab79ed0606b667c9e9ca2a550e50d9174bb98303e585c00258efa",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113309,
+        "alt": "Button 文档：现场 Button 与向上箭头图标，下方 import { Button } from $lib/components/ui/button/index.js，侧栏 Epicenter 赞助卡"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Hunter Johnston",
+      "sourceUrl": "https://raw.githubusercontent.com/huntabyte/shadcn-svelte/main/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2023 Hunter Johnston、CokaKoala、shadcn。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/huntabyte/shadcn-svelte",
+      "evidence": "官方仓库位于个人账号 huntabyte/shadcn-svelte，未见独立公司或 GitHub 组织作为发布主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/huntabyte/shadcn-svelte",
+      "sourceUrl": "https://raw.githubusercontent.com/huntabyte/shadcn-svelte/main/LICENSE.md",
+      "evidence": "LICENSE.md 位于 github.com/huntabyte/shadcn-svelte。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/huntabyte/shadcn-svelte/main/LICENSE.md",
+      "evidence": "LICENSE.md 标题 MIT License，Copyright (c) 2023 Hunter Johnston、CokaKoala、shadcn。覆盖 shadcn-svelte 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.shadcn-svelte.com/",
+      "evidence": "首页写 Open Source. Open Code。组件文档与 Installation 页公开可读。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "shadcn-svelte",
+      "sourceUrl": "https://www.shadcn-svelte.com/docs/installation/sveltekit",
+      "evidence": "SvelteKit 指南给出 pnpm dlx shadcn-svelte@latest init 与 pnpm dlx shadcn-svelte@latest add button。Installation 页写 CLI 按组件创建文件夹。产物是写入项目的 Svelte 源码，不是闭源依赖。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/shadcn-svelte.md",
+  "registryUrl": "/r/shadcn-svelte.json"
+}

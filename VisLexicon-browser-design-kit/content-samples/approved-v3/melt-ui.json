@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 3,
+  "entryId": "melt-ui",
+  "entityId": "entity-melt-ui",
+  "attemptId": "swarm-curator-batch-b-w3b-melt-ui-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://www.melt-ui.com/",
+    "finalUrl": "https://www.melt-ui.com/",
+    "checkedAt": "2026-09-07T06:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Melt UI",
+    "descriptionZh": "Thomas G. Lopes 维护的 Svelte 无样式构建器 Melt UI。仓库标 MIT。本条是 www.melt-ui.com 的 v0，不是 next.melt-ui.com，也不是 bits-ui。",
+    "takeawayZh": "无样式 Svelte 构建器，自己画皮",
+    "noteZh": "首页标题 melt away complexity，npx @melt-ui/cli@latest init。三页顶栏橙色 Runes 条。Introduction 页 Builder API 与 In Construction。Accordion 页橙色点阵现场问句。MIT。本条只收 v0，不合并 next.melt-ui.com，不是 bits-ui。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-melt-ui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Melt UI 定义为 open-source Svelte library for building high-quality, accessible design systems，并给出 npx @melt-ui/cli@latest init。",
+        "evidenceUrl": "https://www.melt-ui.com/"
+      },
+      {
+        "statement": "Accordion 页给出现场折叠问句与 View code，证明交付物是无样式构建器。",
+        "evidenceUrl": "https://www.melt-ui.com/docs/builders/accordion"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-b-w3b",
+    "reviewerId": "swarm-reviewer-grok-z",
+    "confirmedAt": "2026-09-07T07:00:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.melt-ui.com/",
+      "finalUrl": "https://www.melt-ui.com/",
+      "title": "Melt UI",
+      "selectionRationale": "先看首页。冰棍标、init 命令和 Runes 条在首屏。",
+      "shot": {
+        "src": "/shots/melt-ui/v2-identity.png",
+        "sha256": "ecf87ebd6af99c99be06f9b0effc2820cdf634593d2949afc23680150ed231ce",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84681,
+        "alt": "Melt UI 首页：顶栏橙色条 Check out the new version, with Runes!，冰棍标，标题 melt away complexity，命令 npx @melt-ui/cli@latest init，下方手风琴、开关与标签"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.melt-ui.com/docs/introduction",
+      "finalUrl": "https://www.melt-ui.com/docs/introduction",
+      "title": "Melt UI",
+      "selectionRationale": "再翻 Introduction。Builder API 排出范围。",
+      "shot": {
+        "src": "/shots/melt-ui/v2-breadth.png",
+        "sha256": "ae8cb6de4ee3854aa72354054a94d5940d4ce88441321e72cd1842b5812e799e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 137753,
+        "alt": "Introduction 页：顶栏橙色 Runes 条，Builder API，代码 import createCollapsible, melt from '@melt-ui/svelte'，橙色框 In Construction until 1.0"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.melt-ui.com/docs/builders/accordion",
+      "finalUrl": "https://www.melt-ui.com/docs/builders/accordion",
+      "title": "Melt UI",
+      "selectionRationale": "最后开 Accordion。现场问句和 View code 即证明。",
+      "shot": {
+        "src": "/shots/melt-ui/v2-proof.png",
+        "sha256": "d66b0d753184eda7c2257a5f3407bf185ece77698eca3687f80fc436b225b70b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 101862,
+        "alt": "Accordion 文档：顶栏橙色 Runes 条，橙色点阵画布上现场 What is it?、Can I customize it?、Svelte is awesome, huh?，旁有 View code 开关"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Thomas G. Lopes",
+      "sourceUrl": "https://raw.githubusercontent.com/melt-ui/melt-ui/develop/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，版权行为 Copyright (c) 2023 Thomas G. Lopes。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "melt-ui",
+      "sourceUrl": "https://github.com/melt-ui/melt-ui",
+      "evidence": "GitHub 组织 melt-ui 维护 melt-ui 仓。npm 包 @melt-ui/svelte author 为 Thomas G. Lopes。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/melt-ui/melt-ui",
+      "sourceUrl": "https://raw.githubusercontent.com/melt-ui/melt-ui/develop/LICENSE",
+      "evidence": "LICENSE 位于 github.com/melt-ui/melt-ui。npm 包 repository 为 git+https://github.com/melt-ui/melt-ui.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/melt-ui/melt-ui/develop/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2023 Thomas G. Lopes。npm 包 @melt-ui/svelte license 为 MIT。覆盖 melt-ui 源码。next.melt-ui.com 的 Runes 重写不在本条许可陈述内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.melt-ui.com/",
+      "evidence": "首页给出 npx @melt-ui/cli@latest init 与 Get started。文档公开可浏览。橙色条指向的 next.melt-ui.com 是另一入口，不是本库付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@melt-ui/svelte",
+      "sourceUrl": "https://www.melt-ui.com/docs/introduction",
+      "evidence": "Introduction 页代码为 import { createCollapsible, melt } from '@melt-ui/svelte'。首页初始化命令为 npx @melt-ui/cli@latest init。npm 包 name 为 @melt-ui/svelte。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-b-w3b",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-z",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-z"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-b-w3b 进站起草。三页橙色 Runes 条指向 next.melt-ui.com，本条不合并。分类对象是 www.melt-ui.com 的 v0 构建器 @melt-ui/svelte，不是 bits-ui。status 仍 DRAFT。 swarm-reviewer-grok-z 独立打开活页、LICENSE 原文与三张 PNG sha256 后 APPROVED。"
+  }
+}

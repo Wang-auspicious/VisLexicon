@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:25:01.441Z",
+  "entryId": "clarity",
+  "entityId": "entity-clarity",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "clarity.design",
+  "official": {
+    "inputUrl": "https://clarity.design/",
+    "finalUrl": "https://clarity.design/",
+    "checkedAt": "2026-09-07T06:00:00.000Z"
+  },
+  "editorial": {
+    "name": "Clarity Design System",
+    "descriptionZh": "VMware 开源的企业级设计系统 Clarity，现为 Version 18。首页写明已去掉 @cds/core，改走 @clr/angular 与 @clr/ui。仓库 LICENSE 标 MIT。",
+    "takeawayZh": "先装 @clr/ui，再抄实心按钮",
+    "noteZh": "首页顶栏 VERSION 18，按钮 GET STARTED USING CLARITY，并写 Dropped @cds/core。Developing 页分 HTML/CSS 与 Angular 安装。Button Code 页现场 PRIMARY 至 DISABLED。本条是 Angular 18，不是微软 Clarity，也不并入 Core。MIT。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把产品定义为 Clarity Design System，顶栏 VERSION 18，并写 Simplifying the complexity of enterprise products。",
+        "evidenceUrl": "https://clarity.design/"
+      },
+      {
+        "statement": "Button 的 Code 页给出 Solid Buttons 现场 PRIMARY 至 DISABLED，以及 button.btn.btn-primary 代码。",
+        "evidenceUrl": "https://clarity.design/documentation/button/code"
+      }
+    ],
+    "confirmedAt": "2026-09-07T07:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "install",
+      "copy",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "angular",
+      "javascript",
+      "typescript",
+      "css",
+      "html"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://clarity.design/",
+      "finalUrl": "https://clarity.design/",
+      "title": "Clarity Design System",
+      "selectionRationale": "先看首页。VERSION 18 与 GET STARTED 在首屏。",
+      "shot": {
+        "src": "/shots/clarity/v2-identity.png",
+        "sha256": "83fcf101249865b9da8aae469c5011d285569943a096df9ac1ac649dae36998d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 153942,
+        "alt": "Clarity Design System 首页：顶栏 VERSION 18，标题 Simplifying the complexity of enterprise products，按钮 GET STARTED USING CLARITY，下方 Designing、Developing、Accessibility 三卡与 Version 18.0.0 发布说明"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://clarity.design/pages/developing",
+      "finalUrl": "https://clarity.design/pages/developing",
+      "title": "Developing - Clarity Design System",
+      "selectionRationale": "再翻 Developing。HTML/CSS 与 Angular 两条安装排出范围。",
+      "shot": {
+        "src": "/shots/clarity/v2-breadth.png",
+        "sha256": "2b16f8d61f93636446a164d8a12f262beeda98381e094ea029f7541d6d142629",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106164,
+        "alt": "Developing 页：VERSION 18，说明可装 Clarity HTML/CSS Framework，或把 Clarity 装进现有 Angular 应用，下方 Installing the Clarity HTML/CSS Framework"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://clarity.design/documentation/button/code",
+      "finalUrl": "https://clarity.design/documentation/button/code",
+      "title": "Button - Clarity Design System",
+      "selectionRationale": "最后开 Button Code。现场实心按钮和 btn 代码即证明。",
+      "shot": {
+        "src": "/shots/clarity/v2-proof.png",
+        "sha256": "7254cb3a451681461a97b244afd35f259fa2b88f82d65622d92f90061def24fa",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75230,
+        "alt": "Button Code 页：Code 标签，Solid Buttons 现场 PRIMARY、INFO、SUCCESS、WARNING、DANGER、DISABLED，下方 btn btn-primary 代码，链到 Storybook"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "VMware, Inc.",
+      "sourceUrl": "https://raw.githubusercontent.com/vmware/clarity/next/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，版权行为 Copyright (c) 2016-2021 VMware, Inc. All rights reserved。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "VMware",
+      "sourceUrl": "https://clarity.design/",
+      "evidence": "仓库 vmware/clarity 由 VMware 组织维护。LICENSE 版权人为 VMware, Inc。首页写 @clr/angular 与 @clr/ui。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/vmware/clarity",
+      "sourceUrl": "https://github.com/vmware/clarity",
+      "evidence": "Angular Clarity 源码在 github.com/vmware/clarity。LICENSE 位于该仓 next 分支。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/vmware/clarity/next/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2016-2021 VMware, Inc。覆盖 Clarity Angular 源码。微软 Clarity 分析产品不在本条许可陈述内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://clarity.design/pages/developing",
+      "evidence": "Developing 页给出 HTML/CSS 与 Angular 安装步骤。文档公开可浏览。无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@clr/angular",
+      "sourceUrl": "https://clarity.design/",
+      "evidence": "首页 Version 18.0.0 说明写 icons、CSS tokens 现装进 @clr/angular 与 @clr/ui，并 Dropped @cds/core Dependency。配套样式包为 @clr/ui。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/clarity.md",
+  "registryUrl": "/r/clarity.json"
+}
