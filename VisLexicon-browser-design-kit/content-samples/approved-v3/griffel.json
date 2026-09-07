@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "entryId": "griffel",
+  "entityId": "entity-griffel",
+  "attemptId": "swarm-curator-batch-d-w5-griffel-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://griffel.js.org/",
+    "finalUrl": "https://griffel.js.org/",
+    "checkedAt": "2026-09-07T01:20:24.000Z"
+  },
+  "editorial": {
+    "name": "Griffel",
+    "descriptionZh": "Microsoft 维护的 CSS-in-JS 引擎 Griffel，支持运行时与提前编译。React 包 @griffel/react 用 makeStyles 写样式对象。仓库 LICENSE.md 标 MIT。",
+    "takeawayZh": "用 makeStyles 写对象，编译成原子 CSS",
+    "noteZh": "首页标题 CSS-in-JS with ahead-of-time compilation，下面 makeStyles 示例。Install 写 yarn add @griffel/react。makeStyles 页用 button、icon 两个 slot 示范 hook。MIT。适合 Fluent UI 栈或要原子 CSS-in-JS 的人。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-griffel",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Griffel 定义为 CSS-in-JS with ahead-of-time compilation，并给出 makeStyles 示例，交付物是样式引擎。",
+        "evidenceUrl": "https://griffel.js.org/"
+      },
+      {
+        "statement": "makeStyles 文档用 button 与 icon 两个 slot 返回 React hook，证明可以在组件里生成原子 class。",
+        "evidenceUrl": "https://griffel.js.org/react/api/make-styles"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d-w5",
+    "reviewerId": "swarm-reviewer-grok-w7",
+    "confirmedAt": "2026-09-07T02:32:12.524Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "typescript",
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://griffel.js.org/",
+      "finalUrl": "https://griffel.js.org/",
+      "title": "Griffel",
+      "selectionRationale": "先看首页标题和 makeStyles 示例。",
+      "shot": {
+        "src": "/shots/griffel/v2-identity.png",
+        "sha256": "054bc416a92b9b93f900096206df11f244b37997b487a932d59cc681271ef4bd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 122098,
+        "alt": "Griffel 首页：CSS-in-JS with ahead-of-time compilation，Get started 与 Try it out，下方 makeStyles 代码"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://griffel.js.org/react/install",
+      "finalUrl": "https://griffel.js.org/react/install",
+      "title": "Install | Griffel",
+      "selectionRationale": "再翻 Install 的 yarn add @griffel/react。",
+      "shot": {
+        "src": "/shots/griffel/v2-breadth.png",
+        "sha256": "077949e2870411a103aa3dfbf386f3382d5bbbe510d227edd6ee8382f0f809ba",
+        "width": 1280,
+        "height": 900,
+        "bytes": 62284,
+        "alt": "Griffel Install：yarn add @griffel/react，左侧 API 列出 makeStyles、mergeClasses，Guides 列出 Atomic CSS"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://griffel.js.org/react/api/make-styles",
+      "finalUrl": "https://griffel.js.org/react/api/make-styles",
+      "title": "makeStyles | Griffel",
+      "selectionRationale": "最后打开 makeStyles 的 button 示例。",
+      "shot": {
+        "src": "/shots/griffel/v2-proof.png",
+        "sha256": "e6322835a1c622a36254004e51c8873c344a41710d99160f60f20a9db4b8a1df",
+        "width": 1280,
+        "height": 900,
+        "bytes": 99073,
+        "alt": "Griffel makeStyles：useClasses 含 button 与 icon，Component 里 className={classes.button}，下方 Nesting selector 警告"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Microsoft Corporation",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/griffel/main/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) Microsoft Corporation。页脚写 Open source at Microsoft。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Microsoft",
+      "sourceUrl": "https://griffel.js.org/",
+      "evidence": "页脚 Open source at Microsoft。仓库在 GitHub 组织 microsoft/griffel。LICENSE.md 署 Microsoft Corporation。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/microsoft/griffel",
+      "sourceUrl": "https://griffel.js.org/",
+      "evidence": "顶栏 GitHub 链到 github.com/microsoft/griffel。packages/react/package.json repository.url 为 https://github.com/microsoft/griffel。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/griffel/main/LICENSE.md",
+      "evidence": "LICENSE.md 标题 MIT License，Copyright (c) Microsoft Corporation。@griffel/react package.json license 为 MIT。覆盖 Griffel 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://griffel.js.org/react/install",
+      "evidence": "Install 写 yarn add @griffel/react 与 npm install @griffel/react。文档公开，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@griffel/react",
+      "sourceUrl": "https://griffel.js.org/react/install",
+      "evidence": "Install 写 yarn add @griffel/react。packages/react/package.json name 为 @griffel/react，version 1.7.7。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d-w5",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w7",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-w7"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-d-w5 进站起草。status 仍 DRAFT。 swarm-reviewer-grok-w7 独立打开活页、LICENSE 原文与三张 PNG sha256 后 APPROVED。"
+  }
+}

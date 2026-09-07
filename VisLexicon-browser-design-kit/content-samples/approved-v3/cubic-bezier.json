@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 3,
+  "entryId": "cubic-bezier",
+  "entityId": "entity-cubic-bezier",
+  "attemptId": "swarm-curator-batch-d-w6-cubic-bezier-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://cubic-bezier.com/",
+    "finalUrl": "https://cubic-bezier.com/",
+    "checkedAt": "2026-09-07T09:36:14.000Z"
+  },
+  "editorial": {
+    "name": "cubic-bezier.com",
+    "descriptionZh": "Lea Verou 做的 CSS cubic-bezier() 缓动预览工具。可拖控制点、对比曲线并复制函数。源码 LICENSE 为 MIT，站点免费使用。",
+    "takeawayZh": "拖控制点，复制 cubic-bezier() 函数",
+    "noteZh": "首页标题 cubic-bezier(.17,.67,.83,.67)，左坐标平面，右 Preview & compare 和 Library 的 ease、linear。About 写支持 y 越界和 permalink。证明页 #.64,.57,.67,1.53 控制点超出 1，曲线过冲。源码 MIT，写 CSS transition 前可先看加速度。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-cubic-bezier",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把站点做成可拖控制点的 cubic-bezier() 预览器，并提供 Preview & compare 与 Library，交付物是缓动曲线创作工具，不是可安装动画库。",
+        "evidenceUrl": "https://cubic-bezier.com/"
+      },
+      {
+        "statement": "About 文说明该工具支持 y 值越界、键盘操作和 permalink，用来理解和分享 CSS 缓动，而不是分发组件源码。",
+        "evidenceUrl": "https://lea.verou.me/2011/09/a-better-tool-for-cubic-bezier-easing/"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d-w6",
+    "reviewerId": "swarm-reviewer-grok-w6",
+    "confirmedAt": "2026-09-07T02:26:53.208Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "generate",
+      "copy",
+      "compare",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://cubic-bezier.com/",
+      "finalUrl": "https://cubic-bezier.com/",
+      "title": "cubic-bezier.com",
+      "selectionRationale": "先看首页曲线、Preview & compare 和 Library。",
+      "shot": {
+        "src": "/shots/cubic-bezier/v2-identity.png",
+        "sha256": "1112d22039e5508b711b3a61f128f347ad316bee96a8ffffef0ad2530e58bdcf",
+        "width": 1280,
+        "height": 900,
+        "bytes": 72371,
+        "alt": "cubic-bezier.com 首页：标题 cubic-bezier(.17, .67, .83, .67)，左侧坐标平面，右侧 Preview & compare 与 Library 的 ease、linear"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://lea.verou.me/2011/09/a-better-tool-for-cubic-bezier-easing/",
+      "finalUrl": "https://lea.verou.me/2011/09/a-better-tool-for-cubic-bezier-easing/",
+      "title": "A better tool for cubic-bezier() easing • Lea Verou",
+      "selectionRationale": "再看 About：写清 y 可越界和 permalink。",
+      "shot": {
+        "src": "/shots/cubic-bezier/v2-breadth.png",
+        "sha256": "bc6c81ace08c50373a467d435b7a711436acd4561f0a5d79b160dc852ed1667e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 201851,
+        "alt": "Lea Verou 博文标题 A better tool for cubic-bezier() easing，日期 14 September 2011，正文讲 Zurich 演讲与 y 值越界"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://cubic-bezier.com/#.64,.57,.67,1.53",
+      "finalUrl": "https://cubic-bezier.com/#.64,.57,.67,1.53",
+      "title": "cubic-bezier.com",
+      "selectionRationale": "最后打开过冲 permalink，控制点超出 1。",
+      "shot": {
+        "src": "/shots/cubic-bezier/v2-proof.png",
+        "sha256": "e9327a76f20f621caebd04481bf1e3fd3ac1b6f848793ce2f21ba63c163813f4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78908,
+        "alt": "cubic-bezier.com 过冲状态：标题 cubic-bezier(.64, .57, .67, 1.53)，青色控制点超出顶部，曲线越过 1"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Lea Verou",
+      "sourceUrl": "https://cubic-bezier.com/",
+      "evidence": "首页左侧竖排 Made by Lea Verou with care，并链到 About。About 文作者即 Lea Verou。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Lea Verou",
+      "sourceUrl": "https://lea.verou.me/2011/09/a-better-tool-for-cubic-bezier-easing/",
+      "evidence": "About 发布在 lea.verou.me，站点品牌为 cubic-bezier.com。仓库位于 GitHub 用户 LeaVerou 下。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/LeaVerou/cubic-bezier",
+      "sourceUrl": "https://github.com/LeaVerou/cubic-bezier",
+      "evidence": "仓库 About 写 Playground for CSS bezier-based timing functions，并回链 cubic-bezier.com。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/LeaVerou/cubic-bezier/gh-pages/LICENSE",
+      "evidence": "LICENSE 正文为 MIT 许可条款，Copyright (c) 2013 Lea Verou。GitHub About 标 MIT license。覆盖该工具源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://cubic-bezier.com/",
+      "evidence": "工具公开可预览、复制 cubic-bezier() 并保存 Library，无付费墙或账号墙。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d-w6",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w6",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-w6"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-d-w6 进站起草。单页工具：identity 为首页，breadth 为 About，proof 为过冲 permalink。status 仍 DRAFT。 swarm-reviewer-grok-w6 复核活页、截图哈希与 LICENSE 后 APPROVED."
+  }
+}

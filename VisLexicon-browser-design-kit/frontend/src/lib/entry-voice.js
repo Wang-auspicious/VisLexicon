@@ -1348,6 +1348,70 @@ const VOICE = {
       en: [{ k: 'CLI', v: 'npm install vega-lite' }],
     },
   },
+  csshake: {
+    lede: { zh: 'CSS 抖动 class。MIT。', en: 'CSS shake classes. MIT.' },
+    style: { zh: '青绿全出血。奶昔插画。白手写字标。v1.7.0。', en: 'Teal full bleed. Milkshake illustration. White script wordmark. v1.7.0.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i csshake' }],
+      en: [{ k: 'CLI', v: 'npm i csshake' }],
+    },
+  },
+  'pattern-css': {
+    lede: { zh: '纯 CSS 背景纹理。MIT。', en: 'Pure CSS background patterns. MIT.' },
+    style: { zh: '深色网点。荧光绿斜纹字标。左栏目录。', en: 'Dark dotted field. Neon-green striped wordmark. Left-hand TOC.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install pattern.css' }],
+      en: [{ k: 'CLI', v: 'npm install pattern.css' }],
+    },
+  },
+  linaria: {
+    lede: { zh: '零运行时 CSS-in-JS。MIT。', en: 'Zero-runtime CSS-in-JS. MIT.' },
+    style: { zh: '品红粉渐变。白无衬线标题。深色代码卡。', en: 'Magenta-pink gradient. White sans title. Dark code card.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @linaria/core @linaria/react' }],
+      en: [{ k: 'CLI', v: 'npm install @linaria/core @linaria/react' }],
+    },
+  },
+  griffel: {
+    lede: { zh: '提前编译的 CSS-in-JS。MIT。', en: 'Ahead-of-time CSS-in-JS. MIT.' },
+    style: { zh: '近黑。青绿几何英雄区。绿紫胶囊。代码块。', en: 'Near-black. Lime geometric hero. Green and purple capsules. Code block.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @griffel/react' }],
+      en: [{ k: 'CLI', v: 'npm install @griffel/react' }],
+    },
+  },
+  atropos: {
+    lede: { zh: '触摸友好的 3D 视差卡。MIT。', en: 'Touch-friendly 3D parallax cards. MIT.' },
+    style: { zh: '紫渐变。山景视差卡。ATROPOS JS。胶囊按钮。', en: 'Purple gradient. Mountain parallax card. ATROPOS JS. Capsule button.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i atropos' }],
+      en: [{ k: 'CLI', v: 'npm i atropos' }],
+    },
+  },
+  'vanilla-tilt': {
+    lede: { zh: '无依赖 3D 倾斜。MIT。', en: 'Dependency-free 3D tilt. MIT.' },
+    style: { zh: '浅色文档。左栏渐变方卡。描边下载瓷砖。', en: 'Light docs. Left-hand gradient tiles. Outlined download cards.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install vanilla-tilt' }],
+      en: [{ k: 'CLI', v: 'npm install vanilla-tilt' }],
+    },
+  },
+  'lottie-web': {
+    lede: { zh: 'Airbnb Lottie Web 运行时。MIT。', en: 'Airbnb Lottie Web runtime. MIT.' },
+    style: { zh: '浅色文档。左栏。青绿字标。After Effects 说明。', en: 'Light docs. Left nav. Teal wordmark. After Effects copy.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install lottie-web' }],
+      en: [{ k: 'CLI', v: 'npm install lottie-web' }],
+    },
+  },
+  reanimated: {
+    lede: { zh: 'React Native 动画库。MIT。', en: 'React Native animation library. MIT.' },
+    style: { zh: '粉紫沙漠渐变。马剪影。紫描边标题。', en: 'Pink-purple desert gradient. Horse silhouette. Purple boxed title.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install react-native-reanimated' }],
+      en: [{ k: 'CLI', v: 'npm install react-native-reanimated' }],
+    },
+  },
   lesscss: {
     lede: { zh: 'CSS 语言扩展。Apache-2.0。', en: 'CSS language extension. Apache-2.0.' },
     style: { zh: '海军蓝营销首页。{less} 立体字标。等宽安装命令。', en: 'Navy marketing homepage. Extruded {less} wordmark. Monospace install commands.' },

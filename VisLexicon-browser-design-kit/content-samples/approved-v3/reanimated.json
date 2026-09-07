@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 3,
+  "entryId": "reanimated",
+  "entityId": "entity-reanimated",
+  "attemptId": "swarm-curator-batch-d-w5-reanimated-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://docs.swmansion.com/react-native-reanimated/",
+    "finalUrl": "https://docs.swmansion.com/react-native-reanimated/",
+    "checkedAt": "2026-09-07T01:20:50.000Z"
+  },
+  "editorial": {
+    "name": "React Native Reanimated",
+    "descriptionZh": "Software Mansion 维护的 React Native 动画库 Reanimated。动画默认跑在 UI 线程。文档站现为 4.x，包名 react-native-reanimated。仓库 LICENSE 标 MIT。",
+    "takeawayZh": "用共享值在 UI 线程播原生动画",
+    "noteZh": "首页大标题 React Native Reanimated 与 Get started。Getting started 写 4.x 只支持新架构，并给 npm install react-native-reanimated。Your First Animation 用 Animated.View 紫色方块示范。MIT。适合 React Native。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-reanimated",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Reanimated 定义为 A powerful animation library that makes it easy to create smooth animations and interactions that run in the UI thread。",
+        "evidenceUrl": "https://docs.swmansion.com/react-native-reanimated/"
+      },
+      {
+        "statement": "Your First Animation 用 import Animated from 'react-native-reanimated' 与 <Animated.View> 示范可动画组件。",
+        "evidenceUrl": "https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/your-first-animation"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d-w5",
+    "reviewerId": "swarm-reviewer-grok-w7",
+    "confirmedAt": "2026-09-07T02:32:12.524Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "technologies": [
+      "react-native",
+      "react",
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://docs.swmansion.com/react-native-reanimated/",
+      "finalUrl": "https://docs.swmansion.com/react-native-reanimated/",
+      "title": "React Native Reanimated",
+      "selectionRationale": "先看首页大标题和 Get started。",
+      "shot": {
+        "src": "/shots/reanimated/v2-identity.png",
+        "sha256": "cd39cbaccaacdc9359f7e61a2b70ed737353842192e83d7c623dbc8620c943d4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 224321,
+        "alt": "React Native Reanimated 首页：Create smooth animations with an excellent developer experience，Get started 按钮与奔马剪影"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started",
+      "finalUrl": "https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started",
+      "title": "Getting started | React Native Reanimated",
+      "selectionRationale": "再翻 Getting started：4.x 新架构说明和安装步骤。",
+      "shot": {
+        "src": "/shots/reanimated/v2-breadth.png",
+        "sha256": "9f11cab854d271bcb9d2e0519185b04cb85e656464176e632a15390eaf234faa",
+        "width": 1280,
+        "height": 900,
+        "bytes": 192080,
+        "alt": "Reanimated Getting started：What is React Native Reanimated、4.x 需 New Architecture，左侧 Fundamentals 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/your-first-animation",
+      "finalUrl": "https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/your-first-animation",
+      "title": "Your First Animation | React Native Reanimated",
+      "selectionRationale": "最后看 Animated.View 紫色方块。",
+      "shot": {
+        "src": "/shots/reanimated/v2-proof.png",
+        "sha256": "c4b996a0f583df07accbf73ecfcd8c157d5687782e0b331819c0f70cf9d9dc8a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 174525,
+        "alt": "Reanimated Your First Animation：import Animated from 'react-native-reanimated' 与 <Animated.View> 宽高 100 的 violet 方块"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Krzysztof Magiera",
+      "sourceUrl": "https://raw.githubusercontent.com/software-mansion/react-native-reanimated/main/packages/react-native-reanimated/package.json",
+      "evidence": "packages/react-native-reanimated/package.json author.name 为 Krzysztof Magiera。LICENSE 署 Software Mansion。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Software Mansion",
+      "sourceUrl": "https://docs.swmansion.com/react-native-reanimated/",
+      "evidence": "首页与文档写 We are Software Mansion。页面 JSON-LD author 为 Software Mansion。LICENSE 版权行为 Copyright (c) 2016 Software Mansion。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/software-mansion/react-native-reanimated",
+      "sourceUrl": "https://docs.swmansion.com/react-native-reanimated/",
+      "evidence": "页面 JSON-LD codeRepository 为 https://github.com/software-mansion/react-native-reanimated。package.json repository.url 同仓。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/software-mansion/react-native-reanimated/main/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2016 Software Mansion <swmansion.com>。package.json license 为 MIT。覆盖 react-native-reanimated 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started",
+      "evidence": "Getting started 写 npm install react-native-reanimated 与 yarn add。文档公开，无付费墙。侧栏 Hire us 是 Software Mansion 咨询，不是库授权。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "react-native-reanimated",
+      "sourceUrl": "https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started",
+      "evidence": "Getting started 写 npm install react-native-reanimated。package.json name 为 react-native-reanimated。文档顶栏 Version: 4.x。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d-w5",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w7",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-w7"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-d-w5 进站起草。文档 4.x。status 仍 DRAFT。 swarm-reviewer-grok-w7 独立打开活页、LICENSE 原文与三张 PNG sha256 后 APPROVED。"
+  }
+}

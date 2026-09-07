@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 3,
+  "entryId": "linaria",
+  "entityId": "entity-linaria",
+  "attemptId": "swarm-curator-batch-d-w5-linaria-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://linaria.dev/",
+    "finalUrl": "https://linaria.dev/",
+    "checkedAt": "2026-09-07T01:20:17.000Z"
+  },
+  "editorial": {
+    "name": "Linaria",
+    "descriptionZh": "Callstack 维护的零运行时 CSS-in-JS 库 Linaria。用 css 与 styled 写样式，构建期抽成 CSS 文件。仓库 LICENSE 标 MIT。打包配置现指向 wyw-in-js.dev。",
+    "takeawayZh": "用 JS 写样式，构建期吐出 CSS",
+    "noteZh": "linaria.dev 只有一页，标题 Zero-Runtime CSS in JS，右侧 styled.button。站点 /docs 已 404。README 把打包器指到 wyw-in-js.dev/bundlers，Vite 页写 npm i -D @wyw-in-js/vite。MIT。适合要 CSS-in-JS 写法、不要运行时插样式的人。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-linaria",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Linaria 定义为 Zero-Runtime CSS in JS，说明样式在构建期抽成真实 CSS 文件，交付物是样式引擎而不是组件包。",
+        "evidenceUrl": "https://linaria.dev/"
+      },
+      {
+        "statement": "Linaria README 把打包器配置指到 wyw-in-js.dev；Bundlers 页列出 Vite、webpack 等提取插件，Vite 页给出 @wyw-in-js/vite 安装。",
+        "evidenceUrl": "https://wyw-in-js.dev/bundlers"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d-w5",
+    "reviewerId": "swarm-reviewer-grok-w7",
+    "confirmedAt": "2026-09-07T02:32:12.524Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "typescript",
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://linaria.dev/",
+      "finalUrl": "https://linaria.dev/",
+      "title": "Linaria – zero-runtime CSS in JS library",
+      "selectionRationale": "先看首页标题和右侧 styled.button。",
+      "shot": {
+        "src": "/shots/linaria/v2-identity.png",
+        "sha256": "0ac7c987793bdb3670a0e7dbabe73edcc02427a2ae55f778c1438ab686f082d8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 458094,
+        "alt": "Linaria 首页：Zero-Runtime CSS in JS，Get Started 按钮，右侧 import { styled } from \"@linaria/react\" 的 Button 示例"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://wyw-in-js.dev/bundlers",
+      "finalUrl": "https://wyw-in-js.dev/bundlers",
+      "title": "Bundlers – WyW-in-JS",
+      "selectionRationale": "再翻 Bundlers 目录里的 Vite、webpack。",
+      "shot": {
+        "src": "/shots/linaria/v2-breadth.png",
+        "sha256": "1a570cc5afd97a008263c42cacec57075a24af438a58efb8b7a301840d665cde",
+        "width": 1280,
+        "height": 900,
+        "bytes": 77328,
+        "alt": "WyW-in-JS Bundlers：左侧 Supported bundlers 列出 Bun 到 Webpack，正文 Pick the one you use"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://wyw-in-js.dev/bundlers/vite",
+      "finalUrl": "https://wyw-in-js.dev/bundlers/vite",
+      "title": "Usage with Vite – WyW-in-JS",
+      "selectionRationale": "最后打开 Vite 页的 wyw() 插件。",
+      "shot": {
+        "src": "/shots/linaria/v2-proof.png",
+        "sha256": "639d5554f1498bb6ce21a4cf53b2772813c89832c14228d7f75c296da6d89587",
+        "width": 1280,
+        "height": 900,
+        "bytes": 110163,
+        "alt": "WyW-in-JS Usage with Vite：npm i -D @wyw-in-js/vite，下方 import wyw from '@wyw-in-js/vite' 与 plugins: [wyw()]"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Callstack",
+      "sourceUrl": "https://raw.githubusercontent.com/callstack/linaria/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2017 Callstack。README 写 Made with ❤️ at Callstack。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Callstack",
+      "sourceUrl": "https://raw.githubusercontent.com/callstack/linaria/master/LICENSE",
+      "evidence": "LICENSE 与 README 均署 Callstack。仓库在 GitHub 组织 callstack 下。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/callstack/linaria",
+      "sourceUrl": "https://linaria.dev/",
+      "evidence": "顶栏 GitHub 与 Get Started 链到 github.com/callstack/linaria。根 package.json repository 为 git@github.com:callstack/linaria.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/callstack/linaria/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2017 Callstack。packages/core/package.json license 为 MIT。覆盖 Linaria 源码；打包插件文档在 wyw-in-js.dev，许可以各包为准。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://linaria.dev/",
+      "evidence": "首页与仓库 README 公开。安装走 npm install @linaria/core @linaria/react。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@linaria/core",
+      "sourceUrl": "https://raw.githubusercontent.com/callstack/linaria/master/README.md",
+      "evidence": "README Installation 写 npm install @linaria/core @linaria/react @wyw-in-js/babel-preset。packages/core/package.json name 为 @linaria/core，version 8.2.0。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d-w5",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w7",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-w7"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-d-w5 进站起草。linaria.dev 无多页文档，breadth/proof 用 README 指向的 wyw-in-js.dev 打包器页。status 仍 DRAFT。 swarm-reviewer-grok-w7 独立打开活页、LICENSE 原文与三张 PNG sha256 后 APPROVED。"
+  }
+}

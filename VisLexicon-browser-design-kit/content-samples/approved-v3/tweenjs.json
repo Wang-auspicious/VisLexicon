@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "entryId": "tweenjs",
+  "entityId": "entity-tweenjs",
+  "attemptId": "swarm-curator-batch-d-w6-tweenjs-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://tweenjs.github.io/tween.js/",
+    "finalUrl": "https://tweenjs.github.io/tween.js/",
+    "checkedAt": "2026-09-07T09:36:14.000Z"
+  },
+  "editorial": {
+    "name": "tween.js",
+    "descriptionZh": "JavaScript/TypeScript 补间引擎 tween.js，实现优化后的 Robert Penner 缓动。包 @tweenjs/tween.js 现为 25.0.0。LICENSE 为 MIT。",
+    "takeawayZh": "Tween.to().start() 做属性补间",
+    "noteZh": "首页徽章 npm v25.0.0，示例仍 import @23.1.3，用 Tween 和 Easing.Quadratic.InOut 移动 #box。用户指南讲 tween.to({x:200},1000) 与 start()。hello world 页浅蓝方块在 00 HELLO WORLD 上来回补间。MIT。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-tweenjs",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 tween.js 定义为 JavaScript (TypeScript) tweening engine，示例用 new Tween(coords).to(...).easing(Easing.Quadratic.InOut).start()。",
+        "evidenceUrl": "https://tweenjs.github.io/tween.js/"
+      },
+      {
+        "statement": "hello world 例把浅蓝方块在 00 HELLO WORLD 上补间，证明库能驱动 DOM 位置，而不是文档站本身。",
+        "evidenceUrl": "https://tweenjs.github.io/tween.js/examples/00_hello_world.html"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d-w6",
+    "reviewerId": "swarm-reviewer-grok-w6",
+    "confirmedAt": "2026-09-07T02:26:53.208Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://tweenjs.github.io/tween.js/",
+      "finalUrl": "https://tweenjs.github.io/tween.js/",
+      "title": "tween.js | JavaScript/TypeScript animation engine",
+      "selectionRationale": "先看首页：v25.0.0 徽章和 Tween 示例。",
+      "shot": {
+        "src": "/shots/tweenjs/v2-identity.png",
+        "sha256": "01869debeef6e9508e75d22836c78ad568436e8c4c06580aa5c774d39ce79613",
+        "width": 1280,
+        "height": 900,
+        "bytes": 79334,
+        "alt": "tween.js 首页：标题 tween.js，徽章 npm v25.0.0，示例 import Tween、Easing from unpkg @23.1.3 并 new Tween(coords)"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://tweenjs.github.io/tween.js/docs/user_guide.html",
+      "finalUrl": "https://tweenjs.github.io/tween.js/docs/user_guide.html",
+      "title": "tween.js user guide | tween.js",
+      "selectionRationale": "再看用户指南：tween.to 和 start()。",
+      "shot": {
+        "src": "/shots/tweenjs/v2-breadth.png",
+        "sha256": "72ca0d915839c2e8287f90644cc317739d57ad27931009e0f2196b15bd1cd9fc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 77420,
+        "alt": "tween.js user guide：What is a tween，代码 import {Tween} from '@tweenjs/tween.js' 与 tween.to({x: 200}, 1000)"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://tweenjs.github.io/tween.js/examples/00_hello_world.html",
+      "finalUrl": "https://tweenjs.github.io/tween.js/examples/00_hello_world.html",
+      "title": "Tween.js / hello world!",
+      "selectionRationale": "最后打开 hello world：蓝块在字上来回。",
+      "shot": {
+        "src": "/shots/tweenjs/v2-proof.png",
+        "sha256": "edd94fd28ef3cfec3100460633013692dc9d792bf1a15f3c9ec7872ae3147d36",
+        "width": 1280,
+        "height": 900,
+        "bytes": 24347,
+        "alt": "tween.js hello world 例：标题 tween.js 与 00 HELLO WORLD，浅蓝方块写 hello world! 叠在文字上"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Joe Pea (@trusktr) and tween.js contributors",
+      "sourceUrl": "https://tweenjs.github.io/tween.js/",
+      "evidence": "首页 People 写 Maintainers: Joe Pea (@trusktr)。package.json author 为 tween.js contributors。LICENSE 写 Copyright (c) 2010-2012 Tween.js authors，Easing equations Copyright Robert Penner。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "tweenjs",
+      "sourceUrl": "https://tweenjs.github.io/tween.js/",
+      "evidence": "站点托管在 tweenjs.github.io/tween.js。仓库位于 GitHub 组织 tweenjs。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/tweenjs/tween.js",
+      "sourceUrl": "https://tweenjs.github.io/tween.js/",
+      "evidence": "页脚 Improve this page 链到 github.com/tweenjs/tween.js。package.json repository.url 为 https://github.com/tweenjs/tween.js.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/tweenjs/tween.js/master/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License，Copyright (c) 2010-2012 Tween.js authors，Easing equations Copyright (c) 2001 Robert Penner。package.json license 为 MIT。覆盖库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://tweenjs.github.io/tween.js/",
+      "evidence": "首页与用户指南公开，Installation 写 npm install @tweenjs/tween.js，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@tweenjs/tween.js",
+      "sourceUrl": "https://tweenjs.github.io/tween.js/",
+      "evidence": "首页徽章 npm v25.0.0。package.json name 为 @tweenjs/tween.js，version 25.0.0。首页示例 import 仍写 @23.1.3。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d-w6",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w6",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-w6"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-d-w6 进站起草。徽章 25.0.0 与首页示例 23.1.3 并存，已写入 note 与 package 事实。status 仍 DRAFT。 swarm-reviewer-grok-w6 复核活页、截图哈希与 LICENSE 后 APPROVED."
+  }
+}
