@@ -660,6 +660,21 @@ const VOICE = {
     style: { zh: '高饱和蓝。黄无衬线字标。等轴测积木。描边黄按钮。', en: 'High-chroma blue. Yellow sans wordmark. Isometric blocks. Outlined yellow buttons.' },
     acquire: { zh: [{ k: '命令行', v: 'npm install @shopify/draggable' }], en: [{ k: 'CLI', v: 'npm install @shopify/draggable' }] },
   },
+  'react-joyride': {
+    lede: { zh: 'React 产品导览。MIT。', en: 'React product tours. MIT.' },
+    style: { zh: '深色营销。品红迷宫徽标。蓝胶囊按钮。安装命令条。', en: 'Dark marketing. Magenta maze mark. Blue capsule buttons. Install command bar.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install react-joyride' }], en: [{ k: 'CLI', v: 'npm install react-joyride' }] },
+  },
+  'air-datepicker': {
+    lede: { zh: '无依赖的 JavaScript 日期选择器。MIT。', en: 'Dependency-free JavaScript datepicker. MIT.' },
+    style: { zh: '浅色单页。居中日历标本。描边胶囊按钮。细无衬线标题。', en: 'Light single page. Centered calendar specimen. Outlined capsule buttons. Thin sans title.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm i air-datepicker -S' }], en: [{ k: 'CLI', v: 'npm i air-datepicker -S' }] },
+  },
+  'react-datepicker': {
+    lede: { zh: 'React 日期选择组件。MIT。', en: 'React datepicker component. MIT.' },
+    style: { zh: '蓝白营销。现场日历。GitHub 缎带。安装命令。', en: 'Blue-and-white marketing. Live calendar. GitHub ribbon. Install commands.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install react-datepicker --save' }], en: [{ k: 'CLI', v: 'npm install react-datepicker --save' }] },
+  },
   'react-dnd': {
     lede: { zh: 'React 拖放原语。MIT。', en: 'React drag-and-drop primitives. MIT.' },
     style: { zh: '浅色文档。左侧蓝链目录。衬线标题。代码标本。', en: 'Light docs. Left-hand blue TOC. Serif titles. Code specimens.' },
