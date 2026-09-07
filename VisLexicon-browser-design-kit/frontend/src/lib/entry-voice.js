@@ -660,6 +660,11 @@ const VOICE = {
     style: { zh: '高饱和蓝。黄无衬线字标。等轴测积木。描边黄按钮。', en: 'High-chroma blue. Yellow sans wordmark. Isometric blocks. Outlined yellow buttons.' },
     acquire: { zh: [{ k: '命令行', v: 'npm install @shopify/draggable' }], en: [{ k: 'CLI', v: 'npm install @shopify/draggable' }] },
   },
+  'react-modal': {
+    lede: { zh: 'React 无障碍对话框。MIT。', en: 'Accessible React modal. MIT.' },
+    style: { zh: '浅色文档。蓝顶栏。左侧目录。安装代码块。', en: 'Light docs. Blue top bar. Left-hand TOC. Install code block.' },
+    acquire: { zh: [{ k: '命令行', v: 'npm install react-modal' }], en: [{ k: 'CLI', v: 'npm install react-modal' }] },
+  },
   'react-joyride': {
     lede: { zh: 'React 产品导览。MIT。', en: 'React product tours. MIT.' },
     style: { zh: '深色营销。品红迷宫徽标。蓝胶囊按钮。安装命令条。', en: 'Dark marketing. Magenta maze mark. Blue capsule buttons. Install command bar.' },

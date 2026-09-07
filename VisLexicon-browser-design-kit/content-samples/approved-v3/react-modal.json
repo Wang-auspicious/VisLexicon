@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 3,
+  "entryId": "react-modal",
+  "entityId": "entity-react-modal",
+  "attemptId": "swarm-curator-batch-d-w3-react-modal-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://reactcommunity.org/react-modal/",
+    "finalUrl": "https://reactcommunity.org/react-modal/",
+    "checkedAt": "2026-09-07T02:30:00.000Z"
+  },
+  "editorial": {
+    "name": "react-modal",
+    "descriptionZh": "Ryan Florence 维护的 React 无障碍对话框组件 react-modal。仓库 LICENSE 标 MIT，可免费用于个人与商业项目。",
+    "takeawayZh": "npm 装上，给对话框补焦点和 ARIA",
+    "noteZh": "文档首页标题 react-modal，副题 Accessible modal dialog component for React.JS，安装写 npm install react-modal。Accessibility 页讲焦点与 ARIA。Styles 页给出 overlay 与 content 的样式对象。MIT 覆盖源码。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-react-modal",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "文档把 react-modal 定义为 Accessible modal dialog component for React.JS，交付物是可安装的对话框组件。",
+        "evidenceUrl": "https://reactcommunity.org/react-modal/"
+      },
+      {
+        "statement": "Inline Styles 页给出 Modal 的 overlay 与 content 默认样式对象，证明交付物是可配置的界面控件。",
+        "evidenceUrl": "https://reactcommunity.org/react-modal/styles"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-d-w3",
+    "reviewerId": "swarm-reviewer-grok-w5",
+    "confirmedAt": "2026-09-07T01:30:57.706Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": ["component", "primitive"],
+    "actions": ["install", "learn"],
+    "media": ["ui"],
+    "platforms": ["web"],
+    "technologies": ["react", "javascript"],
+    "workflowStages": ["build"],
+    "audiences": ["developer"],
+    "access": ["free", "open-source"],
+    "licenses": ["MIT"],
+    "contentOrganization": ["standards-documentation"],
+    "languages": ["en"]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://reactcommunity.org/react-modal/",
+      "finalUrl": "https://reactcommunity.org/react-modal/",
+      "title": "react-modal documentation",
+      "selectionRationale": "首页标题、安装命令与无障碍定位在首屏。",
+      "shot": {
+        "src": "/shots/react-modal/v2-identity.png",
+        "sha256": "2aa8f19a5aba83eb5f17b846d39886f1ea361bba2c69a37dedff24c5993330c5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 112648,
+        "alt": "react-modal 文档首页：蓝顶栏，标题 react-modal，npm install 代码块"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://reactcommunity.org/react-modal/accessibility/",
+      "finalUrl": "https://reactcommunity.org/react-modal/accessibility/",
+      "title": "Accessibility — react-modal",
+      "selectionRationale": "Accessibility 页讲 setAppElement 与 ARIA。",
+      "shot": {
+        "src": "/shots/react-modal/v2-breadth.png",
+        "sha256": "55dbc8c37a4dab7d72285c9dc6c3a14e142a99838840b33cef15df0399be86b5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139096,
+        "alt": "react-modal Accessibility：The app element 与 Modal.setAppElement('#root') 代码"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://reactcommunity.org/react-modal/styles",
+      "finalUrl": "https://reactcommunity.org/react-modal/styles",
+      "title": "Inline Styles — react-modal",
+      "selectionRationale": "Styles 页给出 overlay 与 content 默认样式对象。",
+      "shot": {
+        "src": "/shots/react-modal/v2-proof.png",
+        "sha256": "dd7a508121d8dc749e43154a7911d7f01c6b51a0bb0741d7148dc53a59666b9f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 95027,
+        "alt": "react-modal Inline Styles：style.overlay 与 style.content 默认 CSS 对象"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Ryan Florence",
+      "sourceUrl": "https://raw.githubusercontent.com/reactjs/react-modal/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2017 Ryan Florence。package.json authors 为 Ryan Florence。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "reactjs",
+      "sourceUrl": "https://github.com/reactjs/react-modal",
+      "evidence": "仓库组织为 reactjs。文档站 reactcommunity.org/react-modal。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/reactjs/react-modal",
+      "sourceUrl": "https://raw.githubusercontent.com/reactjs/react-modal/master/package.json",
+      "evidence": "package.json repository.url 为 https://github.com/reactjs/react-modal.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/reactjs/react-modal/master/LICENSE",
+      "evidence": "LICENSE 为 MIT 许可正文，Copyright (c) 2017 Ryan Florence。package.json license 为 MIT。覆盖 react-modal 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://reactcommunity.org/react-modal/",
+      "evidence": "文档写 npm install react-modal，公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "react-modal",
+      "sourceUrl": "https://raw.githubusercontent.com/reactjs/react-modal/master/package.json",
+      "evidence": "package.json name 为 react-modal，version 3.16.3。文档安装命令为 npm install react-modal。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-d-w3",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-w5",
+    "semanticPassed": true
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-d-w3 截图。Grok-main-D 补 JSON。"
+  }
+}

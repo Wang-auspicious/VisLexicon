@@ -136,6 +136,7 @@ export const COLLECTIONS = [
       'react-joyride',
       'air-datepicker',
       'react-datepicker',
+      'react-modal',
     ],
     createdAt: '2026-09-05',
   },
