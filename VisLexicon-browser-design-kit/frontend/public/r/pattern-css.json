@@ -1,0 +1,201 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:42:23.448Z",
+  "entryId": "pattern-css",
+  "entityId": "entity-pattern-css",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://bansal.io/pattern-css",
+    "finalUrl": "https://bansal.io/pattern-css",
+    "checkedAt": "2026-09-07T01:20:21.000Z"
+  },
+  "editorial": {
+    "name": "pattern.css",
+    "descriptionZh": "Jiten Bansal 维护的纯 CSS 背景图案库 pattern.css，gzip 后不到 1KB。用 pattern-checks-sm 这类 class 填底纹。package.json 与 README 标 MIT。",
+    "takeawayZh": "给空底加上格子点线图案 class",
+    "noteZh": "大标题用斜条纹填字，按钮 Get Started。Installation 给出 npm install pattern.css 和 unpkg。Checks 用 .pattern-checks-sm 到 xl 四块棋盘示范。页脚 © 2025, Jiten Bansal。仓库无 LICENSE 文件，package.json 写 MIT。适合要轻量底纹。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "visual-assets",
+        "subcategory": "photos-images-textures"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "首页把 pattern.css 定义为 CSS only library to fill your empty background with beautiful patterns，交付物是可安装的背景 class，不是位图素材包。",
+        "evidenceUrl": "https://bansal.io/pattern-css"
+      },
+      {
+        "statement": "Checks 段用 .pattern-checks-sm 到 .pattern-checks-xl 四块棋盘示范同一图案的尺寸档，证明可以当场套 class。",
+        "evidenceUrl": "https://bansal.io/pattern-css#checks"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:32:12.524Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "download"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://bansal.io/pattern-css",
+      "finalUrl": "https://bansal.io/pattern-css",
+      "title": "pattern.css - Background Patterns in CSS",
+      "selectionRationale": "先看首页斜条纹大标题和 Get Started。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pattern-css/v2-identity.png",
+        "sha256": "542be2059865e17dcc2734d34ef16174e7e198fb5b7bfb49380bbd8808122fcd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 71407,
+        "alt": "pattern.css 首页：斜条纹大标题、Get Started 与 View on Github，左侧 Introduction 到 Checks 目录"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://bansal.io/pattern-css#installation",
+      "finalUrl": "https://bansal.io/pattern-css#installation",
+      "title": "pattern.css - Background Patterns in CSS",
+      "selectionRationale": "再翻 Installation：npm、unpkg 和本地 link 三种装法。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pattern-css/v2-breadth.png",
+        "sha256": "520d34c01d2e310b400b787346c5a3efb8db06f10463442cffc9d1477d10dc6b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 79345,
+        "alt": "pattern.css Installation：npm install pattern.css、unpkg link 与 dist/pattern.min.css，下方 Tailwind CSS Installation"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://bansal.io/pattern-css#checks",
+      "finalUrl": "https://bansal.io/pattern-css#checks",
+      "title": "pattern.css - Background Patterns in CSS",
+      "selectionRationale": "最后看 Checks 四块棋盘示范。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pattern-css/v2-proof.png",
+        "sha256": "12a329a30e7eace1b976cd547b44d8c5863b70b060c8b51092caaa136ca54a4c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 73886,
+        "alt": "pattern.css Checks：.pattern-checks-sm 到 xl 四块棋盘预览，下方 GRID 的 .pattern-grid-sm 与 md"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Jiten Bansal",
+      "sourceUrl": "https://bansal.io/pattern-css",
+      "evidence": "页脚写 © 2025, Jiten Bansal。package.json author 为 bansal-io <hello@bansal.io>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "bansal-io",
+      "sourceUrl": "https://raw.githubusercontent.com/bansal/pattern.css/master/package.json",
+      "evidence": "package.json author 为 bansal-io <hello@bansal.io>。仓库在 GitHub 用户 bansal 下，站点域名 bansal.io。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/bansal/pattern.css",
+      "sourceUrl": "https://bansal.io/pattern-css",
+      "evidence": "首页 View on Github 与 Star 按钮链到 github.com/bansal/pattern.css。README 文档链回 bansal.io/pattern-css。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/bansal/pattern.css/master/package.json",
+      "evidence": "package.json license 为 MIT。README.MD 末节 License 写 MIT。仓库根目录没有 LICENSE 文件，GitHub API license 字段为 null。该声明覆盖 pattern.css 源码。",
+      "confidence": 0.8
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://bansal.io/pattern-css#installation",
+      "evidence": "Installation 写 npm install pattern.css、unpkg CDN 与 Download。文档公开，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "pattern.css",
+      "sourceUrl": "https://bansal.io/pattern-css#installation",
+      "evidence": "Installation 写 npm install pattern.css。package.json name 为 pattern.css，version 1.0.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/pattern-css",
+    "designMdUrl": "https://vislexicon.com/site/pattern-css.md",
+    "checkedAt": "2026-09-07T01:20:21.000Z",
+    "license": "MIT"
+  }
+}

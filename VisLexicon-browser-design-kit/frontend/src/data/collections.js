@@ -151,6 +151,7 @@ export const COLLECTIONS = [
       'react-modal',
       'blueprint',
       'fomantic-ui',
+      'toast-ui-grid',
     ],
     createdAt: '2026-09-05',
   },
@@ -169,7 +170,7 @@ export const COLLECTIONS = [
     titleEn: 'Motion and micro-interaction',
     blurbZh: '这些站交付的是会动的实现：时间轴、class 动画和弹簧，用来看效果怎么接到界面上。',
     blurbEn: 'Motion implementations: timelines, class animation, springs.',
-    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles', 'react-bits', 'animejs', 'lenis', 'theatre-js', 'auto-animate', 'barba', 'react-spring', 'use-gesture', 'driverjs'],
+    entryIds: ['motion', 'gsap', 'animate-css', 'rive', 'lottiefiles', 'react-bits', 'animejs', 'lenis', 'theatre-js', 'auto-animate', 'barba', 'react-spring', 'use-gesture', 'driverjs', 'cubic-bezier', 'wow-js', 'tweenjs', 'pagepiling', 'react-transition-group', 'csshake', 'atropos', 'vanilla-tilt', 'lottie-web', 'reanimated'],
     createdAt: '2026-09-06',
   },
   {
@@ -187,7 +188,7 @@ export const COLLECTIONS = [
     titleEn: 'Charts and visualization',
     blurbZh: '这些站交付的是图表实现：用组件、canvas 或比例尺把数据画出来。',
     blurbEn: 'Chart implementations: components, canvas, and scales.',
-    entryIds: ['d3', 'recharts', 'chartjs', 'nivo', 'tremor', 'visx', 'echarts', 'observable-plot', 'apexcharts', 'leaflet', 'vega'],
+    entryIds: ['d3', 'recharts', 'chartjs', 'nivo', 'tremor', 'visx', 'echarts', 'observable-plot', 'apexcharts', 'leaflet', 'vega', 'vega-lite'],
     createdAt: '2026-09-06',
   },
   {
@@ -205,7 +206,7 @@ export const COLLECTIONS = [
     titleEn: 'CSS tools',
     blurbZh: '这些站交付的是 CSS 框架或引擎：用工具类或构建期原子样式接到现有项目，不是现成组件包。',
     blurbEn: 'CSS frameworks and engines. Utility classes or build-time atomic styles, not ready-made component packs.',
-    entryIds: ['tailwind-css', 'panda-css', 'unocss', 'cva', 'pico-css', 'milligram', 'vanilla-extract', 'new-css', 'bootswatch', 'postcss', 'lightningcss', 'tachyons', 'spectre-css', 'sass', 'purecss'],
+    entryIds: ['tailwind-css', 'panda-css', 'unocss', 'cva', 'pico-css', 'milligram', 'vanilla-extract', 'new-css', 'bootswatch', 'postcss', 'lightningcss', 'tachyons', 'spectre-css', 'sass', 'purecss', 'pollen-css', 'basscss', 'lesscss'],
     createdAt: '2026-09-06',
   },
   {
@@ -214,7 +215,7 @@ export const COLLECTIONS = [
     titleEn: 'Canvas and spatial',
     blurbZh: '这些站交付的是画布、矢量或空间实现：用 2D、WebGL 或物理引擎把图形画出来。',
     blurbEn: 'Canvas, vector, or spatial implementations: 2D, WebGL, or physics.',
-    entryIds: ['threejs', 'p5js', 'pixijs', 'paperjs', 'twojs', 'konva', 'fabricjs', 'matter-js', 'babylonjs', 'aframe'],
+    entryIds: ['threejs', 'p5js', 'pixijs', 'paperjs', 'twojs', 'konva', 'fabricjs', 'matter-js', 'babylonjs', 'aframe', 'curtainsjs'],
     createdAt: '2026-09-06',
   },
 ]
@@ -273,7 +274,4 @@ export function validateCollections(collections, siteIndex) {
 }
 
 export function collectionById(id) {
-  return COLLECTIONS.find((group) => group.id === id) || null
-}
-
-export default COLLECTIONS
+  return COLLECTIONS.find(

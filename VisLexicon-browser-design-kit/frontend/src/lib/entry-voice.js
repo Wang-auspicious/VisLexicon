@@ -1268,6 +1268,94 @@ const VOICE = {
       en: [{ k: 'Stylesheet', v: 'pure-min.css' }],
     },
   },
+  'cubic-bezier': {
+    lede: { zh: 'CSS cubic-bezier() 缓动预览。MIT。', en: 'CSS cubic-bezier() easing preview. MIT.' },
+    style: { zh: '白底工具。左坐标平面。品红青控制点。灰曲线标本。', en: 'White tool. Left plot. Magenta and teal handles. Gray curve tiles.' },
+    acquire: {
+      zh: [{ k: '打开', v: 'cubic-bezier.com' }],
+      en: [{ k: 'Open', v: 'cubic-bezier.com' }],
+    },
+  },
+  'wow-js': {
+    lede: { zh: '滚动显现动画。MIT。', en: 'Scroll-reveal animations. MIT.' },
+    style: { zh: '白底。品红 WOW 字标夹柴犬。彩色圆徽章。', en: 'White field. Magenta WOW wordmark with Shiba. Colored circle badges.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install wow.js' }],
+      en: [{ k: 'CLI', v: 'npm install wow.js' }],
+    },
+  },
+  tweenjs: {
+    lede: { zh: 'JavaScript 缓动引擎。MIT。', en: 'JavaScript tweening engine. MIT.' },
+    style: { zh: '浅色文档。黑无衬线标题。版本徽章。灰底代码标本。', en: 'Light docs. Black sans title. Version badges. Gray code specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install @tweenjs/tween.js' }],
+      en: [{ k: 'CLI', v: 'npm install @tweenjs/tween.js' }],
+    },
+  },
+  curtainsjs: {
+    lede: { zh: 'WebGL 平面库。MIT。', en: 'WebGL plane library. MIT.' },
+    style: { zh: '粉顶栏。蓝粉渐变全出血。居中衬线字标。', en: 'Pink top bar. Blue-to-pink full-bleed gradient. Centered serif wordmark.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i curtainsjs' }],
+      en: [{ k: 'CLI', v: 'npm i curtainsjs' }],
+    },
+  },
+  pagepiling: {
+    lede: { zh: 'jQuery 全屏堆叠滚动。MIT。', en: 'jQuery stacked full-page scroll. MIT.' },
+    style: { zh: '白底首屏。灰无衬线大字。叠色方块。蓝下载按钮。', en: 'White first screen. Gray sans display. Stacked color tiles. Blue download button.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install pagepiling.js' }],
+      en: [{ k: 'CLI', v: 'npm install pagepiling.js' }],
+    },
+  },
+  'react-transition-group': {
+    lede: { zh: 'React 过渡阶段组件。BSD-3-Clause。', en: 'React transition-stage components. BSD-3-Clause.' },
+    style: { zh: '浅色文档。深灰顶栏。黑标题。安装命令块。', en: 'Light docs. Dark-gray top bar. Black titles. Install command block.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install react-transition-group --save' }],
+      en: [{ k: 'CLI', v: 'npm install react-transition-group --save' }],
+    },
+  },
+  'pollen-css': {
+    lede: { zh: 'CSS 变量构建系统。MIT。', en: 'CSS variables build system. MIT.' },
+    style: { zh: '浅色 GitBook。绿水滴徽标。左栏模块。正文列表。', en: 'Light GitBook. Green droplet mark. Left module nav. Body list.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm i pollen-css' }],
+      en: [{ k: 'CLI', v: 'npm i pollen-css' }],
+    },
+  },
+  basscss: {
+    lede: { zh: '低层 CSS 工具类。MIT。', en: 'Low-level CSS utilities. MIT.' },
+    style: { zh: '白底。黑无衬线字标。十二宫格目录。三栏正文。', en: 'White field. Black sans wordmark. Twelve-up directory. Three-column body.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install basscss' }],
+      en: [{ k: 'CLI', v: 'npm install basscss' }],
+    },
+  },
+  'toast-ui-grid': {
+    lede: { zh: 'TOAST UI 数据表格。MIT。', en: 'TOAST UI data grid. MIT.' },
+    style: { zh: '浅色产品页。粉网格徽标。蓝按钮。现场表格标本。', en: 'Light product page. Pink grid mark. Blue buttons. Live table specimen.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install --save tui-grid' }],
+      en: [{ k: 'CLI', v: 'npm install --save tui-grid' }],
+    },
+  },
+  'vega-lite': {
+    lede: { zh: '高级可视化语法。BSD-3-Clause。', en: 'High-level visualization grammar. BSD-3-Clause.' },
+    style: { zh: '浅色学术页。靛蓝顶栏。图表标本墙。蓝主按钮。', en: 'Light academic page. Indigo top bar. Chart specimen wall. Blue primary.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install vega-lite' }],
+      en: [{ k: 'CLI', v: 'npm install vega-lite' }],
+    },
+  },
+  lesscss: {
+    lede: { zh: 'CSS 语言扩展。Apache-2.0。', en: 'CSS language extension. Apache-2.0.' },
+    style: { zh: '海军蓝营销首页。{less} 立体字标。等宽安装命令。', en: 'Navy marketing homepage. Extruded {less} wordmark. Monospace install commands.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install less -g' }],
+      en: [{ k: 'CLI', v: 'npm install less -g' }],
+    },
+  },
 }
 
 export function entryVoice(entryId) {

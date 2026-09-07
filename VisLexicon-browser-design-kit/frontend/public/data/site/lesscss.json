@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:42:23.448Z",
+  "entryId": "lesscss",
+  "entityId": "entity-lesscss",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "lesscss.org",
+  "official": {
+    "inputUrl": "https://lesscss.org/",
+    "finalUrl": "https://lesscss.org/",
+    "checkedAt": "2026-09-07T01:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Less.js",
+    "descriptionZh": "Alexis Sellier 发起、Less Core Team 维护的 CSS 语言扩展 Less.js，现为 v4.9.1。仓库 LICENSE 标 Apache-2.0。用变量、mixin 与嵌套写样式，lessc 编译成 CSS。",
+    "takeawayZh": "装 lessc，把 mixin 编成 CSS",
+    "noteZh": "lesscss.org 首页标题 Getting started，副标题 It's CSS, with just a little more。Features 页从 Overview 列到 Variables。Using Less.js 写 Command Line Usage 与 npm install less -g。Apache-2.0 覆盖源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Less 定义为 backwards-compatible language extension for CSS，并把 Less.js 定义为把 Less 样式转成 CSS 的 JavaScript 工具，同时给出 npm install -g less 与 lessc styles.less styles.css。",
+        "evidenceUrl": "https://lesscss.org/"
+      },
+      {
+        "statement": "Using Less.js 给出 Command Line Usage 与 npm install less -g，证明交付物是可安装的 lessc 编译器，不是现成界面组件包。",
+        "evidenceUrl": "https://lesscss.org/usage/"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:34:42.744Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://lesscss.org/",
+      "finalUrl": "https://lesscss.org/",
+      "title": "Getting started | Less.js",
+      "selectionRationale": "首页标题 Getting started，副标题 It's CSS, with just a little more。",
+      "shot": {
+        "src": "/shots/lesscss/v2-identity.png",
+        "sha256": "40189cdbd7abf0335a8af40704f3fab0845bcc16bc8bd89366cb84d8ec2b26a5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 57902,
+        "alt": "Less.js 首页：logo，标题 It's CSS, with just a little more，npm install -g less 与 lessc styles.less styles.css，浏览器 link 与 cdn.jsdelivr.net/npm/less 脚本"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://lesscss.org/features/",
+      "finalUrl": "https://lesscss.org/features/",
+      "title": "Features In-Depth | Less.js",
+      "selectionRationale": "Features 页从 Overview 列到 Variables。",
+      "shot": {
+        "src": "/shots/lesscss/v2-breadth.png",
+        "sha256": "a2b0cd2ede878fbf44c587e693f022c1a20e616c636fd460e1ec094bd5741530",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84772,
+        "alt": "Less.js Features In-Depth：标题 Overview，An in-depth guide to features of the LESS language，下方 Variables 与 @link-color 示例"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://lesscss.org/usage/",
+      "finalUrl": "https://lesscss.org/usage/",
+      "title": "Using Less.js | Less.js",
+      "selectionRationale": "Using Less.js 写 Command Line Usage 与 npm install less -g。",
+      "shot": {
+        "src": "/shots/lesscss/v2-proof.png",
+        "sha256": "521f00efb035c10cc643d6642e7f061bc8058a202da50f4a7db7b368dc3838a0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 120487,
+        "alt": "Less.js Using Less.js：顶栏 Using Less.js，标题 Command Line Usage，npm install less -g，左侧 Carbon 广告"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Alexis Sellier",
+      "sourceUrl": "https://lesscss.org/about/",
+      "evidence": "About History 写 Less was created in 2009 by Alexis Sellier。Core team 把 Alexis Sellier 标 Original Author。packages/less package.json author 为 Alexis Sellier <self@cloudhead.net>，contributors 为 The Core Less Team。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://lesscss.org/about/",
+      "evidence": "About 写 In May 2012 Alexis turned over control and development to a core team of contributors，并写 No one person is in charge。GitHub 组织 less 维护仓库。LICENSE 与 package.json 未见独立公司主体。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/less/less.js",
+      "sourceUrl": "https://raw.githubusercontent.com/less/less.js/master/packages/less/package.json",
+      "evidence": "packages/less package.json repository.url 为 https://github.com/less/less.js.git，homepage 为 http://lesscss.org。首页 View the Less.js changelog 链到 github.com/less/less.js。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://raw.githubusercontent.com/less/less.js/master/LICENSE",
+      "evidence": "LICENSE 标题 Apache License Version 2.0, January 2004，止于 END OF TERMS AND CONDITIONS。packages/less package.json license 字段为 Apache-2.0。About License FAQs 写 Less.js is released under the Apache 2 License，Copyright 2009-2023, Alexis Sellier and the Less Core Team。该许可覆盖 Less.js 编译器源码，不覆盖 /tools 第三方列表。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://lesscss.org/",
+      "evidence": "首页与 Features、Mixins 文档公开可读。安装走 npm install -g less。未见付费墙。About License FAQs 写可免费用于 personal, company internal or commercial purposes。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "less",
+      "sourceUrl": "https://lesscss.org/",
+      "evidence": "首页写 npm install -g less 与 lessc styles.less styles.css。packages/less package.json name 为 less，version 4.9.1，bin.lessc 为 ./bin/lessc。npm registry latest 同为 4.9.1，license Apache-2.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/lesscss.md",
+  "registryUrl": "/r/lesscss.json"
+}

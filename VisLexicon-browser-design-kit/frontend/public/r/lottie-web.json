@@ -1,0 +1,201 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T02:42:23.448Z",
+  "entryId": "lottie-web",
+  "entityId": "entity-lottie-web",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://airbnb.github.io/lottie/#/web",
+    "finalUrl": "https://lottie.airbnb.tech/#/web",
+    "checkedAt": "2026-09-07T01:20:21.000Z"
+  },
+  "editorial": {
+    "name": "lottie-web",
+    "descriptionZh": "Airbnb 文档站上的 Web 运行时 lottie-web，用 JSON 播 After Effects 动画。不是 LottieFiles 市场。包名 lottie-web，LICENSE 标 MIT。",
+    "takeawayZh": "把 Lottie JSON 装进网页播放",
+    "noteZh": "airbnb.github.io/lottie 跳到 lottie.airbnb.tech。首页写 Lottie for Android, iOS, Web。Supported Features 按 Web SVG/Canvas 列能力。Web 页给出 bodymovin.loadAnimation。本条只收播放器，不收 lottiefiles.com。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [
+      {
+        "primaryCategory": "visual-assets",
+        "subcategory": "video-motion-assets"
+      }
+    ],
+    "reasons": [
+      {
+        "statement": "文档首页把 Lottie 定义为解析 After Effects JSON 并在 Web 等平台原生播放的库；本条入口是 Web 运行时，不是素材市场。",
+        "evidenceUrl": "https://lottie.airbnb.tech/"
+      },
+      {
+        "statement": "Web 页给出 bodymovin.loadAnimation，用 container、path、renderer 把 JSON 嵌进 DOM，证明这是可安装的播放器。",
+        "evidenceUrl": "https://lottie.airbnb.tech/#/web"
+      }
+    ],
+    "confirmedAt": "2026-09-07T02:32:12.524Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "lottie",
+      "svg",
+      "canvas"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://lottie.airbnb.tech/",
+      "finalUrl": "https://lottie.airbnb.tech/",
+      "title": "Lottie Docs",
+      "selectionRationale": "先看文档首页 Lottie for Android, iOS, Web。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/lottie-web/v2-identity.png",
+        "sha256": "3fc71aa484efb3ef45b62938c079bdcde5e389024657b81bbe23fd7d779524f4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 201620,
+        "alt": "Lottie Docs 首页：Lottie for Android, iOS, Web, React Native, and Windows，中间 Lottie 标志动画，左侧平台目录"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://lottie.airbnb.tech/#/supported-features",
+      "finalUrl": "https://lottie.airbnb.tech/#/supported-features",
+      "title": "Lottie Docs",
+      "selectionRationale": "再翻 Supported Features 能力对照表。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/lottie-web/v2-breadth.png",
+        "sha256": "c77fd5aec238b0a2cb2ec17158828f46d415b65a01a26751d907c1ca8cc71e4f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 118675,
+        "alt": "Lottie Supported Features 表：Shapes 到 Strokes，列含 Web (SVG)、Web (Canvas)、Web (HTML)"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://lottie.airbnb.tech/#/web",
+      "finalUrl": "https://lottie.airbnb.tech/#/web",
+      "title": "Lottie Docs",
+      "selectionRationale": "最后打开 Web 的 loadAnimation。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/lottie-web/v2-proof.png",
+        "sha256": "943df8f7621284114513fc29fd5cbff29b7304d0c1cc0d8082b10b3dc795b046",
+        "width": 1280,
+        "height": 900,
+        "bytes": 119515,
+        "alt": "Lottie Web Getting Started：bodymovin.loadAnimation 含 container、path、renderer，下方 HTML player installation"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Bodymovin",
+      "sourceUrl": "https://raw.githubusercontent.com/airbnb/lottie-web/master/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2015 Bodymovin。文档 Web 页称播放器为 bodymovin player。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Airbnb",
+      "sourceUrl": "https://lottie.airbnb.tech/",
+      "evidence": "文档站 lottie.airbnb.tech，仓库 github.com/airbnb/lottie-web。首页 Sponsors 含 Airbnb 标志。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/airbnb/lottie-web",
+      "sourceUrl": "https://lottie.airbnb.tech/",
+      "evidence": "首页 Web 链到 github.com/airbnb/lottie-web。package.json repository.url 为 https://github.com/airbnb/lottie-web.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/airbnb/lottie-web/master/LICENSE.md",
+      "evidence": "LICENSE.md 标题 The MIT License (MIT)，Copyright (c) 2015 Bodymovin。package.json license 为 MIT。覆盖 lottie-web 播放器源码，不覆盖 LottieFiles 市场或 After Effects 插件商店页。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://lottie.airbnb.tech/#/web",
+      "evidence": "Web 页写 npm install lottie-web 与 cdnjs 静态播放器。文档公开，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "lottie-web",
+      "sourceUrl": "https://lottie.airbnb.tech/#/web",
+      "evidence": "Web 页 NPM 节写 npm install lottie-web。package.json name 为 lottie-web，version 5.13.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/lottie-web",
+    "designMdUrl": "https://vislexicon.com/site/lottie-web.md",
+    "checkedAt": "2026-09-07T01:20:21.000Z",
+    "license": "MIT"
+  }
+}
