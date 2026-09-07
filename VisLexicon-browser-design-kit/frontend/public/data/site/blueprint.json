@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T01:37:03.010Z",
+  "entryId": "blueprint",
+  "entityId": "entity-blueprint",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "blueprintjs.com",
+  "official": {
+    "inputUrl": "https://blueprintjs.com/",
+    "finalUrl": "https://blueprintjs.com/",
+    "checkedAt": "2026-09-06T14:42:06.000Z"
+  },
+  "editorial": {
+    "name": "Blueprint",
+    "descriptionZh": "Palantir 维护的开源 React UI 工具包 Blueprint，文档标 v6.x，核心包 @blueprintjs/core 现为 6.18.0。仓库 LICENSE 标 Apache-2.0，面向桌面数据密集界面。",
+    "takeawayZh": "装核心包，先抄 success 按钮",
+    "noteZh": "blueprintjs.com 首页标题 Blueprint，A React-based UI toolkit for the web，页脚 Apache-2.0。文档写 v6.x 与 pnpm add @blueprintjs/core。Buttons 页现场 Click Me。本条收组件站，不收 Palantir 公司。Apache-2.0 覆盖源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Blueprint 定义为 A React-based UI toolkit for the web，页脚写 Blueprint is an open source project developed at Palantir，并链 Apache-2.0。",
+        "evidenceUrl": "https://blueprintjs.com/"
+      },
+      {
+        "statement": "Buttons 文档给出 import { Button } from \"@blueprintjs/core\"、<Button>Click Me</Button> 与 Intent 现场示例，证明交付物是可复制的界面组件。",
+        "evidenceUrl": "https://blueprintjs.com/docs/#core/components/buttons"
+      }
+    ],
+    "confirmedAt": "2026-09-07T01:34:55.687Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://blueprintjs.com/docs/#blueprint/getting-started",
+      "finalUrl": "https://blueprintjs.com/docs/#blueprint/getting-started",
+      "title": "Getting started | Blueprint",
+      "selectionRationale": "首页 headless 超时。Getting started 写清 NPM 包范围与 pnpm add @blueprintjs/core。",
+      "shot": {
+        "src": "/shots/blueprint/v2-identity.png",
+        "sha256": "1f03dcf9d676f194295a7cbbd5fdf033f062726c6600d55ed8a87a4a2c953f50",
+        "width": 1280,
+        "height": 900,
+        "bytes": 97259,
+        "alt": "Blueprint Getting started：标题 Installing Blueprint，pnpm add @blueprintjs/core，左侧 CORE DATETIME ICONS SELECT TABLE LABS"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://blueprintjs.com/docs",
+      "finalUrl": "https://blueprintjs.com/docs/",
+      "title": "Blueprint – Documentation",
+      "selectionRationale": "文档总览写 v6.x 与 pnpm add @blueprintjs/core，核心包 40+ 组件。",
+      "shot": {
+        "src": "/shots/blueprint/v2-breadth.png",
+        "sha256": "af515726654070eaa9a31a3ba0d6a0490b176882dc68f72109b5de4e076dc34c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86267,
+        "alt": "Blueprint Documentation：React-based UI toolkit，v6.x is now available，pnpm add @blueprintjs/core，并列 icons datetime select table"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://blueprintjs.com/docs/#core/components/buttons",
+      "finalUrl": "https://blueprintjs.com/docs/#core/components/buttons",
+      "title": "Buttons | Blueprint – Documentation",
+      "selectionRationale": "Buttons 页给出 import { Button } 与 Click Me 现场示例。",
+      "shot": {
+        "src": "/shots/blueprint/v2-proof.png",
+        "sha256": "f5e5fb55463cdc2ed6588de1cf6d0ee0d50fb31a0f2a6896051c9e82b0911883",
+        "width": 1280,
+        "height": 900,
+        "bytes": 70301,
+        "alt": "Blueprint Buttons 文档：标题 Buttons，import { Button } from @blueprintjs/core，Click Me 与 Intent 现场按钮"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Palantir Technologies",
+      "sourceUrl": "https://raw.githubusercontent.com/palantir/blueprint/develop/packages/core/package.json",
+      "evidence": "packages/core package.json author 为 Palantir Technologies。Button 源码头写 Copyright 2016 Palantir Technologies, Inc. Licensed under the Apache License, Version 2.0。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Palantir Technologies",
+      "sourceUrl": "https://blueprintjs.com/",
+      "evidence": "首页页脚写 Blueprint is an open source project developed at Palantir。GitHub 组织 palantir 维护仓库 palantir/blueprint。本条分类对象是组件文档站，不是 Palantir 公司官网。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/palantir/blueprint",
+      "sourceUrl": "https://raw.githubusercontent.com/palantir/blueprint/develop/packages/core/package.json",
+      "evidence": "package.json repository.url 为 git@github.com:palantir/blueprint.git。首页 GitHub 按钮与页脚 LICENSE 链回 palantir/blueprint。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://raw.githubusercontent.com/palantir/blueprint/develop/LICENSE",
+      "evidence": "LICENSE 标题 Apache License Version 2.0, January 2004，止于 END OF TERMS AND CONDITIONS，无第 10 款改写。packages/core package.json license 为 Apache-2.0。首页页脚写 Licensed under Apache-2.0。该许可覆盖 Blueprint 工具包源码，不含 Palantir 商业产品。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://blueprintjs.com/",
+      "evidence": "首页与文档公开可读。安装走 pnpm add @blueprintjs/core。页脚标 Apache-2.0。未见组件库付费墙。页脚 careers 招聘条不是产品付费。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@blueprintjs/core",
+      "sourceUrl": "https://blueprintjs.com/docs/",
+      "evidence": "文档 Quick start 写 pnpm add @blueprintjs/core react react-dom，并称 @blueprintjs/core is the primary Blueprint library package, home to over 40 UI components。npm 与 package.json name 为 @blueprintjs/core，version 6.18.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/blueprint.md",
+  "registryUrl": "/r/blueprint.json"
+}

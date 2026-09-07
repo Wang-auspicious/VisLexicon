@@ -980,6 +980,46 @@ const VOICE = {
       en: [{ k: 'Export', v: 'HEX' }],
     },
   },
+  veui: {
+    lede: { zh: 'Vue 企业级组件库。MIT。', en: 'Vue enterprise component library. MIT.' },
+    style: { zh: '浅色文档。左侧目录。徽章条。中性卡片。', en: 'Light docs. Left-hand TOC. Badge row. Neutral cards.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install veui' }],
+      en: [{ k: 'CLI', v: 'npm install veui' }],
+    },
+  },
+  'tom-select': {
+    lede: { zh: '轻量 select 控件。Apache-2.0。', en: 'Lightweight select control. Apache-2.0.' },
+    style: { zh: '浅色文档。深色侧栏。大号灰标题。现场标签输入。', en: 'Light docs. Dark sidebar. Large gray title. Live tag input.' },
+    acquire: {
+      zh: [{ k: '命令行', v: 'npm install tom-select' }],
+      en: [{ k: 'CLI', v: 'npm install tom-select' }],
+    },
+  },
+  bootswatch: {
+    lede: { zh: 'Bootstrap 免费主题集。MIT。', en: 'Free Bootstrap theme pack. MIT.' },
+    style: { zh: '浅紫全出血营销。超大无衬线标题。圆形图标。主题标本页。', en: 'Light-violet full-bleed marketing. Oversized sans title. Circular icons. Theme specimen pages.' },
+    acquire: {
+      zh: [{ k: '安装', v: 'npm install bootswatch' }],
+      en: [{ k: 'Install', v: 'npm install bootswatch' }],
+    },
+  },
+  'mamba-ui': {
+    lede: { zh: 'Tailwind 组件与模板。MIT。复制 HTML。', en: 'Tailwind components and templates. MIT. Copy HTML.' },
+    style: { zh: '深紫营销。紫色顶栏。等轴测插画。大号无衬线标题。', en: 'Deep-purple marketing. Violet top bar. Isometric illustration. Oversized sans title.' },
+    acquire: {
+      zh: [{ k: '复制', v: 'HTML / Vue / JSX' }],
+      en: [{ k: 'Copy', v: 'HTML / Vue / JSX' }],
+    },
+  },
+  'meraki-ui': {
+    lede: { zh: 'Tailwind 组件。MIT。复制 HTML，支持 RTL。', en: 'Tailwind components. MIT. Copy HTML, with RTL.' },
+    style: { zh: '深色营销。超大无衬线渐变标题。仪表盘卡片。悬浮分享条。', en: 'Dark marketing. Oversized gradient sans title. Dashboard cards. Floating share bar.' },
+    acquire: {
+      zh: [{ k: '复制', v: 'HTML' }],
+      en: [{ k: 'Copy', v: 'HTML' }],
+    },
+  },
   grommet: {
     lede: { zh: 'React 组件库。Apache-2.0。', en: 'React component library. Apache-2.0.' },
     style: { zh: '深色全出血。紫环徽标。薄荷绿字标。超大无衬线。几何窗口插画。胶囊导航。', en: 'Dark full-bleed. Purple ring mark. Mint wordmark. Oversized sans. Geometric window illustration. Capsule nav.' },

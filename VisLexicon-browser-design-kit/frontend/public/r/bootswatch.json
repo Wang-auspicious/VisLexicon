@@ -1,0 +1,193 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-07T01:37:03.010Z",
+  "entryId": "bootswatch",
+  "entityId": "entity-bootswatch",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://bootswatch.com/",
+    "finalUrl": "https://bootswatch.com/",
+    "checkedAt": "2026-09-07T02:20:00.000Z"
+  },
+  "editorial": {
+    "name": "Bootswatch",
+    "descriptionZh": "Thomas Park 维护的 Bootstrap 免费主题集 Bootswatch，现为 v5.3.8。仓库 LICENSE 标 MIT。下载 CSS 替换 Bootstrap 即可，也可用 npm 安装 bootswatch。",
+    "takeawayZh": "下载一套 Bootstrap 主题 CSS",
+    "noteZh": "bootswatch.com 首页写 Free themes for Bootstrap，徽章 v5.3、Star 14,746。Cerulean 主题页展示浅蓝导航与按钮标本。Darkly 主题页为深色导航标本。MIT 覆盖这些主题源码。",
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Bootswatch 定义为 Free themes for Bootstrap，并写下载 CSS 替换即可。",
+        "evidenceUrl": "https://bootswatch.com/"
+      },
+      {
+        "statement": "Cerulean 与 Darkly 主题页给出 Navbar 等现场标本，证明交付物是可下载的 Bootstrap 皮肤。",
+        "evidenceUrl": "https://bootswatch.com/cerulean/"
+      }
+    ],
+    "confirmedAt": "2026-09-07T03:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "download",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://bootswatch.com/",
+      "finalUrl": "https://bootswatch.com/",
+      "title": "Bootswatch: Free themes for Bootstrap",
+      "selectionRationale": "首页标题说明它是 Bootstrap 免费主题集。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/bootswatch/v2-identity.png",
+        "sha256": "a5756237ff06e5bdcd9acfc71ef151073ad1b18db25fb010d3e6b3e2c2a9c2f3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 340653,
+        "alt": "Bootswatch 首页：Free themes for Bootstrap，v5.3，Star 14,746，Easy to Install"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://bootswatch.com/cerulean/",
+      "finalUrl": "https://bootswatch.com/cerulean/",
+      "title": "Cerulean",
+      "selectionRationale": "Cerulean 主题页展示浅蓝导航标本。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/bootswatch/v2-breadth.png",
+        "sha256": "a1949549c3193b966b48f8403c9cea402a27b053efdaa5a42d546109c28bfd5c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 72498,
+        "alt": "Bootswatch Cerulean：A calm blue sky，四条 Navbar 标本，v5.3"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://bootswatch.com/darkly/",
+      "finalUrl": "https://bootswatch.com/darkly/",
+      "title": "Darkly",
+      "selectionRationale": "Darkly 主题页展示深色导航标本。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/bootswatch/v2-proof.png",
+        "sha256": "b50749482a336b69c4512e62f6315e7df63cbe0cdcd14c3defb68d9b406c7fd6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 48149,
+        "alt": "Bootswatch Darkly：Flatly in night mode，深色 Navbar 标本，v5.3"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Thomas Park",
+      "sourceUrl": "https://raw.githubusercontent.com/thomaspark/bootswatch/v5/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2013 Thomas Park。package.json author 为 Thomas Park。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://bootswatch.com/",
+      "evidence": "站点品牌为 Bootswatch。GitHub 用户 thomaspark 维护仓库。LICENSE 只署 Thomas Park。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/thomaspark/bootswatch",
+      "sourceUrl": "https://bootswatch.com/",
+      "evidence": "顶栏 GitHub 链指向 thomaspark/bootswatch。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/thomaspark/bootswatch/v5/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2013 Thomas Park。package.json license 为 MIT。覆盖 Bootswatch 主题源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://bootswatch.com/",
+      "evidence": "首页写 Free themes。Cerulean 与 Darkly 标本公开可读。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "bootswatch",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/bootswatch/package.json",
+      "evidence": "package.json name 为 bootswatch，version 5.3.8。首页写 Tuned for 5.3.8。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/bootswatch",
+    "designMdUrl": "https://vislexicon.com/site/bootswatch.md",
+    "checkedAt": "2026-09-07T02:20:00.000Z",
+    "license": "MIT"
+  }
+}

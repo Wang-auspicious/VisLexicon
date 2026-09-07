@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 3,
+  "entryId": "veui",
+  "entityId": "entity-veui",
+  "attemptId": "swarm-curator-batch-c-w6-veui-20260907",
+  "status": "APPROVED",
+  "official": {
+    "inputUrl": "https://veui.dev/",
+    "finalUrl": "https://veui.dev/",
+    "checkedAt": "2026-09-07T02:20:00.000Z"
+  },
+  "editorial": {
+    "name": "VEUI",
+    "descriptionZh": "百度 EFE 维护的 Vue 企业级组件库 VEUI，npm 现为 v2.17.10。仓库 LICENSE 标 MIT。文档站提供 D20/D22 主题与中英切换。",
+    "takeawayZh": "npm i veui，先抄 Button",
+    "noteZh": "veui.dev 简介页写一套基于 Vue.js 的企业级应用组件库，徽章 npm v2.17.10、license MIT。Icon 页列出内置图标。Button 页给出 Primary、Strong、Ghost 现场按钮与尺寸。MIT 覆盖 VEUI 源码。",
+    "pricing": "Free"
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "entityId": "entity-veui",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 VEUI 定义为基于 Vue.js 的企业级应用组件库，并标 MIT。",
+        "evidenceUrl": "https://veui.dev/"
+      },
+      {
+        "statement": "Button 文档给出 Primary/Strong/Ghost 现场按钮与尺寸，证明交付物是可安装的 Vue 组件。",
+        "evidenceUrl": "https://veui.dev/components/button"
+      }
+    ],
+    "curatorId": "swarm-curator-batch-c-w6",
+    "reviewerId": "swarm-reviewer-grok-v",
+    "confirmedAt": "2026-09-07T03:00:00.000Z"
+  },
+  "curation": {
+    "atlasTerms": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans",
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://veui.dev/",
+      "finalUrl": "https://veui.dev/",
+      "title": "VEUI",
+      "selectionRationale": "简介页标题与 MIT 徽章说明它是 Vue 企业级组件库。",
+      "shot": {
+        "src": "/shots/veui/v2-identity.png",
+        "sha256": "6fbc17b1cc10227f9f0f0325da3f08f164f64d733703dfd3fcab0f8c6620d9ea",
+        "width": 1280,
+        "height": 900,
+        "bytes": 67141,
+        "alt": "VEUI 简介：一套基于 Vue.js 的企业级应用组件库，npm v2.17.10，license MIT，左侧组件目录"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://veui.dev/components/icon",
+      "finalUrl": "https://veui.dev/components/icon",
+      "title": "Icon / 图标",
+      "selectionRationale": "Icon 页列出内置图标名与侧栏组件目录。",
+      "shot": {
+        "src": "/shots/veui/v2-breadth.png",
+        "sha256": "58287ccc26e29ca63ee569a8653f4a7b3decd6361f1d87bd204698347dbc522b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 63862,
+        "alt": "VEUI Icon：内置图标 ab-test、academic-cap，左侧 Button、Layout 目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://veui.dev/components/button",
+      "finalUrl": "https://veui.dev/components/button",
+      "title": "Button / 按钮",
+      "selectionRationale": "Button 页现场 Primary、Strong、Ghost 与尺寸。",
+      "shot": {
+        "src": "/shots/veui/v2-proof.png",
+        "sha256": "df23badd12dd495e819dee3b433dd83e01ebc7c36f8b213472704f0be5586738",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75651,
+        "alt": "VEUI Button：Primary Normal Basic Strong Translucent 与 Ghost，下方尺寸 xl 到 xs"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Baidu EFE",
+      "sourceUrl": "https://raw.githubusercontent.com/ecomfe/veui/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2017–present, Baidu EFE。页脚写 © Baidu, Inc. 2026。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Baidu",
+      "sourceUrl": "https://veui.dev/",
+      "evidence": "页脚写 © Baidu, Inc. 2026。GitHub 组织 ecomfe 维护 veui 仓。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/ecomfe/veui",
+      "sourceUrl": "https://veui.dev/",
+      "evidence": "顶栏 GitHub 图标与 Stars 指向 ecomfe/veui。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/ecomfe/veui/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2017–present, Baidu EFE。package.json license 为 MIT。首页徽章 license MIT。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://veui.dev/",
+      "evidence": "简介、Icon 与 Button 文档公开可读。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "veui",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/veui@2.17.10/package.json",
+      "evidence": "package.json name 为 veui，version 2.17.10。首页徽章 npm v2.17.10。",
+      "confidence": 1
+    }
+  ],
+  "qa": {
+    "curatorId": "swarm-curator-batch-c-w6",
+    "technicalPassed": true,
+    "semanticReviewerId": "swarm-reviewer-grok-v",
+    "semanticPassed": true,
+    "editorialReviewerId": "swarm-reviewer-grok-v"
+  },
+  "editorialVoice": {
+    "status": "written",
+    "writtenAt": "2026-09-07",
+    "note": "swarm-curator-batch-c-w6 进站起草。Site Entry 是 veui.dev / 百度 EFE。status 仍 DRAFT。 swarm-reviewer-grok-v 复核活页、截图哈希与 LICENSE 后 APPROVED。"
+  }
+}
