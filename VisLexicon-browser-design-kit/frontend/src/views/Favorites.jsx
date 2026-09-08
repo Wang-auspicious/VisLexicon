@@ -1,0 +1,3 @@
+import { useEffect, useState } from 'react'
+import { createFavoritesRepository } from '../lib/local-favorites.js'
+export default function Favorites() { const [rows, setRows] = useState([]); const [repo] = useState(() => createFavoritesRepository()); useEffect(() => { repo.listFavorites().then(setRows) }, [repo]); return <section className="vl-favorites"><p className="x-mono">LOCAL LIBRARY</p><h1>我的收藏</h1>{!repo.persistent ? <p role="status">当前浏览器无法持久保存收藏。</p> : null}{rows.length ? <ul>{rows.map((row) => <li key={row.entryId}><a href={`#/site/${row.entryId}`}>{row.entryId}</a></li>)}</ul> : <p>还没有收藏站点。浏览策展目录时，把想反复查看的站点收藏起来。</p>}</section> }

@@ -47,6 +47,7 @@ function matchPath(path) {
 
   const [head, first, second] = segments
   if (head === 'sites' && segments.length === 1) return { name: 'sites', params: {} }
+  if (head === 'favorites' && segments.length === 1) return { name: 'favorites', params: {} }
   if (head === 'site' && segments.length === 2 && first) return { name: 'site', params: { entryId: first } }
   if (head === 'about' && segments.length === 1) return { name: 'about', params: {} }
   if (head === 'atlas' && segments.length <= 3) {

@@ -50,6 +50,13 @@ export default function Curation() {
   const counts = siteWideCounts({ items, atlas, manifests: MANIFESTS })
   const itemsById = useMemo(() => new Map(items.map((item) => [item.entryId, item])), [items])
   const checked = formatCheckedAt(counts.latestCheckedAt)
+  const discoveryRows = useMemo(() => {
+    const eligible = items.filter((item) => item?.entryId)
+    const newest = [...eligible].sort((a, b) => String(b.checkedAt || '').localeCompare(String(a.checkedAt || ''))).slice(0, 6)
+    const recommended = eligible.filter((item) => item.editorial?.recommended || item.recommended).slice(0, 6)
+    const trending = eligible.slice(0, 6)
+    return [{ key: 'trending', title: '热门排行', items: trending }, { key: 'new', title: '最近上新', items: newest }, { key: 'recommended', title: '站长推荐', items: recommended }]
+  }, [items])
 
   /* 分组引用的条目必须真的在语料里。校验不过不该让首页白屏——
    * 记一条控制台错误，渲染时缺席的成员自然被过滤掉。 */
@@ -95,6 +102,10 @@ export default function Curation() {
       ) : null}
 
       {state.status === 'loading' ? <GroupSkeleton /> : null}
+
+      {state.status === 'ready' ? <section className="vl-discovery-rows" aria-label="热门、上新与站长推荐">
+        {discoveryRows.map((row) => row.items.length ? <div className="vl-discovery-row" key={row.key}><header><h2>{row.title}</h2><a href="#/sites">查看全部 →</a></header><div>{row.items.map((item, index) => <a className="vl-discovery-item" href={`#/site/${item.entryId}`} key={item.entryId}><b>{String(index + 1).padStart(2, '0')}</b><span>{item.name}</span></a>)}</div></div> : null)}
+      </section> : null}
 
       {state.status === 'ready'
         ? COLLECTIONS.map((group, index) => (

@@ -14,6 +14,7 @@ const Curation = lazy(() => import('./views/Curation.jsx'))
 const AllSites = lazy(() => import('./views/AllSites.jsx'))
 const SiteDetail = lazy(() => import('./views/SiteDetail.jsx'))
 const Atlas = lazy(() => import('./views/Atlas.jsx'))
+const Favorites = lazy(() => import('./views/Favorites.jsx'))
 
 loadStored()
 
@@ -23,6 +24,7 @@ const CHANNELS = [
   { hash: '#/', key: 'curation', match: (name) => name === 'curation' || name === 'sites' || name === 'site' },
   { hash: '#/atlas', key: 'atlas', match: (name) => name === 'atlas' },
   { hash: '#/about', key: 'about', match: (name) => name === 'about' },
+  { hash: '#/favorites', key: 'favorites', match: (name) => name === 'favorites' },
 ]
 
 function NotFound({ hash }) {
@@ -163,6 +165,7 @@ export default function App() {
             {baseRoute === 'sites' && <AllSites />}
             {baseRoute === 'atlas' && <Atlas stage={route.params.stageId} term={route.params.termId} />}
             {baseRoute === 'about' && <About />}
+            {baseRoute === 'favorites' && <Favorites />}
             {baseRoute === 'notfound' && <NotFound hash={route.hash} />}
           </Suspense>
         </main>

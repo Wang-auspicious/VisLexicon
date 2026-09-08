@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { aspectFor, templateFor } from '../lib/site-card-template.js'
 import { valueLabel } from '../lib/facet-chips.js'
 import { formatCheckedAt, isModifiedClick, licenseValues, navigateTo } from '../lib/site-browser.js'
 import { useT, useLocale } from '../i18n.js'
 import { voiceText } from '../lib/entry-voice.js'
+import { createFavoritesRepository } from '../lib/local-favorites.js'
 
 /* 域名首字母块：主图缺失或加载失败时的替身。
  * WP-E 会把同名组件提到 components/DomainMark.jsx，本轮两个包各留一份最小实现，
@@ -94,6 +95,10 @@ export default function SiteCard({ item, priority = false }) {
   if (!item) return null
   const href = `#/site/${item.entryId}`
   const aspect = aspectFor(item)
+  const [favorite, setFavorite] = useState(false)
+  const [repo] = useState(() => createFavoritesRepository())
+  useEffect(() => { repo.getFavorite(item.entryId).then((value) => setFavorite(Boolean(value))) }, [item.entryId, repo])
+  const toggleFavorite = async () => { if (favorite) await repo.removeFavorite(item.entryId); else await repo.upsertFavorite({ entryId: item.entryId }); setFavorite(!favorite) }
 
   const onClick = (event) => {
     if (isModifiedClick(event)) return
@@ -124,6 +129,7 @@ export default function SiteCard({ item, priority = false }) {
             <span className="sr-only">（{item.name} {t('visitCardSr')}）</span>
           </a>
         ) : null}
+        <button type="button" className="vl-card-favorite" onClick={toggleFavorite} aria-pressed={favorite}>{favorite ? '已收藏' : '收藏'}</button>
       </div>
     </article>
   )
