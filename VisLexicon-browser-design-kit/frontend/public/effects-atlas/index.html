@@ -606,17 +606,17 @@ class Component extends DCLogic {
       hubNav: t.overview, catCount: cats.length ? t.cats(cats.length) : '',
       hubBg: s.mode === 'hub' ? '#eceee6' : 'transparent', hubFg: s.mode === 'hub' ? '#23232f' : '#65675f', hubW: s.mode === 'hub' ? 600 : 500,
       hubEyebrow: t.hubEyebrow, hubTitle: t.hubTitle, hubSub: t.hubSub,
-      hubGroups: mod ? mod.GROUPS.map((g, gi) => {
+      hubGroups: mod ? mod.GROUPS.map((g) => {
         const list = g.of.map(id => cats.find(c => c.id === id)).filter(Boolean);
         return {
-          num: pad(gi + 1), name: nm(g), alt: L === 'zh' ? g.en : g.zh,
+          name: nm(g), alt: L === 'zh' ? g.en : g.zh,
           count: t.total(list.reduce((n, c) => n + c.items.length, 0)),
           cats: list.map(c => ({
             name: nm(c), count: c.items.length, pick: () => this.pickCat(c.id),
             samples: c.items.slice(0, 4).map(x => nm(x)).join(' · ')
           }))
         };
-      }).filter(g => g.cats.length) : [],
+      }).filter(g => g.cats.length).map((g, gi) => Object.assign(g, { num: pad(gi + 1) })) : [],
 
       hubOn: s.mode === 'hub', browseOn: s.mode === 'wall',
       gridOn: !(cat && cat.view === 'lang' && !q), langOn: !!(cat && cat.view === 'lang' && !q),
