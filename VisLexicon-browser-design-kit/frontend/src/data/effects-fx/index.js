@@ -181,7 +181,7 @@ export function composePrompt(item, cat, lang, params, motion) {
   const vals = ps.join(lang === 'zh' ? '，' : ', ');
   if (lang === 'zh') {
     return [
-      `请实现一个前端效果：「${item.zh}」（${item.en}），属于「${cat.zh}」。`,
+      `请实现一个前端效果：「${item.zh}」，属于「${cat.zh}」。`,
       `想要的感觉：${item.dz}。`,
       `做法：${item.pz}`,
       vals ? `参数：${vals}。` : '',
@@ -189,7 +189,7 @@ export function composePrompt(item, cat, lang, params, motion) {
     ].filter(Boolean).join('\n');
   }
   return [
-    `Build a front-end effect called "${item.en}" (${item.zh}), from the "${cat.en}" family.`,
+    `Build a front-end effect called "${item.en}", from the "${cat.en}" family.`,
     `Feel: ${item.de}.`,
     `How: ${item.pe}`,
     vals ? `Params: ${vals}.` : '',
