@@ -1,0 +1,324 @@
+/* =============================================================
+   Savimbo — Colors & Type
+   Canonical source: savimbo_brand.py (Drive, April 2026)
+   Pairs with the older SV Style Guide PDF (legacy logo palette
+   preserved at the bottom for historical contexts).
+   ============================================================= */
+
+/* Figtree — Google-Docs fallback face called out in the style guide.
+   Loaded from Google Fonts so the --sv-font-docs token resolves. */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+/* ── FONTS ──────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: "Relative";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Relative Book.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Relative";
+  font-weight: 400;
+  font-style: italic;
+  src: url("./fonts/Relative Book Italic.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Relative";
+  font-weight: 500;
+  font-style: normal;
+  src: url("./fonts/Relative Medium.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Relative";
+  font-weight: 500;
+  font-style: italic;
+  src: url("./fonts/Relative Medium Italic.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Relative";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/Relative Bold.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Relative";
+  font-weight: 700;
+  font-style: italic;
+  src: url("./fonts/Relative Bold Italic.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Relative Faux";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Relative Faux.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Relative Mono";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Relative Mono 10 Pitch.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Relative Mono 12";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Relative Mono 12 Pitch.otf") format("opentype");
+  font-display: swap;
+}
+
+:root {
+  /* ── TYPE FAMILIES ──────────────────────────────────────── */
+  --sv-font-sans:    "Relative", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --sv-font-display: "Relative Faux", "Relative", "Inter", sans-serif;
+  --sv-font-mono:    "Relative Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  /* Google Docs fallback per style guide */
+  --sv-font-docs:    "Figtree", "Inter", system-ui, sans-serif;
+
+  /* ═══ PRIMARY PALETTE (canonical, 2026 contemporary) ═══════
+     coolors.co/20381d-365c31-8ea604-d9d9d9-f3f3f3-ffffff-fe2c55-23232f
+     Folly pink is THE call-to-action color. Greens are primary
+     brand. Shadow is body text. Warm greys are neutrals. */
+  --sv-folly:         #fe2c55; /* ★ PRIMARY CTA / link / accent */
+  --sv-folly-dark:    #e62950; /* CTA hover */
+  --sv-phthalo:       #20381d; /* darkest green — dark surfaces, logo strokes */
+  --sv-hunter:        #365c31; /* primary green — ecology, forest CTA */
+  --sv-citron:        #8ea604; /* accent green — logo bg, highlights */
+  --sv-shadow:        #23232f; /* near-black — body text, dark surfaces */
+  --sv-white:         #ffffff;
+  --sv-paper:         #f7f8f9; /* warm off-white — page surface */
+  --sv-grey-100:      #f3f3f3; /* card / section / footer fill */
+  --sv-grey-300:      #d9d9d9; /* rules / dividers / borders */
+  --sv-plum:          #34252f; /* deep plum — secondary-button surface */
+
+  /* ── Backward-compat aliases (old names → new palette) ───
+     Older files reference these; kept so nothing breaks.
+     Prefer the canonical tokens above for new work. */
+  --sv-amaranth:      var(--sv-folly);   /* was #db3055 → now Folly */
+  --sv-shadow-grey:   var(--sv-shadow);
+  --sv-tropical-teal: var(--sv-folly);   /* links are Folly now, not teal */
+  --sv-lime-moss:     var(--sv-hunter);
+  --sv-lemon-lime:    var(--sv-citron);
+  --sv-warm-100:      var(--sv-grey-100);
+  --sv-warm-200:      var(--sv-grey-300);
+  --sv-lavender-mist: var(--sv-grey-100);
+
+  /* ── TONAL SCALES (100 lightest → 900 darkest) ─────────── */
+
+  /* Folly — the CTA pink */
+  --sv-folly-50:  #ffe9ee; --sv-folly-100: #ffd0db; --sv-folly-200: #ffa8bc;
+  --sv-folly-300: #ff7a98; --sv-folly-400: #fe5478; --sv-folly-500: #fe2c55;
+  --sv-folly-600: #e62950; --sv-folly-700: #c01e41; --sv-folly-800: #8f1530;
+  --sv-folly-900: #5c0c1e;
+
+  /* Green — Citron → Hunter → Phthalo */
+  --sv-green-50:  #f3f7d6; --sv-green-100: #e6efaa; --sv-green-200: #cfe070;
+  --sv-green-300: #b6cf2b; --sv-green-400: #8ea604; /* citron */
+  --sv-green-500: #6b8a2a; --sv-green-600: #4a8b3f; /* bright forest */
+  --sv-green-700: #365c31; /* hunter */ --sv-green-800: #294823;
+  --sv-green-900: #20381d; /* phthalo */
+
+  /* Warm neutral grey — replaces the old cool/lavender ramps */
+  --sv-grey-50:  #f7f8f9; --sv-grey-150: #f3f3f3; --sv-grey-200: #e6e6e6;
+  --sv-grey-250: #d9d9d9; --sv-grey-400: #bdbdbd; --sv-grey-500: #9a9a9a;
+  --sv-grey-600: #707070; --sv-grey-700: #4a4a4a; --sv-grey-800: #2b2b2b;
+  --sv-grey-900: #23232f;
+
+  /* ── RAINBOW — ecosystem-service categories & data viz ──
+     coolors.co/23232f-75c4d4-7ab85a-dc924d-e0cd4e-f67b7d
+     Each maps to a service. Use as tags, chart series, stat tints. */
+  --sv-cat-carbon:  #23232f; /* Carbon */
+  --sv-cat-water:   #75c4d4; /* Water — sky blue */
+  --sv-cat-trees:   #7ab85a; /* Trees / reforestation — forest green */
+  --sv-cat-eco:     #dc924d; /* Ecotourism — toasted almond */
+  --sv-cat-agro:    #e0cd4e; /* Agrobiodiversity — straw gold */
+  --sv-cat-bio:     #f67b7d; /* Biodiversity — light coral */
+
+  /* Light tint washes (pale fill for stat cards / tags) */
+  --sv-tint-carbon: #f1f1f3; --sv-tint-water: #e7f4f8; --sv-tint-trees: #edf5e4;
+  --sv-tint-eco:    #fbefe0; --sv-tint-agro:  #faf4d2; --sv-tint-bio:   #fdeaeb;
+
+  /* Saturated text-on-tint (for the eyebrow/number on a tint card) */
+  --sv-ink-carbon: #23232f; --sv-ink-water: #2f8a9c; --sv-ink-trees: #4a8b3f;
+  --sv-ink-eco:    #a55a1f; --sv-ink-agro:  #806c1a; --sv-ink-bio:   #d6474a;
+
+  /* ── SEMANTIC ROLES ────────────────────────────────────── */
+  --sv-fg:            var(--sv-shadow);   /* body text #23232f */
+  --sv-fg-muted:      var(--sv-grey-600); /* #707070 */
+  --sv-fg-on-dark:    var(--sv-white);
+  --sv-fg-accent:     var(--sv-folly);    /* ★ Folly — CTA / accent */
+  --sv-fg-link:       var(--sv-folly);    /* links are Folly pink */
+
+  --sv-bg:            var(--sv-white);
+  --sv-bg-paper:      var(--sv-paper);     /* warm off-white, page default */
+  --sv-bg-soft:       var(--sv-grey-100);  /* #f3f3f3 card / section fill */
+  --sv-bg-dark:       var(--sv-shadow);    /* #23232f */
+  --sv-bg-phthalo:    var(--sv-phthalo);   /* darkest green surface */
+  --sv-bg-plum:       var(--sv-plum);      /* secondary-button surface */
+
+  --sv-border:        var(--sv-grey-300);  /* #d9d9d9 */
+  --sv-border-soft:   var(--sv-grey-200);  /* #e6e6e6 */
+
+  --sv-success:       var(--sv-hunter);    /* forest green */
+  --sv-warning:       var(--sv-cat-eco);   /* toasted almond */
+  --sv-danger:        var(--sv-folly);
+  --sv-highlight:     var(--sv-citron);
+
+  /* ── SPACING (4-pt base, "unutterably simple") ─────────── */
+  --sv-space-0:  0;
+  --sv-space-1:  4px;
+  --sv-space-2:  8px;
+  --sv-space-3:  12px;
+  --sv-space-4:  16px;
+  --sv-space-5:  24px;
+  --sv-space-6:  32px;
+  --sv-space-7:  48px;
+  --sv-space-8:  64px;
+  --sv-space-9:  96px;
+  --sv-space-10: 128px;
+
+  /* ── RADII ─────────────────────────────────────────────── */
+  --sv-radius-xs: 2px;
+  --sv-radius-sm: 4px;   /* default — matches LAYOUT.border_radius */
+  --sv-radius-md: 8px;
+  --sv-radius-lg: 16px;
+  --sv-radius-pill: 999px;
+  --sv-radius-circle: 50%;
+
+  /* ── ELEVATION / SHADOWS ───────────────────────────────── */
+  --sv-shadow-1: 0 1px 2px rgba(35, 35, 47, 0.06), 0 1px 1px rgba(35, 35, 47, 0.04);
+  --sv-shadow-2: 0 2px 6px rgba(35, 35, 47, 0.08), 0 1px 2px rgba(35, 35, 47, 0.04);
+  --sv-shadow-3: 0 8px 24px rgba(35, 35, 47, 0.10), 0 2px 6px rgba(35, 35, 47, 0.06);
+  --sv-shadow-press: inset 0 1px 2px rgba(35, 35, 47, 0.18);
+  --sv-shadow-pop: 0 8px 24px rgba(254, 44, 85, 0.28); /* Folly CTA glow */
+
+  /* ── BORDERS ───────────────────────────────────────────── */
+  --sv-border-w: 0.5pt; /* @kind spacing */
+  --sv-rule: 1px solid var(--sv-grey-300);
+  --sv-rule-hairline: 0.5px solid var(--sv-grey-250);
+
+  /* ── TYPE SCALE ────────────────────────────────────────── */
+  --sv-text-h1-size: 56px;  --sv-text-h1-leading: 1.05; --sv-text-h1-tracking: -0.02em;
+  --sv-text-h2-size: 40px;  --sv-text-h2-leading: 1.1;  --sv-text-h2-tracking: -0.015em;
+  --sv-text-h3-size: 28px;  --sv-text-h3-leading: 1.2;  --sv-text-h3-tracking: -0.01em;
+  --sv-text-h4-size: 20px;  --sv-text-h4-leading: 1.3;  --sv-text-h4-tracking: 0;
+  --sv-text-body-size: 16px;    --sv-text-body-leading: 1.55;
+  --sv-text-small-size: 14px;   --sv-text-small-leading: 1.5;
+  --sv-text-caption-size: 12px; --sv-text-caption-leading: 1.4;
+  --sv-text-label-size: 13px;   --sv-text-label-leading: 1.3;
+  --sv-text-eyebrow-size: 11px; --sv-text-eyebrow-tracking: 0.12em;
+  --sv-text-mono-size: 13px;
+
+  /* ── MOTION ────────────────────────────────────────────── */
+  --sv-ease-out: cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --sv-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --sv-dur-fast: 120ms; /* @kind other */
+  --sv-dur: 200ms; /* @kind other */
+  --sv-dur-slow: 360ms; /* @kind other */
+}
+
+/* ── BASE / SEMANTIC ELEMENTS ─────────────────────────────── */
+
+html, body {
+  font-family: var(--sv-font-sans);
+  font-size: var(--sv-text-body-size);
+  line-height: var(--sv-text-body-leading);
+  color: var(--sv-fg);
+  background: var(--sv-bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, .sv-h1 {
+  font-family: var(--sv-font-display);
+  font-weight: 400;            /* Faux is display, no extra weight */
+  font-size: var(--sv-text-h1-size);
+  line-height: var(--sv-text-h1-leading);
+  letter-spacing: var(--sv-text-h1-tracking);
+  color: var(--sv-fg);
+  margin: 0;
+  text-wrap: balance;
+}
+h2, .sv-h2 {
+  font-family: var(--sv-font-sans);
+  font-weight: 700;
+  font-size: var(--sv-text-h2-size);
+  line-height: var(--sv-text-h2-leading);
+  letter-spacing: var(--sv-text-h2-tracking);
+  color: var(--sv-fg);
+  margin: 0;
+  text-wrap: balance;
+}
+h3, .sv-h3 {
+  font-weight: 500;
+  font-size: var(--sv-text-h3-size);
+  line-height: var(--sv-text-h3-leading);
+  letter-spacing: var(--sv-text-h3-tracking);
+  color: var(--sv-fg);
+  margin: 0;
+}
+h4, .sv-h4 {
+  font-weight: 500;
+  font-size: var(--sv-text-h4-size);
+  line-height: var(--sv-text-h4-leading);
+  color: var(--sv-fg);
+  margin: 0;
+}
+p, .sv-body {
+  font-size: var(--sv-text-body-size);
+  line-height: var(--sv-text-body-leading);
+  color: var(--sv-fg);
+  margin: 0 0 1em;
+  text-wrap: pretty;
+}
+small, .sv-small {
+  font-size: var(--sv-text-small-size);
+  line-height: var(--sv-text-small-leading);
+  color: var(--sv-fg-muted);
+}
+.sv-caption {
+  font-size: var(--sv-text-caption-size);
+  line-height: var(--sv-text-caption-leading);
+  color: var(--sv-fg-muted);
+}
+.sv-label {
+  font-size: var(--sv-text-label-size);
+  line-height: var(--sv-text-label-leading);
+  font-weight: 500;
+  color: var(--sv-fg);
+}
+.sv-eyebrow {
+  font-size: var(--sv-text-eyebrow-size);
+  letter-spacing: var(--sv-text-eyebrow-tracking);
+  text-transform: uppercase; /* Eyebrows are the ONE place caps is OK */
+  color: var(--sv-fg-muted);
+  font-weight: 500;
+}
+code, kbd, pre, .sv-mono {
+  font-family: var(--sv-font-mono);
+  font-size: var(--sv-text-mono-size);
+}
+a, .sv-link {
+  color: var(--sv-fg-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: color var(--sv-dur) var(--sv-ease-out);
+}
+a:hover, .sv-link:hover { color: var(--sv-folly-dark); }
+
+hr, .sv-rule {
+  border: 0;
+  border-top: var(--sv-rule);
+  margin: var(--sv-space-5) 0;
+}
+
+::selection { background: var(--sv-citron); color: var(--sv-phthalo); }

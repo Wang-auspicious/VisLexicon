@@ -127,6 +127,11 @@ export default function Atlas({ stage: routeStage, term: routeTerm }) {
       <div className="ax-mac-window">
         {/* ===== Mac 视窗顶级控制条 (Window Titlebar) ===== */}
         <header className="ax-mac-titlebar">
+          <a className="ax-prototype-brand" href="#/atlas" aria-label="效果图谱总览">
+            <span className="ax-prototype-dot" aria-hidden="true" />
+            <span>效果图谱</span>
+            <small>EFFECTS ATLAS</small>
+          </a>
           <div className="ax-mac-dots" aria-hidden="true">
             <span className="mac-dot close" />
             <span className="mac-dot min" />
@@ -139,6 +144,11 @@ export default function Atlas({ stage: routeStage, term: routeTerm }) {
             <span className="ax-title-main">{stageId === UNROUTED ? '待建档资源池' : stage?.titleZh}</span>
             <span className="ax-title-sub x-mono">{stageId === UNROUTED ? '09 / Unrouted' : stage?.titleEn}</span>
           </div>
+
+          <label className="ax-atlas-search">
+            <span className="sr-only">搜索效果、场景、术语</span>
+            <input value={q} onChange={(event) => setQ(event.target.value)} placeholder="搜索效果、场景、术语…" />
+          </label>
 
           <div className="ax-mac-actions">
             <button
