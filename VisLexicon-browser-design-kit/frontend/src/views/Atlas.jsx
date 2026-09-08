@@ -31,6 +31,8 @@ function Chip({ children }) {
 }
 
 export default function Atlas({ stage: routeStage, term: routeTerm }) {
+  return <iframe title="效果图谱" src="/effects-atlas/index.html" style={{ width: '100%', height: '100vh', border: 0, display: 'block' }} />
+  /* legacy atlas implementation retained below only for staged removal */
   const stageId = routeStage && (routeStage === UNROUTED || stageById(INDEX, routeStage))
     ? routeStage
     : INDEX.stages[0].id
