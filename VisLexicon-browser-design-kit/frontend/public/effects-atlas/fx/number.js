@@ -56,7 +56,7 @@ export default {
     { id: 'ringfill', zh: '环形填充动画', en: 'Ring fills', dz: '环从 0 转到目标', de: 'The ring sweeps to its value',
       pz: '@property 注册百分比变量，conic 角度才能过渡。', pe: 'Register the percentage with @property so the conic can animate.',
       demo: 'shape', css: `@keyframes fxk{from{background:conic-gradient(var(--fx-accent,#e8879c) 0deg,#eceef1 0)}to{background:conic-gradient(var(--fx-accent,#e8879c) 260deg,#eceef1 0)}}.fx{border-radius:50%;animation:fxk 1.8s ${E} infinite alternate;mask:radial-gradient(circle,transparent 68%,#000 69%);-webkit-mask:radial-gradient(circle,transparent 68%,#000 69%)}` },
-    { id: 'gauge', zh: '半圆仪表', en: 'Half gauge', dz: '半圈量表加指针', de: 'A半 ring with a needle',
+    { id: 'gauge', zh: '半圆仪表', en: 'Half gauge', dz: '半圈量表加指针', de: 'A semi-ring with a needle',
       pz: '半圆用 conic 0–180° + 下半遮住，指针单独旋转。', pe: 'A 180° conic with the lower half hidden; rotate the needle separately.',
       demo: 'shape', css: `@keyframes fxk{0%,100%{transform:rotate(-64deg)}50%{transform:rotate(52deg)}}.fx{border-radius:50%;background:conic-gradient(from -90deg,#e5a68f 0 25%,#f4dcb8 25% 40%,#e8879c 40% 50%,transparent 50%);mask:radial-gradient(circle,transparent 62%,#000 63%);-webkit-mask:radial-gradient(circle,transparent 62%,#000 63%);position:relative}.fx::after{content:'';position:absolute;left:50%;bottom:50%;width:3px;height:44%;background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);transform-origin:bottom;animation:fxk 3s ease-in-out infinite;border-radius:2px}` },
     { id: 'sparkbars', zh: '迷你柱图', en: 'Micro bars', dz: '一排小柱表示趋势', de: 'Tiny bars carrying a trend',

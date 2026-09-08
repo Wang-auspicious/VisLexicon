@@ -100,7 +100,6 @@
               <div style="display:flex;align-items:baseline;gap:13px;padding-bottom:11px;border-bottom:1px solid #23232f">
                 <span style="font:600 11px/1 var(--fx-mono);color:#b2b4a8;letter-spacing:.06em">{{ g.num }}</span>
                 <h2 style="margin:0;font-size:19px;font-weight:600;letter-spacing:-.02em;color:#23232f">{{ g.name }}</h2>
-                <span style="font-size:13px;color:#a8aa9e">{{ g.alt }}</span>
                 <span style="flex:1"></span>
                 <span style="font-size:12.5px;font-weight:500;color:#a8aa9e;font-variant-numeric:tabular-nums">{{ g.count }}</span>
               </div>
@@ -138,15 +137,14 @@
                       <span style="flex:1;height:1px;background:#eceee6"></span>
                     </div>
                     <div onClick="{{ r.pick }}" style="cursor:pointer;margin-top:15px">
-                      <div style="font-size:23px;font-weight:600;letter-spacing:-.028em;line-height:1.14;color:#23232f">{{ r.zh }}</div>
-                      <div style="margin-top:4px;font-size:13.5px;font-weight:500;letter-spacing:-.006em;color:#9b9d92">{{ r.en }}</div>
+                      <div style="font-size:23px;font-weight:600;letter-spacing:-.028em;line-height:1.14;color:#23232f">{{ r.title }}</div>
                     </div>
                     <p style="margin:15px 0 0;font-size:14px;line-height:1.55;color:#4c4e46;text-wrap:pretty">{{ r.dz }}</p>
                     <p style="margin:11px 0 0;font-size:12.5px;line-height:1.68;color:#84867b;text-wrap:pretty">{{ r.pz }}</p>
                     <div style="flex:1;min-height:16px"></div>
                     <div style="display:flex;flex-wrap:wrap;gap:6px">
                       <sc-for list="{{ r.pairs }}" as="k" hint-placeholder-count="3">
-                        <span style="padding:4px 10px;border-radius:999px;background:#f2f3ec;font-size:11px;font-weight:500;letter-spacing:.01em;color:#5f6157">{{ k.zh }}</span>
+                        <span style="padding:4px 10px;border-radius:999px;background:#f2f3ec;font-size:11px;font-weight:500;letter-spacing:.01em;color:#5f6157">{{ k.label }}</span>
                       </sc-for>
                     </div>
                     <sc-if value="{{ r.hasRefs }}" hint-placeholder-val="{{ true }}">
@@ -192,7 +190,6 @@
                 </div>
                 <div style="padding:13px 14px 14px;border-top:1px solid #eef0e8;display:flex;align-items:baseline;gap:9px">
                   <span style="flex:1;min-width:0;font-size:14px;font-weight:600;letter-spacing:-.012em;color:#23232f;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ t.name }}</span>
-                  <span style="font-size:12px;font-weight:500;color:#a8aa9e;flex:none;max-width:44%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ t.sub }}</span>
                 </div>
               </div>
             </sc-for>
@@ -255,7 +252,6 @@
             </div>
 
             <div style="margin-top:22px;max-width:64ch">
-              <div style="font-size:13px;font-weight:500;color:#a3a598">{{ itemAlt }}</div>
               <h1 style="margin:10px 0 0;font-size:clamp(25px,2.9vw,33px);font-weight:700;letter-spacing:-.03em;line-height:1.1">{{ itemName }}</h1>
               <p style="margin:13px 0 0;font-size:16px;line-height:1.6;color:#3f4149;text-wrap:pretty">{{ itemDesc }}</p>
               <div style="margin-top:17px;padding-top:15px;border-top:1px solid #e4e5e0">
@@ -318,7 +314,6 @@
             <div style="background:linear-gradient(152deg,#2a4031,#1b2a21 72%);border-radius:11px;padding:14px 15px 15px;color:#e7e8e2">
               <div style="display:flex;align-items:center;gap:9px;margin-bottom:10px">
                 <span style="flex:1;font-size:12.5px;font-weight:600;color:#8c8e85">{{ promptLabel }}</span>
-                <button onClick="{{ togglePl }}" style="height:23px;padding:0 9px;border:1px solid #35353f;background:transparent;border-radius:6px;color:#c8cac2;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer" style-hover="border-color:#6b6d64">{{ plLabel }}</button>
               </div>
               <pre style="margin:0;white-space:pre-wrap;font:400 12px/1.75 var(--fx-mono);color:#c2c4bc;max-height:240px;overflow:auto">{{ promptText }}</pre>
               <button onClick="{{ copy }}" style="margin-top:12px;width:100%;height:37px;border:0;border-radius:8px;background:#fe2c55;color:#fff;font:700 13.5px/1 var(--fx-sans);cursor:pointer" style-hover="background:#e62950" style-active="transform:translateY(1px)">{{ copyLabel }}</button>
@@ -584,14 +579,14 @@ class Component extends DCLogic {
         isText: i.demo === 'text', notText: i.demo !== 'text',
         sample: i.txt || 'Aurora', glyphs: i.demo === 'text' ? this.glyphList(i) : [],
         cells: i.demo === 'text' ? [] : this.cellList(i, mod),
-        name: nm(i), sub: q ? nm(c) : (L === 'zh' ? i.en : i.zh),
+        name: nm(i),
         pick: () => this.open(c, i),
         box: Object.assign({ height: '168px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', pointerEvents: 'none', contain: 'paint layout style', contentVisibility: 'auto', containIntrinsicSize: '236px 160px' }, this.dots(15)),
         inner: Object.assign({ transform: 'scale(.52)', transformOrigin: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '190%', height: '190%' }, this.stageVars(i))
       };
     });
 
-    const prompt = it && cur && mod ? mod.composePrompt(it, cur.cat, s.plLang, s.params, { speed: s.speed }) : '';
+    const prompt = it && cur && mod ? mod.composePrompt(it, cur.cat, L, s.params, { speed: s.speed }) : '';
     const stg = it && mod ? (mod.STAGES[it.demo] || {}) : {};
 
     return {
@@ -609,7 +604,7 @@ class Component extends DCLogic {
       hubGroups: mod ? mod.GROUPS.map((g) => {
         const list = g.of.map(id => cats.find(c => c.id === id)).filter(Boolean);
         return {
-          name: nm(g), alt: L === 'zh' ? g.en : g.zh,
+          name: nm(g),
           count: t.total(list.reduce((n, c) => n + c.items.length, 0)),
           cats: list.map(c => ({
             name: nm(c), count: c.items.length, pick: () => this.pickCat(c.id),
@@ -621,9 +616,9 @@ class Component extends DCLogic {
       hubOn: s.mode === 'hub', browseOn: s.mode === 'wall',
       gridOn: !(cat && cat.view === 'lang' && !q), langOn: !!(cat && cat.view === 'lang' && !q),
       rows: (cat && cat.view === 'lang' && !q) ? vis.map(({ c, it: i, sc }, ti) => ({
-        num: pad(ti + 1), en: i.en, zh: i.zh,
+        num: pad(ti + 1), title: L === 'zh' ? i.zh : i.en,
         dz: L === 'zh' ? i.dz : i.de, pz: L === 'zh' ? i.pz : i.pe,
-        pairs: (i.kw || []).map((x, k) => ({ en: x, zh: L === 'zh' ? ((i.kz || [])[k] || x) : x })),
+        pairs: (i.kw || []).map((x, k) => ({ label: L === 'zh' ? ((i.kz || [])[k] || x) : x })),
         hasRefs: !!(i.refs && i.refs.length), refLabel: t.refs,
         refs: (i.refs || []).map(f => ({ n: f.n, u: f.u, href: 'https://' + f.u })),
         pick: () => this.open(c, i), scope: sc, wrap: 'fxwrap ' + ((mod.STAGES[i.demo] || {}).wrap || 'fxbox'),
@@ -685,15 +680,14 @@ class Component extends DCLogic {
         };
       }),
 
-      itemName: nm(it), itemAlt: it ? (L === 'zh' ? it.en : it.zh) : '',
+      itemName: nm(it),
       itemDesc: it ? (L === 'zh' ? it.dz : it.de) : '', itemHow: it ? (L === 'zh' ? it.pz : it.pe) : '', howLabel: t.how,
       hasRefs: !!(it && it.refs && it.refs.length), refLabel: t.refs,
       refs: (it && it.refs || []).map(f => ({ n: f.n, u: f.u, href: 'https://' + f.u })),
       hasSiblings: !!(cur && cur.cat.items.length > 1),
       siblings: cur ? cur.cat.items.filter(x => x.id !== it.id).slice(0, 8).map(x => ({ name: nm(x), pick: () => this.open(cur.cat, x) })) : [],
 
-      promptLabel: t.prompt, promptText: prompt, plLabel: s.plLang === 'zh' ? '中文' : 'EN',
-      togglePl: () => this.setState({ plLang: s.plLang === 'zh' ? 'en' : 'zh', copied: false }),
+      promptLabel: t.prompt, promptText: prompt,
       copyLabel: s.copied ? t.copied : t.copy,
       copy: () => { navigator.clipboard && navigator.clipboard.writeText(prompt); this.setState({ copied: true }); setTimeout(() => this.setState({ copied: false }), 1600); }
     };

@@ -66,7 +66,7 @@ export default {
     I('containerunits', '容器单位', 'Container units', '字号跟着容器不是视口', 'Type scales to its container',
       'cqi / cqb 单位，卡片复用时不会崩。', 'cqi and cqb keep reusable cards sane.',
       'card', `@keyframes fxk{0%,100%{max-width:300px}50%{max-width:200px}}.fxcard{container-type:inline-size;animation:fxk 5s ${E} infinite}.fx{font-size:8cqi}`),
-    I('hasparent', ':has() 父选择', ':has() 状态', '子元素状态影响父层样式', 'A child state restyles the parent',
+    I('hasparent', ':has() 父选择', ':has() state', '子元素状态影响父层样式', 'A child state restyles the parent',
       '.card:has(:focus-visible){...} 不用 JS 加 class。', '.card:has(:focus-visible) — no class toggling needed.',
       'card', `.fx{transition:box-shadow .2s,transform .2s}.fxcard:has(.fx:hover) .fx{box-shadow:0 14px 30px rgba(45,72,98,.16);transform:translateY(-4px)}`),
     I('nesting', 'CSS 嵌套', 'CSS nesting', '状态样式写在一起', 'States live with the rule',
