@@ -350,6 +350,9 @@ class Component extends DCLogic {
   };
 
   componentDidMount() {
+    const hostParams = new URLSearchParams(window.location.search);
+    const initialLang = hostParams.get('lang') === 'en' ? 'en' : 'zh';
+    document.getElementById('dc-root')?.classList.toggle('host-dark', hostParams.get('theme') === 'dark');
     this._hostLocale = (event) => {
       if (event.origin !== window.location.origin || event.data?.type !== 'vislexicon-host-state') return;
       const lang = event.data.locale === 'en' ? 'en' : 'zh';
@@ -359,7 +362,7 @@ class Component extends DCLogic {
     window.addEventListener('message', this._hostLocale);
     import('./fx/index.js').then(async (mod) => {
       const cats = await mod.loadCategories();
-      this.setState({ mod, cats, catId: cats[0] && cats[0].id, lang: this.props.defaultLang || 'zh' }, this.sync);
+      this.setState({ mod, cats, catId: cats[0] && cats[0].id, lang: initialLang }, this.sync);
     });
     this._keys = (e) => {
       if (e.target && /input|textarea/i.test(e.target.tagName)) { if (e.key === 'Escape') e.target.blur(); return; }

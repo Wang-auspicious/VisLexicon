@@ -10,12 +10,12 @@ import { useStore } from '../store.js'
 export default function Atlas() {
   const { locale, theme } = useStore()
   const frameRef = useRef(null)
+  const resolvedTheme = theme === 'dark' || (theme === 'system' && window.matchMedia?.('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'
   useEffect(() => {
-    const resolvedTheme = theme === 'dark' || (theme === 'system' && window.matchMedia?.('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'
     const sendLocale = () => frameRef.current?.contentWindow?.postMessage({ type: 'vislexicon-host-state', locale: locale === 'en' ? 'en' : 'zh', theme: resolvedTheme }, window.location.origin)
     sendLocale()
     frameRef.current?.addEventListener('load', sendLocale)
     return () => frameRef.current?.removeEventListener('load', sendLocale)
   }, [locale, theme])
-  return <iframe ref={frameRef} title="效果图谱" src="/effects-atlas/index.html" style={{ width: '100%', height: '100%', minHeight: 'calc(100vh - 88px)', border: 0, display: 'block' }} />
+  return <iframe ref={frameRef} title="效果图谱" src={`/effects-atlas/index.html?lang=${locale === 'en' ? 'en' : 'zh'}&theme=${resolvedTheme}`} style={{ width: '100%', height: '100%', minHeight: 'calc(100vh - 88px)', border: 0, display: 'block' }} />
 }
