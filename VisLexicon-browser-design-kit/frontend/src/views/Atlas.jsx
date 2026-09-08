@@ -23,6 +23,8 @@ const INDEX = buildStageIndex(MANIFESTS, atlas)
 const DOMAINS = buildDomainIndex(catalog)
 const COVERAGE = coverageOf(INDEX, atlas)
 const UNROUTED = '__unrouted'
+const EFFECT_MODULES = import.meta.glob('../data/effects-fx/*.js', { eager: true })
+const EFFECT_ITEMS = Object.values(EFFECT_MODULES).flatMap((entry) => { const module = entry?.default; return (module?.items || []).map((item) => ({ ...item, categoryId: module.id, categoryZh: module.zh, categoryEn: module.en })) })
 
 function Chip({ children }) {
   return <em className="ax-chip">{children}</em>
@@ -42,6 +44,8 @@ export default function Atlas({ stage: routeStage, term: routeTerm }) {
   const [tip, setTip] = useState(null)
   const [leftOpen, setLeftOpen] = useState(false)
   const [rightOpen, setRightOpen] = useState(false)
+  const [effectOpen, setEffectOpen] = useState(false)
+  const [effectLimit, setEffectLimit] = useState(240)
   const viewportRef = useRef(null)
 
   useEffect(() => {
@@ -143,6 +147,9 @@ export default function Atlas({ stage: routeStage, term: routeTerm }) {
 
           <label className="ax-atlas-search"><span className="sr-only">搜索效果、场景、术语</span><input value={q} onChange={(event) => setQ(event.target.value)} placeholder="搜索效果、场景、术语…" /></label>
           <div className="ax-mac-actions">
+            <button type="button" className={`ax-mac-btn ${effectOpen ? 'on' : ''}`} onClick={() => setEffectOpen((value) => !value)} aria-pressed={effectOpen}>
+              效果词库 <span className="x-mono">{EFFECT_ITEMS.length.toLocaleString()}</span>
+            </button>
             <button
               type="button"
               className={`ax-mac-btn ${leftOpen ? 'on' : ''}`}
@@ -200,6 +207,13 @@ export default function Atlas({ stage: routeStage, term: routeTerm }) {
             </button>
           </div>
         </header>
+
+        {effectOpen && (
+          <section className="ax-effects-drawer" aria-label="完整效果专业名词图鉴">
+            <div className="ax-effects-drawer-head"><div><p className="x-mono">EFFECT LIBRARY</p><h2>完整效果专业名词图鉴</h2><p>来自原型效果库的 {EFFECT_ITEMS.length.toLocaleString()} 条术语、中文说明与实现线索。</p></div><button type="button" onClick={() => setEffectOpen(false)}>关闭</button></div>
+            {(() => { const filtered = EFFECT_ITEMS.filter((item) => !q || `${item.zh} ${item.en} ${item.dz || ''} ${item.categoryZh}`.toLowerCase().includes(q.toLowerCase())); return <><div className="ax-effects-meta x-mono">显示 {Math.min(effectLimit, filtered.length).toLocaleString()} / {filtered.length.toLocaleString()}</div><div className="ax-effects-grid">{filtered.slice(0, effectLimit).map((item) => <article className="ax-effect-card" key={`${item.categoryId}/${item.id}`}><small>{item.categoryZh}</small><h3>{item.zh}</h3><p>{item.en}</p><span>{item.dz || item.de || '效果实现与交互模式'}</span></article>)}</div>{effectLimit < filtered.length && <button type="button" className="ax-effects-more" onClick={() => setEffectLimit((value) => value + 240)}>继续加载 240 条</button>}</> })()}
+          </section>
+        )}
 
         {/* ===== Mac 视窗主体舞台区域 ===== */}
         <div className="ax-mac-body">

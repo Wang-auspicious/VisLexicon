@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mapgen</title>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+<style>
+  body{margin:0;font:12px/1.6 ui-monospace,monospace;background:#fff;color:#23232f;padding:18px}
+  h4{margin:22px 0 8px;font:600 11px/1 ui-monospace,monospace;letter-spacing:.1em;color:#a8aa9e}
+  canvas{display:block;background:transparent}
+  pre{font:400 7px/1.05 ui-monospace,monospace;color:#23232f;background:#fff;margin:0}
+</style>
+</head>
+<body>
+<div id="status">loading world-atlas…</div>
+
+<h4>DOTMAP · 760x360</h4>
+<div id="wrap-dotmap" style="width:760px;background:#fff"><canvas id="dotmap" width="1520" height="720" style="width:760px;height:360px"></canvas></div>
+
+<h4>GLOBE SPRITE · 6x6 frames</h4>
+<div id="wrap-globe" style="width:1560px;background:#fff"><canvas id="globe" width="1560" height="1560" style="width:1560px;height:1560px"></canvas></div>
+
+<h4>CHAR MAP</h4>
+<pre id="txt"></pre>
+
+<script>
+const W = 720, H = 360;
+d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json').then(topo => {
+  const land = topojson.feature(topo, topo.objects.countries);
+  const off = document.createElement('canvas'); off.width = W; off.height = H;
+  const ctx = off.getContext('2d');
+  const proj = d3.geoEquirectangular().translate([W / 2, H / 2]).scale(W / (2 * Math.PI));
+  ctx.fillStyle = '#000'; ctx.beginPath(); d3.geoPath(proj, ctx)(land); ctx.fill();
+  const px = ctx.getImageData(0, 0, W, H).data;
+  const solid = (x, y) => x >= 0 && x < W && y >= 0 && y < H && px[(y * W + x) * 4 + 3] > 90;
+
+  const cover = (cx, cy, rx, ry) => {
+    let hit = 0, n = 0;
+    for (let y = Math.round(cy - ry); y <= Math.round(cy + ry); y++)
+      for (let x = Math.round(cx - rx); x <= Math.round(cx + rx); x++) { n++; if (solid(x, y)) hit++; }
+    return hit / Math.max(1, n);
+  };
+  const lat2y = (lat) => (90 - lat) / 180 * H;
+  const lon2x = (lon) => (lon + 180) / 360 * W;
+  const TOP = 76, BOT = -56;
+
+  const dm = document.getElementById('dotmap').getContext('2d');
+  dm.scale(2, 2);
+  const DW = 760, DH = 360, P = 9, RAD = 2.1;
+  const gx = Math.floor((DW - 20) / P), gy = Math.floor((DH - 16) / P);
+  const x0 = (DW - gx * P) / 2 + P / 2, y0 = (DH - gy * P) / 2 + P / 2;
+  const grid = [];
+  for (let j = 0; j < gy; j++) {
+    grid[j] = [];
+    for (let i = 0; i < gx; i++) {
+      const lon = (i + .5) / gx * 360 - 180;
+      const lat = 90 - (j + .5) / gy * 180;
+      const c = (lat > TOP || lat < BOT) ? 0 : cover(lon2x(lon), lat2y(lat), (P / DW * W) / 2, (P / DH * H) / 2);
+      grid[j][i] = c >= .34 ? 1 : 0;
+    }
+  }
+  const near = (j, i) => (grid[j - 1] && grid[j - 1][i] ? 1 : 0) + (grid[j + 1] && grid[j + 1][i] ? 1 : 0) + (grid[j][i - 1] || 0) + (grid[j][i + 1] || 0);
+  const dots = [];
+  for (let j = 0; j < gy; j++) for (let i = 0; i < gx; i++) if (grid[j][i] && near(j, i) >= 1) dots.push([i, j]);
+  dm.fillStyle = '#d4d7dc';
+  dots.forEach(function (d) { dm.beginPath(); dm.arc(x0 + d[0] * P, y0 + d[1] * P, RAD, 0, 6.284); dm.fill(); });
+  window.DOTGRID = { gx: gx, gy: gy, x0: x0, y0: y0, P: P, cells: dots };
+
+  const gb = document.getElementById('globe').getContext('2d');
+  const CELL = 260, R = 112, lat0 = 16 * Math.PI / 180, GP = 6;
+  for (let f = 0; f < 36; f++) {
+    const ox = (f % 6) * CELL + CELL / 2, oy = Math.floor(f / 6) * CELL + CELL / 2, lon0 = f * 10;
+    gb.beginPath(); gb.arc(ox, oy, R + 8, 0, 6.284);
+    gb.strokeStyle = 'rgba(35,35,47,.09)'; gb.lineWidth = 1; gb.stroke();
+    for (let py = -R; py <= R; py += GP) {
+      for (let sx = -R; sx <= R; sx += GP) {
+        const rho = Math.hypot(sx, py) / R;
+        if (rho > .995) continue;
+        const c = Math.asin(rho), sy = -py / R;
+        const lat = Math.asin(Math.cos(c) * Math.sin(lat0) + (rho ? (sy * Math.sin(c) * Math.cos(lat0)) / rho : 0)) * 180 / Math.PI;
+        const lon = lon0 + Math.atan2((sx / R) * Math.sin(c), rho * Math.cos(c) * Math.cos(lat0) - sy * Math.sin(c) * Math.sin(lat0)) * 180 / Math.PI;
+        if (lat > TOP || lat < BOT) continue;
+        const L = ((lon + 540) % 360) - 180;
+        if (cover(lon2x(L), lat2y(lat), 1.4, 1.4) < .34) continue;
+        const shade = Math.pow(Math.max(0, Math.cos(c)), .5);
+        gb.beginPath(); gb.arc(ox + sx, oy + py, 2, 0, 6.284);
+        gb.fillStyle = 'rgba(32,56,29,' + (.22 + .68 * shade).toFixed(3) + ')';
+        gb.fill();
+      }
+    }
+  }
+
+  const cols = 92, lines = 30, out = [];
+  for (let j = 0; j < lines; j++) {
+    let s = '';
+    for (let i = 0; i < cols; i++) {
+      const lon = (i + .5) / cols * 360 - 180, lat = 90 - (j + .5) / lines * 180;
+      const c = (lat > TOP || lat < BOT) ? 0 : cover(lon2x(lon), lat2y(lat), (W / cols) / 2, (H / lines) / 2);
+      s += c >= .42 ? '\u2588' : c >= .18 ? '\u00b7' : ' ';
+    }
+    out.push(s.replace(/\s+$/, ''));
+  }
+  window.CHARMAP = out.join('\n');
+  document.getElementById('txt').textContent = window.CHARMAP;
+  document.getElementById('status').textContent = 'ready · dots ' + dots.length + ' · 36 frames';
+}).catch(function (e) { document.getElementById('status').textContent = 'ERR ' + e.message; });
+</script>
+</body>
+</html>
