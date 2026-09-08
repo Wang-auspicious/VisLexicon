@@ -1,0 +1,341 @@
+// Curated foundational patterns
+const I=(id,zh,en,dz,de,pz,pe,demo,css)=>({id,zh,en,dz,de,pz,pe,demo,css});
+export default {
+  id: "color",
+  zh: "颜色系统",
+  en: "Color systems",
+  dz: "颜色不仅是装饰，还要表达层级、状态、对比与主题变化。",
+  de: "Color is not decoration alone; it expresses hierarchy, state, contrast, and theme changes.",
+  items: [
+    {
+      id: "semantic-tokens",
+      zh: "语义颜色令牌",
+      en: "Semantic color tokens",
+      dz: "语义颜色令牌用于建立可解释的颜色系统层级。",
+      de: "Semantic color tokens creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达语义颜色令牌，在内容变化与主题切换时保持稳定。",
+      pe: "Express semantic color tokens with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(0 62% 58%),hsl(55 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "surface-tints",
+      zh: "表面色阶",
+      en: "Surface tint scale",
+      dz: "表面色阶用于建立可解释的颜色系统层级。",
+      de: "Surface tint scale creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达表面色阶，在内容变化与主题切换时保持稳定。",
+      pe: "Express surface tint scale with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(17 62% 58%),hsl(72 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "content-emphasis",
+      zh: "内容强调层级",
+      en: "Content emphasis",
+      dz: "内容强调层级用于建立可解释的颜色系统层级。",
+      de: "Content emphasis creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达内容强调层级，在内容变化与主题切换时保持稳定。",
+      pe: "Express content emphasis with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(34 62% 58%),hsl(89 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "accent-mapping",
+      zh: "品牌色映射",
+      en: "Accent mapping",
+      dz: "品牌色映射用于建立可解释的颜色系统层级。",
+      de: "Accent mapping creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达品牌色映射，在内容变化与主题切换时保持稳定。",
+      pe: "Express accent mapping with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(51 62% 58%),hsl(106 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "success-state",
+      zh: "成功色状态",
+      en: "Success state color",
+      dz: "成功色状态用于建立可解释的颜色系统层级。",
+      de: "Success state color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达成功色状态，在内容变化与主题切换时保持稳定。",
+      pe: "Express success state color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(68 62% 58%),hsl(123 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "warning-state",
+      zh: "警告色状态",
+      en: "Warning state color",
+      dz: "警告色状态用于建立可解释的颜色系统层级。",
+      de: "Warning state color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达警告色状态，在内容变化与主题切换时保持稳定。",
+      pe: "Express warning state color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(85 62% 58%),hsl(140 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "danger-state",
+      zh: "危险色状态",
+      en: "Danger state color",
+      dz: "危险色状态用于建立可解释的颜色系统层级。",
+      de: "Danger state color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达危险色状态，在内容变化与主题切换时保持稳定。",
+      pe: "Express danger state color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(102 62% 58%),hsl(157 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "info-state",
+      zh: "信息色状态",
+      en: "Info state color",
+      dz: "信息色状态用于建立可解释的颜色系统层级。",
+      de: "Info state color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达信息色状态，在内容变化与主题切换时保持稳定。",
+      pe: "Express info state color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(119 62% 58%),hsl(174 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "disabled-color",
+      zh: "禁用态颜色",
+      en: "Disabled color",
+      dz: "禁用态颜色用于建立可解释的颜色系统层级。",
+      de: "Disabled color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达禁用态颜色，在内容变化与主题切换时保持稳定。",
+      pe: "Express disabled color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(136 62% 58%),hsl(191 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "selected-color",
+      zh: "选中态颜色",
+      en: "Selected color",
+      dz: "选中态颜色用于建立可解释的颜色系统层级。",
+      de: "Selected color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达选中态颜色，在内容变化与主题切换时保持稳定。",
+      pe: "Express selected color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(153 62% 58%),hsl(208 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "hover-color",
+      zh: "悬停色阶",
+      en: "Hover color scale",
+      dz: "悬停色阶用于建立可解释的颜色系统层级。",
+      de: "Hover color scale creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达悬停色阶，在内容变化与主题切换时保持稳定。",
+      pe: "Express hover color scale with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(170 62% 58%),hsl(225 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "pressed-color",
+      zh: "按下色阶",
+      en: "Pressed color scale",
+      dz: "按下色阶用于建立可解释的颜色系统层级。",
+      de: "Pressed color scale creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达按下色阶，在内容变化与主题切换时保持稳定。",
+      pe: "Express pressed color scale with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(187 62% 58%),hsl(242 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "focus-color",
+      zh: "聚焦色阶",
+      en: "Focus color scale",
+      dz: "聚焦色阶用于建立可解释的颜色系统层级。",
+      de: "Focus color scale creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达聚焦色阶，在内容变化与主题切换时保持稳定。",
+      pe: "Express focus color scale with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(204 62% 58%),hsl(259 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "inverse-surface",
+      zh: "反色表面",
+      en: "Inverse surface",
+      dz: "反色表面用于建立可解释的颜色系统层级。",
+      de: "Inverse surface creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达反色表面，在内容变化与主题切换时保持稳定。",
+      pe: "Express inverse surface with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(221 62% 58%),hsl(276 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "on-color-pair",
+      zh: "前景背景配对",
+      en: "On-color pairing",
+      dz: "前景背景配对用于建立可解释的颜色系统层级。",
+      de: "On-color pairing creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达前景背景配对，在内容变化与主题切换时保持稳定。",
+      pe: "Express on-color pairing with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(238 62% 58%),hsl(293 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "contrast-ramp",
+      zh: "对比度阶梯",
+      en: "Contrast ramp",
+      dz: "对比度阶梯用于建立可解释的颜色系统层级。",
+      de: "Contrast ramp creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达对比度阶梯，在内容变化与主题切换时保持稳定。",
+      pe: "Express contrast ramp with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(255 62% 58%),hsl(310 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "oklch-palette",
+      zh: "OKLCH 调色板",
+      en: "OKLCH palette",
+      dz: "OKLCH 调色板用于建立可解释的颜色系统层级。",
+      de: "OKLCH palette creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达OKLCH 调色板，在内容变化与主题切换时保持稳定。",
+      pe: "Express oklch palette with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(272 62% 58%),hsl(327 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "alpha-overlay",
+      zh: "透明叠层",
+      en: "Alpha overlay",
+      dz: "透明叠层用于建立可解释的颜色系统层级。",
+      de: "Alpha overlay creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达透明叠层，在内容变化与主题切换时保持稳定。",
+      pe: "Express alpha overlay with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(289 62% 58%),hsl(344 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "scrim-color",
+      zh: "遮罩颜色",
+      en: "Scrim color",
+      dz: "遮罩颜色用于建立可解释的颜色系统层级。",
+      de: "Scrim color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达遮罩颜色，在内容变化与主题切换时保持稳定。",
+      pe: "Express scrim color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(306 62% 58%),hsl(1 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "selection-color",
+      zh: "文本选中色",
+      en: "Selection color",
+      dz: "文本选中色用于建立可解释的颜色系统层级。",
+      de: "Selection color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达文本选中色，在内容变化与主题切换时保持稳定。",
+      pe: "Express selection color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(323 62% 58%),hsl(18 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "link-color",
+      zh: "链接颜色",
+      en: "Link color",
+      dz: "链接颜色用于建立可解释的颜色系统层级。",
+      de: "Link color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达链接颜色，在内容变化与主题切换时保持稳定。",
+      pe: "Express link color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(340 62% 58%),hsl(35 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "visited-link",
+      zh: "访问过链接",
+      en: "Visited link color",
+      dz: "访问过链接用于建立可解释的颜色系统层级。",
+      de: "Visited link color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达访问过链接，在内容变化与主题切换时保持稳定。",
+      pe: "Express visited link color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(357 62% 58%),hsl(52 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "code-color",
+      zh: "代码色彩",
+      en: "Code color",
+      dz: "代码色彩用于建立可解释的颜色系统层级。",
+      de: "Code color creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达代码色彩，在内容变化与主题切换时保持稳定。",
+      pe: "Express code color with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(14 62% 58%),hsl(69 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "chart-series",
+      zh: "图表序列颜色",
+      en: "Chart series colors",
+      dz: "图表序列颜色用于建立可解释的颜色系统层级。",
+      de: "Chart series colors creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达图表序列颜色，在内容变化与主题切换时保持稳定。",
+      pe: "Express chart series colors with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(31 62% 58%),hsl(86 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "colorblind-safe",
+      zh: "色盲安全序列",
+      en: "Color-blind-safe series",
+      dz: "色盲安全序列用于建立可解释的颜色系统层级。",
+      de: "Color-blind-safe series creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达色盲安全序列，在内容变化与主题切换时保持稳定。",
+      pe: "Express color-blind-safe series with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(48 62% 58%),hsl(103 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "dark-surface",
+      zh: "深色表面层级",
+      en: "Dark surface hierarchy",
+      dz: "深色表面层级用于建立可解释的颜色系统层级。",
+      de: "Dark surface hierarchy creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达深色表面层级，在内容变化与主题切换时保持稳定。",
+      pe: "Express dark surface hierarchy with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(65 62% 58%),hsl(120 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "light-surface",
+      zh: "浅色表面层级",
+      en: "Light surface hierarchy",
+      dz: "浅色表面层级用于建立可解释的颜色系统层级。",
+      de: "Light surface hierarchy creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达浅色表面层级，在内容变化与主题切换时保持稳定。",
+      pe: "Express light surface hierarchy with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(82 62% 58%),hsl(137 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "theme-interpolation",
+      zh: "主题平滑过渡",
+      en: "Theme interpolation",
+      dz: "主题平滑过渡用于建立可解释的颜色系统层级。",
+      de: "Theme interpolation creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达主题平滑过渡，在内容变化与主题切换时保持稳定。",
+      pe: "Express theme interpolation with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(99 62% 58%),hsl(154 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "color-mix",
+      zh: "颜色混合",
+      en: "Color mix",
+      dz: "颜色混合用于建立可解释的颜色系统层级。",
+      de: "Color mix creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达颜色混合，在内容变化与主题切换时保持稳定。",
+      pe: "Express color mix with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(116 62% 58%),hsl(171 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    },
+    {
+      id: "system-color",
+      zh: "系统颜色适配",
+      en: "System color adaptation",
+      dz: "系统颜色适配用于建立可解释的颜色系统层级。",
+      de: "System color adaptation creates an explainable color systems hierarchy.",
+      pz: "使用令牌和约束表达系统颜色适配，在内容变化与主题切换时保持稳定。",
+      pe: "Express system color adaptation with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "box",
+      css: ".fx{background:linear-gradient(135deg,hsl(133 62% 58%),hsl(188 58% 38%));box-shadow:0 12px 30px -18px rgba(40,60,80,.8)}"
+    }
+  ]
+};

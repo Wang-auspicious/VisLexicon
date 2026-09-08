@@ -1,0 +1,341 @@
+// Curated foundational patterns
+const I=(id,zh,en,dz,de,pz,pe,demo,css)=>({id,zh,en,dz,de,pz,pe,demo,css});
+export default {
+  id: "grid",
+  zh: "网格与密度",
+  en: "Grids & density",
+  dz: "网格决定组件如何在不同容器、屏幕和内容长度下保持秩序。",
+  de: "Grids keep components ordered across containers, screens, and content lengths.",
+  items: [
+    {
+      id: "baseline-grid",
+      zh: "基线网格",
+      en: "Baseline grid",
+      dz: "基线网格用于建立可解释的网格与密度层级。",
+      de: "Baseline grid creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达基线网格，在内容变化与主题切换时保持稳定。",
+      pe: "Express baseline grid with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(2,1fr);gap:8px}.fx{height:54px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "spacing-scale",
+      zh: "间距比例",
+      en: "Spacing scale",
+      dz: "间距比例用于建立可解释的网格与密度层级。",
+      de: "Spacing scale creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达间距比例，在内容变化与主题切换时保持稳定。",
+      pe: "Express spacing scale with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(3,1fr);gap:11px}.fx{height:72px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "density-compact",
+      zh: "紧凑密度",
+      en: "Compact density",
+      dz: "紧凑密度用于建立可解释的网格与密度层级。",
+      de: "Compact density creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达紧凑密度，在内容变化与主题切换时保持稳定。",
+      pe: "Express compact density with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(4,1fr);gap:14px}.fx{height:90px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "density-comfortable",
+      zh: "舒适密度",
+      en: "Comfortable density",
+      dz: "舒适密度用于建立可解释的网格与密度层级。",
+      de: "Comfortable density creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达舒适密度，在内容变化与主题切换时保持稳定。",
+      pe: "Express comfortable density with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(2,1fr);gap:17px}.fx{height:108px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "density-spacious",
+      zh: "宽松密度",
+      en: "Spacious density",
+      dz: "宽松密度用于建立可解释的网格与密度层级。",
+      de: "Spacious density creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达宽松密度，在内容变化与主题切换时保持稳定。",
+      pe: "Express spacious density with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(3,1fr);gap:20px}.fx{height:54px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "column-grid",
+      zh: "列网格",
+      en: "Column grid",
+      dz: "列网格用于建立可解释的网格与密度层级。",
+      de: "Column grid creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达列网格，在内容变化与主题切换时保持稳定。",
+      pe: "Express column grid with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(4,1fr);gap:8px}.fx{height:72px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "fluid-columns",
+      zh: "流式列数",
+      en: "Fluid columns",
+      dz: "流式列数用于建立可解释的网格与密度层级。",
+      de: "Fluid columns creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达流式列数，在内容变化与主题切换时保持稳定。",
+      pe: "Express fluid columns with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(2,1fr);gap:11px}.fx{height:90px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "gutter-scale",
+      zh: "栏间距阶梯",
+      en: "Gutter scale",
+      dz: "栏间距阶梯用于建立可解释的网格与密度层级。",
+      de: "Gutter scale creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达栏间距阶梯，在内容变化与主题切换时保持稳定。",
+      pe: "Express gutter scale with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(3,1fr);gap:14px}.fx{height:108px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "container-max",
+      zh: "容器最大宽度",
+      en: "Container max width",
+      dz: "容器最大宽度用于建立可解释的网格与密度层级。",
+      de: "Container max width creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达容器最大宽度，在内容变化与主题切换时保持稳定。",
+      pe: "Express container max width with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(4,1fr);gap:17px}.fx{height:54px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "container-gutter",
+      zh: "容器内边距",
+      en: "Container gutter",
+      dz: "容器内边距用于建立可解释的网格与密度层级。",
+      de: "Container gutter creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达容器内边距，在内容变化与主题切换时保持稳定。",
+      pe: "Express container gutter with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(2,1fr);gap:20px}.fx{height:72px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "bento-grid",
+      zh: "便当盒网格",
+      en: "Bento grid",
+      dz: "便当盒网格用于建立可解释的网格与密度层级。",
+      de: "Bento grid creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达便当盒网格，在内容变化与主题切换时保持稳定。",
+      pe: "Express bento grid with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(3,1fr);gap:8px}.fx{height:90px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "masonry-grid",
+      zh: "瀑布流网格",
+      en: "Masonry grid",
+      dz: "瀑布流网格用于建立可解释的网格与密度层级。",
+      de: "Masonry grid creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达瀑布流网格，在内容变化与主题切换时保持稳定。",
+      pe: "Express masonry grid with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(4,1fr);gap:11px}.fx{height:108px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "subgrid-align",
+      zh: "子网格对齐",
+      en: "Subgrid alignment",
+      dz: "子网格对齐用于建立可解释的网格与密度层级。",
+      de: "Subgrid alignment creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达子网格对齐，在内容变化与主题切换时保持稳定。",
+      pe: "Express subgrid alignment with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(2,1fr);gap:14px}.fx{height:54px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "auto-fit-grid",
+      zh: "自动填充网格",
+      en: "Auto-fit grid",
+      dz: "自动填充网格用于建立可解释的网格与密度层级。",
+      de: "Auto-fit grid creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达自动填充网格，在内容变化与主题切换时保持稳定。",
+      pe: "Express auto-fit grid with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(3,1fr);gap:17px}.fx{height:72px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "auto-fill-grid",
+      zh: "自动扩展网格",
+      en: "Auto-fill grid",
+      dz: "自动扩展网格用于建立可解释的网格与密度层级。",
+      de: "Auto-fill grid creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达自动扩展网格，在内容变化与主题切换时保持稳定。",
+      pe: "Express auto-fill grid with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(4,1fr);gap:20px}.fx{height:90px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "minmax-grid",
+      zh: "最小最大列",
+      en: "Minmax grid",
+      dz: "最小最大列用于建立可解释的网格与密度层级。",
+      de: "Minmax grid creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达最小最大列，在内容变化与主题切换时保持稳定。",
+      pe: "Express minmax grid with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(2,1fr);gap:8px}.fx{height:108px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "intrinsic-grid",
+      zh: "内容驱动网格",
+      en: "Intrinsic grid",
+      dz: "内容驱动网格用于建立可解释的网格与密度层级。",
+      de: "Intrinsic grid creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达内容驱动网格，在内容变化与主题切换时保持稳定。",
+      pe: "Express intrinsic grid with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(3,1fr);gap:11px}.fx{height:54px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "span-grid",
+      zh: "跨列布局",
+      en: "Grid span",
+      dz: "跨列布局用于建立可解释的网格与密度层级。",
+      de: "Grid span creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达跨列布局，在内容变化与主题切换时保持稳定。",
+      pe: "Express grid span with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(4,1fr);gap:14px}.fx{height:72px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "asymmetric-grid",
+      zh: "非对称网格",
+      en: "Asymmetric grid",
+      dz: "非对称网格用于建立可解释的网格与密度层级。",
+      de: "Asymmetric grid creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达非对称网格，在内容变化与主题切换时保持稳定。",
+      pe: "Express asymmetric grid with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(2,1fr);gap:17px}.fx{height:90px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "editorial-grid",
+      zh: "编辑式网格",
+      en: "Editorial grid",
+      dz: "编辑式网格用于建立可解释的网格与密度层级。",
+      de: "Editorial grid creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达编辑式网格，在内容变化与主题切换时保持稳定。",
+      pe: "Express editorial grid with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(3,1fr);gap:20px}.fx{height:108px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "responsive-breakpoint",
+      zh: "响应断点",
+      en: "Responsive breakpoint",
+      dz: "响应断点用于建立可解释的网格与密度层级。",
+      de: "Responsive breakpoint creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达响应断点，在内容变化与主题切换时保持稳定。",
+      pe: "Express responsive breakpoint with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(4,1fr);gap:8px}.fx{height:54px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "container-query",
+      zh: "容器查询",
+      en: "Container query",
+      dz: "容器查询用于建立可解释的网格与密度层级。",
+      de: "Container query creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达容器查询，在内容变化与主题切换时保持稳定。",
+      pe: "Express container query with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(2,1fr);gap:11px}.fx{height:72px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "fluid-type",
+      zh: "流体字号",
+      en: "Fluid type",
+      dz: "流体字号用于建立可解释的网格与密度层级。",
+      de: "Fluid type creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达流体字号，在内容变化与主题切换时保持稳定。",
+      pe: "Express fluid type with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(3,1fr);gap:14px}.fx{height:90px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "fluid-spacing",
+      zh: "流体间距",
+      en: "Fluid spacing",
+      dz: "流体间距用于建立可解释的网格与密度层级。",
+      de: "Fluid spacing creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达流体间距，在内容变化与主题切换时保持稳定。",
+      pe: "Express fluid spacing with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(4,1fr);gap:17px}.fx{height:108px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "safe-area",
+      zh: "安全区内边距",
+      en: "Safe-area inset",
+      dz: "安全区内边距用于建立可解释的网格与密度层级。",
+      de: "Safe-area inset creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达安全区内边距，在内容变化与主题切换时保持稳定。",
+      pe: "Express safe-area inset with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(2,1fr);gap:20px}.fx{height:54px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "fold-aware",
+      zh: "折叠屏安全区",
+      en: "Fold-aware layout",
+      dz: "折叠屏安全区用于建立可解释的网格与密度层级。",
+      de: "Fold-aware layout creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达折叠屏安全区，在内容变化与主题切换时保持稳定。",
+      pe: "Express fold-aware layout with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(3,1fr);gap:8px}.fx{height:72px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "rtl-grid",
+      zh: "RTL 网格镜像",
+      en: "RTL grid mirroring",
+      dz: "RTL 网格镜像用于建立可解释的网格与密度层级。",
+      de: "RTL grid mirroring creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达RTL 网格镜像，在内容变化与主题切换时保持稳定。",
+      pe: "Express rtl grid mirroring with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(4,1fr);gap:11px}.fx{height:90px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "subpixel-rounding",
+      zh: "子像素取整",
+      en: "Subpixel rounding",
+      dz: "子像素取整用于建立可解释的网格与密度层级。",
+      de: "Subpixel rounding creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达子像素取整，在内容变化与主题切换时保持稳定。",
+      pe: "Express subpixel rounding with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(2,1fr);gap:14px}.fx{height:108px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "layout-shift-prevention",
+      zh: "布局位移预防",
+      en: "Layout-shift prevention",
+      dz: "布局位移预防用于建立可解释的网格与密度层级。",
+      de: "Layout-shift prevention creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达布局位移预防，在内容变化与主题切换时保持稳定。",
+      pe: "Express layout-shift prevention with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(3,1fr);gap:17px}.fx{height:54px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      id: "grid-debug-overlay",
+      zh: "网格调试覆盖层",
+      en: "Grid debug overlay",
+      dz: "网格调试覆盖层用于建立可解释的网格与密度层级。",
+      de: "Grid debug overlay creates an explainable grids & density hierarchy.",
+      pz: "使用令牌和约束表达网格调试覆盖层，在内容变化与主题切换时保持稳定。",
+      pe: "Express grid debug overlay with tokens and constraints so it stays stable when content or theme changes.",
+      demo: "grid",
+      css: ".fxgrid{grid-template-columns:repeat(4,1fr);gap:20px}.fx{height:72px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    }
+  ]
+};
