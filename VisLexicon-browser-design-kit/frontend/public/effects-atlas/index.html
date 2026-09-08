@@ -38,7 +38,17 @@
   .aur{position:relative;isolation:isolate}
   .aur::before{content:'';position:absolute;inset:-24%;z-index:0;pointer-events:none;background:radial-gradient(26% 32% at 20% 24%,rgba(189,215,23,.26),transparent 70%),radial-gradient(28% 34% at 76% 18%,rgba(117,196,212,.3),transparent 70%),radial-gradient(32% 38% at 62% 86%,rgba(254,44,85,.13),transparent 70%),radial-gradient(28% 32% at 8% 82%,rgba(54,92,49,.16),transparent 72%);animation:aurora 27s cubic-bezier(.4,0,.6,1) infinite}
   .aur>*{position:relative;z-index:1}
-  /* Host app owns the global navigation, language switcher, search, and theme controls. */\n  #dc-root header{display:none!important}\n</style>\n</helmet>
+  /* Host app owns the global navigation, language switcher, search, and theme controls. */
+  #dc-root header{display:none!important}
+  #dc-root.host-dark, #dc-root.host-dark [data-dc-tpl]{background:#171715!important;color:#f4f4ee!important}
+  #dc-root.host-dark nav{background:#1d1d1a!important;border-color:#383832!important}
+  #dc-root.host-dark main{background:#171715!important}
+  #dc-root.host-dark input{background:#24241f!important;color:#f4f4ee!important;border-color:#44443a!important}
+  #dc-root.host-dark [style*="background:#fbfbf8"], #dc-root.host-dark [style*="background: #fbfbf8"], #dc-root.host-dark [style*="background:#fff"], #dc-root.host-dark [style*="background: #fff"]{background:#20201c!important}
+  #dc-root.host-dark [style*="color:#23232f"], #dc-root.host-dark [style*="color: #23232f"]{color:#f4f4ee!important}
+  #dc-root.host-dark [style*="border-bottom:1px solid #23232f"]{border-color:#f4f4ee!important}
+</style>
+</helmet>
 <div style="display:grid;grid-template-rows:auto minmax(0,1fr);height:100vh;overflow:hidden;background:#f4f5f1">
 
   <header style="display:flex;align-items:center;gap:20px;height:66px;padding:0 26px;background:#fbfbf8;border-bottom:1px solid #ebece5">
@@ -340,6 +350,13 @@ class Component extends DCLogic {
   };
 
   componentDidMount() {
+    this._hostLocale = (event) => {
+      if (event.origin !== window.location.origin || event.data?.type !== 'vislexicon-host-state') return;
+      const lang = event.data.locale === 'en' ? 'en' : 'zh';
+      if (this.state.lang !== lang) this.setState({ lang });
+      document.getElementById('dc-root')?.classList.toggle('host-dark', event.data.theme === 'dark');
+    };
+    window.addEventListener('message', this._hostLocale);
     import('./fx/index.js').then(async (mod) => {
       const cats = await mod.loadCategories();
       this.setState({ mod, cats, catId: cats[0] && cats[0].id, lang: this.props.defaultLang || 'zh' }, this.sync);

@@ -8,10 +8,11 @@ import { useStore } from '../store.js'
  * the atlas surface so it cannot grow a second header.
  */
 export default function Atlas() {
-  const locale = useStore().locale === 'en' ? 'en' : 'zh'
+  const { locale, theme } = useStore()
   const frameRef = useRef(null)
   useEffect(() => {
-    const sendLocale = () => frameRef.current?.contentWindow?.postMessage({ type: 'vislexicon-locale', locale }, window.location.origin)
+    const resolvedTheme = theme === 'dark' || (theme === 'system' && window.matchMedia?.('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'
+    const sendLocale = () => frameRef.current?.contentWindow?.postMessage({ type: 'vislexicon-host-state', locale: locale === 'en' ? 'en' : 'zh', theme: resolvedTheme }, window.location.origin)
     sendLocale()
     frameRef.current?.addEventListener('load', sendLocale)
     return () => frameRef.current?.removeEventListener('load', sendLocale)
