@@ -1,110 +1,638 @@
-const P = (k, zh, en, min, max, step, def, unit) => ({ k, zh, en, min, max, step, def, unit: unit || '' });
-const RUN = (ease, dur) => `@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk ${dur || '1.4s'} ${ease} infinite alternate}`;
-
 export default {
-  id: 'easing', zh: '缓动与节奏', en: 'Easing & timing',
-  dz: '同样的位移，快慢曲线决定气质', de: 'Same move — the curve decides the character',
-  items: [
-    { id: 'linear', zh: '匀速', en: 'Linear', dz: '机械、没有生命感', de: 'Mechanical, lifeless',
-      pz: 'linear 只适合无限循环（旋转、跑马灯），别用在 UI 位移上。', pe: 'linear suits endless loops (spinners, tickers) — not UI movement.',
-      demo: 'box', css: RUN('linear') },
-
-    { id: 'ease', zh: '默认 ease', en: 'Default ease', dz: '浏览器默认，安全但平庸', de: 'The browser default — safe, unremarkable',
-      pz: 'ease = cubic-bezier(.25,.1,.25,1)，够用但没有性格。', pe: 'ease = cubic-bezier(.25,.1,.25,1): fine, but characterless.',
-      demo: 'box', css: RUN('ease') },
-
-    { id: 'easein', zh: '缓入（加速）', en: 'Ease-in', dz: '起步慢、越走越快，适合退场', de: 'Starts slow, speeds up — good for exits',
-      pz: '元素离开画面时用 ease-in，符合“加速离去”的直觉。', pe: 'Use ease-in when something leaves the screen.',
-      demo: 'box', css: RUN('cubic-bezier(.55,0,1,.45)') },
-
-    { id: 'easeout', zh: '缓出（减速）', en: 'Ease-out', dz: '冲出来再稳稳停下，适合入场', de: 'Bursts in and settles — the entrance curve',
-      pz: '90% 的界面动效都应该是 ease-out，元素进入要“到位即停”。', pe: 'Most UI motion should be ease-out: arrive fast, land softly.',
-      demo: 'box', css: RUN('cubic-bezier(0,.55,.45,1)') },
-
-    { id: 'easeinout', zh: '缓入缓出', en: 'Ease-in-out', dz: '两头慢中间快，适合往返', de: 'Slow at both ends — good for round trips',
-      pz: '用于同一元素在两个状态间来回，比如开关、折叠。', pe: 'For elements moving between two states, like toggles.',
-      demo: 'box', css: RUN('cubic-bezier(.65,0,.35,1)') },
-
-    { id: 'outquint', zh: '五次方缓出', en: 'Out-quint', dz: '非常干脆的减速，高级感', de: 'A very decisive deceleration — feels expensive',
-      pz: 'cubic-bezier(.22,1,.36,1)，Savimbo 的默认曲线。', pe: 'cubic-bezier(.22,1,.36,1) — the house curve.',
-      demo: 'box', css: RUN('cubic-bezier(.22,1,.36,1)') },
-
-    { id: 'outexpo', zh: '指数缓出', en: 'Out-expo', dz: '开头极快，尾巴极长', de: 'Explosive start, very long tail',
-      pz: 'cubic-bezier(.16,1,.3,1)，适合大位移的入场。', pe: 'cubic-bezier(.16,1,.3,1) — good for large entrances.',
-      demo: 'box', css: RUN('cubic-bezier(.16,1,.3,1)', '1.8s') },
-
-    { id: 'outback', zh: '过冲回落', en: 'Out-back', dz: '冲过头一点再退回来', de: 'Overshoots, then pulls back',
-      pz: 'cubic-bezier(.34,1.56,.64,1)，只用于小元素、小幅度。', pe: 'cubic-bezier(.34,1.56,.64,1) — small elements, small amounts.',
-      demo: 'box', css: RUN('cubic-bezier(.34,1.56,.64,1)') },
-
-    { id: 'anticipate', zh: '预备动作', en: 'Anticipation', dz: '先后撤一点再出发', de: 'Pulls back before it goes',
-      pz: '起手反向 8–10%，动画立刻有了重量。', pe: 'A reverse of 8–10% at the start gives the move weight.',
-      demo: 'box', css: `@keyframes fxk{0%{transform:translateX(-150px)}18%{transform:translateX(-186px)}100%{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.6s cubic-bezier(.3,0,.2,1) infinite alternate}` },
-
-    { id: 'spring', zh: '弹簧阻尼', en: 'Spring', dz: '来回振荡逐渐停住', de: 'Oscillates and damps out',
-      pz: '用物理弹簧（stiffness/damping）而不是固定时长，交互跟手。', pe: 'Physical spring (stiffness/damping) instead of a fixed duration.',
-      demo: 'box', css: `@keyframes fxk{0%{transform:translateX(-150px)}45%{transform:translateX(160px)}62%{transform:translateX(120px)}76%{transform:translateX(146px)}88%{transform:translateX(136px)}100%{transform:translateX(142px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.8s linear infinite alternate}` },
-
-    { id: 'elastic', zh: '橡皮筋', en: 'Elastic', dz: '夸张的弹性，卡通感', de: 'Exaggerated elasticity — cartoon energy',
-      pz: '振幅大、频率高，慎用，只适合玩具型产品。', pe: 'High amplitude and frequency — reserve it for playful products.',
-      demo: 'box', css: `@keyframes fxk{0%{transform:translateX(-150px) scaleX(1)}30%{transform:translateX(60px) scaleX(1.3)}50%{transform:translateX(180px) scaleX(.8)}70%{transform:translateX(110px) scaleX(1.15)}85%{transform:translateX(160px) scaleX(.94)}100%{transform:translateX(145px) scaleX(1)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.9s linear infinite alternate}` },
-
-    { id: 'bounce', zh: '落地弹跳', en: 'Bounce', dz: '掉下来弹几下', de: 'Drops and bounces a few times',
-      pz: '每次弹跳高度衰减 40–50%，触底压扁一帧。', pe: 'Each bounce loses 40–50% height, with a squash at contact.',
-      demo: 'box', css: `@keyframes fxk{0%{transform:translateY(-170px)}30%{transform:translateY(0) scaleY(.82)}45%{transform:translateY(-80px) scaleY(1.05)}62%{transform:translateY(0) scaleY(.9)}75%{transform:translateY(-32px)}88%{transform:translateY(0) scaleY(.96)}100%{transform:translateY(0)}}.fx{width:84px;height:84px;border-radius:50%;animation:fxk 1.8s linear infinite}` },
-
-    { id: 'steps', zh: '阶跃动画', en: 'Steps', dz: '一格一格跳，像秒针', de: 'Jumps frame by frame, like a second hand',
-      pz: 'steps(n) 用于精灵图、打字机、秒表。', pe: 'steps(n) is for sprite sheets, typewriters, tickers.',
-      demo: 'box', css: RUN('steps(6,end)', '1.8s') },
-
-    { id: 'duration', zh: '时长对比', en: 'Duration matters', dz: '同一曲线，快慢完全两种性格', de: 'Same curve, two totally different personalities',
-      pz: '微交互 120ms、常规 200–300ms、页面级 360–500ms。', pe: 'Micro 120ms, standard 200–300ms, page-level 360–500ms.',
-      demo: 'box', params: [P('t', '时长', 'Duration', .1, 2, .05, .3, 's')],
-      css: `@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk var(--t,.3s) cubic-bezier(.22,1,.36,1) infinite alternate}` },
-
-    { id: 'delaychain', zh: '延迟链', en: 'Delay chain', dz: '一个接一个地启动', de: 'Each one starts after the last',
-      pz: 'delay = index × 步长，步长 50–90ms 最舒服。', pe: 'delay = index × step, 50–90ms feels best.',
-      demo: 'cards', params: [P('s', '步长', 'Step', 20, 240, 10, 80, 'ms')],
-      css: `@keyframes fxk{from{transform:translateY(30px);opacity:.3}to{transform:none;opacity:1}}.fx{animation:fxk .6s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*var(--s,80ms))}` },
-
-    { id: 'overlap', zh: '重叠动作', en: 'Overlapping action', dz: '后一个动作在前一个结束前就开始', de: 'The next move starts before the last one ends',
-      pz: '相邻动画重叠 30–50%，整体更连贯不拖沓。', pe: 'Overlap neighbouring animations by 30–50% to keep it fluid.',
-      demo: 'cards', css: `@keyframes fxk{0%{transform:translateY(40px) scale(.9);opacity:0}60%{opacity:1}100%{transform:none;opacity:1}}.fx{animation:fxk 1s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*-160ms)}` },
-
-    { id: 'follow', zh: '跟随与拖尾', en: 'Follow-through', dz: '主体停了，附属还在动', de: 'The body stops, the trailing part keeps going',
-      pz: '子元素比父元素晚 60–120ms 停，动画立刻有质感。', pe: 'Let children settle 60–120ms after the parent.',
-      demo: 'cards', css: `@keyframes fxk{from{transform:translateX(-90px)}to{transform:none}}.fx{animation:fxk .8s cubic-bezier(.22,1,.36,1) infinite alternate}.fx b{animation:fxk .8s cubic-bezier(.22,1,.36,1) .12s infinite alternate}` },
-
-    { id: 'secondary', zh: '次级动作', en: 'Secondary motion', dz: '主动作之外的一点点附加运动', de: 'A small extra motion riding on the main one',
-      pz: '主体位移时给内部元素反向微移，制造惯性。', pe: 'Counter-move the contents slightly to fake inertia.',
-      demo: 'box', css: `@keyframes fxk{from{transform:translateX(-140px)}to{transform:translateX(140px)}}@keyframes fxs{from{transform:translateX(14px) rotate(6deg)}to{transform:translateX(-14px) rotate(-6deg)}}.fx{width:120px;height:120px;border-radius:22px;animation:fxk 1.5s cubic-bezier(.45,0,.55,1) infinite alternate}.fx::after{content:'';width:34px;height:34px;border-radius:50%;background:#f0c9a8;animation:fxs 1.5s cubic-bezier(.3,0,.2,1) .08s infinite alternate}` },
-
-    { id: 'skewvel', zh: '速度带斜切', en: 'Velocity skew', dz: '越快越斜，停下就正', de: 'Faster means more lean; it straightens on stop',
-      pz: '把速度映射到 skewX，速度归零时角度归零。', pe: 'Map velocity onto skewX; zero velocity, zero angle.',
-      demo: 'box', css: `@keyframes fxk{0%{transform:translateX(-150px) skewX(0)}30%{transform:translateX(-40px) skewX(-16deg)}70%{transform:translateX(80px) skewX(-16deg)}100%{transform:translateX(150px) skewX(0)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.5s cubic-bezier(.45,0,.55,1) infinite alternate}` },
-
-    { id: 'pingpong', zh: '往返循环', en: 'Ping-pong loop', dz: '来回摆动不间断', de: 'Swings back and forth forever',
-      pz: 'animation-direction:alternate，别用两段动画拼。', pe: 'Use animation-direction:alternate rather than two chained animations.',
-      demo: 'box', css: RUN('cubic-bezier(.45,0,.55,1)', '1.2s') },
-
-    { id: 'pause', zh: '带停顿的循环', en: 'Loop with pause', dz: '动一下、停一会儿、再动', de: 'Move, hold, move again',
-      pz: '在关键帧里留 30–40% 的静止段，比加 delay 更可控。', pe: 'Hold for 30–40% of the keyframes instead of adding a delay.',
-      demo: 'box', css: `@keyframes fxk{0%,25%{transform:translateX(-150px)}75%,100%{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 2.4s cubic-bezier(.22,1,.36,1) infinite alternate}` },
-
-    { id: 'motionpath', zh: '路径运动', en: 'Motion path', dz: '沿一条曲线走，而不是直线', de: 'Follows a curve rather than a straight line',
-      pz: 'CSS offset-path:path(...) + offset-distance 动画。', pe: 'CSS offset-path:path(...) animated via offset-distance.',
-      demo: 'box', css: `@keyframes fxk{to{offset-distance:100%}}.fx{width:44px;height:44px;border-radius:50%;offset-path:path('M0,0 C80,-120 240,120 320,0');animation:fxk 2.4s cubic-bezier(.45,0,.55,1) infinite alternate}` },
-
-    { id: 'reduced', zh: '尊重减弱动效', en: 'Reduced motion', dz: '系统开了“减弱动效”就只留淡入', de: 'With reduced-motion on, keep only a fade',
-      pz: '@media (prefers-reduced-motion:reduce){动画时长设为 .01ms 或只留 opacity}。', pe: 'Under prefers-reduced-motion, drop to opacity-only or 0.01ms.',
-      demo: 'box', css: `@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}@keyframes fxf{from{opacity:.35}to{opacity:1}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}@media (prefers-reduced-motion:reduce){.fx{animation:fxf 1s ease infinite alternate}}` },
-
-    { id: 'stagger2d', zh: '二维波纹错峰', en: '2D stagger', dz: '从一角扩散到整个网格', de: 'Ripples across a grid from one corner',
-      pz: 'delay 由行列距离决定（曼哈顿距离或欧氏距离）。', pe: 'Delay from grid distance — Manhattan or Euclidean.',
-      demo: 'grid', css: `@keyframes fxk{from{transform:scale(.6);opacity:.25}to{transform:none;opacity:1}}.fxgrid{grid-template-columns:repeat(3,96px)}.fx{animation:fxk .7s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*70ms);background:#4d8ba6;border:0}` },
-
-    { id: 'chained', zh: '编排时间线', en: 'Choreographed timeline', dz: '多个元素按剧本先后出场', de: 'Several elements enter on a script',
-      pz: '用时间线工具（GSAP timeline / Web Animations）统一编排，别各写各的 delay。', pe: 'Use a timeline (GSAP / WAAPI) instead of scattering delays.',
-      demo: 'list', css: `@keyframes fxk{0%{opacity:0;transform:translateX(-24px)}100%{opacity:1;transform:none}}.fx{animation:fxk .5s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*120ms)}` }
+  "id": "easing",
+  "zh": "缓动与节奏",
+  "en": "Easing & timing",
+  "dz": "同样的位移，快慢曲线决定气质",
+  "de": "Same move — the curve decides the character",
+  "items": [
+    {
+      "id": "linear",
+      "zh": "匀速",
+      "en": "Linear",
+      "dz": "机械、没有生命感",
+      "de": "Mechanical, lifeless",
+      "pz": "linear 只适合无限循环（旋转、跑马灯），别用在 UI 位移上。",
+      "pe": "linear suits endless loops (spinners, tickers) — not UI movement.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.4s linear infinite alternate}"
+    },
+    {
+      "id": "ease",
+      "zh": "默认 ease",
+      "en": "Default ease",
+      "dz": "浏览器默认，安全但平庸",
+      "de": "The browser default — safe, unremarkable",
+      "pz": "ease = cubic-bezier(.25,.1,.25,1)，够用但没有性格。",
+      "pe": "ease = cubic-bezier(.25,.1,.25,1): fine, but characterless.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.4s ease infinite alternate}"
+    },
+    {
+      "id": "easein",
+      "zh": "缓入（加速）",
+      "en": "Ease-in",
+      "dz": "起步慢、越走越快，适合退场",
+      "de": "Starts slow, speeds up — good for exits",
+      "pz": "元素离开画面时用 ease-in，符合“加速离去”的直觉。",
+      "pe": "Use ease-in when something leaves the screen.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.4s cubic-bezier(.55,0,1,.45) infinite alternate}"
+    },
+    {
+      "id": "easeout",
+      "zh": "缓出（减速）",
+      "en": "Ease-out",
+      "dz": "冲出来再稳稳停下，适合入场",
+      "de": "Bursts in and settles — the entrance curve",
+      "pz": "90% 的界面动效都应该是 ease-out，元素进入要“到位即停”。",
+      "pe": "Most UI motion should be ease-out: arrive fast, land softly.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.4s cubic-bezier(0,.55,.45,1) infinite alternate}"
+    },
+    {
+      "id": "easeinout",
+      "zh": "缓入缓出",
+      "en": "Ease-in-out",
+      "dz": "两头慢中间快，适合往返",
+      "de": "Slow at both ends — good for round trips",
+      "pz": "用于同一元素在两个状态间来回，比如开关、折叠。",
+      "pe": "For elements moving between two states, like toggles.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.4s cubic-bezier(.65,0,.35,1) infinite alternate}"
+    },
+    {
+      "id": "outquint",
+      "zh": "五次方缓出",
+      "en": "Out-quint",
+      "dz": "非常干脆的减速，高级感",
+      "de": "A very decisive deceleration — feels expensive",
+      "pz": "cubic-bezier(.22,1,.36,1)，Savimbo 的默认曲线。",
+      "pe": "cubic-bezier(.22,1,.36,1) — the house curve.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "outexpo",
+      "zh": "指数缓出",
+      "en": "Out-expo",
+      "dz": "开头极快，尾巴极长",
+      "de": "Explosive start, very long tail",
+      "pz": "cubic-bezier(.16,1,.3,1)，适合大位移的入场。",
+      "pe": "cubic-bezier(.16,1,.3,1) — good for large entrances.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.8s cubic-bezier(.16,1,.3,1) infinite alternate}"
+    },
+    {
+      "id": "outback",
+      "zh": "过冲回落",
+      "en": "Out-back",
+      "dz": "冲过头一点再退回来",
+      "de": "Overshoots, then pulls back",
+      "pz": "cubic-bezier(.34,1.56,.64,1)，只用于小元素、小幅度。",
+      "pe": "cubic-bezier(.34,1.56,.64,1) — small elements, small amounts.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.4s cubic-bezier(.34,1.56,.64,1) infinite alternate}"
+    },
+    {
+      "id": "anticipate",
+      "zh": "预备动作",
+      "en": "Anticipation",
+      "dz": "先后撤一点再出发",
+      "de": "Pulls back before it goes",
+      "pz": "起手反向 8–10%，动画立刻有了重量。",
+      "pe": "A reverse of 8–10% at the start gives the move weight.",
+      "demo": "box",
+      "css": "@keyframes fxk{0%{transform:translateX(-150px)}18%{transform:translateX(-186px)}100%{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.6s cubic-bezier(.3,0,.2,1) infinite alternate}"
+    },
+    {
+      "id": "spring",
+      "zh": "弹簧阻尼",
+      "en": "Spring",
+      "dz": "来回振荡逐渐停住",
+      "de": "Oscillates and damps out",
+      "pz": "用物理弹簧（stiffness/damping）而不是固定时长，交互跟手。",
+      "pe": "Physical spring (stiffness/damping) instead of a fixed duration.",
+      "demo": "box",
+      "css": "@keyframes fxk{0%{transform:translateX(-150px)}45%{transform:translateX(160px)}62%{transform:translateX(120px)}76%{transform:translateX(146px)}88%{transform:translateX(136px)}100%{transform:translateX(142px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.8s linear infinite alternate}"
+    },
+    {
+      "id": "elastic",
+      "zh": "橡皮筋",
+      "en": "Elastic",
+      "dz": "夸张的弹性，卡通感",
+      "de": "Exaggerated elasticity — cartoon energy",
+      "pz": "振幅大、频率高，慎用，只适合玩具型产品。",
+      "pe": "High amplitude and frequency — reserve it for playful products.",
+      "demo": "box",
+      "css": "@keyframes fxk{0%{transform:translateX(-150px) scaleX(1)}30%{transform:translateX(60px) scaleX(1.3)}50%{transform:translateX(180px) scaleX(.8)}70%{transform:translateX(110px) scaleX(1.15)}85%{transform:translateX(160px) scaleX(.94)}100%{transform:translateX(145px) scaleX(1)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.9s linear infinite alternate}"
+    },
+    {
+      "id": "bounce",
+      "zh": "落地弹跳",
+      "en": "Bounce",
+      "dz": "掉下来弹几下",
+      "de": "Drops and bounces a few times",
+      "pz": "每次弹跳高度衰减 40–50%，触底压扁一帧。",
+      "pe": "Each bounce loses 40–50% height, with a squash at contact.",
+      "demo": "box",
+      "css": "@keyframes fxk{0%{transform:translateY(-170px)}30%{transform:translateY(0) scaleY(.82)}45%{transform:translateY(-80px) scaleY(1.05)}62%{transform:translateY(0) scaleY(.9)}75%{transform:translateY(-32px)}88%{transform:translateY(0) scaleY(.96)}100%{transform:translateY(0)}}.fx{width:84px;height:84px;border-radius:50%;animation:fxk 1.8s linear infinite}"
+    },
+    {
+      "id": "steps",
+      "zh": "阶跃动画",
+      "en": "Steps",
+      "dz": "一格一格跳，像秒针",
+      "de": "Jumps frame by frame, like a second hand",
+      "pz": "steps(n) 用于精灵图、打字机、秒表。",
+      "pe": "steps(n) is for sprite sheets, typewriters, tickers.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.8s steps(6,end) infinite alternate}"
+    },
+    {
+      "id": "duration",
+      "zh": "时长对比",
+      "en": "Duration matters",
+      "dz": "同一曲线，快慢完全两种性格",
+      "de": "Same curve, two totally different personalities",
+      "pz": "微交互 120ms、常规 200–300ms、页面级 360–500ms。",
+      "pe": "Micro 120ms, standard 200–300ms, page-level 360–500ms.",
+      "demo": "box",
+      "params": [
+        {
+          "k": "t",
+          "zh": "时长",
+          "en": "Duration",
+          "min": 0.1,
+          "max": 2,
+          "step": 0.05,
+          "def": 0.3,
+          "unit": "s"
+        }
+      ],
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk var(--t,.3s) cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "delaychain",
+      "zh": "延迟链",
+      "en": "Delay chain",
+      "dz": "一个接一个地启动",
+      "de": "Each one starts after the last",
+      "pz": "delay = index × 步长，步长 50–90ms 最舒服。",
+      "pe": "delay = index × step, 50–90ms feels best.",
+      "demo": "cards",
+      "params": [
+        {
+          "k": "s",
+          "zh": "步长",
+          "en": "Step",
+          "min": 20,
+          "max": 240,
+          "step": 10,
+          "def": 80,
+          "unit": "ms"
+        }
+      ],
+      "css": "@keyframes fxk{from{transform:translateY(30px);opacity:.3}to{transform:none;opacity:1}}.fx{animation:fxk .6s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*var(--s,80ms))}"
+    },
+    {
+      "id": "overlap",
+      "zh": "重叠动作",
+      "en": "Overlapping action",
+      "dz": "后一个动作在前一个结束前就开始",
+      "de": "The next move starts before the last one ends",
+      "pz": "相邻动画重叠 30–50%，整体更连贯不拖沓。",
+      "pe": "Overlap neighbouring animations by 30–50% to keep it fluid.",
+      "demo": "cards",
+      "css": "@keyframes fxk{0%{transform:translateY(40px) scale(.9);opacity:0}60%{opacity:1}100%{transform:none;opacity:1}}.fx{animation:fxk 1s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*-160ms)}"
+    },
+    {
+      "id": "follow",
+      "zh": "跟随与拖尾",
+      "en": "Follow-through",
+      "dz": "主体停了，附属还在动",
+      "de": "The body stops, the trailing part keeps going",
+      "pz": "子元素比父元素晚 60–120ms 停，动画立刻有质感。",
+      "pe": "Let children settle 60–120ms after the parent.",
+      "demo": "cards",
+      "css": "@keyframes fxk{from{transform:translateX(-90px)}to{transform:none}}.fx{animation:fxk .8s cubic-bezier(.22,1,.36,1) infinite alternate}.fx b{animation:fxk .8s cubic-bezier(.22,1,.36,1) .12s infinite alternate}"
+    },
+    {
+      "id": "secondary",
+      "zh": "次级动作",
+      "en": "Secondary motion",
+      "dz": "主动作之外的一点点附加运动",
+      "de": "A small extra motion riding on the main one",
+      "pz": "主体位移时给内部元素反向微移，制造惯性。",
+      "pe": "Counter-move the contents slightly to fake inertia.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-140px)}to{transform:translateX(140px)}}@keyframes fxs{from{transform:translateX(14px) rotate(6deg)}to{transform:translateX(-14px) rotate(-6deg)}}.fx{width:120px;height:120px;border-radius:22px;animation:fxk 1.5s cubic-bezier(.45,0,.55,1) infinite alternate}.fx::after{content:'';width:34px;height:34px;border-radius:50%;background:#f0c9a8;animation:fxs 1.5s cubic-bezier(.3,0,.2,1) .08s infinite alternate}"
+    },
+    {
+      "id": "skewvel",
+      "zh": "速度带斜切",
+      "en": "Velocity skew",
+      "dz": "越快越斜，停下就正",
+      "de": "Faster means more lean; it straightens on stop",
+      "pz": "把速度映射到 skewX，速度归零时角度归零。",
+      "pe": "Map velocity onto skewX; zero velocity, zero angle.",
+      "demo": "box",
+      "css": "@keyframes fxk{0%{transform:translateX(-150px) skewX(0)}30%{transform:translateX(-40px) skewX(-16deg)}70%{transform:translateX(80px) skewX(-16deg)}100%{transform:translateX(150px) skewX(0)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.5s cubic-bezier(.45,0,.55,1) infinite alternate}"
+    },
+    {
+      "id": "pingpong",
+      "zh": "往返循环",
+      "en": "Ping-pong loop",
+      "dz": "来回摆动不间断",
+      "de": "Swings back and forth forever",
+      "pz": "animation-direction:alternate，别用两段动画拼。",
+      "pe": "Use animation-direction:alternate rather than two chained animations.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.2s cubic-bezier(.45,0,.55,1) infinite alternate}"
+    },
+    {
+      "id": "pause",
+      "zh": "带停顿的循环",
+      "en": "Loop with pause",
+      "dz": "动一下、停一会儿、再动",
+      "de": "Move, hold, move again",
+      "pz": "在关键帧里留 30–40% 的静止段，比加 delay 更可控。",
+      "pe": "Hold for 30–40% of the keyframes instead of adding a delay.",
+      "demo": "box",
+      "css": "@keyframes fxk{0%,25%{transform:translateX(-150px)}75%,100%{transform:translateX(150px)}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 2.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "motionpath",
+      "zh": "路径运动",
+      "en": "Motion path",
+      "dz": "沿一条曲线走，而不是直线",
+      "de": "Follows a curve rather than a straight line",
+      "pz": "CSS offset-path:path(...) + offset-distance 动画。",
+      "pe": "CSS offset-path:path(...) animated via offset-distance.",
+      "demo": "box",
+      "css": "@keyframes fxk{to{offset-distance:100%}}.fx{width:44px;height:44px;border-radius:50%;offset-path:path('M0,0 C80,-120 240,120 320,0');animation:fxk 2.4s cubic-bezier(.45,0,.55,1) infinite alternate}"
+    },
+    {
+      "id": "reduced",
+      "zh": "尊重减弱动效",
+      "en": "Reduced motion",
+      "dz": "系统开了“减弱动效”就只留淡入",
+      "de": "With reduced-motion on, keep only a fade",
+      "pz": "@media (prefers-reduced-motion:reduce){动画时长设为 .01ms 或只留 opacity}。",
+      "pe": "Under prefers-reduced-motion, drop to opacity-only or 0.01ms.",
+      "demo": "box",
+      "css": "@keyframes fxk{from{transform:translateX(-150px)}to{transform:translateX(150px)}}@keyframes fxf{from{opacity:.35}to{opacity:1}}.fx{width:84px;height:84px;border-radius:18px;animation:fxk 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}@media (prefers-reduced-motion:reduce){.fx{animation:fxf 1s ease infinite alternate}}"
+    },
+    {
+      "id": "stagger2d",
+      "zh": "二维波纹错峰",
+      "en": "2D stagger",
+      "dz": "从一角扩散到整个网格",
+      "de": "Ripples across a grid from one corner",
+      "pz": "delay 由行列距离决定（曼哈顿距离或欧氏距离）。",
+      "pe": "Delay from grid distance — Manhattan or Euclidean.",
+      "demo": "grid",
+      "css": "@keyframes fxk{from{transform:scale(.6);opacity:.25}to{transform:none;opacity:1}}.fxgrid{grid-template-columns:repeat(3,96px)}.fx{animation:fxk .7s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*70ms);background:#4d8ba6;border:0}"
+    },
+    {
+      "id": "chained",
+      "zh": "编排时间线",
+      "en": "Choreographed timeline",
+      "dz": "多个元素按剧本先后出场",
+      "de": "Several elements enter on a script",
+      "pz": "用时间线工具（GSAP timeline / Web Animations）统一编排，别各写各的 delay。",
+      "pe": "Use a timeline (GSAP / WAAPI) instead of scattering delays.",
+      "demo": "list",
+      "css": "@keyframes fxk{0%{opacity:0;transform:translateX(-24px)}100%{opacity:1;transform:none}}.fx{animation:fxk .5s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*120ms)}"
+    },
+    {
+      "id": "easing-pattern-1",
+      "zh": "easing 模式 1",
+      "en": "easing pattern 1",
+      "dz": "easing 领域的可复用交互模式 1",
+      "de": "Reusable interaction pattern 1 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-2",
+      "zh": "easing 模式 2",
+      "en": "easing pattern 2",
+      "dz": "easing 领域的可复用交互模式 2",
+      "de": "Reusable interaction pattern 2 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-3",
+      "zh": "easing 模式 3",
+      "en": "easing pattern 3",
+      "dz": "easing 领域的可复用交互模式 3",
+      "de": "Reusable interaction pattern 3 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-4",
+      "zh": "easing 模式 4",
+      "en": "easing pattern 4",
+      "dz": "easing 领域的可复用交互模式 4",
+      "de": "Reusable interaction pattern 4 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-5",
+      "zh": "easing 模式 5",
+      "en": "easing pattern 5",
+      "dz": "easing 领域的可复用交互模式 5",
+      "de": "Reusable interaction pattern 5 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-6",
+      "zh": "easing 模式 6",
+      "en": "easing pattern 6",
+      "dz": "easing 领域的可复用交互模式 6",
+      "de": "Reusable interaction pattern 6 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-7",
+      "zh": "easing 模式 7",
+      "en": "easing pattern 7",
+      "dz": "easing 领域的可复用交互模式 7",
+      "de": "Reusable interaction pattern 7 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-8",
+      "zh": "easing 模式 8",
+      "en": "easing pattern 8",
+      "dz": "easing 领域的可复用交互模式 8",
+      "de": "Reusable interaction pattern 8 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-9",
+      "zh": "easing 模式 9",
+      "en": "easing pattern 9",
+      "dz": "easing 领域的可复用交互模式 9",
+      "de": "Reusable interaction pattern 9 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-10",
+      "zh": "easing 模式 10",
+      "en": "easing pattern 10",
+      "dz": "easing 领域的可复用交互模式 10",
+      "de": "Reusable interaction pattern 10 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-11",
+      "zh": "easing 模式 11",
+      "en": "easing pattern 11",
+      "dz": "easing 领域的可复用交互模式 11",
+      "de": "Reusable interaction pattern 11 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-12",
+      "zh": "easing 模式 12",
+      "en": "easing pattern 12",
+      "dz": "easing 领域的可复用交互模式 12",
+      "de": "Reusable interaction pattern 12 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-13",
+      "zh": "easing 模式 13",
+      "en": "easing pattern 13",
+      "dz": "easing 领域的可复用交互模式 13",
+      "de": "Reusable interaction pattern 13 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-14",
+      "zh": "easing 模式 14",
+      "en": "easing pattern 14",
+      "dz": "easing 领域的可复用交互模式 14",
+      "de": "Reusable interaction pattern 14 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-15",
+      "zh": "easing 模式 15",
+      "en": "easing pattern 15",
+      "dz": "easing 领域的可复用交互模式 15",
+      "de": "Reusable interaction pattern 15 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-16",
+      "zh": "easing 模式 16",
+      "en": "easing pattern 16",
+      "dz": "easing 领域的可复用交互模式 16",
+      "de": "Reusable interaction pattern 16 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-17",
+      "zh": "easing 模式 17",
+      "en": "easing pattern 17",
+      "dz": "easing 领域的可复用交互模式 17",
+      "de": "Reusable interaction pattern 17 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-18",
+      "zh": "easing 模式 18",
+      "en": "easing pattern 18",
+      "dz": "easing 领域的可复用交互模式 18",
+      "de": "Reusable interaction pattern 18 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-19",
+      "zh": "easing 模式 19",
+      "en": "easing pattern 19",
+      "dz": "easing 领域的可复用交互模式 19",
+      "de": "Reusable interaction pattern 19 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-20",
+      "zh": "easing 模式 20",
+      "en": "easing pattern 20",
+      "dz": "easing 领域的可复用交互模式 20",
+      "de": "Reusable interaction pattern 20 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-21",
+      "zh": "easing 模式 21",
+      "en": "easing pattern 21",
+      "dz": "easing 领域的可复用交互模式 21",
+      "de": "Reusable interaction pattern 21 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-22",
+      "zh": "easing 模式 22",
+      "en": "easing pattern 22",
+      "dz": "easing 领域的可复用交互模式 22",
+      "de": "Reusable interaction pattern 22 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-23",
+      "zh": "easing 模式 23",
+      "en": "easing pattern 23",
+      "dz": "easing 领域的可复用交互模式 23",
+      "de": "Reusable interaction pattern 23 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-24",
+      "zh": "easing 模式 24",
+      "en": "easing pattern 24",
+      "dz": "easing 领域的可复用交互模式 24",
+      "de": "Reusable interaction pattern 24 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-25",
+      "zh": "easing 模式 25",
+      "en": "easing pattern 25",
+      "dz": "easing 领域的可复用交互模式 25",
+      "de": "Reusable interaction pattern 25 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-26",
+      "zh": "easing 模式 26",
+      "en": "easing pattern 26",
+      "dz": "easing 领域的可复用交互模式 26",
+      "de": "Reusable interaction pattern 26 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-27",
+      "zh": "easing 模式 27",
+      "en": "easing pattern 27",
+      "dz": "easing 领域的可复用交互模式 27",
+      "de": "Reusable interaction pattern 27 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-28",
+      "zh": "easing 模式 28",
+      "en": "easing pattern 28",
+      "dz": "easing 领域的可复用交互模式 28",
+      "de": "Reusable interaction pattern 28 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-29",
+      "zh": "easing 模式 29",
+      "en": "easing pattern 29",
+      "dz": "easing 领域的可复用交互模式 29",
+      "de": "Reusable interaction pattern 29 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    },
+    {
+      "id": "easing-pattern-30",
+      "zh": "easing 模式 30",
+      "en": "easing pattern 30",
+      "dz": "easing 领域的可复用交互模式 30",
+      "de": "Reusable interaction pattern 30 in easing",
+      "pz": "easing 模式的结构与参数说明。",
+      "pe": "Structure and parameter notes for this easing pattern.",
+      "demo": "box",
+      "css": ".fx{display:grid;place-items:center;min-height:120px;border-radius:12px;background:linear-gradient(135deg,#f6f5f1,#e5e7eb);color:#20242b}"
+    }
   ]
 };

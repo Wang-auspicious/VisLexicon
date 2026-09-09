@@ -1,108 +1,615 @@
-const E = 'cubic-bezier(.22,1,.36,1)';
-const LOOP = (dur) => `${dur} ${E} infinite alternate`;
-
+// Curated foundational patterns
 export default {
-  id: 'transition', zh: '页面与视图转场', en: 'Page & view transitions',
-  dz: '从一屏到另一屏之间发生了什么', de: 'What happens between one screen and the next',
-  items: [
-    { id: 'crossfade', zh: '交叉淡化', en: 'Crossfade', dz: 'A 淡出的同时 B 淡入', de: 'A fades out while B fades in',
-      pz: '用 View Transitions API 的默认过渡即可，200–300ms。', pe: 'The default View Transitions cross-fade, 200–300ms.',
-      demo: 'panel', css: `@keyframes fxb{from{opacity:0}to{opacity:1}}.fxb{animation:fxb ${LOOP('1.4s')}}` },
-
-    { id: 'slideover', zh: '覆盖滑入', en: 'Slide over', dz: 'B 从右侧盖在 A 上面', de: 'B slides in on top of A',
-      pz: '新页 translateX(100%)→0，旧页不动，加一层暗色遮罩。', pe: 'New view translateX(100%)→0 over a static old view plus a scrim.',
-      demo: 'panel', css: `@keyframes fxb{from{transform:translateX(100%)}to{transform:none}}.fxb{box-shadow:-20px 0 40px rgba(0,0,0,.2);animation:fxb ${LOOP('1.4s')}}` },
-
-    { id: 'push', zh: '推挤转场', en: 'Push', dz: 'B 把 A 推出屏幕', de: 'B pushes A off screen',
-      pz: '两页同速同向位移 100%，像胶片一样连着走。', pe: 'Both views translate 100% at the same speed, like film frames.',
-      demo: 'panel', css: `@keyframes fxa{from{transform:none}to{transform:translateX(-100%)}}@keyframes fxb{from{transform:translateX(100%)}to{transform:none}}.fxa{animation:fxa ${LOOP('1.4s')}}.fxb{animation:fxb ${LOOP('1.4s')}}` },
-
-    { id: 'iospush', zh: 'iOS 层级推进', en: 'iOS stack push', dz: '旧页轻微后退，新页盖上', de: 'The old view recedes as the new one covers it',
-      pz: '旧页 translateX(-30%) + 变暗，新页 translateX(100%)→0。', pe: 'Old view translateX(-30%) and dims; new view slides fully in.',
-      demo: 'panel', css: `@keyframes fxa{from{transform:none;filter:none}to{transform:translateX(-28%);filter:brightness(.72)}}@keyframes fxb{from{transform:translateX(100%)}to{transform:none}}.fxa{animation:fxa ${LOOP('1.5s')}}.fxb{animation:fxb ${LOOP('1.5s')}}` },
-
-    { id: 'cover', zh: '揭幕转场', en: 'Reveal (uncover)', dz: 'A 滑走，露出下面的 B', de: 'A slides away to uncover B',
-      pz: 'B 固定在底层，A 位移出画，注意 z-index。', pe: 'B sits underneath; A translates out. Mind the z-index.',
-      demo: 'panel', css: `@keyframes fxa{from{transform:none}to{transform:translateY(-100%)}}.fxa{z-index:2;animation:fxa ${LOOP('1.4s')}}` },
-
-    { id: 'shared', zh: '共享元素转场', en: 'Shared element', dz: '同一个元素跨页连续移动', de: 'One element carries across both views',
-      pz: 'View Transitions 里给两侧同名 view-transition-name。', pe: 'Give both sides the same view-transition-name.',
-      demo: 'panel', css: `@keyframes fxs{0%{left:24px;top:24px;width:80px;height:60px;border-radius:8px}100%{left:0;top:0;width:100%;height:150px;border-radius:0}}.fxa::after{content:'';position:absolute;background:#e8879c;animation:fxs ${LOOP('1.6s')}}` },
-
-    { id: 'zoomin', zh: '放大进入详情', en: 'Zoom into card', dz: '点哪张卡就从哪张放大进去', de: 'The tapped card expands into the detail view',
-      pz: '以点击点为 transform-origin 做 scale + 淡入。', pe: 'scale and fade with transform-origin at the click point.',
-      demo: 'panel', css: `@keyframes fxb{from{transform:scale(.25);opacity:0;border-radius:24px}to{transform:none;opacity:1;border-radius:0}}.fxb{transform-origin:22% 78%;animation:fxb ${LOOP('1.5s')}}` },
-
-    { id: 'irisview', zh: '圆形扩散转场', en: 'Circle expand', dz: '从点击处圆形扩开新页', de: 'The new view opens as a circle from the tap',
-      pz: 'clip-path:circle(0 at 点击点)→circle(150%)。', pe: 'clip-path circle(0 at click) → circle(150%).',
-      demo: 'panel', css: `@keyframes fxb{from{clip-path:circle(0 at 78% 82%)}to{clip-path:circle(150% at 78% 82%)}}.fxb{animation:fxb ${LOOP('1.5s')}}` },
-
-    { id: 'curtainsplit', zh: '对开幕布', en: 'Curtain split', dz: '画面从中间分开露出新页', de: 'The old view parts down the middle',
-      pz: 'A 用两半 clip-path 向两侧移出。', pe: 'Clip A into two halves and move them apart.',
-      demo: 'panel', css: `@keyframes fxa{from{clip-path:inset(0 0 0 0)}to{clip-path:inset(0 50% 0 50%);opacity:.4}}.fxa{z-index:2;animation:fxa ${LOOP('1.4s')}}` },
-
-    { id: 'wipe', zh: '斜线擦除', en: 'Diagonal wipe', dz: '一道斜线扫过换页', de: 'A diagonal edge sweeps the page over',
-      pz: '用带角度的 clip-path polygon 做扫除。', pe: 'An angled clip-path polygon does the wipe.',
-      demo: 'panel', css: `@keyframes fxb{from{clip-path:polygon(0 0,0 0,-30% 100%,-30% 100%)}to{clip-path:polygon(0 0,130% 0,100% 100%,0 100%)}}.fxb{animation:fxb ${LOOP('1.4s')}}` },
-
-    { id: 'flipview', zh: '整页翻转', en: 'Page flip', dz: '像卡片一样翻到背面', de: 'The whole view flips like a card',
-      pz: '容器 perspective，A/B 分别 rotateY 0/180 并隐藏背面。', pe: 'Perspective on the wrapper; A and B at rotateY 0/180 with hidden backfaces.',
-      demo: 'panel', css: `@keyframes fxs{from{transform:rotateY(0)}to{transform:rotateY(180deg)}}.fxstack{perspective:1200px}.fxa,.fxb{backface-visibility:hidden}.fxb{transform:rotateY(180deg)}.fxstack{animation:fxs ${LOOP('1.8s')};transform-style:preserve-3d}` },
-
-    { id: 'modal', zh: '弹窗浮起', en: 'Dialog scale-fade', dz: '弹窗从 96% 放大浮现', de: 'The dialog scales up from 96%',
-      pz: '遮罩淡入 + 弹窗 scale(.96)→1，退出更快。', pe: 'Scrim fades in; dialog scale(.96)→1. Exit faster than enter.',
-      demo: 'panel', css: `@keyframes fxb{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}.fxb{inset:40px;border-radius:16px;box-shadow:0 30px 70px rgba(0,0,0,.35);animation:fxb ${LOOP('1.2s')}}.fxa{background:#e9eaee}` },
-
-    { id: 'bottomsheet', zh: '底部弹层', en: 'Bottom sheet', dz: '从底部拉起的半屏面板', de: 'A half-height panel pulled up from the bottom',
-      pz: 'translateY(100%)→0，支持拖拽回落与惯性。', pe: 'translateY(100%)→0, with drag-to-dismiss and momentum.',
-      demo: 'panel', css: `@keyframes fxb{from{transform:translateY(100%)}to{transform:translateY(35%)}}.fxb{border-radius:20px 20px 0 0;animation:fxb ${LOOP('1.4s')}}` },
-
-    { id: 'tabslide', zh: '标签下划线滑动', en: 'Tab indicator slide', dz: '下划线滑到新标签', de: 'The indicator slides to the new tab',
-      pz: '一个共享指示条，用 transform 移动到目标 tab 的位置和宽度。', pe: 'One shared bar, moved and resized with transform to the active tab.',
-      demo: 'panel', css: `@keyframes fxs{from{transform:translateX(0);width:110px}to{transform:translateX(150px);width:150px}}.fxa::after{content:'';position:absolute;bottom:0;left:40px;height:4px;background:#e8879c;border-radius:2px;animation:fxs ${LOOP('1.2s')}}` },
-
-    { id: 'tabfade', zh: '标签内容交替', en: 'Tab content crossfade', dz: '内容换的同时轻微上移', de: 'Panels cross-fade with a small rise',
-      pz: '旧内容 fade+下移出，新内容 fade+上移入，错开 60ms。', pe: 'Old panel fades down and out, new one rises in, offset by 60ms.',
-      demo: 'panel', css: `@keyframes fxb{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@keyframes fxa{from{opacity:1}to{opacity:0}}.fxb{animation:fxb ${LOOP('1.2s')}}.fxa{animation:fxa ${LOOP('1.2s')}}` },
-
-    { id: 'wizard', zh: '分步流程滑动', en: 'Wizard step slide', dz: '下一步从右进，上一步从左回', de: 'Next slides in from the right, back returns from the left',
-      pz: '记录方向，正反向用同一套动画传入 direction 参数。', pe: 'Track direction and feed it into one shared animation.',
-      demo: 'panel', css: `@keyframes fxb{0%{transform:translateX(60%);opacity:0}100%{transform:none;opacity:1}}.fxb{animation:fxb ${LOOP('1.2s')}}` },
-
-    { id: 'routefade', zh: '路由淡入上移', en: 'Route fade up', dz: '换页时轻轻上抬淡入', de: 'Routes fade up gently',
-      pz: '页面级过渡 300–360ms，位移别超过 16px。', pe: 'Page-level 300–360ms, travel under 16px.',
-      demo: 'panel', css: `@keyframes fxb{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}.fxb{animation:fxb ${LOOP('1.2s')}}` },
-
-    { id: 'colorbridge', zh: '色块中转', en: 'Color bridge', dz: '中间闪过一块品牌色再进新页', de: 'A brand-color panel bridges the two views',
-      pz: '色块从下方覆盖再撤走，两段动画之间切换路由。', pe: 'A panel covers, the route swaps behind it, then it leaves.',
-      demo: 'panel', css: `@keyframes fxb{0%{transform:translateY(100%)}45%,55%{transform:none}100%{transform:translateY(-100%)}}.fxb{background:#e8879c;animation:fxb 1.8s ${E} infinite}` },
-
-    { id: 'listdetail', zh: '列表展开为详情', en: 'List row to detail', dz: '点击的行原地长成整页', de: 'The tapped row grows into the full page',
-      pz: '行的 rect 作为起点，FLIP 到详情页的 rect。', pe: 'Use the row rect as the FLIP origin for the detail page.',
-      demo: 'panel', css: `@keyframes fxb{from{transform:translateY(90px) scaleY(.18);opacity:.4;border-radius:12px}to{transform:none;opacity:1;border-radius:0}}.fxb{transform-origin:top;animation:fxb ${LOOP('1.5s')}}` },
-
-    { id: 'stackswipe', zh: '卡片堆滑走', en: 'Card deck swipe', dz: '当前卡甩出，下一张顶上来', de: 'The top card flies out and the next steps up',
-      pz: '甩出用 translateX + rotate，下层卡 scale 从 .94 到 1。', pe: 'Fling with translateX + rotate; the card below scales .94 → 1.',
-      demo: 'panel', css: `@keyframes fxa{0%{transform:none;opacity:1}100%{transform:translateX(120%) rotate(14deg);opacity:0}}@keyframes fxb{0%{transform:scale(.92)}100%{transform:none}}.fxa{z-index:2;border-radius:16px;animation:fxa ${LOOP('1.5s')}}.fxb{border-radius:16px;animation:fxb ${LOOP('1.5s')}}` },
-
-    { id: 'accordionview', zh: '面板互斥展开', en: 'Panels swap open', dz: '一个收起、另一个同时展开', de: 'One collapses exactly as the other opens',
-      pz: '两段动画共用时长，收起用 ease-in、展开用 ease-out。', pe: 'Shared duration; ease-in on the collapse, ease-out on the open.',
-      demo: 'panel', css: `@keyframes fxa{from{height:100%}to{height:30%}}@keyframes fxb{from{height:0%}to{height:70%}}.fxa{top:0;bottom:auto;animation:fxa ${LOOP('1.3s')}}.fxb{top:auto;bottom:0;height:0;animation:fxb ${LOOP('1.3s')}}` },
-
-    { id: 'blurswap', zh: '虚化换页', en: 'Blur swap', dz: '旧页虚掉，新页对焦', de: 'The old view blurs out, the new one focuses',
-      pz: 'A blur+scale 放大淡出，B blur→0 缩回，营造纵深。', pe: 'A blurs and scales up out; B focuses and scales down in.',
-      demo: 'panel', css: `@keyframes fxa{from{filter:none;transform:none;opacity:1}to{filter:blur(14px);transform:scale(1.1);opacity:0}}@keyframes fxb{from{filter:blur(14px);transform:scale(.94);opacity:0}to{filter:none;transform:none;opacity:1}}.fxa{animation:fxa ${LOOP('1.4s')}}.fxb{animation:fxb ${LOOP('1.4s')}}` },
-
-    { id: 'splitopen', zh: '双开门', en: 'Split doors', dz: '上下两块向外拉开', de: 'Two halves pull apart top and bottom',
-      pz: '两个覆盖层分别向上下移出，中间露出内容。', pe: 'Two covers move out vertically, exposing the content.',
-      demo: 'panel', css: `@keyframes fxa{from{clip-path:inset(0)}to{clip-path:inset(0 0 100% 0)}}.fxa{z-index:2;animation:fxa ${LOOP('1.4s')}}` },
-
-    { id: 'peel', zh: '层叠后退', en: 'Stack recede', dz: '旧页缩小退到后面', de: 'The old view shrinks back into depth',
-      pz: 'A scale(.9)+圆角+变暗，B 从底部升起。', pe: 'A scales to .9 with rounded corners and dims; B rises from below.',
-      demo: 'panel', css: `@keyframes fxa{from{transform:none;border-radius:0}to{transform:scale(.88) translateY(-16px);border-radius:16px;filter:brightness(.8)}}@keyframes fxb{from{transform:translateY(100%)}to{transform:translateY(18%)}}.fxa{animation:fxa ${LOOP('1.5s')}}.fxb{border-radius:18px 18px 0 0;animation:fxb ${LOOP('1.5s')}}` },
-
-    { id: 'loadbridge', zh: '加载中转', en: 'Loading bridge', dz: '换页时先出骨架再填内容', de: 'A skeleton bridges the wait before content lands',
-      pz: '路由切换先渲染 skeleton，数据到位后交叉淡入。', pe: 'Render the skeleton on navigation, cross-fade when data lands.',
-      demo: 'panel', css: `@keyframes fxsk{0%,45%{opacity:1}55%,100%{opacity:0}}@keyframes fxb{0%,45%{opacity:0}55%,100%{opacity:1}}.fxa{background:repeating-linear-gradient(#eceef1 0 20px,#fff 20px 34px);animation:fxsk 2.4s linear infinite alternate}.fxb{animation:fxb 2.4s linear infinite alternate}` }
+  "id": "transition",
+  "zh": "页面与视图转场",
+  "en": "Page & view transitions",
+  "dz": "从一屏到另一屏之间发生了什么",
+  "de": "What happens between one screen and the next",
+  "items": [
+    {
+      "id": "crossfade",
+      "zh": "交叉淡化",
+      "en": "Crossfade",
+      "dz": "A 淡出的同时 B 淡入",
+      "de": "A fades out while B fades in",
+      "pz": "用 View Transitions API 的默认过渡即可，200–300ms。",
+      "pe": "The default View Transitions cross-fade, 200–300ms.",
+      "demo": "panel",
+      "css": "@keyframes fxb{from{opacity:0}to{opacity:1}}.fxb{animation:fxb 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "slideover",
+      "zh": "覆盖滑入",
+      "en": "Slide over",
+      "dz": "B 从右侧盖在 A 上面",
+      "de": "B slides in on top of A",
+      "pz": "新页 translateX(100%)→0，旧页不动，加一层暗色遮罩。",
+      "pe": "New view translateX(100%)→0 over a static old view plus a scrim.",
+      "demo": "panel",
+      "css": "@keyframes fxb{from{transform:translateX(100%)}to{transform:none}}.fxb{box-shadow:-20px 0 40px rgba(0,0,0,.2);animation:fxb 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "push",
+      "zh": "推挤转场",
+      "en": "Push",
+      "dz": "B 把 A 推出屏幕",
+      "de": "B pushes A off screen",
+      "pz": "两页同速同向位移 100%，像胶片一样连着走。",
+      "pe": "Both views translate 100% at the same speed, like film frames.",
+      "demo": "panel",
+      "css": "@keyframes fxa{from{transform:none}to{transform:translateX(-100%)}}@keyframes fxb{from{transform:translateX(100%)}to{transform:none}}.fxa{animation:fxa 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}.fxb{animation:fxb 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "iospush",
+      "zh": "iOS 层级推进",
+      "en": "iOS stack push",
+      "dz": "旧页轻微后退，新页盖上",
+      "de": "The old view recedes as the new one covers it",
+      "pz": "旧页 translateX(-30%) + 变暗，新页 translateX(100%)→0。",
+      "pe": "Old view translateX(-30%) and dims; new view slides fully in.",
+      "demo": "panel",
+      "css": "@keyframes fxa{from{transform:none;filter:none}to{transform:translateX(-28%);filter:brightness(.72)}}@keyframes fxb{from{transform:translateX(100%)}to{transform:none}}.fxa{animation:fxa 1.5s cubic-bezier(.22,1,.36,1) infinite alternate}.fxb{animation:fxb 1.5s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "cover",
+      "zh": "揭幕转场",
+      "en": "Reveal (uncover)",
+      "dz": "A 滑走，露出下面的 B",
+      "de": "A slides away to uncover B",
+      "pz": "B 固定在底层，A 位移出画，注意 z-index。",
+      "pe": "B sits underneath; A translates out. Mind the z-index.",
+      "demo": "panel",
+      "css": "@keyframes fxa{from{transform:none}to{transform:translateY(-100%)}}.fxa{z-index:2;animation:fxa 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "shared",
+      "zh": "共享元素转场",
+      "en": "Shared element",
+      "dz": "同一个元素跨页连续移动",
+      "de": "One element carries across both views",
+      "pz": "View Transitions 里给两侧同名 view-transition-name。",
+      "pe": "Give both sides the same view-transition-name.",
+      "demo": "panel",
+      "css": "@keyframes fxs{0%{left:24px;top:24px;width:80px;height:60px;border-radius:8px}100%{left:0;top:0;width:100%;height:150px;border-radius:0}}.fxa::after{content:'';position:absolute;background:#e8879c;animation:fxs 1.6s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "zoomin",
+      "zh": "放大进入详情",
+      "en": "Zoom into card",
+      "dz": "点哪张卡就从哪张放大进去",
+      "de": "The tapped card expands into the detail view",
+      "pz": "以点击点为 transform-origin 做 scale + 淡入。",
+      "pe": "scale and fade with transform-origin at the click point.",
+      "demo": "panel",
+      "css": "@keyframes fxb{from{transform:scale(.25);opacity:0;border-radius:24px}to{transform:none;opacity:1;border-radius:0}}.fxb{transform-origin:22% 78%;animation:fxb 1.5s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "irisview",
+      "zh": "圆形扩散转场",
+      "en": "Circle expand",
+      "dz": "从点击处圆形扩开新页",
+      "de": "The new view opens as a circle from the tap",
+      "pz": "clip-path:circle(0 at 点击点)→circle(150%)。",
+      "pe": "clip-path circle(0 at click) → circle(150%).",
+      "demo": "panel",
+      "css": "@keyframes fxb{from{clip-path:circle(0 at 78% 82%)}to{clip-path:circle(150% at 78% 82%)}}.fxb{animation:fxb 1.5s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "curtainsplit",
+      "zh": "对开幕布",
+      "en": "Curtain split",
+      "dz": "画面从中间分开露出新页",
+      "de": "The old view parts down the middle",
+      "pz": "A 用两半 clip-path 向两侧移出。",
+      "pe": "Clip A into two halves and move them apart.",
+      "demo": "panel",
+      "css": "@keyframes fxa{from{clip-path:inset(0 0 0 0)}to{clip-path:inset(0 50% 0 50%);opacity:.4}}.fxa{z-index:2;animation:fxa 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "wipe",
+      "zh": "斜线擦除",
+      "en": "Diagonal wipe",
+      "dz": "一道斜线扫过换页",
+      "de": "A diagonal edge sweeps the page over",
+      "pz": "用带角度的 clip-path polygon 做扫除。",
+      "pe": "An angled clip-path polygon does the wipe.",
+      "demo": "panel",
+      "css": "@keyframes fxb{from{clip-path:polygon(0 0,0 0,-30% 100%,-30% 100%)}to{clip-path:polygon(0 0,130% 0,100% 100%,0 100%)}}.fxb{animation:fxb 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "flipview",
+      "zh": "整页翻转",
+      "en": "Page flip",
+      "dz": "像卡片一样翻到背面",
+      "de": "The whole view flips like a card",
+      "pz": "容器 perspective，A/B 分别 rotateY 0/180 并隐藏背面。",
+      "pe": "Perspective on the wrapper; A and B at rotateY 0/180 with hidden backfaces.",
+      "demo": "panel",
+      "css": "@keyframes fxs{from{transform:rotateY(0)}to{transform:rotateY(180deg)}}.fxstack{perspective:1200px}.fxa,.fxb{backface-visibility:hidden}.fxb{transform:rotateY(180deg)}.fxstack{animation:fxs 1.8s cubic-bezier(.22,1,.36,1) infinite alternate;transform-style:preserve-3d}"
+    },
+    {
+      "id": "modal",
+      "zh": "弹窗浮起",
+      "en": "Dialog scale-fade",
+      "dz": "弹窗从 96% 放大浮现",
+      "de": "The dialog scales up from 96%",
+      "pz": "遮罩淡入 + 弹窗 scale(.96)→1，退出更快。",
+      "pe": "Scrim fades in; dialog scale(.96)→1. Exit faster than enter.",
+      "demo": "panel",
+      "css": "@keyframes fxb{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}.fxb{inset:40px;border-radius:16px;box-shadow:0 30px 70px rgba(0,0,0,.35);animation:fxb 1.2s cubic-bezier(.22,1,.36,1) infinite alternate}.fxa{background:#e9eaee}"
+    },
+    {
+      "id": "bottomsheet",
+      "zh": "底部弹层",
+      "en": "Bottom sheet",
+      "dz": "从底部拉起的半屏面板",
+      "de": "A half-height panel pulled up from the bottom",
+      "pz": "translateY(100%)→0，支持拖拽回落与惯性。",
+      "pe": "translateY(100%)→0, with drag-to-dismiss and momentum.",
+      "demo": "panel",
+      "css": "@keyframes fxb{from{transform:translateY(100%)}to{transform:translateY(35%)}}.fxb{border-radius:20px 20px 0 0;animation:fxb 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "tabslide",
+      "zh": "标签下划线滑动",
+      "en": "Tab indicator slide",
+      "dz": "下划线滑到新标签",
+      "de": "The indicator slides to the new tab",
+      "pz": "一个共享指示条，用 transform 移动到目标 tab 的位置和宽度。",
+      "pe": "One shared bar, moved and resized with transform to the active tab.",
+      "demo": "panel",
+      "css": "@keyframes fxs{from{transform:translateX(0);width:110px}to{transform:translateX(150px);width:150px}}.fxa::after{content:'';position:absolute;bottom:0;left:40px;height:4px;background:#e8879c;border-radius:2px;animation:fxs 1.2s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "tabfade",
+      "zh": "标签内容交替",
+      "en": "Tab content crossfade",
+      "dz": "内容换的同时轻微上移",
+      "de": "Panels cross-fade with a small rise",
+      "pz": "旧内容 fade+下移出，新内容 fade+上移入，错开 60ms。",
+      "pe": "Old panel fades down and out, new one rises in, offset by 60ms.",
+      "demo": "panel",
+      "css": "@keyframes fxb{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@keyframes fxa{from{opacity:1}to{opacity:0}}.fxb{animation:fxb 1.2s cubic-bezier(.22,1,.36,1) infinite alternate}.fxa{animation:fxa 1.2s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "wizard",
+      "zh": "分步流程滑动",
+      "en": "Wizard step slide",
+      "dz": "下一步从右进，上一步从左回",
+      "de": "Next slides in from the right, back returns from the left",
+      "pz": "记录方向，正反向用同一套动画传入 direction 参数。",
+      "pe": "Track direction and feed it into one shared animation.",
+      "demo": "panel",
+      "css": "@keyframes fxb{0%{transform:translateX(60%);opacity:0}100%{transform:none;opacity:1}}.fxb{animation:fxb 1.2s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "routefade",
+      "zh": "路由淡入上移",
+      "en": "Route fade up",
+      "dz": "换页时轻轻上抬淡入",
+      "de": "Routes fade up gently",
+      "pz": "页面级过渡 300–360ms，位移别超过 16px。",
+      "pe": "Page-level 300–360ms, travel under 16px.",
+      "demo": "panel",
+      "css": "@keyframes fxb{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}.fxb{animation:fxb 1.2s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "colorbridge",
+      "zh": "色块中转",
+      "en": "Color bridge",
+      "dz": "中间闪过一块品牌色再进新页",
+      "de": "A brand-color panel bridges the two views",
+      "pz": "色块从下方覆盖再撤走，两段动画之间切换路由。",
+      "pe": "A panel covers, the route swaps behind it, then it leaves.",
+      "demo": "panel",
+      "css": "@keyframes fxb{0%{transform:translateY(100%)}45%,55%{transform:none}100%{transform:translateY(-100%)}}.fxb{background:#e8879c;animation:fxb 1.8s cubic-bezier(.22,1,.36,1) infinite}"
+    },
+    {
+      "id": "listdetail",
+      "zh": "列表展开为详情",
+      "en": "List row to detail",
+      "dz": "点击的行原地长成整页",
+      "de": "The tapped row grows into the full page",
+      "pz": "行的 rect 作为起点，FLIP 到详情页的 rect。",
+      "pe": "Use the row rect as the FLIP origin for the detail page.",
+      "demo": "panel",
+      "css": "@keyframes fxb{from{transform:translateY(90px) scaleY(.18);opacity:.4;border-radius:12px}to{transform:none;opacity:1;border-radius:0}}.fxb{transform-origin:top;animation:fxb 1.5s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "stackswipe",
+      "zh": "卡片堆滑走",
+      "en": "Card deck swipe",
+      "dz": "当前卡甩出，下一张顶上来",
+      "de": "The top card flies out and the next steps up",
+      "pz": "甩出用 translateX + rotate，下层卡 scale 从 .94 到 1。",
+      "pe": "Fling with translateX + rotate; the card below scales .94 → 1.",
+      "demo": "panel",
+      "css": "@keyframes fxa{0%{transform:none;opacity:1}100%{transform:translateX(120%) rotate(14deg);opacity:0}}@keyframes fxb{0%{transform:scale(.92)}100%{transform:none}}.fxa{z-index:2;border-radius:16px;animation:fxa 1.5s cubic-bezier(.22,1,.36,1) infinite alternate}.fxb{border-radius:16px;animation:fxb 1.5s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "accordionview",
+      "zh": "面板互斥展开",
+      "en": "Panels swap open",
+      "dz": "一个收起、另一个同时展开",
+      "de": "One collapses exactly as the other opens",
+      "pz": "两段动画共用时长，收起用 ease-in、展开用 ease-out。",
+      "pe": "Shared duration; ease-in on the collapse, ease-out on the open.",
+      "demo": "panel",
+      "css": "@keyframes fxa{from{height:100%}to{height:30%}}@keyframes fxb{from{height:0%}to{height:70%}}.fxa{top:0;bottom:auto;animation:fxa 1.3s cubic-bezier(.22,1,.36,1) infinite alternate}.fxb{top:auto;bottom:0;height:0;animation:fxb 1.3s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "blurswap",
+      "zh": "虚化换页",
+      "en": "Blur swap",
+      "dz": "旧页虚掉，新页对焦",
+      "de": "The old view blurs out, the new one focuses",
+      "pz": "A blur+scale 放大淡出，B blur→0 缩回，营造纵深。",
+      "pe": "A blurs and scales up out; B focuses and scales down in.",
+      "demo": "panel",
+      "css": "@keyframes fxa{from{filter:none;transform:none;opacity:1}to{filter:blur(14px);transform:scale(1.1);opacity:0}}@keyframes fxb{from{filter:blur(14px);transform:scale(.94);opacity:0}to{filter:none;transform:none;opacity:1}}.fxa{animation:fxa 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}.fxb{animation:fxb 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "splitopen",
+      "zh": "双开门",
+      "en": "Split doors",
+      "dz": "上下两块向外拉开",
+      "de": "Two halves pull apart top and bottom",
+      "pz": "两个覆盖层分别向上下移出，中间露出内容。",
+      "pe": "Two covers move out vertically, exposing the content.",
+      "demo": "panel",
+      "css": "@keyframes fxa{from{clip-path:inset(0)}to{clip-path:inset(0 0 100% 0)}}.fxa{z-index:2;animation:fxa 1.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "peel",
+      "zh": "层叠后退",
+      "en": "Stack recede",
+      "dz": "旧页缩小退到后面",
+      "de": "The old view shrinks back into depth",
+      "pz": "A scale(.9)+圆角+变暗，B 从底部升起。",
+      "pe": "A scales to .9 with rounded corners and dims; B rises from below.",
+      "demo": "panel",
+      "css": "@keyframes fxa{from{transform:none;border-radius:0}to{transform:scale(.88) translateY(-16px);border-radius:16px;filter:brightness(.8)}}@keyframes fxb{from{transform:translateY(100%)}to{transform:translateY(18%)}}.fxa{animation:fxa 1.5s cubic-bezier(.22,1,.36,1) infinite alternate}.fxb{border-radius:18px 18px 0 0;animation:fxb 1.5s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "loadbridge",
+      "zh": "加载中转",
+      "en": "Loading bridge",
+      "dz": "换页时先出骨架再填内容",
+      "de": "A skeleton bridges the wait before content lands",
+      "pz": "路由切换先渲染 skeleton，数据到位后交叉淡入。",
+      "pe": "Render the skeleton on navigation, cross-fade when data lands.",
+      "demo": "panel",
+      "css": "@keyframes fxsk{0%,45%{opacity:1}55%,100%{opacity:0}}@keyframes fxb{0%,45%{opacity:0}55%,100%{opacity:1}}.fxa{background:repeating-linear-gradient(#eceef1 0 20px,#fff 20px 34px);animation:fxsk 2.4s linear infinite alternate}.fxb{animation:fxb 2.4s linear infinite alternate}"
+    },
+    {
+      "id": "state-crossfade",
+      "zh": "状态淡入淡出",
+      "en": "State crossfade",
+      "dz": "状态切换用短淡入淡出表达连续性，不隐藏内容。",
+      "de": "Use a short crossfade to express continuity without hiding content.",
+      "pz": "状态切换用短淡入淡出表达连续性，不隐藏内容。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Use a short crossfade to express continuity without hiding content. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "route-crossfade",
+      "zh": "路由淡入淡出",
+      "en": "Route crossfade",
+      "dz": "路由切换保留标题和焦点上下文，失败时不留空白。",
+      "de": "Keep title and focus context through route transitions.",
+      "pz": "路由切换保留标题和焦点上下文，失败时不留空白。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Keep title and focus context through route transitions. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "shared-element",
+      "zh": "共享元素",
+      "en": "Shared element",
+      "dz": "共享元素保持身份连续，尺寸变化不遮挡操作。",
+      "de": "Keep shared identity without covering actions during resize.",
+      "pz": "共享元素保持身份连续，尺寸变化不遮挡操作。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Keep shared identity without covering actions during resize. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "view-transition-name",
+      "zh": "视图过渡命名",
+      "en": "View transition name",
+      "dz": "共享元素命名稳定，列表重排不产生错误配对。",
+      "de": "Use stable names so reorders do not pair the wrong elements.",
+      "pz": "共享元素命名稳定，列表重排不产生错误配对。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Use stable names so reorders do not pair the wrong elements. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "enter-from",
+      "zh": "进入起点",
+      "en": "Enter from state",
+      "dz": "进入动画从可解释的空间起点开始，减少方向迷惑。",
+      "de": "Enter from an understandable spatial origin.",
+      "pz": "进入动画从可解释的空间起点开始，减少方向迷惑。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Enter from an understandable spatial origin. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "exit-to",
+      "zh": "退出终点",
+      "en": "Exit to state",
+      "dz": "退出方向与进入方向成对，用户知道内容去了哪里。",
+      "de": "Pair exit direction with entry direction.",
+      "pz": "退出方向与进入方向成对，用户知道内容去了哪里。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Pair exit direction with entry direction. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "height-transition",
+      "zh": "高度过渡",
+      "en": "Height transition",
+      "dz": "高度过渡处理内容变化和测量，避免跳动和裁切。",
+      "de": "Measure content changes without jumps or clipping.",
+      "pz": "高度过渡处理内容变化和测量，避免跳动和裁切。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Measure content changes without jumps or clipping. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "collapse-transition",
+      "zh": "折叠过渡",
+      "en": "Collapse transition",
+      "dz": "折叠后内容不可聚焦，动画完成状态与语义同步。",
+      "de": "Collapsed content is unfocusable and semantics match completion.",
+      "pz": "折叠后内容不可聚焦，动画完成状态与语义同步。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Collapsed content is unfocusable and semantics match completion. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "expand-transition",
+      "zh": "展开过渡",
+      "en": "Expand transition",
+      "dz": "展开时焦点和屏幕阅读顺序保持稳定。",
+      "de": "Keep focus and reading order stable while expanding.",
+      "pz": "展开时焦点和屏幕阅读顺序保持稳定。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Keep focus and reading order stable while expanding. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "filter-transition",
+      "zh": "筛选过渡",
+      "en": "Filter transition",
+      "dz": "筛选结果变化保留用户视线，不把项目随机推开。",
+      "de": "Keep visual context when filter results change.",
+      "pz": "筛选结果变化保留用户视线，不把项目随机推开。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Keep visual context when filter results change. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "sort-transition",
+      "zh": "排序过渡",
+      "en": "Sort transition",
+      "dz": "排序只移动变化项目并保留当前选中项。",
+      "de": "Move changed items while preserving selection.",
+      "pz": "排序只移动变化项目并保留当前选中项。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Move changed items while preserving selection. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "pagination-transition",
+      "zh": "分页过渡",
+      "en": "Pagination transition",
+      "dz": "分页切换更新范围和焦点，不用动画掩盖数据变化。",
+      "de": "Update range and focus without masking data changes.",
+      "pz": "分页切换更新范围和焦点，不用动画掩盖数据变化。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Update range and focus without masking data changes. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "drawer-transition",
+      "zh": "抽屉过渡",
+      "en": "Drawer transition",
+      "dz": "抽屉过渡配合焦点锁定和背景遮罩。",
+      "de": "Coordinate drawer motion with focus lock and scrim.",
+      "pz": "抽屉过渡配合焦点锁定和背景遮罩。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Coordinate drawer motion with focus lock and scrim. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "dialog-transition",
+      "zh": "对话框过渡",
+      "en": "Dialog transition",
+      "dz": "对话框打开关闭顺序清楚，关闭后回到触发点。",
+      "de": "Keep dialog order clear and return focus to the trigger.",
+      "pz": "对话框打开关闭顺序清楚，关闭后回到触发点。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Keep dialog order clear and return focus to the trigger. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "popover-transition",
+      "zh": "弹出过渡",
+      "en": "Popover transition",
+      "dz": "弹出层根据翻转方向调整起点，不从错误方向飞入。",
+      "de": "Adjust origin when placement flips.",
+      "pz": "弹出层根据翻转方向调整起点，不从错误方向飞入。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Adjust origin when placement flips. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "tooltip-transition",
+      "zh": "提示过渡",
+      "en": "Tooltip transition",
+      "dz": "提示过渡短且可取消，键盘出现不延迟。",
+      "de": "Keep tooltip motion short and immediate on keyboard focus.",
+      "pz": "提示过渡短且可取消，键盘出现不延迟。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Keep tooltip motion short and immediate on keyboard focus. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "toast-transition",
+      "zh": "Toast 过渡",
+      "en": "Toast transition",
+      "dz": "Toast 进出不挤压页面，多个消息有稳定队列。",
+      "de": "Toast motion does not reflow the page and queues predictably.",
+      "pz": "Toast 进出不挤压页面，多个消息有稳定队列。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Toast motion does not reflow the page and queues predictably. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "list-add",
+      "zh": "列表新增",
+      "en": "List add transition",
+      "dz": "新增项明确插入位置和原因，不制造跳跃。",
+      "de": "Show insertion position and reason.",
+      "pz": "新增项明确插入位置和原因，不制造跳跃。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Show insertion position and reason. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "list-remove",
+      "zh": "列表移除",
+      "en": "List remove transition",
+      "dz": "移除先提供撤销，再从视觉和 DOM 中清理。",
+      "de": "Offer undo before removing visually and semantically.",
+      "pz": "移除先提供撤销，再从视觉和 DOM 中清理。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Offer undo before removing visually and semantically. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "drag-transition",
+      "zh": "拖放过渡",
+      "en": "Drag transition",
+      "dz": "拖放结束后项目回到正确轨道并保留焦点。",
+      "de": "Return dropped items to the correct track with focus.",
+      "pz": "拖放结束后项目回到正确轨道并保留焦点。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Return dropped items to the correct track with focus. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "scroll-reveal",
+      "zh": "滚动揭示",
+      "en": "Scroll reveal",
+      "dz": "滚动揭示只用于辅助层次，内容不依赖动画才能看见。",
+      "de": "Use scroll reveal for hierarchy, never for essential content.",
+      "pz": "滚动揭示只用于辅助层次，内容不依赖动画才能看见。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Use scroll reveal for hierarchy, never for essential content. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "sticky-transition",
+      "zh": "粘性切换",
+      "en": "Sticky transition",
+      "dz": "粘性标题切换时不闪烁且不遮挡锚点。",
+      "de": "Keep sticky headers stable without covering anchors.",
+      "pz": "粘性标题切换时不闪烁且不遮挡锚点。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Keep sticky headers stable without covering anchors. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "parallax-limit",
+      "zh": "视差限制",
+      "en": "Parallax limit",
+      "dz": "视差限制距离和速度，并在 reduced-motion 下静态化。",
+      "de": "Bound parallax distance and speed with static fallback.",
+      "pz": "视差限制距离和速度，并在 reduced-motion 下静态化。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Bound parallax distance and speed with static fallback. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "inertial-scroll",
+      "zh": "惯性滚动",
+      "en": "Inertial scroll",
+      "dz": "惯性滚动不干扰点击、焦点和页面滚动。",
+      "de": "Keep inertial motion from interfering with click and focus.",
+      "pz": "惯性滚动不干扰点击、焦点和页面滚动。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Keep inertial motion from interfering with click and focus. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "gesture-transition",
+      "zh": "手势过渡",
+      "en": "Gesture transition",
+      "dz": "手势跟手，取消时回弹到明确状态。",
+      "de": "Keep gesture motion attached and settle clearly on cancel.",
+      "pz": "手势跟手，取消时回弹到明确状态。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Keep gesture motion attached and settle clearly on cancel. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "interrupt-transition",
+      "zh": "动画中断",
+      "en": "Interrupt transition",
+      "dz": "新操作可以中断旧动画并从当前值继续。",
+      "de": "New actions interrupt and continue from current value.",
+      "pz": "新操作可以中断旧动画并从当前值继续。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "New actions interrupt and continue from current value. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "transition-cancel",
+      "zh": "取消过渡",
+      "en": "Transition cancellation",
+      "dz": "取消不触发完成事件或错误副作用。",
+      "de": "Cancellation does not fire completion side effects.",
+      "pz": "取消不触发完成事件或错误副作用。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Cancellation does not fire completion side effects. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "transition-locale",
+      "zh": "过渡语言",
+      "en": "Transition locale",
+      "dz": "过渡中的标签、提示和状态完全跟随语言。",
+      "de": "Labels, tips, and states during transitions follow locale.",
+      "pz": "过渡中的标签、提示和状态完全跟随语言。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Labels, tips, and states during transitions follow locale. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "transition-theme",
+      "zh": "过渡主题",
+      "en": "Transition theme",
+      "dz": "主题切换不让过渡闪现错误颜色或字体。",
+      "de": "Theme switches do not flash wrong colors or fonts.",
+      "pz": "主题切换不让过渡闪现错误颜色或字体。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Theme switches do not flash wrong colors or fonts. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    },
+    {
+      "id": "transition-audit",
+      "zh": "过渡审查",
+      "en": "Transition audit",
+      "dz": "发布前检查中断、焦点、性能、reduced-motion 和语言。",
+      "de": "Audit interruption, focus, performance, reduced motion, and locale.",
+      "pz": "发布前检查中断、焦点、性能、reduced-motion 和语言。 在快速操作、键盘、移动端和减少动效下复核。",
+      "pe": "Audit interruption, focus, performance, reduced motion, and locale. Validate rapid actions, keyboard, mobile, and reduced motion.",
+      "demo": "box",
+      "css": ".fx{background:#f5f6fb;color:#252b3c;border:1px solid #c7cede;border-radius:10px;box-shadow:0 5px 16px #252b3c14}"
+    }
   ]
 };

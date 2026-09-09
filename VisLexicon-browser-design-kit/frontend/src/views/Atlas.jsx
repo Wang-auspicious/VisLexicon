@@ -10,12 +10,24 @@ import { useStore } from '../store.js'
 export default function Atlas() {
   const { locale, theme } = useStore()
   const frameRef = useRef(null)
-  const resolvedTheme = theme === 'dark' || (theme === 'system' && window.matchMedia?.('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'
+  // Keep the document mounted when preferences change: reloading loses the
+  // selected category, detail, scroll position, and parameter edits.
+  const initialSrc = useRef(`/effects-atlas/index.html?lang=${locale === 'en' ? 'en' : 'zh'}&theme=${theme === 'dark' || (theme === 'system' && window.matchMedia?.('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'}`)
   useEffect(() => {
-    const sendLocale = () => frameRef.current?.contentWindow?.postMessage({ type: 'vislexicon-host-state', locale: locale === 'en' ? 'en' : 'zh', theme: resolvedTheme }, window.location.origin)
-    sendLocale()
-    frameRef.current?.addEventListener('load', sendLocale)
-    return () => frameRef.current?.removeEventListener('load', sendLocale)
+    const frame = frameRef.current
+    const media = window.matchMedia?.('(prefers-color-scheme: dark)')
+    const sendState = () => frame?.contentWindow?.postMessage({
+      type: 'vislexicon-host-state',
+      locale: locale === 'en' ? 'en' : 'zh',
+      theme: theme === 'dark' || (theme === 'system' && media?.matches) ? 'dark' : 'light',
+    }, window.location.origin)
+    sendState()
+    frame?.addEventListener('load', sendState)
+    media?.addEventListener('change', sendState)
+    return () => {
+      frame?.removeEventListener('load', sendState)
+      media?.removeEventListener('change', sendState)
+    }
   }, [locale, theme])
-  return <iframe ref={frameRef} title="效果图谱" src={`/effects-atlas/index.html?lang=${locale === 'en' ? 'en' : 'zh'}&theme=${resolvedTheme}`} style={{ width: '100%', height: '100%', minHeight: 'calc(100vh - 88px)', border: 0, display: 'block' }} />
+  return <iframe ref={frameRef} title={locale === 'en' ? 'Effects atlas' : '效果图谱'} src={initialSrc.current} style={{ width: '100%', height: '100%', minHeight: 'calc(100vh - 88px)', border: 0, display: 'block' }} />
 }

@@ -1,109 +1,627 @@
-const P = (k, zh, en, min, max, step, def, unit) => ({ k, zh, en, min, max, step, def, unit: unit || '' });
-const E = 'cubic-bezier(.22,1,.36,1)';
-
+// Curated foundational patterns
 export default {
-  id: 'list', zh: '列表 / 卡片编排', en: 'Lists & card choreography',
-  dz: '一堆条目怎么进场、排序、操作', de: 'How many items arrive, sort and respond',
-  items: [
-    { id: 'staggerin', zh: '逐行入场', en: 'Row stagger in', dz: '行一条条淡入', de: 'Rows fade in one by one',
-      pz: 'delay = index × 60ms，超过 10 行后 delay 封顶。', pe: 'delay = index × 60ms, capped after ten rows.',
-      demo: 'list', params: [P('s', '间隔', 'Stagger', 20, 200, 10, 70, 'ms')],
-      css: `@keyframes fxk{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}.fx{animation:fxk .6s ${E} infinite alternate;animation-delay:calc(var(--i)*var(--s,70ms))}` },
-
-    { id: 'cascade', zh: '侧向级联', en: 'Side cascade', dz: '行从左侧依次推入', de: 'Rows push in from the left in sequence',
-      pz: 'translateX(-24px)→0，配合极短的 blur 更顺。', pe: 'translateX(-24px)→0, optionally with a tiny blur.',
-      demo: 'list', css: `@keyframes fxk{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:none}}.fx{animation:fxk .55s ${E} infinite alternate;animation-delay:calc(var(--i)*90ms)}` },
-
-    { id: 'hoverrow', zh: '行悬停', en: 'Row hover', dz: '整行轻微变色并右移', de: 'The row tints and nudges right',
-      pz: '背景色 + 2px 右移，别加边框免得跳动。', pe: 'Background tint plus a 2px nudge — no border, it causes jitter.',
-      demo: 'list', css: `.fx{transition:all .18s ease;cursor:pointer}.fx:hover{background:#f3f4f6;transform:translateX(4px);border-color:#dfe2e6}` },
-
-    { id: 'stripes', zh: '斑马纹', en: 'Zebra rows', dz: '隔行浅色，方便横向读', de: 'Alternating tint helps you track across',
-      pz: 'nth-child(even) 用最浅一档灰，别用边框分隔。', pe: 'nth-child(even) with the lightest grey; skip the borders.',
-      demo: 'list', css: `.fx{border:0;border-radius:8px}.fx:nth-child(even){background:#f5f6f8}` },
-
-    { id: 'expandrow', zh: '行内展开', en: 'Expand row', dz: '点开行在原地展开详情', de: 'The row opens in place',
-      pz: 'grid-template-rows:0fr→1fr，箭头同步旋转。', pe: 'grid-template-rows 0fr→1fr with the chevron rotating in sync.',
-      demo: 'list', css: `@keyframes fxk{0%,25%{height:52px}65%,100%{height:130px}}.fx:nth-child(2){align-items:flex-start;padding-top:16px;animation:fxk 3s ${E} infinite alternate}` },
-
-    { id: 'swipe', zh: '滑动露出操作', en: 'Swipe actions', dz: '左滑露出删除按钮', de: 'Swipe left to expose delete',
-      pz: '行 translateX，底层操作按钮固定；超过阈值直接执行。', pe: 'Translate the row over fixed action buttons; past a threshold, commit.',
-      demo: 'list', css: `@keyframes fxk{0%,30%{transform:translateX(0)}70%,100%{transform:translateX(-88px)}}.fxcol{position:relative}.fx{position:relative;z-index:1}.fx:nth-child(3){animation:fxk 2.8s ${E} infinite alternate}.fxcol::after{content:'';position:absolute;right:0;top:110px;width:88px;height:52px;background:#e8879c;border-radius:10px}` },
-
-    { id: 'reorder', zh: '拖拽排序', en: 'Drag to reorder', dz: '拖起来的行浮起，其他行让位', de: 'The dragged row lifts, the rest make room',
-      pz: '拖起项加阴影与 scale(1.02)，其他行用 transform 让位（FLIP）。', pe: 'Lift with shadow and scale(1.02); shift siblings with FLIP transforms.',
-      demo: 'list', css: `@keyframes fxk{0%,100%{transform:translateY(0) scale(1);box-shadow:none}50%{transform:translateY(62px) scale(1.03);box-shadow:0 12px 26px rgba(48,66,92,.18)}}.fx:nth-child(2){position:relative;z-index:2;animation:fxk 3s ${E} infinite}` },
-
-    { id: 'removerow', zh: '删除塌陷', en: 'Remove & collapse', dz: '删掉的行收起，下面补位', de: 'The removed row collapses and the rest close up',
-      pz: '先淡出 + 横移，再收 height，两段共 320ms。', pe: 'Fade and slide first, then collapse height — 320ms total.',
-      demo: 'list', css: `@keyframes fxk{0%{opacity:1;height:52px;margin-bottom:0}50%{opacity:0;height:52px}100%{opacity:0;height:0;margin-bottom:-10px}}.fx:nth-child(3){overflow:hidden;animation:fxk 2.4s ${E} infinite alternate}` },
-
-    { id: 'addrow', zh: '新增行长出', en: 'Add row', dz: '新行从零高度长出并高亮一下', de: 'A new row grows in and flashes once',
-      pz: '高度展开 + 一次淡黄底闪现（500ms）标示“这是新的”。', pe: 'Grow the height, then flash a soft highlight for 500ms.',
-      demo: 'list', css: `@keyframes fxk{0%{height:0;opacity:0;background:#f6f3d8}40%{height:52px;opacity:1;background:#f6f3d8}100%{height:52px;background:#fcfcfb}}.fx:first-child{overflow:hidden;animation:fxk 2.2s ${E} infinite alternate}` },
-
-    { id: 'filtershuffle', zh: '筛选重排', en: 'Filter shuffle', dz: '过滤后剩下的项平滑归位', de: 'Survivors glide into their new places',
-      pz: '离场项 fade+scale，留下项用 FLIP 平移，别整体重绘。', pe: 'Fade out the removed, FLIP the survivors — never re-render blind.',
-      demo: 'list', css: `@keyframes fxo{0%,40%{opacity:1;transform:none}100%{opacity:0;transform:scale(.94)}}@keyframes fxm{0%,40%{transform:none}100%{transform:translateY(-62px)}}.fx:nth-child(2),.fx:nth-child(4){animation:fxo 2.4s ${E} infinite alternate}.fx:nth-child(3),.fx:nth-child(5){animation:fxm 2.4s ${E} infinite alternate}` },
-
-    { id: 'sortlist', zh: '排序动画', en: 'Sort animation', dz: '排序时行互相交换位置', de: 'Rows swap places when sorted',
-      pz: 'FLIP：记录旧位置，重排后反向补偿再播放。', pe: 'FLIP: record old rects, invert after the re-order, play.',
-      demo: 'list', css: `@keyframes fxa{0%,30%{transform:none}70%,100%{transform:translateY(186px)}}@keyframes fxb{0%,30%{transform:none}70%,100%{transform:translateY(-62px)}}.fx:first-child{animation:fxa 3s ${E} infinite alternate;z-index:2;position:relative}.fx:nth-child(2),.fx:nth-child(3),.fx:nth-child(4){animation:fxb 3s ${E} infinite alternate}` },
-
-    { id: 'groupsticky', zh: '分组吸顶', en: 'Sticky group header', dz: '分组标题贴住顶部直到下一组', de: 'Group headers pin until the next group',
-      pz: 'position:sticky;top:0 给分组标题，注意层级与背景不透明。', pe: 'Sticky headers with an opaque background and a z-index.',
-      demo: 'list', css: `.fx:nth-child(1),.fx:nth-child(4){position:sticky;top:0;background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);color:#fff;z-index:2;height:38px;font-size:12px}.fx:nth-child(1) i,.fx:nth-child(4) i,.fx:nth-child(1) u,.fx:nth-child(4) u{display:none}` },
-
-    { id: 'checklist', zh: '勾选完成', en: 'Check off', dz: '勾选后整行变淡加删除线', de: 'Checked rows dim and strike through',
-      pz: '勾 + 文字划线 + 透明度 60%，200ms 内完成。', pe: 'Tick, strike-through and 60% opacity, all inside 200ms.',
-      demo: 'list', css: `.fx{cursor:pointer;transition:all .2s}.fx i{border-radius:50%;transition:background .2s}.fx:nth-child(2),.fx:nth-child(5){opacity:.5}.fx:nth-child(2) i,.fx:nth-child(5) i{background:#4d8ba6}.fx:nth-child(2) u,.fx:nth-child(5) u{background:linear-gradient(#e4e5e0,#e4e5e0) center/100% 2px no-repeat,#eceee6}` },
-
-    { id: 'avatars', zh: '头像叠放', en: 'Avatar stack', dz: '头像互相压边，悬停展开', de: 'Overlapping avatars fan out on hover',
-      pz: '负 margin 叠放 + hover 时恢复间距，最多显示 4 个 + N。', pe: 'Negative margins, restored on hover; show four plus a count.',
-      demo: 'list', css: `.fxcol{flex-direction:row;justify-content:center;gap:0;width:auto}.fx{width:56px;height:56px;border-radius:50%;padding:0;margin-left:-16px;border:3px solid #fff;background:#4d8ba6;transition:margin .3s ${E}}.fx i,.fx u{display:none}.fxcol:hover .fx{margin-left:6px}` },
-
-    { id: 'density', zh: '密度切换', en: 'Density toggle', dz: '紧凑与宽松两档行高', de: 'Compact and comfortable row heights',
-      pz: '只改 padding 与 font-size，别改结构，切换加 200ms 过渡。', pe: 'Change padding and font-size only, with a 200ms transition.',
-      demo: 'list', css: `@keyframes fxk{0%,40%{height:38px;gap:8px}60%,100%{height:66px;gap:16px}}.fx{animation:fxk 3s ${E} infinite alternate}` },
-
-    { id: 'cardgrid', zh: '卡片网格入场', en: 'Card grid entrance', dz: '卡片从左上角波浪式出现', de: 'Cards ripple in from the top-left',
-      pz: 'delay 按行列距离计算，比单纯 index 更自然。', pe: 'Delay by grid distance rather than flat index.',
-      demo: 'grid', css: `@keyframes fxk{from{opacity:0;transform:translateY(20px) scale(.94)}to{opacity:1;transform:none}}.fx{animation:fxk .6s ${E} infinite alternate;animation-delay:calc(var(--i)*80ms)}` },
-
-    { id: 'flipgrid', zh: '卡片翻面网格', en: 'Flip grid', dz: '悬停单张卡翻到背面', de: 'Hovering flips a single card',
-      pz: '每张卡独立 perspective，翻转 400–500ms。', pe: 'Per-card perspective, 400–500ms flip.',
-      demo: 'grid', css: `.fxgrid{perspective:900px}.fx{transition:transform .5s ${E};cursor:pointer;transform-style:preserve-3d}.fx:hover{transform:rotateY(180deg);background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2)}` },
-
-    { id: 'deck', zh: '堆叠卡组', en: 'Stacked deck', dz: '卡片像一叠牌错开', de: 'Cards fan like a deck',
-      pz: '每层轻微位移 + scale 递减，最上层完全清晰。', pe: 'Each layer offsets and scales down slightly; the top one stays crisp.',
-      demo: 'cards', css: `.fxrow{position:relative;width:200px;height:230px}.fx{position:absolute;inset:0;width:auto;transition:transform .35s ${E}}.fx:nth-child(1){transform:rotate(-6deg) translateY(6px)}.fx:nth-child(2){transform:rotate(3deg)}.fx:nth-child(3){transform:rotate(-1deg) translateY(-4px);box-shadow:0 12px 28px rgba(48,66,92,.16)}.fxrow:hover .fx:nth-child(1){transform:rotate(-14deg) translate(-40px,4px)}.fxrow:hover .fx:nth-child(2){transform:rotate(0) translateY(-8px)}.fxrow:hover .fx:nth-child(3){transform:rotate(12deg) translate(40px,4px)}` },
-
-    { id: 'railsnap', zh: '横向卡片吸附', en: 'Snap rail', dz: '横滑一张一张停', de: 'Horizontal cards snap one at a time',
-      pz: 'scroll-snap-align:start + 首尾 scroll-padding 做透出。', pe: 'scroll-snap-align:start with scroll-padding for peeking.',
-      demo: 'cards', css: `.fxrow{width:min(520px,86%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}.fx{flex:none;scroll-snap-align:start}` },
-
-    { id: 'accordionlist', zh: '互斥折叠', en: 'Accordion list', dz: '打开一项自动关掉另一项', de: 'Opening one closes the other',
-      pz: '两段动画共用时长，收起 ease-in、展开 ease-out。', pe: 'Shared duration; ease-in to close, ease-out to open.',
-      demo: 'list', css: `@keyframes fxa{0%,45%{height:120px}55%,100%{height:52px}}@keyframes fxb{0%,45%{height:52px}55%,100%{height:120px}}.fx:nth-child(1){align-items:flex-start;padding-top:16px;animation:fxa 3.2s ${E} infinite alternate}.fx:nth-child(4){align-items:flex-start;padding-top:16px;animation:fxb 3.2s ${E} infinite alternate}` },
-
-    { id: 'infinite', zh: '无限滚动补位', en: 'Infinite scroll', dz: '滚到底自动追加下一批', de: 'More items append at the bottom',
-      pz: '底部放哨兵元素，进入视口就加载；先渲染骨架再替换。', pe: 'A sentinel at the bottom triggers the fetch; render skeletons first.',
-      demo: 'list', css: `@keyframes fxk{0%,60%{opacity:.35;transform:translateY(10px)}100%{opacity:1;transform:none}}.fx:nth-child(5),.fx:nth-child(6){animation:fxk 1.8s ${E} infinite alternate}.fx:nth-child(6){animation-delay:.2s}` },
-
-    { id: 'selectmulti', zh: '多选批量条', en: 'Multi-select bar', dz: '选中后底部弹出批量操作条', de: 'A batch action bar rises when rows are selected',
-      pz: '选中行加左侧色条与浅底，底部条 translateY 弹入。', pe: 'Tint selected rows; slide the action bar up from the bottom.',
-      demo: 'list', css: `@keyframes fxk{0%,30%{transform:translateY(70px);opacity:0}60%,100%{transform:none;opacity:1}}.fxcol{position:relative;padding-bottom:56px}.fx:nth-child(2),.fx:nth-child(3){background:#eaf1e5;border-color:#4d8ba6}.fxcol::after{content:'';position:absolute;left:0;right:0;bottom:0;height:46px;background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);border-radius:10px;animation:fxk 2.6s ${E} infinite alternate}` },
-
-    { id: 'timelinegroup', zh: '时间分组', en: 'Time grouping', dz: '按今天/昨天分段', de: 'Grouped by today / yesterday',
-      pz: '分组标题用小号大写 + 字距，行之间不加分割线。', pe: 'Small uppercase group labels with tracking; no rules between rows.',
-      demo: 'list', css: `.fx:nth-child(1),.fx:nth-child(4){height:26px;background:none;border:0;font-size:11px;letter-spacing:.12em;color:#9a9ca6;padding-left:2px}.fx:nth-child(1) i,.fx:nth-child(4) i{display:none}.fx:nth-child(1) u,.fx:nth-child(4) u{max-width:70px;background:#e2e4e8}` },
-
-    { id: 'pinrow', zh: '置顶行', en: 'Pinned row', dz: '置顶项永远在最上并带标记', de: 'Pinned items stay on top with a marker',
-      pz: '置顶行加轻微底色与图标，与普通行有 8px 额外间距。', pe: 'Tint pinned rows, add an icon and 8px extra spacing.',
-      demo: 'list', css: `.fx:first-child{background:#fdf1f3;border-color:#f4c3ce;margin-bottom:8px}.fx:first-child i{background:#e8879c}` },
-
-    { id: 'countbadge', zh: '数量角标变化', en: 'Count badge change', dz: '数字变化时角标弹一下', de: 'The badge pops when its number changes',
-      pz: '数值变化触发一次 scale 过冲，别用闪烁。', pe: 'One scale overshoot per change — no blinking.',
-      demo: 'list', css: `@keyframes fxk{0%,70%{transform:scale(1)}80%{transform:scale(1.35)}100%{transform:scale(1)}}.fx i{border-radius:50%;background:#e8879c;animation:fxk 2s ${E} infinite;animation-delay:calc(var(--i)*200ms)}` }
+  "id": "list",
+  "zh": "列表 / 卡片编排",
+  "en": "Lists & card choreography",
+  "dz": "一堆条目怎么进场、排序、操作",
+  "de": "How many items arrive, sort and respond",
+  "items": [
+    {
+      "id": "staggerin",
+      "zh": "逐行入场",
+      "en": "Row stagger in",
+      "dz": "行一条条淡入",
+      "de": "Rows fade in one by one",
+      "pz": "delay = index × 60ms，超过 10 行后 delay 封顶。",
+      "pe": "delay = index × 60ms, capped after ten rows.",
+      "demo": "list",
+      "params": [
+        {
+          "k": "s",
+          "zh": "间隔",
+          "en": "Stagger",
+          "min": 20,
+          "max": 200,
+          "step": 10,
+          "def": 70,
+          "unit": "ms"
+        }
+      ],
+      "css": "@keyframes fxk{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}.fx{animation:fxk .6s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*var(--s,70ms))}"
+    },
+    {
+      "id": "cascade",
+      "zh": "侧向级联",
+      "en": "Side cascade",
+      "dz": "行从左侧依次推入",
+      "de": "Rows push in from the left in sequence",
+      "pz": "translateX(-24px)→0，配合极短的 blur 更顺。",
+      "pe": "translateX(-24px)→0, optionally with a tiny blur.",
+      "demo": "list",
+      "css": "@keyframes fxk{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:none}}.fx{animation:fxk .55s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*90ms)}"
+    },
+    {
+      "id": "hoverrow",
+      "zh": "行悬停",
+      "en": "Row hover",
+      "dz": "整行轻微变色并右移",
+      "de": "The row tints and nudges right",
+      "pz": "背景色 + 2px 右移，别加边框免得跳动。",
+      "pe": "Background tint plus a 2px nudge — no border, it causes jitter.",
+      "demo": "list",
+      "css": ".fx{transition:all .18s ease;cursor:pointer}.fx:hover{background:#f3f4f6;transform:translateX(4px);border-color:#dfe2e6}"
+    },
+    {
+      "id": "stripes",
+      "zh": "斑马纹",
+      "en": "Zebra rows",
+      "dz": "隔行浅色，方便横向读",
+      "de": "Alternating tint helps you track across",
+      "pz": "nth-child(even) 用最浅一档灰，别用边框分隔。",
+      "pe": "nth-child(even) with the lightest grey; skip the borders.",
+      "demo": "list",
+      "css": ".fx{border:0;border-radius:8px}.fx:nth-child(even){background:#f5f6f8}"
+    },
+    {
+      "id": "expandrow",
+      "zh": "行内展开",
+      "en": "Expand row",
+      "dz": "点开行在原地展开详情",
+      "de": "The row opens in place",
+      "pz": "grid-template-rows:0fr→1fr，箭头同步旋转。",
+      "pe": "grid-template-rows 0fr→1fr with the chevron rotating in sync.",
+      "demo": "list",
+      "css": "@keyframes fxk{0%,25%{height:52px}65%,100%{height:130px}}.fx:nth-child(2){align-items:flex-start;padding-top:16px;animation:fxk 3s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "swipe",
+      "zh": "滑动露出操作",
+      "en": "Swipe actions",
+      "dz": "左滑露出删除按钮",
+      "de": "Swipe left to expose delete",
+      "pz": "行 translateX，底层操作按钮固定；超过阈值直接执行。",
+      "pe": "Translate the row over fixed action buttons; past a threshold, commit.",
+      "demo": "list",
+      "css": "@keyframes fxk{0%,30%{transform:translateX(0)}70%,100%{transform:translateX(-88px)}}.fxcol{position:relative}.fx{position:relative;z-index:1}.fx:nth-child(3){animation:fxk 2.8s cubic-bezier(.22,1,.36,1) infinite alternate}.fxcol::after{content:'';position:absolute;right:0;top:110px;width:88px;height:52px;background:#e8879c;border-radius:10px}"
+    },
+    {
+      "id": "reorder",
+      "zh": "拖拽排序",
+      "en": "Drag to reorder",
+      "dz": "拖起来的行浮起，其他行让位",
+      "de": "The dragged row lifts, the rest make room",
+      "pz": "拖起项加阴影与 scale(1.02)，其他行用 transform 让位（FLIP）。",
+      "pe": "Lift with shadow and scale(1.02); shift siblings with FLIP transforms.",
+      "demo": "list",
+      "css": "@keyframes fxk{0%,100%{transform:translateY(0) scale(1);box-shadow:none}50%{transform:translateY(62px) scale(1.03);box-shadow:0 12px 26px rgba(48,66,92,.18)}}.fx:nth-child(2){position:relative;z-index:2;animation:fxk 3s cubic-bezier(.22,1,.36,1) infinite}"
+    },
+    {
+      "id": "removerow",
+      "zh": "删除塌陷",
+      "en": "Remove & collapse",
+      "dz": "删掉的行收起，下面补位",
+      "de": "The removed row collapses and the rest close up",
+      "pz": "先淡出 + 横移，再收 height，两段共 320ms。",
+      "pe": "Fade and slide first, then collapse height — 320ms total.",
+      "demo": "list",
+      "css": "@keyframes fxk{0%{opacity:1;height:52px;margin-bottom:0}50%{opacity:0;height:52px}100%{opacity:0;height:0;margin-bottom:-10px}}.fx:nth-child(3){overflow:hidden;animation:fxk 2.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "addrow",
+      "zh": "新增行长出",
+      "en": "Add row",
+      "dz": "新行从零高度长出并高亮一下",
+      "de": "A new row grows in and flashes once",
+      "pz": "高度展开 + 一次淡黄底闪现（500ms）标示“这是新的”。",
+      "pe": "Grow the height, then flash a soft highlight for 500ms.",
+      "demo": "list",
+      "css": "@keyframes fxk{0%{height:0;opacity:0;background:#f6f3d8}40%{height:52px;opacity:1;background:#f6f3d8}100%{height:52px;background:#fcfcfb}}.fx:first-child{overflow:hidden;animation:fxk 2.2s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "filtershuffle",
+      "zh": "筛选重排",
+      "en": "Filter shuffle",
+      "dz": "过滤后剩下的项平滑归位",
+      "de": "Survivors glide into their new places",
+      "pz": "离场项 fade+scale，留下项用 FLIP 平移，别整体重绘。",
+      "pe": "Fade out the removed, FLIP the survivors — never re-render blind.",
+      "demo": "list",
+      "css": "@keyframes fxo{0%,40%{opacity:1;transform:none}100%{opacity:0;transform:scale(.94)}}@keyframes fxm{0%,40%{transform:none}100%{transform:translateY(-62px)}}.fx:nth-child(2),.fx:nth-child(4){animation:fxo 2.4s cubic-bezier(.22,1,.36,1) infinite alternate}.fx:nth-child(3),.fx:nth-child(5){animation:fxm 2.4s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "sortlist",
+      "zh": "排序动画",
+      "en": "Sort animation",
+      "dz": "排序时行互相交换位置",
+      "de": "Rows swap places when sorted",
+      "pz": "FLIP：记录旧位置，重排后反向补偿再播放。",
+      "pe": "FLIP: record old rects, invert after the re-order, play.",
+      "demo": "list",
+      "css": "@keyframes fxa{0%,30%{transform:none}70%,100%{transform:translateY(186px)}}@keyframes fxb{0%,30%{transform:none}70%,100%{transform:translateY(-62px)}}.fx:first-child{animation:fxa 3s cubic-bezier(.22,1,.36,1) infinite alternate;z-index:2;position:relative}.fx:nth-child(2),.fx:nth-child(3),.fx:nth-child(4){animation:fxb 3s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "groupsticky",
+      "zh": "分组吸顶",
+      "en": "Sticky group header",
+      "dz": "分组标题贴住顶部直到下一组",
+      "de": "Group headers pin until the next group",
+      "pz": "position:sticky;top:0 给分组标题，注意层级与背景不透明。",
+      "pe": "Sticky headers with an opaque background and a z-index.",
+      "demo": "list",
+      "css": ".fx:nth-child(1),.fx:nth-child(4){position:sticky;top:0;background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);color:#fff;z-index:2;height:38px;font-size:12px}.fx:nth-child(1) i,.fx:nth-child(4) i,.fx:nth-child(1) u,.fx:nth-child(4) u{display:none}"
+    },
+    {
+      "id": "checklist",
+      "zh": "勾选完成",
+      "en": "Check off",
+      "dz": "勾选后整行变淡加删除线",
+      "de": "Checked rows dim and strike through",
+      "pz": "勾 + 文字划线 + 透明度 60%，200ms 内完成。",
+      "pe": "Tick, strike-through and 60% opacity, all inside 200ms.",
+      "demo": "list",
+      "css": ".fx{cursor:pointer;transition:all .2s}.fx i{border-radius:50%;transition:background .2s}.fx:nth-child(2),.fx:nth-child(5){opacity:.5}.fx:nth-child(2) i,.fx:nth-child(5) i{background:#4d8ba6}.fx:nth-child(2) u,.fx:nth-child(5) u{background:linear-gradient(#e4e5e0,#e4e5e0) center/100% 2px no-repeat,#eceee6}"
+    },
+    {
+      "id": "avatars",
+      "zh": "头像叠放",
+      "en": "Avatar stack",
+      "dz": "头像互相压边，悬停展开",
+      "de": "Overlapping avatars fan out on hover",
+      "pz": "负 margin 叠放 + hover 时恢复间距，最多显示 4 个 + N。",
+      "pe": "Negative margins, restored on hover; show four plus a count.",
+      "demo": "list",
+      "css": ".fxcol{flex-direction:row;justify-content:center;gap:0;width:auto}.fx{width:56px;height:56px;border-radius:50%;padding:0;margin-left:-16px;border:3px solid #fff;background:#4d8ba6;transition:margin .3s cubic-bezier(.22,1,.36,1)}.fx i,.fx u{display:none}.fxcol:hover .fx{margin-left:6px}"
+    },
+    {
+      "id": "density",
+      "zh": "密度切换",
+      "en": "Density toggle",
+      "dz": "紧凑与宽松两档行高",
+      "de": "Compact and comfortable row heights",
+      "pz": "只改 padding 与 font-size，别改结构，切换加 200ms 过渡。",
+      "pe": "Change padding and font-size only, with a 200ms transition.",
+      "demo": "list",
+      "css": "@keyframes fxk{0%,40%{height:38px;gap:8px}60%,100%{height:66px;gap:16px}}.fx{animation:fxk 3s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "cardgrid",
+      "zh": "卡片网格入场",
+      "en": "Card grid entrance",
+      "dz": "卡片从左上角波浪式出现",
+      "de": "Cards ripple in from the top-left",
+      "pz": "delay 按行列距离计算，比单纯 index 更自然。",
+      "pe": "Delay by grid distance rather than flat index.",
+      "demo": "grid",
+      "css": "@keyframes fxk{from{opacity:0;transform:translateY(20px) scale(.94)}to{opacity:1;transform:none}}.fx{animation:fxk .6s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*80ms)}"
+    },
+    {
+      "id": "flipgrid",
+      "zh": "卡片翻面网格",
+      "en": "Flip grid",
+      "dz": "悬停单张卡翻到背面",
+      "de": "Hovering flips a single card",
+      "pz": "每张卡独立 perspective，翻转 400–500ms。",
+      "pe": "Per-card perspective, 400–500ms flip.",
+      "demo": "grid",
+      "css": ".fxgrid{perspective:900px}.fx{transition:transform .5s cubic-bezier(.22,1,.36,1);cursor:pointer;transform-style:preserve-3d}.fx:hover{transform:rotateY(180deg);background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2)}"
+    },
+    {
+      "id": "deck",
+      "zh": "堆叠卡组",
+      "en": "Stacked deck",
+      "dz": "卡片像一叠牌错开",
+      "de": "Cards fan like a deck",
+      "pz": "每层轻微位移 + scale 递减，最上层完全清晰。",
+      "pe": "Each layer offsets and scales down slightly; the top one stays crisp.",
+      "demo": "cards",
+      "css": ".fxrow{position:relative;width:200px;height:230px}.fx{position:absolute;inset:0;width:auto;transition:transform .35s cubic-bezier(.22,1,.36,1)}.fx:nth-child(1){transform:rotate(-6deg) translateY(6px)}.fx:nth-child(2){transform:rotate(3deg)}.fx:nth-child(3){transform:rotate(-1deg) translateY(-4px);box-shadow:0 12px 28px rgba(48,66,92,.16)}.fxrow:hover .fx:nth-child(1){transform:rotate(-14deg) translate(-40px,4px)}.fxrow:hover .fx:nth-child(2){transform:rotate(0) translateY(-8px)}.fxrow:hover .fx:nth-child(3){transform:rotate(12deg) translate(40px,4px)}"
+    },
+    {
+      "id": "railsnap",
+      "zh": "横向卡片吸附",
+      "en": "Snap rail",
+      "dz": "横滑一张一张停",
+      "de": "Horizontal cards snap one at a time",
+      "pz": "scroll-snap-align:start + 首尾 scroll-padding 做透出。",
+      "pe": "scroll-snap-align:start with scroll-padding for peeking.",
+      "demo": "cards",
+      "css": ".fxrow{width:min(520px,86%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}.fx{flex:none;scroll-snap-align:start}"
+    },
+    {
+      "id": "accordionlist",
+      "zh": "互斥折叠",
+      "en": "Accordion list",
+      "dz": "打开一项自动关掉另一项",
+      "de": "Opening one closes the other",
+      "pz": "两段动画共用时长，收起 ease-in、展开 ease-out。",
+      "pe": "Shared duration; ease-in to close, ease-out to open.",
+      "demo": "list",
+      "css": "@keyframes fxa{0%,45%{height:120px}55%,100%{height:52px}}@keyframes fxb{0%,45%{height:52px}55%,100%{height:120px}}.fx:nth-child(1){align-items:flex-start;padding-top:16px;animation:fxa 3.2s cubic-bezier(.22,1,.36,1) infinite alternate}.fx:nth-child(4){align-items:flex-start;padding-top:16px;animation:fxb 3.2s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "infinite",
+      "zh": "无限滚动补位",
+      "en": "Infinite scroll",
+      "dz": "滚到底自动追加下一批",
+      "de": "More items append at the bottom",
+      "pz": "底部放哨兵元素，进入视口就加载；先渲染骨架再替换。",
+      "pe": "A sentinel at the bottom triggers the fetch; render skeletons first.",
+      "demo": "list",
+      "css": "@keyframes fxk{0%,60%{opacity:.35;transform:translateY(10px)}100%{opacity:1;transform:none}}.fx:nth-child(5),.fx:nth-child(6){animation:fxk 1.8s cubic-bezier(.22,1,.36,1) infinite alternate}.fx:nth-child(6){animation-delay:.2s}"
+    },
+    {
+      "id": "selectmulti",
+      "zh": "多选批量条",
+      "en": "Multi-select bar",
+      "dz": "选中后底部弹出批量操作条",
+      "de": "A batch action bar rises when rows are selected",
+      "pz": "选中行加左侧色条与浅底，底部条 translateY 弹入。",
+      "pe": "Tint selected rows; slide the action bar up from the bottom.",
+      "demo": "list",
+      "css": "@keyframes fxk{0%,30%{transform:translateY(70px);opacity:0}60%,100%{transform:none;opacity:1}}.fxcol{position:relative;padding-bottom:56px}.fx:nth-child(2),.fx:nth-child(3){background:#eaf1e5;border-color:#4d8ba6}.fxcol::after{content:'';position:absolute;left:0;right:0;bottom:0;height:46px;background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);border-radius:10px;animation:fxk 2.6s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "timelinegroup",
+      "zh": "时间分组",
+      "en": "Time grouping",
+      "dz": "按今天/昨天分段",
+      "de": "Grouped by today / yesterday",
+      "pz": "分组标题用小号大写 + 字距，行之间不加分割线。",
+      "pe": "Small uppercase group labels with tracking; no rules between rows.",
+      "demo": "list",
+      "css": ".fx:nth-child(1),.fx:nth-child(4){height:26px;background:none;border:0;font-size:11px;letter-spacing:.12em;color:#9a9ca6;padding-left:2px}.fx:nth-child(1) i,.fx:nth-child(4) i{display:none}.fx:nth-child(1) u,.fx:nth-child(4) u{max-width:70px;background:#e2e4e8}"
+    },
+    {
+      "id": "pinrow",
+      "zh": "置顶行",
+      "en": "Pinned row",
+      "dz": "置顶项永远在最上并带标记",
+      "de": "Pinned items stay on top with a marker",
+      "pz": "置顶行加轻微底色与图标，与普通行有 8px 额外间距。",
+      "pe": "Tint pinned rows, add an icon and 8px extra spacing.",
+      "demo": "list",
+      "css": ".fx:first-child{background:#fdf1f3;border-color:#f4c3ce;margin-bottom:8px}.fx:first-child i{background:#e8879c}"
+    },
+    {
+      "id": "countbadge",
+      "zh": "数量角标变化",
+      "en": "Count badge change",
+      "dz": "数字变化时角标弹一下",
+      "de": "The badge pops when its number changes",
+      "pz": "数值变化触发一次 scale 过冲，别用闪烁。",
+      "pe": "One scale overshoot per change — no blinking.",
+      "demo": "list",
+      "css": "@keyframes fxk{0%,70%{transform:scale(1)}80%{transform:scale(1.35)}100%{transform:scale(1)}}.fx i{border-radius:50%;background:#e8879c;animation:fxk 2s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i)*200ms)}"
+    },
+    {
+      "id": "list-selection",
+      "zh": "列表选择",
+      "en": "List selection",
+      "dz": "列表支持单选、多选和全选，并显示部分选中状态。",
+      "de": "Support single, multi, and select-all with partial state.",
+      "pz": "列表支持单选、多选和全选，并显示部分选中状态。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Support single, multi, and select-all with partial state. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "select-visible",
+      "zh": "选择当前页",
+      "en": "Select visible",
+      "dz": "分页列表区分选择当前页与全部结果。",
+      "de": "Distinguish selecting the current page from all results.",
+      "pz": "分页列表区分选择当前页与全部结果。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Distinguish selecting the current page from all results. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "range-selection",
+      "zh": "范围选择",
+      "en": "Range selection",
+      "dz": "Shift 选择连续范围并兼容键盘导航。",
+      "de": "Select contiguous ranges with Shift and keyboard navigation.",
+      "pz": "Shift 选择连续范围并兼容键盘导航。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Select contiguous ranges with Shift and keyboard navigation. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-reorder",
+      "zh": "列表重排",
+      "en": "List reorder",
+      "dz": "重排显示插入位置并提供撤销。",
+      "de": "Show insertion position and offer undo.",
+      "pz": "重排显示插入位置并提供撤销。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Show insertion position and offer undo. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-group",
+      "zh": "列表分组",
+      "en": "List grouping",
+      "dz": "分组标题保持语义和折叠状态，筛选后数量准确。",
+      "de": "Keep group semantics and accurate counts after filtering.",
+      "pz": "分组标题保持语义和折叠状态，筛选后数量准确。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Keep group semantics and accurate counts after filtering. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-collapse",
+      "zh": "列表折叠",
+      "en": "Collapsible list",
+      "dz": "折叠项目不丢失选择、焦点和未读状态。",
+      "de": "Keep selection, focus, and unread state when collapsed.",
+      "pz": "折叠项目不丢失选择、焦点和未读状态。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Keep selection, focus, and unread state when collapsed. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-virtual",
+      "zh": "虚拟列表",
+      "en": "Virtualized list",
+      "dz": "虚拟化列表保留测量、键盘焦点和滚动锚点。",
+      "de": "Preserve measurement, keyboard focus, and scroll anchors.",
+      "pz": "虚拟化列表保留测量、键盘焦点和滚动锚点。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Preserve measurement, keyboard focus, and scroll anchors. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-infinite",
+      "zh": "无限列表",
+      "en": "Infinite list",
+      "dz": "加载更多显示进度、失败和结束，不遮挡现有内容。",
+      "de": "Show progress, failure, and end without hiding existing content.",
+      "pz": "加载更多显示进度、失败和结束，不遮挡现有内容。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Show progress, failure, and end without hiding existing content. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-empty",
+      "zh": "列表空状态",
+      "en": "List empty state",
+      "dz": "空列表区分从未创建、筛选无结果和权限不足。",
+      "de": "Distinguish never-created, filtered-empty, and permission-limited.",
+      "pz": "空列表区分从未创建、筛选无结果和权限不足。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Distinguish never-created, filtered-empty, and permission-limited. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-error",
+      "zh": "列表错误",
+      "en": "List error state",
+      "dz": "列表请求失败保留筛选和重试入口。",
+      "de": "Keep filters and retry after list failure.",
+      "pz": "列表请求失败保留筛选和重试入口。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Keep filters and retry after list failure. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-skeleton",
+      "zh": "列表骨架",
+      "en": "List skeleton",
+      "dz": "骨架匹配真实行高和列结构，加载后不跳动。",
+      "de": "Match real row height and structure to prevent shifts.",
+      "pz": "骨架匹配真实行高和列结构，加载后不跳动。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Match real row height and structure to prevent shifts. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-density",
+      "zh": "列表密度",
+      "en": "List density",
+      "dz": "密度切换不改变点击、键盘和触控目标。",
+      "de": "Density changes do not shrink interaction targets.",
+      "pz": "密度切换不改变点击、键盘和触控目标。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Density changes do not shrink interaction targets. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-keyboard",
+      "zh": "列表键盘",
+      "en": "List keyboard",
+      "dz": "上下键移动当前项，Enter 打开，Escape 返回列表。",
+      "de": "Arrows move, Enter opens, and Escape returns to the list.",
+      "pz": "上下键移动当前项，Enter 打开，Escape 返回列表。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Arrows move, Enter opens, and Escape returns to the list. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-typeahead",
+      "zh": "列表首字母",
+      "en": "List typeahead",
+      "dz": "首字母导航按当前排序和语言匹配。",
+      "de": "Typeahead follows current sort and locale.",
+      "pz": "首字母导航按当前排序和语言匹配。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Typeahead follows current sort and locale. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-focus",
+      "zh": "列表焦点",
+      "en": "List focus",
+      "dz": "删除或重排后焦点落到可预测的相邻项目。",
+      "de": "After delete or reorder, focus lands predictably.",
+      "pz": "删除或重排后焦点落到可预测的相邻项目。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "After delete or reorder, focus lands predictably. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-status",
+      "zh": "列表状态",
+      "en": "List status",
+      "dz": "列表行的选中、禁用、加载和错误状态同时可见。",
+      "de": "Expose selected, disabled, loading, and error row states.",
+      "pz": "列表行的选中、禁用、加载和错误状态同时可见。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Expose selected, disabled, loading, and error row states. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-action-menu",
+      "zh": "行操作菜单",
+      "en": "Row action menu",
+      "dz": "行操作菜单不影响行选中和键盘导航。",
+      "de": "Row actions do not break selection or keyboard movement.",
+      "pz": "行操作菜单不影响行选中和键盘导航。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Row actions do not break selection or keyboard movement. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-swipe",
+      "zh": "滑动操作",
+      "en": "Swipe actions",
+      "dz": "移动端滑动操作提供按钮等价路径并可撤销。",
+      "de": "Provide button equivalents and undo for swipe actions.",
+      "pz": "移动端滑动操作提供按钮等价路径并可撤销。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Provide button equivalents and undo for swipe actions. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-pinned",
+      "zh": "固定项目",
+      "en": "Pinned item",
+      "dz": "固定项目保持在列表顶部并说明排序规则。",
+      "de": "Keep pinned items at top with an explicit ordering rule.",
+      "pz": "固定项目保持在列表顶部并说明排序规则。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Keep pinned items at top with an explicit ordering rule. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-favorite",
+      "zh": "收藏项目",
+      "en": "Favorite item",
+      "dz": "收藏状态持久化并在跨标签变化时同步。",
+      "de": "Persist favorite state and sync across tabs.",
+      "pz": "收藏状态持久化并在跨标签变化时同步。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Persist favorite state and sync across tabs. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-search",
+      "zh": "列表内搜索",
+      "en": "List search",
+      "dz": "列表内搜索显示命中数量并保留原始排序。",
+      "de": "Show match count while preserving original order.",
+      "pz": "列表内搜索显示命中数量并保留原始排序。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Show match count while preserving original order. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-filter-chip",
+      "zh": "列表筛选芯片",
+      "en": "List filter chip",
+      "dz": "筛选芯片显示来源、清除和当前范围。",
+      "de": "Show source, clear action, and scope.",
+      "pz": "筛选芯片显示来源、清除和当前范围。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Show source, clear action, and scope. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-sort",
+      "zh": "列表排序",
+      "en": "List sort",
+      "dz": "排序显示方向、字段和稳定的并列规则。",
+      "de": "Show direction, field, and stable tie-breaker.",
+      "pz": "排序显示方向、字段和稳定的并列规则。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Show direction, field, and stable tie-breaker. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-pagination",
+      "zh": "列表分页",
+      "en": "List pagination",
+      "dz": "分页返回后恢复列表位置和已选项目。",
+      "de": "Restore position and selection after pagination return.",
+      "pz": "分页返回后恢复列表位置和已选项目。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Restore position and selection after pagination return. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-export",
+      "zh": "列表导出",
+      "en": "List export",
+      "dz": "导出说明当前筛选、列和数据时间。",
+      "de": "State filters, columns, and data time in exports.",
+      "pz": "导出说明当前筛选、列和数据时间。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "State filters, columns, and data time in exports. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-share",
+      "zh": "列表分享",
+      "en": "List share",
+      "dz": "分享链接编码筛选范围，不泄露本地状态。",
+      "de": "Encode filter scope without leaking local state.",
+      "pz": "分享链接编码筛选范围，不泄露本地状态。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Encode filter scope without leaking local state. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-locale",
+      "zh": "列表语言",
+      "en": "List locale",
+      "dz": "标题、空状态、筛选和错误统一跟随语言。",
+      "de": "Titles, empty, filters, and errors follow locale.",
+      "pz": "标题、空状态、筛选和错误统一跟随语言。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Titles, empty, filters, and errors follow locale. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-theme",
+      "zh": "列表主题",
+      "en": "List theme",
+      "dz": "暗色和高对比主题下选中、悬停和焦点仍可区分。",
+      "de": "Keep selected, hover, and focus distinct in dark and high contrast.",
+      "pz": "暗色和高对比主题下选中、悬停和焦点仍可区分。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Keep selected, hover, and focus distinct in dark and high contrast. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-mobile",
+      "zh": "移动列表",
+      "en": "Mobile list",
+      "dz": "窄屏将次要字段转为详情行而不是横向挤压。",
+      "de": "Move secondary fields into detail rows on narrow screens.",
+      "pz": "窄屏将次要字段转为详情行而不是横向挤压。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Move secondary fields into detail rows on narrow screens. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    },
+    {
+      "id": "list-audit",
+      "zh": "列表审查",
+      "en": "List audit",
+      "dz": "发布前检查大数据量、键盘、触摸、失败、语言和隐私。",
+      "de": "Audit scale, keyboard, touch, failure, locale, and privacy.",
+      "pz": "发布前检查大数据量、键盘、触摸、失败、语言和隐私。 在大数据量、移动端和中英文切换下复核。",
+      "pe": "Audit scale, keyboard, touch, failure, locale, and privacy. Validate scale, mobile, and locale switching.",
+      "demo": "list",
+      "css": ".fx{background:#f6f8f5;color:#253228;border:1px solid #c6d2c5;border-radius:10px;box-shadow:0 5px 16px #243b2714}"
+    }
   ]
 };

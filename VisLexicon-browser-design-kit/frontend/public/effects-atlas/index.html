@@ -223,6 +223,9 @@
             <div style="border:1px solid #e4e5e0;border-radius:12px;overflow:hidden;background:#fbfbf8">
               <div>
                 <div id="fx-stage" class="fxone {{ stageCls }}" style="{{ stageBox }}">
+                  <sc-if value="{{ referenceImage }}" hint-placeholder-val="{{ false }}">
+                    <img src="{{ referenceImage }}" alt="{{ referenceImageAlt }}" style="display:block;max-width:100%;max-height:360px;object-fit:contain;border-radius:8px;box-shadow:0 12px 36px rgba(35,35,47,.12)" />
+                  </sc-if>
                   <div style="{{ stageInner }}">
                     <sc-if value="{{ isText }}" hint-placeholder-val="{{ true }}">
                       <div class="fx" data-text="{{ sample }}">
@@ -328,7 +331,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;defaultLang&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;zh&quot;,&quot;en&quot;],&quot;default&quot;:&quot;zh&quot;,&quot;tsType&quot;:&quot;'zh'|'en'&quot;}}">
 const T = {
-  zh: { overview: '图谱总览', cats: (n) => `${n} 类`, hubEyebrow: 'ATLAS · OVERVIEW',
+  zh: { overview: '图谱总览', cats: (n) => `${n} 类`, hubEyebrow: '图鉴 · 总览',
         hubTitle: '前端效果与设计语言图谱', hubSub: '从整页的设计流派，到一个字符的抖动。先选一层，再往里看——每条都给了能直接交给模型的专业名词。',
         brand: '效果图谱', sub: 'EFFECTS ATLAS', search: '搜索效果、场景、术语…', total: (n) => `${n} 个效果`, replay: '重播', play: '暂停', paused: '继续', speed: '速度', tune: '效果参数', reset: '重置', prompt: '可复制提示词', copy: '复制提示词', copied: '已复制', how: '实现要点', refs: '参考原站', back: '返回', more: '继续加载', empty: '没有匹配的效果', results: (n) => `${n} 条结果`, count: (n, m) => `共 ${n} 个 · 已加载 ${m}`, all: '全部结果' },
   en: { overview: 'Overview', cats: (n) => `${n} families`, hubEyebrow: 'ATLAS · OVERVIEW',
@@ -347,17 +350,19 @@ class Component extends DCLogic {
   componentDidMount() {
     const hostParams = new URLSearchParams(window.location.search);
     const initialLang = hostParams.get('lang') === 'en' ? 'en' : 'zh';
+    this._hostLang = initialLang;
     document.getElementById('dc-root')?.classList.toggle('host-dark', hostParams.get('theme') === 'dark');
     this._hostLocale = (event) => {
-      if (event.origin !== window.location.origin || event.data?.type !== 'vislexicon-host-state') return;
+      if (event.source !== window.parent || event.origin !== window.location.origin || event.data?.type !== 'vislexicon-host-state') return;
       const lang = event.data.locale === 'en' ? 'en' : 'zh';
+      this._hostLang = lang;
       if (this.state.lang !== lang) this.setState({ lang });
       document.getElementById('dc-root')?.classList.toggle('host-dark', event.data.theme === 'dark');
     };
     window.addEventListener('message', this._hostLocale);
     import('./fx/index.js').then(async (mod) => {
       const cats = await mod.loadCategories();
-      this.setState({ mod, cats, catId: cats[0] && cats[0].id, lang: initialLang }, this.sync);
+      this.setState({ mod, cats, catId: cats[0] && cats[0].id, lang: this._hostLang }, this.sync);
     });
     this._keys = (e) => {
       if (e.target && /input|textarea/i.test(e.target.tagName)) { if (e.key === 'Escape') e.target.blur(); return; }
@@ -638,6 +643,8 @@ class Component extends DCLogic {
       crumb: cur ? `${nm(cur.cat)} / ${nm(it)}` : '',
       prev: () => this.step(-1), next: () => this.step(1),
       stageOn: s.stageOn,
+      referenceImage: it && it.id === 'minimalism' ? 'assets/ref/minimalism-ia.png' : '',
+      referenceImageAlt: L === 'zh' ? '真实网站参考：iA' : 'Live website reference: iA',
       stageCls: it && it.demo === 'page' ? 'aur' : '',
       stageBox: Object.assign({ minHeight: 'min(50vh,430px)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '32px', overflow: 'hidden' },
         it && it.demo === 'page' ? { background: '#f7f8f4' } : this.dots(22)),

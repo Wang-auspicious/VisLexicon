@@ -14,6 +14,7 @@ const titles = new Map()
 const cssHashes = new Map()
 const bilingualFields = ['zh', 'en', 'dz', 'de', 'pz', 'pe']
 const copyDifferences = []
+const templateLike = []
 const hash = data => createHash('sha256').update(data).digest('hex')
 const record = (map, key, id) => map.set(key, [...(map.get(key) || []), id])
 
@@ -33,6 +34,7 @@ for (const name of filenames) {
     }
     if (!index.STAGES[item.demo] || !index.BASE[item.demo]) problems.push({ id: key, issue: `Unknown demo ${item.demo}` })
     if (!item.css?.trim()) problems.push({ id: key, issue: 'Empty CSS' })
+    if (/用于建立可解释的/.test(item.dz || '') || /creates an explainable/.test(item.de || '') || /使用令牌和约束表达/.test(item.pz || '') || /Express .* with tokens and constraints/.test(item.pe || '')) templateLike.push({ id: key, issue: 'Template-like explanation' })
     record(titles, `${item.en}`.normalize('NFKC').trim().toLowerCase(), key)
     record(cssHashes, hash(item.css || ''), key)
   }
@@ -53,6 +55,7 @@ const report = {
   missingModules: index.CATEGORY_FILES.filter(id => !loaded.has(id)),
   groups: index.GROUPS.map(g => ({ id: g.id, zh: g.zh, count: categories.filter(c => g.of.includes(c.id)).reduce((n, c) => n + c.count, 0) })),
   problems,
+  templateLike,
   duplicateTitleCandidates: [...titles].filter(([, ids]) => ids.length > 1).map(([title, ids]) => ({ title, ids })),
   identicalCssCandidates: [...cssHashes].filter(([, ids]) => ids.length > 1).map(([sha256, ids]) => ({ sha256, ids })),
   sourceCopyDifferences: copyDifferences,
@@ -63,5 +66,5 @@ if (output) {
   await fs.mkdir(path.dirname(path.resolve(output)), { recursive: true })
   await fs.writeFile(output, JSON.stringify(report, null, 2) + '\n')
 }
-console.log(JSON.stringify({ total: report.total, uniqueIdentities: report.uniqueIdentities, modules: report.modules, missingModules: report.missingModules, problems: problems.length, duplicateTitleGroups: report.duplicateTitleCandidates.length, identicalCssGroups: report.identicalCssCandidates.length, sourceCopyDifferences: copyDifferences, output }, null, 2))
+console.log(JSON.stringify({ total: report.total, uniqueIdentities: report.uniqueIdentities, modules: report.modules, missingModules: report.missingModules, problems: problems.length, templateLike: templateLike.length, duplicateTitleGroups: report.duplicateTitleCandidates.length, identicalCssGroups: report.identicalCssCandidates.length, sourceCopyDifferences: copyDifferences, output }, null, 2))
 if (process.argv.includes('--strict') && problems.length) process.exitCode = 1

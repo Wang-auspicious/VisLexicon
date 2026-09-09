@@ -1,112 +1,651 @@
-const P = (k, zh, en, min, max, step, def, unit) => ({ k, zh, en, min, max, step, def, unit: unit || '' });
-const E = 'cubic-bezier(.22,1,.36,1)';
-const ONE = '.fx:nth-child(n+2){display:none}';
-
+// Curated foundational patterns
 export default {
-  id: 'dataviz', zh: '数据可视化', en: 'Data visualisation',
-  dz: '数字怎么变成看得懂的图形', de: 'Turning numbers into shapes people read',
-  items: [
-    { id: 'bargrow', zh: '柱子生长', en: 'Bars grow', dz: '柱状图从底部长出来', de: 'Bars rise from the baseline',
-      pz: 'transform-origin:bottom 的 scaleY(0→1)，别动 height 免得重排。', pe: 'scaleY(0→1) with transform-origin bottom, not height.',
-      demo: 'chart', css: `@keyframes fxk{from{transform:scaleY(0)}to{transform:scaleY(1)}}.fx{transform-origin:bottom;animation:fxk 1.1s ${E} infinite alternate}` },
-
-    { id: 'barstagger', zh: '柱子错峰', en: 'Bars stagger', dz: '一根一根依次长出', de: 'Bars grow one after another',
-      pz: 'delay = index × 70ms，读者的视线会跟着走。', pe: 'delay = index × 70ms — the eye follows the sequence.',
-      demo: 'chart', params: [P('s', '间隔', 'Stagger', 20, 200, 10, 70, 'ms')],
-      css: `@keyframes fxk{from{transform:scaleY(0)}to{transform:scaleY(1)}}.fx{transform-origin:bottom;animation:fxk .8s ${E} infinite alternate;animation-delay:calc(var(--i)*var(--s,70ms))}` },
-
-    { id: 'hbar', zh: '横向条形', en: 'Horizontal bars', dz: '类别名长时用横条', de: 'Use horizontal bars when labels are long',
-      pz: '横条从左生长，标签左对齐、数值右对齐。', pe: 'Grow from the left; labels left, values right.',
-      demo: 'chart', css: `@keyframes fxk{from{transform:scaleX(0)}to{transform:scaleX(1)}}.fxchart{flex-direction:column;align-items:stretch;justify-content:center;width:min(420px,80%);gap:10px;height:auto}.fx{width:auto;height:26px;border-radius:4px;transform-origin:left;animation:fxk .9s ${E} infinite alternate;animation-delay:calc(var(--i)*70ms)}` },
-
-    { id: 'linedraw', zh: '折线描画', en: 'Line draw', dz: '折线像被笔画出来', de: 'The line draws itself',
-      pz: 'SVG path 的 stroke-dasharray/-dashoffset 从满到 0。', pe: 'Animate SVG stroke-dasharray/offset from full to zero.',
-      demo: 'chart', css: `@keyframes fxk{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}.fxchart{width:min(440px,82%);position:relative}.fx{opacity:.12}.fxchart::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40' preserveAspectRatio='none'%3E%3Cpolyline points='0,32 16,20 32,26 50,8 68,16 84,4 100,12' fill='none' stroke='%2323232f' stroke-width='1.6'/%3E%3C/svg%3E") center/100% 100% no-repeat;animation:fxk 1.6s ${E} infinite alternate}` },
-
-    { id: 'areafill', zh: '面积填充', en: 'Area fill', dz: '折线下方渐变填色', de: 'A gradient fills under the line',
-      pz: '线画完后面积层再淡入，两段动画错开 200ms。', pe: 'Fade the area in 200ms after the line finishes.',
-      demo: 'chart', css: `@keyframes fxk{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}.fxchart{width:min(440px,82%);position:relative}.fx{display:none}.fxchart::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40' preserveAspectRatio='none'%3E%3Cpolygon points='0,32 16,20 32,26 50,8 68,16 84,4 100,12 100,40 0,40' fill='%23365c31' fill-opacity='.18'/%3E%3Cpolyline points='0,32 16,20 32,26 50,8 68,16 84,4 100,12' fill='none' stroke='%23365c31' stroke-width='1.6'/%3E%3C/svg%3E") center/100% 100% no-repeat;animation:fxk 1.8s ${E} infinite alternate}` },
-
-    { id: 'donut', zh: '环形扫出', en: 'Donut sweep', dz: '圆环按比例扫一圈', de: 'The ring sweeps to its value',
-      pz: 'conic-gradient 的角度动画，或 SVG circle 的 dashoffset。', pe: 'Animate the conic-gradient angle, or an SVG circle dashoffset.',
-      demo: 'chart', params: [P('v', '数值', 'Value', 0, 100, 1, 68, '')],
-      css: `.fxchart{height:auto}.fx{width:200px;height:200px;border-radius:50%;background:conic-gradient(#4d8ba6 calc(var(--v,68)*1%),#eceef1 0);position:relative}.fx::after{content:'';position:absolute;inset:26px;border-radius:50%;background:#fcfcfb}${ONE}` },
-
-    { id: 'ring', zh: '进度圆环', en: 'Progress ring', dz: '细环显示完成度', de: 'A thin ring shows completion',
-      pz: 'SVG circle + stroke-dashoffset，round 线帽更友好。', pe: 'SVG circle with stroke-dashoffset and round caps.',
-      demo: 'chart', params: [P('v', '进度', 'Progress', 0, 100, 1, 72, '')],
-      css: `.fxchart{height:auto}.fx{width:190px;height:190px;border-radius:50%;background:conic-gradient(#e8879c calc(var(--v,72)*1%),#eceee6 0);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 14px),#000 calc(100% - 13px))}${ONE}` },
-
-    { id: 'gauge', zh: '仪表盘', en: 'Gauge', dz: '半圆表盘配指针', de: 'A half-dial with a needle',
-      pz: '半圆 conic-gradient + 指针 rotate，指针用 out-back 落定。', pe: 'Half conic-gradient plus a needle rotating with out-back.',
-      demo: 'chart', css: `.fxchart{height:auto}.fx{width:230px;height:115px;border-radius:115px 115px 0 0;background:conic-gradient(from 270deg,#7ab85a 0 33%,#f4dcb8 33% 66%,#e8879c 66% 100%);-webkit-mask:radial-gradient(farthest-side at 50% 100%,transparent calc(100% - 26px),#000 calc(100% - 25px))}${ONE}` },
-
-    { id: 'stacked', zh: '堆叠柱', en: 'Stacked bars', dz: '一根柱里分几段', de: 'One bar split into segments',
-      pz: '每段单独动画，从下往上依次叠加。', pe: 'Animate segments bottom-up, one after another.',
-      demo: 'chart', css: `@keyframes fxk{from{transform:scaleY(0)}to{transform:scaleY(1)}}.fx{transform-origin:bottom;background:linear-gradient(#f4dcb8 0 30%,#7ab85a 30% 62%,#4d8ba6 62% 100%);animation:fxk 1s ${E} infinite alternate;animation-delay:calc(var(--i)*60ms)}` },
-
-    { id: 'grouped', zh: '分组柱', en: 'Grouped bars', dz: '两组数据并排比较', de: 'Two series side by side',
-      pz: '组内间距小于组间间距，视觉才分得清。', pe: 'Inner gap must be smaller than the gap between groups.',
-      demo: 'chart', css: `.fxchart{gap:4px}.fx:nth-child(odd){background:#4d8ba6}.fx:nth-child(even){background:#f0c9a8;margin-right:18px}` },
-
-    { id: 'dotplot', zh: '点图', en: 'Dot plot', dz: '用点代替柱，更轻', de: 'Dots instead of bars — lighter',
-      pz: '柱子替换为端点圆 + 细连接线，适合数据点少时。', pe: 'A dot at the value with a thin stem; best for few points.',
-      demo: 'chart', css: `.fx{width:6px;background:#e0e2e6;border-radius:3px;position:relative}.fx::after{content:'';position:absolute;top:-9px;left:50%;transform:translateX(-50%);width:18px;height:18px;border-radius:50%;background:#4d8ba6}` },
-
-    { id: 'sparkline', zh: '迷你趋势线', en: 'Sparkline', dz: '嵌在文字旁的小趋势', de: 'A tiny trend that sits beside text',
-      pz: '无坐标轴、无标签，只表达方向，高度 20–32px。', pe: 'No axes or labels — direction only, 20–32px tall.',
-      demo: 'chart', css: `.fxchart{height:56px;gap:5px;align-items:flex-end}.fx{width:9px;border-radius:2px;background:#8b8e99}.fx:last-child{background:#e8879c}` },
-
-    { id: 'heat', zh: '热力格', en: 'Heat cells', dz: '颜色深浅表示大小', de: 'Color depth encodes magnitude',
-      pz: '单色系明度阶梯，别用彩虹色，色阶控制在 5–7 级。', pe: 'A single-hue lightness ramp, 5–7 steps — never rainbow.',
-      demo: 'chart', css: `.fxchart{display:grid;grid-template-columns:repeat(7,34px);grid-auto-rows:34px;gap:6px;height:auto}.fx{width:auto;height:auto;border-radius:5px;background:#4d8ba6;opacity:calc(.2 + var(--i)*.11)}` },
-
-    { id: 'waffle', zh: '华夫格', en: 'Waffle chart', dz: '一格格方块表示百分比', de: 'Squares stand in for a percentage',
-      pz: '10×10 网格，填充数量 = 百分比，比饼图更好读。', pe: 'A 10×10 grid filled to the percentage — easier than a pie.',
-      demo: 'chart', css: `.fxchart{display:grid;grid-template-columns:repeat(4,26px);grid-auto-rows:26px;gap:5px;height:auto}.fx{width:auto;height:auto;border-radius:3px;background:#eceef1}.fx:nth-child(-n+4){background:#4d8ba6}` },
-
-    { id: 'bullet', zh: '子弹图', en: 'Bullet chart', dz: '实际值对着目标线', de: 'Actual value against a target line',
-      pz: '背景带表示区间，粗条是实际值，竖线是目标。', pe: 'Range band behind, thick bar for actual, tick for target.',
-      demo: 'chart', css: `.fxchart{flex-direction:column;align-items:stretch;justify-content:center;width:min(420px,80%);height:auto;gap:14px}.fx{width:auto;height:24px;background:#eceef1;border-radius:4px;position:relative}.fx::before{content:'';position:absolute;left:0;top:5px;bottom:5px;width:62%;background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);border-radius:3px}.fx::after{content:'';position:absolute;left:78%;top:-3px;bottom:-3px;width:3px;background:#e8879c}` },
-
-    { id: 'scatter', zh: '散点', en: 'Scatter', dz: '两维关系的点云', de: 'A cloud showing two dimensions',
-      pz: '点半透明避免重叠糊成一片，可加抖动。', pe: 'Semi-transparent dots (plus jitter) survive overplotting.',
-      demo: 'chart', css: `.fxchart{position:relative;width:min(420px,80%);height:250px;display:block;background:linear-gradient(#eceef1 1px,transparent 1px) 0 0/100% 50px}.fx{position:absolute;width:14px;height:14px;border-radius:50%;background:rgba(54,92,49,.55);left:calc(8% + var(--i)*13%);bottom:calc(12% + var(--i)*11%)}` },
-
-    { id: 'threshold', zh: '阈值线', en: 'Threshold line', dz: '一条虚线标出警戒值', de: 'A dashed line marks the limit',
-      pz: '虚线 + 右侧标签，超过阈值的柱换成警示色。', pe: 'Dashed rule with a label; bars above it switch to the alert color.',
-      demo: 'chart', css: `.fxchart{position:relative}.fxchart::after{content:'';position:absolute;left:-10px;right:-10px;bottom:70%;border-top:2px dashed #e8879c}.fx:nth-child(4),.fx:nth-child(6){background:#e8879c}` },
-
-    { id: 'hoverbar', zh: '悬停高亮', en: 'Hover highlight', dz: '指到哪根哪根变深，其余变淡', de: 'The hovered bar darkens, the rest recede',
-      pz: '父级 hover 降低所有条透明度，当前条恢复并显示数值。', pe: 'Dim all on parent hover; restore the hovered one and show its value.',
-      demo: 'chart', css: `.fx{transition:all .2s ease;cursor:pointer}.fxchart:hover .fx{opacity:.32}.fxchart .fx:hover{opacity:1;background:#e8879c;transform:scaleX(1.12)}` },
-
-    { id: 'tooltipdv', zh: '数值气泡', en: 'Value tooltip', dz: '悬停时冒出精确数值', de: 'Exact numbers appear on hover',
-      pz: '气泡吸附到最近的数据点，不要跟着鼠标乱飘。', pe: 'Snap the tooltip to the nearest datum, do not float with the cursor.',
-      demo: 'chart', css: `.fx{position:relative;cursor:pointer}.fx::after{content:'42';position:absolute;bottom:calc(100% + 8px);left:50%;transform:translate(-50%,6px);background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);color:#fff;font:600 11px var(--sv-font-mono,monospace);padding:4px 7px;border-radius:5px;opacity:0;transition:all .18s ease}.fx:hover::after{opacity:1;transform:translate(-50%,0)}` },
-
-    { id: 'sortmove', zh: '排序位移', en: 'Sort transition', dz: '重新排序时柱子平移到新位置', de: 'Bars slide to their new rank',
-      pz: '用 FLIP 保证每根柱从旧位置平滑移动到新位置。', pe: 'FLIP each bar from its old rect to the new one.',
-      demo: 'chart', css: `.fx{transition:transform .5s ${E}}.fxchart:hover .fx:nth-child(1){transform:translateX(240px)}.fxchart:hover .fx:nth-child(5){transform:translateX(-240px)}` },
-
-    { id: 'axisfade', zh: '坐标轴淡入', en: 'Axis fade', dz: '网格线安静地先出现', de: 'Grid lines arrive quietly first',
-      pz: '轴线先于数据出现，透明度不超过 12%。', pe: 'Axes appear before the data, at 12% opacity or less.',
-      demo: 'chart', css: `@keyframes fxg{from{opacity:0}to{opacity:1}}@keyframes fxk{from{transform:scaleY(0)}to{transform:scaleY(1)}}.fxchart{position:relative;padding:0 10px}.fxchart::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(#e4e5e0 0 1px,transparent 1px 44px);animation:fxg .6s ease infinite alternate}.fx{transform-origin:bottom;animation:fxk 1.2s ${E} .3s infinite alternate}` },
-
-    { id: 'delta', zh: '涨跌对比', en: 'Delta bars', dz: '正负分列基线两侧', de: 'Positive and negative split by the baseline',
-      pz: '基线居中，涨用品牌绿、跌用 Folly 粉，别用红绿撞色。', pe: 'Centre the baseline; brand green up, Folly down.',
-      demo: 'chart', css: `.fxchart{align-items:center;position:relative;height:240px}.fxchart::after{content:'';position:absolute;left:0;right:0;top:50%;height:1px;background:#c9ccd3}.fx{align-self:flex-start;background:#7ab85a}.fx:nth-child(even){align-self:flex-end;background:#e8879c}` },
-
-    { id: 'countup', zh: '大数字跳动', en: 'Big number count-up', dz: '关键指标跳到目标值', de: 'The headline metric counts to its value',
-      pz: '用 ease-out 的计数曲线（先快后慢），保留千分位。', pe: 'Ease-out counting with thousand separators.',
-      demo: 'chart', css: `@keyframes fxk{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}.fxchart{height:auto}.fx{width:auto;height:auto;background:none;font:700 88px/1 var(--sv-font-mono,monospace);color:#23232f;animation:fxk .8s ${E} infinite alternate}.fx::after{content:'3,425'}${ONE}` },
-
-    { id: 'radialbars', zh: '环形条', en: 'Radial bars', dz: '柱子绕成一圈', de: 'Bars wrapped into a circle',
-      pz: '按角度分布，只在类别少且需要装饰性时用。', pe: 'Distribute by angle — decorative, only for few categories.',
-      demo: 'chart', css: `.fxchart{position:relative;width:250px;height:250px;display:block}.fx{position:absolute;left:50%;bottom:50%;width:14px;border-radius:7px;transform-origin:bottom center;transform:rotate(calc(var(--i)*51deg));background:#4d8ba6;opacity:calc(.45 + var(--i)*.08)}` },
-
-    { id: 'legend', zh: '图例联动', en: 'Legend linking', dz: '点图例可以过滤系列', de: 'Clicking the legend filters series',
-      pz: '图例即控件：点击切换显示，未选中降到 30% 透明。', pe: 'The legend is the control: toggle series, dim the unselected to 30%.',
-      demo: 'chart', css: `.fx{cursor:pointer;transition:opacity .2s}.fx:nth-child(3n){opacity:.28}.fx:hover{opacity:1;background:#e8879c}` }
+  "id": "dataviz",
+  "zh": "数据可视化",
+  "en": "Data visualisation",
+  "dz": "数字怎么变成看得懂的图形",
+  "de": "Turning numbers into shapes people read",
+  "items": [
+    {
+      "id": "bargrow",
+      "zh": "柱子生长",
+      "en": "Bars grow",
+      "dz": "柱状图从底部长出来",
+      "de": "Bars rise from the baseline",
+      "pz": "transform-origin:bottom 的 scaleY(0→1)，别动 height 免得重排。",
+      "pe": "scaleY(0→1) with transform-origin bottom, not height.",
+      "demo": "chart",
+      "css": "@keyframes fxk{from{transform:scaleY(0)}to{transform:scaleY(1)}}.fx{transform-origin:bottom;animation:fxk 1.1s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "barstagger",
+      "zh": "柱子错峰",
+      "en": "Bars stagger",
+      "dz": "一根一根依次长出",
+      "de": "Bars grow one after another",
+      "pz": "delay = index × 70ms，读者的视线会跟着走。",
+      "pe": "delay = index × 70ms — the eye follows the sequence.",
+      "demo": "chart",
+      "params": [
+        {
+          "k": "s",
+          "zh": "间隔",
+          "en": "Stagger",
+          "min": 20,
+          "max": 200,
+          "step": 10,
+          "def": 70,
+          "unit": "ms"
+        }
+      ],
+      "css": "@keyframes fxk{from{transform:scaleY(0)}to{transform:scaleY(1)}}.fx{transform-origin:bottom;animation:fxk .8s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*var(--s,70ms))}"
+    },
+    {
+      "id": "hbar",
+      "zh": "横向条形",
+      "en": "Horizontal bars",
+      "dz": "类别名长时用横条",
+      "de": "Use horizontal bars when labels are long",
+      "pz": "横条从左生长，标签左对齐、数值右对齐。",
+      "pe": "Grow from the left; labels left, values right.",
+      "demo": "chart",
+      "css": "@keyframes fxk{from{transform:scaleX(0)}to{transform:scaleX(1)}}.fxchart{flex-direction:column;align-items:stretch;justify-content:center;width:min(420px,80%);gap:10px;height:auto}.fx{width:auto;height:26px;border-radius:4px;transform-origin:left;animation:fxk .9s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*70ms)}"
+    },
+    {
+      "id": "linedraw",
+      "zh": "折线描画",
+      "en": "Line draw",
+      "dz": "折线像被笔画出来",
+      "de": "The line draws itself",
+      "pz": "SVG path 的 stroke-dasharray/-dashoffset 从满到 0。",
+      "pe": "Animate SVG stroke-dasharray/offset from full to zero.",
+      "demo": "chart",
+      "css": "@keyframes fxk{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}.fxchart{width:min(440px,82%);position:relative}.fx{opacity:.12}.fxchart::after{content:'';position:absolute;inset:0;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40' preserveAspectRatio='none'%3E%3Cpolyline points='0,32 16,20 32,26 50,8 68,16 84,4 100,12' fill='none' stroke='%2323232f' stroke-width='1.6'/%3E%3C/svg%3E\") center/100% 100% no-repeat;animation:fxk 1.6s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "areafill",
+      "zh": "面积填充",
+      "en": "Area fill",
+      "dz": "折线下方渐变填色",
+      "de": "A gradient fills under the line",
+      "pz": "线画完后面积层再淡入，两段动画错开 200ms。",
+      "pe": "Fade the area in 200ms after the line finishes.",
+      "demo": "chart",
+      "css": "@keyframes fxk{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}.fxchart{width:min(440px,82%);position:relative}.fx{display:none}.fxchart::after{content:'';position:absolute;inset:0;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40' preserveAspectRatio='none'%3E%3Cpolygon points='0,32 16,20 32,26 50,8 68,16 84,4 100,12 100,40 0,40' fill='%23365c31' fill-opacity='.18'/%3E%3Cpolyline points='0,32 16,20 32,26 50,8 68,16 84,4 100,12' fill='none' stroke='%23365c31' stroke-width='1.6'/%3E%3C/svg%3E\") center/100% 100% no-repeat;animation:fxk 1.8s cubic-bezier(.22,1,.36,1) infinite alternate}"
+    },
+    {
+      "id": "donut",
+      "zh": "环形扫出",
+      "en": "Donut sweep",
+      "dz": "圆环按比例扫一圈",
+      "de": "The ring sweeps to its value",
+      "pz": "conic-gradient 的角度动画，或 SVG circle 的 dashoffset。",
+      "pe": "Animate the conic-gradient angle, or an SVG circle dashoffset.",
+      "demo": "chart",
+      "params": [
+        {
+          "k": "v",
+          "zh": "数值",
+          "en": "Value",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "def": 68,
+          "unit": ""
+        }
+      ],
+      "css": ".fxchart{height:auto}.fx{width:200px;height:200px;border-radius:50%;background:conic-gradient(#4d8ba6 calc(var(--v,68)*1%),#eceef1 0);position:relative}.fx::after{content:'';position:absolute;inset:26px;border-radius:50%;background:#fcfcfb}.fx:nth-child(n+2){display:none}"
+    },
+    {
+      "id": "ring",
+      "zh": "进度圆环",
+      "en": "Progress ring",
+      "dz": "细环显示完成度",
+      "de": "A thin ring shows completion",
+      "pz": "SVG circle + stroke-dashoffset，round 线帽更友好。",
+      "pe": "SVG circle with stroke-dashoffset and round caps.",
+      "demo": "chart",
+      "params": [
+        {
+          "k": "v",
+          "zh": "进度",
+          "en": "Progress",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "def": 72,
+          "unit": ""
+        }
+      ],
+      "css": ".fxchart{height:auto}.fx{width:190px;height:190px;border-radius:50%;background:conic-gradient(#e8879c calc(var(--v,72)*1%),#eceee6 0);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 14px),#000 calc(100% - 13px))}.fx:nth-child(n+2){display:none}"
+    },
+    {
+      "id": "gauge",
+      "zh": "仪表盘",
+      "en": "Gauge",
+      "dz": "半圆表盘配指针",
+      "de": "A half-dial with a needle",
+      "pz": "半圆 conic-gradient + 指针 rotate，指针用 out-back 落定。",
+      "pe": "Half conic-gradient plus a needle rotating with out-back.",
+      "demo": "chart",
+      "css": ".fxchart{height:auto}.fx{width:230px;height:115px;border-radius:115px 115px 0 0;background:conic-gradient(from 270deg,#7ab85a 0 33%,#f4dcb8 33% 66%,#e8879c 66% 100%);-webkit-mask:radial-gradient(farthest-side at 50% 100%,transparent calc(100% - 26px),#000 calc(100% - 25px))}.fx:nth-child(n+2){display:none}"
+    },
+    {
+      "id": "stacked",
+      "zh": "堆叠柱",
+      "en": "Stacked bars",
+      "dz": "一根柱里分几段",
+      "de": "One bar split into segments",
+      "pz": "每段单独动画，从下往上依次叠加。",
+      "pe": "Animate segments bottom-up, one after another.",
+      "demo": "chart",
+      "css": "@keyframes fxk{from{transform:scaleY(0)}to{transform:scaleY(1)}}.fx{transform-origin:bottom;background:linear-gradient(#f4dcb8 0 30%,#7ab85a 30% 62%,#4d8ba6 62% 100%);animation:fxk 1s cubic-bezier(.22,1,.36,1) infinite alternate;animation-delay:calc(var(--i)*60ms)}"
+    },
+    {
+      "id": "grouped",
+      "zh": "分组柱",
+      "en": "Grouped bars",
+      "dz": "两组数据并排比较",
+      "de": "Two series side by side",
+      "pz": "组内间距小于组间间距，视觉才分得清。",
+      "pe": "Inner gap must be smaller than the gap between groups.",
+      "demo": "chart",
+      "css": ".fxchart{gap:4px}.fx:nth-child(odd){background:#4d8ba6}.fx:nth-child(even){background:#f0c9a8;margin-right:18px}"
+    },
+    {
+      "id": "dotplot",
+      "zh": "点图",
+      "en": "Dot plot",
+      "dz": "用点代替柱，更轻",
+      "de": "Dots instead of bars — lighter",
+      "pz": "柱子替换为端点圆 + 细连接线，适合数据点少时。",
+      "pe": "A dot at the value with a thin stem; best for few points.",
+      "demo": "chart",
+      "css": ".fx{width:6px;background:#e0e2e6;border-radius:3px;position:relative}.fx::after{content:'';position:absolute;top:-9px;left:50%;transform:translateX(-50%);width:18px;height:18px;border-radius:50%;background:#4d8ba6}"
+    },
+    {
+      "id": "sparkline",
+      "zh": "迷你趋势线",
+      "en": "Sparkline",
+      "dz": "嵌在文字旁的小趋势",
+      "de": "A tiny trend that sits beside text",
+      "pz": "无坐标轴、无标签，只表达方向，高度 20–32px。",
+      "pe": "No axes or labels — direction only, 20–32px tall.",
+      "demo": "chart",
+      "css": ".fxchart{height:56px;gap:5px;align-items:flex-end}.fx{width:9px;border-radius:2px;background:#8b8e99}.fx:last-child{background:#e8879c}"
+    },
+    {
+      "id": "heat",
+      "zh": "热力格",
+      "en": "Heat cells",
+      "dz": "颜色深浅表示大小",
+      "de": "Color depth encodes magnitude",
+      "pz": "单色系明度阶梯，别用彩虹色，色阶控制在 5–7 级。",
+      "pe": "A single-hue lightness ramp, 5–7 steps — never rainbow.",
+      "demo": "chart",
+      "css": ".fxchart{display:grid;grid-template-columns:repeat(7,34px);grid-auto-rows:34px;gap:6px;height:auto}.fx{width:auto;height:auto;border-radius:5px;background:#4d8ba6;opacity:calc(.2 + var(--i)*.11)}"
+    },
+    {
+      "id": "waffle",
+      "zh": "华夫格",
+      "en": "Waffle chart",
+      "dz": "一格格方块表示百分比",
+      "de": "Squares stand in for a percentage",
+      "pz": "10×10 网格，填充数量 = 百分比，比饼图更好读。",
+      "pe": "A 10×10 grid filled to the percentage — easier than a pie.",
+      "demo": "chart",
+      "css": ".fxchart{display:grid;grid-template-columns:repeat(4,26px);grid-auto-rows:26px;gap:5px;height:auto}.fx{width:auto;height:auto;border-radius:3px;background:#eceef1}.fx:nth-child(-n+4){background:#4d8ba6}"
+    },
+    {
+      "id": "bullet",
+      "zh": "子弹图",
+      "en": "Bullet chart",
+      "dz": "实际值对着目标线",
+      "de": "Actual value against a target line",
+      "pz": "背景带表示区间，粗条是实际值，竖线是目标。",
+      "pe": "Range band behind, thick bar for actual, tick for target.",
+      "demo": "chart",
+      "css": ".fxchart{flex-direction:column;align-items:stretch;justify-content:center;width:min(420px,80%);height:auto;gap:14px}.fx{width:auto;height:24px;background:#eceef1;border-radius:4px;position:relative}.fx::before{content:'';position:absolute;left:0;top:5px;bottom:5px;width:62%;background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);border-radius:3px}.fx::after{content:'';position:absolute;left:78%;top:-3px;bottom:-3px;width:3px;background:#e8879c}"
+    },
+    {
+      "id": "scatter",
+      "zh": "散点",
+      "en": "Scatter",
+      "dz": "两维关系的点云",
+      "de": "A cloud showing two dimensions",
+      "pz": "点半透明避免重叠糊成一片，可加抖动。",
+      "pe": "Semi-transparent dots (plus jitter) survive overplotting.",
+      "demo": "chart",
+      "css": ".fxchart{position:relative;width:min(420px,80%);height:250px;display:block;background:linear-gradient(#eceef1 1px,transparent 1px) 0 0/100% 50px}.fx{position:absolute;width:14px;height:14px;border-radius:50%;background:rgba(54,92,49,.55);left:calc(8% + var(--i)*13%);bottom:calc(12% + var(--i)*11%)}"
+    },
+    {
+      "id": "threshold",
+      "zh": "阈值线",
+      "en": "Threshold line",
+      "dz": "一条虚线标出警戒值",
+      "de": "A dashed line marks the limit",
+      "pz": "虚线 + 右侧标签，超过阈值的柱换成警示色。",
+      "pe": "Dashed rule with a label; bars above it switch to the alert color.",
+      "demo": "chart",
+      "css": ".fxchart{position:relative}.fxchart::after{content:'';position:absolute;left:-10px;right:-10px;bottom:70%;border-top:2px dashed #e8879c}.fx:nth-child(4),.fx:nth-child(6){background:#e8879c}"
+    },
+    {
+      "id": "hoverbar",
+      "zh": "悬停高亮",
+      "en": "Hover highlight",
+      "dz": "指到哪根哪根变深，其余变淡",
+      "de": "The hovered bar darkens, the rest recede",
+      "pz": "父级 hover 降低所有条透明度，当前条恢复并显示数值。",
+      "pe": "Dim all on parent hover; restore the hovered one and show its value.",
+      "demo": "chart",
+      "css": ".fx{transition:all .2s ease;cursor:pointer}.fxchart:hover .fx{opacity:.32}.fxchart .fx:hover{opacity:1;background:#e8879c;transform:scaleX(1.12)}"
+    },
+    {
+      "id": "tooltipdv",
+      "zh": "数值气泡",
+      "en": "Value tooltip",
+      "dz": "悬停时冒出精确数值",
+      "de": "Exact numbers appear on hover",
+      "pz": "气泡吸附到最近的数据点，不要跟着鼠标乱飘。",
+      "pe": "Snap the tooltip to the nearest datum, do not float with the cursor.",
+      "demo": "chart",
+      "css": ".fx{position:relative;cursor:pointer}.fx::after{content:'42';position:absolute;bottom:calc(100% + 8px);left:50%;transform:translate(-50%,6px);background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);color:#fff;font:600 11px var(--sv-font-mono,monospace);padding:4px 7px;border-radius:5px;opacity:0;transition:all .18s ease}.fx:hover::after{opacity:1;transform:translate(-50%,0)}"
+    },
+    {
+      "id": "sortmove",
+      "zh": "排序位移",
+      "en": "Sort transition",
+      "dz": "重新排序时柱子平移到新位置",
+      "de": "Bars slide to their new rank",
+      "pz": "用 FLIP 保证每根柱从旧位置平滑移动到新位置。",
+      "pe": "FLIP each bar from its old rect to the new one.",
+      "demo": "chart",
+      "css": ".fx{transition:transform .5s cubic-bezier(.22,1,.36,1)}.fxchart:hover .fx:nth-child(1){transform:translateX(240px)}.fxchart:hover .fx:nth-child(5){transform:translateX(-240px)}"
+    },
+    {
+      "id": "axisfade",
+      "zh": "坐标轴淡入",
+      "en": "Axis fade",
+      "dz": "网格线安静地先出现",
+      "de": "Grid lines arrive quietly first",
+      "pz": "轴线先于数据出现，透明度不超过 12%。",
+      "pe": "Axes appear before the data, at 12% opacity or less.",
+      "demo": "chart",
+      "css": "@keyframes fxg{from{opacity:0}to{opacity:1}}@keyframes fxk{from{transform:scaleY(0)}to{transform:scaleY(1)}}.fxchart{position:relative;padding:0 10px}.fxchart::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(#e4e5e0 0 1px,transparent 1px 44px);animation:fxg .6s ease infinite alternate}.fx{transform-origin:bottom;animation:fxk 1.2s cubic-bezier(.22,1,.36,1) .3s infinite alternate}"
+    },
+    {
+      "id": "delta",
+      "zh": "涨跌对比",
+      "en": "Delta bars",
+      "dz": "正负分列基线两侧",
+      "de": "Positive and negative split by the baseline",
+      "pz": "基线居中，涨用品牌绿、跌用 Folly 粉，别用红绿撞色。",
+      "pe": "Centre the baseline; brand green up, Folly down.",
+      "demo": "chart",
+      "css": ".fxchart{align-items:center;position:relative;height:240px}.fxchart::after{content:'';position:absolute;left:0;right:0;top:50%;height:1px;background:#c9ccd3}.fx{align-self:flex-start;background:#7ab85a}.fx:nth-child(even){align-self:flex-end;background:#e8879c}"
+    },
+    {
+      "id": "countup",
+      "zh": "大数字跳动",
+      "en": "Big number count-up",
+      "dz": "关键指标跳到目标值",
+      "de": "The headline metric counts to its value",
+      "pz": "用 ease-out 的计数曲线（先快后慢），保留千分位。",
+      "pe": "Ease-out counting with thousand separators.",
+      "demo": "chart",
+      "css": "@keyframes fxk{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}.fxchart{height:auto}.fx{width:auto;height:auto;background:none;font:700 88px/1 var(--sv-font-mono,monospace);color:#23232f;animation:fxk .8s cubic-bezier(.22,1,.36,1) infinite alternate}.fx::after{content:'3,425'}.fx:nth-child(n+2){display:none}"
+    },
+    {
+      "id": "radialbars",
+      "zh": "环形条",
+      "en": "Radial bars",
+      "dz": "柱子绕成一圈",
+      "de": "Bars wrapped into a circle",
+      "pz": "按角度分布，只在类别少且需要装饰性时用。",
+      "pe": "Distribute by angle — decorative, only for few categories.",
+      "demo": "chart",
+      "css": ".fxchart{position:relative;width:250px;height:250px;display:block}.fx{position:absolute;left:50%;bottom:50%;width:14px;border-radius:7px;transform-origin:bottom center;transform:rotate(calc(var(--i)*51deg));background:#4d8ba6;opacity:calc(.45 + var(--i)*.08)}"
+    },
+    {
+      "id": "legend",
+      "zh": "图例联动",
+      "en": "Legend linking",
+      "dz": "点图例可以过滤系列",
+      "de": "Clicking the legend filters series",
+      "pz": "图例即控件：点击切换显示，未选中降到 30% 透明。",
+      "pe": "The legend is the control: toggle series, dim the unselected to 30%.",
+      "demo": "chart",
+      "css": ".fx{cursor:pointer;transition:opacity .2s}.fx:nth-child(3n){opacity:.28}.fx:hover{opacity:1;background:#e8879c}"
+    },
+    {
+      "id": "axis-label",
+      "zh": "坐标轴标签",
+      "en": "Axis label",
+      "dz": "坐标轴标签包含单位、范围和方向，不能只显示数字。",
+      "de": "Axis labels include units, range, and direction.",
+      "pz": "坐标轴标签包含单位、范围和方向，不能只显示数字。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Axis labels include units, range, and direction. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "tick-density",
+      "zh": "刻度密度",
+      "en": "Tick density",
+      "dz": "刻度根据空间和数据范围自适应，避免标签重叠。",
+      "de": "Adapt ticks to space and data range to avoid overlap.",
+      "pz": "刻度根据空间和数据范围自适应，避免标签重叠。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Adapt ticks to space and data range to avoid overlap. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "zero-baseline",
+      "zh": "零基线",
+      "en": "Zero baseline",
+      "dz": "柱状图明确零基线，截断轴要有视觉和文字提示。",
+      "de": "Show zero baseline and disclose truncated axes.",
+      "pz": "柱状图明确零基线，截断轴要有视觉和文字提示。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Show zero baseline and disclose truncated axes. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "scale-type",
+      "zh": "比例尺类型",
+      "en": "Scale type",
+      "dz": "线性、对数和分位比例尺在图例和说明中明确。",
+      "de": "State linear, logarithmic, or quantile scales.",
+      "pz": "线性、对数和分位比例尺在图例和说明中明确。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "State linear, logarithmic, or quantile scales. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "missing-data",
+      "zh": "缺失数据",
+      "en": "Missing data",
+      "dz": "缺失数据有独立符号，不和零值混淆。",
+      "de": "Use a distinct mark for missing data rather than zero.",
+      "pz": "缺失数据有独立符号，不和零值混淆。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Use a distinct mark for missing data rather than zero. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "uncertainty-band",
+      "zh": "不确定区间",
+      "en": "Uncertainty band",
+      "dz": "不确定性用区间、误差线或文字说明表达。",
+      "de": "Express uncertainty with bands, error bars, or text.",
+      "pz": "不确定性用区间、误差线或文字说明表达。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Express uncertainty with bands, error bars, or text. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "data-source",
+      "zh": "数据来源",
+      "en": "Data source",
+      "dz": "图表显示来源、时间范围和更新时间。",
+      "de": "Show source, date range, and update time.",
+      "pz": "图表显示来源、时间范围和更新时间。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Show source, date range, and update time. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "chart-caption",
+      "zh": "图表说明",
+      "en": "Chart caption",
+      "dz": "说明先给结论和读法，再提供方法细节。",
+      "de": "Lead with takeaway and reading guide before method detail.",
+      "pz": "说明先给结论和读法，再提供方法细节。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Lead with takeaway and reading guide before method detail. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "legend-toggle",
+      "zh": "图例切换",
+      "en": "Legend toggle",
+      "dz": "图例可隐藏序列但保持颜色和数据状态一致。",
+      "de": "Allow series toggling while keeping color and state consistent.",
+      "pz": "图例可隐藏序列但保持颜色和数据状态一致。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Allow series toggling while keeping color and state consistent. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "series-highlight",
+      "zh": "序列高亮",
+      "en": "Series highlight",
+      "dz": "高亮序列同时降低其他序列，不让关键数据消失。",
+      "de": "Highlight a series while retaining context for others.",
+      "pz": "高亮序列同时降低其他序列，不让关键数据消失。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Highlight a series while retaining context for others. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "crosshair",
+      "zh": "十字线",
+      "en": "Crosshair",
+      "dz": "十字线显示精确值并跟随键盘或触摸。",
+      "de": "Show exact values through pointer, keyboard, or touch.",
+      "pz": "十字线显示精确值并跟随键盘或触摸。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Show exact values through pointer, keyboard, or touch. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "chart-tooltip",
+      "zh": "图表提示",
+      "en": "Chart tooltip",
+      "dz": "提示包含标题、系列、值、单位和时间。",
+      "de": "Include title, series, value, unit, and time.",
+      "pz": "提示包含标题、系列、值、单位和时间。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Include title, series, value, unit, and time. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "zoom-brush",
+      "zh": "缩放刷选",
+      "en": "Zoom brush",
+      "dz": "刷选范围有可见手柄、重置和键盘操作。",
+      "de": "Provide visible handles, reset, and keyboard control.",
+      "pz": "刷选范围有可见手柄、重置和键盘操作。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Provide visible handles, reset, and keyboard control. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "pan-chart",
+      "zh": "图表平移",
+      "en": "Chart pan",
+      "dz": "平移不丢失当前筛选，边界有明确反馈。",
+      "de": "Keep filters during pan and signal boundaries.",
+      "pz": "平移不丢失当前筛选，边界有明确反馈。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Keep filters during pan and signal boundaries. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "chart-focus",
+      "zh": "图表焦点",
+      "en": "Chart focus",
+      "dz": "图形元素提供可聚焦的摘要或数据表等价物。",
+      "de": "Provide focusable summaries or table equivalents.",
+      "pz": "图形元素提供可聚焦的摘要或数据表等价物。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Provide focusable summaries or table equivalents. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "chart-table",
+      "zh": "图表表格",
+      "en": "Chart table",
+      "dz": "数据表和图表共享同一筛选、排序和语言状态。",
+      "de": "Share filters, sort, and locale between chart and table.",
+      "pz": "数据表和图表共享同一筛选、排序和语言状态。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Share filters, sort, and locale between chart and table. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "color-series",
+      "zh": "序列配色",
+      "en": "Series color",
+      "dz": "序列配色同时考虑色觉差异、打印和暗色主题。",
+      "de": "Account for color vision, print, and dark themes.",
+      "pz": "序列配色同时考虑色觉差异、打印和暗色主题。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Account for color vision, print, and dark themes. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "pattern-fill",
+      "zh": "纹理填充",
+      "en": "Pattern fill",
+      "dz": "纹理补充颜色编码，适合打印和高对比场景。",
+      "de": "Use patterns alongside color for print and high contrast.",
+      "pz": "纹理补充颜色编码，适合打印和高对比场景。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Use patterns alongside color for print and high contrast. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "chart-animation",
+      "zh": "图表动画",
+      "en": "Chart animation",
+      "dz": "动画表达变化关系，减少动效时仍可读。",
+      "de": "Use animation to explain change with a readable static fallback.",
+      "pz": "动画表达变化关系，减少动效时仍可读。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Use animation to explain change with a readable static fallback. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "live-chart",
+      "zh": "实时图表",
+      "en": "Live chart",
+      "dz": "实时更新标出更新时间和暂停入口，不让数据移动造成误读。",
+      "de": "Show update time and pause for moving data.",
+      "pz": "实时更新标出更新时间和暂停入口，不让数据移动造成误读。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Show update time and pause for moving data. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "data-refresh",
+      "zh": "数据刷新",
+      "en": "Data refresh",
+      "dz": "刷新失败保留旧数据并标记过期，而不是清空图表。",
+      "de": "Keep stale data marked when refresh fails.",
+      "pz": "刷新失败保留旧数据并标记过期，而不是清空图表。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Keep stale data marked when refresh fails. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "chart-empty",
+      "zh": "图表空状态",
+      "en": "Chart empty state",
+      "dz": "空图表说明没有数据、筛选无结果还是尚未加载。",
+      "de": "Distinguish no data, filtered empty, and not loaded.",
+      "pz": "空图表说明没有数据、筛选无结果还是尚未加载。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Distinguish no data, filtered empty, and not loaded. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "chart-error",
+      "zh": "图表错误",
+      "en": "Chart error",
+      "dz": "错误状态提供重试和数据表回退。",
+      "de": "Offer retry and table fallback.",
+      "pz": "错误状态提供重试和数据表回退。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Offer retry and table fallback. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "small-multiple",
+      "zh": "小倍图",
+      "en": "Small multiples",
+      "dz": "小倍图共享比例尺和标题规则，便于比较。",
+      "de": "Share scales and title rules for comparison.",
+      "pz": "小倍图共享比例尺和标题规则，便于比较。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Share scales and title rules for comparison. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "annotation",
+      "zh": "图表标注",
+      "en": "Chart annotation",
+      "dz": "标注说明事件、来源和时间，不遮挡关键点。",
+      "de": "Annotate events, source, and time without hiding points.",
+      "pz": "标注说明事件、来源和时间，不遮挡关键点。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Annotate events, source, and time without hiding points. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "responsive-chart",
+      "zh": "响应式图表",
+      "en": "Responsive chart",
+      "dz": "窄屏减少维度或转为列表，保留关键洞察。",
+      "de": "Reduce dimensions or switch to list on narrow screens.",
+      "pz": "窄屏减少维度或转为列表，保留关键洞察。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Reduce dimensions or switch to list on narrow screens. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "export-chart",
+      "zh": "图表导出",
+      "en": "Chart export",
+      "dz": "导出包含来源、单位、筛选和时间戳。",
+      "de": "Include source, units, filters, and timestamp in exports.",
+      "pz": "导出包含来源、单位、筛选和时间戳。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Include source, units, filters, and timestamp in exports. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "chart-locale",
+      "zh": "图表语言",
+      "en": "Chart locale",
+      "dz": "数字、日期、图例、说明和 prompt 完全跟随语言。",
+      "de": "Numbers, dates, legends, descriptions, and prompts follow locale.",
+      "pz": "数字、日期、图例、说明和 prompt 完全跟随语言。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Numbers, dates, legends, descriptions, and prompts follow locale. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "chart-performance",
+      "zh": "图表性能",
+      "en": "Chart performance",
+      "dz": "大数据量使用抽样、聚合或渐进渲染，不阻塞输入。",
+      "de": "Use sampling, aggregation, or progressive render at scale.",
+      "pz": "大数据量使用抽样、聚合或渐进渲染，不阻塞输入。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Use sampling, aggregation, or progressive render at scale. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    },
+    {
+      "id": "dataviz-audit",
+      "zh": "可视化审查",
+      "en": "Dataviz audit",
+      "dz": "发布前检查准确性、来源、无障碍、性能和主题。",
+      "de": "Audit accuracy, provenance, accessibility, performance, and theme.",
+      "pz": "发布前检查准确性、来源、无障碍、性能和主题。 在大数据量、暗色、打印和中英文切换下复核。",
+      "pe": "Audit accuracy, provenance, accessibility, performance, and theme. Validate scale, dark mode, print, and locale switching.",
+      "demo": "box",
+      "css": ".fx{background:#f5f8fb;color:#203040;border:1px solid #bfcedb;border-radius:10px;box-shadow:0 5px 16px #20304014}"
+    }
   ]
 };
