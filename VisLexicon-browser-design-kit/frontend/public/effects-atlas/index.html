@@ -159,7 +159,7 @@
                     </sc-if>
                   </div>
                   <sc-if value="{{ r.referenceImage }}" hint-placeholder-val="{{ false }}">
-                    <div onClick="{{ r.pick }}" style="{{ r.box }}"><img src="{{ r.referenceImage }}" alt="{{ r.referenceImageAlt }}" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+                    <div onClick="{{ r.pick }}" style="{{ r.box }}"><div style="width:86%;height:78%;background:#fff;border-radius:13px;overflow:hidden;box-shadow:0 18px 38px rgba(35,35,47,.16);display:flex;flex-direction:column"><div style="height:28px;flex:none;background:#f3f3f1;border-bottom:1px solid #e6e7e2;display:flex;align-items:center;gap:5px;padding:0 11px"><i style="width:7px;height:7px;border-radius:50%;background:#d8dad5"></i><i style="width:7px;height:7px;border-radius:50%;background:#d8dad5"></i><i style="width:7px;height:7px;border-radius:50%;background:#d8dad5"></i><span style="margin-left:8px;flex:1;height:14px;border-radius:99px;background:#fff;border:1px solid #e8e9e5"></span></div><img src="{{ r.referenceImage }}" alt="{{ r.referenceImageAlt }}" style="width:100%;height:calc(100% - 28px);object-fit:cover;object-position:top;display:block" /></div></div>
                   </sc-if>
                   <sc-if value="{{ r.noReferenceImage }}" hint-placeholder-val="{{ true }}">
                   <div class="aur {{ r.scope }}" onClick="{{ r.pick }}" style="{{ r.box }}">
@@ -229,7 +229,7 @@
               <div>
                 <div id="fx-stage" class="fxone {{ stageCls }}" style="{{ stageBox }}">
                   <sc-if value="{{ referenceImage }}" hint-placeholder-val="{{ false }}">
-                    <img src="{{ referenceImage }}" alt="{{ referenceImageAlt }}" style="display:block;max-width:100%;max-height:360px;object-fit:contain;border-radius:8px;box-shadow:0 12px 36px rgba(35,35,47,.12)" />
+                    <div style="width:min(92%,760px);height:min(58vh,410px);background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 18px 42px rgba(35,35,47,.16);display:flex;flex-direction:column"><div style="height:30px;flex:none;background:#f3f3f1;border-bottom:1px solid #e6e7e2;display:flex;align-items:center;gap:5px;padding:0 12px"><i style="width:8px;height:8px;border-radius:50%;background:#d8dad5"></i><i style="width:8px;height:8px;border-radius:50%;background:#d8dad5"></i><i style="width:8px;height:8px;border-radius:50%;background:#d8dad5"></i><span style="margin-left:9px;flex:1;height:15px;border-radius:99px;background:#fff;border:1px solid #e8e9e5"></span></div><img src="{{ referenceImage }}" alt="{{ referenceImageAlt }}" style="width:100%;height:calc(100% - 30px);object-fit:cover;object-position:top;display:block" /></div>
                   </sc-if>
                   <div style="{{ stageInner }}">
                     <sc-if value="{{ isText }}" hint-placeholder-val="{{ true }}">
