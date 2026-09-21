@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url'
 import { rerankPool } from '../src/lib/component-discovery.js'
 import { loadDiscoveryIndex } from './discovery-index.mjs'
 import { queryRequirements } from '../src/lib/discovery-scopes.js'
+import { loadComponentDrafts } from './component-drafts.mjs'
 
 export const FREE_MODEL='jev-1.13-free'
 export const JEV_ENDPOINT='https://opencode.ai/zen/v1/systemone'
@@ -55,6 +56,10 @@ export function discoveryPlugin() {
     const pathname=(req.url||'').split('?')[0]
     if(!pathname.startsWith('/api/discovery/'))return next()
     if(!localRequestAllowed(req))return json(res,403,{error:'LOCAL_ONLY'})
+    if(pathname==='/api/discovery/component-drafts'&&req.method==='GET') {
+      try{return json(res,200,await loadComponentDrafts(ROOT))}
+      catch{return json(res,503,{error:'DRAFTS_UNAVAILABLE'})}
+    }
     if(pathname==='/api/discovery/status'&&req.method==='GET') {
       const available=await localCredential().then(()=>true).catch(()=>false)
       return json(res,200,{configured:available,model:FREE_MODEL,scope:'loopback-only'})

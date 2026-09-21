@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { lexicalCandidates, applyModelRanking } from '../lib/component-discovery.js'
+import { lexicalCandidates, applyModelRanking, wantsComponentInstance } from '../lib/component-discovery.js'
 import { DISCOVERY_SCOPES, colorSegments, descriptionSections, inTheme, queryRequirements, offerMatches } from '../lib/discovery-scopes.js'
 import { useStore } from '../store.js'
 import { CURATION_CATEGORIES } from '../data/curation-taxonomy.js'
@@ -39,7 +39,8 @@ function DiscoveryCard({unit,en,pinned,toggle,isPinned,query}) {
   return <article className="discovery-card">
     {unit.previewUrl&&<div className="discovery-preview">{unit.previewKind==='image'?<img src={unit.previewUrl} alt={en?unit.nameEn:unit.nameZh} loading="lazy"/>:<iframe loading="lazy" sandbox="" src={unit.previewUrl} title={`${en?'Live preview':'实时预览'} · ${en?unit.nameEn:unit.nameZh}`}/>}</div>}
     <div className="discovery-card-body">
-      <div className="discovery-card-heading"><div className="discovery-title-line"><h3>{en?unit.nameEn:unit.nameZh}</h3><div className="discovery-tags">{tags.map(tag=><span className={`discovery-tag-${tagTone(tag)}`} key={tag}>{tag}</span>)}</div></div><button type="button" aria-pressed={pinned} aria-label={`${pinned?(en?'Unpin':'取消保留'):(en?'Pin':'保留')} ${unit.nameZh}`} onClick={()=>toggle(unit.id)}>{pinned?'✓':'+'}</button></div>
+      <div className="discovery-card-heading"><div className="discovery-title-line"><h3>{en?unit.nameEn:unit.nameZh}</h3><div className="discovery-tags">{tags.map(tag=><span className={`discovery-tag-${tagTone(tag)}`} key={tag}>{tag}</span>)}</div></div>{toggle&&<button type="button" aria-pressed={pinned} aria-label={`${pinned?(en?'Unpin':'取消保留'):(en?'Pin':'保留')} ${unit.nameZh}`} onClick={()=>toggle(unit.id)}>{pinned?'✓':'+'}</button>}</div>
+      {unit.verification==='draft'&&<p className="discovery-notice">{en?'Local draft · not fully verified':'本地草稿 · 尚未完成验证'}{unit.unknowns?.length>0&&` · ${unit.unknowns.join('；')}`}</p>}
       <dl className="discovery-description">{sections.map((section,i)=><div key={i}>{section.label&&<dt>{section.label}{en?':':'：'}</dt>}<dd><ColorText text={section.text}/></dd></div>)}</dl>
       {unit.kind==='image-prompt'&&unit.detailUrl&&<a className="discovery-source" href={unit.detailUrl}>{unit.resourceType==='skill'?(en?'View Skill & examples':'查看 Skill 与效果'):(en?'View & copy prompt':'查看并复制提示词')}</a>}
       {unit.kind==='atlas-effect'?<div className="discovery-related">
@@ -49,6 +50,23 @@ function DiscoveryCard({unit,en,pinned,toggle,isPinned,query}) {
       {isPinned&&<span className="discovery-pin-note">{en?'Kept in this topic':'已保留在当前主题'}</span>}
     </div>
   </article>
+}
+function ComponentDrafts({en,theme}) {
+  const [archive,setArchive]=useState(null),[open,setOpen]=useState(false),[filter,setFilter]=useState(''),[limit,setLimit]=useState(12)
+  useEffect(()=>{let live=true;fetch('/api/discovery/component-drafts',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(data=>{if(live)setArchive(data)}).catch(()=>{});return()=>{live=false}},[])
+  const units=(archive?.units||[]).filter(unit=>inTheme(unit,theme))
+  if(!units.length)return null
+  const matches=filter.trim()?lexicalCandidates(filter,units,{limit:units.length}).map(row=>row.unit):units
+  return <div className="discovery-results">
+    <button type="button" aria-expanded={open} onClick={()=>setOpen(value=>!value)}>{en?`Local button drafts (${units.length})`:`查看之前的按钮档案（${units.length} 条，本地待补全）`}</button>
+    {open&&<>
+      <p className="discovery-notice">{en?`${archive.count} observations, ${archive.variants} variants; some are states of the same variant. Previews reconstruct observed styles and do not establish untested interactions.`:`保留 ${archive.count} 条观察、${archive.variants} 个变体，部分条目是同一变体的不同状态。预览是按当时测得样式重建的，不代表未测试的交互已验证；这里不计入已发布结果。`}</p>
+      <div className="discovery-input-wrap"><textarea rows={1} aria-label={en?'Filter button drafts':'筛选按钮档案'} placeholder={en?'Color, shape or button text':'按颜色、形状或按钮文字筛选'} value={filter} onChange={e=>{setFilter(e.target.value);setLimit(12)}}/></div>
+      <p role="status">{en?`${matches.length} draft observations`:`${matches.length} 条草稿观察`}</p>
+      <div className="discovery-grid">{matches.slice(0,limit).map(unit=><DiscoveryCard key={unit.id} unit={unit} en={en} query={filter}/>)}</div>
+      {limit<matches.length&&<button type="button" onClick={()=>setLimit(value=>value+12)}>{en?'Show more button drafts':'继续查看按钮档案'}</button>}
+    </>}
+  </div>
 }
 function SearchSession({index,scope,theme,en,reload}) {
   const sessionKey=`${scope}/${theme}`, initial=sessions.get(sessionKey)||{query:'',pins:[]}
@@ -83,16 +101,20 @@ function SearchSession({index,scope,theme,en,reload}) {
   const toggle=id=>setPins(old=>old.includes(id)?old.filter(x=>x!==id):[...old,id].slice(-8))
   const card=(unit,isPinned=false)=><DiscoveryCard key={unit.id} unit={unit} en={en} pinned={pins.includes(unit.id)} toggle={toggle} isPinned={isPinned} query={query}/>
   const examples=theme?units.flatMap(x=>x.exampleQueries||[]).slice(0,4):index.examples
+  const componentQuery=scope==='curation'&&wantsComponentInstance(query)
+  const componentCount=units.filter(unit=>unit.kind==='website-component').length
   const hint=status==='ranking'||status==='waiting'?(en?'Comparing within this topic…':'正在当前主题内比较…'):status==='ready'?(currentResponse?.mode==='empty'?(en?'No eligible candidates':'没有符合条件的候选'):(en?`Jev · ${currentResponse?.candidateCount} candidates compared`:`Jev 已比较 ${currentResponse?.candidateCount} 个候选`)):status==='fallback'?(en?'Local matches · Jev is temporarily unavailable':'本地匹配 · Jev 暂不可用'):(en?`${units.length} entries in this topic`:`当前主题可检索 ${units.length} 条`)
   return <>
     <div className="discovery-input-wrap"><textarea id={`discovery-query-${scope}`} aria-label={en?`Search ${config.en}`:`搜索${config.zh}`} value={query} maxLength={1500} rows={2} onChange={e=>updateQuery(e.target.value)} onCompositionStart={()=>setComposing(true)} onCompositionEnd={()=>setComposing(false)} placeholder={en?config.promptEn:config.promptZh} aria-describedby={`discovery-hint-${scope}`}/><button className="discovery-clear" type="button" onClick={()=>updateQuery('')} hidden={!query}>{en?'Clear':'清空'}</button></div>
     <div className="discovery-under"><span id={`discovery-hint-${scope}`} role="status" aria-live="polite">{hint}{currentResponse?.cost==='0'?' · Free':''}</span><span>{en?'Only this topic. Refine freely.':'仅检索当前主题，随时修改描述。'}</span></div>
+    {scope==='curation'&&<p className="discovery-notice">{en?`${units.filter(unit=>unit.kind==='curated-site').length} website entries · ${componentCount} published component instances`:`${units.filter(unit=>unit.kind==='curated-site').length} 个网站入口 · ${componentCount} 个已发布组件实例`}</p>}
     {!query&&examples?.length>0&&<div className="discovery-examples">{examples.map(example=><button key={example} type="button" onClick={()=>updateQuery(example)}>{example}</button>)}</div>}
     {status==='fallback'&&<p className="discovery-notice">{en?'Results currently use local matching.':'当前显示本地匹配结果。'} <button type="button" onClick={()=>setRetry(x=>x+1)}>{en?'Retry Jev':'重试 Jev'}</button></p>}
     {pinned.length>0&&<div className="discovery-pins"><h2>{en?'Kept in this topic':'当前主题保留的方向'} <small>{pinned.length}/8</small></h2><div className="discovery-grid">{pinned.map(unit=>card(unit,true))}</div></div>}
     {query.trim()&&<div className="discovery-results" aria-busy={status==='ranking'}><div className="discovery-results-heading"><h2>{en?config.en:config.zh} <small>{en?'Matches':'匹配结果'}</small></h2><button type="button" aria-expanded={expanded} onClick={()=>setExpanded(x=>!x)}>{expanded?(en?'Collapse':'收起结果'):(en?'Expand':'展开结果')}</button></div>
-      {expanded&&(visible.length?<div className="discovery-grid">{visible.map(({unit})=>card(unit))}</div>:<p className="discovery-empty">{status==='ranking'||status==='waiting'?(en?'Understanding your description…':'正在理解这段描述…'):(en?'No supported match in this topic yet.':'当前主题还没有证据充分的匹配。')}</p>)}
+      {expanded&&(visible.length?<div className="discovery-grid">{visible.map(({unit})=>card(unit))}</div>:<p className="discovery-empty">{componentQuery&&!componentCount?(en?'No verified component instances are published in this topic yet. Website introductions cannot establish a specific button’s appearance or motion.':'当前主题尚无已发布的组件实例。网站介绍不能证明某一个按钮的外观和动效。'):status==='ranking'||status==='waiting'?(en?'Understanding your description…':'正在理解这段描述…'):(en?'No supported match in this topic yet.':'当前主题还没有证据充分的匹配。')}</p>)}
     </div>}
+    {scope==='curation'&&<ComponentDrafts en={en} theme={theme}/>}
   </>
 }
 export default function ComponentDiscovery({scope='curation',fixedTheme=''}) {

@@ -1,5 +1,5 @@
 export const DISCOVERY_SCOPES = {
-  curation: { zh:'策展', en:'Websites', promptZh:'描述你需要的网站、组件库或资源，也可以补充免费、源码等条件。', promptEn:'Describe the website, library or resource you need. Add cost or source-code requirements.' },
+  curation: { zh:'策展', en:'Curation', promptZh:'描述具体组件的外观与动效；寻找网站或组件库时请直接说明。', promptEn:'Describe a specific component and its appearance or motion. Explicitly ask for a website or library when that is what you need.' },
   atlas: { zh:'图鉴', en:'Atlas', promptZh:'描述形状、颜色、尺寸或动效。找到效果后，可以查看已核实包含它的原网站。', promptEn:'Describe a shape, color, size or motion. Matching effects can link to verified original examples.' },
   skills: { zh:'Skill', en:'Skills', promptZh:'描述你想交给 Agent 的设计规则或生图方法。', promptEn:'Describe the design rules or image-making method your agent needs.' },
   ppt: { zh:'PPT 制作', en:'Presentations', promptZh:'描述这一页要表达的内容、构图和排版感觉。', promptEn:'Describe the content, composition and typographic feel of your slide.' },

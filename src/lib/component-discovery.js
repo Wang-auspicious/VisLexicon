@@ -26,8 +26,14 @@ export function queryTerms(query) {
   for(const [pattern,values] of ALIASES) if(pattern.test(q)) values.forEach(x=>terms.add(x))
   return [...terms]
 }
+export function wantsComponentInstance(query) {
+  const q=String(query).normalize('NFKC').toLowerCase()
+  if(/组件库|网站|站点|资源库|(?:component|ui)\s+librar|\b(?:website|websites|libraries|library)\b/u.test(q))return false
+  return /组件|按钮|卡片|输入框|开关|加载圈|导航栏|\b(?:buttons?|cards?|components?|inputs?|toggles?|spinners?)\b/u.test(q)
+}
 export function explicitConflicts(query, unit) {
   const q=query.toLowerCase(), conflicts=[]
+  if(wantsComponentInstance(query)&&unit.kind==='curated-site')conflicts.push('需要具体组件实例，不能用整站代替')
   if(!matchesRequirements(query,unit))conflicts.push('缺少满足费用或源码条件的同一份资源证据')
   if(/(?:不要|不用|无|别)[^，。,.]{0,4}(?:发光|光晕|光效)|(?:no|without)\s+(?:glow|glowing)/u.test(q) && /hover--(?:glow|gradborder)$/.test(unit.id)) conflicts.push('要求无光效')
   if(/(?:不要|不用|无|别)[^，。,.]{0,3}(?:动画|动效)|(?:no|without)\s+animation|完全静止/u.test(q) && (unit.interaction?.activeMotion===true||unit.interaction?.trigger==='autoplay'||unit.interaction?.capturedState==='loading-demo')) conflicts.push('要求静止')

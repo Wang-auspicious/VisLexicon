@@ -10,7 +10,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "oxlint src server scripts vite.config.js",
-    "test": "npm run check"
+    "test": "npm run check && node --test tests/*.test.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",
