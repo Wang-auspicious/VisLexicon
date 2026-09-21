@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { lexicalCandidates, applyModelRanking, wantsComponentInstance } from '../lib/component-discovery.js'
+import { lexicalCandidates, discoveryResults, wantsComponentInstance } from '../lib/component-discovery.js'
 import { DISCOVERY_SCOPES, colorSegments, descriptionSections, inTheme, queryRequirements, offerMatches } from '../lib/discovery-scopes.js'
 import { useStore } from '../store.js'
 import { CURATION_CATEGORIES } from '../data/curation-taxonomy.js'
@@ -51,9 +51,8 @@ function DiscoveryCard({unit,en,pinned,toggle,isPinned,query}) {
     </div>
   </article>
 }
-function ComponentDrafts({en,theme}) {
-  const [archive,setArchive]=useState(null),[open,setOpen]=useState(false),[filter,setFilter]=useState(''),[limit,setLimit]=useState(12)
-  useEffect(()=>{let live=true;fetch('/api/discovery/component-drafts',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(data=>{if(live)setArchive(data)}).catch(()=>{});return()=>{live=false}},[])
+function ComponentDrafts({en,theme,archive}) {
+  const [open,setOpen]=useState(false),[filter,setFilter]=useState(''),[limit,setLimit]=useState(12)
   const units=(archive?.units||[]).filter(unit=>inTheme(unit,theme))
   if(!units.length)return null
   const matches=filter.trim()?lexicalCandidates(filter,units,{limit:units.length}).map(row=>row.unit):units
@@ -72,11 +71,12 @@ function SearchSession({index,scope,theme,en,reload}) {
   const sessionKey=`${scope}/${theme}`, initial=sessions.get(sessionKey)||{query:'',pins:[]}
   const [query,setQuery]=useState(initial.query),[pins,setPins]=useState(initial.pins),[composing,setComposing]=useState(false)
   const [response,setResponse]=useState(null),[status,setStatus]=useState('idle'),[retry,setRetry]=useState(0),[expanded,setExpanded]=useState(true)
+  const [archive,setArchive]=useState(null),[resultLimit,setResultLimit]=useState(12)
+  useEffect(()=>{if(scope!=='curation')return;let live=true;fetch('/api/discovery/component-drafts',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(data=>{if(live)setArchive(data)}).catch(()=>{});return()=>{live=false}},[scope])
   const sequence=useRef(0),config=DISCOVERY_SCOPES[scope]
   useEffect(()=>{sessions.set(sessionKey,{query,pins})},[sessionKey,query,pins])
   const units=useMemo(()=>index.units.filter(unit=>unit.scope===scope&&inTheme(unit,theme)),[index,scope,theme])
-  const local=useMemo(()=>query.trim()?lexicalCandidates(query,units,{limit:12}):[],[units,query])
-  const updateQuery=value=>{setQuery(value);setResponse(null);setStatus(value.trim()?'waiting':'idle');setExpanded(true)}
+  const updateQuery=value=>{setQuery(value);setResponse(null);setStatus(value.trim()?'waiting':'idle');setExpanded(true);setResultLimit(12)}
   useEffect(()=>{
     const version=++sequence.current,controller=new AbortController()
     if(!query.trim()||composing)return()=>controller.abort()
@@ -95,26 +95,29 @@ function SearchSession({index,scope,theme,en,reload}) {
     return()=>{clearTimeout(timer);controller.abort()}
   },[query,index,scope,theme,composing,retry,reload])
   const currentResponse=response?.query===query?response:null
-  const ranked=currentResponse?applyModelRanking(query,units,currentResponse.rows):local
-  const visible=(currentResponse?ranked.filter(x=>x.score>=1.4):ranked).slice(0,6)
+  const ranked=discoveryResults(query,units,currentResponse,{scope,theme,drafts:archive?.units||[],limit:units.length+(archive?.count||0)})
+  const visible=ranked.slice(0,resultLimit)
+  const draftCount=ranked.filter(row=>row.unit.verification==='draft').length
   const pinned=pins.map(id=>units.find(unit=>unit.id===id)).filter(Boolean)
   const toggle=id=>setPins(old=>old.includes(id)?old.filter(x=>x!==id):[...old,id].slice(-8))
-  const card=(unit,isPinned=false)=><DiscoveryCard key={unit.id} unit={unit} en={en} pinned={pins.includes(unit.id)} toggle={toggle} isPinned={isPinned} query={query}/>
+  const card=(unit,isPinned=false)=><DiscoveryCard key={unit.id} unit={unit} en={en} pinned={pins.includes(unit.id)} toggle={unit.verification==='draft'?undefined:toggle} isPinned={isPinned} query={query}/>
   const examples=theme?units.flatMap(x=>x.exampleQueries||[]).slice(0,4):index.examples
   const componentQuery=scope==='curation'&&wantsComponentInstance(query)
   const componentCount=units.filter(unit=>unit.kind==='website-component').length
   const hint=status==='ranking'||status==='waiting'?(en?'Comparing within this topic…':'正在当前主题内比较…'):status==='ready'?(currentResponse?.mode==='empty'?(en?'No eligible candidates':'没有符合条件的候选'):(en?`Jev · ${currentResponse?.candidateCount} candidates compared`:`Jev 已比较 ${currentResponse?.candidateCount} 个候选`)):status==='fallback'?(en?'Local matches · Jev is temporarily unavailable':'本地匹配 · Jev 暂不可用'):(en?`${units.length} entries in this topic`:`当前主题可检索 ${units.length} 条`)
   return <>
     <div className="discovery-input-wrap"><textarea id={`discovery-query-${scope}`} aria-label={en?`Search ${config.en}`:`搜索${config.zh}`} value={query} maxLength={1500} rows={2} onChange={e=>updateQuery(e.target.value)} onCompositionStart={()=>setComposing(true)} onCompositionEnd={()=>setComposing(false)} placeholder={en?config.promptEn:config.promptZh} aria-describedby={`discovery-hint-${scope}`}/><button className="discovery-clear" type="button" onClick={()=>updateQuery('')} hidden={!query}>{en?'Clear':'清空'}</button></div>
-    <div className="discovery-under"><span id={`discovery-hint-${scope}`} role="status" aria-live="polite">{hint}{currentResponse?.cost==='0'?' · Free':''}</span><span>{en?'Only this topic. Refine freely.':'仅检索当前主题，随时修改描述。'}</span></div>
-    {scope==='curation'&&<p className="discovery-notice">{en?`${units.filter(unit=>unit.kind==='curated-site').length} website entries · ${componentCount} published component instances`:`${units.filter(unit=>unit.kind==='curated-site').length} 个网站入口 · ${componentCount} 个已发布组件实例`}</p>}
+    <div className="discovery-under"><span id={`discovery-hint-${scope}`} role="status" aria-live="polite">{draftCount?(en?`${draftCount} local component observations · pending verification`:`找到 ${draftCount} 条本地组件观察 · 待核验`):hint}{!draftCount&&currentResponse?.cost==='0'?' · Free':''}</span><span>{en?'Only this topic. Refine freely.':'仅检索当前主题，随时修改描述。'}</span></div>
+    {scope==='curation'&&<p className="discovery-notice">{en?`${units.filter(unit=>unit.kind==='curated-site').length} website entries · ${componentCount} published components · ${(archive?.units||[]).filter(unit=>inTheme(unit,theme)).length} local observations`:`${units.filter(unit=>unit.kind==='curated-site').length} 个网站入口 · ${componentCount} 个已发布组件 · ${(archive?.units||[]).filter(unit=>inTheme(unit,theme)).length} 条本地组件观察`}</p>}
     {!query&&examples?.length>0&&<div className="discovery-examples">{examples.map(example=><button key={example} type="button" onClick={()=>updateQuery(example)}>{example}</button>)}</div>}
-    {status==='fallback'&&<p className="discovery-notice">{en?'Results currently use local matching.':'当前显示本地匹配结果。'} <button type="button" onClick={()=>setRetry(x=>x+1)}>{en?'Retry Jev':'重试 Jev'}</button></p>}
+    {draftCount>0&&<p className="discovery-notice">{en?'These component previews use local keyword matching. Their untested states are marked on each card.':'以下组件按本地关键词匹配，直接展示已有预览；未核验的状态在各卡片中标明。'}</p>}
+    {status==='fallback'&&!draftCount&&<p className="discovery-notice">{en?'Results currently use local matching.':'当前显示本地匹配结果。'} <button type="button" onClick={()=>setRetry(x=>x+1)}>{en?'Retry Jev':'重试 Jev'}</button></p>}
     {pinned.length>0&&<div className="discovery-pins"><h2>{en?'Kept in this topic':'当前主题保留的方向'} <small>{pinned.length}/8</small></h2><div className="discovery-grid">{pinned.map(unit=>card(unit,true))}</div></div>}
     {query.trim()&&<div className="discovery-results" aria-busy={status==='ranking'}><div className="discovery-results-heading"><h2>{en?config.en:config.zh} <small>{en?'Matches':'匹配结果'}</small></h2><button type="button" aria-expanded={expanded} onClick={()=>setExpanded(x=>!x)}>{expanded?(en?'Collapse':'收起结果'):(en?'Expand':'展开结果')}</button></div>
       {expanded&&(visible.length?<div className="discovery-grid">{visible.map(({unit})=>card(unit))}</div>:<p className="discovery-empty">{componentQuery&&!componentCount?(en?'No verified component instances are published in this topic yet. Website introductions cannot establish a specific button’s appearance or motion.':'当前主题尚无已发布的组件实例。网站介绍不能证明某一个按钮的外观和动效。'):status==='ranking'||status==='waiting'?(en?'Understanding your description…':'正在理解这段描述…'):(en?'No supported match in this topic yet.':'当前主题还没有证据充分的匹配。')}</p>)}
     </div>}
-    {scope==='curation'&&<ComponentDrafts en={en} theme={theme}/>}
+    {expanded&&query.trim()&&resultLimit<ranked.length&&<button type="button" onClick={()=>setResultLimit(value=>value+12)}>{en?'Show more components':'查看更多组件'}</button>}
+    {scope==='curation'&&!componentQuery&&<ComponentDrafts en={en} theme={theme} archive={archive}/>}
   </>
 }
 export default function ComponentDiscovery({scope='curation',fixedTheme=''}) {

@@ -1,5 +1,5 @@
 // Evidence retrieval is independent from the model. Model output can only reorder known IDs.
-import { matchesRequirements } from './discovery-scopes.js'
+import { matchesRequirements, inTheme } from './discovery-scopes.js'
 export const DISCOVERY_INDEX_URL = '/data/discovery/index.json'
 const ALIASES = [
   [/按钮|button|cta/iu,['按钮','button']], [/虚线|dash/iu,['虚线','dashed']],
@@ -74,4 +74,14 @@ export function applyModelRanking(query, units, modelRows) {
   const byId=new Map(units.map(x=>[x.id,x])), seen=new Set()
   return modelRows.filter(row=>byId.has(row.id)&&!seen.has(row.id)&&seen.add(row.id)&&Number.isFinite(row.score)&&row.score>=0&&row.score<=3&&!explicitConflicts(query,byId.get(row.id)).length)
     .sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id)).map(row=>({unit:byId.get(row.id),score:row.score,confidence:row.confidence,matched:[],conflicts:[]}))
+}
+// Local drafts remain separate from published candidates and are never sent to Jev.
+// An empty model response must not erase local component observations.
+export function discoveryResults(query, units, response, {scope,theme='',drafts=[],limit=12}={}) {
+  const published=response?applyModelRanking(query,units,response.rows).filter(row=>row.score>=1.4):lexicalCandidates(query,units,{limit})
+  if(scope!=='curation'||!wantsComponentInstance(query))return published.slice(0,limit)
+  const buttonQuery=/按钮|\bbuttons?\b/iu.test(query)
+  const eligible=drafts.filter(unit=>unit.verification==='draft'&&unit.scope===scope&&inTheme(unit,theme)&&(!buttonQuery||unit.componentType==='button'))
+  const seen=new Set(published.map(row=>row.unit.id))
+  return [...published,...lexicalCandidates(query,eligible,{limit}).filter(row=>!seen.has(row.unit.id))].slice(0,limit)
 }
