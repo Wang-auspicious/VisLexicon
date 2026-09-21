@@ -1,0 +1,176 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "52ea34df9e5b52a7baaa65bb1dad8a14d73afedbf4c0af91a51c71709cff1eba",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "markstream-simonhe-me-frameworks-vue",
+  "entityId": "entity-markstream-simonhe-me-frameworks-vue",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "markstream.simonhe.me",
+  "official": {
+    "inputUrl": "https://markstream.simonhe.me/frameworks/vue",
+    "finalUrl": "https://markstream.simonhe.me/frameworks/vue",
+    "checkedAt": "2026-09-15T12:00:49.350Z"
+  },
+  "editorial": {
+    "name": "Markstream",
+    "descriptionZh": "给 Vue 3、Nuxt、VitePress 用的流式 Markdown 渲染器，专治 LLM 一边吐字一边渲染时的闪烁，能把没写完的代码块、Mermaid 图和 KaTeX 公式安全渲出来。",
+    "takeawayZh": "在 Vue 里接住 LLM 的流式输出，边吐边渲且不闪",
+    "noteZh": "这是一页 VitePress 文档：顶栏 Markstream logo 旁是 Search Ctrl K，然后 Learn、Components、Frameworks、Playground、Troubleshooting、GitHub，最右端还有语言和主题切换。左栏 Get Started 下排着 Vue Quick Start、Installation & Optional Peers、AI Chat & Streaming、Nuxt SSR 与 All Guides，Frameworks 一栏里 Vue 3、Nuxt、Vue 2、React、Next.js、Svelte、Angular 各自成页。正文标题是 Vue and Nuxt streaming Markdown renderer for AI chat，When to use 一段用 markstream-vue when 与 Use a simpler alternative when 两组条件列表把适用场景说清，右边 On this page 跟着 Quick Start、Key capabilities 走。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Quick Start 里给的是组件用法（pnpm add markstream-vue vue 之后 import MarkdownRender from 'markstream-vue'，模板里写 <MarkdownRender mode=\"chat\">），用户装包后拿到可嵌入的渲染组件，归通用界面组件库。",
+        "evidenceUrl": "https://markstream.simonhe.me/frameworks/vue"
+      },
+      {
+        "statement": "归 page-blocks-embeddable-controls 也说得通，但站方自述是 renderer 并为此开了 Component Gallery 与逐个 Node 组件的 API 页，按组件库取类。",
+        "evidenceUrl": "https://markstream.simonhe.me/components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:49.350Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://markstream.simonhe.me/frameworks/vue",
+      "finalUrl": "https://markstream.simonhe.me/frameworks/vue",
+      "title": "Vue streaming Markdown renderer for AI chat, SSE, WebSocket, and Nuxt | Markstream",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/markstream-simonhe-me-frameworks-vue/identity.jpg",
+        "sha256": "24537393fc339562fb28b77785b1e63dacf62e5245c9d48931c8e18919e8872d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127700,
+        "alt": "Markstream 首屏：Get Started"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://markstream.simonhe.me/frameworks/vue",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/markstream-simonhe-me-frameworks-vue/identity.jpg",
+          "alt": "Markstream 首屏：Get Started",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "package",
+      "value": "markstream-vue",
+      "sourceUrl": "https://markstream.simonhe.me/frameworks/vue",
+      "evidence": "Quick Start 的 pnpm add markstream-vue vue 与 <script setup lang=\"ts\"> 示例",
+      "confidence": 1
+    },
+    {
+      "field": "frameworkSupport",
+      "value": "Vue 3 / Vue 2 / Nuxt / React / Next.js / Svelte / Angular",
+      "sourceUrl": "https://markstream.simonhe.me/frameworks",
+      "evidence": "左栏 Frameworks & Migration 一节下的页面清单",
+      "confidence": 1
+    },
+    {
+      "field": "streaming",
+      "value": "SSE、WebSocket、未闭合代码块、Mermaid、KaTeX",
+      "sourceUrl": "https://markstream.simonhe.me/guide/ai-chat-streaming.html",
+      "evidence": "When to use markstream-vue 的条件列表，如 Incomplete Markdown states must not flicker、progressive Mermaid diagrams",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://markstream.simonhe.me/frameworks/vue",
+      "evidence": "文档站只有安装与指南章节，没有定价入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/markstream-simonhe-me-frameworks-vue.md",
+  "registryUrl": "/r/markstream-simonhe-me-frameworks-vue.json"
+}

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2d26873485a1eeb606b82a91c05ee0fc5e57e77f86fec2aa3172174715ea31f6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "interfere-com",
+  "entityId": "entity-interfere-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://interfere.com",
+    "finalUrl": "https://interfere.com/",
+    "checkedAt": "2026-09-15T11:11:52.625Z"
+  },
+  "editorial": {
+    "name": "Interfere",
+    "descriptionZh": "做生产环境可视化的产品官网。它持续盯住应用行为，在用户报错之前把异常拎出来，并给出受影响用户数、时间线和可疑代码位置，面向工程师、产品经理和设计师三类人。",
+    "takeawayZh": "看它怎么用一整个事故面板当首屏主视觉",
+    "noteZh": "首屏几乎全是产品界面：页头只有 Product、Careers、Changelog、Blog、Docs、Contact 加 Login L / Sign up D —— 后面那两个字母是它自带的键盘快捷键提示。左上大字写 Ship software that never breaks，其中 breaks 换成斜体衬线；右侧两行小字说明它让 engineers, product managers and designers 实时看懂之前看不见的 bug。下面整块是 Interfere 的工作台：左栏 Inbox 选中 #120 Broken password reset link，右侧分 Activity / Sessions / Findings 三签，时间线从 Problem detected · 4 min ago 一路走到 Assigned to Luke Shiels · 3 min ago，中间嵌一段 auth/reset.ts 的 diff，把 staging.example.com 改成 example.com/reset-password，再用 Fact · 3 min ago 写 Error rate increased from 0.2% to 12% within 6 minutes after deployment.。面板左侧还有一列窄图标栏，底部标 IMPACTED USERS 12,881。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "interfere.com 是 Interfere 这款生产监控产品的官方首页，首屏直接演示产品界面，导航 Product / Docs / Changelog 指向自家产品资料，用户拿走的是「了解并注册」，因此归产品与公司官网。",
+        "evidenceUrl": "https://interfere.com/"
+      },
+      {
+        "statement": "站内把同一产品按角色拆成 /product/engineers、/product/designers、/product/product-managers、/product/customer-support 四页，是单一产品的分角色介绍，不是组件库或案例合集。",
+        "evidenceUrl": "https://interfere.com/product/engineers"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:11:52.625Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "agent"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "test"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "editorial-feed"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://interfere.com",
+      "finalUrl": "https://interfere.com/",
+      "title": "Production visibility for teams that ship fast › Interfere",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/interfere-com/identity.jpg",
+        "sha256": "39697bff3619e42979f5ad4f75dc7422ca6962243421a77842e701d030d404ac",
+        "width": 1280,
+        "height": 900,
+        "bytes": 105929,
+        "alt": "Interfere 首屏：Ship software that never breaks"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "productSurface",
+      "value": "Issue 详情页分 Activity / Sessions / Findings 三签，带时间线、代码 diff 与影响用户数",
+      "sourceUrl": "https://interfere.com/",
+      "evidence": "首屏产品界面截图与正文 Find problems with confidence 一节",
+      "confidence": 1
+    },
+    {
+      "field": "audiences",
+      "value": "工程师、设计师、产品经理、客服四类角色各有落地页",
+      "sourceUrl": "https://interfere.com/product/engineers",
+      "evidence": "站内 /product/engineers、/product/designers、/product/product-managers、/product/customer-support 四条路径",
+      "confidence": 1
+    },
+    {
+      "field": "nav",
+      "value": "Product、Careers、Changelog、Blog、Docs、Contact",
+      "sourceUrl": "https://interfere.com/",
+      "evidence": "页头导航文案（Login / Sign up 旁各带一个键盘快捷键字母）",
+      "confidence": 1
+    },
+    {
+      "field": "changelog",
+      "value": "有独立的 Changelog，条目如 Consent management、Timeline improvements、OAuth integrations",
+      "sourceUrl": "https://interfere.com/changelog/consent-management",
+      "evidence": "站内 /changelog/* 路径与导航 Changelog",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/interfere-com",
+    "designMdUrl": "https://vislexicon.com/site/interfere-com.md",
+    "checkedAt": "2026-09-15T11:11:52.625Z",
+    "license": "unknown"
+  }
+}

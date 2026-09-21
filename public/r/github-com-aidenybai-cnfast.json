@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "57b9a3f825cb41f7a76b3a6ecaf9db37f6d2855e0189ae208cc8cff4e93cfc61",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-aidenybai-cnfast",
+  "entityId": "entity-github-com-aidenybai-cnfast",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/aidenybai/cnfast",
+    "finalUrl": "https://github.com/aidenybai/cnfast",
+    "checkedAt": "2026-09-15T11:56:57.314Z"
+  },
+  "editorial": {
+    "name": "aidenybai/cnfast",
+    "descriptionZh": "tailwind-merge + clsx 的替换品：58 个真实仓库跑下来快 25 倍且输出逐字节相同，README 顶部注明项目已不再维护。",
+    "takeawayZh": "一条命令把项目里的 cn 换成更快的实现，API 不变",
+    "noteZh": "README 开头是 Note 块，直言作者已转去做 shadcn 的 cn 包、cnfast will no longer be maintained in favor of cn。正文写它在 58 real-world repositories 上比 tailwind-merge + clsx 快 25×，输出 byte-identical，API 相同、无需改代码，示例是 cn(\"px-2 py-1\", isActive && \"px-4\", {\"text-red-500\": hasError})。安装是 npm install cnfast，还提供 npx cnfast migrate 一键迁移与 npx shadcn@latest add aidenybai/cnfast/cn 写进 registry。About 栏 License 标 MIT，topics 是 clsx / cn / tailwindcss，Languages 为 TypeScript 98.8%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的不是界面组件，而是一个替换项目内 cn 工具函数的 npm 包与迁移 CLI，属于开发工作流工具；也可考虑并入组件库，但用户拿走的是运行时代码替换而非组件。",
+        "evidenceUrl": "https://github.com/aidenybai/cnfast"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:56:57.314Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "typescript",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/aidenybai/cnfast",
+      "finalUrl": "https://github.com/aidenybai/cnfast",
+      "title": "GitHub - aidenybai/cnfast: 25× faster drop-in replacement for `cn` · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-aidenybai-cnfast/identity.jpg",
+        "sha256": "8a866db35b153de6c3aaba9225e675298547e3d6f120ab7e69ef73dd4ad650bf",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134586,
+        "alt": "aidenybai/cnfast 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "performance",
+      "value": "25× faster than tailwind-merge + clsx across 58 real-world repositories, with byte-identical output",
+      "sourceUrl": "https://github.com/aidenybai/cnfast",
+      "evidence": "README 的性能说明段",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install cnfast；迁移用 npx cnfast migrate",
+      "sourceUrl": "https://github.com/aidenybai/cnfast",
+      "evidence": "README 的 Install 与 Migrate 两节",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/aidenybai/cnfast",
+      "evidence": "About 栏 License 与 README 的 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "status",
+      "value": "作者声明不再维护，建议改用 shadcn 的 cn 包",
+      "sourceUrl": "https://github.com/aidenybai/cnfast",
+      "evidence": "README 顶部的 Note 块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-aidenybai-cnfast",
+    "designMdUrl": "https://vislexicon.com/site/github-com-aidenybai-cnfast.md",
+    "checkedAt": "2026-09-15T11:56:57.314Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a2bfd9a25553428f9f810c80161f1f385981d80161b378d8285b73b96767a13c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-mbecker20-kbin-ui",
+  "entityId": "entity-github-com-mbecker20-kbin-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/mbecker20/kbin-ui",
+    "finalUrl": "https://github.com/mbecker20/kbin-ui",
+    "checkedAt": "2026-09-15T12:00:21.220Z"
+  },
+  "editorial": {
+    "name": "mbecker20/kbin-ui",
+    "descriptionZh": "一套 TypeScript 写的 React 组件与主题函数集，README 是生成的 API 文档，按 Variables 和 Functions 两栏铺开。",
+    "takeawayZh": "用 setCustomColors 一类函数改颜色和尺寸。",
+    "noteZh": "README 是照 TypeDoc 生成的那种 API 文档，Table of contents 先分 Variables 与 Functions：Variables 下是 colors、scrollbarJSS、sizes、springConfig、zIndex，Functions 下从 AnimatedFlexCol、AnimatedFlexRow、AnimatedText、AutoPlacingGrid 一路排到 ContextMenu、DualButtons、LabelledText、TextInput、useContextMenu、useScrollbarJSS。colors 那张表的字段名给得很细，buttonBorder、centerMenuBackground、checkBoxHighlightEdge、contextMenuBackground、focusedInputBorder 一个个列出来，配 setCustomColors / setCustomSizes / setCustomSpringConfig 这类改法。代码目录只有 docs 和 src 两个，Languages 是 TypeScript 100%，没发布过 release。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是一组 React 组件与配套的 colors / sizes 主题变量，用户装包后按需调用，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/mbecker20/kbin-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:21.220Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/mbecker20/kbin-ui",
+      "finalUrl": "https://github.com/mbecker20/kbin-ui",
+      "title": "GitHub - mbecker20/kbin-ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-mbecker20-kbin-ui/identity.jpg",
+        "sha256": "c55c456b631e8246610262d5daaaf36b3fc075a80424a861d0f7c021fa453480",
+        "width": 1280,
+        "height": 900,
+        "bytes": 64083,
+        "alt": "mbecker20/kbin-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "variables",
+      "value": "colors / scrollbarJSS / sizes / springConfig / zIndex",
+      "sourceUrl": "https://github.com/mbecker20/kbin-ui",
+      "evidence": "README 的 Table of contents 中 Variables 一节",
+      "confidence": 1
+    },
+    {
+      "field": "functions",
+      "value": "AnimatedFlexCol、AnimatedFlexRow、AutoPlacingGrid、ContextMenu、useContextMenu 等",
+      "sourceUrl": "https://github.com/mbecker20/kbin-ui",
+      "evidence": "README 的 Table of contents 中 Functions 一节",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "TypeScript 100%",
+      "sourceUrl": "https://github.com/mbecker20/kbin-ui",
+      "evidence": "右侧 Languages 条形图的图例",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "No releases published",
+      "sourceUrl": "https://github.com/mbecker20/kbin-ui",
+      "evidence": "右侧 Releases 区块原文",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-mbecker20-kbin-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-mbecker20-kbin-ui.md",
+    "checkedAt": "2026-09-15T12:00:21.220Z",
+    "license": "unknown"
+  }
+}

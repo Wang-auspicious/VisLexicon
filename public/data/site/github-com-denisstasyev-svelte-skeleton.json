@@ -1,0 +1,162 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "176155181266cde6d1f7c13fcdab394cff6b56f6afba4e21c8f217dd34cea2e0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-denisstasyev-svelte-skeleton",
+  "entityId": "entity-github-com-denisstasyev-svelte-skeleton",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/denisstasyev/svelte-skeleton",
+    "finalUrl": "https://github.com/denisstasyev/svelte-skeleton",
+    "checkedAt": "2026-09-15T12:10:14.656Z"
+  },
+  "editorial": {
+    "name": "denisstasyev/svelte-skeleton",
+    "descriptionZh": "用纯 SVG 拼加载占位骨架的 Svelte 组件，可以在 <Skeleton> 里塞 <rect />、<circle /> 自定义形状。颜色、尺寸、速度都能调，同一个组件里的背景会同步闪动。",
+    "takeawayZh": "在 <Skeleton> 里摆 <rect /> 拼占位图",
+    "noteZh": "README 的 Features 强调它是 Pure SVG：任何自定义 SVG 形状都能用，而且同一个组件里所有背景会同步，还标着 Works fine with SSR。用法是在 <Skeleton height=\"360\" width=\"360\"> 里逐条写 <rect width=\"96\" height=\"72\" rx=\"12\" /> 这样的形状。README 另外建议这个包只用在中等或大图上，图标场景要把 animate 设成 false，并顺带推荐了 svelte-image-loader。仓库只有 1 个分支、5 个 Tags，提交 11 次，README 上挂着 npm v1.3.1、downloads 21k/month 的徽章。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个直接渲染在界面上的 Svelte 组件，用来占住图片和界面的加载位置，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/denisstasyev/svelte-skeleton"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:10:14.656Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "svg"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/denisstasyev/svelte-skeleton",
+      "finalUrl": "https://github.com/denisstasyev/svelte-skeleton",
+      "title": "GitHub - denisstasyev/svelte-skeleton: Simple implementation of SVG skeletons in Svelte 3 :cat: · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-denisstasyev-svelte-skeleton/identity.jpg",
+        "sha256": "c8d0f90e54e8574d42d4b670a3c9e4e73fd658ba2b86cf732fdeb6a34ec64936",
+        "width": 1280,
+        "height": 900,
+        "bytes": 118365,
+        "alt": "denisstasyev/svelte-skeleton 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/denisstasyev/svelte-skeleton",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-denisstasyev-svelte-skeleton/identity.jpg",
+          "alt": "denisstasyev/svelte-skeleton 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/denisstasyev/svelte-skeleton",
+      "evidence": "About 栏里只有 Readme 和 Activity，没有 License 一项，文件树里也没有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "npmPackage",
+      "value": "v1.3.1，21k/month",
+      "sourceUrl": "https://github.com/denisstasyev/svelte-skeleton",
+      "evidence": "README 标题下的 npm 徽章：v1.3.1，downloads 21k/month，旁边还有 svelte v3 的兼容标记",
+      "confidence": 1
+    },
+    {
+      "field": "pureSvg",
+      "value": "纯 SVG，形状自定",
+      "sourceUrl": "https://github.com/denisstasyev/svelte-skeleton",
+      "evidence": "README 的 Features 一节：Pure SVG: any custom SVG shapes can be used；示例里用的是 <rect /> 子元素",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-denisstasyev-svelte-skeleton.md",
+  "registryUrl": "/r/github-com-denisstasyev-svelte-skeleton.json"
+}

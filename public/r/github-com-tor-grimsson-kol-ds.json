@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d55f770ec0fae0b8540546d5a9fbf6063cce65c11e30fbe727444d2cf2caeadd",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-tor-grimsson-kol-ds",
+  "entityId": "entity-github-com-tor-grimsson-kol-ds",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/Tor-Grimsson/kol-ds",
+    "finalUrl": "https://github.com/Tor-Grimsson/kol-ds",
+    "checkedAt": "2026-09-15T11:44:35.273Z"
+  },
+  "editorial": {
+    "name": "Tor-Grimsson/kol-ds",
+    "descriptionZh": "KOL（Kolkrabbi）设计系统的唯一维护仓库。一个 pnpm workspace 管着 @kolkrabbi/kol-* 一排包，UI 侧是 theme ← icons ← component ← framework 的四层，上面压六个领域包。",
+    "takeawayZh": "看 kol-theme→kol-framework 的四层拆包",
+    "noteZh": "README 开篇一句 The single maintenance home for the KOL (Kolkrabbi) design system，说明 kol-monorepo 里的旧副本是下游，要迁到这边发布的版本上。Packages 一节列了 kol-theme（品牌中性 token 与基础 CSS）、kol-icons（Icon 组件加 341 图标注册表）、kol-component（atoms 到 organisms，吐 kol-* 类名）与 kol-framework（sidenav、layout、theme toggle），再往上还有 kol-workshop、kol-dashboards、kol-chess、kol-content 四个领域包。仓库里 LLM_RULES.md 与 workbench、lobby、showcase 三个应用并列，About 栏指向 ui.kolkrabbi.io。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自称 KOL design system 的唯一维护处，Packages 一节给出从 token、图标、组件到 app shell 的四层结构，交付的是完整设计系统与发布管线而非单个组件。",
+        "evidenceUrl": "https://github.com/Tor-Grimsson/kol-ds"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:44:35.273Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Tor-Grimsson/kol-ds",
+      "finalUrl": "https://github.com/Tor-Grimsson/kol-ds",
+      "title": "GitHub - Tor-Grimsson/kol-ds: KOL design system · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-tor-grimsson-kol-ds/identity.jpg",
+        "sha256": "a08e29210efa5fd90a4a86dbe32a8d7cd5f35b6cd38e4b96ed1ce9f262f54972",
+        "width": 1280,
+        "height": 900,
+        "bytes": 112364,
+        "alt": "Tor-Grimsson/kol-ds 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "package_topology",
+      "value": "kol-theme / kol-icons / kol-component / kol-framework 四层 UI 栈，另有 kol-workshop、kol-dashboards、kol-chess、kol-content 四个领域包",
+      "sourceUrl": "https://github.com/Tor-Grimsson/kol-ds",
+      "evidence": "README Packages 一节的表格逐行给出包名、tier 与职责，并称 UI tier 是 theme ← icons ← component ← framework 四层",
+      "confidence": 1
+    },
+    {
+      "field": "showcase_url",
+      "value": "ui.kolkrabbi.io",
+      "sourceUrl": "https://github.com/Tor-Grimsson/kol-ds",
+      "evidence": "About 栏 Website 一行指向 ui.kolkrabbi.io",
+      "confidence": 1
+    },
+    {
+      "field": "repo_scale",
+      "value": "88 个 tag、124 次提交、2 个分支，最新版本 @kolkrabbi/kol-icons@0.7.1",
+      "sourceUrl": "https://github.com/Tor-Grimsson/kol-ds",
+      "evidence": "首页 tag 与分支计数、124 Commits、Releases 里的 @kolkrabbi/kol-icons@0.7.1",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-tor-grimsson-kol-ds",
+    "designMdUrl": "https://vislexicon.com/site/github-com-tor-grimsson-kol-ds.md",
+    "checkedAt": "2026-09-15T11:44:35.273Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "53ee575013dd5feadd3bde9f76e2f4d8dfb4ca90f6a92b62164f28dd0bf3a3b8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "color-pal-com",
+  "entityId": "entity-color-pal-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "color-pal.com",
+  "official": {
+    "inputUrl": "https://color-pal.com",
+    "finalUrl": "https://color-pal.com/",
+    "checkedAt": "2026-09-15T12:51:14.778Z"
+  },
+  "editorial": {
+    "name": "Color Pal",
+    "descriptionZh": "给设计系统做色阶的网页工具：从一个锚点色出发生成一列明度递进的色板，另有 Swatches 与 A11y 两个视图。",
+    "takeawayZh": "给一个锚点色，出十级明度色阶",
+    "noteZh": "首屏主体就是一整条蓝色色阶，十条色带按明度从深到浅排开，底部依次标着 10、19、28、37、46、54、63、72、81、90；左边栏是 Lightness、Swatches、A11y 三段，底部居中一个 Add Family + 按钮。页面文字里还带着 Base、Modulation、Options 与 Use anchor color、Hue Saturation、Randomize 这些控件名，顶栏除了 Color Pal 标，还有吸管图标与汉堡菜单。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的是当场生成的一列色阶而不是成品素材，用户动作是调参数、生成、取色值，属创作工具；词典没有专门的色彩类，沿用本仓库前几批把配色生成器归到 image-vector-layout-creation 的口径。",
+        "evidenceUrl": "https://color-pal.com/"
+      },
+      {
+        "statement": "页面描述写 Color Pal is a tool for creating color palettes for design systems，A11y 视图说明它还带对比度校验，但没有独立的无障碍审计报告产出，因此不归 accessibility-audit-remediation。",
+        "evidenceUrl": "https://color-pal.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:51:14.778Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "generate",
+      "export",
+      "preview"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://color-pal.com",
+      "finalUrl": "https://color-pal.com/",
+      "title": "Color Pal",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/color-pal-com/identity.jpg",
+        "sha256": "9dbdca0b5b66af93652053c1d75ed98f46b2cc9459644ed4a6d69efb8b435160",
+        "width": 1280,
+        "height": 900,
+        "bytes": 29539,
+        "alt": "Color Pal 首屏：Color Pal"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://color-pal.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/color-pal-com/identity.jpg",
+          "alt": "Color Pal 首屏：Color Pal",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "ramp-steps",
+      "value": "10 级（10 到 90）",
+      "sourceUrl": "https://color-pal.com/",
+      "evidence": "首屏色带底部依次标注 10、19、28、37、46、54、63、72、81、90，共十条；正文里也是 040e2f 10 到 d0dafb 90 这十组",
+      "confidence": 1
+    },
+    {
+      "field": "views",
+      "value": "Lightness / Swatches / A11y",
+      "sourceUrl": "https://color-pal.com/",
+      "evidence": "左侧栏三个入口的图标与文字，正文里写作 Lightness Swatches A11y；页面标题层里第三项标的是 Accessibility",
+      "confidence": 1
+    },
+    {
+      "field": "controls",
+      "value": "Add Family、Base、Modulation、Options、Use anchor color、Hue、Saturation、Randomize",
+      "sourceUrl": "https://color-pal.com/",
+      "evidence": "底部 Add Family + 按钮在首屏可见，其余控件名出现在页面正文文本里",
+      "confidence": 0.9
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://color-pal.com/",
+      "evidence": "页面无登录、无付费入口，工具直接可用",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/color-pal-com.md",
+  "registryUrl": "/r/color-pal-com.json"
+}

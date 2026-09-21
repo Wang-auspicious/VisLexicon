@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1b686381c31f26686e4ac20a7a04c03dc4b50d6ac3bf7258a6b3abe93b95efa0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-laispace-color-between",
+  "entityId": "entity-github-com-laispace-color-between",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/laispace/color-between",
+    "finalUrl": "https://github.com/laispace/color-between",
+    "checkedAt": "2026-09-15T12:51:25.719Z"
+  },
+  "editorial": {
+    "name": "laispace/color-between",
+    "descriptionZh": "求两个颜色之间某个比例处颜色的库：colorBetween(startColor, endColor, gradientDegree, outputFormat) 支持 hsl、rgb、rgba、hex 以及混写。",
+    "takeawayZh": "取两色之间指定比例的那个色值",
+    "noteZh": "README 分 Installation、Usage、API、Test 四节，API 一节把签名写成 colorBetween(startColor, endColor, gradientDegree, outputFormat) => color:String，示例先给默认 0.5 的 colorBetween('hsl(0, 100%, 100%)', 'hsl(100, 0%, 0%)') 得 'hsl(50, 50%, 50%)'，再给 rgb 的 0.5 得 'rgb(128, 128, 128)'、rgba 带 alpha 的 'rgba(128, 128, 128, 0.5)'、hex 的 '#fff' 与 '#000' 得 '#808080'，最后还有 '#fff' 配 'rgb(0, 0, 0)' 输出 hsl 的混写例子。右侧 About 是 get a gradient color between two colors.，README 卡片标 MIT license，Languages 显示 JavaScript 100%；仓库 8 star、7 个 commit、1 branch、0 Tags，没有 release，README 顶上的徽章是 npm v1.0.2、coverage 89%、downloads 7.7k/month。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "asset-conversion-optimization",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个做色值插值转换的 npm 库，输入两种颜色与一个比例、输出另一种写法的色值，属转换类开发库。",
+        "evidenceUrl": "https://github.com/laispace/color-between"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:51:25.719Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/laispace/color-between",
+      "finalUrl": "https://github.com/laispace/color-between",
+      "title": "GitHub - laispace/color-between: get a gradient color between two colors. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-laispace-color-between/identity.jpg",
+        "sha256": "18ccc00c1f24b9335ffba99e02845aa87ded5cbe1935cda43f350bac9c0ccb41",
+        "width": 1280,
+        "height": 900,
+        "bytes": 100796,
+        "alt": "laispace/color-between 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "api-signature",
+      "value": "colorBetween(startColor, endColor, gradientDegree, outputFormat)",
+      "sourceUrl": "https://github.com/laispace/color-between",
+      "evidence": "README 的 API 一节把签名与四个参数逐个列出，gradientDegree 限定 0 到 1，outputFormat 支持 hsl、rgb、hex",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/laispace/color-between",
+      "evidence": "README 卡片行标着 MIT license，文件列表里也有 LICENCE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "downloads",
+      "value": "7.7k/month",
+      "sourceUrl": "https://github.com/laispace/color-between",
+      "evidence": "README 开头的徽章行里 downloads 显示 7.7k/month，同排还有 coverage 89%",
+      "confidence": 0.8
+    },
+    {
+      "field": "release-status",
+      "value": "未发布 release（1 branch、0 Tags）",
+      "sourceUrl": "https://github.com/laispace/color-between",
+      "evidence": "Releases 区写着 No releases published，仓库头显示 1 Branch、0 Tags",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-laispace-color-between",
+    "designMdUrl": "https://vislexicon.com/site/github-com-laispace-color-between.md",
+    "checkedAt": "2026-09-15T12:51:25.719Z",
+    "license": "MIT"
+  }
+}

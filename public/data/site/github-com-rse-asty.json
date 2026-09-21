@@ -1,0 +1,153 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5186f5ee454931585d1a9d4d1769c26f48fc27948193407afceb51cf0d262b93",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-rse-asty",
+  "entityId": "entity-github-com-rse-asty",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/rse/asty",
+    "finalUrl": "https://github.com/rse/asty",
+    "checkedAt": "2026-09-15T12:48:12.473Z"
+  },
+  "editorial": {
+    "name": "rse/asty",
+    "descriptionZh": "JavaScript/TypeScript 用的 AST 数据结构库，通常接在 Peggy.js 这类解析器后面，装住解析结果并继续加工。",
+    "takeawayZh": "给解析结果套一棵 AST 节点树，方便继续加工",
+    "noteZh": "README 自述这是给 JS/TS 提供「装任意形式语言语法抽象」的层级结构，常与 Peggy.js 搭配使用，先把解析结果接住再往下处理。Usage 段列了 ASTYAttributeValue、ASTYAttributeSet、ASTYChildSpec 几个辅助类型，以及默认导出的 ASTYCtx 与 ASTYNode，并说明整棵树是靠把子节点链进父节点形成的。提交记录里反复出现 migrate from JavaScript to TypeScript，说明这个仓库刚整体迁到 TS；右栏 About 只有 Readme 与 Activity、没有 License 条目，仓库停在 master 单分支、101 个 tag、401 次提交。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的是一段装进项目里的数据结构代码，用户动作是 npm 安装后配合解析器使用，属于开发工具而非设计资产；受控词典缺语言工具小类，落在 build-deploy-dev-workflow，归类有不确定性。",
+        "evidenceUrl": "https://github.com/rse/asty"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:48:12.473Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/rse/asty",
+      "finalUrl": "https://github.com/rse/asty",
+      "title": "GitHub - rse/asty: Abstract Syntax Tree (AST) Data Structure · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-rse-asty/identity.jpg",
+        "sha256": "3ae4bcd86e7fea44cc7cfd6cfb1a799da776f8f737ae6d1067c0e5efac2de9cd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 108080,
+        "alt": "rse/asty 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/rse/asty",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-rse-asty/identity.jpg",
+          "alt": "rse/asty 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/rse/asty",
+      "evidence": "右栏 About 只有 Readme 与 Activity，没有 License 条目；README 顶部也没有写出协议名",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/rse/asty",
+      "evidence": "README 的 Installation 段只给 $ npm install asty 一条命令，仓库无定价内容",
+      "confidence": 0.8
+    },
+    {
+      "field": "usage",
+      "value": "常与 Peggy.js 搭配，把解析结果装进 AST 节点树",
+      "sourceUrl": "https://github.com/rse/asty",
+      "evidence": "README 的 About 段 It is usually used in combination with a parser generator like Peggy.js",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-rse-asty.md",
+  "registryUrl": "/r/github-com-rse-asty.json"
+}

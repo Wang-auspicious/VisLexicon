@@ -1,0 +1,160 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0c4c1a4174fefc43ab9c4aae64d47c9554c9fff1159a94f01d97e0c278580d7c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "styled-css-grid-js-org",
+  "entityId": "entity-styled-css-grid-js-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "styled-css-grid.js.org",
+  "official": {
+    "inputUrl": "https://styled-css-grid.js.org",
+    "finalUrl": "https://styled-css-grid.js.org/",
+    "checkedAt": "2026-09-15T12:08:09.539Z"
+  },
+  "editorial": {
+    "name": "styled-css-grid",
+    "descriptionZh": "给 React 用的极简 CSS Grid 布局组件，导出 Grid 与 Cell 两个组件，靠 props 而不是手写 grid-template 来排格子。适合要做通栏、转置、密集排列这类栅格的人。",
+    "takeawayZh": "拿 <Grid> 和 <Cell>，按 width/height 拼 CSS 网格。",
+    "noteZh": "页面顶部是一块由彩色矩形拼出来的 masthead：蓝的 styled、橙的 GitHub、紫的 css、红的 npm、棕的 grid，占满整宽。往下是 Traditional Grid# 小标题加一条横线，左边放 <Grid columns={12}> 的代码，右边同步渲染出 1/12 到 1/1 的格子图。再往下 Transposed Grid# 重复同一套排版，用 height 加 flow=column 把同一张网格转置。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点自己描述为 A tiny CSS grid layout for React，交付的是可安装的布局组件而不是教程或案例，归 ui-implementation。",
+        "evidenceUrl": "https://styled-css-grid.js.org/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:09.539Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://styled-css-grid.js.org",
+      "finalUrl": "https://styled-css-grid.js.org/",
+      "title": "styled-css-grid 🍱",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/styled-css-grid-js-org/identity.jpg",
+        "sha256": "69bffdd1f9f5c93e5b0ea2292020958a4e184278fb345a0f7269732b02a2a770",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116303,
+        "alt": "styled-css-grid 首屏：Traditional Grid#"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://styled-css-grid.js.org",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/styled-css-grid-js-org/identity.jpg",
+          "alt": "styled-css-grid 首屏：Traditional Grid#",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "components",
+      "value": "Grid 与 Cell 两个组件；Cell 用 width/height 表示占几列几行",
+      "sourceUrl": "https://styled-css-grid.js.org/",
+      "evidence": "Traditional Grid 一节示例 <Grid columns={12}><Cell width={1}>1/12</Cell>",
+      "confidence": 1
+    },
+    {
+      "field": "sections",
+      "value": "Traditional Grid / Transposed Grid / Positioning / Dense Layout / Responsive Layout / Holy Grail Layout / Areas / Alignment / Centering Content",
+      "sourceUrl": "https://styled-css-grid.js.org/",
+      "evidence": "页面各级小标题（截图可见前两个，其余见页面标题列表）",
+      "confidence": 0.9
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://styled-css-grid.js.org/",
+      "evidence": "整站只有顶部 npm 与 GitHub 两个入口，没有任何定价入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/styled-css-grid-js-org.md",
+  "registryUrl": "/r/styled-css-grid-js-org.json"
+}

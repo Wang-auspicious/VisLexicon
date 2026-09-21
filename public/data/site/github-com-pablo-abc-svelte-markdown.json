@@ -1,0 +1,160 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "63c1a4297eab0985e1beb35a5b27b73a116e3c8f6361bdf11d908c950f87f333",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-pablo-abc-svelte-markdown",
+  "entityId": "entity-github-com-pablo-abc-svelte-markdown",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/pablo-abc/svelte-markdown",
+    "finalUrl": "https://github.com/pablo-abc/svelte-markdown",
+    "checkedAt": "2026-09-15T12:09:48.210Z"
+  },
+  "editorial": {
+    "name": "pablo-abc/svelte-markdown",
+    "descriptionZh": "把 Markdown 解析成 Svelte 组件而不是 HTML 字符串的解析器，README 说明它受 ReactMarkdown 启发。默认不走 {@html}，渲染出来的是一棵组件树。",
+    "takeawayZh": "Markdown 字符串直接渲染成 Svelte 组件",
+    "noteZh": "README 的 Usage 里 source 是一段带标题、列表和表格的模板字符串，交给 <SvelteMarkdown {source} /> 之后输出的是 h1、p、ul、table 这些标签；Note 一节特别写明和 React Markdown 一样，除非需要渲染 HTML，否则不用 {@html ...}。文档还分列了 Props、Renderers、Rendering From Tokens、Events、Available renderers、HTML rendering 几节，可以看出 renderer 是可替换的。仓库在 main 分支、5 Branches、24 Tags，Used by 2.6K。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是一个 Svelte 组件，用来在自己的页面上渲染 Markdown 内容，属通用界面组件库。",
+        "evidenceUrl": "https://github.com/pablo-abc/svelte-markdown"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:09:48.210Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/pablo-abc/svelte-markdown",
+      "finalUrl": "https://github.com/pablo-abc/svelte-markdown",
+      "title": "GitHub - pablo-abc/svelte-markdown: Markdown parser to svelte components · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-pablo-abc-svelte-markdown/identity.jpg",
+        "sha256": "24fd208a39506ad44520802274fcc0a90ed55b82e2d5a98d5608f5ff43cb6dca",
+        "width": 1280,
+        "height": 900,
+        "bytes": 120901,
+        "alt": "pablo-abc/svelte-markdown 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/pablo-abc/svelte-markdown",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-pablo-abc-svelte-markdown/identity.jpg",
+          "alt": "pablo-abc/svelte-markdown 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/pablo-abc/svelte-markdown",
+      "evidence": "README 页签旁的 MIT license 标记与 About 栏的 MIT license 一致",
+      "confidence": 1
+    },
+    {
+      "field": "stars",
+      "value": "389",
+      "sourceUrl": "https://github.com/pablo-abc/svelte-markdown",
+      "evidence": "仓库头部 Star 389、Fork 54，右栏 Used by 2.6K",
+      "confidence": 1
+    },
+    {
+      "field": "noHtmlByDefault",
+      "value": "默认不用 {@html}",
+      "sourceUrl": "https://github.com/pablo-abc/svelte-markdown",
+      "evidence": "README 的 Note 一节：this package doesn't use {@html ...} unless you need to render HTML",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-pablo-abc-svelte-markdown.md",
+  "registryUrl": "/r/github-com-pablo-abc-svelte-markdown.json"
+}

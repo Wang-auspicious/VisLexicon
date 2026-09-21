@@ -1,0 +1,171 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b88c1f03f3b3f8a50fdbc8f76c0cabf7c4b4f50ad3a2c8a92a77416227278b8a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-apirtc-mui-react-lib",
+  "entityId": "entity-github-com-apirtc-mui-react-lib",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/ApiRTC/mui-react-lib",
+    "finalUrl": "https://github.com/ApiRTC/mui-react-lib",
+    "checkedAt": "2026-09-15T11:36:53.541Z"
+  },
+  "editorial": {
+    "name": "ApiRTC/mui-react-lib",
+    "descriptionZh": "ApiRTC 的 React/MUI 组件库，把 WebRTC 音视频流包成 Stream、Video、MuteButton 这类能直接放进 MUI 页面的控件。",
+    "takeawayZh": "把 ApiRTC 通话流包成 Stream 组件用",
+    "noteZh": "README 第一句写 This library offers React/MUI components to be used along with ApiRTC objects，Install 段除 npm install @apirtc/mui-react-lib 外还要求往 index.html 里加 Google 的 Material Icons 字体链接。Components 一节只详写了 Stream：可用 children 是 Audio 和 Video，controls 有 AudioEnableButton、MuteButton、SnapshotButton、TorchButton、VideoEnableButton，另有一段用 setLogLevel('warn') 调日志级别。仓库只有 src 一个目录，Releases 显示 No releases published，MIT license。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一组 React/MUI 组件（Stream 及其 controls 按钮），README 给出安装与用法，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/ApiRTC/mui-react-lib"
+      },
+      {
+        "statement": "仓库 Releases 显示 No releases published，About 只有一句 Material UI React ApiRTC components 且没有 topics，判断依据主要来自 README 正文。",
+        "evidenceUrl": "https://github.com/ApiRTC/mui-react-lib"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:36:53.541Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ApiRTC/mui-react-lib",
+      "finalUrl": "https://github.com/ApiRTC/mui-react-lib",
+      "title": "GitHub - ApiRTC/mui-react-lib: Material UI React ApiRTC components · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-apirtc-mui-react-lib/identity.jpg",
+        "sha256": "78e816f516533f7146a5f518bc556d802365235767db49ab0ca6887c73f28cfd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 118324,
+        "alt": "ApiRTC/mui-react-lib 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/ApiRTC/mui-react-lib",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-apirtc-mui-react-lib/identity.jpg",
+          "alt": "ApiRTC/mui-react-lib 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/ApiRTC/mui-react-lib",
+      "evidence": "README 徽标 MIT license，仓库根有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "Stream，children 为 Audio / Video，controls 含 AudioEnableButton、MuteButton、SnapshotButton、TorchButton、VideoEnableButton",
+      "sourceUrl": "https://github.com/ApiRTC/mui-react-lib",
+      "evidence": "README 的 Components 一节",
+      "confidence": 1
+    },
+    {
+      "field": "dependency",
+      "value": "需要在 index.html 引入 fonts.googleapis.com 的 Material Icons 样式表",
+      "sourceUrl": "https://github.com/ApiRTC/mui-react-lib",
+      "evidence": "README Install 段的提示",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "TypeScript 95.5%、JavaScript 4.5%",
+      "sourceUrl": "https://github.com/ApiRTC/mui-react-lib",
+      "evidence": "右侧 Languages 色条",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-apirtc-mui-react-lib.md",
+  "registryUrl": "/r/github-com-apirtc-mui-react-lib.json"
+}

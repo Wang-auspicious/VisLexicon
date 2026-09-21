@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ac0db9494c1b19dedd1fae21e846a5491c16c50b26c3d3503669a6f151186686",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-leavepulse-leavepulse-ui",
+  "entityId": "entity-github-com-leavepulse-leavepulse-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/LeavePulse/leavepulse-ui",
+    "finalUrl": "https://github.com/LeavePulse/leavepulse-ui",
+    "checkedAt": "2026-09-15T11:44:52.852Z"
+  },
+  "editorial": {
+    "name": "LeavePulse/leavepulse-ui",
+    "descriptionZh": "LeavePulse 的 Vue 3 组件包。组件建在 reka-ui 与 Tailwind CSS v4 上，主题是可运行时切换的 JSON token 集合，另有一个可组合的区块式布局画布。",
+    "takeawayZh": "把主题当 JSON token 换，运行时切主题",
+    "noteZh": "README 标题 @leavepulse/ui，副标题 Token-driven Vue 3 component kit for LeavePulse — reka-ui + Tailwind v4, runtime theme engine, composable layout canvas.。Install 一节说明包是 LeavePulse 自家应用用 file 与 git 依赖消费的，peer deps 列了 vue、reka-ui、tailwindcss、tailwind-variants、tailwind-merge、motion-v 与 @iconify/vue。Usage 里按 @nuxt/ui 的模型，先在 app 的 CSS 里 import tailwindcss 再 import @leavepulse/ui/css，主题本身是一套 JSON token。仓库有 112 个 tag，最新版 v0.29.4。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 的 Install 与 Usage 两节都在讲怎么把组件包接进 Vue 应用（peer deps、CSS 入口、LpButton 与 LpModal 的 import），交付物是可安装的组件包而非设计文件或模板。",
+        "evidenceUrl": "https://github.com/LeavePulse/leavepulse-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:44:52.852Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "tailwind",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/LeavePulse/leavepulse-ui",
+      "finalUrl": "https://github.com/LeavePulse/leavepulse-ui",
+      "title": "GitHub - LeavePulse/leavepulse-ui: Token-driven Vue 3 component kit for LeavePulse — reka-ui + Tailwind v4, runtime theme engine, composable layout canvas. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-leavepulse-leavepulse-ui/identity.jpg",
+        "sha256": "873b3a98bb14bb69ce75e6ab0209be16d05ce5b312eb67fc4a60aedd3b079df2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139148,
+        "alt": "LeavePulse/leavepulse-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/LeavePulse/leavepulse-ui",
+      "evidence": "About 栏 MIT license，README 区写 Contributing MIT license Security，文件列表里有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "peer_dependencies",
+      "value": "vue、reka-ui、tailwindcss、tailwind-variants、tailwind-merge、motion-v、@iconify/vue",
+      "sourceUrl": "https://github.com/LeavePulse/leavepulse-ui",
+      "evidence": "README Install 段 It needs the peer deps it declares 后的括号清单",
+      "confidence": 1
+    },
+    {
+      "field": "theme_engine",
+      "value": "主题是 JSON token 集合，可在运行时切换；另有 composable block-layout canvas",
+      "sourceUrl": "https://github.com/LeavePulse/leavepulse-ui",
+      "evidence": "仓库描述与 README 副标题写 runtime theme engine (themes are JSON token sets), and a composable block-layout canvas；提交信息 feat(theme): paint the saved theme during SSR",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-leavepulse-leavepulse-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-leavepulse-leavepulse-ui.md",
+    "checkedAt": "2026-09-15T11:44:52.852Z",
+    "license": "MIT"
+  }
+}

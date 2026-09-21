@@ -1,0 +1,176 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "194635aad62d4483eaab8108356b14fb7fb2bb93b05d8fc0a3bcd7a1a00f40ef",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "unsplash-com",
+  "entityId": "entity-unsplash-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "unsplash.com",
+  "official": {
+    "inputUrl": "https://unsplash.com",
+    "finalUrl": "https://unsplash.com/",
+    "checkedAt": "2026-09-15T10:42:54.097Z"
+  },
+  "editorial": {
+    "name": "Unsplash",
+    "descriptionZh": "免费图库，首页横排 Fall Wallpapers、3D Renders、Textures 等主题，顶部推 Unsplash+ 的付费免责授权，照片按摄影者署名可下载。",
+    "takeawayZh": "搜图直接下原图，商用在 Unsplash+ 里看授权",
+    "noteZh": "首屏左侧 Unsplash 字样加 The internet's source for visuals. Powered by creators everywhere.，下面一个搜索框（占位 Search photos and illustrations）配相机识图按钮；右侧推 Unsplash+ 的卡片，写 Create confidently with enhanced legal protection / Premium downloads backed by full coverage，配两个绿勾标签 Worry-free Licensing 与 Cleared for all uses，按钮 Get Unsplash+。顶部横排导航是 Featured、New Fall、Wallpapers、3D Renders、Nature、Textures、Film、Architecture、Street Photography、Experimental、Travel、People，再往下一片三列瀑布流照片，每张都有下载路径（如 /photos/…-BbP_eSJa12s/download）和署名账号。http 阶段被拦成 Making sure you're not a bot!。",
+    "recommendation": null,
+    "pricing": "Freemium（免费下载图片，Unsplash+ 为付费授权层）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "photos-images-textures",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可直接下载的摄影图片（首页瀑布流配 /photos/<slug>/download 路径，顶部有 Wallpapers、3D Renders、Textures 等主题），归摄影、位图与纹理。",
+        "evidenceUrl": "https://unsplash.com/"
+      },
+      {
+        "statement": "付费线 Unsplash+ 卖的是免责授权与保障（Worry-free Licensing、Cleared for all uses），不是另一种形态的产物，因此仍归视觉素材而非工具类。",
+        "evidenceUrl": "https://unsplash.com/plus"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:42:54.097Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "image"
+    ],
+    "actions": [
+      "browse",
+      "download",
+      "purchase",
+      "search",
+      "submit"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "discovery"
+    ],
+    "audiences": [
+      "designer",
+      "content-creator",
+      "brand-team"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://unsplash.com",
+      "finalUrl": "https://unsplash.com/",
+      "title": "Beautiful Free Images & Pictures | Unsplash",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/unsplash-com/identity.jpg",
+        "sha256": "f1f2254506b72ef52073c8a92532fc3cb07336b7c6ec812a873cf1be70206e4e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 119677,
+        "alt": "Unsplash 首屏：The internet’s source for visuals."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://unsplash.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/unsplash-com/identity.jpg",
+          "alt": "Unsplash 首屏：The internet’s source for visuals.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "plus",
+      "value": "Unsplash+ 卖 Premium downloads backed by full coverage，配 Worry-free Licensing 与 Cleared for all uses 两个标签",
+      "sourceUrl": "https://unsplash.com/plus",
+      "evidence": "首屏右侧推广卡片，截图可见；顶部另有 Get Unsplash+ 入口",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "Featured / New Fall / Wallpapers / 3D Renders / Nature / Textures / Film / Architecture / Street Photography / Experimental / Travel / People",
+      "sourceUrl": "https://unsplash.com/",
+      "evidence": "首屏搜索框下方的一整排主题导航，live.internalPaths 含 /t/fall、/t/wallpapers 等",
+      "confidence": 1
+    },
+    {
+      "field": "botWall",
+      "value": "http 阶段返回 Making sure you're not a bot!，浏览器阶段正常渲染首屏",
+      "sourceUrl": "https://unsplash.com/",
+      "evidence": "简报 http 阶段记录 title，与 live.title 给出的完整站点标题对照",
+      "confidence": 1
+    },
+    {
+      "field": "contribute",
+      "value": "顶部提供 Submit an image 与 Log in 两个入口，索引页有 /advertise、/illustrations",
+      "sourceUrl": "https://unsplash.com/",
+      "evidence": "首屏顶栏文字与 live.internalPaths",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium（免费下载图片，Unsplash+ 为付费授权层）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/unsplash-com.md",
+  "registryUrl": "/r/unsplash-com.json"
+}

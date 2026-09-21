@@ -1,0 +1,177 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c0c153110d6603c0ff32ce308a7df1fdbab71c2a1b4864ac71ec4a334678517f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "agentation-dev",
+  "entityId": "entity-agentation-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "agentation.com",
+  "official": {
+    "inputUrl": "https://agentation.dev",
+    "finalUrl": "https://www.agentation.com/",
+    "checkedAt": "2026-09-15T10:43:14.732Z"
+  },
+  "editorial": {
+    "name": "Agentation",
+    "descriptionZh": "给 AI 编码 agent 做视觉反馈的 npm 工具：在页面上点元素写批注，它把 CSS 选择器、源码路径、React 组件树和算好的样式拼成 markdown，粘进 Claude Code 或 Codex 就能改。",
+    "takeawayZh": "装一个页面工具条，点元素生成 agent 批注",
+    "noteZh": "整站是文档站排版：左边固定侧栏把内容分成 Overview / Install / Features / Output / Schema 加 Tools 组的 MCP / API / Webhooks 和 Resources 组的 Changelog / Blog / FAQ，版本号 AFS 1.1 与 v3.0.2 也标在栏里。正文主标题 Visual feedback. For agents. 上面压着一条高亮框，右边跟着 npm install agentation 的复制条，下面一句写 Click any element, add a note, and paste the output into Claude Code, Codex, or any AI tool.。接着嵌一张 localhost:3000 的浏览器样机，里面有 1/2/3 三个编号批注和一条底部工具条；再往下 How you use it 给了六步（activate、hover、click、write feedback and click Add、copy formatted markdown、paste into your agent），How agents use it 列了 agent 能拿到的五样东西，Try it 段干脆在本页放了一组 Primary / Secondary / Modal / Shadow 的演示元素可以现场标注。",
+    "recommendation": null,
+    "pricing": "unknown - 首页有 Licensing 一节，抓取到的正文未给出价格或免费口径",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "design-to-code-handoff",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站上交付的是一个可 npm 安装的批注工具条和一套 Annotation Format Schema，用户拿走的是把界面批注转成 agent 可执行上下文的链路，不是模板或素材，故归设计转代码与交付协作。",
+        "evidenceUrl": "https://www.agentation.com/"
+      },
+      {
+        "statement": "整站是单一工具的文档站（Overview / Install / Features / Output / Schema / MCP / API / Webhooks），导航不指向任何案例集或组件库。",
+        "evidenceUrl": "https://www.agentation.com/install"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:43:14.732Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "agent",
+      "ai"
+    ],
+    "deliverables": [
+      "code-library",
+      "standard"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [
+      "react",
+      "javascript"
+    ],
+    "workflowStages": [
+      "handoff",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://agentation.dev",
+      "finalUrl": "https://www.agentation.com/",
+      "title": "Agentation",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/agentation-dev/identity.jpg",
+        "sha256": "a1b35ea6e771cb4c9b83177341299b2b53946af4f8a6705e515c8c46546fed92",
+        "width": 1280,
+        "height": 900,
+        "bytes": 71971,
+        "alt": "Agentation 首屏：Visual feedback. For agents."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://agentation.dev",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/agentation-dev/identity.jpg",
+          "alt": "Agentation 首屏：Visual feedback. For agents.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm install agentation",
+      "sourceUrl": "https://www.agentation.com/install",
+      "evidence": "首屏标题右侧的命令行复制条",
+      "confidence": 1
+    },
+    {
+      "field": "agentOutput",
+      "value": "agent 拿到 CSS selectors、source file paths、React component tree、computed styles，以及带 intent 与 priority 的反馈",
+      "sourceUrl": "https://www.agentation.com/output",
+      "evidence": "How agents use it 段列出的五项",
+      "confidence": 1
+    },
+    {
+      "field": "schema",
+      "value": "Annotation Format Schema，版本标为 AFS 1.1 与 v3.0.2",
+      "sourceUrl": "https://www.agentation.com/schema",
+      "evidence": "侧栏 Schema AFS 1.1 与底部 v3.0.2 标注",
+      "confidence": 1
+    },
+    {
+      "field": "mcp",
+      "value": "支持 MCP，可省掉复制粘贴，直接对 agent 说 address my feedback 或 fix annotation 3",
+      "sourceUrl": "https://www.agentation.com/mcp",
+      "evidence": "How you use it 段末尾的 Note",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/agentation-dev.md",
+  "registryUrl": "/r/agentation-dev.json"
+}

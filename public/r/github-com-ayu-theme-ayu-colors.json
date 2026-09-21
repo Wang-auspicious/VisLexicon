@@ -1,0 +1,137 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3d33db9ea13430c0ba4c3f81d1939f6a19077c1c39caade7f63e9684730a1681",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-ayu-theme-ayu-colors",
+  "entityId": "entity-github-com-ayu-theme-ayu-colors",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/ayu-theme/ayu-colors",
+    "finalUrl": "https://github.com/ayu-theme/ayu-colors",
+    "checkedAt": "2026-09-15T12:48:29.456Z"
+  },
+  "editorial": {
+    "name": "ayu-theme/ayu-colors",
+    "descriptionZh": "把 ayu 配色方案抽成可编程的调色板：npm 包 ayu 导出 dark / mirage / light 三套色值，仓库里还有 colors.svg、palette.svg 和编辑器主题目录。",
+    "takeawayZh": "取 dark.syntax.keyword.hex() 拿色值",
+    "noteZh": "仓库头是 ayu-theme / ayu-colors，About 写 The ayu color scheme as a color palette，下面挂着外链 ayutheme.com 和 color-scheme、color-theme 两个标签，README 标 MIT license。用法是 import { dark, light, mirage } from 'ayu'，然后 dark.syntax.keyword.hex() 拿到 '#FF8F40'、light.editor.bg.hex() 拿到 '#FCFCFC'、mirage.common.accent.hex() 拿到 '#FFCC66'，取 RGB 就用 dark.syntax.string.rgb()。文件列表里能看到 designer、icons、scripts、src、themes 五个目录和 colors.svg、palette.svg 两个色板文件，提交信息反复写 Reference color palette。仓库 852 star、37 fork、8 watching，Releases 5 条，Used by 100，语言构成 TypeScript 93.2% / CSS 6.7% / JavaScript 0.1%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一套可编程的色彩系统（npm 包 ayu 加 colors.svg / palette.svg / themes 目录），供人搭主题和工具用，属于设计系统层面的基础资产；受控词典里 visual-assets 没有色彩子类，因此归 design-system-suites。",
+        "evidenceUrl": "https://github.com/ayu-theme/ayu-colors"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:48:29.456Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "design-file"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "typescript",
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ayu-theme/ayu-colors",
+      "finalUrl": "https://github.com/ayu-theme/ayu-colors",
+      "title": "GitHub - ayu-theme/ayu-colors: The ayu color scheme as a color palette · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-ayu-theme-ayu-colors/identity.jpg",
+        "sha256": "4133b4b0a6b6f20c045f897ace00717ae220f007f0f14bba7c8f0809fa0a4967",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116658,
+        "alt": "ayu-theme/ayu-colors 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/ayu-theme/ayu-colors",
+      "evidence": "README 标题栏写 MIT license，文件列表里也有单独的 license 文件",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "npm install ayu，导出 dark / light / mirage 三套主题",
+      "sourceUrl": "https://github.com/ayu-theme/ayu-colors",
+      "evidence": "README 的 Install 与 Usage 两节，示例是 import { dark, light, mirage } from 'ayu'",
+      "confidence": 1
+    },
+    {
+      "field": "ports",
+      "value": "Sublime Text、VS Code 等编辑器主题",
+      "sourceUrl": "https://github.com/ayu-theme/ayu-colors",
+      "evidence": "README 的 Ports 一节写 ayu is available for: Sublime Text / VS Code and more...，仓库 themes 目录的提交信息是 Reference color palette",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-ayu-theme-ayu-colors",
+    "designMdUrl": "https://vislexicon.com/site/github-com-ayu-theme-ayu-colors.md",
+    "checkedAt": "2026-09-15T12:48:29.456Z",
+    "license": "MIT"
+  }
+}

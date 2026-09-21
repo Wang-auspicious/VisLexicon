@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f3cf11bfe4013a1c65d9f82a72cc50d0df001cdac2ea35dc801c67907711dd8b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-codegouvfr-dsfr-react",
+  "entityId": "entity-github-com-codegouvfr-dsfr-react",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/codegouvfr/dsfr-react",
+    "finalUrl": "https://github.com/codegouvfr/react-dsfr",
+    "checkedAt": "2026-09-15T11:57:49.654Z"
+  },
+  "editorial": {
+    "name": "codegouvfr/react-dsfr",
+    "descriptionZh": "法国政府设计系统 DSFR 的 React 工具包，把 @gouvfr/dsfr 的样式包成一套类型安全的组件。",
+    "takeawayZh": "用法式公共服务设计系统的 React 组件与指南",
+    "noteZh": "原地址 dsfr-react 会重定向到 codegouvfr/react-dsfr，首屏是 main 分支的文件列表（.github/workflows、.storybook、patches、src、stories、test），最新提交是 garronej 的 Bump version。About 写 🇫🇷 The French Government Design system React toolkit，外链站点 react-dsfr.codegouv.studio，Topics 标签是 bluehats、design-system、dsfr、react、storybook、typescript，MIT license，500 个 Release、被 270 个项目使用。README 里一段加粗警告说明这套设计系统只给法国公共服务官网用，模块建立在 @gouvfr/dsfr 之上，代码用 TypeScript 写但应用侧不强制用 TS。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述为 Government Design system React toolkit，是既有 DSFR 设计系统的 React 封装，交付成套政务组件代码。",
+        "evidenceUrl": "https://github.com/codegouvfr/react-dsfr"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:49.654Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/codegouvfr/dsfr-react",
+      "finalUrl": "https://github.com/codegouvfr/react-dsfr",
+      "title": "GitHub - codegouvfr/react-dsfr: 🇫🇷 The French Government Design system React toolkit · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-codegouvfr-dsfr-react/identity.jpg",
+        "sha256": "23ccfad4b35aedc40ba024da11f47e0661418db7a968ae172441197bf23ca75e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128663,
+        "alt": "codegouvfr/react-dsfr 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/codegouvfr/react-dsfr",
+      "evidence": "右栏 About 下方的 MIT license 标记",
+      "confidence": 1
+    },
+    {
+      "field": "base-library",
+      "value": "构建在 @gouvfr/dsfr（vanilla JS/CSS 实现）之上的 TypeScript 高级工具包",
+      "sourceUrl": "https://github.com/codegouvfr/react-dsfr",
+      "evidence": "README 正文 This module is an advanced toolkit that leverages @gouvfr/dsfr",
+      "confidence": 1
+    },
+    {
+      "field": "usage-scope",
+      "value": "仅限法国官方公共服务网站使用",
+      "sourceUrl": "https://github.com/codegouvfr/react-dsfr",
+      "evidence": "README 的 WARNING 段落：only meant to be used for official French's public service websites",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "496 star、99 fork、500 个 Release、Used by 270",
+      "sourceUrl": "https://github.com/codegouvfr/react-dsfr",
+      "evidence": "仓库页头部计数与右栏 Releases / Used by 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-codegouvfr-dsfr-react",
+    "designMdUrl": "https://vislexicon.com/site/github-com-codegouvfr-dsfr-react.md",
+    "checkedAt": "2026-09-15T11:57:49.654Z",
+    "license": "MIT"
+  }
+}

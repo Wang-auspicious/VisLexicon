@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "67e1823ae3a489f3c68126351a3576e1f31df0f15d0b04bdbd0a2062cddad99a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-vadimdemedes-ink-ui",
+  "entityId": "entity-github-com-vadimdemedes-ink-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/vadimdemedes/ink-ui",
+    "finalUrl": "https://github.com/vadimdemedes/ink-ui",
+    "checkedAt": "2026-09-15T11:43:35.221Z"
+  },
+  "editorial": {
+    "name": "vadimdemedes/ink-ui",
+    "descriptionZh": "给命令行界面用的组件集，建在 Ink 之上，把输入框、邮箱补全这些做成可复用组件。给写 Node CLI 工具、想少写终端排版代码的开发者用。",
+    "takeawayZh": "用 React 组件拼命令行界面，省掉终端排版",
+    "noteZh": "README 一句话：Collection of customizable UI components for CLIs made with Ink.，安装是 npm install @inkjs/ui，并提示先备好 Ink 或直接用 create-ink-app。Components 一节逐个给示例，TextInput 通过 onSubmit 回调取回输入，EmailInput 会在敲下 @ 之后从列表里补全域名，再往下还有 Theming 一节。About 指到 term.ink/ui，标签里有 ink / terminal / tui / tuikit，MIT 许可，2.1k star，Used by 1.3K。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一组 CLI 组件（TextInput、EmailInput 等，README 逐个给用法），用户带走可 import 的组件代码，属通用界面组件库。",
+        "evidenceUrl": "https://github.com/vadimdemedes/ink-ui"
+      },
+      {
+        "statement": "About 面板的 topics 挂着 ink / terminal / tui / tuikit，明确指向终端界面层，归界面组件而非工具链。",
+        "evidenceUrl": "https://github.com/vadimdemedes/ink-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:43:35.221Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/vadimdemedes/ink-ui",
+      "finalUrl": "https://github.com/vadimdemedes/ink-ui",
+      "title": "GitHub - vadimdemedes/ink-ui: 💄 Ink-redible command-line interfaces made easy · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-vadimdemedes-ink-ui/identity.jpg",
+        "sha256": "5a8497cfcaf24a11ffaa51b49d5c92eb827b6ba7ce807316fb47d07eafd3edd6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109754,
+        "alt": "vadimdemedes/ink-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/vadimdemedes/ink-ui",
+      "evidence": "README 文件区一行写 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install @inkjs/ui，需已配置 Ink",
+      "sourceUrl": "https://github.com/vadimdemedes/ink-ui",
+      "evidence": "README 的 Install 一节",
+      "confidence": 1
+    },
+    {
+      "field": "docs",
+      "value": "term.ink/ui",
+      "sourceUrl": "https://github.com/vadimdemedes/ink-ui",
+      "evidence": "About 面板的官网链接一栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-vadimdemedes-ink-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-vadimdemedes-ink-ui.md",
+    "checkedAt": "2026-09-15T11:43:35.221Z",
+    "license": "MIT"
+  }
+}

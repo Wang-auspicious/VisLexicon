@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1032e6a0653621df1d5b10edb8e83af1490f86f62cef707c7945528a874137dc",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "shaders-com",
+  "entityId": "entity-shaders-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://shaders.com",
+    "finalUrl": "https://shaders.com/",
+    "checkedAt": "2026-09-15T12:07:26.672Z"
+  },
+  "editorial": {
+    "name": "Shaders",
+    "descriptionZh": "面向 Web 着色器的组件库与设计平台，把 Aurora、Blob、CRT 之类的效果做成可组合的预置组件，并按 Vue、React、Svelte、Solid、JS 分别提供版本。站内还有一个可视化编辑器，可以直观看层与调色。",
+    "takeawayZh": "把 <Aurora /> 这类 shader 组件拼进前端项目",
+    "noteZh": "首屏是纯黑底，顶部导航 presets、sections、agents、pricing、resources 加右侧 sign in / sign up；标题上方横排 Vue、React、Svelte、Solid、JS 五个小标志，大标题 The design platform for shader magic. 下面挂着一个真人头像的 Watch the demo (4m) 和白色 Try the editor 按钮。页面下半截直接铺开编辑器截图：左栏 Shaders 面板里列着 Welcome to Shaders 与 Ship Magic，右侧是 Colors 色带、Stops 色标（FF5ADA、FF9F0F 等）和 1920×1080 的画布尺寸。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是着色器效果组件（<Ascii />、<CRT /> 这类可组合的视觉生成代码），用户拿走的方式是装进前端项目或在编辑器里改成自己的视觉，属于创意生成式视觉实现，而非通用界面组件。",
+        "evidenceUrl": "https://shaders.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:07:26.672Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "edit",
+      "preview",
+      "copy"
+    ],
+    "media": [
+      "3d",
+      "motion",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "react",
+      "svelte",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://shaders.com",
+      "finalUrl": "https://shaders.com/",
+      "title": "Shaders — The design platform for web shaders",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/shaders-com/identity.jpg",
+        "sha256": "47f7888d0602ef686e1cd204fa32f76eb5e85fb8b89ff095b575219ebad9cd08",
+        "width": 1280,
+        "height": 900,
+        "bytes": 69831,
+        "alt": "Shaders 首屏：The design platform for shader magic."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "plans",
+      "value": "Free / Core / Pro 三档",
+      "sourceUrl": "https://shaders.com/",
+      "evidence": "首页 Pick a plan to start shipping 段列出 Free、Core、Pro 三张方案卡",
+      "confidence": 1
+    },
+    {
+      "field": "preset-count",
+      "value": "1000+ production-ready presets",
+      "sourceUrl": "https://shaders.com/",
+      "evidence": "首页小节标题 Unlock a library of 1000+ production-ready presets.",
+      "confidence": 1
+    },
+    {
+      "field": "audience-size",
+      "value": "14,000+ design engineers",
+      "sourceUrl": "https://shaders.com/",
+      "evidence": "首页副标题 Join 14,000+ design engineers crafting shaders for the web",
+      "confidence": 1
+    },
+    {
+      "field": "frameworks",
+      "value": "Vue、React、Svelte、Solid、JS 五个版本",
+      "sourceUrl": "https://shaders.com/",
+      "evidence": "首屏标题上方的框架标志排，站内亦有 /vue /react /svelte /solid /javascript 路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/shaders-com",
+    "designMdUrl": "https://vislexicon.com/site/shaders-com.md",
+    "checkedAt": "2026-09-15T12:07:26.672Z",
+    "license": "unknown"
+  }
+}

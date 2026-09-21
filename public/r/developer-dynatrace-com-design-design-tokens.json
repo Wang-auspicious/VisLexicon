@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f93ff7433955c1a8dd57f50c44ba90a9a77330c281829b660934829e6eb378ee",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "developer-dynatrace-com-design-design-tokens",
+  "entityId": "entity-developer-dynatrace-com-design-design-tokens",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://developer.dynatrace.com/design/design-tokens",
+    "finalUrl": "https://developer.dynatrace.com/design/design-tokens/",
+    "checkedAt": "2026-09-15T11:40:47.890Z"
+  },
+  "editorial": {
+    "name": "Strato Design System: Design tokens",
+    "descriptionZh": "Strato 设计系统的 token 参考页，用表格列出 Animations、Borders、BoxShadows、Breakpoints、Colors、Elevations、Spacings、Typography 八类 token 的默认值，以及 reference token 之间的映射关系。",
+    "takeawayZh": "按参考表查 Strato token 的默认值。",
+    "noteZh": "左侧 Design tokens 展开后正好是 Animations、Borders、BoxShadows、Breakpoints、Colors、Elevations、Spacings、Typography 八项。页面正文写 Use the design token reference tables to look up the default values of Strato design tokens，并说明 reference token 之间的关系与存储默认值都映射在表里。Get started 一节只给一条 npm install @dynatrace/strato-design-tokens，Explore 一节把上面八类做成八张入口卡，每张配一个示意图形。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是设计系统的 token 参考与 @dynatrace/strato-design-tokens 包，属于设计系统的 foundation 层，因此归 ui-implementation 下的 design-system-suites；它也可算规范参考，这里以设计系统归属优先。",
+        "evidenceUrl": "https://developer.dynatrace.com/design/design-tokens/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:40:47.890Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "install"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://developer.dynatrace.com/design/design-tokens",
+      "finalUrl": "https://developer.dynatrace.com/design/design-tokens/",
+      "title": "Design tokens | Dynatrace Developer",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/developer-dynatrace-com-design-design-tokens/identity.jpg",
+        "sha256": "d2733ce637f543d8c000705ad6b9a69cc87b8975a8e5e03eaf631f0ef8da1bb0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 83145,
+        "alt": "Strato Design System: Design tokens 首屏：Design tokens"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "tokenCategories",
+      "value": "Animations, Borders, BoxShadows, Breakpoints, Colors, Elevations, Spacings, Typography",
+      "sourceUrl": "https://developer.dynatrace.com/design/design-tokens/",
+      "evidence": "左侧 Design tokens 展开后的八条子项，也是 Explore 区块的八张入口卡",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install @dynatrace/strato-design-tokens",
+      "sourceUrl": "https://developer.dynatrace.com/design/design-tokens/",
+      "evidence": "Get started 一节下的命令行",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://developer.dynatrace.com/design/design-tokens/",
+      "evidence": "页面未出现许可证名称，页脚只有 Developer terms of use",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/developer-dynatrace-com-design-design-tokens",
+    "designMdUrl": "https://vislexicon.com/site/developer-dynatrace-com-design-design-tokens.md",
+    "checkedAt": "2026-09-15T11:40:47.890Z",
+    "license": "unknown"
+  }
+}

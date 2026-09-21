@@ -1,0 +1,155 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d55c37d3ff4a35af91bc780591d6dc939f22c9c674182d4af9188e28e7cd359a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-prantlf-build-number-generator",
+  "entityId": "entity-github-com-prantlf-build-number-generator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/prantlf/build-number-generator",
+    "finalUrl": "https://github.com/prantlf/build-number-generator",
+    "checkedAt": "2026-09-15T12:49:49.134Z"
+  },
+  "editorial": {
+    "name": "prantlf/build-number-generator",
+    "descriptionZh": "生成唯一构建号的 Node 库，号段用 YYMMDDCCC 编码，看一眼就知道构建时间，省掉在源码里手工递增维护。",
+    "takeawayZh": "一条命令生成可读时间的构建号，打进版本号",
+    "noteZh": "About 写着 Generates a unique build number with a human-readable build time.，外链指向 prantlf.github.io 上的在线页面，标签是 build / build-number / generator / version。README 交代号段用 BCD 记法 YYMMDDCCC，其中 CCC 是当天两分钟区间的计数，所以每两分钟能出一个新号，并说不用再把最近一次构建号写回源码、在构建时递增再提交。目录标题依次是 Features、Command-line usage、API、Node.js usage、Browser usage，文件树里 bin、lib、docs、tests 分得清楚，License 是 MIT，最新 3.1.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 明说它取代 CI/CD 里手工维护构建号的做法（No need for maintaining the most recent build number in your sources, incrementing it during the build），属构建流程工具。",
+        "evidenceUrl": "https://github.com/prantlf/build-number-generator"
+      },
+      {
+        "statement": "仓库同时给命令行脚本与 API 两种用法（README 有 Command-line usage / API / Node.js usage / Browser usage 四节），交付物是库与命令而非界面。",
+        "evidenceUrl": "https://github.com/prantlf/build-number-generator"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:49:49.134Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/prantlf/build-number-generator",
+      "finalUrl": "https://github.com/prantlf/build-number-generator",
+      "title": "GitHub - prantlf/build-number-generator: Generates a unique build number with a human-readable build time. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-prantlf-build-number-generator/identity.jpg",
+        "sha256": "d8f68dfb23d8d6a1e4ed6242ce6e13db84f8cc85a3e76ce3d3b5490c4197a7a2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 129323,
+        "alt": "prantlf/build-number-generator 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/prantlf/build-number-generator",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-prantlf-build-number-generator/identity.jpg",
+          "alt": "prantlf/build-number-generator 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/prantlf/build-number-generator",
+      "evidence": "About 栏与 README 的 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "format",
+      "value": "YYMMDDCCC，CCC 是当天凌晨起两分钟区间的计数",
+      "sourceUrl": "https://github.com/prantlf/build-number-generator",
+      "evidence": "README Features 一节：Uses BCD notation for a year-month-day time stamp: YYMMDDCCC",
+      "confidence": 1
+    },
+    {
+      "field": "interfaces",
+      "value": "命令行脚本、API、Node.js、浏览器四种用法",
+      "sourceUrl": "https://github.com/prantlf/build-number-generator",
+      "evidence": "README 目录里的 Command-line usage / API / Node.js usage / Browser usage 四节标题",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-prantlf-build-number-generator.md",
+  "registryUrl": "/r/github-com-prantlf-build-number-generator.json"
+}

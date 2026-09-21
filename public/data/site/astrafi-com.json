@@ -1,0 +1,164 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "bec61eb140e834a2645de02a3f80b150b6bedfd428074a7df4956a6d69759c6b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "astrafi-com",
+  "entityId": "entity-astrafi-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "astrafi.com",
+  "official": {
+    "inputUrl": "https://astrafi.com",
+    "finalUrl": "https://astrafi.com/",
+    "checkedAt": "2026-09-15T10:50:00.742Z"
+  },
+  "editorial": {
+    "name": "Astra",
+    "descriptionZh": "面向开发者的支付 API，官方叫 Payments Cloud：一次接入后 ACH、RTP、FedNow、Visa Direct、Mastercard Move 都能开，KYC、AML、账本、对账和拒付也一起包了。",
+    "takeawayZh": "看支付 API 怎么用一张转账表单讲接入",
+    "noteZh": "首屏白底带浅色网格线，导航 Platform / Use cases / Customers / Developers / Resources 加右侧 Log in 与 Talk to sales。左边细体大标题 Build instant payment experiences, not infrastructure.（后半句是绿色渐变），正文写 Astra is the Payments Cloud: a vertically integrated, compliance-first platform... One integration, every use case.，两颗按钮 Talk to sales 与 Start now with Sandbox。右侧主视觉是一块深墨绿的界面卡，里面是一张 Make a Payment 表单：Instant 标签、美元金额输入框、Transfer from 下拉里写着 Visa *3548 / Expires 01/28，底部一颗 Send 按钮。往下是 ACH · RTP · FEDNOW · VISA DIRECT · MASTERCARD MOVE 五行渠道名和 Trusted by teams moving money at scale。",
+    "recommendation": null,
+    "pricing": "unknown - 首页只有 Talk to sales 与 Start now with Sandbox，没有定价页",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页交付的是 Astra 这套支付 API 的产品说明、渠道清单与用例页，用户拿走的是开发者向首页的结构与文案，不是可下载的 SDK 或组件。",
+        "evidenceUrl": "https://astrafi.com/"
+      },
+      {
+        "statement": "站内路径是 /platform-overview、/instant-disbursements、/for-<行业>、/security-and-privacy、/developer-policy 这类自家产品与文档页，形态是产品官网。",
+        "evidenceUrl": "https://astrafi.com/platform-overview"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:50:00.742Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance",
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "test"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://astrafi.com",
+      "finalUrl": "https://astrafi.com/",
+      "title": "Astra | The Instant Payments API",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/astrafi-com/identity.jpg",
+        "sha256": "279c894d947b2198b0c3a4f8d3589be74c53a439fb547d48013690b880a2c5ca",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78233,
+        "alt": "Astra 首屏：Build instant payment experiences, not infrastructure."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://astrafi.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/astrafi-com/identity.jpg",
+          "alt": "Astra 首屏：Build instant payment experiences, not infrastructure.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "rails",
+      "value": "ACH、RTP、FEDNOW、VISA DIRECT、MASTERCARD MOVE",
+      "sourceUrl": "https://astrafi.com/",
+      "evidence": "首屏标题下方一行渠道名与三张用例卡",
+      "confidence": 1
+    },
+    {
+      "field": "useCases",
+      "value": "Instant Disbursements、Instant Account Funding、Accelerated Bank Transfers，另有 for-banking / for-transport / for-saas / for-marketplaces / for-payroll / for-lending / for-investing / for-crypto 等行业页",
+      "sourceUrl": "https://astrafi.com/instant-disbursements",
+      "evidence": "Three ways to move money. One integration. 段与站点路径",
+      "confidence": 1
+    },
+    {
+      "field": "included",
+      "value": "KYC、AML、fraud、ledgering、reconciliation、disputes、treasury 都在平台内，条目写 Nothing to maintain",
+      "sourceUrl": "https://astrafi.com/platform-overview",
+      "evidence": "首页 Gateways process transactions. Astra runs your money movement. 段",
+      "confidence": 1
+    },
+    {
+      "field": "compliance",
+      "value": "Certificates and Reports、Trusted partners. Certified platform.，另有 /security-and-privacy 与 /developer-policy",
+      "sourceUrl": "https://astrafi.com/security-and-privacy",
+      "evidence": "首页 Compliance 相关小标题与站内路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/astrafi-com.md",
+  "registryUrl": "/r/astrafi-com.json"
+}

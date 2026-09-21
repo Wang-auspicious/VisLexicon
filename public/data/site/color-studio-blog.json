@@ -1,0 +1,160 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d93668e95ac1f3afa6c86d088da7d64d5ad593da0d32fde82985fd4930a4648e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "color-studio-blog",
+  "entityId": "entity-color-studio-blog",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "color-studio.blog",
+  "official": {
+    "inputUrl": "https://color-studio.blog",
+    "finalUrl": "https://color-studio.blog/",
+    "checkedAt": "2026-09-15T12:16:01.577Z"
+  },
+  "editorial": {
+    "name": "Color Studio",
+    "descriptionZh": "Automattic 的调色板站点：把 Gray、Blue、Red 等色相从 0 到 100 排成色阶，每档标出 hex 与对白、对黑的对比度。",
+    "takeawayZh": "抄 WordPress 的 Gray、Blue 色阶，每档带对比度",
+    "noteZh": "首屏整页就是色阶表：Gray、Blue、Purple、Pink、Red、Orange、Yellow 一行一个色相，每行从 0 排到 100，色块里印着 hex 和 W: / B: 两组对比度数值；顶栏只有 Color Studio、Examples、GitHub、Downloads、Changelog 五个入口，下面还竖排一列从 v4.1.0 到 v2.0.1 的版本号。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "reference-standards",
+    "subcategory": "standards-guidelines-checklists",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面的主体是把每个色相逐档列出并标注白字/黑字对比度，是一份可对照的颜色标准，而非可安装的库或素材包。",
+        "evidenceUrl": "https://color-studio.blog/"
+      },
+      {
+        "statement": "顶栏的 Downloads 与 Changelog 入口说明这既是可以直接取用的标准，也随版本迭代发布；归类存在少量不确定，色板类在受控词典中没有独立小类。",
+        "evidenceUrl": "https://color-studio.blog/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:16:01.577Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "standard"
+    ],
+    "actions": [
+      "download",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "brand-team"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://color-studio.blog",
+      "finalUrl": "https://color-studio.blog/",
+      "title": "Color Studio",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/color-studio-blog/identity.jpg",
+        "sha256": "92b24c2d639911a876bd00f272e983c44fe8ef8bfd9e70a0e01035b01ff2934f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 153514,
+        "alt": "Color Studio 首屏"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://color-studio.blog",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/color-studio-blog/identity.jpg",
+          "alt": "Color Studio 首屏",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "paletteRows",
+      "value": "Gray、Blue、Purple、Pink、Red、Orange、Yellow 等色相各一行，每行 0–100 档",
+      "sourceUrl": "https://color-studio.blog/",
+      "evidence": "首屏色阶表逐行排开，行首标着色相名与 50 档的中位色",
+      "confidence": 1
+    },
+    {
+      "field": "contrastAnnotation",
+      "value": "每档标出 W: 与 B: 两个对比度数值",
+      "sourceUrl": "https://color-studio.blog/",
+      "evidence": "每个色块内印着 hex 与形如 W:5.61 B:3.74 的数值",
+      "confidence": 1
+    },
+    {
+      "field": "latestVersion",
+      "value": "v4.1.0",
+      "sourceUrl": "https://color-studio.blog/",
+      "evidence": "顶栏 Downloads 旁的版本列表第一项为 v4.1.0",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/color-studio-blog.md",
+  "registryUrl": "/r/color-studio-blog.json"
+}

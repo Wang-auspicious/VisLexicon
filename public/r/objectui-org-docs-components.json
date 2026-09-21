@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "33adc7c0f778ad59f77056a1ace276721e1f9538bb332e8fa4646e45fe573fcb",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "objectui-org-docs-components",
+  "entityId": "entity-objectui-org-docs-components",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://objectui.org/docs/components",
+    "finalUrl": "https://objectui.org/docs/components",
+    "checkedAt": "2026-09-15T11:47:21.653Z"
+  },
+  "editorial": {
+    "name": "ObjectUI",
+    "descriptionZh": "ObjectUI 的组件文档站，组件建在 React、Tailwind CSS 和 Shadcn UI 上。它跟一般组件库的区别是：组件都先用 JSON schema 定义，再照 schema 渲染出来。",
+    "takeawayZh": "用 JSON schema 描述界面再渲染出来。",
+    "noteZh": "左栏是 Documentation、Guide、API Reference、Blocks、Core、Layout、Fields、Components、Plugins、Utilities & Tools 的折叠目录，Components 下再分 Basic / Form / Layout / Data Display / Feedback / Overlay / Disclosure / Navigation / Complex 九组。正文标题 Component Gallery，开头一句 All components are defined through JSON schemas and rendered with pixel-perfect quality，右上角有 Copy Markdown 与 Open 两个按钮。Quick Navigation 按类列组件：Basic 是 Text、Icon、Image、Separator、HTML，Form 是 Button、Input、Select、Checkbox、Switch、Textarea、Slider，Layout 是 Container、Card、Grid、Flex、Stack、Tabs；右栏还给出 Usage Pattern 下的 Example: Button 和 Example: Card with Form。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这一页是组件总览，交付物是一组可用的 React 组件及其分类清单，拿走的是组件本身，归通用界面组件库。",
+        "evidenceUrl": "https://objectui.org/docs/components"
+      },
+      {
+        "statement": "「用 JSON schema 定义」是它的实现方式而不是交付类别，已写进 descriptionZh 与 takeawayZh。",
+        "evidenceUrl": "https://objectui.org/docs/components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:21.653Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://objectui.org/docs/components",
+      "finalUrl": "https://objectui.org/docs/components",
+      "title": "Component Gallery",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/objectui-org-docs-components/identity.jpg",
+        "sha256": "bcf6436dde4802488328a582076edaa94fe20402496f631e2df49aa8545edf8b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 108070,
+        "alt": "ObjectUI 首屏：Component Gallery"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "implementation",
+      "value": "组件由 JSON schema 定义后渲染",
+      "sourceUrl": "https://objectui.org/docs/components",
+      "evidence": "Component Gallery 开篇句 All components are defined through JSON schemas and rendered with pixel-perfect quality",
+      "confidence": 1
+    },
+    {
+      "field": "techStack",
+      "value": "React、Tailwind CSS、Shadcn UI",
+      "sourceUrl": "https://objectui.org/docs/components",
+      "evidence": "同段前半句 'components built on React, Tailwind CSS, and Shadcn UI'",
+      "confidence": 1
+    },
+    {
+      "field": "categories",
+      "value": "Basic / Form / Layout / Data Display / Feedback / Overlay / Disclosure / Navigation / Complex",
+      "sourceUrl": "https://objectui.org/docs/components",
+      "evidence": "左栏 Components 下的分组与右栏 On this page 的 Component Categories 锚点",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/objectui-org-docs-components",
+    "designMdUrl": "https://vislexicon.com/site/objectui-org-docs-components.md",
+    "checkedAt": "2026-09-15T11:47:21.653Z",
+    "license": "unknown"
+  }
+}

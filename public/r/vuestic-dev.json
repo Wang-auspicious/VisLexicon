@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "047f1b521f0dc4a743c1cd2e00d503dd7d770a7d775881dae316399b592961f0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "vuestic-dev",
+  "entityId": "entity-vuestic-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://vuestic.dev",
+    "finalUrl": "https://ui.vuestic.dev/",
+    "checkedAt": "2026-09-15T12:13:58.076Z"
+  },
+  "editorial": {
+    "name": "Vuestic UI",
+    "descriptionZh": "Epicmax 出品的 Vue 3 组件框架，MIT 许可，组件支持全局配置、深色主题与 i18n，另附一套 Vuestic Admin 示例。",
+    "takeawayZh": "用全局配置和 Sass 变量把整套 Vue 3 组件改成自家主题",
+    "noteZh": "首屏顶上一条 VueConf US 2026 的购票横幅，Hero 只有 Vue 3 UI Framework 一行加 Get Started / View on GitHub 两个按钮，下面整块是组件拼图——Setup Personal Account 表单、June 2022 日历、一条 Final-final(19) version was archived 的提示条，以及一张带 VERIFIED / PENDING / BLOCKED 状态标签的余额表；导航把 Support & Consulting 与 Docs、Contribute 并列，合作方 logo 排成一横条。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付整套框架而不是单个控件：正文 Features 一节列的是 Vue 3 compatible、Accessible、Responsive、Global config、Dark Theme、i18n integration 这些体系级能力。",
+        "evidenceUrl": "https://ui.vuestic.dev/"
+      },
+      {
+        "statement": "归 design-system-suites 而非通用组件库，因为它同时给出 Vuestic Admin 成品后台与一套动态配置主题的机制。",
+        "evidenceUrl": "https://ui.vuestic.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:13:58.076Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "starter"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vuestic.dev",
+      "finalUrl": "https://ui.vuestic.dev/",
+      "title": "Vuestic UI — Vue 3 UI framework",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vuestic-dev/identity.jpg",
+        "sha256": "2a1b5f10594209f70413d967ca7ec2ba7d1ff6bb52e3315af4b38921a66567e9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 103536,
+        "alt": "Vuestic UI 首屏：Vue 3 UI Framework"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT licensed UI framework，页脚写 Open source, free to use",
+      "sourceUrl": "https://ui.vuestic.dev/",
+      "evidence": "Features 段 It is a MIT-licensed UI framework 一句，与页脚版权行的 Open source, free to use",
+      "confidence": 1
+    },
+    {
+      "field": "releaseHistory",
+      "value": "2021 年 5 月由 Epicmax 首发",
+      "sourceUrl": "https://ui.vuestic.dev/",
+      "evidence": "Features 段 It was initially released in May 2021 by Epicmax 一句",
+      "confidence": 1
+    },
+    {
+      "field": "adminStarter",
+      "value": "Vuestic Admin 示例，技术栈 Vue 3、Vite、Pinia、Tailwind CSS",
+      "sourceUrl": "https://ui.vuestic.dev/",
+      "evidence": "Vuestic Admin 一节的技术栈列与 Live Demo 入口",
+      "confidence": 1
+    },
+    {
+      "field": "consulting",
+      "value": "核心团队提供专业支持与 Vue 3 迁移咨询（Schedule a Call）",
+      "sourceUrl": "https://ui.vuestic.dev/support/consulting",
+      "evidence": "Do You Need to Migrate Your Project to Vue 3? 一节与导航的 Support & Consulting 入口",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/vuestic-dev",
+    "designMdUrl": "https://vislexicon.com/site/vuestic-dev.md",
+    "checkedAt": "2026-09-15T12:13:58.076Z",
+    "license": "MIT"
+  }
+}

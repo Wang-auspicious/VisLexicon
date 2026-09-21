@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a11d769fa3f3f1a317f21c86e7cdfa99df19ff6617fb0f757bbf0324ef76fc9f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "sidemail-io",
+  "entityId": "entity-sidemail-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://sidemail.io",
+    "finalUrl": "https://sidemail.io/",
+    "checkedAt": "2026-09-15T11:18:23.288Z"
+  },
+  "editorial": {
+    "name": "Sidemail",
+    "descriptionZh": "Sidemail 是面向 SaaS 与 AI 产品的邮件平台，事务邮件走 API 或 SMTP 发，营销邮件、订阅表单、自动化序列和 MCP server 也都在一个后台。站点自称独立欧盟团队，已有 8 年历史。",
+    "takeawayZh": "看它把 12 种语言栈全铺进导航第一层下拉",
+    "noteZh": "首屏浅蓝渐变，中间一行衬线大字 Email delivery made simple for SaaS & AI，底下 Get started 与 API docs 两颗按钮，上面挂一枚 5/5 RATED CUSTOMER SUPPORT 胶囊。紧接着一排四张白卡片：Send transactional emails via API、Send product updates & newsletters、All your subscribers in one place、Automate emails & email sequences，当前选中的一张下沿加蓝色粗线。导航的 Features 与 Send with 两个下拉把 Node.js、Express.js、Next.js、PHP、Laravel、Symfony、Slim、Ruby、Ruby on Rails、Python、Django、Flask、FastAPI、WordPress 全列了出来，另有 Deliverability、Reviews、Developer docs，语言切换给 English、Čeština、Español。下方正文还有一段 await sidemail.sendEmail 的代码示例和 Plug'n'play with Stripe 的说明。",
+    "recommendation": null,
+    "pricing": "Try it free 起步，档位见 /pricing",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页交付的是 Sidemail 自己的功能分区、代码示例与客户评价，用户拿走的是「用导航下拉摊开语言栈」这套结构；来自 saaslandingpage.com 的落地页灵感池，故归产品与公司官网。",
+        "evidenceUrl": "https://sidemail.io/"
+      },
+      {
+        "statement": "导航只有 Features / Send with / Pricing / Deliverability / Reviews / Developer docs 与 Login、Try it free，是产品对外门面。",
+        "evidenceUrl": "https://sidemail.io/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:18:23.288Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "marketing",
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "api",
+      "mcp",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://sidemail.io",
+      "finalUrl": "https://sidemail.io/",
+      "title": "Sidemail: Email platform for SaaS",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/sidemail-io/identity.jpg",
+        "sha256": "e21c034466eb45b80793046c58bb4b12a48caf604b58c77902d1d8c141967eef",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106638,
+        "alt": "Sidemail 首屏：Email delivery made simple for SaaS & AI"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroHeadline",
+      "value": "Email delivery made simple for SaaS & AI",
+      "sourceUrl": "https://sidemail.io/",
+      "evidence": "首屏主标题，副标题写 Over 8 years on the market. Millions of emails delivered. Independent EU team",
+      "confidence": 1
+    },
+    {
+      "field": "languageStacks",
+      "value": "Node.js、Express.js、Next.js、PHP、Laravel、Symfony、Slim、Ruby、Ruby on Rails、Python、Django、Flask、FastAPI、WordPress 各自成页",
+      "sourceUrl": "https://sidemail.io/",
+      "evidence": "导航 Send with 下拉与 /send-email/* 路径列表",
+      "confidence": 1
+    },
+    {
+      "field": "codeSample",
+      "value": "await sidemail.sendEmail({ toAddress, fromName, fromAddress, templateName, templateProps })",
+      "sourceUrl": "https://sidemail.io/",
+      "evidence": "Send transactional emails via API 一节下方的代码块",
+      "confidence": 1
+    },
+    {
+      "field": "stripeIntegration",
+      "value": "Plug'n'play with Stripe",
+      "sourceUrl": "https://sidemail.io/",
+      "evidence": "首页小节标题之一",
+      "confidence": 1
+    },
+    {
+      "field": "otherChannels",
+      "value": "站点地图含 /smtp-relay、/email-mcp-server、/white-label-email-sending、/subscribe-forms、/no-code-email-editor",
+      "sourceUrl": "https://sidemail.io/",
+      "evidence": "live.internalPaths 中的功能路径",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Try it free 起步，档位见 /pricing。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/sidemail-io",
+    "designMdUrl": "https://vislexicon.com/site/sidemail-io.md",
+    "checkedAt": "2026-09-15T11:18:23.288Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "591a1f3d01aefb56c2e8f5d883a5664f2a60d6c9ef55baabbd378d721ef6d6ca",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-elastic-eui",
+  "entityId": "entity-github-com-elastic-eui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/elastic/eui",
+    "finalUrl": "https://github.com/elastic/eui",
+    "checkedAt": "2026-09-15T11:41:03.139Z"
+  },
+  "editorial": {
+    "name": "elastic/eui",
+    "descriptionZh": "Elastic 的 React UI 组件库仓库，README 开头写自己是 a collection of React UI components，包拆成 @elastic/eui 与 @elastic/eui-illustrations 两个发布，配套文档站在 eui.elastic.co。",
+    "takeawayZh": "装 @elastic/eui 抄 Kibana 界面组件",
+    "noteZh": "首屏是 main 分支代码页。About 栏挂着 eui.elastic.co 与 css-in-js、design-system、elasticsearch、eui、kibana、react 六个 topic，最上面一条提交是 weronikaolejniczak 和 Copilot 的 [Chore][Nightly] Use --no-frozen-lockfile for Kibana prep changes。文件列表里 packages/ 一行写着 Release: @elastic/eui v122.0.0, @elastic/eui-illustrations v1.1.0，licenses/ 与 LICENSE.txt 两行共用一句 Change license from Apache 2 to Elastic 2 (#4930)，另外还有 wiki/、scripts/、.buildkite/。右侧 Releases 332、Used by 2.6K、Contributors 312，Languages 条在截图里没展开。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述是一整套 React UI 组件集合（README 首句 a collection of React UI components），并以 @elastic/eui、@elastic/eui-illustrations 两个包整体发布、配独立文档站 eui.elastic.co，符合设计系统与完整组件套件，而不是零散单组件。",
+        "evidenceUrl": "https://github.com/elastic/eui"
+      },
+      {
+        "statement": "候选池把 subcategory 写成 Svelte UI 库、tags 里也带 svelte，但页面上 React 出现在 About 的 topic 列表和 README 正文里，Svelte 一次都没出现，按实测覆盖候选池。",
+        "evidenceUrl": "https://github.com/elastic/eui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:41:03.139Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "source-available"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/elastic/eui",
+      "finalUrl": "https://github.com/elastic/eui",
+      "title": "GitHub - elastic/eui: Elastic UI Framework 🙌 · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-elastic-eui/identity.jpg",
+        "sha256": "94c902c90ad9c1e121e7406bc413853383be1e65d62d84fab2ee277ab31603fb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 143709,
+        "alt": "elastic/eui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/elastic/eui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-elastic-eui/identity.jpg",
+          "alt": "elastic/eui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "从 Apache 2 换成 Elastic 2（Elastic License 2.0，不在受控词典枚举内，licenses 记 custom）",
+      "sourceUrl": "https://github.com/elastic/eui",
+      "evidence": "文件列表里 licenses/ 与 LICENSE.txt 两行的提交信息都是 Change license from Apache 2 to Elastic 2 (#4930)",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "@elastic/eui v122.0.0、@elastic/eui-illustrations v1.1.0",
+      "sourceUrl": "https://github.com/elastic/eui",
+      "evidence": "packages/ 目录行的最新提交信息 Release: @elastic/eui v122.0.0, @elastic/eui-illustrations v1.1…",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "css-in-js、design-system、elasticsearch、eui、kibana、react",
+      "sourceUrl": "https://github.com/elastic/eui",
+      "evidence": "右侧 About 栏 topic 标签逐条列出",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "6.4k stars / 911 forks / 288 watching / 7,216 commits / 74 branches / 707 tags / Releases 332 / Used by 2.6K / Contributors 312",
+      "sourceUrl": "https://github.com/elastic/eui",
+      "evidence": "仓库头部计数与右侧 About、Releases、Used by 区块",
+      "confidence": 1
+    },
+    {
+      "field": "docsSite",
+      "value": "eui.elastic.co",
+      "sourceUrl": "https://github.com/elastic/eui",
+      "evidence": "About 栏 website 一行",
+      "confidence": 1
+    },
+    {
+      "field": "recentWork",
+      "value": "[Chore][Nightly] Use --no-frozen-lockfile for Kibana prep changes；[Chore] Update Storybook to latest v10 (#9863)",
+      "sourceUrl": "https://github.com/elastic/eui",
+      "evidence": "文件列表的最新提交行与 .nvmrc 行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。从 Apache 2 换成 Elastic 2（Elastic License 2.0，不在受控词典枚举内，licenses 记 custom）：文件列表里 licenses/ 与 LICENSE.txt 两行的提交信息都是 Change license from Apache 2 to Elastic 2 (#4930)"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-elastic-eui.md",
+  "registryUrl": "/r/github-com-elastic-eui.json"
+}

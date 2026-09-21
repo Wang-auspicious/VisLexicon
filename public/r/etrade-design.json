@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d77691cd0c86ddcb71cd3719abb798ca1876ed0330fb92831fa948ef25301c93",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "etrade-design",
+  "entityId": "entity-etrade-design",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://etrade.design",
+    "finalUrl": "https://campfire.design/",
+    "checkedAt": "2026-09-15T11:58:10.983Z"
+  },
+  "editorial": {
+    "name": "Campfire",
+    "descriptionZh": "Morgan Stanley 内部统一设计策略 Campfire 的入口页：按 Client / Enterprise / Power 三套体验给出各自的组件文档，另有 UX writing、Campfire AI、Accessibility 三份参考。",
+    "takeawayZh": "取 Client 那套的组件文档与 UX 写作规范。",
+    "noteZh": "首屏左边是深蓝夜色配一堆篝火的插画，右边写 Campfire is the firmwide design strategy of Morgan Stanley.；Campfire systems 下横排 Client、Enterprise、Power 三张卡，每张一段适用场景加一个 Documentation 链接（Client 那张写 Web documentation），再往下 Reference and guides 排着 UX writing、Campfire AI、Accessibility，其中 Campfire AI 那张提到 Design to Code、Campfire Skills、Figma MCP。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是公司级设计系统：按三套体验分发的组件文档，加上 UX 写作规范与无障碍验收标准，属设计系统与完整组件套件。",
+        "evidenceUrl": "https://campfire.design/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:58:10.983Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [
+      "component",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer",
+      "content-creator"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://etrade.design",
+      "finalUrl": "https://campfire.design/",
+      "title": "Campfire",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/etrade-design/identity.jpg",
+        "sha256": "de76bda8d06739b623be5c5b2e4b987346e304cfae9c036ca2d37a30c72d1d7d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 120951,
+        "alt": "Campfire 首屏：Campfire is the firmwide design strategy of Morgan Stanley."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "归属",
+      "value": "Campfire is the firmwide design strategy of Morgan Stanley",
+      "sourceUrl": "https://campfire.design/",
+      "evidence": "首屏左栏大标题，页脚为 © 2026 Morgan Stanley. All rights reserved.",
+      "confidence": 1
+    },
+    {
+      "field": "三套体验",
+      "value": "Client、Enterprise、Power 三张卡片，各有自己的文档入口",
+      "sourceUrl": "https://campfire.design/",
+      "evidence": "Campfire systems 一节的三张卡与各自的 Documentation 链接",
+      "confidence": 1
+    },
+    {
+      "field": "组件实现方式",
+      "value": "All components are built 1:1 with code，并对齐最新无障碍标准",
+      "sourceUrl": "https://campfire.design/",
+      "evidence": "Campfire systems 一节的说明段",
+      "confidence": 1
+    },
+    {
+      "field": "无障碍参考",
+      "value": "提供验收标准，并给出可装进浏览器的 A11Y COE 测试工具",
+      "sourceUrl": "https://campfire.design/",
+      "evidence": "Accessibility 卡片正文 add the A11Y COE testing tool to your browser",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/etrade-design",
+    "designMdUrl": "https://vislexicon.com/site/etrade-design.md",
+    "checkedAt": "2026-09-15T11:58:10.983Z",
+    "license": "proprietary"
+  }
+}

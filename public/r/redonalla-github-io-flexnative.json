@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "82c65f90db50d6cad0f3d4b181602b2ad9292713984ca46f3d3ce4bbc3b0e286",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "redonalla-github-io-flexnative",
+  "entityId": "entity-redonalla-github-io-flexnative",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://redonalla.github.io/flexnative",
+    "finalUrl": "https://redonalla.github.io/flexnative/",
+    "checkedAt": "2026-09-15T12:18:44.193Z"
+  },
+  "editorial": {
+    "name": "FlexNative",
+    "descriptionZh": "架在 React Native 之上的跨平台 UI 组件库，一套组件同时出 Android、iOS 和 Web，主题能在运行时切换。",
+    "takeawayZh": "写一次组件，Android、iOS、Web 三端共用",
+    "noteZh": "首屏大标题是 Cross Platform React Native UI toolkit，下面说明这是给跨平台应用用的 React Native 框架，并排三枚标签 Android / iOS / Web；右侧一张多设备示意图，笔记本、平板、手机、手表上显示的是同一个 Demo 界面。导航只有 FlexNative、Documentation、Demo App 三项，右上角是 GitHub 图标、明暗切换和搜索框。往下 What is FlexNative 讲主题能在不重启应用的情况下更换，再下面的卡片依次是 Cross-Platform、Components、Easy to use、Customizable、Theming。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一组跨平台通用 UI 组件（页面自述 a set of general-purpose UI components，卡片里写 up to 11 / 13 general-purpose components），用户拿走的是组件代码，归 ui-implementation/general-ui-components。",
+        "evidenceUrl": "https://redonalla.github.io/flexnative/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:18:44.193Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
+    "technologies": [
+      "react-native",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://redonalla.github.io/flexnative",
+      "finalUrl": "https://redonalla.github.io/flexnative/",
+      "title": "FlexNative",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/redonalla-github-io-flexnative/identity.jpg",
+        "sha256": "43d3917b4c48fe6bee5c343ffd4ea4be8bbb90079cbc2814b0a66ee1af0646b2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106202,
+        "alt": "FlexNative 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "platforms",
+      "value": "Android, iOS, Web",
+      "sourceUrl": "https://redonalla.github.io/flexnative/",
+      "evidence": "首屏标题下并排的三枚平台标签，以及正文 Cross-Platform 卡片的 Consistent design across android, iOS, and web.",
+      "confidence": 1
+    },
+    {
+      "field": "component-count",
+      "value": "页面两处分别写着 11 和 13 个通用组件",
+      "sourceUrl": "https://redonalla.github.io/flexnative/",
+      "evidence": "Cross-Platform 卡片写 Up to 11 general-purpose components，紧邻的 Components 卡片写 Up to 13 general-purpose components",
+      "confidence": 1
+    },
+    {
+      "field": "theming",
+      "value": "运行时切换 Light / Dark 主题",
+      "sourceUrl": "https://redonalla.github.io/flexnative/",
+      "evidence": "Theming 卡片 Switch between Light and Dark themes in the runtime.",
+      "confidence": 1
+    },
+    {
+      "field": "built-with",
+      "value": "TypeScript，支持 Expo",
+      "sourceUrl": "https://redonalla.github.io/flexnative/",
+      "evidence": "Easy to use 卡片里的 Built completely in TypeScript. ... Supports Expo too!",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/redonalla-github-io-flexnative",
+    "designMdUrl": "https://vislexicon.com/site/redonalla-github-io-flexnative.md",
+    "checkedAt": "2026-09-15T12:18:44.193Z",
+    "license": "unknown"
+  }
+}

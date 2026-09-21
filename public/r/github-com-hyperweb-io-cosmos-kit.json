@@ -1,0 +1,133 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2aee1976f81fc852a0229bee50b6313367e8d17f7ccef706b5b808163bb05985",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-hyperweb-io-cosmos-kit",
+  "entityId": "entity-github-com-hyperweb-io-cosmos-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/hyperweb-io/cosmos-kit",
+    "finalUrl": "https://github.com/hyperweb-io/cosmos-kit",
+    "checkedAt": "2026-09-15T11:39:41.744Z"
+  },
+  "editorial": {
+    "name": "hyperweb-io/cosmos-kit",
+    "descriptionZh": "Cosmos 生态的通用钱包适配层，一个包把各条链的钱包连接与签名收拢，README 称它 a universal wallet adapter。给做 Cosmos dApp、不想逐个适配钱包的开发者。",
+    "takeawayZh": "装一个包，接齐全套 Cosmos 钱包",
+    "noteZh": "README 首段声明 Cosmos Kit is a universal wallet adapter for developers to build apps that quickly and easily interact with Cosmos blockchains and wallets，紧接着一条 UPGRADE to 3.0 提示，让人改用 interchain-kit 和 create-interchain-app。目录按 Quickstart、Configuration、CosmJS Signers、Packages、Wallets、Integrating Wallets、Developing 分组，根目录还躺着一份 INTEGRATING-WALLETS.md。About 栏的许可证是 BSD-3-Clause-Clear，Used by 240、Contributors 81。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据只确认到它是嵌进自家应用的钱包连接适配层（README 的 CosmJS Signers、Integrating Wallets 两节，packages/ 下按 79 个包拆分），没有单独页面证明它的组件形态；按可嵌入复合控件这一类归入，不确定性在此说明。",
+        "evidenceUrl": "https://github.com/hyperweb-io/cosmos-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:39:41.744Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/hyperweb-io/cosmos-kit",
+      "finalUrl": "https://github.com/hyperweb-io/cosmos-kit",
+      "title": "GitHub - hyperweb-io/cosmos-kit: Universal wallet connector for the Cosmos ⚛️ · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-hyperweb-io-cosmos-kit/identity.jpg",
+        "sha256": "a88f2ffd649055c42b3e8f0265ce455fe0535db599518087a34055cd2ac533cb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 137571,
+        "alt": "hyperweb-io/cosmos-kit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "licenses",
+      "value": "BSD-3-Clause-Clear（受控词典未收录该取值，facet 记 custom）",
+      "sourceUrl": "https://github.com/hyperweb-io/cosmos-kit",
+      "evidence": "README 顶部许可证行与 About 栏均写 BSD-3-Clause-Clear license",
+      "confidence": 1
+    },
+    {
+      "field": "usedBy",
+      "value": "240 个仓库",
+      "sourceUrl": "https://github.com/hyperweb-io/cosmos-kit",
+      "evidence": "About 栏 Used by 240",
+      "confidence": 1
+    },
+    {
+      "field": "successor",
+      "value": "interchain-kit / create-interchain-app",
+      "sourceUrl": "https://github.com/hyperweb-io/cosmos-kit",
+      "evidence": "README 里 UPGRADE to 3.0 一段让用户改用 interchain-kit 与 create-interchain-app",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-hyperweb-io-cosmos-kit",
+    "designMdUrl": "https://vislexicon.com/site/github-com-hyperweb-io-cosmos-kit.md",
+    "checkedAt": "2026-09-15T11:39:41.744Z",
+    "license": "custom"
+  }
+}

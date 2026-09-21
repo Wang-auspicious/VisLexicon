@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2701a5563453cdee6d43d66393141a8e2b86553f8ec1fadba204e0347988eb2e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "steep-app",
+  "entityId": "entity-steep-app",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://steep.app",
+    "finalUrl": "https://steep.app/",
+    "checkedAt": "2026-09-15T11:18:52.301Z"
+  },
+  "editorial": {
+    "name": "Steep",
+    "descriptionZh": "Steep 是基于受治理指标层的 AI 分析平台，数据团队发布 metric，其他人用自然语言提问、出图、生成报表。首页用一张散落着图表卡片的粉橙渐变底撑起主标题，中间只留一个问句输入框。",
+    "takeawayZh": "看它把零散图表卡浮在渐变底上当首屏",
+    "noteZh": "首屏粉橙渐变，正中 AI analytics for faster insights and zero chaos，副标题讲 governed metrics 与 analysis, reporting and company-wide engagement，下面 Get started 与 Book a demo。主视觉由几张浮在背景上的产品卡组成：左上是 Region 表（Europe 1 373、North America 930、Africa 745、Asia 432、Other 23），左下 Activation 折线卡，右上是 Registrations 2.4k 与 ↑ 5.5% vs last week，右下是一个 Ask anything... 输入框加 AF 头像和发送箭头。导航只有 Product、Resources、Customers、Pricing、Book a demo、Get started。正文三块：Built on metrics（No more dashboards）、Powered by AI、Designed for engagement，产品清单列 AI、Explore、Reports、Drill down、Targets、Maps；客户证言是 I have never seen BI adoption like this in my career，下面挂 Why Voi switched from Tableau to Steep 的案例入口。",
+    "recommendation": null,
+    "pricing": "Freemium：Get started for free，另有 /pricing",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页交付的是 Steep 自己的产品分区、浮动数据卡与客户案例，用户拿走的是首页结构与文案；来自 saaslandingpage.com 的落地页灵感池，故归产品与公司官网。",
+        "evidenceUrl": "https://steep.app/"
+      },
+      {
+        "statement": "库里 Hex、Mode、Geckoboard 这类 BI 与分析产品官网同样归在 product-company-sites，Steep 的位置一致。",
+        "evidenceUrl": "https://steep.app/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:18:52.301Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas"
+    ],
+    "deliverables": [
+      "report"
+    ],
+    "actions": [
+      "browse",
+      "generate"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://steep.app",
+      "finalUrl": "https://steep.app/",
+      "title": "Steep: AI analytics for faster insights and zero chaos",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/steep-app/identity.jpg",
+        "sha256": "7ee643472480806873215d0951e01046d8cce57fb37b6187bab27f5bae5ec525",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135185,
+        "alt": "Steep 首屏：AI analytics for faster insights and zerochaos"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroHeadline",
+      "value": "AI analytics for faster insights and zero chaos",
+      "sourceUrl": "https://steep.app/",
+      "evidence": "首屏主标题与 http.title",
+      "confidence": 1
+    },
+    {
+      "field": "heroCards",
+      "value": "Region 表、Activation 折线卡、Registrations 2.4k ↑ 5.5% vs last week、Ask anything... 输入框",
+      "sourceUrl": "https://steep.app/",
+      "evidence": "首屏渐变底上浮着的四张产品卡",
+      "confidence": 1
+    },
+    {
+      "field": "productModules",
+      "value": "AI / Explore / Reports / Drill down / Targets / Maps",
+      "sourceUrl": "https://steep.app/",
+      "evidence": "Engage everyone 一节列出的六个功能与说明",
+      "confidence": 1
+    },
+    {
+      "field": "metricsModel",
+      "value": "Semantic platform：Ship metrics, not dashboards",
+      "sourceUrl": "https://steep.app/",
+      "evidence": "首页 Semantic platform 一节标题与 Built on metrics 一段",
+      "confidence": 1
+    },
+    {
+      "field": "customerStory",
+      "value": "Why Voi switched from Tableau to Steep",
+      "sourceUrl": "https://steep.app/",
+      "evidence": "客户引言下方的案例入口与 /customers/voi-* 路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium：Get started for free，另有 /pricing。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/steep-app",
+    "designMdUrl": "https://vislexicon.com/site/steep-app.md",
+    "checkedAt": "2026-09-15T11:18:52.301Z",
+    "license": "unknown"
+  }
+}

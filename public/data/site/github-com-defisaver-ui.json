@@ -1,0 +1,157 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "59f8719452d511e4563c94e4d32532e239f9ba2bd50746b9e2168afea7453ec9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-defisaver-ui",
+  "entityId": "entity-github-com-defisaver-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/defisaver/ui",
+    "finalUrl": "https://github.com/defisaver/ui",
+    "checkedAt": "2026-09-15T11:40:18.294Z"
+  },
+  "editorial": {
+    "name": "defisaver/ui",
+    "descriptionZh": "DeFi Saver 的设计系统包 @defisaver/ui，React 组件用 TypeScript 写、样式走 StyleX，预编译好所以接入方不需要额外的构建配置。",
+    "takeawayZh": "拿 DeFi Saver 的组件和 StyleX token",
+    "noteZh": "README 开篇就是 @defisaver/ui DeFi Saver design system — React components written in TypeScript and styled with StyleX。目录分 Installation、Usage、How it works、Commands、Adding a component、Repo layout、Roadmap 几节，另有一节专门讲怎么对着消费方应用做本地联调。仓库带着 .storybook 目录和 Vitest 配置，语言占比 TypeScript 97.4%，ISC 许可，版本停在 0.0.14，只有 2 位贡献者。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是带 token 与组件的产品级设计系统（README 首句自述 design system），归 design-system-suites。",
+        "evidenceUrl": "https://github.com/defisaver/ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:40:18.294Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "ISC"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/defisaver/ui",
+      "finalUrl": "https://github.com/defisaver/ui",
+      "title": "GitHub - defisaver/ui: A collection of components and tokens for DefiSaver Design system · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-defisaver-ui/identity.jpg",
+        "sha256": "3da0350fa2b3062c29265f59f4c08f60f5d02d4c779dcb934f3aa2c58c88caa9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 138583,
+        "alt": "defisaver/ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/defisaver/ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-defisaver-ui/identity.jpg",
+          "alt": "defisaver/ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "licenses",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/defisaver/ui",
+      "evidence": "About 栏 ISC license 与 README 顶部 ISC license",
+      "confidence": 1
+    },
+    {
+      "field": "styling",
+      "value": "StyleX，预编译后消费方无需构建配置",
+      "sourceUrl": "https://github.com/defisaver/ui",
+      "evidence": "README 写 styled with StyleX, pre-compiled so consumer apps need no StyleX build step",
+      "confidence": 1
+    },
+    {
+      "field": "tooling",
+      "value": "Storybook + Vitest",
+      "sourceUrl": "https://github.com/defisaver/ui",
+      "evidence": "仓库 .storybook 目录与 vite.config.ts 里的 @storybook/addon-vitest",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-defisaver-ui.md",
+  "registryUrl": "/r/github-com-defisaver-ui.json"
+}

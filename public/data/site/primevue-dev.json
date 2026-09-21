@@ -1,0 +1,163 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "399d78555f6f18f0b039d492c49ef308e8804c261be72468e8fdb940831f9583",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "primevue-dev",
+  "entityId": "entity-primevue-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "primevue.dev",
+  "official": {
+    "inputUrl": "https://primevue.dev",
+    "finalUrl": "https://primevue.dev/",
+    "checkedAt": "2026-09-15T12:03:38.881Z"
+  },
+  "editorial": {
+    "name": "PrimeVue",
+    "descriptionZh": "PrimeNG 同门的 Vue 版 UI 组件套件，首页结构与 PrimeNG 一致。用版本徽标加实时演示开场，讲分层、主题令牌与无障碍。",
+    "takeawayZh": "同一 Dialog 分四层抽象，Volt 层整包换主题。",
+    "noteZh": "顶栏同样是 PrimeUI 促销条加 Get PrimeUI 按钮，正中是 primevue@5.0.1 徽标下的 Premium UI Suite for Vue，按钮 Get Started 与 View Components。往下依次是 FOX / AIRBUS / ebay 客户 logo 和一块 Portfolio command 演示，演示左侧栏换成了房子的图标，顶上仍是 Search assets 和 Weekly / Monthly / Yearly。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是成套 Vue UI 组件与主题令牌（正文四层抽象里的 composition.ts / primitives.vue / styled.vue / volt.vue 与 definePreset 示例），属于设计系统与完整组件套件",
+        "evidenceUrl": "https://primevue.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:03:38.881Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://primevue.dev",
+      "finalUrl": "https://primevue.dev/",
+      "title": "PrimeVue - Vue UI Component Library",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/primevue-dev/identity.jpg",
+        "sha256": "df3c0326268077cc17a828874e67f744b9d402c369b29a9ff93e2d1b7aa8a2d3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 68082,
+        "alt": "PrimeVue 首屏：Premium UI .p-title Suite for Vue"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://primevue.dev",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/primevue-dev/identity.jpg",
+          "alt": "PrimeVue 首屏：Premium UI .p-title Suite for Vue",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "version",
+      "value": "primevue@5.0.1",
+      "sourceUrl": "https://primevue.dev/",
+      "evidence": "首屏大标题上方的版本徽标",
+      "confidence": 1
+    },
+    {
+      "field": "framework",
+      "value": "Vue",
+      "sourceUrl": "https://primevue.dev/",
+      "evidence": "页面题为 PrimeVue - Vue UI Component Library，示例用 <template> / <script setup> 与 primevue/slider",
+      "confidence": 1
+    },
+    {
+      "field": "theming",
+      "value": "用 definePreset / @primeuix/themes 覆盖主色与 surface 令牌",
+      "sourceUrl": "https://primevue.dev/",
+      "evidence": "THEMING 段代码块 import { definePreset } from '@primeuix/themes'",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/primevue-dev.md",
+  "registryUrl": "/r/primevue-dev.json"
+}

@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8e07df9b2637efc6ae67aae8f0dffa19964595093c7e96fccdb6d7a4ec7675b9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "empower-me",
+  "entityId": "entity-empower-me",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://empower.me",
+    "finalUrl": "https://tilt.com/",
+    "checkedAt": "2026-09-15T10:59:29.492Z"
+  },
+  "editorial": {
+    "name": "Tilt",
+    "descriptionZh": "现金预支、信用额度与信用卡产品官网，按收入与消费记录而不是信用分审批，导航把 Essentials、Motion、Engage 三张卡分开。",
+    "takeawayZh": "黑底上把照片斜切拼贴，配粗体与斜体混排的大标题",
+    "noteZh": "简报给的地址 empower.me 实际落到 tilt.com，页面自称 Tilt，标志是一枚手写体的 Tilt。首屏黑底，标题 Potential 用超粗无衬线、counts 用衬线斜体，下面一句 We see you and know you're more than a credit score.，四周散着几张斜切边的真人照片——抬头看的人、扎辫子的女性、穿手术服的人。导航是 Cash Advance、Line of Credit、Credit Cards、Company，右下角另有 Trustpilot 的 Excellent 五星条。",
+    "recommendation": null,
+    "pricing": "unknown（站内无独立定价页）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首屏交付的是 Tilt 自己的现金预支、信用额度与信用卡三条产品线，导航直接按这三条拆开。",
+        "evidenceUrl": "https://tilt.com/"
+      },
+      {
+        "statement": "归 product-company-sites：站内 /cash-advance、/line-of-credit、/credit-cards 是同一家金融产品的落地页，另有 /legal 与 /reviews。",
+        "evidenceUrl": "https://tilt.com/credit-cards"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:59:29.492Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "apply"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://empower.me",
+      "finalUrl": "https://tilt.com/",
+      "title": "Cash Advances & Credit Cards—Powered by Your Potential | Tilt",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/empower-me/identity.jpg",
+        "sha256": "ac88e945084ae25faf4162f6ca004f17a4104dea2ec10e8a5583e20bf7185d18",
+        "width": 1280,
+        "height": 900,
+        "bytes": 81120,
+        "alt": "Tilt 首屏：Potential counts"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "domainShift",
+      "value": "简报给的 empower.me 最终落到 tilt.com，页面与标题均自称 Tilt",
+      "sourceUrl": "https://tilt.com/",
+      "evidence": "http.finalUrl 与 live.title 都是 Tilt",
+      "confidence": 1
+    },
+    {
+      "field": "h1",
+      "value": "Potential counts",
+      "sourceUrl": "https://tilt.com/",
+      "evidence": "首屏大标题，Potential 粗体、counts 衬线斜体",
+      "confidence": 1
+    },
+    {
+      "field": "products",
+      "value": "Credit Cards（Essentials / Motion / Engage 三张）、Cash Advance（$10–$500）、Line of Credit（$200–$1,000）",
+      "sourceUrl": "https://tilt.com/credit-cards",
+      "evidence": "首屏下方三块产品说明与顶部导航",
+      "confidence": 0.9
+    },
+    {
+      "field": "underwriting",
+      "value": "用 250+ signals of your financial health 代替单一信用分",
+      "sourceUrl": "https://tilt.com/",
+      "evidence": "Finding a day one 一段正文",
+      "confidence": 0.9
+    },
+    {
+      "field": "socialProof",
+      "value": "Trustpilot 五星 Excellent、22,830 reviews、5M+ customers、$16B+ in fair cash and credit extended",
+      "sourceUrl": "https://tilt.com/reviews",
+      "evidence": "首屏右下角 Trustpilot 条与 Real members 一段",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/empower-me",
+    "designMdUrl": "https://vislexicon.com/site/empower-me.md",
+    "checkedAt": "2026-09-15T10:59:29.492Z",
+    "license": "proprietary"
+  }
+}

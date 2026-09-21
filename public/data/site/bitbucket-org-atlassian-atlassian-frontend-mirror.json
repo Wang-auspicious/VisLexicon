@@ -1,0 +1,135 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "06fc777cd531cd880e383abf62ae1b575683afe5df4402ed75b28dbdfa9bb216",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "bitbucket-org-atlassian-atlassian-frontend-mirror",
+  "entityId": "entity-bitbucket-org-atlassian-atlassian-frontend-mirror",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "bitbucket.org",
+  "official": {
+    "inputUrl": "https://bitbucket.org/atlassian/atlassian-frontend-mirror",
+    "finalUrl": "https://bitbucket.org/atlassian/atlassian-frontend-mirror/src",
+    "checkedAt": "2026-09-15T12:15:53.356Z"
+  },
+  "editorial": {
+    "name": "atlassian/atlassian-frontend-mirror",
+    "descriptionZh": "Atlassian 前端代码在 Bitbucket 上的镜像仓库（Atlassian Design System 相关）。抽查时首屏没渲染出仓库内容，只能确认到 cookie 提示与加载状态。",
+    "takeawayZh": "首屏只到加载骨架，没拿到可看的仓库内容",
+    "noteZh": "进去是 Bitbucket 的 src 路径，页面上只落下一条 Atlassian cookies and tracking notice，配 Only necessary 与 Accept all 两个按钮；左侧栏是 For you、Recent、Customize sidebar 三项，主区一个 Search 输入框加一个转圈的加载指示器，往下一片空白，没有文件列表、README 或目录树可看。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据不足：首屏未渲染出任何仓库内容，只能从仓库名与 Atlassian Design System 的既有关系推测它对应 @atlaskit 前端源码，故按设计系统源码归入组件与设计系统，此项分类不确定。",
+        "evidenceUrl": "https://bitbucket.org/atlassian/atlassian-frontend-mirror/src"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:15:53.356Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://bitbucket.org/atlassian/atlassian-frontend-mirror",
+      "finalUrl": "https://bitbucket.org/atlassian/atlassian-frontend-mirror/src",
+      "title": "atlassian / atlassian-frontend-mirror — Bitbucket",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/bitbucket-org-atlassian-atlassian-frontend-mirror/identity.jpg",
+        "sha256": "a9c76007637ce6402005fe9167bd32c0e63f078a80e1479304e10bdda81e6448",
+        "width": 1280,
+        "height": 900,
+        "bytes": 36524,
+        "alt": "atlassian/atlassian-frontend-mirror 首屏"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://bitbucket.org/atlassian/atlassian-frontend-mirror",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/bitbucket-org-atlassian-atlassian-frontend-mirror/identity.jpg",
+          "alt": "atlassian/atlassian-frontend-mirror 首屏",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "render",
+      "value": "首屏未渲染出仓库内容，只有 cookie 提示与加载指示器",
+      "sourceUrl": "https://bitbucket.org/atlassian/atlassian-frontend-mirror/src",
+      "evidence": "截图里只看到 Atlassian cookies and tracking notice、左侧栏与主区转圈的加载图标",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://bitbucket.org/atlassian/atlassian-frontend-mirror/src",
+      "evidence": "页面没有渲染出任何 license 信息",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/bitbucket-org-atlassian-atlassian-frontend-mirror.md",
+  "registryUrl": "/r/bitbucket-org-atlassian-atlassian-frontend-mirror.json"
+}

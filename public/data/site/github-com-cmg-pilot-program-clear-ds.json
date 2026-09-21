@@ -1,0 +1,138 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "08947ee825c3f069e9feed3b3a1d884e829c7590743b72ee03424330899eb928",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-cmg-pilot-program-clear-ds",
+  "entityId": "entity-github-com-cmg-pilot-program-clear-ds",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/cmg-pilot-program/clear-ds",
+    "finalUrl": "https://github.com/enterprises/cmg-financial/sso?return_to=https%3A%2F%2Fgithub.com%2Fcmg-pilot-program%2Fclear-ds",
+    "checkedAt": "2026-09-15T11:39:05.304Z"
+  },
+  "editorial": {
+    "name": "Single sign-on to cmg financial",
+    "descriptionZh": "cmg-pilot-program/clear-ds 这个仓库挂在 GitHub 企业版的 SSO 后面。公开访问被送到 cmg financial 的单点登录页，仓库本身打不开。",
+    "takeawayZh": "被 GitHub 企业 SSO 拦住，仓库内容不可达",
+    "noteZh": "进去没落到仓库，而是 GitHub 的企业 SSO 页：唯一 h1 是 Single sign-on to cmg financial，正文一句 Authenticate your account by logging into cmg financial's single sign-on provider.，一个绿色 Continue 按钮，下面一块写着 Signing in as the enterprise admin? Sign in。页脚是 GitHub 通用的 Terms / Privacy / Docs / Contact GitHub Support / Manage cookies。没有 README、文件列表或任何仓库信息渲染出来。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据不足：页面只是 GitHub 企业版 SSO 认证卡，没有任何仓库内容可读，无法确认候选池所说的设计系统 clear-ds 的形态。暂按组件类挂在通用界面组件库下，不确定性高。",
+        "evidenceUrl": "https://github.com/enterprises/cmg-financial/sso"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:39:05.304Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "login-required"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/cmg-pilot-program/clear-ds",
+      "finalUrl": "https://github.com/enterprises/cmg-financial/sso?return_to=https%3A%2F%2Fgithub.com%2Fcmg-pilot-program%2Fclear-ds",
+      "title": "Sign in to cmg financial · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-cmg-pilot-program-clear-ds/identity.jpg",
+        "sha256": "d4e8f8d7267e6a264a714abaaa3d4d17e75eee6ec19480fec6e980c7d933309c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 30970,
+        "alt": "Single sign-on to cmg financial 首屏：Single sign-on to cmg financial"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/cmg-pilot-program/clear-ds",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-cmg-pilot-program-clear-ds/identity.jpg",
+          "alt": "Single sign-on to cmg financial 首屏：Single sign-on to cmg financial",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "access",
+      "value": "login-required",
+      "sourceUrl": "https://github.com/enterprises/cmg-financial/sso",
+      "evidence": "页面标题 Sign in to cmg financial · GitHub，正文只提供 Continue 一个按钮",
+      "confidence": 1
+    },
+    {
+      "field": "finalUrl",
+      "value": "https://github.com/enterprises/cmg-financial/sso?return_to=https%3A%2F%2Fgithub.com%2Fcmg-pilot-program%2Fclear-ds",
+      "sourceUrl": "https://github.com/cmg-pilot-program/clear-ds",
+      "evidence": "仓库地址带 return_to 参数被重定向到企业 SSO 页",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-cmg-pilot-program-clear-ds.md",
+  "registryUrl": "/r/github-com-cmg-pilot-program-clear-ds.json"
+}

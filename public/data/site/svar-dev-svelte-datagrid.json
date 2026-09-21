@@ -1,0 +1,182 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d320689dfdf468e316683f8c2d518baa75dedfc7f7b69eaeb59d4a6d0412b271",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svar-dev-svelte-datagrid",
+  "entityId": "entity-svar-dev-svelte-datagrid",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "svar.dev",
+  "official": {
+    "inputUrl": "https://svar.dev/svelte/datagrid",
+    "finalUrl": "https://svar.dev/svelte/datagrid/",
+    "checkedAt": "2026-09-15T11:52:22.231Z"
+  },
+  "editorial": {
+    "name": "SVAR Svelte DataGrid",
+    "descriptionZh": "Svelte 5 的数据表格组件，用几行代码接入后自带排序、表头筛选、单元格内编辑、虚拟滚动与分页，并可配合 RestDataProvider 把 CRUD 直接打到服务端。MIT 授权，也提供 React 与 Vue 版本。",
+    "takeawayZh": "几行代码给 Svelte 5 加一张可编辑数据表",
+    "noteZh": "左侧标题 Svelte Data Grid / Free, fast, and feature-rich，上面同样标 Latest update: v2.7，安装行 npm install @svar-ui/svelte-grid 下面写 Licensed under MIT，并把 React、Vue 两个兄弟版本列出来。首屏右半边是任务表格的实样：Task name 列带复选框，Status 列用 In progress、Done、Not started 三种色块标状态，Assign 列是 Alice、John、Mary、Dan、Laura、Alex 的头像，行里有 Website redesign、Fix bugs related to user authentication、Research study、Product launch 这些层级任务。正文按 Native Svelte component、Sorting & advanced filtering、Handling large datasets、Flexible data editing、Responsive design 几段展开，并给了一段 <Grid {data} {columns} /> 的最小用法。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一张完整的可嵌入数据表格（virtual scrolling、pagination、in-cell editing、RestDataProvider 全都内置），是复合控件而不是单个原子元件，因此放进页面区块与可嵌入复合控件。",
+        "evidenceUrl": "https://svar.dev/svelte/datagrid/"
+      },
+      {
+        "statement": "备选是 general-ui-components；选 page-blocks-embeddable-controls 是因为页面把 DataGrid 当作一个整体能力交付（排序、筛选、编辑、分页一次给全），用户拿走的就是这张表本身。",
+        "evidenceUrl": "https://svar.dev/svelte/datagrid/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:22.231Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "edit"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svar.dev/svelte/datagrid",
+      "finalUrl": "https://svar.dev/svelte/datagrid/",
+      "title": "SVAR Svelte DataGrid | Lightning-Fast Grid Component",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/svar-dev-svelte-datagrid/identity.jpg",
+        "sha256": "766a1ad26d21b2cab225e819aeac28f502e72dd7cfa018914a78d9f85d109499",
+        "width": 1280,
+        "height": 900,
+        "bytes": 129252,
+        "alt": "SVAR Svelte DataGrid 首屏：Svelte Data Grid Free, fast, and feature-rich"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://svar.dev/svelte/datagrid",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/svar-dev-svelte-datagrid/identity.jpg",
+          "alt": "SVAR Svelte DataGrid 首屏：Svelte Data Grid Free, fast, and feature-rich",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://svar.dev/svelte/datagrid/",
+      "evidence": "首屏 Licensed under MIT 与 meta description 的 Free and open source",
+      "confidence": 1
+    },
+    {
+      "field": "features",
+      "value": "多列排序、表头筛选、单元格内编辑、虚拟滚动、动态加载与分页",
+      "sourceUrl": "https://svar.dev/svelte/datagrid/",
+      "evidence": "Sorting & advanced filtering、Handling large datasets、Flexible data editing 三段",
+      "confidence": 1
+    },
+    {
+      "field": "minimalUsage",
+      "value": "最小用法为 <Willow><Grid {data} {columns} /></Willow>，data 与 columns 两个数组即出表",
+      "sourceUrl": "https://svar.dev/svelte/datagrid/",
+      "evidence": "Native Svelte component 段落里的代码块",
+      "confidence": 1
+    },
+    {
+      "field": "filterIntegration",
+      "value": "筛选可直接接 SVAR Svelte Filter，获得嵌套条件与自然语言查询",
+      "sourceUrl": "https://svar.dev/svelte/datagrid/",
+      "evidence": "Sorting & advanced filtering 段落",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "npm 包名为 @svar-ui/svelte-grid",
+      "sourceUrl": "https://svar.dev/svelte/datagrid/",
+      "evidence": "首屏安装命令与文档代码块的 import 语句",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/svar-dev-svelte-datagrid.md",
+  "registryUrl": "/r/svar-dev-svelte-datagrid.json"
+}

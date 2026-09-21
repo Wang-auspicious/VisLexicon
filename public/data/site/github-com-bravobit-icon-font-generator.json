@@ -1,0 +1,167 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "eb8d55765ef8a846e6958265b4454f8f7047cb6b605edc292d0e00e34b79da55",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-bravobit-icon-font-generator",
+  "entityId": "entity-github-com-bravobit-icon-font-generator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/bravobit/icon-font-generator",
+    "finalUrl": "https://github.com/bravobit/icon-font-generator",
+    "checkedAt": "2026-09-15T12:16:45.934Z"
+  },
+  "editorial": {
+    "name": "bravobit/icon-font-generator",
+    "descriptionZh": "把一个装满 SVG 的目录转成图标字体，一次产出 SVG、TTF、WOFF、WOFF2 和 EOT 五种格式。",
+    "takeawayZh": "一条 CLI 命令把 SVG 目录打成五种格式的图标字体",
+    "noteZh": "README 从 Requirements 讲起，写明需要 Node.js 24.14.0 以上、包是 ESM only，命令行示例是 icon-font-generator --input icons --output dist --name my-icons，选项表列出 --input、--output、--name 等。正文还有一节 How icons become glyphs 解释图标怎么变成字形，并强调每个图标既能按码点调用、也能按名字调用。About 是 MIT license，Languages 条是 TypeScript 97.5%、JavaScript 2.5%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "asset-conversion-optimization",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它是个通用转换工具：输入一个 SVG 目录、输出 SVG/TTF/WOFF/WOFF2/EOT 字体文件，用户拿走的是转换能力和产物格式，归 delivery-development-tools/asset-conversion-optimization，而不是图标素材本身。",
+        "evidenceUrl": "https://github.com/bravobit/icon-font-generator"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:16:45.934Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "font",
+      "icon"
+    ],
+    "actions": [
+      "generate",
+      "install"
+    ],
+    "media": [
+      "font",
+      "icon"
+    ],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "typescript",
+      "svg"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/bravobit/icon-font-generator",
+      "finalUrl": "https://github.com/bravobit/icon-font-generator",
+      "title": "GitHub - bravobit/icon-font-generator: The Bravobit icon font generator · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-bravobit-icon-font-generator/identity.jpg",
+        "sha256": "555bdc932044d1e97d98798b8956b36ebbdc485edd8d5d0fe66b93daa7b7d1e4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 123143,
+        "alt": "bravobit/icon-font-generator 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/bravobit/icon-font-generator",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-bravobit-icon-font-generator/identity.jpg",
+          "alt": "bravobit/icon-font-generator 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "outputFormats",
+      "value": "SVG、TTF、WOFF、WOFF2、EOT",
+      "sourceUrl": "https://github.com/bravobit/icon-font-generator",
+      "evidence": "README 开头原文 Point it at a directory of .svg files and it writes SVG, TTF, WOFF, WOFF2 and EOT fonts.",
+      "confidence": 1
+    },
+    {
+      "field": "requirements",
+      "value": "Node.js 24.14.0 或更新，包为 ESM only",
+      "sourceUrl": "https://github.com/bravobit/icon-font-generator",
+      "evidence": "README 的 Requirements 段落原文",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/bravobit/icon-font-generator",
+      "evidence": "About 栏 Readme 下方标注 MIT license，README 页签行同样写 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "cli",
+      "value": "icon-font-generator --input icons --output dist --name my-icons",
+      "sourceUrl": "https://github.com/bravobit/icon-font-generator",
+      "evidence": "README 的 Command line 段落除给出示例外，还有一张 --input / --output / --name 的选项表",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-bravobit-icon-font-generator.md",
+  "registryUrl": "/r/github-com-bravobit-icon-font-generator.json"
+}

@@ -1,0 +1,180 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b2a4650aa198a0d5502a51a06cbb3b3300aa99e3e46d136f0cacf99819471444",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-team1241-apps-components",
+  "entityId": "entity-github-com-team1241-apps-components",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/team1241/APPS-Components",
+    "finalUrl": "https://github.com/team1241/APPS-Components",
+    "checkedAt": "2026-09-15T11:52:56.316Z"
+  },
+  "editorial": {
+    "name": "team1241/APPS-Components",
+    "descriptionZh": "基于 Vite 的 React + TypeScript 组件仓库：src 里是一整套 shadcn 组件，配一个 .storybook 做预览，另有一条把包发到 npm 的 workflow，版本停在 0.0.0-rc.2。",
+    "takeawayZh": "克隆一套 shadcn 组件加 Storybook 的起步仓库",
+    "noteZh": "这个仓库的 About 栏特别薄，只有一条 apps-components.vercel.app 外链，没有 description 也没有 topics，连 license 行都没有，Releases 只统计到 2 tags，0 Stars。README 是 Vite 模板原样没改——h1 就是 React + TypeScript + Vite，下面两节叫 React Compiler 和 Expanding the ESLint configuration。真正的内容全写在提交历史里：added all shadcn components and storybook 出现了五次，get package reaady for publishing（原文把 ready 拼成了 reaady）出现在 .github/workflows、.storybook、src 三行。文件树里 components.json 和 vitest.shims.d.ts 都在，Languages 是 TypeScript 98.3% / CSS 1.5% / JavaScript 0.2%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库主体是 src 下一整套 shadcn 组件加 components.json 与 .storybook，交付的是可复用组件而非站点模板或设计稿。",
+        "evidenceUrl": "https://github.com/team1241/APPS-Components"
+      },
+      {
+        "statement": "README 仍是 Vite 模板，About 缺少 license 与 topics，无法确认授权，故 licenses 记 unknown 而不是猜一个。",
+        "evidenceUrl": "https://github.com/team1241/APPS-Components"
+      },
+      {
+        "statement": "提交信息里 get package reaady for publishing 指向 npm 发包，package.json 版本 0.0.0-rc.2，仍算组件库而非成品应用。",
+        "evidenceUrl": "https://github.com/team1241/APPS-Components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:56.316Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library",
+      "starter"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "shadcn-ui",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/team1241/APPS-Components",
+      "finalUrl": "https://github.com/team1241/APPS-Components",
+      "title": "GitHub - team1241/APPS-Components · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-team1241-apps-components/identity.jpg",
+        "sha256": "0ede33690cdbaba4910aba462cd9d75fb130a382b3744db15ccee54e0f106455",
+        "width": 1280,
+        "height": 900,
+        "bytes": 118187,
+        "alt": "team1241/APPS-Components 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/team1241/APPS-Components",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-team1241-apps-components/identity.jpg",
+          "alt": "team1241/APPS-Components 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "contents",
+      "value": "整套 shadcn 组件加 Storybook",
+      "sourceUrl": "https://github.com/team1241/APPS-Components",
+      "evidence": "提交信息 added all shadcn components and storybook，文件树同时有 components.json 与 .storybook 目录",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "Vite + React + TypeScript 模板",
+      "sourceUrl": "https://github.com/team1241/APPS-Components",
+      "evidence": "README 的 h1 就是 React + TypeScript + Vite，文件树含 vite.config.ts",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "TypeScript 98.3% / CSS 1.5% / JavaScript 0.2%",
+      "sourceUrl": "https://github.com/team1241/APPS-Components",
+      "evidence": "About 下方 Languages 条与图例数字",
+      "confidence": 1
+    },
+    {
+      "field": "homepage",
+      "value": "https://apps-components.vercel.app",
+      "sourceUrl": "https://github.com/team1241/APPS-Components",
+      "evidence": "About 面板中唯一一条外链 apps-components.vercel.app",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-team1241-apps-components.md",
+  "registryUrl": "/r/github-com-team1241-apps-components.json"
+}

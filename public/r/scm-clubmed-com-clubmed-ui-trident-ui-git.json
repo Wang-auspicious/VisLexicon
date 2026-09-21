@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d848d2ced52b1d5fef8736d55795f5d0e3575c079a01682aa1c78f30c7a32407",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "scm-clubmed-com-clubmed-ui-trident-ui-git",
+  "entityId": "entity-scm-clubmed-com-clubmed-ui-trident-ui-git",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://scm.clubmed.com/clubmed/ui/trident-ui.git",
+    "finalUrl": "https://scm.clubmed.com/users/sign_in",
+    "checkedAt": "2026-09-15T11:39:00.179Z"
+  },
+  "editorial": {
+    "name": "GitLab ClubMed",
+    "descriptionZh": "ClubMed 内部的 GitLab 实例。简报里的 @clubmed/trident-ui 仓库地址被重定向到这里，公开访问只能落在 /users/sign_in 登录页。",
+    "takeawayZh": "公开侧只有登录页，仓库内容完全看不到",
+    "noteZh": "点进去没有落到任何仓库，而是 GitLab 的 Sign in · GitLab 页：顶部一条 Sign in before continuing. 提示，中间标题 GitLab ClubMed 加一句 Welcome !，唯一的按钮是 ClubMed Office，底下只有一个 Remember me 勾选框。页脚只有 About GitLab 和 GitLab community forum 两个链接，语言开关是 English。没有任何仓库、README 或组件预览渲染出来。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据不足：站点只剩一个 GitLab 登录表单，页面上看不到任何仓库、代码或组件，无法验证候选池给的 @clubmed/trident-ui 是组件库。按「用户最直接能拿走什么」无法判定，暂寄在通用界面组件库下。",
+        "evidenceUrl": "https://scm.clubmed.com/users/sign_in"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:39:00.179Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "login-required"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://scm.clubmed.com/clubmed/ui/trident-ui.git",
+      "finalUrl": "https://scm.clubmed.com/users/sign_in",
+      "title": "Sign in · GitLab",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/scm-clubmed-com-clubmed-ui-trident-ui-git/identity.jpg",
+        "sha256": "f2f9612a882d53229a4ea8e7ae1e66745742ce2a5c18f5b255d2b0d394e3c137",
+        "width": 1280,
+        "height": 900,
+        "bytes": 23632,
+        "alt": "GitLab ClubMed 首屏：GitLab ClubMed"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "access",
+      "value": "login-required",
+      "sourceUrl": "https://scm.clubmed.com/users/sign_in",
+      "evidence": "页面提示 Sign in before continuing.，唯一登录入口是 ClubMed Office 按钮",
+      "confidence": 1
+    },
+    {
+      "field": "finalUrl",
+      "value": "https://scm.clubmed.com/users/sign_in",
+      "sourceUrl": "https://scm.clubmed.com/clubmed/ui/trident-ui.git",
+      "evidence": "原始 .git 地址被重定向到 GitLab 登录页，标题变成 Sign in · GitLab",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/scm-clubmed-com-clubmed-ui-trident-ui-git",
+    "designMdUrl": "https://vislexicon.com/site/scm-clubmed-com-clubmed-ui-trident-ui-git.md",
+    "checkedAt": "2026-09-15T11:39:00.179Z",
+    "license": "unknown"
+  }
+}

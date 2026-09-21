@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "15fcfd4d48e8db321cad90d619c92f9d0c8012cdea12367a91b5cc6958f1ab4b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "substrateui-dev",
+  "entityId": "entity-substrateui-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://substrateui.dev",
+    "finalUrl": "https://www.substrateui.dev/",
+    "checkedAt": "2026-09-15T11:46:14.693Z"
+  },
+  "editorial": {
+    "name": "SubstrateUI",
+    "descriptionZh": "一个人为自家项目做的可换主题 React 设计系统，91 个组件、五套主题，配色逐对审到 WCAG AA。首屏本身就是主题演示页，点一下主题药丸整页重绘。",
+    "takeawayZh": "装 SubstrateUI，换一行属性整页重绘",
+    "noteZh": "首屏眉标写 V1.26 · MIT · REACT 18+ · NO ROADMAP，大标题 A themeable React design system. Use it or don't.，下面自述 91 components, five themes, every colour pairing audited against WCAG AA。安装框有 BUN / PNPM / NPM / YARN 四个页签，命令是 bun add @mikenotthepope/substrateui，两枚按钮是 Read the docs 与 See the tokens。再往下五枚主题药丸 Plum、Proof、Substrate、Lava、Tundra 直接切换整页外观，底下一句 pick a theme. this page is the demo. yes, that's a lot of themes for one person.，紧接着 TINT RAMPS 用 oklab 混出 25 / 50 / 75 / 100% 四档并列出 --primary、--secondary-fill、--foreground 变量。页尾 Who it's for 与 What you get, roughly 两段写明 A theme is a token map, and no component ever learns its name.、35 colour pairings per theme are checked against WCAG AA on every commit，并说明 Base UI handles focus, dismissal and ARIA underneath。",
+    "recommendation": null,
+    "pricing": "Free（首屏标 MIT，正文写明 no runtime service, no account）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是成套的 React 设计系统（91 个组件、五套主题、token 变量与每提交一次的 WCAG 审计），不是零散控件，归 ui-implementation 下的 design-system-suites。",
+        "evidenceUrl": "https://www.substrateui.dev/"
+      },
+      {
+        "statement": "页面上明确写出 React 18+、Tailwind v4 是唯一硬依赖，底层用 Base UI 管焦点与 ARIA，所以 technologies 记这三项；没有账号与运行时服务，access 记 free。",
+        "evidenceUrl": "https://www.substrateui.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:14.693Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "base-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://substrateui.dev",
+      "finalUrl": "https://www.substrateui.dev/",
+      "title": "SubstrateUI — A themeable React design system",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/substrateui-dev/identity.jpg",
+        "sha256": "bc2b936f552297c68b5c7e3df4996d06719704eee8bcf797a65bee6ab87cbfae",
+        "width": 1280,
+        "height": 900,
+        "bytes": 91593,
+        "alt": "SubstrateUI 首屏：A themeable React design system. Use it or don’t ."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "versionLine",
+      "value": "V1.26 · MIT · REACT 18+ · NO ROADMAP",
+      "sourceUrl": "https://www.substrateui.dev/",
+      "evidence": "首屏大标题上方的眉标，截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "themes",
+      "value": "Plum、Proof、Substrate、Lava、Tundra 五套主题，配 oklab 混出的 25 / 50 / 75 / 100% tint ramps 与 --primary、--secondary-fill、--foreground 变量",
+      "sourceUrl": "https://www.substrateui.dev/",
+      "evidence": "首屏的主题药丸切换条与下方 TINT RAMPS 区块",
+      "confidence": 1
+    },
+    {
+      "field": "a11yRule",
+      "value": "35 colour pairings per theme are checked against WCAG AA on every commit，且 Base UI handles focus, dismissal and ARIA underneath",
+      "sourceUrl": "https://www.substrateui.dev/",
+      "evidence": "What you get, roughly 一段的 Accessibility as a requirement 条目",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "bun add @mikenotthepope/substrateui，页面同时给 BUN / PNPM / NPM / YARN 四种写法",
+      "sourceUrl": "https://www.substrateui.dev/",
+      "evidence": "首屏安装命令框的页签与命令文本",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/substrateui-dev",
+    "designMdUrl": "https://vislexicon.com/site/substrateui-dev.md",
+    "checkedAt": "2026-09-15T11:46:14.693Z",
+    "license": "MIT"
+  }
+}

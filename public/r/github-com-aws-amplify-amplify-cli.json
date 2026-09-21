@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "97cb914ffac6952d5724a7659e6d8af6ce7f9869d8816777e96e5361f8a02d99",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-aws-amplify-amplify-cli",
+  "entityId": "entity-github-com-aws-amplify-amplify-cli",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/aws-amplify/amplify-cli",
+    "finalUrl": "https://github.com/aws-amplify/amplify-cli",
+    "checkedAt": "2026-09-15T12:47:08.087Z"
+  },
+  "editorial": {
+    "name": "aws-amplify/amplify-cli",
+    "descriptionZh": "AWS Amplify 的 Gen 1 命令行工具链：把无服务器 Web 与移动端后端的搭建、代码生成和维护收进一组 amplify 命令里。",
+    "takeawayZh": "用一组 CLI 命令搭起无服务器后端，并生成前端调用代码",
+    "noteZh": "仓库页右栏 About 写 The AWS Amplify CLI is a toolchain for simplifying serverless web and mobile development.，许可证 Apache-2.0，Star 2.9k、Fork 825、117 watching，主题标签一长串，从 analytics、api、authentication 到 graphql、lambda-functions、serverless、storage。README 顶部挂着两条状态：Amplify Gen 2 is now generally available 与 ⚠️ Amplify Gen 1 is in Maintenance Mode，再下面标题才是 AWS Amplify CLI (Gen 1)，节次分 Install the CLI、Commands Summary、Tutorials、Developing、Contributing。分支与标签数量夸张：1123 Branches、37939 Tags。",
+    "recommendation": null,
+    "pricing": "Free (Apache-2.0)",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一条命令行工具链，作用是把无服务器后端搭起来并接进 Web/移动项目，用户动作是装 CLI 后按命令走，属构建与开发工作流。",
+        "evidenceUrl": "https://github.com/aws-amplify/amplify-cli"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:47:08.087Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/aws-amplify/amplify-cli",
+      "finalUrl": "https://github.com/aws-amplify/amplify-cli",
+      "title": "GitHub - aws-amplify/amplify-cli: The AWS Amplify CLI is a toolchain for simplifying serverless web and mobile development. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-aws-amplify-amplify-cli/identity.jpg",
+        "sha256": "ea8fb12522e9e9a41a95351d57342094f8c1e3ed514ff616acd08b60209996d5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 157859,
+        "alt": "aws-amplify/amplify-cli 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/aws-amplify/amplify-cli",
+      "evidence": "右侧 About 栏的 Apache-2.0 license",
+      "confidence": 1
+    },
+    {
+      "field": "readmeState",
+      "value": "README 顶部两条状态：Amplify Gen 2 is now generally available；Amplify Gen 1 is in Maintenance Mode",
+      "sourceUrl": "https://github.com/aws-amplify/amplify-cli",
+      "evidence": "live.heads 的前三条与仓库页 README 标题区",
+      "confidence": 1
+    },
+    {
+      "field": "readmeSections",
+      "value": "Install the CLI / Commands Summary / Tutorials / Developing / Contributing",
+      "sourceUrl": "https://github.com/aws-amplify/amplify-cli",
+      "evidence": "live.heads 列表",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "Star 2.9k、Fork 825、Issues 737、Pull requests 146、7,098 Commits、1123 Branches、37939 Tags",
+      "sourceUrl": "https://github.com/aws-amplify/amplify-cli",
+      "evidence": "仓库页顶部计数条与分支/标签下拉",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-aws-amplify-amplify-cli",
+    "designMdUrl": "https://vislexicon.com/site/github-com-aws-amplify-amplify-cli.md",
+    "checkedAt": "2026-09-15T12:47:08.087Z",
+    "license": "Apache-2.0"
+  }
+}

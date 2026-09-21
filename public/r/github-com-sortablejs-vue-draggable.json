@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8e8c8f392ba0e705befb41d944cad0984ea5582d523099249abf4e6703b73498",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-sortablejs-vue-draggable",
+  "entityId": "entity-github-com-sortablejs-vue-draggable",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/SortableJS/Vue.Draggable",
+    "finalUrl": "https://github.com/SortableJS/Vue.Draggable",
+    "checkedAt": "2026-09-15T12:14:09.789Z"
+  },
+  "editorial": {
+    "name": "SortableJS/Vue.Draggable",
+    "descriptionZh": "基于 Sortable.js 的 Vue 拖拽组件，列表可跨容器拖动并保持与视图模型数组同步，Vue 3 的版本另在 vue.draggable.next。",
+    "takeawayZh": "用 tag 与 componentData 把已有 UI 库组件变成可拖拽列表",
+    "noteZh": "README 开头写清定位是 Vue component (Vue.js 2.0) or directive (Vue.js 1.0)，Vue 3 的读者被引到 vue.draggable.next；Features 一节点出 Supports drag handles and selectable text、Smart auto-scrolling、No jQuery dependency、Compatible with Vue.js 2.0 transition-group，以及 Reuse existing UI library components 这条；右侧 About 挂着两个 Live Demos 外链，Contributors 记 29 人。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是组件：README 的 Installation 段与 Features 段教的是挂进 Vue 项目做拖拽，在线试跑走 sortablejs.github.io/Vue.Draggable/。",
+        "evidenceUrl": "https://github.com/SortableJS/Vue.Draggable"
+      },
+      {
+        "statement": "归 general-ui-components 而不是动效代码库，因为卖点是列表与视图模型的双向同步，页面没把动画效果当卖点。",
+        "evidenceUrl": "https://github.com/SortableJS/Vue.Draggable"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:14:09.789Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/SortableJS/Vue.Draggable",
+      "finalUrl": "https://github.com/SortableJS/Vue.Draggable",
+      "title": "GitHub - SortableJS/Vue.Draggable: Vue drag-and-drop component based on Sortable.js · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-sortablejs-vue-draggable/identity.jpg",
+        "sha256": "128120b8c3a3b768da0489dd00df623ffc51a31dcbc536096ede920cda3bade3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 125037,
+        "alt": "SortableJS/Vue.Draggable 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/SortableJS/Vue.Draggable",
+      "evidence": "仓库根目录 LICENSE 与 README 标签行的 MIT license，右侧 About 栏同标 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "vue3Replacement",
+      "value": "Vue 3 需改用 vue.draggable.next",
+      "sourceUrl": "https://github.com/SortableJS/Vue.Draggable",
+      "evidence": "README 顶部 For Vue 3 一节写着 See vue.draggable.next",
+      "confidence": 1
+    },
+    {
+      "field": "liveDemos",
+      "value": "sortablejs.github.io/Vue.Draggable/ 与 david-desmaisons.github.io/draggable-example/",
+      "sourceUrl": "https://github.com/SortableJS/Vue.Draggable",
+      "evidence": "README 的 Demo / Live Demos 一节，右侧 About 外链同址",
+      "confidence": 1
+    },
+    {
+      "field": "popularity",
+      "value": "20.6k stars、2.8k forks、Contributors 29",
+      "sourceUrl": "https://github.com/SortableJS/Vue.Draggable",
+      "evidence": "右侧 About 栏的 Star 20.6k、Fork 2.8k 与 Contributors 29 计数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-sortablejs-vue-draggable",
+    "designMdUrl": "https://vislexicon.com/site/github-com-sortablejs-vue-draggable.md",
+    "checkedAt": "2026-09-15T12:14:09.789Z",
+    "license": "MIT"
+  }
+}

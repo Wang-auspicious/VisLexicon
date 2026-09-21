@@ -1,0 +1,180 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "16896c846683eae774cb3fad5a275cafd25f6f0feb8c8792496b767764dadcd8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "reakit-io",
+  "entityId": "entity-reakit-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "reakit.io",
+  "official": {
+    "inputUrl": "https://reakit.io",
+    "finalUrl": "https://reakit.io/",
+    "checkedAt": "2026-09-15T12:06:27.726Z"
+  },
+  "editorial": {
+    "name": "Reakit",
+    "descriptionZh": "给 React 用的低层无障碍组件库：核心库里的组件默认不带样式、只输出一个接受所有 HTML props 的元素，样式完全交给使用方。官网顶部横幅已挂出后继项目 Ariakit。",
+    "takeawayZh": "拿无样式的 Tab、Dialog、Menu 组件，自己配外观并自带键盘交互",
+    "noteZh": "最顶上一条黑底横幅写 Looking for Reakit's successor? Visit Ariakit，导航里除 DOCUMENTATION、NEWSLETTER、GITHUB 外还有一个写 Start typing to search 的搜索框。首屏紫色渐变上是大标题 Build accessible rich web apps with React，两个按钮 GET STARTED 与 COMPONENTS，底下挂 VIEW REAKIT ON GITHUB ★ 8613，再往下并排四块 Accessible / Composable / Customizable / Tiny & Fast。正文交代组件严格跟 WAI-ARIA 1.1、每个引入的组件往 bundle 里加几字节到最多 3 kB，页脚写 Released under the MIT License、Copyright © 2017-2026 Diego Haz。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面上 Customizable 一段原文 Reakit components are unstyled by default in the core library，Accessible 一段说严格按 WAI-ARIA 1.1 提供属性与键盘交互，符合无样式无障碍原语这一类。",
+        "evidenceUrl": "https://reakit.io/"
+      },
+      {
+        "statement": "文档路径 /docs/role、/docs/clickable、/docs/composite、/docs/tabbable 这类是行为原语而不是成品控件，进一步印证是低层原语库。",
+        "evidenceUrl": "https://reakit.io/docs/composition"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:06:27.726Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://reakit.io",
+      "finalUrl": "https://reakit.io/",
+      "title": "Reakit – Toolkit for building accessible UIs",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/reakit-io/identity.jpg",
+        "sha256": "662ad801ad5efbb1570f72162aa9ac8b8ab9c12ad6f755cd7681894bb2d6826d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 112578,
+        "alt": "Reakit 首屏：Build accessible rich web apps with React"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://reakit.io",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/reakit-io/identity.jpg",
+          "alt": "Reakit 首屏：Build accessible rich web apps with React",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "successor",
+      "value": "官方指向后继项目 Ariakit",
+      "sourceUrl": "https://reakit.io/",
+      "evidence": "首屏顶部黑底横幅 Looking for Reakit's successor? Visit Ariakit",
+      "confidence": 1
+    },
+    {
+      "field": "accessibility",
+      "value": "严格遵循 WAI-ARIA 1.1",
+      "sourceUrl": "https://reakit.io/",
+      "evidence": "首屏 Accessible 一段原文 Reakit strictly follows WAI-ARIA 1.1 standards",
+      "confidence": 1
+    },
+    {
+      "field": "bundle-size",
+      "value": "每个组件引入几字节到最多 3 kB",
+      "sourceUrl": "https://reakit.io/",
+      "evidence": "首屏 Tiny & Fast 一段原文 Each imported component will add from a few bytes to up to 3 kB into your bundle",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://reakit.io/",
+      "evidence": "页脚 Released under the MIT License Copyright © 2017-2026 Diego Haz",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "Button、Checkbox、Dialog (Modal)、Disclosure、Form、Grid、Group、Input、Menu、Popover、Radio、Tab、Toolbar、Tooltip 等",
+      "sourceUrl": "https://reakit.io/docs/button",
+      "evidence": "文档侧栏 DOCUMENTATION 下的组件条目，以及内部路径 /docs/button、/docs/dialog、/docs/menu 等",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/reakit-io.md",
+  "registryUrl": "/r/reakit-io.json"
+}

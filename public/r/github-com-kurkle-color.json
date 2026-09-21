@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ac0de4ff033cc383b69eaeff35b58740b48e09185a901c7033ce4ad2e8f174c6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-kurkle-color",
+  "entityId": "entity-github-com-kurkle-color",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/kurkle/color",
+    "finalUrl": "https://github.com/kurkle/color",
+    "checkedAt": "2026-09-15T12:33:43.394Z"
+  },
+  "editorial": {
+    "name": "kurkle/color",
+    "descriptionZh": "又快又小的 CSS 颜色解析与转换库（npm 包 @kurkle/color），吃得下 named、transparent、hex、rgb(a)、hsl(a)、hwb、oklch 这些写法，并做色彩空间转换。",
+    "takeawayZh": "把任意 CSS 颜色串解析成对象再转格式",
+    "noteZh": "README 的 Parsing 一节把支持的写法一条条摊开：named 的 blue、transparent，hex 的 #aaa / #1A2b3c / #f1f2f388，以及 rgb(a)、hsl(a)、hwb 各自的多种写法；提交记录里最近一条是 feat: parse and serialize oklch() colors。仓库 39 star、249 个 commit、25 个 release（最新 v0.6.3），About 写的是 Fast & small css color parsing, manipulation and conversion，右侧还标着 Used by 470K。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "asset-conversion-optimization",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个颜色值的解析/序列化库，用户拿走的是转换能力而不是色板素材；词典里没有专门的色彩工具类，按「转换」归到 asset-conversion-optimization，这是本批几个色彩库统一采用的口径。",
+        "evidenceUrl": "https://github.com/kurkle/color"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:33:43.394Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "apply"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/kurkle/color",
+      "finalUrl": "https://github.com/kurkle/color",
+      "title": "GitHub - kurkle/color: Fast & small css color parsing, manupulation and conversion · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-kurkle-color/identity.jpg",
+        "sha256": "52dbe67f535a93ca70812e1412f01da3a59d58c8498fa65f34391bda5a28fc92",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139772,
+        "alt": "kurkle/color 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "supported-formats",
+      "value": "named、transparent、hex（#aaa / #1A2b3c / #f1f2f388）、rgb(a)、hsl(a)、hwb、oklch",
+      "sourceUrl": "https://github.com/kurkle/color",
+      "evidence": "README 的 Parsing 一节逐项列出",
+      "confidence": 0.9
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/kurkle/color",
+      "evidence": "README 卡片行与 About 都标了 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "Used by 470K",
+      "sourceUrl": "https://github.com/kurkle/color",
+      "evidence": "右侧边栏 Used by 区块显示 470K",
+      "confidence": 0.8
+    },
+    {
+      "field": "version",
+      "value": "v0.6.3（25 个 release）",
+      "sourceUrl": "https://github.com/kurkle/color",
+      "evidence": "右侧 Releases 区显示 25 与 v0.6.3 Latest",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-kurkle-color",
+    "designMdUrl": "https://vislexicon.com/site/github-com-kurkle-color.md",
+    "checkedAt": "2026-09-15T12:33:43.394Z",
+    "license": "MIT"
+  }
+}

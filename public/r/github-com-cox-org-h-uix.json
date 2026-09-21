@@ -1,0 +1,165 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4bc45c0eff9dac61498542d9dcaf977eaf1112abe01ae9583ed1d7ebbfcc1058",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-cox-org-h-uix",
+  "entityId": "entity-github-com-cox-org-h-uix",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/COx-ORG-H/UIx",
+    "finalUrl": "https://github.com/COx-ORG-H/UIx",
+    "checkedAt": "2026-09-15T11:53:03.440Z"
+  },
+  "editorial": {
+    "name": "COx-ORG-H/UIx",
+    "descriptionZh": "不依赖框架、免构建的企业级设计系统：design tokens 配纯 HTML + CSS 组件和一组 React primitives，另有一个可搜索的文档站。",
+    "takeawayZh": "拿 tokens 和纯 CSS 组件，React 项目再挂 primitives",
+    "noteZh": "About 一句话把定位讲完了：UIx — framework-agnostic enterprise design system with design tokens, CSS components, React primitives, and searchable documentation.，外链指向 cox-org-h.github.io/UIx/docs/，Releases 统计到 21 tags，About 里没有 license 行。README 标题是 uix-styleguide — UIx v2，自述 A framework-agnostic, build-free design system for CRM/ITSM products，小节排成 View it、Use it in a project、Brand a project (override the theme)、Tokens、Relationship to UIx v1 & versioning、Build & publish、Fonts & icons。文件树把 Docs、examples、packages、tests 分成四块，根上还留着 .project-status.json、LESSONS_LEARNED.md 和一份 UIx-v2-Comparative-Audit.docx，最近的提交都在修无障碍——keyboard-operable sortable table headers 与 axe a11y gate 那两条。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "About 自述 framework-agnostic enterprise design system，README 另说 A framework-agnostic, build-free design system for CRM/ITSM products，是完整设计系统而非单点组件。",
+        "evidenceUrl": "https://github.com/COx-ORG-H/UIx"
+      },
+      {
+        "statement": "交付面同时覆盖 tokens、CSS 组件与 React primitives 三层，并有 Brand a project 的主题覆盖说明与独立文档站。",
+        "evidenceUrl": "https://github.com/COx-ORG-H/UIx"
+      },
+      {
+        "statement": "About 面板没有 license 行、README 也未标授权，故 licenses 记 unknown 而不猜。",
+        "evidenceUrl": "https://github.com/COx-ORG-H/UIx"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:53:03.440Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "primitive"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "html",
+      "javascript",
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/COx-ORG-H/UIx",
+      "finalUrl": "https://github.com/COx-ORG-H/UIx",
+      "title": "GitHub - COx-ORG-H/UIx: UIx — framework-agnostic enterprise design system with design tokens, CSS components, React primitives, and searchable documentation. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-cox-org-h-uix/identity.jpg",
+        "sha256": "3d2406d1a975096778fd7da4971d7af2fb4cce7f5ce8137bad918954d80179d1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 153586,
+        "alt": "COx-ORG-H/UIx 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "homepage",
+      "value": "https://cox-org-h.github.io/UIx/docs/",
+      "sourceUrl": "https://github.com/COx-ORG-H/UIx",
+      "evidence": "About 面板标题下的外链文字 cox-org-h.github.io/UIx/docs/",
+      "confidence": 1
+    },
+    {
+      "field": "scope",
+      "value": "framework-agnostic、build-free、面向 CRM/ITSM",
+      "sourceUrl": "https://github.com/COx-ORG-H/UIx",
+      "evidence": "README 首段：A framework-agnostic, build-free design system for CRM/ITSM products.",
+      "confidence": 1
+    },
+    {
+      "field": "tags",
+      "value": "21 tags",
+      "sourceUrl": "https://github.com/COx-ORG-H/UIx",
+      "evidence": "About 下方 Releases 区块只写着 21 tags，没有版本条目",
+      "confidence": 1
+    },
+    {
+      "field": "a11y",
+      "value": "axe a11y gate 与 keyboard-operable sortable table headers",
+      "sourceUrl": "https://github.com/COx-ORG-H/UIx",
+      "evidence": "提交信息 test(phase2): axe a11y gate + structural a11y fixes 与 fix(a11y): keyboard-operable sortable table headers",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-cox-org-h-uix",
+    "designMdUrl": "https://vislexicon.com/site/github-com-cox-org-h-uix.md",
+    "checkedAt": "2026-09-15T11:53:03.440Z",
+    "license": "unknown"
+  }
+}

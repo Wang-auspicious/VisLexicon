@@ -1,0 +1,161 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5186b97d8a290c0c71e020b55641000d1005076480972cd60818e3e9c9693012",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-wcm-io-frontend-aem-clientlib-generator",
+  "entityId": "entity-github-com-wcm-io-frontend-aem-clientlib-generator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/wcm-io-frontend/aem-clientlib-generator",
+    "finalUrl": "https://github.com/wcm-io-frontend/aem-clientlib-generator",
+    "checkedAt": "2026-09-15T12:46:56.781Z"
+  },
+  "editorial": {
+    "name": "wcm-io-frontend/aem-clientlib-generator",
+    "descriptionZh": "给 AEM 用的 Node 插件：按一份 clientlib 配置生成 ClientLib 的仓库节点文件、建好 Client Library 文件夹，再把静态资源同步过去，支持 JSON 与 FileVault XML 两种格式。",
+    "takeawayZh": "跑一条命令，把前端资源同步成 AEM 的 ClientLib 节点",
+    "noteZh": "仓库页右栏 About 一句话写 Creates configuration files for AEM ClientLibs and synchronizes assets.，许可证标 Apache-2.0，Star 60、Fork 34，Used by 4K，Releases 31 条最新 2.0.3。README 起头说这是个 node plugin，同时支持 JSON 文件格式（默认）与 FileVault XML 格式（见 serializationFormat 参数）；用法段给出 CLI 位置 ./bin/clientlib-cli.js，不带参数跑会加载默认的 clientlib.config.js，另有 --dry、--verbose、--help、--version 四个开关。最近一次提交是把 mocha 升到 v11.8.0。",
+    "recommendation": null,
+    "pricing": "Free (Apache-2.0)",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是一个 Node CLI 插件，作用是把前端资源同步成 CMS 里的配置节点（生成仓库节点文件、建文件夹、同步 assets），属构建与交付流程上的工具。",
+        "evidenceUrl": "https://github.com/wcm-io-frontend/aem-clientlib-generator"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:46:56.781Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/wcm-io-frontend/aem-clientlib-generator",
+      "finalUrl": "https://github.com/wcm-io-frontend/aem-clientlib-generator",
+      "title": "GitHub - wcm-io-frontend/aem-clientlib-generator: Creates configuration files for AEM ClientLibs and synchronizes assets. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-wcm-io-frontend-aem-clientlib-generator/identity.jpg",
+        "sha256": "7174782029249605b3d6203270743d03d23a5a573caf1085abc684ffe74fd045",
+        "width": 1280,
+        "height": 900,
+        "bytes": 136760,
+        "alt": "wcm-io-frontend/aem-clientlib-generator 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/wcm-io-frontend/aem-clientlib-generator",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-wcm-io-frontend-aem-clientlib-generator/identity.jpg",
+          "alt": "wcm-io-frontend/aem-clientlib-generator 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/wcm-io-frontend/aem-clientlib-generator",
+      "evidence": "右侧 About 栏的 Apache-2.0 license 与 README 栏上方的同名牌",
+      "confidence": 1
+    },
+    {
+      "field": "cliOptions",
+      "value": "--help/-h、--version/-v、--dry、--verbose 四个开关",
+      "sourceUrl": "https://github.com/wcm-io-frontend/aem-clientlib-generator",
+      "evidence": "README 的 Usage 段 Options 列表",
+      "confidence": 1
+    },
+    {
+      "field": "formats",
+      "value": "支持 JSON 文件格式（默认）与 FileVault XML 两种序列化格式",
+      "sourceUrl": "https://github.com/wcm-io-frontend/aem-clientlib-generator",
+      "evidence": "README 第一段",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "Star 60、Fork 34、Used by 4K、Contributors 18，最新 release 2.0.3",
+      "sourceUrl": "https://github.com/wcm-io-frontend/aem-clientlib-generator",
+      "evidence": "仓库页顶部与右侧栏计数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-wcm-io-frontend-aem-clientlib-generator.md",
+  "registryUrl": "/r/github-com-wcm-io-frontend-aem-clientlib-generator.json"
+}

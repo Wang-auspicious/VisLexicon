@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3bb04ced90e53e3f2eb1037a190a73d8887128a7a78bd8aa32284d42c534e0a4",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-priceline-design-system",
+  "entityId": "entity-github-com-priceline-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/priceline/design-system",
+    "finalUrl": "https://github.com/priceline/design-system",
+    "checkedAt": "2026-09-15T12:02:55.845Z"
+  },
+  "editorial": {
+    "name": "priceline/design-system",
+    "descriptionZh": "Priceline 自家的设计系统仓库，用 Rush 管 monorepo，README 的安装命令是 npm install pcln-design-system。文档只有一句指向 Storybook，贡献说明则把外部读者引向 Priceline 内部的 Slack 频道。",
+    "takeawayZh": "拿 Priceline 的组件包，文档在 Storybook",
+    "noteZh": "About 一行 Priceline.com Design System，网站是 priceline.github.io/design-system，下面挂 components、css、css-in-js、design-system、design-systems、javascript、priceline、react、styled-components、styled-system、ui 这些 topic。README 分 Contributing、Documentation、Motivation、Goals 四节，Documentation 一段只把读者送去 Storybook，Contributing 里写如果你在 Priceline 工作就去 #design-system Slack 频道。文件树里 packages、apps、common、tools、heft-plugins、rigs/component、codemods/icons-v2-to-v3 并列，根上摆着 rush.json、biome.json、COMPONENT_GUIDANCE.md、ANNOUNCING_V4.md 和 MIGRATION_GUIDES 目录；README 标题行标 MIT license，Releases 1,412 个，最新 pcln-icons_v7.0.1，Star 727。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述 Priceline.com Design System，用 Rush 管 monorepo、packages 下按包分发，还专门放了 COMPONENT_GUIDANCE.md 与 MIGRATION_GUIDES 两份治理文档，属设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/priceline/design-system"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:55.845Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/priceline/design-system",
+      "finalUrl": "https://github.com/priceline/design-system",
+      "title": "GitHub - priceline/design-system: Priceline.com Design System · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-priceline-design-system/identity.jpg",
+        "sha256": "8d8d1e574fcf9be52a68b87a5ee1e4845d019fa671ad7ca0022968735af54310",
+        "width": 1280,
+        "height": 900,
+        "bytes": 145001,
+        "alt": "priceline/design-system 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/priceline/design-system",
+      "evidence": "README 标题行的 MIT license 与右侧 About 栏的 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "installCommand",
+      "value": "npm install pcln-design-system",
+      "sourceUrl": "https://github.com/priceline/design-system",
+      "evidence": "README 标题下紧接的一行安装命令",
+      "confidence": 1
+    },
+    {
+      "field": "monorepoLayout",
+      "value": "packages、apps、common、tools、heft-plugins、rigs/component、codemods/icons-v2-to-v3，根上 rush.json 与 biome.json",
+      "sourceUrl": "https://github.com/priceline/design-system",
+      "evidence": "Folders and files 列表的目录名与根文件名",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "components、css、css-in-js、design-system、design-systems、javascript、priceline、react、styled-components、styled-system、ui",
+      "sourceUrl": "https://github.com/priceline/design-system",
+      "evidence": "About 栏下的 topic 标签",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "2,595 Commits、146 Branches、1,881 Tags、Releases 1,412 个、Star 727、Contributors 118",
+      "sourceUrl": "https://github.com/priceline/design-system",
+      "evidence": "Code 页头部计数与右侧 About、Releases、Contributors 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-priceline-design-system",
+    "designMdUrl": "https://vislexicon.com/site/github-com-priceline-design-system.md",
+    "checkedAt": "2026-09-15T12:02:55.845Z",
+    "license": "MIT"
+  }
+}

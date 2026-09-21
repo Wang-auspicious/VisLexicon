@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4f57cd605585256ee966c0ee8f4ebd221e2395d5e39b7b026cc75a7ef3a857fa",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-lifinance-widget",
+  "entityId": "entity-github-com-lifinance-widget",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/lifinance/widget",
+    "finalUrl": "https://github.com/lifinance/widget",
+    "checkedAt": "2026-09-15T11:45:01.222Z"
+  },
+  "editorial": {
+    "name": "lifinance/widget",
+    "descriptionZh": "LI.FI 的跨链桥与兑换挂件，一个能嵌进 dapp 的 React 组件。除 EVM 外还支持 Bitcoin/UTXO、Solana 与 Stellar，checkout 模式可以做入金与钱包充值。",
+    "takeawayZh": "给 dapp 嵌一个 React 挂件做跨链兑换",
+    "noteZh": "README 标题 LI.FI Widget，About 栏一句 LI.FI Widget for cross-chain bridging and swapping.，标签铺了 bridge、bridge-aggregation、cross-chain、cross-chain-bridge、cross-chain-swap、dapp、defi、ethereum、lifi、react、solana、ui、viem、wagmi、web3、widget 一长排。仓库有 37 个分支、506 个 tag、2,389 次提交，最新提交在修粘贴合约地址时的匹配逻辑，再往前是 add Stellar (STL) wallet support 与 add Bitcoin/UTXO support。分节从 Installation、Architecture 排到 Examples、Documentation 与 Contributing Translations。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个完整可嵌的兑换与跨链挂件（widget），不是单个原子组件也不是整站模板，正好落在可嵌入复合控件这一格；候选池给的 Tailwind 组件标签在页面上找不到对应物。",
+        "evidenceUrl": "https://github.com/lifinance/widget"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:45:01.222Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [
+      "component",
+      "block",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/lifinance/widget",
+      "finalUrl": "https://github.com/lifinance/widget",
+      "title": "GitHub - lifinance/widget: LI.FI Widget for cross-chain bridging and swapping. It will drive your multi-chain strategy and attract new users from everywhere. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-lifinance-widget/identity.jpg",
+        "sha256": "e104a57fef759bff535aaf0486f484db67f58ba528b8f1a7d6724a34275b9363",
+        "width": 1280,
+        "height": 900,
+        "bytes": 143446,
+        "alt": "lifinance/widget 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/lifinance/widget",
+      "evidence": "README 区与 About 栏都写 Apache-2.0 license，文件列表里有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "chain_support",
+      "value": "除 EVM 外覆盖 Bitcoin/UTXO、Solana 与 Stellar（STL）",
+      "sourceUrl": "https://github.com/lifinance/widget",
+      "evidence": "提交信息 feat: add Bitcoin/UTXO support (#297)、feat: add Stellar (STL) wallet support (#827)，About 标签里有 solana",
+      "confidence": 1
+    },
+    {
+      "field": "checkout_mode",
+      "value": "widget-checkout 提供 checkout 模式，做 on-ramp、deposit 与 wallet funding",
+      "sourceUrl": "https://github.com/lifinance/widget",
+      "evidence": "提交信息 feat(widget-checkout): checkout mode — on-ramp, deposit & wallet fund…",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-lifinance-widget",
+    "designMdUrl": "https://vislexicon.com/site/github-com-lifinance-widget.md",
+    "checkedAt": "2026-09-15T11:45:01.222Z",
+    "license": "Apache-2.0"
+  }
+}

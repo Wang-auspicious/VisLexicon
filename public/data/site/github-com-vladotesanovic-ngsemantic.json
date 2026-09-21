@@ -1,0 +1,174 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d2cee1465df90a3fc30af5d77ce888683905d9d839078a501de8b015faf2a6dd",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-vladotesanovic-ngsemantic",
+  "entityId": "entity-github-com-vladotesanovic-ngsemantic",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/vladotesanovic/ngSemantic",
+    "finalUrl": "https://github.com/vladotesanovic/ngSemantic",
+    "checkedAt": "2026-09-15T12:02:09.368Z"
+  },
+  "editorial": {
+    "name": "vladotesanovic/ngSemantic",
+    "descriptionZh": "把 Semantic UI 的样式包成 Angular 2 指令的仓库，模板里写 sm-segment 这类标签就能出效果。README 要求自己下载 Semantic UI 的 css 与 js、再连同 jQuery 一起塞进 angular-cli.json，最后一次提交已是十年前。",
+    "takeawayZh": "用 sm- 前缀标签直接套 Semantic UI 样式",
+    "noteZh": "仓库首页顶部是 vladotesanovic / ngSemantic，About 栏一句话 Angular 2 building blocks based on Semantic UI，下面链到 ng-semantic.herokuapp.com 的 live demo，963 stars / 144 forks / 14 位贡献者，Languages 条显示 TypeScript 61.1% 与 JavaScript 31.2%。README 里 Installation 一行是 npm install ng-semantic --save，Angular CLI configuration ( Webpack ) 一段要求先用 npm 装 jQuery、再从 Semantic-Org 下官方 Semantic UI 压缩包，把 semantic.min.css、semantic.min.js 与 jquery 的路径写进 angular-cli.json 的 styles 和 scripts 数组；Use 一段给的模板是 sm-segment 标签，内容 Hello。Releases 栏写着 No releases published，文件列表里 package.json 停在 1.1.13，最新一次提交在 10 年前。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一组 Angular 指令/组件（sm-segment、sm-contextmenu 等），用户 npm 装完在模板里写标签，属于界面组件库；它自己不做设计语言，样式来自第三方 Semantic UI，所以小类用通用界面组件。",
+        "evidenceUrl": "https://github.com/vladotesanovic/ngSemantic"
+      },
+      {
+        "statement": "About 栏自述 Angular 2 building blocks based on Semantic UI，README 的 Use 段落直接示范模板标签写法，拿走的是组件代码而非素材或模板。",
+        "evidenceUrl": "https://github.com/vladotesanovic/ngSemantic"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:09.368Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/vladotesanovic/ngSemantic",
+      "finalUrl": "https://github.com/vladotesanovic/ngSemantic",
+      "title": "GitHub - vladotesanovic/ngSemantic: Angular 2 building blocks based on Semantic UI · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-vladotesanovic-ngsemantic/identity.jpg",
+        "sha256": "418f6e14252f4bcbb17310eee2098a517054ed33629d6df8d8d7b1c798ae9ea4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 133231,
+        "alt": "vladotesanovic/ngSemantic 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/vladotesanovic/ngSemantic",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-vladotesanovic-ngsemantic/identity.jpg",
+          "alt": "vladotesanovic/ngSemantic 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/vladotesanovic/ngSemantic",
+      "evidence": "About 栏的 MIT license 一行，LICENCE 文件也在仓库根目录",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install ng-semantic --save，另需自行下载 Semantic UI 的 semantic.min.css 与 semantic.min.js 和 jQuery",
+      "sourceUrl": "https://github.com/vladotesanovic/ngSemantic",
+      "evidence": "README 的 Installation 与 Angular CLI configuration ( Webpack ) 两段",
+      "confidence": 1
+    },
+    {
+      "field": "activity",
+      "value": "963 stars、144 forks、14 位贡献者、341 次提交，Releases 为 No releases published，最后一次提交约 10 年前",
+      "sourceUrl": "https://github.com/vladotesanovic/ngSemantic",
+      "evidence": "仓库首页的星标/分支计数、Contributors 栏、Releases 栏与文件列表里的提交时间",
+      "confidence": 1
+    },
+    {
+      "field": "demo",
+      "value": "ng-semantic.herokuapp.com",
+      "sourceUrl": "https://github.com/vladotesanovic/ngSemantic",
+      "evidence": "About 栏外链与 README 的 Live demo 一行",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-vladotesanovic-ngsemantic.md",
+  "registryUrl": "/r/github-com-vladotesanovic-ngsemantic.json"
+}

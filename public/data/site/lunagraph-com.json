@@ -1,0 +1,172 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "31842184cc98318ca122ad5799087597b8698ca8bb9331bcf0495f60a78950be",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "lunagraph-com",
+  "entityId": "entity-lunagraph-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "lunagraph.com",
+  "official": {
+    "inputUrl": "https://lunagraph.com",
+    "finalUrl": "https://www.lunagraph.com/",
+    "checkedAt": "2026-09-15T10:33:27.857Z"
+  },
+  "editorial": {
+    "name": "Lunagraph",
+    "descriptionZh": "一块会写代码的设计画布：界面用真实 HTML / CSS / React 写，状态、交互和流程都在画布里做，交付时直接把 React 代码交给工程或编码 agent。",
+    "takeawayZh": "在画布里做带状态的 React 组件，导出代码交给工程",
+    "noteZh": "首屏标题下面压着一张月球表面的球形图，中间浮着 {code, visually}，主标题是 Design with code, on your familiar design canvas，按钮给 Download app 与 Docs。截图里那张应用界面能看清结构：左栏项目名 Shadcn Project 配 Pages / Assets / Agents 三个标签，页面树是 Getting Started、Onboarding、Settings，右侧检查器分 Styles / Props / Code，Position 选 Static、圆角 12px；示例组件 BurnPlanCard 带 ready、confirm、burning、complete 四个状态。正文还有一段 Bring your own agent and subscription，直接点名 Claude Code、Codex、Cursor 和 MCP。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "ui-prototyping-whiteboard",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "主体是一块设计画布（A full-featured canvas. Draw the screens, tune the styles, see the whole flow at once），用户在上面画屏、调样式、做交互，属 UI 设计与原型工具。",
+        "evidenceUrl": "https://www.lunagraph.com/"
+      },
+      {
+        "statement": "交付物虽是 React 代码，但入口动作是 design 而非安装或构建：页面把 Design, refine, deliver as code 串成一条设计流程，故归创作工具而非构建部署。",
+        "evidenceUrl": "https://www.lunagraph.com/docs"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:33:27.857Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "design-file"
+    ],
+    "actions": [
+      "prototype",
+      "edit",
+      "export",
+      "preview",
+      "download",
+      "collaborate"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "desktop",
+      "mcp"
+    ],
+    "technologies": [
+      "react",
+      "html",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "handoff",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://lunagraph.com",
+      "finalUrl": "https://www.lunagraph.com/",
+      "title": "Lunagraph: Design canvas that writes code, powered by Claude Code",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/lunagraph-com/identity.jpg",
+        "sha256": "bf8729813f7442c2523d0e995999f5da9a0fb47de7780a86a3f13a8db9f455f9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 83817,
+        "alt": "Lunagraph 首屏：{code, visually}"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://lunagraph.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/lunagraph-com/identity.jpg",
+          "alt": "Lunagraph 首屏：{code, visually}",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "code-output",
+      "value": "输出真实 HTML / CSS / React 代码，覆盖 states、interactions、flows",
+      "sourceUrl": "https://www.lunagraph.com/",
+      "evidence": "首屏副标题与页面 meta description 里的 using real HTML, CSS and React code",
+      "confidence": 1
+    },
+    {
+      "field": "agent-integration",
+      "value": "支持接入 Claude Code、Codex、Cursor，并提供 MCP",
+      "sourceUrl": "https://www.lunagraph.com/",
+      "evidence": "Bring your own agent and subscription 一段的四个入口",
+      "confidence": 1
+    },
+    {
+      "field": "release-state",
+      "value": "提供下载，站内路径显示仍是 alpha 版",
+      "sourceUrl": "https://www.lunagraph.com/docs/download-alpha",
+      "evidence": "导航 Download app 与站内 /docs/download-alpha 路径",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/lunagraph-com.md",
+  "registryUrl": "/r/lunagraph-com.json"
+}

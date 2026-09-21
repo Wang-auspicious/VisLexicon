@@ -1,0 +1,186 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9d8fa13ca7df94feb6747ef6da44774dae3aa14d81b89afb36b0aef1b23d2809",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "yamada-ui-com",
+  "entityId": "entity-yamada-ui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "yamada-ui.com",
+  "official": {
+    "inputUrl": "https://yamada-ui.com",
+    "finalUrl": "https://yamada-ui.com/",
+    "checkedAt": "2026-09-15T11:55:21.158Z"
+  },
+  "editorial": {
+    "name": "Yamada UI",
+    "descriptionZh": "一套 React 组件库，组件之外还把 Icons、Themes、Colors 拉成一级入口，首页直接摆可交互的实例卡片。",
+    "takeawayZh": "从 Mail、Authentication 示例页直接抄组件组合",
+    "noteZh": "首屏居中一行 Unleash the Power of Components，下面一排文字链 Examples / Mail / Playground / Forms / Music / Authentication，再往下是一墙真跑起来的示例卡片：左上 Payment Method 把 Name on Card、Card number、CVV、Month、Year 排成支付表单，中间是 Hirotomo Yamada 的个人卡片（818 Following、530,000 Followers、Follow 按钮），右边一张 Processing your request 转圈卡和一张 Appearance 卡（一排 Accent 色块加 Dark Mode 开关）。导航条另列 Docs / Icons / Themes / Colors 与 Ctrl K 搜索。页尾 Q&A 自己回答 What is Yamada UI? — Yamada UI is a component library for building web applications.，Roadmap 记着 Version 1.0.0（2023-12-25）与 Version 2.0.0（2025-10-17）两站。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点 description 自称 Provides a design system that delivers beautiful, consistent, accessible components and advanced styling，导航把 Icons、Themes、Colors 与组件并列成一级入口，交付的是组件加图标加主题 token 的整套，故归 design-system-suites。",
+        "evidenceUrl": "https://yamada-ui.com/"
+      },
+      {
+        "statement": "需要说明的分歧：页尾 Q&A 又自称 component library，两处口径不一致；选 design-system-suites 是因为 Icons、Themes、Colors 三个独立板块只有成套的设计系统才会单列。",
+        "evidenceUrl": "https://yamada-ui.com/themes"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:21.158Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library",
+      "icon"
+    ],
+    "actions": [
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://yamada-ui.com",
+      "finalUrl": "https://yamada-ui.com/",
+      "title": "Yamada UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/yamada-ui-com/identity.jpg",
+        "sha256": "176dc014aceb88872b7122815039f17ae3e6762e4682f77ed454fd374af178f9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 94989,
+        "alt": "Yamada UI 首屏：Unleash the Power of Components"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://yamada-ui.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/yamada-ui-com/identity.jpg",
+          "alt": "Yamada UI 首屏：Unleash the Power of Components",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "heroClaim",
+      "value": "Unleash the Power of Components",
+      "sourceUrl": "https://yamada-ui.com/",
+      "evidence": "首屏 h1，截图与 live.heads 第一条同文",
+      "confidence": 1
+    },
+    {
+      "field": "examples",
+      "value": "示例区列出 Mail、Playground、Forms、Music、Authentication 五个页面",
+      "sourceUrl": "https://yamada-ui.com/examples",
+      "evidence": "首屏文字链 Examples 后跟的五项，与 live.internalPaths 的 /examples/mail、/examples/playground、/examples/forms、/examples/music、/examples/authentication 一致（五项，逐条数过）",
+      "confidence": 1
+    },
+    {
+      "field": "roadmap",
+      "value": "Version 1.0.0 发布于 2023-12-25；Version 2.0.0 发布于 2025-10-17",
+      "sourceUrl": "https://yamada-ui.com/",
+      "evidence": "页尾 Roadmap 一节的两行",
+      "confidence": 1
+    },
+    {
+      "field": "faq",
+      "value": "What is Yamada UI? — Yamada UI is a component library for building web applications.",
+      "sourceUrl": "https://yamada-ui.com/",
+      "evidence": "页尾 Q&A 第一条问答",
+      "confidence": 1
+    },
+    {
+      "field": "author",
+      "value": "作者 Hirotomo Yamada（@hirotomoyamada），卡片显示 818 Following / 530,000 Followers",
+      "sourceUrl": "https://yamada-ui.com/",
+      "evidence": "首屏示例区中间的个人卡片，截图可读",
+      "confidence": 1
+    },
+    {
+      "field": "techStack",
+      "value": "首屏与正文没有出现框架名，technologies 留空",
+      "sourceUrl": "https://yamada-ui.com/",
+      "evidence": "全文只写 component library for building web applications；作者简介里出现的 Next.js、Chakra UI 等是作者履历，不当作本库技术栈",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/yamada-ui-com.md",
+  "registryUrl": "/r/yamada-ui-com.json"
+}

@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "de626981cba4070d00ce05c4021146bf8a119309d625199033ba468a4df73df1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mths-be-cssesc",
+  "entityId": "entity-mths-be-cssesc",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://mths.be/cssesc",
+    "finalUrl": "https://github.com/mathiasbynens/cssesc",
+    "checkedAt": "2026-09-15T11:57:23.432Z"
+  },
+  "editorial": {
+    "name": "mathiasbynens/cssesc",
+    "descriptionZh": "转义 CSS 字符串和标识符的 JS 库，目标是输出尽量短的纯 ASCII。mths.be/cssesc 会跳到这个仓库，README 说明它比 CSS.escape() 强得多，polyfill 在另一个仓库。",
+    "takeawayZh": "把任意字符转成最短的 CSS 安全写法",
+    "noteZh": "README 把接入方式并排列出：npm install cssesc、浏览器里 script 引 cssesc.js、Node 里 const cssesc = require('cssesc')、Ruby 用 ruby-cssesc gem、Sass 用 sassy-escape 插件，并提示想找 CSS.escape() 的 polyfill 另有仓库。API 一节只讲 cssesc(value, options) 一个函数，正文里挂了一个 online demo 的链接。右侧 About 写 A JavaScript library for escaping CSS strings and identifiers while generating the shortest possible ASCII-only output，Used by 26M、Stars 176，最新 release v1.0.0 标着 10 年前。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 npm 包（cssesc.js 加 bin 目录，另有在线 demo），用于在生成 CSS 时转义字符串与标识符，属开发工具依赖；页面上没有任何界面组件或样式主题。",
+        "evidenceUrl": "https://github.com/mathiasbynens/cssesc"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:23.432Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mths.be/cssesc",
+      "finalUrl": "https://github.com/mathiasbynens/cssesc",
+      "title": "GitHub - mathiasbynens/cssesc: A JavaScript library for escaping CSS strings and identifiers while generating the shortest possible ASCII-only output. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/mths-be-cssesc/identity.jpg",
+        "sha256": "4f33ffba4b08b3290142cba91edf9b159e4b4fadd6dae0e13dcd3e53293176a9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 132279,
+        "alt": "mathiasbynens/cssesc 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/mathiasbynens/cssesc",
+      "evidence": "右侧 About 的 MIT license、README 的 MIT license 行与仓库里的 LICENSE-MIT.txt",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "cssesc(value, options)",
+      "sourceUrl": "https://github.com/mathiasbynens/cssesc",
+      "evidence": "README API 一节，说明它把非可打印 ASCII 字符用最短写法转义",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install cssesc；也可浏览器 script 引入；另有 ruby-cssesc 与 sassy-escape",
+      "sourceUrl": "https://github.com/mathiasbynens/cssesc",
+      "evidence": "README Installation 一节按 npm、浏览器、Node、Ruby、Sass 分行列出",
+      "confidence": 1
+    },
+    {
+      "field": "relation",
+      "value": "比 CSS.escape() 强，polyfill 在另一个仓库",
+      "sourceUrl": "https://github.com/mathiasbynens/cssesc",
+      "evidence": "README 首段括号说明 In comparison, cssesc is much more powerful.",
+      "confidence": 0.9
+    },
+    {
+      "field": "scale",
+      "value": "Used by 26M、Stars 176",
+      "sourceUrl": "https://github.com/mathiasbynens/cssesc",
+      "evidence": "右侧 About 的 Used by 26M 面板与仓库头部 Star 176",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/mathiasbynens/cssesc",
+      "evidence": "公开 npm 包，无付费入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/mths-be-cssesc",
+    "designMdUrl": "https://vislexicon.com/site/mths-be-cssesc.md",
+    "checkedAt": "2026-09-15T11:57:23.432Z",
+    "license": "MIT"
+  }
+}

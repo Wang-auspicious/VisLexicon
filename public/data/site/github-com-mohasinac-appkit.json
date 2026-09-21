@@ -1,0 +1,167 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "395372c0c9903e263adddfadc14096157305dfaf559f94e7b38629f841988220",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-mohasinac-appkit",
+  "entityId": "entity-github-com-mohasinac-appkit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/mohasinac/appkit",
+    "finalUrl": "https://github.com/mohasinac/appkit",
+    "checkedAt": "2026-09-15T11:46:30.968Z"
+  },
+  "editorial": {
+    "name": "mohasinac/appkit",
+    "descriptionZh": "@mohasinac/appkit 把作者散落的 @mohasinac/* 包合并成一个带子路径导出的包：/react 给 Hooks，/ui 给 Section、Button、DataTable 这些界面组件，另外还有 /contracts、/core、/http、/security、/seo、/monitoring 等工程模块。",
+    "takeawayZh": "一个包装下 tokens、Hooks 与 UI 组件。",
+    "noteZh": "README 用一张表格逐条列子路径导出：/core 是 Logger、Queue、CacheManager、EventBus、StorageManager，/validation 是 Zod schemas，/tokens 是 COLORS、SPACING、BREAKPOINTS，/react 是 useMediaQuery、useBreakpoint、useClickOutside，/ui 是 Section、Heading、Text、Button、Badge、Spinner、DataTable。仓库 About 明写 No description, website, or topics provided，只有 15 次提交、1 位贡献者，根目录没有 LICENSE 文件。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "子路径里 /ui 与 /react 给的是可安装的界面组件与 Hooks，devDependencies 之外的收益主要在界面层，故归通用界面组件库；但整包同时囊括日志、缓存、鉴权、SEO 等非界面模块，这个归类有不确定性。",
+        "evidenceUrl": "https://github.com/mohasinac/appkit"
+      },
+      {
+        "statement": "根目录没有 LICENSE 文件、About 侧栏也不显示许可证，因此许可证写 unknown，访问性质按源码可读但未授予许可记为 source-available。",
+        "evidenceUrl": "https://github.com/mohasinac/appkit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:30.968Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "source-available"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/mohasinac/appkit",
+      "finalUrl": "https://github.com/mohasinac/appkit",
+      "title": "GitHub - mohasinac/appkit · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-mohasinac-appkit/identity.jpg",
+        "sha256": "fe28951d31080e08bc2e498a32f8b268d077723da78178828596b0903e3ef31f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127752,
+        "alt": "mohasinac/appkit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/mohasinac/appkit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-mohasinac-appkit/identity.jpg",
+          "alt": "mohasinac/appkit 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "subPathExports",
+      "value": "contracts、core、http、errors、utils、validation、tokens、next、react、ui、security、seo、monitoring",
+      "sourceUrl": "https://github.com/mohasinac/appkit",
+      "evidence": "README 的 Sub-path exports 表格",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install @mohasinac/appkit",
+      "sourceUrl": "https://github.com/mohasinac/appkit",
+      "evidence": "README Installation 一节",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown（仓库根目录无 LICENSE，About 未标许可证）",
+      "sourceUrl": "https://github.com/mohasinac/appkit",
+      "evidence": "文件列表只有 scripts、src、README.md、package.json、tsconfig.json、tsup.config.ts 等，无 LICENSE",
+      "confidence": 0.9
+    },
+    {
+      "field": "repoScale",
+      "value": "15 Commits、4 Branches、0 Tags、1 Contributor",
+      "sourceUrl": "https://github.com/mohasinac/appkit",
+      "evidence": "仓库头部与 About 侧栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-mohasinac-appkit.md",
+  "registryUrl": "/r/github-com-mohasinac-appkit.json"
+}

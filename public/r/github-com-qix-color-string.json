@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a338f1cadc0e72b7c365e1594de1c34b508bd55ad16169093aecb1ae7d9d4300",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-qix-color-string",
+  "entityId": "entity-github-com-qix-color-string",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/Qix-/color-string",
+    "finalUrl": "https://github.com/Qix-/color-string",
+    "checkedAt": "2026-09-15T12:52:17.761Z"
+  },
+  "editorial": {
+    "name": "Qix-/color-string",
+    "descriptionZh": "解析与生成 CSS 颜色字符串的 JS 库：colorString.get('#FFF') 或 get('hwb(60, 3%, 60%)') 会返回 {model, value} 形式的结构，get.rgb() / get.hsl() 则直接给出数值数组。",
+    "takeawayZh": "把 hex、rgb、hsl、hwb 各种写法读成数值数组",
+    "noteZh": "About 栏的一句话是 Parser and generator for CSS color strings，README 的 Install 只有 npm install color-string 一行，Usage 里连排着 get('#FFF') 返回 [255,255,255,1]、get('#FFFA') 把 alpha 压到 0.67、get('hwb(60, 3%, 60%)') 这类示例，之后才是 get.rgb()、get.hsl() 的快捷写法。文件区里 index.js、index.d.ts、test.js 是主体，最新一次提交在把包迁到 ESM 并拿掉 swizzle。右侧挂 MIT license 标签，master 2 Branches / 32 Tags，Releases 停在 2.1.4，Used by 11M，Contributors 30。",
+    "recommendation": null,
+    "pricing": "Free, MIT licensed",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可 npm install 的颜色字符串解析函数库，README 的 Install 与 Usage 直接给调用与返回值，属于写进前端代码的通用实现层库。",
+        "evidenceUrl": "https://github.com/Qix-/color-string"
+      },
+      {
+        "statement": "About 栏定位为 Parser and generator for CSS color strings，处理的是界面里出现的 CSS 颜色写法，不产出素材或页面模板，因此不归素材类或模板类。",
+        "evidenceUrl": "https://github.com/Qix-/color-string"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:52:17.761Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Qix-/color-string",
+      "finalUrl": "https://github.com/Qix-/color-string",
+      "title": "GitHub - Qix-/color-string: Parser and generator for CSS color strings · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-qix-color-string/identity.jpg",
+        "sha256": "49c8dba3afe0006213e3ca0ef6060208bc12e4d00df27d5fecc6f2b1b5aa5619",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117832,
+        "alt": "Qix-/color-string 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/Qix-/color-string",
+      "evidence": "右侧 About 区的 MIT license 标签、文件列表中的 LICENSE 条目，以及 README 区块标题旁的 MIT license。",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "get('#FFF') → {model: 'rgb', value: [255, 255, 255, 1]}；支持 hwb、hsl、rgba 空格写法与百分比 alpha",
+      "sourceUrl": "https://github.com/Qix-/color-string",
+      "evidence": "README Usage 一节连排的调用与注释返回值。",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "Latest release 2.1.4（共 19 个 release）；Used by 11M；221 stars / 75 forks；Contributors 30",
+      "sourceUrl": "https://github.com/Qix-/color-string",
+      "evidence": "首屏右侧 About 与 Releases 区、星标按钮，以及首屏截图里 Used by 11M 的计数。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-qix-color-string",
+    "designMdUrl": "https://vislexicon.com/site/github-com-qix-color-string.md",
+    "checkedAt": "2026-09-15T12:52:17.761Z",
+    "license": "MIT"
+  }
+}

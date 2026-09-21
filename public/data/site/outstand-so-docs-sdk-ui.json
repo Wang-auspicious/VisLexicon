@@ -1,0 +1,186 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c7ae7cc80010709e0e68b7a00a46a9dd55b8cb77bbe0703aae3b2a91d552588c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "outstand-so-docs-sdk-ui",
+  "entityId": "entity-outstand-so-docs-sdk-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "outstand.so",
+  "official": {
+    "inputUrl": "https://outstand.so/docs/sdk/ui",
+    "finalUrl": "https://www.outstand.so/docs/sdk/ui",
+    "checkedAt": "2026-09-15T11:47:50.665Z"
+  },
+  "editorial": {
+    "name": "@outstand-so/ui",
+    "descriptionZh": "Outstand 社交发布 API 的 React 组件库文档：账号连接、发帖、媒体上传、数据分析都做成了现成组件和 hooks，接进自己的 React app 就能拼出社交媒体管理界面。",
+    "takeawayZh": "用现成组件拼一个社交媒体管理后台界面",
+    "noteZh": "这是一个三栏文档页。左栏按 Social Networks、Posts、Media、Social Accounts 分组把 API 端点全列出来，每条后面跟 POST/GET/PATCH/DELETE 标签，例如 Connect a new social network、Create a post、Publish a comment、Get account metrics。中栏正文标题 React UI Components，一句 @outstand-so/ui is a React component library that provides pre-built UI components and hooks，下面并排给出 npm install @outstand-so/ui、yarn add、pnpm add 三条安装命令。右栏 On this page 把组件按 Account Management（ConnectAccountButton、AccountsList、AccountCard）、Post Creation（CreatePostForm、PostComposer、PostScheduler）、Media Management（MediaUploader、MediaGallery）、Analytics（PostMetrics、PostsWithMetrics）分类列全，另有 Hooks 与 TypeScript Types 两节。整页没有一张图。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一组可按组件与 hooks 引用的 React 界面件，用户拿走的方式是安装 npm 包再拼进自己的应用，归通用界面组件库。",
+        "evidenceUrl": "https://www.outstand.so/docs/sdk/ui"
+      },
+      {
+        "statement": "候选池把这条收在 UI 组件类下，页面本身也自称 React component library，进一步确认不是文档阅读类内容。",
+        "evidenceUrl": "https://www.outstand.so/docs/sdk/ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:50.665Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "marketing",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://outstand.so/docs/sdk/ui",
+      "finalUrl": "https://www.outstand.so/docs/sdk/ui",
+      "title": "React UI Components | Outstand Docs",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/outstand-so-docs-sdk-ui/identity.jpg",
+        "sha256": "5f3192dda939f33d3cd88a724c6ca9ba8a85165d710286f2ee569b8f182f72e0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117372,
+        "alt": "@outstand-so/ui 首屏：React UI Components"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://outstand.so/docs/sdk/ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/outstand-so-docs-sdk-ui/identity.jpg",
+          "alt": "@outstand-so/ui 首屏：React UI Components",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "packageName",
+      "value": "@outstand-so/ui，可用 npm / yarn / pnpm 安装",
+      "sourceUrl": "https://www.outstand.so/docs/sdk/ui",
+      "evidence": "Installation 一节并排给出三条命令：npm install @outstand-so/ui、yarn add @outstand-so/ui、pnpm add @outstand-so/ui。",
+      "confidence": 1
+    },
+    {
+      "field": "purpose",
+      "value": "把 Outstand 社交媒体 API 封装成现成的 React 组件与 hooks",
+      "sourceUrl": "https://www.outstand.so/docs/sdk/ui",
+      "evidence": "正文写「a library of prebuilt social media components and hooks」，并说明覆盖 account management, post creation, media uploads, and analytics 四类场景。",
+      "confidence": 1
+    },
+    {
+      "field": "componentGroups",
+      "value": "组件按 Account Management、Post Creation、Media Management、Analytics 四组列出",
+      "sourceUrl": "https://www.outstand.so/docs/sdk/ui",
+      "evidence": "右栏 On this page 的分组标题与组内条目，如 CreatePostForm、PostComposer、MediaUploader、PostMetricsCard。",
+      "confidence": 1
+    },
+    {
+      "field": "apiSurface",
+      "value": "文档同时覆盖 Posts、Media、Social Accounts 等 REST 端点",
+      "sourceUrl": "https://www.outstand.so/docs/sdk/ui",
+      "evidence": "左栏文档导航列出 Create a post POST、Get post analytics GET、Confirm upload POST、List connected social accounts GET 等条目。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://www.outstand.so/docs/sdk/ui",
+      "evidence": "本页只有 Installation、Getting Started、Components、Hooks、TypeScript Types、Examples、Learn More 七节，未提及许可证，故记 unknown。",
+      "confidence": 0.5
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/outstand-so-docs-sdk-ui.md",
+  "registryUrl": "/r/outstand-so-docs-sdk-ui.json"
+}

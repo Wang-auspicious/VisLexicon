@@ -1,0 +1,179 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f927047825e93dd90a8f3054a1bc88ae3b578be157fd68fa01cc6f9953572e4a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "developer-dynatrace-com-design-components-preview",
+  "entityId": "entity-developer-dynatrace-com-design-components-preview",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "developer.dynatrace.com",
+  "official": {
+    "inputUrl": "https://developer.dynatrace.com/design/components-preview",
+    "finalUrl": "https://developer.dynatrace.com/design/components/",
+    "checkedAt": "2026-09-15T11:40:47.591Z"
+  },
+  "editorial": {
+    "name": "Strato Design System: Components",
+    "descriptionZh": "Dynatrace Strato 设计系统的组件索引页，按 Buttons、Content、Core、Editors、Filters、Forms、Layouts、Navigation、Notifications、Overlays、Tables、Typography 分组列出可用的 React 组件。",
+    "takeawayZh": "按分组查 Strato 的 React 组件名与用法。",
+    "noteZh": "左侧导航从 Home、What's new、Get started、Plan 一路到 Design 展开，Design 下面是 About Strato Design System、Strato versioning、Foundations、Design tokens、Components、Data visualizations、Icons、Patterns。Components 页正文一句话说 Strato 是可复用的 React 组件，用来搭 Dynatrace 应用，要配合 Foundations 与 Patterns 的用法指引；下面按分组给出带真实控件的卡片，Buttons 组有 Button、IntentButton、NotifyButton、RunQueryButton 四张。正文还把完整名单列了一遍，Content 组能看到 AiLoadingIndicator、AiResponse、CodeSnippet、EmptyState、ExpandableText、HealthIndicator、KeyboardShortcut、Microguide、TerminologyOverlay，Core 组是 AppRoot、FocusScope、OverlayContainer 加一批 useBreakpointProps、useFocusRing、useRovingFocus 之类的 hook，Editors 组有 CodeEditor 和 DQLEditor。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是设计系统里成套的 React 组件及其用法指引，用户拿走组件接进 Dynatrace 应用，因此归 ui-implementation 下的 design-system-suites。",
+        "evidenceUrl": "https://developer.dynatrace.com/design/components/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:40:47.591Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://developer.dynatrace.com/design/components-preview",
+      "finalUrl": "https://developer.dynatrace.com/design/components/",
+      "title": "Components | Dynatrace Developer",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/developer-dynatrace-com-design-components-preview/identity.jpg",
+        "sha256": "f0080e53c0e0665e21058ecef3089b549c00f6845513d3b3d42f4c213a1d70ae",
+        "width": 1280,
+        "height": 900,
+        "bytes": 76307,
+        "alt": "Strato Design System: Components 首屏：Components"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://developer.dynatrace.com/design/components-preview",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/developer-dynatrace-com-design-components-preview/identity.jpg",
+          "alt": "Strato Design System: Components 首屏：Components",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "framework",
+      "value": "React",
+      "sourceUrl": "https://developer.dynatrace.com/design/components/",
+      "evidence": "正文一句 Strato's reusable React components help you build beautiful and powerful Dynatrace apps efficiently.",
+      "confidence": 1
+    },
+    {
+      "field": "groups",
+      "value": "Buttons, Content, Core, Editors, Filters, Forms, Layouts, Navigation, Notifications, Overlays, Tables, Typography",
+      "sourceUrl": "https://developer.dynatrace.com/design/components/",
+      "evidence": "左侧导航 Components 展开后的分组名，正文也按这些分组列出组件",
+      "confidence": 1
+    },
+    {
+      "field": "coreExports",
+      "value": "AppRoot, FocusScope, OverlayContainer, getFirstFocusableChild, isFocusable, useBreakpointProps, useFocusRing, useRovingFocus",
+      "sourceUrl": "https://developer.dynatrace.com/design/components/",
+      "evidence": "正文 Core 一组下列出的组件与工具函数名",
+      "confidence": 1
+    },
+    {
+      "field": "editors",
+      "value": "CodeEditor, DQLEditor",
+      "sourceUrl": "https://developer.dynatrace.com/design/components/",
+      "evidence": "正文 Editors 一组的两个条目",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://developer.dynatrace.com/design/components/",
+      "evidence": "页脚只有 Developer terms of use 链接，没有许可证名称",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/developer-dynatrace-com-design-components-preview.md",
+  "registryUrl": "/r/developer-dynatrace-com-design-components-preview.json"
+}

@@ -1,0 +1,181 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "61eb1d1b90fb19ae6fbe5d131ce758a3ba8e1e8a4d7193a3b6b00449810ccd57",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "nordcraft-com",
+  "entityId": "entity-nordcraft-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "nordcraft.com",
+  "official": {
+    "inputUrl": "https://nordcraft.com",
+    "finalUrl": "https://nordcraft.com/",
+    "checkedAt": "2026-09-15T10:33:56.475Z"
+  },
+  "editorial": {
+    "name": "Nordcraft",
+    "descriptionZh": "给创意工作室用的网站构建器：AI agent 起草页面，可视化编辑器接着调样式与动画，动画可以直接在编辑器里编关键帧。",
+    "takeawayZh": "AI 起草页面，再用可视化编辑器逐帧调动画",
+    "noteZh": "首屏被一圈真实站点缩略图包围——左侧是日文站 影光舍 The House of Shadow and Light 和一面混凝土建筑，右侧是 PayBoy 的信用卡界面和 Kora，右下角浮着 Built in Nordcraft 的标。中间大标题 The website builder for creative studios，下面 Start building 按钮旁边直接放输入框 Start with a prompt...，再一行 Or try a demo 给了 Namuro、brutallismo、xr201p 三个示例。往下 Animations shouldn't be something you wish you had time for 段展示了内置的关键帧编辑器，时间轴刻度一路排到 2s，配 translate 属性；再往下 Connect to any API and design with real data 用 OpenWeather 的温度组件和 Nordcraft AI 的对话演示把华氏转摄氏。",
+    "recommendation": null,
+    "pricing": "Freemium（meta description 写 Start building for free today，档位在 /pricing）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是上线的网站：首页 h1 写 The website builder for creative studios，正文写 Nordcraft is built in Nordcraft，页脚还有 /nordcraft-vs-webflow-vs-framer 的横向对比。",
+        "evidenceUrl": "https://nordcraft.com/"
+      },
+      {
+        "statement": "归 site-app-builders 而非动效实现类：关键帧编辑器与 CSS 动画是建站器里的一个面板（正文写 Animations 段属于 Visual Editor 的一部分），产物仍是整站而非动效代码包。",
+        "evidenceUrl": "https://nordcraft.com/nordcraft-vs-webflow-vs-framer"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:33:56.475Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "full-page"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "publish",
+      "preview",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "svg",
+      "html"
+    ],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://nordcraft.com",
+      "finalUrl": "https://nordcraft.com/",
+      "title": "Nordcraft: The website builder for creative studios",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/nordcraft-com/identity.jpg",
+        "sha256": "df825843648d281c8763a6a200392eab6e020279b701c5b8b9f796609d605d2d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127647,
+        "alt": "Nordcraft 首屏：The website builder for creative studios"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://nordcraft.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/nordcraft-com/identity.jpg",
+          "alt": "Nordcraft 首屏：The website builder for creative studios",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "heroPromise",
+      "value": "The website builder for creative studios",
+      "sourceUrl": "https://nordcraft.com/",
+      "evidence": "首屏大标题，截图与 http.h1 同文",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "v.2.0.20，首页另有 New Nordcraft 2.0! 提示",
+      "sourceUrl": "https://nordcraft.com/",
+      "evidence": "左上角 logo 旁的版本号，截图中可见，live.bodyText 首字符即 v.2.0.20",
+      "confidence": 1
+    },
+    {
+      "field": "demos",
+      "value": "Or try a demo 提供 Namuro、brutallismo、xr201p 三个示例",
+      "sourceUrl": "https://nordcraft.com/",
+      "evidence": "首屏主按钮下方三个带图标的示例按钮，截图与 live.bodyText 一致",
+      "confidence": 1
+    },
+    {
+      "field": "animationTech",
+      "value": "正文写 Combine CSS keyframes, SVG, and custom logic to craft unique effects",
+      "sourceUrl": "https://nordcraft.com/",
+      "evidence": "Animations limited only by imagination 段落原句，截图里也能看到关键帧时间轴与 translate 属性行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium（meta description 写 Start building for free today，档位在 /pricing）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/nordcraft-com.md",
+  "registryUrl": "/r/nordcraft-com.json"
+}

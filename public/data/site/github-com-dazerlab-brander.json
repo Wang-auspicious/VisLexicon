@@ -1,0 +1,155 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "89b0948b2d573404ee104ccefcd7872d68870002bd1e4ea9f5ad3fdb911ed9b4",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-dazerlab-brander",
+  "entityId": "entity-github-com-dazerlab-brander",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/dazerlab/brander",
+    "finalUrl": "https://github.com/dazerlab/brander",
+    "checkedAt": "2026-09-15T11:40:11.943Z"
+  },
+  "editorial": {
+    "name": "dazerlab/brander",
+    "descriptionZh": "@dazerlab/brander 是 Dazerlab 的设计系统包，React 组件、design token 和 i18n 机制一起给，kidder 和 trader 两个产品共用。它直接发 TypeScript 源码，不带构建产物。",
+    "takeawayZh": "装一个包拿到组件、token 和 i18n",
+    "noteZh": "README 里最实用的是安装那两行：先 @import \"tailwindcss\" 再 @import \"@dazerlab/brander/theme.css\"，theme.css 里带着 palette、rail 断点和 dark variant。导出清单写着 Button、Card、SideNav、readThemeColors，i18n 从 @dazerlab/brander/i18n 里拿 I18nProvider 和 useTranslation。仓库只有 3 次提交、0 star，两位贡献者是 claude 和 ifernandezblanc，语言占比 TypeScript 93.2%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是组件加 design token 加 i18n 机制的一整包设计系统（README 首句原文），归 design-system-suites。",
+        "evidenceUrl": "https://github.com/dazerlab/brander"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:40:11.943Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [],
+    "technologies": [
+      "react",
+      "typescript",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/dazerlab/brander",
+      "finalUrl": "https://github.com/dazerlab/brander",
+      "title": "GitHub - dazerlab/brander · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-dazerlab-brander/identity.jpg",
+        "sha256": "65111674520f5fe991abc87cee8d00bc46d6d05bbd144dc46cd6b5a1385f02fe",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134327,
+        "alt": "dazerlab/brander 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/dazerlab/brander",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-dazerlab-brander/identity.jpg",
+          "alt": "dazerlab/brander 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "licenses",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/dazerlab/brander",
+      "evidence": "README 顶部 MIT license 与 About 栏 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "exports",
+      "value": "Button、Card、SideNav、readThemeColors、I18nProvider、useTranslation",
+      "sourceUrl": "https://github.com/dazerlab/brander",
+      "evidence": "README 的 Use 一节代码示例",
+      "confidence": 1
+    },
+    {
+      "field": "distribution",
+      "value": "直接发 TypeScript 源码，无 dist",
+      "sourceUrl": "https://github.com/dazerlab/brander",
+      "evidence": "README 写 Ships TypeScript source, not a build，main 与 types 直接指向 src/index.ts",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-dazerlab-brander.md",
+  "registryUrl": "/r/github-com-dazerlab-brander.json"
+}

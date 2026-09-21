@@ -1,0 +1,152 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8fc5087ae80b8231730b9aa9100fcda435189f5b39e4c478d0a1b8750b184c49",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-davidbonnet-astring",
+  "entityId": "entity-github-com-davidbonnet-astring",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/davidbonnet/astring",
+    "finalUrl": "https://github.com/davidbonnet/astring",
+    "checkedAt": "2026-09-15T12:55:01.206Z"
+  },
+  "editorial": {
+    "name": "davidbonnet/astring",
+    "descriptionZh": "把符合 ESTree 规范的 AST 重新生成 JavaScript 源码的小型代码生成器，无依赖、压缩后约 16KB。",
+    "takeawayZh": "把 ESTree AST 重新打印成 JS 代码，比 Babel 快",
+    "noteZh": "README 的 Key features 列表说它支持到 ES2024 与 stage 3 提案、能处理 Meriyah 与 Acorn 产出的 AST、可以挂自定义节点处理器，并逐项列了速度对比：比 Bublé 快 5 倍、Escodegen 10 倍、Babel 50 倍、UglifyJS 125 倍、Prettier 380 倍。体积那段写 ≈ 16 KB minified、≈ 4 KB gziped，无依赖，还能在 Deno 上跑，安装给了 npm 与 JSR 两种方式。右栏 About 标 MIT license，topic 是 ast、code-generator、codegen、estree、javascript，Star 1.2k、Forks 61，最新 release 1.9.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可安装的代码库，用户动作是把它接进自己的编译/构建流程，不产出设计资产，因此归开发工具；受控词典没有编译工具这一小类，取最近的 build-deploy-dev-workflow，存在不确定性。",
+        "evidenceUrl": "https://github.com/davidbonnet/astring"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:55:01.206Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/davidbonnet/astring",
+      "finalUrl": "https://github.com/davidbonnet/astring",
+      "title": "GitHub - davidbonnet/astring: 🌳 Tiny and fast JavaScript code generator from an ESTree-compliant AST. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-davidbonnet-astring/identity.jpg",
+        "sha256": "18c6fbe98e453574e94034979e53c1e89fb794f68eae61680162163a3a0733c9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 120687,
+        "alt": "davidbonnet/astring 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/davidbonnet/astring",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-davidbonnet-astring/identity.jpg",
+          "alt": "davidbonnet/astring 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/davidbonnet/astring",
+      "evidence": "README 顶部标 MIT license，右栏 About 也有 MIT license 条目，仓库根目录有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/davidbonnet/astring",
+      "evidence": "README 的 Installation 段只给 npm install astring 与 deno add 两种方式，仓库无定价页",
+      "confidence": 0.9
+    },
+    {
+      "field": "footprint",
+      "value": "≈ 16 KB minified, ≈ 4 KB gziped",
+      "sourceUrl": "https://github.com/davidbonnet/astring",
+      "evidence": "README 的 Key features 最后一条 No dependencies and small footprint",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-davidbonnet-astring.md",
+  "registryUrl": "/r/github-com-davidbonnet-astring.json"
+}

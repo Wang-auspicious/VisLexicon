@@ -1,0 +1,140 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "25d82bcac7768a0d60be1396de0526c949045865aa991f6bc4f6f23849b2d450",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-mottmac-moata-moata-react-ui-kit",
+  "entityId": "entity-github-com-mottmac-moata-moata-react-ui-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/mottmac-moata/moata-react-ui-kit",
+    "finalUrl": "https://github.com/enterprises/mottmac-EMU/sso?return_to=https%3A%2F%2Fgithub.com%2Fmottmac-moata%2Fmoata-react-ui-kit",
+    "checkedAt": "2026-09-15T11:46:44.304Z"
+  },
+  "editorial": {
+    "name": "Sign in to Mott MacDonald Ltd EMU",
+    "descriptionZh": "访问 moata-react-ui-kit 仓库时被转到 GitHub Enterprise 的单点登录页，要求先登录 Mott MacDonald Ltd EMU，页面本身只提供 Continue 与 Sign in 两个入口。",
+    "takeawayZh": "外面看不到内容，只有企业 SSO 的 Continue 按钮。",
+    "noteZh": "实际落到的地址是 github.com/enterprises/mottmac-EMU/sso，页面只有一张居中卡片：标题 Single sign-on to Mott MacDonald Ltd EMU，一句 Authenticate your account by logging into Mott MacDonald Ltd EMU's single sign-on provider.，一个绿色 Continue 按钮，卡片下方一行 Signing in as the enterprise admin? Sign in。没有仓库名、README 或任何组件信息。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据不足：页面被企业 SSO 完全挡住，看不到任何组件、文档或代码，这里只按仓库路径名 moata-react-ui-kit 与候选池标注的 React UI kit 暂归通用界面组件库，未经页面证实。",
+        "evidenceUrl": "https://github.com/mottmac-moata/moata-react-ui-kit"
+      },
+      {
+        "statement": "页面 h1 与正文均为英文，languages 记 en；页面无任何许可证信息，licenses 写 unknown。",
+        "evidenceUrl": "https://github.com/enterprises/mottmac-EMU/sso?return_to=https%3A%2F%2Fgithub.com%2Fmottmac-moata%2Fmoata-react-ui-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:44.304Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "login-required"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/mottmac-moata/moata-react-ui-kit",
+      "finalUrl": "https://github.com/enterprises/mottmac-EMU/sso?return_to=https%3A%2F%2Fgithub.com%2Fmottmac-moata%2Fmoata-react-ui-kit",
+      "title": "Sign in to Mott MacDonald Ltd EMU · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-mottmac-moata-moata-react-ui-kit/identity.jpg",
+        "sha256": "b81c8444de99d7dd29f5276e2a4084987a33aed5ac72626da97b0cca8773383f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 33510,
+        "alt": "Sign in to Mott MacDonald Ltd EMU 首屏：Single sign-on to Mott MacDonald Ltd EMU"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/mottmac-moata/moata-react-ui-kit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-mottmac-moata-moata-react-ui-kit/identity.jpg",
+          "alt": "Sign in to Mott MacDonald Ltd EMU 首屏：Single sign-on to Mott MacDonald Ltd EMU",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "accessBarrier",
+      "value": "GitHub Enterprise 企业 SSO 登录墙",
+      "sourceUrl": "https://github.com/enterprises/mottmac-EMU/sso?return_to=https%3A%2F%2Fgithub.com%2Fmottmac-moata%2Fmoata-react-ui-kit",
+      "evidence": "h1 为 Single sign-on to Mott MacDonald Ltd EMU，正文要求 Authenticate your account by logging into … single sign-on provider.",
+      "confidence": 1
+    },
+    {
+      "field": "pageOnlyContent",
+      "value": "一张登录卡片，一个 Continue 按钮，一行 Sign in 链接",
+      "sourceUrl": "https://github.com/mottmac-moata/moata-react-ui-kit",
+      "evidence": "正文只有 Continue 与 Signing in as the enterprise admin? Sign in，imgCount 为 1",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-mottmac-moata-moata-react-ui-kit.md",
+  "registryUrl": "/r/github-com-mottmac-moata-moata-react-ui-kit.json"
+}

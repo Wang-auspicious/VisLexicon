@@ -1,0 +1,166 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "cd639d8893d4e5127b2fdca60e931f68bdd64225e2f862bf019bfb62a5d51d9e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "avastudio-com",
+  "entityId": "entity-avastudio-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "avastudio.com",
+  "official": {
+    "inputUrl": "https://avastudio.com",
+    "finalUrl": "https://www.avastudio.com/",
+    "checkedAt": "2026-09-15T09:40:23.110Z"
+  },
+  "editorial": {
+    "name": "AVA Studio",
+    "descriptionZh": "Holoworld 做的 AI 视频工作室，从提示词直接出成片，主打跨镜头保持同一个角色长相，面向要批量出短视频的人。",
+    "takeawayZh": "用提示词出片并让角色跨镜头保持一致",
+    "noteZh": "抓到的首屏是一整张黑图，主体没渲染出来。可用信息来自页面自带的 JSON-LD：署名 AVA Studio、别称 Holoworld Studio，把产品写成 the first AI-native creative studio，服务目录里列了 AI Video Generation 与 Character Consistency，创始方与母公司都指向 Holoworld，外链是 x.com/avastudio_ 和 github.com/holoworld。",
+    "recommendation": null,
+    "pricing": "Freemium; no pricing page captured",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面结构化数据把服务列为 AI Video Generation 与 Character Consistency，交付物是视频。",
+        "evidenceUrl": "https://avastudio.com/"
+      },
+      {
+        "statement": "抓取时首屏全黑未渲染，本次分类依据页面内嵌 JSON-LD 的 Organization 与 OfferCatalog 字段。",
+        "evidenceUrl": "https://avastudio.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:40:23.110Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "marketing"
+    ],
+    "deliverables": [
+      "video"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "export"
+    ],
+    "media": [
+      "video",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "content-creator",
+      "brand-team"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://avastudio.com",
+      "finalUrl": "https://www.avastudio.com/",
+      "title": "Ava Studio - AI Video Production Platform",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/avastudio-com/identity.jpg",
+        "sha256": "04abd75952daaaa8b52c7484b346ae73cdc87f0865a0d0a8479d9e007e60d6be",
+        "width": 1280,
+        "height": 900,
+        "bytes": 7598,
+        "alt": "AVA Studio 首屏"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://avastudio.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/avastudio-com/identity.jpg",
+          "alt": "AVA Studio 首屏",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "organization",
+      "value": "AVA Studio，alternateName Holoworld Studio，founder 与 parentOrganization 均为 Holoworld",
+      "sourceUrl": "https://avastudio.com/",
+      "evidence": null,
+      "confidence": 1
+    },
+    {
+      "field": "services",
+      "value": "OfferCatalog 列出 AI Video Generation、Character Consistency 等服务",
+      "sourceUrl": "https://avastudio.com/",
+      "evidence": null,
+      "confidence": 1
+    },
+    {
+      "field": "profiles",
+      "value": "外链 x.com/avastudio_ 与 github.com/holoworld",
+      "sourceUrl": "https://avastudio.com/",
+      "evidence": null,
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null",
+      "存在付费层：Freemium; no pricing page captured。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/avastudio-com.md",
+  "registryUrl": "/r/avastudio-com.json"
+}

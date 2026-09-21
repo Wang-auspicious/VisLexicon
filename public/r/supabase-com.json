@@ -1,0 +1,168 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9187c5de5911823c0a10bfbe40103d9ca4854224048a9a1ffd98cbd9d3fc724c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "supabase-com",
+  "entityId": "entity-supabase-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://supabase.com",
+    "finalUrl": "https://supabase.com/",
+    "checkedAt": "2026-09-15T11:26:50.069Z"
+  },
+  "editorial": {
+    "name": "Supabase",
+    "descriptionZh": "Supabase 把 Postgres 数据库、认证、即时 API、Edge Functions、Realtime、Storage 与向量检索打包成一个后端平台，口号是从周末原型做到百万用户。文档、模板与示例代码都从这一页分流。",
+    "takeawayZh": "学它把七块后端能力铺成等高三列卡片",
+    "noteZh": "首屏白底，左边 Build in a weekend 一行黑一行绿，Scale to millions 收尾，右边三行小字 Start your project with a Postgres database. Add Authentication, Data APIs, Edge Functions, Realtime Data, Storage, and Vector embeddings.。按钮是绿色实心 Start your project 与描边 Request a demo。再往下三张等宽卡：Postgres Database 卡里嵌一枚线条画的大象，脚注是 100% portable、Built-in Auth with RLS、Easy to extend；Authentication 卡的输入框里塞着 alex16019 这样的邮箱占位；Edge Functions 卡写一行 $ supabase functions deploy 配一张经纬网插画。导航只有 Product、Developers、Solutions、Pricing、Docs、Blog，右上是 GitHub 星标与 Sign in，页面后半段还有 Open source from day one 与 Use Supabase with React 的真实代码块。",
+    "recommendation": null,
+    "pricing": "freemium：首页写 Start for free，价目在 /pricing，本页未见数字",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页交付的是 Supabase 七块后端产品的说明、代码示例与模板入口，用户从这一页拿走的是首屏与产品卡片的排法；候选池从 saaslandingpage.com 落地页灵感目录收录，故归产品与公司官网。",
+        "evidenceUrl": "https://supabase.com/"
+      },
+      {
+        "statement": "导航只有 Product、Developers、Solutions、Pricing、Docs、Blog，站点地图里的 /docs、/customers、/open-source 全是自家资料，不是第三方资源目录。",
+        "evidenceUrl": "https://supabase.com/pricing"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:26:50.069Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "ai"
+    ],
+    "deliverables": [
+      "starter"
+    ],
+    "actions": [
+      "browse",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://supabase.com",
+      "finalUrl": "https://supabase.com/",
+      "title": "Supabase | The Postgres Development Platform",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/supabase-com/identity.jpg",
+        "sha256": "ee9c1fb254fc43f9654f8303bce3b2db4ccbe16438f0ddc30008cba0fa56c1ff",
+        "width": 1280,
+        "height": 900,
+        "bytes": 93549,
+        "alt": "Supabase 首屏：Build in a weekend Scale to millions"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroHeadline",
+      "value": "Build in a weekend / Scale to millions",
+      "sourceUrl": "https://supabase.com/",
+      "evidence": "首屏两行大标题，黑绿双色分写",
+      "confidence": 1
+    },
+    {
+      "field": "cliCommand",
+      "value": "$ supabase functions deploy",
+      "sourceUrl": "https://supabase.com/edge-functions",
+      "evidence": "Edge Functions 卡片里的命令行",
+      "confidence": 1
+    },
+    {
+      "field": "reactSample",
+      "value": "Use Supabase with React：createClient(process.env.SUPABASE_URL, process.env.SUPABASE_ANON_KEY)",
+      "sourceUrl": "https://supabase.com/docs/guides/getting-started/quickstarts/reactjs",
+      "evidence": "首页正文的 React 代码块与 Read docs for React 链接",
+      "confidence": 1
+    },
+    {
+      "field": "starters",
+      "value": "Stripe Subscriptions Starter 与 Next.js Starter",
+      "sourceUrl": "https://supabase.com/docs/guides/examples",
+      "evidence": "Kickstart your next project with production ready templates 一节",
+      "confidence": 1
+    },
+    {
+      "field": "openSourceClaim",
+      "value": "Open source from day one",
+      "sourceUrl": "https://supabase.com/open-source",
+      "evidence": "首页标题之一，页脚另有 /open-source 入口",
+      "confidence": 1
+    },
+    {
+      "field": "freeStart",
+      "value": "Start for free",
+      "sourceUrl": "https://supabase.com/",
+      "evidence": "页面 description 结尾与 Start your project 按钮",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：freemium：首页写 Start for free，价目在 /pricing，本页未见数字。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/supabase-com",
+    "designMdUrl": "https://vislexicon.com/site/supabase-com.md",
+    "checkedAt": "2026-09-15T11:26:50.069Z",
+    "license": "unknown"
+  }
+}

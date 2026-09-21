@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c780cb7630f4ac289c91de8cdfcdf390d387c06117fe0d48717427ecc1fa750a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "stack-opensaas-au",
+  "entityId": "entity-stack-opensaas-au",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://stack.opensaas.au",
+    "finalUrl": "https://stack.opensaas.au/",
+    "checkedAt": "2026-09-15T11:47:29.106Z"
+  },
+  "editorial": {
+    "name": "Stack",
+    "descriptionZh": "OpenSaas 出的 Stack 是一个 config-first 的 Next.js 框架，把访问规则集中写在一份 opensaas.config.ts 里，每次数据库查询、创建、更新、删除都过一遍访问控制引擎。目标是让 AI agent 生成的功能默认就不越权。",
+    "takeawayZh": "一份 config 定权限，agent 生成的接口默认安全",
+    "noteZh": "首屏黑底，标题两段：AI agents build features fast. 与绿色的 Stack makes the secure path the only path.，下面直接摆一行 $ npm create opensaas-app@latest my-app，右边是 Start the tutorial 与 Docs 两个按钮，左上角标着 Stack BETA by OpenSaas。往下 THE PROBLEM 段落标题是 You can't review your way to safety.，拆成 More code than you can read、Security as scattered if-statements、The demo works either way 三条；翻到 THE TURN 写 Move the guardrails into the framework.，配了一段 opensaas.config.ts，Post 这个 list 的 access.operation.query 按 session 判断该看到已发布文章还是自己的草稿。导航只有 Docs、Tutorial、Get started。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是一个搭应用用的框架：一条 create 命令起项目、一份 config 定数据模型与权限，用户在它上面建自己的应用，属于网站与应用构建器。",
+        "evidenceUrl": "https://stack.opensaas.au/"
+      },
+      {
+        "statement": "首屏主行动是 $ npm create opensaas-app@latest my-app 与 Get started / Start the tutorial，指向新建项目而不是拿组件或读文章。",
+        "evidenceUrl": "https://www.stack.opensaas.au/docs/tutorials/quick-start"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:29.106Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "agent",
+      "ai",
+      "saas"
+    ],
+    "deliverables": [
+      "starter",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://stack.opensaas.au",
+      "finalUrl": "https://stack.opensaas.au/",
+      "title": "Stack — the secure path is the only path",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/stack-opensaas-au/identity.jpg",
+        "sha256": "8c6c353b396587fa3d2bccb1680e8e537e1b5c7be7e9eb1fbc07bfdde94d0589",
+        "width": 1280,
+        "height": 900,
+        "bytes": 83858,
+        "alt": "Stack 首屏：AI agents build features fast. Stack makes the secure path t"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "createCommand",
+      "value": "npm create opensaas-app@latest my-app",
+      "sourceUrl": "https://stack.opensaas.au/",
+      "evidence": "首屏主标题下方直接展示的终端命令，旁边是 Start the tutorial 与 Docs 按钮。",
+      "confidence": 1
+    },
+    {
+      "field": "mechanism",
+      "value": "访问规则集中声明一次，由引擎施加到每一次 query / create / update / delete",
+      "sourceUrl": "https://stack.opensaas.au/",
+      "evidence": "正文「Access rules are declared once, in config, and applied to every query, create, update, and delete. There is no unchecked path to forget.」",
+      "confidence": 1
+    },
+    {
+      "field": "status",
+      "value": "Beta",
+      "sourceUrl": "https://stack.opensaas.au/",
+      "evidence": "页头品牌字标旁的 BETA 角标，写作 Stack BETA by OpenSaas。",
+      "confidence": 1
+    },
+    {
+      "field": "configExample",
+      "value": "opensaas.config.ts 里 Post list 的 access.operation.query 按 session 过滤 status 与 authorId",
+      "sourceUrl": "https://stack.opensaas.au/",
+      "evidence": "THE TURN 一节内嵌的代码块，注释写「Signed-in users see published posts plus their own drafts; anonymous visitors see published posts only.」",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/stack-opensaas-au",
+    "designMdUrl": "https://vislexicon.com/site/stack-opensaas-au.md",
+    "checkedAt": "2026-09-15T11:47:29.106Z",
+    "license": "unknown"
+  }
+}

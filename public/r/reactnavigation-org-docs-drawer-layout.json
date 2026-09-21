@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "40c1c7e000cf7073980061592829f15f4d1fc238aeb1a72cee7cf58328c5cd03",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "reactnavigation-org-docs-drawer-layout",
+  "entityId": "entity-reactnavigation-org-docs-drawer-layout",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://reactnavigation.org/docs/drawer-layout",
+    "finalUrl": "https://reactnavigation.org/docs/drawer-layout/",
+    "checkedAt": "2026-09-15T12:04:43.004Z"
+  },
+  "editorial": {
+    "name": "React Native Drawer Layout",
+    "descriptionZh": "React Navigation 的 Drawer Layout 文档页，讲这个跨端抽屉组件怎么安装、怎么调 API。",
+    "takeawayZh": "照 Installation 装包，再用 Drawer 接抽屉。",
+    "noteZh": "左侧栏把内容分成 Fundamentals、Migration guides、Features 三大块，Features 下面从 Configuring TypeScript、Writing tests、Deep linking 一直排到 Web support、Server rendering；当前页的正文只有一句介绍——跨端 Drawer，原生平台用 react-native-gesture-handler 和 react-native-reanimated、Web 上用 CSS transitions——下面留了一大块空的演示框（截图里没有渲染出内容），右侧 On this page 也只有 Installation、Quick start、API reference，API reference 下挂着 Drawer 和 useDrawerProgress。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面是 React Navigation 生态里 Drawer Layout 这个界面组件的官方文档与 API reference，拿走的是组件的用法与 API，故归入通用界面组件库。",
+        "evidenceUrl": "https://reactnavigation.org/docs/drawer-layout/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:04:43.004Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://reactnavigation.org/docs/drawer-layout",
+      "finalUrl": "https://reactnavigation.org/docs/drawer-layout/",
+      "title": "React Native Drawer Layout | React Navigation",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/reactnavigation-org-docs-drawer-layout/identity.jpg",
+        "sha256": "d622d22f25fe39e55ad6e4bb8fe78a8a3b8185c5922578d60e21a3e83fdf5e88",
+        "width": 1280,
+        "height": 900,
+        "bytes": 66629,
+        "alt": "React Native Drawer Layout 首屏：React Native Drawer Layout"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "implementation",
+      "value": "原生端用 react-native-gesture-handler 与 react-native-reanimated，Web 端用 CSS transitions",
+      "sourceUrl": "https://reactnavigation.org/docs/drawer-layout/",
+      "evidence": "页面正文第一段对实现方式的说明",
+      "confidence": 1
+    },
+    {
+      "field": "apiReference",
+      "value": "Drawer、useDrawerProgress",
+      "sourceUrl": "https://reactnavigation.org/docs/drawer-layout/",
+      "evidence": "右侧 On this page 的 API reference 分组",
+      "confidence": 1
+    },
+    {
+      "field": "versionedDocs",
+      "value": "7.x 至 1.x 共八个版本文档",
+      "sourceUrl": "https://reactnavigation.org/docs/drawer-layout/",
+      "evidence": "顶栏版本下拉与站内 /docs/8.x/、/docs/6.x/ 等路径",
+      "confidence": 1
+    },
+    {
+      "field": "relatedPackage",
+      "value": "需要导航集成时改用 Drawer Navigator",
+      "sourceUrl": "https://reactnavigation.org/docs/drawer-layout/",
+      "evidence": "正文中「If you need React Navigation integration … use Drawer Navigator instead」一句",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/reactnavigation-org-docs-drawer-layout",
+    "designMdUrl": "https://vislexicon.com/site/reactnavigation-org-docs-drawer-layout.md",
+    "checkedAt": "2026-09-15T12:04:43.004Z",
+    "license": "unknown"
+  }
+}

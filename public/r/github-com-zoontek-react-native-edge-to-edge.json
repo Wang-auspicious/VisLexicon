@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3a07361c9c4ef56d5d53a5ce64e4fafc3a98b90ff2fdc7a027b0df4396bd4f87",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-zoontek-react-native-edge-to-edge",
+  "entityId": "entity-github-com-zoontek-react-native-edge-to-edge",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/zoontek/react-native-edge-to-edge",
+    "finalUrl": "https://github.com/zoontek/react-native-edge-to-edge",
+    "checkedAt": "2026-09-15T12:04:58.680Z"
+  },
+  "editorial": {
+    "name": "zoontek/react-native-edge-to-edge",
+    "descriptionZh": "让 React Native 应用开启 edge-to-edge 显示、内容铺到 Android 系统栏下面的一个库，原名 react-native-bars。",
+    "takeawayZh": "装上它让内容铺到系统栏下，Android 15 上不再被顶开。",
+    "noteZh": "README 开头就提醒 React Native 0.86 之后应改用内置的 edgeToEdgeEnabled Gradle 属性、配合 @zoontek/react-native-navigation-bar 控制导航栏样式；再往下 Motivations 一段专门讲 Android 15 对 targetSdk 35 的强制要求与 Play Store 的更新时限，Credits 里写明由 Expo 支持；仓库里 android、docs、example 和 react-native-is-edge-to-edge 几个目录并存，最新版本 1.8.2（20 小时前）。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付一个可安装的 React Native 界面行为库（控制内容是否延伸到系统栏之下），在受控词典里最贴近交付可安装界面代码的通用界面组件库；它调的是原生显示行为而不是纯视觉组件，这一层不完全吻合。",
+        "evidenceUrl": "https://github.com/zoontek/react-native-edge-to-edge"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:04:58.680Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "android"
+    ],
+    "technologies": [
+      "react",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/zoontek/react-native-edge-to-edge",
+      "finalUrl": "https://github.com/zoontek/react-native-edge-to-edge",
+      "title": "GitHub - zoontek/react-native-edge-to-edge: Effortlessly enable edge-to-edge display in React Native (formerly known as react-native-bars). · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-zoontek-react-native-edge-to-edge/identity.jpg",
+        "sha256": "a7241a9237dbf65a4cc93895a4ee1fa81a3059c8f2adc0f8df416ec4904783b4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127422,
+        "alt": "zoontek/react-native-edge-to-edge 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "purpose",
+      "value": "让 Android 6 及以上应用内容延伸到系统栏之下",
+      "sourceUrl": "https://github.com/zoontek/react-native-edge-to-edge",
+      "evidence": "About 区块与 README 首句「allowing your Android (v6 and above) app content to flow seamlessly beneath the system bars」",
+      "confidence": 1
+    },
+    {
+      "field": "migrationNote",
+      "value": "React Native 0.86 及以后建议改用内置 edgeToEdgeEnabled Gradle 属性",
+      "sourceUrl": "https://github.com/zoontek/react-native-edge-to-edge",
+      "evidence": "README 的 Important 段落",
+      "confidence": 1
+    },
+    {
+      "field": "motivation",
+      "value": "Android 15 起 targetSdk 35 的应用默认强制 edge-to-edge",
+      "sourceUrl": "https://github.com/zoontek/react-native-edge-to-edge",
+      "evidence": "README Motivations 一节的 Android 15 段落",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "1.8.2（20 小时前）",
+      "sourceUrl": "https://github.com/zoontek/react-native-edge-to-edge",
+      "evidence": "右侧 Releases 区块标注 Latest（共 27 个版本）",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-zoontek-react-native-edge-to-edge",
+    "designMdUrl": "https://vislexicon.com/site/github-com-zoontek-react-native-edge-to-edge.md",
+    "checkedAt": "2026-09-15T12:04:58.680Z",
+    "license": "MIT"
+  }
+}

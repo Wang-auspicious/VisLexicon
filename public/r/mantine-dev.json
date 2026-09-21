@@ -1,0 +1,160 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3b0cd9277c12b6cf058d86baef4e16e8208de6c0a04aa8c7b2ba65307f33453a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mantine-dev",
+  "entityId": "entity-mantine-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://mantine.dev",
+    "finalUrl": "https://mantine.dev/",
+    "checkedAt": "2026-09-15T12:00:47.309Z"
+  },
+  "editorial": {
+    "name": "Mantine",
+    "descriptionZh": "React 组件库文档站，正文自述 120 多个可定制组件加 70 个 hooks，另有 Mantine UI、Form、Extensions 等分线，并专门给 AI 编码工具备了 llms.txt 与 MCP server。",
+    "takeawayZh": "装 Mantine，120+ 组件和 70 个 hooks 直接进项目",
+    "noteZh": "顶栏是 Mantine logo 加 Mantine UI、FAQ、Colors generator 三档，右边挂着 v9.6.1 版本号、Ctrl + K 搜索框和 Discord、GitHub 图标。首屏左半是 A fully featured React components library 的黑色大标题与 Get Started、Github 两枚按钮，右半淡印着一张 Get in touch 表单和几块统计卡，数字是 4,145、745、188。往下有 Built for the AI-assisted workflow 一段，列了 llms.txt、agent skills 与 @mantine/mcp-server 三种接入方式；再下面是 120+ components 与 Hooks library 的陈列，正文里点了 Date range picker、Tree select、File input 这些控件。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站方自述 A fully featured React components library... more than 120 customizable components and 70 hooks，导航里另开 Colors generator、Form library、Extensions、Rich text editor 等分线，交付的是整套组件加主题与 hooks 体系，归设计系统与完整组件套件。",
+        "evidenceUrl": "https://mantine.dev/"
+      },
+      {
+        "statement": "与 general-ui-components 相比，它的分量在组件之外的 hooks 库、样式层与扩展包，已发布语料里同体量的 chakra-ui 也在 design-system-suites，故取此子类。",
+        "evidenceUrl": "https://mantine.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:47.309Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "search",
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mantine.dev",
+      "finalUrl": "https://mantine.dev/",
+      "title": "Mantine",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/mantine-dev/identity.jpg",
+        "sha256": "101be709ed27aece74c92f257966272528675949816f256814be499563476747",
+        "width": 1280,
+        "height": 900,
+        "bytes": 87495,
+        "alt": "Mantine 首屏：A fully featured React components library"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "componentCount",
+      "value": "120+ 组件、70 hooks",
+      "sourceUrl": "https://mantine.dev/",
+      "evidence": "首屏副标题 ...more than 120 customizable components and 70 hooks to cover you in any situation",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "v9.6.1",
+      "sourceUrl": "https://mantine.dev/",
+      "evidence": "顶栏面包屑右侧的版本号徽标（截图可见）",
+      "confidence": 1
+    },
+    {
+      "field": "aiIntegration",
+      "value": "llms.txt / agent skills / @mantine/mcp-server",
+      "sourceUrl": "https://mantine.dev/guides/llms",
+      "evidence": "Built for the AI-assisted workflow 区块下列出的三项与 curl -o mantine-docs.txt 示例",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://mantine.dev/",
+      "evidence": "文档站顶栏只有 Mantine UI / FAQ / Colors generator，核心库走公开 npm 安装，没有定价页",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/mantine-dev",
+    "designMdUrl": "https://vislexicon.com/site/mantine-dev.md",
+    "checkedAt": "2026-09-15T12:00:47.309Z",
+    "license": "unknown"
+  }
+}

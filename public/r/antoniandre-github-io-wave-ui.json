@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "03de1e3b4e41c83ec710c94a61ecb798edb296125b6a2514eceeeba1801232ec",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "antoniandre-github-io-wave-ui",
+  "entityId": "entity-antoniandre-github-io-wave-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://antoniandre.github.io/wave-ui",
+    "finalUrl": "https://antoniandre.github.io/wave-ui/",
+    "checkedAt": "2026-09-15T12:14:12.898Z"
+  },
+  "editorial": {
+    "name": "Wave UI",
+    "descriptionZh": "自称只有明亮面的 Vue 组件框架，48+ 组件涵盖表单校验与图标，并允许用 Sass 变量控制 CSS 优先级。",
+    "takeawayZh": "取 48+ 个 Vue 组件，表单校验与样式优先级覆盖都自带",
+    "noteZh": "首屏上半是深蓝波浪色块，压着 Logo、一句 A Vue.js UI framework with only the bright side. 和 Get started 按钮；下半白底左边打三个勾——Fully responsive and touch-ready、All the components that you need in a lightweight package，再接一个 48+ UI components 的大数字，右边两部手机并排展示文档页。往下正文还有表单校验段（First name / Last name / I agree to the terms）与一段 $css-scope: '.w-app' 的 CSS 优先级覆盖示例。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是 Vue 组件集：首屏自报 48+ UI components，正文再分 Form Elements（Checkbox、Radio、Switch）与 Colors、Utilities、Form validation 几块。",
+        "evidenceUrl": "https://antoniandre.github.io/wave-ui/"
+      },
+      {
+        "statement": "归 general-ui-components 而非设计系统套件，因为站点给的是组件清单与用法，没有成套的色板与排版规范页。",
+        "evidenceUrl": "https://antoniandre.github.io/wave-ui/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:14:12.898Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://antoniandre.github.io/wave-ui",
+      "finalUrl": "https://antoniandre.github.io/wave-ui/",
+      "title": "Wave UI - Wave UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/antoniandre-github-io-wave-ui/identity.jpg",
+        "sha256": "360959b0d353add0c6a5d74708a827e9753fef14d30a98714a46f61f01f5efec",
+        "width": 1280,
+        "height": 900,
+        "bytes": 72679,
+        "alt": "Wave UI 首屏：Wave UI"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "componentCount",
+      "value": "48+ UI components",
+      "sourceUrl": "https://antoniandre.github.io/wave-ui/",
+      "evidence": "首屏左侧大号数字 48+ 后接 UI components 一行",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "Version 4.2.5",
+      "sourceUrl": "https://antoniandre.github.io/wave-ui/",
+      "evidence": "首页正文 Get started 按钮下方一行 Version 4.2.5",
+      "confidence": 1
+    },
+    {
+      "field": "cssControl",
+      "value": "可用 Sass 覆盖 $css-scope（示例 $css-scope: '.w-app'）来控制 Wave UI 的 CSS 优先级",
+      "sourceUrl": "https://antoniandre.github.io/wave-ui/",
+      "evidence": "Stay in control of your CSS 一节的代码块",
+      "confidence": 1
+    },
+    {
+      "field": "formValidation",
+      "value": "表单校验演示含 First name / Last name / I agree to the terms 与 Reset、Validate 两个按钮",
+      "sourceUrl": "https://antoniandre.github.io/wave-ui/",
+      "evidence": "正文 Form validation 一节的实际渲染控件（首屏截图未滚到该段）",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/antoniandre-github-io-wave-ui",
+    "designMdUrl": "https://vislexicon.com/site/antoniandre-github-io-wave-ui.md",
+    "checkedAt": "2026-09-15T12:14:12.898Z",
+    "license": "unknown"
+  }
+}

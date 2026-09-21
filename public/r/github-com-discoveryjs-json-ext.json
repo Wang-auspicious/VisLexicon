@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0c38f9cae13204086f301bb671d4a0aef7907d74d4e39c6473d7575fcb3cf732",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-discoveryjs-json-ext",
+  "entityId": "entity-github-com-discoveryjs-json-ext",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/discoveryjs/json-ext",
+    "finalUrl": "https://github.com/discoveryjs/json-ext",
+    "checkedAt": "2026-09-15T12:18:08.580Z"
+  },
+  "editorial": {
+    "name": "discoveryjs/json-ext",
+    "descriptionZh": "扩展 JSON 能力的工具集，主打 100MB 以上大 JSON 的分片解析与 JSONL/NDJSON 流式处理，浏览器、Node、Deno、Bun 都能跑。",
+    "takeawayZh": "用 parseChunked 分片读写大 JSON，避免整块驻留内存",
+    "noteZh": "README 开篇列出五个函数：parseChunked、stringifyChunked、stringifyInfo、parseFromWebStream、createStringifyWebStream，并说明 stringifyInfo 能在不生成输出的前提下估算字符串化后的体积、顺带找出循环引用。Key Features 里强调 built-in JSONL/NDJSON support，以及 ESM 与 CommonJS 双格式。关于面板的标签是 async / json / parse / parser / stream / stringify / stringifystream，代码页目录有 src、dist、benchmarks、test-e2e、test-fixture 和 scripts。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 npm 工具库（parseChunked / stringifyChunked 等函数），用户在构建与数据处理流程里装上它处理大 JSON，属于开发工作流工具而非界面或素材，归 delivery-development-tools/build-deploy-dev-workflow。",
+        "evidenceUrl": "https://github.com/discoveryjs/json-ext"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:18:08.580Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/discoveryjs/json-ext",
+      "finalUrl": "https://github.com/discoveryjs/json-ext",
+      "title": "GitHub - discoveryjs/json-ext: A set of performant and memory efficient utilities that extend the use of JSON · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-discoveryjs-json-ext/identity.jpg",
+        "sha256": "75010f2d514d9a79f9946bedf3a8830fc9d0c19433fe213b973723452021ccd4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116488,
+        "alt": "discoveryjs/json-ext 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "api",
+      "value": "parseChunked / stringifyChunked / stringifyInfo / parseFromWebStream / createStringifyWebStream",
+      "sourceUrl": "https://github.com/discoveryjs/json-ext",
+      "evidence": "README 正文逐条列出这五个函数及各自说明",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/discoveryjs/json-ext",
+      "evidence": "README 标题行的 MIT license 徽标，About 面板同样标注 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "runtimes",
+      "value": "browsers, Node.js, Deno, Bun",
+      "sourceUrl": "https://github.com/discoveryjs/json-ext",
+      "evidence": "README Key Features 一节的 Works seamlessly with browsers, Node.js, Deno, and Bun",
+      "confidence": 1
+    },
+    {
+      "field": "stars",
+      "value": "188 stars / 7 forks（21 个 release，最新 1.1.0）",
+      "sourceUrl": "https://github.com/discoveryjs/json-ext/releases",
+      "evidence": "About 面板计数与右侧 Releases 区块的 1.1.0 Latest",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-discoveryjs-json-ext",
+    "designMdUrl": "https://vislexicon.com/site/github-com-discoveryjs-json-ext.md",
+    "checkedAt": "2026-09-15T12:18:08.580Z",
+    "license": "MIT"
+  }
+}

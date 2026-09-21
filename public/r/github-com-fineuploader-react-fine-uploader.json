@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b57d6810db5c2884f5112edc32ca45346a6cc533d16b5ba5c81c5d46dce563ea",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-fineuploader-react-fine-uploader",
+  "entityId": "entity-github-com-fineuploader-react-fine-uploader",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/FineUploader/react-fine-uploader",
+    "finalUrl": "https://github.com/FineUploader/react-fine-uploader",
+    "checkedAt": "2026-09-15T12:04:28.376Z"
+  },
+  "editorial": {
+    "name": "FineUploader/react-fine-uploader",
+    "descriptionZh": "把 Fine Uploader 和 Fine Uploader S3 接进 React 的组件层，既有开箱的上传 UI，也能用小块组件自己拼。",
+    "takeawayZh": "直接搬 <Gallery> 出一个上传面板，或用小块组件自拼。",
+    "noteZh": "页面顶部一条黄条写着 this repository was archived by the owner on Nov 19, 2018、It is now read-only，仓库标识是 Public archive；README 把资源分成三类——focused components（<Thumbnail>、<ProgressBar>，多数是无样式的）、higher-level components（<Gallery>）和 wrappers，另外还单列了一组 Supported browsers（Chrome 桌面与移动、Firefox、IE 11、Edge 13+、Safari 9+）。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付一组可安装的 React 上传组件（并明确区分高层复合组件与无样式小组件），拿走的是组件代码，故归入通用界面组件库。",
+        "evidenceUrl": "https://github.com/FineUploader/react-fine-uploader"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:04:28.376Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/FineUploader/react-fine-uploader",
+      "finalUrl": "https://github.com/FineUploader/react-fine-uploader",
+      "title": "GitHub - FineUploader/react-fine-uploader: Easily integrate Fine Uploader or Fine Uploader S3 into a React app. Drop-in high-level components for a turn-key UI. Use small focused components to build a more custom UI. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-fineuploader-react-fine-uploader/identity.jpg",
+        "sha256": "d04e7a5d8d41a20d0220e198f49a6febfe7c427b646bd2aa37deeab3f42ba6ea",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144760,
+        "alt": "FineUploader/react-fine-uploader 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "archived",
+      "value": "2018 年 11 月 19 日归档，现为只读",
+      "sourceUrl": "https://github.com/FineUploader/react-fine-uploader",
+      "evidence": "仓库顶部黄色提示条与标题旁的 Public archive 标记",
+      "confidence": 1
+    },
+    {
+      "field": "componentTiers",
+      "value": "focused components（<Thumbnail>、<ProgressBar>）/ higher-level components（<Gallery>）/ wrappers",
+      "sourceUrl": "https://github.com/FineUploader/react-fine-uploader",
+      "evidence": "README Overview 一节把库内资源分成三类的原话",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/FineUploader/react-fine-uploader",
+      "evidence": "README 顶部 MIT license 标注与根目录 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "supportedBrowsers",
+      "value": "Chrome (desktop & mobile) / Firefox / IE 11 / Edge 13+ / Safari 9+",
+      "sourceUrl": "https://github.com/FineUploader/react-fine-uploader",
+      "evidence": "README Supported browsers 一节逐条列出的浏览器",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-fineuploader-react-fine-uploader",
+    "designMdUrl": "https://vislexicon.com/site/github-com-fineuploader-react-fine-uploader.md",
+    "checkedAt": "2026-09-15T12:04:28.376Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2fe67d3675b5d89bd0c9bd37a4aba760b0acb7410ac8935c50b58b5f9cbf309d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "landings-dev",
+  "entityId": "entity-landings-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://landings.dev",
+    "finalUrl": "https://landings.dev/",
+    "checkedAt": "2026-09-15T10:39:52.630Z"
+  },
+  "editorial": {
+    "name": "Landings",
+    "descriptionZh": "Landings 按时间收落地页，一屏三张完整截图往下翻，配 Stacks 和 Colors 两套分类。站上还挂着几个配色和 SVG 转换的小工具。",
+    "takeawayZh": "按框架或配色筛落地页，顺手用站上的颜色转换小工具",
+    "noteZh": "首页很素：顶部只有 Landings 站标加 Stacks / Colors / Advertise 三项，中间一句 Discover hundreds of landing pages created by leading companies for your design inspiration，再往下就是三列深色落地页截图——Crontap 的 Run schedules, not servers.、Langbase 的 AI Cloud in one line of code.、Ycode 的 Visual website builder and CMS 都整屏铺出来，底部一个 Next 翻页。页脚 Resources 一栏摆着六个工具：SVG to JSX、Hex to HSL、HSL to Hex、Hex to CMYK、CMYK to Hex、Color Picker；Popular Stacks 列 React、Next.js、Webflow、WordPress、Tailwind CSS、Framer，Popular Colors 列 Black、White、Blue、Purple、Yellow、Green 六色。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "case-inspiration-collections",
+    "subcategory": "website-landing-page-cases",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一条条真实落地页整屏截图，用户来这儿看别人怎么排落地页，属网站与落地页案例。",
+        "evidenceUrl": "https://landings.dev/"
+      },
+      {
+        "statement": "站内 /post/crontap、/post/langbase、/post/unkey 等逐条建页，/stack/* 与 /color/* 是筛选轴，形态是案例库。",
+        "evidenceUrl": "https://landings.dev/stack/react"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:39:52.630Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "marketing"
+    ],
+    "deliverables": [
+      "case-screenshot"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "copy"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "discovery",
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://landings.dev",
+      "finalUrl": "https://landings.dev/",
+      "title": "Landings - Landing Page Examples",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/landings-dev/identity.jpg",
+        "sha256": "e841cf0364a722728f7ea68d09f279f9b10cf73ac437c0e84ff0a0a6bacce3ba",
+        "width": 1280,
+        "height": 900,
+        "bytes": 111396,
+        "alt": "Landings 首屏：Landing Page Examples"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "tools",
+      "value": "SVG to JSX、Hex to HSL、HSL to Hex、Hex to CMYK、CMYK to Hex、Color Picker 六个在线小工具",
+      "sourceUrl": "https://landings.dev/",
+      "evidence": "页脚 Resources 分组与 /tool/svg-to-jsx、/tool/hex-to-hsl 等路径",
+      "confidence": 1
+    },
+    {
+      "field": "filters",
+      "value": "Popular Stacks: React / Next.js / Webflow / WordPress / Tailwind CSS / Framer；Popular Colors: Black / White / Blue / Purple / Yellow / Green",
+      "sourceUrl": "https://landings.dev/",
+      "evidence": "页脚两组标签与 /stack/*、/color/* 路径",
+      "confidence": 1
+    },
+    {
+      "field": "recentEntries",
+      "value": "Crontap、Portline、Langbase、Unkey、Daytona、Ycode、Composio 等按时间排列",
+      "sourceUrl": "https://landings.dev/",
+      "evidence": "首页三列截图卡与 /post/* 路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/landings-dev",
+    "designMdUrl": "https://vislexicon.com/site/landings-dev.md",
+    "checkedAt": "2026-09-15T10:39:52.630Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "45ddeb6542a4f50b0f3566eb9ac88d8c2a8ec333b94905def948a0447eef9048",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "ngx-prompt-kit-pianonic-ch",
+  "entityId": "entity-ngx-prompt-kit-pianonic-ch",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://ngx-prompt-kit.pianonic.ch",
+    "finalUrl": "https://ngx-prompt-kit.pianonic.ch/",
+    "checkedAt": "2026-09-15T12:02:16.169Z"
+  },
+  "editorial": {
+    "name": "ngx-prompt-kit",
+    "descriptionZh": "给 Angular 做 AI 聊天界面的组件集：输入框、消息、思维链、推理过程、token 计数、模型选择都在侧栏成册。组件靠 schematic 拷进项目，源码归你，不留在黑盒依赖里。",
+    "takeawayZh": "用 ng generate 把 AI 聊天组件源码拷进项目",
+    "noteZh": "左侧栏分成四段：GET STARTED 下面是 Introduction 与 Installation，SHOWCASE 下面是 Blocks 与 Full Chat，COMPONENTS 从 Approval、Attachment Preview、Branch Nav、Chain Of Thought、Chat Container、Chat Empty、Code Block、Conversation List、Cost Display、Feedback Bar 一路排到 Usage Card，UTILITIES 下面是 Streaming、Streaming Message、HTTP Error、Model Icon、Auth Image、Chat Stream，新加的那些后面跟着 NEW 角标。正文主标题 AI chat components for Angular.，副标一段写明是 Standalone, signal-based 组件、Composes with Spartan UI、Distributed via schematics，按钮是 Get started 与 See it in action。标题下面直接摆着一只能用的输入框，占位符 Ask ngx-prompt-kit anything...，里头嵌着加号、Search、省略号和一个圆形发送箭头；再往下 WHAT YOU WRITE 一段贴出的模板里能看到 pk-prompt-input、pk-prompt-input-textarea、pk-prompt-input-actions 三层，以及 hlmBtn 上挂的 ghost、outline、icon-sm 这些类名。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一批按聊天场景做好的 Angular 组件，用户 ng generate 后源码进项目再自己改，属于界面组件库；它另有 Blocks / Full Chat 一整页拼装，偏页面区块，但主体仍是逐个组件，故走通用界面组件。",
+        "evidenceUrl": "https://ngx-prompt-kit.pianonic.ch/"
+      },
+      {
+        "statement": "描述里写 Angular components for AI chat interfaces，侧栏 COMPONENTS 段逐条列出 30 多个组件名并给每个 NEW 标记，形态是组件目录而非工具或素材。",
+        "evidenceUrl": "https://ngx-prompt-kit.pianonic.ch/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:16.169Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "block"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ngx-prompt-kit.pianonic.ch",
+      "finalUrl": "https://ngx-prompt-kit.pianonic.ch/",
+      "title": "ngx-prompt-kit — Angular components for AI chat interfaces",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ngx-prompt-kit-pianonic-ch/identity.jpg",
+        "sha256": "7eba2fe57c7b833f9f8d88abcebe7c7fe216a1a82ae2180e2c44d25b4c4cdf35",
+        "width": 1280,
+        "height": 900,
+        "bytes": 101281,
+        "alt": "ngx-prompt-kit 首屏：AI chat components for Angular."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "distribution",
+      "value": "通过 schematic 分发，组件被拷进项目里，源码归使用方，可自行改、fork、锁版本",
+      "sourceUrl": "https://ngx-prompt-kit.pianonic.ch/",
+      "evidence": "副标题 Distributed via schematics — the source lives in your project 与 Built for the Angular way of working. 一段",
+      "confidence": 1
+    },
+    {
+      "field": "tech",
+      "value": "standalone 与 signal 组件，用 input()、output()、computed()，没有 NgModules；底层组合 Spartan UI 的 helm 原语",
+      "sourceUrl": "https://ngx-prompt-kit.pianonic.ch/",
+      "evidence": "Built for the Angular way of working. 下的 Signal-based + standalone 与 Built on Spartan UI 两条",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "Approval、Attachment Preview、Branch Nav、Chain Of Thought、Chat Container、Chat Empty、Code Block、Conversation List、Cost Display、Feedback Bar、Message、Model Picker、Prompt Input、Reasoning、Response Stream、Thinking Bar、Token Counter、Tool Steps、Usage Card 等，另有 6 个 utilities 页",
+      "sourceUrl": "https://ngx-prompt-kit.pianonic.ch/",
+      "evidence": "侧栏 COMPONENTS 与 UTILITIES 两段，以及 /components/*、/utilities/* 的路径清单",
+      "confidence": 1
+    },
+    {
+      "field": "showcase",
+      "value": "Blocks 与 Full Chat 两个展示页，另有可预览的 playground 组件 index",
+      "sourceUrl": "https://ngx-prompt-kit.pianonic.ch/blocks",
+      "evidence": "侧栏 SHOWCASE 段与 /blocks、/showcase/full-chat 两条路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/ngx-prompt-kit-pianonic-ch",
+    "designMdUrl": "https://vislexicon.com/site/ngx-prompt-kit-pianonic-ch.md",
+    "checkedAt": "2026-09-15T12:02:16.169Z",
+    "license": "unknown"
+  }
+}

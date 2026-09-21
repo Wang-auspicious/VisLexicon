@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1aed574170f42b31bb7d68139205638f24aebee68c71ec5060b0d24b5cd6e992",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-getsoren-design-system",
+  "entityId": "entity-github-com-getsoren-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/getsoren/design-system",
+    "finalUrl": "https://github.com/getsoren/design-system",
+    "checkedAt": "2026-09-15T11:42:13.555Z"
+  },
+  "editorial": {
+    "name": "Getsoren/design-system",
+    "descriptionZh": "Soren Design System 的 React 组件库仓库，库基于 MUI Core 封装，以 @getsoren/design-system 发布，主题通过包一层 ThemeProvider 注入。",
+    "takeawayZh": "套一层 ThemeProvider，拿到 MUI 派生的组件库。",
+    "noteZh": "README 只有 Installation / Usage / Package / Docs / Contributing 几节，自述是 A design system React library，用法就一句「Put <ThemeProvider> around your application」；右侧 About 挂着主页 storybook.tracktor.fr，标签里是 design-system、library、material-ui、storybook，最新版 4.80.1，仓库 master 分支另有 581 个 Tag。README 里的提交记录还留着从 @Tracktor 改名到 @Getsoren scope 的痕迹。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述为「A design system React library」，基于 MUI Core 提供整套组件并要求宿主应用用 ThemeProvider 注入主题，交付物是一套完整设计系统而非零散组件，故归入设计系统套件。",
+        "evidenceUrl": "https://github.com/getsoren/design-system"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:42:13.555Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "ISC"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/getsoren/design-system",
+      "finalUrl": "https://github.com/getsoren/design-system",
+      "title": "GitHub - Getsoren/design-system: Soren Design System · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-getsoren-design-system/identity.jpg",
+        "sha256": "c9606b06f210bbe21f3673b714b12b048b80057c71fc7b5d080155b510bd4dac",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139440,
+        "alt": "Getsoren/design-system 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/getsoren/design-system",
+      "evidence": "README 卡片标题行右侧写着 ISC license，仓库根目录也有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "latest-release",
+      "value": "4.80.1",
+      "sourceUrl": "https://github.com/getsoren/design-system",
+      "evidence": "右侧 Releases 区显示 4.80.1 带 Latest 徽标，发布于 47 分钟前，共 579 个 releases",
+      "confidence": 1
+    },
+    {
+      "field": "docs-site",
+      "value": "storybook.tracktor.fr",
+      "sourceUrl": "https://github.com/getsoren/design-system",
+      "evidence": "右侧 About 区的链接指向 storybook.tracktor.fr/，标签含 storybook",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-getsoren-design-system",
+    "designMdUrl": "https://vislexicon.com/site/github-com-getsoren-design-system.md",
+    "checkedAt": "2026-09-15T11:42:13.555Z",
+    "license": "ISC"
+  }
+}

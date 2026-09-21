@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "cf36e68700cc36b90001233d2761eb8512ef850670b06eeeaa71a72cead39a9b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-subquery-react-ui",
+  "entityId": "entity-github-com-subquery-react-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/subquery/react-ui",
+    "finalUrl": "https://github.com/subquery/subquery-component-library",
+    "checkedAt": "2026-09-15T11:52:03.967Z"
+  },
+  "editorial": {
+    "name": "subquery/subquery-component-library",
+    "descriptionZh": "SubQuery 的 React 组件库，旧的 react-ui 与 @subql/components 两个入口最后都指到这一个仓库。给在 SubQuery 生态里做 dApp 前端、要复用它的按钮与对话框等组件的人用。",
+    "takeawayZh": "拿到 @subql/components 的组件源码",
+    "noteZh": "简报里的 subquery/react-ui 与 @subql/components 那条最后都落到 subquery/subquery-component-library 同一页。README 标题写 SubQuery React UI libray（原文拼写），Features 两条分别是 A React components lib based on antd and Subquery design system out of the box 与 Shared reusable components across Subquery apps；Developing 一节就两行 yarn 和 yarn storybook，说明 Storybook 是主要开发入口。根目录 rollup.config.js 的提交写 feat: chatbox、feat: part rollup compile，docs/ 那条写 feat: update theme blue，另有 components/ 目录。许可证 GPL-3.0，8 位贡献者，27 个分支，0 个 release。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可安装的 React 组件包（README 的 Usage 指向 @subql/components），用户带走组件代码，属通用界面组件库。",
+        "evidenceUrl": "https://github.com/subquery/subquery-component-library"
+      },
+      {
+        "statement": "本条与同批 subquery/subql-copmonents 一条落到同一仓库页：react-ui 是它的旧入口名，页面本身没有第二套内容，分类依据相同。",
+        "evidenceUrl": "https://github.com/subquery/subquery-component-library"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:03.967Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "GPL-3.0-only"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/subquery/react-ui",
+      "finalUrl": "https://github.com/subquery/subquery-component-library",
+      "title": "GitHub - subquery/subquery-component-library: React UI component library for SubQuery dApps · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-subquery-react-ui/identity.jpg",
+        "sha256": "6d12e3133a01be91138b6179ef108738faa81539213aae249d327546ab04b8e6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 120827,
+        "alt": "subquery/subquery-component-library 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "GPL-3.0",
+      "sourceUrl": "https://github.com/subquery/subquery-component-library",
+      "evidence": "右侧 About 面板与 README 文件区的 GPL-3.0 license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "devFlow",
+      "value": "本地开发就两条命令：yarn 与 yarn storybook",
+      "sourceUrl": "https://github.com/subquery/subquery-component-library",
+      "evidence": "README 的 Developing 一节代码块",
+      "confidence": 1
+    },
+    {
+      "field": "repoScale",
+      "value": "472 次提交、27 个分支、8 位贡献者、0 个 release",
+      "sourceUrl": "https://github.com/subquery/subquery-component-library",
+      "evidence": "文件表上方计数、右侧 Contributors 与 Releases 栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。GPL-3.0：右侧 About 面板与 README 文件区的 GPL-3.0 license 一行"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-subquery-react-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-subquery-react-ui.md",
+    "checkedAt": "2026-09-15T11:52:03.967Z",
+    "license": "GPL-3.0-only"
+  }
+}

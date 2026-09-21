@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "6eebb4591e53bf5f7950217c21c81b8231e7ea90cfc7beae75320ee5642937a2",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-photon-hq-imessage-kit",
+  "entityId": "entity-github-com-photon-hq-imessage-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/photon-hq/imessage-kit",
+    "finalUrl": "https://github.com/photon-hq/imessage-kit",
+    "checkedAt": "2026-09-15T11:48:15.768Z"
+  },
+  "editorial": {
+    "name": "photon-hq/imessage-kit",
+    "descriptionZh": "macOS 上读写 iMessage 的 TypeScript SDK，README 自称全功能库，负责读取、发送和自动化 iMessage 会话，写给做 AI agent 与聊天类应用的人，零依赖。",
+    "takeawayZh": "拿它把 iMessage 接进 agent，发消息或监听新消息",
+    "noteZh": "About 栏一句话 A type-safe, elegant iMessage SDK for macOS with zero dependencies，下面挂了 agent、ai、apple、imessage、sms、typescript 六个标签。README 目录排到 About Photon、Features、Quick Start、Send vs Observe Semantics、Messages、Chats、Real-time Events、Attachments、Plugin System、Error Handling、Examples、API Reference、Requirements、LLMs，开头一段提示线程回复、tapback、编辑消息、撤回、实时输入状态这些高级能力要看 Photon Spectrum，并说明 Photon 做的是让 agent 走 iMessage、SMS、邮件、Slack、Discord、语音这些既有渠道的基础设施。文件列表里 LICENSE 那行的提交信息是 Change license from SSPL to MIT，仓库根目录另有 llms.txt、CLAUDE.md、biome.json、bun.lock 与 tsup.config.ts，右侧 Release v3.0.0 标着 Latest，Used by 250。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这个仓库交付的是一枚 npm 包（@photon-ai/imessage-kit），安装后由开发者写代码调用，用来收发与自动化 iMessage，既不产界面也不产模板；在受控词典里最贴近的是面对开发者的工具类，故归建站、交付与开发工具。",
+        "evidenceUrl": "https://github.com/photon-hq/imessage-kit"
+      },
+      {
+        "statement": "不确定：它更像通信渠道的 SDK 而非构建或部署工具，build-deploy-dev-workflow 是就近落位；另一种看法是归 community-marketplaces 下的渠道集成，但页面没有任何市场或交易成分。",
+        "evidenceUrl": "https://github.com/photon-hq/imessage-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:15.768Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "agent",
+      "ai"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "desktop"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/photon-hq/imessage-kit",
+      "finalUrl": "https://github.com/photon-hq/imessage-kit",
+      "title": "GitHub - photon-hq/imessage-kit: A type-safe, elegant iMessage SDK for macOS with zero dependencies · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-photon-hq-imessage-kit/identity.jpg",
+        "sha256": "92fa92149bab495837fdd10988cbfd9b04ea1fe9ac1221cb4c566832c84df298",
+        "width": 1280,
+        "height": 900,
+        "bytes": 141125,
+        "alt": "photon-hq/imessage-kit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "licenseChange",
+      "value": "许可证从 SSPL 改为 MIT",
+      "sourceUrl": "https://github.com/photon-hq/imessage-kit",
+      "evidence": "文件列表中 LICENSE 行的提交信息 Change license from SSPL to MIT，右侧 About 栏同步标 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "positioning",
+      "value": "A type-safe, elegant iMessage SDK for macOS with zero dependencies",
+      "sourceUrl": "https://github.com/photon-hq/imessage-kit",
+      "evidence": "About 栏描述与 README 首段",
+      "confidence": 1
+    },
+    {
+      "field": "advancedFeatures",
+      "value": "线程回复、tapback、编辑、撤回、实时输入状态指向 Photon Spectrum",
+      "sourceUrl": "https://github.com/photon-hq/imessage-kit",
+      "evidence": "README 的 Note 段落，列出 threaded replies、tapbacks、message editing、unsending、live typing indicators",
+      "confidence": 1
+    },
+    {
+      "field": "readmeSections",
+      "value": "Send vs Observe Semantics、Messages、Chats、Real-time Events、Attachments、Plugin System",
+      "sourceUrl": "https://github.com/photon-hq/imessage-kit",
+      "evidence": "README 各级标题",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "1.5k stars / 129 forks / 18 branches / 18 tags / Used by 250",
+      "sourceUrl": "https://github.com/photon-hq/imessage-kit",
+      "evidence": "仓库头部按钮与右侧 About、Releases 面板",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-photon-hq-imessage-kit",
+    "designMdUrl": "https://vislexicon.com/site/github-com-photon-hq-imessage-kit.md",
+    "checkedAt": "2026-09-15T11:48:15.768Z",
+    "license": "MIT"
+  }
+}

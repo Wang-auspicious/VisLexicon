@@ -1,0 +1,160 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "da92ebcece99a4f98b8afc54ab87819b73c7dcdc4cf2be0af07cc9ec87eac6cc",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "veui-dev-en-us",
+  "entityId": "entity-veui-dev-en-us",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "veui.dev",
+  "official": {
+    "inputUrl": "https://veui.dev/en-US",
+    "finalUrl": "https://veui.dev/en-US",
+    "checkedAt": "2026-09-15T12:13:31.603Z"
+  },
+  "editorial": {
+    "name": "VEUI",
+    "descriptionZh": "百度开源的 Vue 组件库文档站，定位企业级应用，覆盖组件、主题定制、i18n 与 SSR 几块。",
+    "takeawayZh": "从 Components 树里取 Button、Table、Uploader 的用法与主题变量",
+    "noteZh": "左栏从上到下是 Intro、Changelog、TypeScript、Getting started、Components，Components 下面从 ConfigProvider、Button、ButtonGroup 一路排到 Form、Uploader。主区是 VEUI 大字标，旁边挂着 npm v2.17.10 与 license MIT 两枚徽章，下面六张卡片写着 Powerful features、Flexible themes、Fully treeshakable、I18N with optimization、Accessibility support、SSR support。页眉能切 D20、D22、AI 三种主题和中文，右侧是全站搜索框，页脚署名 © Baidu, Inc. 2026。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面自述 An enterprise-level application component library based on Vue.js.，左栏 Components 下逐条列出 ConfigProvider、Button 到 Uploader 的组件文档，交付物是组件。",
+        "evidenceUrl": "https://veui.dev/en-US"
+      },
+      {
+        "statement": "站点另有 D20/D22/AI 主题与 Style variants、Theming 几页，属于组件库范畴，未构成独立的设计系统治理文档。",
+        "evidenceUrl": "https://veui.dev/en-US"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:13:31.603Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "search"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://veui.dev/en-US",
+      "finalUrl": "https://veui.dev/en-US",
+      "title": "VEUI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/veui-dev-en-us/identity.jpg",
+        "sha256": "dd20eee7cb779e344a58b74b1c1529ac8648fc554699c08a30e7aafcb9f62fd7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 58643,
+        "alt": "VEUI 首屏：VEUI"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://veui.dev/en-US",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/veui-dev-en-us/identity.jpg",
+          "alt": "VEUI 首屏：VEUI",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://veui.dev/en-US",
+      "evidence": "首屏标题下方的 license MIT 徽章",
+      "confidence": 1
+    },
+    {
+      "field": "npm-version",
+      "value": "v2.17.10",
+      "sourceUrl": "https://veui.dev/en-US",
+      "evidence": "首屏 npm v2.17.10 徽章",
+      "confidence": 1
+    },
+    {
+      "field": "themes",
+      "value": "D20 / D22 / AI 三套主题，另有中文站入口",
+      "sourceUrl": "https://veui.dev/en-US",
+      "evidence": "页眉右侧并排的 D20、D22、AI、Play!、中文 五个按钮",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/veui-dev-en-us.md",
+  "registryUrl": "/r/veui-dev-en-us.json"
+}

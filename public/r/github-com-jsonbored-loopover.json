@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b262d84c0c1b74a4b9786cdd02d69afdac93fc96d51f7c423e0093eb923601c0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-jsonbored-loopover",
+  "entityId": "entity-github-com-jsonbored-loopover",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/JSONbored/loopover",
+    "finalUrl": "https://github.com/JSONbored/loopover",
+    "checkedAt": "2026-09-15T11:45:20.615Z"
+  },
+  "editorial": {
+    "name": "JSONbored/loopover",
+    "descriptionZh": "一套可自托管的 agent 编排平台，让 agent 把写代码、审代码、合并、学习整条开发循环跑通，并对外公开安全记录；对任意 GitHub 仓库生效。",
+    "takeawayZh": "自托管一套 loopover，让 agent 跑 review。",
+    "noteZh": "About 那段话开头是 The loop never sleeps，末尾丢出 loopover.ai；topic 里排着 agentic、ai-code-review、automated-development、bitensor、gittensor、mcp、model-context-protocol、pull-requests、self-hosted；README 分 Privacy Boundary、Review Capabilities、Start Here、Surfaces、MCP Install、Local Development、Gittensor Contributor Impact 七节，文件树里 alertmanager、grafana、loki、k8s、migrations 一整套自托管运维件都在。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "自述是 Agents automate the entire development lifecycle (write, review, merge, learn)，交付的是接在 Git 仓库上的开发流程自动化与自托管部署件（control-plane、k8s、grafana），不是界面组件或素材，因此归开发工作流。",
+        "evidenceUrl": "https://github.com/JSONbored/loopover"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:45:20.615Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "mcp",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build",
+      "test",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "AGPL-3.0-only"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/JSONbored/loopover",
+      "finalUrl": "https://github.com/JSONbored/loopover",
+      "title": "GitHub - JSONbored/loopover: The loop never sleeps — you finally can. Agents automate the entire development lifecycle (write, review, merge, learn) end to end, with a published safety record. Self-host today; rentable hosted loops in development. Any GitHub repo; Gittensor-native intelligence built in. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-jsonbored-loopover/identity.jpg",
+        "sha256": "4796e4b8354a02ee8a47d80187e0a6337517226dbb414db8dfdd65b01f901b4e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 169767,
+        "alt": "JSONbored/loopover 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "AGPL-3.0-only",
+      "sourceUrl": "https://github.com/JSONbored/loopover",
+      "evidence": "About 侧栏写着 AGPL-3.0 license，文件树里有 LICENSE；GitHub license 接口返回 AGPL-3.0。",
+      "confidence": 1
+    },
+    {
+      "field": "hosting",
+      "value": "自托管（hosted loops 尚在开发中）",
+      "sourceUrl": "https://github.com/JSONbored/loopover",
+      "evidence": "About 描述里的 Self-host today; rentable hosted loops in development.。",
+      "confidence": 1
+    },
+    {
+      "field": "officialSite",
+      "value": "loopover.ai",
+      "sourceUrl": "https://github.com/JSONbored/loopover",
+      "evidence": "About 侧栏在描述下方的官网链接。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。AGPL-3.0-only：About 侧栏写着 AGPL-3.0 license，文件树里有 LICENSE；GitHub license 接口返回 AGPL-3.0。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-jsonbored-loopover",
+    "designMdUrl": "https://vislexicon.com/site/github-com-jsonbored-loopover.md",
+    "checkedAt": "2026-09-15T11:45:20.615Z",
+    "license": "AGPL-3.0-only"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d1928621c569bcd39d9d91202356c86c3039d3e4061afa5196b68f4a610d5658",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-facebook-lexical",
+  "entityId": "entity-github-com-facebook-lexical",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/facebook/lexical",
+    "finalUrl": "https://github.com/facebook/lexical",
+    "checkedAt": "2026-09-15T12:00:31.699Z"
+  },
+  "editorial": {
+    "name": "facebook/lexical",
+    "descriptionZh": "Meta 开源的富文本编辑器框架，用可扩展的节点与插件搭编辑器，主打可靠性、无障碍与性能，官网在 lexical.dev。给要自己掌控编辑器行为的 Web 团队。",
+    "takeawayZh": "用 Lexical 的节点与插件，拼出自己掌控的富文本编辑器",
+    "noteZh": "仓库 About 写着 Lexical is an extensible text editor framework that provides excellent reliability, accessibility and performance.，官网指向 lexical.dev，侧栏挂 MIT license、Code of conduct、Contributing、Security policy。当前版本 v0.50.0，94 个 release，23.9k star、2.2k fork，Used by 27K，5,254 次提交、614 位贡献者。文件树里 packages、examples、dev-examples、scripts 分得很开，提交信息常带 [lexical-utils]、[lexical-mdast]、[lexical-react] 这类包名前缀。",
+    "recommendation": null,
+    "pricing": "Free（MIT 开源仓库）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "按仓库写：交付物是搭编辑器用的框架与包（packages 目录、@lexical/extension、@lexical/mdast 等子包），About 明写 extensible text editor framework。",
+        "evidenceUrl": "https://github.com/facebook/lexical"
+      },
+      {
+        "statement": "归 headless-accessible-primitives 的依据是自述里并列 reliability / accessibility / performance，且它只给编辑器内核与节点、不提供现成 UI（仓库内 examples 与 dev-examples 用来演示）；拿不准的一点：它也可视为一个偏重的通用 UI 库。",
+        "evidenceUrl": "https://github.com/facebook/lexical"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:31.699Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "primitive"
+    ],
+    "actions": [
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/facebook/lexical",
+      "finalUrl": "https://github.com/facebook/lexical",
+      "title": "GitHub - facebook/lexical: Lexical is an extensible text editor framework that provides excellent reliability, accessibility and performance. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-facebook-lexical/identity.jpg",
+        "sha256": "7fccf42f150ff7be8a33175622b98db9297cbc3e1f32823f9a65b30d10637529",
+        "width": 1280,
+        "height": 900,
+        "bytes": 152913,
+        "alt": "facebook/lexical 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "selfDescription",
+      "value": "Lexical is an extensible text editor framework that provides excellent reliability, accessibility and performance.",
+      "sourceUrl": "https://github.com/facebook/lexical",
+      "evidence": "仓库 About 侧栏文字，与页面 title 同文",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/facebook/lexical",
+      "evidence": "About 侧栏的 MIT license 条目",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "v0.50.0（Latest）",
+      "sourceUrl": "https://github.com/facebook/lexical",
+      "evidence": "右侧 Releases 区块，共 94 个 release",
+      "confidence": 1
+    },
+    {
+      "field": "homepage",
+      "value": "lexical.dev",
+      "sourceUrl": "https://github.com/facebook/lexical",
+      "evidence": "About 侧栏的官网链接",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "23.9k star、2.2k fork、Used by 27K、614 位贡献者、5,254 次提交",
+      "sourceUrl": "https://github.com/facebook/lexical",
+      "evidence": "仓库头部与 About、Contributors 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-facebook-lexical",
+    "designMdUrl": "https://vislexicon.com/site/github-com-facebook-lexical.md",
+    "checkedAt": "2026-09-15T12:00:31.699Z",
+    "license": "MIT"
+  }
+}

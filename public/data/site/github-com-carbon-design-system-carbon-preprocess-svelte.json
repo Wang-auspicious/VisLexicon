@@ -1,0 +1,162 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c728c90e0dfc5999340b3c81679327a56abe90d26496e8aa52b628caf42641a1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-carbon-design-system-carbon-preprocess-svelte",
+  "entityId": "entity-github-com-carbon-design-system-carbon-preprocess-svelte",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/carbon-design-system/carbon-preprocess-svelte",
+    "finalUrl": "https://github.com/carbon-design-system/carbon-preprocess-svelte",
+    "checkedAt": "2026-09-15T11:56:42.989Z"
+  },
+  "editorial": {
+    "name": "carbon-design-system/carbon-preprocess-svelte",
+    "descriptionZh": "给 Carbon Svelte 项目提速的预处理器与构建插件：重写 barrel import 缩短编译时间，砍掉没用到的 Carbon 样式。",
+    "takeawayZh": "给 Carbon Svelte 项目加预处理与打包插件",
+    "noteZh": "README 开头写这是 a zero-dependency library providing Svelte preprocessors and build plugins for the Carbon Design System，Usage 分三块：optimizeImports（把 script 块里的 Carbon Svelte barrel import 重写到源码路径，加快开发编译）、optimizeCss（Vite/Rollup 插件，移除没用到的 Carbon 样式以缩小 CSS 体积）、OptimizeCssPlugin（对应的 Webpack 与 Rspack 版本）。安装方式在 Installation 一节给了 npm i -D / pnpm / Yarn / Bun 四种。About 栏 License 标 Apache-2.0，Releases 最新 v0.11.45，Used by 510。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它不交付界面组件，而是 Svelte 预处理器与 Vite/Rollup/Webpack 构建插件，作用是加速 Carbon Svelte 项目的编译与打包，归构建、部署与开发工作流。",
+        "evidenceUrl": "https://github.com/carbon-design-system/carbon-preprocess-svelte"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:56:42.989Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "svelte",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon-preprocess-svelte",
+      "finalUrl": "https://github.com/carbon-design-system/carbon-preprocess-svelte",
+      "title": "GitHub - carbon-design-system/carbon-preprocess-svelte: Svelte preprocessors for the Carbon Design System · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-carbon-design-system-carbon-preprocess-svelte/identity.jpg",
+        "sha256": "c1d0d18f3ff796d6026747f9dbec8fa49268cbad53cc79534913665538be0813",
+        "width": 1280,
+        "height": 900,
+        "bytes": 140766,
+        "alt": "carbon-design-system/carbon-preprocess-svelte 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/carbon-design-system/carbon-preprocess-svelte",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-carbon-design-system-carbon-preprocess-svelte/identity.jpg",
+          "alt": "carbon-design-system/carbon-preprocess-svelte 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm i -D carbon-preprocess-svelte（另有 pnpm / Yarn / Bun 命令）",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon-preprocess-svelte",
+      "evidence": "Installation 一节的四条安装命令",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon-preprocess-svelte",
+      "evidence": "About 栏 License 与 README 的 Apache-2.0 license",
+      "confidence": 1
+    },
+    {
+      "field": "exports",
+      "value": "optimizeImports、optimizeCss、OptimizeCssPlugin",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon-preprocess-svelte",
+      "evidence": "Usage 一节的三个小节标题",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "v0.11.45（Latest），共 65 个 releases",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon-preprocess-svelte",
+      "evidence": "右侧 Releases 栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-carbon-design-system-carbon-preprocess-svelte.md",
+  "registryUrl": "/r/github-com-carbon-design-system-carbon-preprocess-svelte.json"
+}

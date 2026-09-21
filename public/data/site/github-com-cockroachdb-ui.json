@@ -1,0 +1,166 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1bf7514c765c372856dc1b8fb5aff94f04fd2d463594080e615c42cb184a9b66",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-cockroachdb-ui",
+  "entityId": "entity-github-com-cockroachdb-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/cockroachdb/ui",
+    "finalUrl": "https://github.com/cockroachdb/ui",
+    "checkedAt": "2026-09-15T11:39:12.080Z"
+  },
+  "editorial": {
+    "name": "cockroachdb/ui",
+    "descriptionZh": "Cockroach Labs 把自家界面用的包集中放在这个 monorepo 里，含 eslint-config、design-tokens、icons 和 ui-components。仓库 2025 年 1 月已被归档为只读。",
+    "takeawayZh": "取已归档的 Cockroach 设计 token 与图标包",
+    "noteZh": "页面顶部一条黄条写着 This repository was archived by the owner on Jan 23, 2025. It is now read-only.，仓库名旁边也挂着 Public archive。README 说明这是 @cockroachlabs 命名空间下已发布包的 monorepo，并列了 @cockroachlabs/eslint-config、@cockroachlabs/design-tokens、@cockroachlabs/icons、@cockroachlabs/ui-components 四行；storybook-ui-components 段落给了 pnpm install / pnpm build / pnpm --dir packages/storybook-ui-components start 三条命令。About 给 core-components.crdb.io 和 MIT license，Releases 51、Used by 100、Contributors 26。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库把 design-tokens、icons、ui-components 与 eslint-config 成组发布，是同一套界面基础的分层产物，归设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/cockroachdb/ui"
+      },
+      {
+        "statement": "README 明写 This repository is a monorepo of published packages under the @cockroachlabs namespace on npm，用户来这儿是装包而不是看案例。",
+        "evidenceUrl": "https://github.com/cockroachdb/ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:39:12.080Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "icon",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "download",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/cockroachdb/ui",
+      "finalUrl": "https://github.com/cockroachdb/ui",
+      "title": "GitHub - cockroachdb/ui: Published assets for Cockroach Labs user interfaces · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-cockroachdb-ui/identity.jpg",
+        "sha256": "3031a4a9bc6bb0e5be112087f5acb2c2da41e06c60dc4f080e8352b6a2e26ab2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 136325,
+        "alt": "cockroachdb/ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/cockroachdb/ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-cockroachdb-ui/identity.jpg",
+          "alt": "cockroachdb/ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/cockroachdb/ui",
+      "evidence": "About 侧栏写 MIT license，README 头部同样标 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "status",
+      "value": "已归档，只读（2025-01-23）",
+      "sourceUrl": "https://github.com/cockroachdb/ui",
+      "evidence": "页面顶部黄条 This repository was archived by the owner on Jan 23, 2025. It is now read-only.",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "@cockroachlabs/eslint-config、design-tokens、icons、ui-components",
+      "sourceUrl": "https://github.com/cockroachdb/ui",
+      "evidence": "README 的包对照表逐行列出这四个包及其 /packages 路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-cockroachdb-ui.md",
+  "registryUrl": "/r/github-com-cockroachdb-ui.json"
+}

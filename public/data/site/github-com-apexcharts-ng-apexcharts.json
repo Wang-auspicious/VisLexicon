@@ -1,0 +1,174 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5afef09c545c3d15481ac1b7ed065ba1c143ce63c2119962ce125d83de3ae214",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-apexcharts-ng-apexcharts",
+  "entityId": "entity-github-com-apexcharts-ng-apexcharts",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/apexcharts/ng-apexcharts",
+    "finalUrl": "https://github.com/apexcharts/ng-apexcharts",
+    "checkedAt": "2026-09-15T12:02:10.372Z"
+  },
+  "editorial": {
+    "name": "apexcharts/ng-apexcharts",
+    "descriptionZh": "ApexCharts 的 Angular 封装，全部写成 standalone 组件与 signals，公共 API 里没有 NgModules、@Input() 和 @ViewChild()。SSR 走 apx-chart-ssr 与 apx-chart-hydrate 两个标签。",
+    "takeawayZh": "一个组件在 Angular 里画 ApexCharts 图表",
+    "noteZh": "仓库 About 栏写着 ng-apexcharts is an implementation of apexcharts for angular. It comes with one simple component...，下面挂着 angular、apexcharts、charts、javascript、typescript、ui 六个 topic；Star 357、Fork 89、Used by 20K、35 位贡献者，Releases 停在 v3.1.0。README 的小标题依次是 Built for modern Angular、Angular Version Compatibility、Installation、Usage、Tree-Shaking (reduced bundle size)、Server-Side Rendering (SSR)、Using NgModules、Examples；正文强调这里全是 standalone components 和 signals，公共 API 里没有 NgModules、@Input()、@Output()、@ViewChild()、ngOnChanges，跑在 provideZonelessChangeDetection 下，ApexCharts 自己的渲染也被移出 Angular zone。文件列表里 projects/ng-apexcharts、src、server.ts、tsconfig.app.json 都在，最新一次提交是 junedchhipa 的 ci: stop interpolating the commit message into the release check。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是一个把图表库接进 Angular 的组件包，产出是交互式图表本身，故归图表与数据可视化代码；它不是通用界面组件，所以没放进 UI 组件类。",
+        "evidenceUrl": "https://github.com/apexcharts/ng-apexcharts"
+      },
+      {
+        "statement": "仓库 topic 里 apexcharts 与 charts 并列，README 的 Examples 与 Tree-Shaking、SSR 各节都围绕图表渲染优化展开。",
+        "evidenceUrl": "https://github.com/apexcharts/ng-apexcharts"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:10.372Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/apexcharts/ng-apexcharts",
+      "finalUrl": "https://github.com/apexcharts/ng-apexcharts",
+      "title": "GitHub - apexcharts/ng-apexcharts: ng-apexcharts is an implementation of apexcharts for angular. It comes with one simple component that enables you to use apexcharts in an angular project. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-apexcharts-ng-apexcharts/identity.jpg",
+        "sha256": "a9768900e0519e63d3ee24f63e65a1dc71de9b0aebd70af410c5250acb153671",
+        "width": 1280,
+        "height": 900,
+        "bytes": 137894,
+        "alt": "apexcharts/ng-apexcharts 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/apexcharts/ng-apexcharts",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-apexcharts-ng-apexcharts/identity.jpg",
+          "alt": "apexcharts/ng-apexcharts 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "components",
+      "value": "一个 ChartComponent，Typescript 与 JavaScript 两种用法都从它进",
+      "sourceUrl": "https://github.com/apexcharts/ng-apexcharts",
+      "evidence": "仓库 description 与 README 的 Usage 一节",
+      "confidence": 1
+    },
+    {
+      "field": "ssr",
+      "value": "apx-chart-ssr 与 apx-chart-hydrate 两个标签负责服务端渲染与 hydrate",
+      "sourceUrl": "https://github.com/apexcharts/ng-apexcharts",
+      "evidence": "README 的 Server-Side Rendering (SSR) 一节",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "v3.1.0（Latest），仓库另有 13 个分支、11 个 tag、675 次提交",
+      "sourceUrl": "https://github.com/apexcharts/ng-apexcharts",
+      "evidence": "右侧 Releases 栏与分支/Tag 计数，最新提交信息为 feat: support ApexCharts 7 alongside 6",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "Used by 20K、357 stars、89 forks、35 位贡献者",
+      "sourceUrl": "https://github.com/apexcharts/ng-apexcharts",
+      "evidence": "仓库首页右侧的 Used by、星标、分支与 Contributors 栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-apexcharts-ng-apexcharts.md",
+  "registryUrl": "/r/github-com-apexcharts-ng-apexcharts.json"
+}

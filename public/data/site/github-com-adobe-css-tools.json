@@ -1,0 +1,164 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d5a4ab6fbc591e8ac67334a75e360d78c3e436978cf4e7e38c84603ebdee93fb",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-adobe-css-tools",
+  "entityId": "entity-github-com-adobe-css-tools",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/adobe/css-tools",
+    "finalUrl": "https://github.com/adobe/css-tools",
+    "checkedAt": "2026-09-15T12:14:48.895Z"
+  },
+  "editorial": {
+    "name": "adobe/css-tools",
+    "descriptionZh": "把 CSS 解析成 AST 再 stringify 回 CSS 的 Node.js 库，从 reworkcss/css 分叉后用 TypeScript 重写，支持格式化缩进和 CSS nesting。",
+    "takeawayZh": "解析 CSS 成 AST，改完 stringify 回 CSS",
+    "noteZh": "仓库标题下标注 forked from reworkcss/css，上方一条提示写 This branch is 980 commits ahead of and 2 commits behind reworkcss/css:main。README 抬头 @adobe/css-tools，一句 A modern CSS parser and stringifier with TypeScript support，Usage 用 parse('body { font-size: 12px; }') 拿到 ast，再 stringify(ast, { indent: ' ' }) 把缩进改成空格；小标题一路排到 Install / Usage / API / Features / Examples / Performance / Documentation / Background / License。右栏 About 写 CSS parser / stringifier for Node.js，许可 MIT，Used by 6.1M，24 个 tag。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 描述这是 Parse CSS into an Abstract Syntax Tree (AST) and convert it back to CSS with configurable formatting，是给构建与处理 CSS 用的 Node.js 库，不是界面组件也不是素材。",
+        "evidenceUrl": "https://github.com/adobe/css-tools"
+      },
+      {
+        "statement": "Used by 6.1M 与 24 个 tag 说明它作为依赖包被大量工具链引用，归交付与开发工具下的构建工作流。",
+        "evidenceUrl": "https://github.com/adobe/css-tools"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:14:48.895Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "typescript",
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/adobe/css-tools",
+      "finalUrl": "https://github.com/adobe/css-tools",
+      "title": "GitHub - adobe/css-tools: CSS parser / stringifier for Node.js · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-adobe-css-tools/identity.jpg",
+        "sha256": "fca9be2937d789c1b98dd1306f1c98b1300de1e23dde9a6e216825c8d8c0c932",
+        "width": 1280,
+        "height": 900,
+        "bytes": 120425,
+        "alt": "adobe/css-tools 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/adobe/css-tools",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-adobe-css-tools/identity.jpg",
+          "alt": "adobe/css-tools 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/adobe/css-tools",
+      "evidence": "README 标题旁的 MIT license 标注与根目录 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "parse() 与 stringify()",
+      "sourceUrl": "https://github.com/adobe/css-tools",
+      "evidence": "README Usage 一节的 import { parse, stringify } 与两段示例代码",
+      "confidence": 1
+    },
+    {
+      "field": "capability",
+      "value": "支持 CSS nesting",
+      "sourceUrl": "https://github.com/adobe/css-tools",
+      "evidence": "文件列表里 src 与 test 两个目录的提交信息 Add support for css nesting and fix all github issues (#621)",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "Used by 6.1M",
+      "sourceUrl": "https://github.com/adobe/css-tools",
+      "evidence": "右栏 About 下方的 Used by 6.1M 计数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-adobe-css-tools.md",
+  "registryUrl": "/r/github-com-adobe-css-tools.json"
+}

@@ -1,0 +1,173 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "46e49b214e984d65c1aa9b8903823d6423809909f66b2d99cf0c985632906d07",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "caravancoop-github-io-caravan-ui-docs",
+  "entityId": "entity-caravancoop-github-io-caravan-ui-docs",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "caravancoop.github.io",
+  "official": {
+    "inputUrl": "https://caravancoop.github.io/caravan-ui-docs",
+    "finalUrl": "https://caravancoop.github.io/caravan-ui-docs/getting-started",
+    "checkedAt": "2026-09-15T11:38:10.457Z"
+  },
+  "editorial": {
+    "name": "Caravan UI",
+    "descriptionZh": "Caravan UI 是给 Angular + Tailwind 项目用的一套组件库，顺着 Atomic Design 的思路把 Avatar、Button、Slider、Toggle 这类基础组件和 Dialog、FAQ list、Reactive form 这类组合模板都做好了。装法是 npm install @caravancoop/ui-kit，再把包路径写进 tailwind.config.js 的 content 数组。",
+    "takeawayZh": "装 npm 包再改 tailwind 配置就能用组件",
+    "noteZh": "左侧栏分 Foundations / Components / Templates 三段，Components 下从 Avatar、Alert / Banner、Accordion 一路列到 Tooltip，Templates 里是 Dialog、FAQ list、Reactive form、Card、List。正文首段写明 Following the concept of 'Atomic Design'，下面紧跟两枚 ANGULAR 与 TAILWINDCSS 徽章，安装命令就是一行 npm install @caravancoop/ui-kit。再往下要你把 ./node_modules/@caravancoop/ui-kit/fesm2022/*.mjs 加进 tailwind.config.js 的 content 数组，色板留了 car-primary 从 100 到 900 的十六进制位，并提示 darkMode 用 class。左上角标着版本 v2.0.3。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是一套可安装的 Angular 组件（Avatar、Accordion、Button、Slider、Toggle、Rating 等）加若干组合模板，用户拿走的是 npm 包里的代码组件，故归通用界面组件库；候选池当初把它放在 Tailwind 组件下，实际它同时要求 Angular 与 Tailwind 两个前置。",
+        "evidenceUrl": "https://caravancoop.github.io/caravan-ui-docs/getting-started"
+      },
+      {
+        "statement": "文档带 Foundations 一节（Color scheme、Typography、Icons、Shadows）和 Templates 一节，规模上够不上整套设计系统，所以没有归 design-system-suites。",
+        "evidenceUrl": "https://caravancoop.github.io/caravan-ui-docs/foundations/color"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:38:10.457Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "block"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://caravancoop.github.io/caravan-ui-docs",
+      "finalUrl": "https://caravancoop.github.io/caravan-ui-docs/getting-started",
+      "title": "Caravan UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/caravancoop-github-io-caravan-ui-docs/identity.jpg",
+        "sha256": "f56ff910e86c2e4ce06d600649d8064ca037a837e7549b1acd3cd96513e5b301",
+        "width": 1280,
+        "height": 900,
+        "bytes": 130262,
+        "alt": "Caravan UI 首屏：Getting started"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://caravancoop.github.io/caravan-ui-docs",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/caravancoop-github-io-caravan-ui-docs/identity.jpg",
+          "alt": "Caravan UI 首屏：Getting started",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "installCommand",
+      "value": "npm install @caravancoop/ui-kit",
+      "sourceUrl": "https://caravancoop.github.io/caravan-ui-docs/getting-started",
+      "evidence": "Getting started 页 Install Caravan UI 一节下的代码块原文",
+      "confidence": 1
+    },
+    {
+      "field": "componentList",
+      "value": "Avatar、Alert / Banner、Accordion、Button、Badge、Divider、Checkbox、Radio、Slider、Spinner、Toggle、Linear progress、Gauge、Rating、Tooltip",
+      "sourceUrl": "https://caravancoop.github.io/caravan-ui-docs/getting-started",
+      "evidence": "左栏 Components 分组下逐条列出的组件名",
+      "confidence": 1
+    },
+    {
+      "field": "designConcept",
+      "value": "Following the concept of 'Atomic Design'",
+      "sourceUrl": "https://caravancoop.github.io/caravan-ui-docs/getting-started",
+      "evidence": "正文第一段开头，紧接着写 standalone components 与 Angular 前置知识",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "v2.0.3",
+      "sourceUrl": "https://caravancoop.github.io/caravan-ui-docs/getting-started",
+      "evidence": "左上角品牌名 Caravan UI by CARAVAN 旁的粉色版本徽章",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/caravancoop-github-io-caravan-ui-docs.md",
+  "registryUrl": "/r/caravancoop-github-io-caravan-ui-docs.json"
+}

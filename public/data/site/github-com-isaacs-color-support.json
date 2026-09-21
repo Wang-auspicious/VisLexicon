@@ -1,0 +1,159 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "740671ebc03bf6191530d63ec080ea18aa2644a4e462df9ef8e3e7fd4955a7d9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-isaacs-color-support",
+  "entityId": "entity-github-com-isaacs-color-support",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/isaacs/color-support",
+    "finalUrl": "https://github.com/isaacs/color-support",
+    "checkedAt": "2026-09-15T12:52:22.093Z"
+  },
+  "editorial": {
+    "name": "isaacs/color-support",
+    "descriptionZh": "猜当前终端能显示几色的 Node 模块：按 stdout 是否 TTY、TERM、TERM_PROGRAM、COLORTERM、CI 变量逐条推断，返回的对象上带 has16m 这类标记，另有 bin.js 提供命令行入口。",
+    "takeawayZh": "先问终端支持几色，再决定输出降不降级",
+    "noteZh": "README 从 Supports setting the level explicitly as an option 讲起，逐条列推断规则：stdout 不是 TTY 就不支持、TERM 为 dumb 不支持、Windows 按 16 色、Tmux 按 256 色、iTerm.app 3.x 与 MacTerm 算 16m 色，正文里还注明 HyperTerm 已改名 Hyper。USAGE 段给的写法是 testColorSupport(/* options object */)，再按 has16m 分支贴转义序列；README 顶部标题栏只有 USAGE、Options、Return Value、CLI、Credits 五个小节。右侧 About 除 Readme 外还挂 ISC license、Code of conduct、Contributing 与 Security policy，Releases 区只列 6 个 tag，Contributors 1 位，Used by 6.1M。",
+    "recommendation": null,
+    "pricing": "Free, ISC licensed",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是一个给命令行程序用的环境探测模块（终端色深、TTY、CI 变量），交付物是终端输出层的基础设施，属开发工作流工具。",
+        "evidenceUrl": "https://github.com/isaacs/color-support"
+      },
+      {
+        "statement": "仓库同时提供 bin.js 的 CLI 入口与 browser.js，说明它面向脚本与终端环境，而不是面向页面界面的组件。",
+        "evidenceUrl": "https://github.com/isaacs/color-support"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:52:22.093Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "ISC"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/isaacs/color-support",
+      "finalUrl": "https://github.com/isaacs/color-support",
+      "title": "GitHub - isaacs/color-support: A module which will endeavor to guess your terminal's level of color support. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-isaacs-color-support/identity.jpg",
+        "sha256": "cf60ab8646ada3f359f02ada1642ff6070ba6e4c1016cc78576c4b2a5697ca44",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114730,
+        "alt": "isaacs/color-support 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/isaacs/color-support",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-isaacs-color-support/identity.jpg",
+          "alt": "isaacs/color-support 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/isaacs/color-support",
+      "evidence": "右侧 About 区的 ISC license 标签与 LICENSE 文件提交说明里的 isc。",
+      "confidence": 1
+    },
+    {
+      "field": "detectionRules",
+      "value": "非 TTY 不支持；TERM=dumb 不支持；Windows 16 色；Tmux 256 色；CI 或 TEAMCITY_VERSION 且非 TRAVIS 时不支持；iTerm.app 3.x 与 MacTerm 支持 16m",
+      "sourceUrl": "https://github.com/isaacs/color-support",
+      "evidence": "README 开头连续数条的推断规则列表。",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "Used by 6.1M；23 stars / 1 fork；Contributors 1；Releases 只有 6 个 tag、无正式 release 条目",
+      "sourceUrl": "https://github.com/isaacs/color-support",
+      "evidence": "首屏右侧 About 与 Releases 区、星标按钮和 Used by 6.1M 计数。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-isaacs-color-support.md",
+  "registryUrl": "/r/github-com-isaacs-color-support.json"
+}

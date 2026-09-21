@@ -1,0 +1,192 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2d4e0d75d1e892fefe0c20be5940e2709f15485626ec83ea6650d9a228da8529",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "openui-com",
+  "entityId": "entity-openui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "openui.com",
+  "official": {
+    "inputUrl": "https://openui.com",
+    "finalUrl": "https://www.openui.com/",
+    "checkedAt": "2026-09-15T11:47:35.597Z"
+  },
+  "editorial": {
+    "name": "OpenUI",
+    "descriptionZh": "一套面向 agent 界面的开放标准：用流式语言代替 JSON 让模型边生成边渲染图表、表单、卡片、表格与仪表盘，官方提供 React 渲染支持，也声明同一份响应能落到 Vue、Svelte、React Native。",
+    "takeawayZh": "一行 CLI 起项目，让 agent 边流边渲染真 UI",
+    "noteZh": "首屏是一组左右对照演示，标着 Without 与 With OpenUI：同一句 I need a hotel with a modern design in Paris，左边只吐 Modern Hotels in Paris 的长段散文，右边直接排出带图的酒店卡。标题下摆一行 pnpx @openuidev/cli@latest create OpenUI，页头右侧挂 9305 stars。卖点逐条摊开：Renders 3x faster with 67% fewer tokens when compared to JSON based formats、Live data（运行时查工具与 MCP server）、Streaming-first、Safe by default（The model only composes your components and never runs arbitrary code）。WORKS WITH ANY STACK 一栏把 LLM、Backend、Client、Design system 四层分列，Design library 那格写着 ShadCN、Material、DaisyUI；导航里另挂了 OpenUI Chat、AI Dashboards、OpenUI vs JSON、OpenClaw OS。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点主打的是让模型生成界面本身：一份流式语言描述 UI，渲染器实时长出图表、表单、卡片与仪表盘，卖点全在生成速度与 token 节省上，归创意编程与生成式视觉代码这一类。",
+        "evidenceUrl": "https://www.openui.com/"
+      },
+      {
+        "statement": "分类有不确定性：它同时是一套可安装的渲染库与一份开放标准，若按「可引用的界面代码」读也贴近通用界面组件库；这里按首页交付的演示（生成式渲染前后对比）落在生成式代码一侧。",
+        "evidenceUrl": "https://www.openui.com/benchmarks"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:35.597Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "agent",
+      "ai"
+    ],
+    "deliverables": [
+      "code-library",
+      "starter"
+    ],
+    "actions": [
+      "install",
+      "generate",
+      "preview",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [
+      "react",
+      "vue",
+      "svelte",
+      "react-native",
+      "tailwind",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://openui.com",
+      "finalUrl": "https://www.openui.com/",
+      "title": "OpenUI - The Open Standard for Generative UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/openui-com/identity.jpg",
+        "sha256": "402c1ccb1d1b77c1492e5177e24d207ac4f10f98f3df5eea1e7b6947144fc09c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113484,
+        "alt": "OpenUI 首屏：OpenUI"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://openui.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/openui-com/identity.jpg",
+          "alt": "OpenUI 首屏：OpenUI",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "cliCommand",
+      "value": "pnpx @openuidev/cli@latest create OpenUI",
+      "sourceUrl": "https://www.openui.com/",
+      "evidence": "首屏主标题下展示的可复制命令条，旁边是复制按钮。",
+      "confidence": 1
+    },
+    {
+      "field": "tokenClaim",
+      "value": "相比 JSON 格式渲染快 3 倍、token 少 67%",
+      "sourceUrl": "https://www.openui.com/",
+      "evidence": "首屏下方小标题「Renders 3x faster with 67% fewer tokens when compared to JSON based formats」，并链到 View benchmarks。",
+      "confidence": 1
+    },
+    {
+      "field": "renderTargets",
+      "value": "同一份响应可渲染到 React、Vue、Svelte、React Native、email 与 script 标签",
+      "sourceUrl": "https://www.openui.com/",
+      "evidence": "Cross-platform 一条写「One response renders across React, Vue, Svelte, React Native, email, and script tags.」",
+      "confidence": 1
+    },
+    {
+      "field": "runtimeData",
+      "value": "界面可在运行时查询工具与 MCP server 取实时数据",
+      "sourceUrl": "https://www.openui.com/",
+      "evidence": "Live data 一条写「Interfaces query your tools and MCP servers at runtime, so the data is always current.」",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "9,304 stars、各包合计 300 万次以上下载",
+      "sourceUrl": "https://www.openui.com/",
+      "evidence": "Trusted by thousands of developers 区块写「9,304 stars」「3 Million+ downloads across all packages」，导航右侧也挂 9304 stars。",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/openui-com.md",
+  "registryUrl": "/r/openui-com.json"
+}

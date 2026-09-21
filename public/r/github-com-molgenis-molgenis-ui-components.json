@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7ac92e17fb7b16dd2a221f43d68c840aef17302152fbfa8b3f30fb0ff8ebf287",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-molgenis-molgenis-ui-components",
+  "entityId": "entity-github-com-molgenis-molgenis-ui-components",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/molgenis/molgenis-ui-components",
+    "finalUrl": "https://github.com/molgenis/molgenis-ui-components",
+    "checkedAt": "2026-09-15T11:46:32.108Z"
+  },
+  "editorial": {
+    "name": "molgenis/molgenis-ui-components",
+    "descriptionZh": "MOLGENIS 各前端应用共用的 Vue 组件库，README 的 Components 一节目前只列了 ToastComponent；仓库最新 release 停在 v1.4.0，最近一次改动是把 font-awesome 样式表重构进组件、toast 改用 bootstrap alert class。",
+    "takeawayZh": "看 MOLGENIS 前端的 Vue 组件与脚手架命令。",
+    "noteZh": "README 极短：Components 一节只有 ToastComponent 一项，Console commands 给的是 yarn install / yarn serve / yarn build / yarn test:unit / yarn test:e2e / yarn lint，末尾留了 Customize configuration 指向 Configuration Reference；About 写 User interface components for frontend applications in MOLGENIS，Languages 条显示 Vue 53.4%、JavaScript 30.7%、TypeScript 11.5%、HTML 4.4%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是一个装得进前端项目的 Vue 组件包（现有条目 ToastComponent），用户拿走的是组件代码，故归通用界面组件库。",
+        "evidenceUrl": "https://github.com/molgenis/molgenis-ui-components"
+      },
+      {
+        "statement": "候选池标的是 Vue UI 库，Languages 条里 Vue 占 53.4% 与之一致，这条子类成立。",
+        "evidenceUrl": "https://github.com/molgenis/molgenis-ui-components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:32.108Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "source-available"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/molgenis/molgenis-ui-components",
+      "finalUrl": "https://github.com/molgenis/molgenis-ui-components",
+      "title": "GitHub - molgenis/molgenis-ui-components: User interface components for frontend applications in MOLGENIS · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-molgenis-molgenis-ui-components/identity.jpg",
+        "sha256": "cfb2c7841f769174fb8eef20fcae3baf86070e046d8538cf00ce0b6534e1e20a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 129622,
+        "alt": "molgenis/molgenis-ui-components 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "componentList",
+      "value": "README 的 Components 一节目前只有 ToastComponent",
+      "sourceUrl": "https://github.com/molgenis/molgenis-ui-components",
+      "evidence": "README 正文 Components 标题下的一行",
+      "confidence": 1
+    },
+    {
+      "field": "devCommands",
+      "value": "yarn install / yarn serve / yarn build / yarn test:unit / yarn test:e2e / yarn lint",
+      "sourceUrl": "https://github.com/molgenis/molgenis-ui-components",
+      "evidence": "README Console commands 一节",
+      "confidence": 1
+    },
+    {
+      "field": "lastRelease",
+      "value": "v1.4.0，标记为 7 years ago",
+      "sourceUrl": "https://github.com/molgenis/molgenis-ui-components",
+      "evidence": "About 侧栏 Releases 一节",
+      "confidence": 1
+    },
+    {
+      "field": "languageStats",
+      "value": "Vue 53.4% / JavaScript 30.7% / TypeScript 11.5% / HTML 4.4%",
+      "sourceUrl": "https://github.com/molgenis/molgenis-ui-components",
+      "evidence": "About 侧栏 Languages 条",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-molgenis-molgenis-ui-components",
+    "designMdUrl": "https://vislexicon.com/site/github-com-molgenis-molgenis-ui-components.md",
+    "checkedAt": "2026-09-15T11:46:32.108Z",
+    "license": "unknown"
+  }
+}

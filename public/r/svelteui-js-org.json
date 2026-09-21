@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "6dda587257e139d6794d3d141785333e693d0214e36d8aeb3cb04d8fc0168aad",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svelteui-js-org",
+  "entityId": "entity-svelteui-js-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://svelteui.js.org",
+    "finalUrl": "https://js.org/?svelteui",
+    "checkedAt": "2026-09-15T12:08:34.961Z"
+  },
+  "editorial": {
+    "name": "JS.ORG",
+    "descriptionZh": "svelteui.js.org 实际落到了 JS.ORG 的通用首页，页面上没有任何 Svelte UI 相关内容。JS.ORG 本身是为 GitHub Pages 项目提供免费 js.org 子域的公益服务。",
+    "takeawayZh": "站点已失效，只能看到 JS.ORG 的子域申请说明。",
+    "noteZh": "打开 svelteui.js.org 落到的是 https://js.org/?svelteui，标题是 JS.ORG - the JavaScript organization，通篇没有一个字跟 Svelte UI 有关。首屏黑底上只有 JS/ORG 的方块 logo、右上角一个带 X 的 post this! 按钮，黄色大字问 JavaScript 开发者要不要免费空间放项目，下面给出一块 https://foo.js.org 的示例域名。往下是四个编号步骤（页码条 1 2 3 4），第一步讲先去 GitHub 建 Page，右侧留了一个虚线空框，随后是一段 Important 提示和 Terms and Conditions 链接。只能判定这个站已经不在了。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "原始条目 svelteui.js.org 已经不可达，落点页提供的是给 GitHub Pages 项目分配免费子域的托管服务，因此按实际落点归到部署与工作流；Svelte UI 的部分没有拿到任何证据，不做推断。",
+        "evidenceUrl": "https://js.org/?svelteui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:34.961Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [],
+    "technologies": [],
+    "workflowStages": [
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svelteui.js.org",
+      "finalUrl": "https://js.org/?svelteui",
+      "title": "JS.ORG - the JavaScript organization",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/svelteui-js-org/identity.jpg",
+        "sha256": "11d0c0dab7627e6b8af9ace6a624933dbab17aa95c828d7ad3ea4e6883e92398",
+        "width": 1280,
+        "height": 900,
+        "bytes": 112141,
+        "alt": "JS.ORG 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "redirect",
+      "value": "svelteui.js.org → https://js.org/?svelteui，页面内容与 Svelte UI 无关",
+      "sourceUrl": "https://js.org/?svelteui",
+      "evidence": "浏览器实际落点与首屏标题 JS.ORG - the JavaScript organization",
+      "confidence": 1
+    },
+    {
+      "field": "offer",
+      "value": "为 GitHub Pages 项目提供免费的 https://foo.js.org 形式子域，共四步",
+      "sourceUrl": "https://js.org/?svelteui",
+      "evidence": "首屏正文与编号步骤区",
+      "confidence": 0.9
+    },
+    {
+      "field": "contentStatus",
+      "value": "无任何公开的 Svelte UI 内容",
+      "sourceUrl": "https://js.org/?svelteui",
+      "evidence": "首屏与正文通篇只有 JS.ORG 的子域申请说明",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/svelteui-js-org",
+    "designMdUrl": "https://vislexicon.com/site/svelteui-js-org.md",
+    "checkedAt": "2026-09-15T12:08:34.961Z",
+    "license": "unknown"
+  }
+}

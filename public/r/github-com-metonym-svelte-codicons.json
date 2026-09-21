@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a5f92c9eb354c7090df9c1384fcbfc798d031f5adfc3578c37f184570c3534e9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-metonym-svelte-codicons",
+  "entityId": "entity-github-com-metonym-svelte-codicons",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/metonym/svelte-codicons",
+    "finalUrl": "https://github.com/metonym/svelte-codicons",
+    "checkedAt": "2026-09-15T12:08:54.628Z"
+  },
+  "editorial": {
+    "name": "metonym/svelte-codicons",
+    "descriptionZh": "把 VS Code 自带的 Codicons 转成 Svelte 组件的零依赖图标库，图标源文件取自 @vscode/codicons。",
+    "takeawayZh": "把 VS Code 图标包直接当 Svelte 组件用",
+    "noteZh": "README 说明这套零依赖库用 svelvg 把 @vscode/codicons 的 SVG 转成 Svelte 组件，给了整包 import 和 lib/Add.svelte 直引两种用法，并提示可以用 svelte:component 按对象批量渲染，尺寸靠 width/height 属性（默认 16px），颜色靠 fill。仓库根目录放着 ICON_INDEX.md 做图标索引，About 栏挂 metonym.github.io/svelte-codicons 与 codicons、icon、icon-library、svelte、svelte-components、vscode 六个 topic。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一组 npm 安装的 Svelte 组件（<Add />、<Calendar /> 这类），用户拿走的是代码组件而不是图标素材文件，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/metonym/svelte-codicons"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:54.628Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "icon",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "icon",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "svg",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT",
+      "CC-BY-4.0"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/metonym/svelte-codicons",
+      "finalUrl": "https://github.com/metonym/svelte-codicons",
+      "title": "GitHub - metonym/svelte-codicons: VS Code Codicons as Svelte components · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-metonym-svelte-codicons/identity.jpg",
+        "sha256": "ab8f7df71ca3bd37d510aa767f90d3cd6d708c86092c6dbe9cc153342728e384",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113725,
+        "alt": "metonym/svelte-codicons 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT（图标本体 vscode-codicons 为 CC-BY-4.0）",
+      "sourceUrl": "https://github.com/metonym/svelte-codicons",
+      "evidence": "README 的 License 段写 MIT，并注明 vscode-codicons is licensed as CC-BY-4.0",
+      "confidence": 1
+    },
+    {
+      "field": "installCommand",
+      "value": "npm i -D svelte-codicons",
+      "sourceUrl": "https://github.com/metonym/svelte-codicons",
+      "evidence": "README Installation 段列出 NPM / pnpm / Bun / Yarn 四条命令",
+      "confidence": 1
+    },
+    {
+      "field": "iconIndex",
+      "value": "ICON_INDEX.md",
+      "sourceUrl": "https://github.com/metonym/svelte-codicons",
+      "evidence": "README 写 Refer to ICON_INDEX.md for a list of supported icons，该文件也在仓库文件表里",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。MIT（图标本体 vscode-codicons 为 CC-BY-4.0）：README 的 License 段写 MIT，并注明 vscode-codicons is licensed as CC-BY-4.0",
+      "该条目登记了多个许可值（MIT / CC-BY-4.0），目录之间可能不同，逐目录确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-metonym-svelte-codicons",
+    "designMdUrl": "https://vislexicon.com/site/github-com-metonym-svelte-codicons.md",
+    "checkedAt": "2026-09-15T12:08:54.628Z",
+    "license": "MIT / CC-BY-4.0"
+  }
+}

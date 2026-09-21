@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a7cf42447a5acebb6ecbcd577050a64bf69a4af68c7c2e7eb9ae96674523fd62",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "toolness-github-io-accessible-color-matrix",
+  "entityId": "entity-toolness-github-io-accessible-color-matrix",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://toolness.github.io/accessible-color-matrix",
+    "finalUrl": "https://toolness.github.io/accessible-color-matrix/",
+    "checkedAt": "2026-09-15T12:46:48.770Z"
+  },
+  "editorial": {
+    "name": "Accessible color palette builder",
+    "descriptionZh": "一个静态的色板对比度体检页：给定从 White 到 Black 的六档色，逐对列出文字色压背景色的组合，通过 4.5:1 的方格给出 Aa 试样，不通过的盖上斜纹并写明请勿使用。",
+    "takeawayZh": "把一套色板逐对跑一遍 508 对比度，通过的留下、不通过的标出",
+    "noteZh": "进去先看到六块比色卡横排：White #FFFFFF、Light #B3EFFF、Bright #00CFFF、Medium #046B99、Dark #1C304A、Black #000000，下面一个 Edit palette 按钮。再往下一张表叫 Accessible color combinations，表头是六种文字色，行是 Black background 与 Dark background，格子里放 Aa 试样；不合规的格子直接盖一条斜纹，上方提示写 Please don't use these color combinations。正文逐条给出比值，比如白字压黑底是 21:1。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "research-quality-tools",
+    "subcategory": "accessibility-audit-remediation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "输出物是一份色板对比度审计表：判定线是 4.5:1 并引用 Section 508，用户来这儿是把色板跑一遍看哪几组不合规，与同批 Stark 那条同属无障碍审计与修复。",
+        "evidenceUrl": "https://toolness.github.io/accessible-color-matrix/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:46:48.770Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "report"
+    ],
+    "actions": [
+      "audit",
+      "edit"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://toolness.github.io/accessible-color-matrix",
+      "finalUrl": "https://toolness.github.io/accessible-color-matrix/",
+      "title": "Accessible color palette builder",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/toolness-github-io-accessible-color-matrix/identity.jpg",
+        "sha256": "ba15b89348386a585ce72f6574fc66824dfdebd9280bf0a4aa0c90f0d4cd56a5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 97203,
+        "alt": "Accessible color palette builder 首屏：Accessible color palette builder"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "presetPalette",
+      "value": "六档预设色：White #FFFFFF、Light #B3EFFF、Bright #00CFFF、Medium #046B99、Dark #1C304A、Black #000000",
+      "sourceUrl": "https://toolness.github.io/accessible-color-matrix/",
+      "evidence": "首屏横排的六块比色卡及其色名与色值，逐个数过",
+      "confidence": 1
+    },
+    {
+      "field": "contrastThreshold",
+      "value": "判定线 4.5:1，引用 Section 508 对正文的要求",
+      "sourceUrl": "https://toolness.github.io/accessible-color-matrix/",
+      "evidence": "Accessible color combinations 段上方的警示语与正文逐条对比度说明",
+      "confidence": 1
+    },
+    {
+      "field": "editEntry",
+      "value": "色板下方有 Edit palette 按钮",
+      "sourceUrl": "https://toolness.github.io/accessible-color-matrix/",
+      "evidence": "首屏六块色卡下方的蓝色按钮",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/toolness-github-io-accessible-color-matrix",
+    "designMdUrl": "https://vislexicon.com/site/toolness-github-io-accessible-color-matrix.md",
+    "checkedAt": "2026-09-15T12:46:48.770Z",
+    "license": "unknown"
+  }
+}

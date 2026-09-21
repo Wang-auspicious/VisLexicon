@@ -1,0 +1,184 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a596cf051e139041ffe43738ee9926abd1062913601076bb950d192946727110",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "resend-com-home",
+  "entityId": "entity-resend-com-home",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "resend.com",
+  "official": {
+    "inputUrl": "https://resend.com/home",
+    "finalUrl": "https://resend.com/home",
+    "checkedAt": "2026-09-15T11:17:38.002Z"
+  },
+  "editorial": {
+    "name": "Resend",
+    "descriptionZh": "开发者邮件发送 API 的官网，主打事务性与营销邮件投递，提供 Node、Ruby、Python、Go、Rust 等十几种语言的 SDK，以及用 React 写邮件模板的方式。",
+    "takeawayZh": "用 SDK 发事务邮件，还能用 React 写模板",
+    "noteZh": "整页纯黑，首屏左边一枚 Join us at Resend Forward 的胶囊，主标 Email for developers，副标 The best way to reach humans instead of spam folders.，按钮是 Get started 与 Documentation，右下角一道暗光。往下 Integrate 一段列满 SDK：Node.js、Serverless、Ruby、Python、PHP、CLI、Go、Rust、Java、Elixir、.NET、REST、SMTP，再叠 Next.js、Remix、Nuxt、Express、Hono、Redwood、Bun、Astro 的框架列表，右侧直接给出一段 new Resend('re_xxxxxxxxx') 的代码和 View on GitHub 与 Download ZIP。之后依次是 Test mode、Modular webhooks、Write using a delightful editor、Develop emails using React、Broadcast analytics 几块。",
+    "recommendation": null,
+    "pricing": "unknown（导航有 Pricing 与 Enterprise，首页未列价格）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是给开发者接入的邮件发送 API 与多语言 SDK，用户拿走的是装进项目里的库，归构建与开发工作流。",
+        "evidenceUrl": "https://resend.com/docs"
+      },
+      {
+        "statement": "首屏第二屏就是可复制运行的代码块与 13 种 SDK 入口，页面主体是开发接入说明而不是产品功能宣传。",
+        "evidenceUrl": "https://resend.com/home"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:17:38.002Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "marketing"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "publish",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web",
+      "api",
+      "cli"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://resend.com/home",
+      "finalUrl": "https://resend.com/home",
+      "title": "Resend · Email for developers",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/resend-com-home/identity.jpg",
+        "sha256": "daafec2d00f5bb85b536b3b06b1949dc08ebc7aff1e962e6cf285fe03eecda54",
+        "width": 1280,
+        "height": 900,
+        "bytes": 43547,
+        "alt": "Resend 首屏：Email for developers"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://resend.com/home",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/resend-com-home/identity.jpg",
+          "alt": "Resend 首屏：Email for developers",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "h1",
+      "value": "Email for developers",
+      "sourceUrl": "https://resend.com/home",
+      "evidence": "首屏纯黑底上的衬线大标题",
+      "confidence": 1
+    },
+    {
+      "field": "sdks",
+      "value": "Node.js、Serverless、Ruby、Python、PHP、CLI、Go、Rust、Java、Elixir、.NET、REST、SMTP；框架含 Next.js、Remix、Nuxt、Express、Hono、Redwood、Bun、Astro",
+      "sourceUrl": "https://resend.com/docs",
+      "evidence": "Integrate 一段的两排语言与框架标签",
+      "confidence": 1
+    },
+    {
+      "field": "code",
+      "value": "首页直接给出 const resend = new Resend('re_xxxxxxxxx') 的发送示例与 View on GitHub、Download ZIP 两个入口",
+      "sourceUrl": "https://resend.com/home",
+      "evidence": "Integrate 一段右侧的代码面板",
+      "confidence": 1
+    },
+    {
+      "field": "features",
+      "value": "Test mode、Modular webhooks、Contact management、Broadcast analytics、Develop emails using React",
+      "sourceUrl": "https://resend.com/features/templates",
+      "evidence": "首页往下的五个功能段标题",
+      "confidence": 1
+    },
+    {
+      "field": "security",
+      "value": "站内有 /security/soc-2 与 /security/gdpr 两个独立页面",
+      "sourceUrl": "https://resend.com/security",
+      "evidence": "页脚与 /security 路径下的两条子页",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/resend-com-home.md",
+  "registryUrl": "/r/resend-com-home.json"
+}

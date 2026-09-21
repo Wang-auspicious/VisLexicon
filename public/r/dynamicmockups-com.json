@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5d59c5d8482f2ae5a4dc0eb048b969898bb4d06fd6642f6d87112feca023993e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "dynamicmockups-com",
+  "entityId": "entity-dynamicmockups-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://dynamicmockups.com",
+    "finalUrl": "https://dynamicmockups.com/",
+    "checkedAt": "2026-09-15T11:57:46.368Z"
+  },
+  "editorial": {
+    "name": "Dynamic Mockups",
+    "descriptionZh": "给电商和按需印刷卖家用的样机自动化工具，用现成模板或自己的 PSD 批量出商品图，也能直接调 REST API 与 MCP。",
+    "takeawayZh": "传设计稿或调 Mockup API，批量生成商品样机图",
+    "noteZh": "首屏正中是一枚 Product Hunt 的 Design Tools 徽标，下面大标题 Create mockups that sell. At any scale.，副文案说 photorealistic mockups from 10,000+ templates or your own Photoshop files；再下面一个输入框预填着 my logo on a beige tee, morning light, linen backdrop…，左下 Attach artwork 可以上传 PNG/JPEG/WebP/SVG，右下是 Generate 按钮。导航是 Templates / Features / Resources / Mockup API / Pricing / Talk to Human 加 Login 与 Start Free。正文按 Templates、Custom PSDs、Batch & AI 三块讲，API 一节贴出 POST https://app.dynamicmockups.com/api/v1/renders 的 fetch 示例并提到官方 MCP server 和四个 SDK。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是用自己设计稿生成的产品样机图，站点核心是一个生成/批量渲染工具（外加 API），归图像创作工具；它服务于电商上架流程，而非素材库。",
+        "evidenceUrl": "https://dynamicmockups.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:46.368Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce",
+      "marketing"
+    ],
+    "deliverables": [
+      "image",
+      "template"
+    ],
+    "actions": [
+      "generate",
+      "export",
+      "browse"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "api",
+      "mcp",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "publish"
+    ],
+    "audiences": [
+      "brand-team",
+      "content-creator"
+    ],
+    "access": [
+      "freemium",
+      "paid"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://dynamicmockups.com",
+      "finalUrl": "https://dynamicmockups.com/",
+      "title": "Create Realistic Mockups at Scale​ - Dynamic Mockups",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/dynamicmockups-com/identity.jpg",
+        "sha256": "981743c41b719bd7f4dd1a134ceae4ee073cb9563f89a22e0f2be27cc667996e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 57927,
+        "alt": "Dynamic Mockups 首屏：Create mockups that sell. At any scale."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "template-count",
+      "value": "10,000+ 现成样机模板",
+      "sourceUrl": "https://dynamicmockups.com/",
+      "evidence": "首屏副文案与正文 Get started with 10,000+ ready-to-use mockups",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "POST https://app.dynamicmockups.com/api/v1/renders，带 X-API-KEY 头，约一秒返回图片地址",
+      "sourceUrl": "https://dynamicmockups.com/",
+      "evidence": "Mockup API 小节里的 fetch 代码示例与说明 One REST call returns a photorealistic image in about a second",
+      "confidence": 1
+    },
+    {
+      "field": "integrations",
+      "value": "Etsy、Shopify、WordPress、Zapier、Make",
+      "sourceUrl": "https://dynamicmockups.com/integrations",
+      "evidence": "正文 Automate your workflow with native integrations 段落列出的平台",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Start Free 起步，Pricing 页另有付费档",
+      "sourceUrl": "https://dynamicmockups.com/pricing",
+      "evidence": "导航里的 Start Free 与 Pricing 入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/dynamicmockups-com",
+    "designMdUrl": "https://vislexicon.com/site/dynamicmockups-com.md",
+    "checkedAt": "2026-09-15T11:57:46.368Z",
+    "license": "unknown"
+  }
+}

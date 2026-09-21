@@ -1,0 +1,182 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5de684a46a9e95482ddf6d0419c89153f34dc557d76be45c5e904ea66092503d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-openzeppelin-openzeppelin-ui",
+  "entityId": "entity-github-com-openzeppelin-openzeppelin-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/OpenZeppelin/openzeppelin-ui",
+    "finalUrl": "https://github.com/OpenZeppelin/openzeppelin-ui",
+    "checkedAt": "2026-09-15T11:47:47.124Z"
+  },
+  "editorial": {
+    "name": "OpenZeppelin/openzeppelin-ui",
+    "descriptionZh": "OpenZeppelin 出的区块链 dapp 前端组件与工具库：以 monorepo 分包发布 React 组件，钱包账户、账户别名存储、ENS 名称解析这些链上交互难点都收在里面。",
+    "takeawayZh": "拿一套已处理 ENS 解析的区块链 React 组件",
+    "noteZh": "About 一句话到位：OpenZeppelin UI - React components and utilities for blockchain applications，许可证一行写 AGPL-3.0 license。README 的 Repository files navigation 铺得很长，从 Packages、Installation、Version compatibility 一路排到 Quick Start、Architecture、Requirements、Local Development (Consuming Projects)、Contributing、Documentation、License，说明它面向的是要接进自己项目的人。目录里 examples、packages、docs、specs、scripts 并排，提交历史能看到 feat: ENS name resolution across the UI kit (SF-1–SF-6)、feat(components): preview primitives for code view, file tree and bot…、fix(deps): strip the proprietary MetaMask SDK from the install tree。Releases 已经到 135 个，最新是 @openzeppelin/ui-dev-cli@…。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可按包安装的 React 组件与工具函数，README 专列 Installation 与 Version compatibility 两节讲怎么接进消费方项目，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/OpenZeppelin/openzeppelin-ui"
+      },
+      {
+        "statement": "它不是完整设计系统（页面上没有 token、样式指南一层），虽然 examples 与 docs 齐备，但主体是组件与链上工具函数，故不落在设计系统套件。",
+        "evidenceUrl": "https://github.com/OpenZeppelin/openzeppelin-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:47.124Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "primitive"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "AGPL-3.0-only"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/OpenZeppelin/openzeppelin-ui",
+      "finalUrl": "https://github.com/OpenZeppelin/openzeppelin-ui",
+      "title": "GitHub - OpenZeppelin/openzeppelin-ui: OpenZeppelin UI - React components and utilities for blockchain applications · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-openzeppelin-openzeppelin-ui/identity.jpg",
+        "sha256": "ce8fbdb7667839c84cc52c35316bdeca6210739e6be73f7dcfdbd1e6d3156f96",
+        "width": 1280,
+        "height": 900,
+        "bytes": 152603,
+        "alt": "OpenZeppelin/openzeppelin-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/OpenZeppelin/openzeppelin-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-openzeppelin-openzeppelin-ui/identity.jpg",
+          "alt": "OpenZeppelin/openzeppelin-ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "AGPL-3.0",
+      "sourceUrl": "https://github.com/OpenZeppelin/openzeppelin-ui",
+      "evidence": "首屏 About 区的「AGPL-3.0 license」一行，仓库根目录另有 LICENSE 文件。",
+      "confidence": 1
+    },
+    {
+      "field": "purpose",
+      "value": "面向区块链应用的 React 组件与工具函数",
+      "sourceUrl": "https://github.com/OpenZeppelin/openzeppelin-ui",
+      "evidence": "About 与仓库描述原文「OpenZeppelin UI - React components and utilities for blockchain applications」。",
+      "confidence": 1
+    },
+    {
+      "field": "ensSupport",
+      "value": "整套 UI kit 支持 ENS 名称解析（SF-1–SF-6）",
+      "sourceUrl": "https://github.com/OpenZeppelin/openzeppelin-ui",
+      "evidence": "根目录 .pnpmfile.test.cjs 那一行的提交信息「feat: ENS name resolution across the UI kit (SF-1–SF-6) (#180)」。",
+      "confidence": 0.9
+    },
+    {
+      "field": "dependencyNote",
+      "value": "安装树中剔除了专有的 MetaMask SDK",
+      "sourceUrl": "https://github.com/OpenZeppelin/openzeppelin-ui",
+      "evidence": "提交信息「fix(deps): strip the proprietary MetaMask SDK from the install tree (#…)」，对应文件为 .pnpmfile.cjs。",
+      "confidence": 0.9
+    },
+    {
+      "field": "releaseCount",
+      "value": "135 个 Releases",
+      "sourceUrl": "https://github.com/OpenZeppelin/openzeppelin-ui",
+      "evidence": "右侧 About 区 Releases 135 (135) 与 Latest 标签下的 @openzeppelin/ui-dev-cli@…。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。AGPL-3.0：首屏 About 区的「AGPL-3.0 license」一行，仓库根目录另有 LICENSE 文件。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-openzeppelin-openzeppelin-ui.md",
+  "registryUrl": "/r/github-com-openzeppelin-openzeppelin-ui.json"
+}

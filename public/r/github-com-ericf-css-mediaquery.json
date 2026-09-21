@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "6cb95afe6b843afbb483b7ec3d6d2711f5877a11b3a8611eb74be077cdd609c0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-ericf-css-mediaquery",
+  "entityId": "entity-github-com-ericf-css-mediaquery",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/ericf/css-mediaquery",
+    "finalUrl": "https://github.com/ericf/css-mediaquery",
+    "checkedAt": "2026-09-15T11:57:25.964Z"
+  },
+  "editorial": {
+    "name": "ericf/css-mediaquery",
+    "descriptionZh": "一个 npm 包，把 CSS 媒体查询串解析成 AST，并判断它跟某组设备值是否匹配，对外只有 parse() 和 match() 两个导出。README 举的例子是 screen and (min-width: 40em) 对 { type: 'screen', width: '1024px' }。",
+    "takeawayZh": "用 match() 判断媒体查询是否命中当前设备",
+    "noteZh": "README 的 Usage 一节把两个导出讲清楚：parse() 把媒体查询串转成带 inverse、type、expressions 的节点，match() 拿媒体查询跟一个描述设备当前状态的 JS 对象比对，示例是 mediaQuery.match('screen and (min-width: 40em)', { type: 'screen', width: '1024px' }) 返回 true。Parsing 一节还特地说明现成的 CSS parser 对媒体查询细节处理得不好，这正是它存在的理由；示例里的 type 不能传 all。右侧 About 写 Parses and determines if a given CSS Media Query matches a set of values via JavaScript，Used by 190K、Stars 116、Forks 19。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 npm 安装的解析与匹配库，对外只有 parse() 与 match() 两个函数，用户拿到的是代码依赖；候选池给的 Tailwind 组件标签与页面内容无关。",
+        "evidenceUrl": "https://github.com/ericf/css-mediaquery"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:25.964Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ericf/css-mediaquery",
+      "finalUrl": "https://github.com/ericf/css-mediaquery",
+      "title": "GitHub - ericf/css-mediaquery: Parses and determines if a given CSS Media Query matches a set of values via JavaScript. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-ericf-css-mediaquery/identity.jpg",
+        "sha256": "4fb56236ddd2f05e4a5b7bcfe5e24f29b092ef3a8b63ba5bd753aeaa7db433ff",
+        "width": 1280,
+        "height": 900,
+        "bytes": 126854,
+        "alt": "ericf/css-mediaquery 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "exports",
+      "value": "parse() 与 match()",
+      "sourceUrl": "https://github.com/ericf/css-mediaquery",
+      "evidence": "README Usage 一节的 This package has two exports: parse(), and match()",
+      "confidence": 1
+    },
+    {
+      "field": "example",
+      "value": "match('screen and (min-width: 40em)', { type: 'screen', width: '1024px' }) 返回 true",
+      "sourceUrl": "https://github.com/ericf/css-mediaquery",
+      "evidence": "README Matching 一节的代码与注释 // => true",
+      "confidence": 1
+    },
+    {
+      "field": "why",
+      "value": "现成 CSS parser 解析媒体查询细节不够，所以单独做这个包",
+      "sourceUrl": "https://github.com/ericf/css-mediaquery",
+      "evidence": "README Parsing 一节开头 Existing CSS Parsers don't do a great job at parsing the details of media queries.",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "Used by 190K、Stars 116",
+      "sourceUrl": "https://github.com/ericf/css-mediaquery",
+      "evidence": "右侧 About 的 Used by 190K 面板与仓库头部 Star 116",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/ericf/css-mediaquery",
+      "evidence": "公开 npm 包，仓库无付费入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-ericf-css-mediaquery",
+    "designMdUrl": "https://vislexicon.com/site/github-com-ericf-css-mediaquery.md",
+    "checkedAt": "2026-09-15T11:57:25.964Z",
+    "license": "unknown"
+  }
+}

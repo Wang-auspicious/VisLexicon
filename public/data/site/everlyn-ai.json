@@ -1,0 +1,142 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3b288d9a6ba3d3a3db3fbba57fa5474b24afdb4397bba62c85d7560ca3e344d3",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "everlyn-ai",
+  "entityId": "entity-everlyn-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "everlyn.ai",
+  "official": {
+    "inputUrl": "https://everlyn.ai",
+    "finalUrl": "https://everlyn.ai/",
+    "checkedAt": "2026-09-15T09:49:22.467Z"
+  },
+  "editorial": {
+    "name": "Everlyn",
+    "descriptionZh": "本轮实测时首屏是纯白，页面上没有任何可见文字或图片，DOM 里只有 Next.js 的脚本分片；除域名 everlyn.ai 外，没能确认它做什么、给谁用。",
+    "takeawayZh": "首屏全白，本轮没能确认它做什么。",
+    "noteZh": "打开后是一张全白的 1280×900 截图，画面里找不到任何可见元素，正文只剩 self.__next_f.push 这类 Next.js 流式数据的模块 ID 和 chunk 路径，找不出一个可读的栏目名或标题。HTTP 阶段拿到的 title 和 description 也是空字符串，所以连站点自称都没有。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据不足：页面全白、正文无任何可读内容，唯一线索是候选池从 toools.design 的 AI 设计工具清单收录了它，暂按 AI 创作工具归入本小类，此分类基本不可信，建议下一轮复测后再定。",
+        "evidenceUrl": "https://everlyn.ai/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:49:22.467Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://everlyn.ai",
+      "finalUrl": "https://everlyn.ai/",
+      "title": "",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/everlyn-ai/identity.jpg",
+        "sha256": "aee3efb4b94f7e4712d55b025c50594baf767751a6287089869b7dd9491616c1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 7600,
+        "alt": "Everlyn 首屏"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://everlyn.ai",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/everlyn-ai/identity.jpg",
+          "alt": "Everlyn 首屏",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "renderState",
+      "value": "首屏纯白，无可见文字与图片",
+      "sourceUrl": "https://everlyn.ai/",
+      "evidence": "1280×900 截图为全白；DOM 统计 imgCount=0、formCount=0",
+      "confidence": 1
+    },
+    {
+      "field": "title",
+      "value": "空",
+      "sourceUrl": "https://everlyn.ai/",
+      "evidence": "HTTP 阶段与渲染后的 title、description 都是空字符串",
+      "confidence": 1
+    },
+    {
+      "field": "bodyContent",
+      "value": "仅 Next.js 流式脚本分片",
+      "sourceUrl": "https://everlyn.ai/",
+      "evidence": "正文前 2200 字全是 self.__next_f.push 的 chunk 路径与模块编号",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/everlyn-ai.md",
+  "registryUrl": "/r/everlyn-ai.json"
+}

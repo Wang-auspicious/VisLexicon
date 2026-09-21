@@ -1,0 +1,154 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d49941df518a4521a6c99766f46eef89d1a0ca4e91c13edf67462bc7f6cbec12",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-voyant-travel-voyant",
+  "entityId": "entity-github-com-voyant-travel-voyant",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/voyant-travel/voyant",
+    "finalUrl": "https://github.com/voyant-travel/voyant",
+    "checkedAt": "2026-09-15T11:54:49.131Z"
+  },
+  "editorial": {
+    "name": "voyant-travel/voyant",
+    "descriptionZh": "一套可自托管的旅行预订平台 monorepo：apps 下是能部署的应用、packages 下是模块，README 从 What is Voyant?、How it runs 讲到 The module surface 与 Extending the platform，许可已改为 Apache-2.0。",
+    "takeawayZh": "fork 这套 monorepo 改成自家预订平台",
+    "noteZh": "README 的章节顺序是 Getting started / What is Voyant? / How it runs / The module surface / Extending the platform / Architecture；文件树里 .agent-evidence、.changeset、.claude、.codex、.depot 一长串排在 apps 和 packages 前面，LICENSE 那条提交信息写着 chore: relicense to Apache-2.0。右侧 About 挂着 voyant.travel 外链和 travel、travel-app、travel-tech 三个 topic，Languages 条上 TypeScript 95.3%，189 Releases、6 Contributors。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "templates-design-files",
+    "subcategory": "site-app-starters",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户来这里最直接能拿走的是整套应用底座——apps 下可部署的应用加 packages 下可替换的模块，README 专门用 The module surface 与 Extending the platform 两节讲怎么改，所以归到网站与应用模板；它体量已经接近成品平台而非轻量 starter，这一层判断有不确定性。",
+        "evidenceUrl": "https://github.com/voyant-travel/voyant"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:54:49.131Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/voyant-travel/voyant",
+      "finalUrl": "https://github.com/voyant-travel/voyant",
+      "title": "GitHub - voyant-travel/voyant · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-voyant-travel-voyant/identity.jpg",
+        "sha256": "e683da76a9ce45455b76a01d4041f3c144ca448f1299e67571edbfb5812ba355",
+        "width": 1280,
+        "height": 900,
+        "bytes": 140353,
+        "alt": "voyant-travel/voyant 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/voyant-travel/voyant",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-voyant-travel-voyant/identity.jpg",
+          "alt": "voyant-travel/voyant 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/voyant-travel/voyant",
+      "evidence": "右侧 About 栏显示 Apache-2.0 license，文件树里 LICENSE 的提交信息是 chore: relicense to Apache-2.0 and refresh README",
+      "confidence": 1
+    },
+    {
+      "field": "repo-structure",
+      "value": "apps / packages / docs / examples/operator-demo / output/playwright",
+      "sourceUrl": "https://github.com/voyant-travel/voyant",
+      "evidence": "仓库首页文件列表里这几块的名称与各自最近一次提交说明",
+      "confidence": 1
+    },
+    {
+      "field": "readme-outline",
+      "value": "What is Voyant? / How it runs / The module surface / Extending the platform / Architecture",
+      "sourceUrl": "https://github.com/voyant-travel/voyant",
+      "evidence": "README 各级标题按顺序排出的目录结构",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-voyant-travel-voyant.md",
+  "registryUrl": "/r/github-com-voyant-travel-voyant.json"
+}

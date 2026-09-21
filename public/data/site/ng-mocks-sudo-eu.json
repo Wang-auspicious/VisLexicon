@@ -1,0 +1,170 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "03e9d3e45c45a3b2409f4fb943bf33ab63c5493103f56680e9b97ba8621c5150",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "ng-mocks-sudo-eu",
+  "entityId": "entity-ng-mocks-sudo-eu",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "ng-mocks.sudo.eu",
+  "official": {
+    "inputUrl": "https://ng-mocks.sudo.eu",
+    "finalUrl": "https://ng-mocks.sudo.eu/",
+    "checkedAt": "2026-09-15T12:02:11.549Z"
+  },
+  "editorial": {
+    "name": "ng-mocks",
+    "descriptionZh": "Angular 单测用的 mock 库，把组件、指令、管道、模块和 service 换成保留接口、去掉实现的替身。文档按 Classic tools 与 Contemporary tools 两代 API 分开讲，页首挂着一张 Angular 22 到 5 的兼容表。",
+    "takeawayZh": "一行 MockComponent 替掉测试里的重依赖",
+    "noteZh": "页首一条可关闭的通栏横幅写着 If you like ng-mocks, please support it with a star on GitHub，顶栏左侧是 ng-mocks 字样，右侧排着 Test examples、Try on CodeSandbox、Try on StackBlitz、Run tests on CI、Sponsor、GitHub repo、NPM package 和一盏明暗灯。左侧栏把 API 切成两段：Classic tools 下面是 MockComponent、MockDirective、MockPipe、MockProvider、MockService (classes)、MockModule、Testing TemplateRef，Contemporary tools 下面是 MockBuilder、MockRender、MockInstance，再往下还有 ngMocks 与 Helper functions。正文标题下挂着 chat on gitter、npm v14.17.6、build passing、coverage 100% 四枚徽章，紧接一张兼容表，横列是 angular / ng-mocks / jasmine / jest / vitest / ivy / standalone / signals / defer，第一行 22 到 latest 全是 yes，往下 21、20、19、18、17、16 一路排；右侧栏是 Quick Navigation、Very short introduction、Extra 三节。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是一个装进测试工程、替掉依赖声明的 npm 包，产出是测试代码可运行而不是界面，故归构建/开发工作流这一类工具；受控词典里的 usability-testing-experimentation 指的是可用性实验，跟单元测试不是一回事，所以没往研究测试类放，这条我拿不太准。",
+        "evidenceUrl": "https://ng-mocks.sudo.eu/"
+      },
+      {
+        "statement": "顶栏直接给出 Run tests on CI、Try on CodeSandbox、Try on StackBlitz 与 NPM package 四个入口，交付形态是开发期依赖而非设计资源。",
+        "evidenceUrl": "https://ng-mocks.sudo.eu/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:11.549Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn",
+      "test"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular"
+    ],
+    "workflowStages": [
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ng-mocks.sudo.eu",
+      "finalUrl": "https://ng-mocks.sudo.eu/",
+      "title": "Mock components, services, and more to simplify Angular testing | ng-mocks",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/ng-mocks-sudo-eu/identity.jpg",
+        "sha256": "02675293bd1dbc25ab9d535e9470b910022f004b7c16985ec4497fb4ea4fe794",
+        "width": 1280,
+        "height": 900,
+        "bytes": 146410,
+        "alt": "ng-mocks 首屏：Mock components, services, and more to simplify Angular test"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://ng-mocks.sudo.eu",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/ng-mocks-sudo-eu/identity.jpg",
+          "alt": "ng-mocks 首屏：Mock components, services, and more to simplify Angular test",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "compatibility",
+      "value": "Angular 22 到 5 的兼容表，标注对 jasmine、jest、vitest、ivy、standalone、signals、defer 的支持情况",
+      "sourceUrl": "https://ng-mocks.sudo.eu/",
+      "evidence": "首页 The current version of ng-mocks has been tested and can be used with 下方的表格",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "Classic tools 含 MockComponent、MockDirective、MockPipe、MockProvider、MockService (classes)、MockModule、Testing TemplateRef；Contemporary tools 含 MockBuilder、MockRender、MockInstance",
+      "sourceUrl": "https://ng-mocks.sudo.eu/",
+      "evidence": "左侧导航中的两段小标题与其下条目",
+      "confidence": 1
+    },
+    {
+      "field": "coverage",
+      "value": "npm v14.17.6、build passing、coverage 100%",
+      "sourceUrl": "https://ng-mocks.sudo.eu/",
+      "evidence": "首页标题下方的四枚徽章",
+      "confidence": 1
+    },
+    {
+      "field": "vitest",
+      "value": "Angular 20 的原生 Vitest 支持是 zoneless-only，因为其支持的 Zone.js 版本没有 Vitest patch",
+      "sourceUrl": "https://ng-mocks.sudo.eu/",
+      "evidence": "兼容表下方的一段说明",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/ng-mocks-sudo-eu.md",
+  "registryUrl": "/r/ng-mocks-sudo-eu.json"
+}

@@ -1,0 +1,179 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2d558904f2d778d97ac8e0144221667281197574189447ced349ecb87eb17efb",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "postmarkapp-com",
+  "entityId": "entity-postmarkapp-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "postmarkapp.com",
+  "official": {
+    "inputUrl": "https://postmarkapp.com",
+    "finalUrl": "https://postmarkapp.com/",
+    "checkedAt": "2026-09-15T11:17:03.250Z"
+  },
+  "editorial": {
+    "name": "Postmark",
+    "descriptionZh": "事务邮件投递服务，走 API 或 SMTP 发信，用 Message Streams 把营销信和事务信分开，主打送达率。给要保证验证码、订单通知能进收件箱的开发者。",
+    "takeawayZh": "看它用 Message Streams 怎么把两类信分开",
+    "noteZh": "整页亮黄底，顶栏一条深色横幅写 🤖 Teach your AI coding agent how to send email with Postmark Skills，旁边 Learn more，logo 上方还标着 ActiveCampaign。首屏左边是衬线大字 The email delivery service that people actually like，配 Stop worrying if your emails made it to the inbox, and get back to focusing on what matters—building great products.，两个入口是蓝色 Start free trial 与带下划线的 API documentation →；右半边是很长一列用户推文卡片，作者有 Kieran Masterton、Anna Maste、Lola、Steven Tey、Ben Webster、Tyson Lawrie、Harvey Carpenter、Dan Foster，其中 Steven Tey 那条写从 5-10s 降到 1s 内进收件箱。导航分 Why Postmark?、Product、Pricing、Resources、Help 与 Log in / Start free trial，Product 下拉下挂着 Email API、SMTP Service、Message Streams、Transactional Email、Email Delivery、Email Templates、Inbound Email、Analytics & Retention，正文里还有 Stellar deliverability (without paying for a dedicated IP) 与 Promotional and transactional emails never mix 两节。",
+    "recommendation": null,
+    "pricing": "Free trial；付费档位在 /pricing",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是发信基础设施：Email API、SMTP Service、Message Streams、Inbound Email 一组产品页，加 /developer/integration/official-libraries 与 /api-explorer 这类开发资源，用户来这里拿走的是接入能力。",
+        "evidenceUrl": "https://postmarkapp.com/"
+      },
+      {
+        "statement": "它不发素材也不做设计工具，因此与上一批 short-io、formcarry-com 一同归构建、部署与开发工作流；页面上没有可下载的模板或组件包。",
+        "evidenceUrl": "https://postmarkapp.com/email-api"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:17:03.250Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "marketing",
+      "ecommerce"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "trial"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "editorial-feed"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://postmarkapp.com",
+      "finalUrl": "https://postmarkapp.com/",
+      "title": "Postmark: Fast, Reliable Email Delivery Service | SMTP | API",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/postmarkapp-com/identity.jpg",
+        "sha256": "783b4746185d089956356fd79af29887942c817174ff7f4499e3dd9e936c41d2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 136982,
+        "alt": "Postmark 首屏：FEATURES"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://postmarkapp.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/postmarkapp-com/identity.jpg",
+          "alt": "Postmark 首屏：FEATURES",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Free trial；档位在 /pricing",
+      "sourceUrl": "https://postmarkapp.com/",
+      "evidence": "右上 Start free trial 与导航 Pricing 项，页面上没有金额",
+      "confidence": 1
+    },
+    {
+      "field": "messageStreams",
+      "value": "Promotional 与 Transactional 分开的两条 message stream",
+      "sourceUrl": "https://postmarkapp.com/message-streams",
+      "evidence": "首页 Promotional and transactional emails never mix 一节，与 Product 下拉里的 Message Streams 一项",
+      "confidence": 1
+    },
+    {
+      "field": "deliverability",
+      "value": "不用买 dedicated IP 也有送达率",
+      "sourceUrl": "https://postmarkapp.com/",
+      "evidence": "首页 Stellar deliverability (without paying for a dedicated IP) 一节，另有 /dedicated-ips 页",
+      "confidence": 1
+    },
+    {
+      "field": "comparePages",
+      "value": "vs SendGrid、Mailgun、Amazon SES、SparkPost、Mandrill、Resend 六组对比页",
+      "sourceUrl": "https://postmarkapp.com/compare/sendgrid-alternative",
+      "evidence": "导航 POSTMARK VS. 一组与 /compare/* 六个路径；首页正文有 Ripped out Sendgrid and moved Growform's transactional emails over to Postmark 的用户推文",
+      "confidence": 1
+    },
+    {
+      "field": "aiSkill",
+      "value": "Postmark Skills：教 AI coding agent 发信",
+      "sourceUrl": "https://postmarkapp.com/blog/teach-your-ai-coding-agent-how-to-send-email-with-postmark-skills",
+      "evidence": "首页顶栏深色横幅 🤖 Teach your AI coding agent how to send email with Postmark Skills 加 Learn more 按钮",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/postmarkapp-com.md",
+  "registryUrl": "/r/postmarkapp-com.json"
+}

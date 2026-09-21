@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "005ecf5368ba8c5cddf6595c2cad0a24dd765e548703c87ae3458a16715db096",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-sceyt-sceyt-chat-react-uikit",
+  "entityId": "entity-github-com-sceyt-sceyt-chat-react-uikit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/sceyt/sceyt-chat-react-uikit",
+    "finalUrl": "https://github.com/sceyt/sceyt-chat-react-uikit",
+    "checkedAt": "2026-09-15T12:07:14.381Z"
+  },
+  "editorial": {
+    "name": "sceyt/sceyt-chat-react-uikit",
+    "descriptionZh": "Sceyt 聊天服务的 React 界面组件套件，装上后把频道、消息气泡、媒体附件与音频播放这些聊天界面直接渲染进自己的 React 应用。使用前需要先在 sceyt.com 注册账号并创建应用拿凭证。",
+    "takeawayZh": "用 sceyt-chat 套件把聊天界面接进 React 应用",
+    "noteZh": "仓库文件列表里是 src、examples 和 webpack.config.js，README 标题写 Getting Started with Sceyt Chat React UiKit，Install 段给的是 npm install sceyt-chat 和 npm install sceyt-chat-react-uikit 两条命令，再往上要求先去 sceyt.com 注册、建 Application、拿 Application Credentials。右侧 Languages 条显示 TypeScript 占 99.5%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一整套聊天界面的 React 组件（消息项、媒体附件、音频播放、频道），用户拿走的方式是 npm 安装后渲染，属于界面实现类；它是垂直场景（IM）的成套组件而非设计系统底座，故归 general-ui-components。",
+        "evidenceUrl": "https://github.com/sceyt/sceyt-chat-react-uikit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:07:14.381Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui",
+      "audio"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/sceyt/sceyt-chat-react-uikit",
+      "finalUrl": "https://github.com/sceyt/sceyt-chat-react-uikit",
+      "title": "GitHub - sceyt/sceyt-chat-react-uikit: React UI Kit for Sceyt Chat · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-sceyt-sceyt-chat-react-uikit/identity.jpg",
+        "sha256": "bcf4af437a2b4463f1b2bed362acc0d11e81db390c7d371df52c2f6e0dfbb09c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131313,
+        "alt": "sceyt/sceyt-chat-react-uikit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm install sceyt-chat && npm install sceyt-chat-react-uikit",
+      "sourceUrl": "https://github.com/sceyt/sceyt-chat-react-uikit",
+      "evidence": "README 的 Install 段同时给出 npm 与 yarn 两条安装命令",
+      "confidence": 1
+    },
+    {
+      "field": "requires-account",
+      "value": "需要先在 sceyt.com 注册并创建 Application 才能拿到凭证",
+      "sourceUrl": "https://github.com/sceyt/sceyt-chat-react-uikit",
+      "evidence": "README 的 Initializing Sceyt Chat in Your Application 段第 1、2 步",
+      "confidence": 1
+    },
+    {
+      "field": "language-breakdown",
+      "value": "TypeScript 99.5%",
+      "sourceUrl": "https://github.com/sceyt/sceyt-chat-react-uikit",
+      "evidence": "页面右侧 Languages 条形图与图例",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-sceyt-sceyt-chat-react-uikit",
+    "designMdUrl": "https://vislexicon.com/site/github-com-sceyt-sceyt-chat-react-uikit.md",
+    "checkedAt": "2026-09-15T12:07:14.381Z",
+    "license": "unknown"
+  }
+}

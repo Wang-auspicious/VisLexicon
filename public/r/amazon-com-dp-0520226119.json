@@ -1,0 +1,136 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "cba682c695f90bbb6d9cf72017cfbb51063dd9ed83ad90bb716b2dbba84be767",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "amazon-com-dp-0520226119",
+  "entityId": "entity-amazon-com-dp-0520226119",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://amazon.com/dp/0520226119",
+    "finalUrl": "https://www.amazon.com/Color-Meaning-Art-Science-Symbolism/dp/0520226119",
+    "checkedAt": "2026-09-15T12:50:52.007Z"
+  },
+  "editorial": {
+    "name": "Color and Meaning: Art, Science, and Symbolism",
+    "descriptionZh": "Amazon 上 John Gage《Color and Meaning: Art, Science, and Symbolism》的商品页，ISBN 9780520226111。",
+    "takeawayZh": "在 Amazon 查这本书的价格与购买选项",
+    "noteZh": "这一屏只渲染出 Amazon 的顶栏与 books 子导航：顶栏是配送地 Nashville 37217、搜索框、Hello, sign in Account & Lists、Returns & Orders 与 Cart，下面一行排着 All、Early Prime Deals、Groceries、Coupons、Automotive、Pharmacy、Amazon Home、Prime、Baby、Registry、Video Games，再往下一行是 books 栏的 Shop Books、Categories、New & Trending、Deals、Best Sellers & More、Memberships。商品正文整块是空白，看不到封面、价格、评分或购买按钮，只能从页面标题确认这是 John Gage 的 0520226119 这一本。",
+    "recommendation": null,
+    "pricing": "Paid",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "learning-editorial",
+    "subcategory": "articles-books-publications",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "商品页对应的是一件出版物（John Gage 的 Color and Meaning: Art, Science, and Symbolism），用户能拿走的是这本书本身，因此归书籍与出版物。",
+        "evidenceUrl": "https://amazon.com/dp/0520226119"
+      },
+      {
+        "statement": "正文区未渲染，书名、作者、ISBN 三项均取自页面标题，其余字段无从核验，故 facets 尽量留空。",
+        "evidenceUrl": "https://amazon.com/dp/0520226119"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:50:52.007Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "paid"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://amazon.com/dp/0520226119",
+      "finalUrl": "https://www.amazon.com/Color-Meaning-Art-Science-Symbolism/dp/0520226119",
+      "title": "Color and Meaning: Art, Science, and Symbolism: Gage, John: 9780520226111: Amazon.com: Books",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/amazon-com-dp-0520226119/identity.jpg",
+        "sha256": "e6466c8241c269661a3653c90f4638002930ab7d3e57a43a6fbdea3c70948821",
+        "width": 1280,
+        "height": 900,
+        "bytes": 47168,
+        "alt": "Color and Meaning: Art, Science, and Symbolism 首屏：Skip to"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "title",
+      "value": "Color and Meaning: Art, Science, and Symbolism",
+      "sourceUrl": "https://amazon.com/dp/0520226119",
+      "evidence": "页面标题 Color and Meaning: Art, Science, and Symbolism: Gage, John: 9780520226111: Amazon.com: Books",
+      "confidence": 1
+    },
+    {
+      "field": "isbn",
+      "value": "9780520226111",
+      "sourceUrl": "https://amazon.com/dp/0520226119",
+      "evidence": "页面标题里的编号，与 URL 路径 /dp/0520226119 对应",
+      "confidence": 1
+    },
+    {
+      "field": "author",
+      "value": "John Gage",
+      "sourceUrl": "https://amazon.com/dp/0520226119",
+      "evidence": "页面标题中的 Gage, John",
+      "confidence": 1
+    },
+    {
+      "field": "captureStatus",
+      "value": "商品正文未渲染",
+      "sourceUrl": "https://amazon.com/dp/0520226119",
+      "evidence": "截图首屏只有 Amazon 顶栏与 books 子导航，商品区块整块留白",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Paid。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/amazon-com-dp-0520226119",
+    "designMdUrl": "https://vislexicon.com/site/amazon-com-dp-0520226119.md",
+    "checkedAt": "2026-09-15T12:50:52.007Z",
+    "license": "unknown"
+  }
+}

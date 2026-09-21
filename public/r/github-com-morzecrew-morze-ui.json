@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "79360d40494cc425e44acc95550c5ee9d92059ba345201b2d8078db53af5d923",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-morzecrew-morze-ui",
+  "entityId": "entity-github-com-morzecrew-morze-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/morzecrew/morze-ui",
+    "finalUrl": "https://github.com/morzecrew/morze-ui",
+    "checkedAt": "2026-09-15T11:46:40.463Z"
+  },
+  "editorial": {
+    "name": "morzecrew/morze-ui",
+    "descriptionZh": "@morze/ui 是照着 shadcn/ui 的形状做、底子换成 Radix primitives 的 React 组件包，视觉取自 Morze 落地页的凸感：平涂填充、细描边、上沿内高光、下沿色调辉光，README 把这段 CSS 直接贴出来。",
+    "takeawayZh": "把 border 加内阴影的配方套到按钮、开关、Tabs。",
+    "noteZh": "README 开头就贴出配方 background-color: rgb(tone); border: 1px solid rgba(255,255,255,.18); box-shadow: 0 3px 10px -4px …, inset 0 1px 0 …, inset 0 -1px 0 …，并说明这套写法用在 buttons、toggles、checkboxes、radios、switches、sliders、tabs、badges 和 active navigation item 上。后面按 Install、Themes、Tones、Shape and type、States、Customisation、Components 分节，Components 里点名了 Tabs that run out of room、Calendar、Toast、Chart、Forms、Sidebar、DataTable。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一批可安装的 React 组件，用户拿走组件代码与那段视觉配方，故归通用界面组件库；它没到自成设计系统文档站的程度，所以没放 design-system-suites。",
+        "evidenceUrl": "https://github.com/morzecrew/morze-ui"
+      },
+      {
+        "statement": "README 明写 shaped like shadcn/ui (latest) on Radix primitives，所以 technologies 里 shadcn-ui 与 radix-ui 是页面可见的，不是猜测。",
+        "evidenceUrl": "https://github.com/morzecrew/morze-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:40.463Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "radix-ui",
+      "shadcn-ui",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/morzecrew/morze-ui",
+      "finalUrl": "https://github.com/morzecrew/morze-ui",
+      "title": "GitHub - morzecrew/morze-ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-morzecrew-morze-ui/identity.jpg",
+        "sha256": "92821ee7c806553609723a8322863aca4d06c932a805aaae54511e0442f7284c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 123979,
+        "alt": "morzecrew/morze-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "visualRecipe",
+      "value": "background-color: rgb(tone); border: 1px solid rgba(255,255,255,.18); box-shadow: 0 3px 10px -4px rgba(tone,.4), inset 0 1px 0 rgba(255,255,255,.35), inset 0 -1px 0 rgba(0,0,0,.2)",
+      "sourceUrl": "https://github.com/morzecrew/morze-ui",
+      "evidence": "README 开头的 CSS 代码块",
+      "confidence": 1
+    },
+    {
+      "field": "techBase",
+      "value": "React 组件包，形状照 shadcn/ui，底子是 Radix primitives",
+      "sourceUrl": "https://github.com/morzecrew/morze-ui",
+      "evidence": "README 第一段正文",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/morzecrew/morze-ui",
+      "evidence": "About 侧栏 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "componentSections",
+      "value": "Tabs that run out of room、Calendar、Toast、Chart、Forms、Sidebar、DataTable",
+      "sourceUrl": "https://github.com/morzecrew/morze-ui",
+      "evidence": "README 的 Components 一节条目",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-morzecrew-morze-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-morzecrew-morze-ui.md",
+    "checkedAt": "2026-09-15T11:46:40.463Z",
+    "license": "MIT"
+  }
+}

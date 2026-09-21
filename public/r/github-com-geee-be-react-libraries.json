@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "62c8fdf9ba26387604a5413198e918d541cd825869f5bbd50cdc43687f5940b5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-geee-be-react-libraries",
+  "entityId": "entity-github-com-geee-be-react-libraries",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/geee-be/react-libraries",
+    "finalUrl": "https://github.com/geee-be/react-libraries",
+    "checkedAt": "2026-09-15T11:42:08.059Z"
+  },
+  "editorial": {
+    "name": "geee-be/react-libraries",
+    "descriptionZh": "一个 TypeScript monorepo，装两个包：Tailwind CSS v4 的界面组件库 @geee-be/react-twui，以及 hooks 与工具函数包 @geee-be/react-utils，MIT 许可。",
+    "takeawayZh": "装 react-twui 拿 Tailwind v4 组件",
+    "noteZh": "README 的 Packages 表只有两行，@geee-be/react-twui 与 @geee-be/react-utils 都标 ✅ Stable，下面 Package Features 才展开组件能力。仓库里带 .copilot-instructions.md 与 .prompts 两个给 AI 用的目录，贡献者只有 2 位却发了 161 个 release，最新是 @geee-be/react-twui@2.3.7。Languages 条上 TypeScript 占 85.2%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付主体是 @geee-be/react-twui 这个 Tailwind v4 组件库，@geee-be/react-utils 只是配套 hooks 与工具函数，整体没有独立的设计系统站或 token 体系，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/geee-be/react-libraries"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:42:08.059Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library",
+      "primitive"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/geee-be/react-libraries",
+      "finalUrl": "https://github.com/geee-be/react-libraries",
+      "title": "GitHub - geee-be/react-libraries: Useful libraries for React projects · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-geee-be-react-libraries/identity.jpg",
+        "sha256": "e870d445e395f0f728581d1c428b8e82e467a42772bc20f9ad9574024bee7bdc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 142975,
+        "alt": "geee-be/react-libraries 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/geee-be/react-libraries",
+      "evidence": "README 顶部标 MIT license，About 侧栏也显示 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "@geee-be/react-twui（Tailwind CSS v4 组件库）、@geee-be/react-utils（hooks 与工具函数）",
+      "sourceUrl": "https://github.com/geee-be/react-libraries#readme",
+      "evidence": "README 的 Packages 表，两行都标记 ✅ Stable",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "@geee-be/react-twui@2.3.7，共 161 个 release",
+      "sourceUrl": "https://github.com/geee-be/react-libraries/releases",
+      "evidence": "右侧 Releases 一栏与 + 160 releases 链接",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "TypeScript 85.2% / CSS 14.4%",
+      "sourceUrl": "https://github.com/geee-be/react-libraries",
+      "evidence": "仓库页 Languages 条形图下方的百分比",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-geee-be-react-libraries",
+    "designMdUrl": "https://vislexicon.com/site/github-com-geee-be-react-libraries.md",
+    "checkedAt": "2026-09-15T11:42:08.059Z",
+    "license": "MIT"
+  }
+}

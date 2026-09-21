@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9f9fbb20468ae7c538386433393ed573e06600e4cfe4836a282bb073cedbf9a1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-react-bootstrap-react-overlays",
+  "entityId": "entity-github-com-react-bootstrap-react-overlays",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/react-bootstrap/react-overlays",
+    "finalUrl": "https://github.com/react-bootstrap/react-overlays",
+    "checkedAt": "2026-09-15T12:05:40.802Z"
+  },
+  "editorial": {
+    "name": "react-bootstrap/react-overlays",
+    "descriptionZh": "从 React-Bootstrap 拆出来的浮层底层实现，Modal、Tooltip 这类组件都建在它上面，样式一律自带不管。仓库已归档，继任者是 react-restart/ui。",
+    "takeawayZh": "拿一组不带样式的 Modal/Tooltip 底层原语",
+    "noteZh": "页面顶部横着一条黄底横幅：This repository was archived by the owner on Feb 16, 2026. It is now read-only.，仓库名旁边挂着 Public archive 徽章。README 开头就是 HEADS UP! this repo is deprecated and not receiving any more updates，指出继任项目是 react-restart/ui。About 卡片写着 Utilities for creating robust overlay components，底下是 affix、modal、overlay、react、react-overlays 五个标签，标 MIT license，Used by 350K。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 说明这些工具是从 React-Bootstrap 里抽象出来的通用实现、是构建更完整组件的 building blocks，且 Everything is bring-your-own-styles，属于无样式原语而非成品组件，故归 headless-accessible-primitives。",
+        "evidenceUrl": "https://github.com/react-bootstrap/react-overlays"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:05:40.802Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/react-bootstrap/react-overlays",
+      "finalUrl": "https://github.com/react-bootstrap/react-overlays",
+      "title": "GitHub - react-bootstrap/react-overlays: Utilities for creating robust overlay components · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-react-bootstrap-react-overlays/identity.jpg",
+        "sha256": "a63c0c8d7cdf43b04b7ef6941e0715b0c81e65779cacd66340d5841ef9d5422a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131992,
+        "alt": "react-bootstrap/react-overlays 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "status",
+      "value": "2026-02-16 起归档只读，README 声明 deprecated，继任者为 react-restart/ui",
+      "sourceUrl": "https://github.com/react-bootstrap/react-overlays",
+      "evidence": "页面顶部的归档黄色横幅与 README 的 HEADS UP! 段",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/react-bootstrap/react-overlays",
+      "evidence": "About 卡片的 MIT license 标识",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "Used by 350K",
+      "sourceUrl": "https://github.com/react-bootstrap/react-overlays",
+      "evidence": "页面右侧 Used by 卡片",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "affix / modal / overlay / react / react-overlays",
+      "sourceUrl": "https://github.com/react-bootstrap/react-overlays",
+      "evidence": "About 卡片下方的标签行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-react-bootstrap-react-overlays",
+    "designMdUrl": "https://vislexicon.com/site/github-com-react-bootstrap-react-overlays.md",
+    "checkedAt": "2026-09-15T12:05:40.802Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "73f52d2dd7e577212f79d0666085f387a3c0588c4a3be4fbb848c162411a5372",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "aceternity-sveltekit-io",
+  "entityId": "entity-aceternity-sveltekit-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://aceternity.sveltekit.io",
+    "finalUrl": "https://aceternity.sveltekit.io/",
+    "checkedAt": "2026-09-15T11:55:32.295Z"
+  },
+  "editorial": {
+    "name": "Aceternity UI Svelte",
+    "descriptionZh": "有人把 Aceternity UI 的动效组件搬到 Svelte，页面自己声明是非官方版本、与原作者无关。",
+    "takeawayZh": "把 Aceternity 那批动效组件按 Svelte 版复制走",
+    "noteZh": "整页深色底。左边 h1 写 Make your Svelte app look 10x modern，正文 Copy paste the most trending components and use them in your websites without having to worry about styling and animations.，下面一行橙色小字自己交代 This is an unofficial port of Aceternity UI for Svelte, and is not affiliated with @mannupaaji.；再往下是 Browse Components 按钮和三枚标签 Svelte / TailwindCSS / Svelte Motion。右边第一张就是可以悬停试的文本揭示卡，卡上写 Sometimes, you just need to see it. This is a text reveal card. Hover over the card to reveal the hidden text.；它下面并排两张卡，一张配图写 Amazing Tailwindcss Grid Layout Examples 带 14th February, 2024 与 Read More，另一张写 Svelte — The power of full-stack to the frontend.。顶栏只有 Aceternity UI Svelte 标志和 Components 一项，外加 X（原 Twitter）入口与 Search Components ⌘K，右上角另有一排头像。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可复制粘贴的 Svelte 动效组件，站点自称 unofficial port，页面只有 Components 一段，没有原站那样的 Blocks 与 Templates，故归 general-ui-components 而不是 page-blocks-embeddable-controls。",
+        "evidenceUrl": "https://aceternity.sveltekit.io/"
+      },
+      {
+        "statement": "正文标签写明基于 Svelte、TailwindCSS 与 Svelte Motion，technologies 据此收 svelte、tailwind、motion；页面上没有任何许可证信息，licenses 记 unknown。",
+        "evidenceUrl": "https://aceternity.sveltekit.io/components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:32.295Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "copy",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "tailwind",
+      "motion"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://aceternity.sveltekit.io",
+      "finalUrl": "https://aceternity.sveltekit.io/",
+      "title": "Aceternity UI Svelte - Free Incredible Animated Components",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/aceternity-sveltekit-io/identity.jpg",
+        "sha256": "822d4fd7b3dfbd28db6b9894b623245526215076ae32586885e2c5cd3b73eda4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 99704,
+        "alt": "Aceternity UI Svelte 首屏：Make your Svelte app look 10x modern"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "disclaimer",
+      "value": "This is an unofficial port of Aceternity UI for Svelte, and is not affiliated with @mannupaaji.",
+      "sourceUrl": "https://aceternity.sveltekit.io/",
+      "evidence": "首屏正文里的橙色小字，截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "credit",
+      "value": "Ported to Svelte by Jack Landon of Sveltekit.io；原作为 @mannupaaji of Aceternity",
+      "sourceUrl": "https://aceternity.sveltekit.io/",
+      "evidence": "首屏正文结尾两句",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "Svelte / TailwindCSS / Svelte Motion 三枚标签",
+      "sourceUrl": "https://aceternity.sveltekit.io/",
+      "evidence": "首屏 Browse Components 按钮下方，截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "freeClaim",
+      "value": "页面标题自称 Free Incredible Animated Components，正文写 Add incredible animated components to your Svelte App for free.",
+      "sourceUrl": "https://aceternity.sveltekit.io/",
+      "evidence": "live.title 与 http.description",
+      "confidence": 1
+    },
+    {
+      "field": "demoCards",
+      "value": "首屏右侧展示一张可悬停的文本揭示卡与 Amazing Tailwindcss Grid Layout Examples、Svelte 两张卡",
+      "sourceUrl": "https://aceternity.sveltekit.io/",
+      "evidence": "首屏右侧卡片区，截图可见",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/aceternity-sveltekit-io",
+    "designMdUrl": "https://vislexicon.com/site/aceternity-sveltekit-io.md",
+    "checkedAt": "2026-09-15T11:55:32.295Z",
+    "license": "unknown"
+  }
+}

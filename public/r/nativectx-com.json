@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b0d0678966672b9df04894e05d0d7654fdd0124191e8683360c9b0f056cca50f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "nativectx-com",
+  "entityId": "entity-nativectx-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://nativectx.com",
+    "finalUrl": "https://nativectx.com/",
+    "checkedAt": "2026-09-15T11:46:49.120Z"
+  },
+  "editorial": {
+    "name": "NativeCtx UI",
+    "descriptionZh": "面向 LLM 的 React Native UI 库官网：同一份组件代码同时跑 iOS、Android 和 Web，29 个组件用 Material 3 的 seed color 生成整套色板，并随包附带一个 MCP server 与六个 Claude Skills。",
+    "takeawayZh": "装一次，拿 29 个跨三端的原生组件。",
+    "noteZh": "首屏左边写着 A React Native UI library optimized for LLMs，下面一行 iOS、Android、Web 三枚图标，再下面是 npx expo install @nativectx/ui 和 npx nativectx init 两条命令；右半屏是拿这个库本身渲染出来的示例界面——Alex Johnson 的名片区、带 Day / Week / Month 切换的 Schedule、Midnight Drive 播放器、Quick access 里的 Home / Work / Profile 三行。往下统计条写着 43 GitHub Stars 与 29 Components，Why NativeCtx UI 一节分四条讲 MCP server 与六个 Claude Skills、一套代码三端、Switch/Slider/SegmentedControl/ProgressIndicator 走 Expo UI 渲染成真 SwiftUI 与 Jetpack Compose、以及一枚 seed color 生成整套 M3 token。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点交付的是一批可安装的跨端界面组件，用户拿走组件代码，故归通用界面组件库；它有 M3 token 体系但主体仍是组件包与文档，所以没归 design-system-suites。",
+        "evidenceUrl": "https://nativectx.com/"
+      },
+      {
+        "statement": "首页同时打出 iOS、Android、Web 三端与 Expo UI 原生渲染，platforms 因此记 ios、android、web；正文提到随包安装 MCP server，platforms 另记 mcp。",
+        "evidenceUrl": "https://nativectx.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:49.120Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile",
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "web",
+      "mcp"
+    ],
+    "technologies": [
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://nativectx.com",
+      "finalUrl": "https://nativectx.com/",
+      "title": "",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/nativectx-com/identity.jpg",
+        "sha256": "2c1244fcb5be1760b55ed279e9220334af25912f3b268e39533cdfbf5517644a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 85201,
+        "alt": "NativeCtx UI 首屏：NativeCtx UI"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "install",
+      "value": "npx expo install @nativectx/ui，然后 npx nativectx init",
+      "sourceUrl": "https://nativectx.com/",
+      "evidence": "首屏的终端命令代码块",
+      "confidence": 1
+    },
+    {
+      "field": "componentCount",
+      "value": "29 Components（页面底部统计与 GitHub Stars 43 并列）",
+      "sourceUrl": "https://nativectx.com/",
+      "evidence": "首屏统计条与 Why 一节 One seed color generates the whole palette … across all 29 components",
+      "confidence": 1
+    },
+    {
+      "field": "llmIntegration",
+      "value": "随包安装一个 MCP server 与六个 Claude Skills，让 Claude 直接调 props、tokens 与色板",
+      "sourceUrl": "https://nativectx.com/",
+      "evidence": "Why NativeCtx UI 一节的第一条 Claude writes it right the first time",
+      "confidence": 1
+    },
+    {
+      "field": "nativeRendering",
+      "value": "Switch、Slider、SegmentedControl、ProgressIndicator 经 Expo UI 渲染成真正的 SwiftUI 与 Jetpack Compose，Tabs 与 header 用平台自带实现",
+      "sourceUrl": "https://nativectx.com/",
+      "evidence": "Why NativeCtx UI 一节的第三条 Native where users expect native",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/nativectx-com",
+    "designMdUrl": "https://vislexicon.com/site/nativectx-com.md",
+    "checkedAt": "2026-09-15T11:46:49.120Z",
+    "license": "unknown"
+  }
+}

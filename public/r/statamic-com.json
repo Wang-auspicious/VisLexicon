@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0fe2d96dc158899722e8d0e2a5c69b0dd0007518935c1781e95d1858986dd763",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "statamic-com",
+  "entityId": "entity-statamic-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://statamic.com",
+    "finalUrl": "https://statamic.com/",
+    "checkedAt": "2026-09-15T11:18:49.468Z"
+  },
+  "editorial": {
+    "name": "Statamic",
+    "descriptionZh": "Statamic 是跑在 Laravel 上的 CMS，控制面板可改，内容既能存 flat file 也能转数据库，配套 marketplace 卖 addon 和 starter kit。首页首屏就是一张手绘插画加一张控制面板截图。",
+    "takeawayZh": "看它把插画背景和后台截图拼进同一张首屏",
+    "noteZh": "首屏是一整张暖色手绘插画（云、松林、瀑布、鹿、巨嘴鸟），正中 Build sites you're proud of, with a CMS you actually like，副标题点名 award-winning user experience 与 all the power of Laravel，按钮 Get Pro Now 与 Try the Demo，底下补一句 If you're a developer, why not install locally?。插画下沿压着一张控制面板截图，顶栏是 Statamic Pro / Collections / Articles，左栏 Dashboard 与 Content、Collections，正文标题正是 From Meme to Hero: How Florida Man Saved a Community，右上角有紫色的 Save & Publish 按钮。导航分 Developers、Pricing、Product、Marketplace、Partners、Community，正文五块讲 New in Statamic、Enjoy a control panel designed to adapt to you、From flat file to database, Statamic scales with you、Explore the ever-expanding Statamic Ecosystem、Created with Statamic。页脚把开发者入口排得很满：Documentation、YouTube、Laracasts Video Course、Release Notes、Roadmap、Starter Kits、Become a Creator、Partner Directory、Discord。",
+    "recommendation": null,
+    "pricing": "有 /pricing 与 Try the Demo，首页同时给 install locally 入口",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户从 Statamic 拿走的是可安装、可自己搭的内容后台：首页并列 Get Pro Now 与 install locally，文档、Release Notes、Roadmap、Starter Kits 都指向搭建与部署这一环节，故归构建、部署与开发工作流。",
+        "evidenceUrl": "https://statamic.com/"
+      },
+      {
+        "statement": "库里同类 CMS 产品（Sanity、DatoCMS、Directus）都归 build-deploy-dev-workflow，Statamic 的位置一致。",
+        "evidenceUrl": "https://statamic.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:18:49.468Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "starter"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "purchase"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery",
+      "marketplace"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://statamic.com",
+      "finalUrl": "https://statamic.com/",
+      "title": "Statamic — the answer to your frustrating CMS problems.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/statamic-com/identity.jpg",
+        "sha256": "f2f3d3c288ab4f93909e3712ebe7f73cd25c767c21991dfb8c60a50a4d56fb0d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 177576,
+        "alt": "Statamic 首屏：Build sites you’re proud of, with a CMS you actually like."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroHeadline",
+      "value": "Build sites you're proud of, with a CMS you actually like.",
+      "sourceUrl": "https://statamic.com/",
+      "evidence": "首屏主标题与 http.h1",
+      "confidence": 1
+    },
+    {
+      "field": "storageModel",
+      "value": "flat file 或 database 两种存储，底层是 Laravel",
+      "sourceUrl": "https://statamic.com/",
+      "evidence": "首页一节标题 From flat file to database, Statamic scales with you 与副标题 all the power of Laravel at your fingertips",
+      "confidence": 1
+    },
+    {
+      "field": "ecosystem",
+      "value": "Marketplace / Addons / Starter Kits / Become a Creator / Partner Directory",
+      "sourceUrl": "https://statamic.com/",
+      "evidence": "首页 Explore the ever-expanding Statamic Ecosystem 一节的菜单与 /marketplace、/addons、/starter-kits 路径",
+      "confidence": 1
+    },
+    {
+      "field": "developerEntries",
+      "value": "Documentation、YouTube、Laracasts Video Course（作者 Jack McDade）、Release Notes、Roadmap、Discord",
+      "sourceUrl": "https://statamic.com/",
+      "evidence": "首页 Developers 一节的入口列表",
+      "confidence": 1
+    },
+    {
+      "field": "controlPanelShot",
+      "value": "控制面板截图含 Collections、Dashboard、Save & Publish，示例文章 From Meme to Hero: How Florida Man Saved a Community",
+      "sourceUrl": "https://statamic.com/",
+      "evidence": "首屏插画下沿压着的后台截图",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：有 /pricing 与 Try the Demo，首页同时给 install locally 入口。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/statamic-com",
+    "designMdUrl": "https://vislexicon.com/site/statamic-com.md",
+    "checkedAt": "2026-09-15T11:18:49.468Z",
+    "license": "unknown"
+  }
+}

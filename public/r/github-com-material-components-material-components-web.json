@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7bb427a1ed9f07e2f966bde897978ca012806a0308fdefd9368ec10995c8cc86",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-material-components-material-components-web",
+  "entityId": "entity-github-com-material-components-material-components-web",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/material-components/material-components-web",
+    "finalUrl": "https://github.com/material-components/material-components-web",
+    "checkedAt": "2026-09-15T11:45:44.811Z"
+  },
+  "editorial": {
+    "name": "material-components/material-components-web",
+    "descriptionZh": "Material Design 官方 Web 组件库 MDC Web 的源码仓库，自述 Modular and customizable Material Design UI components for the web。2025 年 1 月被所有者归档，现在是只读状态。",
+    "takeawayZh": "clone 已归档的 MDC Web 源码",
+    "noteZh": "仓库页最上面一条黄条写着 This repository was archived by the owner on Jan 13, 2025. It is now read-only.，名字旁边挂着 Public archive。文件区顶层是 packages、docs、testing、scripts，.mdc-docsite.yml 说明文档站怎么生成，.stylelintrc.yaml 与 karma.conf.js 分别是样式与测试配置；最新一条提交是把 safevalues 依赖升到 ^1.0.1，更早几条在把 packages 转成 TypeScript、把 MDCComponent#root 改成 HTMLElement。About 给 material.io/develop/web 与 MIT license，标签是 css、javascript、material-components、material-design、web，Releases 停在 v14.0.0，Star 17.1k、Fork 2.1k、Contributors 377。",
+    "recommendation": null,
+    "pricing": "Free（About 标 MIT license，仓库已归档只读，无付费入口）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一整套 Material Design Web 组件实现（packages/ 按组件分包，配 docs 与 testing），不是零散控件，归 ui-implementation 下的 design-system-suites。",
+        "evidenceUrl": "https://github.com/material-components/material-components-web"
+      },
+      {
+        "statement": "About 栏外链指向 material.io/develop/web，说明它是 Material Design 官方规范在 Web 上的实现，而不是第三方通用控件库。",
+        "evidenceUrl": "https://github.com/material-components/material-components-web"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:45:44.811Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "download",
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/material-components/material-components-web",
+      "finalUrl": "https://github.com/material-components/material-components-web",
+      "title": "GitHub - material-components/material-components-web: Modular and customizable Material Design UI components for the web · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-material-components-material-components-web/identity.jpg",
+        "sha256": "be04451395c1b50ddaa2b899204595ddfbd51ff639a4554255869db8d21e4ceb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 152440,
+        "alt": "material-components/material-components-web 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "archivedNotice",
+      "value": "This repository was archived by the owner on Jan 13, 2025. It is now read-only.",
+      "sourceUrl": "https://github.com/material-components/material-components-web",
+      "evidence": "仓库页顶部黄条，仓库名右侧另有 Public archive 标签",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT license，外链 material.io/develop/web，标签 css / javascript / material-components / material-design / web",
+      "sourceUrl": "https://github.com/material-components/material-components-web",
+      "evidence": "右侧 About 栏",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "Star 17.1k、Fork 2.1k、Contributors 377、7,462 Commits、311 Branches、619 Tags、Releases 最新 v14.0.0",
+      "sourceUrl": "https://github.com/material-components/material-components-web",
+      "evidence": "仓库头部计数与 About 栏 Releases 区",
+      "confidence": 1
+    },
+    {
+      "field": "treeLayout",
+      "value": "packages/、docs/、testing/、scripts/ 加 .mdc-docsite.yml、.stylelintrc.yaml、karma.conf.js",
+      "sourceUrl": "https://github.com/material-components/material-components-web",
+      "evidence": "文件列表 Name 一列，最新提交 chore: upgrade safevalues dependency to ^1.0.1",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-material-components-material-components-web",
+    "designMdUrl": "https://vislexicon.com/site/github-com-material-components-material-components-web.md",
+    "checkedAt": "2026-09-15T11:45:44.811Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "565becc6fdb41743551d1e6fab3684a07b49668950683849118aa115a1cbc970",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-ide-await-lock",
+  "entityId": "entity-github-com-ide-await-lock",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/ide/await-lock",
+    "finalUrl": "https://github.com/expo/await-lock",
+    "checkedAt": "2026-09-15T12:48:28.552Z"
+  },
+  "editorial": {
+    "name": "expo/await-lock",
+    "descriptionZh": "给异步函数用的互斥锁库，靠 acquireAsync() 排队、release() 放行，让并发任务串行执行；只以 ES module 发布，要求 Node 20 以上。",
+    "takeawayZh": "npm i await-lock，给并发异步任务加一把锁",
+    "noteZh": "仓库落点是 expo/await-lock（简报里的 ide/await-lock 会跳到这里），About 一句 Mutex locks for async functions，标签是 async-await、concurrency、mutex-lock，README 标题 AwaitLock 后面跟着 Tests: passing 和 codecov 100% 两枚徽章，标题栏标着 MIT license。用法是 let lock = new AwaitLock(); await lock.acquireAsync(); 再在 finally 里 lock.release()，README 特意提醒不要在临界区里 return promise，否则 finally 可能先于 promise 结算。仓库 99 次提交、95 star、17 fork，Releases 8 条最新 v3.0.0，Used by 12K，Contributors 3。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 npm 代码库（并发原语），用户动作是 npm 安装后在自己代码里调用，属于开发工作流里的工具库；它不是界面组件，也不产出任何视觉素材，所以不归 ui-implementation 或 visual-assets——候选池标的「色彩工具 / color」与内容完全无关。",
+        "evidenceUrl": "https://github.com/expo/await-lock"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:48:28.552Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ide/await-lock",
+      "finalUrl": "https://github.com/expo/await-lock",
+      "title": "GitHub - expo/await-lock: Mutex locks for async functions · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-ide-await-lock/identity.jpg",
+        "sha256": "64b8c82c2e654f216140633fc68b2a4d007ca85566ba1a7f757ac89eaf217ee0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121691,
+        "alt": "expo/await-lock 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/ide/await-lock",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-ide-await-lock/identity.jpg",
+          "alt": "expo/await-lock 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/expo/await-lock",
+      "evidence": "README 标题栏与右侧 About 面板都标着 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "runtime-requirement",
+      "value": "只发布为 ES module，要求 Node 20+",
+      "sourceUrl": "https://github.com/expo/await-lock",
+      "evidence": "README Usage 一节开头写 This package is published only as an ES module，文件列表里 src 的最近一次提交信息是 CommonJS -> ESM, require Node 20+",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "Used by 12K，95 star，17 fork",
+      "sourceUrl": "https://github.com/expo/await-lock",
+      "evidence": "仓库首页右侧 About 面板与 Used by 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-ide-await-lock.md",
+  "registryUrl": "/r/github-com-ide-await-lock.json"
+}

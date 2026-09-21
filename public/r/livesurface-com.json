@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9b32457e5731b8bf5a154c01a10c1482de5e0ebca2c0721c125d6baed786ca13",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "livesurface-com",
+  "entityId": "entity-livesurface-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://livesurface.com",
+    "finalUrl": "https://www.livesurface.com/",
+    "checkedAt": "2026-09-15T12:00:32.695Z"
+  },
+  "editorial": {
+    "name": "LiveSurface",
+    "descriptionZh": "Mac 与 iPad 上的实景样机软件，把平面稿拖到 Surface Store 里数千张实拍表面上，靠物理材质和光照实时渲染成作品集级别的图，也支持导出动画。给要做提案和作品集的设计师。",
+    "takeawayZh": "把设计稿拖到真实材质表面，实时渲出照片级样机",
+    "noteZh": "这次抓到的首屏还没渲染完：整屏只剩一块橙色底（那段实时动画），左上角一行黑字 All animation created in LiveSurface，底部一条黑色导航条露出 LiveSurface / Home / Account / Download。正文里排着六项特性：Drag and Drop、Materials、Plus Surfaces、Customizable Scenes、Snapshots & Moving Artwork、Plugin；Surface Store 下面分 Objects、Scenes 和可缩放旋转的 Plus Surfaces，材质部分给的是 Infinite Materials、Physical Materials、Smoothness、Emboss 这几组滑块。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "three-d-spatial-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是一款创作软件而不是素材包：站点自述 photo-real design mockup software，导航有 Apps、Download、Plans，实质是把平面稿渲成实景图。",
+        "evidenceUrl": "https://www.livesurface.com/"
+      },
+      {
+        "statement": "归 three-d-spatial-creation 的依据是核心机制写在正文里——用专利方式把 3D 嵌进图片、表面会随环境产生阴影与反射、相机景深、物理材质几组滑块；拿不准的一点：它也可按图像创作工具归类，最终产物是一张样机图。",
+        "evidenceUrl": "https://www.livesurface.com/surfaces/overview"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:32.695Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "image"
+    ],
+    "actions": [
+      "download",
+      "preview",
+      "edit",
+      "purchase"
+    ],
+    "media": [
+      "3d",
+      "image",
+      "motion"
+    ],
+    "platforms": [
+      "desktop",
+      "ios"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "brand-team"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://livesurface.com",
+      "finalUrl": "https://www.livesurface.com/",
+      "title": "LiveSurface: Photo-Real Design Mockup Software",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/livesurface-com/identity.jpg",
+        "sha256": "c96e9c5e14f03b1adadfde2d299d0ffb96430490b9f09952266ca51ef201040b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 19797,
+        "alt": "LiveSurface 首屏：The fastest way to find and create portfolio-ready mockups."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "surfaceStore",
+      "value": "Surface Store 分 Objects、Scenes 与可缩放旋转的 Plus Surfaces 三类",
+      "sourceUrl": "https://www.livesurface.com/surfaces/overview",
+      "evidence": "首页 Curated surfaces 区块的小标题 Surface Store 及其下的 Objects / Scenes / Resizable / Rotatable",
+      "confidence": 1
+    },
+    {
+      "field": "materialControls",
+      "value": "Infinite Materials、Physical Materials、Smoothness、Emboss 等滑块，可调色相、光滑度、反射",
+      "sourceUrl": "https://www.livesurface.com/",
+      "evidence": "首页 The material world 区块与 LiveSurface fuses the power of 3D with the simplicity of design 一段",
+      "confidence": 1
+    },
+    {
+      "field": "platforms",
+      "value": "Mac、iPad 与 Apple Vision Pro",
+      "sourceUrl": "https://www.livesurface.com/apps/mac",
+      "evidence": "站点 meta description 的 For Mac, iPad, and Apple Vision Pro，导航有 Apps 与 Download",
+      "confidence": 0.9
+    },
+    {
+      "field": "pricing",
+      "value": "unknown（导航有 Plans 入口，本次未读到档位与价格）",
+      "sourceUrl": "https://www.livesurface.com/plans",
+      "evidence": "顶部导航第五项为 Plans，首屏渲染未完成，未见任何价格数字",
+      "confidence": 0.4
+    },
+    {
+      "field": "firstScreenState",
+      "value": "首屏截图为一块橙色底（全屏动画区域），左上保留 All animation created in LiveSurface 一行",
+      "sourceUrl": "https://www.livesurface.com/",
+      "evidence": "本次 1280×900 首屏截图；同次渲染的正文含完整特性与 Surface Store 文案",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/livesurface-com",
+    "designMdUrl": "https://vislexicon.com/site/livesurface-com.md",
+    "checkedAt": "2026-09-15T12:00:32.695Z",
+    "license": "unknown"
+  }
+}

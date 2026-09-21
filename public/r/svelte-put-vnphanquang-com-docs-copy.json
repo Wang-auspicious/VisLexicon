@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3dafbba05464a8a1361d5b3faf050cfaac6f8340bfc8ab92a7cb31fc5f0e3895",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svelte-put-vnphanquang-com-docs-copy",
+  "entityId": "entity-svelte-put-vnphanquang-com-docs-copy",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://svelte-put.vnphanquang.com/docs/copy",
+    "finalUrl": "https://svelte-put.vnphanquang.com/docs/copy",
+    "checkedAt": "2026-09-15T11:52:17.131Z"
+  },
+  "editorial": {
+    "name": "@svelte-put/copy",
+    "descriptionZh": "svelte-put 集合里的一个 Svelte action 包，做「把文字复制进剪贴板」这一件事：默认在所用节点上挂 click 监听并复制其 innerText，事件类型、触发节点与复制内容都可改写。文档站同时挂着 svelte-put 其他十几个包。",
+    "takeawayZh": "用 use:copy 把节点文字送进剪贴板",
+    "noteZh": "左侧栏把文档分成 OVERVIEW 与 PACKAGES 两块，PACKAGES 下从 async-stack、avatar、clickoutside、cloudflare-turnstile、copy、dragscroll、inline-svg 一路排到 swipeable、toc，页面正停在 copy 这一条，右边 ON THIS PAGE 跟着 Installation、Minimal Usage、三段 Customizing 以及 Migration Guides。正文先给 npm / pnpm / yarn 三个安装 tab，再用绿色提示框写「New to Svelte 5? See Migration Guides.」，Minimal Usage 说默认会在所用节点上挂一个 click 监听，把该节点的 innerText 复制到默认剪贴板。页面顶部压着一条「Are you runes-ed yet?」横幅，讲整个 svelte-put 集合已经迁到 Svelte 5；侧栏末尾另有一个 DEPRECATED 分组，把 modal、noti、preprocess-inline-svg、tooltip 归进去。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可 use:copy 直接挂到节点的 Svelte action 包及其文档，属于界面实现层的小元件。",
+        "evidenceUrl": "https://svelte-put.vnphanquang.com/docs/copy"
+      },
+      {
+        "statement": "页面自称是 action & utilities 而不是完整组件库，因此小类取通用界面组件库而非设计系统套件。",
+        "evidenceUrl": "https://svelte-put.vnphanquang.com/docs/copy"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:17.131Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "primitive"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svelte-put.vnphanquang.com/docs/copy",
+      "finalUrl": "https://svelte-put.vnphanquang.com/docs/copy",
+      "title": "copy | @svelte-put",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/svelte-put-vnphanquang-com-docs-copy/identity.jpg",
+        "sha256": "3d11b7816cc404acf07ac9e0fbd38d5772ca7cd9376853e6ba968f0f57014e00",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134809,
+        "alt": "@svelte-put/copy 首屏：@svelte-put/copy"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "selfDescription",
+      "value": "action & utilities to copy text to clipboard",
+      "sourceUrl": "https://svelte-put.vnphanquang.com/docs/copy",
+      "evidence": "页面 h1 下方的一句话",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "LATEST V4.0.0，DOWNLOADS 366K",
+      "sourceUrl": "https://svelte-put.vnphanquang.com/docs/copy",
+      "evidence": "标题下方的徽标行",
+      "confidence": 1
+    },
+    {
+      "field": "defaultBehavior",
+      "value": "默认在所用节点上挂 click 监听，把该节点 innerText 复制到默认剪贴板",
+      "sourceUrl": "https://svelte-put.vnphanquang.com/docs/copy",
+      "evidence": "Minimal Usage 段落正文",
+      "confidence": 1
+    },
+    {
+      "field": "customizable",
+      "value": "事件类型、触发节点、复制内容三者都可自定义，另提供 copyToClipboard helper",
+      "sourceUrl": "https://svelte-put.vnphanquang.com/docs/copy",
+      "evidence": "页面三段 Customizing 小标题与 The copyToClipboard Helper 一节",
+      "confidence": 1
+    },
+    {
+      "field": "collection",
+      "value": "PACKAGES 侧栏含 async-stack、avatar、clickoutside、cloudflare-turnstile、copy、dragscroll、inline-svg、intersect、lockscroll、movable、popover、preaction、qr、resize、shortcut、swipeable、toc；另有 DEPRECATED 分组",
+      "sourceUrl": "https://svelte-put.vnphanquang.com/docs/copy",
+      "evidence": "左侧导航栏的文字",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/svelte-put-vnphanquang-com-docs-copy",
+    "designMdUrl": "https://vislexicon.com/site/svelte-put-vnphanquang-com-docs-copy.md",
+    "checkedAt": "2026-09-15T11:52:17.131Z",
+    "license": "unknown"
+  }
+}

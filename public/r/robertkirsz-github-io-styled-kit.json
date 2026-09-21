@@ -1,0 +1,137 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f0ed8542d148f466dd0fe24aeddf1a9cb3eb06c2d5e1ddaa18e9840ba09782e1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "robertkirsz-github-io-styled-kit",
+  "entityId": "entity-robertkirsz-github-io-styled-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://robertkirsz.github.io/styled-kit",
+    "finalUrl": "https://robertkirsz.github.io/styled-kit/",
+    "checkedAt": "2026-09-15T12:08:11.447Z"
+  },
+  "editorial": {
+    "name": "styled-kit",
+    "descriptionZh": "一个纯 Playground 页面，左边摆满 flex 与盒模型的属性控件，右边实时显示等价的 Div/Item 组件代码。用来试这个 Svelte 时代的 styled-kit 布局组件怎么调参。",
+    "takeawayZh": "调左栏 flex 与间距开关，右边同步出 <Div> 代码。",
+    "noteZh": "整屏是一块浅蓝色 playground，顶部没有导航也没有标题：左栏竖着一排属性控件（flex-direction、flex-wrap、justify-content、align-content、align-items、position、top/right/left/bottom、z-index、width、height、margin、padding、background、listLeft、listRight、listTop、listBottom），中间是渲染出来的方框，右栏跟着显示等价的 <Div width={300} height={300} padding={8} listLeft={4} />。下半屏另有一块浅绿色区域，并排演示 <Div itemsCenter justifyAround> 与 <Div listLeft> 两组。页面上找不到价格、许可证或安装命令。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面本体是一个组件参数演示台，用户拿走的是可复制的 Div/Item 用法与 props，归 ui-implementation/general-ui-components；它没有内容目录也没有文章，所以不归 reference-standards。",
+        "evidenceUrl": "https://robertkirsz.github.io/styled-kit/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:11.447Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "preview"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://robertkirsz.github.io/styled-kit",
+      "finalUrl": "https://robertkirsz.github.io/styled-kit/",
+      "title": "styled-kit",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/robertkirsz-github-io-styled-kit/identity.jpg",
+        "sha256": "3faa10b9ce24c591e07744d1d2eca4821fca88bca0b097c8f16ec59d392372ae",
+        "width": 1280,
+        "height": 900,
+        "bytes": 37534,
+        "alt": "styled-kit 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "components",
+      "value": "Div 与 Item 两个组件，props 形如 listLeft / listTop / itemsCenter / justifyAround",
+      "sourceUrl": "https://robertkirsz.github.io/styled-kit/",
+      "evidence": "截图右栏代码窗与下半屏示例",
+      "confidence": 0.9
+    },
+    {
+      "field": "controls",
+      "value": "左栏控件覆盖 flex-direction / justify-content / align-items / padding / listLeft 等二十余项",
+      "sourceUrl": "https://robertkirsz.github.io/styled-kit/",
+      "evidence": "截图左栏下拉与输入框列表",
+      "confidence": 0.8
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://robertkirsz.github.io/styled-kit/",
+      "evidence": "页面通篇只有控件与代码，没有价格、许可证或仓库链接",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/robertkirsz-github-io-styled-kit",
+    "designMdUrl": "https://vislexicon.com/site/robertkirsz-github-io-styled-kit.md",
+    "checkedAt": "2026-09-15T12:08:11.447Z",
+    "license": "unknown"
+  }
+}

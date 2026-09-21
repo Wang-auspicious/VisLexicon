@@ -1,0 +1,136 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3d05fe7a779bf33359a7af23f52a1635ddefd7339abd4566475b61b4675fe807",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-robbevp-postcss-multiple-tailwind",
+  "entityId": "entity-github-com-robbevp-postcss-multiple-tailwind",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/robbevp/postcss-multiple-tailwind",
+    "finalUrl": "https://github.com/robbevp/postcss-multiple-tailwind",
+    "checkedAt": "2026-09-15T12:03:21.507Z"
+  },
+  "editorial": {
+    "name": "robbevp/postcss-multiple-tailwind",
+    "descriptionZh": "已归档的 PostCSS 插件，原意是让一个项目里多个入口各自用自己那份 tailwind.config.js，现在作者已明确停更并转为只读。",
+    "takeawayZh": "看一个归档插件的思路：按目录套各自的 Tailwind 配置。",
+    "noteZh": "页面顶端一条黄底提示「This repository was archived by the owner on Aug 29, 2023. It is now read-only.」，标题行也标着 Public archive。About 栏是「Easily handle multiple tailwindcss configs within your project.」，topic 挂着 postcss、postcss-plugin、tailwindcss，MIT license。README 开头直接给红字警告：Tailwind CSS 从 v3.3.3 起把这个插件弄坏了，而官方 v2.3 起已有内置指令，所以不再更新、准备归档；原本的用法是在输入 CSS 里写一行 `@multiple-tailwind;`，插件会按同目录下的 tailwind.config.js 处理，也支持 `@multiple-tailwind tailwind-admin.config.js;` 指定文件名。仓库停在 10 Branches、5 Tags、219 Commits、Releases v1.0.1。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "PostCSS 构建插件（已归档），进的是项目的 postcss 管线，归构建与开发工作流；分类依据是插件性质，而非其当前维护状态。",
+        "evidenceUrl": "https://github.com/robbevp/postcss-multiple-tailwind"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:03:21.507Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "apply",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/robbevp/postcss-multiple-tailwind",
+      "finalUrl": "https://github.com/robbevp/postcss-multiple-tailwind",
+      "title": "GitHub - robbevp/postcss-multiple-tailwind: Easily handle multiple tailwindcss configs within your project. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-robbevp-postcss-multiple-tailwind/identity.jpg",
+        "sha256": "be3262cf2ea91b8f6b8fea61433fba7e6a0ba62b886740dff3f7a77c3c82277e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139825,
+        "alt": "robbevp/postcss-multiple-tailwind 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "status",
+      "value": "2023-08-29 归档，只读",
+      "sourceUrl": "https://github.com/robbevp/postcss-multiple-tailwind",
+      "evidence": "页面顶部黄底横幅原文 This repository was archived by the owner on Aug 29, 2023. It is now read-only.，仓库名旁标 Public archive",
+      "confidence": 0.95
+    },
+    {
+      "field": "deprecation",
+      "value": "Tailwind v3.3.3 起插件失效，官方 v2.3 已有内置多配置指令",
+      "sourceUrl": "https://github.com/robbevp/postcss-multiple-tailwind",
+      "evidence": "README 顶部的 ⛔️ 警告段，写明 Tailwindcss broke this plugin with their v3.3.3 release 并给出 builtin directive 链接",
+      "confidence": 0.9
+    },
+    {
+      "field": "usage",
+      "value": "在输入 CSS 里写 @multiple-tailwind; 或 @multiple-tailwind tailwind-admin.config.js;",
+      "sourceUrl": "https://github.com/robbevp/postcss-multiple-tailwind",
+      "evidence": "README Basic usage 一节的两段示例代码",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-robbevp-postcss-multiple-tailwind",
+    "designMdUrl": "https://vislexicon.com/site/github-com-robbevp-postcss-multiple-tailwind.md",
+    "checkedAt": "2026-09-15T12:03:21.507Z",
+    "license": "MIT"
+  }
+}

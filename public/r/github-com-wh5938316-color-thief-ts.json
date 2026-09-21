@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "807ca4eb3a7238ab7aa65f6abc2398f8c5a11ef95714e48906f5b99e0c41ecf9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-wh5938316-color-thief-ts",
+  "entityId": "entity-github-com-wh5938316-color-thief-ts",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/wh5938316/color-thief-ts",
+    "finalUrl": "https://github.com/wh5938316/color-thief-ts",
+    "checkedAt": "2026-09-15T12:52:28.713Z"
+  },
+  "editorial": {
+    "name": "wh5938316/color-thief-ts",
+    "descriptionZh": "color-thief 的 TypeScript 版本，浏览器与 Node 共用一套取色接口：浏览器端 getColorAsync / getPaletteAsync 直接吃图片 URL，Node 端 getPalette 接受 buffer、URL 或本地相对路径。",
+    "takeawayZh": "一份 TS 取色库，浏览器和 Node 共用同一套接口",
+    "noteZh": "README 第一句是 Grab the color palette from an image using just Javascript.Works in the browser & node.（原文句号前没空格），Getting Started 只给 yarn add color-thief-ts 与 npm install color-thief-ts 两条安装命令。example for browser 段用 getColorAsync(\"your-domaon/your-image-url.jpg\")（站点把 domain 拼成了 domaon）和 getPaletteAsync(..., 5)；example for node.js 段先 node-fetch 取 arrayBuffer，再分别用 { type: \"image/png\", buffer: image }、HTTP 地址、./images/example.png 三种入参调 getPalette。右侧 About 只有 Readme 与 Activity，Releases 写 No releases published，Languages 条是 TypeScript 93.3% / CSS 6.3% / JavaScript 0.4%，贡献者只有 wh5938316。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是取色函数库，README 两个 example 段给出浏览器与 Node 两端的调用，属于生成配色数据的实现代码。",
+        "evidenceUrl": "https://github.com/wh5938316/color-thief-ts"
+      },
+      {
+        "statement": "仓库语言条显示 TypeScript 占 93.3%，是同一类库的 TS 重写版本，归类与前两个 color-thief 实现保持一致。",
+        "evidenceUrl": "https://github.com/wh5938316/color-thief-ts"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:52:28.713Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/wh5938316/color-thief-ts",
+      "finalUrl": "https://github.com/wh5938316/color-thief-ts",
+      "title": "GitHub - wh5938316/color-thief-ts: Grab the color palette from an image using just Javascript. Works in the browser and in Node. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-wh5938316-color-thief-ts/identity.jpg",
+        "sha256": "4c0d3f70e4b215f84c1c98aecd324387977ccc426fe6373c19669d2be91f30e1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 104967,
+        "alt": "wh5938316/color-thief-ts 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "api",
+      "value": "浏览器 getColorAsync(url) / getPaletteAsync(url, 5)；Node getPalette({type, buffer} 或路径或 URL, 5)、getColor(...)",
+      "sourceUrl": "https://github.com/wh5938316/color-thief-ts",
+      "evidence": "README Getting Started 下的 example for browser 与 example for node.js 两段代码。",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "TypeScript 93.3%、CSS 6.3%、JavaScript 0.4%",
+      "sourceUrl": "https://github.com/wh5938316/color-thief-ts",
+      "evidence": "首屏右侧 Languages 条的比例条与三行数值。",
+      "confidence": 1
+    },
+    {
+      "field": "releaseStatus",
+      "value": "No releases published；main 1 Branch / 0 Tags；11 stars / 3 forks；Contributors 1",
+      "sourceUrl": "https://github.com/wh5938316/color-thief-ts",
+      "evidence": "首屏右侧 Releases 区与 Contributors 区，以及分支标签行的 1 Branch 0 Tags。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-wh5938316-color-thief-ts",
+    "designMdUrl": "https://vislexicon.com/site/github-com-wh5938316-color-thief-ts.md",
+    "checkedAt": "2026-09-15T12:52:28.713Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "38c22f956132df9d3ca71c0e2a089f88a996e0545948d30f58f631c78f245479",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-forsartis-vue-cli-plugin-tailwind",
+  "entityId": "entity-github-com-forsartis-vue-cli-plugin-tailwind",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/forsartis/vue-cli-plugin-tailwind",
+    "finalUrl": "https://github.com/forsartis/vue-cli-plugin-tailwind",
+    "checkedAt": "2026-09-15T12:13:44.888Z"
+  },
+  "editorial": {
+    "name": "forsartis/vue-cli-plugin-tailwind",
+    "descriptionZh": "给 vue-cli 项目加 Tailwind CSS 的插件，装完执行 vue add tailwind，配置文件可选生成 none、minimal 或 full 三档。",
+    "takeawayZh": "在 vue-cli 项目里 vue add tailwind，按需生成配置文件",
+    "noteZh": "About 栏一句话是 vue-cli plugin for Tailwind CSS，主题标签只有 tailwindcss 与 vue-cli-plugin 两个。README 给出用法：Inside your vue-cli project folder add the plugin via: vue add tailwind，随后说明三种配置生成方式——none、minimal（默认）、full。PostCSS Configuration 一节贴了 postcss.config.js，把 tailwindcss 与 autoprefixer 一起挂进 plugins。右侧语言条显示 JavaScript 98%、CSS 2%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 明说 A plugin that adds Tailwind CSS to your vue-cli project.，交付物是构建链上的一个插件而不是界面组件。",
+        "evidenceUrl": "https://github.com/forsartis/vue-cli-plugin-tailwind"
+      },
+      {
+        "statement": "候选池给的 Tailwind 组件分类不采用：仓库里只有 generator/、prompts.js 与 PostCSS 配置片段，没有任何组件实现。",
+        "evidenceUrl": "https://github.com/forsartis/vue-cli-plugin-tailwind"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:13:44.888Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "vue",
+      "tailwind",
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/forsartis/vue-cli-plugin-tailwind",
+      "finalUrl": "https://github.com/forsartis/vue-cli-plugin-tailwind",
+      "title": "GitHub - forsartis/vue-cli-plugin-tailwind: vue-cli plugin for Tailwind CSS · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-forsartis-vue-cli-plugin-tailwind/identity.jpg",
+        "sha256": "351ada3b52c60383136b2ac0bc2a2afcd1a8fb099d7bcf1fba948e90f522903f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109314,
+        "alt": "forsartis/vue-cli-plugin-tailwind 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/forsartis/vue-cli-plugin-tailwind",
+      "evidence": "About 栏的 MIT license 一行与 README 标题下的 license MIT 徽章",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "vue add tailwind",
+      "sourceUrl": "https://github.com/forsartis/vue-cli-plugin-tailwind",
+      "evidence": "README Getting started 一节的第一条命令",
+      "confidence": 1
+    },
+    {
+      "field": "config-options",
+      "value": "none / minimal（默认）/ full",
+      "sourceUrl": "https://github.com/forsartis/vue-cli-plugin-tailwind",
+      "evidence": "README 中 Choose what Tailwind config you want to generate 的三条选项",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-forsartis-vue-cli-plugin-tailwind",
+    "designMdUrl": "https://vislexicon.com/site/github-com-forsartis-vue-cli-plugin-tailwind.md",
+    "checkedAt": "2026-09-15T12:13:44.888Z",
+    "license": "MIT"
+  }
+}

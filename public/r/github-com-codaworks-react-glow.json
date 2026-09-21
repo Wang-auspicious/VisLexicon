@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3dca08e654de9e3be913770247ca67e710977d1f14b61173eb1e9f438f7153cf",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-codaworks-react-glow",
+  "entityId": "entity-github-com-codaworks-react-glow",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/codaworks/react-glow",
+    "finalUrl": "https://github.com/codaworks/react-glow",
+    "checkedAt": "2026-09-15T11:39:17.183Z"
+  },
+  "editorial": {
+    "name": "codaworks/react-glow",
+    "descriptionZh": "一个只做一件事的 React 小组件库：让组件跟随鼠标位置发光。装一个包，用 GlowCapture 套住、Glow 标出哪些子元素要亮。只响应鼠标，触摸事件不触发。",
+    "takeawayZh": "装 @codaworks/react-glow 加鼠标跟随发光",
+    "noteZh": "仓库 h1 是 React glow，README 第一句就是 Add a mouse-tracing glow effect to React components. 并注明 The glow effect will only work using the mouse as the pointer. Touch events will not trigger it.。用法是外层套 <GlowCapture> 追踪鼠标位置，里面每个 <Glow> 自己决定发光时长什么样，子元素用 glow: 变体（例如 glow:bg-red-100）改样式，颜色通过 CSS 变量 --glow-color 暴露。Tailwind 用户要加载 @codaworks/react-glow/tailwind 插件，不用 Tailwind 的走 Vanilla CSS 那节；README 末尾还有 How does it work? 和 Attribution。About 写着 No description, website, or topics provided，只给 MIT license，Star 739、Used by 340。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是一个鼠标追踪的发光交互效果，README 主题句 Add a mouse-tracing glow effect to React components 直接说明它属于动效与微交互代码，而不是通用控件。",
+        "evidenceUrl": "https://github.com/codaworks/react-glow"
+      },
+      {
+        "statement": "API 以 <GlowCapture> / <Glow> 的行为为中心（track the mouse location、glow: variant），用户带走的是可复制的效果实现。",
+        "evidenceUrl": "https://github.com/codaworks/react-glow"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:39:17.183Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/codaworks/react-glow",
+      "finalUrl": "https://github.com/codaworks/react-glow",
+      "title": "GitHub - codaworks/react-glow · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-codaworks-react-glow/identity.jpg",
+        "sha256": "1a0da2663afb4a4703a446da0d774020697be048ebfa8a4b09fe5688fce8ba30",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114045,
+        "alt": "codaworks/react-glow 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/codaworks/react-glow",
+      "evidence": "About 侧栏写 MIT license，README 头部也标 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm i @codaworks/react-glow",
+      "sourceUrl": "https://github.com/codaworks/react-glow",
+      "evidence": "README 的 Installation 段落代码块",
+      "confidence": 1
+    },
+    {
+      "field": "pointerSupport",
+      "value": "仅鼠标，触摸事件不触发",
+      "sourceUrl": "https://github.com/codaworks/react-glow",
+      "evidence": "README 正文写 The glow effect will only work using the mouse as the pointer. Touch events will not trigger it.",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-codaworks-react-glow",
+    "designMdUrl": "https://vislexicon.com/site/github-com-codaworks-react-glow.md",
+    "checkedAt": "2026-09-15T11:39:17.183Z",
+    "license": "MIT"
+  }
+}

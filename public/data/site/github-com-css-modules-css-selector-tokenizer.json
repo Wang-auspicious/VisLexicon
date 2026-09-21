@@ -1,0 +1,176 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f998eb5b68f1660ddee65885f071c8f5230b6773e4c86552813f5ff22f2ce143",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-css-modules-css-selector-tokenizer",
+  "entityId": "entity-github-com-css-modules-css-selector-tokenizer",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/css-modules/css-selector-tokenizer",
+    "finalUrl": "https://github.com/css-modules/css-selector-tokenizer",
+    "checkedAt": "2026-09-15T11:57:30.101Z"
+  },
+  "editorial": {
+    "name": "css-modules/css-selector-tokenizer",
+    "descriptionZh": "CSS Modules 组织下的一个包，把 CSS 选择器在字符串和节点树之间来回转：Tokenizer.parse 解析出带类型的节点，Tokenizer.stringify 再拼回原来的写法。",
+    "takeawayZh": "把选择器解析成节点树，改完再 stringify 回去",
+    "noteZh": "README 给了一组对照：把 a#content.active > div::first-line [data-content], a:not(:visited) 解析成带 element、id、class、operator、pseudo-element、spacing、attribute、nested-pseudo-class 的类型化节点，注释标着 // === input 表示 stringify 能原样拼回去，之后又逐个列出 *、foo|element、:has(h1, h2) 各自对应的节点形状。仓库归属 css-modules 组织，lib、scripts、test 三个目录，最新版本 v0.8.0，右侧 About 写 Parses and stringifies CSS selectors.，Used by 4.4M、Stars 83、Forks 21。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是 CSS Modules 生态里的 npm 包（解析与序列化选择器），用在构建工具和 CSS Modules 的实现里，页面没有任何界面组件或样式主题。",
+        "evidenceUrl": "https://github.com/css-modules/css-selector-tokenizer"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:30.101Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/css-modules/css-selector-tokenizer",
+      "finalUrl": "https://github.com/css-modules/css-selector-tokenizer",
+      "title": "GitHub - css-modules/css-selector-tokenizer: Parses and stringifies CSS selectors. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-css-modules-css-selector-tokenizer/identity.jpg",
+        "sha256": "acfb11303ab36f3078bb65835fe8a75bd5bcbd07ed8bb4f1716cd1bce4de6673",
+        "width": 1280,
+        "height": 900,
+        "bytes": 122147,
+        "alt": "css-modules/css-selector-tokenizer 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/css-modules/css-selector-tokenizer",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-css-modules-css-selector-tokenizer/identity.jpg",
+          "alt": "css-modules/css-selector-tokenizer 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/css-modules/css-selector-tokenizer",
+      "evidence": "右侧 About 面板的 MIT license 与 README 的 MIT license 行",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "Tokenizer.parse(input) 与 Tokenizer.stringify(expected)",
+      "sourceUrl": "https://github.com/css-modules/css-selector-tokenizer",
+      "evidence": "README 示例代码",
+      "confidence": 1
+    },
+    {
+      "field": "example",
+      "value": "a#content.active > div::first-line [data-content], a:not(:visited) 解析成类型化节点树并原样 stringify",
+      "sourceUrl": "https://github.com/css-modules/css-selector-tokenizer",
+      "evidence": "README 首段示例与其后的 // === input 注释",
+      "confidence": 1
+    },
+    {
+      "field": "syntaxSupport",
+      "value": "列出 *、foo|element、*|*、:has(h1, h2) 等写法对应的节点形状",
+      "sourceUrl": "https://github.com/css-modules/css-selector-tokenizer",
+      "evidence": "README 示例后按注释逐条展开的节点定义",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "Used by 4.4M、Stars 83",
+      "sourceUrl": "https://github.com/css-modules/css-selector-tokenizer",
+      "evidence": "右侧 About 的 Used by 4.4M 面板与仓库头部 Star 83",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/css-modules/css-selector-tokenizer",
+      "evidence": "公开 npm 包，无付费入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-css-modules-css-selector-tokenizer.md",
+  "registryUrl": "/r/github-com-css-modules-css-selector-tokenizer.json"
+}

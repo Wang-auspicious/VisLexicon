@@ -1,0 +1,179 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "aca11d45c7de8d708608530b5540dab35060baa50451756afcf1b0512a4a1318",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "pagopa-github-io-io-app-design-system",
+  "entityId": "entity-pagopa-github-io-io-app-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "pagopa.github.io",
+  "official": {
+    "inputUrl": "https://pagopa.github.io/io-app-design-system",
+    "finalUrl": "https://pagopa.github.io/io-app-design-system/?path=/docs/getting-started--docs",
+    "checkedAt": "2026-09-15T11:48:03.170Z"
+  },
+  "editorial": {
+    "name": "IO App Design System",
+    "descriptionZh": "意大利 PagoPA 的 IO App 设计系统 Storybook：侧栏按 CORE / FOUNDATION / COMPONENTS / FUNCTIONS 分组，从 Typography、Icons、Pictograms、Logos 一路排到 OTPInput、NumberPad、FeatureInfo。",
+    "takeawayZh": "照 Foundation 与 Components 两层分组",
+    "noteZh": "进去是标题为 IO App Design System 的 Storybook。左栏第一组 CORE 只有 Core 一项，第二组 FOUNDATION 放 Typography、Layout、Icons、Pictograms、Logos、Avatar、LoadingSpinner、ProgressLoader、Templates；第三组 COMPONENTS 最长，Accordion、Alert、Badge、Banner、Buttons、Selection、CodeInput、List Items、Modules、NumberPad、OTPInput、Tabs、Tag、Text Input 排到 FeatureInfo；末了 FUNCTIONS 组只有 Functions 一项。中栏正文是 Getting started：Prerequisites 要先装 nodejs 与 yarn，推荐用 nvm 管 nodejs 版本（见 .nvmrc）；Installing the component library 要求在 App.tsx 外层包一层 react-native-safe-area-context 的 SafeAreaProvider，还提到可对照主 app 里连续更新的 Design System section。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点是设计系统的 Storybook 文档，侧栏把 FOUNDATION（Typography、Icons、Pictograms、Logos）与 COMPONENTS 明确分作两层，交付的是整套设计系统而不只是组件清单。",
+        "evidenceUrl": "https://pagopa.github.io/io-app-design-system/"
+      },
+      {
+        "statement": "它同时是一套要给主 app 引用的组件库（安装说明要求包一层 SafeAreaProvider），但文档主体与命名都以 design system 为准，故归设计系统套件。",
+        "evidenceUrl": "https://pagopa.github.io/io-app-design-system/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:03.170Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "icon",
+      "typography"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "react",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://pagopa.github.io/io-app-design-system",
+      "finalUrl": "https://pagopa.github.io/io-app-design-system/?path=/docs/getting-started--docs",
+      "title": "Getting Started - Docs ⋅ Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/pagopa-github-io-io-app-design-system/identity.jpg",
+        "sha256": "39854c73315074a4ad40176dbdb6f8a5b0d5f6f9cbaa18afced085514ff7a428",
+        "width": 1280,
+        "height": 900,
+        "bytes": 124923,
+        "alt": "IO App Design System 首屏"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://pagopa.github.io/io-app-design-system",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/pagopa-github-io-io-app-design-system/identity.jpg",
+          "alt": "IO App Design System 首屏",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "components",
+      "value": "侧栏按 CORE / FOUNDATION / COMPONENTS / FUNCTIONS 四组组织",
+      "sourceUrl": "https://pagopa.github.io/io-app-design-system/",
+      "evidence": "首屏左侧栏的分组标题与组内条目，如 FOUNDATION 下的 Pictograms、COMPONENTS 下的 OTPInput、NumberPad、FeatureInfo。",
+      "confidence": 1
+    },
+    {
+      "field": "prerequisites",
+      "value": "需要 nodejs 与 yarn，推荐用 nvm 管理版本（见 .nvmrc）",
+      "sourceUrl": "https://pagopa.github.io/io-app-design-system/",
+      "evidence": "Getting started 的 Prerequisites 一段原文「you will need to install nodejs and yarn. We recommend using nvm to properly handle the supported nodejs version (see .nvmrc).」",
+      "confidence": 1
+    },
+    {
+      "field": "mobileSetup",
+      "value": "接入时需在 App.tsx 外层包 SafeAreaProvider（来自 react-native-safe-area-context）",
+      "sourceUrl": "https://pagopa.github.io/io-app-design-system/",
+      "evidence": "Installing the component library 一节写「Remember to encapsulate the app container with the SafeAreaProvider from react-native-safe-area-context in your App.tsx file.」。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://pagopa.github.io/io-app-design-system/",
+      "evidence": "本页只有 Getting Started 与 Changelog 两篇文档，未出现许可证说明，故记 unknown。",
+      "confidence": 0.5
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/pagopa-github-io-io-app-design-system.md",
+  "registryUrl": "/r/pagopa-github-io-io-app-design-system.json"
+}

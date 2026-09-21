@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e73409db7f77e002c4e2159b4cec80dafa8253959791d599aa866f1ac0757f9e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-system-ui-theme-ui",
+  "entityId": "entity-github-com-system-ui-theme-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/system-ui/theme-ui",
+    "finalUrl": "https://github.com/system-ui/theme-ui",
+    "checkedAt": "2026-09-15T11:53:21.716Z"
+  },
+  "editorial": {
+    "name": "system-ui/theme-ui",
+    "descriptionZh": "按约束式设计原则写可换主题 React 应用的库：样式走一个 theme 对象和 sx prop，配响应式写法与 MDX 文档，主题换掉组件不用动。",
+    "takeawayZh": "用 theme 对象加 sx prop 写样式，换主题不动组件",
+    "noteZh": "About 一句讲完定位：Build consistent, themeable React apps based on constraint-based design principles，外链 theme-ui.com，topics 颜色很杂——color、design、design-system、design-tokens、emotion、layout、mdx、react、style、theme、typography、ui，MIT license，5.4k Stars / 658 Forks，最新 Release v0.17.4。README 只有四节：Getting Started、sx prop、Responsive styles、Documentation，后面接一个 Contributors ✨。默认分支是 develop 而不是 main，44 Branches、378 Tags；monorepo 把 packages 与 examples 分开摆，.codesandbox、.pnpmfile.cjs 和 .size-limit.json 都留在仓库根上，最近几条提交在修 Next.js 示例的 Vercel 构建和收紧 CI 的 pnpm 版本。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "About 自述 Build consistent, themeable React apps，topics 同时含 design-system、design-tokens、theme 与 typography，交付的是搭设计系统用的那层底座。",
+        "evidenceUrl": "https://github.com/system-ui/theme-ui"
+      },
+      {
+        "statement": "README 把 sx prop 与 Responsive styles 单列成节，说明取用方式是写样式约定而非拷贝具体组件，因此归设计系统套件而不是通用组件库。",
+        "evidenceUrl": "https://github.com/system-ui/theme-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:53:21.716Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "typography",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/system-ui/theme-ui",
+      "finalUrl": "https://github.com/system-ui/theme-ui",
+      "title": "GitHub - system-ui/theme-ui: Build consistent, themeable React apps based on constraint-based design principles · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-system-ui-theme-ui/identity.jpg",
+        "sha256": "dfaf77bbc2233235e77627f9fa02ae68587086735c13dc3ebe08889e264f44ec",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127281,
+        "alt": "system-ui/theme-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/system-ui/theme-ui",
+      "evidence": "About 面板的 MIT license 行与文件树中的 LICENSE.md",
+      "confidence": 1
+    },
+    {
+      "field": "homepage",
+      "value": "https://theme-ui.com",
+      "sourceUrl": "https://github.com/system-ui/theme-ui",
+      "evidence": "About 面板标题下的外链 theme-ui.com",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "v0.17.4 (Latest)，累计 182 个 release",
+      "sourceUrl": "https://github.com/system-ui/theme-ui",
+      "evidence": "About 下方 Releases 区块的 Latest 徽标与计数",
+      "confidence": 1
+    },
+    {
+      "field": "default-branch",
+      "value": "develop",
+      "sourceUrl": "https://github.com/system-ui/theme-ui",
+      "evidence": "文件列表上方的分支选择器显示 develop，旁边是 44 Branches、378 Tags",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-system-ui-theme-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-system-ui-theme-ui.md",
+    "checkedAt": "2026-09-15T11:53:21.716Z",
+    "license": "MIT"
+  }
+}

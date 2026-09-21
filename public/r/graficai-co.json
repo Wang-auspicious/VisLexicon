@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "aca7b8f2853b05d30ce4dd194582a36073dc1b5304f0c4471c537b8b3f582ec6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "graficai-co",
+  "entityId": "entity-graficai-co",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://graficai.co",
+    "finalUrl": "https://graficai.co/",
+    "checkedAt": "2026-09-15T10:32:58.410Z"
+  },
+  "editorial": {
+    "name": "graficai",
+    "descriptionZh": "给电商卖家批量处理商品图的 AI 工具：抠图、换白底、改尺寸、做场景图，也能在画布上按框选区域精确改，最后用 CSV 把图对回商品并发布到店铺。",
+    "takeawayZh": "批量抠图、换背景、生成场景图，再用 CSV 对回商品上架。",
+    "noteZh": "首屏被一张手绘丛林插画占满，老虎、自行车、网球拍、滑板、香水瓶这些商品线描围成一圈，中间空出来放标题「Batch everything. Zero compromise on quality.」。顶部导航是 Solutions、Background Remover、AI Tools、Pricing、Blog。往下能看到它后台的样子：左边写着 My Library、Credits 715 / 1000、Storage 20.2 MB / 20.0 GB，功能区里 Cutout、Retouch、Upscale、Virtual Try-On 都做了 BEFORE / AFTER 对照。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是处理好的电商商品图（抠图、白底、放大、场景图、虚拟试穿），动作是批量编辑与导出，归图像创作工具；CSV 上架与图床属于附带的交付环节，不改变主类。",
+        "evidenceUrl": "https://graficai.co/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:32:58.410Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce",
+      "marketing"
+    ],
+    "deliverables": [
+      "image"
+    ],
+    "actions": [
+      "download",
+      "edit",
+      "export",
+      "generate",
+      "publish"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "brand-team",
+      "content-creator"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://graficai.co",
+      "finalUrl": "https://graficai.co/",
+      "title": "graficai - AI E-commerce Content Creation Platform",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/graficai-co/identity.jpg",
+        "sha256": "f9c3bb308d984a46681463f0df9a3cda95c850b77b127d64bc46c0975dccb509",
+        "width": 1280,
+        "height": 900,
+        "bytes": 317707,
+        "alt": "graficai 首屏：Batcheverything.Zerocompromiseonquality."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "models",
+      "value": "Nano Banana 2、Nano Banana Pro、Seedream 5.0 Lite、Seedream 4.5、Seedream 4.0、Z-Image Turbo",
+      "sourceUrl": "https://graficai.co/",
+      "evidence": "Better Models. Better Product Images. 区块的模型列表",
+      "confidence": 1
+    },
+    {
+      "field": "batchScale",
+      "value": "批量面板一次 50 张起，额度按 credits 计",
+      "sourceUrl": "https://graficai.co/",
+      "evidence": "首屏后台截图左上的 50 / 50 images 与 Credits 715 / 1000",
+      "confidence": 0.9
+    },
+    {
+      "field": "publishFlow",
+      "value": "CSV 导入自动映射商品、CDN 图床、自动 alt text",
+      "sourceUrl": "https://graficai.co/",
+      "evidence": "Seamless Store Integration 段落，以及 /solutions/csv-processing、/solutions/alt-text 路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/graficai-co",
+    "designMdUrl": "https://vislexicon.com/site/graficai-co.md",
+    "checkedAt": "2026-09-15T10:32:58.410Z",
+    "license": "unknown"
+  }
+}

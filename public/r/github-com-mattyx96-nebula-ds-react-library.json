@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9b7895dbc65d2c1758c0d0d273c39814fdc0f768b851ab6d7d7648d0c5fb951c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-mattyx96-nebula-ds-react-library",
+  "entityId": "entity-github-com-mattyx96-nebula-ds-react-library",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/mattyx96/nebula-ds-react-library",
+    "finalUrl": "https://github.com/mattyx96/nebula-ds-react-library",
+    "checkedAt": "2026-09-15T12:02:03.423Z"
+  },
+  "editorial": {
+    "name": "mattyx96/nebula-ds-react-library",
+    "descriptionZh": "Nebula Design System 的 React 实现，设计 token 单独放在另一个仓库，组件用 Storybook 站展示，目前有 Button、Icon Button、Select、Dialog、Toast 和一套明暗主题。挂在个人名下维护。",
+    "takeawayZh": "开 Storybook 看组件，主题与 token 另有仓库",
+    "noteZh": "About 栏只挂了站点链接 nebula.iron galaxy.space，Readme、Activity 之外没有许可证行，Star 2、fork 0，contributor 是 mattyx96（Matteo Omicini）和 github-actions[bot] 两个。README 第一句说这是 React implementation of Nebula Design System，给出 Storybook 地址与单独的 tokens 仓库链接，并说明库带两套主题；最近的提交记录正好是一份功能清单——button filled + icon button + utilities + design tokens、Select 和 Dialog 组件、由 @zag-js/toast 驱动的 Toast、以及 light/dark 两套 CSS 的 theming 改造。Languages 里 TypeScript 占 76.3%、CSS 18.8%，最新 release v0.2.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 自述是 Nebula Design System 的 React 实现，且设计 token 拆成独立仓库、主题分 light/dark 两套，符合设计系统与完整套件这一落点。",
+        "evidenceUrl": "https://github.com/mattyx96/nebula-ds-react-library"
+      },
+      {
+        "statement": "目前组件量很小（Button、Icon Button、Select、Dialog、Toast），叫完整套件其实偏大，但它是设计系统的代码侧而不是通用组件库，这条我拿不太准。",
+        "evidenceUrl": "https://github.com/mattyx96/nebula-ds-react-library"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:03.423Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/mattyx96/nebula-ds-react-library",
+      "finalUrl": "https://github.com/mattyx96/nebula-ds-react-library",
+      "title": "GitHub - mattyx96/nebula-ds-react-library · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-mattyx96-nebula-ds-react-library/identity.jpg",
+        "sha256": "de196cad220d8d1b96116ed76d2e1ebe4d4b82827f49c3ddf31248810b228afd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 138664,
+        "alt": "mattyx96/nebula-ds-react-library 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "theming",
+      "value": "库带两套主题，用 light/dark CSS 做主题基建",
+      "sourceUrl": "https://github.com/mattyx96/nebula-ds-react-library",
+      "evidence": "README：Theming - The library ships two themes；提交记录 rework: theming infrastructure (light/dark CSS scaffolding)",
+      "confidence": 1
+    },
+    {
+      "field": "tokens",
+      "value": "设计 token 拆到独立仓库 nebula-ds-tokens",
+      "sourceUrl": "https://github.com/mattyx96/nebula-ds-react-library",
+      "evidence": "README：Tokens repository: https://github.com/mattyx96/nebula-ds-tokens",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "已加入 Button（filled 与 icon）、Select、Dialog、Toast（由 @zag-js/toast 驱动）",
+      "sourceUrl": "https://github.com/mattyx96/nebula-ds-react-library",
+      "evidence": "仓库文件列表的提交信息：feat: added button filled + icon button + utilities + design tokens、feat(zag): add Select and Dialog components、feat(toast): add Toast notifications component powered by @zag-js/toast",
+      "confidence": 1
+    },
+    {
+      "field": "storybook",
+      "value": "组件演示挂在 nebula-ds-react-library.irongalaxy.space",
+      "sourceUrl": "https://github.com/mattyx96/nebula-ds-react-library",
+      "evidence": "About 栏链接与 README 的 Storybook 一行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-mattyx96-nebula-ds-react-library",
+    "designMdUrl": "https://vislexicon.com/site/github-com-mattyx96-nebula-ds-react-library.md",
+    "checkedAt": "2026-09-15T12:02:03.423Z",
+    "license": "unknown"
+  }
+}

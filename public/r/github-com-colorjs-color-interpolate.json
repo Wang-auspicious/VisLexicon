@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0bd74bf190c3cfb31a25a958b4857f58967d4f61dbcdefb2f729472327464af3",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-colorjs-color-interpolate",
+  "entityId": "entity-github-com-colorjs-color-interpolate",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/colorjs/color-interpolate",
+    "finalUrl": "https://github.com/colorjs/color-interpolate",
+    "checkedAt": "2026-09-15T12:55:22.127Z"
+  },
+  "editorial": {
+    "name": "colorjs/color-interpolate",
+    "descriptionZh": "给一组调色板，传任意浮点下标就返回该位置颜色的库，常用来插值 colormap 或渐变。",
+    "takeawayZh": "用浮点下标从调色板里插值取色",
+    "noteZh": "README 首句写 For a given palette, return color by any float index. Useful for interpolating colormaps, color palettes or gradients.，示例先 interpolate(['black', 'gray', 'white']) 建一条 colormap，再取 colormap(0) 得 'rgb(0, 0, 0)'、colormap(1) 得 'rgb(255, 255, 255)'、colormap(.5) 得 'rgb(128, 128, 128)'；README 分 Usage、API、Credits、Related 几节。仓库 70 star、39 个 commit、2 branches、0 Tags，没有 release，Used by 900；侧栏只有 Readme、Activity、Custom properties 三项，没有许可证名称。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "asset-conversion-optimization",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个按下标从调色板里取出插值结果的函数库，输入色板与位置、输出色值，属转换/取值类开发库。",
+        "evidenceUrl": "https://github.com/colorjs/color-interpolate"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:55:22.127Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "source-available",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/colorjs/color-interpolate",
+      "finalUrl": "https://github.com/colorjs/color-interpolate",
+      "title": "GitHub - colorjs/color-interpolate: Get interpolated color from a palette · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-colorjs-color-interpolate/identity.jpg",
+        "sha256": "93cf7453467338211fd9b36379f795cd3fa36d204cba1a17af38ba69ab1d4f43",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127737,
+        "alt": "colorjs/color-interpolate 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "api",
+      "value": "interpolate(palette) 返回一个按浮点下标取色的函数",
+      "sourceUrl": "https://github.com/colorjs/color-interpolate",
+      "evidence": "README 的 Usage 一段：let colormap = interpolate(['black', 'gray', 'white']); colormap(0) / colormap(.5) / colormap(1)",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown（侧栏未列出许可证）",
+      "sourceUrl": "https://github.com/colorjs/color-interpolate",
+      "evidence": "右侧边栏只有 Readme、Activity、Custom properties 三项，没有 License 行，README 里也没写许可证名",
+      "confidence": 0.8
+    },
+    {
+      "field": "adoption",
+      "value": "Used by 900",
+      "sourceUrl": "https://github.com/colorjs/color-interpolate",
+      "evidence": "右侧 Used by 900，下面写 + 890",
+      "confidence": 1
+    },
+    {
+      "field": "release-status",
+      "value": "未发布 release（2 branches、0 Tags）",
+      "sourceUrl": "https://github.com/colorjs/color-interpolate",
+      "evidence": "Releases 区写着 No releases published，仓库头显示 2 Branches、0 Tags",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-colorjs-color-interpolate",
+    "designMdUrl": "https://vislexicon.com/site/github-com-colorjs-color-interpolate.md",
+    "checkedAt": "2026-09-15T12:55:22.127Z",
+    "license": "unknown"
+  }
+}

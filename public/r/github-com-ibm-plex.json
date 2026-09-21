@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "66ee7c7b7770461674bee26a538ff6954e162156ace6d7ad6c28a23706a50b8c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-ibm-plex",
+  "entityId": "entity-github-com-ibm-plex",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/ibm/plex",
+    "finalUrl": "https://github.com/ibm/plex",
+    "checkedAt": "2026-09-15T12:26:28.358Z"
+  },
+  "editorial": {
+    "name": "IBM/plex",
+    "descriptionZh": "IBM Plex 字族的发布仓库，README 讲这套企业字体怎么来的、怎么装到设备上，包以 @ibm/plex-* 形式发布，许可 OFL-1.1。",
+    "takeawayZh": "装 @ibm/plex-sans 用上 IBM Plex 字族。",
+    "noteZh": "About 栏是 The package of IBM's typeface, IBM Plex.，挂着 design、font、typeface 三个标签，许可写 OFL-1.1，Used by 4.5K。README 标题 IBM Plex® typeface，第一节讲这套企业字体做了两年、要表达 IBM 是谁，第二节 Add the IBM Plex typeface to your device 给安装指引，正文写明它是 open-source project。文件树是 monorepo 结构：packages、gulp-tasks、cypress、docs、scripts、test 并列，Releases 84 个，最新 @ibm/plex-sans@1.1.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "fonts-typefaces",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述 typeface，交付物是字族文件与配套的 npm 包，用户拿走的是字体本身，所以归字体与字族。",
+        "evidenceUrl": "https://github.com/IBM/plex"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:26:28.358Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "font",
+      "code-library"
+    ],
+    "actions": [
+      "download",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "font",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer",
+      "brand-team"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "OFL-1.1"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ibm/plex",
+      "finalUrl": "https://github.com/ibm/plex",
+      "title": "GitHub - IBM/plex: The package of IBM’s typeface, IBM Plex. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-ibm-plex/identity.jpg",
+        "sha256": "e68d6bdc276a769f539b2033483b0f8a739ef62513fcbcc64d1e27206065fd35",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134115,
+        "alt": "IBM/plex 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "OFL-1.1",
+      "sourceUrl": "https://github.com/IBM/plex",
+      "evidence": "About 栏 License 一行标 OFL-1.1 license",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "@ibm/plex-sans@1.1.0",
+      "sourceUrl": "https://github.com/IBM/plex",
+      "evidence": "About 栏 Releases 84，最新一条为 @ibm/plex-sans@1.1.0，发布于 2 年前",
+      "confidence": 1
+    },
+    {
+      "field": "usedBy",
+      "value": "4.5K",
+      "sourceUrl": "https://github.com/IBM/plex",
+      "evidence": "About 栏 Used by 4.5K 计数",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/IBM/plex",
+      "evidence": "README 写明是 open-source project，About 标 OFL-1.1，页面无付费入口",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。OFL-1.1：About 栏 License 一行标 OFL-1.1 license"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-ibm-plex",
+    "designMdUrl": "https://vislexicon.com/site/github-com-ibm-plex.md",
+    "checkedAt": "2026-09-15T12:26:28.358Z",
+    "license": "OFL-1.1"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5a34a7204a3a45e15fe044173e0dcab355dcdf02bd11a26945f79bc049c0a9b0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-khrome-ascii-art-font",
+  "entityId": "entity-github-com-khrome-ascii-art-font",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/khrome/ascii-art-font",
+    "finalUrl": "https://github.com/khrome/ascii-art-font",
+    "checkedAt": "2026-09-15T12:47:48.120Z"
+  },
+  "editorial": {
+    "name": "khrome/ascii-art-font",
+    "descriptionZh": "一个纯 JavaScript 的 Figlet 字体渲染模块，给 ascii-art 库用，在终端里把文字排成 ASCII 艺术字。",
+    "takeawayZh": "在终端把字符串渲染成 Figlet ASCII 艺术字",
+    "noteZh": "README 顶上就是一段用字符拼出来的大号字样，正文演示 Font.create('my text', 'Doom', function(rendered){...}) 和用 Font.fontPath = 'Fonts' 指定字体目录。文件树很短，只有 Fonts 与 test 两个目录，加 LICENSE、MIT-LICENSE.txt、README.md、font.js、package.json，全程 5 次提交。右栏 About 写 Figlet font rendering in pure js for the ascii-art library，标 License, MIT licenses found，8 stars、3 forks、1 watching。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "fonts-typefaces",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是一组 Figlet 字体（Fonts 目录）加一个渲染它的模块，用户拿走的是可在终端使用的字体效果，归字体与字族。若严格按交付形态看它其实是代码库，这里存在归类上的不确定性。",
+        "evidenceUrl": "https://github.com/khrome/ascii-art-font"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:47:48.120Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "font",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate"
+    ],
+    "media": [
+      "typography",
+      "font"
+    ],
+    "platforms": [],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/khrome/ascii-art-font",
+      "finalUrl": "https://github.com/khrome/ascii-art-font",
+      "title": "GitHub - khrome/ascii-art-font: Figlet font rendering in pure js for the ascii-art library · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-khrome-ascii-art-font/identity.jpg",
+        "sha256": "f68703de69f56eceb264235cb199a968374fbe3e96371be3512c331b749e35da",
+        "width": 1280,
+        "height": 900,
+        "bytes": 89464,
+        "alt": "khrome/ascii-art-font 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/khrome/ascii-art-font",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-khrome-ascii-art-font/identity.jpg",
+          "alt": "khrome/ascii-art-font 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/khrome/ascii-art-font",
+      "evidence": "右栏 About 标 License, MIT licenses found，README 顶部也标 MIT license，仓库内有 MIT-LICENSE.txt",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/khrome/ascii-art-font",
+      "evidence": "README 的 Installation 段只给 npm install ascii-art-table 这条命令，仓库无定价内容",
+      "confidence": 0.8
+    },
+    {
+      "field": "font-directory",
+      "value": "Fonts",
+      "sourceUrl": "https://github.com/khrome/ascii-art-font",
+      "evidence": "左栏文件树有 Fonts 目录，README 示例里用 Font.fontPath = 'Fonts' 指向它",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-khrome-ascii-art-font.md",
+  "registryUrl": "/r/github-com-khrome-ascii-art-font.json"
+}

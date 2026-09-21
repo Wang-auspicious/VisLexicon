@@ -1,0 +1,187 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4057c4695672891f789ad839919b1bc247b1b111516c85756174bde66b2ae5b0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "base-ui-net",
+  "entityId": "entity-base-ui-net",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "base-ui.net",
+  "official": {
+    "inputUrl": "https://base-ui.net",
+    "finalUrl": "https://base-ui.net/",
+    "checkedAt": "2026-09-15T11:56:13.505Z"
+  },
+  "editorial": {
+    "name": "Base UI (Angular)",
+    "descriptionZh": "Angular 加 Tailwind 的组件库，按 shadcn 的路子用 CLI 把 TypeScript/HTML 源码拷进项目，而不是装 npm 包。官网自称有 215 个组件与板块，其中 125 个免费，另卖 License。",
+    "takeawayZh": "base-ui-cli add 把 Angular 组件拷进项目",
+    "noteZh": "首屏右侧是一段黑底终端，写着 npx base-ui-cli init 和 npx base-ui-cli add dialog|button|card，最后一行是给 AI agent 用的 npx -y base-ui-ng-mcp，右上角一个 Copy 按钮。左边三个按钮是 Get Started、Browse All Components、Figma Design System，顶栏另有 Get License 与 Drop a Line。终端下方排了三张卡：CLI First (The Shadcn Model)、Add only what you need、Full Source Code Control。首屏上方还有一条 NEW 横幅指向 Motif Admin 这个用 Base UI 搭的 Angular 电商后台模板。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是可拷进自己 Angular 工程的界面组件与板块源码（CLI 生成，源码归使用者所有），属于通用界面组件库；它另有 Blocks、Layouts、Templates 目录，边界接近页面区块，这条我拿不太准。",
+        "evidenceUrl": "https://base-ui.net/"
+      },
+      {
+        "statement": "首屏正文写明 npx base-ui-cli add <name> copies the TypeScript/HTML source into your project，交付形态是组件源码而非设计文件或模板包。",
+        "evidenceUrl": "https://base-ui.net/getting-started"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:56:13.505Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "block",
+      "template"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "angular",
+      "tailwind",
+      "typescript",
+      "html"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://base-ui.net",
+      "finalUrl": "https://base-ui.net/",
+      "title": "Base UI (Angular) — Tailwind Component Library",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/base-ui-net/identity.jpg",
+        "sha256": "fcb08cab814d687d7231bbcfdb2bbdd61b7fcd25374d04619c477bec0c3af201",
+        "width": 1280,
+        "height": 900,
+        "bytes": 143619,
+        "alt": "Base UI (Angular) 首屏：Base UI (Angular) — the first rich Tailwind component ecosys"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://base-ui.net",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/base-ui-net/identity.jpg",
+          "alt": "Base UI (Angular) 首屏：Base UI (Angular) — the first rich Tailwind component ecosys",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "scale",
+      "value": "215 components and blocks（其中 125 free）",
+      "sourceUrl": "https://base-ui.net/",
+      "evidence": "首屏正文 base-ui.net — is a CLI-first Angular + Tailwind CSS component library with 215 components and blocks (125 free)",
+      "confidence": 1
+    },
+    {
+      "field": "cliCommands",
+      "value": "npx base-ui-cli init / npx base-ui-cli add <name>",
+      "sourceUrl": "https://base-ui.net/getting-started",
+      "evidence": "首屏终端代码块与三张特性卡正文",
+      "confidence": 1
+    },
+    {
+      "field": "agentIntegration",
+      "value": "npx -y base-ui-ng-mcp，可接 Cursor、Claude、Kimi、VS Code、Windsurf",
+      "sourceUrl": "https://base-ui.net/",
+      "evidence": "首屏终端最后一行与下方 WORKS WITH 图标行、MCP for AI agents 链接",
+      "confidence": 1
+    },
+    {
+      "field": "templates",
+      "value": "Motif Admin（Angular commerce dashboard）、Motif、Relay",
+      "sourceUrl": "https://base-ui.net/templates",
+      "evidence": "首屏 NEW 横幅与目录内 /templates/motif-admin、/templates/motif、/templates/relay",
+      "confidence": 1
+    },
+    {
+      "field": "licensing",
+      "value": "顶栏有 Get License 入口，免费部分与付费部分并存",
+      "sourceUrl": "https://base-ui.net/pricing",
+      "evidence": "首屏右上角黑色 Get License 按钮与顶栏 Pricing 链接",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/base-ui-net.md",
+  "registryUrl": "/r/base-ui-net.json"
+}

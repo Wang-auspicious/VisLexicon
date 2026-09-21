@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9687123ce7b93822737631a0525e0ec6e0a020c8143cd0c9843cc724477bf6b6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "invisionapp-com-freehand",
+  "entityId": "entity-invisionapp-com-freehand",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://invisionapp.com/freehand",
+    "finalUrl": "https://miro.com/",
+    "checkedAt": "2026-09-15T11:11:55.445Z"
+  },
+  "editorial": {
+    "name": "Miro",
+    "descriptionZh": "这一条请求的是 invisionapp.com/freehand，也就是 InVision 当年那块叫 Freehand 的多人白板。现在这个路径同样被 301 到 miro.com，页面上只剩 Miro 自己的首页，Freehand 的介绍和入口全部消失。",
+    "takeawayZh": "想找 Freehand 白板，落到的是 Miro 的空白首页",
+    "noteZh": "请求 https://invisionapp.com/freehand 之后落到 https://miro.com/，与 invisionapp.com 的结果是同一页：标题 AI Innovation Workspace | Miro，首屏点阵底上只有 Human collaboration at the speed of AI 一行大标题、一个 Enter your work email 邮箱框和蓝色 Get started free 按钮，整屏没有一张产品截图，Cookies, anyone? 的同意条压在页面底部。Freehand 自己的画布、模板和入口在页面上一个字都找不到，只有在 Miro 的导航里能翻到相邻的 Prototypes & Wireframes、Whiteboard、MCP Server 这些子项。换句话说，这条记录留下的唯一信息是：InVision Freehand 的公开页面已经不存在了。",
+    "recommendation": null,
+    "pricing": "unknown（落到 Miro 首页，未取到定价档位）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "invisionapp.com/freehand 现在被重定向到 miro.com 首页，实际交付的是 Miro 这家协作白板产品的官方门面，用户拿到的是 Miro 的注册入口而非 Freehand，因此按落点站点的产品与公司官网归类。",
+        "evidenceUrl": "https://miro.com/"
+      },
+      {
+        "statement": "http 阶段 finalUrl 记为 https://miro.com/（不是 Freehand 页），浏览器阶段渲染出的也是 Miro 首页；本条按落点站点如实描述，name 取页面自称 Miro。",
+        "evidenceUrl": "https://miro.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:11:55.445Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "ai"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "prototype"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "desktop",
+      "mcp"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation"
+    ],
+    "audiences": [
+      "designer",
+      "brand-team"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://invisionapp.com/freehand",
+      "finalUrl": "https://miro.com/",
+      "title": "AI Innovation Workspace | Miro",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/invisionapp-com-freehand/identity.jpg",
+        "sha256": "560324fc18d970f773ed73fd608ef676477e8b1e748687d3f3b3c85caea1fd44",
+        "width": 1280,
+        "height": 900,
+        "bytes": 73052,
+        "alt": "Miro 首屏：Human collaboration at the speed of AI"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "redirect",
+      "value": "invisionapp.com/freehand 现在 301 到 https://miro.com/，不是 Freehand 页",
+      "sourceUrl": "https://miro.com/",
+      "evidence": "http 阶段 finalUrl 记为 https://miro.com/，浏览器阶段渲染出的是 Miro 首页",
+      "confidence": 1
+    },
+    {
+      "field": "firstScreen",
+      "value": "首屏只有标题 Human collaboration at the speed of AI + 邮箱输入框 + Get started free，无产品截图",
+      "sourceUrl": "https://miro.com/",
+      "evidence": "1280×900 首屏截图与 live.bodyText 开头一段",
+      "confidence": 1
+    },
+    {
+      "field": "adjacentProducts",
+      "value": "Miro 导航里能看到 Prototypes & Wireframes、Whiteboard、MCP Server",
+      "sourceUrl": "https://miro.com/prototyping",
+      "evidence": "导航 Product 与 Platform 两组下拉，站内 /prototyping、/whiteboard、/ai/mcp 路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：unknown（落到 Miro 首页，未取到定价档位）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/invisionapp-com-freehand",
+    "designMdUrl": "https://vislexicon.com/site/invisionapp-com-freehand.md",
+    "checkedAt": "2026-09-15T11:11:55.445Z",
+    "license": "unknown"
+  }
+}

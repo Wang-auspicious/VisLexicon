@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1ed18d05988ee082511bde7d15a4cd99d9376d45c966b10250be9beb57210c6d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "diabrowser-com",
+  "entityId": "entity-diabrowser-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://diabrowser.com",
+    "finalUrl": "https://www.diabrowser.com/",
+    "checkedAt": "2026-09-15T10:54:52.882Z"
+  },
+  "editorial": {
+    "name": "Dia",
+    "descriptionZh": "Dia 是 The Browser Company 做的 AI 浏览器，把日历、收件箱、Slack、Notion 这些散在各处的上下文收进标签栏，替你写早报、汇总结论、生成 deck；目前还在 waitlist 阶段，部分地区会先撞上区域限制页。",
+    "takeawayZh": "看它怎么用一张夸张人像把浏览器卖点做成情绪",
+    "noteZh": "首屏纯黑，正中衬线大字 Dia，下面一句 A browser you won't dread opening.，白色按钮 Join the waitlist，小字写 Includes 14 day free trial of Better Days；背景是一张放大的、张嘴尖叫的女士照片，底部浮着一颗 Watch the scream 播放胶囊。顶部一条胶囊导航写 What's New、Security、Introducing Reports。往下编号 01 Start your day two steps ahead 讲 Morning Brief 先把日历、收件箱和关键链接铺好；02 Synthesis you'll actually use 说问一次就把 Slack、Notion、Calendar 里的东西收成一份可分享的报告；03 Find the answer without hunting it down。功能清单里还有 Decks（把散乱上下文变成真幻灯片）、Live Work（把 GitHub、Notion 拉进标签栏）、Better Meetings、Profiles、Splits、Organized Tabs。隐私段用一整排开关演示 Block trackers、Personalize new chats、Memory、Block ads、Share content data。",
+    "recommendation": null,
+    "pricing": "unknown（首页只给 Join the waitlist 与 14 天 Better Days 试用，正式档位在 /plans）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页交付的是产品概念陈述、waitlist 入口和功能分类，浏览器本体还没公开发布，用户能拿走的只有这版落地页本身。",
+        "evidenceUrl": "https://www.diabrowser.com/"
+      },
+      {
+        "statement": "抓取时 http.title 与 meta description 拿到的是 Notion 的区域不可用提示（Unable to direct to diabrowser.com），但正文与截图渲染出了正式首页，说明部分地区会被拦；分类依据取渲染后的页面。",
+        "evidenceUrl": "https://www.diabrowser.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:54:52.882Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "image",
+      "ui",
+      "video"
+    ],
+    "platforms": [
+      "desktop",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "invite-only",
+      "trial"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://diabrowser.com",
+      "finalUrl": "https://www.diabrowser.com/",
+      "title": "Dia | A browser you won't dread opening",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/diabrowser-com/identity.jpg",
+        "sha256": "35d42ec0207e1571139836daa2eb94374b7752523848d5545d36ae8da94f32de",
+        "width": 1280,
+        "height": 900,
+        "bytes": 52358,
+        "alt": "Dia 首屏：Dia Dia"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "waitlist",
+      "value": "Join the waitlist，附 14 天 Better Days 免费试用",
+      "sourceUrl": "https://www.diabrowser.com/",
+      "evidence": "首屏白色按钮 Join the waitlist 与下方小字 Includes 14 day free trial of Better Days，截图里可见",
+      "confidence": 1
+    },
+    {
+      "field": "features",
+      "value": "Morning Brief、Synthesis、Decks、Live Work、Better Meetings、Profiles、Splits、Organized Tabs",
+      "sourceUrl": "https://www.diabrowser.com/",
+      "evidence": "首页 01/02/03 编号段与 Built for how you actually work 一节的六项，截图外的正文可见",
+      "confidence": 1
+    },
+    {
+      "field": "privacyControls",
+      "value": "Block trackers、Personalize new chats、Memory、Block ads、Share content data 五个开关",
+      "sourceUrl": "https://www.diabrowser.com/privacy",
+      "evidence": "首页 Privacy first with you in control 段的开关列表",
+      "confidence": 1
+    },
+    {
+      "field": "regionRestriction",
+      "value": "抓取时 http.title 与 meta description 是区域限制页（Unable to direct to diabrowser.com / access to diabrowser.com is currently unavailable in your region）",
+      "sourceUrl": "https://www.diabrowser.com/",
+      "evidence": "http.title 与 http.description 字段，同时 live.title 沿用了同一份；但正文与截图渲染出了正式首页",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "unknown，首页只给 waitlist 与 14 天 Better Days 试用",
+      "sourceUrl": "https://www.diabrowser.com/plans",
+      "evidence": "internalPaths 含 /plans，但首屏未给正式售价",
+      "confidence": 0.6
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/diabrowser-com",
+    "designMdUrl": "https://vislexicon.com/site/diabrowser-com.md",
+    "checkedAt": "2026-09-15T10:54:52.882Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3110c54967add7fbf9dd486bf7896ea0a48ede8243c0a9d14ced00d583790676",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svar-dev-vue-core",
+  "entityId": "entity-svar-dev-vue-core",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://svar.dev/vue/core",
+    "finalUrl": "https://svar.dev/vue/core/",
+    "checkedAt": "2026-09-15T12:30:26.907Z"
+  },
+  "editorial": {
+    "name": "SVAR Vue Core",
+    "descriptionZh": "SVAR 的 Vue 3 组件库，提供表单控件、菜单、工具栏、评论、待办等基础元件，全部用 Composition API 与 <script setup> 原生写成。首屏标着 Just released，同一页的 meta description 却还写着 Coming soon。",
+    "takeawayZh": "Vue 3 项目里装上一套原生 SVAR 组件",
+    "noteZh": "绿色底的首屏在标题上方挂了一枚 Just released 的小徽标，主标题是 SVAR Core — Vue UI Library，副标题说这是给 Vue 3 用的，安装行 npm install @svar-ui/vue-core 下面同样写 Licensed under MIT。正文按 Core、Menu、Toolbar、Comments、Tasklist 五个组件分段，Comments 支持气泡与流两种视图加 Markdown，Tasklist 是可增删改的待办；Why Choose Our Vue UI Library? 一段专门讲 Truly Native Vue 3——用 Composition API、<script setup>、reactive props 和 Vue 自带的事件模型，不做 wrapper。首屏底部铺的是暗色样张，Button、January 2026 日历、Willow / Dark 主题切换与带 John Doe UX Designer 的成员列表都露了出来。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是 Vue 3 的通用 UI 元件集合（form controls、buttons、date pickers、modals 以及 Menu / Toolbar / Comments / Tasklist），归通用界面组件库。",
+        "evidenceUrl": "https://svar.dev/vue/core/"
+      },
+      {
+        "statement": "页面 meta description 写 Coming soon，而首屏已经有 Just released 徽标与完整的组件清单和安装命令，两者矛盾；按页面实际内容判为已发布的组件库，并把该矛盾记进 facts。",
+        "evidenceUrl": "https://svar.dev/vue/core/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:30:26.907Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svar.dev/vue/core",
+      "finalUrl": "https://svar.dev/vue/core/",
+      "title": "SVAR Vue Core - UI Library for Vue.js",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/svar-dev-vue-core/identity.jpg",
+        "sha256": "a29eceefd7c7c399680353273a55af033a42cebc71d2e41857726e1e80455250",
+        "width": 1280,
+        "height": 900,
+        "bytes": 91415,
+        "alt": "SVAR Vue Core 首屏：SVAR Core — Vue UI Library"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "releaseStateConflict",
+      "value": "首屏徽标写 Just released 且正文首句也说 Just released，但 meta description 仍写 Coming soon!",
+      "sourceUrl": "https://svar.dev/vue/core/",
+      "evidence": "首屏 Just released 徽标与页面 description 元数据对照",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://svar.dev/vue/core/",
+      "evidence": "首屏 Licensed under MIT 与 description 里的 open source 说明",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "Core、Menu、Toolbar、Comments、Tasklist",
+      "sourceUrl": "https://svar.dev/vue/core/",
+      "evidence": "正文逐个组件段落的小标题",
+      "confidence": 1
+    },
+    {
+      "field": "vueApi",
+      "value": "用 Composition API、<script setup>、reactive props 与 Vue 内置事件模型写成，无 wrapper",
+      "sourceUrl": "https://svar.dev/vue/core/",
+      "evidence": "Truly Native Vue 3 段落",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/svar-dev-vue-core",
+    "designMdUrl": "https://vislexicon.com/site/svar-dev-vue-core.md",
+    "checkedAt": "2026-09-15T12:30:26.907Z",
+    "license": "MIT"
+  }
+}

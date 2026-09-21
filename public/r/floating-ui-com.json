@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "32c4ec4e93e99c87ae22a280d5a71813a1c647979cd6e742227341146096ca00",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "floating-ui-com",
+  "entityId": "entity-floating-ui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://floating-ui.com",
+    "finalUrl": "https://floating-ui.com/",
+    "checkedAt": "2026-09-15T11:41:35.196Z"
+  },
+  "editorial": {
+    "name": "Floating UI",
+    "descriptionZh": "给悬浮元素做定位与交互的 JavaScript 库主页，自我描述是 A JavaScript library to position floating elements and create interactions for them。页面上把每类定位中间件都配了可交互的小 demo。",
+    "takeawayZh": "用 offset、flip 等中间件定位 tooltip",
+    "noteZh": "深色首屏是一颗粉色气球加一圈几何体，往下 Smart Anchor Positioning 一节把 Placement、Shift、Flip、Size、Arrow、Virtual Anchor 每个中间件各配一张能滚动、能移鼠标的卡片，右侧挂 CodeSandbox 链接。再往下推的是 Base UI，页面说它是建在 Floating UI 之上的无样式 React 组件库，覆盖 tooltips、popovers、menus、selects、dialogs、toasts。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是定位与交互的原语：computePosition、autoUpdate 加一组中间件，页面把 Base UI 明确称为 headless React component library，所以归无样式无障碍原语，而不是成品组件库。",
+        "evidenceUrl": "https://floating-ui.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:41:35.196Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "react",
+      "react-native",
+      "vue",
+      "canvas"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://floating-ui.com",
+      "finalUrl": "https://floating-ui.com/",
+      "title": "Floating UI - Create tooltips, popovers, dropdowns, and more",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/floating-ui-com/identity.jpg",
+        "sha256": "05a5d91246b1cc379597ceb7fe8f3e6d13da7cf28b407d43960d2dbad8bf720a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75167,
+        "alt": "Floating UI 首屏：Smart Anchor Positioning"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "tagline",
+      "value": "A JavaScript library to position floating elements and create interactions for them.",
+      "sourceUrl": "https://floating-ui.com/",
+      "evidence": "首屏 hero 下方的副标题，也是页面 meta description",
+      "confidence": 1
+    },
+    {
+      "field": "platforms",
+      "value": "官方绑定覆盖 web、React DOM、React Native、Vue，并支持 canvas",
+      "sourceUrl": "https://floating-ui.com/",
+      "evidence": "Tree-shakeable & Platform-agnostic 一节原文",
+      "confidence": 1
+    },
+    {
+      "field": "relatedLibrary",
+      "value": "Base UI",
+      "sourceUrl": "https://floating-ui.com/",
+      "evidence": "Base UI 一节称其为 a new headless React component library built on top of Floating UI",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/floating-ui-com",
+    "designMdUrl": "https://vislexicon.com/site/floating-ui-com.md",
+    "checkedAt": "2026-09-15T11:41:35.196Z",
+    "license": "unknown"
+  }
+}

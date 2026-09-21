@@ -1,0 +1,175 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "532cc0e5d6d2bc7349d0d29aad1c871921c8f7e9796ff8087850c331aa3d7eff",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "flow-mittwald-de",
+  "entityId": "entity-flow-mittwald-de",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "flow.mittwald.de",
+  "official": {
+    "inputUrl": "https://flow.mittwald.de",
+    "finalUrl": "https://flow.mittwald.de/",
+    "checkedAt": "2026-09-15T11:46:17.956Z"
+  },
+  "editorial": {
+    "name": "Flow – mittwald Design System",
+    "descriptionZh": "mittwald 的 mStudio Design System（代号 Flow）文档站，德语，分 Foundations、Patterns、Components、Ressourcen 四段。组件按嵌套方式设计，文档里直接贴可复制的 JSX 片段。",
+    "takeawayZh": "看 Flow 1.0 的 Foundations 与组件",
+    "noteZh": "首屏米白底，左上角是 flow. 字标，正中一个超大的 flow. 加一行 mStudio Design System，右上只有搜索和汉堡菜单。往下两张并排卡片：左边 Im Design System starten 写 Konsistente Components und Patterns im Einklang mit der Marke，右边紫色卡片是 Flow 1.0 ist da —— Eine kleine Zahl, ein großer Schritt. Flow 1.0 macht unser Design System versioniert, stabil und verlässlich.。再往下 Fokus auf Developer Experience 一段讲 Verschachtelte Components erleichtern das Einfügen、Automatisierungen ordnen Components automatisch mit passenden Abständen an，并声明 Alles Open Source auf GitHub verfügbar und hier im Styleguide dokumentiert；紧接着的示例直接贴 JSX：Section / Header / Heading / Button 嵌套，Button 带 color 与 variant 两个属性。页尾 Ressourcen 给 GitHub Repo 与 Developer-Portal 两个外链，法务行是 Impressum 与 Datenschutz。",
+    "recommendation": null,
+    "pricing": "unknown（设计系统文档站，没有价格或授权页）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是成套的设计系统文档与组件（Foundations、Patterns、Components 三段加 styleguide 里的 JSX 示例），归 ui-implementation 下的 design-system-suites。",
+        "evidenceUrl": "https://flow.mittwald.de/"
+      },
+      {
+        "statement": "正文明确写 Alles Open Source auf GitHub verfügbar，但页面没有渲染出具体许可名，licenses 记 unknown、access 记 open-source。",
+        "evidenceUrl": "https://flow.mittwald.de/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:17.956Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "learn",
+      "browse",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "component-registry"
+    ],
+    "languages": [
+      "de"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://flow.mittwald.de",
+      "finalUrl": "https://flow.mittwald.de/",
+      "title": "Flow – mittwald Design System",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/flow-mittwald-de/identity.jpg",
+        "sha256": "cf685fd291e006593faa92f6b1d9d47ab6857d8a0df0aaad3c7737a1aa6713ae",
+        "width": 1280,
+        "height": 900,
+        "bytes": 65417,
+        "alt": "Flow – mittwald Design System 首屏：mStudio Design System"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://flow.mittwald.de",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/flow-mittwald-de/identity.jpg",
+          "alt": "Flow – mittwald Design System 首屏：mStudio Design System",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "versionAnnouncement",
+      "value": "Flow 1.0 ist da — Eine kleine Zahl, ein großer Schritt. Flow 1.0 macht unser Design System versioniert, stabil und verlässlich.",
+      "sourceUrl": "https://flow.mittwald.de/",
+      "evidence": "首屏右侧紫色卡片全文，截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "developerExperience",
+      "value": "Verschachtelte Components erleichtern das Einfügen；Automatisierungen ordnen Components automatisch mit passenden Abständen an；Alles Open Source auf GitHub verfügbar",
+      "sourceUrl": "https://flow.mittwald.de/",
+      "evidence": "Fokus auf Developer Experience 一段正文",
+      "confidence": 1
+    },
+    {
+      "field": "codeSample",
+      "value": "文档直接贴 JSX：Section / Header / Heading 包住 Button，Button 带 color=secondary 与 variant=soft",
+      "sourceUrl": "https://flow.mittwald.de/",
+      "evidence": "Fokus auf Developer Experience 段落右侧的代码示例",
+      "confidence": 1
+    },
+    {
+      "field": "navigationAndFooter",
+      "value": "导航分 Get Started、Releases、Foundations、Patterns、Components 与 Ressourcen、Rechtliches 两栏；页脚给 GitHub Repo、Developer-Portal、Impressum、Datenschutz，版权行是 © 2026 Mittwald CM Service GmbH & Co. KG",
+      "sourceUrl": "https://flow.mittwald.de/",
+      "evidence": "顶栏导航与页面底部 Ressourcen、Rechtliches 两栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/flow-mittwald-de.md",
+  "registryUrl": "/r/flow-mittwald-de.json"
+}

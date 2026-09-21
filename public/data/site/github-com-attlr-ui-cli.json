@@ -1,0 +1,193 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "06953d1d958389d75fa3f099402ca921348e1d046883250e863903d79dba2a3d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-attlr-ui-cli",
+  "entityId": "entity-github-com-attlr-ui-cli",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/attlr-ui/cli",
+    "finalUrl": "https://github.com/attlr-ui/cli",
+    "checkedAt": "2026-09-15T11:37:20.920Z"
+  },
+  "editorial": {
+    "name": "attlr-ui/cli",
+    "descriptionZh": "attlr-cli 的源码仓库，一个把 shadcn 那套按需 add 组件的流程搬给 React Native 的命令行工具，只有 init / add / remove / update / list 五个子命令。",
+    "takeawayZh": "用 attlr add 往 RN 项目里加组件",
+    "noteZh": "About 栏一句话是 Source code for attlr-cli，旁边挂着 attlr.org.za 和五个 topics：attlr、attlr-cli、react-native、shadcn-ui、ui-components。README 极短：安装 npm install -D attlr，用法 npx attlr <command>，Commands 一节只列了五条——init（Add attlr to your project）、add（Add a component to your project）、remove（后面直接写着 not implemented yet）、update、list。Languages 条是 JavaScript 70.8% / TypeScript 29.2%，0 stars、No releases published，贡献者只有 Axolem 和 dependabot[bot]，最近一次提交停在两年前。",
+    "recommendation": null,
+    "pricing": "Free, MIT licensed",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 的 Commands 一节说明交付物是 init / add / remove / update / list 五个子命令，用户装的是 npm install -D attlr 这个开发期依赖，拿它往 React Native 项目里塞组件，落点在开发工作流而非组件本身。",
+        "evidenceUrl": "https://github.com/attlr-ui/cli"
+      },
+      {
+        "statement": "仓库 topics 里的 react-native 与 shadcn-ui 说明它复刻的是 shadcn 的按需拉取模式，只是目标平台换成 RN；组件实体在别处，这里给的是命令行。",
+        "evidenceUrl": "https://github.com/attlr-ui/cli"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:37:20.920Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "react-native",
+      "shadcn-ui",
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/attlr-ui/cli",
+      "finalUrl": "https://github.com/attlr-ui/cli",
+      "title": "GitHub - attlr-ui/cli: Source code for attlr-cli · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-attlr-ui-cli/identity.jpg",
+        "sha256": "2ba504d370e8e6f82c9be2deeef5316b05a43e25818c05b1da9f470e3915c21f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 94827,
+        "alt": "attlr-ui/cli 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/attlr-ui/cli",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-attlr-ui-cli/identity.jpg",
+          "alt": "attlr-ui/cli 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT license",
+      "sourceUrl": "https://github.com/attlr-ui/cli",
+      "evidence": "About 栏与 README 头部都标 MIT license，根目录有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "commands",
+      "value": "init / add / remove（标 not implemented yet）/ update / list",
+      "sourceUrl": "https://github.com/attlr-ui/cli",
+      "evidence": "README 的 Commands 一节逐条列出",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install -D attlr，用法 npx attlr <command>",
+      "sourceUrl": "https://github.com/attlr-ui/cli",
+      "evidence": "README 的 Installation 与 Usage 两节",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "attlr、attlr-cli、react-native、shadcn-ui、ui-components",
+      "sourceUrl": "https://github.com/attlr-ui/cli",
+      "evidence": "About 栏 topics 标签区与 README 底部的 Topics 列表",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "JavaScript 70.8% / TypeScript 29.2%",
+      "sourceUrl": "https://github.com/attlr-ui/cli",
+      "evidence": "About 栏 Languages 条形图与图例",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "0 stars、0 forks、56 commits、7 branches、0 tags、No releases published、2 contributors",
+      "sourceUrl": "https://github.com/attlr-ui/cli",
+      "evidence": "仓库头部计数、About 栏、Releases 与 Contributors 区块",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/attlr-ui/cli",
+      "evidence": "MIT 协议公开仓库，无付费入口",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-attlr-ui-cli.md",
+  "registryUrl": "/r/github-com-attlr-ui-cli.json"
+}

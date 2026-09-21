@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d9984fc688c6ad28d6cb5781dcae65436b0218549d7843646663be5b1c3667a5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mobx-js-org",
+  "entityId": "entity-mobx-js-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://mobx.js.org",
+    "finalUrl": "https://mobx.js.org/README.html",
+    "checkedAt": "2026-09-15T12:31:36.277Z"
+  },
+  "editorial": {
+    "name": "MobX",
+    "descriptionZh": "MobX 是 JavaScript 的状态管理库，用 observable state、actions、computeds、reactions 这一套概念管理应用状态，文档站单独有 MobX and React 一章。",
+    "takeawayZh": "把 observable state 接进 React，替掉手写状态同步。",
+    "noteZh": "左边栏分成 Introduction、MobX core、MobX and React、Tips & Tricks 四段，Observable state、Actions、Computeds、Reactions 🚀、API 挨着排，React 相关另开 React integration 和 React optimizations 两节。正文标题 'MobX — Simple, scalable state management.' 下面挂着一排徽章：discuss on GitHub、npm package 7.0.3、backers 124、sponsors 97，还有一个 changelogs.xyz 的跳转。再往下整页都是赞助商墙，按 Platinum sponsors ($5000+)、Gold sponsors ($2500+)、Silver sponsors ($500+) 三档排，Canva、Coinbase 这些 logo 都在上面。顶部导航有 API Reference，另有中文和한국어两个语言入口。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "MobX 交付的是可安装的状态管理库与文档，不含界面组件；候选池把它归成 React Native UI 库与实际不符。按「用户直接拿走的是应用状态管理代码」归入开发工具。",
+        "evidenceUrl": "https://mobx.js.org/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:31:36.277Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn",
+      "browse",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en",
+      "zh-hans",
+      "ko"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mobx.js.org",
+      "finalUrl": "https://mobx.js.org/README.html",
+      "title": "About MobX · MobX 🇺🇦",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/mobx-js-org/identity.jpg",
+        "sha256": "af638130327f84fd3a63e9141f08d3c04a066b1939a3a6be951c6683d461bff4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 108787,
+        "alt": "MobX 首屏：MobX 🇺🇦"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "currentVersion",
+      "value": "npm package 7.0.3",
+      "sourceUrl": "https://mobx.js.org/",
+      "evidence": "首页标题下方的 npm package 徽章",
+      "confidence": 1
+    },
+    {
+      "field": "coreConcepts",
+      "value": "Observable state、Actions、Computeds、Reactions",
+      "sourceUrl": "https://mobx.js.org/",
+      "evidence": "左侧栏 MobX core 一节下的四个条目",
+      "confidence": 1
+    },
+    {
+      "field": "reactIntegration",
+      "value": "有独立的 MobX and React 章节（React integration、React optimizations）",
+      "sourceUrl": "https://mobx.js.org/",
+      "evidence": "左侧栏第三个分组标题与其下条目",
+      "confidence": 1
+    },
+    {
+      "field": "funding",
+      "value": "靠赞助维持，分 Platinum ($5000+)、Gold ($2500+)、Silver ($500+) 三档",
+      "sourceUrl": "https://mobx.js.org/",
+      "evidence": "首页赞助商墙的三档小标题",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/mobx-js-org",
+    "designMdUrl": "https://vislexicon.com/site/mobx-js-org.md",
+    "checkedAt": "2026-09-15T12:31:36.277Z",
+    "license": "unknown"
+  }
+}

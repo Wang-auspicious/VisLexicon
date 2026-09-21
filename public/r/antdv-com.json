@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "adcc26755d9659df831673205dbc1d10162f90bc8b78e3ad89e8a5bd8a7b2c8a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "antdv-com",
+  "entityId": "entity-antdv-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://antdv.com",
+    "finalUrl": "https://antdv.com/components/overview",
+    "checkedAt": "2026-09-15T11:55:47.855Z"
+  },
+  "editorial": {
+    "name": "Ant Design Vue",
+    "descriptionZh": "Ant Design 的 Vue 实现，停在组件总览页：正文按 Advanced And Powerful、General、Layout、Navigation、Data Entry、Data Display、Feedback、Other 分组摊开全部组件，左栏是逐条组件索引。当前版本 4.2.6。",
+    "takeawayZh": "按分组挑 Vue 组件，装 ant-design-vue 包",
+    "noteZh": "页面最上面挂着一条 Mentorbook.AI 的推广横幅，写 Your AI Mentor, Your Learning Journey。导航是 Ant Design Vue / Docs / Components / Store，右侧有版本 4.2.6、中文、More 和 GitHub 图标，搜索框写 Search Docs。左栏按 General（Button、Icon、Typography）、Layout（Divider、Flex 带 New 标、Grid、Layout、Space）、Navigation（Anchor、Breadcrumb…）几组排开，主区停在 Components Overview 的 Overview 标题，正文一句 ant-design-vue provides plenty of UI components to enrich your web applications，下面 Advanced And Powerful 分组挂一张 Surely Table 卡片，General 分组并排 Button、Icon、Typography 三张卡。右下角浮着一个 AI 按钮。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "停在的页面是 Components Overview，每个组件各有一张带示例缩略图的卡片，左栏按 General / Layout / Navigation / Data Entry / Data Display / Feedback 逐条索引，用户拿走的是可安装的 Vue 组件，故归通用界面组件库。",
+        "evidenceUrl": "https://antdv.com/components/overview"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:47.855Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://antdv.com",
+      "finalUrl": "https://antdv.com/components/overview",
+      "title": "Components Overview - Ant Design Vue",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/antdv-com/identity.jpg",
+        "sha256": "cd0a991fa244063ca02b2723a8664637684fc10542bb1732c76f9ff79dca1b30",
+        "width": 1280,
+        "height": 900,
+        "bytes": 66232,
+        "alt": "Ant Design Vue 首屏：Ant Design Vue"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "componentGroups",
+      "value": "组件按 Advanced And Powerful、General、Layout、Navigation、Data Entry、Data Display、Feedback、Other 八组划分",
+      "sourceUrl": "https://antdv.com/components/overview",
+      "evidence": "Overview 一节的分组标题及其下的组件卡片与左栏对应分组",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "4.2.6，导航可切中文与更多语言",
+      "sourceUrl": "https://antdv.com/components/overview",
+      "evidence": "顶部导航右侧的 4.2.6 版本下拉与 中文 / More 按钮",
+      "confidence": 1
+    },
+    {
+      "field": "relatedLinks",
+      "value": "页脚 Links 栏给出 Ant Design、Ant Design-React、Ant Design-Angular、Awesome Ant Design、AntD Library 等入口",
+      "sourceUrl": "https://antdv.com/components/overview",
+      "evidence": "页脚 Links 一节的链接列表",
+      "confidence": 1
+    },
+    {
+      "field": "promoBanner",
+      "value": "页面顶部有一条 Mentorbook.AI 的推广横幅",
+      "sourceUrl": "https://antdv.com/components/overview",
+      "evidence": "首屏最上方 Mentorbook.AI Your AI Mentor, Your Learning Journey 那条横幅",
+      "confidence": 1
+    },
+    {
+      "field": "componentIndex",
+      "value": "组件页路径逐条独立，如 /components/button、/components/table、/components/tour、/components/watermark",
+      "sourceUrl": "https://antdv.com/components/overview",
+      "evidence": "站内路径清单里近百条 /components/* 路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/antdv-com",
+    "designMdUrl": "https://vislexicon.com/site/antdv-com.md",
+    "checkedAt": "2026-09-15T11:55:47.855Z",
+    "license": "unknown"
+  }
+}

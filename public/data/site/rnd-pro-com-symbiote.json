@@ -1,0 +1,183 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a99b715b9089e07c436660205293685f08fdd65ef620804affc14bea9d0f2ca8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "rnd-pro-com-symbiote",
+  "entityId": "entity-rnd-pro-com-symbiote",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "rnd-pro.com",
+  "official": {
+    "inputUrl": "https://rnd-pro.com/symbiote",
+    "finalUrl": "https://rnd-pro.com/symbiote/",
+    "checkedAt": "2026-09-15T11:52:32.893Z"
+  },
+  "editorial": {
+    "name": "Symbiote.js",
+    "descriptionZh": "基于原生 Custom Elements 的 UI 库，核心主张是 Runtime Agnostic Templates（RAT）：模板只是一段带命名绑定的 HTML 字符串，与组件实例、渲染函数和运行时解耦，不需要虚拟 DOM 或强制构建步骤。页面还把「Agentic Web 与 WebMCP」列为它的第四条设计理由。",
+    "takeawayZh": "原生 Custom Elements 加 RAT 模板免构建",
+    "noteZh": "页面几乎全是等宽字与黑框，左边一列深色按钮是 rnd-pro.com、Projects、Open Source、Workflow、Join us!、Blog。正文用一个大边框回答「Why does Symbiote.js exist?」，说核心原因是 Runtime Agnostic Templates——模板是一段描述标记与命名绑定的 HTML 字符串，独立于组件实例、渲染函数、运行时和模板工具，能在客户端或服务端任意时刻定义、组合、渲染与复用。下面整幅黑框标题写着 RAT: RUNTIME AGNOSTIC TEMPLATES，再接 Documentation、Code Examples、npm、GitHub、Community 五个箭头形状的链接；右侧目录把四条理由列成 Runtime Agnostic Templates、Direct extension of the DOM、App-wide state without prop drilling、Agentic Web and WebMCP，并另开 More built-in features 列出 Itemize API、Server-side rendering、Built-in SPA router、CSS-driven animations、Security、TypeScript。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个用来写界面的库（扩展原生 Custom Elements，带数据绑定、模板、状态上下文、路由与 SSR），归通用界面组件库；页面没有强调无障碍原语，因此不选 headless-accessible-primitives。",
+        "evidenceUrl": "https://rnd-pro.com/symbiote/"
+      },
+      {
+        "statement": "候选池按 npm 包名 @symbiotejs/symbiote 归为 Svelte UI 库，但页面通篇讲 native Custom Elements 与 RAT，没有 Svelte 相关内容，不采纳候选池小类。",
+        "evidenceUrl": "https://rnd-pro.com/symbiote/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:32.893Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "agent"
+    ],
+    "deliverables": [
+      "code-library",
+      "primitive"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "web-components",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://rnd-pro.com/symbiote",
+      "finalUrl": "https://rnd-pro.com/symbiote/",
+      "title": "Symbiote.js",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/rnd-pro-com-symbiote/identity.jpg",
+        "sha256": "b675ac5627f5ac7413878f28cc39d67d4cd9b9cf5220d3d025abf65f4462f461",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128470,
+        "alt": "Symbiote.js 首屏：Symbiote.js"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://rnd-pro.com/symbiote",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/rnd-pro-com-symbiote/identity.jpg",
+          "alt": "Symbiote.js 首屏：Symbiote.js",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "coreConcept",
+      "value": "Runtime Agnostic Templates（RAT）：模板是与组件实例、渲染函数、运行时、模板工具都无关的 HTML 字符串",
+      "sourceUrl": "https://rnd-pro.com/symbiote/",
+      "evidence": "Why does Symbiote.js exist? 段落",
+      "confidence": 1
+    },
+    {
+      "field": "designReasons",
+      "value": "四条：Runtime Agnostic Templates、Direct extension of the DOM、App-wide state without prop drilling、Agentic Web and WebMCP",
+      "sourceUrl": "https://rnd-pro.com/symbiote/",
+      "evidence": "右侧目录的四个编号小节",
+      "confidence": 1
+    },
+    {
+      "field": "builtInFeatures",
+      "value": "Itemize API、Server-side rendering、Built-in SPA router、CSS-driven animations、Security、TypeScript",
+      "sourceUrl": "https://rnd-pro.com/symbiote/",
+      "evidence": "More built-in features 小节",
+      "confidence": 1
+    },
+    {
+      "field": "noBuildStep",
+      "value": "不需要虚拟 DOM、专有模板语法或强制构建步骤",
+      "sourceUrl": "https://rnd-pro.com/symbiote/",
+      "evidence": "RAT 段落末句",
+      "confidence": 1
+    },
+    {
+      "field": "resources",
+      "value": "页面给出 Documentation、Code Examples、npm、GitHub、Community 五个入口，并提到一个 Live code playground",
+      "sourceUrl": "https://rnd-pro.com/symbiote/",
+      "evidence": "RAT 标题下方的链接行与右侧目录",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/rnd-pro-com-symbiote.md",
+  "registryUrl": "/r/rnd-pro-com-symbiote.json"
+}

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ddd3adeae6ca484cedd10bfdbb28ba86fb5f94ec222d614c9869a91a86886f0c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "interface-index-com",
+  "entityId": "entity-interface-index-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://interface-index.com",
+    "finalUrl": "https://interface-index.com/",
+    "checkedAt": "2026-09-15T10:39:40.834Z"
+  },
+  "editorial": {
+    "name": "Interface Index",
+    "descriptionZh": "Interface Index 从 Vercel、loom、Airtable、mailchimp 这些 B2B 和桌面产品里截取真实界面元素，按 Banner、Empty State、Shortcuts 这类组件名归档，每条都能展开看整屏上下文。",
+    "takeawayZh": "按组件名查真实产品截图，做同类界面时先看别人怎么做",
+    "noteZh": "深色页，最上面一条黑底横幅写 Brought to you by Stephan Bogner, Independent Software Creator and Designer，右上角还贴着 Product Hunt 角标。标题下写 345 UI examples for your inspiration or to speed up your research。Popular elements 是二十个按钮排成四行，除 Button、Card 这些常规项，还有 Copy To Clipboard、Empty State、Shortcuts、Menubar 这类很少被单独归类的。下面截图卡统一标 Show full interface，出处写在卡片上，比如 Vercel shortcuts、loom back button、onshape empty state。正文承认数据是 crowdsourced，专门开了 Contribute 页收投稿。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "case-inspiration-collections",
+    "subcategory": "product-ui-screen-flow-cases",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是真实产品界面的截图案例，按元素类型组织，用户来这儿是看别人的界面怎么做，属产品界面案例。",
+        "evidenceUrl": "https://interface-index.com/"
+      },
+      {
+        "statement": "路径 /element/empty-state、/element/empty-state 同级的 /element/shortcuts、以及 /product/vercel、/product/loom 双向索引，印证案例库形态。",
+        "evidenceUrl": "https://interface-index.com/element/shortcuts"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:39:40.834Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "admin"
+    ],
+    "deliverables": [
+      "case-screenshot"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "submit",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "discovery",
+      "design",
+      "ideation"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://interface-index.com",
+      "finalUrl": "https://interface-index.com/",
+      "title": "Interface Index | Collection of B2B, SaaS and desktop interface elements",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/interface-index-com/identity.jpg",
+        "sha256": "44f20d67c201d1ddf6730452e67cedb55d507ae80d7bd35027f54f93bfdcd18e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 101803,
+        "alt": "Interface Index 首屏：Interface elements from the best B2B, SaaS and desktop apps "
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "elementCount",
+      "value": "345 UI examples",
+      "sourceUrl": "https://interface-index.com/",
+      "evidence": "首屏 h1 下方 345 UI examples for your inspiration or to speed up your research",
+      "confidence": 1
+    },
+    {
+      "field": "tagList",
+      "value": "Banner、Button、Button With Icon、Card、Copy To Clipboard、Dropdown、Empty State、Login、Menubar、Onboarding、Popover、Popup、Search、Settings、Shortcuts、Sidebar、Table、Tabs、Toolbar、Tooltip",
+      "sourceUrl": "https://interface-index.com/",
+      "evidence": "Popular elements 二十个按钮与 /element/* 路径",
+      "confidence": 1
+    },
+    {
+      "field": "sources",
+      "value": "收录来源含 Vercel、loom、onshape、mailchimp、Airtable、GitHub Desktop、Hubs、Plausible Analytics、Google Meet、Simple Analytics",
+      "sourceUrl": "https://interface-index.com/",
+      "evidence": "卡片上标注的 Vercelsearch、loomback button、onshapeempty state 等，以及 /product/* 路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/interface-index-com",
+    "designMdUrl": "https://vislexicon.com/site/interface-index-com.md",
+    "checkedAt": "2026-09-15T10:39:40.834Z",
+    "license": "unknown"
+  }
+}

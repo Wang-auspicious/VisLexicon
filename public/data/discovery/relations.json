@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "atlas-source-relations/1.0",
+  "revision": "7b2bd051ae7158f7abc5c53aeb7c5ce2319626d74c6d8554bb136b7e657dbdcd",
+  "relations": [
+    {
+      "unitId": "atlas--loading--spinner",
+      "site": {
+        "entryId": "bootstrap",
+        "name": "Bootstrap",
+        "iconUrl": "https://getbootstrap.com/favicon.ico",
+        "url": "https://getbootstrap.com/docs/5.3/components/spinners/#border-spinner",
+        "noteZh": "原站是 32px 的缺口圆环，750ms 匀速旋转；图鉴演示为 52px、900ms，尺寸与节奏不同。",
+        "noteEn": "The original uses a 32px open ring rotating linearly in 750ms; this atlas demo is 52px and 900ms.",
+        "offers": [
+          {
+            "id": "bootstrap/reviewed-offer",
+            "verified": true,
+            "checkedAt": "2026-09-05T16:52:00.000Z",
+            "access": "free",
+            "sourceAvailable": true,
+            "sourceUrl": "https://github.com/twbs/bootstrap",
+            "sourceCost": "free",
+            "openSource": true,
+            "commercialUse": true,
+            "license": "MIT",
+            "licenseUrl": "https://getbootstrap.com/docs/5.3/about/license/",
+            "scope": "Free",
+            "evidenceUrls": [
+              "https://getbootstrap.com/docs/5.3/about/license/",
+              "https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+            ]
+          }
+        ]
+      },
+      "matchType": "same-pattern"
+    },
+    {
+      "unitId": "atlas--loading--spinner",
+      "site": {
+        "entryId": "daisyui",
+        "name": "daisyUI",
+        "iconUrl": "/source-icons/daisyui.png",
+        "url": "https://daisyui.com/components/loading/#loading-spinner",
+        "noteZh": "原站提供 16–32px 的旋转圆弧，用 SVG 蒙版同时改变弧长；这是同类加载指示器的变体，并非图鉴里的固定双色圆环。",
+        "noteEn": "A related loading variant: 16–32px SVG-mask arcs rotate and change length, unlike the fixed two-color ring in this demo.",
+        "offers": [
+          {
+            "id": "daisyui/reviewed-offer",
+            "verified": true,
+            "checkedAt": "2026-09-05T18:40:00.000Z",
+            "access": "partial-free",
+            "sourceAvailable": true,
+            "sourceUrl": "https://github.com/saadeghi/daisyui",
+            "sourceCost": "free",
+            "openSource": true,
+            "commercialUse": true,
+            "license": "MIT",
+            "licenseUrl": "https://github.com/saadeghi/daisyui/blob/master/LICENSE",
+            "scope": "Core daisyui package is free MIT; store templates are paid",
+            "evidenceUrls": [
+              "https://daisyui.com/",
+              "https://daisyui.com/components/button/",
+              "https://github.com/saadeghi/daisyui/blob/master/LICENSE"
+            ]
+          }
+        ]
+      },
+      "matchType": "related-variant"
+    }
+  ]
+}

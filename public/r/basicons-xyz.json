@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "47a9d00a9430aa48ba479245db0256863917ef37744a73de9509ffdfa21183df",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "basicons-xyz",
+  "entityId": "entity-basicons-xyz",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://basicons.xyz",
+    "finalUrl": "https://www.basicons.com/",
+    "checkedAt": "2026-09-15T12:48:53.766Z"
+  },
+  "editorial": {
+    "name": "Basicons",
+    "descriptionZh": "一套开源图标集，line 图标免费（首页标 636 个，分 General、Numbers、People & Avatars 等分类），fill 图标归 Pro；站内可调尺寸、描边和颜色后下载单个 SVG。",
+    "takeawayZh": "调好尺寸描边，下载单个 SVG 或整包图标",
+    "noteZh": "首屏分三栏。左栏是 BASICONS 字标加一句 Basic icons for product design & development.，下面 Get Pro 和 Log in 两个按钮，再下面是 Line icons（标 Free）/ Fill icons（标 Pro）的切换，然后是 Categories 列表——General 450、Numbers 10、People & Avatars 20、Arrows 55、Maps & Navigation 11、Development 10、Buildings 19、Finance & Business 20，一路排到 Alphabet 26。中栏顶部是 Search 636 icons 搜索框，右上角 Log in 和 Get Pro，下面一行 General 配 Download all line icons，再往下是五列图标方格。右栏三块：Customise 选 Size 16/24/32、Stroke 1/1.5/2 和颜色 #FEFEFE；Collect 填 Icon name 后 Download 或 Copy SVG；Code 分 HTML / React / Docs 三个页签，给出 <script async src=\"https://basicons.xyz/embed.js\"></script> 和 Font 的 <i class=\"bsc-icon-name\"></i>。",
+    "recommendation": null,
+    "pricing": "Free（line 图标）+ Pro（fill 图标）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "icons-symbols",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一套矢量图标素材（可下载单个 SVG、也可整包下载），用户动作是搜索、调参、下载、复制 SVG 代码，归 icons-symbols；域名的 .xyz 会跳到 www.basicons.com，但站内 npm/embed 引用仍写 basicons.xyz。",
+        "evidenceUrl": "https://www.basicons.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:48:53.766Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "icon"
+    ],
+    "actions": [
+      "download",
+      "copy",
+      "search"
+    ],
+    "media": [
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svg",
+      "html",
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "asset-library",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://basicons.xyz",
+      "finalUrl": "https://www.basicons.com/",
+      "title": "Basicons - Basic icons for product design & development",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/basicons-xyz/identity.jpg",
+        "sha256": "b298e7f2ab78130a6a16d434a19ab2061b24dc677d94986483f77c5f3a3a870b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 83250,
+        "alt": "Basicons 首屏：Basic icons for product design & development."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://www.basicons.com/",
+      "evidence": "页脚写 Basicons is made in Nigeria by Precious & Solomon and licensed under the MIT licence.",
+      "confidence": 1
+    },
+    {
+      "field": "icon-count",
+      "value": "首页标注 636 个图标，General 分类 450 个",
+      "sourceUrl": "https://www.basicons.com/",
+      "evidence": "中栏搜索框占位文字是 Search 636 icons，左栏 Categories 里 General 后面跟着 450",
+      "confidence": 1
+    },
+    {
+      "field": "tiers",
+      "value": "Line icons 免费，Fill icons 属于 Pro",
+      "sourceUrl": "https://www.basicons.com/",
+      "evidence": "左栏切换项 Line icons 右侧标 Free，Fill icons 右侧标 Pro（黄底角标），顶部另有 Get Pro 按钮",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "存在付费层：Free（line 图标）+ Pro（fill 图标）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/basicons-xyz",
+    "designMdUrl": "https://vislexicon.com/site/basicons-xyz.md",
+    "checkedAt": "2026-09-15T12:48:53.766Z",
+    "license": "MIT"
+  }
+}

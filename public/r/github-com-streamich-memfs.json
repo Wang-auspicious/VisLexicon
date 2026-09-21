@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0c7cc16fd0007293ce7e0c965116a9ac5a4dc72a4716f3c3bdf1f51d8ad01ea1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-streamich-memfs",
+  "entityId": "entity-github-com-streamich-memfs",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/streamich/memfs",
+    "finalUrl": "https://github.com/streamich/memfs",
+    "checkedAt": "2026-09-15T12:01:07.362Z"
+  },
+  "editorial": {
+    "name": "streamich/memfs",
+    "descriptionZh": "memfs 是一个文件系统工具库：在内存里实现 Node.js 的 fs 模块 API，也实现浏览器的 File System API，并在两套 API 之间互做适配器。",
+    "takeawayZh": "npm i memfs，在内存里跑 fs，也能当文件系统 API 适配。",
+    "noteZh": "README 把包拆成几条列清楚：In-memory Node.js fs API、In-memory browser File System (Access) API、fs to File System (Access) API adapter，还有 directory snapshot utility 和 print directory tree to terminal 两个小工具。右栏 About 写着 'Node.js \"fs\" and browser \"File System API\" adapters and in-memory implementations'，底下打满 file-system、in-memory、node、webjs 这些 topic，许可证是 Apache-2.0，Releases 已经到 208 个，最新 v4.78.0。仓库根目录是 .github、docs、packages、scripts 的 monorepo 结构，共 2,269 次提交。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Node/浏览器两侧的文件系统实现库，交付物是可安装的 npm 包而非界面组件，页面上也没有任何 UI 组件痕迹，因此归到开发工作流而不是候选池给的设计系统。",
+        "evidenceUrl": "https://github.com/streamich/memfs"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:01:07.362Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "download",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/streamich/memfs",
+      "finalUrl": "https://github.com/streamich/memfs",
+      "title": "GitHub - streamich/memfs: Node.js \"fs\" and browser \"File System API\" adapters and in-memory implementations 👍 · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-streamich-memfs/identity.jpg",
+        "sha256": "64f6ed16982c9fa69ca2b392f87a3cbfdd5a9a16a5a11b2fda4db4483874891c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 138546,
+        "alt": "streamich/memfs 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/streamich/memfs",
+      "evidence": "右侧 About 栏列出 'Apache-2.0 license'，仓库根目录也有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "v4.78.0（共 208 个 Release）",
+      "sourceUrl": "https://github.com/streamich/memfs",
+      "evidence": "右侧 Releases 栏显示 208，最新一条是 Release v4.78.0 Latest，提交记录里也写着 chore: release v4.78.0",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm i memfs",
+      "sourceUrl": "https://github.com/streamich/memfs",
+      "evidence": "README 的 Install 段只有这一行命令",
+      "confidence": 1
+    },
+    {
+      "field": "packageScope",
+      "value": "In-memory Node.js fs API / In-memory browser File System (Access) API / 双向 adapter",
+      "sourceUrl": "https://github.com/streamich/memfs",
+      "evidence": "README 的 Resources 段逐条列出这几个包",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-streamich-memfs",
+    "designMdUrl": "https://vislexicon.com/site/github-com-streamich-memfs.md",
+    "checkedAt": "2026-09-15T12:01:07.362Z",
+    "license": "Apache-2.0"
+  }
+}

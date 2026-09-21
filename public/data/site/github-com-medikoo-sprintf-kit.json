@@ -1,0 +1,162 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "dccc73ab70f71eac6e5c5b3b11208f00f00d7c4476b94baecec01a1a5887f075",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-medikoo-sprintf-kit",
+  "entityId": "entity-github-com-medikoo-sprintf-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/medikoo/sprintf-kit",
+    "finalUrl": "https://github.com/medikoo/sprintf-kit",
+    "checkedAt": "2026-09-15T12:08:01.736Z"
+  },
+  "editorial": {
+    "name": "medikoo/sprintf-kit",
+    "descriptionZh": "一个 printf 格式字符串的解析器加基础格式化器。可以只拿 parse 把格式串拆开，也可以拿 format 生成格式化函数。",
+    "takeawayZh": "用 parse 把 Some %s 拆成 literals 和占位符。",
+    "noteZh": "仓库 About 栏只有一句 printf parser and basic formatter，README 徽章是 ISC license。目录里 lib、modifiers、test 三块并列。README 的 Utilities 段给出 parse 的返回结构，除了 literals 和 placeholders，还有 isParameterIndexingValid 这个字段；单个占位符还能拆出 parameter、flags、width、precision、length、type、content 七项。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它是构建期用到的字符串格式化依赖，不产出界面，按开发工作流工具归类；这类纯工具在受控词典里最贴近 build-deploy-dev-workflow。",
+        "evidenceUrl": "https://github.com/medikoo/sprintf-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:01.736Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "ISC"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/medikoo/sprintf-kit",
+      "finalUrl": "https://github.com/medikoo/sprintf-kit",
+      "title": "GitHub - medikoo/sprintf-kit: printf parser and basic formatter · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-medikoo-sprintf-kit/identity.jpg",
+        "sha256": "935557c39f2c4174c36fdab55ef7e67dff1f7975fce82287af0198bb04d9a1dc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113318,
+        "alt": "medikoo/sprintf-kit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/medikoo/sprintf-kit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-medikoo-sprintf-kit/identity.jpg",
+          "alt": "medikoo/sprintf-kit 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/medikoo/sprintf-kit",
+      "evidence": "README 标题行的 ISC license 徽章，截图中在 README 与 sprintf-kit 标题之间。",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "parse 与 format 两个入口，parse 从 sprintf-kit/parse 单独引入",
+      "sourceUrl": "https://github.com/medikoo/sprintf-kit",
+      "evidence": "README 的 Installation 段之后给出 const parse = require(\"sprintf-kit/parse\") 的示例，并列 Parser、Full printf format parser、Format function generator 作为三块能力。",
+      "confidence": 1
+    },
+    {
+      "field": "parseOutput",
+      "value": "返回 literals、placeholders、isParameterIndexingValid",
+      "sourceUrl": "https://github.com/medikoo/sprintf-kit",
+      "evidence": "README 里 parse(\"Some %s with %d count\") 的输出注释，逐字段列出。",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "最新版 2.0.2，被 46K 个项目使用",
+      "sourceUrl": "https://github.com/medikoo/sprintf-kit",
+      "evidence": "右侧 Releases 显示 2.0.2 (2024-05-30) 为 Latest，Used by 计数为 46K。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-medikoo-sprintf-kit.md",
+  "registryUrl": "/r/github-com-medikoo-sprintf-kit.json"
+}

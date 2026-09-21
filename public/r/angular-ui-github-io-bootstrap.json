@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "49e9f5d4f5e57d5cd4a79c0682303e0fde6340531ce63f32de0383cc530245ed",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "angular-ui-github-io-bootstrap",
+  "entityId": "entity-angular-ui-github-io-bootstrap",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://angular-ui.github.io/bootstrap",
+    "finalUrl": "https://angular-ui.github.io/bootstrap/",
+    "checkedAt": "2026-09-15T11:55:44.454Z"
+  },
+  "editorial": {
+    "name": "UI Bootstrap",
+    "descriptionZh": "AngularUI 团队用纯 AngularJS 重写的 Bootstrap 组件集，把 Accordion、Datepicker、Modal 这些控件做成原生指令，不依赖 jQuery 或 Bootstrap 自带的 JS。",
+    "takeawayZh": "下载指令包，用 AngularJS 重写 Bootstrap 控件",
+    "noteZh": "紫色 hero 上压着 UI Bootstrap 大标题，副标题写明 Bootstrap components written in pure AngularJS by the AngularUI Team，下面三个描边按钮是 Code on Github / Download (2.5.0) / Create a Build，再下面挂 Star 14,144 和 Fork 6,556 两个徽章。顶上一条导航是 UI Bootstrap / Directives / Getting started / Previous docs，Directives 下拉里排了 Accordion 到 Typeahead 二十来个指令名。正文 Getting started 一节先讲 Angular 2 请去看 ng-bootstrap，再讲 Dependencies：只需要 AngularJS 1.4.x 以上、angular-animate、angular-touch 和 Bootstrap CSS 3.3.7。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "导航的 Directives 下拉逐条列的是 Accordion、Datepicker、Modal、Typeahead 等指令，页面给的是依赖说明、下载包和自建方式，用户拿走的是能引进 AngularJS 工程的控件，故归通用界面组件库。",
+        "evidenceUrl": "https://angular-ui.github.io/bootstrap/"
+      },
+      {
+        "statement": "页面自述是 Bootstrap components written in pure AngularJS by the AngularUI Team，交付物是组件实现而非设计规范或模板。",
+        "evidenceUrl": "https://angular-ui.github.io/bootstrap/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:44.454Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "download",
+      "browse",
+      "learn",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://angular-ui.github.io/bootstrap",
+      "finalUrl": "https://angular-ui.github.io/bootstrap/",
+      "title": "Angular directives for Bootstrap",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/angular-ui-github-io-bootstrap/identity.jpg",
+        "sha256": "da27bad929566758fe8521b6ae67061f9ae4c45c95862ade5f774c5b6bda3e9a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 110111,
+        "alt": "UI Bootstrap 首屏：UI Bootstrap"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "download",
+      "value": "Download (2.5.0)；构建文件分 minified 与 un-minified、含模板与不含模板几种口味，全量含模板 122K minified",
+      "sourceUrl": "https://angular-ui.github.io/bootstrap/",
+      "evidence": "hero 里的 Download (2.5.0) 按钮，以及 Getting started 下 Files to download 一段",
+      "confidence": 1
+    },
+    {
+      "field": "dependencies",
+      "value": "AngularJS 1.4.x 或以上（实测 1.6.1）、angular-animate、angular-touch、Bootstrap CSS 3.3.7",
+      "sourceUrl": "https://angular-ui.github.io/bootstrap/",
+      "evidence": "Getting started 的 Dependencies 列表逐条列出",
+      "confidence": 1
+    },
+    {
+      "field": "versionedDocs",
+      "value": "站内保留从 0.12.0 到 2.4.0 的一系列历史版本文档路径",
+      "sourceUrl": "https://angular-ui.github.io/bootstrap/",
+      "evidence": "导航 Previous docs 下拉对应 /bootstrap/versioned-docs/ 下的路径清单",
+      "confidence": 1
+    },
+    {
+      "field": "successor",
+      "value": "Angular 2 及以后的实现是 ng-bootstrap，由同一个 UI Bootstrap 团队维护",
+      "sourceUrl": "https://angular-ui.github.io/bootstrap/",
+      "evidence": "Getting started 下 Angular 2 小节的 For Angular 2 support, check out ng-bootstrap 一句",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/angular-ui-github-io-bootstrap",
+    "designMdUrl": "https://vislexicon.com/site/angular-ui-github-io-bootstrap.md",
+    "checkedAt": "2026-09-15T11:55:44.454Z",
+    "license": "unknown"
+  }
+}

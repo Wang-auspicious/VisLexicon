@@ -1,0 +1,171 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "bf6d073b715f65a18e3aa241ce0002f6d909395baf47ea95e8402208ca294c14",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mykin-ai",
+  "entityId": "entity-mykin-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "mykin.ai",
+  "official": {
+    "inputUrl": "https://mykin.ai",
+    "finalUrl": "https://mykin.ai/",
+    "checkedAt": "2026-09-15T11:15:53.351Z"
+  },
+  "editorial": {
+    "name": "Kin",
+    "descriptionZh": "Kin 是一款主打「记得住你」的个人 AI 应用，把聊天、记忆和目标跟进攒成个人上下文，官网用暖白底加一整面 App Store 短评来卖这件事。整站只有首页一页。",
+    "takeawayZh": "看单页应用官网怎么用一面用户短评墙替代功能列表",
+    "noteZh": "整站只有首页一个路径，导航就五项：Why Kin、Features、Who it's for、Privacy、Team。首屏左侧是衬线大字 AI that actually knows you，其中 you 单独用金色手写体；下面一行 It sees what you can't. It remembers what you won't. And it's there when it matters.，再一颗琥珀色大按钮 Get started。按钮下方排着三个数字：60k+ INSTALLS、5M+ MESSAGES EXCHANGED、4.8 APP STORE RATING。主视觉是暖白底加斜射的树叶阴影，右侧大片留白。往下是 PRIVATE BY DESIGN 小标和一整面用户短评墙，每条按五星加引语加署名排，署名有 Keehbad、Gkeogan、Sammi、Bonsai、Parterapeuten、Kim、Saddy、Fenger、Cam、LeHibou、Bee、Awesome、Alex。",
+    "recommendation": null,
+    "pricing": "unknown（首页未出现任何价格或档位）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Kin 自家的产品官网，交付的是应用卖点、下载量与用户短评，没有可下载的组件或素材，用户从这页拿走的是单页官网的排法，归产品与公司官网。",
+        "evidenceUrl": "https://mykin.ai/"
+      },
+      {
+        "statement": "页面标了 SoftwareApplication 的结构化数据，产品形态是 app，但页面本身仍是产品官网而非应用商店条目。",
+        "evidenceUrl": "https://mykin.ai/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:15:53.351Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile",
+      "ai"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "typography",
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "ios"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mykin.ai",
+      "finalUrl": "https://mykin.ai/",
+      "title": "AI that actually knows you",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/mykin-ai/identity.jpg",
+        "sha256": "23169dcee948935584601798663cbf2a3a76e1aa5194055a80dcd55599b01382",
+        "width": 1280,
+        "height": 900,
+        "bytes": 50737,
+        "alt": "Kin 首屏：AI that actually knows you"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://mykin.ai",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/mykin-ai/identity.jpg",
+          "alt": "Kin 首屏：AI that actually knows you",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "traction",
+      "value": "60k+ INSTALLS、5M+ MESSAGES EXCHANGED、4.8 APP STORE RATING",
+      "sourceUrl": "https://mykin.ai/",
+      "evidence": "首屏 Get started 按钮下方并排的三个数字块，原文照录",
+      "confidence": 1
+    },
+    {
+      "field": "socialProof",
+      "value": "整面 App Store 短评墙，署名含 Keehbad、Gkeogan、Sammi、Bonsai、Parterapeuten、LeHibou 等，引语如 Memory quality is remarkable.",
+      "sourceUrl": "https://mykin.ai/",
+      "evidence": "首页短评区每条按五星加引语加署名排列，同一批短评在页面上重复滚了两遍",
+      "confidence": 1
+    },
+    {
+      "field": "siteStructure",
+      "value": "整站只有 / 一个路径，导航为 Why Kin / Features / Who it's for / Privacy / Team 五个锚点",
+      "sourceUrl": "https://mykin.ai/",
+      "evidence": "live.internalPaths 只有 /，live.navLabels 五项",
+      "confidence": 1
+    },
+    {
+      "field": "privacy",
+      "value": "首屏底部小字 PRIVATE BY DESIGN，导航另设独立 Privacy 项",
+      "sourceUrl": "https://mykin.ai/",
+      "evidence": "首屏底部的锁形图标加 PRIVATE BY DESIGN 字样，以及导航第五项 Privacy",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "unknown，首页没有任何价格或档位信息",
+      "sourceUrl": "https://mykin.ai/",
+      "evidence": "live.bodyText 与 live.navLabels 里都未出现 pricing 或价格数字",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/mykin-ai.md",
+  "registryUrl": "/r/mykin-ai.json"
+}

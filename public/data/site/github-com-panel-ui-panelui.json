@@ -1,0 +1,169 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3e3bb3832a1c769625f902d9b62744b07b429a9d88ee3ff7b756a1db98ae7860",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-panel-ui-panelui",
+  "entityId": "entity-github-com-panel-ui-panelui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/panel-ui/PanelUI",
+    "finalUrl": "https://github.com/panel-ui/PanelUI",
+    "checkedAt": "2026-09-15T12:02:49.019Z"
+  },
+  "editorial": {
+    "name": "panel-ui/PanelUI",
+    "descriptionZh": "给 Expo 用的 React Native 组件库，自述 high-performance，主题走语义化设计令牌加 Tailwind v4 via Uniwind，动画跑在 UI 线程上。仓库除 packages、apps、templates 外还专门放了 skills 与 CLAUDE.md 一组给编码 agent 用的文件。",
+    "takeawayZh": "拿一套 Expo 组件，按 theme-manifest 换主题",
+    "noteZh": "About 一行 High-performance React Native components for Expo.，网站指向 www.panelui.dev，下面挂 expo、expo-ui、react-native、react-native-component、shadcn-ui 五个 topic。README 开头自称 open-source React Native UI component library for Expo，紧跟一行 Semantic design tokens · Tailwind v4 via Uniwind · Reanimated on the UI thread，再列 Documentation、Installation、Components、Theming、CLI 几个入口。文件树很杂：packages、apps、templates、docs、scripts、test 之外还有 .agents/skills、.claude-plugin、.claude/skills、skills、skills-lock.json，根上放 CLAUDE.md、theme-manifest.json、lifecycle-matrices.json、catalogue.json；提交说明里能看到 feat(bottom-sheet, toast): finish the gestures they already started 与 fix(theme): validate manifest parity。Star 462，最新 release v0.98.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是 React Native / Expo 的组件库，README 有 Components 与 Theming 两节，仓库里 packages 与 templates 并列；用户最直接拿走的是可安装的组件与主题令牌，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/panel-ui/PanelUI"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:49.019Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "template"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "react-native",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/panel-ui/PanelUI",
+      "finalUrl": "https://github.com/panel-ui/PanelUI",
+      "title": "GitHub - panel-ui/PanelUI: High-performance React Native components for Expo. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-panel-ui-panelui/identity.jpg",
+        "sha256": "1a401cfd745de3d0977ccf1d64d8de208588dde0a76a8cc181db90a18d847d4b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 137592,
+        "alt": "panel-ui/PanelUI 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/panel-ui/PanelUI",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-panel-ui-panelui/identity.jpg",
+          "alt": "panel-ui/PanelUI 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "selfDescription",
+      "value": "High-performance React Native components for Expo.",
+      "sourceUrl": "https://github.com/panel-ui/PanelUI",
+      "evidence": "About 栏第一行，与仓库描述同文",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "Semantic design tokens · Tailwind v4 via Uniwind · Reanimated on the UI thread",
+      "sourceUrl": "https://github.com/panel-ui/PanelUI",
+      "evidence": "README 标题下的一行技术说明，文件树里也有 theme-manifest.json",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "v0.98.0（16 hours ago），Releases 64 个",
+      "sourceUrl": "https://github.com/panel-ui/PanelUI",
+      "evidence": "右侧 Releases 区块的版本标签与计数",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "expo、expo-ui、react-native、react-native-component、shadcn-ui",
+      "sourceUrl": "https://github.com/panel-ui/PanelUI",
+      "evidence": "About 栏下的 topic 标签",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-panel-ui-panelui.md",
+  "registryUrl": "/r/github-com-panel-ui-panelui.json"
+}

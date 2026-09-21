@@ -1,0 +1,131 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8aa6849b3c1a036fee23cb2ee1dad7b081b3151f4fe31d5b02820ce65b54693b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "angularplayground-it",
+  "entityId": "entity-angularplayground-it",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "angularplayground.it",
+  "official": {
+    "inputUrl": "https://angularplayground.it",
+    "finalUrl": "https://angularplayground.it/",
+    "checkedAt": "2026-09-15T11:55:44.298Z"
+  },
+  "editorial": {
+    "name": "Angular Playground",
+    "descriptionZh": "Angular Playground 的站点。浏览器实测只渲染出站名和页面标题，正文、导航和图片都没有内容。",
+    "takeawayZh": "只看到一个站名，拿不到任何内容",
+    "noteZh": "进去只看到两行字：logo 下面一行小字 ANGULAR PLAYGROUND，再下面是灰色大标题 Angular Playground，往下的整块页面是空的，只在灰底上留了一个同样叫 Angular Playground 的浅色链接。导航、正文、图片都没加载出来，首屏里没有第二个可点的入口。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据不足：浏览器实测只剩站名与标题，正文和导航均未渲染，无法从页面判断它交付什么；候选池把它放在 Angular UI 库下，这里只能沿用大类，这条分类拿不准。",
+        "evidenceUrl": "https://angularplayground.it/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:44.298Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": []
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://angularplayground.it",
+      "finalUrl": "https://angularplayground.it/",
+      "title": "Angular Playground",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/angularplayground-it/identity.jpg",
+        "sha256": "ec98333fe8023aa0b61276a536e4fab80bf7bab7a694556e07b48f046c11b5c6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 24406,
+        "alt": "Angular Playground 首屏：Angular Playground"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://angularplayground.it",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/angularplayground-it/identity.jpg",
+          "alt": "Angular Playground 首屏：Angular Playground",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "shell",
+      "value": "首屏只有 ANGULAR PLAYGROUND 小字与大标题 Angular Playground，正文为空",
+      "sourceUrl": "https://angularplayground.it/",
+      "evidence": "1280x900 首屏截图，以及浏览器取回的 bodyText 只有 ANGULAR PLAYGROUND ANGULAR PLAYGROUND Angular Playground Angular Playground",
+      "confidence": 1
+    },
+    {
+      "field": "assets",
+      "value": "页面没有图片、没有表单、没有站内链接",
+      "sourceUrl": "https://angularplayground.it/",
+      "evidence": "浏览器实测 imgCount 0、formCount 0、internalPaths 为空数组",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/angularplayground-it.md",
+  "registryUrl": "/r/angularplayground-it.json"
+}

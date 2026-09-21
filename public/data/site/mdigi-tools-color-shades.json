@@ -1,0 +1,169 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "491ffbb1e677bb0dd0ca046a174350a261f946e912ced4884b337abd9c160a2f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mdigi-tools-color-shades",
+  "entityId": "entity-mdigi-tools-color-shades",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "mdigi.tools",
+  "official": {
+    "inputUrl": "https://mdigi.tools/color-shades",
+    "finalUrl": "https://mdigi.tools/color-shades/#900f62",
+    "checkedAt": "2026-09-15T12:51:18.843Z"
+  },
+  "editorial": {
+    "name": "Color Shades Generator",
+    "descriptionZh": "mdigi.tools 上的单页工具：输入任意写法的颜色，生成 2 到 25 级明暗色阶，并把 HEX、RGB、HSL、HSV 四种值列出来供点击复制。",
+    "takeawayZh": "输一个色，生成最多 25 级色阶值",
+    "noteZh": "一屏就是一张工具卡：Enter Color 输入框里填着 #900f62，右边紧跟 Get Random Color 按钮和一块标着 Color Picker 的取样色块；下面 Color Shades 一条滑杆当前值是 10，滑杆下排出十条从浅粉到近黑的色带。点中间那条色带后，下方 HEX #e92fa7、RGB rgb(233, 47, 167)、HSL hsl(321, 81%, 55%)、HSV hsv(321, 80%, 91%) 四个可复制字段与右侧一块大色块一起更新，提示写着 Click to copy value in desired type above.。顶栏挂着 mdigi.tools、Color Shades Generator、Share、Tweet；正文说每条色带的级数由滑杆决定，默认 10 级、最多 25 级，站内 Categories 标的是 Design Tools 与 Color Tools。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是当场生成的一列色阶和四种格式的色值，用户动作是输入颜色、调级数、点值复制，属创作工具；沿用本仓库把配色生成器归 image-vector-layout-creation 的口径。",
+        "evidenceUrl": "https://mdigi.tools/color-shades"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:51:18.843Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "generate",
+      "copy",
+      "preview"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mdigi.tools/color-shades",
+      "finalUrl": "https://mdigi.tools/color-shades/#900f62",
+      "title": "Color Shades Generator - mdigi.tools",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/mdigi-tools-color-shades/identity.jpg",
+        "sha256": "ea0695f72d55d254694aa84d038dfd5f28b6048650ae306af028cfe4bfbaa8dc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 49667,
+        "alt": "Color Shades Generator 首屏：Color Shades Generator"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://mdigi.tools/color-shades",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/mdigi-tools-color-shades/identity.jpg",
+          "alt": "Color Shades Generator 首屏：Color Shades Generator",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "shade-range",
+      "value": "默认 10 级，最多 25 级（滑杆可调）",
+      "sourceUrl": "https://mdigi.tools/color-shades",
+      "evidence": "正文写 By default the color shades generator creates 10 shades however you can adjust the color shades slider to generate 2 to 25 shades 与 Our tool can generate upto 25 shades",
+      "confidence": 1
+    },
+    {
+      "field": "output-formats",
+      "value": "HEX、RGB、HSL、HSV",
+      "sourceUrl": "https://mdigi.tools/color-shades",
+      "evidence": "首屏色带下方四个字段依次是 HEX #e92fa7、RGB、HSL、HSV，提示 Click to copy value in desired type above.",
+      "confidence": 1
+    },
+    {
+      "field": "input-formats",
+      "value": "rgb、hex、hsl、hsv，或直接写颜色名",
+      "sourceUrl": "https://mdigi.tools/color-shades",
+      "evidence": "输入框下写着 Example: #808080 or rgb(128, 128, 128) or gray；正文说可以写 yellow、pink、red 这类名字，也能用取色器",
+      "confidence": 1
+    },
+    {
+      "field": "site-category",
+      "value": "Design Tools、Color Tools",
+      "sourceUrl": "https://mdigi.tools/color-shades",
+      "evidence": "正文 Categories 一行写着 Design Tools, Color Tools，导航的 Tools 下拉里也有同样的分类",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://mdigi.tools/color-shades",
+      "evidence": "工具无需登录直接可用，页面没有付费或额度提示",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/mdigi-tools-color-shades.md",
+  "registryUrl": "/r/mdigi-tools-color-shades.json"
+}

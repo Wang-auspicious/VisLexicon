@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b53ba564a2e9f8b95174fdb0334f1aa6cc41b692a5822bbb8e2aee61e81170aa",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-qorpe-ui",
+  "entityId": "entity-github-com-qorpe-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/qorpe/ui",
+    "finalUrl": "https://github.com/qorpe/ui",
+    "checkedAt": "2026-09-15T11:49:15.530Z"
+  },
+  "editorial": {
+    "name": "qorpe/ui",
+    "descriptionZh": "qorpe 家族控制台共用的 UI kit，把 ui-standard 的 token、原子组件和复合组件收在一处，供 Goldpath、Mockifyr 等几个内部控制台复用。仓库自带视觉回归基线：每个 demo 都留 light、dark、RTL 三套 Linux 截图。",
+    "takeawayZh": "拿走 qorpe 控制台共用的 token 与原子组件",
+    "noteZh": "About 写着 The qorpe family UI kit: tokens, primitives and composites every qorpe console composes from，右侧挂 Apache-2.0 license（文件列表里也有 LICENSE），Releases 11 个、最新 v0.6.0，Contributors 是 omercelikdev、claude 和一个 github-actions[bot]。README 的段落名是 Use / Rules of the house / Working in this repository / Gates / License。目录里 docs、gallery、scripts、src、visual 并列，playwright.config.ts 那条提交写着 G4: the visual gate — 63 linux baselines, light + dark + RTL per demo，src 那条在讲 TabPanel 的 className seam。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一整套可安装的 UI kit（ui-standard 的 token、primitives 与 composites），README 段落是 Use / Rules of the house / Gates 这种套件自述，About 标 Apache-2.0，故归设计系统套件。",
+        "evidenceUrl": "https://github.com/qorpe/ui"
+      },
+      {
+        "statement": "仓库描述里的 primitives 与 composites 说明用户拿走的是可直接拼控制台的组件代码；docs 与 gallery 两个目录说明它自带文档与 demo 页，不是单一界面示例。",
+        "evidenceUrl": "https://github.com/qorpe/ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:49:15.530Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "preview"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/qorpe/ui",
+      "finalUrl": "https://github.com/qorpe/ui",
+      "title": "GitHub - qorpe/ui: The qorpe family UI kit: tokens, primitives and composites every qorpe console composes from. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-qorpe-ui/identity.jpg",
+        "sha256": "9587404510668665b502db232e89a3640dca3077f7ae1a27895c59c51b222e1d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 146483,
+        "alt": "qorpe/ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/qorpe/ui",
+      "evidence": "右侧 About 栏的 Apache-2.0 license 链接；文件列表里也有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "positioning",
+      "value": "The qorpe family UI kit: the ui-standard tokens, primitives and composites every qorpe console composes from",
+      "sourceUrl": "https://github.com/qorpe/ui",
+      "evidence": "README 正文首句，并点名 Goldpath console 与 Mockifyr console",
+      "confidence": 1
+    },
+    {
+      "field": "visual-regression",
+      "value": "63 条 Linux 视觉基线，每个 demo 覆盖 light、dark、RTL",
+      "sourceUrl": "https://github.com/qorpe/ui",
+      "evidence": "playwright.config.ts 的提交信息 G4: the visual gate — 63 linux baselines, light + dark + RTL per demo",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "11 个 release，最新 v0.6.0",
+      "sourceUrl": "https://github.com/qorpe/ui",
+      "evidence": "右侧 Releases 区块显示 11 与 v0.6.0 (Latest)",
+      "confidence": 1
+    },
+    {
+      "field": "repo-layout",
+      "value": "docs、gallery、scripts、src、visual 五个目录",
+      "sourceUrl": "https://github.com/qorpe/ui",
+      "evidence": "仓库文件列表前几行的目录名",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/qorpe/ui",
+      "evidence": "About 标 Apache-2.0，README 是 Use / Rules of the house / Gates 三节，全站没有定价入口",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-qorpe-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-qorpe-ui.md",
+    "checkedAt": "2026-09-15T11:49:15.530Z",
+    "license": "Apache-2.0"
+  }
+}

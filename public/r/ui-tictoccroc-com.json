@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3482e43e4aecd24834b16b12c957073344ac815b12c7fdc4750691d0edf4ae1a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "ui-tictoccroc-com",
+  "entityId": "entity-ui-tictoccroc-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://ui.tictoccroc.com",
+    "finalUrl": "https://ui.tictoccroc.com/?path=/docs/introduction--docs",
+    "checkedAt": "2026-09-15T11:40:38.083Z"
+  },
+  "editorial": {
+    "name": "Connecting The Dots",
+    "descriptionZh": "Connecting The Dots 的组件 Storybook，侧栏列了 Accordion、Autocomplete、BottomSheet、ChainPicker、NumberKeypad 等一批组件，另有 A11y、Hooks、Utilities 三份指南。截图时画布只显示骨架占位，没渲染出内容。",
+    "takeawayZh": "翻一遍 Storybook 里的组件清单与 A11y 指南。",
+    "noteZh": "打开是深色 logo 的 Storybook，左上角写着 CONNECTING THE DOTS，左侧分组依次是 GUIDES（A11y、Hooks、Utilities）、FOUNDATION（tictoccroc-parent、tictoccroc-teacher）、INTERACTIONS（Hooks、Collapse）和 COMPONENTS，组件里能看到 BottomSheet、ChainPicker、CircularProgressIndicator、NumberKeypad、PageControl、SegmentedButton、Snackbar、Toolbar 这些偏移动端的控件。右侧画布停在灰白骨架块和转圈的加载状态，正文没渲染出来，所以只能照这份清单和分组写。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点是这个组件库的 Storybook 文档，用户能直接拿走的是组件清单与用法页，因此归 ui-implementation 的通用界面组件；画布未渲染，无法确认组件实现与依赖。",
+        "evidenceUrl": "https://ui.tictoccroc.com/?path=/docs/introduction--docs"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:40:38.083Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "education",
+      "mobile"
+    ],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ui.tictoccroc.com",
+      "finalUrl": "https://ui.tictoccroc.com/?path=/docs/introduction--docs",
+      "title": "Introduction - Docs ⋅ Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ui-tictoccroc-com/identity.jpg",
+        "sha256": "2696f7c9aa0a4c3d42c1cc78f2d727c8952d89de5d86a1680580cdceff4fc245",
+        "width": 1280,
+        "height": 900,
+        "bytes": 50446,
+        "alt": "Connecting The Dots 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "components",
+      "value": "Accordion, Autocomplete, Backdrop, Badge, BottomSheet, Box, Button, Card, ChainPicker, Checkbox, Chip, CircularProgressIndicator, DatePicker, Dialog, Flexbox, FormControlText, Highlight, Icon, IconButton, Label, LineProgressIndicator, Menu, NumberKeypad, PageControl, Radio, RadioGroup, SegmentedButton, Select, Skeleton, Slider, Snackbar, Switch, Tab, TextArea, TextField, Tooltip",
+      "sourceUrl": "https://ui.tictoccroc.com/?path=/docs/introduction--docs",
+      "evidence": "Storybook 侧栏 COMPONENTS 分组下逐条列出的条目",
+      "confidence": 1
+    },
+    {
+      "field": "guides",
+      "value": "A11y / Hooks / Utilities",
+      "sourceUrl": "https://ui.tictoccroc.com/?path=/docs/introduction--docs",
+      "evidence": "侧栏 GUIDES 分组下的三条目录",
+      "confidence": 1
+    },
+    {
+      "field": "foundationGroups",
+      "value": "tictoccroc-parent / tictoccroc-teacher",
+      "sourceUrl": "https://ui.tictoccroc.com/?path=/docs/introduction--docs",
+      "evidence": "侧栏 FOUNDATION 分组下的两条主题条目",
+      "confidence": 1
+    },
+    {
+      "field": "renderState",
+      "value": "画布未渲染，仅显示骨架与加载转圈",
+      "sourceUrl": "https://ui.tictoccroc.com/?path=/docs/introduction--docs",
+      "evidence": "首屏截图右侧画布是灰白骨架块加一个转圈，正文文本只有侧栏目录",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/ui-tictoccroc-com",
+    "designMdUrl": "https://vislexicon.com/site/ui-tictoccroc-com.md",
+    "checkedAt": "2026-09-15T11:40:38.083Z",
+    "license": "unknown"
+  }
+}

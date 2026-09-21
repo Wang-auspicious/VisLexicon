@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0d6ebaa93ad12ecd3db5c908a39ab42b3f7b6608e5d0d2ab289aa6c41555ca1d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "radix-ui-com",
+  "entityId": "entity-radix-ui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://radix-ui.com",
+    "finalUrl": "https://www.radix-ui.com/",
+    "checkedAt": "2026-09-15T12:03:46.336Z"
+  },
+  "editorial": {
+    "name": "Radix UI",
+    "descriptionZh": "WorkOS 出的开源组件库，产品线拆成 Themes、Primitives、Icons、Colors 四块。首页用一组真实界面片段当预览，配 import 即用的代码示例。",
+    "takeawayZh": "引入主题样式，Theme 包住 Button 就有可访问组件。",
+    "noteZh": "首屏左侧是 Read about Radix Themes 3.0 的浅紫胶囊和一行衬线大标题 Start building your app now，下面直接贴 import \"@radix-ui/themes/styles.css\" 的代码块，两枚按钮是 Get started 和 Playground。右侧并排几张实样卡：Your team 带 Invite 邮箱行，Notifications 带 Comments / Favorites / New documents 三组 Push / Email / Slack 开关。顶栏除 Themes 外还挂着 Primitives、Icons、Colors 三项。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面同时提供样式化的 Themes 组件、无样式的 Primitives、图标集与色板四套资源，并强调只 import 就能用，属于设计系统与完整组件套件",
+        "evidenceUrl": "https://www.radix-ui.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:03:46.336Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "icon",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://radix-ui.com",
+      "finalUrl": "https://www.radix-ui.com/",
+      "title": "Radix UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/radix-ui-com/identity.jpg",
+        "sha256": "f6f7b903cac6f6a920214caa872109b9444c95a13de434cee74ebb3855efc58d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106665,
+        "alt": "Radix UI 首屏：Start buildingyour app now"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Free and open-source",
+      "sourceUrl": "https://www.radix-ui.com/",
+      "evidence": "页面描述 Components, icons, and colors for building high-quality, accessible UI. Free and open-source.",
+      "confidence": 1
+    },
+    {
+      "field": "productLines",
+      "value": "Themes / Primitives / Icons / Colors",
+      "sourceUrl": "https://www.radix-ui.com/",
+      "evidence": "顶栏导航四项与站内路径 /themes、/primitives、/icons、/colors",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "import \"@radix-ui/themes/styles.css\" + import { Theme, Button } from \"@radix-ui/themes\"",
+      "sourceUrl": "https://www.radix-ui.com/",
+      "evidence": "首屏代码块前两行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/radix-ui-com",
+    "designMdUrl": "https://vislexicon.com/site/radix-ui-com.md",
+    "checkedAt": "2026-09-15T12:03:46.336Z",
+    "license": "unknown"
+  }
+}

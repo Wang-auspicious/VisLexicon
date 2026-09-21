@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "57c8a2dbaef2e77b25298972e0fd13fa2c7bc719525e6b9b27b17856bfbd7344",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "satellite-algolia-com",
+  "entityId": "entity-satellite-algolia-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://satellite.algolia.com",
+    "finalUrl": "https://satellite.algolia.com/8261d6576/p/046344-satellite-design-system",
+    "checkedAt": "2026-09-15T11:36:17.946Z"
+  },
+  "editorial": {
+    "name": "Satellite",
+    "descriptionZh": "Algolia 的设计系统文档站，zeroheight 托管，分 Foundations、Components、Patterns、Templates 四段，组件写明用 React 实现。",
+    "takeawayZh": "照 Foundations 的 token 与组件清单拼界面",
+    "noteZh": "顶栏左边是 algolia 的 logo 和 Search，右边平铺 Get Started / Foundations / Components / Patterns / Templates。首屏是一张卫星线稿插图配 Satellite 大标题和 Algolia's Design System 副题，下面三张卡分别讲 Foundations（Contains a set of polished React components that work out of the box）、Components、Patterns（Features a UI design language for enterprise-grade web applications），再往下是 Get Started 与 Whats New 两栏。页面渲染出来的正文很少，组件与 token 详情都在 zeroheight 的侧栏里。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "reference-standards",
+    "subcategory": "standards-guidelines-checklists",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点交付的是设计系统的规范文档（Foundations / Components / Patterns 三段指南，description 写明 made with zeroheight），用户拿走的是准则而不是可执行代码，归标准、规范与检查清单。",
+        "evidenceUrl": "https://satellite.algolia.com/"
+      },
+      {
+        "statement": "Components 卡片自己写 Components are built with React，故 technologies 记 react；但页面不提供下载或安装入口，所以 deliverables 没记成 code-library。",
+        "evidenceUrl": "https://satellite.algolia.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:36:17.946Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "search"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://satellite.algolia.com",
+      "finalUrl": "https://satellite.algolia.com/8261d6576/p/046344-satellite-design-system",
+      "title": "Satellite design system",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/satellite-algolia-com/identity.jpg",
+        "sha256": "b95557208e1cd800d57c2c8eea08c94b76f32798e8c55d31db2fad41cfeb3b5a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84169,
+        "alt": "Satellite 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "sections",
+      "value": "Get Started / Foundations / Components / Patterns / Templates",
+      "sourceUrl": "https://satellite.algolia.com/",
+      "evidence": "首屏顶部导航的五项，左侧另有 Search",
+      "confidence": 1
+    },
+    {
+      "field": "hosting",
+      "value": "zeroheight（站点描述写 made with zeroheight）",
+      "sourceUrl": "https://satellite.algolia.com/",
+      "evidence": "页面 description 句，实际 URL 也带 /8261d6576/p/046344-satellite-design-system 这样的 zeroheight 路径",
+      "confidence": 1
+    },
+    {
+      "field": "frameworks",
+      "value": "React",
+      "sourceUrl": "https://satellite.algolia.com/",
+      "evidence": "Foundations 卡正文 polished React components，Components 卡正文 Components are built with React",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free（全站无 Pricing 入口，公开可直接读）",
+      "sourceUrl": "https://satellite.algolia.com/",
+      "evidence": "导航只有 Get Started / Foundations / Components / Patterns / Templates 加 Search",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/satellite-algolia-com",
+    "designMdUrl": "https://vislexicon.com/site/satellite-algolia-com.md",
+    "checkedAt": "2026-09-15T11:36:17.946Z",
+    "license": "unknown"
+  }
+}

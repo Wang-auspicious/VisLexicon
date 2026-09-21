@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0a5d57201a48f33f316478af4b8d2d898376c1f6a5436ea8e3eecd2130eaa5c1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "fontsource-org-fonts-ibm-plex-sans",
+  "entityId": "entity-fontsource-org-fonts-ibm-plex-sans",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://fontsource.org/fonts/ibm-plex-sans",
+    "finalUrl": "https://fontsource.org/fonts/ibm-plex-sans",
+    "checkedAt": "2026-09-15T12:21:38.730Z"
+  },
+  "editorial": {
+    "name": "IBM Plex Sans (Fontsource)",
+    "descriptionZh": "Fontsource 上 IBM Plex Sans 的可变字体页，sans-serif 来自 Google Fonts。斜体、宽度、字重三条轴都能在页面上拖。",
+    "takeawayZh": "ital/wdth/wght 三条轴一起试，取可变无衬线",
+    "noteZh": "IBM Plex Sans 标题旁是 sans-serif 与 google 徽章，Font Preview 首屏四行试样，字重标从 Thin 100、Extra Light 200、Light 300 到 Regular 400。Variable Axes 面板第一条是 Italic (ital) 0–1，下面还挂着 Width (wdth) 75–100 与 Weight (wght) 100–700。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "fonts-typefaces",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是带三条可变轴的字体文件，Download / CDN 为取用入口，归字体与字族。",
+        "evidenceUrl": "https://fontsource.org/fonts/ibm-plex-sans"
+      },
+      {
+        "statement": "Variable Axes 面板列出 Italic (ital)、Width (wdth)、Weight (wght) 三条轴，属可变字族。",
+        "evidenceUrl": "https://fontsource.org/fonts/ibm-plex-sans"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:21:38.730Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "font"
+    ],
+    "actions": [
+      "browse",
+      "download",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://fontsource.org/fonts/ibm-plex-sans",
+      "finalUrl": "https://fontsource.org/fonts/ibm-plex-sans",
+      "title": "IBM Plex Sans | Fontsource",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/fontsource-org-fonts-ibm-plex-sans/identity.jpg",
+        "sha256": "9994674e3cd2252c8d7097bba2bba42fd14f17a91063164d2308afe961a4fc30",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78527,
+        "alt": "IBM Plex Sans (Fontsource) 首屏：IBM Plex Sans"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "variableAxes",
+      "value": "Italic (ital) 0–1、Width (wdth) 75–100、Weight (wght) 100–700",
+      "sourceUrl": "https://fontsource.org/fonts/ibm-plex-sans",
+      "evidence": "Variable Axes 面板逐条列出的轴名与端点数值",
+      "confidence": 1
+    },
+    {
+      "field": "stylesOnFirstScreen",
+      "value": "Thin 100、Extra Light 200、Light 300、Regular 400",
+      "sourceUrl": "https://fontsource.org/fonts/ibm-plex-sans",
+      "evidence": "Font Preview 首屏四行试样的行尾字重标",
+      "confidence": 1
+    },
+    {
+      "field": "typefaceClass",
+      "value": "sans-serif",
+      "sourceUrl": "https://fontsource.org/fonts/ibm-plex-sans",
+      "evidence": "标题右侧第一枚徽章写着 sans-serif",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://fontsource.org/fonts/ibm-plex-sans",
+      "evidence": "页面无价格与购买入口",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/fontsource-org-fonts-ibm-plex-sans",
+    "designMdUrl": "https://vislexicon.com/site/fontsource-org-fonts-ibm-plex-sans.md",
+    "checkedAt": "2026-09-15T12:21:38.730Z",
+    "license": "unknown"
+  }
+}

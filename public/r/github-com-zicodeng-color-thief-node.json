@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "88b7a9e8c00e1e7c219a847d1d4c4cba06fa878d7ae4adc2f4cd06ae79c58432",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-zicodeng-color-thief-node",
+  "entityId": "entity-github-com-zicodeng-color-thief-node",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/zicodeng/color-thief-node",
+    "finalUrl": "https://github.com/zicodeng/color-thief-node",
+    "checkedAt": "2026-09-15T12:52:24.529Z"
+  },
+  "editorial": {
+    "name": "zicodeng/color-thief-node",
+    "descriptionZh": "color-thief 的 Node 端重写：原版靠浏览器 canvas 取像素，这里改用 node-canvas 在 Node 里模拟 canvas，源码重写成 ES6 并支持 promise，入口是 getColorFromURL 与 getPaletteFromURL 两个异步函数。",
+    "takeawayZh": "在 Node 里给图片 URL 取主色与色板",
+    "noteZh": "README 第一段解释动机：original color thief project relies on the browser canvas object ... does not work well in Node.js environment，所以改用 node-canvas 库模拟。Usage 只剩两段：const { getColorFromURL } = require('color-thief-node') 与 const { getPaletteFromURL } = require('color-thief-node')，都用 async/await 取值；测试命令写 npm run test 或 yarn test。仓库文件只有 src、test 两个目录加 .gitignore、README、package.json、yarn.lock，右侧 About 区只有 Readme 与 Activity，没有许可证标签，Releases 写 No releases published，Languages 条是 JavaScript 100%，贡献者只有 zicodeng 一人。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "功能是从图片里提取主色与色板，属于生成配色数据的实现代码，与它 fork 的浏览器版同属一类。",
+        "evidenceUrl": "https://github.com/zicodeng/color-thief-node"
+      },
+      {
+        "statement": "README 的 Usage 直接给出两个取色函数与返回值用法，交付物是 npm 包，而不是图片素材或模板。",
+        "evidenceUrl": "https://github.com/zicodeng/color-thief-node"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:52:24.529Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "canvas"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/zicodeng/color-thief-node",
+      "finalUrl": "https://github.com/zicodeng/color-thief-node",
+      "title": "GitHub - zicodeng/color-thief-node: Color thief reimplementation for Node.js. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-zicodeng-color-thief-node/identity.jpg",
+        "sha256": "8e4da9e2560c7c363b29a1f789e700c1e28179a33e17e08a5a432a843edd75e2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 130962,
+        "alt": "zicodeng/color-thief-node 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "api",
+      "value": "getColorFromURL(imageURL) 与 getPaletteFromURL(imageURL)，均为 promise 风格",
+      "sourceUrl": "https://github.com/zicodeng/color-thief-node",
+      "evidence": "README Usage 一节的 Get the Dominant Color from an Image 与 Build a Color Palette from an Image 两段代码。",
+      "confidence": 1
+    },
+    {
+      "field": "dependency",
+      "value": "依赖 node-canvas 在 Node 环境模拟 canvas 对象，源码为 ES6 并支持 promise",
+      "sourceUrl": "https://github.com/zicodeng/color-thief-node",
+      "evidence": "README 正文 This project, however, relies on the node-canvas library to simulate a Canvas object in Node.js environment. 一句。",
+      "confidence": 1
+    },
+    {
+      "field": "releaseStatus",
+      "value": "No releases published；Languages 为 JavaScript 100%；贡献者 1 人；36 stars / 8 forks；Used by 770",
+      "sourceUrl": "https://github.com/zicodeng/color-thief-node",
+      "evidence": "首屏右侧 Releases 区、Languages 条、Contributors 与 Used by 770 计数。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-zicodeng-color-thief-node",
+    "designMdUrl": "https://vislexicon.com/site/github-com-zicodeng-color-thief-node.md",
+    "checkedAt": "2026-09-15T12:52:24.529Z",
+    "license": "unknown"
+  }
+}

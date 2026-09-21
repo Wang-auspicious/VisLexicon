@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8d77c37872713c3ab981d0821211f583c57a25ae4be1491b72497a5c2f35dd85",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-designbycode-tailwindcss-mask-image",
+  "entityId": "entity-github-com-designbycode-tailwindcss-mask-image",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/DesignByCode/tailwindcss-mask-image",
+    "finalUrl": "https://github.com/DesignByCode/tailwindcss-mask-image",
+    "checkedAt": "2026-09-15T11:40:28.576Z"
+  },
+  "editorial": {
+    "name": "designbycode/tailwindcss-mask-image",
+    "descriptionZh": "给 Tailwind CSS 加图片遮罩工具类的插件：用 CSS 渐变生成 mask-image，方向和起止百分比都可调。装进 tailwind.config.js 的 plugins 数组即可用。",
+    "takeawayZh": "装成 Tailwind 插件，用渐变工具类给图片做方向遮罩。",
+    "noteZh": "仓库首屏就是文件列表，src / utils / dist 三个目录加一个 screenshot.png，右侧 About 只有 Readme、MIT license 和一行 Contributors，没有仓库简介。README 的目录从 Installation 排到 Utilities、Applying Image Masks、Default Values、Changing Gradient Starting and Ending Points，正文说它靠 --mask-image-start 与 --mask-image-end 两个自定义属性控制渐变起止百分比，作者署名 Claude Myburgh，Languages 条是 TypeScript 100%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是能被 Tailwind 项目安装的样式插件代码，用户拿走的是工具类，因此归到 ui-implementation 的通用界面组件；它不是完整组件而是一组 mask 工具类，这一点归类上略有偏差。",
+        "evidenceUrl": "https://github.com/DesignByCode/tailwindcss-mask-image"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:40:28.576Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "tailwind",
+      "css",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/DesignByCode/tailwindcss-mask-image",
+      "finalUrl": "https://github.com/DesignByCode/tailwindcss-mask-image",
+      "title": "GitHub - designbycode/tailwindcss-mask-image · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-designbycode-tailwindcss-mask-image/identity.jpg",
+        "sha256": "bc93cdf32c61d3f655c3c5ed19f941e0adea3dfabfe388636aebdc5c6f9b8a62",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113094,
+        "alt": "designbycode/tailwindcss-mask-image 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/DesignByCode/tailwindcss-mask-image",
+      "evidence": "仓库右侧 About 栏的 MIT license，README 的 License 一节同样写 MIT",
+      "confidence": 1
+    },
+    {
+      "field": "packageName",
+      "value": "@designbycode/tailwindcss-mask-image",
+      "sourceUrl": "https://github.com/DesignByCode/tailwindcss-mask-image",
+      "evidence": "README 的 Installation 一节，pnpm add / npm install / yarn add 三条命令后面跟的都是这个包名",
+      "confidence": 1
+    },
+    {
+      "field": "customProperties",
+      "value": "--mask-image-start / --mask-image-end",
+      "sourceUrl": "https://github.com/DesignByCode/tailwindcss-mask-image",
+      "evidence": "README 小标题 Changing Gradient Starting and Ending Points 下面列了这两个属性可用的百分比取值",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-designbycode-tailwindcss-mask-image",
+    "designMdUrl": "https://vislexicon.com/site/github-com-designbycode-tailwindcss-mask-image.md",
+    "checkedAt": "2026-09-15T11:40:28.576Z",
+    "license": "MIT"
+  }
+}

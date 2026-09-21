@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "99be99fef05eae43167091392c73d591c445fc9dfc65c9305a21d6a67425edff",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "rogo-ai",
+  "entityId": "entity-rogo-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://rogo.ai",
+    "finalUrl": "https://rogo.com/",
+    "checkedAt": "2026-09-15T11:17:50.089Z"
+  },
+  "editorial": {
+    "name": "Rogo",
+    "descriptionZh": "面向金融机构的 AI 平台官网，标语 For the most ambitious firms in finance。页面最顶挂着一条 EMEA 与 APAC 扩张融资的公告，正文用 Truist、Nomura、Baird 三家机构高管的署名引语顶替产品截图。",
+    "takeawayZh": "看金融 AI 官网怎么用银行高管引语替代产品图",
+    "noteZh": "进来先看到最顶上一条浅色横幅：Announcing our strategic investment to accelerate expansion in EMEA and APAC，右侧一个 Learn more 链接。首屏是一张曼哈顿天际线加右下角国旗的照片，白色衬线大标题 For the most ambitious firms in finance 压在楼群上，下面写 Rogo is the trusted AI partner to the world's leading financial institutions，接一枚白底 Request Demo 按钮。导航是 Felix、Product、Security、Company、Customers、News、Careers，右上角 Log in 与 Request Demo。往下 Helping finance teams build smarter organizations 一节连着放三段带署名的引言，说话人分别是 Truist Securities 的 CEO Tom Hackett、Nomura 国际投行主管 Patrice Maffre 和 Baird 全球投行 COO Ross Williams。再往下 Why financial institutions choose Rogo 用 By finance, for finance 与 Agents that understand, and act 两条说明产品的金融专属性。",
+    "recommendation": null,
+    "pricing": "unknown（首页只有 Request Demo 与 Log in，未出现价格）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Rogo 面向金融机构的产品官网，导航含 Felix 产品线、Product、Security、Customers，转化入口是 Request Demo 与 Log in。",
+        "evidenceUrl": "https://rogo.com/"
+      },
+      {
+        "statement": "归 product-company-sites 而非 creation-tools：站内没有可上手的编辑或生成界面，只有引语、客户案例与安全说明这类营销内容。",
+        "evidenceUrl": "https://rogo.com/felix"
+      },
+      {
+        "statement": "域名口径需说明：简报给的规范地址是 rogo.ai，http 阶段在 rogo.ai 上返回 403 ERROR（The request could not be satisfied），浏览器阶段最终落在 rogo.com。",
+        "evidenceUrl": "https://rogo.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:17:50.089Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "finance"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "image",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery",
+      "editorial-feed"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://rogo.ai",
+      "finalUrl": "https://rogo.com/",
+      "title": "Rogo | AI for the most ambitious firms in finance",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/rogo-ai/identity.jpg",
+        "sha256": "3ac4198f73a26cc7f10f7acdcbb4033d6e48cd5b1764b35ad7455e125b7cff5a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 123591,
+        "alt": "Rogo 首屏：For the most ambitious firms in finance"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroCopy",
+      "value": "For the most ambitious firms in finance",
+      "sourceUrl": "https://rogo.com/",
+      "evidence": "首屏衬线大标题压在曼哈顿天际线照片上，live.heads 第一条同文",
+      "confidence": 1
+    },
+    {
+      "field": "announcement",
+      "value": "Announcing our strategic investment to accelerate expansion in EMEA and APAC",
+      "sourceUrl": "https://rogo.com/news/strategic-investors",
+      "evidence": "页面最顶部横幅，截图可见，站内另有 /news/strategic-investors 路径",
+      "confidence": 1
+    },
+    {
+      "field": "quotes",
+      "value": "Truist Securities CEO Tom Hackett、Nomura 国际投行主管 Patrice Maffre、Baird 全球投行 COO Ross Williams 三段署名引语",
+      "sourceUrl": "https://rogo.com/customers",
+      "evidence": "Helping finance teams build smarter organizations 一节，live.bodyText 中带姓名与头衔",
+      "confidence": 1
+    },
+    {
+      "field": "positioning",
+      "value": "By finance, for finance；Agents that understand, and act",
+      "sourceUrl": "https://rogo.com/product",
+      "evidence": "Why financial institutions choose Rogo 一节的三个小节标题，live.bodyText 中可见",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/rogo-ai",
+    "designMdUrl": "https://vislexicon.com/site/rogo-ai.md",
+    "checkedAt": "2026-09-15T11:17:50.089Z",
+    "license": "unknown"
+  }
+}

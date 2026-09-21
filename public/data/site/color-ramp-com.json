@@ -1,0 +1,173 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "eb8bedbdb0fdad783b7cff792c244fdbf022dfc1b92f933996bb393a1f420844",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "color-ramp-com",
+  "entityId": "entity-color-ramp-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "color-ramp.com",
+  "official": {
+    "inputUrl": "https://color-ramp.com",
+    "finalUrl": "https://color-ramp.com/",
+    "checkedAt": "2026-09-15T12:51:16.904Z"
+  },
+  "editorial": {
+    "name": "Color Ramp",
+    "descriptionZh": "输入一个基准色就生成整条 WCAG 2.2 AA/AAA 合规色阶的网页工具，色阶可导出 JSON 交给它的 Figma 插件。",
+    "takeawayZh": "输基准色出合规色阶，导 JSON 进 Figma",
+    "noteZh": "深色星空底上左边是 Create accessible color ramps in less than 5 seconds, no BS. 的大标题，旁边手写体补了一句 Not even Claude can do it this fast!；顶栏右侧写着 Choose your color space: 加 OKLCH、HSL 两个按钮，再往右是 Buy me a coffee :) 和一个暂停键。右边一整块由五列色阶拼成的色板，底下调侃 Guess what these color ramps were created with。往下是 Get to gettin'! 与 Figma Plugin 入口，Powerful Features 一节从上到下列了 Extreme Speed、Accessibility Focus、Import Ramps to Figma、Contrast Ratios、Color Uniqueness、Lightest Light and Darkest Dark、Choose Default Mode、Last Used Color。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是从基准色现场生成的色阶与它的导出文件，用户动作是输入、生成、导出，属创作工具；沿用本仓库把配色生成器归 image-vector-layout-creation 的口径。",
+        "evidenceUrl": "https://color-ramp.com/"
+      },
+      {
+        "statement": "页面自述强调 Accessibility Focus 与 WCAG 2.2 AA/AAA，但它生成色阶而不是审计既有页面，所以不归 accessibility-audit-remediation。",
+        "evidenceUrl": "https://color-ramp.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:51:16.904Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "generate",
+      "export",
+      "preview"
+    ],
+    "media": [],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://color-ramp.com",
+      "finalUrl": "https://color-ramp.com/",
+      "title": "Color Ramp - Create accessible color ramps in less than 5 seconds, no BS.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/color-ramp-com/identity.jpg",
+        "sha256": "e142762632cba3dece782b1ac069abd389056982a750ce1aeb6b6cd195f1f285",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114854,
+        "alt": "Color Ramp 首屏：Create accessible color ramps in less than 5 seconds, no BS."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://color-ramp.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/color-ramp-com/identity.jpg",
+          "alt": "Color Ramp 首屏：Create accessible color ramps in less than 5 seconds, no BS.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "accessibility-standard",
+      "value": "WCAG 2.2 AA 与 AAA",
+      "sourceUrl": "https://color-ramp.com/",
+      "evidence": "正文写着 every shade generated meets WCAG 2.2 AA and AAA standards，Features 一节的 Accessibility Focus 也是同一说法",
+      "confidence": 1
+    },
+    {
+      "field": "color-spaces",
+      "value": "OKLCH、HSL",
+      "sourceUrl": "https://color-ramp.com/",
+      "evidence": "顶栏按钮与正文都写着 Choose your color space: OKLCH HSL，对应 /index-oklch.html 与 /index-hsl.html 两条路径",
+      "confidence": 1
+    },
+    {
+      "field": "figma-handoff",
+      "value": "导出 JSON，用 Figma Community 上的插件导入",
+      "sourceUrl": "https://color-ramp.com/",
+      "evidence": "Import Ramps to Figma 一段写 Export your ramp as JSON and bring it straight into Figma with a single import，并指到 Figma Community",
+      "confidence": 0.9
+    },
+    {
+      "field": "contrast-ratios",
+      "value": "每级色阶给出对白色与深色底的对比度",
+      "sourceUrl": "https://color-ramp.com/",
+      "evidence": "Contrast Ratios 一段写 Each shade shows your contrast ratio for both white and deep-dark backgrounds",
+      "confidence": 0.9
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://color-ramp.com/",
+      "evidence": "页面只有 Buy me a coffee 的打赏入口，没有付费墙",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/color-ramp-com.md",
+  "registryUrl": "/r/color-ramp-com.json"
+}

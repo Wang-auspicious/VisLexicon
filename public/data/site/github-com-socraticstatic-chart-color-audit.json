@@ -1,0 +1,166 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7e12f3da571611dd7c90f640d7d9c4b195164e04b6ecf3141dca2d31fece2371",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-socraticstatic-chart-color-audit",
+  "entityId": "entity-github-com-socraticstatic-chart-color-audit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/socraticstatic/chart-color-audit",
+    "finalUrl": "https://github.com/socraticstatic/chart-color-audit",
+    "checkedAt": "2026-09-15T12:50:24.136Z"
+  },
+  "editorial": {
+    "name": "socraticstatic/chart-color-audit",
+    "descriptionZh": "一个图表配色的无障碍审计引擎：用 WCAG 非文本对比度、Machado 2009 色觉障碍模拟与 OKLab 色差，判断数据系列在色盲眼里还分不分得开。",
+    "takeawayZh": "把配色丢给 CLI 或 CI，色盲下分不清就构建失败",
+    "noteZh": "About 栏写着 Accessibility audit for chart color palettes: WCAG non-text contrast, Machado 2009 CVD simulation, OKLab dE separation. One engine, four faces: API, CLI, CI gate, MCP server.，标了 MIT license、0 stars，Contributors 里除了 socraticstatic 还挂着 claude。README 从 Four ways in. Pick yours. 分成四节：1 · Try a palette (nothing to install)、2 · Gate your CI、3 · Call it from code、4 · Wire it into an agent (MCP)，另有 Floors、Honest scope、Where this came from、Consulting；文件列表里 server.json、tsup.config.ts、vitest.config.ts 说明它同时是 npm 包和 MCP server。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "research-quality-tools",
+    "subcategory": "accessibility-audit-remediation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点自我描述为 Accessibility audit for chart color palettes，四节用法全部是「审计并让构建失败」，交付的是审计能力。",
+        "evidenceUrl": "https://github.com/socraticstatic/chart-color-audit"
+      },
+      {
+        "statement": "README 点名 WCAG 2.2 对比度与 Machado, Oliveira & Fernandes 2009 矩阵，属无障碍审计与修复类，与词典中 accessibility-audit-remediation 对应。",
+        "evidenceUrl": "https://github.com/socraticstatic/chart-color-audit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:50:24.136Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "report"
+    ],
+    "actions": [
+      "audit",
+      "test",
+      "install",
+      "apply"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "cli",
+      "mcp",
+      "api"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "test",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/socraticstatic/chart-color-audit",
+      "finalUrl": "https://github.com/socraticstatic/chart-color-audit",
+      "title": "GitHub - socraticstatic/chart-color-audit: Accessibility audit for chart color palettes: WCAG non-text contrast, Machado 2009 CVD simulation, OKLab dE separation. One engine, four faces: API, CLI, CI gate, MCP server. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-socraticstatic-chart-color-audit/identity.jpg",
+        "sha256": "0d23e568124b70ad2103f1b9359489c6983fde46aadfa4e81fb5e8099652dfc7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 152304,
+        "alt": "socraticstatic/chart-color-audit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/socraticstatic/chart-color-audit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-socraticstatic-chart-color-audit/identity.jpg",
+          "alt": "socraticstatic/chart-color-audit 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/socraticstatic/chart-color-audit",
+      "evidence": "README 标签行与右侧 About 栏都标 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "interfaces",
+      "value": "API、CLI、CI gate、MCP server",
+      "sourceUrl": "https://github.com/socraticstatic/chart-color-audit",
+      "evidence": "仓库标题与 README 的 One engine, four faces，正文另列 1–4 四节用法",
+      "confidence": 1
+    },
+    {
+      "field": "contributors",
+      "value": "2（socraticstatic、claude）",
+      "sourceUrl": "https://github.com/socraticstatic/chart-color-audit",
+      "evidence": "右侧 Contributors 2 区块列出两个头像名",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-socraticstatic-chart-color-audit.md",
+  "registryUrl": "/r/github-com-socraticstatic-chart-color-audit.json"
+}

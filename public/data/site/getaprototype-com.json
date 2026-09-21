@@ -1,0 +1,185 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ddf9d3e85c039e79442ce0712a38ec12a43d08bd33a0d6b7ea6f031761da6ad6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "getaprototype-com",
+  "entityId": "entity-getaprototype-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "prototyper.co",
+  "official": {
+    "inputUrl": "https://getaprototype.com",
+    "finalUrl": "https://www.prototyper.co/",
+    "checkedAt": "2026-09-15T10:34:21.967Z"
+  },
+  "editorial": {
+    "name": "Prototyper",
+    "descriptionZh": "Prototyper 是一块给人和 AI 代理共用的画布：设计师在画布上画，Claude Code、Codex、Cursor 这些代理在同一个文件上写真实 React 代码并开 PR，改动实时回显在预览里。面向让设计和工程共用同一份产物的团队。",
+    "takeawayZh": "让 Claude Code 在你旁边的画布上改代码出预览",
+    "noteZh": "首屏 h1 是 Design. Build. Ship.，标题上带选中框，右边浮着 prototyper 与 ui-builder 两个协作者光标。下面的画布实拍里，Agent 面板收到“Add a revenue overview with an export button”，回执列出 Edited Dashboard.tsx 与“Ran tests — 34 passed”，右侧是 preview.protochase.app/dashboard 的实时预览和一个 Export report 按钮，旁边贴着便利贴问“Can we split revenue by channel next?”。",
+    "recommendation": null,
+    "pricing": "freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "ui-prototyping-whiteboard",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点把自己放在设计工具赛道：导航有 /ai-prototyping-tool、/ai-wireframe-generator，并把 /vs/figma、/vs/balsamiq、/vs/sketch、/vs/uxpin 做成对比页，说明对标对象是原型与白板工具。",
+        "evidenceUrl": "https://www.prototyper.co/vs/figma"
+      },
+      {
+        "statement": "h1 是 Design. Build. Ship.，正文写 The canvas writes back，核心交付物是画布上的可运行原型，故归 UI 设计与原型。",
+        "evidenceUrl": "https://www.prototyper.co/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:34:21.967Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "agent",
+      "ai"
+    ],
+    "deliverables": [
+      "user-flow",
+      "component"
+    ],
+    "actions": [
+      "prototype",
+      "collaborate",
+      "edit"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://getaprototype.com",
+      "finalUrl": "https://www.prototyper.co/",
+      "title": "Prototyper — Visual Workspace for Your Agents",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/getaprototype-com/identity.jpg",
+        "sha256": "a37f65e7cd984afc84d771c93bb4913cafc52be0d7a34cf739315b728f10c188",
+        "width": 1280,
+        "height": 900,
+        "bytes": 95428,
+        "alt": "Prototyper 首屏：Design. Build. Ship."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://getaprototype.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/getaprototype-com/identity.jpg",
+          "alt": "Prototyper 首屏：Design. Build. Ship.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "h1",
+      "value": "Design. Build. Ship.",
+      "sourceUrl": "https://www.prototyper.co/",
+      "evidence": "首屏被选中框框住的标题",
+      "confidence": 1
+    },
+    {
+      "field": "agentSupport",
+      "value": "Claude Code、Codex、Cursor、GitHub Copilot 可在画布上读文件、写真实 React 并开 PR",
+      "sourceUrl": "https://www.prototyper.co/",
+      "evidence": "首屏画布截图中 claude code 光标标签与正文《Your favorite agent, on canvas.》一段",
+      "confidence": 1
+    },
+    {
+      "field": "existingTooling",
+      "value": "可直连 GitHub、Drive、Linear、Notion、Figma、MCP servers 与 CI",
+      "sourceUrl": "https://www.prototyper.co/",
+      "evidence": "正文《Open with your stack already loaded》一节的分组图标",
+      "confidence": 0.9
+    },
+    {
+      "field": "pricingModel",
+      "value": "免费起步，上线后再付费",
+      "sourceUrl": "https://www.prototyper.co/pricing",
+      "evidence": "正文标题《Free to start. Pay when you ship.》与首屏 Start free 按钮",
+      "confidence": 0.85
+    },
+    {
+      "field": "comparisons",
+      "value": "与 Figma、Balsamiq、Sketch、UXPin 逐项对比",
+      "sourceUrl": "https://www.prototyper.co/vs",
+      "evidence": "导航 Compare · side by side 下拉与站点 /vs/* 路径",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/getaprototype-com.md",
+  "registryUrl": "/r/getaprototype-com.json"
+}

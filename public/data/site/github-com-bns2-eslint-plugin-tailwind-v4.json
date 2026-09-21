@@ -1,0 +1,168 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8fd2d3122451fef91c74cfa506bda47bb46f3bac79d1c3e2f6ce2f28cb921df1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-bns2-eslint-plugin-tailwind-v4",
+  "entityId": "entity-github-com-bns2-eslint-plugin-tailwind-v4",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4",
+    "finalUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4",
+    "checkedAt": "2026-09-15T11:37:52.000Z"
+  },
+  "editorial": {
+    "name": "BnS2/eslint-plugin-tailwind-v4",
+    "descriptionZh": "一个 ESLint 插件，从你的 CSS 入口加载 Tailwind v4 设计系统，逐个校验 className 字符串，抓出写错的工具类。",
+    "takeawayZh": "装进 ESLint，实时抓 Tailwind v4 类名拼错",
+    "noteZh": "About 一句话 Tailwind CSS v4 typo detection for ESLint，MIT license、1 star、JavaScript 100%。README 的 Features 段列了 Typo Detection、Custom Class Support（@layer 里或裸写的自定义类都认）、Dynamic Reloading（改 CSS 不用重启 ESLint）、Nativewind Support、Real-time Validation，实现方式是用 @tailwindcss/node 直接读你的 CSS 入口来验证 className。文件区只有 index.js 和 worker.mjs 两个源文件加 package.json，13 Commits。",
+    "recommendation": null,
+    "pricing": "Free (MIT)",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是装进 ESLint 配置的检查插件，用户拿走的是写代码时的类名校验，不是界面组件或素材，按开发工作流归档。",
+        "evidenceUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4"
+      },
+      {
+        "statement": "README 的 Usage (Flat Config) 与 Recommended Complementary Plugins 两节说明它服务于代码检查链路，而非设计或内容生产环节。",
+        "evidenceUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:37:52.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "audit",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "tailwind",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4",
+      "finalUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4",
+      "title": "GitHub - BnS2/eslint-plugin-tailwind-v4: Tailwind CSS v4 typo detection for ESLint · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-bns2-eslint-plugin-tailwind-v4/identity.jpg",
+        "sha256": "ff22c074fd775e8da417851ea6e44c1f3ed594feb941aad00954a1362e6063ff",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131489,
+        "alt": "BnS2/eslint-plugin-tailwind-v4 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-bns2-eslint-plugin-tailwind-v4/identity.jpg",
+          "alt": "BnS2/eslint-plugin-tailwind-v4 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4",
+      "evidence": "About 栏的 MIT license 与 README 标题行的 MIT license 标签",
+      "confidence": 1
+    },
+    {
+      "field": "mechanism",
+      "value": "用 @tailwindcss/node 从 CSS 入口加载 Tailwind v4 设计系统来校验 className",
+      "sourceUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4",
+      "evidence": "README 首段与 Features 里 Real-time Validation 一条",
+      "confidence": 1
+    },
+    {
+      "field": "features",
+      "value": "Typo Detection、Custom Class Support、Dynamic Reloading、Nativewind Support",
+      "sourceUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4",
+      "evidence": "README Features 小节的四个条目名",
+      "confidence": 1
+    },
+    {
+      "field": "size",
+      "value": "源文件只有 index.js 与 worker.mjs，13 Commits、1 star、JavaScript 100%",
+      "sourceUrl": "https://github.com/BnS2/eslint-plugin-tailwind-v4",
+      "evidence": "文件区列表、提交计数与右下 Languages 图例",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-bns2-eslint-plugin-tailwind-v4.md",
+  "registryUrl": "/r/github-com-bns2-eslint-plugin-tailwind-v4.json"
+}

@@ -1,0 +1,165 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ea2590a962768df3cb5e804295543604898c438bff5b7f995cf34192d5749342",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "cnds-createnew-design",
+  "entityId": "entity-cnds-createnew-design",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "cnds.createnew.design",
+  "official": {
+    "inputUrl": "https://cnds.createnew.design",
+    "finalUrl": "https://cnds.createnew.design/",
+    "checkedAt": "2026-09-15T11:39:46.941Z"
+  },
+  "editorial": {
+    "name": "CreateNew Design System",
+    "descriptionZh": "CreateNew 的设计系统站点兼组件 playground，@createnew/ui-react 建在 Radix Primitives 上，样式全部走 @createnew/tokens 的语义 token。给想直接翻组件和页面模板的人。",
+    "takeawayZh": "翻组件 playground，顺手抄 token 和模板",
+    "noteZh": "首屏是张灰底卡片，中间大字 CreateNew Design System，下面一句 built with React, TypeScript, and semantic design tokens，两个按钮 Get Started 与 Explore Foundations。左侧栏分三块：FOUNDATIONS 里是 Colors、Typography、Spacing、Radius、Shadows、Logos、Tokens，COMPONENTS 从 Label、Button 一直排到 DataTable、Dialog、Sidebar、TopNav，TEMPLATES 下是 Basic Page Template 和 Form Page Template。栏底列着 @createnew/tokens v0.1.11、@createnew/ui-react v0.1.38、@createnew/playground v0.1.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面把自己摊成 tokens、组件、页面模板三层，是完整的设计系统套件而不是零散组件，归 design-system-suites。",
+        "evidenceUrl": "https://cnds.createnew.design/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:39:46.941Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "template"
+    ],
+    "actions": [
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "radix-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://cnds.createnew.design",
+      "finalUrl": "https://cnds.createnew.design/",
+      "title": "CreateNew Design System - Playground",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/cnds-createnew-design/identity.jpg",
+        "sha256": "ee98b67d0c598322d332fe4a82596f1134817940b5feefd5a9f423c0e062e7a6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 92412,
+        "alt": "CreateNew Design System 首屏：CreateNew Design System"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://cnds.createnew.design",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/cnds-createnew-design/identity.jpg",
+          "alt": "CreateNew Design System 首屏：CreateNew Design System",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "packageVersions",
+      "value": "@createnew/tokens v0.1.11 / @createnew/ui-react v0.1.38 / @createnew/playground v0.1.0",
+      "sourceUrl": "https://cnds.createnew.design/",
+      "evidence": "左栏底部 PACKAGE VERSIONS 区块",
+      "confidence": 1
+    },
+    {
+      "field": "primitives",
+      "value": "建在 Radix Primitives 上",
+      "sourceUrl": "https://cnds.createnew.design/",
+      "evidence": "What is This? 一节写 UI Primitives & Logic Layer 基于 Radix Primitives",
+      "confidence": 1
+    },
+    {
+      "field": "designSource",
+      "value": "Figma 加 Tokens Studio 管 token",
+      "sourceUrl": "https://cnds.createnew.design/",
+      "evidence": "Architecture 一节写 Design Layer 是 Figma 里的 designs、components、variables，配 Tokens Studio",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/cnds-createnew-design.md",
+  "registryUrl": "/r/cnds-createnew-design.json"
+}

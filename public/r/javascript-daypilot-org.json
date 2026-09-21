@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a28153a2b2ce3f046baa782a228866f301ac36e364f50a635b5c2118d3d15a9a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "javascript-daypilot-org",
+  "entityId": "entity-javascript-daypilot-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://javascript.daypilot.org",
+    "finalUrl": "https://javascript.daypilot.org/",
+    "checkedAt": "2026-09-15T11:40:06.538Z"
+  },
+  "editorial": {
+    "name": "DayPilot for JavaScript",
+    "descriptionZh": "DayPilot 的纯 JavaScript 组件线，卖 Scheduler、Gantt Chart、Event Calendar、Monthly Calendar 四个排程类控件，配一个在线 Configurator 生成可下载的示例工程。",
+    "takeawayZh": "在 Configurator 里配好 Scheduler 再下载",
+    "noteZh": "首屏先给一张 JavaScript Scheduler 的实拍：左侧按 Locations 下的 Room 1-4、People 下的 Person 1-4、Tools 分组，右侧是 June 2021 的日格，Event 1 到 Event 8 横在上面，底下一句 Supports AJAX and HTML5。再往下 JavaScript Gantt Chart 是同样格式的一屏，每块配 Features / Live Demo / Configurator 三个按钮。导航在 Products、Support 之外单列了 Open Source、Buy、Try、What's New，页脚挂着 CSS Theme Designer、UI Builder、Lite vs. Pro 三条工具与对比入口。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是四类可直接嵌进页面的排程控件（Scheduler、Gantt、Calendar、Month），是典型的可嵌入复合控件而不是通用小部件库，归 page-blocks-embeddable-controls。",
+        "evidenceUrl": "https://javascript.daypilot.org/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:40:06.538Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "preview",
+      "download",
+      "purchase"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "web-components",
+      "react",
+      "angular",
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://javascript.daypilot.org",
+      "finalUrl": "https://javascript.daypilot.org/",
+      "title": "DayPilot for JavaScript - Calendar, Scheduler and Gantt Chart Web Components",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/javascript-daypilot-org/identity.jpg",
+        "sha256": "880a5d8a25c32b89dc8585c85d659854934500729cfc34eb548902c43814f93c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84183,
+        "alt": "DayPilot for JavaScript 首屏：JavaScript Scheduler"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "products",
+      "value": "JavaScript Scheduler / Gantt Chart / Event Calendar / Monthly Calendar",
+      "sourceUrl": "https://javascript.daypilot.org/",
+      "evidence": "首页四块产品卡片各自的标题与说明",
+      "confidence": 1
+    },
+    {
+      "field": "frameworkSupport",
+      "value": "JavaScript、Angular、React、Vue",
+      "sourceUrl": "https://javascript.daypilot.org/",
+      "evidence": "Online Configurator 一段写 generate a downloadable project (JavaScript, Angular, React and Vue are supported)",
+      "confidence": 1
+    },
+    {
+      "field": "pricingModel",
+      "value": "Pro 需购买，另有 DayPilot Lite for JavaScript 开源版",
+      "sourceUrl": "https://javascript.daypilot.org/",
+      "evidence": "导航里的 Buy / Try，以及页脚 Components 一栏的 DayPilot Lite for JavaScript Open-Source",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/javascript-daypilot-org",
+    "designMdUrl": "https://vislexicon.com/site/javascript-daypilot-org.md",
+    "checkedAt": "2026-09-15T11:40:06.538Z",
+    "license": "unknown"
+  }
+}

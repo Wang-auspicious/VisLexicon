@@ -1,0 +1,154 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0df43d27ca60bb6154d2583aa0dfe4c99aae2e79c83ef07e3452b9999006b3dc",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-kontent-ai-model-generator-js",
+  "entityId": "entity-github-com-kontent-ai-model-generator-js",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/kontent-ai/model-generator-js",
+    "finalUrl": "https://github.com/kontent-ai/model-generator-js",
+    "checkedAt": "2026-09-15T12:33:42.400Z"
+  },
+  "editorial": {
+    "name": "kontent-ai/model-generator-js",
+    "descriptionZh": "把 Kontent.ai 的内容模型生成强类型 TypeScript 模型的开发工具，支持 delivery-sdk、migration toolkit、sync-sdk、environment、item 五种模型类型。",
+    "takeawayZh": "由 Kontent.ai 内容模型生成 TS 类型",
+    "noteZh": "README 说明这是「a developer tool that streamlines working with Kontent.ai by generating strongly typed objects and TypeScript models」，并逐条解释五种模型类型，比如 delivery-sdk 会生成 content types、taxonomies 以及 workflow steps、languages 这类 codename 类型。仓库根目录是 lib、sample、scripts、tests，最新 tag v10.1.1；About 没有描述文字，只挂了 hacktoberfest、kontent-ai、kontent-ai-tool、kontent-model-generator、typescript 几个 topic。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个代码生成工具（读 CMS 内容模型、吐 TypeScript 类型），属于开发工作流而不是设计交付；词典里没有专门的「代码生成」类，按最贴近的构建类归，属于边界情况。",
+        "evidenceUrl": "https://github.com/kontent-ai/model-generator-js"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:33:42.400Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate",
+      "export"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/kontent-ai/model-generator-js",
+      "finalUrl": "https://github.com/kontent-ai/model-generator-js",
+      "title": "GitHub - kontent-ai/model-generator-js · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-kontent-ai-model-generator-js/identity.jpg",
+        "sha256": "881acd105da2f4438fc093c3568802240f6c147974ac2c0ee45f792007fc6fd8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128301,
+        "alt": "kontent-ai/model-generator-js 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/kontent-ai/model-generator-js",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-kontent-ai-model-generator-js/identity.jpg",
+          "alt": "kontent-ai/model-generator-js 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "model-types",
+      "value": "delivery-sdk、migration toolkit、sync-sdk、environment、item 五种",
+      "sourceUrl": "https://github.com/kontent-ai/model-generator-js",
+      "evidence": "README「It supports the generation of five distinct model types」，下面有对应表格",
+      "confidence": 0.9
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/kontent-ai/model-generator-js",
+      "evidence": "README 卡片行与 About 都标了 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "v10.1.1（94 个 tag，668 个 commit）",
+      "sourceUrl": "https://github.com/kontent-ai/model-generator-js",
+      "evidence": "文件列表上方的 668 Commits 与右侧 Releases 11 / v10.1.1",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-kontent-ai-model-generator-js.md",
+  "registryUrl": "/r/github-com-kontent-ai-model-generator-js.json"
+}

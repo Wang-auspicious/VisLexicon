@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "457a5614afcbfece620b82b36e5d222a24b509af18f13ff45a76e96c8cf7ba85",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "capacity-so",
+  "entityId": "entity-capacity-so",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://capacity.so",
+    "finalUrl": "https://capacity.so/",
+    "checkedAt": "2026-09-15T09:45:35.818Z"
+  },
+  "editorial": {
+    "name": "Capacity",
+    "descriptionZh": "用大白话描述想法，Capacity 先反问几个问题再动手，生成的应用带账号、登录与支付，能挂到自己的域名上。",
+    "takeawayZh": "描述想法，生成带登录和支付的应用并挂上自有域名",
+    "noteZh": "首屏写 Introducing Capacity 3.0 与 Turn your idea into a real app. No code. No developers. No getting stuck.，右侧提示 Building on a Mac? Get the desktop app。我停下来看的是 It asks before it builds 那一段，它把「先问清用途、给谁用、要什么手感」当成和一次性生成工具的区别；同屏还有案例条 GlydeXP、RevivalBio、AI Enthusiasts，以及 A real app, not a demo 讲账号、登录、存档、支付都由用户自己持有。需要如实说明：这次截到的首屏是一帧全黑画面，深色视频背景未绘制出来，以上内容取自同一次渲染的正文。",
+    "recommendation": null,
+    "pricing": "First app free; paid plans on the pricing page",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户来这儿拿到的是可上线运行的应用而不是原型或设计稿：正文写 Your app can have member accounts, logins, saved information, payments，并承诺 Go live the same day。",
+        "evidenceUrl": "https://capacity.so/"
+      },
+      {
+        "statement": "归 site-app-builders 而非原型工具，依据是站内 /ai-mobile-app-builder、/mvp-builder、/custom-web-application-development 这些入口卖的都是直接交付线上应用。",
+        "evidenceUrl": "https://capacity.so/ai-mobile-app-builder"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:45:35.818Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas",
+      "mobile"
+    ],
+    "deliverables": [
+      "full-page"
+    ],
+    "actions": [
+      "generate",
+      "preview",
+      "publish"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation",
+      "build",
+      "publish"
+    ],
+    "audiences": [],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://capacity.so",
+      "finalUrl": "https://capacity.so/",
+      "title": "Capacity - Turn your idea into a real app. No code needed.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/capacity-so/identity.jpg",
+        "sha256": "a4e7cda36345464f35b03042dd8642ff75aacd084d0e8aca73c11d99d9df3759",
+        "width": 1280,
+        "height": 900,
+        "bytes": 7598,
+        "alt": "Capacity 首屏：Turn your idea into a real app."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroPromise",
+      "value": "Turn your idea into a real app. No code. No developers. No getting stuck.",
+      "sourceUrl": "https://capacity.so/",
+      "evidence": "首屏 h1 与副标题，live.heads 与 live.title 同文",
+      "confidence": 1
+    },
+    {
+      "field": "productionFeatures",
+      "value": "生成的应用支持会员账号、登录、数据保存与支付，正文称 a real app, not a demo",
+      "sourceUrl": "https://capacity.so/",
+      "evidence": "A real app, not a demo 小节正文，live.bodyText 可见",
+      "confidence": 1
+    },
+    {
+      "field": "desktopApp",
+      "value": "首屏标 Building on a Mac? Get the desktop app — no credit card required，对应 /desktop 页",
+      "sourceUrl": "https://capacity.so/desktop",
+      "evidence": "首屏说明文案，live.bodyText 与 live.internalPaths 的 /desktop 一致",
+      "confidence": 0.9
+    },
+    {
+      "field": "customDomain",
+      "value": "发布后可用分享链接上线，也可在几分钟内接上自己的域名",
+      "sourceUrl": "https://capacity.so/",
+      "evidence": "Go live the same day 小节，live.bodyText 可见",
+      "confidence": 1
+    },
+    {
+      "field": "firstAppFree",
+      "value": "Your first app is free.",
+      "sourceUrl": "https://capacity.so/",
+      "evidence": "页尾 Start building 区块的第一句，live.bodyText 可见",
+      "confidence": 1
+    },
+    {
+      "field": "screenshotNote",
+      "value": "本次抓到的首屏截图是全黑一帧，深色背景未渲染出内容，正文证据来自同次页面渲染",
+      "sourceUrl": "https://capacity.so/",
+      "evidence": "frontend/public/shots/capacity-so/identity.jpg 画面为纯黑",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null",
+      "存在付费层：First app free; paid plans on the pricing page。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/capacity-so",
+    "designMdUrl": "https://vislexicon.com/site/capacity-so.md",
+    "checkedAt": "2026-09-15T09:45:35.818Z",
+    "license": "proprietary"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f2c01dd233f1fc633018acd408246ba8a9db58a094da2c163d2db87e34fd8089",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "plexui-com",
+  "entityId": "entity-plexui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://plexui.com",
+    "finalUrl": "https://plexui.com/",
+    "checkedAt": "2026-09-15T11:48:25.239Z"
+  },
+  "editorial": {
+    "name": "Plex UI",
+    "descriptionZh": "Plex UI 是一套 React 设计系统，站点自称 47 个组件、3xs 到 3xl 的九级尺寸、三层 design token 和 6600+ 图标，并且把 MCP Server、Skills、Shadcn Registry 单列进文档，专门服务 Claude、Cursor、Codex 这类 AI 编辑器。",
+    "takeawayZh": "把 MCP Server 装进 Cursor 让 AI 认组件",
+    "noteZh": "顶栏是 Plex UI 标配 Components、Icons、Docs、Blog 四项，右角 GitHub 与明暗切换。首屏小字 AI-NATIVE DESIGN SYSTEM，主标题 The design system that works in Figma and in your AI editor，副标题点名 registry that Claude, Cursor, and Codex respect，下面一行排开 Claude、CURSOR、Codex、OPENCODE 四个 logo，再往下全是组件实物：左边一张登录卡写 Log in to your account，中间是 Select date range、Subscription & billing、Payment Method 表单，右边是 Home / Settings / Notifications 分栏与 Personal / Team / Business 套餐卡。文档侧栏里 Design Tokens、Colors、Typography、Concepts、Hooks、Transitions 之后才是 AI Setup、MCP Server、Skills、Shadcn Registry，图标页又分成 Plex、Lucide、Tabler、Hugeicons 四家。",
+    "recommendation": null,
+    "pricing": "Free（站点描述自称 Free MIT React library；页面上另有 $25–$75 与 Pro $19/month 区块，看着像组件演示）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点交付的是带 token 体系、图标库、组件目录与文档的完整设计系统（47 components、9-size scale、three-layer design tokens、6,600+ icons），用户来这儿取整套系统的组件与规范，归设计系统与完整组件套件。",
+        "evidenceUrl": "https://plexui.com/"
+      },
+      {
+        "statement": "页面自称 Free MIT React library with pixel-perfect Figma parity，并单列 MCP Server 与 Skills 文档、README 式的 Shadcn Registry，故技术上记 react 与 typescript，平台记 web / figma / mcp。",
+        "evidenceUrl": "https://plexui.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:25.239Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "icon",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "search"
+    ],
+    "media": [
+      "icon",
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma",
+      "mcp"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://plexui.com",
+      "finalUrl": "https://plexui.com/",
+      "title": "Plex UI — React Design System for AI Code Editors",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/plexui-com/identity.jpg",
+        "sha256": "9235553071bbf0b5eba5bdeca97140e49d2cc54bdb5b13f39a34de61867c73e9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 100530,
+        "alt": "Plex UI 首屏：The design system that works in Figma and in your AI editor"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "scale",
+      "value": "47 个组件、3xs–3xl 九级尺寸、三层 design token、6,600+ 图标",
+      "sourceUrl": "https://plexui.com/",
+      "evidence": "站点描述 Production-grade React design system with 47 components, 9-size scale (3xs–3xl), three-layer design tokens, and 6,600+ icons",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Free MIT React library",
+      "sourceUrl": "https://plexui.com/",
+      "evidence": "站点描述末句 Free MIT React library with pixel-perfect Figma parity",
+      "confidence": 1
+    },
+    {
+      "field": "aiEditorTargets",
+      "value": "面向 Claude、Cursor、Codex，文档里有 MCP Server 与 Skills 两节，另有 Shadcn Registry",
+      "sourceUrl": "https://plexui.com/docs/mcp",
+      "evidence": "首屏 logo 行与文档侧栏 AI Setup / MCP Server / Skills / Shadcn Registry 四项",
+      "confidence": 1
+    },
+    {
+      "field": "iconSources",
+      "value": "图标分 Plex、Lucide、Tabler、Hugeicons 四组",
+      "sourceUrl": "https://plexui.com/icons",
+      "evidence": "顶栏 Icons 下的子项与 /icons/plex、/icons/lucide、/icons/tabler、/icons/hugeicons 路径",
+      "confidence": 1
+    },
+    {
+      "field": "heroClaim",
+      "value": "The design system that works in Figma and in your AI editor",
+      "sourceUrl": "https://plexui.com/",
+      "evidence": "首屏主标题",
+      "confidence": 1
+    },
+    {
+      "field": "pricingBlocksOnPage",
+      "value": "首屏下方并排铺着登录、日期区间、订阅计费 FAQ、支付方式等表单卡，看起来是组件演示而非真站点定价",
+      "sourceUrl": "https://plexui.com/",
+      "evidence": "首屏下半部分卡片区，含 Price range $25 – $75、Pro $19/ month、What subscription plans do you offer? 等文案",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/plexui-com",
+    "designMdUrl": "https://vislexicon.com/site/plexui-com.md",
+    "checkedAt": "2026-09-15T11:48:25.239Z",
+    "license": "MIT"
+  }
+}

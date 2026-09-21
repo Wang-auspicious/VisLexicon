@@ -1,0 +1,177 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "59f4e46bd5a098fa2b5340e3fd8fd7469bfb9a746f6b152a54b5d7d41fd98e27",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-pplethai-pple-design-system",
+  "entityId": "entity-github-com-pplethai-pple-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/PPLEThai/pple-design-system",
+    "finalUrl": "https://github.com/PPLEThai/pple-design-system",
+    "checkedAt": "2026-09-15T11:48:50.227Z"
+  },
+  "editorial": {
+    "name": "PPLEThai/pple-design-system",
+    "descriptionZh": "泰国人民党的 React 设计系统单体仓库，基于 shadcn/ui 搭，对外发布 @pplethai/components 这个包，另带一个 Vite 文档站。给想参考 shadcn 系设计系统怎么拆包和发版的前端。",
+    "takeawayZh": "照它的 pnpm workspace 拆法，发自己的组件包",
+    "noteZh": "README 第一行就写 Documentation: https://components.pplethai.org/，下面交代仓库是 @pplethai/components 的 monorepo。目录上 packages/components 出包、apps/docs 是要跑在 5173 的 Vite 文档站，Consumer setup 里 import 的是 Button、Card、Form、FormTextField，还要单独引 styles.css，peer 依赖点名 react-hook-form 和 zod。右栏 Releases 停在 @pplethai/components@1.4.3（Latest），Contributors 三个人，其中一个署名 cursoragent。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是成套的 React 组件包 @pplethai/components 加配套文档站，不是单点组件也不是设计源文件，所以归到设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/PPLEThai/pple-design-system"
+      },
+      {
+        "statement": "README 的 Packages 表格列出 @pplethai/components 与 docs 两项，并写明 Monorepo for @pplethai/components — the People's Party React design system built on shadcn/ui。",
+        "evidenceUrl": "https://github.com/PPLEThai/pple-design-system"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:50.227Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "radix-ui",
+      "shadcn-ui",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/PPLEThai/pple-design-system",
+      "finalUrl": "https://github.com/PPLEThai/pple-design-system",
+      "title": "GitHub - PPLEThai/pple-design-system · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-pplethai-pple-design-system/identity.jpg",
+        "sha256": "57a345e8f516bfa357af2c1d6c7e1663a011fd056425fe03dec33f5ca4df3067",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135536,
+        "alt": "PPLEThai/pple-design-system 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "packages",
+      "value": "@pplethai/components（对外发布的组件包）与 docs（Vite 文档站）",
+      "sourceUrl": "https://github.com/PPLEThai/pple-design-system",
+      "evidence": "README 的 Packages 表格，以及 packages/components、apps/docs 两个目录",
+      "confidence": 1
+    },
+    {
+      "field": "documentation",
+      "value": "https://components.pplethai.org/",
+      "sourceUrl": "https://github.com/PPLEThai/pple-design-system",
+      "evidence": "README 首行的 Documentation 链接",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "React + shadcn/ui + Radix UI，表单侧配 react-hook-form 与 zod",
+      "sourceUrl": "https://github.com/PPLEThai/pple-design-system",
+      "evidence": "README 开头段与 Consumer setup 代码块，另见提交说明 Update React and Radix UI components for improved dropdown behavior",
+      "confidence": 1
+    },
+    {
+      "field": "scripts",
+      "value": "pnpm install / pnpm dev（文档站 5173）/ pnpm build / pnpm test（vitest 跑在 packages/components）",
+      "sourceUrl": "https://github.com/PPLEThai/pple-design-system",
+      "evidence": "README 的 Development 一节",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "含 DatePicker、MonthPicker、TimePicker、DateTimePicker、Dialog 等，近期提交把 DialogContent 限制在视口内以支持高弹窗滚动",
+      "sourceUrl": "https://github.com/PPLEThai/pple-design-system",
+      "evidence": "仓库最新提交列表与 README 之外的文件变更说明",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "@pplethai/components@1.4.3（Latest），共 12 个 release",
+      "sourceUrl": "https://github.com/PPLEThai/pple-design-system",
+      "evidence": "仓库右栏 Releases 区",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/PPLEThai/pple-design-system",
+      "evidence": "公开仓库加 npm 公开包，无付费入口",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-pplethai-pple-design-system",
+    "designMdUrl": "https://vislexicon.com/site/github-com-pplethai-pple-design-system.md",
+    "checkedAt": "2026-09-15T11:48:50.227Z",
+    "license": "unknown"
+  }
+}

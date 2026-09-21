@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "061be35417b1e4ffd704b17aeb3739f934608c86ad8f630ea3420c2f19bb449c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "glaze-app",
+  "entityId": "entity-glaze-app",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://glaze.app",
+    "finalUrl": "https://www.glaze.app/",
+    "checkedAt": "2026-09-15T09:56:41.168Z"
+  },
+  "editorial": {
+    "name": "Glaze",
+    "descriptionZh": "Raycast 做的 Mac 桌面应用生成器：用聊天描述你要什么，本机直接跑起一个能读写文件、接系统能力的 app，做完可以分享给团队或放进 Glaze Store。",
+    "takeawayZh": "聊几句生成一个能读本机文件和系统的 Mac 应用。",
+    "noteZh": "深色首屏，logo 旁写着 Glaze by Raycast，主标题「Desktop apps, reimagined by you.」，副标题 Create any app in minutes by chatting with AI.。按钮是 Download for Mac 和 Reinvent your wheel，下面一行小字 macOS Tahoe and Apple Silicon required。再往下三栏写 Local-first / OS-integrated / Opinionated，正文举了别人做的 Mia Calendar、Reading Corner、Alto 这几个小应用。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是能在本机安装运行的桌面应用，动作是描述生成、下载安装、发布到 Store，属应用构建器；FAQ 里也把自己与 Lovable、Replit、v0 对比，强调差异是 desktop 而不是 browser。",
+        "evidenceUrl": "https://www.glaze.app/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:56:41.168Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "download",
+      "generate",
+      "install",
+      "publish"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "content-creator",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "marketplace"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://glaze.app",
+      "finalUrl": "https://www.glaze.app/",
+      "title": "Glaze — Build and Share Mac Apps with AI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/glaze-app/identity.jpg",
+        "sha256": "29f9bb486b07a8e814f8d001e4870e28d85a991059c39cebcde76b5aee3aed26",
+        "width": 1280,
+        "height": 900,
+        "bytes": 49446,
+        "alt": "Glaze 首屏：Desktop apps, reimagined by you."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "requirements",
+      "value": "需要 macOS Tahoe 与 Apple Silicon",
+      "sourceUrl": "https://www.glaze.app/",
+      "evidence": "首屏下载按钮下方的小字，FAQ 里也重申了一次",
+      "confidence": 1
+    },
+    {
+      "field": "storeApps",
+      "value": "Mia Calendar、Flor、Reading Corner、Alto",
+      "sourceUrl": "https://www.glaze.app/store",
+      "evidence": "Build tools for everyday life 区块里的示例卡片",
+      "confidence": 0.9
+    },
+    {
+      "field": "agentCredit",
+      "value": "可用 Claude 订阅或 Glaze credits 来构建，源码也能用任意 agent 打开",
+      "sourceUrl": "https://www.glaze.app/",
+      "evidence": "Bring your own agent 小节",
+      "confidence": 1
+    },
+    {
+      "field": "comparison",
+      "value": "FAQ 中与 Lovable、Replit、v0 明确作对比",
+      "sourceUrl": "https://www.glaze.app/",
+      "evidence": "FAQ 区块 How is Glaze different from Lovable, Replit, or v0? 一条",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/glaze-app",
+    "designMdUrl": "https://vislexicon.com/site/glaze-app.md",
+    "checkedAt": "2026-09-15T09:56:41.168Z",
+    "license": "unknown"
+  }
+}

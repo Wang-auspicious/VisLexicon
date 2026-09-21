@@ -1,0 +1,168 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "cb8f7d8833d9d37d96c642acbef8139fae32a8af898fb954b651810f26438dfd",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "loading-io",
+  "entityId": "entity-loading-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://loading.io",
+    "finalUrl": "https://loading.io/",
+    "checkedAt": "2026-09-15T12:00:32.697Z"
+  },
+  "editorial": {
+    "name": "Loading.io",
+    "descriptionZh": "在线生成加载动画的编辑器，调颜色、条数、圆角、速度后导出 GIF / SVG / APNG / CSS / Lottie / MP4，另有图标库、文字动画和 SVG 编辑器。给要给项目配加载动效的人。",
+    "takeawayZh": "拧几个滑块，把加载动画导成 GIF、SVG 或 Lottie",
+    "noteZh": "首屏左边是一块 Carbon 广告位，中间 Animation Made Easy. 配一颗 Get Start，副标题把格式列全：in GIF / SVG / APNG / CSS / LOTTIE / MP4 & More；右边竖排四条入口 Icon Library、Your Image、Your Words、SVG Editor。再往下就是编辑器的实时预览——粉色菊花加 Color #fe718d、Bar Count 12、Radius 20、Speed 1、Size 200 这些滑块，底部 Download As 那行能选 GIF / SVG / PNG，标着 Free License 和 $1.99。导航上挂着 SVG Editor、Upload、Icon、Text、Background、Color、Libraries，右上角是 Pricing / Login / Sign Up。",
+    "recommendation": null,
+    "pricing": "Freemium（免费下载与 $1.99 档并存）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是生成出来的动效文件而不是现成素材包：首屏就是一个带滑块与下载按钮的编辑器，导航含 SVG Editor、Upload，动作是先调参再导出。",
+        "evidenceUrl": "https://loading.io/"
+      },
+      {
+        "statement": "归 video-motion-audio-creation 而非图像创作，是因为主产物是加载动画（GIF / APNG / CSS / Lottie / MP4 / SVG 多格式导出）；拿不准的一点：它同时兼有静态图标库，若按素材目录归类也说得通。",
+        "evidenceUrl": "https://loading.io/editor"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:32.697Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "video",
+      "image",
+      "icon"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "download",
+      "browse"
+    ],
+    "media": [
+      "motion",
+      "video",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svg",
+      "css",
+      "lottie"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://loading.io",
+      "finalUrl": "https://loading.io/",
+      "title": "loading.io - Your SVG + GIF + PNG Ajax Loading Icons and Animation Generator",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/loading-io/identity.jpg",
+        "sha256": "4258430cc5b9846c4169fd575c771e0b0085dc6aae50592938100cff67215534",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128069,
+        "alt": "Loading.io 首屏：Animation Made Easy."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "exportFormats",
+      "value": "GIF、SVG、APNG、CSS、Lottie、MP4",
+      "sourceUrl": "https://loading.io/",
+      "evidence": "首屏副标题 in GIF / SVG / APNG / CSS / LOTTIE / MP4 & More !，编辑器 Download As 行另有 GIF / SVG / PNG / MORE",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "编辑器内免费下载（Free License），另一档标 $1.99，另有 Pricing 页与登录注册入口",
+      "sourceUrl": "https://loading.io/",
+      "evidence": "编辑器 Download As 区域同时出现 Free License 与 $1.99，页面右上角有 Pricing / Login / Sign Up",
+      "confidence": 0.9
+    },
+    {
+      "field": "license",
+      "value": "loading.io BY license（静态图标按此许可发布）",
+      "sourceUrl": "https://loading.io/license",
+      "evidence": "首页正文 all icons are also available in static form released under loading.io BY license，页脚导航有 License",
+      "confidence": 0.9
+    },
+    {
+      "field": "editorControls",
+      "value": "Color、Multi Color、Corner、Bar Width / Bar Height / Bar Count、Radius、Palette、Background、Transparent、Speed、Size、Px Ratio、Frame Rate",
+      "sourceUrl": "https://loading.io/editor",
+      "evidence": "首屏编辑器面板上的控件标签，截图与正文一致",
+      "confidence": 1
+    },
+    {
+      "field": "entryPoints",
+      "value": "Icon Library、Your Image、Your Words、SVG Editor 四条",
+      "sourceUrl": "https://loading.io/",
+      "evidence": "首屏右侧竖排的四条入口及其一句话说明",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。loading.io BY license（静态图标按此许可发布）：首页正文 all icons are also available in static form released under loading.io BY license，页脚导航有 License",
+      "存在付费层：Freemium（免费下载与 $1.99 档并存）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/loading-io",
+    "designMdUrl": "https://vislexicon.com/site/loading-io.md",
+    "checkedAt": "2026-09-15T12:00:32.697Z",
+    "license": "custom"
+  }
+}

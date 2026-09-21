@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "36d33fe42357b494d6ef219057d16de2c2349247cb54d6d50740a43ed3d94d8d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "notiflix-github-io",
+  "entityId": "entity-notiflix-github-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://notiflix.github.io",
+    "finalUrl": "https://notiflix.github.io/",
+    "checkedAt": "2026-09-15T12:02:27.452Z"
+  },
+  "editorial": {
+    "name": "Notiflix",
+    "descriptionZh": "不依赖任何框架的纯 JavaScript 通知库，分成 Notify、Report、Confirm、Loading、Block 五个模块，覆盖通知、带按钮的弹窗、确认框、加载指示和元素遮罩。首页直接给 zip 包和 npm、yarn 两条安装命令。",
+    "takeawayZh": "纯 JS 弹通知、确认框和 Loading 遮罩",
+    "noteZh": "顶栏右侧七个入口依次是 Notify、Report、Confirm、Loading、Block、Download、Documentation，每个前面带一个小图标。首屏左边是一张插画：一个人坐在桌前对着显示器，周围飘着青色和黄色的对话气泡，还有一扇绿色消息窗和一个灰色对话框。右边欢迎语写成 welcome to 加一枚绿色药丸里的 Notiflix，下面两段讲它是 dependency-free、secure、lightweight 的纯 JavaScript 库、offering client-side non-blocking notifications, popup boxes, loading indicators, and more。再往下是一个深色大圆角按钮 Notiflix-3.2.8.zip，按钮下压着一行 Loading...。底屏两张卡：Browser Compatibility 列出 Chrome、Firefox、Safari、Edge、Opera、Edge Legacy、IE 10+ 并注明 SVG animations are not supported；Get it on 给了 yarn add notiflix、npm i notiflix 两个按钮，加一张 GitHub 卡写着 690 stars 与 58 forks。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是五个可调用的界面反馈模块（通知、弹窗、确认框、加载指示、元素遮罩），用户拿走的是组件代码而不是整页模板或设计系统，故归通用界面组件库。",
+        "evidenceUrl": "https://notiflix.github.io/"
+      },
+      {
+        "statement": "首页 Notiflix Modules 一段逐条给出 Notify、Report、Confirm、Loading、Block 五个模块的用途，Download 与 Get it on 提供 zip 与两条包管理器命令。",
+        "evidenceUrl": "https://notiflix.github.io/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:27.452Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "download",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "svg"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://notiflix.github.io",
+      "finalUrl": "https://notiflix.github.io/",
+      "title": "Notiflix | a pure JavaScript library for client-side non-blocking notifications.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/notiflix-github-io/identity.jpg",
+        "sha256": "e03dc0303eea254d265a26660b3aa350ff8f3c303ef958551b2fef8e925f30b1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 83582,
+        "alt": "Notiflix 首屏：welcome to Notiflix"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "modules",
+      "value": "Notify（4 类通知）、Report（带标题、描述与回调按钮）、Confirm（Show / Ask / Prompt 三种）、Loading（6 类动画 SVG 图标加 Custom）、Block（遮罩元素防止交互），共五个",
+      "sourceUrl": "https://notiflix.github.io/",
+      "evidence": "首页 Notiflix Modules 一段逐条说明，五个模块逐个数过",
+      "confidence": 1
+    },
+    {
+      "field": "download",
+      "value": "Notiflix-3.2.8.zip，另可用 yarn add notiflix 或 npm i notiflix",
+      "sourceUrl": "https://notiflix.github.io/",
+      "evidence": "首屏下载按钮上的文件名与 Get it on 卡片里的两条命令",
+      "confidence": 1
+    },
+    {
+      "field": "compatibility",
+      "value": "Chrome、Firefox、Safari、Edge、Opera、Edge Legacy、IE 10+，标注 SVG animations 在 IE 系不支持",
+      "sourceUrl": "https://notiflix.github.io/",
+      "evidence": "Browser Compatibility 卡片的图标行与下方注释",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "GitHub 690 stars、58 forks",
+      "sourceUrl": "https://notiflix.github.io/",
+      "evidence": "Get it on 卡片右侧 GitHub 项上的两个计数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/notiflix-github-io",
+    "designMdUrl": "https://vislexicon.com/site/notiflix-github-io.md",
+    "checkedAt": "2026-09-15T12:02:27.452Z",
+    "license": "unknown"
+  }
+}

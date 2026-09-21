@@ -1,0 +1,176 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "10562fe8c553bcfe8f4021782df80a4903245d3997568675fc9a58020a981276",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "axiom-ui-joinclass-jp",
+  "entityId": "entity-axiom-ui-joinclass-jp",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "axiom-ui.joinclass.jp",
+  "official": {
+    "inputUrl": "https://axiom-ui.joinclass.jp",
+    "finalUrl": "https://axiom-ui.joinclass.jp/",
+    "checkedAt": "2026-09-15T11:43:56.831Z"
+  },
+  "editorial": {
+    "name": "Axiom UI",
+    "descriptionZh": "一套主张为 LLM 而生的 React 组件库：12 个组件、一个 CLI 和一个 MCP server，用 npx 命令把组件源码拷进你自己的仓库。文档站分英文与日文两版，MIT 许可。",
+    "takeawayZh": "一条 npx 命令把组件源码拷进自己仓库",
+    "noteZh": "首屏大标题是 UI components designed for the LLM as the primary consumer，副标直接拿 shadcn/ui 作比，下面嵌一条可复制的 npx @joinclass/axiom-ui add button。四张卡片分别是 Copy & own、1 component = 1 file、MCP-first distribution 与 Machine-readable manifest，正文说每个组件按 { intent, props, states, a11y, examples } 组织成结构化数据；页尾列了 The five-step algorithm 的 01 Question every requirement 到 05 Automate。导航只有 Docs、Components 和 EN / JA 切换，署名 MIT License — JOINCLASS/axiom-ui。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "网站交付的是 12 个可复制的 React 组件源码，配 Docs 与 Components 两个栏目，用户拿走的是组件代码，归通用界面组件库。",
+        "evidenceUrl": "https://axiom-ui.joinclass.jp/"
+      },
+      {
+        "statement": "MCP server 与 CLI 是分发方式而非类别，故记在 platforms 与 actions 上；候选池的 React UI 库归法与页面自述一致。",
+        "evidenceUrl": "https://axiom-ui.joinclass.jp/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:43:56.831Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "agent",
+      "ai"
+    ],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "cli",
+      "mcp",
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build",
+      "ideation"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://axiom-ui.joinclass.jp",
+      "finalUrl": "https://axiom-ui.joinclass.jp/",
+      "title": "Axiom UI — AI-first React components",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/axiom-ui-joinclass-jp/identity.jpg",
+        "sha256": "c608a3c46e7cba16b0fc55b36139ee324cac518e52e40853b1e62cb64ae938f0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 89477,
+        "alt": "Axiom UI 首屏：UI components designed for the LLM as the primary consumer"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://axiom-ui.joinclass.jp",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/axiom-ui-joinclass-jp/identity.jpg",
+          "alt": "Axiom UI 首屏：UI components designed for the LLM as the primary consumer",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "version",
+      "value": "v0.2.2 on npm",
+      "sourceUrl": "https://axiom-ui.joinclass.jp/",
+      "evidence": "首屏标题上方的胶囊标签 v0.2.2 on npm，正文顶部同样写着 v0.2.2 on npm",
+      "confidence": 1
+    },
+    {
+      "field": "installCommand",
+      "value": "npx @joinclass/axiom-ui add button",
+      "sourceUrl": "https://axiom-ui.joinclass.jp/",
+      "evidence": "首屏标题下方可复制的命令块",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://axiom-ui.joinclass.jp/",
+      "evidence": "页尾一行 MIT License — JOINCLASS/axiom-ui",
+      "confidence": 1
+    },
+    {
+      "field": "delivery",
+      "value": "12 个 copy-and-own React 组件 + CLI + MCP server",
+      "sourceUrl": "https://axiom-ui.joinclass.jp/",
+      "evidence": "首屏副标 12 copy-and-own React components, a CLI, and an MCP server.，卡片 MCP-first distribution 说明 Claude Code、Cursor 等 agent 直接取版本准确的规格",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/axiom-ui-joinclass-jp.md",
+  "registryUrl": "/r/axiom-ui-joinclass-jp.json"
+}

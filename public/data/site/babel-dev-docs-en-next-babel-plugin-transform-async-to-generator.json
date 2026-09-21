@@ -1,0 +1,161 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f4d7b3c2b7d8c0ea3a4d2f250c8ef0ead6217b559f690637358d1c0b004c9696",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "babel-dev-docs-en-next-babel-plugin-transform-async-to-generator",
+  "entityId": "entity-babel-dev-docs-en-next-babel-plugin-transform-async-to-generator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "babel.dev",
+  "official": {
+    "inputUrl": "https://babel.dev/docs/en/next/babel-plugin-transform-async-to-generator",
+    "finalUrl": "https://babel.dev/docs/babel-plugin-transform-async-to-generator",
+    "checkedAt": "2026-09-15T12:16:16.835Z"
+  },
+  "editorial": {
+    "name": "@babel/plugin-transform-async-to-generator",
+    "descriptionZh": "Babel 插件文档页：把 async/await 改写成 generator 加状态机的等价写法，ES2017 起包含在 @babel/preset-env 里。",
+    "takeawayZh": "按 In / Out 示例把 async 函数换成 generator 写法",
+    "noteZh": "同样从左侧 Presets → @babel/preset-env → ES2017 树进来，选中项是 async-to-generator。INFO 块写 This plugin is included in @babel/preset-env, in ES2017，下面紧跟一句 In Babel 7, transform-async-to-module-method was merged into this plugin。Example 段落给 async function foo() 的 In / Out 两段代码，右栏目录单列出 Usage 的 With a configuration file (Recommended)、Via CLI、Via Node API，以及 Caveats 下的 Bluebird non-promise runtime error。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "reference-standards",
+    "subcategory": "standards-guidelines-checklists",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "同属 Babel 文档站的插件参考页，交付的是这条转换规则做了什么、怎么配置，归 reference-standards/standards-guidelines-checklists。",
+        "evidenceUrl": "https://babel.dev/docs/babel-plugin-transform-async-to-generator"
+      },
+      {
+        "statement": "拿不准的地方：和同批另外两个 Babel 插件页一样，可能被判成教学类内容；但页面主体是 API/配置参考，故选 reference-standards。",
+        "evidenceUrl": "https://babel.dev/docs/babel-plugin-transform-async-to-generator"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:16:16.835Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://babel.dev/docs/en/next/babel-plugin-transform-async-to-generator",
+      "finalUrl": "https://babel.dev/docs/babel-plugin-transform-async-to-generator",
+      "title": "@babel/plugin-transform-async-to-generator · Babel",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/babel-dev-docs-en-next-babel-plugin-transform-async-to-generator/identity.jpg",
+        "sha256": "bb8925913398bf32fb37b8d33cecae9736cc8e3fd5d0c9dcdf7b078aaae84a81",
+        "width": 1280,
+        "height": 900,
+        "bytes": 97633,
+        "alt": "@babel/plugin-transform-async-to-generator 首屏：@babel/plugin-transform-async-to-generator"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://babel.dev/docs/en/next/babel-plugin-transform-async-to-generator",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/babel-dev-docs-en-next-babel-plugin-transform-async-to-generator/identity.jpg",
+          "alt": "@babel/plugin-transform-async-to-generator 首屏：@babel/plugin-transform-async-to-generator",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "presetMembership",
+      "value": "包含在 @babel/preset-env 的 ES2017 里",
+      "sourceUrl": "https://babel.dev/docs/babel-plugin-transform-async-to-generator",
+      "evidence": "正文 INFO 提示块原文 This plugin is included in @babel/preset-env, in ES2017",
+      "confidence": 1
+    },
+    {
+      "field": "caveat",
+      "value": "Bluebird non-promise runtime error",
+      "sourceUrl": "https://babel.dev/docs/babel-plugin-transform-async-to-generator",
+      "evidence": "右侧目录条里 Caveats 分组下唯一的条目名，正文 Out with options 段给出 module: \"bluebird\" / method: \"coroutine\" 的配置",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "babel.config.json 里写插件名，或 babel --plugins @babel/plugin-transform-async-to-generator script.js",
+      "sourceUrl": "https://babel.dev/docs/babel-plugin-transform-async-to-generator",
+      "evidence": "Usage 段的 With a configuration file / Via CLI / Via Node API 三小节给出的写法",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/babel-dev-docs-en-next-babel-plugin-transform-async-to-generator.md",
+  "registryUrl": "/r/babel-dev-docs-en-next-babel-plugin-transform-async-to-generator.json"
+}

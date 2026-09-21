@@ -1,0 +1,172 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "eafc4bae1a2819c97464f972bd837b6ea3df45f9fc5676ac6b6f2e77ebc9caf8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "protocol-mozilla-org",
+  "entityId": "entity-protocol-mozilla-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "protocol.mozilla.org",
+  "official": {
+    "inputUrl": "https://protocol.mozilla.org",
+    "finalUrl": "https://protocol.mozilla.org/",
+    "checkedAt": "2026-09-15T12:01:45.258Z"
+  },
+  "editorial": {
+    "name": "Mozilla Protocol",
+    "descriptionZh": "Mozilla 与 Firefox 官网共用的设计系统文档，给出可复用的编码组件、设计 token、排版与配色规范，并画清内容与无障碍的高层准则。目前主要给 Mozilla 营销网站团队当 www.mozilla.org 的前端。",
+    "takeawayZh": "照 Protocol 的组件与 token 搭官网",
+    "noteZh": "左侧栏把内容切成 DOCUMENTATION（Fundamentals / Usage / Contributing）和 COMPONENTS 两大段，组件从 Basic Elements、Article、Billboard、Branding、Breadcrumb、Button 一路排到 Forms 下的 Language Switcher、Layout 下的 Menu List 与 Modal、Navigation 下的 Newsletter 和 Sidebar Menu。主区第一屏是 Mozilla Protocol 大标题配一个 npm v22.0.0 徽标，正文直说 Protocol is a design system for Mozilla and Firefox websites.，并说明现在主要由 Mozilla Marketing Websites team 拿来当 www.mozilla.org 的前端；页头右上角挂着版本号 22.0.0 和 GitHub 入口，正文里还留了 Slack 与 Matrix 上 #protocol-design-system 频道以及提 issue 的路径。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "拿走的是成体系的编码组件加设计 token，README 式开头就写明 provides reusable coded components, and outlines high level guidelines for content and accessibility，属于完整套件而非单个组件库。",
+        "evidenceUrl": "https://protocol.mozilla.org/"
+      },
+      {
+        "statement": "它同时覆盖组件与规范两层，组件清单从 Basic Elements 到 Forms、Layout、Navigation 成组出现，所以归设计系统与完整组件套件而不是通用组件库。",
+        "evidenceUrl": "https://protocol.mozilla.org/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:01:45.258Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "marketing"
+    ],
+    "deliverables": [
+      "component",
+      "standard",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "install"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer",
+      "brand-team"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://protocol.mozilla.org",
+      "finalUrl": "https://protocol.mozilla.org/",
+      "title": "Mozilla Protocol",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/protocol-mozilla-org/identity.jpg",
+        "sha256": "973870f267356096c70eaf7b4bba2f2e1d82f686a919c52d433dabfd32984e53",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116151,
+        "alt": "Mozilla Protocol 首屏：Mozilla Protocol"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://protocol.mozilla.org",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/protocol-mozilla-org/identity.jpg",
+          "alt": "Mozilla Protocol 首屏：Mozilla Protocol",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "version",
+      "value": "22.0.0",
+      "sourceUrl": "https://protocol.mozilla.org/",
+      "evidence": "页头右上角的 22.0.0，以及正文标题下方的 npm v22.0.0 徽标",
+      "confidence": 1
+    },
+    {
+      "field": "scope",
+      "value": "主要服务 Mozilla Marketing Websites 团队，用作 www.mozilla.org 的前端",
+      "sourceUrl": "https://protocol.mozilla.org/",
+      "evidence": "首页正文：Currently it's used primarily by the Mozilla Marketing Websites team as the front-end for www.mozilla.org.",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "组件按 Basic Elements / Branding / Forms / Layout / Navigation 等分组，含 Button、Card、Modal、Data Table、Language Switcher 等",
+      "sourceUrl": "https://protocol.mozilla.org/",
+      "evidence": "左侧栏 COMPONENTS 分组列表与站内路径 /components/detail/button--primary、/components/detail/modal 等",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/protocol-mozilla-org.md",
+  "registryUrl": "/r/protocol-mozilla-org.json"
+}

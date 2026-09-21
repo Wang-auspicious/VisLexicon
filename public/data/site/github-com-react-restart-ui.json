@@ -1,0 +1,177 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "92d5c26ec439b3147ba907faee70203c9e6144f5401cb92b5e83e11a2317e666",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-react-restart-ui",
+  "entityId": "entity-github-com-react-restart-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/react-restart/ui",
+    "finalUrl": "https://github.com/react-restart/ui",
+    "checkedAt": "2026-09-15T11:49:53.410Z"
+  },
+  "editorial": {
+    "name": "react-restart/ui",
+    "descriptionZh": "Restart UI——一套不给样式的 React 组件，把弹层、焦点陷阱这类状态与交互逻辑封装好，接进任意样式体系都行。文档站是 react-restart.github.io/ui，1.2M 个项目在用它。",
+    "takeawayZh": "装 @restart/ui 拿无样式组件逻辑",
+    "noteZh": "README 开头 A set of full featured, extensible, and accessible UI components, designed to integrate into any styling framework or system.，下一段强调 Restart components, are \"headless\", meaning they don't provide any styles.，并给出 Documentation → https://react-restart.github.io/ui/ 与 npm install --save @restart/ui。提交历史里有一条 feat: Implement modal tab behavior according to current APG recommend…，src 目录下则是 allow passing focus options to focus trap (#134)，能看出它跟着 APG 做键盘行为。About 侧栏却写 No description or website provided.，Topics 是 headless-ui / react / typescript，MIT license、142 stars、1,060 commits、55 位贡献者、Releases 10（最新 v1.6.9）、Used by 1.2M。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户装 @restart/ui 拿走的是无样式组件逻辑，README 明写 headless 与 they don't provide any styles，Topics 也标 headless-ui，故归无样式无障碍原语。",
+        "evidenceUrl": "https://github.com/react-restart/ui"
+      },
+      {
+        "statement": "提交记录里的 feat: Implement modal tab behavior according to current APG recommend… 与 src 的 allow passing focus options to focus trap (#134) 都是无障碍交互实现的证据。",
+        "evidenceUrl": "https://github.com/react-restart/ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:49:53.410Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "primitive",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/react-restart/ui",
+      "finalUrl": "https://github.com/react-restart/ui",
+      "title": "GitHub - react-restart/ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-react-restart-ui/identity.jpg",
+        "sha256": "894ec4e72974e44574e462942403a00cc389117652b9017819af82f1d6917f1f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127146,
+        "alt": "react-restart/ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/react-restart/ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-react-restart-ui/identity.jpg",
+          "alt": "react-restart/ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/react-restart/ui",
+      "evidence": "About 栏标 MIT license，README 文件表头同样显示 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install --save @restart/ui",
+      "sourceUrl": "https://github.com/react-restart/ui",
+      "evidence": "README Installation 一节的命令",
+      "confidence": 1
+    },
+    {
+      "field": "positioning",
+      "value": "headless 组件：只封装逻辑与状态，不带任何样式",
+      "sourceUrl": "https://github.com/react-restart/ui",
+      "evidence": "README 写道 Restart components, are \"headless\", meaning they don't provide any styles. Components encapsulate the complicated logic and and state without being prescriptive about their look and feel.",
+      "confidence": 1
+    },
+    {
+      "field": "docsUrl",
+      "value": "https://react-restart.github.io/ui/",
+      "sourceUrl": "https://github.com/react-restart/ui",
+      "evidence": "README Documentation 一节给出的链接",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "142 stars / 27 forks / 1,060 commits / 101 tags，Releases 10（最新 v1.6.9），Used by 1.2M，Contributors 55",
+      "sourceUrl": "https://github.com/react-restart/ui",
+      "evidence": "仓库头部计数与 About 栏的 Releases、Used by、Contributors 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-react-restart-ui.md",
+  "registryUrl": "/r/github-com-react-restart-ui.json"
+}

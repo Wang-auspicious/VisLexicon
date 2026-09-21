@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d21fba893a49bfbca85367891b7dafcbedbf52c261fcbfd3cf1fc04b6c01d9b1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-carbon-design-system-carbon-for-ibm-dotcom",
+  "entityId": "entity-github-com-carbon-design-system-carbon-for-ibm-dotcom",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom",
+    "finalUrl": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom",
+    "checkedAt": "2026-09-15T11:38:18.581Z"
+  },
+  "editorial": {
+    "name": "carbon-design-system/carbon-for-ibm-dotcom",
+    "descriptionZh": "Carbon for IBM.com 是 Carbon 设计系统针对 IBM.com 的扩展库，装的是 IBM.com 各段用户旅程里共用、用来统一观感的组件，拆成 web components、services、styles、utilities 四个包发布，React 侧另有一层 wrapper。给要搭 IBM.com 页面、或想参考大厂 Web Components 组织方式的团队看。",
+    "takeawayZh": "IBM.com 页面组件的 web components 包",
+    "noteZh": "About 栏一句话点题 Carbon for IBM.com is based on the Carbon Design System for IBM，外链指向 www.ibm.com/standards/carbon/，topics 是 carbon-design-system、css、html、javascript、lit、scss、web-components。README 里列了四个包：@carbon/ibmdotcom-web-components、@carbon/ibmdotcom-services、@carbon/ibmdotcom-styles、@carbon/ibmdotcom-utilities，并提示 web components 的 Storybook 在 ibm.com/standards/carbon/web-components，React 版本多一个 /react 后缀。贡献指南分成 Contributing Guide、Developer Guide 和 Web Components 包单独一份，仓库 10,304 Commits、294 stars、165 forks。",
+    "recommendation": null,
+    "pricing": "Free（Apache-2.0 开源）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是组件与配套的服务、样式、工具包，用户拿走的是能引用的组件代码，故归通用界面组件库。",
+        "evidenceUrl": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom"
+      },
+      {
+        "statement": "不确定的地方：它同时像页面区块（专为 IBM.com 页面拼装而生）与品牌化的设计系统扩展，但页面上能确认的只有一组 packages 与 web components / React wrapper 的说法，证据不足以定到 page-blocks-embeddable-controls 或 design-system-suites，因此取更宽的那个类。",
+        "evidenceUrl": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:38:18.581Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "web-components",
+      "react",
+      "javascript",
+      "css",
+      "html"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom",
+      "finalUrl": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom",
+      "title": "GitHub - carbon-design-system/carbon-for-ibm-dotcom: Carbon for IBM.com is based on the Carbon Design System for IBM · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-carbon-design-system-carbon-for-ibm-dotcom/identity.jpg",
+        "sha256": "1a961e52a2864b54f74970eceecea2cd4717ace0b3a47f6029fe49dcedb76feb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 104693,
+        "alt": "carbon-design-system/carbon-for-ibm-dotcom 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "packages",
+      "value": "@carbon/ibmdotcom-web-components、@carbon/ibmdotcom-services、@carbon/ibmdotcom-styles、@carbon/ibmdotcom-utilities",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom",
+      "evidence": "README 的 Getting started 一节用一张表列出 full list of packages that we support",
+      "confidence": 1
+    },
+    {
+      "field": "storybookDemos",
+      "value": "Storybook 在 ibm.com/standards/carbon/web-components，React Wrappers 版多 /react 后缀",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom",
+      "evidence": "README 的 Storybook demos 一节列出的两个地址",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0 license",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom",
+      "evidence": "About 栏与 Repository files navigation 均标注",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "294 stars、165 forks、10,304 Commits",
+      "sourceUrl": "https://github.com/carbon-design-system/carbon-for-ibm-dotcom",
+      "evidence": "仓库页顶部按钮区与 Latest commit 一行的提交数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-carbon-design-system-carbon-for-ibm-dotcom",
+    "designMdUrl": "https://vislexicon.com/site/github-com-carbon-design-system-carbon-for-ibm-dotcom.md",
+    "checkedAt": "2026-09-15T11:38:18.581Z",
+    "license": "Apache-2.0"
+  }
+}

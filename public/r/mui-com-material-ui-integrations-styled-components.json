@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "839fee0068dc0f0a55e809a2e1795b90929201b44740d4bb5e800f9844d9f4d0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mui-com-material-ui-integrations-styled-components",
+  "entityId": "entity-mui-com-material-ui-integrations-styled-components",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://mui.com/material-ui/integrations/styled-components",
+    "finalUrl": "https://mui.com/material-ui/integrations/styled-components/",
+    "checkedAt": "2026-09-15T11:46:49.191Z"
+  },
+  "editorial": {
+    "name": "Using styled-components - Material UI",
+    "descriptionZh": "Material UI 的集成文档页，讲怎么把默认的 Emotion 换成 styled-components：需要让打包器把 @mui/styled-engine 解析到 @mui/styled-engine-sc，页面给了 yarn 与 npm 两套写法。",
+    "takeawayZh": "把 @mui/styled-engine 换成 -sc 包。",
+    "noteZh": "正文最上面是一个红色警示框，写明 As of late 2021, styled-components is not compatible with server-rendered Material UI projects，原因是 babel-plugin-styled-components 无法处理 @mui 包里的 styled()，末尾建议 SSR 项目继续用 Emotion。下面 Bundler configuration 一节分别给出 With yarn 的 resolutions 与 With npm 的 overrides 写法，都是把 @mui/styled-engine 指向 npm:@mui/styled-engine-sc@latest；右侧 CONTENTS 里还挂着 Next.js 一节。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是把样式引擎换掉的打包器配置与兼容性结论，用户拿走的是构建配置，故归构建、部署与开发工作流；它不是组件或模板。",
+        "evidenceUrl": "https://mui.com/material-ui/integrations/styled-components/"
+      },
+      {
+        "statement": "候选池把它标成 Vue UI 库，与页面内容完全不符，这条子类不成立。",
+        "evidenceUrl": "https://mui.com/material-ui/integrations/styled-components/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:49.191Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mui.com/material-ui/integrations/styled-components",
+      "finalUrl": "https://mui.com/material-ui/integrations/styled-components/",
+      "title": "Using styled-components - Material UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/mui-com-material-ui-integrations-styled-components/identity.jpg",
+        "sha256": "c2b1bb413f610eb7831946e59644c8d3a34fd0f24ab4ae0a2e12004c4345590d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 159019,
+        "alt": "Using styled-components - Material UI 首屏：Using styled-components"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "compatibilityWarning",
+      "value": "2021 年底起 styled-components 与 SSR 的 Material UI 项目不兼容，官方强烈建议 SSR 项目用 Emotion",
+      "sourceUrl": "https://mui.com/material-ui/integrations/styled-components/",
+      "evidence": "正文顶部的红色提示框原文",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "@mui/styled-engine（默认，包 Emotion 的 styled()）与 @mui/styled-engine-sc（styled-components 版）",
+      "sourceUrl": "https://mui.com/material-ui/integrations/styled-components/",
+      "evidence": "正文的两条列表项",
+      "confidence": 1
+    },
+    {
+      "field": "bundlerConfig",
+      "value": "yarn 用 resolutions、npm 用 overrides，把 @mui/styled-engine 指向 npm:@mui/styled-engine-sc@latest",
+      "sourceUrl": "https://mui.com/material-ui/integrations/styled-components/",
+      "evidence": "Bundler configuration 的 With yarn 与 With npm 代码块",
+      "confidence": 1
+    },
+    {
+      "field": "purpose",
+      "value": "把 Material UI 默认的 CSS 生成方式从 Emotion 换成 styled-components",
+      "sourceUrl": "https://mui.com/material-ui/integrations/styled-components/",
+      "evidence": "页面 description 与首段 Learn how to use styled-components instead of Emotion with Material UI.",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/mui-com-material-ui-integrations-styled-components",
+    "designMdUrl": "https://vislexicon.com/site/mui-com-material-ui-integrations-styled-components.md",
+    "checkedAt": "2026-09-15T11:46:49.191Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "906d16f97d7375bb09ca269b94ce51d89ecbf27752e0578e976b93880ca1475d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "firecrawl-dev",
+  "entityId": "entity-firecrawl-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://firecrawl.dev",
+    "finalUrl": "https://www.firecrawl.dev/",
+    "checkedAt": "2026-09-15T11:10:15.435Z"
+  },
+  "editorial": {
+    "name": "Firecrawl",
+    "descriptionZh": "把网页抓成 LLM 可用数据的 API 服务，对外提供 Search、Scrape、Map、Crawl、Interact 几个端点，返回 Markdown、JSON 或截图，代码开源，可用一行命令接进 agent。",
+    "takeawayZh": "给 agent 接一个把网页转 Markdown 的 API",
+    "noteZh": "白底首屏，顶部一条橙色横幅 Introducing the Firecrawl Developer Index, built for supercharging coding agents。导航 Products / Resources / Pricing / Docs / Blog / Playground，右端一个 GitHub 图标带 180.6K 星标数和一个 Sign up。正中央大字 Power AI agents with clean web data，下面一个搜索胶囊，四个模式 Search、Scrape、Map、Crawl 加橙色箭头，背景是用橙色点阵拼出来的世界地图。往下 MAIN FEATURES 区把 Developer First 拆成 Search、Scrape、Interact NEW 三条，每条配 Python / Node.js / cURL / CLI 的代码页签与一段返回 JSON，正文写着 Fast, reliable, token-efficient. And it's open source，并给出 npx -y firecrawl-cli@latest init --all --browser 这行命令和 MCP / Skill 两种接法。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是一组 HTTP 端点与 SDK：pip install firecrawl-py 后调 app.search(...)，或一条 npx 命令把 MCP / Skill 接进 agent，属于开发与构建环节的基础设施，因此归构建、部署与开发工作流。",
+        "evidenceUrl": "https://docs.firecrawl.dev/"
+      },
+      {
+        "statement": "它不是素材、模板或组件库，首页交付的是 API 能力清单与代码示例，导航独立分出 Docs、Playground、Changelog 三处开发者内容。",
+        "evidenceUrl": "https://www.firecrawl.dev/playground"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:10:15.435Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "search"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "api",
+      "web",
+      "cli",
+      "mcp"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://firecrawl.dev",
+      "finalUrl": "https://www.firecrawl.dev/",
+      "title": "Firecrawl - The context API to search, scrape, and interact with the web at scale. 🔥",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/firecrawl-dev/identity.jpg",
+        "sha256": "ca26e8a370dceb87c8f7b95dfa9cb8cce00d29cc97a3750570c19c356dd1bd13",
+        "width": 1280,
+        "height": 900,
+        "bytes": 87341,
+        "alt": "Firecrawl 首屏：Power AI agents with clean web data"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Freemium",
+      "sourceUrl": "https://www.firecrawl.dev/pricing",
+      "evidence": "首屏 Start for free 按钮、Sign up 入口与 2 Months Free - Annually 的折扣提示，另有独立 Pricing 页",
+      "confidence": 0.9
+    },
+    {
+      "field": "openSource",
+      "value": "Fast, reliable, token-efficient. And it's open source",
+      "sourceUrl": "https://www.firecrawl.dev/",
+      "evidence": "首屏副标题 It's also open source. 与 CORE 区块标题，导航里的 GitHub 图标带 180.6K 星标数",
+      "confidence": 1
+    },
+    {
+      "field": "endpoints",
+      "value": "Search / Scrape / Map / Crawl / Interact",
+      "sourceUrl": "https://www.firecrawl.dev/",
+      "evidence": "首屏胶囊控件的四个模式，与站内 /search、/scrape、/crawl、/interact、/parse 路径",
+      "confidence": 1
+    },
+    {
+      "field": "agentOnboarding",
+      "value": "npx -y firecrawl-cli@latest init --all --browser；另提供 https://firecrawl.dev/agent-onboarding/SKILL.md 供 agent 自助取 key",
+      "sourceUrl": "https://docs.firecrawl.dev/",
+      "evidence": "Easily connect with your AI agents 区块的 Skill / MCP 两个页签与 cURL 示例",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/firecrawl-dev",
+    "designMdUrl": "https://vislexicon.com/site/firecrawl-dev.md",
+    "checkedAt": "2026-09-15T11:10:15.435Z",
+    "license": "unknown"
+  }
+}

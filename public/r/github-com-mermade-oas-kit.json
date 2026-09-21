@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8ef16ae3f671f5c6d1ef069a1a81a0c4845feba8044da8a3deed4938e0cd89e0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-mermade-oas-kit",
+  "entityId": "entity-github-com-mermade-oas-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/Mermade/oas-kit",
+    "finalUrl": "https://github.com/Mermade/oas-kit",
+    "checkedAt": "2026-09-15T12:02:32.825Z"
+  },
+  "editorial": {
+    "name": "Mermade/oas-kit",
+    "descriptionZh": "OpenAPI 规范的工具链 monorepo，把 Swagger 2.0 定义转成 OpenAPI 3.0 并做解析、校验与 lint。仓库根上 lerna.json 与 packages 并列，README 点名 swagger2openapi、oas-validator、oas-linter 等七个子包。",
+    "takeawayZh": "把 Swagger 2.0 转成 OpenAPI 3.0 并校验",
+    "noteZh": "页面标题是 GitHub - Mermade/oas-kit，About 一行写 Convert Swagger 2.0 definitions to OpenAPI 3.0 and resolve/validate/lint，下面挂 api、conversion、converter、linter、openapi、openapi3、swagger、validator 一串 topic。README 开头说明这是下列项目的 mono-repo，逐个点名 swagger2openapi、oas-validator、oas-linter、oas-resolver、oas-schema-walker、oas-kit-common、reftools，再给出 Main site、CHANGELOG、Online converter/validator、OpenAPI-webconverter 几条链接。文件树里 packages 与 bin 并列，根上摆着 lerna.json 和三份分开的 webpack.converter.js、webpack.validator.js、webpack.reftools.js，README 标题行标 BSD-3-Clause license，右侧 Used by 48K。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是七个可安装的 npm 包（swagger2openapi 等），做的是规范转换、校验与 lint，用户把命令接进自己的构建流程，归构建与开发工作流；候选池把它归到 Tailwind 组件，页面上没有任何样式或界面组件，那个分类没有依据。",
+        "evidenceUrl": "https://github.com/Mermade/oas-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:32.825Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "audit"
+    ],
+    "media": [],
+    "platforms": [
+      "cli",
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Mermade/oas-kit",
+      "finalUrl": "https://github.com/Mermade/oas-kit",
+      "title": "GitHub - Mermade/oas-kit: Convert Swagger 2.0 definitions to OpenAPI 3.0 and resolve/validate/lint · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-mermade-oas-kit/identity.jpg",
+        "sha256": "74ed18bb10810c02ee72436db97b48d7a37daa3f5101976d179a2ac69e9e4c03",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139351,
+        "alt": "Mermade/oas-kit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "relatedProjects",
+      "value": "swagger2openapi、oas-validator、oas-linter、oas-resolver、oas-schema-walker、oas-kit-common、reftools",
+      "sourceUrl": "https://github.com/Mermade/oas-kit",
+      "evidence": "README 的 This is the mono-repo for the following related projects 清单",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "BSD-3-Clause",
+      "sourceUrl": "https://github.com/Mermade/oas-kit",
+      "evidence": "README 标题行右侧的 BSD-3-Clause license，右侧 About 栏同样写 BSD-3-Clause license",
+      "confidence": 1
+    },
+    {
+      "field": "webpackEntrypoints",
+      "value": "webpack.converter.js、webpack.validator.js、webpack.reftools.js 三份分开的打包配置",
+      "sourceUrl": "https://github.com/Mermade/oas-kit",
+      "evidence": "Folders and files 列表的根目录文件名",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "747 stars、119 forks、1,254 Commits、26 Branches、269 Tags、Used by 48K、Contributors 17",
+      "sourceUrl": "https://github.com/Mermade/oas-kit",
+      "evidence": "仓库头部计数与右侧 About、Used by、Contributors 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-mermade-oas-kit",
+    "designMdUrl": "https://vislexicon.com/site/github-com-mermade-oas-kit.md",
+    "checkedAt": "2026-09-15T12:02:32.825Z",
+    "license": "BSD-3-Clause"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "01cd5771e27bcf6e54497bbb60621b265e2915c9c5a898a02d02a0c428042de5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-openrailassociation-osrd",
+  "entityId": "entity-github-com-openrailassociation-osrd",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/OpenRailAssociation/osrd",
+    "finalUrl": "https://github.com/OpenRailAssociation/osrd",
+    "checkedAt": "2026-09-15T11:47:53.956Z"
+  },
+  "editorial": {
+    "name": "OpenRailAssociation/osrd",
+    "descriptionZh": "开源铁路仿真 Web 应用：画线路基础设施、算通过能力、排时刻表、跑列车仿真，仓库里 front 一侧带着自研的 Tailwind UI 组件包，可以单独拿出来改。",
+    "takeawayZh": "拉下一套铁路仿真应用与它的前端组件包",
+    "noteZh": "About 一句话把功能说全：An open source web application for railway infrastructure design, capacity analysis, timetabling and simulation，话题标签 railway 与 simulation，外链指向 osrd.fr。README 从 What is OSRD? 与 Demo 讲到 Development status、Getting Started，中间单开一节 Working on a single component，说明前端组件是可以脱离主应用单独开发的。仓库切得很细：core、editoast、front、gateway、osrdyne、python/railjson_generator、railway_manager_interface 各自独立，根目录另有 GOVERNANCE.md、MAINTAINERS.md 与 REUSE.toml；最新提交是 ui: add .stylelintignore in every package。660 stars、112 Contributors、692 个 open issues，releases 到 1.2.23。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "templates-design-files",
+    "subcategory": "site-app-starters",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是可自建的完整 Web 应用源码（core 服务、editoast、gateway、front 一整套），用户拿走的方式是 clone 与部署，属应用启动器。",
+        "evidenceUrl": "https://github.com/OpenRailAssociation/osrd"
+      },
+      {
+        "statement": "候选池按 @osrd-project/ui-core 这个包名收进来，但仓库主体的 About 描述的是铁路仿真应用本身，前端组件只是其中一个 package，故不按组件库归类。",
+        "evidenceUrl": "https://github.com/OpenRailAssociation/osrd"
+      },
+      {
+        "statement": "分类存在不确定性：README 专门写了 Working on a single component 一节，说明 front 的组件包也可单独取用，但其文档与发布主体仍是应用而非组件。",
+        "evidenceUrl": "https://github.com/OpenRailAssociation/osrd"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:53.956Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "starter",
+      "code-library"
+    ],
+    "actions": [
+      "download",
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/OpenRailAssociation/osrd",
+      "finalUrl": "https://github.com/OpenRailAssociation/osrd",
+      "title": "GitHub - OpenRailAssociation/osrd: An open source web application for railway infrastructure design, capacity analysis, timetabling and simulation · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-openrailassociation-osrd/identity.jpg",
+        "sha256": "42b19252d989566e0dffddd0d578ecec29fee85b44e5c3326108155ac756bc57",
+        "width": 1280,
+        "height": 900,
+        "bytes": 145445,
+        "alt": "OpenRailAssociation/osrd 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "purpose",
+      "value": "铁路基础设施设计、通过能力分析、时刻表与列车仿真的开源 Web 应用",
+      "sourceUrl": "https://github.com/OpenRailAssociation/osrd",
+      "evidence": "About 与仓库描述原文「An open source web application for railway infrastructure design, capacity analysis, timetabling and simulation」。",
+      "confidence": 1
+    },
+    {
+      "field": "repoStructure",
+      "value": "core、editoast、front、gateway、osrdyne、python/railjson_generator、railway_manager_interface 多包并存",
+      "sourceUrl": "https://github.com/OpenRailAssociation/osrd",
+      "evidence": "首屏根目录列表逐一列出这些文件夹，最新提交为 front 包的「ui: add .stylelintignore in every package」。",
+      "confidence": 1
+    },
+    {
+      "field": "singleComponentWorkflow",
+      "value": "README 单列 Working on a single component 一节，支持单独开发一个前端组件",
+      "sourceUrl": "https://github.com/OpenRailAssociation/osrd",
+      "evidence": "Repository files navigation 里的章节名「Working on a single component」，位于 Getting Started 与 Deployment 之间。",
+      "confidence": 1
+    },
+    {
+      "field": "governance",
+      "value": "根目录含 GOVERNANCE.md、MAINTAINERS.md、CODE_OF_CONDUCT.md 与 REUSE.toml",
+      "sourceUrl": "https://github.com/OpenRailAssociation/osrd",
+      "evidence": "首屏根目录文件列表与提交信息「governance: add file」「maintainers: add file with details on how maintainers are added to the」。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/OpenRailAssociation/osrd",
+      "evidence": "根目录有 LICENSES 目录但 About 区未显示许可证名称，本页无法确认具体许可，故记 unknown。",
+      "confidence": 0.5
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-openrailassociation-osrd",
+    "designMdUrl": "https://vislexicon.com/site/github-com-openrailassociation-osrd.md",
+    "checkedAt": "2026-09-15T11:47:53.956Z",
+    "license": "unknown"
+  }
+}

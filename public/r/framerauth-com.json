@@ -1,0 +1,164 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "deb7d830e3053b89d1386e0b79d88f0cd001fe3f870ca50d057c0cada4be5649",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "framerauth-com",
+  "entityId": "entity-framerauth-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://framerauth.com",
+    "finalUrl": "https://frameauth.com/",
+    "checkedAt": "2026-09-15T11:15:26.553Z"
+  },
+  "editorial": {
+    "name": "FrameAuth",
+    "descriptionZh": "给 Framer 站点加登录、内容门禁和订阅付费的插件（原名 FramerAuth），号称不抽成，接 Stripe 或 Lemon Squeezy 收款。",
+    "takeawayZh": "给 Framer 页面挂上登录墙和订阅付费",
+    "noteZh": "白底首屏，大字 Create Membership Sites in Framer，句子中间直接嵌了一个绿色挂锁图标和 Framer 的图标；副标题写明是 the no-code authentication & membership plugin for Framer. You keep 100% of what you earn, live in minutes.，两颗按钮 Start for Free 和 Start with AI。下面是一张 Framer 编辑器截图，工具栏上能认出 Invite、Publish 两个按钮和图层操作图标。功能按 Setup Membership In Minutes, Not Days 三段讲：Connect Plugin（把一小段代码塞进 site's start of body tag）、Add Components（sign-in、sign-up、password reset）、Lock Content；FEATURES 一栏再列 Accept Payments、Lock On-Page Content、Lock Pages、Custom Fields、Sign up with Social Sign-On、Bookmarking，并注明 Built to work with the Framer CMS.。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "FrameAuth 往 Framer 站点里装一组可拖放的复合控件（登录、注册、密码重置、付费墙、书签），用户在 /blocks 与 Templates 里挑现成块拼装，属于页面区块与可嵌入复合控件。",
+        "evidenceUrl": "https://frameauth.com/blocks"
+      },
+      {
+        "statement": "它不是一个独立可浏览的站点集合，交付时要求「用插件往站点 start of body tag 塞代码、再从插件里加组件」，形态是嵌进宿主建站工具的功能块。",
+        "evidenceUrl": "https://frameauth.com/plugin"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:15:26.553Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "block",
+      "template"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "publish"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "framer",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "designer",
+      "content-creator"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://framerauth.com",
+      "finalUrl": "https://frameauth.com/",
+      "title": "FrameAuth — Authentication, Gated Content & Memberships for Framer",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/framerauth-com/identity.jpg",
+        "sha256": "4a95678e77b9ea6a7737da88df7b3d4c424a1948892c40b39547149a73c63119",
+        "width": 1280,
+        "height": 900,
+        "bytes": 56683,
+        "alt": "FrameAuth 首屏：Create Membership Sites in Framer"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Freemium：免费开始，插件订阅 $29 / month；页面另出现 $129.99 与 $19.99 两个价格",
+      "sourceUrl": "https://frameauth.com/pricing",
+      "evidence": "首屏 Start for Free 按钮、FEATURES 段的 $29 / month Subscribe、以及页面里 $129.99 / $19.99 两处价格标签",
+      "confidence": 0.8
+    },
+    {
+      "field": "paymentProviders",
+      "value": "Stripe 与 Lemon Squeezy（with more options coming soon）",
+      "sourceUrl": "https://frameauth.com/features",
+      "evidence": "FEATURES 区 Accept Payments 一条的说明",
+      "confidence": 1
+    },
+    {
+      "field": "noFee",
+      "value": "You keep 100% of what you earn",
+      "sourceUrl": "https://frameauth.com/",
+      "evidence": "首屏副标题与 Built to work with the Framer CMS. 之后的 No Fees 一段",
+      "confidence": 1
+    },
+    {
+      "field": "installShape",
+      "value": "用插件把代码片段加进站点 start of body tag，再从插件里添加 sign-in、sign-up、password reset 等组件",
+      "sourceUrl": "https://frameauth.com/plugin",
+      "evidence": "Setup Membership In Minutes, Not Days 三段的第一、二段",
+      "confidence": 1
+    },
+    {
+      "field": "comparisonPage",
+      "value": "与竞品对位页 /vs-thenty，以及面向模板作者的 /template-creators",
+      "sourceUrl": "https://frameauth.com/vs-thenty",
+      "evidence": "站内路径清单里的两条",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/framerauth-com",
+    "designMdUrl": "https://vislexicon.com/site/framerauth-com.md",
+    "checkedAt": "2026-09-15T11:15:26.553Z",
+    "license": "unknown"
+  }
+}

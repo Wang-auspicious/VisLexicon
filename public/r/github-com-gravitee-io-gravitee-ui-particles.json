@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "08f1a5f8f0a0cdbb62154411f6343d185dae9d8892d1a8517ece08757ce62607",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-gravitee-io-gravitee-ui-particles",
+  "entityId": "entity-github-com-gravitee-io-gravitee-ui-particles",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/gravitee-io/gravitee-ui-particles",
+    "finalUrl": "https://github.com/gravitee-io/gravitee-ui-particles",
+    "checkedAt": "2026-09-15T11:42:24.824Z"
+  },
+  "editorial": {
+    "name": "gravitee-io/gravitee-ui-particles",
+    "descriptionZh": "Gravitee 控制台自用的 Angular 组件与 UX 规则集合，以 @gravitee/ui-particles-angular 发布到 npm，配 Storybook 与 Chromatic 展示。",
+    "takeawayZh": "装它发到 npm 的 Angular 组件包，取控制台在用的控件。",
+    "noteZh": "About 一句话是「Set of UI components and UX rules used in Gravitee.io's consoles.」，主页指到 particles.gravitee.io。仓库根目录能看到 .storybook（提交记录显示刚把 Storybook 提到 10.6、Chromatic 提到 18）和 assets、projects 两块，README 说明 monorepo 已简化成单一 Angular workspace，最新版 v18.0.0，About 栏 license 一行写着 Apache-2.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是给 Gravitee 控制台用的 Angular 组件与交互规则，用户动作是安装组件包、在 Angular 项目里使用；它没有自称设计系统，也没有对外发布独立的 token/主题体系，因此归入通用界面组件库而非设计系统套件。",
+        "evidenceUrl": "https://github.com/gravitee-io/gravitee-ui-particles"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:42:24.824Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/gravitee-io/gravitee-ui-particles",
+      "finalUrl": "https://github.com/gravitee-io/gravitee-ui-particles",
+      "title": "GitHub - gravitee-io/gravitee-ui-particles: 🪐 Set of UI components and UX rules used in Gravitee.io's consoles. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-gravitee-io-gravitee-ui-particles/identity.jpg",
+        "sha256": "06e03c1e25882563397b7522fda360435c94c247144e24c9a590e8fb27a3d81d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 142277,
+        "alt": "gravitee-io/gravitee-ui-particles 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/gravitee-io/gravitee-ui-particles",
+      "evidence": "右侧 About 栏 license 条目显示 Apache-2.0, License licenses found，仓库根目录有 LICENSE.txt 与 LICENSE_TEMPLATE.txt",
+      "confidence": 0.8
+    },
+    {
+      "field": "latest-release",
+      "value": "v18.0.0",
+      "sourceUrl": "https://github.com/gravitee-io/gravitee-ui-particles",
+      "evidence": "右侧 Releases 区显示 v18.0.0 带 Latest 徽标，20 小时前发布，共 390 个 releases",
+      "confidence": 1
+    },
+    {
+      "field": "docs-site",
+      "value": "particles.gravitee.io",
+      "sourceUrl": "https://github.com/gravitee-io/gravitee-ui-particles",
+      "evidence": "右侧 About 栏主页链接指向 particles.gravitee.io/",
+      "confidence": 1
+    },
+    {
+      "field": "storybook-version",
+      "value": "Storybook 10.6 / Chromatic 18",
+      "sourceUrl": "https://github.com/gravitee-io/gravitee-ui-particles",
+      "evidence": ".storybook 目录的最近提交信息为「chore(deps): move Storybook to 10.6 and Chromatic to 18」",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-gravitee-io-gravitee-ui-particles",
+    "designMdUrl": "https://vislexicon.com/site/github-com-gravitee-io-gravitee-ui-particles.md",
+    "checkedAt": "2026-09-15T11:42:24.824Z",
+    "license": "Apache-2.0"
+  }
+}

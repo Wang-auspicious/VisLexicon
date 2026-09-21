@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "dcf221632006d367781425d33cccafb315f4de606fef9193063fdf890ccd3781",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "agnosui-dev-latest",
+  "entityId": "entity-agnosui-dev-latest",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://agnosui.dev/latest",
+    "finalUrl": "https://www.agnosui.dev/latest/",
+    "checkedAt": "2026-09-15T11:36:08.298Z"
+  },
+  "editorial": {
+    "name": "AgnosUI",
+    "descriptionZh": "AgnosUI 是一套框架无关的组件工厂，同一份 TypeScript 工厂同时给 Angular、React、Svelte 生成无样式组件，另外单发一份 Bootstrap 皮肤。版权方是 Amadeus，整库 MIT。",
+    "takeawayZh": "拿 headless 工厂同时喂三个前端框架",
+    "noteZh": "首屏大标题 AgnosUI Where components shine.，小标题 Perfected component libraries，三条带箭头的小字写 Typescript factories、Headless wrappers、Bootstrap-styled ready-to-use。再往下是 Get started with 三个圆形按钮 React、Svelte、Angular，接着浅紫卡片依次是 Framework agnostic、Headless components、Consistent、Accessible、Highly configurable、Fully tested、Bootstrap components、SSR compliant。Fully tested 一段点名 Unit tests 用 Vitest、E2e tests with Playwright（含 SSR hydration 测试）、libs 集成测试走 Verdaccio。页脚写 Released under the MIT License. Copyright © 2023 - present Amadeus，顶部导航是 Documentation、API、Blog，右侧标 v0.11.0。",
+    "recommendation": null,
+    "pricing": "Free（页脚写 Released under the MIT License）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "三种框架都从同一份工厂拿组件，交付物是组件而不是设计稿或模板；虽然其中一档是 headless 包，但整站同时提供 Bootstrap 皮肤与三框架适配，故归通用界面组件库而非无样式原语。",
+        "evidenceUrl": "https://www.agnosui.dev/latest/"
+      },
+      {
+        "statement": "technologies 里的 angular、react、svelte 全部来自首屏的 Get started with 三个按钮与正文框架名，不是从包名猜的。",
+        "evidenceUrl": "https://www.agnosui.dev/latest/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:36:08.298Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript",
+      "react",
+      "svelte",
+      "angular"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://agnosui.dev/latest",
+      "finalUrl": "https://www.agnosui.dev/latest/",
+      "title": "Home page - AgnosUI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/agnosui-dev-latest/identity.jpg",
+        "sha256": "1322c75974f81686457b182a727118ba74011e2f5e5e842e0d6625f1777d7a0b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 92252,
+        "alt": "AgnosUI 首屏：AgnosUI Where components shine."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT，Copyright © 2023 - present Amadeus",
+      "sourceUrl": "https://www.agnosui.dev/latest/",
+      "evidence": "页面底部的版权行",
+      "confidence": 1
+    },
+    {
+      "field": "threeDeliverables",
+      "value": "Typescript factories / Headless wrappers / Bootstrap-styled ready-to-use",
+      "sourceUrl": "https://www.agnosui.dev/latest/",
+      "evidence": "首屏小标题下的三条要点",
+      "confidence": 1
+    },
+    {
+      "field": "frameworks",
+      "value": "React、Svelte、Angular",
+      "sourceUrl": "https://www.agnosui.dev/latest/",
+      "evidence": "Get started with 一行三个按钮",
+      "confidence": 1
+    },
+    {
+      "field": "testing",
+      "value": "Vitest 单测、Playwright 端到端（含 SSR hydration）、Verdaccio 集成测试",
+      "sourceUrl": "https://www.agnosui.dev/latest/",
+      "evidence": "Fully tested 一段正文",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "v0.11.0",
+      "sourceUrl": "https://www.agnosui.dev/latest/",
+      "evidence": "顶部右侧版本号",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/agnosui-dev-latest",
+    "designMdUrl": "https://vislexicon.com/site/agnosui-dev-latest.md",
+    "checkedAt": "2026-09-15T11:36:08.298Z",
+    "license": "MIT"
+  }
+}

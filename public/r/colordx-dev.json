@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "6ac435ae7d8c083c5d3b135faa6c255a3973a675a96f76fe782a83476889bfa4",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "colordx-dev",
+  "entityId": "entity-colordx-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://colordx.dev",
+    "finalUrl": "https://colordx.dev/",
+    "checkedAt": "2026-09-15T12:17:16.753Z"
+  },
+  "editorial": {
+    "name": "colordx",
+    "descriptionZh": "在浏览器里用 OKLCH 取色、做色阶、查 WCAG/APCA 对比度并导出明暗两套主题的工具站，底层是零依赖的 @colordx/core。",
+    "takeawayZh": "在 Picker 里拖出色值，一键复制成任意 CSS 颜色格式。",
+    "noteZh": "首屏左边是一块可拖动的色板加 alpha 滑杆，输入框里填着 oklch(0.7 0.1 220)；右边一张表把同一个颜色摊成 OKLCH、OKLAB、HEX、RGB、HSL、HWB、HSV、LAB、LCH、P3、REC.2020、LINEAR、FIGMA P3、SHORT、NAME 等格式，每行都能一键复制。再往下是 Gamut slices：Hue × Chroma、Hue × Lightness、Lightness × Chroma 三块图，右上角对应 P3 / A98 / Rec.2020 / ProPhoto 四个勾选。顶部导航把工具分成 Picker、Palette、Contrast、Theme、CLI 五段，末尾挂 npm 与 GitHub 外链。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面上用户能直接做的动作是选色、调色、查对比度、导出主题（Picker / Palette / Contrast / Theme 四个工具页），交付的是色值与主题文件，属图像与版式创作工具。",
+        "evidenceUrl": "https://colordx.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:17:16.753Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "generate",
+      "export",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://colordx.dev",
+      "finalUrl": "https://colordx.dev/",
+      "title": "colordx · OKLCH color picker, contrast and theme tools",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/colordx-dev/identity.jpg",
+        "sha256": "62da967a4a7de662d84416106fae3a9f34b228a4a4253c4bfb15d492eda6bcec",
+        "width": 1280,
+        "height": 900,
+        "bytes": 104122,
+        "alt": "colordx 首屏：PICK A COLOR"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "library",
+      "value": "@colordx/core：8 KB gzipped、零依赖、带类型、可 tree-shake",
+      "sourceUrl": "https://colordx.dev/",
+      "evidence": "首屏下方 “USE IT IN CODE” 一节的原文与 npm install @colordx/core",
+      "confidence": 1
+    },
+    {
+      "field": "export-formats",
+      "value": "Palette 可导出 CSS、Tailwind 或 JSON；Theme 输出明暗两套、标为 shadcn-ready",
+      "sourceUrl": "https://colordx.dev/",
+      "evidence": "首屏正文 “TOOLS TAKE IT FURTHER” 下 Palette 与 Theme 两块的说明文字",
+      "confidence": 1
+    },
+    {
+      "field": "cli",
+      "value": "提供 @colordx/cli，并在 CONTRAST 一节提到可在 CI 里查对比度",
+      "sourceUrl": "https://colordx.dev/",
+      "evidence": "顶部导航的 CLI 项与正文小标题 “CHECK CONTRAST IN CI”",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/colordx-dev",
+    "designMdUrl": "https://vislexicon.com/site/colordx-dev.md",
+    "checkedAt": "2026-09-15T12:17:16.753Z",
+    "license": "unknown"
+  }
+}

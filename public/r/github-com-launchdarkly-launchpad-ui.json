@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c20678f7971a1fb45ac9e85773950bb6cc2ba9d7ffb5db6c8ca5f741385e0082",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-launchdarkly-launchpad-ui",
+  "entityId": "entity-github-com-launchdarkly-launchpad-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/launchdarkly/launchpad-ui",
+    "finalUrl": "https://github.com/launchdarkly/launchpad-ui",
+    "checkedAt": "2026-09-15T11:44:46.129Z"
+  },
+  "editorial": {
+    "name": "launchdarkly/launchpad-ui",
+    "descriptionZh": "LaunchDarkly 的设计系统仓库，packages 下拆成一批 @launchpad-ui/* 包，另有 apps/vscode 与 docs 两个应用。README 还专门写了 AI code generation 与 Figma MCP server 的接入方式。",
+    "takeawayZh": "抄它给 AI 生成代码写的 AGENTS.md 约定",
+    "noteZh": "About 栏写 LaunchDarkly’s design system，站点是 launchpad.launchdarkly.com，标签铺了 accessibility、component-library、design-system、design-tokens、managed-by-terraform、react 与 ssr。README 分 Installation、Packages、Apps、AI Code Generation、Contributing、Questions?、Figma MCP Server Setup 几节，专门交代怎么让 AI 生成符合规范的代码。仓库有 6,184 个 tag、1,733 次提交，最近在把 biome 换成 oxlint 与 oxfmt 并重排全仓格式，核心包之一是 @launchpad-ui/navigation。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "About 的标签写着 design-system、component-library 与 design-tokens，README 有 Packages、Apps 两层结构与 AI Code Generation、Figma MCP Server Setup 等治理向分节，是完整设计系统而非零散组件。",
+        "evidenceUrl": "https://github.com/launchdarkly/launchpad-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:44:46.129Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/launchdarkly/launchpad-ui",
+      "finalUrl": "https://github.com/launchdarkly/launchpad-ui",
+      "title": "GitHub - launchdarkly/launchpad-ui: :rocket: LaunchDarkly's design system · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-launchdarkly-launchpad-ui/identity.jpg",
+        "sha256": "b3ff16314eef4ca8341b278ac88f082f3c8394f4cc728823681b95beaae88238",
+        "width": 1280,
+        "height": 900,
+        "bytes": 146001,
+        "alt": "launchdarkly/launchpad-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/launchdarkly/launchpad-ui",
+      "evidence": "About 栏 Apache-2.0 license；提交记录里有 chore: add Apache 2.0 license (#557)，文件列表里有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "docs_site",
+      "value": "launchpad.launchdarkly.com",
+      "sourceUrl": "https://github.com/launchdarkly/launchpad-ui",
+      "evidence": "About 栏 Website 一行的链接 launchpad.launchdarkly.com/",
+      "confidence": 1
+    },
+    {
+      "field": "ai_governance_docs",
+      "value": "README 里有 AI Code Generation 与 Figma MCP Server Setup 两节，仓库里放着 AGENTS.md、AI_PROMPT_HEADER.md、CLAUDE.md",
+      "sourceUrl": "https://github.com/launchdarkly/launchpad-ui",
+      "evidence": "README 目录小标题与文件夹列表里的 AGENTS.md、AI_PROMPT_HEADER.md、CLAUDE.md 三个文件",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-launchdarkly-launchpad-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-launchdarkly-launchpad-ui.md",
+    "checkedAt": "2026-09-15T11:44:46.129Z",
+    "license": "Apache-2.0"
+  }
+}

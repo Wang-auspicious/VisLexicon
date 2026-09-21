@@ -1,0 +1,183 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c1904f6da9586d5ef6cc58d562da91f5cdd301f02db9008927afddb7da00966b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-jimknopf90-croshes-ui",
+  "entityId": "entity-github-com-jimknopf90-croshes-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/JimKnopf90/croshes-ui",
+    "finalUrl": "https://github.com/JimKnopf90/croshes-ui",
+    "checkedAt": "2026-09-15T11:57:16.511Z"
+  },
+  "editorial": {
+    "name": "JimKnopf90/croshes-ui",
+    "descriptionZh": "德语 README 的 React 加 Tailwind 设计系统，被自家两个产品线在用：AlpakaPro 的 breeding-ui、admin-ui 和 Alpaca-Store 的 store-ui、store-manager-ui。组件里有 DatePicker、Table、Toast、Tabs，消费者要自己把它的 tailwind preset 引进来。",
+    "takeawayZh": "引一个 tailwind preset，用整套组件",
+    "noteZh": "README 标题是 Das Croshes Design-System: React-Komponenten mit Tailwind CSS，头一段就点名它被 AlpakaPro（breeding-ui、admin-ui）和 Alpaca-Store（store-ui、store-manager-ui）使用。用法除 npm install croshes-ui 外，还要在消费者的 tailwind.config.js 里把 croshes-ui/tailwind-preset 加进 presets，DatePicker 需要额外引 react-day-picker 的样式，Toasts 得包一层 ToastProvider 并用 useToast() 触发。文件列表里有 tailwind-preset.cjs、tsup.config.ts 和 docs/superpowers/specs，最新版本 v0.2.0，Release 一行的说明是 feat: DatePicker/DatePickerRange/TimePicker, Table, Toast und Tabs。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述 Das Croshes Design-System，除组件外还交付 tailwind preset 与设计规范文档（docs/superpowers/specs 下有 Design-Spec für Dropdown-Menü），是成套设计系统而不是零散组件。",
+        "evidenceUrl": "https://github.com/JimKnopf90/croshes-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:16.511Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "de"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/JimKnopf90/croshes-ui",
+      "finalUrl": "https://github.com/JimKnopf90/croshes-ui",
+      "title": "GitHub - JimKnopf90/croshes-ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-jimknopf90-croshes-ui/identity.jpg",
+        "sha256": "1cb568557cfd00fc36981b063f3b4ff3462e6904df7d689a72b42b403b5c1566",
+        "width": 1280,
+        "height": 900,
+        "bytes": 125746,
+        "alt": "JimKnopf90/croshes-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/JimKnopf90/croshes-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-jimknopf90-croshes-ui/identity.jpg",
+          "alt": "JimKnopf90/croshes-ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/JimKnopf90/croshes-ui",
+      "evidence": "右侧 About 面板的 MIT license 与 README 的 MIT license 行",
+      "confidence": 1
+    },
+    {
+      "field": "downstream",
+      "value": "AlpakaPro 的 breeding-ui、admin-ui 与 Alpaca-Store 的 store-ui、store-manager-ui",
+      "sourceUrl": "https://github.com/JimKnopf90/croshes-ui",
+      "evidence": "README 首段",
+      "confidence": 1
+    },
+    {
+      "field": "setup",
+      "value": "需把 croshes-ui/tailwind-preset 加进消费者 tailwind.config.js 的 presets",
+      "sourceUrl": "https://github.com/JimKnopf90/croshes-ui",
+      "evidence": "README Installation 一段的代码块",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "DatePicker、DatePickerRange、TimePicker、Table、Toast、Tabs、Button、Badge、EmptyState、Spinner",
+      "sourceUrl": "https://github.com/JimKnopf90/croshes-ui",
+      "evidence": "README 用法示例与 .storybook 目录那行的提交说明",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "v0.2.0（Latest）",
+      "sourceUrl": "https://github.com/JimKnopf90/croshes-ui",
+      "evidence": "右侧 Releases 面板",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/JimKnopf90/croshes-ui",
+      "evidence": "公开仓库加 MIT license，npm 直接安装，无付费入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-jimknopf90-croshes-ui.md",
+  "registryUrl": "/r/github-com-jimknopf90-croshes-ui.json"
+}

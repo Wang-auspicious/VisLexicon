@@ -1,0 +1,160 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3b93fd07e4a6e2e089afdf6a7dde07873083260cbd848cd25ed4e83c0e299141",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "static-app",
+  "entityId": "entity-static-app",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://static.app",
+    "finalUrl": "https://static.app/",
+    "checkedAt": "2026-09-15T11:18:49.496Z"
+  },
+  "editorial": {
+    "name": "Static.app",
+    "descriptionZh": "Static.app 是静态网站托管服务，把文件夹或压缩包拖进网页就上线，另有 Mac/Windows 桌面端指着一个本地目录自动发布。它给免费 SSL、不带 consent banner 的统计和免费二级域名。",
+    "takeawayZh": "看它把拖拽上传区做成首屏右半的唯一元件",
+    "noteZh": "首屏白底，左边 One-click hosting solution for your static website 与 Drag-n-drop an archive with your page or a website and we will take care of the rest，按钮 Upload for Free 与 Watch Video；右半是一整块虚线框，里面画着 PDF、ZIP、IMG 三个文件图标，写 Drag and drop files to upload，中间一枚 Select File。顶部导航只有 FEATURES、DOWNLOAD、PRICING 和一个 OPEN APP →、SIGN UP。往下 Turn any folder into a website 一节讲桌面端指着文件夹就能每次保存自动发布，并解释什么叫 static website（plain HTML, CSS, and JavaScript files，no database behind them），再往下是 Turn your ideas into reality with Static. 的六条好处：FREE SSL Certificate、Website Analytics（No script, no cookies, no consent banner）、Personal Domain、FREE Media Storage。页脚前一堆用例页按托管对象分：Free Image Hosting、Upload PDF Online、Claude Artifacts Hosting、ChatGPT Hosting、Replit Hosting、Cursor Hosting、Lovable Hosting、bolt.new Hosting、v0 Hosting。整站只有一个表单，就是那个上传框。",
+    "recommendation": null,
+    "pricing": "Freemium：Upload for Free 起步，另有 /pricing 与桌面端",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户从 Static.app 拿走的是「把已经做好的静态站发布出去」这一步：拖压缩包上传或指着本地文件夹自动同步上线，落在构建、部署与开发工作流。",
+        "evidenceUrl": "https://static.app/"
+      },
+      {
+        "statement": "这个判断有不确定性：它也被当作建站工具理解（导航含 AI Builder、Framework Hosting 分组）。按「用户最直接能拿走什么」选了部署托管这一侧，因为首页唯一的交互元件就是上传框，不产出页面。",
+        "evidenceUrl": "https://static.app/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:18:49.496Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "download",
+      "publish"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "desktop",
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "html",
+      "javascript"
+    ],
+    "workflowStages": [
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://static.app",
+      "finalUrl": "https://static.app/",
+      "title": "Static Website Hosting - Static.app",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/static-app/identity.jpg",
+        "sha256": "09a037fe380b5649cba85a487f7a72938d2c687f060f4ce20e3d314e984ba4c2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 87411,
+        "alt": "Static.app 首屏：One-click hosting solution for your static * website."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroHeadline",
+      "value": "One-click hosting solution for your static website.",
+      "sourceUrl": "https://static.app/",
+      "evidence": "首屏主标题与 http.h1",
+      "confidence": 1
+    },
+    {
+      "field": "desktopApp",
+      "value": "Static.app Desktop 指向一个本地文件夹，every save publishes itself，本地与远端自动同步",
+      "sourceUrl": "https://static.app/",
+      "evidence": "Turn any folder into a website. 一节正文",
+      "confidence": 1
+    },
+    {
+      "field": "freeFeatures",
+      "value": "FREE SSL Certificate、Website Analytics（No script, no cookies, no consent banner）、Personal Domain、FREE Media Storage",
+      "sourceUrl": "https://static.app/",
+      "evidence": "Static hosting solution with benefits. 一节的四张卡",
+      "confidence": 1
+    },
+    {
+      "field": "staticDefinition",
+      "value": "plain HTML, CSS, and JavaScript files，no database behind them",
+      "sourceUrl": "https://static.app/",
+      "evidence": "So what is a \"static\" website? 一段",
+      "confidence": 1
+    },
+    {
+      "field": "useCasePages",
+      "value": "Free Image Hosting、Upload PDF Online、Claude Artifacts Hosting、ChatGPT Hosting、Replit Hosting、Cursor Hosting、Lovable Hosting、bolt.new Hosting、v0 Hosting",
+      "sourceUrl": "https://static.app/",
+      "evidence": "页脚前的用例路径列表与 /claude-hosting、/v0-hosting 等页面",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium：Upload for Free 起步，另有 /pricing 与桌面端。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/static-app",
+    "designMdUrl": "https://vislexicon.com/site/static-app.md",
+    "checkedAt": "2026-09-15T11:18:49.496Z",
+    "license": "unknown"
+  }
+}

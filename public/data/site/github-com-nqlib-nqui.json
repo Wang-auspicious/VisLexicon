@@ -1,0 +1,173 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "24a357cd4e765aa2133e8d1f1c0e56ef63e27c298b77692521053682d81c8c10",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-nqlib-nqui",
+  "entityId": "entity-github-com-nqlib-nqui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/nqlib/nqui",
+    "finalUrl": "https://github.com/nqlib/nqui",
+    "checkedAt": "2026-09-15T11:47:09.453Z"
+  },
+  "editorial": {
+    "name": "nqlib/nqui",
+    "descriptionZh": "一个自称 shadcn 风格的 React 组件库，建在 TypeScript、Tailwind CSS 和 Radix UI 原语上，图标内联成 SVG 不用另装；重组件走子路径按需引入，主包只留一个依赖。",
+    "takeawayZh": "主包只留 cmdk，重组件走子路径按需引。",
+    "noteZh": "仓库 About 一句 NQUI Shadcn inspired UI library，README 分 Requirements、Installation、Quick Start、Setup requirements、Component instructions、Framework support、Troubleshooting、Features、Documentation、Publishing (maintainers)、License。Requirements 要求 React 18 or 19 加 Tailwind CSS v4；主入口只 eager 引 cmdk（Combobox 用），command、sonner、drawer、carousel、calendar、sortable、toc、debug 各自走子路径，缺的 peer 用 npx @nqlib/nqui install-peers 补，体积在 CI 里用 npm run size 卡。文件列表里有 docs、public、src、skills、memory、plans 几个目录，最新提交是 Release 0.8.0: lean package entries (ST-067)。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可安装的 React 组件库（含 Button、Form、Layout、Data Display、Overlay 等成套组件与 ColorPicker、Rating、TableOfContents 等自定义件），归通用界面组件库。",
+        "evidenceUrl": "https://github.com/nqlib/nqui"
+      },
+      {
+        "statement": "它借了 shadcn 的风格与 Radix 原语，但自己不提供 registry 式的源码拷贝流程，所以没有归到其它子类。",
+        "evidenceUrl": "https://github.com/nqlib/nqui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:09.453Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript",
+      "radix-ui"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/nqlib/nqui",
+      "finalUrl": "https://github.com/nqlib/nqui",
+      "title": "GitHub - nqlib/nqui: NQUI Shadcn inspired UI library · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-nqlib-nqui/identity.jpg",
+        "sha256": "2ddd2794ced9957411ba2690e882b8548935142da607f2f443cc03c77c4a1a8a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135924,
+        "alt": "nqlib/nqui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/nqlib/nqui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-nqlib-nqui/identity.jpg",
+          "alt": "nqlib/nqui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/nqlib/nqui",
+      "evidence": "仓库右侧 About 栏的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "requirements",
+      "value": "React 18 或 19，Tailwind CSS v4",
+      "sourceUrl": "https://github.com/nqlib/nqui",
+      "evidence": "README 的 Requirements 一节",
+      "confidence": 1
+    },
+    {
+      "field": "subpathEntries",
+      "value": "command / sonner / drawer / carousel / calendar / sortable / toc / debug",
+      "sourceUrl": "https://github.com/nqlib/nqui",
+      "evidence": "README 关于 entry points 与 bundle size 的段落",
+      "confidence": 1
+    },
+    {
+      "field": "bundleCheck",
+      "value": "CI 里通过 npm run size 检查体积",
+      "sourceUrl": "https://github.com/nqlib/nqui",
+      "evidence": "README 描述 Sizes are checked in CI via npm run size",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-nqlib-nqui.md",
+  "registryUrl": "/r/github-com-nqlib-nqui.json"
+}

@@ -1,0 +1,181 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "72335a12c81e6c953ba4615cf07a19a256ede90779cb80901e7b251b862993ea",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-styled-components-css-to-react-native",
+  "entityId": "entity-github-com-styled-components-css-to-react-native",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/styled-components/css-to-react-native",
+    "finalUrl": "https://github.com/styled-components/css-to-react-native",
+    "checkedAt": "2026-09-15T11:57:32.500Z"
+  },
+  "editorial": {
+    "name": "styled-components/css-to-react-native",
+    "descriptionZh": "把 CSS 文本转成 React Native 的 stylesheet 对象：font-size: 18px 变 fontSize: 18，text-shadow-offset 拆成 width / height，transform 还会倒序重排以适配 RN。styled-components 组织维护，README 里有 Try it here 的在线试用。",
+    "takeawayZh": "粘一段 CSS，拿到能直接用的 RN style 对象",
+    "noteZh": "README 开头就是输入输出对照：font-size: 18px; line-height: 24px; color: red; 变成 { fontSize: 18, lineHeight: 24, color: 'red' }，接着演示间接值的还原——transform: translate(10px, 5px) scale(5) 被整理成 translateY、translateX、scale 的数组，注释写着 Fixes backwards transform order。Shorthands 一节说明 font、margin 这类简写会被展开，但只接受 React Native 支持的值。右侧 About 写 Convert CSS text to a React Native stylesheet object，Stars 1.2k、Forks 82、Used by 2.4M，仓库有 226 次提交并已迁到 TypeScript（biome.json、vitest.config.js 都在）。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "design-to-code-handoff",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它做的是把 CSS 样式文本转换成 React Native 可用的 stylesheet 对象，README 另配一个 Try it here 在线试用，用户拿走的是转换结果和这个包，属设计转代码；它不是界面组件库。",
+        "evidenceUrl": "https://github.com/styled-components/css-to-react-native"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:32.500Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "react-native",
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/styled-components/css-to-react-native",
+      "finalUrl": "https://github.com/styled-components/css-to-react-native",
+      "title": "GitHub - styled-components/css-to-react-native: Convert CSS text to a React Native stylesheet object · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-styled-components-css-to-react-native/identity.jpg",
+        "sha256": "15c0ec09f4d3f312d2782e10bf87539214e7697034bd5a9b29d5f98e84110331",
+        "width": 1280,
+        "height": 900,
+        "bytes": 133319,
+        "alt": "styled-components/css-to-react-native 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/styled-components/css-to-react-native",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-styled-components-css-to-react-native/identity.jpg",
+          "alt": "styled-components/css-to-react-native 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/styled-components/css-to-react-native",
+      "evidence": "右侧 About 的 MIT license、README 顶部 MIT license 行与 LICENSE.md 文件",
+      "confidence": 1
+    },
+    {
+      "field": "transform",
+      "value": "font-size: 18px 变 fontSize: 18；text-shadow-offset: 10px 5px 变 { width: 10, height: 5 }",
+      "sourceUrl": "https://github.com/styled-components/css-to-react-native",
+      "evidence": "README 开头两组输入输出示例",
+      "confidence": 1
+    },
+    {
+      "field": "quirk",
+      "value": "transform 会被重排顺序（注释 Fixes backwards transform order）",
+      "sourceUrl": "https://github.com/styled-components/css-to-react-native",
+      "evidence": "README transform 示例里的行内注释",
+      "confidence": 1
+    },
+    {
+      "field": "shorthand",
+      "value": "font、margin 等简写会展开，但只接受 React Native 支持的值",
+      "sourceUrl": "https://github.com/styled-components/css-to-react-native",
+      "evidence": "README Shorthands 一节",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "Stars 1.2k、Forks 82、Used by 2.4M",
+      "sourceUrl": "https://github.com/styled-components/css-to-react-native",
+      "evidence": "仓库头部计数与右侧 About 的 Used by 2.4M 面板",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/styled-components/css-to-react-native",
+      "evidence": "公开 npm 包，无付费入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-styled-components-css-to-react-native.md",
+  "registryUrl": "/r/github-com-styled-components-css-to-react-native.json"
+}

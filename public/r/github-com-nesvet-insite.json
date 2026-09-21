@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2da0606532f6ac8927014ca6943337e990abf525a793080a42d89478cd6ae756",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-nesvet-insite",
+  "entityId": "entity-github-com-nesvet-insite",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/nesvet/insite",
+    "finalUrl": "https://github.com/nesvet/insite",
+    "checkedAt": "2026-09-15T12:00:00.582Z"
+  },
+  "editorial": {
+    "name": "nesvet/insite",
+    "descriptionZh": "一个 TypeScript/Bun 的实时全栈框架，把 WebSocket、MongoDB Change Streams 订阅、users/orgs/roles 的 RBAC 和 cookie 鉴权打包成一套，另附 React 组件。",
+    "takeawayZh": "用 insite-server 接实时订阅与 RBAC 鉴权。",
+    "noteZh": "README 用一句 Real-time apps need WebSocket, reactive data, auth, and sometimes file transfers 开头，随后把打包进来的东西逐件列出：MongoDB Change Streams → pub/sub publications、users/orgs/roles with RBAC、cookie auth over WS、可选的文件传输，并交代单服务端入口是 insite-server、单客户端入口是 insite-client。仓库是 Bun monorepo，根目录摆着 bun.lock、bunfig.toml、conveyer.config.js 和只放包说明的 packages，最后提交是 docs(packages): Add overview README with package index。右侧 About 摘的就是这段框架描述，topics 挂了 framework / fullstack / mongodb / rbac / realtime / typescript / websocket 七个。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "核心交付是一套跑在服务端的实时框架与客户端 SDK（入口是 insite-server / insite-client），React 组件只是附带，所以不按候选池的 React UI 库归组件库，而归构建与开发工作流，这条归类本身有不确定性。",
+        "evidenceUrl": "https://github.com/nesvet/insite"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:00.582Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "typescript",
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/nesvet/insite",
+      "finalUrl": "https://github.com/nesvet/insite",
+      "title": "GitHub - nesvet/insite: Real-time full-stack framework: WebSocket server/client, MongoDB + Change Streams, pub/sub publications, users/orgs/roles with RBAC, cookie auth over WS, file transfers. TypeScript/Bun monorepo with server orchestrator, client SDK, and React UI components · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-nesvet-insite/identity.jpg",
+        "sha256": "35db83a5d91a263df21f3cd23a4981c4068273631ea3b37e3e82fccff5c17262",
+        "width": 1280,
+        "height": 900,
+        "bytes": 149352,
+        "alt": "nesvet/insite 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/nesvet/insite",
+      "evidence": "右侧 About 栏的 MIT license 徽标与 README 标题行",
+      "confidence": 1
+    },
+    {
+      "field": "entry-points",
+      "value": "insite-server / insite-client",
+      "sourceUrl": "https://github.com/nesvet/insite",
+      "evidence": "README 正文 Single server entry point (insite-server), single client entry point (insite-client)",
+      "confidence": 1
+    },
+    {
+      "field": "built-in-auth",
+      "value": "users/orgs/roles + RBAC，cookie auth over WS",
+      "sourceUrl": "https://github.com/nesvet/insite",
+      "evidence": "README 与 About 栏都出现的这段描述",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "framework / fullstack / mongodb / rbac / realtime / typescript / websocket",
+      "sourceUrl": "https://github.com/nesvet/insite",
+      "evidence": "About 栏下方列出的 topic 标签",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-nesvet-insite",
+    "designMdUrl": "https://vislexicon.com/site/github-com-nesvet-insite.md",
+    "checkedAt": "2026-09-15T12:00:00.582Z",
+    "license": "MIT"
+  }
+}

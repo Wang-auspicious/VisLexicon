@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "cdd039d09ec4fa044680c1ad02519c9db2267f0c8ce05f2904341f515dcc3406",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-ory-polis",
+  "entityId": "entity-github-com-ory-polis",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/ory/polis",
+    "finalUrl": "https://github.com/ory/polis",
+    "checkedAt": "2026-09-15T11:37:55.068Z"
+  },
+  "editorial": {
+    "name": "ory/polis",
+    "descriptionZh": "Ory 的开源企业级 SSO 与目录同步服务，同时支持 SAML、OpenID Connect 和 SCIM 2.0 的账号自动开通与停用，前身是 BoxyHQ 的 Jackson。",
+    "takeawayZh": "自托管一套 SAML/OIDC 单点登录加 SCIM 目录同步",
+    "noteZh": "About 那段写明 Polis 是支持 SAML 与 OpenID Connect 的 SSO 服务，并通过 SCIM 2.0 做 Directory Sync 的自动开通与停用，许可证 Apache-2.0。文件区里 ee、internal-ui、helm、kustomize、locales/en、pages、swagger、performance-test 并排，提交历史里反复出现 chore: rename boxyhq to polis。README 的小标题是 Ory Polis on the Ory Network、Ory Polis On-premise support、Directory Sync、End-to-End (E2E) tests、Telemetry，Releases 有 207 条，Used by 1.8K。",
+    "recommendation": null,
+    "pricing": "Free (Apache-2.0)",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是自托管部署的认证服务（helm、kustomize、docker-compose 都在仓库里），用户拿走的是可跑起来的 SSO 与目录同步能力，不属组件或模板。",
+        "evidenceUrl": "https://github.com/ory/polis"
+      },
+      {
+        "statement": "仓库内含 internal-ui 与 pages 的登录门户代码，但那只是服务自带界面，主线仍是部署与接入认证流程，故不按界面组件库归档。",
+        "evidenceUrl": "https://github.com/ory/polis"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:37:55.068Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "download",
+      "submit"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ory/polis",
+      "finalUrl": "https://github.com/ory/polis",
+      "title": "GitHub - ory/polis: Streamline your web application's authentication with Polis, an SSO service supporting SAML and OpenID Connect protocols. Beyond enterprise-grade Single Sign-On, it also supports Directory Sync via the SCIM 2.0 protocol for automatic user and group provisioning/de-provisioning. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-ory-polis/identity.jpg",
+        "sha256": "62bfd760848686b2cfe4165cd8df97d8f5749650e39d447691ab6815f821c0ef",
+        "width": 1280,
+        "height": 900,
+        "bytes": 150576,
+        "alt": "ory/polis 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/ory/polis",
+      "evidence": "About 栏的 Apache-2.0 license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "protocols",
+      "value": "SAML、OpenID Connect 单点登录，SCIM 2.0 目录同步",
+      "sourceUrl": "https://github.com/ory/polis",
+      "evidence": "About 栏描述与 README 的 Directory Sync 一节，话题标签里也列了 saml、oidc、scim 相关项",
+      "confidence": 1
+    },
+    {
+      "field": "rebrand",
+      "value": "由 BoxyHQ Jackson 改名而来",
+      "sourceUrl": "https://github.com/ory/polis",
+      "evidence": "提交历史中多次出现的 chore: rename boxyhq to polis 与 ee、helm 目录的对应提交",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "2.3k stars、230 forks、4,669 Commits、207 Releases、Used by 1.8K",
+      "sourceUrl": "https://github.com/ory/polis",
+      "evidence": "About 栏与右侧 Releases、Used by 区的数字",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-ory-polis",
+    "designMdUrl": "https://vislexicon.com/site/github-com-ory-polis.md",
+    "checkedAt": "2026-09-15T11:37:55.068Z",
+    "license": "Apache-2.0"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "77b2bafd0c8542f870517daaa94df1bf9436d7572e3ff71eb0d98a80e0d773a9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-envl-oapack",
+  "entityId": "entity-github-com-envl-oapack",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/Envl/OaPack",
+    "finalUrl": "https://github.com/Envl/OaPack",
+    "checkedAt": "2026-09-15T12:02:32.433Z"
+  },
+  "editorial": {
+    "name": "Envl/OaPack",
+    "descriptionZh": "一个收在单个 npm 包里的小型 React 组件集，README 自称 Oh! a package!。仓库把 Card、Button、DropDown、FilterGroup、Carousel、CubeMenu、Sidebar 几个组件连同一段 single 模式的 JSX 示例摊在首页，没有文档站。",
+    "takeawayZh": "取 FilterGroup、CubeMenu 等组件源码直接用",
+    "noteZh": "落在 Envl/OaPack 的仓库页，README 标题就是 OaPack，副题一句 Oh! a package! which includes frequently used React UI Components。Components 小节按顺序列了 Card、Button、DropDown、FilterGroup、Carousel、CubeMenu、Sidebar，FilterGroup 还带一段 single 模式的 JSX 示例。文件树里 oa-react 与 vallina-js 两个目录的提交说明都写着 readme 和 shiiip，右侧 Languages 条是 JavaScript 63.8% 对 SCSS 32.1%，master 分支 13 Branches、0 Tags，最后一次提交停在 5 年前。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是发布到 npm 的一组通用 React 组件（README 逐个点名 Card、Button、FilterGroup 等），用户拿走的是装进项目就能用的控件，归通用界面组件库；它没有设计系统的令牌与治理栏目，所以不记设计系统套件。",
+        "evidenceUrl": "https://github.com/Envl/OaPack"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:32.433Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "source-available"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Envl/OaPack",
+      "finalUrl": "https://github.com/Envl/OaPack",
+      "title": "GitHub - Envl/OaPack: Oh! a package! · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-envl-oapack/identity.jpg",
+        "sha256": "e5ccf4ad589477a97deaa50da6b4e791cf2f6edb21d60674c660e32e49815844",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98460,
+        "alt": "Envl/OaPack 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "components",
+      "value": "Card、Button、DropDown、FilterGroup、Carousel、CubeMenu、Sidebar",
+      "sourceUrl": "https://github.com/Envl/OaPack",
+      "evidence": "README 的 Components 小节逐个列出，FilterGroup 后面还跟了一段带 initialFilters 的 JSX 示例",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "JavaScript 63.8%、SCSS 32.1%、HTML 3.9%、CSS 0.2%",
+      "sourceUrl": "https://github.com/Envl/OaPack",
+      "evidence": "右侧 About 栏 Languages 色条与其图例",
+      "confidence": 1
+    },
+    {
+      "field": "dependencies",
+      "value": "react ^16.11.0、react-dom ^16.11.0、node-sass ^4.13.0、react-scripts 3.2.0",
+      "sourceUrl": "https://github.com/Envl/OaPack",
+      "evidence": "README 的 Dev Dependencies 代码块",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "70 Commits、13 Branches、0 Tags、5 stars、2 forks、No releases published",
+      "sourceUrl": "https://github.com/Envl/OaPack",
+      "evidence": "Code 页头部与右侧 About 栏、Releases 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-envl-oapack",
+    "designMdUrl": "https://vislexicon.com/site/github-com-envl-oapack.md",
+    "checkedAt": "2026-09-15T12:02:32.433Z",
+    "license": "unknown"
+  }
+}

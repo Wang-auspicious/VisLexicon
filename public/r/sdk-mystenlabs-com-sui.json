@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e53dc6ac83441aeba536fd101056e8a9569a38736ea305bd8f42492be0397d3a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "sdk-mystenlabs-com-sui",
+  "entityId": "entity-sdk-mystenlabs-com-sui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://sdk.mystenlabs.com/sui",
+    "finalUrl": "https://sdk.mystenlabs.com/sui",
+    "checkedAt": "2026-09-15T11:46:45.977Z"
+  },
+  "editorial": {
+    "name": "Sui TypeScript SDK",
+    "descriptionZh": "Mysten Labs 的 Sui TypeScript SDK 文档：一个模块化库，用来向 Sui 的 RPC 节点发查询、构造并签名交易，可以按 @mysten/sui/client、/bcs、/transactions、/zklogin 等子路径单独引用。",
+    "takeawayZh": "装 @mysten/sui，按子路径引 client。",
+    "noteZh": "左侧导航按 Clients、Transactions、Cryptography、BCS、ZkLogin、Transaction Executors、Transaction Plugins、Building SDKs、Migrations 分组；Installation 一节强调这是 ESM only 包，要在 package.json 写 \"type\": \"module\"，TypeScript 项目还要把 moduleResolution 设成 NodeNext、Node16 或 Bundler；Module packages 一节把 @mysten/sui/client 到 @mysten/sui/faucet 十个子路径逐条列出来，Network locations 表给出 local、Devnet、Testnet、Mainnet 的 fullnode 与 faucet 地址。页面顶部横幅提示 @mysten/sui v2.0 与新 dApp Kit 已发布。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是一个可安装的开发库及其接入方式，用户拿走的是 SDK 代码与网络配置，落点在开发工作流而非界面实现，故归构建、部署与开发工作流。",
+        "evidenceUrl": "https://sdk.mystenlabs.com/sui"
+      },
+      {
+        "statement": "虽然域名在 sdk.mystenlabs.com 且候选池标了 Tailwind 组件，但正文与导航里没有任何界面或样式内容，那条子类不成立。",
+        "evidenceUrl": "https://sdk.mystenlabs.com/sui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:45.977Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://sdk.mystenlabs.com/sui",
+      "finalUrl": "https://sdk.mystenlabs.com/sui",
+      "title": "Sui TypeScript SDK | Mysten Labs TypeScript SDK Docs",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/sdk-mystenlabs-com-sui/identity.jpg",
+        "sha256": "dffcd6a9f4c4afb4500b8cfce3e2890f65416c416a0f9bd75fddbbcc3363eeec",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98278,
+        "alt": "Sui TypeScript SDK 首屏：Sui TypeScript SDK"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm i @mysten/sui，且是 ESM only 包",
+      "sourceUrl": "https://sdk.mystenlabs.com/sui",
+      "evidence": "Installation 一节的命令块与 The SDK is published as an ESM only package 一句",
+      "confidence": 1
+    },
+    {
+      "field": "subpackages",
+      "value": "@mysten/sui/client、/bcs、/transactions、/keypairs/*、/verify、/cryptography、/multisig、/utils、/faucet、/zklogin",
+      "sourceUrl": "https://sdk.mystenlabs.com/sui",
+      "evidence": "Module packages 一节的列表",
+      "confidence": 1
+    },
+    {
+      "field": "networks",
+      "value": "local / Devnet / Testnet / Mainnet 各自的 fullnode 与 faucet 地址",
+      "sourceUrl": "https://sdk.mystenlabs.com/sui",
+      "evidence": "Network locations 表格",
+      "confidence": 1
+    },
+    {
+      "field": "versionNotice",
+      "value": "@mysten/sui v2.0 与新的 dApp Kit 已发布，页顶提示看 migration guide",
+      "sourceUrl": "https://sdk.mystenlabs.com/sui",
+      "evidence": "页面顶部横幅",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/sdk-mystenlabs-com-sui",
+    "designMdUrl": "https://vislexicon.com/site/sdk-mystenlabs-com-sui.md",
+    "checkedAt": "2026-09-15T11:46:45.977Z",
+    "license": "unknown"
+  }
+}

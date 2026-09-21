@@ -1,0 +1,159 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "87f5cd877ed86d8cbc21477afd2ab6a4a475a8039533fbe0042349909048b4bf",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-nodejs-nodejs-org",
+  "entityId": "entity-github-com-nodejs-nodejs-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/nodejs/nodejs.org",
+    "finalUrl": "https://github.com/nodejs/nodejs.org",
+    "checkedAt": "2026-09-15T11:47:10.326Z"
+  },
+  "editorial": {
+    "name": "nodejs/nodejs.org",
+    "descriptionZh": "Node.js 官网 nodejs.org 的源码 monorepo。apps/site 是站点本体，packages 里放官网自用的 UI 组件，platforms 目录则按运行平台分代码。",
+    "takeawayZh": "看 Node.js 官网怎么切 apps 和 i18n。",
+    "noteZh": "仓库 About 只有一句 The Node.js® Website。文件列表按 apps/site、platforms、packages、tests 排开，提交记录里有 chore(i18n): sync translations from crowdin、fix(ui): ChangeHistory dropdown width collapses to its min-width、chore(monorepo): break out platform-specific code、chore(test): migrate from Jest to node:test，以及 .vscode 一行的 chore: upgrade to next 15。README 的目录是 What is this repo?、Contributing、Node.js Binaries & API Docs、Relevant Links、Thanks；右侧显示 6.9k star、Fork 6.5k、923 位贡献者、Used by 180、7,203 次提交。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这个仓库最直接的产出是官网本体，但候选池与仓库结构都指向 packages 下的官网 UI 组件层（提交里有 fix(ui) 的改动），因此按「能拿走的组件代码」归到通用界面组件库；需要说明的是它并不是发布给外部复用的组件包，这条归类有不确定性。",
+        "evidenceUrl": "https://github.com/nodejs/nodejs.org"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:10.326Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/nodejs/nodejs.org",
+      "finalUrl": "https://github.com/nodejs/nodejs.org",
+      "title": "GitHub - nodejs/nodejs.org: The Node.js® Website · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-nodejs-nodejs-org/identity.jpg",
+        "sha256": "fa88638f8b51c1446f8fb74f1873bc28d6298aae3029c4a0f5e8dee079adc27a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 50852,
+        "alt": "nodejs/nodejs.org 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/nodejs/nodejs.org",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-nodejs-nodejs-org/identity.jpg",
+          "alt": "nodejs/nodejs.org 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "monorepoLayout",
+      "value": "apps/site、platforms、packages、tests",
+      "sourceUrl": "https://github.com/nodejs/nodejs.org",
+      "evidence": "仓库根目录文件列表的四个目录名",
+      "confidence": 1
+    },
+    {
+      "field": "i18n",
+      "value": "翻译从 Crowdin 同步进来",
+      "sourceUrl": "https://github.com/nodejs/nodejs.org",
+      "evidence": "apps/site 与 .changeset 两行的最新提交信息 chore(i18n): sync translations from crowdin",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "6.9k stars, 6.5k forks, 923 contributors, 7,203 commits, Used by 180",
+      "sourceUrl": "https://github.com/nodejs/nodejs.org",
+      "evidence": "仓库头部计数与右侧 About / Contributors / Used by 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-nodejs-nodejs-org.md",
+  "registryUrl": "/r/github-com-nodejs-nodejs-org.json"
+}

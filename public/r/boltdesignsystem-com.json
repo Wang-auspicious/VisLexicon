@@ -1,0 +1,160 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "67c63c2c81f90c2b738a641dfce8134b387dac3b21dfced6a71f80d3a457fbb0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "boltdesignsystem-com",
+  "entityId": "entity-boltdesignsystem-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://boltdesignsystem.com",
+    "finalUrl": "https://boltdesignsystem.com/",
+    "checkedAt": "2026-09-15T11:56:24.496Z"
+  },
+  "editorial": {
+    "name": "Bolt Design System",
+    "descriptionZh": "一套设计系统的官网入口页，把 React 与 Twig 两条实现并列摆出，让访客按技术栈选一条：React 版文档在 Storybook，Twig / HTML 版在 Pattern Lab，面向 Drupal。",
+    "takeawayZh": "先在 React 与 Twig 两个实现里挑一条路",
+    "noteZh": "首屏深蓝底，黄色小字 BOLT DESIGN SYSTEM 下面是两行大白字 Two systems. One foundation. 和 Choose the path that fits your stack.，两个按钮分别写 Bolt DS (React) → 与 Bolt Twig →。再往下是白底的 Choose your system 一段，两张卡的表头是 FOR REACT-BASED PRODUCTS 和 FOR DRUPAL AND TWIG-BASED PRODUCTS，卡里写明 React 版走 Storybook 文档、Twig 版走 Pattern Lab 与 Drupal-friendly patterns。页脚只剩 Release notes、Gitlab Wiki Home 和一行 All rights reserved 的版权。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是一套设计系统的双实现入口（React 版组件与 Twig 版组件共享同一套视觉语言与无障碍原则），符合设计系统与完整组件套件。",
+        "evidenceUrl": "https://boltdesignsystem.com/"
+      },
+      {
+        "statement": "正文 Both systems share the same visual language, accessibility principles, and design foundations — only the implementation differs. 一句把它的性质说清了：同一设计系统的两种技术落地。",
+        "evidenceUrl": "https://boltdesignsystem.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:56:24.496Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://boltdesignsystem.com",
+      "finalUrl": "https://boltdesignsystem.com/",
+      "title": "Bolt Design System",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/boltdesignsystem-com/identity.jpg",
+        "sha256": "cb60c158674022093e7f53ce439873ee2db3c6bb86bc7ef54249608c90f6ba92",
+        "width": 1280,
+        "height": 900,
+        "bytes": 88550,
+        "alt": "Bolt Design System 首屏：Bolt Design System"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "implementations",
+      "value": "Bolt DS (React) 走 Storybook，Bolt Twig 走 Pattern Lab，后者面向前述 Drupal",
+      "sourceUrl": "https://boltdesignsystem.com/",
+      "evidence": "Choose your system 一段的两张卡正文",
+      "confidence": 1
+    },
+    {
+      "field": "nav",
+      "value": "React Docs、Twig Docs、React Gitlab、Twig Gitlab",
+      "sourceUrl": "https://boltdesignsystem.com/",
+      "evidence": "页面顶部导航项",
+      "confidence": 1
+    },
+    {
+      "field": "copyright",
+      "value": "© Bolt Design System. All rights reserved.",
+      "sourceUrl": "https://boltdesignsystem.com/",
+      "evidence": "页脚版权行；全站没有开源许可证或定价说明",
+      "confidence": 1
+    },
+    {
+      "field": "scope",
+      "value": "页面 description 写明它提供 guidelines、reusable UI components、visual styles、tools，服务 Pega 的数字生态",
+      "sourceUrl": "https://boltdesignsystem.com/",
+      "evidence": "页面 description 原文 The Bolt Design System provides guidelines, reusable UI components, visual styles, tools, and other resources that power Pega's digital ecosystem",
+      "confidence": 0.8
+    },
+    {
+      "field": "resources",
+      "value": "Release notes 与 Gitlab Wiki Home",
+      "sourceUrl": "https://boltdesignsystem.com/",
+      "evidence": "页脚 RESOURCES 一栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/boltdesignsystem-com",
+    "designMdUrl": "https://vislexicon.com/site/boltdesignsystem-com.md",
+    "checkedAt": "2026-09-15T11:56:24.496Z",
+    "license": "unknown"
+  }
+}

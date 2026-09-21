@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f64a60ce78c7543d44b92433f7076c4da07342e5cc145ac4180dc4b3a3fc4c5e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-carasent-asma-asma-ui-core",
+  "entityId": "entity-github-com-carasent-asma-asma-ui-core",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/Carasent-ASMA/asma-ui-core",
+    "finalUrl": "https://github.com/Carasent-ASMA/asma-ui-core",
+    "checkedAt": "2026-09-15T11:55:58.541Z"
+  },
+  "editorial": {
+    "name": "Carasent-ASMA/asma-ui-core",
+    "descriptionZh": "ASMA 产品线自用的 React 与 TypeScript 组件库，用 MUI、Tailwind 和 Storybook 搭起来，README 单列一节讲 Figma 与 React 的对应关系，以及怎么把 MUI 从包里退掉。",
+    "takeawayZh": "看企业组件库怎么把 Figma 稿和 a11y 检查绑进 CI",
+    "noteZh": "仓库在 master 分支，5 Branches、290 Tags、1,223 Commits，最新提交是 ASMA-8097 focus state in every component (#194)。文件列表里 .changeset、.storybook、docs、scripts、src、tw-configs、visual-tests 几个目录的提交说明全带 ASMA- 编号，比如 ASMA-8136 enforce Storybook axe checks: fail builds on new a11y violations 和 ASMA-8143 burn down the cheap-markup axe allowlist (124 -> 67 entries)。右侧 About 写 React/TypeScript UI component library for ASMA, built with MUI, Tailwind, and Storybook.，Release 标 v3.81.4 Latest，共 180 个 release，Contributors 12。README 目录里有 What's in the box、Figma ↔ React matching、Styling API、Theming、Bundle size and the MUI removal、Migrating from the MUI-era version、Troubleshooting 几节。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 的 Figma ↔ React matching、Styling API、Theming 三节讲的是组件与设计稿的对应和用法，交付物是可安装的 React 组件，故归通用界面组件库。",
+        "evidenceUrl": "https://github.com/Carasent-ASMA/asma-ui-core"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:58.541Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Carasent-ASMA/asma-ui-core",
+      "finalUrl": "https://github.com/Carasent-ASMA/asma-ui-core",
+      "title": "GitHub - Carasent-ASMA/asma-ui-core: React/TypeScript UI component library for ASMA, built with MUI, Tailwind, and Storybook. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-carasent-asma-asma-ui-core/identity.jpg",
+        "sha256": "d712f1302fbffcb57d52ae83dfac98a26f26c14b15d28c9b8645a7750d45dd23",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139312,
+        "alt": "Carasent-ASMA/asma-ui-core 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "stack",
+      "value": "React 与 TypeScript，用 MUI、Tailwind 和 Storybook 搭",
+      "sourceUrl": "https://github.com/Carasent-ASMA/asma-ui-core",
+      "evidence": "右侧 About 栏的仓库描述原文",
+      "confidence": 1
+    },
+    {
+      "field": "a11yGate",
+      "value": "Storybook 跑 axe 检查，出现新的无障碍违规会让构建失败；axe 例外清单从 124 条一路清到 67 条",
+      "sourceUrl": "https://github.com/Carasent-ASMA/asma-ui-core",
+      "evidence": ".storybook 与 docs 目录两行的提交说明 ASMA-8136、ASMA-8143",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "Release v3.81.4（Latest），共 180 个 release、290 个 tag、1,223 次提交",
+      "sourceUrl": "https://github.com/Carasent-ASMA/asma-ui-core",
+      "evidence": "右侧 Releases 区块与仓库头部计数",
+      "confidence": 1
+    },
+    {
+      "field": "figmaDoc",
+      "value": "README 有 Figma ↔ React matching 一节，讲设计稿与组件的对应",
+      "sourceUrl": "https://github.com/Carasent-ASMA/asma-ui-core",
+      "evidence": "README 目录里的该标题",
+      "confidence": 1
+    },
+    {
+      "field": "muiRemoval",
+      "value": "有 Bundle size and the MUI removal 与 Migrating from the MUI-era version 两节，scripts 目录的提交写 remove mui and unnecessary dependencies from ui core",
+      "sourceUrl": "https://github.com/Carasent-ASMA/asma-ui-core",
+      "evidence": "README 目录标题与文件列表 scripts 行的提交信息",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-carasent-asma-asma-ui-core",
+    "designMdUrl": "https://vislexicon.com/site/github-com-carasent-asma-asma-ui-core.md",
+    "checkedAt": "2026-09-15T11:55:58.541Z",
+    "license": "unknown"
+  }
+}

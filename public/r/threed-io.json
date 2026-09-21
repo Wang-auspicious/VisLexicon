@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b0fb01a2ffae60cf5c46adb217cd4a88cf4e9479f29f0768b6920b877a516e42",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "threed-io",
+  "entityId": "entity-threed-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://threed.io",
+    "finalUrl": "https://www.google.com/",
+    "checkedAt": "2026-09-15T12:32:29.237Z"
+  },
+  "editorial": {
+    "name": "threed.io",
+    "descriptionZh": "访问 threed.io 会被重定向到 www.google.com，只落得到 Google 搜索首页，看不到 threed.io 自己的任何页面内容。",
+    "takeawayZh": "站点已不可用：域名直接跳到 Google 首页。",
+    "noteZh": "打开 https://threed.io 落到 https://www.google.com/，截图就是 Google 首页：中间是 Google 标志与搜索框，标志上叠着两颗 REGISTER TO VOTE! 圆章，右上是 Sign in 与九宫格图标，页脚是 Advertising、Business、How Search works、Privacy、Terms、Settings。页面上没有出现 threed.io 的品牌名、产品或任何说明文字，站内路径也只有 /imghp、/search、/preferences 这类 Google 自己的地址。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据不足：域名已被重定向到 www.google.com，页面上看不到 threed.io 的任何产品内容，无法从本站页面判断它交付什么。仅依据候选来源把它列在 product-image-mockups 分区这一条线索，暂归图像与样机创作工具，复核时请当作待定条目处理。",
+        "evidenceUrl": "https://www.google.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:32:29.237Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": []
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://threed.io",
+      "finalUrl": "https://www.google.com/",
+      "title": "Google",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/threed-io/identity.jpg",
+        "sha256": "bc602ba387906891d9f6b9706518977f7c355170b0f36338967232894694dafe",
+        "width": 1280,
+        "height": 900,
+        "bytes": 47079,
+        "alt": "threed.io 首屏：Share"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "redirect",
+      "value": "https://threed.io 实测落到 https://www.google.com/",
+      "sourceUrl": "https://threed.io",
+      "evidence": "浏览器实测的 finalUrl 为 https://www.google.com/，首屏截图即 Google 首页",
+      "confidence": 1
+    },
+    {
+      "field": "content",
+      "value": "落地页只有 Google 搜索首页内容：About / Store / Sign in、搜索框、Create images / Ask about files / Brainstorm 按钮与页脚链接",
+      "sourceUrl": "https://www.google.com/",
+      "evidence": "截图与前 2200 字正文里全是 Google 自己的导航与文案，没有任何 threed.io 字样",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/threed-io",
+    "designMdUrl": "https://vislexicon.com/site/threed-io.md",
+    "checkedAt": "2026-09-15T12:32:29.237Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8d5965a7e001514c2a347c00a2eefebc7fa561167386825fdc6f7b5667988630",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-paritytech-js-ui",
+  "entityId": "entity-github-com-paritytech-js-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/paritytech/js-ui",
+    "finalUrl": "https://github.com/paritytech/js-ui",
+    "checkedAt": "2026-09-15T11:48:15.105Z"
+  },
+  "editorial": {
+    "name": "paritytech/js-ui",
+    "descriptionZh": "Parity 团队的 React 组件库仓库，README 标题写的是 Parity UI component library；作者在 2018 年 1 月把它归档成只读，About 栏留了一行 Moved to https://github.com/Parity-JS/ui，后续开发搬去了新仓库。",
+    "takeawayZh": "翻 src 拿走 Parity UI 组件源码",
+    "noteZh": "第一屏最上面是一条黄底横幅：This repository was archived by the owner on Jan 22, 2018. It is now read-only.，仓库名右边挂着 Public archive 标签。About 栏只有一句 Moved to https://github.com/Parity-JS/ui 加一个同名外链，底下 Readme / License / Security policy 三条都在。文件列表停在 master 的 311 次提交，里面是 scripts、src、.babelrc、.stylelintrc.json、.travis.yml 和 package.json；右侧 Releases 写着 No releases published，Used by 230，Languages 是 JavaScript 88% / CSS 11.9% / Shell 0.1%。",
+    "recommendation": null,
+    "pricing": "Free（公开只读仓库）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库 README 标题就是 Parity UI component library，文件清单里是 src 组件源码配 .babelrc / .eslintrc.json / .stylelintrc.json 一整套构建配置，用户来这儿最直接能拿走的是组件与其配置，归组件与设计系统下的通用界面组件库。",
+        "evidenceUrl": "https://github.com/paritytech/js-ui"
+      },
+      {
+        "statement": "不确定：仓库 2018 年已归档只读，页面上没有任何 demo 或文档站可看，分类只依据 README 标题、文件清单与 npm 来源，无法验证组件是否跑得起来。",
+        "evidenceUrl": "https://github.com/paritytech/js-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:15.105Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/paritytech/js-ui",
+      "finalUrl": "https://github.com/paritytech/js-ui",
+      "title": "GitHub - paritytech/js-ui: Moved to https://github.com/Parity-JS/ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-paritytech-js-ui/identity.jpg",
+        "sha256": "1796c2b51e09bbdfc74264f6a5a547e2f8b02665aed2a14aaea40fe9d9fc8e41",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121699,
+        "alt": "paritytech/js-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "archivedStatus",
+      "value": "2018-01-22 被作者归档，仓库现为只读",
+      "sourceUrl": "https://github.com/paritytech/js-ui",
+      "evidence": "页面顶部黄底横幅 This repository was archived by the owner on Jan 22, 2018. It is now read-only.，以及仓库名旁的 Public archive 标签",
+      "confidence": 1
+    },
+    {
+      "field": "movedTo",
+      "value": "https://github.com/Parity-JS/ui",
+      "sourceUrl": "https://github.com/paritytech/js-ui",
+      "evidence": "About 栏正文与页面标题里的 Moved to https://github.com/Parity-JS/ui",
+      "confidence": 1
+    },
+    {
+      "field": "usedBy",
+      "value": "230 个仓库依赖（About 栏写作 Used by 230，旁标 + 223）",
+      "sourceUrl": "https://github.com/paritytech/js-ui",
+      "evidence": "右侧 About 下方的 Used by 230 与缩略头像计数",
+      "confidence": 1
+    },
+    {
+      "field": "languageBreakdown",
+      "value": "JavaScript 88% / CSS 11.9% / Shell 0.1%",
+      "sourceUrl": "https://github.com/paritytech/js-ui",
+      "evidence": "右下角 Languages 的条形图与图例",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "No releases published",
+      "sourceUrl": "https://github.com/paritytech/js-ui",
+      "evidence": "右侧 Releases 栏目全文",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-paritytech-js-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-paritytech-js-ui.md",
+    "checkedAt": "2026-09-15T11:48:15.105Z",
+    "license": "unknown"
+  }
+}

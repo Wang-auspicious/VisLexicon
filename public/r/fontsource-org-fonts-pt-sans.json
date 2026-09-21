@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b38a24854403c34dd93de2e2f274eaf31a8c2ed75eeb0e65767ff716263b48dd",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "fontsource-org-fonts-pt-sans",
+  "entityId": "entity-fontsource-org-fonts-pt-sans",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://fontsource.org/fonts/pt-sans",
+    "finalUrl": "https://fontsource.org/fonts/pt-sans",
+    "checkedAt": "2026-09-15T12:24:19.751Z"
+  },
+  "editorial": {
+    "name": "@fontsource/pt-sans",
+    "descriptionZh": "Fontsource 上 PT Sans 的字族页：Preview / Install / Download / CDN 四条路通向同一个字体包，只发 Regular 与 Bold 两档静态字重。",
+    "takeawayZh": "挑完 PT Sans 两个字重，取 npm 包或 CDN 链",
+    "noteZh": "PT Sans 的灰底标题带里，名字右边两枚标签写 sans-serif 与 google，再往右是 Preview / Install / Download / CDN 四个入口。Font Preview 只排了两行样例，徽标分别是 Regular 400 和 Bold 700，Settings 卡片下面是空的，没有 Variable Axes。页脚也没进首屏，右下角是 ADS VIA CARBON 的广告位。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "fonts-typefaces",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Fontsource 上 PT Sans 的单个字族页，交付物是可直接下载或 npm 安装的字体包本身（Preview / Install / Download / CDN 四个入口都指向它），不是组件、模板或素材，因此在 visual-assets 下归到 fonts-typefaces；页面不带 Variable Axes，只给静态字重。页面未出现任何许可证文本，licenses 只能记 unknown。",
+        "evidenceUrl": "https://fontsource.org/fonts/pt-sans"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:24:19.751Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "font",
+      "code-library"
+    ],
+    "actions": [
+      "preview",
+      "download",
+      "install",
+      "browse"
+    ],
+    "media": [
+      "font",
+      "typography"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://fontsource.org/fonts/pt-sans",
+      "finalUrl": "https://fontsource.org/fonts/pt-sans",
+      "title": "PT Sans | Fontsource",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/fontsource-org-fonts-pt-sans/identity.jpg",
+        "sha256": "f5f4bc46e338de0f075d1422461fbcdb8e91102ad3b98e6d2bd237e75a91cd35",
+        "width": 1280,
+        "height": 900,
+        "bytes": 58434,
+        "alt": "@fontsource/pt-sans 首屏：PT Sans"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "typeface-class",
+      "value": "sans-serif",
+      "sourceUrl": "https://fontsource.org/fonts/pt-sans",
+      "evidence": "字体名右侧第一枚灰色标签上的文字",
+      "confidence": 1
+    },
+    {
+      "field": "source-tag",
+      "value": "google",
+      "sourceUrl": "https://fontsource.org/fonts/pt-sans",
+      "evidence": "字体名右侧第二枚灰色标签上的文字",
+      "confidence": 1
+    },
+    {
+      "field": "weights",
+      "value": "Regular 400、Bold 700",
+      "sourceUrl": "https://fontsource.org/fonts/pt-sans",
+      "evidence": "Font Preview 每行样例右端的字重徽标，页面正文逐条列出全部字重",
+      "confidence": 1
+    },
+    {
+      "field": "page-entries",
+      "value": "Preview / Install / Download / CDN",
+      "sourceUrl": "https://fontsource.org/fonts/pt-sans",
+      "evidence": "灰底标题带右侧的四个入口",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/fontsource-org-fonts-pt-sans",
+    "designMdUrl": "https://vislexicon.com/site/fontsource-org-fonts-pt-sans.md",
+    "checkedAt": "2026-09-15T12:24:19.751Z",
+    "license": "unknown"
+  }
+}

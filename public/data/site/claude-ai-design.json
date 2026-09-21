@@ -1,0 +1,181 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "6b6d81b6804b1b933420fc4f78ba8180d59b0ef555c688a0c861edb4934e4ff6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "claude-ai-design",
+  "entityId": "entity-claude-ai-design",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "claude.com",
+  "official": {
+    "inputUrl": "https://claude.ai/design",
+    "finalUrl": "https://claude.com/product/design",
+    "checkedAt": "2026-09-15T09:56:18.079Z"
+  },
+  "editorial": {
+    "name": "Claude Design",
+    "descriptionZh": "Claude 里专做设计产出的那一块：描述一个原型、幻灯片或单页，它先出草稿，再交给你自己或 Claude Code 继续改。",
+    "takeawayZh": "一句话出原型草稿，可交接给 Claude Code 继续改",
+    "noteZh": "这个页面渲染完整，没被挡住。面包屑是 Product / Claude Design，首屏正中是 Your idea, designed with Claude，副标题写着 Explore more directions than a deadline allows；右下角浮着一张新品卡，标题是 Claude Design stays on brand for daily work，正文列 New design system import、editor and Claude Code sync、higher shared limits、more connected apps，按钮 See what's new。导航把 Claude Design 与 Claude Code、Claude Cowork、Claude Science、Claude Security 并列成同级产品，正文 How it works 之后收在 Start your next design with Claude。",
+    "recommendation": null,
+    "pricing": "Included with a paid Claude plan (Pro and above)",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "ui-prototyping-whiteboard",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是设计草稿而非组件代码：首屏写 Describe a prototype, deck, or one-pager, and Claude builds a draft，动作是先出草稿再自己改，属于原型类工具。",
+        "evidenceUrl": "https://claude.com/product/design"
+      },
+      {
+        "statement": "正文明确写了交接动作 hand it off to your tools or Claude Code，所以它落在设计阶段而非建站交付类。",
+        "evidenceUrl": "https://claude.com/product/design"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:56:18.079Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "design-file"
+    ],
+    "actions": [
+      "generate",
+      "prototype",
+      "edit"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation",
+      "design",
+      "handoff"
+    ],
+    "audiences": [
+      "designer"
+    ],
+    "access": [
+      "login-required",
+      "paid"
+    ],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://claude.ai/design",
+      "finalUrl": "https://claude.com/product/design",
+      "title": "Claude Design | Turn Ideas into Design | Claude by Anthropic",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/claude-ai-design/identity.jpg",
+        "sha256": "a353f419a26dba5abb7a4882a40987c6e10f028a86965fdca828acde04401024",
+        "width": 1280,
+        "height": 900,
+        "bytes": 89968,
+        "alt": "Claude Design 首屏：Claude Design"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://claude.ai/design",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/claude-ai-design/identity.jpg",
+          "alt": "Claude Design 首屏：Claude Design",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "heroCopy",
+      "value": "Your idea, designed with Claude；副标题 Explore more directions than a deadline allows. Describe a prototype, deck, or one-pager, and Claude builds a draft.",
+      "sourceUrl": "https://claude.com/product/design",
+      "evidence": "首屏 h1 与副标题，截图与 live.heads / http.description 一致",
+      "confidence": 1
+    },
+    {
+      "field": "handoff",
+      "value": "Refine it yourself, or hand it off to your tools or Claude Code. You're the designer, from start to finish.",
+      "sourceUrl": "https://claude.com/product/design",
+      "evidence": "首屏副标题末句，截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "promoCard",
+      "value": "页面右下弹卡称 Claude Design stays on brand for daily work，新能力为 design system import、editor 与 Claude Code sync、更高的共享额度、更多已连接的 app",
+      "sourceUrl": "https://claude.com/product/design",
+      "evidence": "首屏右下角新品卡正文，截图可见，按钮为 See what's new",
+      "confidence": 1
+    },
+    {
+      "field": "planAvailability",
+      "value": "Pro 档功能清单里写明 Includes Claude Design，即需付费订阅后使用",
+      "sourceUrl": "https://claude.ai/login",
+      "evidence": "claude.ai 登录页 Explore plans 的 Pro 档清单，live.bodyText 可见",
+      "confidence": 0.9
+    },
+    {
+      "field": "regionGate",
+      "value": "本次 HTTP 抓取被重定向到 claude.com/app-unavailable-in-region，产品页由浏览器阶段另行渲染取得",
+      "sourceUrl": "https://claude.com/product/design",
+      "evidence": "简报 http.finalUrl 与 http.h1 的 App unavailable 记录",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。",
+      "存在付费层：Included with a paid Claude plan (Pro and above)。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/claude-ai-design.md",
+  "registryUrl": "/r/claude-ai-design.json"
+}

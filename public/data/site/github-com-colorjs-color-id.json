@@ -1,0 +1,160 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2f7c47fa196de189f1fb92c5bd9db464c0e01a2fa7a1c12096219868c790431d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-colorjs-color-id",
+  "entityId": "entity-github-com-colorjs-color-id",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/colorjs/color-id",
+    "finalUrl": "https://github.com/colorjs/color-id",
+    "checkedAt": "2026-09-15T12:51:33.498Z"
+  },
+  "editorial": {
+    "name": "colorjs/color-id",
+    "descriptionZh": "把 RGBA 四个通道打包成一个 uint32 整数并能解回来的库，通道值可以走 0..1 归一化或 0..255 字节两种量程。",
+    "takeawayZh": "把 rgba 打包成 uint32，或反向解包",
+    "noteZh": "README 首句是 Pack RGBA color channels into a single uint32 integer and back.，示例给 colorId([1, 0, 0, 1]) // 0xff0000ff、from(0xff0000ff) // [1, 0, 0, 1]，传 false 就按字节算：colorId([255, 0, 0, 255], false) 得 0xff0000ff、from(0xff0000ff, false) 得 [255, 0, 0, 255]，并注明数值会被 clamp 到合法区间、alpha 缺省按 1 或 255 补；Related 一节列出姊妹包 color-rgba 与 color-alpha。仓库 2 star、20 个 commit、2 branches、1 Tag，最新 release v2.0.0，标 MIT license，Used by 21K。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "asset-conversion-optimization",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个在两种表示之间互转色值的库（数组与 uint32 整数），属转换类开发库。",
+        "evidenceUrl": "https://github.com/colorjs/color-id"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:51:33.498Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/colorjs/color-id",
+      "finalUrl": "https://github.com/colorjs/color-id",
+      "title": "GitHub - colorjs/color-id: Convert color to integer · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-colorjs-color-id/identity.jpg",
+        "sha256": "1f4c2fce942d5162b1a1d0b5f958622dcbfa0a3c344b2c03e861cae2df922606",
+        "width": 1280,
+        "height": 900,
+        "bytes": 105379,
+        "alt": "colorjs/color-id 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/colorjs/color-id",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-colorjs-color-id/identity.jpg",
+          "alt": "colorjs/color-id 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "api",
+      "value": "colorId([r,g,b,a], normalized=true) 与 from(n, normalized=true)",
+      "sourceUrl": "https://github.com/colorjs/color-id",
+      "evidence": "README 的 API 一段列出两个函数与 normalized 参数含义（0..1 或 0..255）",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/colorjs/color-id",
+      "evidence": "右侧 About 栏与 README 卡片都标着 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "Used by 21K",
+      "sourceUrl": "https://github.com/colorjs/color-id",
+      "evidence": "右侧 Used by 21K (21K)，下面写 + 21,146",
+      "confidence": 1
+    },
+    {
+      "field": "latest-release",
+      "value": "v2.0.0",
+      "sourceUrl": "https://github.com/colorjs/color-id",
+      "evidence": "右侧 Releases 区标 v2.0.0 Latest、6 months ago",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-colorjs-color-id.md",
+  "registryUrl": "/r/github-com-colorjs-color-id.json"
+}

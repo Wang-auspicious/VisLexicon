@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "700a5cec3abe4cde6e1b33e5f82527db570110ec223afadbe340a1f0e2051116",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "invisionapp-com",
+  "entityId": "entity-invisionapp-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://invisionapp.com",
+    "finalUrl": "https://miro.com/",
+    "checkedAt": "2026-09-15T11:11:52.850Z"
+  },
+  "editorial": {
+    "name": "Miro",
+    "descriptionZh": "invisionapp.com 已经不再指向 InVision：请求这个域名会整站落到 miro.com，看到的是 Miro 的 AI Innovation Workspace 首页——一块把调研、路线图、图表和 workshop 放在同一张画布上、再叠一层 AI 的协作白板。",
+    "takeawayZh": "InVision 域名已归 Miro，只剩一张空白画布首页",
+    "noteZh": "这一条必须如实写：请求 invisionapp.com 之后落到了 https://miro.com/，页面标题是 AI Innovation Workspace | Miro，原来的 InVision 内容一点都看不到。首屏是点阵格纹底，中间大标题 Human collaboration at the speed of AI，下面一句 Where your team and AI think, plan, and build together, in a workspace that works the way you do.，再往下只有一个 Enter your work email 输入框加蓝色 Get started free，小字 No credit card needed.；整屏除了导航和底部 Cookies, anyone? 的同意条之外没有任何产品图。导航把 Product / Use Cases / Solutions / Resources / Pricing 全收进下拉，展开能看到 Intelligent Canvas™、Flows、Prototypes & Wireframes、Mermaid Diagrams、MCP Server、Blueprints、TalkTrack、Enterprise Guard 这些子项，以及 Whiteboard、Diagrams、Kanban、Timelines、Tables、Docs、Slides 八种画布格式。",
+    "recommendation": null,
+    "pricing": "unknown（有 /pricing 页，本次未取到档位）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "invisionapp.com 现在整站重定向到 miro.com，实际渲染出来的是 Miro 这家协作白板产品的官方首页，导航指向自家产品的注册与定价，因此按产品与公司官网归入单站展示，name 以落点站点的自称 Miro 为准。",
+        "evidenceUrl": "https://miro.com/"
+      },
+      {
+        "statement": "http 阶段与浏览器阶段的 finalUrl 都是 https://miro.com/，页面正文自称为 The AI platform for teamwork；原 InVision 的内容在页面上不存在，本条按落点站点如实描述。",
+        "evidenceUrl": "https://miro.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:11:52.850Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "ai"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "prototype"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "desktop",
+      "mcp"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation"
+    ],
+    "audiences": [
+      "designer",
+      "brand-team"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://invisionapp.com",
+      "finalUrl": "https://miro.com/",
+      "title": "AI Innovation Workspace | Miro",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/invisionapp-com/identity.jpg",
+        "sha256": "d40738e9ebb9a5e659543adc60a47c8d2c89dea1900f48b327563253c2cd0492",
+        "width": 1280,
+        "height": 900,
+        "bytes": 94406,
+        "alt": "Miro 首屏：Human collaboration at the speed of AI"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "redirect",
+      "value": "invisionapp.com 现在 301 到 https://miro.com/",
+      "sourceUrl": "https://miro.com/",
+      "evidence": "http 阶段 finalUrl 与浏览器阶段均为 miro.com，页面标题 AI Innovation Workspace | Miro",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "自称 100M+ 人在 Miro 上协作、250+ 应用集成、6,000+ 模板",
+      "sourceUrl": "https://miro.com/",
+      "evidence": "首屏下方三块数字 100M+ / 250+ / 6,000+，正文另写 over 250,000 companies",
+      "confidence": 1
+    },
+    {
+      "field": "formats",
+      "value": "Whiteboard、Diagrams、Kanban、Timelines、TalkTrack、Tables、Docs、Slides",
+      "sourceUrl": "https://miro.com/",
+      "evidence": "导航 Formats 一栏列出的八种画布格式",
+      "confidence": 1
+    },
+    {
+      "field": "aiSurfaces",
+      "value": "AI Overview、AI Workflows、Connectors、MCP Server、Blueprints、Enterprise Guard",
+      "sourceUrl": "https://miro.com/",
+      "evidence": "导航 Platform 一栏的子项，站内另有 /ai/mcp、/ai-playbooks、/capabilities/blueprints",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：unknown（有 /pricing 页，本次未取到档位）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/invisionapp-com",
+    "designMdUrl": "https://vislexicon.com/site/invisionapp-com.md",
+    "checkedAt": "2026-09-15T11:11:52.850Z",
+    "license": "unknown"
+  }
+}

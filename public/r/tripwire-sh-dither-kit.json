@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f7071949e710dc72bfa700ccef3c926cb56cdf2d019578eefbc6d1f20609521b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "tripwire-sh-dither-kit",
+  "entityId": "entity-tripwire-sh-dither-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://tripwire.sh/dither-kit",
+    "finalUrl": "https://www.tripwire.sh/dither-kit",
+    "checkedAt": "2026-09-15T11:40:29.679Z"
+  },
+  "editorial": {
+    "name": "dither-kit",
+    "descriptionZh": "给 shadcn 项目用的抖动（dither）图表组件集：面积、柱、折线、饼、雷达五种图，外加生成式头像、按钮和渐变底色，全部画在一个很小的 canvas 引擎上，不用 recharts。",
+    "takeawayZh": "一条 npx 命令把抖动图表组件加进 shadcn 项目。",
+    "noteZh": "页面是深色终端风，页面标题就是 dither-kit，副标题写 five chart types, generative avatars, buttons, and gradient washes on one tiny canvas engine, no recharts。主视觉是一张蓝紫两色的抖动填充面积图，配一句 scrub it, hover a legend entry to spotlight that series, click to lock it 的交互提示，图例是 Desktop / Mobile。往下 in the wild 一排卡片展示别人拿它做的看板。正文写明需要 Tailwind 和 shadcn 项目，装法是 npx @dither-kit/cli add area-chart，可选项列了 area-chart、bar-chart、pie-chart、radar-chart、avatar、button、gradient、core，并注明 LineChart 藏在 area-chart 里；另有 npx @dither-kit/cli list 看注册表，和一条不走 CLI 的 npx shadcn@latest add 走 tripwire.sh/r/area-chart.json 的写法。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "核心交付物是五类抖动图表组件，用户拿走的是画图的代码，因此归 visual-implementation 下的 data-visualization-code；同时它也发头像、按钮这类普通组件，这部分与通用组件库重叠。",
+        "evidenceUrl": "https://www.tripwire.sh/dither-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:40:29.679Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "marketing"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "canvas",
+      "tailwind",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://tripwire.sh/dither-kit",
+      "finalUrl": "https://www.tripwire.sh/dither-kit",
+      "title": "dither-kit — dithered charts & components for shadcn/ui",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/tripwire-sh-dither-kit/identity.jpg",
+        "sha256": "450fa545666ae7bcf2686b05b7ece3f3bb770535350c6f60b1e135ff1ece0f7a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121691,
+        "alt": "dither-kit 首屏：dither-kit"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "chartTypes",
+      "value": "area, bar, line, pie, radar",
+      "sourceUrl": "https://www.tripwire.sh/dither-kit",
+      "evidence": "页面副标题 Composable, dithered charts, area, bar, line, pie, radar，正文也列出五种图名",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npx @dither-kit/cli add area-chart，或 add dither-kit 装全部",
+      "sourceUrl": "https://www.tripwire.sh/dither-kit",
+      "evidence": "正文 Install with the Dither Kit CLI 一段的命令",
+      "confidence": 1
+    },
+    {
+      "field": "requirements",
+      "value": "需要 Tailwind 与 shadcn 项目",
+      "sourceUrl": "https://www.tripwire.sh/dither-kit",
+      "evidence": "正文一句 Requires Tailwind and a shadcn project.",
+      "confidence": 1
+    },
+    {
+      "field": "registryItems",
+      "value": "area-chart, bar-chart, pie-chart, radar-chart, avatar, button, gradient, core, dither-kit",
+      "sourceUrl": "https://www.tripwire.sh/dither-kit",
+      "evidence": "正文 Available items 一行逐个列出，并注明 LineChart ships inside area-chart",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/tripwire-sh-dither-kit",
+    "designMdUrl": "https://vislexicon.com/site/tripwire-sh-dither-kit.md",
+    "checkedAt": "2026-09-15T11:40:29.679Z",
+    "license": "unknown"
+  }
+}

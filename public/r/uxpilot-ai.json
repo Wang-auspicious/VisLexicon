@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9146a9f3cb05ca93993b976fdaf785b88bc0d835c6c388368a3021419f4e71d1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "uxpilot-ai",
+  "entityId": "entity-uxpilot-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://uxpilot.ai",
+    "finalUrl": "https://uxpilot.ai/",
+    "checkedAt": "2026-09-15T10:35:07.999Z"
+  },
+  "editorial": {
+    "name": "UX Pilot",
+    "descriptionZh": "UX Pilot 用 AI 生成网页应用的线框图和 UI 稿，并宣称能在同一个地方完成构思、设计和交付。首屏给的是 1M+ 用户、每日 80 credits 免费额度和一枚 Start for free 按钮。",
+    "takeawayZh": "写一句需求，拿到可交付的网页应用线框与 UI",
+    "noteZh": "淡米色底，正中是全大写的 SMARTER PRODUCT DESIGN WITH AI, DONE IN SECONDS，其中 DESIGN WITH AI 一段是紫色，下面一行小字 Ideate, design and hand-off web applications in one place.，再往下是荧光绿的 Start for free 按钮与 No credit card needed • 80 daily credits。标题上方有 TRUSTED BY 1M+ USERS 的手绘括弧徽章，左下角斜贴 Made in UX Pilot in <1min，右下角斜贴 Generate Designs & Wireframes。顶部那排导航渲染失败，还是几段灰色占位条，整页渲染后的正文也是空的。",
+    "recommendation": null,
+    "pricing": "Freemium - 每日 80 credits 免费额度，无需信用卡",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "ui-prototyping-whiteboard",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首屏写明 Ideate, design and hand-off web applications in one place，并有两个角标补足动作是生成设计与线框，属 UI 设计与原型。",
+        "evidenceUrl": "https://uxpilot.ai/"
+      },
+      {
+        "statement": "渲染后的 DOM 为空（live.bodyText 与站内路径均为空），分类主要依据首屏截图与页面 title/description，证据强于内容证据。",
+        "evidenceUrl": "https://uxpilot.ai/"
+      },
+      {
+        "statement": "产品是商用 SaaS 而非开源组件，故不归 ui-implementation。",
+        "evidenceUrl": "https://uxpilot.ai/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:35:07.999Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "design-file",
+      "user-flow"
+    ],
+    "actions": [
+      "edit",
+      "generate",
+      "preview",
+      "prototype"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "handoff",
+      "ideation"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://uxpilot.ai",
+      "finalUrl": "https://uxpilot.ai/",
+      "title": "UX Pilot - Superfast UX/UI Design with AI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/uxpilot-ai/identity.jpg",
+        "sha256": "ded37de4dbca14bc4ace139100dc4de98894a4fc9d52fdfb5a4bc91a9ec79b65",
+        "width": 1280,
+        "height": 900,
+        "bytes": 69333,
+        "alt": "UX Pilot 首屏：Smarter Product Design With AI, done in seconds"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "free-tier",
+      "value": "免信用卡、每日 80 credits 的免费额度",
+      "sourceUrl": "https://uxpilot.ai/",
+      "evidence": "首屏 Start for free 按钮下方文字 No credit card needed • 80 daily credits。",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "首屏徽章声称 TRUSTED BY 1M+ USERS",
+      "sourceUrl": "https://uxpilot.ai/",
+      "evidence": "标题上方手绘括弧内的 TRUSTED BY 1M+ USERS。",
+      "confidence": 1
+    },
+    {
+      "field": "scope",
+      "value": "定位是构思、设计、交付一处的网页应用设计工具",
+      "sourceUrl": "https://uxpilot.ai/",
+      "evidence": "副标题 Ideate, design and hand-off web applications in one place. 与右下角 Generate Designs & Wireframes 角标。",
+      "confidence": 1
+    },
+    {
+      "field": "render",
+      "value": "浏览器渲染后正文为空，导航只剩灰色占位条",
+      "sourceUrl": "https://uxpilot.ai/",
+      "evidence": "抓取到的 bodyText 为空字符串、internalPaths 为空数组；截图中导航呈现为无文字的灰色条。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium - 每日 80 credits 免费额度，无需信用卡。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/uxpilot-ai",
+    "designMdUrl": "https://vislexicon.com/site/uxpilot-ai.md",
+    "checkedAt": "2026-09-15T10:35:07.999Z",
+    "license": "unknown"
+  }
+}

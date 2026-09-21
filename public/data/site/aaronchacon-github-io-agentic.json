@@ -1,0 +1,170 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7c722aad29f8b5c6fe28beafb7f12bfccde91f060edaafe40a5c8752bc037024",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "aaronchacon-github-io-agentic",
+  "entityId": "entity-aaronchacon-github-io-agentic",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "aaronchacon.github.io",
+  "official": {
+    "inputUrl": "https://aaronchacon.github.io/agentic",
+    "finalUrl": "https://aaronchacon.github.io/agentic/",
+    "checkedAt": "2026-09-15T11:46:55.789Z"
+  },
+  "editorial": {
+    "name": "agentic",
+    "descriptionZh": "Angular 的 Agent 界面组件库文档站，专做受监管产品：流式聊天、可见的工具调用、执行计划、人工审批闸门和 AI 内容出处标记。目标是让合规团队能签字。",
+    "takeawayZh": "给 AI 的回复加审批闸门和出处标记。",
+    "noteZh": "左栏把内容分成 GETTING STARTED（Introduction / Provenance / Theming）和 COMPONENTS（Chat / Tool Call / Suggestion / Summary / Sidebar / Plan / Approval）两组，顶栏标着 Angular 21 · signals · AG-UI compatible，版本是 agentic v0.1。首页右侧跑了一个 KYC 审核的示例对话：先 Summarize this case，再列 Passport 98% confidence, name matches 和 No sanctions or PEP hits，最后给 Recommendation: approve with a 12-month review。下面三张卡片分别讲 Human-in-the-loop, built in、Provenance by default、Agentic, not just chat，安装命令是 npm i @ng-agentic/core @ng-agentic/themes。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一组可安装的 Angular 组件（Chat、Tool Call、Plan、Approval 等），拿走的是代码而不是模板或文章，所以归通用界面组件库。",
+        "evidenceUrl": "https://aaronchacon.github.io/agentic/"
+      },
+      {
+        "statement": "虽然主题是 AI 与 Agent，但「AI」不是类别而是场景，已记在 facets.scenarios 里；组件本身就是聊天、审批这类通用界面构件，没有做成完整设计系统套件，故不进 design-system-suites。",
+        "evidenceUrl": "https://aaronchacon.github.io/agentic/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:55.789Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "finance",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://aaronchacon.github.io/agentic",
+      "finalUrl": "https://aaronchacon.github.io/agentic/",
+      "title": "agentic — Agent UI for regulated Angular products",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/aaronchacon-github-io-agentic/identity.jpg",
+        "sha256": "1734ae728e24de4be8580cc375a0e404cae3b3dfa0159ee33c7f581acd5adf7f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109325,
+        "alt": "agentic 首屏：Agent UI your compliance team can sign off on"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://aaronchacon.github.io/agentic",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/aaronchacon-github-io-agentic/identity.jpg",
+          "alt": "agentic 首屏：Agent UI your compliance team can sign off on",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "installCommand",
+      "value": "npm i @ng-agentic/core @ng-agentic/themes",
+      "sourceUrl": "https://aaronchacon.github.io/agentic/",
+      "evidence": "首屏 Get started 下方的命令行",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "Chat / Tool Call / Suggestion / Summary / Sidebar / Plan / Approval",
+      "sourceUrl": "https://aaronchacon.github.io/agentic/",
+      "evidence": "左侧边栏 COMPONENTS 分组下的七项，与 internalPaths 的 /agentic/components/* 对应",
+      "confidence": 1
+    },
+    {
+      "field": "positioning",
+      "value": "Angular 21 · signals · AG-UI compatible",
+      "sourceUrl": "https://aaronchacon.github.io/agentic/",
+      "evidence": "首屏 h1 上方的技术标签行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/aaronchacon-github-io-agentic.md",
+  "registryUrl": "/r/aaronchacon-github-io-agentic.json"
+}

@@ -1,0 +1,141 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3c31d266f7a338ccecd0437a051696dab7851d859829828f7749b445d07ac752",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "angellist-com-venture-relay",
+  "entityId": "entity-angellist-com-venture-relay",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "angellist.com",
+  "official": {
+    "inputUrl": "https://angellist.com/venture/relay",
+    "finalUrl": "https://www.angellist.com/venture/relay",
+    "checkedAt": "2026-09-15T10:43:33.448Z"
+  },
+  "editorial": {
+    "name": "AngelList /venture/relay",
+    "descriptionZh": "angellist.com/venture/relay 这个地址现在返回 404，页面写 The page you are looking for doesn't exist or has been moved.，原来的 Relay 产品页已经不在。",
+    "takeawayZh": "这个路径已下线，只剩 404 和一颗回首页按钮",
+    "noteZh": "进去是一张浅灰底的白页，正中很大的深墨绿 404 两个字，下面写 Page not found，再下一行 The page you are looking for doesn't exist or has been moved.，然后一颗 Back to home 的深色按钮。页面上再没有别的内容，imgCount 与 formCount 都是 0，底部同样压着 cookie 同意条。导航里仍是 AngelList 的那一套（Skip to content、USVC、Meridian、Nova、Sign in、Contact sales），页脚也是通用的 Fund Administration 与 Investor Management 产品清单，没有任何 relay 相关的内容。",
+    "recommendation": null,
+    "pricing": "unknown - 404 页面，无定价信息",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据不足：该路径渲染出来是 AngelList 的 404 页（404 / Page not found），没有 Relay 产品的任何内容，只能当作母站里的一个失效路径记录，分类沿用 AngelList 的产品官网。",
+        "evidenceUrl": "https://www.angellist.com/venture/relay"
+      },
+      {
+        "statement": "live.heads 为空、imgCount 与 formCount 均为 0，除 404 文案外没有可判断的信息。",
+        "evidenceUrl": "https://www.angellist.com/venture/relay"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:43:33.448Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://angellist.com/venture/relay",
+      "finalUrl": "https://www.angellist.com/venture/relay",
+      "title": "AngelList | The financial system for private markets",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/angellist-com-venture-relay/identity.jpg",
+        "sha256": "8b32f209cc1452462cdbd20cf998e139005ac30895d48c1cd9199f57a55dcb0e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 43001,
+        "alt": "AngelList /venture/relay 首屏"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://angellist.com/venture/relay",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/angellist-com-venture-relay/identity.jpg",
+          "alt": "AngelList /venture/relay 首屏",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "state",
+      "value": "404 Page not found - The page you are looking for doesn't exist or has been moved.",
+      "sourceUrl": "https://www.angellist.com/venture/relay",
+      "evidence": "首屏标题与正文，截图可见 404 与 Back to home 按钮",
+      "confidence": 1
+    },
+    {
+      "field": "site",
+      "value": "同一域名下的导航仍是 AngelList 的 Skip to content、USVC、Meridian、Nova、Sign in、Contact sales，页脚是 Fund Administration 产品清单",
+      "sourceUrl": "https://www.angellist.com/",
+      "evidence": "live.navLabels 与页脚 Products 栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/angellist-com-venture-relay.md",
+  "registryUrl": "/r/angellist-com-venture-relay.json"
+}

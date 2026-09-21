@@ -1,0 +1,165 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f03163bd8eee85928f4fb600e27f7ba759917ee24b4ba628e97788699c943356",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "supahero-io",
+  "entityId": "entity-supahero-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "supahero.io",
+  "official": {
+    "inputUrl": "https://supahero.io",
+    "finalUrl": "https://supahero.io/",
+    "checkedAt": "2026-09-15T10:42:33.251Z"
+  },
+  "editorial": {
+    "name": "Supahero",
+    "descriptionZh": "按站收录真实网站首屏 hero 区的截图库，每条就是一个 /hero/<站名> 条目，副标题写 Curated collection of beautiful website hero sections。",
+    "takeawayZh": "翻几十个真站 hero，照着决定首屏怎么排",
+    "noteZh": "顶栏一条横幅写 supahero is now part of screensdesign，下面是标题 Website hero section library 与副标题 Curated collection of beautiful website hero sections。卡片是双列铺开的真站截图：Anubi、Better Stack 的 Radically better observability stack、eddie votre assistant de recharge、Lando Norris 的 Lo 主页，每张卡片就直接把对方站点的首屏贴上来。内部路径一路是 /hero/anubi、/hero/better-stack、/hero/zed、/hero/wope 直到 /hero/the-flow-party，几乎占满了整站，另外导航只有 Supahero、UX Apps Library、Make Killer Apps 三项。",
+    "recommendation": null,
+    "pricing": "Free（站内路径只有 / 与 /hero/*，没有任何定价入口）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "case-inspiration-collections",
+    "subcategory": "website-landing-page-cases",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一页页真实网站 hero 截图，内部路径从 /hero/anubi 排到 /hero/the-flow-party，用户动作是浏览与参考，归网站与落地页案例。",
+        "evidenceUrl": "https://supahero.io/"
+      },
+      {
+        "statement": "站内没有可下载的组件、代码或源文件，本次 imgCount 574 基本都是截图本身，因此不归组件与设计系统类。",
+        "evidenceUrl": "https://supahero.io/hero/anubi"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:42:33.251Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "case-screenshot",
+      "image"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "search"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation",
+      "design"
+    ],
+    "audiences": [
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://supahero.io",
+      "finalUrl": "https://supahero.io/",
+      "title": "Supahero - Website hero section library",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/supahero-io/identity.jpg",
+        "sha256": "e80f2a733373a0b948a5d14ffb0795c3c1428f4368a4272555341d43759ed759",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106180,
+        "alt": "Supahero 首屏：Website hero section library"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://supahero.io",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/supahero-io/identity.jpg",
+          "alt": "Supahero 首屏：Website hero section library",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "parentSite",
+      "value": "supahero is now part of screensdesign",
+      "sourceUrl": "https://supahero.io/",
+      "evidence": "首屏最顶部横幅，截图第一行可见",
+      "confidence": 1
+    },
+    {
+      "field": "entryFormat",
+      "value": "每条内容一个 /hero/<slug> 页面，如 /hero/anubi、/hero/better-stack、/hero/lando-norris、/hero/the-flow-party",
+      "sourceUrl": "https://supahero.io/hero/anubi",
+      "evidence": "首页卡片标题与 live.internalPaths 里六十余条 /hero/ 路径",
+      "confidence": 1
+    },
+    {
+      "field": "siblingNav",
+      "value": "导航三项：Supahero、UX Apps Library、Make Killer Apps，右上另有 Search",
+      "sourceUrl": "https://supahero.io/",
+      "evidence": "http.navLabels 与首页顶栏，截图可见",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/supahero-io.md",
+  "registryUrl": "/r/supahero-io.json"
+}

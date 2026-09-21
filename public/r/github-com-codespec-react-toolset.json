@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c292302b69dbd0f1df6b02225b4d19799328bdedc079c95f71526cd8026d309f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-codespec-react-toolset",
+  "entityId": "entity-github-com-codespec-react-toolset",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/codespec/react-toolset",
+    "finalUrl": "https://github.com/codespec/react-toolset",
+    "checkedAt": "2026-09-15T11:39:26.927Z"
+  },
+  "editorial": {
+    "name": "codespec/react-toolset",
+    "descriptionZh": "一个独立的 React UI 组件集合，用 npm 装 @codespec/react-toolset，文档挂在 GitHub Pages 上。仓库 9 年前就停更了，最新版本停在 0.1.2。",
+    "takeawayZh": "参考它的 Button、Label 源码，注意已 9 年没更新",
+    "noteZh": "仓库 h1 是 React Toolset，README 第一句 Independent set of React UI Components for your application.，安装分 npm i --save @codespec/react-toolset 和 yarn 两条，用法给 import { Button } from '@codespec/react-toolset' 以及一套 Webpack 的 babel-loader / scss 配置，文档链接是 codespec.github.io/react-toolset/docs/。整仓库停在 9 年前：文件列表每一项都标 9 years ago，Releases 只有一个 v0.1.2，CHANGELOG.md 的目录说明停在 Release 0.1.2，Contributors 只有 minsooshin（Ted Shin）。About 给 MIT license，标签是 javascript、react、toolset、ui-components，语言条 JavaScript 50.8% / CSS 48.3%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 自述 Independent set of React UI Components for your application.，交付的是一组通用界面控件（Button、Label、Pagination、Breadcrumb、ProgressBar），归通用界面组件库。",
+        "evidenceUrl": "https://github.com/codespec/react-toolset"
+      },
+      {
+        "statement": "仓库没有设计系统层面的 token、治理或指南文档，只有组件与示例页，够不上设计系统套件。",
+        "evidenceUrl": "https://github.com/codespec/react-toolset"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:39:26.927Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/codespec/react-toolset",
+      "finalUrl": "https://github.com/codespec/react-toolset",
+      "title": "GitHub - codespec/react-toolset: React component library · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-codespec-react-toolset/identity.jpg",
+        "sha256": "e0f229329c987d65416cb9a4f21e5b876f9ffd7b6fb9e5959ea5f0e8346a7fe8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 125729,
+        "alt": "codespec/react-toolset 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/codespec/react-toolset",
+      "evidence": "About 侧栏写 MIT license，README 头部也标 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "maintenance",
+      "value": "最后提交约 9 年前，最新版本 v0.1.2",
+      "sourceUrl": "https://github.com/codespec/react-toolset",
+      "evidence": "文件列表所有条目都是 9 years ago，Releases 只有 v0.1.2 一个标签",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm i --save @codespec/react-toolset",
+      "sourceUrl": "https://github.com/codespec/react-toolset",
+      "evidence": "README 的 Install 段落代码块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-codespec-react-toolset",
+    "designMdUrl": "https://vislexicon.com/site/github-com-codespec-react-toolset.md",
+    "checkedAt": "2026-09-15T11:39:26.927Z",
+    "license": "MIT"
+  }
+}

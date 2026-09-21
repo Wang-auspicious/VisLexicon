@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1f75893015797bd3c7b927de664488e7f2182b0ef1c376b7addb031cabf10505",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "bytebot-ai",
+  "entityId": "entity-bytebot-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://bytebot.ai",
+    "finalUrl": "https://www.bytebot.ai/",
+    "checkedAt": "2026-09-15T10:50:27.383Z"
+  },
+  "editorial": {
+    "name": "Bytebot",
+    "descriptionZh": "Bytebot 把一台装了浏览器、文件系统、密码管理器、终端和代码编辑器的 Linux 桌面塞进沙箱，让 AI agent 像人一样点鼠标敲键盘把活干完。官网首屏就是它在这台桌面里把一张发票下载成 PDF 的实录。",
+    "takeawayZh": "看开源桌面 agent 首页怎么用实录演示讲能力",
+    "noteZh": "首屏左上是 Backed by Y Combinator 小标，右上角挂着一个 GitHub Star 11,087 的计数按钮；右侧演示窗里 Firefox 正把 Item #1 $1,000.00 的发票存成 invoice_01_05.pdf，指针停在 Download PDF 上。往下 Why a Desktop Agent 一段用 Move Mouse [432, 423]、Left Click 这类坐标旁白解释它靠触控板操作，再给三段 Use Case：用 Bitwarden 填密码并过 2FA、开终端脚手架新项目、以及 Need help 时用户接管桌面的 Graceful guided recovery。页脚前是 Open Source & Portable，写明可以用 Docker compose 本地跑，也能放 Railway 或 AWS/GCP/Azure。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首屏交付的是 Bytebot 自己的产品首页——标题、实录演示与 Use Case 全在讲这一个桌面 agent，属于产品与公司官网；候选池把它从 saaslandingpage.com 的落地页灵感里收了进来。",
+        "evidenceUrl": "https://www.bytebot.ai/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:50:27.383Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "learn",
+      "install"
+    ],
+    "media": [
+      "ui",
+      "video"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://bytebot.ai",
+      "finalUrl": "https://www.bytebot.ai/",
+      "title": "Bytebot - Desktop agents that use computers like a human — at cloud scale.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/bytebot-ai/identity.jpg",
+        "sha256": "5cb0b626e66c1ad09676da5065f0f548bff1bd6cb7ff59db340c76083ab7629d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 72836,
+        "alt": "Bytebot 首屏：Backed by"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "repoStars",
+      "value": "GitHub Star 11,087",
+      "sourceUrl": "https://www.bytebot.ai/",
+      "evidence": "首屏右上角 Star 按钮上的计数",
+      "confidence": 1
+    },
+    {
+      "field": "deployment",
+      "value": "Docker compose 本地运行，或在 Railway、AWS、GCP、Azure 部署",
+      "sourceUrl": "https://www.bytebot.ai/",
+      "evidence": "Open Source & Portable 段落正文 Run anywhere: locally with Docker compose, on Railway, or deployed on AWS/GCP/Azure.",
+      "confidence": 1
+    },
+    {
+      "field": "bundledApps",
+      "value": "浏览器、文件系统、密码管理器、终端、代码编辑器",
+      "sourceUrl": "https://www.bytebot.ai/",
+      "evidence": "A complete computer 段：Bytebot comes with a browser, file system, password manager, terminal, code editor and more.",
+      "confidence": 1
+    },
+    {
+      "field": "pricingNote",
+      "value": "unknown",
+      "sourceUrl": "https://www.bytebot.ai/",
+      "evidence": "首屏只有 Get Started 与 Star 计数，站内路径只列出 / 与三篇 /blog 文章，没有 pricing 入口",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/bytebot-ai",
+    "designMdUrl": "https://vislexicon.com/site/bytebot-ai.md",
+    "checkedAt": "2026-09-15T10:50:27.383Z",
+    "license": "unknown"
+  }
+}

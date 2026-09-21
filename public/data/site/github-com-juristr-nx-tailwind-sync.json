@@ -1,0 +1,173 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c0ec5f5d85cfa44fb0765edf0541605e9c37cb563a10f91cb1534ebb2ee5e7f7",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-juristr-nx-tailwind-sync",
+  "entityId": "entity-github-com-juristr-nx-tailwind-sync",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/juristr/nx-tailwind-sync",
+    "finalUrl": "https://github.com/juristr/nx-tailwind-sync",
+    "checkedAt": "2026-09-15T11:44:10.990Z"
+  },
+  "editorial": {
+    "name": "juristr/nx-tailwind-sync",
+    "descriptionZh": "一个 Nx sync generator，自动为 monorepo 里 Tailwind v4 的 CSS 补 @source 指令。README 用 Problem / Solution 两节说清它替人手动维护 glob 的活。TypeScript 写的，v0.0.9。",
+    "takeawayZh": "挂一个 generator 自动补 @source 指令",
+    "noteZh": "README 用 Problem 与 Solution 两节把事说透：Tailwind v4 要求给项目根以外的依赖写 @source 指令，monorepo 里手维护容易漏；这个插件遍历 Nx project graph，把所有传递依赖生成进一段 nx-tailwind-sources:start / nx-tailwind-sources:end 注释块里。用法是先 npm install @juristr/nx-tailwind-sync -D，再在 nx.json 的 syncGenerators 里挂上 @juristr/nx-tailwind-sync:source-directives；包在 packages/tailwind-sync-plugin 下。Languages 显示 TypeScript 100%，两位贡献者是 juristr 和 claude。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的是一个挂在 nx.json 的 sync generator，在 build 前自动改 CSS 文件里的 @source 指令，属构建与开发工作流工具，不是组件也不是模板。",
+        "evidenceUrl": "https://github.com/juristr/nx-tailwind-sync"
+      },
+      {
+        "statement": "候选池按 css / tailwind 标签归到 Tailwind 组件下，但仓库里没有任何组件，只有 packages/tailwind-sync-plugin 的生成逻辑，因此不采信该归类。",
+        "evidenceUrl": "https://github.com/juristr/nx-tailwind-sync"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:44:10.990Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "tailwind",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/juristr/nx-tailwind-sync",
+      "finalUrl": "https://github.com/juristr/nx-tailwind-sync",
+      "title": "GitHub - juristr/nx-tailwind-sync: Nx Sync generator to automatically update Tailwind source globs in a monorepo · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-juristr-nx-tailwind-sync/identity.jpg",
+        "sha256": "9ebc74c8715088d675eb32b4dee6765ab9eb973e9788c77ae3d818b773025e02",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127054,
+        "alt": "juristr/nx-tailwind-sync 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/juristr/nx-tailwind-sync",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-juristr-nx-tailwind-sync/identity.jpg",
+          "alt": "juristr/nx-tailwind-sync 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "purpose",
+      "value": "为 Tailwind v4 的 monorepo 自动生成 @source 指令",
+      "sourceUrl": "https://github.com/juristr/nx-tailwind-sync",
+      "evidence": "README 标题 Nx sync generator that auto-manages @source directives in CSS files for Tailwind v4 monorepos，Solution 段写 This plugin traverses the Nx project graph",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "npm install @juristr/nx-tailwind-sync -D，并在 nx.json 的 syncGenerators 里配置",
+      "sourceUrl": "https://github.com/juristr/nx-tailwind-sync",
+      "evidence": "README 的 Usage 段命令与 nx.json 配置片段",
+      "confidence": 1
+    },
+    {
+      "field": "language",
+      "value": "TypeScript 100%",
+      "sourceUrl": "https://github.com/juristr/nx-tailwind-sync",
+      "evidence": "右栏 Languages 条形图与图例",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "未在页面上标注",
+      "sourceUrl": "https://github.com/juristr/nx-tailwind-sync",
+      "evidence": "About 面板只有 Readme 与 Activity 两行，没有 license 条目，仓库文件列表里也没有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "v0.0.9",
+      "sourceUrl": "https://github.com/juristr/nx-tailwind-sync",
+      "evidence": "右栏 Releases 面板 Latest 标签，标 7 months ago，共 11 个 release",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-juristr-nx-tailwind-sync.md",
+  "registryUrl": "/r/github-com-juristr-nx-tailwind-sync.json"
+}

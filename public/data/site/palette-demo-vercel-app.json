@@ -1,0 +1,169 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3af1ab038942b63b7e4af2d5e1f4ba402550d78254fef4cc852fb7a4f0868106",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "palette-demo-vercel-app",
+  "entityId": "entity-palette-demo-vercel-app",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "palette-demo.vercel.app",
+  "official": {
+    "inputUrl": "https://palette-demo.vercel.app",
+    "finalUrl": "https://palette-demo.vercel.app/",
+    "checkedAt": "2026-09-15T12:46:57.135Z"
+  },
+  "editorial": {
+    "name": "AI Palette",
+    "descriptionZh": "一个 React 组件：用 OpenAI 的 GPT 加配色理论生成成套色板，也能从图片里抽色，内置五种配色和谐规则。",
+    "takeawayZh": "把这个 React 组件装进项目，让 AI 直接吐出一套配色",
+    "noteZh": "深色首屏：左上角 AI Palette 字标，右上角 Documentation / Demo / Examples 三个链接；正中大标题 Generate beautiful color palettes，其中 color palettes 两个词是紫蓝色，副标题自述 AI Palette is a powerful React component。下面并排两个按钮，Try Demo 是实心紫、Documentation 是描边。再往下一块 Everything you need for color generation，横排三张卡：AI-Powered Generation、Multiple Color Harmonies、Image-based Generation，每张卡顶一个圆形线框图标，标题用蓝色。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站上明确自称 React component（首屏副标题与正文都写 AI Palette is a powerful React component），交付物是能 import 进 React 项目的一个组件，属通用界面组件库。",
+        "evidenceUrl": "https://palette-demo.vercel.app/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:46:57.135Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://palette-demo.vercel.app",
+      "finalUrl": "https://palette-demo.vercel.app/",
+      "title": "AI Palette - Color Palette Generator",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/palette-demo-vercel-app/identity.jpg",
+        "sha256": "1a7d546234e08adcb4e2edf5d07c67bba21a61da1b02a7f48fee3b27a24b3f70",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84855,
+        "alt": "AI Palette 首屏：Generate beautiful color palettes"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://palette-demo.vercel.app",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/palette-demo-vercel-app/identity.jpg",
+          "alt": "AI Palette 首屏：Generate beautiful color palettes",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "selfDescription",
+      "value": "AI Palette is a powerful React component that generates harmonious color palettes using AI and color theory.",
+      "sourceUrl": "https://palette-demo.vercel.app/",
+      "evidence": "首屏副标题，截图与 live.bodyText 同文",
+      "confidence": 1
+    },
+    {
+      "field": "harmonies",
+      "value": "analogous、complementary、triadic、tetradic、monochromatic 五种配色和谐",
+      "sourceUrl": "https://palette-demo.vercel.app/",
+      "evidence": "Multiple Color Harmonies 卡片与 live.bodyText 的列举",
+      "confidence": 1
+    },
+    {
+      "field": "features",
+      "value": "AI-Powered Generation（走 OpenAI 的 GPT 模型）、Multiple Color Harmonies、Image-based Generation 三张卡",
+      "sourceUrl": "https://palette-demo.vercel.app/",
+      "evidence": "首屏 Everything you need for color generation 段的三张卡，逐张数过",
+      "confidence": 1
+    },
+    {
+      "field": "nav",
+      "value": "Documentation / Demo / Examples，对应 /docs、/demo、/examples",
+      "sourceUrl": "https://palette-demo.vercel.app/",
+      "evidence": "首屏右上角导航与 live.internalPaths",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/palette-demo-vercel-app.md",
+  "registryUrl": "/r/palette-demo-vercel-app.json"
+}

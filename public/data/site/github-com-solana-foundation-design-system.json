@@ -1,0 +1,175 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d1a76018a3159d984e4352375cc324cc114d4dddb043ff10404bc7457b740b55",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-solana-foundation-design-system",
+  "entityId": "entity-github-com-solana-foundation-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/solana-foundation/design-system",
+    "finalUrl": "https://github.com/solana-foundation/design-system",
+    "checkedAt": "2026-09-15T11:51:15.019Z"
+  },
+  "editorial": {
+    "name": "solana-foundation/design-system",
+    "descriptionZh": "Solana Foundation 的组件库：React 加 Tailwind CSS v4、Base UI 和 Motion，组件用 shadcn CLI 按需拉进项目，源码直接归你。",
+    "takeawayZh": "用 shadcn CLI 逐件拉走，源码直接进项目",
+    "noteZh": "README 写着 Built with React, Tailwind CSS v4, Base UI, and Motion.，安装给了两条：npx shadcn@latest add https://design.solana.com/r/button.json（把组件源码拷进项目）和 pnpm add @solana/design-system @base-ui/react motion。README 后面还有 Next.js App Router notes、Components、Tech Stack、Color System 几节；语言统计 TypeScript 84.7% 加 CSS 13.4%。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库名与技术栈都指向一套完整设计系统（README 有 Color System、Components、Tech Stack 等节），交付组件且可整体接入，所以归设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/solana-foundation/design-system"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:51:15.019Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "base-ui",
+      "motion",
+      "shadcn-ui",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/solana-foundation/design-system",
+      "finalUrl": "https://github.com/solana-foundation/design-system",
+      "title": "GitHub - solana-foundation/design-system: Solana Design System · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-solana-foundation-design-system/identity.jpg",
+        "sha256": "d34e55a35acf430b44768640250a93106205462b0040ca8b4c585aab8e142748",
+        "width": 1280,
+        "height": 900,
+        "bytes": 129004,
+        "alt": "solana-foundation/design-system 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/solana-foundation/design-system",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-solana-foundation-design-system/identity.jpg",
+          "alt": "solana-foundation/design-system 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "techStack",
+      "value": "React + Tailwind CSS v4 + Base UI + Motion",
+      "sourceUrl": "https://github.com/solana-foundation/design-system",
+      "evidence": "README 的 Built with ... 一句",
+      "confidence": 1
+    },
+    {
+      "field": "shadcnInstall",
+      "value": "npx shadcn@latest add https://design.solana.com/r/button.json",
+      "sourceUrl": "https://github.com/solana-foundation/design-system",
+      "evidence": "README 的 Installation 段，注明会把组件源码拷进项目",
+      "confidence": 1
+    },
+    {
+      "field": "npmPackages",
+      "value": "@solana/design-system、@base-ui/react、motion",
+      "sourceUrl": "https://github.com/solana-foundation/design-system",
+      "evidence": "README 的 npm package 安装命令",
+      "confidence": 1
+    },
+    {
+      "field": "languageBreakdown",
+      "value": "TypeScript 84.7% / CSS 13.4%",
+      "sourceUrl": "https://github.com/solana-foundation/design-system",
+      "evidence": "About 下方的 Languages 条",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-solana-foundation-design-system.md",
+  "registryUrl": "/r/github-com-solana-foundation-design-system.json"
+}

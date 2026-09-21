@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b258213affaa436f4b6f68dcdc0b9ffc09671e6aa78f434b20b78abb2d895814",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mock-video",
+  "entityId": "entity-mock-video",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://mock.video",
+    "finalUrl": "https://mock.video/",
+    "checkedAt": "2026-09-15T12:31:38.521Z"
+  },
+  "editorial": {
+    "name": "Mock",
+    "descriptionZh": "Mock.Video 把手机或电脑的录屏套进设备边框里，选机型、颜色、朝向和背景色后，导出成各社交平台的样机视频。",
+    "takeawayZh": "传一段录屏，套上 iPhone 机身框，导成 Instagram 尺寸。",
+    "noteZh": "左边一大块预览里是台 iPhone 16 Plus，墨绿背景上机身边框留着圆角；右边的表单自上而下是 Video file、Device、Model、Orientation、Background color，颜色框里写着 #768768。Device 一栏下面标着 Screen dimensions 1290×2796，上传限制写着 'Up to 5 minutes. Pro users get 10 minutes.'。Background image、Watermark、Resolution 三项都挂着 Pro 标记，最后一栏是 Export 的尺寸预设（YouTube、Instagram Story、Instagram Post、Facebook Post、Twitter Post、Dribbble Shot HD）和一枚 Create Video 按钮。右上角的说明卡写着 'Ready. Set. Mock.'。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点是一个在线的视频样机生成器：输入录屏、输出带设备边框的样机视频，交付物是视频成品，因此归到视频创作工具而非模板库。",
+        "evidenceUrl": "https://mock.video/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:31:38.521Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "video"
+    ],
+    "actions": [
+      "generate",
+      "export",
+      "edit",
+      "preview"
+    ],
+    "media": [
+      "video"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "publish"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mock.video",
+      "finalUrl": "https://mock.video/",
+      "title": "Mock - Instantly create video mockups by adding a device frame to your screen recordings.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/mock-video/identity.jpg",
+        "sha256": "960329cec250813630656ff456faa192ef03ed0b1eb6da346cbe5e2ac8674bfd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 67769,
+        "alt": "Mock 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "freeLimit",
+      "value": "免费用户上传上限 5 分钟，Pro 用户 10 分钟",
+      "sourceUrl": "https://mock.video/",
+      "evidence": "Video file 字段下方小字 'Up to 5 minutes. Pro users get 10 minutes.'",
+      "confidence": 1
+    },
+    {
+      "field": "defaultDevice",
+      "value": "Apple iPhone 16 Plus，屏幕尺寸 1290×2796",
+      "sourceUrl": "https://mock.video/",
+      "evidence": "Device 下拉默认选中该项，下面标注 Screen dimensions 1290×2796",
+      "confidence": 1
+    },
+    {
+      "field": "exportPresets",
+      "value": "YouTube、Instagram Story、Instagram Post、Facebook Post、Twitter Post、Dribbble Shot、Dribbble Shot HD",
+      "sourceUrl": "https://mock.video/",
+      "evidence": "Export 一节列出的尺寸预设",
+      "confidence": 1
+    },
+    {
+      "field": "proFeatures",
+      "value": "换背景图、去 Mock 水印、2x 分辨率导出",
+      "sourceUrl": "https://mock.video/",
+      "evidence": "Background image、Watermark、Resolution 三项各自的 Pro 说明",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/mock-video",
+    "designMdUrl": "https://vislexicon.com/site/mock-video.md",
+    "checkedAt": "2026-09-15T12:31:38.521Z",
+    "license": "unknown"
+  }
+}

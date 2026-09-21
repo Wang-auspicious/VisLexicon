@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "eb7096a907692117f5739c27d76c5702fea47d10bbb662f46d959cfffae92a40",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "uigarage-net",
+  "entityId": "entity-uigarage-net",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://uigarage.net",
+    "finalUrl": "https://www.uigarage.net/",
+    "checkedAt": "2026-09-15T10:42:47.571Z"
+  },
+  "editorial": {
+    "name": "UI Garage",
+    "descriptionZh": "首页只剩一条关站公告：运营 8 年的 UI 设计模式库 UI Garage 停止更新并关闭，作者 Philippe H. 转去做 Cromojo。",
+    "takeawayZh": "这里已经关站，除了公告没有别的",
+    "noteZh": "整页白底，只有一个 UI Garage 徽标加一条 UI Garage is closing down。公告四段：I started UI Garage 8 years ago. At the time my vision was to share all the design patterns…；After being featured in Product Hunt being #1 product of the day…；I'm moving on to project that I truly care and am motivated to pursue: Cromojo…；落款 Love and see you soon on the internet / Philippe H.。原先的设计模式索引在这版页面里已经看不到了，live.imgCount 只有 1，就是页面上那枚徽标，internalPaths 也是空的，除首页外没有别的路径。",
+    "recommendation": null,
+    "pricing": "unknown（服务已关闭，页面只有关站公告，无任何定价信息）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "case-inspiration-collections",
+    "subcategory": "product-ui-screen-flow-cases",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站内已无任何界面案例，只剩关站说明；按它原来自述的定位（share all the design patterns so every designers can come and search for specific UI interface and experience）归产品界面、截图与流程，但分类证据不足。",
+        "evidenceUrl": "https://uigarage.net/"
+      },
+      {
+        "statement": "说明：证据不足——页面内容只剩公告，无法核实原先模式库的规模与结构；本次只有首屏一张截图，live 记录里 internalPaths 为空。",
+        "evidenceUrl": "https://uigarage.net/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:42:47.571Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://uigarage.net",
+      "finalUrl": "https://www.uigarage.net/",
+      "title": "UI Garage Website",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/uigarage-net/identity.jpg",
+        "sha256": "fc898e77086b9298157411d2ed85f254e9cba1bce41aeea34235d55d006b9696",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86043,
+        "alt": "UI Garage 首屏：UI Garage is closing down"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "shutdown",
+      "value": "UI Garage is closing down",
+      "sourceUrl": "https://uigarage.net/",
+      "evidence": "首屏唯一一条标题，截图与 live.heads 第一条一致",
+      "confidence": 1
+    },
+    {
+      "field": "history",
+      "value": "运营 8 年，曾被 Product Hunt 选为 #1 product of the day；作者 Philippe H. 转去做 Cromojo（https://cromojo.com）",
+      "sourceUrl": "https://uigarage.net/",
+      "evidence": "关站公告正文第二、三段",
+      "confidence": 1
+    },
+    {
+      "field": "contentLeft",
+      "value": "除首页外没有其他路径，本次 live.imgCount 为 1（页面上只有徽标一张图）",
+      "sourceUrl": "https://uigarage.net/",
+      "evidence": "简报 live.internalPaths 为空数组、imgCount 为 1，首屏截图对应",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/uigarage-net",
+    "designMdUrl": "https://vislexicon.com/site/uigarage-net.md",
+    "checkedAt": "2026-09-15T10:42:47.571Z",
+    "license": "unknown"
+  }
+}

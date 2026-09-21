@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "30a32c10c4b9ed9f125f68c06cf602eba2935340bf4d6f9e040e2bdb3ba07203",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mineew-github-io-components-ui",
+  "entityId": "entity-mineew-github-io-components-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://mineew.github.io/components-ui",
+    "finalUrl": "https://mineew.github.io/components-ui/?path=/story/inputs-button--default",
+    "checkedAt": "2026-09-15T11:46:16.660Z"
+  },
+  "editorial": {
+    "name": "@mineew/components-ui",
+    "descriptionZh": "@mineew/components-ui 发布在 GitHub Pages 上的 Storybook，左栏按 INPUTS、FEEDBACK、DATA DISPLAY、UTILS 四组分列组件，画布里是 Sign In、Register、Delete 与四个 Loading 态按钮。",
+    "takeawayZh": "在 Storybook 里逐个点开 @mineew 的组件状态",
+    "noteZh": "进去是一个没改过标题的 Storybook（浏览器标题仍是 @storybook/cli - Storybook）。左栏第一组 INPUTS 下面是 Button（Default、With Icon）、Checkbox、Combobox、Input、PasswordInput、Radio、Select、Switch；FEEDBACK 组是 ErrorClosable、ErrorReloadable、Skeleton、Spinner、Toast、ToastProvider、Tooltip；DATA DISPLAY 组是 Card、DropdownMenu、Tag；UTILS 组是 Placeholder、SelectIndicator、SelectMenu。画布停在 inputs-button--default，从上往下排着 Default（Sign In）、Primary（Register）、Danger（Delete）、Loading（四枚 loading 态按钮）。右上角 Controls 面板写着 No inputs found for this component. Read the docs。",
+    "recommendation": null,
+    "pricing": "unknown（Storybook 页面没有任何定价或授权信息）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一套界面组件及其 Storybook 演示（Button、Input、Toast、Card 等按用途分组），用户来这儿是逐个看组件状态，归 ui-implementation 下的 general-ui-components。",
+        "evidenceUrl": "https://mineew.github.io/components-ui/?path=/story/inputs-button--default"
+      },
+      {
+        "statement": "页面看不到项目自述、许可证或任何技术栈说明（站点标题还是 Storybook 默认值），所以 technologies 留空、licenses 记 unknown。",
+        "evidenceUrl": "https://mineew.github.io/components-ui/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:16.660Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "test"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mineew.github.io/components-ui",
+      "finalUrl": "https://mineew.github.io/components-ui/?path=/story/inputs-button--default",
+      "title": "Inputs / Button - Default ⋅ Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/mineew-github-io-components-ui/identity.jpg",
+        "sha256": "29c363584b643c431137006b706c8062821020f89898d60034ac8dcb1ee2ab0e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 53254,
+        "alt": "@mineew/components-ui 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "sidebarGroups",
+      "value": "INPUTS（Button / Checkbox / Combobox / Input / PasswordInput / Radio / Select / Switch）、FEEDBACK（ErrorClosable / ErrorReloadable / Skeleton / Spinner / Toast / ToastProvider / Tooltip）、DATA DISPLAY（Card / DropdownMenu / Tag）、UTILS（Placeholder / SelectIndicator / SelectMenu）",
+      "sourceUrl": "https://mineew.github.io/components-ui/?path=/story/inputs-button--default",
+      "evidence": "左栏分组标题与组件列表，截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "canvasStates",
+      "value": "Default 配 Sign In、Primary 配 Register、Danger 配 Delete、Loading 是四枚不同底色的 loading 按钮",
+      "sourceUrl": "https://mineew.github.io/components-ui/?path=/story/inputs-button--default",
+      "evidence": "画布上的四段标题与按钮，截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "storyPath",
+      "value": "URL 落在 ?path=/story/inputs-button--default，页面标题是 @storybook/cli - Storybook",
+      "sourceUrl": "https://mineew.github.io/components-ui/",
+      "evidence": "简报里的 finalUrl 与 http.title",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/mineew-github-io-components-ui",
+    "designMdUrl": "https://vislexicon.com/site/mineew-github-io-components-ui.md",
+    "checkedAt": "2026-09-15T11:46:16.660Z",
+    "license": "unknown"
+  }
+}

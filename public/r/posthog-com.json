@@ -1,0 +1,164 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "13fc0b6c8afea73e60acf5d6b9dec8c6686f482d85a81b92b8e2e4e90c8e7e38",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "posthog-com",
+  "entityId": "entity-posthog-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://posthog.com",
+    "finalUrl": "https://posthog.com/",
+    "checkedAt": "2026-09-15T10:41:16.463Z"
+  },
+  "editorial": {
+    "name": "PostHog",
+    "descriptionZh": "产品分析平台，把 Product Analytics、Session Replay、Error Tracking、Feature Flags、Experiments、Surveys 放在同一份数据上，新的 PostHog AI 会用这些数据回答提问并直接开 PR。按用量计费，官方称 97% 用户不付费。",
+    "takeawayZh": "用 PostHog AI 把广告、漏斗和支付日志串起来定位流失",
+    "noteZh": "首屏背景是草地，中间浮着一块毛玻璃窗口，主标题 Make your product self-driving，窗口里三张标签 Ask PostHog anything / Give agents product context / Ship with PostHog。第一张是一段示例对话：从 Google Ads 流量追到 PostHog funnels 再到 Stripe payments 和 GitHub 改动，最后定位到 mobile checkout 多了一个必填字段，并标注 All findings are sample data.。左侧竖排导航 Home / Self-driving product / Context warehouse / Pricing / Docs / Demo / Talk to a human，右侧竖排 About us / Changelog / Company handbook / Store / Careers / Trash，两列恰好把文档和公司信息都摊在首屏。安装卡写 97% of users pay us $0 和 Setup wizard installs PostHog for you，另有 Install with AI 按钮。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "research-quality-tools",
+    "subcategory": "behavior-analytics-feedback",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站上交付的是产品行为分析能力——Analytics、Session Replay、Error Tracking、Feature Flags、Experiments、Surveys，用户拿走的是对自己产品使用数据的结论，与 Hotjar 同类归入行为分析与反馈。",
+        "evidenceUrl": "https://posthog.com/"
+      },
+      {
+        "statement": "产品页逐项列出 /product-analytics、/session-replay、/error-tracking、/web-analytics、/feature-flags、/experiments、/surveys，形态是分析工具的功能矩阵而非组件或素材。",
+        "evidenceUrl": "https://posthog.com/products"
+      },
+      {
+        "statement": "新增的 Context warehouse 与 MCP 文档让它同时是 agent 的上下文层，但用户最直接拿走的仍是分析结论，故不改主类。",
+        "evidenceUrl": "https://posthog.com/context-warehouse"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:41:16.463Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "ai",
+      "ecommerce"
+    ],
+    "deliverables": [
+      "report"
+    ],
+    "actions": [
+      "audit",
+      "test",
+      "compare",
+      "browse",
+      "install"
+    ],
+    "media": [
+      "data-visualization",
+      "video",
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "api",
+      "desktop",
+      "mcp"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "test",
+      "build",
+      "discovery"
+    ],
+    "audiences": [
+      "developer",
+      "designer",
+      "researcher"
+    ],
+    "access": [
+      "freemium",
+      "login-required"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://posthog.com",
+      "finalUrl": "https://posthog.com/",
+      "title": "PostHog – We make your product self-driving",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/posthog-com/identity.jpg",
+        "sha256": "9c2d73d91cde1c455ad1a8c37b4399824ddd8f840a50e6ef6fe60d07e2cbe001",
+        "width": 1280,
+        "height": 900,
+        "bytes": 126333,
+        "alt": "PostHog 首屏：Make your product self-driving"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "按用量计费（Usage-based pricing），免费额度内 97% 用户不付费、无需信用卡",
+      "sourceUrl": "https://posthog.com/pricing",
+      "evidence": "首屏小标题 Usage-based pricing，安装卡三条写 97% of users pay us $0／No credit card required／Setup wizard installs PostHog for you",
+      "confidence": 1
+    },
+    {
+      "field": "featureList",
+      "value": "Product Analytics、Session Replay、Error Tracking、Web Analytics、Feature Flags、Experiments、Surveys、Managed warehouse、CDP、Workflows、Logs、AI Observability、Endpoints、Inbox、Traces、Heatmaps、Replay Vision、No-code A/B Testing",
+      "sourceUrl": "https://posthog.com/products",
+      "evidence": "Built-in tools for your agents 段落连续列出的工具名，重复两遍",
+      "confidence": 1
+    },
+    {
+      "field": "agentContext",
+      "value": "提供 MCP 接入文档，覆盖 Codex、Cursor、VS Code",
+      "sourceUrl": "https://posthog.com/docs/model-context-protocol/cursor",
+      "evidence": "站内路径 /docs/model-context-protocol/codex、/cursor、/vscode 与首屏 Give agents product context 标签",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/posthog-com",
+    "designMdUrl": "https://vislexicon.com/site/posthog-com.md",
+    "checkedAt": "2026-09-15T10:41:16.463Z",
+    "license": "unknown"
+  }
+}

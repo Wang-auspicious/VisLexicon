@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4c2d132d6ee694fb4dbfb5bb93f95b88955246836119a9903bd1a94978f29ccb",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-revenuecat-react-native-purchases",
+  "entityId": "entity-github-com-revenuecat-react-native-purchases",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/revenuecat/react-native-purchases",
+    "finalUrl": "https://github.com/revenuecat/react-native-purchases",
+    "checkedAt": "2026-09-15T12:05:23.161Z"
+  },
+  "editorial": {
+    "name": "RevenueCat/react-native-purchases",
+    "descriptionZh": "RevenueCat 官方的 React Native 内购与订阅 SDK，About 里写明支持 iOS、Android 和 web，仓库另带一个 react-native-purchases-ui 子包。",
+    "takeawayZh": "把内购订阅接进 RN，含 paywall UI 包。",
+    "noteZh": "About 那段是 “React Native in-app purchases and subscriptions made easy. Support for iOS, Android and web.”，下面挂了 www.revenuecat.com 官网链接和 android、api、ios、react-native、stripe、web 六个标签。根目录的文件列表很长，react-native-purchases-ui、react-native-purchases-store-galaxy、migrations、apitesters、fastlane、e2e-tests、examples 各占一行，CI 走的是 .circleci。提交历史大半是 “AUTOMATIC BUMP” 和语义化发布，最新一条把 purchases-hybrid-common 升到 19.0.0。侧栏是 MIT license、1.2k stars、Used by 2.2K、Releases 293 条。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的是接内购与订阅的 RN/Expo 原生 SDK 及其 UI 子包，不是可点选的界面组件集合；现有词典里没有更贴的子类，放进交付与开发工具下最接近的一格，这条分类把握一般。",
+        "evidenceUrl": "https://github.com/revenuecat/react-native-purchases"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:05:23.161Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/revenuecat/react-native-purchases",
+      "finalUrl": "https://github.com/revenuecat/react-native-purchases",
+      "title": "GitHub - RevenueCat/react-native-purchases: React Native in-app purchases and subscriptions made easy. Support for iOS, Android and web. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-revenuecat-react-native-purchases/identity.jpg",
+        "sha256": "48b06d8784acd2362235881495cd2a8cb281f405573ac75f6e44b4d427fe92a5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 151996,
+        "alt": "RevenueCat/react-native-purchases 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/revenuecat/react-native-purchases",
+      "evidence": "仓库右栏 About 区块的 MIT license 条目",
+      "confidence": 1
+    },
+    {
+      "field": "platforms",
+      "value": "iOS, Android and web",
+      "sourceUrl": "https://github.com/revenuecat/react-native-purchases",
+      "evidence": "About 描述原文与话题标签里的 android、ios、web 三项",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "react-native-purchases-ui, react-native-purchases-store-galaxy",
+      "sourceUrl": "https://github.com/revenuecat/react-native-purchases",
+      "evidence": "仓库根目录文件列表里并列的两个子包目录",
+      "confidence": 1
+    },
+    {
+      "field": "popularity",
+      "value": "1.2k stars, 118 forks, Used by 2.2K, Releases 293",
+      "sourceUrl": "https://github.com/revenuecat/react-native-purchases",
+      "evidence": "仓库页顶部数字与右栏 Releases 区块，最新版 10.9.1",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-revenuecat-react-native-purchases",
+    "designMdUrl": "https://vislexicon.com/site/github-com-revenuecat-react-native-purchases.md",
+    "checkedAt": "2026-09-15T12:05:23.161Z",
+    "license": "MIT"
+  }
+}

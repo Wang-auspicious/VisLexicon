@@ -1,0 +1,170 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3340b31b07d9237a98c89f369a57d25eb261cb3c6cd74e39a2010a1fac808233",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "producthunt-com",
+  "entityId": "entity-producthunt-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "producthunt.com",
+  "official": {
+    "inputUrl": "https://producthunt.com",
+    "finalUrl": "https://www.producthunt.com/",
+    "checkedAt": "2026-09-15T10:41:20.553Z"
+  },
+  "editorial": {
+    "name": "Product Hunt",
+    "descriptionZh": "按天排的新产品榜，Top Products Launching Today 下面每条给一句自述和话题标签（Design Tools、Artificial Intelligence），右侧栏挂 Upcoming events 与 Trending Forum Threads。抓取时 http 阶段被 Cloudflare 挡成 403。",
+    "takeawayZh": "看当天榜单里同类产品的第一句自述怎么写",
+    "noteZh": "顶栏 P logo、搜索框写 Search ( ctrl + k )，后面跟 Best Products / Launches / News / Forums / Advertise。主区标题 Top Products Launching Today，下面一行小字解释 For the first 4 hours of the day, we're hiding upvotes to help every product get a chance to catch your interest.。榜单条目是 Proofrr、Anthropologic、Axari、Voiskey，各带话题标签和上下箭头计数。右栏 Upcoming events 挂着 SEP 18 GPT-6 Astra Challenge，再往下 Trending Forum Threads 是 p/producthunt 和 p/general 的帖子并带 Upvote 数。页面底部压着 cookie 弹窗和一个 viktor.com 广告位。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "directories-indexes",
+    "subcategory": "tool-service-directories",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是按天更新的产品索引，每条链到 /products/<slug> 并带话题标签，用户拿走的是「今天有什么新东西」这份清单。",
+        "evidenceUrl": "https://www.producthunt.com/"
+      },
+      {
+        "statement": "站内 /categories/… 与 /topics/… 两层分类路径并存（如 /categories/figma-plugins、/topics/design-tools），是目录站的结构。",
+        "evidenceUrl": "https://www.producthunt.com/categories"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:41:20.553Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "marketing",
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "search",
+      "submit"
+    ],
+    "media": [
+      "image",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "discovery"
+    ],
+    "audiences": [
+      "designer",
+      "developer",
+      "content-creator"
+    ],
+    "access": [
+      "free",
+      "login-required"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "searchable-directory",
+      "community-feed"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://producthunt.com",
+      "finalUrl": "https://www.producthunt.com/",
+      "title": "Product Hunt – The best new products in tech.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/producthunt-com/identity.jpg",
+        "sha256": "906ddc6d717dee35fe109b07d5d02b5e0921d07465c08c61f64d60c6574cc988",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131539,
+        "alt": "Product Hunt 首屏：Top Products Launching Today"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://producthunt.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/producthunt-com/identity.jpg",
+          "alt": "Product Hunt 首屏：Top Products Launching Today",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "leaderboards",
+      "value": "Top Products Launching Today / Yesterday's / Last Week's / Last Month's 四个榜",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/9/15",
+      "evidence": "首屏四个二级标题与站内 leaderboard 路径 /leaderboard/daily/2026/9/15",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "Trending Categories 下按 Engineering & Development、LLMs、Productivity、Marketing & Sales、Design & Creative、AI Agents 等分栏，另有 Figma Plugins、Static site generators、AI Coding Agents 等细分",
+      "sourceUrl": "https://www.producthunt.com/categories",
+      "evidence": "顶栏导航 Trending Categories 与 Other Categories 两段标签原文",
+      "confidence": 1
+    },
+    {
+      "field": "httpStatus",
+      "value": "抓取时 http 阶段被挡成 403，title 为 Just a moment...，浏览器渲染后拿到完整榜单页",
+      "sourceUrl": "https://www.producthunt.com/",
+      "evidence": "http.status 403 与 live.title Product Hunt – The best new products in tech. 的差异",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/producthunt-com.md",
+  "registryUrl": "/r/producthunt-com.json"
+}

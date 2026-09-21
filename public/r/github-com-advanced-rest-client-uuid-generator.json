@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8da2ed93c16d5341c9f07ccc831bcf40571937565071b390800bc754bbf902c2",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-advanced-rest-client-uuid-generator",
+  "entityId": "entity-github-com-advanced-rest-client-uuid-generator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/advanced-rest-client/uuid-generator",
+    "finalUrl": "https://github.com/arc-archive/uuid",
+    "checkedAt": "2026-09-15T12:15:19.276Z"
+  },
+  "editorial": {
+    "name": "arc-archive/uuid",
+    "descriptionZh": "只发 ES module 的 UUID 生成库，npm 包名 @advanced-rest-client/uuid，导出 v4() 供浏览器直接跑；仓库 2022 年已归档只读。",
+    "takeawayZh": "import { v4 } 直接拿浏览器能跑的 UUID",
+    "noteZh": "页面顶部一条黄条写 This repository was archived by the owner on May 3, 2022. It is now read-only.，仓库名旁标 Public archive。README 抬头 UUID，正文 An UUID generator as an ES module. Made for a web browser.，Usage 两行：npm install --save @advanced-rest-client/uuid 与 import { v4 } from '@advanced-rest-client/uuid'; console.log(v4());。根目录是 index.js、index.d.ts、tsconfig.json 加 src 与 test 两个目录，最新提交 refactor: making it an ES library only，最后一次 release v4.0.0 是五年前发的。Topics 为 uuid-generator / web-components，许可 Apache-2.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一段可 import 的通用工具函数（v4()），不绑定任何界面或素材，属开发工作流中会被引用的基础库。",
+        "evidenceUrl": "https://github.com/arc-archive/uuid"
+      },
+      {
+        "statement": "仓库已归档只读、只有 76 Commits 与 4 个 release，说明它是被依赖的旧工具包而非活跃产品站点。",
+        "evidenceUrl": "https://github.com/arc-archive/uuid"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:15:19.276Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/advanced-rest-client/uuid-generator",
+      "finalUrl": "https://github.com/arc-archive/uuid",
+      "title": "GitHub - arc-archive/uuid: An UUID generator · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-advanced-rest-client-uuid-generator/identity.jpg",
+        "sha256": "eb8fecb365c817e340c0f3260ef99916ca6cec260f9d9b17c12a33cfd6d2faa4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128372,
+        "alt": "arc-archive/uuid 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/arc-archive/uuid",
+      "evidence": "README 标题旁的 Apache-2.0 license 标注与根目录 LICENSE.md 文件",
+      "confidence": 1
+    },
+    {
+      "field": "archiveStatus",
+      "value": "2022-05-03 起归档只读",
+      "sourceUrl": "https://github.com/arc-archive/uuid",
+      "evidence": "页面顶部提示条 This repository was archived by the owner on May 3, 2022. It is now read-only.",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "npm install --save @advanced-rest-client/uuid，import { v4 }",
+      "sourceUrl": "https://github.com/arc-archive/uuid",
+      "evidence": "README 的 Usage 一节，安装命令加 import { v4 } 与 console.log(v4()) 示例",
+      "confidence": 1
+    },
+    {
+      "field": "platform",
+      "value": "面向浏览器的 ES module",
+      "sourceUrl": "https://github.com/arc-archive/uuid",
+      "evidence": "README 首句 An UUID generator as an ES module. Made for a web browser.，tsconfig.json 的提交信息也说 refactoring to a browser ready ES module",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-advanced-rest-client-uuid-generator",
+    "designMdUrl": "https://vislexicon.com/site/github-com-advanced-rest-client-uuid-generator.md",
+    "checkedAt": "2026-09-15T12:15:19.276Z",
+    "license": "Apache-2.0"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1bf319655484e2c5a8b8f50808e4640aa4d68bfd48a227ffa5b497dd7e7191ab",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-ameetpokhrel02-guru-react-icons",
+  "entityId": "entity-github-com-ameetpokhrel02-guru-react-icons",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/ameetpokhrel02/guru-react-icons",
+    "finalUrl": "https://github.com/ameetpokhrel02/guru-react-icons",
+    "checkedAt": "2026-09-15T12:15:32.428Z"
+  },
+  "editorial": {
+    "name": "ameetpokhrel02/guru-react-icons",
+    "descriptionZh": "Guru Icons 的 monorepo：packages/guru-react-icons 是 React 图标库本体，apps/guru-icons-site 是配套的 Next.js 预览站。",
+    "takeawayZh": "clone 这个 monorepo，一次拿到图标库和预览站",
+    "noteZh": "仓库根下只有 apps/guru-icons-site 与 packages/guru-react-icons 两个目录加几个配置文件，README 标题是 Guru Icons Monorepo，Structure 一节把图标库和 Next.js 预览站分开写，Getting Started 走 pnpm install / pnpm run dev，发布要先 cd packages/guru-react-icons 再 npm publish --access public；About 栏是空的，0 star，Languages 里 TypeScript 占 99.7%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "icons-symbols",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 一句话说明 monorepo 装了 Guru React icon library 与它的预览站，用户拿走的是图标库。",
+        "evidenceUrl": "https://github.com/ameetpokhrel02/guru-react-icons"
+      },
+      {
+        "statement": "库通过 npm publish 分发、预览站只是展示用，成品是图标集合而非组件或模板。",
+        "evidenceUrl": "https://github.com/ameetpokhrel02/guru-react-icons"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:15:32.428Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "icon",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate",
+      "publish",
+      "browse"
+    ],
+    "media": [
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "svg"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ameetpokhrel02/guru-react-icons",
+      "finalUrl": "https://github.com/ameetpokhrel02/guru-react-icons",
+      "title": "GitHub - ameetpokhrel02/guru-react-icons · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-ameetpokhrel02-guru-react-icons/identity.jpg",
+        "sha256": "c3ed561d51800c4bea5c1a58e31f7f5c4d7e62acb6ac36842889fad2a9caff7c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131566,
+        "alt": "ameetpokhrel02/guru-react-icons 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/ameetpokhrel02/guru-react-icons",
+      "evidence": "README 结尾一行 📄 License MIT © ameetpokhrel02",
+      "confidence": 1
+    },
+    {
+      "field": "iconPipeline",
+      "value": "pnpm run generate-icons 从 src/icons 下的 SVG 生成图标",
+      "sourceUrl": "https://github.com/ameetpokhrel02/guru-react-icons",
+      "evidence": "README 的 Generating Icons 一节写明新增 SVG 后执行该命令",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/ameetpokhrel02/guru-react-icons",
+      "evidence": "README 只给 npm 发布流程，无任何付费或授权购买入口",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-ameetpokhrel02-guru-react-icons",
+    "designMdUrl": "https://vislexicon.com/site/github-com-ameetpokhrel02-guru-react-icons.md",
+    "checkedAt": "2026-09-15T12:15:32.428Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ba35c3c1985f28c5746b287a562c644282485faaefe32863b59a18281bcc718b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "reaviz-io",
+  "entityId": "entity-reaviz-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://reaviz.io",
+    "finalUrl": "https://reaviz.dev/",
+    "checkedAt": "2026-09-15T12:06:28.429Z"
+  },
+  "editorial": {
+    "name": "Reaviz",
+    "descriptionZh": "React 的数据可视化库，官方口径是 22+ 种图表加 50+ 个现成 Blocks，基于 D3 自己实现而不是包一层别人的图表库。域名已从 reaviz.io 迁到 reaviz.dev。",
+    "takeawayZh": "用 22+ 图表和 50+ Block 拼出自己的数据看板",
+    "noteZh": "深色首屏最上面一颗 GitHub Stars 1.2k 徽章，大标题 Enterprise ready Open-Source Data Visualizations；下面三张深色看板卡片叠着排开，标题分别是 Incident Report 与 Report，画的是热力图、折线和面积图，卡片里写着 Critical Incidents 321、Total Incidents 1.12k、Mean Time to Respond 6 Hours、Incident Escalation Rate 10%。导航只有 Docs、Blocks、Storybook、GitHub 四个入口。页面上写着 Built on D3、uses Motion、22+ Charts、50+ Blocks，并强调 Open Source Free to use, and available for both personal and commercial projects，但没写出具体许可证名。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点自述 data visualization library for React、22+ Data Visualization Components for ReactJS，交付物是按图表类型拆开的代码组件，所以落在图表与数据可视化代码。",
+        "evidenceUrl": "https://reaviz.dev/"
+      },
+      {
+        "statement": "内部路径 /docs/charts/area-chart、/docs/charts/sankey-plot、/docs/charts/word-cloud 等逐个按图表类型成文档，说明主体是图表实现而不是整站模板。",
+        "evidenceUrl": "https://reaviz.dev/docs"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:06:28.429Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "block"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://reaviz.io",
+      "finalUrl": "https://reaviz.dev/",
+      "title": "reaviz - Data visualization library for React",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/reaviz-io/identity.jpg",
+        "sha256": "523619b7704b172ca46448e819307d7e67b0412b7a1209f5ea926fa94c025310",
+        "width": 1280,
+        "height": 900,
+        "bytes": 89916,
+        "alt": "Reaviz 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "scale",
+      "value": "22+ Charts，50+ Blocks",
+      "sourceUrl": "https://reaviz.dev/",
+      "evidence": "首页正文的 22+ Charts 与 50+ Blocks 两处计数，meta description 也写 22+ Data Visualization Components for ReactJS",
+      "confidence": 1
+    },
+    {
+      "field": "implementation",
+      "value": "基于 D3 自研，强调不是包一层别人的图表库；动画用 Motion",
+      "sourceUrl": "https://reaviz.dev/",
+      "evidence": "首页 Built on D3 for high customization 与 Reaviz uses Motion for smooth animations 两段",
+      "confidence": 1
+    },
+    {
+      "field": "navigation",
+      "value": "Docs、Blocks、Storybook、GitHub 四个入口",
+      "sourceUrl": "https://reaviz.dev/",
+      "evidence": "首屏顶部导航栏可见的四个链接",
+      "confidence": 1
+    },
+    {
+      "field": "chart-types",
+      "value": "area、bar、bubble、funnel、heatmap、line、linear-gauge、map、meter、pie、radar、radial-area、radial-bar、radial-gauge、radial-scatter、sankey、scatter、sunburst、sparkline、tree-map、venn、word-cloud",
+      "sourceUrl": "https://reaviz.dev/docs",
+      "evidence": "站点 /docs/charts/ 下逐个列出的图表文档路径",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "页面写 Open Source、个人与商业项目均可免费用，但未给出许可证名称",
+      "sourceUrl": "https://reaviz.dev/",
+      "evidence": "首页 Open Source 一段原文 Free to use, and available for both personal and commercial projects",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/reaviz-io",
+    "designMdUrl": "https://vislexicon.com/site/reaviz-io.md",
+    "checkedAt": "2026-09-15T12:06:28.429Z",
+    "license": "unknown"
+  }
+}

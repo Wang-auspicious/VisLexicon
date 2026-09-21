@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d3c8c94863b76bf01959af18c1f7512336c4ffb5a7439ea8f68d73e4c01cbaae",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "hioscar-com",
+  "entityId": "entity-hioscar-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://hioscar.com",
+    "finalUrl": "https://www.hioscar.com/",
+    "checkedAt": "2026-09-15T11:11:36.134Z"
+  },
+  "editorial": {
+    "name": "Oscar",
+    "descriptionZh": "美国健康保险公司 Oscar 的官网，卖个人与家庭、雇主 ICHRA、经纪人三个渠道的保险计划，App 里看 ID 卡、查医生、续处方、查理赔。",
+    "takeawayZh": "看保险公司官网怎么把会员日常操作也做成一级入口",
+    "noteZh": "HTTP 阶段这个站返回 403、标题是 Oscar | Forbidden，但浏览器里能正常渲染。首页顶部是汉堡菜单加一个搜索图标，正中放 Oscar 蓝色标志，第一屏铺满一张全家福照片，衬线大字 Health insurance made for real life 压在照片上，右下角弹出 cookie 设置浮层挡住了部分画面。正文先给数字：3M members、4.9-star app with more than 17,000 reviews、20 states、90% of members say Oscar saves them time and money。会员权益一节分成 Take care of you, get paid. Repeat.（Unlock rewards）、Tech that actually hits（介绍 24/7 的 AI 健康助手 Oswell）、Care and coverage support（Oscar Virtual Care 标价 $0）、Low-cost meds、Vision savings pass。再往下按 Individuals & families / Employers / Brokers / Providers 四类人分流，会员侧单列 View ID card、Pay a bill、Find a doctor、Refill a prescription、View your claims 五个日常动作。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Oscar 这家健康保险公司的官网，由 saaslandingpage.com 的落地页灵感栏目收进候选池，在本库里作为保险类会员制首页的案例。",
+        "evidenceUrl": "https://www.hioscar.com/"
+      },
+      {
+        "statement": "导航 Find a Plan / Oscar App / Member Rewards / For Employers / For Brokers 全部指向产品与渠道内页，页面上没有可下载的素材，归产品与公司官网。",
+        "evidenceUrl": "https://www.hioscar.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:11:36.134Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance",
+      "mobile"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "search"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "editorial-feed"
+    ],
+    "languages": [
+      "en",
+      "es"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://hioscar.com",
+      "finalUrl": "https://www.hioscar.com/",
+      "title": "Health insurance made for real life",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/hioscar-com/identity.jpg",
+        "sha256": "37f020471925588091cc4a59060d5ea4217d08afc1451022a99aacf75f6be868",
+        "width": 1280,
+        "height": 900,
+        "bytes": 202342,
+        "alt": "Oscar 首屏：Health insurance made for real life"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "scale",
+      "value": "3M members、App 4.9 星（超 17,000 条评价）、20 个州持牌、90% 会员称 Oscar 省时省钱",
+      "sourceUrl": "https://www.hioscar.com/",
+      "evidence": "Oscar by the numbers 一节的四组数字",
+      "confidence": 1
+    },
+    {
+      "field": "memberActions",
+      "value": "View ID card、Pay a bill、Find a doctor、Refill a prescription、View your claims",
+      "sourceUrl": "https://www.hioscar.com/for-members",
+      "evidence": "首页 For members 一块列出的五个日常动作",
+      "confidence": 1
+    },
+    {
+      "field": "languageProgram",
+      "value": "提供西班牙语版本 /es，并有 Hola Oscar 西语会员项目",
+      "sourceUrl": "https://www.hioscar.com/es",
+      "evidence": "站内 /es 路径、首页 Healthcare in Spanish 一段与 /blog/introducing-the-holaoscar-program… 链接",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/hioscar-com",
+    "designMdUrl": "https://vislexicon.com/site/hioscar-com.md",
+    "checkedAt": "2026-09-15T11:11:36.134Z",
+    "license": "unknown"
+  }
+}

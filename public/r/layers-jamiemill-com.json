@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "94ce0170cbcfb2fb31b47595562afcd4c8cba896bef17d093e8234ee9a9eadba",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "layers-jamiemill-com",
+  "entityId": "entity-layers-jamiemill-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://layers.jamiemill.com",
+    "finalUrl": "https://layers.jamiemill.com/",
+    "checkedAt": "2026-09-15T10:33:21.393Z"
+  },
+  "editorial": {
+    "name": "Layers",
+    "descriptionZh": "给产品设计师用的 AI skills 包。它把产品设计拆成七个层、三个区，装进 Claude Code / Cursor / Codex 之后可以用 /layers-* 命令，让 AI 陪你一层层判断问题究竟卡在哪。",
+    "takeawayZh": "跑 /layers-orient，让它指认设计卡在哪一层",
+    "noteZh": "首屏左边是 AI SKILLS PACK 小标加一行 Design beyond the surface.，下面一张灰卡片直接给出 npx skills add jamiemill/layers-skills 和 Copy 按钮，WORKS WITH 一栏排着 Claude Code、Cursor、OpenAI Codex、pi.dev。右边是手绘的七层叠层图，从顶上的 SOLUTION SPACE 一路压到最底那团乱线代表的 REALITY。再往下 What you'd actually say 列了一批可照抄的 prompt，并提示卡住时先跑 /layers-orient 把七层审一遍，页脚注明 Open source · github.com/jamiemill/layers-skills。",
+    "recommendation": null,
+    "pricing": "free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 skills 包，用户的动作是 install：页面给出 npx skills add jamiemill/layers-skills，装进 AI 编码/设计工具后按 /layers-* 调用，属于开发工作流里的工具安装。",
+        "evidenceUrl": "https://layers.jamiemill.com/"
+      },
+      {
+        "statement": "另一种读法是把它当设计方法参考（reference-standards/design-system-governance-methods），因为 Seven layers, three zones 本质是一套方法框架；但页面主 CTA 是 Install，直接可得的东西是能被 AI 调用的 skill，故选交付工具类。",
+        "evidenceUrl": "https://layers.jamiemill.com/skills"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:33:21.393Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "prompt"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation",
+      "design"
+    ],
+    "audiences": [
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://layers.jamiemill.com",
+      "finalUrl": "https://layers.jamiemill.com/",
+      "title": "Layers — AI skills for product designers",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/layers-jamiemill-com/identity.jpg",
+        "sha256": "4deb148ca743b1e513c3b92cf8529f075cc2e899f1eeb0f15c5ae6dd6be4f740",
+        "width": 1280,
+        "height": 900,
+        "bytes": 110711,
+        "alt": "Layers 首屏：Design beyond the surface."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "install-command",
+      "value": "npx skills add jamiemill/layers-skills",
+      "sourceUrl": "https://layers.jamiemill.com/",
+      "evidence": "首屏 Install 卡片里的命令行代码块，旁边带 Copy 按钮",
+      "confidence": 1
+    },
+    {
+      "field": "skill-count",
+      "value": "9 个 skill，含专门做诊断的 /layers-orient",
+      "sourceUrl": "https://layers.jamiemill.com/skills",
+      "evidence": "正文 Browse all 9 skills 链接，以及 Not sure where to start? Run /layers-orient 一句",
+      "confidence": 1
+    },
+    {
+      "field": "framework",
+      "value": "七层分三区：SOLUTION SPACE（07 Surface → 04 Product & service strategy）、PROBLEM SPACE（03 User needs → 01 Observed behaviour）、REALITY",
+      "sourceUrl": "https://layers.jamiemill.com/",
+      "evidence": "Seven layers, three zones 一节的编号列表",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "页面只标注 Open source，未写明具体许可证",
+      "sourceUrl": "https://layers.jamiemill.com/",
+      "evidence": "页脚 Open source · github.com/jamiemill/layers-skills",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/layers-jamiemill-com",
+    "designMdUrl": "https://vislexicon.com/site/layers-jamiemill-com.md",
+    "checkedAt": "2026-09-15T10:33:21.393Z",
+    "license": "unknown"
+  }
+}

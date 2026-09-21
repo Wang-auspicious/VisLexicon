@@ -1,0 +1,160 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ba7f6a497b50ad687e162a32b18aff1e2b8114f7119fa54d75193300e9a1507b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "date-picker-svelte-kasper-space",
+  "entityId": "entity-date-picker-svelte-kasper-space",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "date-picker-svelte.kasper.space",
+  "official": {
+    "inputUrl": "https://date-picker-svelte.kasper.space",
+    "finalUrl": "https://date-picker-svelte.kasper.space/",
+    "checkedAt": "2026-09-15T11:57:32.499Z"
+  },
+  "editorial": {
+    "name": "Date Picker Svelte",
+    "descriptionZh": "Svelte 的日期与时间选择组件，文档站在首页就把 Demo、REPL 和完整 Props 表摊开。",
+    "takeawayZh": "npm 装包即得日期时间输入组件与 CSS 主题变量",
+    "noteZh": "首屏左上角是 Date Picker Svelte 标题，右边紧跟 Demo / Docs / REPL 三个入口。正文先列 Features：Theming、Custom formats、Internationalization (i18n)、Autopunctuation（输入 20201111111111 会自动补成 2020-11-11 11:11:11）、Keyboard shortcuts，接着 Install 给出 npm install -D date-picker-svelte，然后是 DateInput 的 Props 表——value、initialBrowseDate、min、max、placeholder、format 都带可编辑输入框，format 默认写的是 yyyy-MM-dd HH:mm:ss。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面的全部内容就是一个组件的 Props 表与 Theming 变量表，交付物是可 npm 安装的 Svelte 日期选择组件，因此归组件库而非模板或教程。",
+        "evidenceUrl": "https://date-picker-svelte.kasper.space/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:32.499Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://date-picker-svelte.kasper.space",
+      "finalUrl": "https://date-picker-svelte.kasper.space/",
+      "title": "Date Picker Svelte",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/date-picker-svelte-kasper-space/identity.jpg",
+        "sha256": "7c88b54810e4f0b55fd01d73365f381324a4750ac4276829e1cf009dbe0b37c9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 60161,
+        "alt": "Date Picker Svelte 首屏：Install"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://date-picker-svelte.kasper.space",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/date-picker-svelte-kasper-space/identity.jpg",
+          "alt": "Date Picker Svelte 首屏：Install",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm install -D date-picker-svelte",
+      "sourceUrl": "https://date-picker-svelte.kasper.space/",
+      "evidence": "Install 小节里的深色代码块",
+      "confidence": 1
+    },
+    {
+      "field": "theming",
+      "value": "--date-picker-foreground / --date-picker-background / --date-picker-highlight-border / --date-picker-selected-color 等 CSS 变量",
+      "sourceUrl": "https://date-picker-svelte.kasper.space/docs",
+      "evidence": "Theming 小节列出的自定义属性名",
+      "confidence": 1
+    },
+    {
+      "field": "locales",
+      "value": "default、nb (date-fns)、de (date-fns)、hy (date-fns)",
+      "sourceUrl": "https://date-picker-svelte.kasper.space/",
+      "evidence": "DateInput 的 locale 一行与 DatePicker 演示里出现的亚美尼亚语月份",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/date-picker-svelte-kasper-space.md",
+  "registryUrl": "/r/date-picker-svelte-kasper-space.json"
+}

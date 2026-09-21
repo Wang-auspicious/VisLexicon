@@ -1,0 +1,177 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c26f5f77f10d110c4fe410ec18e1d7faaf2d2e342484820c2a7db0e79009c934",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-dyte-io-ui-kit",
+  "entityId": "entity-github-com-dyte-io-ui-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/dyte-io/ui-kit",
+    "finalUrl": "https://github.com/dyte-io/ui-kit",
+    "checkedAt": "2026-09-15T11:40:52.028Z"
+  },
+  "editorial": {
+    "name": "dyte-io/ui-kit",
+    "descriptionZh": "Dyte 的会议界面 UI 库，React 和 Angular 各出一个包，底层是 Stencil 编的 Web Components，用来重做自家的会议界面。仓库已归档，迁到 dyte-io/realtimekit-ui。",
+    "takeawayZh": "看 React 与 Angular 两套会议组件，注意已归档。",
+    "noteZh": "仓库 About 第一条就是归档提示：Dyte 的会议界面 UI 库，This repository has been archived and moved to 后面跟着 dyte-io/realtimekit-ui 的地址，并链到 ui-kit-core.vercel.app 的文档。README 标题是 UI Kit by dyte，副标题 A set of UI components to truly customize your meeting UI；Getting Started 说明 React 和 Angular 各有一个包是因为两者还不完全支持 Web Components，安装要同时装 @dytesdk/ui-kit 与 @dytesdk/web-core，后者负责与服务器交互的会议底层逻辑。仓库标 Apache-2.0 license，最新 release 是 @dyte-in/ui-kit-v3.0.8，右侧还有 Used by 240。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是可安装的会议界面组件（React 与 Angular 两套包），用户拿走组件来替换默认会议 UI，因此归 ui-implementation 的通用界面组件。",
+        "evidenceUrl": "https://github.com/dyte-io/ui-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:40:52.028Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "angular",
+      "web-components"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/dyte-io/ui-kit",
+      "finalUrl": "https://github.com/dyte-io/ui-kit",
+      "title": "GitHub - dyte-io/ui-kit: Dyte's UI library for creating meeting interfaces. This repository has been archived and moved to https://github.com/dyte-io/realtimekit-ui/ · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-dyte-io-ui-kit/identity.jpg",
+        "sha256": "c33853b92e4b11e814f4781075d98885d79d78f214e8fa7f8559843fa773b424",
+        "width": 1280,
+        "height": 900,
+        "bytes": 133474,
+        "alt": "dyte-io/ui-kit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/dyte-io/ui-kit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-dyte-io-ui-kit/identity.jpg",
+          "alt": "dyte-io/ui-kit 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "archived",
+      "value": "仓库已归档，迁往 dyte-io/realtimekit-ui",
+      "sourceUrl": "https://github.com/dyte-io/ui-kit",
+      "evidence": "About 栏第一句 This repository has been archived and moved to https://github.com/dyte-io/realtimekit-ui/，README 里也保留同样提示",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/dyte-io/ui-kit",
+      "evidence": "README 标题栏与 About 栏都标 Apache-2.0 license",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "@dytesdk/ui-kit 与 @dytesdk/web-core 需一起装，React 与 Angular 各一套",
+      "sourceUrl": "https://github.com/dyte-io/ui-kit",
+      "evidence": "README 的 Getting Started 一节，命令为 npm i @dytesdk/ui-kit @dytesdk/web-core",
+      "confidence": 1
+    },
+    {
+      "field": "techBase",
+      "value": "Stencil 编译的 Web Components",
+      "sourceUrl": "https://github.com/dyte-io/ui-kit",
+      "evidence": "提交记录 fix: upgrade stencil to 4.25.3 与 README 中关于 Web Components 支持的说明",
+      "confidence": 0.9
+    },
+    {
+      "field": "usage",
+      "value": "Used by 240，最新 release 3.0.8",
+      "sourceUrl": "https://github.com/dyte-io/ui-kit",
+      "evidence": "右侧 About 的 Used by 240 与 Releases 区块的 @dyte-in/ui-kit-v3.0.8",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-dyte-io-ui-kit.md",
+  "registryUrl": "/r/github-com-dyte-io-ui-kit.json"
+}

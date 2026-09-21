@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "400bfd96d07b65649319a2bef0104d054557c1782b6fb2ef1e4c647533e00526",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-vuico-vuic",
+  "entityId": "entity-github-com-vuico-vuic",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/vuico/vuic",
+    "finalUrl": "https://github.com/vuico/vuic",
+    "checkedAt": "2026-09-15T11:55:03.343Z"
+  },
+  "editorial": {
+    "name": "vuico/vuic",
+    "descriptionZh": "一个刚起步的 Vue 3 + TypeScript + Vite 组件库，仓库 About 自述 Vuic - Vue UI Components library，组件放 src 下按目录拆，文档用 Histoire 生成后发布到 vuico.github.io/vuic。",
+    "takeawayZh": "顺走 Vue 3 + Vite 组件库骨架",
+    "noteZh": "仓库页右栏 About 写 Vuic - Vue UI Components library，外链 vuico.github.io/vuic，没有许可证一行；文件树里 src、docs、.vscode 三块排在前面，根目录摆着 histoire.config.ts、deploy.sh、env.d.ts，README 正文还是 Vite 模板那份 Vue 3 + TypeScript + Vite 说明。整仓 19 Commits、1 star、0 forks，最近一次提交是 [WIP] Add Card component。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述与 About 都是 Vuic - Vue UI Components library，src 下是组件源码、docs 是 Histoire 文档，用户拿走的是可继续开发的 Vue 组件库代码，归到通用界面组件库；它仍处于 [WIP] 阶段、组件量少，成熟度上与完整设计系统有差距。",
+        "evidenceUrl": "https://github.com/vuico/vuic"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:03.343Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/vuico/vuic",
+      "finalUrl": "https://github.com/vuico/vuic",
+      "title": "GitHub - vuico/vuic: Vuic - Vue UI Components library · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-vuico-vuic/identity.jpg",
+        "sha256": "2f3f8fc02c2f02a4b0130f095b8c238d8dc79d46f49d5b0b37252a44d1d1292a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 119469,
+        "alt": "vuico/vuic 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "self-description",
+      "value": "Vuic - Vue UI Components library",
+      "sourceUrl": "https://github.com/vuico/vuic",
+      "evidence": "仓库页右侧 About 栏简介，页面标题同样写着 Vuic - Vue UI Components library",
+      "confidence": 1
+    },
+    {
+      "field": "doc-tooling",
+      "value": "Histoire（histoire.config.ts，提交信息 Build histoire docs）",
+      "sourceUrl": "https://github.com/vuico/vuic",
+      "evidence": "根目录的 histoire.config.ts 文件与 index.html 一行的提交信息",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/vuico/vuic",
+      "evidence": "右侧 About 栏只列 Readme / Activity / Custom properties 与 star、watching、fork 计数，文件树里也没有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "project-status",
+      "value": "WIP，19 Commits，最新提交 [WIP] Add Card component",
+      "sourceUrl": "https://github.com/vuico/vuic",
+      "evidence": "提交行显示的 19 Commits 与最近一次提交信息",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-vuico-vuic",
+    "designMdUrl": "https://vislexicon.com/site/github-com-vuico-vuic.md",
+    "checkedAt": "2026-09-15T11:55:03.343Z",
+    "license": "unknown"
+  }
+}

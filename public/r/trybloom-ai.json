@@ -1,0 +1,160 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1a8374476ab7cf9760221c707765174d7e645a4fa3dc975de974491443adf73e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "trybloom-ai",
+  "entityId": "entity-trybloom-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://trybloom.ai",
+    "finalUrl": "https://www.trybloom.ai/",
+    "checkedAt": "2026-09-15T09:45:25.753Z"
+  },
+  "editorial": {
+    "name": "Bloom",
+    "descriptionZh": "Bloom 把散在各处的品牌资产收成一个系统，再通过 MCP 递给 Claude、Cursor 这类代理，让它们产出的东西不跑偏。",
+    "takeawayZh": "把品牌资产做成 MCP 供代理按规范产出",
+    "noteZh": "首屏左侧是 The brand layer for agents，右侧两颗按钮 Get Started 与 Connect MCP，下面一排 CONNECT BLOOM WITH 写着 Claude、Cursor、OpenClaw 和 More。How it works 把流程缩成 Ingest from any source 与 Systemise your brand 两步，前一步的图里堆着 brand-guidelines.pdf、colors.json、fonts.ttf、hero.png、homepage.fig 这些文件名，后一步把它们归成 AESTHETIC、COLORS、FONTS、VOICE、TONE 几类，再吐出海报、Lottie、T 恤等产物图标。",
+    "recommendation": null,
+    "pricing": "Freemium; simple pricing listed on site",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "brand-presentation-content-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面把产品定义为 the brand layer for agents，把品牌规范变成代理可调用的系统，用于生成营销与社媒内容。",
+        "evidenceUrl": "https://www.trybloom.ai/"
+      },
+      {
+        "statement": "How it works 两步走：先摄入 deck、站点、Figma、社媒等源文件，再统一成品牌系统供后续产出调用。",
+        "evidenceUrl": "https://www.trybloom.ai/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:45:25.753Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "marketing",
+      "agent"
+    ],
+    "deliverables": [
+      "template",
+      "design-file"
+    ],
+    "actions": [
+      "generate",
+      "publish",
+      "edit"
+    ],
+    "media": [
+      "ui",
+      "typography",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "handoff"
+    ],
+    "audiences": [
+      "brand-team",
+      "designer",
+      "content-creator"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://trybloom.ai",
+      "finalUrl": "https://www.trybloom.ai/",
+      "title": "Bloom AI | The brand layer for agents",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/trybloom-ai/identity.jpg",
+        "sha256": "51a385fdc2b119d9667e3d2beadc90867789bb087452d2d23f03a1261f3172de",
+        "width": 1280,
+        "height": 900,
+        "bytes": 41913,
+        "alt": "Bloom 首屏：The brand layer for agents"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "brandInputs",
+      "value": "可摄入 brand-guidelines.pdf、colors.json、fonts.ttf、homepage.fig 等文件",
+      "sourceUrl": "https://www.trybloom.ai/",
+      "evidence": null,
+      "confidence": 1
+    },
+    {
+      "field": "brandTokens",
+      "value": "统一为 AESTHETIC、COLORS、FONTS、VOICE、TONE 几类",
+      "sourceUrl": "https://www.trybloom.ai/",
+      "evidence": null,
+      "confidence": 1
+    },
+    {
+      "field": "mcpClients",
+      "value": "CONNECT BLOOM WITH 列 Claude、Cursor、OpenClaw",
+      "sourceUrl": "https://www.trybloom.ai/mcp",
+      "evidence": null,
+      "confidence": 1
+    },
+    {
+      "field": "templates",
+      "value": "模板入口含 hermes 与 postiz",
+      "sourceUrl": "https://www.trybloom.ai/templates",
+      "evidence": null,
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null",
+      "存在付费层：Freemium; simple pricing listed on site。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/trybloom-ai",
+    "designMdUrl": "https://vislexicon.com/site/trybloom-ai.md",
+    "checkedAt": "2026-09-15T09:45:25.753Z",
+    "license": "proprietary"
+  }
+}

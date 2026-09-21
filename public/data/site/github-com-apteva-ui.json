@@ -1,0 +1,189 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8dca5649621a7900a89c63240bd2b1e376e7d335bd9c553ee5cadbd71904864f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-apteva-ui",
+  "entityId": "entity-github-com-apteva-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/apteva/ui",
+    "finalUrl": "https://github.com/apteva/ui",
+    "checkedAt": "2026-09-15T11:37:03.178Z"
+  },
+  "editorial": {
+    "name": "apteva/ui",
+    "descriptionZh": "Apteva 自用的 React 组件包，第一个可用的界面是一整套 agent 聊天窗，数据接 @apteva/web-sdk。同一个能力既给了开箱即用的 AptevaChat 组件，也给了一个 headless hook。",
+    "takeawayZh": "装包引入 <AptevaChat> 即得 agent 聊天窗",
+    "noteZh": "仓库只有 2 个提交，README 从 Install 往下排了 Ready-made chat、Markdown、Localization、Provider、Headless chat、Tool activity、Rich message components、Styling、Authentication 十节。Install 给的命令是 bun add @apteva/web-sdk @apteva/ui，Ready-made chat 那段是一个 AptevaChat 组件配 agentId、heading、placeholder 几个 prop，Headless chat 一节说明同一套东西也能只拿 hook。Languages 条是 TypeScript 81.7% / CSS 18.3%，About 栏写着 MIT license，0 stars、0 forks，贡献者两个是 marcoschwartz 和 claude。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 交代这是给 Apteva 应用用的 React 组件包，交付物是可安装的组件代码，用户拿走的是 npm 依赖而不是界面稿或整站模板，故归通用界面组件库。",
+        "evidenceUrl": "https://github.com/apteva/ui"
+      },
+      {
+        "statement": "README 同时提供 AptevaChat 成品组件与 headless hook 两种形态，说明定位是组件库而非单站案例；候选池给它标的 react-ui 标签与页面正文一致。",
+        "evidenceUrl": "https://github.com/apteva/ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:37:03.178Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/apteva/ui",
+      "finalUrl": "https://github.com/apteva/ui",
+      "title": "GitHub - apteva/ui: Generic React UI components for Apteva applications — agent chat surface backed by @apteva/web-sdk · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-apteva-ui/identity.jpg",
+        "sha256": "7e0f53adb84c5626da863f59eeb1bed820a7e30bfc40587b4bb633a41bd34586",
+        "width": 1280,
+        "height": 900,
+        "bytes": 129473,
+        "alt": "apteva/ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/apteva/ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-apteva-ui/identity.jpg",
+          "alt": "apteva/ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT license",
+      "sourceUrl": "https://github.com/apteva/ui",
+      "evidence": "About 栏显示 MIT license，根目录也有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "bun add @apteva/web-sdk @apteva/ui",
+      "sourceUrl": "https://github.com/apteva/ui",
+      "evidence": "README 的 Install 一节代码块",
+      "confidence": 1
+    },
+    {
+      "field": "mainComponent",
+      "value": "AptevaChat，接 agentId / heading / description / placeholder 四个 prop",
+      "sourceUrl": "https://github.com/apteva/ui",
+      "evidence": "README 的 Ready-made chat 一节示例代码",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "TypeScript 81.7% / CSS 18.3%",
+      "sourceUrl": "https://github.com/apteva/ui",
+      "evidence": "About 栏 Languages 条形图与图例",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "2 commits、1 branch、2 tags、0 stars、0 forks、2 contributors（marcoschwartz、claude）",
+      "sourceUrl": "https://github.com/apteva/ui",
+      "evidence": "仓库头部计数、About 栏与 Contributors 区块",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/apteva/ui",
+      "evidence": "仓库以 MIT 协议公开，无付费入口",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-apteva-ui.md",
+  "registryUrl": "/r/github-com-apteva-ui.json"
+}

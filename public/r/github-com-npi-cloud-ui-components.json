@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "494fd5b3e0570b3ff9a2b09a2a3d4e6308e94d4c56ba067daf293c3191c92fae",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-npi-cloud-ui-components",
+  "entityId": "entity-github-com-npi-cloud-ui-components",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/NPI-Cloud/ui-components",
+    "finalUrl": "https://github.com/NPI-Cloud/ui-components",
+    "checkedAt": "2026-09-15T11:47:15.400Z"
+  },
+  "editorial": {
+    "name": "NPI-Cloud/ui-components",
+    "descriptionZh": "NPI 设计系统的 React 实现，块、组件、图标、插画和设计 token 都在一个包里，基于 Tailwind CSS v4，peer 要求 React >=19。仓库是只读镜像，开发在 NPI 的 monorepo 里。",
+    "takeawayZh": "拿 NPI 的 token、图标和插画包。",
+    "noteZh": "仓库 h1 是 @npicz/ui-components，README 第一段写明它是 The NPI design system as a React component library — blocks, components, icons, illustrations and design tokens，并特别标注 This repository is a read-only mirror. Development happens in the NPI monorepo。Install 一节给 npm install @npicz/ui-components，Peer dependencies 要求 React >=19 与 Tailwind CSS ^4，Usage 里强调要先 @import \"@npicz/ui-components/styles.css\"，理由写在注释里：Tailwind v4 默认只扫描自己的文件。根目录放着 npi-tokens.css、npi-theme.css、styles.css 三个样式入口，Languages 条是 TypeScript 99.2%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它明确自述为「NPI 设计系统的 React 实现」，交付物同时包含组件、图标、插画与 token，归设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/NPI-Cloud/ui-components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:15.400Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "icon",
+      "illustration",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/NPI-Cloud/ui-components",
+      "finalUrl": "https://github.com/NPI-Cloud/ui-components",
+      "title": "GitHub - NPI-Cloud/ui-components · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-npi-cloud-ui-components/identity.jpg",
+        "sha256": "4634229c9b0acbea00b3f62e44940eeaec7aa258a2a0d9825ecae80634d0b80b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144049,
+        "alt": "NPI-Cloud/ui-components 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/NPI-Cloud/ui-components",
+      "evidence": "README 顶部标记与右侧 About 栏的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "deliverables",
+      "value": "blocks、components、icons、illustrations、design tokens",
+      "sourceUrl": "https://github.com/NPI-Cloud/ui-components",
+      "evidence": "README 描述段 'as a React component library — blocks, components, icons, illustrations and design tokens'",
+      "confidence": 1
+    },
+    {
+      "field": "peerDependencies",
+      "value": "React >=19、Tailwind CSS ^4",
+      "sourceUrl": "https://github.com/NPI-Cloud/ui-components",
+      "evidence": "README 的 Peer dependencies 一节",
+      "confidence": 1
+    },
+    {
+      "field": "styleEntrypoints",
+      "value": "npi-tokens.css、npi-theme.css、styles.css",
+      "sourceUrl": "https://github.com/NPI-Cloud/ui-components",
+      "evidence": "仓库根目录文件列表里的三个样式文件",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-npi-cloud-ui-components",
+    "designMdUrl": "https://vislexicon.com/site/github-com-npi-cloud-ui-components.md",
+    "checkedAt": "2026-09-15T11:47:15.400Z",
+    "license": "MIT"
+  }
+}

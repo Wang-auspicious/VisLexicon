@@ -1,0 +1,168 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4850cb77ec4e19b1cef558d32d944fb8d540798620904f38272bd0d0ca9cdad9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "design-withfudge-com",
+  "entityId": "entity-design-withfudge-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://design.withfudge.com",
+    "finalUrl": "https://design.withfudge.com/",
+    "checkedAt": "2026-09-15T10:39:15.693Z"
+  },
+  "editorial": {
+    "name": "Fudge MCP",
+    "descriptionZh": "一个 MCP server 加浏览器扩展，把真实网站的设计细节（字体、配色、间距、版式、组件、图像、交互）喂给你的 AI 编码工具，让它在动手时能参照被拆解过的设计，而不是凭空编。",
+    "takeawayZh": "给 AI coding tool 装上真实网站设计库",
+    "noteZh": "首屏黑底，正中是 Turn Your AI Into a Better Designer. 与一句 Build websites that look designed, not vibe-coded.，两个按钮 Install MCP Server（橙）与 Try Fudge Chat。四周浮着带播放键的网站缩略卡，下面标着 landonorris.com、claude.com、midlife.engineering、besimple.ai、squareup.com、stripe.com。底部一排 AI 产品图标配文案 Works with the AI tools you already use。中段给出自报体量：3,257 font families、11,653 palette colors、12,012 captures、1,930 websites、235 pattern categories，并说可按 typography、colors、spacing、layout、components、imagery、interactions 逐项查。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "design-to-code-handoff",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它把设计侧的信息作为上下文送进 AI 编码工具，交付物是 DESIGN.md 与 MCP 接口，落在设计到代码的交付环节。",
+        "evidenceUrl": "https://design.withfudge.com/"
+      },
+      {
+        "statement": "分类有不确定性：页面自称 the most comprehensive design system database，也可读作 reference-standards / design-system-governance-methods；此处按用户实际拿走的是接进 AI 工具的接口而非参考资料来定。",
+        "evidenceUrl": "https://design.withfudge.com/mcp"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:39:15.693Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [],
+    "actions": [
+      "install",
+      "search",
+      "browse",
+      "compare",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "typography",
+      "image"
+    ],
+    "platforms": [
+      "mcp",
+      "browser-extension",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "discovery",
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "searchable-directory",
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://design.withfudge.com",
+      "finalUrl": "https://design.withfudge.com/",
+      "title": "Fudge MCP — Search Real Website Designs from Your AI Coding Tool",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/design-withfudge-com/identity.jpg",
+        "sha256": "561f6b829f63d3c148528e1a874bc8ae1c6a95687029aec465cb2e6c3f8d0709",
+        "width": 1280,
+        "height": 900,
+        "bytes": 145883,
+        "alt": "Fudge MCP 首屏：Turn Your AI Into a Better Designer."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "scale",
+      "value": "自报 3,257 个字体族、11,653 个配色、12,012 份页面捕捉、1,930 个网站、235 个模式分类",
+      "sourceUrl": "https://design.withfudge.com/",
+      "evidence": "首屏统计行 3,257 font families / 11,653 palette colors / 12,012 captures / 1,930 websites / 235 pattern categories。",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "提供 MCP server 与浏览器扩展两种接入方式，另有对话式的 Fudge Chat",
+      "sourceUrl": "https://design.withfudge.com/",
+      "evidence": "首屏按钮 Install MCP Server，同页 Provide/Follow 段写 Install extension（提示 Install extension），导航为 Pricing / Explore / Chat。",
+      "confidence": 0.9
+    },
+    {
+      "field": "inspection",
+      "value": "每份捕捉保留回原页面的链路，可按 typography、colors、spacing、layout、components、imagery、interactions 逐项查",
+      "sourceUrl": "https://design.withfudge.com/",
+      "evidence": "正文 Search real websites, then inspect the typography, colors, spacing, layout, components, imagery, and interactions behind each capture. Fudge keeps those details connected to the page they came from.。",
+      "confidence": 1
+    },
+    {
+      "field": "coverage",
+      "value": "捕捉覆盖 apple.com、stripe.com、figma.com、linear.app、notion.com、vercel.com、anthropic.com、openai.com 等公开站点",
+      "sourceUrl": "https://design.withfudge.com/",
+      "evidence": "正文 Recently captured 一段的域名串，以及 /share/openai.com-design、/share/stripe.com-design、/share/linear.app-design 等分享页路径。",
+      "confidence": 0.9
+    },
+    {
+      "field": "positioning",
+      "value": "对外与 Mobbin、Refero 做直接对比，并公开 DESIGN.md 集合",
+      "sourceUrl": "https://design.withfudge.com/",
+      "evidence": "正文 Browse the public DESIGN.md collection 与站内 /share/fudge-vs-mobbin、/share/fudge-vs-refero 路径。",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/design-withfudge-com",
+    "designMdUrl": "https://vislexicon.com/site/design-withfudge-com.md",
+    "checkedAt": "2026-09-15T10:39:15.693Z",
+    "license": "unknown"
+  }
+}

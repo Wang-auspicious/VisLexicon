@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "532c8144ecd867038a9177527e0fa5a1c10f6c34cdd47af11ca2e8f4ea6d7b0f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "magicpath-ai",
+  "entityId": "entity-magicpath-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://magicpath.ai",
+    "finalUrl": "https://www.magicpath.ai/",
+    "checkedAt": "2026-09-15T10:36:38.922Z"
+  },
+  "editorial": {
+    "name": "MagicPath",
+    "descriptionZh": "把设计画布做成人和 agent 共用的工作区：Codex、Claude Code、Cursor 这些外部 agent 直接在画布上改稿，设计能推进仓库、代码也能拉回画布。",
+    "takeawayZh": "把画布接上自己的编码 agent，让设计和代码双向来回同步",
+    "noteZh": "首屏一条浅绿横幅写着 Introducing MagicPath 2.0，主标题是 The visual layer for all your agent work，两颗按钮给 Download for macOS 和 Open app in the browser，下面直接把应用界面摊开：左栏是 New project 与 My files，标签页写着 Agent、Components、Libraries，还有 Threads 和 New thread。再往下 One request, a whole team at work 演示三个 agent 和真人一块在画布上动，外部 agent 那段点名 Codex、Claude Code、Cursor，并把 Linear 的 LIN-421 这类工单接进画布。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "ui-prototyping-whiteboard",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "核心是一块可视化画布：Create interactive prototypes, real apps, and production-ready experiences in one shared visual workspace，用户在上面做原型和真实应用。",
+        "evidenceUrl": "https://www.magicpath.ai/"
+      },
+      {
+        "statement": "页面把 Note a static file, a real prototype 当作卖点，交付物是可交互原型，而非设计规范或代码库。",
+        "evidenceUrl": "https://www.magicpath.ai/documentation/features/canvas"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:36:38.922Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "design-file",
+      "component"
+    ],
+    "actions": [
+      "prototype",
+      "collaborate",
+      "edit",
+      "install",
+      "download",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "desktop",
+      "mcp",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation",
+      "design",
+      "handoff",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://magicpath.ai",
+      "finalUrl": "https://www.magicpath.ai/",
+      "title": "MagicPath | The shared workspace for humans and agents",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/magicpath-ai/identity.jpg",
+        "sha256": "8f4a37f06f4ef2c7c84ee24753b13420159c7d9a3a3c428b4deb776873f5fc67",
+        "width": 1280,
+        "height": 900,
+        "bytes": 66823,
+        "alt": "MagicPath 首屏：The visual layer for all your agent work"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "external-agents",
+      "value": "可接 Codex、Claude Code、Cursor，并连 repo、MCP 与 Linear 任务",
+      "sourceUrl": "https://www.magicpath.ai/",
+      "evidence": "Bring the agent you already trust and work from anywhere 一段与 /documentation/features/external-agents",
+      "confidence": 1
+    },
+    {
+      "field": "distribution",
+      "value": "macOS 桌面应用加浏览器版",
+      "sourceUrl": "https://www.magicpath.ai/download/macos",
+      "evidence": "首屏两颗按钮 Download for macOS 与 Open app in the browser",
+      "confidence": 1
+    },
+    {
+      "field": "collaboration",
+      "value": "多人多 agent 在同一画布实时协作，改动对全队可见",
+      "sourceUrl": "https://www.magicpath.ai/documentation/collaboration/live-multiplayer",
+      "evidence": "One request, a whole team at work 一段与 /documentation/collaboration/live-multiplayer",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/magicpath-ai",
+    "designMdUrl": "https://vislexicon.com/site/magicpath-ai.md",
+    "checkedAt": "2026-09-15T10:36:38.922Z",
+    "license": "unknown"
+  }
+}

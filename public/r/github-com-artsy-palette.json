@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "79e6e4a58e6913f836be0127cfdc5448af13f7258b4617ce7abc68558bef18bd",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-artsy-palette",
+  "entityId": "entity-github-com-artsy-palette",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/artsy/palette",
+    "finalUrl": "https://github.com/artsy/palette",
+    "checkedAt": "2026-09-15T12:15:49.775Z"
+  },
+  "editorial": {
+    "name": "artsy/palette",
+    "descriptionZh": "Artsy 的设计系统源码，一组产品无关的基础元素，供 Artsy 自己的数字产品线共用。",
+    "takeawayZh": "clone Artsy 的设计系统，Storybook 里逐组件看",
+    "noteZh": "README 的 Meta 一节把 Storybook 指到 palette-storybook.artsy.net，并注明 Docs 站 palette.artsy.net 已废弃、文档要并进 Storybook；What is Palette 说它是 primitive、product-agnostic 的一组元素，贡献流程要求先在 Slack 的 #design-system 频道提需求；仓库用 lerna 独立发版，1487 个 tag，最新 46.9.4，构建从 babel/webpack 换成了 swc 与 rslib/rsbuild。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 自述是 Artsy's Design System，并说明判断标准是「适用于 Artsy 品牌且跨多个数字产品」，交付物是成套基础组件。",
+        "evidenceUrl": "https://github.com/artsy/palette"
+      },
+      {
+        "statement": "Meta 一节同时给出 Storybook 与已废弃的 Docs 站，说明组件的浏览入口是 Storybook 而非单站案例。",
+        "evidenceUrl": "https://github.com/artsy/palette"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:15:49.775Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/artsy/palette",
+      "finalUrl": "https://github.com/artsy/palette",
+      "title": "GitHub - artsy/palette: Artsy's design system · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-artsy-palette/identity.jpg",
+        "sha256": "f1b5e8491fa1deaa9be42813129722a6bc10e144e59d1791a0cd7e5f3c1a6985",
+        "width": 1280,
+        "height": 900,
+        "bytes": 132742,
+        "alt": "artsy/palette 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/artsy/palette",
+      "evidence": "右侧 About 栏与 README 顶部标 MIT license，LICENSE 提交信息为 Convert to MIT",
+      "confidence": 1
+    },
+    {
+      "field": "storybookUrl",
+      "value": "https://palette-storybook.artsy.net/",
+      "sourceUrl": "https://github.com/artsy/palette",
+      "evidence": "README 的 Meta 一节列出的 Storybook 地址",
+      "confidence": 1
+    },
+    {
+      "field": "policy",
+      "value": "新增组件需先在 Slack #design-system 频道提需求",
+      "sourceUrl": "https://github.com/artsy/palette",
+      "evidence": "README 的 How to contribute 一节",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-artsy-palette",
+    "designMdUrl": "https://vislexicon.com/site/github-com-artsy-palette.md",
+    "checkedAt": "2026-09-15T12:15:49.775Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "72f77e61c3c47eb6891f596d36258a70e23d575d77749fceb559f5965fc38010",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "rizzui-com",
+  "entityId": "entity-rizzui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://rizzui.com",
+    "finalUrl": "https://www.rizzui.com/",
+    "checkedAt": "2026-09-15T12:06:47.688Z"
+  },
+  "editorial": {
+    "name": "RizzUI",
+    "descriptionZh": "基于 Tailwind CSS 的 React UI 库，官网把组件按 Buttons、Inputs、Navigation、Feedback、Overlays、Data Display、Typography、Integrations 分组并列出数量。",
+    "takeawayZh": "按分组挑 Tailwind 组件，再用 props 覆盖默认样式",
+    "noteZh": "白底点阵格子的首屏：导航是 Documentation、Components、Blog，右侧一个 v-2.1.0 版本下拉、带 Ctrl K 提示的 Search 框、主题切换和 GitHub 图标。大标题上方一颗药丸写 v2.1.0 released— upgraded for React 19 and beyond，标题是 A Modern & Minimal React UI Library，下面 Get Started 与 View on GitHub 两个按钮，再往下 TRUSTED BY TEAMS AT 挂着 REDQ、governful、PROA 三个 logo。页面上把组件拆成 Buttons 2 components、Inputs 15、Navigation 3、Feedback 4、Overlays 4、Data Display 6、Typography 4、Integrations 8，并列出 Fully Customizable、Easy to Use、Type Safety、Accessibility 四条理由。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点自述 A Modern and Minimal React UI Library built with TailwindCSS，交付物是按分组列出的 React 组件，用户拿走的是可安装的库。",
+        "evidenceUrl": "https://www.rizzui.com/"
+      },
+      {
+        "statement": "页面按 Buttons、Inputs、Navigation 等控件类别分组并逐组给出数量，没有整套设计规范或主题体系，故选 general-ui-components。",
+        "evidenceUrl": "https://www.rizzui.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:06:47.688Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://rizzui.com",
+      "finalUrl": "https://www.rizzui.com/",
+      "title": "RizzUI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/rizzui-com/identity.jpg",
+        "sha256": "7c954692cd5aad887836eb38048f90b936b44b7652dcd518d809966fe2e07533",
+        "width": 1280,
+        "height": 900,
+        "bytes": 74250,
+        "alt": "RizzUI 首屏：A Modern & Minimal React UI Library"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "component-groups",
+      "value": "Buttons 2、Inputs 15、Navigation 3、Feedback 4、Overlays 4、Data Display 6、Typography 4、Integrations 8 components",
+      "sourceUrl": "https://www.rizzui.com/",
+      "evidence": "首页 BEAUTIFULLY CRAFTED / + Production Ready Components 区块下逐组写出的数量",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "Tailwind CSS + React，导出 TypeScript 类型",
+      "sourceUrl": "https://www.rizzui.com/",
+      "evidence": "首页副标题 Built with Tailwind CSS 与 WHY RIZZUI? 区块的 Type Safety 一条",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "v2.1.0，升级以支持 React 19 及以后",
+      "sourceUrl": "https://www.rizzui.com/",
+      "evidence": "首屏药丸文字 v2.1.0 released— upgraded for React 19 and beyond，导航右上有 v-2.1.0 下拉",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "页面未标出许可证",
+      "sourceUrl": "https://www.rizzui.com/",
+      "evidence": "首屏与页面文本里没有 license 字样，只有 View on Github 入口和页脚 © 2026 RizzUI. All rights reserved.",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/rizzui-com",
+    "designMdUrl": "https://vislexicon.com/site/rizzui-com.md",
+    "checkedAt": "2026-09-15T12:06:47.688Z",
+    "license": "unknown"
+  }
+}

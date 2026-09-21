@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4bdf99826e58f268e9fa7068774eed2f212e8bce8ec2f758a2f00f014863d26e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "enriched-swmansion-com-html",
+  "entityId": "entity-enriched-swmansion-com-html",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://enriched.swmansion.com/html",
+    "finalUrl": "https://enriched.swmansion.com/html/",
+    "checkedAt": "2026-09-15T12:04:47.231Z"
+  },
+  "editorial": {
+    "name": "React Native Enriched HTML",
+    "descriptionZh": "Software Mansion 做的 React Native 富文本方案，不套 WebView，直接用原生组件渲染与编辑 HTML，Android 与 iOS 功能对齐。",
+    "takeawayZh": "把富文本存成 HTML，可导出到后端。",
+    "noteZh": "顶栏只有 Enriched HTML 的产品下拉、GitHub（星标 1.4k）和 Get started 三样东西。首屏大标题把 “HTML rich text solution” 涂成粉色高亮，下面一句说可以给应用加富文本渲染与编辑组件，再往下是 Get started / View on GitHub 两个按钮和一排浅蓝底的编辑工具栏图标（H1、B、斜体、下划线、链接、@、代码、列表、图片）。滚动后是粉底的 What you get，再往下是 Key features 里的 Mentions、Link detection 和 Smart style detection 三块。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是给 React Native / web 用的富文本渲染与编辑组件，装进工程即用；页面自己也反复称其为 “customizable components”，所以归通用界面组件而不是模板或工具。",
+        "evidenceUrl": "https://enriched.swmansion.com/html"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:04:47.231Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "react-native",
+      "html"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://enriched.swmansion.com/html",
+      "finalUrl": "https://enriched.swmansion.com/html/",
+      "title": "Rich Text Solutions for React Native That Feel Truly Native | React Native Enriched",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/enriched-swmansion-com-html/identity.jpg",
+        "sha256": "8885fcf50c0d0e438414f47f6feadb84041c00d9030dcd32c8f594e5f361556c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84606,
+        "alt": "React Native Enriched HTML 首屏：A fully-native HTML rich text solution for React Native and "
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "summary",
+      "value": "A fully-native HTML rich text solution for React Native and web",
+      "sourceUrl": "https://enriched.swmansion.com/html",
+      "evidence": "首屏 h1，页面 title 也写作 Rich Text Solutions for React Native That Feel Truly Native",
+      "confidence": 1
+    },
+    {
+      "field": "author",
+      "value": "Created by Software Mansion",
+      "sourceUrl": "https://enriched.swmansion.com/html",
+      "evidence": "首屏标题上方一行 “Created by” 加 software mansion 标志",
+      "confidence": 1
+    },
+    {
+      "field": "htmlIo",
+      "value": "内容以 HTML 形式存取，可导出到后端、在 web view 里渲染或再导回编辑器",
+      "sourceUrl": "https://enriched.swmansion.com/html",
+      "evidence": "What you get 一节里 “HTML input and output” 那段正文",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://enriched.swmansion.com/html",
+      "evidence": "页面正文与脚注均未出现许可证字样，只有版权与隐私政策的链接，故记 unknown",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/enriched-swmansion-com-html",
+    "designMdUrl": "https://vislexicon.com/site/enriched-swmansion-com-html.md",
+    "checkedAt": "2026-09-15T12:04:47.231Z",
+    "license": "unknown"
+  }
+}

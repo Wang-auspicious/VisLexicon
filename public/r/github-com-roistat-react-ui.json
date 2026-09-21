@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "67dc1591eb2b416991c340af3a48d58e998a3b8bb794abcc1b9a5dad3a48b8eb",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-roistat-react-ui",
+  "entityId": "entity-github-com-roistat-react-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/roistat/react-ui",
+    "finalUrl": "https://github.com/roistat/react-ui",
+    "checkedAt": "2026-09-15T11:50:08.349Z"
+  },
+  "editorial": {
+    "name": "roistat/react-ui",
+    "descriptionZh": "Roistat 的 React 组件库，README 通篇俄文，主要组件是 Button、Primary Button、TextInput、Modal、Popover，辅助组件是 Teleport、Placer、Transition、Toggler。仓库 About 只写 Work in progress，最后一次提交停在 4 年前。",
+    "takeawayZh": "照 Button 目录的组织约定搭自己的组件库",
+    "noteZh": "README 标题 roistat-react-UI - библиотека компонентов пользовательского интерфейса，Необходимая экосистема 一栏列 React JS、Webpack、Babel、ES6、Flowtype。安装分两种：git clone 后 npm i，或在现有项目里 npm i @roistat/ui --save，引用写法是 import Button from '@roistat/ui/lib/Button'；启动命令 npm run docs（文档与示例在 localhost:3000）与 npm run storybook（隔离环境里开发组件，localhost:9010）。Основные компоненты 是 Button、Primary Button、TextInput、Modal、Popover，Вспомогательные компоненты 是 Teleport、Placer、Transition、Toggler，后面还贴了一棵 Структура проека 目录树说明每个组件文件夹里 story.jsx / Readme.md 怎么摆。About 侧栏只有 Work in progress，Topics 是 components / elements / react / reactjs / ui / uikit，8 stars、5 forks，最新提交是 4 年前的 Merge pull request #59。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是 @roistat/ui 这个组件包或它的 storybook 用例，README 按 Основные / Вспомогательные компоненты 两档列组件，交付物是界面组件代码。",
+        "evidenceUrl": "https://github.com/roistat/react-ui"
+      },
+      {
+        "statement": "安装段写 npm i @roistat/ui --save 与 import Button from '@roistat/ui/lib/Button'，是把组件引进现有工程的用法，另有 react-storybook 开发环境。",
+        "evidenceUrl": "https://github.com/roistat/react-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:50:08.349Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/roistat/react-ui",
+      "finalUrl": "https://github.com/roistat/react-ui",
+      "title": "GitHub - roistat/react-ui: Work in progress · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-roistat-react-ui/identity.jpg",
+        "sha256": "a2232472779aaa815365556d34d6214acaf969e7d8434b54493fdee2d45a2e15",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113084,
+        "alt": "roistat/react-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "install",
+      "value": "@roistat/ui，写法 import Button from '@roistat/ui/lib/Button'；仓库侧是 git clone + npm i",
+      "sourceUrl": "https://github.com/roistat/react-ui",
+      "evidence": "README Установка / Установка в существующий проект 两段命令",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "主要组件 Button、Primary Button、TextInput、Modal、Popover；辅助组件 Teleport、Placer、Transition、Toggler",
+      "sourceUrl": "https://github.com/roistat/react-ui",
+      "evidence": "README Основные компоненты 与 Вспомогательные компоненты 两节",
+      "confidence": 1
+    },
+    {
+      "field": "devScripts",
+      "value": "npm run docs（端口 3000）与 npm run storybook（端口 9010）",
+      "sourceUrl": "https://github.com/roistat/react-ui",
+      "evidence": "README Запуск 一节的两条命令及端口说明",
+      "confidence": 1
+    },
+    {
+      "field": "repoState",
+      "value": "8 stars / 5 forks / 200 commits / 11 branches / 0 tags，Releases 显示 No releases published，最新提交是 4 年前的 Merge pull request #59",
+      "sourceUrl": "https://github.com/roistat/react-ui",
+      "evidence": "仓库头部计数、About 栏与提交行的 4 years ago 标记",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/roistat/react-ui",
+      "evidence": "仓库没有定价或付费入口，README 只讲安装与开发命令",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-roistat-react-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-roistat-react-ui.md",
+    "checkedAt": "2026-09-15T11:50:08.349Z",
+    "license": "unknown"
+  }
+}

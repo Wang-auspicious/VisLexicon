@@ -1,0 +1,172 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "63535f46da613470b3c2fbdb3eec44d5b49717e4b37892e8034081ed065af71e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-campfhir-bored-logs",
+  "entityId": "entity-github-com-campfhir-bored-logs",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/campfhir/bored-logs",
+    "finalUrl": "https://github.com/campfhir/bored-logs",
+    "checkedAt": "2026-09-15T11:38:14.702Z"
+  },
+  "editorial": {
+    "name": "campfhir/bored-logs",
+    "descriptionZh": "给 React 与 Node 用的结构化日志库，把日志写进 PostgreSQL：adapter 架构、类型化消息模板、布尔查询语法、HTTP 转发与 Kysely 迁移，还带一套日志查看的 React 组件。",
+    "takeawayZh": "把 Next.js 日志写进 Postgres，带回查 UI",
+    "noteZh": "About 一句话 Structured PostgreSQL-backed logging for Next.js — custom logger, adapter architecture, React UI components, and DB migration，Languages 是 TypeScript 100%。README 正文说它是 adapter 架构的 logger，带 typed message templates、boolean log-search grammar（支持嵌套属性查询与 programmatic builder）、HTTP 日志转发（可选端到端加密）、React UI 组件和 Kysely 迁移，整体拆成一族小包，让 shipper、central log server、dashboard 各自只装要用的部分。章节列表里有 Secure values、Client-side logging (useLogger)、Shipping logs between applications、Log search，文件区里 demos 与 packages 分开。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是装进应用的日志库与迁移脚本，用户拿走的是后端可观测能力而非界面组件，按开发工作流归档。",
+        "evidenceUrl": "https://github.com/campfhir/bored-logs"
+      },
+      {
+        "statement": "仓库确实附带 React UI 组件用于日志查看，但 README 主线是 logger 与数据库迁移，组件只是其中一个包，故不归界面组件库。",
+        "evidenceUrl": "https://github.com/campfhir/bored-logs"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:38:14.702Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "search",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/campfhir/bored-logs",
+      "finalUrl": "https://github.com/campfhir/bored-logs",
+      "title": "GitHub - campfhir/bored-logs: Structured PostgreSQL-backed logging for Next.js — custom logger, adapter architecture, React UI components, and DB migration. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-campfhir-bored-logs/identity.jpg",
+        "sha256": "869ae5277c5d08b215ca356bb22f0a9ab8838b96b58861c5129c11e589f593cd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 153707,
+        "alt": "campfhir/bored-logs 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/campfhir/bored-logs",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-campfhir-bored-logs/identity.jpg",
+          "alt": "campfhir/bored-logs 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "storage",
+      "value": "日志写进 PostgreSQL，迁移用 Kysely",
+      "sourceUrl": "https://github.com/campfhir/bored-logs",
+      "evidence": "About 栏描述与 README 中 React UI components, and Kysely migrations 一句、Database setup 一节",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "拆成一族小包，log shipper、central log server、dashboard 各自只装所需部分",
+      "sourceUrl": "https://github.com/campfhir/bored-logs",
+      "evidence": "README 正文 It ships as a family of small packages (see Packages) 一段与 Packages 章节、demos 与 packages 两个目录",
+      "confidence": 1
+    },
+    {
+      "field": "query",
+      "value": "布尔日志查询语法，支持嵌套属性查询与程序化构造器",
+      "sourceUrl": "https://github.com/campfhir/bored-logs",
+      "evidence": "README 的 boolean log-search grammar (nested-attribute queries, a programmatic builder) 一段与 Programmatic query builder、Log search 小节",
+      "confidence": 1
+    },
+    {
+      "field": "frameworks",
+      "value": "示例用 Next.js 写法，但包本身与框架无关",
+      "sourceUrl": "https://github.com/campfhir/bored-logs",
+      "evidence": "README 结尾 The examples below use Next.js idioms, but the packages are framework-agnostic 一句，以及 Using with Vite / React (non-Next.js) 一节",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-campfhir-bored-logs.md",
+  "registryUrl": "/r/github-com-campfhir-bored-logs.json"
+}

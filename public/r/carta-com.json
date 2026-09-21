@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e04fa6065ce84b34e90a74771717980d539dcf9eaa44cfe243ca62e16a5b54a3",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "carta-com",
+  "entityId": "entity-carta-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://carta.com",
+    "finalUrl": "https://carta.com/",
+    "checkedAt": "2026-09-15T10:50:34.897Z"
+  },
+  "editorial": {
+    "name": "Carta",
+    "descriptionZh": "Carta 把股权管理、基金管理和法律事务合成一套给私募资本用的系统，首页自称分成 Carta Equity Suite、Carta Fund ERP、Carta Law 三条线。它还把 Cap Table、Investors、CRM 做成 Claude 插件塞进别人的工作台。",
+    "takeawayZh": "看老牌金融站怎么用衬线大标题撑住首屏",
+    "noteZh": "抓取时 http 阶段被 Cloudflare 拦成 Just a moment...，浏览器阶段正常渲染：首屏用衬线大字写 Private capital, intelligently connected，配 Request a demo 与 Watch a video tour 两个按钮，往下 Trusted by 50,000 companies 接 Airtable、airtree、Avenir、Base10、Brex、Clearview Capital、CohnReznick 一排 logo。正文分 CARTA EQUITY SUITE、CARTA FUND ERP、CARTA LAW 三块，再一节 Plug in. Skill up. 讲 Carta Plugins 嵌进 Claude，示例提问是 Show me Fund II's Schedule of Investments.，并附 Delta-V Capital 的 COO Kyle Rogers 的证言。导航另一侧列了 Private Equity、Venture Capital、Private Credit、Fund of Funds、For GPs、For Law Firms 这些身份入口。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "浏览器阶段渲染出的是 Carta 自家的私募资本产品官网，三套产品线、客户 logo 与 Claude 插件都围绕它自己的服务，因此归产品与公司官网；候选池由 saaslandingpage.com 提供。",
+        "evidenceUrl": "https://carta.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:50:34.897Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "image",
+      "video"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://carta.com",
+      "finalUrl": "https://carta.com/",
+      "title": "Carta | The End-to-End Suite Connecting Private Capital",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/carta-com/identity.jpg",
+        "sha256": "ce9ec346debb41bbd435641119eda723e3bf14e1ece760bf619c211ae872aba5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 80167,
+        "alt": "Carta 首屏：Private capital, intelligently connected"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "httpBlock",
+      "value": "http 阶段返回 403，页面标题为 Just a moment...",
+      "sourceUrl": "https://carta.com/",
+      "evidence": "简报 http 阶段记录：status 403、title 为 Just a moment...，浏览器阶段才渲染出正文",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "Trusted by 50,000 companies",
+      "sourceUrl": "https://carta.com/",
+      "evidence": "首屏正文与同名的标题行",
+      "confidence": 1
+    },
+    {
+      "field": "claudePlugins",
+      "value": "Cap Table Plugin for Claude、Investors Plugin for Claude、CRM Plugin for Claude",
+      "sourceUrl": "https://carta.com/ai/connector/cap-table-plugin",
+      "evidence": "导航项与 /ai/connector/… 路径，正文另有 Connect Carta to Claude and put it to work.",
+      "confidence": 1
+    },
+    {
+      "field": "suites",
+      "value": "Carta Equity Suite、Carta Fund ERP、Carta Law",
+      "sourceUrl": "https://carta.com/",
+      "evidence": "首屏三大块的小标题与其下的说明文字",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/carta-com",
+    "designMdUrl": "https://vislexicon.com/site/carta-com.md",
+    "checkedAt": "2026-09-15T10:50:34.897Z",
+    "license": "unknown"
+  }
+}

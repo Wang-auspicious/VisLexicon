@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "bd9036f0e4068008934745b40f3e1a127f3baac04211e501e9529de7c1e2cede",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-hashicorp-design-system",
+  "entityId": "entity-github-com-hashicorp-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/hashicorp/design-system",
+    "finalUrl": "https://github.com/hashicorp/design-system",
+    "checkedAt": "2026-09-15T11:42:48.308Z"
+  },
+  "editorial": {
+    "name": "hashicorp/design-system",
+    "descriptionZh": "HashiCorp 的 Helios Design System 仓库：组件用 Ember.js 写，以 @hashicorp/design-system-components 发布，另有官网与 showcase 两块工作区。",
+    "takeawayZh": "读它的 Ember 组件源码，抄 design token 与图标。",
+    "noteZh": "README 写着 Helios「provides the building blocks to design and implement consistent, accessible, and delightful product experiences across HashiCorp」，Usage 指向文档站 helios.hashicorp.design，Packages 一节列出 packages/components（Design System components in Ember.js）、website、showcase。仓库最近在给 .bob 加「MCP - Website catalog tools」，About 标签是 design-tokens、embarks、helios、icons，MPL-2.0 license，514 star、53 位贡献者。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 自述 Helios 为 HashiCorp 全线产品提供设计实现的 building blocks，并拆出组件包、官网、showcase，属于成体系的完整设计系统；注意它的技术栈是 Ember.js，受控词典的 technologies 里没有对应取值，故该轴留空。",
+        "evidenceUrl": "https://github.com/hashicorp/design-system"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:42:48.308Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library",
+      "icon"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MPL-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/hashicorp/design-system",
+      "finalUrl": "https://github.com/hashicorp/design-system",
+      "title": "GitHub - hashicorp/design-system: Helios Design System · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-hashicorp-design-system/identity.jpg",
+        "sha256": "17a2c115dfb48bf7ccb8f4d01b4490d8c862a1a318622aa4649362bc6dba7def",
+        "width": 1280,
+        "height": 900,
+        "bytes": 137567,
+        "alt": "hashicorp/design-system 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MPL-2.0",
+      "sourceUrl": "https://github.com/hashicorp/design-system",
+      "evidence": "README 卡片标题行写着 MPL-2.0 license，文件列表里 LICENSE 的提交信息为 [COMPLIANCE] Update MPL 2.0 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "package-name",
+      "value": "@hashicorp/design-system-components",
+      "sourceUrl": "https://github.com/hashicorp/design-system",
+      "evidence": "README 的 Packages 一节写明 packages/components 为 Ember.js 组件，npm 包名为 @hashicorp/design-system-components",
+      "confidence": 1
+    },
+    {
+      "field": "docs-site",
+      "value": "helios.hashicorp.design",
+      "sourceUrl": "https://github.com/hashicorp/design-system",
+      "evidence": "右侧 About 栏主页链接指向 helios.hashicorp.design",
+      "confidence": 1
+    },
+    {
+      "field": "figma-changelog",
+      "value": "代码与 Figma 改动日志同站维护",
+      "sourceUrl": "https://github.com/hashicorp/design-system",
+      "evidence": "README 的 Release notes 一节写「A changelog for code and Figma changes is kept on the Helios website」",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。MPL-2.0：README 卡片标题行写着 MPL-2.0 license，文件列表里 LICENSE 的提交信息为 [COMPLIANCE] Update MPL 2.0 LICENSE"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-hashicorp-design-system",
+    "designMdUrl": "https://vislexicon.com/site/github-com-hashicorp-design-system.md",
+    "checkedAt": "2026-09-15T11:42:48.308Z",
+    "license": "MPL-2.0"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c76ffdb5ad6397423b74f90338fb93739fda479797d414cc75c3506a05450490",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-run-llama-llama-ui",
+  "entityId": "entity-github-com-run-llama-llama-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/run-llama/llama-ui",
+    "finalUrl": "https://github.com/run-llama/llama-ui",
+    "checkedAt": "2026-09-15T11:45:15.014Z"
+  },
+  "editorial": {
+    "name": "run-llama/llama-ui",
+    "descriptionZh": "LlamaIndex 的 monorepo，主体是 @llamaindex/ui 这个 React 组件库，旁边还挂着 Workflows 服务端的 TypeScript 客户端和它的调试前端。",
+    "takeawayZh": "装 @llamaindex/ui，拿它的界面组件。",
+    "noteZh": "README 用 Repository files navigation 下的一小段把三个包点出来：@llamaindex/ui、@llamaindex/workflows-client、@llamaindex/workflow-debugger，各带一条指向 packages/*/README.md 的 Get Started 链接；About 只挂了个 llama-ui.pr.staging.llamaindex.ai，Languages 显示 TypeScript 99.2%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库主要内容是 @llamaindex/ui —— README 明写 React component library for LlamaIndex apps，另两个包是配套客户端与调试前端；用户最直接能拿走的是这套 React 组件，因此归通用界面组件库而非设计系统。",
+        "evidenceUrl": "https://github.com/run-llama/llama-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:45:15.014Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/run-llama/llama-ui",
+      "finalUrl": "https://github.com/run-llama/llama-ui",
+      "title": "GitHub - run-llama/llama-ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-run-llama-llama-ui/identity.jpg",
+        "sha256": "fea3db8143bde9370306b93f4047dde5d4d34a728b0b22f32a9fe5bd15e46ffa",
+        "width": 1280,
+        "height": 900,
+        "bytes": 130298,
+        "alt": "run-llama/llama-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/run-llama/llama-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-run-llama-llama-ui/identity.jpg",
+          "alt": "run-llama/llama-ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "packages",
+      "value": "@llamaindex/ui、@llamaindex/workflows-client、@llamaindex/workflow-debugger",
+      "sourceUrl": "https://github.com/run-llama/llama-ui",
+      "evidence": "README 的 This repository contains 列表，三项各带一句说明。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/run-llama/llama-ui",
+      "evidence": "About 侧栏没有 License 条目，文件树里也没有 LICENSE 文件，GitHub license 接口对该仓库返回无许可证文件。",
+      "confidence": 0.8
+    },
+    {
+      "field": "latestRelease",
+      "value": "@llamaindex/ui@4.7.0（Releases 共 160 个）",
+      "sourceUrl": "https://github.com/run-llama/llama-ui",
+      "evidence": "首屏右侧 Releases 区块显示 @llamaindex/ui@4.7.0 Latest。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-run-llama-llama-ui.md",
+  "registryUrl": "/r/github-com-run-llama-llama-ui.json"
+}

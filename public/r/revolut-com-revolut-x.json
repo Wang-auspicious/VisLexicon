@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7a1eb079254dc0f7237b72251d8ec1bd32fefa4cc30e3ec756bd49a7fe520b45",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "revolut-com-revolut-x",
+  "entityId": "entity-revolut-com-revolut-x",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://revolut.com/revolut-x",
+    "finalUrl": "https://www.revolut.com/revolut-x/",
+    "checkedAt": "2026-09-15T11:17:43.403Z"
+  },
+  "editorial": {
+    "name": "Revolut X",
+    "descriptionZh": "Revolut 旗下加密交易所 Revolut X 的产品页，主打 Advanced trading 配 0% maker 与 0.09% taker 的固定费率。页面把 API 接入、TradingView 图表、Growth 标签页的定投质押，以及连接 AI 助手下单这几块分开讲。",
+    "takeawayZh": "看交易所产品页怎么把 API 与 AI 助手接线并排放",
+    "noteZh": "进来最顶是一条深色风险横幅，写 Don't invest unless you're prepared to lose all the money you invest.，下面一条浅灰提示条写 You're on the United Kingdom website. 带 United States 国家下拉。主体是黑底，导航 Personal、Business、Kids & Teens、Company，中央写 Revolut X 与 The crypto exchange for pros，副标题把 Advanced trading. 0% maker fees. 0.09% taker fees. 三句并排，下面一枚 Explore the exchange 按钮。往下依次是 Fees starting from 0%、Instantly on & off ramp、Trade through the API、Grow your portfolio on autopilot、Advanced analytics、Never miss a market move，其中 Advanced analytics 提到 fully integrated TradingView charts，AI 那一段写可以 Link your account with Gemini, Claude, OpenClaw, and others 用文字提示下指令。页尾是 Revolut X FAQs 与 Choose your plan 的 Standard 到 Ultra 五档。",
+    "recommendation": null,
+    "pricing": "Freemium（首屏写 0% maker / 0.09% taker 的费率，页尾 Choose your plan 列 Standard 至 Ultra 五档）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Revolut X 加密交易所的产品落地页，正文交付费率、API 能力与账户档位说明，转化入口是 Explore the exchange 与 Start trading。",
+        "evidenceUrl": "https://www.revolut.com/revolut-x/"
+      },
+      {
+        "statement": "归 product-company-sites 而非 delivery-development-tools：虽然单列一节讲 Trade through the API，但页面只给 API terms 链接与风险提示，没有可安装的 SDK 或命令行工具。",
+        "evidenceUrl": "https://www.revolut.com/legal/crypto-exchange-terms"
+      },
+      {
+        "statement": "这个 URL 在 http 阶段同样被拦成 403（Just a quick security check），内容以浏览器渲染后的 live 数据为准。",
+        "evidenceUrl": "https://www.revolut.com/revolut-x/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:17:43.403Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance",
+      "ai"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "editorial-feed"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://revolut.com/revolut-x",
+      "finalUrl": "https://www.revolut.com/revolut-x/",
+      "title": "Revolut X Advanced Crypto Exchange | Cryptocurrency Trading Platform | Revolut United Kingdom",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/revolut-com-revolut-x/identity.jpg",
+        "sha256": "c033d71d674bb6c2fece5358f419af00d1c55d2db5ae44cfc12da7c9a2c7e751",
+        "width": 1280,
+        "height": 900,
+        "bytes": 64894,
+        "alt": "Revolut X 首屏：The crypto exchange for pros"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "fees",
+      "value": "0% maker fees、0.09% taker fees，且不论成交量都维持 0 到 0.09% 的固定区间",
+      "sourceUrl": "https://www.revolut.com/revolut-x/",
+      "evidence": "首屏副标题 Advanced trading. 0% maker fees. 0.09% taker fees.，下方 Fees starting from 0% 一节重申",
+      "confidence": 1
+    },
+    {
+      "field": "tokens",
+      "value": "300+ tokens 的实时行情，支持 market 与 limit 两种下单方式",
+      "sourceUrl": "https://www.revolut.com/revolut-x/",
+      "evidence": "Instantly on & off ramp 一节写 Explore real-time trades on 300+ tokens with market and limit orders.",
+      "confidence": 1
+    },
+    {
+      "field": "aiAssistants",
+      "value": "可连接 Gemini、Claude、OpenClaw 等 AI 助手，用文字提示设价格提醒、试策略与下单",
+      "sourceUrl": "https://www.revolut.com/blog/post/revolut-x-connects-with-your-ai-assistant-uk",
+      "evidence": "Enhance crypto trades with your AI assistant 一节及其脚注，原文写 Link your account with Gemini, Claude, OpenClaw, and others",
+      "confidence": 1
+    },
+    {
+      "field": "plans",
+      "value": "Choose your plan 列为 Standard、Plus、Premium、Metal、Ultra 五档",
+      "sourceUrl": "https://www.revolut.com/revolut-x/",
+      "evidence": "页尾 Choose your plan 区块，live.heads 中五档名称依次出现",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium（首屏写 0% maker / 0.09% taker 的费率，页尾 Choose your plan 列 Standard 至 Ultra 五档）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/revolut-com-revolut-x",
+    "designMdUrl": "https://vislexicon.com/site/revolut-com-revolut-x.md",
+    "checkedAt": "2026-09-15T11:17:43.403Z",
+    "license": "unknown"
+  }
+}

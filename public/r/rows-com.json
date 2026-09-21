@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "86d47520e804b9caab7e7d42fb642bce3bb1a908525632701cc2b3ada0f2779f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "rows-com",
+  "entityId": "entity-rows-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://rows.com",
+    "finalUrl": "https://rows.com/product",
+    "checkedAt": "2026-09-15T11:17:54.386Z"
+  },
+  "editorial": {
+    "name": "Rows",
+    "descriptionZh": "Rows 的数据分析产品页，口号是 Your new AI Data Analyst。它主张用一句自然语言替掉 BI 看板与 SQL，从 PDF 和 50+ 数据源取数直接长成报表，页面顶部还挂着一条 Rows joined Superhuman 的横幅。",
+    "takeawayZh": "看 Rows 怎么把取数与做报表压成一句自然语言",
+    "noteZh": "最顶上是一条深紫横幅：Rows joined Superhuman. For any inquiries, email support@rows.com。主体是米白底，左侧深紫 Rows 字标配 Product、Pricing、Templates、Community 四段导航，右侧一枚黄色 Continue with Superhuman Docs 按钮。首屏中央是两行特粗深紫标题 Your new AI 与 Data Analyst，下面写 Extract from PDFs, import your business data, and analyze it using plain language. No BI dashboards, SQL queries, or spreadsheet stitching.，同款黄色按钮再加一个 Product Video 链接，再往下写 You're in great company。Want answers? Just ask. 一节用 Turn words into reports、Analyze data 10x faster、Model from scratch 三张卡讲 AI 能干什么；Connected to your data 一节列 Import data、Turn any website into data、Always in sync、One view, many sources，其中 Turn any website into data 提到 RowsX 扩展。页尾是 Looking for a head start? 的模板清单，第一条是 Instagram Page Analytics Dashboard。",
+    "recommendation": null,
+    "pricing": "unknown（导航有 Pricing，首屏只有 Continue with Superhuman Docs，未给档位）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Rows 表格产品的官网产品页（/product），交付产品说明与 Continue with Superhuman Docs 入口，导航是 Product、Pricing、Templates、Community。",
+        "evidenceUrl": "https://rows.com/product"
+      },
+      {
+        "statement": "归 product-company-sites 而非 creation-tools：取数与建模能力要登录后才可用，页面本身只做功能介绍与模板展示。",
+        "evidenceUrl": "https://rows.com/templates"
+      },
+      {
+        "statement": "简报给的规范地址是 rows.com，实测落在 rows.com/product，两个地址的内容口径一致。",
+        "evidenceUrl": "https://rows.com/product"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:17:54.386Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas"
+    ],
+    "deliverables": [
+      "template"
+    ],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "browser-extension"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library",
+      "editorial-feed"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://rows.com",
+      "finalUrl": "https://rows.com/product",
+      "title": "Rows - Your new AI Data Analyst",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/rows-com/identity.jpg",
+        "sha256": "77d3cec711eee3e20f6ce35db14705bb7332eba8ecd5c552354336355b6d35e4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 55583,
+        "alt": "Rows 首屏：Your new AI"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroCopy",
+      "value": "Your new AI Data Analyst",
+      "sourceUrl": "https://rows.com/product",
+      "evidence": "首屏两行特粗深紫标题，http.h1 拆成 Your new AI 与 Data Analyst 两条",
+      "confidence": 1
+    },
+    {
+      "field": "merger",
+      "value": "Rows joined Superhuman. For any inquiries, email support@rows.com",
+      "sourceUrl": "https://rows.com/product",
+      "evidence": "页面最顶部深紫横幅，截图与 live.bodyText 首句同文",
+      "confidence": 1
+    },
+    {
+      "field": "extractSources",
+      "value": "支持从 PDF 抽取数据，并把 50+ 个来源的数据合进一张表",
+      "sourceUrl": "https://rows.com/integrations",
+      "evidence": "meta description 写 from 50+ sources，One view, many sources 一节写 Combine live data from 50+ sources",
+      "confidence": 1
+    },
+    {
+      "field": "templates",
+      "value": "模板含 Instagram Page Analytics Dashboard、SEO Report Template、13-Week Cash Flow Model 等",
+      "sourceUrl": "https://rows.com/templates",
+      "evidence": "Looking for a head start? 一节的模板卡与 /templates 下的路径清单",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/rows-com",
+    "designMdUrl": "https://vislexicon.com/site/rows-com.md",
+    "checkedAt": "2026-09-15T11:17:54.386Z",
+    "license": "unknown"
+  }
+}

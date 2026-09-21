@@ -1,0 +1,173 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "747f279b8eebe8a59335d8c8cd4f7a0d5814a95056ac0a3a7bef687f6cb7ff19",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-maastrichtu-biss-caselaw-ui",
+  "entityId": "entity-github-com-maastrichtu-biss-caselaw-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/MaastrichtU-BISS/caselaw-ui",
+    "finalUrl": "https://github.com/MaastrichtU-BISS/caselaw-ui",
+    "checkedAt": "2026-09-15T11:56:47.803Z"
+  },
+  "editorial": {
+    "name": "MaastrichtU-BISS/caselaw-ui",
+    "descriptionZh": "Case Law Explorer 系列产品的共享界面层，token、页头页脚、表格、表单、代码块都出 Vue 与 Svelte 两个版本。",
+    "takeawayZh": "装 caselaw-ui，用 .cle- 前缀组件统一多个产品",
+    "noteZh": "README 写它是 The shared interface layer for the Case Law Explorer products，用 npm install caselaw-ui 安装，import caselaw-ui/styles.css 引入样式，并说明所有规则都带 .cle- 前缀所以不会碰到你自己的样式；组件按框架从 caselaw-ui/vue 与 Svelte 两个入口取，示例里用到 CleGridShell、CleHero、CleButton、CleFeatureCard。README 目录还有 Two page shapes、Tables、Code blocks、Service icons、Theming、Development、Publishing 几节。右侧 Languages 显示 CSS 34.6%、Vue 30.7%、Svelte 21.5%、TypeScript 12.6%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可 npm 安装的共享组件与设计 token，同时出 Vue 与 Svelte 两套同名组件，属于通用界面组件库；它本身是某个产品线的内部界面层，不是对外设计系统，故不归设计系统套件。",
+        "evidenceUrl": "https://github.com/MaastrichtU-BISS/caselaw-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:56:47.803Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "svelte",
+      "css",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/MaastrichtU-BISS/caselaw-ui",
+      "finalUrl": "https://github.com/MaastrichtU-BISS/caselaw-ui",
+      "title": "GitHub - MaastrichtU-BISS/caselaw-ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-maastrichtu-biss-caselaw-ui/identity.jpg",
+        "sha256": "11e01992910a360033b6ed81aa4a1e834fa5082f750db7edf34ec8fcfa050706",
+        "width": 1280,
+        "height": 900,
+        "bytes": 122376,
+        "alt": "MaastrichtU-BISS/caselaw-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/MaastrichtU-BISS/caselaw-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-maastrichtu-biss-caselaw-ui/identity.jpg",
+          "alt": "MaastrichtU-BISS/caselaw-ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm install caselaw-ui（README 徽章显示 v0.9.27）",
+      "sourceUrl": "https://github.com/MaastrichtU-BISS/caselaw-ui",
+      "evidence": "README 的 npm install 命令与版本徽章",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "CleGridShell、CleHero、CleButton、CleFeatureCard",
+      "sourceUrl": "https://github.com/MaastrichtU-BISS/caselaw-ui",
+      "evidence": "Using it 一节的 Vue 与 Svelte 代码示例",
+      "confidence": 1
+    },
+    {
+      "field": "cssPrefix",
+      "value": "所有样式规则以 .cle- 前缀，不会影响使用方自己的样式",
+      "sourceUrl": "https://github.com/MaastrichtU-BISS/caselaw-ui",
+      "evidence": "Using it 一节对 styles.css 的说明",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "仓库有 42 个 tags、1 个 branch、1 位贡献者",
+      "sourceUrl": "https://github.com/MaastrichtU-BISS/caselaw-ui",
+      "evidence": "右侧 Branches/Tags、Contributors 与 Languages 栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-maastrichtu-biss-caselaw-ui.md",
+  "registryUrl": "/r/github-com-maastrichtu-biss-caselaw-ui.json"
+}

@@ -1,0 +1,171 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "fdbc3a85fe18f3489318f8cde6aa348785ebe1393269247ceac151b3fbb2f7d5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "baseweb-design",
+  "entityId": "entity-baseweb-design",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://baseweb.design",
+    "finalUrl": "https://baseweb.design/",
+    "checkedAt": "2026-09-15T11:56:11.998Z"
+  },
+  "editorial": {
+    "name": "Base Web",
+    "descriptionZh": "以 npm 包分发的 React UI 框架，官网自称是 initiating, evolving, and unifying web products 的地基，样式建立在 CSS-in-JS 引擎上。组件目录从 Button、Checkbox 一直排到 Data Table、Datepicker。",
+    "takeawayZh": "按 INPUTS / TABLES 分组挑 React 组件",
+    "noteZh": "首屏标题下并排放着两张卡：左边 Setup Base Web 说它作为 npm 包分发、依赖全部来自 npm；右边 Learning Base Web 指向两个示例应用（一个简单一个复杂），两张卡底部各压一个黑色按钮。左栏导航分 GETTING STARTED、GUIDES、COMPONENTS 三段，GUIDES 里是 Internationalization、Bidirectionality、Theming、Styling、Overrides、Colors、API Cheat Sheet；COMPONENTS 下再细分 INPUTS、PICKERS、DATE & TIME、NAVIGATION、CONTENT、TABLES、PROGRESS & VALIDATION、SURFACES、MAP MARKER 等组。顶栏版本号写成 v18.2.0，正文还挂着 What's new in Base Web 16? 的链接。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点把自己描述成一套框架地基，配套 Theming、Styling、Overrides、Colors 等成组指南和 API Cheat Sheet，用户拿走的是一整套可换主题的组件体系，因此归设计系统与完整组件套件。",
+        "evidenceUrl": "https://baseweb.design/"
+      },
+      {
+        "statement": "正文 Components 一节写明既有 Datepicker 这类复杂件，也有 Layer 这类低层可组合原语，并指向 component gallery，覆盖的是完整套件而非单点组件。",
+        "evidenceUrl": "https://baseweb.design/components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:56:11.998Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "css"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://baseweb.design",
+      "finalUrl": "https://baseweb.design/",
+      "title": "Base Web - Base Web React UI framework",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/baseweb-design/identity.jpg",
+        "sha256": "bdd9a6494c3c7267508b6f18f8280051c718b839e271a5607aa94d0d7ace1389",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139058,
+        "alt": "Base Web 首屏：Base Web React UI framework"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "version",
+      "value": "v18.2.0",
+      "sourceUrl": "https://baseweb.design/",
+      "evidence": "页面左上角 Base 标志旁的版本文本",
+      "confidence": 1
+    },
+    {
+      "field": "distribution",
+      "value": "npm 包分发，构建在 CSS-in-JS 引擎之上",
+      "sourceUrl": "https://baseweb.design/getting-started/setup",
+      "evidence": "首屏 Setup Base Web 卡片正文",
+      "confidence": 1
+    },
+    {
+      "field": "componentGroups",
+      "value": "INPUTS、PICKERS、DATE & TIME、NAVIGATION、CONTENT、TABLES、PROGRESS & VALIDATION、SURFACES、MAP MARKER、UTILITY",
+      "sourceUrl": "https://baseweb.design/components",
+      "evidence": "左栏 COMPONENTS 段落的分组标题及其下组件项",
+      "confidence": 1
+    },
+    {
+      "field": "learningResources",
+      "value": "Learning Base Web 指向两个示例应用（一个简单、一个更复杂）",
+      "sourceUrl": "https://baseweb.design/getting-started/learn",
+      "evidence": "首屏 Learning Base Web 卡片正文",
+      "confidence": 1
+    },
+    {
+      "field": "figmaSection",
+      "value": "页面含 Figma Community 一节",
+      "sourceUrl": "https://baseweb.design/",
+      "evidence": "页面章节标题 Figma Community",
+      "confidence": 0.7
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://baseweb.design/",
+      "evidence": "全站没有 Pricing 入口或价格说明",
+      "confidence": 0.6
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/baseweb-design",
+    "designMdUrl": "https://vislexicon.com/site/baseweb-design.md",
+    "checkedAt": "2026-09-15T11:56:11.998Z",
+    "license": "unknown"
+  }
+}

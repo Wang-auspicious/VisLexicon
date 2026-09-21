@@ -1,0 +1,158 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5204a51bb51dd1dc4e2205a55575aa13f9acb1af55d819d36879f0654dcf7859",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-chartjs-chartjs-color-string",
+  "entityId": "entity-github-com-chartjs-chartjs-color-string",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/chartjs/chartjs-color-string",
+    "finalUrl": "https://github.com/chartjs/chartjs-color-string",
+    "checkedAt": "2026-09-15T12:50:31.996Z"
+  },
+  "editorial": {
+    "name": "chartjs/chartjs-color-string",
+    "descriptionZh": "解析和生成 CSS 颜色字符串的小库：getRgb、getHsl 读入，hexString、rgbString 拼回去，是 chartjs-color 的底层依赖。",
+    "takeawayZh": "把 '#FFF'、'rgba(...)' 解析成数组再拼回字符串",
+    "noteZh": "About 栏只有一句 Parser and generator for CSS color strings，标 MIT license、9 stars、7 forks；README 把 API 拆成 Parsing 与 Generation 两段，Parsing 里逐行给出 colorString.getRgb('#FFF') // [255, 255, 255]、getRgba('#FFFA') // [255, 255, 255, 0.67]、getAlpha('rgba(200, 0, 12, 0.6)') // 0.6 这样的对照，Generation 里是 hexString、rgbString、percentString、keyword、hslString 的示例。文件列表只有 test、color-string.js、package.json、README.md、LICENSE、CHANGELOG.md 等八项，About 上方标着 54 Commits，Releases 一栏没有内容。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 的正文只有 Install 与 Usage 两节，交付物是一个 npm 包，用户拿走的是可 require 的解析函数。",
+        "evidenceUrl": "https://github.com/chartjs/chartjs-color-string"
+      },
+      {
+        "statement": "仓库规模极小（八个文件、54 次提交、无 release），定位是上游颜色库的字符串解析层，归开发工作流。",
+        "evidenceUrl": "https://github.com/chartjs/chartjs-color-string"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:50:31.996Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/chartjs/chartjs-color-string",
+      "finalUrl": "https://github.com/chartjs/chartjs-color-string",
+      "title": "GitHub - chartjs/chartjs-color-string: Parser and generator for CSS color strings · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-chartjs-chartjs-color-string/identity.jpg",
+        "sha256": "9079652d228ddb80d5c1efc1248925ddfdc562fbc73d0499fb1aa8b969e0dcba",
+        "width": 1280,
+        "height": 900,
+        "bytes": 91434,
+        "alt": "chartjs/chartjs-color-string 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/chartjs/chartjs-color-string",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-chartjs-chartjs-color-string/identity.jpg",
+          "alt": "chartjs/chartjs-color-string 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/chartjs/chartjs-color-string",
+      "evidence": "右侧 About 栏与 README 标签行都写 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "stars",
+      "value": "9",
+      "sourceUrl": "https://github.com/chartjs/chartjs-color-string",
+      "evidence": "右侧 About 栏 Star 9、Fork 7",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "无 release",
+      "sourceUrl": "https://github.com/chartjs/chartjs-color-string",
+      "evidence": "页头标签行没有 Releases 项，About 栏 Releases 区块为空",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-chartjs-chartjs-color-string.md",
+  "registryUrl": "/r/github-com-chartjs-chartjs-color-string.json"
+}

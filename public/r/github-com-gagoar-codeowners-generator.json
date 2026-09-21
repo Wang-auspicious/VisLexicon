@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a4c567f2c2c27dd6b7b1c618684d812418f2679724581ee73b3634d70a0e8b03",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-gagoar-codeowners-generator",
+  "entityId": "entity-github-com-gagoar-codeowners-generator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/gagoar/codeowners-generator",
+    "finalUrl": "https://github.com/gagoar/codeowners-generator",
+    "checkedAt": "2026-09-15T12:50:52.027Z"
+  },
+  "editorial": {
+    "name": "gagoar/codeowners-generator",
+    "descriptionZh": "codeowners-generator 让 monorepo 里可以到处放 CODEOWNERS 文件，再编译成一份 GitHub 认得的合并文件，也能读 package.json 的 maintainers 字段。",
+    "takeawayZh": "各处放 CODEOWNERS，编译成一份交给 GitHub",
+    "noteZh": "仓库页顶部先弹出一条蓝底提示 Use this GitHub action with your project / Add this Action to an existing workflow or create a new one，右边是 View on Marketplace 按钮。About 栏写 CODEOWNERS solution for mono repos，挂出 gagoar.github.io/codeowners-genera… 文档链接与 cli、codeowners、codeowners-files、monorepo 四个标签，MIT license、66 stars、10 forks。README 分 Table of Contents、About The Project、Usage、Action、Configuration、Roadmap 等节，说明 monorepo 里 ownership 分属多个团队时难以维护，于是把散落的 CODEOWNERS 汇总成一个生成文件，并可用 --use-maintainers 从 package.json 的 maintainers、contributors、author 字段同步；文件列表里 action.yml、__tests__、images、renovate.json 都在。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是 CLI 工具加 GitHub Action（仓库根有 action.yml，页面顶部直接给 View on Marketplace），服务于仓库的协作流程配置。",
+        "evidenceUrl": "https://github.com/gagoar/codeowners-generator"
+      },
+      {
+        "statement": "它解决的是 CODEOWNERS 在 monorepo 里的维护问题，属开发工作流环节；About 栏标签也自陈 monorepo。",
+        "evidenceUrl": "https://github.com/gagoar/codeowners-generator"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:50:52.027Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "apply"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/gagoar/codeowners-generator",
+      "finalUrl": "https://github.com/gagoar/codeowners-generator",
+      "title": "GitHub - gagoar/codeowners-generator: CODEOWNERS solution for mono repos · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-gagoar-codeowners-generator/identity.jpg",
+        "sha256": "4e81378db5ce8970e0d804b5ef95c81c06bf9557a15b05c385773bc0bbebc46e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 103099,
+        "alt": "gagoar/codeowners-generator 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/gagoar/codeowners-generator",
+      "evidence": "右侧 About 栏与 README 标签行都写 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "githubAction",
+      "value": "已上架 GitHub Marketplace",
+      "sourceUrl": "https://github.com/gagoar/codeowners-generator",
+      "evidence": "页面顶部蓝条 Use this GitHub action with your project 与 View on Marketplace 按钮",
+      "confidence": 1
+    },
+    {
+      "field": "cliOption",
+      "value": "--use-maintainers",
+      "sourceUrl": "https://github.com/gagoar/codeowners-generator",
+      "evidence": "README 的 About The Project 一节提到读 package.json 的 maintainers 字段",
+      "confidence": 1
+    },
+    {
+      "field": "stars",
+      "value": "66",
+      "sourceUrl": "https://github.com/gagoar/codeowners-generator",
+      "evidence": "右侧 About 栏 Star 66、Fork 10",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-gagoar-codeowners-generator",
+    "designMdUrl": "https://vislexicon.com/site/github-com-gagoar-codeowners-generator.md",
+    "checkedAt": "2026-09-15T12:50:52.027Z",
+    "license": "MIT"
+  }
+}

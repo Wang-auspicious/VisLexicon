@@ -1,0 +1,173 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "296aa43838e98770a84e9333fbe04eebd25e8c8eee49bf69eeb24bcdbc82340f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "retool-com",
+  "entityId": "entity-retool-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://retool.com",
+    "finalUrl": "https://retool.com/",
+    "checkedAt": "2026-09-15T11:17:40.531Z"
+  },
+  "editorial": {
+    "name": "Retool",
+    "descriptionZh": "内部工具搭建平台首页，用一句提示词生成带权限与审计的完整应用，也能导入在 Lovable、Replit 里做好的 React 代码，或直接从 MCP 客户端建应用。",
+    "takeawayZh": "一句话生成内部应用，接上生产库再配好权限",
+    "noteZh": "整页深色，主标 Secure your vibe-coded apps 用超大无衬线字压在几屏半透明的应用截图之上，中间悬着一只米白色的 Build 输入框，占位文案是 Create a vendor onboarding tracker that pulls，左下角是 Starter prompts 下拉，右下角一枚蓝色圆形提交箭头。输入框下面并排两条胶囊：Import apps built in other platforms 与 Build via MCP，各配一排小图标。正文把建法拆成三块：App builder 写 Describe what you want and get a full, production-ready app with enterprise security and governance built in.，MCP server 写 Build an app from your favorite AI coding agent，Import React code 写 Deploy apps built in Lovable, Replit, and other platforms。导航另有 Launch、Scale、Govern 三段，以及 App gallery、Integrations、Templates、Utilities 四个发现类入口。",
+    "recommendation": null,
+    "pricing": "Freemium（导航有 Start for free，价格在 /pricing）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是用提示词或导入 React 代码搭出来的内部应用，用户拿走的是可部署的应用骨架与模板入口（/templates、/app-gallery），库里 lovable-dev、bolt-new 也归网站与应用构建器。",
+        "evidenceUrl": "https://retool.com/secure-vibe-coding"
+      },
+      {
+        "statement": "首页主体是一枚 Build 输入框与三条建法，讲的是把应用做出来并部署进自己受管的环境，而不是提供素材或参考文档。",
+        "evidenceUrl": "https://retool.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:17:40.531Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "admin",
+      "agent",
+      "ai"
+    ],
+    "deliverables": [
+      "template",
+      "code-library"
+    ],
+    "actions": [
+      "generate",
+      "prototype",
+      "install",
+      "browse",
+      "edit"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web",
+      "mcp",
+      "api"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build",
+      "handoff",
+      "publish"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://retool.com",
+      "finalUrl": "https://retool.com/",
+      "title": "Build internal software better, with AI. | Retool",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/retool-com/identity.jpg",
+        "sha256": "91ce192355aa9689c4cca7081e952ffb5c0163cd6985668759f494adcdeb79d1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 74351,
+        "alt": "Retool 首屏：Secure your vibe-coded apps"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "h1",
+      "value": "Secure your vibe-coded apps",
+      "sourceUrl": "https://retool.com/",
+      "evidence": "首屏压在应用截图之上的超大标题",
+      "confidence": 1
+    },
+    {
+      "field": "buildPaths",
+      "value": "App builder（Describe what you want and get a full, production-ready app）、MCP server（Build an app from your favorite AI coding agent）、Import React code（Deploy apps built in Lovable, Replit）",
+      "sourceUrl": "https://retool.com/secure-vibe-coding",
+      "evidence": "Apps that mean business 一段下的三块能力",
+      "confidence": 1
+    },
+    {
+      "field": "appGallery",
+      "value": "App gallery 收录 corporate-treasury-dashboard、finops-customer-operations-app、real-time-earthquake-monitor、logistics-dispatch-monitor 等样例",
+      "sourceUrl": "https://retool.com/app-gallery",
+      "evidence": "导航 DISCOVER 分组下的 App gallery 与其子页路径",
+      "confidence": 1
+    },
+    {
+      "field": "customers",
+      "value": "客户案例含 Ramp、Orangetheory、UTMB、DoorDash、Zeus",
+      "sourceUrl": "https://retool.com/customers",
+      "evidence": "站内五条 /customers/… 路径",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "Trusted by 10,000+ teams to generate production-ready AI applications",
+      "sourceUrl": "https://retool.com/",
+      "evidence": "首屏下方的一行统计说明",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium（导航有 Start for free，价格在 /pricing）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/retool-com",
+    "designMdUrl": "https://vislexicon.com/site/retool-com.md",
+    "checkedAt": "2026-09-15T11:17:40.531Z",
+    "license": "unknown"
+  }
+}

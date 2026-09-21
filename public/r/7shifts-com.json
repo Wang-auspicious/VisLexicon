@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0c6c3f5a4a56b7a17919c6c3931be068129b4830ba4e33ef5eb1a6a0f45345c6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "7shifts-com",
+  "entityId": "entity-7shifts-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://7shifts.com",
+    "finalUrl": "https://www.7shifts.com/",
+    "checkedAt": "2026-09-15T10:43:04.758Z"
+  },
+  "editorial": {
+    "name": "7shifts",
+    "descriptionZh": "餐饮排班与人事 SaaS 的产品首页，把 Hire / Train / Schedule / Pay / Retain 串成一条员工旅程，并称自己服务 150 万餐饮从业者。",
+    "takeawayZh": "看 ToB 首页怎么用一条员工旅程串五块功能",
+    "noteZh": "首屏白底，标题写 More than just Scheduling 加一行 The platform behind great restaurant teams，下面一颗蓝色 Get started, it's free! 与 No credit card required。再往下一排客户 logo：Chatime、Pizza Ranch、MANDY'S、Arthur's、Jamba。正文把功能排成 Hire / Train / Schedule / Pay / Retain 五段，每段再拆细项——Hire 下是 Post jobs in minutes、Applicant tracking in one place、Send and store digital…，页面另写 1.5 million restaurant pros 与 Get running in under 30 days。顶栏是 Platform / Pricing / Built for / Integrations / Resources 加 Login，最上面一条黑带写 New: Train where your team already works. Employee Training is now in 7shifts.。http 阶段这一段被 Cloudflare 拦成 Attention Required!。",
+    "recommendation": null,
+    "pricing": "Freemium（首屏写 Get started, it's free! 与 No credit card required，站内有 /pricing）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 7shifts 产品自己的官网首页，由落地页灵感目录 saaslandingpage.com 收进候选池，在本库里的价值是首屏结构、客户 logo 带与功能分段，因此归产品与公司官网。",
+        "evidenceUrl": "https://7shifts.com/"
+      },
+      {
+        "statement": "说明：http 阶段返回 Cloudflare 的 Attention Required!（403），描述取自浏览器阶段渲染出的正文；站内没有可下载的组件或素材。",
+        "evidenceUrl": "https://7shifts.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:43:04.758Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "recruiting"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://7shifts.com",
+      "finalUrl": "https://www.7shifts.com/",
+      "title": "7shifts: Restaurant HR, Scheduling, Payroll & Retention Tools",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/7shifts-com/identity.jpg",
+        "sha256": "8fac05525d44f3aafe954325a522da9c70b3642dbc3aef527e21db26c00f8f76",
+        "width": 1280,
+        "height": 900,
+        "bytes": 72706,
+        "alt": "7shifts 首屏：Manage your team's journey in one place"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "httpStatus",
+      "value": "http 阶段返回 Attention Required! | Cloudflare，浏览器阶段正常渲染",
+      "sourceUrl": "https://7shifts.com/",
+      "evidence": "简报 http 阶段记录 status 与 title，与 live.title 给出的完整站点标题对照",
+      "confidence": 1
+    },
+    {
+      "field": "heroLine",
+      "value": "More than just Scheduling / The platform behind great restaurant teams",
+      "sourceUrl": "https://7shifts.com/",
+      "evidence": "首屏两行标题，截图与 live.heads 第一条一致",
+      "confidence": 1
+    },
+    {
+      "field": "journey",
+      "value": "Hire / Train / Schedule / Pay / Retain 五段，Hire 下写 Post jobs in minutes、Applicant tracking in one place",
+      "sourceUrl": "https://7shifts.com/",
+      "evidence": "首页 Everything your team relies on, working together 段的五组标题与细项",
+      "confidence": 1
+    },
+    {
+      "field": "customers",
+      "value": "Chatime、Pizza Ranch、MANDY'S、Arthur's、Jamba",
+      "sourceUrl": "https://7shifts.com/customers",
+      "evidence": "首屏下方客户 logo 带，截图可见；站内另有对应的 case study 路径",
+      "confidence": 1
+    },
+    {
+      "field": "trainingBanner",
+      "value": "New: Train where your team already works. Employee Training is now in 7shifts.",
+      "sourceUrl": "https://7shifts.com/employee-training",
+      "evidence": "首屏最顶部黑色横幅，截图第一行可见",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "1.5 million restaurant pros；Get running in under 30 days",
+      "sourceUrl": "https://7shifts.com/",
+      "evidence": "首页中段统计与行动号召文案",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium（首屏写 Get started, it's free! 与 No credit card required，站内有 /pricing）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/7shifts-com",
+    "designMdUrl": "https://vislexicon.com/site/7shifts-com.md",
+    "checkedAt": "2026-09-15T10:43:04.758Z",
+    "license": "unknown"
+  }
+}

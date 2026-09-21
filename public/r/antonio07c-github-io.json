@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f2c0ec621784b3fb334670f6736f34ff9671690d1bcbab0d4f020de338962461",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "antonio07c-github-io",
+  "entityId": "entity-antonio07c-github-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://antonio07c.github.io",
+    "finalUrl": "https://antonio07c.github.io/getting-started",
+    "checkedAt": "2026-09-15T12:02:10.336Z"
+  },
+  "editorial": {
+    "name": "Ng-Bits",
+    "descriptionZh": "只有六个组件的 Angular 小库：Button、Card、Confirmation Dialog、Divider、Note、Tag。文档页把安装命令、NgModule 导入写法和 GitHub 仓库地址并排放在同一屏里。",
+    "takeawayZh": "一行 ng add，拿到 Button 到 Tag 六个组件",
+    "noteZh": "顶栏是蓝紫渐变，左端 NG-BITS 三个字，右端只挂一个 GitHub 图标。左侧导航从 Getting Started 往下只列了 Button、Card、Confirmation Dialog、Divider、Note、Tag 六项，没有别的栏目。正文 Getting Started 页里 Installation 一栏给了三行命令：ng add ng-bits、npm i ng-bits、yarn add ng-bits；Usage 一栏示范 import { NgBitsModule } from 'ng-bits' 和 @NgModule 里 imports 数组的写法，两个代码块都是深色底。页面底部两块分别写着 Repository github.com/antonio07c/ng-bits 与 License MIT。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点标题 Ng-Bits | Angular UI Components，左侧栏逐项列出组件页，交付物是可直接引入的 Angular 组件，故归通用界面组件库。",
+        "evidenceUrl": "https://antonio07c.github.io/getting-started"
+      },
+      {
+        "statement": "Getting Started 页只讲安装与模块导入，没有设计规范或设计文件，用户拿走的是组件代码。",
+        "evidenceUrl": "https://antonio07c.github.io/getting-started"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:10.336Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://antonio07c.github.io",
+      "finalUrl": "https://antonio07c.github.io/getting-started",
+      "title": "Angular UI Components | ng-bits for Angular",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/antonio07c-github-io/identity.jpg",
+        "sha256": "0a5d422ff7b33fa3558b000bd7a37beb687192fb82e52d95bb1cb33dcf54166a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 59164,
+        "alt": "Ng-Bits 首屏：Getting Started"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "components",
+      "value": "Button、Card、Confirmation Dialog、Divider、Note、Tag，共六项",
+      "sourceUrl": "https://antonio07c.github.io/getting-started",
+      "evidence": "左侧导航与正文里逐项列出的组件名，逐个数过是六项",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "ng add ng-bits 或 npm i ng-bits 或 yarn add ng-bits",
+      "sourceUrl": "https://antonio07c.github.io/getting-started",
+      "evidence": "Installation 一栏代码块里的三行命令",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://antonio07c.github.io/getting-started",
+      "evidence": "页面底部 License 一行写着 MIT",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "github.com/antonio07c/ng-bits",
+      "sourceUrl": "https://antonio07c.github.io/getting-started",
+      "evidence": "页面底部 Repository 一行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/antonio07c-github-io",
+    "designMdUrl": "https://vislexicon.com/site/antonio07c-github-io.md",
+    "checkedAt": "2026-09-15T12:02:10.336Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "dcb027bc66b4ecc4fe703f744d81c30c0a7abf1218ff2a0bfa9c59b85c847e23",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-adobe-generator-add-action-asset-compute",
+  "entityId": "entity-github-com-adobe-generator-add-action-asset-compute",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/adobe/generator-add-action-asset-compute",
+    "finalUrl": "https://github.com/adobe/generator-add-action-asset-compute",
+    "checkedAt": "2026-09-15T12:14:49.961Z"
+  },
+  "editorial": {
+    "name": "adobe/generator-add-action-asset-compute",
+    "descriptionZh": "把 Asset Compute 的 action 加进 App Builder 应用的生成器；模板已把 extension 部分摘掉，只留 action 本体的代码。",
+    "takeawayZh": "把 Asset Compute action 加进应用",
+    "noteZh": "右栏 About 写 An Asset Compute action that can be added to an App Builder app as a template；templates 目录最近一次改动是 fix: remove extension code, leaving action code only，也就是只保留 action 那一半。install.yml 的提交信息是 fix: typo in install.yml，index.js 与 test 目录一起跟着 feat: migrate to ESM + yeoman-generator ^8 + Jest->Vitest 换了实现。README 的 Licensing 段写明 Apache V2 License，最新 release 4.0.0，Releases 10、Contributors 10。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它是往已有 App Builder 应用里补一个 Asset Compute action 的生成器，交付物是可嵌进现有工程的 action 模板与配置。",
+        "evidenceUrl": "https://github.com/adobe/generator-add-action-asset-compute"
+      },
+      {
+        "statement": "与同族 scaffold 类模板不同，它由 install.yml 描述安装点，说明它靠 Adobe I/O CLI 附加到现有项目，因此归开发工作流。",
+        "evidenceUrl": "https://github.com/adobe/generator-add-action-asset-compute"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:14:49.961Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "template"
+    ],
+    "actions": [
+      "generate",
+      "install"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/adobe/generator-add-action-asset-compute",
+      "finalUrl": "https://github.com/adobe/generator-add-action-asset-compute",
+      "title": "GitHub - adobe/generator-add-action-asset-compute: An Asset Compute action that can be added to an App Builder app as a template · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-adobe-generator-add-action-asset-compute/identity.jpg",
+        "sha256": "9614727f3524479404b06f997dc5842e6b98f9ac8499e100d1003a7ae0fc88d8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 132382,
+        "alt": "adobe/generator-add-action-asset-compute 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/adobe/generator-add-action-asset-compute",
+      "evidence": "README 的 Licensing 段：This project is licensed under the Apache V2 License. See LICENSE for more information.",
+      "confidence": 1
+    },
+    {
+      "field": "purpose",
+      "value": "把 Asset Compute action 作为模板加进 App Builder 应用",
+      "sourceUrl": "https://github.com/adobe/generator-add-action-asset-compute",
+      "evidence": "README 抬头与右栏 About 同写 An Asset Compute action that can be added to an App Builder app as a template",
+      "confidence": 1
+    },
+    {
+      "field": "templateChange",
+      "value": "只保留 action 代码，移除 extension 代码",
+      "sourceUrl": "https://github.com/adobe/generator-add-action-asset-compute",
+      "evidence": "templates 目录的提交信息 fix: remove extension code, leaving action code only",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "4.0.0，共 10 个 release",
+      "sourceUrl": "https://github.com/adobe/generator-add-action-asset-compute",
+      "evidence": "右栏 Releases 10 与 Latest 4.0.0 标记，package.json 的提交信息为 chore: release 4.0.0 (#66)",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-adobe-generator-add-action-asset-compute",
+    "designMdUrl": "https://vislexicon.com/site/github-com-adobe-generator-add-action-asset-compute.md",
+    "checkedAt": "2026-09-15T12:14:49.961Z",
+    "license": "Apache-2.0"
+  }
+}

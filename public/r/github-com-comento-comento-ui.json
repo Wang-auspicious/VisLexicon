@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "31e21df7cb89b9f5eba3c0ad756ef29d22119dff9d87bde97a994cfc6649e367",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-comento-comento-ui",
+  "entityId": "entity-github-com-comento-comento-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/comento/comento-ui",
+    "finalUrl": "https://github.com/comento/comento-ui",
+    "checkedAt": "2026-09-15T11:57:07.965Z"
+  },
+  "editorial": {
+    "name": "comento/comento-ui",
+    "descriptionZh": "Comento 在自家业务里用的一套 Vue 组件库，npm 包名 comento-ui，接入方式是 Vue.use(ComentoUI) 一行。组件预览放在 storybook，仓库里 MDX 的占比比 Vue 代码还高。",
+    "takeawayZh": "装 comento-ui，Vue.use 一次注册整套组件",
+    "noteZh": "首页就是 Comento UI 的 README：Installation 并列 npm install comento-ui 与 yarn add comento-ui，How to use 给 Vue.use(ComentoUI) 加一行 CSS 引入，Docs 直接指向 comento-ui storybook。右侧 About 写 Vue UI components used in Comento，标签是 component-library、design-system、vue、vuejs，Releases 面板显示 293 个版本、最新 v1.10.1，贡献者 9 人，语言构成里 MDX 47.4% 排在 Vue 37.2% 前面。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可 npm 安装的 Vue 组件库，About 里自带 component-library 与 design-system 两个主题标签，文档站 storybook 用来逐个看组件，属通用界面组件。",
+        "evidenceUrl": "https://github.com/comento/comento-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:07.965Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/comento/comento-ui",
+      "finalUrl": "https://github.com/comento/comento-ui",
+      "title": "GitHub - comento/comento-ui: Vue UI components used in Comento · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-comento-comento-ui/identity.jpg",
+        "sha256": "7f15f5a0ccf682645a611942777eee0fb2c0478a937f78ebd0b68939d873c9cc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 130251,
+        "alt": "comento/comento-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/comento/comento-ui",
+      "evidence": "README 的 License 一节写着 MIT，正文末尾同样出现 License MIT",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install comento-ui / yarn add comento-ui",
+      "sourceUrl": "https://github.com/comento/comento-ui",
+      "evidence": "README Installation 一节的代码块",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "293 个 release，最新 v1.10.1",
+      "sourceUrl": "https://github.com/comento/comento-ui",
+      "evidence": "右侧 Releases 293 面板与 heads 里的 Releases 293 (293)",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/comento/comento-ui",
+      "evidence": "npm 包直接安装，仓库没有任何付费入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-comento-comento-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-comento-comento-ui.md",
+    "checkedAt": "2026-09-15T11:57:07.965Z",
+    "license": "MIT"
+  }
+}

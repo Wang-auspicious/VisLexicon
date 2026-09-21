@@ -1,0 +1,174 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5da7b1341ddf3d0c13b4cfc4d7bd14d9513a1e110434b6454c7a8bb0bb938658",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-jinghaihan-vue-stream-markdown",
+  "entityId": "entity-github-com-jinghaihan-vue-stream-markdown",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/jinghaihan/vue-stream-markdown",
+    "finalUrl": "https://github.com/jinghaihan/vue-stream-markdown",
+    "checkedAt": "2026-09-15T12:14:02.643Z"
+  },
+  "editorial": {
+    "name": "jinghaihan/vue-stream-markdown",
+    "descriptionZh": "为流式场景优化的 Vue markdown 渲染器，靠语法推断把还没收完的节点先画出来，主打接 LLM 的逐字输出。",
+    "takeawayZh": "接 LLM 流式输出时，边收边渲染不完整的 markdown 节点",
+    "noteZh": "仓库 Code 页的文件树把 packages、playground/nuxt、benchmark、docs 几个目录分列，右侧 About 写的是 Streaming markdown output, Useful for text streams like LLM outputs.，标签里 markdown、mermaid、katex、stream、vue 并排；README 的 Features 第一条就是 Streaming-optimized rendering，并给了 Documentation 与 Playground 两个入口，下方标着 MIT license。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是一个装进 Vue 项目的渲染组件（包目录 packages 与 playground/nuxt 并列），不是文章站或教程。",
+        "evidenceUrl": "https://github.com/jinghaihan/vue-stream-markdown"
+      },
+      {
+        "statement": "归 general-ui-components：它渲染的是正文文本块本身，没有自带成套设计系统的主题体系。",
+        "evidenceUrl": "https://github.com/jinghaihan/vue-stream-markdown"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:14:02.643Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/jinghaihan/vue-stream-markdown",
+      "finalUrl": "https://github.com/jinghaihan/vue-stream-markdown",
+      "title": "GitHub - jinghaihan/vue-stream-markdown: Streaming markdown output, Useful for text streams like LLM outputs. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-jinghaihan-vue-stream-markdown/identity.jpg",
+        "sha256": "ec10c161068a84f24daad20289c715b2887ab745bff20da7aedd33e71bfb562a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135040,
+        "alt": "jinghaihan/vue-stream-markdown 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/jinghaihan/vue-stream-markdown",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-jinghaihan-vue-stream-markdown/identity.jpg",
+          "alt": "jinghaihan/vue-stream-markdown 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "purpose",
+      "value": "Streaming markdown output, Useful for text streams like LLM outputs",
+      "sourceUrl": "https://github.com/jinghaihan/vue-stream-markdown",
+      "evidence": "仓库右侧 About 栏第一行，与站点 description 同文",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/jinghaihan/vue-stream-markdown",
+      "evidence": "文件树下方 README 标签旁的 MIT license，仓库根目录也有 LICENSE.md",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "v1.1.0（Latest），共 48 个 release",
+      "sourceUrl": "https://github.com/jinghaihan/vue-stream-markdown/releases",
+      "evidence": "右侧 Releases 栏 v1.1.0 带 Latest 角标，标题写 Releases 48",
+      "confidence": 1
+    },
+    {
+      "field": "richContent",
+      "value": "渲染器拆成可选扩展，覆盖 katex、mermaid 等富内容",
+      "sourceUrl": "https://github.com/jinghaihan/vue-stream-markdown",
+      "evidence": "About 栏 topic 标签列出 markdown、mermaid、katex、latex、stream、customizable、vue",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-jinghaihan-vue-stream-markdown.md",
+  "registryUrl": "/r/github-com-jinghaihan-vue-stream-markdown.json"
+}

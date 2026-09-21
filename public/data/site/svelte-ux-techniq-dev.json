@@ -1,0 +1,170 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "467ebcd7de2cc37a2cd4304f7ecbec5aefc60521fe8f4ecfc7d355a74b44626e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svelte-ux-techniq-dev",
+  "entityId": "entity-svelte-ux-techniq-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "svelte-ux.techniq.dev",
+  "official": {
+    "inputUrl": "https://svelte-ux.techniq.dev",
+    "finalUrl": "https://svelte-ux.techniq.dev/",
+    "checkedAt": "2026-09-15T12:08:35.462Z"
+  },
+  "editorial": {
+    "name": "Svelte UX",
+    "descriptionZh": "建在 Tailwind 之上的 Svelte 组件库，提供 AppBar、Table、Charts 等上百个组件与 ux.themes 主题配置。给已经在用 Tailwind 的 Svelte 应用加成套控件与图表。",
+    "takeawayZh": "装 svelte-ux，用 ux.themes 配一套 Tailwind 组件。",
+    "noteZh": "顶栏是紫色，左边 Svelte UX 加汉堡按钮，右边排着 LayerChart ↗、Search ⌘K、en、主题图标、Discord、蝴蝶标与 GitHub。左侧栏分 Getting Started / Customization / Theme / Changelog 四页，再往下 Components 分组里 AppBar、AppLayout、NavItem、Settings、ThemeInit、ThemeSelect、ThemeSwitch 一路排开。正文第一句就是 Svelte UX for Tailwind 4 released!，Installation 一节点明 1.0.0 要求 Tailwind 3、而 Svelte CLI 新装的 Tailwind 4 用不了，接着给 npm install svelte-ux 与整段 tailwind.config.cjs 的 ux.themes 配置（primary、secondary、surface-100 等）。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是可逐个导入的 Svelte 组件（导入即用，不是整套设计系统规范），含 Table、Charts 等，归 general-ui-components；Tailwind 是它依赖的技术，写进 technologies 而非类别。",
+        "evidenceUrl": "https://svelte-ux.techniq.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:35.462Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svelte-ux.techniq.dev",
+      "finalUrl": "https://svelte-ux.techniq.dev/",
+      "title": "Svelte UX",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/svelte-ux-techniq-dev/identity.jpg",
+        "sha256": "1dbaa835dff8248d1b47c9e3dc3c474152c8f72d7e2ecafe83f4d3d574b8ccda",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113095,
+        "alt": "Svelte UX 首屏：Getting started"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://svelte-ux.techniq.dev",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/svelte-ux-techniq-dev/identity.jpg",
+          "alt": "Svelte UX 首屏：Getting started",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm install svelte-ux",
+      "sourceUrl": "https://svelte-ux.techniq.dev/",
+      "evidence": "Getting started 的 Add Svelte UX package 一节",
+      "confidence": 1
+    },
+    {
+      "field": "compatibility",
+      "value": "Svelte UX 1.0.0 要求 Tailwind 3、支持 Svelte 3-5；2.0.0 改用 Tailwind 4 并要求 Svelte 5",
+      "sourceUrl": "https://svelte-ux.techniq.dev/",
+      "evidence": "Installation 一节的三条 bullet",
+      "confidence": 1
+    },
+    {
+      "field": "theming",
+      "value": "ux.themes 里配 light / dark 两套 primary、secondary、surface-100/200/300、surface-content",
+      "sourceUrl": "https://svelte-ux.techniq.dev/",
+      "evidence": "Update `tailwind.config.cjs` 一节的代码块",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "组件覆盖 App（AppBar、AppLayout、NavItem）、Elements（Avatar、Button、Card、Icon）、Inputs、Navigation、Layout、Modal、Feedback、Visualization、Charts 等组",
+      "sourceUrl": "https://svelte-ux.techniq.dev/",
+      "evidence": "左侧栏分组与站内 /docs/components/* 路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/svelte-ux-techniq-dev.md",
+  "registryUrl": "/r/svelte-ux-techniq-dev.json"
+}

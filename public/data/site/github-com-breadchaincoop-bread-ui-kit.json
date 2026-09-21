@@ -1,0 +1,176 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "bafc365c427834c66d45fe8168bca81e71540df32d2d89dbab058b434c463898",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-breadchaincoop-bread-ui-kit",
+  "entityId": "entity-github-com-breadchaincoop-bread-ui-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/BreadchainCoop/bread-ui-kit",
+    "finalUrl": "https://github.com/BreadchainCoop/bread-ui-kit",
+    "checkedAt": "2026-09-15T11:38:03.802Z"
+  },
+  "editorial": {
+    "name": "BreadchainCoop/bread-ui-kit",
+    "descriptionZh": "给 Bread Coop 品牌落地的 React 组件库，用 TypeScript 写、Tailwind CSS v4 做主题，装完包把 theme.css 导进主样式文件就能用。",
+    "takeawayZh": "装 Bread 组件库，一份 theme.css 换品牌",
+    "noteZh": "About 那句是 A component library for implementing Bread Coop branding in JS/TS projects。README 的 Installation 给的是 pnpm install @breadcoop/ui，Quick Setup 要求先装 tailwindcss@next 与 @tailwindcss/postcss@next，再把 theme.css 导进主 CSS。文件区里 tailwind-preset.js、theme.css、tailwind.config.js、FONTS.md、tsup.config.ts、tsconfig.json 一字排开，提交记录里能看到 Exporting LiftedButton component and storybook for previewing 和 Point fonts export/CI check at dist/fonts/fonts.css。组件预览挂在 Storybook 上，Tags 有 12 个。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 与 About 都写明这是一套组件库，用户拿走的是装进 JS/TS 项目、带 Tailwind 预设与 theme.css 的组件，落通用界面组件库。",
+        "evidenceUrl": "https://github.com/BreadchainCoop/bread-ui-kit"
+      },
+      {
+        "statement": "它为单一品牌服务且自带字体导出（FONTS.md、dist/fonts/fonts.css），但仓库本体仍是组件包而非设计源文件模板，故不归模板类。",
+        "evidenceUrl": "https://github.com/BreadchainCoop/bread-ui-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:38:03.802Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library",
+      "font"
+    ],
+    "actions": [
+      "install",
+      "preview",
+      "copy"
+    ],
+    "media": [
+      "ui",
+      "font"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "brand-team"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/BreadchainCoop/bread-ui-kit",
+      "finalUrl": "https://github.com/BreadchainCoop/bread-ui-kit",
+      "title": "GitHub - BreadchainCoop/bread-ui-kit: A component library for implementing Bread Coop branding in JS/TS projects · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-breadchaincoop-bread-ui-kit/identity.jpg",
+        "sha256": "0d19129e6a843a0263f0ff3dc0071890ce7018d176b8c3327f233f04110d1767",
+        "width": 1280,
+        "height": 900,
+        "bytes": 143369,
+        "alt": "BreadchainCoop/bread-ui-kit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/BreadchainCoop/bread-ui-kit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-breadchaincoop-bread-ui-kit/identity.jpg",
+          "alt": "BreadchainCoop/bread-ui-kit 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "install",
+      "value": "pnpm install @breadcoop/ui，并要求 Tailwind v4 环境",
+      "sourceUrl": "https://github.com/BreadchainCoop/bread-ui-kit",
+      "evidence": "README 的 Installation 与 Quick Setup 两节",
+      "confidence": 1
+    },
+    {
+      "field": "theming",
+      "value": "主题走 theme.css 与 tailwind-preset.js",
+      "sourceUrl": "https://github.com/BreadchainCoop/bread-ui-kit",
+      "evidence": "README Quick Setup 里的 import 步骤与文件区的 theme.css、tailwind-preset.js",
+      "confidence": 1
+    },
+    {
+      "field": "fonts",
+      "value": "包内导出字体，构建时校验 dist/fonts/fonts.css",
+      "sourceUrl": "https://github.com/BreadchainCoop/bread-ui-kit",
+      "evidence": "FONTS.md 文件与提交信息 Point fonts export/CI check at dist/fonts/fonts.css",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/BreadchainCoop/bread-ui-kit",
+      "evidence": "About 栏与 README 标题行都没有许可证标签，文件区也看不到 LICENSE 文件",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-breadchaincoop-bread-ui-kit.md",
+  "registryUrl": "/r/github-com-breadchaincoop-bread-ui-kit.json"
+}

@@ -1,0 +1,164 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7b8ce0b1d5c2730503a5cbaf658630fe931b9fc5f09b6ca3dad2d41d430252cf",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-shopify-polaris-viz",
+  "entityId": "entity-github-com-shopify-polaris-viz",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/Shopify/polaris-viz",
+    "finalUrl": "https://github.com/Shopify/polaris-viz",
+    "checkedAt": "2026-09-15T11:50:48.097Z"
+  },
+  "editorial": {
+    "name": "Shopify/polaris-viz",
+    "descriptionZh": "Shopify 数据可视化系统的源码：Web 端是 React 组件，移动端是 React Native 组件，两端共用同一套数据结构、工具函数、主题与子组件。仓库已归档并声明弃用。",
+    "takeawayZh": "看它怎么把图表拆成 React 与 RN 共用一套主题",
+    "noteZh": "页面顶部挂着黄色横幅 This repository was archived by the owner on Jul 29, 2026. It is now read-only.，README 开头就是 Deprecation Notice，说因为外部使用太少、维护成本高而停掉 polaris-viz，Shopifolk 转内部库。文件树里 .storybook、packages、sandbox、tests 分开，About 指向 polaris-viz.shopify.dev，2,222 次提交。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是数据可视化组件实现（README 自称 Shopify's data visualization system，两端共用 Data Structure、Themes 与 SubComponents），所以归到图表与数据可视化代码。",
+        "evidenceUrl": "https://github.com/Shopify/polaris-viz"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:50:48.097Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "react",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Shopify/polaris-viz",
+      "finalUrl": "https://github.com/Shopify/polaris-viz",
+      "title": "GitHub - Shopify/polaris-viz: A collection of React and React native components that compose Shopify's data visualization system · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-shopify-polaris-viz/identity.jpg",
+        "sha256": "756405b873d2043858c50a495c816fab8d20189cb7bf42334fba3e2f06defc61",
+        "width": 1280,
+        "height": 900,
+        "bytes": 99956,
+        "alt": "Shopify/polaris-viz 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/Shopify/polaris-viz",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-shopify-polaris-viz/identity.jpg",
+          "alt": "Shopify/polaris-viz 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "status",
+      "value": "已归档（2026-07-29 起只读）并声明弃用",
+      "sourceUrl": "https://github.com/Shopify/polaris-viz",
+      "evidence": "首屏黄色横幅与 README 的 Deprecation Notice",
+      "confidence": 1
+    },
+    {
+      "field": "libraries",
+      "value": "polaris-viz（Web / React）与 polaris-viz-native（React Native）",
+      "sourceUrl": "https://github.com/Shopify/polaris-viz",
+      "evidence": "README 正文对两个 consumer-facing 库的说明",
+      "confidence": 1
+    },
+    {
+      "field": "commits",
+      "value": "2,222",
+      "sourceUrl": "https://github.com/Shopify/polaris-viz",
+      "evidence": "首屏 Latest commit History 行的提交数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-shopify-polaris-viz.md",
+  "registryUrl": "/r/github-com-shopify-polaris-viz.json"
+}

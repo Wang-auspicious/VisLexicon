@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "de50e57f7b1f60993784f06da488f6e9f8aeeafaa28d3967ff31536b4a885847",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-newscorp-ghfb-newskit-git",
+  "entityId": "entity-github-com-newscorp-ghfb-newskit-git",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/newscorp-ghfb/newskit.git",
+    "finalUrl": "https://github.com/newscorp-ghfb/newskit",
+    "checkedAt": "2026-09-15T12:02:04.005Z"
+  },
+  "editorial": {
+    "name": "newscorp-ghfb/NewsKit",
+    "descriptionZh": "News Corp 的设计系统仓库，在主题和 tokens 之上给 React 组件，配套 Storybook、docs 站与 cypress e2e 测试；仓库里还塞着 fonts、terraform 和 eks 目录。给做新闻媒体类产品的设计系统团队。",
+    "takeawayZh": "跑 Storybook，取组件与主题 tokens",
+    "noteZh": "About 栏写 The NewsKit Design system 并链到 newskit.co.uk，topic 是 accessibility / best-practices / design-system / documentation / react / storybook / themes / typescript。README 的目录从 Browser support、Pre-requisites 排到 Getting Started、Testing、Styleguides 和 Key Links。这个仓库有 2,130 次提交、60 位 contributor、40 个 release（最新 v10.0.0），目录里 fonts、terraform、eks 和 lib/omlet 与 src、site、docs 并列，最近一次提交还在改 CI 流程，About 里的许可行只写 License 两个字，没有标出具体协议。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "About 栏自述 The NewsKit Design system，topic 里同时挂着 design-system、themes、storybook 与 react，交付物是成体系的设计系统组件而不是零散组件。",
+        "evidenceUrl": "https://github.com/newscorp-ghfb/NewsKit"
+      },
+      {
+        "statement": "仓库同时维护 fonts、docs site、Storybook 与 e2e 测试，覆盖范围超过单一组件库，符合设计系统与完整套件的落点。",
+        "evidenceUrl": "https://github.com/newscorp-ghfb/NewsKit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:04.005Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design",
+      "handoff"
+    ],
+    "audiences": [
+      "developer",
+      "designer",
+      "brand-team"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/newscorp-ghfb/newskit.git",
+      "finalUrl": "https://github.com/newscorp-ghfb/newskit",
+      "title": "GitHub - newscorp-ghfb/NewsKit: The NewsKit Design system · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-newscorp-ghfb-newskit-git/identity.jpg",
+        "sha256": "3fab387b315129c3af4b009ae8e9b4026b3a78c7aa68f2a09042dcfe479c7637",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134116,
+        "alt": "newscorp-ghfb/NewsKit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "status",
+      "value": "2,130 commits、60 位 contributor、40 个 release，最新 v10.0.0",
+      "sourceUrl": "https://github.com/newscorp-ghfb/NewsKit",
+      "evidence": "仓库首页提交列表、Contributors 与 Releases 区块",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "React 加 TypeScript，配 Storybook、cypress e2e、docs 站",
+      "sourceUrl": "https://github.com/newscorp-ghfb/NewsKit",
+      "evidence": "About 栏 topic 列表里的 react / storybook / typescript / documentation，以及目录里的 .storybook、cypress、docs、e2e",
+      "confidence": 1
+    },
+    {
+      "field": "readmeSections",
+      "value": "Browser support、Pre-requisites、Getting Started、Testing、Styleguides、Key Links",
+      "sourceUrl": "https://github.com/newscorp-ghfb/NewsKit",
+      "evidence": "README 的标题列表：🙌 Browser support、✅ Pre-requisites、📦 Getting Started、Testing、👉 What's next、Styleguides、🔗 Key Links",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-newscorp-ghfb-newskit-git",
+    "designMdUrl": "https://vislexicon.com/site/github-com-newscorp-ghfb-newskit-git.md",
+    "checkedAt": "2026-09-15T12:02:04.005Z",
+    "license": "unknown"
+  }
+}

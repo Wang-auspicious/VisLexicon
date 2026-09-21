@@ -1,0 +1,176 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "6e264bc44361f36394a1d5c34d6ea496dd0be50b40998d54c8b5208c64e13a71",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-rehypejs-rehype-react",
+  "entityId": "entity-github-com-rehypejs-rehype-react",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/rehypejs/rehype-react",
+    "finalUrl": "https://github.com/rehypejs/rehype-react",
+    "checkedAt": "2026-09-15T12:06:37.474Z"
+  },
+  "editorial": {
+    "name": "rehypejs/rehype-react",
+    "descriptionZh": "unified 生态里的一个 rehype 插件，把 HTML 语法树（hast）编译成 preact、react、solid、svelte、vue 等任意 JSX 运行时，用来在自己的应用里渲染 Markdown 或 HTML 内容。",
+    "takeawayZh": "把 rehype 的 HTML 语法树编译成组件，在自己的应用里渲染",
+    "noteZh": "About 栏写 plugin to transform to preact, react, vue, etc，主页指向 unifiedjs.com，topic 是 preact、react、rehype、rehype-plugin、solid、vue，MIT license，438 stars。README 按 What is this? / When should I use this? / Install / Use / API / Types / Compatibility / Security / Related / Contribute / License 分节，正文说它给 rehype 加一个 compiler，把最终 HTML 语法树变成 JSX.Element，并提醒不熟 unified 的话 react-markdown 或 react-remark 可能更合适。文件区很薄：lib、index.js、index.d.ts、readme.md、test.js、tsconfig.json。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的是一个接进 unified / rehype 管线的编译插件（npm 包），用户在构建流程里使用，拿走的是管线里的一环而不是界面组件，所以归到开发工作流而不是组件库。",
+        "evidenceUrl": "https://github.com/rehypejs/rehype-react"
+      },
+      {
+        "statement": "README 的 When should I use this? 明确说它服务于已经在用 unified / remark / rehype 的人，是把内容转成组件渲染的构建期工具。",
+        "evidenceUrl": "https://github.com/rehypejs/rehype-react"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:06:37.474Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "vue",
+      "svelte",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/rehypejs/rehype-react",
+      "finalUrl": "https://github.com/rehypejs/rehype-react",
+      "title": "GitHub - rehypejs/rehype-react: plugin to transform to preact, react, vue, etc · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-rehypejs-rehype-react/identity.jpg",
+        "sha256": "68298926b428e28137003f6bb5b9ab92a798eb3d745ddd8cd1fb840a4306ba4d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114347,
+        "alt": "rehypejs/rehype-react 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/rehypejs/rehype-react",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-rehypejs-rehype-react/identity.jpg",
+          "alt": "rehypejs/rehype-react 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "function",
+      "value": "把 hast（HTML 语法树）编译成 JSX.Element",
+      "sourceUrl": "https://github.com/rehypejs/rehype-react",
+      "evidence": "README 的 What is this? 段原文 This is a rehype plugin that adds a compiler to compile hast to a JSX runtime",
+      "confidence": 1
+    },
+    {
+      "field": "targets",
+      "value": "preact、react、solid、svelte、vue 等 JSX 运行时",
+      "sourceUrl": "https://github.com/rehypejs/rehype-react",
+      "evidence": "仓库 About 栏描述与 README 首句 rehype plugin to turn HTML into preact, react, solid, svelte, vue, etc.",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/rehypejs/rehype-react",
+      "evidence": "About 栏的 MIT license 链接与 README 头部 MIT license 标记",
+      "confidence": 1
+    },
+    {
+      "field": "alternatives",
+      "value": "不熟 unified 时官方建议 react-markdown 或 react-remark",
+      "sourceUrl": "https://github.com/rehypejs/rehype-react",
+      "evidence": "README 的 When should I use this? 段末两句",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "最新版 8.0.0，共 18 个 Releases",
+      "sourceUrl": "https://github.com/rehypejs/rehype-react",
+      "evidence": "About 栏下方 Releases 区块显示 8.0.0 Latest 与 + 17 releases",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-rehypejs-rehype-react.md",
+  "registryUrl": "/r/github-com-rehypejs-rehype-react.json"
+}

@@ -1,0 +1,181 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "6186bb8de574d28615fcabd73d51823bf597629efd7b538a992e1ee3882b643b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "remix-one",
+  "entityId": "entity-remix-one",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "remix.one",
+  "official": {
+    "inputUrl": "https://remix.one",
+    "finalUrl": "https://remix.one/",
+    "checkedAt": "2026-09-15T10:34:24.996Z"
+  },
+  "editorial": {
+    "name": "Remix",
+    "descriptionZh": "Remix 让人在真实产品上开隔离的实时副本做实验：用自然语言描述改动、生成多个变体、拿去测用户，再把最好的一版交给工程审。面向产品、设计和市场这些有点子但推不动代码的人。",
+    "takeawayZh": "在真实产品上开隔离变体做实验，最好一版进 PR",
+    "noteZh": "首屏 h1 是“Experiment on your real product not another prototype.”，下面直接铺开画布：左栏 SELECTED VARIANT 显示当前是 Dark concept、Leo 正在编辑，PROMPTS 里两条指令是“Try the refresh in dark mode.”和“Keep the violet accent but darken everything else.”。右侧散着一堆变体卡片，标着 Design refresh、Marketing landing、Short signup、Checklist flow，每张挂着协作头像，底部图例解释拖拽平移、⌥ 拖拽复制、⌘ 滚轮缩放。",
+    "recommendation": null,
+    "pricing": "freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "design-to-code-handoff",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "核心交付物是工程能直接合入的 pull request：正文写 hand engineering a clean pull request that is checked against your security, design, and compliance rules，落点在设计与工程之间的交接。",
+        "evidenceUrl": "https://remix.one/"
+      },
+      {
+        "statement": "h1 明确把自己和原型工具切开（not another prototype），因此没有归到 ui-prototyping-whiteboard，改归设计转代码与协作这一类。",
+        "evidenceUrl": "https://remix.one/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:34:24.996Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas"
+    ],
+    "deliverables": [
+      "user-flow"
+    ],
+    "actions": [
+      "test",
+      "edit",
+      "collaborate"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "test",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://remix.one",
+      "finalUrl": "https://remix.one/",
+      "title": "Remix",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/remix-one/identity.jpg",
+        "sha256": "64565e1688f0289b8dcdf7a2f0bc1af1b0b40cf1d2ff74d94dcbe6ee0037a25e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113365,
+        "alt": "Remix 首屏：Experiment on your real product not another prototype."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://remix.one",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/remix-one/identity.jpg",
+          "alt": "Remix 首屏：Experiment on your real product not another prototype.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "h1",
+      "value": "Experiment on your real product not another prototype.",
+      "sourceUrl": "https://remix.one/",
+      "evidence": "首屏居中大标题",
+      "confidence": 1
+    },
+    {
+      "field": "isolation",
+      "value": "每个 remix 都是实时、与生产隔离、且基于真实代码库构建的",
+      "sourceUrl": "https://remix.one/",
+      "evidence": "首屏按钮下方的一行勾选说明",
+      "confidence": 1
+    },
+    {
+      "field": "prHandoff",
+      "value": "改动以干净的 pull request 交给工程，并先过安全、设计与合规规则",
+      "sourceUrl": "https://remix.one/",
+      "evidence": "正文 THE PROBLEM 一节",
+      "confidence": 0.9
+    },
+    {
+      "field": "targetRoles",
+      "value": "站点按角色开页：product、design、marketing、sales、founders",
+      "sourceUrl": "https://remix.one/who/design",
+      "evidence": "导航 Who it’s for 下拉与站点 /who/* 路径",
+      "confidence": 0.9
+    },
+    {
+      "field": "promptDrivenVariants",
+      "value": "变体由自然语言指令生成，首屏示例是 The refresh in dark mode 与 Keep the violet accent but darken everything else",
+      "sourceUrl": "https://remix.one/",
+      "evidence": "首屏画布左栏 PROMPTS · 2 的两条指令",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/remix-one.md",
+  "registryUrl": "/r/remix-one.json"
+}

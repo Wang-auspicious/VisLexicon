@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ec19c2b98b258f49db19940eac3b70345cbdb0787a0d568a71fabd9e5bd1b35f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mozartai-com",
+  "entityId": "entity-mozartai-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://mozartai.com",
+    "finalUrl": "https://mozartai.com/?mode=vibe",
+    "checkedAt": "2026-09-15T10:36:41.964Z"
+  },
+  "editorial": {
+    "name": "Mozart AI",
+    "descriptionZh": "AI 歌曲生成与制作工具，写一句想法就能出歌，站内接着做编辑、母带和音乐视频。这次抓取只拿到首屏截图，DOM 正文为空。",
+    "takeawayZh": "写一句想法，出成品歌并继续做母带和音乐视频",
+    "noteZh": "需要说明：这一条的 live.bodyText、live.heads 与 live.imgCount 全都是空的，浏览器渲染阶段没抓到 DOM 文本，以下内容全部取自同一张首屏截图。截图里页面是深色舞台背景，导航右侧是 Scout、Affiliates、Discord、Sign Up、Log In；中间一条发光胶囊写 Personas are live: make any song in your own voice。主标题是衬线大字 Make a Song You'll Love，副题写 Turn an idea into a song, edit it, master it, make a music video, and release it.。页脚位置上排着 Forbes、MUSIC BUSINESS WORLDWIDE、Billboard、music:)ally、tech.eu、BUSINESS INSIDER 六个媒体标；顶部促销条写 40% OFF、Ending soon 44m 20s、All plans from $7/mo，带 See plans 按钮。",
+    "recommendation": null,
+    "pricing": "Paid（首页促销条写 All plans from $7/mo，40% OFF 限时）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是音频成品：截图副标题写 Turn an idea into a song, edit it, master it, make a music video, and release it.，http.title 也自称 AI Song Generator & Music Maker。",
+        "evidenceUrl": "https://mozartai.com/"
+      },
+      {
+        "statement": "归 video-motion-audio-creation 而非 image-vector-layout-creation：主产物是歌与母带（音频），音乐视频只是流程末端的一环，取覆盖音频的这一档更贴近。",
+        "evidenceUrl": "https://mozartai.com/"
+      },
+      {
+        "statement": "本次证据不足：渲染阶段没有拿到任何 DOM 文本（live.bodyText 为空字符串），分类依据只有 http 层的 title/description 与首屏截图，置信度低于本批其他条目。",
+        "evidenceUrl": "https://mozartai.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:36:41.964Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "audio",
+      "video"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "publish"
+    ],
+    "media": [
+      "audio",
+      "video"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "publish"
+    ],
+    "audiences": [
+      "content-creator"
+    ],
+    "access": [
+      "paid"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mozartai.com",
+      "finalUrl": "https://mozartai.com/?mode=vibe",
+      "title": "Mozart AI - AI Song Generator & Music Maker",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/mozartai-com/identity.jpg",
+        "sha256": "7d7fd3ae659a74f405d67c51881bb34dc7cc69d12f825b893645360fd843d0af",
+        "width": 1280,
+        "height": 900,
+        "bytes": 65217,
+        "alt": "Mozart AI 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroPromise",
+      "value": "Make a Song You'll Love / Turn an idea into a song, edit it, master it, make a music video, and release it.",
+      "sourceUrl": "https://mozartai.com/",
+      "evidence": "首屏截图中的衬线主标题与副标题；本次 live.bodyText 为空，无 DOM 文本可对照",
+      "confidence": 0.8
+    },
+    {
+      "field": "pricingBanner",
+      "value": "40% OFF · Ending soon 44m 20s · All plans from $7/mo",
+      "sourceUrl": "https://mozartai.com/",
+      "evidence": "首屏截图顶部促销条，配 See plans 按钮",
+      "confidence": 0.8
+    },
+    {
+      "field": "personasFeature",
+      "value": "Personas are live: make any song in your own voice",
+      "sourceUrl": "https://mozartai.com/",
+      "evidence": "首屏截图主标题上方的发光胶囊文案",
+      "confidence": 0.8
+    },
+    {
+      "field": "pressMentions",
+      "value": "Forbes、MUSIC BUSINESS WORLDWIDE、Billboard、music:)ally、tech.eu、BUSINESS INSIDER",
+      "sourceUrl": "https://mozartai.com/",
+      "evidence": "首屏截图下半部的六个媒体标",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Paid（首页促销条写 All plans from $7/mo，40% OFF 限时）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/mozartai-com",
+    "designMdUrl": "https://vislexicon.com/site/mozartai-com.md",
+    "checkedAt": "2026-09-15T10:36:41.964Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "fe67228b1ef11580cc34762fdf75de6f96ad91eb63a8ad14140045ef61d90668",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-jupyterlab-jupyterlab",
+  "entityId": "entity-github-com-jupyterlab-jupyterlab",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/jupyterlab/jupyterlab",
+    "finalUrl": "https://github.com/jupyterlab/jupyterlab",
+    "checkedAt": "2026-09-15T11:44:08.501Z"
+  },
+  "editorial": {
+    "name": "jupyterlab/jupyterlab",
+    "descriptionZh": "JupyterLab 的官方仓库，本体是可在浏览器里跑的交互式计算环境，把 notebook、终端、文本编辑器放在同一个多标签工作区。日常按 pip 包安装使用，BSD-3-Clause 许可。",
+    "takeawayZh": "在浏览器里开多标签 notebook 与终端工作台",
+    "noteZh": "首屏是仓库页，About 写 JupyterLab computational environment，文档站指 jupyterlab.readthedocs.io。目录里 packages、jupyterlab、galata（端到端测试）、binder、docker、dev_mode 各占一块，提交记录能看到 use the new JSX transform (#2102)、Support for React 19 (#2387) 和 Update to Rspack 2.0 (#18467) 这类前端改造，另有 enable jupyterlab to work as a classic notebook extension。右栏显示 15.3k stars、4.1k forks、27,140 Commits、659 Contributors，最新版本 v4.6.3，许可证 BSD-3-Clause。候选池把它标成 Svelte UI 库、名字写成 @jupyterlab/ui-components-extension，与页面内容完全不符。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户来这儿拿走的是可安装的计算环境本体（About 一句话 JupyterLab computational environment，文档站给的是安装与使用），不是组件或模板，因此归构建、部署与开发工作流这一类开发工具。",
+        "evidenceUrl": "https://github.com/jupyterlab/jupyterlab"
+      },
+      {
+        "statement": "候选池给的是 @jupyterlab/ui-components-extension、归在 Svelte UI 库下，但页面既没有 Svelte 也没有 UI 组件库的自述，那份分类不予采信；仓库确实发布 @jupyterlab/* 系列 npm 包，这是它被误收的原因。",
+        "evidenceUrl": "https://github.com/jupyterlab/jupyterlab"
+      },
+      {
+        "statement": "证据不足处：受控词典没有「开发环境 / IDE」这一类，build-deploy-dev-workflow 是最贴近的落点，故小类归此并在此说明不确定性。",
+        "evidenceUrl": "https://github.com/jupyterlab/jupyterlab"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:44:08.501Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "download"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "cli",
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "BSD-3-Clause"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/jupyterlab/jupyterlab",
+      "finalUrl": "https://github.com/jupyterlab/jupyterlab",
+      "title": "GitHub - jupyterlab/jupyterlab: JupyterLab computational environment. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-jupyterlab-jupyterlab/identity.jpg",
+        "sha256": "6de8df18695fca6c8d1034e501f74b2141f35fe2243f2d9669c1395b1dd4b900",
+        "width": 1280,
+        "height": 900,
+        "bytes": 148502,
+        "alt": "jupyterlab/jupyterlab 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/jupyterlab/jupyterlab",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-jupyterlab-jupyterlab/identity.jpg",
+          "alt": "jupyterlab/jupyterlab 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "BSD-3-Clause",
+      "sourceUrl": "https://github.com/jupyterlab/jupyterlab",
+      "evidence": "右栏 About 面板列出 BSD-3-Clause license",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "v4.6.3",
+      "sourceUrl": "https://github.com/jupyterlab/jupyterlab",
+      "evidence": "右栏 Releases 面板 Latest 标签，共 281 个 release",
+      "confidence": 1
+    },
+    {
+      "field": "repoScale",
+      "value": "15.3k stars / 4.1k forks / 27,140 Commits / 659 Contributors",
+      "sourceUrl": "https://github.com/jupyterlab/jupyterlab",
+      "evidence": "仓库页标题右侧计数与右栏面板计数",
+      "confidence": 1
+    },
+    {
+      "field": "docsSite",
+      "value": "https://jupyterlab.readthedocs.io/",
+      "sourceUrl": "https://github.com/jupyterlab/jupyterlab",
+      "evidence": "About 面板描述下方外链",
+      "confidence": 1
+    },
+    {
+      "field": "catalogMismatch",
+      "value": "候选池记的 @jupyterlab/ui-components-extension 与 Svelte UI 库归类，页面上找不到对应物",
+      "sourceUrl": "https://github.com/jupyterlab/jupyterlab",
+      "evidence": "仓库自述为 JupyterLab computational environment，目录与提交记录里没有 Svelte 相关条目",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-jupyterlab-jupyterlab.md",
+  "registryUrl": "/r/github-com-jupyterlab-jupyterlab.json"
+}

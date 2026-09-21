@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "175d7225a7df0ca30687ea0c4919a6d1ef8aba871805c4d469cc3774cbb6456a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "myliang-github-io-fish-ui",
+  "entityId": "entity-myliang-github-io-fish-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://myliang.github.io/fish-ui",
+    "finalUrl": "https://myliang.github.io/fish-ui/#/components/index",
+    "checkedAt": "2026-09-15T11:58:39.796Z"
+  },
+  "editorial": {
+    "name": "fish-ui",
+    "descriptionZh": "fish-ui 是一套基于 Vue 2 的 Web UI 工具包，文档站把每个组件的安装与用法按页摊开，页脚署名 myliang、年份 2017。",
+    "takeawayZh": "Vue 2 里装 fish-ui，Vue.use 后直接取组件",
+    "noteZh": "左侧一条竖向目录，从 Introduce、Layout、Grid、Button、Menu、Card、Pagination、Table、Dropdown、Step、Tag 一直排到 Input、Checkbox、Switch、Select、Cascader、Collapse、Calendar、DatePicker、timePicker、Form，右侧正文首屏是 Fish-UI 标题与一句 A Vue.js 2.0 UI Toolkit for Web.，下面依次 Environment Support、Install、Quick Start。安装命令是 npm install less less-loader fish-ui --save，还要求额外引 font-awesome 与 Google 字体，Quick Start 走的仍是 vue-cli 的 vue init webpack 老流程，页脚写着 fish-ui copyright@2017 myliang。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页标题写 A Vue.js 2.0 UI Toolkit for Web.，正文 Install 一节给的是 npm install fish-ui --save，交付物是可安装的组件库。",
+        "evidenceUrl": "https://myliang.github.io/fish-ui/"
+      },
+      {
+        "statement": "左侧目录逐项列出 Button、Menu、Card、Table、DatePicker 等具体组件，属于通用界面组件而非设计系统治理内容。",
+        "evidenceUrl": "https://myliang.github.io/fish-ui/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:58:39.796Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://myliang.github.io/fish-ui",
+      "finalUrl": "https://myliang.github.io/fish-ui/#/components/index",
+      "title": "fish-ui A Vue.js 2.0 UI Toolkit for Web.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/myliang-github-io-fish-ui/identity.jpg",
+        "sha256": "808bcd270b710a786388333c0a43d42f16610817714e626a154424c393406990",
+        "width": 1280,
+        "height": 900,
+        "bytes": 76108,
+        "alt": "fish-ui 首屏：Fish-UI"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "stack",
+      "value": "A Vue.js 2.0 UI Toolkit for Web.",
+      "sourceUrl": "https://myliang.github.io/fish-ui/",
+      "evidence": "文档首页 Fish-UI 标题下的说明句",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install less less-loader fish-ui --save，另需引入 font-awesome 4.7.0 与 Lato 字体",
+      "sourceUrl": "https://myliang.github.io/fish-ui/",
+      "evidence": "首页 Install 与 font-awesome & google font 代码块",
+      "confidence": 1
+    },
+    {
+      "field": "componentsIndex",
+      "value": "左侧目录含 Introduce、Layout、Grid、Button、Menu、Card、Pagination、Table、Dropdown、Step、Tag、Input、Input Number、Radio、Checkbox、Switch、Select、Cascader、Collapse、Calendar、DatePicker、timePicker、Form 等条目",
+      "sourceUrl": "https://myliang.github.io/fish-ui/",
+      "evidence": "首页左侧组件目录，截图可见",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/myliang-github-io-fish-ui",
+    "designMdUrl": "https://vislexicon.com/site/myliang-github-io-fish-ui.md",
+    "checkedAt": "2026-09-15T11:58:39.796Z",
+    "license": "unknown"
+  }
+}

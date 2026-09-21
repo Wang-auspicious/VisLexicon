@@ -1,0 +1,177 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3579663e33aefc03449744c0c1abde6b23cbbef0194356f169525efc0e893252",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-robinweser-css-in-js-utils",
+  "entityId": "entity-github-com-robinweser-css-in-js-utils",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/robinweser/css-in-js-utils",
+    "finalUrl": "https://github.com/robinweser/css-in-js-utils",
+    "checkedAt": "2026-09-15T11:57:20.600Z"
+  },
+  "editorial": {
+    "name": "robinweser/css-in-js-utils",
+    "descriptionZh": "给 CSS-in-JS 库作者用的工具函数包，一共十二个：assignStyle、camelCaseProperty、cssifyDeclaration、hyphenateProperty、isUnitlessProperty、unprefixValue 等。README 明说这些是给库作者而不是直接给业务代码用的。",
+    "takeawayZh": "把 assignStyle 这类函数装进自己的样式库",
+    "noteZh": "README 的 Why? 一段说写这些函数的起因是「每做一个新库都要把同一批工具重写一遍」，Utilities 小节把函数逐个列出来并配签名：assignStyle(base, ...extend)、camelCaseProperty(property)、cssifyDeclaration(property, value)、hyphenateProperty(property)、isUnitlessProperty(property)、unprefixValue(value)。右侧 About 写 Useful utility functions for CSS in JS solutions，标记 Used by 1.2M，Stars 77、Forks 11，语言一栏是 TypeScript。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可 npm 安装的运行时依赖（yarn add css-in-js-utils），README 明说 intended to be used by CSS-in-JS library authors，给的是工具函数而不是界面组件或样式主题；候选池按 Tailwind 组件收录与内容无关。",
+        "evidenceUrl": "https://github.com/robinweser/css-in-js-utils"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:20.600Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/robinweser/css-in-js-utils",
+      "finalUrl": "https://github.com/robinweser/css-in-js-utils",
+      "title": "GitHub - robinweser/css-in-js-utils: Useful utility functions for CSS in JS solutions · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-robinweser-css-in-js-utils/identity.jpg",
+        "sha256": "cae3fa83a2c13ebb277452b86acbbc88645266454e2759f52b3c36d0af38c663",
+        "width": 1280,
+        "height": 900,
+        "bytes": 119374,
+        "alt": "robinweser/css-in-js-utils 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/robinweser/css-in-js-utils",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-robinweser-css-in-js-utils/identity.jpg",
+          "alt": "robinweser/css-in-js-utils 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/robinweser/css-in-js-utils",
+      "evidence": "右侧 About 面板的 MIT license 与 README 的 MIT license 行",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "yarn add css-in-js-utils",
+      "sourceUrl": "https://github.com/robinweser/css-in-js-utils",
+      "evidence": "README Installation 一节",
+      "confidence": 1
+    },
+    {
+      "field": "utilities",
+      "value": "assignStyle、camelCaseProperty、cssifyDeclaration、cssifyObject、hyphenateProperty、isPrefixedProperty、isPrefixedValue、isUnitlessProperty、normalizeProperty、resolveArrayValue、unprefixProperty、unprefixValue",
+      "sourceUrl": "https://github.com/robinweser/css-in-js-utils",
+      "evidence": "README Utilities 小节的函数列表",
+      "confidence": 1
+    },
+    {
+      "field": "audience",
+      "value": "给 CSS-in-JS 库作者，而不是直接给业务用",
+      "sourceUrl": "https://github.com/robinweser/css-in-js-utils",
+      "evidence": "README 首段 They are intended to be used by CSS-in-JS library authors rather used directly.",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "Used by 1.2M、Stars 77",
+      "sourceUrl": "https://github.com/robinweser/css-in-js-utils",
+      "evidence": "右侧 About 的 Used by 1.2M 面板与仓库头部 Star 77",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/robinweser/css-in-js-utils",
+      "evidence": "npm 包直接安装，仓库无付费入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-robinweser-css-in-js-utils.md",
+  "registryUrl": "/r/github-com-robinweser-css-in-js-utils.json"
+}

@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "51558cd16d4a02eb70fbe4ff897ff886a9e72d905d336d15c12b9550f67eabb0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-harshmandan-svelte-floating-attach",
+  "entityId": "entity-github-com-harshmandan-svelte-floating-attach",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/harshmandan/svelte-floating-attach",
+    "finalUrl": "https://github.com/harshmandan/svelte-floating-attach",
+    "checkedAt": "2026-09-15T12:32:09.721Z"
+  },
+  "editorial": {
+    "name": "harshmandan/svelte-floating-attach",
+    "descriptionZh": "基于 Svelte 5 {@attach} 的 floating-ui 封装，用来给 tooltip、popover、下拉菜单这类浮层定位。",
+    "takeawayZh": "用 {@attach} 给浮层定位，箭头位置自动跟",
+    "noteZh": "右侧 About 写 Svelte 5 attachment-based wrapper for @floating-ui，topic 是 floating-ui、library、svelte、tooltip、typescript，Languages 条几乎全是 TypeScript（97.5%），仓库只有 1 Branch、0 Tags、20 次提交、没有发布过 Release。README 里有一张和 svelte-floating-ui 的对比表：响应性是 Automatic 对 Manual、箭头定位是 automatic 对 manual、@floating-ui/dom 是 peer dependency 对 direct dependency、不用 store 而用闭包，并提醒停留在 Svelte ≤5.29 的应该改用 svelte-floating-ui。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是不带任何样式的定位原语，只负责把浮层摆到正确位置，样式与标记完全交给使用者，归无样式无障碍原语。",
+        "evidenceUrl": "https://github.com/harshmandan/svelte-floating-attach"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:32:09.721Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/harshmandan/svelte-floating-attach",
+      "finalUrl": "https://github.com/harshmandan/svelte-floating-attach",
+      "title": "GitHub - harshmandan/svelte-floating-attach: Svelte 5 attachment-based wrapper for @floating-ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-harshmandan-svelte-floating-attach/identity.jpg",
+        "sha256": "83f7facac4b541140892237e6a8c86840fe4c05ffe0a148896081a76726e2d0c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109903,
+        "alt": "harshmandan/svelte-floating-attach 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "peerDependencies",
+      "value": "@floating-ui/dom >=1.6.0",
+      "sourceUrl": "https://github.com/harshmandan/svelte-floating-attach",
+      "evidence": "README Installation and requirement 段写明它是 peer dependency，需另外安装以免版本冲突",
+      "confidence": 1
+    },
+    {
+      "field": "svelteVersion",
+      "value": "Svelte >= 5.29.0",
+      "sourceUrl": "https://github.com/harshmandan/svelte-floating-attach",
+      "evidence": "README Installation and requirement 段的 Svelte >=5.29.0 (attachment support)",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "TypeScript 97.5% / JavaScript 2.5%",
+      "sourceUrl": "https://github.com/harshmandan/svelte-floating-attach",
+      "evidence": "仓库首页右侧 Languages 条与图例",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-harshmandan-svelte-floating-attach",
+    "designMdUrl": "https://vislexicon.com/site/github-com-harshmandan-svelte-floating-attach.md",
+    "checkedAt": "2026-09-15T12:32:09.721Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "33c010c3b8f0fad8651c6c52b6a84099a23c5c9fe1ac52cba2ee3dd5fb6d87f2",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "spendesk-com-en",
+  "entityId": "entity-spendesk-com-en",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://spendesk.com/en",
+    "finalUrl": "https://www.spendesk.com/",
+    "checkedAt": "2026-09-15T11:18:40.448Z"
+  },
+  "editorial": {
+    "name": "Spendesk",
+    "descriptionZh": "Spendesk 是欧洲的支出管理平台，把公司卡、采购、应付账款、报销和预算控制收在一个后台，自称服务五千多家公司。首页主视觉是一张写着 Good morning, Sam 的财务待办面板。",
+    "takeawayZh": "看它把财务待办面板做成首屏主视觉",
+    "noteZh": "首屏浅紫渐变，顶部通栏推 CFO Connect Summit（Oct 13–15，讲者来自 DeepL 与 NetSuite），中间主标题 Spend that works for you，副标题说 Built, regulated, and profitable in Europe，按钮 Book a demo 与 Take a tour。主视觉是一张后台截图：抬头 Good morning, Sam，下面排着 9 invoices to pay this week、18 invoices payments to confirm、16 expenses payments to confirm、30 payments to prepare、24 payment to prepare 这些紫色和绿色药丸，右侧卡写 £303,981.70 Available for new requests，浮层里是 AI Intelligence 提示 Marvin is chasing down receipts for 3 people in the org，左下还有一张 Batch ready for export 卡带 Export to ERP 按钮。导航产品线列 Cards、Procurement、Accounts payable、Expense management、Spend Controls、Intelligence & Automation、API & integrations、Multi-entity management、Budget，资源栏另有 FAQ、Glossary、AI Hub、CFO Tech Stack Map、HMRC Mileage Calculator。",
+    "recommendation": null,
+    "pricing": "有 /pricing 页，首页只给 Book a demo 与 Take a tour",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页交付的是 Spendesk 自家的产品分区与后台界面演示，用户拿走的是「用财务待办面板当主视觉」这套做法；来自 saaslandingpage.com 的落地页灵感池，故归产品与公司官网。",
+        "evidenceUrl": "https://www.spendesk.com/"
+      },
+      {
+        "statement": "导航只有 Product / Pricing / Customer stories / Resources 与 Login、Book a demo，没有可下载素材，是产品对外门面。",
+        "evidenceUrl": "https://www.spendesk.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:18:40.448Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance",
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "api",
+      "mcp",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "paid"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://spendesk.com/en",
+      "finalUrl": "https://www.spendesk.com/",
+      "title": "Spend Smarter, Work Better | Spendesk Spend Management Platform",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/spendesk-com-en/identity.jpg",
+        "sha256": "a3c9d1ac28cfb3eb79d4d5a81a4b8cbce23502793df0560de9715391e6924af7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98887,
+        "alt": "Spendesk 首屏：Spend that works for you."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroHeadline",
+      "value": "Spend that works for you.",
+      "sourceUrl": "https://www.spendesk.com/",
+      "evidence": "首屏主标题与 http.h1",
+      "confidence": 1
+    },
+    {
+      "field": "dashboardMock",
+      "value": "Good morning, Sam 待办面板，含 9 invoices to pay this week、18 invoices payments to confirm、£303,981.70 Available for new requests",
+      "sourceUrl": "https://www.spendesk.com/",
+      "evidence": "首屏主视觉截图的待办药丸与右侧卡片",
+      "confidence": 1
+    },
+    {
+      "field": "aiAssistant",
+      "value": "Marvin is chasing down receipts for 3 people in the org.",
+      "sourceUrl": "https://www.spendesk.com/",
+      "evidence": "首屏截图右上角 AI Intelligence 浮层",
+      "confidence": 1
+    },
+    {
+      "field": "productLines",
+      "value": "Cards、Procurement、Accounts payable、Expense management、Spend Controls、Intelligence & Automation、API & integrations、Multi-entity management、Budget",
+      "sourceUrl": "https://www.spendesk.com/",
+      "evidence": "导航 Product 一栏与 /product/*、/platform/* 路径",
+      "confidence": 1
+    },
+    {
+      "field": "resourceEntries",
+      "value": "FAQ、Glossary、AI Hub、CFO Tech Stack Map、HMRC Mileage Calculator、CFO Connect 社区（12,000+ finance leaders）",
+      "sourceUrl": "https://www.spendesk.com/",
+      "evidence": "导航 Resources 一栏与正文 BUILT WITH INSIGHTS FROM 12,000+ FINANCE LEADERS 一行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：有 /pricing 页，首页只给 Book a demo 与 Take a tour。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/spendesk-com-en",
+    "designMdUrl": "https://vislexicon.com/site/spendesk-com-en.md",
+    "checkedAt": "2026-09-15T11:18:40.448Z",
+    "license": "unknown"
+  }
+}

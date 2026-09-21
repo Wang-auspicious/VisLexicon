@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "61833f78de1013cfaf0d6aea871085a28e31ca8b5f7d060fc6ac46a46494c34e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "superdesign-dev",
+  "entityId": "entity-superdesign-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://app.superdesign.dev",
+    "finalUrl": "https://superdesign.dev/",
+    "checkedAt": "2026-09-15T10:36:43.352Z"
+  },
+  "editorial": {
+    "name": "Superdesign",
+    "descriptionZh": "接在提示词上的产品设计 agent：描述想要什么就出 UI mockup 和组件，在无限画布上改用自然语言反复修，最后导出可用的代码。",
+    "takeawayZh": "描述界面需求，出 mockup 再导出代码",
+    "noteZh": "白底首屏标题 Vibe it. Design it.，输入框里是 Describe what you want to create…，框内左侧排着图片、画笔、文本图标和一个 Gemini 3 Flash 模型选择器，右侧是 Use Design System 开关。输入框下面三颗胶囊按钮：Recreate Screenshot、Import from Site、Generate Image / Video。再往下 Discover design prompts 按 New / Style / Animation / UI Component / Landing Page / Presentations 分类，卡片带 remixes 和 views 计数，例如 High Contrast Landing Page 6k remixes / 248k views、Glassmorphism Style 4.9k remixes / 158k views，每张卡都能 Use prompt。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "ui-prototyping-whiteboard",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站内写明 turns natural-language prompts into UI mockups, components and full designs on an infinite canvas，交付物是界面稿与组件。",
+        "evidenceUrl": "https://superdesign.dev/"
+      },
+      {
+        "statement": "页面下方 Discover design prompts 是可复用的设计提示词库，卡片说明文字为 Design with AI / Iterate Quickly / Export Code，主线动作是设计生成而非安装组件包。",
+        "evidenceUrl": "https://superdesign.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:36:43.352Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas",
+      "marketing"
+    ],
+    "deliverables": [
+      "component",
+      "full-page",
+      "prompt"
+    ],
+    "actions": [
+      "generate",
+      "prototype",
+      "edit",
+      "export"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation",
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "login-required"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://app.superdesign.dev",
+      "finalUrl": "https://superdesign.dev/",
+      "title": "Superdesign - AI Product Design Agent | UI from a Prompt",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/superdesign-dev/identity.jpg",
+        "sha256": "d7a45cbbb6c908db438ed089dc5647d78afd8df403c58d89b53cc790dd2365b7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 42935,
+        "alt": "Superdesign 首屏：Vibe it. Design it."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "start-modes",
+      "value": "Recreate Screenshot / Import from Site / Generate Image / Video",
+      "sourceUrl": "https://superdesign.dev/",
+      "evidence": "首屏输入框下方的三个快捷入口按钮",
+      "confidence": 1
+    },
+    {
+      "field": "output",
+      "value": "mockup、组件与可导出的生产代码",
+      "sourceUrl": "https://superdesign.dev/",
+      "evidence": "页面底部 Design with AI / Iterate Quickly / Export Code 三条说明及描述中的 UI mockups, components and full designs",
+      "confidence": 1
+    },
+    {
+      "field": "prompt-library",
+      "value": "Discover design prompts（含 remixes / views 计数与 Use prompt 按钮）",
+      "sourceUrl": "https://superdesign.dev/",
+      "evidence": "首屏下方标题与卡片元数据，如 High Contrast Landing Page 6k remixes · 248k views",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/superdesign-dev",
+    "designMdUrl": "https://vislexicon.com/site/superdesign-dev.md",
+    "checkedAt": "2026-09-15T10:36:43.352Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f2b99ee76ac034098d8fe63d4634347bc1bbcd443ff2680da1777c2477896e27",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-apitechfr-react-dsapitech",
+  "entityId": "entity-github-com-apitechfr-react-dsapitech",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/ApitechFR/react-dsapitech",
+    "finalUrl": "https://github.com/ApitechFR/react-dsapitech",
+    "checkedAt": "2026-09-15T11:36:53.897Z"
+  },
+  "editorial": {
+    "name": "ApitechFR/react-dsapitech",
+    "descriptionZh": "Apitech 的 Design System DSApitech 对应的 React 工具包，组件按子路径逐个引入，样式挂在 main.css 与 CDN 上的 dsapitech.css。",
+    "takeawayZh": "按子路径 import 组件，样式挂 main.css",
+    "noteZh": "README 只有 How to use ? 与 Modifications spécifiques DSApitech 两节：第 2 步要求在项目 header 里引 favicon/manifest.webmanifest 和 ./node_modules/@apitechfr/react-dsapitech/main.css，再加一条 jsdelivr 上的 dsapitech.css；第 3 步示例是 import { Button } from '@apitechfr/react-dsapitech/Button'。仓库里同时躺着 README.fr.md 和一个 publiccode.yml，About 写 React toolkit pour le Design System Apitech，MIT license，30 次提交、0 star。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自称 Design System Apitech 的 React toolkit，交付的是该设计系统的组件实现，归设计系统与完整组件套件；但规模很小（30 次提交、0 star），也可能只是一个组件包，此处有归类不确定性。",
+        "evidenceUrl": "https://github.com/ApitechFR/react-dsapitech"
+      },
+      {
+        "statement": "仓库里有 publiccode.yml 与 README.fr.md，前者是欧洲公共代码的元数据规范文件，说明它面向公共部门的开源交付。",
+        "evidenceUrl": "https://github.com/ApitechFR/react-dsapitech"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:36:53.897Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ApitechFR/react-dsapitech",
+      "finalUrl": "https://github.com/ApitechFR/react-dsapitech",
+      "title": "GitHub - ApitechFR/react-dsapitech: React toolkit pour le Design System Apitech · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-apitechfr-react-dsapitech/identity.jpg",
+        "sha256": "f13c8a511ab8e7aa7655f0eb5239564ca456ce99cb50bb3e9dd468636bf07c04",
+        "width": 1280,
+        "height": 900,
+        "bytes": 108317,
+        "alt": "ApitechFR/react-dsapitech 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/ApitechFR/react-dsapitech",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-apitechfr-react-dsapitech/identity.jpg",
+          "alt": "ApitechFR/react-dsapitech 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/ApitechFR/react-dsapitech",
+      "evidence": "README 徽标 MIT license，仓库根有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "installSteps",
+      "value": "npm i @apitechfr/react-dsapitech，再在 header 引 manifest.webmanifest、main.css 与 jsdelivr 上的 dsapitech.css",
+      "sourceUrl": "https://github.com/ApitechFR/react-dsapitech",
+      "evidence": "README How to use ? 一节的第 1、2 步",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "import { Button } from '@apitechfr/react-dsapitech/Button'",
+      "sourceUrl": "https://github.com/ApitechFR/react-dsapitech",
+      "evidence": "README 第 3 步的代码块",
+      "confidence": 1
+    },
+    {
+      "field": "metaFiles",
+      "value": "publiccode.yml、README.fr.md、CONTRIBUTING.md、.storybook",
+      "sourceUrl": "https://github.com/ApitechFR/react-dsapitech",
+      "evidence": "文件列表最左列",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-apitechfr-react-dsapitech.md",
+  "registryUrl": "/r/github-com-apitechfr-react-dsapitech.json"
+}

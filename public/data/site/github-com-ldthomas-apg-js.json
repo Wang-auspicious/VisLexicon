@@ -1,0 +1,156 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "436706c6ab48220871e8c3d6344155bcf3d520ea8036c5dc39e1f047705658a7",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-ldthomas-apg-js",
+  "entityId": "entity-github-com-ldthomas-apg-js",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/ldthomas/apg-js",
+    "finalUrl": "https://github.com/ldthomas/apg-js",
+    "checkedAt": "2026-09-15T12:47:43.762Z"
+  },
+  "editorial": {
+    "name": "ldthomas/apg-js",
+    "descriptionZh": "JavaScript 版的 APG，从 ABNF 的超集语法生成递归下降解析器，可输出 JS 或 TypeScript 兼容的语法对象。",
+    "takeawayZh": "用 ABNF 语法生成递归下降解析器，可选 TS 输出",
+    "noteZh": "README 直接从版本记录写起：4.4.0 新增 --typescript 选项，让生成器产出 TypeScript 兼容的语法对象，并加了 regen 脚本原地重生成全部语法对象；4.3.0 引入轻量的 apg-lite 与 --lite 选项；4.2.1 修的是把零重复当空串接受者时的行为。左栏文件树只有 bin、dev、dist、src 四个目录，加 .eslintrc.json、LICENSE.md、README.md、index.js、index.md、package.json，共 39 次提交。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是解析器生成器这样的开发期命令行工具与库，用户动作是装上后用它生成代码，归开发工具。受控词典没有编译器/解析器工具这一类，取最近的 build-deploy-dev-workflow，归类有不确定性。",
+        "evidenceUrl": "https://github.com/ldthomas/apg-js"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:47:43.762Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ldthomas/apg-js",
+      "finalUrl": "https://github.com/ldthomas/apg-js",
+      "title": "GitHub - ldthomas/apg-js: The latest version of JavaScript APG. Supersedes and obsoletes all previous versions. APG is an ABNF Parser Generator. It generates recursive-descent parsers from a superset of ABNF. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-ldthomas-apg-js/identity.jpg",
+        "sha256": "bd8360798892d63851393ddbc00c7899f96820d12c4c228af48bf4297a392b78",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98255,
+        "alt": "ldthomas/apg-js 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/ldthomas/apg-js",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-ldthomas-apg-js/identity.jpg",
+          "alt": "ldthomas/apg-js 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/ldthomas/apg-js",
+      "evidence": "右栏 About 的 License 条目只写 License，没有协议名；README 顶部也只写 License",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/ldthomas/apg-js",
+      "evidence": "README 与右栏都没有定价入口，仓库是公开仓库、无付费说明",
+      "confidence": 0.8
+    },
+    {
+      "field": "latest-feature",
+      "value": "--typescript 选项与 regen 脚本",
+      "sourceUrl": "https://github.com/ldthomas/apg-js",
+      "evidence": "README 的 4.4.0 Release Notes 段",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-ldthomas-apg-js.md",
+  "registryUrl": "/r/github-com-ldthomas-apg-js.json"
+}

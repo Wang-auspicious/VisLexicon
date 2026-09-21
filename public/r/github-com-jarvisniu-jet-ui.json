@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "eeb24c8a7a6f8f2abedcb004e20fd672b5dd70afc0ae90f30778ebbda6f0d7c5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-jarvisniu-jet-ui",
+  "entityId": "entity-github-com-jarvisniu-jet-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/jarvisniu/jet-ui",
+    "finalUrl": "https://github.com/jarvisniu/jet-ui",
+    "checkedAt": "2026-09-15T12:00:11.200Z"
+  },
+  "editorial": {
+    "name": "jarvisniu/jet-ui",
+    "descriptionZh": "仿 JetBrains 风格的 Vue 组件集，组件用 jt- 前缀的自定义标签调用，仓库里带一个 demo/ide 演示页。",
+    "takeawayZh": "npm 装 jet-ui，按 jt- 前缀标签调用组件。",
+    "noteZh": "About 一栏写 A JetBrains style widget set based on Vue.js，topics 只挂了 jetbrains / ui / vue / widgets 四个。README 的 Usage 很短：npm install jet-ui、import JetUI from 'jet-ui'、Vue.use(JetUI)，用法示例是一行 <jt-button>OK<jt-button>，License 一节注明按 MIT 发布，另有一句 Demo 指向演示。目录里 demo/ide、components、layouts、pages、plugins 各占一格，对应这套 JetBrains 风格界面；Views 上 Vue 93%、JavaScript 4.2%、SCSS 2%、Stylus 0.8%，最后一次提交 update icons 停在五年前，Releases 只有 v0.1.6。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是一套 Vue 组件（jt-button、jt-table、jt-image 等自定义标签）加演示应用，归通用界面组件库；它整体是一套皮肤，但没有独立的令牌与规范文档，所以不归设计系统套件。",
+        "evidenceUrl": "https://github.com/jarvisniu/jet-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:11.200Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/jarvisniu/jet-ui",
+      "finalUrl": "https://github.com/jarvisniu/jet-ui",
+      "title": "GitHub - jarvisniu/jet-ui: A JetBrains style widget set based on Vue.js · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-jarvisniu-jet-ui/identity.jpg",
+        "sha256": "7d598b195d7dc5bc21a623bfbddc001ed4547313cf8a3fa22dc404f24ce4b015",
+        "width": 1280,
+        "height": 900,
+        "bytes": 102345,
+        "alt": "jarvisniu/jet-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/jarvisniu/jet-ui",
+      "evidence": "README 的 License 一节写 MIT",
+      "confidence": 1
+    },
+    {
+      "field": "component-tags",
+      "value": "<jt-button>、<jt-image>、<jt-table>",
+      "sourceUrl": "https://github.com/jarvisniu/jet-ui",
+      "evidence": "README 用法示例与提交信息里的 add <jt-image>、refactor <jt-table>",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "jetbrains / ui / vue / widgets",
+      "sourceUrl": "https://github.com/jarvisniu/jet-ui",
+      "evidence": "About 栏下方列出的四个 topic 标签",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "Vue 93% / JavaScript 4.2% / SCSS 2% / Stylus 0.8%",
+      "sourceUrl": "https://github.com/jarvisniu/jet-ui",
+      "evidence": "右侧 Languages 条形图的图例",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-jarvisniu-jet-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-jarvisniu-jet-ui.md",
+    "checkedAt": "2026-09-15T12:00:11.200Z",
+    "license": "MIT"
+  }
+}

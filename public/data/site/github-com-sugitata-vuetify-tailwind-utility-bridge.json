@@ -1,0 +1,177 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ca3f168340e6dea1481635a9889adbbe5d71155f0f649700b584c6763b9b5b93",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-sugitata-vuetify-tailwind-utility-bridge",
+  "entityId": "entity-github-com-sugitata-vuetify-tailwind-utility-bridge",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge",
+    "finalUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge",
+    "checkedAt": "2026-09-15T12:14:07.861Z"
+  },
+  "editorial": {
+    "name": "sugitata/vuetify-tailwind-utility-bridge",
+    "descriptionZh": "把 Vuetify 的 ma-1、elevation-4 这类工具类注册进 Tailwind 的插件，用来开编辑器自动补全，也用来从 Vuetify 一点点迁到 Tailwind。",
+    "takeawayZh": "让 VSCode 对 Vuetify 工具类出补全，再逐条换成 Tailwind",
+    "noteZh": "仓库文件树里 src、scripts、playground、types 与 .vscode 并列，Languages 条显示 TypeScript 95.9%、SCSS 2.9%；README 的 Purpose 一栏写明两个用途——在 VSCode 里给 Vuetify 工具类开 Tailwind IntelliSense 补全（即使项目里没装 Tailwind 也行），以及从 Vuetify 渐进迁到 Tailwind，并点名 .d-flex、.ma-2、.rounded-lg 这些类名。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是一个 Tailwind 插件（package.json + tailwind.config.js + src），用户把它装进构建流程后拿到工具类的自动补全与迁移映射。",
+        "evidenceUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge"
+      },
+      {
+        "statement": "归 ui-implementation 而非构建工作流，是拿不准后按最直接的产出选的：它产出的是一批可用的 UI 工具类，而不是部署或压缩环节；若按用途细分，build-deploy-dev-workflow 也说得通。",
+        "evidenceUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:14:07.861Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "primitive"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "tailwind",
+      "vue",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge",
+      "finalUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge",
+      "title": "GitHub - sugitata/vuetify-tailwind-utility-bridge: A Tailwind CSS plugin to bring Vuetify utility classes for autocomplete and migration use cases. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-sugitata-vuetify-tailwind-utility-bridge/identity.jpg",
+        "sha256": "e7e0b9d7c28c66ba7e5e41e71850878bbc47fbab805a0657e4db0c6329f7dd6b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 103963,
+        "alt": "sugitata/vuetify-tailwind-utility-bridge 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-sugitata-vuetify-tailwind-utility-bridge/identity.jpg",
+          "alt": "sugitata/vuetify-tailwind-utility-bridge 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "purpose",
+      "value": "A Tailwind CSS plugin to bring Vuetify utility classes for autocomplete and migration use cases",
+      "sourceUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge",
+      "evidence": "仓库右侧 About 栏第一行，与 README 开头一句同义",
+      "confidence": 1
+    },
+    {
+      "field": "languageBreakdown",
+      "value": "TypeScript 95.9%、SCSS 2.9%、Other 1.2%",
+      "sourceUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge",
+      "evidence": "仓库首页右侧 Languages 进度条与图例，首屏截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "unsupportedFeatures",
+      "value": "不支持 RTL 模式、不支持展开 css variables（如 var(--v-hover-opacity)）、部分排版工具类缺失",
+      "sourceUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge",
+      "evidence": "README 的 Unsupported Features 一节逐条列出",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/sugitata/vuetify-tailwind-utility-bridge",
+      "evidence": "README 有 📄 License 标题但本屏未渲染其内容，右侧 About 栏也没有 license 行",
+      "confidence": 0.5
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-sugitata-vuetify-tailwind-utility-bridge.md",
+  "registryUrl": "/r/github-com-sugitata-vuetify-tailwind-utility-bridge.json"
+}

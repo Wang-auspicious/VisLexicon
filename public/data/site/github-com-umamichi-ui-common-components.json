@@ -1,0 +1,161 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "aea605637bf4a6bd1df8007e3798a1aa8a29ace575b658c52f07c9586a822c2a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-umamichi-ui-common-components",
+  "entityId": "entity-github-com-umamichi-ui-common-components",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/umamichi-ui/common-components",
+    "finalUrl": "https://github.com/umamichi-ui/common-components",
+    "checkedAt": "2026-09-15T11:54:12.950Z"
+  },
+  "editorial": {
+    "name": "umamichi-ui/common-components",
+    "descriptionZh": "Umamichi 各站点共用的 React 组件库，提供叠层栈、对话框、菜单与图标，需配合 @umamichi-ui/common-css 一起用。",
+    "takeawayZh": "按子路径单独引叠层栈、菜单或对话框，不必整包引入。",
+    "noteZh": "README 开头自己先挂了一句「以下内容为 LLM 生成，且未经人工检查，请谨慎对待」，正文列了一张子路径表：presence、overlay、icons、menu、dialog 与 styles.css；overlay 下面是 SiteOverlayBackdrop 与 FullscreenOverlay，menu 下面是 FloatingMenu 与 MobileActionSheet，dialog 下面是 ConfirmDialog 与 AboutDialog。再往下有一张「依赖图」，说 presence 与 icons 是叶子模块、可被上层单独引用。仓库 Star 与 Fork 都是 0，共 26 次提交。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是若干可单独 npm 引用的 React 组件（叠层、菜单、对话框），属于通用界面组件库；仓库未见设计令牌或样式指南体系，不归设计系统套件。",
+        "evidenceUrl": "https://github.com/umamichi-ui/common-components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:54:12.950Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/umamichi-ui/common-components",
+      "finalUrl": "https://github.com/umamichi-ui/common-components",
+      "title": "GitHub - umamichi-ui/common-components: Reusable React UI components for Umamichi sites (overlay stack, dialogs, menus) · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-umamichi-ui-common-components/identity.jpg",
+        "sha256": "75560d2d2bcb639bba36018e0678d3e8bcffef11317e7733c8ff7549bdc8c399",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116426,
+        "alt": "umamichi-ui/common-components 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/umamichi-ui/common-components",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-umamichi-ui-common-components/identity.jpg",
+          "alt": "umamichi-ui/common-components 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "readmeDisclaimer",
+      "value": "README 自述为 LLM 生成、未经人工检查",
+      "sourceUrl": "https://github.com/umamichi-ui/common-components",
+      "evidence": "README 标题下方引用块写「以下内容为 LLM 生成，且未经人工检查，请谨慎对待」",
+      "confidence": 1
+    },
+    {
+      "field": "subpathExports",
+      "value": "presence / overlay / icons / menu / dialog / styles.css",
+      "sourceUrl": "https://github.com/umamichi-ui/common-components",
+      "evidence": "README 的「子路径 / 内容」两列表格",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/umamichi-ui/common-components",
+      "evidence": "About 面板只有 Readme、Activity、Custom properties 三项，没有 license 条目，文件列表里也没有 LICENSE",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-umamichi-ui-common-components.md",
+  "registryUrl": "/r/github-com-umamichi-ui-common-components.json"
+}

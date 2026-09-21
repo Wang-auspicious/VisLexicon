@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b916a1a71922f8bfa799c013bd5e3314c4753a2f93a25a03a2a89d7a0f0fa52d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-uipath-apollo-ui",
+  "entityId": "entity-github-com-uipath-apollo-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/UiPath/apollo-ui",
+    "finalUrl": "https://github.com/UiPath/apollo-ui",
+    "checkedAt": "2026-09-15T11:54:02.465Z"
+  },
+  "editorial": {
+    "name": "UiPath/apollo-ui",
+    "descriptionZh": "UiPath 的设计系统仓库 Apollo v.4，README 分 Features、Package Dependency Graph、Repository Structure、Installation、Packages、Live Demos、Documentation 几节，packages 下是 apollo-react、apollo-ui-icons、apollo-vertex 这些各自独立的包。",
+    "takeawayZh": "从 packages 装 apollo-react 与图标包",
+    "noteZh": "截图停在文件列表中段：ayush578 的 fix(apollo-react): add data-node-part to node label [MST-14013]，3,130 Commits，main 分支带 198 Branches、627 Tags。顶层目录有 .agents/skills、.claude、.github、.husky、.vscode、apps、docs、packages、plan、scripts、web-packages/ap-chat，根目录另有 CLAUDE.md、DESIGN-CONTEXT.md、LICENSE、README.md、SECURITY.md、biome.json、apollo-ui.code-workspace。右侧 About 写 A design system by UiPath，外链指向 engdogfood.staging.uipath.host 上的预览站，MIT license、19 stars、2 watching、9 forks；Releases、Packages、Used by 三块在首屏都只渲染出灰色骨架条，没有加载出内容。提交记录里能看到 feat(apollo-ui-icons): ship the Apollo icon set as its own package、feat(apollo-vertex): add timeline registry component 以及 apollo-wind 迁移的 Phase 1 基建提交。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自称 A design system by UiPath，README 给的是依赖图、仓库结构、包列表与 Live Demos 这样的设计系统组织方式，交付物是成套的包（apollo-react、apollo-ui-icons、apollo-vertex），所以归设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/UiPath/apollo-ui"
+      },
+      {
+        "statement": "它不属于「单个组件库」而是一套多包体系：图标单独成包、另有 timeline registry 与 apollo-wind 迁移计划，这也是没放进通用组件库的原因。",
+        "evidenceUrl": "https://github.com/UiPath/apollo-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:54:02.465Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "icon",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/UiPath/apollo-ui",
+      "finalUrl": "https://github.com/UiPath/apollo-ui",
+      "title": "GitHub - UiPath/apollo-ui: A design system by UiPath · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-uipath-apollo-ui/identity.jpg",
+        "sha256": "4f88d955d947fc1b9a22b6ae970a730e27353dc7a198c651fb0604ea99d2041f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 112281,
+        "alt": "UiPath/apollo-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "packages",
+      "value": "apollo-react、apollo-ui-icons、apollo-vertex，另在推进 apollo-wind 迁移（plan 目录里有 Phase 1 基建提交）",
+      "sourceUrl": "https://github.com/UiPath/apollo-ui",
+      "evidence": "截图提交信息 feat(apollo-react):…、feat(apollo-ui-icons): ship the Apollo icon set as its own package、chore(repo): Phase 1 - Infrastructure setup for apollo-wind migration",
+      "confidence": 0.9
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/UiPath/apollo-ui",
+      "evidence": "截图 About 栏 MIT license 一行与根目录 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "repoDocs",
+      "value": "README 分 Features、Package Dependency Graph、Repository Structure、Installation、Packages、Live Demos、Documentation、Contributing、License 等节",
+      "sourceUrl": "https://github.com/UiPath/apollo-ui",
+      "evidence": "README 里的各级小标题",
+      "confidence": 1
+    },
+    {
+      "field": "agentTooling",
+      "value": "仓库里有 .agents/skills、.claude 目录与 CLAUDE.md，提交信息写作 chore(repo): expose repository skills to Codex、docs(repo): place apollo-ui-icons in the dependency graphs and guides",
+      "sourceUrl": "https://github.com/UiPath/apollo-ui",
+      "evidence": "截图文件列表与提交信息栏",
+      "confidence": 0.9
+    },
+    {
+      "field": "sidebarState",
+      "value": "About 栏下半部的 Releases、Packages、Used by 三块在首屏只显示灰色骨架条，没有渲染出内容",
+      "sourceUrl": "https://github.com/UiPath/apollo-ui",
+      "evidence": "截图右侧 About 栏三段空白骨架",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-uipath-apollo-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-uipath-apollo-ui.md",
+    "checkedAt": "2026-09-15T11:54:02.465Z",
+    "license": "MIT"
+  }
+}

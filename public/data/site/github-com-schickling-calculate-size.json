@@ -1,0 +1,155 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "950ea2edb7511460b35b0ad547b327d4791f0abe869d801b471ec447fc276a35",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-schickling-calculate-size",
+  "entityId": "entity-github-com-schickling-calculate-size",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/schickling/calculate-size",
+    "finalUrl": "https://github.com/schickling/calculate-size",
+    "checkedAt": "2026-09-15T12:49:53.862Z"
+  },
+  "editorial": {
+    "name": "schickling/calculate-size",
+    "descriptionZh": "一个算字符串像素宽高的 JS 库，给出字体、字号、字重和行高就能算出文字占多大，内置缓存。",
+    "takeawayZh": "给字体和字号，算出这段文字占多少像素",
+    "noteZh": "README 只有一行摘要 Calculate the pixel size (width/height) of a string (with integrated caching)，顶上挂着 build unknown 和 npm package 1.1.1 两枚徽标，License 是 MIT。Usage 一节先 npm install calculate-size，再给 calculateSize('Hello world!', { font: 'Arial', fontSize: '12px' }) 的例子，Options 里列了 font、fontSize、fontWeight、lineHeight，以及用约束宽度反算高度的 width；正文还提示支持 TypeScript 开箱即用。仓库 121 星、4 位贡献者、Used by 5.5K，只有 1 个 branch 和 1 个 tag。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付一个 npm 包，README 只有 Install 与 Usage 两节加一个 calculateSize 调用示例，产物是给布局代码调用的测量函数。",
+        "evidenceUrl": "https://github.com/schickling/calculate-size"
+      },
+      {
+        "statement": "它不是组件也不是素材，属开发工具链里的通用库，因此在建站与开发工具下落在构建与开发工作流。",
+        "evidenceUrl": "https://github.com/schickling/calculate-size"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:49:53.862Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "apply"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/schickling/calculate-size",
+      "finalUrl": "https://github.com/schickling/calculate-size",
+      "title": "GitHub - schickling/calculate-size: Calculate the pixel size (width/height) of a string (with integrated caching) · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-schickling-calculate-size/identity.jpg",
+        "sha256": "96b450c82f44850b1b42603864f673d534315b4ec0f747684d06971341e7d502",
+        "width": 1280,
+        "height": 900,
+        "bytes": 74523,
+        "alt": "schickling/calculate-size 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/schickling/calculate-size",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-schickling-calculate-size/identity.jpg",
+          "alt": "schickling/calculate-size 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/schickling/calculate-size",
+      "evidence": "README 顶部与 About 栏的 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "options",
+      "value": "font / fontSize / fontWeight / lineHeight / width",
+      "sourceUrl": "https://github.com/schickling/calculate-size",
+      "evidence": "README Usage 一节的 Options 列表",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "121 stars，Used by 5.5K",
+      "sourceUrl": "https://github.com/schickling/calculate-size",
+      "evidence": "右侧 About 与 Used by 区块的数字",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-schickling-calculate-size.md",
+  "registryUrl": "/r/github-com-schickling-calculate-size.json"
+}

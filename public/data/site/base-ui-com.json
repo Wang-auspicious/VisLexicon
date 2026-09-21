@@ -1,0 +1,177 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c49ede23320d44a05a4e6befdbee1fa3763534db170e23913f3bafc5c2f3ca1f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "base-ui-com",
+  "entityId": "entity-base-ui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "base-ui.com",
+  "official": {
+    "inputUrl": "https://base-ui.com",
+    "finalUrl": "https://base-ui.com/",
+    "checkedAt": "2026-09-15T11:37:32.441Z"
+  },
+  "editorial": {
+    "name": "Base UI",
+    "descriptionZh": "Radix、Floating UI 和 Material UI 的原班人马做的无样式 React 组件库，把可访问性行为做进组件、视觉样式全部留给使用方自己接。",
+    "takeawayZh": "装一套无样式 React 组件，样式自己接",
+    "noteZh": "首屏只有一行大标题 Unstyled UI components for building accessible user interfaces，下面挂一个 Documentation 链接，其余留白。顶栏只有 X、GitHub、Discord 三个图标位和 Search (Ctrl+k)。往下第一段写明 From the creators of Radix, Floating UI, and Material UI，再下面依次是 Made for the makers 的人名列表（Colm Tuite、Marija Najdova、Flavien Delangle 等）和 The fine print 里的 FAQ——How does Base UI differ from Radix UI?、Can I use Base UI without React?、Is Base UI free for commercial use?。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点自称 unstyled UI components 并强调 without imposing visual opinions，交付物是只带行为与可访问性、不带样式的 React 组件，落无样式无障碍原语。",
+        "evidenceUrl": "https://base-ui.com/"
+      },
+      {
+        "statement": "FAQ 里直接回答 Which accessibility standards does Base UI follow? 与 How does Base UI differ from Radix UI?，说明定位在行为层而非成品视觉套件。",
+        "evidenceUrl": "https://base-ui.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:37:32.441Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://base-ui.com",
+      "finalUrl": "https://base-ui.com/",
+      "title": "Unstyled UI components for accessible design systems · Base UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/base-ui-com/identity.jpg",
+        "sha256": "a3e28febdf8162d8b01bba4b4323fdcb0139ff5f3636e01ee80157c080cd2fae",
+        "width": 1280,
+        "height": 900,
+        "bytes": 96546,
+        "alt": "Base UI 首屏：Unstyled UI components for building accessible user interfac"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://base-ui.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/base-ui-com/identity.jpg",
+          "alt": "Base UI 首屏：Unstyled UI components for building accessible user interfac",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "origin",
+      "value": "由 Radix、Floating UI、Material UI 的作者团队开发",
+      "sourceUrl": "https://base-ui.com/",
+      "evidence": "正文首段 From the creators of Radix, Floating UI, and Material UI",
+      "confidence": 1
+    },
+    {
+      "field": "distribution",
+      "value": "npm、GitHub、Discord、Bluesky 四个入口",
+      "sourceUrl": "https://base-ui.com/",
+      "evidence": "顶栏与页脚的 GitHub / Discord / npm / Bluesky 链接组",
+      "confidence": 1
+    },
+    {
+      "field": "docs",
+      "value": "组件文档入口为 /react/overview/quick-start",
+      "sourceUrl": "https://base-ui.com/",
+      "evidence": "页面内唯一文档链接 Documentation，落到 /react/overview/quick-start",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://base-ui.com/",
+      "evidence": "页面只以 FAQ 形式提到 Is Base UI free for commercial use?，没有列出许可证名称，故记 unknown",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/base-ui-com.md",
+  "registryUrl": "/r/base-ui-com.json"
+}

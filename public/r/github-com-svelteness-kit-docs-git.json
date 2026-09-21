@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "90738c1cff784d53e11d2236830fc87961fc0b207432f3e4f77c99a81869bb21",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-svelteness-kit-docs-git",
+  "entityId": "entity-github-com-svelteness-kit-docs-git",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/svelteness/kit-docs.git",
+    "finalUrl": "https://github.com/svelteness/kit-docs",
+    "checkedAt": "2026-09-15T12:30:27.863Z"
+  },
+  "editorial": {
+    "name": "svelteness/kit-docs",
+    "descriptionZh": "给 SvelteKit 做文档站的集成方案，作者自己给它的定位是「Svelte 版的 VitePress」：一个把 Markdown 转成 Svelte 组件的 Vite 插件，加上加载侧栏与 frontmatter 的 loader，再配一套仿 Tailwind 文档的预置主题。MIT 授权。",
+    "takeawayZh": "给 SvelteKit 加一套 Markdown 文档站主题",
+    "noteZh": "About 栏写 Documentation integration for SvelteKit，官网链接指向 kitdocs.vercel.app，README 第一句把它说成 a VitePress alternative for Svelte。Features 一条条列得很细：把 Markdown 转成带 HMR 的 Svelte 组件的 Vite 插件、加载 Markdown 元数据与侧栏配置的 loader 和 endpoint、灵感来自 Tailwind 文档的预置主题、默认主题里带完整键盘支持的菜单与 popover、映射到 :::button 这类自定义容器的全局组件目录，以及用 Shiki 做语法高亮。右侧 Languages 条上 TypeScript 占 49.8%、Svelte 占 26.3%，仓库累计 75 个 tag、11 位 contributor。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 Vite 插件加 loader 的构建期集成（把 Markdown 变成 Svelte 组件、生成侧栏），主体是构建工具链而不是可直接使用的组件库。",
+        "evidenceUrl": "https://github.com/svelteness/kit-docs"
+      },
+      {
+        "statement": "拿不准的备选是 templates-design-files / site-app-starters（它确实附赠一套文档主题）；最终按「最直接能拿走什么」判为构建集成，因为 README 首句与 Features 第一条都在讲 Vite 插件与 loader，主题只是它的一部分。",
+        "evidenceUrl": "https://github.com/svelteness/kit-docs"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:30:27.863Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "template"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/svelteness/kit-docs.git",
+      "finalUrl": "https://github.com/svelteness/kit-docs",
+      "title": "GitHub - svelteness/kit-docs: Documentation integration for SvelteKit. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-svelteness-kit-docs-git/identity.jpg",
+        "sha256": "e26c5d90ff7cdb2796ff1fb15d68f797edd6a6e84e04f0725be93a8cd494defc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121961,
+        "alt": "svelteness/kit-docs 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "selfDescription",
+      "value": "Documentation integration for SvelteKit，作者称其为 a VitePress alternative for Svelte",
+      "sourceUrl": "https://github.com/svelteness/kit-docs",
+      "evidence": "About 栏简介与 README 首句",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/svelteness/kit-docs",
+      "evidence": "About 栏 License 行写 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "features",
+      "value": "Vite 插件把 Markdown 转成带 HMR 的 Svelte 组件；loader 与 endpoint 加载元数据和侧栏配置；仿 Tailwind 文档的预置主题；带键盘支持的菜单与 popover；Shiki 语法高亮",
+      "sourceUrl": "https://github.com/svelteness/kit-docs",
+      "evidence": "README 的 ✨ Features 列表",
+      "confidence": 1
+    },
+    {
+      "field": "markdownExtensions",
+      "value": "支持 header anchors、file links、YAML frontmatter、emojis、自定义容器、目录与导入代码片段",
+      "sourceUrl": "https://github.com/svelteness/kit-docs",
+      "evidence": "README 的 Markdown extensions 一条",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "TypeScript 49.8%、Svelte 26.3%，75 个 tag、11 位 contributor",
+      "sourceUrl": "https://github.com/svelteness/kit-docs",
+      "evidence": "右侧 Languages 条与 Releases、Contributors 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-svelteness-kit-docs-git",
+    "designMdUrl": "https://vislexicon.com/site/github-com-svelteness-kit-docs-git.md",
+    "checkedAt": "2026-09-15T12:30:27.863Z",
+    "license": "MIT"
+  }
+}

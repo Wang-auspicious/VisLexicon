@@ -1,0 +1,178 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "646a2454c0d69f08578d2207fdf6796c7b4c98721696c37bf13f62793d06a0ce",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "drawer-abhivarde-in",
+  "entityId": "entity-drawer-abhivarde-in",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "drawer.abhivarde.in",
+  "official": {
+    "inputUrl": "https://drawer.abhivarde.in",
+    "finalUrl": "https://drawer.abhivarde.in/",
+    "checkedAt": "2026-09-15T11:35:57.567Z"
+  },
+  "editorial": {
+    "name": "Svelte Drawer",
+    "descriptionZh": "一份给 Svelte 5 用的抽屉组件，交互照着 Vaul 做，装一个包拿到遮罩、内容、把手几个部件。页面把安装命令、基础用法和十几种变体的代码并排摊开，给的是能直接复制的实现。",
+    "takeawayZh": "npm 装一个抽屉件，示例带 Snap Points",
+    "noteZh": "首屏最上一行小字是 npm: @abhivarde/svelte-drawer，再是大标题 Svelte Drawer 和一句 A drawer component for Svelte 5, inspired by Vaul.，下面两个按钮 Render a drawer 与 GitHub。紧接着一张卡片写 Trusted by developers / Open source and community driven，里面只有 0 stars 和 Star、Sponsor、Buy me a coffee 三个链接。正文从 Installation 的 npm install @abhivarde/svelte-drawer 开始，Usage 演示 Drawer、DrawerOverlay、DrawerContent、DrawerHandle 四个导出，Examples 一节列了 Default、Side、Nested、Scrollable、Controlled、Snap Points、Portal、Backdrop Blur、Auto Height 等十余个变体。首屏还挂着 npx skills add AbhiVarde/svelte-drawer 一行，以及 skills.sh 和 syncui.design 两条外链。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "整站只交付一个抽屉组件：安装命令、四个导出部件的用法、十余个变体示例，用户来这儿是装包并复制代码，故归通用界面组件库。",
+        "evidenceUrl": "https://drawer.abhivarde.in/"
+      },
+      {
+        "statement": "它同时挂了 npx skills add AbhiVarde/svelte-drawer，说明这个组件还被当成 agent skill 分发，但主体仍是组件本身，不影响归类。",
+        "evidenceUrl": "https://drawer.abhivarde.in/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:35:57.567Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://drawer.abhivarde.in",
+      "finalUrl": "https://drawer.abhivarde.in/",
+      "title": "Svelte Drawer - A drawer component for Svelte 5",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/drawer-abhivarde-in/identity.jpg",
+        "sha256": "f178971343e7df92d043bef31726e130f13986c25bbcc7bf47f2a8ff9e41a49b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 54027,
+        "alt": "Svelte Drawer 首屏：Svelte Drawer"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://drawer.abhivarde.in",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/drawer-abhivarde-in/identity.jpg",
+          "alt": "Svelte Drawer 首屏：Svelte Drawer",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "packageName",
+      "value": "@abhivarde/svelte-drawer",
+      "sourceUrl": "https://drawer.abhivarde.in/",
+      "evidence": "首屏最上一行小字与 Installation 代码块",
+      "confidence": 1
+    },
+    {
+      "field": "exports",
+      "value": "Drawer、DrawerOverlay、DrawerContent、DrawerHandle",
+      "sourceUrl": "https://drawer.abhivarde.in/",
+      "evidence": "Usage 一节的 import 语句",
+      "confidence": 1
+    },
+    {
+      "field": "examples",
+      "value": "Default、Side、Nested、Scrollable、Controlled、Snap Points、Portal、Backdrop Blur、Persistent State",
+      "sourceUrl": "https://drawer.abhivarde.in/",
+      "evidence": "Examples 区块下的按钮列表",
+      "confidence": 1
+    },
+    {
+      "field": "agentSkill",
+      "value": "npx skills add AbhiVarde/svelte-drawer",
+      "sourceUrl": "https://drawer.abhivarde.in/",
+      "evidence": "首屏 Also available as an agent skill · skills.sh 一行",
+      "confidence": 1
+    },
+    {
+      "field": "stars",
+      "value": "0 stars",
+      "sourceUrl": "https://drawer.abhivarde.in/",
+      "evidence": "Trusted by developers 卡片内的星数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/drawer-abhivarde-in.md",
+  "registryUrl": "/r/drawer-abhivarde-in.json"
+}

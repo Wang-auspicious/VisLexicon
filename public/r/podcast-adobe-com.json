@@ -1,0 +1,136 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c82d2cad78bfc11ee06e3bc3d1664c03c05cb9f367aa64db0239c2759a60dd38",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "podcast-adobe-com",
+  "entityId": "entity-podcast-adobe-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://podcast.adobe.com",
+    "finalUrl": "https://podcast.adobe.com/",
+    "checkedAt": "2026-09-15T09:45:25.743Z"
+  },
+  "editorial": {
+    "name": "Adobe Podcast",
+    "descriptionZh": "Adobe 的网页版播客工作站，主打 AI 降噪与转写，录音、转写、剪辑、分享四步都留在浏览器里完成。",
+    "takeawayZh": "在浏览器里录音、转写并修掉播客底噪",
+    "noteZh": "截图是一张白页，页面正文只吐出 Adobe IMS 的登录引导脚本，里面写着 client_id 为 phonos-server-prod，还带一段 guest token 分支，说明工具栏要登录之后才挂载，本次没看到公开界面。可用信息只有标题里的 AI audio recording and editing, all on the web 与描述里的 Record, transcribe, edit, share。",
+    "recommendation": null,
+    "pricing": "Freemium; deeper features need an Adobe account",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面标题把产品定义为跑在网页上的 AI 录音与剪辑工具，描述列出录制、转写、剪辑、分享四步。",
+        "evidenceUrl": "https://podcast.adobe.com/"
+      },
+      {
+        "statement": "抓取时正文只有 Adobe IMS 客户端脚本、界面未挂载，本次分类依据页面自身的标题与描述。",
+        "evidenceUrl": "https://podcast.adobe.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:45:25.743Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "audio"
+    ],
+    "actions": [
+      "edit",
+      "export",
+      "publish"
+    ],
+    "media": [
+      "audio"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "content-creator"
+    ],
+    "access": [
+      "freemium",
+      "login-required"
+    ],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://podcast.adobe.com",
+      "finalUrl": "https://podcast.adobe.com/",
+      "title": "Adobe Podcast | AI audio recording and editing, all on the web",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/podcast-adobe-com/identity.jpg",
+        "sha256": "ba6414ef62bb349e34b0f7f76ebd93606f2b93204dd6a53c61a226634b2374b7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 7598,
+        "alt": "Adobe Podcast 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "title",
+      "value": "Adobe Podcast | AI audio recording and editing, all on the web",
+      "sourceUrl": "https://podcast.adobe.com/",
+      "evidence": null,
+      "confidence": 1
+    },
+    {
+      "field": "authStack",
+      "value": "页面内嵌 Adobe IMS 客户端，client_id 为 phonos-server-prod",
+      "sourceUrl": "https://podcast.adobe.com/",
+      "evidence": null,
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。",
+      "存在付费层：Freemium; deeper features need an Adobe account。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/podcast-adobe-com",
+    "designMdUrl": "https://vislexicon.com/site/podcast-adobe-com.md",
+    "checkedAt": "2026-09-15T09:45:25.743Z",
+    "license": "proprietary"
+  }
+}

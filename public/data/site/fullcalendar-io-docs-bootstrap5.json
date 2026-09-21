@@ -1,0 +1,178 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "995130e44d4edc738f2cbb16a3a35647f7bb29c13a7b9f01490c1c08a215072d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "fullcalendar-io-docs-bootstrap5",
+  "entityId": "entity-fullcalendar-io-docs-bootstrap5",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "fullcalendar.io",
+  "official": {
+    "inputUrl": "https://fullcalendar.io/docs/bootstrap5",
+    "finalUrl": "https://fullcalendar.io/docs/bootstrap5",
+    "checkedAt": "2026-09-15T12:25:42.110Z"
+  },
+  "editorial": {
+    "name": "FullCalendar Bootstrap 5",
+    "descriptionZh": "FullCalendar 的 Bootstrap 5 主题文档页：装上 @fullcalendar/bootstrap5，日历就继承 Bootstrap 的样式变量和明暗配色。",
+    "takeawayZh": "把日历换成 Bootstrap 5 配色的引入步骤",
+    "noteZh": "深色顶栏是 FullCalendar / Demos / Docs / Support / Pricing，右端标着 Latest: v7.1.0。左侧 Theme 目录列出 Color Palettes、Shadcn、MUI、Bootstrap 5、Custom Themes、Render Hook Index，正文 H1 是 Bootstrap 5 7.0.2，右上方挂着「You're viewing the v7 docs」的提示条和 Ctrl K 搜索框。正文给的是 npm install 那一串包名，以及用 data-bs-theme 属性切明暗色的做法。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这个页面交付的是 FullCalendar 的 Bootstrap 5 主题包用法（npm install @fullcalendar/bootstrap5 后 theme.css 直接接管日历外观），用户拿走的是可嵌进页面的日历组件及其主题代码，所以归 ui-implementation 下的 general-ui-components，而不是参考类或模板类。页面把插件分成 Standard Plugins 与 Premium Plugins 两栏，顶栏也有 Pricing 入口，说明存在付费插件层，pricing 记 Freemium。页面未给出具体许可证文本，licenses 记 unknown。",
+        "evidenceUrl": "https://fullcalendar.io/docs/bootstrap5"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:25:42.110Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "learn",
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://fullcalendar.io/docs/bootstrap5",
+      "finalUrl": "https://fullcalendar.io/docs/bootstrap5",
+      "title": "Bootstrap 5 - Docs | FullCalendar",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/fullcalendar-io-docs-bootstrap5/identity.jpg",
+        "sha256": "c111327db27cfb42ca7ee1696e7826bd43ea0e20c7a9dbc4c346a410f89324bb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 99113,
+        "alt": "FullCalendar Bootstrap 5 首屏：Bootstrap 5 7.0.2"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://fullcalendar.io/docs/bootstrap5",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/fullcalendar-io-docs-bootstrap5/identity.jpg",
+          "alt": "FullCalendar Bootstrap 5 首屏：Bootstrap 5 7.0.2",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "nav-sections",
+      "value": "Demos、Docs、Support、Pricing",
+      "sourceUrl": "https://fullcalendar.io/docs/bootstrap5",
+      "evidence": "深色顶栏里依次排列的导航项，Docs 为当前页",
+      "confidence": 1
+    },
+    {
+      "field": "documented-version",
+      "value": "Bootstrap 5 7.0.2，站点最新版 v7.1.0",
+      "sourceUrl": "https://fullcalendar.io/docs/bootstrap5",
+      "evidence": "正文 H1 右侧的版本号，以及顶栏右端 Latest: v7.1.0",
+      "confidence": 1
+    },
+    {
+      "field": "install-packages",
+      "value": "@fullcalendar/bootstrap5、fullcalendar、temporal-polyfill、bootstrap、bootstrap-icons",
+      "sourceUrl": "https://fullcalendar.io/docs/bootstrap5",
+      "evidence": "Standard Plugins 一节里的 npm install 命令",
+      "confidence": 1
+    },
+    {
+      "field": "theme-list",
+      "value": "Color Palettes、Shadcn、MUI、Bootstrap 5、Custom Themes、Render Hook Index",
+      "sourceUrl": "https://fullcalendar.io/docs/bootstrap5",
+      "evidence": "左侧 Theme 目录下的条目",
+      "confidence": 1
+    },
+    {
+      "field": "plugin-tiers",
+      "value": "Standard Plugins 与 Premium Plugins",
+      "sourceUrl": "https://fullcalendar.io/docs/bootstrap5",
+      "evidence": "页面正文里并列的两个插件分节标题",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/fullcalendar-io-docs-bootstrap5.md",
+  "registryUrl": "/r/fullcalendar-io-docs-bootstrap5.json"
+}

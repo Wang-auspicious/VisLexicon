@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d72309189893cc87ef3511130064df57b86e4730e3c7839152dc29753fd85287",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-plasius-ltd-sharedcomponents",
+  "entityId": "entity-github-com-plasius-ltd-sharedcomponents",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/Plasius-LTD/sharedcomponents",
+    "finalUrl": "https://github.com/Plasius-LTD/sharedcomponents",
+    "checkedAt": "2026-09-15T11:48:26.120Z"
+  },
+  "editorial": {
+    "name": "Plasius-LTD/sharedcomponents",
+    "descriptionZh": "Plasius 的共享组件包 @plasius/sharedcomponents，README 按 Scope、Included Components、Install 组织，重点讲了连续滚动集合、触屏优先的操作与反馈控件，以及隐私安全的反馈输入。",
+    "takeawayZh": "装包取 Continuous collections 与反馈控件",
+    "noteZh": "仓库 About 栏只有一句 No description, website, or topics provided.，正文得靠 README：小节依次是 Scope、Included Components、Install、Module formats、Continuous collections、Usage、Touch-first action and review surfaces、Privacy-safe feedback controls、Translations、Interaction Analytics、Suitability Checklist、Development、Governance & ADRs。文件列表能看出它带一套流程文档，AGENTS.md、NFR.md、RETROSPECTIVE_RULES.md、FLAGS_AND_CAPABILITIES.md、WORKFLOW.md 与 legal、demo、docs、tests 目录并列，发布走 bot（最新 Release v1.2.2，137 次提交）。src 那条提交信息写的是 prevent duplicate collection append from trailing scroll events，正是 Continuous collections 的边界问题。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是可安装的共享组件包（README 有 Included Components 与 Install 两节，文件列表里有 tsconfig.json 与 vitest 配置），用户拿走后在自己的界面里用，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/Plasius-LTD/sharedcomponents"
+      },
+      {
+        "statement": "不确定：README 只在标题层面给出组件分组（连续滚动集合、触屏操作面、隐私安全反馈），没有逐条组件清单；页面也没出现框架名，故 technologies 只按 tsconfig.json 与 .eslintrc.cjs 登记 typescript。",
+        "evidenceUrl": "https://github.com/Plasius-LTD/sharedcomponents"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:26.120Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Plasius-LTD/sharedcomponents",
+      "finalUrl": "https://github.com/Plasius-LTD/sharedcomponents",
+      "title": "GitHub - Plasius-LTD/sharedcomponents · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-plasius-ltd-sharedcomponents/identity.jpg",
+        "sha256": "e000a6a4cd3211c3c52e629023c3b083351ad5261cbe57d945c53586cbfad626",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135289,
+        "alt": "Plasius-LTD/sharedcomponents 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "readmeSections",
+      "value": "Scope / Included Components / Install / Module formats / Continuous collections / Touch-first action and review surfaces / Privacy-safe feedback controls / Interaction Analytics",
+      "sourceUrl": "https://github.com/Plasius-LTD/sharedcomponents",
+      "evidence": "README 各级标题",
+      "confidence": 1
+    },
+    {
+      "field": "collectionBoundaryFix",
+      "value": "修掉了尾部滚动事件导致的集合重复追加",
+      "sourceUrl": "https://github.com/Plasius-LTD/sharedcomponents",
+      "evidence": "src 目录行的提交信息 fix: prevent duplicate collection append from trailing scroll events",
+      "confidence": 1
+    },
+    {
+      "field": "governanceDocs",
+      "value": "仓库自带 AGENTS.md、NFR.md、RETROSPECTIVE_RULES.md、FLAGS_AND_CAPABILITIES.md、WORKFLOW.md 等治理文档",
+      "sourceUrl": "https://github.com/Plasius-LTD/sharedcomponents",
+      "evidence": "文件列表根目录条目",
+      "confidence": 1
+    },
+    {
+      "field": "releaseFlow",
+      "value": "最新 Release v1.2.2，由 plasius-release-prep-2[bot] 与 github-actions[bot] 发布",
+      "sourceUrl": "https://github.com/Plasius-LTD/sharedcomponents",
+      "evidence": "最新提交行的作者与右侧 Releases 面板",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/Plasius-LTD/sharedcomponents",
+      "evidence": "右侧 About 栏 MIT license",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-plasius-ltd-sharedcomponents",
+    "designMdUrl": "https://vislexicon.com/site/github-com-plasius-ltd-sharedcomponents.md",
+    "checkedAt": "2026-09-15T11:48:26.120Z",
+    "license": "MIT"
+  }
+}

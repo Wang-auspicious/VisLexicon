@@ -1,0 +1,155 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ab6f94e1e08d2fcedc63eb0f7d7c806ff02dcf6e16f0096b34571d7018302f0a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "apollo-vuejs-org",
+  "entityId": "entity-apollo-vuejs-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "apollo.vuejs.org",
+  "official": {
+    "inputUrl": "https://apollo.vuejs.org",
+    "finalUrl": "https://apollo.vuejs.org/",
+    "checkedAt": "2026-09-15T11:54:46.152Z"
+  },
+  "editorial": {
+    "name": "Vue Apollo",
+    "descriptionZh": "在 Vue 应用里接 GraphQL 的官方集成：同一套查询可以按 Option API、Composition API 或组件三种写法用，结果自动更新 UI，也能在服务端先跑完查询再输出 HTML。",
+    "takeawayZh": "三种 Vue 写法都能挂 GraphQL 查询，SSR 也照跑",
+    "noteZh": "首屏左上是大标题 Vue Apollo GraphQL，配一句 Effortless GraphQL in your Vue app! 和一枚深蓝色 Get Started 按钮，右侧是蓝圈里套 Vue 三角标的 logo；下面三张浅灰卡片分别是 Automatic updates、Supports all Vue APIs（Option API, Composition API or Components）与 SSR-ready，再往下单独一屏 Sponsors。左侧导航按 Getting started / Option API / Composition API / Component API / Advanced topics / API Reference / Migration / CLI plugin 分栏，右上角另挂一个简体中文入口。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面主线是 Supports all Vue APIs 的三条用法（Option API、Composition API、Components）加 API Reference，用户拿走的是能装进 Vue 项目的查询组件与组合式函数，归到通用界面组件库；它本质是 GraphQL 数据层而不是纯视觉组件，这一点在分类上有不确定性。",
+        "evidenceUrl": "https://apollo.vuejs.org/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:54:46.152Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://apollo.vuejs.org",
+      "finalUrl": "https://apollo.vuejs.org/",
+      "title": "Vue Apollo",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/apollo-vuejs-org/identity.jpg",
+        "sha256": "798d7a720c4728deea01ed6747f328edb4b399f38020f56b2d0d48d4ae042837",
+        "width": 1280,
+        "height": 900,
+        "bytes": 61663,
+        "alt": "Vue Apollo 首屏：Vue Apollo GraphQL"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://apollo.vuejs.org",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/apollo-vuejs-org/identity.jpg",
+          "alt": "Vue Apollo 首屏：Vue Apollo GraphQL",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://apollo.vuejs.org/",
+      "evidence": "页脚一段 Released under the MIT License. Copyright © 2015-present Guillaume Chau",
+      "confidence": 1
+    },
+    {
+      "field": "api-variants",
+      "value": "Option API / Composition API / Component API",
+      "sourceUrl": "https://apollo.vuejs.org/",
+      "evidence": "顶部导航的三条并列入口，以及首屏 Supports all Vue APIs 卡片的副文案 Option API, Composition API or Components",
+      "confidence": 1
+    },
+    {
+      "field": "ssr",
+      "value": "可在服务端先执行查询再渲染 HTML",
+      "sourceUrl": "https://apollo.vuejs.org/",
+      "evidence": "SSR-ready 卡片正文 Run your queries on the server before rendering the page HTML",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/apollo-vuejs-org.md",
+  "registryUrl": "/r/apollo-vuejs-org.json"
+}

@@ -1,0 +1,163 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5a4a3c49ab757cf4b3504366261de841c53e5553668df70f6b3ae9238080f641",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-dumboldspider-wipsie-ui",
+  "entityId": "entity-github-com-dumboldspider-wipsie-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/dumboldspider/wipsie-ui",
+    "finalUrl": "https://github.com/dumboldspider/wipsie-ui",
+    "checkedAt": "2026-09-15T11:55:11.305Z"
+  },
+  "editorial": {
+    "name": "dumboldspider/wipsie-ui",
+    "descriptionZh": "一个自用性质的 mono-repo，里面装的是 Wipsie 自家应用依赖的两个包：Wipsie UI 组件库和基于 Quill 的 Wipsie Rich Editor，README 明说这些包是拿来 build Wipsie Apps 的。",
+    "takeawayZh": "顺走组件库与 Quill 富文本编辑器的 mono-repo",
+    "noteZh": "README 实质内容只有两行，列出 Wipsie UI（Ui components library to be used on Wipsie Apps）与 Wipsie Rich Editor 两个包，About 简介写 @wipsie/ui - Wipsie UI components library - Atom by atom!，外链指向 storybook.wipsie.com/。文件树里 packages、examples/ui-example2、utils/generate、.storybook 几块并排，提交记录里能看到 lerna 换 turborepo 的痕迹，Languages 条上 TypeScript 97.3%，整仓 0 stars、15 Tags。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述是给 Wipsie Apps 用的包集合，主体是 @wipsie/ui 组件库加一个富文本编辑器包，用户拿走的是组件源码与 Storybook 文档，归到通用界面组件库；仓库已四年未动、星数为 0，属于自用代码。",
+        "evidenceUrl": "https://github.com/dumboldspider/wipsie-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:11.305Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/dumboldspider/wipsie-ui",
+      "finalUrl": "https://github.com/dumboldspider/wipsie-ui",
+      "title": "GitHub - dumboldspider/wipsie-ui: @wipsie/ui - Wipsie UI components library - Atom by atom! · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-dumboldspider-wipsie-ui/identity.jpg",
+        "sha256": "f7c29fc327f8a65b73fe91193ad02338b07a90918d55ade40d6f13000c8d050a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 112927,
+        "alt": "dumboldspider/wipsie-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/dumboldspider/wipsie-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-dumboldspider-wipsie-ui/identity.jpg",
+          "alt": "dumboldspider/wipsie-ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/dumboldspider/wipsie-ui",
+      "evidence": "右侧 About 栏与 README 标题行都标 MIT license，文件树里也有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "Wipsie UI（组件库）与 Wipsie Rich Editor",
+      "sourceUrl": "https://github.com/dumboldspider/wipsie-ui",
+      "evidence": "README 的 Wipsie Packages 一节两个小标题及各自一句说明",
+      "confidence": 1
+    },
+    {
+      "field": "docs-url",
+      "value": "storybook.wipsie.com/",
+      "sourceUrl": "https://github.com/dumboldspider/wipsie-ui",
+      "evidence": "右侧 About 栏的外部链接一行",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "TypeScript 97.3%，JavaScript 2.5%，CSS 0.2%",
+      "sourceUrl": "https://github.com/dumboldspider/wipsie-ui",
+      "evidence": "仓库页右下 Languages 条形图的图例",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-dumboldspider-wipsie-ui.md",
+  "registryUrl": "/r/github-com-dumboldspider-wipsie-ui.json"
+}

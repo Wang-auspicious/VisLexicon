@@ -1,0 +1,174 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8652eda5892bdce5733d0b054aac8579a831d922124b630615ed1766ca2ba59b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "stitches-dev",
+  "entityId": "entity-stitches-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "stitches.dev",
+  "official": {
+    "inputUrl": "https://stitches.dev",
+    "finalUrl": "https://stitches.dev/",
+    "checkedAt": "2026-09-15T12:08:01.071Z"
+  },
+  "editorial": {
+    "name": "Stitches",
+    "descriptionZh": "一个近零运行时的 CSS-in-JS 库，支持 SSR、多变体与 token 主题，作者已经宣布停止维护。核心包约 5.9kb。",
+    "takeawayZh": "用 styled() 把 color、size 写成变体，再合并组合样式。",
+    "noteZh": "顶部一条浅紫药丸提示写着 Stitches is no longer maintained，旁边一个 Read more 外链。下面主标题 Style your components with confidence，副标题点出 CSS-in-JS with near-zero runtime, SSR, multi-variant support。正中一个 npm install @stitches/react 的命令框带复制按钮，再往下四栏特性并排：Performant、Feature-rich、Best-in-class DX、Framework-agnostic，Framework-agnostic 那栏说明 @stitches/core 在 Vue、Svelte 甚至原生 HTML 上都能用。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的是写 UI 组件用的样式库代码，用户拿走的是可安装的库，归 general-ui-components；也可以争论它属于开发工作流工具，但页面主体是组件样式 API。",
+        "evidenceUrl": "https://stitches.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:01.071Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "react",
+      "typescript",
+      "vue",
+      "svelte"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://stitches.dev",
+      "finalUrl": "https://stitches.dev/",
+      "title": "Stitches — CSS-in-JS with near-zero runtime",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/stitches-dev/identity.jpg",
+        "sha256": "946ff78464b31cb517badfbe7ec4d0bd48aeea9185212420c32efc3ac9adcca3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84480,
+        "alt": "Stitches 首屏：Style your components with confidence"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://stitches.dev",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/stitches-dev/identity.jpg",
+          "alt": "Stitches 首屏：Style your components with confidence",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "status",
+      "value": "官方标注不再维护",
+      "sourceUrl": "https://stitches.dev/",
+      "evidence": "首屏标题上方的浅紫提示条写 Stitches is no longer maintained，旁边带 Read more 链接。",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install @stitches/react",
+      "sourceUrl": "https://stitches.dev/docs/installation",
+      "evidence": "首页 Documentation 段下方的命令行框，截图里可见并带复制按钮。",
+      "confidence": 1
+    },
+    {
+      "field": "bundleSize",
+      "value": "Core 5.9kb、React 6.1kb，运行时插值为零",
+      "sourceUrl": "https://stitches.dev/",
+      "evidence": "首页 Stats at a glance 段列出 Bundle size (Core) 5.9kb、Bundle size (React) 6.1kb、Runtime interpolations Zero。",
+      "confidence": 1
+    },
+    {
+      "field": "variants",
+      "value": "支持 variants、compoundVariants、defaultVariants 三级",
+      "sourceUrl": "https://stitches.dev/docs/variants",
+      "evidence": "首页 Variants 段逐条给出 Variants、Compound Variants、Default Variants 的说明和 styled() 示例代码。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/stitches-dev.md",
+  "registryUrl": "/r/stitches-dev.json"
+}

@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "63f16485c6e9db11be6311f4c3af9476c15b1d6411775bec2b69affd558185bc",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-storybookjs-addon-svelte-csf",
+  "entityId": "entity-github-com-storybookjs-addon-svelte-csf",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/storybookjs/addon-svelte-csf",
+    "finalUrl": "https://github.com/storybookjs/addon-svelte-csf",
+    "checkedAt": "2026-09-15T11:51:47.736Z"
+  },
+  "editorial": {
+    "name": "storybookjs/addon-svelte-csf",
+    "descriptionZh": "让 Storybook 用 Svelte 语法写故事的 addon，替掉默认那套 ESM 的 CSF 写法。给组件用了 snippet 或 slot、用 ESM 讲不清楚的 Svelte 项目用。",
+    "takeawayZh": "改用 .svelte 文件写 Storybook 故事",
+    "noteZh": "About 写 [Incubation] CSF using Svelte components.，README 第一句 This Storybook addon allows you to write Storybook stories using the Svelte language instead of ESM that regular CSF is based on，装法是 npx storybook@latest add @storybook/addon-svelte-csf，紧接着一句解释这样写便于给依赖 snippet 或 slot 的组合组件配故事。README 目录分 Getting Started、Usage、Version compatibility、Contributing 四节。仓库 1,016 Commits、106 个 release（最新 v5.1.3）、3.2K 下游使用者、144 star、38 位贡献者；根目录摆着 MIGRATION.md、ERRORS.md、preset.js，还有 AGENTS.md 与 CLAUDE.md。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是 Storybook 的写故事方式插件（用 Svelte 语法替代 ESM CSF），属组件开发链路上的工具，不是界面组件库。",
+        "evidenceUrl": "https://github.com/storybookjs/addon-svelte-csf"
+      },
+      {
+        "statement": "About 的 [Incubation] 前缀说明它还在孵化中，定位是 addon 而非独立产品站。",
+        "evidenceUrl": "https://github.com/storybookjs/addon-svelte-csf"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:51:47.736Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/storybookjs/addon-svelte-csf",
+      "finalUrl": "https://github.com/storybookjs/addon-svelte-csf",
+      "title": "GitHub - storybookjs/addon-svelte-csf: [Incubation] CSF using Svelte components. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-storybookjs-addon-svelte-csf/identity.jpg",
+        "sha256": "f7451193688b3bc1d2aff19354cc6150a8bfbc00704ae8e5ec9c573219a3247b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131455,
+        "alt": "storybookjs/addon-svelte-csf 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/storybookjs/addon-svelte-csf",
+      "evidence": "右侧 About 面板与 README 文件区的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "installCommand",
+      "value": "npx storybook@latest add @storybook/addon-svelte-csf",
+      "sourceUrl": "https://github.com/storybookjs/addon-svelte-csf",
+      "evidence": "README 正文里的安装命令",
+      "confidence": 1
+    },
+    {
+      "field": "migrationDocs",
+      "value": "MIGRATION.md 与 ERRORS.md 两份说明文档随仓库发布",
+      "sourceUrl": "https://github.com/storybookjs/addon-svelte-csf",
+      "evidence": "文件表里 MIGRATION.md 与 ERRORS.md 两行",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "3.2K 个下游使用者，106 个 release，最新 v5.1.3",
+      "sourceUrl": "https://github.com/storybookjs/addon-svelte-csf",
+      "evidence": "右侧 Used by 与 Releases 两栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-storybookjs-addon-svelte-csf",
+    "designMdUrl": "https://vislexicon.com/site/github-com-storybookjs-addon-svelte-csf.md",
+    "checkedAt": "2026-09-15T11:51:47.736Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "800ba8c8c96fc2132deb0ccfdd2ab31149663dfaf228f6ed3cc53b322702543a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "ogimage-gallery",
+  "entityId": "entity-ogimage-gallery",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://ogimage.gallery",
+    "finalUrl": "https://www.ogimage.gallery/",
+    "checkedAt": "2026-09-15T10:40:48.479Z"
+  },
+  "editorial": {
+    "name": "OGimage.gallery",
+    "descriptionZh": "OGimage.gallery 收集各家产品的社交分享预览图（OG image），按行业分类铺开，每张都点得回原站。适合做社交卡片和分享图时找参考。",
+    "takeawayZh": "看 OpenAI、Vercel 这些站真在用的分享卡片图",
+    "noteZh": "顶栏分类条从 All、Animated、App、Arts & Culture、Creative、Dynamic、Finance、Food、Health、Portfolios、Resources、SaaS、Stores 一路排到 By Site 和 Deck Gallery。卡片铺成三列，第一屏能看到 OpenAI 那张贴纸拼贴、Vercel 的 vgpu「The WebGPU library, designed for agents.」、Three.js Conf 的限量票海报、Clay 的黏土小人，以及 Internets™ 的黄色售货机。每张卡左下角标着站点名和一枚小图标，正文结尾写 Just a website in the Internets™，并挂一枚 @OGimage_gallery 的每日推送。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "case-inspiration-collections",
+    "subcategory": "brand-packaging-editorial-cases",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "每张 OG image 都是一次品牌视觉与文案的成品表达，用户来这里挑的是社交分享图的视觉方案，因此归品牌、编辑与海报案例。",
+        "evidenceUrl": "https://www.ogimage.gallery/"
+      },
+      {
+        "statement": "站点性质是人工挑选的集合（标题自称 The finest hand-picked OG Images），不是可下载的素材库，因此不归视觉素材类。",
+        "evidenceUrl": "https://www.ogimage.gallery/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:40:48.479Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "marketing"
+    ],
+    "deliverables": [
+      "case-screenshot"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "submit"
+    ],
+    "media": [
+      "image",
+      "motion",
+      "typography"
+    ],
+    "platforms": [
+      "browser-extension",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "ideation",
+      "publish"
+    ],
+    "audiences": [
+      "brand-team",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ogimage.gallery",
+      "finalUrl": "https://www.ogimage.gallery/",
+      "title": "OGimage.gallery | The finest hand-picked OG Images ✨",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ogimage-gallery/identity.jpg",
+        "sha256": "11da5737d3bc676ad12931cd01ba1898f74f5466a99fd2adf7ec1a9cbe7ebc1f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 169954,
+        "alt": "OGimage.gallery 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "categories",
+      "value": "All、Animated、App、Arts & Culture、Creative、Dynamic、Finance、Food、Health、Portfolios、Resources、SaaS、Stores，另有 By Site 与 Deck Gallery 两个视图",
+      "sourceUrl": "https://www.ogimage.gallery/",
+      "evidence": "顶部分类条与 /category/…、/sites 路径",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://www.ogimage.gallery/",
+      "evidence": "页面没有定价或登录入口；页脚写明 Cookies are not set and no personal data is collected. Just a website in the Internets™",
+      "confidence": 0.8
+    },
+    {
+      "field": "extension",
+      "value": "提供浏览器 Extension，导航另有 Resources 与 Submit",
+      "sourceUrl": "https://www.ogimage.gallery/",
+      "evidence": "live.navLabels: OGimage.gallery / Extension / Resources / About / Submit",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/ogimage-gallery",
+    "designMdUrl": "https://vislexicon.com/site/ogimage-gallery.md",
+    "checkedAt": "2026-09-15T10:40:48.479Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e27550f7d2810c378191eb26513c57fefc190117817fc47f5463bab29ddded82",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "primer-style-css",
+  "entityId": "entity-primer-style-css",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://primer.style/css",
+    "finalUrl": "https://primer.style/css/storybook/?path=/docs/introduction--docs",
+    "checkedAt": "2026-09-15T11:48:53.578Z"
+  },
+  "editorial": {
+    "name": "Primer CSS",
+    "descriptionZh": "GitHub Primer 设计系统里的 CSS 层，以 @primer/css 发布，在 Storybook 里按 UTILITIES、DEPRECATED、PRINCIPLES、SUPPORT 分栏列出工具类与旧组件。给不引入 React 也要用 Primer 视觉的页面。",
+    "takeawayZh": "不装 React，只用 @primer/css 的类名和旧组件",
+    "noteZh": "/css 这条入口被重定向到 /css/storybook 的 Introduction，画布这次没渲染出内容，只能看到 Storybook 侧栏：顶上是 @primer/css@22.3.1 和一个 Find components 搜索框，第一项 Introduction 下面跟着 Contributing、GettingStarted。内容分成四段——UTILITIES 里放 Marketing、Animation、Border、Color、Flexbox、Grid、Layout、Margin、Padding、Shadow、Typography；DEPRECATED 里是 Button、Forms、Header、SideNav、SubNav、Toast、Tooltip、IssueLabel 这批老组件；PRINCIPLES 收 Accessibility、HTML、SCSS；SUPPORT 收 Breakpoints、Deprecations、Linting、Prototyping、Spacing、Theming。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可引用的 CSS 工具类与样式化组件（Button、Forms、SideNav 等），用户装 @primer/css 后靠类名拼界面，所以归到通用界面组件库。",
+        "evidenceUrl": "https://primer.style/css/storybook/?path=/docs/introduction--docs"
+      },
+      {
+        "statement": "Storybook 侧栏以包名 @primer/css 加版本号 @22.3.1 作标题，内容按 UTILITIES / DEPRECATED / PRINCIPLES / SUPPORT 四段组织。",
+        "evidenceUrl": "https://primer.style/css/storybook/?path=/docs/introduction--docs"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:53.578Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "html"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://primer.style/css",
+      "finalUrl": "https://primer.style/css/storybook/?path=/docs/introduction--docs",
+      "title": "Introduction - Docs ⋅ Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/primer-style-css/identity.jpg",
+        "sha256": "54f224f757e8b0c6ea42dd06ec1142f333cbfffbf0e8098feff4f5372512c084",
+        "width": 1280,
+        "height": 900,
+        "bytes": 39576,
+        "alt": "Primer CSS 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "package",
+      "value": "@primer/css@22.3.1",
+      "sourceUrl": "https://primer.style/css/storybook/?path=/docs/introduction--docs",
+      "evidence": "Storybook 侧栏左上角的包名与版本号",
+      "confidence": 1
+    },
+    {
+      "field": "utilities",
+      "value": "Marketing、Animation、Border、Color、Details、Flexbox、Grid、Layout、Margin、Padding、Shadow、Typography",
+      "sourceUrl": "https://primer.style/css/storybook/?path=/docs/introduction--docs",
+      "evidence": "侧栏 UTILITIES 分组",
+      "confidence": 1
+    },
+    {
+      "field": "deprecated",
+      "value": "BoxOverlay、BranchName、Button、FilterList、Forms、Header、IssueLabel、Loaders、Marketing、Pagination、SelectMenu、SideNav、SubNav、Toast、Tooltip、Markdown 被划在 DEPRECATED 段下",
+      "sourceUrl": "https://primer.style/css/storybook/?path=/docs/introduction--docs",
+      "evidence": "侧栏 DEPRECATED 分组",
+      "confidence": 1
+    },
+    {
+      "field": "principlesSupport",
+      "value": "PRINCIPLES 收 Accessibility、HTML、Principles、SCSS；SUPPORT 收 Breakpoints、Deprecations、Linting、Prototyping、Spacing、Theming、Typography",
+      "sourceUrl": "https://primer.style/css/storybook/?path=/docs/introduction--docs",
+      "evidence": "侧栏 PRINCIPLES 与 SUPPORT 两段",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://primer.style/css/storybook/?path=/docs/introduction--docs",
+      "evidence": "Storybook 内没有任何定价信息",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/primer-style-css",
+    "designMdUrl": "https://vislexicon.com/site/primer-style-css.md",
+    "checkedAt": "2026-09-15T11:48:53.578Z",
+    "license": "unknown"
+  }
+}

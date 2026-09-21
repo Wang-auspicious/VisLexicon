@@ -1,0 +1,180 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "606ec1c1bb2df641f8b9388b33c490e1220d6edcd818102c7640b4ec2f4919de",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "webdesign-inspiration-com",
+  "entityId": "entity-webdesign-inspiration-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "webdesign-inspiration.com",
+  "official": {
+    "inputUrl": "https://webdesign-inspiration.com",
+    "finalUrl": "https://www.webdesign-inspiration.com/",
+    "checkedAt": "2026-09-15T11:35:45.797Z"
+  },
+  "editorial": {
+    "name": "Web Design Inspiration",
+    "descriptionZh": "每天更新的免费网页设计灵感库，把真实网站按类型、颜色、行业、风格四套维度归档，另有一个可叠加条件的 Filter tool。导航只有 Inspirations、Editor's Picks、Reviews、Blog 四段。",
+    "takeawayZh": "蓝绿顶栏配四套分类维度的灵感画廊",
+    "noteZh": "首屏顶上一条青绿色横栏，左边 WEBDESIGN INSPIRATION，右边 Inspirations、Editor's Picks、Reviews、Blog 加一个 Log in。下面两行大标题 Web Design Inspiration: Stay ahead with fresh web design ideas. Updated every day.，正文自述是 free inspiration gallery 并给了注册入口。左下角浮出一个深色广告盒 Need custom services?，列 PPC Services、SEO Experts、Tag Manager Setup、Looker Studio Dashboards、GA4 Set-up、CMP Installation，配一枚 Get a quotation now!。抓到这一屏时标题下方的 Latest Website Designs Ideas and Inspirations 名单区还没渲染出来，横线以下整片空白；HTTP 阶段拿到的是 Cloudflare 的 Just a moment... 页。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "case-inspiration-collections",
+    "subcategory": "website-landing-page-cases",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个个真实网站的缩略图配 VISIT WEBSITE 外链，按 categories 与 styles 归类浏览，属于网站与落地页案例。",
+        "evidenceUrl": "https://webdesign-inspiration.com/"
+      },
+      {
+        "statement": "站内 /web-designs/type/*、/web-designs/industry/*、/web-designs/style/* 三套分类路径加 /filter-tool，形态是案例画廊而不是工具或素材目录。",
+        "evidenceUrl": "https://webdesign-inspiration.com/filter-tool"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:35:45.797Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce",
+      "saas"
+    ],
+    "deliverables": [
+      "case-screenshot"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "compare"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "discovery"
+    ],
+    "audiences": [
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery",
+      "searchable-directory"
+    ],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://webdesign-inspiration.com",
+      "finalUrl": "https://www.webdesign-inspiration.com/",
+      "title": "Web Design Inspiration : The Best Website Design Ideas",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/webdesign-inspiration-com/identity.jpg",
+        "sha256": "52e59258232508b7a3acdf0195debf244fa8731391ed4c63d245214b27c0b79b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84513,
+        "alt": "Web Design Inspiration 首屏：Web Design Inspiration: Stay ahead with fresh web design ide"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://webdesign-inspiration.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/webdesign-inspiration-com/identity.jpg",
+          "alt": "Web Design Inspiration 首屏：Web Design Inspiration: Stay ahead with fresh web design ide",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "httpStatus",
+      "value": "HTTP 阶段返回 403 与 Just a moment... 拦截页",
+      "sourceUrl": "https://webdesign-inspiration.com/",
+      "evidence": "简报 http.status 为 403、http.title 为 Just a moment...，浏览器渲染后才见到正文",
+      "confidence": 1
+    },
+    {
+      "field": "freeGallery",
+      "value": "自称 free inspiration gallery，注册后可收藏整理喜欢的网站",
+      "sourceUrl": "https://webdesign-inspiration.com/",
+      "evidence": "首屏正文段与 Get a free account 一句",
+      "confidence": 1
+    },
+    {
+      "field": "taxonomy",
+      "value": "Website type（Corporate、ecommerce、Event、Mobile app、Portfolio、Product、Web service）、颜色、行业、风格（Minimalist、Retro、Video Background 等）",
+      "sourceUrl": "https://webdesign-inspiration.com/",
+      "evidence": "首屏分类区的四组标签与 internalPaths 里的 /web-designs/* 路径",
+      "confidence": 1
+    },
+    {
+      "field": "filterTool",
+      "value": "Filter web designs with a combination of categories ! Try our Filter tool",
+      "sourceUrl": "https://webdesign-inspiration.com/filter-tool",
+      "evidence": "首屏分类列表下方的提示句",
+      "confidence": 0.9
+    },
+    {
+      "field": "localization",
+      "value": "另有 /fr 本地化路径",
+      "sourceUrl": "https://webdesign-inspiration.com/",
+      "evidence": "internalPaths 列表末项 /fr",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/webdesign-inspiration-com.md",
+  "registryUrl": "/r/webdesign-inspiration-com.json"
+}

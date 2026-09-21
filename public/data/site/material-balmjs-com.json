@@ -1,0 +1,184 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4c6605ab508fa58425c20220def88f29b7844d0f0bd88c985f5c3b9617881658",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "material-balmjs-com",
+  "entityId": "entity-material-balmjs-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "material.balmjs.com",
+  "official": {
+    "inputUrl": "https://material.balmjs.com",
+    "finalUrl": "https://material.balmjs.com/",
+    "checkedAt": "2026-09-15T11:56:10.875Z"
+  },
+  "editorial": {
+    "name": "BalmUI",
+    "descriptionZh": "基于 Google Material Design 与 Vue 3 的组件库，组件按 Styles、Actions、Containment、Navigation 等用途分类，官方称可模块化取用。站点顶栏另挂了一个 PRO 入口。",
+    "takeawayZh": "挑 BalmUI 的 Vue 3 Material 组件",
+    "noteZh": "首屏是一块紫色顶栏加一条左栏目录，顶栏只有 BalmUI 字样、PRO 链接和三个图标。左栏 Guide 段是 Introduction / Quick Start / Advanced Usage / TypeScript Support / Kill IE / Upgrade Guide，往下 Styles 段列出 Color / Elevation / Icons / Shape / Typography，Actions 段是 Common Buttons / Floating Action Buttons / Icon Buttons / Segmented Buttons。中间大标题写 BalmUI for Vue3，下面一句 Build beautiful products, faster for Vue.js，配一个 GET STARTED 紫色按钮。整份目录还含 Communication、Containment、Navigation、Selection、Form、Text Inputs、Misc 几段，组件页路径如 /containment/card、/navigation/tabs。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是可直接装进 Vue 3 项目的 Material 风格界面组件（按钮、进度、卡片、表格、日期选择器等一整套），属于通用界面组件库而非设计系统治理或模板。",
+        "evidenceUrl": "https://material.balmjs.com/"
+      },
+      {
+        "statement": "左栏目录按 Styles / Actions / Communication / Containment 等用途列出组件页，正文自述是 A modular and customizable UI library based on Material Design and Vue 3。",
+        "evidenceUrl": "https://material.balmjs.com/guide/introduction"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:56:10.875Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://material.balmjs.com",
+      "finalUrl": "https://material.balmjs.com/",
+      "title": "BalmUI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/material-balmjs-com/identity.jpg",
+        "sha256": "f3d4a04b300fba01058d1ad0dabab3f96ee12cb7840204fbed98a8248079eb8f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 48366,
+        "alt": "BalmUI 首屏：BalmUI for Vue3"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://material.balmjs.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/material-balmjs-com/identity.jpg",
+          "alt": "BalmUI 首屏：BalmUI for Vue3",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "version",
+      "value": "10.31.1",
+      "sourceUrl": "https://material.balmjs.com/",
+      "evidence": "左栏 Guide v 10.31.1 与正文 BalmUI v 10.31.1 / Guide v 10.31.1 两处标注",
+      "confidence": 1
+    },
+    {
+      "field": "designSystem",
+      "value": "Google Material 设计体系，官方描述为 a modular and customizable UI library based on Material Design and Vue 3",
+      "sourceUrl": "https://material.balmjs.com/",
+      "evidence": "页面 description 与首屏副标题 BalmUI is a Google Material design system - backed by open-source code",
+      "confidence": 1
+    },
+    {
+      "field": "componentGroups",
+      "value": "Styles、Actions、Communication、Containment、Navigation、Selection、Form、Text Inputs、Misc、Utils",
+      "sourceUrl": "https://material.balmjs.com/",
+      "evidence": "左栏目录分组标题，另见 /containment/card、/navigation/tabs、/selection/chips 等路径",
+      "confidence": 1
+    },
+    {
+      "field": "commercial",
+      "value": "顶栏有 PRO 入口，页面未给出价格",
+      "sourceUrl": "https://material.balmjs.com/",
+      "evidence": "首屏右上角 PRO 链接，全站看不到定价页",
+      "confidence": 0.8
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://material.balmjs.com/",
+      "evidence": "页面上没有定价页或付费说明",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/material-balmjs-com.md",
+  "registryUrl": "/r/material-balmjs-com.json"
+}

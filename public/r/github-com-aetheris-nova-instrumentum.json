@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5ad6963c0562bde34dc043c9ede0b5f18476981fb59b13e38a0a37661ea324a7",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-aetheris-nova-instrumentum",
+  "entityId": "entity-github-com-aetheris-nova-instrumentum",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/aetheris-nova/instrumentum",
+    "finalUrl": "https://github.com/aetheris-nova/instrumentum",
+    "checkedAt": "2026-09-15T11:36:09.412Z"
+  },
+  "editorial": {
+    "name": "aetheris-nova/instrumentum",
+    "descriptionZh": "一个 pnpm monorepo，账号给它套了个 Ordo Aedificatorum 的世界观，实际装的是 ui-components、utils、types 三套分包代码。仓库铺了 semantic-release、husky、commitlint、lint-staged 一整套发版流水线。",
+    "takeawayZh": "照它的 pnpm monorepo 分包与发版配置",
+    "noteZh": "About 一栏直接把 README 开头搬了上来：The Instrumentum is a collection of sacred tools wielded by the Ordo Aedificatorum, a grand monolithic repository of arcane tools and blessed scripts through which they manifest their works.。文件树里 packages 是唯一代码目录，另有 .husky、.github、images 和 prettier.config.mjs、commitlint.config.ts、pnpm-workspace.yaml、pnpm-lock.yaml 这些配置。README 的 1.1 Monorepo project structure 画出了 packages/<package> 里每个包自带 LICENSE、README.md、release.config.mjs 与 .lintstagedrc.mjs，根 package.json 负责 pnpm workspace。提交信息里出现过 feat: add ui components, utils and types packages (#1) 和 feat(ui-components): add list item component (#11)，Releases 37 个、最新是 @aetherisnova/utils-v1.3.0，Contributors 只有 kieranroneill。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库是 monorepo，packages 下同时有 ui-components、utils、types 三套包，其中只有 ui-components 属于组件；按「最直接能拿走的」取 ui-components，归通用界面组件库，但这个归类只覆盖了三包里的一个，把握中等。",
+        "evidenceUrl": "https://github.com/aetheris-nova/instrumentum"
+      },
+      {
+        "statement": "另一条可能的路子是 build-deploy-dev-workflow（仓库大半配置是 semantic-release 与 lint-staged 流水线），最终仍以 packages 里的组件包为准。",
+        "evidenceUrl": "https://github.com/aetheris-nova/instrumentum"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:36:09.412Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/aetheris-nova/instrumentum",
+      "finalUrl": "https://github.com/aetheris-nova/instrumentum",
+      "title": "GitHub - aetheris-nova/instrumentum: The Instrumentum is a collection of sacred tools wielded by the Ordo Aedificatorum, a grand monolithic repository of arcane tools and blessed scripts through which they manifest their works. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-aetheris-nova-instrumentum/identity.jpg",
+        "sha256": "a129dbf253de0c2299cffa23bba08653aa4dc4eb72688e6e2939913bb0406656",
+        "width": 1280,
+        "height": 900,
+        "bytes": 141682,
+        "alt": "aetheris-nova/instrumentum 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "readmeOpening",
+      "value": "The Instrumentum is a collection of sacred tools wielded by the Ordo Aedificatorum…",
+      "sourceUrl": "https://github.com/aetheris-nova/instrumentum",
+      "evidence": "README 首段，About 栏复述了同一句",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "ui-components、utils、types",
+      "sourceUrl": "https://github.com/aetheris-nova/instrumentum",
+      "evidence": "提交说明 feat: add ui components, utils and types packages (#1)，以及 Releases 里的 @aetherisnova/utils-v1.3.0",
+      "confidence": 1
+    },
+    {
+      "field": "releaseTooling",
+      "value": "semantic-release（包目录下的 release.config.mjs）、husky、commitlint、lint-staged",
+      "sourceUrl": "https://github.com/aetheris-nova/instrumentum",
+      "evidence": "README 1.1 与文件树里的 .lintstagedrc.mjs、commitlint.config.ts、.husky",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "61 Commits、2 Branches、37 Tags、1 Contributor",
+      "sourceUrl": "https://github.com/aetheris-nova/instrumentum",
+      "evidence": "Code 页头部与右侧 Releases、Contributors",
+      "confidence": 1
+    },
+    {
+      "field": "workspace",
+      "value": "根 package.json 用 pnpm workspace，pnpm-workspace.yaml 与 pnpm-lock.yaml 在根目录",
+      "sourceUrl": "https://github.com/aetheris-nova/instrumentum",
+      "evidence": "README 的 Root package.json 一节与文件树",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-aetheris-nova-instrumentum",
+    "designMdUrl": "https://vislexicon.com/site/github-com-aetheris-nova-instrumentum.md",
+    "checkedAt": "2026-09-15T11:36:09.412Z",
+    "license": "unknown"
+  }
+}

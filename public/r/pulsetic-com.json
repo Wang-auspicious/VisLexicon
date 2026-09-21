@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8ee86a9c5aae7a8f8848783f6bb5f43266634b440d13dfe34dfec73634e677cd",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "pulsetic-com",
+  "entityId": "entity-pulsetic-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://pulsetic.com",
+    "finalUrl": "https://pulsetic.com/",
+    "checkedAt": "2026-09-15T11:17:12.562Z"
+  },
+  "editorial": {
+    "name": "Pulsetic",
+    "descriptionZh": "网站在线率监控服务首页，主打每 30 秒一次的检查、多地域复核后再报警、自带域名与配色的状态页，以及一个永久免费的 10 监控档。",
+    "takeawayZh": "看监控 SaaS 怎么把「误报」讲成首屏卖点",
+    "noteZh": "白底大标题 Website uptime monitoring，右侧直接摆出产品后台截图：左侧栏是 Monitors、Heartbeats、RUM、Domains、Status Pages、Status Badges、Incidents，右边一张 Response Time, ms 折线图与 Pulsetic Online 徽标。正文三段各配一句反常识小标题：One failed check is not an outage、The alert that gets through at 3am、Point people at a page, not your inbox。按钮下面写着 Free forever. 10 monitors, 3 status pages with your own domain。导航的 MONITORING 菜单把 Website Monitoring、RUM、SSL Monitoring、Ping Monitoring、Port Monitoring、Cron Monitoring、API Monitoring、SLA Monitoring 一路排到 Monitor Screenshots 和 Annotations。",
+    "recommendation": null,
+    "pricing": "Freemium；Free forever 10 monitors，付费档 Solo / Team 在 /pricing",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是订阅制在线率监控服务，首页给的是自家 dashboard 截图与免费档数字，无可复制的设计产物；同类站点 Better Stack 在库里也归 product-company-sites。",
+        "evidenceUrl": "https://pulsetic.com/pricing"
+      },
+      {
+        "statement": "首页用多张后台界面与状态页样例当主视觉，价值在监控产品的营销页写法。",
+        "evidenceUrl": "https://pulsetic.com/status-pages"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:17:12.562Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "agent"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "preview",
+      "compare"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web",
+      "api",
+      "mcp"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://pulsetic.com",
+      "finalUrl": "https://pulsetic.com/",
+      "title": "Free Website Uptime Monitoring - Pulsetic",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pulsetic-com/identity.jpg",
+        "sha256": "3a91cca1383986ee2091aaba359d28e559d646a34449598b0645c8c63a3f2789",
+        "width": 1280,
+        "height": 900,
+        "bytes": 94600,
+        "alt": "Pulsetic 首屏：Website uptime monitoring"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "freeTier",
+      "value": "Free forever. 10 monitors, 3 status pages with your own domain. No credit card, seriously.",
+      "sourceUrl": "https://pulsetic.com/pricing",
+      "evidence": "首屏 Start monitoring for free 按钮下方的一段小字",
+      "confidence": 1
+    },
+    {
+      "field": "checkInterval",
+      "value": "Checks run as often as every 30 seconds，一次失败会先从其他地域复核再报警",
+      "sourceUrl": "https://pulsetic.com/",
+      "evidence": "首屏正文与 One failed check is not an outage 一段",
+      "confidence": 1
+    },
+    {
+      "field": "alertChannels",
+      "value": "EMAIL、SMS、CALLS、TELEGRAM、TWILIO、DISCORD、SLACK、MS TEAMS、ZAPIER、API",
+      "sourceUrl": "https://pulsetic.com/",
+      "evidence": "The alert that gets through at 3am 一段末尾的渠道列表",
+      "confidence": 1
+    },
+    {
+      "field": "monitorTypes",
+      "value": "Website、RUM、SSL、Ping、Port、Domain、TCP、Keyword、Cron、API、SLA 共 11 类监控入口",
+      "sourceUrl": "https://pulsetic.com/website-monitoring",
+      "evidence": "顶部 MONITORING 下拉与页脚 Monitoring 分组",
+      "confidence": 1
+    },
+    {
+      "field": "rating",
+      "value": "4.8/5 on G2（225 reviews）",
+      "sourceUrl": "https://pulsetic.com/",
+      "evidence": "Trusted by teams at companies around the world 一行下方",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium；Free forever 10 monitors，付费档 Solo / Team 在 /pricing。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/pulsetic-com",
+    "designMdUrl": "https://vislexicon.com/site/pulsetic-com.md",
+    "checkedAt": "2026-09-15T11:17:12.562Z",
+    "license": "unknown"
+  }
+}

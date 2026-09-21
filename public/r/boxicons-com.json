@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8974b9d0c83df654d0acecf55915ab4d268866389fcc9f39ef4317f9b1789d7e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "boxicons-com",
+  "entityId": "entity-boxicons-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://boxicons.com",
+    "finalUrl": "https://boxicons.com/",
+    "checkedAt": "2026-09-15T12:49:37.093Z"
+  },
+  "editorial": {
+    "name": "Boxicons",
+    "descriptionZh": "一个图标库，免费档和 Pro 档并存，提供 SVG、图标字体、React 包以及 Figma、Framer 插件。",
+    "takeawayZh": "挑图标后导出 SVG 或字体，也可以走 npm 装 React 包",
+    "noteZh": "首屏基本是空的：最上面一条横幅写 Boxicons v4 is almost here — more packs, styles, weights & built-in tools. Get Pro →，第二行是 Boxicons 标志加 Icons / Free Icons / Docs / Pricing / Integrations，右侧 Log In 与 Sign Up，正文区只有一个待机状态的图标轮廓占位图，图标列表没渲染出来。DOM 里的文案写着 Search 50k+ Icons Ctrl K、三种风格三种字重、五套图标包，分类从 Shapes、Writing & Reading 到 E-Commerce 一串，以及 npm i -g @boxicons/cli。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "icons-symbols",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "标题是 High Quality Web Icons，正文写五种图标包、三种风格三种字重，交付物是图标本体与图标字体，归图标与符号。",
+        "evidenceUrl": "https://boxicons.com/"
+      },
+      {
+        "statement": "导航单列 Free Icons 与 Pricing，站点描述写 3,500+ free icons 与 50,000+ Pro icon variations，是有付费档的图标库而非纯开源素材。",
+        "evidenceUrl": "https://boxicons.com/pricing"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:49:37.093Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "icon",
+      "font",
+      "component"
+    ],
+    "actions": [
+      "search",
+      "download",
+      "install",
+      "purchase"
+    ],
+    "media": [
+      "icon",
+      "font"
+    ],
+    "platforms": [
+      "web",
+      "figma",
+      "framer"
+    ],
+    "technologies": [
+      "react",
+      "vue",
+      "svelte",
+      "javascript",
+      "css",
+      "svg"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://boxicons.com",
+      "finalUrl": "https://boxicons.com/",
+      "title": "Boxicons - High Quality Web Icons",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/boxicons-com/identity.jpg",
+        "sha256": "e7a0e6d792fcc20fe472528f5931c019c651db1a61104011a635d190a927a387",
+        "width": 1280,
+        "height": 900,
+        "bytes": 37087,
+        "alt": "Boxicons 首屏：High Quality Web Ic o ns"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "iconCount",
+      "value": "免费 3,500+ 图标，Pro 50,000+ 变体",
+      "sourceUrl": "https://boxicons.com/",
+      "evidence": "站点描述写 Access 50,000+ Pro icon variations and 3,500+ free icons",
+      "confidence": 1
+    },
+    {
+      "field": "integrations",
+      "value": "Figma、Framer 插件，图标字体 CSS 动画，npm 包（React / Vue / Svelte / JavaScript）",
+      "sourceUrl": "https://boxicons.com/",
+      "evidence": "正文 Use Boxicons in Figma, Framer, as icon fonts with CSS animations, or via NPM for React, Vue, Svelte, and JavaScript.",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "免费档加 Pro 付费档",
+      "sourceUrl": "https://boxicons.com/pricing",
+      "evidence": "导航并排的 Free Icons 与 Pricing 两个入口，顶部横幅写 Get Pro",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/boxicons-com",
+    "designMdUrl": "https://vislexicon.com/site/boxicons-com.md",
+    "checkedAt": "2026-09-15T12:49:37.093Z",
+    "license": "unknown"
+  }
+}

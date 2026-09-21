@@ -1,0 +1,163 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "6e678c8c5603e8252ab17cf2fc304e6101d28396638ef0e19e8645bd70d7f1ad",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-styled-components-stylis-plugin-rtl",
+  "entityId": "entity-github-com-styled-components-stylis-plugin-rtl",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/styled-components/stylis-plugin-rtl",
+    "finalUrl": "https://github.com/styled-components/stylis-plugin-rtl",
+    "checkedAt": "2026-09-15T12:08:35.068Z"
+  },
+  "editorial": {
+    "name": "styled-components/stylis-plugin-rtl",
+    "descriptionZh": "基于 CSSJanus 的 stylis RTL 插件，把 styled-components 生成的 CSS 整体镜像成从右往左。给需要阿拉伯语、希伯来语等 RTL 版式的项目。",
+    "takeawayZh": "给 styled-components 的输出做 RTL 镜像翻转。",
+    "noteZh": "仓库名下面标着 forked from viodotcom/stylis-rtl，About 写 stylis RTL plugin based on CSSJanus，标签 css-in-js、cssjanus、rtl、styled-components、stylis 五个。README 开头的 NOTE 提醒 styled-components v5 必须用 v1（v2 是给升到 stylis v4 的库用的，目前只有 emotion 11）。它还讲了一个坑：压缩会删注释，所以 /* @noflip */ 要写成 /*! @noflip */，或者干脆把 minify 关掉。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一段接进样式生成链的插件代码（yarn add stylis-plugin-rtl），用户拿走的是 RTL 能力而不是图标或模板，归 ui-implementation/general-ui-components。",
+        "evidenceUrl": "https://github.com/styled-components/stylis-plugin-rtl"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:35.068Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/styled-components/stylis-plugin-rtl",
+      "finalUrl": "https://github.com/styled-components/stylis-plugin-rtl",
+      "title": "GitHub - styled-components/stylis-plugin-rtl: ↔️ stylis RTL plugin based on CSSJanus · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-styled-components-stylis-plugin-rtl/identity.jpg",
+        "sha256": "257cf2ba52791b9ef79895826eb15d9716f41f15d5a906ea6bde263c7bfb35e3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 118213,
+        "alt": "styled-components/stylis-plugin-rtl 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/styled-components/stylis-plugin-rtl",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-styled-components-stylis-plugin-rtl/identity.jpg",
+          "alt": "styled-components/stylis-plugin-rtl 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/styled-components/stylis-plugin-rtl",
+      "evidence": "About 栏的 MIT license 项与 README 顶部徽标",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "v1 用 yarn add stylis-plugin-rtl@^1；v2 用 yarn add stylis-plugin-rtl stylis",
+      "sourceUrl": "https://github.com/styled-components/stylis-plugin-rtl",
+      "evidence": "README Installation 一节",
+      "confidence": 1
+    },
+    {
+      "field": "caveat",
+      "value": "压缩会移除注释，因此 @noflip 必须写成 /*! @noflip */，否则要在 .babelrc 里把 minify 设为 false",
+      "sourceUrl": "https://github.com/styled-components/stylis-plugin-rtl",
+      "evidence": "README 的 NOTE: Preventing flipping 一段",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "37 stars / 17 forks / 37 commits / Releases 6，最新 v2.1.1，Used by 34K",
+      "sourceUrl": "https://github.com/styled-components/stylis-plugin-rtl",
+      "evidence": "页面顶部仓库栏与右侧 About、Releases 区",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-styled-components-stylis-plugin-rtl.md",
+  "registryUrl": "/r/github-com-styled-components-stylis-plugin-rtl.json"
+}

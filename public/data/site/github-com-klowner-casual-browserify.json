@@ -1,0 +1,158 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b4f65f76599ead222d145cb4ee8bbea9e0f095c765cb6a0d9eaacbec8b35e7d9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-klowner-casual-browserify",
+  "entityId": "entity-github-com-klowner-casual-browserify",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/klowner/casual-browserify",
+    "finalUrl": "https://github.com/klowner/casual-browserify",
+    "checkedAt": "2026-09-15T12:50:08.400Z"
+  },
+  "editorial": {
+    "name": "Klowner/casual-browserify",
+    "descriptionZh": "把假数据生成库 casual 改造成 Browserify 友好的分支，用静态 require() 换掉懒加载。",
+    "takeawayZh": "在打包器里直接 require，生成人名、城市、句子等假数据",
+    "noteZh": "About 写着 Fake data generator for javascript with terrible hacks to make it Browserify friendly，页面顶部标着 fork 自 boo1ean/casual，并写明这条分支领先 46 个提交、落后 32 个提交；Languages 一栏是 JavaScript 100%，16 星、6 个 fork。README 说这个分支的目的就是改成静态 require() 让它跟 Browserify 处得来，副作用是去掉了懒加载，并提醒多数情况下还是该用上游的 casual。用法给的是 casual.sentence、casual.city 这种属性式取值，还有 casual.define 自定义生成器，后面按 Address 等分组列内置生成器，多语言条目放在 locales.md。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 写 The purpose of this branch is include static require() calls in order to work more happily with Browserify，是为打包流程做的 fork，服务构建工具链。",
+        "evidenceUrl": "https://github.com/Klowner/casual-browserify"
+      },
+      {
+        "statement": "交付物是一个 npm 包，用来在开发与测试时生成假数据，属开发工具而非界面组件。",
+        "evidenceUrl": "https://github.com/Klowner/casual-browserify"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:50:08.400Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/klowner/casual-browserify",
+      "finalUrl": "https://github.com/klowner/casual-browserify",
+      "title": "GitHub - Klowner/casual-browserify: Fake data generator for javascript with terrible hacks to make it Browserify friendly · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-klowner-casual-browserify/identity.jpg",
+        "sha256": "6259ec1c399f9c91c84c58ed3213d516954570791737aa2198d29d53b09fc710",
+        "width": 1280,
+        "height": 900,
+        "bytes": 106895,
+        "alt": "Klowner/casual-browserify 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/klowner/casual-browserify",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-klowner-casual-browserify/identity.jpg",
+          "alt": "Klowner/casual-browserify 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "usage",
+      "value": "casual.sentence / casual.city 属性式取值，casual.define 可自定义生成器",
+      "sourceUrl": "https://github.com/Klowner/casual-browserify",
+      "evidence": "README Usage 一节的示例代码与注释",
+      "confidence": 1
+    },
+    {
+      "field": "difference",
+      "value": "改用静态 require()，移除懒加载，为 Browserify 服务",
+      "sourceUrl": "https://github.com/Klowner/casual-browserify",
+      "evidence": "README Description 一段：As a side effect, the lazy-loading functionality is removed",
+      "confidence": 1
+    },
+    {
+      "field": "upstream",
+      "value": "fork 自 boo1ean/casual，领先 46 个提交、落后 32 个",
+      "sourceUrl": "https://github.com/Klowner/casual-browserify",
+      "evidence": "页面上方的 This branch is 46 commits ahead of and 32 commits behind boo1ean/casual:master.",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-klowner-casual-browserify.md",
+  "registryUrl": "/r/github-com-klowner-casual-browserify.json"
+}

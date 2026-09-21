@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a7a251a7653a4bd155f2f0c1422ca65447c4a38b02e1dc31114c35c980d9932c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "demo-tracetail-io-angular",
+  "entityId": "entity-demo-tracetail-io-angular",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://demo.tracetail.io/angular",
+    "finalUrl": "https://demo.tracetail.io/angular",
+    "checkedAt": "2026-09-15T11:53:30.144Z"
+  },
+  "editorial": {
+    "name": "TraceTail Angular Demo",
+    "descriptionZh": "TraceTail 的 @tracetail/angular 包演示页，页面上跑一次浏览器指纹识别并回显 visitorId、confidence、processingTime。下面接 SDK Resources 两块入口和一段 Angular 组件、Service 的示例代码。",
+    "takeawayZh": "抄 TraceTailService 那段，接进 Angular",
+    "noteZh": "顶部浅色 header 左边是指纹图标加 TraceTail Code Examples，副标题 @tracetail/angular package guide，右边 Back to Main Site →。页面正中一枚红色 pill 写 Angular Live Demo，大标题 Experience 99.5% Accuracy Fingerprinting，其中 99.5% 单独标成蓝色。下面一条黄色提示条正在 Generating fingerprint...，右端跟一个同义的 Generating... 按钮。再往下 SDK Resources 一张卡里并排两块入口：NPM Package @tracetail/angular 与 Documentation Full API reference。最底部是深色 Installation 代码块，角标 BASH、右上角 Copy，里面列 npm install / yarn add / pnpm add @tracetail/angular 三种写法，再往下是完整组件与 Service Pattern (Recommended) 两段 TypeScript。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是一段可直接抄进项目的 SDK 接入代码（Installation 命令块、组件示例、Service Pattern 段），用户动作是 copy 与 install，所以归到开发交付工具一类；候选池给的「Angular UI 库」与实际内容不符——页面上没有一个 UI 组件，只有指纹识别的 service。",
+        "evidenceUrl": "https://demo.tracetail.io/angular"
+      },
+      {
+        "statement": "这两个类都不完美：底层产品是访客识别分析（也可算行为分析），但站在这个页面上的动作是把 SDK 接进 Angular 应用，我按「最直接能拿走什么」选了开发工作流这一类。",
+        "evidenceUrl": "https://demo.tracetail.io/angular"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:53:30.144Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "copy",
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://demo.tracetail.io/angular",
+      "finalUrl": "https://demo.tracetail.io/angular",
+      "title": "TraceTail Angular Demo - Code Examples",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/demo-tracetail-io-angular/identity.jpg",
+        "sha256": "79d0b0cd39e397faa9c71f64b87f4f14e4378408f73f09d47b902ee138b741b1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 74239,
+        "alt": "TraceTail Angular Demo 首屏：TraceTail Code Examples"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm install @tracetail/angular（或 yarn add / pnpm add）",
+      "sourceUrl": "https://demo.tracetail.io/angular",
+      "evidence": "页面底部 Installation 代码块，角标标着 BASH，三种包管理器写法并列",
+      "confidence": 1
+    },
+    {
+      "field": "demoOutput",
+      "value": "visitorId、confidence（按百分比两位小数）、processingTime（毫秒），另有 Regenerate 按钮",
+      "sourceUrl": "https://demo.tracetail.io/angular",
+      "evidence": "组件示例模板里 <p>Visitor ID: {{ fingerprint.visitorId }}</p> 等几行绑定",
+      "confidence": 0.9
+    },
+    {
+      "field": "claim",
+      "value": "页面标题自称 99.5% Accuracy Fingerprinting",
+      "sourceUrl": "https://demo.tracetail.io/angular",
+      "evidence": "首屏大标题 Experience 99.5% Accuracy Fingerprinting 与下方一句说明",
+      "confidence": 1
+    },
+    {
+      "field": "siblingDemos",
+      "value": "同一套示例还有 /js 与 /vue 两个框架版本",
+      "sourceUrl": "https://demo.tracetail.io/angular",
+      "evidence": "站内路径只有 /、/js、/vue 三条，页头也写 Back to Main Site",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/demo-tracetail-io-angular",
+    "designMdUrl": "https://vislexicon.com/site/demo-tracetail-io-angular.md",
+    "checkedAt": "2026-09-15T11:53:30.144Z",
+    "license": "unknown"
+  }
+}

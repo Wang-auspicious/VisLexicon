@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4fa5ae76c3fc7aa833f047b4fd34f3823032996435cedb647ee189c9252d66f2",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "weavy-ai",
+  "entityId": "entity-weavy-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://weavy.ai",
+    "finalUrl": "https://weave.figma.com/",
+    "checkedAt": "2026-09-15T10:35:27.819Z"
+  },
+  "editorial": {
+    "name": "Figma Weave",
+    "descriptionZh": "Figma Weave 是节点式的 AI 创作平台，把各家生成模型和专业修图工具串成可复用的工作流：在同一张图上做局部重绘、扩图、抠蒙版、放大、Z 深度提取和布光。它原是独立产品 Weavy，现已并入 Figma。",
+    "takeawayZh": "把多家 AI 模型与修图节点串成一条可复用工作流",
+    "noteZh": "首屏米色底，左上角一行大字 Figma Weave Artistic Intelligence，顶栏一条黑底横幅写 Weavy is now Figma Weave. Welcome to our new home at weave.figma.com，右上角一块黄色 Start Now 方块压住整个角。下方是一张画布截图，节点上分别标着 3D / RODIN 2.0、IMAGE / STABLE DIFFUSION、TEXT、IMAGE / FLUX PRO 1.1、VIDEO / MINIMAX VIDEO 与 COLOR REFERENCE。正文随后列出 Invert、Outpaint、Crop、Inpaint、Mask Extractor、Upscale、Z Depth Extractor、Image Describer、Channels、Painter、Relight 这一长串专业修图节点，并解释什么叫 Artistic Intelligence。",
+    "recommendation": null,
+    "pricing": "Freemium - 导航有 PRICING、COLLECTIVE、ENTERPRISE 三档，首页未列具体价格",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "核心产出是可控的图像合成：Layers, type, and blends 加 Inpaint、Outpaint、Upscale、Relight 等节点，属图像与版式创作工具。",
+        "evidenceUrl": "https://weave.figma.com/"
+      },
+      {
+        "statement": "画布上同时存在 3D 与 VIDEO 节点，也具备一定视频生成能力，但首屏与正文重心在图像合成与修图，故取图像侧。",
+        "evidenceUrl": "https://weave.figma.com/"
+      },
+      {
+        "statement": "品牌已从 weavy.ai 迁到 weave.figma.com，页面横幅明确写 Weavy is now Figma Weave，条目名按站点自称为 Figma Weave。",
+        "evidenceUrl": "https://weave.figma.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:35:27.819Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "image",
+      "video"
+    ],
+    "actions": [
+      "edit",
+      "export",
+      "generate"
+    ],
+    "media": [
+      "3d",
+      "image",
+      "video"
+    ],
+    "platforms": [
+      "figma",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "ideation"
+    ],
+    "audiences": [
+      "brand-team",
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "flow-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://weavy.ai",
+      "finalUrl": "https://weave.figma.com/",
+      "title": "Figma Weave | AI-Powered Design Workflows, Built for Creative Pros",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/weavy-ai/identity.jpg",
+        "sha256": "8ed97f37831c21f3126c9937d6dd513338662b7e4ad6dc39fd242cd02d132f18",
+        "width": 1280,
+        "height": 900,
+        "bytes": 100782,
+        "alt": "Figma Weave 首屏：Figma Weave"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "rebrand",
+      "value": "Weavy 并入 Figma，改名 Figma Weave，站点迁到 weave.figma.com",
+      "sourceUrl": "https://weave.figma.com/",
+      "evidence": "顶栏横幅原文 Weavy is now Figma Weave. Welcome to our new home at weave.figma.com。",
+      "confidence": 1
+    },
+    {
+      "field": "models",
+      "value": "一个节点式平台里接入 Google、Kling、OpenAI、Bytedance、Black Forest Labs、Runway、Luma、LTX、Wan、Grok、Recraft、Bria 等模型",
+      "sourceUrl": "https://weave.figma.com/",
+      "evidence": "Use all AI models, together at last 区块下方逐行列出的模型提供方名称。",
+      "confidence": 1
+    },
+    {
+      "field": "nodes",
+      "value": "内置 Invert、Outpaint、Crop、Inpaint、Mask Extractor、Upscale、Z Depth Extractor、Image Describer、Channels、Painter、Relight 等专业节点",
+      "sourceUrl": "https://weave.figma.com/",
+      "evidence": "With all the professional tools you rely on 区块的节点名清单。",
+      "confidence": 1
+    },
+    {
+      "field": "security",
+      "value": "页脚标注 SOC 2 Type II Certified",
+      "sourceUrl": "https://weave.figma.com/",
+      "evidence": "页脚 Resources 栏旁的 SOC 2 Type II Certified 一行。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium - 导航有 PRICING、COLLECTIVE、ENTERPRISE 三档，首页未列具体价格。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/weavy-ai",
+    "designMdUrl": "https://vislexicon.com/site/weavy-ai.md",
+    "checkedAt": "2026-09-15T10:35:27.819Z",
+    "license": "unknown"
+  }
+}

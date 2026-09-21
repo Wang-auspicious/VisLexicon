@@ -1,0 +1,157 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "abbcf153de6d158b7942eafb4d62ad00e96ac1b7119facf2760b03a4208dba33",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-demox-labs-miden-wallet-adapter",
+  "entityId": "entity-github-com-demox-labs-miden-wallet-adapter",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/demox-labs/miden-wallet-adapter",
+    "finalUrl": "https://github.com/0xMiden/wallet-adapter",
+    "checkedAt": "2026-09-15T11:40:20.725Z"
+  },
+  "editorial": {
+    "name": "0xMiden/wallet-adapter",
+    "descriptionZh": "Miden 链的模块化 TypeScript 钱包适配库，按包拆开，README 专门用一节讲 MidenFiSignerProvider 的用法。原地址 demox-labs/miden-wallet-adapter 现在跳到 0xMiden/wallet-adapter。",
+    "takeawayZh": "给 Miden 应用挂上钱包签名 Provider",
+    "noteZh": "README 分 Overview、Usage Pattern、MidenFiSignerProvider、Architecture & Structure、Wallet Adapters 五节，把适配器与签名器的关系拆开讲，并给了一张 Usage Pattern 的调用顺序。文件树是 yarn workspace 结构，examples、packages、util 三个目录，最近几条提交在改包元数据和 CHANGELOG（feat: rebrand to Bread Wallet and bump packages to 0.15.3）。MIT 许可，2 star、9 fork，一个 release 都没发。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是嵌进 React 应用的钱包连接与签名 Provider（README 单列 MidenFiSignerProvider 一节，提交记录里还有支持自定义账户组件），属可嵌入复合控件，归 page-blocks-embeddable-controls。",
+        "evidenceUrl": "https://github.com/0xMiden/wallet-adapter"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:40:20.725Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [],
+    "technologies": [
+      "typescript",
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/demox-labs/miden-wallet-adapter",
+      "finalUrl": "https://github.com/0xMiden/wallet-adapter",
+      "title": "GitHub - 0xMiden/wallet-adapter: Modular TypeScript wallet adapters and components for Miden applications. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-demox-labs-miden-wallet-adapter/identity.jpg",
+        "sha256": "2edba23100424f6a293b2ac4e5573b4412635425c21a87242d2f028128c8e96e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 142659,
+        "alt": "0xMiden/wallet-adapter 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/demox-labs/miden-wallet-adapter",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-demox-labs-miden-wallet-adapter/identity.jpg",
+          "alt": "0xMiden/wallet-adapter 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "licenses",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/0xMiden/wallet-adapter",
+      "evidence": "About 栏 MIT license，README 头部 Contributing | MIT license | Security",
+      "confidence": 1
+    },
+    {
+      "field": "keyApi",
+      "value": "MidenFiSignerProvider",
+      "sourceUrl": "https://github.com/0xMiden/wallet-adapter",
+      "evidence": "README 单列一节 MidenFiSignerProvider，另有提交 feat(react): Support custom account components",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "No releases published",
+      "sourceUrl": "https://github.com/0xMiden/wallet-adapter",
+      "evidence": "About 下方 Releases 区块写 No releases published",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-demox-labs-miden-wallet-adapter.md",
+  "registryUrl": "/r/github-com-demox-labs-miden-wallet-adapter.json"
+}

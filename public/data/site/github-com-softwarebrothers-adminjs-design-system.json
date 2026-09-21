@@ -1,0 +1,187 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c5f295b34fe72e8b43f6655a38eae2c105a9ce8090cf2e2244d3f42eb80af480",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-softwarebrothers-adminjs-design-system",
+  "entityId": "entity-github-com-softwarebrothers-adminjs-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+    "finalUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+    "checkedAt": "2026-09-15T11:36:05.489Z"
+  },
+  "editorial": {
+    "name": "SoftwareBrothers/adminjs-design-system",
+    "descriptionZh": "AdminJS 后台面板底下的那套设计系统，README 说包里的组件可以脱离 AdminJS 内核单独用。它靠 styled-components 与 styled-system 撑着，主题通过 ThemeProvider 注入，仓库带 108 个发行版和一份 Storybook。",
+    "takeawayZh": "yarn 装一套专给后台面板的设计系统",
+    "noteZh": "README 首段写 This package consists of all DesignSystem components from AdminJS so you can use all of them outside the adminjs core.，并点名 styled-components 与 styled-system 两个底座。Installation 是 yarn add @adminjs/design-system，下一段说明必须用 ThemeProvider 包住并从包里取 theme，示例代码写 import { theme, Button, Box, Icon } from '@adminjs/design-system'。README 目录分 Installation、Changing theme、Changing particular components、Components、Bundled packages、Contribute、Storybook、License 几节。右侧 About 一句 DesignSystem on which AdminJS is based on，另有 Fork 38、Star 30、Releases 108（最新 v4.1.1）、Contributors 12，Languages 条写 TypeScript 99.4%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是 AdminJS 的整套 DesignSystem 组件加主题机制，README 单列 Installation、Changing theme、Changing particular components、Storybook 几节，用户拿走的是组件与换主题的方法，故归设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/SoftwareBrothers/adminjs-design-system"
+      },
+      {
+        "statement": "scenarios 记 admin，因为 README 明说这套件是给 AdminJS 这类后台管理面板用的。",
+        "evidenceUrl": "https://github.com/SoftwareBrothers/adminjs-design-system"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:36:05.489Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+      "finalUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+      "title": "GitHub - SoftwareBrothers/adminjs-design-system: DesignSystem on which AdminJS is based on · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-softwarebrothers-adminjs-design-system/identity.jpg",
+        "sha256": "528931ffc0e708276f0c455d2fe522d0f196e30eda4b0a5c6897a323bee4dfe7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 137852,
+        "alt": "SoftwareBrothers/adminjs-design-system 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-softwarebrothers-adminjs-design-system/identity.jpg",
+          "alt": "SoftwareBrothers/adminjs-design-system 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "installCommand",
+      "value": "yarn add @adminjs/design-system",
+      "sourceUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+      "evidence": "README 的 Installation 一段",
+      "confidence": 1
+    },
+    {
+      "field": "foundation",
+      "value": "styled-components 与 styled-system，主题需 ThemeProvider 提供",
+      "sourceUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+      "evidence": "README 正文与示例代码",
+      "confidence": 1
+    },
+    {
+      "field": "exports",
+      "value": "theme、Button、Box、Icon",
+      "sourceUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+      "evidence": "示例代码 import { theme, Button, Box, Icon }",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "108 个发行版，最新 v4.1.1",
+      "sourceUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+      "evidence": "右侧 Releases 栏",
+      "confidence": 1
+    },
+    {
+      "field": "language",
+      "value": "TypeScript 99.4%",
+      "sourceUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+      "evidence": "右侧 Languages 条",
+      "confidence": 1
+    },
+    {
+      "field": "readmeSections",
+      "value": "Installation、Changing theme、Changing particular components、Components、Bundled packages、Storybook、License",
+      "sourceUrl": "https://github.com/SoftwareBrothers/adminjs-design-system",
+      "evidence": "README 目录标题列表",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-softwarebrothers-adminjs-design-system.md",
+  "registryUrl": "/r/github-com-softwarebrothers-adminjs-design-system.json"
+}

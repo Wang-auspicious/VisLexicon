@@ -1,0 +1,137 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9f9a81ae5c948a1070b76830b6c1430ba55ea0e9352897f6c8793c976cbbe266",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-joshnuss-svelte-persisted-store",
+  "entityId": "entity-github-com-joshnuss-svelte-persisted-store",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/joshnuss/svelte-persisted-store",
+    "finalUrl": "https://github.com/joshnuss/svelte-persisted-store",
+    "checkedAt": "2026-09-15T12:09:53.714Z"
+  },
+  "editorial": {
+    "name": "joshnuss/svelte-persisted-store",
+    "descriptionZh": "让 Svelte store 自动读写 localStorage 的库，可以在多个标签页之间同步改动。同一份代码也接受 sessionStorage 和自定义 serializer。",
+    "takeawayZh": "store 存进 localStorage，多个标签页自动同步",
+    "noteZh": "README 把用法压到三行：import { persisted } from 'svelte-persisted-store'，然后 export const preferences = persisted('preferences', { theme: 'dark', pane: '50%' })，第一个参数就是 localStorage 的 key；接着可以用 preferences.subscribe / update / set / reset 一整套 store 方法。仓库在 master 分支、10 Branches、27 Tags，提交 343 次，文件树里的 index.ts 那条提交信息是 Removes store caching during SSR。右栏 topic 是 localstorage、pubsub、sessionstorage、svelte，Releases 最新 v0.12.0，Used by 1.3K，Contributors 15。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "拿走的是一段写进应用代码的 store 工具，页面上不产生界面元素，属开发环节的代码库，归构建与开发工作流。",
+        "evidenceUrl": "https://github.com/joshnuss/svelte-persisted-store"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:09:53.714Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/joshnuss/svelte-persisted-store",
+      "finalUrl": "https://github.com/joshnuss/svelte-persisted-store",
+      "title": "GitHub - joshnuss/svelte-persisted-store: A Svelte store that persists to localStorage · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-joshnuss-svelte-persisted-store/identity.jpg",
+        "sha256": "4369926a7f209ed9dd00a7f66501654a486b7689c20dcfa3ebd050e9f12a43bb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127960,
+        "alt": "joshnuss/svelte-persisted-store 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/joshnuss/svelte-persisted-store",
+      "evidence": "README 页签与右侧 About 栏都标着 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "v0.12.0",
+      "sourceUrl": "https://github.com/joshnuss/svelte-persisted-store",
+      "evidence": "右栏 Releases 22 里最新一条是 v0.12.0，带 Latest 标记",
+      "confidence": 1
+    },
+    {
+      "field": "storageOptions",
+      "value": "local / session / serializer / syncTabs",
+      "sourceUrl": "https://github.com/joshnuss/svelte-persisted-store",
+      "evidence": "README 的 Additional options 代码块里列了 serializer、storage: 'session'、syncTabs: true",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-joshnuss-svelte-persisted-store",
+    "designMdUrl": "https://vislexicon.com/site/github-com-joshnuss-svelte-persisted-store.md",
+    "checkedAt": "2026-09-15T12:09:53.714Z",
+    "license": "MIT"
+  }
+}

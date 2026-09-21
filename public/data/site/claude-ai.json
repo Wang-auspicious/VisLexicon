@@ -1,0 +1,177 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b942f645b3656f67cfa3e1e705bea13f57d850b83603840386b060d9eed065dc",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "claude-ai",
+  "entityId": "entity-claude-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "claude.ai",
+  "official": {
+    "inputUrl": "https://claude.ai",
+    "finalUrl": "https://claude.ai/login",
+    "checkedAt": "2026-09-15T10:36:38.905Z"
+  },
+  "editorial": {
+    "name": "Claude",
+    "descriptionZh": "Anthropic 的通用 AI 助手，网页、iOS、Android 与桌面端都能聊，能写内容、生成代码、联网检索，也可通过远端 MCP 接入外部工具。",
+    "takeawayZh": "免费档先试，Pro 档才含 Claude Design",
+    "noteZh": "这次被挡住了：HTTP 阶段直接被弹到 claude.com/app-unavailable-in-region 的 App unavailable 页，浏览器阶段最终落在 claude.ai/login 的登录页。登录页左侧是 Question what's next 衬线大字配 Continue with Google / Apple / email / SSO 四个入口，右侧面板整块是空的。往下滚还能读到 Explore plans：Free 写 $0，Pro 写 $17 年付价（月付 $20），Max 从 $100 起，Free 档清单里列了 Memory across conversations 与 Create files and execute code；我没有登录，看不到对话界面本身。",
+    "recommendation": null,
+    "pricing": "Free tier ($0); Pro $17/mo billed annually ($20 monthly); Max from $100/mo",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "brand-presentation-content-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "分类拿不准，说明依据：词典里没有「通用 AI 助手」这一类，Claude 实测又落在登录页与区域限制页，只能按登录页功能清单归位——Free 档列的是 Write, edit, and create content 与 Generate code and visualize data，按产出内容归到内容生成。",
+        "evidenceUrl": "https://claude.ai/login"
+      },
+      {
+        "statement": "不按 catalog 的「AI 设计工具」归类：登录页与导航把 Claude Design 单列成另一个产品，本条目对应的 Claude 本体是通用助手而非设计工具。",
+        "evidenceUrl": "https://claude.ai/login"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:36:38.905Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "generate",
+      "edit"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android",
+      "desktop",
+      "mcp"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "freemium",
+      "login-required"
+    ],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://claude.ai",
+      "finalUrl": "https://claude.ai/login",
+      "title": "Sign in - Claude",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/claude-ai/identity.jpg",
+        "sha256": "5e47508fa14a06641c71a5494726dcc994eef662a586eb591806afa3eb3acd38",
+        "width": 1280,
+        "height": 900,
+        "bytes": 44775,
+        "alt": "Claude 首屏：Question what’s next"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://claude.ai",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/claude-ai/identity.jpg",
+          "alt": "Claude 首屏：Question what’s next",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "accessGate",
+      "value": "HTTP 阶段被重定向到 https://claude.com/app-unavailable-in-region（h1 为 App unavailable），浏览器阶段最终停在 https://claude.ai/login",
+      "sourceUrl": "https://claude.ai/login",
+      "evidence": "简报 http.finalUrl 与 http.h1 记录，以及 live.title 为 Sign in - Claude",
+      "confidence": 1
+    },
+    {
+      "field": "plans",
+      "value": "登录页 Explore plans 列出 Free $0、Pro $17/月（年付，月付 $20）、Max 从 $100/月起",
+      "sourceUrl": "https://claude.ai/login",
+      "evidence": "登录页 Explore plans 区块的价格文案，live.bodyText 可见",
+      "confidence": 1
+    },
+    {
+      "field": "freeTierFeatures",
+      "value": "Free 档列 Chat on web, iOS, Android, and on your desktop、Generate code and visualize data、Memory across conversations、Create files and execute code",
+      "sourceUrl": "https://claude.ai/login",
+      "evidence": "Explore plans 的 Free 档功能清单，live.bodyText 可见",
+      "confidence": 1
+    },
+    {
+      "field": "proIncludes",
+      "value": "Pro 档写明 Includes Claude Code / Claude Cowork / Claude Design / Claude Science，并可 Access to Research",
+      "sourceUrl": "https://claude.ai/login",
+      "evidence": "Explore plans 的 Pro 档 Everything in Free, plus 清单，live.bodyText 可见",
+      "confidence": 1
+    },
+    {
+      "field": "signInMethods",
+      "value": "登录方式为 Continue with Google / Continue with Apple / Continue with email / Continue with SSO",
+      "sourceUrl": "https://claude.ai/login",
+      "evidence": "登录页截图与 live.bodyText 一致",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。",
+      "存在付费层：Free tier ($0); Pro $17/mo billed annually ($20 monthly); Max from $100/mo。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/claude-ai.md",
+  "registryUrl": "/r/claude-ai.json"
+}

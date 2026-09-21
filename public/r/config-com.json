@@ -1,0 +1,136 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "48bf9c6a00aeafb5895d76989ea93706f3692688be8f85e0a82ae62dd692eded",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "config-com",
+  "entityId": "entity-config-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://config.com",
+    "finalUrl": "https://config.com/",
+    "checkedAt": "2026-09-15T10:51:07.660Z"
+  },
+  "editorial": {
+    "name": "Config",
+    "descriptionZh": "Config 是给硬件团队的协同平台，把机械、电气、固件三块的设计版本、BOM 和评审收在一处，对接 NX、SolidWorks、Altium，固件侧接 GitHub Release，主打一键出 BOM 和浏览器里做红线和批注。",
+    "takeawayZh": "看硬件 SaaS 怎么用一张爆炸零件渲染图替代功能截图",
+    "noteZh": "首屏白底，中间两行黑体大字 Superpowers for Hardware Teams，下面一句说它把 engineering、operations、manufacturing 三方拉在一起，再一颗蓝色 Get started。再往下是一张横贯页面的零件爆炸渲染——铝挤型材、绿色 PCB、橙色接线端子、一颗螺丝、一段印着 GET OUT THE CHOPPER 的灰色外壳，全部用虚线连到中心。正文按 01 Mechanical、02 Electrical、03 Firmware 分三块，分别写明兼容 NX 与 SolidWorks、兼容 Altium、以及用 GitHub Release integration 自动出固件版本。功能小节排着 Groundbreaking Design Management、One-click Bill of Materials、Magical Design Reviews、Finally. Your Team, on the Same Page、Welcome Your Vendors In；BOM 那块再拆成 Assembly Hierarchies、Smart Redlining、Automatic Revision Updates、Part Numbers、Change History、Placeholders 六点。",
+    "recommendation": null,
+    "pricing": "unknown（站内没有定价页，只有 Sign in 与 Get started）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点是一家 B2B SaaS 的产品官网，首页全是产品能力陈述与 Get started 入口，没有任何可下载的组件或模板，故归产品与公司官网。",
+        "evidenceUrl": "https://config.com/"
+      },
+      {
+        "statement": "页面讲的是硬件研发协同，与设计工具类不搭界，internalPaths 也表明站内只有 /、/users/sign_in、/terms、/privacy 四页。",
+        "evidenceUrl": "https://config.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:51:07.660Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "login-required"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://config.com",
+      "finalUrl": "https://config.com/",
+      "title": "Config – Superpowers for Hardware Teams",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/config-com/identity.jpg",
+        "sha256": "74c9e75bfa5d64370aee1a46b2576c8a3788646788b8957d168b513c755bb19f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 89951,
+        "alt": "Config 首屏：Superpowers for Hardware Teams"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "cadIntegrations",
+      "value": "机械兼容 NX 与 SolidWorks，电气兼容 Altium，固件接 GitHub Release",
+      "sourceUrl": "https://config.com/",
+      "evidence": "首页 01/02/03 三块分别写 Compatible with NX and SolidWorks、Compatible with Altium、Revision build assets manually and automatically with GitHub Release integration",
+      "confidence": 1
+    },
+    {
+      "field": "bomFeatures",
+      "value": "Assembly Hierarchies、Smart Redlining、Automatic Revision Updates、Part Numbers、Change History、Placeholders",
+      "sourceUrl": "https://config.com/",
+      "evidence": "首页 One-click Bill of Materials 小节下的六个功能点",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "unknown，页面只有 Get started 与 Sign in",
+      "sourceUrl": "https://config.com/",
+      "evidence": "internalPaths 只有 /、/users/sign_in、/terms、/privacy，没有任何定价路径或价格数字",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/config-com",
+    "designMdUrl": "https://vislexicon.com/site/config-com.md",
+    "checkedAt": "2026-09-15T10:51:07.660Z",
+    "license": "unknown"
+  }
+}

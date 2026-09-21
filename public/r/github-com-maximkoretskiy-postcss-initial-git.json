@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "11180b8cdd9d6c4e32d1d8279ab70e0aa6bc760844731d7ca1b9fe317988454a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-maximkoretskiy-postcss-initial-git",
+  "entityId": "entity-github-com-maximkoretskiy-postcss-initial-git",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/maximkoretskiy/postcss-initial.git",
+    "finalUrl": "https://github.com/maximkoretskiy/postcss-initial",
+    "checkedAt": "2026-09-15T12:03:20.150Z"
+  },
+  "editorial": {
+    "name": "maximkoretskiy/postcss-initial",
+    "descriptionZh": "PostCSS 插件，把 CSS 里的 initial 关键字在构建期展开成具体属性值，也能把 all: initial 铺成一份面向未来的通用重置。",
+    "takeawayZh": "把 initial 与 all: initial 展开成实值。",
+    "noteZh": "About 栏一句「PostCSS plugin to fallback initial keyword.」；仓库是 master、5 Branches、18 Tags、149 Commits，Releases 只有 2 个（最新 v4.0.2），Used by 12M、Contributors 9，MIT license。README 先用 `background: initial`、`white-space: initial` 展开成完整长写的例子说明原理，再打出一句「Killer feature! Universal reset from future css!」，把 `a { all: initial; }` 铺成 animation、backface-visibility、background、border… 一长串属性，并提示配合 postcss-autoreset 用效果最好。仓库左下还有一个 Wiki 标签页。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "构建期的 CSS 转换插件，用户拿到的是一次把 initial/all:initial 展开成兼容写法的处理能力，归构建与开发工作流。",
+        "evidenceUrl": "https://github.com/maximkoretskiy/postcss-initial"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:03:20.150Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "apply"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/maximkoretskiy/postcss-initial.git",
+      "finalUrl": "https://github.com/maximkoretskiy/postcss-initial",
+      "title": "GitHub - maximkoretskiy/postcss-initial: PostCSS plugin to fallback initial keyword · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-maximkoretskiy-postcss-initial-git/identity.jpg",
+        "sha256": "e4450d58329861521bad8ebfb18e5d496f206ef10ab7cac2f4ed444afda66f44",
+        "width": 1280,
+        "height": 900,
+        "bytes": 123499,
+        "alt": "maximkoretskiy/postcss-initial 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/maximkoretskiy/postcss-initial",
+      "evidence": "About 栏与文件列表的 MIT license 标记",
+      "confidence": 0.95
+    },
+    {
+      "field": "behavior",
+      "value": "展开 initial 简写；all: initial 会铺成整份属性重置",
+      "sourceUrl": "https://github.com/maximkoretskiy/postcss-initial",
+      "evidence": "README 的两组输入输出示例，以及 Killer feature! Universal reset from future css! 一句",
+      "confidence": 0.9
+    },
+    {
+      "field": "usage",
+      "value": "12M 个项目在用，189 stars，最新版本 4.0.2",
+      "sourceUrl": "https://github.com/maximkoretskiy/postcss-initial",
+      "evidence": "右侧面板 Star 189、Used by 12M、Releases v4.0.2 (Latest)",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-maximkoretskiy-postcss-initial-git",
+    "designMdUrl": "https://vislexicon.com/site/github-com-maximkoretskiy-postcss-initial-git.md",
+    "checkedAt": "2026-09-15T12:03:20.150Z",
+    "license": "MIT"
+  }
+}

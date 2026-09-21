@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8f3185eb25124dbb9a3dd4970745489c64119257b02f36303f3f46caac59d00d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "calmo-booung-org",
+  "entityId": "entity-calmo-booung-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://calmo.booung.org",
+    "finalUrl": "https://calmo.booung.org/",
+    "checkedAt": "2026-09-15T11:56:35.684Z"
+  },
+  "editorial": {
+    "name": "Calmo UI",
+    "descriptionZh": "React + TypeScript 组件库，组件按仪表盘、设置流程、弹层、表格这类产品界面切分，自带主题预设与给 AI 用的元数据包。",
+    "takeawayZh": "npm 装 calmo-ui，拿到 126 个产品界面组件",
+    "noteZh": "首屏左边是 DOCS 目录，Overview 下面把组件分成 Layout / Navigation / Icons / Actions / Forms / Feedback / Overlays / Data & Lists / Utilities 九组；中间大标题写 The React component library for calm product surfaces.，右边一块 Install 面板给出 npm install calmo-ui 和 Copy 按钮，并排三格写 126+ documented components、5 theme presets、AI prompt + metadata bundle。下方 WHY CALMO 一段有四张卡：Production UI coverage、TypeScript-first ergonomics、AI-friendly by default、Calm product direction，再往下是 Dashboard starter、Settings and account app、Finance sheet flow 三个示例应用。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点自称 TypeScript design system，组件分 9 组共 126 个，另配 ThemeProvider 与主题预设，交付的是成套可安装组件，所以归设计系统与完整组件套件；若只按体量衡量也接近通用组件库，这里取前者。",
+        "evidenceUrl": "https://calmo.booung.org/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:56:35.684Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://calmo.booung.org",
+      "finalUrl": "https://calmo.booung.org/",
+      "title": "Calmo UI docs | Calmo UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/calmo-booung-org/identity.jpg",
+        "sha256": "2b05e87cfb7472514ac0a638469c67102dc7e874663eb22c3168d1de5fe9fb23",
+        "width": 1280,
+        "height": 900,
+        "bytes": 125473,
+        "alt": "Calmo UI 首屏：Navigation"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm install calmo-ui",
+      "sourceUrl": "https://calmo.booung.org/",
+      "evidence": "首屏右上 Install 面板的命令条，带 Copy 按钮",
+      "confidence": 1
+    },
+    {
+      "field": "coverage",
+      "value": "126+ documented components，分 9 个分组",
+      "sourceUrl": "https://calmo.booung.org/",
+      "evidence": "首屏 Install 面板三格统计与左栏 Coverage 卡片都写着 9 sections · 126",
+      "confidence": 1
+    },
+    {
+      "field": "themePresets",
+      "value": "Blue / Jade / Coral / Violet / Graphite",
+      "sourceUrl": "https://calmo.booung.org/",
+      "evidence": "左栏 THEME 下拉的取值列表与正文 THEME 一行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/calmo-booung-org",
+    "designMdUrl": "https://vislexicon.com/site/calmo-booung-org.md",
+    "checkedAt": "2026-09-15T11:56:35.684Z",
+    "license": "unknown"
+  }
+}

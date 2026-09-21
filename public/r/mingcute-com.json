@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b039344a1243f3df8ca14b85071519cc75c01b1354bca11f8b8c1bf9034a1f87",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mingcute-com",
+  "entityId": "entity-mingcute-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://mingcute.com",
+    "finalUrl": "https://www.mingcute.com/",
+    "checkedAt": "2026-09-15T12:01:12.421Z"
+  },
+  "editorial": {
+    "name": "MingCute Icon",
+    "descriptionZh": "MingCute 是一套开源图标库，网页上按 arrow、building、business 等类别浏览整套图标，另有 Figma 插件、Animation 与 PRO 等扩展样式。",
+    "takeawayZh": "在 3324 个图标里搜一个，直接下 SVG，或从 Figma 插件里拖走。",
+    "noteZh": "首屏右侧斜排着一整片等距视角的图标墙，蓝色、绿色、橙色三块斜向渐次亮起来，左边写着 'Carefully Designed Icon Library' 和一句 'MingCute is a set of simple and exquisite open-source icon library.'。往下是 All (3324) 的分类下拉、Search Icons... 输入框和 Collection (0) 按钮，再往下按 arrow、building、business 这样的分组铺图标卡，每张卡下面标着 align_arrow_down、arrow_left_circle 这种图标名。导航里 Animation、PRO、UI Kit、Weather、Github、Download、Store 一字排开，顶栏还挂着 'New launch! Figma plugin + 3 new styles!' 的上新条。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "icons-symbols",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点主体是可按分类检索、可下载的图标集，交付物是图标素材本身，因此归到素材类的 icons-symbols，而不是候选池给的设计系统。",
+        "evidenceUrl": "https://www.mingcute.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:01:12.421Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "icon"
+    ],
+    "actions": [
+      "search",
+      "download",
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "icon"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mingcute.com",
+      "finalUrl": "https://www.mingcute.com/",
+      "title": "MingCute Icon - Carefully Designed Icon Library",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/mingcute-com/identity.jpg",
+        "sha256": "ede37f893f1462eca09c29fecf77d767fd02fae6739ecdf3c2f73c24c3f775f0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 112379,
+        "alt": "MingCute Icon 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "iconCount",
+      "value": "All (3324)",
+      "sourceUrl": "https://www.mingcute.com/",
+      "evidence": "搜索区左侧的分类下拉第一项就写着 All (3324)，各子类也各自标着数量（arrow 132、building 118、business 260 等）",
+      "confidence": 1
+    },
+    {
+      "field": "figmaPlugin",
+      "value": "有 Figma 插件",
+      "sourceUrl": "https://www.mingcute.com/",
+      "evidence": "首屏副标下方一枚 Figma 徽章写着 'Explore the Figma plugin'，顶部上新条也写 'New launch! Figma plugin + 3 new styles!'",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "beta v2.97",
+      "sourceUrl": "https://www.mingcute.com/",
+      "evidence": "顶部导航左侧的版本标签 v2.97",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://www.mingcute.com/",
+      "evidence": "页面只自称 open-source icon library，没有写出具体许可证名称，故记 unknown",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/mingcute-com",
+    "designMdUrl": "https://vislexicon.com/site/mingcute-com.md",
+    "checkedAt": "2026-09-15T12:01:12.421Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "87c6cbadc5dbc07dac5f47fd0f3afe05dfb2cdbf3a8002059e1dddb3eab23bcf",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-mringler-image-tracer-ts",
+  "entityId": "entity-github-com-mringler-image-tracer-ts",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/mringler/image-tracer-ts",
+    "finalUrl": "https://github.com/mringler/image-tracer-ts",
+    "checkedAt": "2026-09-15T12:33:10.867Z"
+  },
+  "editorial": {
+    "name": "mringler/image-tracer-ts",
+    "descriptionZh": "把位图描摹成 SVG 的 TypeScript 库，Node.js 和浏览器都能跑，是 imagetracer-js 的重写版。拆成 @image-tracer/core、@image-tracer/browser、@image-tracer/nodejs 三个包。",
+    "takeawayZh": "把一张 PNG/JPEG 直接描成 SVG 路径",
+    "noteZh": "README 开头就是一张 Bitmap → SVG 的示意图，底下标着 PNG, JPG, GIF, BMP, etc.；正文给了浏览器端 ImageTracerBrowser.fromUrl 的写法，和一个命令行例子 node ./packages/nodejs/dist/image-tracer-nodejs.cjs ./image.png --out image.svg --fillStyle stroke。仓库只有 1 个 commit（initial commit，3 年前），右侧 Languages 条是 TypeScript 96.5% / JavaScript 3.5%，About 写着 Trace images into SVG。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "asset-conversion-optimization",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这个库干的事是把位图转成矢量 SVG 文件，属于素材格式转换的开发工具，所以归 asset-conversion-optimization；它交付的是代码库而不是图形素材，因此不进 visual-assets。",
+        "evidenceUrl": "https://github.com/mringler/image-tracer-ts"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:33:10.867Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "export",
+      "generate"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "typescript",
+      "javascript",
+      "svg"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/mringler/image-tracer-ts",
+      "finalUrl": "https://github.com/mringler/image-tracer-ts",
+      "title": "GitHub - mringler/image-tracer-ts: Trace images into SVG · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-mringler-image-tracer-ts/identity.jpg",
+        "sha256": "0a31fa77d074c41efd7d6691c96f4aa635269ceb344c882c2f8510591e4babe0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 105861,
+        "alt": "mringler/image-tracer-ts 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/mringler/image-tracer-ts",
+      "evidence": "README 卡片区与右侧 About 都标了 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "@image-tracer/core、@image-tracer/browser、@image-tracer/nodejs",
+      "sourceUrl": "https://github.com/mringler/image-tracer-ts",
+      "evidence": "README 的 Tracing different source types 一节逐个说明这三个包",
+      "confidence": 0.9
+    },
+    {
+      "field": "activity",
+      "value": "1 个 commit、12 star、1 fork",
+      "sourceUrl": "https://github.com/mringler/image-tracer-ts",
+      "evidence": "文件列表上方写 1 Commit，右上角 Star 12 / Fork 1",
+      "confidence": 0.9
+    },
+    {
+      "field": "cli-usage",
+      "value": "node ./packages/nodejs/dist/image-tracer-nodejs.cjs ./image.png --out image.svg --fillStyle stroke",
+      "sourceUrl": "https://github.com/mringler/image-tracer-ts",
+      "evidence": "README 里 Using with Node.js 的示例命令",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-mringler-image-tracer-ts",
+    "designMdUrl": "https://vislexicon.com/site/github-com-mringler-image-tracer-ts.md",
+    "checkedAt": "2026-09-15T12:33:10.867Z",
+    "license": "MIT"
+  }
+}

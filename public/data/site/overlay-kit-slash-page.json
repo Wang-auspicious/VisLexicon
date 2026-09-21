@@ -1,0 +1,162 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d580b0e51d181b1461e8b063acbb30f97967ab24346d9799fc3fd98d554741ac",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "overlay-kit-slash-page",
+  "entityId": "entity-overlay-kit-slash-page",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "overlay-kit.slash.page",
+  "official": {
+    "inputUrl": "https://overlay-kit.slash.page",
+    "finalUrl": "https://overlay-kit.slash.page/en",
+    "checkedAt": "2026-09-15T12:02:40.088Z"
+  },
+  "editorial": {
+    "name": "overlay-kit",
+    "descriptionZh": "React 的浮层管理库，把弹窗、抽屉这类浮层的开关写成一个 overlay.open() 调用，免掉 useState 与 onClose 那套状态管理。站点只有 Documentation 与 API 两栏，加一个 Ctrl K 搜索入口。",
+    "takeawayZh": "用 overlay.open() 管浮层的开关",
+    "noteZh": "顶栏只有 Documentation 和 API 两项，右边一个 Search documentation... 输入框加 CTRL K 字样，再往右是 GitHub 与 Discord 两个图标。首屏是一整块深色星空图，正中压着 Declarative Overlay Pattern 大字。往下并排三栏：左栏 Declarative API 讲 overlay-kit provides a declarative API familiar to React developers.，中栏 Overlay Management Aligned with React Philosophy 讲对齐 React 的声明式思路，右栏 Clean Code Without State Management 直接点名可以少写 useState 和 onClose。正文末尾一行写着 English / System / MIT / 2026 © Viva Republica, Inc.。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是可安装的 React 库（用 overlay.open() 管浮层），文档站开门见山只放 Documentation 与 API 两栏，归通用界面组件一类里的功能库；它不是设计系统，也没有模板或素材。",
+        "evidenceUrl": "https://overlay-kit.slash.page/en"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:02:40.088Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://overlay-kit.slash.page",
+      "finalUrl": "https://overlay-kit.slash.page/en",
+      "title": "overlay-kit",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/overlay-kit-slash-page/identity.jpg",
+        "sha256": "e64b13f01eaacb0eb4422e9c151ef129c5d82b566fc2c6b0ef7f1cd22290ad88",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121223,
+        "alt": "overlay-kit 首屏"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://overlay-kit.slash.page",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/overlay-kit-slash-page/identity.jpg",
+          "alt": "overlay-kit 首屏",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://overlay-kit.slash.page/en",
+      "evidence": "正文末尾一行 English · System · MIT · 2026 © Viva Republica, Inc.",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "overlay.open()",
+      "sourceUrl": "https://overlay-kit.slash.page/en",
+      "evidence": "Declarative API 一栏正文 With overlay.open(), you can create intuitive overlays with less code.",
+      "confidence": 1
+    },
+    {
+      "field": "owner",
+      "value": "Viva Republica, Inc.",
+      "sourceUrl": "https://overlay-kit.slash.page/en",
+      "evidence": "正文末尾的版权行",
+      "confidence": 1
+    },
+    {
+      "field": "navSections",
+      "value": "Documentation、API、GitHub、Discord",
+      "sourceUrl": "https://overlay-kit.slash.page/en",
+      "evidence": "页面顶栏四项与标题行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/overlay-kit-slash-page.md",
+  "registryUrl": "/r/overlay-kit-slash-page.json"
+}

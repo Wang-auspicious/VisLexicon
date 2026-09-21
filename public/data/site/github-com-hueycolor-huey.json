@@ -1,0 +1,164 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "cc2a74ef645aad70f4f8ceb998567211c7e0b268200b2cbb7a6391f22ea936ff",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-hueycolor-huey",
+  "entityId": "entity-github-com-hueycolor-huey",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/hueycolor/huey",
+    "finalUrl": "https://github.com/hueycolor/huey",
+    "checkedAt": "2026-09-15T11:43:07.109Z"
+  },
+  "editorial": {
+    "name": "hueycolor/huey",
+    "descriptionZh": "Vue 3 与 Svelte 5 都能用的取色器组件包，拆成 @hueycolor/vue、@hueycolor/svelte、@hueycolor/core 三块。给要把取色能力塞进自家表单、又不想被固定样式的开发者用。",
+    "takeawayZh": "拿一组无样式的取色器原语，样式自己接管",
+    "noteZh": "README 用一张表把三个包排开：@hueycolor/vue、@hueycolor/svelte、@hueycolor/core，What is Huey? 段写它给的是 stylable, accessible color picker primitives，并强调 You bring the styles, Huey brings the behavior。四条特性里 Composable 是只挑需要的组件、Accessible 是内建键盘导航与 ARIA。文档站在 hueycolor.pages.dev，About 的 topics 列了 hsl / oklch / rgb 三种色彩空间。MIT 许可，52 star。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 明写 Huey gives you a set of stylable, accessible color picker primitives 与 You bring the styles, Huey brings the behavior，交付的是无样式、管行为与无障碍的原语，归无样式无障碍原语。",
+        "evidenceUrl": "https://github.com/hueycolor/huey"
+      },
+      {
+        "statement": "仓库按 @hueycolor/vue 与 @hueycolor/svelte 双框架分发，Core 只放色彩工具，说明它是底层行为层而非成品控件外观。",
+        "evidenceUrl": "https://github.com/hueycolor/huey"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:43:07.109Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/hueycolor/huey",
+      "finalUrl": "https://github.com/hueycolor/huey",
+      "title": "GitHub - hueycolor/huey: A composable color picker for the web · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-hueycolor-huey/identity.jpg",
+        "sha256": "3207b07955e4b5c8e65829f5b65c5458bcee5ea8961195f204b414b8969181e0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121504,
+        "alt": "hueycolor/huey 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/hueycolor/huey",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-hueycolor-huey/identity.jpg",
+          "alt": "hueycolor/huey 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/hueycolor/huey",
+      "evidence": "README 文件区写 MIT license，License 小节也写 MIT",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "@hueycolor/vue、@hueycolor/svelte、@hueycolor/core",
+      "sourceUrl": "https://github.com/hueycolor/huey",
+      "evidence": "README 的 Packages 表格三行",
+      "confidence": 1
+    },
+    {
+      "field": "docs",
+      "value": "hueycolor.pages.dev",
+      "sourceUrl": "https://github.com/hueycolor/huey",
+      "evidence": "README 的 Documentation 一段与 About 面板的官网链接",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-hueycolor-huey.md",
+  "registryUrl": "/r/github-com-hueycolor-huey.json"
+}

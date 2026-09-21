@@ -1,0 +1,173 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "fbc3ab46f65de1a1f245933799758c9656cf090ab0834c725d27ae2d69237a31",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "anexia-it-github-io-vue-ui-components",
+  "entityId": "entity-anexia-it-github-io-vue-ui-components",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "anexia-it.github.io",
+  "official": {
+    "inputUrl": "https://anexia-it.github.io/vue-ui-components",
+    "finalUrl": "https://anexia-it.github.io/vue-ui-components/",
+    "checkedAt": "2026-09-15T11:36:26.779Z"
+  },
+  "editorial": {
+    "name": "ANEXIA Vue UI Components",
+    "descriptionZh": "ANEXIA 的 Vue 2 组件库文档，组件与插件支持整包注册或按需注册，样式单独放在 lib/anx.css 而不走 JS 注入。",
+    "takeawayZh": "Vue.use(AnxUIPlugin) 一次注册全部组件",
+    "noteZh": "左栏顶部写 ANEXIA Vue UI Components 1.20.8，下面是 Filter by name 过滤框和 Documentation / Components / Changelog 三个链接。正文从 Documentation 讲到 Installation，代码块给的是 npm install --save-dev @anexia/vue-ui-components 和 Vue.use(AnxUIPlugin)，还专门加了一句 Note：样式不通过 JavaScript 渲染，CSS 文件是外部的；最后一段说明也可以只装 AnxButton、AnxInput、AnxIconsPlugin 这类单个组件或插件。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是 Vue 组件与插件（AnxButton、AnxInput、AnxIconsPlugin 等），文档首页就在讲 npm 安装与注册方式，归通用界面组件库。",
+        "evidenceUrl": "https://anexia-it.github.io/vue-ui-components/"
+      },
+      {
+        "statement": "页面代码示例都是 Vue 2 写法（main.js 里 import Vue from 'vue' 加 Vue.use），文档侧没有 TypeScript 或其它框架的痕迹，故 technologies 只记 vue 与 javascript。",
+        "evidenceUrl": "https://anexia-it.github.io/vue-ui-components/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:36:26.779Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "search"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://anexia-it.github.io/vue-ui-components",
+      "finalUrl": "https://anexia-it.github.io/vue-ui-components/",
+      "title": "ANEXIA Vue UI Components",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/anexia-it-github-io-vue-ui-components/identity.jpg",
+        "sha256": "d1a9da912bcf365486f270963d3a6d47711b3b924f202589309c77800beb8ad6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109555,
+        "alt": "ANEXIA Vue UI Components 首屏：Documentation"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://anexia-it.github.io/vue-ui-components",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/anexia-it-github-io-vue-ui-components/identity.jpg",
+          "alt": "ANEXIA Vue UI Components 首屏：Documentation",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm install --save-dev @anexia/vue-ui-components",
+      "sourceUrl": "https://anexia-it.github.io/vue-ui-components/",
+      "evidence": "Installation 一节的代码块",
+      "confidence": 1
+    },
+    {
+      "field": "styleStrategy",
+      "value": "CSS 外置在 @anexia/vue-ui-components/lib/anx.css，不用 JS 渲染",
+      "sourceUrl": "https://anexia-it.github.io/vue-ui-components/",
+      "evidence": "Note: Since we explicitly don't want the style to be rendered via Javascript, the CSS file is external.",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "1.20.8",
+      "sourceUrl": "https://anexia-it.github.io/vue-ui-components/",
+      "evidence": "左侧栏标题 ANEXIA Vue UI Components 下方的版本号",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://anexia-it.github.io/vue-ui-components/",
+      "evidence": "文档页没有 License 入口或许可证名称",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/anexia-it-github-io-vue-ui-components.md",
+  "registryUrl": "/r/anexia-it-github-io-vue-ui-components.json"
+}

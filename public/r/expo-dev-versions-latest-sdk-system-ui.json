@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "20bf99297545565cccdf7ef0a313e120c62d9b679102f7ef8aec0452930dea49",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "expo-dev-versions-latest-sdk-system-ui",
+  "entityId": "entity-expo-dev-versions-latest-sdk-system-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://docs.expo.dev/versions/latest/sdk/system-ui",
+    "finalUrl": "https://docs.expo.dev/versions/latest/sdk/system-ui/",
+    "checkedAt": "2026-09-15T11:58:32.839Z"
+  },
+  "editorial": {
+    "name": "Expo SystemUI",
+    "descriptionZh": "expo-system-ui 的 API 参考页：改根视图背景色、在 Android 上全局锁定界面样式；正文说明这些属性要走 config plugin 在构建期设置，运行时改不了。",
+    "takeawayZh": "用 expo-system-ui 插件定根视图背景色。",
+    "noteZh": "标题 Expo SystemUI 下挂 Android / iOS / tvOS / Web 四个徽章与 Recommended version ~57.0.4，第一段写明它管的是 React 渲染树之外的东西——具体是根视图背景色，以及在 Android 上全局锁定界面样式；Configuration in app config 段说明插件能配 Android 的 userInterfaceStyle 和 iOS 的 backgroundColor，并强调这些值运行时改不了、必须重新构建 app binary。左栏 SystemUI 高亮，上一项是 Symbols (BETA)，下一项是 TaskManager。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可装进 React Native 项目的 expo-system-ui 模块，管的是根视图与系统界面样式，按 Expo SDK 模块参考归入通用组件库；它是系统层 API 而非视觉组件，这点存在不确定性。",
+        "evidenceUrl": "https://docs.expo.dev/versions/latest/sdk/system-ui/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:58:32.839Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
+    "technologies": [
+      "react-native",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/system-ui",
+      "finalUrl": "https://docs.expo.dev/versions/latest/sdk/system-ui/",
+      "title": "SystemUI - Expo documentation",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/expo-dev-versions-latest-sdk-system-ui/identity.jpg",
+        "sha256": "cf257c97a557a5eedd9bc5645ae260ca8c528fec30082234325eca8c147a98a7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135314,
+        "alt": "Expo SystemUI 首屏：Expo SystemUI"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "可配置项",
+      "value": "Android 的 userInterfaceStyle 与 iOS 的 backgroundColor",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/system-ui/",
+      "evidence": "Configuration in app config 一段的点名",
+      "confidence": 1
+    },
+    {
+      "field": "生效条件",
+      "value": "属性不能在运行时改，需要重新构建 app binary",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/system-ui/",
+      "evidence": "Configuration 段 These properties cannot be set at runtime and require building a new app binary",
+      "confidence": 1
+    },
+    {
+      "field": "安装命令",
+      "value": "npx expo install expo-system-ui",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/system-ui/",
+      "evidence": "Installation 一节的终端代码块",
+      "confidence": 1
+    },
+    {
+      "field": "平台支持",
+      "value": "Android、iOS、tvOS、Web（未标 Included in Expo Go）",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/system-ui/",
+      "evidence": "标题下方一排平台徽章，与同批其他页面不同，这里没有 Included in Expo Go",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/expo-dev-versions-latest-sdk-system-ui",
+    "designMdUrl": "https://vislexicon.com/site/expo-dev-versions-latest-sdk-system-ui.md",
+    "checkedAt": "2026-09-15T11:58:32.839Z",
+    "license": "unknown"
+  }
+}

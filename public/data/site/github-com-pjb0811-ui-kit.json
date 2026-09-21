@@ -1,0 +1,183 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c73bde4f800efb6a60de10dcc5dfe07d55c2a740b662c13423029edcd5dcf70f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-pjb0811-ui-kit",
+  "entityId": "entity-github-com-pjb0811-ui-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/pjb0811/ui-kit",
+    "finalUrl": "https://github.com/pjb0811/ui-kit",
+    "checkedAt": "2026-09-15T11:44:02.028Z"
+  },
+  "editorial": {
+    "name": "pjb0811/ui-kit",
+    "descriptionZh": "一个用 Turborepo 管起来的 React 组件库 monorepo，按原子设计分成 atoms、molecules、organisms 与版式模板四层，配一个 Storybook 文档站和一个演示站。README 同时提供英文与韩文两版。",
+    "takeawayZh": "按原子设计分层取 React 组件与版式模板",
+    "noteZh": "README 标题 UI-Kit Monorepo，副标写 English | 한국어，正文点名 React 19、TypeScript、Next.js 16 与 Tailwind CSS 4，用 Turborepo 管 workspace 并明确按 Atomic Design pattern 组织。目录结构段写 apps/docs 是 Storybook 文档站（端口 3001）、apps/web 是演示站（端口 3000）；仓库标 50 个 tag、49 个 release，最新 v9.1.1。提交记录里 README.md 那条写的是 refactor: migrate apps/web from Next.js to Docusaurus，最新一条在修 date-picker 的 popover 双重内边距；页面右栏没列 license，README 里只留了一个 License 标题。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述是 Modern React UI component library，并按 atoms / molecules / organisms / layout templates 分层交付组件，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/pjb0811/ui-kit"
+      },
+      {
+        "statement": "分类本身不拿不准，但许可证拿不准：README 的 License 一节未渲染出内容，右栏 About 也没有 license 行，因此 licenses 记 unknown、access 保守写 free。",
+        "evidenceUrl": "https://github.com/pjb0811/ui-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:44:02.028Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "base-ui",
+      "radix-ui",
+      "react",
+      "tailwind",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/pjb0811/ui-kit",
+      "finalUrl": "https://github.com/pjb0811/ui-kit",
+      "title": "GitHub - pjb0811/ui-kit: Modern React UI component library built with TypeScript, Tailwind CSS, and Radix UI. Featuring atoms, molecules, organisms and layout templates for building beautiful interfaces. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-pjb0811-ui-kit/identity.jpg",
+        "sha256": "60af5df893dcbbda2d4b44356db14c1a1dae85ec44b533bc96b3308cd87fcb4f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 150228,
+        "alt": "pjb0811/ui-kit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/pjb0811/ui-kit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-pjb0811-ui-kit/identity.jpg",
+          "alt": "pjb0811/ui-kit 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "techStack",
+      "value": "React 19 / TypeScript / Next.js 16 / Tailwind CSS 4 / Turborepo",
+      "sourceUrl": "https://github.com/pjb0811/ui-kit",
+      "evidence": "README 正文 featuring React 19, TypeScript, Next.js 16, and Tailwind CSS 4，并写明 monorepo 由 Turborepo 管理",
+      "confidence": 1
+    },
+    {
+      "field": "structure",
+      "value": "apps/docs 为 Storybook（端口 3001），apps/web 为演示站（端口 3000）",
+      "sourceUrl": "https://github.com/pjb0811/ui-kit",
+      "evidence": "README 的 Project Structure 代码块逐行注释",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "v9.1.1（3 天前），共 49 个 release、50 个 tag",
+      "sourceUrl": "https://github.com/pjb0811/ui-kit",
+      "evidence": "右栏 Releases 面板与分支标签行",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "未能确认",
+      "sourceUrl": "https://github.com/pjb0811/ui-kit",
+      "evidence": "README 有 License 章节标题但正文未渲染出内容，About 面板只有 Readme 与 Activity 两行，没有 license 条目",
+      "confidence": 1
+    },
+    {
+      "field": "recentDirection",
+      "value": "refactor!: complete Base UI migration (#387)",
+      "sourceUrl": "https://github.com/pjb0811/ui-kit",
+      "evidence": ".github、apps、CLAUDE.md、pnpm-lock.yaml 多行提交信息都指向同一次 Base UI 迁移",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-pjb0811-ui-kit.md",
+  "registryUrl": "/r/github-com-pjb0811-ui-kit.json"
+}

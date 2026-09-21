@@ -1,0 +1,165 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d6651cfdf5abf3c6fc5f431e458f24fcd5d570dd53e46c3b9a8d1ba2d3270936",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "vue-map-netlify-app",
+  "entityId": "entity-vue-map-netlify-app",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://vue-map.netlify.app",
+    "finalUrl": "https://vue-map.netlify.app/",
+    "checkedAt": "2026-09-15T11:41:24.874Z"
+  },
+  "editorial": {
+    "name": "Vue 3 Google maps",
+    "descriptionZh": "Vue 3 的 Google Maps 组件库文档站，一句 Reactive Vue 3 components for Google maps，页面直接给 npm install -S @fawmi/vue-google-maps 和 app.use(VueGoogleMaps, { load: { key } }) 的初始化写法。",
+    "takeawayZh": "照示例把 GMapMap 挂进 Vue 3 项目",
+    "noteZh": "顶部导航只有 Docs、Github、NPM 三个外链加一个搜索框。正文正中是 Vue 绿黄配色的 logo，标题 Vue 3 Google maps、副标 Reactive Vue 3 components for Google maps.，下面并排 Read Docs 与 View example 两个按钮。再往下 # Installation 一节写明使用 npm 安装，命令是 npm install -S @fawmi/vue-google-maps；# Basic usage 一节说需要自备 API Key，并引用 How to get an Api key，示例分三步：main.js 里 app.use(VueGoogleMaps, { load: { key: 'YOUR_API_KEY_COMES_HERE' } })，组件里写 <GMapMap :center :zoom map-type-id=\"terrain\">，再嵌 <GMapCluster> 与 <GMapMarker :position :clickable :draggable>。整页只渲染出两张图，没有组件属性表和更新日志。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一组 Vue 3 组件（GMapMap / GMapCluster / GMapMarker），以 @fawmi/vue-google-maps 包发布，归通用界面组件库；地图本身也可算可嵌入复合控件，但它在这里是以组件库形式交付的，所以不归 page-blocks-embeddable-controls。",
+        "evidenceUrl": "https://vue-map.netlify.app/"
+      },
+      {
+        "statement": "languages 记 en、licenses 记 unknown：站点可见正文全英文，且首页与文档页都没出现许可证信息。",
+        "evidenceUrl": "https://vue-map.netlify.app/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:41:24.874Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vue-map.netlify.app",
+      "finalUrl": "https://vue-map.netlify.app/",
+      "title": "Vue 3 Google maps",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vue-map-netlify-app/identity.jpg",
+        "sha256": "4ce94244c74955621c9ce44fb35da5728bf9cf0bf108ea43f2c741ca23b63bff",
+        "width": 1280,
+        "height": 900,
+        "bytes": 50378,
+        "alt": "Vue 3 Google maps 首屏：Vue 3 Google maps"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "summary",
+      "value": "Reactive Vue 3 components for Google maps.",
+      "sourceUrl": "https://vue-map.netlify.app/",
+      "evidence": "首屏标题下方的副标题原句",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install -S @fawmi/vue-google-maps",
+      "sourceUrl": "https://vue-map.netlify.app/",
+      "evidence": "页面 # Installation 一节下的命令块",
+      "confidence": 1
+    },
+    {
+      "field": "componentsInExample",
+      "value": "GMapMap、GMapCluster、GMapMarker（props 含 :center、:zoom、map-type-id=\"terrain\"、:clickable、:draggable）",
+      "sourceUrl": "https://vue-map.netlify.app/",
+      "evidence": "页面 # Basic usage 一节里 Use it anywhere in your components 的示例代码",
+      "confidence": 1
+    },
+    {
+      "field": "apiKey",
+      "value": "使用前需要自备 Google Maps API Key",
+      "sourceUrl": "https://vue-map.netlify.app/",
+      "evidence": "Basic usage 一节第一句 You need an API Key 与 How to get an Api key 链接",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://vue-map.netlify.app/",
+      "evidence": "首屏与 Installation / Basic usage 两节里都没有许可证信息",
+      "confidence": 1
+    },
+    {
+      "field": "nav",
+      "value": "Docs、Github、NPM",
+      "sourceUrl": "https://vue-map.netlify.app/",
+      "evidence": "顶部导航右侧的三个外链入口",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/vue-map-netlify-app",
+    "designMdUrl": "https://vislexicon.com/site/vue-map-netlify-app.md",
+    "checkedAt": "2026-09-15T11:41:24.874Z",
+    "license": "unknown"
+  }
+}

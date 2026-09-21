@@ -1,0 +1,169 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a31ff9224ea9fd8c72f87f565abb2b42b5db6ee3b69131911feef70f000d5e7a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svelteflow-dev",
+  "entityId": "entity-svelteflow-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://svelteflow.dev",
+    "finalUrl": "https://svelteflow.dev/",
+    "checkedAt": "2026-09-15T11:55:18.085Z"
+  },
+  "editorial": {
+    "name": "Svelte Flow",
+    "descriptionZh": "Svelte 的节点式编辑器组件，拖拽、缩放、框选、增删连线都内置，节点可以直接写成 Svelte 组件。",
+    "takeawayZh": "装 @xyflow/svelte，用自定义组件当节点连线",
+    "noteZh": "首屏左侧是 Write your ideas with Svelte Flow，Svelte Flow 三个词被涂成品牌橙；右侧直接跑着一个可玩的流程示例，三块控件分别是 shape color、shape type（cube / pyramid 单选）和 zoom level，虚线连到 output 面板，面板里是一堆橙色立方体。顶栏 Learn / Reference / Examples / Showcase / Pro / More 依次排开，最右是 Ctrl K 搜索框、GitHub 与 Discord 图标和橙色的 Svelte Flow Pro 按钮。首屏底部横着三块数字：1.6.3 Current Version、230K Weekly Installs、MIT License，旁边一段话说明库是 MIT 授权、靠订阅 Svelte Flow Pro 维持开发。",
+    "recommendation": null,
+    "pricing": "Svelte Flow 本体 MIT 免费；Svelte Flow Pro 为订阅制",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可安装的 Svelte 组件（正文给 npm install @xyflow/svelte），拖拽节点、缩放、连线、框选这些交互都内置，归通用界面组件库。",
+        "evidenceUrl": "https://svelteflow.dev/"
+      },
+      {
+        "statement": "首屏统计块直接把 MIT License 与 230K Weekly Installs 摆出来，另有 /pro 订阅入口与 /remove-attribution 页，故 access 记 open-source 加 freemium。",
+        "evidenceUrl": "https://svelteflow.dev/pro"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:18.085Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "freemium"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svelteflow.dev",
+      "finalUrl": "https://svelteflow.dev/",
+      "title": "The Node-Based UI for Svelte - Svelte Flow",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/svelteflow-dev/identity.jpg",
+        "sha256": "f7f47d9084436a55f2d6a4da46b46744560e7a11c4473790fbcc2dc137e78746",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109262,
+        "alt": "Svelte Flow 首屏：Wire your ideas with Svelte Flow"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroClaim",
+      "value": "Wire your ideas with Svelte Flow",
+      "sourceUrl": "https://svelteflow.dev/",
+      "evidence": "首屏 h1 与 live.heads 第一条，截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "heroStats",
+      "value": "1.6.3 Current Version / 230K Weekly Installs / MIT License",
+      "sourceUrl": "https://svelteflow.dev/",
+      "evidence": "首屏底部三块数字，截图中可逐块读出",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://svelteflow.dev/",
+      "evidence": "首屏统计块第三块写 MIT License，正文写 Svelte Flow is a MIT-licensed open source library.",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install @xyflow/svelte",
+      "sourceUrl": "https://svelteflow.dev/learn",
+      "evidence": "正文 Getting Started with Svelte Flow 一节的安装代码块",
+      "confidence": 1
+    },
+    {
+      "field": "builtInComponents",
+      "value": "Background、Minimap、Controls、Panel 四个附加组件",
+      "sourceUrl": "https://svelteflow.dev/api-reference/components",
+      "evidence": "正文 All the right components 一节逐一点名；/api-reference/components 下也是这四个路径",
+      "confidence": 1
+    },
+    {
+      "field": "subflows",
+      "value": "开箱支持嵌套子图（Subflows）与多种内置边类型（Edge Types）",
+      "sourceUrl": "https://svelteflow.dev/learn/layouting/sub-flows",
+      "evidence": "正文 Feature Overview 下 Subflows 与 Edge Types 两条",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "存在付费层：Svelte Flow 本体 MIT 免费；Svelte Flow Pro 为订阅制。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/svelteflow-dev",
+    "designMdUrl": "https://vislexicon.com/site/svelteflow-dev.md",
+    "checkedAt": "2026-09-15T11:55:18.085Z",
+    "license": "MIT"
+  }
+}

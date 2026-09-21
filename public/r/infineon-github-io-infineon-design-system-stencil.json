@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ce1f59f6a2b613300fe73ecb2bda44f7502cf21cfe629447eb7c8428832625f7",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "infineon-github-io-infineon-design-system-stencil",
+  "entityId": "entity-infineon-github-io-infineon-design-system-stencil",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://infineon.github.io/infineon-design-system-stencil",
+    "finalUrl": "https://infineon.github.io/infineon-design-system-stencil/storybook/",
+    "checkedAt": "2026-09-15T11:43:19.041Z"
+  },
+  "editorial": {
+    "name": "Infineon Design System",
+    "descriptionZh": "英飞凌设计系统的 Storybook 站点，把基础规范、图标库和多语言框架接入说明都摊开。给用这套组件做内部或产品界面的开发者与设计师查阅。",
+    "takeawayZh": "在 Storybook 里逐条查组件、token 与框架接入方式",
+    "noteZh": "打开就是 Storybook，左上角 Infineon 标加 Version 40.10.2，下面一个 Find components 搜索框。侧边栏分四段：开头是 Icon library、DDS Components Overview、DDS Templates，SETUP & INSTALLATION 段列 About、Getting started、Framework Integration、Icons Only Usage、Tailwind CSS、ECharts、FAQ、AI Integration，FOUNDATIONS 段列 Border radius、Colors、Grid、Iconography、Logo、Spacing、States、Tokens、Typography，COMPONENTS 段从 Accordion 一路排到 Toolbar。截图时中央预览区还停在加载圈上，没渲染出具体组件。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点把 FOUNDATIONS（Colors、Grid、Spacing、Tokens、Typography）与 COMPONENTS（Accordion 到 Toolbar）分层陈列，并单列 SETUP & INSTALLATION 与 Framework Integration，是完整设计系统的文档形态。",
+        "evidenceUrl": "https://infineon.github.io/infineon-design-system-stencil/storybook/"
+      },
+      {
+        "statement": "侧边栏同时挂了 Icon library 与 DDS Templates，说明交付物覆盖组件、模板与图标三层。",
+        "evidenceUrl": "https://infineon.github.io/infineon-design-system-stencil/storybook/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:43:19.041Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "tailwind"
+    ],
+    "workflowStages": [
+      "design",
+      "handoff",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://infineon.github.io/infineon-design-system-stencil",
+      "finalUrl": "https://infineon.github.io/infineon-design-system-stencil/storybook/",
+      "title": "Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/infineon-github-io-infineon-design-system-stencil/identity.jpg",
+        "sha256": "17a6146ae524d6499507ed3a8bedf8f143b22600244b60122bf82cfe874fefad",
+        "width": 1280,
+        "height": 900,
+        "bytes": 43679,
+        "alt": "Infineon Design System 首屏：Storybook"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "version",
+      "value": "Version 40.10.2",
+      "sourceUrl": "https://infineon.github.io/infineon-design-system-stencil/storybook/",
+      "evidence": "Storybook 侧边栏顶部的版本号文字",
+      "confidence": 1
+    },
+    {
+      "field": "integrations",
+      "value": "Tailwind CSS、ECharts、Framework Integration、AI Integration 四份接入说明",
+      "sourceUrl": "https://infineon.github.io/infineon-design-system-stencil/storybook/",
+      "evidence": "侧边栏 SETUP & INSTALLATION 段的条目名",
+      "confidence": 1
+    },
+    {
+      "field": "foundations",
+      "value": "Border radius、Colors、Grid、Iconography、Logo、Spacing、States、Tokens、Typography",
+      "sourceUrl": "https://infineon.github.io/infineon-design-system-stencil/storybook/",
+      "evidence": "侧边栏 FOUNDATIONS 分组的九个条目",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/infineon-github-io-infineon-design-system-stencil",
+    "designMdUrl": "https://vislexicon.com/site/infineon-github-io-infineon-design-system-stencil.md",
+    "checkedAt": "2026-09-15T11:43:19.041Z",
+    "license": "unknown"
+  }
+}

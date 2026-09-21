@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "24c1c6cc1f9799eac2a254192a2a720e88d8cfaffe48c5849c7fc8eb7b611f0d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-ljharb-async-generator-function",
+  "entityId": "entity-github-com-ljharb-async-generator-function",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/ljharb/async-generator-function",
+    "finalUrl": "https://github.com/ljharb/async-generator-function",
+    "checkedAt": "2026-09-15T12:48:13.476Z"
+  },
+  "editorial": {
+    "name": "ljharb/async-generator-function",
+    "descriptionZh": "一个几十行的小包，把平时直接取不到的 AsyncGeneratorFunction 构造函数暴露出来。",
+    "takeawayZh": "取出平时拿不到的 AsyncGeneratorFunction 构造函数",
+    "noteZh": "README 的 Usage 只有一小段：先 const AsyncGeneratorFunction = require('async-generator-function')()，再用 new AsyncGeneratorFunction('return 1') 造一个函数，并断言它的 toString 结果是 async function* anonymous。仓库里同一个入口给了五份文件——index.js、index.mjs、index.d.mts、index.d.ts、legacy.js——配 .nycrc、.npmrc、tsconfig.json，全程 8 次提交。右栏 About 写 A function that returns the normally hidden `AsyncGeneratorFunction` constructor，另有 Code of conduct、Contributing、Security policy 三个条目和 MIT license。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个极小的可安装代码库，用户动作是 npm 装上后在代码里调用，属于开发工具；受控词典没有对应的具体小类，取最近的 build-deploy-dev-workflow。",
+        "evidenceUrl": "https://github.com/ljharb/async-generator-function"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:48:13.476Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ljharb/async-generator-function",
+      "finalUrl": "https://github.com/ljharb/async-generator-function",
+      "title": "GitHub - ljharb/async-generator-function: A function that returns the normally hidden `AsyncGeneratorFunction` constructor · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-ljharb-async-generator-function/identity.jpg",
+        "sha256": "b6f0fc98fec570cf268350b9b5906551d6fa3e0aa188b5c161c4897579614bfb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127399,
+        "alt": "ljharb/async-generator-function 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/ljharb/async-generator-function",
+      "evidence": "README 顶部标 MIT license，右栏 About 也有 MIT license 条目，仓库根目录有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/ljharb/async-generator-function",
+      "evidence": "README 的 Getting started 只给 npm install --save async-generator-function，页面另有 Sponsor 按钮而非付费产品入口",
+      "confidence": 0.9
+    },
+    {
+      "field": "entry-points",
+      "value": "index.js / index.mjs / index.d.mts / index.d.ts / legacy.js",
+      "sourceUrl": "https://github.com/ljharb/async-generator-function",
+      "evidence": "左栏文件树里同一入口的五份文件",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-ljharb-async-generator-function",
+    "designMdUrl": "https://vislexicon.com/site/github-com-ljharb-async-generator-function.md",
+    "checkedAt": "2026-09-15T12:48:13.476Z",
+    "license": "MIT"
+  }
+}

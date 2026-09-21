@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "984355e1286e198a166decc02f70e5461861705a0057084e4695d82166651cd7",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-tedi-design-system-core",
+  "entityId": "entity-github-com-tedi-design-system-core",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/TEDI-Design-System/core",
+    "finalUrl": "https://github.com/TEDI-Design-System/core",
+    "checkedAt": "2026-09-15T11:52:56.795Z"
+  },
+  "editorial": {
+    "name": "TEDI-Design-System/core",
+    "descriptionZh": "TEDI 设计系统的 token 与核心样式层：@tedi-design-system/core 放 TEDI React 和 Angular 组件共用的变量与基础样式，另有 CSS 工具类和 SCSS mixin 的文档。",
+    "takeawayZh": "拿走 TEDI 的变量和基础样式，React 与 Angular 共用",
+    "noteZh": "About 只有 TEDI Core 四个字加 Readme、MIT license 两行，commit 计数 2,795，当前停在 rc 分支。文件表整块还在加载骨架、没渲染出任何提交信息或日期，所以仓库内容只能从文件树读：.claude/commands、.github、.husky、.vscode、docs、public、scripts、src 八个目录，根上摊着 .editorconfig、.npmrc、.nvmrc、.prettierrc、.releaserc.json、babel.config.json 和 scss.d.ts。README 说明 @tedi-design-system/core contains shared variables and core styles shared between TEDI React and Angular components，文档指向 TEDI Design System wiki 与 CSS Utilities Documentation。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 自述提供 shared variables and core styles shared between TEDI React and Angular components，是设计系统的共享底座层，与同批的 TEDI React 仓库配套。",
+        "evidenceUrl": "https://github.com/TEDI-Design-System/core"
+      },
+      {
+        "statement": "包内容含 scss.d.ts、.stylelintrc.json 与 CSS Utilities Documentation 链接，交付的是样式与变量资产而不是组件实现。",
+        "evidenceUrl": "https://github.com/TEDI-Design-System/core"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:56.795Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "react",
+      "css",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/TEDI-Design-System/core",
+      "finalUrl": "https://github.com/TEDI-Design-System/core",
+      "title": "GitHub - TEDI-Design-System/core: TEDI Core · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-tedi-design-system-core/identity.jpg",
+        "sha256": "751756669c480c9c19c58c519187ab9b7a9ef3822068f4d599d695d57e0a7185",
+        "width": 1280,
+        "height": 900,
+        "bytes": 87316,
+        "alt": "TEDI-Design-System/core 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/TEDI-Design-System/core",
+      "evidence": "About 面板的 MIT license 行与文件列表中的 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@tedi-design-system/core",
+      "sourceUrl": "https://github.com/TEDI-Design-System/core",
+      "evidence": "README 首段：@tedi-design-system/core contains shared variables and core styles shared between TEDI React and Angular components",
+      "confidence": 1
+    },
+    {
+      "field": "docs",
+      "value": "TEDI Design System wiki 与 CSS Utilities Documentation",
+      "sourceUrl": "https://github.com/TEDI-Design-System/core",
+      "evidence": "README 的 Usage instructions 一段给出的两处文档去处",
+      "confidence": 1
+    },
+    {
+      "field": "branch",
+      "value": "rc 分支，2,795 Commits",
+      "sourceUrl": "https://github.com/TEDI-Design-System/core",
+      "evidence": "文件列表上方的分支选择器显示 rc，提交计数行写着 2,795 Commits",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-tedi-design-system-core",
+    "designMdUrl": "https://vislexicon.com/site/github-com-tedi-design-system-core.md",
+    "checkedAt": "2026-09-15T11:52:56.795Z",
+    "license": "MIT"
+  }
+}

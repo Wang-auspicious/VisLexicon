@@ -1,0 +1,155 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "fa0f8d7189ea1fcc809c29ceb878f98e0003b2390d37d733ae85315f13635694",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-ibodev1-tailwindcss-palette-generator",
+  "entityId": "entity-github-com-ibodev1-tailwindcss-palette-generator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/ibodev1/tailwindcss-palette-generator",
+    "finalUrl": "https://github.com/ibodev1/tailwindcss-palette-generator",
+    "checkedAt": "2026-09-15T12:12:08.623Z"
+  },
+  "editorial": {
+    "name": "ibodev1/tailwindcss-palette-generator",
+    "descriptionZh": "Tailwind CSS v4 的色板生成插件：在 CSS 里声明一个基色，它把 50 到 900 的整套色阶补齐。给正在写 Tailwind 项目的开发者用。",
+    "takeawayZh": "声明一个基色，插件补出 50–900 整套 Tailwind 色阶。",
+    "noteZh": "README 标题是 Tailwindcss Palette Generator，正文分 Why Use This Extension? / Installation / Basic Usage 三段；Basic Usage 里用 @plugin \"tailwindcss-palette-generator\" { primary: #FFBD00; secondary: #FF6F00; } 声明基色，之后写 bg-primary-500、text-secondary-700 就能取到对应色阶。仓库右侧 About 栏只写了一句 Color palette generation library for TailwindCSS，挂着 npm 包外链与 MIT license 标。文件区显示 104 次提交、29 个 Tags，根目录里还有 biome.json、rslib.config.ts。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是注入 Tailwind 工具类层的插件（装包后在 CSS 里 @plugin 声明，界面里直接用 bg-primary-500 这类类名），不是可浏览的站点或素材，故归组件与设计系统这一族的通用实现。",
+        "evidenceUrl": "https://github.com/ibodev1/tailwindcss-palette-generator"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:12:08.623Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "tailwind",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ibodev1/tailwindcss-palette-generator",
+      "finalUrl": "https://github.com/ibodev1/tailwindcss-palette-generator",
+      "title": "GitHub - ibodev1/tailwindcss-palette-generator: Color palette generation library for TailwindCSS. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-ibodev1-tailwindcss-palette-generator/identity.jpg",
+        "sha256": "185df1657f37a1800d712c18197723f70e9ac5c012effeb5c53ed92a3042c500",
+        "width": 1280,
+        "height": 900,
+        "bytes": 129099,
+        "alt": "ibodev1/tailwindcss-palette-generator 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/ibodev1/tailwindcss-palette-generator",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-ibodev1-tailwindcss-palette-generator/identity.jpg",
+          "alt": "ibodev1/tailwindcss-palette-generator 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/ibodev1/tailwindcss-palette-generator",
+      "evidence": "README 顶部的许可证条与右侧 About 栏都写 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "installation",
+      "value": "pnpm add -D / yarn add --dev / npm i --save-dev tailwindcss-palette-generator@latest",
+      "sourceUrl": "https://github.com/ibodev1/tailwindcss-palette-generator",
+      "evidence": "README 🎉 Installation 段列出的三条命令",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "在样式文件里用 @plugin 声明基色，得到 50–900 的色阶；README 注明是专为 Tailwind CSS v4 做的",
+      "sourceUrl": "https://github.com/ibodev1/tailwindcss-palette-generator",
+      "evidence": "README 👀 Basic Usage 段的 @plugin 代码块与 bg-primary-500 示例",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-ibodev1-tailwindcss-palette-generator.md",
+  "registryUrl": "/r/github-com-ibodev1-tailwindcss-palette-generator.json"
+}

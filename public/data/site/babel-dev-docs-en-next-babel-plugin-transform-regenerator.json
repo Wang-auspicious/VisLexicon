@@ -1,0 +1,161 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "dbcc5019626aed1c04cad3bf9d7555ec0eff3089c54805592940c7521cbd994d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "babel-dev-docs-en-next-babel-plugin-transform-regenerator",
+  "entityId": "entity-babel-dev-docs-en-next-babel-plugin-transform-regenerator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "babel.dev",
+  "official": {
+    "inputUrl": "https://babel.dev/docs/en/next/babel-plugin-transform-regenerator",
+    "finalUrl": "https://babel.dev/docs/babel-plugin-transform-regenerator",
+    "checkedAt": "2026-09-15T12:16:24.517Z"
+  },
+  "editorial": {
+    "name": "@babel/plugin-transform-regenerator",
+    "descriptionZh": "Babel 插件文档页：把 generator 函数编译成 regeneratorRuntime 的状态机，随 @babel/preset-env 一起提供。",
+    "takeawayZh": "看清 generator 被 regeneratorRuntime 编译成什么",
+    "noteZh": "这个页面没有左侧目录树，正文直接从 INFO 块 This plugin is included in @babel/preset-env 开始。Example 段落把 function* a() { yield 1; } 的 In 和 Out 并排贴出，Out 是 var _marked = [a].map(regeneratorRuntime.mark); 加一个 _context.switch 状态机。Usage 段列出 asyncGenerators、generators、async 三个选项及默认值，右栏只有 Example / Installation / Usage / Via CLI / Via Node API 五条。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "reference-standards",
+    "subcategory": "standards-guidelines-checklists",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "与同批另外两个 Babel 插件页同类，是转换规则的参考文档，归 reference-standards/standards-guidelines-checklists。",
+        "evidenceUrl": "https://babel.dev/docs/babel-plugin-transform-regenerator"
+      },
+      {
+        "statement": "拿不准的地方：整页正文只有 Example 与 Usage 两节，也可视为一小段说明书；按站点性质仍归 reference-standards。",
+        "evidenceUrl": "https://babel.dev/docs/babel-plugin-transform-regenerator"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:16:24.517Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://babel.dev/docs/en/next/babel-plugin-transform-regenerator",
+      "finalUrl": "https://babel.dev/docs/babel-plugin-transform-regenerator",
+      "title": "@babel/plugin-transform-regenerator · Babel",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/babel-dev-docs-en-next-babel-plugin-transform-regenerator/identity.jpg",
+        "sha256": "747b48a54000dee300bfdb4e705923b8d74e250705d7096fc11b2d61c79413de",
+        "width": 1280,
+        "height": 900,
+        "bytes": 65256,
+        "alt": "@babel/plugin-transform-regenerator 首屏：@babel/plugin-transform-regenerator"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://babel.dev/docs/en/next/babel-plugin-transform-regenerator",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/babel-dev-docs-en-next-babel-plugin-transform-regenerator/identity.jpg",
+          "alt": "@babel/plugin-transform-regenerator 首屏：@babel/plugin-transform-regenerator",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "presetMembership",
+      "value": "包含在 @babel/preset-env 里",
+      "sourceUrl": "https://babel.dev/docs/babel-plugin-transform-regenerator",
+      "evidence": "正文 INFO 提示块原文 This plugin is included in @babel/preset-env",
+      "confidence": 1
+    },
+    {
+      "field": "options",
+      "value": "asyncGenerators / generators / async，默认值都是 true",
+      "sourceUrl": "https://babel.dev/docs/babel-plugin-transform-regenerator",
+      "evidence": "Usage 段的选项表列出 name、default value 两列，三行默认值均为 true，并给出一段把它们都设为 false 的配置",
+      "confidence": 1
+    },
+    {
+      "field": "example",
+      "value": "function* a() { yield 1; } 编译成 regeneratorRuntime.mark / wrap 写法",
+      "sourceUrl": "https://babel.dev/docs/babel-plugin-transform-regenerator",
+      "evidence": "页面 Example 段落的 In 与 Out 两段 JavaScript 代码块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/babel-dev-docs-en-next-babel-plugin-transform-regenerator.md",
+  "registryUrl": "/r/babel-dev-docs-en-next-babel-plugin-transform-regenerator.json"
+}

@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b76f5a010a30cca6bc05dee44c976cede2699530bc922425a69fba0eb5900209",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-cerberauth-design-system",
+  "entityId": "entity-github-com-cerberauth-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/cerberauth/design-system",
+    "finalUrl": "https://github.com/cerberauth/design-system",
+    "checkedAt": "2026-09-15T11:38:37.843Z"
+  },
+  "editorial": {
+    "name": "cerberauth/design-system",
+    "descriptionZh": "这是 CerberAuth 的内部设计系统 monorepo，对外发两个独立包：@cerberauth/tokens 放框架无关的 CSS design tokens，@cerberauth/ui 放基于 Shadcn/ui 的共享 React 组件。仓库自带 Storybook 8 + Vite 的组件文档应用和共享的 tsconfig、eslint-config。",
+    "takeawayZh": "取 @cerberauth/tokens 或 /ui 两个包",
+    "noteZh": "README 直接说明这是 internal monorepo，发两个互相独立的包：@cerberauth/tokens（框架无关的 CSS design tokens，无构建步骤）和 @cerberauth/ui（共享 React 组件，tsup 打包 ESM + CJS）。目录树里还挂着 packages/tsconfig、packages/eslint-config 与 apps/storybook，Storybook 8 + Vite 跑在 6006 端口。加新组件的示范用 cva 配 class-variance-authority 写 variants，另有一节 Token architecture 讲 token 分层；About 栏没有 description，许可 MIT，Releases 8 个，最新是 @cerberauth/tokens@0.3.1。",
+    "recommendation": null,
+    "pricing": "Free（MIT 开源）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一套设计系统：独立的 token 包加共享组件包，README 用 Token architecture 一节交代 token 分层，属于设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/cerberauth/design-system"
+      },
+      {
+        "statement": "它同时有 packages/tsconfig 与 packages/eslint-config 这类共享配置，是把设计和工程约定打包在一起的 monorepo，而非单一组件库。",
+        "evidenceUrl": "https://github.com/cerberauth/design-system"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:38:37.843Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "shadcn-ui",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/cerberauth/design-system",
+      "finalUrl": "https://github.com/cerberauth/design-system",
+      "title": "GitHub - cerberauth/design-system · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-cerberauth-design-system/identity.jpg",
+        "sha256": "e2ae1c17a5c7915ca1e131ed24033f1f7a4c74084b0b73a59166f7bb289e51e0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128529,
+        "alt": "cerberauth/design-system 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "publishedPackages",
+      "value": "@cerberauth/tokens（framework-agnostic CSS design tokens）与 @cerberauth/ui（Shared React components, Shadcn/ui-based）",
+      "sourceUrl": "https://github.com/cerberauth/design-system",
+      "evidence": "README 用一张表列出两个包的版本与说明",
+      "confidence": 1
+    },
+    {
+      "field": "repoStructure",
+      "value": "apps/storybook（Storybook 8 + Vite，pnpm storybook 开在 localhost:6006）、packages/tokens、packages/ui、packages/tsconfig、packages/eslint-config",
+      "sourceUrl": "https://github.com/cerberauth/design-system",
+      "evidence": "README 的 Repository structure 一节目录树",
+      "confidence": 1
+    },
+    {
+      "field": "addingComponent",
+      "value": "在 packages/ui/src/components/my-component.tsx 里用 cva 配 class-variance-authority 写 variants",
+      "sourceUrl": "https://github.com/cerberauth/design-system",
+      "evidence": "README 的 Adding a new component 一节给出代码示例",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "@cerberauth/tokens@0.3.1（Latest），共 8 个 Releases",
+      "sourceUrl": "https://github.com/cerberauth/design-system",
+      "evidence": "右侧 Releases 区块原文",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-cerberauth-design-system",
+    "designMdUrl": "https://vislexicon.com/site/github-com-cerberauth-design-system.md",
+    "checkedAt": "2026-09-15T11:38:37.843Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0d1eb3247e60727e2c0233cf6b48c785404b158a054d65119f2585961b3323bf",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "motion-so",
+  "entityId": "entity-motion-so",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://motion.so",
+    "finalUrl": "https://motion.so/",
+    "checkedAt": "2026-09-15T10:33:48.343Z"
+  },
+  "editorial": {
+    "name": "Motion",
+    "descriptionZh": "Motion by Mosaic 出的动效 agent：一句提示词写完就出发布片、产品演示、logo 动画和社媒广告，也能作为 MCP 插件挂进 Claude、ChatGPT 等 agent 里。",
+    "takeawayZh": "一句提示词生成发布片、产品演示和 logo 动画",
+    "noteZh": "顶部一条黑色横幅写 INTRODUCING MOTION, THE AGENT FOR MOTION DESIGN，导航右侧是 API / MCP 和 Open Motion。首屏中央只有衬线大字 Motion 与 by Mosaic、Frontier AI for Motion Design.，下面一个输入框带着 Plan、麦克风、附件图标，再下面两排快捷 chip 是 Launch video、Brand documentary、Deep-dive explainer、Match a YouTube video、Logo animation、Talking head、Article → video。往下 PROMPT → VIDEO 段把提示词直接摊开：Create a launch video for the new MacBook Neo、Vox-style documentary explainer、The history of Kanye's discography as an animated timeline of album art。How it works 拆成 THE BRIEF、UNDERSTANDING、DIRECTION、PRODUCTION、ITERATE 五步。",
+    "recommendation": null,
+    "pricing": "unknown（站内有 /pricing 与 Affiliates，抓取到的首页未给免费或档位口径）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是渲染出来的视频：站内文案写 Describe a video and it designs, animates, and renders it: launch videos, product demos, logo animations, and social ads。",
+        "evidenceUrl": "https://motion.so/"
+      },
+      {
+        "statement": "归 video-motion-audio-creation 而非视觉素材类：五个步骤里的 PRODUCTION 明确产出 visuals、motion graphics、voiceover、music、captions，是成片而不是片段素材。",
+        "evidenceUrl": "https://motion.so/solutions/launch-videos"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:33:48.343Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "marketing"
+    ],
+    "deliverables": [
+      "video",
+      "template"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "video",
+      "motion",
+      "audio"
+    ],
+    "platforms": [
+      "web",
+      "mcp",
+      "api"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "content-creator",
+      "brand-team"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "flow-library",
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://motion.so",
+      "finalUrl": "https://motion.so/",
+      "title": "Motion, the Frontier Agent for Motion Design | Text to Video for Launches, Demos & Ads",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/motion-so/identity.jpg",
+        "sha256": "a8f275ea0abc84a62afa05924682f6c41e71f0674b3c4500c0adbefb980e5c4c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 57619,
+        "alt": "Motion 首屏：Words, to videos."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroPromise",
+      "value": "Motion by Mosaic: frontier AI for motion design. Text to video for launch videos, product demos, logo animations, and social ads.",
+      "sourceUrl": "https://motion.so/",
+      "evidence": "首屏副标题，截图与 http.h1 同文",
+      "confidence": 1
+    },
+    {
+      "field": "presetBriefs",
+      "value": "Launch video、Brand documentary、Deep-dive explainer、Match a YouTube video、Logo animation、Talking head、Article → video",
+      "sourceUrl": "https://motion.so/",
+      "evidence": "首屏输入框下方的两排快捷 chip，截图与 live.bodyText 一致",
+      "confidence": 1
+    },
+    {
+      "field": "workflowSteps",
+      "value": "01 THE BRIEF、02 UNDERSTANDING、03 DIRECTION、04 PRODUCTION、05 ITERATE",
+      "sourceUrl": "https://motion.so/",
+      "evidence": "How it works 段落的五步编号与说明",
+      "confidence": 1
+    },
+    {
+      "field": "agentIntegration",
+      "value": "Works in the browser, with Claude, ChatGPT, and any MCP agent",
+      "sourceUrl": "https://motion.so/",
+      "evidence": "http.description 原句，导航另有 API / MCP 与 MCP guide 入口",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/motion-so",
+    "designMdUrl": "https://vislexicon.com/site/motion-so.md",
+    "checkedAt": "2026-09-15T10:33:48.343Z",
+    "license": "unknown"
+  }
+}

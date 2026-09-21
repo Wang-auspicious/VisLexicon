@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8d4d8fbf67747074e3732a72251ec9760f0425c1022ce3137a6e9701490659cf",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "widemile-ai",
+  "entityId": "entity-widemile-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://widemile.ai",
+    "finalUrl": "https://widemile.ai/",
+    "checkedAt": "2026-09-15T10:35:29.214Z"
+  },
+  "editorial": {
+    "name": "Widemile",
+    "descriptionZh": "把一句创意简报变成成片的 AI 制作棚：ProStudio 里跑 Agent、3D Scene、配乐和剪辑。面向做广告片和产品视觉的创作团队。",
+    "takeawayZh": "输入一句简报，产出带 3D 场景与配乐的成片。",
+    "noteZh": "首屏是全黑页面，顶栏只有 Pro Studio / MCP / Guides / Pricing 四项，正文被一块 cookie 同意弹窗挡住。往下是三段工具说明：3D Scene 摆机位、资产和运动时间，Sound Design 生成音乐、氛围与音效，Editor 从初剪做到加字幕导出。MCP 那段写着 Codex、Claude、Cursor 都能直接调用。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面把 3D Scene / Sound Design / Editor 串成一条后期流程，用户来这儿最直接拿走的是可发布的视频而不是组件或模板，所以归到视频、动效与音频创作。",
+        "evidenceUrl": "https://widemile.ai/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:35:29.214Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "marketing"
+    ],
+    "deliverables": [
+      "video",
+      "audio"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "export",
+      "preview"
+    ],
+    "media": [
+      "video",
+      "motion",
+      "audio",
+      "3d"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation",
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "content-creator",
+      "designer",
+      "brand-team"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://widemile.ai",
+      "finalUrl": "https://widemile.ai/",
+      "title": "Widemile",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/widemile-ai/identity.jpg",
+        "sha256": "9f12a5d330c287a7102e743756cbe75a9bcd87fb0917e5dc95a74f0ff9066465",
+        "width": 1280,
+        "height": 900,
+        "bytes": 40255,
+        "alt": "Widemile 首屏：The AI production studio. From brief to final cut."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Light 档 11 美元/月，年付 8.42 美元/月；注册送 400 credits 且不要信用卡",
+      "sourceUrl": "https://widemile.ai/",
+      "evidence": "首屏下方 '400 free credits · No credit card required'；定价区 'Choose the plan that makes you produce more' 里 Light 一行",
+      "confidence": 1
+    },
+    {
+      "field": "integrations",
+      "value": "Widemile MCP，支持 Codex、Claude、Cursor 及任何兼容 MCP 的客户端",
+      "sourceUrl": "https://widemile.ai/mcp",
+      "evidence": "首页 'Bring Widemile inside your AI agent' 段落列出的三个客户端名",
+      "confidence": 1
+    },
+    {
+      "field": "products",
+      "value": "ProStudio 内含 3D Scene、Sound Design、Editor 三块，另有 ProStudio Agent 做制作助理",
+      "sourceUrl": "https://widemile.ai/creative-studio",
+      "evidence": "首页 'Everything you need to produce, inside ProStudio' 下的三段小标题",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/widemile-ai",
+    "designMdUrl": "https://vislexicon.com/site/widemile-ai.md",
+    "checkedAt": "2026-09-15T10:35:29.214Z",
+    "license": "unknown"
+  }
+}

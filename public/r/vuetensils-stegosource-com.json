@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0a2f44183f5ea66d4dd6a26b937a7eb5609a4b0190f1c07391ce03181c148f3b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "vuetensils-stegosource-com",
+  "entityId": "entity-vuetensils-stegosource-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://vuetensils.stegosource.com",
+    "finalUrl": "https://vuetensils.austingil.com/",
+    "checkedAt": "2026-09-15T12:14:02.571Z"
+  },
+  "editorial": {
+    "name": "Vuetensils",
+    "descriptionZh": "自称 naked 的组件库，样式留到最少，组件按 WAI-ARIA 实践带上语义、角色与属性，面向要自己控样式的项目。",
+    "takeawayZh": "只要结构和 ARIA 语义、样式自己写的一套轻量 Vue 组件",
+    "noteZh": "这一屏几乎是空的：顶部只有 Home / Docs / GitHub 三个入口，正中一枚 V 字图标压着 tagline A 'naked' component library for building accessible, lightweight, on-brand applications. 和一枚绿色 Get Started → 按钮，下面并排 A11y Focused、Lightweight、Extensible 三栏，每栏一行说明，其中 A11y Focused 写的是 Follows WAI-ARIA authoring practices；页脚落款 MIT Licensed，署名 Austin Gil。整站文档在站内只有 /introduction 一个内页。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "定位就是无样式：首屏自述 naked component library，重点是 semantics, ARIA attributes, roles 与 WAI-ARIA authoring practices，而不是外观。",
+        "evidenceUrl": "https://vuetensils.austingil.com/"
+      },
+      {
+        "statement": "归 headless-accessible-primitives 而非通用组件库，因为首屏三条卖点分别是无障碍、可裁剪体积和可扩展，没有一条讲视觉风格。",
+        "evidenceUrl": "https://vuetensils.austingil.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:14:02.571Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vuetensils.stegosource.com",
+      "finalUrl": "https://vuetensils.austingil.com/",
+      "title": "| Vuetensils",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vuetensils-stegosource-com/identity.jpg",
+        "sha256": "16eaeb09d4af01bd5df498a6b6c8118f88f307c2bd7124e5b0896e76a0a02459",
+        "width": 1280,
+        "height": 900,
+        "bytes": 61553,
+        "alt": "Vuetensils 首屏：Vuetensils"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT Licensed",
+      "sourceUrl": "https://vuetensils.austingil.com/",
+      "evidence": "首屏页脚一行 MIT Licensed | Copyright © 2018-present | Made with ❤️️ by Austin Gil",
+      "confidence": 1
+    },
+    {
+      "field": "accessibilityClaim",
+      "value": "Follows WAI-ARIA authoring practices，自带 semantics、ARIA attributes、roles",
+      "sourceUrl": "https://vuetensils.austingil.com/",
+      "evidence": "首屏 A11y Focused 一栏的整句说明",
+      "confidence": 1
+    },
+    {
+      "field": "bundleStrategy",
+      "value": "按需引入、从最少样式起步，避免未用代码的体积",
+      "sourceUrl": "https://vuetensils.austingil.com/",
+      "evidence": "首屏 Lightweight 一栏：Include only the functionality you need, start from bare minimum styles",
+      "confidence": 1
+    },
+    {
+      "field": "framework",
+      "value": "unknown（本次抓取的页面文字未出现 Vue 字样，只能从站点定位判断是 Vue 生态的组件库）",
+      "sourceUrl": "https://vuetensils.austingil.com/",
+      "evidence": "首屏标题、三条卖点与页脚均未点名框架；页面未渲染出文档正文",
+      "confidence": 0.4
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/vuetensils-stegosource-com",
+    "designMdUrl": "https://vislexicon.com/site/vuetensils-stegosource-com.md",
+    "checkedAt": "2026-09-15T12:14:02.571Z",
+    "license": "MIT"
+  }
+}

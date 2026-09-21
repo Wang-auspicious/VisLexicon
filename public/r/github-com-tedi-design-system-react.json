@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "087dc1a91642009f43e3508a1ce4fc56039b43d0412868873c3b63249c635697",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-tedi-design-system-react",
+  "entityId": "entity-github-com-tedi-design-system-react",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/TEDI-Design-System/react",
+    "finalUrl": "https://github.com/TEDI-Design-System/react",
+    "checkedAt": "2026-09-15T11:52:59.154Z"
+  },
+  "editorial": {
+    "name": "TEDI-Design-System/react",
+    "descriptionZh": "TEDI 设计系统的 React 实现，按 react-19.0.0 这样的版本号发布；仓库里带 Storybook、视觉测试、design-docs，还有一组给别人接手的 AI Skills 文档。",
+    "takeawayZh": "装 TEDI 的 React 组件包，配 Storybook 做视觉测试",
+    "noteZh": "About 就一句 TEDI React 加 Readme、MIT license 两行，Releases 计数 201，最新一个是 react-19.0.0，当前分支 rc、18 Branches、949 Tags，Contributors 44 人。README 从 Getting Started (Using the package) 排到 AI Agent Skills、Repository Development Guide (Contributors)、AI Skills、Visual Testing。文件树比 core 那头厚不少：.claude、.design-sync、.github、.husky、.storybook、.vscode、design-docs、public、skills/tedi-react、src 排成一列，最近几条提交在改 TEDI-Ready Card component、TEDI-Ready 的 footer、还有 date-field 的日期选择范围报错，另外有一条 docs(skills): update integration skill。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "About 自述 TEDI React，README 首节即 Getting Started (Using the package)，交付物是可按版本安装的 React 组件包。",
+        "evidenceUrl": "https://github.com/TEDI-Design-System/react"
+      },
+      {
+        "statement": "仓库自带 .storybook、design-docs 与 Visual Testing，并配 core 包作为 token 层，是设计系统的实现侧而非零散组件合集。",
+        "evidenceUrl": "https://github.com/TEDI-Design-System/react"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:59.154Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "test"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/TEDI-Design-System/react",
+      "finalUrl": "https://github.com/TEDI-Design-System/react",
+      "title": "GitHub - TEDI-Design-System/react: TEDI React · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-tedi-design-system-react/identity.jpg",
+        "sha256": "43f41306581e57050e12b82bf5a837d8a93bd9743f53b2507139dfa825432187",
+        "width": 1280,
+        "height": 900,
+        "bytes": 141222,
+        "alt": "TEDI-Design-System/react 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/TEDI-Design-System/react",
+      "evidence": "About 面板的 MIT license 行与文件列表中的 LICENSE.md",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "react-19.0.0 (Latest)，累计 201 个 release",
+      "sourceUrl": "https://github.com/TEDI-Design-System/react",
+      "evidence": "About 下方 Releases 区块，Latest 徽标挂在 react-19.0.0 上",
+      "confidence": 1
+    },
+    {
+      "field": "tooling",
+      "value": "Storybook、Visual Testing、design-docs、skills/tedi-react",
+      "sourceUrl": "https://github.com/TEDI-Design-System/react",
+      "evidence": "文件树顶层目录与 README 的小节名逐一对应",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "TEDI-Ready Card 与 TEDI-Ready footer",
+      "sourceUrl": "https://github.com/TEDI-Design-System/react",
+      "evidence": "提交信息 feat(card): TEDI-Ready Card component development 与 feat(footer): TEDI-Ready component",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-tedi-design-system-react",
+    "designMdUrl": "https://vislexicon.com/site/github-com-tedi-design-system-react.md",
+    "checkedAt": "2026-09-15T11:52:59.154Z",
+    "license": "MIT"
+  }
+}

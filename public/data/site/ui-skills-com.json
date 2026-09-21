@@ -1,0 +1,187 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e17db8c96e57e87682c62d7b05b6c17bf052388a025a867b1b8ae4eee133830b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "ui-skills-com",
+  "entityId": "entity-ui-skills-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "ui-skills.com",
+  "official": {
+    "inputUrl": "https://ui-skills.com",
+    "finalUrl": "https://www.ui-skills.com/",
+    "checkedAt": "2026-09-15T10:35:05.243Z"
+  },
+  "editorial": {
+    "name": "UI Skills",
+    "descriptionZh": "UI Skills 是一个面向设计工程（design engineering）的 agent 技能合集，把无障碍、动效、前端手艺和界面质量拆成一个个可被 Claude Code、Cursor 之类编码 agent 加载的技能文件，用 CLI 或 MCP 接进去。另外配一份 Playbook，把具体界面规则写成独立条目。",
+    "takeawayZh": "给编码 agent 装一批 UI 技能，再配一份界面规则速查",
+    "noteZh": "首屏是一块灰底，顶部只有字母拼成的 UI SKILLS 字样和一句「UI Skills is a collection of design-engineering skills to help humans and agents create better interfaces.」，右上角一枚「Star on GitHub 8.5k+」的黑色按钮。往下先给 agent 的入口——CLI 与 MCP 两张卡片，再是 Skills 网格，每张卡写着技能名与用途，右下角标作者：ui-skills-root 和 improve-ui 挂 ibelick，frontend-design 挂 anthropics，improve-animations 挂 emilkowalski。再往下的 Playbook 里是 reserve-space-with-aspect-ratio、use-tabular-nums-for-data 这类单条界面规则。",
+    "recommendation": null,
+    "pricing": "Free - 站点无定价页，skills 与 playbook 可直接浏览，CLI 由 npm/仓库安装",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "directories-indexes",
+    "subcategory": "component-package-indexes",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页主体是一个按主题、栈、意图编排的技能索引（/skills、/collections、/playbook、/agents，另有 /skills/registry.txt 与 /llms.txt 供机器读取），用户拿走的是「一份清单里挑技能装进自己的 agent」，而不是某套组件或某个成品，因此归到实现索引。",
+        "evidenceUrl": "https://www.ui-skills.com/"
+      },
+      {
+        "statement": "配了 CLI 与 MCP 两条安装路径，属于分发已打包实现（技能文件）的目录形态，故用 component-package-indexes 而非通用资源导航。",
+        "evidenceUrl": "https://www.ui-skills.com/cli"
+      },
+      {
+        "statement": "分类存在取舍：Playbook 那部分（如 use-text-balance、use-large-touch-targets）更像界面模式参考，若按那一侧判会落到 reference-standards，但首屏把 Skills 目录排在 Playbook 之前，按「最直接能拿走的」取了索引这一侧。",
+        "evidenceUrl": "https://www.ui-skills.com/playbook"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:35:05.243Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "agent",
+      "ai"
+    ],
+    "deliverables": [
+      "prompt",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "motion",
+      "typography",
+      "ui"
+    ],
+    "platforms": [
+      "cli",
+      "mcp",
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "searchable-directory",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ui-skills.com",
+      "finalUrl": "https://www.ui-skills.com/",
+      "title": "UI Skills for Design Engineers | UI Skills",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/ui-skills-com/identity.jpg",
+        "sha256": "62f65d5a4893a86935ae71813a1991c21ee728db3d5461db3854a81462091843",
+        "width": 1280,
+        "height": 900,
+        "bytes": 72870,
+        "alt": "UI Skills 首屏：UI Skills"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://ui-skills.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/ui-skills-com/identity.jpg",
+          "alt": "UI Skills 首屏：UI Skills",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "distribution",
+      "value": "提供 CLI 与 MCP 两种接入方式，让编码 agent 直接读这份技能目录",
+      "sourceUrl": "https://www.ui-skills.com/",
+      "evidence": "Agent, start here. 区块下并排两张卡片：CLI 写 Run the UI Skills CLI from your terminal，MCP 写 Connect your agent to the UI Skills catalog。",
+      "confidence": 1
+    },
+    {
+      "field": "registry",
+      "value": "技能以结构化清单暴露给机器：/skills/registry.txt、/llms.txt、/skills/topics",
+      "sourceUrl": "https://www.ui-skills.com/",
+      "evidence": "站内路径列表里出现 /skills/registry.txt、/llms.txt、/skills/topics。",
+      "confidence": 1
+    },
+    {
+      "field": "authorship",
+      "value": "每个技能标注来源作者，如 ibelick、anthropics、emilkowalski、shadcn、antfu、addyosmani",
+      "sourceUrl": "https://www.ui-skills.com/skills",
+      "evidence": "Skills 卡片右下角的作者行，如 frontend-design 挂 anthropics、improve-animations 挂 emilkowalski。",
+      "confidence": 1
+    },
+    {
+      "field": "popularity",
+      "value": "顶部 GitHub 按钮显示 8.5k+ stars",
+      "sourceUrl": "https://www.ui-skills.com/",
+      "evidence": "右上角按钮文字 Star on GitHub 8.5k+。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/ui-skills-com.md",
+  "registryUrl": "/r/ui-skills-com.json"
+}

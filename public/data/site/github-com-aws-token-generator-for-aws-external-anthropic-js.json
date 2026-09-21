@@ -1,0 +1,157 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f40adf42f4a8925321bf78ab6aa17ca0fdf70baa2e448224d1b9e25a39ca6438",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-aws-token-generator-for-aws-external-anthropic-js",
+  "entityId": "entity-github-com-aws-token-generator-for-aws-external-anthropic-js",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/aws/token-generator-for-aws-external-anthropic-js",
+    "finalUrl": "https://github.com/aws/token-generator-for-aws-external-anthropic-js",
+    "checkedAt": "2026-09-15T12:16:21.942Z"
+  },
+  "editorial": {
+    "name": "aws/token-generator-for-aws-external-anthropic-js",
+    "descriptionZh": "给 AWS External Anthropic API 签短期 bearer token 的 JavaScript/TypeScript 库，token 时长可设 1 秒到 12 小时。",
+    "takeawayZh": "用 getTokenProvider() 换到 Anthropic 的短期 bearer token",
+    "noteZh": "整个仓库只有 2 次提交、1 Branch、1 Tag，About 栏同样写 No description, website, or topics provided.。README 的 Quick Start 说明实际 token 寿命取 min(指定时长, 凭证过期时间, 12 小时)，默认 12 小时，示例代码是 import { getTokenProvider } from \"@aws/token-generator-for-aws-external-anthropic\"。右下 Languages 条显示 TypeScript 98.4%、JavaScript 1.6%，Contributors 栏写 No contributors。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "与 aws/aws-bedrock-token-generator-js 同类，交付一个签发 bearer token 的 JS 库，用户在构建/集成期装进项目，归 delivery-development-tools/build-deploy-dev-workflow。",
+        "evidenceUrl": "https://github.com/aws/token-generator-for-aws-external-anthropic-js"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:16:21.942Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/aws/token-generator-for-aws-external-anthropic-js",
+      "finalUrl": "https://github.com/aws/token-generator-for-aws-external-anthropic-js",
+      "title": "GitHub - aws/token-generator-for-aws-external-anthropic-js · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-aws-token-generator-for-aws-external-anthropic-js/identity.jpg",
+        "sha256": "dca6d789e74e6b17ecb3315f6cdce3a1aed008e3d43640b0771b2ffa5df97bee",
+        "width": 1280,
+        "height": 900,
+        "bytes": 140077,
+        "alt": "aws/token-generator-for-aws-external-anthropic-js 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/aws/token-generator-for-aws-external-anthropic-js",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-aws-token-generator-for-aws-external-anthropic-js/identity.jpg",
+          "alt": "aws/token-generator-for-aws-external-anthropic-js 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/aws/token-generator-for-aws-external-anthropic-js",
+      "evidence": "右侧 About 栏 Readme 下方标注 Apache-2.0 license，README 页签行里也有 Apache-2.0 license",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "TypeScript 98.4% / JavaScript 1.6%",
+      "sourceUrl": "https://github.com/aws/token-generator-for-aws-external-anthropic-js",
+      "evidence": "页面右侧 Languages 配色条下方的图例写 TypeScript 98.4% 与 JavaScript 1.6%",
+      "confidence": 1
+    },
+    {
+      "field": "tokenLifetime",
+      "value": "默认 12 小时，可设 1 秒至 12 小时",
+      "sourceUrl": "https://github.com/aws/token-generator-for-aws-external-anthropic-js",
+      "evidence": "README 的 Quick Start 段落写 Token duration can be customized (1 second to 12 hours). The actual token lifetime will be: min(specified duration, credentials expiry, 12 hours). Default is 12 hours.",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-aws-token-generator-for-aws-external-anthropic-js.md",
+  "registryUrl": "/r/github-com-aws-token-generator-for-aws-external-anthropic-js.json"
+}

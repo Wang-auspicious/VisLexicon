@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "422054c49ecb5ad0b45035c85e04a423a4e46f70c640d7bc5678fc2b72572dfe",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-louismazel-vue-phone-number-input",
+  "entityId": "entity-github-com-louismazel-vue-phone-number-input",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/LouisMazel/vue-phone-number-input",
+    "finalUrl": "https://github.com/LouisMazel/vue-phone-number-input",
+    "checkedAt": "2026-09-15T12:13:58.129Z"
+  },
+  "editorial": {
+    "name": "LouisMazel/vue-phone-number-input",
+    "descriptionZh": "Vue 2 的手机号输入组件仓库，负责格式化号码并校验有效性；README 顶部已标注停止维护，把 Vue 3 用户指向 maz-ui v3.x。",
+    "takeawayZh": "Vue 2 项目直接引这个电话号码输入框，省掉格式化逻辑",
+    "noteZh": "README 一上来是一行 This plugin is unmaintained，随后分别给出 Vue 2 用 maz-ui v2.x、Vue 3 用 maz-ui v3.x 的替代路径，那边组件叫 MazPhoneNumberInput。目录里 docs、nuxt、public、src 并列，其中 nuxt 目录的提交信息是 (feature) Improve nuxt compatibilty，说明做过 Nuxt 适配。README 的小节还包括 Props API、Events API、Keyboard accessibility 与 Named slots。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 Vue 输入组件，README 有 Props API、Events API、Named slots、Keyboard accessibility 四节，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/LouisMazel/vue-phone-number-input"
+      },
+      {
+        "statement": "About 栏写 A phone number input made with Vue JS (format & valid phone number)，是单一控件而非整套设计系统。",
+        "evidenceUrl": "https://github.com/LouisMazel/vue-phone-number-input"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:13:58.129Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/LouisMazel/vue-phone-number-input",
+      "finalUrl": "https://github.com/LouisMazel/vue-phone-number-input",
+      "title": "GitHub - LouisMazel/vue-phone-number-input: A phone number input made with Vue JS (format & valid phone number) · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-louismazel-vue-phone-number-input/identity.jpg",
+        "sha256": "df5e658522bebbf50f2dae5488f68e9e1a0ec1864ba884cd2663c28aa5b692ab",
+        "width": 1280,
+        "height": 900,
+        "bytes": 130915,
+        "alt": "LouisMazel/vue-phone-number-input 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/LouisMazel/vue-phone-number-input",
+      "evidence": "About 栏的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "status",
+      "value": "已停止维护，Vue 3 迁移到 maz-ui v3.x 的 MazPhoneNumberInput",
+      "sourceUrl": "https://github.com/LouisMazel/vue-phone-number-input",
+      "evidence": "README 顶部的 unmaintained 提示段与紧随其后的两条 maz-ui 替代路径",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "yarn add vue-phone-number-input 或 npm i --save vue-phone-number-input",
+      "sourceUrl": "https://github.com/LouisMazel/vue-phone-number-input",
+      "evidence": "README Installation 一节的两条命令",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-louismazel-vue-phone-number-input",
+    "designMdUrl": "https://vislexicon.com/site/github-com-louismazel-vue-phone-number-input.md",
+    "checkedAt": "2026-09-15T12:13:58.129Z",
+    "license": "MIT"
+  }
+}

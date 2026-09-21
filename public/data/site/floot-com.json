@@ -1,0 +1,157 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "272a773036d2d0a58e49243770adebd83d9021cf583cd306f5a73c63d0b01a42",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "floot-com",
+  "entityId": "entity-floot-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "floot.com",
+  "official": {
+    "inputUrl": "https://floot.com",
+    "finalUrl": "https://floot.com/",
+    "checkedAt": "2026-09-15T09:56:22.384Z"
+  },
+  "editorial": {
+    "name": "Floot",
+    "descriptionZh": "把 Floot 接进 Claude、ChatGPT 或 Cursor，在对话里描述要什么，它把后端、数据库和托管一起搭好，直接给你一个带自己网址的线上应用。",
+    "takeawayZh": "在你常用的 AI 对话里描述需求，拿到带数据库的应用。",
+    "noteZh": "橙色首屏很大一句「Build apps in Claude. Get it live in minutes.」，副标题强调 backend、database, and hosting included，还有 No git, no terminal, no build credits。下面两个按钮是 Add Floot to Claude 和 ChatGPT，再一行 Or add it to Cursor & others，旁边挂着一个 Y Combinator 标记。再往下是一段标题为 Floot Tutorial / How to use 的视频封面。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个已上线、自带数据库与登录的应用，动作是用自然语言描述后由平台生成并发布，归网站与应用构建器。",
+        "evidenceUrl": "https://floot.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:56:22.384Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "generate",
+      "publish",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "mcp",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://floot.com",
+      "finalUrl": "https://floot.com/",
+      "title": "Floot - Build real apps in Claude and ChatGPT",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/floot-com/identity.jpg",
+        "sha256": "30a2a8b135f2c870f2db929997fd1b7496411bdc3a7e23d5c47a2589ffb0c7f8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 85996,
+        "alt": "Floot 首屏：Build apps in Claude. Claude. ChatGPT. Cursor. Get it live i"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://floot.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/floot-com/identity.jpg",
+          "alt": "Floot 首屏：Build apps in Claude. Claude. ChatGPT. Cursor. Get it live i",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "integration",
+      "value": "接进 Claude、ChatGPT、Cursor 的 MCP 连接器",
+      "sourceUrl": "https://floot.com/integrations/mcp",
+      "evidence": "首屏的 Add Floot to Claude 按钮与站点里的 /integrations/mcp 路径",
+      "confidence": 1
+    },
+    {
+      "field": "included",
+      "value": "后端、数据库、登录、邮件通知、Stripe 与 Google 登录接入",
+      "sourceUrl": "https://floot.com/",
+      "evidence": "Everything you need, built-in. 区块下的 01 到 05 小节标题",
+      "confidence": 1
+    },
+    {
+      "field": "backer",
+      "value": "Y Combinator（S 系列）投资",
+      "sourceUrl": "https://floot.com/",
+      "evidence": "首屏按钮下方的 Backed by Y Combinator 标记",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/floot-com.md",
+  "registryUrl": "/r/floot-com.json"
+}

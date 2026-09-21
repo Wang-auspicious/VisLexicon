@@ -1,0 +1,176 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "055069ce368b6b5591df97e178536d1441b72e0b242b7307eecd4c556dcae6b5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-hachej-boring-ui",
+  "entityId": "entity-github-com-hachej-boring-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/hachej/boring-ui",
+    "finalUrl": "https://github.com/hachej/boring-ui",
+    "checkedAt": "2026-09-15T11:42:36.966Z"
+  },
+  "editorial": {
+    "name": "hachej/boring-ui",
+    "descriptionZh": "基于 Pi harness 的 agent 应用框架：前端 React + Vite，后端 Node，核心抽象是 Workspace、Sandbox、UiBridge、AgentHarness，外加 boring-ui-kit 与两个参考应用。",
+    "takeawayZh": "npx 起一个本地 agent 工作台骨架，再按插件改。",
+    "noteZh": "README 目录很长：Give it a try 只给一条 npx @hachej/boring-ui-cli，Built on Pi 把系统拆成 Web Frontend、Web Backend、Pi Harness、Sandbox 四块，Repo map 里 packages 是 boring-agent、boring-workspace、boring-core、boring-ui-kit、boring-ui-cli，apps 下是 full-app 和两个 playground。About 自述「Build agent-powered apps without reinventing the shell.」，86 个 release，最新 v0.1.109，MIT license，语言栏 TypeScript 87.4%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "templates-design-files",
+    "subcategory": "site-app-starters",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的是一个可直接跑起来的应用骨架（npx 一条命令起本地 agent 工作台，另有 full-app 等参考应用可 fork），用户拿到的是项目起点而不是单个组件，故归入网站与应用模板/启动器；仓库里虽含 @hachej/boring-ui-kit，但那只是其中一块。",
+        "evidenceUrl": "https://github.com/hachej/boring-ui"
+      },
+      {
+        "statement": "未归入 delivery-development-tools，是因为它不含构建/部署流水线能力（README 明说仓库不拥有线上部署），核心产物仍是可 fork 的 app starter。",
+        "evidenceUrl": "https://github.com/hachej/boring-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:42:36.966Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "agent",
+      "ai"
+    ],
+    "deliverables": [
+      "starter",
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "prototype",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/hachej/boring-ui",
+      "finalUrl": "https://github.com/hachej/boring-ui",
+      "title": "GitHub - hachej/boring-ui: Build agent-powered apps without reinventing the shell. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-hachej-boring-ui/identity.jpg",
+        "sha256": "050c46509de17bcbd1302789f4c03a28682e9649f4f0b88ae64814e1cb5c2fca",
+        "width": 1280,
+        "height": 900,
+        "bytes": 150103,
+        "alt": "hachej/boring-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/hachej/boring-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-hachej-boring-ui/identity.jpg",
+          "alt": "hachej/boring-ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "quick-start",
+      "value": "npx @hachej/boring-ui-cli",
+      "sourceUrl": "https://github.com/hachej/boring-ui",
+      "evidence": "README 的 Give it a try 一节给出该命令，并说明本地跑「no auth, no database, no setup complexity」",
+      "confidence": 1
+    },
+    {
+      "field": "architecture",
+      "value": "React + Vite 前端 / Node 后端 / Pi harness / Sandbox",
+      "sourceUrl": "https://github.com/hachej/boring-ui",
+      "evidence": "README 的 Architecture 一节写「The frontend is React + Vite」「The backend is Node.js, running the Pi agent loop (AgentHarness)」",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "boring-agent / boring-workspace / boring-core / boring-ui-kit / boring-ui-cli",
+      "sourceUrl": "https://github.com/hachej/boring-ui",
+      "evidence": "README 的 Repo map 一节逐条列出 packages 下的五个包",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/hachej/boring-ui",
+      "evidence": "右侧 About 栏 license 条目显示 MIT license",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-hachej-boring-ui.md",
+  "registryUrl": "/r/github-com-hachej-boring-ui.json"
+}

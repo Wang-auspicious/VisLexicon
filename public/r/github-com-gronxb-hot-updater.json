@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a87a84577f459590208e1da1d2e9dd245cee92ae26c67f319d83c13b92276a11",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-gronxb-hot-updater",
+  "entityId": "entity-github-com-gronxb-hot-updater",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/gronxb/hot-updater",
+    "finalUrl": "https://github.com/gronxb/hot-updater",
+    "checkedAt": "2026-09-15T11:42:57.706Z"
+  },
+  "editorial": {
+    "name": "gronxb/hot-updater",
+    "descriptionZh": "React Native 的 OTA 热更新方案仓库，定位是 CodePush 的自托管替代品。给要自己掌控更新服务端、不想依赖托管服务的移动团队用。",
+    "takeawayZh": "自建 OTA 服务端，给 RN 应用差量推包",
+    "noteZh": "About 一句话说清定位：A self-hostable OTA update solution for React Native (Alternative to CodePush)，官网是 hot-updater.dev。README 标题层级里 Hot Updater 下面接着 Documentation、AI Skills、Key Features、Bundle Diffing、Plugin System，其中 Bundle Diffing 那条提交写的是把一次 OTA 更新包压到约 500kb。仓库根目录摊开 packages、plugins、examples-server、e2e/detox 几层，1,174 次提交、1.7k star，最新版本 v0.36.13。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是 OTA 更新服务端与 SDK（self-hostable OTA update solution），用户带走的是可自建的发布与更新通道，落点在构建、部署与开发工作流，而不是界面组件。",
+        "evidenceUrl": "https://github.com/gronxb/hot-updater"
+      },
+      {
+        "statement": "README 分节列出 Bundle Diffing 与 Plugin System，且 packages / plugins / examples-server 并列，说明它是一套可部署的发布基础设施。",
+        "evidenceUrl": "https://github.com/gronxb/hot-updater"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:42:57.706Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "publish"
+    ],
+    "media": [],
+    "platforms": [
+      "ios",
+      "android",
+      "api"
+    ],
+    "technologies": [
+      "react-native",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/gronxb/hot-updater",
+      "finalUrl": "https://github.com/gronxb/hot-updater",
+      "title": "GitHub - gronxb/hot-updater: A self-hostable OTA update solution for React Native (Alternative to CodePush) · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-gronxb-hot-updater/identity.jpg",
+        "sha256": "a6d5e6a1c611d97f305882d4fc1bd6c9cae6a354f676f9fbe83ff1e0c7fac840",
+        "width": 1280,
+        "height": 900,
+        "bytes": 145359,
+        "alt": "gronxb/hot-updater 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "positioning",
+      "value": "CodePush 的自托管替代品",
+      "sourceUrl": "https://github.com/gronxb/hot-updater",
+      "evidence": "页面标题与 About 面板均写 A self-hostable OTA update solution for React Native (Alternative to CodePush)",
+      "confidence": 1
+    },
+    {
+      "field": "bundleDiffing",
+      "value": "一次 OTA 差量更新约 500kb",
+      "sourceUrl": "https://github.com/gronxb/hot-updater",
+      "evidence": "data 目录的提交信息 feat: Introduce bundle diffing (~500kb OTA Update) (#911)",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "1.7k star / 176 fork / 136 个 release",
+      "sourceUrl": "https://github.com/gronxb/hot-updater",
+      "evidence": "仓库头部 star、fork 计数与右侧 Releases 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-gronxb-hot-updater",
+    "designMdUrl": "https://vislexicon.com/site/github-com-gronxb-hot-updater.md",
+    "checkedAt": "2026-09-15T11:42:57.706Z",
+    "license": "unknown"
+  }
+}

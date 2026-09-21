@@ -1,0 +1,163 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e66875e02c3d7686863ebbbd3d136d9d273205d98af5bb8911ebed917518413e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "moda-app",
+  "entityId": "entity-moda-app",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://moda.app",
+    "finalUrl": "https://moda.app/",
+    "checkedAt": "2026-09-15T10:33:41.922Z"
+  },
+  "editorial": {
+    "name": "Moda",
+    "descriptionZh": "AI 生成但可以逐元素继续改的品牌视觉工具，Slides、Social post、Ads、Document、Carousel 这些都落在真实画布上，导出前不必重画。",
+    "takeawayZh": "输入一句话，拿到可逐元素编辑的品牌幻灯片和社媒图",
+    "noteZh": "首屏一句话 Finally, AI designs you can edit，下面一张白色输入框，底部一排产出类型按钮并排：Slides、Social post、Ads、Document、Carousel、Video、Website、Image、App UI、Print、Other。往下 Start with a Remix 给的是可复制的模板，每张都带 Copy this file——Quarterly Sales Stats Presentation 2 Pages、Conference Speaker Social Post 2 Pages、Fundraising Announcement Social Post 1 Page、Hiring Poster Social Post 1 Page、Lumin Employee Badge Document 1 Page。再往下是四张 CASE STUDY 和 Jennifer Schnadig、Clarence Chio、David Liao 等署名评价，其中一句写 We moved off Canva and haven't looked back。",
+    "recommendation": null,
+    "pricing": "Freemium（首屏按钮写 Get started for free，档位在 /pricing）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "brand-presentation-content-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "产出类型按钮里 Slides、Document、Print、Carousel、Ads 占多数，Remix 模板也全是演示稿、招聘海报、员工工牌一类品牌物料，属于品牌与演示内容生成。",
+        "evidenceUrl": "https://moda.app/"
+      },
+      {
+        "statement": "不归 templates-design-files：模板只是 Remix 的起点，站内文案强调产出是在画布上编辑完成的成品（AI designs you can edit），卖的是生成与编辑而非模板文件。",
+        "evidenceUrl": "https://moda.app/templates"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:33:41.922Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "marketing"
+    ],
+    "deliverables": [
+      "template",
+      "image",
+      "full-page"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "copy",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "image",
+      "video"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "brand-team",
+      "designer",
+      "content-creator"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library",
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://moda.app",
+      "finalUrl": "https://moda.app/",
+      "title": "Moda | AI designs and presentations | Moda",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/moda-app/identity.jpg",
+        "sha256": "3541f3d48dbf38ed69a00ecbbfe844072eeca7e9ca13ca16cafaac6e42b1a933",
+        "width": 1280,
+        "height": 900,
+        "bytes": 71799,
+        "alt": "Moda 首屏：Finally, AI designs you can edit"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroPromise",
+      "value": "Finally, AI designs you can edit",
+      "sourceUrl": "https://moda.app/",
+      "evidence": "首屏衬线大标题，截图与 http.h1 同文",
+      "confidence": 1
+    },
+    {
+      "field": "outputTypes",
+      "value": "Slides / Social post / Ads / Document / Carousel / Video / Website / Image / App UI / Print / Other",
+      "sourceUrl": "https://moda.app/",
+      "evidence": "首屏输入框下方一排产出类型按钮，截图与 live.bodyText 一致",
+      "confidence": 1
+    },
+    {
+      "field": "remixTemplates",
+      "value": "Start with a Remix 提供带页数的可复制模板，如 Quarterly Sales Stats Presentation 2 Pages、Conference Speaker Social Post 2 Pages、Fundraising Announcement Social Post 1 Page",
+      "sourceUrl": "https://moda.app/templates",
+      "evidence": "live.bodyText 中 Start with a Remix 段落的模板名与 Copy this file 按钮",
+      "confidence": 1
+    },
+    {
+      "field": "mcpEndpoint",
+      "value": "站内存在 /mcp 路径",
+      "sourceUrl": "https://moda.app/mcp",
+      "evidence": "live.internalPaths 里除 /templates、/tools、/customers 外还有一个 /mcp 入口",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium（首屏按钮写 Get started for free，档位在 /pricing）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/moda-app",
+    "designMdUrl": "https://vislexicon.com/site/moda-app.md",
+    "checkedAt": "2026-09-15T10:33:41.922Z",
+    "license": "unknown"
+  }
+}

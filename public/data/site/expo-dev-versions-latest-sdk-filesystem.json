@@ -1,0 +1,169 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2a4382f9239d1d733c9f2e7b4847a78f4cbed3ad01b0dcef59f88f51620c887a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "expo-dev-versions-latest-sdk-filesystem",
+  "entityId": "entity-expo-dev-versions-latest-sdk-filesystem",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "docs.expo.dev",
+  "official": {
+    "inputUrl": "https://docs.expo.dev/versions/latest/sdk/filesystem",
+    "finalUrl": "https://docs.expo.dev/versions/latest/sdk/filesystem/",
+    "checkedAt": "2026-09-15T11:58:19.491Z"
+  },
+  "editorial": {
+    "name": "Expo FileSystem",
+    "descriptionZh": "expo-file-system 的 API 参考页：读写设备上的文件与目录、把资源打进原生包、也能下载网络文件；正文有 Installation、Configuration in app config、Usage、Features、Examples、API、Classes 等小节。",
+    "takeawayZh": "装 expo-file-system，读写本地并下载远程文件。",
+    "noteZh": "正文开头一句 expo-file-system provides access to files and directories stored on a device or bundled as assets，标题下挂 Android / iOS / tvOS / Web 四个徽章；Installation 段是 npx expo install expo-file-system 的终端块，Configuration in app config 段解释要走 config plugin，并说明不用 CNG 的项目得手动配置——因为有些属性不能在运行时改，必须重新构建 app binary。左栏 FileSystem 高亮，上一项是 DocumentPicker，下一项是 FileSystem (legacy)。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可装进 React Native 项目的 expo-file-system 模块，按 Expo SDK 的组件/模块参考归类；它其实是文件系统运行时 API 而非视觉组件，这一点存在不确定性。",
+        "evidenceUrl": "https://docs.expo.dev/versions/latest/sdk/filesystem/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:58:19.491Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
+    "technologies": [
+      "react-native",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/filesystem",
+      "finalUrl": "https://docs.expo.dev/versions/latest/sdk/filesystem/",
+      "title": "FileSystem - Expo documentation",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/expo-dev-versions-latest-sdk-filesystem/identity.jpg",
+        "sha256": "ac896910f4ed46db76352410832b19e9591a9bed93026036d63050b9a7233dbc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 123952,
+        "alt": "Expo FileSystem 首屏：Expo FileSystem"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/filesystem",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/expo-dev-versions-latest-sdk-filesystem/identity.jpg",
+          "alt": "Expo FileSystem 首屏：Expo FileSystem",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "安装命令",
+      "value": "npx expo install expo-file-system",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/filesystem/",
+      "evidence": "Installation 一节的终端代码块",
+      "confidence": 1
+    },
+    {
+      "field": "配置方式",
+      "value": "通过内置 config plugin 配置，无需 CNG 的项目要手动配置",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/filesystem/",
+      "evidence": "Configuration in app config 一段的文字，提到 Continuous Native Generation (CNG)",
+      "confidence": 1
+    },
+    {
+      "field": "平台支持",
+      "value": "Android、iOS、tvOS、Web，并 Included in Expo Go",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/filesystem/",
+      "evidence": "标题下方一排平台徽章",
+      "confidence": 1
+    },
+    {
+      "field": "能力范围",
+      "value": "读写设备文件与目录、读取打包进原生工程的资源、下载网络文件",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/filesystem/",
+      "evidence": "正文首段与 Configuration 段说明",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/expo-dev-versions-latest-sdk-filesystem.md",
+  "registryUrl": "/r/expo-dev-versions-latest-sdk-filesystem.json"
+}

@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3202bd5e2848a9d842a7c2f28e5a66987d89b308e6664e868109264684cec19d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mossworkspace-com",
+  "entityId": "entity-mossworkspace-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://mossworkspace.com",
+    "finalUrl": "https://mossworkspace.com/",
+    "checkedAt": "2026-09-15T10:40:36.835Z"
+  },
+  "editorial": {
+    "name": "Moss",
+    "descriptionZh": "Moss 是给创意团队用的视觉工作台，把在线参考、源文件和每日产出收进同一块可自由排布的空间，靠拖拽完成归档与共享。站点目前仍是 beta，只留了邮件订阅入口。",
+    "takeawayZh": "把参考图和源文件拖进共享工作台，素材仍留着出处",
+    "noteZh": "首屏是一张奶白色画布，中央衬线大字 The creative desktop，四周散着蒲公英、火箭、护腕等素材缩略图，右下角挂着一枚 Delivery 标签。导航只有 Workspace / Thesis / Company 三段，往下依次是 Drop it in.、Sort it out.、Find creative clarity. 三节，讲的是 Reveal source（每个素材保留出处）和团队共享每日产出文件夹；整页最像口号的一句是 RIP convert to JPG.。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "ui-prototyping-whiteboard",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页交付的是一块面向创意团队的在线视觉工作空间，用户拿走的是「把素材放进共享画布」这个动作本身，因此归设计与内容创作工具下的白板/工作空间小类。",
+        "evidenceUrl": "https://mossworkspace.com/"
+      },
+      {
+        "statement": "正文写 Share your work and keep it in-sync without stopping to source, export, and compress along the way，核心是素材收集、同步与整理而非原型绘制；词典里没有专门的素材管理小类，这是最贴近的一格，判断存疑。",
+        "evidenceUrl": "https://mossworkspace.com/"
+      },
+      {
+        "statement": "站点处于 beta，首屏与导航都没有定价页，只有 Get updates 邮箱框，因此 pricing 记 unknown。",
+        "evidenceUrl": "https://mossworkspace.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:40:36.835Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "collaborate",
+      "preview"
+    ],
+    "media": [
+      "image",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "discovery",
+      "ideation"
+    ],
+    "audiences": [
+      "designer",
+      "content-creator"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mossworkspace.com",
+      "finalUrl": "https://mossworkspace.com/",
+      "title": "Moss | Where ideas grow",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/mossworkspace-com/identity.jpg",
+        "sha256": "cc8fc7551504eb78b2411bc51eed421c2292277aa6b19e69b24d0b122335e2f2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86802,
+        "alt": "Moss 首屏：The creative desktop"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://mossworkspace.com/",
+      "evidence": "首页唯一的转化入口是 Get updates 邮箱框与 Watch the video，导航 Workspace / Thesis / Company 三段里没有 Pricing",
+      "confidence": 1
+    },
+    {
+      "field": "siteStructure",
+      "value": "Workspace / Thesis / Company 三段导航，另有 /privacy",
+      "sourceUrl": "https://mossworkspace.com/",
+      "evidence": "live.navLabels 与内部路径 /thesis、/company、/privacy",
+      "confidence": 1
+    },
+    {
+      "field": "productClaims",
+      "value": "素材保留出处（Reveal source）、共享每日产出文件夹、免去导出与压缩",
+      "sourceUrl": "https://mossworkspace.com/",
+      "evidence": "正文 Drop it in. 一节：Every asset you add to your workspace is shared instantly and stays tethered to its source",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/mossworkspace-com",
+    "designMdUrl": "https://vislexicon.com/site/mossworkspace-com.md",
+    "checkedAt": "2026-09-15T10:40:36.835Z",
+    "license": "unknown"
+  }
+}

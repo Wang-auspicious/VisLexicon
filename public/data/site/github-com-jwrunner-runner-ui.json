@@ -1,0 +1,177 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "57ab1b400f03d9805f7bcade90c3f9bffaccb6a7773770431dbb0f1062ecd9de",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-jwrunner-runner-ui",
+  "entityId": "entity-github-com-jwrunner-runner-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/jwrunner/runner-ui",
+    "finalUrl": "https://github.com/jacob-8/kitbook",
+    "checkedAt": "2026-09-15T11:44:19.782Z"
+  },
+  "editorial": {
+    "name": "jacob-8/kitbook",
+    "descriptionZh": "给 Svelte 与 SvelteKit 项目的组件文档、原型、调试与测试工作台，站点自称是 SvelteKit 版的 Storybook 替代。文档与 demo 在 kitbook.vercel.app，MIT 许可。",
+    "takeawayZh": "给 SvelteKit 组件库配文档与视觉回归工作台",
+    "noteZh": "URL 从 /jwrunner/runner-ui 直接落到 jacob-8/kitbook，About 写 Documentation, Prototyping, Inspection & Testing Workbench Tool for Svelte (SvelteKit Storybook alternative)。仓库里 .foam/templates 放 markdown 内联组合的模板，主体在 packages/，另有 lint 与 .gitpod.yml 两个目录，测试走 vitest.workspace.ts。README 提到可以把 devDependency 改成 link:../kitbook/packages/kitbook 再开 pnpm package:watch，边改边用；提交记录里有 feat: visual regression tests - comment changes on PR (#30)。当前版本 v1.0.0-beta.31，65 stars。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的是装进项目的开发工作台（文档 + 原型 + 调试 + 测试），README 有本地跑法与把包 link 进自己 App 的做法，属开发工作流工具而非组件库本体。",
+        "evidenceUrl": "https://github.com/jacob-8/kitbook"
+      },
+      {
+        "statement": "候选池写的是 @jwrunner/svelte-ui、归在 Svelte UI 库下，但该 URL 已重定向到 jacob-8/kitbook，页面是工作台工具，name 与分类都以落地页为准。",
+        "evidenceUrl": "https://github.com/jacob-8/kitbook"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:44:19.782Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview",
+      "test"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/jwrunner/runner-ui",
+      "finalUrl": "https://github.com/jacob-8/kitbook",
+      "title": "GitHub - jacob-8/kitbook: Documentation, Prototyping, Inspection & Testing Workbench Tool for Svelte (SvelteKit Storybook alternative) · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-jwrunner-runner-ui/identity.jpg",
+        "sha256": "52163db82a97a77d2c98c34b7ab50296ef0c295c21166b897b8b61427cd48b52",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135804,
+        "alt": "jacob-8/kitbook 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/jwrunner/runner-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-jwrunner-runner-ui/identity.jpg",
+          "alt": "jacob-8/kitbook 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/jacob-8/kitbook",
+      "evidence": "右栏 About 面板列出 MIT license，仓库根目录有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "docsSite",
+      "value": "https://kitbook.vercel.app/",
+      "sourceUrl": "https://github.com/jacob-8/kitbook",
+      "evidence": "About 面板描述下方外链，README 也写 View the Kitbook Docs (and demo)",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "v1.0.0-beta.31",
+      "sourceUrl": "https://github.com/jacob-8/kitbook",
+      "evidence": "右栏 Releases 面板 Latest 标签，共 38 个 release",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "component-driven-development、prototyping、visual-regression-testing、components-library",
+      "sourceUrl": "https://github.com/jacob-8/kitbook",
+      "evidence": "About 面板下方的 topic 标签列表",
+      "confidence": 1
+    },
+    {
+      "field": "urlRedirect",
+      "value": "/jwrunner/runner-ui 落到 jacob-8/kitbook",
+      "sourceUrl": "https://github.com/jacob-8/kitbook",
+      "evidence": "简报的 finalUrl 与 live.title 都指向 jacob-8/kitbook，页面 breadcrumb 显示 jacob-8 / kitbook",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-jwrunner-runner-ui.md",
+  "registryUrl": "/r/github-com-jwrunner-runner-ui.json"
+}

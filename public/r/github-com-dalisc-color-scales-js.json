@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b6d8f5a71bf814f69a4562e23f87950487cc8f0811b6d115821a6f79d462d985",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-dalisc-color-scales-js",
+  "entityId": "entity-github-com-dalisc-color-scales-js",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/dalisc/color-scales-js",
+    "finalUrl": "https://github.com/dalisc/color-scales-js",
+    "checkedAt": "2026-09-15T12:52:11.267Z"
+  },
+  "editorial": {
+    "name": "dalisc/color-scales-js",
+    "descriptionZh": "模仿 Excel 条件格式里 Color Scales 的库：给最小值、最大值和一组色标，传一个数值就返回它在渐变上的颜色。",
+    "takeawayZh": "给一个数值，返回渐变上对应的颜色",
+    "noteZh": "About 栏写 A utility mimicking Microsoft Excel's Color Scales conditional formatting, which returns the color of a value in a linear gradient between two color endpoints with defined min and max values。README 的 Usage 里是 const ColorScale = require('color-scales')，也可以直接从 cdn.skypack.dev/color-scales 引，文档说 ColorScale 类有 min、max、colorStops 三个属性，另附一个 Basic CodePen Demo。仓库 11 star、84 个 commit、2 branches、11 Tags，最新 release 是 Color Scales v3.1，Used by 100，贡献者只有 dalisc 一位。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "asset-conversion-optimization",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个把数值映射成渐变颜色的库（输入数字、输出色值），属转换类开发库，常用在数据可视化取值上；词典没有数据着色这一类，转换是最近的小类。",
+        "evidenceUrl": "https://github.com/dalisc/color-scales-js"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:52:11.267Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "source-available",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/dalisc/color-scales-js",
+      "finalUrl": "https://github.com/dalisc/color-scales-js",
+      "title": "GitHub - dalisc/color-scales-js: A utility mimicking Microsoft Excel's Color Scales conditional formatting, which returns the color of a value in a linear gradient between two color endpoints with defined min and max values · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-dalisc-color-scales-js/identity.jpg",
+        "sha256": "cc03daa53e785231e05122c2e06f5015d64a29a89f38b73b8577922d76534754",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114813,
+        "alt": "dalisc/color-scales-js 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "core-class",
+      "value": "ColorScale，属性为 min、max、colorStops",
+      "sourceUrl": "https://github.com/dalisc/color-scales-js",
+      "evidence": "README 的 Important Classes 一段逐个列出 ColorScale 的三个属性",
+      "confidence": 1
+    },
+    {
+      "field": "self-description",
+      "value": "模仿 Excel Color Scales 条件格式",
+      "sourceUrl": "https://github.com/dalisc/color-scales-js",
+      "evidence": "About 栏与 README 首段都是 A utility mimicking Microsoft Excel's Color Scales conditional formatting",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown（侧栏未列出许可证名称）",
+      "sourceUrl": "https://github.com/dalisc/color-scales-js",
+      "evidence": "右侧边栏只有 Readme、Activity、Stars、Watching、Forks，没有 License 行，仓库文件列表里也没有 LICENSE",
+      "confidence": 0.8
+    },
+    {
+      "field": "latest-release",
+      "value": "Color Scales v3.1（共 4 个 release）",
+      "sourceUrl": "https://github.com/dalisc/color-scales-js",
+      "evidence": "右侧 Releases 区标 Color Scales v3.1 Latest、5 years ago，并写 + 3 releases",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-dalisc-color-scales-js",
+    "designMdUrl": "https://vislexicon.com/site/github-com-dalisc-color-scales-js.md",
+    "checkedAt": "2026-09-15T12:52:11.267Z",
+    "license": "unknown"
+  }
+}

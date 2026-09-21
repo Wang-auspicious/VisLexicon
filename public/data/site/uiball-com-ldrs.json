@@ -1,0 +1,186 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2c48704a974b223b9e497a9a589b43907fb3fa9b3a664a5c71e3726b12fcf90a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "uiball-com-ldrs",
+  "entityId": "entity-uiball-com-ldrs",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "uiball.com",
+  "official": {
+    "inputUrl": "https://uiball.com/ldrs",
+    "finalUrl": "https://uiball.com/ldrs/",
+    "checkedAt": "2026-09-15T12:00:30.595Z"
+  },
+  "editorial": {
+    "name": "LDRS",
+    "descriptionZh": "用 HTML、CSS、SVG 写的加载动画集合，做成可当普通 HTML 元素用的 web components，另有 React 版本。给要往任何框架里塞 loading 态的开发者。",
+    "takeawayZh": "拷一段 l-ring，把加载动画当 HTML 元素塞进项目",
+    "noteZh": "首屏只有三样东西：粉色的 L、珊瑚色的 R 加三条橙色竖条拼成的巨大标，一句 Free, open-source loaders and spinners for your next project.，下面并排 GitHub 与 npm 两颗按钮，再加一个下滑箭头。正文把用法拆成 1. Install、2. Import、3. Implement 三步，每段代码旁都带 Copy，例如 npm install ldrs、import 'ldrs/ring' 和 l-ring 元素；末尾列出一整页动画名，Ring、Tailspin、Squircle、Infinity、Metronome、Newton's Cradle、Pinwheel 都在其中。",
+    "recommendation": null,
+    "pricing": "Free（站方在首屏自述 free, open-source）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可以直接放进页面的组件：正文三步走 Install / Import / Implement，示例即 l-ring 这类自定义元素，并说明同时提供 React 与 web components 两种形态。",
+        "evidenceUrl": "https://uiball.com/ldrs/"
+      },
+      {
+        "statement": "拿不准的一点：内容以动效为主（整页 40 多款加载动画），按 visual-implementation / motion-interaction-code 归类也讲得通；选 general-ui-components 是因为用户拿走的动作是装包、拷标签、嵌进项目，产物是组件。",
+        "evidenceUrl": "https://uiball.com/ldrs/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:30.595Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "html",
+      "css",
+      "svg",
+      "react",
+      "web-components"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://uiball.com/ldrs",
+      "finalUrl": "https://uiball.com/ldrs/",
+      "title": "LDRS — UI Ball",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/uiball-com-ldrs/identity.jpg",
+        "sha256": "e002e881fe29c9d2c353a3aa9363cfee7824101ac95d7c803a1946a7592fe116",
+        "width": 1280,
+        "height": 900,
+        "bytes": 36754,
+        "alt": "LDRS 首屏：L D R S"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://uiball.com/ldrs",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/uiball-com-ldrs/identity.jpg",
+          "alt": "LDRS 首屏：L D R S",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "selfDescription",
+      "value": "Free, open-source loaders and spinners for your next project. Built with HTML, CSS & SVG, available as React and web components",
+      "sourceUrl": "https://uiball.com/ldrs/",
+      "evidence": "首屏 logo 下方的说明段落，截图与正文同文",
+      "confidence": 1
+    },
+    {
+      "field": "installCommand",
+      "value": "npm install ldrs",
+      "sourceUrl": "https://uiball.com/ldrs/",
+      "evidence": "正文 1. Install 段的代码行，右侧带 Copy 按钮",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "l-ring 自定义元素，可按 size 与 color 属性定制",
+      "sourceUrl": "https://uiball.com/ldrs/",
+      "evidence": "正文 2. Import 段 import 'ldrs/ring' 与 3. Implement 段的元素示例",
+      "confidence": 1
+    },
+    {
+      "field": "loaderNames",
+      "value": "Ring、Ring 2、Tailspin、Line Spinner、Squircle、Reuleaux、Dot Spinner、Spiral、Bouncy、Waveform、Hourglass、Infinity、Trefoil、Helix、Quantum、Orbit、Momentum、Metronome、Jelly、Mirage、Pulsar、Ripples、Miyagi、Pinwheel 等",
+      "sourceUrl": "https://uiball.com/ldrs/",
+      "evidence": "正文 The Loaders 一节逐个列出的动画名",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "unknown（页面自述 Free, open-source，但无定价页可核）",
+      "sourceUrl": "https://uiball.com/ldrs/",
+      "evidence": "首屏说明句；全站内部路径只有 / 一条，没有 pricing 页",
+      "confidence": 0.6
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/uiball-com-ldrs.md",
+  "registryUrl": "/r/uiball-com-ldrs.json"
+}

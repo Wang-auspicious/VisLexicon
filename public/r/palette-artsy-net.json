@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "01c89a2c7b937ddd290a2f024103169160d250e69f9587de06d93463d979c6cc",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "palette-artsy-net",
+  "entityId": "entity-palette-artsy-net",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://palette.artsy.net",
+    "finalUrl": "https://palette.artsy.net/",
+    "checkedAt": "2026-09-15T12:15:40.452Z"
+  },
+  "editorial": {
+    "name": "Artsy Palette Storybook",
+    "descriptionZh": "Artsy Palette 的 Storybook 实例，把设计系统的每个组件按名字列在侧栏，点开逐个看示例。",
+    "takeawayZh": "翻 Artsy 组件示例，含三个图表组件的入口",
+    "noteZh": "进去是 Storybook，左栏 COMPONENTS 从 AutocompleteInput、Avatar、Banner 一路排到 Toggle、Tooltip，末尾 UTILS 下单独挂着 BarChart、DonutChart、LineChart 三个图表组件；顶上只有 Guides 与 Theme 两项加一个 Find components 搜索框，主画布停在加载圈里，没渲染出组件内容。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面是 Artsy Palette 设计系统的组件浏览器，侧栏按组件名逐条列出，交付物是成套组件的示例。",
+        "evidenceUrl": "https://palette.artsy.net/"
+      },
+      {
+        "statement": "侧栏同时含 Guides 与 Theme 两组，说明除了组件还带主题与使用指引，符合完整组件套件而非单站案例。",
+        "evidenceUrl": "https://palette.artsy.net/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:15:40.452Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://palette.artsy.net",
+      "finalUrl": "https://palette.artsy.net/",
+      "title": "Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/palette-artsy-net/identity.jpg",
+        "sha256": "61249dbe0ac52f53c8adc750551c0ab77bccf726438536f4bb6203936f4d7185",
+        "width": 1280,
+        "height": 900,
+        "bytes": 41019,
+        "alt": "Artsy Palette Storybook 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "chartComponents",
+      "value": "BarChart、DonutChart、LineChart",
+      "sourceUrl": "https://palette.artsy.net/",
+      "evidence": "侧栏 UTILS 分组下单独列出的三个图表组件名",
+      "confidence": 1
+    },
+    {
+      "field": "search",
+      "value": "Find components 搜索框（⌃ K）",
+      "sourceUrl": "https://palette.artsy.net/",
+      "evidence": "侧栏顶部输入框，右侧标快捷键 ⌃ K",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://palette.artsy.net/",
+      "evidence": "公开 Storybook，无登录或付费提示",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/palette-artsy-net",
+    "designMdUrl": "https://vislexicon.com/site/palette-artsy-net.md",
+    "checkedAt": "2026-09-15T12:15:40.452Z",
+    "license": "unknown"
+  }
+}

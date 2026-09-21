@@ -1,0 +1,169 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b9d79894ec5de78601adaf3ada440911dddb47042d8fa6480f9dc97006ad57af",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "crevas-ai",
+  "entityId": "entity-crevas-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://crevas.ai",
+    "finalUrl": "https://crevas.ai/",
+    "checkedAt": "2026-09-15T09:45:41.601Z"
+  },
+  "editorial": {
+    "name": "Crevas",
+    "descriptionZh": "Crevas 把 Veo 3.1、Sora 2、Kling、Wan 2.5 等视频模型并到一张画布上，先把剧本拆成 shot list 再转成提示词，然后并行跑多个模型、实时协作比对结果。",
+    "takeawayZh": "剧本先拆镜头表再变提示词，多模型同画布并行",
+    "noteZh": "首屏大标题 The AI Video Canvas 下面直接点名对手：“Juggling Veo 3.1, Sora 2, Kling, Wan 2.5, and ChatGPT?”。它跟纯生成器不一样的地方在左侧工具链——Generate Shot List & Prompt、Script to Shot List、Shot List to Prompt、YouTube to Transcript 四条，等于把剧本到镜头表到提示词这段苦活单独做成了页面。功能对比用时间轴画：Parallel Generation 3 hours、Prompt Assistant 2 hours、Visual Collaboration 1 day，都指向右边那个 One Canvas。导航栏塞了二十多个模型 landing page（Hailuo、Waver、PixVerse、Haiper、Luma、Ray3、Seedance、Runway Aleph、Gen-4 等），几乎是拿模型名做 SEO 矩阵。",
+    "recommendation": null,
+    "pricing": "Paid with trial — subscription plans on /pricing",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "video-motion-audio-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "核心交付物是视频，产品把多个第三方视频模型聚合到一张画布上生成与迭代。",
+        "evidenceUrl": "https://crevas.ai/"
+      },
+      {
+        "statement": "站内 /script-to-shot-list、/shot-list-to-prompt、/generate-shot-list-and-prompt、/youtube-transcript 四条工具页把剧本到提示词的流程固化。",
+        "evidenceUrl": "https://crevas.ai/script-to-shot-list"
+      },
+      {
+        "statement": "首页用 3 hours / 2 hours / 1 day 的时间对比推销并行生成与实时协作，卖点是出片速度。",
+        "evidenceUrl": "https://crevas.ai/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:45:41.601Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "marketing"
+    ],
+    "deliverables": [
+      "video",
+      "prompt"
+    ],
+    "actions": [
+      "browse",
+      "generate",
+      "edit",
+      "export",
+      "purchase"
+    ],
+    "media": [
+      "video",
+      "image",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation",
+      "design"
+    ],
+    "audiences": [
+      "content-creator",
+      "designer",
+      "brand-team"
+    ],
+    "access": [
+      "freemium",
+      "paid",
+      "login-required"
+    ],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [
+      "editorial-feed",
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://crevas.ai",
+      "finalUrl": "https://crevas.ai/",
+      "title": "Crevas AI - AI Video Creation Canvas with Veo 3 & more",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/crevas-ai/identity.jpg",
+        "sha256": "addd41fa984704fed26ad33836b5fa1f0b42bb1905833b7f2da7a0f346e9e97b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 44608,
+        "alt": "Crevas 首屏：The AI Video Canvas"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "modelCoverage",
+      "value": "画布内聚合 Veo 3.1、Sora 2、Kling、Wan 2.5，并另开 Hailuo、PixVerse、Haiper、Luma、Ray3、Seedance、Runway Aleph、Runway Gen-4 等二十余个模型页",
+      "sourceUrl": "https://crevas.ai/",
+      "evidence": "导航栏与 /features/... 系列路径逐条可读。",
+      "confidence": 1
+    },
+    {
+      "field": "pipeline",
+      "value": "把脚本转成分镜与提示词的独立工具链：Script to Shot List、Shot List to Prompt、Generate Shot List & Prompt、YouTube to Transcript",
+      "sourceUrl": "https://crevas.ai/script-to-shot-list",
+      "evidence": "站内四条工具路径与首页 FEATURES 区块。",
+      "confidence": 1
+    },
+    {
+      "field": "collaboration",
+      "value": "支持实时协作与并行生成，页面以 3 hours / 2 hours / 1 day 对比传统流程",
+      "sourceUrl": "https://crevas.ai/",
+      "evidence": "首页 FEATURES 区的 Parallel Generation、Prompt Assistant、Visual Collaboration 三组时间对比。",
+      "confidence": 1
+    },
+    {
+      "field": "characters",
+      "value": "提供 Auto Character & Scene Cards 以维持角色与场景一致性",
+      "sourceUrl": "https://crevas.ai/blog/introducing-auto-character-scene-cards-consistency-made-easy",
+      "evidence": "站内该博客路径标题。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。",
+      "存在付费层：Paid with trial — subscription plans on /pricing。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/crevas-ai",
+    "designMdUrl": "https://vislexicon.com/site/crevas-ai.md",
+    "checkedAt": "2026-09-15T09:45:41.601Z",
+    "license": "proprietary"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f4850a68bdcaa81d5220d160a6b29d575982c9e4f8b2eb430fa0d061ce195ceb",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "wise-com",
+  "entityId": "entity-wise-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "wise.com",
+  "official": {
+    "inputUrl": "https://wise.com",
+    "finalUrl": "https://wise.com/",
+    "checkedAt": "2026-09-15T11:35:18.810Z"
+  },
+  "editorial": {
+    "name": "Wise",
+    "descriptionZh": "Wise 的国际账户与跨境汇款服务，Personal、Business、Platform 三条线并行。这次首屏没渲染出来，截图里只剩绿色底和顶部那条三段式导航。",
+    "takeawayZh": "截图没渲染出正文，只确认顶部三段式导航",
+    "noteZh": "截下来的首屏是一整块 Wise 绿，除顶部导航外什么都没有：左边 wise 字标，中间 Personal / Business / Platform 三段，右边英格兰旗配 EN 语言切换、Help、Log in 和黑底 Sign up 药丸。简报抓到的正文里能读到 The current account for home and abroad、Open an account in minutes、24/7/365 customer support、The account that moves with you，以及个人线下的 Send money / Receive money / Get a debit card / Earn returns 和一组按人群切的入口（For expats and relocators / For global travellers / For frequent senders / For kids），但这些内容在截图里都没有画出来，无法核实版式。",
+    "recommendation": null,
+    "pricing": "unknown（首屏未渲染出价格信息；正文只出现 Open a free account，另有 /gb/pricing 与 /gb/pricing/business）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首屏渲染失败，截图除导航外为空；按简报抓到的 DOM 文本，页面交付的是 Wise 自己的账户卖点与开户入口，来自 saaslandingpage.com 的落地页灵感池，故归产品与公司官网，但版式部分证据不足。",
+        "evidenceUrl": "https://wise.com/"
+      },
+      {
+        "statement": "顶部导航只有 Personal / Business / Platform 三段加 Help、Log in、Sign up，路径分到 /gb/account、/gb/business、/platform，是产品门户站。",
+        "evidenceUrl": "https://wise.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:35:18.810Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://wise.com",
+      "finalUrl": "https://wise.com/",
+      "title": "Wise: The international account | Money without borders | Wise United Kingdom",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/wise-com/identity.jpg",
+        "sha256": "28d24407d16a57a31e1548b42bfe4a94582fedd6a5bf5ffcad9a9c6b8eac7070",
+        "width": 1280,
+        "height": 900,
+        "bytes": 16037,
+        "alt": "Wise 首屏：The current account for home and abroad"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://wise.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/wise-com/identity.jpg",
+          "alt": "Wise 首屏：The current account for home and abroad",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "renderStatus",
+      "value": "首屏未渲染出内容，截图只有 Wise 绿底色与顶部导航条",
+      "sourceUrl": "https://wise.com/",
+      "evidence": "截图 identity.jpg 中除导航外整页为纯绿色",
+      "confidence": 1
+    },
+    {
+      "field": "navStructure",
+      "value": "顶部导航为 Personal / Business / Platform 三段，右侧 EN 语言切换、Help、Log in、Sign up",
+      "sourceUrl": "https://wise.com/",
+      "evidence": "截图顶部唯一可见的一行元素",
+      "confidence": 1
+    },
+    {
+      "field": "accountHeadline",
+      "value": "The current account for home and abroad（简报 live.heads 首条，截图未显示）",
+      "sourceUrl": "https://wise.com/",
+      "evidence": "简报 live 段 heads 与 bodyText，截图未渲染",
+      "confidence": 1
+    },
+    {
+      "field": "supportClaim",
+      "value": "24/7/365 customer support，页面另写 100,000s of new customers join Wise every week",
+      "sourceUrl": "https://wise.com/",
+      "evidence": "简报 live.bodyText 中 We move billions for millions worldwide 一段",
+      "confidence": 1
+    },
+    {
+      "field": "freeEntry",
+      "value": "Open a free account（正文出现），站点另分 Personal pricing 与 Business pricing 两套定价页",
+      "sourceUrl": "https://wise.com/",
+      "evidence": "简报 live.bodyText 与导航中的 Personal pricing、Business pricing",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/wise-com.md",
+  "registryUrl": "/r/wise-com.json"
+}

@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b9803779abc0a45cf9d4ac1e0a2d103e1542befb0173b206934f66fbfe11c60d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-auth0-id-generator",
+  "entityId": "entity-github-com-auth0-id-generator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/auth0/id-generator",
+    "finalUrl": "https://github.com/auth0/id-generator",
+    "checkedAt": "2026-09-15T12:48:14.846Z"
+  },
+  "editorial": {
+    "name": "auth0/id-generator",
+    "descriptionZh": "生成带前缀的随机 ID 的小包，前缀风格照 Stripe 那套来，还能限定哪些前缀合法。",
+    "takeawayZh": "生成 cus_ 这类带前缀的随机 ID，可限前缀白名单",
+    "noteZh": "README 的 Using 段从最简写法讲起：new IdGenerator().new('cus') 输出 cus_lO1DEQWBbQAACfHO；再往下是 new IdGenerator(['cus','con']) 预设允许的前缀集合，传进名单外的 'cli' 会直接抛错；New API 一节换成 .get()，能一次配 len、alphabet、prefix、separator，例如 {len:5, alphabet:'abc123', prefix:'foo', separator:':'} 得到 foo:2a2b1。文件树只有 lib 与 test 两个目录，加 .gitignore、LICENSE、README.md、package-lock.json、package.json，共 39 次提交；右栏标 MIT license，Releases 6 tags、Used by 140、Contributors 8。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可安装的 npm 库，用户动作是装进后端或脚本里生成 ID，属于开发工具；受控词典没有这一细分小类，取最近的 build-deploy-dev-workflow。",
+        "evidenceUrl": "https://github.com/auth0/id-generator"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:48:14.846Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/auth0/id-generator",
+      "finalUrl": "https://github.com/auth0/id-generator",
+      "title": "GitHub - auth0/id-generator: Generates random ids with a prefix (a la Stripe) · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-auth0-id-generator/identity.jpg",
+        "sha256": "cb4607959d6ae5aca2e7bdc9347417805f7e0c7179a032d9e0beb3cf26ebc41d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 109071,
+        "alt": "auth0/id-generator 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/auth0/id-generator",
+      "evidence": "README 顶部标 MIT license，右栏 About 也有 MIT license 条目",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/auth0/id-generator",
+      "evidence": "README 的 Installing 段只给 npm i auth0-id-generator 一条命令，仓库无定价内容",
+      "confidence": 0.9
+    },
+    {
+      "field": "package-name",
+      "value": "auth0-id-generator",
+      "sourceUrl": "https://github.com/auth0/id-generator",
+      "evidence": "README 的 Installing 段命令 npm i auth0-id-generator",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-auth0-id-generator",
+    "designMdUrl": "https://vislexicon.com/site/github-com-auth0-id-generator.md",
+    "checkedAt": "2026-09-15T12:48:14.846Z",
+    "license": "MIT"
+  }
+}

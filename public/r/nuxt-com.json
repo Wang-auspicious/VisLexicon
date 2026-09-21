@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "eb53f9b5ef73670ee98e0db39baf62664a799db248242a245b7cbc800ba11e89",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "nuxt-com",
+  "entityId": "entity-nuxt-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://nuxt.com",
+    "finalUrl": "https://nuxt.com/",
+    "checkedAt": "2026-09-15T11:16:10.917Z"
+  },
+  "editorial": {
+    "name": "Nuxt",
+    "descriptionZh": "Vue 全栈框架 Nuxt 的官网（当前 v4.5.2）：文件路由、自动导入、SSR/SSG 按页面级选择、200+ 模块和 Nitro 服务端，都在首屏和一屏功能表里交代完。",
+    "takeawayZh": "复制一行 npm create 装走 Vue 全栈框架",
+    "noteZh": "深色首屏，左上一枚 Nuxt v4.5.2 版本徽标，右上是 Ask Nuxi 搜索框、主题切换和 GitHub 星数 60.8K。主标题 The Full-Stack Vue Framework 里的 Vue 用亮绿，旁边横幅挂着 Nuxt 4.5.1 is out。按钮是 Get started 和 Nuxt in 100 seconds，再往下直接给一行可复制的 npm create nuxt@latest。右半屏是活的代码预览：标签页 Minimal / Routing / Data Fetching / Auto-Imports / API Routes，文件树里 app/app.vue 与 package.json，编辑器里是 <script setup lang=\"ts\"> 包着 Hello Nuxt {{ version }}。往下 Everything you need, nothing you don't 一节排了十二格，Zero Configuration、Rendering Modes、Data Fetching、Middleware、Type-safe with TypeScript 各占一格；Built on proven tools 那句写 Vue for the frontend. Nitro for the server.。",
+    "recommendation": null,
+    "pricing": "Free（框架免费用，商业支持走 Enterprise 与 Sponsors）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户来这儿最直接拿走的是 Nuxt 这个框架本身——首屏就给 npm create nuxt@latest 复制命令，导航是 Docs / Modules / Templates / Enterprise，所以按开发工作流工具归类，而不是按单站案例展示。",
+        "evidenceUrl": "https://nuxt.com/"
+      },
+      {
+        "statement": "同批其余条目是产品介绍页，Nuxt 有 SoftwareApplication 的 JSON-LD 类型、独立模块注册表与 GitHub 星数入口，功能上是构建阶段的框架，归入 delivery-development-tools 比 single-site-showcase 更贴近实际用途。",
+        "evidenceUrl": "https://nuxt.com/modules"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:16:10.917Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "starter"
+    ],
+    "actions": [
+      "install",
+      "learn",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://nuxt.com",
+      "finalUrl": "https://nuxt.com/",
+      "title": "Nuxt: The Full-Stack Vue Framework",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/nuxt-com/identity.jpg",
+        "sha256": "fc5333c59608f520694e3298d202877bc66b62511d740beb4d09416554a088fb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 87599,
+        "alt": "Nuxt 首屏：The Full-Stack Vue Framework"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "version",
+      "value": "站内徽标写 v4.5.2，正文横幅提示 Nuxt 4.5.1 is out",
+      "sourceUrl": "https://nuxt.com/",
+      "evidence": "导航左侧 Nuxt 后面的绿色版本号 v4.5.2，首屏标题上方一枚 Nuxt 4.5.1 is out 的胶囊按钮",
+      "confidence": 1
+    },
+    {
+      "field": "modules",
+      "value": "200+ 个模块可按需加装",
+      "sourceUrl": "https://nuxt.com/modules",
+      "evidence": "功能表 Modular 一格写 Extend Nuxt features with 200+ modules to ship your application faster，导航另有 Modules 入口",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "前端 Vue、服务端 Nitro，打包器可自选",
+      "sourceUrl": "https://nuxt.com/",
+      "evidence": "Built on proven tools 一节写 Vue for the frontend. Nitro for the server. Your choice of bundler.",
+      "confidence": 1
+    },
+    {
+      "field": "community",
+      "value": "GitHub 星数 60.8K，页脚有 Nuxters、Team、Agencies 等社区入口",
+      "sourceUrl": "https://nuxt.com/",
+      "evidence": "导航最右侧的 GitHub 图标与 60.8K 数字，底部导航列 Nuxters / Team / Design Kit / Showcase / Sponsors",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/nuxt-com",
+    "designMdUrl": "https://vislexicon.com/site/nuxt-com.md",
+    "checkedAt": "2026-09-15T11:16:10.917Z",
+    "license": "unknown"
+  }
+}

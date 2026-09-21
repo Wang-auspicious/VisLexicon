@@ -1,0 +1,164 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a8696e73de73b621a2dda2744c766b820f5703768ad7b2a19b7f5f470cdd5433",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-bulbasaur1k-creatox-ui-kit",
+  "entityId": "entity-github-com-bulbasaur1k-creatox-ui-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/bulbasaur1k/creatox-ui-kit",
+    "finalUrl": "https://github.com/bulbasaur1k/creatox-ui-kit",
+    "checkedAt": "2026-09-15T11:57:19.818Z"
+  },
+  "editorial": {
+    "name": "bulbasaur1k/creatox-ui-kit",
+    "descriptionZh": "React 加 Tailwind v4 的 UI kit，README 是俄语。它只给原语、布局和领域层，明确说没有现成页面与 dashboard；组件状态尽量交回浏览器原生（details、dialog、popover 属性），运行时 JS 很少。",
+    "takeawayZh": "拿一套把状态交给浏览器的 React 原语",
+    "noteZh": "README 开头就写明「Готовых страниц и дашбордов здесь нет — примитивы, макеты и доменный слой」（这里没有现成页面和仪表盘），接着 Что делает платформа 一段逐个交代实现方式：Tree 是 details、Dialog 是 dialog、Popover 与 Menu 用 popover 属性、本地 Tabs 是 radio-группа、тултип 用 ::after { content: attr(…) }。文件列表里 docs 与 figma 两个目录的提交信息都是 feat(figma): token plugin and a component sheet for designers，另外还有 Таблица данных（DataTable 基于 TanStack Table v9）、Токены、Плотность、Состояние в атрибутах、Чего кит не обещает 等小节，组件展示站在 bulbasaur1k.github.io/creatox-ui-kit。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可安装的 React 组件包，配套一个组件展示站和一份给设计师的 Figma token 插件；它明确不提供现成页面，所以不是模板类，按原子组件归到通用界面组件库。",
+        "evidenceUrl": "https://github.com/bulbasaur1k/creatox-ui-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:19.818Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive",
+      "design-file"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/bulbasaur1k/creatox-ui-kit",
+      "finalUrl": "https://github.com/bulbasaur1k/creatox-ui-kit",
+      "title": "GitHub - bulbasaur1k/creatox-ui-kit: UI kit creatox · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-bulbasaur1k-creatox-ui-kit/identity.jpg",
+        "sha256": "5ae69669d4f328045f3668c93dc8606fdf0416bf6ade1d6be3bf0dd20edf48dd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128709,
+        "alt": "bulbasaur1k/creatox-ui-kit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/bulbasaur1k/creatox-ui-kit",
+      "evidence": "右侧 About 面板的 MIT license 与 README 里的 MIT license 行",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "React + Tailwind v4，TypeScript 83.6%",
+      "sourceUrl": "https://github.com/bulbasaur1k/creatox-ui-kit",
+      "evidence": "README 首句 UI kit для React на Tailwind v4 与右侧 Languages 面板",
+      "confidence": 1
+    },
+    {
+      "field": "principle",
+      "value": "状态交给浏览器原生元素：details、dialog、popover 属性、radio 组",
+      "sourceUrl": "https://github.com/bulbasaur1k/creatox-ui-kit",
+      "evidence": "README Что делает платформа 一节逐条列举 Tree、Dialog、Popover 与 Menu、Tabs、тултип 的实现",
+      "confidence": 1
+    },
+    {
+      "field": "figma",
+      "value": "token 插件与一份给设计师的组件表",
+      "sourceUrl": "https://github.com/bulbasaur1k/creatox-ui-kit",
+      "evidence": "docs 与 figma 目录那两行的提交信息 feat(figma): token plugin and a component sheet for designers",
+      "confidence": 1
+    },
+    {
+      "field": "showcase",
+      "value": "bulbasaur1k.github.io/creatox-ui-kit，全部组件在同一页 стори Everything",
+      "sourceUrl": "https://github.com/bulbasaur1k/creatox-ui-kit",
+      "evidence": "README 正文关于 Витрина компонентов 的两句",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/bulbasaur1k/creatox-ui-kit",
+      "evidence": "公开仓库加 MIT license，无付费入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-bulbasaur1k-creatox-ui-kit",
+    "designMdUrl": "https://vislexicon.com/site/github-com-bulbasaur1k-creatox-ui-kit.md",
+    "checkedAt": "2026-09-15T11:57:19.818Z",
+    "license": "MIT"
+  }
+}

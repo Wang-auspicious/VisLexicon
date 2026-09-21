@@ -1,0 +1,176 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "544a2c068c3ac133c5d773c2a6820a260dcbb3c506ca633bd08bee4c2b12a289",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-kubev2v-migration-planner-agent-ui",
+  "entityId": "entity-github-com-kubev2v-migration-planner-agent-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/kubev2v/migration-planner-agent-ui",
+    "finalUrl": "https://github.com/kubev2v/migration-planner-agent-ui",
+    "checkedAt": "2026-09-15T11:47:37.375Z"
+  },
+  "editorial": {
+    "name": "kubev2v/migration-planner-agent-ui",
+    "descriptionZh": "Migration Planner 这个虚拟机迁移工具的前端仓库：Yarn workspaces 管的 monorepo，apps/agent-ui 负责收集群凭据并显示连接状态，packages 里放各应用共享的包。给把 VM 迁到 OpenShift 的人用。",
+    "takeawayZh": "照抄一个收集群凭据的 agent UI monorepo 骨架",
+    "noteZh": "About 只有一句话：A UI for the migration planner agent tool, collects cluster credentials and displays connection status.。README 从 Project Structure 讲到 Applications、Adding a New Package or App、Local Development，是标准的多包分工说明。首屏目录列表里 apps/agent-ui、packages、docs、scripts 分明，提交前缀能看出团队节奏：OMA-2254 | refactor: unify report tab content layout (#603)、ECOPROJECT-5368 | feat: add RVTools standalone mode (#541)、chore(deps): update konflux references，根目录摆着 biome.json、knip.json、Containerfile 与 .tekton。站内还带一份 SECURITY.md，40 个 releases 最新 v0.0.38。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是一层产品界面及其共享组件包（apps/agent-ui 加 packages），用户来这儿拿的是界面实现代码，归组件与设计系统层。",
+        "evidenceUrl": "https://github.com/kubev2v/migration-planner-agent-ui"
+      },
+      {
+        "statement": "分类有不确定性：它更像某个具体产品的前端应用而非通用组件库，但 README 明确按 Packages / Applications 拆包并写了 Adding a New Package or App 的流程，共享包可被单独引用，故取通用界面组件这一类。",
+        "evidenceUrl": "https://github.com/kubev2v/migration-planner-agent-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:37.375Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "starter"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/kubev2v/migration-planner-agent-ui",
+      "finalUrl": "https://github.com/kubev2v/migration-planner-agent-ui",
+      "title": "GitHub - kubev2v/migration-planner-agent-ui: A UI for the migration planner agent tool, collects cluster credentials and displays connection status. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-kubev2v-migration-planner-agent-ui/identity.jpg",
+        "sha256": "1f555c53be6a7e0e86493e987020aea62f9baceeef9be3737444a275d648bd48",
+        "width": 1280,
+        "height": 900,
+        "bytes": 149193,
+        "alt": "kubev2v/migration-planner-agent-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/kubev2v/migration-planner-agent-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-kubev2v-migration-planner-agent-ui/identity.jpg",
+          "alt": "kubev2v/migration-planner-agent-ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "purpose",
+      "value": "收集集群凭据并显示连接状态的迁移规划器 UI",
+      "sourceUrl": "https://github.com/kubev2v/migration-planner-agent-ui",
+      "evidence": "About 一句话与仓库描述原文「A UI for the migration planner agent tool, collects cluster credentials and displays connection status.」",
+      "confidence": 1
+    },
+    {
+      "field": "structure",
+      "value": "Yarn workspaces monorepo，含 apps/agent-ui 与 packages 两部分",
+      "sourceUrl": "https://github.com/kubev2v/migration-planner-agent-ui",
+      "evidence": "README 写「This project is organized as a monorepo using Yarn workspaces」，首屏目录列表同时出现 apps/agent-ui 与 packages。",
+      "confidence": 1
+    },
+    {
+      "field": "standaloneMode",
+      "value": "带 RVTools standalone 模式",
+      "sourceUrl": "https://github.com/kubev2v/migration-planner-agent-ui",
+      "evidence": "docs 目录的提交信息「ECOPROJECT-5368 | feat: add RVTools standalone mode (#541)」。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/kubev2v/migration-planner-agent-ui",
+      "evidence": "About 区只列出指向 License 的链接与根目录 LICENSE 文件，本页未显示许可证名称，故记 unknown。",
+      "confidence": 0.5
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-kubev2v-migration-planner-agent-ui.md",
+  "registryUrl": "/r/github-com-kubev2v-migration-planner-agent-ui.json"
+}

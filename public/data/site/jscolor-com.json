@@ -1,0 +1,166 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4e290c16a63c170525eccd9d7507d343b07e0240e93b2c5cec1f1606dbe762de",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "jscolor-com",
+  "entityId": "entity-jscolor-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "jscolor.com",
+  "official": {
+    "inputUrl": "https://jscolor.com",
+    "finalUrl": "https://jscolor.com/",
+    "checkedAt": "2026-09-15T12:18:05.153Z"
+  },
+  "editorial": {
+    "name": "jscolor",
+    "descriptionZh": "单文件、无框架依赖的 JavaScript 取色器，带 alpha 通道；给 input 加一个 data-jscolor 属性就能用。",
+    "takeawayZh": "给 input 加 data-jscolor 就有带 alpha 的取色器",
+    "noteZh": "首屏正中摆了一个能真点的取色器：左边色域方块加右侧的 alpha 竖滑条，下方一排 24 格色板。导航是 Overview / Examples / Configure / Sandbox / Documentation / Download / License 七项，Overview 处于选中态。往下 Just add data-jscolor attribute… 一节左右并排给出代码与实时结果，正文说这个库只有一个纯 JavaScript 文件、不需要 jQuery、Dojo、MooTools，并原生支持触摸事件；页面底部还写着 Latest release: jscolor-2.5.2.zip (released 2023-12-02)。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可嵌入任何表单的取色控件：官网示例就是给 <input> 加 data-jscolor 属性即生效，属于可嵌入复合控件，归 ui-implementation/page-blocks-embeddable-controls。",
+        "evidenceUrl": "https://jscolor.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:18:05.153Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "download",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://jscolor.com",
+      "finalUrl": "https://jscolor.com/",
+      "title": "jscolor: JavaScript Color picker with Opacity (alpha channel)",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/jscolor-com/identity.jpg",
+        "sha256": "9e0f07e6efb8438b25844c4e77dabcba716041f40f10c88047037e70843643a9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 64828,
+        "alt": "jscolor 首屏：jscolor.js is a JavaScript color picker with opacity channel"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://jscolor.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/jscolor-com/identity.jpg",
+          "alt": "jscolor 首屏：jscolor.js is a JavaScript color picker with opacity channel",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "latest-release",
+      "value": "jscolor-2.5.2.zip (released 2023-12-02)",
+      "sourceUrl": "https://jscolor.com/",
+      "evidence": "首页 Overview 正文里的 Latest release: jscolor-2.5.2.zip (released 2023-12-02)",
+      "confidence": 1
+    },
+    {
+      "field": "dependencies",
+      "value": "无框架依赖，单个纯 JavaScript 文件",
+      "sourceUrl": "https://jscolor.com/",
+      "evidence": "No framework needed 一节写着 a self-sufficient JavaScript library consisting of only one file of plain JavaScript",
+      "confidence": 1
+    },
+    {
+      "field": "browser-support",
+      "value": "Edge, Firefox, Chrome, Safari, Opera",
+      "sourceUrl": "https://jscolor.com/",
+      "evidence": "Cross-browser 一节列出的浏览器名单",
+      "confidence": 1
+    },
+    {
+      "field": "support-contact",
+      "value": "dev@jscolor.com",
+      "sourceUrl": "https://jscolor.com/",
+      "evidence": "Assistance with implementation 一节给出的邮箱",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/jscolor-com.md",
+  "registryUrl": "/r/jscolor-com.json"
+}

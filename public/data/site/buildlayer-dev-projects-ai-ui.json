@@ -1,0 +1,173 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "663854452777dcb84a4b3e0df8534e8e26f0e73522d2ce935fab4fda118766d7",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "buildlayer-dev-projects-ai-ui",
+  "entityId": "entity-buildlayer-dev-projects-ai-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "buildlayer.dev",
+  "official": {
+    "inputUrl": "https://buildlayer.dev/projects/ai-ui",
+    "finalUrl": "https://buildlayer.dev/projects/ai-ui",
+    "checkedAt": "2026-09-15T11:38:01.710Z"
+  },
+  "editorial": {
+    "name": "BuildLayer AI UI SDK",
+    "descriptionZh": "BuildLayer 做的一套 AI 聊天界面 SDK，含 CLI 脚手架、headless 聊天引擎和 React 组件，可接 OpenAI、Anthropic、Mistral 或自定义模型服务。",
+    "takeawayZh": "CLI 起一个 React 聊天应用，接各家模型",
+    "noteZh": "这是 buildlayer.dev 上 /projects/ai-ui 的项目页，首屏只有 AI UI SDK 一个大标题、一句 Complete toolkit for building AI-powered chat applications with React and TypeScript，和 Try Live Demo、Get Started、View Packages 三个按钮。往下 Why Choose AI UI SDK? 把卖点拆成 React Components、Streaming Support（AsyncIterable 流式返回）、Provider Agnostic、CLI Tools、Production Ready 几条。再下面是 AI UI SDK in Action 的截图墙，按 Sessions、Tools、Dark Mode 分组，每张标着 Light / Dark。站点导航只有 Services、Projects、Pricing、About、Contact 五项。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面把交付物写成 Pre-built React components for chat interfaces, message handling, and AI interactions，用户拿走的是装进项目的聊天界面组件，落通用界面组件库。",
+        "evidenceUrl": "https://buildlayer.dev/projects/ai-ui"
+      },
+      {
+        "statement": "除组件外还附 CLI 生成器与 headless 聊天引擎，能力边界比纯组件库宽，但页面主线与 API Surface 都围绕组件使用展开，故仍归此类。",
+        "evidenceUrl": "https://buildlayer.dev/projects/ai-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:38:01.710Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "ideation"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://buildlayer.dev/projects/ai-ui",
+      "finalUrl": "https://buildlayer.dev/projects/ai-ui",
+      "title": "AI UI SDK — BuildLayer",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/buildlayer-dev-projects-ai-ui/identity.jpg",
+        "sha256": "7f1895c0b565b3552f62234bd6ff8095e4e38c092e3af471d235e6bf6ca9f678",
+        "width": 1280,
+        "height": 900,
+        "bytes": 59643,
+        "alt": "BuildLayer AI UI SDK 首屏：AI UI SDK"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://buildlayer.dev/projects/ai-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/buildlayer-dev-projects-ai-ui/identity.jpg",
+          "alt": "BuildLayer AI UI SDK 首屏：AI UI SDK",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "providers",
+      "value": "可接 OpenAI、Anthropic、Mistral 以及任意自定义 AI provider",
+      "sourceUrl": "https://buildlayer.dev/projects/ai-ui",
+      "evidence": "Why Choose AI UI SDK? 一节 Provider Agnostic 条目正文",
+      "confidence": 1
+    },
+    {
+      "field": "streaming",
+      "value": "用 AsyncIterable 做 token 流式返回",
+      "sourceUrl": "https://buildlayer.dev/projects/ai-ui",
+      "evidence": "Streaming Support 条目 Real-time token streaming with AsyncIterable for instant AI responses",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "CLI generators、headless chat engines、React components 三类工具打包分发",
+      "sourceUrl": "https://buildlayer.dev/projects/ai-ui",
+      "evidence": "首屏副标题下一段 A comprehensive suite of tools including CLI generators, headless chat engines, and React components，以及 SDK Packages 一节",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://buildlayer.dev/projects/ai-ui",
+      "evidence": "SDK 页面本身没有标价，站点导航里的 Pricing 属于 BuildLayer 服务而非这个 SDK，故记 unknown",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/buildlayer-dev-projects-ai-ui.md",
+  "registryUrl": "/r/buildlayer-dev-projects-ai-ui.json"
+}

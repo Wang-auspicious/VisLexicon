@@ -1,0 +1,171 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "be2e4cd8e65587418abe20510e9dc2f4cb03d851e1b6c20796b8b44a485e1585",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-jrit-web-resource-inliner",
+  "entityId": "entity-github-com-jrit-web-resource-inliner",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/jrit/web-resource-inliner",
+    "finalUrl": "https://github.com/jrit/web-resource-inliner",
+    "checkedAt": "2026-09-15T12:14:17.659Z"
+  },
+  "editorial": {
+    "name": "jrit/web-resource-inliner",
+    "descriptionZh": "把 HTML 里外链的 js、css 和图片收进同一个文件的 Node 工具，8KB 以下的图片会转成 base64 内联。",
+    "takeawayZh": "用 html() / css() 把外链资源内联进单文件，小图转 base64",
+    "noteZh": "仓库右侧 About 把用途写得很短：Inlines img, script and link tags into the same file；README 举的例子是把 <link href=\"css/style.css\" rel=\"stylesheet\" data-inline> 换成一段 <style>，并说明默认内联全部 link 与 script、外加 8KB 以下的图片，可用选项覆盖。统计栏里 Releases 记 22、最新是 v8.0.0，Used by 71K，Contributors 26。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是构建期工具：README 的 Getting Started 给 npm install web-resource-inliner，Methods 段暴露 html(options, callback) 与 css(options, callback) 两个函数。",
+        "evidenceUrl": "https://github.com/jrit/web-resource-inliner"
+      },
+      {
+        "statement": "归 build-deploy-dev-workflow 而非素材转换工具，因为它处理的是整份 HTML/CSS 文档的引用收拢，不在于压缩单个图片文件。",
+        "evidenceUrl": "https://github.com/jrit/web-resource-inliner"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:14:17.659Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "javascript",
+      "html",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/jrit/web-resource-inliner",
+      "finalUrl": "https://github.com/jrit/web-resource-inliner",
+      "title": "GitHub - jrit/web-resource-inliner: Inlines img, script and link tags into the same file · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-jrit-web-resource-inliner/identity.jpg",
+        "sha256": "b6e6d4bd583197676b060a2b0049f003f882e83319f51ef6bf1ac631864058b7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 127091,
+        "alt": "jrit/web-resource-inliner 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/jrit/web-resource-inliner",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-jrit-web-resource-inliner/identity.jpg",
+          "alt": "jrit/web-resource-inliner 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/jrit/web-resource-inliner",
+      "evidence": "README 标签行的 MIT license 与仓库根目录 LICENSE 文件，右侧 About 栏同标 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "inlineRule",
+      "value": "默认内联所有 link 与 script，以及 8KB 以下的图片，可用选项覆盖",
+      "sourceUrl": "https://github.com/jrit/web-resource-inliner",
+      "evidence": "README 开头的 By default, all links and scripts are inlined, plus any images under 8KB 一句",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "v8.0.0（Latest，11 个月前），共 22 个 release",
+      "sourceUrl": "https://github.com/jrit/web-resource-inliner/releases",
+      "evidence": "右侧 Releases 栏的版本号与 Latest 角标，标题写 Releases 22",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "Used by 71K 个仓库",
+      "sourceUrl": "https://github.com/jrit/web-resource-inliner",
+      "evidence": "右侧 Used by 一栏的 71K 计数与头像堆叠",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-jrit-web-resource-inliner.md",
+  "registryUrl": "/r/github-com-jrit-web-resource-inliner.json"
+}

@@ -1,0 +1,180 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "014a1ae4862791bbbb8ac25ed9653baf8d82484e1ea39283da3d97e9551f4cf4",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "designsystem-porsche-com",
+  "entityId": "entity-designsystem-porsche-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://designsystem.porsche.com",
+    "finalUrl": "https://designsystem.porsche.com/v4/",
+    "checkedAt": "2026-09-15T11:48:32.663Z"
+  },
+  "editorial": {
+    "name": "Porsche Design System",
+    "descriptionZh": "保时捷官方的设计系统站点，一边发 Figma 库与规范、一边给公开 npm 包，底层是一套 Web Components，可按 Angular、React、Vue、Astro、Next.js、Remix 等框架分别接入。",
+    "takeawayZh": "从 Configurator 复制组件与 token",
+    "noteZh": "左侧栏分得很清楚：Get Started（News、Designing、Developing）、AI (experimental) 下的 Skills、Core（Components、Stylesheets、Partials、Patterns、Templates、Tokens）、Styling（Tailwind CSS、SCSS、Emotion、Vanilla Extract）、Integrations（AG Grid）、Resources（Must Know、Help）。正文首屏是 Porsche Design System 加一个大号 V4 字，浮动卡片写着 Release Note 与 4.7.0。开篇一段说明这是 all-in-one toolkit，含 Figma libraries、Web Components 与 guidelines，npm 包以 Web Components 加 TypeScript 和 SSR 支持为底座；Benefits 一节列了 Short & Longterm Efficiency（宣称 up to 31% faster implementation）、Brand Fit、Accessibility、Framework Agnostic、Fluid & Responsive、Compliant Quality。顶栏还挂着 Migration Guide、Changelog、Roadmap 与按框架分的接入页，组件页每个都有 configurator，包括标记为实验的 Canvas 🧪。",
+    "recommendation": null,
+    "pricing": "Free（公开 npm 包，页面未出现价格）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点同时交付 Figma 库、设计规范、token、样式方案与成套 Web Components，并按框架给接入文档，是完整的设计系统而非单一组件库，归设计系统与完整组件套件。",
+        "evidenceUrl": "https://designsystem.porsche.com/v4/"
+      },
+      {
+        "statement": "正文写明 powered by Web Components with TypeScript and SSR support，导航把 Angular、Astro、Next.js、React、React Router、Remix、Vanilla JS、Vue 逐个列出，另单列 Tailwind CSS 一章，技术按这几项登记。",
+        "evidenceUrl": "https://designsystem.porsche.com/v4/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:32.663Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library",
+      "design-file",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "angular",
+      "css",
+      "react",
+      "tailwind",
+      "typescript",
+      "vue",
+      "web-components"
+    ],
+    "workflowStages": [
+      "build",
+      "design",
+      "handoff"
+    ],
+    "audiences": [
+      "brand-team",
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://designsystem.porsche.com",
+      "finalUrl": "https://designsystem.porsche.com/v4/",
+      "title": "Porsche Design System",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/designsystem-porsche-com/identity.jpg",
+        "sha256": "2ebfb381c9fe584409066a2e70be12d3f5fce8228cf6ccdfe6c96d13ea925856",
+        "width": 1280,
+        "height": 900,
+        "bytes": 56484,
+        "alt": "Porsche Design System 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "currentRelease",
+      "value": "4.7.0",
+      "sourceUrl": "https://designsystem.porsche.com/v4/",
+      "evidence": "首屏悬浮卡 Release Note: Checkout the release 4.7.0",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "We provide publicly available npm packages for modern frameworks, all powered by Web Components with TypeScript and SSR support",
+      "sourceUrl": "https://designsystem.porsche.com/v4/",
+      "evidence": "首屏正文段落",
+      "confidence": 1
+    },
+    {
+      "field": "frameworkCoverage",
+      "value": "Angular、Astro、Next.js、React、React Router、Remix、Vanilla JS、Vue 各自有 getting-started 页",
+      "sourceUrl": "https://designsystem.porsche.com/v4/developing/react/getting-started",
+      "evidence": "顶栏框架导航项与对应路径",
+      "confidence": 1
+    },
+    {
+      "field": "efficiencyClaim",
+      "value": "Enables better collaboration and delivers up to 31% faster implementation",
+      "sourceUrl": "https://designsystem.porsche.com/v4/",
+      "evidence": "Benefits 一节的 Short & Longterm Efficiency 条目",
+      "confidence": 1
+    },
+    {
+      "field": "accessibility",
+      "value": "Compliant WCAG compliant components ensure inclusivity and accessibility for all users",
+      "sourceUrl": "https://designsystem.porsche.com/v4/",
+      "evidence": "Benefits 一节的 Accessibility 条目",
+      "confidence": 1
+    },
+    {
+      "field": "experimentalComponent",
+      "value": "组件列表里有标记为实验的 Canvas 🧪，另有 AI (experimental) 分组下的 Skills 工具",
+      "sourceUrl": "https://designsystem.porsche.com/v4/components/canvas/configurator",
+      "evidence": "组件导航里的 Canvas 🧪 与侧栏 AI (experimental) Skills",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/designsystem-porsche-com",
+    "designMdUrl": "https://vislexicon.com/site/designsystem-porsche-com.md",
+    "checkedAt": "2026-09-15T11:48:32.663Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9f7e9025b7b265f5d53caba6c4e7b1d689dfba0b547aa743c2f53ab7abf0fccd",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "melt-ui-com",
+  "entityId": "entity-melt-ui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://melt-ui.com",
+    "finalUrl": "https://melt-ui.com/",
+    "checkedAt": "2026-09-15T12:01:06.711Z"
+  },
+  "editorial": {
+    "name": "Melt UI",
+    "descriptionZh": "Melt UI 是给 Svelte 用的一组无样式、无障碍的组件构建器（component builders），把交互逻辑和样式分开，交给使用者自己接设计系统。",
+    "takeawayZh": "给 Svelte 装一套无样式无障碍组件构建器。",
+    "noteZh": "首屏是深色的 melt away complexity 大字，配一个正在融化的冰淇淋图标，下面是一行 npx @melt-ui/cli@latest init 加复制按钮，再往下才是 Get started。右下方摆着可交互的组件样例：标签输入框里已经填好 Svelte、TypeScript 两枚 chip，旁边一个开关，底下是 1 0 4 5 的分页。顶部黄条把访客引向带 Runes 的新版本，导航只留 Docs 和 Builders 两项。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首屏正文自述为 'A collection of accessible & unstyled component builders for Svelte applications'，交付的是不带样式的行为原语，因此归入 headless-accessible-primitives 而不是通用组件库。",
+        "evidenceUrl": "https://melt-ui.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:01:06.711Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://melt-ui.com",
+      "finalUrl": "https://melt-ui.com/",
+      "title": "Melt UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/melt-ui-com/identity.jpg",
+        "sha256": "3c1308ba8a2c2ea2d56df85dba0b91e01e98718ea5f7f5324e51fb7cd1712017",
+        "width": 1280,
+        "height": 900,
+        "bytes": 79192,
+        "alt": "Melt UI 首屏：melt away complexity"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "installCommand",
+      "value": "npx @melt-ui/cli@latest init",
+      "sourceUrl": "https://melt-ui.com/",
+      "evidence": "首屏 Get started 按钮上方有一个带复制图标的命令行框，内容就是这行 npx 命令",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://melt-ui.com/",
+      "evidence": "首屏只写 open-source，许可证名称没在页面上出现，导航指向的 GitHub 仓库页也未打开，故记 unknown",
+      "confidence": 1
+    },
+    {
+      "field": "docsPaths",
+      "value": "/docs、/docs/builders",
+      "sourceUrl": "https://melt-ui.com/docs",
+      "evidence": "导航 Docs 与 Builders 两项对应的站内路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/melt-ui-com",
+    "designMdUrl": "https://vislexicon.com/site/melt-ui-com.md",
+    "checkedAt": "2026-09-15T12:01:06.711Z",
+    "license": "unknown"
+  }
+}

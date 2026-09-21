@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ce0b5762b9f0fe54c260eee1fbb3af1660bc3087cd1660b251eab1fdf3329aaf",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-eeshdarthvader-themebook",
+  "entityId": "entity-github-com-eeshdarthvader-themebook",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/eeshdarthvader/themebook",
+    "finalUrl": "https://github.com/eeshdarthvader/themebook",
+    "checkedAt": "2026-09-15T12:12:28.693Z"
+  },
+  "editorial": {
+    "name": "eeshdarthvader/themebook",
+    "descriptionZh": "一个小型 React 设计系统起步仓库，用 styled-components 写令牌与组件，自带 Storybook 和 rollup 发布流程。",
+    "takeawayZh": "clone 仓库，直接拿它的 Storybook 与 npm 发布流程起设计系统。",
+    "noteZh": "About 栏写 A tiny react design system starter using styled-components，主页指向 themebook-storybook.vercel.app，标签里有 css-in-js、design-systems、styled-comp、starter-kit，2 star、23 个分支、64 次提交。README 标题 ThemeBook，跑起来是 yarn / yarn build-storybook / yarn storybook，发布走 npm run publish 交给 semantic-release；目录结构写成 src 下 components / tokens / utils 三块，主题文件在 src 的 theme 目录，用 useTheme hook 或 withTheme HOC 取 theme，也可以传自己的 theme 对象覆盖。文件列表里没有 LICENSE。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "templates-design-files",
+    "subcategory": "site-app-starters",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自我定位就是 starter（About 写 A tiny react design system starter），用户拿走的是一个 clone 下来就能接着写组件与令牌的起步工程，故归项目启动器而非成品组件库。",
+        "evidenceUrl": "https://github.com/eeshdarthvader/themebook"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:12:28.693Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "starter",
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "download",
+      "copy",
+      "publish"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/eeshdarthvader/themebook",
+      "finalUrl": "https://github.com/eeshdarthvader/themebook",
+      "title": "GitHub - eeshdarthvader/themebook: A tiny react design system starter using styled-components · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-eeshdarthvader-themebook/identity.jpg",
+        "sha256": "4e9c4c6a7b7eb26a7a8c2ee794f97922cd533f12f3beebe878034dcf3ffb3ce4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 130306,
+        "alt": "eeshdarthvader/themebook 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "stack",
+      "value": "styled-components 写样式、rollup 打包、Storybook 看组件、semantic-release 发 npm",
+      "sourceUrl": "https://github.com/eeshdarthvader/themebook",
+      "evidence": "README 的 Setup / Publish / Bundling 三节",
+      "confidence": 1
+    },
+    {
+      "field": "theming",
+      "value": "主题文件放在 src 的 theme 目录，导出 useTheme hook 与 withTheme HOC，可传入自己的 theme 对象覆盖",
+      "sourceUrl": "https://github.com/eeshdarthvader/themebook",
+      "evidence": "README Theming 一节",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/eeshdarthvader/themebook",
+      "evidence": "文件列表里没有 LICENSE，About 栏也没有许可证链接",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-eeshdarthvader-themebook",
+    "designMdUrl": "https://vislexicon.com/site/github-com-eeshdarthvader-themebook.md",
+    "checkedAt": "2026-09-15T12:12:28.693Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8b426aeb316b73f299dde3ad3602b1557a1dc345f680fe37824772c29ba404e8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "expo-dev-versions-latest-sdk-glass-effect",
+  "entityId": "entity-expo-dev-versions-latest-sdk-glass-effect",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://docs.expo.dev/versions/latest/sdk/glass-effect",
+    "finalUrl": "https://docs.expo.dev/versions/latest/sdk/glass-effect/",
+    "checkedAt": "2026-09-15T11:58:23.670Z"
+  },
+  "editorial": {
+    "name": "Expo GlassEffect",
+    "descriptionZh": "expo-glass-effect 的 API 参考页：用 iOS 原生 UIVisualEffectView 渲染液态玻璃效果的 React 组件；页面顶部写明只支持 iOS 26 及以上，其他平台会退回普通 View。",
+    "takeawayZh": "在 iOS 26 上给界面加一块可调 tint 的原生液态玻璃。",
+    "noteZh": "标题 Expo GlassEffect 下只挂 iOS 与 tvOS 两个平台徽章，正文第一句 React components that render native iOS liquid glass effect using UIVisualEffectView；再往下 Known issues 第一条提醒把 opacity 设成 0 会导致玻璃完全不渲染，要淡出得改用 animate 与 animationDuration 这两个 prop，并附了 GitHub issue 链接。Installation 段给 npx expo install expo-glass-effect，左栏 Reference version 选择器这里是空的，底下直接列 Configuration files 与 Expo Router 分组。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是能直接放进界面的 React 组件（GlassView），用户装包后当组件用，属通用界面组件库。",
+        "evidenceUrl": "https://docs.expo.dev/versions/latest/sdk/glass-effect/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:58:23.670Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "ios"
+    ],
+    "technologies": [
+      "react-native",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/glass-effect",
+      "finalUrl": "https://docs.expo.dev/versions/latest/sdk/glass-effect/",
+      "title": "GlassEffect - Expo documentation",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/expo-dev-versions-latest-sdk-glass-effect/identity.jpg",
+        "sha256": "6fe79b74e0aca4235197e1d74ea2d414efde0d974ff98a4fdd94e39665885653",
+        "width": 1280,
+        "height": 900,
+        "bytes": 124156,
+        "alt": "Expo GlassEffect 首屏：Expo GlassEffect"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "平台限制",
+      "value": "仅 iOS 26 及以上，其他平台退回普通 View",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/glass-effect/",
+      "evidence": "标题下方的提示框 GlassView is only available on iOS 26 and above. It will fallback to regular View on unsupported platforms.",
+      "confidence": 1
+    },
+    {
+      "field": "已知问题",
+      "value": "把 opacity 设为 0 会让玻璃效果完全不渲染",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/glass-effect/",
+      "evidence": "Known issues 第一条，建议改用 animate 与 animationDuration",
+      "confidence": 1
+    },
+    {
+      "field": "安装命令",
+      "value": "npx expo install expo-glass-effect",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/glass-effect/",
+      "evidence": "Installation 一节的终端代码块",
+      "confidence": 1
+    },
+    {
+      "field": "实现方式",
+      "value": "用 iOS 原生 UIVisualEffectView，可自定义玻璃样式与 tint 颜色",
+      "sourceUrl": "https://docs.expo.dev/versions/latest/sdk/glass-effect/",
+      "evidence": "标题下第一段说明文字",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/expo-dev-versions-latest-sdk-glass-effect",
+    "designMdUrl": "https://vislexicon.com/site/expo-dev-versions-latest-sdk-glass-effect.md",
+    "checkedAt": "2026-09-15T11:58:23.670Z",
+    "license": "unknown"
+  }
+}

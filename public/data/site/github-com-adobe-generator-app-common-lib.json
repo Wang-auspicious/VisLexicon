@@ -1,0 +1,162 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "832c1fc502d24804d025554138d7a161095af0ef3871bfe2d3f562ebd235bbfa",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-adobe-generator-app-common-lib",
+  "entityId": "entity-github-com-adobe-generator-app-common-lib",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/adobe/generator-app-common-lib",
+    "finalUrl": "https://github.com/adobe/generator-app-common-lib",
+    "checkedAt": "2026-09-15T12:15:15.753Z"
+  },
+  "editorial": {
+    "name": "adobe/generator-app-common-lib",
+    "descriptionZh": "Adobe Developer App Builder 各模板共用的工具库，把生成器里重复的那部分功能抽出来集中维护。",
+    "takeawayZh": "给 App Builder 模板引一份公共工具库",
+    "noteZh": "README 抬头 generator-app-common-lib，正文只有一句 Utility tooling library for extensibility templates.；About 写 Lib with common functionality for Adobe Developer App Builder templates。目录结构是 lib、test 两个文件夹加 index.js、package.json、vitest.config.js，lib 与 test 最近一次改动都跟着 feat: migrate to ESM + yeoman-generator ^8 + Jest->Vitest 走；.gitattributes 那条提交是 fix: remove @openwhisk/wskdebug from the default action generator (#77)。许可 Apache-2.0，Releases 22、Used by 280。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 一句 Utility tooling library for extensibility templates 说明它是给模板使用的工具库，不是给终端用户的产品或模板本身。",
+        "evidenceUrl": "https://github.com/adobe/generator-app-common-lib"
+      },
+      {
+        "statement": "Used by 280 说明它主要作为依赖被同族生成器引用，归交付与开发工具下的构建工作流。",
+        "evidenceUrl": "https://github.com/adobe/generator-app-common-lib"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:15:15.753Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/adobe/generator-app-common-lib",
+      "finalUrl": "https://github.com/adobe/generator-app-common-lib",
+      "title": "GitHub - adobe/generator-app-common-lib: Lib with common functionality for Adobe Developer App Builder templates. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-adobe-generator-app-common-lib/identity.jpg",
+        "sha256": "edfb6c744e412b0375b6432b5f4f53651cc0abb0452f207cd487e020c2e1494a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 130510,
+        "alt": "adobe/generator-app-common-lib 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/adobe/generator-app-common-lib",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-adobe-generator-app-common-lib/identity.jpg",
+          "alt": "adobe/generator-app-common-lib 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/adobe/generator-app-common-lib",
+      "evidence": "README 的 Licensing 段写 Apache V2 License，右栏 About 标 Apache-2.0 license",
+      "confidence": 1
+    },
+    {
+      "field": "purpose",
+      "value": "App Builder 扩展模板的公共工具库",
+      "sourceUrl": "https://github.com/adobe/generator-app-common-lib",
+      "evidence": "README 抬头：Utility tooling library for extensibility templates.；右栏 About：Lib with common functionality for Adobe Developer App Builder templates.",
+      "confidence": 1
+    },
+    {
+      "field": "reuse",
+      "value": "Used by 280",
+      "sourceUrl": "https://github.com/adobe/generator-app-common-lib",
+      "evidence": "右栏 About 下方的 Used by 280 计数",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "4.0.0，共 22 个 release",
+      "sourceUrl": "https://github.com/adobe/generator-app-common-lib",
+      "evidence": "右栏 Releases 22 与 Latest 4.0.0，package.json 提交信息 chore: release 4.0.0 (#90)",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-adobe-generator-app-common-lib.md",
+  "registryUrl": "/r/github-com-adobe-generator-app-common-lib.json"
+}

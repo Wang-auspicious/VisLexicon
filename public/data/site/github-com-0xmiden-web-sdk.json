@@ -1,0 +1,166 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0b9368ffef8372a94396faedb40f50bd176dd6bbbed58e0b69f19edf1aa6a606",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-0xmiden-web-sdk",
+  "entityId": "entity-github-com-0xmiden-web-sdk",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/0xMiden/web-sdk",
+    "finalUrl": "https://github.com/0xMiden/web-sdk",
+    "checkedAt": "2026-09-15T11:46:17.167Z"
+  },
+  "editorial": {
+    "name": "0xMiden/web-sdk",
+    "descriptionZh": "Miden 网络的浏览器端 SDK，README 自述是 The browser- and JavaScript-native SDK for the Miden network。仓库里 Rust crates 与 JS packages 并存，用 pnpm workspace 串起来。",
+    "takeawayZh": "装 Miden Web SDK，在浏览器里接 Miden 网络",
+    "noteZh": "About 只写 Miden network web-centric SDK。README 第一句是 The browser- and JavaScript-native SDK for the Miden network.，章节分 What's in here、Documentation、Quick start、Eager vs lazy entry points、Single-threaded vs multi-threaded proving、Architecture、Examples、Bundler & runtime support、Versioning、Development、Releasing、Contributing。文件区同时有 crates、packages、patches、scripts、tools/strip-masp-debug 和 Cargo.toml、rust-toolchain.toml、pnpm-workspace.yaml、vitest.config.ts、knip.jsonc、lefthook.yml、CLAUDE.md。README 上方标着 MIT license，Star 1、Fork 21、Issues 87、Pull requests 41、198 Commits，仓库的 Releases、Packages、Used by 三块都是空的。",
+    "recommendation": null,
+    "pricing": "Free（README 上方标 MIT license）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "候选池拿的是 @miden-sdk/miden-wallet-adapter-reactui 这类包名，把它当成 React UI 库；但页面自述是网络 SDK（entry points、proving、bundler support），交付的是开发用 SDK 而非界面组件，归 delivery-development-tools 下的 build-deploy-dev-workflow，把握一般。",
+        "evidenceUrl": "https://github.com/0xMiden/web-sdk"
+      },
+      {
+        "statement": "页面上没有出现 React、样式或组件演示，所以 technologies 只记 javascript 与 typescript，不写 react。",
+        "evidenceUrl": "https://github.com/0xMiden/web-sdk"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:17.167Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/0xMiden/web-sdk",
+      "finalUrl": "https://github.com/0xMiden/web-sdk",
+      "title": "GitHub - 0xMiden/web-sdk: Miden network web-centric SDK · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-0xmiden-web-sdk/identity.jpg",
+        "sha256": "a3aa1dc8d4fdd01544b45482757e00e5f3a97a413ed8359c8b5b69a7a75a01f1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 82689,
+        "alt": "0xMiden/web-sdk 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/0xMiden/web-sdk",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-0xmiden-web-sdk/identity.jpg",
+          "alt": "0xMiden/web-sdk 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "selfDescription",
+      "value": "The browser- and JavaScript-native SDK for the Miden network.",
+      "sourceUrl": "https://github.com/0xMiden/web-sdk",
+      "evidence": "README 正文第一句，About 栏另有 Miden network web-centric SDK",
+      "confidence": 1
+    },
+    {
+      "field": "readmeSections",
+      "value": "What's in here、Documentation、Quick start、Eager vs lazy entry points、Single-threaded vs multi-threaded proving、Architecture、Examples、Bundler & runtime support、Versioning、Development、Releasing、Contributing",
+      "sourceUrl": "https://github.com/0xMiden/web-sdk",
+      "evidence": "README 章节标题，live.heads 同文",
+      "confidence": 1
+    },
+    {
+      "field": "mixedToolchain",
+      "value": "crates、packages、patches、scripts、tools/strip-masp-debug 并列，根上有 Cargo.toml、rust-toolchain.toml、pnpm-workspace.yaml、vitest.config.ts、knip.jsonc、lefthook.yml、CLAUDE.md",
+      "sourceUrl": "https://github.com/0xMiden/web-sdk",
+      "evidence": "文件列表 Name 一列",
+      "confidence": 1
+    },
+    {
+      "field": "licenseAndStats",
+      "value": "MIT license；Star 1、Fork 21、Issues 87、Pull requests 41、198 Commits，Releases 与 Packages 均为空",
+      "sourceUrl": "https://github.com/0xMiden/web-sdk",
+      "evidence": "README 上方许可标签与仓库头部计数、右侧 About 栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-0xmiden-web-sdk.md",
+  "registryUrl": "/r/github-com-0xmiden-web-sdk.json"
+}

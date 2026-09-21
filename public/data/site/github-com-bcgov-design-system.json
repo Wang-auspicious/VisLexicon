@@ -1,0 +1,183 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d7ed50a7479f602263db6c87ca40bed1ff60d6a4a52006f2adc12034ef41d4b0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-bcgov-design-system",
+  "entityId": "entity-github-com-bcgov-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/bcgov/design-system",
+    "finalUrl": "https://github.com/bcgov/design-system",
+    "checkedAt": "2026-09-15T11:37:43.565Z"
+  },
+  "editorial": {
+    "name": "bcgov/design-system",
+    "descriptionZh": "加拿大不列颠哥伦比亚省政府的 B.C. Design System，为公共部门团队提供 design tokens、Figma 与 React 组件库和文档中心，用来做一致且可访问的政务数字服务。",
+    "takeawayZh": "取省政府 design tokens 与 React 组件库",
+    "noteZh": "About 栏把话题标成 cit、component-library、design-system、design-tokens、react，许可证写 Apache-2.0 license。README 把体系拆成 4 core elements：Design tokens、Figma and React component libraries、Documentation hub，并点名 @bcgov/design-tokens 这个包。专门有一节 Using these libraries with LLMs：每个库都带 AGENTS.md，要把它按 AGENTS.example.md 的样板复制到项目根目录，代理才知道该加载哪个包的指令。提交区里能看到 change LICENSE_CONTENT to CC BY 4.0 (#782) 与 Add NumberField component (#575)。",
+    "recommendation": null,
+    "pricing": "Free (Apache-2.0)",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 明确列出四要素——design tokens、Figma 与 React 组件库、文档中心，构成完整设计系统套件而非单一组件库。",
+        "evidenceUrl": "https://github.com/bcgov/design-system"
+      },
+      {
+        "statement": "仓库同时发放 token 包（@bcgov/design-tokens）与组件包，且以文档仓库形式组织 docs、packages、legacy 目录，符合设计系统治理形态。",
+        "evidenceUrl": "https://github.com/bcgov/design-system"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:37:43.565Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "design-file",
+      "code-library",
+      "standard"
+    ],
+    "actions": [
+      "install",
+      "download",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "figma",
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0",
+      "CC-BY-4.0"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/bcgov/design-system",
+      "finalUrl": "https://github.com/bcgov/design-system",
+      "title": "GitHub - bcgov/design-system: The B.C. Design System helps public sector design and development teams build coherent, accessible products · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-bcgov-design-system/identity.jpg",
+        "sha256": "e1ee9b3b17cf9a950232aed82c288e394efc0a5ea0c1328cadd67bad921c0d86",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144613,
+        "alt": "bcgov/design-system 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/bcgov/design-system",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-bcgov-design-system/identity.jpg",
+          "alt": "bcgov/design-system 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "structure",
+      "value": "四要素：design tokens、Figma 与 React 组件库、Documentation hub",
+      "sourceUrl": "https://github.com/bcgov/design-system",
+      "evidence": "README 正文 The B.C. Design System comprises 4 core elements 一段",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "仓库 Apache-2.0，文档内容 CC BY 4.0",
+      "sourceUrl": "https://github.com/bcgov/design-system",
+      "evidence": "About 栏 Apache-2.0 license，以及文件区 LICENSE_CONTENT 的提交 change LICENSE_CONTENT to CC BY 4.0 (#782)",
+      "confidence": 1
+    },
+    {
+      "field": "llm-support",
+      "value": "每个库附带 AGENTS.md，按 AGENTS.example.md 复制到项目根目录即可让代理加载对应包指令",
+      "sourceUrl": "https://github.com/bcgov/design-system",
+      "evidence": "README 的 Using these libraries with LLMs 一节",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "Used by 220、42 Releases、63 stars、44 forks",
+      "sourceUrl": "https://github.com/bcgov/design-system",
+      "evidence": "右侧栏 Used by 与 Releases 区域、About 栏的 star 与 fork 数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。仓库 Apache-2.0，文档内容 CC BY 4.0：About 栏 Apache-2.0 license，以及文件区 LICENSE_CONTENT 的提交 change LICENSE_CONTENT to CC BY 4.0 (#782)",
+      "该条目登记了多个许可值（Apache-2.0 / CC-BY-4.0），目录之间可能不同，逐目录确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-bcgov-design-system.md",
+  "registryUrl": "/r/github-com-bcgov-design-system.json"
+}

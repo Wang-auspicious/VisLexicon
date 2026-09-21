@@ -1,0 +1,172 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e2bf130b3c6274f12d5919c29c3efd2eafcec36d85d4c59a0345f0c7910158b6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "relume-io",
+  "entityId": "entity-relume-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://relume.io",
+    "finalUrl": "https://www.relume.ai/",
+    "checkedAt": "2026-09-15T10:34:23.219Z"
+  },
+  "editorial": {
+    "name": "Relume",
+    "descriptionZh": "Relume 用一套人工维护的组件系统拼营销站：从 1,000+ 响应式组件里选，组好后可以留在 Relume 发布，也可以导出到 Webflow、Figma 或 React。本轮首屏正文没渲染出来，下面写渲染文本里确认到的部分。",
+    "takeawayZh": "用 1,000+ 组件拼营销站，再导出到 Webflow",
+    "noteZh": "首屏只渲染出顶部导航（Products / Pricing / Contact Sales / Component Voting / Learn，右侧 Log in 与粉色 Start for free），正文区整块是空白没出来。渲染文本里两条路径写得很清楚：留在 Relume 发布，自带全球边缘网络、SSL 与 99.99% uptime SLO；或者导出到 Webflow、Figma 与 React，后者按“Tailwind CSS and shadcn/ui components”生成。",
+    "recommendation": null,
+    "pricing": "freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "h1 是 Build a marketing site you’d actually publish，正文写 Brief to live site in one flow, custom domain and SSL handled，交付物是能上线的整站，故归建站工具；导出到 Figma/React 的路径让它同时像交接工具，这条归类两可。",
+        "evidenceUrl": "https://www.relume.ai/"
+      },
+      {
+        "statement": "组件选自人工建的组件系统而非 AI 现写代码，正文写 The AI does not write raw code. It selects from components our designers built，落点是组站而非生成代码库。",
+        "evidenceUrl": "https://www.relume.ai/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:34:23.219Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "marketing",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "full-page"
+    ],
+    "actions": [
+      "browse",
+      "export",
+      "publish"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma",
+      "webflow",
+      "mcp"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://relume.io",
+      "finalUrl": "https://www.relume.ai/",
+      "title": "Relume — Build a marketing site you’d actually publish",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/relume-io/identity.jpg",
+        "sha256": "e0155e79f53e7d42c82217b0f8bb0de263166631d2ce8120799cb05db839328f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 15349,
+        "alt": "Relume 首屏：Build a marketing site you’d actually publish"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "captureStatus",
+      "value": "首屏只渲染出顶部导航，正文区域整块空白",
+      "sourceUrl": "https://www.relume.ai/",
+      "evidence": "shotPath 对应的 identity.jpg",
+      "confidence": 1
+    },
+    {
+      "field": "componentCount",
+      "value": "1,000+ responsive components，可拼出完整站点",
+      "sourceUrl": "https://www.relume.ai/export",
+      "evidence": "正文 EXPORT 一节《Choose from 1,000+ responsive components to build a complete site》",
+      "confidence": 0.9
+    },
+    {
+      "field": "exportTargets",
+      "value": "导出到 Webflow（干净 client-first class）、Figma（auto-layout 加真实变量与变体）、React（Tailwind CSS + shadcn/ui）",
+      "sourceUrl": "https://www.relume.ai/export",
+      "evidence": "正文 EXPORT 一节的三张卡片说明",
+      "confidence": 0.95
+    },
+    {
+      "field": "mcp",
+      "value": "提供 Relume Library MCP，可把组件拉进自己的 AI 工具",
+      "sourceUrl": "https://www.relume.ai/relume-library-mcp",
+      "evidence": "正文《pull them into your AI tools with the Relume Library MCP》一句与站点 /relume-library-mcp 路径",
+      "confidence": 0.9
+    },
+    {
+      "field": "scaleClaim",
+      "value": "自称是 2 million websites 背后的组件系统",
+      "sourceUrl": "https://www.relume.ai/",
+      "evidence": "正文标题《Component system behind 2 million websites.》",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/relume-io",
+    "designMdUrl": "https://vislexicon.com/site/relume-io.md",
+    "checkedAt": "2026-09-15T10:34:23.219Z",
+    "license": "unknown"
+  }
+}

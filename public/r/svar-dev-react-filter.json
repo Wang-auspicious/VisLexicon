@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "619217bf6066323dd514f6dde0a9fe26cf8c43bee1f0b8233e2bbdae7627381f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svar-dev-react-filter",
+  "entityId": "entity-svar-dev-react-filter",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://svar.dev/react/filter",
+    "finalUrl": "https://svar.dev/react/filter/",
+    "checkedAt": "2026-09-15T11:52:05.352Z"
+  },
+  "editorial": {
+    "name": "SVAR React Filter",
+    "descriptionZh": "SVAR 的 React 数据筛选组件库，由四个 TypeScript 组件组成：完整查询构建器 FilterBuilder、支持结构化语法与自然语言的 FilterQuery、内联输入条 FilterBar、单条规则编辑器 FilterEditor。MIT 授权。",
+    "takeawayZh": "四个 React 组件，从单条规则拼到自然语言筛选",
+    "noteZh": "标题写 React Filter Component，副标题一句交代这是给数据密集的 React 应用用的、四个 TypeScript-ready 组件的库，安装行是 npm install @svar-ui/react-filter。正文把四个组件逐个拆开：FilterBuilder 管 AND/OR 分组与嵌套条件，FilterQuery 是一条同时吃 status:open 结构化语法、find active users 自然语言和两者混用的搜索栏，FilterBar 是紧凑的横向输入条，FilterEditor 只管一条规则。首屏下方铺的就是这几套控件的实样——Add Filter 面板里排着 First Name = Alex、Age > 40、Age < 60，底部还有 between 配 May 2025 与 June 2025 双月日历的日期筛选。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面自称是一组 React 组件（four TypeScript-ready components），交付物是能装进应用的数据筛选控件，归通用界面组件库；它不是整站模板也不是分析工具。",
+        "evidenceUrl": "https://svar.dev/react/filter/"
+      },
+      {
+        "statement": "候选池按 npm 包名 @svar-ui/react-filter 归为 React UI 库，与 h1 React Filter Component 一致，没有分类冲突。",
+        "evidenceUrl": "https://svar.dev/react/filter/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:05.352Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svar.dev/react/filter",
+      "finalUrl": "https://svar.dev/react/filter/",
+      "title": "SVAR React Filter Component | React Query Builder",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/svar-dev-react-filter/identity.jpg",
+        "sha256": "b89cbb615ff4da2ec4156af408aea739e5a1adb57c68d6dae6b4d393a1c3b697",
+        "width": 1280,
+        "height": 900,
+        "bytes": 100432,
+        "alt": "SVAR React Filter 首屏：React Filter Component"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "components",
+      "value": "FilterBuilder、FilterQuery、FilterBar、FilterEditor",
+      "sourceUrl": "https://svar.dev/react/filter/",
+      "evidence": "React Filter Component for Every Case 段落逐个列出四个组件",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://svar.dev/react/filter/",
+      "evidence": "首屏 Licensed under MIT",
+      "confidence": 1
+    },
+    {
+      "field": "queryInput",
+      "value": "FilterQuery 支持结构化语法 status:open、自然语言、两者混用三种输入方式",
+      "sourceUrl": "https://svar.dev/react/filter/",
+      "evidence": "FilterQuery 段落的 3 input methods 说明",
+      "confidence": 1
+    },
+    {
+      "field": "fieldTypes",
+      "value": "支持文本、数值与日期字段并带可自定义格式化",
+      "sourceUrl": "https://svar.dev/react/filter/",
+      "evidence": "Bring Smart Filtering to React Apps 段落",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/svar-dev-react-filter",
+    "designMdUrl": "https://vislexicon.com/site/svar-dev-react-filter.md",
+    "checkedAt": "2026-09-15T11:52:05.352Z",
+    "license": "MIT"
+  }
+}

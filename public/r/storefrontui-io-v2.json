@@ -1,0 +1,160 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "90027c924ac6c029c7863c1abf2a36adc866d0b52ba8c17f46ce4bba0978ca2c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "storefrontui-io-v2",
+  "entityId": "entity-storefrontui-io-v2",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://docs.storefrontui.io/v2",
+    "finalUrl": "https://docs.storefrontui.io/v2/",
+    "checkedAt": "2026-09-15T11:51:24.649Z"
+  },
+  "editorial": {
+    "name": "Storefront UI Documentation",
+    "descriptionZh": "Storefront UI v2 文档站，一套为电商做的 Vue 组件库，分 Base Components、Blocks、Composables 三层。给搭电商前台的团队用，可以从 ProductCard、Checkout 这类整块直接下手。",
+    "takeawayZh": "先拿 ProductCard、Checkout 整块，再调组件",
+    "noteZh": "顶栏一条绿色横幅写 Vue Storefront is now Alokai!。左栏先给一个 Vue 的下拉切换，再按 GETTING STARTED（Installation、Browser support）、CUSTOMIZATION（Overriding Default Styles、Prose styling、Theming、Typography）、COMPONENTS、BLOCKS、COMPOSABLES 分区，组件一栏从 AccordionItem 一直排到 Link。正文标题 Storefront UI Documentation，副标题 Fast, accessible, and fully customizable components built for e-commerce.，下面并排四颗按钮 Install for Vue / Install for React / Install for Qwik / Open Figma file。Base Components 一节把组件缩略图按四列铺成网格，第一排是 AccordionItem、Badge、Button、Checkbox，第二排是 Chip、Counter、Drawer、Dropdown；Blocks 里则是 Checkout、Filters、MegaMenu、OrderSummary、ProductSlider 这种整块。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "库里同时有 Base Components、Blocks、Composables 三层加一套 CUSTOMIZATION 章节（Overriding Default Styles、Theming、Typography），交付的是带定制口径的完整套件，属设计系统与完整组件套件。",
+        "evidenceUrl": "https://docs.storefrontui.io/v2/"
+      },
+      {
+        "statement": "正文另给 Open Figma file 入口，设计侧与代码侧是同一套系统，进一步支持套件定位。",
+        "evidenceUrl": "https://docs.storefrontui.io/v2/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:51:24.649Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce"
+    ],
+    "deliverables": [
+      "component",
+      "block",
+      "design-file"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "vue",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://docs.storefrontui.io/v2",
+      "finalUrl": "https://docs.storefrontui.io/v2/",
+      "title": "Storefront UI Documentation",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/storefrontui-io-v2/identity.jpg",
+        "sha256": "26a1c881aaa86bbe2383ea00a18bbbf4cb9894f019017708ae74a0c3f1188ec3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 89047,
+        "alt": "Storefront UI Documentation 首屏：Storefront UI Documentation"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "libraryStructure",
+      "value": "Base Components、Blocks、Composables 三层，各有 All 索引页",
+      "sourceUrl": "https://docs.storefrontui.io/v2/",
+      "evidence": "左侧栏三个分区标题与正文里对应的三节",
+      "confidence": 1
+    },
+    {
+      "field": "frameworkEntries",
+      "value": "Install for Vue / Install for React / Install for Qwik 三个入口，另有 Open Figma file",
+      "sourceUrl": "https://docs.storefrontui.io/v2/",
+      "evidence": "副标题下方并排的四颗按钮",
+      "confidence": 1
+    },
+    {
+      "field": "rebrand",
+      "value": "Vue Storefront 已改名 Alokai，页面顶部横幅提示",
+      "sourceUrl": "https://docs.storefrontui.io/v2/",
+      "evidence": "最上方绿色横幅 Vue Storefront is now Alokai! Learn More",
+      "confidence": 1
+    },
+    {
+      "field": "tailwindIntegration",
+      "value": "组件与区块都声明与 Tailwind CSS 集成",
+      "sourceUrl": "https://docs.storefrontui.io/v2/",
+      "evidence": "Base Components 与 Blocks 两节的说明句里都写 integrate with Tailwind CSS",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/storefrontui-io-v2",
+    "designMdUrl": "https://vislexicon.com/site/storefrontui-io-v2.md",
+    "checkedAt": "2026-09-15T11:51:24.649Z",
+    "license": "unknown"
+  }
+}

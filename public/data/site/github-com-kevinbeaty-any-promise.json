@@ -1,0 +1,153 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d06df7cf8d5528057b0b896331d27c72f7bc4d746a98c68cd788a3222f8252bb",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-kevinbeaty-any-promise",
+  "entityId": "entity-github-com-kevinbeaty-any-promise",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/kevinbeaty/any-promise",
+    "finalUrl": "https://github.com/kevinbeaty/any-promise",
+    "checkedAt": "2026-09-15T12:47:42.059Z"
+  },
+  "editorial": {
+    "name": "kevinbeaty/any-promise",
+    "descriptionZh": "让库代码不锁定某一种 Promise 实现：库只 require 这个包，由应用方决定注册 bluebird 还是用全局 Promise。",
+    "takeawayZh": "让库代码不挑 Promise 实现，交给调用方注册",
+    "noteZh": "仓库标题本身就是一句劝退：NOTE: You probably want native promises now，README 也把思路讲得很直白——let your library support any ES 2015 (ES6) compatible Promise and leave the choice to application authors。正文给了两段用法：直接用全局 Promise 时只 require('any-promise')，要指定实现时再用注册方式换成 bluebird。右栏 About 写 NOTE: You probably want native promises now，标 MIT license，Used by 13M、Contributors 4，仓库停在 master 分支、40 次提交。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可安装进项目依赖树的 JavaScript 库，用户动作是 npm 装上供自己的库调用，因此归开发工具；受控词典没有对应的具体小类，落在 build-deploy-dev-workflow。",
+        "evidenceUrl": "https://github.com/kevinbeaty/any-promise"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:47:42.059Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/kevinbeaty/any-promise",
+      "finalUrl": "https://github.com/kevinbeaty/any-promise",
+      "title": "GitHub - kevinbeaty/any-promise: NOTE: You probably want native promises now · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-kevinbeaty-any-promise/identity.jpg",
+        "sha256": "16893596aad44c1f5c02d99d445e62b5c3b88449ce00d7500e8140c29ccb8f88",
+        "width": 1280,
+        "height": 900,
+        "bytes": 124906,
+        "alt": "kevinbeaty/any-promise 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/kevinbeaty/any-promise",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-kevinbeaty-any-promise/identity.jpg",
+          "alt": "kevinbeaty/any-promise 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/kevinbeaty/any-promise",
+      "evidence": "README 顶部标 MIT license，右栏 About 也有 MIT license 条目，仓库根目录是 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/kevinbeaty/any-promise",
+      "evidence": "README 的 Usage 段只给 npm install 与 require 用法，没有价格或授权付费入口",
+      "confidence": 0.9
+    },
+    {
+      "field": "used-by",
+      "value": "13M",
+      "sourceUrl": "https://github.com/kevinbeaty/any-promise",
+      "evidence": "右栏 About 下方 Used by 13M (13M)",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-kevinbeaty-any-promise.md",
+  "registryUrl": "/r/github-com-kevinbeaty-any-promise.json"
+}

@@ -1,0 +1,167 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9d1e5018482594ad5a2e9274dfa09273b65c38930ed0d51898e7f58dac5422c2",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-qambar-color-contrast-checker",
+  "entityId": "entity-github-com-qambar-color-contrast-checker",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/Qambar/color-contrast-checker",
+    "finalUrl": "https://github.com/Qambar/color-contrast-checker",
+    "checkedAt": "2026-09-15T12:51:33.680Z"
+  },
+  "editorial": {
+    "name": "Qambar/color-contrast-checker",
+    "descriptionZh": "按 WCAG 2.0 / 2.1 校验颜色对比度的 npm 包，从 bbc/color-contrast-checker fork 而来，提供 isLevelAA、isLevelAAA 这类方法。",
+    "takeawayZh": "在代码里判一组色过不过 WCAG 等级",
+    "noteZh": "仓库标题下方直接标着 forked from bbc/color-contrast-checker。README 说对比公式 L1/L2 来自 ISO-9241-3 与 ANSI-HFES-100-1988，并列出三条 W3C 参考链接，还支持 #FFF、#000 这种简写色值；Usage 一段给的是 var ccc = new ColorContrastChecker(); 之后调 ccc.isLevelAA(color1, color2)，Installation 里给出 npm install color-contrast-checker，也给了以 devDependencies 方式写到 2.1.0 的写法。右侧 About 是 An accessibility checker tool for validating the color contrast based on WCAG 2.0 and WCAG 2.1 standards；仓库 5 star、42 个 commit、1 个 fork。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是装进项目、可在测试或构建脚本里调用的对比度校验库，用户拿走的是开发期的校验能力，归 build-deploy-dev-workflow。",
+        "evidenceUrl": "https://github.com/Qambar/color-contrast-checker"
+      },
+      {
+        "statement": "它查的是无障碍对比度，但形态是代码库不是审计平台，与 research-quality-tools 下的 accessibility-audit-remediation（Stark、axe 那类产品）不同；这一取舍存在解释空间。",
+        "evidenceUrl": "https://github.com/Qambar/color-contrast-checker"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:51:33.680Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "test",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "test",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "source-available",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker",
+      "finalUrl": "https://github.com/Qambar/color-contrast-checker",
+      "title": "GitHub - Qambar/color-contrast-checker: An accessibility checker tool for validating the color contrast based on WCAG 2.0 and WCAG 2.1 standards. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-qambar-color-contrast-checker/identity.jpg",
+        "sha256": "9fca8dcaece99a09dbbab94f817a065f9ef0be34098cb778381715065b0353e1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 91784,
+        "alt": "Qambar/color-contrast-checker 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/Qambar/color-contrast-checker",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-qambar-color-contrast-checker/identity.jpg",
+          "alt": "Qambar/color-contrast-checker 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "fork-source",
+      "value": "forked from bbc/color-contrast-checker",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker",
+      "evidence": "仓库标题行下方写着 forked from bbc/color-contrast-checker",
+      "confidence": 1
+    },
+    {
+      "field": "standards",
+      "value": "WCAG 2.0 与 WCAG 2.1；公式基于 ISO-9241-3 与 ANSI-HFES-100-1988",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker",
+      "evidence": "About 栏与 README 首段写着 based on WCAG 2.0 and WCAG 2.1 standards，公式来源也在 README 一段里注明",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "new ColorContrastChecker() 后调 isLevelAA / isLevelAAA",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker",
+      "evidence": "README 的 Usage 一段给的是 var ccc = new ColorContrastChecker(); 然后 ccc.isLevelAA(color1, ...)，另有 Advanced Usage 一节",
+      "confidence": 0.9
+    },
+    {
+      "field": "license",
+      "value": "unknown（页面只给 License 链接）",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker",
+      "evidence": "右侧边栏与 README 卡片都只写 Readme / License，没有标出许可证名称",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-qambar-color-contrast-checker.md",
+  "registryUrl": "/r/github-com-qambar-color-contrast-checker.json"
+}

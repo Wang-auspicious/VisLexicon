@@ -1,0 +1,182 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e0206a17ef39270c7e02ee151ec4291d39357fc9d8eca77c3bbc1183617c40b5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-nandorojo-burnt",
+  "entityId": "entity-github-com-nandorojo-burnt",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/nandorojo/burnt",
+    "finalUrl": "https://github.com/nandorojo/burnt",
+    "checkedAt": "2026-09-15T11:56:36.124Z"
+  },
+  "editorial": {
+    "name": "nandorojo/burnt",
+    "descriptionZh": "React Native 上的跨端 toast 与 alert 库，iOS 包的是 SPIndicator 和 AlertKit，Android 用 react-native 的 ToastAndroid，Web 端包了 sonner。README 强调它走原生组件而不是用 React state 自绘 UI。",
+    "takeawayZh": "调 Burnt.toast 出跨端原生吐司",
+    "noteZh": "README 开头用三段演示视频铺陈 Alerts、...and Toasts、...and Web Support，后面接 Context、What、Features、Modals、Usage、Installation、API、Contribute。Features 里列了 iOS App Store 式弹窗、加载中提示，以及在原生 iOS 模态之上叠 toast 这几点，并注明 Burnt.alert() 在 Android 上会退回 Burnt.toast()。调用示例是 Burnt.toast({ title: \"Burnt installed.\", preset: \"done\" })。右栏显示 1.6k stars、51 forks，最新版本是 0.13: Sonner 2，被 1.9K 个项目依赖。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 toast / alert 界面组件库（命令式 API 加原生封装），装进 React Native 应用即可调用，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/nandorojo/burnt"
+      },
+      {
+        "statement": "README 的 What 一节写明这是 a library with a toast and alert method for showing ephemeral UI，并在 iOS / Android / Web 三端各自包了现成实现，主体是组件而非工具链。",
+        "evidenceUrl": "https://github.com/nandorojo/burnt"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:56:36.124Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/nandorojo/burnt",
+      "finalUrl": "https://github.com/nandorojo/burnt",
+      "title": "GitHub - nandorojo/burnt: Crunchy toasts for React Native. 🍞 · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-nandorojo-burnt/identity.jpg",
+        "sha256": "23682de0cc63e7b536588f520bdc1fbc4a1cf4bfac61ce833ba621b65db416f1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 99813,
+        "alt": "nandorojo/burnt 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/nandorojo/burnt",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-nandorojo-burnt/identity.jpg",
+          "alt": "nandorojo/burnt 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/nandorojo/burnt",
+      "evidence": "README 标题旁与 About 栏的 MIT license 标记",
+      "confidence": 1
+    },
+    {
+      "field": "platforms",
+      "value": "Android、iOS、Web 三端；iOS 包 SPIndicator 与 AlertKit，Android 用 ToastAndroid，Web 用 sonner",
+      "sourceUrl": "https://github.com/nandorojo/burnt",
+      "evidence": "README 的 Now with Android, iOS & Web Support. 与 What 一节",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "Burnt.toast({ title, preset })；Burnt.alert() 在 Android 上退回 Burnt.toast()",
+      "sourceUrl": "https://github.com/nandorojo/burnt",
+      "evidence": "README Usage 一节与 What 一节的说明",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "0.13: Sonner 2（Releases 11）",
+      "sourceUrl": "https://github.com/nandorojo/burnt",
+      "evidence": "右栏 Releases 栏最新一条",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "1.6k stars、51 forks、Used by 1.9K",
+      "sourceUrl": "https://github.com/nandorojo/burnt",
+      "evidence": "顶部 Star / Fork 计数与右栏 Used by 一栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-nandorojo-burnt.md",
+  "registryUrl": "/r/github-com-nandorojo-burnt.json"
+}

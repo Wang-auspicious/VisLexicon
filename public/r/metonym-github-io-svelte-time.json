@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a48f1b919d92175299d1a198b7f425d4ccc7d4a51cb0e70214fb1ac8f1817686",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "metonym-github-io-svelte-time",
+  "entityId": "entity-metonym-github-io-svelte-time",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://metonym.github.io/svelte-time",
+    "finalUrl": "https://metonym.github.io/svelte-time/",
+    "checkedAt": "2026-09-15T12:10:14.989Z"
+  },
+  "editorial": {
+    "name": "svelte-time",
+    "descriptionZh": "Svelte 的组件、action 与 attachment 库，用 day.js 把时间戳和时长格式化成可读文本，并把机器可读值写进语义化的 <time> 元素。",
+    "takeawayZh": "用 <Time> 组件或 use:svelteTime 把时间戳渲染成相对时间",
+    "noteZh": "进去是一页深色文档：顶部 NPM 徽章标着 V2.3.1，紧跟一段 Note，区分 svelte-time@2 要 Svelte 5 的 runes、1.0.0 供 Svelte 3/4 使用。正文从 About 起，先用一段 <Time relative /> 的「输入 → DOM 输出」对照说明结果落在 <time> 元素上，再拿一张表把 Component、Action、Attachment 三个原语的导出名（Time / svelteTime / time）并排列出。页面后面还有 Internationalization、Duration、Time Range，以及 svelte-time/intl 这个零依赖替代版的小节。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "About 写明它把时间戳与时长做成 Svelte 的组件和 action，导出 Time 组件、svelteTime action、time attachment 三种可直接安装使用的形态，交付物是组件而非成品页面，因此归 ui-implementation 的通用组件库。",
+        "evidenceUrl": "https://metonym.github.io/svelte-time/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:10:14.989Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://metonym.github.io/svelte-time",
+      "finalUrl": "https://metonym.github.io/svelte-time/",
+      "title": "svelte-time",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/metonym-github-io-svelte-time/identity.jpg",
+        "sha256": "4ff15a5df5c42fd025ee99958d8bea002a8bc681f2f4fdcfb5c620357b99a288",
+        "width": 1280,
+        "height": 900,
+        "bytes": 100169,
+        "alt": "svelte-time 首屏：svelte-time"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "version",
+      "value": "2.3.1",
+      "sourceUrl": "https://metonym.github.io/svelte-time/",
+      "evidence": "首屏顶部 NPM 徽章写 V2.3.1",
+      "confidence": 1
+    },
+    {
+      "field": "dependency",
+      "value": "day.js",
+      "sourceUrl": "https://metonym.github.io/svelte-time/",
+      "evidence": "About 一节末尾一句 It uses day.js.",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/metonym/svelte-time",
+      "evidence": "仓库的许可证为 MIT",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/metonym-github-io-svelte-time",
+    "designMdUrl": "https://vislexicon.com/site/metonym-github-io-svelte-time.md",
+    "checkedAt": "2026-09-15T12:10:14.989Z",
+    "license": "MIT"
+  }
+}

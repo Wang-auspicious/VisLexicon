@@ -1,0 +1,168 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3a96fa750a0243859f39f768aa109fcbbcc4afd2a4db46eadb326b5a3701573c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "usertourkit-com",
+  "entityId": "entity-usertourkit-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://usertourkit.com",
+    "finalUrl": "https://usertourkit.com/",
+    "checkedAt": "2026-09-15T11:53:26.835Z"
+  },
+  "editorial": {
+    "name": "userTourKit",
+    "descriptionZh": "给 React、Vue、Svelte 用的产品引导工具包：一个 headless core 加可组合组件，覆盖 product tours、feature hints、checklists、announcements、surveys 这些上手引导形态，并说明与 shadcn/ui 开箱兼容。开发期免费，上线后 $9.99 一次性付费。",
+    "takeawayZh": "装 @tour-kit/core，四步起一条产品导览",
+    "noteZh": "首屏顶上一条紫色横条写 Tour Kit is free in development, $9.99 one-time when you ship，后面跟 See the tiers →。导航是 userTourKit / Docs / API / Examples / Studio / Packages / Resources / Pricing，右上角还有 Search Ctrl K。主标题 The onboarding library you wish you'd built. 第二行是紫色渐变，标题上方两枚 pill 分别写 WCAG 2.1 AA accessible 和 Built for shadcn/ui，按钮是 Get started 与 View on GitHub。右侧摆了一个浏览器窗口 mock，地址栏 your-app.com，里面弹着 Welcome to your dashboard 的 tooltip，带 1 / 3 和 Next，窗口上方一排 THEME 色点。再往下是 Work with 一行 React、NEXT.js、Vue.js、SVELTE 四个标志，以及 $ pnpm add @tour-kit/core 的安装行。",
+    "recommendation": null,
+    "pricing": "Free in development, $9.99 one-time when you ship",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一组要嵌进产品里的复合控件（导览气泡、提示、清单、公告、问卷），页面反复强调 headless core + 可组合组件，用户动作是 install 之后挂到自己的应用根节点，所以归到可嵌入复合控件而不是通用组件库。",
+        "evidenceUrl": "https://usertourkit.com/"
+      },
+      {
+        "statement": "首页 Ship your first tour in 2 minutes 一段把接入拆成 Install / Wrap your app / Define your steps / Start the tour 四步，是控件接入流程而非整站模板，可排除站点启动器一类。",
+        "evidenceUrl": "https://usertourkit.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:53:26.835Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "marketing"
+    ],
+    "deliverables": [
+      "component",
+      "primitive"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "preview",
+      "compare"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "vue",
+      "svelte",
+      "typescript",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://usertourkit.com",
+      "finalUrl": "https://usertourkit.com/",
+      "title": "userTourKit, Product Tours, Checklists & In-App Messaging for React",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/usertourkit-com/identity.jpg",
+        "sha256": "dbafffbe09ca004f8dddf53dbf2ffd5a077e106ca241b2dee0d71dea1af5f83f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114288,
+        "alt": "userTourKit 首屏：The onboarding library you wish you'd built."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "开发期免费，上线后 $9.99 一次性付费",
+      "sourceUrl": "https://usertourkit.com/",
+      "evidence": "首屏顶部横条 Tour Kit is free in development, $9.99 one-time when you ship，主按钮下方那行 pill 同样写 Free in development, from $9.99 one-time when you ship",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "一条命令装两个包：@tour-kit/core 是引擎、@tour-kit/react 是适配层；页面另有 One install. Ten packages. 一段",
+      "sourceUrl": "https://usertourkit.com/",
+      "evidence": "Ship your first tour in 2 minutes 一段下方的 $ pnpm add @tour-kit/core 与 + @tour-kit/react 两行",
+      "confidence": 1
+    },
+    {
+      "field": "accessibility",
+      "value": "WCAG 2.1 AA",
+      "sourceUrl": "https://usertourkit.com/",
+      "evidence": "首屏标题上方的 WCAG 2.1 AA accessible pill，Built for developers who ship. 一段里也重复了 WCAG accessibility",
+      "confidence": 1
+    },
+    {
+      "field": "frameworks",
+      "value": "React、Vue、Svelte 三个适配包，页面写 + more soon",
+      "sourceUrl": "https://usertourkit.com/",
+      "evidence": "首屏 Work with 一行四个标志，四步接入一段的 React / Vue / Svelte 切换",
+      "confidence": 1
+    },
+    {
+      "field": "comparisons",
+      "value": "与 react-joyride、shepherd-js、intro-js、driver-js、reactour、onborda、onboardjs、appcues、userguiding、userpilot、walkme、userflow、chameleon 的对比页",
+      "sourceUrl": "https://usertourkit.com/compare",
+      "evidence": "站内 /compare/tour-kit-vs-* 路径共 13 条，首页另有 How Tour Kit compares 一段",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Free in development, $9.99 one-time when you ship。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/usertourkit-com",
+    "designMdUrl": "https://vislexicon.com/site/usertourkit-com.md",
+    "checkedAt": "2026-09-15T11:53:26.835Z",
+    "license": "unknown"
+  }
+}

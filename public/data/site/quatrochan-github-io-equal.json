@@ -1,0 +1,171 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d202364f83259b884413421d98360065db119e5bd169654243948b273ba7cd43",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "quatrochan-github-io-equal",
+  "entityId": "entity-quatrochan-github-io-equal",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "equal-ui.github.io",
+  "official": {
+    "inputUrl": "https://quatrochan.github.io/Equal",
+    "finalUrl": "https://equal-ui.github.io/Equal/",
+    "checkedAt": "2026-09-15T12:31:10.075Z"
+  },
+  "editorial": {
+    "name": "Equal UI",
+    "descriptionZh": "基于 TypeScript 的 Vue 3 组件库文档站，组件建在 Tailwind CSS 之上，官方数字是 30 多个；左栏按 General / Base / Form / Feedback / Data Display / Navigation 分组，每组下面列出具体组件页。",
+    "takeawayZh": "Vue 3 组件库，配色和变体用 Tailwind 类改。",
+    "noteZh": "左栏顶部是带放大镜的 Search 输入框，下面 General 组里排着 Introduction、Getting started、Theming、Contribution、Support，Base 组是 Button、Divider，Form 组从 Checkbox 一路到 Toggle，其中 Datepicker 后面挂着 Soon 标签；主区是 Equal UI 大标题加一句 over 30 components built on top of Tailwind CSS，下面 COMPONENTS 区用卡片铺开 Button、Colorpicker、Slider、Textarea、Input。右栏有一条 Be the first sponsor 的赞助位，顶栏能切浅色深色主题和 en 语言。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是按组件分页的 Vue 3 组件库，用户进来挑一个组件（Button、Colorpicker、Slider 等）看用法并装进项目，属通用界面组件库。",
+        "evidenceUrl": "https://equal-ui.github.io/Equal/components/button"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:31:10.075Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "search",
+      "browse",
+      "preview",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "typescript",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://quatrochan.github.io/Equal",
+      "finalUrl": "https://equal-ui.github.io/Equal/",
+      "title": "Equal UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/quatrochan-github-io-equal/identity.jpg",
+        "sha256": "24be58806328b143124970763eb87dc7098daadc297eaee3f9a81cdc3dd68961",
+        "width": 1280,
+        "height": 900,
+        "bytes": 90289,
+        "alt": "Equal UI 首屏：Equal UI"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://quatrochan.github.io/Equal",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/quatrochan-github-io-equal/identity.jpg",
+          "alt": "Equal UI 首屏：Equal UI",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "组件数量",
+      "value": "30 多个组件",
+      "sourceUrl": "https://equal-ui.github.io/Equal/",
+      "evidence": "首屏文案 featuring over 30 components built on top of Tailwind CSS",
+      "confidence": 1
+    },
+    {
+      "field": "技术栈",
+      "value": "Vue 3 + TypeScript + Tailwind CSS",
+      "sourceUrl": "https://equal-ui.github.io/Equal/introduction",
+      "evidence": "live.description 写 Equal is a Vue UI library based on TypeScript；首屏文案说明组件 built on top of Tailwind CSS",
+      "confidence": 1
+    },
+    {
+      "field": "主题能力",
+      "value": "内置深色主题，并可在构建期与运行时自建变体",
+      "sourceUrl": "https://equal-ui.github.io/Equal/theming",
+      "evidence": "LIGHT AND DARK THEMES 与 BUILD YOUR OWN THEME 两节文字，含 you can create your own variations at the build and runtime",
+      "confidence": 1
+    },
+    {
+      "field": "未完成页面",
+      "value": "Datepicker、Steps 等条目在侧栏标注 Soon",
+      "sourceUrl": "https://equal-ui.github.io/Equal/components/datepicker",
+      "evidence": "左栏 Datepicker 后跟着 Soon 标签，正文导航里 Steps 同样带 Soon",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/quatrochan-github-io-equal.md",
+  "registryUrl": "/r/quatrochan-github-io-equal.json"
+}

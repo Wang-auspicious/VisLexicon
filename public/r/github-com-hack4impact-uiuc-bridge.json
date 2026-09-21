@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4c4a23823b05b3534c1a75b3c3db5f1d955d69bca89c5bee9914a0303a769f59",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-hack4impact-uiuc-bridge",
+  "entityId": "entity-github-com-hack4impact-uiuc-bridge",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/hack4impact-uiuc/bridge",
+    "finalUrl": "https://github.com/hack4impact-uiuc/bridge",
+    "checkedAt": "2026-09-15T11:42:37.760Z"
+  },
+  "editorial": {
+    "name": "hack4impact-uiuc/bridge",
+    "descriptionZh": "Hack4Impact UIUC 的设计系统与 React 组件库。装 @hack4impact-uiuc/bridge 后先引入 dist/styles.css，主题默认走自家的 Design theme，也可以整套换掉。",
+    "takeawayZh": "装 bridge，拿这套 React 组件和能整套替换的主题。",
+    "noteZh": "README 的 Usage 要求先 import '@hack4impact-uiuc/bridge/dist/styles.css'，再从包里 import { Button }；Theming 一节说明组件默认用 Hack4Impact 的 Design theme（src/theme.js），可以整体替换也可以只替换其中一部分，走 styled-components 的 ThemeProvider。仓库里 .storybook、playground、docs 三块都在，About 主页指向 uiuic.hack4impact.org/design，标签有 design-system、react、styling，MIT license，最新版 v1.2.5。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库标题直接是「Hack4Impact UIUC Design System + React Component Library」，同时交付样式 CSS、组件与可替换主题，属于一套完整设计系统。",
+        "evidenceUrl": "https://github.com/hack4impact-uiuc/bridge"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:42:37.760Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/hack4impact-uiuc/bridge",
+      "finalUrl": "https://github.com/hack4impact-uiuc/bridge",
+      "title": "GitHub - hack4impact-uiuc/bridge: Hack4Impact UIUC Design System + React Components · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-hack4impact-uiuc-bridge/identity.jpg",
+        "sha256": "a899fd07a97e126a01248937c79a399cff628b46561a6112f61082e394522c7b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131887,
+        "alt": "hack4impact-uiuc/bridge 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/hack4impact-uiuc/bridge",
+      "evidence": "README 卡片标题行写着 MIT license，仓库根目录有 LICENSE（提交信息 Add MIT License (#6)）",
+      "confidence": 1
+    },
+    {
+      "field": "install-steps",
+      "value": "npm install @hack4impact-uiuc/bridge + import dist/styles.css",
+      "sourceUrl": "https://github.com/hack4impact-uiuc/bridge",
+      "evidence": "README 的 Installation 与 Usage 两节分别给出这两步",
+      "confidence": 1
+    },
+    {
+      "field": "theming",
+      "value": "默认 src/theme.js，可用 styled-components 覆盖",
+      "sourceUrl": "https://github.com/hack4impact-uiuc/bridge",
+      "evidence": "README 的 Theming 一节说明组件默认使用 Hack4Impact 的 Design theme，也可通过 prop 传入自定义主题",
+      "confidence": 1
+    },
+    {
+      "field": "latest-release",
+      "value": "v1.2.5",
+      "sourceUrl": "https://github.com/hack4impact-uiuc/bridge",
+      "evidence": "右侧 Releases 区显示 v1.2.5 带 Latest 徽标",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-hack4impact-uiuc-bridge",
+    "designMdUrl": "https://vislexicon.com/site/github-com-hack4impact-uiuc-bridge.md",
+    "checkedAt": "2026-09-15T11:42:37.760Z",
+    "license": "MIT"
+  }
+}

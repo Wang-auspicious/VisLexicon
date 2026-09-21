@@ -1,0 +1,178 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "427affe6dc8ecaef202599302e9dedd09bd1e523c985c30a88268503d8c8bedf",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "skynetui-com",
+  "entityId": "entity-skynetui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "skynetui.com",
+  "official": {
+    "inputUrl": "https://skynetui.com",
+    "finalUrl": "https://skynetui.com/",
+    "checkedAt": "2026-09-15T12:07:38.697Z"
+  },
+  "editorial": {
+    "name": "Skynet UI",
+    "descriptionZh": "Skynet UI 是一个刻意写给语言模型读的 CSS + JS 框架，整份参考文档就挂在 llms-full.txt 上。模型读一遍就能照着它写页面，或把已有的 Tailwind 页面转过来。",
+    "takeawayZh": "把 llms-full.txt 给模型，让它用 Skynet UI 写页面。",
+    "noteZh": "深色站点，左侧栏分 START HERE、COMPONENTS、LAYOUT 三段，一路列到 Skeletons 和 Grid system。正文标题 The UI kit your AI can learn from one URL，下面并排两张卡：左边 Build something new 给了一段能粘进 Claude、ChatGPT、Cursor 的 prompt，右边 Or convert a Tailwind page 是转换指令，两张卡各配一个 Copy prompt 按钮。再往下是 The only install — two tags, no build step，贴了 skynet-ui.css 和 skynet-ui.js 两个 CDN 标签。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "主体是 70+ 组件的 CSS/JS 组件库，AI 与 MCP 是它的分发方式而不是类别，所以归组件库一类，AI 放进 scenarios 与 platforms。",
+        "evidenceUrl": "https://skynetui.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:07:38.697Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "prompt"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [
+      "css",
+      "javascript",
+      "tailwind",
+      "html"
+    ],
+    "workflowStages": [
+      "build",
+      "ideation"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://skynetui.com",
+      "finalUrl": "https://skynetui.com/",
+      "title": "Skynet UI — The UI kit built for LLMs",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/skynetui-com/identity.jpg",
+        "sha256": "e533e2459808ab7ea9409976ccda9b798aa15a2dd0dc7f6e069730388c935473",
+        "width": 1280,
+        "height": 900,
+        "bytes": 145039,
+        "alt": "Skynet UI 首屏：The UI kit your AI can learn from one URL"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://skynetui.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/skynetui-com/identity.jpg",
+          "alt": "Skynet UI 首屏：The UI kit your AI can learn from one URL",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "distribution",
+      "value": "两文件、零构建：一个 skynet-ui.css 加一个 skynet-ui.js",
+      "sourceUrl": "https://skynetui.com/",
+      "evidence": "首页 The only install — two tags, no build step 段贴出的两行 link 与 script 标签，并注明可锁到不可变的 /v3.13.0/ URL。",
+      "confidence": 1
+    },
+    {
+      "field": "llmReference",
+      "value": "整份框架文档在 skynetui.com/llms-full.txt，索引在 /llms.txt",
+      "sourceUrl": "https://skynetui.com/llms-full.txt",
+      "evidence": "首页正文 One compact reference — skynetui.com/llms-full.txt (index at /llms.txt) teaches any LLM every component。",
+      "confidence": 1
+    },
+    {
+      "field": "mcpServer",
+      "value": "自带 Model Context Protocol 服务，正文标注 15 tools",
+      "sourceUrl": "https://skynetui.com/mcp-server.html",
+      "evidence": "左侧导航有独立的 MCP server 项，正文小标题写 MCP server 15 tools。",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "v3.13.0",
+      "sourceUrl": "https://skynetui.com/",
+      "evidence": "正文标题上方的版本徽章写 v3.13.0 · built for LLMs，页脚也重复了 v3.13.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/skynetui-com.md",
+  "registryUrl": "/r/skynetui-com.json"
+}

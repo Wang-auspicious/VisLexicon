@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2ee8c833c22047fc4613b69a057f142e3d4b237dfe7d520c693ed632cb142597",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-csstools-sanitize-css",
+  "entityId": "entity-github-com-csstools-sanitize-css",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/csstools/sanitize.css",
+    "finalUrl": "https://github.com/csstools/sanitize.css",
+    "checkedAt": "2026-09-15T12:07:12.707Z"
+  },
+  "editorial": {
+    "name": "csstools/sanitize.css",
+    "descriptionZh": "一个把 HTML 元素在各浏览器下的默认样式拉齐的 CSS 库，README 说明它和 normalize.css 同源开发，每条归一化和主张都单独标注。除主文件外还拆出 forms.css、assets.css、typography.css、reduce-motion.css、system-ui.css 几个可选样式表。",
+    "takeawayZh": "引入 sanitize.css，把浏览器默认的表单与排版样式拉齐",
+    "noteZh": "仓库首页中间的文件列表里，assets.css、forms.css、reduce-motion.css、sanitize.css、system-ui.css、typography.css 几个样式表并排排在根目录；README 第一句写它是在 normalize.css 基础上做的，并把样式包在 :where() 里做成零特异性选择器。右侧 About 写 CC0-1.0 license，Releases 最新是 13.0.0，星标 5.3k。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的是可直接引入页面的 CSS 基础层（浏览器默认样式归一化），用户拿走的动作是复制/安装这段样式表，属于界面实现类；但它不含任何可复用组件，与「组件库」有距离，这里按「通用界面实现素材」归入 general-ui-components，归类依据偏弱。",
+        "evidenceUrl": "https://github.com/csstools/sanitize.css"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:07:12.707Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "html"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "CC0-1.0"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/csstools/sanitize.css",
+      "finalUrl": "https://github.com/csstools/sanitize.css",
+      "title": "GitHub - csstools/sanitize.css: A best-practices CSS foundation · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-csstools-sanitize-css/identity.jpg",
+        "sha256": "4ae04decddd75f9c3343ac4cd7dce32ceb378327e00b1200ef4f9a6e46315090",
+        "width": 1280,
+        "height": 900,
+        "bytes": 125296,
+        "alt": "csstools/sanitize.css 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "CC0-1.0",
+      "sourceUrl": "https://github.com/csstools/sanitize.css",
+      "evidence": "README 顶部徽标与右侧 About 面板都写着 CC0-1.0 license",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "13.0.0",
+      "sourceUrl": "https://github.com/csstools/sanitize.css",
+      "evidence": "文件列表里 package.json 一行标注 13.0.0，右侧 Releases 区显示 13.0.0 (Latest)",
+      "confidence": 1
+    },
+    {
+      "field": "files",
+      "value": "sanitize.css / forms.css / assets.css / typography.css / system-ui.css / reduce-motion.css",
+      "sourceUrl": "https://github.com/csstools/sanitize.css",
+      "evidence": "README 的 Usage 段逐个给出这几个样式表的 CDN 引入方式和用途",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-csstools-sanitize-css",
+    "designMdUrl": "https://vislexicon.com/site/github-com-csstools-sanitize-css.md",
+    "checkedAt": "2026-09-15T12:07:12.707Z",
+    "license": "CC0-1.0"
+  }
+}

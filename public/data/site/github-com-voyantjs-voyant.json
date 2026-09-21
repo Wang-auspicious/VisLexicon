@@ -1,0 +1,154 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0cfaa9b2a3a1114dffe1a0e662b14e86d1b96e4efe4b06e32e480f9557e2e7ee",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-voyantjs-voyant",
+  "entityId": "entity-github-com-voyantjs-voyant",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/voyantjs/voyant",
+    "finalUrl": "https://github.com/voyant-travel/voyant",
+    "checkedAt": "2026-09-15T12:30:44.170Z"
+  },
+  "editorial": {
+    "name": "voyant-travel/voyant",
+    "descriptionZh": "旧的 voyantjs/voyant 地址现在会跳到 voyant-travel/voyant，落到的是同一个旅行预订平台仓库：apps 放可部署应用、packages 放模块，README 用 The module surface 讲模块边界。",
+    "takeawayZh": "旧地址进来，落到同一套预订平台源码",
+    "noteZh": "从 voyantjs/voyant 这个旧地址进来会直接落到 voyant-travel/voyant，页面就是同一个仓库：README 的 Getting started / What is Voyant? / How it runs / The module surface / Extending the platform / Architecture 一路排下来，右侧 About 挂着 voyant.travel 与 travel、travel-app、travel-tech 三个 topic，文件树里 main 分支标着 2030 Branches、192 Tags，最新一次提交是 chore: release packages (#4947)。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "templates-design-files",
+    "subcategory": "site-app-starters",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "该条目与 voyant-travel/voyant 是同一个落地页（旧命名空间重定向），交付物同样是 apps + packages 组成的应用底座，因此沿用同一分类；分类依据来自重定向后页面的 README 结构而非旧地址的候选池名称。",
+        "evidenceUrl": "https://github.com/voyant-travel/voyant"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:30:44.170Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/voyantjs/voyant",
+      "finalUrl": "https://github.com/voyant-travel/voyant",
+      "title": "GitHub - voyant-travel/voyant · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-voyantjs-voyant/identity.jpg",
+        "sha256": "fce8130d343bdd00151969e59da6883d31603ce71a716174b33d30a7a63710d5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 141214,
+        "alt": "voyant-travel/voyant 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/voyantjs/voyant",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-voyantjs-voyant/identity.jpg",
+          "alt": "voyant-travel/voyant 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "url-redirect",
+      "value": "voyantjs/voyant → voyant-travel/voyant",
+      "sourceUrl": "https://github.com/voyantjs/voyant",
+      "evidence": "访问旧地址后浏览器落在 voyant-travel/voyant 仓库页，页面标题与内容一致",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/voyant-travel/voyant",
+      "evidence": "重定向后页面右侧 About 栏的 Apache-2.0 license",
+      "confidence": 1
+    },
+    {
+      "field": "repo-structure",
+      "value": "apps / packages / docs / examples/operator-demo",
+      "sourceUrl": "https://github.com/voyant-travel/voyant",
+      "evidence": "仓库首页文件列表里这几块目录及其提交说明",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-voyantjs-voyant.md",
+  "registryUrl": "/r/github-com-voyantjs-voyant.json"
+}

@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2218751c8f63c9a9f7242bfa33546a51e2a39ad19edb26489e69096fdc61b5e4",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "material-angular-io",
+  "entityId": "entity-material-angular-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://material.angular.io",
+    "finalUrl": "https://material.angular.dev/",
+    "checkedAt": "2026-09-15T12:00:51.565Z"
+  },
+  "editorial": {
+    "name": "Angular Material",
+    "descriptionZh": "Angular 官方的 Material Design 组件库文档站，导航把 Components、CDK、Guides 分三栏，另有 22.1.6 版本号与配色、深色模式开关。",
+    "takeawayZh": "照 Guides 的 Theming 章，把组件调成自家配色",
+    "noteZh": "首屏是一整块淡紫蓝渐变，顶栏左起 Material 标、Components、CDK、Guides，右端挂着 22.1.6 版本下拉、调色板图标与 GitHub。中间大标题 Angular Material 加副题 Material Design components for Angular，一枚白色 Get started 胶囊；右侧压着放大版的 Angular 盾牌图形。往下三栏 High quality / Versatile / Frictionless 各配一段说明，正文里 Featured components 一列点了 Datepicker、Input、Slide toggle、Slider、Button 五个组件，Guides 一列则是 Getting started、Theming、Schematics、Testing with component harnesses 这些页。截图底部被 Google 的 cookie 提示条挡住了一角。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点自述是 UI component infrastructure and Material Design components for mobile and desktop Angular web applications，导航分 Components / CDK / Guides，交付 Angular 组件加主题系统，归设计系统与完整组件套件。",
+        "evidenceUrl": "https://material.angular.dev/"
+      },
+      {
+        "statement": "语料里 angular/components 这个仓库已归在 design-system-suites，这里是它的官方文档站，取同一子类；候选池给的 material.angular.io 会落到 material.angular.dev，按落点归类不变。",
+        "evidenceUrl": "https://material.angular.dev/components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:51.565Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT",
+      "CC-BY-4.0"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://material.angular.io",
+      "finalUrl": "https://material.angular.dev/",
+      "title": "Angular Material UI component library",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/material-angular-io/identity.jpg",
+        "sha256": "69df573306cd6e843eaa7b512b56b220aef659f3ea27161457a33e474a2fc1b9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 80950,
+        "alt": "Angular Material 首屏：Angular Material"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "featuredComponents",
+      "value": "Datepicker、Input、Slide toggle、Slider、Button",
+      "sourceUrl": "https://material.angular.dev/",
+      "evidence": "首页 Featured components 一栏列出的五个组件标题，后面还跟着 View all components",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "代码 MIT-style，文档 CC BY 4.0",
+      "sourceUrl": "https://material.angular.dev/",
+      "evidence": "页脚原文 Code licensed under an MIT-style License. Documentation licensed under CC BY 4.0.",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "22.1.6",
+      "sourceUrl": "https://material.angular.dev/",
+      "evidence": "顶栏右侧的版本号下拉（截图可见）",
+      "confidence": 1
+    },
+    {
+      "field": "guides",
+      "value": "Getting started / Theming / Theming your components / Schematics / Custom form field control / Custom stepper using the CdkStepper / Testing with component harnesses",
+      "sourceUrl": "https://material.angular.dev/guides",
+      "evidence": "首页 Guides 一栏列出的条目",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。代码 MIT-style，文档 CC BY 4.0：页脚原文 Code licensed under an MIT-style License. Documentation licensed under CC BY 4.0.",
+      "该条目登记了多个许可值（MIT / CC-BY-4.0），目录之间可能不同，逐目录确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/material-angular-io",
+    "designMdUrl": "https://vislexicon.com/site/material-angular-io.md",
+    "checkedAt": "2026-09-15T12:00:51.565Z",
+    "license": "MIT / CC-BY-4.0"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4858079b455b9722682c65d5c5d360807d806eca444ee7fb472e130643d2c47b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "planetscale-com",
+  "entityId": "entity-planetscale-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://planetscale.com",
+    "finalUrl": "https://planetscale.com/",
+    "checkedAt": "2026-09-15T11:16:53.422Z"
+  },
+  "editorial": {
+    "name": "PlanetScale",
+    "descriptionZh": "云数据库托管，提供分片的 MySQL（Vitess）与分片 Postgres（Neki），主打无限 IOPS、在线改表和无停机升级。给要扛高并发的关系型数据库团队。",
+    "takeawayZh": "看它怎么用框线字符把分片拓扑画成一张 ASCII 图",
+    "noteZh": "最上面一条黄色横幅写 Neki, sharded Postgres, is now available. 加一个 Get started 按钮，导航是 Platform / Resources / Documentation / Pricing / Migrate，右侧是 Sign in 与 View sandbox、Get in touch 两个按钮。正文一反常见 SaaS 排版：左边缘一根橙色竖线引出 The world's fastest and most scalable cloud databases，段落里的 databases、NVMe drives、unlimited IOPS、PlanetScale Managed 都做成青绿下划线链接。往下是一张 5×4 的客户 logo 方格（Square、Cash App、CURSOR、Fin、Etsy、KICK、Whop、Cloudflare、whatnot、slack、MERCOR、Notion、Laravel、clay、clerk、orb.、Poke、Resend、mixpanel、Profound），再往下 Vitess / Neki / Postgres 三块介绍里嵌了一张用框线字符画的 VTGate 分片拓扑图，还引了 Anysphere（Cursor）CPO 的一句话做背书。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页是 PlanetScale 这家云数据库公司的产品页：Pricing / Documentation / Migrate 一组导航、Vitess / Neki / Postgres 三条产品线和客户 logo 墙，交付物是托管服务。",
+        "evidenceUrl": "https://planetscale.com/"
+      },
+      {
+        "statement": "站点维护开源项目 Vitess 并给了 GitHub 链接与 Learn Vitess 课程入口，但首页没有代码包、安装命令或可下载物，所以不归 build-deploy-dev-workflow。",
+        "evidenceUrl": "https://planetscale.com/vitess"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:16:53.422Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "admin"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation",
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://planetscale.com",
+      "finalUrl": "https://planetscale.com/",
+      "title": "PlanetScale - the world’s fastest and most scalable cloud hosting for Vitess, Neki, and Postgres",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/planetscale-com/identity.jpg",
+        "sha256": "cf6b5c743a42df50f00f3bd903874ccdc394279dc342d4290b8610510dbbbb3c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 138347,
+        "alt": "PlanetScale 首屏：The world’s fastest and most scalable cloud databases"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://planetscale.com/",
+      "evidence": "导航有 Pricing 与 /pricing 路径，首屏只给 Sign in、View sandbox 与 Get in touch，抓到的页面没有任何金额",
+      "confidence": 1
+    },
+    {
+      "field": "products",
+      "value": "Vitess（分片 MySQL）、Neki（分片 Postgres）、Postgres",
+      "sourceUrl": "https://planetscale.com/",
+      "evidence": "顶部黄色横幅写 Neki, sharded Postgres, is now available.，正文首屏下方三块分别介绍 Vitess / Neki / Postgres",
+      "confidence": 1
+    },
+    {
+      "field": "customers",
+      "value": "Square、Cash App、Cursor、Etsy、Notion、Slack、Cloudflare、Laravel 等 20 个 logo",
+      "sourceUrl": "https://planetscale.com/",
+      "evidence": "PlanetScale powers Tier 0 databases at: 下方的 5×4 logo 方格",
+      "confidence": 1
+    },
+    {
+      "field": "vitessBackground",
+      "value": "Vitess 由 PlanetScale 创始人在 YouTube 开发，曾把主库扩到 70,000 节点、20 个数据中心",
+      "sourceUrl": "https://planetscale.com/vitess",
+      "evidence": "Vitess 一段写 Vitess was developed at YouTube by the founders of PlanetScale… petabytes of data on 70,000 nodes across 20 data centers",
+      "confidence": 1
+    },
+    {
+      "field": "deploymentOptions",
+      "value": "含 PlanetScale Managed 的 bring your own cloud",
+      "sourceUrl": "https://planetscale.com/docs/plans/managed",
+      "evidence": "首屏正文写 including bring your own cloud with PlanetScale Managed，链接指向 /docs/plans/managed",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/planetscale-com",
+    "designMdUrl": "https://vislexicon.com/site/planetscale-com.md",
+    "checkedAt": "2026-09-15T11:16:53.422Z",
+    "license": "unknown"
+  }
+}

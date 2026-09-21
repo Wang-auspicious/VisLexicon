@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0033326a92eca364520f8f4c6b880047369f00b846bf0b15522333cf628bdbd3",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-openai-apps-sdk-ui",
+  "entityId": "entity-github-com-openai-apps-sdk-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/openai/apps-sdk-ui",
+    "finalUrl": "https://github.com/openai/apps-sdk-ui",
+    "checkedAt": "2026-09-15T11:47:36.408Z"
+  },
+  "editorial": {
+    "name": "openai/apps-sdk-ui",
+    "descriptionZh": "OpenAI 官方的 ChatGPT Apps 设计系统：一套 Tailwind 4 设计 token、一套建在 Radix 原语上的 React 组件库，再加暗色模式与响应式工具。用来让 ChatGPT 里的 app 界面彼此一致。",
+    "takeawayZh": "拿 ChatGPT 官方 token 与 Radix 组件",
+    "noteZh": "README 的 Repository files navigation 就四节：Features、Prerequisites、Installation、License。正文第一句写 Apps SDK UI is a lightweight, accessible design system for building high-quality ChatGPT apps with the Apps SDK.，Features 逐条列出 Design tokens for colors, typography, spacing, sizing, shadows, surfaces、Tailwind 4 integration、Built on Radix primitives with consistent styling、Utilities for dark mode。Prerequisites 卡在 React 18 or 19 和 Tailwind 4 两个依赖上。首屏文件列表能看到 src、.storybook-base、postcss、config/stylelint，Languages 条显示 TypeScript 81% / CSS 12.2% / MDX 4.6%，942 stars、123 forks。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 自称 design system 而不是单个组件库，交付内容同时包含设计 token、Tailwind 配置与组件三层，符合设计系统套件的定义。",
+        "evidenceUrl": "https://github.com/openai/apps-sdk-ui"
+      },
+      {
+        "statement": "用户拿走的动作是安装 npm 包并在自己的 ChatGPT app 里引用，属于界面实现层而非模板或案例。",
+        "evidenceUrl": "https://github.com/openai/apps-sdk-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:36.408Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "radix-ui",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/openai/apps-sdk-ui",
+      "finalUrl": "https://github.com/openai/apps-sdk-ui",
+      "title": "GitHub - openai/apps-sdk-ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-openai-apps-sdk-ui/identity.jpg",
+        "sha256": "594f1e40b1e12dde17b46e9775d921ceaa7caae157579367bba41b82b08026d7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 121179,
+        "alt": "openai/apps-sdk-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/openai/apps-sdk-ui",
+      "evidence": "README 顶部「MIT license」标签，About 侧栏也列 MIT license，仓库根目录有 LICENSE 文件。",
+      "confidence": 1
+    },
+    {
+      "field": "prerequisites",
+      "value": "需要 React 18 或 19 与 Tailwind 4",
+      "sourceUrl": "https://github.com/openai/apps-sdk-ui",
+      "evidence": "Prerequisites 一节原文「Apps SDK UI requires React 18 or 19 and Tailwind 4.」，并给了 react.dev 与 tailwindcss.com 两个安装文档外链。",
+      "confidence": 1
+    },
+    {
+      "field": "whatYouGet",
+      "value": "颜色/字体/间距/尺寸/阴影/表面等设计 token、Tailwind 4 集成、基于 Radix 的无障碍组件、暗色模式与响应式工具",
+      "sourceUrl": "https://github.com/openai/apps-sdk-ui",
+      "evidence": "Features 一节四条列项，其中组件一条写「Accessible components, built on Radix primitives with consistent styling.」。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-openai-apps-sdk-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-openai-apps-sdk-ui.md",
+    "checkedAt": "2026-09-15T11:47:36.408Z",
+    "license": "MIT"
+  }
+}

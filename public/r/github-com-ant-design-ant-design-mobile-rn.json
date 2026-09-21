@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b99fd0615009d89d3831724b66bc4bc6350648ffbc8911a9d83401ea2f5b69d6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-ant-design-ant-design-mobile-rn",
+  "entityId": "entity-github-com-ant-design-ant-design-mobile-rn",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/ant-design/ant-design-mobile-rn",
+    "finalUrl": "https://github.com/ant-design/ant-design-mobile-rn",
+    "checkedAt": "2026-09-15T11:36:48.787Z"
+  },
+  "editorial": {
+    "name": "ant-design/ant-design-mobile-rn",
+    "descriptionZh": "Ant Design 的 React Native 实现，把 antd-mobile 的组件搬到移动端，仓库里带 dumi 文档站与 rn-kitchen-sink 示例应用。",
+    "takeawayZh": "在 RN 项目里装 antd-mobile-rn 的组件",
+    "noteZh": "README 分 Features、Expo、Install & Usage、Links、Development 几节，官网指 rn.mobile.ant.design。目录里 components、docs、example、rn-kitchen-sink、typings 并列，提交信息大量是中文（docs: 《LLMs.txt》讨论区、feat: skeleton 骨架屏），还写着文档正从 bisheng 迁到 dumi。仓库同时给 README.md 与 README.zh-CN.md、CHANGELOG.en-US.md 与 CHANGELOG.zh-CN.md 中英双份，MIT license，Used by 4.4K，最新版本 5.4.3。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一整套可安装的移动端组件（components 目录加 rn-kitchen-sink 示例应用），归通用界面组件库；仓库本体是 RN 组件而不是设计指南，所以没放进设计系统套件。",
+        "evidenceUrl": "https://github.com/ant-design/ant-design-mobile-rn"
+      },
+      {
+        "statement": "仓库里 README.md / README.zh-CN.md、CHANGELOG 两语并行，提交信息为中文，内容语言记 multi；platforms 记 ios 与 android 因为它交付的是 React Native 组件。",
+        "evidenceUrl": "https://github.com/ant-design/ant-design-mobile-rn"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:36:48.787Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "react",
+      "react-native",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ant-design/ant-design-mobile-rn",
+      "finalUrl": "https://github.com/ant-design/ant-design-mobile-rn",
+      "title": "GitHub - ant-design/ant-design-mobile-rn: Ant Design for React Native · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-ant-design-ant-design-mobile-rn/identity.jpg",
+        "sha256": "32df4e6b7b27b939159d6c533c041c445383bf2ec1e26929548e361bf589d148",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131011,
+        "alt": "ant-design/ant-design-mobile-rn 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/ant-design/ant-design-mobile-rn",
+      "evidence": "About 栏 MIT license，仓库根有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "docsSite",
+      "value": "rn.mobile.ant.design",
+      "sourceUrl": "https://github.com/ant-design/ant-design-mobile-rn",
+      "evidence": "About 栏外链",
+      "confidence": 1
+    },
+    {
+      "field": "bilingual",
+      "value": "README.md 与 README.zh-CN.md、CHANGELOG.en-US.md 与 CHANGELOG.zh-CN.md",
+      "sourceUrl": "https://github.com/ant-design/ant-design-mobile-rn",
+      "evidence": "文件列表里的双语文档对",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "5.4.3，Used by 4.4K",
+      "sourceUrl": "https://github.com/ant-design/ant-design-mobile-rn",
+      "evidence": "右侧 Releases 与 Used by 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-ant-design-ant-design-mobile-rn",
+    "designMdUrl": "https://vislexicon.com/site/github-com-ant-design-ant-design-mobile-rn.md",
+    "checkedAt": "2026-09-15T11:36:48.787Z",
+    "license": "MIT"
+  }
+}

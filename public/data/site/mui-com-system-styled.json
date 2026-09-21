@@ -1,0 +1,169 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3db9fc931701e132204a6e3e1b0573fe551c461d578c56cc703b6b8a95d5570b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mui-com-system-styled",
+  "entityId": "entity-mui-com-system-styled",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "mui.com",
+  "official": {
+    "inputUrl": "https://mui.com/system/styled",
+    "finalUrl": "https://mui.com/system/styled/",
+    "checkedAt": "2026-09-15T11:46:48.522Z"
+  },
+  "editorial": {
+    "name": "styled() - MUI System",
+    "descriptionZh": "MUI System 里 styled() 工具的文档页：这个工具建在 @mui/styled-engine 的 styled() 模块之上，可以替代 emotion 或 styled-components 的同类实现，并额外提供默认 theme、styleOverrides、variants 与 sx prop 支持。",
+    "takeawayZh": "搞清 styled() 比 emotion 版多哪些默认行为。",
+    "noteZh": "右侧 CONTENTS 把内容切成 Introduction、Import path、What problems does it solve?、API、Basic usage、Using the theme、Custom components、Removing features、Create custom styled() utility、Difference with the sx prop、How to use components selector API；Import path 一节给出 from '@mui/system' 与 from '@mui/material/styles' 两条写法并说明差别在默认 theme，API 一节写签名是 styled(Component, [options])(styles) => Component，options 含 shouldForwardProp、label、name、slot、overridesResolver。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这一页交付的是 MUI 组件库底层的样式原语及其 API，用户拿走的是可直接用于封装的工具，故归通用界面组件库；它更像 API 文档而非设计系统全貌，因此没往 design-system-suites 归，这一点有不确定性。",
+        "evidenceUrl": "https://mui.com/system/styled/"
+      },
+      {
+        "statement": "正文提到 styled() 由 @mui/styled-engine 提供、在 React context 里取 theme，technologies 因此记 react；页面无许可证与定价信息，相应字段写 unknown。",
+        "evidenceUrl": "https://mui.com/system/styled/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:48.522Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "learn",
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mui.com/system/styled",
+      "finalUrl": "https://mui.com/system/styled/",
+      "title": "styled() - MUI System",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/mui-com-system-styled/identity.jpg",
+        "sha256": "1225674a7348fc6e0c38fef6f05962ccaa68223afc908b1c7d841c2802fe23fe",
+        "width": 1280,
+        "height": 900,
+        "bytes": 143260,
+        "alt": "styled() - MUI System 首屏：styled()"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://mui.com/system/styled",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/mui-com-system-styled/identity.jpg",
+          "alt": "styled() - MUI System 首屏：styled()",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "importPaths",
+      "value": "from '@mui/system' 或 from '@mui/material/styles'",
+      "sourceUrl": "https://mui.com/system/styled/",
+      "evidence": "Import path 一节的两行 import 与随后的说明",
+      "confidence": 1
+    },
+    {
+      "field": "builtOn",
+      "value": "建在 @mui/styled-engine 的 styled() 模块之上",
+      "sourceUrl": "https://mui.com/system/styled/",
+      "evidence": "Introduction 一节第一段",
+      "confidence": 1
+    },
+    {
+      "field": "apiSignature",
+      "value": "styled(Component, [options])(styles) => Component，options 含 shouldForwardProp、label、name、slot、overridesResolver",
+      "sourceUrl": "https://mui.com/system/styled/",
+      "evidence": "API 一节的参数列表",
+      "confidence": 1
+    },
+    {
+      "field": "problemsSolved",
+      "value": "提供默认 theme、支持 theme 的 styleOverrides 与 variants、给结果组件加 sx prop、默认加上 shouldForwardProp",
+      "sourceUrl": "https://mui.com/system/styled/",
+      "evidence": "What problems does it solve? 一节的编号列表",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/mui-com-system-styled.md",
+  "registryUrl": "/r/mui-com-system-styled.json"
+}

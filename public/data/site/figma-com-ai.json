@@ -1,0 +1,160 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "eb597efd27b7a531117580c7b474831376eed52ab900edab1c6e914929844ef1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "figma-com-ai",
+  "entityId": "entity-figma-com-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "figma.com",
+  "official": {
+    "inputUrl": "https://figma.com/ai",
+    "finalUrl": "https://www.figma.com/ai/",
+    "checkedAt": "2026-09-15T09:49:23.038Z"
+  },
+  "editorial": {
+    "name": "Figma AI",
+    "descriptionZh": "Figma 官方讲自家 AI 工作流的页面：从生成初稿、探索方向，到把设计交给 agent 往下推，覆盖 Figma 内各项 AI 能力。",
+    "takeawayZh": "在 Figma 里用 AI 出初稿，再交给 agent 推进。",
+    "noteZh": "浅色官网版式，导航只有 Products、Solutions、Community、Resources、Pricing 五项，右侧 Log in / Contact sales / Get started for free。首屏一句「Figma AI workflows help teams confidently build the right thing—fast, on-brand, and together.」，紧接着「Build with AI from end-to-end. Generate, explore, and ship with agents by your side.」。这次首屏以下的内容没渲染出来，截图下半页是空的。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "ui-prototyping-whiteboard",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Figma 的 AI 功能页，交付物仍是界面设计与原型文件，属于 UI/UX 设计工具的能力说明，而不是一个独立工具站。",
+        "evidenceUrl": "https://www.figma.com/ai/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:49:23.038Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "design-file"
+    ],
+    "actions": [
+      "generate",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "figma",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation",
+      "design"
+    ],
+    "audiences": [
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://figma.com/ai",
+      "finalUrl": "https://www.figma.com/ai/",
+      "title": "Figma AI: Your Creativity, unblocked with Figma AI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/figma-com-ai/identity.jpg",
+        "sha256": "0f6326569bcd0e35262b7d102da97fe40bbf9b6dda96da3c10124bfa9887f0f1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 60455,
+        "alt": "Figma AI 首屏：Figma AI workflows help teams confidently build the right th"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://figma.com/ai",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/figma-com-ai/identity.jpg",
+          "alt": "Figma AI 首屏：Figma AI workflows help teams confidently build the right th",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "h1",
+      "value": "Figma AI workflows help teams confidently build the right thing—fast, on-brand, and together.",
+      "sourceUrl": "https://www.figma.com/ai/",
+      "evidence": "首屏大标题",
+      "confidence": 1
+    },
+    {
+      "field": "signup",
+      "value": "Get started for free",
+      "sourceUrl": "https://www.figma.com/ai/",
+      "evidence": "首屏右上角按钮与 meta description 里的 Sign up for free today",
+      "confidence": 1
+    },
+    {
+      "field": "renderNote",
+      "value": "首屏以下未渲染，正文与图片为空",
+      "sourceUrl": "https://www.figma.com/ai/",
+      "evidence": "live.bodyText 为空串、imgCount 为 0",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/figma-com-ai.md",
+  "registryUrl": "/r/figma-com-ai.json"
+}

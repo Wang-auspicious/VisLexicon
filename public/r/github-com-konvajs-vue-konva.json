@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a2c553b56bd4c782e4700c31983b79f39b125cb185732ef9ec8a9f474369c132",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-konvajs-vue-konva",
+  "entityId": "entity-github-com-konvajs-vue-konva",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/konvajs/vue-konva",
+    "finalUrl": "https://github.com/konvajs/vue-konva",
+    "checkedAt": "2026-09-15T12:13:48.659Z"
+  },
+  "editorial": {
+    "name": "konvajs/vue-konva",
+    "descriptionZh": "Konva 2D canvas 场景图的 Vue 组件封装，用来做设计编辑器、白板与图形标注这类交互内容。",
+    "takeawayZh": "用 v-stage / v-layer / v-circle 在 Vue 里搭 canvas 编辑器",
+    "noteZh": "About 栏写的是 Vue components for the Konva 2d canvas library. Build interactive graphics, design editors, and whiteboards in Vue.，主题标签里 canvas、canvas-editor、design-editor、whiteboard、vue-canvas 都在。README 解释每个组件对应一个 Konva 节点、名字统一加 v- 前缀，核心形状列了 v-rect、v-circle、v-line、v-image、v-text、v-path，并说明当前包需要 Vue 3。右侧 Releases 停在 4.0.1。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一批 Vue 组件，README 直接给出 v-rect、v-circle、v-stage 的清单与用法，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/konvajs/vue-konva"
+      },
+      {
+        "statement": "About 栏点明用途是 design editors、whiteboards、annotations，属于图形交互类组件而非完整设计系统，候选池的 Vue UI 库标签过粗。",
+        "evidenceUrl": "https://github.com/konvajs/vue-konva"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:13:48.659Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "canvas"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/konvajs/vue-konva",
+      "finalUrl": "https://github.com/konvajs/vue-konva",
+      "title": "GitHub - konvajs/vue-konva: Vue components for the Konva 2d canvas library. Build interactive graphics, design editors, and whiteboards in Vue. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-konvajs-vue-konva/identity.jpg",
+        "sha256": "54a0cdbd882c1d9e0bdcf0d9b5631ea74db296f39432a0351e64d635a06145f8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128944,
+        "alt": "konvajs/vue-konva 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/konvajs/vue-konva",
+      "evidence": "About 栏的 MIT license 一行与 README 里 Vue Konva is MIT licensed. 一句",
+      "confidence": 1
+    },
+    {
+      "field": "core-components",
+      "value": "v-rect、v-circle、v-line、v-image、v-text、v-path",
+      "sourceUrl": "https://github.com/konvajs/vue-konva",
+      "evidence": "README 的 Core shapes include 一句",
+      "confidence": 1
+    },
+    {
+      "field": "vue-version",
+      "value": "当前包要求 Vue 3；Vue 2 用 vue-konva@2",
+      "sourceUrl": "https://github.com/konvajs/vue-konva",
+      "evidence": "README Quick Start 的 Vue 3 is required for the current package.",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-konvajs-vue-konva",
+    "designMdUrl": "https://vislexicon.com/site/github-com-konvajs-vue-konva.md",
+    "checkedAt": "2026-09-15T12:13:48.659Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "fc6b098189ee8b0f045d97d83217d58d9aebc35015d1e2ae5ab300418ceac762",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "patterned-ai",
+  "entityId": "entity-patterned-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://patterned.ai",
+    "finalUrl": "https://www.patterned.ai/",
+    "checkedAt": "2026-09-15T10:34:00.721Z"
+  },
+  "editorial": {
+    "name": "PatternedAI",
+    "descriptionZh": "给纺织与服装用的无缝图案生成器：从文字或照片出图案，一键换配色，再按数字、圆网或丝网印刷导出矢量或高分辨率文件。",
+    "takeawayZh": "把照片或文字变成可印的无缝图案并批量换色",
+    "noteZh": "首屏是一排沿边横滑的产品实拍卡：浅蓝背景里的碎花扶手椅、绿底花衬衫男模、橙底大理石纹手机壳，两侧卡片被裁掉一半。上方标题 AI Tools For Textile Design，副题 Generate, recolor and export print-ready seamless patterns in seconds.，两个按钮是 Start for free now! 和 Custom Solutions。往下两排统计写 4 M+ Seamless repeats generated 与 150 K+ Trusted by 150k+ designers，正文把流程讲成四句：Develop Collections Faster、Test Variations Before Sampling、Prepare Files for Printing、Keep Full Commercial Rights。AI Pattern Design Tools 段再逐个列工具：Extract Patterns from Images、Recolor a Pattern in One Click、Export Print-Ready Files、Upscale a Pattern to 300 DPI。",
+    "recommendation": null,
+    "pricing": "Freemium（首屏写 Start for free now!，另有 Free Drops 与 /pricing）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可直接送印的图案文件：站内写 Export high-resolution files optimized for digital, rotary, and screen printing in PNG or vector format。",
+        "evidenceUrl": "https://www.patterned.ai/"
+      },
+      {
+        "statement": "归 image-vector-layout-creation 而非素材库：PatternedAI 是生成与处理工具（Pattern Extractor、Vectorizer、Seamless Fixer 都是加工动作），不是下载现成图案的素材站。",
+        "evidenceUrl": "https://www.patterned.ai/pattern-vectorizer"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:34:00.721Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "ecommerce"
+    ],
+    "deliverables": [
+      "image"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "export",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "publish"
+    ],
+    "audiences": [
+      "designer",
+      "brand-team"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://patterned.ai",
+      "finalUrl": "https://www.patterned.ai/",
+      "title": "AI Seamless Pattern Generator for Textile & Fashion | PatternedAI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/patterned-ai/identity.jpg",
+        "sha256": "f839c907c8c4abb4c49724b8e4d132ec74a00911261c3e9b6a724a7cd8aa7ee3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 105405,
+        "alt": "PatternedAI 首屏：AI Tools For Textile Design"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroPromise",
+      "value": "AI Tools For Textile Design / Generate, recolor and export print-ready seamless patterns in seconds.",
+      "sourceUrl": "https://www.patterned.ai/",
+      "evidence": "首屏主标题与副标题，截图与 http.h1 同文",
+      "confidence": 1
+    },
+    {
+      "field": "toolList",
+      "value": "Pattern Extractor（从照片/织物扫描提取无缝图案）、Pattern Recoloring（一键多配色）、Pattern Upscaler（升到 300 DPI）、Text-to-Pattern、Seamless Fixer、Pattern Vectorizer、Seamless Checker、AI Pattern Mockup Creator",
+      "sourceUrl": "https://www.patterned.ai/",
+      "evidence": "AI Pattern Design Tools 段落与 live.internalPaths 里对应的工具页路径",
+      "confidence": 1
+    },
+    {
+      "field": "claimedScale",
+      "value": "4 M+ Seamless repeats generated、150 K+ Trusted by 150k+ designers",
+      "sourceUrl": "https://www.patterned.ai/",
+      "evidence": "首屏图片下方的统计数字，live.bodyText 与 http.description 均提到 150K+",
+      "confidence": 0.9
+    },
+    {
+      "field": "commercialRights",
+      "value": "站方称 All patterns are royalty-free and yours to use on unlimited products",
+      "sourceUrl": "https://www.patterned.ai/",
+      "evidence": "Keep Full Commercial Rights 段落原句；页脚另有 /legal/terms-of-service 与 /legal/privacy-policy",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium（首屏写 Start for free now!，另有 Free Drops 与 /pricing）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/patterned-ai",
+    "designMdUrl": "https://vislexicon.com/site/patterned-ai.md",
+    "checkedAt": "2026-09-15T10:34:00.721Z",
+    "license": "unknown"
+  }
+}

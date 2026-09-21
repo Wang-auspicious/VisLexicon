@@ -1,0 +1,186 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3830eb28d5ff9837bafc7f4f32f285ad9acc75d997daffc6f31ace89b15891d5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "sveltestrap-js-org",
+  "entityId": "entity-sveltestrap-js-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "sveltestrap.js.org",
+  "official": {
+    "inputUrl": "https://sveltestrap.js.org",
+    "finalUrl": "https://sveltestrap.js.org/?path=/docs/sveltestrap-overview--docs",
+    "checkedAt": "2026-09-15T11:52:24.757Z"
+  },
+  "editorial": {
+    "name": "Sveltestrap",
+    "descriptionZh": "把 Bootstrap 5 的组件接进 Svelte 4+ 的组件库：不用写 Bootstrap 的组件 class、不引它的 JavaScript、也不依赖 jQuery，但 CSS 需要自己另引一份 Bootstrap 5。MIT 授权，灵感来自 React 的 reactstrap。",
+    "takeawayZh": "在 Svelte 里套 Bootstrap 5，CSS 得自引",
+    "noteZh": "这是 Storybook 文档站的 Overview 页，左侧栏按 LAYOUT、CONTENT、FORM、COMPONENTS 四组展开，从 Container、Grid、Images、Tables、FormGroup、Input、Validation 一直到 Accordion、Alerts、Badges、Breadcrumbs、Button、Card、Carousel、Dropdown、Modal、Navbar、Offcanvas、Pagination、Popovers、Spinner、Tabs、Theme、Toast、Tooltip，版本号标在左上角 SVELTESTRAP v7.0.3。正文标题是 Bootstrap 5 Components for Svelte 4+，说明它省掉了 Bootstrap 组件 class、Bootstrap 的 JavaScript 和对 jQuery 的依赖，并特别提醒「does not directly embed Bootstrap style」——要正常用主题必须自己把 Bootstrap 5 CSS 引进来；页面上还挂着 stars 215、forks 26 的计数与 npm / pnpm / yarn 三条安装命令。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一整套 Svelte 组件（Bootstrap 5 的 Svelte 版实现），用户装包后直接写 <Button>、<Modal> 这类标签，归通用界面组件库。",
+        "evidenceUrl": "https://sveltestrap.js.org/"
+      },
+      {
+        "statement": "候选池按 npm 包名 @sveltestrap/sveltestrap 归为 Svelte UI 库，与页面 Overview 的自述一致。",
+        "evidenceUrl": "https://sveltestrap.js.org/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:24.757Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://sveltestrap.js.org",
+      "finalUrl": "https://sveltestrap.js.org/?path=/docs/sveltestrap-overview--docs",
+      "title": "Sveltestrap / Overview - Docs ⋅ Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/sveltestrap-js-org/identity.jpg",
+        "sha256": "5d8331eb0a4ccef5ebef51d4496255c3afd3a594fa35b3a673e0c3d44b0f811b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 102319,
+        "alt": "Sveltestrap 首屏"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://sveltestrap.js.org",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/sveltestrap-js-org/identity.jpg",
+          "alt": "Sveltestrap 首屏",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "version",
+      "value": "SVELTESTRAP v7.0.3",
+      "sourceUrl": "https://sveltestrap.js.org/",
+      "evidence": "页面左上角与导航栏的版本标签",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://sveltestrap.js.org/",
+      "evidence": "Overview 正文写 This open-source software is freely available under the permissive MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "cssCaveat",
+      "value": "库不内嵌 Bootstrap 样式，必须自行引入 Bootstrap 5 CSS 才能正常用主题",
+      "sourceUrl": "https://sveltestrap.js.org/",
+      "evidence": "Overview 正文 Please note that Sveltestrap does not directly embed Bootstrap style 一段",
+      "confidence": 1
+    },
+    {
+      "field": "componentGroups",
+      "value": "侧栏分成 LAYOUT、CONTENT、FORM、COMPONENTS 四组",
+      "sourceUrl": "https://sveltestrap.js.org/",
+      "evidence": "左侧导航栏的分组标题",
+      "confidence": 1
+    },
+    {
+      "field": "inspiration",
+      "value": "灵感来自 React 的 reactstrap 库；Svelte 3.x 支持需用原版 sveltestrap 包",
+      "sourceUrl": "https://sveltestrap.js.org/",
+      "evidence": "Overview 正文第二段与 Note 一行",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install svelte @sveltestrap/sveltestrap（pnpm / yarn 另列）",
+      "sourceUrl": "https://sveltestrap.js.org/",
+      "evidence": "Install 段落的代码块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/sveltestrap-js-org.md",
+  "registryUrl": "/r/sveltestrap-js-org.json"
+}

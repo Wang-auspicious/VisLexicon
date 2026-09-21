@@ -1,0 +1,137 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4cbd22010fa8e8269edba408bb94232e12c8e3cd8ed172b4236afc0c26d284ca",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-vins374-triamiz-ui-git",
+  "entityId": "entity-github-com-vins374-triamiz-ui-git",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/Vins374/triamiz-ui.git",
+    "finalUrl": "https://github.com/Vins374/triamiz-ui",
+    "checkedAt": "2026-09-15T12:12:41.634Z"
+  },
+  "editorial": {
+    "name": "Vins374/triamiz-ui",
+    "descriptionZh": "一个几乎只有骨架的 React 组件仓库：README 只给一条安装命令和一条 import 示例，全文只有 1 次提交。",
+    "takeawayZh": "README 只有一条 import 示例，拿不出可用的组件。",
+    "noteZh": "仓库只有 1 次提交，所有文件的提交信息都写着 Changes.，About 栏是 No description, website, or topics provided.，0 star、1 个分支。README 正文只有三行有效信息：triamiz-ui 是 Simple react ui components，安装写 npm install --save triamiz-ui，Usage 段 import MyComponent from 'triamiz-ui' 并引 dist/index.css，License 段写 MIT © Vins374。文件区能看到 dist、example、src 三个目录和 .travis.yml，Languages 统计 HTML 46.6%、JavaScript 38.1%、CSS 15.3%。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自称 Simple react ui components，交付物仍是可 npm 安装的 React 组件包，按界面组件实现归类；但仓库只有骨架，实际可用的组件清单未知。",
+        "evidenceUrl": "https://github.com/Vins374/triamiz-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:12:41.634Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "html",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Vins374/triamiz-ui.git",
+      "finalUrl": "https://github.com/Vins374/triamiz-ui",
+      "title": "GitHub - Vins374/triamiz-ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-vins374-triamiz-ui-git/identity.jpg",
+        "sha256": "495640078f74dc49af18678455a5f2035f6d1ab93167b94fc1a732db639818cd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 97482,
+        "alt": "Vins374/triamiz-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/Vins374/triamiz-ui",
+      "evidence": "README 末尾 License 段写 MIT © Vins374",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "npm install --save triamiz-ui，用法是 import MyComponent from 'triamiz-ui' 再引 dist/index.css",
+      "sourceUrl": "https://github.com/Vins374/triamiz-ui",
+      "evidence": "README 的 Install 与 Usage 两段",
+      "confidence": 1
+    },
+    {
+      "field": "maturity",
+      "value": "仓库只有 1 次提交、0 star、0 次发布，About 栏无描述、无主页、无主题标签",
+      "sourceUrl": "https://github.com/Vins374/triamiz-ui",
+      "evidence": "页面提交记录、右侧 About 栏与 Releases 区（No releases published）",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-vins374-triamiz-ui-git",
+    "designMdUrl": "https://vislexicon.com/site/github-com-vins374-triamiz-ui-git.md",
+    "checkedAt": "2026-09-15T12:12:41.634Z",
+    "license": "MIT"
+  }
+}

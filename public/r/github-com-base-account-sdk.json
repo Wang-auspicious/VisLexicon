@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8748cad5477975d863327866ee1adec6f39e4245a080dd3671176c836bb15c60",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-base-account-sdk",
+  "entityId": "entity-github-com-base-account-sdk",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/base/account-sdk",
+    "finalUrl": "https://github.com/base/account-sdk",
+    "checkedAt": "2026-09-15T11:37:35.691Z"
+  },
+  "editorial": {
+    "name": "base/account-sdk",
+    "descriptionZh": "Base 的账户 SDK，把 Base Account 的登录与支付能力接进应用；README 顶部说明品牌已改名 Coinbase Wallet，但 npm 包名仍保留 @base-org/account。",
+    "takeawayZh": "把 Base Account 登录与订阅接进自己的 App",
+    "noteZh": "右侧 About 挂着 base.github.io/account-sdk/ 与 Custom properties，Releases 停在 account: v2.5.10，Used by 显示 4.1K，Contributors 有 29 个人头。文件区里 packages、examples/testapp、assets 并存，.cursorrules、AGENTS.md、CLAUDE.md、CODEOWNERS 一起摆在根目录。README 目录分三节：Base Pay - Quick Start、Base Subscriptions - Quick Start、Base Account SDK (Full SDK)，正文第一段是 Rebrand: Base Account is now Coinbase Wallet，并强调 @base-org/account is still the current recommended。",
+    "recommendation": null,
+    "pricing": "Free (MIT)",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是安装进应用、被业务代码调用的钱包账户 SDK（Base Pay、Base Subscriptions），不是界面组件或模板，因此按开发工作流归入交付与开发工具。",
+        "evidenceUrl": "https://github.com/base/account-sdk"
+      },
+      {
+        "statement": "候选池把它标成 Svelte UI 库，但页面正文只出现 Base Pay / Base Subscriptions / Base Account SDK 三段集成说明，没有任何组件目录或样式系统证据，按实测页面改判。",
+        "evidenceUrl": "https://github.com/base/account-sdk"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:37:35.691Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/base/account-sdk",
+      "finalUrl": "https://github.com/base/account-sdk",
+      "title": "GitHub - base/account-sdk · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-base-account-sdk/identity.jpg",
+        "sha256": "dee33f9e0747aca42950411ec57b310b94f9efc1e1d3126164db2e3d0af03377",
+        "width": 1280,
+        "height": 900,
+        "bytes": 145548,
+        "alt": "base/account-sdk 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/base/account-sdk",
+      "evidence": "右侧 About 栏 Readme 下方的 MIT license 一行，文件区 LICENSE 的提交信息是 use MIT License (#120)",
+      "confidence": 1
+    },
+    {
+      "field": "rebrand",
+      "value": "Base Account 已改名为 Coinbase Wallet，npm 包名保持 @base-org/account",
+      "sourceUrl": "https://github.com/base/account-sdk",
+      "evidence": "最新提交信息 docs: note Coinbase Wallet rebrand and keep Base Account SDK 与 README 正文首段",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "Base Pay、Base Subscriptions、Base Account SDK (Full SDK) 三节文档",
+      "sourceUrl": "https://github.com/base/account-sdk",
+      "evidence": "README 的 Repository files navigation 标题列表",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "Used by 4.1K、28 Releases、1,280 Commits、207 forks",
+      "sourceUrl": "https://github.com/base/account-sdk",
+      "evidence": "右侧栏 Used by 区、Releases 区与文件区顶部的提交计数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-base-account-sdk",
+    "designMdUrl": "https://vislexicon.com/site/github-com-base-account-sdk.md",
+    "checkedAt": "2026-09-15T11:37:35.691Z",
+    "license": "MIT"
+  }
+}

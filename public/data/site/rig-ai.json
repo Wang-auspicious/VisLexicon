@@ -1,0 +1,174 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4cd70ab2add684d818c0a7ec511e3ae28b69f59754a11722e1bf67bf27b6f7d0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "rig-ai",
+  "entityId": "entity-rig-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "rig.ai",
+  "official": {
+    "inputUrl": "https://rig.ai",
+    "finalUrl": "https://rig.ai/",
+    "checkedAt": "2026-09-15T11:17:45.625Z"
+  },
+  "editorial": {
+    "name": "Rig",
+    "descriptionZh": "完全跑在本机上的 AI 编码助手 Rig 的产品预告页。它承诺不调用云端 API、没有用量上限，目前只开 waitlist，页面用 001 到 004 四条编号控诉云端 AI 的监控、限流与静默降级。",
+    "takeawayZh": "看一份用红线与故障排版讲本机推理的候补页",
+    "noteZh": "首屏铺满橙红噪点底，巨号黑字 On-device AI coding. No cloud. No limits. 占两行，下面写 A complete coding agent that executes entirely on your machine. No API calls. No usage caps.，两个按钮是 Join Waitlist 与 Our Approach。红底下方一条横向跑马灯循环 ZERO TELEMETRY、NATIVE INFERENCE、100% OFFLINE、YOUR HARDWARE, YOUR RULES、NO TOKENS, NO LIMITS、SPECIALIZED SLM、UNBOUNDED CONTEXT。再往下切成黑底，THE PROBLEM 一节用 001 到 004 编号列出 They train on your code、They meter your ambition、They silently downgrade、They control your flow 四条，每条配一句解释。中间还画了一张本机推理示意图，把 YOUR MACHINE 到 RIG 的路径标上 GPU INDEX 与 MODEL RESPONSE <300ms，另一条 CLOUD TELEMETRY 的线被标成 SEVERED。",
+    "recommendation": null,
+    "pricing": "unknown（页面只有 Join Waitlist 与 Get Early Access，未出现价格或档位）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Rig 的产品预告页，导航只有 Blog 与 Get Early Access 两项，站内 /waitlist 是唯一转化入口，交付的是产品主张与候补登记。",
+        "evidenceUrl": "https://rig.ai/"
+      },
+      {
+        "statement": "归 product-company-sites 而非 delivery-development-tools：产品尚未发布，页面没有下载、安装包或文档，只有 Join Waitlist。",
+        "evidenceUrl": "https://rig.ai/waitlist"
+      },
+      {
+        "statement": "access 判为 invite-only 的依据是首屏 Join Waitlist 与导航 Get Early Access，页面没有价格、试用或购买入口。",
+        "evidenceUrl": "https://rig.ai/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:17:45.625Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "invite-only"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "editorial-feed"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://rig.ai",
+      "finalUrl": "https://rig.ai/",
+      "title": "Rig - Local-First AI Coding Assistant",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/rig-ai/identity.jpg",
+        "sha256": "0376279e2b79f4c40a065c9ed38054d2e740a3d3c4169c915a67d60983050374",
+        "width": 1280,
+        "height": 900,
+        "bytes": 140098,
+        "alt": "Rig 首屏：On-device AI coding. No cloud. No limits."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://rig.ai",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/rig-ai/identity.jpg",
+          "alt": "Rig 首屏：On-device AI coding. No cloud. No limits.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "heroCopy",
+      "value": "On-device AI coding. No cloud. No limits.",
+      "sourceUrl": "https://rig.ai/",
+      "evidence": "首屏巨号黑字标题，http.h1 与截图同文",
+      "confidence": 1
+    },
+    {
+      "field": "marquee",
+      "value": "ZERO TELEMETRY · NATIVE INFERENCE · 100% OFFLINE · YOUR HARDWARE, YOUR RULES · NO TOKENS, NO LIMITS · SPECIALIZED SLM · UNBOUNDED CONTEXT",
+      "sourceUrl": "https://rig.ai/",
+      "evidence": "首屏红底下方横向滚动的口号条，截图可见其中四段",
+      "confidence": 1
+    },
+    {
+      "field": "problemList",
+      "value": "001 They train on your code / 002 They meter your ambition / 003 They silently downgrade / 004 They control your flow",
+      "sourceUrl": "https://rig.ai/",
+      "evidence": "THE PROBLEM 一节的四条编号，live.heads 中第一条为 You don't own your AI. And you're being watched.",
+      "confidence": 1
+    },
+    {
+      "field": "onDeviceLatency",
+      "value": "MODEL RESPONSE <300ms · ON DEVICE，云端那条连线标注为 SEVERED",
+      "sourceUrl": "https://rig.ai/",
+      "evidence": "Introducing Rig 一节的本机推理示意图标注",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/rig-ai.md",
+  "registryUrl": "/r/rig-ai.json"
+}

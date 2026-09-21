@@ -1,0 +1,158 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "61489ba76b30c4b483847c14098381c2780a898b399fac2916ff2bb121738564",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-vitest-community-vitest-browser-svelte",
+  "entityId": "entity-github-com-vitest-community-vitest-browser-svelte",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/vitest-community/vitest-browser-svelte",
+    "finalUrl": "https://github.com/vitest-community/vitest-browser-svelte",
+    "checkedAt": "2026-09-15T12:32:32.736Z"
+  },
+  "editorial": {
+    "name": "vitest-community/vitest-browser-svelte",
+    "descriptionZh": "在 Vitest Browser Mode 里渲染 Svelte 组件的测试工具，遵循 testing-library 原则、只暴露 locator 与工具函数，要求 vitest 4.0.0 以上。",
+    "takeawayZh": "用 render 把 Svelte 组件挂进浏览器模式，配 locator 写断言",
+    "noteZh": "README 首段写明 Render Svelte components in Vitest Browser Mode.，并解释它 follows testing-library principles、只给 locator 和工具函数。示例是一段计数器测试：render 出来后 getByRole('button', { name: 'Increment' })，再用 expect.element 断言 Count is 2 可见。正文另有一句提示，说这个库不暴露也不使用 act，改用带重试的 locator。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 npm 包，README 的标题下直接给 import { render } from 'vitest-browser-svelte'，解决的是组件测试环节，归构建与开发工作流。",
+        "evidenceUrl": "https://github.com/vitest-community/vitest-browser-svelte"
+      },
+      {
+        "statement": "它不是 Svelte 组件库而是测试适配层，候选池给的 Svelte UI 库分类不采用；About 栏只写 Render Svelte components in Vitest Browser Mode.。",
+        "evidenceUrl": "https://github.com/vitest-community/vitest-browser-svelte"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:32:32.736Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "test"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/vitest-community/vitest-browser-svelte",
+      "finalUrl": "https://github.com/vitest-community/vitest-browser-svelte",
+      "title": "GitHub - vitest-community/vitest-browser-svelte: Render Svelte components in Vitest Browser Mode · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-vitest-community-vitest-browser-svelte/identity.jpg",
+        "sha256": "d868ec69c510aa5f1c0597e114736a772a6b7fa11e5221767fe499a6391d83ac",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131388,
+        "alt": "vitest-community/vitest-browser-svelte 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/vitest-community/vitest-browser-svelte",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-vitest-community-vitest-browser-svelte/identity.jpg",
+          "alt": "vitest-community/vitest-browser-svelte 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/vitest-community/vitest-browser-svelte",
+      "evidence": "About 栏的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "requirement",
+      "value": "vitest 4.0.0 及以上",
+      "sourceUrl": "https://github.com/vitest-community/vitest-browser-svelte",
+      "evidence": "README 中 Requires vitest 4.0.0 or higher. 一句",
+      "confidence": 1
+    },
+    {
+      "field": "latest-release",
+      "value": "v3.1.0",
+      "sourceUrl": "https://github.com/vitest-community/vitest-browser-svelte",
+      "evidence": "右侧 Releases 区块的 v3.1.0 Latest 标签",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-vitest-community-vitest-browser-svelte.md",
+  "registryUrl": "/r/github-com-vitest-community-vitest-browser-svelte.json"
+}

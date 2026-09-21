@@ -1,0 +1,186 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4e96af77ca4562ba297d2fe84ff8dc3fa687ad79e518c4d97562f7623d860541",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "talkjs-com",
+  "entityId": "entity-talkjs-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "talkjs.com",
+  "official": {
+    "inputUrl": "https://talkjs.com",
+    "finalUrl": "https://talkjs.com/",
+    "checkedAt": "2026-09-15T11:52:43.917Z"
+  },
+  "editorial": {
+    "name": "TalkJS",
+    "descriptionZh": "一套聊天 API 加各框架 SDK，自带可改的聊天 UI 组件，覆盖私聊、群聊和 AI 客服对话；文档按 JavaScript、React、Vue、Angular、Svelte、Flutter、React Native 分别给出接入路径。",
+    "takeawayZh": "拿现成聊天 UI 组件嵌进应用，按框架挑一套 SDK",
+    "noteZh": "顶栏压着一条浅蓝横幅推 Tori is now in private beta，导航排的是 Product / Use case / Customers / Demos / Developers / Pricing 加 Sign in 和 Try for free。首屏大标题 Build production-ready chat in minutes，下面并排 Try for free 与 Contact sales；右侧缩进的窗口左半边是 useState 和 getTalkSession 的 React 代码，右半边是正在对话的 Chatbox，第一条消息 Hey! Is the backpack still available?。往下还有 Ready-to-ship chat UI that is fully customizable 与 All the features you need for high-performance chat 两段，右边一列功能点写着 AI-ready out of the box、Mentions, reactions & link previews、Moderation & spam control，右下角常年浮着一个聊天气泡。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首屏主体是一段 React 代码加它渲染出的 Chatbox，页面卖点的原句是 Ready-to-ship chat UI that is fully customizable，用户拿走的是可嵌进自己产品的一块聊天控件。",
+        "evidenceUrl": "https://talkjs.com/"
+      },
+      {
+        "statement": "docs 路径按 UI_Components/JavaScript、React、Vue、Svelte 等逐一给出接入说明，属可嵌入复合控件而非通用组件库。",
+        "evidenceUrl": "https://talkjs.com/docs/UI_Components"
+      },
+      {
+        "statement": "页面同时有 Pricing 导航、Try for free 与 Contact sales，是带免费额度的商用服务，因此不写成纯开源组件。",
+        "evidenceUrl": "https://talkjs.com/pricing"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:43.917Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "ecommerce",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "api",
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "react",
+      "vue",
+      "angular",
+      "svelte",
+      "flutter",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://talkjs.com",
+      "finalUrl": "https://talkjs.com/",
+      "title": "Chat API and SDKs to build the best real-time messaging experiences – TalkJS",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/talkjs-com/identity.jpg",
+        "sha256": "a4519c00e87cdfb6cf8302b8e1027d4071ef8a7c902a1ef5deb0f7c9e41b7f61",
+        "width": 1280,
+        "height": 900,
+        "bytes": 94550,
+        "alt": "TalkJS 首屏：Build production-ready chat in minutes"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://talkjs.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/talkjs-com/identity.jpg",
+          "alt": "TalkJS 首屏：Build production-ready chat in minutes",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Freemium",
+      "sourceUrl": "https://talkjs.com/",
+      "evidence": "首屏同时给出 Try for free 与 Contact sales 两个按钮，导航栏另有 Pricing 一项",
+      "confidence": 1
+    },
+    {
+      "field": "sdk-coverage",
+      "value": "JavaScript / React / Vue / Angular / Svelte / Flutter / React Native 七套 UI 组件文档",
+      "sourceUrl": "https://talkjs.com/docs/UI_Components",
+      "evidence": "站内路径 /docs/UI_Components/ 下按 JavaScript、React、Flutter、React_Native、Angular、Svelte、Vue 逐个列出",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "90+ 国家、月 130M+ 消息",
+      "sourceUrl": "https://talkjs.com/",
+      "evidence": "页面统计区并列的 90+、130M+、24B+ 三格数字，配合 description 里的 serving 130M+ monthly messages across 90+ countries",
+      "confidence": 1
+    },
+    {
+      "field": "product",
+      "value": "Tori —— 搭在 TalkJS 上的 AI 客服 agent，private beta",
+      "sourceUrl": "https://talkjs.com/tori",
+      "evidence": "首屏顶部横幅 Tori is now in private beta. Launch an AI support agent on top of TalkJS. 与 Meet Tori 链接",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/talkjs-com.md",
+  "registryUrl": "/r/talkjs-com.json"
+}

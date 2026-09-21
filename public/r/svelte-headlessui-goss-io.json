@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d2c07060dc96b320897ec84474d29fb369def5d3412ff491ae911124606f7f5b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svelte-headlessui-goss-io",
+  "entityId": "entity-svelte-headlessui-goss-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://svelte-headlessui.goss.io",
+    "finalUrl": "https://svelte-headlessui.goss.io/docs/2.0",
+    "checkedAt": "2026-09-15T11:49:53.350Z"
+  },
+  "editorial": {
+    "name": "Svelte Headless UI",
+    "descriptionZh": "Headless UI 的非官方社区 Svelte 移植版文档，Dialog、Disclosure、Listbox、Menu、Popover、Radio Group、Switch、Tabs、Transition 这些组件完全无样式、带完整无障碍处理与 TypeScript 类型。页面专门声明它与 Tailwind Labs 无关联、未获对方背书。",
+    "takeawayZh": "照 Dialog / Menu / Tabs 清单抄组件用法",
+    "noteZh": "页面顶端只有一行 Svelte Headless UI v2.0 和一个 GitHub 图标，浏览器标题是空的。左栏目录分两段：Home / General concepts / Use with Tailwind UI / Version history，以及按组件列出的 Dialog、Disclosure、Listbox、Menu、Popover、Radio Group、Switch、Tabs、Transition。正文说明这是 Headless UI 的完整 Svelte port，组件满足 Completely unstyled、Fully accessible、Extensively tested、Fully typed with TypeScript、SvelteKit compatible 五条，并强调它们 handle accessibility, keyboard and mouse interactions, focus management。页面还写明该移植与 Tailwind Labs 无关联也未获其背书，但配 Tailwind CSS 与 Tailwind UI 用起来正好。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是无样式的 Svelte 组件实现，页面五条特性里 Completely unstyled 与 Fully accessible 直接对应无样式无障碍原语这一类。",
+        "evidenceUrl": "https://svelte-headlessui.goss.io/docs/2.0"
+      },
+      {
+        "statement": "左栏按 Dialog / Disclosure / Listbox / Menu / Popover / Radio Group / Switch / Tabs / Transition 逐个组件展开，是组件库文档而不是文章或目录。",
+        "evidenceUrl": "https://svelte-headlessui.goss.io/docs/2.0"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:49:53.350Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "primitive",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svelte-headlessui.goss.io",
+      "finalUrl": "https://svelte-headlessui.goss.io/docs/2.0",
+      "title": "",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/svelte-headlessui-goss-io/identity.jpg",
+        "sha256": "bbdf2173d9ce9a0f9da4ff63e111394ab1f21867544ed923e2e01d92f7343519",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131090,
+        "alt": "Svelte Headless UI 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "coverage",
+      "value": "Dialog、Disclosure、Listbox、Menu、Popover、Radio Group、Switch、Tabs、Transition 九个组件",
+      "sourceUrl": "https://svelte-headlessui.goss.io/docs/2.0",
+      "evidence": "左栏目录里逐个列出的组件名",
+      "confidence": 1
+    },
+    {
+      "field": "spec",
+      "value": "Completely unstyled、Fully accessible、Extensively tested、Fully typed with TypeScript、SvelteKit compatible",
+      "sourceUrl": "https://svelte-headlessui.goss.io/docs/2.0",
+      "evidence": "正文 These are high-quality, unstyled Svelte components which are: 下面的五条 bullet",
+      "confidence": 1
+    },
+    {
+      "field": "affiliation",
+      "value": "非 Tailwind Labs 官方，未获背书；但与 Tailwind CSS、Tailwind UI 搭配良好，且不强依赖 Tailwind",
+      "sourceUrl": "https://svelte-headlessui.goss.io/docs/2.0",
+      "evidence": "正文 it is not affiliated with Tailwind Labs and is neither endorsed by, nor supported by, them 一段与末尾 Tailwind CSS 一段",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "文档对应 v2.0，另有 version history 页可切其他版本",
+      "sourceUrl": "https://svelte-headlessui.goss.io/docs/2.0",
+      "evidence": "页面左上角 Svelte Headless UI v2.0 与左栏 version history 链接",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://svelte-headlessui.goss.io/docs/2.0",
+      "evidence": "全站只有文档与一个 GitHub 图标，没有定价或付费入口",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/svelte-headlessui-goss-io",
+    "designMdUrl": "https://vislexicon.com/site/svelte-headlessui-goss-io.md",
+    "checkedAt": "2026-09-15T11:49:53.350Z",
+    "license": "unknown"
+  }
+}

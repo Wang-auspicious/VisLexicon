@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "90cae07de463549217c22e3c8195c719f8a9f64a3cd9a2cf893068c710a22f7d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "apollo-angular-com",
+  "entityId": "entity-apollo-angular-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://apollo-angular.com",
+    "finalUrl": "https://the-guild.dev/graphql/apollo-angular",
+    "checkedAt": "2026-09-15T11:55:48.266Z"
+  },
+  "editorial": {
+    "name": "Apollo Angular",
+    "descriptionZh": "把 Apollo Client 接到 Angular 的 GraphQL 客户端：查询、变更、订阅都走 RxJS observable 和可注入服务，自带规范化缓存，属于 The Guild 的 Hive 生态。",
+    "takeawayZh": "用 observable 订阅 GraphQL 查询",
+    "noteZh": "域名 apollo-angular.com 会跳到 the-guild.dev/graphql/apollo-angular。首屏是一块浅青绿的圆角卡片，正中深绿图标下写 GraphQL for Angular，描述里点明 queries, mutations and subscriptions as RxJS observables, injectable services, and a normalized cache，下面三个打勾项 Idiomatic Angular services / RxJS observables / SSR and caching built in，按钮是黄底的 Get started 和描边的 GitHub。导航右侧是 Contact us 和 Sign in，往下第二屏标题 Why Apollo Angular，左下角压着一条接受 cookie 的提示条。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是接进 Angular 工程的数据层客户端，正文点明 normalized cache、SSR 与 performance guides，用户在构建应用时接数据，不产出界面控件，故归构建、部署与开发工作流。",
+        "evidenceUrl": "https://the-guild.dev/graphql/apollo-angular"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:48.266Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://apollo-angular.com",
+      "finalUrl": "https://the-guild.dev/graphql/apollo-angular",
+      "title": "Apollo Angular",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/apollo-angular-com/identity.jpg",
+        "sha256": "0d54ee74db91090d44038411d5d88bfa72e559950f5dbfe2486d9fc79e47cecd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 71939,
+        "alt": "Apollo Angular 首屏：GraphQL for Angular"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "canonicalUrl",
+      "value": "apollo-angular.com 落到 the-guild.dev/graphql/apollo-angular",
+      "sourceUrl": "https://the-guild.dev/graphql/apollo-angular",
+      "evidence": "浏览器实测的 finalUrl 与实际落地地址",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "inject(Apollo).watchQuery({ query }).valueChanges 返回可订阅的 observable，类型由 GraphQL Code Generator 产出",
+      "sourceUrl": "https://the-guild.dev/graphql/apollo-angular",
+      "evidence": "Queries as observables 一节贴出的 PostsComponent 示例代码",
+      "confidence": 1
+    },
+    {
+      "field": "guides",
+      "value": "三段引导：Setup guide、Caching docs、Testing guide",
+      "sourceUrl": "https://the-guild.dev/graphql/apollo-angular",
+      "evidence": "Get started / Caching / Testing 三张卡各自的箭头链接",
+      "confidence": 1
+    },
+    {
+      "field": "ecosystem",
+      "value": "Hive、Hive Gateway、Hive Router、Yoga、Mesh、Codegen、Inspector、Envelop、SOFA、Scalars、GraphQL ESLint",
+      "sourceUrl": "https://the-guild.dev/graphql/apollo-angular",
+      "evidence": "Discover the complete ecosystem of tools and libraries 一节的库清单",
+      "confidence": 1
+    },
+    {
+      "field": "pricingScope",
+      "value": "站内 Pricing、Case Studies 属 The Guild 的 Hive 产品线，本页没有给出 Apollo Angular 的收费口径",
+      "sourceUrl": "https://the-guild.dev/graphql/apollo-angular",
+      "evidence": "顶部导航的 Products / Developer / Company / Pricing 四项与正文 Part of the Hive ecosystem by The Guild",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/apollo-angular-com",
+    "designMdUrl": "https://vislexicon.com/site/apollo-angular-com.md",
+    "checkedAt": "2026-09-15T11:55:48.266Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "14155661712d242bf523b37aaad76f301f955465ec4dc698bf316d483cf0ac05",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "allma-dev",
+  "entityId": "entity-allma-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://docs.allma.dev",
+    "finalUrl": "https://docs.allma.dev/",
+    "checkedAt": "2026-09-15T11:36:20.022Z"
+  },
+  "editorial": {
+    "name": "Allma",
+    "descriptionZh": "Allma 的文档站，站点自述是 The Serverless AI Orchestration Platform，但公开页面只渲染出一页骨架，看不到正文文档。",
+    "takeawayZh": "只有一页标题壳，Getting Started 之外无内容",
+    "noteZh": "进去落在 docs.allma.dev 首页：顶栏只有 Allma 图标、Documentation 链接、GitHub 外链和一个主题切换，正文除大标题 Allma 与副标题 The Serverless AI Orchestration Platform 之外整片空白。页脚三栏 Docs / Community / More 里只有 Getting Started、Stack Overflow、GitHub 三个链接，最下面写 Copyright © 2026 Allma.dev | Built with Docusaurus。没有渲染出任何组件、示例或文档段落。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "learning-editorial",
+    "subcategory": "tutorials-courses-workshops",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据不足：整站渲染出的文字只有站名、一句 The Serverless AI Orchestration Platform 和页脚的 Getting Started 入口，没有任何文档正文，无法判断实际交付内容；按 Docusaurus 文档站的形态暂寄在教程与指南类。",
+        "evidenceUrl": "https://docs.allma.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:36:20.022Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [],
+    "actions": [],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://docs.allma.dev",
+      "finalUrl": "https://docs.allma.dev/",
+      "title": "Allma",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/allma-dev/identity.jpg",
+        "sha256": "3e02bbe5d2ec3ef1e51ddf9add56a7fa23f75c1b4826e98c70ba9bec04a767d2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 36682,
+        "alt": "Allma 首屏：Allma"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "tagline",
+      "value": "The Serverless AI Orchestration Platform",
+      "sourceUrl": "https://docs.allma.dev/",
+      "evidence": "首屏大标题 Allma 下方的副标题",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "Docusaurus",
+      "sourceUrl": "https://docs.allma.dev/",
+      "evidence": "页脚 Copyright © 2026 Allma.dev | Built with Docusaurus.",
+      "confidence": 1
+    },
+    {
+      "field": "links",
+      "value": "Getting Started、Stack Overflow、GitHub 三个外链",
+      "sourceUrl": "https://docs.allma.dev/",
+      "evidence": "页脚 Docs / Community / More 三栏的全部内容",
+      "confidence": 1
+    },
+    {
+      "field": "renderState",
+      "value": "首屏正文区空白，只有标题与副标题",
+      "sourceUrl": "https://docs.allma.dev/",
+      "evidence": "截图里 Allma 标题与页脚之间没有内容，live.bodyText 也只有导航、标题和页脚三行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/allma-dev",
+    "designMdUrl": "https://vislexicon.com/site/allma-dev.md",
+    "checkedAt": "2026-09-15T11:36:20.022Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "588a3dd383105b437f0df4b083372d05b92bbe64b3e420cc1d3970ee19c3dee2",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mint-ui-github-io",
+  "entityId": "entity-mint-ui-github-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "mint-ui.github.io",
+  "official": {
+    "inputUrl": "https://mint-ui.github.io",
+    "finalUrl": "https://mint-ui.github.io/#!/en",
+    "checkedAt": "2026-09-15T12:01:14.854Z"
+  },
+  "editorial": {
+    "name": "Mint UI",
+    "descriptionZh": "Mint UI 是饿了么前端（ElemeFE）做的 Vue.js 移动端组件库，提供 CSS 与 JS 组件，支持按需加载，全量引入压缩后约 30kb。",
+    "takeawayZh": "npm install mint-ui，给 Vue 加移动端组件。",
+    "noteZh": "进去是一张居中的薄荷叶 logo 配 'Mobile UI elements for Vue.js'，下面并排两个按钮 Documentation 和 Demo。页面上还挂着一个遮罩着的弹窗，写着 'mint-ui published! Mint UI now supports Vue 2.0'，按钮是中文的「确定」——整页都被压暗了。Quick Start 给的是两条安装命令：Vue 1.x 用 npm install mint-ui@1 -S，Vue 2.0 用 npm install mint-ui -S，下面还有按需引入的 import { Cell, Checklist } 写法。Features 段强调 Load on demand 和 CSS3 动画，页脚署名 © ElemeFE。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点交付的是 Vue 的移动端组件（Cell、Checklist 等）与安装说明，属于通用界面组件库；页面仍是 Vue 2 时代的形态，内容明显停止更新。",
+        "evidenceUrl": "https://mint-ui.github.io/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:01:14.854Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en",
+      "zh-hans"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mint-ui.github.io",
+      "finalUrl": "https://mint-ui.github.io/#!/en",
+      "title": "Mint UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/mint-ui-github-io/identity.jpg",
+        "sha256": "1ad2b5cbc95339b7b9c483eb470f9759d76b7e9c9c6bf7ab2e3ab4671ce51895",
+        "width": 1280,
+        "height": 900,
+        "bytes": 34017,
+        "alt": "Mint UI 首屏"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://mint-ui.github.io",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/mint-ui-github-io/identity.jpg",
+          "alt": "Mint UI 首屏",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm install mint-ui -S（Vue 2.0）；npm install mint-ui@1 -S（Vue 1.x）",
+      "sourceUrl": "https://mint-ui.github.io/",
+      "evidence": "Quick Start 代码块里的两条安装命令",
+      "confidence": 1
+    },
+    {
+      "field": "bundleSize",
+      "value": "全量引入压缩后约 30kb（JS + CSS）gzip",
+      "sourceUrl": "https://mint-ui.github.io/",
+      "evidence": "Features 段原文 'When all imported, the compressed code takes only ~30kb (JS + CSS) gzip space.'",
+      "confidence": 1
+    },
+    {
+      "field": "vendor",
+      "value": "ElemeFE",
+      "sourceUrl": "https://mint-ui.github.io/",
+      "evidence": "页脚署名 © ElemeFE",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://mint-ui.github.io/",
+      "evidence": "页面上只出现 © ElemeFE，未标注许可证名称，故记 unknown",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/mint-ui-github-io.md",
+  "registryUrl": "/r/mint-ui-github-io.json"
+}

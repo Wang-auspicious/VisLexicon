@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c4832eb1652ad8c1a0c89e71714a496e020fc25645b1528a05dbeaad12fe28a1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "angular-maps-com",
+  "entityId": "entity-angular-maps-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://angular-maps.com",
+    "finalUrl": "https://angular-maps.com/",
+    "checkedAt": "2026-09-15T11:36:06.514Z"
+  },
+  "editorial": {
+    "name": "Angular Google Maps (AGM)",
+    "descriptionZh": "给 Angular 封的 Google Maps 组件，一个 agm-map 标签加 AgmCoreModule.forRoot 就能把地图放进页面。站点本身是 Getting started、Guides、API Docs 三块文档，页脚停在 2018 年。",
+    "takeawayZh": "agm-map 一行贴出地图组件的接法",
+    "noteZh": "首屏压在云雾山的照片上，标题 Angular Google Maps (AGM) 与副题 ANGULAR COMPONENTS FOR GOOGLE MAPS，紧跟一句 Really easy to get started!。示例代码是完整的 AppComponent 与 AppModule，用到 agm-map 的 latitude 与 longitude 绑定、AgmCoreModule.forRoot 里的 apiKey 占位，以及 styles 中给 agm-map 定高度的写法。导航五项 Home、Getting started、Guides、API Docs、Github Project、Chat，正文还列了 Festa Lá、City Sightseeing Worldwide、Decipher、AeoLogic 四家在用。页脚一行写 angular-google-maps (AGM), Source code licensed under MIT. 与 © 2018。",
+    "recommendation": null,
+    "pricing": "Free（页脚写明 Source code licensed under MIT）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是可安装的 Angular 组件（@agm/core），页面给安装方式、用法示例与 API Docs，用户拿走的是组件接法，故归通用界面组件库。",
+        "evidenceUrl": "https://angular-maps.com/"
+      },
+      {
+        "statement": "Angular 由页面标题与示例代码直接坐实；页脚写明 MIT 与 © 2018，说明站点多年未更新，这一点不影响归类。",
+        "evidenceUrl": "https://angular-maps.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:36:06.514Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://angular-maps.com",
+      "finalUrl": "https://angular-maps.com/",
+      "title": "Angular Google Maps Components",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/angular-maps-com/identity.jpg",
+        "sha256": "3c43ca7ad305521e0cc0f9291c414ea418ca93e53f8ceaeede13bd9efad33f05",
+        "width": 1280,
+        "height": 900,
+        "bytes": 63587,
+        "alt": "Angular Google Maps (AGM) 首屏：Angular Google Maps (AGM)"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "Source code licensed under MIT",
+      "sourceUrl": "https://angular-maps.com/",
+      "evidence": "页脚版权行",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "agm-map 标签的 latitude / longitude 绑定加 AgmCoreModule.forRoot({ apiKey })",
+      "sourceUrl": "https://angular-maps.com/",
+      "evidence": "首屏示例代码块",
+      "confidence": 1
+    },
+    {
+      "field": "nav",
+      "value": "Home、Getting started、Guides、API Docs、Github Project、Chat",
+      "sourceUrl": "https://angular-maps.com/",
+      "evidence": "顶部导航六项",
+      "confidence": 1
+    },
+    {
+      "field": "users",
+      "value": "Festa Lá、City Sightseeing Worldwide、Decipher、AeoLogic",
+      "sourceUrl": "https://angular-maps.com/",
+      "evidence": "正文 Companies using it... 一段",
+      "confidence": 1
+    },
+    {
+      "field": "staleness",
+      "value": "页脚标 © 2018",
+      "sourceUrl": "https://angular-maps.com/",
+      "evidence": "页面底部的版权行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/angular-maps-com",
+    "designMdUrl": "https://vislexicon.com/site/angular-maps-com.md",
+    "checkedAt": "2026-09-15T11:36:06.514Z",
+    "license": "MIT"
+  }
+}

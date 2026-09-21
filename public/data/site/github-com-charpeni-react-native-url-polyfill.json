@@ -1,0 +1,166 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "80439d9bfc8d850b574e24830d4461305d49123a5174226f527e90bb31bc834d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-charpeni-react-native-url-polyfill",
+  "entityId": "entity-github-com-charpeni-react-native-url-polyfill",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/charpeni/react-native-url-polyfill",
+    "finalUrl": "https://github.com/charpeni/react-native-url-polyfill",
+    "checkedAt": "2026-09-15T12:05:33.766Z"
+  },
+  "editorial": {
+    "name": "charpeni/react-native-url-polyfill",
+    "descriptionZh": "给 React Native 补上标准的 WHATWG URL 与 URLSearchParams，测试拿官方 Web Platform Tests 对齐。",
+    "takeawayZh": "引入 polyfill，让 RN 的 URL 合规。",
+    "noteZh": "About 写着 “🔗 A lightweight and trustworthy URL polyfill for React Native.”，标签是 javascript、polyfill、react-native、url、urlsearchparams、whatwg-url。README 的 Why do we need this? 一节解释 RN 自带实现哪里不合规，后面接 Installation 与 Benchmarks；提交记录里反复出现 “Implement our own spec-compliant polyfill (#497)” 和两条 “Update WPT fixtures”，说明回归用例是从官方 Web Platform Tests 生成的。根目录放着 js/、platforms/、scripts/、types/ 四个目录和 auto.js、index.js，侧栏是 MIT license、411 stars、Used by 69K、latest v4.0.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一段运行时垫片代码，用来把 RN 运行环境补成符合规范，不是界面组件也不是素材；归到交付与开发工具下最接近的一格，这条分类把握一般。",
+        "evidenceUrl": "https://github.com/charpeni/react-native-url-polyfill"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:05:33.766Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "react",
+      "react-native",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/charpeni/react-native-url-polyfill",
+      "finalUrl": "https://github.com/charpeni/react-native-url-polyfill",
+      "title": "GitHub - charpeni/react-native-url-polyfill: 🔗A lightweight and trustworthy URL polyfill for React Native. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-charpeni-react-native-url-polyfill/identity.jpg",
+        "sha256": "5b903d2f87f3d7a9e80262df83e0db3e01ae44974936bb059335639003a10267",
+        "width": 1280,
+        "height": 900,
+        "bytes": 146143,
+        "alt": "charpeni/react-native-url-polyfill 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/charpeni/react-native-url-polyfill",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-charpeni-react-native-url-polyfill/identity.jpg",
+          "alt": "charpeni/react-native-url-polyfill 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/charpeni/react-native-url-polyfill",
+      "evidence": "仓库右栏 About 区块的 MIT license 条目，根目录文件列表里有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "conformance",
+      "value": "测试以官方 Web Platform Tests（WPT）为准生成",
+      "sourceUrl": "https://github.com/charpeni/react-native-url-polyfill",
+      "evidence": "提交记录里的 “Update WPT fixtures for IPv4-in-IPv6 rejection coverage (#512)”“Generate unit tests from WPT (#493)”",
+      "confidence": 1
+    },
+    {
+      "field": "scope",
+      "value": "实现自己的 spec-compliant polyfill，覆盖 URL 与 URLSearchParams",
+      "sourceUrl": "https://github.com/charpeni/react-native-url-polyfill",
+      "evidence": "README 的 Why do we need this? 一节与提交 “Implement our own spec-compliant polyfill (#497)”，话题标签含 urlsearchparams、whatwg-url",
+      "confidence": 1
+    },
+    {
+      "field": "popularity",
+      "value": "411 stars, 27 forks, Used by 69K, latest v4.0.0",
+      "sourceUrl": "https://github.com/charpeni/react-native-url-polyfill",
+      "evidence": "仓库页顶部数字与右栏 Releases 9 里的 Latest 标记",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-charpeni-react-native-url-polyfill.md",
+  "registryUrl": "/r/github-com-charpeni-react-native-url-polyfill.json"
+}

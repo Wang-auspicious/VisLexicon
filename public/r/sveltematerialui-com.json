@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1a50e49910d62f8d39b02833b1e4404d1d31a904d418b72cb8117956c0a42de9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "sveltematerialui-com",
+  "entityId": "entity-sveltematerialui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://sveltematerialui.com",
+    "finalUrl": "https://sveltematerialui.com/",
+    "checkedAt": "2026-09-15T12:08:35.053Z"
+  },
+  "editorial": {
+    "name": "Svelte Material UI",
+    "descriptionZh": "按 Google Material Spec 实现的 Svelte 组件库 SMUI，严格 TypeScript 类型标注并自带 ARIA 与键盘可达性。给要在 Svelte 项目里做 Material 风格界面的团队。",
+    "takeawayZh": "用 Sass 变量改 Material 主题，拿到整套 Svelte 组件。",
+    "noteZh": "页面最上面压着一条黄条，写着 Trans Rights are Human Rights! / Слава Україні! Glory to Ukraine!，下面橙色 header 里只有 Svelte Material UI 加一个 GitHub、一个 Discord 图标。左侧深灰栏把组件按 Installation（下挂 SvelteKit、Theming、Migrating）、Quick Guide、Accordion、Action Buttons（下挂 Button、Floating Action Button、Icon Button）、App Bars、Badge、Banner、Cards 一路列到底。主区是标题加三张彩色卡：橙卡讲 strictly typed Svelte 组件与 actions，蓝卡讲跟随 Material Spec 并补充组件，灰卡讲用 Sass 变量和 mixin 换肤，落款 Made with ❤️ by Port87 Email。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它是覆盖按钮、对话框、数据表、进度、排版等多类控件的成套组件库，并自带 Sass 主题体系与整站 demo，属于完整组件套件，归 design-system-suites。",
+        "evidenceUrl": "https://sveltematerialui.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:35.053Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://sveltematerialui.com",
+      "finalUrl": "https://sveltematerialui.com/",
+      "title": "Svelte Material UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/sveltematerialui-com/identity.jpg",
+        "sha256": "a5f97f796e0efe838398c98c3d2ab7de8e964e074c6c11ec210957cd7b4a333e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 113786,
+        "alt": "Svelte Material UI 首屏：Svelte Material UI"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "selfDescription",
+      "value": "Material UI components for Svelte apps；SMUI provides strictly typed Svelte components and actions for a wide variety of interface elements",
+      "sourceUrl": "https://sveltematerialui.com/",
+      "evidence": "首屏标题下的副标题与橙色卡片正文",
+      "confidence": 1
+    },
+    {
+      "field": "accessibility",
+      "value": "自动加 ARIA 属性、完全键盘可用，触摸目标按 Material Spec 至少 48px × 48px",
+      "sourceUrl": "https://sveltematerialui.com/",
+      "evidence": "主页 Accessible by Default 与 Touch Friendly 两段说明",
+      "confidence": 1
+    },
+    {
+      "field": "theming",
+      "value": "用 Sass 变量与 mixin 换肤，主页给出 Installation / Theming / Migrating 等文档入口",
+      "sourceUrl": "https://sveltematerialui.com/",
+      "evidence": "左侧栏分组与灰色 Sass 卡片",
+      "confidence": 0.9
+    },
+    {
+      "field": "demoPaths",
+      "value": "每个组件有独立 demo 路径，如 /demo/button、/demo/data-table、/demo/dialog",
+      "sourceUrl": "https://sveltematerialui.com/",
+      "evidence": "站内路径列表 /demo/*",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/sveltematerialui-com",
+    "designMdUrl": "https://vislexicon.com/site/sveltematerialui-com.md",
+    "checkedAt": "2026-09-15T12:08:35.053Z",
+    "license": "unknown"
+  }
+}

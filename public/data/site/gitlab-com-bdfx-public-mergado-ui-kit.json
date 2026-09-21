@@ -1,0 +1,172 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "fec812e912a118cad7a3ca6bfa8afab5b5af377d10e95f23e7ff6dd48e3376ea",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "gitlab-com-bdfx-public-mergado-ui-kit",
+  "entityId": "entity-gitlab-com-bdfx-public-mergado-ui-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "gitlab.com",
+  "official": {
+    "inputUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit",
+    "finalUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit",
+    "checkedAt": "2026-09-15T11:37:35.432Z"
+  },
+  "editorial": {
+    "name": "bdfx-public/mergado-ui-kit",
+    "descriptionZh": "Mergado 产品线在用的 UI kit 仓库，用 react-styleguidist 生成静态组件预览，跑 npm run build 会把整份 styleguide 输出到 docs 目录并发布到 GitLab Pages。最后一次提交停在 2022 年 5 月。",
+    "takeawayZh": "本地起 dev server 看组件 styleguide",
+    "noteZh": "项目页顶上是 Bidding Fox public / mergado-ui-kit 的面包屑，Project information 里写着 1,396 Commits、9 Branches、0 Tags，README 与 GitLab Pages 两个标签并排。最新一次提交是 Martin Hrnčíř 在 May 26, 2022 的 fix buttons actions。README 正文只给三件事：预览在 bdfx-public.gitlab.io/mergado-ui-kit/、npm start 起 http://localhost:3001 的 dev server、npm run build 把静态 styleguide 生成到 /docs。文件区里 styleguide.config.js、.babelrc（emotion - first steps）、dist、src、tslint.json 都在。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 与 styleguide.config.js 表明这是一套用 styleguidist 展示的组件集，用户拿走的是装进项目的界面组件，落通用界面组件库。",
+        "evidenceUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit"
+      },
+      {
+        "statement": "只有一份组件源码与预览站点，没有 token 包或规范文档，不足以算设计系统套件。",
+        "evidenceUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:37:35.432Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview",
+      "download"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit",
+      "finalUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit",
+      "title": "Bidding Fox public / mergado-ui-kit · GitLab",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/gitlab-com-bdfx-public-mergado-ui-kit/identity.jpg",
+        "sha256": "491767c4cf69c845cb1e4a6e9a99e37be798c8faf243708c698ed9faa35c9050",
+        "width": 1280,
+        "height": 900,
+        "bytes": 95660,
+        "alt": "bdfx-public/mergado-ui-kit 首屏：Primary navigation"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/gitlab-com-bdfx-public-mergado-ui-kit/identity.jpg",
+          "alt": "bdfx-public/mergado-ui-kit 首屏：Primary navigation",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "preview",
+      "value": "静态 styleguide 发布在 bdfx-public.gitlab.io/mergado-ui-kit/",
+      "sourceUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit",
+      "evidence": "README 正文 Public preview is available in here 一段给出的 URL",
+      "confidence": 1
+    },
+    {
+      "field": "commands",
+      "value": "npm start 起 localhost:3001，npm run build 输出 styleguide 到 /docs",
+      "sourceUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit",
+      "evidence": "README 正文对 dev server 与 static html build 的两段说明",
+      "confidence": 1
+    },
+    {
+      "field": "activity",
+      "value": "1,396 Commits、9 Branches、0 Tags，创建于 March 15, 2019，最后提交 May 26, 2022",
+      "sourceUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit",
+      "evidence": "Project information 区的计数与 Created on 一行，以及最新提交的日期行",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://gitlab.com/bdfx-public/mergado-ui-kit",
+      "evidence": "项目文件区与侧栏都没有 LICENSE 文件或许可证标签，故记 unknown",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/gitlab-com-bdfx-public-mergado-ui-kit.md",
+  "registryUrl": "/r/gitlab-com-bdfx-public-mergado-ui-kit.json"
+}

@@ -1,0 +1,201 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "035678c2c563030721c91e15984757629c6c633f5da3f2c7c1f9387a8e6f8f4b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "axis-minu-best",
+  "entityId": "entity-axis-minu-best",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "axis.minu.best",
+  "official": {
+    "inputUrl": "https://axis.minu.best",
+    "finalUrl": "https://axis.minu.best/",
+    "checkedAt": "2026-09-15T11:37:27.140Z"
+  },
+  "editorial": {
+    "name": "AXIS",
+    "descriptionZh": "韩国团队 IDEA on Action 做的 React 组件库，专给 AI/LLM 应用：30 个 Core UI 加 18 个 Agentic UI（StreamingText、ToolCallCard、StepTimeline 这类），兼容 shadcn/ui，用 axis-cli 按需安装。",
+    "takeawayZh": "用 axis-cli add 装 StreamingText",
+    "noteZh": "导航是 Docs、Components、Agentic UI、Library、Templates、Contribute，搜索框上写着 ⌘K。首屏胶囊写 v1.1 — Agentic UI & CLI 배포 완료，大标题 Build AI apps with AXIS，下面一行韩文说明它是 AI/LLM 应用的 React 组件库、兼容 shadcn/ui、带 Agentic UI、用 CLI 安装。설치 一节给 pnpm dlx axis-cli add button 这一行。컴포넌트 미리보기 直接嵌了示例：Button 的 Primary/Outline/Secondary 三态、StreamingText 显示 AI가 응답을 생성하고 있습니다...、ToolCallCard 里是 search_documents()、还有 StepTimeline。왜 AXIS인가? 一节强调 Radix UI + Tailwind CSS 打底、18 个 Agentic UI 组件、다크모드。HTTP 探测时撞到 Cloudflare 拦截页，浏览器渲染后是正常站点。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "正文把交付物写清楚：30개 Core UI + 18개 Agentic UI 컴포넌트，安装方式是 npx axis-cli add，强调 shadcn/ui 兼容（Radix UI + Tailwind CSS 基础），用户拿走的是按需装进项目里的 React 组件；盒子里的东西是 AI 应用的界面，AI 是场景不是类别。",
+        "evidenceUrl": "https://axis.minu.best/"
+      },
+      {
+        "statement": "站点把自己定位成组件库（导航里有 Components、Agentic UI、Library 三栏与 Component Preview 区块），Templates 只是同一批组件的附带用法。",
+        "evidenceUrl": "https://axis.minu.best/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:37:27.140Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "cli",
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "radix-ui",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "ko"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://axis.minu.best",
+      "finalUrl": "https://axis.minu.best/",
+      "title": "AXIS Design System",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/axis-minu-best/identity.jpg",
+        "sha256": "85582abe7ffd8162b7343e3782eff8b5d81bc0d0fc49abbe469fae433316fec8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 43556,
+        "alt": "AXIS 首屏：Build AI apps with AXIS"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://axis.minu.best",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/axis-minu-best/identity.jpg",
+          "alt": "AXIS 首屏：Build AI apps with AXIS",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "componentCount",
+      "value": "30개 Core UI + 18개 Agentic UI 组件",
+      "sourceUrl": "https://axis.minu.best/",
+      "evidence": "컴포넌트 미리보기 一节的计数句",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "pnpm dlx axis-cli add button（页面另给 npx axis-cli add 的写法）",
+      "sourceUrl": "https://axis.minu.best/",
+      "evidence": "설치 一节的 CLI 命令框与 왜 AXIS인가? 一节的 CLI 도구 卡片",
+      "confidence": 1
+    },
+    {
+      "field": "compatibility",
+      "value": "shadcn/ui 호환，Radix UI + Tailwind CSS 기반，可直接并入现有 shadcn/ui 项目",
+      "sourceUrl": "https://axis.minu.best/",
+      "evidence": "왜 AXIS인가? 一节的 shadcn/ui 호환 卡片",
+      "confidence": 1
+    },
+    {
+      "field": "agenticExamples",
+      "value": "StreamingText（AI가 응답을 생성하고 있습니다...）、ToolCallCard（search_documents()）、StepTimeline",
+      "sourceUrl": "https://axis.minu.best/",
+      "evidence": "컴포넌트 미리보기 一节里并排的四个组件示例",
+      "confidence": 1
+    },
+    {
+      "field": "builder",
+      "value": "Built by IDEA on Action. Open source on GitHub. Powered by Next.js 15 & Tailwind CSS",
+      "sourceUrl": "https://axis.minu.best/",
+      "evidence": "页面底部三行署名",
+      "confidence": 1
+    },
+    {
+      "field": "httpBlocked",
+      "value": "HTTP 探测拿到 Attention Required! | Cloudflare 与 Sorry, you have been blocked，浏览器渲染后是正常站点",
+      "sourceUrl": "https://axis.minu.best/",
+      "evidence": "http.title 与 http.h1 是 Cloudflare 拦截页，而截图与 live 文本是完整站点",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://axis.minu.best/",
+      "evidence": "页脚写明 Open source on GitHub，无付费入口；页面未写许可证，故许可证一栏记 unknown",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/axis-minu-best.md",
+  "registryUrl": "/r/axis-minu-best.json"
+}

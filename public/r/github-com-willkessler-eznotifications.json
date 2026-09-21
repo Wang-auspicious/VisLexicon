@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "216bc6a64e73e074878f21a535497cf090860b92da685dd4745c65c3eee5aae1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-willkessler-eznotifications",
+  "entityId": "entity-github-com-willkessler-eznotifications",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/willkessler/eznotifications",
+    "finalUrl": "https://github.com/willkessler/this-is-not-a-drill",
+    "checkedAt": "2026-09-15T11:53:22.888Z"
+  },
+  "editorial": {
+    "name": "willkessler/this-is-not-a-drill",
+    "descriptionZh": "一个给应用内重要通知用的服务（缩写 TINAD）：不重新发版就能弹出服务中断、计划维护、条款变更这类消息，能按地区、时间和人群限定投递，并在 dashboard 里回看谁看过什么。",
+    "takeawayZh": "不重新部署就弹服务公告，还能按人群和地区限定",
+    "noteZh": "仓库地址本身就有信息：旧地址 eznotifications 现在落到 willkessler/this-is-not-a-drill。About 一句 Monorepo for This Is Not A Drill!，外链 www.this-is-not-a-drill.com，topics 是 alerting、devops-tools、mobile-app、notification-services、web、web-application，MIT license，0 Stars、No releases published、1 位 Contributor，Languages 是 TypeScript 95.2% / CSS 3.2%。README 把用途列成一组场景——website outages、scheduled maintenance、important updates to your user flow、changes to your service offerings、legal changes/updates——并强调 TINAD takes care of tracking views for you, so your users are never stuck seeing an alert they have already seen.，还专门提了一句能细化到用 ipgeolocation 判定 locale。文件树是 examples/sample-bank-app 加 packages 的 monorepo，根上摆着 lerna.json 与 docker-compose.yaml。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 自述是 popup important service messages to grab your users 的 in-app attention，交付物是嵌进自己应用里的提示弹层加配套 SDK，属可嵌入复合控件。",
+        "evidenceUrl": "https://github.com/willkessler/this-is-not-a-drill"
+      },
+      {
+        "statement": "仓库含 examples/sample-bank-app 与 packages 两部分，说明组件与 React SDK 是打包交付的主体，而不是纯服务端 API。",
+        "evidenceUrl": "https://github.com/willkessler/this-is-not-a-drill"
+      },
+      {
+        "statement": "把握一般的部分：它同时带一个可自托管的 dashboard（docker-compose.yaml、lerna.json 在根目录），所以也带服务属性，此处按用户直接取用的那一层归到可嵌入控件。",
+        "evidenceUrl": "https://github.com/willkessler/this-is-not-a-drill"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:53:22.888Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "publish",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "api",
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/willkessler/eznotifications",
+      "finalUrl": "https://github.com/willkessler/this-is-not-a-drill",
+      "title": "GitHub - willkessler/this-is-not-a-drill: Monorepo for This Is Not A Drill! · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-willkessler-eznotifications/identity.jpg",
+        "sha256": "ece5c6f52a707d1edf6ca75d8eaf2e564d4d92b2b8017ebe0ba8e08b1d7977d7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 130375,
+        "alt": "willkessler/this-is-not-a-drill 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "redirect",
+      "value": "willkessler/eznotifications → willkessler/this-is-not-a-drill",
+      "sourceUrl": "https://github.com/willkessler/this-is-not-a-drill",
+      "evidence": "简报里的 url 是 /willkessler/eznotifications，实测落到 /willkessler/this-is-not-a-drill，页面标题为 GitHub - willkessler/this-is-not-a-drill",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/willkessler/this-is-not-a-drill",
+      "evidence": "About 面板的 MIT license 行与 README 面包屑上的 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "use-cases",
+      "value": "website outages / scheduled maintenance / important updates to your user flow / changes to your service offerings / legal changes updates",
+      "sourceUrl": "https://github.com/willkessler/this-is-not-a-drill",
+      "evidence": "README 的 Common use cases are 列表",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "No releases published",
+      "sourceUrl": "https://github.com/willkessler/this-is-not-a-drill",
+      "evidence": "About 下方 Releases 区块的原文提示，Releases 与 Contributors 之间没有版本条目",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-willkessler-eznotifications",
+    "designMdUrl": "https://vislexicon.com/site/github-com-willkessler-eznotifications.md",
+    "checkedAt": "2026-09-15T11:53:22.888Z",
+    "license": "MIT"
+  }
+}

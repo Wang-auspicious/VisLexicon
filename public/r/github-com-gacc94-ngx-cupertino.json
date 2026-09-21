@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "05fde46a521e130effb43fd6a9e794191e523cf292974c3448917836a21336fb",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-gacc94-ngx-cupertino",
+  "entityId": "entity-github-com-gacc94-ngx-cupertino",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/gacc94/ngx-cupertino",
+    "finalUrl": "https://github.com/gacc94/ngx-cupertino",
+    "checkedAt": "2026-09-15T11:47:06.051Z"
+  },
+  "editorial": {
+    "name": "gacc94/ngx-cupertino",
+    "descriptionZh": "Angular 组件库的 monorepo，组件、图标和 token 收在 @ngx-cupertino/ui 一个包里，仓库自带 Storybook 与 apps/playground 演示应用，文档要求 Angular >=20。",
+    "takeawayZh": "装 @ngx-cupertino/ui，组件图标一起拿。",
+    "noteZh": "仓库 h1 就是 @ngx-cupertino，README 分 Workspace、Getting Started、Storybook、Consumer Quick Start、Development、Compatibility、License 几节。文件列表把代码分成 libs、apps/playground、docs、openspec 四块，提交记录里有 merge icons into ui as @ngx-cupertino/ui/icons、integrate Storybook with AnalogJS Vite builder、add button bordered/glass-prominent variants、finalize public API documentation and maintenance rules、align all docs to Angular >=20 加图标进 ui 的结构说明。右侧 About 挂 MIT license、19 个 Release（最新 v0.7.0）、3 位贡献者，仓库只有 2 star。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库把组件、设计 token 和图标合并进同一个包并配有 openspec 里的公共 API 文档，交付的是成套的组件加 token，故归设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/gacc94/ngx-cupertino"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:06.051Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "icon",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/gacc94/ngx-cupertino",
+      "finalUrl": "https://github.com/gacc94/ngx-cupertino",
+      "title": "GitHub - gacc94/ngx-cupertino · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-gacc94-ngx-cupertino/identity.jpg",
+        "sha256": "e323e4418420084b83fb91df03f5b7dce593324cfab6c3d212d62585f2a9bfb5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 146855,
+        "alt": "gacc94/ngx-cupertino 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/gacc94/ngx-cupertino",
+      "evidence": "仓库右侧 About 栏的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "packageLayout",
+      "value": "libs / apps/playground / docs / openspec；图标并进 @ngx-cupertino/ui/icons",
+      "sourceUrl": "https://github.com/gacc94/ngx-cupertino",
+      "evidence": "根目录文件列表，以及 .github/workflows 与 apps/playground 两行的提交信息",
+      "confidence": 1
+    },
+    {
+      "field": "stability",
+      "value": "v0.7.0（19 releases），2 stars，3 contributors，356 commits",
+      "sourceUrl": "https://github.com/gacc94/ngx-cupertino",
+      "evidence": "右侧 Releases、About 与 Contributors 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-gacc94-ngx-cupertino",
+    "designMdUrl": "https://vislexicon.com/site/github-com-gacc94-ngx-cupertino.md",
+    "checkedAt": "2026-09-15T11:47:06.051Z",
+    "license": "MIT"
+  }
+}

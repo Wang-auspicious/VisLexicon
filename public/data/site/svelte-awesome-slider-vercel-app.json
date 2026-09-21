@@ -1,0 +1,163 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ecacf058b7b497913b3b402f16d9903a05e38880259d7bc546efbbee663adbef",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svelte-awesome-slider-vercel-app",
+  "entityId": "entity-svelte-awesome-slider-vercel-app",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "svelte-awesome-slider.vercel.app",
+  "official": {
+    "inputUrl": "https://svelte-awesome-slider.vercel.app",
+    "finalUrl": "https://svelte-awesome-slider.vercel.app/",
+    "checkedAt": "2026-09-15T12:08:43.208Z"
+  },
+  "editorial": {
+    "name": "svelte-awesome-slider",
+    "descriptionZh": "Svelte 的滑块组件库，轨道与滑块都能用 CSS 变量改造，并自带键盘导航与 WAI ARIA 无障碍。给需要在表单里放可定制滑块的 Svelte 项目。",
+    "takeawayZh": "装一个 Svelte 滑块，轨道和滑块都能用变量改。",
+    "noteZh": "浅蓝底上一张白卡片，标题居中写 svelte-awesome-slider，六条 emoji 特性里写了 built-in keyboard navigation 与 accessibility compliant (see WAI ARIA pattern)。正文里作者直说这个库可能不流行、只是被自己的 svelte-awesome-color-picker 用着，并点名感谢 MacFJA。目录按 Summary / Examples / API 三层展开，Examples 下面分 Common props、Track customization、Thumb customization、Vertical slider 四节，示例用 temperature、price 这类具名场景，Track customization 直接给两段 linear-gradient 拼出来的轨道背景。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是单个可安装的 Svelte 表单控件（滑块）与其 API 文档，用户拿走的是组件代码，归 general-ui-components。",
+        "evidenceUrl": "https://svelte-awesome-slider.vercel.app/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:43.208Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svelte-awesome-slider.vercel.app",
+      "finalUrl": "https://svelte-awesome-slider.vercel.app/",
+      "title": "Svelte slider",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/svelte-awesome-slider-vercel-app/identity.jpg",
+        "sha256": "38ce75a645ea8f17cc46118aeb75b597e89d685cd2e53d0d5d19d7ff98ebaadb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 62231,
+        "alt": "svelte-awesome-slider 首屏：svelte-awesome-slider"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://svelte-awesome-slider.vercel.app",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/svelte-awesome-slider-vercel-app/identity.jpg",
+          "alt": "svelte-awesome-slider 首屏：svelte-awesome-slider",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "api",
+      "value": "Slider 的 props 含 min / max / step / value / ariaValueText / name / direction / reverse / keyboardOnly，样式走 CSS 变量",
+      "sourceUrl": "https://svelte-awesome-slider.vercel.app/",
+      "evidence": "API 一节的 Props 表",
+      "confidence": 1
+    },
+    {
+      "field": "customization",
+      "value": "轨道与滑块可用 --track-background、--track-width、--thumb-background、--thumb-size 等变量改造，并支持 direction=\"vertical\"",
+      "sourceUrl": "https://svelte-awesome-slider.vercel.app/",
+      "evidence": "Examples 一节的 Track / Thumb customization 代码块",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "被同作者的 svelte-awesome-color-picker 使用；README 致谢 MacFJA",
+      "sourceUrl": "https://svelte-awesome-slider.vercel.app/",
+      "evidence": "首屏特性列表下方两段正文",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/svelte-awesome-slider-vercel-app.md",
+  "registryUrl": "/r/svelte-awesome-slider-vercel-app.json"
+}

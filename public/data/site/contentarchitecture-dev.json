@@ -1,0 +1,175 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8bf62f0bf58f0315a4ae26661422eb61bd9dbac9362840b9fd4724c28d4445a8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "contentarchitecture-dev",
+  "entityId": "entity-contentarchitecture-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "contentarchitecture.dev",
+  "official": {
+    "inputUrl": "https://contentarchitecture.dev",
+    "finalUrl": "https://www.contentarchitecture.dev/",
+    "checkedAt": "2026-09-15T10:54:26.523Z"
+  },
+  "editorial": {
+    "name": "The Content Architecture",
+    "descriptionZh": "一份买断制的 Sanity 全栈起手包，同时给 Next.js 和 Astro 两个版本。作者把六年客户站里攒下的页面建构器、抓取层、SEO、重定向、表单决定全部预置好，再附上 AGENTS.md、十几个 skills 和两个 MCP server，省掉 AI 每次都重推架构的那几个小时。",
+    "takeawayZh": "拿走一套配好 AGENTS.md 与 MCP 的起手仓库",
+    "noteZh": "首屏左半是米色，小标 FULL-STACK KIT FOR NEXT.JS AND ASTRO.，标题 The stack agents don't reinvent.，下面一行列出 Frontend、Sanity schema、fetch layer、SEO、redirects、forms，说 AGENTS.md 和十几个 skills 会在你发第一条提示前加载、两个 MCP server 让 agent 自查；按钮 GET ACCESS 被拆成两块拼在一起。右半是黑底上一圈圈螺旋排开、被切成碎片的英文词，反复拼出 THE CONTENT ARCHITECTURE。页面下方有一张编号的 COMMON PROBLEMS 清单，从 001 Agent redesigns the architecture on every prompt 一路列到 011 Basic auth for staging environments，末尾算了一句 ESTIMATED TIME LOST: ~24 HOURS PER PROJECT (3 FULL DAYS)。导航栏上方还压着一条滚动条 NOW AVAILABLE WITH ASTRO。",
+    "recommendation": null,
+    "pricing": "Paid（买断制，首页未标金额，购买入口 /checkout）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "templates-design-files",
+    "subcategory": "site-app-starters",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户付一次钱拿走的是一个可 clone 的全栈项目仓库（Next.js 或 Astro 版），包含页面建构器、抓取层、SEO 与部署配置，属于项目启动器而不是教程或工具。",
+        "evidenceUrl": "https://contentarchitecture.dev/"
+      },
+      {
+        "statement": "站点写明 Two editions. One architecture. Lifetime updates. 且 internalPaths 含 /checkout，是买断式交付。",
+        "evidenceUrl": "https://contentarchitecture.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:54:26.523Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "starter",
+      "prompt"
+    ],
+    "actions": [
+      "purchase",
+      "download"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "paid"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://contentarchitecture.dev",
+      "finalUrl": "https://www.contentarchitecture.dev/",
+      "title": "Agent-Ready Sanity Kit for Next.js & Astro | The Content Architecture",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/contentarchitecture-dev/identity.jpg",
+        "sha256": "784c619956833a170dc0643c14b3dc31dcc6f6271e5a1eb2d97ca333decbe4ee",
+        "width": 1280,
+        "height": 900,
+        "bytes": 132349,
+        "alt": "The Content Architecture 首屏：The stack agents don't reinvent."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://contentarchitecture.dev",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/contentarchitecture-dev/identity.jpg",
+          "alt": "The Content Architecture 首屏：The stack agents don't reinvent.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "agentAssets",
+      "value": "AGENTS.md、十余个 skills、两个 MCP server、llms.txt",
+      "sourceUrl": "https://contentarchitecture.dev/",
+      "evidence": "首页首屏状态条写 AGENTS.MD: LOADED、MCP: 2 SERVERS、DRIFT: 0，meta description 另提到 llms.txt",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "Next 16.x / Astro 7.x / Sanity v6，TypeScript 开 strict",
+      "sourceUrl": "https://contentarchitecture.dev/",
+      "evidence": "首屏数字条 NEXT 16.X、ASTRO 7.X、SANITY V6、TS: STRICT",
+      "confidence": 1
+    },
+    {
+      "field": "timeSavingClaim",
+      "value": "作者列出 11 项常见返工，合计约 24 小时每项目",
+      "sourceUrl": "https://contentarchitecture.dev/",
+      "evidence": "首页 COMMON PROBLEMS 001–011 清单与 ESTIMATED TIME LOST: ~24 HOURS PER PROJECT (3 FULL DAYS)",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "买断制，Buy once, own it forever；首屏未给金额，购买走 /checkout",
+      "sourceUrl": "https://contentarchitecture.dev/checkout",
+      "evidence": "首页 PRICING 导航项与 GET ACCESS 按钮，internalPaths 含 /checkout",
+      "confidence": 0.6
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Paid（买断制，首页未标金额，购买入口 /checkout）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/contentarchitecture-dev.md",
+  "registryUrl": "/r/contentarchitecture-dev.json"
+}

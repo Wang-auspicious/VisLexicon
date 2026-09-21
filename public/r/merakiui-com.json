@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "de38652574b5800913f9ffcd625060eea2b9df9fe2b06814119d6c2e4118dd89",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "merakiui-com",
+  "entityId": "entity-merakiui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://merakiui.com",
+    "finalUrl": "https://merakiui.com/",
+    "checkedAt": "2026-09-15T12:01:09.003Z"
+  },
+  "editorial": {
+    "name": "Meraki UI",
+    "descriptionZh": "Meraki UI 是一套 Tailwind CSS 组件库，主打 RTL 语言支持和暗色模式，组件按 Application UI 与 Marketing 分组；另有一条付费的模板线。",
+    "takeawayZh": "从 Cards、Inputs 里挑一个，把 Tailwind 类名抄进项目。",
+    "noteZh": "导航只留 Components 和 Templates 两项。首屏左边是 'Beautiful Tailwind CSS Components That Just Work.' 的大标题，下面 Browse Components 和 Check Out Templates 两个按钮；右边一张仪表盘预览卡，卡底是 Skip / Next 的轮播，轮播里露出一个带 Username 和 Meraki 标志的登录表单。左下角焊着一个 'Love Meraki UI? Help us grow!' 的加星贴片。组件清单按 Application UI 和 Marketing 分组，Cards、Inputs、Breadcrumbs、Sign in and Registration、Modals、Pricing 这些子类下面各标着组件数；Templates 那边挂着 Stellar 和 Gray Showcase 两个落地页，各 $49。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站内主体是可按分类取用的 Tailwind 组件（Cards、Inputs、Modals、Skeleton 等），组件免费、模板收费，因此主类取组件库而非模板库。",
+        "evidenceUrl": "https://merakiui.com/components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:01:09.003Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "block",
+      "template"
+    ],
+    "actions": [
+      "browse",
+      "purchase",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://merakiui.com",
+      "finalUrl": "https://merakiui.com/",
+      "title": "Meraki UI Tailwind CSS Components",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/merakiui-com/identity.jpg",
+        "sha256": "fbb91e26797284827b70c26d26575f722b1125951ba2482cd1013afd2e76b4ab",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114726,
+        "alt": "Meraki UI 首屏：Beautiful Tailwind CSS Components That Just Work."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "组件免费，模板付费",
+      "sourceUrl": "https://merakiui.com/",
+      "evidence": "站点标题写着 Free Tailwind CSS Components…，组件按 Application UI / Marketing 免费列出；Templates 一栏的 Stellar、Gray Showcase 标价各 $49",
+      "confidence": 1
+    },
+    {
+      "field": "rtlSupport",
+      "value": "支持 RTL（阿拉伯语、希伯来语）",
+      "sourceUrl": "https://merakiui.com/",
+      "evidence": "首屏下方的 'Support RTL Languages' 一块写着 'Seamlessly supports right-to-left (RTL) languages for intuitive interfaces in Arabic, Hebrew, and more.'",
+      "confidence": 1
+    },
+    {
+      "field": "componentGroups",
+      "value": "Application UI（Cards、Inputs、Breadcrumbs、Skeleton、Sign in and Registration、Modals）与 Marketing（Blog、Pricing）",
+      "sourceUrl": "https://merakiui.com/components",
+      "evidence": "首屏组件区块的分组标题与各组下的小类名",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/merakiui-com",
+    "designMdUrl": "https://vislexicon.com/site/merakiui-com.md",
+    "checkedAt": "2026-09-15T12:01:09.003Z",
+    "license": "unknown"
+  }
+}

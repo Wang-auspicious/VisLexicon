@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "28889ee0ee4c53760268ddae924853468d9b23067b534b39c19f8650a66123d5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-badgen-badgen",
+  "entityId": "entity-github-com-badgen-badgen",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/badgen/badgen",
+    "finalUrl": "https://github.com/badgen/badgen",
+    "checkedAt": "2026-09-15T12:48:48.305Z"
+  },
+  "editorial": {
+    "name": "badgen/badgen",
+    "descriptionZh": "一个零依赖的 SVG 徽章生成库，传入 label / status / color 就吐出徽章字符串，Node 与浏览器里都能跑。",
+    "takeawayZh": "传 label 和 status，生成 SVG 徽章",
+    "noteZh": "About 写 Fast handcraft svg badge generator.，标签是 badge、badgen、fast、generator、readme、svg，README 标 ISC license，正文补一句 Used on badgen.net.，然后列三条卖点：Zero dependency、Fast by design、Running in node & browser。用法是 const svgString = badgen({ label:'npm', labelColor:'ADF', status:'v1.2.3', color:'blue', style:'flat', icon:'data:image/svg+xml;base64,...', iconWidth:13, scale:1 })，style 只有 'flat' 和 'classic' 两个取值，浏览器里则引 unpkg.com/badgen。README 还贴了基准表，classic 全参数 1,284,886 ops/sec、flat 全参数 1,012,111 ops/sec。仓库 326 次提交、560 star、38 fork，Issues 2、Pull requests 4。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一段用代码生成 SVG 图形的库（badgen() 直接返回 svgString），产出物是矢量徽章图，因此归 creative-generative-code；它也可以被理解成 CI 徽章工具，但页面上最直接的产出是图形而不是构建流程。",
+        "evidenceUrl": "https://github.com/badgen/badgen"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:48:48.305Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "image"
+    ],
+    "actions": [
+      "install",
+      "generate"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "svg"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "ISC"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/badgen/badgen",
+      "finalUrl": "https://github.com/badgen/badgen",
+      "title": "GitHub - badgen/badgen: Fast handcraft svg badge generator. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-badgen-badgen/identity.jpg",
+        "sha256": "0548301274163c9ecfd1ab45874f69d0e648b2c4b0dec75b8762e44e55d1bbeb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 94250,
+        "alt": "badgen/badgen 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/badgen/badgen",
+      "evidence": "README 标题栏写 ISC license，截图右侧 About 面板同样标 ISC license",
+      "confidence": 1
+    },
+    {
+      "field": "dependencies",
+      "value": "Zero dependency，node 与浏览器都能跑",
+      "sourceUrl": "https://github.com/badgen/badgen",
+      "evidence": "README 三条卖点行分别写 Zero dependency、Fast by design (see benchmarks)、Running in node & browser",
+      "confidence": 1
+    },
+    {
+      "field": "options",
+      "value": "label / labelColor / status / color / style / icon / iconWidth / scale",
+      "sourceUrl": "https://github.com/badgen/badgen",
+      "evidence": "README Usage 段落里带注释的 badgen({...}) 参数清单，其中 style 只接受 'flat' 与 'classic'",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-badgen-badgen",
+    "designMdUrl": "https://vislexicon.com/site/github-com-badgen-badgen.md",
+    "checkedAt": "2026-09-15T12:48:48.305Z",
+    "license": "ISC"
+  }
+}

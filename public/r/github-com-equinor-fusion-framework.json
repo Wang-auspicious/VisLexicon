@@ -1,0 +1,163 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5053aa27d987c0bc75d0969b196fcd660162459f31ddda47cbca0f593b9abf56",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-equinor-fusion-framework",
+  "entityId": "entity-github-com-equinor-fusion-framework",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/equinor/fusion-framework",
+    "finalUrl": "https://github.com/equinor/fusion-framework",
+    "checkedAt": "2026-09-15T11:41:09.389Z"
+  },
+  "editorial": {
+    "name": "equinor/fusion-framework",
+    "descriptionZh": "Equinor 的 Fusion Framework 仓库，About 自述 Fusion Framework, built and maintained to Fusion Core，README 只分 🚀 Get Started、👨‍🍳 Cookbooks、👋 Contribute 三段，文档站是 equinor.github.io/fusion-framework/。",
+    "takeawayZh": "读 Fusion 的 cookbooks 抄微前端包结构",
+    "noteZh": "About 栏写 Fusion Framework, built and maintained to Fusion Core，website 是 equinor.github.io/fusion-framework/，MIT license，topics 有 changeset、equinor、framework、fusion、modules、monorepo、react。文件列表有 .changeset、.devcontainer、cookbooks、eds、eval/index、ideas、packages、patches、vue-press，其中 packages 与 .changeset 两行共用提交 fix(log): support all RxJS 7 releases (#5527)，cookbooks 与 eval/index 两行是 fix(router): extract route DSL Vite plugin (#5463)。Releases 计数 5,666，Contributors 20，10 stars / 10 forks，4,478 Commits，98 Branches，5,820 Tags。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "拿不准：仓库是一个多包前端框架 monorepo，packages/ 下既有 React 组件也有 router、http、log 这类运行时包，eds（Equinor Design System）只是其中一块。按用户最直接能拿走的组件包归通用界面组件库；build-deploy-dev-workflow 也说得通，因为 .changeset、vue-press、Dockerfile 显示仓库另一半重心在构建发布链路上。",
+        "evidenceUrl": "https://github.com/equinor/fusion-framework"
+      },
+      {
+        "statement": "catalog 的 tags（react/react-ui/ui-kit）与页面 topic 里的 react 一致，但 catalog 给的名字是 @equinor/fusion-framework-react-components-bookmark 这种包级名字，页面自称是 Fusion Framework，按实测取 owner/repo。",
+        "evidenceUrl": "https://github.com/equinor/fusion-framework"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:41:09.389Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/equinor/fusion-framework",
+      "finalUrl": "https://github.com/equinor/fusion-framework",
+      "title": "GitHub - equinor/fusion-framework: Fusion Framework, built and maintained to Fusion Core · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-equinor-fusion-framework/identity.jpg",
+        "sha256": "d776f82b5efcea053a2f193c13c942358f80999bacde725ecc27f19ce7811df7",
+        "width": 1280,
+        "height": 900,
+        "bytes": 146318,
+        "alt": "equinor/fusion-framework 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/equinor/fusion-framework",
+      "evidence": "About 栏的 MIT license 一行，文件列表里也有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "readmeOutline",
+      "value": "🚀 Get Started、👨‍🍳 Cookbooks、👋 Contribute",
+      "sourceUrl": "https://github.com/equinor/fusion-framework",
+      "evidence": "README 正文只渲染出这三个小标题",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "10 stars / 10 forks / 4,478 commits / 98 branches / 5,820 tags / Releases 5,666 / Contributors 20",
+      "sourceUrl": "https://github.com/equinor/fusion-framework",
+      "evidence": "仓库头部计数与右侧 Releases、Contributors 区块",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "changeset、equinor、framework、fusion、modules、monorepo、react",
+      "sourceUrl": "https://github.com/equinor/fusion-framework",
+      "evidence": "About 栏 topic 标签",
+      "confidence": 1
+    },
+    {
+      "field": "recentWork",
+      "value": "fix(router): extract route DSL Vite plugin (#5463)；fix(log): support all RxJS 7 releases (#5527)",
+      "sourceUrl": "https://github.com/equinor/fusion-framework",
+      "evidence": "cookbooks、eval/index、packages、.changeset 四行的提交信息",
+      "confidence": 1
+    },
+    {
+      "field": "docsSite",
+      "value": "equinor.github.io/fusion-framework/",
+      "sourceUrl": "https://github.com/equinor/fusion-framework",
+      "evidence": "About 栏 website 一行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-equinor-fusion-framework",
+    "designMdUrl": "https://vislexicon.com/site/github-com-equinor-fusion-framework.md",
+    "checkedAt": "2026-09-15T11:41:09.389Z",
+    "license": "MIT"
+  }
+}

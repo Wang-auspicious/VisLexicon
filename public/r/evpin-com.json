@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "48ab0ec25c7a756d6fff8f451bda5946615c498072886a37979c11585fb54bb9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "evpin-com",
+  "entityId": "entity-evpin-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://evpin.com",
+    "finalUrl": "https://www.evpin.com/",
+    "checkedAt": "2026-09-15T11:10:07.697Z"
+  },
+  "editorial": {
+    "name": "EVpin",
+    "descriptionZh": "给充电运营商和选址方用的评估工具官网，把站点利用率、站点评分、EV adoption、补贴数据收进一张地图，最后产出一份能直接发给客户的站点报告。",
+    "takeawayZh": "看一屏怎么把 18 个数据源收成一张选址报告",
+    "noteZh": "首屏整片亮青蓝，导航 Product / Tracker / Pricing / Spexbook / Changelog，H1 是 The industry standard for designing prime EV charging sites，底下三个勾选项写着 Access utilization data for over 85% of stations in the US、Design charging sites in minutes, zero training required、Recommended by members of the Tesla Supercharger team，左下角一行小字 SAMPLE DATA · STATIONS ARE FICTIONAL。往下 You shouldn't need to open 18 tabs to qualify one charging site 一段，把 Google Maps、PlugShare、AFDC Station Locator、ArcGIS Online、Municode Library、DSIRE 一层层堆起来，再收成 No more 18 open tabs. One tool.。功能区是 Station Utilization / Site Scores / EV adoption / Rebates 四块，配一张 13332 Express Wy, Los Angeles, CA 90001 的样例报告，写着 Avg. utilization 34.0%、Sessions/day 22.4、Revenue/day $285、Avg. price $0.53/kWh。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 EVpin 产品自己的官网首页，从落地页灵感目录 saaslandingpage.com 收进来；页面上能拿走的是 Start for Free 的账号而不是素材或模板，价值在首页叙事与那张样例报告的设计，因此归产品与公司官网。",
+        "evidenceUrl": "https://www.evpin.com/"
+      },
+      {
+        "statement": "导航按 Product / Tracker / Pricing / Spexbook / Changelog 组织自家产品的不同模块，是单公司产品站的组织方式。",
+        "evidenceUrl": "https://www.evpin.com/product/evaluate"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:10:07.697Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "report"
+    ],
+    "actions": [
+      "browse",
+      "compare",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "discovery"
+    ],
+    "audiences": [
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://evpin.com",
+      "finalUrl": "https://www.evpin.com/",
+      "title": "EVpin - Qualify EV Charging Sites in Minutes",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/evpin-com/identity.jpg",
+        "sha256": "b956d0b5ff1f657be42f41bd082955d3ea68d5e18ad36566a860d6378822563b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75421,
+        "alt": "EVpin 首屏：The industry standard for finding designing proposing design"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Freemium",
+      "sourceUrl": "https://www.evpin.com/pricing",
+      "evidence": "首屏并列 Start for Free 与 View Pricing 两个按钮，导航另有独立 Pricing 页，但首页未给出具体档位价格",
+      "confidence": 0.8
+    },
+    {
+      "field": "coverage",
+      "value": "Access utilization data for over 85% of stations in the US",
+      "sourceUrl": "https://www.evpin.com/",
+      "evidence": "首屏三条勾选说明的第一条",
+      "confidence": 1
+    },
+    {
+      "field": "sampleSiteRecord",
+      "value": "13332 Express Wy, Los Angeles, CA 90001 · Avg. utilization 34.0% · Sessions/day 22.4 · Revenue/day $285 · Avg. price $0.53/kWh",
+      "sourceUrl": "https://www.evpin.com/",
+      "evidence": "正文中部的样例站点卡，页面同时标注 SAMPLE DATA · STATIONS ARE FICTIONAL",
+      "confidence": 1
+    },
+    {
+      "field": "tracker",
+      "value": "独立的充电基础设施追踪页（/tracker/charging-infrastructure）",
+      "sourceUrl": "https://www.evpin.com/tracker/charging-infrastructure",
+      "evidence": "导航里的 Tracker 项与站内路径清单",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/evpin-com",
+    "designMdUrl": "https://vislexicon.com/site/evpin-com.md",
+    "checkedAt": "2026-09-15T11:10:07.697Z",
+    "license": "unknown"
+  }
+}

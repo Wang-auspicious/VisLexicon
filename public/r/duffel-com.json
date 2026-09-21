@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "36091e4e4d4e0f0f981cfa5c38b6031f7366d4340ca31cc41a8cc1bf6da77813",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "duffel-com",
+  "entityId": "entity-duffel-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://duffel.com",
+    "finalUrl": "https://duffel.com/",
+    "checkedAt": "2026-09-15T10:59:15.123Z"
+  },
+  "editorial": {
+    "name": "Duffel",
+    "descriptionZh": "把机票、住宿与附加服务打包成 API 卖给其他公司的旅游基础设施，备好 Node.js、Python、Ruby 客户端库和座位选择、支付组件。",
+    "takeawayZh": "搜索表单、手机行程卡散着摆，不套截图框",
+    "noteZh": "标题 Sell travel, without the complexity. 里 complexity 换成衬线斜体，副标说明从创业公司到大企业都能拿它卖机票与住宿，按钮是 Start now 与 Contact us。往下没有整块截图，而是把界面碎片散着摆：一张 Origin SFO / Destination LHR / 2 Adults / Business 的搜索表单、一台显示 Upcoming trips 和地图的手机、一张酒店房型照，以及一条 LHR - JFK 的订单行，左边还飘着 Global inventory 与 Easy-to-use APIs 两条浅绿胶囊。",
+    "recommendation": null,
+    "pricing": "unknown（站内有 /pricing，首屏未列价格）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首屏交付的是旅游销售 API 产品，动作是 Start now 注册，站内 /docs 按客户端库与 ancillaries 组件铺开。",
+        "evidenceUrl": "https://duffel.com/"
+      },
+      {
+        "statement": "归 product-company-sites 而非 build-deploy-dev-workflow：与 Column、Aria 这类行业 API 基础设施同类，受控词典里没有对应的 API 类目。",
+        "evidenceUrl": "https://duffel.com/docs"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:59:15.123Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://duffel.com",
+      "finalUrl": "https://duffel.com/",
+      "title": "Duffel - The best API to sell travel.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/duffel-com/identity.jpg",
+        "sha256": "4d1bfd9120250968ed19c72866e8c4bb83199ce1b3107db545420c2eea8193f3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 94210,
+        "alt": "Duffel 首屏：Sell travel, without the complexity."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "h1",
+      "value": "Sell travel, without the complexity.",
+      "sourceUrl": "https://duffel.com/",
+      "evidence": "首屏居中大标题，complexity 为衬线斜体",
+      "confidence": 1
+    },
+    {
+      "field": "clientLibraries",
+      "value": "Node.js（JavaScript）、Python、Ruby 客户端库，以及 seat selection 与 payments 预置组件",
+      "sourceUrl": "https://duffel.com/docs",
+      "evidence": "Build with zero limitations 一段正文",
+      "confidence": 0.9
+    },
+    {
+      "field": "productSuite",
+      "value": "Flights 与 Stays，标签含 SEARCH / BOOK / ANCILLARIES / ORDER MANAGEMENT",
+      "sourceUrl": "https://duffel.com/flights",
+      "evidence": "PRODUCT SUITE 区块的小标签",
+      "confidence": 0.9
+    },
+    {
+      "field": "heroCollage",
+      "value": "SFO→LHR 搜索表单、Upcoming trips 手机、LHR - JFK 订单行",
+      "sourceUrl": "https://duffel.com/",
+      "evidence": "首屏下方拼贴，截图可辨认",
+      "confidence": 0.9
+    },
+    {
+      "field": "useCases",
+      "value": "Duffel for Challenger Banks 与 Duffel for Spend Management",
+      "sourceUrl": "https://duffel.com/",
+      "evidence": "USE CASES 区块的两个入口",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/duffel-com",
+    "designMdUrl": "https://vislexicon.com/site/duffel-com.md",
+    "checkedAt": "2026-09-15T10:59:15.123Z",
+    "license": "proprietary"
+  }
+}

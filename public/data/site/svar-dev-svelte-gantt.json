@@ -1,0 +1,183 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "0edbeabd0035aaedd0fc51390892eb0fe57d3dfd86ec6e014e8839b9f9a6a51b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svar-dev-svelte-gantt",
+  "entityId": "entity-svar-dev-svelte-gantt",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "svar.dev",
+  "official": {
+    "inputUrl": "https://svar.dev/svelte/gantt",
+    "finalUrl": "https://svar.dev/svelte/gantt/",
+    "checkedAt": "2026-09-15T11:52:17.595Z"
+  },
+  "editorial": {
+    "name": "SVAR Svelte Gantt",
+    "descriptionZh": "用 Svelte 5 写的甘特图组件，支持拖放排期、任务依赖、进度调整和任务编辑表单，通过 RestDataProvider 接任意后端，官方列出 Free 与 PRO 两个版本。页面自带一个处理上万条任务的性能 demo。",
+    "takeawayZh": "接一个 Svelte 5 甘特图，拖拽改期与依赖线",
+    "noteZh": "左侧是 Svelte Gantt Chart / Lightweight task scheduling 的标题，上面标着 Latest update: v2.7，中间给 npm install @svar-ui/svelte-gantt 的复制行，下面写 Free & PRO Edition 并列出 React、Vue 两个兄弟版本入口。首屏右半边直接是一个项目甘特实样：工具栏第一个按钮是 + New task，表格列是 Task Name 与 Start date，行里排着 Project planning、Marketing analysis、Discussions、Resource planning、Getting approval、Team introduction 这些任务，右侧时间轴上摆着蓝色任务条、紫色菱形依赖标记，还有一条红色的 Today 竖线。正文说它用 Svelte 5 写成、可按时间刻度与任务条自定义样式、通过 RestDataProvider 自动处理 CRUD，并提到有个跑 10,000 条任务的 demo。",
+    "recommendation": null,
+    "pricing": "Free & PRO edition",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个项目时间线与任务流的可视化组件（Gantt chart），首屏右侧就是任务条加依赖线的时间轴实样，属于数据可视化实现而不是通用控件。",
+        "evidenceUrl": "https://svar.dev/svelte/gantt/"
+      },
+      {
+        "statement": "拿不准的备选是 general-ui-components；最终按「用户来这儿最直接能拿走什么」判为甘特图这类可视化组件，因为页面通篇围绕 timeline、task bars、dependencies 展开，而不是表单元件。",
+        "evidenceUrl": "https://svar.dev/svelte/gantt/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:17.595Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svar.dev/svelte/gantt",
+      "finalUrl": "https://svar.dev/svelte/gantt/",
+      "title": "Interactive Svelte Gantt Chart Component | SVAR Gantt",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/svar-dev-svelte-gantt/identity.jpg",
+        "sha256": "35c2a6738ffc76d9cece337202e5271f45e4357b532f48a1901491bb1df6eea4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128937,
+        "alt": "SVAR Svelte Gantt 首屏：Svelte Gantt Chart Lightweight task scheduling"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://svar.dev/svelte/gantt",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/svar-dev-svelte-gantt/identity.jpg",
+          "alt": "SVAR Svelte Gantt 首屏：Svelte Gantt Chart Lightweight task scheduling",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "version",
+      "value": "Latest update: v2.7",
+      "sourceUrl": "https://svar.dev/svelte/gantt/",
+      "evidence": "标题上方的一行小字与正文首句",
+      "confidence": 1
+    },
+    {
+      "field": "editions",
+      "value": "页面标 Free & PRO Edition 两版，另有 /svelte/gantt/pricing 定价页",
+      "sourceUrl": "https://svar.dev/svelte/gantt/",
+      "evidence": "安装行下方的 Free & PRO Edition 与站内 Pricing 路径",
+      "confidence": 1
+    },
+    {
+      "field": "licenseEvidence",
+      "value": "页面只写 open-source 并给 Free 与 PRO 两版，未写出具体许可证名称",
+      "sourceUrl": "https://svar.dev/svelte/gantt/",
+      "evidence": "正文首段与首屏按钮区，均未出现许可证名",
+      "confidence": 1
+    },
+    {
+      "field": "backend",
+      "value": "通过 RestDataProvider 与任意后端对接，自动处理任务与依赖的 CRUD 带防抖",
+      "sourceUrl": "https://svar.dev/svelte/gantt/",
+      "evidence": "Backend-friendly integration 段落",
+      "confidence": 1
+    },
+    {
+      "field": "largeDataset",
+      "value": "页面称有处理 10,000 条任务的性能 demo",
+      "sourceUrl": "https://svar.dev/svelte/gantt/",
+      "evidence": "Blazing fast with large datasets 段落",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Free & PRO edition。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/svar-dev-svelte-gantt.md",
+  "registryUrl": "/r/svar-dev-svelte-gantt.json"
+}

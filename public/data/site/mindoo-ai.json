@@ -1,0 +1,170 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f692aa8e6146846e223dc60e4698fe35223517a122b9db942cd9159c55dcdd62",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mindoo-ai",
+  "entityId": "entity-mindoo-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "mindoo.ai",
+  "official": {
+    "inputUrl": "https://mindoo.ai",
+    "finalUrl": "https://mindoo.ai/",
+    "checkedAt": "2026-09-15T11:13:01.592Z"
+  },
+  "editorial": {
+    "name": "Mindoo",
+    "descriptionZh": "Mindoo 把面向医院的 AI agent 做成一套可私有部署的系统：接线员、随访、病历撰写、医疗编码各是一个 agent，数据留在医院自己手里。官网用一段可播放的真实呼叫记录来讲这件事。",
+    "takeawayZh": "看医疗 AI 官网怎么用一段可播放的呼叫记录讲产品",
+    "noteZh": "首屏白底，横着三条心电图折线（蓝、绿、粉），压着两行衬线大字 The AI operating system for hospitals.，下面一段说明写 AI agents that talk with patients… deployed on-site by our engineers，两颗按钮 Book a demo 与 See the platform。第二屏标题 See an agent at work.，右侧是一张可播放的对话卡：标签写 Intake agent / Live · speaking Dutch，时间轴显示 00:00 与 9:41，下面实时生成 Clinical note 与 Pre-visit intake summary，患者信息写 Emma Peeters · 34 · Dr. Johnsson, neurology，字段分 REASON FOR ENCOUNTER、HISTORY、MEDICATION、FOR REVIEW，并标着 SNOMED CT · N CODES。再往下一条小字横幅写 BACKED BY A €5M RAISE · BUILT WITH HOSPITALS ACROSS BELGIUM & GERMANY，跟着 AMEOS WARENDORF 的医院标识；之后是 01 WHY AN OPERATING SYSTEM 与 02 THE OPERATING SYSTEM 两个编号段落，后者把系统拆成 Execution layer、Agentic layer、Interoperability layer、Data layer、Compute layer 五层。",
+    "recommendation": null,
+    "pricing": "unknown（站内无 /pricing，转化入口只有 Book a demo）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是 Mindoo 自家 agent 产品的说明与预约演示入口，用户从这一页能拿走的是它把抽象的 AI 能力做成一段可播放记录的讲法，归产品与公司官网。",
+        "evidenceUrl": "https://mindoo.ai/"
+      },
+      {
+        "statement": "内容涉及患者数据与临床编码，但页面没有可下载的模型、数据集或代码，所以没往数据或开发工具类靠。",
+        "evidenceUrl": "https://mindoo.ai/use-case"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:13:01.592Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mindoo.ai",
+      "finalUrl": "https://mindoo.ai/",
+      "title": "Mindoo, the AI operating system for hospitals.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/mindoo-ai/identity.jpg",
+        "sha256": "af02f69b123c32132e0d2270ada2f23e0531653c95e2b7fcbfc2d12b443b7aa5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 89578,
+        "alt": "Mindoo 首屏：The AI operating system for hospitals."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://mindoo.ai",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/mindoo-ai/identity.jpg",
+          "alt": "Mindoo 首屏：The AI operating system for hospitals.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "agents",
+      "value": "Follow-up agent（Checks in after visits）、Scribe agent（Drafts notes and letters）、Medical coding、Data capture，演示里另有 intake agent",
+      "sourceUrl": "https://mindoo.ai/",
+      "evidence": "导航 Agents 分组下的条目名与副标，正文演示段标题 The intake agent",
+      "confidence": 1
+    },
+    {
+      "field": "codingStandards",
+      "value": "临床数据按 SNOMED CT 与 ICD-10 编码，覆盖 25+ 专科与 50+ 语言",
+      "sourceUrl": "https://mindoo.ai/",
+      "evidence": "首页演示卡写 SNOMED CT · N CODES；正文写 SNOMED CT and ICD-10, across 25+ specialties and 50+ languages",
+      "confidence": 1
+    },
+    {
+      "field": "fiveLayers",
+      "value": "Execution layer / Agentic layer / Interoperability layer / Data layer / Compute layer",
+      "sourceUrl": "https://mindoo.ai/",
+      "evidence": "首页 02 段 One system. Five layers. Yours. 下五条编号列表",
+      "confidence": 1
+    },
+    {
+      "field": "deployment",
+      "value": "院内私有部署、由 Mindoo 工程师上门实施；页面写 BACKED BY A €5M RAISE，医院案例含 AMEOS WARENDORF",
+      "sourceUrl": "https://mindoo.ai/",
+      "evidence": "首屏副标 deployed on-site by our engineers，正文横幅与医院标识",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "unknown，站内没有 /pricing 路径，唯一转化入口是 Book a demo",
+      "sourceUrl": "https://mindoo.ai/",
+      "evidence": "live.internalPaths 只有 /、/use-case 系列、/about、/careers、/press-release、/contact、/privacy-policy、/terms-of-service",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/mindoo-ai.md",
+  "registryUrl": "/r/mindoo-ai.json"
+}

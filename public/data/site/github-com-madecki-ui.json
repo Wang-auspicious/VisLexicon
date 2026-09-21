@@ -1,0 +1,165 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d1a5a6244d00fecb21b130f5d536d7b4747497f2d266c8b0b8d930b87c3a1dd8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-madecki-ui",
+  "entityId": "entity-github-com-madecki-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/madecki/ui",
+    "finalUrl": "https://github.com/madecki/ui",
+    "checkedAt": "2026-09-15T11:45:36.236Z"
+  },
+  "editorial": {
+    "name": "madecki/ui",
+    "descriptionZh": "用 TypeScript 和 Tailwind CSS 4 写的 React 组件集合，目标是让多个 Micro Frontend 应用的视觉与行为保持一致，另附一份 Tailwind preset。",
+    "takeawayZh": "用它的 Tailwind preset 统一多个 MFE。",
+    "noteZh": "README 的目录很有主见：Why This Library?、Installation、Requirements、MFE Consistency Guide、Design System、Components、Icons、MFE Integration Checklist、Extending the Library。Components 一节里有 Container、Stack、Grid、ButtonTransparent、GradientButton、RadioButtons、SpinnerOverlay、BlockQuote、DetailsPanel，Icons 段是 Heart、Share、Search、Info、Warning 加 Twitter / LinkedIn / Instagram 三个社交图标。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是一批可直接安装的 React 组件与一个 Tailwind preset，README 把 Components 与 Icons 分节列出，用户拿走的是通用零件而不是完整设计系统（版本数只有 9），故归通用界面组件库。",
+        "evidenceUrl": "https://github.com/madecki/ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:45:36.236Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library",
+      "icon"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/madecki/ui",
+      "finalUrl": "https://github.com/madecki/ui",
+      "title": "GitHub - madecki/ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-madecki-ui/identity.jpg",
+        "sha256": "4cdab6d1626a8e1b9668e19ba431445a274aa72dd16e75be448ce80bc620d397",
+        "width": 1280,
+        "height": 900,
+        "bytes": 136650,
+        "alt": "madecki/ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/madecki/ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-madecki-ui/identity.jpg",
+          "alt": "madecki/ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/madecki/ui",
+      "evidence": "About 侧栏没有 License 条目，文件树里没有 LICENSE 文件，README 全文也没有许可证字样，GitHub license 接口返回无许可证文件。",
+      "confidence": 0.8
+    },
+    {
+      "field": "tailwindVersion",
+      "value": "Tailwind CSS 4+，用 @config 指令接入 v4",
+      "sourceUrl": "https://github.com/madecki/ui",
+      "evidence": "README 的 Requirements 一节列出 Tailwind CSS 4+ 并给出 @config 指令的 v4 配置方式。",
+      "confidence": 0.9
+    },
+    {
+      "field": "purpose",
+      "value": "统一多个 Micro Frontend 应用的视觉与代码一致性",
+      "sourceUrl": "https://github.com/madecki/ui",
+      "evidence": "README 的 Why This Library? 一节从 Visual consistency / Code consistency / Developer experience 三点说明动机。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-madecki-ui.md",
+  "registryUrl": "/r/github-com-madecki-ui.json"
+}

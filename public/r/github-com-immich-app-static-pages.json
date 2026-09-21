@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2f6f8e9fc9a4a48e2f0b653ccc2bdb1a40139cce1656d70044b3ab3cc0d4afb9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-immich-app-static-pages",
+  "entityId": "entity-github-com-immich-app-static-pages",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/immich-app/static-pages",
+    "finalUrl": "https://github.com/immich-app/static-pages",
+    "checkedAt": "2026-09-15T11:43:33.668Z"
+  },
+  "editorial": {
+    "name": "immich-app/static-pages",
+    "descriptionZh": "Immich 的站点与包仓库，一边产官网与下载页等静态站，一边维护 @immich/ui 这个组件包。给想直接取 Immich 前端组件、或研究它官网怎么搭的人用。",
+    "takeawayZh": "取 Immich 的 @immich/ui 包，另附官网源码",
+    "noteZh": "README 第一节是 Static sites，往下是 Structure、Setup、Mise commands，说明构建靠 mise 编排。仓库里 apps、common、packages、static、deployment 并列，deployment 下还管着 Cloudflare 的 Terraform；common 目录有一条 chore(survey): update dependencies，说明还挂着一个问卷应用。最近一次发布是 ui v0.89.0，提交历史里有 feat: use immich/ui logo component (#57) 和 chore: tailwind linting，About 一句话 Sites and packages for Immich，MIT 许可。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库同时产出组件包（packages 下的 @immich/ui，最新发布 ui v0.89.0）与站点，用户在组件侧拿走的是 Immich 自己用的 UI 包，归设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/immich-app/static-pages"
+      },
+      {
+        "statement": "分类有不确定性：About 一句话写 Sites and packages for Immich，站点的比重看起来不低于组件包，因此按用户最直接能拿走的 @immich/ui 归类。",
+        "evidenceUrl": "https://github.com/immich-app/static-pages"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:43:33.668Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "publish"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "tailwind",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/immich-app/static-pages",
+      "finalUrl": "https://github.com/immich-app/static-pages",
+      "title": "GitHub - immich-app/static-pages: Sites and packages for Immich · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-immich-app-static-pages/identity.jpg",
+        "sha256": "360abd8127a12d1d84b84b5a3fc3b291f8748612be58525d4bde8b6949d8c9c0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 122961,
+        "alt": "immich-app/static-pages 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/immich-app/static-pages",
+      "evidence": "About 面板标 MIT license，根目录有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "ui v0.89.0",
+      "sourceUrl": "https://github.com/immich-app/static-pages",
+      "evidence": "右侧 Releases 区块的 Latest 标签",
+      "confidence": 1
+    },
+    {
+      "field": "buildTooling",
+      "value": "用 mise 编排开发与构建任务",
+      "sourceUrl": "https://github.com/immich-app/static-pages",
+      "evidence": "README 的 Mise commands 一节与根目录 .mise 文件夹",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-immich-app-static-pages",
+    "designMdUrl": "https://vislexicon.com/site/github-com-immich-app-static-pages.md",
+    "checkedAt": "2026-09-15T11:43:33.668Z",
+    "license": "MIT"
+  }
+}

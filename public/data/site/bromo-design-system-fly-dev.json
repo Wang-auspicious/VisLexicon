@@ -1,0 +1,171 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "6963fd5d1d46811a142ef67df8f50f38a1bb0dcde8a86fc0289a0e5ec27a48e6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "bromo-design-system-fly-dev",
+  "entityId": "entity-bromo-design-system-fly-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "bromo-design-system.fly.dev",
+  "official": {
+    "inputUrl": "https://bromo-design-system.fly.dev",
+    "finalUrl": "https://bromo-design-system.fly.dev/",
+    "checkedAt": "2026-09-15T11:38:46.276Z"
+  },
+  "editorial": {
+    "name": "Baltimore Design System",
+    "descriptionZh": "这是巴尔的摩市设计系统的 Storybook 实例，左栏按 GETTING STARTED、FOUNDATIONS、COMPONENTS、PATTERNS、ARCHETYPES、SCREENS 六大段把组件与页面模板归好类。截图时右侧预览区没渲染出来，只有导航结构可看。",
+    "takeawayZh": "看 Storybook 左栏分组，抄政府设计系统的分节法",
+    "noteZh": "进去是一个 Storybook 壳：左栏顶上写 Baltimore Design System，搜索框提示 Find components ⌃K，下面按 GETTING STARTED / FOUNDATIONS / COMPONENTS / PATTERNS / ARCHETYPES / SCREENS 分组。FOUNDATIONS 里是 Accessibility、Layout Primitives、Breakpoints、Color、Elevation & shadow、Focus、Formatting、Layering、Motion、Radius、Spacing、Status taxonomy、Typography；SCREENS 下面是 AdminLanding、DiagnosticsSummary、LanguageAccessPanel、SignInScreen。截图时右侧主预览区只有一个转圈图标，组件本身没渲染出来，导航里另外能看到 Component Library 与 Data Viz Style Guide 两项。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是一个城市设计系统的完整分类结构（基础规范到组件、模式、原型与整屏），故归设计系统与完整组件套件。",
+        "evidenceUrl": "https://bromo-design-system.fly.dev/"
+      },
+      {
+        "statement": "证据有限：截图时预览区未渲染（只有转圈图标），能确认的是导航分类而非具体组件清单，因此 facets 只保留导航里看得见的部分。",
+        "evidenceUrl": "https://bromo-design-system.fly.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:38:46.276Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://bromo-design-system.fly.dev",
+      "finalUrl": "https://bromo-design-system.fly.dev/",
+      "title": "Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/bromo-design-system-fly-dev/identity.jpg",
+        "sha256": "f53383471491394939e1f98a44077ac734ac8b4100019a91e751a0e33f1c74e2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 42937,
+        "alt": "Baltimore Design System 首屏：Storybook"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://bromo-design-system.fly.dev",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/bromo-design-system-fly-dev/identity.jpg",
+          "alt": "Baltimore Design System 首屏：Storybook",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "navigationTaxonomy",
+      "value": "GETTING STARTED / FOUNDATIONS / COMPONENTS / PATTERNS / ARCHETYPES / SCREENS 六段",
+      "sourceUrl": "https://bromo-design-system.fly.dev/",
+      "evidence": "左侧栏的分组标题，Foundations 下列 13 项基础规范",
+      "confidence": 1
+    },
+    {
+      "field": "screens",
+      "value": "AdminLanding、DiagnosticsSummary、LanguageAccessPanel、SignInScreen",
+      "sourceUrl": "https://bromo-design-system.fly.dev/",
+      "evidence": "左栏 SCREENS 分组下逐条列出的页面名",
+      "confidence": 1
+    },
+    {
+      "field": "brand",
+      "value": "Baltimore Design System",
+      "sourceUrl": "https://bromo-design-system.fly.dev/",
+      "evidence": "左栏顶部品牌名与 Skip to content 链接，页面 title 只写 Storybook",
+      "confidence": 1
+    },
+    {
+      "field": "renderState",
+      "value": "截图时主预览区空白，只有一个转圈加载图标",
+      "sourceUrl": "https://bromo-design-system.fly.dev/",
+      "evidence": "左栏 Main preview area 对应的右侧区域未渲染出任何组件",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/bromo-design-system-fly-dev.md",
+  "registryUrl": "/r/bromo-design-system-fly-dev.json"
+}

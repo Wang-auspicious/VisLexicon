@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3c25315a293942ad41ab5455085b8a25355140185c65fbf61ac30d714ee880c1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "wind-ui-com",
+  "entityId": "entity-wind-ui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://wind-ui.com",
+    "finalUrl": "https://wind-ui.com/",
+    "checkedAt": "2026-09-15T12:14:20.272Z"
+  },
+  "editorial": {
+    "name": "WindUI",
+    "descriptionZh": "只用原生 Tailwind 类写的组件库，每个组件同时给 React 与 HTML 两个版本，配一套 Figma 设计库与若干付费模板。",
+    "takeawayZh": "直接抄 42 个组件里的某一条，React 与 HTML 两版都有",
+    "noteZh": "首屏标题下一行小图标组报数：7 Templates、42 Components、970 Variations、21 Colors；按钮是 Explore components 与 View templates。下面四张卡分别是 Accessible Components（注明按 WAI-ARIA 标准给属性）、Just Copy & Paste、Fully Responsive、Vanilla Tailwind（写明 The code is used in its original form without any customization or third party dependencies）；右下角压着一条绿色更新提示，报的是 Added Kiro Template 与 Added Mizu Light Template。",
+    "recommendation": null,
+    "pricing": "Freemium：组件免费，模板 $79.99 起，部分模板免费",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可按组件复制的代码：首屏自报 42 Components、970 Variations，并强调 Just copy and paste them on your Tailwind CSS project。",
+        "evidenceUrl": "https://wind-ui.com/"
+      },
+      {
+        "statement": "归 general-ui-components 而非设计系统套件，因为主体是组件清单与变体数，另有独立售卖的模板；Figma 设计库只是其中一个入口。",
+        "evidenceUrl": "https://wind-ui.com/components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:14:20.272Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "template",
+      "design-file"
+    ],
+    "actions": [
+      "copy",
+      "browse",
+      "preview",
+      "purchase"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "html",
+      "css"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://wind-ui.com",
+      "finalUrl": "https://wind-ui.com/",
+      "title": "Tailwind CSS Component Library | WindUI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/wind-ui-com/identity.jpg",
+        "sha256": "c363b62a4d60ab6a45b21abe307e1c25fa07046c191c73b75cd511bdd62f549c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116944,
+        "alt": "WindUI 首屏：Streamline your Tailwind CSS projects"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "inventory",
+      "value": "7 Templates、42 Components、970 Variations、21 Colors",
+      "sourceUrl": "https://wind-ui.com/",
+      "evidence": "首屏标题下方一排带图标的统计数字，四个数字并排",
+      "confidence": 1
+    },
+    {
+      "field": "componentCategories",
+      "value": "Avatars 171 VARIATIONS、Cards 13、Tabs 15、Buttons 129、Dropdowns 2、Footers 9、Navbars 5、Modals 5",
+      "sourceUrl": "https://wind-ui.com/components",
+      "evidence": "首页 Tailwind CSS Components 一节每张卡的变体数角标",
+      "confidence": 1
+    },
+    {
+      "field": "templatePricing",
+      "value": "Kiro 模板 $79.99，Mizu Light 免费",
+      "sourceUrl": "https://wind-ui.com/templates",
+      "evidence": "首页 Templates 一节两张卡片的 Get it for $79.99 与 Get it for Free",
+      "confidence": 1
+    },
+    {
+      "field": "figmaLibrary",
+      "value": "WindUI Design Library 用 Figma 的 auto-layout、variants、variables，支持浅色与深色模式",
+      "sourceUrl": "https://wind-ui.com/",
+      "evidence": "首页 WindUI Design Library 一段的说明与 Preview in Figma 按钮",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium：组件免费，模板 $79.99 起，部分模板免费。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/wind-ui-com",
+    "designMdUrl": "https://vislexicon.com/site/wind-ui-com.md",
+    "checkedAt": "2026-09-15T12:14:20.272Z",
+    "license": "unknown"
+  }
+}

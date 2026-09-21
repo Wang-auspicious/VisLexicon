@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "6e74b9c514da82a0ae86d070c325fb9b171d50933bd2007e8fd1965c35af11ef",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "courier-com",
+  "entityId": "entity-courier-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://courier.com",
+    "finalUrl": "https://www.courier.com/",
+    "checkedAt": "2026-09-15T11:53:37.569Z"
+  },
+  "editorial": {
+    "name": "Courier",
+    "descriptionZh": "面向多通道通知的消息平台官网：把 email、push、SMS、Slack 等渠道的投递、用户旅程编排、可视化编辑器和可嵌入的通知中心收在一个产品里，并把自己的 AI Agent 说成旅程里的一步。",
+    "takeawayZh": "照 Customer Journeys 把产品通知编排到各通道",
+    "noteZh": "首屏是深色底：左上是 Courier 标志，导航 Products / Solutions / Resources / Docs / Pricing，右侧 Request demo、Log in、Sign up 三个按钮。正中大标题 The customer messaging platform for humans & agents，副标题 Turn every product signal into the right message.，标题上方压着一枚彩色 App 图标。标题下面并排三块界面图：左边是 Inbox 面板（标着 2 new，All / Mentions / Files 三个小页签，Today 下面列着 Sarah M. assigned you a task 和 Jamie L. shared a folder）；中间是一封草稿，收件人 To: user-email、admin-email，主题 Continue your onboarding to kickstart your journey，正文是 Fleuron 品牌的图文邮件；右边一台手机，锁屏显示 Thursday, March 27 和一个大字时间。右下角还弹着 cookie 同意条。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Courier 自家产品的官网（首页在讲 Omnichannel Messaging、Notification Infrastructure、Customer Journeys、Design Foundation、In-App Notifications、AI Agent 六块能力，右上角是 Request demo / Log in / Sign up），用户来这儿是了解并注册这个 SaaS，而不是下载素材或抄代码，所以归产品与公司官网。",
+        "evidenceUrl": "https://www.courier.com/"
+      },
+      {
+        "statement": "站内确实有 docs 与 SDK 库页面（/docs/sdk-libraries/sdks-overview），但首屏交付的是产品能力与界面示意，没有可拷走的资源，因此没归到组件库或开发工具类。",
+        "evidenceUrl": "https://www.courier.com/docs/welcome"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:53:37.569Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "marketing"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "publish"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://courier.com",
+      "finalUrl": "https://www.courier.com/",
+      "title": "Courier | Customer messaging platform for humans & AI agents",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/courier-com/identity.jpg",
+        "sha256": "c508777a93e01bfd4beec3267aa8dafda2309691e1a3f5e6536212a7c4c85d22",
+        "width": 1280,
+        "height": 900,
+        "bytes": 92240,
+        "alt": "Courier 首屏：The customer messaging platform for humans & agents"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "productAreas",
+      "value": "Omnichannel Messaging、Notification Infrastructure、Customer Journeys、Design Foundation、In-App Notifications、AI Agent",
+      "sourceUrl": "https://www.courier.com/",
+      "evidence": "首页六段产品区块的小标题逐个列出，每段各配一个 Learn more / Try Design Studio 入口",
+      "confidence": 1
+    },
+    {
+      "field": "channels",
+      "value": "email、push、SMS、Slack 等多通道；站内有 /solutions/email-channel、/solutions/mobile-channel、/solutions/in-app-channel、/solutions/ms-teams-slack-channel 几条分页",
+      "sourceUrl": "https://www.courier.com/",
+      "evidence": "页面 description 与站内 solutions 路径列表",
+      "confidence": 0.9
+    },
+    {
+      "field": "aiAgent",
+      "value": "把 GPT-5.4、Claude Opus 等前沿模型当作工作流里的一个步骤跑，用于打分、生成内容、补全画像并返回结构化输出",
+      "sourceUrl": "https://www.courier.com/",
+      "evidence": "首页 AI Agent 一段正文 Run GPT-5.4, Claude Opus, and other frontier models as a step in any workflow.",
+      "confidence": 1
+    },
+    {
+      "field": "designStudio",
+      "value": "无代码可视化编辑器，宣称 Design content without code and ship updates in minutes，并带多通道同一画布预览",
+      "sourceUrl": "https://www.courier.com/",
+      "evidence": "首页 Design Foundation 一段 Anyone can ship great notifications 与 Try Design Studio 按钮",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "页面首屏没有价格数字，只提供 Pricing 入口与 Request demo",
+      "sourceUrl": "https://www.courier.com/pricing",
+      "evidence": "顶部导航 Pricing 一项，首屏无障碍地看不到任何价格",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/courier-com",
+    "designMdUrl": "https://vislexicon.com/site/courier-com.md",
+    "checkedAt": "2026-09-15T11:53:37.569Z",
+    "license": "unknown"
+  }
+}

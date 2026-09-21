@@ -1,0 +1,164 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c36142f389c391aa4e8fc6348c6b0f6bb19c4db5fd9d69cd6ee59bcfcc1ba8ba",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "reactdesktop-js-org",
+  "entityId": "entity-reactdesktop-js-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "reactdesktop.js.org",
+  "official": {
+    "inputUrl": "https://reactdesktop.js.org",
+    "finalUrl": "https://reactdesktop.js.org/",
+    "checkedAt": "2026-09-15T12:03:55.885Z"
+  },
+  "editorial": {
+    "name": "React Desktop",
+    "descriptionZh": "把 macOS Sierra 和 Windows 10 的原生观感搬进网页的 React 组件库。和 NW.js、Electron.js 配合最好，但任何 JavaScript 项目都能用。",
+    "takeawayZh": "给 Electron 项目换上一套 macOS 原生控件。",
+    "noteZh": "左侧栏按平台分成 macOS 和 Windows 10 两段，macOS 下列了 Box、Button、Checkbox、Dialog、Title Bar、Toolbar 等，Windows 10 下是 Nav Pane、Master/Details View、Title Bar 这些。正文标题 Documentation，右上角有 EDIT PAGE 和 SUBMIT BUG，开头说这是建在 Facebook's React 上的 JavaScript 库，和 NW.js、Electron.js 配得最好。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是按 macOS 与 Windows 10 两套外观分别整理的 React 桌面端组件，用户拿走的方式是装包后引用，属通用界面组件库",
+        "evidenceUrl": "https://reactdesktop.js.org/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:03:55.885Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "submit"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "desktop",
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://reactdesktop.js.org",
+      "finalUrl": "https://reactdesktop.js.org/",
+      "title": "React Desktop | React UI Components for OS X El Capitan and Windows 10",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/reactdesktop-js-org/identity.jpg",
+        "sha256": "22312f6dae030f2578ec3cda010c3b34afc2178a571c0301bad83ec3b5666b76",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78752,
+        "alt": "React Desktop 首屏：Documentation"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://reactdesktop.js.org",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/reactdesktop-js-org/identity.jpg",
+          "alt": "React Desktop 首屏：Documentation",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "components",
+      "value": "左侧栏 macOS 段 19 项、Windows 10 段 12 项",
+      "sourceUrl": "https://reactdesktop.js.org/docs",
+      "evidence": "按左侧栏逐项清点：macOS 从 Box 到 Window 共 19 项（与 /docs/mac-os/* 路径数一致），Windows 10 从 Button 到 Window 共 12 项",
+      "confidence": 0.9
+    },
+    {
+      "field": "runtimes",
+      "value": "NW.js 与 Electron.js",
+      "sourceUrl": "https://reactdesktop.js.org/",
+      "evidence": "正文第一段 react-desktop works perfectly with NW.js and Electron.js",
+      "confidence": 1
+    },
+    {
+      "field": "docsActions",
+      "value": "文档页提供 EDIT PAGE 与 SUBMIT BUG 两个入口",
+      "sourceUrl": "https://reactdesktop.js.org/docs",
+      "evidence": "Documentation 标题右侧的两个链接",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/reactdesktop-js-org.md",
+  "registryUrl": "/r/reactdesktop-js-org.json"
+}

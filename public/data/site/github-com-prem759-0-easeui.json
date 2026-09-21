@@ -1,0 +1,191 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d1e90ed108d06305298fdced382c347ee25bd52ebf2f885273b01e1d98aeb30a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-prem759-0-easeui",
+  "entityId": "entity-github-com-prem759-0-easeui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/Prem759-0/EaseUi",
+    "finalUrl": "https://github.com/Prem759-0/EaseUi",
+    "checkedAt": "2026-09-15T11:48:53.228Z"
+  },
+  "editorial": {
+    "name": "Prem759-0/EaseUi",
+    "descriptionZh": "一个照 shadcn UI 路子做的 React 组件集合，用 CLI 把组件源码直接加进项目而不是当 npm 依赖装。给想要一套能自己改到底的 Tailwind v4 组件的前端。",
+    "takeawayZh": "用 CLI 把 React 组件源码拷进自己项目里改",
+    "noteZh": "README 第一段就划清定位：EaseUI 不是装进 node_modules 的组件库，而是靠 CLI 把组件加进项目源码，所以组件归你改；技术栈写明 Tailwind CSS 与 Radix UI/Base UI，并直说 Just like Shadcn UI。Getting Started 特意提醒 Tailwind v4 下别再跑 npx tailwindcss init -p，路径别名要配好 @/components 与 @/libs。仓库里 @/components/ui 与 cli 两个目录是主体，最近的提交一次在修 CLI 组件安装别名，一次在同步 glowing button 的示例。右栏 Languages 是 TypeScript 97.4%，Releases 写 No releases published。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一批 React 组件源码，用户用 CLI 把它们拷进自己的项目再改，所以归到通用界面组件库；它没有成套主题与设计规范，够不上 design-system-suites。",
+        "evidenceUrl": "https://github.com/Prem759-0/EaseUi"
+      },
+      {
+        "statement": "README 写明这些组件 distributed via a CLI, meaning you own the code，并称 this is not a component library that you install via npm as a dependency。",
+        "evidenceUrl": "https://github.com/Prem759-0/EaseUi"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:53.228Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "radix-ui",
+      "base-ui",
+      "shadcn-ui",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Prem759-0/EaseUi",
+      "finalUrl": "https://github.com/Prem759-0/EaseUi",
+      "title": "GitHub - Prem759-0/EaseUi · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-prem759-0-easeui/identity.jpg",
+        "sha256": "ecef5103d09cb6c61fbf6f0fedaefad2a291577ea4b58a517c4ef568ba391985",
+        "width": 1280,
+        "height": 900,
+        "bytes": 85478,
+        "alt": "Prem759-0/EaseUi 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/Prem759-0/EaseUi",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-prem759-0-easeui/identity.jpg",
+          "alt": "Prem759-0/EaseUi 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "distribution",
+      "value": "通过 CLI 把组件源码加进项目，不作为 npm 依赖安装（README 自比 Just like Shadcn UI）",
+      "sourceUrl": "https://github.com/Prem759-0/EaseUi",
+      "evidence": "README 开头段",
+      "confidence": 1
+    },
+    {
+      "field": "stack",
+      "value": "React + TypeScript + Tailwind CSS，UI 基础用 Radix UI/Base UI",
+      "sourceUrl": "https://github.com/Prem759-0/EaseUi",
+      "evidence": "README 开头段，以及右栏 Languages 条 TypeScript 97.4% / JavaScript 1.8%",
+      "confidence": 1
+    },
+    {
+      "field": "setup",
+      "value": "先建 Vite 的 react-ts 项目，装 tailwindcss 与 @tailwindcss/vite 并写 @import tailwindcss，再配 @/components、@/libs 路径别名",
+      "sourceUrl": "https://github.com/Prem759-0/EaseUi",
+      "evidence": "README 的 Getting Started 三步",
+      "confidence": 1
+    },
+    {
+      "field": "cli",
+      "value": "cli 目录管组件安装与别名，components.json 是配置文件",
+      "sourceUrl": "https://github.com/Prem759-0/EaseUi",
+      "evidence": "仓库文件列表与提交说明 Fix CLI component installation aliases",
+      "confidence": 1
+    },
+    {
+      "field": "repoScale",
+      "value": "49 次提交、1 star、0 fork、0 watching，2 位贡献者 Prem759-0 与 Devendradhote001，未发布过 release",
+      "sourceUrl": "https://github.com/Prem759-0/EaseUi",
+      "evidence": "仓库页顶部提交数与右栏 About / Contributors / Releases 区",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/Prem759-0/EaseUi",
+      "evidence": "公开仓库加 CLI 安装，无付费入口；仓库 About 栏没有识别到 license",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-prem759-0-easeui.md",
+  "registryUrl": "/r/github-com-prem759-0-easeui.json"
+}

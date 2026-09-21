@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a9be3bd0f09fd5979e48a7e28bb00e2be3ddbdd078ccf31907642e87e680dcb5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "comark-dev",
+  "entityId": "entity-comark-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://comark.dev",
+    "finalUrl": "https://comark.dev/",
+    "checkedAt": "2026-09-15T11:57:02.960Z"
+  },
+  "editorial": {
+    "name": "Comark",
+    "descriptionZh": "一个 JavaScript 库，把 Markdown 解析成 MarkdownDocument 之后，交给 HTML、ANSI、Angular、React、Vue、Svelte 六种渲染器输出。主要解决模型流式吐字时半截粗体、代码块没闭合、每来一个 token 布局就跳的问题。",
+    "takeawayZh": "一份 Markdown 解析结果，六个渲染目标复用",
+    "noteZh": "首屏左边是大标题 Parse and render Markdown anywhere.，右边是一块 source.md / preview 双栏演示，右上角有 Open in playground。导航只有 Documentation、Plugins、Examples、Playground、GitHub 五项，正文按 // RENDERERS //、// STREAMING //、// PLUGINS // 三段展开，Streaming component 和 Auto-close 是它主打流式输出的两个点，Features 下面还挂了一条 Built on markdown-exit 的说明。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可安装的渲染库：Vue 那边直接是 Drop the Markdown component in a template，其余框架各自给 renderer，用户把它嵌进自己的界面，属通用界面组件；候选池标的「Svelte UI 库」只覆盖六个渲染器里的一个。",
+        "evidenceUrl": "https://comark.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:57:02.960Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "angular",
+      "react",
+      "svelte",
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://comark.dev",
+      "finalUrl": "https://comark.dev/",
+      "title": "Parse and render Markdown anywhere with Comark",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/comark-dev/identity.jpg",
+        "sha256": "5a57e2f6b918f32ee47c8edb41f8574f637c1ebbe4f7ff1329fc24e7dd4b2bec",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78490,
+        "alt": "Comark 首屏：Parse and render Markdown anywhere."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "deliverable",
+      "value": "npm 包 comark",
+      "sourceUrl": "https://comark.dev/",
+      "evidence": "首屏代码块 import { parseMarkdown } from 'comark'，按钮是 Get started 与 View on GitHub",
+      "confidence": 1
+    },
+    {
+      "field": "renderTargets",
+      "value": "HTML、ANSI、Angular、React、Vue、Svelte 六个",
+      "sourceUrl": "https://comark.dev/",
+      "evidence": "Parse once, render anywhere 一节逐个列出六个渲染器",
+      "confidence": 1
+    },
+    {
+      "field": "builtOn",
+      "value": "markdown-exit（markdown-it 的 TypeScript 重写）",
+      "sourceUrl": "https://comark.dev/",
+      "evidence": "Features 下方的 callout：Built on markdown-exit, a TypeScript rewrite of markdown-it.",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://comark.dev/",
+      "evidence": "全站没有定价区块，首页只给 Get started 与 npm 安装路径",
+      "confidence": 0.7
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/comark-dev",
+    "designMdUrl": "https://vislexicon.com/site/comark-dev.md",
+    "checkedAt": "2026-09-15T11:57:02.960Z",
+    "license": "unknown"
+  }
+}

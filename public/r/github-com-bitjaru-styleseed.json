@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ca893973106830fa9d9c1e13b42e11bd8d1368cd1aeb22a409661a2d9083f239",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-bitjaru-styleseed",
+  "entityId": "entity-github-com-bitjaru-styleseed",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/bitjaru/styleseed",
+    "finalUrl": "https://github.com/bitjaru/styleseed",
+    "checkedAt": "2026-09-15T12:08:32.498Z"
+  },
+  "editorial": {
+    "name": "bitjaru/styleseed",
+    "descriptionZh": "面向 Claude Code、Codex 与 Cursor 的开源设计方法引擎，用 23 个 agent skill 约束 AI 生成界面的设计判断。给嫌 AI 写出来的 UI 太模板化的设计工程师。",
+    "takeawayZh": "装进 Claude Code，让生成的 UI 走固定设计判断。",
+    "noteZh": "bitjaru/styleseed 仓库页，About 一句话点明定位：Open-source design-method engine for Claude Code, Codex & Cursor，23 个 agent skills，许可 MIT。README 的标题层级很细——Easy Start (30 seconds)、What the current rules check、What happens after Easy Start、Who is this for?、Where StyleSeed fits among design-AI skills、How It Works: Engine + Recipes + Skins、Named Motion System、Available Skins，还专门有一节 Troubleshooting 回答「我用了 StyleSeed 但 UI 还是难看」。文件树里 .agents、.claude-plugin、.codex-plugin 三个目录并列，标签里 agent-skills、claude-skills、design-judgment、tailwindcss 混在一起。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "design-to-code-handoff",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它不产出界面本身，而是把设计判断以 skill/recipe/skin 的形式接进代码生成流程，用户拿走的是让生成结果符合设计规范的能力，归 design-to-code-handoff；AI、agent 属于 facet 不作为类别。",
+        "evidenceUrl": "https://github.com/bitjaru/styleseed"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:08:32.498Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [
+      "prompt",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "apply"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript",
+      "radix-ui",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/bitjaru/styleseed",
+      "finalUrl": "https://github.com/bitjaru/styleseed",
+      "title": "GitHub - bitjaru/styleseed: Open-source design-method engine for Claude Code, Codex & Cursor. 23 agent skills for fixed design judgment, multiple grammars, semantic palettes, reference compilation, and evidence-verified UI. MIT. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-bitjaru-styleseed/identity.jpg",
+        "sha256": "ea89cc555fcf6735eaa5fb65353caad8f8b08d5b82cb11fe1b2eacf54ae1578b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 167846,
+        "alt": "bitjaru/styleseed 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/bitjaru/styleseed",
+      "evidence": "About 栏最后一句 MIT. 以及 MIT license 项",
+      "confidence": 1
+    },
+    {
+      "field": "positioning",
+      "value": "Open-source design-method engine for Claude Code, Codex & Cursor；23 agent skills，含多套 grammar、语义色板、reference compilation",
+      "sourceUrl": "https://github.com/bitjaru/styleseed",
+      "evidence": "页面 title 与 About 栏描述",
+      "confidence": 1
+    },
+    {
+      "field": "structure",
+      "value": "引擎分 Engine + Recipes + Skins 三层，另有 Named Motion System 与 Available Skins 两节",
+      "sourceUrl": "https://github.com/bitjaru/styleseed",
+      "evidence": "README 各级标题",
+      "confidence": 0.8
+    },
+    {
+      "field": "repoStats",
+      "value": "955 stars / 87 forks / 236 commits / 21 tags",
+      "sourceUrl": "https://github.com/bitjaru/styleseed",
+      "evidence": "页面顶部仓库栏",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-bitjaru-styleseed",
+    "designMdUrl": "https://vislexicon.com/site/github-com-bitjaru-styleseed.md",
+    "checkedAt": "2026-09-15T12:08:32.498Z",
+    "license": "MIT"
+  }
+}

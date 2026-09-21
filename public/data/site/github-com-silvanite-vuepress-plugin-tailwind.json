@@ -1,0 +1,157 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "fa896b9e6f9c624f0895357e8763da072b8cb98efd4c5098899f755cdd58593a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-silvanite-vuepress-plugin-tailwind",
+  "entityId": "entity-github-com-silvanite-vuepress-plugin-tailwind",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/silvanite/vuepress-plugin-tailwind",
+    "finalUrl": "https://github.com/silvanite/vuepress-plugin-tailwind",
+    "checkedAt": "2026-09-15T11:50:59.584Z"
+  },
+  "editorial": {
+    "name": "Silvanite/vuepress-plugin-tailwind",
+    "descriptionZh": "给 VuePress 装 Tailwind CSS 的插件：插件把 Tailwind ^1.1.2 引进来，配置文件路径和 PurgeCSS 开关都通过 plugin options 传。",
+    "takeawayZh": "给 VuePress 装 Tailwind 的构建插件",
+    "noteZh": "README 标题是 VuePress Plugin to add Tailwind CSS，装法 npm i @silvanite/vuepress-plugin-tailwind，然后在 config.js 的 plugins 里写 @silvanite/tailwind。Configuration options 里讲两件事：用 config: './tailwind.js' 换配置文件，以及 VuePress build（production）时默认套 PurgeCSS、可以设 purgecss.enabled: false 关掉。文件树只有一个 src 目录，最新版本停在 1.3.0，语言统计 JavaScript 100%。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这个仓库不产出界面，而是把 Tailwind 接进 VuePress 构建流程的插件（还管 production 构建时的 PurgeCSS），用户拿走的是构建配置能力，所以归建站、交付与开发工具下的构建、部署与开发工作流。",
+        "evidenceUrl": "https://github.com/silvanite/vuepress-plugin-tailwind"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:50:59.584Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "tailwind",
+      "css",
+      "javascript",
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/silvanite/vuepress-plugin-tailwind",
+      "finalUrl": "https://github.com/silvanite/vuepress-plugin-tailwind",
+      "title": "GitHub - Silvanite/vuepress-plugin-tailwind: Tailwind CSS plugin for VuePress · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-silvanite-vuepress-plugin-tailwind/identity.jpg",
+        "sha256": "89c3403ef2f952cb28296020647ea9a4d6a92686801f2c885e286afac0f043db",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117260,
+        "alt": "Silvanite/vuepress-plugin-tailwind 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/silvanite/vuepress-plugin-tailwind",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-silvanite-vuepress-plugin-tailwind/identity.jpg",
+          "alt": "Silvanite/vuepress-plugin-tailwind 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "install",
+      "value": "npm i @silvanite/vuepress-plugin-tailwind",
+      "sourceUrl": "https://github.com/silvanite/vuepress-plugin-tailwind",
+      "evidence": "README 的 Installation 段",
+      "confidence": 1
+    },
+    {
+      "field": "purgecss",
+      "value": "VuePress build（production）时默认启用 PurgeCSS，可设 enabled: false 关闭",
+      "sourceUrl": "https://github.com/silvanite/vuepress-plugin-tailwind",
+      "evidence": "README 的 Configuration options 段",
+      "confidence": 1
+    },
+    {
+      "field": "latestVersion",
+      "value": "1.3.0",
+      "sourceUrl": "https://github.com/silvanite/vuepress-plugin-tailwind",
+      "evidence": "首屏最新提交信息与 package.json 那一行",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-silvanite-vuepress-plugin-tailwind.md",
+  "registryUrl": "/r/github-com-silvanite-vuepress-plugin-tailwind.json"
+}

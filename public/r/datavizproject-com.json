@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "39d82caa7e285d788090b2639f96858bf4995a0a3040c5dacdb9a61edf12f88b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "datavizproject-com",
+  "entityId": "entity-datavizproject-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://datavizproject.com",
+    "finalUrl": "https://datavizproject.com/",
+    "checkedAt": "2026-09-15T10:38:15.966Z"
+  },
+  "editorial": {
+    "name": "Data Viz Project",
+    "descriptionZh": "Ferdio 做的图表类型图鉴，把一百多种数据可视化按 FAMILY、INPUT、FUNCTION、SHAPE 四个维度归类，每种配一张示意图。",
+    "takeawayZh": "先按输入和功能筛，再照着示意图选图表类型",
+    "noteZh": "顶栏是 DVDP 方块 logo 加 ALL / FAMILY / INPUT / FUNCTION / SHAPE 四个下拉筛选和搜索，右侧写 by Ferdio。网格里每格一个图表名配一张红蓝配色的示意图，从上往下是 Alluvial Diagram、Sankey Diagram、Line Graph、Donut Chart、Bar Chart (Vertical)、Exploded View Drawing、Heat Map、Treemap、Flow Map，正文一路列到 Waffle Chart、Dumbbell Plot、Sparkline。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "reference-standards",
+    "subcategory": "ui-patterns-anatomy",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "每个条目是一种图表类型的示意图加名称（Alluvial Diagram、Sunburst Diagram、Hexagonal Binning 等），可搜索可筛选，是查阅用的参考表而非可复制的实现代码。",
+        "evidenceUrl": "https://datavizproject.com/"
+      },
+      {
+        "statement": "归类有摇摆：它同时像图表实现目录与模式参考，最后按「用户直接拿走的是查类型这件事」归到 reference-standards 下的模式参考。",
+        "evidenceUrl": "https://datavizproject.com/about"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:38:15.966Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "image"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "learn"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "discovery"
+    ],
+    "audiences": [
+      "designer",
+      "developer",
+      "researcher"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://datavizproject.com",
+      "finalUrl": "https://datavizproject.com/",
+      "title": "Data Viz Project | Collection of data visualizations to get inspired and find the right type",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/datavizproject-com/identity.jpg",
+        "sha256": "d49dc36b318a1d5c6e7f8947fcb61eb0ecf84439072dee1256fce878c3e0b191",
+        "width": 1280,
+        "height": 900,
+        "bytes": 101222,
+        "alt": "Data Viz Project 首屏：Alluvial Diagram"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "filters",
+      "value": "ALL / FAMILY / INPUT / FUNCTION / SHAPE 四个维度加搜索",
+      "sourceUrl": "https://datavizproject.com/",
+      "evidence": "顶栏与正文首行",
+      "confidence": 1
+    },
+    {
+      "field": "chartCount",
+      "value": "正文列出 100 VISUALIZATIONS，从 Alluvial Diagram 一直排到 Pictorial Bar Chart",
+      "sourceUrl": "https://datavizproject.com/",
+      "evidence": "live.bodyText 类型名列表与导航里的 100 VISUALIZATIONS",
+      "confidence": 1
+    },
+    {
+      "field": "maker",
+      "value": "由 Ferdio 制作，顶栏写 by Ferdio，另有 INSPIRATION 与 ABOUT 两页",
+      "sourceUrl": "https://datavizproject.com/about",
+      "evidence": "顶栏 by Ferdio 与 internalPaths 里的 /inspiration、/about",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/datavizproject-com",
+    "designMdUrl": "https://vislexicon.com/site/datavizproject-com.md",
+    "checkedAt": "2026-09-15T10:38:15.966Z",
+    "license": "unknown"
+  }
+}

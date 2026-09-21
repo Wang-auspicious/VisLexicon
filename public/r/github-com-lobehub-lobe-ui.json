@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7348c839b801508dcb6c2615a19db640f19dce20122f2e619a0c2fb6ed736fb2",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-lobehub-lobe-ui",
+  "entityId": "entity-github-com-lobehub-lobe-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/lobehub/lobe-ui",
+    "finalUrl": "https://github.com/lobehub/lobe-ui",
+    "checkedAt": "2026-09-15T11:45:17.744Z"
+  },
+  "editorial": {
+    "name": "lobehub/lobe-ui",
+    "descriptionZh": "LobeHub 开源的 React 组件库，定位是给 AIGC 网页应用搭界面，About 里写着 open-source UI component library for building AIGC web apps。",
+    "takeawayZh": "装 @lobehub/ui，拿 AIGC 聊天界面组件。",
+    "noteZh": "About 侧栏的 topic 挂着 aigc、antd、chatbot、design-system、dumi、react、typescript、ui-components；README 只有 📦 Installation、🤯 Usage、⌨️ Local Development、🤝 Contributing 四节，正文很薄，主要靠 ui.lobehub.com 和 Storybook 说话；首屏显示 2.2k star、977 个 Release，src 目录最近的 commit 是 ban Tree, drop restrictedImports test。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自称 open-source UI component library for building AIGC web apps，同时挂着 design-system topic、977 个版本、独立文档站与 Storybook，组件之外还有主题与 token 层，按完整组件套件归类；虽然 topic 里有 antd，但 antd 不在受控词典的 technologies 里，故未写入。",
+        "evidenceUrl": "https://github.com/lobehub/lobe-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:45:17.744Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/lobehub/lobe-ui",
+      "finalUrl": "https://github.com/lobehub/lobe-ui",
+      "title": "GitHub - lobehub/lobe-ui: 🍭 Lobe UI - an open-source UI component library for building AIGC web apps · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-lobehub-lobe-ui/identity.jpg",
+        "sha256": "8e461288ead4ab17e4b0dd4dfefd63d3afad8454c6e4a126947895ee99fdce93",
+        "width": 1280,
+        "height": 900,
+        "bytes": 143017,
+        "alt": "lobehub/lobe-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/lobehub/lobe-ui",
+      "evidence": "About 侧栏与文件树的 LICENSE 均标 MIT license。",
+      "confidence": 1
+    },
+    {
+      "field": "officialSite",
+      "value": "ui.lobehub.com",
+      "sourceUrl": "https://github.com/lobehub/lobe-ui",
+      "evidence": "About 侧栏在描述下方给出的官网链接。",
+      "confidence": 1
+    },
+    {
+      "field": "releaseCount",
+      "value": "977 个 Release，最新 v5.47.1（昨天）",
+      "sourceUrl": "https://github.com/lobehub/lobe-ui",
+      "evidence": "首屏右侧 Releases 区块 Releases 977 与 v5.47.1 Latest。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-lobehub-lobe-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-lobehub-lobe-ui.md",
+    "checkedAt": "2026-09-15T11:45:17.744Z",
+    "license": "MIT"
+  }
+}

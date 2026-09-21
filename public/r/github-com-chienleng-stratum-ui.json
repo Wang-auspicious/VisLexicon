@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a04058fce0a50b76fcce2f14c9439a71d8d352519bfc626b5a70d20e9d926a34",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-chienleng-stratum-ui",
+  "entityId": "entity-github-com-chienleng-stratum-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/chienleng/stratum-ui",
+    "finalUrl": "https://github.com/chienleng/stratum-ui",
+    "checkedAt": "2026-09-15T11:38:50.773Z"
+  },
+  "editorial": {
+    "name": "chienleng/stratum-ui",
+    "descriptionZh": "stratum-ui 是 Svelte 5 的 UI 与图表组件库：图表建在 LayerCake 加 runes 状态 store 上，交互组件建在 bits-ui 的 headless 原语上，整套主题只用 CSS 自定义属性，不依赖 Tailwind 也没有运行时样式库。MIT 开源，组件与图表分成 /ui 与 /charts 两个入口。",
+    "takeawayZh": "Svelte 5 里换一个 theme css 变量文件就改主题",
+    "noteZh": "About 栏写 Svelte 5 UI and LayerCake charting components with a CSS custom-property design system，许可 MIT。README 明说图表建在 LayerCake 与 runes 状态 store 上、交互组件建在 bits-ui headless 原语上，主题全走 CSS 自定义属性，原话是 no Tailwind, no runtime styling dependencies；主题文件分 theme-1.css、neutral.css、theme-2.css。包里拆成 @chienleng/stratum-ui/ui 与 /charts 两个入口，小节有 Charts in five lines、Accessible selects、Maps、Browser support。仓库 92 Commits、20 个 tag、Svelte 52.7% / TypeScript 43.5% / CSS 3.5%，最近一次提交是 Add bar hover band and top-anchored floating tooltip。",
+    "recommendation": null,
+    "pricing": "Free（MIT 开源）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库标题把 UI 放在图表前面，入口也是 /ui 与 /charts 两个，用户拿走的是 Svelte 5 的界面组件与图表代码，主类按通用界面组件库收，图表放 media 与 deliverables。",
+        "evidenceUrl": "https://github.com/chienleng/stratum-ui"
+      },
+      {
+        "statement": "它同时是图表实现（LayerCake），如果只按可视化看会落到 data-visualization-code；两条路都能走，这里选了覆盖范围更宽、且仓库自称首位的 UI 组件。",
+        "evidenceUrl": "https://github.com/chienleng/stratum-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:38:50.773Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/chienleng/stratum-ui",
+      "finalUrl": "https://github.com/chienleng/stratum-ui",
+      "title": "GitHub - chienleng/stratum-ui: Svelte 5 UI and LayerCake charting components with a CSS custom-property design system · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-chienleng-stratum-ui/identity.jpg",
+        "sha256": "53bdf3d4cc7e30a23e684baee29131b46dd60b0ed6173e912a3138582f2c8fd4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 132205,
+        "alt": "chienleng/stratum-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "techStack",
+      "value": "Charts built on LayerCake with runes-based state stores；interactive components built on bits-ui headless primitives；themed with CSS custom properties",
+      "sourceUrl": "https://github.com/chienleng/stratum-ui",
+      "evidence": "README 首段原文，并明写 no Tailwind, no runtime styling dependencies",
+      "confidence": 1
+    },
+    {
+      "field": "entryPoints",
+      "value": "@chienleng/stratum-ui/ui 与 @chienleng/stratum-ui/charts，主题文件 themes/theme-1.css、themes/neutral.css、themes/theme-2.css",
+      "sourceUrl": "https://github.com/chienleng/stratum-ui",
+      "evidence": "README 的 Install 与 Entry points 两节的 import 示例",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT license",
+      "sourceUrl": "https://github.com/chienleng/stratum-ui",
+      "evidence": "About 栏标注 MIT license，README 的 Licence 一节与 LICENSE 提交信息 Add README, MIT licence and CI workflow",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "92 Commits、1 Branch、20 Tags、0 stars，Svelte 52.7% / TypeScript 43.5% / CSS 3.5%",
+      "sourceUrl": "https://github.com/chienleng/stratum-ui",
+      "evidence": "Latest commit 一行与右侧 Languages 条形图",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-chienleng-stratum-ui",
+    "designMdUrl": "https://vislexicon.com/site/github-com-chienleng-stratum-ui.md",
+    "checkedAt": "2026-09-15T11:38:50.773Z",
+    "license": "MIT"
+  }
+}

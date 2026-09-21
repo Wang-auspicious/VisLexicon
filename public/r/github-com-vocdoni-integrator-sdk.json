@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "47c43e53bb846536610426e1ae582e07efb4bad5480eaec29303bf7624a49532",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-vocdoni-integrator-sdk",
+  "entityId": "entity-github-com-vocdoni-integrator-sdk",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/vocdoni/integrator-sdk",
+    "finalUrl": "https://github.com/vocdoni/vocdoni-integrator-sdk",
+    "checkedAt": "2026-09-15T11:54:46.732Z"
+  },
+  "editorial": {
+    "name": "vocdoni/vocdoni-integrator-sdk",
+    "descriptionZh": "在 Vocdoni 的隐私优先、端到端可验证投票基础设施上搭投票应用的模块化 SDK，按包拆分且可 tree-shake。",
+    "takeawayZh": "用可 tree-shake 的包加内置 skill，在 Vocdoni 上拼出匿名投票应用。",
+    "noteZh": "README 开头写 Vocdoni is the first universally verifiable, censorship-resistant, anonymous, and self-sovereign governance protocol，并说明主要目标是做无可信第三方的投票系统。仓库里 packages、integration、mocks、scripts 与 skills/vocdoni-integrator-sdk 并列，提交记录能看到 vote an anonymous census through the blind CSP、add @vocdoni/ballot package for ballot semantics、run the integration suite against a disposable stack。About 标签是 anonymous-voting、api、digital-voting、e-voting、e-voting-system、remote-voting、sdk、voting，外链 vocdoni.io/developers，最新发布 @vocdoni/api-voting-zk@1.0.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一套给开发者接入的 SDK（api-client、ballot 等包加一份 agent skill），不是视觉组件也不是模板素材；词典里没有专门的小类，按开发工具归到构建与开发工作流下有不确定性。",
+        "evidenceUrl": "https://github.com/vocdoni/vocdoni-integrator-sdk"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:54:46.732Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "api",
+      "web"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/vocdoni/integrator-sdk",
+      "finalUrl": "https://github.com/vocdoni/vocdoni-integrator-sdk",
+      "title": "GitHub - vocdoni/vocdoni-integrator-sdk: A modular, tree-shakeable toolkit for building voting applications on top of the e2e verifiable, privacy-first and modulable Vocdoni voting infrastructure. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-vocdoni-integrator-sdk/identity.jpg",
+        "sha256": "7e61c212dbc590ea2d35f77da6b660a4b21d97d4eafa3b8f1c765f1284f824da",
+        "width": 1280,
+        "height": 900,
+        "bytes": 154164,
+        "alt": "vocdoni/vocdoni-integrator-sdk 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "bundledSkill",
+      "value": "skills/vocdoni-integrator-sdk",
+      "sourceUrl": "https://github.com/vocdoni/vocdoni-integrator-sdk",
+      "evidence": "仓库根目录里该文件夹与提交信息 docs(skills): rename the bundled skill to vocdoni-integrator-sdk",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "@vocdoni/api-voting-zk@1.0.0",
+      "sourceUrl": "https://github.com/vocdoni/vocdoni-integrator-sdk",
+      "evidence": "右侧 Releases 区块的 Latest 条目",
+      "confidence": 1
+    },
+    {
+      "field": "packages",
+      "value": "@vocdoni/ballot 负责 ballot 语义",
+      "sourceUrl": "https://github.com/vocdoni/vocdoni-integrator-sdk",
+      "evidence": "提交记录 feat(ballot): add @vocdoni/ballot package for ballot semantics (#2)",
+      "confidence": 0.9
+    },
+    {
+      "field": "developerSite",
+      "value": "vocdoni.io/developers",
+      "sourceUrl": "https://github.com/vocdoni/vocdoni-integrator-sdk",
+      "evidence": "About 面板简介下方的外链",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-vocdoni-integrator-sdk",
+    "designMdUrl": "https://vislexicon.com/site/github-com-vocdoni-integrator-sdk.md",
+    "checkedAt": "2026-09-15T11:54:46.732Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "837cd5c05e07467720899b55026e88fee9c593edfb2ccdf396893ff174615ba0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-react-native-masked-view-masked-view",
+  "entityId": "entity-github-com-react-native-masked-view-masked-view",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/react-native-masked-view/masked-view",
+    "finalUrl": "https://github.com/callstack/masked-view",
+    "checkedAt": "2026-09-15T11:49:28.846Z"
+  },
+  "editorial": {
+    "name": "callstack/masked-view",
+    "descriptionZh": "React Native 的蒙版组件：把一段 JSX 当遮罩去裁切另一段内容，做渐变文字或圆形头像不用自己写原生代码。仓库已从 react-native-masked-view 迁到 callstack 名下，iOS、Android、Web 三端都支持。",
+    "takeawayZh": "给 RN 装上用蒙版裁切任意视图的 MaskedView",
+    "noteZh": "仓库地址会跳到 callstack/masked-view，About 一句 React Native Masked View Library，标签是 hacktoberfest、masked-view、react-native。README 段落为 Platforms Supported / Getting Started / Usage，三端写作 iOS、Android、Web，安装给 yarn add @react-native-masked-view/masked-view，并说明 RN >= 0.60 走 Autolinking、更早版本要 react-native link 再 npx pod-install。文件列表里 android 与 example 两条提交都在 Fix black background on android，js 目录那条是 Initial Web support。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 React Native 原生组件包（yarn add @react-native-masked-view/masked-view 后 import MaskedView），About 标 MIT license，故归通用界面组件库。",
+        "evidenceUrl": "https://github.com/callstack/masked-view"
+      },
+      {
+        "statement": "README 明确 Platforms Supported 为 iOS、Android、Web，并给出 RN 0.60 前后的两种链接方式，说明这是给移动端工程用的原生模块而不是设计资源。",
+        "evidenceUrl": "https://github.com/callstack/masked-view"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:49:28.846Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "technologies": [
+      "react-native",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/react-native-masked-view/masked-view",
+      "finalUrl": "https://github.com/callstack/masked-view",
+      "title": "GitHub - callstack/masked-view: React Native Masked View Library · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-react-native-masked-view-masked-view/identity.jpg",
+        "sha256": "9dd13112479bccc37dadfb4b241ef5b634409889db7fb958713e5d26413b336c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 131781,
+        "alt": "callstack/masked-view 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/react-native-masked-view/masked-view",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-react-native-masked-view-masked-view/identity.jpg",
+          "alt": "callstack/masked-view 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/callstack/masked-view",
+      "evidence": "About 栏的 MIT license 链接与 README 的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "platforms",
+      "value": "iOS、Android、Web",
+      "sourceUrl": "https://github.com/callstack/masked-view",
+      "evidence": "README 的 Platforms Supported 一节",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@react-native-masked-view/masked-view",
+      "sourceUrl": "https://github.com/callstack/masked-view",
+      "evidence": "README Getting Started 段的 yarn add / npm install --save 命令",
+      "confidence": 1
+    },
+    {
+      "field": "repo-move",
+      "value": "原 react-native-masked-view/masked-view 现已指向 callstack/masked-view",
+      "sourceUrl": "https://github.com/callstack/masked-view",
+      "evidence": "访问 https://github.com/react-native-masked-view/masked-view 后落到 callstack/masked-view，页面路径全是 /callstack/masked-view",
+      "confidence": 1
+    },
+    {
+      "field": "native-setup",
+      "value": "RN >= 0.60 自动链接，更早版本需 react-native link 并 npx pod-install",
+      "sourceUrl": "https://github.com/callstack/masked-view",
+      "evidence": "README Getting Started 段的 Using React Native >= 0.60 与 Using React Native < 0.60 两小节",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/callstack/masked-view",
+      "evidence": "About 标 MIT license，无定价或登录入口",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-react-native-masked-view-masked-view.md",
+  "registryUrl": "/r/github-com-react-native-masked-view-masked-view.json"
+}

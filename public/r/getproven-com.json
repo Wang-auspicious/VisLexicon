@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c1e34ab206fa97127fa1558e35f2bc37bab6f8b612c4f3bff3ae6a5f5e1d2eb9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "getproven-com",
+  "entityId": "entity-getproven-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://getproven.com",
+    "finalUrl": "https://www.getproven.com/",
+    "checkedAt": "2026-09-15T11:10:49.630Z"
+  },
+  "editorial": {
+    "name": "GetProven",
+    "descriptionZh": "给风投与私募机构做供应商市场的 GetProven。基金开一个有品牌的 marketplace，被投公司上来领云、合规、HR 等品类的折扣，B2B 被投公司则把自己的优惠挂上去卖给同门公司。",
+    "takeawayZh": "看它怎么把双向 marketplace 讲成两列买卖卡片",
+    "noteZh": "首屏左边 Help your portfolio buy better — and sell more. 大标题，后半句压成绿色，下面一段解释 Proven 给基金开 branded marketplace；右边是一块粉紫网格底上的产品截图，浮着 Verified by Proven、90% Off On Hubspot、$78,589 Saved this year 三张卡。主按钮是 Launch my free marketplace 与 Book a demo，下面一行小字 Free for firms under $1B AUM. No credit card.。往下 One marketplace. Two ways to create portfolio value. 分 For founders buying 与 For B2B portfolio companies selling 两栏，再往下排开 $1B+ SAVINGS TRACKED、65,000+ VENTURE-BACKED FOUNDERS、4,500+ VERIFIED VENDORS 三组数字。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "GetProven 经由 saaslandingpage.com 进入候选池；它虽然是 marketplace 形态，但入口页是这家公司自己的产品介绍页，因此按产品官网而不是素材市场归类。",
+        "evidenceUrl": "https://www.getproven.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:10:49.630Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "marketplace"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://getproven.com",
+      "finalUrl": "https://www.getproven.com/",
+      "title": "GetProven — vendor management for VC & PE firms",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/getproven-com/identity.jpg",
+        "sha256": "2821e2375db9c81cff84cf3d1f4f0ee0d0c5d8d078a4a6e5132f69508d051e60",
+        "width": 1280,
+        "height": 900,
+        "bytes": 124773,
+        "alt": "GetProven 首屏：Help your portfolio buy better — and sell more."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Freemium（$1B AUM 以下的基金免费，更大的机构另议）",
+      "sourceUrl": "https://www.getproven.com/pricing",
+      "evidence": "首屏小字 Free for firms under $1B AUM. No credit card. 与区块标题 Free for most funds. Full control for the largest.",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "$1B+ savings tracked、65,000+ venture-backed founders、4,500+ verified vendors",
+      "sourceUrl": "https://www.getproven.com/",
+      "evidence": "首屏数据带上并排的三组数字",
+      "confidence": 1
+    },
+    {
+      "field": "vendor-reach",
+      "value": "一份 offer 可投放到 90+ 个 VC marketplace",
+      "sourceUrl": "https://www.getproven.com/vendors",
+      "evidence": "For Vendors 一段写 Publish an approved offer across 90+ VC marketplaces",
+      "confidence": 1
+    },
+    {
+      "field": "comparison-pages",
+      "value": "proven-vs-builtfirst、proven-vs-openvc-perks、proven-vs-founderpass",
+      "sourceUrl": "https://www.getproven.com/compare",
+      "evidence": "站内 internalPaths 里成组的 proven-vs-* 路径",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/getproven-com",
+    "designMdUrl": "https://vislexicon.com/site/getproven-com.md",
+    "checkedAt": "2026-09-15T11:10:49.630Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "f54937ac2b09848b38e532dab9cd82014165efe9dbed8219963978da4567055a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "notion-com-product-mail",
+  "entityId": "entity-notion-com-product-mail",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "notion.com",
+  "official": {
+    "inputUrl": "https://notion.com/product/mail",
+    "finalUrl": "https://www.notion.com/product",
+    "checkedAt": "2026-09-15T11:16:05.640Z"
+  },
+  "editorial": {
+    "name": "Notion Product",
+    "descriptionZh": "Notion 的产品总览页，把 AI 工作区拆成四件事来讲：把知识收进一个 system of record、带引用的即时问答、交给 agent 跑掉琐事，以及工程与客服的具体用例。给企业团队选型用。",
+    "takeawayZh": "看四个 AI 用例，判断 agent 能不能接走团队琐事",
+    "noteZh": "打开时 URL 已经从 /product/mail 落到 /product，页面上没有任何 Mail 相关内容。首屏两行巨型无衬线字 Where teams and agents Ship together.，中间的 Ship 套一个绿底胶囊，按钮是 Get Notion free 与 Request a demo。下面一张 Ramp HQ 的看板截图，左栏 Upcoming events 排着 Design Weekly、Eng Kickoff、Product Updates，Agents 一栏列 Task routing agent、Q&A agent、Reporting agent、IT help desk、Onboarding buddy。正文四块小标题是 Capture knowledge、Find answers、Automate busywork 加一条 See what Notion can do，后面跟 Triage product feedback、Resolve support tickets in Slack、Respond to security alerts faster、Automate weekly reporting、Create your own developer tools 五条用例；最下方引了 Marshall McLuhan 那句 We shape our tools, and thereafter our tools shape us.。",
+    "recommendation": null,
+    "pricing": "unknown（页脚有 Pricing，本次只看到 Get Notion free 与 Request a demo）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付的是 Notion AI 工作区的功能总览与免费注册 / 约 demo 入口，导航是 Product、Resources、Pricing、Request a demo，属于产品官网的单页展示。",
+        "evidenceUrl": "https://www.notion.com/product"
+      },
+      {
+        "statement": "简报给的 entryId 指向 /product/mail，实际请求被重定向到 /product，页面上看不到 Mail 的任何痕迹，因此按落地后的产品总览页写，name 用 Notion Product 与首页条目区分。",
+        "evidenceUrl": "https://www.notion.com/product"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:16:05.640Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent",
+      "saas"
+    ],
+    "deliverables": [
+      "template"
+    ],
+    "actions": [
+      "browse",
+      "download"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://notion.com/product/mail",
+      "finalUrl": "https://www.notion.com/product",
+      "title": "The AI workspace that works for you. | Notion",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/notion-com-product-mail/identity.jpg",
+        "sha256": "368deb4dfa1ceb0b981ca669e34ec8a88e3067c0ee1f8add847ca99628b00140",
+        "width": 1280,
+        "height": 900,
+        "bytes": 107000,
+        "alt": "Notion Product 首屏：Where teams and agents Ship together."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://notion.com/product/mail",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/notion-com-product-mail/identity.jpg",
+          "alt": "Notion Product 首屏：Where teams and agents Ship together.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "useCases",
+      "value": "五条 AI 用例：Triage product feedback、Resolve support tickets in Slack、Respond to security alerts faster、Automate weekly reporting、Create your own developer tools",
+      "sourceUrl": "https://www.notion.com/product/ai/use-cases/triage-product-feedback",
+      "evidence": "See what Notion can do 标题下并排的五条链接，站内对应 /product/ai/use-cases/ 下的五条路径",
+      "confidence": 1
+    },
+    {
+      "field": "agentsInDemo",
+      "value": "演示看板里挂着 Task routing agent、Q&A agent、Reporting agent、IT help desk、Onboarding buddy 五个 agent",
+      "sourceUrl": "https://www.notion.com/product",
+      "evidence": "首屏 Ramp HQ 截图左侧 Agents 分组下列出的五项",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "站点提供 50 多个语言版本，页脚有 English (US) 语言切换",
+      "sourceUrl": "https://www.notion.com/product",
+      "evidence": "页脚一行显示 English (US)，站内路径含 /ja/product、/zh-CN/product、/de/product 等本地化版本",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：unknown（页脚有 Pricing，本次只看到 Get Notion free 与 Request a demo）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/notion-com-product-mail.md",
+  "registryUrl": "/r/notion-com-product-mail.json"
+}

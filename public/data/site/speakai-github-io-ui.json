@@ -1,0 +1,169 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "476c3c7551b9a2f6ca3873889d12c144c6cd394931ff86ce1620d15db2dfe400",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "speakai-github-io-ui",
+  "entityId": "entity-speakai-github-io-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "speakai.github.io",
+  "official": {
+    "inputUrl": "https://speakai.github.io/ui",
+    "finalUrl": "https://speakai.github.io/ui/",
+    "checkedAt": "2026-09-15T11:51:14.946Z"
+  },
+  "editorial": {
+    "name": "@speakai/ui — Design System",
+    "descriptionZh": "Speak AI 的 UI 库组件展台，37 个组件按表单、布局、数据展示、反馈等分组铺开，右侧挂一个能实时改主题的配置面板。给要做控制台类界面、想直接抄组件样式与令牌的团队用。",
+    "takeawayZh": "抄走 37 个组件的写法与它对应的 CSS 变量",
+    "noteZh": "左栏按 FORMS & ACTIONS、LAYOUT、DATA DISPLAY、FEEDBACK、UTILITIES 分栏，每栏下面是 Button、Input & Select、Card、Table、Stat Card、Empty State 这些具体组件名。正文标题下写 37 components, semantic tokens, WCAG AA, mobile-first，紧跟 37 Components / CSS Variables / Accessible 三颗徽章。每个组件区块带一个 Code 开关，Button 一段把 VARIANTS、SIZES、STATES 分三行铺，SIZES 是 Small / Default / Large 三档。右栏 Theme Configurator 能切 Light/Dark/System、换 Speak Purple 与 Ocean Blue 等预设，底部直接给出 --color-primary、--radius-lg 那一份 :root CSS 变量，最下面是 Reset Defaults。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一整套 37 个组件加语义令牌与主题配置器（semantic tokens、CSS Variables、Theme Configurator），不是零散控件，属设计系统与完整组件套件。",
+        "evidenceUrl": "https://speakai.github.io/ui/"
+      },
+      {
+        "statement": "副标题同时给出 WCAG AA 与 mobile-first 两条约束，说明它带可访问性口径，不只是样式清单。",
+        "evidenceUrl": "https://speakai.github.io/ui/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:51:14.946Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "edit"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://speakai.github.io/ui",
+      "finalUrl": "https://speakai.github.io/ui/",
+      "title": "@speakai/ui — Design System",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/speakai-github-io-ui/identity.jpg",
+        "sha256": "1e80b95fbcee421d4b3f62f319cfe8124319e13f70e0346e0a4cfe55b8bca2dd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 91611,
+        "alt": "@speakai/ui — Design System 首屏：Design System"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://speakai.github.io/ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/speakai-github-io-ui/identity.jpg",
+          "alt": "@speakai/ui — Design System 首屏：Design System",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "componentCount",
+      "value": "37 个组件",
+      "sourceUrl": "https://speakai.github.io/ui/",
+      "evidence": "标题下方一行 37 components, semantic tokens, WCAG AA, mobile-first 与旁边的 37 Components 徽章",
+      "confidence": 1
+    },
+    {
+      "field": "accessibilityClaim",
+      "value": "标称 WCAG AA",
+      "sourceUrl": "https://speakai.github.io/ui/",
+      "evidence": "同一行文案与 Accessible 徽章",
+      "confidence": 1
+    },
+    {
+      "field": "themeConfigurator",
+      "value": "MODE / PRESETS / PRIMARY / GRADIENT END / RADIUS / FONT / CSS VARIABLES 七段，可导出 :root 变量",
+      "sourceUrl": "https://speakai.github.io/ui/",
+      "evidence": "右侧 Theme Configurator 面板里逐段的小标题与底部 CSS 代码块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/speakai-github-io-ui.md",
+  "registryUrl": "/r/speakai-github-io-ui.json"
+}

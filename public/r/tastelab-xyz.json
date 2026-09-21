@@ -1,0 +1,160 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "431839a16b16d95f2e866fc3f77052e5df4732bd8d994acde8d9465d1574ee58",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "tastelab-xyz",
+  "entityId": "entity-tastelab-xyz",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://tastelab.xyz",
+    "finalUrl": "https://www.tastelab.xyz/",
+    "checkedAt": "2026-09-15T10:34:54.333Z"
+  },
+  "editorial": {
+    "name": "taste",
+    "descriptionZh": "一个 Claude Code skill：喂给它任意网址，它按四步流水线量出该站的颜色、字号、间距、圆角、阴影，再推出背后的取舍，最后写出 Design Map 与 Taste DNA 两份文件给 agent 用。",
+    "takeawayZh": "丢一个网址，拿回该站的设计 token 与取舍",
+    "noteZh": "浅灰底首屏，胶囊型导航里是 taste lab、Github、Made by Sen Lin、Support 四段，正中一个大 serif 的 taste 字样，下方挂 Product Hunt #2 Product of the Day 与 #1 PRODUCT OF THE WEEK Design Tools 两枚徽章。正文把方法写成 taste = decisions × trade-offs，并用 Generic / Linear / Stripe / Anthropic 四个按钮切换示例站。PIPELINE 一节把流程拆成 01 Extract Measurements、02 Detect Patterns、03 Infer Taste、04 Observer 四个 agent 角色，输出是 {domain}.md 和 {domain}.json 两个文件。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "design-to-code-handoff",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "产物是交给 AI agent 用的设计上下文文件（Design Map、Taste DNA、{domain}.md + {domain}.json），目的是让 agent 照着建界面，属设计到实现的交付环节。",
+        "evidenceUrl": "https://www.tastelab.xyz/"
+      },
+      {
+        "statement": "页面自述为 A Claude Code skill，安装后以 /taste 命令对 URL 运行四步流水线，用户拿到的是可被下游工具直接消费的规格文件。",
+        "evidenceUrl": "https://www.tastelab.xyz/"
+      },
+      {
+        "statement": "也可视作设计分析/审计工具，此处按「产出物交给实现方使用」这一最直接用途归类。",
+        "evidenceUrl": "https://www.tastelab.xyz/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:34:54.333Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [
+      "report"
+    ],
+    "actions": [
+      "install",
+      "generate",
+      "audit",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "cli",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "discovery",
+      "design",
+      "handoff"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://tastelab.xyz",
+      "finalUrl": "https://www.tastelab.xyz/",
+      "title": "Taste — Design DNA for Agents",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/tastelab-xyz/identity.jpg",
+        "sha256": "451708c326e982c699348b0519b25df9c05825ffbe363a43cb1b51bbc6c2a88f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 73858,
+        "alt": "taste 首屏：taste"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pipeline",
+      "value": "01 Extract Measurements / 02 Detect Patterns / 03 Infer Taste / 04 Observer",
+      "sourceUrl": "https://www.tastelab.xyz/",
+      "evidence": "PIPELINE 一节 Four steps from URL to taste. 的四个编号角色",
+      "confidence": 1
+    },
+    {
+      "field": "output",
+      "value": "{domain}.md 与 {domain}.json 两个文件",
+      "sourceUrl": "https://www.tastelab.xyz/",
+      "evidence": "THE OUTPUT 区块标题 Two files. One brief.",
+      "confidence": 1
+    },
+    {
+      "field": "measurement-scope",
+      "value": "20 个测量类别，颜色/字重/间距/圆角/阴影均标 px、hex 或比例",
+      "sourceUrl": "https://www.tastelab.xyz/",
+      "evidence": "How to reverse engineer design taste 一段：20 measurement categories, every colour, weight, spacing value, radius, and shadow cited with exact px / hex / ratio",
+      "confidence": 1
+    },
+    {
+      "field": "distribution",
+      "value": "GitHub 开源，作者 Sen Lin",
+      "sourceUrl": "https://www.tastelab.xyz/",
+      "evidence": "顶部导航 Github 与 Made by Sen Lin，及 View on GitHub 按钮",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/tastelab-xyz",
+    "designMdUrl": "https://vislexicon.com/site/tastelab-xyz.md",
+    "checkedAt": "2026-09-15T10:34:54.333Z",
+    "license": "unknown"
+  }
+}

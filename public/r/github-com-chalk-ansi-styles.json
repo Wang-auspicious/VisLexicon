@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1d653a4c8ee370a2ff1698a2c0efd4b4eb270682931910bfdd827808f1f4bb3c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-chalk-ansi-styles",
+  "entityId": "entity-github-com-chalk-ansi-styles",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/chalk/ansi-styles",
+    "finalUrl": "https://github.com/chalk/ansi-styles",
+    "checkedAt": "2026-09-15T12:47:26.393Z"
+  },
+  "editorial": {
+    "name": "chalk/ansi-styles",
+    "descriptionZh": "终端样式最底层的积木：把 ANSI 转义码按 open/close 成对导出，chalk 就是搭在它上面的高层封装。",
+    "takeawayZh": "要更底层就直接用 styles.green.open 这类成对转义码",
+    "noteZh": "这次截图有半页没加载出来：右栏 About、许可证、Star 463、Fork 82、9 watching、119 Commits 都正常，但左栏文件列表整片是灰色骨架条，最上面一条提交记录也是空的。能读到的信息来自同次渲染的正文：仓库主题标签只有 chalk 一个，README 开头先把人往上引——You probably want the higher-level chalk module for styling your strings.；用法是 import styles from 'ansi-styles' 再拼 styles.green.open 与 styles.green.close，另外给 rgbToAnsi、rgbToAnsi256、hexToRgb 三个转换函数，以及 modifierNames、foregroundColorNames、backgroundColorNames、underlineColorNames 这些数组用来校验输入。",
+    "recommendation": null,
+    "pricing": "Free (MIT)",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个 npm 库（README 自述 ANSI escape codes for styling strings in the terminal，并说明 chalk 是它的上层封装），属开发工作流上的代码工具。",
+        "evidenceUrl": "https://github.com/chalk/ansi-styles"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:47:26.393Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/chalk/ansi-styles",
+      "finalUrl": "https://github.com/chalk/ansi-styles",
+      "title": "GitHub - chalk/ansi-styles: ANSI escape codes for styling strings in the terminal · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-chalk-ansi-styles/identity.jpg",
+        "sha256": "ebb0acfe3d6595e6df3bef28e73aa3bce425b9cccc8095d00c7ca843f2b6a11f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 92081,
+        "alt": "chalk/ansi-styles 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/chalk/ansi-styles",
+      "evidence": "右侧 About 栏 MIT license 与 README 栏上方的同名牌",
+      "confidence": 1
+    },
+    {
+      "field": "usage",
+      "value": "styles.green.open / styles.green.close 成对拼接，另有 rgbToAnsi、rgbToAnsi256、hexToRgb 三个转换函数",
+      "sourceUrl": "https://github.com/chalk/ansi-styles",
+      "evidence": "README 的 Usage 段代码块",
+      "confidence": 1
+    },
+    {
+      "field": "apiArrays",
+      "value": "modifierNames、foregroundColorNames、backgroundColorNames、underlineColorNames、colorNames 五组数组用于校验输入",
+      "sourceUrl": "https://github.com/chalk/ansi-styles",
+      "evidence": "README 的 API 段",
+      "confidence": 1
+    },
+    {
+      "field": "renderState",
+      "value": "截图里左栏文件列表仍是骨架屏（灰条），提交标题空白，此次抓取未渲染完",
+      "sourceUrl": "https://github.com/chalk/ansi-styles",
+      "evidence": "1280×900 首屏截图",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "463 stars、82 forks、9 watching、119 Commits",
+      "sourceUrl": "https://github.com/chalk/ansi-styles",
+      "evidence": "截图右侧栏计数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-chalk-ansi-styles",
+    "designMdUrl": "https://vislexicon.com/site/github-com-chalk-ansi-styles.md",
+    "checkedAt": "2026-09-15T12:47:26.393Z",
+    "license": "MIT"
+  }
+}

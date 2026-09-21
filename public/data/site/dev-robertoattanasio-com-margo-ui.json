@@ -1,0 +1,176 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "db653e0a34883d7fc037f23ceda6ec86d5fd29604b983aa2f7ea75dda85aeb0a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "dev-robertoattanasio-com-margo-ui",
+  "entityId": "entity-dev-robertoattanasio-com-margo-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "dev.robertoattanasio.com",
+  "official": {
+    "inputUrl": "https://dev.robertoattanasio.com/margo-ui",
+    "finalUrl": "https://dev.robertoattanasio.com/margo-ui",
+    "checkedAt": "2026-09-15T12:00:48.673Z"
+  },
+  "editorial": {
+    "name": "Margo UI",
+    "descriptionZh": "Roberto Attanasio 一个人的 React UI kit 文档，建在 Tailwind CSS v4 的设计令牌上，主题用普通 CSS 自定义属性改；npm 包直接发 TypeScript 源码而不预编译。",
+    "takeawayZh": "装 margo-ui，用 CSS 变量整套换主题，自己覆盖写在最后",
+    "noteZh": "首屏是深色文档页：左边一列侧栏把 OVERVIEW 的 Introduction、Foundation、Typography、Responsiveness、Margo Grid 和 COMPONENTS 的 Blockquote、Button、ButtonMicro、Card、Checkbox、Chip、Code、Header、Input、Item、Label、Popover、Select、Table、Toggle 一路排开，Introduction 一项被绿色描边标成当前页，左上角另有 UI、RR、RG、RS 四个项目切换钮。正文标题是白色 MARGO UI，下面一句 React UI kit built on Tailwind CSS v4 design tokens，接着 INSTALLATION 里的 npm install margo-ui 代码块。Getting started 一段解释了为什么发源码——Tailwind 要扫这些文件生成 class，预编译只会多一步。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "侧栏把内容分成 OVERVIEW / COMPONENTS / FEEDBACK / LAYERING / HOC / UTILITIES，交付的是 Button、Card、Select、Dialog、Sheet 这类 React 控件加一套主题桥，归通用界面组件库。",
+        "evidenceUrl": "https://dev.robertoattanasio.com/margo-ui"
+      },
+      {
+        "statement": "站方自述是 React UI kit，令牌只是它接 Tailwind v4 的手法，站上没有设计系统文档层级或规范发布线，因此不归 design-system-suites。",
+        "evidenceUrl": "https://dev.robertoattanasio.com/margo-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:48.673Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://dev.robertoattanasio.com/margo-ui",
+      "finalUrl": "https://dev.robertoattanasio.com/margo-ui",
+      "title": "Margo UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/dev-robertoattanasio-com-margo-ui/identity.jpg",
+        "sha256": "307bf5b967d9be7105055d86d042b980c219980d43b0545326b8a13df7933857",
+        "width": 1280,
+        "height": 900,
+        "bytes": 91196,
+        "alt": "Margo UI 首屏：Margo UI"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://dev.robertoattanasio.com/margo-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/dev-robertoattanasio-com-margo-ui/identity.jpg",
+          "alt": "Margo UI 首屏：Margo UI",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://dev.robertoattanasio.com/margo-ui",
+      "evidence": "页脚 © 2026 Roberto Attanasio — MIT licensed",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "npm install margo-ui",
+      "sourceUrl": "https://dev.robertoattanasio.com/margo-ui",
+      "evidence": "INSTALLATION 一节下的 BASH 代码块",
+      "confidence": 1
+    },
+    {
+      "field": "packaging",
+      "value": "发 TypeScript 源码，由使用方的打包器编译",
+      "sourceUrl": "https://dev.robertoattanasio.com/margo-ui",
+      "evidence": "Getting started 上文 The package ships as TypeScript source rather than a build. Your bundler compiles it",
+      "confidence": 1
+    },
+    {
+      "field": "relatedProjects",
+      "value": "margo-ui / react-renderable / react-graft / react-scrim",
+      "sourceUrl": "https://dev.robertoattanasio.com/margo-ui",
+      "evidence": "左上角 UI、RR、RG、RS 四个切换钮对应 UI margo、RR react renderable、RG react graft、RS react scrim，页脚也重复了这四条",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/dev-robertoattanasio-com-margo-ui.md",
+  "registryUrl": "/r/dev-robertoattanasio-com-margo-ui.json"
+}

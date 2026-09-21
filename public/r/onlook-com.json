@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "32b0e0eb5fd1f9cb5bf14a47622b6c6f71ee2cc7619aee5a9d7ac3e05710442b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "onlook-com",
+  "entityId": "entity-onlook-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://onlook.com",
+    "finalUrl": "https://www.onlook.com/",
+    "checkedAt": "2026-09-15T10:33:59.318Z"
+  },
+  "editorial": {
+    "name": "Onlook",
+    "descriptionZh": "在自己真实代码库上直接改界面的可视化编辑器，设计师和产品经理拖图层、让 AI 改代码，改的是仓库里的 React 文件而不是另存一份设计稿。",
+    "takeawayZh": "在自己的 React 代码库里直接可视化改界面",
+    "noteZh": "首屏几乎全黑，只有模糊处理的 Cursor for Designers 两行字和一行小字 Onlook is where teams design together — directly in their real codebase，右上角挂着 GitHub 星标数 26.7k。我停下来看的是下半屏那个编辑器截图：左边 Layers 面板列着 Design Mockup Container、Top Navigation Bar、Logo、Search Bar、User Button，中间是 Villainterest 的页面（搜索框里填着 Brutalist lair decor，配一排 BLACK LEATHER BAR STOOL、SPIKEY CERAMIC IRON METAL SCULPTURE 一类的图），右侧分成 Chat 与 Code 两块。往下 Native design tool features that work 1:1 with code. 与 AI • Code • Design Side-by-side-by-side 两条接着讲同一件事。",
+    "recommendation": null,
+    "pricing": "unknown（站内有 /pricing，抓取到的首页未给免费或档位口径）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "design-to-code-handoff",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户在真实代码库里做设计：正文写 Onlook is where teams design together — directly in their real codebase，页脚列出 /for/nextjs、/for/react、/for/vite 三种接入方式。",
+        "evidenceUrl": "https://www.onlook.com/"
+      },
+      {
+        "statement": "归 design-to-code-handoff 而非 ui-prototyping-whiteboard：它不做原型稿，而是直接在仓库文件上改（Native design tool features that work 1:1 with code），交付的是落进代码库的改动。",
+        "evidenceUrl": "https://www.onlook.com/features/ai"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:33:59.318Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "edit",
+      "generate",
+      "preview",
+      "prototype",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "handoff",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://onlook.com",
+      "finalUrl": "https://www.onlook.com/",
+      "title": "Onlook — Cursor for Designers",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/onlook-com/identity.jpg",
+        "sha256": "9953c6efe4401601f6bf5018e1c25615ec9809b173698959890693b0151ad820",
+        "width": 1280,
+        "height": 900,
+        "bytes": 51387,
+        "alt": "Onlook 首屏：Cursor for Designers"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroPromise",
+      "value": "Cursor for Designers",
+      "sourceUrl": "https://www.onlook.com/",
+      "evidence": "首屏标题，截图与 http.h1 同文；副标题写 visual code editor for designers and product managers",
+      "confidence": 1
+    },
+    {
+      "field": "githubStars",
+      "value": "26,735 stars（首页写 Supported by you & 26,735 other builders，导航角标 26.7k）",
+      "sourceUrl": "https://github.com/onlook-dev/onlook",
+      "evidence": "GitHub API 返回的 stargazers_count 为 26735，与首页数字一致",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/onlook-dev/onlook",
+      "evidence": "GitHub API 的 license.spdx_id 字段为 Apache-2.0；onlook.com 首页本身未写许可证",
+      "confidence": 1
+    },
+    {
+      "field": "frameworkGuides",
+      "value": "/for/nextjs、/for/react、/for/vite，以及 /features/ai、/features/prototype、/features/builder、/features/storybook、/features/shadcn",
+      "sourceUrl": "https://www.onlook.com/features",
+      "evidence": "live.internalPaths 列出的功能与框架接入页路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/onlook-com",
+    "designMdUrl": "https://vislexicon.com/site/onlook-com.md",
+    "checkedAt": "2026-09-15T10:33:59.318Z",
+    "license": "unknown"
+  }
+}

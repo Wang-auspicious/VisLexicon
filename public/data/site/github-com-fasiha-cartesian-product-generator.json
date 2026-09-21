@@ -1,0 +1,158 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e822e8db38362477735b6219e62a3f75d87bebe091ba876f30b5ebf58e33117b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-fasiha-cartesian-product-generator",
+  "entityId": "entity-github-com-fasiha-cartesian-product-generator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/fasiha/cartesian-product-generator",
+    "finalUrl": "https://github.com/fasiha/cartesian-product-generator",
+    "checkedAt": "2026-09-15T12:50:07.742Z"
+  },
+  "editorial": {
+    "name": "fasiha/cartesian-product-generator",
+    "descriptionZh": "一个 ES2015 生成器，用来遍历多个数组的笛卡尔积，但不像 lodash.product 那样把全部组合一次堆进内存，而是逐条 yield。",
+    "takeawayZh": "用 for...of 逐个取组合，不把全部结果塞进内存",
+    "noteZh": "About 一句 ES2015 generator (iterable iterator) for Cartesian product. Put combinatorial explosion back in the kennel.，License 是 Unlicense，7 星、6 次提交、2 位贡献者，Languages 显示 JavaScript 61.9%、TypeScript 38.1%。README 说现有库会把组合全存下来，这个库想做得更简单：只依赖一个 ind2sub 把线性下标换算成各数组的下标，再 index 着逐条 yield。示例用 product 传三组数组展开出 r/early/high 这类组合。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 的安装段是 npm install --save cartesian-product-generator，交付一个可被代码调用的迭代器库，属开发工具。",
+        "evidenceUrl": "https://github.com/fasiha/cartesian-product-generator"
+      },
+      {
+        "statement": "它是通用算法工具，不含界面或素材，暂归建站与开发工具下的构建与开发工作流。",
+        "evidenceUrl": "https://github.com/fasiha/cartesian-product-generator"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:50:07.742Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "apply"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/fasiha/cartesian-product-generator",
+      "finalUrl": "https://github.com/fasiha/cartesian-product-generator",
+      "title": "GitHub - fasiha/cartesian-product-generator: ES2015 generator (iterable iterator) for Cartesian product. Put combinatorial explosion back in the kennel. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-fasiha-cartesian-product-generator/identity.jpg",
+        "sha256": "77fa16c96186ae839447e5981562a2deb631e480237e1b6516fbd65d292b52cb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128542,
+        "alt": "fasiha/cartesian-product-generator 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/fasiha/cartesian-product-generator",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-fasiha-cartesian-product-generator/identity.jpg",
+          "alt": "fasiha/cartesian-product-generator 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "Unlicense（公共领域奉献；受控词典里没有这一项，故 facets 记 custom）",
+      "sourceUrl": "https://github.com/fasiha/cartesian-product-generator",
+      "evidence": "README 徽标区的 Unlicense license 与仓库根目录的 UNLICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "behavior",
+      "value": "逐条 yield，不把全部组合存进内存",
+      "sourceUrl": "https://github.com/fasiha/cartesian-product-generator",
+      "evidence": "README 开头写 might not want to store them all in memory at the same time, which is what many existing libraries, e.g., lodash.product, do",
+      "confidence": 1
+    },
+    {
+      "field": "dependency",
+      "value": "只依赖 ind2sub 一个包",
+      "sourceUrl": "https://github.com/fasiha/cartesian-product-generator",
+      "evidence": "README 写 it uses a single dependency, ind2sub, to handle converting linear indexes into subscripts",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。Unlicense（公共领域奉献；受控词典里没有这一项，故 facets 记 custom）：README 徽标区的 Unlicense license 与仓库根目录的 UNLICENSE 文件"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-fasiha-cartesian-product-generator.md",
+  "registryUrl": "/r/github-com-fasiha-cartesian-product-generator.json"
+}

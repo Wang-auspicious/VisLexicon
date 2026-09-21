@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8b8f24e46f4723013b9915c956e74a96290e50ee171403e75aebe03b8905cb26",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "tecsinapse-github-io-design-system",
+  "entityId": "entity-tecsinapse-github-io-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://tecsinapse.github.io/design-system",
+    "finalUrl": "https://tecsinapse.github.io/design-system/",
+    "checkedAt": "2026-09-15T11:52:47.898Z"
+  },
+  "editorial": {
+    "name": "TecSinapse Design System",
+    "descriptionZh": "TecSinapse Cortex 设计系统的 Storybook 实例：左栏把 tokens（Border Radius、Colors、Font Size、Spacing 等）、两套 kit 的搭建说明和 Cortex 的整套组件条目分开列出，顶上有 Find components 搜索。",
+    "takeawayZh": "翻 Cortex 的 Storybook 目录，组件和 token 两张清单都有",
+    "noteZh": "进去就是一个 Storybook 实例，浏览器标题只写了 Storybook，主画布区一直在转加载圈、没渲染出任何组件（页面 imgCount 为 0），所以只能读左栏。INTRODUCTION 五节是 Welcome、Installation、Usage、Dark Mode、Custom Theme；SETUP (NON CORTEX) 分成 react-native-kit 和 react-web-kit；TOKENS 六项是 Border Radius、Border Width、Colors、Font Size、Miscelanneous、Spacing——Miscellaneous 在站上自己拼成了 Miscelanneous；DEVELOPMENT 下是 Contributing、Designing、Environment；再往下 CORTEX 分组里 Accordion、Autocomplete、Avatar、Badge 一路往下排。左栏顶部搜索框的占位文字是 Find components ⌃K。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 TecSinapse 设计系统的 Storybook 部署（仓库与 Pages 路径均为 design-system），左栏按 tokens、kit、组件三层组织，属设计系统与完整组件套件。",
+        "evidenceUrl": "https://tecsinapse.github.io/design-system/"
+      },
+      {
+        "statement": "站点自身标题只写了 Storybook（工具默认值），About 也无有效文案，因此条目名按它的实际身份 TecSinapse Design System 来写。",
+        "evidenceUrl": "https://tecsinapse.github.io/design-system/"
+      },
+      {
+        "statement": "主画布未渲染出内容，noteZh 只描述左栏真实可见的分组与条目，未凭组件名推断组件长什么样。",
+        "evidenceUrl": "https://tecsinapse.github.io/design-system/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:47.898Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "search"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "react-native"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://tecsinapse.github.io/design-system",
+      "finalUrl": "https://tecsinapse.github.io/design-system/",
+      "title": "Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/tecsinapse-github-io-design-system/identity.jpg",
+        "sha256": "da0de90648a37a63ad5296b6508f227eae28c6d4a34dc5170910c3215c71e87a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 38633,
+        "alt": "TecSinapse Design System 首屏：Storybook"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "search",
+      "value": "Find components（快捷键 ⌃K）",
+      "sourceUrl": "https://tecsinapse.github.io/design-system/",
+      "evidence": "左栏顶部搜索框的占位文字与右侧快捷键提示",
+      "confidence": 1
+    },
+    {
+      "field": "tokens",
+      "value": "Border Radius / Border Width / Colors / Font Size / Miscelanneous / Spacing 六项",
+      "sourceUrl": "https://tecsinapse.github.io/design-system/",
+      "evidence": "左栏 TOKENS 分组下逐个列出的六个条目名；Miscellaneous 在站上拼作 Miscelanneous",
+      "confidence": 1
+    },
+    {
+      "field": "kits",
+      "value": "react-native-kit 与 react-web-kit",
+      "sourceUrl": "https://tecsinapse.github.io/design-system/",
+      "evidence": "左栏 SETUP (NON CORTEX) 分组下的两个条目",
+      "confidence": 1
+    },
+    {
+      "field": "render-state",
+      "value": "入口画布未渲染出组件",
+      "sourceUrl": "https://tecsinapse.github.io/design-system/",
+      "evidence": "主预览区只有一个加载圈，页面 imgCount 为 0，浏览器标题为 Storybook",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/tecsinapse-github-io-design-system",
+    "designMdUrl": "https://vislexicon.com/site/tecsinapse-github-io-design-system.md",
+    "checkedAt": "2026-09-15T11:52:47.898Z",
+    "license": "unknown"
+  }
+}

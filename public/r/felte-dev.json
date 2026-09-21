@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "932f1bc17a3dd04993f356a61826a540612ec4502f15834423addf6f6c733db8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "felte-dev",
+  "entityId": "entity-felte-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://felte.dev",
+    "finalUrl": "https://felte.dev/",
+    "checkedAt": "2026-09-15T11:58:32.833Z"
+  },
+  "editorial": {
+    "name": "Felte",
+    "descriptionZh": "Felte 是给 Svelte、Solid 和 React 用的可扩展表单库，官网本身就是它 v1 的文档站，校验、报错、样式各占一节。",
+    "takeawayZh": "装 felte 后接 Yup 或 Zod，让它接管表单校验与报错",
+    "noteZh": "首屏左边是大号 FELTE 字标配一句 An extensible form library for Svelte, Solid and React，右边是一张浅橙色演示表单卡，Email 与 Password 两个输入框下写着 Use any value you want, this is just a demo.，按钮文案是 Fail to sign in；顶部公告条提醒这是 v1 文档、找 v0.x 要点 click here，右上角只有 docs、GitHub 图标和暗色切换。往下依次是 Validation!、Error reporting!、Easy styling! 三段，再往下是 Articles 文章列表与 Using Svelte / Using Solid / Using React / Using Preact 四组上手入口。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页 Easy styling! 一段写 Felte works with plain HTML tags，并强调不用和自定义组件或 CSS 变量较劲，说明它只提供表单状态与校验逻辑、不带样式，符合无样式原语定位。",
+        "evidenceUrl": "https://felte.dev/"
+      },
+      {
+        "statement": "首页 Validation! 段写明官方支持 Yup、Zod、Superstruct，交付物是可装进项目里的库代码而不是成品页面。",
+        "evidenceUrl": "https://felte.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:58:32.833Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://felte.dev",
+      "finalUrl": "https://felte.dev/",
+      "title": "Felte | Home",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/felte-dev/identity.jpg",
+        "sha256": "d8cfca03ce57c613eed8f39a4f7780b694859a3f2a0ab04b61348ef0d829be12",
+        "width": 1280,
+        "height": 900,
+        "bytes": 42852,
+        "alt": "Felte 首屏：FELTE"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "description",
+      "value": "An extensible form library for Svelte, Solid and React.",
+      "sourceUrl": "https://felte.dev/",
+      "evidence": "首页 FELTE 大字下方的副标题",
+      "confidence": 1
+    },
+    {
+      "field": "validationLibraries",
+      "value": "Officially supporting Yup, Zod and Superstruct，也可自带策略",
+      "sourceUrl": "https://felte.dev/",
+      "evidence": "首页 Validation! 一节正文",
+      "confidence": 1
+    },
+    {
+      "field": "runtimes",
+      "value": "首页分 Using Svelte / Using Solid / Using React / Using Preact 四组上手文档",
+      "sourceUrl": "https://felte.dev/",
+      "evidence": "首页底部四段 Using 标题及其示例链接",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/felte-dev",
+    "designMdUrl": "https://vislexicon.com/site/felte-dev.md",
+    "checkedAt": "2026-09-15T11:58:32.833Z",
+    "license": "unknown"
+  }
+}

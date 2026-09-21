@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "71ec932f50ac87c0eb3b59ec066199ca348a8e61f41bd5983aa5f57c2757179c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-colorjs-color-alpha",
+  "entityId": "entity-github-com-colorjs-color-alpha",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/colorjs/color-alpha",
+    "finalUrl": "https://github.com/colorjs/color-alpha",
+    "checkedAt": "2026-09-15T12:51:20.137Z"
+  },
+  "editorial": {
+    "name": "colorjs/color-alpha",
+    "descriptionZh": "改一个颜色字符串透明度的 npm 库：α('white', .4) 得到 rgba(255,255,255, 0.4)，现代 CSS 写法会按斜杠语法序列化。",
+    "takeawayZh": "给颜色串换 alpha，兼容 oklch 写法",
+    "noteZh": "README 的开场是 color-alpha Change alpha of a color.，三行示例分别是 α('white', .4) 得 'rgba(255,255,255, 0.4)'、α('oklch(0.628 0.258 29.234)', .3) 得 'oklch(0.628 0.258 29.234 / 0.3)'、以及省掉参数时 α('rgba(244, 244, 244, .3)') 读原色的 alpha；下面注明输入用 color-parse 解析，legacy 的 rgb/hsl 保留逗号语法、lab/oklch/color(display-p3) 这类现代写法用 CSS 斜杠语法，解析不了的输入返回 undefined。右侧 About 是 Change alpha of a color string，标签 color、colorjs，标 MIT license 与 Used by 21K；最近一条提交标题是 readme: dead badges out。仓库 23 star、35 个 commit、2 branches、0 Tags，Releases 区写着 No releases published。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "asset-conversion-optimization",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个装进项目里做颜色值改写的 npm 库（README 只有安装一行加三段用法），干的是颜色解析与序列化的活，按「转换」归到 asset-conversion-optimization，与本仓库前几批几个色彩解析库的口径一致。",
+        "evidenceUrl": "https://github.com/colorjs/color-alpha"
+      },
+      {
+        "statement": "它不是组件、不是素材，也不是设计系统，所以不归 ui-implementation 或 visual-assets。",
+        "evidenceUrl": "https://github.com/colorjs/color-alpha"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:51:20.137Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/colorjs/color-alpha",
+      "finalUrl": "https://github.com/colorjs/color-alpha",
+      "title": "GitHub - colorjs/color-alpha: Change alpha of a color string · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-colorjs-color-alpha/identity.jpg",
+        "sha256": "eeccceaa01f48f029c7f0eacec39d277452b4db398590ebc95f68a76abaf4665",
+        "width": 1280,
+        "height": 900,
+        "bytes": 123050,
+        "alt": "colorjs/color-alpha 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/colorjs/color-alpha",
+      "evidence": "右侧 About 栏与 README 卡片都标着 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "modern-css-syntax",
+      "value": "lab、oklch、color(display-p3) 等现代写法序列化为 CSS 斜杠语法",
+      "sourceUrl": "https://github.com/colorjs/color-alpha",
+      "evidence": "README 写 legacy rgb/hsl keep comma syntax, modern spaces (lab, oklch, color(display-p3 …) etc.) serialize with css slash syntax；文件列表最近三次提交标题也都是 css slash serialization for modern spaces",
+      "confidence": 1
+    },
+    {
+      "field": "adoption",
+      "value": "Used by 21K",
+      "sourceUrl": "https://github.com/colorjs/color-alpha",
+      "evidence": "右侧边栏 Used by 21K (21K)，下面写 + 20,625",
+      "confidence": 1
+    },
+    {
+      "field": "release-status",
+      "value": "未发布 release（2 branches、0 Tags）",
+      "sourceUrl": "https://github.com/colorjs/color-alpha",
+      "evidence": "Releases 区写着 No releases published，仓库头显示 2 Branches、0 Tags",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-colorjs-color-alpha",
+    "designMdUrl": "https://vislexicon.com/site/github-com-colorjs-color-alpha.md",
+    "checkedAt": "2026-09-15T12:51:20.137Z",
+    "license": "MIT"
+  }
+}

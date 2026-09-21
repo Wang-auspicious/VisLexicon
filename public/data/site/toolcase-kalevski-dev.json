@@ -1,0 +1,168 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b01c3d4a893e084abd4b9d866c3881935eb70c87508a5590f0fd4f5064bc60a5",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "toolcase-kalevski-dev",
+  "entityId": "entity-toolcase-kalevski-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "toolcase.kalevski.dev",
+  "official": {
+    "inputUrl": "https://toolcase.kalevski.dev",
+    "finalUrl": "https://toolcase.kalevski.dev/",
+    "checkedAt": "2026-09-15T11:53:23.883Z"
+  },
+  "editorial": {
+    "name": "@toolcase",
+    "descriptionZh": "作者把自己十年来在 web 应用和游戏里反复用到的工具整理成六个 npm 包，在这里逐个给出定位、版本、示例数与一行安装命令。六个包分别落在基础原语、日志、序列化、Web Components、Phaser 运行时和后端辅助这几个方向。",
+    "takeawayZh": "六个 npm 包里挑一个，照示例数最多的那个装",
+    "noteZh": "首屏眉题是 INDEX / LIBRARIES，大标题 A small set of tools I keep reaching for, every project.，下面一段说明六个 npm 包按十年积累整理而来。再往下四块统计：6 PACKAGES、525 LIVE EXAMPLES、Node ≥ 18 RUNTIME 排成一行，2016 MAINTAINED SINCE 单独一行居中。顶部导航只有 Packages / Apps / Skills 三项（Packages 当前高亮）加右上角一个 github 外链。再往下的 ALL LIBRARIES 区右边标着 06 / 06，卡片两列并排——左边 @toolcase/base、右边 @toolcase/logging，每张卡带一个 → 箭头、分类标签、版本号与示例数，以及可复制的 $ npm i 命令。页脚一行 © Daniel Kalevski · MIT。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "directories-indexes",
+    "subcategory": "component-package-indexes",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这个站本身不交付一个组件或一套模板，它交付的是「六个包的索引」：每张卡给包名、定位、版本、示例数和一个 npm i 命令，用户动作是挑一个再安装；六个包里 web-components 是 UI，其余是基础库、日志、序列化、Phaser 运行时和后端辅助，没有统一主题，所以归到软件包索引而不是组件库。这条我拿不太准，如果按「最直接拿到的是可安装的代码」也可算作通用组件库，但那样会盖掉它作为索引页的性质。",
+        "evidenceUrl": "https://toolcase.kalevski.dev/"
+      },
+      {
+        "statement": "首屏标题下一段写明 Six npm packages I've built, used, and rewritten，ALL LIBRARIES 区用 06 / 06 计数，是目录页的组织方式而不是产品营销页。",
+        "evidenceUrl": "https://toolcase.kalevski.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:53:23.883Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "web-components"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://toolcase.kalevski.dev",
+      "finalUrl": "https://toolcase.kalevski.dev/",
+      "title": "@toolcase — Examples",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/toolcase-kalevski-dev/identity.jpg",
+        "sha256": "cbb4b18df4f20400f14070a37435ecb4a1cb898d9b4b4912cb1aeb39058c7d32",
+        "width": 1280,
+        "height": 900,
+        "bytes": 68919,
+        "alt": "@toolcase 首屏：A small set of tools I keep reaching for, every project."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://toolcase.kalevski.dev",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/toolcase-kalevski-dev/identity.jpg",
+          "alt": "@toolcase 首屏：A small set of tools I keep reaching for, every project.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "packages",
+      "value": "@toolcase/base、@toolcase/logging、@toolcase/serializer、@toolcase/web-components、@toolcase/phaser-plus、@toolcase/node",
+      "sourceUrl": "https://toolcase.kalevski.dev/",
+      "evidence": "正文 ALL LIBRARIES 段六张卡；首屏只露到 base 与 logging 两张，其余在下方",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "6 PACKAGES、525 LIVE EXAMPLES、Node ≥ 18 RUNTIME、2016 MAINTAINED SINCE",
+      "sourceUrl": "https://toolcase.kalevski.dev/",
+      "evidence": "首屏副标题下方的四块统计卡（前三块一行，第四块换行）",
+      "confidence": 1
+    },
+    {
+      "field": "packageVersions",
+      "value": "base / logging / serializer / phaser-plus / node 都是 v5.0.0，web-components 是 v6.0.2",
+      "sourceUrl": "https://toolcase.kalevski.dev/",
+      "evidence": "每张包的分类标签行末的版本号，如 UI · WEB COMPONENTS · v6.0.2 · 393 EXAMPLES",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://toolcase.kalevski.dev/",
+      "evidence": "页脚 © Daniel Kalevski · MIT",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/toolcase-kalevski-dev.md",
+  "registryUrl": "/r/toolcase-kalevski-dev.json"
+}

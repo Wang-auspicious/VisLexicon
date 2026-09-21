@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "b9fa126f79608f9c4608f52793008f19262e5ce74b9520ebdd0a4d853ee97321",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "oxide-computer",
+  "entityId": "entity-oxide-computer",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://oxide.computer",
+    "finalUrl": "https://oxide.computer/",
+    "checkedAt": "2026-09-15T11:16:30.775Z"
+  },
+  "editorial": {
+    "name": "Oxide Computer Company",
+    "descriptionZh": "把公有云体验搬进机房的整机方案：一台机柜里装好 compute、storage、networking 和软件，从 CLI、API 或 Console 统一管，卖给要跑 AI、HPC 又受合规约束的机构。",
+    "takeawayZh": "买一台自带云控制面的机柜，把机房当云用",
+    "noteZh": "深蓝黑底首屏，左边一个终端窗口，标签页写 CLI / API / CONSOLE，里面是两行命令：~> oxide auth login 加 Enter code LU8A-9AMP，再来一行 ~> oxide instance create；右边是整柜设备的照片，绿色 LED 一格一格亮着，机柜侧面印 oxide 字样，右上角标注 FIG. 1 OXIDE CLOUD COMPUTER。主标题 On-prem that feels like the public cloud，下面一行小字 The cloud you own. 与 The public cloud is built this way. Oxide is, too.。再往下 POWERING THE BEST TEAMS 接客户字标：switch、STOKE、Lawrence Livermore National Laboratory。接着 ELASTIC COMPUTE、ELASTIC NETWORKING、EFFICIENT POWER DESIGN、ELASTIC STORAGE 四块用点阵图和 ASCII 框线画出来，配 12x Cooling Efficiency、55% Less Total Power 这类数字；底部压着一个 cookie 横幅，只有 REJECT OPTIONAL 和 ACCEPT ALL 两个按钮。",
+    "recommendation": null,
+    "pricing": "unknown（只有 TRY NOW 与 CONTACT SALES，无公开报价）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面交付的是 Oxide 这套带软件的机柜产品介绍与 TRY NOW / CONTACT SALES 入口，导航为 Product、Solutions、Resources、Company、Podcasts、Blog，按产品与公司官网归入单站展示。",
+        "evidenceUrl": "https://oxide.computer/"
+      },
+      {
+        "statement": "产品虽偏基础设施，但站点本身是公司官网而非可安装的软件包（正文只有 CLI 演示），因此不按开发工具类目处理。",
+        "evidenceUrl": "https://oxide.computer/remote-access"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:16:30.775Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "api",
+      "cli"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://oxide.computer",
+      "finalUrl": "https://oxide.computer/",
+      "title": "Oxide Computer Company",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/oxide-computer/identity.jpg",
+        "sha256": "1b7fec2d20828d0f59d8522af60c1f760387455ad1196c098129a8178cded237",
+        "width": 1280,
+        "height": 900,
+        "bytes": 137206,
+        "alt": "Oxide Computer Company 首屏：On-prem that feels like the public cloud"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "controlPlane",
+      "value": "CLI、API、Console 三个管理入口，配 oxide auth login / oxide instance create 这类命令",
+      "sourceUrl": "https://oxide.computer/remote-access",
+      "evidence": "首屏左侧终端窗口的标签页与两行示例命令，正文写 Manage your cloud with a single, unified interface",
+      "confidence": 1
+    },
+    {
+      "field": "power",
+      "value": "自报 12x Cooling Efficiency、55% Less Total Power",
+      "sourceUrl": "https://oxide.computer/blog/how-oxide-cuts-data-center-power-consumption-in-half",
+      "evidence": "EFFICIENT POWER DESIGN 一节的点阵图旁标注的两个数字，配 21.59A 电流示意",
+      "confidence": 1
+    },
+    {
+      "field": "customers",
+      "value": "客户字标为 switch、STOKE、Lawrence Livermore National Laboratory",
+      "sourceUrl": "https://oxide.computer/",
+      "evidence": "首屏下方 POWERING THE BEST TEAMS 一行的三个 logo",
+      "confidence": 1
+    },
+    {
+      "field": "workloads",
+      "value": "定位为跑 AI、HPC、mission-critical 与通用负载",
+      "sourceUrl": "https://oxide.computer/solutions/ai",
+      "evidence": "正文写 Run AI, HPC, mission-critical, and general workloads with the elasticity, programmability, and unified control of cloud，导航 Solutions 下另有 vmware、sovereign-cloud、cicd 等场景页",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/oxide-computer",
+    "designMdUrl": "https://vislexicon.com/site/oxide-computer.md",
+    "checkedAt": "2026-09-15T11:16:30.775Z",
+    "license": "unknown"
+  }
+}

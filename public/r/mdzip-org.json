@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9d3282996d965c7b1e6eec71121344e8316d76d3e125d1e13a843436eae34ccb",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "mdzip-org",
+  "entityId": "entity-mdzip-org",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://mdzip.org",
+    "finalUrl": "https://mdzip.org/",
+    "checkedAt": "2026-09-15T11:45:52.191Z"
+  },
+  "editorial": {
+    "name": "MDZip.org",
+    "descriptionZh": "MDZip 是一套把 Markdown、图片和元数据打成一个 .mdz 压缩包的格式，站点给出格式规范、打包工具、Editor Demo 与 MDZip Studio 桌面应用下载。",
+    "takeawayZh": "把 Markdown 与图片压成一个 .mdz 文件",
+    "noteZh": "首屏居中一个大 MDZip 字标加灰色 .mdz 药丸，下面写 A portable, cross-platform, AI-friendly file format and ecosystem for packaging Markdown, images, and metadata into a single archive.，两枚按钮是 Read the Specification 与 View Demos。往下一条 DESKTOP APP: LINUX SUPPORT RELEASED 的公告卡讲 MDZip Studio 1.4.0 在 2026 年 9 月 10 日发 Linux 版：一个 .deb 包（Debian/Ubuntu/Mint/Pop!_OS，带 .mdz 文件类型注册）加一个 AppImage，和已有的 Windows 安装包并列，另有后台更新检查、状态栏文档统计、空文档用文件名当标题。再往下 What is an .mdz file? 画了 index.md / manifest.json / images/cover.png 的目录树，Common use cases 把 .mdz 对应到 PDFs、stylesheets、DOCX without Word、EPUB for Markdown 和整个 Markdown 项目，并给了三步做法：文件夹放 index.md、压缩文件夹内容、改名成 .mdz。导航是 The Problem / File Format / Project / Demos / Tools / Docs / FAQ / Contribute / Spec。",
+    "recommendation": null,
+    "pricing": "unknown（Studio 提供下载但页面没有标价，也没写授权方式）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "asset-conversion-optimization",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个打包格式加配套工具（Spec、Packager、Editor Demo、Studio），核心动作是把一堆 Markdown 与图片转换成一个自包含文件，归 delivery-development-tools 下的 asset-conversion-optimization。",
+        "evidenceUrl": "https://mdzip.org/"
+      },
+      {
+        "statement": "这个归类把握一般：站点一半篇幅在讲格式契约（Spec / File Format），按文档主导也可算 reference-standards，但首屏主推的是打包流程与 Studio 下载，所以按转换打包一侧归。",
+        "evidenceUrl": "https://mdzip.org/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:45:52.191Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "standard"
+    ],
+    "actions": [
+      "download",
+      "browse",
+      "publish"
+    ],
+    "media": [],
+    "platforms": [
+      "desktop",
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "publish"
+    ],
+    "audiences": [
+      "content-creator",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mdzip.org",
+      "finalUrl": "https://mdzip.org/",
+      "title": "MDZip (.mdz) File Format - Portable Markdown Package",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/mdzip-org/identity.jpg",
+        "sha256": "406f5edc5572b4b5b0030350e5fb84209915500cd75c54c963802d8b25066409",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98297,
+        "alt": "MDZip.org 首屏：MDZip .mdz"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "archiveLayout",
+      "value": "document.mdz 是 ZIP 归档，含 index.md 作为入口、可选的 manifest.json 与 images/cover.png",
+      "sourceUrl": "https://mdzip.org/",
+      "evidence": "What is an .mdz file? 一段的目录树配图与说明文字",
+      "confidence": 1
+    },
+    {
+      "field": "studioRelease",
+      "value": "MDZip Studio 1.4.0 于 2026 年 9 月 10 日发布 Linux 版，一个 .deb（带 .mdz 文件类型注册）加一个 AppImage，与已有 Windows 安装包并列",
+      "sourceUrl": "https://mdzip.org/",
+      "evidence": "DESKTOP APP: LINUX SUPPORT RELEASED 公告卡，截图可见 Download for Linux 按钮",
+      "confidence": 1
+    },
+    {
+      "field": "createSteps",
+      "value": "1 文件夹放 index.md 加图片，2 压缩文件夹内容（不含文件夹本身），3 改名成 .mdz；没有 manifest 时工具回退到 index.md",
+      "sourceUrl": "https://mdzip.org/",
+      "evidence": "Quick Steps to Create an .mdz File 与 Why not just ZIP? 两段",
+      "confidence": 1
+    },
+    {
+      "field": "navigation",
+      "value": "The Problem、File Format、Project、Demos、Tools、Docs、FAQ、Contribute、Spec",
+      "sourceUrl": "https://mdzip.org/",
+      "evidence": "顶栏导航，live.navLabels 与截图同文",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/mdzip-org",
+    "designMdUrl": "https://vislexicon.com/site/mdzip-org.md",
+    "checkedAt": "2026-09-15T11:45:52.191Z",
+    "license": "unknown"
+  }
+}

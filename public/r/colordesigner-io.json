@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "9f638964937c50a05b88791c9201f8d97e46fcad8e963b5dc9e8c9c36aa73588",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "colordesigner-io",
+  "entityId": "entity-colordesigner-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://colordesigner.io",
+    "finalUrl": "https://colordesigner.io/",
+    "checkedAt": "2026-09-15T12:50:59.289Z"
+  },
+  "editorial": {
+    "name": "Color Designer",
+    "descriptionZh": "Color Designer 把十几件颜色工具收在一个站里：Color Palette Builder、Gradient Generator、Color Mixer 到 Contrast Checker，另配 Colorpedia 等参考页。",
+    "takeawayZh": "用 Color Palette Builder 起一套配色再导出",
+    "noteZh": "深色首屏左侧是大标题 From Inspiration to Creation: Ignite Your Design Journey with Color Designer，正文那段说用 color wheel 配色、用 Color Palette Builder 定调、再拿 gradient 做层次，下面一枚红色主按钮写 Color Palette Builder / The main tool on the website；右侧是一叠从白到橙红的色纸插画配一条色带。顶部导航从左到右是 Home、Tools 13、Resources、Upgrade、Addons、Contact，最右是 Log In 与 Sign Up，按钮下方还压着一枚 × Hide Ads, 14 days free 的橙色小条。页面下半列出 All Tools 的十三项，以及 Pro Features：Palette Variations、3+ colors in the gradient generator、按 HEX/RGB/HSL/LAB/LCH/OKLAB/OKLCH 导出。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是配色与渐变本身：主按钮直接把人送进 Color Palette Builder，导航 Tools 13 里全是生成/转换/对比颜色的工具。",
+        "evidenceUrl": "https://colordesigner.io/"
+      },
+      {
+        "statement": "站点自称 the most comprehensive color tools platform，Pro 卖点是导出多色彩空间与保存调色板，属图像与版式创作工具；词典无颜色工具小类，归类存在不确定性。",
+        "evidenceUrl": "https://colordesigner.io/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:50:59.289Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "generate",
+      "export",
+      "compare",
+      "preview",
+      "edit"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "brand-team"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://colordesigner.io",
+      "finalUrl": "https://colordesigner.io/",
+      "title": "Color Designer - the most comprehensive color tools platform",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/colordesigner-io/identity.jpg",
+        "sha256": "9e8645f530121748d9e72c27eedd10e2649fc34e43d95d36120dbc876a7d003b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98066,
+        "alt": "Color Designer 首屏：From Inspiration to Creation: Ignite Your Design Journey wit"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "toolCount",
+      "value": "13（导航 Tools 13）",
+      "sourceUrl": "https://colordesigner.io/",
+      "evidence": "首屏导航 Tools 后面的数字角标，与正文 All Tools 列表",
+      "confidence": 1
+    },
+    {
+      "field": "exportFormats",
+      "value": "HEX、RGB、HSL、LAB、LCH、OKLAB、OKLCH",
+      "sourceUrl": "https://colordesigner.io/",
+      "evidence": "Pro Features 一节 Export colors in ... 一行",
+      "confidence": 1
+    },
+    {
+      "field": "trial",
+      "value": "Hide Ads, 14 days free",
+      "sourceUrl": "https://colordesigner.io/",
+      "evidence": "首屏按钮下方的橙色小条，正文里出现两次",
+      "confidence": 1
+    },
+    {
+      "field": "author",
+      "value": "Wojciech Banaś",
+      "sourceUrl": "https://colordesigner.io/",
+      "evidence": "页脚 colordesigner.io by Wojciech Banaś",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/colordesigner-io",
+    "designMdUrl": "https://vislexicon.com/site/colordesigner-io.md",
+    "checkedAt": "2026-09-15T12:50:59.289Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "06bc01dce336924b23840c756164b0209a8f719932ec11c55d68363e497d3cc7",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "museo-app",
+  "entityId": "entity-museo-app",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://museo.app",
+    "finalUrl": "https://museo.app/",
+    "checkedAt": "2026-09-15T10:40:42.086Z"
+  },
+  "editorial": {
+    "name": "Museo",
+    "descriptionZh": "Museo 把十一家博物馆与图书馆的公有领域藏品做成一个图片搜索引擎，输入关键词就能横向比对不同机构的收藏。站上不存图，结果都指回原机构。",
+    "takeawayZh": "一个关键词，横着搜遍 11 家博物馆的公有领域图片",
+    "noteZh": "整页是墨绿色的，中间用网点印刷效果的巨型衬线字母拼出 MUSEO。标题下面先声明覆盖范围，再滚一条会横向移动的机构名带：SMITHSONIAN INSTITUTION ✦ PARIS MUSÉES ✦ NATIONAL GALLERY OF DENMARK ✦ HARVARD ART MUSEUMS，共十一家。搜索框里预填着示例词 Art about cities，右下角一枚 Search。页脚只有两行：Lovingly constructed by Chase McCoy • View the code on GitHub。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-assets",
+    "subcategory": "photos-images-textures",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户来这里最直接拿走的就是一张可用的公有领域图片，正文写 Museo is a visual search engine for free, public-domain images，因此归图像素材类。",
+        "evidenceUrl": "https://museo.app/"
+      },
+      {
+        "statement": "站点本身不托管文件，只是对十一家机构馆藏的检索入口，也接近资源目录；但检索结果是单张可用的图而不是站点条目，所以选了图像素材这一格，判断存疑。",
+        "evidenceUrl": "https://museo.app/"
+      },
+      {
+        "statement": "正文写 Images you find here are typically free to use, but please check with the source institution for more specifics，没有给出具体许可证，licenses 只能记 unknown。",
+        "evidenceUrl": "https://museo.app/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:40:42.086Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "image"
+    ],
+    "actions": [
+      "browse",
+      "search"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "discovery"
+    ],
+    "audiences": [
+      "designer",
+      "researcher"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "searchable-directory"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://museo.app",
+      "finalUrl": "https://museo.app/",
+      "title": "Museo",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/museo-app/identity.jpg",
+        "sha256": "5573a83ae9c090a8d7802778ef1bf65cc461c12dc837b407cb2bdfd59f139b76",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75677,
+        "alt": "Museo 首屏：Mus­eo"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "coverage",
+      "value": "11 家机构：Smithsonian、Paris Musées、National Gallery of Denmark、Harvard Art Museums、The Met、Europeana、Rijksmuseum、Art Institute of Chicago、Cleveland Museum of Art、Wellcome Collection、Minneapolis Institute of Art",
+      "sourceUrl": "https://museo.app/",
+      "evidence": "首屏下方横向滚动的机构名带与 live.navLabels 的十一个机构名",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://museo.app/",
+      "evidence": "首页没有定价、登录或注册入口，只有搜索框与 GitHub 链接",
+      "confidence": 0.9
+    },
+    {
+      "field": "sourceCode",
+      "value": "公开在 GitHub，作者 Chase McCoy",
+      "sourceUrl": "https://museo.app/",
+      "evidence": "页脚 Lovingly constructed by Chase McCoy • View the code on GitHub",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/museo-app",
+    "designMdUrl": "https://vislexicon.com/site/museo-app.md",
+    "checkedAt": "2026-09-15T10:40:42.086Z",
+    "license": "unknown"
+  }
+}

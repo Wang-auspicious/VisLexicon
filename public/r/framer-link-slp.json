@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "48d664e6f779f6a924715c37b0ba0e69bf80e945fc86f9413ceb8852e9f41739",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "framer-link-slp",
+  "entityId": "entity-framer-link-slp",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://framer.link/slp",
+    "finalUrl": "https://www.framer.com/?via=slp&dub_id=y4nTGTGBCxkAxtKm",
+    "checkedAt": "2026-09-15T11:15:26.146Z"
+  },
+  "editorial": {
+    "name": "Framer",
+    "descriptionZh": "framer.link/slp 是一条带推广参数的短链，实际落到 Framer 主站首页，页面上是同一套「AI 设计 agent」的产品介绍与客户案例。",
+    "takeawayZh": "看画布内 agent 怎么把改版做成可回退的步骤",
+    "noteZh": "实测这条地址会 302 到 https://www.framer.com/?via=slp&dub_id=…，落地的就是 Framer 主站首页，因此看到的内容和官网首页一致，只是 URL 上多了一段推广参数。首屏黑底白字 Framer is the AI design agent for every step from idea to launch，按钮 Get started for free 和 Download app，下面嵌了一个模拟对话框：New Chat 加 Ask Framer... 输入框，右下角标着 Opus 4.8。往下 Agents that work alongside you, not instead of you 一段把 agent 分成设计、CMS、写代码三种用法，CMS 那段用 Site · main / Invite / Publish / Collections / Fields 的界面示意，写代码那段给了 Create a few layout variations of my site. 这样的示例指令。再往下是 Shipped with Framer 与 Miro、Perplexity、Legora、Mixpanel、Zapier 等客户案例。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这条 entry 的 finalUrl 是 Framer 官网首页（只多了 via / dub_id 推广参数），页面上能拿走的只有 Get started for free 与 Download app，因此与官网首页一样归产品与公司官网。",
+        "evidenceUrl": "https://www.framer.com/"
+      },
+      {
+        "statement": "候选池把它记为 framer.link 域名下的一个链接，实测跳转后与 https://www.framer.com/ 同页，条目内容按落地页写而不是按短链本身写。",
+        "evidenceUrl": "https://framer.link/slp"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:15:26.146Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "download",
+      "prototype"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "desktop",
+      "figma"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "publish"
+    ],
+    "audiences": [
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://framer.link/slp",
+      "finalUrl": "https://www.framer.com/?via=slp&dub_id=y4nTGTGBCxkAxtKm",
+      "title": "Framer: AI design agent",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/framer-link-slp/identity.jpg",
+        "sha256": "78871f6c696ea0e872b58c382f16712ddb2a11c0cb4fd440e4fae4c5dc7a37de",
+        "width": 1280,
+        "height": 900,
+        "bytes": 56786,
+        "alt": "Framer 首屏：Framer is the AI design agent for every step from idea to la"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "redirect",
+      "value": "https://framer.link/slp → https://www.framer.com/?via=slp&dub_id=…",
+      "sourceUrl": "https://framer.link/slp",
+      "evidence": "两段实测的 http.finalUrl 与 live 页面标题完全一致，落地即 Framer 官网首页",
+      "confidence": 1
+    },
+    {
+      "field": "agentUses",
+      "value": "Design with an agent / Run your CMS with an agent / Code with an agent",
+      "sourceUrl": "https://www.framer.com/agents",
+      "evidence": "Agents that work alongside you, not instead of you 段落下的三个分块标题",
+      "confidence": 1
+    },
+    {
+      "field": "customerStories",
+      "value": "Miro、Perplexity、Legora、Mixpanel、Zapier、Flora、Mutiny、StackAI",
+      "sourceUrl": "https://www.framer.com/stories",
+      "evidence": "Shipped with Framer 区块与 /stories/* 八条路径",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Freemium",
+      "sourceUrl": "https://www.framer.com/pricing",
+      "evidence": "首屏并列 Get started for free 与 Download app，导航另有独立 Pricing 与 Enterprise 入口",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/framer-link-slp",
+    "designMdUrl": "https://vislexicon.com/site/framer-link-slp.md",
+    "checkedAt": "2026-09-15T11:15:26.146Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1b737c0cc0d02143e729f962b0eb9fd50f13b4c0d58442c402dad91b93836b36",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "privacy-com",
+  "entityId": "entity-privacy-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://privacy.com",
+    "finalUrl": "https://www.privacy.com/",
+    "checkedAt": "2026-09-15T11:17:08.179Z"
+  },
+  "editorial": {
+    "name": "Privacy.com",
+    "descriptionZh": "虚拟卡服务商 Privacy 的产品首页，用一次性、锁商户或锁类目的卡号替代真实卡号付款，可设消费上限、随时暂停和关闭；首屏打 600k+ 用户。",
+    "takeawayZh": "给每笔订阅和 AI Agent 发一张限额虚拟卡",
+    "noteZh": "首屏黑底，紫色主标题 Privacy and security built into your payments，下面一枚 Sign up For Privacy 按钮，右侧浮着一张标着 Merchant-Locked Card 的蓝色卡片和 256-BIT encryption 的 SOC 2 Type II 金色徽章。导航把 Single-Use Cards、Merchant-Locked Cards、Category-Locked Cards、Everywhere Cards 四种卡型并排，Resources 里挂着 Browser Extension、Mobile App、Privacy MCP & CLI、AI Agents & Assistants。定价区写着 Plus $5/mo. 与 Pro $10/mo.，Plus 主打 Category Cards 与 Card notes，再往下压一排 600k+ users 的评价卡。",
+    "recommendation": null,
+    "pricing": "Freemium；Plus $5/mo.、Pro $10/mo.，另有 Premium 档",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是订阅制的虚拟卡服务（四种卡型加消费上限、暂停与关闭），页面没有可复制或下载的设计产物，按产品与公司官网归类。",
+        "evidenceUrl": "https://www.privacy.com/pricing"
+      },
+      {
+        "statement": "首屏主视觉是自家卡片渲染加 600k+ 用户社会证明，页面主体是产品功能介绍而不是素材或组件。",
+        "evidenceUrl": "https://www.privacy.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:17:08.179Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance",
+      "ecommerce",
+      "saas",
+      "agent"
+    ],
+    "deliverables": [],
+    "actions": [
+      "purchase",
+      "browse",
+      "compare"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "browser-extension",
+      "mcp",
+      "cli"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://privacy.com",
+      "finalUrl": "https://www.privacy.com/",
+      "title": "Privacy.com Virtual Cards – Secure, Temporary Cards",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/privacy-com/identity.jpg",
+        "sha256": "7c7ded1af1fe6285030c4214cb4ee553b240e7963188af0e94eb695f7264cae5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84621,
+        "alt": "Privacy.com 首屏：Privacy and security built into your payments"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Plus $5/mo.、Pro $10/mo.，另有 Premium 档",
+      "sourceUrl": "https://www.privacy.com/pricing",
+      "evidence": "首页 Carefully crafted Privacy Plans to match your needs 一段下列出 Plus 与 Pro 的月费与说明",
+      "confidence": 1
+    },
+    {
+      "field": "cardTypes",
+      "value": "Single-Use Cards、Merchant-Locked Cards、Category-Locked Cards、Everywhere Cards 四种",
+      "sourceUrl": "https://www.privacy.com/virtual-card",
+      "evidence": "顶部导航 Pay with Virtual Cards 下拉下的四个卡型入口",
+      "confidence": 1
+    },
+    {
+      "field": "security",
+      "value": "PCI-DSS compliant、SOC 2 Type II certified、256-bit encryption",
+      "sourceUrl": "https://www.privacy.com/security",
+      "evidence": "首页 Secure by design. 一段与首屏卡片上的徽章",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "Trusted by over 600k+ customers",
+      "sourceUrl": "https://www.privacy.com/",
+      "evidence": "顶部黑条与首屏下方 Join the 600k+ users 一段",
+      "confidence": 1
+    },
+    {
+      "field": "agentSupport",
+      "value": "Privacy MCP & CLI 与 AI Agents & Assistants 是独立入口",
+      "sourceUrl": "https://www.privacy.com/ai",
+      "evidence": "导航 Resources 分组与页脚 Company 分组下的链接",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium；Plus $5/mo.、Pro $10/mo.，另有 Premium 档。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/privacy-com",
+    "designMdUrl": "https://vislexicon.com/site/privacy-com.md",
+    "checkedAt": "2026-09-15T11:17:08.179Z",
+    "license": "unknown"
+  }
+}

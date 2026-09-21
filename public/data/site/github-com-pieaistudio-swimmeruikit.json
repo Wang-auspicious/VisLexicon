@@ -1,0 +1,182 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2ebf3b442fb5e4f4a20cda03ecb00f0744d1f93f19d1efc10c277f83ffc324f4",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-pieaistudio-swimmeruikit",
+  "entityId": "entity-github-com-pieaistudio-swimmeruikit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/PieAIStudio/SwimmerUIKit",
+    "finalUrl": "https://github.com/PieAIStudio/SwimmerUIKit",
+    "checkedAt": "2026-09-15T11:48:24.706Z"
+  },
+  "editorial": {
+    "name": "PieAIStudio/SwimmerUIKit",
+    "descriptionZh": "PieAIStudio 的 React UI Kit 仓库，npm 包名 @pieai/swimmer-ui-kit，README 讲清楚里面有哪些组件、怎么装，以及为 Capacitor / Tauri 这类外壳应用做的准备，主推的是一组液态（liquid）控件。",
+    "takeawayZh": "装 swimmer-ui-kit，直接拿液态控件和游戏图标",
+    "noteZh": "仓库 About 栏只挂了一条外链 swimmer-ui-kit.vercel.app，没有描述文字，星标和 fork 都是 0，176 次提交、14 个 tag。文件列表能看出这套件的构成：.storybook 里放着组件预览，public/assets/game/ui/clay 是游戏用的 clay 图标，preview 与 bin 两个目录的提交信息反复提到 liquid controls 与 minification-safe liquid interaction，.storybook 那条还在修 LiquidGroup 在 StrictMode 重挂载后每个液态组件失效的问题。README 的小节依次是 Install、What's inside、Wrapped-app (Capacitor/Tauri) readiness、Compatibility contract (1.0)、Development，Languages 是 TypeScript 75.1% / CSS 16.5% / JavaScript 8.3% / HTML 0.1%，Contributors 里除了 PieAIStudio 还有一个 claude。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库交付的是一枚装进 React 应用的 UI 组件包（@pieai/swimmer-ui-kit），用户动作是 npm 安装后在页面里使用，README 的 What's inside、Install、Compatibility contract 都是组件库的写法，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/PieAIStudio/SwimmerUIKit"
+      },
+      {
+        "statement": "页面没有出现 React 字样，故 facets 里只按 Languages 条登记 TypeScript 与 CSS，不凭 npm 候选池的 react / tailwind 标签加技术。",
+        "evidenceUrl": "https://github.com/PieAIStudio/SwimmerUIKit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:24.706Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "desktop",
+      "android",
+      "ios"
+    ],
+    "technologies": [
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/PieAIStudio/SwimmerUIKit",
+      "finalUrl": "https://github.com/PieAIStudio/SwimmerUIKit",
+      "title": "GitHub - PieAIStudio/SwimmerUIKit · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-pieaistudio-swimmeruikit/identity.jpg",
+        "sha256": "6bae8867b8e668efc6c59bb1c5d46c6d58e7ceb4783628e195f1f62d953f0652",
+        "width": 1280,
+        "height": 900,
+        "bytes": 142855,
+        "alt": "PieAIStudio/SwimmerUIKit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/PieAIStudio/SwimmerUIKit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-pieaistudio-swimmeruikit/identity.jpg",
+          "alt": "PieAIStudio/SwimmerUIKit 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "readmeSections",
+      "value": "Install / What's inside / Wrapped-app (Capacitor/Tauri) readiness / Compatibility contract (1.0) / Development",
+      "sourceUrl": "https://github.com/PieAIStudio/SwimmerUIKit",
+      "evidence": "README 各级标题",
+      "confidence": 1
+    },
+    {
+      "field": "liquidComponents",
+      "value": "主打液态控件，涉及 LiquidGroup 与 liquid CTA，2.6.1 修过 minification-safe liquid interaction",
+      "sourceUrl": "https://github.com/PieAIStudio/SwimmerUIKit",
+      "evidence": "src 与 .storybook 目录的提交信息，含 release 2.6.1 with minification-safe liquid interaction 与 LiquidGroup 相关修复",
+      "confidence": 1
+    },
+    {
+      "field": "gameIcons",
+      "value": "public/assets/game/ui/clay 下是自己画的 clay 风格游戏图标",
+      "sourceUrl": "https://github.com/PieAIStudio/SwimmerUIKit",
+      "evidence": "文件列表该目录行与提交信息 real clay game icons + token-overflow fix",
+      "confidence": 1
+    },
+    {
+      "field": "languageBreakdown",
+      "value": "TypeScript 75.1% / CSS 16.5% / JavaScript 8.3% / HTML 0.1%",
+      "sourceUrl": "https://github.com/PieAIStudio/SwimmerUIKit",
+      "evidence": "右下角 Languages 条形图与图例",
+      "confidence": 1
+    },
+    {
+      "field": "distribution",
+      "value": "仓库带 .storybook 预览与 npm 发布流程，最新 CHANGELOG 记到 2.6.1",
+      "sourceUrl": "https://github.com/PieAIStudio/SwimmerUIKit",
+      "evidence": ".storybook 目录、CHANGELOG.md 行以及 ci 提交信息 give npm's index longer than two minutes to catch up",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-pieaistudio-swimmeruikit.md",
+  "registryUrl": "/r/github-com-pieaistudio-swimmeruikit.json"
+}

@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "fa78535c0fdee16b0f99edaf7e99c037f0f92e87c0ba19cdc1e1f3205ec720dc",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "macaly-com",
+  "entityId": "entity-macaly-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://macaly.com",
+    "finalUrl": "https://www.macaly.com/",
+    "checkedAt": "2026-09-15T10:33:29.810Z"
+  },
+  "editorial": {
+    "name": "Macaly",
+    "descriptionZh": "面向创业者和小生意的 AI 建站平台：一句 prompt 出网站或 Web App，自带数据库、托管域名与 SEO，也能直接从 WhatsApp 对话里建站。",
+    "takeawayZh": "一句话起站，接上数据库和自定义域名就能上线运营",
+    "noteZh": "首屏是黄绿底铺满手绘涂鸦，中间一只大眼睛吉祥物趴在输入框上，占位文字写着 Build a fashion brand website，右下角是 Start building。往下 Discover projects 把别人做的 Language school、Wine bar、Yoga studio、Tax advisor、Florist、Barbershop 连 prompt 一起摆出来，写着可以照抄；Out of ideas? 那排还给了 Café with opening hours、Hair salon with bookings、Plumbing company site、Redesign my current website 四条起手。顶部 Product 菜单里点名 Agent、Database、Hosting and domains 和从 WhatsApp 对话建站的入口。",
+    "recommendation": null,
+    "pricing": "freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "主产物是可直接上线的站点或 Web App：Agent 一句写的是 ships full-stack apps from a single prompt，另有 Database 与 Hosting and domains 两个能力页。",
+        "evidenceUrl": "https://www.macaly.com/"
+      },
+      {
+        "statement": "灵感区展示的是端到端做出来的真实站（Real websites, dashboards and apps built end-to-end with Macaly），说明交付单位是整站。",
+        "evidenceUrl": "https://www.macaly.com/inspiration"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:33:29.810Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "marketing"
+    ],
+    "deliverables": [
+      "full-page",
+      "prompt"
+    ],
+    "actions": [
+      "generate",
+      "publish",
+      "browse",
+      "copy",
+      "collaborate"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "ideation",
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://macaly.com",
+      "finalUrl": "https://www.macaly.com/",
+      "title": "Macaly | AI Website & Web App Platform for Founders & Small Businesses",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/macaly-com/identity.jpg",
+        "sha256": "70385c60cb9b8e95d42bf25566871d97e529a2dff002db2dbbf5482f32b0c870",
+        "width": 1280,
+        "height": 900,
+        "bytes": 104027,
+        "alt": "Macaly 首屏：Create without limits one idea at a time."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "build-channels",
+      "value": "网页 prompt、WhatsApp 对话，以及从 LinkedIn 页面或既有网站改造",
+      "sourceUrl": "https://www.macaly.com/",
+      "evidence": "Product 菜单的 WhatsApp 项与站内 /linkedin-to-website、/website-redesign 路径",
+      "confidence": 1
+    },
+    {
+      "field": "platform-features",
+      "value": "内置数据库（收表单、订单、预约、登录）、托管与域名、SEO、网页抓取",
+      "sourceUrl": "https://www.macaly.com/",
+      "evidence": "首屏下方 Agent / Database / Hosting and domains / Web scraping 列表",
+      "confidence": 1
+    },
+    {
+      "field": "inspiration-gallery",
+      "value": "灵感区收录真实站并允许复制其 prompt",
+      "sourceUrl": "https://www.macaly.com/inspiration",
+      "evidence": "Discover projects 段落的 Check out what other people made, and copy their prompts",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/macaly-com",
+    "designMdUrl": "https://vislexicon.com/site/macaly-com.md",
+    "checkedAt": "2026-09-15T10:33:29.810Z",
+    "license": "unknown"
+  }
+}

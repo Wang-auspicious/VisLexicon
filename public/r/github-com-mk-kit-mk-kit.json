@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "355b02b5f117abc0ce523c7ff89580a85f9892e1deaf0a369032a0c167b93874",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-mk-kit-mk-kit",
+  "entityId": "entity-github-com-mk-kit-mk-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/mk-kit/mk-kit",
+    "finalUrl": "https://github.com/mk-kit/mk-kit",
+    "checkedAt": "2026-09-15T11:46:25.771Z"
+  },
+  "editorial": {
+    "name": "mk-kit/mk-kit",
+    "descriptionZh": "@mk-kit/ui 的仓库：一套可换主题、达 WCAG 2.1 AA 的 Angular 后台组件库，靠 Signals 与 CSS 变量做明暗主题；同一个 monorepo 里还有从组件抽出来的 @mk-kit/core 引擎和 OIDC 相关的 @mk-kit/auth。",
+    "takeawayZh": "拿 WCAG 2.1 AA 的 Angular 后台组件库。",
+    "noteZh": "仓库 About 侧栏写着 Themable, accessible Angular admin component library，并标了 MIT license；根目录排着 projects、visual-tests、BACKLOG.md、MIGRATION.md 和 CHANGELOG.md，提交历史里能看到 0.59.0: table compare、Angular 22 Signal Forms、以及把包改名成 @mk-kit/ui 并发布到公共 npm 的记录。README 的段落标题依次是 Requirements、Develop、Build & publish the library、Highlights。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "标题自称 component library，仓库也是完整的 Angular 组件包加文档项目，用户拿走的是可安装的组件代码而非页面设计，故归通用界面组件库；它带 theming 与 token 机制，但没有独立的设计系统文档站，所以没放到 design-system-suites。",
+        "evidenceUrl": "https://github.com/mk-kit/mk-kit"
+      },
+      {
+        "statement": "候选池把它列在 UI 组件与设计系统 / Tailwind 组件下，但仓库自己的描述与文件里都没有 Tailwind，那条子类不成立。",
+        "evidenceUrl": "https://github.com/mk-kit/mk-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:25.771Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "angular",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/mk-kit/mk-kit",
+      "finalUrl": "https://github.com/mk-kit/mk-kit",
+      "title": "GitHub - mk-kit/mk-kit: Themable, accessible Angular admin component library. Signals, WCAG 2.1 AA, CSS-variable theming, light/dark. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-mk-kit-mk-kit/identity.jpg",
+        "sha256": "0dbcfd15fb71969796e5edbba42afb46d682bad98fa5bc85f4ea9ea9f4111d7d",
+        "width": 1280,
+        "height": 900,
+        "bytes": 139159,
+        "alt": "mk-kit/mk-kit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/mk-kit/mk-kit",
+      "evidence": "About 侧栏的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "positioning",
+      "value": "Themable, accessible Angular admin component library. Signals, WCAG 2.1 AA, CSS-variable theming, light/dark.",
+      "sourceUrl": "https://github.com/mk-kit/mk-kit",
+      "evidence": "About 侧栏描述与页面 title 一字不差",
+      "confidence": 1
+    },
+    {
+      "field": "latestChanges",
+      "value": "CHANGELOG 写到 0.59.0（table compare、tree iconName、dialog focus/overflow、hotkeys）",
+      "sourceUrl": "https://github.com/mk-kit/mk-kit",
+      "evidence": "文件列表里 CHANGELOG.md 的最近一条提交信息",
+      "confidence": 1
+    },
+    {
+      "field": "repofiles",
+      "value": "projects、visual-tests、BACKLOG.md、MIGRATION.md、PATTERN.md、TRADEMARK.md",
+      "sourceUrl": "https://github.com/mk-kit/mk-kit",
+      "evidence": "根目录文件列表",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-mk-kit-mk-kit",
+    "designMdUrl": "https://vislexicon.com/site/github-com-mk-kit-mk-kit.md",
+    "checkedAt": "2026-09-15T11:46:25.771Z",
+    "license": "MIT"
+  }
+}

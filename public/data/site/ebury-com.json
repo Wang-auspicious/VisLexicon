@@ -1,0 +1,171 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1f709d5fbb402ee1f761160165e43d8ad620dac1a14efcc13be06c736ee78c08",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "ebury-com",
+  "entityId": "entity-ebury-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "ebury.com",
+  "official": {
+    "inputUrl": "https://ebury.com",
+    "finalUrl": "https://ebury.com/",
+    "checkedAt": "2026-09-15T10:59:24.335Z"
+  },
+  "editorial": {
+    "name": "Ebury",
+    "descriptionZh": "跨境支付与外汇风险管理的金融科技官网，把多币种账户、对冲、融资和 API 归到四条产品线，主打 160 多个国家与 140 多种币种。",
+    "takeawayZh": "蓝色满屏配一颗金属环形 3D 渲染当首屏主视觉",
+    "noteZh": "HTTP 阶段这个站返回 500，浏览器渲染后才拿到正常首屏。页面是整片天蓝色，左边 Global accounts built for ambitious businesses 分四行排开，配一枚黑色 Get started，上方还有一条 See what's new: Tools for speed and clarity 的小胶囊；右边是一颗由弧形金属片围成的 3D 环形渲染，中心一颗小球。页面左上角常驻一个位置选择器，要求先选国家和语言。",
+    "recommendation": null,
+    "pricing": "unknown（站内无公开价目，走 Get started 与客户经理）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首屏交付的是 Ebury 自己的跨境账户与外汇产品，站内 /products 下按 business-accounts、hedge、financing、connect 四条线展开。",
+        "evidenceUrl": "https://ebury.com/"
+      },
+      {
+        "statement": "归 product-company-sites：页面先要访客选国家和语言，再展示产品，是典型的金融机构产品官网结构。",
+        "evidenceUrl": "https://ebury.com/products/business-accounts"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:59:24.335Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "3d"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [
+      "brand-team"
+    ],
+    "access": [],
+    "licenses": [
+      "proprietary"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ebury.com",
+      "finalUrl": "https://ebury.com/",
+      "title": "Ebury | Global Growth, Unlocked",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/ebury-com/identity.jpg",
+        "sha256": "c59bf3facfbdfe4bcfc689dfe7e064d52b7e23729f8d1520f1fccff7f99d6bc3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 68251,
+        "alt": "Ebury 首屏：Select your country and preferred language."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://ebury.com",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/ebury-com/identity.jpg",
+          "alt": "Ebury 首屏：Select your country and preferred language.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "httpStatus",
+      "value": "HTTP 阶段返回 500（500 - Something unexpected happened），浏览器渲染后正常",
+      "sourceUrl": "https://ebury.com/",
+      "evidence": "http.title 是 500 错误页，live.title 才是正常标题",
+      "confidence": 1
+    },
+    {
+      "field": "h1",
+      "value": "Global accounts built for ambitious businesses",
+      "sourceUrl": "https://ebury.com/",
+      "evidence": "首屏左侧标题，分四行排开",
+      "confidence": 1
+    },
+    {
+      "field": "heroArt",
+      "value": "金属弧形片围成的 3D 环形渲染，中心一颗小球",
+      "sourceUrl": "https://ebury.com/",
+      "evidence": "首屏右侧主视觉，截图可辨认",
+      "confidence": 1
+    },
+    {
+      "field": "scale",
+      "value": "160+ countries to send payments、140+ currencies supported、2,000+ experts、50+ offices、30+ regulated markets",
+      "sourceUrl": "https://ebury.com/",
+      "evidence": "首屏下方循环滚动的数字行",
+      "confidence": 0.9
+    },
+    {
+      "field": "navProducts",
+      "value": "Business Accounts、Hedge、Financing、Connect 四条产品线",
+      "sourceUrl": "https://ebury.com/products/hedge",
+      "evidence": "顶部导航与 live.navLabels",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。null"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/ebury-com.md",
+  "registryUrl": "/r/ebury-com.json"
+}

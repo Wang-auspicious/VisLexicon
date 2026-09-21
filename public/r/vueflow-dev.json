@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3baea59a857822fcc797d64b2b84cb6468307e6f7a64936df6028e453e2d68ac",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "vueflow-dev",
+  "entityId": "entity-vueflow-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://vueflow.dev",
+    "finalUrl": "https://vueflow.dev/",
+    "checkedAt": "2026-09-15T11:54:45.118Z"
+  },
+  "editorial": {
+    "name": "Vue Flow",
+    "descriptionZh": "Vue 3 的流程图与节点图组件：自带 zoom & pan、单/多选、可拖动节点与边，支持嵌套节点和嵌套图，站上拿 n8n 与 Kestra 两个真实产品做 showcase。",
+    "takeawayZh": "一个 Vue 组件，换来自定义节点与嵌套流程图画布",
+    "noteZh": "首屏就是一张真渲染的节点图：中间一块绿色 Vue Flow 节点用粉、橙、蓝三条虚线连到 Check The Examples、Read The Documentation、Acknowledgement 三个彩色节点，顶上导航只有 Guide / Examples / TypeDocs 加版本号 v1.48.2。图下方一排统计写着 Stargazers 7001、Downloads (last month) 2006503、License MIT。再往下 Interactive Graphs / Customizable / Complex Flows / Additional Features 四段，Complex Flows 那段用 Outer Node、Parent Node、Child Node 画出嵌套结构。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的不是一组基础控件，而是一整块可嵌入的画布式复合控件：正文保证 zoom & pan、multi-selections、draggable elements、nested nodes 都开箱可用，还配 Background、Minimap、Controls 三件附属组件，因此落在页面区块与可嵌入复合控件这一小类。",
+        "evidenceUrl": "https://vueflow.dev/"
+      },
+      {
+        "statement": "导航只有 Guide / Examples / TypeDocs，正文用 Complex Flows 与 Additional Features 两段讲能力和内部状态访问，是组件库文档站而非案例集合。",
+        "evidenceUrl": "https://vueflow.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:54:45.118Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vueflow.dev",
+      "finalUrl": "https://vueflow.dev/",
+      "title": "Vue Flow",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vueflow-dev/identity.jpg",
+        "sha256": "e474a29854d7945296569c29f3098a48346e0c404f8d18079dda0f1ec1f9de33",
+        "width": 1280,
+        "height": 900,
+        "bytes": 73739,
+        "alt": "Vue Flow 首屏：Vue Flow"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://vueflow.dev/",
+      "evidence": "首屏节点图下方三格统计条的第三格写着 License MIT",
+      "confidence": 1
+    },
+    {
+      "field": "stats",
+      "value": "Stargazers 7001，Downloads (last month) 2006503",
+      "sourceUrl": "https://vueflow.dev/",
+      "evidence": "首屏节点图下方统计条的前两格数字",
+      "confidence": 1
+    },
+    {
+      "field": "current-version",
+      "value": "v1.48.2",
+      "sourceUrl": "https://vueflow.dev/",
+      "evidence": "顶部导航栏 Vue Flow 后面挂着版本号 v1.48.2",
+      "confidence": 1
+    },
+    {
+      "field": "showcase",
+      "value": "n8n、Kestra",
+      "sourceUrl": "https://vueflow.dev/",
+      "evidence": "Putting Ideas into Action - The Showcase 一段列出的两个采用方及其产品说明",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/vueflow-dev",
+    "designMdUrl": "https://vislexicon.com/site/vueflow-dev.md",
+    "checkedAt": "2026-09-15T11:54:45.118Z",
+    "license": "MIT"
+  }
+}

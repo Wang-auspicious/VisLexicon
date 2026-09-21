@@ -1,0 +1,174 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "abc92244f201b3a99ea3242eab7e911cd3ff92092bce89ad4d2782d33b255b55",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-stripe-react-stripe-js-git",
+  "entityId": "entity-github-com-stripe-react-stripe-js-git",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/stripe/react-stripe-js.git",
+    "finalUrl": "https://github.com/stripe/react-stripe-js",
+    "checkedAt": "2026-09-15T11:51:52.643Z"
+  },
+  "editorial": {
+    "name": "stripe/react-stripe-js",
+    "descriptionZh": "Stripe.js 与 Stripe Elements 的 React 封装，把支付元素做成 React 组件。给在 React 里自建结账页、接 Checkout Sessions API 的开发者用。",
+    "takeawayZh": "在 React 里用组件拼 Stripe 结账页",
+    "noteZh": "About 写 React components for Stripe.js and Stripe Elements，官网页指向 stripe.com/docs/stripe-js/react。README 里 Requirements 一节写最低要 React v16.8，起不来就建议退回 legacy react-stripe-elements；Getting started 分 Build a custom checkout page using the Checkout Sessions API、Add React Stripe.js to your React app、Try it out using CodeSandbox 三块，Documentation 指向 React Stripe.js reference。仓库 442 Commits、101 个 release（最新 v6.10.0）、2.0k star、74 位贡献者；根目录 .storybook、examples、src、test 并列，MIT。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是 React 组件形式的支付元素封装，用户带走的是可安装的组件代码，不构成带治理层的设计系统，属通用界面组件库。",
+        "evidenceUrl": "https://github.com/stripe/react-stripe-js"
+      },
+      {
+        "statement": "README 有独立的 Requirements 与 Getting started 两节讲接入方式，说明它是给应用集成用的实现层。",
+        "evidenceUrl": "https://github.com/stripe/react-stripe-js"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:51:52.643Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/stripe/react-stripe-js.git",
+      "finalUrl": "https://github.com/stripe/react-stripe-js",
+      "title": "GitHub - stripe/react-stripe-js: React components for Stripe.js and Stripe Elements · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-stripe-react-stripe-js-git/identity.jpg",
+        "sha256": "fb2483436da12b3c1d92aff49ff082c9117f49518045e9eb62a9e0092555e5bd",
+        "width": 1280,
+        "height": 900,
+        "bytes": 132939,
+        "alt": "stripe/react-stripe-js 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/stripe/react-stripe-js.git",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-stripe-react-stripe-js-git/identity.jpg",
+          "alt": "stripe/react-stripe-js 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/stripe/react-stripe-js",
+      "evidence": "右侧 About 面板与 README 文件区的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "reactRequirement",
+      "value": "最低 React v16.8，更低版本建议改用 legacy react-stripe-elements",
+      "sourceUrl": "https://github.com/stripe/react-stripe-js",
+      "evidence": "README 的 Requirements 一节",
+      "confidence": 1
+    },
+    {
+      "field": "primaryUseCase",
+      "value": "配合 Checkout Sessions API 搭自定义结账页",
+      "sourceUrl": "https://github.com/stripe/react-stripe-js",
+      "evidence": "Getting started 的第一项 Build a custom checkout page using the Checkout Sessions API",
+      "confidence": 1
+    },
+    {
+      "field": "release",
+      "value": "最新 v6.10.0，累计 101 个 release，442 次提交，2.0k star",
+      "sourceUrl": "https://github.com/stripe/react-stripe-js",
+      "evidence": "右侧 Releases 一栏与仓库头部计数",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-stripe-react-stripe-js-git.md",
+  "registryUrl": "/r/github-com-stripe-react-stripe-js-git.json"
+}

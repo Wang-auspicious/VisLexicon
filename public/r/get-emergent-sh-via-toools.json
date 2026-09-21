@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c27225488306e4fafde4ba1febfe983659979e299a76c120cdc649a520ebae76",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "get-emergent-sh-via-toools",
+  "entityId": "entity-get-emergent-sh-via-toools",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://get.emergent.sh/via-toools",
+    "finalUrl": "https://app.emergent.sh/landing?pscd=get.emergent.sh&ps_partner_key=OTcyOWYxNzU4NTNi&ps_xid=RXUuaZTaa0XTnd&gsxid=RXUuaZTaa0XTnd&gspk=OTcyOWYxNzU4NTNi",
+    "checkedAt": "2026-09-15T09:53:42.966Z"
+  },
+  "editorial": {
+    "name": "Emergent",
+    "descriptionZh": "用对话生成网站与应用的 AI 平台。这次实测落在 app.emergent.sh 的落地页，页面本身能打开，但公开区域只有登录入口和一块没加载出来的演示占位。",
+    "takeawayZh": "本轮只有登录入口，看不到能带走的公开内容。",
+    "noteZh": "进去落在 app.emergent.sh，正文标题是「Describe your idea / Build websites & apps with AI」，底下排着 Continue with Google、GitHub、Apple、Facebook、Email、Phone 六个登录按钮，右侧留了一块灰色占位，演示内容没渲染出来。同一个地址直接抓取时返回 403 和标题 Region Restricted - Emergent。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "着陆页自述 Build websites & apps with AI，meta 里也写 AI-powered app development platform，按此归入网站与应用构建器；但整页被登录墙挡住，分类只依据这一句自述，证据不足。",
+        "evidenceUrl": "https://app.emergent.sh/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T09:53:42.966Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "generate"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "login-required"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://get.emergent.sh/via-toools",
+      "finalUrl": "https://app.emergent.sh/landing?pscd=get.emergent.sh&ps_partner_key=OTcyOWYxNzU4NTNi&ps_xid=RXUuaZTaa0XTnd&gsxid=RXUuaZTaa0XTnd&gspk=OTcyOWYxNzU4NTNi",
+      "title": "Emergent - Build Apps with AI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/get-emergent-sh-via-toools/identity.jpg",
+        "sha256": "49b1d2e1b0ce0e7a9f730c0386107d0ff7249bf8af00897b1b1742470e1d004b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 46811,
+        "alt": "Emergent 首屏：Emergent is not available"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "accessGate",
+      "value": "登录墙",
+      "sourceUrl": "https://app.emergent.sh/",
+      "evidence": "首屏截图只有六种 Continue with 登录按钮和一块空白占位",
+      "confidence": 1
+    },
+    {
+      "field": "httpStatus",
+      "value": "403 Region Restricted",
+      "sourceUrl": "https://get.emergent.sh/via-toools",
+      "evidence": "HTTP 阶段 title 为 Region Restricted - Emergent，h1 为 Emergent is not available",
+      "confidence": 1
+    },
+    {
+      "field": "footerNav",
+      "value": "Enterprise / Build / Integrations / Docs / Tutorials / Case Studies / Blog / Affiliates",
+      "sourceUrl": "https://app.emergent.sh/",
+      "evidence": "渲染后页脚的导航标签",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "部分内容需要登录后才能访问，抓取前先确认其服务条款。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/get-emergent-sh-via-toools",
+    "designMdUrl": "https://vislexicon.com/site/get-emergent-sh-via-toools.md",
+    "checkedAt": "2026-09-15T09:53:42.966Z",
+    "license": "unknown"
+  }
+}

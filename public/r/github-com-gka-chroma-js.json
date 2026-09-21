@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "38543910ee15bd7bf5e2fdb3c3b4c915b37f7b1951f98a0e861a3fcd24c27ada",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-gka-chroma-js",
+  "entityId": "entity-github-com-gka-chroma-js",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/gka/chroma.js",
+    "finalUrl": "https://github.com/gka/chroma.js",
+    "checkedAt": "2026-09-15T12:50:34.951Z"
+  },
+  "editorial": {
+    "name": "gka/chroma.js",
+    "descriptionZh": "chroma.js 是一个零依赖的 JavaScript 颜色库，做颜色转换与色阶（color scale），支持 Lab/Lch 插值、分位数和对数色阶。",
+    "takeawayZh": "chroma.scale 生成色阶，或 darken().hex() 调单个颜色",
+    "noteZh": "右侧 About 除了 JavaScript library for all kinds of color manipulations，还挂了 gka.github.io/chroma.js/ 的站点链接与 chroma、color-conversion、color-manipulation、javascript-library 等标签，10.6k stars、548 forks。README 开头自称 a tiny small-ish zero-dependency JavaScript library for all kinds of color conversions and color scales，示例从 chroma('#D4F880').darken().hex() 讲到 chroma.scale(['white','red']).mode('lab')、chroma.scale('RdYlBu').domain(myValues, 7, 'quantiles') 与对数色阶，并提示可下载 chroma.min.js、用 unpkg 托管版或在 SASS 里用 chromatic-sass。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个可 npm install 的零依赖库（Install from npm / import chroma from 'chroma-js'），用户拿走的是代码而非素材。",
+        "evidenceUrl": "https://github.com/gka/chroma.js"
+      },
+      {
+        "statement": "README 用整篇代码示例讲 API（色阶、模式、domain、quantiles、log），属开发环节的依赖库；词典里没有颜色库小类，此项存在归类不确定性。",
+        "evidenceUrl": "https://github.com/gka/chroma.js"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:50:34.951Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/gka/chroma.js",
+      "finalUrl": "https://github.com/gka/chroma.js",
+      "title": "GitHub - gka/chroma.js: JavaScript library for all kinds of color manipulations · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-gka-chroma-js/identity.jpg",
+        "sha256": "7e8abac48c06c0948a377263f0e6523029e01de449f632a7336d9755b603f131",
+        "width": 1280,
+        "height": 900,
+        "bytes": 97302,
+        "alt": "gka/chroma.js 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "未知",
+      "sourceUrl": "https://github.com/gka/chroma.js",
+      "evidence": "About 栏与 README 标签行只写 License，没有出现具体许可证名，故记 unknown",
+      "confidence": 1
+    },
+    {
+      "field": "stars",
+      "value": "10.6k",
+      "sourceUrl": "https://github.com/gka/chroma.js",
+      "evidence": "右侧 About 栏 Star 10.6k、Fork 548",
+      "confidence": 1
+    },
+    {
+      "field": "docsSite",
+      "value": "gka.github.io/chroma.js/",
+      "sourceUrl": "https://github.com/gka/chroma.js",
+      "evidence": "About 栏的站点链接与 README 里 dive into the interactive documentation 一处",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-gka-chroma-js",
+    "designMdUrl": "https://vislexicon.com/site/github-com-gka-chroma-js.md",
+    "checkedAt": "2026-09-15T12:50:34.951Z",
+    "license": "unknown"
+  }
+}

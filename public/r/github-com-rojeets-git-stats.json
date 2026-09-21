@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "27c0c3de90b40adaeb6c347d8521e3279b312ec26e791b618764ee9fb05174f1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-rojeets-git-stats",
+  "entityId": "entity-github-com-rojeets-git-stats",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/rojeets/git-stats",
+    "finalUrl": "https://github.com/rojeets/git-stats",
+    "checkedAt": "2026-09-15T11:50:08.777Z"
+  },
+  "editorial": {
+    "name": "Rojeets/git-stats",
+    "descriptionZh": "一个 Next.js 单页应用，输入 GitHub 或 GitLab 用户名后抓公开贡献数据，画成五档色阶的贡献热力图，并给出总贡献数、当前连续天数、最长连续天数和单日最高。线上跑在 git-stats-pi-dun.vercel.app。",
+    "takeawayZh": "把 GitHub / GitLab 贡献画成热力图并算连击",
+    "noteZh": "README 标题 Git Productivity Heatmap，一句 A single-page Next.js app that visualizes public GitHub and GitLab contribution activity in a GitHub-style heatmap with summary statistics.；Getting Started 给 npm install / npm run dev 与 http://localhost:3000。渲染出来的东西逐条列成：五档色阶的 contribution heatmap、Total contributions、Current streak（截至今天或昨天的连续活跃天数）、Longest streak、Best single day。How It Works 讲 GitHub 数据走 Next.js Edge route handler 代理 github.com/users/{username}/contributions 那一段 HTML 再用正则抽日期与次数，GitLab 走 gitlab.com/users/{username}/calendar.json，两边在重叠日期上把计数相加。About 侧栏给 git-stats-pi-dun.vercel.app，Languages 是 TypeScript 94.1% / CSS 4.6% / JavaScript 1.3%，4 次提交，No releases published。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿到的是一个把贡献数据画成热力图的实现（五档色阶热力图加四项统计），交付物是数据可视化代码而不是可复用的通用组件或素材，故归图表与数据可视化代码。",
+        "evidenceUrl": "https://github.com/Rojeets/git-stats"
+      },
+      {
+        "statement": "README 的 How It Works 写清了 GitHub 与 GitLab 两个数据源与合并算法，Getting Started 是本地起 Next.js 应用的两条命令。",
+        "evidenceUrl": "https://github.com/Rojeets/git-stats"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:50:08.777Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "full-page",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript",
+      "tailwind",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/rojeets/git-stats",
+      "finalUrl": "https://github.com/rojeets/git-stats",
+      "title": "GitHub - Rojeets/git-stats · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-rojeets-git-stats/identity.jpg",
+        "sha256": "f9696ab6a71cd20003e4dcf6cd0ea432a5065512ace82e7adb8d6ce98f9dba24",
+        "width": 1280,
+        "height": 900,
+        "bytes": 124302,
+        "alt": "Rojeets/git-stats 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "renderedMetrics",
+      "value": "五档色阶贡献热力图、Total contributions、Current streak、Longest streak、Best single day",
+      "sourceUrl": "https://github.com/Rojeets/git-stats",
+      "evidence": "README 里 Enter a GitHub username, a GitLab username, or both… 之后列出的五项渲染内容",
+      "confidence": 1
+    },
+    {
+      "field": "dataSources",
+      "value": "GitHub 走 Next.js Edge route handler 代理 github.com/users/{username}/contributions 的 HTML 片段并正则解析；GitLab 走 gitlab.com/users/{username}/calendar.json",
+      "sourceUrl": "https://github.com/Rojeets/git-stats",
+      "evidence": "README How It Works 一段的两个数据源说明",
+      "confidence": 1
+    },
+    {
+      "field": "localRun",
+      "value": "npm install / npm run dev，浏览器开 http://localhost:3000",
+      "sourceUrl": "https://github.com/Rojeets/git-stats",
+      "evidence": "README Getting Started 一节的命令",
+      "confidence": 1
+    },
+    {
+      "field": "deployment",
+      "value": "git-stats-pi-dun.vercel.app",
+      "sourceUrl": "https://github.com/Rojeets/git-stats",
+      "evidence": "About 栏的 website 链接",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "0 stars / 0 forks / 4 commits / 1 branch，No releases published；Languages TypeScript 94.1% / CSS 4.6% / JavaScript 1.3%",
+      "sourceUrl": "https://github.com/Rojeets/git-stats",
+      "evidence": "仓库头部计数、About 栏与右侧 Languages 条",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-rojeets-git-stats",
+    "designMdUrl": "https://vislexicon.com/site/github-com-rojeets-git-stats.md",
+    "checkedAt": "2026-09-15T11:50:08.777Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c3c9c3db9fa63a1ca375a1c3c6ec2a69683e1e0fae4878fd2bcc08472b1a6c69",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "developer-expofp-com",
+  "entityId": "entity-developer-expofp-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://developer.expofp.com",
+    "finalUrl": "https://developer.expofp.com/",
+    "checkedAt": "2026-09-15T11:41:20.020Z"
+  },
+  "editorial": {
+    "name": "ExpoFP Developer Portal",
+    "descriptionZh": "ExpoFP 的开发者门户，一句 Free interactive floor plan software for expos and conferences，下面按 PLATFORM / WEB / NATIVE / CROSS-PLATFORM 四类摆五张卡片：General Documentation、JavaScript SDK、iOS、Android、React Native。",
+    "takeawayZh": "挑一个 ExpoFP SDK 嵌会场地板图",
+    "noteZh": "首屏是一个大标题 ExpoFP Developer Portal 加副标 Free interactive floor plan software for expos and conferences.，下面一个 Get Started with Service 按钮，再下面是五张等宽卡片：PLATFORM 的 General Documentation 写 Central hub — start here for platform guides, APIs and webhooks，WEB 的 JavaScript SDK 写 embedding, JavaScript API, and integration guides，NATIVE 的 iOS 与 Android 分别写 Swift SDK v5 和 Kotlin SDK v5，CROSS-PLATFORM 的 React Native 写 React Native SDK for ExpoFP maps, routing, and venue tooling，每张卡片底部都是一个 Open docs 链接。顶栏只有一个 Search 框和 github 图标，页脚是 © 2026 ExpoFP.com • Support • Status。整页只渲染出两张图，没有任何 SDK 正文或代码示例。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "拿不准：页面本身只是五张指向 SDK 文档的入口卡片，用户最直接能拿走的是能把 ExpoFP 交互式平面图嵌进自家页面的 SDK（General Documentation 自述允许 embedding），所以往可嵌入复合控件归；它同时很像一个 tool-service-directories / external-link-directory，但那是给第三方目录站用的，这里是产品自家门户。",
+        "evidenceUrl": "https://developer.expofp.com/"
+      },
+      {
+        "statement": "证据不足：整页只抓到约 700 字符正文和 2 张图，没有 SDK 细节、没有定价页、没有许可证，所以 facets 只保留了入口层面能确认的项。",
+        "evidenceUrl": "https://developer.expofp.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:41:20.020Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "marketing"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web",
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "javascript",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://developer.expofp.com",
+      "finalUrl": "https://developer.expofp.com/",
+      "title": "ExpoFP Developer Portal",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/developer-expofp-com/identity.jpg",
+        "sha256": "4f94787c4f58f02c5f143e23ad805f3ef8805ab2b6e618e36fda6c953dc7ba3c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75554,
+        "alt": "ExpoFP Developer Portal 首屏：ExpoFP"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "tagline",
+      "value": "Free interactive floor plan software for expos and conferences.",
+      "sourceUrl": "https://developer.expofp.com/",
+      "evidence": "首屏副标题原句",
+      "confidence": 1
+    },
+    {
+      "field": "sdkCards",
+      "value": "General Documentation（PLATFORM）、JavaScript SDK（WEB）、iOS、Android（NATIVE）、React Native（CROSS-PLATFORM）",
+      "sourceUrl": "https://developer.expofp.com/",
+      "evidence": "首屏五张卡片各自的类别小标、标题与一句说明",
+      "confidence": 1
+    },
+    {
+      "field": "sdkVersions",
+      "value": "iOS Swift SDK v5；Android Kotlin SDK v5",
+      "sourceUrl": "https://developer.expofp.com/",
+      "evidence": "两张 NATIVE 卡片的描述文字",
+      "confidence": 1
+    },
+    {
+      "field": "contentDepth",
+      "value": "全页正文约 700 字符、2 张图，没有 SDK 正文与代码示例",
+      "sourceUrl": "https://developer.expofp.com/",
+      "evidence": "简报 live.bodyText 全文与 live.imgCount=2、formCount=0",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://developer.expofp.com/",
+      "evidence": "页脚只有 © 2026 ExpoFP.com • Support • Status，没有许可证信息",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/developer-expofp-com",
+    "designMdUrl": "https://vislexicon.com/site/developer-expofp-com.md",
+    "checkedAt": "2026-09-15T11:41:20.020Z",
+    "license": "unknown"
+  }
+}

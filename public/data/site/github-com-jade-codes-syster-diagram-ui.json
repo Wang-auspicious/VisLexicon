@@ -1,0 +1,170 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ea34ff72ba899bb24bf73efbab0b6541ea24bf397ad1f93b128c02e817fd87ed",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-jade-codes-syster-diagram-ui",
+  "entityId": "entity-github-com-jade-codes-syster-diagram-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/jade-codes/syster-diagram-ui",
+    "finalUrl": "https://github.com/jade-codes/syster-diagram-ui",
+    "checkedAt": "2026-09-15T11:47:46.819Z"
+  },
+  "editorial": {
+    "name": "jade-codes/syster-diagram-ui",
+    "descriptionZh": "给 SysML v2 图用的 React 组件包：备好各个 SysML 元素类型的 React Flow 节点组件和关系连线组件，套上 VS Code 主题配色，塞进 ReactFlow 就能画图。",
+    "takeawayZh": "把 SysML v2 的节点与连线组件接进 React Flow",
+    "noteZh": "README 短得干净：标题 @syster/diagram-ui，下面一句 React UI components for SysML v2 diagrams.，示例代码只做一件事——从包里取出 nodeTypes、edgeTypes 传给 @xyflow/react 的 <ReactFlow />。Features 四条写 React Flow node components for SysML element types、React Flow edge components for SysML relationships、Styled for VS Code themes、Supports all SysML v2 definition and usage types；Dependencies 只有 @xyflow/react 和 @opensyster/diagram-core 两个；License 一节写 MIT；Development 建议用仓库自带的 DevContainer，里面预装 Node.js 20 LTS、Bun、ESLint 与 GitHub CLI。仓库仍很新，13 Commits、3 Contributors，最新版本 chore(release): v0.0.5-alpha。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一组 React 组件（nodeTypes 与 edgeTypes），用户拿走的方式是 npm 安装后 import 进自己的 React Flow 画布，属于界面实现层的组件库。",
+        "evidenceUrl": "https://github.com/jade-codes/syster-diagram-ui"
+      },
+      {
+        "statement": "分类存在两可：这些组件只服务于图/建模场景，也可读作可视化实现，但页面呈现的是「一组可复用的 React 组件 + 组件类型清单」而非图表绘制代码，故取通用界面组件库。",
+        "evidenceUrl": "https://github.com/jade-codes/syster-diagram-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:46.819Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/jade-codes/syster-diagram-ui",
+      "finalUrl": "https://github.com/jade-codes/syster-diagram-ui",
+      "title": "GitHub - jade-codes/syster-diagram-ui · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-jade-codes-syster-diagram-ui/identity.jpg",
+        "sha256": "d81ac1e74615efef5334cc8d2317db2d31fb0512b9fa13e6980a335b74c466db",
+        "width": 1280,
+        "height": 900,
+        "bytes": 123715,
+        "alt": "jade-codes/syster-diagram-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/jade-codes/syster-diagram-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-jade-codes-syster-diagram-ui/identity.jpg",
+          "alt": "jade-codes/syster-diagram-ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/jade-codes/syster-diagram-ui",
+      "evidence": "README 的 License 一节原文只有一行 MIT；Languages 条显示 TypeScript 99.7%。",
+      "confidence": 1
+    },
+    {
+      "field": "purpose",
+      "value": "SysML v2 图的 React UI 组件：按元素类型提供 React Flow 节点与连线",
+      "sourceUrl": "https://github.com/jade-codes/syster-diagram-ui",
+      "evidence": "README 两行简介与 Features 里「React Flow node components for SysML element types」「React Flow edge components for SysML relationships」。",
+      "confidence": 1
+    },
+    {
+      "field": "dependencies",
+      "value": "@xyflow/react 与 @opensyster/diagram-core",
+      "sourceUrl": "https://github.com/jade-codes/syster-diagram-ui",
+      "evidence": "README 的 Dependencies 一节只列这两项，并注明 @xyflow/react 就是 React Flow 库。",
+      "confidence": 1
+    },
+    {
+      "field": "maturity",
+      "value": "13 Commits、3 Contributors、最新 v0.0.5-alpha",
+      "sourceUrl": "https://github.com/jade-codes/syster-diagram-ui",
+      "evidence": "首屏提交行右侧 13 Commits，About 区 Releases 4 tags，Contributors 列 jade-codes Jade Wilson、claude、gaarutyunov。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-jade-codes-syster-diagram-ui.md",
+  "registryUrl": "/r/github-com-jade-codes-syster-diagram-ui.json"
+}

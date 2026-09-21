@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "35178aca3274ef2ce61b1d3af494ac42b01ca059a8f29ad70972c6142f396a00",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-juspay-blend-rescript",
+  "entityId": "entity-github-com-juspay-blend-rescript",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/juspay/blend-rescript",
+    "finalUrl": "https://github.com/juspay/blend-rescript",
+    "checkedAt": "2026-09-15T11:44:17.184Z"
+  },
+  "editorial": {
+    "name": "juspay/blend-rescript",
+    "descriptionZh": "Juspay 的 Blend Design System 的 ReScript 绑定包，由 rescript-bindgen 从上游 TypeScript 声明文件确定性生成，不用手改也不用猜。MIT 许可，当前 1.0.2。",
+    "takeawayZh": "给 ReScript 项目接类型安全的 Blend 组件",
+    "noteZh": "README 标题 ReScript Blend Design System，自述是 Fully typed, production-ready ReScript bindings for @juspay/blend-design-system，并强调绑定由 @juspay/rescript-bindgen 从 Blend 已发布的 TypeScript 声明确定性生成，no hand-editing, no AI, no guesswork。章节依次是 Installation / Configuration / Usage / Generation (maintainers)，另有 PROJECT_UNDERSTANDING.md 和 rescript.json 两份配置文件；Languages 里 ReScript 占 99.8%，右栏 4 个 release、最新 1.0.2，贡献者 6 人。src 与 scripts 分开，最近提交集中在 bump rescript-bindgen 与 ship blend-design-system as a bundled runtime dependency。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一层组件绑定包（npm install @juspay/rescript-blend 后即可在 ReScript 里用 Blend 的组件），用户拿走的是代码，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/juspay/blend-rescript"
+      },
+      {
+        "statement": "它不是设计系统本体而是给既有设计系统做的语言绑定，故没往 design-system-suites 放；ReScript 不在受控的 technologies 词典里，因此该轴只记了 README 里写明的上游 React/TS。",
+        "evidenceUrl": "https://github.com/juspay/blend-rescript"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:44:17.184Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/juspay/blend-rescript",
+      "finalUrl": "https://github.com/juspay/blend-rescript",
+      "title": "GitHub - juspay/blend-rescript: A fork of blend-design-system with ReScript bindings · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-juspay-blend-rescript/identity.jpg",
+        "sha256": "9ffefff05dc29583d90bbc8a8a8c851976456e67be0a04f91d0ec3bb2e7229ee",
+        "width": 1280,
+        "height": 900,
+        "bytes": 149622,
+        "alt": "juspay/blend-rescript 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/juspay/blend-rescript",
+      "evidence": "右栏 About 面板列出 MIT license，仓库根目录有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "bindingSource",
+      "value": "由 @juspay/rescript-bindgen 从 Blend 的 TypeScript 声明确定性生成",
+      "sourceUrl": "https://github.com/juspay/blend-rescript",
+      "evidence": "README 正文 The bindings are generated deterministically from Blend shipped TypeScript declarations — no hand-editing, no AI, no guesswork.",
+      "confidence": 1
+    },
+    {
+      "field": "language",
+      "value": "ReScript 99.8%、JavaScript 0.2%",
+      "sourceUrl": "https://github.com/juspay/blend-rescript",
+      "evidence": "右栏 Languages 条形图与图例",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "1.0.2 publish to npm",
+      "sourceUrl": "https://github.com/juspay/blend-rescript",
+      "evidence": "右栏 Releases 面板 Latest 标签，标 4 months ago，共 4 个 release",
+      "confidence": 1
+    },
+    {
+      "field": "runtimeDependency",
+      "value": "@juspay/blend-design-system 作为 bundled runtime dependency 一起装进来",
+      "sourceUrl": "https://github.com/juspay/blend-rescript",
+      "evidence": "README 的 Installation 段说明上游包随绑定包自动带入，CHANGELOG 有 feat: ship blend-design-system as a bundled runtime dependency (#126)",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-juspay-blend-rescript",
+    "designMdUrl": "https://vislexicon.com/site/github-com-juspay-blend-rescript.md",
+    "checkedAt": "2026-09-15T11:44:17.184Z",
+    "license": "MIT"
+  }
+}

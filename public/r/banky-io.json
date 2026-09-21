@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "43e2b1ef58555e61a5bf36cf1b41668d5abb7f92c0a35bcbac3343abaa4cb934",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "banky-io",
+  "entityId": "entity-banky-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://banky.io",
+    "finalUrl": "https://www.banky.io/",
+    "checkedAt": "2026-09-15T10:50:11.903Z"
+  },
+  "editorial": {
+    "name": "Banky",
+    "descriptionZh": "Banky 让商家把银行转账做成结账选项：客户选国家、选银行、确认金额，钱从银行账户直接划走，不用填卡号也不用装 App。",
+    "takeawayZh": "看它怎么用一本正经的词典体讲支付流程",
+    "noteZh": "首屏整片亮黄，左边大字 BANKYFY* YOUR PAYMENT NOW!，旁边一颗蓝色气泡写 How Banky works / In 3 simple steps，下面真做成了词典条目：* [ banky-fy ] 动词 (bankyfies, bankyfying)，释义 Make payments without the hassle. 配例句 My payments are finally bankyfied!。流程分三步走：❶ Pay via bank transfer 标注 Built on top of core banks KYC procedures，❷ Select bank 摆着一张示例单，字段有 Company、Reference ORDER 238A0M02、Transaction ID E0487C58-D6F4-40B9-AB03 和 Pay €28，❸ Its all yours! 右边一排商品卡 Online Course、Car Service、Headphones、Insurance、Motorcycle。再往下 MERCHANTS 段讲 Cost Reduction、Boost your Payments、Pay Out & Refund，PAYERS 段讲 Swift & Smooth 与 Safe & Secure，BUSINESS SECTORS 里滚着 Health、Travel、E-Commerce、Gaming。",
+    "recommendation": null,
+    "pricing": "unknown（页面只讲商家成本优势，无公开费率）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 Banky 自己的支付产品官网，站内只有 /company、/faq、/terms-and-conditions 这类常规页，交付的是给商户接入的银行转账收单服务，因此归产品与公司官网。",
+        "evidenceUrl": "https://www.banky.io/"
+      },
+      {
+        "statement": "拿不准：页面同时摆了 MERCHANTS 与 PAYERS 两个视角，读作成给消费者的支付工具也成立；但结账流程要商户先接入，故按 B 端产品官网归档。",
+        "evidenceUrl": "https://www.banky.io/company"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:50:11.903Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce",
+      "finance",
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "compare",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "typography",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://banky.io",
+      "finalUrl": "https://www.banky.io/",
+      "title": "Banky — Bank transfer payment, demystified.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/banky-io/identity.jpg",
+        "sha256": "18e727e9e82949fd88402e3f31be6872bc11fef24edccc5ede4e7e37d2c3b01e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98463,
+        "alt": "Banky 首屏：BANKYFY* YOUR PAYMENT NOW!"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Unknown",
+      "sourceUrl": "https://www.banky.io/",
+      "evidence": "页面只写商家侧的成本好处（Cost Reduction、No hidden fees），没有公开费率或档位；三步演示里的 28 EUR 是演示订单金额，不是定价。",
+      "confidence": 1
+    },
+    {
+      "field": "languages",
+      "value": "English 与 日本語、Brasil、Chile、Peru、Poland、Croatia 七个地区入口",
+      "sourceUrl": "https://www.banky.io/",
+      "evidence": "顶部语言切换控件与 /jp、/pt-br、/es-cl、/es-pe、/pl-pl、/hr-hr 路径。",
+      "confidence": 1
+    },
+    {
+      "field": "flow",
+      "value": "三步：Pay via bank transfer → Select bank → Its all yours!，示例单含 Company、Reference ORDER 238A0M02、Transaction ID E0487C58-D6F4-40B9-AB03、Pay €28",
+      "sourceUrl": "https://www.banky.io/",
+      "evidence": "How Banky works / In 3 simple steps 区块里的顺序编号与示例单。",
+      "confidence": 1
+    },
+    {
+      "field": "sectors",
+      "value": "Health、Travel、E-Commerce、Gaming 四个行业",
+      "sourceUrl": "https://www.banky.io/",
+      "evidence": "BUSINESS SECTORS 一栏里重复滚动的四个词。",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/banky-io",
+    "designMdUrl": "https://vislexicon.com/site/banky-io.md",
+    "checkedAt": "2026-09-15T10:50:11.903Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c71ae4a4a7091b4e766f2f44f6ff724c6280707caf593d1c5cc21fe34273d06b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "saybriefly-com",
+  "entityId": "entity-saybriefly-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://saybriefly.com",
+    "finalUrl": "https://saybriefly.com/",
+    "checkedAt": "2026-09-15T11:18:00.350Z"
+  },
+  "editorial": {
+    "name": "SayBriefly",
+    "descriptionZh": "给自由职业者和小团队防需求蔓延的桌面工具官网。它把会议、笔记、Gmail、Slack 和 Figma 评论都拿去和锁定的 brief 比对，越界就报警，另配一个叫 Scribbble 的 agent。",
+    "takeawayZh": "看一款桌面工具怎么用越界告警拦住需求蔓延",
+    "noteZh": "整个页面套在一个虚线框里，左上黄色圆角 logo 写 SayBriefly，旁边一枚线描图章配 World's First Scope Change Detection 三行小字，中间是 Product、Features、Pricing 三段导航，右侧深绿 Download for Windows 按钮。首屏先给一枚黄色高亮条写 for freelancers, studios, and small teams，下面是深绿特粗标题 Deliver what was agreed. And stop scope creep.，正文一段写 SayBriefly turns every communication into tasks, deliverables, and a to-do list. Then monitors every project, meeting, and Figma comment against your locked brief.。往下依次是 Integrates with Gmail、Integrates with Figma、Integrates with Slack 三个渠道说明，每个配一句场景：client emails are where scope changes sound the most casual、monitors every comment against your locked brief、scope changes slip into Slack as casual messages。再下面是写 Freelancers using SayBriefly protects $3,000+ in billable work annually. For a 5-person agency, that's $15,000+ every year. 的收益段，最后用一枚 /AGENT 标记推出 Scribbble，文案说它 the world's first agent built specifically for freelancers doing client work。",
+    "recommendation": null,
+    "pricing": "unknown（首页只有 Download for Windows 与 /pricing 入口，未给档位）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "这是 SayBriefly 桌面工具的产品官网，导航只有 Product、Features、Pricing 三段，转化入口是 Download for Windows，站内只挂了 /download、/pricing 等五条路径。",
+        "evidenceUrl": "https://saybriefly.com/"
+      },
+      {
+        "statement": "归 product-company-sites 而非 creation-tools：工具本身要把安装包下到本机使用，官网不做在线编辑或生成。",
+        "evidenceUrl": "https://saybriefly.com/download"
+      },
+      {
+        "statement": "口径差异记录：http 阶段抓到的导航写 Download for Mac，浏览器渲染后变成 Download for Windows，两种说法出自同一站的不同渲染状态，此处以 live 为准。",
+        "evidenceUrl": "https://saybriefly.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:18:00.350Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent",
+      "saas"
+    ],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "download"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://saybriefly.com",
+      "finalUrl": "https://saybriefly.com/",
+      "title": "SayBriefly: Meetings Into Deliverables, Stop Scope Creep",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/saybriefly-com/identity.jpg",
+        "sha256": "3c50534ba56e7957970feebea546f05d95d716a5160093d59929d02039726a0e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 97957,
+        "alt": "SayBriefly 首屏：Deliver what was agreed. And stop scope creep."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroCopy",
+      "value": "Deliver what was agreed. And stop scope creep.",
+      "sourceUrl": "https://saybriefly.com/",
+      "evidence": "首屏深绿特粗标题，http.h1 与截图同文",
+      "confidence": 1
+    },
+    {
+      "field": "channels",
+      "value": "Gmail、Figma、Slack 三条接入，邮件、Figma 评论与 Slack 消息都会拿去和 locked brief 比对",
+      "sourceUrl": "https://saybriefly.com/",
+      "evidence": "Integrates with Gmail / Integrates with Figma / Integrates with Slack 三段说明及其场景句",
+      "confidence": 1
+    },
+    {
+      "field": "billableClaim",
+      "value": "Freelancers using SayBriefly protects $3,000+ in billable work annually. For a 5-person agency, that's $15,000+ every year.",
+      "sourceUrl": "https://saybriefly.com/",
+      "evidence": "三个渠道说明之后的收益段，live.bodyText 中同文",
+      "confidence": 1
+    },
+    {
+      "field": "agent",
+      "value": "Scribbble：the world's first agent built specifically for freelancers doing client work，能读邮件、会议与项目",
+      "sourceUrl": "https://saybriefly.com/",
+      "evidence": "/AGENT 标记下的 Scribbble 一节，标题写 Scribbble knows all your projects, emails, and meetings.",
+      "confidence": 1
+    },
+    {
+      "field": "badge",
+      "value": "World's First Scope Change Detection",
+      "sourceUrl": "https://saybriefly.com/",
+      "evidence": "顶部字标右侧的线描图章与三行小字，截图可见",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/saybriefly-com",
+    "designMdUrl": "https://vislexicon.com/site/saybriefly-com.md",
+    "checkedAt": "2026-09-15T11:18:00.350Z",
+    "license": "unknown"
+  }
+}

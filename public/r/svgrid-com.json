@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "987893cabbaeb05a9e2d2d7dd0c83591aede74cd2b6430331693c133c07935c8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "svgrid-com",
+  "entityId": "entity-svgrid-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://svgrid.com",
+    "finalUrl": "https://svgrid.com/",
+    "checkedAt": "2026-09-15T11:52:25.154Z"
+  },
+  "editorial": {
+    "name": "SvGrid",
+    "descriptionZh": "Svelte 5 的数据网格：一个 headless 内核加一个现成渲染组件，把虚拟滚动、Excel 式筛选、单元格选择和行内编辑放在一次 prop 传递里。核心 MIT 授权、可商用，另有付费的 Enterprise 版补导出、透视表与支持。",
+    "takeawayZh": "给 Svelte 5 应用装一张虚拟滚动数据网格",
+    "noteZh": "顶部导航一排是 Demos、Docs、API、Theme Builder、Compare、Blog、Roadmap、MCP、Pricing，外加 GitHub 180 的 star 计数。首屏主标题 The data grid for Svelte 5.，下面一串徽标写着 Svelte 5 native runes、MIT free commercial、MCP AI-ready、2 KB headless core (gzip)、78 KB Render-ready (gzip)，按钮是 Get started、Browse 378 demos、Star on GitHub，再往下给三条安装命令 npm @svgrid/grid、npx sv add @svgrid、npm @svgrid/enterprise。紧跟一条 NEW 横条列出 Postgres in the browser、Live REST + Supabase、Studio + 18 sample apps、Kanban + calendar 四个入口，然后进入 FRICTIONLESS START 与 A real grid in ~15 lines 那段。",
+    "recommendation": null,
+    "pricing": "Community 免费，Enterprise 付费（站内有 /pricing）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个自成体系的复合网格控件（headless 内核 + 渲染组件，排序筛选编辑虚拟化一次给全），按可嵌入复合控件归类。",
+        "evidenceUrl": "https://svgrid.com/"
+      },
+      {
+        "statement": "备选是 visual-implementation / data-visualization-code；选 ui-implementation 是因为页面通篇讲的是表格交互（cell selection、inline editing、Excel-style filters），首屏样张也是一张可编辑数据表而非图表。",
+        "evidenceUrl": "https://svgrid.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:52:25.154Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "mcp"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://svgrid.com",
+      "finalUrl": "https://svgrid.com/",
+      "title": "SvGrid - The Svelte 5 Data Grid with Headless Core + Render Component",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/svgrid-com/identity.jpg",
+        "sha256": "3cc06da861a9a370ca60f3379993e7963f5f2b88263c14dfad033e1669afd15a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 118317,
+        "alt": "SvGrid 首屏：The data grid for Svelte 5."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "install",
+      "value": "三条命令：npm @svgrid/grid、npx sv add @svgrid、npm @svgrid/enterprise",
+      "sourceUrl": "https://svgrid.com/",
+      "evidence": "首屏按钮下方的三行安装命令",
+      "confidence": 1
+    },
+    {
+      "field": "bundleSize",
+      "value": "headless core 2 KB (gzip)、Render-ready 78 KB (gzip)",
+      "sourceUrl": "https://svgrid.com/",
+      "evidence": "首屏徽标行",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "核心 MIT free commercial，另有 @svgrid/enterprise 商业版",
+      "sourceUrl": "https://svgrid.com/",
+      "evidence": "首屏徽标 MIT free, commercial 与安装区的 @svgrid/enterprise",
+      "confidence": 1
+    },
+    {
+      "field": "demoCountConflict",
+      "value": "按钮写 Browse 378 demos，正文写 370+ production-quality examples",
+      "sourceUrl": "https://svgrid.com/",
+      "evidence": "首屏 CTA 按钮与 hero 段落对照",
+      "confidence": 1
+    },
+    {
+      "field": "editions",
+      "value": "Free Community 内置 AI，Paid Enterprise 补 export、pivot 与支持",
+      "sourceUrl": "https://svgrid.com/",
+      "evidence": "页面 Free Community with built-in AI. Paid Enterprise for export, pivot & support. 一节标题",
+      "confidence": 1
+    },
+    {
+      "field": "features",
+      "value": "虚拟滚动、Excel 式筛选、单元格选择、行内编辑，全部在一次 prop 传递里",
+      "sourceUrl": "https://svgrid.com/",
+      "evidence": "首屏副标题与 Everything you'd expect from a serious grid 一节",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [
+      "存在付费层：Community 免费，Enterprise 付费（站内有 /pricing）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/svgrid-com",
+    "designMdUrl": "https://vislexicon.com/site/svgrid-com.md",
+    "checkedAt": "2026-09-15T11:52:25.154Z",
+    "license": "MIT"
+  }
+}

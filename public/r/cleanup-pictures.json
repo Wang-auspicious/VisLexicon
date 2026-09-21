@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c83981fe2d4f2584839d71fa8a5902b012e75d2b217f6e34c47bb50d247e79be",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "cleanup-pictures",
+  "entityId": "entity-cleanup-pictures",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://cleanup.pictures",
+    "finalUrl": "https://cleanup.pictures/",
+    "checkedAt": "2026-09-15T10:50:48.606Z"
+  },
+  "editorial": {
+    "name": "Cleanup.pictures",
+    "descriptionZh": "Cleanup.pictures 是 Clipdrop 旗下的在线擦除工具，拖一张图进去就能抹掉多余的物体、路人、文字、logo 或水印，免费档限制在 720p。首页上半屏就是一个虚线拖放框加五张示例图。",
+    "takeawayZh": "上传一张图，直接抹掉画面里的人或文字",
+    "noteZh": "首屏左半边大标题写 Remove any unwanted object, defect, people or text from your pictures in seconds，其中 object、defect、people、text 四个词被荧光绿高亮。下面是一个虚线框的拖放区，写着 Click here or drag an image file，紧接一行 Try with an example 和五张示例缩略图。正文 Use-cases 按 Photographers、Creative Agencies、Real Estate、E-commerce、Remove text/logo/watermark、Developers API 六个入口分，下面挂 Dawn Veltri 的证言。Pricing 段直接列两栏：Free 0，Unlimited images、Resolution limited to 720p；Pro 3 起，Unlimited resolution、High quality refiner，再往下是 ClipDrop Pro 11 起，含 Remove background、Replace background、Uncrop、Generative fill。FAQ 里回答了 What is Inpainting? 以及 API 的计费方式。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "页面主体就是可用的擦除工具本身——拖放框、示例图与定价栏都指向这项服务，用户拿走的是处理好的图片；它由 saaslandingpage.com 的落地页灵感收进候选池，归产品与公司官网。",
+        "evidenceUrl": "https://cleanup.pictures/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:50:48.606Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ecommerce",
+      "marketing"
+    ],
+    "deliverables": [
+      "image"
+    ],
+    "actions": [
+      "browse",
+      "edit",
+      "download",
+      "purchase",
+      "preview"
+    ],
+    "media": [
+      "image",
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "content-creator"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://cleanup.pictures",
+      "finalUrl": "https://cleanup.pictures/",
+      "title": "Cleanup.pictures - Remove objects, people, text and defects from any picture for free",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/cleanup-pictures/identity.jpg",
+        "sha256": "25f2972c8c8d6083f7a1f4eff835fa707ba04fc6dcfa89316aa27b89e5d4190e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75452,
+        "alt": "Cleanup.pictures 首屏：Remove any unwanted object, defect, people or text from your"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricing",
+      "value": "Free 档 720p 且图片张数不限；Pro 3 起解锁不限分辨率；ClipDrop Pro 11 起含去背、换背、Uncrop、Generative fill；API 按量计费",
+      "sourceUrl": "https://cleanup.pictures/",
+      "evidence": "首屏 Pricing 段的三栏价目与 FAQ 里的 API Usage-based pricing",
+      "confidence": 1
+    },
+    {
+      "field": "uploadFlow",
+      "value": "Click here or drag an image file，另有 Try with an example 五张样例",
+      "sourceUrl": "https://cleanup.pictures/",
+      "evidence": "首屏虚线拖放框与其下的示例缩略图",
+      "confidence": 1
+    },
+    {
+      "field": "useCases",
+      "value": "Photographers、Creative Agencies、Real Estate、E-commerce、Remove text/logo/watermark、Developers API",
+      "sourceUrl": "https://cleanup.pictures/",
+      "evidence": "Use-cases 段下的分类入口",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "站内提供 inpainting API，按使用量计费",
+      "sourceUrl": "https://cleanup.pictures/",
+      "evidence": "导航 API 项、API documentation 链接与 FAQ 的 How can I use the inpainting API?",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/cleanup-pictures",
+    "designMdUrl": "https://vislexicon.com/site/cleanup-pictures.md",
+    "checkedAt": "2026-09-15T10:50:48.606Z",
+    "license": "unknown"
+  }
+}

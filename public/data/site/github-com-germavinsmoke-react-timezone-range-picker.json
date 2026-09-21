@@ -1,0 +1,167 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "73626382ca7f00b23f8bea56f5846a7983b3af395382c88bf3b94fbdaed3a57b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-germavinsmoke-react-timezone-range-picker",
+  "entityId": "entity-github-com-germavinsmoke-react-timezone-range-picker",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/GermaVinsmoke/react-timezone-range-picker",
+    "finalUrl": "https://github.com/GermaVinsmoke/react-timezone-range-picker",
+    "checkedAt": "2026-09-15T12:06:19.663Z"
+  },
+  "editorial": {
+    "name": "GermaVinsmoke/react-timezone-range-picker",
+    "descriptionZh": "一个有时区意识的日期时间区间选择器，UI 用 Mantine 组件搭，时区换算走 Temporal API 并配了旧浏览器 polyfill。",
+    "takeawayZh": "拿一个 Basic/Advanced 两档切换的时区区间选择器",
+    "noteZh": "README 副标是 Flexible, Mantine-powered UI components for building timezone-aware date and time range pickers。Features 里写 Basic 模式给一个只有日期的区间字段和可滚动的 day quick ranges，Advanced 模式拆出独立的起止日期与时间字段、相对时间、around-time 选择和时区切换。Picker modes 一节说明 Basic 模式下的选择立即生效、不设 Apply 按钮，返回时间统一归到 00:00:00，要回 Basic 就按左下角的 Basic 按钮。仓库是 pnpm workspace，分 apps/playground 与 packages/ui 两块，MIT license。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是一个时间区间选择组件（packages/ui 为发布包、apps/playground 为演示），归通用界面组件库。",
+        "evidenceUrl": "https://github.com/GermaVinsmoke/react-timezone-range-picker"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:06:19.663Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "install",
+      "preview",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/GermaVinsmoke/react-timezone-range-picker",
+      "finalUrl": "https://github.com/GermaVinsmoke/react-timezone-range-picker",
+      "title": "GitHub - GermaVinsmoke/react-timezone-range-picker · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-germavinsmoke-react-timezone-range-picker/identity.jpg",
+        "sha256": "c7d75f40a9e10cfe70bfe85ab6fe8919ac56509c349f1c928e9e99bd2e9ad3ff",
+        "width": 1280,
+        "height": 900,
+        "bytes": 134579,
+        "alt": "GermaVinsmoke/react-timezone-range-picker 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/GermaVinsmoke/react-timezone-range-picker",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-germavinsmoke-react-timezone-range-picker/identity.jpg",
+          "alt": "GermaVinsmoke/react-timezone-range-picker 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "picker-modes",
+      "value": "Basic 模式只给日期区间字段与可滚动 quick ranges；Advanced 模式给独立起止日期时间、relative ranges、around-time、时区切换",
+      "sourceUrl": "https://github.com/GermaVinsmoke/react-timezone-range-picker",
+      "evidence": "README 的 Features 与 Picker modes 段",
+      "confidence": 1
+    },
+    {
+      "field": "timezone",
+      "value": "通过 Temporal API 做时区显示与换算，附旧浏览器 polyfill",
+      "sourceUrl": "https://github.com/GermaVinsmoke/react-timezone-range-picker",
+      "evidence": "README Features 里的 🌍 一条",
+      "confidence": 1
+    },
+    {
+      "field": "ui-library",
+      "value": "Mantine 9 components",
+      "sourceUrl": "https://github.com/GermaVinsmoke/react-timezone-range-picker",
+      "evidence": "README 的 About 首句与 Features 里的 🎨 一条",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/GermaVinsmoke/react-timezone-range-picker",
+      "evidence": "README 上方的 MIT license 标签与文件列表里的 LICENSE",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-germavinsmoke-react-timezone-range-picker.md",
+  "registryUrl": "/r/github-com-germavinsmoke-react-timezone-range-picker.json"
+}

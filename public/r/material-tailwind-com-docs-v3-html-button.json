@@ -1,0 +1,147 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "60cafb452ccfb1b3c8ee974f84aeeccb43ff9e00a9657f45c5aeece7791f784f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "material-tailwind-com-docs-v3-html-button",
+  "entityId": "entity-material-tailwind-com-docs-v3-html-button",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://material-tailwind.com/docs/v3/html/button",
+    "finalUrl": "https://www.material-tailwind.com/docs/v3/html/button",
+    "checkedAt": "2026-09-15T11:45:41.683Z"
+  },
+  "editorial": {
+    "name": "Tailwind CSS Button - Material Tailwind",
+    "descriptionZh": "Material Tailwind 文档站里 HTML 版按钮组件的单页，一页把 Button 的变体、尺寸、颜色、图标、pill、loading 态和 Required Script 全部列完。左边是组件分组侧栏，右边是固定的 On this page 锚点。",
+    "takeawayZh": "抄 Tailwind 按钮 class 与四种变体",
+    "noteZh": "顶栏是 Docs / Blocks / Figma / Book / Pricing & FAQ，右边一枚 React 与 Tailwind 的切换开关，这页停在 Tailwind 一侧。左侧栏把 Components 拆成 Core Elements、Forms、Data Display、Navigation、Layout，Button 挂在 Core Elements 下。正文第一段 Button Demo 是白色卡片里一枚深色 Button，下面是 inline-flex items-center justify-center 开头的那整串 class 加 Show Code 按钮；接着 Button Variants 用 Ghost、Outline、Solid、Gradient 四枚按钮并排对比；右侧 On this page 固定着从 Button Demo 到 Button Best Practices for Developers 的十二条锚点。",
+    "recommendation": null,
+    "pricing": "unknown（导航挂着 Pricing & FAQ，顶部横幅推 290+ PRO Blocks，但这页没给价格）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可直接复制走的 Tailwind 按钮代码（HTML 加上完整 class 串，每段配 Show Code），属于单个界面组件的用法文档，归 ui-implementation 下的 general-ui-components。",
+        "evidenceUrl": "https://www.material-tailwind.com/docs/v3/html/button"
+      },
+      {
+        "statement": "不归 templates-design-files：页面给的是单组件示例与 best practices，没有整页模板或工程脚手架可下载。",
+        "evidenceUrl": "https://www.material-tailwind.com/docs/v3/html/button"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:45:41.683Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "copy",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "tailwind",
+      "html",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://material-tailwind.com/docs/v3/html/button",
+      "finalUrl": "https://www.material-tailwind.com/docs/v3/html/button",
+      "title": "Tailwind CSS Button - Material Tailwind",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/material-tailwind-com-docs-v3-html-button/identity.jpg",
+        "sha256": "9b992914053c54e3b6b50498ca2fd47fc64cbd63d67ff89c4601e52e02e4f28e",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114048,
+        "alt": "Tailwind CSS Button - Material Tailwind 首屏：Tailwind CSS Button"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "buttonVariants",
+      "value": "Ghost、Outline、Solid、Gradient 四种变体并排展示",
+      "sourceUrl": "https://www.material-tailwind.com/docs/v3/html/button",
+      "evidence": "Button Variants 一节白卡片里的四枚按钮，截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "codeSample",
+      "value": "以 inline-flex items-center justify-center border align-middle select-none font-sans 开头的完整 button class 串",
+      "sourceUrl": "https://www.material-tailwind.com/docs/v3/html/button",
+      "evidence": "Button Demo 卡片下方的代码块，Show Code 按钮上方",
+      "confidence": 1
+    },
+    {
+      "field": "sectionAnchors",
+      "value": "Button Demo、Button Sizes、Button Colors、Button With Icon、Block Level Button、Pill Button、Button As Link、Button with Loading State、Custom Auth Button、Required Script、Button Best Practices for Developers",
+      "sourceUrl": "https://www.material-tailwind.com/docs/v3/html/button",
+      "evidence": "右侧 On this page 目录，与 live.heads 里带 # 的十一条一致",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：unknown（导航挂着 Pricing & FAQ，顶部横幅推 290+ PRO Blocks，但这页没给价格）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/material-tailwind-com-docs-v3-html-button",
+    "designMdUrl": "https://vislexicon.com/site/material-tailwind-com-docs-v3-html-button.md",
+    "checkedAt": "2026-09-15T11:45:41.683Z",
+    "license": "unknown"
+  }
+}

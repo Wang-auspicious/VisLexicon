@@ -1,0 +1,175 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "1f04c34ccc4b4c862471b3df02ed6890dc5ace907f42accdaf6415534ad44381",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-omachala-heroshot",
+  "entityId": "entity-github-com-omachala-heroshot",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/omachala/heroshot",
+    "finalUrl": "https://github.com/omachala/heroshot",
+    "checkedAt": "2026-09-15T11:59:30.648Z"
+  },
+  "editorial": {
+    "name": "omachala/heroshot",
+    "descriptionZh": "一个把截图流程配置化的 CLI：定义一次，之后按多视口、明暗模式成批重新生成，可接进 CI，输出给文档站使用。",
+    "takeawayZh": "写一份配置，让 CI 自动吐多尺寸、明暗两版网页截图。",
+    "noteZh": "About 四行是 Screenshot automation framework. / Define once, regenerate forever. / Visual picker, multi-viewport, / light/dark mode, CI-ready.，外链 heroshot.dev；标签挂着 automation、cli、developer-tools、documentation、docusaurus、mkdocs、playwright、screenshot、technical-writing、typescript、vitepress。文件树里 .changeset、.video、assets、bin、docs、editor、integrations 排开，最新一条提交来自 github-actions[bot]，内容是 chore: update screenshots。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它自述是 screenshot automation framework 加 CLI，用户把它接进 CI 后每次重新生成截图，属于构建与开发工作流工具。",
+        "evidenceUrl": "https://github.com/omachala/heroshot"
+      },
+      {
+        "statement": "产物是图片素材，但交付给用户的仍是这份可 install 的 CLI 与其配置，所以不归素材目录或图像创作工具。",
+        "evidenceUrl": "https://github.com/omachala/heroshot"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:59:30.648Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "image",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/omachala/heroshot",
+      "finalUrl": "https://github.com/omachala/heroshot",
+      "title": "GitHub - omachala/heroshot: Screenshot automation framework. Define once, regenerate forever. Visual picker, multi-viewport, light/dark mode, CI-ready. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-omachala-heroshot/identity.jpg",
+        "sha256": "9a3c6cb82a8f66c6a1bd249eebda6e339cc77e951cfbc58b74124da664400fce",
+        "width": 1280,
+        "height": 900,
+        "bytes": 149704,
+        "alt": "omachala/heroshot 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/omachala/heroshot",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-omachala-heroshot/identity.jpg",
+          "alt": "omachala/heroshot 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/omachala/heroshot",
+      "evidence": "About 栏 License 一行，以及提交 'chore: change license to MIT and remove logo from README'",
+      "confidence": 1
+    },
+    {
+      "field": "features",
+      "value": "Visual picker、multi-viewport、light/dark mode、CI-ready",
+      "sourceUrl": "https://github.com/omachala/heroshot",
+      "evidence": "About 栏的四行描述",
+      "confidence": 1
+    },
+    {
+      "field": "canonicalDomain",
+      "value": "heroshot.dev（从 heroshot.sh 迁来）",
+      "sourceUrl": "https://github.com/omachala/heroshot",
+      "evidence": "About 栏外链，以及文件树里多条 'migrate canonical domain heroshot.sh -> heroshot.dev' 提交",
+      "confidence": 1
+    },
+    {
+      "field": "distribution",
+      "value": "Bun 编译的独立二进制（bin 目录）与 Docker 镜像、Homebrew 安装方式",
+      "sourceUrl": "https://github.com/omachala/heroshot",
+      "evidence": "bin 目录的 'feat: add Bun compile for standalone binary distribution (#11)' 与 .dockerignore 的 Docker 支持提交",
+      "confidence": 0.9
+    },
+    {
+      "field": "topics",
+      "value": "automation / cli / developer-tools / documentation / docusaurus / mkdocs / playwright / screenshot / technical-writing / typescript / vitepress",
+      "sourceUrl": "https://github.com/omachala/heroshot",
+      "evidence": "About 下方的标签，数过共 11 个",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-omachala-heroshot.md",
+  "registryUrl": "/r/github-com-omachala-heroshot.json"
+}

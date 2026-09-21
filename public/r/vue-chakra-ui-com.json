@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "01396489eebd0f25a85a87b675e67ba9e387e7e10562f315c6c65c3de18490d1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "vue-chakra-ui-com",
+  "entityId": "entity-vue-chakra-ui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://vue.chakra-ui.com",
+    "finalUrl": "https://vue.chakra-ui.com/",
+    "checkedAt": "2026-09-15T11:56:47.772Z"
+  },
+  "editorial": {
+    "name": "Chakra UI Vue",
+    "descriptionZh": "Chakra UI 的 Vue 版：一套遵循 WAI-ARIA 的 Vue 组件，主题值可全局引用，组件之间可自由组合。",
+    "takeawayZh": "用 c- 前缀的 Vue 组件搭页面，无障碍属性和键盘交互现成",
+    "noteZh": "首屏正中是绿色闪电标加标题 Build Accessible Vue apps with Speed ⚡️，下面一行小字 Looking for React.js version? 指回 React 版；顶部左边标 v0.13.0，中间是 Search docs. (Press / to focus) 搜索框，右边是 GitHub 链接与 Star 1,845。正文第一段说 Chakra UI 是 simple modular and accessible component library，下面三张卡分别是 Accessible（strictly follows WAI-ARIA standards）、Themeable、Composable，再下面是一段 AirBnB 卡片示例代码，用的组件前缀是 c-box、c-image、c-badge、c-icon、c-flex、c-text。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点自称 component library，交付的是一套 Vue 组件与其主题引用方式，没有 Chakra 主站那种整套 token/recipe 设计系统叙事，故归通用界面组件库。",
+        "evidenceUrl": "https://vue.chakra-ui.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:56:47.772Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://vue.chakra-ui.com",
+      "finalUrl": "https://vue.chakra-ui.com/",
+      "title": "Chakra UI Vue | Chakra UI Vue | Simple, Modular and Accessible UI Components for your Vue Applications.",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/vue-chakra-ui-com/identity.jpg",
+        "sha256": "21860c43c0b061ad566f814a6a6c39c71c150d3b3856d17928abd00da1ac1d06",
+        "width": 1280,
+        "height": 900,
+        "bytes": 81403,
+        "alt": "Chakra UI Vue 首屏：Build Accessible Vue apps with Speed ⚡️"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "accessibility",
+      "value": "strictly follows WAI-ARIA standards，组件自带键盘交互",
+      "sourceUrl": "https://vue.chakra-ui.com/",
+      "evidence": "首屏 Accessible 卡片的正文",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "组件前缀为 c-，示例用到 c-box、c-image、c-badge、c-icon、c-flex、c-text",
+      "sourceUrl": "https://vue.chakra-ui.com/",
+      "evidence": "首屏下方的 Vue 模板示例代码",
+      "confidence": 1
+    },
+    {
+      "field": "version",
+      "value": "v0.13.0，GitHub Star 1,845",
+      "sourceUrl": "https://vue.chakra-ui.com/",
+      "evidence": "顶部版本号与 Star 计数",
+      "confidence": 1
+    },
+    {
+      "field": "routes",
+      "value": "/getting-started 与 /contributors 两个入口",
+      "sourceUrl": "https://vue.chakra-ui.com/getting-started",
+      "evidence": "Get started 按钮与页脚贡献者链接指向的路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/vue-chakra-ui-com",
+    "designMdUrl": "https://vislexicon.com/site/vue-chakra-ui-com.md",
+    "checkedAt": "2026-09-15T11:56:47.772Z",
+    "license": "unknown"
+  }
+}

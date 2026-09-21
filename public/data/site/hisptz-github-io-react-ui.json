@@ -1,0 +1,144 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "666912aa056a4e21c20795054adeaa22df21b6bc06b12d3a46b1f2495c96bdc4",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "hisptz-github-io-react-ui",
+  "entityId": "entity-hisptz-github-io-react-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "hisptz.github.io",
+  "official": {
+    "inputUrl": "https://hisptz.github.io/react-ui",
+    "finalUrl": "https://hisptz.github.io/react-ui/",
+    "checkedAt": "2026-09-15T11:42:47.546Z"
+  },
+  "editorial": {
+    "name": "hisptz/react-ui",
+    "descriptionZh": "hisptz 的 React UI 库文档站，是个 Storybook 站点。截图时还停在加载骨架，只看到左侧搜索框和整列灰色占位条。",
+    "takeawayZh": "拿不走：截图停在 Storybook 骨架，组件目录没渲染出来。",
+    "noteZh": "进去是一页 Storybook 默认版式：左栏是 HISP tz 的 logo 和「Find components」搜索框，下面整列灰色骨架条，中间只有一个转圈加载图标，正文全是工具栏文字（Search for components、Controls、Actions、Interactions），组件列表一个都没出来。页面标题在渲染前是 Webpack App，渲染后是 Storybook，没有更多可确认的内容。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "证据不足：截图只到 Storybook 加载骨架，没有任何组件目录或包说明渲染出来；仅按站点名 hisptz/react-ui 判断它是一个 React UI 库的展示站，暂归通用界面组件库，待能正常渲染后再复核。",
+        "evidenceUrl": "https://hisptz.github.io/react-ui/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:42:47.546Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "search"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": []
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://hisptz.github.io/react-ui",
+      "finalUrl": "https://hisptz.github.io/react-ui/",
+      "title": "Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/hisptz-github-io-react-ui/identity.jpg",
+        "sha256": "c111baa8d38b8022cc8ad1ff7603747e8d32777acb8d79dceeee224f13e10c77",
+        "width": 1280,
+        "height": 900,
+        "bytes": 22557,
+        "alt": "hisptz/react-ui 首屏"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://hisptz.github.io/react-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/hisptz-github-io-react-ui/identity.jpg",
+          "alt": "hisptz/react-ui 首屏",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "state",
+      "value": "停在 Storybook 加载骨架",
+      "sourceUrl": "https://hisptz.github.io/react-ui/",
+      "evidence": "首屏截图里左栏为灰色占位条、中部是转圈图标，未渲染出任何组件条目",
+      "confidence": 1
+    },
+    {
+      "field": "page-chrome-text",
+      "value": "Find components / Search for components / Controls Actions Interactions",
+      "sourceUrl": "https://hisptz.github.io/react-ui/",
+      "evidence": "截图左栏搜索框写 Find components，抓到的正文只有搜索与工具栏这几个词",
+      "confidence": 1
+    },
+    {
+      "field": "title",
+      "value": "Storybook（http.title 为 Webpack App）",
+      "sourceUrl": "https://hisptz.github.io/react-ui/",
+      "evidence": "浏览器渲染后的标题是 Storybook，HTTP 阶段拿到的标题是 Webpack App",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/hisptz-github-io-react-ui.md",
+  "registryUrl": "/r/hisptz-github-io-react-ui.json"
+}

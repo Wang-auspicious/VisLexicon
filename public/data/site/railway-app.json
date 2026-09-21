@@ -1,0 +1,176 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3200d8fa5c004eaa8ad97bacce6899653787bb02288cc65b9dcb793865b28c7e",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "railway-app",
+  "entityId": "entity-railway-app",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "railway.com",
+  "official": {
+    "inputUrl": "https://railway.app",
+    "finalUrl": "https://railway.com/",
+    "checkedAt": "2026-09-15T11:17:17.330Z"
+  },
+  "editorial": {
+    "name": "Railway",
+    "descriptionZh": "把部署、网络、扩缩容、监控和环境管理做成一张可视化画布的云平台首页，连上代码仓库后自动读配置，并新推面向 Agent 的部署能力。站内域名已从 railway.app 迁到 railway.com。",
+    "takeawayZh": "连上仓库自动配好栈，在画布上改基础设施",
+    "noteZh": "首屏是深蓝星空插画，衬线大字 Ship software peacefully，副标题 With the all-in-one intelligent cloud provider，两枚按钮 Deploy → 与 Agents，下面直接嵌一屏产品界面：左上角 New Project，中间一枚虚线方块加号，写着 Deploy your app to production effortlessly。正文按 Deploy / Scale / Monitor / Evolve 四段排，每段配一句小标题，例如 See your infrastructure、Private, fast connections by default、Handle more load and traffic、Spin-up unlimited environments，并各自挂一个 Alternative to 的对比位。",
+    "recommendation": null,
+    "pricing": "unknown（导航有 Pricing，首页未列价格）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是部署与运行应用的云平台，用户拿走的是跑自己代码的基础设施（连仓库、自动配置、扩缩容），与库里 fly-io 的归法一致，落在构建与开发工作流。",
+        "evidenceUrl": "https://railway.com/deploy"
+      },
+      {
+        "statement": "首屏第二屏直接嵌入自家 New Project 控制台截图，讲的三个能力 Private, fast connections by default、Handle more load and traffic、Contextual debugging 全是构建与运维环节。",
+        "evidenceUrl": "https://railway.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:17:17.330Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "agent"
+    ],
+    "deliverables": [],
+    "actions": [
+      "install",
+      "browse",
+      "compare",
+      "preview"
+    ],
+    "media": [
+      "ui",
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://railway.app",
+      "finalUrl": "https://railway.com/",
+      "title": "Railway | The all-in-one intelligent cloud provider",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/railway-app/identity.jpg",
+        "sha256": "1ff88b1050db1db94d21e0b1aee9c14d6a54b6034cee201dcd6bb9786194ca26",
+        "width": 1280,
+        "height": 900,
+        "bytes": 85702,
+        "alt": "Railway 首屏：Ship software peacefully"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://railway.app",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/railway-app/identity.jpg",
+          "alt": "Railway 首屏：Ship software peacefully",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "h1",
+      "value": "Ship software peacefully",
+      "sourceUrl": "https://railway.com/",
+      "evidence": "首屏星空插画上的衬线主标题",
+      "confidence": 1
+    },
+    {
+      "field": "sections",
+      "value": "Deploy / Scale / Monitor / Evolve 四段，每段带一个 Alternative to 对比位",
+      "sourceUrl": "https://railway.com/features",
+      "evidence": "首页正文的四段小标题与各自右下角的对比入口",
+      "confidence": 1
+    },
+    {
+      "field": "networking",
+      "value": "Private connections, public endpoints, SSL, and load balancing；100 Gbps internal networking without VPC configuration",
+      "sourceUrl": "https://railway.com/",
+      "evidence": "Instant networking. Zero setup. 一段",
+      "confidence": 1
+    },
+    {
+      "field": "alerts",
+      "value": "Alerts that reach you：Slack, Discord, or emails，并可自建 dashboard 汇总任意服务的指标",
+      "sourceUrl": "https://railway.com/",
+      "evidence": "Logs, metrics, and alerts in one place. 一段",
+      "confidence": 1
+    },
+    {
+      "field": "agents",
+      "value": "首屏与 Deploy 并列的第二枚按钮是 Agents，另有 /agents 独立页",
+      "sourceUrl": "https://railway.com/agents",
+      "evidence": "首屏两枚按钮与导航 Product 分组",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/railway-app.md",
+  "registryUrl": "/r/railway-app.json"
+}

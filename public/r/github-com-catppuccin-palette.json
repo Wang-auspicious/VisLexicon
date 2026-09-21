@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e7ced999b3c6761a3fbaefa514e7094e4825a0376a615e54a9502969f1760076",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-catppuccin-palette",
+  "entityId": "entity-github-com-catppuccin-palette",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/catppuccin/palette",
+    "finalUrl": "https://github.com/catppuccin/palette",
+    "checkedAt": "2026-09-15T12:17:03.105Z"
+  },
+  "editorial": {
+    "name": "catppuccin/palette",
+    "descriptionZh": "Catppuccin 的官方配色库，把柔和粉彩主题的色值做成可编程读取的 npm 包 @catppuccin/palette，另外导出绘图软件能直接用的调色板格式。",
+    "takeawayZh": "装一个 npm 包，在代码里遍历主题里每个颜色的 hex 与 ansi 值。",
+    "noteZh": "首屏是标准 GitHub 仓库页，导航停在 Code，右侧 About 写着 “Soothing pastel theme to use within your projects!” 并链到 npm 上的 @catppuccin/palette，下面挂 MIT license 和 15 个 Releases（最新 v1.8.0）。README 的 Usage 段给的是 Node 用法：import { flavors, flavorEntries, version } 之后遍历 flavor.colorEntries 取 hex、rgb、accent。再往下还有 Other available formats 和 Graphics editors 两节，文件列表里能看到 palette.json、mod.ts 和 types 目录。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "templates-design-files",
+    "subcategory": "ui-kits-design-files",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "色板在受控词典里没有独立小类；这个库实际交付的是可下载的调色板源文件（palette.json 与 Graphics editors 一节里的绘图软件格式）外加 npm 包，最贴近「UI Kit 与设计源文件」。",
+        "evidenceUrl": "https://github.com/catppuccin/palette"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:17:03.105Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "design-file",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "download"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/catppuccin/palette",
+      "finalUrl": "https://github.com/catppuccin/palette",
+      "title": "GitHub - catppuccin/palette: 🎨 Soothing pastel theme to use within your projects! · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-catppuccin-palette/identity.jpg",
+        "sha256": "6d8040aed3b9f4844f920494c9de58d5cc850c6a6b53696072c3048275ca11a4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 135173,
+        "alt": "catppuccin/palette 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/catppuccin/palette",
+      "evidence": "仓库页右侧 About 栏的 MIT license 条目（截图可见）",
+      "confidence": 1
+    },
+    {
+      "field": "npm-package",
+      "value": "@catppuccin/palette",
+      "sourceUrl": "https://github.com/catppuccin/palette",
+      "evidence": "About 栏外链与 README Usage 段的 npm install 命令",
+      "confidence": 1
+    },
+    {
+      "field": "stars",
+      "value": "734",
+      "sourceUrl": "https://github.com/catppuccin/palette",
+      "evidence": "仓库页头部 Star 734（截图可见）",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-catppuccin-palette",
+    "designMdUrl": "https://vislexicon.com/site/github-com-catppuccin-palette.md",
+    "checkedAt": "2026-09-15T12:17:03.105Z",
+    "license": "MIT"
+  }
+}

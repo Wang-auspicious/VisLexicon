@@ -1,0 +1,174 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "99de08424999f01aed7bd6bc2f39b06785cd759eee843858b60b849410281f62",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "captaincodeman-github-io-svelte-headlessui",
+  "entityId": "entity-captaincodeman-github-io-svelte-headlessui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "captaincodeman.github.io",
+  "official": {
+    "inputUrl": "https://captaincodeman.github.io/svelte-headlessui",
+    "finalUrl": "https://captaincodeman.github.io/svelte-headlessui/",
+    "checkedAt": "2026-09-15T12:09:05.342Z"
+  },
+  "editorial": {
+    "name": "Svelte-HeadlessUI",
+    "descriptionZh": "Tailwind HeadlessUI 的非官方 Svelte 移植，组件完全不带样式、按 WAI-ARIA 做无障碍，压缩后 4kB。",
+    "takeawayZh": "拿一套无样式的无障碍组件，自己套 Tailwind 皮",
+    "noteZh": "左侧固定目录把组件逐个列开，从 Index、Design、Combobox、Combobox Multi、Dialog、Disclosure、Listbox、Listbox Multi、Menu、Popover、Radio Group、Button、Toggle、Tabs 一直到 Transition。首屏正文先用四个 ✅ 说明完全无样式、WAI-ARIA 无障碍、TypeScript 类型完整、能和 Tailwind CSS 配合，再补两条说与 Svelte / SvelteKit 集成良好、体积只有 14kB minified / 4kB minified + gzipped。Installation 段给 pnpm install svelte-headlessui，并要求用 create… 工厂方法配合 use:action 挂行为，还单列一节 Alternative 推荐去评估 @rgossiaux/svelte-headlessui。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页第一条就写 Completely unstyled、第二条写 Fully WAI-ARIA accessible UI components，交付的是无样式可访问原语，归对应小类。",
+        "evidenceUrl": "https://captaincodeman.github.io/svelte-headlessui/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:09:05.342Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview",
+      "learn",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://captaincodeman.github.io/svelte-headlessui",
+      "finalUrl": "https://captaincodeman.github.io/svelte-headlessui/",
+      "title": "Svelte-HeadlessUI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/captaincodeman-github-io-svelte-headlessui/identity.jpg",
+        "sha256": "65136829d7466f9e8fcbdafde38830336db3dcd0acf0990234f2925387b3f9d0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 84697,
+        "alt": "Svelte-HeadlessUI 首屏：Installation"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://captaincodeman.github.io/svelte-headlessui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/captaincodeman-github-io-svelte-headlessui/identity.jpg",
+          "alt": "Svelte-HeadlessUI 首屏：Installation",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "size",
+      "value": "14kB minified / 4kB minified + gzipped",
+      "sourceUrl": "https://captaincodeman.github.io/svelte-headlessui/",
+      "evidence": "首页 But also: 列表的最后一条",
+      "confidence": 1
+    },
+    {
+      "field": "alternative",
+      "value": "@rgossiaux/svelte-headlessui（140.1kB minified）",
+      "sourceUrl": "https://captaincodeman.github.io/svelte-headlessui/",
+      "evidence": "首页 Alternative 一节，作者列出来让读者自行评估",
+      "confidence": 1
+    },
+    {
+      "field": "installCommand",
+      "value": "pnpm install svelte-headlessui",
+      "sourceUrl": "https://captaincodeman.github.io/svelte-headlessui/",
+      "evidence": "首页 Installation 段的代码块",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "Combobox、Dialog、Disclosure、Listbox、Menu、Popover、Radio Group、Button、Toggle、Tabs、Transition 等页面",
+      "sourceUrl": "https://captaincodeman.github.io/svelte-headlessui/",
+      "evidence": "左侧导航逐页列出，另有 Combobox Multi 与 Listbox Multi 两个多选版本",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/captaincodeman-github-io-svelte-headlessui.md",
+  "registryUrl": "/r/captaincodeman-github-io-svelte-headlessui.json"
+}

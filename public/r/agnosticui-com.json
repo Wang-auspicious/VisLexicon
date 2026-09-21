@@ -1,0 +1,166 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3220cdf0f42ff30a41584bc463073dc2acb7627fed493b46f2cf58925b1c1ebf",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "agnosticui-com",
+  "entityId": "entity-agnosticui-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://agnosticui.com",
+    "finalUrl": "https://www.agnosticui.com/",
+    "checkedAt": "2026-09-15T11:55:36.108Z"
+  },
+  "editorial": {
+    "name": "AgnosticUI",
+    "descriptionZh": "把整套组件源码拷进你项目的 UI kit，配一个 AG Context Generator 让 AI 助手读到真实的 prop 类型与导入路径。",
+    "takeawayZh": "把组件源码拷进项目，AI 读到真实 prop 类型",
+    "noteZh": "首屏是一块浅薄荷渐变，中间 AgnosticUI Local 用蓝色、The AI-native UI kit 用黑色大字压着，正文写 Local source lives in your codebase. Our AG Context Generator arms your favorite LLM with exact component locations, types, and usage.，紧接着把 Claude. Codex. Copilot. Gemini. 四个名字排成一句。往下一段白底写 Get Started in Seconds / Three commands and your agent of choice knows your entire stack.，配一个终端窗口，里面跑 npx agnosticui-cli i 并逐行打勾 Installing AgnosticUI components... 与 Components ready in src/components/ag/。再往下是 Get Agent-Ready in 3 Steps、Local Components（React, Vue, Lit, Svelte, Solid, and more）、Arm Your Agent（Run ag context once…Claude, Copilot, Cursor, Windsurf, Gemini），以及一张项目结构图，标出 src/components/ag/ 下是自己项目里的 Button.vue、Card.vue、Input.vue。顶栏只有 AgnosticUI、Components、主题开关和一个 GitHub 图标。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是拷进项目的组件源码（npx agnosticui-cli i 后落在 src/components/ag/），用户拿走的仍然是组件，归通用界面组件库。",
+        "evidenceUrl": "https://www.agnosticui.com/"
+      },
+      {
+        "statement": "站点主张 No MCP setup, node_modules, or npm，安装动作走自己的命令行，故 platforms 收 cli 与 web；页面没有出现许可证信息，licenses 记 unknown。",
+        "evidenceUrl": "https://www.agnosticui.com/components/button.html"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:36.108Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse",
+      "generate"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "vue",
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://agnosticui.com",
+      "finalUrl": "https://www.agnosticui.com/",
+      "title": "AgnosticUI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/agnosticui-com/identity.jpg",
+        "sha256": "2c3c297f0e4d5b37f5f6413d790971bb62f54e8b5b2dc3226926e999c1570afb",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75885,
+        "alt": "AgnosticUI 首屏：AgnosticUI Local The AI-native UI kit"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroClaim",
+      "value": "AgnosticUI Local / The AI-native UI kit；Local source lives in your codebase.",
+      "sourceUrl": "https://www.agnosticui.com/",
+      "evidence": "首屏标题与正文，截图可见",
+      "confidence": 1
+    },
+    {
+      "field": "cli",
+      "value": "npx agnosticui-cli i 安装整套；npx agnosticui-cli add button 加单个组件，组件落在 src/components/ag/",
+      "sourceUrl": "https://www.agnosticui.com/",
+      "evidence": "首屏终端窗口截图与正文 Components That Live With Your Code 一节的项目结构图",
+      "confidence": 1
+    },
+    {
+      "field": "assistants",
+      "value": "点名 Claude、Codex、Copilot、Gemini，另提 Cursor、Windsurf",
+      "sourceUrl": "https://www.agnosticui.com/",
+      "evidence": "首屏正文第一段与 Arm Your Agent 一节",
+      "confidence": 1
+    },
+    {
+      "field": "frameworks",
+      "value": "React, Vue, Lit, Svelte, Solid, and more",
+      "sourceUrl": "https://www.agnosticui.com/",
+      "evidence": "正文 Local Components 一节",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://www.agnosticui.com/",
+      "evidence": "整页没有出现许可证信息，导航只有 Components 与 GitHub 图标",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/agnosticui-com",
+    "designMdUrl": "https://vislexicon.com/site/agnosticui-com.md",
+    "checkedAt": "2026-09-15T11:55:36.108Z",
+    "license": "unknown"
+  }
+}

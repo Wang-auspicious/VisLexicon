@@ -1,0 +1,182 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3b896167fe61d48a3b3b2920efa97175ecf8048990d5e92236d4febde0e24996",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-poupe-ui-eslint-plugin-tailwindcss",
+  "entityId": "entity-github-com-poupe-ui-eslint-plugin-tailwindcss",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+    "finalUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+    "checkedAt": "2026-09-15T11:48:47.494Z"
+  },
+  "editorial": {
+    "name": "poupe-ui/eslint-plugin-tailwindcss",
+    "descriptionZh": "一个 ESLint 插件，给 Tailwind CSS v4 的 CSS 文件做语法校验、最佳实践检查并自动修复问题。给已经在用 flat config 的 Tailwind v4 前端团队。",
+    "takeawayZh": "给 Tailwind v4 加 lint 规则，坏类名自动修复",
+    "noteZh": "落点在仓库文件列表上，右栏 About 挂着 Readme 与 MIT license，下面的 Packages 和 Releases 都还空着——这个包只从 npm 上的 @poupe/eslint-plugin-tailwindcss 走，标签栏写的是 css / eslint / eslint-plugin / linting / tailwind-css-v4 / tailwindcss / typescript / vue。README 从 Features 排到 Troubleshooting：Requirements 要求 ESLint 9.30.0 以上、Node 20.19.0 以上、flat config；Usage 给的入口是 tailwindcss.configs.recommended，要覆盖规则再写进 rules。规则文档单独放在 docs/rules 目录，仓库里还有 AGENTS.md 和 renovate.json。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "拿走的是写进 eslint.config.mjs 的一层 lint 规则，跑在构建前校验 Tailwind 指令、修饰符和工具类，不是可复用的界面组件，所以归到构建与开发工作流；放进 ui-implementation 也说得通，因为校验对象是 Tailwind 类名，但用户从这儿带走的是规则不是组件。",
+        "evidenceUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss"
+      },
+      {
+        "statement": "README 的 Usage 给出 flat config 写法：import tailwindcss from '@poupe/eslint-plugin-tailwindcss'，再在 rules 里覆盖 no-arbitrary-value-overuse 这类规则，说明交付物是配置里的一层规则。",
+        "evidenceUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:48:47.494Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "audit"
+    ],
+    "media": [],
+    "platforms": [
+      "cli"
+    ],
+    "technologies": [
+      "css",
+      "tailwind",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+      "finalUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+      "title": "GitHub - poupe-ui/eslint-plugin-tailwindcss: ESLint plugin for Tailwind CSS v4 — syntax validation, best practices, and auto-fix · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-poupe-ui-eslint-plugin-tailwindcss/identity.jpg",
+        "sha256": "e4d9af3aca353e6e04dc562a841805204d74a770a2a6bac7b77434cf360ce0f3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 64836,
+        "alt": "poupe-ui/eslint-plugin-tailwindcss 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-poupe-ui-eslint-plugin-tailwindcss/identity.jpg",
+          "alt": "poupe-ui/eslint-plugin-tailwindcss 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+      "evidence": "README 标题下与右栏 About 都标 MIT license，仓库根目录另有 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "requirements",
+      "value": "ESLint 9.30.0 或更高、Node.js 20.19.0 或更高、flat config 格式（eslint.config.js）",
+      "sourceUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+      "evidence": "README 的 Requirements 一节三条",
+      "confidence": 1
+    },
+    {
+      "field": "presets",
+      "value": "preset 配置自带文件 glob **/*.?(post)css，注册 tailwindcss/css language，可整体引入 tailwindcss.configs.recommended",
+      "sourceUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+      "evidence": "README 的 Usage 一节 Basic Setup 与 Overriding Rules 代码块",
+      "confidence": 1
+    },
+    {
+      "field": "packaging",
+      "value": "仓库内 docs/rules 存规则文档，另有 build.config.ts、vitest.config.ts、tsconfig.json、AGENTS.md 与 renovate.json",
+      "sourceUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+      "evidence": "仓库文件列表",
+      "confidence": 1
+    },
+    {
+      "field": "repoScale",
+      "value": "4 star、1 watching、0 fork、1 个 issue、12 个 pull request、185 次提交",
+      "sourceUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+      "evidence": "仓库页顶部计数与右栏 About",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/poupe-ui/eslint-plugin-tailwindcss",
+      "evidence": "公开仓库加公开 npm 包，站点与 README 均无付费入口",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-poupe-ui-eslint-plugin-tailwindcss.md",
+  "registryUrl": "/r/github-com-poupe-ui-eslint-plugin-tailwindcss.json"
+}

@@ -1,0 +1,168 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3203775a0347126caaef0ef69427ccc6904804036b13e3d179e0e455a8cefba4",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-itwin-appui",
+  "entityId": "entity-github-com-itwin-appui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/iTwin/appui",
+    "finalUrl": "https://github.com/iTwin/appui",
+    "checkedAt": "2026-09-15T11:43:50.973Z"
+  },
+  "editorial": {
+    "name": "iTwin/appui",
+    "descriptionZh": "Bentley 为 iTwin.js 应用做的 React 界面库 monorepo，提供工具栏、widget 等一整套应用外壳组件。About 栏把在线 Storybook 地址直接挂在仓库主页上。",
+    "takeawayZh": "给 iTwin.js 应用装现成的 React 界面组件",
+    "noteZh": "首屏 About 一句话 Monorepo for iTwin.js AppUI，外链指向 itwin.github.io/appui/storybook/。目录切成 apps、common、docs、e2e-tests、ui 五块，最近一次提交是 imodeljs-admin 的 Release packages [publish docs] (#1609)；右栏面板显示 7,658 Commits、438 Tags、261 Releases，最新版是 @itwin/core-react@5.35.0。README 自述 React based UI library for iTwin.js applications，版权署名 Bentley Systems, Incorporated，包管理用 pnpm（提交记录 Replace rush with pnpm）。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述是 React based UI library for iTwin.js applications，目录里 ui/ 与 apps/ 分开，交付的是可安装的界面组件与配套 Storybook，归通用界面组件库。",
+        "evidenceUrl": "https://github.com/iTwin/appui"
+      },
+      {
+        "statement": "与同组织的 iTwinUI 不同，这一份不是设计系统本体而是面向 iTwin.js 应用的组件套件，所以主类同为 ui-implementation 但小类取 general-ui-components 而非 design-system-suites。",
+        "evidenceUrl": "https://github.com/iTwin/appui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:43:50.973Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/iTwin/appui",
+      "finalUrl": "https://github.com/iTwin/appui",
+      "title": "GitHub - iTwin/appui: Monorepo for iTwin.js AppUI · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-itwin-appui/identity.jpg",
+        "sha256": "3947a8635559ac7d0d6eabf741358e0b863fe25983d0334ee06fd4d22fa31512",
+        "width": 1280,
+        "height": 900,
+        "bytes": 141996,
+        "alt": "iTwin/appui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/iTwin/appui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-itwin-appui/identity.jpg",
+          "alt": "iTwin/appui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/iTwin/appui",
+      "evidence": "右栏 About 面板列出 MIT license，仓库根目录有 LICENSE.md",
+      "confidence": 1
+    },
+    {
+      "field": "storybook",
+      "value": "https://itwin.github.io/appui/storybook/",
+      "sourceUrl": "https://github.com/iTwin/appui",
+      "evidence": "About 面板描述下方外链，指向在线 Storybook",
+      "confidence": 1
+    },
+    {
+      "field": "latestRelease",
+      "value": "@itwin/core-react@5.35.0",
+      "sourceUrl": "https://github.com/iTwin/appui",
+      "evidence": "右栏 Releases 面板 Latest 标签下的包名与版本号，共 261 个 release",
+      "confidence": 1
+    },
+    {
+      "field": "repoScale",
+      "value": "7,658 Commits / 438 Tags / 150 Contributors",
+      "sourceUrl": "https://github.com/iTwin/appui",
+      "evidence": "仓库页提交行与右栏计数，目录树含 .changeset、.vscode、tools/codemod",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-itwin-appui.md",
+  "registryUrl": "/r/github-com-itwin-appui.json"
+}

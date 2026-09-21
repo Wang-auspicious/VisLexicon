@@ -1,0 +1,169 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7748fbb7da91d6e58cff36f10678397ca294f8c4b90b9c8b5548b0438f1156ff",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-khipu-design-system",
+  "entityId": "entity-github-com-khipu-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/khipu/design-system",
+    "finalUrl": "https://github.com/khipu/design-system",
+    "checkedAt": "2026-09-15T11:44:26.085Z"
+  },
+  "editorial": {
+    "name": "khipu/design-system",
+    "descriptionZh": "智利支付公司 Khipu 的设计系统仓库。Web 侧是 React 加 Storybook，另外把同一套设计 token 同步到 Android/Compose、iOS 和 Grails 上的 BeerCSS，还带一个从 Figma 抽 token 的插件目录。",
+    "takeawayZh": "一套 token 同步 Android、iOS 与 Web",
+    "noteZh": "README 标题 Khipu Design System，目录一路排到 Quick Start、Package Exports、Available Components、Design Tokens、Cross-Platform Token Sync (Android/Compose) 与 TypeScript Support。仓库顶层同时躺着 android、ios、grails、figma-plugin-token-extractor、.storybook 与 docs 几个目录，说明同一套 token 要发到多个端。提交记录里最新一条是 feat(brand): habilidades de marca para Gemini Enterprise，最近还在给 iOS 补 value/code/caption 三种排版变体与 2xs token。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库以 Khipu Design System 自称，README 里有 Design Tokens 与 Cross-Platform Token Sync (Android/Compose) 两节，交付的是完整设计系统加跨端 token 管线，而不是单个组件。",
+        "evidenceUrl": "https://github.com/khipu/design-system"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:44:26.085Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "finance"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android",
+      "figma"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "design",
+      "handoff",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/khipu/design-system",
+      "finalUrl": "https://github.com/khipu/design-system",
+      "title": "GitHub - khipu/design-system · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-khipu-design-system/identity.jpg",
+        "sha256": "d1a46081a9d3fc18043fddd1e07eeff4defc330ad45d8842f330d3be44bac192",
+        "width": 1280,
+        "height": 900,
+        "bytes": 97567,
+        "alt": "khipu/design-system 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/khipu/design-system",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-khipu-design-system/identity.jpg",
+          "alt": "khipu/design-system 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/khipu/design-system",
+      "evidence": "仓库首页 About 栏写 MIT license，文件列表里也有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "target_platforms",
+      "value": "Web(React + Storybook)、Android/Compose、iOS、Grails(BeerCSS)",
+      "sourceUrl": "https://github.com/khipu/design-system",
+      "evidence": "文件列表里 android、ios、grails、figma-plugin-token-extractor 四个平级目录，README 对应有 Cross-Platform Token Sync (Android/Compose) 一节",
+      "confidence": 0.9
+    },
+    {
+      "field": "release_state",
+      "value": "214 个 tag，最新版本推到 0.3.5-alpha.24，贡献者 3 人",
+      "sourceUrl": "https://github.com/khipu/design-system",
+      "evidence": "右侧 Releases 显示 214 tags，提交信息 chore(release): bump version to 0.3.5-alpha.24",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-khipu-design-system.md",
+  "registryUrl": "/r/github-com-khipu-design-system.json"
+}

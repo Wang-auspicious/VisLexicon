@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ed0e2c5e1f4f6c0a8f200004c86ac930249d111d6eb647f7fb08859a72df2465",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "nativebase-io",
+  "entityId": "entity-nativebase-io",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://nativebase.io",
+    "finalUrl": "https://nativebase.io/",
+    "checkedAt": "2026-09-15T12:01:56.670Z"
+  },
+  "editorial": {
+    "name": "NativeBase",
+    "descriptionZh": "跨 Android、iOS 和 Web 的 React Native 组件库官网，自称 2016 年 4 月首发的第一个 RN 组件库；现在整站头顶打着 LEGACY 标记，主按钮指向接任者 gluestack。给还在维护 NativeBase 3.4.x 项目的开发者。",
+    "takeawayZh": "翻 3.4.x 的 theme 与 utility props",
+    "noteZh": "首屏最上面压着一枚 New 胶囊写着 Build React Native apps with Prompts，大标题直接是 NativeBase is now gluestack，副标题说这是第一个 React Native 组件库、2016 年 4 月首发；顶栏左上角 NativeBase 名字旁边钉着 LEGACY 徽标和 now gluestack 小字，版本选择器停在 3.4.x，右上角是 Hire React Native Experts 按钮。右侧一台手机里滚着组件目录，第一屏能看到 ACTIONSHEET、ALERT、ALERTDIALOG、AVATAR、BADGE、BOX、BUTTON、CENTER 这些色块。往下依次讲 theme.ts 里用 extendTheme 改色、用 Box 的 px / py / mb / bg / rounded 这类 utility props 写样式、用 useColorMode 切暗色，并说组件数将近 40 个，涵盖 action sheets、menus、spinners、popovers、breadcrumbs。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是装进 React Native 应用的组件与主题写法，交付物是界面组件加代码。",
+        "evidenceUrl": "https://nativebase.io/"
+      },
+      {
+        "statement": "页面自称 component library 并列出近 40 个组件与 Storybook 入口，属于通用组件库而不是设计系统套件。",
+        "evidenceUrl": "https://nativebase.io/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:01:56.670Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "learn",
+      "browse",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "react-native",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://nativebase.io",
+      "finalUrl": "https://nativebase.io/",
+      "title": "NativeBase: Universal Components for React & React Native",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/nativebase-io/identity.jpg",
+        "sha256": "b46549c366b9184b2f14b6c5414cb111873275c7def8cc04f309ff0402ca68c5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 86195,
+        "alt": "NativeBase 首屏：NativeBase is now gluestack"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "status",
+      "value": "项目标记为 LEGACY，官方指向接任者 gluestack",
+      "sourceUrl": "https://nativebase.io/",
+      "evidence": "顶栏 NativeBase 名字旁的 LEGACY 徽标与 now gluestack 小字，以及首屏标题 NativeBase is now gluestack",
+      "confidence": 1
+    },
+    {
+      "field": "stars",
+      "value": "20,391 GitHub stars",
+      "sourceUrl": "https://nativebase.io/",
+      "evidence": "首屏按钮下方的 20,391 GitHub stars 徽标",
+      "confidence": 1
+    },
+    {
+      "field": "components",
+      "value": "近 40 个组件，涵盖 action sheets、menus、spinners、popovers、breadcrumbs",
+      "sourceUrl": "https://nativebase.io/",
+      "evidence": "Rich component library 一段：NativeBase offers nearly 40 components ... It includes action sheets, menus, spinners, popovers, breadcrumbs and more.",
+      "confidence": 1
+    },
+    {
+      "field": "theming",
+      "value": "用 extendTheme 扩展 theme.ts，Box 支持 px / py / mb / bg / rounded 等 utility props，另有 useColorMode 切暗色",
+      "sourceUrl": "https://nativebase.io/",
+      "evidence": "首页 Highly themeable 的 theme.ts 代码块、Now supporting utility props 的 Hello.tsx 与 Now with dark mode 的 useColorMode.tsx",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/nativebase-io",
+    "designMdUrl": "https://vislexicon.com/site/nativebase-io.md",
+    "checkedAt": "2026-09-15T12:01:56.670Z",
+    "license": "unknown"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "06bb49ae3243fe7b677afce9f94c7ff9df3adf55f97836ee8fba58bccb3005dd",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "invoko-ai",
+  "entityId": "entity-invoko-ai",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://invoko.ai",
+    "finalUrl": "https://tryclico.com/",
+    "checkedAt": "2026-09-15T10:33:11.966Z"
+  },
+  "editorial": {
+    "name": "Clico",
+    "descriptionZh": "一个多合一的 AI 工作台：深度研究、出图、出视频、改图、写作都在一条对话里，另有网页版、桌面版和 Chrome 扩展三个入口。站点由 invoko.ai 跳转过来。",
+    "takeawayZh": "一条对话串起深度研究、出图、改图和视频",
+    "noteZh": "这是 invoko.ai 跳过来的 tryclico.com。首屏顶部挂着一条细通知 Image 2.5 is available on Clico Web. Have fun!，下面是居中的悬浮导航 PRODUCTS / CREATE / GALLERY / RESOURCES / PRICING，右边嵌着 Sign in 和 Download 两颗胶囊。标题 AI Studio for 后面那句被截断了，副标写 Explore the web with deep research, drop in visual references, and generate studio-grade images, videos, and writing in one continuous conversation。往下是一组瀑布式卡片：一张星空插画上叠着 Ask about this page 和 Explain this screenshot 两颗小按钮。导航里还留着 For Invoko users、Referral program、Affiliate program 三栏，以及 Clico Web / Clico Desktop / Chrome Extension 三个入口。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "brand-presentation-content-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是生成出来的图像、视频和带引用的研究结论：首屏写 generate studio-grade images, videos, and writing in one continuous conversation。",
+        "evidenceUrl": "https://tryclico.com/"
+      },
+      {
+        "statement": "证据不足，它同时横跨出图、出视频和写作三块。归 brand-presentation-content-creation，是因为站内既有 /tools/ai-image-generator 也有 /tools/essay-writer、/tools/ai-summarizer，卖点是一处生成多种内容而不是单一垂直工具。",
+        "evidenceUrl": "https://tryclico.com/tools"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:33:11.966Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "marketing"
+    ],
+    "deliverables": [
+      "image",
+      "video",
+      "report"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "search",
+      "download",
+      "browse"
+    ],
+    "media": [
+      "image",
+      "video"
+    ],
+    "platforms": [
+      "web",
+      "desktop",
+      "browser-extension"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "discovery",
+      "ideation"
+    ],
+    "audiences": [
+      "content-creator",
+      "researcher"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://invoko.ai",
+      "finalUrl": "https://tryclico.com/",
+      "title": "Free AI Image, Video Generator & Deep Research Studio | Clico",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/invoko-ai/identity.jpg",
+        "sha256": "d0a26f00ad0b6c3417087d9ffaa83209bdc170f9a08766215981cde4a5e38912",
+        "width": 1280,
+        "height": 900,
+        "bytes": 50788,
+        "alt": "Clico 首屏：AI Studio for Deep Research, Images & Video"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "surfaces",
+      "value": "三个入口：Clico Web、Clico Desktop、Chrome Extension（Add to Chrome）",
+      "sourceUrl": "https://tryclico.com/",
+      "evidence": "顶部导航与页脚 Products 一栏，截图与 live.navLabels 都能看到",
+      "confidence": 1
+    },
+    {
+      "field": "researchMode",
+      "value": "Deep Research 会自己搜网页、打开有用的页面、对着你的文件核对，并把引用留在答案里",
+      "sourceUrl": "https://tryclico.com/",
+      "evidence": "首屏 Research something properly. 一节，截图下方卡片可见",
+      "confidence": 1
+    },
+    {
+      "field": "watermarkFree",
+      "value": "站点称现在可以无水印生成图片与视频，并可直接下载成品",
+      "sourceUrl": "https://tryclico.com/",
+      "evidence": "首屏 Clico now can create images & videos without watermark. 一节",
+      "confidence": 1
+    },
+    {
+      "field": "rebrand",
+      "value": "站点由 invoko.ai 跳转到 tryclico.com，导航里保留 For Invoko users 一栏",
+      "sourceUrl": "https://tryclico.com/invoko",
+      "evidence": "简报的 http.finalUrl 与落地页导航链接",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/invoko-ai",
+    "designMdUrl": "https://vislexicon.com/site/invoko-ai.md",
+    "checkedAt": "2026-09-15T10:33:11.966Z",
+    "license": "unknown"
+  }
+}

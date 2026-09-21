@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7b6898c8dfba16b272e7d1e40aba29ef289cf93ca0fad876f2bb8276ca5cdfb9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "wonder-design",
+  "entityId": "entity-wonder-design",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://wonder.design",
+    "finalUrl": "https://wonder.design/",
+    "checkedAt": "2026-09-15T10:36:53.644Z"
+  },
+  "editorial": {
+    "name": "Wonder",
+    "descriptionZh": "把画布上的设计直接当代码交付的 AI 设计工具，声明每个设计都是 react + tailwind。面向要把设计推到生产的团队。",
+    "takeawayZh": "画布上生成界面，直接复制 React+Tailwind 上线。",
+    "noteZh": "首屏全黑底，大标题 Design and move to production faster 被一个紫色选中框圈住，下面叠着 Playground / Design System / UX Exploration / Website 几个标签页的编辑器截图。正文反复出现 Copy React + Tailwind and ship 和 Wonder MCP，还专门讲了一段 shaders 能把视觉质量拉高。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "ui-prototyping-whiteboard",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "进来就是一个带图层面板的画布编辑器（Playground / Design System / UX Exploration 标签），用户拿走的是设计与可继续迭代的界面稿，故归 UI/UX 设计与原型。",
+        "evidenceUrl": "https://wonder.design/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:36:53.644Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas"
+    ],
+    "deliverables": [
+      "component",
+      "design-file"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "copy",
+      "export",
+      "prototype",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "mcp",
+      "desktop"
+    ],
+    "technologies": [
+      "react",
+      "tailwind"
+    ],
+    "workflowStages": [
+      "design",
+      "handoff",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://wonder.design",
+      "finalUrl": "https://wonder.design/",
+      "title": "Wonder — What you see is what you ship",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/wonder-design/identity.jpg",
+        "sha256": "1424ead88e02b48565c3c2c7fcaa1e83f0b989c9b022e7ec5abf448726eda8e3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 62340,
+        "alt": "Wonder 首屏：Design and move to production faster"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "outputs",
+      "value": "设计即代码：每个设计都是真实代码，可复制 React + Tailwind 直接上线，不需要交付环节",
+      "sourceUrl": "https://wonder.design/",
+      "evidence": "首页 'Built on code, ready for production. Every design is real code. Copy React + Tailwind and ship — no handoff needed.'",
+      "confidence": 1
+    },
+    {
+      "field": "integrations",
+      "value": "Wonder MCP 可接进编码 agent，改完的设计能直接推回生产代码",
+      "sourceUrl": "https://wonder.design/docs/mcp",
+      "evidence": "首页 'Code and Canvas, Finally connected.' 段与 'Explore Wonder MCP' 链接",
+      "confidence": 1
+    },
+    {
+      "field": "platforms",
+      "value": "提供桌面客户端下载，也可直接在浏览器 Open app 或 Playground 里用",
+      "sourceUrl": "https://wonder.design/downloads",
+      "evidence": "导航 Downloads 与首屏 'Download App / Open in Browser' 两个按钮",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/wonder-design",
+    "designMdUrl": "https://vislexicon.com/site/wonder-design.md",
+    "checkedAt": "2026-09-15T10:36:53.644Z",
+    "license": "unknown"
+  }
+}

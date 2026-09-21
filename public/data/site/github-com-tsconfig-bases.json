@@ -1,0 +1,174 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "da743dc390359253a01c1504a1582377b576e4a8f734f70fad5dcf546ebea2e6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-tsconfig-bases",
+  "entityId": "entity-github-com-tsconfig-bases",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/tsconfig/bases",
+    "finalUrl": "https://github.com/tsconfig/bases",
+    "checkedAt": "2026-09-15T11:53:40.280Z"
+  },
+  "editorial": {
+    "name": "tsconfig/bases",
+    "descriptionZh": "社区维护的 TSConfig 基座集合，按运行时环境分门别类：从 @tsconfig/node10 一路排到 node26，另有 bun、next、svelte、vite-react、react-native、strictest、deno 等几十个可 extends 的配置。README 自称是「TSConfig 界的 Definitely Typed」。",
+    "takeawayZh": "extends 一个 @tsconfig 基座就够",
+    "noteZh": "仓库页：tsconfig / bases Public，main 分支带 20 Branches、0 Tags、458 Commits，最新一次是 orta 合并 #356。顶层目录有 bases、readme-extras、scripts、template、test。右侧 About 写 Hosts TSConfigs to extend in a TypeScript app, tuned to a particular runtime environment，下面是 Readme、MIT license、7.9k stars、46 watching、285 forks，Releases 栏明确写 No releases published，Contributors 97 人。README 首屏只露到标题 Centralized Recommendations for TSConfig bases 这一行，正文往下是一张 Table of TSConfigs 表，逐行给出 Name 与 Package 两列，从 Recommended、Bun、Create React App、Cypress、Deno 一直排到 Strictest、Svelte、Taro、Vite React。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户拿走的是构建链路上的配置基座——在 tsconfig 里 extends 一个 @tsconfig/* 包，按 Node、Next、Svelte 等运行时选对应版本，动作是 install 与配置，所以归构建、部署与开发工作流，而不是组件或设计资源。",
+        "evidenceUrl": "https://github.com/tsconfig/bases"
+      },
+      {
+        "statement": "候选池把它标成「Svelte UI 库」是按 @tsconfig/svelte 这一个包名猜的，页面上 svelte 只是表里的一行目标运行时，整站没有一个 UI 组件，因此不采信该分类。",
+        "evidenceUrl": "https://github.com/tsconfig/bases"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:53:40.280Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/tsconfig/bases",
+      "finalUrl": "https://github.com/tsconfig/bases",
+      "title": "GitHub - tsconfig/bases: Hosts TSConfigs to extend in a TypeScript app, tuned to a particular runtime environment · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-tsconfig-bases/identity.jpg",
+        "sha256": "10a686f371bd70374efef24022cd03b4e5187070b2a1954ee109b5031505ab9c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 119784,
+        "alt": "tsconfig/bases 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/tsconfig/bases",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-tsconfig-bases/identity.jpg",
+          "alt": "tsconfig/bases 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "bases",
+      "value": "Recommended、Bun、Create React App、Cypress、Deno、Docusaurus v2、Ember、Next.js、Node LTS、node10…node26（含 node-ts、node-lts）、Nuxt、QJSEngine、React Native、Remix、Strictest、Svelte、Taro、Vite React、Bases",
+      "sourceUrl": "https://github.com/tsconfig/bases",
+      "evidence": "README 的 Table of TSConfigs，逐行给 Name 与 Package 两列",
+      "confidence": 1
+    },
+    {
+      "field": "selfDescription",
+      "value": "Basically Definitely Typed for TSConfigs，面向最新稳定版 TypeScript，不保证 semver",
+      "sourceUrl": "https://github.com/tsconfig/bases",
+      "evidence": "README 开头几段对定位与版本策略的说明",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/tsconfig/bases",
+      "evidence": "截图 About 栏的 MIT license 一行与 README 顶部 MIT license 徽标、根目录 LICENSE.md",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "不发布 release（About 栏 Releases 写 No releases published），版本跟着目标运行时走",
+      "sourceUrl": "https://github.com/tsconfig/bases",
+      "evidence": "截图 Releases 栏与 README 里 about semver 的一段",
+      "confidence": 1
+    },
+    {
+      "field": "community",
+      "value": "7.9k stars、285 forks、97 位贡献者，README 写明 Owned and improved by the community",
+      "sourceUrl": "https://github.com/tsconfig/bases",
+      "evidence": "截图 About 与 Contributors 栏，加 README 正文",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-tsconfig-bases.md",
+  "registryUrl": "/r/github-com-tsconfig-bases.json"
+}

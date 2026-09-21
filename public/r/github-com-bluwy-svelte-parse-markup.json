@@ -1,0 +1,137 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "45e85df17d4d71500fa5607c38ceb2905d6ec2ab39eb64411f6c52ccf55523a0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-bluwy-svelte-parse-markup",
+  "entityId": "entity-github-com-bluwy-svelte-parse-markup",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/bluwy/svelte-parse-markup",
+    "finalUrl": "https://github.com/bluwy/svelte-parse-markup",
+    "checkedAt": "2026-09-15T12:09:51.254Z"
+  },
+  "editorial": {
+    "name": "bluwy/svelte-parse-markup",
+    "descriptionZh": "一个 Svelte markup 解析器：解析模板但跳过 script 和 style 标签，把它们整体塞成一个 Text 节点。README 建议拿它去对比 Svelte REPL 的 AST 输出。",
+    "takeawayZh": "parse() 得到 AST，脚本样式原样保留",
+    "noteZh": "README 的 Usage 只演示了四行 console.log：ast.instance.content.body、ast.module.content.body、ast.css.content.styles、ast.css.children，并说明脚本和样式不做解析、只注入一个 Text 节点，想对比原版 AST 可以去看 Svelte REPL 的 AST 输出页签。仓库的 About 栏把 topic 写成 parse 和 svelte，Languages 一栏写着 JavaScript 100%，Releases 一节是 No releases published，Used by 2.5K。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它输出的是给工具链用的 AST，不渲染任何界面，用户拿走的是能被别的构建工具调用的解析函数，归构建与开发工作流。",
+        "evidenceUrl": "https://github.com/bluwy/svelte-parse-markup"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:09:51.254Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/bluwy/svelte-parse-markup",
+      "finalUrl": "https://github.com/bluwy/svelte-parse-markup",
+      "title": "GitHub - bluwy/svelte-parse-markup: Parse Svelte markup without parsing the script or style tags · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-bluwy-svelte-parse-markup/identity.jpg",
+        "sha256": "ffe19ea621cb9ed66f1a5e18e0ad4384ad58cc2a250fa8eebf6ed09db5f4ed7b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117367,
+        "alt": "bluwy/svelte-parse-markup 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/bluwy/svelte-parse-markup",
+      "evidence": "README 页签旁与右侧 About 栏都标着 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "未发布任何 release",
+      "sourceUrl": "https://github.com/bluwy/svelte-parse-markup",
+      "evidence": "右栏 Releases 一节写着 No releases published，头部 Tags 数为 0",
+      "confidence": 1
+    },
+    {
+      "field": "stars",
+      "value": "7",
+      "sourceUrl": "https://github.com/bluwy/svelte-parse-markup",
+      "evidence": "仓库头部 Star 7、Fork 4，右栏 Used by 2.5K，About 栏 Languages 写 JavaScript 100%",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-bluwy-svelte-parse-markup",
+    "designMdUrl": "https://vislexicon.com/site/github-com-bluwy-svelte-parse-markup.md",
+    "checkedAt": "2026-09-15T12:09:51.254Z",
+    "license": "MIT"
+  }
+}

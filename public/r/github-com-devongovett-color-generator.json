@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "a08c9006bbda4f99e71ab9538330c5e9194bb29b73126aa3ce35de134d742cb8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-devongovett-color-generator",
+  "entityId": "entity-github-com-devongovett-color-generator",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/devongovett/color-generator",
+    "finalUrl": "https://github.com/devongovett/color-generator",
+    "checkedAt": "2026-09-15T12:51:45.354Z"
+  },
+  "editorial": {
+    "name": "devongovett/color-generator",
+    "descriptionZh": "按黄金比例在色轮上取色的小库，生成的颜色搭在一起比随机取色更顺眼，返回 color 对象可再转成任意色彩空间或 CSS 字符串。",
+    "takeawayZh": "按黄金比例生成一批互不打架的颜色",
+    "noteZh": "README 说取色思路 inspired by Martin Ankerl's blog post，做法是在色轮上按黄金比例步进，所以出来的颜色比简单随机更协调；示例是 var gen = require('color-generator'); gen().hexString() // '#BF79F2' 与 gen().rgbString() // 'rgb(242, 226, 121)'，还可以 gen(0.8, 0.25).hexString() 传饱和度和亮度改默认值，正文补一句默认生成的颜色适合当黑字背景。仓库 22 star、4 个 commit、1 branch、0 Tags，没有 release，About 是 Generates colors based on the golden ratio，README 末尾一节 License 写着 MIT。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它的产出是算法生成的一批颜色而不是色值的解析转换，属生成式视觉代码；本仓库前几批把配色/色板生成器归到 creative-generative-code（如 iyodatakashi/color-palette-generator）。",
+        "evidenceUrl": "https://github.com/devongovett/color-generator"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:51:45.354Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/devongovett/color-generator",
+      "finalUrl": "https://github.com/devongovett/color-generator",
+      "title": "GitHub - devongovett/color-generator: Generates colors based on the golden ratio · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-devongovett-color-generator/identity.jpg",
+        "sha256": "c9ed667fc0b271655504284c8e6ec1ec8743d94613c7b30c9228054019ad18f8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 124699,
+        "alt": "devongovett/color-generator 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "algorithm",
+      "value": "沿色轮按黄金比例步进取色",
+      "sourceUrl": "https://github.com/devongovett/color-generator",
+      "evidence": "README 写 they are computed by moving around the color wheel in increments of the golden ratio，并注明灵感来自 Martin Ankerl 的博文",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "gen().hexString() / gen().rgbString()，可传自定义饱和度与亮度 gen(0.8, 0.25)",
+      "sourceUrl": "https://github.com/devongovett/color-generator",
+      "evidence": "README 的 Example 一段给了这两个调用与返回值注释",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/devongovett/color-generator",
+      "evidence": "README 末尾一节标题为 License，正文写 MIT",
+      "confidence": 0.9
+    },
+    {
+      "field": "release-status",
+      "value": "未发布 release（1 branch、0 Tags）",
+      "sourceUrl": "https://github.com/devongovett/color-generator",
+      "evidence": "右侧 Releases 区为空，仓库头显示 1 Branch、0 Tags",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-devongovett-color-generator",
+    "designMdUrl": "https://vislexicon.com/site/github-com-devongovett-color-generator.md",
+    "checkedAt": "2026-09-15T12:51:45.354Z",
+    "license": "MIT"
+  }
+}

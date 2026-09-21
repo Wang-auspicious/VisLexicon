@@ -1,0 +1,162 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8670f2081c4833f4e893b498f2ef09f9a13380fc2a8b1b5eb87bc83a3c2a7168",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "metonym-github-io-svelte-intersection-observer",
+  "entityId": "entity-metonym-github-io-svelte-intersection-observer",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "metonym.github.io",
+  "official": {
+    "inputUrl": "https://metonym.github.io/svelte-intersection-observer",
+    "finalUrl": "https://metonym.github.io/svelte-intersection-observer/",
+    "checkedAt": "2026-09-15T12:09:18.779Z"
+  },
+  "editorial": {
+    "name": "svelte-intersection-observer",
+    "descriptionZh": "把 Intersection Observer API 包成 Svelte 能用的六种形态，组件、action、{@attach} 与工厂函数各有一套。",
+    "takeawayZh": "挑组件或 action，监听元素进出视口",
+    "noteZh": "首屏是纯文档排版。About 段说它包的是 Intersection Observer API，靠它知道元素进出视口而不用挂 scroll 监听，常见用途列了懒加载、滚动动画、无限滚动、视频自动播放与曝光统计，末尾让人去 Svelte REPL 里试。下面一张表按 Kind 把六种导出分好：Component 对应 IntersectionObserver、Pooled component 对应 MultipleIntersectionObserver、Action 对应 intersect、Attachment 对应 intersectAttachment、Composable 对应 createIntersectionObserver、Factory 对应 createIntersectionGroup。Compatibility 表再按包版本 1.x / 2.x 说明对应的 Svelte 版本与写法差异。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是包住浏览器 API 的组件、action 与附件等六种接入形态，用户拿来挂在自己元素上，归通用界面组件库。",
+        "evidenceUrl": "https://metonym.github.io/svelte-intersection-observer/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:09:18.779Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "learn",
+      "copy"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://metonym.github.io/svelte-intersection-observer",
+      "finalUrl": "https://metonym.github.io/svelte-intersection-observer/",
+      "title": "svelte-intersection-observer",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/metonym-github-io-svelte-intersection-observer/identity.jpg",
+        "sha256": "4f1d0cc1601349d77caf66e0c1f3134e4c4536de09ff0ad454a5437497e4c337",
+        "width": 1280,
+        "height": 900,
+        "bytes": 114632,
+        "alt": "svelte-intersection-observer 首屏：svelte-intersection-observer"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://metonym.github.io/svelte-intersection-observer",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/metonym-github-io-svelte-intersection-observer/identity.jpg",
+          "alt": "svelte-intersection-observer 首屏：svelte-intersection-observer",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "exports",
+      "value": "六种导出，按 Kind 分为 Component / Pooled component / Action / Attachment / Composable / Factory",
+      "sourceUrl": "https://metonym.github.io/svelte-intersection-observer/",
+      "evidence": "首页 About 一节的表格与 Six exports, pick by how you want to wire it up 一句",
+      "confidence": 1
+    },
+    {
+      "field": "compatibility",
+      "value": "2.x 需要 Svelte ≥5.29，1.x 兼容 Svelte 3/4/5 旧写法",
+      "sourceUrl": "https://metonym.github.io/svelte-intersection-observer/",
+      "evidence": "首页 Compatibility 表的两行 Package version / Svelte version / Notes",
+      "confidence": 1
+    },
+    {
+      "field": "useCases",
+      "value": "懒加载图片、自动播放视频、曝光统计、无限滚动、滚动显现动画",
+      "sourceUrl": "https://metonym.github.io/svelte-intersection-observer/",
+      "evidence": "右侧目录 Use cases 分组与 About 段落的列举",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/metonym-github-io-svelte-intersection-observer.md",
+  "registryUrl": "/r/metonym-github-io-svelte-intersection-observer.json"
+}

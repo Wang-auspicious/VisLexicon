@@ -1,0 +1,166 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "42d6d545d2b0f481961861d91feaa42e27f813533edb7465eef68bea1b288ee7",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "wuchale-dev",
+  "entityId": "entity-wuchale-dev",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "wuchale.dev",
+  "official": {
+    "inputUrl": "https://wuchale.dev",
+    "finalUrl": "https://wuchale.dev/",
+    "checkedAt": "2026-09-15T11:55:08.506Z"
+  },
+  "editorial": {
+    "name": "wuchale",
+    "descriptionZh": "编译期 i18n 工具：不套 key、不加 wrapper，直接从 JSX 或模板里把原文抽成 PO 文件交给译者，编译时换成按下标取值的数组以缩包体，也能接 AI 做边写边译。",
+    "takeawayZh": "文案照原样写，编译时抽成 PO 再编成下标数组",
+    "noteZh": "页眉是搜索框（Ctrl K）加 GitHub、NPM、Discord 三个图标和主题切换；首屏左边 Zero code changes. Smallest bundles.，配 Get started 与 See usage examples 两个按钮，右边一支笔蘸墨水的插画。往下四步流程 Write plain code / Extract and translate / Compile catalogs / Transform，示例同时给出源文件、PO 文件（msgid \"Hello world!\"）与编译后的 export let c = [\"Hello world!\"]，并在 Works with your stack! 一栏列出 React、Preact、SolidJS、Svelte、Astro、JavaScript、TypeScript、Python*、Golang*。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它交付的是接进构建流程的 i18n 工具链：正文用 Write plain code → Extract and translate → Compile catalogs → Transform 四步描述编译期变换，并强调编译成数组以缩小包体，属构建与开发工作流，而不是翻译内容本身或界面组件。",
+        "evidenceUrl": "https://wuchale.dev/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:55:08.506Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "generate",
+      "learn"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "react",
+      "svelte",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://wuchale.dev",
+      "finalUrl": "https://wuchale.dev/",
+      "title": "Compile-time i18n. Zero code changes. Smallest bundles. | wuchale",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/wuchale-dev/identity.jpg",
+        "sha256": "1ed0120a89912f41e4972c5c0d8c2ac20f9d993668cc1f3768506e12261068a0",
+        "width": 1280,
+        "height": 900,
+        "bytes": 82001,
+        "alt": "wuchale 首屏：Zero code changes. Smallest bundles."
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://wuchale.dev",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/wuchale-dev/identity.jpg",
+          "alt": "wuchale 首屏：Zero code changes. Smallest bundles.",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "supported-stacks",
+      "value": "React、Preact、SolidJS、Svelte、Astro、JavaScript、TypeScript、Python*、Golang*",
+      "sourceUrl": "https://wuchale.dev/",
+      "evidence": "Works with your stack! 一栏列出的语言与框架名",
+      "confidence": 1
+    },
+    {
+      "field": "catalog-format",
+      "value": "默认用 Gettext PO 文件，编译产物是按下标访问的数组",
+      "sourceUrl": "https://wuchale.dev/",
+      "evidence": "Extract and translate 写 Into PO files (default)，Compile catalogs 一段写 export let c = [\"Hello world!\"]",
+      "confidence": 1
+    },
+    {
+      "field": "pipeline",
+      "value": "Write plain code → Extract and translate → Compile catalogs → Transform → Render",
+      "sourceUrl": "https://wuchale.dev/",
+      "evidence": "首屏下方按顺序排列的步骤标题及其代码示例",
+      "confidence": 1
+    },
+    {
+      "field": "ai-translation",
+      "value": "可选用 AI 做实时翻译（guides/ai）",
+      "sourceUrl": "https://wuchale.dev/",
+      "evidence": "Extract and translate 卡片副文案 optionally live translate using AI，以及站内 /guides/ai 路径",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/wuchale-dev.md",
+  "registryUrl": "/r/wuchale-dev.json"
+}

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7bab5e5e8c3ee4b1ca9df5dbab55ab2cdd2db84679c415eae947e96ac7f1147d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "headmade-pro-react-gosuslugi",
+  "entityId": "entity-headmade-pro-react-gosuslugi",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://headmade.pro/react-gosuslugi",
+    "finalUrl": "https://headmade.pro/react-gosuslugi/?selectedKind=Welcome&selectedStory=react-gosuslugi&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel",
+    "checkedAt": "2026-09-15T12:04:16.922Z"
+  },
+  "editorial": {
+    "name": "react-gosuslugi",
+    "descriptionZh": "一套按俄罗斯国家服务门户 Gosuslugi 样式规范做的 React 组件，用 Storybook 逐类展示。",
+    "takeawayZh": "照 Gosuslugi 规范拿组件，含模块化网格和成套表单件。",
+    "noteZh": "进去就是一个 Storybook，左侧目录全用俄语分组：Стилеобразующие элементы и каталог услуг、Графические элементы、Типографика、Интерактивные элементы управления и навигации、Элементы форм、Модульная сетка、Основные составляющие страницы；当前停在 Welcome 下的 react-gosuslugi 页，正文写 react-gosuslugi is a collection of React components that conform to Gosuslugi Style，Setup 段给 npm i --save react-gosuslugi 和 @import '~react-gosuslugi/dist/styles' 两步，底部挂着 ACTION LOGGER 与 KNOBS 两个面板。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点是一整套按指定设计规范（Gosuslugi Style）落地的 React 组件库的 Storybook，左侧分组从样式元素、图形元素、字体排印到表单元素与模块化网格都是设计系统的组成部分，故归入设计系统与完整组件套件。",
+        "evidenceUrl": "https://headmade.pro/react-gosuslugi/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:04:16.922Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "multi"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://headmade.pro/react-gosuslugi",
+      "finalUrl": "https://headmade.pro/react-gosuslugi/?selectedKind=Welcome&selectedStory=react-gosuslugi&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel",
+      "title": "Storybook",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/headmade-pro-react-gosuslugi/identity.jpg",
+        "sha256": "d7f966766e38aca15f10e36e85e3bb471e234bca25a5d4697482b2a6811f48a1",
+        "width": 1280,
+        "height": 900,
+        "bytes": 90830,
+        "alt": "react-gosuslugi 首屏"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "packageName",
+      "value": "react-gosuslugi",
+      "sourceUrl": "https://headmade.pro/react-gosuslugi/",
+      "evidence": "Setup 一节的安装命令 npm i --save react-gosuslugi 与 yarn add react-gosuslugi",
+      "confidence": 1
+    },
+    {
+      "field": "designReference",
+      "value": "Gosuslugi Style",
+      "sourceUrl": "https://headmade.pro/react-gosuslugi/",
+      "evidence": "正文首句「a collection of React components that conform to Gosuslugi Style」",
+      "confidence": 1
+    },
+    {
+      "field": "styleImport",
+      "value": "@import '~react-gosuslugi/dist/styles'",
+      "sourceUrl": "https://headmade.pro/react-gosuslugi/",
+      "evidence": "Setup 第二节 Add in you general sass 给出的 sass 引入语句",
+      "confidence": 1
+    },
+    {
+      "field": "fontsPath",
+      "value": "~react-gosuslugi/dist/fonts",
+      "sourceUrl": "https://headmade.pro/react-gosuslugi/",
+      "evidence": "正文 Setup 末句「Fonts are stored in: ~react-gosuslugi/dist/fonts」",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/headmade-pro-react-gosuslugi",
+    "designMdUrl": "https://vislexicon.com/site/headmade-pro-react-gosuslugi.md",
+    "checkedAt": "2026-09-15T12:04:16.922Z",
+    "license": "unknown"
+  }
+}

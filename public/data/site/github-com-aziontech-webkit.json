@@ -1,0 +1,158 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "c3f606d63f17ea57eb812d9211608172c92d64fac31cf56c38adbc7c04c4c6b7",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-aziontech-webkit",
+  "entityId": "entity-github-com-aziontech-webkit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/aziontech/webkit",
+    "finalUrl": "https://github.com/aziontech/webkit",
+    "checkedAt": "2026-09-15T12:16:24.761Z"
+  },
+  "editorial": {
+    "name": "aziontech/webkit",
+    "descriptionZh": "Azion 的 monorepo，把共享设计系统、组件库、theme 与 icons 以及打包流水线收在一个仓库里，README 按 packages / apps 两块说明结构。",
+    "takeawayZh": "从 packages 里取 Azion 的组件、theme 和 icons",
+    "noteZh": "首屏文件列表是 .claude、.github、.husky、.specs、apps、docs、lint-canaries、packages 这些目录，共 946 次提交。About 栏的标签是 component-library、frontend-platform、monorepo、ui-architecture、workspace，Releases 有 969 个，最新一条是 @aziontech/theme@v5.0.0。README 的章节从 What is in this repository、Workspace structure、How to read this repo 一路排到 Use in your app、For AI agents、Live previews。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自我描述为 monorepo-driven ecosystem for scalable UI development, enabling shared design systems, component libraries, and optimized build pipelines，About 标签也写 component-library / ui-architecture，用户拿走的是设计系统与组件包，归 design-system-suites。",
+        "evidenceUrl": "https://github.com/aziontech/webkit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:16:24.761Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "icon"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/aziontech/webkit",
+      "finalUrl": "https://github.com/aziontech/webkit",
+      "title": "GitHub - aziontech/webkit: A monorepo-driven ecosystem for scalable UI development, enabling shared design systems, component libraries, and optimized build pipelines. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-aziontech-webkit/identity.jpg",
+        "sha256": "3168dd1d2b8ef7152293a47ff34902b13fc0c94a74124871af4a48ca4b47191f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 141306,
+        "alt": "aziontech/webkit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/aziontech/webkit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-aziontech-webkit/identity.jpg",
+          "alt": "aziontech/webkit 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/aziontech/webkit",
+      "evidence": "右侧 About 栏 Readme 下方标注 MIT license，根目录列表里也有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "topics",
+      "value": "component-library / frontend-platform / monorepo / ui-architecture / workspace",
+      "sourceUrl": "https://github.com/aziontech/webkit",
+      "evidence": "About 栏仓库描述下方的一排标签",
+      "confidence": 1
+    },
+    {
+      "field": "releases",
+      "value": "969 个 release，最新 @aziontech/theme@v5.0.0",
+      "sourceUrl": "https://github.com/aziontech/webkit",
+      "evidence": "右侧 Releases 分区写 Releases 969，并挂出 @aziontech/theme@v5.0.0 的 Latest 标签",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-aziontech-webkit.md",
+  "registryUrl": "/r/github-com-aziontech-webkit.json"
+}

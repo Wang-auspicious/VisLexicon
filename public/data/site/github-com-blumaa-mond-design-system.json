@@ -1,0 +1,170 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "3b0bd58b3a5f5716707e0be6825cb33c66273daa9aa3c6b70b9c30f6c626661c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-blumaa-mond-design-system",
+  "entityId": "entity-github-com-blumaa-mond-design-system",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/blumaa/mond-design-system",
+    "finalUrl": "https://github.com/blumaa/mond-design-system",
+    "checkedAt": "2026-09-15T11:46:34.242Z"
+  },
+  "editorial": {
+    "name": "blumaa/mond-design-system",
+    "descriptionZh": "作者个人作品集背后那套设计系统：@mond-design-system/react 提供 40 个自带样式、不接 theme 对象的组件，@mond-design-system/tokens 给核心刻度与语义契约，换品牌只需要在消费方改一份 CSS。",
+    "takeawayZh": "拿 40 个不绑品牌的 React 组件，换肤只改一份 CSS。",
+    "noteZh": "README 的包表格逐行写着 @mond-design-system/react 是 40 components, self-styled, WCAG 2.2 AA、@mond-design-system/tokens 是 core scales 与 brand template，并声明 components … carry no product vocabulary；正文分 Install、Wire it up、How a rebrand works、Layout、Develop、Release 几节，Wire it up 强调加载顺序是先 tokens 再 components 最后品牌。仓库里有 .changeset、patches、PLAN.md，Releases 已经到 156 个。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "它同时交付组件库与 token 包，并在 README 里定义语义契约与换品牌流程，是成套的设计系统而不是零散组件，故归设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/blumaa/mond-design-system"
+      },
+      {
+        "statement": "About 侧栏标 MIT license，仓库根目录也有 LICENSE 文件，许可证有据可查。",
+        "evidenceUrl": "https://github.com/blumaa/mond-design-system"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:46:34.242Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "css"
+    ],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/blumaa/mond-design-system",
+      "finalUrl": "https://github.com/blumaa/mond-design-system",
+      "title": "GitHub - blumaa/mond-design-system: the official design system and component library behind my portfolio · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-blumaa-mond-design-system/identity.jpg",
+        "sha256": "5503bf8aeb51d696a86c7ed12a69c836bf07c538067518c60d64503a95969c22",
+        "width": 1280,
+        "height": 900,
+        "bytes": 143197,
+        "alt": "blumaa/mond-design-system 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/blumaa/mond-design-system",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-blumaa-mond-design-system/identity.jpg",
+          "alt": "blumaa/mond-design-system 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "packages",
+      "value": "@mond-design-system/react（40 components, self-styled, WCAG 2.2 AA）与 @mond-design-system/tokens",
+      "sourceUrl": "https://github.com/blumaa/mond-design-system",
+      "evidence": "README 的包表格两行",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/blumaa/mond-design-system",
+      "evidence": "About 侧栏 MIT license 与根目录 LICENSE 文件",
+      "confidence": 1
+    },
+    {
+      "field": "install",
+      "value": "pnpm add @mond-design-system/react @mond-design-system/tokens（React 19 或更新作为 peer）",
+      "sourceUrl": "https://github.com/blumaa/mond-design-system",
+      "evidence": "README 的 Install 一节",
+      "confidence": 1
+    },
+    {
+      "field": "rebrandMechanism",
+      "value": "组件自带样式、不接收 theme 对象，换品牌只需在消费方换一份 CSS",
+      "sourceUrl": "https://github.com/blumaa/mond-design-system",
+      "evidence": "README 首段与 How a rebrand works 一节",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-blumaa-mond-design-system.md",
+  "registryUrl": "/r/github-com-blumaa-mond-design-system.json"
+}

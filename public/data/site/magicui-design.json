@@ -1,0 +1,191 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ad1f486b7dc8f5216571cf76b274732009ca71a563c1d45af9f9b407b9266a33",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "magicui-design",
+  "entityId": "entity-magicui-design",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "magicui.design",
+  "official": {
+    "inputUrl": "https://magicui.design",
+    "finalUrl": "https://magicui.design/",
+    "checkedAt": "2026-09-15T12:00:41.239Z"
+  },
+  "editorial": {
+    "name": "Magic UI",
+    "descriptionZh": "面向 Design Engineer 的动画组件库，150 多个用 React、TypeScript、Tailwind 和 Motion 写的组件与光效，专门配合 shadcn/ui 用来做落地页，另有一组付费的 blocks 与模板。",
+    "takeawayZh": "复制 150+ 个带动效的 React 组件，把落地页首屏填满",
+    "noteZh": "顶栏紫色横幅在推 Magic UI Pro 的 50+ blocks and templates，导航只有 Components、Templates、Showcase 加一个 ⌘K 的文档搜索，右边是 GitHub 图标配 22,284 这个数字。首屏标题就是 UI library for Design Engineers，副标题把技术栈一次说全：React、Typescript、Tailwind CSS、Motion，并自称 Perfect companion for shadcn/ui；下面两颗按钮 Browse Components 与 Browse Templates 都带着渐变光晕，再往下是 Showcase 标题和一句 Companies choose Magic UI to build their landing pages.，跟着 anara.com、langfuse.com、million.dev 这些公司名。",
+    "recommendation": null,
+    "pricing": "Freemium（150+ 组件开源免费，Magic UI Pro 为付费 blocks 与模板）",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可直接拿走的组件：标题写 UI library for Design Engineers，副标题说明是 150+ free and open-source animated components and effects，主按钮是 Browse Components。",
+        "evidenceUrl": "https://magicui.design/"
+      },
+      {
+        "statement": "归 general-ui-components 而非动效实现类，是因为它按组件组织（内部路径 /components、/docs/components/floating-3d-particles），用户拿走的是组件代码；动效属性记在 media 里。",
+        "evidenceUrl": "https://magicui.design/components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:00:41.239Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "marketing"
+    ],
+    "deliverables": [
+      "component",
+      "code-library",
+      "block",
+      "template"
+    ],
+    "actions": [
+      "browse",
+      "search"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "tailwind",
+      "motion",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "freemium",
+      "open-source"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://magicui.design",
+      "finalUrl": "https://magicui.design/",
+      "title": "Magic UI",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/magicui-design/identity.jpg",
+        "sha256": "edb5a4994136aef2570224747180a8e9590f61c47450011c4d92528232540416",
+        "width": 1280,
+        "height": 900,
+        "bytes": 78742,
+        "alt": "Magic UI 首屏：Command Palette"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://magicui.design",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/magicui-design/identity.jpg",
+          "alt": "Magic UI 首屏：Command Palette",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "componentCount",
+      "value": "150+ free and open-source animated components and effects",
+      "sourceUrl": "https://magicui.design/",
+      "evidence": "首屏副标题，截图中可读",
+      "confidence": 1
+    },
+    {
+      "field": "techStack",
+      "value": "React、TypeScript、Tailwind CSS、Motion，并声明 Perfect companion for shadcn/ui",
+      "sourceUrl": "https://magicui.design/",
+      "evidence": "首屏副标题三行文字，按钮下方另排了对应技术 logo",
+      "confidence": 1
+    },
+    {
+      "field": "proPlan",
+      "value": "Magic UI Pro 提供 50+ blocks and templates",
+      "sourceUrl": "https://magicui.design/",
+      "evidence": "页面顶部紫色横幅 ✨ Introducing Magic UI Pro - 50+ blocks and templates to build beautiful landing pages in minutes",
+      "confidence": 1
+    },
+    {
+      "field": "githubStars",
+      "value": "22,284（nav 中显示的另一计数为 170）",
+      "sourceUrl": "https://magicui.design/",
+      "evidence": "首屏右上角 GitHub 图标旁的数字，截图与正文一致",
+      "confidence": 0.8
+    },
+    {
+      "field": "showcaseEntries",
+      "value": "anara.com、aomni.com、cognosys.ai、infisical.com、langfuse.com、million.dev、querylab.ai 等公司站与个人作品集",
+      "sourceUrl": "https://magicui.design/showcase",
+      "evidence": "首屏 Showcase 区块的站名列表，每条带一句背景说明（如 YC W23, raised $4M）",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium（150+ 组件开源免费，Magic UI Pro 为付费 blocks 与模板）。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/magicui-design.md",
+  "registryUrl": "/r/magicui-design.json"
+}

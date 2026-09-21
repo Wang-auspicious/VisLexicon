@@ -1,0 +1,169 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "14bcc7b630901c6749ac1052db47743ac1c1c2404136389ec032bf24411da3f9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-digitalnsw-nswds-ui",
+  "entityId": "entity-github-com-digitalnsw-nswds-ui",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/digitalnsw/nswds-ui",
+    "finalUrl": "https://github.com/digitalnsw/nswds-ui",
+    "checkedAt": "2026-09-15T11:47:17.907Z"
+  },
+  "editorial": {
+    "name": "digitalnsw/nswds-ui",
+    "descriptionZh": "澳大利亚新南威尔士州政府数字产品的设计系统源码仓库。既发布 @nswds/ui npm 包，也提供 shadcn registry，让你把组件源码直接拷进项目。",
+    "takeawayZh": "npx shadcn 把政府设计系统的组件拷进项目。",
+    "noteZh": "About 一句 UI components for NSW Government digital products, providing reusable design elements and patterns for consistent user interfaces，官网挂在 ui.digital.nsw.gov.au。README 的目录是 NSWDS UI、Using the components in your project、Documentation、Developing the system，示例导入写的是 from '@nswds/ui/icons'，图标按模块拆可 tree-shake，另一条安装路径是 npx shadcn@latest add @nswds/button。文件列表里 apps、docs、fixtures/consumer、packages、scripts 分开摆，提交记录里有 give ButtonGroup Button's variant family and join its segments、add the core component library (22 components) with stories、wait for each overlay to unmount before In Overlay；侧栏挂 MIT license、68 个 Release（最新 @nswds/ui-v8.0.0）。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "仓库自述是政府数字产品的可复用设计系统，同时发 npm 包并提供 registry 分发，交付完整的组件体系与设计 token，归设计系统与完整组件套件。",
+        "evidenceUrl": "https://github.com/digitalnsw/nswds-ui"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:17.907Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "icon",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui",
+      "icon"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/digitalnsw/nswds-ui",
+      "finalUrl": "https://github.com/digitalnsw/nswds-ui",
+      "title": "GitHub - digitalnsw/nswds-ui: UI components for NSW Government digital products, providing reusable design elements and patterns for consistent user interfaces. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-digitalnsw-nswds-ui/identity.jpg",
+        "sha256": "0baa152cece32004c08a58182b0d5794624fd6db44ccf5bf7944292c5c7e1d84",
+        "width": 1280,
+        "height": 900,
+        "bytes": 149234,
+        "alt": "digitalnsw/nswds-ui 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/digitalnsw/nswds-ui",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-digitalnsw-nswds-ui/identity.jpg",
+          "alt": "digitalnsw/nswds-ui 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/digitalnsw/nswds-ui",
+      "evidence": "仓库右侧 About 栏的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "installOptions",
+      "value": "npm install @nswds/ui @nswds/tokens；或 npx shadcn@latest add @nswds/button",
+      "sourceUrl": "https://github.com/digitalnsw/nswds-ui",
+      "evidence": "README 的 Using the components in your project 一节",
+      "confidence": 0.9
+    },
+    {
+      "field": "componentCount",
+      "value": "22 个核心组件（core component library）",
+      "sourceUrl": "https://github.com/digitalnsw/nswds-ui",
+      "evidence": "fixtures/consumer 一行的提交信息 add the core component library (22 components) with stories",
+      "confidence": 0.9
+    },
+    {
+      "field": "accessibilityTesting",
+      "value": "每个组件带交互测试与 axe WCAG 2.1 AA 测试，跑在 CI 里",
+      "sourceUrl": "https://github.com/digitalnsw/nswds-ui",
+      "evidence": "README 说明 Storybook 为组件工作台、组件带 interaction 与 axe WCAG 2.1 AA 测试",
+      "confidence": 0.9
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-digitalnsw-nswds-ui.md",
+  "registryUrl": "/r/github-com-digitalnsw-nswds-ui.json"
+}

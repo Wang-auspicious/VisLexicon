@@ -1,0 +1,153 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "2660d5c76ae96d839e2ff352a00f571f18a4d5d1f4cc418ed6af9a09449b5b0a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "picflow-com",
+  "entityId": "entity-picflow-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://picflow.com",
+    "finalUrl": "https://picflow.com/",
+    "checkedAt": "2026-09-15T10:41:07.830Z"
+  },
+  "editorial": {
+    "name": "Picflow",
+    "descriptionZh": "Picflow 给摄影师、视频团队和代理商做客户交付：一条品牌化链接发出成片，客户直接在图上圈改、标色、写批注并确认通过，不需要注册账号。另带一层轻量素材管理与版本追踪。",
+    "takeawayZh": "发一条链接给客户，让他在图上圈改并点通过",
+    "noteZh": "首屏深紫底，只写两个词 Creative Workflows，副标题说明这是给创意人的在线审片平台。正文把产品拆成四块：Client Gallery（挑版式、设封面、存主题，一条链接交付）、Online Proofing、Creative Workflow 和 Simple DAM for Creative Teams。审片那一段写得很具体：Reviewers open a link and mark up the work. No account required.，反馈形式是 favorites、annotations、comments、color labels 与 approval statuses。下方挂着 10,000+ Creatives, Agencies and Brands trust Picflow 的客户引言，导航另有 Showcase、Wall of Love、Compare 三处对照页。",
+    "recommendation": null,
+    "pricing": "Freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "design-to-code-handoff",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户的核心动作是把成片交付出去、收回批注与审批，落点在创作流程末端对外交付与协作这一环，因此归设计转代码/交付与协作小类。",
+        "evidenceUrl": "https://picflow.com/"
+      },
+      {
+        "statement": "它不涉及设计稿转代码，小类名里的「设计转代码」这一半用不上；放在这里只因词典没有单独的素材交付与评审小类，判断存疑。",
+        "evidenceUrl": "https://picflow.com/online-proofing"
+      },
+      {
+        "statement": "站内另有 Digital Asset Management 一栏，接近素材库工具；但首页首屏与导航首项都是 proofing 与 client gallery，故以交付评审为主。",
+        "evidenceUrl": "https://picflow.com/digital-asset-management"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:41:07.830Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas"
+    ],
+    "deliverables": [
+      "image",
+      "video"
+    ],
+    "actions": [
+      "collaborate",
+      "preview",
+      "publish",
+      "search"
+    ],
+    "media": [
+      "image",
+      "ui",
+      "video"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "handoff",
+      "publish"
+    ],
+    "audiences": [
+      "brand-team",
+      "designer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://picflow.com",
+      "finalUrl": "https://picflow.com/",
+      "title": "Picflow — Client Galleries & Online Proofing for Creatives",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/picflow-com/identity.jpg",
+        "sha256": "a3d43b6763fb06a80c3cae2fe9664909b74c2193c7e4d36c40ccabda5296063b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 70005,
+        "alt": "Picflow 首屏：Creative Workflows"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "reviewWithoutAccount",
+      "value": "审阅者打开链接即可批注，无需注册账号",
+      "sourceUrl": "https://picflow.com/online-proofing",
+      "evidence": "Online Proofing 一节：Reviewers open a link and mark up the work. No account required.",
+      "confidence": 1
+    },
+    {
+      "field": "feedbackTypes",
+      "value": "favorites、annotations、comments、color labels、approval statuses；工作流支持 list / grid / Kanban 三种视图与版本历史",
+      "sourceUrl": "https://picflow.com/creative-workflow",
+      "evidence": "Fast and Flexible Online Proofing 与 Boost Your Creative Workflow 两节正文",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Freemium",
+      "sourceUrl": "https://picflow.com/pricing",
+      "evidence": "首屏 Try Picflow for Free 按钮与导航 Pricing / Log in",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Freemium。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/picflow-com",
+    "designMdUrl": "https://vislexicon.com/site/picflow-com.md",
+    "checkedAt": "2026-09-15T10:41:07.830Z",
+    "license": "unknown"
+  }
+}

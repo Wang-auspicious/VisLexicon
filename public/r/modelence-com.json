@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "8401ba37b4b0d279f73351cf4da66b9be0dc81d7861d40ddc25004d77e42ca79",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "modelence-com",
+  "entityId": "entity-modelence-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://modelence.com",
+    "finalUrl": "https://modelence.com/",
+    "checkedAt": "2026-09-15T10:33:43.883Z"
+  },
+  "editorial": {
+    "name": "Modelence",
+    "descriptionZh": "一段提示词生成带认证、数据库与一键部署的全栈应用，同时提供一个开源 Web 框架，生成的代码可以自己接手继续改。",
+    "takeawayZh": "描述应用，生成带认证、数据库和部署的全栈代码",
+    "noteZh": "首屏徽标写 Backed by Y Combinator，主标题 Build production-ready apps with AI，输入框占位是 Build me a booking reservation system for …，下面一排示例 chip：Booking app、VC CRM、Habit tracker、Job board、Internal admin、Marketplace、Newsletter。导航把 Overview、Authentication、Database、Monitoring、Deployment、App Builder、Framework 七项并排，其中 Framework 自己标注 Open-source web framework。再往下 TRUSTED BY 15,000+ BUILDERS AND COMPANIES LIKE 挂了 MongoDB、Heolenn、Seedradar Ventures、Starvik、FormalImpact；评价区里 Heolenn 创始人写他的 ESG 平台跑了 5 个月、约 150k 行代码、约 170 个模块。",
+    "recommendation": null,
+    "pricing": "Free to start（meta description 写 Start free on Modelence）；档位在 /pricing",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "site-app-builders",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是能跑起来的全栈应用：首页三步流程写 Describe your app / Get a full-stack app / Deploy to production，产物落在 Modelence Cloud 上带自有域名。",
+        "evidenceUrl": "https://modelence.com/"
+      },
+      {
+        "statement": "归 site-app-builders 而非 build-deploy-dev-workflow：导航里的 Authentication、Database、Monitoring、Deployment 是同一个建站产品的内置能力，主体仍是生成应用本身，不是给已有项目用的流水线。",
+        "evidenceUrl": "https://modelence.com/platform"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:33:43.883Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "saas"
+    ],
+    "deliverables": [
+      "starter",
+      "full-page"
+    ],
+    "actions": [
+      "generate",
+      "edit",
+      "publish",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "build",
+      "publish"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "case-gallery"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://modelence.com",
+      "finalUrl": "https://modelence.com/",
+      "title": "Modelence | AI App Builder: Ship Production Apps from a Prompt",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/modelence-com/identity.jpg",
+        "sha256": "601d882cdc7c76bcf552e9cf645b6da4e1edd625415c9ae0ebcd65cf0923f022",
+        "width": 1280,
+        "height": 900,
+        "bytes": 82058,
+        "alt": "Modelence 首屏：Build production-ready apps with AI"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "heroPromise",
+      "value": "Build production-ready apps with AI",
+      "sourceUrl": "https://modelence.com/",
+      "evidence": "首屏大标题，截图与 http.h1 同文；副标题承诺 auth、database 与 production deploys wired in",
+      "confidence": 1
+    },
+    {
+      "field": "backing",
+      "value": "Backed by Y Combinator",
+      "sourceUrl": "https://modelence.com/",
+      "evidence": "首屏标题上方带 YC 方标的徽标，截图中可见",
+      "confidence": 1
+    },
+    {
+      "field": "frameworkLicenseUnstated",
+      "value": "导航把 Framework 标注为 Open-source web framework，但首页未写具体许可证",
+      "sourceUrl": "https://modelence.com/",
+      "evidence": "live.navLabels 的 Framework Open-source web framework 一项；页面正文无许可证名称",
+      "confidence": 0.9
+    },
+    {
+      "field": "claimedScale",
+      "value": "TRUSTED BY 15,000+ BUILDERS AND COMPANIES LIKE Mongo、Heolenn、Seedradar Ventures、Starvik、FormalImpact",
+      "sourceUrl": "https://modelence.com/",
+      "evidence": "首屏下方客户条，截图与 live.bodyText 均可见",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。",
+      "存在付费层：Free to start（meta description 写 Start free on Modelence）；档位在 /pricing。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/modelence-com",
+    "designMdUrl": "https://vislexicon.com/site/modelence-com.md",
+    "checkedAt": "2026-09-15T10:33:43.883Z",
+    "license": "unknown"
+  }
+}

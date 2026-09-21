@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "7a7bb89f7f438530c8cb4f420def44ca6f342e6753cdd272a57468d6261ae46f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-callstackincubator-rozenite",
+  "entityId": "entity-github-com-callstackincubator-rozenite",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/callstackincubator/rozenite",
+    "finalUrl": "https://github.com/callstackincubator/rozenite",
+    "checkedAt": "2026-09-15T11:50:19.547Z"
+  },
+  "editorial": {
+    "name": "callstackincubator/rozenite",
+    "descriptionZh": "一套即插即用的 React Native DevTools 面板，装上就能在调试器里看运行时数据；由 Callstack 维护，支持 React Native 和 Lynx，CLI 能识别 rspeedy 工程。站点在 rozenite.dev。",
+    "takeawayZh": "装 Rozenite 面板，在 DevTools 里看数据",
+    "noteZh": "README 一句 Plug-and-play panels for React Native DevTools. Install, enable, and start debugging in minutes.；仓库根下有 plugin-directory.json、website、docs、apps、packages、scripts/release、agents 与 .agents/skills。提交记录里能看到 feat(cli): detect Lynx (rspeedy) projects in rozenite init (#504)、feat(middleware): discover debug targets through one Rozenite endpoint、feat(ui): add Storybook for UI components (#371)，还有一条 fix(tools): format chrome-extension manifest.json after version sync。About 侧栏给 rozenite.dev，Topics 是 devtools / react-native，MIT license、659 stars、48 forks、32 位贡献者、30 个 Releases（最新 v2.4.0，两周前）。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "用户装的是一个调试工具（RN DevTools 的面板与配套 CLI），拿走的是开发期调试能力，不是界面组件或素材，故归构建、部署与开发工作流。",
+        "evidenceUrl": "https://github.com/callstackincubator/rozenite"
+      },
+      {
+        "statement": "仓库里的 plugin-directory.json、chrome-extension manifest 相关提交与 README 首句 Install, enable, and start debugging in minutes. 都指向 DevTools 插件形态。",
+        "evidenceUrl": "https://github.com/callstackincubator/rozenite"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:50:19.547Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "test"
+    ],
+    "media": [],
+    "platforms": [
+      "browser-extension"
+    ],
+    "technologies": [
+      "react",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/callstackincubator/rozenite",
+      "finalUrl": "https://github.com/callstackincubator/rozenite",
+      "title": "GitHub - callstackincubator/rozenite: Plug-and-play panels for React Native DevTools. Install, enable, and start debugging in minutes. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-callstackincubator-rozenite/identity.jpg",
+        "sha256": "e800eb4c77777e9388debbf2afaf138b6e3bdeed052eb7b14df430d6646b14ab",
+        "width": 1280,
+        "height": 900,
+        "bytes": 146246,
+        "alt": "callstackincubator/rozenite 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/callstackincubator/rozenite",
+      "evidence": "About 栏标 MIT license，README 文件表头同样显示 MIT license",
+      "confidence": 1
+    },
+    {
+      "field": "positioning",
+      "value": "Plug-and-play panels for React Native DevTools. Install, enable, and start debugging in minutes.",
+      "sourceUrl": "https://github.com/callstackincubator/rozenite",
+      "evidence": "README 首段的引言句与 About 描述",
+      "confidence": 1
+    },
+    {
+      "field": "supportedTargets",
+      "value": "React Native 与 Lynx（CLI 能识别 rspeedy 工程，另有 @rozenite/lynx-dev）",
+      "sourceUrl": "https://github.com/callstackincubator/rozenite",
+      "evidence": "提交行 feat(cli): detect Lynx (rspeedy) projects in rozenite init (#504) 与 apps 行 feat(lynx): merge @rozenite/lynx-dev in and inject the device runtime",
+      "confidence": 1
+    },
+    {
+      "field": "repoStructure",
+      "value": "根下有 plugin-directory.json、website、docs、apps、packages、scripts/release、agents、.agents/skills",
+      "sourceUrl": "https://github.com/callstackincubator/rozenite",
+      "evidence": "仓库文件列表的各目录行与提交信息",
+      "confidence": 1
+    },
+    {
+      "field": "repoStats",
+      "value": "659 stars / 48 forks / 337 commits / 15 branches / 35 tags，Releases 30 条（最新 v2.4.0），Contributors 32",
+      "sourceUrl": "https://github.com/callstackincubator/rozenite",
+      "evidence": "仓库头部计数与 About 栏 Releases、Contributors 区块",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-callstackincubator-rozenite",
+    "designMdUrl": "https://vislexicon.com/site/github-com-callstackincubator-rozenite.md",
+    "checkedAt": "2026-09-15T11:50:19.547Z",
+    "license": "MIT"
+  }
+}

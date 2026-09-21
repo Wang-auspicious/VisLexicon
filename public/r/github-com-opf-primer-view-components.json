@@ -1,0 +1,154 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "d5a3875b9574779b7ad029c06126f59088adef6527ac69f42fe7cf9790ab03c8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-opf-primer-view-components",
+  "entityId": "entity-github-com-opf-primer-view-components",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/opf/primer_view_components",
+    "finalUrl": "https://github.com/opf/primer_view_components",
+    "checkedAt": "2026-09-15T11:47:36.687Z"
+  },
+  "editorial": {
+    "name": "opf/primer_view_components",
+    "descriptionZh": "GitHub Primer 设计系统的 OpenProject 分支，把 Primer 组件封装成 Rails 的 ViewComponent，供 OpenProject 这类 Rails 应用直接用，同时定期与上游 primer/view_components 合并。",
+    "takeawayZh": "用 ViewComponent 调 Primer 组件",
+    "noteZh": "页面顶部先给一句状态：This branch is 1641 commits ahead of and 31 commits behind primer/view_components:main.，说明这是个长期跟上游同步的 fork。About 一句话写 ViewComponents for the Primer Design System，外链指向 primer.style/view-components/ 的组件文档。目录列表里 app、demo、previews、static、templates 与 .erb_linters 并存，提交信息里有 Rename .erb-linters folder to .erb_linters 和 [WIP] Fix failing GitHub Actions job prebuild，.playwright 一条写着 Generating component snapshots，说明它靠快照做组件回归。Releases 166 个，最新 v0.91.2。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是 Primer 这套设计系统在 Rails 上的组件实现（ViewComponent），用户拿走的是可安装的组件代码，归组件与设计系统层。",
+        "evidenceUrl": "https://github.com/opf/primer_view_components"
+      },
+      {
+        "statement": "fork 自 primer/view_components 且 About 直接写 ViewComponents for the Primer Design System，设计系统归属明确，因此落在设计系统套件而非通用组件库。",
+        "evidenceUrl": "https://github.com/opf/primer_view_components"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:47:36.687Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "browse"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/opf/primer_view_components",
+      "finalUrl": "https://github.com/opf/primer_view_components",
+      "title": "GitHub - opf/primer_view_components: ViewComponents for the Primer Design System · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-opf-primer-view-components/identity.jpg",
+        "sha256": "cc2898822836a5be859dad6501b7c2155529540ef4b3db10903e1223fdd709e5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 130089,
+        "alt": "opf/primer_view_components 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "forkRelationship",
+      "value": "fork 自 primer/view_components，当前领先上游 1641 个提交、落后 31 个",
+      "sourceUrl": "https://github.com/opf/primer_view_components",
+      "evidence": "首屏分支提示条原文「This branch is 1641 commits ahead of and 31 commits behind primer/view_components:main.」",
+      "confidence": 1
+    },
+    {
+      "field": "whatItIs",
+      "value": "Primer 设计系统的 Rails ViewComponent 实现",
+      "sourceUrl": "https://github.com/opf/primer_view_components",
+      "evidence": "About 一句话「ViewComponents for the Primer Design System」，外链 primer.style/view-components/。",
+      "confidence": 1
+    },
+    {
+      "field": "releaseCadence",
+      "value": "166 个 Releases，最新 v0.91.2",
+      "sourceUrl": "https://github.com/opf/primer_view_components",
+      "evidence": "右侧 About 区 Releases 166 (166) 与 Latest 标签下的 v0.91.2。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/opf/primer_view_components",
+      "evidence": "About 区只有一行指向 License 的链接，未在本页显示具体许可证名称，故记 unknown。",
+      "confidence": 0.5
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-opf-primer-view-components",
+    "designMdUrl": "https://vislexicon.com/site/github-com-opf-primer-view-components.md",
+    "checkedAt": "2026-09-15T11:47:36.687Z",
+    "license": "unknown"
+  }
+}

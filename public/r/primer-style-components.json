@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "5f4184c81d5c14acfa0853c3bfb16c418d6f0316381d4051f7aa7da8ad6ccf59",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "primer-style-components",
+  "entityId": "entity-primer-style-components",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://primer.style/components",
+    "finalUrl": "https://primer.style/product/components/",
+    "checkedAt": "2026-09-15T12:03:37.982Z"
+  },
+  "editorial": {
+    "name": "Primer Components",
+    "descriptionZh": "Primer 的组件清单页，按字母列出 Product UI 的全部组件及其用途说明。左侧栏同时挂了 Primitives 与 UI Patterns 两条文档线。",
+    "takeawayZh": "按组件名查 Primer 的 React 组件用法与状态。",
+    "noteZh": "左侧栏顶上是 Search Product UI 输入框，往下分 Getting Started、Primitives、UI Patterns 几段，Primitives 里列了 Color / Size / Typography / Token Names。正文标题 Components 下面直接铺组件卡，第一排是 ActionBar 和 ActionList，ActionList 的卡片里放了一个 Copy link ⌘⇧C、Delete comment 的菜单实样。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是可逐项复用的 React 组件清单（ActionBar、ActionList 等），属于设计系统的组件层",
+        "evidenceUrl": "https://primer.style/product/components/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:03:37.982Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "search",
+      "browse",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "figma"
+    ],
+    "technologies": [
+      "react"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://primer.style/components",
+      "finalUrl": "https://primer.style/product/components/",
+      "title": "Components | Primer",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/primer-style-components/identity.jpg",
+        "sha256": "6dd75b5250c096ffa8187ec325f9241a060da91dca87d2cb5c7a543ebe173577",
+        "width": 1280,
+        "height": 900,
+        "bytes": 111088,
+        "alt": "Primer Components 首屏：Product UI navigation"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "componentList",
+      "value": "ActionBar、ActionList、ActionMenu、AnchoredOverlay、Autocomplete、Avatar 等",
+      "sourceUrl": "https://primer.style/product/components/",
+      "evidence": "组件页按字母列组件卡，首屏可见 ActionBar 与 ActionList",
+      "confidence": 1
+    },
+    {
+      "field": "figmaLibraries",
+      "value": "提供 Figma 库",
+      "sourceUrl": "https://primer.style/product/components/",
+      "evidence": "左侧栏 Getting Started 段下有 Figma libraries 一项",
+      "confidence": 1
+    },
+    {
+      "field": "uiPatterns",
+      "value": "Forms、Loading、Empty states、Progressive disclosure 等 UI Patterns 文档",
+      "sourceUrl": "https://primer.style/product/components/",
+      "evidence": "左侧栏 UI Patterns 段与站内路径 /product/ui-patterns/*",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/primer-style-components",
+    "designMdUrl": "https://vislexicon.com/site/primer-style-components.md",
+    "checkedAt": "2026-09-15T12:03:37.982Z",
+    "license": "unknown"
+  }
+}

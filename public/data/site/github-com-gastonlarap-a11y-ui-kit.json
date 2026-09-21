@@ -1,0 +1,161 @@
+{
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "e8f8b066041bc86bfe783a85851c09387a450a9ef4ae1be4813900a3d0825aaf",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-gastonlarap-a11y-ui-kit",
+  "entityId": "entity-github-com-gastonlarap-a11y-ui-kit",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "github.com",
+  "official": {
+    "inputUrl": "https://github.com/gastonlarap-a11y/ui-kit",
+    "finalUrl": "https://github.com/gastonlarap-a11y/ui-kit",
+    "checkedAt": "2026-09-15T11:42:01.121Z"
+  },
+  "editorial": {
+    "name": "gastonlarap-a11y/ui-kit",
+    "descriptionZh": "基于 Base UI 与 Tailwind CSS v4 的无障碍 React 组件库，About 自述 ESM-only、RSC-ready、WCAG AA verified。当前 v0.4.0，组件数从 24 个扩到 42 个。",
+    "takeawayZh": "装 @galarap/ui，用它的无障碍组件",
+    "noteZh": "仓库只有 22 次提交，但 commit 写得很细：grow the kit from 24 to 42 components、audit every theme, fix the token layer, and make the kit…，还有一条 test(sizing): make the toolbar's 32px a contract instead of a coincidence。About 写明 MIT license，Releases 停在 v0.4.0，代码走 src + tsup.config.ts + .storybook 这条路，.agents 和 .claude 两个 agent 目录也在版本控制里。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是带主题与 token 层的成品 React 组件（.storybook 里对每个主题做审计），不是无样式原语；WCAG AA 是它的验收标准而不是交付形态，所以归通用界面组件库。若只看无障碍取向也可归 headless-accessible-primitives，这里是本批里判断有分歧的一条。",
+        "evidenceUrl": "https://github.com/gastonlarap-a11y/ui-kit"
+      }
+    ],
+    "confirmedAt": "2026-09-15T11:42:01.121Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "copy",
+      "test"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "base-ui"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source",
+      "free"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/gastonlarap-a11y/ui-kit",
+      "finalUrl": "https://github.com/gastonlarap-a11y/ui-kit",
+      "title": "GitHub - gastonlarap-a11y/ui-kit: Accessible React component library built on Base UI and Tailwind CSS v4. ESM-only, RSC-ready, WCAG AA verified. · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "/shots/github-com-gastonlarap-a11y-ui-kit/identity.jpg",
+        "sha256": "312546d4a93809c86e0925e87b79aefeac45cee390d43168e3e7a7765baa9a3b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144319,
+        "alt": "gastonlarap-a11y/ui-kit 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity"
+    ],
+    "verifiedCount": 1,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/gastonlarap-a11y/ui-kit",
+        "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+        "shot": {
+          "src": "/shots/github-com-gastonlarap-a11y-ui-kit/identity.jpg",
+          "alt": "gastonlarap-a11y/ui-kit 首屏：Navigation Menu",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/gastonlarap-a11y/ui-kit",
+      "evidence": "About 侧栏显示 MIT license，文件列表里也有 LICENSE",
+      "confidence": 1
+    },
+    {
+      "field": "positioning",
+      "value": "Accessible React component library built on Base UI and Tailwind CSS v4. ESM-only, RSC-ready, WCAG AA verified.",
+      "sourceUrl": "https://github.com/gastonlarap-a11y/ui-kit",
+      "evidence": "仓库描述与 About 栏原文，浏览器页签标题里同样出现",
+      "confidence": 1
+    },
+    {
+      "field": "componentCount",
+      "value": "从 24 个扩到 42 个组件（v0.4.0）",
+      "sourceUrl": "https://github.com/gastonlarap-a11y/ui-kit/commits/main",
+      "evidence": ".agents 目录的 commit 消息 grow the kit from 24 to 42 components (#16)，右侧 Releases 显示 v0.4.0",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/github-com-gastonlarap-a11y-ui-kit.md",
+  "registryUrl": "/r/github-com-gastonlarap-a11y-ui-kit.json"
+}

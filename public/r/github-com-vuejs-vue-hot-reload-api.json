@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "4c935c4a73ef3b8dcbfc37a727c5c4ead87b1a228fdf666a8e9f36091ff5de54",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "github-com-vuejs-vue-hot-reload-api",
+  "entityId": "entity-github-com-vuejs-vue-hot-reload-api",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/vuejs/vue-hot-reload-api",
+    "finalUrl": "https://github.com/vuejs/vue-hot-reload-api",
+    "checkedAt": "2026-09-15T12:13:48.647Z"
+  },
+  "editorial": {
+    "name": "vuejs/vue-hot-reload-api",
+    "descriptionZh": "Vue 组件的热重载 API 仓库，vue-loader 和 vueify 底层靠它做 HMR；README 说明 2.x 只配 Vue 2.x 用。",
+    "takeawayZh": "自己写构建链时，用它给 Vue 组件接上 HMR 热重载",
+    "noteZh": "README 开头的提示是 vue-hot-reload-api@2.x only works with vue@2.x，正文一句 Hot reload API for Vue components. This is what vue-loader and vueify use under the hood.。示例代码走 module.hot 分支，依次调 api.install(Vue) 和 api.createRecord('very-unique-id', myComponentOptions)，并说明只有模板或 render 变了可以强制重渲染。右侧 About 下挂着 MIT license 与 466 stars，Used by 一栏是 2.4M。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 写明 This is what vue-loader and vueify use under the hood.，交付物是构建链里的一个 API 包，归构建、部署与开发工作流。",
+        "evidenceUrl": "https://github.com/vuejs/vue-hot-reload-api"
+      },
+      {
+        "statement": "用途被限定在写构建工具链的场景，正文原话是 You will only be using this if you are writing some build toolchain based on Vue components.，不是界面组件库。",
+        "evidenceUrl": "https://github.com/vuejs/vue-hot-reload-api"
+      }
+    ],
+    "confirmedAt": "2026-09-15T12:13:48.647Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "browse"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/vuejs/vue-hot-reload-api",
+      "finalUrl": "https://github.com/vuejs/vue-hot-reload-api",
+      "title": "GitHub - vuejs/vue-hot-reload-api: 🌶️ Hot reload API for Vue components · GitHub",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-vuejs-vue-hot-reload-api/identity.jpg",
+        "sha256": "0d07581b68b6657524e4adbe516d47a497dfa638d36b44e61f69aa34039a8e30",
+        "width": 1280,
+        "height": 900,
+        "bytes": 120354,
+        "alt": "vuejs/vue-hot-reload-api 首屏：Navigation Menu"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/vuejs/vue-hot-reload-api",
+      "evidence": "About 栏的 MIT license 一行",
+      "confidence": 1
+    },
+    {
+      "field": "scope",
+      "value": "2.x 仅支持 Vue 2.x",
+      "sourceUrl": "https://github.com/vuejs/vue-hot-reload-api",
+      "evidence": "README 顶部 Note: vue-hot-reload-api@2.x only works with vue@2.x",
+      "confidence": 1
+    },
+    {
+      "field": "used-by",
+      "value": "2.4M 个项目，其中 vue-loader 与 vueify 直接依赖",
+      "sourceUrl": "https://github.com/vuejs/vue-hot-reload-api",
+      "evidence": "右侧 Used by 2.4M 计数与 README 正文那句",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-vuejs-vue-hot-reload-api",
+    "designMdUrl": "https://vislexicon.com/site/github-com-vuejs-vue-hot-reload-api.md",
+    "checkedAt": "2026-09-15T12:13:48.647Z",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-35315ecedf56c3d5",
+  "revision": "ad07c389b2406a79fc0fae135216febafa06ebc64fee8484e1df5c6ab1adf342",
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-21T01:53:30.244Z",
+  "entryId": "chargetrip-com",
+  "entityId": "entity-chargetrip-com",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://chargetrip.com",
+    "finalUrl": "https://www.chargetrip.com/",
+    "checkedAt": "2026-09-15T10:50:41.252Z"
+  },
+  "editorial": {
+    "name": "Chargetrip",
+    "descriptionZh": "Chargetrip 把电动车路线规划做成可嵌入的 API 和无代码组件，让充电运营商、租车公司、车厂在自己的 App 里算续航、找桩、比价。首屏的演示卡直接给出一趟 Amsterdam 到 Warsaw 的行程：1273 km、6 次充电、€240,24。",
+    "takeawayZh": "看 EV 路线产品怎么把行程卡做成首屏主角",
+    "noteZh": "抓取时 http 阶段的导航是空的，浏览器渲染后首屏主体是一把 CCS 充电枪被手握着的特写，背景压着橙黑横条；顶部一条 Planned maintenance – 08/09/26 – 8.00PM - 12.00AM (CET). 的公告。左侧 Operation 卡里有 Station utilization 与 TCO Reduction 两个标签和一条 0–100 的纵轴，右下角一张 Renault 5 的卡写 Amsterdam to Porto / € 238.40 / 462 kWh。正文按 CPO、Rental、eMSP、Leasing 四类客户分节；Route Planner 演示能调 Battery at start 80%、Battery at arrival 20%、Occupants 3、Driving style Normal、Climate control、Additional weight，行程结果列出 Ionity · Sodetrel Intermarche 150 kW 这类站点与 Charge from 20% -> 80% 的充电时长。页脚把 No-Code 与 API 两套定价分开挂。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "single-site-showcase",
+    "subcategory": "product-company-sites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首屏的行程演示卡与 Tailored to your industry 分栏都在讲 Chargetrip 自家的路线规划服务，属于产品与公司官网；候选池里它来自 saaslandingpage.com 的落地页灵感。",
+        "evidenceUrl": "https://www.chargetrip.com/"
+      }
+    ],
+    "confirmedAt": "2026-09-15T10:50:41.252Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "data-visualization",
+      "image"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "workflowStages": [],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://chargetrip.com",
+      "finalUrl": "https://www.chargetrip.com/",
+      "title": "Chargetrip EV routing | Routing revenue",
+      "selectionRationale": "本条目采集于 2026-09-15 的首屏实测；手记描述的就是这一屏。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/chargetrip-com/identity.jpg",
+        "sha256": "21c21f0f441f03091a967ebcf2ea2f230a5fa98581800dc8669e3dddca656730",
+        "width": 1280,
+        "height": 900,
+        "bytes": 74785,
+        "alt": "Chargetrip 首屏：A driver's route plan is your revenue plan."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "pricingSurfaces",
+      "value": "No-Code 与 API 两套分开计价",
+      "sourceUrl": "https://www.chargetrip.com/pricing/api",
+      "evidence": "站内 /pricing/nocode 与 /pricing/api 两个路径，页脚把它们分开挂",
+      "confidence": 1
+    },
+    {
+      "field": "routeDemo",
+      "value": "Amsterdam to Warsaw 1273 km · 6 charging stops，Est. charge costs € 240,24",
+      "sourceUrl": "https://www.chargetrip.com/",
+      "evidence": "Route Planner 演示卡里的行程明细",
+      "confidence": 1
+    },
+    {
+      "field": "routePlannerControls",
+      "value": "Battery at start 80%、Battery at arrival 20%、Occupants 3、Driving style Normal、Climate control、Additional weight",
+      "sourceUrl": "https://www.chargetrip.com/",
+      "evidence": "Route Planner 卡片左侧的可调参数栏",
+      "confidence": 1
+    },
+    {
+      "field": "maintenanceNotice",
+      "value": "Planned maintenance – 08/09/26 – 8.00PM - 12.00AM (CET)",
+      "sourceUrl": "https://www.chargetrip.com/",
+      "evidence": "首屏顶部深色维护公告条",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/chargetrip-com",
+    "designMdUrl": "https://vislexicon.com/site/chargetrip-com.md",
+    "checkedAt": "2026-09-15T10:50:41.252Z",
+    "license": "unknown"
+  }
+}
