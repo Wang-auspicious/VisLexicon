@@ -38,22 +38,22 @@ export function visualConstraints(query,{splitStates=true}={}) {
   const hoverPattern=/(?:悬停|hover)(?:时|后|态|状态)?(?:的|变为|变成|是|为|呈|成|浅|深|\s){0,5}(白|黑|蓝|紫)(?:色)?|\bhover\s+(white|black|blue|purple)\b/gu
   const colors={白:'white',黑:'black',蓝:'blue',紫:'purple'}
   const excludedAt=offset=>/(?:不要|不用|非|不带|without|no)\s*$/u.test(q.slice(Math.max(0,offset-8),offset))
-  const extract=(input,pattern,role)=>input.replace(pattern,(...args)=>{
+  const extract=(input,pattern,role,{implicit=false}={})=>input.replace(pattern,(...args)=>{
     const match=args[0],offset=args.at(-2),groups=args.slice(1,-2)
-    constraints.push({role,color:colors[groups.find(Boolean)]||groups.find(Boolean),excluded:excludedAt(offset)})
+    constraints.push({role,color:colors[groups.find(Boolean)]||groups.find(Boolean),excluded:excludedAt(offset),...(implicit?{implicit:true}:{})})
     return ' '.repeat(match.length)
   })
   let remaining=extract(q,textPattern,'text')
   remaining=extract(remaining,strokePattern,'stroke')
   remaining=remaining.replace(paleBlueBackgroundPattern,(match,offset)=>{constraints.push({role:'background',color:'paleBlue',excluded:excludedAt(offset)});return ' '.repeat(match.length)})
   remaining=remaining.replace(hoverPaleBluePattern,(match,offset)=>{constraints.push({role:'hoverBackground',color:'paleBlue',excluded:excludedAt(offset)});return ' '.repeat(match.length)})
-  remaining=extract(remaining,hoverPattern,'hoverBackground')
   remaining=extract(remaining,iconPattern,'iconColor')
   remaining=extract(remaining,backgroundPattern,'background')
+  remaining=extract(remaining,hoverPattern,'hoverBackground',{implicit:true})
   for(const [pattern,negative,color] of [
     [/蓝|\bblue\b/u,/(?:不要|不用|非|without|no)\s*(?:浅|深|light |dark )?蓝|\b(?:no|without)\s+blue/u,'blue'],
     [/紫|\bpurple\b/u,/(?:不要|不用|非|without|no)\s*(?:浅|深|light |dark )?紫|\b(?:no|without)\s+purple/u,'purple'],
-  ])if(pattern.test(remaining)&&!negative.test(remaining))constraints.push({role:'background',color})
+  ])if(pattern.test(remaining)&&!negative.test(remaining))constraints.push({role:'background',color,implicit:true})
   if(/透明(?:背景|底色|填充|底|按钮)|\btransparent\s+(?:background|fill|buttons?)\b/u.test(q))constraints.push({role:'background',color:'transparent'})
   // 实心 / 描边 / 幽灵是同一轴上的三个取值，三个都要能约束。
   // 只认实心的话，「描边按钮」会把实心按钮一并召回——反例挡不住。
@@ -74,10 +74,15 @@ export function visualConstraints(query,{splitStates=true}={}) {
 }
 export function visualConflicts(query,unit) {
   if(unit.kind!=='website-component')return []
+  // An unqualified color on a Link or Text request may describe resting or
+  // hover text. Keep it for Jev to judge using the measured state description.
+  const textLike=(unit.componentType==='link'&&/链接|超链接|\b(?:links?|hyperlinks?)\b/iu.test(query))
+    ||(unit.componentType==='text'&&/文字|文本|\btext\b/iu.test(query))
   const computed=unit.visual?.computed
   const visibleBorder=parseFloat(computed?.borderWidth)>0&&computed?.borderStyle!=='none'
     &&colorFacts(computed?.borderColor)?.transparent===false
   return visualConstraints(query).flatMap(constraint=>{
+    if(textLike&&constraint.implicit&&['background','hoverBackground'].includes(constraint.role))return []
     const measured=constraint.role==='style'?unit.visual?.style===constraint.value
       :constraint.role==='hoverStyle'?constraint.value==='solid'?colorFacts(computed?.hoverBackground)?.transparent===false:undefined
       :constraint.role==='borderStyle'?visibleBorder&&computed?.borderStyle===constraint.value

@@ -31,7 +31,7 @@ export function queryTerms(query) {
 export function wantsComponentInstance(query) {
   const q=String(query).normalize('NFKC').toLowerCase()
   if(/组件库|网站|站点|资源库|(?:component|ui)\s+librar|\b(?:website|websites|libraries|library)\b/u.test(q))return false
-  return /组件|按钮|卡片|输入框|开关|加载圈|导航栏|\b(?:buttons?|cards?|components?|inputs?|toggles?|spinners?)\b/u.test(q)
+  return /组件|按钮|卡片|输入框|开关|加载圈|导航栏|链接|超链接|\b(?:buttons?|cards?|components?|inputs?|toggles?|spinners?|links?|hyperlinks?)\b/u.test(q)
 }
 export function explicitConflicts(query, unit) {
   const q=query.toLowerCase(), conflicts=[]
