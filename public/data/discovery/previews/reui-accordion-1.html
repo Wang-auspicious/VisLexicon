@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReUI Accordion 1 — controlled preview</title>
+  <style>
+    @font-face {
+      font-family: Inter;
+      src: url('../../../fonts/inter-variable-latin.woff2') format('woff2');
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+    }
+    :root { color-scheme: light; font-family: Inter, "Inter Fallback"; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #fff; }
+    body { min-height: 100vh; display: grid; place-items: center; }
+    .accordion { width: min(512px, calc(100vw - 88px)); display: flex; flex-direction: column; color: #000; font-size: 16px; line-height: 24px; }
+    .item { border-bottom: 1px solid #e5e5e5; }
+    .item:last-child { border-bottom: 0; }
+    h3 { margin: 0; font: inherit; }
+    .trigger {
+      width: 100%; min-height: 42px; padding: 10px 0;
+      display: flex; align-items: flex-start; justify-content: space-between;
+      border: 1px solid transparent; border-radius: 10px;
+      background: transparent; color: #000;
+      font-family: Inter, "Inter Fallback"; font-size: 14px; font-weight: 500;
+      line-height: 20px; letter-spacing: normal; text-align: left;
+      cursor: pointer; transition: box-shadow 150ms cubic-bezier(.4,0,.2,1);
+    }
+    .trigger:hover { text-decoration: underline; }
+    .trigger:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(112,112,112,.5); }
+    .trigger svg { width: 16px; height: 16px; flex: none; color: #777; stroke-width: 2; fill: none; }
+    .panel { overflow: hidden; height: 0; }
+    .panel-inner { padding-bottom: 10px; font-size: 14px; font-weight: 400; line-height: 20px; }
+  </style>
+</head>
+<body>
+  <div class="accordion" data-slot="accordion" role="region" dir="ltr">
+    <div class="item" data-slot="accordion-item">
+      <h3><button class="trigger" id="trigger-1" type="button" aria-expanded="true" aria-controls="panel-1" data-slot="accordion-trigger">Is it accessible ?<svg aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor"><path d="m18 15-6-6-6 6"/></svg></button></h3>
+      <div class="panel" id="panel-1" role="region" aria-labelledby="trigger-1" data-slot="accordion-content" style="height:auto"><div class="panel-inner">Yes. It adheres to the WAI-ARIA design pattern.</div></div>
+    </div>
+    <div class="item" data-slot="accordion-item">
+      <h3><button class="trigger" id="trigger-2" type="button" aria-expanded="false" data-slot="accordion-trigger">Is it styled?<svg aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></button></h3>
+    </div>
+    <div class="item" data-slot="accordion-item">
+      <h3><button class="trigger" id="trigger-3" type="button" aria-expanded="false" data-slot="accordion-trigger">Is it animated?<svg aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></button></h3>
+    </div>
+  </div>
+  <script>
+    const items = [...document.querySelectorAll('.item')];
+    const answers = [
+      'Yes. It adheres to the WAI-ARIA design pattern.',
+      "Yes. It comes with default styles that matches the other components' aesthetic.",
+      "Yes. It's animated by default, but you can disable it if you prefer."
+    ];
+    const openAnimations = new WeakMap();
+    function setOpen(item, open) {
+      const trigger = item.querySelector('.trigger');
+      let panel = item.querySelector('.panel');
+      const from = panel ? panel.getBoundingClientRect().height : 0;
+      if (open && !panel) {
+        const index = items.indexOf(item);
+        panel = document.createElement('div');
+        panel.className = 'panel';
+        panel.id = 'panel-' + (index + 1);
+        panel.setAttribute('role', 'region');
+        panel.setAttribute('aria-labelledby', trigger.id);
+        panel.setAttribute('data-slot', 'accordion-content');
+        const inner = document.createElement('div');
+        inner.className = 'panel-inner';
+        inner.textContent = answers[index];
+        panel.append(inner);
+        item.append(panel);
+      }
+      if (!panel) return;
+      const previous = openAnimations.get(panel);
+      if (previous) previous.cancel();
+      const to = open ? panel.firstElementChild.getBoundingClientRect().height : 0;
+      trigger.setAttribute('aria-expanded', String(open));
+      if (open) {
+        trigger.setAttribute('aria-controls', panel.id);
+        panel.removeAttribute('aria-hidden');
+      } else {
+        trigger.removeAttribute('aria-controls');
+        panel.setAttribute('aria-hidden', 'true');
+      }
+      trigger.querySelector('path').setAttribute('d', open ? 'm18 15-6-6-6 6' : 'm6 9 6 6 6-6');
+      panel.style.height = from + 'px';
+      const animation = panel.animate([{height: from + 'px'}, {height: to + 'px'}], {duration: 200, easing: 'ease-out', fill: 'forwards'});
+      openAnimations.set(panel, animation);
+      animation.onfinish = () => {
+        if (openAnimations.get(panel) !== animation) return;
+        if (open) panel.style.height = 'auto';
+        else panel.remove();
+        animation.cancel();
+        openAnimations.delete(panel);
+      };
+    }
+    for (const item of items) {
+      item.querySelector('.trigger').addEventListener('click', () => {
+        const trigger = item.querySelector('.trigger');
+        const shouldOpen = trigger.getAttribute('aria-expanded') !== 'true';
+        for (const other of items) if (other !== item && other.querySelector('.trigger').getAttribute('aria-expanded') === 'true') setOpen(other, false);
+        setOpen(item, shouldOpen);
+      });
+    }
+  </script>
+</body>
+</html>

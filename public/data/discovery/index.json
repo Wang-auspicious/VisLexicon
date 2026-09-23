@@ -1,18 +1,18 @@
 {
   "schemaVersion": "component-instance/2.0",
-  "generatedAt": "2026-09-23T18:45:30.292Z",
+  "generatedAt": "2026-09-23T19:08:29.426Z",
   "batchId": "capture-v2",
   "counts": {
-    "rawObservations": 3071,
-    "indexedInstances": 190,
-    "websiteInstances": 188,
+    "rawObservations": 3084,
+    "indexedInstances": 193,
+    "websiteInstances": 191,
     "atlasEffects": 2,
-    "pendingDetail": 2402,
+    "pendingDetail": 2408,
     "classifiedNoncomponents": 324,
     "componentFragments": 62,
     "legacySamplesPending": 110,
     "fullyCrawledSites": 0,
-    "observedSitePages": 13
+    "observedSitePages": 14
   },
   "scope": "Only independently reviewed captures within their explicit scope; not full website coverage.",
   "units": [
@@ -42790,6 +42790,386 @@
       ]
     },
     {
+      "id": "element-plus-text-element-plus-text-67e7e6f19f731049718a",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/text",
+      "variantId": "element-plus-text-67e7e6f19f731049718a",
+      "instanceId": "element-plus-text-element-plus-text-67e7e6f19f731049718a",
+      "kind": "website-component",
+      "componentType": "text",
+      "nameZh": "Element Plus 自身限宽150px单行省略文本",
+      "nameEn": "Element Plus self-width 150px single-line ellipsis text",
+      "descriptionZh": "结构：官方 Ellipsis 的原生 SPAN 直接包含“Self element set width 100px”，单行末尾由 CSS 绘制省略号。示例文案称“100px”，但源码 w-150px 类与实测外框都为 150px。\n\n尺寸与布局：1280×900 CSS 视口外框 150×19.59px，文字 scrollWidth 190px、clientWidth 150px；自身宽度限制，overflow:hidden、white-space:nowrap、text-overflow:ellipsis。四边 padding 0px，下外距 8px，边框 0px，圆角 0px。\n\n色彩与质感：透明背景 rgba(0, 0, 0, 0)、文字 rgb(96, 98, 102)、透明度 1，无渐变、阴影或图像。\n\n字体与图标：Inter 字体已加载，字号 14px、字重 400、行高 19.6px、字距 normal；无图标。\n\n运动与状态：默认显示截断省略号；悬停 700ms 和安全压下 120ms 只改变 :hover/:active 命中，颜色与尺寸不变。title 属性保存完整文字；浏览器原生标题浮层不在 DOM 截图的核验范围。\n\n响应与范围：390×844 CSS 视口仍是 150×19.59px，文字保持单行截断。触屏与减少动态只有浏览器仿真，未测实体设备或读屏输出。",
+      "descriptionEn": "Structure: The official Ellipsis native SPAN directly contains “Self element set width 100px”, with a CSS-painted one-line ellipsis. The example copy says “100px”, but source class w-150px and measured box width are both 150px.\n\nSize and layout: At 1280×900 CSS px the box is 150×19.59px; text scrollWidth is 190px versus clientWidth 150px. The span owns its width constraint, overflow:hidden, white-space:nowrap and text-overflow:ellipsis. Padding 0px, bottom margin 8px, border 0px and radius 0px.\n\nColor and material: Transparent fill rgba(0, 0, 0, 0), text rgb(96, 98, 102), opacity 1; no gradient, shadow or image.\n\nTypography and icons: Inter loaded, 14px type, weight 400, 19.6px line-height and normal letter spacing; no icon.\n\nMotion and states: Default paint is clipped with an ellipsis. A 700ms pointer hover and 120ms safe held press changed only :hover/:active matching, with no color or size change. The title attribute contains the full text; the browser-native title popup was outside DOM screenshot verification.\n\nResponsive scope: At 390×844 CSS px the box remains 150×19.59px with one-line clipping. Touch and reduced-motion results are browser emulations; physical devices and screen-reader output remain outside this measured browser scope.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/text#ellipsis",
+      "previewUrl": "/data/discovery/previews/element-plus-text-element-plus-text-67e7e6f19f731049718a.html",
+      "previewKind": "measured-ellipsis-reconstruction",
+      "offers": [],
+      "tags": [
+        "文本",
+        "text",
+        "原生SPAN",
+        "自身固定宽度",
+        "单行溢出省略",
+        "150px宽",
+        "无描边",
+        "无圆角",
+        "rgb(96, 98, 102)",
+        "透明背景",
+        "纯文字",
+        "无阴影",
+        "14px Inter",
+        "19.6px行高",
+        "nowrap",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "native title attribute",
+        "Element Plus Text",
+        "Ellipsis official example",
+        "自身限宽单行省略文本",
+        "self-width ellipsis text",
+        "w-150px truncated text"
+      ],
+      "tagFacets": {
+        "object": [
+          "文本",
+          "text"
+        ],
+        "structure": [
+          "原生SPAN",
+          "自身固定宽度",
+          "单行溢出省略"
+        ],
+        "shape": [
+          "150px宽",
+          "无描边",
+          "无圆角"
+        ],
+        "color": [
+          "rgb(96, 98, 102)",
+          "透明背景"
+        ],
+        "material": [
+          "纯文字",
+          "无阴影"
+        ],
+        "typography": [
+          "14px Inter",
+          "19.6px行高",
+          "nowrap"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "native title attribute"
+        ],
+        "context": [
+          "Element Plus Text",
+          "Ellipsis official example"
+        ]
+      },
+      "visual": {
+        "xPx": 323.5,
+        "yPx": 440.47,
+        "widthPx": 150,
+        "heightPx": 19.59,
+        "sizingRule": "Element owns class w-150px: computed width 150px and scrollWidth 190px versus clientWidth 150px. Official string says “100px” but actual CSS and geometry are 150px.",
+        "parent": "DIV.example-showcase 947×199.36px.",
+        "topLeftPx": 0,
+        "topRightPx": 0,
+        "bottomRightPx": 0,
+        "bottomLeftPx": 0,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow:hidden clips the single-line text after 150px; ellipsis is painted by CSS text-overflow.",
+        "style": "ghost",
+        "computed": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(96, 98, 102)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": null
+        },
+        "colors": {
+          "context": "Official light docs parent {\"color\":\"rgb(255, 255, 255)\",\"from\":\"DIV.example-showcase\"}.",
+          "fill": "rgba(0, 0, 0, 0)",
+          "text": "rgb(96, 98, 102)",
+          "border": "0px none rgb(96, 98, 102)",
+          "icon": "No icon in this exact SPAN.",
+          "decoration": "CSS text-overflow:ellipsis and text decoration none solid rgb(96, 98, 102); opacity 1.",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Self element set width 100px",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Computed source font and loaded-face check {\"checked\":\"Inter\",\"genericKeyword\":false,\"loaded\":true,\"status\":\"loaded\"}.",
+          "alignment": "start",
+          "wrapping": "One line; white-space:nowrap, overflow:hidden and text-overflow:ellipsis; source scrollWidth 190px exceeds 150px client box.",
+          "decoration": "none solid rgb(96, 98, 102)",
+          "fontSizePx": 14,
+          "lineHeightPx": 19.6,
+          "letterSpacingPx": 0,
+          "fontWeight": 400,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 8,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-block",
+          "position": "static",
+          "alignment": "Single line, start aligned, self-constrained 150px width; no parent squeeze is needed.",
+          "overflow": "hidden with white-space:nowrap and text-overflow:ellipsis",
+          "zIndex": "auto",
+          "children": [
+            "Direct text node, no element child."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Flat CSS text on transparent fill, with clipped overflow; no image or texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "This instance owns the w-150px width class; the nearest sibling is constrained by its 150px flex parent and has no self-width class.；This instance displays “Self element set width 100px”; the sibling displays “Squeezed by parent element”.；The source measured this instance as inline-block with 8px bottom margin; sibling is block inside a flex row.",
+      "reconstructionPrompt": "重建官方 Text 自身限宽单行省略实例：原生 SPAN 写入“Self element set width 100px”，自身 width:150px、min-width:0、max-width:100%、display:inline-block、overflow:hidden、white-space:nowrap、text-overflow:ellipsis；外框约150×19.59px、下外距8px、padding0、无边框。背景 rgba(0, 0, 0, 0)，字色 rgb(96, 98, 102)，Inter 14px/19.6px、字重400、字距normal。title 属性保存完整原文。hover/压下不改视觉；桌面1280与窄屏390均核对150px外框和190px scrollWidth。不要把文案里的100px误作真实宽度，不要改成父容器挤压或多行夹取，也不要添加自定义气泡或点击行为。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One self-width ellipsis Text span at actual 150px CSS width (official example copy says 100px), measured in Edge at 1280×900 and 390×844 CSS viewports. Native OS title popup and physical touch were not captured.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找元素自己设置150px宽度的单行省略文字",
+        "需要灰色14px文本超出自身宽度时显示省略号",
+        "找文案写100px但实际宽150px的官方Text示例"
+      ]
+    },
+    {
+      "id": "element-plus-text-element-plus-text-6d35b7d12ac66d629b23",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/text",
+      "variantId": "element-plus-text-6d35b7d12ac66d629b23",
+      "instanceId": "element-plus-text-element-plus-text-6d35b7d12ac66d629b23",
+      "kind": "website-component",
+      "componentType": "text",
+      "nameZh": "Element Plus 父容器挤压150px单行省略文本",
+      "nameEn": "Element Plus parent-squeezed 150px single-line ellipsis text",
+      "descriptionZh": "结构：官方 Ellipsis 的原生 SPAN 直接包含“Squeezed by parent element”；它自身没有 w-150px 类，父级 el-row 的 w-150px 和 flex 布局把它挤到 150px，末尾绘制单行省略号。\n\n尺寸与布局：1280×900 CSS 视口中子元素外框 150×19.59px，完整文字 scrollWidth 190px、clientWidth 150px。父行宽 150px、display:flex、flex-wrap:wrap、下外距 20px；子元素 display:block、margin0、padding0，overflow:hidden、white-space:nowrap、text-overflow:ellipsis，边框和圆角均 0px。\n\n色彩与质感：透明背景 rgba(0, 0, 0, 0)、字色 rgb(96, 98, 102)、透明度 1，没有渐变、阴影或图像。\n\n字体与图标：实际加载 Inter，字号 14px、字重 400、行高 19.6px、字距 normal；无图标。\n\n运动与状态：默认因父级宽度限制显示省略号；悬停 700ms 与安全压下 120ms 只改变 :hover/:active 命中，颜色和外框不变。title 属性保存完整文案；浏览器原生标题浮层不在 DOM 截图范围。\n\n响应与范围：390×844 CSS 视口中父行与子元素仍宽 150px，文字继续单行省略。触屏与减少动态仅有浏览器仿真，实体设备与读屏输出不在本次核验范围。",
+      "descriptionEn": "Structure: The official Ellipsis native SPAN directly contains “Squeezed by parent element”. It has no w-150px self-width class; its w-150px flex-row parent compresses it to 150px and a one-line ellipsis paints the end.\n\nSize and layout: At 1280×900 CSS px the child box is 150×19.59px, with full-text scrollWidth 190px versus clientWidth 150px. The parent row is 150px wide, display:flex with flex-wrap:wrap and has 20px bottom margin. The child is display:block with zero margin and padding, overflow:hidden, white-space:nowrap, text-overflow:ellipsis, zero border and zero radius.\n\nColor and material: Transparent fill rgba(0, 0, 0, 0), text rgb(96, 98, 102), opacity 1; no gradient, shadow or image.\n\nTypography and icons: Inter loaded at 14px, weight 400, 19.6px line-height and normal letter spacing; no icon.\n\nMotion and states: Parent width causes the default ellipsis. A 700ms pointer hover and 120ms safe held press changed only :hover/:active matching; color and box stayed fixed. The title attribute carries full copy; the browser-native popup is outside DOM screenshot scope.\n\nResponsive scope: At 390×844 CSS px the parent and child remain 150px wide with one-line clipping. Touch and reduced-motion checks are browser emulations; physical devices and screen-reader output remain outside this measured scope.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/text#ellipsis",
+      "previewUrl": "/data/discovery/previews/element-plus-text-element-plus-text-6d35b7d12ac66d629b23.html",
+      "previewKind": "measured-ellipsis-reconstruction",
+      "offers": [],
+      "tags": [
+        "文本",
+        "text",
+        "原生SPAN",
+        "父容器flex挤压",
+        "单行溢出省略",
+        "父行150px宽",
+        "无描边",
+        "无圆角",
+        "rgb(96, 98, 102)",
+        "透明背景",
+        "纯文字",
+        "无阴影",
+        "14px Inter",
+        "19.6px行高",
+        "nowrap",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "native title attribute",
+        "Element Plus Text",
+        "Ellipsis official example",
+        "父容器挤压单行省略文本",
+        "parent-squeezed ellipsis text",
+        "el-row w-150px truncated text"
+      ],
+      "tagFacets": {
+        "object": [
+          "文本",
+          "text"
+        ],
+        "structure": [
+          "原生SPAN",
+          "父容器flex挤压",
+          "单行溢出省略"
+        ],
+        "shape": [
+          "父行150px宽",
+          "无描边",
+          "无圆角"
+        ],
+        "color": [
+          "rgb(96, 98, 102)",
+          "透明背景"
+        ],
+        "material": [
+          "纯文字",
+          "无阴影"
+        ],
+        "typography": [
+          "14px Inter",
+          "19.6px行高",
+          "nowrap"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "native title attribute"
+        ],
+        "context": [
+          "Element Plus Text",
+          "Ellipsis official example"
+        ]
+      },
+      "visual": {
+        "xPx": 323.5,
+        "yPx": 473.45,
+        "widthPx": 150,
+        "heightPx": 19.59,
+        "sizingRule": "SPAN has no self-width class; the official flex row owns w-150px and squeezes its child to computed width 150px. Text scrollWidth 190px exceeds clientWidth 150px.",
+        "parent": "DIV.el-row w-150px mb-2 150×19.59px.",
+        "topLeftPx": 0,
+        "topRightPx": 0,
+        "bottomRightPx": 0,
+        "bottomLeftPx": 0,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow:hidden clips the single-line text after 150px; ellipsis is painted by CSS text-overflow.",
+        "style": "ghost",
+        "computed": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(96, 98, 102)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": null
+        },
+        "colors": {
+          "context": "Official light docs parent {\"color\":\"rgb(255, 255, 255)\",\"from\":\"DIV.example-showcase\"}.",
+          "fill": "rgba(0, 0, 0, 0)",
+          "text": "rgb(96, 98, 102)",
+          "border": "0px none rgb(96, 98, 102)",
+          "icon": "No icon in this exact SPAN.",
+          "decoration": "CSS text-overflow:ellipsis and text decoration none solid rgb(96, 98, 102); opacity 1.",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Squeezed by parent element",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Computed source font and loaded-face check {\"checked\":\"Inter\",\"genericKeyword\":false,\"loaded\":true,\"status\":\"loaded\"}.",
+          "alignment": "start",
+          "wrapping": "One line; white-space:nowrap, overflow:hidden and text-overflow:ellipsis; source scrollWidth 190px exceeds 150px client box.",
+          "decoration": "none solid rgb(96, 98, 102)",
+          "fontSizePx": 14,
+          "lineHeightPx": 19.6,
+          "letterSpacingPx": 0,
+          "fontWeight": 400,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "block",
+          "position": "static",
+          "alignment": "Single line, start aligned, with a 150px flex-row parent using flex-wrap:wrap and constraining the block child.",
+          "overflow": "hidden with white-space:nowrap and text-overflow:ellipsis",
+          "zIndex": "auto",
+          "children": [
+            "Direct text node, no element child."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Flat CSS text on transparent fill, with clipped overflow; no image or texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "This SPAN has no w-150px self-width class; its 150px flex-row parent constrains it. The neighbor owns its own w-150px class.；This instance reads “Squeezed by parent element”; the neighbor reads “Self element set width 100px”.；This child is display:block with 0px margin; the neighbor is inline-block with 8px bottom margin.",
+      "reconstructionPrompt": "重建官方父容器挤压单行省略文本：父 el-row 宽150px、display:flex、flex-wrap:wrap、下外距20px；原生 SPAN 写入“Squeezed by parent element”，自身不指定宽度，display:block、max-width:100%、overflow:hidden、white-space:nowrap、text-overflow:ellipsis。子外框实测150×19.59px，scrollWidth 190px 对 clientWidth150px，padding与边框0。字色 rgb(96, 98, 102)，Inter 14px/19.6px、字重400。title 属性保存全文，hover/压下不变色；桌面1280及窄屏390都检验父子150px宽。不要给SPAN本身添加w-150px类，不要将父级挤压误写成自身宽度，也不要改为多行夹取或自定义tooltip。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One Text SPAN compressed by its 150px flex-row parent, measured in Edge at 1280×900 and 390×844 CSS viewports. Native OS title popup and physical touch were not captured.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找父级150px flex行把文字挤成省略号的文本",
+        "需要自身不设置宽度但被父容器限制的单行截断文字",
+        "找Squeezed by parent element这段官方Text示例"
+      ]
+    },
+    {
       "id": "element-plus-text-element-plus-text-706c7364be6682fd07f9",
       "entryId": "element-plus",
       "sourceEntity": "Element Plus",
@@ -43903,6 +44283,289 @@
         "找加粗的“Bold”文字",
         "需要rgb(96, 98, 102)字色、14px字号的文本",
         "要原生B语义且没有按钮行为的文字"
+      ]
+    },
+    {
+      "id": "reui-accordion-1",
+      "entryId": null,
+      "sourceEntity": "ReUI by Keenthemes",
+      "familyId": "reui-accordion",
+      "variantId": "c-accordion-1",
+      "instanceId": "reui-accordion-1",
+      "kind": "website-component",
+      "componentType": "accordion",
+      "nameZh": "单项展开问答折叠面板",
+      "nameEn": "Single-expand FAQ accordion",
+      "descriptionZh": "这是一个三项问答折叠面板，桌面预览中居中排成宽 512px 的单列，默认展开第一项并显示一行回答。白色背景上，透明的按钮与内容使用黑色 Inter 文字：问题为 14px、500 字重，回答为 14px、400 字重，行高均为 20px；前两项之间用 1px 浅灰横线分隔，右侧是 16px 灰色上下箭头。鼠标悬停使问题文字加下划线，键盘焦点出现灰色外环；点击、回车或空格切换面板，每次最多展开一项，内容高度以 200ms ease-out 变化。390px 视口中列宽缩到 302px，较长的回答在列内换行，没有横向溢出。",
+      "descriptionEn": "This three-question FAQ accordion forms a centered 512px column in the desktop preview, with its first answer visible by default. On a white context, transparent triggers and content use black Inter text: question labels are 14px at weight 500 and answers are 14px at weight 400, both with a 20px line height. Thin 1px neutral rules separate the first two items, and 16px gray chevrons sit at the right. Hover underlines the question, keyboard focus adds a gray outer ring, and click, Enter or Space toggles one open panel at a time with a 200ms ease-out height animation. At a 390px viewport the column narrows to 302px and the longer answer wraps without horizontal overflow.",
+      "source": {
+        "name": "ReUI by Keenthemes",
+        "iconUrl": "https://reui.io/favicon.ico"
+      },
+      "sourceUrl": "https://reui.io/components/accordion/c-accordion-1",
+      "previewUrl": "/data/discovery/previews/reui-accordion-1.html",
+      "previewKind": "controlled-reconstruction",
+      "offers": [
+        {
+          "id": "reui-c-accordion-1-source",
+          "resourceName": "ReUI c-accordion-1 example source",
+          "scope": "Official c-accordion-1 registry JSON and its ReUI repository source",
+          "license": "MIT",
+          "verified": true,
+          "access": "free",
+          "sourceCost": "free",
+          "sourceAvailable": true,
+          "openSource": true,
+          "commercialUse": true,
+          "checkedAt": "2026-09-23T18:19:06.407Z",
+          "evidenceUrls": [
+            "https://reui.io/components/accordion/c-accordion-1",
+            "https://reui.io/r/c-accordion-1.json",
+            "https://github.com/keenthemes/reui/blob/main/LICENSE.md"
+          ],
+          "sourceUrl": "https://reui.io/r/c-accordion-1.json",
+          "licenseUrl": "https://github.com/keenthemes/reui/blob/main/LICENSE.md"
+        }
+      ],
+      "tags": [
+        "accordion",
+        "FAQ",
+        "折叠面板",
+        "问答",
+        "three vertically stacked items",
+        "single open",
+        "三项单列",
+        "flat row",
+        "thin separator",
+        "平直列表",
+        "white context",
+        "black text",
+        "neutral gray chevron",
+        "transparent surface",
+        "no decorative shadow",
+        "Inter 14px",
+        "medium question",
+        "regular answer",
+        "200ms panel height animation",
+        "click",
+        "Enter",
+        "Space",
+        "hover underline",
+        "FAQ section",
+        "help content",
+        "responsive 302px narrow column",
+        "单项展开手风琴",
+        "单开折叠面板",
+        "FAQ accordion",
+        "single-expand accordion",
+        "question answer disclosure"
+      ],
+      "tagFacets": {
+        "object": [
+          "accordion",
+          "FAQ",
+          "折叠面板",
+          "问答"
+        ],
+        "structure": [
+          "three vertically stacked items",
+          "single open",
+          "三项单列"
+        ],
+        "shape": [
+          "flat row",
+          "thin separator",
+          "平直列表"
+        ],
+        "color": [
+          "white context",
+          "black text",
+          "neutral gray chevron"
+        ],
+        "material": [
+          "transparent surface",
+          "no decorative shadow"
+        ],
+        "typography": [
+          "Inter 14px",
+          "medium question",
+          "regular answer"
+        ],
+        "motion": [
+          "200ms panel height animation"
+        ],
+        "trigger": [
+          "click",
+          "Enter",
+          "Space",
+          "hover underline"
+        ],
+        "context": [
+          "FAQ section",
+          "help content",
+          "responsive 302px narrow column"
+        ]
+      },
+      "visual": {
+        "xPx": 512,
+        "yPx": 328,
+        "widthPx": 512,
+        "heightPx": 158,
+        "sizingRule": "w-full max-w-lg in the source (max 32rem = 512 CSS px); height follows the open panel content",
+        "parent": "723.1875px wide centered preview stage at x406.40625, white context",
+        "topLeftPx": 0,
+        "topRightPx": 0,
+        "bottomRightPx": 0,
+        "bottomLeftPx": 0,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "No root border; first two item bottom borders are 1px solid; trigger has 1px transparent border and 10px radius",
+        "clip": "No root clip/mask; answer content uses overflow hidden during height animation",
+        "style": "ghost",
+        "computed": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": "rgb(0, 0, 0)",
+          "borderStyle": "solid",
+          "borderWidth": "0px",
+          "borderColor": "oklch(0.922 0 0)",
+          "iconColor": "oklch(0.556 0 0)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Lucide ChevronUp SVG in official rendered DOM; source imports shared ReUI AccordionTrigger",
+              "widthPx": 16,
+              "heightPx": 16,
+              "strokePx": 2,
+              "gapPx": 384.421875,
+              "color": "oklch(0.556 0 0)",
+              "position": "after first question text, at trailing edge while open",
+              "fit": "SVG 16px square; no crop; aria-hidden true"
+            },
+            {
+              "source": "Lucide ChevronDown SVG in official rendered DOM; source imports shared ReUI AccordionTrigger",
+              "widthPx": 16,
+              "heightPx": 16,
+              "strokePx": 2,
+              "gapPx": 0,
+              "color": "oklch(0.556 0 0)",
+              "position": "after each closed question text, at trailing edge; gap flexes with width",
+              "fit": "SVG 16px square; no crop; aria-hidden true"
+            }
+          ]
+        },
+        "colors": {
+          "context": "lab(100 0 0) white preview background",
+          "fill": "rgba(0, 0, 0, 0) transparent root, items, triggers and content",
+          "text": "rgb(0, 0, 0) trigger and answer text",
+          "border": "oklch(0.922 0 0) 1px item separators; transparent 1px trigger border",
+          "icon": "oklch(0.556 0 0) neutral gray chevrons",
+          "decoration": "none outside the two separator rules",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "First question “Is it accessible ?”; first answer “Yes. It adheres to the WAI-ARIA design pattern.”; then “Is it styled?” and “Is it animated?”",
+          "fontFamily": "Inter, \"Inter Fallback\"",
+          "fontEvidence": "document.fonts.ready resolved loaded and Inter declared font loaded in rendered browser inspection",
+          "alignment": "left for trigger label and answer",
+          "wrapping": "single line for first question and first answer at 512px desktop; longer second answer wraps at 302px narrow",
+          "decoration": "none by default; hovered trigger becomes underlined",
+          "fontSizePx": 14,
+          "lineHeightPx": 20,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1,
+          "answerFontWeight": 400
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0,
+          "details": "Accordion root has no own padding/margin/gap; triggers have 10px vertical and 0px horizontal padding; open answer has 10px bottom padding."
+        },
+        "layout": {
+          "display": "flex column on accordion root; trigger flex row",
+          "position": "root static, trigger relative",
+          "alignment": "root full width centered in preview stage; trigger justify-between; left text and trailing icon",
+          "overflow": "root visible; answer content hidden while height animates",
+          "zIndex": "auto",
+          "children": [
+            "Three accordion-item DIVs stack in source order",
+            "Each item contains h3 > button trigger; open item adds region content below heading",
+            "Button text remains left and visible chevron occupies trailing edge"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "none observed in DOM styles or screenshot",
+          "pseudoElements": "::before and ::after both content:none on inspected root, item, trigger, answer and icon; transparent layers only"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "Activate a closed trigger while the first item is open, Activate another trigger in single-open mode",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "Activate a closed trigger while the first item is open",
+            "target": "second accordion-content region",
+            "property": "height",
+            "from": 0,
+            "to": 50,
+            "unit": "px",
+            "durationMs": 200,
+            "delayMs": 0,
+            "easing": "ease-out (computed CSS animation)",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 200,
+            "staggerMs": 0,
+            "exit": "When toggled closed, height animates back to 0px over 200ms",
+            "interruption": "At 65ms into opening, a second click changed aria-expanded to false; a closing animation ran and all panels were absent after 250ms"
+          },
+          {
+            "trigger": "Activate another trigger in single-open mode",
+            "target": "first accordion-content region",
+            "property": "height",
+            "from": 30,
+            "to": 0,
+            "unit": "px",
+            "durationMs": 200,
+            "delayMs": 0,
+            "easing": "ease-out (computed CSS animation)",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 200,
+            "staggerMs": 0,
+            "exit": "Content is hidden after the collapse animation",
+            "interruption": "At 65ms into switching panels, first panel was partly collapsed while second partly open; second click closed the newly opened panel"
+          }
+        ]
+      },
+      "distinctionZh": "This example sets multiple={false}; c-accordion-2 source sets multiple, so the former closes its first answer when another question opens.；This example uses the shared 16px up/down chevrons; c-accordion-2 source hides the shared icon and specifies 14px plus/minus icons.；This example underlines a hovered trigger in the rendered page; c-accordion-2 source applies hover:no-underline.",
+      "reconstructionPrompt": "重建 ReUI 的三项单开问答折叠面板：在白色预览舞台居中放置宽度 100%、最大宽度 512px 的透明纵向容器，桌面首项展开时外框约 512×158px；390px 视口中为 302px 宽。容器与条目的根字体行高为 24px。三行标题按钮顺序为 “Is it accessible ?”、 “Is it styled?”、 “Is it animated?”，首项回答精确写为 “Yes. It adheres to the WAI-ARIA design pattern.”。按钮高 42px，上下内边距各 10px，文本为黑色 Inter 14px/20px、字重 500；回答为 Inter 14px/20px、字重 400，底部留 10px。前两项底部绘制 1px 浅灰实线，按钮右端置 16×16px 灰色 2px 描边箭头，开为向上，合为向下。默认只开首项；hover 给标题加下划线，键盘 focus-visible 给按钮 3px 灰色外环；点击、Enter、Space 切换且同时最多展开一项，允许全部关闭。面板高度以 200ms ease-out 动画打开和闭合；每个按钮保留 aria-expanded，仅打开项有 aria-controls 与实际挂载的内容 region；关闭动画结束后移除内容节点及 controls。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "The one Pattern preview of c-accordion-1, its official registry JSON and desktop/narrow browser emulation; site chrome and the other 10 accordion variants excluded",
+      "uncertainty": {},
+      "exampleQueries": [
+        "白底黑字的三项 FAQ 折叠面板，右侧上下箭头",
+        "一次只能展开一个问题的简洁手风琴",
+        "标题悬停下划线、键盘可操作的问答列表"
       ]
     }
   ]
