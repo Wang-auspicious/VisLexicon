@@ -8,7 +8,12 @@ export async function loadDiscoveryIndex(root,scope,theme='') {
   const read=p=>fs.readFile(path.join(root,p),'utf8').then(JSON.parse)
   const [base,captures,relations]=await Promise.all([read(`public/data/discovery/scopes/${scope}.json`),read('public/data/discovery/index.json'),read('public/data/discovery/relations.json').catch(error=>{if(error.code==='ENOENT')return {relations:[]};throw error})])
   if(relations.revision || relations.relations?.length)verifyPublicRelations(root)
-  const additions=captures.units.filter(x=>scope==='atlas'?x.kind==='atlas-effect':scope==='curation'&&x.kind==='website-component').map(unit=>({...unit,scope,theme:unit.familyId?.split('/')[1]||unit.componentType,relatedSites:(relations.relations||[]).filter(x=>x.unitId===unit.id).map(x=>x.site)}))
+  const relatedSites=new Map()
+  for(const relation of relations.relations||[]){
+    if(!relatedSites.has(relation.unitId))relatedSites.set(relation.unitId,[])
+    relatedSites.get(relation.unitId).push(relation.site)
+  }
+  const additions=captures.units.filter(x=>scope==='atlas'?x.kind==='atlas-effect':scope==='curation'&&x.kind==='website-component').map(unit=>({...unit,scope,theme:unit.familyId?.split('/')[1]||unit.componentType,relatedSites:relatedSites.get(unit.id)||[]}))
   const units=[...additions,...base.units].filter(unit=>unit.scope===scope)
   const themes=[...new Set(units.flatMap(x=>[x.theme,...(x.themes||[])]).filter(Boolean))].sort()
   if(theme&&!themes.includes(theme))throw new Error('INVALID_THEME')
