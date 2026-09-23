@@ -1,3 +1,4 @@
+import { useJevSearch } from '../lib/use-jev-search.js'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import FacetChips from '../components/FacetChips.jsx'
 import SiteCard from '../components/SiteCard.jsx'
@@ -76,6 +77,8 @@ export default function AllSites() {
   const locale = useLocale()
   const [state, setState] = useState({ status: 'loading', index: null, error: null })
   const [browse, setBrowse] = useState(() => readSitesState())
+  const [searchRevision,setSearchRevision]=useState(0)
+  const lastBrowseQuery=useRef(browse.q)
 
   useEffect(() => {
     let alive = true
@@ -89,7 +92,12 @@ export default function AllSites() {
 
   /* 地址栏是筛选状态的真源：后退键、深链、外部粘进来的地址都从这里进。 */
   useEffect(() => {
-    const onHashChange = () => setBrowse(readSitesState())
+    const onHashChange = () => {
+      const next=readSitesState(),old=lastBrowseQuery.current||'',value=next.q||''
+      if(old&&(!value.startsWith(old)||value.length<old.length))setSearchRevision(current=>current+1)
+      lastBrowseQuery.current=value
+      setBrowse(next)
+    }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
@@ -97,6 +105,9 @@ export default function AllSites() {
   /* 反过来：状态变了就改写地址，但用 replaceState——每点一个 chip 就往
    * 历史里塞一条，后退键会变成「逐个撤销筛选」，那不是用户按后退时想要的。 */
   const update = (next) => {
+    const old=lastBrowseQuery.current||'',value=next.q||''
+    if(old&&(!value.startsWith(old)||value.length<old.length))setSearchRevision(current=>current+1)
+    lastBrowseQuery.current=value
     setBrowse(next)
     window.history.replaceState(window.history.state, '', writeSitesHash(next))
   }
@@ -109,7 +120,9 @@ export default function AllSites() {
    * 实测一个「react」要 3 秒。而筛选不会改变相对顺序——先排后筛的最终结果和
    * 先筛后排完全一致，但敲键时只剩 O(n) 的筛选。 */
   const ordered = useMemo(() => sortSites(items, browse.sort), [items, browse.sort])
-  const results = useMemo(() => filterSites(ordered, browse), [ordered, browse])
+  const candidates=useMemo(()=>filterSites(ordered,{selections:browse.selections}),[ordered,browse.selections])
+  const jev=useJevSearch(browse.q,candidates,'site-list',searchRevision)
+  const results=jev.items
 
   useEffect(() => {
     if (state.status === 'ready') lastResultCount = results.length
@@ -149,6 +162,7 @@ export default function AllSites() {
         </p>
       </header>
 
+      {browse.q&&<p role="status">{jev.status}</p>}
       <div className="vl-tools">
         <div className="vl-search">
           <label className="sr-only" htmlFor="vl-sites-q">{t('searchSitesLabel')}</label>

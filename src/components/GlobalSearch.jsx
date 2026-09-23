@@ -1,9 +1,10 @@
+import { useJevSearch } from '../lib/use-jev-search.js'
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
 import { buildSearchIndex, searchAll, siteHref, termHref } from '../lib/search-index.js'
 import { loadPublicSiteIndex } from '../lib/public-data.js'
 import { navigate } from '../router.js'
 import { useT } from '../i18n.js'
-import { filterResources, resourceHref, RESOURCE_SECTIONS } from '../lib/creative-resources.js'
+import { resourceHref, RESOURCE_SECTIONS } from '../lib/creative-resources.js'
 
 /* ============ 顶栏全站搜索（方案 §3.6） ============
  * 跨「图鉴术语」「站点库」「创作练习」，练习有独立分组，
@@ -24,9 +25,14 @@ export default function GlobalSearch() {
   const [active, setActive] = useState(0)
   const [index, setIndex] = useState(null)
   const [resources, setResources] = useState([])
+  const [componentResponse,setComponentResponse]=useState(null)
+  const [searchSource,setSearchSource]=useState(null)
+  const [searchRevision,setSearchRevision]=useState(0)
   const [loadState, setLoadState] = useState('idle')   /* idle | loading | ready | error */
   const inputRef = useRef(null)
   const rootRef = useRef(null)
+  const searchHistory=useRef(null)
+  const lastComponent=useRef(null)
   const domId = useId()
 
   /* 语料在第一次聚焦时才加载：图鉴语料有 220 条，没必要进首屏包。 */
@@ -64,6 +70,9 @@ export default function GlobalSearch() {
   useEffect(() => {
     const onPointerDown = (event) => {
       if (rootRef.current && !rootRef.current.contains(event.target)) {
+        searchHistory.current=null
+        setSearchSource(null)
+        setSearchRevision(value=>value+1)
         setKeyword('')
         setOpen(false)
       }
@@ -72,50 +81,78 @@ export default function GlobalSearch() {
     return () => document.removeEventListener('pointerdown', onPointerDown)
   }, [])
 
-  const results = useMemo(
-    () => (index
-      ? searchAll(index, keyword, GROUP_LIMIT)
-      : { terms: [], sites: [], termTotal: 0, siteTotal: 0, termUncertain: false, siteUncertain: false, signals: [] }),
-    [index, keyword],
-  )
+  const results = useMemo(() => {
+    if(!index)return {terms:[],sites:[],termTotal:0,siteTotal:0,termUncertain:false,siteUncertain:false,signals:[]}
+    return searchAll(searchSource||index,keyword,Infinity)
+  },[index,keyword,searchSource])
+  useEffect(()=>{searchHistory.current=keyword.trim()&&index?{query:keyword.trim(),index,terms:results.terms,sites:results.sites}:null},[index,keyword,results])
+  const updateKeyword=value=>{
+    const query=value.trim(),previous=searchHistory.current
+    const refining=previous?.index===index&&query.startsWith(previous.query)&&query.length>previous.query.length
+    const old=keyword.trim()
+    if(old&&(!query.startsWith(old)||query.length<old.length))setSearchRevision(value=>value+1)
+    setSearchSource(refining?{terms:previous.terms,sites:previous.sites}:null)
+    setKeyword(value);setActive(0)
+  }
 
-  const resourceResults = useMemo(() => keyword.trim() ? filterResources(resources, { query: keyword }) : [], [resources, keyword])
 
   /* 可用方向键走的扁平列表，包括新增资源目录的结果。 */
-  const options = useMemo(() => {
-    const trimmed = keyword.trim()
-    if (!trimmed) return []
+  const candidateOptions = useMemo(() => {
     const list = []
-    for (const record of results.terms) {
-      list.push({ key: `term:${record.id}`, group: 'term', href: termHref(record, trimmed), record })
+    for (const record of (index?.terms||[])) {
+      list.push({ key: `term:${record.id}`, group: 'term', href: record.targetHref||undefined, record })
     }
-    if (results.termTotal > 0) {
-      list.push({ key: 'term:all', group: 'term', href: `#/atlas?q=${encodeURIComponent(trimmed)}`, all: results.termTotal })
-    }
-    for (const record of results.sites) {
+    for (const record of (index?.sites||[])) {
       list.push({ key: `site:${record.id}`, group: 'site', href: siteHref(record), record })
     }
-    if (results.siteTotal > 0) {
-      list.push({ key: 'site:all', group: 'site', href: `#/sites?q=${encodeURIComponent(trimmed)}`, all: results.siteTotal })
-    }
-    for (const record of resourceResults.slice(0, GROUP_LIMIT)) {
+    for (const record of resources) {
       list.push({ key: `resource:${record.id}`, group: 'resource', href: resourceHref(record), record })
     }
     return list
-  }, [keyword, results, resourceResults])
+  }, [index, resources])
 
+  useEffect(()=>{
+    const previous=lastComponent.current,query=keyword.trim()
+    if(previous&&(!query.startsWith(previous.query)||query.length<previous.query.length))lastComponent.current=null
+    if(!query)return
+    const controller=new AbortController()
+    const timer=setTimeout(async()=>{
+      const prior=lastComponent.current
+      const refineToken=prior&&query.startsWith(prior.query)&&query.length>prior.query.length?prior.token:null
+      try {
+        let response,data
+        for(let attempt=0;attempt<3;attempt++){
+          response=await fetch('/api/discovery/search',{method:'POST',headers:{'Content-Type':'application/json'},signal:controller.signal,body:JSON.stringify({query,scope:'curation',theme:'',refineToken})})
+          data=await response.json()
+          if(response.status!==429||data.error!=='MODEL_BUSY')break
+          await new Promise(resolve=>setTimeout(resolve,300*(attempt+1)))
+        }
+        if(!response.ok||data.scope!=='curation'||data.theme!=='')throw Error('COMPONENT_SEARCH_UNAVAILABLE')
+        if(!controller.signal.aborted){lastComponent.current={query,token:data.refineToken};setComponentResponse({query:keyword,data})}
+      }catch{if(!controller.signal.aborted)setComponentResponse({query:keyword,data:{mode:'error',units:[]}})}
+    },850)
+    return()=>{clearTimeout(timer);controller.abort()}
+  },[keyword])
+
+  const jev = useJevSearch(keyword,candidateOptions,'global',searchRevision)
+  const currentComponents=componentResponse?.query===keyword?componentResponse.data:null
+  const componentOptions=(currentComponents?.units||[]).filter(unit=>unit.kind==='website-component').slice(0,GROUP_LIMIT).map(record=>({key:`component:${record.id}`,group:'component',href:`#/?q=${encodeURIComponent(record.nameZh)}`,record}))
+  const options=keyword.trim()?[...jev.items,...componentOptions]:[]
   const listOpen = keyword.trim().length > 0
   const listId = `${domId}-listbox`
   const activeId = options[active] ? `${domId}-opt-${active}` : undefined
 
   const closeAll = () => {
+    searchHistory.current=null
+    setSearchSource(null)
+    setSearchRevision(value=>value+1)
     setKeyword('')
     setOpen(false)
   }
 
   const runOption = (option) => {
     if (!option) return
-    navigate(option.href)
+    navigate(option.href||(option.group==='term'?termHref(option.record,keyword.trim()):'#/'))
     setKeyword('')
     setOpen(false)
     inputRef.current?.blur()
@@ -160,7 +197,7 @@ export default function GlobalSearch() {
               className={`gs-opt ${position === active ? 'on' : ''}`}
               role="option"
               aria-selected={position === active}
-              href={option.href}
+              href={option.href||(option.group==='term'?termHref(option.record,keyword.trim()):'#/')}
               tabIndex={-1}
               onMouseEnter={() => setActive(position)}
               onClick={(event) => { event.preventDefault(); runOption(option) }}
@@ -173,7 +210,7 @@ export default function GlobalSearch() {
                   <code className="x-mono">{option.record.termEn}</code>
                   <em>{option.record.matchReasons?.length ? '命中：' + option.record.matchReasons.join(' / ') : (option.record.stageTitleZh ? `${option.record.stageTitleZh} · 已入台` : '未入台')}</em>
                 </>
-              ) : option.group === 'resource' ? (
+              ) : option.group === 'component' ? (<><b>{option.record.nameZh}</b><em>具体组件 · 已核验</em></>) : option.group === 'resource' ? (
                 <>
                   <b>{option.record.title ?? option.record.zh}</b>
                   <code className="x-mono">{option.record.category === 'atlas' ? '图鉴 · 构图与排版' : RESOURCE_SECTIONS[option.record.category]?.titleZh ?? option.record.category}</code>
@@ -233,7 +270,7 @@ export default function GlobalSearch() {
           placeholder={t('search')}
           value={keyword}
           onFocus={ensureIndex}
-          onChange={(event) => { setKeyword(event.target.value); setActive(0) }}
+          onChange={(event) => updateKeyword(event.target.value)}
           onKeyDown={onKeyDown}
         />
         <kbd className="gs-kbd x-mono">⌘K</kbd>
@@ -246,17 +283,20 @@ export default function GlobalSearch() {
         aria-label="搜索结果"
         hidden={!listOpen}
       >
+        {keyword.trim()&&<p className="gs-note" role="status">{jev.status}</p>}
+        {currentComponents?.mode==='error'&&<p className="gs-note" role="status">组件 Jev 暂不可用，请重试。</p>}
         {loadState === 'loading' && <p className="gs-note">正在加载语料…</p>}
         {loadState === 'error' && <p className="gs-note" role="alert">语料没能加载，搜索暂不可用。</p>}
-        {loadState === 'ready' && options.length === 0 && (
+        {loadState === 'ready' && jev.mode==='jev' && options.length === 0 && (
           <p className="gs-note">没有命中。图鉴、站点库与创作资源都没有匹配的条目。</p>
         )}
         {loadState === 'ready' && (results.termUncertain || results.siteUncertain) && (
           <p className="gs-note" role="status">信息不足，请从候选中选择。</p>
         )}
-        {renderGroup('term', '图鉴里的', results.termTotal)}
-        {renderGroup('site', '站点库里的', results.siteTotal)}
-        {renderGroup('resource', '创作资源', resourceResults.length)}
+        {renderGroup('term', '图鉴里的', options.filter(option=>option.group==='term').length)}
+        {renderGroup('component','组件',options.filter(option=>option.group==='component').length)}
+        {renderGroup('site', '站点库里的', options.filter(option=>option.group==='site').length)}
+        {renderGroup('resource', '创作资源', options.filter(option=>option.group==='resource').length)}
       </div>
     </div>
   )

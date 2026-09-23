@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useJevSearch } from '../lib/use-jev-search.js'
+import { useMemo, useState } from 'react'
 import PRACTICES from '../data/creative-practices.json'
 import IMAGE_PROMPTS from '../data/image-prompts.json'
 import { imageResourcePresentation } from '../lib/image-prompts.js'
@@ -80,17 +81,19 @@ export default function ResourceLibrary({ channel, resourceType, query = {} }) {
   const category = resourceSection(channel, resourceType)
   const section = RESOURCE_SECTIONS[category]
   const keyword = query.q || ''
-  const all = category === 'image' ? IMAGE_PROMPTS.map(item=>({...item,zh:item.titleZh,en:item.titleEn,dz:item.descriptionZh,de:item.descriptionEn||item.titleEn,kz:[...new Set([item.topicZh,...item.tags])],kw:[...new Set([item.topicZh,...item.tags])],practice:{caption:{zh:item.titleZh,en:item.titleEn}}})) : PRACTICES.filter((item) => item.category === category)
+  const [searchRevision,setSearchRevision]=useState(0)
+  const all = useMemo(()=>category === 'image' ? IMAGE_PROMPTS.map(item=>({...item,zh:item.titleZh,en:item.titleEn,dz:item.descriptionZh,de:item.descriptionEn||item.titleEn,kz:[...new Set([item.topicZh,...item.tags])],kw:[...new Set([item.topicZh,...item.tags])],practice:{caption:{zh:item.titleZh,en:item.titleEn}}})) : PRACTICES.filter((item) => item.category === category),[category])
   const topics = category === 'image' ? [{zh:'全部',en:'All'},...Array.from(new Set(all.map(item=>item.topicZh))).map(zh=>({zh,en:zh}))] : category === 'ppt'
     ? [{ zh: '全部', en: 'All', n: all.length }, ...topicPairs()]
     : (PLACEHOLDER_TOPICS[category] || ['全部']).map((zh) => ({ zh, en: zh, n: 0 }))
   const topic = topics.some((entry) => entry.zh === query.topic) ? query.topic : '全部'
-  const matches = (item) => (en ? item.kw : item.kz).includes(topic)
-  const haystack = (item) => [item.zh, item.en, item.dz, item.de, item.pz, item.pe, item.prompt, ...(item.kz || []), ...(item.kw || [])].join(' ').toLowerCase()
-  const visible = all.filter((item) => (topic === '全部' || matches(item)) && haystack(item).includes(keyword.toLowerCase()))
+  const candidates=useMemo(()=>all.filter(item=>topic==='全部'||(en?item.kw:item.kz).includes(topic)),[all,topic,en])
+  const jev=useJevSearch(keyword,candidates,'resource-list',searchRevision)
+  const visible=jev.items
   const selected = all.find((item) => item.id === query.id)
   const navigate = (patch, replace = false) => {
     const next = { q: keyword, topic, ...patch }
+    if(keyword&&(!next.q.startsWith(keyword)||next.q.length<keyword.length))setSearchRevision(value=>value+1)
     const params = new URLSearchParams()
     Object.entries(next).forEach(([key, value]) => { if (value && value !== '全部') params.set(key, value) })
     const href = `${section.path}${params.size ? `?${params}` : ''}`
@@ -106,7 +109,7 @@ export default function ResourceLibrary({ channel, resourceType, query = {} }) {
     </aside>
     <div className="rl-content">{selected ? (category==='image'?<ImagePromptDetail key={selected.id} item={selected} back={() => navigate({})}/>:<PracticeDetail key={selected.id} item={selected} back={() => navigate({})} />) : <>
       <header className="rl-header"><p className="rl-eyebrow">VISLEXICON / {category === 'ppt' ? 'PRESENTATION STUDIES' : section.code}</p><h1>{en ? section.titleEn : section.titleZh}</h1><p className="rl-intro">{intro}</p></header>
-      <div className="rl-gallery-toolbar"><span role="status">{en ? `${visible.length} entries` : `${visible.length} 个${category === 'ppt' ? '版式练习' : '条目'}`}</span><label className="rl-search"><span className="sr-only">{en ? 'Search this column' : '搜索当前栏目'}</span><input type="search" placeholder={en ? 'Search title, composition, method…' : '搜索标题、构图、方法…'} value={keyword} onChange={(event) => navigate({ q: event.target.value }, true)} /></label></div>
+      <div className="rl-gallery-toolbar"><span role="status">{keyword.trim()?jev.status+' · ':''}{en ? `${visible.length} entries` : `${visible.length} 个${category === 'ppt' ? '版式练习' : '条目'}`}</span><label className="rl-search"><span className="sr-only">{en ? 'Search this column' : '搜索当前栏目'}</span><input type="search" placeholder={en ? 'Search title, composition, method…' : '搜索标题、构图、方法…'} value={keyword} onChange={(event) => navigate({ q: event.target.value }, true)} /></label></div>
       {query.id && <p role="status">{en ? 'That entry was not found. Pick another below.' : '未找到这个条目，请从下方重新选择。'}</p>}
       {visible.length ? <div className="rl-gallery">{visible.map((item, i) => <button type="button" className="rl-study" key={item.id} onClick={() => navigate({ id: item.id })}><div className="rl-study-image">{item.preview ? <img src={item.preview} alt={en ? item.practice.caption.en : item.practice.caption.zh} loading="lazy" /> : <span className="rl-study-source-only">{en ? 'View examples at the source' : '到原文查看效果'}</span>}</div><div className="rl-study-caption"><span className="rl-study-number">{String(i + 1).padStart(2, '0')}</span><div><h2>{en ? item.en : item.zh}</h2><p>{(en ? item.kw : item.kz).slice(0, 2).join(' / ')}</p></div><span aria-hidden="true">↗</span></div></button>)}</div> : <div className="rl-empty"><span className="rl-empty-mark" aria-hidden="true">＋</span><h2>{all.length ? (en ? 'Nothing matches' : '没有匹配的作品') : (en ? 'Nothing here yet' : '这里还没有收录作品')}</h2><p>{all.length ? (en ? 'Try another keyword, or go back to all topics.' : '试试其他关键词，或回到全部分类。') : (en ? 'Finished composition and typography studies are browsable in the atlas and in PPT.' : '已整理的构图与排版练习，可以在图鉴和 PPT 制作中浏览。')}</p><a href={all.length ? section.path : '#/atlas'}>{all.length ? (en ? 'View all' : '查看全部') : (en ? 'Open the atlas' : '去看图鉴')} →</a></div>}
     </>}</div>

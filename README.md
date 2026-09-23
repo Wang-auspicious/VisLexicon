@@ -27,7 +27,7 @@ npm run dev
 
 构建与预览：`npm run build` → `npm run preview`。
 
-Jev 语义检索为可选功能：运行前设置 `OPENCODE_API_KEY`；未配置时仍可浏览和使用关键词检索。
+检索需要 Jev：运行前设置 `OPENCODE_API_KEY`。未配置或 Jev 暂不可用时仍可浏览已发布内容，但检索会明确提示不可用，不会把本地关键词匹配当作 Jev 结果。
 
 ## 说明
 
