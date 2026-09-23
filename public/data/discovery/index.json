@@ -1,13 +1,13 @@
 {
   "schemaVersion": "component-instance/2.0",
-  "generatedAt": "2026-09-23T17:45:09.569Z",
+  "generatedAt": "2026-09-23T18:11:47.328Z",
   "batchId": "capture-v2",
   "counts": {
     "rawObservations": 2891,
-    "indexedInstances": 176,
-    "websiteInstances": 174,
+    "indexedInstances": 187,
+    "websiteInstances": 185,
     "atlasEffects": 2,
-    "pendingDetail": 2252,
+    "pendingDetail": 2228,
     "classifiedNoncomponents": 324,
     "componentFragments": 62,
     "legacySamplesPending": 110,
@@ -15377,6 +15377,941 @@
       ]
     },
     {
+      "id": "element-plus-avatar-element-plus-avatar-272c418facf7876684e0",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-272c418facf7876684e0",
+      "instanceId": "element-plus-avatar-element-plus-avatar-272c418facf7876684e0",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 56px圆形无描边cover灰底人物剪影头像",
+      "nameEn": "Element Plus 56px circular borderless cover gray person silhouette avatar",
+      "descriptionZh": "结构：官方 圆形 Avatar 外层 SPAN 内只有一张 IMG，内容是灰底人物剪影；原始图像像素为 120×120，本实例按 cover（等比缩放填满，object-fit 不额外裁切，父级圆形蒙版裁去四角）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 56×56px，图像可见框 56×56px，四角 50%，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 349ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 56×56px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official circular Avatar SPAN contains one IMG showing a gray person silhouette. The source image is 120×120 pixels, rendered with object-fit cover (proportionally scaled to fill without an extra object-fit crop; the circular parent mask clips the corners).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 56×56px and the image box is 56×56px. Corner radius 50%, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 349ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 56×56px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-272c418facf7876684e0.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "圆形",
+        "56px",
+        "50%",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "PNG插画",
+        "object-fit cover",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "basic-usage",
+        "56px 圆形 cover灰底人物剪影头像",
+        "cover illustration avatar",
+        "PNG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "圆形",
+          "56px",
+          "50%",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "PNG插画",
+          "object-fit cover"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 688.31,
+        "yPx": 493.89,
+        "widthPx": 56,
+        "heightPx": 56,
+        "sizingRule": "computed 56x56 CSS px inside a block parent measuring 111.38x61.39 px; no inline width/height",
+        "parent": "DIV.block 111.38×61.39px.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png; original bytes SHA-256 745c3d16aa839c8aa7f2b8af47808fd789a8286288ccd1f6df9b49820714dee6; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 56,
+              "heightPx": 56,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 圆形 overflow hidden; object-fit cover; natural 120×120px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original PNG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-flex",
+          "position": "static",
+          "alignment": "center/center; IMG cover, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 56×56px with object-fit cover."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original PNG media 120×120 pixels via object-fit cover; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "outer width: 56 versus 40；outer height: 56 versus 40；IMG box width: 56 versus 40",
+      "reconstructionPrompt": "重建 Element Plus 官方 圆形灰底人物剪影 Avatar。外层 SPAN 56×56px、圆角 50%、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 56×56px，使用原示例媒体 https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png，原始 PNG 120×120px，object-fit:cover、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 56×56px 与 56×56px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 圆形 Avatar with exact IMG media URL, object-fit cover, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找56px圆形灰底人物剪影头像",
+        "需要图像按cover显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
+      ]
+    },
+    {
+      "id": "element-plus-avatar-element-plus-avatar-5a87e84e51f692b5376e",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-5a87e84e51f692b5376e",
+      "instanceId": "element-plus-avatar-element-plus-avatar-5a87e84e51f692b5376e",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 24px方形无描边cover人物剪影头像",
+      "nameEn": "Element Plus 24px square borderless cover person silhouette avatar",
+      "descriptionZh": "结构：官方 方形 Avatar 外层 SPAN 内只有一张 IMG，内容是人物剪影；原始图像像素为 120×120，本实例按 cover（等比缩放填满，无额外裁切）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 24×24px，图像可见框 24×24px，四角 4px，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 352ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 24×24px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official square Avatar SPAN contains one IMG showing a person silhouette. The source image is 120×120 pixels, rendered with object-fit cover (proportionally scaled to fill without cropping).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 24×24px and the image box is 24×24px. Corner radius 4px, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 352ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 24×24px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-5a87e84e51f692b5376e.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "方形",
+        "24px",
+        "4px",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "PNG插画",
+        "object-fit cover",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "basic-usage",
+        "24px 方形 cover人物剪影头像",
+        "cover illustration avatar",
+        "PNG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "方形",
+          "24px",
+          "4px",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "PNG插画",
+          "object-fit cover"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 929.44,
+        "yPx": 509.89,
+        "widthPx": 24,
+        "heightPx": 24,
+        "sizingRule": "computed 24x24 CSS px inside a block parent measuring 112.63x29.39 px; no inline width/height",
+        "parent": "DIV.block 112.63×29.39px.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png; original bytes SHA-256 8c6ee41d940d7d49b684e07cd2341ac29696776579cfe632191d26e75600d3ff; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 24,
+              "heightPx": 24,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 方形 overflow hidden; object-fit cover; natural 120×120px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original PNG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-flex",
+          "position": "static",
+          "alignment": "center/center; IMG cover, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 24×24px with object-fit cover."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original PNG media 120×120 pixels via object-fit cover; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "outer width: 24 versus 40；outer height: 24 versus 40；IMG box width: 24 versus 40",
+      "reconstructionPrompt": "重建 Element Plus 官方 方形人物剪影 Avatar。外层 SPAN 24×24px、圆角 4px、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 24×24px，使用原示例媒体 https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png，原始 PNG 120×120px，object-fit:cover、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 24×24px 与 24×24px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 方形 Avatar with exact IMG media URL, object-fit cover, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找24px方形人物剪影头像",
+        "需要图像按cover显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
+      ]
+    },
+    {
+      "id": "element-plus-avatar-element-plus-avatar-715e5aa074ed41da1960",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-715e5aa074ed41da1960",
+      "instanceId": "element-plus-avatar-element-plus-avatar-715e5aa074ed41da1960",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 40px方形无描边cover人物剪影头像",
+      "nameEn": "Element Plus 40px square borderless cover person silhouette avatar",
+      "descriptionZh": "结构：官方 方形 Avatar 外层 SPAN 内只有一张 IMG，内容是人物剪影；原始图像像素为 120×120，本实例按 cover（等比缩放填满，无额外裁切）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 40×40px，图像可见框 40×40px，四角 4px，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 354ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 40×40px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official square Avatar SPAN contains one IMG showing a person silhouette. The source image is 120×120 pixels, rendered with object-fit cover (proportionally scaled to fill without cropping).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 40×40px and the image box is 40×40px. Corner radius 4px, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 354ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 40×40px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-715e5aa074ed41da1960.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "方形",
+        "40px",
+        "4px",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "PNG插画",
+        "object-fit cover",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "basic-usage",
+        "40px 方形 cover人物剪影头像",
+        "cover illustration avatar",
+        "PNG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "方形",
+          "40px",
+          "4px",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "PNG插画",
+          "object-fit cover"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 1034.06,
+        "yPx": 501.89,
+        "widthPx": 40,
+        "heightPx": 40,
+        "sizingRule": "computed 40x40 CSS px inside a block parent measuring 112.63x45.39 px; no inline width/height",
+        "parent": "DIV.block 112.63×45.39px.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png; original bytes SHA-256 8c6ee41d940d7d49b684e07cd2341ac29696776579cfe632191d26e75600d3ff; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 40,
+              "heightPx": 40,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 方形 overflow hidden; object-fit cover; natural 120×120px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original PNG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-flex",
+          "position": "static",
+          "alignment": "center/center; IMG cover, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 40×40px with object-fit cover."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original PNG media 120×120 pixels via object-fit cover; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "outer width: 40 versus 24；outer height: 40 versus 24；IMG box width: 40 versus 24",
+      "reconstructionPrompt": "重建 Element Plus 官方 方形人物剪影 Avatar。外层 SPAN 40×40px、圆角 4px、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 40×40px，使用原示例媒体 https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png，原始 PNG 120×120px，object-fit:cover、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 40×40px 与 40×40px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 方形 Avatar with exact IMG media URL, object-fit cover, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找40px方形人物剪影头像",
+        "需要图像按cover显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
+      ]
+    },
+    {
+      "id": "element-plus-avatar-element-plus-avatar-787279127703af6b1dc9",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-787279127703af6b1dc9",
+      "instanceId": "element-plus-avatar-element-plus-avatar-787279127703af6b1dc9",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 100px方形无描边none枝头小鸟照片头像",
+      "nameEn": "Element Plus 100px square borderless none bird-on-branch photo avatar",
+      "descriptionZh": "结构：官方 方形 Avatar 外层 SPAN 内只有一张 IMG，内容是枝头小鸟照片；原始图像像素为 800×572，本实例按 none（原始尺寸中心裁切）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 100×100px，图像可见框 100×100px，四角 4px，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 383ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 100×100px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official square Avatar SPAN contains one IMG showing a bird-on-branch photo. The source image is 800×572 pixels, rendered with object-fit none (center cropped at original scale).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 100×100px and the image box is 100×100px. Corner radius 4px, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 383ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 100×100px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#fit-container",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-787279127703af6b1dc9.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "方形",
+        "100px",
+        "4px",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "JPEG照片",
+        "object-fit none",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "fit-container",
+        "100px 方形 none枝头小鸟照片头像",
+        "none photo avatar",
+        "JPEG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "方形",
+          "100px",
+          "4px",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "JPEG照片",
+          "object-fit none"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "fit-container"
+        ]
+      },
+      "visual": {
+        "xPx": 922.75,
+        "yPx": 743.61,
+        "widthPx": 100,
+        "heightPx": 100,
+        "sizingRule": "computed 100x100 CSS px inside a flex parent measuring 100.00x129.59 px; no inline width/height",
+        "parent": "DIV.block 100×129.59px.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg; original bytes SHA-256 07eab745ef3634e7607dd08c212849a252e0e4bf64a1449615ce852b5d6d09a5; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 100,
+              "heightPx": 100,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 方形 overflow hidden; object-fit none; natural 800×572px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original JPEG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "center/center; IMG none, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 100×100px with object-fit none."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original JPEG media 800×572 pixels via object-fit none; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "object-fit: none versus cover；Drawn bitmap bounds derived from the preserved 800×572px raster and each IMG CSS box: 800px × 572px versus 139.86px × 100px; the parent clips overflow.",
+      "reconstructionPrompt": "重建 Element Plus 官方 方形枝头小鸟照片 Avatar。外层 SPAN 100×100px、圆角 4px、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 100×100px，使用原示例媒体 https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg，原始 JPEG 800×572px，object-fit:none、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 100×100px 与 100×100px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 方形 Avatar with exact IMG media URL, object-fit none, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找100px方形枝头小鸟照片头像",
+        "需要图像按none显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
+      ]
+    },
+    {
+      "id": "element-plus-avatar-element-plus-avatar-9396e46227daf260ee2d",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-9396e46227daf260ee2d",
+      "instanceId": "element-plus-avatar-element-plus-avatar-9396e46227daf260ee2d",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 100px方形无描边cover枝头小鸟照片头像",
+      "nameEn": "Element Plus 100px square borderless cover bird-on-branch photo avatar",
+      "descriptionZh": "结构：官方 方形 Avatar 外层 SPAN 内只有一张 IMG，内容是枝头小鸟照片；原始图像像素为 800×572，本实例按 cover（等比缩放并裁切填满）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 100×100px，图像可见框 100×100px，四角 4px，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 372ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 100×100px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official square Avatar SPAN contains one IMG showing a bird-on-branch photo. The source image is 800×572 pixels, rendered with object-fit cover (proportionally scaled and cropped to cover).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 100×100px and the image box is 100×100px. Corner radius 4px, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 372ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 100×100px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#fit-container",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-9396e46227daf260ee2d.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "方形",
+        "100px",
+        "4px",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "JPEG照片",
+        "object-fit cover",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "fit-container",
+        "100px 方形 cover枝头小鸟照片头像",
+        "cover photo avatar",
+        "JPEG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "方形",
+          "100px",
+          "4px",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "JPEG照片",
+          "object-fit cover"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "fit-container"
+        ]
+      },
+      "visual": {
+        "xPx": 723,
+        "yPx": 743.61,
+        "widthPx": 100,
+        "heightPx": 100,
+        "sizingRule": "computed 100x100 CSS px inside a flex parent measuring 100.00x129.59 px; no inline width/height",
+        "parent": "DIV.block 100×129.59px.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg; original bytes SHA-256 07eab745ef3634e7607dd08c212849a252e0e4bf64a1449615ce852b5d6d09a5; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 100,
+              "heightPx": 100,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 方形 overflow hidden; object-fit cover; natural 800×572px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original JPEG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "center/center; IMG cover, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 100×100px with object-fit cover."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original JPEG media 800×572 pixels via object-fit cover; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "object-fit: cover versus contain；Drawn bitmap bounds derived from the preserved 800×572px raster and each IMG CSS box: 139.86px × 100px versus 100px × 71.5px; the parent clips overflow.",
+      "reconstructionPrompt": "重建 Element Plus 官方 方形枝头小鸟照片 Avatar。外层 SPAN 100×100px、圆角 4px、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 100×100px，使用原示例媒体 https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg，原始 JPEG 800×572px，object-fit:cover、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 100×100px 与 100×100px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 方形 Avatar with exact IMG media URL, object-fit cover, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找100px方形枝头小鸟照片头像",
+        "需要图像按cover显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
+      ]
+    },
+    {
       "id": "element-plus-avatar-element-plus-avatar-963d5de8ffbbfd7ea5ad",
       "entryId": "element-plus",
       "sourceEntity": "Element Plus",
@@ -15555,6 +16490,1128 @@
         "找40px圆形user文字头像",
         "需要rgb(192, 196, 204)底色、rgb(255, 255, 255)前景的头像",
         "要没有照片、没有悬停动效的文字头像"
+      ]
+    },
+    {
+      "id": "element-plus-avatar-element-plus-avatar-9c2e62fcb0c0591dc715",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-9c2e62fcb0c0591dc715",
+      "instanceId": "element-plus-avatar-element-plus-avatar-9c2e62fcb0c0591dc715",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 40px圆形无描边cover蓝白人物插画头像",
+      "nameEn": "Element Plus 40px circular borderless cover blue-and-white person illustration avatar",
+      "descriptionZh": "结构：官方 圆形 Avatar 外层 SPAN 内只有一张 IMG，内容是蓝白人物插画；原始图像像素为 180×180，本实例按 cover（等比缩放填满，object-fit 不额外裁切，父级圆形蒙版裁去四角）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 40×40px，图像可见框 40×40px，四角 50%，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 343ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 40×40px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official circular Avatar SPAN contains one IMG showing a blue-and-white person illustration. The source image is 180×180 pixels, rendered with object-fit cover (proportionally scaled to fill without an extra object-fit crop; the circular parent mask clips the corners).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 40×40px and the image box is 40×40px. Corner radius 50%, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 343ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 40×40px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#types",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-9c2e62fcb0c0591dc715.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "圆形",
+        "40px",
+        "50%",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "PNG插画",
+        "object-fit cover",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "types",
+        "40px 圆形 cover蓝白人物插画头像",
+        "cover illustration avatar",
+        "PNG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "圆形",
+          "40px",
+          "50%",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "PNG插画",
+          "object-fit cover"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "types"
+        ]
+      },
+      "visual": {
+        "xPx": 753,
+        "yPx": 784.27,
+        "widthPx": 40,
+        "heightPx": 40,
+        "sizingRule": "computed 40x40 CSS px inside a block parent measuring 300.00x45.39 px; no inline width/height",
+        "parent": "DIV. 300×45.39px.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png; original bytes SHA-256 779aee082874e47bc5fd54e3c6023d4ab7b49e864b4b562e73b8a11de459aa4c; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 40,
+              "heightPx": 40,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 圆形 overflow hidden; object-fit cover; natural 180×180px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original PNG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-flex",
+          "position": "static",
+          "alignment": "center/center; IMG cover, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 40×40px with object-fit cover."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original PNG media 180×180 pixels via object-fit cover; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "corner radius: 50% versus 4px；media source: https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png versus https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png",
+      "reconstructionPrompt": "重建 Element Plus 官方 圆形蓝白人物插画 Avatar。外层 SPAN 40×40px、圆角 50%、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 40×40px，使用原示例媒体 https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png，原始 PNG 180×180px，object-fit:cover、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 40×40px 与 40×40px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 圆形 Avatar with exact IMG media URL, object-fit cover, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找40px圆形蓝白人物插画头像",
+        "需要图像按cover显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
+      ]
+    },
+    {
+      "id": "element-plus-avatar-element-plus-avatar-a795642cb2177021e037",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-a795642cb2177021e037",
+      "instanceId": "element-plus-avatar-element-plus-avatar-a795642cb2177021e037",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 56px方形无描边cover人物剪影头像",
+      "nameEn": "Element Plus 56px square borderless cover person silhouette avatar",
+      "descriptionZh": "结构：官方 方形 Avatar 外层 SPAN 内只有一张 IMG，内容是人物剪影；原始图像像素为 120×120，本实例按 cover（等比缩放填满，无额外裁切）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 56×56px，图像可见框 56×56px，四角 4px，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 357ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 56×56px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official square Avatar SPAN contains one IMG showing a person silhouette. The source image is 120×120 pixels, rendered with object-fit cover (proportionally scaled to fill without cropping).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 56×56px and the image box is 56×56px. Corner radius 4px, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 357ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 56×56px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-a795642cb2177021e037.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "方形",
+        "56px",
+        "4px",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "PNG插画",
+        "object-fit cover",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "basic-usage",
+        "56px 方形 cover人物剪影头像",
+        "cover illustration avatar",
+        "PNG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "方形",
+          "56px",
+          "4px",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "PNG插画",
+          "object-fit cover"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 1138.69,
+        "yPx": 493.89,
+        "widthPx": 56,
+        "heightPx": 56,
+        "sizingRule": "computed 56x56 CSS px inside a block parent measuring 111.63x61.39 px; no inline width/height",
+        "parent": "DIV.block 111.63×61.39px.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png; original bytes SHA-256 8c6ee41d940d7d49b684e07cd2341ac29696776579cfe632191d26e75600d3ff; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 56,
+              "heightPx": 56,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 方形 overflow hidden; object-fit cover; natural 120×120px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original PNG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-flex",
+          "position": "static",
+          "alignment": "center/center; IMG cover, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 56×56px with object-fit cover."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original PNG media 120×120 pixels via object-fit cover; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "outer width: 56 versus 40；outer height: 56 versus 40；IMG box width: 56 versus 40",
+      "reconstructionPrompt": "重建 Element Plus 官方 方形人物剪影 Avatar。外层 SPAN 56×56px、圆角 4px、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 56×56px，使用原示例媒体 https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png，原始 PNG 120×120px，object-fit:cover、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 56×56px 与 56×56px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 方形 Avatar with exact IMG media URL, object-fit cover, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找56px方形人物剪影头像",
+        "需要图像按cover显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
+      ]
+    },
+    {
+      "id": "element-plus-avatar-element-plus-avatar-c627d5bf9873d82ed468",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-c627d5bf9873d82ed468",
+      "instanceId": "element-plus-avatar-element-plus-avatar-c627d5bf9873d82ed468",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 100px方形无描边contain枝头小鸟照片头像",
+      "nameEn": "Element Plus 100px square borderless contain bird-on-branch photo avatar",
+      "descriptionZh": "结构：官方 方形 Avatar 外层 SPAN 内只有一张 IMG，内容是枝头小鸟照片；原始图像像素为 800×572，本实例按 contain（完整缩放留边）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 100×100px，图像可见框 100×100px，四角 4px，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 379ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 100×100px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official square Avatar SPAN contains one IMG showing a bird-on-branch photo. The source image is 800×572 pixels, rendered with object-fit contain (fully contained).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 100×100px and the image box is 100×100px. Corner radius 4px, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 379ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 100×100px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#fit-container",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-c627d5bf9873d82ed468.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "方形",
+        "100px",
+        "4px",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "JPEG照片",
+        "object-fit contain",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "fit-container",
+        "100px 方形 contain枝头小鸟照片头像",
+        "contain photo avatar",
+        "JPEG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "方形",
+          "100px",
+          "4px",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "JPEG照片",
+          "object-fit contain"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "fit-container"
+        ]
+      },
+      "visual": {
+        "xPx": 523.25,
+        "yPx": 743.61,
+        "widthPx": 100,
+        "heightPx": 100,
+        "sizingRule": "computed 100x100 CSS px inside a flex parent measuring 100.00x129.59 px; no inline width/height",
+        "parent": "DIV.block 100×129.59px.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg; original bytes SHA-256 07eab745ef3634e7607dd08c212849a252e0e4bf64a1449615ce852b5d6d09a5; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 100,
+              "heightPx": 100,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 方形 overflow hidden; object-fit contain; natural 800×572px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original JPEG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "center/center; IMG contain, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 100×100px with object-fit contain."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original JPEG media 800×572 pixels via object-fit contain; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "object-fit: contain versus fill；Drawn bitmap bounds derived from the preserved 800×572px raster and each IMG CSS box: 100px × 71.5px versus 100px × 100px; the parent clips overflow.",
+      "reconstructionPrompt": "重建 Element Plus 官方 方形枝头小鸟照片 Avatar。外层 SPAN 100×100px、圆角 4px、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 100×100px，使用原示例媒体 https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg，原始 JPEG 800×572px，object-fit:contain、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 100×100px 与 100×100px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 方形 Avatar with exact IMG media URL, object-fit contain, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找100px方形枝头小鸟照片头像",
+        "需要图像按contain显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
+      ]
+    },
+    {
+      "id": "element-plus-avatar-element-plus-avatar-dcd39915f7b928ac6f6c",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-dcd39915f7b928ac6f6c",
+      "instanceId": "element-plus-avatar-element-plus-avatar-dcd39915f7b928ac6f6c",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 100px方形无描边fill枝头小鸟照片头像",
+      "nameEn": "Element Plus 100px square borderless fill bird-on-branch photo avatar",
+      "descriptionZh": "结构：官方 方形 Avatar 外层 SPAN 内只有一张 IMG，内容是枝头小鸟照片；原始图像像素为 800×572，本实例按 fill（拉伸填满）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 100×100px，图像可见框 100×100px，四角 4px，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 406ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 100×100px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official square Avatar SPAN contains one IMG showing a bird-on-branch photo. The source image is 800×572 pixels, rendered with object-fit fill (stretched to fill).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 100×100px and the image box is 100×100px. Corner radius 4px, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 406ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 100×100px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#fit-container",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-dcd39915f7b928ac6f6c.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "方形",
+        "100px",
+        "4px",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "JPEG照片",
+        "object-fit fill",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "fit-container",
+        "100px 方形 fill枝头小鸟照片头像",
+        "fill photo avatar",
+        "JPEG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "方形",
+          "100px",
+          "4px",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "JPEG照片",
+          "object-fit fill"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "fit-container"
+        ]
+      },
+      "visual": {
+        "xPx": 323.5,
+        "yPx": 743.61,
+        "widthPx": 100,
+        "heightPx": 100,
+        "sizingRule": "computed 100x100 CSS px inside a flex parent measuring 100.00x129.59 px; no inline width/height",
+        "parent": "DIV.block 100×129.59px.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg; original bytes SHA-256 07eab745ef3634e7607dd08c212849a252e0e4bf64a1449615ce852b5d6d09a5; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 100,
+              "heightPx": 100,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 方形 overflow hidden; object-fit fill; natural 800×572px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original JPEG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "center/center; IMG fill, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 100×100px with object-fit fill."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original JPEG media 800×572 pixels via object-fit fill; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "object-fit: fill versus contain；Drawn bitmap bounds derived from the preserved 800×572px raster and each IMG CSS box: 100px × 100px versus 100px × 71.5px; the parent clips overflow.",
+      "reconstructionPrompt": "重建 Element Plus 官方 方形枝头小鸟照片 Avatar。外层 SPAN 100×100px、圆角 4px、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 100×100px，使用原示例媒体 https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg，原始 JPEG 800×572px，object-fit:fill、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 100×100px 与 100×100px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 方形 Avatar with exact IMG media URL, object-fit fill, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找100px方形枝头小鸟照片头像",
+        "需要图像按fill显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
+      ]
+    },
+    {
+      "id": "element-plus-avatar-element-plus-avatar-e89f6eee8c0924d26b23",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-e89f6eee8c0924d26b23",
+      "instanceId": "element-plus-avatar-element-plus-avatar-e89f6eee8c0924d26b23",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 40px圆形无描边cover灰底人物剪影头像",
+      "nameEn": "Element Plus 40px circular borderless cover gray person silhouette avatar",
+      "descriptionZh": "结构：官方 圆形 Avatar 外层 SPAN 内只有一张 IMG，内容是灰底人物剪影；原始图像像素为 120×120，本实例按 cover（等比缩放填满，object-fit 不额外裁切，父级圆形蒙版裁去四角）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 40×40px，图像可见框 40×40px，四角 50%，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 348ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 40×40px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official circular Avatar SPAN contains one IMG showing a gray person silhouette. The source image is 120×120 pixels, rendered with object-fit cover (proportionally scaled to fill without an extra object-fit crop; the circular parent mask clips the corners).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 40×40px and the image box is 40×40px. Corner radius 50%, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 348ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 40×40px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-e89f6eee8c0924d26b23.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "圆形",
+        "40px",
+        "50%",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "PNG插画",
+        "object-fit cover",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "basic-usage",
+        "40px 圆形 cover灰底人物剪影头像",
+        "cover illustration avatar",
+        "PNG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "圆形",
+          "40px",
+          "50%",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "PNG插画",
+          "object-fit cover"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 583.94,
+        "yPx": 501.89,
+        "widthPx": 40,
+        "heightPx": 40,
+        "sizingRule": "computed 40x40 CSS px inside a block parent measuring 112.38x45.39 px; no inline width/height",
+        "parent": "DIV.block 112.38×45.39px.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png; original bytes SHA-256 745c3d16aa839c8aa7f2b8af47808fd789a8286288ccd1f6df9b49820714dee6; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 40,
+              "heightPx": 40,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 圆形 overflow hidden; object-fit cover; natural 120×120px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original PNG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-flex",
+          "position": "static",
+          "alignment": "center/center; IMG cover, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 40×40px with object-fit cover."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original PNG media 120×120 pixels via object-fit cover; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "outer width: 40 versus 24；outer height: 40 versus 24；IMG box width: 40 versus 24",
+      "reconstructionPrompt": "重建 Element Plus 官方 圆形灰底人物剪影 Avatar。外层 SPAN 40×40px、圆角 50%、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 40×40px，使用原示例媒体 https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png，原始 PNG 120×120px，object-fit:cover、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 40×40px 与 40×40px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 圆形 Avatar with exact IMG media URL, object-fit cover, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找40px圆形灰底人物剪影头像",
+        "需要图像按cover显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
+      ]
+    },
+    {
+      "id": "element-plus-avatar-element-plus-avatar-f2e89f8169c6a05e74df",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/avatar",
+      "variantId": "element-plus-avatar-f2e89f8169c6a05e74df",
+      "instanceId": "element-plus-avatar-element-plus-avatar-f2e89f8169c6a05e74df",
+      "kind": "website-component",
+      "componentType": "avatar",
+      "nameZh": "Element Plus 24px圆形无描边cover灰底人物剪影头像",
+      "nameEn": "Element Plus 24px circular borderless cover gray person silhouette avatar",
+      "descriptionZh": "结构：官方 圆形 Avatar 外层 SPAN 内只有一张 IMG，内容是灰底人物剪影；原始图像像素为 120×120，本实例按 cover（等比缩放填满，object-fit 不额外裁切，父级圆形蒙版裁去四角）显示。\n\n尺寸与布局：1280×900 CSS 视口中外框 24×24px，图像可见框 24×24px，四角 50%，边框 0px none rgb(255, 255, 255)；内容在 flex 容器内居中，超出头像框的部分隐藏。\n\n色彩与质感：头像底色 rgb(192, 196, 204)、边框 0px none rgb(255, 255, 255)、透明度 1；图像本身不通过 CSS 色值替代，来源图像按原始字节展示，无盒阴影或叠加滤镜。\n\n运动与状态：实测 hover 只改变匹配状态，图像、背景和尺寸未变化；原示例没有点击、选中、按下或关闭行为，观察 348ms 未见动画。\n\n响应与范围：390×844 CSS 视口中外框 24×24px，无内容溢出；触屏和减少动态为浏览器仿真，媒体版权与商用许可没有正向核实。",
+      "descriptionEn": "Structure: The official circular Avatar SPAN contains one IMG showing a gray person silhouette. The source image is 120×120 pixels, rendered with object-fit cover (proportionally scaled to fill without an extra object-fit crop; the circular parent mask clips the corners).\n\nSize and layout: At the 1280×900 CSS viewport the outer box is 24×24px and the image box is 24×24px. Corner radius 50%, border 0px none rgb(255, 255, 255); flex layout centers the image and clips overflow.\n\nColor and material: Avatar fill rgb(192, 196, 204), border 0px none rgb(255, 255, 255), opacity 1. The image uses the preserved original bytes, not a CSS color substitute; no box shadow or overlay filter was observed.\n\nMotion and states: Hover changes only matching, with no measured change to image, fill, or size. This example has no click, selected, pressed, or close action; no animation appeared over 348ms.\n\nResponsive scope: At the 390×844 CSS viewport the outer box is 24×24px without overflow. Touch and reduced-motion results are browser emulations. Media reuse and commercial rights were not positively verified.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/avatar#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-avatar-element-plus-avatar-f2e89f8169c6a05e74df.html",
+      "previewKind": "measured-static-reconstruction",
+      "offers": [],
+      "tags": [
+        "头像",
+        "avatar",
+        "SPAN > IMG",
+        "单张图像",
+        "圆形",
+        "24px",
+        "50%",
+        "无描边",
+        "rgb(192, 196, 204)",
+        "0px none rgb(255, 255, 255)",
+        "PNG插画",
+        "object-fit cover",
+        "无可见文字",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "non-interactive",
+        "Element Plus Avatar docs",
+        "basic-usage",
+        "24px 圆形 cover灰底人物剪影头像",
+        "cover illustration avatar",
+        "PNG avatar"
+      ],
+      "tagFacets": {
+        "object": [
+          "头像",
+          "avatar"
+        ],
+        "structure": [
+          "SPAN > IMG",
+          "单张图像"
+        ],
+        "shape": [
+          "圆形",
+          "24px",
+          "50%",
+          "无描边"
+        ],
+        "color": [
+          "rgb(192, 196, 204)",
+          "0px none rgb(255, 255, 255)"
+        ],
+        "material": [
+          "PNG插画",
+          "object-fit cover"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "non-interactive"
+        ],
+        "context": [
+          "Element Plus Avatar docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 479.56,
+        "yPx": 509.89,
+        "widthPx": 24,
+        "heightPx": 24,
+        "sizingRule": "computed 24x24 CSS px inside a block parent measuring 112.38x29.39 px; no inline width/height",
+        "parent": "DIV.block 112.38×29.39px.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "overflow hidden, CSS clip none, mask none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(192, 196, 204)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(255, 255, 255)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official IMG https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png; original bytes SHA-256 745c3d16aa839c8aa7f2b8af47808fd789a8286288ccd1f6df9b49820714dee6; reuse rights not established.",
+              "color": "Original raster pixels; no CSS icon color.",
+              "widthPx": 24,
+              "heightPx": 24,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "parent 圆形 overflow hidden; object-fit cover; natural 120×120px."
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official docs parent {\"color\":\"rgb(192, 196, 204)\",\"from\":\"SPAN.el-avatar\"}.",
+          "fill": "rgb(192, 196, 204)",
+          "text": "No text node in this image Avatar.",
+          "border": "0px none rgb(255, 255, 255)",
+          "icon": "Raster image is not recolored with a CSS icon tint.",
+          "decoration": "Original PNG media pixels; no added gradient or shadow.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact SPAN > IMG markup contains no text node; inherited font only affects surrounding document."
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-flex",
+          "position": "static",
+          "alignment": "center/center; IMG cover, centered.",
+          "overflow": "hidden",
+          "zIndex": "auto",
+          "children": [
+            "One IMG 24×24px with object-fit cover."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Original PNG media 120×120 pixels via object-fit cover; no added CSS texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "outer width: 24 versus 40；outer height: 24 versus 40；IMG box width: 24 versus 40",
+      "reconstructionPrompt": "重建 Element Plus 官方 圆形灰底人物剪影 Avatar。外层 SPAN 24×24px、圆角 50%、边框 0px none rgb(255, 255, 255)、overflow:hidden、flex 居中；内层 IMG 24×24px，使用原示例媒体 https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png，原始 PNG 120×120px，object-fit:cover、object-position:50% 50%。头像底色 rgb(192, 196, 204)，无阴影，无 hover 颜色变化。1280×900 与 390×844 CSS 视口分别验收 24×24px 与 24×24px。不要替换原图、改动 object-fit、加悬浮动画、图标或未见的阴影；版权许可未知时不得宣称可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One 圆形 Avatar with exact IMG media URL, object-fit cover, 1280×900 and 390×844 CSS viewports. Touch/reduced-motion browser emulation; media reuse rights were not established by the saved HTTP response.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找24px圆形灰底人物剪影头像",
+        "需要图像按cover显示的头像",
+        "要rgb(192, 196, 204)底色、无悬停动画的图像头像"
       ]
     },
     {
