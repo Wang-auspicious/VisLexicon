@@ -46,6 +46,63 @@ export function createRefinementStore({ maxEntries = 512 } = {}) {
   return { resolve, save, page }
 }
 
+// A model request may still be pending when the next keystroke is sent. Keep
+// its selected IDs server-side before ranking, so the next prefix only searches
+// that bounded scope. Per-session preparation is ordered even on a cold index.
+export function createProvisionalSearchStore({maxEntries=256}={}) {
+  const sessions=new Map(),tails=new Map()
+  const sameContext=(record,index)=>record.scope===index.scope&&record.theme===index.theme&&record.indexVersion===index.generatedAt
+  const remember=(sessionId,record)=>{
+    sessions.delete(sessionId);sessions.set(sessionId,record)
+    while(sessions.size>maxEntries)sessions.delete(sessions.keys().next().value)
+  }
+  async function prepare({sessionId,requestId,query,load,refineToken,refinements}) {
+    const preceding=tails.get(sessionId)||Promise.resolve()
+    const operation=preceding.catch(()=>{}).then(async()=>{
+      const {index,byId,searchLimit}=await load()
+      const prior=sessions.get(sessionId)
+      if(prior&&requestId<prior.requestId)return {stale:true}
+      if(prior&&requestId===prior.requestId){
+        if(prior.query!==query||!sameContext(prior,index))return {stale:true}
+        return {index,byId,searchLimit,candidates:prior.selectedIds.map(id=>byId.get(id)).filter(Boolean).map(unit=>({unit})),sourceCandidateCount:prior.sourceCandidateCount,refinement:prior.refinement,resetReason:prior.resetReason}
+      }
+      let candidates,sourceCandidateCount,refinement,resetReason=null
+      if(prior&&sameContext(prior,index)&&query.startsWith(prior.query)&&query.length>prior.query.length){
+        const ids=prior.matchIds??prior.selectedIds
+        const source=ids.map(id=>byId.get(id)).filter(Boolean)
+        candidates=rerankPool(query,source,searchLimit)
+        sourceCandidateCount=source.length
+        refinement=prior.matchIds===null?'provisional':'refined'
+      }else if(prior){
+        candidates=rerankPool(query,index.units,searchLimit)
+        sourceCandidateCount=index.units.length
+        refinement='reset'
+        resetReason=sameContext(prior,index)?'query-changed':'index-or-topic-changed'
+      }else{
+        const selected=selectDiscoveryCandidates(query,index,byId,refinements,refineToken,searchLimit)
+        candidates=selected.candidates
+        sourceCandidateCount=selected.sourceCandidateCount
+        refinement=selected.refinement
+        resetReason=selected.resetReason
+      }
+      remember(sessionId,{requestId,query,scope:index.scope,theme:index.theme,indexVersion:index.generatedAt,sourceCandidateCount,refinement,resetReason,selectedIds:candidates.map(({unit})=>unit.id),matchIds:null})
+      return {index,byId,searchLimit,candidates,sourceCandidateCount,refinement,resetReason}
+    })
+    const tail=operation.then(()=>{},()=>{})
+    tails.set(sessionId,tail)
+    try{return await operation}finally{if(tails.get(sessionId)===tail)tails.delete(sessionId)}
+  }
+  function commit(sessionId,requestId,query,index,matchedIds) {
+    const record=sessions.get(sessionId)
+    if(!record||record.requestId!==requestId||record.query!==query||!sameContext(record,index))return false
+    const selected=new Set(record.selectedIds)
+    record.matchIds=[...new Set(matchedIds)].filter(id=>selected.has(id))
+    remember(sessionId,record)
+    return true
+  }
+  return {prepare,commit}
+}
+
 export function selectDiscoveryCandidates(query, index, byId, store, token, limit = 32) {
   const refinement = store.resolve(token, query, index)
   const source = refinement.mode === 'refined'

@@ -5,7 +5,7 @@ import crypto from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 import { loadDiscoveryIndex } from './discovery-index.mjs'
 import { DISCOVERY_SCOPES, inTheme, queryRequirements } from '../src/lib/discovery-scopes.js'
-import { createRefinementStore, projectDiscoveryCard, selectDiscoveryCandidates, summarizeDiscoveryIndex } from './discovery-refinement.mjs'
+import { createRefinementStore, createProvisionalSearchStore, projectDiscoveryCard, selectDiscoveryCandidates, summarizeDiscoveryIndex } from './discovery-refinement.mjs'
 
 export const FREE_MODEL='jev-1.13-free'
 export const JEV_ENDPOINT='https://opencode.ai/zen/v1/systemone'
@@ -85,10 +85,11 @@ export function localRequestAllowed(req) {
 }
 function json(res,status,body){res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(body))}
 export function discoveryPlugin({ranker=rankWithJev}={}) {
-  let busy=false
+  let modelFlight=null
   const cache=new Map()
   const indexCache=new Map()
   const refinements=createRefinementStore()
+  const provisional=createProvisionalSearchStore()
   const getIndex=async(scope,theme='')=>{
     if(!Object.hasOwn(DISCOVERY_SCOPES,scope))throw new Error('INVALID_SCOPE')
     const files=[`public/data/discovery/scopes/${scope}.json`,'public/data/discovery/index.json','public/data/discovery/relations.json']
@@ -172,14 +173,21 @@ export function discoveryPlugin({ranker=rankWithJev}={}) {
         cache.set(cacheKey,{at:Date.now(),result});if(cache.size>64)cache.delete(cache.keys().next().value)
         return json(res,200,result)
       }
-      const {index,byId,searchLimit}=await getIndex(request.scope,request.theme||'')
-      const {candidates,sourceCandidateCount,refinement,resetReason}=selectDiscoveryCandidates(query,index,byId,refinements,request.refineToken,searchLimit)
-      const key=crypto.createHash('sha256').update(JSON.stringify({indexVersion:index.generatedAt,scope:index.scope,theme:index.theme,query,refineToken:refinement==='refined'?request.refineToken:null})).digest('hex')
+      const sessionId=request.sessionId??null,requestId=request.requestId
+      if(sessionId!==null&&(!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/iu.test(sessionId)||!Number.isSafeInteger(requestId)||requestId<1))return json(res,400,{error:'INVALID_SEARCH_SESSION'})
+      let selected
+      if(sessionId)selected=await provisional.prepare({sessionId,requestId,query,load:()=>getIndex(request.scope,request.theme||''),refineToken:request.refineToken,refinements})
+      else{const context=await getIndex(request.scope,request.theme||'');selected={...context,...selectDiscoveryCandidates(query,context.index,context.byId,refinements,request.refineToken,context.searchLimit)}}
+      const {index,byId,searchLimit,candidates,sourceCandidateCount,refinement,resetReason,stale}=selected
+      if(stale)return json(res,409,{error:'STALE_SEARCH_SESSION'})
+      const candidateIds=candidates.map(({unit})=>unit.id)
+      const key=crypto.createHash('sha256').update(JSON.stringify({indexVersion:index.generatedAt,scope:index.scope,theme:index.theme,query,candidateIds})).digest('hex')
       const metadata={candidateCount:candidates.length,sourceCandidateCount,totalIndexed:index.units.length,indexVersion:index.generatedAt,scope:index.scope,theme:index.theme,refinement,resetReason}
       const publicResult=(ranked,token)=>{
         const {rows:_rows,...rest}=ranked
-        const page=refinements.page(token,index,byId,0,12)
-        return {...rest,matchCount:page.total,units:page.units.map(projectDiscoveryCard),refineToken:token,requestId:request.requestId}
+        const page=refinements.page(token,index,byId,0,searchLimit)
+        if(sessionId)provisional.commit(sessionId,requestId,query,index,page.units.map(unit=>unit.id))
+        return {...rest,matchCount:page.total,units:page.units.slice(0,12).map(projectDiscoveryCard),refineToken:token,requestId}
       }
       if(!candidates.length){
         const result={mode:'empty',rows:[],...metadata,cost:null}
@@ -187,16 +195,23 @@ export function discoveryPlugin({ranker=rankWithJev}={}) {
       }
       const cached=cache.get(key)
       if(cached&&Date.now()-cached.at<300000)return json(res,200,publicResult({...cached.result,...metadata,cached:true},refinements.save(query,index,candidates,cached.result.rows)))
-      if(busy)return json(res,429,{error:'MODEL_BUSY',message:'正在完成上一轮判断，请稍后再试。'})
-      busy=true
+      if(modelFlight&&sessionId&&modelFlight.sessionId===sessionId&&modelFlight.requestId<requestId){
+        modelFlight.controller.abort()
+        await Promise.race([modelFlight.done,new Promise(resolve=>setTimeout(resolve,500))])
+      }
+      if(modelFlight)return json(res,429,{error:'MODEL_BUSY',message:'正在完成上一轮判断，请稍后再试。'})
       const controller=new AbortController()
+      let finishFlight
+      const flight={sessionId,requestId,controller,done:new Promise(resolve=>{finishFlight=resolve})}
+      modelFlight=flight
       const disconnect=()=>controller.abort()
       res.on('close',disconnect)
       try {
         const result={...await ranker(query,candidates,{signal:controller.signal}),...metadata}
+        if(controller.signal.aborted||res.destroyed)return
         cache.set(key,{at:Date.now(),result});if(cache.size>64)cache.delete(cache.keys().next().value)
         return json(res,200,publicResult(result,refinements.save(query,index,candidates,result.rows)))
-      } finally {busy=false;res.off('close',disconnect)}
+      } finally {if(modelFlight===flight)modelFlight=null;finishFlight();res.off('close',disconnect)}
     } catch(error) {
       // Do not echo upstream payloads, user text, auth paths or credentials.
       const code=/^(JEV_HTTP_\d+|FREE_MODEL_COST_CHANGED|UNEXPECTED_MODEL|INVALID_MODEL_SCORE|LOCAL_CREDENTIAL_UNAVAILABLE|INVALID_SCOPE|INVALID_THEME)$/.test(error.message)?error.message:'MODEL_UNAVAILABLE'

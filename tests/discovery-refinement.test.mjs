@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 import http from 'node:http'
 import { once } from 'node:events'
 import { discoveryPlugin } from '../server/discovery-api.mjs'
-import { createRefinementStore, projectDiscoveryCard, selectDiscoveryCandidates, summarizeDiscoveryIndex } from '../server/discovery-refinement.mjs'
+import { createRefinementStore, createProvisionalSearchStore, projectDiscoveryCard, selectDiscoveryCandidates, summarizeDiscoveryIndex } from '../server/discovery-refinement.mjs'
 
 function corpus(count = 8000) {
   const units = Array.from({ length: count }, (_, i) => ({
@@ -168,4 +168,87 @@ test('a zero-match refinement stays empty until the query is deleted or changed'
   assert.equal(refined.refinement, 'refined')
   assert.equal(refined.sourceCandidateCount, 0)
   assert.equal(refined.candidates.length, 0)
+})
+
+test('pending server shortlist narrows before model completion and rejects late commits',async()=>{
+  const {index,byId}=corpus(8000)
+  const store=createProvisionalSearchStore(),refinements=createRefinementStore()
+  const sessionId='11111111-1111-4111-8111-111111111111'
+  const load=async()=>({index,byId,searchLimit:32})
+  const first=await store.prepare({sessionId,requestId:1,query:'button',load,refinements})
+  assert.equal(first.sourceCandidateCount,8000)
+  assert.equal(first.candidates.length,32)
+  const previous=new Set(first.candidates.map(({unit})=>unit.id))
+  const guarded={...index,units:new Proxy(index.units,{get(target,property,receiver){if(property==='length')return Reflect.get(target,property,receiver);throw Error('full index traversed during append')}})}
+  const appended=await store.prepare({sessionId,requestId:2,query:'button blue',load:async()=>({index:guarded,byId,searchLimit:32}),refinements})
+  assert.equal(appended.refinement,'provisional')
+  assert.equal(appended.sourceCandidateCount,32)
+  assert.ok(appended.candidates.every(({unit})=>previous.has(unit.id)))
+  assert.equal(store.commit(sessionId,1,'button',index,[first.candidates[0].unit.id]),false)
+  assert.equal(store.commit(sessionId,2,'button blue',index,appended.candidates.slice(0,5).map(({unit})=>unit.id)),true)
+  const third=await store.prepare({sessionId,requestId:3,query:'button blue white',load:async()=>({index:guarded,byId,searchLimit:32}),refinements})
+  assert.equal(third.sourceCandidateCount,5)
+  assert.equal(third.refinement,'refined')
+  const replay=await store.prepare({sessionId,requestId:3,query:'button blue white',load:async()=>({index:guarded,byId,searchLimit:32}),refinements})
+  assert.equal(replay.sourceCandidateCount,5)
+  assert.deepEqual(replay.candidates.map(({unit})=>unit.id),third.candidates.map(({unit})=>unit.id))
+  const stale=await store.prepare({sessionId,requestId:2,query:'button blue',load,refinements})
+  assert.equal(stale.stale,true)
+  const deleted=await store.prepare({sessionId,requestId:4,query:'button',load,refinements})
+  assert.equal(deleted.refinement,'reset')
+  assert.equal(deleted.sourceCandidateCount,8000)
+  const changedTopic=await store.prepare({sessionId,requestId:5,query:'button blue',load:async()=>({index:{...index,theme:'card'},byId,searchLimit:32}),refinements})
+  assert.equal(changedTopic.refinement,'reset')
+  assert.equal(changedTopic.sourceCandidateCount,8000)
+  const changedRevision=await store.prepare({sessionId,requestId:6,query:'button blue more',load:async()=>({index:{...index,theme:'card',generatedAt:'revision-2'},byId,searchLimit:32}),refinements})
+  assert.equal(changedRevision.refinement,'reset')
+  assert.equal(changedRevision.sourceCandidateCount,8000)
+  const widerTopic=await store.prepare({sessionId:'33333333-3333-4333-8333-333333333333',requestId:1,query:'button',load:async()=>({index,byId,searchLimit:50}),refinements})
+  assert.equal(widerTopic.candidates.length,50)
+})
+
+test('HTTP append uses pending session shortlist while first model request is in flight', {timeout:15000},async t=>{
+  let signalFirstStarted
+  const firstStarted=new Promise(resolve=>{signalFirstStarted=resolve})
+  const calls=[]
+  const ranker=(query,candidates,{signal})=>{
+    calls.push({query,ids:candidates.map(({unit})=>unit.id)})
+    if(query==='按钮')return new Promise((resolve,reject)=>{
+      signalFirstStarted()
+      signal.addEventListener('abort',()=>reject(Error('FIRST_ABORTED')),{once:true})
+    })
+    return Promise.resolve({mode:'jev',model:'test-ranker',cost:'0',rows:candidates.map(({unit})=>({id:unit.id,score:2}))})
+  }
+  let middleware
+  discoveryPlugin({ranker}).configureServer({middlewares:{use(fn){middleware=fn}}})
+  const server=http.createServer((req,res)=>middleware(req,res,()=>{res.writeHead(404);res.end()}))
+  server.listen(0,'127.0.0.1')
+  await once(server,'listening')
+  t.after(()=>server.close())
+  const base=`http://127.0.0.1:${server.address().port}`
+  const sessionId='22222222-2222-4222-8222-222222222222'
+  const post=async(query,requestId)=>{
+    const response=await fetch(`${base}/api/discovery/search`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,scope:'curation',theme:'button',sessionId,requestId})})
+    return {status:response.status,data:await response.json()}
+  }
+  const firstResponse=post('按钮',1)
+  await firstStarted
+  const second=await post('按钮 蓝色',2)
+  assert.equal(second.status,200)
+  assert.equal(second.data.refinement,'provisional')
+  assert.equal(second.data.sourceCandidateCount,calls[0].ids.length)
+  assert.ok(calls[1].ids.every(id=>calls[0].ids.includes(id)))
+  assert.equal(second.data.matchCount,calls[1].ids.length)
+  const first=await firstResponse
+  assert.equal(first.status,503)
+  const third=await post('按钮 蓝色 白字',3)
+  assert.equal(third.status,200)
+  assert.equal(third.data.refinement,'refined')
+  assert.equal(third.data.sourceCandidateCount,second.data.matchCount)
+  const stale=await post('按钮',1)
+  assert.equal(stale.status,409)
+  const deletion=await post('按钮 白字',4)
+  assert.equal(deletion.status,200)
+  assert.equal(deletion.data.refinement,'reset')
+  assert.equal(deletion.data.sourceCandidateCount,second.data.totalIndexed)
 })
