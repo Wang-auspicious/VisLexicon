@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 5da29deae1d475cd51ba527594702dab3d51dc53b8ce95b5babbd45c25f8f68a
 status: APPROVED
 name: Nebular

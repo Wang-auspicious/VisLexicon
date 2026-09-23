@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 9438c117ac9f7666af3db05dc711328da73599e964e3a88a45eb91050888d46d
 status: APPROVED
 name: "CKEditor 5"

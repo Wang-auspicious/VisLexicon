@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 564ff8a23d93613208d37dcaa7ef665c834ba57e0bfeec423f16b9b50d1c6ed3
 status: APPROVED
 name: PixiJS

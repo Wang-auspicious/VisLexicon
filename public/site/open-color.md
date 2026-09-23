@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 1c882926e1246c82301e9ce7a78c0a8c61484e72816c67cac823a6294520d6c0
 status: APPROVED
 name: "Open Color"

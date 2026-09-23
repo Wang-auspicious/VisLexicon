@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: a16b4f0dff9933936c1f05319072c726ed0aac163aba107b98ca127d213d409b
 status: APPROVED
 name: "Shadcn Studio Blocks"

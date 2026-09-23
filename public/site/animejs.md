@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 0eaea3f168f8f9e6b7fc7c9da16e5080d75005d622155a8d070fc809314e8989
 status: APPROVED
 name: Anime.js

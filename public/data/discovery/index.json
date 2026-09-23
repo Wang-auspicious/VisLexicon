@@ -1,13 +1,13 @@
 {
   "schemaVersion": "component-instance/2.0",
-  "generatedAt": "2026-09-23T16:33:11.001Z",
+  "generatedAt": "2026-09-23T16:44:15.006Z",
   "batchId": "capture-v2",
   "counts": {
     "rawObservations": 1672,
-    "indexedInstances": 109,
-    "websiteInstances": 107,
+    "indexedInstances": 125,
+    "websiteInstances": 123,
     "atlasEffects": 2,
-    "pendingDetail": 1152,
+    "pendingDetail": 1136,
     "classifiedNoncomponents": 324,
     "componentFragments": 62,
     "legacySamplesPending": 110,
@@ -19417,6 +19417,878 @@
       ]
     },
     {
+      "id": "element-plus-button-basic-usage-26",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-01fd8b398415bb0f2042",
+      "instanceId": "element-plus-button-basic-usage-26",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus Edit 圆形纯图标按钮",
+      "nameEn": "Element Plus Edit circular icon-only button",
+      "descriptionZh": "结构：BUTTON 内只有 I 图标容器及来自官方示例的 Edit SVG，没有可见文字；图标来自示例中 @element-plus/icons-vue 的 Edit 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 32×32px，四边 1px 实线边框，四角 50px；内边距依次为 8/8/8/8px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(64, 158, 255)、边框 rgb(64, 158, 255)、图标 rgb(255, 255, 255)，盒阴影 none；没有文字层；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(64, 158, 255) 变为 rgb(121, 187, 255)；按住时为 rgb(51, 126, 204)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 32×32px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains only an I wrapper with the official Edit SVG and no visible text. The SVG path is kept from the official @element-plus/icons-vue Edit example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 32×32px, with a 1px solid border and 50px corners. Top/right/bottom/left padding is 8/8/8/8px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(64, 158, 255), border rgb(64, 158, 255), icon rgb(255, 255, 255), box shadow none. There is no text layer. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(64, 158, 255) to rgb(121, 187, 255); held press uses rgb(51, 126, 204). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 32×32px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-button-basic-usage-26.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I > SVG",
+        "Edit SVG",
+        "圆形",
+        "50px圆角",
+        "rgb(64, 158, 255)",
+        "rgb(255, 255, 255)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "无可见文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "basic-usage",
+        "Edit Element Plus图标按钮",
+        "el-button el-button--primary is-circle Edit",
+        "圆形 Edit按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I > SVG",
+          "Edit SVG"
+        ],
+        "shape": [
+          "圆形",
+          "50px圆角"
+        ],
+        "color": [
+          "rgb(64, 158, 255)",
+          "rgb(255, 255, 255)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 371.5,
+        "yPx": 433.90625,
+        "widthPx": 32,
+        "heightPx": 32,
+        "sizingRule": "Computed 32px×32px; box-sizing border-box.",
+        "parent": "DIV.button-row, bbox {\"x\":323.5,\"y\":433.90625,\"width\":899,\"height\":32}.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(64, 158, 255)",
+          "hoverBackground": "rgb(121, 187, 255)",
+          "activeBackground": "rgb(51, 126, 204)",
+          "color": null,
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(64, 158, 255)",
+          "iconColor": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Edit reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/basic.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(255, 255, 255)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(64, 158, 255)",
+          "text": "No text child.",
+          "border": "1px solid rgb(64, 158, 255)",
+          "icon": "rgb(255, 255, 255)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact BUTTON has no visible text child and no actual text node."
+        },
+        "spacing": {
+          "paddingTopPx": 8,
+          "paddingRightPx": 8,
+          "paddingBottomPx": 8,
+          "paddingLeftPx": 8,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I.",
+          "overflow": "Root visible; scroll 30×30 against client 30×30.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[0] .example-showcase .el-button[25]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(64, 158, 255); border-top-color: rgb(64, 158, 255)",
+            "to": "rgb(121, 187, 255); rgb(121, 187, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(64, 158, 255).",
+            "interruption": "Measured interruption fill rgb(75, 163, 255); resumed rgb(121, 187, 255); returned rgb(64, 158, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[0] .example-showcase .el-button[25]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(121, 187, 255); border-top-color: rgb(121, 187, 255)",
+            "to": "rgb(51, 126, 204); rgb(51, 126, 204)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(64, 158, 255).",
+            "interruption": "Measured interruption fill rgb(75, 163, 255); resumed rgb(121, 187, 255); returned rgb(64, 158, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 32px versus 46px；corner radius 50px versus 4px",
+      "reconstructionPrompt": "重建 Element Plus 官方 Edit SVG 按钮。圆形原生 BUTTON 外框 32×32px；四边 padding 8/8/8/8px、边框 1px solid rgb(64, 158, 255)、四角半径 50px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(255, 255, 255)，无可见文字。默认填充 rgb(64, 158, 255)，hover rgb(121, 187, 255)，按住 rgb(51, 126, 204)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 32×32px、32×32px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 0, rootIndex 25; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个圆形的Edit图标按钮",
+        "需要rgb(64, 158, 255)底色和rgb(255, 255, 255)图标的按钮",
+        "要hover变rgb(121, 187, 255)、按住变rgb(51, 126, 204)的Edit按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-basic-usage-27",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-b41dd5aa2f77ff076276",
+      "instanceId": "element-plus-button-basic-usage-27",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus Check 圆形纯图标按钮",
+      "nameEn": "Element Plus Check circular icon-only button",
+      "descriptionZh": "结构：BUTTON 内只有 I 图标容器及来自官方示例的 Check SVG，没有可见文字；图标来自示例中 @element-plus/icons-vue 的 Check 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 32×32px，四边 1px 实线边框，四角 50px；内边距依次为 8/8/8/8px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(103, 194, 58)、边框 rgb(103, 194, 58)、图标 rgb(255, 255, 255)，盒阴影 none；没有文字层；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(103, 194, 58) 变为 rgb(149, 212, 117)；按住时为 rgb(82, 155, 46)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 32×32px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains only an I wrapper with the official Check SVG and no visible text. The SVG path is kept from the official @element-plus/icons-vue Check example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 32×32px, with a 1px solid border and 50px corners. Top/right/bottom/left padding is 8/8/8/8px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(103, 194, 58), border rgb(103, 194, 58), icon rgb(255, 255, 255), box shadow none. There is no text layer. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(103, 194, 58) to rgb(149, 212, 117); held press uses rgb(82, 155, 46). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 32×32px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-button-basic-usage-27.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I > SVG",
+        "Check SVG",
+        "圆形",
+        "50px圆角",
+        "rgb(103, 194, 58)",
+        "rgb(255, 255, 255)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "无可见文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "basic-usage",
+        "Check Element Plus图标按钮",
+        "el-button el-button--success is-circle Check",
+        "圆形 Check按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I > SVG",
+          "Check SVG"
+        ],
+        "shape": [
+          "圆形",
+          "50px圆角"
+        ],
+        "color": [
+          "rgb(103, 194, 58)",
+          "rgb(255, 255, 255)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 419.5,
+        "yPx": 433.90625,
+        "widthPx": 32,
+        "heightPx": 32,
+        "sizingRule": "Computed 32px×32px; box-sizing border-box.",
+        "parent": "DIV.button-row, bbox {\"x\":323.5,\"y\":433.90625,\"width\":899,\"height\":32}.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(103, 194, 58)",
+          "hoverBackground": "rgb(149, 212, 117)",
+          "activeBackground": "rgb(82, 155, 46)",
+          "color": null,
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(103, 194, 58)",
+          "iconColor": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Check reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/basic.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(255, 255, 255)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(103, 194, 58)",
+          "text": "No text child.",
+          "border": "1px solid rgb(103, 194, 58)",
+          "icon": "rgb(255, 255, 255)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact BUTTON has no visible text child and no actual text node."
+        },
+        "spacing": {
+          "paddingTopPx": 8,
+          "paddingRightPx": 8,
+          "paddingBottomPx": 8,
+          "paddingLeftPx": 8,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I.",
+          "overflow": "Root visible; scroll 30×30 against client 30×30.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[0] .example-showcase .el-button[26]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(103, 194, 58); border-top-color: rgb(103, 194, 58)",
+            "to": "rgb(149, 212, 117); rgb(149, 212, 117)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(103, 194, 58).",
+            "interruption": "Measured interruption fill rgb(105, 195, 61); resumed rgb(149, 212, 117); returned rgb(103, 194, 58)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[0] .example-showcase .el-button[26]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(149, 212, 117); border-top-color: rgb(149, 212, 117)",
+            "to": "rgb(82, 155, 46); rgb(82, 155, 46)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(103, 194, 58).",
+            "interruption": "Measured interruption fill rgb(105, 195, 61); resumed rgb(149, 212, 117); returned rgb(103, 194, 58)."
+          }
+        ]
+      },
+      "distinctionZh": "fill rgb(103, 194, 58) versus rgb(64, 158, 255)；border rgb(103, 194, 58) versus rgb(64, 158, 255)；SVG source shape Check versus Edit differs in official markup",
+      "reconstructionPrompt": "重建 Element Plus 官方 Check SVG 按钮。圆形原生 BUTTON 外框 32×32px；四边 padding 8/8/8/8px、边框 1px solid rgb(103, 194, 58)、四角半径 50px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(255, 255, 255)，无可见文字。默认填充 rgb(103, 194, 58)，hover rgb(149, 212, 117)，按住 rgb(82, 155, 46)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(179, 225, 157)。在1280×900和390×844 CSS视口验收尺寸分别为 32×32px、32×32px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 0, rootIndex 26; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个圆形的Check图标按钮",
+        "需要rgb(103, 194, 58)底色和rgb(255, 255, 255)图标的按钮",
+        "要hover变rgb(149, 212, 117)、按住变rgb(82, 155, 46)的Check按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-basic-usage-28",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-0dfb02ba528e87f2ec3d",
+      "instanceId": "element-plus-button-basic-usage-28",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus Message 圆形纯图标按钮",
+      "nameEn": "Element Plus Message circular icon-only button",
+      "descriptionZh": "结构：BUTTON 内只有 I 图标容器及来自官方示例的 Message SVG，没有可见文字；图标来自示例中 @element-plus/icons-vue 的 Message 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 32×32px，四边 1px 实线边框，四角 50px；内边距依次为 8/8/8/8px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(144, 147, 153)、边框 rgb(144, 147, 153)、图标 rgb(255, 255, 255)，盒阴影 none；没有文字层；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(144, 147, 153) 变为 rgb(177, 179, 184)；按住时为 rgb(115, 118, 122)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 32×32px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains only an I wrapper with the official Message SVG and no visible text. The SVG path is kept from the official @element-plus/icons-vue Message example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 32×32px, with a 1px solid border and 50px corners. Top/right/bottom/left padding is 8/8/8/8px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(144, 147, 153), border rgb(144, 147, 153), icon rgb(255, 255, 255), box shadow none. There is no text layer. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(144, 147, 153) to rgb(177, 179, 184); held press uses rgb(115, 118, 122). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 32×32px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-button-basic-usage-28.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I > SVG",
+        "Message SVG",
+        "圆形",
+        "50px圆角",
+        "rgb(144, 147, 153)",
+        "rgb(255, 255, 255)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "无可见文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "basic-usage",
+        "Message Element Plus图标按钮",
+        "el-button el-button--info is-circle Message",
+        "圆形 Message按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I > SVG",
+          "Message SVG"
+        ],
+        "shape": [
+          "圆形",
+          "50px圆角"
+        ],
+        "color": [
+          "rgb(144, 147, 153)",
+          "rgb(255, 255, 255)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 467.5,
+        "yPx": 433.90625,
+        "widthPx": 32,
+        "heightPx": 32,
+        "sizingRule": "Computed 32px×32px; box-sizing border-box.",
+        "parent": "DIV.button-row, bbox {\"x\":323.5,\"y\":433.90625,\"width\":899,\"height\":32}.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(144, 147, 153)",
+          "hoverBackground": "rgb(177, 179, 184)",
+          "activeBackground": "rgb(115, 118, 122)",
+          "color": null,
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(144, 147, 153)",
+          "iconColor": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Message reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/basic.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(255, 255, 255)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(144, 147, 153)",
+          "text": "No text child.",
+          "border": "1px solid rgb(144, 147, 153)",
+          "icon": "rgb(255, 255, 255)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact BUTTON has no visible text child and no actual text node."
+        },
+        "spacing": {
+          "paddingTopPx": 8,
+          "paddingRightPx": 8,
+          "paddingBottomPx": 8,
+          "paddingLeftPx": 8,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I.",
+          "overflow": "Root visible; scroll 30×30 against client 30×30.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[0] .example-showcase .el-button[27]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(144, 147, 153); border-top-color: rgb(144, 147, 153)",
+            "to": "rgb(177, 179, 184); rgb(177, 179, 184)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(144, 147, 153).",
+            "interruption": "Measured interruption fill rgb(145, 148, 154); resumed rgb(177, 179, 184); returned rgb(144, 147, 153)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[0] .example-showcase .el-button[27]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(177, 179, 184); border-top-color: rgb(177, 179, 184)",
+            "to": "rgb(115, 118, 122); rgb(115, 118, 122)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(144, 147, 153).",
+            "interruption": "Measured interruption fill rgb(145, 148, 154); resumed rgb(177, 179, 184); returned rgb(144, 147, 153)."
+          }
+        ]
+      },
+      "distinctionZh": "fill rgb(144, 147, 153) versus rgb(64, 158, 255)；border rgb(144, 147, 153) versus rgb(64, 158, 255)；SVG source shape Message versus Edit differs in official markup",
+      "reconstructionPrompt": "重建 Element Plus 官方 Message SVG 按钮。圆形原生 BUTTON 外框 32×32px；四边 padding 8/8/8/8px、边框 1px solid rgb(144, 147, 153)、四角半径 50px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(255, 255, 255)，无可见文字。默认填充 rgb(144, 147, 153)，hover rgb(177, 179, 184)，按住 rgb(115, 118, 122)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(200, 201, 204)。在1280×900和390×844 CSS视口验收尺寸分别为 32×32px、32×32px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 0, rootIndex 27; two CSS viewports; Edge touch/reduced-motion emulation. Held press corrected by a later independent live audit bound to the original source.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个圆形的Message图标按钮",
+        "需要rgb(144, 147, 153)底色和rgb(255, 255, 255)图标的按钮",
+        "要hover变rgb(177, 179, 184)、按住变rgb(115, 118, 122)的Message按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-basic-usage-29",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-81c17cd4555eecf9dcf0",
+      "instanceId": "element-plus-button-basic-usage-29",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus Star 圆形纯图标按钮",
+      "nameEn": "Element Plus Star circular icon-only button",
+      "descriptionZh": "结构：BUTTON 内只有 I 图标容器及来自官方示例的 Star SVG，没有可见文字；图标来自示例中 @element-plus/icons-vue 的 Star 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 32×32px，四边 1px 实线边框，四角 50px；内边距依次为 8/8/8/8px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(230, 162, 60)、边框 rgb(230, 162, 60)、图标 rgb(255, 255, 255)，盒阴影 none；没有文字层；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(230, 162, 60) 变为 rgb(238, 190, 119)；按住时为 rgb(184, 130, 48)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 32×32px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains only an I wrapper with the official Star SVG and no visible text. The SVG path is kept from the official @element-plus/icons-vue Star example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 32×32px, with a 1px solid border and 50px corners. Top/right/bottom/left padding is 8/8/8/8px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(230, 162, 60), border rgb(230, 162, 60), icon rgb(255, 255, 255), box shadow none. There is no text layer. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(230, 162, 60) to rgb(238, 190, 119); held press uses rgb(184, 130, 48). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 32×32px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-button-basic-usage-29.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I > SVG",
+        "Star SVG",
+        "圆形",
+        "50px圆角",
+        "rgb(230, 162, 60)",
+        "rgb(255, 255, 255)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "无可见文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "basic-usage",
+        "Star Element Plus图标按钮",
+        "el-button el-button--warning is-circle Star",
+        "圆形 Star按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I > SVG",
+          "Star SVG"
+        ],
+        "shape": [
+          "圆形",
+          "50px圆角"
+        ],
+        "color": [
+          "rgb(230, 162, 60)",
+          "rgb(255, 255, 255)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 515.5,
+        "yPx": 433.90625,
+        "widthPx": 32,
+        "heightPx": 32,
+        "sizingRule": "Computed 32px×32px; box-sizing border-box.",
+        "parent": "DIV.button-row, bbox {\"x\":323.5,\"y\":433.90625,\"width\":899,\"height\":32}.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(230, 162, 60)",
+          "hoverBackground": "rgb(238, 190, 119)",
+          "activeBackground": "rgb(184, 130, 48)",
+          "color": null,
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(230, 162, 60)",
+          "iconColor": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Star reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/basic.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(255, 255, 255)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(230, 162, 60)",
+          "text": "No text child.",
+          "border": "1px solid rgb(230, 162, 60)",
+          "icon": "rgb(255, 255, 255)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact BUTTON has no visible text child and no actual text node."
+        },
+        "spacing": {
+          "paddingTopPx": 8,
+          "paddingRightPx": 8,
+          "paddingBottomPx": 8,
+          "paddingLeftPx": 8,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I.",
+          "overflow": "Root visible; scroll 30×30 against client 30×30.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[0] .example-showcase .el-button[28]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(230, 162, 60); border-top-color: rgb(230, 162, 60)",
+            "to": "rgb(238, 190, 119); rgb(238, 190, 119)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(230, 162, 60).",
+            "interruption": "Measured interruption fill rgb(231, 164, 64); resumed rgb(238, 190, 119); returned rgb(230, 162, 60)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[0] .example-showcase .el-button[28]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(238, 190, 119); border-top-color: rgb(238, 190, 119)",
+            "to": "rgb(184, 130, 48); rgb(184, 130, 48)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(230, 162, 60).",
+            "interruption": "Measured interruption fill rgb(231, 164, 64); resumed rgb(238, 190, 119); returned rgb(230, 162, 60)."
+          }
+        ]
+      },
+      "distinctionZh": "fill rgb(230, 162, 60) versus rgb(64, 158, 255)；border rgb(230, 162, 60) versus rgb(64, 158, 255)；SVG source shape Star versus Edit differs in official markup",
+      "reconstructionPrompt": "重建 Element Plus 官方 Star SVG 按钮。圆形原生 BUTTON 外框 32×32px；四边 padding 8/8/8/8px、边框 1px solid rgb(230, 162, 60)、四角半径 50px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(255, 255, 255)，无可见文字。默认填充 rgb(230, 162, 60)，hover rgb(238, 190, 119)，按住 rgb(184, 130, 48)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(243, 209, 158)。在1280×900和390×844 CSS视口验收尺寸分别为 32×32px、32×32px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 0, rootIndex 28; two CSS viewports; Edge touch/reduced-motion emulation. Held press corrected by a later independent live audit bound to the original source.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个圆形的Star图标按钮",
+        "需要rgb(230, 162, 60)底色和rgb(255, 255, 255)图标的按钮",
+        "要hover变rgb(238, 190, 119)、按住变rgb(184, 130, 48)的Star按钮"
+      ]
+    },
+    {
       "id": "element-plus-button-basic-usage-3",
       "entryId": "element-plus",
       "sourceEntity": "Element Plus",
@@ -19664,6 +20536,224 @@
         "找一个Success文字、32px高的按钮",
         "要默认rgb(103, 194, 58)，hover变rgb(149, 212, 117)的按钮",
         "需要solid rgb(103, 194, 58)且按住变rgb(82, 155, 46)的Success按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-basic-usage-30",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-ff4bc0f533c986bdae63",
+      "instanceId": "element-plus-button-basic-usage-30",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus Delete 圆形纯图标按钮",
+      "nameEn": "Element Plus Delete circular icon-only button",
+      "descriptionZh": "结构：BUTTON 内只有 I 图标容器及来自官方示例的 Delete SVG，没有可见文字；图标来自示例中 @element-plus/icons-vue 的 Delete 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 32×32px，四边 1px 实线边框，四角 50px；内边距依次为 8/8/8/8px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(245, 108, 108)、边框 rgb(245, 108, 108)、图标 rgb(255, 255, 255)，盒阴影 none；没有文字层；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(245, 108, 108) 变为 rgb(248, 152, 152)；按住时为 rgb(196, 86, 86)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 32×32px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains only an I wrapper with the official Delete SVG and no visible text. The SVG path is kept from the official @element-plus/icons-vue Delete example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 32×32px, with a 1px solid border and 50px corners. Top/right/bottom/left padding is 8/8/8/8px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(245, 108, 108), border rgb(245, 108, 108), icon rgb(255, 255, 255), box shadow none. There is no text layer. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(245, 108, 108) to rgb(248, 152, 152); held press uses rgb(196, 86, 86). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 32×32px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-button-basic-usage-30.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I > SVG",
+        "Delete SVG",
+        "圆形",
+        "50px圆角",
+        "rgb(245, 108, 108)",
+        "rgb(255, 255, 255)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "无可见文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "basic-usage",
+        "Delete Element Plus图标按钮",
+        "el-button el-button--danger is-circle Delete",
+        "圆形 Delete按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I > SVG",
+          "Delete SVG"
+        ],
+        "shape": [
+          "圆形",
+          "50px圆角"
+        ],
+        "color": [
+          "rgb(245, 108, 108)",
+          "rgb(255, 255, 255)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 563.5,
+        "yPx": 433.90625,
+        "widthPx": 32,
+        "heightPx": 32,
+        "sizingRule": "Computed 32px×32px; box-sizing border-box.",
+        "parent": "DIV.button-row, bbox {\"x\":323.5,\"y\":433.90625,\"width\":899,\"height\":32}.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(245, 108, 108)",
+          "hoverBackground": "rgb(248, 152, 152)",
+          "activeBackground": "rgb(196, 86, 86)",
+          "color": null,
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(245, 108, 108)",
+          "iconColor": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Delete reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/basic.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(255, 255, 255)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(245, 108, 108)",
+          "text": "No text child.",
+          "border": "1px solid rgb(245, 108, 108)",
+          "icon": "rgb(255, 255, 255)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact BUTTON has no visible text child and no actual text node."
+        },
+        "spacing": {
+          "paddingTopPx": 8,
+          "paddingRightPx": 8,
+          "paddingBottomPx": 8,
+          "paddingLeftPx": 8,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I.",
+          "overflow": "Root visible; scroll 30×30 against client 30×30.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[0] .example-showcase .el-button[29]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(245, 108, 108); border-top-color: rgb(245, 108, 108)",
+            "to": "rgb(248, 152, 152); rgb(248, 152, 152)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(245, 108, 108).",
+            "interruption": "Measured interruption fill rgb(245, 111, 111); resumed rgb(248, 152, 152); returned rgb(245, 108, 108)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[0] .example-showcase .el-button[29]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(248, 152, 152); border-top-color: rgb(248, 152, 152)",
+            "to": "rgb(196, 86, 86); rgb(196, 86, 86)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(245, 108, 108).",
+            "interruption": "Measured interruption fill rgb(245, 111, 111); resumed rgb(248, 152, 152); returned rgb(245, 108, 108)."
+          }
+        ]
+      },
+      "distinctionZh": "fill rgb(245, 108, 108) versus rgb(64, 158, 255)；border rgb(245, 108, 108) versus rgb(64, 158, 255)；SVG source shape Delete versus Edit differs in official markup",
+      "reconstructionPrompt": "重建 Element Plus 官方 Delete SVG 按钮。圆形原生 BUTTON 外框 32×32px；四边 padding 8/8/8/8px、边框 1px solid rgb(245, 108, 108)、四角半径 50px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(255, 255, 255)，无可见文字。默认填充 rgb(245, 108, 108)，hover rgb(248, 152, 152)，按住 rgb(196, 86, 86)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(250, 182, 182)。在1280×900和390×844 CSS视口验收尺寸分别为 32×32px、32×32px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 0, rootIndex 29; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个圆形的Delete图标按钮",
+        "需要rgb(245, 108, 108)底色和rgb(255, 255, 255)图标的按钮",
+        "要hover变rgb(248, 152, 152)、按住变rgb(196, 86, 86)的Delete按钮"
       ]
     },
     {
@@ -22400,6 +23490,660 @@
       ]
     },
     {
+      "id": "element-plus-button-icon-button-1",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-d8021fc9e9fc9786242b",
+      "instanceId": "element-plus-button-icon-button-1",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus Edit 矩形纯图标按钮",
+      "nameEn": "Element Plus Edit rectangular icon-only button",
+      "descriptionZh": "结构：BUTTON 内只有 I 图标容器及来自官方示例的 Edit SVG，没有可见文字；图标来自示例中 @element-plus/icons-vue 的 Edit 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 46×32px，四边 1px 实线边框，四角 4px；内边距依次为 8/15/8/15px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(64, 158, 255)、边框 rgb(64, 158, 255)、图标 rgb(255, 255, 255)，盒阴影 none；没有文字层；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(64, 158, 255) 变为 rgb(121, 187, 255)；按住时为 rgb(51, 126, 204)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 46×32px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains only an I wrapper with the official Edit SVG and no visible text. The SVG path is kept from the official @element-plus/icons-vue Edit example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 46×32px, with a 1px solid border and 4px corners. Top/right/bottom/left padding is 8/15/8/15px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(64, 158, 255), border rgb(64, 158, 255), icon rgb(255, 255, 255), box shadow none. There is no text layer. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(64, 158, 255) to rgb(121, 187, 255); held press uses rgb(51, 126, 204). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 46×32px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#icon-button",
+      "previewUrl": "/data/discovery/previews/element-plus-button-icon-button-1.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I > SVG",
+        "Edit SVG",
+        "矩形",
+        "4px圆角",
+        "rgb(64, 158, 255)",
+        "rgb(255, 255, 255)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "无可见文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "icon-button",
+        "Edit Element Plus图标按钮",
+        "el-button el-button--primary Edit",
+        "矩形 Edit按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I > SVG",
+          "Edit SVG"
+        ],
+        "shape": [
+          "矩形",
+          "4px圆角"
+        ],
+        "color": [
+          "rgb(64, 158, 255)",
+          "rgb(255, 255, 255)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "icon-button"
+        ]
+      },
+      "visual": {
+        "xPx": 323.5,
+        "yPx": 433.765625,
+        "widthPx": 46,
+        "heightPx": 32,
+        "sizingRule": "Computed 46px×32px; box-sizing border-box.",
+        "parent": "DIV., bbox {\"x\":323.5,\"y\":433.765625,\"width\":899,\"height\":32}.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(64, 158, 255)",
+          "hoverBackground": "rgb(121, 187, 255)",
+          "activeBackground": "rgb(51, 126, 204)",
+          "color": null,
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(64, 158, 255)",
+          "iconColor": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Edit reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/icon.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(255, 255, 255)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(64, 158, 255)",
+          "text": "No text child.",
+          "border": "1px solid rgb(64, 158, 255)",
+          "icon": "rgb(255, 255, 255)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact BUTTON has no visible text child and no actual text node."
+        },
+        "spacing": {
+          "paddingTopPx": 8,
+          "paddingRightPx": 15,
+          "paddingBottomPx": 8,
+          "paddingLeftPx": 15,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I.",
+          "overflow": "Root visible; scroll 44×30 against client 44×30.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[4] .example-showcase .el-button[0]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(64, 158, 255); border-top-color: rgb(64, 158, 255)",
+            "to": "rgb(121, 187, 255); rgb(121, 187, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(64, 158, 255).",
+            "interruption": "Measured interruption fill rgb(64, 158, 255); resumed rgb(121, 187, 255); returned rgb(64, 158, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[4] .example-showcase .el-button[0]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(121, 187, 255); border-top-color: rgb(121, 187, 255)",
+            "to": "rgb(51, 126, 204); rgb(51, 126, 204)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(64, 158, 255).",
+            "interruption": "Measured interruption fill rgb(64, 158, 255); resumed rgb(121, 187, 255); returned rgb(64, 158, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 46px versus 32px；corner radius 4px versus 50px",
+      "reconstructionPrompt": "重建 Element Plus 官方 Edit SVG 按钮。矩形原生 BUTTON 外框 46×32px；四边 padding 8/15/8/15px、边框 1px solid rgb(64, 158, 255)、四角半径 4px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(255, 255, 255)，无可见文字。默认填充 rgb(64, 158, 255)，hover rgb(121, 187, 255)，按住 rgb(51, 126, 204)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 46×32px、46×32px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 4, rootIndex 0; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个矩形的Edit图标按钮",
+        "需要rgb(64, 158, 255)底色和rgb(255, 255, 255)图标的按钮",
+        "要hover变rgb(121, 187, 255)、按住变rgb(51, 126, 204)的Edit按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-icon-button-2",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-be3479b710462e2a35bb",
+      "instanceId": "element-plus-button-icon-button-2",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus Share 矩形纯图标按钮",
+      "nameEn": "Element Plus Share rectangular icon-only button",
+      "descriptionZh": "结构：BUTTON 内只有 I 图标容器及来自官方示例的 Share SVG，没有可见文字；图标来自示例中 @element-plus/icons-vue 的 Share 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 46×32px，四边 1px 实线边框，四角 4px；内边距依次为 8/15/8/15px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(64, 158, 255)、边框 rgb(64, 158, 255)、图标 rgb(255, 255, 255)，盒阴影 none；没有文字层；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(64, 158, 255) 变为 rgb(121, 187, 255)；按住时为 rgb(51, 126, 204)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 46×32px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains only an I wrapper with the official Share SVG and no visible text. The SVG path is kept from the official @element-plus/icons-vue Share example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 46×32px, with a 1px solid border and 4px corners. Top/right/bottom/left padding is 8/15/8/15px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(64, 158, 255), border rgb(64, 158, 255), icon rgb(255, 255, 255), box shadow none. There is no text layer. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(64, 158, 255) to rgb(121, 187, 255); held press uses rgb(51, 126, 204). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 46×32px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#icon-button",
+      "previewUrl": "/data/discovery/previews/element-plus-button-icon-button-2.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I > SVG",
+        "Share SVG",
+        "矩形",
+        "4px圆角",
+        "rgb(64, 158, 255)",
+        "rgb(255, 255, 255)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "无可见文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "icon-button",
+        "Share Element Plus图标按钮",
+        "el-button el-button--primary Share",
+        "矩形 Share按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I > SVG",
+          "Share SVG"
+        ],
+        "shape": [
+          "矩形",
+          "4px圆角"
+        ],
+        "color": [
+          "rgb(64, 158, 255)",
+          "rgb(255, 255, 255)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "icon-button"
+        ]
+      },
+      "visual": {
+        "xPx": 381.5,
+        "yPx": 433.765625,
+        "widthPx": 46,
+        "heightPx": 32,
+        "sizingRule": "Computed 46px×32px; box-sizing border-box.",
+        "parent": "DIV., bbox {\"x\":323.5,\"y\":433.765625,\"width\":899,\"height\":32}.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(64, 158, 255)",
+          "hoverBackground": "rgb(121, 187, 255)",
+          "activeBackground": "rgb(51, 126, 204)",
+          "color": null,
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(64, 158, 255)",
+          "iconColor": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Share reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/icon.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(255, 255, 255)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(64, 158, 255)",
+          "text": "No text child.",
+          "border": "1px solid rgb(64, 158, 255)",
+          "icon": "rgb(255, 255, 255)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact BUTTON has no visible text child and no actual text node."
+        },
+        "spacing": {
+          "paddingTopPx": 8,
+          "paddingRightPx": 15,
+          "paddingBottomPx": 8,
+          "paddingLeftPx": 15,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 12,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I.",
+          "overflow": "Root visible; scroll 44×30 against client 44×30.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[4] .example-showcase .el-button[1]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(64, 158, 255); border-top-color: rgb(64, 158, 255)",
+            "to": "rgb(121, 187, 255); rgb(121, 187, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(64, 158, 255).",
+            "interruption": "Measured interruption fill rgb(64, 158, 255); resumed rgb(121, 187, 255); returned rgb(64, 158, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[4] .example-showcase .el-button[1]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(121, 187, 255); border-top-color: rgb(121, 187, 255)",
+            "to": "rgb(51, 126, 204); rgb(51, 126, 204)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(64, 158, 255).",
+            "interruption": "Measured interruption fill rgb(64, 158, 255); resumed rgb(121, 187, 255); returned rgb(64, 158, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 46px versus 32px；corner radius 4px versus 50px；SVG source shape Share versus Edit differs in official markup",
+      "reconstructionPrompt": "重建 Element Plus 官方 Share SVG 按钮。矩形原生 BUTTON 外框 46×32px；四边 padding 8/15/8/15px、边框 1px solid rgb(64, 158, 255)、四角半径 4px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(255, 255, 255)，无可见文字。默认填充 rgb(64, 158, 255)，hover rgb(121, 187, 255)，按住 rgb(51, 126, 204)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 46×32px、46×32px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 4, rootIndex 1; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个矩形的Share图标按钮",
+        "需要rgb(64, 158, 255)底色和rgb(255, 255, 255)图标的按钮",
+        "要hover变rgb(121, 187, 255)、按住变rgb(51, 126, 204)的Share按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-icon-button-3",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-bc8a65cae0b79d35a7f1",
+      "instanceId": "element-plus-button-icon-button-3",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus Delete 矩形纯图标按钮",
+      "nameEn": "Element Plus Delete rectangular icon-only button",
+      "descriptionZh": "结构：BUTTON 内只有 I 图标容器及来自官方示例的 Delete SVG，没有可见文字；图标来自示例中 @element-plus/icons-vue 的 Delete 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 46×32px，四边 1px 实线边框，四角 4px；内边距依次为 8/15/8/15px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(64, 158, 255)、边框 rgb(64, 158, 255)、图标 rgb(255, 255, 255)，盒阴影 none；没有文字层；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(64, 158, 255) 变为 rgb(121, 187, 255)；按住时为 rgb(51, 126, 204)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 46×32px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains only an I wrapper with the official Delete SVG and no visible text. The SVG path is kept from the official @element-plus/icons-vue Delete example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 46×32px, with a 1px solid border and 4px corners. Top/right/bottom/left padding is 8/15/8/15px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(64, 158, 255), border rgb(64, 158, 255), icon rgb(255, 255, 255), box shadow none. There is no text layer. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(64, 158, 255) to rgb(121, 187, 255); held press uses rgb(51, 126, 204). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 46×32px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#icon-button",
+      "previewUrl": "/data/discovery/previews/element-plus-button-icon-button-3.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I > SVG",
+        "Delete SVG",
+        "矩形",
+        "4px圆角",
+        "rgb(64, 158, 255)",
+        "rgb(255, 255, 255)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "无可见文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "icon-button",
+        "Delete Element Plus图标按钮",
+        "el-button el-button--primary Delete",
+        "矩形 Delete按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I > SVG",
+          "Delete SVG"
+        ],
+        "shape": [
+          "矩形",
+          "4px圆角"
+        ],
+        "color": [
+          "rgb(64, 158, 255)",
+          "rgb(255, 255, 255)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "icon-button"
+        ]
+      },
+      "visual": {
+        "xPx": 439.5,
+        "yPx": 433.765625,
+        "widthPx": 46,
+        "heightPx": 32,
+        "sizingRule": "Computed 46px×32px; box-sizing border-box.",
+        "parent": "DIV., bbox {\"x\":323.5,\"y\":433.765625,\"width\":899,\"height\":32}.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(64, 158, 255)",
+          "hoverBackground": "rgb(121, 187, 255)",
+          "activeBackground": "rgb(51, 126, 204)",
+          "color": null,
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(64, 158, 255)",
+          "iconColor": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Delete reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/icon.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(255, 255, 255)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(64, 158, 255)",
+          "text": "No text child.",
+          "border": "1px solid rgb(64, 158, 255)",
+          "icon": "rgb(255, 255, 255)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact BUTTON has no visible text child and no actual text node."
+        },
+        "spacing": {
+          "paddingTopPx": 8,
+          "paddingRightPx": 15,
+          "paddingBottomPx": 8,
+          "paddingLeftPx": 15,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 12,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I.",
+          "overflow": "Root visible; scroll 44×30 against client 44×30.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[4] .example-showcase .el-button[2]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(64, 158, 255); border-top-color: rgb(64, 158, 255)",
+            "to": "rgb(121, 187, 255); rgb(121, 187, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(64, 158, 255).",
+            "interruption": "Measured interruption fill rgb(64, 158, 255); resumed rgb(121, 187, 255); returned rgb(64, 158, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[4] .example-showcase .el-button[2]",
+            "property": "background-color, border-top-color",
+            "from": "background-color: rgb(121, 187, 255); border-top-color: rgb(121, 187, 255)",
+            "to": "rgb(51, 126, 204); rgb(51, 126, 204)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(64, 158, 255).",
+            "interruption": "Measured interruption fill rgb(64, 158, 255); resumed rgb(121, 187, 255); returned rgb(64, 158, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 46px versus 32px；corner radius 4px versus 50px；SVG source shape Delete versus Edit differs in official markup",
+      "reconstructionPrompt": "重建 Element Plus 官方 Delete SVG 按钮。矩形原生 BUTTON 外框 46×32px；四边 padding 8/15/8/15px、边框 1px solid rgb(64, 158, 255)、四角半径 4px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(255, 255, 255)，无可见文字。默认填充 rgb(64, 158, 255)，hover rgb(121, 187, 255)，按住 rgb(51, 126, 204)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 46×32px、46×32px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 4, rootIndex 2; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个矩形的Delete图标按钮",
+        "需要rgb(64, 158, 255)底色和rgb(255, 255, 255)图标的按钮",
+        "要hover变rgb(121, 187, 255)、按住变rgb(51, 126, 204)的Delete按钮"
+      ]
+    },
+    {
       "id": "element-plus-button-icon-button-4",
       "entryId": "element-plus",
       "sourceEntity": "Element Plus",
@@ -24379,6 +26123,1139 @@
       ]
     },
     {
+      "id": "element-plus-button-sizes-10",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-043d64dc5effc4d4d804",
+      "instanceId": "element-plus-button-sizes-10",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus 大号 Search 胶囊图标文字按钮",
+      "nameEn": "Element Plus large Search pill icon-and-text button",
+      "descriptionZh": "结构：BUTTON 内按顺序放置 I 图标和 SPAN“Search”文字；图标来自示例中 @element-plus/icons-vue 的 Search 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 109.016×40px，四边 1px 实线边框，四角 20px；内边距依次为 12/19/12/19px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(255, 255, 255)、边框 rgb(220, 223, 230)、图标 rgb(96, 98, 102)，盒阴影 none；文字为 14px、500 字重、14px 行高；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(255, 255, 255) 变为 rgb(236, 245, 255)；按住时为 rgb(236, 245, 255)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 109.016×40px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains an I icon and then a SPAN reading “Search”. The SVG path is kept from the official @element-plus/icons-vue Search example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 109.016×40px, with a 1px solid border and 20px corners. Top/right/bottom/left padding is 12/19/12/19px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(255, 255, 255), border rgb(220, 223, 230), icon rgb(96, 98, 102), box shadow none. The text is 14px, weight 500, with 14px line-height. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(255, 255, 255) to rgb(236, 245, 255); held press uses rgb(236, 245, 255). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 109.016×40px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#sizes",
+      "previewUrl": "/data/discovery/previews/element-plus-button-sizes-10.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I + SPAN",
+        "Search SVG",
+        "胶囊",
+        "20px圆角",
+        "大号",
+        "rgb(255, 255, 255)",
+        "rgb(96, 98, 102)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "14px文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "sizes",
+        "大号 Search Element Plus图标按钮",
+        "el-button el-button--large is-round Search",
+        "大号 胶囊 Search按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I + SPAN",
+          "Search SVG"
+        ],
+        "shape": [
+          "胶囊",
+          "20px圆角",
+          "大号"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(96, 98, 102)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "14px文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "sizes"
+        ]
+      },
+      "visual": {
+        "xPx": 572.984375,
+        "yPx": 430.46875,
+        "widthPx": 109.015625,
+        "heightPx": 40,
+        "sizingRule": "Computed 109.016px×40px; box-sizing border-box.",
+        "parent": "DIV.flex flex-wrap items-center mb-4, bbox {\"x\":323.5,\"y\":430.46875,\"width\":899,\"height\":40}.",
+        "topLeftPx": 20,
+        "topRightPx": 20,
+        "bottomRightPx": 20,
+        "bottomLeftPx": 20,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(255, 255, 255)",
+          "hoverBackground": "rgb(236, 245, 255)",
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(220, 223, 230)",
+          "iconColor": "rgb(96, 98, 102)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Search reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/size.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(96, 98, 102)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 8,
+              "order": "before visible text",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(255, 255, 255)",
+          "text": "rgb(96, 98, 102)",
+          "border": "1px solid rgb(220, 223, 230)",
+          "icon": "rgb(96, 98, 102)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Search",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Computed SPAN font; loaded faces [{\"family\":\"Inter\",\"weight\":\"400\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"500\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"600\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"700\",\"status\":\"loaded\"}].",
+          "alignment": "center",
+          "wrapping": "Desktop/narrow SPAN 47.016/47.016px; white-space nowrap.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 14,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 12,
+          "paddingRightPx": 19,
+          "paddingBottomPx": 12,
+          "paddingLeftPx": 19,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 12,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I, SPAN.",
+          "overflow": "Root visible; scroll 107×38 against client 107×38.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view",
+            "SPAN 47.016×14px; <span class=\"\"><!--[-->Search<!--]--></span>"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[7] .example-showcase .el-button[9]",
+            "property": "background-color, color, border-top-color, outline-color",
+            "from": "background-color: rgb(255, 255, 255); color: rgb(96, 98, 102); border-top-color: rgb(220, 223, 230); outline-color: rgb(96, 98, 102)",
+            "to": "rgb(236, 245, 255); rgb(64, 158, 255); rgb(198, 226, 255); rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[7] .example-showcase .el-button[9]",
+            "property": "border-top-color",
+            "from": "border-top-color: rgb(198, 226, 255)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 109.016px versus 99.016px；height 40px versus 32px",
+      "reconstructionPrompt": "重建 Element Plus 官方 Search SVG 按钮。胶囊原生 BUTTON 外框 109.016×40px；四边 padding 12/19/12/19px、边框 1px solid rgb(220, 223, 230)、四角半径 20px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(96, 98, 102)，其后 SPAN 文字“Search” 14px。默认填充 rgb(255, 255, 255)，hover rgb(236, 245, 255)，按住 rgb(236, 245, 255)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 109.016×40px、109.016×40px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 7, rootIndex 9; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个大号 胶囊的Search图标按钮",
+        "需要rgb(255, 255, 255)底色和rgb(96, 98, 102)图标的按钮",
+        "要hover变rgb(236, 245, 255)、按住变rgb(236, 245, 255)的Search按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-sizes-11",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-3f1a7626ee5f78e7e4b0",
+      "instanceId": "element-plus-button-sizes-11",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus 标准 Search 胶囊图标文字按钮",
+      "nameEn": "Element Plus default Search pill icon-and-text button",
+      "descriptionZh": "结构：BUTTON 内按顺序放置 I 图标和 SPAN“Search”文字；图标来自示例中 @element-plus/icons-vue 的 Search 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 99.016×32px，四边 1px 实线边框，四角 20px；内边距依次为 8/15/8/15px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(255, 255, 255)、边框 rgb(220, 223, 230)、图标 rgb(96, 98, 102)，盒阴影 none；文字为 14px、500 字重、14px 行高；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(255, 255, 255) 变为 rgb(236, 245, 255)；按住时为 rgb(236, 245, 255)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 99.016×32px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains an I icon and then a SPAN reading “Search”. The SVG path is kept from the official @element-plus/icons-vue Search example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 99.016×32px, with a 1px solid border and 20px corners. Top/right/bottom/left padding is 8/15/8/15px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(255, 255, 255), border rgb(220, 223, 230), icon rgb(96, 98, 102), box shadow none. The text is 14px, weight 500, with 14px line-height. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(255, 255, 255) to rgb(236, 245, 255); held press uses rgb(236, 245, 255). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 99.016×32px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#sizes",
+      "previewUrl": "/data/discovery/previews/element-plus-button-sizes-11.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I + SPAN",
+        "Search SVG",
+        "胶囊",
+        "20px圆角",
+        "标准",
+        "rgb(255, 255, 255)",
+        "rgb(96, 98, 102)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "14px文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "sizes",
+        "标准 Search Element Plus图标按钮",
+        "el-button is-round Search",
+        "标准 胶囊 Search按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I + SPAN",
+          "Search SVG"
+        ],
+        "shape": [
+          "胶囊",
+          "20px圆角",
+          "标准"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(96, 98, 102)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "14px文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "sizes"
+        ]
+      },
+      "visual": {
+        "xPx": 694,
+        "yPx": 434.46875,
+        "widthPx": 99.015625,
+        "heightPx": 32,
+        "sizingRule": "Computed 99.0156px×32px; box-sizing border-box.",
+        "parent": "DIV.flex flex-wrap items-center mb-4, bbox {\"x\":323.5,\"y\":430.46875,\"width\":899,\"height\":40}.",
+        "topLeftPx": 20,
+        "topRightPx": 20,
+        "bottomRightPx": 20,
+        "bottomLeftPx": 20,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(255, 255, 255)",
+          "hoverBackground": "rgb(236, 245, 255)",
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(220, 223, 230)",
+          "iconColor": "rgb(96, 98, 102)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Search reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/size.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(96, 98, 102)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 6,
+              "order": "before visible text",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(255, 255, 255)",
+          "text": "rgb(96, 98, 102)",
+          "border": "1px solid rgb(220, 223, 230)",
+          "icon": "rgb(96, 98, 102)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Search",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Computed SPAN font; loaded faces [{\"family\":\"Inter\",\"weight\":\"400\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"500\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"600\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"700\",\"status\":\"loaded\"}].",
+          "alignment": "center",
+          "wrapping": "Desktop/narrow SPAN 47.016/47.016px; white-space nowrap.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 14,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 8,
+          "paddingRightPx": 15,
+          "paddingBottomPx": 8,
+          "paddingLeftPx": 15,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 12,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I, SPAN.",
+          "overflow": "Root visible; scroll 97×30 against client 97×30.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view",
+            "SPAN 47.016×14px; <span class=\"\"><!--[-->Search<!--]--></span>"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[7] .example-showcase .el-button[10]",
+            "property": "background-color, color, border-top-color, outline-color",
+            "from": "background-color: rgb(255, 255, 255); color: rgb(96, 98, 102); border-top-color: rgb(220, 223, 230); outline-color: rgb(96, 98, 102)",
+            "to": "rgb(236, 245, 255); rgb(64, 158, 255); rgb(198, 226, 255); rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[7] .example-showcase .el-button[10]",
+            "property": "border-top-color",
+            "from": "border-top-color: rgb(198, 226, 255)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 99.016px versus 109.016px；height 32px versus 40px",
+      "reconstructionPrompt": "重建 Element Plus 官方 Search SVG 按钮。胶囊原生 BUTTON 外框 99.016×32px；四边 padding 8/15/8/15px、边框 1px solid rgb(220, 223, 230)、四角半径 20px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(96, 98, 102)，其后 SPAN 文字“Search” 14px。默认填充 rgb(255, 255, 255)，hover rgb(236, 245, 255)，按住 rgb(236, 245, 255)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 99.016×32px、99.016×32px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 7, rootIndex 10; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个标准 胶囊的Search图标按钮",
+        "需要rgb(255, 255, 255)底色和rgb(96, 98, 102)图标的按钮",
+        "要hover变rgb(236, 245, 255)、按住变rgb(236, 245, 255)的Search按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-sizes-12",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-e2d19006417cd9b9d722",
+      "instanceId": "element-plus-button-sizes-12",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus 小号 Search 胶囊图标文字按钮",
+      "nameEn": "Element Plus small Search pill icon-and-text button",
+      "descriptionZh": "结构：BUTTON 内按顺序放置 I 图标和 SPAN“Search”文字；图标来自示例中 @element-plus/icons-vue 的 Search 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 80.297×24px，四边 1px 实线边框，四角 20px；内边距依次为 5/11/5/11px，图标框 12×12px。\n\n色彩与质感：默认填充 rgb(255, 255, 255)、边框 rgb(220, 223, 230)、图标 rgb(96, 98, 102)，盒阴影 none；文字为 12px、500 字重、12px 行高；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(255, 255, 255) 变为 rgb(236, 245, 255)；按住时为 rgb(236, 245, 255)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 80.297×24px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains an I icon and then a SPAN reading “Search”. The SVG path is kept from the official @element-plus/icons-vue Search example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 80.297×24px, with a 1px solid border and 20px corners. Top/right/bottom/left padding is 5/11/5/11px; the icon wrapper is 12×12px.\n\nColor and material: Default fill rgb(255, 255, 255), border rgb(220, 223, 230), icon rgb(96, 98, 102), box shadow none. The text is 12px, weight 500, with 12px line-height. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(255, 255, 255) to rgb(236, 245, 255); held press uses rgb(236, 245, 255). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 80.297×24px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#sizes",
+      "previewUrl": "/data/discovery/previews/element-plus-button-sizes-12.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I + SPAN",
+        "Search SVG",
+        "胶囊",
+        "20px圆角",
+        "小号",
+        "rgb(255, 255, 255)",
+        "rgb(96, 98, 102)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "12px文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "sizes",
+        "小号 Search Element Plus图标按钮",
+        "el-button el-button--small is-round Search",
+        "小号 胶囊 Search按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I + SPAN",
+          "Search SVG"
+        ],
+        "shape": [
+          "胶囊",
+          "20px圆角",
+          "小号"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(96, 98, 102)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "12px文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "sizes"
+        ]
+      },
+      "visual": {
+        "xPx": 805.015625,
+        "yPx": 438.46875,
+        "widthPx": 80.296875,
+        "heightPx": 24,
+        "sizingRule": "Computed 80.2969px×24px; box-sizing border-box.",
+        "parent": "DIV.flex flex-wrap items-center mb-4, bbox {\"x\":323.5,\"y\":430.46875,\"width\":899,\"height\":40}.",
+        "topLeftPx": 20,
+        "topRightPx": 20,
+        "bottomRightPx": 20,
+        "bottomLeftPx": 20,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(255, 255, 255)",
+          "hoverBackground": "rgb(236, 245, 255)",
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(220, 223, 230)",
+          "iconColor": "rgb(96, 98, 102)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Search reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/size.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(96, 98, 102)",
+              "widthPx": 12,
+              "heightPx": 12,
+              "strokePx": 0,
+              "gapPx": 4,
+              "order": "before visible text",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(255, 255, 255)",
+          "text": "rgb(96, 98, 102)",
+          "border": "1px solid rgb(220, 223, 230)",
+          "icon": "rgb(96, 98, 102)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Search",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Computed SPAN font; loaded faces [{\"family\":\"Inter\",\"weight\":\"400\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"500\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"600\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"700\",\"status\":\"loaded\"}].",
+          "alignment": "center",
+          "wrapping": "Desktop/narrow SPAN 40.297/40.297px; white-space nowrap.",
+          "decoration": "none",
+          "fontSizePx": 12,
+          "lineHeightPx": 12,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 5,
+          "paddingRightPx": 11,
+          "paddingBottomPx": 5,
+          "paddingLeftPx": 11,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 12,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I, SPAN.",
+          "overflow": "Root visible; scroll 78×22 against client 78×22.",
+          "zIndex": "auto",
+          "children": [
+            "I 12×12px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view",
+            "SPAN 40.297×12px; <span class=\"\"><!--[-->Search<!--]--></span>"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[7] .example-showcase .el-button[11]",
+            "property": "background-color, color, border-top-color, outline-color",
+            "from": "background-color: rgb(255, 255, 255); color: rgb(96, 98, 102); border-top-color: rgb(220, 223, 230); outline-color: rgb(96, 98, 102)",
+            "to": "rgb(236, 245, 255); rgb(64, 158, 255); rgb(198, 226, 255); rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[7] .example-showcase .el-button[11]",
+            "property": "border-top-color",
+            "from": "border-top-color: rgb(198, 226, 255)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 80.297px versus 109.016px；height 24px versus 40px",
+      "reconstructionPrompt": "重建 Element Plus 官方 Search SVG 按钮。胶囊原生 BUTTON 外框 80.297×24px；四边 padding 5/11/5/11px、边框 1px solid rgb(220, 223, 230)、四角半径 20px。保留官方示例内联 SVG path，I 图标 12×12px、颜色 rgb(96, 98, 102)，其后 SPAN 文字“Search” 12px。默认填充 rgb(255, 255, 255)，hover rgb(236, 245, 255)，按住 rgb(236, 245, 255)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 80.297×24px、80.297×24px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 7, rootIndex 11; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个小号 胶囊的Search图标按钮",
+        "需要rgb(255, 255, 255)底色和rgb(96, 98, 102)图标的按钮",
+        "要hover变rgb(236, 245, 255)、按住变rgb(236, 245, 255)的Search按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-sizes-13",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-77905f369d81dc37403e",
+      "instanceId": "element-plus-button-sizes-13",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus 大号 Search 圆形纯图标按钮",
+      "nameEn": "Element Plus large Search circular icon-only button",
+      "descriptionZh": "结构：BUTTON 内只有 I 图标容器及来自官方示例的 Search SVG，没有可见文字；图标来自示例中 @element-plus/icons-vue 的 Search 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 40×40px，四边 1px 实线边框，四角 50px；内边距依次为 12/12/12/12px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(255, 255, 255)、边框 rgb(220, 223, 230)、图标 rgb(96, 98, 102)，盒阴影 none；没有文字层；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(255, 255, 255) 变为 rgb(236, 245, 255)；按住时为 rgb(236, 245, 255)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 40×40px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains only an I wrapper with the official Search SVG and no visible text. The SVG path is kept from the official @element-plus/icons-vue Search example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 40×40px, with a 1px solid border and 50px corners. Top/right/bottom/left padding is 12/12/12/12px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(255, 255, 255), border rgb(220, 223, 230), icon rgb(96, 98, 102), box shadow none. There is no text layer. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(255, 255, 255) to rgb(236, 245, 255); held press uses rgb(236, 245, 255). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 40×40px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#sizes",
+      "previewUrl": "/data/discovery/previews/element-plus-button-sizes-13.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I > SVG",
+        "Search SVG",
+        "圆形",
+        "50px圆角",
+        "大号",
+        "rgb(255, 255, 255)",
+        "rgb(96, 98, 102)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "无可见文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "sizes",
+        "大号 Search Element Plus图标按钮",
+        "el-button el-button--large is-circle Search",
+        "大号 圆形 Search按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I > SVG",
+          "Search SVG"
+        ],
+        "shape": [
+          "圆形",
+          "50px圆角",
+          "大号"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(96, 98, 102)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "sizes"
+        ]
+      },
+      "visual": {
+        "xPx": 323.5,
+        "yPx": 430.46875,
+        "widthPx": 40,
+        "heightPx": 40,
+        "sizingRule": "Computed 40px×40px; box-sizing border-box.",
+        "parent": "DIV.flex flex-wrap items-center, bbox {\"x\":323.5,\"y\":430.46875,\"width\":899,\"height\":40}.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(255, 255, 255)",
+          "hoverBackground": "rgb(236, 245, 255)",
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(220, 223, 230)",
+          "iconColor": "rgb(96, 98, 102)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Search reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/size.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(96, 98, 102)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(255, 255, 255)",
+          "text": "No text child.",
+          "border": "1px solid rgb(220, 223, 230)",
+          "icon": "rgb(96, 98, 102)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact BUTTON has no visible text child and no actual text node."
+        },
+        "spacing": {
+          "paddingTopPx": 12,
+          "paddingRightPx": 12,
+          "paddingBottomPx": 12,
+          "paddingLeftPx": 12,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I.",
+          "overflow": "Root visible; scroll 38×38 against client 38×38.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[7] .example-showcase .el-button[12]",
+            "property": "background-color, color, border-top-color, outline-color",
+            "from": "background-color: rgb(255, 255, 255); color: rgb(96, 98, 102); border-top-color: rgb(220, 223, 230); outline-color: rgb(96, 98, 102)",
+            "to": "rgb(236, 245, 255); rgb(64, 158, 255); rgb(198, 226, 255); rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[7] .example-showcase .el-button[12]",
+            "property": "border-top-color",
+            "from": "border-top-color: rgb(198, 226, 255)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 40px versus 32px；height 40px versus 32px",
+      "reconstructionPrompt": "重建 Element Plus 官方 Search SVG 按钮。圆形原生 BUTTON 外框 40×40px；四边 padding 12/12/12/12px、边框 1px solid rgb(220, 223, 230)、四角半径 50px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(96, 98, 102)，无可见文字。默认填充 rgb(255, 255, 255)，hover rgb(236, 245, 255)，按住 rgb(236, 245, 255)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 40×40px、40×40px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 7, rootIndex 12; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个大号 圆形的Search图标按钮",
+        "需要rgb(255, 255, 255)底色和rgb(96, 98, 102)图标的按钮",
+        "要hover变rgb(236, 245, 255)、按住变rgb(236, 245, 255)的Search按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-sizes-15",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-ba5c4c7480fc5bdb3570",
+      "instanceId": "element-plus-button-sizes-15",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus 小号 Search 圆形纯图标按钮",
+      "nameEn": "Element Plus small Search circular icon-only button",
+      "descriptionZh": "结构：BUTTON 内只有 I 图标容器及来自官方示例的 Search SVG，没有可见文字；图标来自示例中 @element-plus/icons-vue 的 Search 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 24×24px，四边 1px 实线边框，四角 50px；内边距依次为 5/5/5/5px，图标框 12×12px。\n\n色彩与质感：默认填充 rgb(255, 255, 255)、边框 rgb(220, 223, 230)、图标 rgb(96, 98, 102)，盒阴影 none；没有文字层；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(255, 255, 255) 变为 rgb(236, 245, 255)；按住时为 rgb(236, 245, 255)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 24×24px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains only an I wrapper with the official Search SVG and no visible text. The SVG path is kept from the official @element-plus/icons-vue Search example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 24×24px, with a 1px solid border and 50px corners. Top/right/bottom/left padding is 5/5/5/5px; the icon wrapper is 12×12px.\n\nColor and material: Default fill rgb(255, 255, 255), border rgb(220, 223, 230), icon rgb(96, 98, 102), box shadow none. There is no text layer. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(255, 255, 255) to rgb(236, 245, 255); held press uses rgb(236, 245, 255). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 24×24px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#sizes",
+      "previewUrl": "/data/discovery/previews/element-plus-button-sizes-15.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I > SVG",
+        "Search SVG",
+        "圆形",
+        "50px圆角",
+        "小号",
+        "rgb(255, 255, 255)",
+        "rgb(96, 98, 102)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "无可见文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "sizes",
+        "小号 Search Element Plus图标按钮",
+        "el-button el-button--small is-circle Search",
+        "小号 圆形 Search按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I > SVG",
+          "Search SVG"
+        ],
+        "shape": [
+          "圆形",
+          "50px圆角",
+          "小号"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(96, 98, 102)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "无可见文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "sizes"
+        ]
+      },
+      "visual": {
+        "xPx": 419.5,
+        "yPx": 438.46875,
+        "widthPx": 24,
+        "heightPx": 24,
+        "sizingRule": "Computed 24px×24px; box-sizing border-box.",
+        "parent": "DIV.flex flex-wrap items-center, bbox {\"x\":323.5,\"y\":430.46875,\"width\":899,\"height\":40}.",
+        "topLeftPx": 50,
+        "topRightPx": 50,
+        "bottomRightPx": 50,
+        "bottomLeftPx": 50,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(255, 255, 255)",
+          "hoverBackground": "rgb(236, 245, 255)",
+          "activeBackground": null,
+          "color": null,
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(220, 223, 230)",
+          "iconColor": "rgb(96, 98, 102)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Search reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/size.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(96, 98, 102)",
+              "widthPx": 12,
+              "heightPx": 12,
+              "strokePx": 0,
+              "gapPx": 0,
+              "order": "only child",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(255, 255, 255)",
+          "text": "No text child.",
+          "border": "1px solid rgb(220, 223, 230)",
+          "icon": "rgb(96, 98, 102)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "inspected": "Exact BUTTON has no visible text child and no actual text node."
+        },
+        "spacing": {
+          "paddingTopPx": 5,
+          "paddingRightPx": 5,
+          "paddingBottomPx": 5,
+          "paddingLeftPx": 5,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 12,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I.",
+          "overflow": "Root visible; scroll 22×22 against client 22×22.",
+          "zIndex": "auto",
+          "children": [
+            "I 12×12px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[7] .example-showcase .el-button[14]",
+            "property": "background-color, color, border-top-color, outline-color",
+            "from": "background-color: rgb(255, 255, 255); color: rgb(96, 98, 102); border-top-color: rgb(220, 223, 230); outline-color: rgb(96, 98, 102)",
+            "to": "rgb(236, 245, 255); rgb(64, 158, 255); rgb(198, 226, 255); rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[7] .example-showcase .el-button[14]",
+            "property": "border-top-color",
+            "from": "border-top-color: rgb(198, 226, 255)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 24px versus 32px；height 24px versus 32px",
+      "reconstructionPrompt": "重建 Element Plus 官方 Search SVG 按钮。圆形原生 BUTTON 外框 24×24px；四边 padding 5/5/5/5px、边框 1px solid rgb(220, 223, 230)、四角半径 50px。保留官方示例内联 SVG path，I 图标 12×12px、颜色 rgb(96, 98, 102)，无可见文字。默认填充 rgb(255, 255, 255)，hover rgb(236, 245, 255)，按住 rgb(236, 245, 255)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 24×24px、24×24px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 7, rootIndex 14; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个小号 圆形的Search图标按钮",
+        "需要rgb(255, 255, 255)底色和rgb(96, 98, 102)图标的按钮",
+        "要hover变rgb(236, 245, 255)、按住变rgb(236, 245, 255)的Search按钮"
+      ]
+    },
+    {
       "id": "element-plus-button-sizes-3",
       "entryId": "element-plus",
       "sourceEntity": "Element Plus",
@@ -24626,6 +27503,699 @@
         "找一个Small文字、24px高的按钮",
         "要默认rgb(255, 255, 255)，hover变rgb(236, 245, 255)的按钮",
         "需要solid rgb(220, 223, 230)且按住变rgb(236, 245, 255)的Small按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-sizes-4",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-67b2787e867854a45baa",
+      "instanceId": "element-plus-button-sizes-4",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus 大号 Search 矩形图标文字按钮",
+      "nameEn": "Element Plus large Search rectangular icon-and-text button",
+      "descriptionZh": "结构：BUTTON 内按顺序放置 I 图标和 SPAN“Search”文字；图标来自示例中 @element-plus/icons-vue 的 Search 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 109.016×40px，四边 1px 实线边框，四角 4px；内边距依次为 12/19/12/19px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(255, 255, 255)、边框 rgb(220, 223, 230)、图标 rgb(96, 98, 102)，盒阴影 none；文字为 14px、500 字重、14px 行高；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(255, 255, 255) 变为 rgb(236, 245, 255)；按住时为 rgb(236, 245, 255)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 109.016×40px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains an I icon and then a SPAN reading “Search”. The SVG path is kept from the official @element-plus/icons-vue Search example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 109.016×40px, with a 1px solid border and 4px corners. Top/right/bottom/left padding is 12/19/12/19px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(255, 255, 255), border rgb(220, 223, 230), icon rgb(96, 98, 102), box shadow none. The text is 14px, weight 500, with 14px line-height. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(255, 255, 255) to rgb(236, 245, 255); held press uses rgb(236, 245, 255). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 109.016×40px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#sizes",
+      "previewUrl": "/data/discovery/previews/element-plus-button-sizes-4.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I + SPAN",
+        "Search SVG",
+        "矩形",
+        "4px圆角",
+        "大号",
+        "rgb(255, 255, 255)",
+        "rgb(96, 98, 102)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "14px文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "sizes",
+        "大号 Search Element Plus图标按钮",
+        "el-button el-button--large Search",
+        "大号 矩形 Search按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I + SPAN",
+          "Search SVG"
+        ],
+        "shape": [
+          "矩形",
+          "4px圆角",
+          "大号"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(96, 98, 102)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "14px文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "sizes"
+        ]
+      },
+      "visual": {
+        "xPx": 572.984375,
+        "yPx": 430.46875,
+        "widthPx": 109.015625,
+        "heightPx": 40,
+        "sizingRule": "Computed 109.016px×40px; box-sizing border-box.",
+        "parent": "DIV.flex flex-wrap items-center mb-4, bbox {\"x\":323.5,\"y\":430.46875,\"width\":899,\"height\":40}.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(255, 255, 255)",
+          "hoverBackground": "rgb(236, 245, 255)",
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(220, 223, 230)",
+          "iconColor": "rgb(96, 98, 102)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Search reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/size.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(96, 98, 102)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 8,
+              "order": "before visible text",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(255, 255, 255)",
+          "text": "rgb(96, 98, 102)",
+          "border": "1px solid rgb(220, 223, 230)",
+          "icon": "rgb(96, 98, 102)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Search",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Computed SPAN font; loaded faces [{\"family\":\"Inter\",\"weight\":\"400\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"500\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"600\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"700\",\"status\":\"loaded\"}].",
+          "alignment": "center",
+          "wrapping": "Desktop/narrow SPAN 47.016/47.016px; white-space nowrap.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 14,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 12,
+          "paddingRightPx": 19,
+          "paddingBottomPx": 12,
+          "paddingLeftPx": 19,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 12,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I, SPAN.",
+          "overflow": "Root visible; scroll 107×38 against client 107×38.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view",
+            "SPAN 47.016×14px; <span class=\"\"><!--[-->Search<!--]--></span>"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[7] .example-showcase .el-button[3]",
+            "property": "background-color, color, border-top-color, outline-color",
+            "from": "background-color: rgb(255, 255, 255); color: rgb(96, 98, 102); border-top-color: rgb(220, 223, 230); outline-color: rgb(96, 98, 102)",
+            "to": "rgb(236, 245, 255); rgb(64, 158, 255); rgb(198, 226, 255); rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[7] .example-showcase .el-button[3]",
+            "property": "border-top-color",
+            "from": "border-top-color: rgb(198, 226, 255)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 109.016px versus 99.016px；height 40px versus 32px",
+      "reconstructionPrompt": "重建 Element Plus 官方 Search SVG 按钮。矩形原生 BUTTON 外框 109.016×40px；四边 padding 12/19/12/19px、边框 1px solid rgb(220, 223, 230)、四角半径 4px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(96, 98, 102)，其后 SPAN 文字“Search” 14px。默认填充 rgb(255, 255, 255)，hover rgb(236, 245, 255)，按住 rgb(236, 245, 255)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 109.016×40px、109.016×40px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 7, rootIndex 3; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个大号 矩形的Search图标按钮",
+        "需要rgb(255, 255, 255)底色和rgb(96, 98, 102)图标的按钮",
+        "要hover变rgb(236, 245, 255)、按住变rgb(236, 245, 255)的Search按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-sizes-5",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-d49bf8090ed4b7b52efa",
+      "instanceId": "element-plus-button-sizes-5",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus 标准 Search 矩形图标文字按钮",
+      "nameEn": "Element Plus default Search rectangular icon-and-text button",
+      "descriptionZh": "结构：BUTTON 内按顺序放置 I 图标和 SPAN“Search”文字；图标来自示例中 @element-plus/icons-vue 的 Search 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 99.016×32px，四边 1px 实线边框，四角 4px；内边距依次为 8/15/8/15px，图标框 14×14px。\n\n色彩与质感：默认填充 rgb(255, 255, 255)、边框 rgb(220, 223, 230)、图标 rgb(96, 98, 102)，盒阴影 none；文字为 14px、500 字重、14px 行高；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(255, 255, 255) 变为 rgb(236, 245, 255)；按住时为 rgb(236, 245, 255)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 99.016×32px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains an I icon and then a SPAN reading “Search”. The SVG path is kept from the official @element-plus/icons-vue Search example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 99.016×32px, with a 1px solid border and 4px corners. Top/right/bottom/left padding is 8/15/8/15px; the icon wrapper is 14×14px.\n\nColor and material: Default fill rgb(255, 255, 255), border rgb(220, 223, 230), icon rgb(96, 98, 102), box shadow none. The text is 14px, weight 500, with 14px line-height. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(255, 255, 255) to rgb(236, 245, 255); held press uses rgb(236, 245, 255). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 99.016×32px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#sizes",
+      "previewUrl": "/data/discovery/previews/element-plus-button-sizes-5.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I + SPAN",
+        "Search SVG",
+        "矩形",
+        "4px圆角",
+        "标准",
+        "rgb(255, 255, 255)",
+        "rgb(96, 98, 102)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "14px文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "sizes",
+        "标准 Search Element Plus图标按钮",
+        "el-button Search",
+        "标准 矩形 Search按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I + SPAN",
+          "Search SVG"
+        ],
+        "shape": [
+          "矩形",
+          "4px圆角",
+          "标准"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(96, 98, 102)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "14px文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "sizes"
+        ]
+      },
+      "visual": {
+        "xPx": 694,
+        "yPx": 434.46875,
+        "widthPx": 99.015625,
+        "heightPx": 32,
+        "sizingRule": "Computed 99.0156px×32px; box-sizing border-box.",
+        "parent": "DIV.flex flex-wrap items-center mb-4, bbox {\"x\":323.5,\"y\":430.46875,\"width\":899,\"height\":40}.",
+        "topLeftPx": 4,
+        "topRightPx": 4,
+        "bottomRightPx": 4,
+        "bottomLeftPx": 4,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(255, 255, 255)",
+          "hoverBackground": "rgb(236, 245, 255)",
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(220, 223, 230)",
+          "iconColor": "rgb(96, 98, 102)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Search reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/size.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(96, 98, 102)",
+              "widthPx": 14,
+              "heightPx": 14,
+              "strokePx": 0,
+              "gapPx": 6,
+              "order": "before visible text",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(255, 255, 255)",
+          "text": "rgb(96, 98, 102)",
+          "border": "1px solid rgb(220, 223, 230)",
+          "icon": "rgb(96, 98, 102)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Search",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Computed SPAN font; loaded faces [{\"family\":\"Inter\",\"weight\":\"400\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"500\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"600\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"700\",\"status\":\"loaded\"}].",
+          "alignment": "center",
+          "wrapping": "Desktop/narrow SPAN 47.016/47.016px; white-space nowrap.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 14,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 8,
+          "paddingRightPx": 15,
+          "paddingBottomPx": 8,
+          "paddingLeftPx": 15,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 12,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I, SPAN.",
+          "overflow": "Root visible; scroll 97×30 against client 97×30.",
+          "zIndex": "auto",
+          "children": [
+            "I 14×14px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view",
+            "SPAN 47.016×14px; <span class=\"\"><!--[-->Search<!--]--></span>"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[7] .example-showcase .el-button[4]",
+            "property": "background-color, color, border-top-color, outline-color",
+            "from": "background-color: rgb(255, 255, 255); color: rgb(96, 98, 102); border-top-color: rgb(220, 223, 230); outline-color: rgb(96, 98, 102)",
+            "to": "rgb(236, 245, 255); rgb(64, 158, 255); rgb(198, 226, 255); rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[7] .example-showcase .el-button[4]",
+            "property": "border-top-color",
+            "from": "border-top-color: rgb(198, 226, 255)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 99.016px versus 109.016px；height 32px versus 40px",
+      "reconstructionPrompt": "重建 Element Plus 官方 Search SVG 按钮。矩形原生 BUTTON 外框 99.016×32px；四边 padding 8/15/8/15px、边框 1px solid rgb(220, 223, 230)、四角半径 4px。保留官方示例内联 SVG path，I 图标 14×14px、颜色 rgb(96, 98, 102)，其后 SPAN 文字“Search” 14px。默认填充 rgb(255, 255, 255)，hover rgb(236, 245, 255)，按住 rgb(236, 245, 255)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 99.016×32px、99.016×32px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 7, rootIndex 4; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个标准 矩形的Search图标按钮",
+        "需要rgb(255, 255, 255)底色和rgb(96, 98, 102)图标的按钮",
+        "要hover变rgb(236, 245, 255)、按住变rgb(236, 245, 255)的Search按钮"
+      ]
+    },
+    {
+      "id": "element-plus-button-sizes-6",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/button",
+      "variantId": "element-plus-button-7dcb4a6f03be2574bfb4",
+      "instanceId": "element-plus-button-sizes-6",
+      "kind": "website-component",
+      "componentType": "button",
+      "nameZh": "Element Plus 小号 Search 矩形图标文字按钮",
+      "nameEn": "Element Plus small Search rectangular icon-and-text button",
+      "descriptionZh": "结构：BUTTON 内按顺序放置 I 图标和 SPAN“Search”文字；图标来自示例中 @element-plus/icons-vue 的 Search 引用，路径保留原 SVG。\n\n尺寸与布局：1280×900 CSS 视口中外框 80.297×24px，四边 1px 实线边框，四角 3px；内边距依次为 5/11/5/11px，图标框 12×12px。\n\n色彩与质感：默认填充 rgb(255, 255, 255)、边框 rgb(220, 223, 230)、图标 rgb(96, 98, 102)，盒阴影 none；文字为 12px、500 字重、12px 行高；图标 SVG 使用 currentColor 填充。\n\n运动与状态：悬停使背景从 rgb(255, 255, 255) 变为 rgb(236, 245, 255)；按住时为 rgb(236, 245, 255)，常态过渡 100ms ease；键盘聚焦出现 2px solid 轮廓。\n\n响应与范围：390×844 CSS 视口中外框 80.297×24px；触屏及减少动态仅为 Edge 仿真，图标按钮的可访问名称以实际 DOM 为准。",
+      "descriptionEn": "Structure: The native BUTTON contains an I icon and then a SPAN reading “Search”. The SVG path is kept from the official @element-plus/icons-vue Search example.\n\nSize and layout: At 1280×900 CSS pixels the outer box is 80.297×24px, with a 1px solid border and 3px corners. Top/right/bottom/left padding is 5/11/5/11px; the icon wrapper is 12×12px.\n\nColor and material: Default fill rgb(255, 255, 255), border rgb(220, 223, 230), icon rgb(96, 98, 102), box shadow none. The text is 12px, weight 500, with 12px line-height. The SVG fills with currentColor.\n\nMotion and states: Hover changes the fill from rgb(255, 255, 255) to rgb(236, 245, 255); held press uses rgb(236, 245, 255). The normal transition is 100ms ease; keyboard focus shows a 2px solid outline.\n\nResponsive scope: The outer box is 80.297×24px at the measured 390×844 CSS viewport. Touch and reduced-motion results are Edge emulations; the icon button's accessible name is reported from the actual DOM.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/button#sizes",
+      "previewUrl": "/data/discovery/previews/element-plus-button-sizes-6.html",
+      "previewKind": "measured-style-reconstruction",
+      "offers": [],
+      "tags": [
+        "图标按钮",
+        "icon button",
+        "BUTTON > I + SPAN",
+        "Search SVG",
+        "矩形",
+        "3px圆角",
+        "小号",
+        "rgb(255, 255, 255)",
+        "rgb(96, 98, 102)",
+        "无盒阴影",
+        "SVG currentColor 填充",
+        "12px文字",
+        "100ms all过渡",
+        "hover",
+        "held press",
+        "Tab focus",
+        "Element Plus Button docs",
+        "sizes",
+        "小号 Search Element Plus图标按钮",
+        "el-button el-button--small Search",
+        "小号 矩形 Search按钮"
+      ],
+      "tagFacets": {
+        "object": [
+          "图标按钮",
+          "icon button"
+        ],
+        "structure": [
+          "BUTTON > I + SPAN",
+          "Search SVG"
+        ],
+        "shape": [
+          "矩形",
+          "3px圆角",
+          "小号"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(96, 98, 102)"
+        ],
+        "material": [
+          "无盒阴影",
+          "SVG currentColor 填充"
+        ],
+        "typography": [
+          "12px文字"
+        ],
+        "motion": [
+          "100ms all过渡"
+        ],
+        "trigger": [
+          "hover",
+          "held press",
+          "Tab focus"
+        ],
+        "context": [
+          "Element Plus Button docs",
+          "sizes"
+        ]
+      },
+      "visual": {
+        "xPx": 805.015625,
+        "yPx": 438.46875,
+        "widthPx": 80.296875,
+        "heightPx": 24,
+        "sizingRule": "Computed 80.2969px×24px; box-sizing border-box.",
+        "parent": "DIV.flex flex-wrap items-center mb-4, bbox {\"x\":323.5,\"y\":430.46875,\"width\":899,\"height\":40}.",
+        "topLeftPx": 3,
+        "topRightPx": 3,
+        "bottomRightPx": 3,
+        "bottomLeftPx": 3,
+        "borderTopPx": 1,
+        "borderRightPx": 1,
+        "borderBottomPx": 1,
+        "borderLeftPx": 1,
+        "borderStyle": "solid",
+        "clip": "clip-path none, mask-image none.",
+        "style": "solid",
+        "computed": {
+          "background": "rgb(255, 255, 255)",
+          "hoverBackground": "rgb(236, 245, 255)",
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderColor": "rgb(220, 223, 230)",
+          "iconColor": "rgb(96, 98, 102)",
+          "backgroundImage": "none",
+          "icon": [
+            {
+              "source": "Official @element-plus/icons-vue Search reference in saved https://github.com/element-plus/element-plus/edit/dev/docs/examples/button/size.vue; exact inline SVG path in measured DOM.",
+              "color": "rgb(96, 98, 102)",
+              "widthPx": 12,
+              "heightPx": 12,
+              "strokePx": 0,
+              "gapPx": 4,
+              "order": "before visible text",
+              "clip": "SVG viewBox 0 0 1024 1024"
+            }
+          ]
+        },
+        "colors": {
+          "context": "Official example ancestor rgba(0, 0, 0, 0).",
+          "fill": "rgb(255, 255, 255)",
+          "text": "rgb(96, 98, 102)",
+          "border": "1px solid rgb(220, 223, 230)",
+          "icon": "rgb(96, 98, 102)",
+          "decoration": "background-image none, text-shadow none.",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Search",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Computed SPAN font; loaded faces [{\"family\":\"Inter\",\"weight\":\"400\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"500\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"600\",\"status\":\"loaded\"},{\"family\":\"Inter\",\"weight\":\"700\",\"status\":\"loaded\"}].",
+          "alignment": "center",
+          "wrapping": "Desktop/narrow SPAN 40.297/40.297px; white-space nowrap.",
+          "decoration": "none",
+          "fontSizePx": 12,
+          "lineHeightPx": 12,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 5,
+          "paddingRightPx": 11,
+          "paddingBottomPx": 5,
+          "paddingLeftPx": 11,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 12,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "flex",
+          "position": "static",
+          "alignment": "Root center/center; child order I, SPAN.",
+          "overflow": "Root visible; scroll 78×22 against client 78×22.",
+          "zIndex": "auto",
+          "children": [
+            "I 12×12px; <i class=\"el-icon\" style=\"\"><!--[--><svg xmlns=\"http://www.w3.org/2000/svg\" view",
+            "SPAN 40.297×12px; <span class=\"\"><!--[-->Search<!--]--></span>"
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Computed background-image none; preserved SVG fill path.",
+          "pseudoElements": "::before none/none, ::after none/none."
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enter/leave, held press/release",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enter/leave",
+            "target": ".doc-content .example[7] .example-showcase .el-button[5]",
+            "property": "background-color, color, border-top-color, outline-color",
+            "from": "background-color: rgb(255, 255, 255); color: rgb(96, 98, 102); border-top-color: rgb(220, 223, 230); outline-color: rgb(96, 98, 102)",
+            "to": "rgb(236, 245, 255); rgb(64, 158, 255); rgb(198, 226, 255); rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          },
+          {
+            "trigger": "held press/release",
+            "target": ".doc-content .example[7] .example-showcase .el-button[5]",
+            "property": "border-top-color",
+            "from": "border-top-color: rgb(198, 226, 255)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "computed CSS color/outline/shadow",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": 1,
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Release/leave returns toward rgb(255, 255, 255).",
+            "interruption": "Measured interruption fill rgb(255, 255, 255); resumed rgb(236, 245, 255); returned rgb(255, 255, 255)."
+          }
+        ]
+      },
+      "distinctionZh": "width 80.297px versus 109.016px；height 24px versus 40px；corner radius 3px versus 20px",
+      "reconstructionPrompt": "重建 Element Plus 官方 Search SVG 按钮。矩形原生 BUTTON 外框 80.297×24px；四边 padding 5/11/5/11px、边框 1px solid rgb(220, 223, 230)、四角半径 3px。保留官方示例内联 SVG path，I 图标 12×12px、颜色 rgb(96, 98, 102)，其后 SPAN 文字“Search” 12px。默认填充 rgb(255, 255, 255)，hover rgb(236, 245, 255)，按住 rgb(236, 245, 255)；使用 100ms ease，键盘焦点轮廓 2px solid rgb(160, 207, 255)。在1280×900和390×844 CSS视口验收尺寸分别为 80.297×24px、80.297×24px。不要添加未见的图标、纹理、持续旋转、指针坐标倾斜或文字；有文字的变体按实际保留文字。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One official Button, exampleIndex 7, rootIndex 5; two CSS viewports; Edge touch/reduced-motion emulation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找一个小号 矩形的Search图标按钮",
+        "需要rgb(255, 255, 255)底色和rgb(96, 98, 102)图标的按钮",
+        "要hover变rgb(236, 245, 255)、按住变rgb(236, 245, 255)的Search按钮"
       ]
     },
     {

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 7b536ac8b55e9133fa8a17ecab5482eb1e2bbe296569318d89f77460be7f720c
 status: APPROVED
 name: Sonner

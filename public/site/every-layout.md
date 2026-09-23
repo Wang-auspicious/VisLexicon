@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: d94c6c9d68fd1103cfc9d84fa12ac033ffed95b405b5dbf04f253ac04b1d19c8
 status: APPROVED
 name: "Every Layout"

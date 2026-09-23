@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: e782190905b02adcbfedeb0a68b9935d01c83bd7fe0822b265e2fae74a2aace3
 status: APPROVED
 name: "React Datepicker"

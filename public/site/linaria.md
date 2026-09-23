@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: bf93963ee7e928268ac683242c6e5e731f2a831fd315c8429477521125cf4432
 status: APPROVED
 name: Linaria

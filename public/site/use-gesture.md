@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: a8a1a761ed9e50f0e8a7dd3f0adf97d67b615770f63322209fda622b13585449
 status: APPROVED
 name: "@use-gesture"

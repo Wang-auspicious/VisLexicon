@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: f43181d289b3819edec636cd02533cdeb05eaad7f1b771103276623b61bded79
 status: APPROVED
 name: Leaflet

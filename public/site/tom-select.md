@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 2de65a0c2263a7f2d9fb854754a1df52e8de2d852d94b8dd5a3810c9be3679d8
 status: APPROVED
 name: "Tom Select"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 17aa274652fb0f6896907148a9b73ceeeb0689bdb26da7a47258d47e69b9be22
 status: APPROVED
 name: "Arco Design"

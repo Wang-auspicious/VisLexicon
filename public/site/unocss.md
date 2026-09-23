@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 1c164c7fcfd1a0b611b31bca96044a56fa15959a1d20cfcced034b8d058da7b5
 status: APPROVED
 name: UnoCSS

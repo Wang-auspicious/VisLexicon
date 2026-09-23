@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 54b6a1215ea2ec9787864f6f45287d0ad96b15def020c5644c87f217636c62ee
 status: APPROVED
 name: "Clarity Design System"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: d886a333a6d677e000bd7bb3e7b1f067ecb7fa27bcd1153b9f16d1cae780feb6
 status: APPROVED
 name: react-modal

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 2d18d85768f2798e24a799f28518a9f818db8aaa60f0bdaa4334986a3fa70b39
 status: APPROVED
 name: Vega

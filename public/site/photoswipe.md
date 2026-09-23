@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 14141db98c55d0b9b66cc63b9d92478e30086800937837e2d4eaf2a00b9335d2
 status: APPROVED
 name: PhotoSwipe

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: e8f9cbb2f6f5ecd226a818c47b658992d7fd15fdb2925146dfae7449c12d6b36
 status: APPROVED
 name: Keen-Slider

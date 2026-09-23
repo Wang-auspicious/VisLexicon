@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 2f6832c53b5dbf9b18d4fc81dcf2335074ff847cea4a05fc4542db3612c36da0
 status: APPROVED
 name: Coolors

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: e2b8ad9ca149a27a887bb217c27943153ecc9e4e042a10314e7d3135f318731c
 status: APPROVED
 name: CSShake

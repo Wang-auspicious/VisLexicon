@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 8bd4b39219474c5c99f5c20e557ab46a7a0b8ab80fe713fea82179e6a163723e
 status: APPROVED
 name: Recharts

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: b829e8483116e5b8c13e93baf99eec34ad4f4aa346aab4266e7086f535893f66
 status: APPROVED
 name: A-Frame

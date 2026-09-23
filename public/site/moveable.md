@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 2ea8ad2f5f2b744112b2ef8e7a99ab850cfbd6e288b1e8db60cf5c793f0d9293
 status: APPROVED
 name: Moveable

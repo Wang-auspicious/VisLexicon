@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: da5a23d4ed225b53d3bbfeadba5dacc36199c4e7c3b7adb2b5e985c254405461
 status: APPROVED
 name: "Ant Design"

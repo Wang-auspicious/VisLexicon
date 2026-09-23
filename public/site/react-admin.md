@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 7cb151bda39eaffc53d49e2195a6abe0b765c2dfb11c0b8bf698c82e175d0706
 status: APPROVED
 name: React-admin

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 08b72a2255ce7982ada5885a6c2162b7dbd667efa697ff3f51e301ed9aa7f9ed
 status: APPROVED
 name: GrapesJS

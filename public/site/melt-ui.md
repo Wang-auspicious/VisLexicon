@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: d98783111886c0278fc5a6ffcfeab74f823581e2f98f61363df90627f77f2078
 status: APPROVED
 name: "Melt UI"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 754a782deeb2b3cae415fd2cca6b3fba5606d08e3fd4fc95b15e366c31c2ac3d
 status: APPROVED
 name: ApexCharts

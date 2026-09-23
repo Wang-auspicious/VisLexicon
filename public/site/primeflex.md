@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 4b54e2613f2a5fd16f372d600551283698a167d56c0bb001697b6f1216668b3c
 status: APPROVED
 name: PrimeFlex

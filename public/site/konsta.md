@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: a50d9702cfb17a07210ed61fc62118e78776e313ed17f0c6cd24cff3f1192b49
 status: APPROVED
 name: "Konsta UI"

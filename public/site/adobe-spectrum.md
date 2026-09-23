@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 6206ab887957edb2a7d601a060b15257de54c29806e5d4649a2e7a90626aee4f
 status: APPROVED
 name: "Adobe Spectrum"

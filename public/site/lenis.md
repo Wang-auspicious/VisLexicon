@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: a700fc8c3423041b35fbefc5358bb5f5c71d890a3aa5eff2e07d0ad6c5f95fc7
 status: APPROVED
 name: Lenis

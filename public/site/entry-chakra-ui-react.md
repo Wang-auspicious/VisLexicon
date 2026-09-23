@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 76d48beb76b45336cf6cdebe4d4f9877b7c1b95118001f6383f8803a5998593a
 status: APPROVED
 name: "Chakra UI"

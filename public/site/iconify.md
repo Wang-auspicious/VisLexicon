@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 1561b75c9159cb2dee625c1c2c3268697f865a6f1203222f968a0185aa1132c9
 status: APPROVED
 name: Iconify

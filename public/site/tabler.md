@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 9146bfeea5c756301bcbbd756ff38d1007dd0b3892bbf97f366f801c85ce6a6d
 status: APPROVED
 name: Tabler

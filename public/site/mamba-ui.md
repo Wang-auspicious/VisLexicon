@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 655211ef9a1a07efd36d82b4f6b8d4ae8a97d0f566d61ca1534d5bcb0d906af7
 status: APPROVED
 name: "Mamba UI"

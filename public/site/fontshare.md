@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 684d380d29a4f298dc28703a6ad847fa730e284fdf7818ca0bc507eb3cbc5f9d
 status: APPROVED
 name: Fontshare

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: cf89478621602dff00e97c3e5401606a947061324207949a082be8d3f2bf24a1
 status: APPROVED
 name: Skeleton

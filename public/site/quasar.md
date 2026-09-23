@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 9609f20e13cce9fe7e35ab25ab7f5ecea6bf3b9e8104834d733128b808636ce3
 status: APPROVED
 name: Quasar

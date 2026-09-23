@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 92456a61b6a8acf3ae63ff15c7abe1d2f4f22d16283bc5bb74e954aa41e4b841
 status: APPROVED
 name: Fancybox

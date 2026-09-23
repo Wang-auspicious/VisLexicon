@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 28f1bb1a6bbdd900e905a2bf67c4c01d1c03ca3e3c68ac3e037791a4e4b0c9f6
 status: APPROVED
 name: Uiverse

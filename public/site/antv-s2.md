@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: cd5b4ea31274dd8541df2e03fa609472f58f666e53dae69fcb36f97149aacc6d
 status: APPROVED
 name: "AntV S2"

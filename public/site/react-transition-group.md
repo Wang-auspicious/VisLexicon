@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 089d11dfb0ff403f0049b927a509d99047c429d593cc380a436f6ab9c63453c4
 status: APPROVED
 name: "React Transition Group"

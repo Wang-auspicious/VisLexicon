@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 0a5bc89317e6abe3a9c9c3c1923b197484498985571c2b759d157d039759a379
 status: APPROVED
 name: "React Hook Form"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 6bd32130e572e5ffb7de12747c17df7bcd8ef5bc968bd038508444434ca2e60d
 status: APPROVED
 name: LottieFiles

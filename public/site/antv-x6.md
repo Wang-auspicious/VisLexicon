@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 368eebeb67c04ea6c41d5f6bd282532b9eb7d5a2d81b1fe96a7b686f6e40de6b
 status: APPROVED
 name: "AntV X6"

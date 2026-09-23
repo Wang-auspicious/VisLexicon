@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: abda19bf3445ddd95e864a8ca39bc7f9686ee5071af35216b59a2d81d2a2c1a3
 status: APPROVED
 name: "Yet Another React Lightbox"

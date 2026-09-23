@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: b10b5039cc360ea2e13f25923b2dd3f5a5b7cffa809d848cec6d589db67d022f
 status: APPROVED
 name: Uppy

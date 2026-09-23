@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: a10b126a6fb49995e760ca46c061d4cbf4ed4467bb2a0e66071783420ed235ee
 status: APPROVED
 name: "TOAST UI Grid"

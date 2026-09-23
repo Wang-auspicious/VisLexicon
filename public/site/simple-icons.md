@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: d0e8552c9fd5aaaf6f47a11348c5cfa4ea7390f58246b9a6c47eadba145290c9
 status: APPROVED
 name: "Simple Icons"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 5b8332ee2431f48f1b742121a3a13c58389aee2acb89945c4aac003bf66bda59
 status: APPROVED
 name: visx

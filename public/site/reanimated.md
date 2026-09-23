@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 517f9d05d972402b9664d9da0d43ab9ce7c161e7bdd504359ab598bdb4e676c6
 status: APPROVED
 name: "React Native Reanimated"

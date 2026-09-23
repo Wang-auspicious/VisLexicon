@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 4717b4c55ac330daced652b8c23cf90708111ff8645765fe95936eefabfdfbc0
 status: APPROVED
 name: "Google Fonts"

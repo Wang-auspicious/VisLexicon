@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 4414835047ce821612bab82ad12fe6c68fa6754a8ab9bbc50006b11d0186ab46
 status: APPROVED
 name: "Atlassian Design System"

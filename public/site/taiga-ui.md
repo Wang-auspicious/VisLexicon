@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 2237f4cca8e421b021ffedc3a0f16bca056343517b7f0b3039dc7099d7bce904
 status: APPROVED
 name: "Taiga UI"

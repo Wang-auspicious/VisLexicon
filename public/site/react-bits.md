@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 176e12d04c69a123d0e2cf690132a4b02a2f2ae53bfece262cc1b58800ef63ae
 status: APPROVED
 name: "React Bits"

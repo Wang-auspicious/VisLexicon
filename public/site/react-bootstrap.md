@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 5ab25e119662d87a694deb760263140d4f8fe90f3e04c240404d94d1a65cae97
 status: APPROVED
 name: "React Bootstrap"

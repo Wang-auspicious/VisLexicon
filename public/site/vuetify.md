@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 77d50503960278a2088fcd2b44669f074e9a550050f4a6e329f993dc916ee4fe
 status: APPROVED
 name: Vuetify

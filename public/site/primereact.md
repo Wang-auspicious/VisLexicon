@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 0412d8bf5ae9f6de8fcbaac8ad2796b1015c0331dca58883877a340828e8737d
 status: APPROVED
 name: PrimeReact

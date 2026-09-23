@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 595b87ab062076eb09b5d5b574be9f3e8480ec1a6d16e15470b39d6984a0d3f9
 status: APPROVED
 name: "TanStack Table"

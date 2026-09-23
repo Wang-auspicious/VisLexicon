@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 5145e66d662b3e37360fea588eadc5425e5ca8f4a7388176acf405c1f0be70c2
 status: APPROVED
 name: NutUI

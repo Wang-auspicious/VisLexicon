@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 12abb398cfafc035205ad09eb372cf6a22056697c9408b6712b68e7754c6e5a6
 status: APPROVED
 name: Draggable

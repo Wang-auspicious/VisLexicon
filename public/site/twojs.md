@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: a03b0fa73022f2d36b0bd8fdb9574b3cacd27bd2c10263045b081ca0527e150b
 status: APPROVED
 name: Two.js

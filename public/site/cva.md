@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 267aa25217493425238dec7f7e48be654db109658b0955fc79c14928891825bb
 status: APPROVED
 name: "Class Variance Authority"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: a3d591f312071f7b87a76e9f9797bf32b372bcc65fc38574108e3cbf9ab1bc14
 status: APPROVED
 name: Zag.js

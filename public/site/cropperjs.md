@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 3fce5328f9b57cbc563eda5584124ccc1a5ae65d7c65c13bba9473fc4c7c3315
 status: APPROVED
 name: Cropper.js

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 643b264bdc91114f6943cd0699ef018bf3f815ee029aa3bf285a8ee185ad3bf7
 status: APPROVED
 name: "Dice UI"

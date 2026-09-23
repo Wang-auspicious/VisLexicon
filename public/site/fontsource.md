@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 3b28b4dc1961cbe2a16d2f657bfe9bdaee678f70f3801b9d782c6ff615ff5afd
 status: APPROVED
 name: Fontsource

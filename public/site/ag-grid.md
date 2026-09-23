@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 460f55d2a7d2339c052079f2387e1288849a7dc24245ed825680bccf726ade44
 status: APPROVED
 name: "AG Grid"

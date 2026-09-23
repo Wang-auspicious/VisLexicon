@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 73d9c97126c383ace03eaef2fddde3b3255b4d7d513c11be67d3b4b21c8397ea
 status: APPROVED
 name: "Theme UI"

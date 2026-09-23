@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: ee4c268e8cdeaef632473a1264b1fb07e39474cef7a10b993a2d3d8ab23df13b
 status: APPROVED
 name: "Ant Design Vue"

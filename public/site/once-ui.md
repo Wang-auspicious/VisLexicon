@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: 43cb7563c22f6a3fe5c3fba591083e3bd23e2b720ed78bf8b210380806aff1be
 status: APPROVED
 name: "Once UI"

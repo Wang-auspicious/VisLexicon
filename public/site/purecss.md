@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-35315ecedf56c3d5
+releaseId: release-831b580b05343fcf
 revision: ef96c4559025849747984f4127b833cec7107a44dc115360253be334fae99994
 status: APPROVED
 name: Pure
