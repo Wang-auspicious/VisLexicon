@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neutral Dash button — measured reconstruction</title>
+<style>
+:root { color-scheme: light; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 32px; }
+.stage { display: flex; align-items: center; justify-content: center; min-height: 120px; background: #fff; }
+.btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px dashed oklch(0.14 0.005 285.823);
+  border-radius: 4px;
+  background: transparent;
+  color: oklch(0.14 0.005 285.823);
+  box-shadow: oklch(0 0 0 / 0) 0 0 0 0 inset, oklch(0 0 0 / 0) 0 0 0 0;
+  font: 600 14px/24.5px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Vazirmatn, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  cursor: pointer;
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.btn:hover {
+  background: oklab(0.1302 0.0012679 -0.0044738);
+  color: oklch(0.92 0.004 286.32);
+  border-color: oklab(0.12369 0.0012045 -0.00425011);
+  border-style: solid;
+  box-shadow: oklch(1 0 0 / 0.06) 0 0.5px 0 0.5px inset, oklab(0.1302 0.0012679 -0.0044738 / 0.3) 0 3px 2px -2px, oklab(0.1302 0.0012679 -0.0044738 / 0.3) 0 4px 3px -2px;
+}
+.btn:focus-visible {
+  outline: 2px solid oklch(0.14 0.005 285.823);
+  outline-offset: 2px;
+  background: oklch(0.14 0.005 285.823);
+  color: oklch(0.92 0.004 286.32);
+  border-color: oklab(0.133 0.00129517 -0.00457002);
+  border-style: solid;
+  box-shadow: oklch(1 0 0 / 0.06) 0 0.5px 0 0.5px inset, oklab(0.14 0.00136333 -0.00481054 / 0.3) 0 3px 2px -2px, oklab(0.14 0.00136333 -0.00481054 / 0.3) 0 4px 3px -2px;
+}
+.btn:active {
+  translate: 0 0.5px;
+  background: oklab(0.133 0.00129517 -0.00457002);
+  border-color: oklab(0.1302 0.0012679 -0.0044738);
+  box-shadow: oklch(0 0 0 / 0) 0 0 0 0 inset, oklch(0 0 0 / 0) 0 0 0 0;
+}
+@media (max-width: 600px) { .btn { line-height: 24px; } }
+</style>
+</head>
+<body><main class="stage"><button class="btn" type="button">Dash</button></main></body>
+</html>

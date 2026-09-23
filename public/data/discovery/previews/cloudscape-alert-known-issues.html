@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self' data:">
+<title>Cloudscape Info Alert · measured preview</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;width:100%}
+body{min-height:100vh;display:grid;place-items:center;padding:20px;background:#fff;color:#0f141a;font-family:"Open Sans","Helvetica Neue",Roboto,Arial,sans-serif}
+.preview-surface{width:min(606.453125px,calc(100vw - 40px));padding:20px;border:1px solid #d1d5db;border-radius:16px;background:#fff}
+.alert{box-sizing:border-box;display:flex;position:relative;width:100%;margin:0;padding:8px 16px;border:2px solid #006ce0;border-radius:12px;background:#f0fbff;color:#0f141a;box-shadow:none;opacity:1;font-family:"Open Sans","Helvetica Neue",Roboto,Arial,sans-serif;font-size:14px;font-weight:400;line-height:20px;letter-spacing:normal;animation:cloudscape-alert-fade-in 180ms ease-out 0ms 1 normal both}
+.alert-wrapper{display:flex;width:100%;margin:0;padding:0}
+.alert-focus-wrapper{display:grid;grid-template-columns:20px minmax(0,1fr);width:100%;margin:0;padding:0}
+.icon-wrap{display:block;width:16px;height:20px;margin:4px 4px 4px 0;padding:2px 0;color:#006ce0}
+.info-icon{display:inline-block;width:16px;height:16px;color:#006ce0;vertical-align:top}
+.message{display:block;min-width:0;margin:4px;padding:2px 0;color:#0f141a}
+.header{display:block;font-size:14px;font-weight:700;line-height:20px}
+.content{display:block;font-size:14px;font-weight:400;line-height:20px;white-space:normal;overflow-wrap:break-word;word-break:normal;text-overflow:clip}
+@keyframes cloudscape-alert-fade-in{0%{opacity:.2}100%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.alert{animation:none}}
+</style>
+</head>
+<body>
+<main class="preview-surface" aria-label="Measured Cloudscape Info Alert preview">
+<div class="alert" data-variant="info">
+<div class="alert-wrapper"><div class="alert-focus-wrapper" role="group">
+<span class="icon-wrap" role="img" aria-label="Info"><svg class="info-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12V7M8 6V4" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+<div class="message"><div class="header">Known issues/limitations</div><div class="content">Review the documentation to learn about potential compatibility issues with specific database versions.</div></div>
+</div></div>
+</div>
+</main>
+</body>
+</html>

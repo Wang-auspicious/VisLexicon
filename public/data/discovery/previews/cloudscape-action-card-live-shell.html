@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloudscape Action Card — measured reconstruction</title>
+<style>
+@font-face { font-family: "Open Sans"; src: url("/data/discovery/fonts/open-sans-400.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Open Sans"; src: url("/data/discovery/fonts/open-sans-700.woff2") format("woff2"); font-style: normal; font-weight: 700; font-display: swap; }
+:root { color-scheme: light; font-family: "Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif; color: #0f141a; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 20px; background: #fff; }
+.preview-stage { width: min(100%, 564.453125px); }
+.action-card { position: relative; display: flex; width: 100%; min-height: 80px; padding: 0; border: 0; border-radius: 16px; background: rgb(255,255,255); color: rgb(15,20,26); transition: background-color 180ms ease-out; }
+.action-card::after { content: ""; position: absolute; inset: 0; border: 1px solid rgb(0,108,224); border-radius: 16px; pointer-events: none; }
+.action-card:has(.card-heading:hover) { background: rgb(240,251,255); }
+.action-card:has(.card-heading:hover)::after { border-color: rgb(0,43,102); }
+.action-card:has(.card-heading:active) { background: rgb(209,241,255); }
+.action-card:has(.card-heading:focus-visible)::before { content: " "; position: absolute; inset: 0; border-radius: 16px; box-shadow: 0 0 0 2px rgb(0,108,224); pointer-events: none; }
+.card-content { display: flex; width: 100%; flex-direction: column; gap: 0; min-width: 0; padding: 0; }
+.card-header-row { display: flex; width: 100%; min-height: 40px; align-items: flex-start; padding: 16px 20px 4px; }
+.card-heading { all: unset; display: inline-block; flex: none; min-width: 0; width: auto; padding: 0; margin: 0; background: transparent; color: inherit; cursor: pointer; font: 700 16px/20px "Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif; letter-spacing: -0.08px; text-align: left; }
+.card-heading::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: 16px; }
+.card-description { width: 100%; margin: 0; padding: 4px 8px 16px 20px; font: 400 14px/20px "Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif; }
+.card-icon { flex: none; width: 16px; height: 16px; margin-top: 2px; margin-left: auto; color: rgb(0,108,224); }
+@media (max-width: 600px) { .preview-stage { width: min(308px, 100%); margin-inline: auto; } }
+@media (prefers-reduced-motion: reduce) { .action-card { transition-duration: 0s; } }
+</style>
+</head>
+<body>
+<main class="preview-stage">
+  <div class="action-card" role="group" aria-labelledby="card-heading">
+    <div class="card-content">
+      <div class="card-header-row">
+        <button class="card-heading" id="card-heading" type="button" aria-describedby="card-description">Action card header</button>
+        <svg class="card-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m5 2 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg>
+      </div>
+      <p class="card-description" id="card-description">This is the main content of the action card.</p>
+    </div>
+  </div>
+</main>
+</body>
+</html>
