@@ -4,6 +4,7 @@ import fs from 'node:fs'
 import {applyModelRanking,explicitConflicts,rerankPool,wantsComponentInstance} from '../src/lib/component-discovery.js'
 import {visualConstraints} from '../src/lib/component-constraints.js'
 import {createRefinementStore,selectDiscoveryCandidates} from '../server/discovery-refinement.mjs'
+import {loadDiscoveryIndex} from '../server/discovery-index.mjs'
 
 const published=JSON.parse(fs.readFileSync(new URL('../public/data/discovery/index.json',import.meta.url),'utf8'))
 const links=published.units.filter(unit=>unit.kind==='website-component'&&unit.componentType==='link')
@@ -36,6 +37,15 @@ test('ambiguous Link recall still requires a qualifying Jev score',()=>{
   const token=store.save(query,index,selected.candidates,rejected)
   assert.equal(store.page(token,index,byId).total,0)
   assert.equal(applyModelRanking(query,links,[{id:primary.id,score:2}]).length,1)
+})
+
+test('curation-wide Link recall reaches the bounded Jev pool without site substitutes',async()=>{
+  const query='蓝色带下划线的链接',index=await loadDiscoveryIndex(process.cwd(),'curation',''),byId=new Map(index.units.map(unit=>[unit.id,unit]))
+  const selected=selectDiscoveryCandidates(query,index,byId,createRefinementStore())
+  assert.ok(index.units.length>links.length)
+  assert.ok(selected.candidates.length>0&&selected.candidates.length<=32)
+  assert.ok(selected.candidates.some(({unit})=>unit.id===primary.id))
+  assert.ok(selected.candidates.every(({unit})=>unit.kind!=='curated-site'))
 })
 
 test('bare blue still constrains Button fill and Link requests exclude whole sites',()=>{
