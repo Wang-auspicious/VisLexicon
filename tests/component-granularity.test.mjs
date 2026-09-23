@@ -9,14 +9,13 @@ import { loadComponentDrafts } from '../server/component-drafts.mjs'
 const site={id:'site--magic-ui',kind:'curated-site',componentType:'website',nameZh:'黑白动效按钮组件库',tags:['button'],descriptionZh:'按钮网站'}
 const button={id:'button--example',kind:'website-component',componentType:'button',nameZh:'黑白动效按钮',tags:['button'],descriptionZh:'具体按钮'}
 const query='我想找一套带动效的黑白风格的button组件'
-test('the main search shows local buttons before and after an empty published response without opening an archive',()=>{
+test('private draft buttons stay out of public search',()=>{
   const draft={...button,scope:'curation',theme:'button',themes:['ui-implementation'],verification:'draft'}
   for(const response of [null,{mode:'empty',rows:[]}]) {
     const rows=discoveryResults('我要找一个button的组件',[site],response,{scope:'curation',drafts:[draft]})
-    assert.deepEqual(rows.map(row=>row.unit.id),[draft.id])
-    assert.equal(rows[0].unit.verification,'draft')
+    assert.deepEqual(rows.map(row=>row.unit.id),[])
   }
-  assert.equal(discoveryResults('button',[site],{rows:[]},{scope:'curation',theme:'ui-implementation',drafts:[draft]}).length,1)
+  assert.equal(discoveryResults('button',[site],{rows:[]},{scope:'curation',theme:'ui-implementation',drafts:[draft]}).length,0)
   assert.equal(discoveryResults('button',[site],{rows:[]},{scope:'curation',theme:'visual-assets',drafts:[draft]}).length,0)
   assert.equal(discoveryResults('button',[],{rows:[]},{scope:'skills',drafts:[draft]}).length,0)
   assert.equal(discoveryResults('我要找一个button的网站',[site],{rows:[]},{scope:'curation',drafts:[draft]}).length,0)

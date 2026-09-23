@@ -1,11 +1,13 @@
 // Evidence retrieval is independent from the model. Model output can only reorder known IDs.
-import { matchesRequirements, inTheme } from './discovery-scopes.js'
+import { matchesRequirements } from './discovery-scopes.js'
+import { visualConflicts } from './component-constraints.js'
 export const DISCOVERY_INDEX_URL = '/data/discovery/index.json'
 const ALIASES = [
   [/按钮|button|cta/iu,['按钮','button']], [/虚线|dash/iu,['虚线','dashed']],
   [/描边|空心|outline/iu,['描边','outline']], [/浅底|轻染|soft.tint/iu,['浅底','soft tinted']],
   [/透明|ghost/iu,['透明','transparent','ghost']], [/圆形|圆的|circle|circular/iu,['circle','圆形']],
   [/黑|black|monochrome/iu,['black','近黑','黑底']], [/蓝|blue|indigo/iu,['blue','靛蓝','天蓝']],
+  [/紫|purple|violet/iu,['purple','紫色','violet']],
   [/粉|玫红|pink|magenta/iu,['pink','玫红']], [/绿|green|teal/iu,['green','绿色','青绿']],
   [/登录|登入|login|sign.in/iu,['login','登录']], [/卡片|card/iu,['card','卡片']],
   [/悬停|鼠标放上|鼠标移上|hover/iu,['hover','悬停']], [/抬起|浮起|上浮|lift/iu,['lift','抬起']],
@@ -33,11 +35,13 @@ export function wantsComponentInstance(query) {
 }
 export function explicitConflicts(query, unit) {
   const q=query.toLowerCase(), conflicts=[]
+  conflicts.push(...visualConflicts(query,unit))
   if(wantsComponentInstance(query)&&unit.kind==='curated-site')conflicts.push('需要具体组件实例，不能用整站代替')
   if(!matchesRequirements(query,unit))conflicts.push('缺少满足费用或源码条件的同一份资源证据')
+  if(/动画|动效|弹簧|\banimation\b|\bspring\b/iu.test(q)&&!/(?:不要|不用|无|别).{0,3}(?:动画|动效)|(?:no|without)\s+animation/iu.test(q)&&unit.interaction?.activeMotion===false)conflicts.push('要求运动，实测实例为静态')
   if(/(?:不要|不用|无|别)[^，。,.]{0,4}(?:发光|光晕|光效)|(?:no|without)\s+(?:glow|glowing)/u.test(q) && /hover--(?:glow|gradborder)$/.test(unit.id)) conflicts.push('要求无光效')
   if(/(?:不要|不用|无|别)[^，。,.]{0,3}(?:动画|动效)|(?:no|without)\s+animation|完全静止/u.test(q) && (unit.interaction?.activeMotion===true||unit.interaction?.trigger==='autoplay'||unit.interaction?.capturedState==='loading-demo')) conflicts.push('要求静止')
-  if(/不要[^，。,.]{0,3}虚线|no\s+dashed/u.test(q) && unit.visual?.style==='dash') conflicts.push('排除虚线')
+  if(/不要[^，。,.]{0,3}虚线|no\s+dashed/u.test(q) && (unit.visual?.style==='dash'||unit.visual?.computed?.borderStyle==='dashed')) conflicts.push('排除虚线')
   if(/不要[^，。,.]{0,3}圆形|no\s+circular/u.test(q) && unit.visual?.shape==='circle') conflicts.push('排除圆形')
   return conflicts
 }
@@ -75,13 +79,8 @@ export function applyModelRanking(query, units, modelRows) {
   return modelRows.filter(row=>byId.has(row.id)&&!seen.has(row.id)&&seen.add(row.id)&&Number.isFinite(row.score)&&row.score>=0&&row.score<=3&&!explicitConflicts(query,byId.get(row.id)).length)
     .sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id)).map(row=>({unit:byId.get(row.id),score:row.score,confidence:row.confidence,matched:[],conflicts:[]}))
 }
-// Local drafts remain separate from published candidates and are never sent to Jev.
-// An empty model response must not erase local component observations.
-export function discoveryResults(query, units, response, {scope,theme='',drafts=[],limit=12}={}) {
-  const published=response?applyModelRanking(query,units,response.rows).filter(row=>row.score>=1.4):lexicalCandidates(query,units,{limit})
-  if(scope!=='curation'||!wantsComponentInstance(query))return published.slice(0,limit)
-  const buttonQuery=/按钮|\bbuttons?\b/iu.test(query)
-  const eligible=drafts.filter(unit=>unit.verification==='draft'&&unit.scope===scope&&inTheme(unit,theme)&&(!buttonQuery||unit.componentType==='button'))
-  const seen=new Set(published.map(row=>row.unit.id))
-  return [...published,...lexicalCandidates(query,eligible,{limit}).filter(row=>!seen.has(row.unit.id))].slice(0,limit)
+// Public discovery receives only the published index. Private capture drafts
+// stay in the local ledger and never become search cards.
+export function discoveryResults(query, units, response, {limit=12}={}) {
+  return (response?applyModelRanking(query,units,response.rows).filter(row=>row.score>=1.4):lexicalCandidates(query,units,{limit})).slice(0,limit)
 }
