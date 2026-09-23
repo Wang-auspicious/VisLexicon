@@ -64,8 +64,8 @@ function SearchSession({index,scope,theme,en,reload,initialQuery}) {
   const [query,setQuery]=useState(initialQuery||initial.query),[pinnedCards,setPinnedCards]=useState(initial.pinnedCards||[]),[composing,setComposing]=useState(false)
   const [response,setResponse]=useState(null),[status,setStatus]=useState('idle'),[retry,setRetry]=useState(0),[expanded,setExpanded]=useState(true)
   const [loadingMore,setLoadingMore]=useState(false),[pageError,setPageError]=useState(false)
-  const sequence=useRef(0),sessionId=useRef(null),lastCompleted=useRef(null),knownUnits=useRef(new Map((initial.pinnedCards||[]).map(unit=>[unit.id,unit]))),versionSeen=useRef(index.generatedAt),config=DISCOVERY_SCOPES[scope]
-  if(!sessionId.current)sessionId.current=globalThis.crypto.randomUUID()
+  const [sessionId]=useState(()=>globalThis.crypto.randomUUID())
+  const sequence=useRef(0),lastCompleted=useRef(null),knownUnits=useRef(new Map((initial.pinnedCards||[]).map(unit=>[unit.id,unit]))),versionSeen=useRef(index.generatedAt),config=DISCOVERY_SCOPES[scope]
   const topic=index.themeMeta?.[theme]||index.themeMeta?.['']||{count:0,componentCount:0,curatedSiteCount:0,examples:[]}
   useEffect(()=>{sessions.set(sessionKey,{query,pinnedCards,indexVersion:index.generatedAt})},[sessionKey,query,pinnedCards,index.generatedAt])
   useEffect(()=>{
@@ -85,7 +85,7 @@ function SearchSession({index,scope,theme,en,reload,initialQuery}) {
       try {
         const previous=lastCompleted.current
         const refineToken=previous?.indexVersion===index.generatedAt&&query.startsWith(previous.query)&&query.length>previous.query.length?previous.token:null
-        const {res,data}=await searchWithBusyRetry({query,scope,theme,sessionId:sessionId.current,requestId:version,refineToken},controller.signal)
+        const {res,data}=await searchWithBusyRetry({query,scope,theme,sessionId,requestId:version,refineToken},controller.signal)
         if(!res.ok)throw new Error(data.error||'MODEL_UNAVAILABLE')
         if(version!==sequence.current||controller.signal.aborted)return
         if(data.scope!==scope||data.theme!==theme)throw new Error('SCOPE_MISMATCH')
@@ -96,7 +96,7 @@ function SearchSession({index,scope,theme,en,reload,initialQuery}) {
       }catch{if(!controller.signal.aborted&&version===sequence.current)setStatus('fallback')}
     },850)
     return()=>{clearTimeout(timer);controller.abort()}
-  },[query,index,scope,theme,composing,retry,reload])
+  },[query,index,scope,theme,sessionId,composing,retry,reload])
   const currentResponse=response?.query===query?response:null
   const ranked=currentResponse?.mode==='jev'?currentResponse.units||[]:[]
   const pinned=pinnedCards
