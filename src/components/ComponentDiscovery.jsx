@@ -73,7 +73,7 @@ function SearchSession({index,scope,theme,en,reload,initialQuery}) {
   },[index.generatedAt,query])
   const updateQuery=value=>{
     const previous=lastCompleted.current
-    if(previous&&(!value.trim().startsWith(previous.query)||value.trim().length<previous.query.length))lastCompleted.current=null
+    if(previous&&(!value.startsWith(previous.query)||value.length<previous.query.length))lastCompleted.current=null
     setQuery(value);setResponse(null);setStatus(value.trim()?'waiting':'idle');setExpanded(true);setPageError(false)
   }
   useEffect(()=>{
@@ -83,14 +83,14 @@ function SearchSession({index,scope,theme,en,reload,initialQuery}) {
       setStatus('ranking')
       try {
         const previous=lastCompleted.current
-        const refineToken=previous?.indexVersion===index.generatedAt&&query.trim().startsWith(previous.query)&&query.trim().length>previous.query.length?previous.token:null
-        const {res,data}=await searchWithBusyRetry({query:query.trim(),scope,theme,requestId:version,refineToken},controller.signal)
+        const refineToken=previous?.indexVersion===index.generatedAt&&query.startsWith(previous.query)&&query.length>previous.query.length?previous.token:null
+        const {res,data}=await searchWithBusyRetry({query,scope,theme,requestId:version,refineToken},controller.signal)
         if(!res.ok)throw new Error(data.error||'MODEL_UNAVAILABLE')
         if(version!==sequence.current||controller.signal.aborted)return
         if(data.scope!==scope||data.theme!==theme)throw new Error('SCOPE_MISMATCH')
         if(data.indexVersion!==index.generatedAt){reload();return}
         for(const unit of data.units||[])knownUnits.current.set(unit.id,unit)
-        lastCompleted.current={query:query.trim(),token:data.refineToken,indexVersion:data.indexVersion}
+        lastCompleted.current={query,token:data.refineToken,indexVersion:data.indexVersion}
         setResponse({...data,query});setStatus('ready')
       }catch{if(!controller.signal.aborted&&version===sequence.current)setStatus('fallback')}
     },850)

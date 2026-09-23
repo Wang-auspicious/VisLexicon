@@ -85,12 +85,12 @@ export default function GlobalSearch() {
     if(!index)return {terms:[],sites:[],termTotal:0,siteTotal:0,termUncertain:false,siteUncertain:false,signals:[]}
     return searchAll(searchSource||index,keyword,Infinity)
   },[index,keyword,searchSource])
-  useEffect(()=>{searchHistory.current=keyword.trim()&&index?{query:keyword.trim(),index,terms:results.terms,sites:results.sites}:null},[index,keyword,results])
+  useEffect(()=>{searchHistory.current=keyword.trim()&&index?{query:keyword,index,terms:results.terms,sites:results.sites}:null},[index,keyword,results])
   const updateKeyword=value=>{
-    const query=value.trim(),previous=searchHistory.current
+    const query=value,previous=searchHistory.current
     const refining=previous?.index===index&&query.startsWith(previous.query)&&query.length>previous.query.length
-    const old=keyword.trim()
-    if(old&&(!query.startsWith(old)||query.length<old.length))setSearchRevision(value=>value+1)
+    const old=keyword
+    if(old.trim()&&(!query.startsWith(old)||query.length<old.length))setSearchRevision(value=>value+1)
     setSearchSource(refining?{terms:previous.terms,sites:previous.sites}:null)
     setKeyword(value);setActive(0)
   }
@@ -112,9 +112,9 @@ export default function GlobalSearch() {
   }, [index, resources])
 
   useEffect(()=>{
-    const previous=lastComponent.current,query=keyword.trim()
+    const previous=lastComponent.current,query=keyword
     if(previous&&(!query.startsWith(previous.query)||query.length<previous.query.length))lastComponent.current=null
-    if(!query)return
+    if(!query.trim())return
     const controller=new AbortController()
     const timer=setTimeout(async()=>{
       const prior=lastComponent.current

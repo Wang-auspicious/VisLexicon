@@ -1,13 +1,13 @@
 {
   "schemaVersion": "component-instance/2.0",
-  "generatedAt": "2026-09-23T19:08:29.426Z",
+  "generatedAt": "2026-09-23T19:34:44.115Z",
   "batchId": "capture-v2",
   "counts": {
-    "rawObservations": 3084,
-    "indexedInstances": 193,
-    "websiteInstances": 191,
+    "rawObservations": 3085,
+    "indexedInstances": 200,
+    "websiteInstances": 198,
     "atlasEffects": 2,
-    "pendingDetail": 2408,
+    "pendingDetail": 2394,
     "classifiedNoncomponents": 324,
     "componentFragments": 62,
     "legacySamplesPending": 110,
@@ -17989,6 +17989,741 @@
       ]
     },
     {
+      "id": "element-plus-badge-element-plus-badge-0eaa825d55f7e9fda67c",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/badge",
+      "variantId": "element-plus-badge-0eaa825d55f7e9fda67c",
+      "instanceId": "element-plus-badge-element-plus-badge-0eaa825d55f7e9fda67c",
+      "kind": "website-component",
+      "componentType": "badge",
+      "nameZh": "Element Plus 右上偏移 1 计数 Badge",
+      "nameEn": "Element Plus offset top-right 1-count Badge",
+      "descriptionZh": "结构：这是 Element Plus 官方 offset 中一条右上偏移 10×5 的红色 1 计数。外层 DIV 包含原生 offset 按钮和右上 SUP，官方 offset 示例设置 :offset=\"[10, 5]\"，SUP 的 margin-right=-10px、margin-top=5px。\n\n尺寸与位置：1280×900 CSS 视口中外框 70.77×32px，按钮 70.765625×32px；SUP 为 18.890625×18px，左上角相对根框为 (70.77, -4)px。根框 overflow:visible，SUP 可以向外凸出。\n\n色彩与文字：按钮默认白底 rgb(255, 255, 255)、文字 rgb(96, 98, 102)，14px/500/14px；SUP 背景 rgb(245, 108, 108)、白字 12px，1px 白边，圆角 10px。未见图标、渐变或阴影。\n\n状态与运动：Button 悬停后底色到 rgb(236, 245, 255)、文字到 rgb(64, 158, 255)，边框经 100ms ease 过渡到 1px solid rgb(198, 226, 255)；按住时边框为 1px solid rgb(64, 158, 255)。键盘焦点可见时有 2px rgb(160, 207, 255) 外轮廓，偏移 1px。\n\n响应与边界：官方同节点在 390×844 CSS 视口仍是 70.765625×32px，SUP 保持相对位置；减少动态浏览器仿真下子按钮仍计算为 0.1s 过渡。触屏是模拟环境，未触发点击；源代码许可与商用权限未作正向认定。",
+      "descriptionEn": "Structure: This official offset instance shows a red single-count badge with 10 by 5 offset. The outer DIV contains a native offset Button and an upper-right SUP. The official offset example sets [10, 5], yielding SUP margin-right -10px and margin-top 5px.\n\nSize and position: At the 1280×900 CSS viewport the root is 70.77×32px and the Button is 70.765625×32px. The SUP is 18.890625×18px, positioned (70.77, -4)px relative to the root origin. Root overflow is visible, allowing the counter to protrude.\n\nColor and type: Default Button fill rgb(255, 255, 255) and text rgb(96, 98, 102), 14px/500/14px. The SUP has rgb(245, 108, 108) fill, 12px white text, a 1px white border and 10px corners. No icon, gradient or shadow was observed.\n\nStates and motion: Button hover changes fill to rgb(236, 245, 255), text to rgb(64, 158, 255) and border to 1px solid rgb(198, 226, 255) through a 100ms ease transition. Held press uses border 1px solid rgb(64, 158, 255). Focus-visible has a 2px rgb(160, 207, 255) outline offset by 1px.\n\nResponsive scope: The same official DOM node remains 70.765625×32px at the 390×844 CSS viewport, preserving SUP placement. In reduced-motion browser emulation the child Button still reports a 0.1s transition. Touch was emulated without a tap; code-license and commercial-use rights were not positively established.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/badge#offset",
+      "previewUrl": "/data/discovery/previews/element-plus-badge-element-plus-badge-0eaa825d55f7e9fda67c.html",
+      "previewKind": "measured-interactive-reconstruction",
+      "offers": [],
+      "tags": [
+        "徽章",
+        "badge",
+        "1 计数",
+        "DIV > BUTTON+SPAN 与同级 SUP",
+        "原生按钮上的计数徽章",
+        "70.765625×32px 根框",
+        "18.890625×18px SUP",
+        "10px",
+        "rgb(255, 255, 255)",
+        "rgb(245, 108, 108)",
+        "rgb(236, 245, 255)",
+        "扁平 CSS",
+        "无图标",
+        "Button offset 14px/500",
+        "SUP 1 12px",
+        "Button hover 100ms ease",
+        "focus-visible 外轮廓",
+        "pointer hover",
+        "held press",
+        "keyboard focus",
+        "Element Plus Badge docs",
+        "offset",
+        "Element Plus 右上偏移 1 计数 Badge",
+        "Element Plus offset top-right 1-count Badge",
+        "offset 1 badge"
+      ],
+      "tagFacets": {
+        "object": [
+          "徽章",
+          "badge",
+          "1 计数"
+        ],
+        "structure": [
+          "DIV > BUTTON+SPAN 与同级 SUP",
+          "原生按钮上的计数徽章"
+        ],
+        "shape": [
+          "70.765625×32px 根框",
+          "18.890625×18px SUP",
+          "10px"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(245, 108, 108)",
+          "rgb(236, 245, 255)"
+        ],
+        "material": [
+          "扁平 CSS",
+          "无图标"
+        ],
+        "typography": [
+          "Button offset 14px/500",
+          "SUP 1 12px"
+        ],
+        "motion": [
+          "Button hover 100ms ease",
+          "focus-visible 外轮廓"
+        ],
+        "trigger": [
+          "pointer hover",
+          "held press",
+          "keyboard focus"
+        ],
+        "context": [
+          "Element Plus Badge docs",
+          "offset"
+        ]
+      },
+      "visual": {
+        "xPx": 323.5,
+        "yPx": 434.03,
+        "widthPx": 70.77,
+        "heightPx": 32,
+        "sizingRule": "computed 70.77x32 CSS px inside a block parent measuring 947.00x90.00 px; no inline width/height",
+        "parent": "DIV.example-showcase 947×90px.",
+        "topLeftPx": 0,
+        "topRightPx": 0,
+        "bottomRightPx": 0,
+        "bottomLeftPx": 0,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "Root overflow visible; Button border 1px solid rgb(220, 223, 230), radius 4px; SUP border 1px solid rgb(255, 255, 255), radius 10px.",
+        "style": "ghost",
+        "computed": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(48, 49, 51)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": null
+        },
+        "colors": {
+          "context": "Official light Badge showcase parent {\"color\":\"rgb(255, 255, 255)\",\"from\":\"DIV.example-showcase\"}.",
+          "fill": "rgba(0, 0, 0, 0)",
+          "text": "rgb(96, 98, 102)",
+          "border": "0px none rgb(48, 49, 51)",
+          "icon": "No icon in this exact selected Button+SUP instance.",
+          "decoration": "Button fill rgb(255, 255, 255), border 1px solid rgb(220, 223, 230); SUP fill rgb(245, 108, 108), text rgb(255, 255, 255).",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Button “offset”; SUP “1”.",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Official measured Inter loaded, Button 14px/500/14px and SUP 12px/400/0px; original face probe {\"checked\":\"Inter\",\"genericKeyword\":false,\"loaded\":true,\"status\":\"loaded\"}.",
+          "alignment": "Button and SUP center aligned in their own flex boxes.",
+          "wrapping": "Both labels stay on one line in the measured 1280px and 390px examples.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 14,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 10,
+          "marginRightPx": 30,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-block",
+          "position": "relative",
+          "alignment": "Root inline-block/relative; Button inline-flex center/center; SUP absolute at top 0px, right 10px, transform matrix(1, 0, 0, 1, 18.8906, -9).",
+          "overflow": "visible",
+          "zIndex": "auto",
+          "children": [
+            "Button 70.765625×32px with label SPAN.",
+            "SUP 18.890625×18px, relative origin (70.77, -4)px."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Flat CSS Button fill and colored SUP counter; no raster media, gradient or texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enters child Button, pointer enters child Button, pointer enters child Button",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "background-color",
+            "from": "rgb(255, 255, 255)",
+            "to": "rgb(236, 245, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "color",
+            "from": "rgb(96, 98, 102)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "border-top-color",
+            "from": "rgb(220, 223, 230)",
+            "to": "rgb(198, 226, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          }
+        ]
+      },
+      "distinctionZh": "Official offset [10,5] shifts SUP to relative (70.77,-4)px with margin-right -10px/margin-top 5px, whereas peer SUP is (92.23,-9)px with zero offset.；Button label “offset” and 70.765625×32px versus “comments” and 102.234375×32px.",
+      "reconstructionPrompt": "重建 Element Plus 官方 右上偏移 10×5 的红色 1 计数 Badge：DIV.el-badge.item 为 70.765625×32px、inline-block/relative，包含原生 BUTTON 70.765625×32px 与同级 SUP “1” 18.890625×18px；按钮文字“offset”，Inter 14px/500/14px，白底 rgb(255, 255, 255)、边框 1px solid rgb(220, 223, 230)、圆角 4px。SUP 背景 rgb(245, 108, 108)、白字12px、边框 1px solid rgb(255, 255, 255)、圆角 10px，top:0px right:10px transform:matrix(1, 0, 0, 1, 18.8906, -9)，相对根框 (70.77,-4)px。悬停 Button 用 rgb(236, 245, 255)/rgb(64, 158, 255)/1px solid rgb(198, 226, 255)，transition:all 100ms ease；按住边框 1px solid rgb(64, 158, 255)；focus-visible 外轮廓 2px rgb(160, 207, 255) offset 1px。390px 根框 70.765625×32px。不要移除原生 Button、把 SUP 放入 Button、改动颜色/数值封顶/偏移，或补造点击反馈；未核实的许可不得写成可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One Badge root, its native Button+SPAN and SUP; 1280×900 and 390×844 CSS viewports. Held press released off target. Touch/reduced-motion are browser emulations; no physical device or click activation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找右上偏移 10×5 的红色 1 计数的 Element Plus Badge",
+        "需要offset按钮上显示 1 的右上计数",
+        "要 SUP 为 rgb(245, 108, 108) 且按钮悬停过渡 100ms 的徽章"
+      ]
+    },
+    {
+      "id": "element-plus-badge-element-plus-badge-15476e726dbcdbecb9b5",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/badge",
+      "variantId": "element-plus-badge-15476e726dbcdbecb9b5",
+      "instanceId": "element-plus-badge-element-plus-badge-15476e726dbcdbecb9b5",
+      "kind": "website-component",
+      "componentType": "badge",
+      "nameZh": "Element Plus 琥珀色 2 回复计数 Badge",
+      "nameEn": "Element Plus amber 2 reply-count Badge",
+      "descriptionZh": "结构：这是 Element Plus 官方 basic-usage 中一条琥珀色 2 条回复计数。外层 DIV 包含原生 replies 按钮和右上 SUP，官方 basic-usage 的 type=\"warning\" 使 SUP 呈琥珀色。\n\n尺寸与位置：1280×900 CSS 视口中外框 76.84×32px，按钮 76.84375×32px；SUP 为 21.328125×18px，左上角相对根框为 (66.84, -9)px。根框 overflow:visible，SUP 可以向外凸出。\n\n色彩与文字：按钮默认白底 rgb(255, 255, 255)、文字 rgb(96, 98, 102)，14px/500/14px；SUP 背景 rgb(230, 162, 60)、白字 12px，1px 白边，圆角 10px。未见图标、渐变或阴影。\n\n状态与运动：Button 悬停后底色到 rgb(236, 245, 255)、文字到 rgb(64, 158, 255)，边框经 100ms ease 过渡到 1px solid rgb(198, 226, 255)；按住时边框为 1px solid rgb(64, 158, 255)。键盘焦点可见时有 2px rgb(160, 207, 255) 外轮廓，偏移 1px。\n\n响应与边界：官方同节点在 390×844 CSS 视口仍是 76.84375×32px，SUP 保持相对位置；减少动态浏览器仿真下子按钮仍计算为 0.1s 过渡。触屏是模拟环境，未触发点击；源代码许可与商用权限未作正向认定。",
+      "descriptionEn": "Structure: This official basic-usage instance shows a amber two-reply count. The outer DIV contains a native replies Button and an upper-right SUP. The official basic example sets type warning for an amber count.\n\nSize and position: At the 1280×900 CSS viewport the root is 76.84×32px and the Button is 76.84375×32px. The SUP is 21.328125×18px, positioned (66.84, -9)px relative to the root origin. Root overflow is visible, allowing the counter to protrude.\n\nColor and type: Default Button fill rgb(255, 255, 255) and text rgb(96, 98, 102), 14px/500/14px. The SUP has rgb(230, 162, 60) fill, 12px white text, a 1px white border and 10px corners. No icon, gradient or shadow was observed.\n\nStates and motion: Button hover changes fill to rgb(236, 245, 255), text to rgb(64, 158, 255) and border to 1px solid rgb(198, 226, 255) through a 100ms ease transition. Held press uses border 1px solid rgb(64, 158, 255). Focus-visible has a 2px rgb(160, 207, 255) outline offset by 1px.\n\nResponsive scope: The same official DOM node remains 76.84375×32px at the 390×844 CSS viewport, preserving SUP placement. In reduced-motion browser emulation the child Button still reports a 0.1s transition. Touch was emulated without a tap; code-license and commercial-use rights were not positively established.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/badge#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-badge-element-plus-badge-15476e726dbcdbecb9b5.html",
+      "previewKind": "measured-interactive-reconstruction",
+      "offers": [],
+      "tags": [
+        "徽章",
+        "badge",
+        "2 计数",
+        "DIV > BUTTON+SPAN 与同级 SUP",
+        "原生按钮上的计数徽章",
+        "76.84375×32px 根框",
+        "21.328125×18px SUP",
+        "10px",
+        "rgb(255, 255, 255)",
+        "rgb(230, 162, 60)",
+        "rgb(236, 245, 255)",
+        "扁平 CSS",
+        "无图标",
+        "Button replies 14px/500",
+        "SUP 2 12px",
+        "Button hover 100ms ease",
+        "focus-visible 外轮廓",
+        "pointer hover",
+        "held press",
+        "keyboard focus",
+        "Element Plus Badge docs",
+        "basic-usage",
+        "Element Plus 琥珀色 2 回复计数 Badge",
+        "Element Plus amber 2 reply-count Badge",
+        "replies 2 badge"
+      ],
+      "tagFacets": {
+        "object": [
+          "徽章",
+          "badge",
+          "2 计数"
+        ],
+        "structure": [
+          "DIV > BUTTON+SPAN 与同级 SUP",
+          "原生按钮上的计数徽章"
+        ],
+        "shape": [
+          "76.84375×32px 根框",
+          "21.328125×18px SUP",
+          "10px"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(230, 162, 60)",
+          "rgb(236, 245, 255)"
+        ],
+        "material": [
+          "扁平 CSS",
+          "无图标"
+        ],
+        "typography": [
+          "Button replies 14px/500",
+          "SUP 2 12px"
+        ],
+        "motion": [
+          "Button hover 100ms ease",
+          "focus-visible 外轮廓"
+        ],
+        "trigger": [
+          "pointer hover",
+          "held press",
+          "keyboard focus"
+        ],
+        "context": [
+          "Element Plus Badge docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 694.81,
+        "yPx": 514.09,
+        "widthPx": 76.84,
+        "heightPx": 32,
+        "sizingRule": "computed 76.84x32 CSS px inside a block parent measuring 947.00x90.00 px; no inline width/height",
+        "parent": "DIV.example-showcase 947×90px.",
+        "topLeftPx": 0,
+        "topRightPx": 0,
+        "bottomRightPx": 0,
+        "bottomLeftPx": 0,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "Root overflow visible; Button border 1px solid rgb(220, 223, 230), radius 4px; SUP border 1px solid rgb(255, 255, 255), radius 10px.",
+        "style": "ghost",
+        "computed": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(48, 49, 51)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": null
+        },
+        "colors": {
+          "context": "Official light Badge showcase parent {\"color\":\"rgb(255, 255, 255)\",\"from\":\"DIV.example-showcase\"}.",
+          "fill": "rgba(0, 0, 0, 0)",
+          "text": "rgb(96, 98, 102)",
+          "border": "0px none rgb(48, 49, 51)",
+          "icon": "No icon in this exact selected Button+SUP instance.",
+          "decoration": "Button fill rgb(255, 255, 255), border 1px solid rgb(220, 223, 230); SUP fill rgb(230, 162, 60), text rgb(255, 255, 255).",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Button “replies”; SUP “2”.",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Official measured Inter loaded, Button 14px/500/14px and SUP 12px/400/0px; original face probe {\"checked\":\"Inter\",\"genericKeyword\":false,\"loaded\":true,\"status\":\"loaded\"}.",
+          "alignment": "Button and SUP center aligned in their own flex boxes.",
+          "wrapping": "Both labels stay on one line in the measured 1280px and 390px examples.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 14,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 10,
+          "marginRightPx": 30,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-block",
+          "position": "relative",
+          "alignment": "Root inline-block/relative; Button inline-flex center/center; SUP absolute at top 0px, right 10px, transform matrix(1, 0, 0, 1, 21.3281, -9).",
+          "overflow": "visible",
+          "zIndex": "auto",
+          "children": [
+            "Button 76.84375×32px with label SPAN.",
+            "SUP 21.328125×18px, relative origin (66.84, -9)px."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Flat CSS Button fill and colored SUP counter; no raster media, gradient or texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enters child Button, pointer enters child Button, pointer enters child Button",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "background-color",
+            "from": "rgb(255, 255, 255)",
+            "to": "rgb(236, 245, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "color",
+            "from": "rgb(96, 98, 102)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "border-top-color",
+            "from": "rgb(220, 223, 230)",
+            "to": "rgb(198, 226, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          }
+        ]
+      },
+      "distinctionZh": "SUP background rgb(230, 162, 60) versus rgb(245, 108, 108); displayed label “2” versus “3”.；Both examples use the same replies Button geometry, but this SUP renders “2” at 21.328125px versus the red peer “3” at 21.421875px.",
+      "reconstructionPrompt": "重建 Element Plus 官方 琥珀色 2 条回复计数 Badge：DIV.el-badge.item 为 76.84375×32px、inline-block/relative，包含原生 BUTTON 76.84375×32px 与同级 SUP “2” 21.328125×18px；按钮文字“replies”，Inter 14px/500/14px，白底 rgb(255, 255, 255)、边框 1px solid rgb(220, 223, 230)、圆角 4px。SUP 背景 rgb(230, 162, 60)、白字12px、边框 1px solid rgb(255, 255, 255)、圆角 10px，top:0px right:10px transform:matrix(1, 0, 0, 1, 21.3281, -9)，相对根框 (66.84,-9)px。悬停 Button 用 rgb(236, 245, 255)/rgb(64, 158, 255)/1px solid rgb(198, 226, 255)，transition:all 100ms ease；按住边框 1px solid rgb(64, 158, 255)；focus-visible 外轮廓 2px rgb(160, 207, 255) offset 1px。390px 根框 76.84375×32px。不要移除原生 Button、把 SUP 放入 Button、改动颜色/数值封顶/偏移，或补造点击反馈；未核实的许可不得写成可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One Badge root, its native Button+SPAN and SUP; 1280×900 and 390×844 CSS viewports. Held press released off target. Touch/reduced-motion are browser emulations; no physical device or click activation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找琥珀色 2 条回复计数的 Element Plus Badge",
+        "需要replies按钮上显示 2 的右上计数",
+        "要 SUP 为 rgb(230, 162, 60) 且按钮悬停过渡 100ms 的徽章"
+      ]
+    },
+    {
+      "id": "element-plus-badge-element-plus-badge-593e9a9ac821cd6cf2bf",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/badge",
+      "variantId": "element-plus-badge-593e9a9ac821cd6cf2bf",
+      "instanceId": "element-plus-badge-element-plus-badge-593e9a9ac821cd6cf2bf",
+      "kind": "website-component",
+      "componentType": "badge",
+      "nameZh": "Element Plus 红色 12 评论计数 Badge",
+      "nameEn": "Element Plus red 12 comment-count Badge",
+      "descriptionZh": "结构：这是 Element Plus 官方 basic-usage 中一条危险红色 12 条评论计数。外层 DIV 包含原生 comments 按钮和右上 SUP，官方 basic-usage 用 :value=\"12\"，SUP 显示 12。\n\n尺寸与位置：1280×900 CSS 视口中外框 102.23×32px，按钮 102.234375×32px；SUP 为 26.203125×18px，左上角相对根框为 (92.23, -9)px。根框 overflow:visible，SUP 可以向外凸出。\n\n色彩与文字：按钮默认白底 rgb(255, 255, 255)、文字 rgb(96, 98, 102)，14px/500/14px；SUP 背景 rgb(245, 108, 108)、白字 12px，1px 白边，圆角 10px。未见图标、渐变或阴影。\n\n状态与运动：Button 悬停后底色到 rgb(236, 245, 255)、文字到 rgb(64, 158, 255)，边框经 100ms ease 过渡到 1px solid rgb(198, 226, 255)；按住时边框为 1px solid rgb(64, 158, 255)。键盘焦点可见时有 2px rgb(160, 207, 255) 外轮廓，偏移 1px。\n\n响应与边界：官方同节点在 390×844 CSS 视口仍是 102.234375×32px，SUP 保持相对位置；减少动态浏览器仿真下子按钮仍计算为 0.1s 过渡。触屏是模拟环境，未触发点击；源代码许可与商用权限未作正向认定。",
+      "descriptionEn": "Structure: This official basic-usage instance shows a red 12-comment count. The outer DIV contains a native comments Button and an upper-right SUP. The official basic example binds value 12 and displays 12.\n\nSize and position: At the 1280×900 CSS viewport the root is 102.23×32px and the Button is 102.234375×32px. The SUP is 26.203125×18px, positioned (92.23, -9)px relative to the root origin. Root overflow is visible, allowing the counter to protrude.\n\nColor and type: Default Button fill rgb(255, 255, 255) and text rgb(96, 98, 102), 14px/500/14px. The SUP has rgb(245, 108, 108) fill, 12px white text, a 1px white border and 10px corners. No icon, gradient or shadow was observed.\n\nStates and motion: Button hover changes fill to rgb(236, 245, 255), text to rgb(64, 158, 255) and border to 1px solid rgb(198, 226, 255) through a 100ms ease transition. Held press uses border 1px solid rgb(64, 158, 255). Focus-visible has a 2px rgb(160, 207, 255) outline offset by 1px.\n\nResponsive scope: The same official DOM node remains 102.234375×32px at the 390×844 CSS viewport, preserving SUP placement. In reduced-motion browser emulation the child Button still reports a 0.1s transition. Touch was emulated without a tap; code-license and commercial-use rights were not positively established.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/badge#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-badge-element-plus-badge-593e9a9ac821cd6cf2bf.html",
+      "previewKind": "measured-interactive-reconstruction",
+      "offers": [],
+      "tags": [
+        "徽章",
+        "badge",
+        "12 计数",
+        "DIV > BUTTON+SPAN 与同级 SUP",
+        "原生按钮上的计数徽章",
+        "102.234375×32px 根框",
+        "26.203125×18px SUP",
+        "10px",
+        "rgb(255, 255, 255)",
+        "rgb(245, 108, 108)",
+        "rgb(236, 245, 255)",
+        "扁平 CSS",
+        "无图标",
+        "Button comments 14px/500",
+        "SUP 12 12px",
+        "Button hover 100ms ease",
+        "focus-visible 外轮廓",
+        "pointer hover",
+        "held press",
+        "keyboard focus",
+        "Element Plus Badge docs",
+        "basic-usage",
+        "Element Plus 红色 12 评论计数 Badge",
+        "Element Plus red 12 comment-count Badge",
+        "comments 12 badge"
+      ],
+      "tagFacets": {
+        "object": [
+          "徽章",
+          "badge",
+          "12 计数"
+        ],
+        "structure": [
+          "DIV > BUTTON+SPAN 与同级 SUP",
+          "原生按钮上的计数徽章"
+        ],
+        "shape": [
+          "102.234375×32px 根框",
+          "26.203125×18px SUP",
+          "10px"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(245, 108, 108)",
+          "rgb(236, 245, 255)"
+        ],
+        "material": [
+          "扁平 CSS",
+          "无图标"
+        ],
+        "typography": [
+          "Button comments 14px/500",
+          "SUP 12 12px"
+        ],
+        "motion": [
+          "Button hover 100ms ease",
+          "focus-visible 外轮廓"
+        ],
+        "trigger": [
+          "pointer hover",
+          "held press",
+          "keyboard focus"
+        ],
+        "context": [
+          "Element Plus Badge docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 323.5,
+        "yPx": 514.09,
+        "widthPx": 102.23,
+        "heightPx": 32,
+        "sizingRule": "computed 102.23x32 CSS px inside a block parent measuring 947.00x90.00 px; no inline width/height",
+        "parent": "DIV.example-showcase 947×90px.",
+        "topLeftPx": 0,
+        "topRightPx": 0,
+        "bottomRightPx": 0,
+        "bottomLeftPx": 0,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "Root overflow visible; Button border 1px solid rgb(220, 223, 230), radius 4px; SUP border 1px solid rgb(255, 255, 255), radius 10px.",
+        "style": "ghost",
+        "computed": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(48, 49, 51)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": null
+        },
+        "colors": {
+          "context": "Official light Badge showcase parent {\"color\":\"rgb(255, 255, 255)\",\"from\":\"DIV.example-showcase\"}.",
+          "fill": "rgba(0, 0, 0, 0)",
+          "text": "rgb(96, 98, 102)",
+          "border": "0px none rgb(48, 49, 51)",
+          "icon": "No icon in this exact selected Button+SUP instance.",
+          "decoration": "Button fill rgb(255, 255, 255), border 1px solid rgb(220, 223, 230); SUP fill rgb(245, 108, 108), text rgb(255, 255, 255).",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Button “comments”; SUP “12”.",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Official measured Inter loaded, Button 14px/500/14px and SUP 12px/400/0px; original face probe {\"checked\":\"Inter\",\"genericKeyword\":false,\"loaded\":true,\"status\":\"loaded\"}.",
+          "alignment": "Button and SUP center aligned in their own flex boxes.",
+          "wrapping": "Both labels stay on one line in the measured 1280px and 390px examples.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 14,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 10,
+          "marginRightPx": 30,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-block",
+          "position": "relative",
+          "alignment": "Root inline-block/relative; Button inline-flex center/center; SUP absolute at top 0px, right 10px, transform matrix(1, 0, 0, 1, 26.2031, -9).",
+          "overflow": "visible",
+          "zIndex": "auto",
+          "children": [
+            "Button 102.234375×32px with label SPAN.",
+            "SUP 26.203125×18px, relative origin (92.23, -9)px."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Flat CSS Button fill and colored SUP counter; no raster media, gradient or texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enters child Button, pointer enters child Button, pointer enters child Button",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "background-color",
+            "from": "rgb(255, 255, 255)",
+            "to": "rgb(236, 245, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "color",
+            "from": "rgb(96, 98, 102)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "border-top-color",
+            "from": "rgb(220, 223, 230)",
+            "to": "rgb(198, 226, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          }
+        ]
+      },
+      "distinctionZh": "This SUP directly displays “12” at 26.203125px, while the nearest peer displays capped “99+” at 36.828125px.；This source binds value 12 with no max prop; the peer binds value 200 with max 99, producing a capped count state.",
+      "reconstructionPrompt": "重建 Element Plus 官方 危险红色 12 条评论计数 Badge：DIV.el-badge.item 为 102.234375×32px、inline-block/relative，包含原生 BUTTON 102.234375×32px 与同级 SUP “12” 26.203125×18px；按钮文字“comments”，Inter 14px/500/14px，白底 rgb(255, 255, 255)、边框 1px solid rgb(220, 223, 230)、圆角 4px。SUP 背景 rgb(245, 108, 108)、白字12px、边框 1px solid rgb(255, 255, 255)、圆角 10px，top:0px right:10px transform:matrix(1, 0, 0, 1, 26.2031, -9)，相对根框 (92.23,-9)px。悬停 Button 用 rgb(236, 245, 255)/rgb(64, 158, 255)/1px solid rgb(198, 226, 255)，transition:all 100ms ease；按住边框 1px solid rgb(64, 158, 255)；focus-visible 外轮廓 2px rgb(160, 207, 255) offset 1px。390px 根框 102.234375×32px。不要移除原生 Button、把 SUP 放入 Button、改动颜色/数值封顶/偏移，或补造点击反馈；未核实的许可不得写成可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One Badge root, its native Button+SPAN and SUP; 1280×900 and 390×844 CSS viewports. Held press released off target. Touch/reduced-motion are browser emulations; no physical device or click activation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找危险红色 12 条评论计数的 Element Plus Badge",
+        "需要comments按钮上显示 12 的右上计数",
+        "要 SUP 为 rgb(245, 108, 108) 且按钮悬停过渡 100ms 的徽章"
+      ]
+    },
+    {
       "id": "element-plus-badge-element-plus-badge-b684e2846825931e905e",
       "entryId": "element-plus",
       "sourceEntity": "Element Plus",
@@ -18176,6 +18911,741 @@
         "找 query 文字右上角带 8px 红点的 Badge",
         "需要没有按钮的静态文本通知红点",
         "要红点外凸 4px 且白边的标记"
+      ]
+    },
+    {
+      "id": "element-plus-badge-element-plus-badge-b7ba68ca8baee051af93",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/badge",
+      "variantId": "element-plus-badge-b7ba68ca8baee051af93",
+      "instanceId": "element-plus-badge-element-plus-badge-b7ba68ca8baee051af93",
+      "kind": "website-component",
+      "componentType": "badge",
+      "nameZh": "Element Plus 上限 99+ 评论计数 Badge",
+      "nameEn": "Element Plus capped 99+ comment-count Badge",
+      "descriptionZh": "结构：这是 Element Plus 官方 max-value 中一条超过上限后显示 99+ 的评论计数。外层 DIV 包含原生 comments 按钮和右上 SUP，官方 max-value 给 value=200、max=99，实际 SUP 显示 99+；这体现数值封顶而非任意换字。\n\n尺寸与位置：1280×900 CSS 视口中外框 102.23×32px，按钮 102.234375×32px；SUP 为 36.828125×18px，左上角相对根框为 (92.23, -9)px。根框 overflow:visible，SUP 可以向外凸出。\n\n色彩与文字：按钮默认白底 rgb(255, 255, 255)、文字 rgb(96, 98, 102)，14px/500/14px；SUP 背景 rgb(245, 108, 108)、白字 12px，1px 白边，圆角 10px。未见图标、渐变或阴影。\n\n状态与运动：Button 悬停后底色到 rgb(236, 245, 255)、文字到 rgb(64, 158, 255)，边框经 100ms ease 过渡到 1px solid rgb(198, 226, 255)；按住时边框为 1px solid rgb(64, 158, 255)。键盘焦点可见时有 2px rgb(160, 207, 255) 外轮廓，偏移 1px。\n\n响应与边界：官方同节点在 390×844 CSS 视口仍是 102.234375×32px，SUP 保持相对位置；减少动态浏览器仿真下子按钮仍计算为 0.1s 过渡。触屏是模拟环境，未触发点击；源代码许可与商用权限未作正向认定。",
+      "descriptionEn": "Structure: This official max-value instance shows a comment count capped at 99+. The outer DIV contains a native comments Button and an upper-right SUP. The official max-value example sets value 200 and max 99, rendering 99+ rather than a literal arbitrary label.\n\nSize and position: At the 1280×900 CSS viewport the root is 102.23×32px and the Button is 102.234375×32px. The SUP is 36.828125×18px, positioned (92.23, -9)px relative to the root origin. Root overflow is visible, allowing the counter to protrude.\n\nColor and type: Default Button fill rgb(255, 255, 255) and text rgb(96, 98, 102), 14px/500/14px. The SUP has rgb(245, 108, 108) fill, 12px white text, a 1px white border and 10px corners. No icon, gradient or shadow was observed.\n\nStates and motion: Button hover changes fill to rgb(236, 245, 255), text to rgb(64, 158, 255) and border to 1px solid rgb(198, 226, 255) through a 100ms ease transition. Held press uses border 1px solid rgb(64, 158, 255). Focus-visible has a 2px rgb(160, 207, 255) outline offset by 1px.\n\nResponsive scope: The same official DOM node remains 102.234375×32px at the 390×844 CSS viewport, preserving SUP placement. In reduced-motion browser emulation the child Button still reports a 0.1s transition. Touch was emulated without a tap; code-license and commercial-use rights were not positively established.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/badge#max-value",
+      "previewUrl": "/data/discovery/previews/element-plus-badge-element-plus-badge-b7ba68ca8baee051af93.html",
+      "previewKind": "measured-interactive-reconstruction",
+      "offers": [],
+      "tags": [
+        "徽章",
+        "badge",
+        "99+ 计数",
+        "DIV > BUTTON+SPAN 与同级 SUP",
+        "原生按钮上的计数徽章",
+        "102.234375×32px 根框",
+        "36.828125×18px SUP",
+        "10px",
+        "rgb(255, 255, 255)",
+        "rgb(245, 108, 108)",
+        "rgb(236, 245, 255)",
+        "扁平 CSS",
+        "无图标",
+        "Button comments 14px/500",
+        "SUP 99+ 12px",
+        "Button hover 100ms ease",
+        "focus-visible 外轮廓",
+        "pointer hover",
+        "held press",
+        "keyboard focus",
+        "Element Plus Badge docs",
+        "max-value",
+        "Element Plus 上限 99+ 评论计数 Badge",
+        "Element Plus capped 99+ comment-count Badge",
+        "comments 99+ badge"
+      ],
+      "tagFacets": {
+        "object": [
+          "徽章",
+          "badge",
+          "99+ 计数"
+        ],
+        "structure": [
+          "DIV > BUTTON+SPAN 与同级 SUP",
+          "原生按钮上的计数徽章"
+        ],
+        "shape": [
+          "102.234375×32px 根框",
+          "36.828125×18px SUP",
+          "10px"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(245, 108, 108)",
+          "rgb(236, 245, 255)"
+        ],
+        "material": [
+          "扁平 CSS",
+          "无图标"
+        ],
+        "typography": [
+          "Button comments 14px/500",
+          "SUP 99+ 12px"
+        ],
+        "motion": [
+          "Button hover 100ms ease",
+          "focus-visible 外轮廓"
+        ],
+        "trigger": [
+          "pointer hover",
+          "held press",
+          "keyboard focus"
+        ],
+        "context": [
+          "Element Plus Badge docs",
+          "max-value"
+        ]
+      },
+      "visual": {
+        "xPx": 323.5,
+        "yPx": 824.88,
+        "widthPx": 102.23,
+        "heightPx": 32,
+        "sizingRule": "computed 102.23x32 CSS px inside a block parent measuring 947.00x90.00 px; no inline width/height",
+        "parent": "DIV.example-showcase 947×90px.",
+        "topLeftPx": 0,
+        "topRightPx": 0,
+        "bottomRightPx": 0,
+        "bottomLeftPx": 0,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "Root overflow visible; Button border 1px solid rgb(220, 223, 230), radius 4px; SUP border 1px solid rgb(255, 255, 255), radius 10px.",
+        "style": "ghost",
+        "computed": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(48, 49, 51)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": null
+        },
+        "colors": {
+          "context": "Official light Badge showcase parent {\"color\":\"rgb(255, 255, 255)\",\"from\":\"DIV.example-showcase\"}.",
+          "fill": "rgba(0, 0, 0, 0)",
+          "text": "rgb(96, 98, 102)",
+          "border": "0px none rgb(48, 49, 51)",
+          "icon": "No icon in this exact selected Button+SUP instance.",
+          "decoration": "Button fill rgb(255, 255, 255), border 1px solid rgb(220, 223, 230); SUP fill rgb(245, 108, 108), text rgb(255, 255, 255).",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Button “comments”; SUP “99+”.",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Official measured Inter loaded, Button 14px/500/14px and SUP 12px/400/0px; original face probe {\"checked\":\"Inter\",\"genericKeyword\":false,\"loaded\":true,\"status\":\"loaded\"}.",
+          "alignment": "Button and SUP center aligned in their own flex boxes.",
+          "wrapping": "Both labels stay on one line in the measured 1280px and 390px examples.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 14,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 10,
+          "marginRightPx": 40,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-block",
+          "position": "relative",
+          "alignment": "Root inline-block/relative; Button inline-flex center/center; SUP absolute at top 0px, right 10px, transform matrix(1, 0, 0, 1, 36.8281, -9).",
+          "overflow": "visible",
+          "zIndex": "auto",
+          "children": [
+            "Button 102.234375×32px with label SPAN.",
+            "SUP 36.828125×18px, relative origin (92.23, -9)px."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Flat CSS Button fill and colored SUP counter; no raster media, gradient or texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enters child Button, pointer enters child Button, pointer enters child Button",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "background-color",
+            "from": "rgb(255, 255, 255)",
+            "to": "rgb(236, 245, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "color",
+            "from": "rgb(96, 98, 102)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "border-top-color",
+            "from": "rgb(220, 223, 230)",
+            "to": "rgb(198, 226, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          }
+        ]
+      },
+      "distinctionZh": "Official value 200 with max 99 renders “99+” in a 36.828125px SUP, whereas the nearest basic example renders “12” in a 26.203125px SUP.；The max prop changes numeric overflow behavior: this source caps at 99+, while the peer binds value 12 without a max.",
+      "reconstructionPrompt": "重建 Element Plus 官方 超过上限后显示 99+ 的评论计数 Badge：DIV.el-badge.item 为 102.234375×32px、inline-block/relative，包含原生 BUTTON 102.234375×32px 与同级 SUP “99+” 36.828125×18px；按钮文字“comments”，Inter 14px/500/14px，白底 rgb(255, 255, 255)、边框 1px solid rgb(220, 223, 230)、圆角 4px。SUP 背景 rgb(245, 108, 108)、白字12px、边框 1px solid rgb(255, 255, 255)、圆角 10px，top:0px right:10px transform:matrix(1, 0, 0, 1, 36.8281, -9)，相对根框 (92.23,-9)px。悬停 Button 用 rgb(236, 245, 255)/rgb(64, 158, 255)/1px solid rgb(198, 226, 255)，transition:all 100ms ease；按住边框 1px solid rgb(64, 158, 255)；focus-visible 外轮廓 2px rgb(160, 207, 255) offset 1px。390px 根框 102.234375×32px。不要移除原生 Button、把 SUP 放入 Button、改动颜色/数值封顶/偏移，或补造点击反馈；未核实的许可不得写成可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One Badge root, its native Button+SPAN and SUP; 1280×900 and 390×844 CSS viewports. Held press released off target. Touch/reduced-motion are browser emulations; no physical device or click activation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找超过上限后显示 99+ 的评论计数的 Element Plus Badge",
+        "需要comments按钮上显示 99+ 的右上计数",
+        "要 SUP 为 rgb(245, 108, 108) 且按钮悬停过渡 100ms 的徽章"
+      ]
+    },
+    {
+      "id": "element-plus-badge-element-plus-badge-bc1173009c35e7101b1e",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/badge",
+      "variantId": "element-plus-badge-bc1173009c35e7101b1e",
+      "instanceId": "element-plus-badge-element-plus-badge-bc1173009c35e7101b1e",
+      "kind": "website-component",
+      "componentType": "badge",
+      "nameZh": "Element Plus 蓝色 1 评论计数 Badge",
+      "nameEn": "Element Plus blue 1 comment-count Badge",
+      "descriptionZh": "结构：这是 Element Plus 官方 basic-usage 中一条蓝色 1 条评论计数。外层 DIV 包含原生 comments 按钮和右上 SUP，官方 basic-usage 的 type=\"primary\" 使计数底色变蓝。\n\n尺寸与位置：1280×900 CSS 视口中外框 102.23×32px，按钮 102.234375×32px；SUP 为 18.890625×18px，左上角相对根框为 (92.23, -9)px。根框 overflow:visible，SUP 可以向外凸出。\n\n色彩与文字：按钮默认白底 rgb(255, 255, 255)、文字 rgb(96, 98, 102)，14px/500/14px；SUP 背景 rgb(64, 158, 255)、白字 12px，1px 白边，圆角 10px。未见图标、渐变或阴影。\n\n状态与运动：Button 悬停后底色到 rgb(236, 245, 255)、文字到 rgb(64, 158, 255)，边框经 100ms ease 过渡到 1px solid rgb(198, 226, 255)；按住时边框为 1px solid rgb(64, 158, 255)。键盘焦点可见时有 2px rgb(160, 207, 255) 外轮廓，偏移 1px。\n\n响应与边界：官方同节点在 390×844 CSS 视口仍是 102.234375×32px，SUP 保持相对位置；减少动态浏览器仿真下子按钮仍计算为 0.1s 过渡。触屏是模拟环境，未触发点击；源代码许可与商用权限未作正向认定。",
+      "descriptionEn": "Structure: This official basic-usage instance shows a blue single-comment count. The outer DIV contains a native comments Button and an upper-right SUP. The official basic example sets type primary for a blue count.\n\nSize and position: At the 1280×900 CSS viewport the root is 102.23×32px and the Button is 102.234375×32px. The SUP is 18.890625×18px, positioned (92.23, -9)px relative to the root origin. Root overflow is visible, allowing the counter to protrude.\n\nColor and type: Default Button fill rgb(255, 255, 255) and text rgb(96, 98, 102), 14px/500/14px. The SUP has rgb(64, 158, 255) fill, 12px white text, a 1px white border and 10px corners. No icon, gradient or shadow was observed.\n\nStates and motion: Button hover changes fill to rgb(236, 245, 255), text to rgb(64, 158, 255) and border to 1px solid rgb(198, 226, 255) through a 100ms ease transition. Held press uses border 1px solid rgb(64, 158, 255). Focus-visible has a 2px rgb(160, 207, 255) outline offset by 1px.\n\nResponsive scope: The same official DOM node remains 102.234375×32px at the 390×844 CSS viewport, preserving SUP placement. In reduced-motion browser emulation the child Button still reports a 0.1s transition. Touch was emulated without a tap; code-license and commercial-use rights were not positively established.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/badge#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-badge-element-plus-badge-bc1173009c35e7101b1e.html",
+      "previewKind": "measured-interactive-reconstruction",
+      "offers": [],
+      "tags": [
+        "徽章",
+        "badge",
+        "1 计数",
+        "DIV > BUTTON+SPAN 与同级 SUP",
+        "原生按钮上的计数徽章",
+        "102.234375×32px 根框",
+        "18.890625×18px SUP",
+        "10px",
+        "rgb(255, 255, 255)",
+        "rgb(64, 158, 255)",
+        "rgb(236, 245, 255)",
+        "扁平 CSS",
+        "无图标",
+        "Button comments 14px/500",
+        "SUP 1 12px",
+        "Button hover 100ms ease",
+        "focus-visible 外轮廓",
+        "pointer hover",
+        "held press",
+        "keyboard focus",
+        "Element Plus Badge docs",
+        "basic-usage",
+        "Element Plus 蓝色 1 评论计数 Badge",
+        "Element Plus blue 1 comment-count Badge",
+        "comments 1 badge"
+      ],
+      "tagFacets": {
+        "object": [
+          "徽章",
+          "badge",
+          "1 计数"
+        ],
+        "structure": [
+          "DIV > BUTTON+SPAN 与同级 SUP",
+          "原生按钮上的计数徽章"
+        ],
+        "shape": [
+          "102.234375×32px 根框",
+          "18.890625×18px SUP",
+          "10px"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(64, 158, 255)",
+          "rgb(236, 245, 255)"
+        ],
+        "material": [
+          "扁平 CSS",
+          "无图标"
+        ],
+        "typography": [
+          "Button comments 14px/500",
+          "SUP 1 12px"
+        ],
+        "motion": [
+          "Button hover 100ms ease",
+          "focus-visible 外轮廓"
+        ],
+        "trigger": [
+          "pointer hover",
+          "held press",
+          "keyboard focus"
+        ],
+        "context": [
+          "Element Plus Badge docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 562.58,
+        "yPx": 514.09,
+        "widthPx": 102.23,
+        "heightPx": 32,
+        "sizingRule": "computed 102.23x32 CSS px inside a block parent measuring 947.00x90.00 px; no inline width/height",
+        "parent": "DIV.example-showcase 947×90px.",
+        "topLeftPx": 0,
+        "topRightPx": 0,
+        "bottomRightPx": 0,
+        "bottomLeftPx": 0,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "Root overflow visible; Button border 1px solid rgb(220, 223, 230), radius 4px; SUP border 1px solid rgb(255, 255, 255), radius 10px.",
+        "style": "ghost",
+        "computed": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(48, 49, 51)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": null
+        },
+        "colors": {
+          "context": "Official light Badge showcase parent {\"color\":\"rgb(255, 255, 255)\",\"from\":\"DIV.example-showcase\"}.",
+          "fill": "rgba(0, 0, 0, 0)",
+          "text": "rgb(96, 98, 102)",
+          "border": "0px none rgb(48, 49, 51)",
+          "icon": "No icon in this exact selected Button+SUP instance.",
+          "decoration": "Button fill rgb(255, 255, 255), border 1px solid rgb(220, 223, 230); SUP fill rgb(64, 158, 255), text rgb(255, 255, 255).",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Button “comments”; SUP “1”.",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Official measured Inter loaded, Button 14px/500/14px and SUP 12px/400/0px; original face probe {\"checked\":\"Inter\",\"genericKeyword\":false,\"loaded\":true,\"status\":\"loaded\"}.",
+          "alignment": "Button and SUP center aligned in their own flex boxes.",
+          "wrapping": "Both labels stay on one line in the measured 1280px and 390px examples.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 14,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 10,
+          "marginRightPx": 30,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-block",
+          "position": "relative",
+          "alignment": "Root inline-block/relative; Button inline-flex center/center; SUP absolute at top 0px, right 10px, transform matrix(1, 0, 0, 1, 18.8906, -9).",
+          "overflow": "visible",
+          "zIndex": "auto",
+          "children": [
+            "Button 102.234375×32px with label SPAN.",
+            "SUP 18.890625×18px, relative origin (92.23, -9)px."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Flat CSS Button fill and colored SUP counter; no raster media, gradient or texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enters child Button, pointer enters child Button, pointer enters child Button",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "background-color",
+            "from": "rgb(255, 255, 255)",
+            "to": "rgb(236, 245, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "color",
+            "from": "rgb(96, 98, 102)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "border-top-color",
+            "from": "rgb(220, 223, 230)",
+            "to": "rgb(198, 226, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          }
+        ]
+      },
+      "distinctionZh": "SUP background rgb(64, 158, 255) versus rgb(245, 108, 108); displayed label “1” versus “12”.；Both examples put a counter over the same comments Button, but this SUP is 18.890625px wide for “1” versus 26.203125px for “12”.",
+      "reconstructionPrompt": "重建 Element Plus 官方 蓝色 1 条评论计数 Badge：DIV.el-badge.item 为 102.234375×32px、inline-block/relative，包含原生 BUTTON 102.234375×32px 与同级 SUP “1” 18.890625×18px；按钮文字“comments”，Inter 14px/500/14px，白底 rgb(255, 255, 255)、边框 1px solid rgb(220, 223, 230)、圆角 4px。SUP 背景 rgb(64, 158, 255)、白字12px、边框 1px solid rgb(255, 255, 255)、圆角 10px，top:0px right:10px transform:matrix(1, 0, 0, 1, 18.8906, -9)，相对根框 (92.23,-9)px。悬停 Button 用 rgb(236, 245, 255)/rgb(64, 158, 255)/1px solid rgb(198, 226, 255)，transition:all 100ms ease；按住边框 1px solid rgb(64, 158, 255)；focus-visible 外轮廓 2px rgb(160, 207, 255) offset 1px。390px 根框 102.234375×32px。不要移除原生 Button、把 SUP 放入 Button、改动颜色/数值封顶/偏移，或补造点击反馈；未核实的许可不得写成可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One Badge root, its native Button+SPAN and SUP; 1280×900 and 390×844 CSS viewports. Held press released off target. Touch/reduced-motion are browser emulations; no physical device or click activation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找蓝色 1 条评论计数的 Element Plus Badge",
+        "需要comments按钮上显示 1 的右上计数",
+        "要 SUP 为 rgb(64, 158, 255) 且按钮悬停过渡 100ms 的徽章"
+      ]
+    },
+    {
+      "id": "element-plus-badge-element-plus-badge-bc67756b6986722db252",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/badge",
+      "variantId": "element-plus-badge-bc67756b6986722db252",
+      "instanceId": "element-plus-badge-element-plus-badge-bc67756b6986722db252",
+      "kind": "website-component",
+      "componentType": "badge",
+      "nameZh": "Element Plus 自定义绿色 1 计数 Badge",
+      "nameEn": "Element Plus custom green 1-count Badge",
+      "descriptionZh": "结构：这是 Element Plus 官方 basic-usage 中一条自定义绿色 1 计数。外层 DIV 包含原生 custom background 按钮和右上 SUP，官方 basic-usage 的 color=\"green\" 把 SUP 背景改成 RGB(0,128,0)，按钮写着 custom background。\n\n尺寸与位置：1280×900 CSS 视口中外框 165.41×32px，按钮 165.40625×32px；SUP 为 18.890625×18px，左上角相对根框为 (155.41, -9)px。根框 overflow:visible，SUP 可以向外凸出。\n\n色彩与文字：按钮默认白底 rgb(255, 255, 255)、文字 rgb(96, 98, 102)，14px/500/14px；SUP 背景 rgb(0, 128, 0)、白字 12px，1px 白边，圆角 10px。未见图标、渐变或阴影。\n\n状态与运动：Button 悬停后底色到 rgb(236, 245, 255)、文字到 rgb(64, 158, 255)，边框经 100ms ease 过渡到 1px solid rgb(198, 226, 255)；按住时边框为 1px solid rgb(64, 158, 255)。键盘焦点可见时有 2px rgb(160, 207, 255) 外轮廓，偏移 1px。\n\n响应与边界：官方同节点在 390×844 CSS 视口仍是 165.40625×32px，SUP 保持相对位置；减少动态浏览器仿真下子按钮仍计算为 0.1s 过渡。触屏是模拟环境，未触发点击；源代码许可与商用权限未作正向认定。",
+      "descriptionEn": "Structure: This official basic-usage instance shows a custom green single-count badge. The outer DIV contains a native custom background Button and an upper-right SUP. The official basic example sets color green; the Button reads custom background.\n\nSize and position: At the 1280×900 CSS viewport the root is 165.41×32px and the Button is 165.40625×32px. The SUP is 18.890625×18px, positioned (155.41, -9)px relative to the root origin. Root overflow is visible, allowing the counter to protrude.\n\nColor and type: Default Button fill rgb(255, 255, 255) and text rgb(96, 98, 102), 14px/500/14px. The SUP has rgb(0, 128, 0) fill, 12px white text, a 1px white border and 10px corners. No icon, gradient or shadow was observed.\n\nStates and motion: Button hover changes fill to rgb(236, 245, 255), text to rgb(64, 158, 255) and border to 1px solid rgb(198, 226, 255) through a 100ms ease transition. Held press uses border 1px solid rgb(64, 158, 255). Focus-visible has a 2px rgb(160, 207, 255) outline offset by 1px.\n\nResponsive scope: The same official DOM node remains 165.40625×32px at the 390×844 CSS viewport, preserving SUP placement. In reduced-motion browser emulation the child Button still reports a 0.1s transition. Touch was emulated without a tap; code-license and commercial-use rights were not positively established.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/badge#basic-usage",
+      "previewUrl": "/data/discovery/previews/element-plus-badge-element-plus-badge-bc67756b6986722db252.html",
+      "previewKind": "measured-interactive-reconstruction",
+      "offers": [],
+      "tags": [
+        "徽章",
+        "badge",
+        "1 计数",
+        "DIV > BUTTON+SPAN 与同级 SUP",
+        "原生按钮上的计数徽章",
+        "165.40625×32px 根框",
+        "18.890625×18px SUP",
+        "10px",
+        "rgb(255, 255, 255)",
+        "rgb(0, 128, 0)",
+        "rgb(236, 245, 255)",
+        "扁平 CSS",
+        "无图标",
+        "Button custom background 14px/500",
+        "SUP 1 12px",
+        "Button hover 100ms ease",
+        "focus-visible 外轮廓",
+        "pointer hover",
+        "held press",
+        "keyboard focus",
+        "Element Plus Badge docs",
+        "basic-usage",
+        "Element Plus 自定义绿色 1 计数 Badge",
+        "Element Plus custom green 1-count Badge",
+        "custom background 1 badge"
+      ],
+      "tagFacets": {
+        "object": [
+          "徽章",
+          "badge",
+          "1 计数"
+        ],
+        "structure": [
+          "DIV > BUTTON+SPAN 与同级 SUP",
+          "原生按钮上的计数徽章"
+        ],
+        "shape": [
+          "165.40625×32px 根框",
+          "18.890625×18px SUP",
+          "10px"
+        ],
+        "color": [
+          "rgb(255, 255, 255)",
+          "rgb(0, 128, 0)",
+          "rgb(236, 245, 255)"
+        ],
+        "material": [
+          "扁平 CSS",
+          "无图标"
+        ],
+        "typography": [
+          "Button custom background 14px/500",
+          "SUP 1 12px"
+        ],
+        "motion": [
+          "Button hover 100ms ease",
+          "focus-visible 外轮廓"
+        ],
+        "trigger": [
+          "pointer hover",
+          "held press",
+          "keyboard focus"
+        ],
+        "context": [
+          "Element Plus Badge docs",
+          "basic-usage"
+        ]
+      },
+      "visual": {
+        "xPx": 801.66,
+        "yPx": 514.09,
+        "widthPx": 165.41,
+        "heightPx": 32,
+        "sizingRule": "computed 165.41x32 CSS px inside a block parent measuring 947.00x90.00 px; no inline width/height",
+        "parent": "DIV.example-showcase 947×90px.",
+        "topLeftPx": 0,
+        "topRightPx": 0,
+        "bottomRightPx": 0,
+        "bottomLeftPx": 0,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "Root overflow visible; Button border 1px solid rgb(220, 223, 230), radius 4px; SUP border 1px solid rgb(255, 255, 255), radius 10px.",
+        "style": "ghost",
+        "computed": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(48, 49, 51)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": null
+        },
+        "colors": {
+          "context": "Official light Badge showcase parent {\"color\":\"rgb(255, 255, 255)\",\"from\":\"DIV.example-showcase\"}.",
+          "fill": "rgba(0, 0, 0, 0)",
+          "text": "rgb(96, 98, 102)",
+          "border": "0px none rgb(48, 49, 51)",
+          "icon": "No icon in this exact selected Button+SUP instance.",
+          "decoration": "Button fill rgb(255, 255, 255), border 1px solid rgb(220, 223, 230); SUP fill rgb(0, 128, 0), text rgb(255, 255, 255).",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "Button “custom background”; SUP “1”.",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Official measured Inter loaded, Button 14px/500/14px and SUP 12px/400/0px; original face probe {\"checked\":\"Inter\",\"genericKeyword\":false,\"loaded\":true,\"status\":\"loaded\"}.",
+          "alignment": "Button and SUP center aligned in their own flex boxes.",
+          "wrapping": "Both labels stay on one line in the measured 1280px and 390px examples.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 14,
+          "letterSpacingPx": 0,
+          "fontWeight": 500,
+          "lineCount": 1
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 10,
+          "marginRightPx": 30,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0
+        },
+        "layout": {
+          "display": "inline-block",
+          "position": "relative",
+          "alignment": "Root inline-block/relative; Button inline-flex center/center; SUP absolute at top 0px, right 10px, transform matrix(1, 0, 0, 1, 18.8906, -9).",
+          "overflow": "visible",
+          "zIndex": "auto",
+          "children": [
+            "Button 165.40625×32px with label SPAN.",
+            "SUP 18.890625×18px, relative origin (155.41, -9)px."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Flat CSS Button fill and colored SUP counter; no raster media, gradient or texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "pointer enters child Button, pointer enters child Button, pointer enters child Button",
+        "activeMotion": true,
+        "motion": [
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "background-color",
+            "from": "rgb(255, 255, 255)",
+            "to": "rgb(236, 245, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "color",
+            "from": "rgb(96, 98, 102)",
+            "to": "rgb(64, 158, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          },
+          {
+            "trigger": "pointer enters child Button",
+            "target": "native BUTTON",
+            "property": "border-top-color",
+            "from": "rgb(220, 223, 230)",
+            "to": "rgb(198, 226, 255)",
+            "unit": "sRGB color channels",
+            "durationMs": 100,
+            "delayMs": 0,
+            "easing": "ease",
+            "iterations": "one hover-entry transition",
+            "direction": "normal",
+            "cycleMs": 100,
+            "staggerMs": 0,
+            "exit": "Hover declaration is removed on pointer exit; exit color timing was not separately sampled.",
+            "interruption": "Transition interruption was not separately tested; do not infer physical pointer trajectories."
+          }
+        ]
+      },
+      "distinctionZh": "Both examples display “1”; this source uses a custom rgb(0, 128, 0) SUP background while the nearest peer uses primary rgb(64, 158, 255).；Button label “custom background” and 165.40625×32px versus “comments” and 102.234375×32px.",
+      "reconstructionPrompt": "重建 Element Plus 官方 自定义绿色 1 计数 Badge：DIV.el-badge.item 为 165.40625×32px、inline-block/relative，包含原生 BUTTON 165.40625×32px 与同级 SUP “1” 18.890625×18px；按钮文字“custom background”，Inter 14px/500/14px，白底 rgb(255, 255, 255)、边框 1px solid rgb(220, 223, 230)、圆角 4px。SUP 背景 rgb(0, 128, 0)、白字12px、边框 1px solid rgb(255, 255, 255)、圆角 10px，top:0px right:10px transform:matrix(1, 0, 0, 1, 18.8906, -9)，相对根框 (155.41,-9)px。悬停 Button 用 rgb(236, 245, 255)/rgb(64, 158, 255)/1px solid rgb(198, 226, 255)，transition:all 100ms ease；按住边框 1px solid rgb(64, 158, 255)；focus-visible 外轮廓 2px rgb(160, 207, 255) offset 1px。390px 根框 165.40625×32px。不要移除原生 Button、把 SUP 放入 Button、改动颜色/数值封顶/偏移，或补造点击反馈；未核实的许可不得写成可商用。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "One Badge root, its native Button+SPAN and SUP; 1280×900 and 390×844 CSS viewports. Held press released off target. Touch/reduced-motion are browser emulations; no physical device or click activation.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找自定义绿色 1 计数的 Element Plus Badge",
+        "需要custom background按钮上显示 1 的右上计数",
+        "要 SUP 为 rgb(0, 128, 0) 且按钮悬停过渡 100ms 的徽章"
       ]
     },
     {
@@ -44097,6 +45567,199 @@
         "找标记高亮的“Marked”文字",
         "需要rgb(96, 98, 102)字色、14px字号的文本",
         "要原生MARK语义且没有按钮行为的文字"
+      ]
+    },
+    {
+      "id": "element-plus-text-element-plus-text-f1501c2d38104dc07b9e",
+      "entryId": "element-plus",
+      "sourceEntity": "Element Plus",
+      "familyId": "element-plus/text",
+      "variantId": "element-plus-text-f1501c2d38104dc07b9e",
+      "instanceId": "element-plus-text-element-plus-text-f1501c2d38104dc07b9e",
+      "kind": "website-component",
+      "componentType": "text",
+      "nameZh": "Element Plus 两行截断省略文本",
+      "nameEn": "Element Plus two-line clamped ellipsis text",
+      "descriptionZh": "结构：官方 Ellipsis 实例由原生 SPAN、三段文字与两个真实 BR 换行组成；-webkit-line-clamp:2 只绘制前两行，第三行仍在 DOM 中但被裁切，第二行末尾出现省略号。\n\n尺寸与布局：1280×900 CSS 视口中外框 265.19×39.19px，父级 flex 行宽 899px；390×844 下父行宽 291px，文本外框仍为 265.19×39.19px。根元素无内外距、边框和圆角；scrollHeight 59px 大于 clientHeight 39px，overflow:hidden 裁掉第三行。\n\n色彩与质感：背景透明 rgba(0, 0, 0, 0)、文字 rgb(96, 98, 102)，无渐变、阴影或图像。\n\n字体与图标：已加载 Inter，14px、400 字重、19.6px 行高，左对齐；没有图标。\n\n运动与状态：默认静态两行截断；悬停 700ms 与安全压下 120ms 未改变颜色、尺寸或截断行数。title 属性保留全文，浏览器原生标题浮层不在 DOM 截图范围。\n\n响应与范围：桌面和 390px 视口均显示相同两行与省略号；触屏和减少动态仅为浏览器仿真，实体设备及读屏输出不在本次浏览器核验范围。",
+      "descriptionEn": "Structure: The official Ellipsis instance is a native SPAN containing three text fragments and two real BR breaks. -webkit-line-clamp:2 paints only the first two lines; the third stays in the DOM but is clipped, with an ellipsis at the end of line two.\n\nSize and layout: At 1280×900 CSS px the box is 265.19×39.19px inside a 899px flex row. At 390×844 the row narrows to 291px while the text box remains 265.19×39.19px. Root margin, padding, border and radius are zero; scrollHeight 59px exceeds clientHeight 39px, clipping line three.\n\nColor and material: Transparent fill rgba(0, 0, 0, 0) and text rgb(96, 98, 102), with no gradient, shadow or image.\n\nTypography and icons: Inter is loaded at 14px, weight 400, line-height 19.6px, left aligned; there is no icon.\n\nMotion and states: Default is a static two-line clamp. A 700ms hover and 120ms safe held press did not change color, size or clamped line count. The title attribute preserves full copy; the native browser title popup is outside DOM screenshot evidence.\n\nResponsive scope: The same two lines and ellipsis appear at desktop and 390px CSS viewports. Touch and reduced-motion are browser emulations; physical devices and screen-reader output lie outside this measured browser scope.",
+      "source": {
+        "name": "Element Plus",
+        "iconUrl": "https://element-plus.org/images/element-plus-logo-small.svg"
+      },
+      "sourceUrl": "https://element-plus.org/en-US/component/text#ellipsis",
+      "previewUrl": "/data/discovery/previews/element-plus-text-element-plus-text-f1501c2d38104dc07b9e.html",
+      "previewKind": "measured-ellipsis-reconstruction",
+      "offers": [],
+      "tags": [
+        "文本",
+        "text",
+        "原生SPAN",
+        "两个BR",
+        "三段文字",
+        "两行截断",
+        "自然宽约265px",
+        "无描边",
+        "无圆角",
+        "rgb(96, 98, 102)",
+        "透明背景",
+        "纯文字",
+        "无阴影",
+        "Inter 14px",
+        "19.6px行高",
+        "-webkit-line-clamp:2",
+        "静态",
+        "hover不改色",
+        "pointer hover",
+        "native title attribute",
+        "Element Plus Text",
+        "Ellipsis official example",
+        "两行截断省略文本",
+        "two-line clamped ellipsis text",
+        "line-clamp 2 text"
+      ],
+      "tagFacets": {
+        "object": [
+          "文本",
+          "text"
+        ],
+        "structure": [
+          "原生SPAN",
+          "两个BR",
+          "三段文字",
+          "两行截断"
+        ],
+        "shape": [
+          "自然宽约265px",
+          "无描边",
+          "无圆角"
+        ],
+        "color": [
+          "rgb(96, 98, 102)",
+          "透明背景"
+        ],
+        "material": [
+          "纯文字",
+          "无阴影"
+        ],
+        "typography": [
+          "Inter 14px",
+          "19.6px行高",
+          "-webkit-line-clamp:2"
+        ],
+        "motion": [
+          "静态",
+          "hover不改色"
+        ],
+        "trigger": [
+          "pointer hover",
+          "native title attribute"
+        ],
+        "context": [
+          "Element Plus Text",
+          "Ellipsis official example"
+        ]
+      },
+      "visual": {
+        "xPx": 323.5,
+        "yPx": 430.046875,
+        "widthPx": 265.1875,
+        "heightPx": 39.1875,
+        "sizingRule": "Natural text width 265.1875px in a flex row with no explicit width; two visible 19.6px lines yield 39.1875px height while scrollHeight 59px exceeds clientHeight 39px.",
+        "parent": "Official DIV.el-row.mb-2 is 899×39.1875px on desktop and 291px wide at 390px.",
+        "topLeftPx": 0,
+        "topRightPx": 0,
+        "bottomRightPx": 0,
+        "bottomLeftPx": 0,
+        "borderTopPx": 0,
+        "borderRightPx": 0,
+        "borderBottomPx": 0,
+        "borderLeftPx": 0,
+        "borderStyle": "none",
+        "clip": "The 2-line -webkit-line-clamp clips the third text line inside overflow:hidden; no mask or border radius.",
+        "style": "ghost",
+        "computed": {
+          "background": "rgba(0, 0, 0, 0)",
+          "hoverBackground": null,
+          "activeBackground": null,
+          "color": "rgb(96, 98, 102)",
+          "borderStyle": "none",
+          "borderWidth": "0px",
+          "borderColor": "rgb(96, 98, 102)",
+          "iconColor": null,
+          "backgroundImage": "none",
+          "icon": null
+        },
+        "colors": {
+          "context": "Official white example showcase background.",
+          "fill": "rgba(0, 0, 0, 0)",
+          "text": "rgb(96, 98, 102)",
+          "border": "0px none rgb(96, 98, 102)",
+          "icon": "No icon in this exact SPAN.",
+          "decoration": "The second line ends in a CSS clamp ellipsis; opacity 1.",
+          "opacity": 1
+        },
+        "typography": {
+          "text": "The -webkit-line-clamp CSS property allows limiting of the contents of a block to the specified number of lines.",
+          "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", 微软雅黑, Arial, sans-serif",
+          "fontEvidence": "Loaded Inter 400 face and stable scroll widths 265,265,265px confirmed before screenshot.",
+          "alignment": "start",
+          "wrapping": "Two visible 19.6px lines; source contains two BR breaks and third line is clipped by -webkit-line-clamp:2.",
+          "decoration": "none",
+          "fontSizePx": 14,
+          "lineHeightPx": 19.6,
+          "letterSpacingPx": 0,
+          "fontWeight": 400,
+          "lineCount": 2
+        },
+        "spacing": {
+          "paddingTopPx": 0,
+          "paddingRightPx": 0,
+          "paddingBottomPx": 0,
+          "paddingLeftPx": 0,
+          "marginTopPx": 0,
+          "marginRightPx": 0,
+          "marginBottomPx": 0,
+          "marginLeftPx": 0,
+          "rowGapPx": 0,
+          "columnGapPx": 0,
+          "details": "Root SPAN has no margin/padding/gap; parent flex row has 20px bottom margin."
+        },
+        "layout": {
+          "display": "flow-root",
+          "position": "static",
+          "alignment": "Root follows the left edge of an 899px desktop / 291px narrow flex row.",
+          "overflow": "overflow:hidden, white-space:normal, text-overflow:clip and -webkit-line-clamp:2 with vertical box orientation; two visible lines and third line clipped.",
+          "zIndex": "auto",
+          "children": [
+            "Direct text, BR, direct text, BR, final direct text; both BR elements are preserved in the preview."
+          ]
+        },
+        "material": {
+          "filter": "none",
+          "backdropFilter": "none",
+          "blendMode": "normal",
+          "texture": "Flat gray text on transparent fill; no image or texture.",
+          "pseudoElements": "[{\"which\":\"::before\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"},{\"which\":\"::after\",\"content\":null,\"background\":\"rgba(0, 0, 0, 0)\",\"backgroundImage\":\"none\",\"width\":\"auto\",\"height\":\"auto\",\"position\":\"static\",\"borderRadius\":\"0px\",\"transform\":\"none\"}]"
+        },
+        "shadowLayers": []
+      },
+      "interaction": {
+        "capturedState": "verified-scope",
+        "trigger": "none",
+        "activeMotion": false,
+        "motion": []
+      },
+      "distinctionZh": "This instance uses line-clamp=2 and two BR children, showing two lines before a painted ellipsis; the neighbor uses truncated/nowrap and shows one line.；This root has natural width about 265.19px with no w-150px class; the neighbor owns a 150px width class.；The third source line remains in DOM but is visually clipped; the neighbor clips horizontally because scrollWidth exceeds clientWidth.",
+      "reconstructionPrompt": "重建官方两行截断 Text 实例：原生 SPAN 保留原文“The -webkit-line-clamp CSS property allows limiting of the contents of a block to the specified number of lines.”和两个 BR 子节点；父级 flex 行桌面宽899px、390视口宽291px、下外距20px。文本根框约265.19×39.19px，font Inter 14px/19.6px、字重400，字色rgb(96, 98, 102)，透明底、边框/内距/圆角0；-webkit-line-clamp:2、-webkit-box-orient:vertical、overflow:hidden，scrollHeight 59px、clientHeight 39px。title 保留全文；hover/压下不改视觉。桌面1280与窄屏390均验两行末尾省略号。不要改为150px单行 nowrap、省去两个BR、显示第三行或添加未观察到的自定义 tooltip。",
+      "verification": "capture-v2-reviewed",
+      "publicationStatus": "verified",
+      "unknowns": [],
+      "scope": "The one two-line-clamped Text SPAN with two BR children in the Ellipsis example, tested at 1280×900 and 390×844 CSS px. Native title popup, physical touch and screen reader output are outside this browser evidence.",
+      "uncertainty": {},
+      "exampleQueries": [
+        "找保留两个BR但只显示两行的省略文本",
+        "需要-webkit-line-clamp:2且第三行隐藏的Element Plus Text",
+        "找宽约265px的灰色双行截断示例"
       ]
     },
     {

@@ -116,11 +116,13 @@ test('HTTP search refines real published button captures and restores the full t
   }
 
   const first = await post('按钮')
-  const second = await post('按钮 蓝色', first.refineToken)
+  const spaced = await post('按钮 ', first.refineToken)
+  const second = await post('按钮 蓝色', spaced.refineToken)
   const third = await post('按钮 蓝色 白字 实心', second.refineToken)
-  assert.deepEqual([first.refinement, second.refinement, third.refinement], ['initial', 'refined', 'refined'])
+  assert.deepEqual([first.refinement, spaced.refinement, second.refinement, third.refinement], ['initial', 'refined', 'refined', 'refined'])
   assert.ok(first.sourceCandidateCount >= 101)
-  assert.equal(second.sourceCandidateCount, first.matchCount)
+  assert.equal(spaced.sourceCandidateCount, first.matchCount)
+  assert.equal(second.sourceCandidateCount, spaced.matchCount)
   assert.equal(third.sourceCandidateCount, second.matchCount)
   assert.ok(first.matchCount >= second.matchCount)
   assert.ok(second.matchCount >= third.matchCount)
@@ -131,7 +133,7 @@ test('HTTP search refines real published button captures and restores the full t
   const deleted = await post('按钮', third.refineToken)
   assert.equal(deleted.refinement, 'reset')
   assert.equal(deleted.sourceCandidateCount, first.sourceCandidateCount)
-  assert.deepEqual(calls, [first.candidateCount, second.candidateCount, third.candidateCount]) // Deleted prefix is served from the cached full-topic result.
+  assert.deepEqual(calls, [first.candidateCount, spaced.candidateCount, second.candidateCount, third.candidateCount]) // Deleted prefix is served from the cached full-topic result.
   t.diagnostic(`real published button topic: ${first.sourceCandidateCount} → ${first.matchCount} → ${second.matchCount} → ${third.matchCount}; deletion resets to ${deleted.sourceCandidateCount}`)
 })
 

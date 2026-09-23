@@ -126,8 +126,8 @@ export function discoveryPlugin({ranker=rankWithJev}={}) {
     let body=''
     try {
       for await(const chunk of req){body+=chunk;if(Buffer.byteLength(body)>(pathname==='/api/discovery/rank'?512000:16000))return json(res,413,{error:'REQUEST_TOO_LARGE'})}
-      const request=JSON.parse(body), query=typeof request.query==='string'?request.query.trim():''
-      if(!query||query.length>1500)return json(res,400,{error:'QUERY_LENGTH',message:'描述需在 1–1500 字符内。'})
+      const request=JSON.parse(body), query=typeof request.query==='string'?request.query.trimStart():''
+      if(!query.trim()||query.length>1500)return json(res,400,{error:'QUERY_LENGTH',message:'描述需在 1–1500 字符内。'})
       if(pathname==='/api/discovery/rank') {
         if(!['global','site-list','resource-list','atlas-terms'].includes(request.scope)||!Array.isArray(request.candidates)||request.candidates.length>60)return json(res,400,{error:'INVALID_SCOPE'})
         const candidates=request.candidates.map(unit=>({unit})).filter(({unit})=>typeof unit.id==='string'&&typeof unit.nameZh==='string'&&Array.isArray(unit.tags))
