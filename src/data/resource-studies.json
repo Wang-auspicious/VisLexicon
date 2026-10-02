@@ -1,0 +1,698 @@
+[
+  {
+    "id": "science-mpl-barchart",
+    "category": "science",
+    "type": "practice",
+    "zh": "带数值标签的分组柱图",
+    "en": "Grouped bar chart with labels",
+    "dz": "把组内指标并排比较，同时保留每根柱的精确读数。",
+    "de": "Compare measures within categories while keeping each value readable.",
+    "pz": "组间留空，组内保持稳定的系列顺序；标签贴近对应柱，图例说明系列。",
+    "pe": "Separate category groups, preserve series order, and place labels beside their bars.",
+    "kz": [
+      "分组比较",
+      "Matplotlib",
+      "Python"
+    ],
+    "kw": [
+      "Grouped comparison",
+      "Matplotlib",
+      "Python"
+    ],
+    "preview": "/resource-previews/20260927-science/science-mpl-barchart.png",
+    "previewOrigin": "source",
+    "sourceUrl": "https://matplotlib.org/stable/gallery/lines_bars_and_markers/barchart.html",
+    "sourceName": "Matplotlib official gallery",
+    "sourceLicenseUrl": "https://matplotlib.org/stable/project/license.html",
+    "source": {
+      "images": [],
+      "exampleUrl": "https://matplotlib.org/stable/gallery/lines_bars_and_markers/barchart.html",
+      "codeUrl": "https://matplotlib.org/stable/_downloads/9079c7956239a0c7507bbae7d553ce77/barchart.py",
+      "imageUrl": "https://matplotlib.org/stable/_images/sphx_glr_barchart_001.png",
+      "localCodeUrl": "/resource-code/20260928/science-mpl-barchart.py",
+      "downloadUrl": "/resource-code/20260928/science-mpl-barchart.py",
+      "codeSha256": "52a0143f0b53a54d3f8284f7ab7d9c08d2901d431e47fe7b9aa1727f97399d09",
+      "codeAttribution": "Matplotlib official gallery",
+      "extraFiles": [
+        {
+          "url": "/resource-code/20260928/licenses/matplotlib.txt",
+          "labelZh": "原始许可与版权声明",
+          "labelEn": "Original license and copyright notice"
+        },
+        {
+          "url": "/resource-code/20260928/SCIENCE-ATTRIBUTION.md",
+          "labelZh": "示例来源、版本与数据说明",
+          "labelEn": "Example attribution, versions and data notes"
+        }
+      ]
+    },
+    "checkedAt": "2026-09-28T09:15:47.292Z",
+    "author": "codex-presentation-content-20260928",
+    "practice": {
+      "caption": {
+        "zh": "带数值标签的分组柱图",
+        "en": "Grouped bar chart with labels"
+      },
+      "observation": {
+        "zh": "预览来自 Matplotlib official gallery 的对应图页，已与来源图像核对。可下载原始 Python 示例；其中数据属于官方教学示例，不能作为用户实验结果。",
+        "en": "The preview was checked against its corresponding Matplotlib official gallery image. The original Python example is downloadable; its data are instructional examples, not user research results."
+      },
+      "steps": {
+        "zh": [
+          "将类别和指标整理为矩阵。",
+          "用 grouped_bar 排列系列，再对每个 bar container 添加 bar_label。",
+          "检查单位、图例顺序和柱顶标签是否相互遮挡。"
+        ],
+        "en": [
+          "Organize categories and measures into a matrix.",
+          "Arrange series with grouped_bar and apply bar_label to each bar container.",
+          "Check units, legend order and label collisions."
+        ]
+      },
+      "exercise": {
+        "zh": "用三种方法在三个数据集上的同单位指标替换企鹅长度；沿用固定系列顺序，给每根柱加数值，并试一次长类别名。",
+        "en": "Replace penguin lengths with a same-unit metric for three methods on three datasets. Preserve series order, label every bar, and test long category names."
+      },
+      "checklist": {
+        "zh": [
+          "每个图形标记能追溯到输入数据。",
+          "坐标、图例与标注说明单位和含义。",
+          "不同量纲不应直接共用同一柱高尺度。"
+        ],
+        "en": [
+          "Every mark is traceable to input data.",
+          "Axes, legends and annotations explain units and meaning.",
+          "Do not compare incompatible units on one bar-height scale."
+        ]
+      },
+      "caution": {
+        "zh": "不同量纲不应直接共用同一柱高尺度。",
+        "en": "Do not compare incompatible units on one bar-height scale."
+      },
+      "prompt": {
+        "zh": "使用我提供的真实数据制作「带数值标签的分组柱图」。组间留空，组内保持稳定的系列顺序；标签贴近对应柱，图例说明系列。将类别和指标整理为矩阵。用 grouped_bar 排列系列，再对每个 bar container 添加 bar_label。检查单位、图例顺序和柱顶标签是否相互遮挡。写清字段、单位、样本筛选和统计定义；以可下载原例为代码参考。不同量纲不应直接共用同一柱高尺度。缺少输入时明确指出，不编造数据或结果。",
+        "en": "Use my supplied data to create Grouped bar chart with labels. Separate category groups, preserve series order, and place labels beside their bars. Organize categories and measures into a matrix. Arrange series with grouped_bar and apply bar_label to each bar container. Check units, legend order and label collisions. State fields, units, sample selection and statistical definitions, using the downloadable original example as a code reference. Do not compare incompatible units on one bar-height scale. Identify missing inputs instead of inventing data or results."
+      }
+    },
+    "offers": [
+      {
+        "id": "science-mpl-barchart/official-example",
+        "verified": true,
+        "checkedAt": "2026-09-28T09:15:47.292Z",
+        "access": "free",
+        "sourceAvailable": true,
+        "sourceUrl": "https://matplotlib.org/stable/_downloads/9079c7956239a0c7507bbae7d553ce77/barchart.py",
+        "sourceCost": "free",
+        "openSource": null,
+        "commercialUse": null,
+        "license": null,
+        "licenseUrl": "https://matplotlib.org/stable/project/license.html",
+        "scope": "The verified official example and its original downloadable Python source. Access, source cost and commercial rights remain separate.",
+        "evidenceUrls": [
+          "https://matplotlib.org/stable/gallery/lines_bars_and_markers/barchart.html",
+          "https://matplotlib.org/stable/_downloads/9079c7956239a0c7507bbae7d553ce77/barchart.py"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science-mpl-multivariate-marker-plot",
+    "category": "science",
+    "type": "practice",
+    "zh": "多变量散点的符号编码",
+    "en": "Mapping marker properties to multivariate data",
+    "dz": "位置之外，用符号大小、朝向、色彩和形状表达附加变量。",
+    "de": "Encode additional variables through marker size, orientation, color and shape.",
+    "pz": "每个视觉通道承担一种含义，连续变量和类别变量采用不同映射。",
+    "pe": "Assign one meaning per visual channel and distinguish continuous from categorical encodings.",
+    "kz": [
+      "多变量",
+      "Matplotlib",
+      "Python"
+    ],
+    "kw": [
+      "Multivariate data",
+      "Matplotlib",
+      "Python"
+    ],
+    "preview": "/resource-previews/20260927-science/science-mpl-multivariate-marker-plot.png",
+    "previewOrigin": "source",
+    "sourceUrl": "https://matplotlib.org/stable/gallery/lines_bars_and_markers/multivariate_marker_plot.html",
+    "sourceName": "Matplotlib official gallery",
+    "sourceLicenseUrl": "https://matplotlib.org/stable/project/license.html",
+    "source": {
+      "images": [],
+      "exampleUrl": "https://matplotlib.org/stable/gallery/lines_bars_and_markers/multivariate_marker_plot.html",
+      "codeUrl": "https://matplotlib.org/stable/_downloads/0c9f82be1ea4cded0763a4430f4a0e83/multivariate_marker_plot.py",
+      "imageUrl": "https://matplotlib.org/stable/_images/sphx_glr_multivariate_marker_plot_001.png",
+      "localCodeUrl": "/resource-code/20260928/science-mpl-multivariate-marker-plot.py",
+      "downloadUrl": "/resource-code/20260928/science-mpl-multivariate-marker-plot.py",
+      "codeSha256": "6a9893c17e9d164417ce19921fb20b13cbc37ae4f9b30494a57d830ea0f4001e",
+      "codeAttribution": "Matplotlib official gallery",
+      "extraFiles": [
+        {
+          "url": "/resource-code/20260928/licenses/matplotlib.txt",
+          "labelZh": "原始许可与版权声明",
+          "labelEn": "Original license and copyright notice"
+        },
+        {
+          "url": "/resource-code/20260928/SCIENCE-ATTRIBUTION.md",
+          "labelZh": "示例来源、版本与数据说明",
+          "labelEn": "Example attribution, versions and data notes"
+        }
+      ]
+    },
+    "checkedAt": "2026-09-28T09:15:48.425Z",
+    "author": "codex-presentation-content-20260928",
+    "practice": {
+      "caption": {
+        "zh": "多变量散点的符号编码",
+        "en": "Mapping marker properties to multivariate data"
+      },
+      "observation": {
+        "zh": "预览来自 Matplotlib official gallery 的对应图页，已与来源图像核对。可下载原始 Python 示例；其中数据属于官方教学示例，不能作为用户实验结果。",
+        "en": "The preview was checked against its corresponding Matplotlib official gallery image. The original Python example is downloadable; its data are instructional examples, not user research results."
+      },
+      "steps": {
+        "zh": [
+          "为每个数据字段选择一个可解释通道。",
+          "按示例使用 MarkerStyle 与变换设置符号。",
+          "逐项补充图例，检查缩小后能否分辨。"
+        ],
+        "en": [
+          "Assign an interpretable channel to each data field.",
+          "Use MarkerStyle and transforms as in the source example.",
+          "Explain each mapping and check legibility at reduced size."
+        ]
+      },
+      "exercise": {
+        "zh": "把样本的二维位置、类别和置信度分别映射到坐标、形状和符号大小；画出大小图例，检查打印后是否仍能反向读出映射。",
+        "en": "Map paired sample coordinates, category and confidence to position, shape and marker size. Add a size legend and check whether the mapping remains readable in print."
+      },
+      "checklist": {
+        "zh": [
+          "每个图形标记能追溯到输入数据。",
+          "坐标、图例与标注说明单位和含义。",
+          "编码越多，读图成本越高；先保留最重要的变量。"
+        ],
+        "en": [
+          "Every mark is traceable to input data.",
+          "Axes, legends and annotations explain units and meaning.",
+          "More encodings increase reading effort; prioritize essential variables."
+        ]
+      },
+      "caution": {
+        "zh": "编码越多，读图成本越高；先保留最重要的变量。",
+        "en": "More encodings increase reading effort; prioritize essential variables."
+      },
+      "prompt": {
+        "zh": "使用我提供的真实数据制作「多变量散点的符号编码」。每个视觉通道承担一种含义，连续变量和类别变量采用不同映射。为每个数据字段选择一个可解释通道。按示例使用 MarkerStyle 与变换设置符号。逐项补充图例，检查缩小后能否分辨。写清字段、单位、样本筛选和统计定义；以可下载原例为代码参考。编码越多，读图成本越高；先保留最重要的变量。缺少输入时明确指出，不编造数据或结果。",
+        "en": "Use my supplied data to create Mapping marker properties to multivariate data. Assign one meaning per visual channel and distinguish continuous from categorical encodings. Assign an interpretable channel to each data field. Use MarkerStyle and transforms as in the source example. Explain each mapping and check legibility at reduced size. State fields, units, sample selection and statistical definitions, using the downloadable original example as a code reference. More encodings increase reading effort; prioritize essential variables. Identify missing inputs instead of inventing data or results."
+      }
+    },
+    "offers": [
+      {
+        "id": "science-mpl-multivariate-marker-plot/official-example",
+        "verified": true,
+        "checkedAt": "2026-09-28T09:15:48.425Z",
+        "access": "free",
+        "sourceAvailable": true,
+        "sourceUrl": "https://matplotlib.org/stable/_downloads/0c9f82be1ea4cded0763a4430f4a0e83/multivariate_marker_plot.py",
+        "sourceCost": "free",
+        "openSource": null,
+        "commercialUse": null,
+        "license": null,
+        "licenseUrl": "https://matplotlib.org/stable/project/license.html",
+        "scope": "The verified official example and its original downloadable Python source. Access, source cost and commercial rights remain separate.",
+        "evidenceUrls": [
+          "https://matplotlib.org/stable/gallery/lines_bars_and_markers/multivariate_marker_plot.html",
+          "https://matplotlib.org/stable/_downloads/0c9f82be1ea4cded0763a4430f4a0e83/multivariate_marker_plot.py"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science-mpl-scatter-hist",
+    "category": "science",
+    "type": "practice",
+    "zh": "散点与边缘分布组合",
+    "en": "Scatter plot with histograms",
+    "dz": "中心散点展示两个变量的关系，顶部和右侧补充各自分布。",
+    "de": "Pair a central relationship plot with marginal distributions.",
+    "pz": "边缘图与主图共享对应的坐标范围，隐藏重复刻度。",
+    "pe": "Align marginal axes with the main plot and suppress redundant labels.",
+    "kz": [
+      "分布",
+      "Matplotlib",
+      "Python"
+    ],
+    "kw": [
+      "Distributions",
+      "Matplotlib",
+      "Python"
+    ],
+    "preview": "/resource-previews/20260927-science/science-mpl-scatter-hist.png",
+    "previewOrigin": "source",
+    "sourceUrl": "https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_hist.html",
+    "sourceName": "Matplotlib official gallery",
+    "sourceLicenseUrl": "https://matplotlib.org/stable/project/license.html",
+    "source": {
+      "images": [],
+      "exampleUrl": "https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_hist.html",
+      "codeUrl": "https://matplotlib.org/stable/_downloads/3e1134ffd2662d0ad0c453c6dfb7882d/scatter_hist.py",
+      "imageUrl": "https://matplotlib.org/stable/_images/sphx_glr_scatter_hist_001.png",
+      "localCodeUrl": "/resource-code/20260928/science-mpl-scatter-hist.py",
+      "downloadUrl": "/resource-code/20260928/science-mpl-scatter-hist.py",
+      "codeSha256": "3505bca1f5b9c493579c8e015e2568abbdcf6312b4428116a713d475041d6a25",
+      "codeAttribution": "Matplotlib official gallery",
+      "extraFiles": [
+        {
+          "url": "/resource-code/20260928/licenses/matplotlib.txt",
+          "labelZh": "原始许可与版权声明",
+          "labelEn": "Original license and copyright notice"
+        },
+        {
+          "url": "/resource-code/20260928/SCIENCE-ATTRIBUTION.md",
+          "labelZh": "示例来源、版本与数据说明",
+          "labelEn": "Example attribution, versions and data notes"
+        }
+      ]
+    },
+    "checkedAt": "2026-09-28T09:15:49.507Z",
+    "author": "codex-presentation-content-20260928",
+    "practice": {
+      "caption": {
+        "zh": "散点与边缘分布组合",
+        "en": "Scatter plot with histograms"
+      },
+      "observation": {
+        "zh": "预览来自 Matplotlib official gallery 的对应图页，已与来源图像核对。可下载原始 Python 示例；其中数据属于官方教学示例，不能作为用户实验结果。",
+        "en": "The preview was checked against its corresponding Matplotlib official gallery image. The original Python example is downloadable; its data are instructional examples, not user research results."
+      },
+      "steps": {
+        "zh": [
+          "用同一份 x、y 样本绘制散点。",
+          "用 subplot_mosaic 或 inset_axes 安排两个边缘轴。",
+          "保持分箱与坐标范围一致，核对边缘图方向。"
+        ],
+        "en": [
+          "Draw the scatter from one paired sample.",
+          "Position marginal axes with subplot_mosaic or inset_axes.",
+          "Keep bins and coordinate limits consistent and verify histogram orientation."
+        ]
+      },
+      "exercise": {
+        "zh": "比较模型的预测值与观测值：中心每个点是一对样本，两个边缘图保留相同样本集合。改变分箱后检查结论是否稳健。",
+        "en": "Compare predicted and observed values. Keep one paired sample per central point and the same sample set in both margins; inspect whether the conclusion survives a bin change."
+      },
+      "checklist": {
+        "zh": [
+          "每个图形标记能追溯到输入数据。",
+          "坐标、图例与标注说明单位和含义。",
+          "边缘分布不能替代联合关系，也不能证明因果。"
+        ],
+        "en": [
+          "Every mark is traceable to input data.",
+          "Axes, legends and annotations explain units and meaning.",
+          "Marginal distributions do not replace joint structure or establish causality."
+        ]
+      },
+      "caution": {
+        "zh": "边缘分布不能替代联合关系，也不能证明因果。",
+        "en": "Marginal distributions do not replace joint structure or establish causality."
+      },
+      "prompt": {
+        "zh": "使用我提供的真实数据制作「散点与边缘分布组合」。边缘图与主图共享对应的坐标范围，隐藏重复刻度。用同一份 x、y 样本绘制散点。用 subplot_mosaic 或 inset_axes 安排两个边缘轴。保持分箱与坐标范围一致，核对边缘图方向。写清字段、单位、样本筛选和统计定义；以可下载原例为代码参考。边缘分布不能替代联合关系，也不能证明因果。缺少输入时明确指出，不编造数据或结果。",
+        "en": "Use my supplied data to create Scatter plot with histograms. Align marginal axes with the main plot and suppress redundant labels. Draw the scatter from one paired sample. Position marginal axes with subplot_mosaic or inset_axes. Keep bins and coordinate limits consistent and verify histogram orientation. State fields, units, sample selection and statistical definitions, using the downloadable original example as a code reference. Marginal distributions do not replace joint structure or establish causality. Identify missing inputs instead of inventing data or results."
+      }
+    },
+    "offers": [
+      {
+        "id": "science-mpl-scatter-hist/official-example",
+        "verified": true,
+        "checkedAt": "2026-09-28T09:15:49.507Z",
+        "access": "free",
+        "sourceAvailable": true,
+        "sourceUrl": "https://matplotlib.org/stable/_downloads/3e1134ffd2662d0ad0c453c6dfb7882d/scatter_hist.py",
+        "sourceCost": "free",
+        "openSource": null,
+        "commercialUse": null,
+        "license": null,
+        "licenseUrl": "https://matplotlib.org/stable/project/license.html",
+        "scope": "The verified official example and its original downloadable Python source. Access, source cost and commercial rights remain separate.",
+        "evidenceUrls": [
+          "https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_hist.html",
+          "https://matplotlib.org/stable/_downloads/3e1134ffd2662d0ad0c453c6dfb7882d/scatter_hist.py"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science-mpl-multi-image",
+    "category": "science",
+    "type": "practice",
+    "zh": "多面板共享色条",
+    "en": "Multiple images with one colorbar",
+    "dz": "让多张热图里相同颜色对应相同数值。",
+    "de": "Make the same color represent the same value across heatmaps.",
+    "pz": "所有面板共享数据到颜色的映射，再连接一个公共色条。",
+    "pe": "Share the data-to-color mapping before adding a common colorbar.",
+    "kz": [
+      "多面板",
+      "Matplotlib",
+      "Python"
+    ],
+    "kw": [
+      "Multiple panels",
+      "Matplotlib",
+      "Python"
+    ],
+    "preview": "/resource-previews/20260928-science/science-mpl-multi-image.png",
+    "previewOrigin": "source",
+    "sourceUrl": "https://matplotlib.org/stable/gallery/images_contours_and_fields/multi_image.html",
+    "sourceName": "Matplotlib official gallery",
+    "sourceLicenseUrl": "https://matplotlib.org/stable/project/license.html",
+    "source": {
+      "images": [],
+      "exampleUrl": "https://matplotlib.org/stable/gallery/images_contours_and_fields/multi_image.html",
+      "codeUrl": "https://matplotlib.org/stable/_downloads/3d9ed4bd74fec2fd15978e0cd1497919/multi_image.py",
+      "imageUrl": "https://matplotlib.org/stable/_images/sphx_glr_multi_image_001.png",
+      "localCodeUrl": "/resource-code/20260928/science-mpl-multi-image.py",
+      "downloadUrl": "/resource-code/20260928/science-mpl-multi-image.py",
+      "codeSha256": "4aff23c81ce130acf25738a38a019bf54b0b0723abc67245053bfc6c2f8b1670",
+      "codeAttribution": "Matplotlib official gallery",
+      "extraFiles": [
+        {
+          "url": "/resource-code/20260928/licenses/matplotlib.txt",
+          "labelZh": "原始许可与版权声明",
+          "labelEn": "Original license and copyright notice"
+        },
+        {
+          "url": "/resource-code/20260928/SCIENCE-ATTRIBUTION.md",
+          "labelZh": "示例来源、版本与数据说明",
+          "labelEn": "Example attribution, versions and data notes"
+        }
+      ]
+    },
+    "checkedAt": "2026-09-28T09:15:50.754Z",
+    "author": "codex-presentation-content-20260928",
+    "practice": {
+      "caption": {
+        "zh": "多面板共享色条",
+        "en": "Multiple images with one colorbar"
+      },
+      "observation": {
+        "zh": "预览来自 Matplotlib official gallery 的对应图页，已与来源图像核对。可下载原始 Python 示例；其中数据属于官方教学示例，不能作为用户实验结果。",
+        "en": "The preview was checked against its corresponding Matplotlib official gallery image. The original Python example is downloadable; its data are instructional examples, not user research results."
+      },
+      "steps": {
+        "zh": [
+          "先确定所有面板共同的数值范围。",
+          "按原文为图像传入共享 Colorizer 和 Normalize。",
+          "检查每张图的色图、归一化与色条完全一致。"
+        ],
+        "en": [
+          "Determine a common range across panels.",
+          "Pass a shared Colorizer and Normalize following the example.",
+          "Verify identical colormap and normalization in every panel."
+        ]
+      },
+      "exercise": {
+        "zh": "把四个实验条件的热图放在同一页。先合并求出全局 vmin/vmax，再共享映射；故意改一次独立缩放，观察相同颜色为何不再可比。",
+        "en": "Place heatmaps for four conditions together. Compute global vmin/vmax first and share the mapping; deliberately autoscale one panel to see why the same color stops being comparable."
+      },
+      "checklist": {
+        "zh": [
+          "每个图形标记能追溯到输入数据。",
+          "坐标、图例与标注说明单位和含义。",
+          "每张图分别自动归一化会让跨面板的颜色失去可比性。"
+        ],
+        "en": [
+          "Every mark is traceable to input data.",
+          "Axes, legends and annotations explain units and meaning.",
+          "Independent automatic normalization makes colors incomparable across panels."
+        ]
+      },
+      "caution": {
+        "zh": "每张图分别自动归一化会让跨面板的颜色失去可比性。",
+        "en": "Independent automatic normalization makes colors incomparable across panels."
+      },
+      "prompt": {
+        "zh": "使用我提供的真实数据制作「多面板共享色条」。所有面板共享数据到颜色的映射，再连接一个公共色条。先确定所有面板共同的数值范围。按原文为图像传入共享 Colorizer 和 Normalize。检查每张图的色图、归一化与色条完全一致。写清字段、单位、样本筛选和统计定义；以可下载原例为代码参考。每张图分别自动归一化会让跨面板的颜色失去可比性。缺少输入时明确指出，不编造数据或结果。",
+        "en": "Use my supplied data to create Multiple images with one colorbar. Share the data-to-color mapping before adding a common colorbar. Determine a common range across panels. Pass a shared Colorizer and Normalize following the example. Verify identical colormap and normalization in every panel. State fields, units, sample selection and statistical definitions, using the downloadable original example as a code reference. Independent automatic normalization makes colors incomparable across panels. Identify missing inputs instead of inventing data or results."
+      }
+    },
+    "offers": [
+      {
+        "id": "science-mpl-multi-image/official-example",
+        "verified": true,
+        "checkedAt": "2026-09-28T09:15:50.754Z",
+        "access": "free",
+        "sourceAvailable": true,
+        "sourceUrl": "https://matplotlib.org/stable/_downloads/3d9ed4bd74fec2fd15978e0cd1497919/multi_image.py",
+        "sourceCost": "free",
+        "openSource": null,
+        "commercialUse": null,
+        "license": null,
+        "licenseUrl": "https://matplotlib.org/stable/project/license.html",
+        "scope": "The verified official example and its original downloadable Python source. Access, source cost and commercial rights remain separate.",
+        "evidenceUrls": [
+          "https://matplotlib.org/stable/gallery/images_contours_and_fields/multi_image.html",
+          "https://matplotlib.org/stable/_downloads/3d9ed4bd74fec2fd15978e0cd1497919/multi_image.py"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science-mpl-irregulardatagrid",
+    "category": "science",
+    "type": "practice",
+    "zh": "不规则采样点的等值线",
+    "en": "Contour plot of irregularly spaced data",
+    "dz": "把非规则空间采样转成可读的连续场表示。",
+    "de": "Represent an irregularly sampled spatial field with contours.",
+    "pz": "区分规则网格插值与直接三角剖分两条路径。",
+    "pe": "Distinguish interpolation onto a grid from direct triangulated contours.",
+    "kz": [
+      "空间场",
+      "Matplotlib",
+      "Python"
+    ],
+    "kw": [
+      "Spatial fields",
+      "Matplotlib",
+      "Python"
+    ],
+    "preview": "/resource-previews/20260927-science/science-mpl-irregulardatagrid.png",
+    "previewOrigin": "source",
+    "sourceUrl": "https://matplotlib.org/stable/gallery/images_contours_and_fields/irregulardatagrid.html",
+    "sourceName": "Matplotlib official gallery",
+    "sourceLicenseUrl": "https://matplotlib.org/stable/project/license.html",
+    "source": {
+      "images": [],
+      "exampleUrl": "https://matplotlib.org/stable/gallery/images_contours_and_fields/irregulardatagrid.html",
+      "codeUrl": "https://matplotlib.org/stable/_downloads/758c39512ff467ae08f5d49cccfb7f30/irregulardatagrid.py",
+      "imageUrl": "https://matplotlib.org/stable/_images/sphx_glr_irregulardatagrid_001.png",
+      "localCodeUrl": "/resource-code/20260928/science-mpl-irregulardatagrid.py",
+      "downloadUrl": "/resource-code/20260928/science-mpl-irregulardatagrid.py",
+      "codeSha256": "f882f21c316481b414baa19ae996b007b988334c5236c4f97bc6ca782c3ec803",
+      "codeAttribution": "Matplotlib official gallery",
+      "extraFiles": [
+        {
+          "url": "/resource-code/20260928/licenses/matplotlib.txt",
+          "labelZh": "原始许可与版权声明",
+          "labelEn": "Original license and copyright notice"
+        },
+        {
+          "url": "/resource-code/20260928/SCIENCE-ATTRIBUTION.md",
+          "labelZh": "示例来源、版本与数据说明",
+          "labelEn": "Example attribution, versions and data notes"
+        }
+      ]
+    },
+    "checkedAt": "2026-09-28T09:15:51.980Z",
+    "author": "codex-presentation-content-20260928",
+    "practice": {
+      "caption": {
+        "zh": "不规则采样点的等值线",
+        "en": "Contour plot of irregularly spaced data"
+      },
+      "observation": {
+        "zh": "预览来自 Matplotlib official gallery 的对应图页，已与来源图像核对。可下载原始 Python 示例；其中数据属于官方教学示例，不能作为用户实验结果。",
+        "en": "The preview was checked against its corresponding Matplotlib official gallery image. The original Python example is downloadable; its data are instructional examples, not user research results."
+      },
+      "steps": {
+        "zh": [
+          "保留原始 x、y、z 与采样区域。",
+          "比较规则网格插值后的 contour 和 tricontour。",
+          "检查边界、稀疏区域与外推造成的形状变化。"
+        ],
+        "en": [
+          "Retain original coordinates, values and sampling domain.",
+          "Compare interpolated contour with direct tricontour.",
+          "Inspect boundaries, sparse regions and extrapolation artifacts."
+        ]
+      },
+      "exercise": {
+        "zh": "用传感器实际采样坐标比较网格插值与三角等值线。把原采样点叠回图中，重点检查没有观测的空洞与边界。",
+        "en": "Compare grid interpolation and triangulated contours using actual sensor coordinates. Overlay sample points and inspect unsampled holes and boundaries."
+      },
+      "checklist": {
+        "zh": [
+          "每个图形标记能追溯到输入数据。",
+          "坐标、图例与标注说明单位和含义。",
+          "平滑画面不能被当成额外观测证据。"
+        ],
+        "en": [
+          "Every mark is traceable to input data.",
+          "Axes, legends and annotations explain units and meaning.",
+          "A smooth display does not add observations."
+        ]
+      },
+      "caution": {
+        "zh": "平滑画面不能被当成额外观测证据。",
+        "en": "A smooth display does not add observations."
+      },
+      "prompt": {
+        "zh": "使用我提供的真实数据制作「不规则采样点的等值线」。区分规则网格插值与直接三角剖分两条路径。保留原始 x、y、z 与采样区域。比较规则网格插值后的 contour 和 tricontour。检查边界、稀疏区域与外推造成的形状变化。写清字段、单位、样本筛选和统计定义；以可下载原例为代码参考。平滑画面不能被当成额外观测证据。缺少输入时明确指出，不编造数据或结果。",
+        "en": "Use my supplied data to create Contour plot of irregularly spaced data. Distinguish interpolation onto a grid from direct triangulated contours. Retain original coordinates, values and sampling domain. Compare interpolated contour with direct tricontour. Inspect boundaries, sparse regions and extrapolation artifacts. State fields, units, sample selection and statistical definitions, using the downloadable original example as a code reference. A smooth display does not add observations. Identify missing inputs instead of inventing data or results."
+      }
+    },
+    "offers": [
+      {
+        "id": "science-mpl-irregulardatagrid/official-example",
+        "verified": true,
+        "checkedAt": "2026-09-28T09:15:51.980Z",
+        "access": "free",
+        "sourceAvailable": true,
+        "sourceUrl": "https://matplotlib.org/stable/_downloads/758c39512ff467ae08f5d49cccfb7f30/irregulardatagrid.py",
+        "sourceCost": "free",
+        "openSource": null,
+        "commercialUse": null,
+        "license": null,
+        "licenseUrl": "https://matplotlib.org/stable/project/license.html",
+        "scope": "The verified official example and its original downloadable Python source. Access, source cost and commercial rights remain separate.",
+        "evidenceUrls": [
+          "https://matplotlib.org/stable/gallery/images_contours_and_fields/irregulardatagrid.html",
+          "https://matplotlib.org/stable/_downloads/758c39512ff467ae08f5d49cccfb7f30/irregulardatagrid.py"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "science-mpl-quiver-simple-demo",
+    "category": "science",
+    "type": "practice",
+    "zh": "带长度标尺的矢量箭头场",
+    "en": "Quiver Simple Demo",
+    "dz": "用箭头方向和长度展示平面矢量，并提供可读的参考箭头。",
+    "de": "Show vector direction and magnitude with a reference arrow.",
+    "pz": "箭头图与 quiverkey 一起定义长度的含义。",
+    "pe": "Pair the vector field with a quiverkey to explain the length scale.",
+    "kz": [
+      "空间场",
+      "Matplotlib",
+      "Python"
+    ],
+    "kw": [
+      "Spatial fields",
+      "Matplotlib",
+      "Python"
+    ],
+    "preview": "/resource-previews/20260927-science/science-mpl-quiver-simple-demo.png",
+    "previewOrigin": "source",
+    "sourceUrl": "https://matplotlib.org/stable/gallery/images_contours_and_fields/quiver_simple_demo.html",
+    "sourceName": "Matplotlib official gallery",
+    "sourceLicenseUrl": "https://matplotlib.org/stable/project/license.html",
+    "source": {
+      "images": [],
+      "exampleUrl": "https://matplotlib.org/stable/gallery/images_contours_and_fields/quiver_simple_demo.html",
+      "codeUrl": "https://matplotlib.org/stable/_downloads/5a48ca1008ec889cb849275558b036a9/quiver_simple_demo.py",
+      "imageUrl": "https://matplotlib.org/stable/_images/sphx_glr_quiver_simple_demo_001.png",
+      "localCodeUrl": "/resource-code/20260928/science-mpl-quiver-simple-demo.py",
+      "downloadUrl": "/resource-code/20260928/science-mpl-quiver-simple-demo.py",
+      "codeSha256": "dce799001b7ae508bf9e7789c01779294a64f262544139563bc7aa94a02262b0",
+      "codeAttribution": "Matplotlib official gallery",
+      "extraFiles": [
+        {
+          "url": "/resource-code/20260928/licenses/matplotlib.txt",
+          "labelZh": "原始许可与版权声明",
+          "labelEn": "Original license and copyright notice"
+        },
+        {
+          "url": "/resource-code/20260928/SCIENCE-ATTRIBUTION.md",
+          "labelZh": "示例来源、版本与数据说明",
+          "labelEn": "Example attribution, versions and data notes"
+        }
+      ]
+    },
+    "checkedAt": "2026-09-28T09:15:53.067Z",
+    "author": "codex-presentation-content-20260928",
+    "practice": {
+      "caption": {
+        "zh": "带长度标尺的矢量箭头场",
+        "en": "Quiver Simple Demo"
+      },
+      "observation": {
+        "zh": "预览来自 Matplotlib official gallery 的对应图页，已与来源图像核对。可下载原始 Python 示例；其中数据属于官方教学示例，不能作为用户实验结果。",
+        "en": "The preview was checked against its corresponding Matplotlib official gallery image. The original Python example is downloadable; its data are instructional examples, not user research results."
+      },
+      "steps": {
+        "zh": [
+          "核对网格位置与 U、V 分量的对应关系。",
+          "绘制 quiver 并设置有单位的参考箭头。",
+          "检查自动缩放和坐标比例会否改变读者判断。"
+        ],
+        "en": [
+          "Match grid coordinates to U and V components.",
+          "Draw quiver and add a reference arrow with units.",
+          "Check scaling and axis aspect before interpreting lengths."
+        ]
+      },
+      "exercise": {
+        "zh": "给一组速度分量 U、V 画箭头。放置明确写出速度单位的 quiverkey，并比较默认缩放和显式缩放，核对长箭头的含义。",
+        "en": "Plot velocity components U and V. Add a quiverkey with speed units and compare automatic with explicit scaling so arrow length has a stated meaning."
+      },
+      "checklist": {
+        "zh": [
+          "每个图形标记能追溯到输入数据。",
+          "坐标、图例与标注说明单位和含义。",
+          "屏幕箭头长度可能经过缩放，不能直接当作物理位移。"
+        ],
+        "en": [
+          "Every mark is traceable to input data.",
+          "Axes, legends and annotations explain units and meaning.",
+          "Displayed arrow length may be scaled and is not automatically physical displacement."
+        ]
+      },
+      "caution": {
+        "zh": "屏幕箭头长度可能经过缩放，不能直接当作物理位移。",
+        "en": "Displayed arrow length may be scaled and is not automatically physical displacement."
+      },
+      "prompt": {
+        "zh": "使用我提供的真实数据制作「带长度标尺的矢量箭头场」。箭头图与 quiverkey 一起定义长度的含义。核对网格位置与 U、V 分量的对应关系。绘制 quiver 并设置有单位的参考箭头。检查自动缩放和坐标比例会否改变读者判断。写清字段、单位、样本筛选和统计定义；以可下载原例为代码参考。屏幕箭头长度可能经过缩放，不能直接当作物理位移。缺少输入时明确指出，不编造数据或结果。",
+        "en": "Use my supplied data to create Quiver Simple Demo. Pair the vector field with a quiverkey to explain the length scale. Match grid coordinates to U and V components. Draw quiver and add a reference arrow with units. Check scaling and axis aspect before interpreting lengths. State fields, units, sample selection and statistical definitions, using the downloadable original example as a code reference. Displayed arrow length may be scaled and is not automatically physical displacement. Identify missing inputs instead of inventing data or results."
+      }
+    },
+    "offers": [
+      {
+        "id": "science-mpl-quiver-simple-demo/official-example",
+        "verified": true,
+        "checkedAt": "2026-09-28T09:15:53.067Z",
+        "access": "free",
+        "sourceAvailable": true,
+        "sourceUrl": "https://matplotlib.org/stable/_downloads/5a48ca1008ec889cb849275558b036a9/quiver_simple_demo.py",
+        "sourceCost": "free",
+        "openSource": null,
+        "commercialUse": null,
+        "license": null,
+        "licenseUrl": "https://matplotlib.org/stable/project/license.html",
+        "scope": "The verified official example and its original downloadable Python source. Access, source cost and commercial rights remain separate.",
+        "evidenceUrls": [
+          "https://matplotlib.org/stable/gallery/images_contours_and_fields/quiver_simple_demo.html",
+          "https://matplotlib.org/stable/_downloads/5a48ca1008ec889cb849275558b036a9/quiver_simple_demo.py"
+        ]
+      }
+    ]
+  }
+]

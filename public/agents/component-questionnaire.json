@@ -1,0 +1,426 @@
+{
+  "contractVersion": "2.0",
+  "answerShape": {
+    "status": "measured | observed | source-verified | estimated | not-applicable",
+    "value": "按题目 fields/numbers 填写的对象；自由题填写详细对象",
+    "evidence": [
+      "evidence-id"
+    ],
+    "reason": "不适用必须说明",
+    "basis": "估算的计算方法",
+    "ranges": {
+      "examplePx": [
+        84,
+        88
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "identity",
+      "stage": "01-locate",
+      "prompt": "具体来自谁？填 sourceName、sourceUrl（到具体实例）、sourceIconUrl、pageTitle、locator、familyId、variantId。不得用仓库首页代替实例。",
+      "fields": [
+        "sourceName",
+        "sourceUrl",
+        "sourceIconUrl",
+        "pageTitle",
+        "locator",
+        "familyId",
+        "variantId"
+      ]
+    },
+    {
+      "id": "scope",
+      "stage": "01-locate",
+      "prompt": "这次核验的页面版本、主题、语言、视口、缩放和时间是什么？边界是哪些？",
+      "fields": [
+        "capturedAt",
+        "theme",
+        "locale",
+        "version",
+        "boundary"
+      ],
+      "numbers": [
+        "viewportWidthPx",
+        "viewportHeightPx",
+        "dpr",
+        "zoom"
+      ]
+    },
+    {
+      "id": "inventory",
+      "stage": "01-locate",
+      "prompt": "页面上总共枚举多少原始观察？逐个填写 id、disposition、reason；已证实的非组件/组件碎片不要伪装成待补全。未访问页面/分页/懒加载在哪里？",
+      "fields": [
+        "observations",
+        "pageQueue",
+        "coverageStatement",
+        "rawEvidenceId"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "stage": "02-measure",
+      "prompt": "从容器到每个文字/图标/装饰层，列 DOM/可见结构、层序、bbox、对齐关系；不要只给整体形容词。",
+      "fields": [
+        "layers",
+        "visualReading"
+      ]
+    },
+    {
+      "id": "geometry",
+      "stage": "02-measure",
+      "prompt": "外框 x/y/w/h 是多少 CSS px？长宽比、父容器与尺寸规则是什么？",
+      "numbers": [
+        "xPx",
+        "yPx",
+        "widthPx",
+        "heightPx"
+      ],
+      "fields": [
+        "sizingRule",
+        "parent"
+      ],
+      "estimate": true
+    },
+    {
+      "id": "spacing",
+      "stage": "02-measure",
+      "prompt": "四边 padding/margin、横纵 gap 分别多少 px？数值为 0 也填。",
+      "numbers": [
+        "paddingTopPx",
+        "paddingRightPx",
+        "paddingBottomPx",
+        "paddingLeftPx",
+        "marginTopPx",
+        "marginRightPx",
+        "marginBottomPx",
+        "marginLeftPx",
+        "rowGapPx",
+        "columnGapPx"
+      ],
+      "estimate": true
+    },
+    {
+      "id": "layout",
+      "stage": "02-measure",
+      "prompt": "display/position/排列/对齐/overflow/z-index 是什么？各子层如何排列？",
+      "fields": [
+        "display",
+        "position",
+        "alignment",
+        "overflow",
+        "zIndex",
+        "children"
+      ]
+    },
+    {
+      "id": "shape",
+      "stage": "02-measure",
+      "prompt": "四角圆角、四边宽度 px？边框实线/虚线/无？是否 mask/clip？",
+      "numbers": [
+        "topLeftPx",
+        "topRightPx",
+        "bottomRightPx",
+        "bottomLeftPx",
+        "borderTopPx",
+        "borderRightPx",
+        "borderBottomPx",
+        "borderLeftPx"
+      ],
+      "fields": [
+        "borderStyle",
+        "clip"
+      ],
+      "estimate": true
+    },
+    {
+      "id": "colors",
+      "stage": "03-appearance",
+      "prompt": "填背景上下文、填充、文字、边框、图标、装饰的实际 CSS 颜色与 alpha；透明不能写成白色。",
+      "fields": [
+        "context",
+        "fill",
+        "text",
+        "border",
+        "icon",
+        "decoration"
+      ],
+      "numbers": [
+        "opacity"
+      ]
+    },
+    {
+      "id": "gradient",
+      "stage": "03-appearance",
+      "prompt": "有无渐变？若有列类型、角度、所有色标及位置；没有也写检查依据。",
+      "fields": [
+        "type",
+        "angleDeg",
+        "stops"
+      ],
+      "na": true
+    },
+    {
+      "id": "shadows",
+      "stage": "03-appearance",
+      "prompt": "列出每层阴影 x/y/blur/spread px、color、inset；无阴影需要证据。",
+      "fields": [
+        "layers"
+      ],
+      "na": true
+    },
+    {
+      "id": "material",
+      "stage": "03-appearance",
+      "prompt": "filter/backdrop-filter、blend-mode、纹理、透明叠层与伪元素效果是什么？",
+      "fields": [
+        "filter",
+        "backdropFilter",
+        "blendMode",
+        "texture",
+        "pseudoElements"
+      ]
+    },
+    {
+      "id": "typography",
+      "stage": "03-appearance",
+      "prompt": "实际文字、声明字族/字体加载证据、字号/行高/字距 px、字重、行数、对齐、装饰与换行？无文字须证据。",
+      "fields": [
+        "text",
+        "fontFamily",
+        "fontEvidence",
+        "alignment",
+        "wrapping",
+        "decoration"
+      ],
+      "numbers": [
+        "fontSizePx",
+        "lineHeightPx",
+        "letterSpacingPx",
+        "fontWeight",
+        "lineCount"
+      ],
+      "estimate": true,
+      "na": true
+    },
+    {
+      "id": "icons",
+      "stage": "03-appearance",
+      "prompt": "逐个图标/图片的来源、bbox、描边 px、颜色、与文字间距、左右顺序及裁剪？无图标也检查 SVG/伪元素。",
+      "fields": [
+        "items"
+      ],
+      "na": true
+    },
+    {
+      "id": "state.default",
+      "stage": "04-states",
+      "prompt": "default 状态：如何触发？看到什么变化？作用到哪个元素？列检查步骤和结果；不存在需源码或 DOM 理由。",
+      "fields": [
+        "action",
+        "result",
+        "target"
+      ],
+      "na": false
+    },
+    {
+      "id": "state.hover",
+      "stage": "04-states",
+      "prompt": "hover 状态：如何触发？看到什么变化？作用到哪个元素？列检查步骤和结果；不存在需源码或 DOM 理由。",
+      "fields": [
+        "action",
+        "result",
+        "target"
+      ],
+      "na": true
+    },
+    {
+      "id": "state.focus",
+      "stage": "04-states",
+      "prompt": "focus 状态：如何触发？看到什么变化？作用到哪个元素？列检查步骤和结果；不存在需源码或 DOM 理由。",
+      "fields": [
+        "action",
+        "result",
+        "target"
+      ],
+      "na": true
+    },
+    {
+      "id": "state.pressed",
+      "stage": "04-states",
+      "prompt": "pressed 状态：如何触发？看到什么变化？作用到哪个元素？列检查步骤和结果；不存在需源码或 DOM 理由。",
+      "fields": [
+        "action",
+        "result",
+        "target"
+      ],
+      "na": true
+    },
+    {
+      "id": "state.disabled",
+      "stage": "04-states",
+      "prompt": "disabled 状态：如何触发？看到什么变化？作用到哪个元素？列检查步骤和结果；不存在需源码或 DOM 理由。",
+      "fields": [
+        "action",
+        "result",
+        "target"
+      ],
+      "na": true
+    },
+    {
+      "id": "state.loading",
+      "stage": "04-states",
+      "prompt": "loading 状态：如何触发？看到什么变化？作用到哪个元素？列检查步骤和结果；不存在需源码或 DOM 理由。",
+      "fields": [
+        "action",
+        "result",
+        "target"
+      ],
+      "na": true
+    },
+    {
+      "id": "state.selected",
+      "stage": "04-states",
+      "prompt": "selected 状态：如何触发？看到什么变化？作用到哪个元素？列检查步骤和结果；不存在需源码或 DOM 理由。",
+      "fields": [
+        "action",
+        "result",
+        "target"
+      ],
+      "na": true
+    },
+    {
+      "id": "state.feedback",
+      "stage": "04-states",
+      "prompt": "feedback 状态：如何触发？看到什么变化？作用到哪个元素？列检查步骤和结果；不存在需源码或 DOM 理由。",
+      "fields": [
+        "action",
+        "result",
+        "target"
+      ],
+      "na": true
+    },
+    {
+      "id": "motion",
+      "stage": "05-motion",
+      "prompt": "列每条运动 trigger/target/property/from/to/unit/durationMs/delayMs/easing/iterations/direction/cycleMs/staggerMs/exit/interruption；静态则 active=false、tracks=[] 并给观察时长和检查步骤。",
+      "fields": [
+        "active",
+        "tracks",
+        "inspection"
+      ],
+      "numbers": [
+        "observationMs"
+      ]
+    },
+    {
+      "id": "pointer",
+      "stage": "05-motion",
+      "prompt": "是否根据坐标跟随鼠标，还是固定 hover 动作？如何区分？",
+      "fields": [
+        "coordinateDriven",
+        "test",
+        "result"
+      ]
+    },
+    {
+      "id": "reducedMotion",
+      "stage": "05-motion",
+      "prompt": "减少动效设置下的实际结果，或精确源码规则；无规则也必须核实。禁止把源码核实称设备实测。",
+      "fields": [
+        "method",
+        "result"
+      ]
+    },
+    {
+      "id": "responsive",
+      "stage": "06-context",
+      "prompt": "至少两个不同 CSS 视口。逐个填 widthPx/heightPx、组件 width/height、换行、溢出；写实际改变和适用范围。",
+      "fields": [
+        "viewports",
+        "conclusion"
+      ]
+    },
+    {
+      "id": "touch",
+      "stage": "06-context",
+      "prompt": "触屏下行为如何？写测试设备/模拟方法或来源代码证据；不能假定 hover 自动支持触屏。",
+      "fields": [
+        "method",
+        "result"
+      ]
+    },
+    {
+      "id": "keyboard",
+      "stage": "06-context",
+      "prompt": "Tab/Shift+Tab/Enter/Space 实际如何？是否能看到焦点，是否意外触发？非交互图形填角色与不适用理由。",
+      "fields": [
+        "method",
+        "result"
+      ],
+      "na": true
+    },
+    {
+      "id": "accessibility",
+      "stage": "06-context",
+      "prompt": "DOM 语义、可访问名称、contrast 检查方法及数值或无文字依据；不要泛称符合 WCAG。",
+      "fields": [
+        "role",
+        "name",
+        "contrast",
+        "limitations"
+      ]
+    },
+    {
+      "id": "implementation",
+      "stage": "07-reconstruct",
+      "prompt": "实际实现证据是什么？示例依赖、可确认的源码版本/属性、许可证事实和复用边界分别是什么？",
+      "fields": [
+        "basis",
+        "dependencies",
+        "version",
+        "reuseBoundary"
+      ]
+    },
+    {
+      "id": "distinction",
+      "stage": "07-reconstruct",
+      "prompt": "与最近的相似款相比，哪些可测差别必须保留？至少两个差别，不能只换名称。",
+      "fields": [
+        "nearest",
+        "differences"
+      ]
+    },
+    {
+      "id": "description",
+      "stage": "07-reconstruct",
+      "prompt": "一份完整中文描述与对应英文。按对象→几何→色彩/字体→交互→响应范围；不出现内部编号、未核实承诺或重复摘要。",
+      "fields": [
+        "zh",
+        "en"
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "stage": "07-reconstruct",
+      "prompt": "按协议给严格重建 prompt，包含结构、px/颜色/文字参数、状态和运动、响应范围、不能添加的效果。",
+      "fields": [
+        "prompt",
+        "avoid"
+      ]
+    },
+    {
+      "id": "retrieval",
+      "stage": "07-reconstruct",
+      "prompt": "标签按对象/结构/形状/色彩/材质/排版/运动/触发/上下文分轴；中英同义词；至少3条口语正例及2条易混负例。",
+      "fields": [
+        "facets",
+        "aliases",
+        "positive",
+        "negative"
+      ]
+    }
+  ]
+}

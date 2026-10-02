@@ -1,0 +1,454 @@
+[
+  {
+    "id": "graphics-sharp-attention-crop",
+    "unitId": "graphics-sharp-attention-crop",
+    "category": "graphics",
+    "type": "recipe",
+    "zh": "主体优先裁切",
+    "en": "Attention crop",
+    "dz": "统一封面比例，优先保留高显著区域。",
+    "de": "Make consistent covers while favoring salient regions.",
+    "kz": [
+      "裁切",
+      "封面",
+      "智能裁切",
+      "缩略图",
+      "sharp"
+    ],
+    "kw": [
+      "Cropping",
+      "Covers",
+      "Smart crop",
+      "Thumbnails",
+      "sharp"
+    ],
+    "title": "主体优先裁切",
+    "descriptionZh": "统一封面比例，优先保留高显著区域。",
+    "descriptionEn": "Make consistent covers while favoring salient regions.",
+    "tags": [
+      "裁切",
+      "封面",
+      "智能裁切",
+      "缩略图",
+      "sharp"
+    ],
+    "engine": "sharp",
+    "sourceName": "sharp official reference",
+    "sourceUrl": "https://sharp.pixelplumbing.com/api-resize/#resize",
+    "url": "https://sharp.pixelplumbing.com/api-resize/#resize",
+    "sourceRevision": "d2f235bbbddbdce38dfdda5294754b5e40b66565",
+    "classification": {
+      "object": "ContentUnit",
+      "primary": "visual-implementation",
+      "secondary": "creative-generative-code"
+    },
+    "execution": {
+      "mode": "local-code",
+      "status": "verified",
+      "runtime": "Node.js + sharp",
+      "install": "npm install sharp",
+      "language": "javascript",
+      "filename": "sharp-attention-crop.mjs",
+      "code": "import sharp from 'sharp';\nawait sharp('input.jpg').resize(1200, 630, { fit: 'cover', position: sharp.strategy.attention }).png().toFile('output.png');\n",
+      "run": "node sharp-attention-crop.mjs",
+      "verification": {
+        "kind": "synthetic-fixture-execution",
+        "codeSha256": "092bec99e0f4485c400c20ef49f23b06cef3ac17a79921ce180cef80040e17cb",
+        "checkedAt": "2026-09-29T02:31:39.089Z",
+        "evidenceArtifact": "runtime-verification.json",
+        "summaryZh": "已用自制几何测试图运行此代码，确认可执行并写出图像；未宣称在任意照片上都达到理想效果。",
+        "summaryEn": "Executed this code on a locally authored geometric fixture and confirmed image output. This does not establish ideal results on arbitrary photos."
+      }
+    },
+    "inputs": [
+      "input.jpg：待裁切图片"
+    ],
+    "outputs": [
+      "output.png：1200×630 图片"
+    ],
+    "limitations": [
+      "显著性策略不等于语义识别；仍可能裁掉需要保留的文字。"
+    ],
+    "inputsEn": [
+      "input.jpg: image to crop"
+    ],
+    "outputsEn": [
+      "output.png: 1200 × 630 image"
+    ],
+    "limitationsEn": [
+      "Saliency is not semantic understanding; meaningful text may still be cropped."
+    ],
+    "requiresPhotoshop": false,
+    "networkAtExecution": false,
+    "license": {
+      "software": "Apache-2.0",
+      "softwareUrl": "https://github.com/lovell/sharp/blob/d2f235bbbddbdce38dfdda5294754b5e40b66565/LICENSE",
+      "model": null,
+      "assets": "输入素材的许可独立于工具；本条不附第三方图片或 PSD。",
+      "asset": "输入素材的许可独立于工具；本条不附第三方图片或 PSD。",
+      "assetEn": "Input asset rights are separate from the software license. No third-party photos or PSDs are bundled."
+    },
+    "codeOrigin": "VisLexicon-authored runnable snippet based on linked official APIs; not an original upstream example",
+    "codeFile": "code/sharp-attention-crop.mjs",
+    "codeSha256": "092bec99e0f4485c400c20ef49f23b06cef3ac17a79921ce180cef80040e17cb",
+    "source": {
+      "exampleUrl": "https://sharp.pixelplumbing.com/api-resize/#resize",
+      "localCodeUrl": "/graphics-resources/20260929/graphics-sharp-attention-crop/sharp-attention-crop.mjs",
+      "downloadUrl": "/graphics-resources/20260929/graphics-sharp-attention-crop/sharp-attention-crop.mjs",
+      "codeSha256": "092bec99e0f4485c400c20ef49f23b06cef3ac17a79921ce180cef80040e17cb",
+      "codeAttribution": "VisLexicon implementation; official API reference linked separately"
+    },
+    "preview": null,
+    "previewOrigin": null,
+    "sourceObservationIds": [
+      "obs-sharp-resize",
+      "obs-lovell--sharp-public-repo",
+      "obs-lovell--sharp-public-commit",
+      "obs-lovell--sharp-public-license"
+    ],
+    "checkedAt": "2026-09-29T02:36:36.415947+00:00",
+    "author": "codex-agent-graphics-20260929",
+    "evidenceStatus": "official-source-checked",
+    "reviewStatus": "pending-independent"
+  },
+  {
+    "id": "graphics-sharp-round-mask",
+    "unitId": "graphics-sharp-round-mask",
+    "category": "graphics",
+    "type": "recipe",
+    "zh": "圆角透明蒙版",
+    "en": "Rounded alpha mask",
+    "dz": "图片变圆角，角外保留透明像素。",
+    "de": "Clip an image to rounded corners with transparent edges.",
+    "kz": [
+      "蒙版",
+      "圆角",
+      "透明",
+      "PNG",
+      "sharp"
+    ],
+    "kw": [
+      "Mask",
+      "Rounded corners",
+      "Transparency",
+      "PNG",
+      "sharp"
+    ],
+    "title": "圆角透明蒙版",
+    "descriptionZh": "图片变圆角，角外保留透明像素。",
+    "descriptionEn": "Clip an image to rounded corners with transparent edges.",
+    "tags": [
+      "蒙版",
+      "圆角",
+      "透明",
+      "PNG",
+      "sharp"
+    ],
+    "engine": "sharp",
+    "sourceName": "sharp official reference",
+    "sourceUrl": "https://sharp.pixelplumbing.com/api-composite/",
+    "url": "https://sharp.pixelplumbing.com/api-composite/",
+    "sourceRevision": "d2f235bbbddbdce38dfdda5294754b5e40b66565",
+    "classification": {
+      "object": "ContentUnit",
+      "primary": "visual-implementation",
+      "secondary": "creative-generative-code"
+    },
+    "execution": {
+      "mode": "local-code",
+      "status": "verified",
+      "runtime": "Node.js + sharp",
+      "install": "npm install sharp",
+      "language": "javascript",
+      "filename": "sharp-round-mask.mjs",
+      "code": "import sharp from 'sharp';\nconst mask = Buffer.from('<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"800\"><rect width=\"800\" height=\"800\" rx=\"96\" fill=\"white\"/></svg>');\nawait sharp('input.jpg').resize(800, 800).composite([{ input: mask, blend: 'dest-in' }]).png().toFile('output.png');\n",
+      "run": "node sharp-round-mask.mjs",
+      "verification": {
+        "kind": "synthetic-fixture-execution",
+        "codeSha256": "4f032aaeb1b172a5efd6a2da1d32de6446783f9946bfe59a7ec6eb710fc3ad6e",
+        "checkedAt": "2026-09-29T02:31:39.089Z",
+        "evidenceArtifact": "runtime-verification.json",
+        "summaryZh": "已用自制几何测试图运行此代码，确认可执行并写出图像；未宣称在任意照片上都达到理想效果。",
+        "summaryEn": "Executed this code on a locally authored geometric fixture and confirmed image output. This does not establish ideal results on arbitrary photos."
+      }
+    },
+    "inputs": [
+      "input.jpg：待处理图片"
+    ],
+    "outputs": [
+      "output.png：800×800 透明圆角图"
+    ],
+    "limitations": [
+      "按几何形状裁剪，不识别人像或物体边缘。"
+    ],
+    "inputsEn": [
+      "input.jpg: source image"
+    ],
+    "outputsEn": [
+      "output.png: 800 × 800 rounded image with transparent corners"
+    ],
+    "limitationsEn": [
+      "Uses a geometric mask; it does not recognize people or object boundaries."
+    ],
+    "requiresPhotoshop": false,
+    "networkAtExecution": false,
+    "license": {
+      "software": "Apache-2.0",
+      "softwareUrl": "https://github.com/lovell/sharp/blob/d2f235bbbddbdce38dfdda5294754b5e40b66565/LICENSE",
+      "model": null,
+      "assets": "输入素材的许可独立于工具；本条不附第三方图片或 PSD。",
+      "asset": "输入素材的许可独立于工具；本条不附第三方图片或 PSD。",
+      "assetEn": "Input asset rights are separate from the software license. No third-party photos or PSDs are bundled."
+    },
+    "codeOrigin": "VisLexicon-authored runnable snippet based on linked official APIs; not an original upstream example",
+    "codeFile": "code/sharp-round-mask.mjs",
+    "codeSha256": "4f032aaeb1b172a5efd6a2da1d32de6446783f9946bfe59a7ec6eb710fc3ad6e",
+    "source": {
+      "exampleUrl": "https://sharp.pixelplumbing.com/api-composite/",
+      "localCodeUrl": "/graphics-resources/20260929/graphics-sharp-round-mask/sharp-round-mask.mjs",
+      "downloadUrl": "/graphics-resources/20260929/graphics-sharp-round-mask/sharp-round-mask.mjs",
+      "codeSha256": "4f032aaeb1b172a5efd6a2da1d32de6446783f9946bfe59a7ec6eb710fc3ad6e",
+      "codeAttribution": "VisLexicon implementation; official API reference linked separately"
+    },
+    "preview": null,
+    "previewOrigin": null,
+    "sourceObservationIds": [
+      "obs-sharp-composite",
+      "obs-lovell--sharp-public-repo",
+      "obs-lovell--sharp-public-commit",
+      "obs-lovell--sharp-public-license"
+    ],
+    "checkedAt": "2026-09-29T02:36:36.415947+00:00",
+    "author": "codex-agent-graphics-20260929",
+    "evidenceStatus": "official-source-checked",
+    "reviewStatus": "pending-independent"
+  },
+  {
+    "id": "graphics-sharp-watermark",
+    "unitId": "graphics-sharp-watermark",
+    "category": "graphics",
+    "type": "recipe",
+    "zh": "透明标识叠加",
+    "en": "Alpha watermark overlay",
+    "dz": "把透明标识放到图像右下角。",
+    "de": "Place a transparent mark at the lower-right corner.",
+    "kz": [
+      "水印",
+      "叠加",
+      "Logo",
+      "透明",
+      "sharp"
+    ],
+    "kw": [
+      "Watermark",
+      "Overlay",
+      "Logo",
+      "Transparency",
+      "sharp"
+    ],
+    "title": "透明标识叠加",
+    "descriptionZh": "把透明标识放到图像右下角。",
+    "descriptionEn": "Place a transparent mark at the lower-right corner.",
+    "tags": [
+      "水印",
+      "叠加",
+      "Logo",
+      "透明",
+      "sharp"
+    ],
+    "engine": "sharp",
+    "sourceName": "sharp official reference",
+    "sourceUrl": "https://sharp.pixelplumbing.com/api-composite/",
+    "url": "https://sharp.pixelplumbing.com/api-composite/",
+    "sourceRevision": "d2f235bbbddbdce38dfdda5294754b5e40b66565",
+    "classification": {
+      "object": "ContentUnit",
+      "primary": "visual-implementation",
+      "secondary": "creative-generative-code"
+    },
+    "execution": {
+      "mode": "local-code",
+      "status": "verified",
+      "runtime": "Node.js + sharp",
+      "install": "npm install sharp",
+      "language": "javascript",
+      "filename": "sharp-watermark.mjs",
+      "code": "import sharp from 'sharp';\nconst logo = await sharp('logo.png').resize({ width: 180 }).png().toBuffer();\nawait sharp('input.jpg').composite([{ input: logo, gravity: 'southeast', blend: 'over' }]).png().toFile('output.png');\n",
+      "run": "node sharp-watermark.mjs",
+      "verification": {
+        "kind": "synthetic-fixture-execution",
+        "codeSha256": "5a4f0c78d53cfac19148170c00a6dda2450e29af662b27bda71ead01f49f279e",
+        "checkedAt": "2026-09-29T02:31:39.089Z",
+        "evidenceArtifact": "runtime-verification.json",
+        "summaryZh": "已用自制几何测试图运行此代码，确认可执行并写出图像；未宣称在任意照片上都达到理想效果。",
+        "summaryEn": "Executed this code on a locally authored geometric fixture and confirmed image output. This does not establish ideal results on arbitrary photos."
+      }
+    },
+    "inputs": [
+      "input.jpg：底图，宽高须容纳标识",
+      "logo.png：透明标识"
+    ],
+    "outputs": [
+      "output.png：合成图"
+    ],
+    "limitations": [
+      "标识尺寸不能超过底图；无内边距时紧贴右下边缘。"
+    ],
+    "inputsEn": [
+      "input.jpg: base image large enough for the mark",
+      "logo.png: transparent mark"
+    ],
+    "outputsEn": [
+      "output.png: composited image"
+    ],
+    "limitationsEn": [
+      "The mark must fit inside the base image. This example places it flush with the lower-right edge."
+    ],
+    "requiresPhotoshop": false,
+    "networkAtExecution": false,
+    "license": {
+      "software": "Apache-2.0",
+      "softwareUrl": "https://github.com/lovell/sharp/blob/d2f235bbbddbdce38dfdda5294754b5e40b66565/LICENSE",
+      "model": null,
+      "assets": "输入素材的许可独立于工具；本条不附第三方图片或 PSD。",
+      "asset": "输入素材的许可独立于工具；本条不附第三方图片或 PSD。",
+      "assetEn": "Input asset rights are separate from the software license. No third-party photos or PSDs are bundled."
+    },
+    "codeOrigin": "VisLexicon-authored runnable snippet based on linked official APIs; not an original upstream example",
+    "codeFile": "code/sharp-watermark.mjs",
+    "codeSha256": "5a4f0c78d53cfac19148170c00a6dda2450e29af662b27bda71ead01f49f279e",
+    "source": {
+      "exampleUrl": "https://sharp.pixelplumbing.com/api-composite/",
+      "localCodeUrl": "/graphics-resources/20260929/graphics-sharp-watermark/sharp-watermark.mjs",
+      "downloadUrl": "/graphics-resources/20260929/graphics-sharp-watermark/sharp-watermark.mjs",
+      "codeSha256": "5a4f0c78d53cfac19148170c00a6dda2450e29af662b27bda71ead01f49f279e",
+      "codeAttribution": "VisLexicon implementation; official API reference linked separately"
+    },
+    "preview": null,
+    "previewOrigin": null,
+    "sourceObservationIds": [
+      "obs-sharp-composite",
+      "obs-lovell--sharp-public-repo",
+      "obs-lovell--sharp-public-commit",
+      "obs-lovell--sharp-public-license"
+    ],
+    "checkedAt": "2026-09-29T02:36:36.415947+00:00",
+    "author": "codex-agent-graphics-20260929",
+    "evidenceStatus": "official-source-checked",
+    "reviewStatus": "pending-independent"
+  },
+  {
+    "id": "graphics-sharp-multiply-texture",
+    "unitId": "graphics-sharp-multiply-texture",
+    "category": "graphics",
+    "type": "recipe",
+    "zh": "正片叠底纹理",
+    "en": "Multiply texture blend",
+    "dz": "把纸纹或颗粒叠到底图上，保留暗部纹理。",
+    "de": "Blend paper or grain into a base image using multiply.",
+    "kz": [
+      "混合模式",
+      "正片叠底",
+      "纸纹",
+      "纹理",
+      "sharp"
+    ],
+    "kw": [
+      "Blend mode",
+      "Multiply",
+      "Paper texture",
+      "Texture",
+      "sharp"
+    ],
+    "title": "正片叠底纹理",
+    "descriptionZh": "把纸纹或颗粒叠到底图上，保留暗部纹理。",
+    "descriptionEn": "Blend paper or grain into a base image using multiply.",
+    "tags": [
+      "混合模式",
+      "正片叠底",
+      "纸纹",
+      "纹理",
+      "sharp"
+    ],
+    "engine": "sharp",
+    "sourceName": "sharp official reference",
+    "sourceUrl": "https://sharp.pixelplumbing.com/api-composite/",
+    "url": "https://sharp.pixelplumbing.com/api-composite/",
+    "sourceRevision": "d2f235bbbddbdce38dfdda5294754b5e40b66565",
+    "classification": {
+      "object": "ContentUnit",
+      "primary": "visual-implementation",
+      "secondary": "creative-generative-code"
+    },
+    "execution": {
+      "mode": "local-code",
+      "status": "verified",
+      "runtime": "Node.js + sharp",
+      "install": "npm install sharp",
+      "language": "javascript",
+      "filename": "sharp-multiply-texture.mjs",
+      "code": "import sharp from 'sharp';\nconst base = await sharp('input.jpg').rotate().png().toBuffer();\nconst { width, height } = await sharp(base).metadata();\nconst texture = await sharp('texture.png').resize(width, height, { fit: 'cover' }).png().toBuffer();\nawait sharp(base).composite([{ input: texture, blend: 'multiply' }]).png().toFile('output.png');\n",
+      "run": "node sharp-multiply-texture.mjs",
+      "verification": {
+        "kind": "synthetic-fixture-execution",
+        "codeSha256": "f9a6b2b4814654c95c976c901d69751d048de64182934bd45798be25b37abe9e",
+        "checkedAt": "2026-09-29T02:31:39.089Z",
+        "evidenceArtifact": "runtime-verification.json",
+        "summaryZh": "已用自制几何测试图运行此代码，确认可执行并写出图像；未宣称在任意照片上都达到理想效果。",
+        "summaryEn": "Executed this code on a locally authored geometric fixture and confirmed image output. This does not establish ideal results on arbitrary photos."
+      }
+    },
+    "inputs": [
+      "input.jpg：底图",
+      "texture.png：有使用许可的纹理"
+    ],
+    "outputs": [
+      "output.png：叠底结果"
+    ],
+    "limitations": [
+      "纹理越暗，结果越暗；透明度需在纹理输入中预先控制。"
+    ],
+    "inputsEn": [
+      "input.jpg: base image",
+      "texture.png: a texture you have permission to use"
+    ],
+    "outputsEn": [
+      "output.png: multiply-blended image"
+    ],
+    "limitationsEn": [
+      "Darker textures produce darker results. Set any desired opacity in the texture input first."
+    ],
+    "requiresPhotoshop": false,
+    "networkAtExecution": false,
+    "license": {
+      "software": "Apache-2.0",
+      "softwareUrl": "https://github.com/lovell/sharp/blob/d2f235bbbddbdce38dfdda5294754b5e40b66565/LICENSE",
+      "model": null,
+      "assets": "输入素材的许可独立于工具；本条不附第三方图片或 PSD。",
+      "asset": "输入素材的许可独立于工具；本条不附第三方图片或 PSD。",
+      "assetEn": "Input asset rights are separate from the software license. No third-party photos or PSDs are bundled."
+    },
+    "codeOrigin": "VisLexicon-authored runnable snippet based on linked official APIs; not an original upstream example",
+    "codeFile": "code/sharp-multiply-texture.mjs",
+    "codeSha256": "f9a6b2b4814654c95c976c901d69751d048de64182934bd45798be25b37abe9e",
+    "source": {
+      "exampleUrl": "https://sharp.pixelplumbing.com/api-composite/",
+      "localCodeUrl": "/graphics-resources/20260929/graphics-sharp-multiply-texture/sharp-multiply-texture.mjs",
+      "downloadUrl": "/graphics-resources/20260929/graphics-sharp-multiply-texture/sharp-multiply-texture.mjs",
+      "codeSha256": "f9a6b2b4814654c95c976c901d69751d048de64182934bd45798be25b37abe9e",
+      "codeAttribution": "VisLexicon implementation; official API reference linked separately"
+    },
+    "preview": null,
+    "previewOrigin": null,
+    "sourceObservationIds": [
+      "obs-sharp-composite",
+      "obs-lovell--sharp-public-repo",
+      "obs-lovell--sharp-public-commit",
+      "obs-lovell--sharp-public-license"
+    ],
+    "checkedAt": "2026-09-29T02:36:36.415947+00:00",
+    "author": "codex-agent-graphics-20260929",
+    "evidenceStatus": "official-source-checked",
+    "reviewStatus": "pending-independent"
+  }
+]

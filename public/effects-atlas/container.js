@@ -1,0 +1,150 @@
+const P = (k, zh, en, min, max, step, def, unit) => ({ k, zh, en, min, max, step, def, unit: unit || '' });
+const E = 'cubic-bezier(.22,1,.36,1)';
+
+export default {
+  id: 'container', zh: '容器变形', en: 'Container morph',
+  dz: '一个方块如何改变形状、尺寸与状态', de: 'How one block changes shape, size & state',
+  items: [
+    { id: 'nestedradius', zh: '同心圆角嵌套演算', en: 'Concentric nested radius', dz: '外圆角 − 内间距 = 内圆角', de: 'Inner radius = max(0, Outer radius − Gap)',
+      pz: '工业级 UI 几何法则：当内间距 < 32px 时，内圆角必须严格满足 R_inner = max(0, R_outer - gap)。若内外使用相同半径，拐角会发生拥挤变形与非平行畸变，呈现出典型的不专业套娃感。',
+      pe: 'Industrial UI geometry rule: inner radius must equal max(0, outer radius − padding). Identical radii cause warped, crammed corners.',
+      demo: 'card', params: [P('ro', '外圆角', 'Outer radius', 12, 44, 2, 24, 'px'), P('p', '内边距', 'Padding gap', 4, 24, 2, 12, 'px')],
+      css: `.fxcard{width:min(320px,85%)}.fx{border-radius:var(--ro,24px);padding:var(--p,12px);background:#f1f5f9;border:1.5px solid #cbd5e1;display:flex;flex-direction:column;gap:8px;box-sizing:border-box}.fx>b{height:76px;border-radius:max(0px,calc(var(--ro,24px) - var(--p,12px)));background:linear-gradient(135deg,#6366f1,#8b5cf6);box-shadow:0 8px 20px -4px rgba(99,102,241,.35);margin:0;display:block}.fx>u{height:14px;border-radius:max(0px,calc(var(--ro,24px) - var(--p,12px) - 4px));background:#94a3b8;width:70%;margin:0;display:block}.fx>i{display:none}.fx::after{content:'同心法则：R_in = max(0, R_out - Gap)';display:block;margin-top:4px;font:600 11px var(--fx-mono,monospace);color:#6366f1;text-align:center}` },
+
+    { id: 'c2pill', zh: '圆形变胶囊', en: 'Circle to pill', dz: '圆点横向拉长成胶囊', de: 'A dot stretches into a pill',
+      pz: '同时过渡 width 与 border-radius（保持 radius = 高度的一半）。', pe: 'Transition width and border-radius together, keeping radius at half the height.',
+      demo: 'box', params: [P('t', '时长', 'Duration', .2, 2, .1, .8, 's')],
+      css: `@keyframes fxm{0%,15%{width:150px;border-radius:50%}55%,100%{width:300px;border-radius:75px}}.fx{height:150px;animation:fxm calc(var(--t,.8s)*2.6) ${E} infinite alternate}` },
+
+    { id: 'p2card', zh: '胶囊变卡片', en: 'Pill to card', dz: '细长按钮展开成一张卡', de: 'A slim button unfolds into a card',
+      pz: '同时过渡 height 与 border-radius，从 999px 收到 16px。', pe: 'Transition height and border-radius from 999px down to 16px.',
+      demo: 'box', css: `@keyframes fxm{0%,15%{height:56px;border-radius:28px}55%,100%{height:230px;border-radius:16px}}.fx{width:260px;animation:fxm 2.6s ${E} infinite alternate}` },
+
+    { id: 'sizemorph', zh: '尺寸变形', en: 'Size morph', dz: '整体等比放大缩小', de: 'The block scales up and back',
+      pz: '优先用 transform:scale 而不是改 width/height，避免重排。', pe: 'Prefer transform:scale over animating width/height to avoid layout thrash.',
+      demo: 'box', params: [P('s', '倍数', 'Scale', 1, 2.2, .05, 1.5, '')],
+      css: `@keyframes fxm{to{transform:scale(var(--s,1.5))}}.fx{animation:fxm 1.6s ${E} infinite alternate}` },
+
+    { id: 'radius', zh: '圆角变形', en: 'Corner radius morph', dz: '方角到圆角连续变化', de: 'Sharp corners round off continuously',
+      pz: '单独过渡 border-radius，四角可给不同值做不对称形状。', pe: 'Transition border-radius alone; per-corner values give asymmetric shapes.',
+      demo: 'box', params: [P('r', '圆角', 'Radius', 0, 75, 1, 60, 'px')],
+      css: `@keyframes fxm{0%{border-radius:4px}100%{border-radius:var(--r,60px)}}.fx{animation:fxm 1.8s ${E} infinite alternate}` },
+
+    { id: 'squircle', zh: '方到超椭圆', en: 'Square to squircle', dz: '方块化成柔和的超椭圆', de: 'The square softens into a squircle',
+      pz: '用 border-radius 百分比 + 略微不同的横纵值模拟超椭圆。', pe: 'Percentage border-radius with slightly different h/v values fakes a squircle.',
+      demo: 'box', css: `@keyframes fxm{0%{border-radius:6%}100%{border-radius:32% 32% 32% 32%/38% 38% 38% 38%}}.fx{animation:fxm 2s ${E} infinite alternate}` },
+
+    { id: 'blob', zh: '流体形变', en: 'Blob morph', dz: '像水滴一样缓慢扭动', de: 'Slowly wobbles like a droplet',
+      pz: '循环切换多组不对称 border-radius 百分比值。', pe: 'Loop between several asymmetric border-radius percentage sets.',
+      demo: 'box', css: `@keyframes fxm{0%,100%{border-radius:42% 58% 63% 37%/45% 38% 62% 55%}33%{border-radius:62% 38% 35% 65%/58% 62% 38% 42%}66%{border-radius:35% 65% 55% 45%/38% 45% 55% 62%}}.fx{background:#4d8ba6;animation:fxm 8s ease-in-out infinite}` },
+
+    { id: 'aspect', zh: '比例变形', en: 'Aspect ratio morph', dz: '1:1 变 16:9 再变回来', de: 'Goes 1:1 → 16:9 and back',
+      pz: '过渡 aspect-ratio（或直接过渡 height），宽度固定。', pe: 'Transition aspect-ratio (or height) with a fixed width.',
+      demo: 'box', css: `@keyframes fxm{0%{aspect-ratio:1;height:auto}100%{aspect-ratio:16/9;height:auto}}.fx{width:280px;height:auto;animation:fxm 2.2s ${E} infinite alternate}` },
+
+    { id: 'expand', zh: '收起到展开', en: 'Compact to expanded', dz: '折叠内容向下展开', de: 'Folded content opens downward',
+      pz: '用 grid-template-rows: 0fr → 1fr 实现无需固定高度的展开。', pe: 'Animate grid-template-rows 0fr → 1fr so no fixed height is needed.',
+      demo: 'box', css: `@keyframes fxm{0%,20%{height:64px}60%,100%{height:280px}}.fx{width:280px;align-items:flex-start;padding:22px;border-radius:14px;animation:fxm 3s ${E} infinite alternate}` },
+
+    { id: 'collapse', zh: '反向收拢', en: 'Reverse collapse', dz: '展开态干净地收回原位', de: 'The open state folds cleanly back',
+      pz: '出场用比入场略短的时长和 ease-in，收得干脆。', pe: 'Exit slightly faster than enter, with ease-in, so it snaps shut.',
+      demo: 'box', css: `@keyframes fxm{0%{height:280px;opacity:1}70%{height:64px;opacity:1}100%{height:64px;opacity:.55}}.fx{width:280px;animation:fxm 2.2s cubic-bezier(.5,0,.9,.4) infinite alternate}` },
+
+    { id: 'reflow', zh: '内容重排', en: 'Content reflow', dz: '容器变宽时内部从竖排变横排', de: 'Contents flip from stacked to side-by-side',
+      pz: '容器宽度变化 + 内部 flex-direction 切换，用 FLIP 保证子元素平滑。', pe: 'Width change plus a flex-direction switch; use FLIP to keep children smooth.',
+      demo: 'cards', css: `@keyframes fxm{0%,20%{flex-direction:column;width:180px}60%,100%{flex-direction:row;width:520px}}.fxrow{animation:fxm 3.4s ${E} infinite alternate}.fx{height:auto;min-height:70px;flex:1}` },
+
+    { id: 'flip', zh: '共享元素飞跃', en: 'Shared element (FLIP)', dz: '小卡片飞到大位置，像同一个物体', de: 'A thumbnail flies into a hero — same object, new place',
+      pz: '记录首末位置（First/Last），用 transform 反向补偿再播放，即 FLIP。', pe: 'Measure First and Last rects, invert with transform, then Play — the FLIP technique.',
+      demo: 'box', css: `@keyframes fxm{0%,10%{transform:translate(-140px,-90px) scale(.34)}55%,100%{transform:none}}.fx{width:340px;height:220px;animation:fxm 3s ${E} infinite alternate}` },
+
+    { id: 'flip3d', zh: '翻面卡片', en: 'Flip card', dz: '卡片翻转露出背面', de: 'The card turns to show its back',
+      pz: '父级 perspective + 子级 rotateY(180deg)，两面 backface-visibility:hidden。', pe: 'Perspective on the parent, rotateY(180deg) on the child, backface-visibility hidden.',
+      demo: 'box', css: `@keyframes fxm{0%,15%{transform:rotateY(0)}60%,100%{transform:rotateY(180deg)}}.fxstage{perspective:900px}.fx{animation:fxm 3s ${E} infinite alternate}` },
+
+    { id: 'fold', zh: '折叠展开', en: 'Fold open', dz: '像纸一样从中间折开', de: 'Unfolds from the middle like paper',
+      pz: 'rotateX 配合 transform-origin:top，父级加 perspective。', pe: 'rotateX with transform-origin:top and perspective on the parent.',
+      demo: 'box', css: `@keyframes fxm{0%{transform:rotateX(-92deg);opacity:.2}100%{transform:none;opacity:1}}.fxstage{perspective:1000px}.fx{transform-origin:top center;animation:fxm 1.6s ${E} infinite alternate}` },
+
+    { id: 'clipcircle', zh: '圆形裁切扩张', en: 'Circle clip expand', dz: '内容从一个点圆形展开', de: 'Content opens as a growing circle',
+      pz: 'clip-path:circle(0) → circle(140%)，圆心可设为点击位置。', pe: 'clip-path circle(0) → circle(140%), centred on the click point.',
+      demo: 'box', css: `@keyframes fxm{0%{clip-path:circle(0% at 20% 80%)}100%{clip-path:circle(140% at 20% 80%)}}.fx{width:300px;height:220px;animation:fxm 1.8s ${E} infinite alternate}` },
+
+    { id: 'clipinset', zh: '方形擦除', en: 'Inset wipe', dz: '从一侧擦出内容', de: 'Content wipes in from one edge',
+      pz: 'clip-path:inset(0 100% 0 0) → inset(0)，方向可换四边。', pe: 'clip-path inset(0 100% 0 0) → inset(0); swap sides for direction.',
+      demo: 'box', css: `@keyframes fxm{0%{clip-path:inset(0 100% 0 0)}100%{clip-path:inset(0 0 0 0)}}.fx{width:300px;height:200px;animation:fxm 1.4s ${E} infinite alternate}` },
+
+    { id: 'split2', zh: '一分为二', en: 'Split in two', dz: '一块裂成两块分开', de: 'One block splits into two',
+      pz: '两个子块共用同一背景，分别向两侧位移。', pe: 'Two halves share one background and translate apart.',
+      demo: 'cards', css: `@keyframes fxm{0%,15%{gap:0}60%,100%{gap:60px}}.fxrow{animation:fxm 2.4s ${E} infinite alternate}.fx{background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);border:0}.fx b{background:#3a3a48}` },
+
+    { id: 'merge', zh: '合并为一', en: 'Merge into one', dz: '两块靠拢粘成一块', de: 'Two blocks slide together and fuse',
+      pz: '靠拢时把相邻圆角过渡到 0，视觉上就“粘”住了。', pe: 'As they meet, transition the touching corners to 0 so they read as fused.',
+      demo: 'cards', css: `@keyframes fxm{0%{gap:48px}100%{gap:0}}.fxrow{animation:fxm 2s ${E} infinite alternate}.fx{background:#4d8ba6;border:0}.fx b{background:#4a7444}` },
+
+    { id: 'stretch', zh: '拉伸挤压', en: 'Squash & stretch', dz: '有弹性的胖瘦变化', de: 'Elastic fat/thin deformation',
+      pz: 'scaleX 与 scaleY 反向变化，总体积守恒，动画才有生命。', pe: 'scaleX and scaleY move inversely — conserving volume is what sells it.',
+      demo: 'box', css: `@keyframes fxm{0%,100%{transform:scale(1,1)}30%{transform:scale(1.25,.78)}60%{transform:scale(.84,1.2)}}.fx{animation:fxm 1.6s ${E} infinite}` },
+
+    { id: 'skewm', zh: '斜切变形', en: 'Skew morph', dz: '容器倾斜出速度感', de: 'A lean that reads as speed',
+      pz: 'transform:skewX，内部内容反向 skew 抵消文字变形。', pe: 'skewX the container and counter-skew the contents so text stays upright.',
+      demo: 'box', params: [P('k', '斜度', 'Skew', 0, 24, 1, 12, 'deg')],
+      css: `@keyframes fxm{to{transform:skewX(calc(var(--k,12deg)*-1))}}.fx{animation:fxm 1.4s ${E} infinite alternate}` },
+
+    { id: 'searchbar', zh: '图标展开搜索框', en: 'Icon to search field', dz: '圆形按钮拉开成输入框', de: 'A round button pulls open into an input',
+      pz: '宽度 + 圆角同时过渡，图标固定在左侧不动。', pe: 'Transition width and radius together while pinning the icon to the left.',
+      demo: 'box', css: `@keyframes fxm{0%,20%{width:56px;border-radius:28px}60%,100%{width:340px;border-radius:28px}}.fx{height:56px;justify-content:flex-start;padding-left:20px;overflow:hidden;white-space:nowrap;animation:fxm 3s ${E} infinite alternate}` },
+
+    { id: 'btnload', zh: '按钮变加载条', en: 'Button to loading pill', dz: '点击后按钮收窄成转圈', de: 'The button shrinks into a spinner',
+      pz: '宽度收到与高度相等，文字淡出、spinner 淡入。', pe: 'Shrink width to equal height, cross-fade label out and spinner in.',
+      demo: 'box', css: `@keyframes fxm{0%,20%{width:200px}60%,100%{width:56px;color:transparent}}@keyframes fxsp{to{transform:rotate(1turn)}}.fx{height:56px;border-radius:28px;background:#e8879c;position:relative;animation:fxm 2.8s ${E} infinite alternate}.fx::after{content:'';position:absolute;width:20px;height:20px;border:2.5px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:50%;opacity:0;animation:fxsp .8s linear infinite,fxm 2.8s ${E} infinite alternate}` },
+
+    { id: 'sheet', zh: '底部抽屉升起', en: 'Bottom sheet', dz: '面板从底部推上来', de: 'A panel pushes up from the bottom',
+      pz: 'translateY(100%) → 0，顶部圆角，配合遮罩渐显。', pe: 'translateY(100%) → 0 with rounded top corners and a fading scrim.',
+      demo: 'panel', css: `@keyframes fxm{0%,10%{transform:translateY(100%)}55%,100%{transform:translateY(28%)}}.fxb{border-radius:18px 18px 0 0;animation:fxm 2.6s ${E} infinite alternate}` },
+
+    { id: 'drawer', zh: '侧边抽屉', en: 'Side drawer', dz: '面板从右边滑入', de: 'A panel slides in from the right',
+      pz: 'translateX(100%) → 0，主体内容同时轻微缩放后退。', pe: 'translateX(100%) → 0 while the page behind scales back slightly.',
+      demo: 'panel', css: `@keyframes fxm{0%,10%{transform:translateX(100%)}55%,100%{transform:translateX(35%)}}@keyframes fxa{0%,10%{transform:none}55%,100%{transform:scale(.94)}}.fxb{animation:fxm 2.6s ${E} infinite alternate}.fxa{animation:fxa 2.6s ${E} infinite alternate}` },
+
+    { id: 'card2modal', zh: '卡片升为弹窗', en: 'Card to modal', dz: '列表里的卡片放大成弹窗', de: 'A list card grows into a modal',
+      pz: '共享元素 + 背景遮罩渐显，卡片位移到屏幕中心并放大。', pe: 'Shared element plus a fading scrim; the card translates to center and scales up.',
+      demo: 'box', css: `@keyframes fxm{0%,15%{transform:translate(-120px,60px) scale(.4);box-shadow:0 1px 2px rgba(0,0,0,.1)}60%,100%{transform:none;box-shadow:0 30px 60px rgba(48,66,92,.28)}}.fx{width:320px;height:230px;animation:fxm 3s ${E} infinite alternate}` },
+
+    { id: 'tile2hero', zh: '瓦片铺满', en: 'Tile to full bleed', dz: '小图扩张到通栏', de: 'A tile expands to full bleed',
+      pz: '宽高与圆角同时到满屏值，注意用 will-change 稳定合成层。', pe: 'Animate width, height and radius to full-bleed values; will-change stabilises the layer.',
+      demo: 'box', css: `@keyframes fxm{0%,15%{width:150px;height:110px;border-radius:14px}60%,100%{width:100%;height:300px;border-radius:0}}.fx{animation:fxm 3s ${E} infinite alternate}` },
+
+    { id: 'rotate45', zh: '旋成菱形', en: 'Rotate to diamond', dz: '方块转 45 度成菱形', de: 'The square turns 45° into a diamond',
+      pz: 'rotate(45deg) 配合 scale 补偿，避免超出容器。', pe: 'rotate(45deg) with a compensating scale so it stays inside the frame.',
+      demo: 'box', css: `@keyframes fxm{to{transform:rotate(45deg) scale(.78);border-radius:18px}}.fx{animation:fxm 2s ${E} infinite alternate}` },
+
+    { id: 'accordion', zh: '手风琴推挤', en: 'Accordion push', dz: '一格变宽，其他格自动让位', de: 'One panel widens, the others give way',
+      pz: '用 flex:1 与 flex:3 的过渡，兄弟元素自然被挤压。', pe: 'Transition flex-grow between 1 and 3; siblings compress automatically.',
+      demo: 'cards', css: `@keyframes fxm{0%,20%{flex:1}60%,100%{flex:3.4}}.fx{width:auto;flex:1;transition:flex .5s ${E}}.fx:first-child{animation:fxm 3s ${E} infinite alternate}` },
+
+    { id: 'liquid', zh: '弹性回弹变形', en: 'Elastic resize', dz: '尺寸变化时轻微过冲再稳定', de: 'Size changes overshoot slightly, then settle',
+      pz: '用 out-back 类缓动（cubic-bezier(.34,1.56,.64,1)）做一次小过冲。', pe: 'Use an out-back curve (cubic-bezier(.34,1.56,.64,1)) for a single small overshoot.',
+      demo: 'box', css: `@keyframes fxm{0%,20%{transform:scale(.7)}60%,100%{transform:scale(1)}}.fx{animation:fxm 2.4s cubic-bezier(.34,1.56,.64,1) infinite alternate}` },
+
+    { id: 'gooey', zh: '粘连合并', en: 'Gooey merge', dz: '两个圆靠近时像水银黏在一起', de: 'Two circles cling like mercury as they meet',
+      pz: '父级 filter:blur + contrast 组成 gooey 滤镜，子元素为纯色圆。', pe: 'Parent filter blur+contrast makes the gooey filter; children are solid circles.',
+      demo: 'cards', css: `@keyframes fxm{0%{gap:70px}100%{gap:-10px}}.fxrow{filter:blur(9px) contrast(22);background:#fcfcfb;padding:20px;animation:fxm 2.4s ease-in-out infinite alternate}.fx{width:120px;height:120px;border-radius:50%;background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);border:0;padding:0}.fx b{display:none}` },
+
+    { id: 'heightauto', zh: '自动高度展开', en: 'Auto-height reveal', dz: '内容多少都能平滑展开', de: 'Opens smoothly whatever the content height',
+      pz: 'grid-template-rows:0fr→1fr（或 CSS calc-size），避免写死 max-height。', pe: 'grid-template-rows 0fr → 1fr (or calc-size) instead of a hardcoded max-height.',
+      demo: 'box', css: `@keyframes fxm{0%,20%{grid-template-rows:0fr}60%,100%{grid-template-rows:1fr}}.fx{display:grid;width:300px;height:auto;padding:0;overflow:hidden;animation:fxm 3s ${E} infinite alternate}.fx::before{content:'';display:block;min-height:0;height:200px}` },
+
+    { id: 'bentogrid', zh: '便当盒网格', en: 'Bento grid', dz: '不等比模块交织的现代化信息矩阵', de: 'Asymmetric nested card hierarchy',
+      pz: '跨行跨列布局配合圆角微边，Apple 与现代化 SaaS 标志性布局范式。', pe: 'Asymmetric col-span and row-span layout. Trending modern standard.',
+      demo: 'grid', css: `.fxgrid{display:grid;grid-template-columns:repeat(3,80px);grid-template-rows:repeat(2,80px);gap:8px}.fx:nth-child(1){grid-column:span 2;background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:1px solid #bae6fd}.fx:nth-child(2){background:#fafafa;border:1px solid #e5e5e5}.fx:nth-child(3){background:#fafafa;border:1px solid #e5e5e5}.fx:nth-child(4){grid-column:span 2;background:linear-gradient(135deg,#fdf4ff,#fae8ff);border:1px solid #f5d0fe}` },
+
+    { id: 'tiltcard', zh: '3D 视差卡片', en: '3D tilt card', dz: '指针悬停时光泽跟随与卡片多轴倾斜', de: 'Multiaxial perspective tilt with shine',
+      pz: 'perspective 配合 rotateX / rotateY 与径向高光跟随，Hover.dev / Aceternity 招牌。', pe: '3D perspective matrix with interactive glare highlight.',
+      demo: 'card', css: `@keyframes fxtilt{0%,100%{transform:perspective(600px) rotateX(5deg) rotateY(-8deg)}50%{transform:perspective(600px) rotateX(-6deg) rotateY(8deg)}}.fx{animation:fxtilt 4s ease-in-out infinite;box-shadow:0 20px 35px -10px rgba(0,0,0,.15);border:1px solid #e2e8f0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.9),#f8fafc)}` },
+
+    { id: 'dockbar', zh: 'macOS 风格 Dock 栏', en: 'Fisheye dock bar', dz: '邻近图标按余弦曲线平滑放大', de: 'Cosine fisheye magnify on proximity',
+      pz: '以当前悬停项为中心，两侧相邻项按高斯衰减依次缩放，Magic UI 经典组件。', pe: 'Proximity-based cosine scaling for dock icons.',
+      demo: 'nav', css: `@keyframes fxdock{0%,100%{transform:scale(1)}50%{transform:scale(1.4) translateY(-6px)}}.fxnav{align-items:flex-end;padding:6px 12px;border-radius:18px;background:rgba(255,255,255,.8);backdrop-filter:blur(10px);box-shadow:0 8px 30px rgba(0,0,0,.12)}.fx:nth-child(3){animation:fxdock 2.8s ease-in-out infinite;background:#3b82f6;color:#fff;border-radius:12px}` }
+  ]
+};

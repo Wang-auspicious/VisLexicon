@@ -1,0 +1,156 @@
+import { useJevSearch } from '../lib/use-jev-search.js'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import DesignDocumentDetail from '../components/DesignDocumentDetail.jsx'
+import OriginalSkillDocument from '../components/OriginalSkillDocument.jsx'
+import UsableResourceDetail from '../components/UsableResourceDetail.jsx'
+import PRACTICES, { practiceTopics } from '../lib/creative-practices.js'
+import IMAGE_PROMPTS from '../data/image-prompts.json'
+import IMAGE_PROMPTS_EN from '../data/image-prompts.en.json'
+import { imageResourcePresentation } from '../lib/image-prompts.js'
+import { filterResources, resourceSection, RESOURCE_SECTIONS } from '../lib/creative-resources.js'
+import { USABLE_RESOURCE_TOPICS, matchesResourceTopic, resourceRuntime } from '../lib/usable-resource-topics.js'
+import { matchesRequirements } from '../lib/discovery-scopes.js'
+import { useLocale } from '../i18n.js'
+import { englishText, hasHan, topicEnglish } from '../lib/localized-content.js'
+import { navigate as navigateTo } from '../router.js'
+import { progressiveWindow, RESOURCE_PAGE_SIZE } from '../lib/progressive-list.js'
+import '../styles/resource-library.css'
+
+// Columns with no published entries yet keep a placeholder taxonomy.
+const PLACEHOLDER_TOPICS = { design: ['全部', '设计规范', '布局规则', '交互规则'], image: ['全部', '构图', '光线', '材质'], science: ['全部', '统计图', '方法示意', '网络结构'] }
+const DESIGN_TOPICS = new Set(['项目规范', '项目设计规范', '设计 Skill', '设计参考', '设计系统', '交互动效', '无障碍', '移动端', 'Stitch'])
+
+// The presentation column derives its topics from the entries themselves, so a
+// topic can never drift away from the copy that actually carries it.
+const topicPairs = (category, selectedTopic) => practiceTopics(PRACTICES, category).filter(topic => category !== 'design' || DESIGN_TOPICS.has(topic.zh) || topic.zh === selectedTopic)
+
+function ResourcePreview({ item, en, priority = false }) {
+  if (item.preview) return <img src={item.preview} alt={en ? (item.practice?.caption?.en || item.en) : (item.practice?.caption?.zh || item.zh)} loading={priority ? 'eager' : 'lazy'} fetchPriority={priority ? 'high' : 'low'} decoding="async" />
+  if (item.originalDocument) return <pre className="rl-document-excerpt" aria-label={en ? 'Excerpt from the original SKILL.md' : '原始 SKILL.md 节选'} style={{ margin: 0, padding: '20px', textAlign: 'left', whiteSpace: 'pre-wrap', overflow: 'hidden', height: '100%', fontSize: '12px', lineHeight: 1.6 }}><strong>SKILL.md · {item.originalDocument.lines} {en ? 'lines' : '行'}{'\n\n'}</strong>{item.originalDocument.excerpt}</pre>
+  return <span className="rl-study-source-only">{en ? 'View examples at the source' : '到原文查看效果'}</span>
+}
+
+function ImagePromptDetail({ item, back }) {
+  const en = useLocale() === 'en'
+  const [copyState, setCopyState] = useState('idle')
+  const translation = IMAGE_PROMPTS_EN[item.id]
+  const presentation = imageResourcePresentation(en ? { ...item, prompt: translation?.prompt || englishText(item.prompt) } : item)
+  const { isSkill, prompt, images, comparison, sourceOnly, links } = presentation
+  return <article className="rl-detail">
+    <div className="rl-breadcrumb"><button type="button" onClick={back}>{en?'← All prompts':'← 返回提示词'}</button><span>{en ? topicEnglish(item.topicZh) : item.topicZh}</span></div>
+    <div className="rl-detail-layout"><div>
+      <div className={images.length > 1 ? 'rl-comparison-pair' : undefined}>{images.map(image=><figure className={comparison.kind ? 'rl-stage rl-comparison' : 'rl-stage'} key={image.src}><img src={image.src} alt={`${en?item.titleEn:item.titleZh} · ${en?image.labelEn:image.labelZh}`}/><figcaption>{en?image.labelEn:image.labelZh} · {en ? englishText(translation?.imageCredit, englishText(item.imageCredit, englishText(item.sourceName, 'Original creator'))) : item.imageCredit || item.sourceName}</figcaption></figure>)}</div>
+      {(comparison.caption || sourceOnly)&&<p>{en ? englishText(translation?.comparisonCaption, 'Original source example; not independently reproduced here.') : comparison.caption || '前后效果请查看来源原图。'}{(comparison.sourceUrl || sourceOnly)&&<> <a href={comparison.sourceUrl || item.sourceUrl} target="_blank" rel="noreferrer">{en?'View comparison source':'查看效果来源'}</a></>}</p>}
+      <h1>{en?item.titleEn:item.titleZh}</h1><p className="rl-lead">{en?(item.descriptionEn || item.titleEn):item.descriptionZh}</p>
+      {item.originalDocument && <OriginalSkillDocument key={item.originalDocument.sha256} document={item.originalDocument} en={en} />}
+      {prompt&&<section><h2>{en?'Reusable prompt':'可复制提示词'}</h2><p>{isSkill ? (en?'Use this invocation according to the original Skill instructions.':'按 Skill 原文说明使用下方调用提示。') : (en?'Upload your reference photo, then use this adapted prompt. The source example was not generated with this adapted wording.':'先上传你的参考照片，再使用下方整理版提示词。上方为来源效果图，整理版尚未独立复现。')}</p>
+        <textarea className="rl-prompt" aria-label={en?'Image editing prompt':'图像编辑提示词'} readOnly value={prompt}/>
+        <button className="rl-copy" type="button" onClick={async()=>{try{await navigator.clipboard.writeText(prompt);setCopyState('copied')}catch{setCopyState('failed')}}}>{copyState==='copied'?(en?'Copied':'已复制'):(en?'Copy prompt':'复制提示词')}</button>
+        <span role="status">{copyState==='failed'?(en?'Select the prompt above to copy it manually.':'复制未成功，可选中上方文本手动复制。'):copyState==='copied'?(en?'Prompt copied.':'提示词已复制。'):''}</span>
+      </section>}
+      {item.inputPreview&&<figure className="rl-stage"><img src={item.inputPreview} alt={en?'Original reference image':'来源参考原图'} loading="lazy"/><figcaption>{en?'Source input reference':'来源输入参考图'}</figcaption></figure>}
+    </div><aside className="rl-detail-notes">
+      <section><h2>{en?'How to use':'使用方法'}</h2>{isSkill ? <><p>{en ? translation?.skillName || englishText(item.skillName) : item.skillName}</p><p>{en ? (item.usageEn || 'Read the original Skill and follow its setup instructions.') : (item.usageZh || '打开 Skill 原文，按说明获取并使用。')}</p></> : <ol><li>{en?'Upload a photo you may use.':'上传你可以使用的人物、宠物或物品照片。'}</li><li>{en?'Copy the prompt into an image editing model and adjust bracketed subjects.':'复制提示词到支持图像编辑的模型，按需要替换对象与文字。'}</li><li>{en?'Check identity, composition and details in the output.':'检查主体辨识度、构图和细节，再按需调整。'}</li></ol>}</section>
+      {links.length>0&&<section><h2>{en?'Skill and recommendation':'Skill 与分享出处'}</h2>{links.map(link=><p key={link.zh}><a href={link.href} target="_blank" rel="noreferrer">{en?link.en:link.zh}</a></p>)}</section>}
+      <section><h2>{en?'Original source':'原始来源'}</h2><a href={item.sourceUrl} target="_blank" rel="noreferrer">{en ? englishText(translation?.sourceName, englishText(item.sourceName, 'Original source')) : item.sourceName}</a>{item.authorUrl&&<p><a href={item.authorUrl} target="_blank" rel="noreferrer">{en?'Author / original post':'作者／原帖'}</a></p>}<p>{en?'Reference model':'来源标注模型'}：{en ? englishText(item.model, 'Not specified') : item.model || '未注明'}</p><p>{en?'Model usage fees depend on your provider.':'模型使用费用以你的服务商为准。'}</p></section>
+      {item.publishedAt&&<p>{en?'Original post date':'原帖发布日期'}：<time dateTime={item.publishedAt}>{item.publishedAt.slice(0,10)}</time></p>}
+      {item.collectorUrl&&<p><a href={item.collectorUrl} target="_blank" rel="noreferrer">{en?'Collected prompt and example':'收录原文与效果图'}</a></p>}
+      {item.sourceVerification?.noteZh&&<p>{en ? (item.sourceVerification.noteEn || 'Source attribution checked through a public collection or mirror.') : item.sourceVerification.noteZh}</p>}
+      <section><h2>{en?'Image attribution':'图片署名'}</h2><p>{en ? englishText(translation?.imageCredit, englishText(item.imageCredit, englishText(item.sourceName, 'Original creator'))) : item.imageCredit || item.sourceName}</p>{item.imageLicenseUrl&&<a href={item.imageLicenseUrl} target="_blank" rel="noreferrer">{en ? englishText(item.imageLicense, 'Source license') : item.imageLicense || '来源许可'}</a>}</section>
+    </aside></div>
+  </article>
+}
+
+function PracticeDetail({ item, back }) {
+  const [copied, setCopied] = useState(false)
+  const en = useLocale() === 'en'
+  const practice = item.practice
+  const section = RESOURCE_SECTIONS[item.category]
+  const copy = en ? item.en : item.zh
+  const caption = en ? practice.caption.en : practice.caption.zh
+  const codeUrl = item.source?.localCodeUrl || item.source?.codeUrl
+  const downloadUrl = item.source?.downloadUrl
+  const demoUrl = item.demoUrl?.startsWith('/resource-demos/') ? item.demoUrl : null
+  const exampleLabel = item.demoLabel?.[en ? 'en' : 'zh'] || (item.previewKind === 'source-document' ? (en ? 'Source text and code' : '来源原文与代码') : item.previewOrigin === 'source' ? (en ? 'Source example' : '来源示例') : (en ? 'Worked example' : '制作示例'))
+  const extraFiles = item.source?.extraFiles || []
+  return <article className="rl-detail">
+    <div className="rl-breadcrumb"><button type="button" onClick={back}>{en ? '← All entries' : '← 返回作品'}</button><span>{en ? section.titleEn : section.titleZh} / {(en ? item.kw : item.kz)[0]}</span></div>
+    <div className="rl-detail-layout"><div>
+      {item.preview && <figure className="rl-stage">{demoUrl ? <iframe src={`${demoUrl}${demoUrl.includes('?') ? '&' : '?'}lang=${en ? 'en' : 'zh'}`} title={copy} sandbox="allow-scripts allow-same-origin allow-popups allow-downloads" loading="lazy" style={{ width: '100%', aspectRatio: '16 / 10', border: 0, display: 'block' }} /> : <img src={item.preview} alt={caption} />}<figcaption>{exampleLabel} · {caption}</figcaption></figure>}
+      <h1>{copy}</h1><p className="rl-lead">{en ? item.de : item.dz}</p>
+      <section><h2>{en ? 'How it works' : '方法与用途'}</h2><p>{en ? item.pe : item.pz}</p></section>
+      <section><h2>{en ? 'Make this example' : '具体做法'}</h2><ol className="rl-steps">{(en ? practice.steps.en : practice.steps.zh).map((step, i) => <li key={i}>{step}</li>)}</ol></section>
+      <section><h2>{en ? 'Practise on another subject' : '换一个题目练习'}</h2><p>{en ? practice.exercise.en : practice.exercise.zh}</p></section>
+    </div><aside className="rl-detail-notes">
+      {(codeUrl || downloadUrl || demoUrl || extraFiles.length > 0) && <section><h2>{en ? 'Example files' : '示例文件'}</h2>{demoUrl && <p><a href={`${demoUrl}${demoUrl.includes('?') ? '&' : '?'}lang=${en ? 'en' : 'zh'}`} target="_blank" rel="noreferrer">{en ? 'Open the working example' : '打开完整演示'} ↗</a></p>}{codeUrl && <p><a href={codeUrl} target="_blank" rel="noreferrer" download={item.source?.localCodeUrl ? '' : undefined}>{en ? 'Read or download the example code' : '查看或下载示例代码'} ↗</a></p>}{downloadUrl && downloadUrl !== codeUrl && <p><a href={downloadUrl} download={downloadUrl.startsWith('/') ? '' : undefined} target="_blank" rel="noreferrer">{en ? 'Download the example files' : '下载示例文件'} ↓</a></p>}{extraFiles.map(file => <p key={file.url}><a href={file.url} target="_blank" rel="noreferrer" download={file.url.startsWith('/') ? '' : undefined}>{en ? file.labelEn : file.labelZh} ↓</a></p>)}</section>}
+      <section><h2>{en ? 'Check the result' : '检查画面'}</h2><ul>{(en ? practice.checklist.en : practice.checklist.zh).map((check) => <li key={check}>{check}</li>)}</ul></section>
+      <section><h2>{en ? 'Where it stops working' : '使用边界'}</h2><p>{en ? practice.caution.en : practice.caution.zh}</p></section>
+      <section><h2>{en ? 'What was observed' : '观察来源'}</h2><p>{en ? practice.observation.en : practice.observation.zh}</p>{item.sourceUrl && <p><a href={item.sourceUrl} target="_blank" rel="noreferrer">{en ? englishText(item.sourceName, 'Original source') : item.sourceName || '原始来源'}</a></p>}{item.source?.images?.length > 0 && <p className="rl-source-pages">{en ? 'Pages' : '图页'} {item.source.images.join('、')}</p>}{item.sourceLicenseUrl && <p><a href={item.sourceLicenseUrl} target="_blank" rel="noreferrer">{en ? 'Source license' : '来源许可'}</a></p>}</section>
+      <button className="rl-copy" type="button" onClick={async () => { try { await navigator.clipboard.writeText(en ? practice.prompt.en : practice.prompt.zh); setCopied(true) } catch { setCopied(false) } }}>{copied ? (en ? 'Copied' : '已复制') : (en ? 'Copy prompt' : '复制提示词')}</button>
+    </aside></div>
+  </article>
+}
+
+export default function ResourceLibrary({ channel, resourceType, query = {} }) {
+  const en = useLocale() === 'en'
+  const category = resourceSection(channel, resourceType)
+  const section = RESOURCE_SECTIONS[category]
+  const keyword = query.q || ''
+  const [searchRevision,setSearchRevision]=useState(0)
+  const all = useMemo(()=>category === 'image' ? IMAGE_PROMPTS.map(item=>({...item,zh:item.titleZh,en:item.titleEn,dz:item.descriptionZh,de:item.descriptionEn||item.titleEn,kz:[...new Set([item.topicZh,...item.tags])],kw:[...new Set([topicEnglish(item.topicZh),...(item.tagsEn || item.tags.filter(tag=>!hasHan(tag)))])],practice:{caption:{zh:item.titleZh,en:item.titleEn}}})) : PRACTICES.filter((item) => item.category === category),[category])
+  const topics = USABLE_RESOURCE_TOPICS[category] ? [{zh:'全部',en:'All'},...USABLE_RESOURCE_TOPICS[category].filter(topic => all.some(item => topic.matches(item)))] : category === 'image' ? [{zh:'全部',en:'All'},...Array.from(new Set(all.map(item=>item.topicZh))).map(zh=>({zh,en:topicEnglish(zh)}))] : all.length
+    ? [{ zh: '全部', en: 'All', n: all.length }, ...topicPairs(category, query.topic)]
+    : (PLACEHOLDER_TOPICS[category] || ['全部']).map((zh) => ({ zh, en: topicEnglish(zh), n: 0 }))
+  const topic = topics.some((entry) => entry.zh === query.topic) ? query.topic : '全部'
+  const candidates=useMemo(()=>all.filter(item=>matchesResourceTopic(item, topic)),[all,topic])
+  const jev=useJevSearch(keyword,candidates,'resource-list',searchRevision)
+  const keywordMatches = useMemo(() => keyword.trim() ? filterResources(candidates, { query: keyword }) : [], [keyword, candidates])
+  const visible=keyword.trim() ? [...new Map([...keywordMatches, ...jev.items].filter(item => matchesRequirements(keyword, item)).map(item => [item.id, item])).values()] : candidates
+  /* Keep the DOM small on large resource columns. The old list mounted every
+   * card (and every image node) at once, which made route changes and scrolling
+   * compete with hundreds of layout/paint tasks. More cards are appended as
+   * the user approaches the end, so the existing grid and ordering stay intact. */
+  const viewKey = `${category}|${topic}|${keyword}`
+  const [visibleState, setVisibleState] = useState({ key: '', count: RESOURCE_PAGE_SIZE })
+  const visibleCount = visibleState.key === viewKey ? visibleState.count : RESOURCE_PAGE_SIZE
+  const { items: renderedVisible, hasMore } = progressiveWindow(visible, visibleCount)
+  const loadMoreRef = useRef(null)
+  useEffect(() => {
+    const sentinel = loadMoreRef.current
+    if (!sentinel || !hasMore || typeof IntersectionObserver === 'undefined') return undefined
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return
+      setVisibleState((previous) => {
+        const count = previous.key === viewKey ? previous.count : RESOURCE_PAGE_SIZE
+        return { key: viewKey, count: Math.min(count + RESOURCE_PAGE_SIZE, visible.length) }
+      })
+    }, { rootMargin: '720px 0px' })
+    observer.observe(sentinel)
+    return () => observer.disconnect()
+  }, [viewKey, visible.length, visibleCount, hasMore])
+  const selected = all.find((item) => item.id === query.id)
+  const navigate = (patch, replace = false) => {
+    const next = { q: keyword, topic, ...patch }
+    if(keyword&&(!next.q.startsWith(keyword)||next.q.length<keyword.length))setSearchRevision(value=>value+1)
+    const params = new URLSearchParams()
+    Object.entries(next).forEach(([key, value]) => { if (value && value !== '全部') params.set(key, value) })
+    const href = `${section.path}${params.size ? `?${params}` : ''}`
+    if (replace) { window.history.replaceState(null, '', href); window.dispatchEvent(new HashChangeEvent('hashchange')) }
+    else navigateTo(href)
+  }
+  const intro = { ppt: en ? 'Complete templates, original Skills, and presentation files ready to use.' : '完整模板、原始 Skill 与演示文件，找到就能取用。', graphics: en ? section.descriptionEn : section.descriptionZh, science: en ? 'Statistical plots and figure layouts with real examples, original code and documented limits.' : '统计图与多图排版，附真实示例、原始代码和适用边界。', image: en ? 'Start from the image and pull apart a reusable prompt for composition, light and material.' : '从画面出发，拆解可复用的构图、光线与材质提示。', design: en ? 'Original design specifications and Skills. Read, copy or download the complete Markdown.' : '来自原始项目与作者的设计规范和 Skill，完整 Markdown 可直接阅读、复制、下载。' }[category]
+  return <div className="rl-shell">
+    <aside className="rl-sidebar"><p className="rl-sidebar-label">{en ? 'VISUAL LIBRARY' : '创作图谱'}</p><h2>{channel === 'skills' ? 'Skill' : en ? section.titleEn : section.titleZh}</h2>
+      {channel === 'skills' && <nav className="rl-skill-types" aria-label={en ? 'Skill types' : 'Skill 类型'}><a href="#/skills/design" aria-current={category === 'design' ? 'page' : undefined}>{en ? 'Design rules' : '设计规范'}</a><a href="#/skills/image" aria-current={category === 'image' ? 'page' : undefined}>{en ? 'Image prompts' : '生图 Prompt'}</a></nav>}
+      <nav className="rl-topic-nav" aria-label={en ? 'Entry topics' : '作品分类'}>{topics.map((entry) => <button type="button" key={entry.zh} aria-pressed={topic === entry.zh} onClick={() => navigate({ topic: entry.zh })}><span>{en ? entry.en : entry.zh}</span><small>{entry.zh === '全部' ? all.length : all.filter((item) => matchesResourceTopic(item, entry.zh)).length}</small></button>)}</nav>
+      <a className="rl-atlas-link" href="#/atlas">{en ? 'Browse the atlas' : '浏览图鉴'} <span>↗</span></a>
+    </aside>
+    <div className="rl-content">{selected ? (category==='design'?<DesignDocumentDetail key={selected.id} item={selected} back={() => navigate({})}/>:category==='image'?<ImagePromptDetail key={selected.id} item={selected} back={() => navigate({})}/>:['ppt','graphics'].includes(category)?<UsableResourceDetail key={selected.id} item={selected} back={() => navigate({})}/>:<PracticeDetail key={selected.id} item={selected} back={() => navigate({})} />) : <>
+      <header className="rl-header"><p className="rl-eyebrow">VISLEXICON / {section.code}</p><h1>{en ? section.titleEn : section.titleZh}</h1><p className="rl-intro">{intro}</p></header>
+      <div className="rl-gallery-toolbar"><span role="status">{keyword.trim()?(keywordMatches.length ? (en ? 'Keyword matches' : '关键词匹配') : jev.status)+' · ':''}{en ? `${visible.length} ${category === 'design' ? 'Markdown files' : 'entries'}` : category === 'design' ? `${visible.length} 份 Markdown` : `${visible.length} 个条目`}</span><label className="rl-search"><span className="sr-only">{en ? 'Search this column' : '搜索当前栏目'}</span><input type="search" placeholder={category === 'design' ? (en ? 'Search documents, projects, authors…' : '搜索规范、项目、作者…') : en ? 'Search title, composition, method…' : '搜索标题、构图、方法…'} value={keyword} onChange={(event) => navigate({ q: event.target.value }, true)} /></label></div>
+      {query.id && <p role="status">{en ? 'That entry was not found. Pick another below.' : '未找到这个条目，请从下方重新选择。'}</p>}
+      {visible.length ? <div className="rl-gallery">{renderedVisible.map((item, i) => category === 'design' || (['ppt', 'graphics'].includes(category) && !item.preview) ? <button type="button" className="rl-study rl-document-card" key={item.id} onClick={() => navigate({ id: item.id })}><div className="rl-document-card-file"><span>{item.document?.fileName || resourceRuntime(item, en) || item.outputFormat}</span><span>{item.document ? `${item.document.lines.toLocaleString()} ${en ? 'lines' : '行'}` : item.execution?.filename || item.resourceKind}</span></div><h2>{en ? item.en : item.zh}</h2><p className="rl-document-card-description">{en ? item.de : item.dz}</p><div className="rl-document-card-footer"><span>{item.sourceName}</span><span>{item.document?.license || item.license?.software || item.outputFormat} ↗</span></div></button> : <button type="button" className="rl-study" key={item.id} onClick={() => navigate({ id: item.id })}><div className="rl-study-image"><ResourcePreview item={item} en={en} priority={i < 12} /></div><div className="rl-study-caption"><span className="rl-study-number">{String(i + 1).padStart(2, '0')}</span><div><h2>{en ? item.en : item.zh}</h2><p>{(en ? item.kw : item.kz).slice(0, 2).join(' / ')}</p></div><span aria-hidden="true">↗</span></div>{['ppt', 'graphics'].includes(category) && <p className="rl-resource-summary">{en ? item.de : item.dz}</p>}</button>)}</div> : <div className="rl-empty"><span className="rl-empty-mark" aria-hidden="true">＋</span><h2>{all.length ? (en ? 'Nothing matches' : '没有匹配的作品') : (en ? 'Nothing here yet' : '这里还没有收录作品')}</h2><p>{all.length ? (en ? 'Try another keyword, or go back to all topics.' : '试试其他关键词，或回到全部分类。') : (en ? 'Browse the atlas for more visual references.' : '可以先到图鉴浏览已有视觉素材。')}</p><a href={all.length ? section.path : '#/atlas'}>{all.length ? (en ? 'View all' : '查看全部') : (en ? 'Open the atlas' : '去看图鉴')} →</a></div>}
+      {hasMore && <div ref={loadMoreRef} className="rl-gallery-sentinel" aria-hidden="true" />}
+    </>}</div>
+  </div>
+}

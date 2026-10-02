@@ -1,0 +1,60 @@
+import test from 'node:test'
+import assert from 'node:assert/strict'
+import {applyModelRanking,explicitConflicts,rerankPool,wantsComponentInstance} from '../src/lib/component-discovery.js'
+import {visualConstraints} from '../src/lib/component-constraints.js'
+import {createRefinementStore,selectDiscoveryCandidates} from '../server/discovery-refinement.mjs'
+import {loadDiscoveryIndex} from '../server/discovery-index.mjs'
+
+// Stable paint-role fixtures; the growing published corpus is exercised below.
+const primary={id:'fixture-primary-link',kind:'website-component',componentType:'link',nameZh:'蓝色链接',nameEn:'Primary Link',tags:['link'],visual:{computed:{color:'rgb(64, 158, 255)',background:'rgba(0, 0, 0, 0)'}},offers:[]}
+const defaultLink={...primary,id:'fixture-default-link',nameZh:'灰色链接',nameEn:'Default Link',visual:{computed:{color:'rgb(96, 98, 102)',background:'rgba(0, 0, 0, 0)'}}}
+const links=[primary,defaultLink]
+
+test('ambiguous Link color reaches Jev while explicit paint roles remain hard constraints',()=>{
+  assert.equal(links.length,2)
+  assert.ok(primary&&defaultLink)
+  assert.equal(wantsComponentInstance('蓝色带下划线的链接'),true)
+  for(const query of ['蓝色带下划线的链接','悬停变蓝的链接']){
+    const pool=rerankPool(query,links)
+    assert.ok(pool.length>0,query)
+    assert.ok(pool.some(row=>row.unit.id===primary.id),query)
+    assert.deepEqual(explicitConflicts(query,primary),[],query)
+  }
+  assert.ok(visualConstraints('蓝色带下划线的链接').some(item=>item.implicit))
+  assert.ok(visualConstraints('悬停变蓝的链接').some(item=>item.implicit&&item.role==='hoverBackground'))
+  assert.deepEqual(explicitConflicts('蓝色文字链接',primary),[])
+  assert.ok(explicitConflicts('蓝色文字链接',defaultLink).length>0)
+  assert.ok(explicitConflicts('蓝色背景的链接',primary).length>0)
+})
+
+test('ambiguous Link recall still requires a qualifying Jev score',()=>{
+  const query='蓝色带下划线的链接',index={scope:'curation',theme:'link',generatedAt:'link-regression',units:links},byId=new Map(links.map(unit=>[unit.id,unit])),store=createRefinementStore()
+  const selected=selectDiscoveryCandidates(query,index,byId,store)
+  assert.equal(selected.sourceCandidateCount,links.length)
+  assert.ok(selected.candidates.length>0)
+  const rejected=selected.candidates.map(({unit})=>({id:unit.id,score:0}))
+  const token=store.save(query,index,selected.candidates,rejected)
+  assert.equal(store.page(token,index,byId).total,0)
+  assert.equal(applyModelRanking(query,links,[{id:primary.id,score:2}]).length,1)
+})
+
+test('curation-wide Link recall reaches the bounded Jev pool without site substitutes',async()=>{
+  const query='蓝色带下划线的链接',index=await loadDiscoveryIndex(process.cwd(),'curation',''),byId=new Map(index.units.map(unit=>[unit.id,unit]))
+  const selected=selectDiscoveryCandidates(query,index,byId,createRefinementStore())
+  if (!selected.candidates.length) {
+    assert.ok(index.units.length <= 12)
+    return
+  }
+  if (index.units.length > links.length) {
+    assert.ok(selected.candidates.length>0&&selected.candidates.length<=32)
+    assert.ok(selected.candidates.some(({unit})=>unit.kind==='website-component'&&unit.componentType==='link'))
+    assert.ok(selected.candidates.every(({unit})=>unit.kind!=='curated-site'))
+  }
+})
+
+test('bare blue still constrains Button fill and Link requests exclude whole sites',()=>{
+  const unit={id:'button-blue',kind:'website-component',componentType:'button',visual:{computed:{background:'rgb(64, 158, 255)',color:'rgb(255, 255, 255)'}},offers:[]}
+  assert.deepEqual(explicitConflicts('蓝色按钮',unit),[])
+  assert.ok(explicitConflicts('蓝色按钮',{...unit,id:'button-red',visual:{computed:{background:'rgb(245, 108, 108)',color:'rgb(255, 255, 255)'}}}).length>0)
+  assert.ok(explicitConflicts('蓝色链接',{id:'site',kind:'curated-site',offers:[]}).includes('需要具体组件实例，不能用整站代替'))
+})
