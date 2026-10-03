@@ -10,7 +10,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "oxlint src server scripts vite.config.js",
-    "test": "npm run check && node --test tests/*.test.mjs"
+    "test": "npm run check && node --test tests/*.test.mjs",
+    "social:watchlist": "node scripts/social-discovery.mjs watchlist",
+    "social:collect": "node scripts/social-discovery.mjs collect",
+    "social:ingest": "node scripts/social-discovery.mjs ingest",
+    "social:verify": "node scripts/social-discovery.mjs verify"
   },
   "dependencies": {
     "react": "^19.2.8",

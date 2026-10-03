@@ -1,0 +1,130 @@
+{
+  "schema": "vislexicon-social-watchlist/1",
+  "updatedAt": "2026-10-03",
+  "policy": {
+    "mode": "read-only-monitoring",
+    "doesNotFollowAccounts": true,
+    "doesNotLikeReplyOrPublish": true,
+    "candidatePromotionScore": 0.28,
+    "sameOriginPaths": "suspected-duplicate-review",
+    "publish": false
+  },
+  "sources": [
+    {
+      "id": "x-design-resource-search",
+      "platform": "x",
+      "mode": "search",
+      "query": "(design tools OR design resources OR UI resources OR website inspiration) -filter:replies",
+      "searchType": "Latest",
+      "limit": 30,
+      "enabled": true,
+      "note": "关键词入口，用于发现未在种子名单中的设计资源分享者。"
+    },
+    {
+      "id": "x-wasimships",
+      "platform": "x",
+      "mode": "user-posts",
+      "handle": "WasimShips",
+      "limit": 30,
+      "enabled": true,
+      "note": "在一次公开设计资源搜索中观察到的分享账号；不是平台关注动作。"
+    },
+    {
+      "id": "x-dhruvtwt",
+      "platform": "x",
+      "mode": "user-posts",
+      "handle": "dhruvtwt_",
+      "limit": 30,
+      "enabled": true,
+      "note": "在一次公开设计资源搜索中观察到的分享账号；不是平台关注动作。"
+    },
+    {
+      "id": "x-athrix-codes",
+      "platform": "x",
+      "mode": "user-posts",
+      "handle": "athrix_codes",
+      "limit": 30,
+      "enabled": true,
+      "note": "在一次公开设计资源搜索中观察到的分享账号；不是平台关注动作。"
+    },
+    {
+      "id": "x-kail-designs",
+      "platform": "x",
+      "mode": "user-posts",
+      "handle": "kail_designs",
+      "limit": 30,
+      "enabled": true,
+      "note": "在一次公开设计资源搜索中观察到的分享账号；不是平台关注动作。"
+    },
+    {
+      "id": "x-kasuncfdo",
+      "platform": "x",
+      "mode": "user-posts",
+      "handle": "kasuncfdo",
+      "limit": 30,
+      "enabled": true,
+      "note": "在一次公开设计资源搜索中观察到的分享账号；不是平台关注动作。"
+    },
+    {
+      "id": "x-skirook",
+      "platform": "x",
+      "mode": "user-posts",
+      "handle": "Skirook",
+      "limit": 30,
+      "enabled": true,
+      "note": "在一次公开设计资源搜索中观察到的分享账号；不是平台关注动作。"
+    },
+    {
+      "id": "x-emilkowalski",
+      "platform": "x",
+      "mode": "user-posts",
+      "handle": "emilkowalski",
+      "limit": 30,
+      "enabled": true,
+      "note": "设计工程与交互实现方向的公开账号；仅作观察来源。"
+    },
+    {
+      "id": "x-design-tools-search",
+      "platform": "x",
+      "mode": "search",
+      "query": "(\"design tools\" OR \"UI resources\" OR \"website inspiration\") -filter:replies",
+      "searchType": "Latest",
+      "limit": 30,
+      "enabled": true,
+      "note": "第二组英文表达，和账号时间线互补。"
+    },
+    {
+      "id": "xhs-design-websites",
+      "platform": "xiaohongshu",
+      "mode": "search",
+      "query": "设计网站",
+      "limit": 20,
+      "detail": false,
+      "detailLimit": 20,
+      "enabled": true,
+      "note": "小红书只读搜索；返回的 xsec_token 会在保存前去除。"
+    },
+    {
+      "id": "xhs-design-tools",
+      "platform": "xiaohongshu",
+      "mode": "search",
+      "query": "设计工具",
+      "limit": 20,
+      "detail": false,
+      "detailLimit": 20,
+      "enabled": true,
+      "note": "小红书只读搜索；用于补充工具、组件和素材站线索。"
+    },
+    {
+      "id": "xhs-web-design",
+      "platform": "xiaohongshu",
+      "mode": "search",
+      "query": "网页设计",
+      "limit": 20,
+      "detail": false,
+      "detailLimit": 20,
+      "enabled": true,
+      "note": "小红书只读搜索；用于发现网页案例和站点推荐。"
+    }
+  ]
+}
