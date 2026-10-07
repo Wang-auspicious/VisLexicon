@@ -98,4 +98,8 @@ test('approved projection requires the full evidence and review gate and strips 
   assert.equal(serialized.includes('evidenceId'), false)
   assert.equal(serialized.includes('graphRef'), false)
   assert.equal(serialized.includes(path.join(root, 'blobs')), false)
+  graph._transact((state) => { state.entries[entryId].editorial.descriptionZh = '复核之后被修改的简介。' })
+  const stale = graph.export()
+  assert.equal(stale.rows.length, 0)
+  assert.ok(stale.held[0].reasons.includes('independent-review-digest-stale'))
 }))

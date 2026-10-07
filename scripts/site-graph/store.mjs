@@ -689,6 +689,7 @@ export class SiteGraph {
       if (STAGES.some((stage) => entryStage(entry, stage).status !== 'succeeded')) reasons.push('stage-not-complete')
       if (entry.stages.validate?.result?.passed !== true && entry.stages.validate?.result?.gate !== 'passed') reasons.push('deterministic-validation-not-passed')
       if (!review || review.decision !== 'approved' || review.revision !== entry.revision) reasons.push('independent-review-missing-or-stale')
+      if (review && (review.contentDigest !== packet.contentDigest || review.evidenceDigest !== packet.evidenceDigest || review.policyDigest !== sha256(state.policy))) reasons.push('independent-review-digest-stale')
       if (state.policy.requireChineseDescription && !/\p{Script=Han}/u.test(entry.editorial?.descriptionZh || '')) reasons.push('chinese-description-missing')
       for (const role of state.policy.requiredEvidenceRoles || []) if (!roles.has(role)) reasons.push(`evidence-role-missing:${role}`)
       const proof = packet.evidence.filter((item) => item.role === 'proof')
