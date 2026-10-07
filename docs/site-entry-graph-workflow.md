@@ -30,10 +30,12 @@ flowchart LR
 
 - `SourceObservation` 是不可删除的原始事实。相同 URL 出现两次仍是两条 observation；批次重跑只在 snapshot hash 完全相同时幂等，改过的批次直接冲突。
 - `probe` 保存请求 URL、完整跳转、最终 URL、HTTP 状态、受限 body hash、失败原因和 retryable 判断。原始 URL 与 canonical URL 分开，fragment 不被偷偷抹掉。
+- HTTP 被阻塞或请求待重试不会解锁 `explore`；探索未完成、错误页或挑战页截图不会解锁 `curate`，失败的响应与截图仍留在审计中。
 - `explore` 必须来自真实页面。三张图分别是 `identity`、`breadth`、`proof`，每张截图先写入内容寻址 blob，再登记 `sha256 + bytes + mediaType + sourceUrl + method`。没有实际 blob 或 hash 不匹配，settle 会失败。
 - `curate` 只接受 `recordLevel: "entry"`。AI、技术栈、平台、场景等是 facets，不会把 SourceEntity 错当成 SiteEntry。
 - `validate` 是确定性检查：三类证据齐全且 hash 不同、中文说明存在、分类已确认、事实有直接 URL 和 evidence ID。它只输出 `passed`/`issues`，不会凭人工自报数量放行。
 - `review` 绑定当前 `contentDigest + evidenceDigest + policyDigest`。reviewer 必须和 curator 不同，至少三项具体检查，并保存 report blob；任何事实、定位、证据或策略变化都会令旧复核过期。
+- `review` 与公开导出都会重查分类、受控标签、中文说明、直接分类理由及三页证据，调用方提交 `validate.passed=true` 不能绕过这些门禁。
 
 完整内部证据可通过 `explain` 查看；它包含 observation、处置历史、blob 引用、阶段事件和复核。公开 projection 使用白名单字段，不包含 lease token、本地路径、`evidenceId`、`graphRef` 或 packet digest。
 
@@ -58,6 +60,8 @@ npm run site:graph -- verify
 
 `probe` 可按 origin 限流并发，`explore` 复用浏览器 contexts；两者都可安全中断后续跑。`curate` 和 `review` 是需要编辑判断的边界，使用 `claim` 得到 entry packet 后再 settle；不要把未探索、未复核的候选直接写入 public data。
 
+准备好的独立 outbox 可用 `claim --stage curate --entry site-...`，或 `--entry-ids site-a,site-b` 精确申请任务。选择入口不会跳过阶段依赖、当前租约或同源并发限制，也不会消耗未选入口的 attempt。
+
 复核文件先从 `packet` 命令取得 digest，再提交：
 
 ```powershell
@@ -74,5 +78,6 @@ npm run site:graph -- export --dir .tmp/site-entry-generation
 2. 一个 token 只能完成一个当前 attempt；旧 token 的 late/unknown settlement 只进审计。
 3. 所有 evidence 都能在受控 blob 根目录找到，实际字节 hash 和登记 hash 相同。
 4. merge 只能由强身份信号和可追溯决定支撑；未解决 identity conflict、superseded loser 不进 projection。
+   未解决的同源入口拆分是可保存、可续跑的候选状态，不是数据库损坏；只有错误批准这类入口才违反不变量。
 5. stage 结果必须有当前 revision 的依赖和 result digest；`approved` 不能替代 probe/explore/curate/validate。
 6. projection 的公开 schema 与内部 graph schema 分离；证据透明通过 `explain`/审计包实现，不泄露本地路径和运行令牌。

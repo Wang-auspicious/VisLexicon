@@ -230,7 +230,7 @@ export async function probeSource(input, options = {}) {
     let result
     for (let retry = 0; retry < config.maxAttempts; retry += 1) {
       attempts += 1
-      result = await requestOnce(current.href, config)
+      result = await requestOnce(current.href, { ...config, fetchImpl })
       requests.push({ url: current.href, retry, ...result, body: undefined })
       const networkFailure = !result.ok && /(?:network|fetch failed|econn|enotfound|dns|socket)/iu.test(String(result.error || ''))
       if ((result.ok && !retryableStatus(result.status || 0)) || retry + 1 >= config.maxAttempts || (result.ok ? !retryableStatus(result.status || 0) : !networkFailure && result.error !== 'timeout')) break
@@ -374,7 +374,12 @@ export async function exploreSource(input, options = {}) {
         const loaded = await pageInfo(page, normalized, config)
         const shot = await page.screenshot({ type: 'png', animations: 'disabled', caret: 'hide' })
         const links = normalizeLinks(loaded.info.links, loaded.finalUrl, config.maxLinks)
+        const blockedReason = loaded.status < 200 || loaded.status >= 400
+          ? `http-${loaded.status}`
+          : /^(?:just a moment|access denied|attention required|403 forbidden|verify you are|security verification)/iu.test(loaded.info.title || '')
+            ? 'access-challenge' : null
         const pageRecord = { role, inputUrl: normalized, sourceUrl: loaded.finalUrl, status: loaded.status,
+          ...(blockedReason ? { blocked: true, reason: blockedReason } : {}),
           title: loaded.info.title, h1: loaded.info.h1, facts: { textChars: loaded.info.textChars, firstScreenText: loaded.info.firstScreenText },
           outgoingLinks: links, screenshot: { bytes: shot, sha256: sha256(shot), bytesLength: shot.length,
             mediaType: 'image/png', width: config.width, height: config.height, dpr: config.dpr },

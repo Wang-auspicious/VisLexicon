@@ -1,0 +1,114 @@
+import assert from 'node:assert/strict'
+import fs from 'node:fs'
+import os from 'node:os'
+import path from 'node:path'
+import test from 'node:test'
+import { probeSource, exploreSource } from '../scripts/site-graph/adapters.mjs'
+import { evidenceStageOutcome } from '../scripts/site-graph/gates.mjs'
+import { SiteGraph } from '../scripts/site-graph/store.mjs'
+
+test('probe uses the global fetch fallback when no fetchImpl is supplied', async () => {
+  const prior = globalThis.fetch
+  let calls = 0
+  globalThis.fetch = async () => {
+    calls++
+    return new Response('<html><title>Official page</title></html>', { status: 200, headers: { 'content-type': 'text/html' } })
+  }
+  try {
+    const result = await probeSource({ url: 'https://example.com' }, {
+      maxAttempts: 1, resolveHost: async () => [{ address: '93.184.216.34', family: 4 }],
+    })
+    assert.equal(calls, 1)
+    assert.equal(result.status, 'success')
+    assert.equal(result.facts.title, 'Official page')
+  } finally { globalThis.fetch = prior }
+})
+
+test('a blocked HTTP probe is retained but cannot unlock browser exploration', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vislexicon-probe-gate-'))
+  const graph = new SiteGraph({ root })
+  try {
+    graph.ingest({ batchId: 'blocked', rows: [{ url: 'https://example.com' }] })
+    const claim = graph.claim({ worker: 'http', stage: 'probe' })[0]
+    const result = { status: 'blocked', sourceSnapshot: { requestedUrl: claim.url, status: 403 }, failures: [{ reason: 'http-403' }] }
+    graph.settle({ token: claim.token, result, ...evidenceStageOutcome('probe', result) })
+    assert.equal(graph.claim({ worker: 'browser', stage: 'explore' }).length, 0)
+    assert.equal(graph.explain(claim.entryId).entry.stages.probe.result.failures[0].reason, 'http-403')
+    assert.equal(graph.verify().ok, true)
+  } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+})
+
+test('same-origin paths remain separate, reviewable and resumable without corrupting the graph', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vislexicon-split-gate-'))
+  let graph = new SiteGraph({ root })
+  try {
+    graph.ingest({ batchId: 'distinct-paths', rows: [{ url: 'https://example.com/components' }, { url: 'https://example.com/fonts' }] })
+    assert.equal(graph.status().entries, 2)
+    assert.equal(graph.verify().ok, true)
+    assert.equal(graph.close().ok, true)
+    graph = new SiteGraph({ root })
+    const projection = graph.export()
+    assert.equal(projection.rows.length, 0)
+    assert.ok(projection.held.some(row => row.reasons.includes('identity-conflict-unresolved')))
+  } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+})
+
+test('a ready outbox can claim its exact entry without leasing unrelated entries or bypassing dependencies', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vislexicon-targeted-claim-'))
+  const graph = new SiteGraph({ root })
+  try {
+    graph.ingest({ batchId: 'outbox', rows: [{ url: 'https://example.com/components' }, { url: 'https://example.org/fonts' }] })
+    const entries = Object.values(graph.state().entries).sort((a, b) => a.entryId.localeCompare(b.entryId))
+    const selected = entries[1].entryId
+    const claims = graph.claim({ worker: 'outbox-merger', stage: 'probe', limit: 10, entryIds: [selected] })
+    assert.deepEqual(claims.map(claim => claim.entryId), [selected])
+    assert.equal(graph.explain(entries[0].entryId).entry.stages.probe.status, 'pending')
+    assert.equal(graph.explain(entries[0].entryId).entry.stages.probe.attempts.length, 0)
+    assert.equal(graph.claim({ worker: 'second-worker', stage: 'probe', entryIds: [selected] }).length, 0)
+    assert.equal(graph.claim({ worker: 'curator', stage: 'curate', entryIds: [selected] }).length, 0)
+    assert.equal(graph.claim({ worker: 'no-targets', stage: 'probe', entryIds: [] }).length, 0)
+  } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+})
+
+test('retryable probes and partial three-page evidence cannot be marked succeeded', () => {
+  assert.equal(evidenceStageOutcome('probe', { status: 'retryable-failure' }).status, 'retryable')
+  assert.equal(evidenceStageOutcome('explore', { status: 'partial', evidence: [] }).status, 'retryable')
+  assert.notEqual(evidenceStageOutcome('explore', { status: 'success', evidence: [{ role: 'identity', sha256: 'same' }, { role: 'breadth', sha256: 'same' }, { role: 'proof', sha256: 'same' }] }).status, 'succeeded')
+})
+
+test('403 and access-challenge screenshots remain partial evidence', async () => {
+  for (const [status, title] of [[403, 'Access denied'], [200, 'Just a moment...']]) {
+    const context = { newPage: async () => ({
+      goto: async () => ({ status: () => status }), waitForLoadState: async () => {},
+      evaluate: async () => ({ title, h1: title, textChars: 100, firstScreenText: title, links: [] }),
+      screenshot: async () => Buffer.from('fixture-image'), url: () => 'https://example.com', close: async () => {},
+    }) }
+    const result = await exploreSource({ entryId: 'fixture', url: 'https://example.com' }, { context, settleMs: 0 })
+    assert.equal(result.status, 'partial')
+    assert.equal(result.pages[0].blocked, true)
+    assert.equal(result.evidence.length, 1)
+    assert.notEqual(evidenceStageOutcome('explore', result).status, 'succeeded')
+  }
+})
+
+test('manual validate success cannot approve an unresolved or illegal classification', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vislexicon-editorial-gate-'))
+  const graph = new SiteGraph({ root })
+  try {
+    graph.ingest({ batchId: 'invalid', rows: [{ url: 'https://example.com' }] })
+    let claim = graph.claim({ worker: 'probe', stage: 'probe' })[0]
+    graph.settle({ token: claim.token, result: { status: 'success' } })
+    claim = graph.claim({ worker: 'explore', stage: 'explore' })[0]
+    graph.settle({ token: claim.token, result: { status: 'success' } })
+    claim = graph.claim({ worker: 'curate', stage: 'curate' })[0]
+    graph.settle({ token: claim.token, result: { curatorId: 'curator', editorial: { name: 'Example', descriptionZh: '尚未解决的入口分类。' }, classification: { recordLevel: 'entry', status: 'needs-review', primaryCategory: 'ai', subcategory: 'other' } } })
+    claim = graph.claim({ worker: 'validate', stage: 'validate' })[0]
+    graph.settle({ token: claim.token, result: { passed: true } })
+    const packet = graph.packet(claim.entryId)
+    assert.throws(() => graph.review({ entryId: claim.entryId, reviewer: 'independent', decision: 'approved', packetDigest: packet.packetDigest, checks: ['identity', 'classification', 'proof'], report: {} }), /REVIEW_EDITORIAL_INVALID/)
+    const projection = graph.export()
+    assert.equal(projection.rows.length, 0)
+    assert.ok(projection.held[0].reasons.includes('curate-classification-not-confirmed'))
+    assert.ok(projection.held[0].reasons.includes('curate-taxonomy-invalid'))
+  } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+})

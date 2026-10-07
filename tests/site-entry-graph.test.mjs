@@ -78,7 +78,7 @@ test('approved projection requires the full evidence and review gate and strips 
   })
   graph.settle({ token: explore.token, result: { status: 'success', pages: evidence.map((item) => ({ role: item.role, sourceUrl: item.sourceUrl, title: item.role })), evidence } })
   const curate = graph.claim({ worker: 'curator', stage: 'curate' })[0]
-  graph.settle({ token: curate.token, result: { editorial: { name: 'Example', descriptionZh: '一个经过真实探索的示例站点。' }, classification: { recordLevel: 'entry', status: 'confirmed', primary: 'single-site-showcase' }, facts: [{ field: 'title', value: 'Example', sourceUrl: 'https://example.com', evidenceIds: [evidence[0].evidenceId] }], curatorId: 'curator-1' } })
+  graph.settle({ token: curate.token, result: { editorial: { name: 'Example', descriptionZh: '一个经过真实探索的组件示例站点。' }, classification: { recordLevel: 'entry', status: 'confirmed', primaryCategory: 'ui-implementation', subcategory: 'general-ui-components', alternatives: [], reasons: [{ statement: '提供可嵌入的组件示例。', evidenceUrl: 'https://example.com' }] }, facts: [{ field: 'title', value: 'Example', sourceUrl: 'https://example.com', evidenceIds: [evidence[0].evidenceId] }], curatorId: 'curator-1' } })
   const validate = graph.claim({ worker: 'validator', stage: 'validate' })[0]
   graph.settle({ token: validate.token, result: { stage: 'validate', gate: 'passed', passed: true, issues: [] } })
   const packet = graph.packet(entryId)

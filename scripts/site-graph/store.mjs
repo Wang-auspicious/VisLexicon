@@ -3,6 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { DatabaseSync } from 'node:sqlite'
+import { curationIssues, evidenceStageOutcome } from './gates.mjs'
 
 export const GRAPH_SCHEMA = 'vislexicon/site-entry-graph/1'
 export const STAGES = Object.freeze(['probe', 'explore', 'curate', 'validate', 'review'])
@@ -395,9 +396,11 @@ export class SiteGraph {
     })
   }
 
-  claim({ worker, stage, limit = 1, leaseMs = this.state().policy.leaseMs } = {}) {
+  claim({ worker, stage, limit = 1, leaseMs = this.state().policy.leaseMs, entryIds = null } = {}) {
     requireString(worker, 'worker')
     if (!STAGES.includes(stage)) throw new Error(`UNKNOWN_STAGE:${stage}`)
+    if (entryIds !== null && !Array.isArray(entryIds)) throw new Error('ENTRY_IDS_MUST_BE_ARRAY')
+    const selected = entryIds === null ? null : new Set(entryIds.map(id => requireString(id, 'entry-id')))
     return this._transact((state, ctx) => {
       const claimed = []
       const entries = Object.values(state.entries).sort((a, b) => a.entryId.localeCompare(b.entryId))
@@ -408,6 +411,7 @@ export class SiteGraph {
       }
       for (const entry of entries) {
         if (claimed.length >= limit) break
+        if (selected && !selected.has(entry.entryId)) continue
         const current = entryStage(entry, stage)
         if (!stageReady(state, entry, stage) || ['succeeded', 'blocked'].includes(current.status)) continue
         if (current.lease && Date.parse(current.lease.expiresAt) > Date.now()) continue
@@ -536,11 +540,13 @@ export class SiteGraph {
       if (!['approved', 'rejected', 'needs-changes'].includes(decision)) throw new Error(`UNKNOWN_REVIEW_DECISION:${decision}`)
       requireString(reviewer, 'reviewer')
       if (reviewer === entry.curatorId) throw new Error('REVIEWER_MUST_DIFFER_FROM_CURATOR')
+      if (decision === 'approved' && curationIssues(entry).length) throw new Error(`REVIEW_EDITORIAL_INVALID:${curationIssues(entry).join(',')}`)
       if (!Array.isArray(checks) || checks.length < Number(state.policy.minimumReviewChecks || 3)) throw new Error('REVIEW_CHECKS_INCOMPLETE')
       const checkNames = checks.map((check) => typeof check === 'string' ? check : check?.name).filter(Boolean)
       if (new Set(checkNames).size !== checkNames.length) throw new Error('REVIEW_CHECKS_DUPLICATED')
       if (checks.some((check) => typeof check === 'object' && check?.passed === false)) throw new Error('REVIEW_CHECK_FAILED')
       for (const stage of ['probe', 'explore', 'curate', 'validate']) if (entryStage(entry, stage).status !== 'succeeded') throw new Error(`REVIEW_STAGE_INCOMPLETE:${stage}`)
+      if (decision === 'approved' && ['probe', 'explore'].some(stage => evidenceStageOutcome(stage, entry.stages[stage].result).status !== 'succeeded')) throw new Error('REVIEW_EVIDENCE_INCOMPLETE')
       if (entry.stages.validate?.result?.passed !== true && entry.stages.validate?.result?.gate !== 'passed') throw new Error('REVIEW_VALIDATION_NOT_PASSED')
       const packet = currentPacket(state, entry)
       const policyDigest = sha256(state.policy)
@@ -618,7 +624,9 @@ export class SiteGraph {
         const review = state.reviews[entry.entryId]
         if (!review || review.revision !== entry.revision || review.contentDigest !== packet.contentDigest || review.evidenceDigest !== packet.evidenceDigest || review.policyDigest !== sha256(state.policy) || review.decision !== 'approved') errors.push(`approved-without-current-review:${entry.entryId}`)
       }
-      if (entry.identityConflicts?.length && entry.status !== 'superseded') errors.push(`identity-conflict-unresolved:${entry.entryId}`)
+      // An unresolved split is a valid pending state. Export still holds it;
+      // only approving it would violate the storage invariants.
+      if (entry.identityConflicts?.length && entry.status === 'approved') errors.push(`identity-conflict-unresolved:${entry.entryId}`)
     }
     for (const evidence of Object.values(state.evidence)) {
       if (!evidence.ref || !evidence.sha256) { errors.push(`evidence-unbound:${evidence.evidenceId}`); continue }
@@ -638,6 +646,8 @@ export class SiteGraph {
       const review = state.reviews[entry.entryId]
       const roles = new Map(packet.evidence.map((item) => [item.role, item]))
       const reasons = []
+      reasons.push(...curationIssues(entry))
+      for (const stage of ['probe', 'explore']) if (evidenceStageOutcome(stage, entry.stages?.[stage]?.result).status !== 'succeeded') reasons.push(`${stage}-evidence-incomplete`)
       if (entry.status === 'superseded') reasons.push('superseded-entry')
       if (entry.identityConflicts?.length) reasons.push('identity-conflict-unresolved')
       if (entry.classification?.recordLevel !== 'entry') reasons.push('classification-record-level-not-entry')

@@ -16,6 +16,7 @@ import {
   probeSource,
   stripBinary,
 } from './adapters.mjs'
+import { curationIssues, evidenceStageOutcome } from './gates.mjs'
 
 function parseArgs(argv) {
   const out = { _: [] }
@@ -91,6 +92,8 @@ function claimArgs(args, stage) {
     stage,
     limit: numberOption(args, 'limit', 1),
     leaseMs: numberOption(args, 'lease-ms', 300_000),
+    entryIds: args['entry-ids'] ? String(args['entry-ids']).split(',').map(id => id.trim()).filter(Boolean)
+      : args.entry ? [String(args.entry)] : null,
   }
 }
 
@@ -99,10 +102,10 @@ async function putBlob(graph, bytes, metadata) {
   return graph.putBlob(bytes, metadata)
 }
 
-async function settle(graph, claim, result, { error = null, retryable = false } = {}) {
+async function settle(graph, claim, result, { error = null, retryable = false, status = null } = {}) {
   // The facade intentionally has one completion seam.  Do not mutate a job
   // object directly when an adapter fails; settle records the failed attempt.
-  const payload = { token: claim.token, result, error, retryable }
+  const payload = { token: claim.token, result, error, retryable, ...(status ? { status } : {}) }
   return graph.settle(payload)
 }
 
@@ -157,7 +160,7 @@ async function runProbeClaims(graph, claims, args) {
           maxBytes: numberOption(args, 'max-bytes', undefined),
         })
         const persisted = await persistProbe(graph, claim, result)
-        out[index] = await settle(graph, claim, persisted, { retryable: persisted.status === 'retryable-failure' })
+        out[index] = await settle(graph, claim, persisted, evidenceStageOutcome('probe', persisted))
       } catch (error) {
         out[index] = await settle(graph, claim, null, { error: String(error?.message || error), retryable: true })
       }
@@ -183,7 +186,7 @@ async function runExploreClaims(graph, claims, args) {
     const claim = preparedClaims[index]
     try {
       const persisted = await persistExplore(graph, raw[index])
-      results.push(await settle(graph, claim, persisted, { retryable: persisted.status === 'partial' }))
+      results.push(await settle(graph, claim, persisted, evidenceStageOutcome('explore', persisted)))
     } catch (error) {
       results.push(await settle(graph, claim, null, { error: String(error?.message || error), retryable: true }))
     }
@@ -225,9 +228,7 @@ export function validateClaim(claim) {
   const roles = new Set(evidence.map(item => item.role).filter(Boolean))
   for (const role of ['identity', 'breadth', 'proof']) if (!roles.has(role)) issues.push(`explore-${role}-evidence-missing`)
   if (new Set(evidence.map(item => item.sha256).filter(Boolean)).size < 3) issues.push('explore-distinct-evidence-missing')
-  if (!curate?.editorial?.descriptionZh) issues.push('curate-description-missing')
-  if (curate?.classification?.status !== 'confirmed') issues.push('curate-classification-not-confirmed')
-  if (curate?.classification?.recordLevel !== 'entry') issues.push('curate-record-level-not-entry')
+  issues.push(...curationIssues(curate))
   return { gate: issues.length ? 'held' : 'passed', issues, evidenceIds: evidence.map(item => item.evidenceId).filter(Boolean) }
 }
 
@@ -273,7 +274,7 @@ async function command(args) {
       const token = args.token || value.token
       if (!token) throw new Error('EVIDENCE_TOKEN_REQUIRED')
       const result = importCurationEvidence(value, { file: args.file, root: args.root || process.cwd() })
-      return await graph.settle({ token, result, error: null, retryable: false })
+      return await graph.settle({ token, result, ...evidenceStageOutcome('explore', result) })
     }
     if (verb === 'packet') return await graph.packet(String(args.entry || args.id || args._[1] || ''))
     if (verb === 'review') {
