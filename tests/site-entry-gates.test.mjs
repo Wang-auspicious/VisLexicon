@@ -6,6 +6,7 @@ import test from 'node:test'
 import { probeSource, exploreSource } from '../scripts/site-graph/adapters.mjs'
 import { evidenceStageOutcome } from '../scripts/site-graph/gates.mjs'
 import { SiteGraph } from '../scripts/site-graph/store.mjs'
+import { curationIssues } from '../scripts/site-graph/gates.mjs'
 
 test('probe uses the global fetch fallback when no fetchImpl is supplied', async () => {
   const prior = globalThis.fetch
@@ -95,6 +96,41 @@ test('legacy evidence preserves an explicitly unknown capture time across persis
     assert.ok(Number.isFinite(Date.parse(graph.state().evidence['dated-identity'].capturedAt)))
     assert.equal(graph.state().evidence['dated-breadth'].capturedAt, null)
     assert.equal(graph.state().evidence['dated-proof'].capturedAt, captureTimes[2])
+  } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+})
+
+test('source entities require explicit evidence and binding invalidates prior validation', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vislexicon-entity-bind-'))
+  const graph = new SiteGraph({ root })
+  try {
+    graph.ingest({ batchId: 'entities', rows: [{ url: 'https://example.com/components' }, { url: 'https://example.com/icons' }] })
+    const claims = graph.claim({ worker: 'probe', stage: 'probe', limit: 2 })
+    for (const claim of claims) graph.settle({ token: claim.token, result: { status: 'success' } })
+    const selected = claims[0].entryId
+    const explore = graph.claim({ worker: 'explore', stage: 'explore', entryIds: [selected] })[0]
+    const evidence = ['identity', 'breadth', 'proof'].map((role, index) => {
+      const blob = graph.putBlob(Buffer.from(`entity-shot-${index}`), { mediaType: 'image/png' })
+      return { evidenceId: `entity-${role}`, role, ref: blob.ref, sha256: blob.sha256, bytes: blob.bytes }
+    })
+    graph.settle({ token: explore.token, result: { status: 'success', evidence } })
+    const curate = graph.claim({ worker: 'curator', stage: 'curate', entryIds: [selected] })[0]
+    graph.settle({ token: curate.token, result: { curatorId: 'curator', classificationReadyForReview: true, editorial: { name: 'Example', descriptionZh: '包含可预览组件的项目。' }, classification: { recordLevel: 'entry', status: 'needs-review', alternatives: [], primaryCategory: 'ui-implementation', subcategory: 'general-ui-components', reasons: [{ statement: '提供可复用组件。', evidenceUrl: 'https://example.com/components' }] } } })
+    const validate = graph.claim({ worker: 'validate', stage: 'validate', entryIds: [selected] })[0]
+    graph.settle({ token: validate.token, result: { passed: true } })
+    const before = graph.packet(selected)
+    assert.throws(() => graph.review({ entryId: selected, reviewer: 'independent', decision: 'approved', packetDigest: before.packetDigest, checks: ['identity', 'breadth', 'proof'], report: {} }), /curate-source-entity/)
+    const sourceEntity = { entityId: 'entity-example', canonicalName: 'Example', nameAliases: [], primaryUrl: 'https://example.com/components', urlAliases: [], providerType: 'project', status: 'confirmed', revision: 1, identityEvidence: [{ statement: '直接页面显示项目名称。', evidenceUrl: 'https://example.com/components', evidenceIds: [evidence[0].evidenceId] }] }
+    assert.throws(() => graph.bindEntity(selected, { sourceEntity: { ...sourceEntity, entityId: selected }, actor: 'curator', reason: 'Direct identity evidence' }), /namespace-invalid/)
+    assert.throws(() => graph.bindEntity(selected, { sourceEntity: { ...sourceEntity, identityEvidence: [{ ...sourceEntity.identityEvidence[0], evidenceIds: ['missing'] }] }, actor: 'curator', reason: 'Direct identity evidence' }), /EVIDENCE_NOT_BOUND/)
+    graph.bindEntity(selected, { sourceEntity, actor: 'curator', reason: '直接身份图和官网名称一致，明确绑定该项目。' })
+    const after = graph.packet(selected)
+    assert.notEqual(after.packetDigest, before.packetDigest)
+    assert.equal(graph.explain(selected).entry.stages.validate.status, 'pending')
+    assert.equal(graph.explain(claims[1].entryId).entry.entityId, null)
+    assert.throws(() => graph.bindEntity(selected, { sourceEntity: { ...sourceEntity, canonicalName: 'Different project' }, actor: 'curator', reason: 'Same domain' }), /CONTENT_CONFLICT/)
+    assert.equal(curationIssues(graph.explain(selected).entry, { entities: graph.state().entities }).length, 0)
+    assert.equal(graph.export().rows.length, 0)
+    assert.equal(graph.verify().ok, true)
   } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
 })
 

@@ -201,9 +201,10 @@ async function runValidateClaims(graph, claims) {
       // A graph implementation may expose a richer validator.  The adapter
       // still has a deterministic fallback so a missing optional method never
       // turns a held entry into a successful validation by accident.
+      const explanation = typeof graph.validate === 'function' ? null : graph.explain(claim.entryId)
       let result = typeof graph.validate === 'function'
         ? await graph.validate({ token: claim.token, entryId: claim.entryId, revision: claim.revision })
-        : validateClaim(claim)
+        : validateClaim({ ...claim, inputs: { ...claim.inputs, curate: { result: { ...explanation.entry, sourceEntity: explanation.sourceEntity } } } })
       result = { stage: 'validate', ...result }
       const issues = Array.isArray(result.issues) ? result.issues : []
       result.passed = result.passed === true || (result.gate === 'passed' && issues.length === 0)
@@ -277,6 +278,11 @@ async function command(args) {
       return await graph.settle({ token, result, ...evidenceStageOutcome('explore', result) })
     }
     if (verb === 'packet') return await graph.packet(String(args.entry || args.id || args._[1] || ''))
+    if (verb === 'bind-entity') {
+      const value = jsonFile(args.file)
+      if (!value) throw new Error('SOURCE_ENTITY_FILE_REQUIRED')
+      return await graph.bindEntity(String(args.entry || value.entryId || ''), value)
+    }
     if (verb === 'review') {
       const review = jsonFile(args.file)
       if (!review) throw new Error('REVIEW_FILE_REQUIRED')
@@ -286,7 +292,7 @@ async function command(args) {
     }
     if (verb === 'export') return await graph.export(path.resolve(args.dir || args._[1] || 'site-graph-export'))
     if (verb === 'verify') return await graph.verify()
-    throw new Error('Usage: site-graph cli ingest|status|explain|run|claim|settle|packet|review|export|verify')
+    throw new Error('Usage: site-graph cli ingest|status|explain|run|claim|settle|bind-entity|packet|review|export|verify')
   } finally {
     await graph.close?.()
   }

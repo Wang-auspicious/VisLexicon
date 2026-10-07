@@ -3,7 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { DatabaseSync } from 'node:sqlite'
-import { curationIssues, evidenceStageOutcome } from './gates.mjs'
+import { curationIssues, evidenceStageOutcome, reviewedClassification, sourceEntityIssues } from './gates.mjs'
 
 export const GRAPH_SCHEMA = 'vislexicon/site-entry-graph/1'
 export const STAGES = Object.freeze(['probe', 'explore', 'curate', 'validate', 'review'])
@@ -98,6 +98,7 @@ function emptyState({ runId, policy }) {
     eventSeq: 0,
     eventHead: null,
     entries: {},
+    entities: {},
     observations: {},
     batches: {},
     dispositions: {},
@@ -133,25 +134,25 @@ function isSha256(value) { return typeof value === 'string' && /^[a-f\d]{64}$/iu
 
 function currentPacket(state, entry) {
   const evidence = Object.values(state.evidence).filter((item) => item.entryId === entry.entryId)
-    .map(({ evidenceId, role, sourceUrl, finalUrl, sha256: digest, bytes, mediaType, publicSafe, ref, locator, method }) => ({ evidenceId, role, sourceUrl, finalUrl, sha256: digest, bytes, mediaType, publicSafe, ref, locator, method }))
+    .map(({ evidenceId, role, sourceUrl, finalUrl, sha256: digest, bytes, mediaType, publicSafe, ref, locator, method, capturedAt }) => ({ evidenceId, role, sourceUrl, finalUrl, sha256: digest, bytes, mediaType, publicSafe, ref, locator, method, capturedAt }))
     .sort((a, b) => a.evidenceId.localeCompare(b.evidenceId))
   const stages = Object.fromEntries(STAGES.filter((stage) => stage !== 'review').map((stage) => {
     const current = entryStage(entry, stage)
     return [stage, { status: current.status, inputDigest: current.inputDigest || null, resultDigest: current.resultDigest || null }]
   }))
-  const content = JSON.parse(JSON.stringify({ entryId: entry.entryId, revision: entry.revision, sourceUrl: entry.sourceUrl, stages, classification: entry.classification, editorial: entry.editorial, facts: entry.facts, pages: entry.pages, facets: entry.facets }))
+  const content = JSON.parse(JSON.stringify({ entryId: entry.entryId, entityId: entry.entityId, sourceEntity: state.entities?.[entry.entityId] || null, revision: entry.revision, sourceUrl: entry.sourceUrl, stages, classification: entry.classification, classificationReadyForReview: entry.classificationReadyForReview === true, curatorId: entry.curatorId, editorial: entry.editorial, facts: entry.facts, pages: entry.pages, facets: entry.facets }))
   const stableEvidence = JSON.parse(JSON.stringify(evidence))
   return { contentDigest: sha256(content), evidenceDigest: sha256(stableEvidence), evidence: stableEvidence, content }
 }
 
-function entryPublicFields(entry) {
+function entryPublicFields(entry, review) {
   return {
     entryId: entry.entryId,
     entityId: entry.entityId || null,
     sourceUrl: entry.sourceUrl,
     title: entry.editorial?.name || entry.entryId,
     descriptionZh: entry.editorial?.descriptionZh || null,
-    classification: entry.classification || null,
+    classification: reviewedClassification(entry, review) || null,
     facets: entry.facets || null,
     facts: (entry.facts || []).map(({ field, value, sourceUrl, claim }) => ({ field, value, sourceUrl, ...(claim ? { claim } : {}) })),
     pages: (entry.pages || []).map(({ role, sourceUrl, finalUrl, title, publicUrl }) => ({ role, sourceUrl, finalUrl, title, publicUrl })),
@@ -469,11 +470,13 @@ export class SiteGraph {
       current.resultDigest = sha256(current.result)
       current.status = requestedStatus === 'succeeded' ? 'succeeded' : requestedStatus === 'blocked' ? 'blocked' : current.attempts.length < Number(state.policy.maxAttempts || 3) ? 'retryable' : 'blocked'
       if (stage === 'curate' && requestedStatus === 'succeeded') {
+        if (result.sourceEntity) this._bindEntity(state, entry, { sourceEntity: result.sourceEntity, actor: result.curatorId, reason: result.entityBindingReason || 'Curator explicitly identifies the project from direct source evidence.' }, ctx)
         entry.editorial = result.editorial || entry.editorial
         entry.classification = result.classification || entry.classification
         entry.facets = result.facets || entry.facets
         entry.facts = result.facts || entry.facts
         entry.curatorId = result.curatorId || entry.curatorId
+        entry.classificationReadyForReview = result.classificationReadyForReview === true
       }
       if (stage === 'explore' && requestedStatus === 'succeeded') {
         entry.pages = result.pages || entry.pages
@@ -505,6 +508,37 @@ export class SiteGraph {
     else if (state.evidence[evidenceId].sha256 !== evidence.sha256 || state.evidence[evidenceId].ref !== evidence.ref) throw new Error(`EVIDENCE_ID_CONTENT_CONFLICT:${evidenceId}`)
     if (!entry.evidence.includes(evidenceId)) entry.evidence.push(evidenceId)
     ctx.event('evidence.registered', `evidence:${evidenceId}`, state.evidence[evidenceId])
+  }
+
+  _bindEntity(state, entry, { sourceEntity, actor, reason }, ctx) {
+    requireString(actor, 'entity-binding-actor')
+    requireString(reason, 'entity-binding-reason')
+    const entity = clone(sourceEntity)
+    const issues = sourceEntityIssues({ entryId: entry.entryId, entityId: entity?.entityId, classification: { entityId: entity?.entityId }, sourceEntity: entity })
+    if (issues.length) throw new Error(`SOURCE_ENTITY_INVALID:${issues.join(',')}`)
+    if (entry.status === 'approved') throw new Error('SOURCE_ENTITY_APPROVED_ENTRY_REQUIRES_REVISION')
+    if (!entity.identityEvidence.some(item => item.evidenceIds?.length && item.evidenceIds.every(id => state.evidence[id]?.entryId === entry.entryId))) throw new Error('SOURCE_ENTITY_EVIDENCE_NOT_BOUND_TO_ENTRY')
+    state.entities ||= {}
+    const prior = state.entities[entity.entityId]
+    if (prior && sha256(prior) !== sha256(entity)) throw new Error(`SOURCE_ENTITY_ID_CONTENT_CONFLICT:${entity.entityId}`)
+    state.entities[entity.entityId] = entity
+    entry.entityId = entity.entityId
+    if (entry.classification) entry.classification = { ...entry.classification, entityId: entity.entityId }
+    for (const stage of ['validate', 'review']) {
+      const current = entryStage(entry, stage)
+      entry.stages[stage] = { ...current, status: 'pending', lease: null, result: null, resultDigest: null }
+    }
+    entry.updatedAt = nowIso()
+    ctx.event('source-entity.bound', `entry:${entry.entryId}`, { entityId: entity.entityId, sourceEntity: entity, actor, reason })
+    return clone(entity)
+  }
+
+  bindEntity(entryId, value = {}) {
+    return this._transact((state, ctx) => {
+      const entry = state.entries[entryId]
+      if (!entry) throw new Error(`UNKNOWN_ENTRY:${entryId}`)
+      return this._bindEntity(state, entry, value, ctx)
+    })
   }
 
   revise(entryId, { actor, reason } = {}) {
@@ -540,7 +574,8 @@ export class SiteGraph {
       if (!['approved', 'rejected', 'needs-changes'].includes(decision)) throw new Error(`UNKNOWN_REVIEW_DECISION:${decision}`)
       requireString(reviewer, 'reviewer')
       if (reviewer === entry.curatorId) throw new Error('REVIEWER_MUST_DIFFER_FROM_CURATOR')
-      if (decision === 'approved' && curationIssues(entry).length) throw new Error(`REVIEW_EDITORIAL_INVALID:${curationIssues(entry).join(',')}`)
+      const editorialIssues = curationIssues(entry, { entities: state.entities, review: { decision, reviewer, reviewedAt: nowIso() } })
+      if (decision === 'approved' && editorialIssues.length) throw new Error(`REVIEW_EDITORIAL_INVALID:${editorialIssues.join(',')}`)
       if (!Array.isArray(checks) || checks.length < Number(state.policy.minimumReviewChecks || 3)) throw new Error('REVIEW_CHECKS_INCOMPLETE')
       const checkNames = checks.map((check) => typeof check === 'string' ? check : check?.name).filter(Boolean)
       if (new Set(checkNames).size !== checkNames.length) throw new Error('REVIEW_CHECKS_DUPLICATED')
@@ -582,7 +617,7 @@ export class SiteGraph {
     if (!entry) throw new Error(`UNKNOWN_ENTRY:${entryId}`)
     const events = this.db.prepare('SELECT event_json FROM graph_events WHERE run_id = ? ORDER BY seq').all(state.runId)
       .map((row) => JSON.parse(row.event_json)).filter((event) => event.target === `entry:${entryId}` || event.payload?.entryId === entryId)
-    return { entry, observations: Object.values(state.observations).filter((row) => row.entryId === entryId), evidence: Object.values(state.evidence).filter((row) => row.entryId === entryId), review: state.reviews[entryId] || null, events }
+    return { entry, sourceEntity: state.entities?.[entry.entityId] || null, observations: Object.values(state.observations).filter((row) => row.entryId === entryId), evidence: Object.values(state.evidence).filter((row) => row.entryId === entryId), review: state.reviews[entryId] || null, events }
   }
 
   status() {
@@ -646,7 +681,7 @@ export class SiteGraph {
       const review = state.reviews[entry.entryId]
       const roles = new Map(packet.evidence.map((item) => [item.role, item]))
       const reasons = []
-      reasons.push(...curationIssues(entry))
+      reasons.push(...curationIssues(entry, { entities: state.entities, review }))
       for (const stage of ['probe', 'explore']) if (evidenceStageOutcome(stage, entry.stages?.[stage]?.result).status !== 'succeeded') reasons.push(`${stage}-evidence-incomplete`)
       if (entry.status === 'superseded') reasons.push('superseded-entry')
       if (entry.identityConflicts?.length) reasons.push('identity-conflict-unresolved')
@@ -661,9 +696,9 @@ export class SiteGraph {
       if (proof.length < Number(state.policy.minimumProofShots || 1) || new Set(requiredEvidence.map((item) => item.sha256).filter(Boolean)).size < (state.policy.requiredEvidenceRoles || []).length) reasons.push('three-distinct-evidence-missing')
       if (!Array.isArray(entry.facts) || entry.facts.filter((fact) => fact.sourceUrl && Array.isArray(fact.evidenceIds) && fact.evidenceIds.length && fact.evidenceIds.every((id) => state.evidence[id]?.entryId === entry.entryId)).length < 1) reasons.push('direct-fact-source-missing')
       if (reasons.length) { if (includeHeld) held.push({ entryId: entry.entryId, reasons }); continue }
-      rows.push(entryPublicFields(entry))
+      rows.push(entryPublicFields(entry, review))
     }
-    const core = { schema: 'vislexicon/site-entry-projection/1', runId: state.runId, graphRevision: state.revision, graphDigest: sha256({ entries: state.entries, evidence: state.evidence, reviews: state.reviews }), publish: false, rows, held }
+    const core = { schema: 'vislexicon/site-entry-projection/1', runId: state.runId, graphRevision: state.revision, graphDigest: sha256({ entries: state.entries, entities: state.entities || {}, evidence: state.evidence, reviews: state.reviews }), publish: false, rows, held }
     const serializableCore = JSON.parse(JSON.stringify(core))
     const projectionDigest = sha256(serializableCore)
     const generatedAt = nowIso()

@@ -78,7 +78,8 @@ test('approved projection requires the full evidence and review gate and strips 
   })
   graph.settle({ token: explore.token, result: { status: 'success', pages: evidence.map((item) => ({ role: item.role, sourceUrl: item.sourceUrl, title: item.role })), evidence } })
   const curate = graph.claim({ worker: 'curator', stage: 'curate' })[0]
-  graph.settle({ token: curate.token, result: { editorial: { name: 'Example', descriptionZh: '一个经过真实探索的组件示例站点。' }, classification: { recordLevel: 'entry', status: 'confirmed', primaryCategory: 'ui-implementation', subcategory: 'general-ui-components', alternatives: [], reasons: [{ statement: '提供可嵌入的组件示例。', evidenceUrl: 'https://example.com' }] }, facts: [{ field: 'title', value: 'Example', sourceUrl: 'https://example.com', evidenceIds: [evidence[0].evidenceId] }], curatorId: 'curator-1' } })
+  const sourceEntity = { entityId: 'entity-example', canonicalName: 'Example', nameAliases: [], primaryUrl: 'https://example.com', urlAliases: [], providerType: 'project', status: 'confirmed', revision: 1, identityEvidence: [{ statement: '官网身份页显示项目名称。', evidenceUrl: 'https://example.com', evidenceIds: [evidence[0].evidenceId] }] }
+  graph.settle({ token: curate.token, result: { sourceEntity, classificationReadyForReview: true, editorial: { name: 'Example', descriptionZh: '一个经过真实探索的组件示例站点。' }, classification: { entityId: sourceEntity.entityId, recordLevel: 'entry', status: 'needs-review', primaryCategory: 'ui-implementation', subcategory: 'general-ui-components', alternatives: [], reasons: [{ statement: '提供可嵌入的组件示例。', evidenceUrl: 'https://example.com' }] }, facts: [{ field: 'title', value: 'Example', sourceUrl: 'https://example.com', evidenceIds: [evidence[0].evidenceId] }], curatorId: 'curator-1' } })
   const validate = graph.claim({ worker: 'validator', stage: 'validate' })[0]
   graph.settle({ token: validate.token, result: { stage: 'validate', gate: 'passed', passed: true, issues: [] } })
   const packet = graph.packet(entryId)
@@ -89,6 +90,10 @@ test('approved projection requires the full evidence and review gate and strips 
   const projection = graph.export(path.join(root, 'projection'))
   assert.equal(projection.rows.length, 1)
   assert.equal(projection.held.length, 0)
+  assert.equal(projection.rows[0].entityId, sourceEntity.entityId)
+  assert.equal(projection.rows[0].classification.status, 'confirmed')
+  assert.equal(projection.rows[0].classification.reviewerId, review.reviewer)
+  assert.equal(projection.rows[0].classification.confirmedAt, review.reviewedAt)
   const serialized = JSON.stringify(projection.rows[0])
   assert.equal(serialized.includes('evidenceId'), false)
   assert.equal(serialized.includes('graphRef'), false)

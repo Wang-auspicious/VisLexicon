@@ -33,6 +33,8 @@ flowchart LR
 - HTTP 被阻塞或请求待重试不会解锁 `explore`；探索未完成、错误页或挑战页截图不会解锁 `curate`，失败的响应与截图仍留在审计中。
 - `explore` 必须来自真实页面。三张图分别是 `identity`、`breadth`、`proof`，每张截图先写入内容寻址 blob，再登记 `sha256 + bytes + mediaType + sourceUrl + method`。没有实际 blob 或 hash 不匹配，settle 会失败。
 - `curate` 只接受 `recordLevel: "entry"`。AI、技术栈、平台、场景等是 facets，不会把 SourceEntity 错当成 SiteEntry。
+- 来源实体必须显式绑定，不能按域名或名字推定合并。`curate` 结果可提供 `sourceEntity`，也可调用 `bindEntity(entryId, { sourceEntity, actor, reason })`；实体使用 `entity-`/`entity:` 命名空间，包含规格中的名称、别名、主 URL、提供方、状态、版本及 `identityEvidence`。身份理由的证据 ID 必须属于该入口。
+- 审核前的分类提案使用 `needs-review` 和 `classificationReadyForReview: true`。公开分类的 `confirmed`、`reviewerId` 和 `confirmedAt` 由实际批准记录生成，完整 taxonomy validator 会重查最终分类。实体绑定会使已有验证失效；实体内容、策展人和截图采集时间都参与复核 digest。
 - `validate` 是确定性检查：三类证据齐全且 hash 不同、中文说明存在、分类已确认、事实有直接 URL 和 evidence ID。它只输出 `passed`/`issues`，不会凭人工自报数量放行。
 - `review` 绑定当前 `contentDigest + evidenceDigest + policyDigest`。reviewer 必须和 curator 不同，至少三项具体检查，并保存 report blob；任何事实、定位、证据或策略变化都会令旧复核过期。
 - `review` 与公开导出都会重查分类、受控标签、中文说明、直接分类理由及三页证据，调用方提交 `validate.passed=true` 不能绕过这些门禁。
