@@ -582,10 +582,12 @@ export class SiteGraph {
       if (!Array.isArray(checks) || checks.length < Number(state.policy.minimumReviewChecks || 3)) throw new Error('REVIEW_CHECKS_INCOMPLETE')
       const checkNames = checks.map((check) => typeof check === 'string' ? check : check?.name).filter(Boolean)
       if (new Set(checkNames).size !== checkNames.length) throw new Error('REVIEW_CHECKS_DUPLICATED')
-      if (checks.some((check) => typeof check === 'object' && check?.passed === false)) throw new Error('REVIEW_CHECK_FAILED')
-      for (const stage of ['probe', 'explore', 'curate', 'validate']) if (entryStage(entry, stage).status !== 'succeeded') throw new Error(`REVIEW_STAGE_INCOMPLETE:${stage}`)
-      if (decision === 'approved' && ['probe', 'explore'].some(stage => evidenceStageOutcome(stage, entry.stages[stage].result).status !== 'succeeded')) throw new Error('REVIEW_EVIDENCE_INCOMPLETE')
-      if (entry.stages.validate?.result?.passed !== true && entry.stages.validate?.result?.gate !== 'passed') throw new Error('REVIEW_VALIDATION_NOT_PASSED')
+      if (decision === 'approved') {
+        if (checks.some((check) => typeof check === 'object' && check?.passed === false)) throw new Error('REVIEW_CHECK_FAILED')
+        for (const stage of ['probe', 'explore', 'curate', 'validate']) if (entryStage(entry, stage).status !== 'succeeded') throw new Error(`REVIEW_STAGE_INCOMPLETE:${stage}`)
+        if (['probe', 'explore'].some(stage => evidenceStageOutcome(stage, entry.stages[stage].result).status !== 'succeeded')) throw new Error('REVIEW_EVIDENCE_INCOMPLETE')
+        if (entry.stages.validate?.result?.passed !== true && entry.stages.validate?.result?.gate !== 'passed') throw new Error('REVIEW_VALIDATION_NOT_PASSED')
+      }
       const packet = currentPacket(state, entry)
       const policyDigest = sha256(state.policy)
       const expected = sha256({ contentDigest: packet.contentDigest, evidenceDigest: packet.evidenceDigest, policyDigest })

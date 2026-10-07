@@ -43,6 +43,27 @@ test('stale and unknown settlements stay in the audit trail without advancing a 
   assert.equal(graph.verify().ok, true)
 }))
 
+for (const decision of ['needs-changes', 'rejected']) {
+  test(`${decision} preserves failed checks for an incomplete entry without approving it`, () => withGraph((graph, root) => {
+    graph.ingest({ batchId: 'negative-review', rows: [{ url: 'https://example.com/incomplete' }] })
+    const entryId = graph.state().observations['obs:negative-review:00000001'].entryId
+    const packet = graph.packet(entryId)
+    const checks = [{ name: 'validation-prerequisite', passed: false }, { name: 'exact-entry-identity', passed: true }, { name: 'original-evidence-incomplete', passed: false }]
+    const report = { entryId, decision, packetDigest: packet.packetDigest, checks, notes: 'The missing prerequisites are the reason for this negative review.' }
+    assert.throws(() => graph.review({ entryId, reviewer: 'independent-reviewer', decision, packetDigest: '0'.repeat(64), checks, report }), /REVIEW_PACKET_STALE/)
+    assert.throws(() => graph.review({ entryId, reviewer: 'independent-reviewer', decision, packetDigest: packet.packetDigest, checks }), /REVIEW_REPORT_REQUIRED/)
+    const review = graph.review({ entryId, reviewer: 'independent-reviewer', decision, packetDigest: packet.packetDigest, checks, report })
+    assert.deepEqual(review.checks, checks)
+    assert.equal(graph.state().entries[entryId].status, 'held')
+    assert.equal(graph.state().entries[entryId].stages.review.status, 'blocked')
+    assert.equal(graph.state().entries[entryId].stages.validate.status, 'pending')
+    assert.deepEqual(graph.state().reviewHistory[0].checks, checks)
+    assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root, review.report.ref))).checks, checks)
+    assert.equal(graph.export().rows.length, 0)
+    assert.equal(graph.verify().ok, true)
+  }))
+}
+
 test('probe keeps the requested fragment and records a bounded body hash', async () => {
   const result = await probeSource({ url: 'https://example.com/docs#intro' }, {
     maxAttempts: 1,
@@ -83,6 +104,8 @@ test('approved projection requires the full evidence and review gate and strips 
   const validate = graph.claim({ worker: 'validator', stage: 'validate' })[0]
   graph.settle({ token: validate.token, result: { stage: 'validate', gate: 'passed', passed: true, issues: [] } })
   const packet = graph.packet(entryId)
+  assert.throws(() => graph.review({ entryId, reviewer: 'reviewer-1', decision: 'approved', packetDigest: packet.packetDigest, checks: [{ name: 'identity', passed: true }, { name: 'breadth', passed: true }, { name: 'proof', passed: false }], report: { entryId } }), /REVIEW_CHECK_FAILED/)
+  assert.equal(graph.state().reviews[entryId], undefined)
   const review = graph.review({ entryId, reviewer: 'reviewer-1', decision: 'approved', packetDigest: packet.packetDigest, checks: ['identity', 'breadth', 'proof'], report: { entryId, decision: 'approved', packetDigest: packet.packetDigest } })
   assert.equal(review.decision, 'approved')
   assert.equal(graph.packet(entryId).packetDigest, packet.packetDigest)
