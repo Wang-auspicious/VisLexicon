@@ -54,7 +54,8 @@ export function graphSiteBundle({ entry, sourceEntity, review, packet, evidence,
     if (sha256(bytes) !== shot.sha256 || bytes.length !== Number(shot.bytes)) throw new Error(`SITE_BUNDLE_SCREENSHOT_HASH_MISMATCH:${role}`)
     const dimensions = pngDimensions(bytes)
     const fact = entry.facts.find(item => item.evidenceIds?.includes(shot.evidenceId) && item.claim)
-    const selectionRationale = page.selectionRationale || entry.editorial?.pageReasons?.[role] || fact?.claim
+    const identityReason = sourceEntity?.identityEvidence?.find(item => item.evidenceIds?.includes(shot.evidenceId))
+    const selectionRationale = page.selectionRationale || entry.editorial?.pageReasons?.[role] || fact?.claim || identityReason?.statement
     if (!selectionRationale) throw new Error(`SITE_BUNDLE_PAGE_REASON_MISSING:${role}`)
     const src = `/shots/${entryId}/graph-${shot.sha256.slice(0, 24)}-${role}.png`
     images.push({ src, bytes, sha256: shot.sha256 })
@@ -79,7 +80,7 @@ export function graphSiteBundle({ entry, sourceEntity, review, packet, evidence,
 }
 
 /** Call only from the graph's single coordinator; default is a reviewable dry run. */
-export function projectApprovedSites(graph, { sourceDir, publicDir, catalog = [], historyDir = path.join(sourceDir, '.graph-revisions'), apply = false } = {}) {
+export function projectApprovedSites(graph, { sourceDir, publicDir, catalog = [], historyDir = path.join(sourceDir, '.graph-revisions'), handleDecisions = {}, apply = false } = {}) {
   if (!sourceDir || !publicDir) throw new Error('SITE_BUNDLE_OUTPUT_DIRECTORIES_REQUIRED')
   const projection = graph.export()
   const state = graph.state()
@@ -92,6 +93,7 @@ export function projectApprovedSites(graph, { sourceDir, publicDir, catalog = []
       const record = JSON.parse(fs.readFileSync(path.join(sourceDir, name), 'utf8'))
       if (!record.entryId) throw new Error('entryId-missing')
       const url = identityUrl(record.official?.inputUrl || record.official?.finalUrl)
+      if (record.status === 'QUARANTINED' && record.identityDisposition?.operation === 'duplicate-exact-url' && record.identityDisposition.sourceUrl === url && record.identityDisposition.canonicalEntryId) continue
       const handles = existingHandles.get(url) || new Set()
       handles.add(record.entryId)
       existingHandles.set(url, handles)
@@ -103,13 +105,26 @@ export function projectApprovedSites(graph, { sourceDir, publicDir, catalog = []
       const handles = existingHandles.has(entry.sourceUrl) ? [...existingHandles.get(entry.sourceUrl)] : [...new Set(catalogRows.filter(item => {
         try { return identityUrl(item.url || item.canonicalUrl || item.sourceUrl || item.homepage) === entry.sourceUrl } catch { return false }
       }).map(item => item.entryId || item.id).filter(Boolean))]
-      if (handles.length > 1) throw new Error('SITE_BUNDLE_CATALOG_HANDLE_AMBIGUOUS')
-      const entryId = handles[0] || entry.entryId
+      const suppliedDecision = handleDecisions[entry.sourceUrl]
+      const decision = handles.length > 1 ? suppliedDecision : null
+      if (suppliedDecision && handles.length === 1 && suppliedDecision.entryId !== handles[0]) throw new Error('SITE_BUNDLE_HANDLE_DECISION_INVALID')
+      if (handles.length > 1 && !decision) throw new Error('SITE_BUNDLE_CATALOG_HANDLE_AMBIGUOUS')
+      if (decision) {
+        if (!handles.includes(decision.entryId) || typeof decision.actor !== 'string' || !decision.actor.trim() || typeof decision.reason !== 'string' || !decision.reason.trim() || !Array.isArray(decision.handles) || JSON.stringify([...handles].sort()) !== JSON.stringify([...decision.handles].sort())) throw new Error('SITE_BUNDLE_HANDLE_DECISION_INVALID')
+        for (const handle of handles) if (sha256(fs.readFileSync(safeFile(sourceDir, `${handle}.json`))) !== decision.recordHashes?.[handle]) throw new Error('SITE_BUNDLE_HANDLE_DECISION_STALE')
+      }
+      const entryId = decision?.entryId || handles[0] || entry.entryId
       const result = graphSiteBundle({ entry, sourceEntity: state.entities?.[entry.entityId], review: state.reviews[entry.entryId],
         packet: graph.packet(entry.entryId), evidence: Object.values(state.evidence).filter(item => item.entryId === entry.entryId), sourceRoot: graph.root, entryId, runId: state.runId })
       const file = safeFile(sourceDir, `${entryId}.json`)
       const bytes = Buffer.from(`${JSON.stringify(result.bundle, null, 2)}\n`)
       const oldBytes = fs.existsSync(file) ? fs.readFileSync(file) : null
+      const aliases = []
+      if (decision) for (const handle of handles.filter(handle => handle !== entryId)) {
+        const aliasFile = safeFile(sourceDir, `${handle}.json`), aliasBytes = fs.readFileSync(aliasFile), alias = JSON.parse(aliasBytes)
+        if (identityUrl(alias.official?.inputUrl || alias.official?.finalUrl) !== entry.sourceUrl) throw new Error('SITE_BUNDLE_ALIAS_NOT_EXACT_URL')
+        aliases.push({ file: aliasFile, entryId: handle, original: aliasBytes, value: { ...alias, status: 'QUARANTINED', identityDisposition: { operation: 'duplicate-exact-url', canonicalEntryId: entryId, sourceUrl: entry.sourceUrl, actor: decision.actor, reason: decision.reason, originalSha256: sha256(aliasBytes), reviewedPacketDigest: state.reviews[entry.entryId].packetDigest } } })
+      }
       if (oldBytes && !oldBytes.equals(bytes)) {
         const prior = JSON.parse(oldBytes)
         if (identityUrl(prior.official?.inputUrl || prior.official?.finalUrl) !== entry.sourceUrl) throw new Error('SITE_BUNDLE_EXISTING_HANDLE_IDENTITY_CONFLICT')
@@ -122,8 +137,12 @@ export function projectApprovedSites(graph, { sourceDir, publicDir, catalog = []
           else atomicWrite(target, image.bytes)
         }
         if (!oldBytes || !oldBytes.equals(bytes)) atomicWrite(file, bytes)
+        for (const alias of aliases) {
+          atomicWrite(safeFile(historyDir, `${alias.entryId}-${sha256(alias.original)}.json`), alias.original)
+          atomicWrite(alias.file, `${JSON.stringify(alias.value, null, 2)}\n`)
+        }
       }
-      prepared.push({ graphEntryId: entry.entryId, entryId, file, status: apply ? 'applied' : 'ready', changed: !oldBytes || !oldBytes.equals(bytes), replacedExisting: Boolean(oldBytes), bundleSha256: sha256(bytes), packetDigest: state.reviews[entry.entryId].packetDigest })
+      prepared.push({ graphEntryId: entry.entryId, entryId, file, status: apply ? 'applied' : 'ready', changed: !oldBytes || !oldBytes.equals(bytes), replacedExisting: Boolean(oldBytes), ...(decision ? { handleDecision: decision, aliases: aliases.map(alias => alias.entryId) } : {}), bundleSha256: sha256(bytes), packetDigest: state.reviews[entry.entryId].packetDigest })
     } catch (error) { held.push({ entryId: entry.entryId, reason: error.message }) }
   }
   return { runId: state.runId, graphRevision: state.revision, apply, graphApproved: projection.rows.length, prepared, held,

@@ -43,6 +43,8 @@ flowchart LR
 
 现有站点库的数据适配使用 `project-sites --source-dir=... --public-dir=... --catalog=...`，默认只输出待写清单；增加 `--apply` 才写入经过当前独立复核的完整源 bundle 和原图。只由单一协调者调用。适配器按完全相同的入口 URL 保留已有 handle，存在多个 handle 时阻断；旧文件原 bytes 保存到 `.graph-revisions`（或 `--history-dir`）。之后运行现有 `build-public-data.mjs`，实际站点总数以生成的 index 为准，替换旧记录不算新增。
 
+完全相同 URL 的多个历史 handle 可使用 `--handle-decisions` 提交显式决定：选定 `entryId`、完整 `handles` 列表、`actor`、`reason` 和每个源文件的 `recordHashes`。决定与当时原件 hash 不符时阻断。通过后保留既有公开 handle，重复件写入可审计的隔离 tombstone，并保存原 bytes。该机制不处理同域不同路径。页面理由也可取自已批准来源实体中直接绑定该截图 ID 的身份说明；内部证据 ID 不进入公开事实字段。
+
 ## 存储和崩溃恢复
 
 `graph.sqlite` 是 source of truth，启用 WAL、`synchronous=FULL`，每次 mutation 在一个 `BEGIN IMMEDIATE` 事务中同时提交 materialized state 和 hash-linked event。`state.json` / `events.jsonl` 只是便于审计和迁移的镜像，不参与写入决策。blob 先内容寻址原子写，事务失败时最多留下可清理孤儿，不会产生悬空证据引用。

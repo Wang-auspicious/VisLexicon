@@ -294,7 +294,7 @@ async function command(args) {
     if (verb === 'project-sites') {
       const { projectApprovedSites } = await import('./project.mjs')
       return projectApprovedSites(graph, { sourceDir: path.resolve(args['source-dir'] || '../content-samples/approved-v3'), publicDir: path.resolve(args['public-dir'] || 'public'),
-        catalog: args.catalog ? jsonFile(args.catalog) : [], ...(args['history-dir'] ? { historyDir: path.resolve(args['history-dir']) } : {}), apply: args.apply === true || args.apply === 'true' })
+        catalog: args.catalog ? jsonFile(args.catalog) : [], handleDecisions: args['handle-decisions'] ? jsonFile(args['handle-decisions']) : {}, ...(args['history-dir'] ? { historyDir: path.resolve(args['history-dir']) } : {}), apply: args.apply === true || args.apply === 'true' })
     }
     if (verb === 'verify') return await graph.verify()
     throw new Error('Usage: site-graph cli ingest|status|explain|run|claim|settle|bind-entity|packet|review|export|project-sites|verify')

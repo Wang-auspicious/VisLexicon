@@ -100,3 +100,31 @@ test('projection holds ambiguous handles, stale reviews and changed screenshot f
     assert.throws(() => graphSiteBundle({ ...value, packet: graph.packet(entryId) }), /SCREENSHOT_HASH_MISMATCH/)
   } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
 })
+
+test('an explicit exact-URL decision retains the published handle and preserves the duplicate bytes', () => {
+  const { root, graph } = reviewedFixture()
+  try {
+    const sourceDir = path.join(root, 'approved'), publicDir = path.join(root, 'public')
+    fs.mkdirSync(sourceDir)
+    const recordHashes = {}
+    for (const id of ['published', 'alias']) {
+      const bytes = Buffer.from(JSON.stringify({ entryId: id, status: 'DRAFT', official: { inputUrl: 'https://example.com/' } }))
+      recordHashes[id] = sha256(bytes)
+      fs.writeFileSync(path.join(sourceDir, `${id}.json`), bytes)
+    }
+    const decision = { entryId: 'published', handles: ['alias', 'published'], actor: 'identity-reviewer', reason: 'Exactly the same official entry URL; retain the established public handle.', recordHashes }
+    const options = { sourceDir, publicDir, handleDecisions: { 'https://example.com': decision } }
+    const stale = projectApprovedSites(graph, { ...options, handleDecisions: { 'https://example.com': { ...decision, recordHashes: {} } }, apply: true })
+    assert.equal(stale.prepared.length, 0)
+    assert.match(stale.held[0].reason, /DECISION_STALE/)
+    const applied = projectApprovedSites(graph, { ...options, apply: true })
+    assert.equal(applied.prepared[0].entryId, 'published')
+    const alias = JSON.parse(fs.readFileSync(path.join(sourceDir, 'alias.json')))
+    assert.equal(alias.status, 'QUARANTINED')
+    assert.equal(alias.identityDisposition.canonicalEntryId, 'published')
+    assert.equal(sha256(fs.readFileSync(path.join(sourceDir, '.graph-revisions', `alias-${recordHashes.alias}.json`))), recordHashes.alias)
+    const repeated = projectApprovedSites(graph, { ...options, apply: true })
+    assert.equal(repeated.prepared[0].changed, false)
+    assert.equal(repeated.held.length, 0)
+  } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+})
