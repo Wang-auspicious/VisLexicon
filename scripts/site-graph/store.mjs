@@ -500,7 +500,7 @@ export class SiteGraph {
       evidenceId, entryId: entry.entryId, role: evidence.role, sourceUrl: evidence.sourceUrl || entry.sourceUrl,
       finalUrl: evidence.finalUrl || null, sha256: evidence.sha256 || null, bytes: evidence.bytes || null,
       mediaType: evidence.mediaType || null, publicSafe: evidence.publicSafe !== false, ref: evidence.ref,
-      capturedAt: evidence.capturedAt || nowIso(), locator: evidence.locator || null, method: evidence.method || null,
+      capturedAt: evidence.capturedAt === undefined ? nowIso() : evidence.capturedAt, locator: evidence.locator || null, method: evidence.method || null,
     }
     else if (state.evidence[evidenceId].sha256 !== evidence.sha256 || state.evidence[evidenceId].ref !== evidence.ref) throw new Error(`EVIDENCE_ID_CONTENT_CONFLICT:${evidenceId}`)
     if (!entry.evidence.includes(evidenceId)) entry.evidence.push(evidenceId)

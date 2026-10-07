@@ -76,6 +76,28 @@ test('retryable probes and partial three-page evidence cannot be marked succeede
   assert.notEqual(evidenceStageOutcome('explore', { status: 'success', evidence: [{ role: 'identity', sha256: 'same' }, { role: 'breadth', sha256: 'same' }, { role: 'proof', sha256: 'same' }] }).status, 'succeeded')
 })
 
+test('legacy evidence preserves an explicitly unknown capture time across persistence', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vislexicon-evidence-date-'))
+  let graph = new SiteGraph({ root })
+  try {
+    graph.ingest({ batchId: 'legacy', rows: [{ url: 'https://example.com' }] })
+    const probe = graph.claim({ worker: 'probe', stage: 'probe' })[0]
+    graph.settle({ token: probe.token, result: { status: 'success' } })
+    const explore = graph.claim({ worker: 'explore', stage: 'explore' })[0]
+    const captureTimes = [undefined, null, '2026-01-01T00:00:00.000Z']
+    const evidence = ['identity', 'breadth', 'proof'].map((role, index) => {
+      const blob = graph.putBlob(Buffer.from(`dated-shot-${index}`), { mediaType: 'image/png' })
+      return { evidenceId: `dated-${role}`, role, ref: blob.ref, sha256: blob.sha256, bytes: blob.bytes, capturedAt: captureTimes[index] }
+    })
+    graph.settle({ token: explore.token, result: { status: 'success', evidence } })
+    graph.close()
+    graph = new SiteGraph({ root })
+    assert.ok(Number.isFinite(Date.parse(graph.state().evidence['dated-identity'].capturedAt)))
+    assert.equal(graph.state().evidence['dated-breadth'].capturedAt, null)
+    assert.equal(graph.state().evidence['dated-proof'].capturedAt, captureTimes[2])
+  } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+})
+
 test('403 and access-challenge screenshots remain partial evidence', async () => {
   for (const [status, title] of [[403, 'Access denied'], [200, 'Just a moment...']]) {
     const context = { newPage: async () => ({
