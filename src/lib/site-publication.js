@@ -1,6 +1,8 @@
 // A source bundle can say APPROVED while still missing the evidence required
 // for a public Site Entry. Keep that source record intact and gate projection.
-export const SITE_PUBLICATION_POLICY_VERSION = 'site-evidence-v1'
+import { isPublishableClassification, facetsErrors } from '../data/curation-taxonomy.js'
+
+export const SITE_PUBLICATION_POLICY_VERSION = 'site-evidence-v2'
 
 const REQUIRED_ROLES = ['identity', 'breadth', 'proof']
 const isText = (value) => typeof value === 'string' && value.trim().length > 0
@@ -17,6 +19,13 @@ export function sitePublicationIssues(bundle) {
 
   const pages = Array.isArray(bundle?.pages) ? bundle.pages : []
   const requiredPages = REQUIRED_ROLES.map((role) => pages.find((page) => page.role === role))
+  if (!isPublishableClassification(bundle?.classification, {
+    name: bundle?.editorial?.name,
+    evidencePageCount: requiredPages.filter(Boolean).length,
+    manualShowcaseReason: bundle?.editorial?.showcaseReasonZh,
+    designRelevanceConfirmed: bundle?.editorial?.designRelevanceConfirmed,
+  })) issues.push('confirmed-classification-missing-or-invalid')
+  if (facetsErrors(bundle?.facets).length) issues.push('controlled-facets-missing-or-invalid')
   if (requiredPages.some((page) => !page)) {
     issues.push('identity-breadth-proof-missing')
   } else {
