@@ -30,7 +30,7 @@ function screenshotFixture(value) {
   return Buffer.concat([Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]), chunk('IHDR', header), chunk('IDAT', deflateSync(pixels)), chunk('IEND', Buffer.alloc(0))])
 }
 
-function reviewedFixture() {
+function reviewedFixture({ proofFact = {} } = {}) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vislexicon-project-'))
   const graph = new SiteGraph({ root: path.join(root, 'graph') })
   graph.ingest({ batchId: 'source', rows: [{ url: 'https://example.com' }] })
@@ -44,7 +44,7 @@ function reviewedFixture() {
   graph.settle({ token: explore.token, result: { status: 'success', evidence, pages: evidence.map(shot => ({ role: shot.role, sourceUrl: shot.sourceUrl, title: `Example ${shot.role}`, screenshot: { sha256: shot.sha256 } })) } })
   const sourceEntity = { entityId: 'entity-example', canonicalName: 'Example', nameAliases: [], primaryUrl: 'https://example.com', urlAliases: [], providerType: 'project', status: 'confirmed', revision: 1, identityEvidence: [{ statement: '官网明确显示项目名称。', evidenceUrl: 'https://example.com/identity', evidenceIds: ['shot-identity'] }] }
   const curate = graph.claim({ worker: 'curator', stage: 'curate' })[0]
-  graph.settle({ token: curate.token, result: { sourceEntity, classificationReadyForReview: true, curatorId: 'curator', editorial: { name: 'Example', descriptionZh: '可查阅和复制组件示例的界面工具库。' }, classification: { recordLevel: 'entry', entityId: sourceEntity.entityId, status: 'needs-review', primaryCategory: 'ui-implementation', subcategory: 'general-ui-components', alternatives: [], reasons: [{ statement: '提供可复制的界面组件。', evidenceUrl: 'https://example.com/proof' }] }, facts: evidence.map(shot => ({ field: shot.role, value: shot.role, claim: `该 ${shot.role} 页面展示已复核的组件内容。`, sourceUrl: shot.sourceUrl, evidenceIds: [shot.evidenceId] })) } })
+  graph.settle({ token: curate.token, result: { sourceEntity, classificationReadyForReview: true, curatorId: 'curator', editorial: { name: 'Example', descriptionZh: '可查阅和复制组件示例的界面工具库。' }, classification: { recordLevel: 'entry', entityId: sourceEntity.entityId, status: 'needs-review', primaryCategory: 'ui-implementation', subcategory: 'general-ui-components', alternatives: [], reasons: [{ statement: '提供可复制的界面组件。', evidenceUrl: 'https://example.com/proof' }] }, facts: evidence.map(shot => ({ field: shot.role, value: shot.role, claim: `该 ${shot.role} 页面展示已复核的组件内容。`, sourceUrl: shot.sourceUrl, evidenceIds: [shot.evidenceId], ...(shot.role === 'proof' ? proofFact : {}) })) } })
   const validate = graph.claim({ worker: 'validator', stage: 'validate' })[0]
   graph.settle({ token: validate.token, result: { passed: true } })
   const packet = graph.packet(probe.entryId)
@@ -99,6 +99,28 @@ test('projection holds ambiguous handles, stale reviews and changed screenshot f
     fs.writeFileSync(path.join(graph.root, evidence[0].ref), Buffer.from('changed'))
     assert.throws(() => graphSiteBundle({ ...value, packet: graph.packet(entryId) }), /SCREENSHOT_HASH_MISMATCH/)
   } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+})
+
+test('approved direct facts can describe a screenshot through value or quote without inventing a claim', () => {
+  for (const [proofFact, expected] of [
+    [{ claim: null, value: '父网格与编号子网格', quote: 'Nested grids demo' }, '父网格与编号子网格'],
+    [{ claim: null, value: ['parent', 'nested'], quote: 'Nested grids demo' }, 'Nested grids demo'],
+    [{ claim: null, value: 'Unrelated', sourceUrl: 'https://other.example/proof' }, null],
+  ]) {
+    const { root, graph } = reviewedFixture({ proofFact })
+    try {
+      const result = projectApprovedSites(graph, { sourceDir: path.join(root, 'approved'), publicDir: path.join(root, 'public'), apply: true })
+      if (expected) {
+        assert.equal(result.held.length, 0)
+        const bundle = JSON.parse(fs.readFileSync(result.prepared[0].file))
+        assert.equal(bundle.pages.find(page => page.role === 'proof').selectionRationale, expected)
+        assert.equal(bundle.facts.find(fact => fact.field === 'proof').claim, null)
+      } else {
+        assert.equal(result.prepared.length, 0)
+        assert.match(result.held[0].reason, /PAGE_REASON_MISSING:proof/)
+      }
+    } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+  }
 })
 
 test('an explicit exact-URL decision retains the published handle and preserves the duplicate bytes', () => {

@@ -53,9 +53,13 @@ export function graphSiteBundle({ entry, sourceEntity, review, packet, evidence,
     const bytes = fs.readFileSync(safeFile(sourceRoot, shot.ref))
     if (sha256(bytes) !== shot.sha256 || bytes.length !== Number(shot.bytes)) throw new Error(`SITE_BUNDLE_SCREENSHOT_HASH_MISMATCH:${role}`)
     const dimensions = pngDimensions(bytes)
-    const fact = entry.facts.find(item => item.evidenceIds?.includes(shot.evidenceId) && item.claim)
+    const factReason = entry.facts.filter(item => {
+      if (!item.evidenceIds?.includes(shot.evidenceId)) return false
+      try { return identityUrl(item.sourceUrl) === identityUrl(shot.sourceUrl) } catch { return false }
+    }).flatMap(item => [item.claim, typeof item.value === 'string' ? item.value : null, item.quote])
+      .find(value => typeof value === 'string' && value.trim())
     const identityReason = sourceEntity?.identityEvidence?.find(item => item.evidenceIds?.includes(shot.evidenceId))
-    const selectionRationale = page.selectionRationale || entry.editorial?.pageReasons?.[role] || fact?.claim || identityReason?.statement
+    const selectionRationale = page.selectionRationale || entry.editorial?.pageReasons?.[role] || factReason || identityReason?.statement
     if (!selectionRationale) throw new Error(`SITE_BUNDLE_PAGE_REASON_MISSING:${role}`)
     const src = `/shots/${entryId}/graph-${shot.sha256.slice(0, 24)}-${role}.png`
     images.push({ src, bytes, sha256: shot.sha256 })
