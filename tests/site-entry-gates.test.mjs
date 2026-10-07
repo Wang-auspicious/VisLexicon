@@ -99,6 +99,19 @@ test('legacy evidence preserves an explicitly unknown capture time across persis
   } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
 })
 
+test('recovered observations retain unknown source dates separately from ingestion time', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vislexicon-observation-date-'))
+  const graph = new SiteGraph({ root })
+  try {
+    const observations = graph.ingest({ batchId: 'recovered', rows: [{ url: 'https://example.com', observedAt: null }, { url: 'https://example.org', observedAt: '2026-09-01T00:00:00.000Z' }] })
+    assert.equal(observations[0].observedAt, null)
+    assert.equal(observations[1].observedAt, '2026-09-01T00:00:00.000Z')
+    assert.ok(observations.every(item => Number.isFinite(Date.parse(item.ingestedAt))))
+    assert.equal(graph.status().rawTotal, 2)
+    assert.equal(graph.verify().ok, true)
+  } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+})
+
 test('source entities require explicit evidence and binding invalidates prior validation', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vislexicon-entity-bind-'))
   const graph = new SiteGraph({ root })

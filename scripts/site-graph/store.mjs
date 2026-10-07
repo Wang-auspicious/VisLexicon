@@ -327,7 +327,7 @@ export class SiteGraph {
           }
         }
         const rawBlob = this.putBlob(Buffer.from(`${JSON.stringify(row)}\n`), { mediaType: 'application/json', sourceUrl, role: 'raw-observation' })
-        const observation = { observationId, batchId, ordinal: index, rawHitId, sourceId: effectiveSourceId, rawUrl, sourceUrl, fingerprint, rawRef: rawBlob.ref, rawSha256: rawBlob.sha256, observedAt: row.observedAt || nowIso(), disposition: 'pending', entryId: entry.entryId, identityConflict }
+        const observation = { observationId, batchId, ordinal: index, rawHitId, sourceId: effectiveSourceId, rawUrl, sourceUrl, fingerprint, rawRef: rawBlob.ref, rawSha256: rawBlob.sha256, observedAt: row.observedAt === undefined ? nowIso() : row.observedAt, ingestedAt: nowIso(), disposition: 'pending', entryId: entry.entryId, identityConflict }
         state.observations[observationId] = observation
         state.rawTotal += 1
         entry.observations.push(observationId)
