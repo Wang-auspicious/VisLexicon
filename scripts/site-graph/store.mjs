@@ -140,7 +140,7 @@ function currentPacket(state, entry) {
     const current = entryStage(entry, stage)
     return [stage, { status: current.status, inputDigest: current.inputDigest || null, resultDigest: current.resultDigest || null }]
   }))
-  const content = JSON.parse(JSON.stringify({ entryId: entry.entryId, entityId: entry.entityId, sourceEntity: state.entities?.[entry.entityId] || null, revision: entry.revision, sourceUrl: entry.sourceUrl, stages, classification: entry.classification, classificationReadyForReview: entry.classificationReadyForReview === true, curatorId: entry.curatorId, editorial: entry.editorial, facts: entry.facts, pages: entry.pages, facets: entry.facets }))
+  const content = JSON.parse(JSON.stringify({ entryId: entry.entryId, entityId: entry.entityId, sourceEntity: state.entities?.[entry.entityId] || null, ...(entry.entityBindingEvidence ? { entityBindingEvidence: entry.entityBindingEvidence } : {}), revision: entry.revision, sourceUrl: entry.sourceUrl, stages, classification: entry.classification, classificationReadyForReview: entry.classificationReadyForReview === true, curatorId: entry.curatorId, editorial: entry.editorial, facts: entry.facts, pages: entry.pages, facets: entry.facets }))
   const stableEvidence = JSON.parse(JSON.stringify(evidence))
   return { contentDigest: sha256(content), evidenceDigest: sha256(stableEvidence), evidence: stableEvidence, content }
 }
@@ -470,7 +470,7 @@ export class SiteGraph {
       current.resultDigest = sha256(current.result)
       current.status = requestedStatus === 'succeeded' ? 'succeeded' : requestedStatus === 'blocked' ? 'blocked' : current.attempts.length < Number(state.policy.maxAttempts || 3) ? 'retryable' : 'blocked'
       if (stage === 'curate' && requestedStatus === 'succeeded') {
-        if (result.sourceEntity) this._bindEntity(state, entry, { sourceEntity: result.sourceEntity, actor: result.curatorId, reason: result.entityBindingReason || 'Curator explicitly identifies the project from direct source evidence.' }, ctx)
+        if (result.sourceEntity) this._bindEntity(state, entry, { sourceEntity: result.sourceEntity, bindingEvidence: result.entityBindingEvidence, actor: result.curatorId, reason: result.entityBindingReason || 'Curator explicitly identifies the project from direct source evidence.' }, ctx)
         entry.editorial = result.editorial || entry.editorial
         entry.classification = result.classification || entry.classification
         entry.facets = result.facets || entry.facets
@@ -510,26 +510,29 @@ export class SiteGraph {
     ctx.event('evidence.registered', `evidence:${evidenceId}`, state.evidence[evidenceId])
   }
 
-  _bindEntity(state, entry, { sourceEntity, actor, reason }, ctx) {
+  _bindEntity(state, entry, { sourceEntity, bindingEvidence, actor, reason }, ctx) {
     requireString(actor, 'entity-binding-actor')
     requireString(reason, 'entity-binding-reason')
     const entity = clone(sourceEntity)
     const issues = sourceEntityIssues({ entryId: entry.entryId, entityId: entity?.entityId, classification: { entityId: entity?.entityId }, sourceEntity: entity })
     if (issues.length) throw new Error(`SOURCE_ENTITY_INVALID:${issues.join(',')}`)
     if (entry.status === 'approved') throw new Error('SOURCE_ENTITY_APPROVED_ENTRY_REQUIRES_REVISION')
-    if (!entity.identityEvidence.some(item => item.evidenceIds?.length && item.evidenceIds.every(id => state.evidence[id]?.entryId === entry.entryId))) throw new Error('SOURCE_ENTITY_EVIDENCE_NOT_BOUND_TO_ENTRY')
+    const relationshipEvidence = bindingEvidence === undefined ? entity.identityEvidence : bindingEvidence
+    if (!Array.isArray(relationshipEvidence) || !relationshipEvidence.some(item => String(item.statement || '').trim() && /^https:\/\/[^\s]+$/u.test(item.evidenceUrl || '') && item.evidenceIds?.length && item.evidenceIds.every(id => state.evidence[id]?.entryId === entry.entryId))) throw new Error('SOURCE_ENTITY_EVIDENCE_NOT_BOUND_TO_ENTRY')
     state.entities ||= {}
     const prior = state.entities[entity.entityId]
     if (prior && sha256(prior) !== sha256(entity)) throw new Error(`SOURCE_ENTITY_ID_CONTENT_CONFLICT:${entity.entityId}`)
     state.entities[entity.entityId] = entity
     entry.entityId = entity.entityId
+    if (bindingEvidence !== undefined) entry.entityBindingEvidence = clone(bindingEvidence)
+    else delete entry.entityBindingEvidence
     if (entry.classification) entry.classification = { ...entry.classification, entityId: entity.entityId }
     for (const stage of ['validate', 'review']) {
       const current = entryStage(entry, stage)
       entry.stages[stage] = { ...current, status: 'pending', lease: null, result: null, resultDigest: null }
     }
     entry.updatedAt = nowIso()
-    ctx.event('source-entity.bound', `entry:${entry.entryId}`, { entityId: entity.entityId, sourceEntity: entity, actor, reason })
+    ctx.event('source-entity.bound', `entry:${entry.entryId}`, { entityId: entity.entityId, sourceEntity: entity, ...(bindingEvidence !== undefined ? { bindingEvidence: clone(bindingEvidence) } : {}), actor, reason })
     return clone(entity)
   }
 

@@ -147,6 +147,37 @@ test('source entities require explicit evidence and binding invalidates prior va
   } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
 })
 
+test('distinct entries can explicitly share a source entity through their own identity evidence', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vislexicon-shared-entity-'))
+  const graph = new SiteGraph({ root })
+  try {
+    graph.ingest({ batchId: 'siblings', rows: [{ url: 'https://example.com/components' }, { url: 'https://example.com/icons' }] })
+    const entries = Object.values(graph.state().entries)
+    const evidenceByEntry = new Map()
+    for (const claim of graph.claim({ worker: 'probe', stage: 'probe', limit: 2 })) graph.settle({ token: claim.token, result: { status: 'success' } })
+    for (const claim of graph.claim({ worker: 'explore', stage: 'explore', limit: 2 })) {
+      const evidence = ['identity', 'breadth', 'proof'].map(role => {
+        const blob = graph.putBlob(Buffer.from(`${claim.entryId}-${role}`), { mediaType: 'image/png' })
+        return { ...blob, evidenceId: `${claim.entryId}-${role}`, role, sourceUrl: claim.url }
+      })
+      graph.settle({ token: claim.token, result: { status: 'success', evidence } })
+      evidenceByEntry.set(claim.entryId, evidence[0].evidenceId)
+    }
+    const sourceEntity = { entityId: 'entity-example', canonicalName: 'Example', nameAliases: [], primaryUrl: 'https://example.com', urlAliases: [], providerType: 'project', status: 'confirmed', revision: 1, identityEvidence: [{ statement: '组件入口链接到官方项目。', evidenceUrl: entries[0].sourceUrl, evidenceIds: [evidenceByEntry.get(entries[0].entryId)] }] }
+    graph.bindEntity(entries[0].entryId, { sourceEntity, actor: 'curator', reason: 'Official project identity link' })
+    assert.throws(() => graph.bindEntity(entries[1].entryId, { sourceEntity, actor: 'curator', reason: 'Same company' }), /EVIDENCE_NOT_BOUND/)
+    const bindingEvidence = [{ statement: '图标入口明确链接到同一官方项目，交付物与组件入口不同。', evidenceUrl: entries[1].sourceUrl, evidenceIds: [evidenceByEntry.get(entries[1].entryId)] }]
+    graph.bindEntity(entries[1].entryId, { sourceEntity, bindingEvidence, actor: 'curator', reason: 'The specific icon entry links to the already identified project.' })
+    assert.equal(Object.keys(graph.state().entities).length, 1)
+    assert.equal(graph.explain(entries[1].entryId).entry.entityId, graph.explain(entries[0].entryId).entry.entityId)
+    assert.deepEqual(graph.packet(entries[1].entryId).content.entityBindingEvidence, bindingEvidence)
+    assert.equal(graph.status().entries, 2)
+    assert.ok(graph.explain(entries[1].entryId).entry.identityConflicts.length)
+    assert.equal(graph.export().rows.length, 0)
+    assert.equal(graph.verify().ok, true)
+  } finally { graph.close(); fs.rmSync(root, { recursive: true, force: true }) }
+})
+
 test('403 and access-challenge screenshots remain partial evidence', async () => {
   for (const [status, title] of [[403, 'Access denied'], [200, 'Just a moment...']]) {
     const context = { newPage: async () => ({

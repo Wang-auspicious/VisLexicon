@@ -27,7 +27,7 @@ export function sourceEntityIssues(record, { entities = null } = {}) {
   for (const field of ['nameAliases', 'urlAliases']) if (!Array.isArray(entity[field]) || entity[field].some(value => typeof value !== 'string' || !value.trim())) issues.push(`curate-source-entity-${field}-invalid`)
   if (!String(entity.providerType || '').trim() || entity.status !== 'confirmed' || !Number.isInteger(entity.revision) || entity.revision < 1) issues.push('curate-source-entity-state-invalid')
   if (entity.classification || entity.primaryCategory || entity.subcategory) issues.push('curate-source-entity-must-not-be-classified')
-  if (!entity.identityEvidence?.some(item => String(item.statement || '').trim() && /^https:\/\/[^\s]+$/u.test(item.evidenceUrl || '') && Array.isArray(item.evidenceIds) && item.evidenceIds.length)) issues.push('curate-source-entity-direct-evidence-missing')
+  if (!Array.isArray(entity.identityEvidence) || !entity.identityEvidence.some(item => String(item.statement || '').trim() && /^https:\/\/[^\s]+$/u.test(item.evidenceUrl || '') && Array.isArray(item.evidenceIds) && item.evidenceIds.length)) issues.push('curate-source-entity-direct-evidence-missing')
   return issues
 }
 
