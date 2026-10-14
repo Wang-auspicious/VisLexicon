@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-878dc43bec00b8a8
+releaseId: release-bcbc68a44dc7f2e7
 revision: 2232ddb600f9d05dfd4ab3501cd932cc727b7b00e82bf14fb33b3fc073b91af2
 status: APPROVED
 name: "Fonts In Use"
