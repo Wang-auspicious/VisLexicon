@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-7d0b1165cd27213d
+releaseId: release-2bce88f946c6954c
 revision: 8b4bdb88f2965961dedc62df16cb5697eff165c737dde5fdc57a4a6743bf4227
 status: APPROVED
 name: Datatype
