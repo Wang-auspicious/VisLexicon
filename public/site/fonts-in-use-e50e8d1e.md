@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: 2232ddb600f9d05dfd4ab3501cd932cc727b7b00e82bf14fb33b3fc073b91af2
+releaseId: release-499b8a304ac339fb
+revision: b07436201f04e8b86dd7c79345d750b0a8f4b08b6ba85e376f0c7bf80ed2d705
 status: APPROVED
 name: "Fonts In Use"
 description: "从真实作品对照字体与版式"

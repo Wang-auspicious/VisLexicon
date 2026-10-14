@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: b5faf79f0322d6d455c465b7c3bc63c2125911492fb336ab7b0e051031344bbb
+releaseId: release-499b8a304ac339fb
+revision: a3fc7fc8c8d0a0c82daae4bdbf5016d1adc0d2a1bbcfe08855767d5e00eac2ff
 status: APPROVED
 name: DaFont
 description: "先看字体字样，再按作者条件下载"

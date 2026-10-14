@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: fb04c80c4c0d22c7957e276ae6d047f6abfb53af873eb55d045a1e6283f7273c
+releaseId: release-499b8a304ac339fb
+revision: 6d9c813578eb385b26b47018ee8fe71f429b37b8ebeebc671c2b6ff6f119fc11
 status: APPROVED
 name: ColorDrop
 description: "按颜色找色板，再对照实际色值"

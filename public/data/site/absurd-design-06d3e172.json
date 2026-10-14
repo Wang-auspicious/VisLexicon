@@ -1,8 +1,8 @@
 {
-  "releaseId": "release-8c9e24b85466dfda",
-  "revision": "d0f3ff011d7e8b0bbcab415f27223c092e4106c0c75fdaa049432dca0da9a4dd",
+  "releaseId": "release-499b8a304ac339fb",
+  "revision": "1a10b5e201b1e5afb4081273df31354566085516e487167959b440e9807d160e",
   "schemaVersion": 3,
-  "generatedAt": "2026-10-14T21:06:17.659Z",
+  "generatedAt": "2026-10-14T21:53:36.134Z",
   "entryId": "absurd-design-06d3e172",
   "entityId": "entity-absurd-design",
   "status": "APPROVED",
@@ -251,6 +251,76 @@
       "evidence": "未确认本入口公开代码仓库与代码许可。素材许可不代表代码许可。",
       "scope": "本入口网站或生成器代码。",
       "confidence": 0
+    }
+  ],
+  "offers": [
+    {
+      "id": "membership-core",
+      "pricing": {
+        "value": "paid",
+        "sourceUrl": "https://absurd.design/chapter9/447",
+        "quote": "€19\n\n###### per month\n\n**10** credits per month\n\n1 project in use",
+        "evidence": "实例页明确同一Core offer的价格、credits和项目范围。",
+        "scope": "Absurd at Core会员，月付；最终条款以购买页面为准。",
+        "sourceSha256": "4498b474969ef7d4e655618681618ccd9eb837f736658b3dbfcb12ea34b0a081"
+      },
+      "sourceCode": {
+        "value": "unknown",
+        "sourceUrl": "https://absurd.design",
+        "quote": "",
+        "evidence": "PNG/SVG为素材文件，不是网站软件源码；未确认公开代码。",
+        "scope": "网站软件源码。"
+      },
+      "license": {
+        "value": "custom",
+        "sourceUrl": "https://absurd.design/paidlicense",
+        "quote": "MEMBERSHIP / INDIVIDUAL CHAPTERS GRAPHIC RESOURCES",
+        "evidence": "完整付费条款含模板、再分发、可提取图库、logo与AI训练等禁限；会员仅在会员有效期、单章购买后一年可用，到期须停止使用。免费资源另见free-resources offer引用。",
+        "scope": "Absurd at Core会员插画，只在该会员有效期可用，到期停止一切使用；同时受credits、项目数和完整禁止用途约束。",
+        "sourceSha256": "880d1372c4a607448141a2b3e0f2673824856c833430eea38071b84157b7da91"
+      },
+      "commercial": {
+        "value": "restricted",
+        "sourceUrl": "https://absurd.design/paidlicense",
+        "quote": "The Licensee may use the Work for commercial and non-commercial purposes, excluding the prohibitions listed below.",
+        "evidence": "付费会员/单章只在授权期限内可用于商业终稿；会员有效期与单章一年到期后停止使用，另禁模板、分发等。免费插画仅非商业，另有直接free许可来源。",
+        "scope": "Absurd at Core会员插画，只在该会员有效期可用，到期停止一切使用；同时受credits、项目数和完整禁止用途约束。",
+        "sourceSha256": "880d1372c4a607448141a2b3e0f2673824856c833430eea38071b84157b7da91"
+      }
+    },
+    {
+      "id": "free-resources",
+      "pricing": {
+        "value": "free",
+        "sourceUrl": "https://absurd.design/about",
+        "quote": "Aside from the free illustrations you can download on the website, I’ve created a Membership for people who appreciate and enjoy using my art.",
+        "evidence": "About明确免费插画另有下载入口，不代表当前付费章节免费。",
+        "scope": "官网标明免费的插画资源。",
+        "sourceSha256": "75e345d76b5d75de4f6d2a992cc8347f666560eadcd36ac74107af1a24a0e0d2"
+      },
+      "sourceCode": {
+        "value": "unknown",
+        "sourceUrl": "https://absurd.design",
+        "quote": "",
+        "evidence": "PNG/SVG为素材文件，不是网站软件源码；未确认公开代码。",
+        "scope": "网站软件源码。"
+      },
+      "license": {
+        "value": "custom",
+        "sourceUrl": "https://absurd.design/freelicense",
+        "quote": "The Licensee is required to attribute the Licensor in each End Product in which the Licensee uses the Work.",
+        "evidence": "免费自定许可要求每件终稿署名并以absurd.design有效链接标注。",
+        "scope": "仅官网免费插画；非商业且须署名有效链接，受完整免费许可禁限。",
+        "sourceSha256": "caed5004d85c73e852eb18613b26ca71ac4d41451676232a425f6b5c82816b9d"
+      },
+      "commercial": {
+        "value": "restricted",
+        "sourceUrl": "https://absurd.design/freelicense",
+        "quote": "The Licensee may use the Work for personal, educational, and other non-commercial purposes only, subject to the prohibitions listed below.",
+        "evidence": "免费仅个人、教育和其他非商业用途，不得用于商业销售、商业分发、客户或商业第三方。",
+        "scope": "仅免费插画；不允许商业终稿。",
+        "sourceSha256": "caed5004d85c73e852eb18613b26ca71ac4d41451676232a425f6b5c82816b9d"
+      }
     }
   ],
   "curation": {

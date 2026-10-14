@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: 164d3ad085bfa4e7cf60f5bbeb2b4abf4d9eb785620fabffb16e44a063780575
+releaseId: release-499b8a304ac339fb
+revision: 407795687d9642250c9ad27833a88da89269220eed9de0b722542bf772f93eb6
 status: APPROVED
 name: FontSpace
 description: "比较字形，再按单款用途选择字体"

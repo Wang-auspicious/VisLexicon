@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: c9ab0f599753da64aa542743b8dd159355bc7bd972615a5183b83572181c6173
+releaseId: release-499b8a304ac339fb
+revision: 858d60bbdfe5e21d09c35c0b72e9fa225f0c849e96e4f91663c564bc2c970524
 status: APPROVED
 name: "FOCA Stock"
 description: "先比较照片再进单图核授权"

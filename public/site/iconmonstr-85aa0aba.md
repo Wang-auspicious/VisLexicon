@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: 8aaf80e15d0b016f4a088cad9836ba8bdef628a57fcd7dc4b01eb5e752e34d54
+releaseId: release-499b8a304ac339fb
+revision: b2c3e80671bf4e268507fee8b3021e0a9e382b40f0a71352d513cde22129aa69
 status: APPROVED
 name: iconmonstr
 description: "挑一枚图标，再按主题配齐同套符号"

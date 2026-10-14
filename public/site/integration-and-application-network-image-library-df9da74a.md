@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: fb6628f40b9c3b1fb24ccbb8fd312069991383b7e651f5a2f6ef1431a32e7903
+releaseId: release-499b8a304ac339fb
+revision: 9f0b2f14c240f39fd287937a151bb7a59f5040adf56581082783eb9b69a1af35
 status: APPROVED
 name: "IAN Media Library"
 description: "先选科学图形再核素材署名"

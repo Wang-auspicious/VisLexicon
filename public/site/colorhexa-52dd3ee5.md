@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: 79fb156b421a4723e8306ee2522558cabf2b6f234de863c335a3907a44e3980c
+releaseId: release-499b8a304ac339fb
+revision: 1d10c6ed6a539537e10a8c64bbc4bab500dfe471cdf605ad2a5eeed5873c0092
 status: APPROVED
 name: ColorHexa
 description: "查色值、换格式，再对照配色方案"

@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: 8d8ab14cc97831477aa0c4930d60fb0d904c00a587419c033f96ac43066e9daa
+releaseId: release-499b8a304ac339fb
+revision: 6b7cbc21fbca9f01c8fb5d8697686855ba98e059e20c80ddb28d36c576a7f110
 status: APPROVED
 name: IconShelf
 description: "按合集找图标，再核原源许可"

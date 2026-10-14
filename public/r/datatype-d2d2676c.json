@@ -1,9 +1,9 @@
 {
   "$schema": "https://vislexicon.com/schema/registry-item.json",
-  "releaseId": "release-8c9e24b85466dfda",
-  "revision": "8b4bdb88f2965961dedc62df16cb5697eff165c737dde5fdc57a4a6743bf4227",
+  "releaseId": "release-499b8a304ac339fb",
+  "revision": "42b39120786fca7096090eb934d31749232f0dfcfb5864f49c121adbab2ef42c",
   "schemaVersion": 3,
-  "generatedAt": "2026-10-14T21:06:17.659Z",
+  "generatedAt": "2026-10-14T21:53:36.134Z",
   "entryId": "datatype-d2d2676c",
   "entityId": "entity-datatype-font",
   "status": "APPROVED",
@@ -193,6 +193,51 @@
       "quote": "",
       "evidence": "README的OFL声明明确指Font Software；未核实Python构建脚本与整个仓库的代码许可，代码许可保持unknown。",
       "scope": "Python构建脚本、示例网页与完整仓库代码；字体软件的OFL许可另记facts.license。"
+    }
+  ],
+  "offers": [
+    {
+      "id": "datatype-font-files",
+      "name": "Datatype字体文件与字体源文件",
+      "scope": "Datatype字体软件（官方仓库TTF/WOFF2字体、字形与字体源文件）；不扩展到Python构建脚本、第三方基础字形、外部库或独立在线服务。",
+      "pricing": {
+        "value": "unknown",
+        "sourceUrl": "https://franktisellano.github.io/datatype/",
+        "quote": "",
+        "evidence": "官网提供Download与Google Fonts链接，README提供安装方法，但已读原文未找到独立价格声明；不以公开下载或许可文字推断价格。",
+        "scope": "Datatype字体软件（官方仓库TTF/WOFF2字体、字形与字体源文件）；不扩展到Python构建脚本、第三方基础字形、外部库或独立在线服务。"
+      },
+      "sourceCode": {
+        "value": "open",
+        "sourceUrl": "https://api.github.com/repos/franktisellano/datatype",
+        "quote": "\"private\":false",
+        "evidence": "官方API确认仓库公开，本次实际读取README、仓库树及源文件路径；公开源码不等于整个仓库有统一代码许可。",
+        "scope": "Datatype字体软件（官方仓库TTF/WOFF2字体、字形与字体源文件）；不扩展到Python构建脚本、第三方基础字形、外部库或独立在线服务。",
+        "sourceSha256": "f61544375240c18a272ded57d776827ec8b2ddef370124f4a54acc0b7f8fc3ce"
+      },
+      "license": {
+        "value": "OFL-1.1",
+        "sourceUrl": "https://raw.githubusercontent.com/franktisellano/datatype/acd6aa4d059aec1a7b41fdec1f6ac4e9a6116dca/OFL.txt",
+        "quote": "This Font Software is licensed under the SIL Open Font License, Version 1.1.",
+        "evidence": "已读取具体官方commit的完整OFL文件；包含Datatype版权、IBM Plex原字形版权和保留名称约束。",
+        "scope": "Datatype字体软件（官方仓库TTF/WOFF2字体、字形与字体源文件）；不扩展到Python构建脚本、第三方基础字形、外部库或独立在线服务。",
+        "sourceSha256": "9781f8ab404a801e577d98f28720b67158a6eff24220e5de0cd79b89b64a6dcc"
+      },
+      "commercial": {
+        "value": "allowed",
+        "sourceUrl": "https://raw.githubusercontent.com/franktisellano/datatype/acd6aa4d059aec1a7b41fdec1f6ac4e9a6116dca/OFL.txt",
+        "quote": "Permission is hereby granted, free of charge, to any person obtaining\na copy of the Font Software, to use, study, copy, merge, embed, modify,\nredistribute, and sell modified and unmodified copies of the Font\nSoftware, subject to the following conditions:",
+        "evidence": "完整OFL允许字体使用、嵌入、修改和随软件分发；不得单独出售字体或组件，分发保留版权/OFL，衍生字体不得使用保留名称Plex，字体衍生仍须OFL。许可不限制用字体创作的文档，不扩展第三方服务。",
+        "scope": "Datatype字体软件（官方仓库TTF/WOFF2字体、字形与字体源文件）；不扩展到Python构建脚本、第三方基础字形、外部库或独立在线服务。",
+        "sourceSha256": "9781f8ab404a801e577d98f28720b67158a6eff24220e5de0cd79b89b64a6dcc"
+      },
+      "repositoryLicense": {
+        "value": "unknown",
+        "sourceUrl": "https://github.com/franktisellano/datatype",
+        "quote": "",
+        "evidence": "README的OFL声明明确指Font Software；未核实Python构建脚本与整个仓库的代码许可，代码许可保持unknown。",
+        "scope": "Python构建脚本、示例网页与完整仓库代码；字体软件的OFL许可另记facts.license。"
+      }
     }
   ],
   "curation": {

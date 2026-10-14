@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: 003b2749aebe69a392ae93837d8413277447974a0e9c19e4df4fe6facc9ade4c
+releaseId: release-499b8a304ac339fb
+revision: d7c3fc9296170b36493e25acbe2efec7ed1e26e0af849c8f2c0a517419f49258
 status: APPROVED
 name: "Icon Search"
 description: "搜图标再沿原图源核许可"

@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: 9cd1a06a71256531fa8ffdbde8fba46d678981a841f35f5b226006927c6b29d9
+releaseId: release-499b8a304ac339fb
+revision: 068041d6d674cd267c9f84f051453af0b41008b4081058adee77d964f34aeff3
 status: APPROVED
 name: Lucide
 description: "先比轮廓再看具体图标放大预览"

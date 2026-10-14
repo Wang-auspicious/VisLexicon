@@ -1,9 +1,9 @@
 {
   "$schema": "https://vislexicon.com/schema/registry-item.json",
-  "releaseId": "release-8c9e24b85466dfda",
-  "revision": "8d8ab14cc97831477aa0c4930d60fb0d904c00a587419c033f96ac43066e9daa",
+  "releaseId": "release-499b8a304ac339fb",
+  "revision": "6b7cbc21fbca9f01c8fb5d8697686855ba98e059e20c80ddb28d36c576a7f110",
   "schemaVersion": 3,
-  "generatedAt": "2026-10-14T21:06:17.659Z",
+  "generatedAt": "2026-10-14T21:53:36.134Z",
   "entryId": "iconshelf-b14ef8e5",
   "entityId": "entity-iconshelf-com",
   "status": "APPROVED",
@@ -193,6 +193,41 @@
       "evidence": "已检查官网反馈仓库：API license=null、完整目录仅README；未建立完整软件应用repo或对应LICENSE，原图稿标签不授应用代码许可。",
       "scope": "仅当前入口，各原图形和其他产品分别核。",
       "confidence": 0
+    }
+  ],
+  "offers": [
+    {
+      "id": "iconshelf-basic",
+      "scope": "仅IconShelf Basic网页检索/下载工具访问：每月100次搜索、每天10次下载；不覆盖原图标版权、其它付费方案或应用代码。",
+      "pricing": {
+        "value": "free",
+        "sourceUrl": "https://iconshelf.com/pricing",
+        "quote": "Basic For casual users. $0 / forever",
+        "evidence": "当前完整直接HTTP200的Pricing明确Basic为0美元forever，同一段明确100 Monthly Searches与10 Daily Downloads；仅工具访问，不是原图形商用授权。",
+        "scope": "仅IconShelf Basic网页检索/下载工具访问：每月100次搜索、每天10次下载；不覆盖原图标版权、其它付费方案或应用代码。",
+        "sourceSha256": "636a0be8558f05a46b6987ff1a43c371040f17770392e8ad1ad9d4916594461e"
+      },
+      "sourceCode": {
+        "value": "unknown",
+        "sourceUrl": "https://iconshelf.com/",
+        "quote": "",
+        "evidence": "Basic可复制图稿代码的官网说明不等于已取得原文件或完整应用源码；官方反馈repo仅README，没有完整实现。",
+        "scope": "仅IconShelf Basic网页检索/下载工具访问：每月100次搜索、每天10次下载；不覆盖原图标版权、其它付费方案或应用代码。"
+      },
+      "license": {
+        "value": "unknown",
+        "sourceUrl": "https://iconshelf.com/",
+        "quote": "",
+        "evidence": "Basic工具访问额度不授原图稿权利；当前完整Terms要求逐图遵守原许可，Lucide提供件精确版本和SVG到原许可证链尚未取得。",
+        "scope": "仅IconShelf Basic网页检索/下载工具访问：每月100次搜索、每天10次下载；不覆盖原图标版权、其它付费方案或应用代码。"
+      },
+      "commercial": {
+        "value": "unknown",
+        "sourceUrl": "https://iconshelf.com/",
+        "quote": "",
+        "evidence": "免费Basic访问不等于图稿商用；Lucide官方上游main/LICENSE链接仍缺提供件版本/commit/具体SVG原件绑定，不从平台ISC标签借正向商业权限。",
+        "scope": "仅IconShelf Basic网页检索/下载工具访问：每月100次搜索、每天10次下载；不覆盖原图标版权、其它付费方案或应用代码。"
+      }
     }
   ],
   "curation": {

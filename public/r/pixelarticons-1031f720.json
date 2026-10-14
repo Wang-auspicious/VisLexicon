@@ -1,9 +1,9 @@
 {
   "$schema": "https://vislexicon.com/schema/registry-item.json",
-  "releaseId": "release-8c9e24b85466dfda",
-  "revision": "b2fa921347e39e5784ff8ed7cea01391453c129ee8720f06ffa2d61e908938bd",
+  "releaseId": "release-499b8a304ac339fb",
+  "revision": "1f629b95fbe29d8aeef8da7ddc854889e1d695cad28ca38b3515252802c2390a",
   "schemaVersion": 3,
-  "generatedAt": "2026-10-14T21:06:17.659Z",
+  "generatedAt": "2026-10-14T21:53:36.134Z",
   "entryId": "pixelarticons-1031f720",
   "entityId": "entity-pixelarticons",
   "status": "APPROVED",
@@ -203,6 +203,95 @@
       "evidence": "实际解码并校验Git blob原始LICENSE；需保留版权与许可声明，Pro不是此免费包授权。",
       "sourceSha256": "eb113ac5006542496193a0641f8e90dcaf392e5025540ba45c2ee042af3ae51d",
       "confidence": 1
+    }
+  ],
+  "offers": [
+    {
+      "id": "pixelarticons-1031f720-free-base",
+      "sourceUrl": "https://pixelarticons.com/free/",
+      "author": {
+        "value": "Gerrit Halfmann",
+        "sourceUrl": "https://github.com/halfmage/pixelarticons/blob/master/LICENSE",
+        "quote": "Copyright (c) 2019 Gerrit Halfmann",
+        "evidence": "免费包实际LICENSE给出全名，官网About与footer署名Halfmage和Gerrit相互对应。",
+        "scope": "官方免费包的署名作者/版权人；官网About署名Halfmage/Gerrit。",
+        "sourceSha256": "eb113ac5006542496193a0641f8e90dcaf392e5025540ba45c2ee042af3ae51d"
+      },
+      "repository": {
+        "value": "https://github.com/halfmage/pixelarticons",
+        "sourceUrl": "https://api.github.com/repos/halfmage/pixelarticons",
+        "quote": "\"full_name\":\"halfmage/pixelarticons\"",
+        "evidence": "官网直接链接此仓库，GitHub官方API响应确认完整库名。",
+        "scope": "官方halfmage/pixelarticons免费包的图标与包代码，当前Heart Base实例；不延伸到Pro风格或品牌商标权。",
+        "sourceSha256": "b5312bf0dece2c47d80cd8abf64f0ce6c92c83cd6f263b554b2c365b31a69887"
+      },
+      "pricing": {
+        "value": "free",
+        "sourceUrl": "https://github.com/halfmage/pixelarticons/blob/master/README.md",
+        "quote": "**1036 free pixel art icons**",
+        "evidence": "官方关联仓库README直接称免费图标；不是从MIT许可证免版权许可费推断售价。宣传库存数不当本次完成数。",
+        "scope": "官方halfmage/pixelarticons免费包的图标与包代码，当前Heart Base实例；不延伸到Pro风格或品牌商标权。",
+        "sourceSha256": "47bd96dd933fdc6beacc1470ff51b2c70f150f76ca2453a1ac23d1728d867aec"
+      },
+      "sourceCode": {
+        "value": "open",
+        "sourceUrl": "https://github.com/halfmage/pixelarticons/blob/master/scripts/generate-react.js",
+        "quote": "const svgDir = path.join(__dirname, '..', 'svg');\nconst outDir = path.join(__dirname, '..', 'react');",
+        "evidence": "实际读取官方仓库Heart SVG与完整React生成脚本，解码原件SHA和GitblobSHA均与保存的真实Git树匹配；只读，不运行构建脚本、不安装NPM包。",
+        "scope": "官方免费SVG包与其React生成代码；不指完整官网或Pro素材源码。",
+        "sourceSha256": "352fe015436bcdcb5fe53947c10c32213629a7a12a040e354d4ba2236b875b98"
+      },
+      "license": {
+        "value": "MIT",
+        "sourceUrl": "https://github.com/halfmage/pixelarticons/blob/master/LICENSE",
+        "quote": "MIT License",
+        "evidence": "实际解码并校验Git blob原始LICENSE；需保留版权与许可声明，Pro不是此免费包授权。",
+        "scope": "官方halfmage/pixelarticons免费包的图标与包代码，当前Heart Base实例；不延伸到Pro风格或品牌商标权。",
+        "sourceSha256": "eb113ac5006542496193a0641f8e90dcaf392e5025540ba45c2ee042af3ae51d"
+      },
+      "commercial": {
+        "value": "allowed",
+        "sourceUrl": "https://github.com/halfmage/pixelarticons/blob/master/LICENSE",
+        "quote": "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software",
+        "evidence": "同一免费包MIT允许商业使用与售卖许可范围内副本，并要求保留原声明；不推出第三方品牌商标许可。",
+        "scope": "官方halfmage/pixelarticons免费包的图标与包代码，当前Heart Base实例；不延伸到Pro风格或品牌商标权。",
+        "sourceSha256": "eb113ac5006542496193a0641f8e90dcaf392e5025540ba45c2ee042af3ae51d"
+      }
+    },
+    {
+      "id": "pixelarticons-1031f720-pro",
+      "sourceUrl": "https://pixelarticons.com/pricing/",
+      "pricing": {
+        "value": "paid",
+        "sourceUrl": "https://pixelarticons.com/pricing/",
+        "quote": "Every license is a one-time purchase with lifetime updates. No recurring charges, ever.",
+        "evidence": "官方FAQ明确一次购买并提供后续更新；价格按图标集和席位变动，未抄扁平HTML的全部金额或折扣状态。",
+        "scope": "当前新购Pro各图标集，Solo/Team/Enterprise相应席位范围；早于官网所列变更日期的Team Unlimited单独处理。",
+        "sourceSha256": "110dae6ab67e6971f8752708d59870a8239431b30d9313abb91287904b8b84d4"
+      },
+      "sourceCode": {
+        "value": "unknown",
+        "sourceUrl": "https://pixelarticons.com/",
+        "quote": "",
+        "evidence": "未核完整Pro资产公开源码。",
+        "scope": "当前官网入口；未知不满足正向筛选。"
+      },
+      "license": {
+        "value": "custom",
+        "sourceUrl": "https://pixelarticons.com/pricing/",
+        "quote": "The icon files themselves cannot be redistributed or resold as-is.",
+        "evidence": "当前官方价格页完整FAQ允许商业/客户终稿，但禁止图标文件原样再分发或转售；Solo一席、Team至多五席、Enterprise至多二十五席，每位参与图标工作的设计/营销/开发人员均占席。",
+        "scope": "当前新购Pro各图标集，Solo/Team/Enterprise相应席位范围；早于官网所列变更日期的Team Unlimited单独处理。",
+        "sourceSha256": "110dae6ab67e6971f8752708d59870a8239431b30d9313abb91287904b8b84d4"
+      },
+      "commercial": {
+        "value": "allowed",
+        "sourceUrl": "https://pixelarticons.com/pricing/",
+        "quote": "Every license tier includes an unlimited commercial license: apps, SaaS, client sites, and products you sell.",
+        "evidence": "同一Pro范围内明确允许商业应用、SaaS、客户网站与售卖终稿；遵守席位数，不能原样再分发素材文件。",
+        "scope": "当前新购Pro各图标集，Solo/Team/Enterprise相应席位范围；早于官网所列变更日期的Team Unlimited单独处理。",
+        "sourceSha256": "110dae6ab67e6971f8752708d59870a8239431b30d9313abb91287904b8b84d4"
+      }
     }
   ],
   "curation": {

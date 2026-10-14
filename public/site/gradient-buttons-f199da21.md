@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: bcc788e01e012a004c0213f046788ed1c9e8fd2969d32972199d48f6b481e08a
+releaseId: release-499b8a304ac339fb
+revision: fdabd92ca888e05c25da1dda9780c0e55a7ca9cac323b85cea132b7da4d18820
 status: APPROVED
 name: "Gradient Buttons"
 description: "比较渐变再看原按钮代码"

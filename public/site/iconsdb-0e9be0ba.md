@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: 66944967600a8b5fe924fc2e4060b080445e7cd906b101d141df70cdb2c36340
+releaseId: release-499b8a304ac339fb
+revision: 080ac00b2af3d2d5ffefa174b21cac3e813155d2c0416f13003234518d9efdec
 status: APPROVED
 name: IconsDB
 description: "选颜色与格式，再核单图许可"

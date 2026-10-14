@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: abcad687146815e809edc55b53a3942bcd67e7b5c1c54f7d4481fa73a4b6259e
+releaseId: release-499b8a304ac339fb
+revision: 0107162494c2b4942fbe98e587ddf963273882dabd1f7453ac96c40941198414
 status: APPROVED
 name: "Generative Fonts"
 description: "先看生成字形，再核输入字体授权"

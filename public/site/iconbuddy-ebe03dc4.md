@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: 97ae421ff35e4632557b8787d4190a9b540be8b4c083e97b216d3b4ebf47c880
+releaseId: release-499b8a304ac339fb
+revision: 2f133dc9ac0d1fa50e49646705293caa1e56c11fea28b2b08bc47f15369eabe3
 status: APPROVED
 name: Iconbuddy
 description: "按图标集找单图，再核原版本许可"

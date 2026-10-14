@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: b2fa921347e39e5784ff8ed7cea01391453c129ee8720f06ffa2d61e908938bd
+releaseId: release-499b8a304ac339fb
+revision: 1f629b95fbe29d8aeef8da7ddc854889e1d695cad28ca38b3515252802c2390a
 status: APPROVED
 name: Pixelarticons
 description: "先比像素轮廓，再分免费与付费样式"

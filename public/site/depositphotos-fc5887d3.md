@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-8c9e24b85466dfda
-revision: 657c73add8b9e5256044eb4e092ea6fe2f707af23c02e660a3f6fb71a55acec7
+releaseId: release-499b8a304ac339fb
+revision: ecf4674d7c628269cd0bf193a59b4c616506eb5245e907e5a39265cb6cc2c9ba
 status: APPROVED
 name: DepositPhotos
 description: "先比较素材构图再核具体授权"

@@ -1,9 +1,9 @@
 {
   "$schema": "https://vislexicon.com/schema/registry-item.json",
-  "releaseId": "release-8c9e24b85466dfda",
-  "revision": "c44bc262960a3be76948711966745dea771b92d0f1dfe81c3bd9bd89893ae910",
+  "releaseId": "release-499b8a304ac339fb",
+  "revision": "2b60678935a894d14eb0387bfef9997a03595380c52216ce1f9b4c4374116cbc",
   "schemaVersion": 3,
-  "generatedAt": "2026-10-14T21:06:17.659Z",
+  "generatedAt": "2026-10-14T21:53:36.134Z",
   "entryId": "colormind-d25c324a",
   "entityId": "entity-colormind",
   "status": "APPROVED",
@@ -195,6 +195,42 @@
       "evidence": "未确认仓库和代码许可。",
       "scope": "当前网站入口；未知不满足正向价格、开源或商用筛选。",
       "confidence": 0
+    }
+  ],
+  "offers": [
+    {
+      "id": "rest-api-personal-noncommercial",
+      "scope": "Colormind REST API；免费声明仅个人与非商业用途，商业应用需联系运营者，不延伸到模板作者许可。",
+      "pricing": {
+        "value": "free",
+        "sourceUrl": "https://colormind.io/api-access",
+        "quote": "The API is free for personal and non-commercial use.",
+        "evidence": "具体API offer有明确免费范围。",
+        "scope": "Colormind REST API；免费声明仅个人与非商业用途，商业应用需联系运营者，不延伸到模板作者许可。",
+        "sourceSha256": "6aeb8a7e41cfe8f1076024c6e3738d952c7b9411fafdbad4cc3e6e14bbd531af"
+      },
+      "sourceCode": {
+        "value": "unknown",
+        "sourceUrl": "https://colormind.io",
+        "quote": "",
+        "evidence": "未确认公开代码仓库，不从可见网页源码推断源码开放。",
+        "scope": "当前网站入口；未知不满足正向价格、开源或商用筛选。"
+      },
+      "license": {
+        "value": "unknown",
+        "sourceUrl": "https://colormind.io",
+        "quote": "",
+        "evidence": "未找到生成工具或输出结果适用的命名许可；内容版权声明不能替代输出授权。",
+        "scope": "当前网站入口；未知不满足正向价格、开源或商用筛选。"
+      },
+      "commercial": {
+        "value": "restricted",
+        "sourceUrl": "https://colormind.io/api-access",
+        "quote": "The API is free for personal and non-commercial use. If you're looking to use it in a commercial application, get in touch by email: jack@colormind.io",
+        "evidence": "官方明确API个人非商用免费，商业应用须联系。",
+        "scope": "Colormind REST API；免费声明仅个人与非商业用途，商业应用需联系运营者，不延伸到模板作者许可。",
+        "sourceSha256": "6aeb8a7e41cfe8f1076024c6e3738d952c7b9411fafdbad4cc3e6e14bbd531af"
+      }
     }
   ],
   "curation": {
