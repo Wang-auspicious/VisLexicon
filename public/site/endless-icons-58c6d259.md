@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-b342efb95d8de378
+releaseId: release-6ab8aa12e114f755
 revision: 37ceb4102bda4d6be0de997c3e45865e56ab02bb3580bccf0d1e82d08a1f9a18
 status: APPROVED
 name: EndlessIcons
