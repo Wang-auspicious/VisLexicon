@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-2bce88f946c6954c
+releaseId: release-4e6b64cbd4045b31
 revision: 46fd6e39b60a5f4352cee1f893569111975c88a3c2ac4bd085c08063b37f4755
 status: APPROVED
 name: "SMC Fonts · Malayalam 字体"
