@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-a61347f0a2281ace
+releaseId: release-8c9e24b85466dfda
 revision: 4fc7a681c08e878020d8f3477f1d0bf528c9a1a181403d93ad68689b600f1ecc
 status: APPROVED
 name: "FontsArena · 字体资源"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-a61347f0a2281ace
+releaseId: release-8c9e24b85466dfda
 revision: 3412e041f7bf52b0bb9dbf4e3cd6a25198fbec8fb7e69ef1116f8e28f2054772
 status: APPROVED
 name: 3DICONS
