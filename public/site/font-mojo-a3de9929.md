@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-499b8a304ac339fb
+releaseId: release-a6b79c57ca05c624
 revision: 7e8a4abd1834da5e71f97be9c12076ab3e0a571e79735d6fd0723e9a2a7cfbdc
 status: APPROVED
 name: "Font Mojo"
