@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-6ab8aa12e114f755
+releaseId: release-f6c96ef9340e4139
 revision: eabf2c906c3965b5d6273cd4c9db6117ceadf62fa19172dbd35bbfc6f7037078
 status: APPROVED
 name: Absurd.design
