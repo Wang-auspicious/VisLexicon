@@ -1,0 +1,229 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-c162e8f61fa96a4a",
+  "revision": "8e4844735de84ed4065492c1d5232050019bdda24274acb31346d30cd1337dce",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-14T01:44:41.795Z",
+  "entryId": "zdog-4f4f8c69",
+  "entityId": "entity-zdog",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://zzz.dog",
+    "finalUrl": "https://zzz.dog/",
+    "checkedAt": "2026-10-14T00:08:25.649Z"
+  },
+  "editorial": {
+    "name": "Zdog",
+    "descriptionZh": "用 JavaScript 在 canvas 或 SVG 中绘制伪三维模型的引擎，以圆润的平面图形表现空间关系。官网有形状 API 与运行示例，项目代码和仓库随附文档声明 MIT；第三方作品不在这项核验范围内。",
+    "takeawayZh": "用圆角图形搭出轻量伪三维模型",
+    "noteZh": "我们在首页先看到四个圆润的彩色造型，下方是用它做出的作品缩略图。建议从 Shapes 的 Rect 开始：橙色矩形旁就是尺寸、描边和颜色的代码，比一上来读接口清单更容易对上参数；再点 Getting started，看一个紫色圆环怎样生成。它适合做轻量伪三维插画，首页仍保留早期版本提醒；MIT 只管项目代码与随附文档，别把官网作品和第三方内容也算进去。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "three-d-spatial-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页明确说明伪三维 canvas/SVG 引擎；形状文档将参数代码与实际渲染对应，交付的是实现库。",
+        "evidenceUrl": "https://zzz.dog/shapes"
+      }
+    ],
+    "confirmedAt": "2026-10-14T00:30:02.215Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "install",
+      "download"
+    ],
+    "media": [
+      "3d",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://zzz.dog",
+      "finalUrl": "https://zzz.dog/",
+      "title": "Zdog · Round, flat, designer-friendly pseudo-3D engine for canvas and SVG",
+      "selectionRationale": "先看彩色造型，再往下挑一个作者作品。",
+      "shot": {
+        "sha256": "89289fb226dc8f1e9ec66d6825354e469e48415be68810971310b18a83dfdff5",
+        "width": 1280,
+        "height": 800,
+        "bytes": 41550,
+        "src": "https://vislexicon.com/shots/extra-200-20261013/zdog-4f4f8c69/identity.webp",
+        "alt": "Zdog 大标题旁是彩色小狗标志，下方排列四个造型和作品缩略图"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://zzz.dog/shapes",
+      "finalUrl": "https://zzz.dog/shapes",
+      "title": "Zdog · Shapes",
+      "selectionRationale": "从 Rect 对照代码和矩形，侧栏再换别的形状。",
+      "shot": {
+        "sha256": "b4eb0d4ba3c3c438f92f5195f3cfee039ddfbb01d0fe52127027f0c86e7c6568",
+        "width": 1280,
+        "height": 800,
+        "bytes": 40524,
+        "src": "https://vislexicon.com/shots/extra-200-20261013/zdog-4f4f8c69/breadth-57569dd727.webp",
+        "alt": "Shapes 页左侧列出形状名称，右侧 Rect 代码旁显示橙色矩形"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://zzz.dog/getting-started",
+      "finalUrl": "https://zzz.dog/getting-started",
+      "title": "Zdog · Getting started",
+      "selectionRationale": "先认出这个圆环，再回原页对照生成它的参数。",
+      "shot": {
+        "sha256": "01b0f833c115ffb161cbb9dee8a94195a87eda81a0347ebd21f00e4c767b8b07",
+        "width": 1280,
+        "height": 800,
+        "bytes": 6776,
+        "src": "https://vislexicon.com/shots/extra-200-20261013/zdog-4f4f8c69/proof-1280-01b0f833c115.webp",
+        "alt": "浅橙色方形舞台中显示一个粗紫色圆环"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "David DeSandro",
+      "sourceUrl": "https://github.com/metafizzy/zdog/blob/master/package.json",
+      "quote": "David DeSandro",
+      "evidence": "官方仓库package.json的author字段；不从目录作者标签推断。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "c7a611e651c1f735fbfe882857aa85ca4762ddd9d684bfeb4bb78391ea348ff5",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://api.github.com/repos/metafizzy/zdog",
+      "quote": "",
+      "evidence": "仓库属于metafizzy组织账号，未核实其法律组织全名。",
+      "scope": "只针对本入口；未知不满足正向筛选。",
+      "confidence": 0
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/metafizzy/zdog",
+      "sourceUrl": "https://api.github.com/repos/metafizzy/zdog",
+      "quote": "\"html_url\":\"https://github.com/metafizzy/zdog\"",
+      "evidence": "首页实际仓库链接与GitHub官方元数据相符。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "a20483960a360e4fbea136f3605dcf47ea46017779c22d6019e5d31a93f50cb8",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/metafizzy/zdog/blob/master/README.md",
+      "quote": "Licensed MIT. Made by Metafizzy",
+      "evidence": "官方 README 明示 Licensed MIT；package.json 也声明MIT。仓库根目录未见独立LICENSE文件，license API返回404。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "b5cb7ef198fd80de1c59087c323d8fdd9733845abf7e5d9b965a88eb4c5ff8ce",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://api.github.com/repos/metafizzy/zdog",
+      "quote": "",
+      "evidence": "未找到具体下载offer的独立价格声明；MIT中的free of charge是许可授权，不能单独证明价格。",
+      "scope": "只针对本入口；未知不满足正向筛选。",
+      "confidence": 0
+    },
+    {
+      "field": "sourceCode",
+      "value": "open",
+      "sourceUrl": "https://api.github.com/repos/metafizzy/zdog",
+      "quote": "\"private\":false",
+      "evidence": "GitHub官方API确认仓库非私有，contents API实际读取到package与源码文档。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "a20483960a360e4fbea136f3605dcf47ea46017779c22d6019e5d31a93f50cb8",
+      "confidence": 1
+    },
+    {
+      "field": "commercial",
+      "value": "allowed",
+      "sourceUrl": "https://github.com/metafizzy/zdog/blob/master/README.md",
+      "quote": "Licensed MIT. Made by Metafizzy",
+      "evidence": "依ROLE规则，MIT允许商用；本仓库README明确MIT。未将此延伸到其他站点资源。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "b5cb7ef198fd80de1c59087c323d8fdd9733845abf7e5d9b965a88eb4c5ff8ce",
+      "confidence": 1
+    },
+    {
+      "field": "repositoryLicense",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/metafizzy/zdog/blob/master/README.md",
+      "quote": "Licensed MIT. Made by Metafizzy",
+      "evidence": "官方 README 明示 Licensed MIT；package.json 也声明MIT。仓库根目录未见独立LICENSE文件，license API返回404。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "b5cb7ef198fd80de1c59087c323d8fdd9733845abf7e5d9b965a88eb4c5ff8ce",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-04-12",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/zdog-4f4f8c69",
+    "designMdUrl": "https://vislexicon.com/site/zdog-4f4f8c69.md",
+    "checkedAt": "2026-10-14T00:08:25.649Z",
+    "license": "MIT"
+  }
+}

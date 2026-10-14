@@ -5,6 +5,7 @@ export const FORBIDDEN_PUBLIC_KEYS = Object.freeze([
   'curatorId',
   'reviewerId',
   'qa',
+  'sourceFile',
 ])
 
 const isPlainObject = (value) => (

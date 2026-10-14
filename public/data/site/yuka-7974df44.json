@@ -1,0 +1,276 @@
+{
+  "releaseId": "release-c162e8f61fa96a4a",
+  "revision": "7aa0f6c4edd2f7b4e2072d1d624092f58f27823341601a1e1a8c0a75fdd4fab3",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-14T01:44:41.795Z",
+  "entryId": "yuka-7974df44",
+  "entityId": "entity-yuka",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "mugen87.github.io",
+  "official": {
+    "inputUrl": "https://mugen87.github.io/yuka",
+    "finalUrl": "https://mugen87.github.io/yuka/",
+    "checkedAt": "2026-10-14T00:08:50.130Z"
+  },
+  "editorial": {
+    "name": "Yuka",
+    "descriptionZh": "用于游戏智能体、导航、转向行为和感知的 JavaScript 库，可与独立的三维渲染引擎配合。官网提供任务示例与运行场景，仓库源码及随附文档使用 MIT；示例依赖和第三方资源的许可须单独核对。",
+    "takeawayZh": "给游戏对象加入寻路和群体行为",
+    "noteZh": "我们从首页的 View examples 进入清单，先看到状态机、目标驱动、模糊逻辑和图搜索这些不同任务。建议再开 Flocking：黑色网格里的小蓝标记是示例对象，右上角有对齐、聚合和分离三项调节，先看它们与源码的对应关系。它提供游戏逻辑，画面另用渲染库完成；MIT 只覆盖项目源码和随附文档，第三方素材与依赖仍需分别核对。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "three-d-spatial-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "独立游戏AI逻辑库，官方Examples包含群体运动、寻路和感知，Flocking实例以WebGL场景展示运动行为实现。",
+        "evidenceUrl": "https://mugen87.github.io/yuka/examples/steering/flocking/"
+      }
+    ],
+    "confirmedAt": "2026-10-14T00:47:05.753Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "gaming"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "3d",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "webgl",
+      "three-js"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mugen87.github.io/yuka",
+      "finalUrl": "https://mugen87.github.io/yuka/",
+      "title": "Yuka | A JavaScript library for developing Game AI",
+      "selectionRationale": "从红色 View examples 按钮进入，先选自己要实现的游戏行为。",
+      "shot": {
+        "sha256": "04ad87a13e54e6449e68ef5dd964d94fa0cf89d64834983b3065eee58bd870d8",
+        "width": 1280,
+        "height": 800,
+        "bytes": 55108,
+        "src": "/shots/extra-200-20261013/yuka-7974df44/identity.webp",
+        "alt": "Yuka 标志与游戏 AI 库说明叠在游戏背景上，下面有红色 View examples 按钮和三栏能力介绍"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://mugen87.github.io/yuka/examples/",
+      "finalUrl": "https://mugen87.github.io/yuka/examples/",
+      "title": "Yuka | Examples",
+      "selectionRationale": "先按任务找入口，状态机和目标驱动各有独立示例。",
+      "shot": {
+        "sha256": "e7232e2ce2c46eb959e6ab565b990d3c1c9ce400df5c847ffb6eb02539af7e2d",
+        "width": 1280,
+        "height": 800,
+        "bytes": 35498,
+        "src": "/shots/extra-200-20261013/yuka-7974df44/breadth-f4414d6675.webp",
+        "alt": "Examples 清单显示 Autonomous Agent Design、Fuzzy Logic 与 Graphs and Navigation 分组及红色示例链接"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://mugen87.github.io/yuka/examples/steering/flocking/",
+      "finalUrl": "https://mugen87.github.io/yuka/examples/steering/flocking/",
+      "title": "Yuka | Steering Behaviors | Flocking",
+      "selectionRationale": "先找网格中的小蓝标记，再对照右上角三项群体行为参数。",
+      "shot": {
+        "sha256": "0c7fd29fad6c75178db243fe7da5ceb327fbd9b5dc367ca2c61e3af27c26fb53",
+        "width": 1280,
+        "height": 800,
+        "bytes": 36890,
+        "src": "/shots/extra-200-20261013/yuka-7974df44/proof-c836882abe-0c7fd29f.webp",
+        "alt": "黑色网格舞台上散布小蓝色标记，右上角显示 alignment、cohesion、separation 滑杆"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://mugen87.github.io/yuka",
+        "selectionRationale": "从红色 View examples 按钮进入，先选自己要实现的游戏行为。",
+        "shot": {
+          "src": "/shots/extra-200-20261013/yuka-7974df44/identity.webp",
+          "alt": "Yuka 标志与游戏 AI 库说明叠在游戏背景上，下面有红色 View examples 按钮和三栏能力介绍",
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://mugen87.github.io/yuka/examples/",
+        "selectionRationale": "先按任务找入口，状态机和目标驱动各有独立示例。",
+        "shot": {
+          "src": "/shots/extra-200-20261013/yuka-7974df44/breadth-f4414d6675.webp",
+          "alt": "Examples 清单显示 Autonomous Agent Design、Fuzzy Logic 与 Graphs and Navigation 分组及红色示例链接",
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://mugen87.github.io/yuka/examples/steering/flocking/",
+        "selectionRationale": "先找网格中的小蓝标记，再对照右上角三项群体行为参数。",
+        "shot": {
+          "src": "/shots/extra-200-20261013/yuka-7974df44/proof-c836882abe-0c7fd29f.webp",
+          "alt": "黑色网格舞台上散布小蓝色标记，右上角显示 alignment、cohesion、separation 滑杆",
+          "width": 1280,
+          "height": 800
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "Mugen87",
+      "sourceUrl": "https://github.com/Mugen87/yuka/blob/master/package.json",
+      "quote": "Mugen87",
+      "evidence": "官方仓库package.json的author字段；不从目录作者标签推断。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "787f606f5dd273f3017239e450d9f20306eab3eec91752aec2a04d41e605600a",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://api.github.com/repos/Mugen87/yuka",
+      "quote": "",
+      "evidence": "官方仓库所有者是个人账号，已读package与许可未找到法律组织名。",
+      "scope": "只针对本入口；未知不满足正向筛选。",
+      "confidence": 0
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/Mugen87/yuka",
+      "sourceUrl": "https://api.github.com/repos/Mugen87/yuka",
+      "quote": "\"html_url\":\"https://github.com/Mugen87/yuka\"",
+      "evidence": "首页实际仓库链接与GitHub官方元数据相符。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "358132f5ad637769313adb7544ea5c0cc07456b258167a4eda056a6b3ad3fd55",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/Mugen87/yuka/blob/master/LICENSE",
+      "quote": "The MIT License",
+      "evidence": "已读取官方仓库许可证正文，授权条款与MIT一致。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "2b75427a84abb4a68e331d02d14f61ba7405c0e0bbab2aea8d6afe3803580d83",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://api.github.com/repos/Mugen87/yuka",
+      "quote": "",
+      "evidence": "未找到具体下载offer的独立价格声明；MIT中的free of charge是许可授权，不能单独证明价格。",
+      "scope": "只针对本入口；未知不满足正向筛选。",
+      "confidence": 0
+    },
+    {
+      "field": "sourceCode",
+      "value": "open",
+      "sourceUrl": "https://api.github.com/repos/Mugen87/yuka",
+      "quote": "\"private\":false",
+      "evidence": "GitHub官方API确认仓库非私有，contents API实际读取到package与源码文档。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "358132f5ad637769313adb7544ea5c0cc07456b258167a4eda056a6b3ad3fd55",
+      "confidence": 1
+    },
+    {
+      "field": "commercial",
+      "value": "allowed",
+      "sourceUrl": "https://github.com/Mugen87/yuka/blob/master/LICENSE",
+      "quote": "Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:",
+      "evidence": "许可允许use、distribute、sublicense和sell；须保留版权与许可声明。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "2b75427a84abb4a68e331d02d14f61ba7405c0e0bbab2aea8d6afe3803580d83",
+      "confidence": 1
+    },
+    {
+      "field": "repositoryLicense",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/Mugen87/yuka/blob/master/LICENSE",
+      "quote": "The MIT License",
+      "evidence": "已读取官方仓库许可证正文，授权条款与MIT一致。",
+      "scope": "本项目仓库源码与随附文档；不延伸至独立第三方资源或服务。",
+      "sourceSha256": "2b75427a84abb4a68e331d02d14f61ba7405c0e0bbab2aea8d6afe3803580d83",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-04-12",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/yuka-7974df44.md",
+  "registryUrl": "/r/yuka-7974df44.json"
+}
