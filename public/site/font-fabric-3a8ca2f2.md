@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-5e1ab666eec266b3
-revision: 8f2c33c478ab67961b20ba0a32f817d88f90a87c8cf80aaafbc447e03a3c8c33
+releaseId: release-e15797f2f3d25691
+revision: b5d4c52e2a2016210f2486098d1ff6a92fa4bf1f652a4da2c5b2ba11453bd7a5
 status: APPROVED
 name: "Fontfabric · 字体资源"
 description: "比较字族样张，分清免费款式范围"

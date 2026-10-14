@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-5e1ab666eec266b3
-revision: eabf2c906c3965b5d6273cd4c9db6117ceadf62fa19172dbd35bbfc6f7037078
+releaseId: release-e15797f2f3d25691
+revision: d804f0ca7c67ef6fe7f26c94c37ad57867abf676be65ff3487a726a43f862b48
 status: APPROVED
 name: Absurd.design
 description: "挑手绘插画，按具体资源核对授权"

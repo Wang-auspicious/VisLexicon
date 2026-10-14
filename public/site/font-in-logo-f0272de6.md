@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-5e1ab666eec266b3
-revision: 3a4d2a8c7d09fdb6b79a6ad22528dc1aa1d66f5201413d90391818e6e94c892c
+releaseId: release-e15797f2f3d25691
+revision: e10e0a2f11c58653c0b7e32aae80d1a68b756b2e584e0a804012fa03e8b45b64
 status: APPROVED
 name: "Font in Logo"
 description: "比较品牌字形，分清匹配与近似"
