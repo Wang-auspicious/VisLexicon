@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: b2d79d5fccbe9c7737aa2774d0bba09eb618f3781f0fbe1a5fe0b78d6eb48a3f
+releaseId: release-26590379dae6562c
+revision: 4fc7a681c08e878020d8f3477f1d0bf528c9a1a181403d93ad68689b600f1ecc
 status: APPROVED
 name: "FontsArena · 字体资源"
 description: "按字形找字体，再拿同款原文件"

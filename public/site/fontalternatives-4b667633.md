@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: 919a51c8ce07496c6a930adaea61f5a6d66dabf6dcab74796ede172d5720f6b0
+releaseId: release-26590379dae6562c
+revision: d9434253d0ab4bf5bc9d93748a1ab0078c2ec42c5bac74218f4fce1abd76d08a
 status: APPROVED
 name: FontAlternatives
 description: "比较字体替代线索，再核原字体来源"

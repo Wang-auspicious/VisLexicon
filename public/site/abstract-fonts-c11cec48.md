@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: d86dc74c5becbe3c3f81156cc3fce8447f09a2e7d678383be77acdf5b0b25412
+releaseId: release-26590379dae6562c
+revision: 44ed84a9768d3ea28b19a85c642c5a0d7aa9b35218f8931616bc6ae08564800d
 status: APPROVED
 name: "Abstract Fonts"
 description: "先比较字形，再核对单款字体许可"

@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: 1620c484a0ea8ad8cb62139d02862889c34753c23154d2cbb1e4d42fb066fc35
+releaseId: release-26590379dae6562c
+revision: 5584a205ea47ecf25f3c8a14a4733d514428c2ce46ada4abe0bfe98fd1488c9c
 status: APPROVED
 name: "Font Mojo"
 description: "输入同一句文字，比较不同字形"

@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: 0d7cc0f1df88e890768174e83deb65f913e602fa5029bd556b79c5166c051112
+releaseId: release-26590379dae6562c
+revision: c44bc262960a3be76948711966745dea771b92d0f1dfe81c3bd9bd89893ae910
 status: APPROVED
 name: Colormind
 description: "固定起始颜色，再比较页面配色"

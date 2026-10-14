@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: 7c8456c102e0d6180053c3f4f6c1eb59335dc9e8bb45bf01508efd3571503b4f
+releaseId: release-26590379dae6562c
+revision: da69cc13a2209f845ea7a3fa34dc84d3820551e047fcb1e340b94a91232f0f03
 status: APPROVED
 name: FontsWiki
 description: "按类别找字形，再核单款字体来源"

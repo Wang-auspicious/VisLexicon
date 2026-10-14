@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: 8e4844735de84ed4065492c1d5232050019bdda24274acb31346d30cd1337dce
+releaseId: release-26590379dae6562c
+revision: 6b97432653f6d938fad2b6eadfca82cc473a015559899121bc4e987741a5a5be
 status: APPROVED
 name: Zdog
 description: "用圆角图形搭出轻量伪三维模型"

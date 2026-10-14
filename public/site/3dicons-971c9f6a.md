@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: 56c986f316642465e20cc843b5b7f1652194b0afced934a8fddc22090bf9be5e
+releaseId: release-26590379dae6562c
+revision: 3412e041f7bf52b0bb9dbf4e3cd6a25198fbec8fb7e69ef1116f8e28f2054772
 status: APPROVED
 name: 3DICONS
 description: "按颜色和视角挑选立体图标"

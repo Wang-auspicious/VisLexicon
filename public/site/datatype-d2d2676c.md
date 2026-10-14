@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: af4bc3e162d29d3e52ad5031ebad308aa55205917725e50a3f3f48b41bfd4ae3
+releaseId: release-26590379dae6562c
+revision: 8b4bdb88f2965961dedc62df16cb5697eff165c737dde5fdc57a4a6743bf4227
 status: APPROVED
 name: Datatype
 description: "把文本表达式排成行内小图表"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
+releaseId: release-26590379dae6562c
 revision: 64d42fd077fd0575156be10ca4f789aaf3dd62dc13dbc3b9817acbef461e91ed
 status: APPROVED
 name: a11y-dialog

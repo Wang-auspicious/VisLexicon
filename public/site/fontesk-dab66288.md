@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: b1e1f6550b9710bdc41edcbea84c3b0a0bf39af88fc6c51756fd8c4197f6b762
+releaseId: release-26590379dae6562c
+revision: 5729c5f52cf77aafac0bd51f5718dfb13d61bf0d0b8a1d34644363b0afdbef0e
 status: APPROVED
 name: "Fontesk · 字体筛选"
 description: "按样张挑字形，再查原作者许可"

@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: c66912cd3dc99bbf93b526bce665635903b9955c77114f4fb9d9619a9efbe0b9
+releaseId: release-26590379dae6562c
+revision: a1cd000218943c56cc474f232deaa544f56ae0f97196338e51ae9b56e10cb48a
 status: APPROVED
 name: "Envato Elements · Illustrations"
 description: "先按主题挑插画，再看单件预览"

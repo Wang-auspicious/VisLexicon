@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: dbf4aac8fa75b281f4ea597d10dbc30fe7f6f572597a9c97db5f75eca750fcb7
+releaseId: release-26590379dae6562c
+revision: 162f24ecc93fe425172892a5b87d9a513986c11e24ee990b028bae4561020204
 status: APPROVED
 name: "Font Squirrel"
 description: "用字母样张挑字形，再核格式许可"

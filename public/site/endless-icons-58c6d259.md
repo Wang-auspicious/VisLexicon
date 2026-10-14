@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: 37ceb4102bda4d6be0de997c3e45865e56ab02bb3580bccf0d1e82d08a1f9a18
+releaseId: release-26590379dae6562c
+revision: 5756f9f7647946ac2893ad8ef968f10fa79d9e80b91f637493958f4f3569f302
 status: APPROVED
 name: EndlessIcons
 description: "按单图或套组寻找一致的界面符号"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
+releaseId: release-26590379dae6562c
 revision: b6064695ce2ad52ac385cbe37631678e81fb388aa49cdcd84eaf1da6a21236bb
 status: APPROVED
 name: "A11Y Project"

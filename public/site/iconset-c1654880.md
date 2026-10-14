@@ -1,7 +1,7 @@
 ---
 version: "3"
-releaseId: release-e15797f2f3d25691
-revision: 439e5b553b4db51a7161638941aa7a3dee93ec7e1872da99ff6a9348ac7d473d
+releaseId: release-26590379dae6562c
+revision: f226153209a9fbb02f809c37426966a8d2e7cbe5643c4e1e3b69ab6d66082b6b
 status: APPROVED
 name: "Iconset · Free Icons"
 description: "比较图标包样张，再核原包许可"
