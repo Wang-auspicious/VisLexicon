@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-4fe26688373c6e80
+releaseId: release-0eda1d49f2b2ab8e
 revision: 1d10c6ed6a539537e10a8c64bbc4bab500dfe471cdf605ad2a5eeed5873c0092
 status: APPROVED
 name: ColorHexa

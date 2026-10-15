@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-4fe26688373c6e80
+releaseId: release-0eda1d49f2b2ab8e
 revision: 3eb9a8f11c167d232e7e540b3a97aeed655cb74ebab3ecb7022e70e25810cdea
 status: APPROVED
 name: "FX Labs"
