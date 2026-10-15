@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-454bef67ece32f09
+releaseId: release-d4bec47ef3742607
 revision: b2c3e80671bf4e268507fee8b3021e0a9e382b40f0a71352d513cde22129aa69
 status: APPROVED
 name: iconmonstr
