@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-5d46865853640952
+releaseId: release-acc3a35b87da9094
 revision: 407795687d9642250c9ad27833a88da89269220eed9de0b722542bf772f93eb6
 status: APPROVED
 name: FontSpace
