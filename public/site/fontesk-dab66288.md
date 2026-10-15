@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-a7bd5fc279eb8813
+releaseId: release-0d9c61d8cb87507b
 revision: 4240baa13e8a3ef01c547d8d903cf53e64f597fa0825b9ec71ee943713f5e78f
 status: APPROVED
 name: "Fontesk · 字体筛选"
