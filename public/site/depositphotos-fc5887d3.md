@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-a986c32caf190162
+releaseId: release-223ad0124bc83004
 revision: ecf4674d7c628269cd0bf193a59b4c616506eb5245e907e5a39265cb6cc2c9ba
 status: APPROVED
 name: DepositPhotos

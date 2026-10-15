@@ -1,0 +1,310 @@
+{
+  "releaseId": "release-223ad0124bc83004",
+  "revision": "2a6121b695bb8a66b58c3bdfbf91271d1d2b333ac7e5c67627e9fdb0ad4aafc0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-15T12:59:15.217Z",
+  "entryId": "leonardo-fe952dd7",
+  "entityId": "entity-leonardo-fe952dd7",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "leonardocolor.io",
+  "official": {
+    "inputUrl": "https://leonardocolor.io",
+    "finalUrl": "https://leonardocolor.io/",
+    "checkedAt": "2026-10-15T12:24:28.632Z"
+  },
+  "editorial": {
+    "name": "Leonardo",
+    "descriptionZh": "Leonardo提供界面主题、数据可视化色阶和颜色工具箱，用当前色板、色码与示例图帮助起草设计系统配色。官方项目软件按Apache-2.0公开，网页服务价格及输入、导出视觉资产的独立授权未确认，页面比值不构成本次无障碍符合性测量。",
+    "descriptionEn": "Leonardo offers workspaces for interface themes, data-visualization scales and color tools. Its current pages display color codes, example charts and contrast labels. The official project software is Apache-2.0, while service pricing and independent input or output rights remain unconfirmed. These observations do not establish accessibility compliance.",
+    "takeawayZh": "先看顺序色阶与默认灰阶的当前输出",
+    "noteZh": "我们先看首页的主题、色阶和工具箱三个入口，再对照顺序色阶页的七色色码、矩阵、散点和地图示例。主题页当前只是Gray默认六格，标出的是页面给出的对比度数值；此次未改色、上传、导出或测量无障碍符合性。它适合起草设计系统与图表配色，Apache许可只按已核软件范围记录，不能由源码公开推断网页免费，输入与导出资产权利另核。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "evidenceUrl": "https://leonardocolor.io/",
+        "statement": "该具体Entry以Create new theme、Create datavis colors及颜色工具箱为主要入口，核心动作是创作和调整配色，按creation-tools/image-vector-layout-creation分类；对比度及无障碍目标不改变主要交付物，也不证明本次完成审计。"
+      },
+      {
+        "evidenceUrl": "https://leonardocolor.io/scales.html",
+        "statement": "原色阶工作区实际呈现渐变、七色Hex输出与图表示例，主题页另呈现当前默认灰阶；范围是该配色工具，不是D3依赖本身或其他Adobe产品。"
+      }
+    ],
+    "confirmedAt": "2026-10-15T12:24:28.632Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "generate",
+      "edit",
+      "export"
+    ],
+    "media": [
+      "ui",
+      "data-visualization"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ],
+    "technologies": [],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://leonardocolor.io/",
+      "finalUrl": "https://leonardocolor.io/",
+      "title": "Leonardo",
+      "selectionRationale": "先看品牌与三个配色工具入口。",
+      "shot": {
+        "src": "/shots/h2-intake-20261015/leonardo-fe952dd7/identity.webp",
+        "sha256": "54de49b19a620d6ff1a9dac23d9dddca302c1fe40370a4b44a4dce9e0869449b",
+        "width": 1280,
+        "height": 800,
+        "bytes": 34868,
+        "alt": "Leonardo首页主题、色阶和颜色工具箱三个入口及设计系统配色说明。"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://leonardocolor.io/scales.html",
+      "finalUrl": "https://leonardocolor.io/scales.html",
+      "title": "Leonardo",
+      "selectionRationale": "看顺序色阶当前输出与有限可视化示例。",
+      "shot": {
+        "src": "/shots/h2-intake-20261015/leonardo-fe952dd7/breadth.webp",
+        "sha256": "8802d0ad6f676c9512e67e6696961052e4aabd0dc3e353502c0efd4065030ee5",
+        "width": 1280,
+        "height": 800,
+        "bytes": 50410,
+        "alt": "顺序色阶工作区当前七色Hex输出与矩阵、散点和部分世界地图示例。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://leonardocolor.io/theme.html",
+      "finalUrl": "https://leonardocolor.io/theme.html",
+      "title": "Leonardo",
+      "selectionRationale": "看默认Gray六格及实际页面比值标注。",
+      "shot": {
+        "src": "/shots/h2-intake-20261015/leonardo-fe952dd7/proof.webp",
+        "sha256": "82dfd20c366c9b99386c2dc7098058c6cf3f025c134333a2b84b6cf4759af562",
+        "width": 1280,
+        "height": 800,
+        "bytes": 15016,
+        "alt": "Untitled主题中的Gray默认六个灰阶色块及各自页面对比度标注。"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://leonardocolor.io/",
+        "selectionRationale": "先看品牌与三个配色工具入口。",
+        "shot": {
+          "src": "/shots/h2-intake-20261015/leonardo-fe952dd7/identity.webp",
+          "alt": "Leonardo首页主题、色阶和颜色工具箱三个入口及设计系统配色说明。",
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://leonardocolor.io/scales.html",
+        "selectionRationale": "看顺序色阶当前输出与有限可视化示例。",
+        "shot": {
+          "src": "/shots/h2-intake-20261015/leonardo-fe952dd7/breadth.webp",
+          "alt": "顺序色阶工作区当前七色Hex输出与矩阵、散点和部分世界地图示例。",
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://leonardocolor.io/theme.html",
+        "selectionRationale": "看默认Gray六格及实际页面比值标注。",
+        "shot": {
+          "src": "/shots/h2-intake-20261015/leonardo-fe952dd7/proof.webp",
+          "alt": "Untitled主题中的Gray默认六个灰阶色块及各自页面对比度标注。",
+          "width": 1280,
+          "height": 800
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "Nate Baldwin",
+      "sourceUrl": "https://github.com/adobe/leonardo/blob/eb6481da40df27654ac8efa42038007f6fad2431/package.json",
+      "quote": "\"author\": \"Nate Baldwin <nbaldwin@adobe.com>\"",
+      "evidence": "原软件package个人作者，Larry/Frank/Garthcontributors另保留，不把Adobe品牌当个人作者。",
+      "scope": "Leonardo原官方Adobe配色编辑/contrast API项目入口，官网theme/scales及固定仓库UI/contrast软件可核，Apache2仅官方项目代码，D3依赖/第三方字体/用户色板输入和SVG/CSS/token输出的独立版权范围分开；不声称软件license自动涵盖输入作品/Adobe品牌或保证WCAG/颜色视觉障碍/法律合规测量结果。",
+      "sourceSha256": "eaccf0e8668a4343ce464fd3f000c25302edcaee3c0ed5d884749c0e96978897"
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://leonardocolor.io/",
+      "quote": "",
+      "evidence": "原官网AdobeOpenSourceProject/仓库Adobe品牌明确，泛Apache模板没有实际公司copyrightname，已读文件未给法律公司全名。",
+      "scope": "Leonardo原官方Adobe配色编辑/contrast API项目入口，官网theme/scales及固定仓库UI/contrast软件可核，Apache2仅官方项目代码，D3依赖/第三方字体/用户色板输入和SVG/CSS/token输出的独立版权范围分开；不声称软件license自动涵盖输入作品/Adobe品牌或保证WCAG/颜色视觉障碍/法律合规测量结果。"
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/adobe/leonardo",
+      "sourceUrl": "https://api.github.com/repos/adobe/leonardo",
+      "quote": "\"html_url\":\"https://github.com/adobe/leonardo\"",
+      "evidence": "原home真实repo链接、README反链官网，固定commit与非截断树生产目录明。",
+      "scope": "Leonardo原官方Adobe配色编辑/contrast API项目入口，官网theme/scales及固定仓库UI/contrast软件可核，Apache2仅官方项目代码，D3依赖/第三方字体/用户色板输入和SVG/CSS/token输出的独立版权范围分开；不声称软件license自动涵盖输入作品/Adobe品牌或保证WCAG/颜色视觉障碍/法律合规测量结果。",
+      "sourceSha256": "df71207beb4bf72fb8c6b718561257bf928ed0349902844b20c445b08aec2be6"
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/adobe/leonardo/blob/eb6481da40df27654ac8efa42038007f6fad2431/LICENSE",
+      "quote": "Version 2.0, January 2004",
+      "evidence": "固定完整LICENSE+READMElicensing+package同Apache2，完整版权/专利/NOTICE/改文件标记/商标不授等条件已读。 此entry的license指软件代码，不声明用户输入/导出视觉数据授权。",
+      "scope": "Leonardo原官方Adobe配色编辑/contrast API项目入口，官网theme/scales及固定仓库UI/contrast软件可核，Apache2仅官方项目代码，D3依赖/第三方字体/用户色板输入和SVG/CSS/token输出的独立版权范围分开；不声称软件license自动涵盖输入作品/Adobe品牌或保证WCAG/颜色视觉障碍/法律合规测量结果。",
+      "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://leonardocolor.io/",
+      "quote": "",
+      "evidence": "原home/完整README/package未明确服务/源码交易价格，Apache授权nocharge/openSource/publicRepo不作为独立价格声明。",
+      "scope": "Leonardo原官方Adobe配色编辑/contrast API项目入口，官网theme/scales及固定仓库UI/contrast软件可核，Apache2仅官方项目代码，D3依赖/第三方字体/用户色板输入和SVG/CSS/token输出的独立版权范围分开；不声称软件license自动涵盖输入作品/Adobe品牌或保证WCAG/颜色视觉障碍/法律合规测量结果。"
+    },
+    {
+      "field": "sourceCode",
+      "value": "open",
+      "sourceUrl": "https://api.github.com/repos/adobe/leonardo",
+      "quote": "\"private\":false",
+      "evidence": "官方UI/contrast算法源仓库公开，非截断tree、README具体packages/contrast-colors与UI开发、package验证；packageprivate:true仅禁发布该根包，不是repo私有。",
+      "scope": "Leonardo原官方Adobe配色编辑/contrast API项目入口，官网theme/scales及固定仓库UI/contrast软件可核，Apache2仅官方项目代码，D3依赖/第三方字体/用户色板输入和SVG/CSS/token输出的独立版权范围分开；不声称软件license自动涵盖输入作品/Adobe品牌或保证WCAG/颜色视觉障碍/法律合规测量结果。",
+      "sourceSha256": "df71207beb4bf72fb8c6b718561257bf928ed0349902844b20c445b08aec2be6"
+    },
+    {
+      "field": "commercial",
+      "value": "unknown",
+      "sourceUrl": "https://leonardocolor.io/",
+      "quote": "",
+      "evidence": "软件Apache普通商业可核，但entry还含输入/导出色板资产，未核输出独立版权许可；仅纯软件offer提供商用。",
+      "scope": "Leonardo原官方Adobe配色编辑/contrast API项目入口，官网theme/scales及固定仓库UI/contrast软件可核，Apache2仅官方项目代码，D3依赖/第三方字体/用户色板输入和SVG/CSS/token输出的独立版权范围分开；不声称软件license自动涵盖输入作品/Adobe品牌或保证WCAG/颜色视觉障碍/法律合规测量结果。"
+    },
+    {
+      "field": "repositoryLicense",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://github.com/adobe/leonardo/blob/eb6481da40df27654ac8efa42038007f6fad2431/LICENSE",
+      "quote": "Version 2.0, January 2004",
+      "evidence": "固定完整LICENSE+READMElicensing+package同Apache2，完整版权/专利/NOTICE/改文件标记/商标不授等条件已读。",
+      "scope": "仅官方adobe/leonardo固定commit的项目软件/UI与contrast-colors代码，Apache2（不同外部依赖各自许可）；分发附LICENSE、版权/归属及有NOTICE时保留、改文件标记变动，专利许可诉讼终止/无品牌商标授权。不是用户上传输入与导出视觉资产版权offer，未build/npm安装。",
+      "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ],
+  "offers": [
+    {
+      "id": "leonardo-official-software-project-source",
+      "name": "Leonardo官方项目软件源码",
+      "scope": "仅官方adobe/leonardo固定commit的项目软件/UI与contrast-colors代码，Apache2（不同外部依赖各自许可）；分发附LICENSE、版权/归属及有NOTICE时保留、改文件标记变动，专利许可诉讼终止/无品牌商标授权。不是用户上传输入与导出视觉资产版权offer，未build/npm安装。",
+      "pricing": {
+        "value": "unknown",
+        "sourceUrl": "https://leonardocolor.io/",
+        "quote": "",
+        "evidence": "原home/完整README/package未明确服务/源码交易价格，Apache授权nocharge/openSource/publicRepo不作为独立价格声明。",
+        "scope": "仅官方adobe/leonardo固定commit的项目软件/UI与contrast-colors代码，Apache2（不同外部依赖各自许可）；分发附LICENSE、版权/归属及有NOTICE时保留、改文件标记变动，专利许可诉讼终止/无品牌商标授权。不是用户上传输入与导出视觉资产版权offer，未build/npm安装。"
+      },
+      "sourceCode": {
+        "value": "open",
+        "sourceUrl": "https://api.github.com/repos/adobe/leonardo",
+        "quote": "\"private\":false",
+        "evidence": "官方UI/contrast算法源仓库公开，非截断tree、README具体packages/contrast-colors与UI开发、package验证；packageprivate:true仅禁发布该根包，不是repo私有。",
+        "scope": "仅官方adobe/leonardo固定commit的项目软件/UI与contrast-colors代码，Apache2（不同外部依赖各自许可）；分发附LICENSE、版权/归属及有NOTICE时保留、改文件标记变动，专利许可诉讼终止/无品牌商标授权。不是用户上传输入与导出视觉资产版权offer，未build/npm安装。",
+        "sourceSha256": "df71207beb4bf72fb8c6b718561257bf928ed0349902844b20c445b08aec2be6"
+      },
+      "license": {
+        "value": "Apache-2.0",
+        "sourceUrl": "https://github.com/adobe/leonardo/blob/eb6481da40df27654ac8efa42038007f6fad2431/LICENSE",
+        "quote": "Version 2.0, January 2004",
+        "evidence": "固定完整LICENSE+READMElicensing+package同Apache2，完整版权/专利/NOTICE/改文件标记/商标不授等条件已读。",
+        "scope": "仅官方adobe/leonardo固定commit的项目软件/UI与contrast-colors代码，Apache2（不同外部依赖各自许可）；分发附LICENSE、版权/归属及有NOTICE时保留、改文件标记变动，专利许可诉讼终止/无品牌商标授权。不是用户上传输入与导出视觉资产版权offer，未build/npm安装。",
+        "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      "commercial": {
+        "value": "allowed",
+        "sourceUrl": "https://github.com/adobe/leonardo/blob/eb6481da40df27654ac8efa42038007f6fad2431/LICENSE",
+        "quote": "use, offer to sell, sell, import, and otherwise transfer the Work",
+        "evidence": "完整Apache允许官方软件合规商业复制/派生/分发及特定专利授权，须保留License/notice、改动标记；不授品牌或全部依赖/输入资产。",
+        "scope": "仅官方adobe/leonardo固定commit的项目软件/UI与contrast-colors代码，Apache2（不同外部依赖各自许可）；分发附LICENSE、版权/归属及有NOTICE时保留、改文件标记变动，专利许可诉讼终止/无品牌商标授权。不是用户上传输入与导出视觉资产版权offer，未build/npm安装。",
+        "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      "repositoryLicense": {
+        "value": "Apache-2.0",
+        "sourceUrl": "https://github.com/adobe/leonardo/blob/eb6481da40df27654ac8efa42038007f6fad2431/LICENSE",
+        "quote": "Version 2.0, January 2004",
+        "evidence": "固定完整LICENSE+READMElicensing+package同Apache2，完整版权/专利/NOTICE/改文件标记/商标不授等条件已读。",
+        "scope": "仅官方adobe/leonardo固定commit的项目软件/UI与contrast-colors代码，Apache2（不同外部依赖各自许可）；分发附LICENSE、版权/归属及有NOTICE时保留、改文件标记变动，专利许可诉讼终止/无品牌商标授权。不是用户上传输入与导出视觉资产版权offer，未build/npm安装。",
+        "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-04-13",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/leonardo-fe952dd7.md",
+  "registryUrl": "/r/leonardo-fe952dd7.json"
+}
