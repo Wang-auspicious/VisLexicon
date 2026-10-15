@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-7cb14f20cf350150
+releaseId: release-708e1e9a8ee54eaf
 revision: 37a57924b89b3e17eec0bfcbf9c88b0ce71da8911e33a77ce5ec233599bdd5d4
 status: APPROVED
 name: "Design Seeds"
