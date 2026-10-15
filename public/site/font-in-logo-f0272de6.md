@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-d4bec47ef3742607
+releaseId: release-7cb14f20cf350150
 revision: d0827e661ad2950d49ffbc97d90a439cb276650273aa7321f88da8cceb14853b
 status: APPROVED
 name: "Font in Logo"

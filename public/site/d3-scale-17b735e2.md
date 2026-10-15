@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-d4bec47ef3742607
+releaseId: release-7cb14f20cf350150
 revision: 57ccc3344dd98426b7921fe23aee5488968644b697b35bbf45ddb2579d460ceb
 status: APPROVED
 name: d3-scale
