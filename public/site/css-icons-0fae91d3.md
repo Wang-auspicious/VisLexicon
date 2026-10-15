@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-668605336769dc13
+releaseId: release-ae944e4c5c52297c
 revision: 4d1ba47205fafecd1610a70e33a7726f73263ff550bc8e19beff8288edc11622
 status: APPROVED
 name: "CSS Icons"

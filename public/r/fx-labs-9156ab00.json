@@ -1,0 +1,299 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-ae944e4c5c52297c",
+  "revision": "3eb9a8f11c167d232e7e540b3a97aeed655cb74ebab3ecb7022e70e25810cdea",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-15T10:15:13.276Z",
+  "entryId": "fx-labs-9156ab00",
+  "entityId": "entity-fx-labs-9156ab00",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://fxlabs.app",
+    "finalUrl": "https://fxlabs.app/",
+    "checkedAt": "2026-10-15T10:00:27.166Z"
+  },
+  "editorial": {
+    "name": "FX Labs",
+    "descriptionZh": "FX Labs 是在浏览器中调整烟雾、火焰等图像效果的工具，工作台提供参数控件、效果预览与 JPEG 导出入口。定价区分个人免费与付费 Pro 方案，免费商用条件与 Terms 表述有冲突，输出权限和平台程序源码须分开判断。",
+    "descriptionEn": "FX Labs provides browser-based editors for smoke, fire and other image effects, with parameter controls and JPEG export. Free personal and paid Pro plans differ in export formats and permissions; broader terms conflict with free-plan commercial restrictions, so those rights remain unresolved.",
+    "takeawayZh": "比较烟雾火焰效果，按方案核对导出与权限",
+    "noteZh": "我们在首页确认用途，再看 Smoke 与 Fire 两个工作台：白烟和火苗都已渲染，左侧参数与导出按钮清楚可见。顶部列出七种效果入口，但本次只核烟雾和火焰这两种画面，没有拖滑杆或下载文件。定价页把免费版限于个人项目，条款又对生成图给出较宽商用表述；免费商用权限保留未知，Pro 权利另看对应方案。",
+    "recommendation": null,
+    "pricing": "freemium",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "evidenceUrl": "https://fxlabs.app/smoke",
+        "statement": "Smoke工作台实际呈现白烟、形状参数及JPEG导出入口；Fire页则有另一套参数和真实火苗图形，主要交付物是可调整的图像效果，不是程序源码或视频编辑工程。"
+      },
+      {
+        "evidenceUrl": "https://fxlabs.app/terms",
+        "statement": "原条款说明在浏览器内用WebGL渲染；图像输出、平台程序与Pro社区库的权利必须分开。"
+      }
+    ],
+    "confirmedAt": "2026-10-15T10:00:27.166Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "image"
+    ],
+    "actions": [
+      "browse",
+      "generate",
+      "edit",
+      "export"
+    ],
+    "media": [
+      "image"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "webgl"
+    ],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "content-creator"
+    ],
+    "access": [
+      "freemium"
+    ],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://fxlabs.app/",
+      "finalUrl": "https://fxlabs.app/",
+      "title": "FX Labs - Free Online VFX & Overlay Generator",
+      "selectionRationale": "首页品牌及烟雾火焰等生成器用途说明实见。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/h2-intake-20261015/fx-labs-9156ab00/identity.webp",
+        "sha256": "0492c30162d8eb1fc9330ad178bcd1b223f51b91769b7fb3f71caeb6d7fd7fd2",
+        "width": 1280,
+        "height": 800,
+        "bytes": 25422,
+        "alt": "黑底首页首屏，顶部导航、中央 FX Labs 标题与两个按钮"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://fxlabs.app/smoke",
+      "finalUrl": "https://fxlabs.app/smoke",
+      "title": "Smoke Generator - Realistic Smoke Overlay Effects (PNG) | FX Labs",
+      "selectionRationale": "看顶部七种效果名称目录与Smoke单项工作台。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/h2-intake-20261015/fx-labs-9156ab00/breadth.webp",
+        "sha256": "5bb4087cd0e20745fc0b43dafa210f0034dcdbfa1fb8f1538c6abe79fe4a08aa",
+        "width": 1280,
+        "height": 800,
+        "bytes": 28688,
+        "alt": "Smoke 生成器界面，左侧样式与形状滑杆，右侧黑底白色烟雾"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://fxlabs.app/fire",
+      "finalUrl": "https://fxlabs.app/fire",
+      "title": "Fire Generator - Realistic Flame & Campfire Effects (PNG) | FX Labs",
+      "selectionRationale": "看Fire实际火苗与参数；未操作导出或付款。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/h2-intake-20261015/fx-labs-9156ab00/proof.webp",
+        "sha256": "df1a281c297a941fdb71d7c14f0027431c3a6af4b5e264b52896c369d86589d8",
+        "width": 1280,
+        "height": 800,
+        "bytes": 32430,
+        "alt": "Fire 生成器界面，左侧火焰形状与湍流滑杆，右侧橙黄色火焰"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "unknown",
+      "sourceUrl": "https://fxlabs.app/terms",
+      "quote": "",
+      "evidence": "官网/Terms仅品牌FX Labs与support地址，没有创作者姓名。",
+      "scope": "FX Labs浏览器VFX生成/导出服务，Free个人JPEG与Pro商业透明PNG按不同offer；Terms全部输出商业许可与Pricing个人限定发生张力，不承诺Free商业/4K透明导出；生成器实际渲染与下载未经验证。"
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://fxlabs.app/terms",
+      "quote": "",
+      "evidence": "Terms品牌名称不构成法律组织全名，support@fxlabs.art亦不能证明运营实体。",
+      "scope": "FX Labs浏览器VFX生成/导出服务，Free个人JPEG与Pro商业透明PNG按不同offer；Terms全部输出商业许可与Pricing个人限定发生张力，不承诺Free商业/4K透明导出；生成器实际渲染与下载未经验证。"
+    },
+    {
+      "field": "repository",
+      "value": "unknown",
+      "sourceUrl": "https://fxlabs.app/",
+      "quote": "",
+      "evidence": "官网/Terms未给已核官方软件源码仓库。",
+      "scope": "FX Labs浏览器VFX生成/导出服务，Free个人JPEG与Pro商业透明PNG按不同offer；Terms全部输出商业许可与Pricing个人限定发生张力，不承诺Free商业/4K透明导出；生成器实际渲染与下载未经验证。"
+    },
+    {
+      "field": "license",
+      "value": "custom",
+      "sourceUrl": "https://fxlabs.app/terms",
+      "quote": "You retain full ownership of all effects and images you generate using FX Labs.",
+      "evidence": "完整Terms包含生成输出权属、公开社区预览许可、订阅与禁止用途；Pricing个人Free/商业Pro不同，不能把Terms泛化为已核Free商业权利。",
+      "scope": "FX Labs浏览器VFX生成/导出服务，Free个人JPEG与Pro商业透明PNG按不同offer；Terms全部输出商业许可与Pricing个人限定发生张力，不承诺Free商业/4K透明导出；生成器实际渲染与下载未经验证。",
+      "sourceSha256": "45dc4b270c10ac8b578dc37e540fbd2c77d1aa5e25913531ffa2116a7134953c"
+    },
+    {
+      "field": "pricing",
+      "value": "freemium",
+      "quote": "FX Labs is free forever for personal use. Upgrade to Pro for commercial exports and premium features.",
+      "sourceUrl": "https://fxlabs.app/pricing",
+      "sourceSha256": "986a2d322179b5758ba0078e4376b941eb4218ab417a93996bb8c57f56226f24",
+      "evidence": "Pricing明确当前Free个人0美元与Pro商业月付3美元两层；各offer价格与商业权利分开。",
+      "scope": "FX Labs浏览器VFX生成/导出服务，Free个人JPEG与Pro商业透明PNG按不同offer；Terms全部输出商业许可与Pricing个人限定发生张力，不承诺Free商业/4K透明导出；生成器实际渲染与下载未经验证。"
+    },
+    {
+      "field": "sourceCode",
+      "value": "unknown",
+      "sourceUrl": "https://fxlabs.app/terms",
+      "quote": "",
+      "evidence": "WebGL在浏览器渲染及PNG/JPEG可导出不等于软件源码公开；未核仓库。",
+      "scope": "FX Labs浏览器VFX生成/导出服务，Free个人JPEG与Pro商业透明PNG按不同offer；Terms全部输出商业许可与Pricing个人限定发生张力，不承诺Free商业/4K透明导出；生成器实际渲染与下载未经验证。"
+    },
+    {
+      "field": "commercial",
+      "value": "unknown",
+      "sourceUrl": "https://fxlabs.app/pricing",
+      "quote": "",
+      "evidence": "Pricing将Free限个人/Pro商用，而Terms4泛称全部输出个人与商业。保留矛盾，整体与Free商业unknown，Pro单offer两者一致可核。",
+      "scope": "FX Labs浏览器VFX生成/导出服务，Free个人JPEG与Pro商业透明PNG按不同offer；Terms全部输出商业许可与Pricing个人限定发生张力，不承诺Free商业/4K透明导出；生成器实际渲染与下载未经验证。"
+    }
+  ],
+  "offers": [
+    {
+      "id": "fx-labs-free-personal",
+      "name": "FX Labs Free个人项目",
+      "scope": "FX Labs当前Free个人项目offer：0美元，JPEG最大1200px/黑底；不承诺透明PNG、社区库/商业许可，实际生成与下载未核。",
+      "pricing": {
+        "value": "free",
+        "sourceUrl": "https://fxlabs.app/pricing",
+        "quote": "$0</span><span class=\"text-white/40 text-sm\"> /month",
+        "evidence": "本次原HTML对应Free价格0美元/月与JPEG1200px、黑背景、personal use license。",
+        "scope": "FX Labs当前Free个人项目offer：0美元，JPEG最大1200px/黑底；不承诺透明PNG、社区库/商业许可，实际生成与下载未核。",
+        "sourceSha256": "986a2d322179b5758ba0078e4376b941eb4218ab417a93996bb8c57f56226f24"
+      },
+      "sourceCode": {
+        "value": "unknown",
+        "sourceUrl": "https://fxlabs.app/",
+        "quote": "",
+        "evidence": "未核软件源码交付。",
+        "scope": "FX Labs当前Free个人项目offer：0美元，JPEG最大1200px/黑底；不承诺透明PNG、社区库/商业许可，实际生成与下载未核。"
+      },
+      "license": {
+        "value": "custom",
+        "sourceUrl": "https://fxlabs.app/terms",
+        "quote": "You retain full ownership of all effects and images you generate using FX Labs.",
+        "evidence": "完整Terms包含生成输出权属、公开社区预览许可、订阅与禁止用途；Pricing个人Free/商业Pro不同，不能把Terms泛化为已核Free商业权利。",
+        "scope": "FX Labs当前Free个人项目offer：0美元，JPEG最大1200px/黑底；不承诺透明PNG、社区库/商业许可，实际生成与下载未核。",
+        "sourceSha256": "45dc4b270c10ac8b578dc37e540fbd2c77d1aa5e25913531ffa2116a7134953c"
+      },
+      "commercial": {
+        "value": "unknown",
+        "sourceUrl": "https://fxlabs.app/pricing",
+        "quote": "",
+        "evidence": "Pricing个人限定与Terms全部输出可商用矛盾，未核解释，不给Free allowed。",
+        "scope": "FX Labs当前Free个人项目offer：0美元，JPEG最大1200px/黑底；不承诺透明PNG、社区库/商业许可，实际生成与下载未核。"
+      },
+      "repositoryLicense": {
+        "value": "unknown",
+        "sourceUrl": "https://fxlabs.app/",
+        "quote": "",
+        "evidence": "服务条款不当软件代码许可。",
+        "scope": "FX Labs当前Free个人项目offer：0美元，JPEG最大1200px/黑底；不承诺透明PNG、社区库/商业许可，实际生成与下载未核。"
+      }
+    },
+    {
+      "id": "fx-labs-pro-monthly",
+      "name": "FX Labs Pro月付",
+      "scope": "FX Labs本次静态Pricing显示的Pro月付offer：3美元/月，透明PNG最大6000px、社区库/存预设、商业许可；Terms monthlyStripe可随时取消。未登录/付费/验证渲染导出；不推年度优惠具体价。",
+      "pricing": {
+        "value": "paid",
+        "sourceUrl": "https://fxlabs.app/pricing",
+        "quote": "$3</span><span class=\"text-white/40 text-sm\"> /month",
+        "evidence": "当前静态月度选项显示3美元/月；年份优惠未读取交互，不猜金额。",
+        "scope": "FX Labs本次静态Pricing显示的Pro月付offer：3美元/月，透明PNG最大6000px、社区库/存预设、商业许可；Terms monthlyStripe可随时取消。未登录/付费/验证渲染导出；不推年度优惠具体价。",
+        "sourceSha256": "986a2d322179b5758ba0078e4376b941eb4218ab417a93996bb8c57f56226f24"
+      },
+      "sourceCode": {
+        "value": "unknown",
+        "sourceUrl": "https://fxlabs.app/",
+        "quote": "",
+        "evidence": "Pro导出图像不等于软件源码交付。",
+        "scope": "FX Labs本次静态Pricing显示的Pro月付offer：3美元/月，透明PNG最大6000px、社区库/存预设、商业许可；Terms monthlyStripe可随时取消。未登录/付费/验证渲染导出；不推年度优惠具体价。"
+      },
+      "license": {
+        "value": "custom",
+        "sourceUrl": "https://fxlabs.app/terms",
+        "quote": "You retain full ownership of all effects and images you generate using FX Labs.",
+        "evidence": "完整Terms包含生成输出权属、公开社区预览许可、订阅与禁止用途；Pricing个人Free/商业Pro不同，不能把Terms泛化为已核Free商业权利。",
+        "scope": "FX Labs本次静态Pricing显示的Pro月付offer：3美元/月，透明PNG最大6000px、社区库/存预设、商业许可；Terms monthlyStripe可随时取消。未登录/付费/验证渲染导出；不推年度优惠具体价。",
+        "sourceSha256": "45dc4b270c10ac8b578dc37e540fbd2c77d1aa5e25913531ffa2116a7134953c"
+      },
+      "commercial": {
+        "value": "allowed",
+        "sourceUrl": "https://fxlabs.app/pricing",
+        "quote": "Commercial use license",
+        "evidence": "Pricing明确Pro商业许可，与Terms4输出个人/商业授权一致；非法/侵犯第三方权利内容仍禁、导出低清预览可公开社区。",
+        "scope": "FX Labs本次静态Pricing显示的Pro月付offer：3美元/月，透明PNG最大6000px、社区库/存预设、商业许可；Terms monthlyStripe可随时取消。未登录/付费/验证渲染导出；不推年度优惠具体价。",
+        "sourceSha256": "986a2d322179b5758ba0078e4376b941eb4218ab417a93996bb8c57f56226f24"
+      },
+      "repositoryLicense": {
+        "value": "unknown",
+        "sourceUrl": "https://fxlabs.app/",
+        "quote": "",
+        "evidence": "服务条款不当软件代码许可。",
+        "scope": "FX Labs本次静态Pricing显示的Pro月付offer：3美元/月，透明PNG最大6000px、社区库/存预设、商业许可；Terms monthlyStripe可随时取消。未登录/付费/验证渲染导出；不推年度优惠具体价。"
+      }
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。custom：完整Terms包含生成输出权属、公开社区预览许可、订阅与禁止用途；Pricing个人Free/商业Pro不同，不能把Terms泛化为已核Free商业权利。",
+      "存在付费层：freemium。"
+    ],
+    "recheckAfter": "2027-04-13",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/fx-labs-9156ab00",
+    "designMdUrl": "https://vislexicon.com/site/fx-labs-9156ab00.md",
+    "checkedAt": "2026-10-15T10:00:27.166Z",
+    "license": "custom"
+  }
+}
