@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-cf079adb0eb0dce5
+releaseId: release-87d5c282008c59a8
 revision: 080ac00b2af3d2d5ffefa174b21cac3e813155d2c0416f13003234518d9efdec
 status: APPROVED
 name: IconsDB

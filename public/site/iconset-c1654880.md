@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-cf079adb0eb0dce5
+releaseId: release-87d5c282008c59a8
 revision: 34599b1eacca29dd2651c3e63bc6181bcb86fdb9de0e4dfde06fac361b4b134e
 status: APPROVED
 name: "Iconset · Free Icons"
