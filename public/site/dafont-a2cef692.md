@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-a6b79c57ca05c624
+releaseId: release-bea1f4733bcf0e1b
 revision: a3fc7fc8c8d0a0c82daae4bdbf5016d1adc0d2a1bbcfe08855767d5e00eac2ff
 status: APPROVED
 name: DaFont
