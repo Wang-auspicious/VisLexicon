@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-0d9c61d8cb87507b
+releaseId: release-b473d7cdc7f45d06
 revision: d7c3fc9296170b36493e25acbe2efec7ed1e26e0af849c8f2c0a517419f49258
 status: APPROVED
 name: "Icon Search"
