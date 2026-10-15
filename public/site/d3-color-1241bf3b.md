@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-2e983f5f5db53302
+releaseId: release-a986c32caf190162
 revision: 3da23b583221113e3aa65f55d032fa132242af79dfdc6cd061106a5218dcaf96
 status: APPROVED
 name: d3-color

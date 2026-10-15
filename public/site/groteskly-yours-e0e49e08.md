@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-2e983f5f5db53302
+releaseId: release-a986c32caf190162
 revision: be6f6ccc8ad8ef30d3f0331c3099e1b2dc0f5c4dc379b07d63cdb1b4239bb5ab
 status: APPROVED
 name: "Groteskly Yours Studio"
