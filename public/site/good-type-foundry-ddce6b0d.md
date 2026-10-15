@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-b473d7cdc7f45d06
+releaseId: release-5d46865853640952
 revision: 6c1e5c07f1f8f63b26f26703773ee7d1d4e4c2a8a054d1e2022fbfeada34075f
 status: APPROVED
 name: "Good Type Foundry"

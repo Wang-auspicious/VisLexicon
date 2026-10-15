@@ -1,0 +1,269 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-5d46865853640952",
+  "revision": "57ccc3344dd98426b7921fe23aee5488968644b697b35bbf45ddb2579d460ceb",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-15T08:19:22.303Z",
+  "entryId": "d3-scale-17b735e2",
+  "entityId": "entity-d3",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://d3js.org/d3-scale",
+    "finalUrl": "https://d3js.org/d3-scale",
+    "checkedAt": "2026-10-15T06:47:19.893Z"
+  },
+  "editorial": {
+    "name": "d3-scale",
+    "descriptionZh": "d3-scale 是 D3 中负责数据到视觉映射的比例尺模块，文档覆盖线性、时间、幂、对数、序数、色带等类型及 ticks、tickFormat、nice 等方法，源码以 ISC 许可在 GitHub 开源。",
+    "descriptionEn": "d3-scale is D3's scale module mapping data to visual representation, covering linear, time, pow, log, ordinal, band and other scales with ticks, tickFormat and nice methods; its source is open-source on GitHub under ISC.",
+    "takeawayZh": "查数据到坐标、颜色与类别位置的比例尺",
+    "noteZh": "我们先看模块首页的多类比例尺入口，再到Linear页核域、范围和逆映射API；Band页有分类域与比例尺图示。实际把Domain从六项改为三项后，原SVG重排成a、b、c三段。适合前端查坐标和类别位置映射，这次实测只限官网该控件；包安装和其他比例尺未测试。ISC分发须保留版权与许可，价格仍unknown。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "evidenceUrl": "https://d3js.org/d3-scale/linear",
+        "statement": "独立比例尺包的Linear页说明量化数据域到范围的连续映射，并列出逆映射、域、范围等API，只将该页可见子集作为本包范围证据。"
+      },
+      {
+        "evidenceUrl": "https://d3js.org/d3-scale/band",
+        "statement": "本包官方Band页的Domain原生输入从六项变为三项后，真实SVG随之重排成a、b、c三段，具体证明分类域到位置的比例尺运行；不借D3总首页或兄弟模块。"
+      }
+    ],
+    "confirmedAt": "2026-10-15T06:47:19.893Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "search"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "api",
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "ISC"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://d3js.org/d3-scale",
+      "finalUrl": "https://d3js.org/d3-scale",
+      "title": "d3-scale | D3 by Observable",
+      "selectionRationale": "先看总览开头定义，再往下找 Linear、Time 等入口",
+      "shot": {
+        "src": "https://vislexicon.com/shots/h2-intake-20261015/d3-scale-17b735e2/identity.webp",
+        "sha256": "5011028e74c106ef9b451cbc23ac06baba43cda233b1a665e4b40a8648d3a115",
+        "width": 1280,
+        "height": 800,
+        "bytes": 82182,
+        "alt": "d3-scale 总览页正文与左侧导航，列出 Linear 等比例尺链接"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://d3js.org/d3-scale/linear",
+      "finalUrl": "https://d3js.org/d3-scale/linear",
+      "title": "Linear scales | D3 by Observable",
+      "selectionRationale": "看本包Linear的域、范围、逆映射及API目录。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/h2-intake-20261015/d3-scale-17b735e2/breadth-native-728e710bbd3a.webp",
+        "sha256": "728e710bbd3ab41856a7cbc8fb9f0c63591107cfc4e9cc7738287ecad1709fe7",
+        "width": 1280,
+        "height": 800,
+        "bytes": 33866,
+        "alt": "d3-scale自身Linear scales页的域到范围说明、scaleLinear示例和右侧线性比例尺API目录。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://d3js.org/d3-scale/band",
+      "finalUrl": "https://d3js.org/d3-scale/band",
+      "title": "Band scales | D3 by Observable",
+      "selectionRationale": "原生改Domain为a,b,c，核原SVG由六段变三段。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/h2-intake-20261015/d3-scale-17b735e2/proof-native-d6bc787c0fd1.webp",
+        "sha256": "d6bc787c0fd1071d97e39eed314e8b77d0bf519a48b84fbb1fa6299967a7b223",
+        "width": 1280,
+        "height": 800,
+        "bytes": 29094,
+        "alt": "d3-scale Band页Domain输入为a,b,c，原生SVG显示a、b、c三段区间，上下保留具体API示例。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Mike Bostock",
+      "sourceUrl": "https://github.com/d3/d3-scale/blob/d6904a4bde09e16005e0ad8ca3e25b10ce54fa0d/package.json",
+      "quote": "\"name\": \"Mike Bostock\"",
+      "evidence": "包author字段与完整LICENSE版权署名一致。",
+      "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "75f7dfe869b2e6d1cbecd380f939f218ca046a26313c4e623aa52d6352a9b51b"
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://d3js.org/d3-scale",
+      "quote": "",
+      "evidence": "仓库拥有者是组织账户，但已读官网、元数据和package未核法律组织名；文档页Observable版权不等于这个独立包的法律组织。",
+      "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。"
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/d3/d3-scale",
+      "sourceUrl": "https://api.github.com/repos/d3/d3-scale",
+      "quote": "\"html_url\":\"https://github.com/d3/d3-scale\"",
+      "evidence": "官网源码链接/包repository与官方API稳定仓库身份、包名和homepage相互对应。",
+      "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "4e77d40025370ae941377a480caefde7be0fb91ccc47b5086e664ac9c54df31e"
+    },
+    {
+      "field": "license",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/d3/d3-scale/blob/d6904a4bde09e16005e0ad8ca3e25b10ce54fa0d/LICENSE",
+      "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.",
+      "evidence": "固定commit的完整许可原文与package.json的ISC声明一致，分发须保留版权和许可。",
+      "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://d3js.org/d3-scale",
+      "quote": "",
+      "evidence": "官网与包文档提供公开安装/下载；已读原文未找到独立价格声明，不把许可证with or without fee/free of charge推为价格。",
+      "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。"
+    },
+    {
+      "field": "sourceCode",
+      "value": "open",
+      "sourceUrl": "https://api.github.com/repos/d3/d3-scale",
+      "quote": "\"private\":false",
+      "evidence": "官方API确认仓库非私有，本次实际读取固定commit的package、README和完整LICENSE。",
+      "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "4e77d40025370ae941377a480caefde7be0fb91ccc47b5086e664ac9c54df31e"
+    },
+    {
+      "field": "commercial",
+      "value": "allowed",
+      "sourceUrl": "https://github.com/d3/d3-scale/blob/d6904a4bde09e16005e0ad8ca3e25b10ce54fa0d/LICENSE",
+      "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted",
+      "evidence": "ISC允许该包源码任意用途，包括商业用途；分发保留版权与许可。",
+      "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "field": "repositoryLicense",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/d3/d3-scale/blob/d6904a4bde09e16005e0ad8ca3e25b10ce54fa0d/LICENSE",
+      "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.",
+      "evidence": "固定commit的完整许可原文与package.json的ISC声明一致，分发须保留版权和许可。",
+      "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    }
+  ],
+  "offers": [
+    {
+      "id": "d3-scale-official-package",
+      "name": "d3-scale官方软件包",
+      "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "pricing": {
+        "value": "unknown",
+        "sourceUrl": "https://d3js.org/d3-scale",
+        "quote": "",
+        "evidence": "官网与包文档提供公开安装/下载；已读原文未找到独立价格声明，不把许可证with or without fee/free of charge推为价格。",
+        "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。"
+      },
+      "sourceCode": {
+        "value": "open",
+        "sourceUrl": "https://api.github.com/repos/d3/d3-scale",
+        "quote": "\"private\":false",
+        "evidence": "官方API确认仓库非私有，本次实际读取固定commit的package、README和完整LICENSE。",
+        "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+        "sourceSha256": "4e77d40025370ae941377a480caefde7be0fb91ccc47b5086e664ac9c54df31e"
+      },
+      "license": {
+        "value": "ISC",
+        "sourceUrl": "https://github.com/d3/d3-scale/blob/d6904a4bde09e16005e0ad8ca3e25b10ce54fa0d/LICENSE",
+        "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.",
+        "evidence": "固定commit的完整许可原文与package.json的ISC声明一致，分发须保留版权和许可。",
+        "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+        "sourceSha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+      },
+      "commercial": {
+        "value": "allowed",
+        "sourceUrl": "https://github.com/d3/d3-scale/blob/d6904a4bde09e16005e0ad8ca3e25b10ce54fa0d/LICENSE",
+        "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted",
+        "evidence": "ISC允许该包源码任意用途，包括商业用途；分发保留版权与许可。",
+        "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+        "sourceSha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+      },
+      "repositoryLicense": {
+        "value": "ISC",
+        "sourceUrl": "https://github.com/d3/d3-scale/blob/d6904a4bde09e16005e0ad8ca3e25b10ce54fa0d/LICENSE",
+        "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.",
+        "evidence": "固定commit的完整许可原文与package.json的ISC声明一致，分发须保留版权和许可。",
+        "scope": "d3-scale独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+        "sourceSha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+      }
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-04-13",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/d3-scale-17b735e2",
+    "designMdUrl": "https://vislexicon.com/site/d3-scale-17b735e2.md",
+    "checkedAt": "2026-10-15T06:47:19.893Z",
+    "license": "ISC"
+  }
+}
