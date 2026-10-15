@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-bea1f4733bcf0e1b
+releaseId: release-c477be641154aa0c
 revision: 9f0b2f14c240f39fd287937a151bb7a59f5040adf56581082783eb9b69a1af35
 status: APPROVED
 name: "IAN Media Library"

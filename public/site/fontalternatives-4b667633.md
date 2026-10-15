@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-bea1f4733bcf0e1b
+releaseId: release-c477be641154aa0c
 revision: 2add05294e11f5d80d476733c62f8ba41670a02bccc529a9b6b4936cd6889c14
 status: APPROVED
 name: FontAlternatives

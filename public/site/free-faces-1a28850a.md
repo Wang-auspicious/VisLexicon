@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-bea1f4733bcf0e1b
+releaseId: release-c477be641154aa0c
 revision: 8f152c184a982f79c8ee829c79dc20f1763438ec56caddea01b4cea4b7e654a4
 status: APPROVED
 name: "Free Faces"

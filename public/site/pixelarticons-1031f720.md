@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-bea1f4733bcf0e1b
+releaseId: release-c477be641154aa0c
 revision: 1f629b95fbe29d8aeef8da7ddc854889e1d695cad28ca38b3515252802c2390a
 status: APPROVED
 name: Pixelarticons
