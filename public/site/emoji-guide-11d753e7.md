@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-223ad0124bc83004
+releaseId: release-4c1890b9a0511bce
 revision: 20102e3694d628ba8c342faab7fa662a4d40435ab4a8d6e83a93e4d663576a13
 status: APPROVED
 name: EmojiGuide.org

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-223ad0124bc83004
+releaseId: release-4c1890b9a0511bce
 revision: 8292503fba186dbf7d2dca6e3aa9bab2602836448e0781348438c4c0c359f0ae
 status: APPROVED
 name: Kitbitz
