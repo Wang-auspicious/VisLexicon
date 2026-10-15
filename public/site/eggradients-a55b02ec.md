@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-cd37492a070b287a
+releaseId: release-a7bd5fc279eb8813
 revision: 7e6c585376341b3d526ea7b972d281d7653d9cb577d632488090ebdf5f996e94
 status: APPROVED
 name: Eggradients

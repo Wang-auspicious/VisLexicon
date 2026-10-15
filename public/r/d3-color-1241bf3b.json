@@ -1,0 +1,265 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-a7bd5fc279eb8813",
+  "revision": "3da23b583221113e3aa65f55d032fa132242af79dfdc6cd061106a5218dcaf96",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-15T07:23:08.603Z",
+  "entryId": "d3-color-1241bf3b",
+  "entityId": "entity-d3",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://d3js.org/d3-color",
+    "finalUrl": "https://d3js.org/d3-color",
+    "checkedAt": "2026-10-15T06:40:38.329Z"
+  },
+  "editorial": {
+    "name": "d3-color",
+    "descriptionZh": "d3-color 是 D3 的独立颜色模块，提供 RGB、HSL、Cubehelix、CIELAB、HCL 等色彩空间的表示、转换与操作。文档给出颜色解析、明暗调整、可显示性与格式输出示例；模块源码按 ISC 许可提供，颜色插值属于另一个模块。",
+    "descriptionEn": "d3-color is an independent D3 module for representing, converting and manipulating colors in RGB, HSL, Cubehelix, CIELAB and HCL. Its documentation provides parsing, brightness, displayability and formatting examples. Source code is available under ISC; color interpolation belongs to a separate module.",
+    "takeawayZh": "查颜色解析、转换和格式输出的模块API",
+    "noteZh": "我们在模块首页看steelblue的解析与HSL转换写法，再下滚核对CIELAB、HCL、Cubehelix等支持范围；formatHex段落列出steelblue到#4682b4的示例和可显示性限制。这次浏览的是官方API文档与示例文本，没有执行代码。适合前端查颜色表示和输出格式，插值另属d3-interpolate；按ISC分发时须保留版权和许可声明。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "evidenceUrl": "https://d3js.org/d3-color",
+        "statement": "入口限定独立颜色软件包，官方文档展示解析、色彩空间转换、亮度与格式输出API；本次只核文档，不把兄弟插值模块作为本包证明。"
+      }
+    ],
+    "confirmedAt": "2026-10-15T06:40:38.329Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "search",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "open-source"
+    ],
+    "licenses": [
+      "ISC"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://d3js.org/d3-color",
+      "finalUrl": "https://d3js.org/d3-color",
+      "title": "d3-color | D3 by Observable",
+      "selectionRationale": "先看首屏 steelblue 示例，从解析到转色连着写。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/h2-intake-20261015/d3-color-1241bf3b/identity.webp",
+        "sha256": "f7e93dc077a4d21dac32bbfa7d6c7945cec810161b041dae8c6ea815a3530821",
+        "width": 1280,
+        "height": 800,
+        "bytes": 71994,
+        "alt": "d3-color 文档首屏，左侧导航与 steelblue 代码示例"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://d3js.org/d3-color",
+      "finalUrl": "https://d3js.org/d3-color",
+      "title": "d3-color | D3 by Observable",
+      "selectionRationale": "原生下滚看本包支持的CIELAB等色彩空间。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/h2-intake-20261015/d3-color-1241bf3b/breadth-native-509c2cb7b0c2.webp",
+        "sha256": "509c2cb7b0c22bb13af902476bb61484723d566abd0e0f71d12cd807d66e74f1",
+        "width": 1280,
+        "height": 800,
+        "bytes": 25594,
+        "alt": "d3-color正文的CIELAB、CIELCh、Cubehelix支持列表与透明度示例，左右保留模块导航和API目录。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://d3js.org/d3-color",
+      "finalUrl": "https://d3js.org/d3-color",
+      "title": "d3-color | D3 by Observable",
+      "selectionRationale": "看本包formatHex官方示例文本，未执行代码。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/h2-intake-20261015/d3-color-1241bf3b/proof-native-20532bfc5537.webp",
+        "sha256": "20532bfc5537bb802f04e907837c97e321870c5b773965ef8c0ddd03f89d83cb",
+        "width": 1280,
+        "height": 800,
+        "bytes": 29222,
+        "alt": "d3-color color.formatHex API段落，steelblue到#4682b4示例文本与格式说明，可见相邻displayable和formatHex8。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Mike Bostock",
+      "sourceUrl": "https://github.com/d3/d3-color/blob/71c7f100f9fa85a1c70fcbaeb5f803ee8db5620d/package.json",
+      "quote": "\"name\": \"Mike Bostock\"",
+      "evidence": "包author字段与完整LICENSE版权署名一致。",
+      "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "3de1c3c467f09ffc0372c8b765f8981535c22e1d9f944d17a35ee37df1033516"
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://d3js.org/d3-color",
+      "quote": "",
+      "evidence": "仓库拥有者是组织账户，但已读官网、元数据和package未核法律组织名；文档页Observable版权不等于这个独立包的法律组织。",
+      "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。"
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/d3/d3-color",
+      "sourceUrl": "https://api.github.com/repos/d3/d3-color",
+      "quote": "\"html_url\":\"https://github.com/d3/d3-color\"",
+      "evidence": "官网源码链接/包repository与官方API稳定仓库身份、包名和homepage相互对应。",
+      "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "292f31cf41aeda4c859495aceb7b0f2095c918f2c71e050edcb625f70f4ab5a3"
+    },
+    {
+      "field": "license",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/d3/d3-color/blob/71c7f100f9fa85a1c70fcbaeb5f803ee8db5620d/LICENSE",
+      "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.",
+      "evidence": "固定commit的完整许可原文与package.json的ISC声明一致，分发须保留版权和许可。",
+      "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://d3js.org/d3-color",
+      "quote": "",
+      "evidence": "官网与包文档提供公开安装/下载；已读原文未找到独立价格声明，不把许可证with or without fee/free of charge推为价格。",
+      "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。"
+    },
+    {
+      "field": "sourceCode",
+      "value": "open",
+      "sourceUrl": "https://api.github.com/repos/d3/d3-color",
+      "quote": "\"private\":false",
+      "evidence": "官方API确认仓库非私有，本次实际读取固定commit的package、README和完整LICENSE。",
+      "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "292f31cf41aeda4c859495aceb7b0f2095c918f2c71e050edcb625f70f4ab5a3"
+    },
+    {
+      "field": "commercial",
+      "value": "allowed",
+      "sourceUrl": "https://github.com/d3/d3-color/blob/71c7f100f9fa85a1c70fcbaeb5f803ee8db5620d/LICENSE",
+      "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted",
+      "evidence": "ISC允许该包源码任意用途，包括商业用途；分发保留版权与许可。",
+      "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    },
+    {
+      "field": "repositoryLicense",
+      "value": "ISC",
+      "sourceUrl": "https://github.com/d3/d3-color/blob/71c7f100f9fa85a1c70fcbaeb5f803ee8db5620d/LICENSE",
+      "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.",
+      "evidence": "固定commit的完整许可原文与package.json的ISC声明一致，分发须保留版权和许可。",
+      "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "sourceSha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    }
+  ],
+  "offers": [
+    {
+      "id": "d3-color-official-package",
+      "name": "d3-color官方软件包",
+      "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+      "pricing": {
+        "value": "unknown",
+        "sourceUrl": "https://d3js.org/d3-color",
+        "quote": "",
+        "evidence": "官网与包文档提供公开安装/下载；已读原文未找到独立价格声明，不把许可证with or without fee/free of charge推为价格。",
+        "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。"
+      },
+      "sourceCode": {
+        "value": "open",
+        "sourceUrl": "https://api.github.com/repos/d3/d3-color",
+        "quote": "\"private\":false",
+        "evidence": "官方API确认仓库非私有，本次实际读取固定commit的package、README和完整LICENSE。",
+        "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+        "sourceSha256": "292f31cf41aeda4c859495aceb7b0f2095c918f2c71e050edcb625f70f4ab5a3"
+      },
+      "license": {
+        "value": "ISC",
+        "sourceUrl": "https://github.com/d3/d3-color/blob/71c7f100f9fa85a1c70fcbaeb5f803ee8db5620d/LICENSE",
+        "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.",
+        "evidence": "固定commit的完整许可原文与package.json的ISC声明一致，分发须保留版权和许可。",
+        "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+        "sourceSha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+      },
+      "commercial": {
+        "value": "allowed",
+        "sourceUrl": "https://github.com/d3/d3-color/blob/71c7f100f9fa85a1c70fcbaeb5f803ee8db5620d/LICENSE",
+        "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted",
+        "evidence": "ISC允许该包源码任意用途，包括商业用途；分发保留版权与许可。",
+        "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+        "sourceSha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+      },
+      "repositoryLicense": {
+        "value": "ISC",
+        "sourceUrl": "https://github.com/d3/d3-color/blob/71c7f100f9fa85a1c70fcbaeb5f803ee8db5620d/LICENSE",
+        "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.",
+        "evidence": "固定commit的完整许可原文与package.json的ISC声明一致，分发须保留版权和许可。",
+        "scope": "d3-color独立JavaScript包源码与随附文档；不延伸至D3整体、Observable付费产品或其他独立模块。",
+        "sourceSha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+      }
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-04-13",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/d3-color-1241bf3b",
+    "designMdUrl": "https://vislexicon.com/site/d3-color-1241bf3b.md",
+    "checkedAt": "2026-10-15T06:40:38.329Z",
+    "license": "ISC"
+  }
+}
