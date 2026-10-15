@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-708e1e9a8ee54eaf
+releaseId: release-4fe26688373c6e80
 revision: 2b60678935a894d14eb0387bfef9997a03595380c52216ce1f9b4c4374116cbc
 status: APPROVED
 name: Colormind
