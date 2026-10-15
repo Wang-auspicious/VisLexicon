@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-0eda1d49f2b2ab8e
+releaseId: release-2e983f5f5db53302
 revision: 6d9c813578eb385b26b47018ee8fe71f429b37b8ebeebc671c2b6ff6f119fc11
 status: APPROVED
 name: ColorDrop
