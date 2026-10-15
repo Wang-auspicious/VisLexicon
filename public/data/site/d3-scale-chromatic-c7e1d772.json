@@ -1,0 +1,313 @@
+{
+  "releaseId": "release-32ee8338c0e6d253",
+  "revision": "4d289485fcd9eabe64de5bb006a9d2d98e0b9857cd30390e9a9d5d73a80f45fa",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-15T07:17:35.460Z",
+  "entryId": "d3-scale-chromatic-c7e1d772",
+  "entityId": "entity-d3",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "domain": "d3js.org",
+  "official": {
+    "inputUrl": "https://d3js.org/d3-scale-chromatic",
+    "finalUrl": "https://d3js.org/d3-scale-chromatic",
+    "checkedAt": "2026-10-15T06:46:08.748Z"
+  },
+  "editorial": {
+    "name": "d3-scale-chromatic",
+    "descriptionZh": "d3-scale-chromatic 是 D3 的配色模块文档，提供顺序、发散、分类、循环四类配色，离散色板与连续插值器可配合 scaleOrdinal 和 scaleSequential 使用，大多源自 ColorBrewer。模块代码为 ISC 许可，ColorBrewer 软件与配色另按 Apache-2.0 许可。",
+    "descriptionEn": "d3-scale-chromatic is the D3 color module documentation offering sequential, diverging, categorical, and cyclical palettes, with discrete schemes and continuous interpolators for use with scaleOrdinal and scaleSequential, mostly derived from ColorBrewer. Module code is under ISC, while ColorBrewer software and schemes are under Apache-2.0.",
+    "takeawayZh": "拿走配好比例尺的分类顺序发散配色",
+    "noteZh": "我们先看模块首页用途与四类入口，再到分类配色页比较色条与比例尺写法；顺序配色页呈现Viridis、Inferno、Magma等渐变。适合查离散色板和连续插值器，本次只浏览文档，未执行代码。模块代码按ISC，ColorBrewer来源的软件与配色另按Apache-2.0；整包须保留复合许可。",
+    "recommendation": null,
+    "pricing": "unknown",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "evidenceUrl": "https://d3js.org/d3-scale-chromatic/sequential",
+        "statement": "Sequential 页同时给出连续插值器的渐变渲染与离散色板，证明它是可直接配合比例尺取用的配色库。"
+      },
+      {
+        "evidenceUrl": "https://d3js.org/d3-scale-chromatic/categorical",
+        "statement": "Categorical 页用一行 scaleOrdinal 代码搭配并排色条，证明分类配色可直接落地。"
+      }
+    ],
+    "confirmedAt": "2026-10-15T06:46:08.748Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "custom"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://d3js.org/d3-scale-chromatic",
+      "finalUrl": "https://d3js.org/d3-scale-chromatic",
+      "title": "d3-scale-chromatic | D3 by Observable",
+      "selectionRationale": "看模块首页：正文讲清配色用途与来源，下方是四个家族入口。",
+      "shot": {
+        "src": "/shots/h2-intake-20261015/d3-scale-chromatic-c7e1d772/identity.webp",
+        "sha256": "5f7c56b65d1ed9431bf206dd0c1c4a7a784289c7ae6befa3ff473ab27662264b",
+        "width": 1280,
+        "height": 800,
+        "bytes": 48258,
+        "alt": "d3-scale-chromatic模块首页，正文介绍与四个配色家族链接，左侧文档导航"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://d3js.org/d3-scale-chromatic/categorical",
+      "finalUrl": "https://d3js.org/d3-scale-chromatic/categorical",
+      "title": "Categorical schemes | D3 by Observable",
+      "selectionRationale": "进Categorical页看顶部用法，往下是Category等并排色条。",
+      "shot": {
+        "src": "/shots/h2-intake-20261015/d3-scale-chromatic-c7e1d772/breadth.webp",
+        "sha256": "d1d2a5c8448cbab5c2ca92a278738657f44e91490520d80961411748f016edd4",
+        "width": 1280,
+        "height": 800,
+        "bytes": 49056,
+        "alt": "Categorical页的代码示例与Category、Accent横向色条，右侧目录"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://d3js.org/d3-scale-chromatic/sequential",
+      "finalUrl": "https://d3js.org/d3-scale-chromatic/sequential",
+      "title": "Sequential schemes | D3 by Observable",
+      "selectionRationale": "看Sequential页的Viridis等渐变条，验证连续插值器的真实渲染。",
+      "shot": {
+        "src": "/shots/h2-intake-20261015/d3-scale-chromatic-c7e1d772/proof.webp",
+        "sha256": "63671e8753f8ebf2a736e003c84c5953bebfb09696b2bc8b534f4f00ac98e01f",
+        "width": 1280,
+        "height": 800,
+        "bytes": 77206,
+        "alt": "Sequential页的Viridis、Inferno、Magma横向渐变色带与说明文字"
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://d3js.org/d3-scale-chromatic",
+        "selectionRationale": "看模块首页：正文讲清配色用途与来源，下方是四个家族入口。",
+        "shot": {
+          "src": "/shots/h2-intake-20261015/d3-scale-chromatic-c7e1d772/identity.webp",
+          "alt": "d3-scale-chromatic模块首页，正文介绍与四个配色家族链接，左侧文档导航",
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://d3js.org/d3-scale-chromatic/categorical",
+        "selectionRationale": "进Categorical页看顶部用法，往下是Category等并排色条。",
+        "shot": {
+          "src": "/shots/h2-intake-20261015/d3-scale-chromatic-c7e1d772/breadth.webp",
+          "alt": "Categorical页的代码示例与Category、Accent横向色条，右侧目录",
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://d3js.org/d3-scale-chromatic/sequential",
+        "selectionRationale": "看Sequential页的Viridis等渐变条，验证连续插值器的真实渲染。",
+        "shot": {
+          "src": "/shots/h2-intake-20261015/d3-scale-chromatic-c7e1d772/proof.webp",
+          "alt": "Sequential页的Viridis、Inferno、Magma横向渐变色带与说明文字",
+          "width": 1280,
+          "height": 800
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "Mike Bostock",
+      "sourceUrl": "https://github.com/d3/d3-scale-chromatic/blob/2c52792197299346b7bdb94322bb4dff8f554fea/package.json",
+      "quote": "\"name\": \"Mike Bostock\"",
+      "evidence": "包author字段与完整LICENSE版权署名一致。",
+      "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+      "sourceSha256": "9d60cf2445659495a3698fa2d8d643a6eb7febcf3ebcede83c3feb260cfa6f82"
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://d3js.org/d3-scale-chromatic",
+      "quote": "",
+      "evidence": "仓库拥有者是组织账户，但已读官网、元数据和package未核法律组织名；文档页Observable版权不等于这个独立包的法律组织。",
+      "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。"
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/d3/d3-scale-chromatic",
+      "sourceUrl": "https://api.github.com/repos/d3/d3-scale-chromatic",
+      "quote": "\"html_url\":\"https://github.com/d3/d3-scale-chromatic\"",
+      "evidence": "官网源码链接/包repository与官方API稳定仓库身份、包名和homepage相互对应。",
+      "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+      "sourceSha256": "c07d11975fdfaa8a4bf54a11193490d16fd487a6f83be9adf0f56b2d38b0e852"
+    },
+    {
+      "field": "license",
+      "value": "ISC AND Apache-2.0",
+      "sourceUrl": "https://github.com/d3/d3-scale-chromatic/blob/2c52792197299346b7bdb94322bb4dff8f554fea/LICENSE",
+      "quote": "Copyright 2010-2024 Mike Bostock\n\nPermission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n\nApache-Style Software License for ColorBrewer software and ColorBrewer Color Schemes\n\nCopyright 2002 Cynthia Brewer, Mark Harrower, and The Pennsylvania State University\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use\nthis file except in compliance with the License. You may obtain a copy of the\nLicense at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed\nunder the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR\nCONDITIONS OF ANY KIND, either express or implied. See the License for the\nspecific language governing permissions and limitations under the License.",
+      "evidence": "完整LICENSE前半为ISC，后半明确ColorBrewer的Apache-2.0；package.json只写ISC不能覆盖掉后半要求。",
+      "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+      "sourceSha256": "0986d93944902cca9af86824b6a641b4b7c2d10602fc510c433a8bcd443919fe"
+    },
+    {
+      "field": "pricing",
+      "value": "unknown",
+      "sourceUrl": "https://d3js.org/d3-scale-chromatic",
+      "quote": "",
+      "evidence": "官网与包文档提供公开安装/下载；已读原文未找到独立价格声明，不把许可证with or without fee/free of charge推为价格。",
+      "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。"
+    },
+    {
+      "field": "sourceCode",
+      "value": "open",
+      "sourceUrl": "https://api.github.com/repos/d3/d3-scale-chromatic",
+      "quote": "\"private\":false",
+      "evidence": "官方API确认仓库非私有，本次实际读取固定commit的package、README和完整LICENSE。",
+      "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+      "sourceSha256": "c07d11975fdfaa8a4bf54a11193490d16fd487a6f83be9adf0f56b2d38b0e852"
+    },
+    {
+      "field": "commercial",
+      "value": "allowed",
+      "sourceUrl": "https://github.com/d3/d3-scale-chromatic/blob/2c52792197299346b7bdb94322bb4dff8f554fea/LICENSE",
+      "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted",
+      "evidence": "ISC允许该模块代码任意用途；LICENSE的ColorBrewer部分另按Apache-2.0，分发须保留相应版权/许可，不把整包仅说成ISC。",
+      "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+      "sourceSha256": "0986d93944902cca9af86824b6a641b4b7c2d10602fc510c433a8bcd443919fe"
+    },
+    {
+      "field": "repositoryLicense",
+      "value": "ISC AND Apache-2.0",
+      "sourceUrl": "https://github.com/d3/d3-scale-chromatic/blob/2c52792197299346b7bdb94322bb4dff8f554fea/LICENSE",
+      "quote": "Copyright 2010-2024 Mike Bostock\n\nPermission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n\nApache-Style Software License for ColorBrewer software and ColorBrewer Color Schemes\n\nCopyright 2002 Cynthia Brewer, Mark Harrower, and The Pennsylvania State University\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use\nthis file except in compliance with the License. You may obtain a copy of the\nLicense at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed\nunder the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR\nCONDITIONS OF ANY KIND, either express or implied. See the License for the\nspecific language governing permissions and limitations under the License.",
+      "evidence": "完整LICENSE前半为ISC，后半明确ColorBrewer的Apache-2.0；package.json只写ISC不能覆盖掉后半要求。",
+      "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+      "sourceSha256": "0986d93944902cca9af86824b6a641b4b7c2d10602fc510c433a8bcd443919fe"
+    }
+  ],
+  "offers": [
+    {
+      "id": "d3-scale-chromatic-official-package",
+      "name": "d3-scale-chromatic官方软件包",
+      "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+      "pricing": {
+        "value": "unknown",
+        "sourceUrl": "https://d3js.org/d3-scale-chromatic",
+        "quote": "",
+        "evidence": "官网与包文档提供公开安装/下载；已读原文未找到独立价格声明，不把许可证with or without fee/free of charge推为价格。",
+        "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。"
+      },
+      "sourceCode": {
+        "value": "open",
+        "sourceUrl": "https://api.github.com/repos/d3/d3-scale-chromatic",
+        "quote": "\"private\":false",
+        "evidence": "官方API确认仓库非私有，本次实际读取固定commit的package、README和完整LICENSE。",
+        "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+        "sourceSha256": "c07d11975fdfaa8a4bf54a11193490d16fd487a6f83be9adf0f56b2d38b0e852"
+      },
+      "license": {
+        "value": "ISC AND Apache-2.0",
+        "sourceUrl": "https://github.com/d3/d3-scale-chromatic/blob/2c52792197299346b7bdb94322bb4dff8f554fea/LICENSE",
+        "quote": "Copyright 2010-2024 Mike Bostock\n\nPermission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n\nApache-Style Software License for ColorBrewer software and ColorBrewer Color Schemes\n\nCopyright 2002 Cynthia Brewer, Mark Harrower, and The Pennsylvania State University\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use\nthis file except in compliance with the License. You may obtain a copy of the\nLicense at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed\nunder the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR\nCONDITIONS OF ANY KIND, either express or implied. See the License for the\nspecific language governing permissions and limitations under the License.",
+        "evidence": "完整LICENSE前半为ISC，后半明确ColorBrewer的Apache-2.0；package.json只写ISC不能覆盖掉后半要求。",
+        "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+        "sourceSha256": "0986d93944902cca9af86824b6a641b4b7c2d10602fc510c433a8bcd443919fe"
+      },
+      "commercial": {
+        "value": "allowed",
+        "sourceUrl": "https://github.com/d3/d3-scale-chromatic/blob/2c52792197299346b7bdb94322bb4dff8f554fea/LICENSE",
+        "quote": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted",
+        "evidence": "ISC允许该模块代码任意用途；LICENSE的ColorBrewer部分另按Apache-2.0，分发须保留相应版权/许可，不把整包仅说成ISC。",
+        "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+        "sourceSha256": "0986d93944902cca9af86824b6a641b4b7c2d10602fc510c433a8bcd443919fe"
+      },
+      "repositoryLicense": {
+        "value": "ISC AND Apache-2.0",
+        "sourceUrl": "https://github.com/d3/d3-scale-chromatic/blob/2c52792197299346b7bdb94322bb4dff8f554fea/LICENSE",
+        "quote": "Copyright 2010-2024 Mike Bostock\n\nPermission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n\nApache-Style Software License for ColorBrewer software and ColorBrewer Color Schemes\n\nCopyright 2002 Cynthia Brewer, Mark Harrower, and The Pennsylvania State University\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use\nthis file except in compliance with the License. You may obtain a copy of the\nLicense at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed\nunder the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR\nCONDITIONS OF ANY KIND, either express or implied. See the License for the\nspecific language governing permissions and limitations under the License.",
+        "evidence": "完整LICENSE前半为ISC，后半明确ColorBrewer的Apache-2.0；package.json只写ISC不能覆盖掉后半要求。",
+        "scope": "d3-scale-chromatic独立包：Bostock模块代码按ISC；仓库LICENSE同时要求ColorBrewer软件与配色遵守Apache-2.0。仅该包，不延伸至Observable付费服务或D3整体。",
+        "sourceSha256": "0986d93944902cca9af86824b6a641b4b7c2d10602fc510c433a8bcd443919fe"
+      }
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": false,
+    "requiresAttribution": false,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "许可不是通用宽松协议，逐条确认条款后再使用。ISC AND Apache-2.0：完整LICENSE前半为ISC，后半明确ColorBrewer的Apache-2.0；package.json只写ISC不能覆盖掉后半要求。"
+    ],
+    "recheckAfter": "2027-04-13",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/d3-scale-chromatic-c7e1d772.md",
+  "registryUrl": "/r/d3-scale-chromatic-c7e1d772.json"
+}

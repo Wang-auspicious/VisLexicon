@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-87d5c282008c59a8
+releaseId: release-32ee8338c0e6d253
 revision: 6b7cbc21fbca9f01c8fb5d8697686855ba98e059e20c80ddb28d36c576a7f110
 status: APPROVED
 name: IconShelf

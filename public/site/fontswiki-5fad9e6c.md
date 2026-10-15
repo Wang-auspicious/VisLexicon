@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-87d5c282008c59a8
+releaseId: release-32ee8338c0e6d253
 revision: b21fc55b041f8672e33ee7487558a345c2c7632b380af04273fd4c9d29bf3769
 status: APPROVED
 name: FontsWiki

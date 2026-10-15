@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-87d5c282008c59a8
+releaseId: release-32ee8338c0e6d253
 revision: 2f133dc9ac0d1fa50e49646705293caa1e56c11fea28b2b08bc47f15369eabe3
 status: APPROVED
 name: Iconbuddy
