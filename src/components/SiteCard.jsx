@@ -30,8 +30,8 @@ function CardShot({ item, aspect, priority }) {
         <img
           src={shot.src}
           alt={locale === 'en' ? englishText(shot.altEn, `${displayName(item, locale)} — website preview`) : shot.alt ?? ''}
-          width={shot.width || undefined}
-          height={shot.height || undefined}
+          width={shot.width || 1280}
+          height={shot.height || 800}
           loading={priority ? 'eager' : 'lazy'}
           fetchPriority={priority ? 'high' : undefined}
           decoding="async"

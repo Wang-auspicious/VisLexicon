@@ -42,7 +42,7 @@ test('curation-wide Link recall reaches the bounded Jev pool without site substi
   const query='蓝色带下划线的链接',index=await loadDiscoveryIndex(process.cwd(),'curation',''),byId=new Map(index.units.map(unit=>[unit.id,unit]))
   const selected=selectDiscoveryCandidates(query,index,byId,createRefinementStore())
   if (!selected.candidates.length) {
-    assert.ok(index.units.length <= 12)
+    assert.equal(index.units.some(unit => unit.kind === 'website-component' && unit.componentType === 'link'), false, 'A site collection cannot stand in for an absent Link instance')
     return
   }
   if (index.units.length > links.length) {

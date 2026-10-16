@@ -9,17 +9,20 @@ import SiteFooter from './components/SiteFooter.jsx'
 import { useT } from './i18n.js'
 import About from './views/About.jsx'
 import ComponentDiscovery from './components/ComponentDiscovery.jsx'
+import RouteErrorBoundary from './components/RouteErrorBoundary.jsx'
 
 /* 视图按路由分包：图鉴要载 1MB 语料，策展要载站点索引，
  * 谁也不该出现在别人的首屏包里。 */
-const Curation = lazy(() => import('./views/Curation.jsx'))
+import Curation from './views/Curation.jsx'
 const AllSites = lazy(() => import('./views/AllSites.jsx'))
 const SiteDetail = lazy(() => import('./views/SiteDetail.jsx'))
-const Atlas = lazy(() => import('./views/Atlas.jsx'))
+const loadAtlas = () => import('./views/Atlas.jsx')
+const Atlas = lazy(loadAtlas)
 const Favorites = lazy(() => import('./views/Favorites.jsx'))
 const Components = lazy(() => import('./views/Components.jsx'))
 const ResourceLibrary = lazy(() => import('./views/ResourceLibrary.jsx'))
 const CurationReview = lazy(() => import('./views/CurationReview.jsx'))
+const ResourceKit = lazy(() => import('./views/ResourceKit.jsx'))
 
 loadStored()
 
@@ -62,6 +65,17 @@ export default function App() {
   const route = useRoute()
   const t = useT()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [atlasMounted, setAtlasMounted] = useState(route.name === 'atlas')
+  const prewarmAtlas = () => { void loadAtlas(); setAtlasMounted(true) }
+
+  // Idle work only fetches the small host chunk. The document starts on intent
+  // (hover/focus) so the home page does not download the atlas in the background.
+  useEffect(() => {
+    if (!window.requestIdleCallback) return undefined
+    const idle = window.requestIdleCallback(() => { void loadAtlas() })
+    return () => window.cancelIdleCallback(idle)
+  }, [])
+  useEffect(() => { if (route.name === 'atlas') setAtlasMounted(true) }, [route.name])
 
   /* 站点详情是叠层：底下继续渲染点进来的那个列表路由。
    * 「从哪来」写在 history.state.from 上（波次 3 接口文档），
@@ -73,6 +87,7 @@ export default function App() {
   const baseRoute = overlayOpen
     ? (['atlas', 'sites', 'favorites', 'components'].includes(parseRoute(cameFrom).name) ? parseRoute(cameFrom).name : 'curation')
     : route.name
+  const atlasRoute = overlayOpen && baseRoute === 'atlas' ? parseRoute(cameFrom) : route
 
   /* 汉堡展开时锁背景；路由一变就收起。 */
   useEffect(() => { setMenuOpen(false) }, [route.hash])
@@ -120,7 +135,7 @@ export default function App() {
       <nav className="nav" aria-label={t('nav')} inert={overlayOpen}>
         <div className="nav-left">
           <a className="nav-brand" href="#/" aria-label={`VisLexicon · ${t('backHome')}`}>VisLexicon</a>
-          <ChannelNavigation channels={CHANNELS} activeName={route.name} t={t} />
+          <ChannelNavigation channels={CHANNELS} activeName={route.name} t={t} onAtlasIntent={prewarmAtlas} />
         </div>
 
         <div className="nav-right">
@@ -151,6 +166,8 @@ export default function App() {
                 href={channel.hash}
                 aria-current={active ? 'page' : undefined}
                 onClick={() => setMenuOpen(false)}
+                onPointerEnter={channel.key === 'atlas' ? prewarmAtlas : undefined}
+                onFocus={channel.key === 'atlas' ? prewarmAtlas : undefined}
               >
                 {t(channel.key)}
               </a>
@@ -166,19 +183,30 @@ export default function App() {
               duplicated the index fetch and made every resource route wait on a
               second search surface before its first cards could paint. */}
           {['curation', 'sites'].includes(baseRoute) && <ComponentDiscovery initialQuery={route.query.q||''} key={baseRoute === 'sites' ? 'curation' : baseRoute} scope="curation" />}
+          <RouteErrorBoundary key={`route:${baseRoute}`}>
           <Suspense fallback={<RouteFallback />}>
             {baseRoute === 'curation' && <Curation />}
             {baseRoute === 'sites' && <AllSites />}
-            {baseRoute === 'atlas' && <Atlas stage={route.params.stageId} term={route.params.termId} query={route.query} />}
             {baseRoute === 'about' && <About />}
             {baseRoute === 'favorites' && <Favorites />}
             {baseRoute === 'components' && <Components />}
             {baseRoute === 'curation-review' && <CurationReview />}
-            {['skills', 'ppt', 'science', 'graphics'].includes(baseRoute) && (
+            {['ppt', 'science', 'graphics'].includes(baseRoute) && route.query.kit && (
+              <ResourceKit channel={baseRoute} kitId={route.query.kit} />
+            )}
+            {['skills', 'ppt', 'science', 'graphics'].includes(baseRoute) && !route.query.kit && (
               <ResourceLibrary channel={baseRoute} resourceType={route.params.resourceType} query={route.query} />
             )}
             {baseRoute === 'notfound' && <NotFound hash={route.hash} />}
           </Suspense>
+          </RouteErrorBoundary>
+          {(atlasMounted || baseRoute === 'atlas') && (
+            <div style={{ display: baseRoute === 'atlas' ? 'contents' : 'none' }} inert={baseRoute !== 'atlas'} aria-hidden={baseRoute !== 'atlas'}>
+              <Suspense fallback={baseRoute === 'atlas' ? <RouteFallback /> : null}>
+                <Atlas active={baseRoute === 'atlas' && !overlayOpen} stage={baseRoute === 'atlas' ? atlasRoute.params.stageId : undefined} term={baseRoute === 'atlas' ? atlasRoute.params.termId : undefined} query={baseRoute === 'atlas' ? atlasRoute.query : undefined} />
+              </Suspense>
+            </div>
+          )}
         </main>
         {baseRoute !== 'atlas' && <SiteFooter />}
       </div>

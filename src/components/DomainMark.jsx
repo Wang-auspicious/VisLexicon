@@ -28,21 +28,9 @@ function hostOf(url) {
   }
 }
 
-function originOf(url) {
-  try {
-    return new URL(url).origin
-  } catch {
-    return ''
-  }
-}
-
 function faviconCandidates(url) {
   const host = hostOf(url)
-  const origin = originOf(url)
-  const list = []
-  if (origin) list.push(`${origin}/favicon.ico`)
-  if (host) list.push(`https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=64`)
-  return list
+  return host ? [`/favicons/${encodeURIComponent(host)}.webp`] : []
 }
 
 function SiteFavicon({ url, name, className = '' }) {

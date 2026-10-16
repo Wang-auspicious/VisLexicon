@@ -66,8 +66,8 @@ export const HEAT_METHOD_EN = 'Coverage heat = collections x3 + atlas links x2 +
 
 export function heatScoreOf(item, collectionCounts) {
   const collections = Number(collectionCounts?.get?.(idOf(item)) ?? 0)
-  const relations = asArray(item?.atlasRelations ?? item?.atlasTerms).length
-  const roles = asArray(item?.evidenceSummary?.roles).length
+  const relations = item?.heat?.relations ?? asArray(item?.atlasRelations ?? item?.atlasTerms).length
+  const roles = item?.heat?.roles ?? asArray(item?.evidenceSummary?.roles).length
   const reviewed = item?.independentlyReviewed === true ? 1 : 0
   return { collections, relations, roles, reviewed, score: collections * 3 + relations * 2 + roles * 2 + reviewed }
 }

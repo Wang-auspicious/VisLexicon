@@ -14,7 +14,15 @@
     <title>VisLexicon · 视元</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <style>
+        .boot-shell{padding:24px 5vw;max-width:1600px;margin:auto;color:#8a8a8a;font:14px system-ui,sans-serif}.boot-nav{height:32px;border-bottom:1px solid #e5e5e5;margin-bottom:54px}.boot-title{width:45%;height:34px;background:#e8e8e8;margin-bottom:24px}.boot-line{width:65%;height:14px;background:#eeeeed;margin-bottom:68px}.boot-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}.boot-card{aspect-ratio:16/10;background:#eeeeed;border-radius:8px}.boot-caption{width:70%;height:16px;background:#eeeeed;margin-top:16px}.boot-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}@media(min-width:768px){.boot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(min-width:1280px){.boot-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:767px){.boot-title{width:80%}}@media(prefers-color-scheme:dark){body{background:#171717}.boot-title,.boot-line,.boot-card,.boot-caption{background:#292929}.boot-nav{border-color:#333}}
+      </style>
+      <div class="boot-shell" role="status" aria-label="正在加载 VisLexicon">
+        <span class="boot-sr">正在加载 VisLexicon…</span><div class="boot-nav" aria-hidden="true">VisLexicon</div>
+        <div aria-hidden="true"><div class="boot-title"></div><div class="boot-line"></div><div class="boot-grid"><div><div class="boot-card"></div><div class="boot-caption"></div></div><div><div class="boot-card"></div><div class="boot-caption"></div></div><div><div class="boot-card"></div><div class="boot-caption"></div></div></div></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

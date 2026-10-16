@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import SubmitCheck from './SubmitCheck.jsx'
 import { useLocale } from '../i18n.js'
-import { loadPublicSiteIndex } from '../lib/public-data.js'
+import { loadPublicSiteCards } from '../lib/public-data.js'
 
 /* ============ 全站页脚（方案 §4.3 线框最后一行） ============
  * 口径说明 · 核验日志 · Agent 端点 · 查重框。
@@ -15,7 +15,7 @@ export default function SiteFooter() {
 
   useEffect(() => {
     let alive = true
-    loadPublicSiteIndex()
+    loadPublicSiteCards()
       .then((data) => { if (alive) setItems(Array.isArray(data?.items) ? data.items : []) })
       .catch(() => { if (alive) setLoadError(true) })
     return () => { alive = false }

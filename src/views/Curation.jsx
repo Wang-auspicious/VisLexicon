@@ -1,9 +1,10 @@
-import { useEffect, useId, useMemo, useState } from 'react'
+import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import COLLECTIONS from '../data/collections.js'
 import { displayName, englishText } from '../lib/localized-content.js'
 import { MANIFESTS } from '../stages/manifests.js'
 import { siteWideCounts } from '../lib/counts.js'
-import { formatCheckedAt, loadSiteIndex } from '../lib/site-browser.js'
+import { formatCheckedAt } from '../lib/site-browser.js'
+import { loadPublicSiteCards } from '../lib/public-data.js'
 import SiteCard from '../components/SiteCard.jsx'
 import { useT, useLocale } from '../i18n.js'
 import {
@@ -33,11 +34,21 @@ export default function Curation() {
   const t = useT()
   const locale = useLocale()
   const [state, setState] = useState({ status: 'loading', index: null, error: null })
-  const [atlas, setAtlas] = useState(null)
+  const [groupLimit, setGroupLimit] = useState(2)
+  const nextGroup = useRef(null)
+  useEffect(() => {
+    const target = nextGroup.current
+    if (!target || typeof IntersectionObserver === 'undefined') return
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) setGroupLimit(value => Math.min(COLLECTIONS.length, value + 2))
+    }, { rootMargin: '400px 0px' })
+    observer.observe(target)
+    return () => observer.disconnect()
+  }, [state.status, groupLimit])
 
   useEffect(() => {
     let alive = true
-    loadSiteIndex()
+    loadPublicSiteCards()
       .then((index) => alive && setState({ status: 'ready', index, error: null }))
       .catch((error) => alive && setState({ status: 'error', index: null, error }))
     return () => {
@@ -45,19 +56,8 @@ export default function Curation() {
     }
   }, [])
 
-  /* 图鉴语料有 1MB，异步取：首屏不为一个数字等它。取不到就是「—」。 */
-  useEffect(() => {
-    let alive = true
-    import('../data/visual-atlas.json')
-      .then((module) => alive && setAtlas(module.default))
-      .catch(() => {})
-    return () => {
-      alive = false
-    }
-  }, [])
-
   const items = useMemo(() => publishedItems(state.index?.items ?? []), [state.index])
-  const counts = siteWideCounts({ items, atlas, manifests: MANIFESTS })
+  const counts = { ...siteWideCounts({ items, manifests: MANIFESTS }), ...state.index?.counts }
   const itemsById = useMemo(() => new Map(items.map((item) => [item.entryId, item])), [items])
   const checked = formatCheckedAt(counts.latestCheckedAt)
   const discoveryRows = useMemo(() => {
@@ -116,7 +116,7 @@ export default function Curation() {
       </section> : null}
 
       {state.status === 'ready'
-        ? COLLECTIONS.map((group, index) => (
+        ? COLLECTIONS.slice(0, groupLimit).map((group, index) => (
             <CollectionGroup
               key={group.id}
               group={group}
@@ -126,6 +126,7 @@ export default function Curation() {
             />
           ))
         : null}
+      {state.status === 'ready' && groupLimit < COLLECTIONS.length && <div ref={nextGroup} aria-hidden="true" style={{ height: 1 }} />}
 
       <section className="vl-allsites-entry">
         <a className="vl-allsites-link" href="#/sites">
@@ -144,6 +145,17 @@ export default function Curation() {
 function CollectionGroup({ group, itemsById, priority = false, locale = 'zh' }) {
   const titleId = useId()
   const members = group.entryIds.map((id) => itemsById.get(id)).filter(Boolean)
+  const [visibleCount, setVisibleCount] = useState(6)
+  const nextCards = useRef(null)
+  useEffect(() => {
+    const target = nextCards.current
+    if (!target || typeof IntersectionObserver === 'undefined') return
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) setVisibleCount(value => Math.min(members.length, value + 6))
+    }, { rootMargin: '300px 0px' })
+    observer.observe(target)
+    return () => observer.disconnect()
+  }, [members.length, visibleCount])
   if (!members.length) return null
   const title = locale === 'en' && group.titleEn ? group.titleEn : group.titleZh
   const blurb = locale === 'en' && group.blurbEn ? group.blurbEn : group.blurbZh
@@ -155,10 +167,11 @@ function CollectionGroup({ group, itemsById, priority = false, locale = 'zh' }) 
         <p className="vl-group-blurb">{blurb}</p>
       </header>
       <div className="vl-group-grid">
-        {members.map((item, index) => (
+        {members.slice(0, visibleCount).map((item, index) => (
           <SiteCard key={item.entryId} item={item} priority={priority && index < 3} />
         ))}
       </div>
+      {visibleCount < members.length && <div ref={nextCards} aria-hidden="true" style={{ height: 1 }} />}
     </section>
   )
 }

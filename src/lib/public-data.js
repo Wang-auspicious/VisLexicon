@@ -47,6 +47,7 @@ export function createPublicDataClient({ fetcher = globalThis.fetch, basePath = 
   if (typeof fetcher !== 'function') throw new Error('createPublicDataClient 需要 fetcher')
   let releasePromise = null
   let indexPromise = null
+  let cardsPromise = null
   const detailPromises = new Map()
   const registryPromises = new Map()
   const markdownPromises = new Map()
@@ -79,6 +80,15 @@ export function createPublicDataClient({ fetcher = globalThis.fetch, basePath = 
         })
     }
     return indexPromise
+  }
+
+  const loadPublicSiteCards = ({ reload = false } = {}) => {
+    if (reload) cardsPromise = null
+    if (!cardsPromise) cardsPromise = loadReleaseManifest({ reload }).then(async release => {
+      const index = await fetchJson(fetcher, urlFor(release.endpoints.siteCards || release.endpoints.siteIndex))
+      return assertSameRelease(assertPublicIndex(index), release, 'site-cards')
+    }).catch(error => { cardsPromise = null; throw error })
+    return cardsPromise
   }
 
   const loadPublicSiteDetail = (entryId, { reload = false, signal } = {}) => {
@@ -172,6 +182,7 @@ export function createPublicDataClient({ fetcher = globalThis.fetch, basePath = 
   return {
     loadReleaseManifest,
     loadPublicSiteIndex,
+    loadPublicSiteCards,
     loadPublicSiteDetail,
     loadPublicRegistryItem,
     loadPublicDesignMarkdown,
@@ -182,6 +193,7 @@ const defaultClient = createPublicDataClient()
 
 export const loadReleaseManifest = (options) => defaultClient.loadReleaseManifest(options)
 export const loadPublicSiteIndex = (options) => defaultClient.loadPublicSiteIndex(options)
+export const loadPublicSiteCards = (options) => defaultClient.loadPublicSiteCards(options)
 export const loadPublicSiteDetail = (entryId, options) => defaultClient.loadPublicSiteDetail(entryId, options)
 export const loadPublicRegistryItem = (entryId, options) => defaultClient.loadPublicRegistryItem(entryId, options)
 export const loadPublicDesignMarkdown = (entryId, options) => defaultClient.loadPublicDesignMarkdown(entryId, options)
