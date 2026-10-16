@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { rerankPool } from './component-discovery.js'
 import { useLocale } from '../i18n.js'
+import { jevErrorMessage } from './jev-status.js'
 
 export function asJevUnit(item) {
   const record=item.record||item
@@ -41,7 +42,8 @@ export function useJevSearch(query,items,scope,revision=0) {
       try {
         const response=await fetch('/api/discovery/rank',{method:'POST',headers:{'Content-Type':'application/json'},body:payload,signal:controller.signal})
         const data=await response.json()
-        if(!response.ok||data.scope!==scope)throw Error('JEV_UNAVAILABLE')
+        if(!response.ok)throw Error(data.error||'JEV_UNAVAILABLE')
+        if(data.scope!==scope)throw Error('SCOPE_MISMATCH')
         if(!controller.signal.aborted){
           const candidateIds=new Set(request.candidates.map(unit=>unit.id)),seen=new Set()
           const rows=(data.rows||[]).filter(row=>row.score>=1.4&&candidateIds.has(row.id)&&!seen.has(row.id)&&seen.add(row.id)).sort((a,b)=>b.score-a.score)
@@ -49,12 +51,12 @@ export function useJevSearch(query,items,scope,revision=0) {
           setLastCompleted({query:request.query,scope,items,revision,candidates:request.candidates,matches:rows.map(row=>candidateById.get(row.id))})
           setResult({payload,data,matched:rows.map(row=>byId.get(row.id)).filter(Boolean),items,revision})
         }
-      }catch{if(!controller.signal.aborted)setResult({payload,data:{mode:'error',rows:[]},matched:[],items,revision})}
+      }catch(error){if(!controller.signal.aborted)setResult({payload,data:{mode:'error',error:error.message,rows:[]},matched:[],items,revision})}
     },650)
     return()=>{clearTimeout(timer);controller.abort()}
   },[payload,scope,items,byId,revision])
   const current=result?.payload===payload&&result.items===items&&result.revision===revision?result.data:null
   const matches=current?result.matched:[]
-  const status=!query.trim()?'':!current?(en?'Jev is comparing…':'Jev 正在判断…'):current.mode==='error'?(en?'Jev is unavailable. Try again later.':'Jev 暂不可用，请稍后重试'):current.mode==='empty'?(en?'No candidates to compare':'没有可供判断的候选'):en?`Jev compared ${current.candidateCount} candidates · ${matches.length} matches`:`Jev 已判断 ${current.candidateCount} 个候选 · ${matches.length} 条匹配`
+  const status=!query.trim()?'':!current?(en?'Jev is comparing…':'Jev 正在判断…'):current.mode==='error'?jevErrorMessage(current.error,en):current.mode==='empty'?(en?'No candidates to compare':'没有可供判断的候选'):en?`Jev compared ${current.candidateCount} candidates · ${matches.length} matches`:`Jev 已判断 ${current.candidateCount} 个候选 · ${matches.length} 条匹配`
   return {items:query.trim()?matches:items,status,mode:current?.mode||'waiting'}
 }

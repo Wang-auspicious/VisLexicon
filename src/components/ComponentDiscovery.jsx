@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { jevErrorMessage } from '../lib/jev-status.js'
 import { wantsComponentInstance } from '../lib/component-discovery.js'
 import { DISCOVERY_SCOPES, colorSegments, descriptionSections, queryRequirements, offerMatches } from '../lib/discovery-scopes.js'
 import { useStore } from '../store.js'
@@ -52,8 +53,10 @@ function ColorText({text}) {
 function SourceLink({source,url,en}) {
   const [failed,setFailed]=useState(false)
   const sourceName = en ? englishText(source?.nameEn, englishText(source?.name, 'Original source')) : source?.name || 'VisLexicon'
+  let icon = ''
+  try { icon = source?.iconUrl?.startsWith('/') && !source.iconUrl.startsWith('//') ? source.iconUrl : source?.iconUrl ? `/favicons/${encodeURIComponent(new URL(source.iconUrl).hostname)}.webp` : '' } catch { /* initial fallback */ }
   return <a className="discovery-source" href={url} target={external(url)?'_blank':undefined} rel={external(url)?'noreferrer':undefined}>
-    {source?.iconUrl&&!failed?<img src={source.iconUrl} alt="" width="18" height="18" loading="lazy" onError={()=>setFailed(true)}/>:<span className="discovery-source-initial" aria-hidden="true">{sourceName.slice(0,1)}</span>}
+    {icon&&!failed?<img src={icon} alt="" width="18" height="18" loading="lazy" decoding="async" onError={()=>setFailed(true)}/>:<span className="discovery-source-initial" aria-hidden="true">{sourceName.slice(0,1)}</span>}
     <span>{sourceName}</span>
   </a>
 }
@@ -122,7 +125,7 @@ function SearchSession({index,scope,theme,en,reload,initialQuery}) {
         for(const unit of data.units||[])knownUnits.current.set(unit.id,unit)
         lastCompleted.current={query,token:data.refineToken,indexVersion:data.indexVersion}
         setResponse({...data,query});setStatus('ready')
-      }catch{if(!controller.signal.aborted&&version===sequence.current)setStatus('fallback')}
+      }catch(error){if(!controller.signal.aborted&&version===sequence.current){setResponse({query,mode:'error',error:error.message});setStatus('fallback')}}
     },850)
     return()=>{clearTimeout(timer);controller.abort()}
   },[query,index,scope,theme,sessionId,composing,retry,reload])
@@ -134,7 +137,7 @@ function SearchSession({index,scope,theme,en,reload,initialQuery}) {
   const examples=en?(theme?topic.examplesEn:index.examplesEn):(theme?topic.examples:index.examples)
   const componentQuery=scope==='curation'&&wantsComponentInstance(query)
   const componentCount=topic.componentCount
-  const hint=status==='ranking'||status==='waiting'?(en?'Comparing within this topic…':'正在当前主题内比较…'):status==='ready'?(currentResponse?.mode==='empty'?(en?'No eligible candidates':'没有符合条件的候选'):(en?`Jev · ${currentResponse?.candidateCount} candidates compared`:`Jev 已比较 ${currentResponse?.candidateCount} 个候选`)):status==='fallback'?(en?'Jev is temporarily unavailable':'Jev 暂不可用'):(en?`${topic.count} entries in this topic`:`当前主题可检索 ${topic.count} 条`)
+  const hint=status==='ranking'||status==='waiting'?(en?'Comparing within this topic…':'正在当前主题内比较…'):status==='ready'?(currentResponse?.mode==='empty'?(en?'No eligible candidates':'没有符合条件的候选'):(en?`Jev · ${currentResponse?.candidateCount} candidates compared`:`Jev 已判断 ${currentResponse?.candidateCount} 个候选`)):status==='fallback'?jevErrorMessage(currentResponse?.error,en):(en?`${topic.count} entries in this topic`:`当前主题可检索 ${topic.count} 条`)
   const loadMore=async()=>{
     if(!currentResponse||loadingMore)return
     const token=currentResponse.refineToken,offset=currentResponse.units.length,responseQuery=currentResponse.query
@@ -152,7 +155,7 @@ function SearchSession({index,scope,theme,en,reload,initialQuery}) {
     <div className="discovery-under"><span id={`discovery-hint-${scope}`} role="status" aria-live="polite">{hint}{currentResponse?.mode==='jev'?(en?` · ${currentResponse.matchCount} matches`:` · ${currentResponse.matchCount} 条匹配`):''}{String(currentResponse?.cost)==='0'?' · Free':''}</span><span>{en?'Only this topic. Refine freely.':'仅检索当前主题，随时修改描述。'}</span></div>
     {scope==='curation'&&<p className="discovery-notice">{en?`${topic.curatedSiteCount} website entries · ${componentCount} published components`:`${topic.curatedSiteCount} 个网站入口 · ${componentCount} 个已发布组件`}</p>}
     {!query&&examples?.length>0&&<div className="discovery-examples">{examples.map(example=><button key={example} type="button" onClick={()=>updateQuery(example)}>{example}</button>)}</div>}
-    {status==='fallback'&&<p className="discovery-notice">{en?'Jev is unavailable. Results are not presented as semantic matches.':'Jev 暂不可用，请重试；不显示未经 Jev 判断的搜索结果。'} <button type="button" onClick={()=>setRetry(x=>x+1)}>{en?'Retry Jev':'重试 Jev'}</button></p>}
+    {status==='fallback'&&<p className="discovery-notice">{jevErrorMessage(currentResponse?.error,en)} <button type="button" onClick={()=>setRetry(x=>x+1)}>{en?'Retry Jev':'重试 Jev'}</button></p>}
     {pinned.length>0&&<div className="discovery-pins"><h2>{en?'Kept in this topic':'当前主题保留的方向'} <small>{pinned.length}/8</small></h2><div className="discovery-grid">{pinned.map(unit=>card(unit,true))}</div></div>}
     {query.trim()&&<div className="discovery-results" aria-busy={status==='ranking'}><div className="discovery-results-heading"><h2>{en?config.en:config.zh} <small>{en?'Matches':'匹配结果'}</small></h2><button type="button" aria-expanded={expanded} onClick={()=>setExpanded(x=>!x)}>{expanded?(en?'Collapse':'收起结果'):(en?'Expand':'展开结果')}</button></div>
       {expanded&&(ranked.length?<div className="discovery-grid">{ranked.map(unit=>card(unit))}</div>:<p className="discovery-empty">{componentQuery&&!componentCount?(en?'No verified component instances are published in this topic yet. Website introductions cannot establish a specific button’s appearance or motion.':'当前主题尚无已发布的组件实例。网站介绍不能证明某一个按钮的外观和动效。'):status==='ranking'||status==='waiting'?(en?'Understanding your description…':'正在理解这段描述…'):(en?'No supported match in this topic yet.':'当前主题还没有证据充分的匹配。')}</p>)}

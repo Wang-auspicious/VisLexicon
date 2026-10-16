@@ -1,4 +1,5 @@
 import { useJevSearch } from '../lib/use-jev-search.js'
+import { jevErrorMessage } from '../lib/jev-status.js'
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
 import { buildSearchIndex, searchAll, siteHref, termHref } from '../lib/search-index.js'
 import { loadPublicSiteIndex } from '../lib/public-data.js'
@@ -133,9 +134,10 @@ export default function GlobalSearch() {
           if(response.status!==429||data.error!=='MODEL_BUSY')break
           await new Promise(resolve=>setTimeout(resolve,300*(attempt+1)))
         }
-        if(!response.ok||data.scope!=='curation'||data.theme!=='')throw Error('COMPONENT_SEARCH_UNAVAILABLE')
+        if(!response.ok)throw Error(data.error||'COMPONENT_SEARCH_UNAVAILABLE')
+        if(data.scope!=='curation'||data.theme!=='')throw Error('SCOPE_MISMATCH')
         if(!controller.signal.aborted){lastComponent.current={query,token:data.refineToken};setComponentResponse({query:keyword,data})}
-      }catch{if(!controller.signal.aborted)setComponentResponse({query:keyword,data:{mode:'error',units:[]}})}
+      }catch(error){if(!controller.signal.aborted)setComponentResponse({query:keyword,data:{mode:'error',error:error.message,units:[]}})}
     },850)
     return()=>{clearTimeout(timer);controller.abort()}
   },[keyword])
@@ -291,7 +293,7 @@ export default function GlobalSearch() {
         hidden={!listOpen}
       >
         {keyword.trim()&&<p className="gs-note" role="status">{jev.status}</p>}
-        {currentComponents?.mode==='error'&&<p className="gs-note" role="status">{en ? 'Component search is unavailable. Please retry.' : '组件 Jev 暂不可用，请重试。'}</p>}
+        {currentComponents?.mode==='error'&&<p className="gs-note" role="status">{jevErrorMessage(currentComponents.error,en)}</p>}
         {loadState === 'loading' && <p className="gs-note">{en ? 'Loading the library…' : '正在加载语料…'}</p>}
         {loadState === 'error' && <p className="gs-note" role="alert">{en ? 'The library could not load. Search is unavailable.' : '语料没能加载，搜索暂不可用。'}</p>}
         {loadState === 'ready' && jev.mode==='jev' && options.length === 0 && (

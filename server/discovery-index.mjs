@@ -4,10 +4,17 @@ import crypto from 'node:crypto'
 import { atlasSearchUnits } from './atlas-search.mjs'
 import { DISCOVERY_SCOPES, inTheme } from '../src/lib/discovery-scopes.js'
 import { verifyPublicRelations } from './published-relations.mjs'
+export async function discoveryDataFile(root, name) {
+  const local = path.join(root, 'data/discovery/local-public', name)
+  try { await fs.access(local); return local }
+  catch (error) { if (error.code !== 'ENOENT') throw error }
+  return path.join(root, 'public/data/discovery', name)
+}
 export async function loadDiscoveryIndex(root,scope,theme='') {
   if(!Object.hasOwn(DISCOVERY_SCOPES,scope))throw new Error('INVALID_SCOPE')
   const read=p=>fs.readFile(path.join(root,p),'utf8').then(JSON.parse)
-  const [base,captures,relations]=await Promise.all([read(`public/data/discovery/scopes/${scope}.json`),read('public/data/discovery/index.json'),read('public/data/discovery/relations.json').catch(error=>{if(error.code==='ENOENT')return {relations:[]};throw error})])
+  const readPrivate=async name=>JSON.parse(await fs.readFile(await discoveryDataFile(root,name),'utf8'))
+  const [base,captures,relations]=await Promise.all([read(`public/data/discovery/scopes/${scope}.json`),readPrivate('index.json'),readPrivate('relations.json').catch(error=>{if(error.code==='ENOENT')return {relations:[]};throw error})])
   if(relations.revision || relations.relations?.length)verifyPublicRelations(root)
   const relatedSites=new Map()
   for(const relation of relations.relations||[]){

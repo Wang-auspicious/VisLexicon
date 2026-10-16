@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+root=$(git rev-parse --show-toplevel)
+scanner="$root/VisLexicon-browser-design-kit/frontend/scripts/check-push-secrets.mjs"
+if [ ! -f "$scanner" ]; then scanner="$root/scripts/check-push-secrets.mjs"; fi
+exec node "$scanner" --repo "$root" --pre-push --remote "$1"

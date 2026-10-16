@@ -5,7 +5,7 @@
 运行前需要用户自己在受控浏览器会话中登录并安装 OpenCLI。适配器只调用 `opencli` 的读取命令：
 
 ```powershell
-cd D:\Desktop\VisLexicon  视元
+Set-Location 'C:\path\to\VisLexicon'
 npm run social:watchlist
 npm run social:collect -- --source=x-design-resource-search --resolve
 npm run social:collect -- --source=xhs-design-websites --details --resolve

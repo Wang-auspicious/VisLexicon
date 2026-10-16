@@ -1,0 +1,261 @@
+import fs from 'node:fs/promises'
+import os from 'node:os'
+import path from 'node:path'
+import net from 'node:net'
+import crypto from 'node:crypto'
+import { spawn } from 'node:child_process'
+
+export const FREE_MODEL = 'jev-1.13-free'
+export const JEV_ENDPOINT = 'https://opencode.ai/zen/v1/systemone'
+export const JEV_LIMITS = Object.freeze({ questions: 8, optionsPerQuestion: 16, options: 64, stateChars: 12000, requestBytes: 65536 })
+const record = value => Boolean(value) && typeof value === 'object' && !Array.isArray(value)
+const probability = value => typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= 1
+const safeInt = value => Number.isSafeInteger(value) && value >= 0
+const failure = code => new Error(code)
+
+// The H2 request API includes purpose. Its working wire format sends model,
+// serialized state and questions; purpose remains local operation metadata.
+export function systemOnePayload(request, model, provider = 'kev') {
+  if (!record(request) || typeof request.purpose !== 'string' || !request.purpose.trim() || request.purpose.length > 160 || !record(request.questions)) throw failure('INVALID_JEV_REQUEST')
+  const questions = Object.entries(request.questions)
+  if (!questions.length || questions.length > JEV_LIMITS.questions) throw failure('JEV_REQUEST_TOO_LARGE')
+  let options = 0
+  for (const [id, question] of questions) {
+    if (!/^[A-Za-z][A-Za-z0-9_]{0,63}$/.test(id) || ['constructor', 'prototype'].includes(id) || !record(question) ||
+      Object.keys(question).some(key => !['type', 'instructions', 'criteria'].includes(key)) ||
+      typeof question.instructions !== 'string' || !question.instructions.trim() || question.instructions.length > 2048) throw failure('INVALID_JEV_REQUEST')
+    const validText = text => typeof text === 'string' && Boolean(text.trim()) && text.length <= 512
+    if (question.type === 'choice') {
+      if (!record(question.criteria)) throw failure('INVALID_JEV_REQUEST')
+      const choices = Object.entries(question.criteria)
+      if (choices.length < 2 || choices.length > 16 || choices.some(([key, value]) => !/^[A-Za-z0-9_][A-Za-z0-9_.-]{0,63}$/.test(key) || ['__proto__', 'constructor', 'prototype'].includes(key) || !validText(value))) throw failure('INVALID_JEV_REQUEST')
+      options += choices.length
+    } else if (question.type === 'score') {
+      if (!Array.isArray(question.criteria) || question.criteria.length < 2 || question.criteria.length > 16 || question.criteria.some(value => !validText(value))) throw failure('INVALID_JEV_REQUEST')
+      options += question.criteria.length
+    } else if (question.type === 'noul') {
+      if (question.criteria !== undefined && (!record(question.criteria) || Object.keys(question.criteria).length !== 2 || !validText(question.criteria.true) || !validText(question.criteria.false))) throw failure('INVALID_JEV_REQUEST')
+      options += 2
+    } else throw failure('INVALID_JEV_REQUEST')
+  }
+  if (options > JEV_LIMITS.options) throw failure('JEV_REQUEST_TOO_LARGE')
+  let state
+  try { state = typeof request.state === 'string' ? request.state : JSON.stringify(request.state) } catch { throw failure('INVALID_JEV_REQUEST') }
+  if (typeof state !== 'string' || !state.trim()) throw failure('INVALID_JEV_REQUEST')
+  if (state.length > JEV_LIMITS.stateChars) throw failure('JEV_REQUEST_TOO_LARGE')
+  const body = JSON.stringify({ model, state: provider === 'kev' ? state : request.state, questions: request.questions })
+  if (Buffer.byteLength(body) > JEV_LIMITS.requestBytes) throw failure('JEV_REQUEST_TOO_LARGE')
+  return body
+}
+
+function validateConfig(raw) {
+  if (!record(raw)) throw failure('JEV_CONFIG_INVALID')
+  let url
+  try { url = new URL(raw.baseUrl) } catch { throw failure('JEV_CONFIG_INVALID') }
+  if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password || url.search || url.hash || url.pathname !== '/' ||
+    typeof raw.model !== 'string' || !/^[A-Za-z0-9][A-Za-z0-9._/-]{0,95}$/.test(raw.model) ||
+    typeof raw.apiKey !== 'string' || !raw.apiKey.trim() || raw.apiKey.length > 8192 || /[\r\n\0]/.test(raw.apiKey) || raw.model.includes(raw.apiKey)) throw failure('JEV_CONFIG_INVALID')
+  for (const [key, min, max] of [['maxConcurrent', 1, 4], ['maxQueued', 0, 16], ['timeoutMs', 1, 60000], ['queueTimeoutMs', 1, 20000]]) {
+    if (raw[key] !== undefined && (!Number.isSafeInteger(raw[key]) || raw[key] < min || raw[key] > max)) throw failure('JEV_CONFIG_INVALID')
+  }
+  if (raw.ssh && (url.hostname !== '127.0.0.1' || Number(url.port) !== raw.ssh.localPort ||
+    !/^[A-Za-z0-9_.-]+$/.test(raw.ssh.host) || !/^[A-Za-z0-9_][A-Za-z0-9_.-]*$/.test(raw.ssh.user) ||
+    [raw.ssh.localPort, raw.ssh.remotePort, raw.ssh.port ?? 22].some(port => !Number.isInteger(port) || port < 1 || port > 65535))) throw failure('JEV_CONFIG_INVALID')
+  return { ...raw, baseUrl: url.origin, ssh: raw.ssh ? { ...raw.ssh } : undefined }
+}
+
+export function withLoopbackNoProxy(env = process.env) {
+  const values = new Set(`${env.NO_PROXY || ''},${env.no_proxy || ''},127.0.0.1,localhost,::1,[::1]`.split(',').map(value => value.trim()).filter(Boolean))
+  return { ...env, NODE_USE_ENV_PROXY: '1', NO_PROXY: [...values].join(','), no_proxy: [...values].join(',') }
+}
+
+export async function localCredential({ env = process.env, home = os.homedir(), readFile = fs.readFile } = {}) {
+  if (env.OPENCODE_API_KEY) return env.OPENCODE_API_KEY
+  try {
+    const auth = JSON.parse((await readFile(env.VISLEXICON_OPENCODE_AUTH || path.join(home, '.local/share/opencode/auth.json'), 'utf8')).replace(/^\uFEFF/, ''))
+    const key = auth['opencode-go']?.key || auth.opencode?.key
+    if (typeof key === 'string' && key) return key
+  } catch { /* Auth paths and file contents never reach the response or logs. */ }
+  throw failure('LOCAL_CREDENTIAL_UNAVAILABLE')
+}
+
+export async function resolveJevConfig({ env = process.env, home = os.homedir(), readFile = fs.readFile } = {}) {
+  const filename = env.VISLEXICON_JEV_CONFIG || env.EASY_WORKFLOW_DECISION_MODEL_CONFIG || path.join(home, '.pi/agent/easy-workflow/decision-model.json')
+  let content
+  try { content = await readFile(filename, 'utf8') } catch (error) {
+    if (error.code !== 'ENOENT' || env.VISLEXICON_JEV_CONFIG || env.EASY_WORKFLOW_DECISION_MODEL_CONFIG) throw failure('JEV_CONFIG_UNAVAILABLE')
+  }
+  if (content !== undefined) {
+    let raw
+    try { raw = JSON.parse(content.replace(/^\uFEFF/, '')) } catch { throw failure('JEV_CONFIG_INVALID') }
+    if (raw.enabled === false) throw failure('JEV_DISABLED')
+    // projects[] controls H2's automatic factory dispatch. VisLexicon consumes
+    // the configured endpoint explicitly, without changing that local allowlist.
+    return { ...validateConfig(raw), provider: 'kev' }
+  }
+  return { provider: 'opencode', model: FREE_MODEL, baseUrl: 'https://opencode.ai', apiKey: await localCredential({ env, home, readFile }), maxConcurrent: 4, maxQueued: 16, timeoutMs: 18000, queueTimeoutMs: 20000 }
+}
+
+class Admission {
+  active = 0
+  waiting = []
+  constructor(limit, maxQueued) { this.limit = limit; this.maxQueued = maxQueued }
+  async acquire(signal, timeoutMs) {
+    signal.throwIfAborted()
+    if (this.active < this.limit) { this.active++; return this.release() }
+    if (this.waiting.length >= this.maxQueued) throw failure('MODEL_BUSY')
+    return new Promise((resolve, reject) => {
+      const remove = () => { const index = this.waiting.indexOf(start); if (index >= 0) this.waiting.splice(index, 1); clearTimeout(timer); signal.removeEventListener('abort', abort) }
+      const abort = () => { remove(); reject(signal.reason) }
+      const start = () => { remove(); this.active++; resolve(this.release()) }
+      const timer = setTimeout(() => { remove(); reject(failure('JEV_QUEUE_TIMEOUT')) }, timeoutMs)
+      this.waiting.push(start)
+      signal.addEventListener('abort', abort, { once: true })
+      if (signal.aborted) abort()
+    })
+  }
+  release() {
+    let released = false
+    return () => { if (released) return; released = true; this.active--; if (this.active < this.limit) this.waiting[0]?.() }
+  }
+}
+
+export function listening(port) {
+  return new Promise(resolve => {
+    const socket = net.createConnection({ host: '127.0.0.1', port })
+    let done = false
+    const finish = value => { if (done) return; done = true; socket.destroy(); resolve(value) }
+    socket.setTimeout(500)
+    socket.once('connect', () => finish(true)); socket.once('error', () => finish(false)); socket.once('timeout', () => finish(false))
+  })
+}
+const tunnels = new Map()
+function cancellable(promise, signal) {
+  signal.throwIfAborted()
+  return new Promise((resolve, reject) => {
+    const abort = () => { signal.removeEventListener('abort', abort); reject(signal.reason) }
+    signal.addEventListener('abort', abort, { once: true })
+    promise.then(value => { signal.removeEventListener('abort', abort); if (signal.aborted) reject(signal.reason); else resolve(value) }, error => { signal.removeEventListener('abort', abort); reject(error) })
+    if (signal.aborted) abort()
+  })
+}
+export async function ensureJevTransport(config, signal) {
+  signal.throwIfAborted()
+  if (!config.ssh) return true
+  const ssh = config.ssh
+  const key = `${ssh.user}@${ssh.host}:${ssh.port ?? 22}/${ssh.localPort}/${ssh.remotePort}`
+  const tunnel = tunnels.get(key) || {}; tunnels.set(key, tunnel)
+  if (!tunnel.opening) tunnel.opening = (async () => {
+    if (await listening(ssh.localPort)) return true
+    if (tunnel.child && tunnel.child.exitCode === null) tunnel.child.kill()
+    const child = spawn('ssh', ['-N', '-p', String(ssh.port ?? 22), '-o', 'BatchMode=yes', '-o', 'StrictHostKeyChecking=yes',
+      '-o', 'ExitOnForwardFailure=yes', '-o', 'ConnectTimeout=10', '-o', 'ServerAliveInterval=30', '-o', 'ServerAliveCountMax=3',
+      '-L', `127.0.0.1:${ssh.localPort}:127.0.0.1:${ssh.remotePort}`, `${ssh.user}@${ssh.host}`], { stdio: 'ignore', windowsHide: true })
+    tunnel.child = child; child.on('error', () => {}); child.unref()
+    child.once('exit', () => { if (tunnel.child === child) tunnel.child = undefined })
+    for (let attempt = 0; attempt < 40; attempt++) {
+      if (await listening(ssh.localPort)) return true
+      if (child.exitCode !== null || !child.pid) return false
+      await new Promise(resolve => setTimeout(resolve, 250))
+    }
+    child.kill(); return false
+  })().finally(() => { tunnel.opening = undefined })
+  // Another request can still be using the shared SSH connection after abort.
+  return cancellable(tunnel.opening, signal)
+}
+
+async function readResponse(response) {
+  const reader = response.body?.getReader()
+  if (!reader) {
+    const raw = await response.json()
+    if (Buffer.byteLength(JSON.stringify(raw)) > 128 * 1024) throw failure('INVALID_MODEL_RESPONSE')
+    return raw
+  }
+  const chunks = []; let bytes = 0
+  for (;;) {
+    const item = await reader.read()
+    if (item.done) break
+    bytes += item.value.byteLength
+    if (bytes > 128 * 1024) { await reader.cancel(); throw failure('INVALID_MODEL_RESPONSE') }
+    chunks.push(item.value)
+  }
+  try { return JSON.parse(Buffer.concat(chunks).toString('utf8')) } catch { throw failure('INVALID_MODEL_RESPONSE') }
+}
+function validateResponse(raw, request, config) {
+  if (!record(raw)) throw failure('INVALID_MODEL_RESPONSE')
+  if ((config.provider === 'kev' ? raw.deployment_model : raw.model) !== config.model) throw failure('UNEXPECTED_MODEL')
+  if (config.provider === 'opencode' && raw.cost != null && Number(raw.cost) !== 0) throw failure('FREE_MODEL_COST_CHANGED')
+  if (!record(raw.answers) || Object.keys(raw.answers).length !== Object.keys(request.questions).length) throw failure('INVALID_MODEL_RESPONSE')
+  if (config.provider === 'kev' && (!record(raw.usage) || !safeInt(raw.usage.input_tokens) || !safeInt(raw.usage.output_tokens) || !Number.isFinite(raw.latency_ms) || raw.latency_ms < 0)) throw failure('INVALID_MODEL_RESPONSE')
+  for (const [id, question] of Object.entries(request.questions)) {
+    const answer = raw.answers[id]
+    if (!record(answer) || answer.type !== question.type) throw failure('INVALID_MODEL_SCORE')
+    if (question.type === 'noul') { if (!probability(answer.noul)) throw failure('INVALID_MODEL_RESPONSE'); continue }
+    const keys = question.type === 'choice' ? Object.keys(question.criteria) : question.criteria.map((_, index) => String(index))
+    if (question.type === 'score' && (!Number.isFinite(answer.score) || answer.score < 0 || answer.score > keys.length - 1)) throw failure('INVALID_MODEL_SCORE')
+    if (question.type === 'choice' && !keys.includes(answer.choice)) throw failure('INVALID_MODEL_RESPONSE')
+    if (config.provider === 'kev') {
+      const distribution = answer.probabilities
+      if (!probability(answer.confidence) || !record(distribution) || Object.keys(distribution).length !== keys.length || keys.some(key => !Object.hasOwn(distribution, key) || !probability(distribution[key])) || Math.abs(Object.values(distribution).reduce((a, b) => a + b, 0) - 1) > 0.02) throw failure('INVALID_MODEL_RESPONSE')
+      if (question.type === 'choice' && distribution[answer.choice] + 0.00001 < Math.max(...Object.values(distribution))) throw failure('INVALID_MODEL_RESPONSE')
+    }
+  }
+  return { answers: raw.answers, provider: config.provider, model: config.model, usage: raw.usage ?? null, cost: config.provider === 'kev' ? null : raw.cost ?? null, costStatus: config.provider === 'kev' ? 'unknown' : raw.cost == null ? 'unknown' : 'reported' }
+}
+
+export function createJevProvider(raw, { fetchImpl = fetch, transport = ensureJevTransport, probe = listening } = {}) {
+  const config = validateConfig(raw)
+  config.provider = raw.provider || 'kev'
+  if (!['kev', 'opencode'].includes(config.provider) || (config.provider === 'opencode' && config.model !== FREE_MODEL)) throw failure('JEV_CONFIG_INVALID')
+  const quota = new Admission(config.maxConcurrent ?? 4, config.maxQueued ?? 16)
+  const endpoint = config.provider === 'opencode' ? JEV_ENDPOINT : `${config.baseUrl}/v1/systemone`
+  return {
+    provider: config.provider,
+    model: config.model,
+    payload: request => systemOnePayload(request, config.model, config.provider),
+    async status() {
+      const tunnel = config.ssh ? await probe(config.ssh.localPort) ? 'connected' : 'disconnected' : 'not-required'
+      return { configured: true, provider: config.provider, model: config.model, tunnel, transport: config.ssh ? 'ssh' : 'http', active: quota.active, queued: quota.waiting.length, maxConcurrent: quota.limit, maxQueued: quota.maxQueued }
+    },
+    async decide(request, { signal = new AbortController().signal } = {}) {
+      const body = systemOnePayload(request, config.model, config.provider)
+      const release = await quota.acquire(signal, config.queueTimeoutMs ?? 20000)
+      try {
+        const bounded = AbortSignal.any([signal, AbortSignal.timeout(config.timeoutMs ?? 60000)])
+        if (!await transport(config, bounded)) throw failure('JEV_TUNNEL_DISCONNECTED')
+        bounded.throwIfAborted()
+        const response = await fetchImpl(endpoint, { method: 'POST', signal: bounded, headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${config.apiKey}` }, body })
+        bounded.throwIfAborted()
+        if (!response.ok) {
+          if ([400, 413, 422].includes(response.status) && typeof response.text === 'function') {
+            // Only a recognized error category escapes, never upstream text.
+            const detail = await response.text()
+            if (/max_tokens_exceeded|context_length_exceeded|request_too_large|over the [\d,]+-token limit|total question-row work exceeds [\d,]+ tokens/iu.test(detail)) throw failure('JEV_REQUEST_TOO_LARGE')
+          } else await response.body?.cancel()
+          throw failure(`JEV_HTTP_${response.status}`)
+        }
+        const rawResponse = await readResponse(response)
+        bounded.throwIfAborted()
+        return validateResponse(rawResponse, request, config)
+      } finally { release() }
+    },
+  }
+}
+
+let cachedProvider
+export async function getJevProvider({ key, fetchImpl } = {}) {
+  // Explicit legacy credentials support existing offline harnesses; ordinary
+  // application requests always select local Kev configuration first.
+  if (key) return createJevProvider({ provider: 'opencode', model: FREE_MODEL, baseUrl: 'https://opencode.ai', apiKey: key, timeoutMs: 18000 }, { fetchImpl })
+  const config = await resolveJevConfig()
+  const digest = crypto.createHash('sha256').update(JSON.stringify(config)).digest('hex')
+  if (cachedProvider?.digest !== digest) cachedProvider = { digest, client: createJevProvider(config) }
+  return cachedProvider.client
+}
+export async function jevStatus() {
+  try { return { ...await (await getJevProvider()).status(), scope: 'loopback-only' } }
+  catch (error) {
+    const code = ['JEV_DISABLED', 'JEV_CONFIG_INVALID', 'JEV_CONFIG_UNAVAILABLE', 'LOCAL_CREDENTIAL_UNAVAILABLE'].includes(error.message) ? error.message : 'MODEL_UNAVAILABLE'
+    return { configured: false, provider: null, model: null, tunnel: 'unavailable', error: code, scope: 'loopback-only' }
+  }
+}
