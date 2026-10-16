@@ -1,0 +1,294 @@
+{
+ "specVersion": "1",
+ "generatedAt": "2026-10-08T15:29:51.646Z",
+ "counts": {
+  "ppt": 1,
+  "image": 1,
+  "science": 1,
+  "skill": 0
+ },
+ "items": [
+  {
+   "specVersion": "1",
+   "id": "img-duotone-halftone",
+   "shelf": "image",
+   "kind": "effect",
+   "name": {
+    "zh": "双色调 + 网点",
+    "en": "Duotone + halftone"
+   },
+   "summary": {
+    "zh": "把任意照片变成两色油墨或旋转网点的海报效果；颜色、网点大小、角度都是参数。",
+    "en": "Turn any photo into a two-ink or rotated-dot poster; colours, cell size and angle are parameters."
+   },
+   "tags": [
+    "duotone",
+    "halftone",
+    "双色调",
+    "网点",
+    "海报",
+    "印刷感",
+    "pillow"
+   ],
+   "files": [
+    {
+     "path": "/resources/img-duotone-halftone/effect.py",
+     "role": "code",
+     "bytes": 3303,
+     "sha256": "741b84f6acf3cc58bf572d9a1d070682a82a180648644efc6bc93a6bb886b819"
+    },
+    {
+     "path": "/resources/img-duotone-halftone/input.jpg",
+     "role": "sample-input",
+     "bytes": 88255,
+     "sha256": "fd98d05804ffd9649c781c74200786e5563420084714032cb3ebd33d137ea96b"
+    },
+    {
+     "path": "/resources/img-duotone-halftone/output-duotone.png",
+     "role": "output",
+     "bytes": 382756,
+     "sha256": "d3808e749e3d1f6edd53c830bcf9ae5f08476c620aaf1e78a581ecc0bf573278"
+    },
+    {
+     "path": "/resources/img-duotone-halftone/output-halftone.png",
+     "role": "output",
+     "bytes": 198911,
+     "sha256": "c8e1eb44f1c53f710527ef8122bb91a6a63ba2cf0f04f892bf8a5a508d98db0d"
+    },
+    {
+     "path": "/resources/img-duotone-halftone/preview.jpg",
+     "role": "output",
+     "bytes": 364868,
+     "sha256": "231bd66f9ce6395604ca983cc0bc2ce404894aa79ce3807a17a86cf9a0d7a97d"
+    }
+   ],
+   "previews": [
+    {
+     "url": "/resources/img-duotone-halftone/preview.jpg",
+     "width": 1576,
+     "height": 600
+    }
+   ],
+   "run": {
+    "runtime": "python",
+    "requires": [
+     "Pillow",
+     "numpy"
+    ],
+    "command": "python effect.py input.jpg out.png --dark \"#14213d\" --light \"#f4e7c5\" --cell 7 --angle 45",
+    "inputs": {
+     "--mode": "halftone | duotone",
+     "--cell": "网点格子像素",
+     "--angle": "网点角度"
+    },
+    "limits": {
+     "zh": "不是 Photoshop 半调滤镜的全部：不做 CMYK 分色、不模拟网点扩张；超大图（>4000px）网点绘制较慢。",
+     "en": "Not Photoshop's full halftone: no CMYK separation or dot gain; very large images (>4000px) draw slowly."
+    }
+   },
+   "provenance": {
+    "origin": "vislexicon-authored",
+    "author": "VisLexicon",
+    "license": "MIT",
+    "sampleInput": {
+     "what": "Grace Hopper 肖像，美国海军官方照片（公有领域）",
+     "copiedFrom": "https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/mpl-data/sample_data/grace_hopper.jpg"
+    }
+   }
+  },
+  {
+   "specVersion": "1",
+   "id": "ppt-quiet-keynote",
+   "shelf": "ppt",
+   "kind": "template",
+   "name": {
+    "zh": "Quiet Keynote 模板",
+    "en": "Quiet Keynote template"
+   },
+   "summary": {
+    "zh": "6 种版式（封面 / 章节 / 大数字 / 左右对比 / 图文 / 结尾）的 16:9 模板，内容写在一个 JSON 里，一条命令出 .pptx，文字全部可再编辑。",
+    "en": "A 16:9 template with six layouts (cover, section, big number, compare, image, end); content lives in one JSON, one command builds an editable .pptx."
+   },
+   "tags": [
+    "pptx",
+    "keynote",
+    "模板",
+    "极简",
+    "python-pptx",
+    "大数字",
+    "对比页"
+   ],
+   "files": [
+    {
+     "path": "/resources/ppt-quiet-keynote/build_deck.py",
+     "role": "code",
+     "bytes": 6927,
+     "sha256": "7c16516f2577cc638c64f833be7bb6697cb779653d9aa232204e626273e646c0"
+    },
+    {
+     "path": "/resources/ppt-quiet-keynote/sample-content.json",
+     "role": "sample-input",
+     "bytes": 1562,
+     "sha256": "dcd2b0c32d07f2373c38f817fc72989a0405c714428a10b5edb13f2beee01d98"
+    },
+    {
+     "path": "/resources/ppt-quiet-keynote/quiet-keynote.pptx",
+     "role": "template",
+     "bytes": 158775,
+     "sha256": "dba847e33de2fc578c283c52041a3e8bc42ab014e8d03d3287680c91bd25237b"
+    },
+    {
+     "path": "/resources/ppt-quiet-keynote/previews/slide-01.png",
+     "role": "output",
+     "bytes": 18739,
+     "sha256": "cf4bb4dbcb6cda4fa9eef5d0fcbd5bc6c9a83ccc70e1fea01a0fe873f70aa4e4"
+    },
+    {
+     "path": "/resources/ppt-quiet-keynote/previews/slide-03.png",
+     "role": "output",
+     "bytes": 25185,
+     "sha256": "2cc062ead2dd0ea0a180dac30629fcc1ce22a83313629dd7c8b5b3c80c77a085"
+    },
+    {
+     "path": "/resources/ppt-quiet-keynote/previews/slide-04.png",
+     "role": "output",
+     "bytes": 145999,
+     "sha256": "1d96a443bc57f666d80552c7d97307d8637b08d69d57cbc8f288a664da8c4e79"
+    },
+    {
+     "path": "/resources/ppt-quiet-keynote/previews/slide-05.png",
+     "role": "output",
+     "bytes": 128171,
+     "sha256": "715615f1580deea96e559a77715fcc12d7df20bdd86aa743c4a6f171cb174c41"
+    }
+   ],
+   "previews": [
+    {
+     "url": "/resources/ppt-quiet-keynote/previews/slide-01.png",
+     "width": 1600,
+     "height": 900
+    },
+    {
+     "url": "/resources/ppt-quiet-keynote/previews/slide-03.png",
+     "width": 1600,
+     "height": 900
+    },
+    {
+     "url": "/resources/ppt-quiet-keynote/previews/slide-04.png",
+     "width": 1600,
+     "height": 900
+    },
+    {
+     "url": "/resources/ppt-quiet-keynote/previews/slide-05.png",
+     "width": 1600,
+     "height": 900
+    }
+   ],
+   "run": {
+    "runtime": "python",
+    "requires": [
+     "python-pptx"
+    ],
+    "command": "python build_deck.py --content sample-content.json --out my.pptx",
+    "inputs": {
+     "--content": "JSON：footer + slides[]，每页 layout 取 cover/section/number/compare/image/end",
+     "--render": "可选：用本机 PowerPoint 导出 PNG（Windows + Office）"
+    },
+    "limits": {
+     "zh": "预览图由 PowerPoint 真实渲染；字体用 Segoe UI + 微软雅黑，Mac Keynote 打开会替换为系统字体。没有动画和母版主题。",
+     "en": "Previews are real PowerPoint renders; fonts are Segoe UI + Microsoft YaHei and get substituted on Mac. No animations or slide-master theme."
+    }
+   },
+   "provenance": {
+    "origin": "vislexicon-authored",
+    "author": "VisLexicon",
+    "license": "MIT"
+   }
+  },
+  {
+   "specVersion": "1",
+   "id": "sci-quiet-panels",
+   "shelf": "science",
+   "kind": "figure-style",
+   "name": {
+    "zh": "安静三联图（Nature 双栏）",
+    "en": "Quiet panels (Nature double column)"
+   },
+   "summary": {
+    "zh": "一个 matplotlib 样式文件加一个出图脚本：置信带曲线、带散点和显著性的分组柱、相关性热图，180mm 宽，导出可编辑 SVG/PDF。",
+    "en": "One matplotlib style plus one script: CI-band curves, grouped bars with points and significance, a correlation heatmap; 180 mm wide, editable SVG/PDF."
+   },
+   "tags": [
+    "matplotlib",
+    "nature",
+    "okabe-ito",
+    "色盲友好",
+    "多面板",
+    "显著性",
+    "热图",
+    "误差线"
+   ],
+   "files": [
+    {
+     "path": "/resources/sci-quiet-panels/make_figure.py",
+     "role": "code",
+     "bytes": 4891,
+     "sha256": "06baa44c7923b37c864af13f5cd07d3af4c2f0d4f8fa506ea7cafbb2ecdd7306"
+    },
+    {
+     "path": "/resources/sci-quiet-panels/quiet.mplstyle",
+     "role": "template",
+     "bytes": 824,
+     "sha256": "32880aeab603396f05a01f212e3538d532bafa6ba65ef7e14f6127b5e53932d8"
+    },
+    {
+     "path": "/resources/sci-quiet-panels/figure.svg",
+     "role": "output",
+     "bytes": 53515,
+     "sha256": "e2a072e7545a0d071ab30953d7ad3048cd6b8f1b852151fbe29effdb78906338"
+    },
+    {
+     "path": "/resources/sci-quiet-panels/figure.pdf",
+     "role": "output",
+     "bytes": 48412,
+     "sha256": "61b04c4b8cdca50804c4c551e9251c32e6724a6c21e93498889ac4cfb1136b51"
+    },
+    {
+     "path": "/resources/sci-quiet-panels/figure.png",
+     "role": "output",
+     "bytes": 130476,
+     "sha256": "a4edb0c351403c82cb6a0c0544268eb310a1acb4832755da4ed7b0657c4122d8"
+    }
+   ],
+   "previews": [
+    {
+     "url": "/resources/sci-quiet-panels/figure.png",
+     "width": 2110,
+     "height": 719
+    }
+   ],
+   "run": {
+    "runtime": "python",
+    "requires": [
+     "numpy",
+     "matplotlib>=3.8"
+    ],
+    "command": "python make_figure.py --out figure",
+    "outputs": {
+     "figure.svg": "可编辑矢量",
+     "figure.pdf": "投稿用，字体可编辑（fonttype 42）",
+     "figure.png": "300dpi 预览"
+    },
+    "limits": {
+     "zh": "显著性用正态近似，正式投稿请换 scipy 的 Welch t 检验；示例数据是随机生成的。",
+     "en": "Significance uses a normal approximation; use scipy's Welch t-test for submission. Demo data is random."
+    }
+   },
+   "provenance": {
+    "origin": "vislexicon-authored",
+    "author": "VisLexicon",
+    "license": "MIT"
+   }
+  }
+ ]
+}

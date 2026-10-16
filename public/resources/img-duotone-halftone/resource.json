@@ -1,0 +1,74 @@
+{
+  "specVersion": "1",
+  "id": "img-duotone-halftone",
+  "shelf": "image",
+  "kind": "effect",
+  "name": {
+    "zh": "双色调 + 网点",
+    "en": "Duotone + halftone"
+  },
+  "summary": {
+    "zh": "把任意照片变成两色油墨或旋转网点的海报效果；颜色、网点大小、角度都是参数。",
+    "en": "Turn any photo into a two-ink or rotated-dot poster; colours, cell size and angle are parameters."
+  },
+  "tags": [
+    "duotone",
+    "halftone",
+    "双色调",
+    "网点",
+    "海报",
+    "印刷感",
+    "pillow"
+  ],
+  "files": [
+    [
+      "effect.py",
+      "code"
+    ],
+    [
+      "input.jpg",
+      "sample-input"
+    ],
+    [
+      "output-duotone.png",
+      "output"
+    ],
+    [
+      "output-halftone.png",
+      "output"
+    ],
+    [
+      "preview.jpg",
+      "output"
+    ]
+  ],
+  "previews": [
+    "preview.jpg"
+  ],
+  "run": {
+    "runtime": "python",
+    "requires": [
+      "Pillow",
+      "numpy"
+    ],
+    "command": "python effect.py input.jpg out.png --dark \"#14213d\" --light \"#f4e7c5\" --cell 7 --angle 45",
+    "inputs": {
+      "--mode": "halftone | duotone",
+      "--cell": "网点格子像素",
+      "--angle": "网点角度"
+    },
+    "limits": {
+      "zh": "不是 Photoshop 半调滤镜的全部：不做 CMYK 分色、不模拟网点扩张；超大图（>4000px）网点绘制较慢。",
+      "en": "Not Photoshop's full halftone: no CMYK separation or dot gain; very large images (>4000px) draw slowly."
+    }
+  },
+  "provenance": {
+    "origin": "vislexicon-authored",
+    "author": "VisLexicon",
+    "license": "MIT",
+    "sampleInput": {
+      "what": "Grace Hopper 肖像，美国海军官方照片（公有领域）",
+      "copiedFrom": "https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/mpl-data/sample_data/grace_hopper.jpg"
+    }
+  }
+}

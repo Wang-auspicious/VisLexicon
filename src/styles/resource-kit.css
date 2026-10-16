@@ -1,0 +1,53 @@
+/* 资源框架（ResourceKit）：栏目顶部的“可直接用”货架 + 详情页。只用站点 token。 */
+.rk-shelf { max-width: 1240px; margin: 28px auto 8px; padding: 0 24px; }
+.rk-shelf > header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px; }
+.rk-shelf > header h2 { margin: 0; font-size: 17px; font-weight: 650; color: var(--vl-ink-pure); letter-spacing: -0.01em; }
+.rk-shelf > header span { font-size: 13px; color: var(--vl-ink-3); font-variant-numeric: tabular-nums; }
+.rk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.rk-card { display: flex; flex-direction: column; text-align: left; padding: 0; border: 1px solid var(--vl-line); border-radius: 14px; background: var(--vl-surface); overflow: hidden; cursor: pointer; font: inherit; color: inherit; transition: border-color .18s, transform .22s cubic-bezier(.22, 1, .36, 1), box-shadow .22s; }
+.rk-card:hover { border-color: var(--vl-line-strong); transform: translateY(-2px); box-shadow: 0 10px 28px -16px rgba(0, 0, 0, .25); }
+.rk-card:focus-visible { outline: 2px solid var(--vl-ink); outline-offset: 2px; }
+.rk-card-img { display: block; aspect-ratio: 16 / 9; background: var(--vl-surface-sunk); border-bottom: 1px solid var(--vl-line); }
+.rk-card-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.rk-card-img img[data-fit='contain'] { object-fit: contain; background: #fff; }
+.rk-card-body { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 16px; }
+.rk-card-body strong { font-size: 15px; font-weight: 650; color: var(--vl-ink-pure); }
+.rk-card-body span { font-size: 13px; line-height: 1.6; color: var(--vl-ink-2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.rk-card-body em { font-style: normal; font-size: 12px; color: var(--vl-ink-3); }
+
+.rk-detail { max-width: 1240px; margin: 0 auto; padding: 24px 24px 72px; }
+.rk-back { border: 1px solid var(--vl-line); background: var(--vl-surface); color: var(--vl-ink-2); border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 13px; cursor: pointer; }
+.rk-back:hover { border-color: var(--vl-ink); color: var(--vl-ink); }
+.rk-detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 36px; margin-top: 20px; }
+.rk-stage { margin: 0; border: 1px solid var(--vl-line); border-radius: 16px; background: var(--vl-surface); padding: 16px; display: flex; justify-content: center; }
+.rk-stage img { max-width: 100%; max-height: 560px; height: auto; width: auto; display: block; border-radius: 6px; }
+.rk-thumbs { display: flex; gap: 8px; margin-top: 10px; overflow-x: auto; }
+.rk-thumbs button { flex: none; width: 120px; aspect-ratio: 16 / 9; padding: 0; border: 1px solid var(--vl-line); border-radius: 8px; overflow: hidden; cursor: pointer; background: var(--vl-surface); opacity: .65; transition: opacity .15s, border-color .15s; }
+.rk-thumbs button[aria-selected='true'], .rk-thumbs button:hover { opacity: 1; border-color: var(--vl-ink); }
+.rk-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rk-detail h1 { margin: 28px 0 8px; font-size: 30px; letter-spacing: -0.02em; color: var(--vl-ink-pure); }
+.rk-lead { margin: 0 0 24px; font-size: 16px; line-height: 1.75; color: var(--vl-ink-2); max-width: 720px; }
+.rk-run { border: 1px solid var(--vl-line); border-radius: 14px; padding: 16px 18px; background: var(--vl-surface); }
+.rk-run-head { display: flex; align-items: center; justify-content: space-between; }
+.rk-run h2, .rk-side h2 { margin: 0; font-size: 13px; font-weight: 650; color: var(--vl-ink-3); letter-spacing: .02em; }
+.rk-run pre { margin: 12px 0 10px; padding: 12px 14px; border-radius: 10px; background: var(--vl-surface-sunk); overflow-x: auto; font-size: 13px; line-height: 1.6; }
+.rk-copy { border: 0; background: var(--vl-accent); color: var(--vl-accent-ink); border-radius: 8px; padding: 6px 12px; font: inherit; font-size: 12.5px; font-weight: 600; cursor: pointer; }
+.rk-meta { margin: 0; font-size: 12.5px; color: var(--vl-ink-3); }
+.rk-meta code { font-size: 12px; }
+.rk-io { margin: 12px 0 0; display: grid; gap: 6px; }
+.rk-io div { display: grid; grid-template-columns: 110px 1fr; gap: 10px; font-size: 13px; }
+.rk-io dt { font-family: ui-monospace, monospace; color: var(--vl-ink); }
+.rk-io dd { margin: 0; color: var(--vl-ink-2); }
+.rk-side { display: flex; flex-direction: column; gap: 22px; }
+.rk-side p { margin: 8px 0 0; font-size: 13.5px; line-height: 1.7; color: var(--vl-ink-2); }
+.rk-files { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.rk-files li { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; padding: 7px 10px; border: 1px solid var(--vl-line); border-radius: 8px; background: var(--vl-surface); }
+.rk-files a { color: var(--vl-ink); font-weight: 600; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rk-files a:hover { text-decoration: underline; }
+.rk-files span { color: var(--vl-ink-3); flex: none; }
+.rk-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.rk-tags span { font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--vl-accent-wash); color: var(--vl-ink-2); }
+@media (max-width: 860px) {
+  .rk-detail-grid { grid-template-columns: minmax(0, 1fr); }
+  .rk-shelf, .rk-detail { padding-left: 16px; padding-right: 16px; }
+}

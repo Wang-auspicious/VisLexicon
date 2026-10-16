@@ -1,0 +1,44 @@
+{
+  "specVersion": "1",
+  "note": "受控词表。名字一律是普通人会说的话；专业术语只放在 aliases 里供搜索。",
+  "kinds": [
+    { "id": "gallery", "zh": "灵感合集", "en": "Gallery", "ask": "它主要是把很多别的网站/作品收在一起给你逛吗？", "takeaway": "更多好网站（上游）", "record": "收什么 + 怎么监测更新" },
+    { "id": "component-source", "zh": "组件源", "en": "Component source", "ask": "它让你直接复制或安装现成的界面组件、区块吗？", "takeaway": "一个个组件", "record": "整站组件风格一句话 + 组件实例（截图+实测数值）" },
+    { "id": "design-system", "zh": "设计规范", "en": "Design system", "ask": "它是某个团队公开的设计规则与 token 文档吗？", "takeaway": "规则和数值", "record": "tokens + 原始 DESIGN 文档" },
+    { "id": "assets", "zh": "素材与模板", "en": "Assets & templates", "ask": "它提供能下载的字体、图标、图片、3D、模板文件吗？", "takeaway": "文件", "record": "素材类型 + 格式 + 许可 + 预览" },
+    { "id": "tool", "zh": "工具与库", "en": "Tools & libraries", "ask": "它是你用来生成、编辑东西的工具或代码库吗？", "takeaway": "一种能力", "record": "输入→产出 + 能实现哪些图鉴单元" },
+    { "id": "knowledge", "zh": "知识", "en": "Knowledge", "ask": "它主要是文章、教程、课程、书吗？", "takeaway": "看懂一件事", "record": "主题 + 形式 + 难度" },
+    { "id": "work", "zh": "作品", "en": "Work", "ask": "以上都不是：它本身就是一个值得看的设计（落地页、产品站、作品集……）", "takeaway": "它的设计语言", "record": "DESIGN.md（9 段）+ 3 张截图 + 页面类型" }
+  ],
+  "styles": [
+    { "id": "minimal", "zh": "极简留白", "en": "Minimal", "plain": "东西很少，大量留白，一两种颜色" },
+    { "id": "apple-like", "zh": "苹果式精致", "en": "Apple-like", "plain": "大字号标题、细腻阴影、柔和灰底、动效克制" },
+    { "id": "glass", "zh": "毛玻璃", "en": "Glass", "plain": "半透明模糊的面板叠在彩色背景上", "aliases": ["glassmorphism"] },
+    { "id": "soft-3d", "zh": "软拟物", "en": "Soft 3D", "plain": "像从同色底板里鼓出来或压进去", "aliases": ["neumorphism"] },
+    { "id": "brutal", "zh": "粗野直给", "en": "Brutal", "plain": "粗黑描边、硬投影、撞色、故意不精致", "aliases": ["neo-brutalism"] },
+    { "id": "terminal", "zh": "终端字符", "en": "Terminal / ASCII", "plain": "全是等宽字、字符画、像命令行", "aliases": ["ascii", "tui"] },
+    { "id": "pixel", "zh": "像素", "en": "Pixel", "plain": "8-bit 像素块、像老游戏" },
+    { "id": "editorial", "zh": "杂志排版", "en": "Editorial", "plain": "衬线大标题、分栏、像印刷杂志" },
+    { "id": "swiss", "zh": "瑞士网格", "en": "Swiss grid", "plain": "严格网格、无衬线、左对齐、信息密" },
+    { "id": "dark-neon", "zh": "暗底霓虹", "en": "Dark neon", "plain": "黑底上发光的亮色线条和渐变" },
+    { "id": "gradient-mesh", "zh": "弥散渐变", "en": "Mesh gradient", "plain": "大片柔和、晕开的彩色渐变" },
+    { "id": "bento", "zh": "便当格", "en": "Bento", "plain": "大小不一的圆角卡片拼成一面墙" },
+    { "id": "hand-drawn", "zh": "手绘", "en": "Hand-drawn", "plain": "线条抖动、像随手画的" },
+    { "id": "clay", "zh": "黏土 3D", "en": "Clay 3D", "plain": "圆润哑光的 3D 小物件" },
+    { "id": "retro", "zh": "复古", "en": "Retro", "plain": "旧报纸、老电脑、胶片颗粒的年代感" },
+    { "id": "y2k", "zh": "千禧镭射", "en": "Y2K", "plain": "金属镭射、气泡字、2000 年代的未来感" },
+    { "id": "playful", "zh": "活泼卡通", "en": "Playful", "plain": "高饱和、圆滚滚、带小插画" },
+    { "id": "corporate", "zh": "规整商务", "en": "Corporate", "plain": "蓝灰配色、规整表格和表单，后台常见" },
+    { "id": "material", "zh": "Material 风", "en": "Material", "plain": "谷歌那套：浮起的卡片、波纹点击、圆角胶囊" },
+    { "id": "skeuomorphic", "zh": "拟物", "en": "Skeuomorphic", "plain": "像真实材质：皮革、金属、按钮能按下去" },
+    { "id": "motion-heavy", "zh": "动效驱动", "en": "Motion-heavy", "plain": "滚动、悬停时大量动画是主角" },
+    { "id": "monochrome", "zh": "黑白单色", "en": "Monochrome", "plain": "只有黑白灰，靠字和间距撑场面" }
+  ],
+  "componentTypes": [
+    "button", "button-group", "segmented-control", "toggle", "switch", "checkbox", "radio", "input", "textarea", "select", "combobox",
+    "slider", "date-picker", "calendar", "form", "card", "list", "table", "tabs", "accordion", "menu", "dropdown", "navbar", "sidebar",
+    "breadcrumb", "pagination", "stepper", "modal", "drawer", "popover", "tooltip", "toast", "alert", "banner", "badge", "tag", "avatar",
+    "progress", "loader", "skeleton", "chart", "carousel", "marquee", "dock", "command-palette", "chat", "upload", "text-effect",
+    "background-effect", "cursor-effect", "hero", "pricing", "footer", "cta", "testimonial", "faq", "feature-grid", "icon", "media", "other"
+  ]
+}

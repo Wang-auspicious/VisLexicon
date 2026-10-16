@@ -3,9 +3,10 @@ import expanded from '../data/resource-studies.json' with { type: 'json' }
 import designDocuments from '../data/design-documents.json' with { type: 'json' }
 import presentationResources from '../data/presentation-resources.json' with { type: 'json' }
 import graphicsResources from '../data/graphics-resources.json' with { type: 'json' }
+import { mergeResourceKits } from './resource-kits.js'
 
 // New, source-backed studies share the existing reading and search interface.
-export default [...original, ...expanded, ...designDocuments, ...presentationResources, ...graphicsResources]
+export default mergeResourceKits([...original, ...expanded, ...designDocuments, ...presentationResources, ...graphicsResources])
 
 export function practiceTopics(practices, category) {
   const seen = new Map()

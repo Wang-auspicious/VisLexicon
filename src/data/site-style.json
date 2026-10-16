@@ -1,0 +1,637 @@
+{
+ "schema": "vislexicon.site-style.v1",
+ "method": "Spec §2.6.1 — subject by kind; 22-word vocabulary; <=3 tags each citing an image; program-checked",
+ "vocab": "/spec/v1/vocab.json#styles",
+ "labels": {
+  "minimal": {
+   "zh": "极简留白",
+   "en": "Minimal"
+  },
+  "apple-like": {
+   "zh": "苹果式精致",
+   "en": "Apple-like"
+  },
+  "glass": {
+   "zh": "毛玻璃",
+   "en": "Glass"
+  },
+  "soft-3d": {
+   "zh": "软拟物",
+   "en": "Soft 3D"
+  },
+  "brutal": {
+   "zh": "粗野直给",
+   "en": "Brutal"
+  },
+  "terminal": {
+   "zh": "终端字符",
+   "en": "Terminal / ASCII"
+  },
+  "pixel": {
+   "zh": "像素",
+   "en": "Pixel"
+  },
+  "editorial": {
+   "zh": "杂志排版",
+   "en": "Editorial"
+  },
+  "swiss": {
+   "zh": "瑞士网格",
+   "en": "Swiss grid"
+  },
+  "dark-neon": {
+   "zh": "暗底霓虹",
+   "en": "Dark neon"
+  },
+  "gradient-mesh": {
+   "zh": "弥散渐变",
+   "en": "Mesh gradient"
+  },
+  "bento": {
+   "zh": "便当格",
+   "en": "Bento"
+  },
+  "hand-drawn": {
+   "zh": "手绘",
+   "en": "Hand-drawn"
+  },
+  "clay": {
+   "zh": "黏土 3D",
+   "en": "Clay 3D"
+  },
+  "retro": {
+   "zh": "复古",
+   "en": "Retro"
+  },
+  "y2k": {
+   "zh": "千禧镭射",
+   "en": "Y2K"
+  },
+  "playful": {
+   "zh": "活泼卡通",
+   "en": "Playful"
+  },
+  "corporate": {
+   "zh": "规整商务",
+   "en": "Corporate"
+  },
+  "material": {
+   "zh": "Material 风",
+   "en": "Material"
+  },
+  "skeuomorphic": {
+   "zh": "拟物",
+   "en": "Skeuomorphic"
+  },
+  "motion-heavy": {
+   "zh": "动效驱动",
+   "en": "Motion-heavy"
+  },
+  "monochrome": {
+   "zh": "黑白单色",
+   "en": "Monochrome"
+  }
+ },
+ "entries": {
+  "21st-dev": {
+   "subject": "components",
+   "subjectVisible": true,
+   "mixed": true,
+   "styles": [
+    {
+     "id": "minimal",
+     "images": [
+      1,
+      3
+     ],
+     "evidenceZh": "浅色卡片大量留白，点缀几个小圆点色块"
+    }
+   ],
+   "signatureZh": "",
+   "basis": "screenshots-v1",
+   "model": "deepseek-v4.1-flash",
+   "at": "2026-10-15",
+   "dropped": [
+    "dark-neon:legacy full-page pixels lack component-region/background evidence"
+   ]
+  },
+  "a11y-dialog": {
+   "subject": "headless",
+   "unstyled": true,
+   "styles": [],
+   "basis": "rule:headless-accessible-primitives"
+  },
+  "a11y-project": {
+   "subject": null
+  },
+  "zdog-4f4f8c69": {
+   "subject": null
+  },
+  "3dicons-971c9f6a": {
+   "subject": "assets",
+   "subjectVisible": true,
+   "mixed": false,
+   "styles": [
+    {
+     "id": "soft-3d",
+     "images": [
+      1,
+      2
+     ],
+     "evidenceZh": "圆润立体图标带柔和明暗渐变"
+    }
+   ],
+   "signatureZh": "圆润的立体图标用柔和明暗塑形，表面有平滑色彩渐变",
+   "subjectEvidence": [
+    {
+     "url": "https://3dicons.co/",
+     "selector": "[class*=preview i]:not(nav *) >> nth=0",
+     "region": "subject",
+     "shellExcluded": true,
+     "sha256": "049ff1114df7fbcbb1f165e8b50fc4685616fa2c37ec297dccbfa625065ad0b9",
+     "colorScheme": {
+      "requested": "light",
+      "media": "light",
+      "bodyBackground": "rgb(255, 255, 255)",
+      "rootBackground": "rgba(0, 0, 0, 0)",
+      "themeAttribute": null,
+      "rule": "light preference; intrinsic site colours preserved"
+     },
+     "backgroundLuma": 0.9999999999999999,
+     "stats": {
+      "luma": 0.7546434395296697,
+      "sat": 0.09144357817973418,
+      "vivid": 0.0781982421875
+     },
+     "width": 1280,
+     "height": 986,
+     "text": "Made with\n\nCrafted examples - mockups, post and presentation that you candownload free from Figma community.",
+     "review": "accepted"
+    },
+    {
+     "url": "https://3dicons.co/icons/781f28-calendar",
+     "selector": "[class*=preview i]:not(nav *) >> nth=0",
+     "region": "subject",
+     "shellExcluded": true,
+     "sha256": "e3b4c136dbdf59e59aa1a01b48f0bd23bd4c5768bac2de34ed358b25f430a2ac",
+     "colorScheme": {
+      "requested": "light",
+      "media": "light",
+      "bodyBackground": "rgb(255, 255, 255)",
+      "rootBackground": "rgba(0, 0, 0, 0)",
+      "themeAttribute": null,
+      "rule": "light preference; intrinsic site colours preserved"
+     },
+     "backgroundLuma": 0.9999999999999999,
+     "stats": {
+      "luma": 0.8265631617072696,
+      "sat": 0.20552106651173677,
+      "vivid": 0.197314453125
+     },
+     "width": 400,
+     "height": 400,
+     "text": "",
+     "review": "accepted"
+    }
+   ],
+   "basis": "subject-crops-light-v2",
+   "model": "Codex session visual review",
+   "at": "2026-10-15"
+  },
+  "yuka-7974df44": {
+   "subject": null
+  },
+  "colorhexa-52dd3ee5": {
+   "subject": null
+  },
+  "absurd-design-06d3e172": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "endless-icons-58c6d259": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "abstract-fonts-c11cec48": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "envato-illustrations-57458bf8": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "font-fabric-3a8ca2f2": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "font-in-logo-f0272de6": {
+   "subject": null
+  },
+  "font-mojo-a3de9929": {
+   "subject": null
+  },
+  "font-space-01fb6e7d": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "font-squirrel-eb4ae530": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "fontesk-dab66288": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "fontswiki-5fad9e6c": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "iconmonstr-85aa0aba": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "fontalternatives-4b667633": {
+   "subject": null
+  },
+  "colormind-d25c324a": {
+   "subject": null
+  },
+  "dafont-a2cef692": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "iconset-c1654880": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "datatype-d2d2676c": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "fonts-arena-4005ffae": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "fonts-in-use-e50e8d1e": {
+   "subject": null
+  },
+  "malayalam-fonts-02dccdf6": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "iconsear-ch-55c48f6b": {
+   "subject": null
+  },
+  "depositphotos-fc5887d3": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "iconsdb-0e9be0ba": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "pixelarticons-1031f720": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "iconbuddy-ebe03dc4": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "lucide-a207437c": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "colordrop-19ea7357": {
+   "subject": null
+  },
+  "foca-7b8960dc": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "iconshelf-b14ef8e5": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "gradient-buttons-f199da21": {
+   "subject": "components",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "generative-fonts-d2b74a89": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "integration-and-application-network-image-library-df9da74a": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "css-icons-0fae91d3": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "drawkit-9f16d4b5": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "free-faces-1a28850a": {
+   "subject": null
+  },
+  "fuwatale-14b938e1": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "good-type-foundry-ddce6b0d": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "negative-space-2220a17c": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "eggradients-a55b02ec": {
+   "subject": null
+  },
+  "html-color-codes-efe901bf": {
+   "subject": null
+  },
+  "d3-scale-chromatic-c7e1d772": {
+   "subject": null
+  },
+  "magdeleine-4efdfeb6": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "haikei-6887c112": {
+   "subject": null
+  },
+  "d3-color-1241bf3b": {
+   "subject": null
+  },
+  "docsify-d91bd637": {
+   "subject": null
+  },
+  "doodle-ipsum-f2f9eb2a": {
+   "subject": null
+  },
+  "emoji-guide-11d753e7": {
+   "subject": null
+  },
+  "design-gradients-101dfb85": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "design-seeds-a1e4d537": {
+   "subject": null
+  },
+  "extraset-25e52194": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "d3-scale-17b735e2": {
+   "subject": null
+  },
+  "favicon-generator-9882d2cd": {
+   "subject": null
+  },
+  "leon-sans-2cb70b55": {
+   "subject": null
+  },
+  "gradient-art-90e506d0": {
+   "subject": null
+  },
+  "fx-labs-9156ab00": {
+   "subject": null
+  },
+  "grabient-a269b769": {
+   "subject": null
+  },
+  "grilli-type-0f4ab613": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "grainient-04dd04a4": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "groteskly-yours-e0e49e08": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "happy-hues-436f5224": {
+   "subject": null
+  },
+  "hextimator-cc8410c6": {
+   "subject": null
+  },
+  "decoy-font-8bbcd39f": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "html-css-color-9e8b0800": {
+   "subject": null
+  },
+  "hue-tools-030f2e21": {
+   "subject": null
+  },
+  "icoon-8e7193bb": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "ira-design-1423085a": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "ingradients-6f971bdc": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "kolors-3776a45a": {
+   "subject": null
+  },
+  "just-color-picker-b76fa5f8": {
+   "subject": null
+  },
+  "kitbitz-d89b2a2d": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "leonardo-fe952dd7": {
+   "subject": null
+  },
+  "life-of-pix-fe00c2d6": {
+   "subject": "assets",
+   "subjectVisible": false,
+   "styles": [],
+   "signatureZh": "",
+   "basis": "pending-subject-capture",
+   "at": "2026-10-15"
+  },
+  "litur-c6ce333e": {
+   "subject": null
+  }
+ }
+}

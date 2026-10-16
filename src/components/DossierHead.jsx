@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { facetLabel, isUnknown } from '../lib/site-detail-labels.js'
 import { useLocale, useT } from '../i18n.js'
 import { entryVoice, voiceText } from '../lib/entry-voice.js'
+import { siteStylePills } from '../lib/site-style.js'
 import { catalogNames } from '../lib/component-catalog.js'
 import { englishText } from '../lib/localized-content.js'
 
@@ -16,14 +17,6 @@ function displayValue(value) {
 
 function unique(values) {
   return [...new Set(values.filter(Boolean))]
-}
-
-function stylePillsOf(entryId, locale) {
-  const listed = entryVoice(entryId)?.stylePills?.[locale]
-  if (Array.isArray(listed) && listed.length > 0) return listed
-  const text = voiceText(entryId, 'style', locale)
-  if (!text) return []
-  return text.split(/[。.]/).map((part) => part.trim()).filter(Boolean)
 }
 
 function Pill({ tone, children }) {
@@ -222,7 +215,7 @@ export default function DossierHead({ data }) {
   ])
 
   const catalog = catalogNames(data.entryId, locale)
-  const styles = stylePillsOf(data.entryId, locale)
+  const styles = siteStylePills(data.entryId, locale)
   const colon = locale === 'zh' ? '：' : ':'
   const empty = t('unspecified')
 
@@ -238,7 +231,7 @@ export default function DossierHead({ data }) {
           items={catalog}
           empty={null}
         />
-        <MetaGroup label={`${t('style')}${colon}`} tone="style" items={styles} empty={empty} />
+        {styles ? <MetaGroup label={`${t('style')}${colon}`} tone="style" items={styles} empty={null} /> : null}
       </div>
     </section>
   )

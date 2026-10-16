@@ -1,0 +1,79 @@
+{
+  "specVersion": "1",
+  "id": "ppt-quiet-keynote",
+  "shelf": "ppt",
+  "kind": "template",
+  "name": {
+    "zh": "Quiet Keynote 模板",
+    "en": "Quiet Keynote template"
+  },
+  "summary": {
+    "zh": "6 种版式（封面 / 章节 / 大数字 / 左右对比 / 图文 / 结尾）的 16:9 模板，内容写在一个 JSON 里，一条命令出 .pptx，文字全部可再编辑。",
+    "en": "A 16:9 template with six layouts (cover, section, big number, compare, image, end); content lives in one JSON, one command builds an editable .pptx."
+  },
+  "tags": [
+    "pptx",
+    "keynote",
+    "模板",
+    "极简",
+    "python-pptx",
+    "大数字",
+    "对比页"
+  ],
+  "files": [
+    [
+      "build_deck.py",
+      "code"
+    ],
+    [
+      "sample-content.json",
+      "sample-input"
+    ],
+    [
+      "quiet-keynote.pptx",
+      "template"
+    ],
+    [
+      "previews/slide-01.png",
+      "output"
+    ],
+    [
+      "previews/slide-03.png",
+      "output"
+    ],
+    [
+      "previews/slide-04.png",
+      "output"
+    ],
+    [
+      "previews/slide-05.png",
+      "output"
+    ]
+  ],
+  "previews": [
+    "previews/slide-01.png",
+    "previews/slide-03.png",
+    "previews/slide-04.png",
+    "previews/slide-05.png"
+  ],
+  "run": {
+    "runtime": "python",
+    "requires": [
+      "python-pptx"
+    ],
+    "command": "python build_deck.py --content sample-content.json --out my.pptx",
+    "inputs": {
+      "--content": "JSON：footer + slides[]，每页 layout 取 cover/section/number/compare/image/end",
+      "--render": "可选：用本机 PowerPoint 导出 PNG（Windows + Office）"
+    },
+    "limits": {
+      "zh": "预览图由 PowerPoint 真实渲染；字体用 Segoe UI + 微软雅黑，Mac Keynote 打开会替换为系统字体。没有动画和母版主题。",
+      "en": "Previews are real PowerPoint renders; fonts are Segoe UI + Microsoft YaHei and get substituted on Mac. No animations or slide-master theme."
+    }
+  },
+  "provenance": {
+    "origin": "vislexicon-authored",
+    "author": "VisLexicon",
+    "license": "MIT"
+  }
+}

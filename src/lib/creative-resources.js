@@ -65,6 +65,7 @@ export function filterResources(resources, { category, kind = 'all', query = '' 
 }
 
 export function resourceHref(resource) {
+  if (resource.type === 'resource-kit') return `${RESOURCE_SECTIONS[resource.category].path}?id=${encodeURIComponent(resource.id)}`
   if (resource.type === 'prompt') return `#/skills/image?id=${encodeURIComponent(resource.id)}`
   if (['practice', 'markdown', 'presentation-resource', 'recipe', 'tool', 'file-api'].includes(resource.type)) return resource.category === 'atlas'
     ? `#/atlas?stageId=${resource.atlasCategory}&termId=${resource.id}`

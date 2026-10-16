@@ -1,0 +1,71 @@
+{
+  "specVersion": "1",
+  "id": "sci-quiet-panels",
+  "shelf": "science",
+  "kind": "figure-style",
+  "name": {
+    "zh": "安静三联图（Nature 双栏）",
+    "en": "Quiet panels (Nature double column)"
+  },
+  "summary": {
+    "zh": "一个 matplotlib 样式文件加一个出图脚本：置信带曲线、带散点和显著性的分组柱、相关性热图，180mm 宽，导出可编辑 SVG/PDF。",
+    "en": "One matplotlib style plus one script: CI-band curves, grouped bars with points and significance, a correlation heatmap; 180 mm wide, editable SVG/PDF."
+  },
+  "tags": [
+    "matplotlib",
+    "nature",
+    "okabe-ito",
+    "色盲友好",
+    "多面板",
+    "显著性",
+    "热图",
+    "误差线"
+  ],
+  "files": [
+    [
+      "make_figure.py",
+      "code"
+    ],
+    [
+      "quiet.mplstyle",
+      "template"
+    ],
+    [
+      "figure.svg",
+      "output"
+    ],
+    [
+      "figure.pdf",
+      "output"
+    ],
+    [
+      "figure.png",
+      "output"
+    ]
+  ],
+  "previews": [
+    "figure.png"
+  ],
+  "run": {
+    "runtime": "python",
+    "requires": [
+      "numpy",
+      "matplotlib>=3.8"
+    ],
+    "command": "python make_figure.py --out figure",
+    "outputs": {
+      "figure.svg": "可编辑矢量",
+      "figure.pdf": "投稿用，字体可编辑（fonttype 42）",
+      "figure.png": "300dpi 预览"
+    },
+    "limits": {
+      "zh": "显著性用正态近似，正式投稿请换 scipy 的 Welch t 检验；示例数据是随机生成的。",
+      "en": "Significance uses a normal approximation; use scipy's Welch t-test for submission. Demo data is random."
+    }
+  },
+  "provenance": {
+    "origin": "vislexicon-authored",
+    "author": "VisLexicon",
+    "license": "MIT"
+  }
+}
