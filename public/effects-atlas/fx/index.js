@@ -1,4 +1,5 @@
 // 效果库索引：分组懒加载；缺失的分类文件会被跳过
+import { atlasLoader } from '../category-loader.js';
 export const ATLAS_VERSION = 4;
 export const CATEGORY_FILES = [
   'font', 'text', 'type', 'container', 'entrance', 'transition', 'easing', 'physics',
@@ -107,16 +108,7 @@ export const BASE = {
 .fxart{grid-area:art;background:linear-gradient(150deg,#eceee6,#e3e6dc);min-height:172px;position:relative;overflow:hidden}`
 };
 
-export async function loadCategories() {
-  const mods = await Promise.all(CATEGORY_FILES.map(async (f) => {
-    try { const m = (await import(`./${f}.js`)).default; return m && m.items && m.items.length ? m : null; }
-    catch (e) { console.warn('fx: skipped', f, e.message); return null; }
-  }));
-  const categories = mods.filter(Boolean);
-  const { addPractices } = await import('../practices.js');
-  const { enrichCardSamples } = await import('../card-samples.js');
-  return addPractices(enrichCardSamples(categories));
-}
+export const { loadCategories, loadCategory, loadSearchIndex } = atlasLoader;
 
 /* ---- CSS 作用域化：把条目 CSS 关进一个 .scope 里，供画廊墙同时播放数十个效果 ---- */
 function splitBlocks(src) {

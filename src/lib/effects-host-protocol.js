@@ -10,6 +10,8 @@ export function createHostState({
   stageId,
   termId,
   query,
+  active,
+  navigate,
 } = {}) {
   return {
     type: EFFECTS_HOST_MESSAGE,
@@ -20,6 +22,8 @@ export function createHostState({
     ...(isText(stageId) ? { stageId } : {}),
     ...(isText(termId) ? { termId } : {}),
     ...(isText(query) ? { query } : {}),
+    ...(typeof active === 'boolean' ? { active } : {}),
+    ...(navigate === true ? { navigate: true } : {}),
   }
 }
 
@@ -32,6 +36,8 @@ export function isHostState(value) {
   if (value.stageId !== undefined && !isText(value.stageId)) return false
   if (value.termId !== undefined && !isText(value.termId)) return false
   if (value.query !== undefined && !isText(value.query)) return false
+  if (value.active !== undefined && typeof value.active !== 'boolean') return false
+  if (value.navigate !== undefined && typeof value.navigate !== 'boolean') return false
   return true
 }
 

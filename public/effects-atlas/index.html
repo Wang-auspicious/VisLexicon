@@ -3,20 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>x-dc{display:none!important}</style>
 <link rel="stylesheet" href="/fonts/anthropic-sans.css">
 <link rel="stylesheet" href="/fonts/anthropic-serif.css">
+<link rel="preload" href="/fonts/anthropic-serif-roman.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="modulepreload" href="./fx/index.js">
+<link rel="modulepreload" href="./category-loader.js">
+<link rel="modulepreload" href="./support.js">
+<link rel="preload" href="./catalog.json" as="fetch" crossorigin>
 <!-- React 18 UMD 自托管。走 unpkg 时实测每次打开图鉴要等 2.3-2.4 秒，且离线直接白屏。
      版本固定 18.3.1，更新时重下 https://unpkg.com/react@18.3.1/umd/ 下的同名文件。 -->
-<script src="./vendor/react.production.min.js"></script><script src="./vendor/react-dom.production.min.js"></script><script src="./support.js"></script>
+<script defer src="./vendor/react.production.min.js"></script><script defer src="./vendor/react-dom.production.min.js"></script>
+<script type="module" src="./bootstrap.js"></script>
 <!-- 真实原站截图的映射表。由 scripts/capture-style-refs.mjs 生成，同步加载，运行时零请求。 -->
-<script src="./assets/ref/map.js"></script>
+<script defer src="./assets/ref/map.js"></script>
 </head>
 <body>
 <x-dc>
 <helmet>
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <style>
   :root{
     --fx-sans:"Anthropic Sans",-apple-system,"Segoe UI","PingFang SC","Noto Sans SC",sans-serif;
@@ -43,14 +48,6 @@
   }
   body{margin:0;font-family:var(--atlas-ui);font-feature-settings:"ss01" 1;color:#23232f;-webkit-font-smoothing:antialiased;background:#f4f5f1}
   a{color:#fe2c55;text-decoration:none}a:hover{color:#e62950}
-  input[type=range]{-webkit-appearance:none;appearance:none;height:20px;background:transparent;cursor:pointer}
-  input[type=range]::-webkit-slider-runnable-track{height:2px;background:#dcdcd4;border-radius:2px}
-  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;margin-top:-5.5px;border-radius:50%;background:#23232f;border:0}
-  input[type=range]:active::-webkit-slider-thumb{background:#fe2c55}
-  ::-webkit-scrollbar{width:9px;height:9px}
-  ::-webkit-scrollbar-thumb{background:#d6d7cf;border-radius:8px;border:3px solid transparent;background-clip:content-box}
-  ::-webkit-scrollbar-track{background:transparent}
-  .fxoff,.fxoff *,.fxoff *::before,.fxoff *::after{animation-play-state:paused!important}
   /* 流光：给所有「一块纯色」的演示单元统一加的表面处理。
      纯色块在墙上读起来像还没加载完；这里用一层极缓的高光扫过 + 一层柔和的角落起伏，
      让平面有厚度又不抢演示本身。扫光颜色按底色亮度取白或墨，深浅底都成立（见页尾 fx-sheen 脚本）。 */
@@ -192,7 +189,7 @@
     </nav>
 
     <main style="overflow:auto;min-width:0">
-      <div class="fx-mobile-categories"><button onClick="{{ goHome }}" style="flex:none;min-height:40px;font-size:12px">{{ mobileOverviewLabel }}</button><select aria-label="{{ mobileCategoryAriaLabel }}" value="{{ mobileCategory }}" onChange="{{ chooseMobileCategory }}"><option value="">{{ mobilePickLabel }}</option><sc-for list="{{ categoryOptions }}" as="c"><option value="{{ c.id }}">{{ c.name }}</option></sc-for></select></div>
+      <div class="fx-mobile-categories"><button onClick="{{ goHome }}" style="flex:none;min-height:40px;font-size:12px">{{ mobileOverviewLabel }}</button><sc-raw-select aria-label="{{ mobileCategoryAriaLabel }}" value="{{ mobileCategory }}" onChange="{{ chooseMobileCategory }}"><option value="">{{ mobilePickLabel }}</option><sc-for list="{{ categoryOptions }}" as="c"><option value="{{ c.id }}">{{ c.name }}</option></sc-for></sc-raw-select></div>
 
       <sc-if value="{{ deepLinkErrorOn }}" hint-placeholder-val="{{ false }}">
         <div role="status" style="margin:18px 40px 0;padding:10px 13px;border:1px solid #e5c8a0;border-radius:8px;background:#fff8ec;color:#785321;font-size:12.5px;line-height:1.5">{{ deepLinkErrorText }}</div>
@@ -226,6 +223,7 @@
               </div>
             </section>
           </sc-for>
+          <div id="fx-hub-more" style="height:1px" aria-hidden="true"></div>
         </div>
       </sc-if>
 
@@ -275,7 +273,7 @@
                         <span style="margin-left:8px;flex:1;height:19px;line-height:19px;padding:0 11px;border-radius:6px;background:#fff;border:1px solid #e2e4dd;color:#777a71;font:500 10px/19px var(--atlas-ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.refUrl }}</span><span style="font-size:16px;line-height:1;color:#8b8d84">⋮</span>
                       </div>
                       <div style="position:relative;flex:1;min-height:0;overflow:hidden;background:#f7f8f4">
-                        <sc-if value="{{ r.referenceImage }}" hint-placeholder-val="{{ false }}"><img src="{{ r.referenceImage }}" alt="{{ r.referenceImageAlt }}" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block" /></sc-if>
+                        <sc-if value="{{ r.referenceImage }}" hint-placeholder-val="{{ false }}"><img sc-camel-src="{{ r.referenceImage }}" alt="{{ r.referenceImageAlt }}" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block" /></sc-if>
                         <sc-if value="{{ r.noReferenceImage }}" hint-placeholder-val="{{ true }}"><div class="aur {{ r.scope }}" style="{{ r.inner }};width:100%;height:100%;display:flex;align-items:center;justify-content:center"><div class="{{ r.wrap }}"><sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="6"><div class="{{ c.cls }}" style="{{ c.st }}" data-sample-body="{{ c.sampleBody }}">{{ c.c }}<sc-if value="{{ c.hasSample }}"><b data-sample-body="{{ c.sampleBody }}"></b><u data-sample-title="{{ c.sampleTitle }}"></u><i data-sample-meta="{{ c.sampleMeta }}"></i></sc-if><sc-if value="{{ c.noSample }}"><b></b><i></i><u></u></sc-if></div></sc-for></div></div></sc-if>
                       </div>
                     </div>
@@ -290,7 +288,7 @@
             <sc-for list="{{ tiles }}" as="t" hint-placeholder-count="12">
               <div class="tile" onClick="{{ t.pick }}" style="{{ t.card }}" style-hover="border-color:#c9cbc0;transform:translateY(-3px);box-shadow:0 10px 26px rgba(32,56,29,.09)">
                 <div class="{{ t.scope }}" style="{{ t.box }}">
-                  <sc-if value="{{ t.isPractice }}"><img src="{{ t.practiceImage }}" alt="{{ t.practiceCaption }}" style="width:100%;height:100%;object-fit:contain;display:block" loading="lazy" /></sc-if>
+                  <sc-if value="{{ t.isPractice }}"><img sc-camel-src="{{ t.practiceImage }}" alt="{{ t.practiceCaption }}" style="width:100%;height:100%;object-fit:contain;display:block" loading="lazy" /></sc-if>
                   <div style="{{ t.inner }}">
                     <sc-if value="{{ t.isText }}" hint-placeholder-val="{{ true }}">
                       <div class="fx" data-text="{{ t.sample }}">
@@ -339,9 +337,9 @@
             <div style="border:1px solid #e4e5e0;border-radius:12px;overflow:hidden;background:#fbfbf8">
               <div>
                 <div id="fx-stage" class="fxone {{ stageCls }}" style="{{ stageBox }}">
-                  <sc-if value="{{ isPractice }}"><img src="{{ practiceImage }}" alt="{{ practiceCaption }}" style="display:block;width:100%;max-height:540px;object-fit:contain" /></sc-if>
+                  <sc-if value="{{ isPractice }}"><img sc-camel-src="{{ practiceImage }}" alt="{{ practiceCaption }}" style="display:block;width:100%;max-height:540px;object-fit:contain" /></sc-if>
                   <sc-if value="{{ referenceImage }}" hint-placeholder-val="{{ false }}">
-                    <div style="width:min(94%,820px);height:min(58vh,450px);background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 20px 46px rgba(35,35,47,.18);display:flex;flex-direction:column;border:1px solid #e4e5df"><div style="height:36px;flex:none;background:linear-gradient(#f7f7f5,#efefec);border-bottom:1px solid #e1e3dc;display:flex;align-items:center;gap:6px;padding:0 13px"><i style="width:8px;height:8px;border-radius:50%;background:#ff6058"></i><i style="width:8px;height:8px;border-radius:50%;background:#ffbd2e"></i><i style="width:8px;height:8px;border-radius:50%;background:#28c840"></i><span style="margin-left:9px;flex:1;height:20px;line-height:20px;padding:0 12px;border-radius:6px;background:#fff;border:1px solid #e2e4dd;color:#777a71;font:500 10px/20px var(--atlas-ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ referenceUrl }}</span><span style="font-size:16px;line-height:1;color:#8b8d84">⋮</span></div><img src="{{ referenceImage }}" alt="{{ referenceImageAlt }}" loading="lazy" decoding="async" style="width:100%;height:calc(100% - 36px);object-fit:cover;object-position:top;display:block" /></div>
+                    <div style="width:min(94%,820px);height:min(58vh,450px);background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 20px 46px rgba(35,35,47,.18);display:flex;flex-direction:column;border:1px solid #e4e5df"><div style="height:36px;flex:none;background:linear-gradient(#f7f7f5,#efefec);border-bottom:1px solid #e1e3dc;display:flex;align-items:center;gap:6px;padding:0 13px"><i style="width:8px;height:8px;border-radius:50%;background:#ff6058"></i><i style="width:8px;height:8px;border-radius:50%;background:#ffbd2e"></i><i style="width:8px;height:8px;border-radius:50%;background:#28c840"></i><span style="margin-left:9px;flex:1;height:20px;line-height:20px;padding:0 12px;border-radius:6px;background:#fff;border:1px solid #e2e4dd;color:#777a71;font:500 10px/20px var(--atlas-ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ referenceUrl }}</span><span style="font-size:16px;line-height:1;color:#8b8d84">⋮</span></div><img sc-camel-src="{{ referenceImage }}" alt="{{ referenceImageAlt }}" loading="lazy" decoding="async" style="width:100%;height:calc(100% - 36px);object-fit:cover;object-position:top;display:block" /></div>
                   </sc-if>
                   <sc-if value="{{ noReferenceImage }}" hint-placeholder-val="{{ true }}"><div style="{{ stageInner }}">
                     <sc-if value="{{ isText }}" hint-placeholder-val="{{ true }}">
@@ -411,7 +409,7 @@
                     <sc-for list="{{ curatedSites }}" as="st" hint-placeholder-count="4">
                       <div class="curated-site-card" style="display:flex;flex-direction:column;padding:10px 12px;border:1px solid #e6e7e0;border-radius:10px;background:#fbfbf8;transition:all .18s cubic-bezier(.22,1,.36,1)">
                         <div onClick="{{ st.jump }}" style="display:flex;align-items:center;gap:10px;cursor:pointer">
-                          <img src="{{ st.shotSrc }}" alt="{{ st.name }}" style="width:36px;height:24px;border-radius:4px;object-fit:cover;border:1px solid #e2e4dd;flex:none;background:#f2f4f0" />
+                          <img sc-camel-src="{{ st.shotSrc }}" alt="{{ st.name }}" style="width:36px;height:24px;border-radius:4px;object-fit:cover;border:1px solid #e2e4dd;flex:none;background:#f2f4f0" />
                           <div style="min-width:0;flex:1">
                             <div class="curated-name" style="font-size:13px;font-weight:600;color:#23232f;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ st.name }}</div>
                             <div class="curated-domain" style="font-size:11px;color:#8f9187;font-family:var(--atlas-ui);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ st.domain }}</div>
@@ -495,14 +493,16 @@ const T = {
 
 class Component extends DCLogic {
   state = {
-    cats: [], catId: null, itemId: null, mode: 'hub', lang: 'zh', plLang: 'zh',
-    query: '', params: {}, nonce: 0, copied: false, mod: null, limit: 18, deepLinkError: '',
-    playing: true, speed: 1
+    cats: window.__atlasBoot?.cats || [], catId: window.__atlasBoot?.cats[0]?.id || null, itemId: null, mode: 'hub', lang: new URLSearchParams(window.location.search).get('lang') === 'en' ? 'en' : 'zh', plLang: 'zh',
+    query: '', params: {}, nonce: 0, copied: false, mod: window.__atlasBoot?.mod || null, limit: 18, deepLinkError: '',
+    playing: true, speed: 1, hubLimit: 3
   };
 
   componentDidMount() {
     const hostParams = new URLSearchParams(window.location.search);
     const initialLang = hostParams.get('lang') === 'en' ? 'en' : 'zh';
+    this._hostActive = hostParams.get('active') !== '0';
+    document.documentElement?.classList.toggle('fx-host-paused', !this._hostActive);
     this._hostLang = initialLang;
     this._hostStage = hostParams.get('stageId') || '';
     this._hostTerm = hostParams.get('termId') || '';
@@ -521,6 +521,8 @@ class Component extends DCLogic {
       if (event.source !== window.parent || event.origin !== window.location.origin || !isHostState(event.data)) return;
       const lang = event.data.locale === 'en' ? 'en' : 'zh';
       this._hostLang = lang;
+      if (typeof event.data.active === 'boolean') this.setActive(event.data.active);
+      if (event.data.navigate) { this._hostStage = ''; this._hostTerm = ''; this._hostQuery = ''; }
       if (event.data.stageId !== undefined) this._hostStage = event.data.stageId;
       if (event.data.termId !== undefined) this._hostTerm = event.data.termId;
       if (event.data.query !== undefined) this._hostQuery = event.data.query;
@@ -532,25 +534,17 @@ class Component extends DCLogic {
       else applyHostDeepLink();
     };
     window.addEventListener('message', this._hostLocale);
-    if (typeof fetch === 'function') {
-      fetch('/effects-atlas/curation-map.json')
-        .then((r) => (r.ok ? r.json() : null))
-        .then((data) => {
-          if (Array.isArray(data) && data.length > 0) {
-            this._curatedMap = data;
-            if (this.state.mode === 'detail') this.setState({});
-          }
-        })
-        .catch(() => {});
-    }
-    import('./fx/index.js').then(async (mod) => {
+    window.parent?.postMessage?.({ type: 'vislexicon.atlas-ready' }, window.location.origin);
+    if (this.state.mod) {
+      this.applyDeepLink();
+      this.sync();
+    } else import('./fx/index.js').then(async (mod) => {
       const cats = await mod.loadCategories();
       this.setState({ mod, cats, catId: cats[0] && cats[0].id, lang: this._hostLang }, () => {
         this.applyDeepLink();
         this.sync();
       });
     });
-    import('./mask-interactions.js').then(mod => { this._maskModule = mod; this.sync(); });
     this._keys = (e) => {
       if (e.target && /input|textarea/i.test(e.target.tagName)) { if (e.key === 'Escape') e.target.blur(); return; }
       if (e.key === 'Escape') this.setState({ mode: 'wall' });
@@ -560,25 +554,27 @@ class Component extends DCLogic {
     };
     window.addEventListener('keydown', this._keys);
     // 页面被隐藏时 rAF 不跑：回到前台立刻补一次，避免舞台停在空白/暂停状态
-    this._vis = () => { if (!document.hidden) { this._cache = null; this._msig = null; this.sync(); } };
+    this._vis = () => { this.setActive(this._hostActive !== false); };
     document.addEventListener('visibilitychange', this._vis);
     // 交互伪类模拟：画廊墙没有真实指针，靠定时开合 .fxh 让 hover/active 效果动起来
     this._hov = setInterval(() => {
-      if (!this.state.playing) return;
+      if (!this.state.playing || !this.isActive()) return;
       this.cache().simHosts.forEach((el, i) => {
-        setTimeout(() => el.classList.toggle('fxsim'), (i % 8) * 110);
+        if (!this._live?.has(el)) return;
+        setTimeout(() => { if (this.isActive() && this._live?.has(el)) el.classList.toggle('fxsim'); }, (i % 8) * 110);
       });
     }, 2100);
     // 滚动类演示：自动来回滚，否则永远看不到 scroll-driven 效果
     let t0 = performance.now(), f = 0;
     const tick = (t) => {
       this._raf = requestAnimationFrame(tick);
-      if (!this.state.playing) { t0 = t; return; }
+      if (!this.state.playing || !this.isActive()) { t0 = t; return; }
       if ((f++ & 3) !== 0) return;
       const p = ((t - t0) / 4600) % 2;
       const k = p < 1 ? p : 2 - p;
       const e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
       this.cache().scrolls.forEach(el => {
+        if (!this._live?.has(el.closest('[class*="fxt-"],#fx-stage'))) return;
         if (el.dataset.manualScroll === 'true') return;
         const max = el.scrollHeight - el.clientHeight;
         if (max > 4) el.scrollTop = max * e;
@@ -594,11 +590,42 @@ class Component extends DCLogic {
     clearTimeout(this._jevTimer);this._jevController?.abort();
     clearInterval(this._hov); cancelAnimationFrame(this._raf);
     if (this._io) this._io.disconnect();
+    this._hubObserver?.disconnect();
   }
   componentDidUpdate(prevProps, prevState) {
     this.sync();
-    if(prevState.query!==this.state.query || (prevState.cats!==this.state.cats && this.state.query.trim()))this.rankTerms();
+    if(prevState.query!==this.state.query || (!prevState.mod && this.state.mod && this.state.query.trim()))this.rankTerms();
   }
+  isActive = () => this._hostActive !== false && !document.hidden;
+  setActive = (active) => {
+    this._hostActive = active;
+    document.documentElement?.classList.toggle('fx-host-paused', !this.isActive());
+    this._msig = null;
+    this.budget();
+    this.sync();
+  };
+  ensureCategory = async (id) => {
+    const existing = this.state.cats.find(category => category.id === id);
+    if (!existing || existing.loaded) return existing;
+    // These reference fonts are used only by two categories. Keep their final
+    // appearance, but avoid a third-party stylesheet on the overview.
+    if ((id === 'font' || id === 'pagestyle') && !document.getElementById('fx-reference-fonts')) {
+      const link = document.createElement('link'); link.id = 'fx-reference-fonts'; link.rel = 'stylesheet';
+      link.href = 'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap';
+      document.head.appendChild(link);
+    }
+    const category = await this.state.mod.loadCategory(id);
+    if (this.state.cats.find(row => row.id === id)?.loaded) return category;
+    await new Promise(resolve => this.setState({ cats: this.state.cats.map(row => row.id === id ? category : row) }, resolve));
+    return category;
+  };
+  loadDetailEvidence = () => {
+    if (this._detailEvidence) return;
+    this._detailEvidence = true;
+    fetch('/effects-atlas/curation-map.json').then(r => r.ok ? r.json() : null)
+      .then(sites => { this._curatedMap = Array.isArray(sites) ? sites : []; this.setState({}); })
+      .catch(() => { this._detailEvidence = false; });
+  };
   rankTerms = () => {
     clearTimeout(this._jevTimer);this._jevController?.abort();
     const query=this.state.query.trim();
@@ -609,17 +636,20 @@ class Component extends DCLogic {
     this._jevTimer=setTimeout(async()=>{
       try {
         const {rerankPool}=await import('./jev-recall.js');
-        const units=this.state.cats.flatMap(c=>c.items.map(it=>({id:this.key(c,it),kind:'term',componentType:'term',nameZh:it.zh,nameEn:it.en,descriptionZh:[it.dz,it.pz].join('。'),descriptionEn:it.de,tags:[c.zh,c.en,it.zh,it.en]})));
+        this._searchCats=await this.state.mod.loadSearchIndex();
+        if(controller.signal.aborted)return;
+        const units=this._searchCats.flatMap(c=>c.items.map(it=>({id:this.key(c,it),kind:'term',componentType:'term',nameZh:it.zh,nameEn:it.en,descriptionZh:[it.dz,it.pz].join('。'),descriptionEn:it.de,tags:[c.zh,c.en,it.zh,it.en]})));
         const candidates=rerankPool(query,units,50).map(row=>row.unit);
         const response=await fetch('/api/discovery/rank',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,scope:'atlas-terms',candidates}),signal:controller.signal});
-        const data=await response.json();if(!response.ok)throw Error('JEV_UNAVAILABLE');
+        const data=await response.json();if(!response.ok)throw Error(data.error||'JEV_UNAVAILABLE');
         if(!controller.signal.aborted)this.setState({jevQuery:query,jevRows:(data.rows||[]).filter(row=>row.score>=1.4).sort((a,b)=>b.score-a.score),jevStatus:T2.jevJudged(data.candidateCount||0)});
-      }catch{if(!controller.signal.aborted)this.setState({jevQuery:query,jevRows:[],jevStatus:T2.jevUnavailable});}
+      }catch(error){if(!controller.signal.aborted)this.setState({jevQuery:query,jevRows:[],jevStatus:error.message==='JEV_TUNNEL_DISCONNECTED'?(this.state.lang==='zh'?'Jev 未连接（隧道未开）':'Jev is not connected (tunnel is closed).'):T2.jevUnavailable});}
     },650);
   };
   jevMatches = () => {
     if(this.state.jevQuery!==this.state.query.trim())return [];
-    const byId=new Map(this.state.cats.flatMap(c=>c.items.map(it=>[this.key(c,it),{c,it}])));
+    const categories=(this._searchCats||[]).map(category=>this.state.cats.find(row=>row.id===category.id&&row.loaded)||category);
+    const byId=new Map(categories.flatMap(c=>c.items.map(it=>[this.key(c,it),{c,it}])));
     return (this.state.jevRows||[]).map(row=>byId.get(row.id)).filter(Boolean);
   };
 
@@ -650,6 +680,11 @@ class Component extends DCLogic {
     if (!this._io) this._io = new IntersectionObserver(es => {
       es.forEach(e => { if (e.isIntersecting) this._live.add(e.target); else this._live.delete(e.target); });
       this.budget();
+      // Search results can span categories. Import only modules whose previews
+      // actually enter the viewport; other result cards keep their text shell.
+      const visible = this.visible();
+      const ids = new Set(es.filter(e => e.isIntersecting).flatMap(e => visible.filter(row => e.target.classList.contains(row.sc)).map(row => row.c.id)));
+      ids.forEach(id => { this.ensureCategory(id).catch(() => {}); });
     }, { root: root, rootMargin: '40px 0px', threshold: .1 });
     else this._io.disconnect();
     hosts.forEach(el => this._io.observe(el));
@@ -666,12 +701,13 @@ class Component extends DCLogic {
 
   budget = () => {
     const hosts = (this._cache && this._cache.hosts) || [];
+    if (!hosts.length) return;
     const live = this._live || new Set();
     const root = document.querySelector('main');
     const mid = root ? root.clientHeight / 2 : 300;
     const arr = [...live].filter(el => el.isConnected);
     arr.sort((a, b) => Math.abs(a.getBoundingClientRect().top - mid) - Math.abs(b.getBoundingClientRect().top - mid));
-    const on = new Set(arr.slice(0, 9));
+    const on = new Set(this.isActive() && this.state.playing ? arr.slice(0, 9) : []);
     hosts.forEach(el => el.classList.toggle('fxoff', !on.has(el)));
   };
 
@@ -679,7 +715,20 @@ class Component extends DCLogic {
 
   sync = () => {
     const mod = this.state.mod; if (!mod) return;
+    const hubMore = this.state.mode === 'hub' && document.getElementById('fx-hub-more');
+    if (hubMore && this._hubSentinel !== hubMore) {
+      this._hubObserver?.disconnect(); this._hubSentinel = hubMore;
+      this._hubObserver = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting) && this.isActive() && this.state.hubLimit < mod.GROUPS.length) this.setState({ hubLimit: this.state.hubLimit + 2 });
+      }, { root: this.scroller(), rootMargin: '200px 0px' });
+      this._hubObserver.observe(hubMore);
+    }
+    if (this.state.mode === 'hub') {
+      this._maskDemo?.destroy(); this._maskDemo = null;
+      return;
+    }
     if (this.state.mode === 'detail') {
+      this.loadDetailEvidence();
       const cur = this.item();
       if (cur) {
         const css = mod.scopeCss((mod.BASE[cur.it.demo] || '') + '\n' + (cur.it.css || ''), 'fxone', true);
@@ -687,7 +736,7 @@ class Component extends DCLogic {
       }
     } else {
       const list = this.visible();
-      const sig = list.map(x => x.sc).join('|');
+      const sig = list.map(x => x.sc + ':' + Boolean(x.it.demo)).join('|');
       if (sig !== this._sig) {
         this._sig = sig;
         this._simScopes = new Set(list.filter(x =>
@@ -705,6 +754,9 @@ class Component extends DCLogic {
     }
     // Detail-only interactions stay inside the existing stage, without changing its shell.
     const interactiveItem = this.state.mode === 'detail' ? this.item()?.it : null;
+    if (interactiveItem?.interactive && !this._maskModule && !this._maskLoading) {
+      this._maskLoading = import('./mask-interactions.js').then(mod => { this._maskModule = mod; this.sync(); }).catch(() => { this._maskLoading = null; });
+    }
     const maskStage = document.getElementById('fx-stage');
     const maskHost = maskStage?.querySelector('.fx');
     const maskKey = [this.state.itemId, this.state.lang, this.state.nonce].join('|');
@@ -725,7 +777,7 @@ class Component extends DCLogic {
       try {
         a.playbackRate = s.speed;
         if (restart) a.currentTime = 0;
-        if (s.playing) a.play(); else a.pause();
+        if (s.playing && this.isActive()) a.play(); else a.pause();
       } catch (e) {}
     });
   };
@@ -807,7 +859,7 @@ class Component extends DCLogic {
     };
 
     // 获取当前项对应的真实组件名列表
-    const targets = COMPONENT_TARGETS[termId] || (catId === 'table' ? ['table'] : null);
+    const targets = item.componentTypes || COMPONENT_TARGETS[termId] || (catId === 'table' ? ['table'] : null);
     if (!targets || targets.length === 0) {
       // 绝不强行匹配！对于「匀速」、「缓出」、「弹簧阻尼」等非组件条目，直接返回空数组
       return [];
@@ -845,7 +897,7 @@ class Component extends DCLogic {
     }));
   };
 
-  applyDeepLink = () => {
+  applyDeepLink = async () => {
     const stageId = this._hostStage;
     const termId = this._hostTerm;
     const query = String(this._hostQuery || '').trim();
@@ -855,7 +907,8 @@ class Component extends DCLogic {
     }
     if (!stageId && !termId) return;
     const categoryId = this.stageCategory(stageId);
-    const cat = this.state.cats.find((candidate) => candidate.id === categoryId) || null;
+    const cat = await this.ensureCategory(categoryId).catch(() => null);
+    if (stageId !== this._hostStage || termId !== this._hostTerm || query !== String(this._hostQuery || '').trim()) return;
     if (!cat) {
       const message = this._deepLinkMessage(this.state.lang);
       this.setState({ mode: 'hub', deepLinkError: message });
@@ -881,6 +934,7 @@ class Component extends DCLogic {
   match = (c, it, q) => (it.zh + it.en + it.dz + it.de + it.pz + it.pe + c.zh + c.en).toLowerCase().includes(q);
 
   visible = () => {
+    if (this.state.mode === 'hub') return [];
     const q = this.state.query.trim().toLowerCase();
     let pool = [];
     if (q) { pool=this.jevMatches(); }
@@ -902,7 +956,8 @@ class Component extends DCLogic {
     if (el) el.scrollTop = top;
   };
 
-  open = (cat, it) => {
+  open = async (cat, it) => {
+    if (!cat.loaded) { const loaded = await this.ensureCategory(cat.id).catch(() => null); if (!loaded) return; cat = loaded; it = loaded.items.find(item => item.id === it.id); if (!it) return; }
     const el = this.scroller();
     if (this.state.mode === 'wall' && el) this._wallScroll = el.scrollTop;
     const params = {}; (it.params || []).forEach(p => { params[p.k] = p.def; });
@@ -915,8 +970,11 @@ class Component extends DCLogic {
     const top = this._wallScroll || 0;
     this.setState(patch, () => this.scrollTo(top));
   };
-  pickCat = (id) => {
-    const c = this.state.cats.find(x => x.id === id);
+  pickCat = async (id) => {
+    this._pendingCategory = id;
+    const c = await this.ensureCategory(id).catch(() => null);
+    if (!c || this._pendingCategory !== id) return;
+    this._hostStage = ''; this._hostTerm = '';
     this._sig = null;
     this._hostQuery = '';
     this._wallScroll = 0;
@@ -967,7 +1025,8 @@ class Component extends DCLogic {
     const s = this.state, L = s.lang, t = T[L], mod = s.mod, cats = s.cats;
     const nm = (o) => o ? (L === 'zh' ? o.zh : o.en) : '';
     const pv = (k) => nm(it?.practice?.[k]);
-    const total = cats.reduce((n, c) => n + c.items.length, 0);
+    const count = c => c.itemCount ?? c.items.length;
+    const total = cats.reduce((n, c) => n + count(c), 0);
     const pad = (n) => String(n).padStart(2, '0');
     const q = s.query.trim();
     const cat = this.cat(), cur = this.item();
@@ -980,7 +1039,7 @@ class Component extends DCLogic {
       name: nm(g),
       cats: g.of.map(id => cats.find(c => c.id === id)).filter(Boolean).map(c => {
         const on = c.id === s.catId && !q && s.mode !== 'hub';
-        return { name: nm(c), count: c.items.length, pick: () => this.pickCat(c.id), bg: on ? '#eceee6' : 'transparent', fg: on ? '#23232f' : '#65675f', w: on ? 600 : 500, dot: on ? '#fe2c55' : 'transparent', num: on ? '#8b8d84' : '#c4c6bd' };
+        return { name: nm(c), count: count(c), pick: () => this.pickCat(c.id), bg: on ? '#eceee6' : 'transparent', fg: on ? '#23232f' : '#65675f', w: on ? 600 : 500, dot: on ? '#fe2c55' : 'transparent', num: on ? '#8b8d84' : '#c4c6bd' };
       })
     })).filter(g => g.cats.length) : [];
 
@@ -992,7 +1051,7 @@ class Component extends DCLogic {
         isText: i.demo === 'text', notText: i.demo !== 'text' && !i.practice,
         isPractice: !!i.practice, practiceImage: i.practice?.preview || '', practiceCaption: nm(i.practice?.caption),
         sample: i.txt || 'Aurora', glyphs: i.demo === 'text' ? this.glyphList(i) : [],
-        cells: i.demo === 'text' ? [] : this.cellList(i, mod),
+        cells: !i.demo || i.demo === 'text' ? [] : this.cellList(i, mod),
         name: nm(i),
         pick: () => this.open(c, i),
         box: Object.assign({ height: '168px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', pointerEvents: 'none', contain: 'paint layout style', contentVisibility: 'auto', containIntrinsicSize: '236px 160px' }, this.dots(15)),
@@ -1025,13 +1084,13 @@ class Component extends DCLogic {
         const list = g.of.map(id => cats.find(c => c.id === id)).filter(Boolean);
         return {
           name: nm(g),
-          count: t.total(list.reduce((n, c) => n + c.items.length, 0)),
+          count: t.total(list.reduce((n, c) => n + count(c), 0)),
           cats: list.map(c => ({
-            name: nm(c), count: c.items.length, pick: () => this.pickCat(c.id),
+            name: nm(c), count: count(c), pick: () => this.pickCat(c.id),
             samples: c.items.slice(0, 4).map(x => nm(x)).join(' · ')
           }))
         };
-      }).filter(g => g.cats.length).map((g, gi) => Object.assign(g, { num: pad(gi + 1) })) : [],
+      }).filter(g => g.cats.length).slice(0, s.hubLimit).map((g, gi) => Object.assign(g, { num: pad(gi + 1) })) : [],
 
       /* 深链错误由模板渲染。以前是 setDeepLinkError 直接改 DOM 的 hidden，
          模板每次重渲染都会重建这个节点并丢掉 hidden，空框就一直挂在页顶。 */
@@ -1154,28 +1213,34 @@ class Component extends DCLogic {
   var queued = false;
 
   function dress(el) {
-    el.classList.remove('fxsheen');
     var cs;
-    try { cs = getComputedStyle(el); } catch (e) { return; }
-    if (cs.backgroundImage !== 'none') return;
+    try { cs = getComputedStyle(el); } catch (e) { return null; }
+    if (cs.backgroundImage !== 'none') return null;
     var box = el.getBoundingClientRect();
-    if (box.width < 40 || box.height < 40) return;
+    if (box.width < 40 || box.height < 40) return null;
     var parts = cs.backgroundColor.match(/[\d.]+/g);
-    if (!parts || parts.length < 3) return;
+    if (!parts || parts.length < 3) return null;
     var r = +parts[0], g = +parts[1], b = +parts[2];
-    if (parts.length > 3 && +parts[3] < 0.9) return;
+    if (parts.length > 3 && +parts[3] < 0.9) return null;
     var lum = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
-    if (lum > 0.86) return;               // 纸白表面本来就该保持干净
-    var dark = lum < 0.5;
-    el.style.setProperty('--fxsheen-rgb', dark ? '255,255,255' : '24,24,32');
-    el.style.setProperty('--fxsheen-a', dark ? '0.26' : '0.12');
-    el.classList.add('fxsheen');
+    if (lum > 0.86) return null;          // 纸白表面本来就该保持干净
+    return { dark: lum < 0.5 };
   }
 
   function pass() {
     queued = false;
+    if (document.hidden || document.documentElement.classList.contains('fx-host-paused')) return;
     var nodes = document.querySelectorAll(SEL);
-    for (var i = 0; i < nodes.length; i++) dress(nodes[i]);
+    // Read all styles and geometry first. Alternating a class write and a
+    // geometry read for every cell forced a layout for every preview.
+    var plans = Array.from(nodes, function (el) { return { el: el, surface: dress(el) }; });
+    plans.forEach(function (plan) {
+      if (plan.surface) {
+        plan.el.style.setProperty('--fxsheen-rgb', plan.surface.dark ? '255,255,255' : '24,24,32');
+        plan.el.style.setProperty('--fxsheen-a', plan.surface.dark ? '0.26' : '0.12');
+      }
+      plan.el.classList.toggle('fxsheen', !!plan.surface);
+    });
   }
 
   /* 用定时器而不是 requestAnimationFrame：这个文档跑在 iframe 里，
@@ -1192,6 +1257,8 @@ class Component extends DCLogic {
     new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
     /* 演示样式是整块换掉 <style> 的 textContent，DOM 结构可能不变，所以也盯样式表。 */
     new MutationObserver(schedule).observe(document.head, { childList: true, subtree: true, characterData: true });
+    window.addEventListener('message', function (event) { if (event.source === window.parent && event.origin === window.location.origin && event.data?.type === 'vislexicon.host-state' && event.data.active) schedule(); });
+    document.addEventListener('visibilitychange', schedule);
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);

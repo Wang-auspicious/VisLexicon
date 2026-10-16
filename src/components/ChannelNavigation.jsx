@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLocale } from '../i18n.js'
 
-export default function ChannelNavigation({ channels, activeName, t }) {
+export default function ChannelNavigation({ channels, activeName, t, onAtlasIntent }) {
   const en = useLocale() === 'en'
   const viewport = useRef(null)
   const [edges, setEdges] = useState({ start: false, end: false })
@@ -47,7 +47,7 @@ export default function ChannelNavigation({ channels, activeName, t }) {
 
   return <div className="nav-channel-strip" data-overflow-start={edges.start} data-overflow-end={edges.end}>
     <div className="nav-links" ref={viewport} onFocusCapture={event => reveal(event.target.closest('a'))}>
-      {channels.map(channel => <a key={channel.hash} className={`nav-link ${channel.match(activeName) ? 'on' : ''}`} href={channel.hash} aria-current={channel.match(activeName) ? 'page' : undefined}>{t(channel.key)}</a>)}
+      {channels.map(channel => <a key={channel.hash} className={`nav-link ${channel.match(activeName) ? 'on' : ''}`} href={channel.hash} aria-current={channel.match(activeName) ? 'page' : undefined} onPointerEnter={channel.key === 'atlas' ? onAtlasIntent : undefined} onFocus={channel.key === 'atlas' ? onAtlasIntent : undefined}>{t(channel.key)}</a>)}
     </div>
     <button type="button" className="nav-scroll nav-scroll-prev" hidden={!edges.start} onClick={() => scroll(-1)} aria-label={en ? 'Show earlier sections' : '显示前面的栏目'} title={en ? 'Show earlier sections' : '显示前面的栏目'}><span aria-hidden="true">‹</span></button>
     <button type="button" className="nav-scroll nav-scroll-next" hidden={!edges.end} onClick={() => scroll(1)} aria-label={en ? 'Show more sections' : '显示后面的栏目'} title={en ? 'Show more sections' : '显示后面的栏目'}><span aria-hidden="true">›</span></button>
