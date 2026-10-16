@@ -1,4 +1,6 @@
-import { useJevSearch } from '../lib/use-jev-search.js'
+import { useDiscoverySearch } from '../lib/use-discovery-search.js'
+import { matchesRequirements } from '../lib/discovery-scopes.js'
+import { jevErrorMessage } from '../lib/jev-status.js'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import FacetChips from '../components/FacetChips.jsx'
 import SiteCard from '../components/SiteCard.jsx'
@@ -77,7 +79,7 @@ export default function AllSites() {
   const locale = useLocale()
   const [state, setState] = useState({ status: 'loading', index: null, error: null })
   const [browse, setBrowse] = useState(() => readSitesState())
-  const [searchRevision,setSearchRevision]=useState(0)
+  const [composing,setComposing]=useState(false)
   const lastBrowseQuery=useRef(browse.q)
 
   useEffect(() => {
@@ -93,8 +95,7 @@ export default function AllSites() {
   /* 地址栏是筛选状态的真源：后退键、深链、外部粘进来的地址都从这里进。 */
   useEffect(() => {
     const onHashChange = () => {
-      const next=readSitesState(),old=lastBrowseQuery.current||'',value=next.q||''
-      if(old&&(!value.startsWith(old)||value.length<old.length))setSearchRevision(current=>current+1)
+      const next=readSitesState(),value=next.q||''
       lastBrowseQuery.current=value
       setBrowse(next)
     }
@@ -105,8 +106,8 @@ export default function AllSites() {
   /* 反过来：状态变了就改写地址，但用 replaceState——每点一个 chip 就往
    * 历史里塞一条，后退键会变成「逐个撤销筛选」，那不是用户按后退时想要的。 */
   const update = (next) => {
-    const old=lastBrowseQuery.current||'',value=next.q||''
-    if(old&&(!value.startsWith(old)||value.length<old.length))setSearchRevision(current=>current+1)
+    const value=next.q||''
+    jev.updateQuery(value)
     lastBrowseQuery.current=value
     setBrowse(next)
     window.history.replaceState(window.history.state, '', writeSitesHash(next))
@@ -121,8 +122,14 @@ export default function AllSites() {
    * 先筛后排完全一致，但敲键时只剩 O(n) 的筛选。 */
   const ordered = useMemo(() => sortSites(items, browse.sort), [items, browse.sort])
   const candidates=useMemo(()=>filterSites(ordered,{selections:browse.selections}),[ordered,browse.selections])
-  const jev=useJevSearch(browse.q,candidates,'site-list',searchRevision)
-  const results=jev.items
+  const allowedIds=useMemo(()=>candidates.map(item=>'site--'+item.entryId),[candidates])
+  const byId=useMemo(()=>new Map(candidates.map(item=>['site--'+item.entryId,item])),[candidates])
+  const jev=useDiscoverySearch({query:browse.q,scope:'curation',allowedIds,composing,pageSize:60})
+  const loadMore=jev.loadMore
+  const localFallback=Boolean(browse.q.trim()&&!jev.response)
+  const results=browse.q.trim()?(localFallback?filterSites(candidates,{q:browse.q}).filter(item=>matchesRequirements(browse.q,item)):(jev.displayResponse?.units||[]).map(unit=>byId.get(unit.id)).filter(Boolean)):candidates
+  const totalResults=browse.q.trim()&&!localFallback?jev.displayResponse?.matchCount||0:results.length
+  const searchStatus=localFallback?(locale==='en'?`${results.length} local keyword matches · ${jev.error?'Jev is not connected':'Jev is checking…'}`:`本地关键词筛选 ${results.length} 条 · ${jev.error?'Jev 未连接':'Jev 正在判断…'}`):jev.statusText(locale==='en')
 
   useEffect(() => {
     if (state.status === 'ready') lastResultCount = results.length
@@ -132,9 +139,11 @@ export default function AllSites() {
   const latest = formatCheckedAt(latestCheckedAt(items))
   /* 筛选条件变了就重新从第一屏开始画。 */
   const { visible, sentinel } = useIncrementalReveal(
-    results.length,
+    totalResults,
     `${browse.q}|${browse.sort}|${JSON.stringify(browse.selections)}`,
   )
+
+  useEffect(()=>{if(browse.q.trim()&&visible>results.length&&results.length<totalResults&&!jev.loadingMore&&!jev.pageError)loadMore()},[browse.q,visible,results.length,totalResults,jev.loadingMore,jev.pageError,jev.response?.refineToken,loadMore])
 
   const clearOne = (row) => {
     if (!row) return
@@ -162,7 +171,7 @@ export default function AllSites() {
         </p>
       </header>
 
-      {browse.q&&<p role="status">{jev.status}</p>}
+      {browse.q&&<p role="status">{searchStatus}{jev.error&&!localFallback?' · '+jevErrorMessage(jev.error,locale==='en'):''}</p>}
       <div className="vl-tools">
         <div className="vl-search">
           <label className="sr-only" htmlFor="vl-sites-q">{t('searchSitesLabel')}</label>
@@ -171,6 +180,8 @@ export default function AllSites() {
             type="search"
             value={browse.q}
             placeholder={t('searchSites')}
+            onCompositionStart={()=>{jev.setComposing(true);setComposing(true)}}
+            onCompositionEnd={event=>{jev.setComposing(false);setComposing(false);update({...browse,q:event.currentTarget.value})}}
             onChange={(event) => update({ ...browse, q: event.target.value })}
           />
         </div>
@@ -202,10 +213,12 @@ export default function AllSites() {
 
       <p className="vl-result-count" aria-live="polite">
         {state.status === 'ready'
-          ? t('resultCount').replace('{n}', String(results.length)).replace('{total}', String(items.length))
+          ? t('resultCount').replace('{n}', String(totalResults)).replace('{total}', String(items.length))
           : ' '}
       </p>
 
+      {browse.q&&jev.error&&<button type="button" onClick={jev.retry}>{t('retry')}</button>}
+      {browse.q&&jev.pageError&&<button type="button" onClick={jev.loadMore}>{t('retry')}</button>}
       {state.status === 'error' ? (
         <p className="vl-alert" role="alert">
           {t('loadFail')}
@@ -222,13 +235,14 @@ export default function AllSites() {
               <SiteCard key={item.entryId} item={item} priority={index < 3} />
             ))}
           </div>
-          {visible < results.length ? (
+          {Math.min(visible,results.length) < totalResults ? (
             <div ref={sentinel} className="vl-grid-sentinel" aria-hidden="true" />
           ) : null}
         </>
       ) : null}
 
-      {state.status === 'ready' && results.length === 0 ? (
+      {browse.q.trim()&&jev.response?.remainingCount>0&&results.length===0&&<p role="status">{locale==='en'?'More candidates are awaiting Jev review.':'还有候选待 Jev 判断。'}</p>}
+      {state.status === 'ready' && results.length === 0 && (!browse.q.trim() || (['ready','error'].includes(jev.status)&&!(jev.response?.remainingCount>0))) ? (
         <div className="vl-empty" role="status">
           <h2>{t('emptySites')}</h2>
           {worst ? (

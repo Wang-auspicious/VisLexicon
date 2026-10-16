@@ -4,10 +4,12 @@ import { createHash } from 'node:crypto'
 import { CATEGORY_FILES } from '../public/effects-atlas/fx/index.js'
 import { enrichCardSamples } from '../public/effects-atlas/card-samples.js'
 import { addPractices } from '../public/effects-atlas/practices.js'
+import { syncDiscoveryBrowser } from './sync-discovery-browser.mjs'
 
 const publicRoot = new URL('../public/', import.meta.url)
 
 export async function buildAtlasCatalog() {
+  await syncDiscoveryBrowser()
   const modules = await Promise.all(CATEGORY_FILES.map(async file => ({ file, category: (await import(`../public/effects-atlas/fx/${file}.js`)).default })))
   const originalFetch = globalThis.fetch
   let categories

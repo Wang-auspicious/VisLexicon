@@ -10,13 +10,30 @@ export const DISCOVERY_SCOPES = {
 export function queryRequirements(query) {
   const q=String(query).normalize('NFKC').toLowerCase()
   // Remove relaxed / negative requirements before interpreting positive filters.
-  const relaxed=q.replace(/不免费(?:也|都)?可以|不免费也行|收费也(?:行|可以)|免费与否不限/gu,'').replace(/(?:不要求|不需要|无需|不必|不要|不用|不限|无所谓)[^，。;；]{0,5}(?:免费|开源|源码|源代码|商用)/gu,'').replace(/(?:need not|don'?t need|no need for|not necessarily)\s+(?:free|open[- ]source|source code|commercial)/gu,'')
+  const relaxed=q.replace(/不免费(?:也|都)?可以|不免费也行|收费也(?:行|可以)|免费与否不限/gu,'').replace(/(?:不要求|不需要|无需|不必|不要|不用|不限|无所谓)[^，。,;；]{0,5}(?:免费|开源|源码|源代码|商用)/gu,'').replace(/(?:need not|don'?t need|no need for|not necessarily)\s+(?:free|open[- ]source|source code|commercial)/gu,'')
   const result={
     free: /免费|不花钱|不收费|零成本|\bfree\b|no[- ]cost/u.test(relaxed),
     source: /源码|源代码|开源|能改代码|source[- ]?code|open[- ]source/u.test(relaxed),
     commercial: /商用|商业使用|commercial/u.test(relaxed),
     openSource: /开源|open[- ]source/u.test(relaxed),
   }
+  // A later relaxation supersedes an earlier condition. Removing only its
+  // words would leave the old positive request active during progressive edits.
+  const isRelaxedAfter=(positive,negative)=>{
+    const cancellations=[...q.matchAll(negative)]
+    const positives=[...q.matchAll(positive)].filter(match=>!cancellations.some(cancel=>match.index>=cancel.index&&match.index<cancel.index+cancel[0].length))
+    return cancellations.length>0&&cancellations.at(-1).index>(positives.at(-1)?.index??-1)
+  }
+  const relaxPrefix='(?:不要求|不需要|无需|不必|不要|不用|不限|无所谓)[^，。,;；]{0,5}'
+  if(isRelaxedAfter(/免费|不花钱|不收费|零成本|\bfree\b|no[- ]cost/gu,new RegExp(relaxPrefix+'(?:免费|不花钱|不收费|零成本)|(?:not necessarily|no need for)\\s+free','gu')))result.free=false
+  if(isRelaxedAfter(/源码|源代码|开源|能改代码|source[- ]?code|open[- ]source/gu,new RegExp(relaxPrefix+'(?:源码|源代码|开源)|(?:not necessarily|no need for)\\s+(?:source code|open[- ]source)','gu')))result.source=false
+  if(isRelaxedAfter(/开源|open[- ]source/gu,new RegExp(relaxPrefix+'开源|(?:not necessarily|no need for)\\s+open[- ]source','gu')))result.openSource=false
+  if(isRelaxedAfter(/商用|商业使用|commercial/gu,new RegExp(relaxPrefix+'(?:商用|商业使用)|(?:not necessarily|no need for)\\s+commercial','gu')))result.commercial=false
+  const paidAllowed=[...q.matchAll(/(?:收费|付费)(?:的)?(?:也|都)?(?:可以|可|行|接受)|(?:也|都)?(?:可以|可接受|接受)(?:收费|付费)/gu)].filter(match=>{
+    const prefix=q.slice(0,match.index).split(/[，。;；,]/u).at(-1)
+    return !/源码|源代码|source code/u.test(prefix)
+  })
+  if(paidAllowed.length&&(paidAllowed.at(-1).index>([...q.matchAll(/免费|\bfree\b/gu)].at(-1)?.index??-1)))result.free=false
   if(/(?:源码|源代码|代码)(?:也|是|则)?(?:可以|可|允许|接受|能)(?:是)?(?:收费|付费)|source(?: code)?\s+(?:can|may)\s+(?:be paid|cost)/u.test(q))result.allowPaidSource=true
   // A Skill's source-code license does not establish model-service pricing or
   // rights to generated images. Explicit subject requests need their own offer.

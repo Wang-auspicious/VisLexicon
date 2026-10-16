@@ -1,119 +1,103 @@
 import crypto from 'node:crypto'
-import { applyModelRanking, rerankPool } from '../src/lib/component-discovery.js'
+import { applyModelRanking, discoveryCandidatePool, canRefineQuery } from '../src/lib/component-discovery.js'
 
-// A search response keeps the full qualified set, including matches beyond the
-// first page of cards. The browser only carries a short, opaque handle.
-export function createRefinementStore({ maxEntries = 512 } = {}) {
-  const snapshots = new Map()
+const sameContext=(record,index)=>record.scope===index.scope&&record.theme===index.theme&&record.indexVersion===index.generatedAt&&(record.filterKey||'')===(index.filterKey||'')
 
-  function resolve(token, query, index) {
-    if (!token) return { mode: 'initial' }
-    const snapshot = snapshots.get(token)
-    if (!snapshot) return { mode: 'reset', reason: 'expired' }
-    if (snapshot.scope !== index.scope || snapshot.theme !== index.theme || snapshot.indexVersion !== index.generatedAt) {
-      return { mode: 'reset', reason: 'index-or-topic-changed' }
-    }
-    if (!query.startsWith(snapshot.query) || query.length <= snapshot.query.length) {
-      return { mode: 'reset', reason: 'query-changed' }
-    }
-    snapshots.delete(token)
-    snapshots.set(token, snapshot)
-    return { mode: 'refined', ids: snapshot.ids, previousQuery: snapshot.query }
+// Immutable snapshots retain every hard-constraint-eligible ID. Model rejects
+// affect the displayed results for this exact query, never future recall.
+export function createRefinementStore({maxEntries=512}={}) {
+  const snapshots=new Map()
+  function get(token,index) {
+    const record=snapshots.get(token)
+    if(!record||!sameContext(record,index))return null
+    snapshots.delete(token);snapshots.set(token,record)
+    return record
   }
-
-  function save(query, index, candidates, rows) {
-    const ids = applyModelRanking(query, candidates.map(row => row.unit), rows)
-      .filter(row => row.score >= 1.4)
-      .map(row => row.unit.id)
-    const token = crypto.randomBytes(16).toString('hex')
-    const candidateDigest = crypto.createHash('sha256').update(JSON.stringify(ids)).digest('hex')
-    snapshots.set(token, { query, scope: index.scope, theme: index.theme, indexVersion: index.generatedAt, ids, candidateDigest })
-    while (snapshots.size > maxEntries) snapshots.delete(snapshots.keys().next().value)
+  function resolve(token,query,index) {
+    if(!token)return {mode:'initial'}
+    const snapshot=snapshots.get(token)
+    if(!snapshot)return {mode:'reset',reason:'expired'}
+    if(!sameContext(snapshot,index))return {mode:'reset',reason:'index-or-topic-changed'}
+    if(query===snapshot.query)return {mode:'continued',ids:snapshot.eligibleIds,snapshot}
+    if(!canRefineQuery(snapshot.query,query))return {mode:'reset',reason:'query-changed'}
+    get(token,index)
+    return {mode:'refined',ids:snapshot.eligibleIds,previousQuery:snapshot.query}
+  }
+  function save(query,index,eligible,rows=[],previousToken=null) {
+    const previous=previousToken&&get(previousToken,index)
+    const eligibleIds=[...new Set(eligible.map(row=>(row.unit||row).id))]
+    const valid=new Set(eligibleIds)
+    const judgments=new Map(previous?.query===query?previous.judgments:[])
+    for(const row of applyModelRanking(query,eligible.map(row=>row.unit||row),rows))judgments.set(row.unit.id,{score:row.score,confidence:row.confidence})
+    // Invalid/foreign IDs and incomplete model responses never become judgments.
+    for(const id of judgments.keys())if(!valid.has(id))judgments.delete(id)
+    const confirmed=eligibleIds.filter(id=>(judgments.get(id)?.score??-1)>=1.4)
+      .sort((a,b)=>judgments.get(b).score-judgments.get(a).score)
+    const pending=eligibleIds.filter(id=>!judgments.has(id))
+    const token=crypto.randomBytes(16).toString('hex')
+    snapshots.set(token,{query,scope:index.scope,theme:index.theme,indexVersion:index.generatedAt,filterKey:index.filterKey||'',
+      eligibleIds,judgments,ids:[...confirmed,...pending],confirmedCount:confirmed.length,
+      candidateDigest:crypto.createHash('sha256').update(JSON.stringify(eligibleIds)).digest('hex')})
+    while(snapshots.size>maxEntries)snapshots.delete(snapshots.keys().next().value)
     return token
   }
-
-  function page(token, index, byId, offset = 0, limit = 12) {
-    const snapshot = snapshots.get(token)
-    if (!snapshot || snapshot.scope !== index.scope || snapshot.theme !== index.theme || snapshot.indexVersion !== index.generatedAt) return null
-    snapshots.delete(token)
-    snapshots.set(token, snapshot)
-    return {
-      total: snapshot.ids.length,
-      units: snapshot.ids.slice(offset, offset + limit).map(id => byId.get(id)).filter(Boolean),
-    }
+  function batch(token,index,byId,limit=32) {
+    const record=get(token,index)
+    if(!record)return []
+    return record.eligibleIds.filter(id=>!record.judgments.has(id)).slice(0,limit).map(id=>byId.get(id)).filter(Boolean).map(unit=>({unit}))
   }
-
-  return { resolve, save, page }
+  function page(token,index,byId,offset=0,limit=12,{allowRecordedFilter=false}={}) {
+    const recorded=snapshots.get(token)
+    const snapshot=get(token,allowRecordedFilter?{...index,filterKey:recorded?.filterKey}:index)
+    if(!snapshot)return null
+    return {total:snapshot.ids.length,eligibleCount:snapshot.eligibleIds.length,judgedCount:snapshot.judgments.size,
+      confirmedCount:snapshot.confirmedCount,remainingCount:snapshot.eligibleIds.length-snapshot.judgments.size,
+      units:snapshot.ids.slice(offset,offset+limit).map(id=>byId.get(id)).filter(Boolean).map(unit=>({...unit,matchStatus:snapshot.judgments.has(unit.id)?'confirmed':'preliminary'}))}
+  }
+  return {resolve,save,page,batch,get}
 }
 
-// A model request may still be pending when the next keystroke is sent. Keep
-// its selected IDs server-side before ranking, so the next prefix only searches
-// that bounded scope. Per-session preparation is ordered even on a cold index.
+// Per-session preparation is ordered even with a cold index. The only stored
+// boundary is a full eligible snapshot, never a model batch or visible page.
 export function createProvisionalSearchStore({maxEntries=256}={}) {
   const sessions=new Map(),tails=new Map()
-  const sameContext=(record,index)=>record.scope===index.scope&&record.theme===index.theme&&record.indexVersion===index.generatedAt
-  const remember=(sessionId,record)=>{
-    sessions.delete(sessionId);sessions.set(sessionId,record)
-    while(sessions.size>maxEntries)sessions.delete(sessions.keys().next().value)
-  }
+  const remember=(id,record)=>{sessions.delete(id);sessions.set(id,record);while(sessions.size>maxEntries)sessions.delete(sessions.keys().next().value)}
   async function prepare({sessionId,requestId,query,load,refineToken,refinements}) {
     const preceding=tails.get(sessionId)||Promise.resolve()
     const operation=preceding.catch(()=>{}).then(async()=>{
-      const {index,byId,searchLimit}=await load()
+      const context=await load(),{index,byId,searchLimit}=context
       const prior=sessions.get(sessionId)
-      if(prior&&requestId<prior.requestId)return {stale:true}
-      if(prior&&requestId===prior.requestId){
-        if(prior.query!==query||!sameContext(prior,index))return {stale:true}
-        return {index,byId,searchLimit,candidates:prior.selectedIds.map(id=>byId.get(id)).filter(Boolean).map(unit=>({unit})),sourceCandidateCount:prior.sourceCandidateCount,refinement:prior.refinement,resetReason:prior.resetReason}
+      if(prior&&(requestId<prior.requestId||(requestId===prior.requestId&&(prior.query!==query||!sameContext(prior,index)))))return {stale:true}
+      if(prior&&sameContext(prior,index)&&prior.query===query&&refinements.get(prior.token,index)) {
+        const record={...prior,requestId}
+        remember(sessionId,record)
+        return {...context,candidates:refinements.batch(record.token,index,byId,searchLimit),eligible:refinements.get(record.token,index).eligibleIds.map(id=>({unit:byId.get(id)})).filter(row=>row.unit),
+          sourceCandidateCount:record.sourceCandidateCount,refinement:record.refinement,resetReason:record.resetReason,token:record.token}
       }
-      let candidates,sourceCandidateCount,refinement,resetReason=null
-      if(prior&&sameContext(prior,index)&&query.startsWith(prior.query)&&query.length>prior.query.length){
-        const ids=prior.matchIds??prior.selectedIds
-        const source=ids.map(id=>byId.get(id)).filter(Boolean)
-        candidates=rerankPool(query,source,searchLimit)
-        sourceCandidateCount=source.length
-        refinement=prior.matchIds===null?'provisional':'refined'
-      }else if(prior){
-        candidates=rerankPool(query,index.units,searchLimit)
-        sourceCandidateCount=index.units.length
-        refinement='reset'
-        resetReason=sameContext(prior,index)?'query-changed':'index-or-topic-changed'
-      }else{
-        const selected=selectDiscoveryCandidates(query,index,byId,refinements,refineToken,searchLimit)
-        candidates=selected.candidates
-        sourceCandidateCount=selected.sourceCandidateCount
-        refinement=selected.refinement
-        resetReason=selected.resetReason
-      }
-      remember(sessionId,{requestId,query,scope:index.scope,theme:index.theme,indexVersion:index.generatedAt,sourceCandidateCount,refinement,resetReason,selectedIds:candidates.map(({unit})=>unit.id),matchIds:null})
-      return {index,byId,searchLimit,candidates,sourceCandidateCount,refinement,resetReason}
+      const selected=selectDiscoveryCandidates(query,index,byId,refinements,prior?.token||refineToken,searchLimit)
+      const token=selected.token||refinements.save(query,index,selected.eligible)
+      remember(sessionId,{requestId,query,scope:index.scope,theme:index.theme,indexVersion:index.generatedAt,filterKey:index.filterKey||'',token,
+        sourceCandidateCount:selected.sourceCandidateCount,refinement:selected.refinement,resetReason:selected.resetReason})
+      return {...context,...selected,token}
     })
-    const tail=operation.then(()=>{},()=>{})
-    tails.set(sessionId,tail)
+    const tail=operation.then(()=>{},()=>{});tails.set(sessionId,tail)
     try{return await operation}finally{if(tails.get(sessionId)===tail)tails.delete(sessionId)}
   }
-  function commit(sessionId,requestId,query,index,matchedIds) {
+  function commit(sessionId,requestId,query,index,token) {
     const record=sessions.get(sessionId)
     if(!record||record.requestId!==requestId||record.query!==query||!sameContext(record,index))return false
-    const selected=new Set(record.selectedIds)
-    record.matchIds=[...new Set(matchedIds)].filter(id=>selected.has(id))
-    remember(sessionId,record)
-    return true
+    record.token=token;remember(sessionId,record);return true
   }
   return {prepare,commit}
 }
 
-export function selectDiscoveryCandidates(query, index, byId, store, token, limit = 32) {
-  const refinement = store.resolve(token, query, index)
-  const source = refinement.mode === 'refined'
-    ? refinement.ids.map(id => byId.get(id)).filter(Boolean)
-    : index.units
-  return {
-    candidates: rerankPool(query, source, limit),
-    sourceCandidateCount: source.length,
-    refinement: refinement.mode,
-    resetReason: refinement.reason,
-  }
+export function selectDiscoveryCandidates(query,index,byId,store,token,limit=32) {
+  const refinement=store.resolve(token,query,index)
+  if(refinement.mode==='continued')return {candidates:store.batch(token,index,byId,limit),eligible:refinement.ids.map(id=>({unit:byId.get(id)})).filter(row=>row.unit),
+    sourceCandidateCount:refinement.ids.length,refinement:'continued',resetReason:null,token}
+  const source=refinement.mode==='refined'?refinement.ids.map(id=>byId.get(id)).filter(Boolean):index.units
+  const eligible=discoveryCandidatePool(query,source)
+  return {candidates:eligible.slice(0,limit),eligible,sourceCandidateCount:source.length,refinement:refinement.mode,resetReason:refinement.reason||null}
 }
 
 // Card payloads exclude the large measured/search-only fields. Ranking and
@@ -121,10 +105,10 @@ export function selectDiscoveryCandidates(query, index, byId, store, token, limi
 export function projectDiscoveryCard(unit) {
   const { id, kind, nameZh, nameEn, descriptionZh, descriptionEn, sectionsZh, sectionsEn,
     previewUrl, previewKind, source, sourceUrl, offers, relatedSites, tags, tagFacets,
-    detailUrl, resourceType } = unit
+    detailUrl, resourceType, matchStatus } = unit
   return { id, kind, nameZh, nameEn, descriptionZh, descriptionEn, sectionsZh, sectionsEn,
     previewUrl, previewKind, source, sourceUrl, offers, relatedSites, tags, tagFacets,
-    detailUrl, resourceType }
+    detailUrl, resourceType, matchStatus }
 }
 
 export function summarizeDiscoveryIndex(index) {

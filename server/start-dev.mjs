@@ -1,6 +1,9 @@
 import { spawn } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 import { withLoopbackNoProxy } from './jev-provider.mjs'
+import { syncDiscoveryBrowser } from '../scripts/sync-discovery-browser.mjs'
+
+await syncDiscoveryBrowser()
 
 // Proxy selection is initialized when Node starts; set it before spawning Vite.
 const vite = fileURLToPath(new URL('../node_modules/vite/bin/vite.js', import.meta.url))

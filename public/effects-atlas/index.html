@@ -160,7 +160,7 @@
       <span style="margin-left:2px;padding:3px 8px;border-radius:999px;background:#eef0e8;font-size:11.5px;font-weight:600;color:#5d6b57;font-variant-numeric:tabular-nums;letter-spacing:.01em;white-space:nowrap">{{ totalLabel }}</span>
     </div>
     <div style="flex:1;display:flex;justify-content:center;min-width:0">
-      <input value="{{ query }}" onChange="{{ onQuery }}" placeholder="{{ searchLabel }}" style="width:min(460px,100%);height:38px;border:1px solid #e6e7e0;border-radius:10px;padding:0 15px;font-size:14px;font-family:inherit;font-weight:500;outline:none;background:#f4f5f1;color:#23232f;transition:border-color .18s,background .18s,box-shadow .18s" style-focus="border-color:#c3c5b8;background:#fff;box-shadow:0 1px 2px rgba(32,56,29,.05)" />
+
     </div>
     <div style="display:flex;align-items:center;gap:3px;flex:none">
       <button onClick="{{ setZh }}" style="height:30px;padding:0 12px;border:0;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;font-family:inherit;background:{{ zhBg }};color:{{ zhFg }};transition:.18s">{{ zhLabel }}</button>
@@ -189,6 +189,10 @@
     </nav>
 
     <main style="overflow:auto;min-width:0">
+      <div role="search" style="padding:18px clamp(16px,3vw,44px) 0">
+        <label style="display:block;font-size:14px;font-weight:600;margin-bottom:8px" for="atlas-query">{{ localSearchLabel }}</label>
+      <input id="atlas-query" value="{{ query }}" onChange="{{ onQuery }}" onCompositionStart="{{ startComposition }}" onCompositionEnd="{{ endComposition }}" aria-label="{{ searchLabel }}" placeholder="{{ searchLabel }}" style="width:min(460px,100%);height:38px;border:1px solid #e6e7e0;border-radius:10px;padding:0 15px;font-size:14px;font-family:inherit;font-weight:500;outline:none;background:#f4f5f1;color:#23232f;transition:border-color .18s,background .18s,box-shadow .18s" style-focus="border-color:#c3c5b8;background:#fff;box-shadow:0 1px 2px rgba(32,56,29,.05)" />
+      </div>
       <div class="fx-mobile-categories"><button onClick="{{ goHome }}" style="flex:none;min-height:40px;font-size:12px">{{ mobileOverviewLabel }}</button><sc-raw-select aria-label="{{ mobileCategoryAriaLabel }}" value="{{ mobileCategory }}" onChange="{{ chooseMobileCategory }}"><option value="">{{ mobilePickLabel }}</option><sc-for list="{{ categoryOptions }}" as="c"><option value="{{ c.id }}">{{ c.name }}</option></sc-for></sc-raw-select></div>
 
       <sc-if value="{{ deepLinkErrorOn }}" hint-placeholder-val="{{ false }}">
@@ -231,7 +235,7 @@
         <div class="fx-browse-body" style="padding:40px 40px 72px;max-width:1500px">
           <div style="padding-bottom:22px">
             <h1 style="margin:0;font-size:clamp(30px,3.6vw,42px);font-weight:700;letter-spacing:-.035em;line-height:1.02;color:#23232f">{{ catName }}</h1>
-            <p style="margin:10px 0 0;font-size:15.5px;line-height:1.5;color:#7c7e73;max-width:56ch;text-wrap:pretty">{{ catSub }}</p>
+            <p role="status" aria-live="polite" style="margin:10px 0 0;font-size:15.5px;line-height:1.5;color:#7c7e73;max-width:56ch;text-wrap:pretty">{{ catSub }}</p>
             <div class="rule" style="margin-top:22px;height:2px;background:#23232f;width:44px"></div>
           </div>
 
@@ -540,7 +544,8 @@ class Component extends DCLogic {
       this.sync();
     } else import('./fx/index.js').then(async (mod) => {
       const cats = await mod.loadCategories();
-      this.setState({ mod, cats, catId: cats[0] && cats[0].id, lang: this._hostLang }, () => {
+      this._atlasSearchMeta=new Map(cats.map(category=>[category.id,category]));
+      this.setState({ mod, cats, catId: this.state.catId, lang: this._hostLang }, () => {
         this.applyDeepLink();
         this.sync();
       });
@@ -587,18 +592,19 @@ class Component extends DCLogic {
     window.removeEventListener('message', this._hostLocale);
     window.removeEventListener('keydown', this._keys);
     document.removeEventListener('visibilitychange', this._vis);
-    clearTimeout(this._jevTimer);this._jevController?.abort();
+    this._jevSearch?.destroy();this._jevSetupVersion=(this._jevSetupVersion||0)+1;
     clearInterval(this._hov); cancelAnimationFrame(this._raf);
     if (this._io) this._io.disconnect();
     this._hubObserver?.disconnect();
   }
   componentDidUpdate(prevProps, prevState) {
     this.sync();
-    if(prevState.query!==this.state.query || (!prevState.mod && this.state.mod && this.state.query.trim()))this.rankTerms();
+    if(prevState.query!==this.state.query || prevState.catId!==this.state.catId || (!prevState.mod && this.state.mod && this.state.query.trim()))this.rankTerms();
   }
   isActive = () => this._hostActive !== false && !document.hidden;
   setActive = (active) => {
     this._hostActive = active;
+    this._jevSearch?.setActive(this.isActive());
     document.documentElement?.classList.toggle('fx-host-paused', !this.isActive());
     this._msig = null;
     this.budget();
@@ -626,30 +632,34 @@ class Component extends DCLogic {
       .then(sites => { this._curatedMap = Array.isArray(sites) ? sites : []; this.setState({}); })
       .catch(() => { this._detailEvidence = false; });
   };
-  rankTerms = () => {
-    clearTimeout(this._jevTimer);this._jevController?.abort();
-    const query=this.state.query.trim();
-    if(!query)return;
-    const controller=new AbortController();this._jevController=controller;
-    const T2=T[this.state.lang]||T.zh;
-    this.setState({jevQuery:query,jevRows:[],jevStatus:T2.jevJudging});
-    this._jevTimer=setTimeout(async()=>{
-      try {
-        const {rerankPool}=await import('./jev-recall.js');
-        this._searchCats=await this.state.mod.loadSearchIndex();
-        if(controller.signal.aborted)return;
-        const units=this._searchCats.flatMap(c=>c.items.map(it=>({id:this.key(c,it),kind:'term',componentType:'term',nameZh:it.zh,nameEn:it.en,descriptionZh:[it.dz,it.pz].join('。'),descriptionEn:it.de,tags:[c.zh,c.en,it.zh,it.en]})));
-        const candidates=rerankPool(query,units,50).map(row=>row.unit);
-        const response=await fetch('/api/discovery/rank',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,scope:'atlas-terms',candidates}),signal:controller.signal});
-        const data=await response.json();if(!response.ok)throw Error(data.error||'JEV_UNAVAILABLE');
-        if(!controller.signal.aborted)this.setState({jevQuery:query,jevRows:(data.rows||[]).filter(row=>row.score>=1.4).sort((a,b)=>b.score-a.score),jevStatus:T2.jevJudged(data.candidateCount||0)});
-      }catch(error){if(!controller.signal.aborted)this.setState({jevQuery:query,jevRows:[],jevStatus:error.message==='JEV_TUNNEL_DISCONNECTED'?(this.state.lang==='zh'?'Jev 未连接（隧道未开）':'Jev is not connected (tunnel is closed).'):T2.jevUnavailable});}
-    },650);
+  rankTerms = async () => {
+    const generation=this._jevSetupVersion=(this._jevSetupVersion||0)+1;
+    if(!this.state.query.trim()){this._jevSearch?.setQuery('');return;}
+    if(!this.state.mod)return;
+    try {
+      const [runtime,categories,requirements]=await Promise.all([import('/discovery-search-session.js'),this.state.mod.loadSearchIndex(),import('./discovery-scopes.js')]);
+      if(generation!==this._jevSetupVersion)return;
+      this._jevRuntime=runtime;this._searchCats=categories;this._jevRequirements= requirements.matchesRequirements;
+      const theme=this.state.catId||'';
+      if(!this._jevSearch||this._jevTheme!==theme){
+        this._jevSearch?.destroy();this._jevTheme=theme;
+        const idFor=(c,it)=>runtime.atlasDiscoveryId(this._atlasSearchMeta?.get(c.id)||c,it);
+        this._jevAtlasKeys=new Map(categories.flatMap(c=>c.items.map(it=>[idFor(c,it),this.key(c,it)])));
+        const allowedIds=categories.filter(c=>!theme||c.id===theme).flatMap(c=>c.items.map(it=>idFor(c,it)));
+        this._jevSearch=runtime.createDiscoverySearch({scope:'atlas',theme,allowedIds,pageSize:18,active:this.isActive(),onChange:search=>{
+          this.setState({jevSearchState:search,jevRows:(runtime.displayDiscoveryResponse(search.response)?.units||[]).map(unit=>({id:this._jevAtlasKeys.get(unit.id)})).filter(row=>row.id)});
+        }});
+      }
+      this._jevSearch.setQuery(this.state.query,{composing:!!this._jevComposing});
+    }catch{if(generation===this._jevSetupVersion)this.setState({jevSearchState:{query:this.state.query,status:'error',error:'MODEL_UNAVAILABLE'}});}
   };
   jevMatches = () => {
-    if(this.state.jevQuery!==this.state.query.trim())return [];
     const categories=(this._searchCats||[]).map(category=>this.state.cats.find(row=>row.id===category.id&&row.loaded)||category);
     const byId=new Map(categories.flatMap(c=>c.items.map(it=>[this.key(c,it),{c,it}])));
+    if(!this.state.jevSearchState?.response){
+      const q=this.state.query.trim().toLowerCase();
+      return categories.filter(c=>!this.state.catId||c.id===this.state.catId).flatMap(c=>c.items.filter(it=>this.match(c,it,q)&&(!this._jevRequirements||this._jevRequirements(q,{offers:it.offers||[]}))).map(it=>({c,it})));
+    }
     return (this.state.jevRows||[]).map(row=>byId.get(row.id)).filter(Boolean);
   };
 
@@ -945,7 +955,7 @@ class Component extends DCLogic {
   poolSize = () => {
     const q = this.state.query.trim().toLowerCase();
     if (!q) { const c = this.cat(); return c ? c.items.length : 0; }
-    return this.jevMatches().length;
+    return this._jevRuntime?.displayDiscoveryResponse(this.state.jevSearchState?.response)?.matchCount ?? this.jevMatches().length;
   };
 
   /* 滚动位置：从卡片墙点进详情前记住墙的位置，返回时还原。
@@ -972,16 +982,13 @@ class Component extends DCLogic {
   };
   pickCat = async (id) => {
     this._pendingCategory = id;
-    const c = await this.ensureCategory(id).catch(() => null);
-    if (!c || this._pendingCategory !== id) return;
-    this._hostStage = ''; this._hostTerm = '';
-    this._sig = null;
-    this._hostQuery = '';
-    this._wallScroll = 0;
-    this.setState(
-      { catId: id, mode: 'wall', query: '', limit: c && c.view === 'lang' ? 5 : 18, deepLinkError: '' },
-      () => this.scrollTo(0),
-    );
+    this._hostStage = ''; this._hostTerm = ''; this._sig = null; this._hostQuery = ''; this._wallScroll = 0;
+    const category=this.state.cats.find(c=>c.id===id);
+    this._jevSearch?.setQuery('');
+    this.setState({catId:id,mode:'wall',query:'',limit:category?.view==='lang'?5:18,deepLinkError:''},()=>this.scrollTo(0));
+    // Selecting a topic takes effect immediately. Loading its demos must not
+    // later erase text typed while that category module was in flight.
+    await this.ensureCategory(id).catch(()=>null);
   };
   pageSize = () => { const c = this.cat(); return (c && c.view === 'lang' && !this.state.query.trim()) ? 5 : 18; };
   step = (d) => {
@@ -1065,17 +1072,19 @@ class Component extends DCLogic {
       const curatedSites = (it && cur) ? this.findCuratedSites(it, cur.cat, L) : [];
 
       return {
-        brand: t.brand, searchLabel: t.search,
+        brand: t.brand, searchLabel: t.search, localSearchLabel: L==='zh'?'在图鉴里寻找':'Find in Atlas',
       totalLabel: total ? t.total(total) : '',
-      query: s.query, onQuery: (e) => { this._sig = null; this._hostStage = ''; this._hostTerm = ''; this._hostQuery = ''; this.setState({ query: e.target.value, mode: 'wall', catId: null, limit: 18, deepLinkError: '' }); },
+      query: s.query, onQuery: (e) => { this._sig = null; this._hostStage = ''; this._hostTerm = ''; this._hostQuery = ''; this._jevSearch?.setQuery(e.target.value,{composing:!!this._jevComposing}); const category=s.mode==='hub'?null:s.catId; this.setState({ query: e.target.value, mode: e.target.value.trim()||category?'wall':'hub', catId:category, limit: 18, deepLinkError: '' }); },
+      startComposition: () => {this._jevComposing=true;this._jevSearch?.setComposing(true);},
+      endComposition: () => {this._jevComposing=false;this._jevSearch?.setComposing(false);this.rankTerms();},
       setZh: () => this.setState({ lang: 'zh' }), setEn: () => this.setState({ lang: 'en' }),
       zhLabel: L === 'zh' ? '中文' : 'Chinese', enLabel: 'English',
       zhBg: L === 'zh' ? '#eef0e8' : 'transparent', zhFg: L === 'zh' ? '#23232f' : '#a0a297',
       enBg: L === 'en' ? '#eef0e8' : 'transparent', enFg: L === 'en' ? '#23232f' : '#a0a297',
-      goHome: () => { this._sig = null; this._hostQuery = ''; this.setState({ mode: 'hub', query: '', limit: 18, deepLinkError: '' }); },
+      goHome: () => { this._sig = null; this._hostQuery = ''; this.setState({ mode: 'hub', catId: null, query: '', limit: 18, deepLinkError: '' }); },
       groups,
       mobileCategory: s.catId || '', categoryOptions: cats.map(c=>({id:c.id,name:nm(c)})),
-      chooseMobileCategory: e => e.target.value ? this.pickCat(e.target.value) : this.setState({mode:'hub'}),
+      chooseMobileCategory: e => e.target.value ? this.pickCat(e.target.value) : this.setState({mode:'hub',catId:null,query:''}),
       /* 侧栏那行「图谱总览」顺带报总数：分类数 + 条目数，都是真数，不四舍五入。 */
       hubNav: t.overview, catCount: cats.length ? t.cats(cats.length, total) : '',
       hubBg: s.mode === 'hub' ? '#eceee6' : 'transparent', hubFg: s.mode === 'hub' ? '#23232f' : '#65675f', hubW: s.mode === 'hub' ? 600 : 500,
@@ -1114,11 +1123,11 @@ class Component extends DCLogic {
       })) : [],
       detailOn: s.mode === 'detail' && !!it,
       detailClass: it?.practice ? 'practice-detail' : '',
-      catName: s.deepLinkError ? nm(cat) : (q ? ((s.jevStatus||t.jevJudging)+' · '+t.results(pool)) : nm(cat)),
-      catSub: q ? (L === 'zh' ? `“${s.query}” 的匹配结果` : `matches for “${s.query}”`) : (cat ? (L === 'zh' ? cat.dz : cat.de) : ''),
+      catName: s.deepLinkError ? nm(cat) : (q ? (L==='zh'?'检索结果':'Search results') : nm(cat)),
+      catSub: q ? (!s.jevSearchState?.response?((L==='zh'?`本地关键词筛选 ${pool} 条 · `:`${pool} local keyword matches · `)+(s.jevSearchState?.error?(L==='zh'?'Jev 未连接':'Jev is not connected'):t.jevJudging)):((this._jevRuntime?.discoveryStatus(s.jevSearchState||{query:s.query,status:'waiting'},L==='en')||t.jevJudging)+' · '+(cat?nm(cat):(L==='zh'?'本栏全部':'All in this section'))+(s.jevSearchState?.error?' · '+t.jevUnavailable:''))) : (cat ? (L === 'zh' ? cat.dz : cat.de) : ''),
       tiles,
-      hasMore: pool > vis.length, moreLabel: t.more, more: () => this.setState({ limit: s.limit + this.pageSize() }),
-      wallEmpty: !!mod && pool === 0, emptyLabel: s.deepLinkError || t.empty,
+      hasMore: pool > vis.length || !!(q&&s.jevSearchState?.error), moreLabel: s.jevSearchState?.loadingMore?(L==='zh'?'正在加载…':'Loading…'):s.jevSearchState?.error?(L==='zh'?'重试 Jev':'Retry Jev'):t.more, more: () => {if(q&&s.jevSearchState?.error){this._jevSearch?.retry();return;} this.setState({limit:s.limit+this.pageSize()});if(q&&this.jevMatches().length<=s.limit+this.pageSize())this._jevSearch?.loadMore();},
+      wallEmpty: !!mod && pool === 0, emptyLabel: s.deepLinkError || (q&&(!s.jevSearchState||['idle','waiting','preparing','ranking'].includes(s.jevSearchState.status)||s.jevSearchState?.response?.remainingCount>0)?t.jevJudging:t.empty),
 
       back: () => { this._sig = null; this._hostStage = ''; this._hostTerm = ''; this._hostQuery = ''; this.backToWall({ mode: 'wall', deepLinkError: '' }); }, backLabel: t.back,
       crumb: cur ? `${nm(cur.cat)} / ${nm(it)}` : '',
