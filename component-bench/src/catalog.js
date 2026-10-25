@@ -15,6 +15,7 @@ import COCKROACH_BADGE_SOURCE from './generated/cockroach-badge-source.json' wit
 import PARADISE_TEXTFIELD_SOURCE from './generated/paradise-textfield-source.json' with { type: 'json' }
 import PARADISE_TEXTAREA_SOURCE from './generated/paradise-textarea-source.json' with { type: 'json' }
 import TURNTWOGG_GRID_SOURCE from './generated/turntwogg-grid-source.json' with { type: 'json' }
+import FDK_HSTACK_SOURCE from './generated/fdk-hstack-source.json' with { type: 'json' }
 
 export const CATEGORIES = [
   { id: 'data', zh: '数据展示', en: 'Data display' },
@@ -655,4 +656,39 @@ CATALOG.push({
   params: [],
   verification: 'actual-source-render-and-browser-verified',
   previewVerification: 'The pinned Grid story rendered with the original Row and Col source plus its default theme. Browser checks at 800, 1000 and 1300px showed the original 4/4/4, 6/3/3 and 3/6/3 column ratios; the poster is a real 800×500 browser capture.',
+})
+
+const fdkHStackStory = 'https://github.com/Informasjonsforvaltning/fdk-ui/blob/b1599b4c6bfec36e1ea00da296332be57307e4e4/src/components/hstack/hstack.stories.tsx'
+CATALOG.push({
+  id: 'fdk-hstack-primary',
+  lane: 'github',
+  category: 'layout',
+  fill: 'light',
+  zh: '水平标签间距栈',
+  en: 'Horizontal stack with spacing',
+  summaryZh: 'FDK UI 的 HStack.Primary 原始 story 将 One、Two、Three 三个内容标签横向对齐；原组件用 flex 纵向居中，并固定 8px 间距。',
+  summaryEn: 'The original FDK UI HStack.Primary story aligns three content chips in a row. Its flex wrapper centers them and applies an 8px gap.',
+  tags: ['水平布局', '间距', '标签', 'flex', 'horizontal', 'gap'],
+  source: {
+    site: 'FDK UI', home: 'https://github.com/Informasjonsforvaltning/fdk-ui', repo: 'Informasjonsforvaltning/fdk-ui',
+    commit: 'b1599b4c6bfec36e1ea00da296332be57307e4e4', license: 'Apache-2.0',
+    licenseUrl: FDK_HSTACK_SOURCE.license.url,
+    licenseCheckedAt: FDK_HSTACK_SOURCE.license.verifiedAt, page: fdkHStackStory,
+    licenseFile: FDK_HSTACK_SOURCE.licensePath,
+    licenseSha256: FDK_HSTACK_SOURCE.license.sha256,
+    files: Object.keys(FDK_HSTACK_SOURCE.fileOrigins),
+    fileOrigins: FDK_HSTACK_SOURCE.fileOrigins,
+  },
+  module: './vendor/fdk-ui/src/components/hstack/index.tsx', api: ['HStack'], packages: ['classnames'],
+  offer: {
+    id: 'source-seed-fdk-hstack-primary', verified: true, checkedAt: FDK_HSTACK_SOURCE.license.verifiedAt,
+    subject: 'source-code', scope: 'Pinned HStack.Primary story, flex component, CSS module and exact Apache-2.0 license',
+    access: 'free', sourceAvailable: true, sourceUrl: fdkHStackStory, sourceCost: 'free', openSource: true,
+    commercialUse: true, license: 'Apache-2.0', licenseUrl: FDK_HSTACK_SOURCE.license.url,
+    evidenceUrls: [fdkHStackStory, 'https://github.com/Informasjonsforvaltning/fdk-ui/blob/b1599b4c6bfec36e1ea00da296332be57307e4e4/src/components/hstack/index.tsx', 'https://github.com/Informasjonsforvaltning/fdk-ui/blob/b1599b4c6bfec36e1ea00da296332be57307e4e4/src/components/hstack/hstack.module.scss', FDK_HSTACK_SOURCE.license.url],
+  },
+  exampleArgs: {},
+  params: [],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The pinned HStack.Primary story rendered with the original HStack component and CSS module. Its three labels share a vertically centered flex row with an 8px gap; the chips retain the story background and 4px corners. The poster is a real 800×500 browser capture.',
 })

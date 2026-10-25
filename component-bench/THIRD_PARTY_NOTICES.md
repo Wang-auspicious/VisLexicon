@@ -1,6 +1,6 @@
 # Third-party sample notices
 
-The 30 bundled examples retain their original-source links. The 13 source repositories each include the complete root license text, the pinned commit, and its SHA-256 digest. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 24 entries render their archived source.
+The 31 bundled examples retain their original-source links. The 14 source repositories each include the complete root license text, the pinned commit, and its SHA-256 digest. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 25 entries render their archived source.
 
 ## magicuidesign/magicui
 
@@ -104,4 +104,12 @@ The 30 bundled examples retain their original-source links. The 13 source reposi
 - Repository commit: `bdf7c6fbde6d5b84427be3351676d7ac0107026c`
 - Original license: [licenses/turntwogg--react-ui--bdf7c6fbde6d.txt](https://github.com/turntwogg/react-ui/blob/bdf7c6fbde6d5b84427be3351676d7ac0107026c/LICENSE)
 - Complete local license: [licenses/turntwogg--react-ui--bdf7c6fbde6d.txt](licenses/turntwogg--react-ui--bdf7c6fbde6d.txt)
+- License SHA-256: `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4`
+
+## Informasjonsforvaltning/fdk-ui
+
+- License: Apache-2.0
+- Repository commit: `b1599b4c6bfec36e1ea00da296332be57307e4e4`
+- Original license: [licenses/Informasjonsforvaltning--fdk-ui--b1599b4c6bfe.txt](https://github.com/Informasjonsforvaltning/fdk-ui/blob/b1599b4c6bfec36e1ea00da296332be57307e4e4/LICENSE)
+- Complete local license: [licenses/Informasjonsforvaltning--fdk-ui--b1599b4c6bfe.txt](licenses/Informasjonsforvaltning--fdk-ui--b1599b4c6bfe.txt)
 - License SHA-256: `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4`
