@@ -16,6 +16,7 @@ import PARADISE_TEXTFIELD_SOURCE from './generated/paradise-textfield-source.jso
 import PARADISE_TEXTAREA_SOURCE from './generated/paradise-textarea-source.json' with { type: 'json' }
 import TURNTWOGG_GRID_SOURCE from './generated/turntwogg-grid-source.json' with { type: 'json' }
 import FDK_HSTACK_SOURCE from './generated/fdk-hstack-source.json' with { type: 'json' }
+import FDK_COPYBUTTON_SOURCE from './generated/fdk-copybutton-source.json' with { type: 'json' }
 
 export const CATEGORIES = [
   { id: 'data', zh: '数据展示', en: 'Data display' },
@@ -691,4 +692,39 @@ CATALOG.push({
   params: [],
   verification: 'actual-source-render-and-browser-verified',
   previewVerification: 'The pinned HStack.Primary story rendered with the original HStack component and CSS module. Its three labels share a vertically centered flex row with an 8px gap; the chips retain the story background and 4px corners. The poster is a real 800×500 browser capture.',
+})
+
+const fdkCopyButtonStory = 'https://github.com/Informasjonsforvaltning/fdk-ui/blob/b1599b4c6bfec36e1ea00da296332be57307e4e4/src/components/copy-button/copy-button.stories.tsx'
+CATALOG.push({
+  id: 'fdk-copybutton-primary',
+  lane: 'github',
+  category: 'button',
+  fill: 'dark',
+  zh: '复制按钮与成功提示',
+  en: 'Copy button with success tooltip',
+  summaryZh: 'FDK UI 的 CopyButton.Primary 原始 story 将“Tekst å kopiere”写入剪贴板；点击后工具提示从“Kopier”变为“Kopiert!”并显示成功图标。',
+  summaryEn: 'The original FDK UI CopyButton.Primary writes “Tekst å kopiere” to the clipboard; clicking changes the tooltip from “Kopier” to “Kopiert!” with a success icon.',
+  tags: ['复制', '工具提示', '剪贴板', '状态反馈', 'copy', 'tooltip', 'clipboard'],
+  source: {
+    site: 'FDK UI', home: 'https://github.com/Informasjonsforvaltning/fdk-ui', repo: 'Informasjonsforvaltning/fdk-ui',
+    commit: 'b1599b4c6bfec36e1ea00da296332be57307e4e4', license: 'Apache-2.0',
+    licenseUrl: FDK_COPYBUTTON_SOURCE.license.url,
+    licenseCheckedAt: FDK_COPYBUTTON_SOURCE.license.verifiedAt, page: fdkCopyButtonStory,
+    licenseFile: FDK_COPYBUTTON_SOURCE.licensePath,
+    licenseSha256: FDK_COPYBUTTON_SOURCE.license.sha256,
+    files: Object.keys(FDK_COPYBUTTON_SOURCE.fileOrigins),
+    fileOrigins: FDK_COPYBUTTON_SOURCE.fileOrigins,
+  },
+  module: './vendor/fdk-ui/src/components/copy-button/index.tsx', api: ['CopyButton'], packages: ['@digdir/designsystemet-react', '@digdir/designsystemet-css', '@digdir/designsystemet-theme', '@navikt/aksel-icons'],
+  offer: {
+    id: 'source-seed-fdk-copybutton-primary', verified: true, checkedAt: FDK_COPYBUTTON_SOURCE.license.verifiedAt,
+    subject: 'source-code', scope: 'Pinned CopyButton.Primary story, button implementation, HStack helper, storybook theme and exact Apache-2.0 license',
+    access: 'free', sourceAvailable: true, sourceUrl: fdkCopyButtonStory, sourceCost: 'free', openSource: true,
+    commercialUse: true, license: 'Apache-2.0', licenseUrl: FDK_COPYBUTTON_SOURCE.license.url,
+    evidenceUrls: [fdkCopyButtonStory, 'https://github.com/Informasjonsforvaltning/fdk-ui/blob/b1599b4c6bfec36e1ea00da296332be57307e4e4/src/components/copy-button/index.tsx', FDK_COPYBUTTON_SOURCE.license.url],
+  },
+  exampleArgs: { copyLabel: 'Kopier', copiedLabel: 'Kopiert!', copyOnClick: 'Tekst å kopiere' },
+  params: [],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The pinned CopyButton.Primary story rendered with the original CopyButton, HStack helper and Storybook theme. Hover shows “Kopier”; clicking copies “Tekst å kopiere” and changes the tooltip to “Kopiert!” with a success icon. The required FDK Designsystemet and Aksel Icons packages use the exact versions pinned by the source repository Yarn lock. The poster is a real 800×500 browser capture.',
 })

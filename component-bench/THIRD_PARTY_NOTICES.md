@@ -1,6 +1,6 @@
 # Third-party sample notices
 
-The 31 bundled examples retain their original-source links. The 14 source repositories each include the complete root license text, the pinned commit, and its SHA-256 digest. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 25 entries render their archived source.
+The 32 bundled examples retain their original-source links. The 14 source repositories each include the complete root license text, the pinned commit, and its SHA-256 digest. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 26 entries render their archived source.
 
 ## magicuidesign/magicui
 

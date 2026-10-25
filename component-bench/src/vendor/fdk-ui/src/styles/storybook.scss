@@ -1,0 +1,34 @@
+@layer reset, fds;
+@import '../components/core/reset.css';
+@import '@digdir/designsystemet-theme';
+@import '@digdir/designsystemet-css';
+
+html { font-size: 16px; }
+body { font-size: 1rem; }
+
+html, body, #storybook-root {
+  height: 100%;
+}
+
+/* Place for additional global styles */
+body {
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        'Helvetica Neue',
+        Arial,
+        sans-serif;
+    background: var(--color-fdk-navy-dark);
+    color: var(--color-text);
+
+    main {
+        background: white;
+    }
+}
+
+* {
+    font-family: inherit;
+}
