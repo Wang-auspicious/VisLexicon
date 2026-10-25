@@ -14,6 +14,7 @@ import ATXP_ACCORDION_SOURCE from './generated/atxp-accordion-source.json' with 
 import COCKROACH_BADGE_SOURCE from './generated/cockroach-badge-source.json' with { type: 'json' }
 import PARADISE_TEXTFIELD_SOURCE from './generated/paradise-textfield-source.json' with { type: 'json' }
 import PARADISE_TEXTAREA_SOURCE from './generated/paradise-textarea-source.json' with { type: 'json' }
+import TURNTWOGG_GRID_SOURCE from './generated/turntwogg-grid-source.json' with { type: 'json' }
 
 export const CATEGORIES = [
   { id: 'data', zh: '数据展示', en: 'Data display' },
@@ -619,4 +620,39 @@ CATALOG.push({
   ],
   verification: 'actual-source-render-and-browser-verified',
   previewVerification: 'The pinned TextArea.Basic story rendered with the original TextArea component and Tailwind element-class helper. Label and Placeholder were visible; the textarea accepted two lines with the story default autoResize=false. In the live detail preview, enabling autoResize made its height grow to fit three entered lines. The poster is a real 800×500 browser capture.',
+})
+
+const turntwoggGridStory = 'https://github.com/turntwogg/react-ui/blob/bdf7c6fbde6d5b84427be3351676d7ac0107026c/stories/2-Grid.stories.tsx'
+CATALOG.push({
+  id: 'turntwogg-grid-story',
+  lane: 'github',
+  category: 'layout',
+  fill: 'light',
+  zh: '响应式十二列栅格',
+  en: 'Responsive twelve-column grid',
+  summaryZh: 'react-ui 的原始 Grid story：六块内容在 Row 中按 12 列比例换行；sm 为 4/4/4，m 与 l 分别切换为 6/3/3 与 3/6/3。',
+  summaryEn: 'The original Grid story places six blocks in a 12-column Row. Its sm, m and l sizes change from 4/4/4 to 6/3/3 and 3/6/3.',
+  tags: ['栅格布局', '响应式', '十二列', 'grid', 'responsive', '12-column'],
+  source: {
+    site: 'react-ui', home: 'https://github.com/turntwogg/react-ui', repo: 'turntwogg/react-ui',
+    commit: 'bdf7c6fbde6d5b84427be3351676d7ac0107026c', license: 'Apache-2.0',
+    licenseUrl: TURNTWOGG_GRID_SOURCE.license.url,
+    licenseCheckedAt: TURNTWOGG_GRID_SOURCE.license.verifiedAt, page: turntwoggGridStory,
+    licenseFile: TURNTWOGG_GRID_SOURCE.licensePath,
+    licenseSha256: TURNTWOGG_GRID_SOURCE.license.sha256,
+    files: Object.keys(TURNTWOGG_GRID_SOURCE.fileOrigins),
+    fileOrigins: TURNTWOGG_GRID_SOURCE.fileOrigins,
+  },
+  module: './vendor/turntwogg/react-ui/src/index.ts', api: ['Row', 'Col'], packages: ['classnames', 'styled-jsx'],
+  offer: {
+    id: 'source-seed-turntwogg-grid-story', verified: true, checkedAt: TURNTWOGG_GRID_SOURCE.license.verifiedAt,
+    subject: 'source-code', scope: 'Pinned Grid story, Row and Col implementations, theme helpers and complete support files',
+    access: 'free', sourceAvailable: true, sourceUrl: turntwoggGridStory, sourceCost: 'free', openSource: true,
+    commercialUse: true, license: 'Apache-2.0', licenseUrl: TURNTWOGG_GRID_SOURCE.license.url,
+    evidenceUrls: [turntwoggGridStory, 'https://github.com/turntwogg/react-ui/blob/bdf7c6fbde6d5b84427be3351676d7ac0107026c/src/Row.tsx', 'https://github.com/turntwogg/react-ui/blob/bdf7c6fbde6d5b84427be3351676d7ac0107026c/src/Col.tsx', TURNTWOGG_GRID_SOURCE.license.url],
+  },
+  exampleArgs: {},
+  params: [],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The pinned Grid story rendered with the original Row and Col source plus its default theme. Browser checks at 800, 1000 and 1300px showed the original 4/4/4, 6/3/3 and 3/6/3 column ratios; the poster is a real 800×500 browser capture.',
 })

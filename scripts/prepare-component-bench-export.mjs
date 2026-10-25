@@ -22,7 +22,8 @@ export async function prepareBenchExport({ refreshLicenses = false, destination 
     const name = source.repo.replaceAll('/', '--') + '--' + source.commit.slice(0, 12) + '.txt'
     const licenseFile = `licenses/${name}`
     const target = path.join(bench, licenseFile)
-    let bytes = await fs.readFile(target).catch(() => null)
+    let bytes = source.licenseFile ? await fs.readFile(path.join(bench, source.licenseFile)) : await fs.readFile(target).catch(() => null)
+    if (source.licenseFile && sha(bytes) !== source.licenseSha256) throw new Error(`Pinned local license changed: ${source.repo}`)
     if (!bytes || refreshLicenses) {
       let result
       try { result = await run('gh', ['api', `repos/${source.repo}/contents/${originalPath}?ref=${source.commit}`, '-H', 'Accept: application/vnd.github.raw'], { encoding: 'buffer', maxBuffer: 1024 * 1024, windowsHide: true }) }
@@ -35,10 +36,20 @@ export async function prepareBenchExport({ refreshLicenses = false, destination 
         result = await run('gh', ['api', `repos/${source.repo}/contents/${originalPath}?ref=${source.commit}`, '-H', 'Accept: application/vnd.github.raw'], { encoding: 'buffer', maxBuffer: 1024 * 1024, windowsHide: true })
       }
       bytes = result.stdout
-      if (!/Permission is hereby granted/.test(bytes.toString('utf8')) || !/THE SOFTWARE IS PROVIDED ["“]AS IS/.test(bytes.toString('utf8'))) throw new Error(`Upstream license is not the expected MIT grant: ${source.repo}`)
-      await fs.mkdir(path.dirname(target), { recursive: true }); await fs.writeFile(target, bytes)
     }
-    licenses.push({ repo: source.repo, commit: source.commit, license: 'MIT', url: `https://github.com/${source.repo}/blob/${source.commit}/${originalPath}`, file: licenseFile, sha256: sha(bytes), bytes: bytes.length, scope: CATALOG.filter(e => e.source?.repo === source.repo).map(e => e.id) })
+    const licenseText = bytes.toString('utf8')
+    const license = source.license ?? 'MIT'
+    if (license === 'MIT') {
+      if (!/Permission is hereby granted/.test(licenseText) || !/THE SOFTWARE IS PROVIDED ["“]AS IS/.test(licenseText)) throw new Error(`Upstream license is not the expected MIT grant: ${source.repo}`)
+    } else if (license === 'Apache-2.0') {
+      if (!/Apache License/.test(licenseText) || !/Version 2\.0/.test(licenseText) || !/TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION/.test(licenseText)) throw new Error(`Upstream license is not the expected Apache-2.0 grant: ${source.repo}`)
+    } else throw new Error(`Unsupported bundled source license: ${license}`)
+    await fs.mkdir(path.dirname(target), { recursive: true })
+    if (source.licenseFile || !await fs.readFile(target).then(existing => sha(existing) === sha(bytes)).catch(() => false) || refreshLicenses) await fs.writeFile(target, bytes)
+    if (source.licenseFile) {
+      originalPath = new URL(source.licenseUrl).pathname.split('/').slice(5).join('/')
+    }
+    licenses.push({ repo: source.repo, commit: source.commit, license, url: source.licenseUrl ?? `https://github.com/${source.repo}/blob/${source.commit}/${originalPath}`, file: licenseFile, sha256: sha(bytes), bytes: bytes.length, scope: CATALOG.filter(e => e.source?.repo === source.repo).map(e => e.id) })
   }
   const sourceReceipts = []
   for (const entry of CATALOG) for (const [localPath, origin] of Object.entries(entry.source?.fileOrigins ?? {})) {
@@ -50,7 +61,7 @@ export async function prepareBenchExport({ refreshLicenses = false, destination 
   await fs.writeFile(path.join(bench, 'THIRD_PARTY_NOTICES.json'), JSON.stringify({ version: 1, sources: licenses }, null, 2) + '\n')
   const liveExamples = CATALOG.filter(e => e.lane !== 'screenshot').length
   const screenshotExamples = CATALOG.filter(e => e.lane === 'screenshot').length
-  await fs.writeFile(path.join(bench, 'THIRD_PARTY_NOTICES.md'), `# Third-party sample notices\n\nThe ${CATALOG.length} bundled examples retain their original-source links. ${licenses.length} source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in \`src/vendor\`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in \`package-lock.json\`, and npm packages retain their own license notices. The ${screenshotExamples} screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining ${liveExamples} entries render their archived source.\n\n` + licenses.map(l => `## ${l.repo}\n\n- License: ${l.license}\n- Repository commit: \`${l.commit}\`\n- Original license: [${l.file}](${l.url})\n- Complete local license: [${l.file}](${l.file})\n- License SHA-256: \`${l.sha256}\`\n`).join('\n'))
+  await fs.writeFile(path.join(bench, 'THIRD_PARTY_NOTICES.md'), `# Third-party sample notices\n\nThe ${CATALOG.length} bundled examples retain their original-source links. The ${licenses.length} source repositories each include the complete root license text, the pinned commit, and its SHA-256 digest. Registry source snapshots are preserved byte-for-byte in \`src/vendor\`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in \`package-lock.json\`, and npm packages retain their own license notices. The ${screenshotExamples} screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining ${liveExamples} entries render their archived source.\n\n` + licenses.map(l => `## ${l.repo}\n\n- License: ${l.license}\n- Repository commit: \`${l.commit}\`\n- Original license: [${l.file}](${l.url})\n- Complete local license: [${l.file}](${l.file})\n- License SHA-256: \`${l.sha256}\`\n`).join('\n'))
   const files = []
   const walk = async relative => {
     const absolute = path.join(bench, relative)

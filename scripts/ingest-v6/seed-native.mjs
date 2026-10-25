@@ -23,7 +23,7 @@ const capturedById = new Map((captures.units ?? []).map(u => [u.id, u]))
 const previousManifest = JSON.parse(await fs.readFile(path.join(root, 'sample-manifest.json'), 'utf8').catch(() => '{"dispositions":[]}'))
 const portableByFixture = new Map((previousManifest.dispositions ?? []).map(row => [row.fixture, row]))
 const dispositions = []
-for (const entry of ENTRIES) {
+for (const entry of allEntries) {
   const notice = notices.sources.find(n => n.repo === entry.source.repo && n.commit === entry.source.commit)
   let license = { spdx: null, redistributable: false }
   if (notice) {
