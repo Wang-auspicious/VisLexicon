@@ -1,0 +1,64 @@
+{
+  "name": "@paradise-ui/text-area",
+  "version": "1.0.0-beta.1",
+  "description": "A custom component that enhance native textarea element",
+  "keywords": [
+    "Form",
+    "TextArea",
+    "React component"
+  ],
+  "author": "Muhammad Syakirurohman <syakirurahman@gmail.com>",
+  "homepage": "https://github.com/devaradise/paradise-ui#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./style": "./dist/style.css",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devaradise/paradise-ui.git",
+    "directory": "packages/components/TextArea"
+  },
+  "bugs": {
+    "url": "https://github.com/devaradise/paradise-ui/issues"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsup src/*.ts src/*.tsx --dts-only && tsup src",
+    "dev": "pnpm build:fast -- --watch",
+    "typecheck": "tsc --noEmit",
+    "build:fast": "tsup src",
+    "pack": "pnpm pack",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore",
+    "release": "pnpm publish && pnpm postpack"
+  },
+  "dependencies": {
+    "@paradise-ui/common": "workspace:*",
+    "clsx": "^2.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "clean-package": "2.1.1",
+    "react": "^18.0.0"
+  },
+  "clean-package": "./../clean-package.config.json"
+}

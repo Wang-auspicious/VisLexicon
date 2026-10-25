@@ -13,6 +13,7 @@ import COCKROACH_TOOLTIP_SOURCE from './generated/cockroach-tooltip-source.json'
 import ATXP_ACCORDION_SOURCE from './generated/atxp-accordion-source.json' with { type: 'json' }
 import COCKROACH_BADGE_SOURCE from './generated/cockroach-badge-source.json' with { type: 'json' }
 import PARADISE_TEXTFIELD_SOURCE from './generated/paradise-textfield-source.json' with { type: 'json' }
+import PARADISE_TEXTAREA_SOURCE from './generated/paradise-textarea-source.json' with { type: 'json' }
 
 export const CATEGORIES = [
   { id: 'data', zh: '数据展示', en: 'Data display' },
@@ -577,4 +578,45 @@ CATALOG.push({
   ],
   verification: 'actual-source-render-and-browser-verified',
   previewVerification: 'The pinned TextField.Basic story rendered with the original TextField and Tailwind element-class helper. The Label and Placeholder were visible; Tab focus was visible and the input accepted text.',
+})
+
+const paradiseTextAreaStory = 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/packages/components/TextArea/stories/TextArea.stories.tsx#L152'
+CATALOG.push({
+  id: 'paradise-textarea-basic',
+  lane: 'github',
+  category: 'form',
+  fill: 'dark',
+  zh: '带标签的多行输入框',
+  en: 'Labeled multiline text field',
+  summaryZh: 'Paradise UI 的 TextArea.Basic 原始 story：带 Label 和 Placeholder 的多行输入框；autoResize 可在输入时按内容调整高度。',
+  summaryEn: 'The original TextArea.Basic story: a labeled multiline field with a placeholder; autoResize can grow its height as text is entered.',
+  tags: ['文本域', '多行输入', '表单', 'textarea', 'multiline', 'form', 'auto resize'],
+  source: {
+    site: 'Paradise UI', home: 'https://github.com/devaradise/paradise-ui', repo: 'devaradise/paradise-ui',
+    commit: '95bd51bf882dc60f0a24cfdb8e6361e12353d5d5', license: 'MIT',
+    licenseUrl: 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE',
+    licenseCheckedAt: '2026-10-25T07:09:15.331270+00:00', page: paradiseTextAreaStory,
+    install: 'npm install @paradise-ui/text-area@1.0.0-beta.1',
+    files: Object.keys(PARADISE_TEXTAREA_SOURCE.fileOrigins),
+    fileOrigins: PARADISE_TEXTAREA_SOURCE.fileOrigins,
+  },
+  module: './vendor/paradise-ui/packages/components/TextArea/src/TextArea', api: ['TextArea'], packages: ['clsx'],
+  offer: {
+    id: 'source-seed-paradise-textarea-basic', verified: true, checkedAt: '2026-10-25T07:09:15.331270+00:00',
+    subject: 'source-code', scope: 'Exact pinned TextArea.Basic story, component, element-class helper, style and common dependencies',
+    access: 'free', sourceAvailable: true, sourceUrl: paradiseTextAreaStory, sourceCost: 'free', openSource: true,
+    commercialUse: true, license: 'MIT', licenseUrl: 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE',
+    evidenceUrls: [paradiseTextAreaStory, 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/packages/components/TextArea/src/TextArea.tsx', 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE'],
+  },
+  exampleArgs: { label: 'Label', placeholder: 'Placeholder', variant: 'outlined', size: 'md', disabled: false, autoResize: false },
+  params: [
+    { key: 'label', prop: 'TextArea.label', control: 'text', default: 'Label', labelZh: '标签', labelEn: 'Label' },
+    { key: 'placeholder', prop: 'TextArea.placeholder', control: 'text', default: 'Placeholder', labelZh: '占位提示', labelEn: 'Placeholder' },
+    { key: 'variant', prop: 'TextArea.variant', control: 'segmented', default: 'outlined', options: ['outlined', 'line', 'filled'], labelZh: '样式', labelEn: 'Variant' },
+    { key: 'size', prop: 'TextArea.size', control: 'segmented', default: 'md', options: ['sm', 'md', 'lg'], labelZh: '尺寸', labelEn: 'Size' },
+    { key: 'disabled', prop: 'TextArea.disabled', control: 'toggle', default: false, labelZh: '禁用', labelEn: 'Disabled' },
+    { key: 'autoResize', prop: 'TextArea.autoResize', control: 'toggle', default: false, labelZh: '自动增高', labelEn: 'Auto resize' },
+  ],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The pinned TextArea.Basic story rendered with the original TextArea component and Tailwind element-class helper. Label and Placeholder were visible; the textarea accepted two lines with the story default autoResize=false. In the live detail preview, enabling autoResize made its height grow to fit three entered lines. The poster is a real 800×500 browser capture.',
 })

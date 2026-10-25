@@ -1013,5 +1013,70 @@
   "counts": {
    "TextField": 18
   }
+ },
+ "paradise-textarea-basic": {
+  "params": {
+   "label": {
+    "prop": "TextArea.label",
+    "name": "label",
+    "optional": true,
+    "type": "string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<AwaitedReactNode>",
+    "kind": "other",
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextArea/src/type.ts"
+   },
+   "placeholder": {
+    "prop": "TextArea.placeholder",
+    "name": "placeholder",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextArea/src/type.ts"
+   },
+   "variant": {
+    "prop": "TextArea.variant",
+    "name": "variant",
+    "optional": true,
+    "type": "TextAreaVariant",
+    "kind": "enum",
+    "options": [
+     "line",
+     "outlined",
+     "filled"
+    ],
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextArea/src/type.ts"
+   },
+   "size": {
+    "prop": "TextArea.size",
+    "name": "size",
+    "optional": true,
+    "type": "ComponentSize",
+    "kind": "enum",
+    "options": [
+     "sm",
+     "md",
+     "lg"
+    ],
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextArea/src/type.ts"
+   },
+   "disabled": {
+    "prop": "TextArea.disabled",
+    "name": "disabled",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextArea/src/type.ts"
+   },
+   "autoResize": {
+    "prop": "TextArea.autoResize",
+    "name": "autoResize",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextArea/src/type.ts"
+   }
+  },
+  "counts": {
+   "TextArea": 16
+  }
  }
 }
