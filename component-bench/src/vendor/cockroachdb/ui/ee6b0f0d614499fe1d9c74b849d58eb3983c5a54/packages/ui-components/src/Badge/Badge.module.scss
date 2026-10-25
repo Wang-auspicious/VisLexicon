@@ -1,0 +1,49 @@
+@import "../styles/tokens.scss";
+
+.badge {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  padding: crl-gutters(0.625) crl-gutters(1);
+  vertical-align: crl-gutters(0.5);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.intent-neutral {
+  background: $component-badge-background-color-neutral;
+  color: $component-badge-font-color-neutral;
+}
+
+.intent-success {
+  background: $component-badge-background-color-success;
+  color: $component-badge-font-color-success;
+}
+
+.intent-warning {
+  background: $component-badge-background-color-warning;
+  color: $component-badge-font-color-warning;
+}
+
+.intent-danger {
+  background: $component-badge-background-color-danger;
+  color: $component-badge-font-color-danger;
+}
+
+.intent-info {
+  background: $component-badge-background-color-info;
+  color: $component-badge-font-color-info;
+}
+
+.noTransform {
+  text-transform: none;
+}
+
+.transformCase-none {
+  text-transform: none;
+}
+
+.transformCase-uppercase {
+  text-transform: uppercase;
+}

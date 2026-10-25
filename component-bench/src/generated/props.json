@@ -920,5 +920,41 @@
    "AccordionTrigger": 1,
    "AccordionContent": 2
   }
+ },
+ "cockroach-badge-demo": {
+  "params": {
+   "intent": {
+    "prop": "Badge.intent",
+    "name": "intent",
+    "optional": true,
+    "type": "BadgeIntent",
+    "kind": "enum",
+    "options": [
+     "info",
+     "success",
+     "warning",
+     "neutral",
+     "danger"
+    ],
+    "default": "neutral",
+    "declaredIn": "src/vendor/cockroachdb/ui/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/packages/ui-components/src/Badge/Badge.tsx"
+   },
+   "transformCase": {
+    "prop": "Badge.transformCase",
+    "name": "transformCase",
+    "optional": true,
+    "type": "BadgeCase",
+    "kind": "enum",
+    "options": [
+     "none",
+     "uppercase"
+    ],
+    "default": "uppercase",
+    "declaredIn": "src/vendor/cockroachdb/ui/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/packages/ui-components/src/Badge/Badge.tsx"
+   }
+  },
+  "counts": {
+   "Badge": 3
+  }
  }
 }

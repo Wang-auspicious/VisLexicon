@@ -11,6 +11,7 @@
 import PARADISE_ALERT_SOURCE from './generated/paradise-alert-source.json' with { type: 'json' }
 import COCKROACH_TOOLTIP_SOURCE from './generated/cockroach-tooltip-source.json' with { type: 'json' }
 import ATXP_ACCORDION_SOURCE from './generated/atxp-accordion-source.json' with { type: 'json' }
+import COCKROACH_BADGE_SOURCE from './generated/cockroach-badge-source.json' with { type: 'json' }
 
 export const CATEGORIES = [
   { id: 'data', zh: '数据展示', en: 'Data display' },
@@ -495,4 +496,44 @@ CATALOG.push({
   ],
   verification: 'actual-source-render-and-browser-verified',
   previewVerification: 'The pinned Accordion.Default story ran with its original Radix component and theme CSS. Its single item expanded to the original explanation and collapsed again; the poster is a real 800×500 expanded-state browser capture.',
+})
+
+const cockroachBadgeStory = 'https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/packages/storybook-ui-components/stories/Badge.stories.tsx#L107'
+CATALOG.push({
+  id: 'cockroach-badge-demo',
+  lane: 'github',
+  category: 'feedback',
+  fill: 'light',
+  zh: '状态徽标',
+  en: 'Status badge',
+  summaryZh: 'Cockroach Labs 的 Badge.Demo 原始 story：单个标签可切换 neutral、success、warning、danger、info，并改为大写或原样显示。',
+  summaryEn: 'The original Badge.Demo story: one label with five status intents and uppercase or unchanged text casing.',
+  tags: ['徽标', '状态', '标签', 'badge', 'status', 'intent', 'label'],
+  source: {
+    site: 'Cockroach Labs UI', home: 'https://github.com/cockroachdb/ui', repo: 'cockroachdb/ui',
+    commit: 'ee6b0f0d614499fe1d9c74b849d58eb3983c5a54', license: 'MIT',
+    licenseUrl: 'https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/LICENSE',
+    licenseCheckedAt: '2026-10-25T06:56:46.760578+00:00', page: cockroachBadgeStory,
+    install: 'git clone https://github.com/cockroachdb/ui.git && git -C ui checkout ee6b0f0d614499fe1d9c74b849d58eb3983c5a54',
+    packages: ['classnames'],
+    files: Object.keys(COCKROACH_BADGE_SOURCE.fileOrigins),
+    fileOrigins: COCKROACH_BADGE_SOURCE.fileOrigins,
+  },
+  module: './vendor/cockroachdb/ui/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/packages/ui-components/src/Badge/Badge',
+  api: ['Badge'],
+  offer: {
+    id: 'source-seed-cockroach-badge-demo', verified: true, checkedAt: '2026-10-25T06:56:46.760578+00:00',
+    subject: 'source-code', scope: 'Exact pinned Badge Demo story, component, SCSS module, utility and token mixins',
+    access: 'free', sourceAvailable: true, sourceUrl: cockroachBadgeStory, sourceCost: 'free', openSource: true,
+    commercialUse: true, license: 'MIT', licenseUrl: 'https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/LICENSE',
+    evidenceUrls: [cockroachBadgeStory, 'https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/packages/ui-components/src/Badge/Badge.tsx', 'https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/LICENSE'],
+  },
+  exampleArgs: { intent: 'neutral', transformCase: 'uppercase', text: 'badge' },
+  params: [
+    { key: 'intent', prop: 'Badge.intent', control: 'segmented', default: 'neutral', options: ['neutral', 'success', 'warning', 'danger', 'info'], labelZh: '状态', labelEn: 'Intent' },
+    { key: 'transformCase', prop: 'Badge.transformCase', control: 'segmented', default: 'uppercase', options: ['uppercase', 'none'], labelZh: '字母大小写', labelEn: 'Case' },
+    { key: 'text', demo: true, control: 'text', default: 'badge', labelZh: '标签文字', labelEn: 'Text' },
+  ],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The pinned Badge.Demo story was rendered with the original Badge component and SCSS module; the neutral intent, uppercase case and 12px CSS geometry were inspected. The poster is a real 800×500 browser capture.',
 })
