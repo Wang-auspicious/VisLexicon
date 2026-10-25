@@ -12,6 +12,7 @@ import PARADISE_ALERT_SOURCE from './generated/paradise-alert-source.json' with 
 import COCKROACH_TOOLTIP_SOURCE from './generated/cockroach-tooltip-source.json' with { type: 'json' }
 import ATXP_ACCORDION_SOURCE from './generated/atxp-accordion-source.json' with { type: 'json' }
 import COCKROACH_BADGE_SOURCE from './generated/cockroach-badge-source.json' with { type: 'json' }
+import PARADISE_TEXTFIELD_SOURCE from './generated/paradise-textfield-source.json' with { type: 'json' }
 
 export const CATEGORIES = [
   { id: 'data', zh: '数据展示', en: 'Data display' },
@@ -536,4 +537,44 @@ CATALOG.push({
   ],
   verification: 'actual-source-render-and-browser-verified',
   previewVerification: 'The pinned Badge.Demo story was rendered with the original Badge component and SCSS module; the neutral intent, uppercase case and 12px CSS geometry were inspected. The poster is a real 800×500 browser capture.',
+})
+
+const paradiseTextFieldStory = 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/packages/components/TextField/stories/TextField.stories.tsx#L158'
+CATALOG.push({
+  id: 'paradise-textfield-basic',
+  lane: 'github',
+  category: 'form',
+  fill: 'dark',
+  zh: '带标签的文本输入框',
+  en: 'Labeled text field',
+  summaryZh: 'Paradise UI 的 TextField.Basic 原始 story：一个带 Label 和 Placeholder 的输入框，沿用原组件的焦点与输入行为。',
+  summaryEn: 'The original TextField.Basic story: one text field with a label and placeholder, retaining the component’s focus and input behavior.',
+  tags: ['输入框', '表单', '标签', 'placeholder', 'text field', 'form', 'input'],
+  source: {
+    site: 'Paradise UI', home: 'https://github.com/devaradise/paradise-ui', repo: 'devaradise/paradise-ui',
+    commit: '95bd51bf882dc60f0a24cfdb8e6361e12353d5d5', license: 'MIT',
+    licenseUrl: 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE',
+    licenseCheckedAt: '2026-10-25T07:09:15.373718+00:00', page: paradiseTextFieldStory,
+    install: 'npm install @paradise-ui/text-field@1.1.0-beta.3',
+    files: Object.keys(PARADISE_TEXTFIELD_SOURCE.fileOrigins),
+    fileOrigins: PARADISE_TEXTFIELD_SOURCE.fileOrigins,
+  },
+  module: './vendor/paradise-ui/packages/components/TextField/src/TextField', api: ['TextField'], packages: ['clsx'],
+  offer: {
+    id: 'source-seed-paradise-textfield-basic', verified: true, checkedAt: '2026-10-25T07:09:15.373718+00:00',
+    subject: 'source-code', scope: 'Exact pinned TextField.Basic story, component, element-class helper, style and common dependencies',
+    access: 'free', sourceAvailable: true, sourceUrl: paradiseTextFieldStory, sourceCost: 'free', openSource: true,
+    commercialUse: true, license: 'MIT', licenseUrl: 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE',
+    evidenceUrls: [paradiseTextFieldStory, 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/packages/components/TextField/src/TextField.tsx', 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE'],
+  },
+  exampleArgs: { label: 'Label', placeholder: 'Placeholder', variant: 'outlined', size: 'md', disabled: false },
+  params: [
+    { key: 'label', prop: 'TextField.label', control: 'text', default: 'Label', labelZh: '标签', labelEn: 'Label' },
+    { key: 'placeholder', prop: 'TextField.placeholder', control: 'text', default: 'Placeholder', labelZh: '占位提示', labelEn: 'Placeholder' },
+    { key: 'variant', prop: 'TextField.variant', control: 'segmented', default: 'outlined', options: ['outlined', 'line', 'filled'], labelZh: '样式', labelEn: 'Variant' },
+    { key: 'size', prop: 'TextField.size', control: 'segmented', default: 'md', options: ['sm', 'md', 'lg'], labelZh: '尺寸', labelEn: 'Size' },
+    { key: 'disabled', prop: 'TextField.disabled', control: 'toggle', default: false, labelZh: '禁用', labelEn: 'Disabled' },
+  ],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The pinned TextField.Basic story rendered with the original TextField and Tailwind element-class helper. The Label and Placeholder were visible; Tab focus was visible and the input accepted text.',
 })

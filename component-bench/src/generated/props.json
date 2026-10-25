@@ -956,5 +956,62 @@
   "counts": {
    "Badge": 3
   }
+ },
+ "paradise-textfield-basic": {
+  "params": {
+   "label": {
+    "prop": "TextField.label",
+    "name": "label",
+    "optional": true,
+    "type": "string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<AwaitedReactNode>",
+    "kind": "other",
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextField/src/type.ts"
+   },
+   "placeholder": {
+    "prop": "TextField.placeholder",
+    "name": "placeholder",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextField/src/type.ts"
+   },
+   "variant": {
+    "prop": "TextField.variant",
+    "name": "variant",
+    "optional": true,
+    "type": "TextFieldVariant",
+    "kind": "enum",
+    "options": [
+     "line",
+     "outlined",
+     "filled"
+    ],
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextField/src/type.ts"
+   },
+   "size": {
+    "prop": "TextField.size",
+    "name": "size",
+    "optional": true,
+    "type": "ComponentSize",
+    "kind": "enum",
+    "options": [
+     "sm",
+     "md",
+     "lg"
+    ],
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextField/src/type.ts"
+   },
+   "disabled": {
+    "prop": "TextField.disabled",
+    "name": "disabled",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "declaredIn": "src/vendor/paradise-ui/packages/components/TextField/src/type.ts"
+   }
+  },
+  "counts": {
+   "TextField": 18
+  }
  }
 }

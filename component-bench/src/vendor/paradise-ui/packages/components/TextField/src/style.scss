@@ -1,0 +1,257 @@
+.pui-text-field {
+  width:100%;
+  color: var(--pui-text, #31333e);
+  box-sizing: border-box;
+  font-size: 1rem;
+  * {
+    box-sizing: border-box;
+  }
+  &__label-block {
+    font-size: .875rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .25rem;
+  }
+  &__label-secondary {
+    color: var(--pui-text-secondary, #63636e);
+  }
+  &__input-block {
+    display:flex;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    .pui-text-field__input-prefix, .pui-text-field__input-suffix {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    input {
+      width:100%;
+      font: inherit;
+      color: inherit;
+      height: 100%;
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+      background-color: inherit;
+      &:disabled {
+        background-color: inherit;
+        cursor: not-allowed;
+      }
+      &::placeholder {
+        color: var(--pui-input-placeholder, #adb5bd);
+      }
+    }
+  }
+  &__message-block {
+    font-size: .75rem;
+    margin-top: .25em;
+    color: var(--pui-text-secondary, #63636e);
+  }
+
+  /* Textfield size styles */
+  &--sm {
+    .pui-text-field__label-block {
+      font-size: .75rem;
+    }
+    .pui-text-field__input-block {
+      height: 2rem;
+      font-size: .875rem;
+      .pui-text-field__input-prefix {
+        padding-left: .5rem;
+      }
+      .pui-text-field__input-suffix {
+        padding-right: .5rem;
+      }
+      input {
+        padding:0 .5rem;
+      }
+    }
+    .pui-text-field__message-block {
+      font-size: .65rem;
+    }
+    &.pui-text-field--line {
+      .pui-text-field__input-block {
+        height: 1.625rem;
+        .pui-text-field__input-prefix {
+          padding-right: .5rem;
+        }
+        .pui-text-field__input-suffix {
+          padding-left: .5rem;
+        }
+      }
+    }
+  }
+  &--md {
+    .pui-text-field__input-block {
+      height: 2.5rem;
+      .pui-text-field__input-prefix {
+        padding-left: .75rem;
+      }
+      .pui-text-field__input-suffix {
+        padding-right: .75rem;
+      }
+      input {
+        padding:0 .75rem;
+      }
+    }
+    &.pui-text-field--line {
+      .pui-text-field__input-block {
+        height: 1.875rem;
+        .pui-text-field__input-prefix {
+          padding-right: .75rem;
+        }
+        .pui-text-field__input-suffix {
+          padding-left: .75rem;
+        }
+      }
+    }
+  }
+  &--lg {
+    .pui-text-field__input-block {
+      height: 3rem;
+      font-size: 1.125rem;
+      .pui-text-field__input-prefix {
+        padding-left: 1rem;
+      }
+      .pui-text-field__input-suffix {
+        padding-right: 1rem;
+      }
+      input {
+        padding:0 1rem;
+      }
+    }
+    &.pui-text-field--line {
+      .pui-text-field__input-block {
+        height: 2rem;
+        .pui-text-field__input-prefix {
+          padding-right: 1rem;
+        }
+        .pui-text-field__input-suffix {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+
+  /* Textfield variant styles */
+  &--outlined {
+    .pui-text-field__input-block {
+      border: 1px solid var(--pui-soft-border, #dadce3);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+  &--line {
+    .pui-text-field__input-block {
+      border-bottom: 1px solid var(--pui-soft-border, #dadce3);
+      overflow: hidden;
+      margin: 0 0 .3rem;
+      background-color: transparent;
+      .pui-text-field__input-prefix {
+        padding-left: 0;
+      }
+      .pui-text-field__input-suffix {
+        padding-right: 0;
+      }
+      input {
+        padding:0;
+      }
+    }
+  }
+  &--filled {
+    .pui-text-field__input-block {
+      border: 1px solid var(--pui-input-filler, #f0f0f2);
+      border-radius: 5px;
+      overflow: hidden;
+      background-color: var(--pui-input-filler, #f0f0f2);
+      input {
+        background-color: inherit;
+      }
+    }
+  }
+
+  /* Textfield dark mode styles */
+  .pui-dark-mode & {
+    color: var(--pui-text-in-dark, #e7e7e9);
+    &__label-secondary {
+      color: var(--pui-text-secondary-in-dark, #a4a4ad);
+    }
+    &__input-block {
+      border-color: var(--pui-soft-border-in-dark, #373a3a);
+      input {
+        &::placeholder {
+          color: var(--pui-input-placeholder-dark, #696969);
+        }
+      }
+    }
+    &__message-block {
+      color: var(--pui-text-secondary-in-dark, #a4a4ad);
+    }
+    &--filled {
+      .pui-text-field__input-block {
+        border-color: var(--pui-input-filler-dark, #313437);
+        background-color: var(--pui-input-filler-dark, #313437);
+      }
+      &.pui-text-field--error {
+        .pui-text-field__input-block {
+          background-color: var(--pui-error-darken, #230b0b);
+        }
+      }
+    }
+  }
+
+  /* Textfield state styles */
+  &:hover {
+    &:not(.pui-text-field--focus, .pui-text-field--error, .pui-text-field--disabled) {
+      .pui-text-field__input-block:hover {
+        border-color: var(--pui-border, #c3c7d0);
+      }
+    }
+    .pui-dark-mode &:not(.pui-text-field--focus, .pui-text-field--error, .pui-text-field--disabled),
+    &.pui-text-field-dark:not(.pui-text-field--focus, .pui-text-field--error, .pui-text-field--disabled) {
+      .pui-text-field__input-block:hover {
+        border-color: var(--pui-border-in-dark, #43474a);
+      }
+    }
+  }
+  &.pui-text-field--disabled {
+    .pui-text-field__input-block {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+  &.pui-text-field--focus {
+    .pui-text-field__input-block {
+      border-color: var(--pui-info, #008DDA);
+      box-shadow: 0 0 0 .5px var(--pui-info, #008DDA);
+    }
+    &.pui-text-field--line {
+      .pui-text-field__input-block {
+        box-shadow: none;
+        border-bottom-width:1.5px;
+      }
+    }
+  }
+  &.pui-text-field--error {
+    .pui-text-field__input-block {
+      border-color:var(--pui-error, #e74747);
+      box-shadow: 0 0 0 .5px var(--pui-error, #e74747);
+    }
+    &.pui-text-field--line {
+      .pui-text-field__input-block {
+        box-shadow: none;
+        border-bottom-width:1.5px;
+      }
+    }
+    .pui-text-field__message-block {
+      .pui-text-field__error-message {
+        color: var(--pui-error, #e74747);
+      }
+    }
+    &.pui-text-field--filled {
+      .pui-text-field__input-block {
+        background-color: var(--pui-error-lighten, #fbe3e3);
+      }
+    }
+  }
+}
