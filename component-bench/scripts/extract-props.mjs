@@ -35,7 +35,7 @@ fs.writeFileSync(ENTRY, `${imports.join('\n')}\nexport {}\n`)
 const program = ts.createProgram([ENTRY], {
   jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.ESNext, moduleResolution: ts.ModuleResolutionKind.Bundler, target: ts.ScriptTarget.ES2022,
   strict: true, skipLibCheck: true, noEmit: true, allowJs: true, allowImportingTsExtensions: true, esModuleInterop: true,
-  baseUrl: ROOT, paths: { '@/*': ['src/vendor/*'], cn: ['src/vendor/lib/utils.ts'], '@paradise-ui/common': ['src/vendor/paradise-ui/packages/common/src/index.ts'] }, types: [],
+  baseUrl: ROOT, paths: { '@/*': ['src/vendor/*'], '@/lib/utils': ['src/vendor/atxp/design-system/src/lib/utils.ts'], cn: ['src/vendor/lib/utils.ts'], '@paradise-ui/common': ['src/vendor/paradise-ui/packages/common/src/index.ts'] }, types: [],
 })
 const checker = program.getTypeChecker()
 const entryFile = program.getSourceFile(ENTRY)

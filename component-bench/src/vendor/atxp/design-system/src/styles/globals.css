@@ -1,0 +1,137 @@
+/* Design Tokens - Non-theme-specific tokens */
+@import './design-tokens.css';
+
+/* Theme Files */
+@import './themes/light.css';
+@import './themes/dark.css';
+@import './themes/atxp.css';
+@import './themes/dbg.css';
+
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-border: var(--theme-border);
+  --color-border-hover: var(--theme-border-hover);
+  --color-background: var(--theme-background);
+  --color-foreground: var(--theme-foreground);
+  --color-muted: var(--theme-muted);
+  --color-muted-foreground: var(--theme-muted-foreground);
+  --color-input: var(--theme-input);
+  --color-ring: var(--theme-ring);
+
+  --color-primary: var(--theme-primary);
+  --color-primary-hover: var(--theme-primary-hover);
+  --color-primary-foreground: var(--theme-primary-foreground);
+
+  --color-secondary: var(--theme-secondary);
+  --color-secondary-foreground: var(--theme-secondary-foreground);
+
+  --color-accent: var(--theme-accent);
+  --color-accent-hover: var(--theme-accent-hover);
+  --color-accent-foreground: var(--theme-accent-foreground);
+  --color-accent-muted: var(--theme-accent-muted);
+
+  --color-card: var(--theme-card);
+  --color-card-foreground: var(--theme-card-foreground);
+
+  --color-popover: var(--theme-popover);
+  --color-popover-foreground: var(--theme-popover-foreground);
+
+  --color-destructive: var(--theme-destructive);
+  --color-destructive-foreground: var(--theme-destructive-foreground);
+
+  --color-success: var(--theme-success);
+  --color-success-background: var(--theme-success-background-fill);
+
+  --color-warning: var(--theme-warning);
+  --color-warning-foreground: var(--theme-warning-foreground);
+  --color-warning-alt: var(--theme-warning-alt);
+
+  --color-info: var(--theme-info);
+  --color-info-foreground: var(--theme-info-foreground);
+
+  /* Border Radius */
+  --radius-lg: var(--theme-radius);
+  --radius-md: var(--radius-md);
+
+  /* Font Family */
+  --font-family-sans: var(--font-family-sans);
+
+  /* Font Sizes */
+  --font-size-xs: var(--font-size-xs);
+  --font-size-sm: var(--font-size-sm);
+  --font-size-base: var(--font-size-base);
+
+  /* Font Weights */
+  --font-weight-medium: var(--font-weight-medium);
+  --font-weight-semibold: var(--font-weight-semibold);
+
+  /* Animations */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--theme-border);
+  }
+
+  body {
+    background-color: var(--theme-background);
+    color: var(--theme-foreground);
+    font-family: var(--font-family-sans);
+  }
+
+  /* Custom Scrollbar Styling */
+  /* Based on Figma: https://www.figma.com/design/nadcKNlrnZUHbbLwm9GdK4?node-id=2823-2148 */
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--theme-primary) var(--theme-muted);
+  }
+
+  /* Webkit browsers (Chrome, Safari, Edge) */
+  *::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--theme-muted);
+    border-radius: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: var(--theme-primary);
+    border-radius: 10px;
+    border: 2px solid var(--theme-muted);
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-primary-hover);
+  }
+
+  *::-webkit-scrollbar-corner {
+    background: var(--theme-muted);
+  }
+}

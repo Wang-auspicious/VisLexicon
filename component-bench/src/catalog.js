@@ -10,6 +10,7 @@
 
 import PARADISE_ALERT_SOURCE from './generated/paradise-alert-source.json' with { type: 'json' }
 import COCKROACH_TOOLTIP_SOURCE from './generated/cockroach-tooltip-source.json' with { type: 'json' }
+import ATXP_ACCORDION_SOURCE from './generated/atxp-accordion-source.json' with { type: 'json' }
 
 export const CATEGORIES = [
   { id: 'data', zh: '数据展示', en: 'Data display' },
@@ -456,4 +457,42 @@ CATALOG.push({
   ],
   verification: 'actual-source-render-and-browser-verified',
   previewVerification: 'The pinned Tooltip.Example rendered with the original component and SCSS module. The original Hello, world tip appeared at the top on real pointer hover and hid on pointer leave; the poster is an 800×500 browser capture of the visible tooltip.',
+})
+
+const atxpAccordionStory = 'https://github.com/atxp-dev/design-system/blob/ec78539b9f4bde6998e89a3d5051faa6d840e3a7/src/components/Accordion/Accordion.stories.tsx#L30'
+CATALOG.push({
+  id: 'atxp-accordion-default',
+  lane: 'github',
+  category: 'feedback',
+  fill: 'light',
+  zh: '单项折叠面板',
+  en: 'Single-item accordion',
+  summaryZh: 'ATXP 的 Accordion.Default 原始 story：单项问题可展开说明；原始 Radix 状态动画展开内容，箭头随开合旋转。',
+  summaryEn: 'The original Accordion.Default story: a single question reveals its explanation with the source Radix state animation and rotating chevron.',
+  tags: ['折叠', '手风琴', '交互', 'accordion', 'disclosure', 'expand', 'radix'],
+  source: {
+    site: 'ATXP Design System', home: 'https://github.com/atxp-dev/design-system', repo: 'atxp-dev/design-system',
+    commit: 'ec78539b9f4bde6998e89a3d5051faa6d840e3a7', license: 'MIT',
+    licenseUrl: 'https://github.com/atxp-dev/design-system/blob/ec78539b9f4bde6998e89a3d5051faa6d840e3a7/LICENSE.md',
+    licenseCheckedAt: '2026-10-25T06:52:16.051193+00:00', page: atxpAccordionStory,
+    install: 'git clone https://github.com/atxp-dev/design-system.git && git -C design-system checkout ec78539b9f4bde6998e89a3d5051faa6d840e3a7',
+    packages: ['@radix-ui/react-accordion', 'lucide-react', 'clsx', 'tailwind-merge'],
+    files: Object.keys(ATXP_ACCORDION_SOURCE.fileOrigins),
+    fileOrigins: ATXP_ACCORDION_SOURCE.fileOrigins,
+  },
+  module: './vendor/atxp/design-system/src/components/Accordion/Accordion',
+  api: ['Accordion', 'AccordionItem', 'AccordionTrigger', 'AccordionContent'],
+  offer: {
+    id: 'source-seed-atxp-accordion-default', verified: true, checkedAt: '2026-10-25T06:52:16.051193+00:00',
+    subject: 'source-code', scope: 'Exact pinned Accordion.Default story, component, utility and original theme styles',
+    access: 'free', sourceAvailable: true, sourceUrl: atxpAccordionStory, sourceCost: 'free', openSource: true,
+    commercialUse: true, license: 'MIT', licenseUrl: 'https://github.com/atxp-dev/design-system/blob/ec78539b9f4bde6998e89a3d5051faa6d840e3a7/LICENSE.md',
+    evidenceUrls: [atxpAccordionStory, 'https://github.com/atxp-dev/design-system/blob/ec78539b9f4bde6998e89a3d5051faa6d840e3a7/src/components/Accordion/Accordion.tsx', 'https://github.com/atxp-dev/design-system/blob/ec78539b9f4bde6998e89a3d5051faa6d840e3a7/LICENSE.md'],
+  },
+  exampleArgs: { disabled: false },
+  params: [
+    { key: 'disabled', prop: 'AccordionTrigger.disabled', control: 'toggle', default: false, labelZh: '禁用触发器', labelEn: 'Disable trigger' },
+  ],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The pinned Accordion.Default story ran with its original Radix component and theme CSS. Its single item expanded to the original explanation and collapsed again; the poster is a real 800×500 expanded-state browser capture.',
 })

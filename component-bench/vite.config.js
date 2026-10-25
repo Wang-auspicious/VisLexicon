@@ -16,6 +16,7 @@ export default defineConfig({
   resolve: {
     alias: [
       { find: '@paradise-ui/common', replacement: path.join(ROOT, 'src/vendor/paradise-ui/packages/common/src/index.ts') },
+      { find: '@/lib/utils', replacement: path.join(ROOT, 'src/vendor/atxp/design-system/src/lib/utils.ts') },
       // Magic UI and shadcn import their helper as @/lib/utils or "cn".
       { find: /^@\//, replacement: path.join(ROOT, 'src/vendor') + '/' },
       { find: /^cn$/, replacement: path.join(ROOT, 'src/vendor/lib/utils.ts') },

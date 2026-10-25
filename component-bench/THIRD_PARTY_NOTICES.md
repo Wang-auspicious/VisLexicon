@@ -1,6 +1,6 @@
 # Third-party sample notices
 
-The 25 bundled examples retain their original-source links. 11 source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 19 entries render their archived source.
+The 26 bundled examples retain their original-source links. 12 source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 20 entries render their archived source.
 
 ## magicuidesign/magicui
 
@@ -89,3 +89,11 @@ The 25 bundled examples retain their original-source links. 11 source repositori
 - Original license: [licenses/cockroachdb--ui--ee6b0f0d6144.txt](https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/LICENSE)
 - Complete local license: [licenses/cockroachdb--ui--ee6b0f0d6144.txt](licenses/cockroachdb--ui--ee6b0f0d6144.txt)
 - License SHA-256: `6376bc3f6b26316c93d1ce9bc72c6202f886fa1fcd13b367597071d2108d6f4b`
+
+## atxp-dev/design-system
+
+- License: MIT
+- Repository commit: `ec78539b9f4bde6998e89a3d5051faa6d840e3a7`
+- Original license: [licenses/atxp-dev--design-system--ec78539b9f4b.txt](https://github.com/atxp-dev/design-system/blob/ec78539b9f4bde6998e89a3d5051faa6d840e3a7/LICENSE.md)
+- Complete local license: [licenses/atxp-dev--design-system--ec78539b9f4b.txt](licenses/atxp-dev--design-system--ec78539b9f4b.txt)
+- License SHA-256: `b964ff38febedff505d8288aed01a64c6c52303f6ca8016e1dae5be72d5332bd`

@@ -1,0 +1,157 @@
+/**
+ * Dark Theme
+ * Optimized for low-light environments
+ */
+
+[data-theme="dark"] {
+  /* Base Colors */
+  --theme-foreground: #f8fafc;
+  --theme-background: #020618;
+  --theme-muted: #1e293b;
+  --theme-border: #4c4799;
+
+  /* Primary Colors */
+  --theme-primary: #7c77ff;
+  --theme-primary-foreground: #020618;
+
+  /* Secondary Colors */
+  --theme-secondary: #1e293b;
+  --theme-secondary-foreground: #cbd5e1;
+
+  /* Semantic Colors */
+  --theme-destructive: #ff4757;
+  --theme-destructive-foreground: #f8fafc;
+
+  --theme-success: #10d9a0;
+  --theme-success-background-fill: #0a3329;
+
+  --theme-warning: #ff6b6b;
+  --theme-warning-foreground: #f8fafc;
+  --theme-warning-alt: #ffd93d;
+
+  --theme-info: #7ddee0;
+  --theme-info-foreground: #020618;
+
+  /* Muted Colors */
+  --theme-muted-foreground: #334155;
+  --theme-accent-muted: #1a3538;
+
+  /* Accent */
+  --theme-accent: #1e293b;
+  --theme-accent-hover: #2d3f5f;
+  --theme-accent-foreground: #f8fafc;
+
+  /* Card */
+  --theme-card: #0f172a;
+  --theme-card-foreground: #f8fafc;
+
+  /* Popover */
+  --theme-popover: #0f172a;
+  --theme-popover-foreground: #f8fafc;
+
+  /* Input */
+  --theme-input: #334155;
+  --theme-ring: #7c77ff;
+
+  /* Border Hover */
+  --theme-border-hover: #6b66ff;
+
+  /* Primary Hover */
+  --theme-primary-hover: #6b66ff;
+
+  /* Chart Colors */
+  --theme-chart-1: #ff6b6b;
+  --theme-chart-2: #10d9a0;
+  --theme-chart-3: #4a5f7a;
+  --theme-chart-4: #ffd93d;
+  --theme-chart-5: #ff9f43;
+
+  /* Sidebar */
+  --theme-sidebar-background: #0f172a;
+  --theme-sidebar-foreground: #cbd5e1;
+  --theme-sidebar-primary: #f8fafc;
+  --theme-sidebar-primary-foreground: #020618;
+  --theme-sidebar-accent: #1e293b;
+  --theme-sidebar-accent-foreground: #f8fafc;
+  --theme-sidebar-border: #4c4799;
+}
+
+/**
+ * Automatic Dark Mode
+ * Applies dark theme when user's system preference is dark
+ * Only applies if no explicit data-theme is set
+ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    /* Base Colors */
+    --theme-foreground: #f8fafc;
+    --theme-background: #020618;
+    --theme-muted: #1e293b;
+    --theme-border: #4c4799;
+
+    /* Primary Colors */
+    --theme-primary: #7c77ff;
+    --theme-primary-foreground: #020618;
+
+    /* Secondary Colors */
+    --theme-secondary: #1e293b;
+    --theme-secondary-foreground: #cbd5e1;
+
+    /* Semantic Colors */
+    --theme-destructive: #ff4757;
+    --theme-destructive-foreground: #f8fafc;
+
+    --theme-success: #10d9a0;
+    --theme-success-background-fill: #0a3329;
+
+    --theme-warning: #ff6b6b;
+    --theme-warning-foreground: #f8fafc;
+    --theme-warning-alt: #ffd93d;
+
+    --theme-info: #7ddee0;
+    --theme-info-foreground: #020618;
+
+    /* Muted Colors */
+    --theme-muted-foreground: #334155;
+    --theme-accent-muted: #1a3538;
+
+    /* Accent */
+    --theme-accent: #1e293b;
+    --theme-accent-hover: #2d3f5f;
+    --theme-accent-foreground: #f8fafc;
+
+    /* Card */
+    --theme-card: #0f172a;
+    --theme-card-foreground: #f8fafc;
+
+    /* Popover */
+    --theme-popover: #0f172a;
+    --theme-popover-foreground: #f8fafc;
+
+    /* Input */
+    --theme-input: #334155;
+    --theme-ring: #7c77ff;
+
+    /* Border Hover */
+    --theme-border-hover: #6b66ff;
+
+    /* Primary Hover */
+    --theme-primary-hover: #6b66ff;
+
+    /* Chart Colors */
+    --theme-chart-1: #ff6b6b;
+    --theme-chart-2: #10d9a0;
+    --theme-chart-3: #4a5f7a;
+    --theme-chart-4: #ffd93d;
+    --theme-chart-5: #ff9f43;
+
+    /* Sidebar */
+    --theme-sidebar-background: #0f172a;
+    --theme-sidebar-foreground: #cbd5e1;
+    --theme-sidebar-primary: #f8fafc;
+    --theme-sidebar-primary-foreground: #020618;
+    --theme-sidebar-accent: #1e293b;
+    --theme-sidebar-accent-foreground: #f8fafc;
+    --theme-sidebar-border: #4c4799;
+  }
+}
