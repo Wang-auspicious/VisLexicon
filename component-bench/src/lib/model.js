@@ -22,7 +22,8 @@ function control(entry, param) {
     key: param.key, kind, options, min: param.min, max: param.max, step: param.step, unit: param.unit, default: value,
     labelZh: param.labelZh ?? param.key, labelEn: param.labelEn ?? param.key,
     prop: param.demo ? null : param.prop, demo: Boolean(param.demo),
-    type: info?.type, doc: info?.doc, sourceDefault: info?.default, declaredIn: info?.declaredIn,
+    type: info?.type ?? param.type, doc: info?.doc ?? param.doc,
+    sourceDefault: info?.default ?? param.sourceDefault, declaredIn: info?.declaredIn ?? param.declaredIn,
   }
 }
 

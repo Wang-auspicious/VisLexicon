@@ -698,5 +698,46 @@
   "counts": {
    "default": 11
   }
+ },
+ "gosrock-button-large": {
+  "params": {
+   "size": {
+    "prop": "Button.size",
+    "name": "size",
+    "optional": true,
+    "type": "\"small\" | \"medium\" | \"large\"",
+    "kind": "enum",
+    "options": [
+     "small",
+     "medium",
+     "large"
+    ],
+    "doc": "How large should the button be?",
+    "default": "medium",
+    "declaredIn": "src/vendor/gosrock/src/stories/Button/Button.jsx"
+   },
+   "primary": {
+    "prop": "Button.primary",
+    "name": "primary",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "doc": "이건 프라이머리컬러입니다.",
+    "default": false,
+    "declaredIn": "src/vendor/gosrock/src/stories/Button/Button.jsx"
+   },
+   "label": {
+    "prop": "Button.label",
+    "name": "label",
+    "optional": false,
+    "type": "string",
+    "kind": "string",
+    "doc": "Button contents",
+    "declaredIn": "src/vendor/gosrock/src/stories/Button/Button.jsx"
+   }
+  },
+  "counts": {
+   "Button": 5
+  }
  }
 }

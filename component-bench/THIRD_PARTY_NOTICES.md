@@ -1,6 +1,6 @@
 # Third-party sample notices
 
-The twenty bundled examples retain their original-source links. Eight source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. Screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots.
+The 21 bundled examples retain their original-source links. 9 source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 15 entries render their archived source.
 
 ## magicuidesign/magicui
 
@@ -65,3 +65,11 @@ The twenty bundled examples retain their original-source links. Eight source rep
 - Original license: [licenses/remarkjs--react-markdown--f9ca66ec73d2.txt](https://github.com/remarkjs/react-markdown/blob/f9ca66ec73d218127bff56b41a583bba1fb96125/license)
 - Complete local license: [licenses/remarkjs--react-markdown--f9ca66ec73d2.txt](licenses/remarkjs--react-markdown--f9ca66ec73d2.txt)
 - License SHA-256: `f6196c64e144f9a6fa9154c3a80bc8b89615a9567934b83a8951879f06ba2aef`
+
+## Gosrock/Ticket-Storybook-21st
+
+- License: MIT
+- Repository commit: `09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54`
+- Original license: [licenses/Gosrock--Ticket-Storybook-21st--09e4c43ca0c6.txt](https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/LICENSE)
+- Complete local license: [licenses/Gosrock--Ticket-Storybook-21st--09e4c43ca0c6.txt](licenses/Gosrock--Ticket-Storybook-21st--09e4c43ca0c6.txt)
+- License SHA-256: `3152b68baafd4c20b6f3595e618dea2294076d96cee67de883badb70c6ffb5c8`

@@ -9,7 +9,7 @@ function Solo({ id }) {
   const entry = byId[id]
   const [values, setValues] = useState(() => entry ? defaults(entry) : {})
   const [replay, setReplay] = useState(0)
-  const [fill, setFill] = useState('dark')
+  const [fill, setFill] = useState(() => entry?.fill ?? 'dark')
   const [view, setView] = useState('preview')
   const ready = useCallback(() => {
     window.__benchReady = true

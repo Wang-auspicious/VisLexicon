@@ -1,4 +1,4 @@
-// The bench catalog: twenty components across three source lanes.
+// The bench catalog: a compact set of components across three source lanes.
 // lane "registry"  — source read from the site's public shadcn registry (MIT)
 // lane "github"    — source read from a GitHub repository at a pinned commit (MIT)
 // lane "screenshot"— no public source; original-site screenshots and a direct link
@@ -254,6 +254,55 @@ export const CATALOG = [
       { key: 'children', prop: 'default.children', control: 'textarea', default: '## 发布清单\n\n- [x] 组件源码入库\n- [ ] 沙箱截图\n- [ ] ~~人工复核~~\n\n| 路线 | 条目 |\n|---|---:|\n| registry | 40 |\n| GitHub | 484 |\n' },
       { key: 'gfm', demo: true, control: 'toggle', default: true, labelZh: 'GFM 扩展', labelEn: 'GFM' },
       { key: 'skipHtml', prop: 'default.skipHtml' },
+    ],
+  },
+
+  {
+    id: 'gosrock-button-large', lane: 'github', category: 'button', fill: 'light',
+    zh: '大号描边按钮', en: 'Large outlined button',
+    summaryZh: 'Ticket Storybook 的 Large 变体：透明底、深灰字和内描边；原例文字为“按钮”。',
+    summaryEn: 'The original Large story: transparent fill, dark text and an inset outline, with the source label “버튼”.',
+    tags: ['按钮', '胶囊', '描边', '大号', 'button', 'pill', 'outlined', 'large'],
+    source: {
+      site: 'Ticket Storybook 21st', home: 'https://github.com/Gosrock/Ticket-Storybook-21st',
+      repo: 'Gosrock/Ticket-Storybook-21st', commit: '09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54',
+      license: 'MIT', licenseUrl: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/LICENSE',
+      licenseCheckedAt: '2026-10-25T07:13:49.676827+00:00',
+      page: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.stories.jsx#L31',
+      install: 'git clone --filter=blob:none https://github.com/Gosrock/Ticket-Storybook-21st.git && git -C Ticket-Storybook-21st checkout 09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54',
+      packages: ['prop-types'],
+      files: [
+        'src/vendor/gosrock/src/stories/Button/Button.stories.jsx',
+        'src/vendor/gosrock/src/stories/Button/Button.jsx',
+        'src/vendor/gosrock/src/stories/Button/button.css',
+      ],
+      fileOrigins: {
+        'src/vendor/gosrock/src/stories/Button/Button.stories.jsx': { path: 'src/stories/Button/Button.stories.jsx', url: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.stories.jsx', gitBlob: 'fd99f28f2bf54ba95f703723b825248eedeaee70', sha256: 'd080c8a5324aa5d91ded4e001b33e248ce1685e4e856a9a8259b0085d1a042cb', bytes: 1007 },
+        'src/vendor/gosrock/src/stories/Button/Button.jsx': { path: 'src/stories/Button/Button.jsx', url: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.jsx', gitBlob: '93e4e220ebbd6ccf2120cd36ede38c845e97d771', sha256: '31e28831cb039f99e0a477e85bef2f02522bbb3b0972ea22e6e41eb3b1b519c4', bytes: 1078 },
+        'src/vendor/gosrock/src/stories/Button/button.css': { path: 'src/stories/Button/button.css', url: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/button.css', gitBlob: 'dc91dc76370b78ec277e634f8615b67ca55a5145', sha256: '0e25c32ea023d528e8f3fee604ba77383b62664a765e7acb61ed9679d81cdc51', bytes: 642 },
+      },
+    },
+    offer: {
+      id: 'source-seed-gosrock-button-large', verified: true, checkedAt: '2026-10-25T07:13:49.676827+00:00',
+      subject: 'source-code', scope: 'Exact pinned Button Large story and its component/CSS files',
+      access: 'free', sourceAvailable: true,
+      sourceUrl: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.stories.jsx#L31',
+      sourceCost: 'free', openSource: true, commercialUse: true, license: 'MIT',
+      licenseUrl: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/LICENSE',
+      evidenceUrls: [
+        'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.stories.jsx#L31',
+        'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.jsx',
+        'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/LICENSE',
+      ],
+    },
+    verification: 'actual-source-render-and-browser-verified',
+    previewVerification: 'The original Large story was run in an isolated browser. The button, CSS and keyboard focus state were inspected; the default screenshot is a real 800×500 browser capture.',
+    exampleArgs: { size: 'large', label: '버튼' },
+    module: './vendor/gosrock/src/stories/Button/Button.jsx', api: ['Button'],
+    params: [
+      { key: 'size', prop: 'Button.size', control: 'segmented', default: 'large', options: ['small', 'medium', 'large'], labelZh: '尺寸', labelEn: 'Size' },
+      { key: 'primary', prop: 'Button.primary', control: 'toggle', default: false, labelZh: '主按钮', labelEn: 'Primary' },
+      { key: 'label', prop: 'Button.label', control: 'text', default: '버튼', labelZh: '按钮文字', labelEn: 'Label' },
     ],
   },
 

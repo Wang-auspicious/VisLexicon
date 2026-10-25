@@ -1,4 +1,4 @@
-// Resolve every bench parameter against the component's own TypeScript types.
+// Resolve every bench parameter against the component's own TypeScript types or PropTypes declarations.
 // For each live catalog entry this lists the component's own props (not the
 // inherited DOM/React attributes), with type, JSDoc, and default value. Defaults
 // come from destructuring initializers in vendored source, or from @default /
@@ -34,7 +34,7 @@ fs.writeFileSync(ENTRY, `${imports.join('\n')}\nexport {}\n`)
 
 const program = ts.createProgram([ENTRY], {
   jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.ESNext, moduleResolution: ts.ModuleResolutionKind.Bundler, target: ts.ScriptTarget.ES2022,
-  strict: true, skipLibCheck: true, noEmit: true, allowImportingTsExtensions: true, esModuleInterop: true,
+  strict: true, skipLibCheck: true, noEmit: true, allowJs: true, allowImportingTsExtensions: true, esModuleInterop: true,
   baseUrl: ROOT, paths: { '@/*': ['src/vendor/*'], cn: ['src/vendor/lib/utils.ts'] }, types: [],
 })
 const checker = program.getTypeChecker()
@@ -47,13 +47,60 @@ for (const statement of entryFile.statements) {
   for (const element of clause.namedBindings?.elements ?? []) locals.set(element.name.text, element.name)
 }
 
-const rel = file => path.relative(ROOT, file).replaceAll('\\', '/')
+const rel = file => path.relative(ROOT, file).replaceAll('\\', '/').replace(/^\.\.\/node_modules\//, 'node_modules/')
 const isInherited = file => /node_modules[\\/](@types[\\/]react|csstype|typescript)[\\/]/.test(file)
 
 function componentSymbol(alias) {
   let symbol = checker.getSymbolAtLocation(locals.get(alias))
   if (symbol && symbol.flags & ts.SymbolFlags.Alias) symbol = checker.getAliasedSymbol(symbol)
   return symbol
+}
+function propTypesOf(symbol, exportName) {
+  const decl = symbol?.valueDeclaration ?? symbol?.declarations?.[0]
+  const source = decl?.getSourceFile()
+  if (!source || source.isDeclarationFile) return null
+  const propsName = ts.isVariableDeclaration(decl) && ts.isIdentifier(decl.name) ? decl.name.text : exportName
+  let schema = null, defaults = null
+  const visit = node => {
+    if (ts.isBinaryExpression(node) && node.operatorToken.kind === ts.SyntaxKind.EqualsToken && ts.isPropertyAccessExpression(node.left) && ts.isIdentifier(node.left.expression) && node.left.expression.text === propsName) {
+      if (node.left.name.text === 'propTypes' && ts.isObjectLiteralExpression(node.right)) schema = node.right
+      if (node.left.name.text === 'defaultProps' && ts.isObjectLiteralExpression(node.right)) defaults = node.right
+    }
+    node.forEachChild(visit)
+  }
+  visit(source)
+  if (!schema) return null
+  const valueOf = node => {
+    if (!node) return undefined
+    if (ts.isStringLiteralLike(node)) return node.text
+    if (ts.isNumericLiteral(node)) return Number(node.text)
+    if (node.kind === ts.SyntaxKind.TrueKeyword) return true
+    if (node.kind === ts.SyntaxKind.FalseKeyword) return false
+    if (node.kind === ts.SyntaxKind.NullKeyword) return null
+    return undefined
+  }
+  const defaultMap = new Map((defaults?.properties ?? []).filter(ts.isPropertyAssignment).map(p => [p.name.getText(source).replaceAll(/["']/g, ''), valueOf(p.initializer)]))
+  const result = {}
+  for (const prop of schema.properties) {
+    if (!ts.isPropertyAssignment(prop) || !ts.isIdentifier(prop.name)) continue
+    let typeNode = prop.initializer, optional = true, options
+    if (ts.isPropertyAccessExpression(typeNode) && typeNode.name.text === 'isRequired') { optional = false; typeNode = typeNode.expression }
+    let kind = 'other', type = typeNode.getText(source)
+    if (ts.isCallExpression(typeNode) && ts.isPropertyAccessExpression(typeNode.expression) && typeNode.expression.name.text === 'oneOf') {
+      const array = typeNode.arguments[0]
+      options = ts.isArrayLiteralExpression(array) ? array.elements.map(valueOf).filter(value => value !== undefined) : []
+      kind = 'enum'; type = options.map(value => typeof value === 'string' ? JSON.stringify(value) : String(value)).join(' | ')
+    } else if (ts.isPropertyAccessExpression(typeNode)) {
+      const name = typeNode.name.text
+      const known = { bool: ['boolean', 'boolean'], string: ['string', 'string'], number: ['number', 'number'], func: ['function', '(...args: unknown[]) => unknown'], node: ['other', 'ReactNode'], element: ['other', 'ReactElement'], array: ['other', 'unknown[]'], object: ['other', 'object'] }[name]
+      if (known) [kind, type] = known
+    }
+    const comments = (ts.getLeadingCommentRanges(source.text, prop.getFullStart()) ?? []).filter(range => source.text.slice(range.pos, range.end).startsWith('/**'))
+    const doc = comments.map(range => source.text.slice(range.pos, range.end).replace(/^\/\*\*|\*\/$/g, '').split(/\r?\n/).map(line => line.replace(/^\s*\* ?/, '').trim()).filter(Boolean).join(' ')).join(' ').slice(0, 300) || undefined
+    const key = prop.name.text
+    result[key] = { name: key, optional, type, kind, ...(options ? { options } : {}), doc, default: defaultMap.get(key), declaredIn: rel(source.fileName) }
+  }
+  return result
 }
 function propsType(symbol) {
   const type = checker.getTypeOfSymbol(symbol)
@@ -164,21 +211,28 @@ for (const entry of live) {
   for (const name of names) {
     const symbol = componentSymbol(aliases.get(`${entry.id}:${name}`))
     const props = symbol && propsType(symbol)
-    if (!props) { errors.push(`${entry.id}: cannot read props of ${name}`); continue }
+    const propTypes = symbol && propTypesOf(symbol, name)
+    if (!props && !propTypes) { errors.push(`${entry.id}: cannot read props of ${name}`); continue }
     const defaults = sourceDefaults(symbol)
-    types[name] = { props, defaults }
-    const own = checker.getPropertiesOfType(props).filter(p => {
+    types[name] = { props, defaults, propTypes }
+    const own = propTypes ? Object.values(propTypes) : checker.getPropertiesOfType(props).filter(p => {
       const file = (p.valueDeclaration ?? p.declarations?.[0])?.getSourceFile().fileName ?? ''
       return !isInherited(file)
     })
     const decl = symbol.valueDeclaration ?? symbol.declarations?.[0]
-    record.exports[name] = { declaredIn: decl ? rel(decl.getSourceFile().fileName) : undefined, propCount: own.length, props: own.map(p => propInfo(p, defaults)).slice(0, 120) }
+    record.exports[name] = { declaredIn: decl ? rel(decl.getSourceFile().fileName) : undefined, propCount: own.length, props: propTypes ? own : own.map(p => propInfo(p, defaults)).slice(0, 120) }
   }
   for (const param of entry.params) {
     if (param.demo) continue
     const [exportName, ...pathParts] = param.prop.split('.')
     const base = types[exportName]
     if (!base) { errors.push(`${entry.id}.${param.key}: unknown export ${exportName}`); continue }
+    if (base.propTypes) {
+      const info = pathParts.length === 1 ? base.propTypes[pathParts[0]] : null
+      if (!info) { errors.push(`${entry.id}.${param.key}: ${param.prop} is not a PropTypes prop`); continue }
+      record.params[param.key] = { prop: param.prop, ...info }
+      continue
+    }
     let type = base.props, symbol = null
     for (const part of pathParts) {
       symbol = checker.getPropertyOfType(checker.getApparentType(checker.getNonNullableType(type)), part)

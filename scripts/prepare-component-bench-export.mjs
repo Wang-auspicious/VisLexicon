@@ -1,4 +1,4 @@
-// Export only the small reproducible application and its twenty sample entries.
+// Export only the small reproducible application and its curated sample entries.
 // Private capture corpora, registry probes and raw receipts never enter this list.
 import fs from 'node:fs/promises'
 import path from 'node:path'
@@ -40,8 +40,17 @@ export async function prepareBenchExport({ refreshLicenses = false, destination 
     }
     licenses.push({ repo: source.repo, commit: source.commit, license: 'MIT', url: `https://github.com/${source.repo}/blob/${source.commit}/${originalPath}`, file: licenseFile, sha256: sha(bytes), bytes: bytes.length, scope: CATALOG.filter(e => e.source?.repo === source.repo).map(e => e.id) })
   }
+  const sourceReceipts = []
+  for (const entry of CATALOG) for (const [localPath, origin] of Object.entries(entry.source?.fileOrigins ?? {})) {
+    const bytes = await fs.readFile(path.join(bench, localPath))
+    if (sha(bytes) !== origin.sha256 || bytes.length !== origin.bytes) throw new Error(`Pinned source bytes changed: ${entry.id}:${localPath}`)
+    sourceReceipts.push({ id: entry.id, localPath, path: origin.path, url: origin.url, gitBlob: origin.gitBlob, sha256: origin.sha256, bytes: bytes.length })
+  }
+  await fs.writeFile(path.join(bench, 'src/generated/package-source-receipts.json'), JSON.stringify({ sources: sourceReceipts }, null, 2) + '\n')
   await fs.writeFile(path.join(bench, 'THIRD_PARTY_NOTICES.json'), JSON.stringify({ version: 1, sources: licenses }, null, 2) + '\n')
-  await fs.writeFile(path.join(bench, 'THIRD_PARTY_NOTICES.md'), '# Third-party sample notices\n\nThe twenty bundled examples retain their original-source links. Eight source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. Screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots.\n\n' + licenses.map(l => `## ${l.repo}\n\n- License: ${l.license}\n- Repository commit: \`${l.commit}\`\n- Original license: [${l.file}](${l.url})\n- Complete local license: [${l.file}](${l.file})\n- License SHA-256: \`${l.sha256}\`\n`).join('\n'))
+  const liveExamples = CATALOG.filter(e => e.lane !== 'screenshot').length
+  const screenshotExamples = CATALOG.filter(e => e.lane === 'screenshot').length
+  await fs.writeFile(path.join(bench, 'THIRD_PARTY_NOTICES.md'), `# Third-party sample notices\n\nThe ${CATALOG.length} bundled examples retain their original-source links. ${licenses.length} source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in \`src/vendor\`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in \`package-lock.json\`, and npm packages retain their own license notices. The ${screenshotExamples} screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining ${liveExamples} entries render their archived source.\n\n` + licenses.map(l => `## ${l.repo}\n\n- License: ${l.license}\n- Repository commit: \`${l.commit}\`\n- Original license: [${l.file}](${l.url})\n- Complete local license: [${l.file}](${l.file})\n- License SHA-256: \`${l.sha256}\`\n`).join('\n'))
   const files = []
   const walk = async relative => {
     const absolute = path.join(bench, relative)
