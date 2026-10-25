@@ -316,3 +316,34 @@ export const CATALOG = [
     ['entry-shadcn-studio-blocks-b6b7ef18a85f', 'section', ['地球', '点阵', '信任', '英雄区', 'globe', 'dots', 'trust', 'hero', 'logos']],
   ].map(([shotId, category, tags]) => ({ id: shotId, lane: 'screenshot', category, tags, shotId })),
 ]
+
+const gosrockLarge = CATALOG.find(entry => entry.id === 'gosrock-button-large')
+CATALOG.push({
+  ...gosrockLarge,
+  id: 'gosrock-button-medium',
+  zh: '中号描边按钮',
+  en: 'Medium outlined button',
+  summaryZh: 'Ticket Storybook 的 Secondary 变体沿用组件默认 medium 尺寸：透明底、深灰字和内描边；原例文字为“按钮”。',
+  summaryEn: 'The original Secondary story uses the component’s default medium size, transparent fill, dark text and inset outline.',
+  tags: ['按钮', '胶囊', '描边', '中号', 'button', 'pill', 'outlined', 'medium', 'secondary'],
+  source: { ...gosrockLarge.source, page: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.stories.jsx#L26' },
+  offer: {
+    ...gosrockLarge.offer,
+    id: 'source-seed-gosrock-button-medium',
+    scope: 'Exact pinned Button Secondary story and its component/CSS files',
+    sourceUrl: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.stories.jsx#L26',
+    evidenceUrls: [
+      'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.stories.jsx#L26',
+      'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.jsx',
+      'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/LICENSE',
+    ],
+  },
+  exampleArgs: { label: '버튼' },
+  params: [
+    { key: 'size', prop: 'Button.size', control: 'segmented', default: 'medium', options: ['small', 'medium', 'large'], labelZh: '尺寸', labelEn: 'Size' },
+    { key: 'primary', prop: 'Button.primary', control: 'toggle', default: false, labelZh: '主按钮', labelEn: 'Primary' },
+    { key: 'label', prop: 'Button.label', control: 'text', default: '버튼', labelZh: '按钮文字', labelEn: 'Label' },
+  ],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The original Secondary story was run in an isolated browser. Its DOM, CSS, hover, keyboard focus, Enter and pointer click states were inspected; the default poster is a real 800×500 browser capture.',
+})
