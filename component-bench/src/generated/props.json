@@ -864,5 +864,43 @@
   "counts": {
    "Alert": 8
   }
+ },
+ "cockroach-tooltip-example": {
+  "params": {
+   "placement": {
+    "prop": "Tooltip.placement",
+    "name": "placement",
+    "optional": true,
+    "type": "TooltipPosition",
+    "kind": "enum",
+    "options": [
+     "bottom",
+     "left",
+     "right",
+     "top",
+     "bottom-end",
+     "bottom-start",
+     "left-end",
+     "left-start",
+     "right-end",
+     "right-start",
+     "top-end",
+     "top-start"
+    ],
+    "default": "bottom",
+    "declaredIn": "src/vendor/cockroachdb/ui/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/packages/ui-components/src/Tooltip/Tooltip.tsx"
+   },
+   "content": {
+    "prop": "Tooltip.content",
+    "name": "content",
+    "optional": false,
+    "type": "string | ReactElement<unknown, string | JSXElementConstructor<any>>",
+    "kind": "other",
+    "declaredIn": "src/vendor/cockroachdb/ui/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/packages/ui-components/src/Tooltip/Tooltip.tsx"
+   }
+  },
+  "counts": {
+   "Tooltip": 4
+  }
  }
 }

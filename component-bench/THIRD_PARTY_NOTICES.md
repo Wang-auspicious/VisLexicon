@@ -1,6 +1,6 @@
 # Third-party sample notices
 
-The 24 bundled examples retain their original-source links. 10 source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 18 entries render their archived source.
+The 25 bundled examples retain their original-source links. 11 source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 19 entries render their archived source.
 
 ## magicuidesign/magicui
 
@@ -81,3 +81,11 @@ The 24 bundled examples retain their original-source links. 10 source repositori
 - Original license: [licenses/devaradise--paradise-ui--95bd51bf882d.txt](https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE)
 - Complete local license: [licenses/devaradise--paradise-ui--95bd51bf882d.txt](licenses/devaradise--paradise-ui--95bd51bf882d.txt)
 - License SHA-256: `09978c52d9e231569dd5054bc859413288bd257148859733c04ef7d464831d82`
+
+## cockroachdb/ui
+
+- License: MIT
+- Repository commit: `ee6b0f0d614499fe1d9c74b849d58eb3983c5a54`
+- Original license: [licenses/cockroachdb--ui--ee6b0f0d6144.txt](https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/LICENSE)
+- Complete local license: [licenses/cockroachdb--ui--ee6b0f0d6144.txt](licenses/cockroachdb--ui--ee6b0f0d6144.txt)
+- License SHA-256: `6376bc3f6b26316c93d1ce9bc72c6202f886fa1fcd13b367597071d2108d6f4b`

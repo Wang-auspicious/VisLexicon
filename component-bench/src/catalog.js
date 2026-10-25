@@ -9,6 +9,7 @@
 // `demo: true` marks a parameter that only changes the demo content, not a prop.
 
 import PARADISE_ALERT_SOURCE from './generated/paradise-alert-source.json' with { type: 'json' }
+import COCKROACH_TOOLTIP_SOURCE from './generated/cockroach-tooltip-source.json' with { type: 'json' }
 
 export const CATEGORIES = [
   { id: 'data', zh: '数据展示', en: 'Data display' },
@@ -416,4 +417,43 @@ CATALOG.push({
   ],
   verification: 'actual-source-render-and-browser-verified',
   previewVerification: 'The pinned AlertWithCustomContent story was run in an isolated browser with its original component, exact SCSS and content. The 800×500 real-render poster was visually checked; clicking Close removed the alert after its fade-out.',
+})
+
+const cockroachTooltipStory = 'https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/packages/storybook-ui-components/stories/Tooltip.stories.tsx#L33'
+CATALOG.push({
+  id: 'cockroach-tooltip-example',
+  lane: 'github',
+  category: 'feedback',
+  fill: 'light',
+  zh: '悬停提示框',
+  en: 'Hover tooltip',
+  summaryZh: 'Cockroach Labs UI 的 Tooltip.Example 原始 story：悬停在 “Hover me” 上方，显示 Hello, world 提示并按 top 位置定位。',
+  summaryEn: 'The original Tooltip.Example story: hover “Hover me” to reveal “Hello, world” in the top placement.',
+  tags: ['提示', '悬停', '浮层', 'tooltip', 'hover', 'overlay', 'popper'],
+  source: {
+    site: 'Cockroach Labs UI', home: 'https://github.com/cockroachdb/ui', repo: 'cockroachdb/ui',
+    commit: 'ee6b0f0d614499fe1d9c74b849d58eb3983c5a54', license: 'MIT',
+    licenseUrl: 'https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/LICENSE',
+    licenseCheckedAt: '2026-10-25T06:56:46.762577+00:00', page: cockroachTooltipStory,
+    install: 'git clone https://github.com/cockroachdb/ui.git && git -C ui checkout ee6b0f0d614499fe1d9c74b849d58eb3983c5a54',
+    packages: ['react-popper', '@popperjs/core', 'classnames', '@cockroachlabs/design-tokens'],
+    files: Object.keys(COCKROACH_TOOLTIP_SOURCE.fileOrigins),
+    fileOrigins: COCKROACH_TOOLTIP_SOURCE.fileOrigins,
+  },
+  module: './vendor/cockroachdb/ui/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/packages/ui-components/src/Tooltip/Tooltip',
+  api: ['Tooltip'],
+  offer: {
+    id: 'source-seed-cockroach-tooltip-example', verified: true, checkedAt: '2026-10-25T06:56:46.762577+00:00',
+    subject: 'source-code', scope: 'Exact pinned Tooltip Example story, component, SCSS module and token mixins',
+    access: 'free', sourceAvailable: true, sourceUrl: cockroachTooltipStory, sourceCost: 'free', openSource: true,
+    commercialUse: true, license: 'MIT', licenseUrl: 'https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/LICENSE',
+    evidenceUrls: [cockroachTooltipStory, 'https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/packages/ui-components/src/Tooltip/Tooltip.tsx', 'https://github.com/cockroachdb/ui/blob/ee6b0f0d614499fe1d9c74b849d58eb3983c5a54/LICENSE'],
+  },
+  exampleArgs: { placement: 'top', content: 'Hello, world' },
+  params: [
+    { key: 'placement', prop: 'Tooltip.placement', control: 'segmented', default: 'top', options: ['left', 'left-start', 'left-end', 'right', 'right-start', 'right-end', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end'], labelZh: '位置', labelEn: 'Placement' },
+    { key: 'content', prop: 'Tooltip.content', control: 'text', default: 'Hello, world', labelZh: '提示内容', labelEn: 'Content' },
+  ],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The pinned Tooltip.Example rendered with the original component and SCSS module. The original Hello, world tip appeared at the top on real pointer hover and hid on pointer leave; the poster is an 800×500 browser capture of the visible tooltip.',
 })
