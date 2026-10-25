@@ -204,7 +204,7 @@ export function discoveryPlugin({ranker=rankWithJev,statusReader=jevStatus,index
           if(allowed&&!allowed.has(unit.id))return false
           if(!filters)return true
           if(unit.kind!==filters.kind||filters.type&&(unit.componentType||'component')!==filters.type)return false
-          let source='unknown';try{source=new URL(unit.sourceUrl).hostname}catch{/* Same fallback as /browse. */}
+          let source=unit.codeResource?.sourceId||'unknown';if(!unit.codeResource?.sourceId)try{source=new URL(unit.sourceUrl).hostname}catch{/* Same fallback as /browse. */}
           return !filters.source||source===filters.source
         })
         const filterKey=crypto.createHash('sha256').update(JSON.stringify({ids:units.map(unit=>unit.id).sort(),filters:filters&&{kind:filters.kind,source:filters.source||'',type:filters.type||''}})).digest('hex')

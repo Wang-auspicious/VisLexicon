@@ -51,6 +51,7 @@ function matchPath(path) {
   if (head === 'sites' && segments.length === 1) return { name: 'sites', params: {} }
   if (head === 'curation-review' && segments.length === 1) return { name: 'curation-review', params: {} }
   if (head === 'components' && segments.length === 1) return { name: 'components', params: {} }
+  if (head === 'playground' && segments.length === 1) return { name: 'playground', params: {} }
   if (head === 'favorites' && segments.length === 1) return { name: 'favorites', params: {} }
   if (head === 'skills' && (segments.length === 1 || (segments.length === 2 && ['design', 'image'].includes(first)))) {
     return { name: 'skills', params: { resourceType: first || 'design' } }

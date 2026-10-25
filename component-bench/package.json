@@ -1,0 +1,41 @@
+{
+  "name": "vislexicon-component-bench",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "vendor": "node scripts/vendor.mjs",
+    "props": "node scripts/extract-props.mjs",
+    "posters": "node scripts/posters.mjs",
+    "dev": "vite --port 5288 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --port 5289 --strictPort"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.12.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.61.0",
+    "motion": "^14.6.0",
+    "react": "^19.3.1",
+    "react-datepicker": "^9.1.0",
+    "react-dom": "^19.3.1",
+    "react-grid-layout": "^2.3.0",
+    "react-markdown": "^10.1.0",
+    "react-resizable-panels": "^4.14.8",
+    "recharts": "^3.10.1",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.7.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "esbuild": "^0.28.2",
+    "playwright-core": "^1.64.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.5"
+  }
+}

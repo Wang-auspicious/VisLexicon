@@ -1,0 +1,210 @@
+{
+ "generatedAt": "2026-10-24T06:22:21.784Z",
+ "registry": {
+  "magicui/number-ticker": {
+   "type": "registry:ui",
+   "files": [
+    "registry/magicui/number-ticker.tsx"
+   ],
+   "dependencies": [
+    "motion"
+   ],
+   "registryDependencies": []
+  },
+  "magicui/flickering-grid": {
+   "type": "registry:ui",
+   "files": [
+    "registry/magicui/flickering-grid.tsx"
+   ],
+   "dependencies": [],
+   "registryDependencies": []
+  },
+  "magicui/border-beam": {
+   "type": "registry:ui",
+   "files": [
+    "registry/magicui/border-beam.tsx"
+   ],
+   "dependencies": [
+    "motion"
+   ],
+   "registryDependencies": []
+  },
+  "magicui/shimmer-button": {
+   "type": "registry:ui",
+   "files": [
+    "registry/magicui/shimmer-button.tsx"
+   ],
+   "dependencies": [],
+   "registryDependencies": []
+  },
+  "magicui/animated-circular-progress-bar": {
+   "type": "registry:ui",
+   "files": [
+    "registry/magicui/animated-circular-progress-bar.tsx"
+   ],
+   "dependencies": [],
+   "registryDependencies": []
+  },
+  "magicui/dock": {
+   "type": "registry:ui",
+   "files": [
+    "registry/magicui/dock.tsx"
+   ],
+   "dependencies": [
+    "motion"
+   ],
+   "registryDependencies": []
+  },
+  "fancy/pixel-loader": {
+   "type": "registry:ui",
+   "files": [
+    "react/src/components/pixel-loader/PixelLoader.tsx",
+    "react/src/components/pixel-loader/index.ts",
+    "react/src/components/pixel-loader/pixel-loader.css"
+   ],
+   "dependencies": [],
+   "registryDependencies": [
+    "https://fancy-ui.rama.app/r/utils.json"
+   ]
+  },
+  "fancy/utils": {
+   "type": "registry:lib",
+   "files": [
+    "react/src/utils.ts"
+   ],
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.4.0"
+   ],
+   "registryDependencies": []
+  },
+  "fancy/tick-nav": {
+   "type": "registry:ui",
+   "files": [
+    "react/src/components/tick-nav/TickNav.tsx",
+    "react/src/components/tick-nav/index.ts",
+    "react/src/components/tick-nav/tick-nav-core.ts",
+    "react/src/components/tick-nav/tick-nav-hdr.ts",
+    "react/src/components/tick-nav/tick-nav.css",
+    "react/src/components/tick-nav/types.ts"
+   ],
+   "dependencies": [],
+   "registryDependencies": [
+    "https://fancy-ui.rama.app/r/internals.json",
+    "https://fancy-ui.rama.app/r/internals-dom.json",
+    "https://fancy-ui.rama.app/r/internals-motion.json",
+    "https://fancy-ui.rama.app/r/sound.json",
+    "https://fancy-ui.rama.app/r/utils.json"
+   ]
+  },
+  "fancy/internals": {
+   "type": "registry:lib",
+   "files": [
+    "react/src/internals/Portal.tsx",
+    "react/src/internals/StreamText.tsx",
+    "react/src/internals/ai-types.ts",
+    "react/src/internals/anchor-position.ts",
+    "react/src/internals/calendar-core.ts",
+    "react/src/internals/diff.ts",
+    "react/src/internals/dismissable.ts",
+    "react/src/internals/field.ts",
+    "react/src/internals/float.ts",
+    "react/src/internals/focus-trap.ts",
+    "react/src/internals/host.ts",
+    "react/src/internals/listbox.ts",
+    "react/src/internals/markdown.ts",
+    "react/src/internals/menu.ts",
+    "react/src/internals/merge-ids.ts",
+    "react/src/internals/relative-time.ts",
+    "react/src/internals/scroll-lock.ts",
+    "react/src/internals/stream-text.css",
+    "react/src/internals/use-anchor-position.ts",
+    "react/src/internals/use-autoscroll.ts",
+    "react/src/internals/use-copy.ts",
+    "react/src/internals/use-elapsed.ts",
+    "react/src/internals/use-float.ts",
+    "react/src/internals/use-id.ts",
+    "react/src/internals/use-text-stream.ts",
+    "react/src/internals/waveform-core.ts"
+   ],
+   "dependencies": [],
+   "registryDependencies": [
+    "https://fancy-ui.rama.app/r/internals-dom.json",
+    "https://fancy-ui.rama.app/r/utils.json"
+   ]
+  },
+  "fancy/internals-dom": {
+   "type": "registry:lib",
+   "files": [
+    "react/src/internals/dom/context.ts",
+    "react/src/internals/dom/ssr.ts",
+    "react/src/internals/dom/types.ts",
+    "react/src/internals/dom/use-composed-refs.ts",
+    "react/src/internals/dom/use-element-ref.ts",
+    "react/src/internals/dom/use-event-callback.ts",
+    "react/src/internals/dom/use-inert-attribute.ts",
+    "react/src/internals/dom/use-live-ref.ts"
+   ],
+   "dependencies": [],
+   "registryDependencies": []
+  },
+  "fancy/internals-motion": {
+   "type": "registry:lib",
+   "files": [
+    "react/src/internals/motion/anchored.ts",
+    "react/src/internals/motion/animate.ts",
+    "react/src/internals/motion/easing.ts",
+    "react/src/internals/motion/haptics.ts",
+    "react/src/internals/motion/in-view.ts",
+    "react/src/internals/motion/media-query.ts",
+    "react/src/internals/motion/presence-core.ts",
+    "react/src/internals/motion/presence.ts",
+    "react/src/internals/motion/presets.ts",
+    "react/src/internals/motion/raf.ts",
+    "react/src/internals/motion/stagger.ts",
+    "react/src/internals/motion/tokens.ts",
+    "react/src/internals/motion/transitions.ts",
+    "react/src/internals/motion/types.ts"
+   ],
+   "dependencies": [],
+   "registryDependencies": [
+    "https://fancy-ui.rama.app/r/internals.json",
+    "https://fancy-ui.rama.app/r/internals-dom.json",
+    "https://fancy-ui.rama.app/r/utils.json"
+   ]
+  },
+  "fancy/sound": {
+   "type": "registry:lib",
+   "files": [
+    "react/src/sound/SoundToggle.tsx",
+    "react/src/sound/engine.ts",
+    "react/src/sound/index.ts",
+    "react/src/sound/sound-feedback.ts",
+    "react/src/sound/sound-toggle.css",
+    "react/src/sound/sound.ts",
+    "react/src/sound/themes.ts",
+    "react/src/sound/types.ts",
+    "react/src/sound/use-sound.ts"
+   ],
+   "dependencies": [],
+   "registryDependencies": [
+    "https://fancy-ui.rama.app/r/internals-dom.json",
+    "https://fancy-ui.rama.app/r/utils.json"
+   ]
+  }
+ },
+ "github": [
+  {
+   "repo": "shadcn-ui/ui",
+   "commit": "e55b60b1014cccfb9ac62f97e0d20b5b649f4a54",
+   "file": "apps/v4/registry/new-york-v4/ui/chart.tsx",
+   "to": "shadcn/chart.tsx",
+   "bytes": 10544
+  }
+ ],
+ "dependencies": [
+  "clsx",
+  "motion",
+  "tailwind-merge"
+ ]
+}

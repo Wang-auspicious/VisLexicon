@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server/start-dev.mjs",
     "check": "node scripts/check-demo.mjs",
-    "prebuild": "node scripts/resources/build-index.mjs && node scripts/build-browser-snapshot.mjs && node scripts/build-atlas-catalog.mjs && node scripts/style/check-published.mjs && npm run check && node scripts/assert-public-budget.mjs",
+    "prebuild": "npm run build:bench && node scripts/ingest-v6/seed-native.mjs && node scripts/resources/build-index.mjs && node scripts/build-browser-snapshot.mjs && node scripts/build-atlas-catalog.mjs && node scripts/style/check-published.mjs && npm run check && node scripts/assert-public-budget.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "security:push": "node scripts/check-push-secrets.mjs",
@@ -16,7 +16,9 @@
     "social:collect": "node scripts/social-discovery.mjs collect",
     "social:ingest": "node scripts/social-discovery.mjs ingest",
     "social:verify": "node scripts/social-discovery.mjs verify",
-    "site:graph": "node scripts/site-graph/cli.mjs"
+    "site:graph": "node scripts/site-graph/cli.mjs",
+    "build:bench": "node scripts/build-component-bench.mjs",
+    "predev": "npm run build:bench && node scripts/ingest-v6/seed-native.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",
@@ -32,5 +34,8 @@
   },
   "engines": {
     "node": ">=22.12.0"
-  }
+  },
+  "workspaces": [
+    "component-bench"
+  ]
 }

@@ -4,6 +4,7 @@ import crypto from 'node:crypto'
 import { atlasSearchFiles, atlasSearchUnits } from './atlas-search.mjs'
 import { DISCOVERY_SCOPES, inTheme } from '../src/lib/discovery-scopes.js'
 import { verifyPublicRelations } from './published-relations.mjs'
+import { componentCodeIndexFile, componentCodeUnits } from './component-code-index.mjs'
 export async function discoveryDataFile(root, name) {
   const local = path.join(root, 'data/discovery/local-public', name)
   try { await fs.access(local); return local }
@@ -12,7 +13,7 @@ export async function discoveryDataFile(root, name) {
 }
 export async function discoveryIndexFiles(root, scope) {
   if (!Object.hasOwn(DISCOVERY_SCOPES, scope)) throw Error('INVALID_SCOPE')
-  return [path.join(root, `public/data/discovery/scopes/${scope}.json`), await discoveryDataFile(root, 'index.json'), await discoveryDataFile(root, 'relations.json'), ...(scope === 'atlas' ? await atlasSearchFiles(root) : [])]
+  return [path.join(root, `public/data/discovery/scopes/${scope}.json`), await discoveryDataFile(root, 'index.json'), await discoveryDataFile(root, 'relations.json'), ...(scope === 'atlas' ? await atlasSearchFiles(root) : []), ...(scope === 'curation' ? [await componentCodeIndexFile(root)] : [])]
 }
 export async function loadDiscoveryIndex(root,scope,theme='') {
   if(!Object.hasOwn(DISCOVERY_SCOPES,scope))throw new Error('INVALID_SCOPE')
@@ -27,10 +28,13 @@ export async function loadDiscoveryIndex(root,scope,theme='') {
   }
   const additions=captures.units.filter(x=>scope==='atlas'?x.kind==='atlas-effect':scope==='curation'&&x.kind==='website-component').map(unit=>({...unit,scope,theme:unit.familyId?.split('/')[1]||unit.componentType,relatedSites:relatedSites.get(unit.id)||[]}))
   const terms=scope==='atlas'?await atlasSearchUnits(root):[]
-  const units=[...additions,...base.units,...terms].filter(unit=>unit.scope===scope)
+  const code=scope==='curation'?await componentCodeUnits(root):[]
+  const codeById=new Map(code.map(u=>[u.id,u]))
+  const seen=new Set([...additions,...base.units,...terms].map(u=>u.id))
+  const units=[...additions,...base.units,...terms].map(unit=>codeById.has(unit.id)?{...unit,codeResource:codeById.get(unit.id).codeResource}:unit).concat(code.filter(u=>!seen.has(u.id))).filter(unit=>unit.scope===scope)
   const themes=[...new Set(units.flatMap(x=>[x.theme,...(x.themes||[])]).filter(Boolean))].sort()
   if(theme&&!themes.includes(theme))throw new Error('INVALID_THEME')
   const selected=units.filter(unit=>inTheme(unit,theme))
-  const generatedAt=crypto.createHash('sha256').update(JSON.stringify({base,captures: additions,relations,terms})).digest('hex')
+  const generatedAt=crypto.createHash('sha256').update(JSON.stringify({base,captures: additions,relations,terms,code})).digest('hex')
   return {schemaVersion:'scoped-discovery/1.0',generatedAt,scope,theme,themes,units:selected,counts:{indexedInstances:selected.length,reviewedCaptures:selected.filter(x=>x.verification==='capture-v2-reviewed').length},examples:scope==='curation'?['有源码的免费组件库','适合做网站动效的工具','开源的按钮组件']:selected.flatMap(x=>x.exampleQueries||[]).slice(0,4)}
 }

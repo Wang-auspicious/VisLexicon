@@ -20,6 +20,7 @@ const loadAtlas = () => import('./views/Atlas.jsx')
 const Atlas = lazy(loadAtlas)
 const Favorites = lazy(() => import('./views/Favorites.jsx'))
 const Components = lazy(() => import('./views/Components.jsx'))
+const Playground = lazy(() => import('./views/Playground.jsx'))
 const ResourceLibrary = lazy(() => import('./views/ResourceLibrary.jsx'))
 const CurationReview = lazy(() => import('./views/CurationReview.jsx'))
 const ResourceKit = lazy(() => import('./views/ResourceKit.jsx'))
@@ -30,6 +31,7 @@ loadStored()
 const CHANNELS = [
   { hash: '#/', key: 'curation', match: (name) => ['curation', 'sites', 'site', 'components'].includes(name) },
   { hash: '#/atlas', key: 'atlas', match: (name) => name === 'atlas' },
+  { hash: '#/playground', key: 'playground', match: (name) => name === 'playground' },
   { hash: '#/skills', key: 'skills', match: (name) => name === 'skills' },
   { hash: '#/ppt', key: 'ppt', match: (name) => name === 'ppt' },
   { hash: '#/graphics', key: 'graphics', match: (name) => name === 'graphics' },
@@ -190,6 +192,7 @@ export default function App() {
             {baseRoute === 'about' && <About />}
             {baseRoute === 'favorites' && <Favorites />}
             {baseRoute === 'components' && <Components />}
+            {baseRoute === 'playground' && <Playground />}
             {baseRoute === 'curation-review' && <CurationReview />}
             {['ppt', 'science', 'graphics'].includes(baseRoute) && route.query.kit && (
               <ResourceKit channel={baseRoute} kitId={route.query.kit} />
@@ -208,7 +211,7 @@ export default function App() {
             </div>
           )}
         </main>
-        {baseRoute !== 'atlas' && <SiteFooter />}
+        {!['atlas', 'playground'].includes(baseRoute) && <SiteFooter />}
       </div>
 
       {overlayOpen && (

@@ -105,10 +105,10 @@ export function selectDiscoveryCandidates(query,index,byId,store,token,limit=32)
 export function projectDiscoveryCard(unit) {
   const { id, kind, nameZh, nameEn, descriptionZh, descriptionEn, sectionsZh, sectionsEn,
     previewUrl, previewKind, source, sourceUrl, offers, relatedSites, tags, tagFacets,
-    detailUrl, resourceType, matchStatus } = unit
+    detailUrl, resourceType, matchStatus, codeResource } = unit
   return { id, kind, nameZh, nameEn, descriptionZh, descriptionEn, sectionsZh, sectionsEn,
     previewUrl, previewKind, source, sourceUrl, offers, relatedSites, tags, tagFacets,
-    detailUrl, resourceType, matchStatus }
+    detailUrl, resourceType, matchStatus, ...(codeResource ? { codeResource: Object.fromEntries(['id','sourceId','detailUrl','previewUrl','previewStatus','poster','sourceAvailable','framework','license'].filter(key => codeResource[key] !== undefined).map(key => [key, codeResource[key]])) } : {}) }
 }
 
 export function summarizeDiscoveryIndex(index) {

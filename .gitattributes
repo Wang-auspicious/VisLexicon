@@ -15,3 +15,9 @@ public/graphics-resources/** -text
 
 # Complete resource originals retain byte hashes across Windows checkouts.
 public/resources/** -text
+# Upstream bytes and hash-bound snapshots retain original whitespace as well.
+component-bench/src/vendor/** -text -whitespace
+component-bench/src/generated/** -text -whitespace
+component-bench/licenses/** -text -whitespace
+component-bench/THIRD_PARTY_NOTICES.* -text -whitespace
+public/fonts/INTER-OFL.txt -text -whitespace

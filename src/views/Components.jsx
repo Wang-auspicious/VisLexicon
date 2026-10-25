@@ -6,6 +6,8 @@ import { useLocale } from '../i18n.js'
 import { navigate, useRoute } from '../router.js'
 import { DiscoveryCard } from '../components/ComponentDiscovery.jsx'
 import { englishText } from '../lib/localized-content.js'
+import ComponentCodeDetail from '../components/ComponentCodeDetail.jsx'
+import { readComponentDetail } from '../lib/component-code-details.js'
 import '../styles/library-pages.css'
 import '../styles/components.css'
 
@@ -43,7 +45,6 @@ export default function Components() {
   const status=waitingPage?'loading':q.trim()?(searchUnits.length||(jev.status==='ready'&&!(jev.response?.remainingCount>0))?'ready':jev.status==='error'?'error':'loading'):(view.key === requestKey ? view.status : 'loading')
   useEffect(()=>{if(q.trim()&&page*24>searchUnits.length&&searchUnits.length<(jev.displayResponse?.matchCount||0)&&!jev.loadingMore&&!jev.pageError)loadMore()},[q,page,searchUnits.length,jev.displayResponse?.matchCount,jev.response?.refineToken,jev.loadingMore,jev.pageError,loadMore])
   const [preview, setPreview] = useState(null)
-  const dialog = useRef(null)
   const heading = useRef(null)
   const update = (patch,replace=false) => {
     if(Object.hasOwn(patch,'q'))jev.updateQuery(patch.q)
@@ -60,24 +61,35 @@ export default function Components() {
       .catch(() => { if (!controller.signal.aborted) setView(old => ({ ...old, key: requestKey, status: 'error' })) })
     return () => controller.abort()
   }, [source, type, browsePage, requestKey])
-  useEffect(() => { if (preview) dialog.current?.showModal() }, [preview])
+  useEffect(() => {
+    if (!query.component || !/^[a-zA-Z0-9_.-]{1,180}$/.test(query.component)) return
+    const controller = new AbortController()
+    const detailUrl = `/data/component-code/items/${encodeURIComponent(query.component)}.json`
+    readComponentDetail(detailUrl).then(item => {
+      const title = item.title ?? item.name ?? item.id
+      const zh = item.nameZh ?? (typeof title === 'object' ? title.zh ?? title.en : title)
+      const english = item.nameEn ?? (typeof title === 'object' ? title.en ?? title.zh : title)
+      if (!controller.signal.aborted) setPreview({ id: item.id, nameZh: zh, nameEn: english, sourceUrl: item.sourceUrl, codeResource: { detailUrl, initialItem: item } })
+    }).catch(() => {})
+    return () => controller.abort()
+  }, [query.component])
   const changePage = value => { update({ page: String(value) }); heading.current?.scrollIntoView({ block: 'start' }) }
   const clear = () => update({ source: '', type: '', q: '', page: '1' })
   return <section className="library-page components-page">
-    <header className="library-head"><div><a className="library-text-link" href="#/">← {en ? 'Curation' : '策展'}</a><h1>{en ? 'All components' : '全部组件'}</h1><p>{en ? 'Original previews, descriptions and source links.' : '集中查看原站截图、组件描述与来源。'}</p></div><span className="component-total">{result?.allCount.toLocaleString(en ? 'en-US' : 'zh-CN') ?? '—'} <small>{en ? 'components' : '个组件'}</small></span></header>
+    <header className="library-head"><div><a className="library-text-link" href="#/">← {en ? 'Curation' : '策展'}</a><h1>{en ? 'All components' : '全部组件'}</h1><p>{en ? 'Original screenshots, complete source and verified interactive previews.' : '原站截图、完整源码与通过验证的实时预览。'}</p></div><span className="component-total">{result?.allCount.toLocaleString(en ? 'en-US' : 'zh-CN') ?? '—'} <small>{en ? 'component resources' : '项组件资源'}</small></span></header>
     <div className="component-filters">
       <form className="library-search" onSubmit={event => { event.preventDefault(); update({ q: new FormData(event.currentTarget).get('q'), page: '1' }) }}><input name="q" type="search" value={q} maxLength={1500} aria-label={en ? 'Describe a component' : '描述要找的组件'} placeholder={en ? 'Describe appearance, color or motion…' : '描述外观、颜色或动效…'} onChange={event=>update({q:event.target.value,page:'1'},true)} onCompositionStart={()=>{jev.setComposing(true);setComposing(true)}} onCompositionEnd={event=>{jev.setComposing(false);setComposing(false);update({q:event.currentTarget.value,page:'1'},true)}}/><button type="submit">{en ? 'Filter' : '筛选'}</button></form>
       <label><span>{en ? 'Source' : '来源'}</span><select aria-label={en ? 'Source' : '来源'} value={source} onChange={event => update({ source: event.target.value, page: '1' })}><option value="">{en ? 'All sources' : '全部来源'}</option>{result?.sources?.map(item => <option key={item.id} value={item.id}>{en ? englishText(item.name, item.id) : item.name} · {item.count}</option>)}</select></label>
       <label><span>{en ? 'Type' : '类型'}</span><select aria-label={en ? 'Type' : '类型'} value={type} onChange={event => update({ type: event.target.value, page: '1' })}><option value="">{en ? 'All types' : '全部类型'}</option>{result?.types?.map(item => <option key={item.id} value={item.id}>{typeLabel(item.id, en)} · {item.count}</option>)}</select></label>
       {(source || type || q) && <button type="button" className="library-text-link" onClick={clear}>{en ? 'Reset' : '重置'}</button>}
     </div>
-    <div ref={heading} className="component-result-line" role="status">{waitingPage?(en?'Loading this page…':'正在加载这一页…'):q.trim()?jev.statusText(en):status === 'loading' ? (en ? 'Loading components…' : '读取组件…') : status === 'error' ? (en ? 'Components could not load.' : '组件加载失败。') : en ? result.total.toLocaleString('en-US') + ' components · Page ' + result.page + ' of ' + result.pages : '共 ' + result.total.toLocaleString('zh-CN') + ' 个组件 · 第 ' + result.page + ' / ' + result.pages + ' 页'}</div>
+    <div ref={heading} className="component-result-line" role="status">{waitingPage?(en?'Loading this page…':'正在加载这一页…'):q.trim()?jev.statusText(en):status === 'loading' ? (en ? 'Loading components…' : '读取组件…') : status === 'error' ? (en ? 'Components could not load.' : '组件加载失败。') : en ? result.total.toLocaleString('en-US') + ' component resources · Page ' + result.page + ' of ' + result.pages : '共 ' + result.total.toLocaleString('zh-CN') + ' 项组件资源 · 第 ' + result.page + ' / ' + result.pages + ' 页'}</div>
     {q.trim()&&jev.response?.remainingCount>0&&searchUnits.length===0&&<p role="status">{en?'More candidates are awaiting Jev review.':'还有候选待 Jev 判断。'}</p>}
     {status === 'error' ? <button className="library-button" onClick={() => {if(q.trim())jev.retry();else setRevision(value => value + 1)}}>{en ? 'Retry' : '重试'}</button>
-      : status === 'ready' && (result.units.length ? <div className="discovery-grid">{result.units.map(unit => <DiscoveryCard key={unit.id} unit={unit} en={en} query={q} onPreview={unit.previewKind === 'image' ? () => setPreview(unit) : undefined}/>)}</div> : <div className="library-empty"><h2>{en ? 'No matching components' : '没有匹配的组件'}</h2><p>{en ? 'Try another source, type or name.' : '试试其他来源、类型或名称。'}</p><button className="library-button" onClick={clear}>{en ? 'Reset filters' : '重置筛选'}</button></div>)}
+      : status === 'ready' && (result.units.length ? <div className="discovery-grid">{result.units.map(unit => <DiscoveryCard key={unit.id} unit={unit} en={en} query={q} onPreview={unit.previewKind === 'image' || unit.codeResource ? () => setPreview(unit) : undefined}/>)}</div> : <div className="library-empty"><h2>{en ? 'No matching components' : '没有匹配的组件'}</h2><p>{en ? 'Try another source, type or name.' : '试试其他来源、类型或名称。'}</p><button className="library-button" onClick={clear}>{en ? 'Reset filters' : '重置筛选'}</button></div>)}
     {q.trim()&&jev.error&&<p role="status">{jevErrorMessage(jev.error,en)} <button type="button" onClick={jev.retry}>{en?'Retry Jev':'重试 Jev'}</button></p>}
     {q.trim()&&jev.pageError&&<button type="button" onClick={jev.loadMore}>{en?'Retry loading':'重试加载'}</button>}
     {status === 'ready' && result.pages > 1 && <nav className="component-pagination" aria-label={en ? 'Component pages' : '组件分页'}><button className="library-button" disabled={result.page === 1} onClick={() => changePage(result.page - 1)}>← {en ? 'Previous' : '上一页'}</button><label>{en ? 'Page' : '页码'}<input type="number" key={result.page} min="1" max={result.pages} defaultValue={result.page} aria-label={en ? 'Go to page' : '跳转页码'} onKeyDown={event => { if (event.key === 'Enter' && event.target.validity.valid) changePage(Number(event.target.value)) }}/><span>/ {result.pages}</span></label><button className="library-button" disabled={result.page === result.pages} onClick={() => changePage(result.page + 1)}>{en ? 'Next' : '下一页'} →</button></nav>}
-    {preview && <dialog ref={dialog} className="component-lightbox" onClose={() => setPreview(null)} onClick={event => { if (event.target === event.currentTarget) dialog.current.close() }}><div><header><h2>{en ? preview.nameEn : preview.nameZh}</h2><button autoFocus onClick={() => dialog.current.close()} aria-label={en ? 'Close preview' : '关闭预览'}>×</button></header><img src={preview.previewUrl} alt={en ? preview.nameEn : preview.nameZh}/><a className="library-text-link" href={preview.sourceUrl} target="_blank" rel="noreferrer">{en ? 'View original source' : '查看原始来源'} ↗</a></div></dialog>}
+    {preview && <ComponentCodeDetail key={preview.id} unit={preview} en={en} onClose={() => setPreview(null)} />}
   </section>
 }

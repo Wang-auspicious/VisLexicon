@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "./vendor/registry.css";
+
+/* src/vendor is git-ignored (third-party source stays local), and Tailwind skips
+   ignored paths by default, so the vendored components are listed explicitly. */
+@source "./vendor";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+  /* Tokens the shadcn chart and Magic UI sources reference. */
+  --color-background: #0b0b0d;
+  --color-foreground: #f4f4f5;
+  --color-card: #161618;
+  --color-muted: #232326;
+  --color-muted-foreground: #a1a1aa;
+  --color-border: #2a2a2e;
+  --color-primary: #f4f4f5;
+  --color-primary-foreground: #0b0b0d;
+  --color-accent: #232326;
+  --color-ring: #8b5cf6;
+}
+
+:root {
+  color-scheme: dark;
+  --bench-bg: #070708;
+  --bench-panel: #141416;
+  --bench-panel-2: #1c1c1f;
+  --bench-line: rgb(255 255 255 / 0.08);
+  --bench-text: #f4f4f5;
+  --bench-dim: #9a9aa3;
+  --bench-accent: #a78bfa;
+}
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bench-bg);
+  color: var(--bench-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--bench-accent); outline-offset: 2px; }
+
+/* A preview never paints outside its stage, and position:fixed inside it stays inside. */
+.bench-stage { contain: layout paint; isolation: isolate; transform: translateZ(0); }
+.bench-stage[data-fill="light"] { background: #f4f4f5; color: #18181b; }
+.bench-stage[data-fill="dark"] { background: #101012; }
+html[data-embed="true"], html[data-embed="true"] body, html[data-embed="true"] #root, html[data-embed="true"] .bench-stage { background: transparent !important; }
+/* A dark-only color scheme gives an otherwise transparent iframe a black UA canvas. */
+html[data-embed="true"] { color-scheme: normal; }
+
+/* Range control in the style of a filled bar with label and value. */
+.bench-range { position: relative; height: 44px; border-radius: 12px; background: var(--bench-panel-2); overflow: hidden; }
+.bench-range .fill { position: absolute; inset: 0 auto 0 0; background: rgb(255 255 255 / 0.1); pointer-events: none; transition: width 60ms linear; }
+.bench-range input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }
+.bench-range .row { position: absolute; inset: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; pointer-events: none; font-size: 14px; }
+.bench-range:has(input:focus-visible) { outline: 2px solid var(--bench-accent); outline-offset: 2px; }
+
+.bench-code { font-family: var(--font-mono); font-size: 12.5px; line-height: 1.7; tab-size: 2; }
+
+/* react-datepicker ships light styles; recolour them for the dark stage. */
+.bench-datepicker .react-datepicker { background: #141416; border-color: #2a2a2e; color: #e4e4e7; font-family: var(--font-sans); border-radius: 14px; overflow: hidden; }
+.bench-datepicker .react-datepicker__header { background: #1c1c1f; border-color: #2a2a2e; }
+.bench-datepicker .react-datepicker__current-month, .bench-datepicker .react-datepicker__day-name,
+.bench-datepicker .react-datepicker__day, .bench-datepicker .react-datepicker-time__header,
+.bench-datepicker .react-datepicker__week-number { color: #e4e4e7; }
+.bench-datepicker .react-datepicker__day:hover, .bench-datepicker .react-datepicker__time-list-item:hover { background: #2a2a2e !important; }
+.bench-datepicker .react-datepicker__day--selected, .bench-datepicker .react-datepicker__time-list-item--selected { background: #8b5cf6 !important; color: #fff; }
+.bench-datepicker .react-datepicker__day--keyboard-selected { background: #3b2a66; }
+.bench-datepicker .react-datepicker__day--outside-month { color: #52525b; }
+.bench-datepicker .react-datepicker__time-container, .bench-datepicker .react-datepicker__time { background: #141416 !important; border-color: #2a2a2e; }
+.bench-datepicker .react-datepicker__time-list-item { color: #d4d4d8; }
+
+/* Markdown preview typography. */
+.bench-md { font-size: 14px; line-height: 1.7; color: #d4d4d8; }
+.bench-md h1, .bench-md h2, .bench-md h3 { color: #fff; font-weight: 600; margin: 0 0 .6em; }
+.bench-md h2 { font-size: 20px; }
+.bench-md ul { padding-left: 1.2em; list-style: disc; margin: .4em 0 1em; }
+.bench-md li:has(> input) { list-style: none; margin-left: -1.2em; }
+.bench-md input[type="checkbox"] { margin-right: .5em; accent-color: #8b5cf6; }
+.bench-md table { border-collapse: collapse; margin-top: .6em; }
+.bench-md th, .bench-md td { border: 1px solid #2a2a2e; padding: 4px 12px; }
+.bench-md th { background: #1c1c1f; color: #fff; }
+.bench-md del { color: #71717a; }
+.bench-md code { background: #232326; padding: 1px 5px; border-radius: 5px; font-size: 12.5px; }
+
+/* Card and modal motion. */
+@keyframes bench-in { from { opacity: 0; transform: translateY(8px) scale(.985); } to { opacity: 1; transform: none; } }
+.bench-modal { animation: bench-in 220ms cubic-bezier(.2, .9, .3, 1); }
+@media (prefers-reduced-motion: reduce) { .bench-modal { animation: none; } }
+.scrollbar-thin { scrollbar-width: thin; scrollbar-color: #2a2a2e transparent; }

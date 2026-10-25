@@ -1,0 +1,702 @@
+{
+ "number-ticker": {
+  "params": {
+   "value": {
+    "prop": "NumberTicker.value",
+    "name": "value",
+    "optional": false,
+    "type": "number",
+    "kind": "number",
+    "declaredIn": "src/vendor/magicui/number-ticker.tsx"
+   },
+   "startValue": {
+    "prop": "NumberTicker.startValue",
+    "name": "startValue",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 0,
+    "declaredIn": "src/vendor/magicui/number-ticker.tsx"
+   },
+   "direction": {
+    "prop": "NumberTicker.direction",
+    "name": "direction",
+    "optional": true,
+    "type": "\"up\" | \"down\"",
+    "kind": "enum",
+    "options": [
+     "up",
+     "down"
+    ],
+    "default": "up",
+    "declaredIn": "src/vendor/magicui/number-ticker.tsx"
+   },
+   "delay": {
+    "prop": "NumberTicker.delay",
+    "name": "delay",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 0,
+    "declaredIn": "src/vendor/magicui/number-ticker.tsx"
+   },
+   "decimalPlaces": {
+    "prop": "NumberTicker.decimalPlaces",
+    "name": "decimalPlaces",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 0,
+    "declaredIn": "src/vendor/magicui/number-ticker.tsx"
+   }
+  },
+  "counts": {
+   "NumberTicker": 5
+  }
+ },
+ "flickering-grid": {
+  "params": {
+   "squareSize": {
+    "prop": "FlickeringGrid.squareSize",
+    "name": "squareSize",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 4,
+    "declaredIn": "src/vendor/magicui/flickering-grid.tsx"
+   },
+   "gridGap": {
+    "prop": "FlickeringGrid.gridGap",
+    "name": "gridGap",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 6,
+    "declaredIn": "src/vendor/magicui/flickering-grid.tsx"
+   },
+   "flickerChance": {
+    "prop": "FlickeringGrid.flickerChance",
+    "name": "flickerChance",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 0.3,
+    "declaredIn": "src/vendor/magicui/flickering-grid.tsx"
+   },
+   "color": {
+    "prop": "FlickeringGrid.color",
+    "name": "color",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "default": "rgb(0, 0, 0)",
+    "declaredIn": "src/vendor/magicui/flickering-grid.tsx"
+   },
+   "maxOpacity": {
+    "prop": "FlickeringGrid.maxOpacity",
+    "name": "maxOpacity",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 0.3,
+    "declaredIn": "src/vendor/magicui/flickering-grid.tsx"
+   }
+  },
+  "counts": {
+   "FlickeringGrid": 8
+  }
+ },
+ "border-beam": {
+  "params": {
+   "size": {
+    "prop": "BorderBeam.size",
+    "name": "size",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "The size of the border beam.",
+    "default": 50,
+    "declaredIn": "src/vendor/magicui/border-beam.tsx"
+   },
+   "duration": {
+    "prop": "BorderBeam.duration",
+    "name": "duration",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "The duration of the border beam.",
+    "default": 6,
+    "declaredIn": "src/vendor/magicui/border-beam.tsx"
+   },
+   "colorFrom": {
+    "prop": "BorderBeam.colorFrom",
+    "name": "colorFrom",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "doc": "The color of the border beam from.",
+    "default": "#ffaa40",
+    "declaredIn": "src/vendor/magicui/border-beam.tsx"
+   },
+   "colorTo": {
+    "prop": "BorderBeam.colorTo",
+    "name": "colorTo",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "doc": "The color of the border beam to.",
+    "default": "#9c40ff",
+    "declaredIn": "src/vendor/magicui/border-beam.tsx"
+   },
+   "borderWidth": {
+    "prop": "BorderBeam.borderWidth",
+    "name": "borderWidth",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "The border width of the beam.",
+    "default": 1,
+    "declaredIn": "src/vendor/magicui/border-beam.tsx"
+   },
+   "reverse": {
+    "prop": "BorderBeam.reverse",
+    "name": "reverse",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "doc": "Whether to reverse the animation direction.",
+    "default": false,
+    "declaredIn": "src/vendor/magicui/border-beam.tsx"
+   }
+  },
+  "counts": {
+   "BorderBeam": 11
+  }
+ },
+ "shimmer-button": {
+  "params": {
+   "shimmerColor": {
+    "prop": "ShimmerButton.shimmerColor",
+    "name": "shimmerColor",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "default": "#ffffff",
+    "declaredIn": "src/vendor/magicui/shimmer-button.tsx"
+   },
+   "shimmerDuration": {
+    "prop": "ShimmerButton.shimmerDuration",
+    "name": "shimmerDuration",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "default": "3s",
+    "declaredIn": "src/vendor/magicui/shimmer-button.tsx"
+   },
+   "shimmerSize": {
+    "prop": "ShimmerButton.shimmerSize",
+    "name": "shimmerSize",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "default": "0.05em",
+    "declaredIn": "src/vendor/magicui/shimmer-button.tsx"
+   },
+   "borderRadius": {
+    "prop": "ShimmerButton.borderRadius",
+    "name": "borderRadius",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "default": "100px",
+    "declaredIn": "src/vendor/magicui/shimmer-button.tsx"
+   },
+   "background": {
+    "prop": "ShimmerButton.background",
+    "name": "background",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "default": "rgba(0, 0, 0, 1)",
+    "declaredIn": "src/vendor/magicui/shimmer-button.tsx"
+   }
+  },
+  "counts": {
+   "ShimmerButton": 7
+  }
+ },
+ "circular-progress": {
+  "params": {
+   "value": {
+    "prop": "AnimatedCircularProgressBar.value",
+    "name": "value",
+    "optional": false,
+    "type": "number",
+    "kind": "number",
+    "default": 0,
+    "declaredIn": "src/vendor/magicui/animated-circular-progress-bar.tsx"
+   },
+   "max": {
+    "prop": "AnimatedCircularProgressBar.max",
+    "name": "max",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 100,
+    "declaredIn": "src/vendor/magicui/animated-circular-progress-bar.tsx"
+   },
+   "gaugePrimaryColor": {
+    "prop": "AnimatedCircularProgressBar.gaugePrimaryColor",
+    "name": "gaugePrimaryColor",
+    "optional": false,
+    "type": "string",
+    "kind": "string",
+    "declaredIn": "src/vendor/magicui/animated-circular-progress-bar.tsx"
+   },
+   "gaugeSecondaryColor": {
+    "prop": "AnimatedCircularProgressBar.gaugeSecondaryColor",
+    "name": "gaugeSecondaryColor",
+    "optional": false,
+    "type": "string",
+    "kind": "string",
+    "declaredIn": "src/vendor/magicui/animated-circular-progress-bar.tsx"
+   }
+  },
+  "counts": {
+   "AnimatedCircularProgressBar": 6
+  }
+ },
+ "dock": {
+  "params": {
+   "iconSize": {
+    "prop": "Dock.iconSize",
+    "name": "iconSize",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 40,
+    "declaredIn": "src/vendor/magicui/dock.tsx"
+   },
+   "iconMagnification": {
+    "prop": "Dock.iconMagnification",
+    "name": "iconMagnification",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 60,
+    "declaredIn": "src/vendor/magicui/dock.tsx"
+   },
+   "iconDistance": {
+    "prop": "Dock.iconDistance",
+    "name": "iconDistance",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "default": 140,
+    "declaredIn": "src/vendor/magicui/dock.tsx"
+   },
+   "disableMagnification": {
+    "prop": "Dock.disableMagnification",
+    "name": "disableMagnification",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "default": false,
+    "declaredIn": "src/vendor/magicui/dock.tsx"
+   },
+   "direction": {
+    "prop": "Dock.direction",
+    "name": "direction",
+    "optional": true,
+    "type": "\"bottom\" | \"top\" | \"middle\"",
+    "kind": "enum",
+    "options": [
+     "bottom",
+     "top",
+     "middle"
+    ],
+    "default": "middle",
+    "declaredIn": "src/vendor/magicui/dock.tsx"
+   }
+  },
+  "counts": {
+   "Dock": 7
+  }
+ },
+ "pixel-loader": {
+  "params": {
+   "cols": {
+    "prop": "PixelLoader.cols",
+    "name": "cols",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "Number of pixel columns",
+    "default": 5,
+    "declaredIn": "src/vendor/fancy/react/src/components/pixel-loader/PixelLoader.tsx"
+   },
+   "rows": {
+    "prop": "PixelLoader.rows",
+    "name": "rows",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "Number of pixel rows",
+    "default": 5,
+    "declaredIn": "src/vendor/fancy/react/src/components/pixel-loader/PixelLoader.tsx"
+   },
+   "cellSize": {
+    "prop": "PixelLoader.cellSize",
+    "name": "cellSize",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "Size of a single pixel in px",
+    "default": 6,
+    "declaredIn": "src/vendor/fancy/react/src/components/pixel-loader/PixelLoader.tsx"
+   },
+   "gap": {
+    "prop": "PixelLoader.gap",
+    "name": "gap",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "Space between pixels in px",
+    "default": 2,
+    "declaredIn": "src/vendor/fancy/react/src/components/pixel-loader/PixelLoader.tsx"
+   },
+   "color": {
+    "prop": "PixelLoader.color",
+    "name": "color",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "doc": "Pixel colour, any CSS colour value",
+    "default": "var(--ft-pixel-color, currentColor)",
+    "declaredIn": "src/vendor/fancy/react/src/components/pixel-loader/PixelLoader.tsx"
+   },
+   "speed": {
+    "prop": "PixelLoader.speed",
+    "name": "speed",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "Duration of one full pulse cycle in seconds",
+    "default": 1.6,
+    "declaredIn": "src/vendor/fancy/react/src/components/pixel-loader/PixelLoader.tsx"
+   }
+  },
+  "counts": {
+   "PixelLoader": 7
+  }
+ },
+ "tick-nav": {
+  "params": {
+   "reach": {
+    "prop": "TickNav.reach",
+    "name": "reach",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "Rows over which the neighbours of the hovered row still react.",
+    "default": 4,
+    "declaredIn": "src/vendor/fancy/react/src/components/tick-nav/TickNav.tsx"
+   },
+   "minorTicks": {
+    "prop": "TickNav.minorTicks",
+    "name": "minorTicks",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "Ruler ticks drawn between two rows.",
+    "default": 2,
+    "declaredIn": "src/vendor/fancy/react/src/components/tick-nav/TickNav.tsx"
+   },
+   "variant": {
+    "prop": "TickNav.variant",
+    "name": "variant",
+    "optional": true,
+    "type": "\"default\" | \"neon\"",
+    "kind": "enum",
+    "options": [
+     "default",
+     "neon"
+    ],
+    "doc": "`\"neon\"` turns the lines into glowing tubes: proximity raises the glow,\na hot beam of light rides every pluck, labels glow on hover, and the\ncurrent line breathes. Made for dark surfaces.",
+    "default": "default",
+    "declaredIn": "src/vendor/fancy/react/src/components/tick-nav/TickNav.tsx"
+   },
+   "hdr": {
+    "prop": "TickNav.hdr",
+    "name": "hdr",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "doc": "Neon only: on a display that reports HDR, draw the light in a WebGPU\ncanvas with extended tone mapping, so the tubes run brighter than SDR\nwhite and the beam peaks around 1000 nits. Elsewhere the CSS glow\nstays on its own.",
+    "default": true,
+    "declaredIn": "src/vendor/fancy/react/src/components/tick-nav/TickNav.tsx"
+   },
+   "sound": {
+    "prop": "TickNav.sound",
+    "name": "sound",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "doc": "Plays a cue each time a mouse or pen plucks a line: `hover` for an\nitem's line, a softer `tick` for a ruler tick. Off by default; only\naudible once the user has enabled sound.",
+    "default": false,
+    "declaredIn": "src/vendor/fancy/react/src/components/tick-nav/TickNav.tsx"
+   }
+  },
+  "counts": {
+   "TickNav": 11
+  }
+ },
+ "stacked-bars": {
+  "params": {
+   "radius": {
+    "prop": "Bar.radius",
+    "name": "radius",
+    "optional": true,
+    "type": "RectRadius",
+    "kind": "other",
+    "doc": "The radius of corners.\n\nIf you provide a single number, it applies to all four corners.\nIf you provide an array of four numbers, they apply to top-left, top-right, bottom-right, bottom-left corners respectively.",
+    "declaredIn": "node_modules/recharts/types/cartesian/Bar.d.ts"
+   },
+   "barCategoryGap": {
+    "prop": "BarChart.barCategoryGap",
+    "name": "barCategoryGap",
+    "optional": true,
+    "type": "string | number",
+    "kind": "other",
+    "doc": "The gap between two bar categories, which can be a percent value or a fixed value.",
+    "default": "10%",
+    "declaredIn": "node_modules/recharts/types/util/types.d.ts"
+   },
+   "layout": {
+    "prop": "BarChart.layout",
+    "name": "layout",
+    "optional": true,
+    "type": "CartesianLayout",
+    "kind": "enum",
+    "options": [
+     "horizontal",
+     "vertical"
+    ],
+    "doc": "The layout of chart defines the orientation of axes, graphical items, and tooltip.",
+    "default": "horizontal",
+    "declaredIn": "node_modules/recharts/types/util/types.d.ts"
+   }
+  },
+  "counts": {
+   "ChartContainer": 2,
+   "Bar": 190,
+   "BarChart": 41
+  }
+ },
+ "flow-canvas": {
+  "params": {
+   "variant": {
+    "prop": "Background.variant",
+    "name": "variant",
+    "optional": true,
+    "type": "BackgroundVariant",
+    "kind": "enum",
+    "options": [
+     "lines",
+     "dots",
+     "cross"
+    ],
+    "doc": "Variant of the pattern.",
+    "default": "BackgroundVariant.Dots",
+    "declaredIn": "node_modules/@xyflow/react/dist/esm/additional-components/Background/types.d.ts"
+   },
+   "gap": {
+    "prop": "Background.gap",
+    "name": "gap",
+    "optional": true,
+    "type": "number | [number, number]",
+    "kind": "other",
+    "doc": "The gap between patterns. Passing in a tuple allows you to control the x and y gap\nindependently.",
+    "default": 20,
+    "declaredIn": "node_modules/@xyflow/react/dist/esm/additional-components/Background/types.d.ts"
+   },
+   "snapToGrid": {
+    "prop": "ReactFlow.snapToGrid",
+    "name": "snapToGrid",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "doc": "When enabled, nodes will snap to the grid when dragged.",
+    "declaredIn": "node_modules/@xyflow/react/dist/esm/types/component-props.d.ts"
+   },
+   "panOnDrag": {
+    "prop": "ReactFlow.panOnDrag",
+    "name": "panOnDrag",
+    "optional": true,
+    "type": "boolean | number[]",
+    "kind": "other",
+    "doc": "Enabling this prop allows users to pan the viewport by clicking and dragging.\nYou can also set this prop to an array of numbers to limit which mouse buttons can activate panning.\nMouse button arrays do not disable touch panning; set this prop to `false` to disable all drag panning.",
+    "default": true,
+    "declaredIn": "node_modules/@xyflow/react/dist/esm/types/component-props.d.ts"
+   }
+  },
+  "counts": {
+   "ReactFlow": 122,
+   "Background": 11
+  }
+ },
+ "resizable-panels": {
+  "params": {
+   "orientation": {
+    "prop": "Group.orientation",
+    "name": "orientation",
+    "optional": true,
+    "type": "\"horizontal\" | \"vertical\"",
+    "kind": "enum",
+    "options": [
+     "horizontal",
+     "vertical"
+    ],
+    "doc": "Specifies the resizable orientation (\"horizontal\" or \"vertical\"); defaults to \"horizontal\"",
+    "default": "horizontal",
+    "declaredIn": "node_modules/react-resizable-panels/dist/react-resizable-panels.d.ts"
+   },
+   "minSize": {
+    "prop": "Panel.minSize",
+    "name": "minSize",
+    "optional": true,
+    "type": "string | number",
+    "kind": "other",
+    "doc": "Minimum size of Panel within its parent group; defaults to 0%.\r\n\r\nℹ️ Interpretation rules:\r\n- Numbers are interpreted as pixels (e.g. `minSize={200}` is 200 pixels)\r\n- Strings without explicit units are interpreted as percentage (e.g. `minSize=\"50\"` is 50 percent)\r\n- Use explicit units (e.g. \"px\", \"",
+    "default": 0,
+    "declaredIn": "node_modules/react-resizable-panels/dist/react-resizable-panels.d.ts"
+   }
+  },
+  "counts": {
+   "Group": 10,
+   "Panel": 14
+  }
+ },
+ "grid-layout": {
+  "params": {
+   "cols": {
+    "prop": "GridLayout.gridConfig.cols",
+    "name": "cols",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "Number of columns in the grid (default: 12)",
+    "default": 12,
+    "declaredIn": "node_modules/react-grid-layout/dist/types-DlzNckle.d.mts"
+   },
+   "rowHeight": {
+    "prop": "GridLayout.gridConfig.rowHeight",
+    "name": "rowHeight",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "doc": "Height of a single row in pixels (default: 150)",
+    "default": 150,
+    "declaredIn": "node_modules/react-grid-layout/dist/types-DlzNckle.d.mts"
+   },
+   "margin": {
+    "prop": "GridLayout.gridConfig.margin",
+    "name": "margin",
+    "optional": true,
+    "type": "readonly [number, number]",
+    "kind": "other",
+    "doc": "[horizontal, vertical] margin between items in pixels (default: [10, 10])",
+    "default": "[10, 10]",
+    "declaredIn": "node_modules/react-grid-layout/dist/types-DlzNckle.d.mts"
+   },
+   "dragEnabled": {
+    "prop": "GridLayout.dragConfig.enabled",
+    "name": "enabled",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "doc": "Whether items can be dragged (default: true)",
+    "default": true,
+    "declaredIn": "node_modules/react-grid-layout/dist/types-DlzNckle.d.mts"
+   },
+   "resizeEnabled": {
+    "prop": "GridLayout.resizeConfig.enabled",
+    "name": "enabled",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "doc": "Whether items can be resized (default: true)",
+    "default": true,
+    "declaredIn": "node_modules/react-grid-layout/dist/types-DlzNckle.d.mts"
+   }
+  },
+  "counts": {
+   "GridLayout": 24
+  }
+ },
+ "date-picker": {
+  "params": {
+   "monthsShown": {
+    "prop": "default.monthsShown",
+    "name": "monthsShown",
+    "optional": true,
+    "type": "number",
+    "kind": "number",
+    "declaredIn": "node_modules/react-datepicker/dist/calendar.d.ts"
+   },
+   "showWeekNumbers": {
+    "prop": "default.showWeekNumbers",
+    "name": "showWeekNumbers",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "declaredIn": "node_modules/react-datepicker/dist/month.d.ts"
+   },
+   "showTimeSelect": {
+    "prop": "default.showTimeSelect",
+    "name": "showTimeSelect",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "declaredIn": "node_modules/react-datepicker/dist/calendar.d.ts"
+   },
+   "calendarStartDay": {
+    "prop": "default.calendarStartDay",
+    "name": "calendarStartDay",
+    "optional": true,
+    "type": "Day",
+    "kind": "number",
+    "declaredIn": "node_modules/react-datepicker/dist/day.d.ts"
+   }
+  },
+  "counts": {
+   "default": 183
+  }
+ },
+ "markdown": {
+  "params": {
+   "children": {
+    "prop": "default.children",
+    "name": "children",
+    "optional": true,
+    "type": "string",
+    "kind": "string",
+    "doc": "Markdown.",
+    "declaredIn": "node_modules/react-markdown/lib/index.d.ts"
+   },
+   "skipHtml": {
+    "prop": "default.skipHtml",
+    "name": "skipHtml",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "doc": "Ignore HTML in markdown completely (default: `false`).",
+    "default": false,
+    "declaredIn": "node_modules/react-markdown/lib/index.d.ts"
+   }
+  },
+  "counts": {
+   "default": 11
+  }
+ }
+}

@@ -64,6 +64,8 @@ function Offers({offers,en}) {
   </div>)}</div>
 }
 export function DiscoveryCard({unit,en,pinned,toggle,isPinned,query,onPreview}) {
+  const codeHref=`#/components?component=${encodeURIComponent(unit.codeResource?.id ?? unit.id)}`
+  const ExcerptElement=onPreview?'button':'a'
   const sections=(en?unit.sectionsEn:unit.sectionsZh)||descriptionSections(en?unit.descriptionEn:unit.descriptionZh)
   const requirements=queryRequirements(query), hasRequirements=Object.values(requirements).some(Boolean)
   const related=(unit.relatedSites||[]).filter(site=>!hasRequirements||(site.offers||[]).some(offer=>offerMatches(requirements,offer)))
@@ -71,10 +73,12 @@ export function DiscoveryCard({unit,en,pinned,toggle,isPinned,query,onPreview}) 
   const tagTone=tag=>['shape','material','color','motion'].some(axis=>unit.tagFacets?.[axis]?.includes(tag))?'style':'comp'
   return <article className="discovery-card">
     {unit.previewUrl&&<div className="discovery-preview">{unit.previewKind==='image'?(onPreview?<button className="discovery-preview-button" onClick={onPreview} aria-label={`${en?'Enlarge preview':'放大预览'} · ${en?unit.nameEn:unit.nameZh}`}><img src={unit.previewUrl} alt={en?unit.nameEn:unit.nameZh} loading="lazy"/></button>:<img src={unit.previewUrl} alt={en?unit.nameEn:unit.nameZh} loading="lazy"/>):<iframe loading="lazy" sandbox="" src={unit.previewUrl} title={`${en?'Live preview':'实时预览'} · ${en?unit.nameEn:unit.nameZh}`}/>}</div>}
+    {!unit.previewUrl && unit.codeResource?.excerpt && <ExcerptElement type={onPreview?'button':undefined} href={onPreview?undefined:codeHref} className="discovery-code-excerpt discovery-preview" onClick={onPreview} aria-label={`${en?'View source':'查看源码'} · ${en?unit.nameEn:unit.nameZh}`}><pre><code>{unit.codeResource.excerpt}</code></pre></ExcerptElement>}
     <div className="discovery-card-body">
       {unit.matchStatus && <p className="discovery-notice">{unit.matchStatus==='confirmed'?(en?'Jev confirmed':'Jev 已确认'):(en?'Preliminary candidate · awaiting Jev review':'初筛候选 · 待 Jev 判断')}</p>}
       <div className="discovery-card-heading"><div className="discovery-title-line"><h3>{en?unit.nameEn:unit.nameZh}</h3><div className="discovery-tags">{tags.map(tag=><span className={`discovery-tag-${tagTone(tag)}`} key={tag}>{tag}</span>)}</div></div>{toggle&&<button type="button" aria-pressed={pinned} aria-label={`${pinned?(en?'Unpin':'取消保留'):(en?'Pin':'保留')} ${en?unit.nameEn:unit.nameZh}`} onClick={()=>toggle(unit.id)}>{pinned?'✓':'+'}</button>}</div>
       <dl className="discovery-description">{sections.map((section,i)=><div key={i}>{section.label&&<dt>{section.label}{en?':':'：'}</dt>}<dd>{en && section.label ? ' ' : ''}<ColorText text={section.text}/></dd></div>)}</dl>
+      {unit.codeResource && (onPreview?<button className="library-text-link discovery-code-open" type="button" onClick={onPreview}>{en?'Preview & source':'预览与源码'}</button>:<a className="library-text-link discovery-code-open" href={codeHref}>{en?'Preview & source':'预览与源码'}</a>)}
       {unit.kind==='image-prompt'&&unit.detailUrl&&<a className="discovery-source" href={unit.detailUrl}>{unit.resourceType==='skill'?(en?'View Skill & examples':'查看 Skill 与效果'):(en?'View & copy prompt':'查看并复制提示词')}</a>}
       {unit.kind==='atlas-effect'?<div className="discovery-related">
         <p className="discovery-related-label">{en?'Original websites with this pattern':'包含这类效果的原网站'}</p>
