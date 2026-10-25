@@ -1,6 +1,6 @@
 # Third-party sample notices
 
-The 23 bundled examples retain their original-source links. 9 source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 17 entries render their archived source.
+The 24 bundled examples retain their original-source links. 10 source repositories use the MIT grant; the complete license bytes retrieved at the pinned commits are preserved below. Registry source snapshots are preserved byte-for-byte in `src/vendor`; their snapshot hashes are recorded in the export inventory. npm runtime versions are pinned in `package-lock.json`, and npm packages retain their own license notices. The 6 screenshot examples are visual references with direct original-site links; this notice does not assign an open-source license to those screenshots. The remaining 18 entries render their archived source.
 
 ## magicuidesign/magicui
 
@@ -73,3 +73,11 @@ The 23 bundled examples retain their original-source links. 9 source repositorie
 - Original license: [licenses/Gosrock--Ticket-Storybook-21st--09e4c43ca0c6.txt](https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/LICENSE)
 - Complete local license: [licenses/Gosrock--Ticket-Storybook-21st--09e4c43ca0c6.txt](licenses/Gosrock--Ticket-Storybook-21st--09e4c43ca0c6.txt)
 - License SHA-256: `3152b68baafd4c20b6f3595e618dea2294076d96cee67de883badb70c6ffb5c8`
+
+## devaradise/paradise-ui
+
+- License: MIT
+- Repository commit: `95bd51bf882dc60f0a24cfdb8e6361e12353d5d5`
+- Original license: [licenses/devaradise--paradise-ui--95bd51bf882d.txt](https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE)
+- Complete local license: [licenses/devaradise--paradise-ui--95bd51bf882d.txt](licenses/devaradise--paradise-ui--95bd51bf882d.txt)
+- License SHA-256: `09978c52d9e231569dd5054bc859413288bd257148859733c04ef7d464831d82`

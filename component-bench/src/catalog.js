@@ -8,6 +8,8 @@
 // against the component's own TypeScript types and fails if a prop does not exist.
 // `demo: true` marks a parameter that only changes the demo content, not a prop.
 
+import PARADISE_ALERT_SOURCE from './generated/paradise-alert-source.json' with { type: 'json' }
+
 export const CATEGORIES = [
   { id: 'data', zh: '数据展示', en: 'Data display' },
   { id: 'surface', zh: '背景与边框', en: 'Backgrounds & borders' },
@@ -376,4 +378,42 @@ CATALOG.push({
   ],
   verification: 'actual-source-render-and-browser-verified',
   previewVerification: 'The original SmallTest story was run in an isolated browser. Its DOM, CSS, hover, keyboard focus, Enter and pointer click states were inspected; the default poster is a real 800×500 browser capture.',
+})
+
+const paradiseAlertStory = 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/packages/components/Alert/stories/Alert.stories.tsx#L153'
+CATALOG.push({
+  id: 'paradise-alert-custom-content',
+  lane: 'github',
+  category: 'feedback',
+  fill: 'light',
+  zh: '可关闭自定义内容提示框',
+  en: 'Closable custom-content alert',
+  summaryZh: 'Paradise UI 的 AlertWithCustomContent 原始 story：信息提示框含标题和正文，右侧关闭按钮淡出后收起。',
+  summaryEn: 'The original AlertWithCustomContent story: an info alert with a heading, body copy and a close control that fades out before removal.',
+  tags: ['提示', '信息', '关闭', '自定义内容', 'alert', 'feedback', 'closeable', 'custom content'],
+  source: {
+    site: 'Paradise UI', home: 'https://github.com/devaradise/paradise-ui', repo: 'devaradise/paradise-ui',
+    commit: '95bd51bf882dc60f0a24cfdb8e6361e12353d5d5', license: 'MIT',
+    licenseUrl: 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE',
+    licenseCheckedAt: '2026-10-25T07:09:15.134952+00:00', page: paradiseAlertStory,
+    install: 'npm install @paradise-ui/alert@1.0.0-beta.2',
+    files: Object.keys(PARADISE_ALERT_SOURCE.fileOrigins),
+    fileOrigins: PARADISE_ALERT_SOURCE.fileOrigins,
+  },
+  module: './vendor/paradise-ui/packages/components/Alert/src/Alert', api: ['Alert'], packages: ['clsx'],
+  offer: {
+    id: 'source-seed-paradise-alert-custom-content', verified: true, checkedAt: '2026-10-25T07:09:15.134952+00:00',
+    subject: 'source-code', scope: 'Exact pinned AlertWithCustomContent story, component, styles and required source dependencies',
+    access: 'free', sourceAvailable: true, sourceUrl: paradiseAlertStory, sourceCost: 'free', openSource: true,
+    commercialUse: true, license: 'MIT', licenseUrl: 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE',
+    evidenceUrls: [paradiseAlertStory, 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/packages/components/Alert/src/Alert.tsx', 'https://github.com/devaradise/paradise-ui/blob/95bd51bf882dc60f0a24cfdb8e6361e12353d5d5/LICENCE'],
+  },
+  exampleArgs: { variant: 'subtle', type: 'info', closeable: true },
+  params: [
+    { key: 'variant', prop: 'Alert.variant', control: 'segmented', default: 'subtle', options: ['subtle', 'solid', 'outlined', 'left-bordered'], labelZh: '样式', labelEn: 'Variant' },
+    { key: 'type', prop: 'Alert.type', control: 'segmented', default: 'info', options: ['info', 'success', 'warning', 'error'], labelZh: '类型', labelEn: 'Type' },
+    { key: 'closeable', prop: 'Alert.closeable', control: 'toggle', default: true, labelZh: '可关闭', labelEn: 'Closeable' },
+  ],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The pinned AlertWithCustomContent story was run in an isolated browser with its original component, exact SCSS and content. The 800×500 real-render poster was visually checked; clicking Close removed the alert after its fade-out.',
 })

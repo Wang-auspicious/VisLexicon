@@ -1,0 +1,160 @@
+$colors: 
+  'info' #008DDA #d9eef9 #001521,
+  'success' #40b64f #e2f4e5 #0a1b0c,
+  'warning' #FBA834 #fef2e1 #261908,
+  'error' #e74747 #fbe3e3 #230b0b
+;
+
+.pui-alert {
+  width:100%;
+  color: var(--pui-text, #31333e);
+  font-size: 1rem;
+  padding: .875rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  gap:.625rem;
+  overflow: hidden;
+  max-height: 100%;
+  transition: all .3s ease-out;
+  * {
+    box-sizing: border-box;
+  }
+  &__icon {
+    flex-shrink: 0;
+    height:1.5rem;
+    width: 1.5rem;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content {
+    font-size: .875rem;
+    line-height: 1.625;
+    flex-grow: 1;
+  }
+  &__close-icon {
+    flex-shrink: 0;
+    height:1.5rem;
+    width: 1.5rem;
+    padding: .2rem;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+    &:hover {
+      background-color: rgba(100,100,100, .075);
+    }
+  }
+
+  &--hidden {
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height: 0;
+  }
+
+  &--subtle {
+    @each $colorName, $colorHex, $lighten, $darken in $colors {
+      &.pui-alert--#{$colorName} {
+        background-color: var(--pui-#{$colorName}-lighten, $lighten);
+        color: var(--pui-#{$colorName}-darken, $darken);
+        .pui-alert__icon svg {
+          fill: var(--pui-#{$colorName}, $colorHex);
+        }
+        .pui-alert__close-icon svg{
+          fill:  var(--pui-#{$colorName}-darken, $darken);
+        }
+      } 
+    }
+  }
+
+  &--solid {
+    color: #fff;
+    .pui-alert__icon svg, .pui-alert__close-icon svg {
+      fill: #fff;
+    }
+    @each $colorName, $colorHex, $lighten, $darken in $colors {
+      &.pui-alert--#{$colorName} {
+        background-color: var(--pui-#{$colorName}, $colorHex);
+      } 
+    }
+  }
+
+  &--outlined {
+    @each $colorName, $colorHex, $lighten, $darken in $colors {
+      &.pui-alert--#{$colorName} {
+        border:1px solid var(--pui-#{$colorName}, $colorHex);
+        color: var(--pui--#{$colorName}-darken, $darken);
+        svg {
+          fill: var(--pui-#{$colorName}, $colorHex);
+        }
+      }
+    }
+  }
+
+  &--left-bordered {
+    @each $colorName, $colorHex, $lighten, $darken in $colors {
+      &.pui-alert--#{$colorName} {
+        border-left: 5px solid var(--pui-#{$colorName}, $colorHex);
+        background-color: var(--pui-#{$colorName}-lighten, $lighten);
+        color: var(--pui-#{$colorName}-darken, $darken);
+        .pui-alert__icon svg {
+          fill: var(--pui-#{$colorName}, $colorHex);
+        }
+        .pui-alert__close-icon svg{
+          fill:  var(--pui-#{$colorName}-darken, $darken);
+        }
+      }
+    }
+  }
+
+
+  .pui-dark-mode & {
+    &__close-icon {
+      &:hover {
+        background-color: rgba(255,255,255, .075);
+      }
+    }
+    &--subtle, &--left-bordered {
+      @each $colorName, $colorHex, $lighten, $darken in $colors {
+        &.pui-alert--#{$colorName} {
+          background-color: var(--pui-#{$colorName}-darken, $darken);
+          color: var(--pui-#{$colorName}-lighten, $lighten);
+          .pui-alert__close-icon svg{
+            fill:  var(--pui-#{$colorName}-lighten, $lighten);
+          }
+        }
+      } 
+    }
+    &--solid {
+      @each $colorName, $colorHex, $lighten, $darken in $colors {
+        &.pui-alert--#{$colorName} {
+          color: var(--pui-#{$colorName}-darken, $darken);
+          .pui-alert__icon svg, .pui-alert__close-icon svg {
+            fill:  var(--pui-#{$colorName}-darken, $darken);
+          }
+        }
+      }
+    }
+    &--outlined {
+      @each $colorName, $colorHex, $lighten, $darken in $colors {
+        &.pui-alert--#{$colorName} {
+          color: var(--pui-#{$colorName}-lighten, $lighten);
+          .pui-alert__close-icon svg {
+            fill:  var(--pui-#{$colorName}-lighten, $lighten);
+          }
+        }
+      }
+    }
+  }
+}

@@ -821,5 +821,48 @@
   "counts": {
    "Button": 5
   }
+ },
+ "paradise-alert-custom-content": {
+  "params": {
+   "variant": {
+    "prop": "Alert.variant",
+    "name": "variant",
+    "optional": true,
+    "type": "AlertVariant",
+    "kind": "enum",
+    "options": [
+     "subtle",
+     "solid",
+     "outlined",
+     "left-bordered"
+    ],
+    "declaredIn": "src/vendor/paradise-ui/packages/components/Alert/src/type.ts"
+   },
+   "type": {
+    "prop": "Alert.type",
+    "name": "type",
+    "optional": true,
+    "type": "SemanticColorType",
+    "kind": "enum",
+    "options": [
+     "error",
+     "info",
+     "success",
+     "warning"
+    ],
+    "declaredIn": "src/vendor/paradise-ui/packages/components/Alert/src/type.ts"
+   },
+   "closeable": {
+    "prop": "Alert.closeable",
+    "name": "closeable",
+    "optional": true,
+    "type": "boolean",
+    "kind": "boolean",
+    "declaredIn": "src/vendor/paradise-ui/packages/components/Alert/src/type.ts"
+   }
+  },
+  "counts": {
+   "Alert": 8
+  }
  }
 }

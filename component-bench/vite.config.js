@@ -15,6 +15,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss(), componentBenchPlugin({ serveBench: false }), jevSearchPlugin()],
   resolve: {
     alias: [
+      { find: '@paradise-ui/common', replacement: path.join(ROOT, 'src/vendor/paradise-ui/packages/common/src/index.ts') },
       // Magic UI and shadcn import their helper as @/lib/utils or "cn".
       { find: /^@\//, replacement: path.join(ROOT, 'src/vendor') + '/' },
       { find: /^cn$/, replacement: path.join(ROOT, 'src/vendor/lib/utils.ts') },
