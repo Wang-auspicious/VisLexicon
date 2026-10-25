@@ -347,3 +347,33 @@ CATALOG.push({
   verification: 'actual-source-render-and-browser-verified',
   previewVerification: 'The original Secondary story was run in an isolated browser. Its DOM, CSS, hover, keyboard focus, Enter and pointer click states were inspected; the default poster is a real 800×500 browser capture.',
 })
+
+CATALOG.push({
+  ...gosrockLarge,
+  id: 'gosrock-button-small',
+  zh: '小号描边按钮',
+  en: 'Small outlined button',
+  summaryZh: 'Ticket Storybook 的 SmallTest story：透明底、深灰字和内描边，采用原组件 small 尺寸；原例文字为“按钮”。',
+  summaryEn: 'The original SmallTest story uses the component’s small size, transparent fill, dark text and inset outline.',
+  tags: ['按钮', '胶囊', '描边', '小号', 'button', 'pill', 'outlined', 'small'],
+  source: { ...gosrockLarge.source, page: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.stories.jsx#L37' },
+  offer: {
+    ...gosrockLarge.offer,
+    id: 'source-seed-gosrock-button-small',
+    scope: 'Exact pinned Button SmallTest story and its component/CSS files',
+    sourceUrl: 'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.stories.jsx#L37',
+    evidenceUrls: [
+      'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.stories.jsx#L37',
+      'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/src/stories/Button/Button.jsx',
+      'https://github.com/Gosrock/Ticket-Storybook-21st/blob/09e4c43ca0c6fa9aac4f612fbc8709e0dd8ccc54/LICENSE',
+    ],
+  },
+  exampleArgs: { size: 'small', label: '버튼' },
+  params: [
+    { key: 'size', prop: 'Button.size', control: 'segmented', default: 'small', options: ['small', 'medium', 'large'], labelZh: '尺寸', labelEn: 'Size' },
+    { key: 'primary', prop: 'Button.primary', control: 'toggle', default: false, labelZh: '主按钮', labelEn: 'Primary' },
+    { key: 'label', prop: 'Button.label', control: 'text', default: '버튼', labelZh: '按钮文字', labelEn: 'Label' },
+  ],
+  verification: 'actual-source-render-and-browser-verified',
+  previewVerification: 'The original SmallTest story was run in an isolated browser. Its DOM, CSS, hover, keyboard focus, Enter and pointer click states were inspected; the default poster is a real 800×500 browser capture.',
+})
