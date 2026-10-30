@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-5a52b8de72668b1b
+releaseId: release-ac8cf2cda493f6af
 revision: e6c221257692df17ef59426cf5d415850868d2a839eee84b0fb5f3e2ee64d1f6
 status: APPROVED
 name: "Appica UI"

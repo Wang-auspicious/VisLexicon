@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-5a52b8de72668b1b
+releaseId: release-ac8cf2cda493f6af
 revision: 34835532a34670ee85301353f042f6c5537114e0a5196fc50dfa57c93e08fb32
 status: APPROVED
 name: "Aceternity UI Svelte"

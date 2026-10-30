@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-5a52b8de72668b1b
+releaseId: release-ac8cf2cda493f6af
 revision: 9e10c9f32afd21bf8a4ad39a290c6d73aa8e6277bdba38a3be309b2521d0e415
 status: APPROVED
 name: "All SVG Icons"
