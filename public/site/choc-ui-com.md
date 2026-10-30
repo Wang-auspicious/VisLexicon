@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ac8cf2cda493f6af
+releaseId: release-78922d67ab547862
 revision: 1098b337bc39dcb2c354f8f28a19682d325d187f3bdb8d6a1e9eec9760362138
 status: APPROVED
 name: "Choc UI"

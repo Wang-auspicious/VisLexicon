@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ac8cf2cda493f6af
+releaseId: release-78922d67ab547862
 revision: 01965a553c284d8db956bfa0591801bbefde6a6897e6b580207c046b04eb4423
 status: APPROVED
 name: "ARC UI"

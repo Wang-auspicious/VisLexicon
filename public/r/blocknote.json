@@ -1,0 +1,194 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-78922d67ab547862",
+  "revision": "085418e501e3f344ec4037c1395cf64bc560e5ff6073cdd034e2ca02d649f0d1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "blocknote",
+  "entityId": "entity-blocknote",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://www.blocknotejs.org",
+    "finalUrl": "https://www.blocknotejs.org/",
+    "checkedAt": "2026-10-07T17:51:12.237Z"
+  },
+  "editorial": {
+    "name": "BlockNote",
+    "descriptionZh": "BlockNote 为 React 应用提供块式富文本编辑器，包含斜杠菜单、格式工具栏和拖动块的界面，可扩展块类型与菜单。引言按文档结构、Schemas、协作和导入导出组织说明，Demo 展示已有正文、分享和评论区域。核心编辑器与 XL 扩展的许可条件不同，采用 AI 或文件导出功能时应核对对应包。",
+    "descriptionEn": null,
+    "takeawayZh": "先确认块编辑与扩展 API 是否适合产品，再单独核对所用 XL 包的条件。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "当前官网明确为 React 的块式富文本编辑器，文档与 Demo 展示可嵌入应用的编辑界面、文档块及扩展 API。它主要交付编辑复合控件，不把当前官网 AI 场景或伙伴服务改作整站主类。",
+        "evidenceUrl": "https://www.blocknotejs.org/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T19:56:52.785Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.blocknotejs.org/",
+      "finalUrl": "https://www.blocknotejs.org/",
+      "title": "BlockNote - Javascript Block-Based React rich text editor",
+      "selectionRationale": "首页产品名称、React 与块编辑定位可读；编辑器展示区不是空白加载框。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/blocknote/graph-606b4a728249fe6fd57655ad-identity.png",
+        "sha256": "606b4a728249fe6fd57655ad63671d9dd5be79c184b42e376d3c1ac728157638",
+        "bytes": 123447,
+        "width": 1280,
+        "height": 900,
+        "alt": "BlockNote：首页产品名称、React 与块编辑定位可读；编辑器展示区不是空白加载框。",
+        "display": {
+          "full": "https://vislexicon.com/shots/blocknote/graph-606b4a728249fe6fd57655ad-identity.webp",
+          "card": "https://vislexicon.com/shots/blocknote/graph-606b4a728249fe6fd57655ad-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.blocknotejs.org/docs",
+      "finalUrl": "https://www.blocknotejs.org/docs",
+      "title": "BlockNote - Introduction",
+      "selectionRationale": "Introduction 说明文档块、定制块类型和 UI 扩展，侧栏显示协作/导入导出范围。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/blocknote/graph-8c9f2926655a406c1ee7e9e3-breadth.png",
+        "sha256": "8c9f2926655a406c1ee7e9e39e7cb2f9753b13b9d87579fd2c629c6bd373041e",
+        "bytes": 98066,
+        "width": 1280,
+        "height": 900,
+        "alt": "BlockNote：Introduction 说明文档块、定制块类型和 UI 扩展，侧栏显示协作/导入导出范围。",
+        "display": {
+          "full": "https://vislexicon.com/shots/blocknote/graph-8c9f2926655a406c1ee7e9e3-breadth.webp",
+          "card": "https://vislexicon.com/shots/blocknote/graph-8c9f2926655a406c1ee7e9e3-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.blocknotejs.org/demo",
+      "finalUrl": "https://www.blocknotejs.org/demo",
+      "title": "BlockNote - Javascript Block-Based React rich text editor",
+      "selectionRationale": "Demo 已渲染 Welcome 正文与格式文本，Share/Export 和评论侧栏可见；未执行协作、AI 或导出。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/blocknote/graph-1ff05399cd3ba651f3452627-proof.png",
+        "sha256": "1ff05399cd3ba651f3452627f5c3973158823c69bc80eb05191be50e1839af0c",
+        "bytes": 54450,
+        "width": 1280,
+        "height": 900,
+        "alt": "BlockNote：Demo 已渲染 Welcome 正文与格式文本，Share/Export 和评论侧栏可见；未执行协作、AI 或导出。",
+        "display": {
+          "full": "https://vislexicon.com/shots/blocknote/graph-1ff05399cd3ba651f3452627-proof.webp",
+          "card": "https://vislexicon.com/shots/blocknote/graph-1ff05399cd3ba651f3452627-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "React 块式富文本编辑器",
+      "claim": "当前首页直接说明产品与 React 定位，未由此扩大整站开源许可。",
+      "sourceUrl": "https://www.blocknotejs.org/",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "当前首页直接说明产品与 React 定位，未由此扩大整站开源许可。"
+    },
+    {
+      "field": "integrationScope",
+      "value": "文档块、Schemas、菜单与协作等扩展说明",
+      "claim": "引言把文档结构、扩展块与用户界面定制放在同一产品范围。",
+      "sourceUrl": "https://www.blocknotejs.org/docs",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "引言把文档结构、扩展块与用户界面定制放在同一产品范围。"
+    },
+    {
+      "field": "nativeEditorExample",
+      "value": "有正文、格式和分享/评论区域的 Demo",
+      "claim": "原站 Demo 已渲染真实编辑内容，评论侧栏与工具区域可见。",
+      "sourceUrl": "https://www.blocknotejs.org/demo",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "原站 Demo 已渲染真实编辑内容，评论侧栏与工具区域可见。"
+    },
+    {
+      "field": "licensingScope",
+      "value": "XL 包的闭源项目采用条件独立于核心编辑器",
+      "claim": "当前完整 HTTP 正文分别列出 Core Editor 与 XL Packages 条件；不拼接为统一免费授权。",
+      "sourceUrl": "https://www.blocknotejs.org/",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "当前完整 HTTP 正文分别列出 Core Editor 与 XL Packages 条件；不拼接为统一免费授权。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/blocknote",
+    "designMdUrl": "https://vislexicon.com/site/blocknote.md",
+    "checkedAt": "2026-10-07T17:51:12.237Z",
+    "license": "unknown"
+  }
+}

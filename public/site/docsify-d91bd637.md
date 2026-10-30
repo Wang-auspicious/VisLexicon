@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ac8cf2cda493f6af
+releaseId: release-78922d67ab547862
 revision: 36c98c7161e204db3a4676d946eaaa53ec028fe9fcdafaec30ef28e825cf7f77
 status: APPROVED
 name: docsify

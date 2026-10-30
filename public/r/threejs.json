@@ -1,0 +1,203 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-78922d67ab547862",
+  "revision": "fb0d29ca586cfede7b780e853f5697027d58640fc87816fd13df5ae4eb826fd6",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "threejs",
+  "entityId": "entity-three-js",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://threejs.org",
+    "finalUrl": "https://threejs.org/",
+    "checkedAt": "2026-10-07T18:55:41.657Z"
+  },
+  "editorial": {
+    "name": "three.js",
+    "descriptionZh": "three.js 的官网连接三维实现文档、原站例子与代码入口，Docs 按动画、相机、几何、材质和加载器等 API 组织范围。当前 animation/keyframes 例子完整显示 Littlest Tokyo 建筑模型，包括底座、交通与屋顶招财猫，并给出模型作者归属。可以沿具体例子查实现，再对应所需 API；页面 FPS 计数是原站叠层，没有作为本轮性能测量。",
+    "descriptionEn": null,
+    "takeawayZh": "先选具体三维例子，再沿所需相机、材质和动画API读实现。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "three-d-spatial-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官方代码/例子入口与完整原生三维场景支持空间实现库主类；主页外部作品网格是相关展示，不据此改成案例目录或把模型许可泛化到实现库。",
+        "evidenceUrl": "https://threejs.org/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T20:21:13.432Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "preview",
+      "download"
+    ],
+    "media": [
+      "3d"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "three-js",
+      "webgl"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://threejs.org/",
+      "finalUrl": "https://threejs.org/",
+      "title": "Three.js – JavaScript 3D Library",
+      "selectionRationale": "当前官网明确 Three.js – JavaScript 3D Library 与版本标识，保留项目范围。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/threejs/graph-6130e973aad08341ad44e2e7-identity.png",
+        "sha256": "6130e973aad08341ad44e2e7bfb2b365ca1641c570071065bac72956a2d3a7d4",
+        "bytes": 1752833,
+        "width": 1440,
+        "height": 1000,
+        "alt": "three.js：当前官网明确 Three.js – JavaScript 3D Library 与版本标识，保留项目范围。",
+        "display": {
+          "full": "https://vislexicon.com/shots/threejs/graph-6130e973aad08341ad44e2e7-identity.webp",
+          "card": "https://vislexicon.com/shots/threejs/graph-6130e973aad08341ad44e2e7-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://threejs.org/docs/",
+      "finalUrl": "https://threejs.org/docs/",
+      "title": "three.js docs",
+      "selectionRationale": "当前官网 documentation 直接链接的完整API文档是范围角色，不能用单个场景说明代替整个库的范围。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/threejs/graph-245b214fc61c0030390d8168-breadth.png",
+        "sha256": "245b214fc61c0030390d81680dafc93b6fb78143f08dd973b36097961cda48d8",
+        "bytes": 61366,
+        "width": 1440,
+        "height": 1000,
+        "alt": "three.js：当前官网 documentation 直接链接的完整API文档是范围角色，不能用单个场景说明代替整个库的范围。",
+        "display": {
+          "full": "https://vislexicon.com/shots/threejs/graph-245b214fc61c0030390d8168-breadth.webp",
+          "card": "https://vislexicon.com/shots/threejs/graph-245b214fc61c0030390d8168-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://threejs.org/examples/#webgl_animation_keyframes",
+      "finalUrl": "https://threejs.org/examples/#webgl_animation_keyframes",
+      "title": "three.js examples",
+      "selectionRationale": "当前官网顶部 examples 的完整 href 直接指定 webgl_animation_keyframes，是真实场景选择状态；需完整 loaded 3D scene，不是仅左侧 examples 索引或WebGL错误。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/threejs/graph-5c538a909aae2dc72bcc6320-proof.png",
+        "sha256": "5c538a909aae2dc72bcc632058a33e48a5a3119d3a296b410ca6088e117b29ab",
+        "bytes": 1052602,
+        "width": 1440,
+        "height": 1000,
+        "alt": "three.js：当前官网顶部 examples 的完整 href 直接指定 webgl_animation_keyframes，是真实场景选择状态；需完整 loaded 3D scene，不是仅左侧 examples 索引或WebGL错误。",
+        "display": {
+          "full": "https://vislexicon.com/shots/threejs/graph-5c538a909aae2dc72bcc6320-proof.webp",
+          "card": "https://vislexicon.com/shots/threejs/graph-5c538a909aae2dc72bcc6320-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "sourceIdentity",
+      "value": "three.js项目",
+      "sourceUrl": "https://threejs.org/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "e6c9155648b95511e6b4f81fb5e0476ac4a8e5da57a10a9b9ac03c11b996e711",
+      "evidence": "three.js"
+    },
+    {
+      "field": "codeEntry",
+      "value": "GitHub与下载入口",
+      "sourceUrl": "https://threejs.org/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "e6c9155648b95511e6b4f81fb5e0476ac4a8e5da57a10a9b9ac03c11b996e711",
+      "evidence": "github download"
+    },
+    {
+      "field": "apiScope",
+      "value": "动画、相机、几何与加载器文档",
+      "sourceUrl": "https://threejs.org/docs/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "916cd7a899447f01a81690c8b780e1e5a40ddc9b05033b8efd496ee87e1040aa",
+      "evidence": "AnimationAction"
+    },
+    {
+      "field": "nativeExample",
+      "value": "完整Littlest Tokyo关键帧场景",
+      "sourceUrl": "https://threejs.org/examples/#webgl_animation_keyframes",
+      "quoteBasis": "personally read current bound original role image at full size; parent DOM does not include iframe text",
+      "domSha256": "a3f415929af4ade73072fe97a9a929a36663fd4b1d508dc083d369d2a4b8b1ce",
+      "evidence": "Littlest Tokyo"
+    },
+    {
+      "field": "modelAttribution",
+      "value": "模型由Glen Fox提供，原站标注CC Attribution",
+      "sourceUrl": "https://threejs.org/examples/#webgl_animation_keyframes",
+      "quoteBasis": "personally read current bound original role image at full size; parent DOM does not include iframe text",
+      "domSha256": "a3f415929af4ade73072fe97a9a929a36663fd4b1d508dc083d369d2a4b8b1ce",
+      "evidence": "by Glen Fox, CC Attribution."
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/threejs",
+    "designMdUrl": "https://vislexicon.com/site/threejs.md",
+    "checkedAt": "2026-10-07T18:55:41.657Z",
+    "license": "unknown"
+  }
+}

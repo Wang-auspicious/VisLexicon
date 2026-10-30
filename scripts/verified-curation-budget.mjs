@@ -2,6 +2,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 import {createHash} from 'node:crypto'
 
+const isSha256 = value => typeof value === 'string' && /^[a-f0-9]{64}$/.test(value)
+
 // The additional allowance is limited to the user's independently reviewed batch.
 // Raw observations, queues and unreviewed corpus exports receive no allowance.
 export function verifiedCurationAllowance(root, siteIndex, release = {}) {
@@ -89,6 +91,48 @@ export function verifiedCurationAllowance(root, siteIndex, release = {}) {
           || !/^[a-f0-9]{64}$/.test(shot.sha256)) fail('site-proof screenshot identity mismatch')
         const bytes = fs.readFileSync(path.join(root, 'public', shot.src))
         if (createHash('sha256').update(bytes).digest('hex') !== shot.sha256) fail('site-proof screenshot bytes changed')
+      }
+    }
+  }
+  // Swarm-review batches record the 2026-10-07 independent pass decisions. Each
+  // approval is bound to the approved content digest, to the three screenshots
+  // (their sha256 and their current bytes) and to the source record and bundle
+  // hashes. Curator and reviewer identities are stored only as SHA-256 digests,
+  // and the two digests must differ.
+  const swarmFiles = fs.existsSync(siteProofDir)
+    ? fs.readdirSync(siteProofDir).filter(name => /^swarm-review-[a-z0-9-]+\.json$/.test(name)).sort()
+    : []
+  for (const file of swarmFiles) {
+    const swarmPath = path.join(siteProofDir, file)
+    const audit = JSON.parse(fs.readFileSync(swarmPath, 'utf8'))
+    if (audit.batchId !== path.basename(file, '.json') || !Number.isSafeInteger(audit.target) || audit.target < 1 || audit.entries?.length !== audit.target) fail('unexpected swarm-review batch')
+    if (!(new Set([siteIndex.releaseId, ...(release.releaseAncestors || [])])).has(audit.releaseId)) fail('swarm-review batch release mismatch')
+    for (const entry of audit.entries) {
+      if (!/^[a-z0-9][a-z0-9._-]*$/i.test(entry.entryId) || ids.has(entry.entryId)) fail('invalid or duplicate swarm-review entry')
+      ids.add(entry.entryId)
+      if (!isSha256(entry.contentDigest) || entry.contentDigest !== entry.revision || !isSha256(entry.sourceBundleSha256) || !isSha256(entry.reviewSha256)) fail('invalid swarm-review material digest')
+      const review = entry.review
+      if (review?.verdict !== 'pass' || review.independent !== true || !Number.isFinite(Date.parse(review.reviewedAt))
+        || !isSha256(review.curatorHash) || !isSha256(review.reviewerHash) || review.curatorHash === review.reviewerHash
+        || !Array.isArray(review.shotSha256) || review.shotSha256.length !== 3 || !review.shotSha256.every(isSha256)) fail('swarm-review review incomplete')
+      const item = siteIndex.items.find(item => item.entryId === entry.entryId)
+      const detail = JSON.parse(fs.readFileSync(path.join(root, 'public/data/site', entry.entryId + '.json'), 'utf8'))
+      if (item?.status !== 'APPROVED' || item.independentlyReviewed !== true || detail.status !== 'APPROVED'
+        || item.releaseId !== siteIndex.releaseId || item.revision !== entry.revision || detail.revision !== entry.revision || detail.releaseId !== siteIndex.releaseId) fail('swarm-review projection mismatch')
+      const pages = Object.fromEntries((detail.pages || []).map(page => [page.role, page]))
+      const roles = ['identity', 'breadth', 'proof']
+      if (!Array.isArray(entry.screenshots) || entry.screenshots.length !== 3) fail('swarm-review screenshots missing')
+      for (const role of roles) {
+        const shot = entry.screenshots.find(shot => shot.role === role)
+        const actual = pages[role]?.shot
+        const prefix = `/shots/${entry.entryId}/`
+        if (!actual || typeof shot?.src !== 'string' || !shot.src.startsWith(prefix) || shot.src.includes('..') || shot.src.includes('\\')
+          || actual.src !== shot.src || actual.sha256 !== shot.sha256 || !isSha256(shot.sha256)
+          || !Number.isSafeInteger(actual.width) || actual.width < 1 || actual.width !== shot.width
+          || !Number.isSafeInteger(actual.height) || actual.height < 1 || actual.height !== shot.height) fail('swarm-review screenshot identity mismatch')
+        if (review.shotSha256[roles.indexOf(role)] !== shot.sha256) fail('swarm-review review not bound to current screenshots')
+        const bytes = fs.readFileSync(path.join(root, 'public', shot.src))
+        if (createHash('sha256').update(bytes).digest('hex') !== shot.sha256) fail('swarm-review screenshot bytes changed')
       }
     }
   }

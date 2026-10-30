@@ -1,0 +1,193 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-78922d67ab547862",
+  "revision": "4fda2004ce4dbfe592d2a538de52c07f93424ffd08b87971cfd0bd7be96af133",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "ace-editor",
+  "entityId": "entity-ace-editor",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://ace.c9.io",
+    "finalUrl": "https://ace.c9.io/",
+    "checkedAt": "2026-10-07T18:55:41.959Z"
+  },
+  "editorial": {
+    "name": "Ace",
+    "descriptionZh": "Ace 提供可嵌入网页和 JavaScript 应用的代码编辑控件，官网连接嵌入、语法与 API 指南。API 页用关系图说明 Editor、Edit Session、Document 与渲染层，Kitchen Sink 当前原站选择 JavaScript 文档后完整显示十行样本及语法颜色，旁边提供模式、主题和按键设置。可先按嵌入结构接入，再查需要的设置；没有运行样本里的 alert 或测试所有语言模式。",
+    "descriptionEn": null,
+    "takeawayZh": "从编辑器、会话与文档关系理解嵌入，再按项目选择模式和主题。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "主要交付可嵌入网页的复合代码编辑控件，原站真实编辑区域与具体JavaScript文档支持该主类；不是独立IDE应用或构建部署工具。",
+        "evidenceUrl": "https://ace.c9.io/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T20:44:02.595Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ace.c9.io/",
+      "finalUrl": "https://ace.c9.io/",
+      "title": "Ace - The High Performance Code Editor for the Web",
+      "selectionRationale": "当前官网明确 Ace 为可嵌入代码编辑器，首页有实际代码示例与项目身份。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ace-editor/graph-cedf363e5448c23e4a5021e8-identity.png",
+        "sha256": "cedf363e5448c23e4a5021e810b1efbc5155e7e9badaf018d3d562382705bdd2",
+        "bytes": 166324,
+        "width": 1440,
+        "height": 1000,
+        "alt": "Ace：当前官网明确 Ace 为可嵌入代码编辑器，首页有实际代码示例与项目身份。",
+        "display": {
+          "full": "https://vislexicon.com/shots/ace-editor/graph-cedf363e5448c23e4a5021e8-identity.webp",
+          "card": "https://vislexicon.com/shots/ace-editor/graph-cedf363e5448c23e4a5021e8-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ajaxorg.github.io/ace-api-docs/index.html",
+      "finalUrl": "https://ajaxorg.github.io/ace-api-docs/index.html",
+      "title": "Ace API Reference",
+      "selectionRationale": "原站直接链接的 Ace API Reference 展示 Editor/Session/Selection 等编辑器范围，不重复同页装饰性 fragment。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ace-editor/graph-0417f0f034f2c6c8cf0bf5bd-breadth.png",
+        "sha256": "0417f0f034f2c6c8cf0bf5bd949108b0d7463288ec6febf011e6b13482374e7c",
+        "bytes": 148288,
+        "width": 1440,
+        "height": 1000,
+        "alt": "Ace：原站直接链接的 Ace API Reference 展示 Editor/Session/Selection 等编辑器范围，不重复同页装饰性 fragment。",
+        "display": {
+          "full": "https://vislexicon.com/shots/ace-editor/graph-0417f0f034f2c6c8cf0bf5bd-breadth.webp",
+          "card": "https://vislexicon.com/shots/ace-editor/graph-0417f0f034f2c6c8cf0bf5bd-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ace.c9.io/build/kitchen-sink.html",
+      "finalUrl": "https://ace.c9.io/build/kitchen-sink.html",
+      "title": "Ace Kitchen Sink",
+      "selectionRationale": "Kitchen Sink currently opens with no document selected and an empty editor. Choose its actually observed JavaScript Document option through native select to load the original shipped sample, then require visible non-empty code; do not inject or author replacement content.",
+      "shot": {
+        "src": "https://vislexicon.com/shots/ace-editor/graph-7506079f326471ef3fef2206-proof.png",
+        "sha256": "7506079f326471ef3fef22063aae260a019ceb067c0762c5f5dc84e59005b74c",
+        "bytes": 76921,
+        "width": 1440,
+        "height": 1000,
+        "alt": "Ace：Kitchen Sink currently opens with no document selected and an empty editor. Choose its actually observed JavaScript Document option through native select to load the original shipped sample, then require visible non-empty code; do not inject or author replacement content.",
+        "display": {
+          "full": "https://vislexicon.com/shots/ace-editor/graph-7506079f326471ef3fef2206-proof.webp",
+          "card": "https://vislexicon.com/shots/ace-editor/graph-7506079f326471ef3fef2206-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "JavaScript可嵌入代码编辑器",
+      "sourceUrl": "https://ace.c9.io/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "f6b33f8d5c6380bc6296519ab07283d7485be4663d8e58215391e697d08283ed",
+      "evidence": "Ace is an embeddable code editor written in JavaScript."
+    },
+    {
+      "field": "embeddingScope",
+      "value": "网页或JavaScript应用采用",
+      "sourceUrl": "https://ace.c9.io/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "f6b33f8d5c6380bc6296519ab07283d7485be4663d8e58215391e697d08283ed",
+      "evidence": "It can be easily embedded in any web page and JavaScript application."
+    },
+    {
+      "field": "architectureReference",
+      "value": "Editor、会话和文档关系图",
+      "sourceUrl": "https://ajaxorg.github.io/ace-api-docs/index.html",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "38f0fae6360263f85eae67236689ccacb91b41a8149a615426f274a64f0360d2",
+      "evidence": "ERD diagram"
+    },
+    {
+      "field": "nativeExample",
+      "value": "原站JavaScript十行文档和syntax颜色",
+      "sourceUrl": "https://ace.c9.io/build/kitchen-sink.html",
+      "quoteBasis": "personally read current bound original role image at full size; parent DOM does not include iframe text",
+      "domSha256": "06cb19dd281711ebb865da93e6eb849efeab89733db4ff95ffbdcd4a4fbcc708",
+      "evidence": "function foo(items, nada)"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/ace-editor",
+    "designMdUrl": "https://vislexicon.com/site/ace-editor.md",
+    "checkedAt": "2026-10-07T18:55:41.959Z",
+    "license": "unknown"
+  }
+}

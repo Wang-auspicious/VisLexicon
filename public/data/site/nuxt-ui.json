@@ -1,0 +1,240 @@
+{
+  "releaseId": "release-78922d67ab547862",
+  "revision": "b9e793ab50deedb50241578249c7d997a151b850b262ddbc8c73faa23f51a6c9",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "nuxt-ui",
+  "entityId": "entity-nuxt-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "ui.nuxt.com",
+  "official": {
+    "inputUrl": "https://ui.nuxt.com",
+    "finalUrl": "https://ui.nuxt.com/",
+    "checkedAt": "2026-10-07T16:52:21.080Z"
+  },
+  "editorial": {
+    "name": "Nuxt UI",
+    "descriptionZh": "Nuxt UI 提供带类型、主题与配套图标等集成的 Vue 界面组件，官网说明它基于 Reka UI 和 Tailwind CSS。目录覆盖布局、表单、数据、导航与浮层；Button 文档将原绿色按钮与完整的 UButton 默认插槽示例并列，也说明 label 属性。可按 Nuxt 或普通 Vue 项目读对应指南，模板与单个组件的采用范围分开核对。",
+    "descriptionEn": null,
+    "takeawayZh": "先选 Nuxt 或 Vue 接入方式，再用组件文档核对 API 与主题。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "入口交付统一主题和集成能力的 Vue UI 完整组件套件，目录覆盖布局到表单/数据/导航/浮层，原 Button 示例直接给出实现。Nuxt 是可选采用方式，不能把项目名等同仅限 Nuxt；首页模板和关联 AI 文案不改变组件体系主交付物。",
+        "evidenceUrl": "https://ui.nuxt.com/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T21:14:26.160Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "vue",
+      "tailwind",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ui.nuxt.com/",
+      "finalUrl": "https://ui.nuxt.com/",
+      "title": "The Intuitive Vue UI Library - Nuxt UI",
+      "selectionRationale": "Nuxt UI 名称、Vue UI、Nuxt optional、Tailwind/Reka/TypeScript 在原首页清楚；所存版本徽章不是新的截图日期。",
+      "shot": {
+        "src": "/shots/nuxt-ui/graph-ec07b464358144c9168dc598-identity.png",
+        "sha256": "ec07b464358144c9168dc598922d1e20a62322db2d2e5c5760678404b44599da",
+        "bytes": 201492,
+        "width": 1280,
+        "height": 900,
+        "alt": "Nuxt UI：Nuxt UI 名称、Vue UI、Nuxt optional、Tailwind/Reka/TypeScript 在原首页清楚；所存版本徽章不是新的截图日期。",
+        "display": {
+          "full": "/shots/nuxt-ui/graph-ec07b464358144c9168dc598-identity.webp",
+          "card": "/shots/nuxt-ui/graph-ec07b464358144c9168dc598-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ui.nuxt.com/docs/components",
+      "finalUrl": "https://ui.nuxt.com/docs/components",
+      "title": "Vue Components - Nuxt UI",
+      "selectionRationale": "原组件目录的分组与 App/Container/Error 首排存在，下一排 Footer/Header/Main 图片加载失败；不把破图或 Error 组件缩略图当本库运行成功。",
+      "shot": {
+        "src": "/shots/nuxt-ui/graph-ac9e97e6f64dade5ad55abe9-breadth.png",
+        "sha256": "ac9e97e6f64dade5ad55abe92d9a7f7f9c9d8b13b3d3e65c43d7a869cb8f2c50",
+        "bytes": 198133,
+        "width": 1280,
+        "height": 900,
+        "alt": "Nuxt UI：原组件目录的分组与 App/Container/Error 首排存在，下一排 Footer/Header/Main 图片加载失败；不把破图或 Error 组件缩略图当本库运行成功。",
+        "display": {
+          "full": "/shots/nuxt-ui/graph-ac9e97e6f64dade5ad55abe9-breadth.webp",
+          "card": "/shots/nuxt-ui/graph-ac9e97e6f64dade5ad55abe9-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ui.nuxt.com/docs/components/button",
+      "finalUrl": "https://ui.nuxt.com/docs/components/button",
+      "title": "Vue Button Component - Nuxt UI",
+      "selectionRationale": "原 Usage 绿色 Button 与完整三行 template/默认插槽例子都在框内，Label 属性的第二个按钮也可见但其代码下部截断，描述只承诺第一例。",
+      "shot": {
+        "src": "/shots/nuxt-ui/graph-1e03dc93595d8b491844ddf5-proof.png",
+        "sha256": "1e03dc93595d8b491844ddf56e87571ebffdcc1b3f9109dd6e876849b497700e",
+        "bytes": 118815,
+        "width": 1280,
+        "height": 900,
+        "alt": "Nuxt UI：原 Usage 绿色 Button 与完整三行 template/默认插槽例子都在框内，Label 属性的第二个按钮也可见但其代码下部截断，描述只承诺第一例。",
+        "display": {
+          "full": "/shots/nuxt-ui/graph-1e03dc93595d8b491844ddf5-proof.webp",
+          "card": "/shots/nuxt-ui/graph-1e03dc93595d8b491844ddf5-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://ui.nuxt.com/",
+        "selectionRationale": "Nuxt UI 名称、Vue UI、Nuxt optional、Tailwind/Reka/TypeScript 在原首页清楚；所存版本徽章不是新的截图日期。",
+        "shot": {
+          "src": "/shots/nuxt-ui/graph-ec07b464358144c9168dc598-identity.png",
+          "alt": "Nuxt UI：Nuxt UI 名称、Vue UI、Nuxt optional、Tailwind/Reka/TypeScript 在原首页清楚；所存版本徽章不是新的截图日期。",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://ui.nuxt.com/docs/components",
+        "selectionRationale": "原组件目录的分组与 App/Container/Error 首排存在，下一排 Footer/Header/Main 图片加载失败；不把破图或 Error 组件缩略图当本库运行成功。",
+        "shot": {
+          "src": "/shots/nuxt-ui/graph-ac9e97e6f64dade5ad55abe9-breadth.png",
+          "alt": "Nuxt UI：原组件目录的分组与 App/Container/Error 首排存在，下一排 Footer/Header/Main 图片加载失败；不把破图或 Error 组件缩略图当本库运行成功。",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://ui.nuxt.com/docs/components/button",
+        "selectionRationale": "原 Usage 绿色 Button 与完整三行 template/默认插槽例子都在框内，Label 属性的第二个按钮也可见但其代码下部截断，描述只承诺第一例。",
+        "shot": {
+          "src": "/shots/nuxt-ui/graph-1e03dc93595d8b491844ddf5-proof.png",
+          "alt": "Nuxt UI：原 Usage 绿色 Button 与完整三行 template/默认插槽例子都在框内，Label 属性的第二个按钮也可见但其代码下部截断，描述只承诺第一例。",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "带类型与集成的 Vue UI 组件体系",
+      "claim": "本轮完整官网正文直接说明 Vue、类型及 Reka/Tailwind 基础，原首页也标明 TypeScript 和 Nuxt optional。",
+      "sourceUrl": "https://ui.nuxt.com/",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "本轮完整官网正文直接说明 Vue、类型及 Reka/Tailwind 基础，原首页也标明 TypeScript 和 Nuxt optional。"
+    },
+    {
+      "field": "componentScope",
+      "value": "布局、表单、数据、导航与浮层等分组",
+      "claim": "原 Components 页面侧栏与 On this page 清晰列出 Layout、Element、Form、Data、Navigation、Overlay 等；较下方三个预览图破损没有被写成全部加载完成。",
+      "sourceUrl": "https://ui.nuxt.com/docs/components",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "原 Components 页面侧栏与 On this page 清晰列出 Layout、Element、Form、Data、Navigation、Overlay 等；较下方三个预览图破损没有被写成全部加载完成。"
+    },
+    {
+      "field": "nativeButtonExample",
+      "value": "UButton 默认插槽的绿色按钮与完整短例",
+      "claim": "Usage 的完整绿色 Button 与三行 template 短例清楚可见；下方 Label 的代码延续不冒充完整第二段。",
+      "sourceUrl": "https://ui.nuxt.com/docs/components/button",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "Usage 的完整绿色 Button 与三行 template 短例清楚可见；下方 Label 的代码延续不冒充完整第二段。"
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "claim": "当前官网末尾明确项目 MIT；仅限定该库，不据此为字体、图标、模板和第三方示例授予许可。",
+      "sourceUrl": "https://ui.nuxt.com/",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "当前官网末尾明确项目 MIT；仅限定该库，不据此为字体、图标、模板和第三方示例授予许可。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/nuxt-ui.md",
+  "registryUrl": "/r/nuxt-ui.json"
+}

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ac8cf2cda493f6af
+releaseId: release-78922d67ab547862
 revision: 8d3503f0e04e575dafe1f38a0870bbd54ef582ef229ce4fedeed6323f34ba900
 status: APPROVED
 name: Kolors

@@ -1,0 +1,202 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-78922d67ab547862",
+  "revision": "b68c3b780fbd534cc4af62797ca0924b1c93003f88aaaa8270d226128c1a264f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "colorbrewer",
+  "entityId": "entity-colorbrewer",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://colorbrewer2.org",
+    "finalUrl": "https://colorbrewer2.org/",
+    "checkedAt": "2026-10-07T16:52:20.375Z"
+  },
+  "editorial": {
+    "name": "ColorBrewer 2.0",
+    "descriptionZh": "ColorBrewer 2.0 用于为分级地图选择配色。用户可按顺序、发散或定性数据选方案和类别数，地图会展示对应颜色分布，并给出 HEX 等色值及色盲、打印条件筛选。官网还列出 ASE、GIMP、JavaScript 与 CSS 导出方式。适合先根据数据关系比较配色，再把选择带入制图项目；不同参数 URL 表示同一工具的实际配置状态。",
+    "descriptionEn": null,
+    "takeawayZh": "先选数据类型与类别数，再检查可读性条件和导出形式。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "creation-tools",
+    "subcategory": "image-vector-layout-creation",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "该入口的主要动作是按参数配置、比较并导出配色，属于创作工具；三图是同一工具的不同实际配色状态，不是原子颜色素材库。",
+        "evidenceUrl": "https://colorbrewer2.org/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T18:54:08.510Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "design-file"
+    ],
+    "actions": [
+      "generate",
+      "compare",
+      "export",
+      "copy"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "researcher"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://colorbrewer2.org/",
+      "finalUrl": "https://colorbrewer2.org/",
+      "title": "ColorBrewer: Color Advice for Maps",
+      "selectionRationale": "官方页面定位明确，实际地图与方案控件可见。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/colorbrewer/graph-ef8eb84e81564542af89ed1e-identity.png",
+        "sha256": "ef8eb84e81564542af89ed1ea55fbdc7f1d16533dca57939e7c914668b129fb6",
+        "bytes": 403140,
+        "width": 1280,
+        "height": 900,
+        "alt": "ColorBrewer 2.0：官方页面定位明确，实际地图与方案控件可见。",
+        "display": {
+          "full": "https://vislexicon.com/shots/colorbrewer/graph-ef8eb84e81564542af89ed1e-identity.webp",
+          "card": "https://vislexicon.com/shots/colorbrewer/graph-ef8eb84e81564542af89ed1e-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://colorbrewer2.org/#type=qualitative&scheme=Set3&n=12",
+      "finalUrl": "https://colorbrewer2.org/#type=qualitative&scheme=Set3&n=12",
+      "title": "ColorBrewer: Color Advice for Maps",
+      "selectionRationale": "实际配置图显示 qualitative、12 个类别以及对应地图与色值。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/colorbrewer/graph-3a0921ec68470e42f0918c5f-breadth.png",
+        "sha256": "3a0921ec68470e42f0918c5fe59de5e522631a060b555320f1397ec00e634b5c",
+        "bytes": 417383,
+        "width": 1280,
+        "height": 900,
+        "alt": "ColorBrewer 2.0：实际配置图显示 qualitative、12 个类别以及对应地图与色值。",
+        "display": {
+          "full": "https://vislexicon.com/shots/colorbrewer/graph-3a0921ec68470e42f0918c5f-breadth.webp",
+          "card": "https://vislexicon.com/shots/colorbrewer/graph-3a0921ec68470e42f0918c5f-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://colorbrewer2.org/#type=diverging&scheme=RdBu&n=11",
+      "finalUrl": "https://colorbrewer2.org/#type=diverging&scheme=RdBu&n=11",
+      "title": "ColorBrewer: Color Advice for Maps",
+      "selectionRationale": "实际配置图显示 diverging、11 个类别以及对应地图与色值。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/colorbrewer/graph-1526f4419235acad42437bb8-proof.png",
+        "sha256": "1526f4419235acad42437bb832c78c45a5ec255891366ad56d14bd554d56bd6d",
+        "bytes": 407756,
+        "width": 1280,
+        "height": 900,
+        "alt": "ColorBrewer 2.0：实际配置图显示 diverging、11 个类别以及对应地图与色值。",
+        "display": {
+          "full": "https://vislexicon.com/shots/colorbrewer/graph-1526f4419235acad42437bb8-proof.webp",
+          "card": "https://vislexicon.com/shots/colorbrewer/graph-1526f4419235acad42437bb8-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "地图配色选择工具",
+      "claim": "官方页面定位明确，实际地图与方案控件可见。",
+      "sourceUrl": "https://colorbrewer2.org/",
+      "quoteBasis": "curator read of bound original official screenshot and/or same-entry current HTTP body; no license/price/commercial inference",
+      "screenshotCapturedAt": null,
+      "evidence": "官方页面定位明确，实际地图与方案控件可见。"
+    },
+    {
+      "field": "configurationExample",
+      "value": "12 类定性 Set3 配色",
+      "claim": "实际配置图显示 qualitative、12 个类别以及对应地图与色值。",
+      "sourceUrl": "https://colorbrewer2.org/#type=qualitative&scheme=Set3&n=12",
+      "quoteBasis": "curator read of bound original official screenshot and/or same-entry current HTTP body; no license/price/commercial inference",
+      "screenshotCapturedAt": null,
+      "evidence": "实际配置图显示 qualitative、12 个类别以及对应地图与色值。"
+    },
+    {
+      "field": "configurationExample",
+      "value": "11 类发散 RdBu 配色",
+      "claim": "实际配置图显示 diverging、11 个类别以及对应地图与色值。",
+      "sourceUrl": "https://colorbrewer2.org/#type=diverging&scheme=RdBu&n=11",
+      "quoteBasis": "curator read of bound original official screenshot and/or same-entry current HTTP body; no license/price/commercial inference",
+      "screenshotCapturedAt": null,
+      "evidence": "实际配置图显示 diverging、11 个类别以及对应地图与色值。"
+    },
+    {
+      "field": "exportFormats",
+      "value": [
+        "ASE",
+        "GIMP",
+        "JavaScript",
+        "CSS"
+      ],
+      "claim": "当前官方 HTTP 正文列出这些输出形式。",
+      "sourceUrl": "https://colorbrewer2.org/",
+      "quoteBasis": "curator read of bound original official screenshot and/or same-entry current HTTP body; no license/price/commercial inference",
+      "screenshotCapturedAt": null,
+      "evidence": "当前官方 HTTP 正文列出这些输出形式。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/colorbrewer",
+    "designMdUrl": "https://vislexicon.com/site/colorbrewer.md",
+    "checkedAt": "2026-10-07T16:52:20.375Z",
+    "license": "unknown"
+  }
+}

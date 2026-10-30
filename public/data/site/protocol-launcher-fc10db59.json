@@ -1,0 +1,245 @@
+{
+  "releaseId": "release-78922d67ab547862",
+  "revision": "5c22dc4317d8a848e215d2241f262cc4052bd5715fcfc1eee198f5ac55c5fab3",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "protocol-launcher-fc10db59",
+  "entityId": "entity-protocol-launcher",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "zhensherlock.github.io",
+  "official": {
+    "inputUrl": "https://zhensherlock.github.io/protocol-launcher",
+    "finalUrl": "https://zhensherlock.github.io/protocol-launcher/",
+    "checkedAt": "2026-10-07T17:12:14.560Z"
+  },
+  "editorial": {
+    "name": "Protocol Launcher",
+    "descriptionZh": "Protocol Launcher 为应用集成生成带类型约束的深层链接，首页按应用列出适配范围，安装文档说明按需导入与完整导入的区别。Alfred 示例给出独立模块的 open()、偏好设置与自定义搜索代码，便于在自己的脚本或应用中连接桌面工具。当前证据展示的是链接生成库和具体代码，未执行原站按钮启动用户的软件。",
+    "descriptionEn": null,
+    "takeawayZh": "按目标应用导入模块并查参数示例，生成链接前核对实际应用支持。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "主要交付物是供开发者在脚本、Node 与打包项目中采用的类型安全 URL 生成库，当前文档提供安装、模块导入和 Alfred 调用代码。主任务是应用集成开发工具，不把被连接的各款应用当成此项目自有产品。",
+        "evidenceUrl": "https://zhensherlock.github.io/protocol-launcher/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T19:29:36.293Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "copy",
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "web",
+      "desktop"
+    ],
+    "technologies": [
+      "typescript",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/",
+      "finalUrl": "https://zhensherlock.github.io/protocol-launcher/",
+      "title": "Protocol Launcher",
+      "selectionRationale": "当前官方入口核对产品身份。Protocol Launcher 官网身份、接入指南范围与 Alfred 的具体 scheme 用法文档。",
+      "shot": {
+        "src": "/shots/protocol-launcher-fc10db59/graph-a810ab4187efba58b3e37064-identity.png",
+        "sha256": "a810ab4187efba58b3e370644b5e3f238792bb2e5ab827d3eb670e5d8802e777",
+        "bytes": 363921,
+        "width": 1440,
+        "height": 1000,
+        "alt": "Protocol Launcher：当前官方入口核对产品身份。Protocol Launcher 官网身份、接入指南范围与 Alfred 的具体 scheme 用法文档。",
+        "display": {
+          "full": "/shots/protocol-launcher-fc10db59/graph-a810ab4187efba58b3e37064-identity.webp",
+          "card": "/shots/protocol-launcher-fc10db59/graph-a810ab4187efba58b3e37064-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/guide/getting-started.html",
+      "finalUrl": "https://zhensherlock.github.io/protocol-launcher/guide/getting-started.html",
+      "title": "Getting Started | Protocol Launcher",
+      "selectionRationale": "Guide 入口是官方文档的主体导航，Getting Started 覆盖安装、初始化及基础使用流程，是对首页所列特性（类型安全、tree-shaking、ESM、多应用支持）如何实际使用的范围性展示。它比首页应用名单更能体现该库从安装到跨应用生成深度链接的完整功能范围。",
+      "shot": {
+        "src": "/shots/protocol-launcher-fc10db59/graph-a9eaaca4a9c998ff7b070426-breadth.png",
+        "sha256": "a9eaaca4a9c998ff7b07042604e68c790ed5bf39691e4de3001c96357e4583f1",
+        "bytes": 103223,
+        "width": 1440,
+        "height": 1000,
+        "alt": "Protocol Launcher：Guide 入口是官方文档的主体导航，Getting Started 覆盖安装、初始化及基础使用流程，是对首页所列特性（类型安全、tree-shaking、ESM、多应用支持）如何实际使用的范围性展示。它比首页应用名单更能体现该库从安装到跨应用生成深度链接的完整功能范围。",
+        "display": {
+          "full": "/shots/protocol-launcher-fc10db59/graph-a9eaaca4a9c998ff7b070426-breadth.webp",
+          "card": "/shots/protocol-launcher-fc10db59/graph-a9eaaca4a9c998ff7b070426-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/apps/alfred",
+      "finalUrl": "https://zhensherlock.github.io/protocol-launcher/apps/alfred",
+      "title": "Alfred | Protocol Launcher",
+      "selectionRationale": "已从当前官方 HTML 核对具体链接：Alfred。直接调用示例与参数代码；只阅读 HTTPS 文档，不执行外部应用 protocol。",
+      "shot": {
+        "src": "/shots/protocol-launcher-fc10db59/graph-73c0c818908e0c07f5b8d813-proof.png",
+        "sha256": "73c0c818908e0c07f5b8d81350894955f51a2d1b58253c63ee0ff399af4d0451",
+        "bytes": 112069,
+        "width": 1440,
+        "height": 1000,
+        "alt": "Protocol Launcher：已从当前官方 HTML 核对具体链接：Alfred。直接调用示例与参数代码；只阅读 HTTPS 文档，不执行外部应用 protocol。",
+        "display": {
+          "full": "/shots/protocol-launcher-fc10db59/graph-73c0c818908e0c07f5b8d813-proof.webp",
+          "card": "/shots/protocol-launcher-fc10db59/graph-73c0c818908e0c07f5b8d813-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/",
+        "selectionRationale": "当前官方入口核对产品身份。Protocol Launcher 官网身份、接入指南范围与 Alfred 的具体 scheme 用法文档。",
+        "shot": {
+          "src": "/shots/protocol-launcher-fc10db59/graph-a810ab4187efba58b3e37064-identity.png",
+          "alt": "Protocol Launcher：当前官方入口核对产品身份。Protocol Launcher 官网身份、接入指南范围与 Alfred 的具体 scheme 用法文档。",
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/guide/getting-started.html",
+        "selectionRationale": "Guide 入口是官方文档的主体导航，Getting Started 覆盖安装、初始化及基础使用流程，是对首页所列特性（类型安全、tree-shaking、ESM、多应用支持）如何实际使用的范围性展示。它比首页应用名单更能体现该库从安装到跨应用生成深度链接的完整功能范围。",
+        "shot": {
+          "src": "/shots/protocol-launcher-fc10db59/graph-a9eaaca4a9c998ff7b070426-breadth.png",
+          "alt": "Protocol Launcher：Guide 入口是官方文档的主体导航，Getting Started 覆盖安装、初始化及基础使用流程，是对首页所列特性（类型安全、tree-shaking、ESM、多应用支持）如何实际使用的范围性展示。它比首页应用名单更能体现该库从安装到跨应用生成深度链接的完整功能范围。",
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/apps/alfred",
+        "selectionRationale": "已从当前官方 HTML 核对具体链接：Alfred。直接调用示例与参数代码；只阅读 HTTPS 文档，不执行外部应用 protocol。",
+        "shot": {
+          "src": "/shots/protocol-launcher-fc10db59/graph-73c0c818908e0c07f5b8d813-proof.png",
+          "alt": "Protocol Launcher：已从当前官方 HTML 核对具体链接：Alfred。直接调用示例与参数代码；只阅读 HTTPS 文档，不执行外部应用 protocol。",
+          "width": 1440,
+          "height": 1000
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "类型安全的多应用深层链接生成库",
+      "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "42228a14ffa45e2ebbcc753dd236dd1ede9368e77bd47c4a88998117ef3309f1",
+      "evidence": "Safely generate deep links to launch and configure multiple apps. Extensible and type-safe."
+    },
+    {
+      "field": "technology",
+      "value": "TypeScript 类型约束",
+      "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "42228a14ffa45e2ebbcc753dd236dd1ede9368e77bd47c4a88998117ef3309f1",
+      "evidence": "Strict TypeScript types validate payloads and prevent malformed links."
+    },
+    {
+      "field": "installation",
+      "value": "npm install protocol-launcher",
+      "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/guide/getting-started.html",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "cc3a60e98e84e269282eba6f3cbd1c93dcabdf1f67abbb243e0dd4edddd583be",
+      "evidence": "npm install protocol-launcher"
+    },
+    {
+      "field": "implementationExample",
+      "value": "Alfred 模块的 URL 生成代码",
+      "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/apps/alfred",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "3920fdb9d685857281ccca79754b0bc70f9424addae783f78759bbdb327f1cd1",
+      "evidence": "import { open } from 'protocol-launcher/alfred'"
+    },
+    {
+      "field": "runtimeScope",
+      "value": "Node 与打包工具的 ES Modules 支持",
+      "sourceUrl": "https://zhensherlock.github.io/protocol-launcher/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "42228a14ffa45e2ebbcc753dd236dd1ede9368e77bd47c4a88998117ef3309f1",
+      "evidence": "Modern ES Modules, works in Node and bundlers."
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/protocol-launcher-fc10db59.md",
+  "registryUrl": "/r/protocol-launcher-fc10db59.json"
+}

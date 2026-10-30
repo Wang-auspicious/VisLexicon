@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ac8cf2cda493f6af
+releaseId: release-78922d67ab547862
 revision: 8ca2f7630b21bb23cb9127f062f7e00f3cdac7677c7eda62f602d877dab61b5b
 status: APPROVED
 name: "Aeris UI"

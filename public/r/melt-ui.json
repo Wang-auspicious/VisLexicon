@@ -1,0 +1,197 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-78922d67ab547862",
+  "revision": "2aeea2249bfa622c914027c452dd8cb11f3535ed52e93ac1844a0847537b8147",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "melt-ui",
+  "entityId": "entity-melt-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://www.melt-ui.com",
+    "finalUrl": "https://www.melt-ui.com/",
+    "checkedAt": "2026-10-07T17:50:59.015Z"
+  },
+  "editorial": {
+    "name": "Melt UI",
+    "descriptionZh": "Melt UI 为 Svelte 提供不预设样式的组件 builders，把行为和属性交给自己的界面元素。引言展示 Builder API，目录覆盖 Accordion、Calendar、Combobox、Dialog 等；Accordion 示例同时呈现展开内容和折叠项。入口还连接带 Runes 的新版本，采用时应区分目标版本与 builder 接口。",
+    "descriptionEn": null,
+    "takeawayZh": "需要定制外观时查 builders；先确认旧版接口与 Runes 版本的区别。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "当前入口自述 accessible unstyled component builders for Svelte，引言进一步解释 builders 生成可绑定到元素的属性集合；不是交付固定皮肤的完整设计系统。Accordion 实例支持这一范围，Runes 新版链接不被当作旧接口的当前实现保证。",
+        "evidenceUrl": "https://www.melt-ui.com/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T20:10:22.645Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.melt-ui.com/",
+      "finalUrl": "https://www.melt-ui.com/",
+      "title": "Melt UI",
+      "selectionRationale": "首页 Svelte 定位与带 Runes 新版提示可读。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/melt-ui/graph-ecf87ebd6af99c99be06f9b0-identity.png",
+        "sha256": "ecf87ebd6af99c99be06f9b0effc2820cdf634593d2949afc23680150ed231ce",
+        "bytes": 84681,
+        "width": 1280,
+        "height": 900,
+        "alt": "Melt UI：首页 Svelte 定位与带 Runes 新版提示可读。",
+        "display": {
+          "full": "https://vislexicon.com/shots/melt-ui/graph-ecf87ebd6af99c99be06f9b0-identity.webp",
+          "card": "https://vislexicon.com/shots/melt-ui/graph-ecf87ebd6af99c99be06f9b0-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.melt-ui.com/docs/introduction",
+      "finalUrl": "https://www.melt-ui.com/docs/introduction",
+      "title": "Melt UI",
+      "selectionRationale": "Introduction 有 Builder API 的解释与代码；In Construction 提示按原截图保留，不伪造当前版本状态。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/melt-ui/graph-ae8cb6de4ee3854aa7235405-breadth.png",
+        "sha256": "ae8cb6de4ee3854aa72354054a94d5940d4ce88441321e72cd1842b5812e799e",
+        "bytes": 137753,
+        "width": 1280,
+        "height": 900,
+        "alt": "Melt UI：Introduction 有 Builder API 的解释与代码；In Construction 提示按原截图保留，不伪造当前版本状态。",
+        "display": {
+          "full": "https://vislexicon.com/shots/melt-ui/graph-ae8cb6de4ee3854aa7235405-breadth.webp",
+          "card": "https://vislexicon.com/shots/melt-ui/graph-ae8cb6de4ee3854aa7235405-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.melt-ui.com/docs/builders/accordion",
+      "finalUrl": "https://www.melt-ui.com/docs/builders/accordion",
+      "title": "Melt UI",
+      "selectionRationale": "Accordion 完整渲染，一项正文已展开、两项折叠；View code 入口可见，未声称键盘或多项展开已测试。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/melt-ui/graph-d66b0d753184eda7c2257a5f-proof.png",
+        "sha256": "d66b0d753184eda7c2257a5f3407bf185ece77698eca3687f80fc436b225b70b",
+        "bytes": 101862,
+        "width": 1280,
+        "height": 900,
+        "alt": "Melt UI：Accordion 完整渲染，一项正文已展开、两项折叠；View code 入口可见，未声称键盘或多项展开已测试。",
+        "display": {
+          "full": "https://vislexicon.com/shots/melt-ui/graph-d66b0d753184eda7c2257a5f-proof.webp",
+          "card": "https://vislexicon.com/shots/melt-ui/graph-d66b0d753184eda7c2257a5f-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "Svelte 无样式组件 builders",
+      "claim": "本轮官网正文说明交付物，原图以示例展示 builder 用途。",
+      "sourceUrl": "https://www.melt-ui.com/",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "本轮官网正文说明交付物，原图以示例展示 builder 用途。"
+    },
+    {
+      "field": "builderAPI",
+      "value": "把生成的属性集合绑定到界面元素",
+      "claim": "Introduction 明确区别 builders 与传统组件，给出 createCollapsible 代码。",
+      "sourceUrl": "https://www.melt-ui.com/docs/introduction",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "Introduction 明确区别 builders 与传统组件，给出 createCollapsible 代码。"
+    },
+    {
+      "field": "nativeAccordionExample",
+      "value": "一项已展开、两项折叠的 Accordion",
+      "claim": "Accordion 已显示解释正文及两项折叠触发项，整个示例边界可见。",
+      "sourceUrl": "https://www.melt-ui.com/docs/builders/accordion",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "Accordion 已显示解释正文及两项折叠触发项，整个示例边界可见。"
+    },
+    {
+      "field": "versionNavigation",
+      "value": "入口连接带 Runes 的新版",
+      "claim": "新版本入口提示由当前正文与截图共同核实，未推成旧 builder 已迁移或稳定。",
+      "sourceUrl": "https://www.melt-ui.com/",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "新版本入口提示由当前正文与截图共同核实，未推成旧 builder 已迁移或稳定。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/melt-ui",
+    "designMdUrl": "https://vislexicon.com/site/melt-ui.md",
+    "checkedAt": "2026-10-07T17:50:59.015Z",
+    "license": "unknown"
+  }
+}

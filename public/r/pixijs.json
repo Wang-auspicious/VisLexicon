@@ -1,0 +1,196 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-78922d67ab547862",
+  "revision": "514d6e0da1e41f854fedb3b15aefffd748cee2ee70f093e32fc1ce697d7e65ba",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "pixijs",
+  "entityId": "entity-pixijs",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://pixijs.com",
+    "finalUrl": "https://pixijs.com/",
+    "checkedAt": "2026-10-07T18:55:41.344Z"
+  },
+  "editorial": {
+    "name": "PixiJS",
+    "descriptionZh": "PixiJS 提供二维 WebGPU/WebGL 渲染实现，官网将游戏、应用与互动内容作为采用场景。Examples 按容器、图形、滤镜、文字和资源等类别组织，具体 Transform/Pivot/Basic 例子完整显示 5×5 兔子精灵与代码。可从容器位置和 pivot 理解图形组织；目录页的中间选择提示不算运行演示，本轮也没有测量动画速度。",
+    "descriptionEn": null,
+    "takeawayZh": "从精灵与容器的有限例子理解位置和pivot，再查需要的图形能力。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "主要交付二维互动图形渲染代码，不是三维模型素材或UI套件；实际Canvas精灵阵列支持创意图形实现主类，WebGL是明确技术属性。",
+        "evidenceUrl": "https://pixijs.com/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T20:21:13.261Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "preview",
+      "copy"
+    ],
+    "media": [
+      "image",
+      "motion"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "webgl",
+      "canvas"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://pixijs.com/",
+      "finalUrl": "https://pixijs.com/",
+      "title": "PixiJS | The HTML5 Creation Engine | PixiJS",
+      "selectionRationale": "当前官方首页明确 PixiJS 的2D WebGPU/WebGL renderer，而非旧目录中的笼统图片。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pixijs/graph-0412204b4cec02d6736134b7-identity.png",
+        "sha256": "0412204b4cec02d6736134b7f5914265ebf4ce937963dd84edca93ab7456d978",
+        "bytes": 1315985,
+        "width": 1440,
+        "height": 1000,
+        "alt": "PixiJS：当前官方首页明确 PixiJS 的2D WebGPU/WebGL renderer，而非旧目录中的笼统图片。",
+        "display": {
+          "full": "https://vislexicon.com/shots/pixijs/graph-0412204b4cec02d6736134b7-identity.webp",
+          "card": "https://vislexicon.com/shots/pixijs/graph-0412204b4cec02d6736134b7-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://pixijs.com/8.x/examples",
+      "finalUrl": "https://pixijs.com/8.x/examples",
+      "title": "index | PixiJS",
+      "selectionRationale": "当前官网导航直接链接 v8 Examples，用于实际完整例子范围，必须等例子菜单渲染。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pixijs/graph-8a42ee8e66b6f7a77721cb2e-breadth.png",
+        "sha256": "8a42ee8e66b6f7a77721cb2eb1165755bcd8e50f7bd8b5c1aaac12d20d41e024",
+        "bytes": 64837,
+        "width": 1440,
+        "height": 1000,
+        "alt": "PixiJS：当前官网导航直接链接 v8 Examples，用于实际完整例子范围，必须等例子菜单渲染。",
+        "display": {
+          "full": "https://vislexicon.com/shots/pixijs/graph-8a42ee8e66b6f7a77721cb2e-breadth.webp",
+          "card": "https://vislexicon.com/shots/pixijs/graph-8a42ee8e66b6f7a77721cb2e-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://pixijs.com/8.x/examples?example=container_transform_pivot_basic",
+      "finalUrl": "https://pixijs.com/8.x/examples?example=container_transform_pivot_basic",
+      "title": "index | PixiJS",
+      "selectionRationale": "当前官方 main.js 的客户端重定向定义明确将 basic/container 对应至此具体 example query；是实际容器/pivot 示例选择，需完整已加载Canvas图形和具体示例代码。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pixijs/graph-c5e1de1abc7ce91fce55ddba-proof.png",
+        "sha256": "c5e1de1abc7ce91fce55ddba8bbd666d00def6a808d6dc9edb90ae6f23a5e7ad",
+        "bytes": 204678,
+        "width": 1440,
+        "height": 1000,
+        "alt": "PixiJS：当前官方 main.js 的客户端重定向定义明确将 basic/container 对应至此具体 example query；是实际容器/pivot 示例选择，需完整已加载Canvas图形和具体示例代码。",
+        "display": {
+          "full": "https://vislexicon.com/shots/pixijs/graph-c5e1de1abc7ce91fce55ddba-proof.webp",
+          "card": "https://vislexicon.com/shots/pixijs/graph-c5e1de1abc7ce91fce55ddba-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "二维WebGPU/WebGL渲染器",
+      "sourceUrl": "https://pixijs.com/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "413a9658a55a32f1eebebb14cd67252c9570748d7dcec6af0d801f14807bc2fe",
+      "evidence": "2D WebGPU/WebGL renderer"
+    },
+    {
+      "field": "exampleScope",
+      "value": "容器、图形、滤镜与文字例子范围",
+      "sourceUrl": "https://pixijs.com/8.x/examples",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "6b14a46222ce0fd3d55824cc67f70765ecc9accb133bb0de75ef0801bc171462",
+      "evidence": "Container"
+    },
+    {
+      "field": "nativeExample",
+      "value": "25个兔子精灵的容器例子",
+      "sourceUrl": "https://pixijs.com/8.x/examples?example=container_transform_pivot_basic",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "b59fc9e93f5e0650ad95ba79c3a63763f575760448823203dc4a7bd6168c6292",
+      "evidence": "Create a 5x5 grid of bunnies in the container"
+    },
+    {
+      "field": "exampleTechnique",
+      "value": "容器中心与pivot配置",
+      "sourceUrl": "https://pixijs.com/8.x/examples?example=container_transform_pivot_basic",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "b59fc9e93f5e0650ad95ba79c3a63763f575760448823203dc4a7bd6168c6292",
+      "evidence": "Center the bunny sprites in local container coordinates"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/pixijs",
+    "designMdUrl": "https://vislexicon.com/site/pixijs.md",
+    "checkedAt": "2026-10-07T18:55:41.344Z",
+    "license": "unknown"
+  }
+}

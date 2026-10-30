@@ -1,0 +1,213 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-78922d67ab547862",
+  "revision": "0154cecef8d81347b93a6e2624663ced5b619f5aca4e439917f5d94811e545c2",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "layercake",
+  "entityId": "entity-layer-cake",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://layercake.graphics",
+    "finalUrl": "https://layercake.graphics/",
+    "checkedAt": "2026-10-07T16:52:23.850Z"
+  },
+  "editorial": {
+    "name": "Layer Cake",
+    "descriptionZh": "Layer Cake 是面向 Svelte 的无预设样式图形框架，通过容器尺寸与数据范围建立共享坐标，让 SVG、HTML、Canvas 等图层组合成图表。组件页提供坐标轴、图表、地图、交互和注释的实现起点；Column 示例完整展示绿色柱形、刻度、注释箭头与对应 Svelte 代码。图表组件放在项目内，使用者需要自己组织视觉与数据表达。",
+    "descriptionEn": null,
+    "takeawayZh": "用共享尺度组合自己的图层，直接查示例的组件与数据代码。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官方明确提供 Svelte 图形框架、尺度与分层组件代码，并展示可渲染的柱形图及源码。主要交付物是数据可视化实现，不因 headless 一词归到界面控件原语。",
+        "evidenceUrl": "https://layercake.graphics/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T19:29:34.204Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "component"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "svelte",
+      "javascript",
+      "svg",
+      "canvas",
+      "webgl"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://layercake.graphics/",
+      "finalUrl": "https://layercake.graphics/",
+      "title": "Layer Cake",
+      "selectionRationale": "当前官方入口核对产品身份。Layer Cake 的 Svelte 图表产品身份、组件画廊和具体 Column annotated 示例。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/layercake/graph-42967434cdd7e78e9e4592d4-identity.png",
+        "sha256": "42967434cdd7e78e9e4592d450ae5310f6f0c1497153fbba4236f5fc851123e3",
+        "bytes": 101256,
+        "width": 1440,
+        "height": 1000,
+        "alt": "Layer Cake：当前官方入口核对产品身份。Layer Cake 的 Svelte 图表产品身份、组件画廊和具体 Column annotated 示例。",
+        "display": {
+          "full": "https://vislexicon.com/shots/layercake/graph-42967434cdd7e78e9e4592d4-identity.webp",
+          "card": "https://vislexicon.com/shots/layercake/graph-42967434cdd7e78e9e4592d4-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://layercake.graphics/components",
+      "finalUrl": "https://layercake.graphics/components",
+      "title": "LayerCake - Component gallery",
+      "selectionRationale": "该链接标签为“Component gallery Components”，是入口导航中的组件画廊页，用来覆盖 Layer Cake 可复用图表组件的类别范围；它能展示该框架提供的多种示例组件索引，而不仅是某一个具体图表，因此适合作为范围证明。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/layercake/graph-f30da428a17a9814dbdea555-breadth.png",
+        "sha256": "f30da428a17a9814dbdea5557e5aa2033c893a14c2583763fab0557a4ebc73f0",
+        "bytes": 94164,
+        "width": 1440,
+        "height": 1000,
+        "alt": "Layer Cake：该链接标签为“Component gallery Components”，是入口导航中的组件画廊页，用来覆盖 Layer Cake 可复用图表组件的类别范围；它能展示该框架提供的多种示例组件索引，而不仅是某一个具体图表，因此适合作为范围证明。",
+        "display": {
+          "full": "https://vislexicon.com/shots/layercake/graph-f30da428a17a9814dbdea555-breadth.webp",
+          "card": "https://vislexicon.com/shots/layercake/graph-f30da428a17a9814dbdea555-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://layercake.graphics/example/Column",
+      "finalUrl": "https://layercake.graphics/example/Column",
+      "title": "Column annotated",
+      "selectionRationale": "已从当前官方 HTML 核对具体链接：Column annotated。真正渲染的柱形图与编辑/代码内容，加载面板不算交付物。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/layercake/graph-e958344c101df68d9b2a3c2d-proof.png",
+        "sha256": "e958344c101df68d9b2a3c2dc7951f1b41a6635d20f58c87d741206564a6e7db",
+        "bytes": 84247,
+        "width": 1440,
+        "height": 1000,
+        "alt": "Layer Cake：已从当前官方 HTML 核对具体链接：Column annotated。真正渲染的柱形图与编辑/代码内容，加载面板不算交付物。",
+        "display": {
+          "full": "https://vislexicon.com/shots/layercake/graph-e958344c101df68d9b2a3c2d-proof.webp",
+          "card": "https://vislexicon.com/shots/layercake/graph-e958344c101df68d9b2a3c2d-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "Svelte 分层图形框架",
+      "sourceUrl": "https://layercake.graphics/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "0aba8a7c649dd00794533a86eddea70a99ebe30ca30607163c04df5725297f14",
+      "evidence": "Layer Cake is a headless graphics framework for Svelte."
+    },
+    {
+      "field": "renderingLayers",
+      "value": [
+        "SVG",
+        "HTML",
+        "Canvas",
+        "WebGL"
+      ],
+      "sourceUrl": "https://layercake.graphics/",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "0aba8a7c649dd00794533a86eddea70a99ebe30ca30607163c04df5725297f14",
+      "evidence": "whether they be SVG, HTML, Canvas or WebGL."
+    },
+    {
+      "field": "componentScope",
+      "value": "坐标轴、图表、地图、交互与注释实现起点",
+      "sourceUrl": "https://layercake.graphics/components",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "5a1dc67feafc2521b3b2d264fd2157bee5103fcf68a3af33a18e2c6234992f2b",
+      "evidence": "Axis components"
+    },
+    {
+      "field": "currentComponentSyntax",
+      "value": "Svelte 5 Rune 语法",
+      "sourceUrl": "https://layercake.graphics/components",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "5a1dc67feafc2521b3b2d264fd2157bee5103fcf68a3af33a18e2c6234992f2b",
+      "evidence": "The components here use Svelte 5's Rune syntax."
+    },
+    {
+      "field": "implementationExample",
+      "value": "带注释箭头的柱形图与源码",
+      "sourceUrl": "https://layercake.graphics/example/Column",
+      "quoteBasis": "personally read current bound rendered DOM and actual role images",
+      "domSha256": "fba2efd8294d6b0081ff2fe786c1e708eaee9c94ab6d3d64f4651afe7b6c27b0",
+      "evidence": "The annotation and its arrows come from one config object, drawn by the AnnotationsData and Arrows components."
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/layercake",
+    "designMdUrl": "https://vislexicon.com/site/layercake.md",
+    "checkedAt": "2026-10-07T16:52:23.850Z",
+    "license": "unknown"
+  }
+}

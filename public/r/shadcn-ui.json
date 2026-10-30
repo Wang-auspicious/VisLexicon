@@ -1,0 +1,199 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-78922d67ab547862",
+  "revision": "fbf1af486dc02aa372cf8dc5d88d2a7205491156e57742fe34a6d17b40b18db0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "shadcn-ui",
+  "entityId": "entity-shadcn-ui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://ui.shadcn.com",
+    "finalUrl": "https://ui.shadcn.com/",
+    "checkedAt": "2026-10-07T16:52:21.896Z"
+  },
+  "editorial": {
+    "name": "shadcn/ui",
+    "descriptionZh": "shadcn/ui 提供可组合、可安装并由项目自行修改的组件套件，官网用它作为自己设计体系的基础。目录覆盖表单、导航、数据与反馈，也提供主题、CLI、Registry 和区块入口。Blocks 原页展示 dashboard-01 的侧栏及四张完整统计卡，并给出安装命令；这些数字是演示内容，页面下方的图表与表格没有在所存画面中完整呈现。",
+    "descriptionEn": null,
+    "takeawayZh": "按组件或区块选择代码，再把它纳入自己的主题和维护范围。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "design-system-suites",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "规范中的 shadcn/ui 边界是可安装、自主修改的组件套件与 registry，当前官网明确构建自己的 component library，原目录与区块命令支持这一交付方式。主入口包含组件体系，不把单个 dashboard 区块分类当成整个入口，亦不把 Vercel 全部服务并入来源实体。",
+        "evidenceUrl": "https://ui.shadcn.com/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T21:14:26.986Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "block",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "learn",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ui.shadcn.com/",
+      "finalUrl": "https://ui.shadcn.com/",
+      "title": "shadcn/ui — Build Your Component Library",
+      "selectionRationale": "原首页明确组件代码可组合/自改，多个实际 UI 示例已渲染；QR 和财务数值是原演示内容，未发起扫码或操作。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/shadcn-ui/graph-03c1d95841d2ff7ebc8244e5-identity.png",
+        "sha256": "03c1d95841d2ff7ebc8244e5086f5aab5bdd89192e003a3c34ac06f051effde1",
+        "bytes": 140314,
+        "width": 1280,
+        "height": 900,
+        "alt": "shadcn/ui：原首页明确组件代码可组合/自改，多个实际 UI 示例已渲染；QR 和财务数值是原演示内容，未发起扫码或操作。",
+        "display": {
+          "full": "https://vislexicon.com/shots/shadcn-ui/graph-03c1d95841d2ff7ebc8244e5-identity.webp",
+          "card": "https://vislexicon.com/shots/shadcn-ui/graph-03c1d95841d2ff7ebc8244e5-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ui.shadcn.com/docs/components",
+      "finalUrl": "https://ui.shadcn.com/docs/components",
+      "title": "shadcn/ui Components",
+      "selectionRationale": "All Components 的三列完整目录与主题/CLI/Registry 等导航清楚，侧栏 Vercel 推广没有覆盖主目录。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/shadcn-ui/graph-64017b107977d16bb8ceab71-breadth.png",
+        "sha256": "64017b107977d16bb8ceab7186949dd40b6809481d0e2de4b2069f13ebb97049",
+        "bytes": 138969,
+        "width": 1280,
+        "height": 900,
+        "alt": "shadcn/ui：All Components 的三列完整目录与主题/CLI/Registry 等导航清楚，侧栏 Vercel 推广没有覆盖主目录。",
+        "display": {
+          "full": "https://vislexicon.com/shots/shadcn-ui/graph-64017b107977d16bb8ceab71-breadth.webp",
+          "card": "https://vislexicon.com/shots/shadcn-ui/graph-64017b107977d16bb8ceab71-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ui.shadcn.com/blocks",
+      "finalUrl": "https://ui.shadcn.com/blocks",
+      "title": "shadcn/ui Blocks",
+      "selectionRationale": "原 dashboard-01 的四张统计卡和左侧有限导航完整，顶部真实 npx 命令可读；更下方图表/表格出框，因此只绑定所见四卡范围，不把整个 dashboard 都算验证。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/shadcn-ui/graph-1d84d35f937e5d5af952e9b7-proof.png",
+        "sha256": "1d84d35f937e5d5af952e9b78826fa3c2c0929e27597588af9507f2fe51a4ad2",
+        "bytes": 153929,
+        "width": 1280,
+        "height": 900,
+        "alt": "shadcn/ui：原 dashboard-01 的四张统计卡和左侧有限导航完整，顶部真实 npx 命令可读；更下方图表/表格出框，因此只绑定所见四卡范围，不把整个 dashboard 都算验证。",
+        "display": {
+          "full": "https://vislexicon.com/shots/shadcn-ui/graph-1d84d35f937e5d5af952e9b7-proof.webp",
+          "card": "https://vislexicon.com/shots/shadcn-ui/graph-1d84d35f937e5d5af952e9b7-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "可组合、可自行修改的组件套件",
+      "claim": "当前完整官网正文与原首页明确代码可修改和自建组件库；源码许可没有从 Github 链接自动推定。",
+      "sourceUrl": "https://ui.shadcn.com/",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "当前完整官网正文与原首页明确代码可修改和自建组件库；源码许可没有从 Github 链接自动推定。"
+    },
+    {
+      "field": "componentScope",
+      "value": "表单、导航、数据与反馈等多种组件",
+      "claim": "原目录中 Accordion/Button/Input/Dialog/Navigation Menu/Data Table 等条目可读，旁栏主题/CLI/Registry 入口是体系资料。",
+      "sourceUrl": "https://ui.shadcn.com/docs/components",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "原目录中 Accordion/Button/Input/Dialog/Navigation Menu/Data Table 等条目可读，旁栏主题/CLI/Registry 入口是体系资料。"
+    },
+    {
+      "field": "nativeBlockPreview",
+      "value": "dashboard-01 的侧栏及四张完整统计卡",
+      "claim": "原 Blocks 首屏包含四张完整有限统计卡和已渲染侧栏；该标题描述区块总体范围，图表/表格在画面下方，未声称完整可见。",
+      "sourceUrl": "https://ui.shadcn.com/blocks",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "原 Blocks 首屏包含四张完整有限统计卡和已渲染侧栏；该标题描述区块总体范围，图表/表格在画面下方，未声称完整可见。"
+    },
+    {
+      "field": "blockInstallCommand",
+      "value": "dashboard-01 原安装命令",
+      "claim": "原预览工具条直接给出命令，未执行 CLI、点击 Open in v0 或提交示例中的动作。",
+      "sourceUrl": "https://ui.shadcn.com/blocks",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "原预览工具条直接给出命令，未执行 CLI、点击 Open in v0 或提交示例中的动作。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/shadcn-ui",
+    "designMdUrl": "https://vislexicon.com/site/shadcn-ui.md",
+    "checkedAt": "2026-10-07T16:52:21.896Z",
+    "license": "unknown"
+  }
+}

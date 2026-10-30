@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ac8cf2cda493f6af
+releaseId: release-78922d67ab547862
 revision: 4f2605b163ad3fdd581451c7738e86b0d56188aae17fbb5c15879738c08807d3
 status: APPROVED
 name: BootstrapVue

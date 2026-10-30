@@ -1,0 +1,196 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-78922d67ab547862",
+  "revision": "4932ca841d42de06a0d5c3e88f94bd9e883251e811b718ea9f983a9ffba26840",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "postcss",
+  "entityId": "entity-postcss",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://postcss.org",
+    "finalUrl": "https://postcss.org/",
+    "checkedAt": "2026-10-07T17:50:53.302Z"
+  },
+  "editorial": {
+    "name": "PostCSS",
+    "descriptionZh": "PostCSS 用 JavaScript 插件转换 CSS，首页通过前缀补全、现代语法转换和样式检查的输入输出解释用途。插件页按任务组织实现，API 页给出创建处理器、传入插件并读取 result.css 的完整调用。它嵌入样式构建过程，具体转换效果取决于选用的插件；可以先从所需任务找插件，再按处理器接口接入项目。",
+    "descriptionEn": null,
+    "takeawayZh": "先确定要做的CSS转换，再选择插件并查处理器接口。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "主要交付用于样式工程的CSS转换处理器与插件体系，当前输入/输出与process调用直接支持开发工作流分类，不把它当UI组件或视觉素材。",
+        "evidenceUrl": "https://postcss.org/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T20:06:20.680Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "learn",
+      "copy",
+      "install"
+    ],
+    "media": [],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://postcss.org/",
+      "finalUrl": "https://postcss.org/",
+      "title": "PostCSS - a tool for transforming CSS with JavaScript",
+      "selectionRationale": "使用JavaScript转换CSS的处理器",
+      "shot": {
+        "src": "https://vislexicon.com/shots/postcss/graph-7361dd31e932bf0886086689-identity.png",
+        "sha256": "7361dd31e932bf0886086689295caf9960706499348e4880634e6cc5a80609d9",
+        "bytes": 624953,
+        "width": 1280,
+        "height": 900,
+        "alt": "PostCSS：使用JavaScript转换CSS的处理器",
+        "display": {
+          "full": "https://vislexicon.com/shots/postcss/graph-7361dd31e932bf0886086689-identity.webp",
+          "card": "https://vislexicon.com/shots/postcss/graph-7361dd31e932bf0886086689-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://postcss.org/docs/postcss-plugins",
+      "finalUrl": "https://postcss.org/docs/postcss-plugins",
+      "title": "PostCSS Plugins",
+      "selectionRationale": "按控制、语法、兼容等任务组织插件",
+      "shot": {
+        "src": "https://vislexicon.com/shots/postcss/graph-272480058413b113f41cda16-breadth.png",
+        "sha256": "272480058413b113f41cda1610e24f2fdcfd44763d724daa818e227241d39147",
+        "bytes": 179231,
+        "width": 1280,
+        "height": 900,
+        "alt": "PostCSS：按控制、语法、兼容等任务组织插件",
+        "display": {
+          "full": "https://vislexicon.com/shots/postcss/graph-272480058413b113f41cda16-breadth.webp",
+          "card": "https://vislexicon.com/shots/postcss/graph-272480058413b113f41cda16-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://postcss.org/api/",
+      "finalUrl": "https://postcss.org/api/",
+      "title": "PostCSS API",
+      "selectionRationale": "插件处理后读取输出CSS的完整调用",
+      "shot": {
+        "src": "https://vislexicon.com/shots/postcss/graph-3eac10bc649aa7f26b418c0b-proof.png",
+        "sha256": "3eac10bc649aa7f26b418c0ba4911a31b2c895b91ad4d917195e0ffa8b076e97",
+        "bytes": 170428,
+        "width": 1280,
+        "height": 900,
+        "alt": "PostCSS：插件处理后读取输出CSS的完整调用",
+        "display": {
+          "full": "https://vislexicon.com/shots/postcss/graph-3eac10bc649aa7f26b418c0b-proof.webp",
+          "card": "https://vislexicon.com/shots/postcss/graph-3eac10bc649aa7f26b418c0b-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "使用JavaScript转换CSS的处理器",
+      "sourceUrl": "https://postcss.org/",
+      "quoteBasis": "exact normalized quote in current official HTTP body; original identity image crosscheck",
+      "bodySha256": "134e0ec4cf26910aaee0509d9818457316b0ecac2104dec7754aa21afa103cbe",
+      "screenshotCapturedAt": null,
+      "evidence": "A tool for transforming CSS with JavaScript"
+    },
+    {
+      "field": "pluginExample",
+      "value": "Autoprefixer 前缀处理",
+      "sourceUrl": "https://postcss.org/",
+      "quoteBasis": "exact normalized quote in current official HTTP body; original identity image crosscheck",
+      "bodySha256": "134e0ec4cf26910aaee0509d9818457316b0ecac2104dec7754aa21afa103cbe",
+      "screenshotCapturedAt": null,
+      "evidence": "Add vendor prefixes to CSS rules"
+    },
+    {
+      "field": "implementationExample",
+      "value": "插件处理后读取输出CSS的完整调用",
+      "sourceUrl": "https://postcss.org/api/",
+      "quoteBasis": "personally read the bound original official role image at full size",
+      "bodySha256": null,
+      "screenshotCapturedAt": null,
+      "evidence": "postcss(plugins).process(css, { from, to }).then(result => {"
+    },
+    {
+      "field": "pluginOrganization",
+      "value": "按控制、语法、兼容等任务组织插件",
+      "sourceUrl": "https://postcss.org/docs/postcss-plugins",
+      "quoteBasis": "personally read the bound original official role image at full size",
+      "bodySha256": null,
+      "screenshotCapturedAt": null,
+      "evidence": "PostCSS Plugins"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/postcss",
+    "designMdUrl": "https://vislexicon.com/site/postcss.md",
+    "checkedAt": "2026-10-07T17:50:53.302Z",
+    "license": "unknown"
+  }
+}

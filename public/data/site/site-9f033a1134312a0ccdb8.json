@@ -1,0 +1,231 @@
+{
+  "releaseId": "release-78922d67ab547862",
+  "revision": "72a6de34d64875329dc4b809f25408f31504d5ee6d12bfca827c941567344459",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "site-9f033a1134312a0ccdb8",
+  "entityId": "entity-react-dnd",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "react-dnd.github.io",
+  "official": {
+    "inputUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+    "finalUrl": "https://react-dnd.github.io/react-dnd/docs/overview/",
+    "checkedAt": "2026-10-07T17:51:08.010Z"
+  },
+  "editorial": {
+    "name": "React DnD",
+    "descriptionZh": "React DnD 为 React 界面提供拖放行为，用 item、type、Hooks 和不同 backend 连接自己的组件。Overview 解释数据与视图的分离，Examples 按目标、嵌套、排序与自定义预览组织；Handles and Previews 原例显示一个带绿方块手柄的拖动项和一个自定图像预览项，并提供 JavaScript/TypeScript 代码入口。",
+    "descriptionEn": null,
+    "takeawayZh": "需要把拖放行为接入自己的 React 界面时，先理解 item/type 与 backend。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "具体文档入口提供与应用视图解耦的拖放基础行为、Hooks 与后端适配，允许自己指定 draggable/preview 节点，属于不限定视觉皮肤的交互原语。不是现成页面模板或拖放建站器；样式示例不等于库的固定外观。",
+        "evidenceUrl": "https://react-dnd.github.io/react-dnd/docs/overview"
+      }
+    ],
+    "confirmedAt": "2026-10-07T20:43:57.618Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+      "finalUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+      "title": "Overview | React DnD",
+      "selectionRationale": "React DnD 品牌、items/types 说明与 Hooks/backend 范围清楚。",
+      "shot": {
+        "src": "/shots/site-9f033a1134312a0ccdb8/graph-526f768053b0ae6cd1fa2410-identity.png",
+        "sha256": "526f768053b0ae6cd1fa2410a27a40d47b34c21a62e2ca8802cdf034c05ca5b3",
+        "bytes": 147357,
+        "width": 1280,
+        "height": 900,
+        "alt": "React DnD：React DnD 品牌、items/types 说明与 Hooks/backend 范围清楚。",
+        "display": {
+          "full": "/shots/site-9f033a1134312a0ccdb8/graph-526f768053b0ae6cd1fa2410-identity.webp",
+          "card": "/shots/site-9f033a1134312a0ccdb8/graph-526f768053b0ae6cd1fa2410-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/examples",
+      "finalUrl": "https://react-dnd.github.io/react-dnd/examples",
+      "title": "Examples | React DnD",
+      "selectionRationale": "Examples 按 Dustbin/Drag Around/Nesting/Sortable/Customize 组织，而非只有单张示意图片。",
+      "shot": {
+        "src": "/shots/site-9f033a1134312a0ccdb8/graph-190d00cafe9ac0566cabaf4c-breadth.png",
+        "sha256": "190d00cafe9ac0566cabaf4c9b38e847a61a05e71b63216c632c2e0e1eed1e66",
+        "bytes": 96220,
+        "width": 1280,
+        "height": 900,
+        "alt": "React DnD：Examples 按 Dustbin/Drag Around/Nesting/Sortable/Customize 组织，而非只有单张示意图片。",
+        "display": {
+          "full": "/shots/site-9f033a1134312a0ccdb8/graph-190d00cafe9ac0566cabaf4c-breadth.webp",
+          "card": "/shots/site-9f033a1134312a0ccdb8/graph-190d00cafe9ac0566cabaf4c-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/examples/customize/handles-and-previews",
+      "finalUrl": "https://react-dnd.github.io/react-dnd/examples/customize/handles-and-previews",
+      "title": "Handles and Previews | React DnD",
+      "selectionRationale": "两条实际拖动项和绿色手柄完整显示，未操作拖动，不把 Drag me to see an image 写成已加载预览。",
+      "shot": {
+        "src": "/shots/site-9f033a1134312a0ccdb8/graph-43e9d9e1f815b2fb20c66391-proof.png",
+        "sha256": "43e9d9e1f815b2fb20c66391a82fb59f8c6fcd2d679d6ce0d61700e1f1e7e880",
+        "bytes": 69339,
+        "width": 1280,
+        "height": 900,
+        "alt": "React DnD：两条实际拖动项和绿色手柄完整显示，未操作拖动，不把 Drag me to see an image 写成已加载预览。",
+        "display": {
+          "full": "/shots/site-9f033a1134312a0ccdb8/graph-43e9d9e1f815b2fb20c66391-proof.webp",
+          "card": "/shots/site-9f033a1134312a0ccdb8/graph-43e9d9e1f815b2fb20c66391-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+        "selectionRationale": "React DnD 品牌、items/types 说明与 Hooks/backend 范围清楚。",
+        "shot": {
+          "src": "/shots/site-9f033a1134312a0ccdb8/graph-526f768053b0ae6cd1fa2410-identity.png",
+          "alt": "React DnD：React DnD 品牌、items/types 说明与 Hooks/backend 范围清楚。",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://react-dnd.github.io/react-dnd/examples",
+        "selectionRationale": "Examples 按 Dustbin/Drag Around/Nesting/Sortable/Customize 组织，而非只有单张示意图片。",
+        "shot": {
+          "src": "/shots/site-9f033a1134312a0ccdb8/graph-190d00cafe9ac0566cabaf4c-breadth.png",
+          "alt": "React DnD：Examples 按 Dustbin/Drag Around/Nesting/Sortable/Customize 组织，而非只有单张示意图片。",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://react-dnd.github.io/react-dnd/examples/customize/handles-and-previews",
+        "selectionRationale": "两条实际拖动项和绿色手柄完整显示，未操作拖动，不把 Drag me to see an image 写成已加载预览。",
+        "shot": {
+          "src": "/shots/site-9f033a1134312a0ccdb8/graph-43e9d9e1f815b2fb20c66391-proof.png",
+          "alt": "React DnD：两条实际拖动项和绿色手柄完整显示，未操作拖动，不把 Drag me to see an image 写成已加载预览。",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "React 拖放行为原语",
+      "claim": "当前官网正文与原 Overview 核实 React DnD 身份与用途。",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/docs/overview",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "当前官网正文与原 Overview 核实 React DnD 身份与用途。"
+    },
+    {
+      "field": "exampleScope",
+      "value": "目标、嵌套、排序和自定义预览范例",
+      "claim": "Examples 实际目录与说明表明多个 API/交互范例，测试内容不改作质量审计主类。",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/examples",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "Examples 实际目录与说明表明多个 API/交互范例，测试内容不改作质量审计主类。"
+    },
+    {
+      "field": "nativeHandleExample",
+      "value": "手柄拖动项与自定义预览项",
+      "claim": "原示例的两项边界及绿色手柄完整可见，并有 JS/TS 源码入口；未声称拖放成功或图像预览已出现。",
+      "sourceUrl": "https://react-dnd.github.io/react-dnd/examples/customize/handles-and-previews",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "原示例的两项边界及绿色手柄完整可见，并有 JS/TS 源码入口；未声称拖放成功或图像预览已出现。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/site-9f033a1134312a0ccdb8.md",
+  "registryUrl": "/r/site-9f033a1134312a0ccdb8.json"
+}

@@ -1,0 +1,186 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-78922d67ab547862",
+  "revision": "75e4643928a2b98558f40e0d8bf17c54d4948689e7ab834728adf0d542685659",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-30T09:15:54.641Z",
+  "entryId": "lexical",
+  "entityId": "entity-lexical",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://lexical.dev",
+    "finalUrl": "https://lexical.dev/",
+    "checkedAt": "2026-10-07T17:51:09.607Z"
+  },
+  "editorial": {
+    "name": "Lexical",
+    "descriptionZh": "Lexical 提供可扩展的 Web 文本编辑框架，用模块化包增加列表、链接、表格等功能。引言解释编辑状态、节点与 DOM 协调的关系，文档另有 React、协作和序列化章节；官方 Playground 展示格式工具栏、富文本正文和状态调试区。核心逻辑与应用自己的界面分开，接入时需选择所需插件。",
+    "descriptionEn": null,
+    "takeawayZh": "要把编辑能力嵌入自己的应用时，从核心状态与插件接口开始核对。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "具体入口主要交付可嵌入 Web 应用的文本编辑框架和模块化扩展包，Introduction 与原 Playground 对应编辑复合控件。它的核心不预置全部工具栏，不能把示例皮肤或 AI 示范改作独立创作 SaaS 或已部署 Agent 服务。",
+        "evidenceUrl": "https://lexical.dev/"
+      }
+    ],
+    "confirmedAt": "2026-10-07T19:56:51.795Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "react"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://lexical.dev/",
+      "finalUrl": "https://lexical.dev/",
+      "title": "Lexical",
+      "selectionRationale": "Lexical 主入口说明文本编辑框架，首页输入框不被当作最终 proof。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/lexical/graph-10386cb5858e5e8066c54e14-identity.png",
+        "sha256": "10386cb5858e5e8066c54e1448b8f4e7934d377c6ee65a32f92fe9ab34a462b8",
+        "bytes": 66876,
+        "width": 1280,
+        "height": 900,
+        "alt": "Lexical：Lexical 主入口说明文本编辑框架，首页输入框不被当作最终 proof。",
+        "display": {
+          "full": "https://vislexicon.com/shots/lexical/graph-10386cb5858e5e8066c54e14-identity.webp",
+          "card": "https://vislexicon.com/shots/lexical/graph-10386cb5858e5e8066c54e14-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://lexical.dev/docs/intro",
+      "finalUrl": "https://lexical.dev/docs/intro",
+      "title": "Introduction | Lexical",
+      "selectionRationale": "Introduction 完整显示模块架构图与文档范围。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/lexical/graph-b7a8b23f841f21144b402acf-breadth.png",
+        "sha256": "b7a8b23f841f21144b402acf80e53a93b6ba41c0b27396d8ee6e520f986d4dda",
+        "bytes": 104110,
+        "width": 1280,
+        "height": 900,
+        "alt": "Lexical：Introduction 完整显示模块架构图与文档范围。",
+        "display": {
+          "full": "https://vislexicon.com/shots/lexical/graph-b7a8b23f841f21144b402acf-breadth.webp",
+          "card": "https://vislexicon.com/shots/lexical/graph-b7a8b23f841f21144b402acf-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://playground.lexical.dev/",
+      "finalUrl": "https://playground.lexical.dev/",
+      "title": "Lexical Playground",
+      "selectionRationale": "Playground 有正文、格式、列表和黑色状态调试区；未调用麦克风、上传、发送或删除。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/lexical/graph-56327318f8ff16e03f0bf51b-proof.png",
+        "sha256": "56327318f8ff16e03f0bf51bea648ba9731f6fde20054fba3509ef378c0cf61a",
+        "bytes": 76571,
+        "width": 1280,
+        "height": 900,
+        "alt": "Lexical：Playground 有正文、格式、列表和黑色状态调试区；未调用麦克风、上传、发送或删除。",
+        "display": {
+          "full": "https://vislexicon.com/shots/lexical/graph-56327318f8ff16e03f0bf51b-proof.webp",
+          "card": "https://vislexicon.com/shots/lexical/graph-56327318f8ff16e03f0bf51b-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "模块化 Web 文本编辑框架",
+      "claim": "当前官方正文直接说明编辑框架及列表/链接/表格扩展。",
+      "sourceUrl": "https://lexical.dev/",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "当前官方正文直接说明编辑框架及列表/链接/表格扩展。"
+    },
+    {
+      "field": "architecture",
+      "value": "编辑状态、节点和 DOM 协调的模块结构",
+      "claim": "Introduction 的模块图显示核心、必要插件和用户应用之间的关系。",
+      "sourceUrl": "https://lexical.dev/docs/intro",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "Introduction 的模块图显示核心、必要插件和用户应用之间的关系。"
+    },
+    {
+      "field": "nativeEditorExample",
+      "value": "富文本 Playground 与编辑状态调试区",
+      "claim": "原站 Playground 已显示真实格式文本、工具栏和状态树；不以首页空输入框代替具体实例。",
+      "sourceUrl": "https://playground.lexical.dev/",
+      "quoteBasis": "root actual read of original role screenshot and/or current same-entry official body; bound below; no unperformed interaction claim",
+      "evidence": "原站 Playground 已显示真实格式文本、工具栏和状态树；不以首页空输入框代替具体实例。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/lexical",
+    "designMdUrl": "https://vislexicon.com/site/lexical.md",
+    "checkedAt": "2026-10-07T17:51:09.607Z",
+    "license": "unknown"
+  }
+}
