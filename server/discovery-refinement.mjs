@@ -1,5 +1,8 @@
-import crypto from 'node:crypto'
 import { applyModelRanking, discoveryCandidatePool, canRefineQuery } from '../src/lib/component-discovery.js'
+import { fnvDigest } from './fnv-digest.mjs'
+
+// Runs in Node and in the browser (static build), so only Web Crypto here.
+const newToken=()=>globalThis.crypto.randomUUID().replace(/-/g,'')
 
 const sameContext=(record,index)=>record.scope===index.scope&&record.theme===index.theme&&record.indexVersion===index.generatedAt&&(record.filterKey||'')===(index.filterKey||'')
 
@@ -34,10 +37,10 @@ export function createRefinementStore({maxEntries=512}={}) {
     const confirmed=eligibleIds.filter(id=>(judgments.get(id)?.score??-1)>=1.4)
       .sort((a,b)=>judgments.get(b).score-judgments.get(a).score)
     const pending=eligibleIds.filter(id=>!judgments.has(id))
-    const token=crypto.randomBytes(16).toString('hex')
+    const token=newToken()
     snapshots.set(token,{query,scope:index.scope,theme:index.theme,indexVersion:index.generatedAt,filterKey:index.filterKey||'',
       eligibleIds,judgments,ids:[...confirmed,...pending],confirmedCount:confirmed.length,
-      candidateDigest:crypto.createHash('sha256').update(JSON.stringify(eligibleIds)).digest('hex')})
+      candidateDigest:fnvDigest(JSON.stringify(eligibleIds))})
     while(snapshots.size>maxEntries)snapshots.delete(snapshots.keys().next().value)
     return token
   }

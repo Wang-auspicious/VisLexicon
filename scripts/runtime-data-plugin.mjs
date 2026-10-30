@@ -68,6 +68,9 @@ export function publicAssetsPlugin() {
         if (relative.startsWith('shots/')) return shotDirs.has(relative)
         return isPublicAsset(relative)
       } })
+      // Cloudflare Pages compresses on its own and counts every file against its
+      // 20,000-file limit, so the Pages build skips the .br/.gz copies.
+      if (process.env.VISLEXICON_PRECOMPRESS === '0') return
       for (const entry of await fs.readdir(outDir, { recursive: true, withFileTypes: true })) {
         if (!entry.isFile() || !/\.(?:js|css|json|html|svg|txt|md)$/.test(entry.name)) continue
         const file = path.join(entry.parentPath, entry.name)

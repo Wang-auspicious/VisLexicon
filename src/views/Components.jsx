@@ -3,7 +3,7 @@ import { discoveryPageState } from '../lib/discovery-pagination.js'
 import { useDiscoverySearch } from '../lib/use-discovery-search.js'
 import { jevErrorMessage } from '../lib/jev-status.js'
 import { useLocale } from '../i18n.js'
-import { navigate, useRoute } from '../router.js'
+import { navigate, useRoute, currentHash } from '../router.js'
 import { DiscoveryCard } from '../components/ComponentDiscovery.jsx'
 import { englishText } from '../lib/localized-content.js'
 import ComponentCodeDetail from '../components/ComponentCodeDetail.jsx'
@@ -32,7 +32,7 @@ export default function Components() {
   const pageNeedsClamp=Boolean(q.trim()&&currentSearch&&requestedPage!==page)
   useEffect(()=>{
     if(!pageNeedsClamp)return
-    const [route,queryString='']=window.location.hash.split('?')
+    const [route,queryString='']=currentHash().split('?')
     if(route!=='#/components')return
     const params=new URLSearchParams(queryString)
     if(page===1)params.delete('page');else params.set('page',String(page))

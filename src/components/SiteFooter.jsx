@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import SubmitCheck from './SubmitCheck.jsx'
 import { useLocale } from '../i18n.js'
 import { loadPublicSiteCards } from '../lib/public-data.js'
+import { CONTACT_EMAIL, LEGAL_PAGES } from '../data/site-info.js'
 
 /* ============ 全站页脚（方案 §4.3 线框最后一行） ============
  * 口径说明 · 核验日志 · Agent 端点 · 查重框。
@@ -29,6 +30,12 @@ export default function SiteFooter() {
           <a className="inline-link" href="#/about#method">{en ? 'Editorial standards' : '收录标准'}</a>
           <a className="inline-link" href="#/about#endpoints">{en ? 'For agents' : 'Agent 接口'}</a>
           <a className="inline-link" href="#/components">{en ? 'All components' : '全部组件'}</a>
+          <a className="inline-link" href="#/submit">{en ? 'Submit a site' : '投稿'}</a>
+          <a className="inline-link" href="#sponsor">{en ? 'Sponsor' : '赞助'}</a>
+        </nav>
+        <nav className="site-foot-nav site-foot-legal" aria-label={en ? 'Legal' : '法务'}>
+          {Object.entries(LEGAL_PAGES).map(([id, page]) => <a className="inline-link" key={id} href={`#/${id}`}>{(en ? page.en : page.zh).title}</a>)}
+          <a className="inline-link" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
         </nav>
         <SubmitCheck items={items} loadError={loadError} />
       </div>

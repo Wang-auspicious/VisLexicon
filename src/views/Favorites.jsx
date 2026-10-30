@@ -5,6 +5,7 @@ import { exportBoard, readBoard, removeBoardItem, writeBoard } from '../lib/loca
 import { loadPublicSiteIndex } from '../lib/public-data.js'
 import { displayName, englishText } from '../lib/localized-content.js'
 import { useLocale } from '../i18n.js'
+import { currentHash } from '../router.js'
 import SiteCard from '../components/SiteCard.jsx'
 import '../styles/library-pages.css'
 
@@ -40,7 +41,7 @@ export default function Favorites() {
   const [revision, setRevision] = useState(0)
   const [board, setBoard] = useState(() => readBoard())
   const [components, setComponents] = useState(() => readComponentSaves())
-  const [tab, setTab] = useState(() => new URLSearchParams(window.location.hash.split('?')[1]).get('type') === 'components' ? 'components' : 'sites')
+  const [tab, setTab] = useState(() => new URLSearchParams(currentHash().split('?')[1]).get('type') === 'components' ? 'components' : 'sites')
   const [query, setQuery] = useState('')
   const [componentError, setComponentError] = useState(false)
   useEffect(() => {

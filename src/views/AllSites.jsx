@@ -4,6 +4,7 @@ import { jevErrorMessage } from '../lib/jev-status.js'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import FacetChips from '../components/FacetChips.jsx'
 import SiteCard from '../components/SiteCard.jsx'
+import { SponsorTile } from '../components/SponsorCards.jsx'
 import { latestCheckedAt } from '../lib/counts.js'
 import {
   SORTS,
@@ -231,9 +232,10 @@ export default function AllSites() {
       {state.status === 'ready' && results.length > 0 ? (
         <>
           <div className="vl-grid">
-            {results.slice(0, visible).map((item, index) => (
-              <SiteCard key={item.entryId} item={item} priority={index < 3} />
-            ))}
+            {results.slice(0, visible).flatMap((item, index) => [
+              ...(index === 3 ? [<SponsorTile key="sponsor-slot" slot={0} />] : []),
+              <SiteCard key={item.entryId} item={item} priority={index < 3} />,
+            ])}
           </div>
           {Math.min(visible,results.length) < totalResults ? (
             <div ref={sentinel} className="vl-grid-sentinel" aria-hidden="true" />

@@ -35,13 +35,13 @@ export function loadSiteIndex({ reload = false } = {}) {
 /* ---------- 2. URL 状态 ---------- */
 
 /** 从 `#/sites?q=x&licenses=MIT,custom` 里取出 query 部分。 */
-export function hashQuery(hash = window.location.hash) {
+export function hashQuery(hash = router.currentHash()) {
   const at = String(hash).indexOf('?')
   return new URLSearchParams(at === -1 ? '' : String(hash).slice(at + 1))
 }
 
 /** hash → 浏览状态。未知参数一律忽略，坏值退回默认，不抛错。 */
-export function readSitesState(hash = window.location.hash) {
+export function readSitesState(hash = router.currentHash()) {
   const params = hashQuery(hash)
   const selections = {}
   for (const axis of DECISION_AXES) {
@@ -211,7 +211,7 @@ export function licenseValues(item) {
  * WP-C 会在 router.js 里导出 navigate(hash, state)；它落地之前用等价的本地实现。
  * 用命名空间 import 是为了在那个导出还不存在时不炸模块解析。
  */
-export function navigateTo(href, from = window.location.hash) {
+export function navigateTo(href, from = router.currentHash()) {
   if (typeof router.navigate === 'function') {
     router.navigate(href, { from })
     return

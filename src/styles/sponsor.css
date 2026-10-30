@@ -1,0 +1,23 @@
+/* 列表里的赞助卡与赞助小窗。和网格卡同尺寸、同边框，靠“赞助”标签区分。 */
+.vl-sponsor-card{position:relative;display:flex;flex-direction:column;gap:var(--vl-s3);padding:var(--vl-s4);border:1px solid var(--vl-line);border-radius:var(--vl-r-sm);background:var(--vl-surface-sunk);height:100%;box-sizing:border-box}
+.vl-sponsor-card.is-open{border-style:dashed;background:var(--vl-surface)}
+.vl-sponsor-label{margin:0;font-size:var(--vl-fs-2xs);letter-spacing:.08em;color:var(--vl-ink-3);font-weight:var(--vl-fw-bold)}
+.vl-sponsor-head{display:flex;align-items:center;gap:12px}
+.vl-sponsor-head img,.vl-sponsor-mark{width:36px;height:36px;border-radius:8px;flex:none}
+.vl-sponsor-mark{display:flex;align-items:center;justify-content:center;border:1px solid var(--vl-line);color:var(--vl-ink-3);font-weight:var(--vl-fw-bold)}
+.vl-sponsor-head h3{margin:0;font-size:var(--vl-fs-lg);line-height:var(--vl-lh-lg);color:var(--vl-ink)}
+.vl-sponsor-line{margin:0;color:var(--vl-ink-2);font-size:var(--vl-fs-xs);line-height:var(--vl-lh-xs);flex:1}
+.vl-sponsor-card .library-button{align-self:flex-start}
+.vl-sponsor-dialog{border:1px solid var(--vl-line);border-radius:10px;padding:0;max-width:min(480px,calc(100vw - 32px));width:100%;background:var(--vl-surface);color:var(--vl-ink);box-shadow:var(--vl-shadow-2,0 20px 60px rgba(0,0,0,.18))}
+.vl-sponsor-dialog::backdrop{background:rgba(20,20,20,.35)}
+.vl-sponsor-dialog-in{position:relative;display:grid;gap:16px;padding:28px}
+.vl-sponsor-dialog h2{margin:0;font:650 24px/1.25 var(--vl-serif);letter-spacing:-.02em}
+.vl-sponsor-close{position:absolute;top:12px;right:12px;width:36px;height:36px;border:0;background:none;color:var(--vl-ink-3);font-size:22px;cursor:pointer;border-radius:6px}
+.vl-sponsor-close:hover{background:var(--vl-surface-sunk);color:var(--vl-ink)}
+.vl-sponsor-amounts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.vl-sponsor-amounts button{min-height:44px;border:1px solid var(--vl-line-strong);border-radius:6px;background:var(--vl-surface);color:var(--vl-ink);font:520 15px var(--vl-sans);cursor:pointer;font-variant-numeric:tabular-nums}
+.vl-sponsor-amounts button.is-on{background:var(--vl-ink);color:var(--vl-surface);border-color:var(--vl-ink)}
+.vl-sponsor-note{margin:0;font-size:12px;line-height:1.6;color:var(--vl-ink-3)}
+.vl-sponsor-faq{margin:4px 0 0;display:grid;gap:12px;border-top:1px solid var(--vl-line);padding-top:16px}
+.vl-sponsor-faq dt{font-size:13px;font-weight:650;margin:0 0 4px}
+.vl-sponsor-faq dd{margin:0;font-size:13px;line-height:1.65;color:var(--vl-ink-2)}

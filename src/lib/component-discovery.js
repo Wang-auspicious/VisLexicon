@@ -83,7 +83,8 @@ export function lexicalCandidates(query, units, { limit=32, includeZero=false }=
   const wantsButton=/按钮|\bbutton\b/i.test(query), wantsCard=/卡片|\bcard\b/i.test(query)
   return units.map(unit=>{
     const key=[unit.nameZh,unit.nameEn,unit.componentType,...(unit.tags||[])].join(' ').toLowerCase()
-    const text=[unit.descriptionZh,unit.descriptionEn,unit.prompt,...(unit.offers||[]).map(x=>x.scope)].join(' ').toLowerCase()
+    // searchEn: the static build's de-duplicated English words standing in for descriptionEn + prompt.
+    const text=[unit.descriptionZh,unit.descriptionEn,unit.prompt,unit.searchEn,...(unit.offers||[]).map(x=>x.scope)].join(' ').toLowerCase()
     const matched=terms.filter(t=>key.includes(t)||text.includes(t))
     let score=matched.reduce((v,t)=>v+(key.includes(t)?3:0.55),0)
     if(wantsButton && unit.componentType==='button')score+=7

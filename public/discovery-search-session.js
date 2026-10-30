@@ -41,6 +41,13 @@ export function discoveryStatus(state, en = false) {
   if (!state.query.trim()) return ''
   if (state.status === 'error' && old) return en ? 'This update failed; showing the previous results.' : '本次检索未完成，仍显示上次结果。'
   if (state.status === 'error' && !data) return en ? 'Could not update results.' : '暂时无法更新检索结果。'
+  // Public site: the shared rank function declined; the first-pass order stays.
+  if (state.status === 'error' && /^RANK_/.test(state.error || '')) {
+    const reason = state.error === 'RANK_DAILY_LIMIT' ? (en ? "Today's AI ranking quota is used up" : '今日 AI 精排额度已用完')
+      : state.error === 'RANK_RATE_LIMITED' ? (en ? 'Too many requests, AI ranking resumes shortly' : '请求太频繁，AI 精排稍后恢复')
+      : (en ? 'AI ranking is unavailable' : 'AI 精排暂不可用')
+    return en ? `${reason} · sorted by keyword match` : `${reason} · 已按关键词相关度排序`
+  }
   if (state.composing) return en ? 'Finish typing to update results.' : '输入完成后更新结果。'
   if (state.status === 'waiting' || state.status === 'preparing') return old ? (en ? 'Updating… Previous results remain until ready.' : '正在更新，暂保留上次结果…') : (en ? 'Finding candidates in this topic…' : '正在当前主题里筛选候选…')
   const judged = data?.judgedCount ?? data?.candidateCount ?? 0
@@ -79,6 +86,8 @@ export function createDiscoverySearch({ scope, theme = '', indexVersion, allowed
         const next = await request('/api/discovery/search', payload(query, id, snapshot.refineToken, reviewMore), ctl.signal)
         if (!valid(id, ctl.signal)) return
         check(next)
+        // Static site: the capped rank function declined; keep the first-pass results and say why.
+        if (next.rankError) throw Error(next.rankError)
         // A user may have expanded beyond the response's 240-card limit while
         // the model was working. Refill that window from the new immutable
         // token before swapping it in; never collapse the user's loaded rows.

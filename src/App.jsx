@@ -1,5 +1,6 @@
 import { Suspense, lazy, useEffect, useRef, useState } from 'react'
-import { useRoute, parseRoute } from './router.js'
+import { useRoute, parseRoute, navigate } from './router.js'
+import { INFO_ROUTES } from './data/site-info.js'
 import { loadStored } from './store.js'
 import GlobalSearch from './components/GlobalSearch.jsx'
 import ChannelNavigation from './components/ChannelNavigation.jsx'
@@ -24,6 +25,8 @@ const Playground = lazy(() => import('./views/Playground.jsx'))
 const ResourceLibrary = lazy(() => import('./views/ResourceLibrary.jsx'))
 const CurationReview = lazy(() => import('./views/CurationReview.jsx'))
 const ResourceKit = lazy(() => import('./views/ResourceKit.jsx'))
+const InfoPages = lazy(() => import('./views/InfoPages.jsx'))
+const SponsorDialog = lazy(() => import('./components/SponsorCards.jsx').then((m) => ({ default: m.SponsorDialog })))
 
 loadStored()
 
@@ -108,10 +111,13 @@ export default function App() {
    * 这一轮的 effect 会被当成「换页」而把列表滚回顶部。所以要记住上一轮是不是叠层，
    * 叠层刚关掉就整段跳过。 */
   const wasOverlayRef = useRef(overlayOpen)
+  const sponsorClosedRef = useRef(false)
   useEffect(() => {
     const closedOverlay = wasOverlayRef.current && !overlayOpen
     wasOverlayRef.current = overlayOpen
     if (overlayOpen || closedOverlay) return
+    /* #sponsor 只开关赞助小窗，不动页面位置。 */
+    if (route.fragment === 'sponsor' || sponsorClosedRef.current) { sponsorClosedRef.current = route.fragment === 'sponsor'; return }
     if (route.fragment) {
       const target = document.getElementById(route.fragment)
       if (target) {
@@ -125,7 +131,7 @@ export default function App() {
   /* 叠层关闭：从列表点进来的用后退键还原，深链进来的落到列表页。 */
   const closeOverlay = () => {
     if (window.history.state?.from) window.history.back()
-    else window.location.hash = '#/'
+    else navigate('#/')
   }
 
   const backgroundLocked = menuOpen || overlayOpen
@@ -185,11 +191,12 @@ export default function App() {
               duplicated the index fetch and made every resource route wait on a
               second search surface before its first cards could paint. */}
           {['curation', 'sites'].includes(baseRoute) && <ComponentDiscovery initialQuery={route.query.q||''} key={baseRoute === 'sites' ? 'curation' : baseRoute} scope="curation" />}
-          <RouteErrorBoundary key={`route:${baseRoute}`}>
+          <RouteErrorBoundary key={`route:${baseRoute}:${route.params.resourceType || ''}`}>
           <Suspense fallback={<RouteFallback />}>
             {baseRoute === 'curation' && <Curation />}
             {baseRoute === 'sites' && <AllSites />}
             {baseRoute === 'about' && <About />}
+            {INFO_ROUTES.includes(baseRoute) && <InfoPages name={baseRoute} />}
             {baseRoute === 'favorites' && <Favorites />}
             {baseRoute === 'components' && <Components />}
             {baseRoute === 'playground' && <Playground />}
@@ -212,6 +219,7 @@ export default function App() {
           )}
         </main>
         {!['atlas', 'playground'].includes(baseRoute) && <SiteFooter />}
+        {route.fragment === 'sponsor' && <Suspense fallback={null}><SponsorDialog open onClose={() => navigate(route.hash.replace(/#sponsor$/, ''))} /></Suspense>}
       </div>
 
       {overlayOpen && (
