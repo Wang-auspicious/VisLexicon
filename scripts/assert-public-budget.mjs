@@ -10,9 +10,10 @@ const prompts = readJson('src/data/image-prompts.json')
 if (!Array.isArray(prompts) || prompts.length > 12) fail(`image prompt examples: ${prompts.length}`)
 if (prompts.some(item => /xhs[-_]|小红书/iu.test(JSON.stringify(item)))) fail('private social collection marker found in prompt examples')
 
+const release = readJson('public/release.json')
 const siteIndex = readJson('public/data/site-index.json')
 if (!Array.isArray(siteIndex.items)) fail('site items missing')
-const verified = verifiedCurationAllowance(root, siteIndex)
+const verified = verifiedCurationAllowance(root, siteIndex, release)
 if (siteIndex.items.filter(item => !verified.has(item.entryId)).length > 6) fail(`unbatched site examples: ${siteIndex.items.length - verified.size}`)
 
 for (const scope of ['curation', 'atlas', 'skills', 'ppt', 'science', 'graphics']) {

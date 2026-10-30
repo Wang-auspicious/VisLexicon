@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-4c1890b9a0511bce
+releaseId: release-5a52b8de72668b1b
 revision: 0c9f037ae76f91db9e69bbb92e539c740307c91b763f3f74604e8124c899a253
 status: APPROVED
 name: Ingradients

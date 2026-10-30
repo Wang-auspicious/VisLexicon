@@ -1,0 +1,1225 @@
+{
+  "batchId": "site-proof-20261030",
+  "target": 19,
+  "releaseId": "release-5a52b8de72668b1b",
+  "createdAt": "2026-10-30T08:25:00Z",
+  "source": "locally approved Site Entries with independent screenshot review; no unreviewed candidates included",
+  "entries": [
+    {
+      "entryId": "aleph-alpha-com",
+      "revision": "18759b266b25dc782d80611650efd8cf992982edd287adbc7860b9c168fc2dd3",
+      "contentDigest": "18759b266b25dc782d80611650efd8cf992982edd287adbc7860b9c168fc2dd3",
+      "sourceBundleSha256": "2c96edd8072c2bc06bb2367f1449a96d160098221e6c98e360356eb773d3c621",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Developer 栏目下的 API reference 总页，正文列出 PhariaData、PhariaOS、PhariaSearch、PhariaStudio、PhariaInference、Responses 六套接口，看得出文档覆盖面。",
+          "alt": "Aleph Alpha API reference 总页，列出六套 Pharia 接口"
+        },
+        "proof": {
+          "selectionRationale": "点进其中的 PhariaData API：页面有 1.0.0 和 OAS 3.0 徽标、规范下载链接，下方是服务器地址与变量的配置区。",
+          "alt": "PhariaData API 参考页：版本徽标、规范下载与服务器配置"
+        }
+      },
+      "selectionDigest": "8850e36a0f0f882dc36cabed67c1dec93fae5129b4d437525e65ed64712d350c",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T04:47:56Z",
+        "notesSha256": "e718e9985c4c0a979caac8aa2d0a9d9954b4a238da75fab198709ec3b81e3407",
+        "shotSha256": [
+          "c12f9ac22ad12e741b43641c724fd9f4e83b08e7d37f61577c2f91a4e661e030",
+          "c3b3bfc27d14797f79b57c08ac63945e0c20498a509762c2759a0f3097a4bc02"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "目录页正文列出六套 API 接口，条目页 PhariaData API 的 1.0.0 与 OAS 3.0 徽标、规范下载、服务器地址与变量均在屏内可见，三页同站无错误页，说明与截图一致。",
+        "curatorHash": "8c294e0894fdf15a10c5404d75a31c05af93f9f7d76523dc3a73046fd0399838",
+        "reviewerHash": "cd3cd9347ad7380722148477ba6cc3b7de63d4491841e09781deee86cc999714",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/aleph-alpha-com/identity.jpg",
+          "sha256": "50f8f12e4f99ffe8a7fe1ec5d4874c4fbfd26b1c997550570f742e6795bf5347",
+          "width": 1280,
+          "height": 900,
+          "url": "https://docs.aleph-alpha.com/phariaai-home/latest/index.html"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/aleph-alpha-com/v2-breadth.png",
+          "sha256": "c12f9ac22ad12e741b43641c724fd9f4e83b08e7d37f61577c2f91a4e661e030",
+          "width": 1280,
+          "height": 900,
+          "url": "https://docs.aleph-alpha.com/phariaai-dev-guide/latest/pharia-openapi/index.html"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/aleph-alpha-com/v2-proof.png",
+          "sha256": "c3b3bfc27d14797f79b57c08ac63945e0c20498a509762c2759a0f3097a4bc02",
+          "width": 1280,
+          "height": 900,
+          "url": "https://docs.aleph-alpha.com/phariaai-dev-guide/latest/pharia-openapi/pharia-data.html"
+        }
+      ],
+      "reviewSha256": "05d881d951026d7f6c48ad48f441858f48b70cf1ca391838fe3069172ef0750d"
+    },
+    {
+      "entryId": "alexandrbukhtatyy-github-io-reformer",
+      "revision": "3d6e456625612b22fb6686cb432d3f6b4f668a440656befa52d275eeebda0e4f",
+      "contentDigest": "3d6e456625612b22fb6686cb432d3f6b4f668a440656befa52d275eeebda0e4f",
+      "sourceBundleSha256": "85bec8893b7348b9c7632f443f6f64e947b5024f929e533a6ebceedceff765b0",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "UI-Kit 总览页：左栏按 Текстовые поля、Выбор 等分组列出 Input、Textarea、InputOTP、Select、Checkbox、Calendar、DatePicker、FileUpload 等组件，正文写明这套组件基于 shadcn/ui，并附 npm install 命令。",
+          "alt": "ReFormer UI-Kit 总览页，左栏分组列出表单组件"
+        },
+        "proof": {
+          "selectionRationale": "DatePicker 组件页：说明它由 Popover、Calendar 和按钮组成，介绍 DatePickerRange、DatePickerMulti 两个变体，底部有 Variants、Examples、API 标签。",
+          "alt": "ReFormer DatePicker 组件页：组成说明与两个变体"
+        }
+      },
+      "selectionDigest": "b324f338e07fd88c394b546f4d14b6b718f6cc98ef4d424051338905b40406a9",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T05:03:23Z",
+        "notesSha256": "edd809dbc60e0d3379a2662bba0277fd701f364c332fb9339b9f809a0595d636",
+        "shotSha256": [
+          "8458ddfc29408e6703f8dcf19e31fe91af2c363525ba22f07e2918071d44904c",
+          "0b111fbc31ebba5863b18cfa026b9e5d9e979db7649ee31c389a3f2d7ef04a8b"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "UI-Kit 总览页左栏的 Текстовые поля、Выбор 分组和其下的 Input、Textarea、InputOTP、Select、Checkbox、Calendar、DatePicker、FileUpload 等组件名在屏内，正文写明基于 shadcn/ui 并有 npm install 命令；DatePicker 页的 Popover、Calendar、按钮、DatePickerRange、DatePickerMulti 两个变体的取值格式，以及底部 Variants、Examples、API 标签在屏内，同站无错误页。",
+        "curatorHash": "8c294e0894fdf15a10c5404d75a31c05af93f9f7d76523dc3a73046fd0399838",
+        "reviewerHash": "cd3cd9347ad7380722148477ba6cc3b7de63d4491841e09781deee86cc999714",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/alexandrbukhtatyy-github-io-reformer/identity.jpg",
+          "sha256": "cb5acb09a4240c1ad720cf437652c1c23886ff33280edc4fdd914a1075f71f77",
+          "width": 1280,
+          "height": 900,
+          "url": "https://alexandrbukhtatyy.github.io/ReFormer/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/alexandrbukhtatyy-github-io-reformer/v2-breadth.png",
+          "sha256": "8458ddfc29408e6703f8dcf19e31fe91af2c363525ba22f07e2918071d44904c",
+          "width": 1280,
+          "height": 900,
+          "url": "https://alexandrbukhtatyy.github.io/ReFormer/docs/ui-kit/overview"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/alexandrbukhtatyy-github-io-reformer/v2-proof.png",
+          "sha256": "0b111fbc31ebba5863b18cfa026b9e5d9e979db7649ee31c389a3f2d7ef04a8b",
+          "width": 1280,
+          "height": 900,
+          "url": "https://alexandrbukhtatyy.github.io/ReFormer/docs/ui-kit/date-picker"
+        }
+      ],
+      "reviewSha256": "c0163309af4c89f81d373e6e5a375937600cb94175eb91dd15c74b8c934b5b5c"
+    },
+    {
+      "entryId": "alexxnb-github-io-svelte-chota",
+      "revision": "4ed571777fa7a8bf6ecab27a231d8528188b58b48448577001a816b3201fb22f",
+      "contentDigest": "4ed571777fa7a8bf6ecab27a231d8528188b58b48448577001a816b3201fb22f",
+      "sourceBundleSha256": "f5a5aa21001190f049b7ce7a68ea3091746ddaf75bf034f96b24bf012a596e06",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "站点没有单独的组件总览页。这一页左栏完整露出 Container、Grid、Buttons、Form、Nav、Tabs、Card、Tag、Details、Modal、Icon 共 11 个组件，就是它的目录；正文是 Usage 用法说明和示例代码。",
+          "alt": "Svelte-Chota Usage 页，左栏完整列出 11 个组件"
+        },
+        "proof": {
+          "selectionRationale": "Buttons 组件页：Default buttons 一组有默认、主色、次色、深色、错误、成功六种按钮，Outline buttons 一组是描边样式，两组下面都附 Svelte 代码。",
+          "alt": "Svelte-Chota Buttons 页：两组按钮样式与对应代码"
+        }
+      },
+      "selectionDigest": "7437a6e3ee9ab2f35826856454fbdb1bdc1e724cfce99a25c203b5390892dd9b",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T04:49:36Z",
+        "notesSha256": "aa3371a25147a5b7ba22df3f3df5c5307de123e31c2fd3d16ea926ccec544f89",
+        "shotSha256": [
+          "584f515e7f75212d62761358e8d14deffa8a8c68288b21d3a7b69149ceaaa1fd",
+          "f8942f15e73ab22f82d0e40429936203b8df810117c3d1eb498365ce7b35070c"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "目录页 Usage 的左栏从 Getting Started 到 Icon 没有折叠分组，完整露出 11 个组件，正文是用法说明与代码；Buttons 页的 Default 组与 Outline 组下面都有代码，同站无错误页。",
+        "curatorHash": "8c294e0894fdf15a10c5404d75a31c05af93f9f7d76523dc3a73046fd0399838",
+        "reviewerHash": "cd3cd9347ad7380722148477ba6cc3b7de63d4491841e09781deee86cc999714",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/alexxnb-github-io-svelte-chota/identity.jpg",
+          "sha256": "a04a5d2a64847464b6ff53f1f32897c494768d51c344100e0453e725c3593236",
+          "width": 1280,
+          "height": 900,
+          "url": "https://alexxnb.github.io/svelte-chota/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/alexxnb-github-io-svelte-chota/v2-breadth.png",
+          "sha256": "584f515e7f75212d62761358e8d14deffa8a8c68288b21d3a7b69149ceaaa1fd",
+          "width": 1280,
+          "height": 900,
+          "url": "https://alexxnb.github.io/svelte-chota/usage/"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/alexxnb-github-io-svelte-chota/v2-proof.png",
+          "sha256": "f8942f15e73ab22f82d0e40429936203b8df810117c3d1eb498365ce7b35070c",
+          "width": 1280,
+          "height": 900,
+          "url": "https://alexxnb.github.io/svelte-chota/components/buttons/"
+        }
+      ],
+      "reviewSha256": "65bae9a7a424d963a56b80a0a3c9992dafa031c1231bc75c9a73dab8bcd7a850"
+    },
+    {
+      "entryId": "algolia-com-doc-guides-building-search-ui-what-is-instantsearch-react",
+      "revision": "cda54bc036902a8ff25641a68b7e1c1079cf5589267344642238a5cafb0a90a5",
+      "contentDigest": "cda54bc036902a8ff25641a68b7e1c1079cf5589267344642238a5cafb0a90a5",
+      "sourceBundleSha256": "7ab08a87203c949e2a6aedd3d95465227d9f0421bf0e6caf9f89b9112569e6b0",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "React InstantSearch 组件总览：按 Basics、Results、Recommendations、Refinements、Pagination 等分组，逐行列出 InstantSearch、SearchBox、Configure、Autocomplete 等组件及一句话用途。",
+          "alt": "Algolia React InstantSearch 组件总览表"
+        },
+        "proof": {
+          "selectionRationale": "SearchBox 组件参考页：签名区列出 placeholder、queryHook、ignoreCompositionEvents、autoFocus 等 props，右侧目录有 Examples、Props、Hook 三节。",
+          "alt": "Algolia React InstantSearch 的 SearchBox 参考页与 props 签名"
+        }
+      },
+      "selectionDigest": "41e84cf58f89fcc4e1776a63f4a8960763fadefa67b55af573c05a6462c9371f",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T04:47:56Z",
+        "notesSha256": "dd26996e06ed628b0344bcc4c789d0d75dda81f7674bd54d44454c936c6428a8",
+        "shotSha256": [
+          "7d9c16e879d3783da67b35c6ac22128fcea5cb03863935d9416c6bf0320930bb",
+          "474a1659a5a823bbb2b12e1dce13f8aac49b55d9bea1078c4d3640314e9d654d"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "目录页 Basics 表逐行列出 InstantSearch 到 Chat 并带一句话用途，右侧分组可见；条目页 SearchBox 签名中的 placeholder、queryHook、ignoreCompositionEvents、autoFocus 与右侧 Examples、Props、Hook 均在屏内，同站无错误页，已去掉「完整」。",
+        "curatorHash": "8c294e0894fdf15a10c5404d75a31c05af93f9f7d76523dc3a73046fd0399838",
+        "reviewerHash": "cd3cd9347ad7380722148477ba6cc3b7de63d4491841e09781deee86cc999714",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/algolia-com-doc-guides-building-search-ui-what-is-instantsearch-react/identity.jpg",
+          "sha256": "281437b500b26ff73519e26dace62827687e6adca44ba171ea69239895a2b184",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/algolia-com-doc-guides-building-search-ui-what-is-instantsearch-react/v2-breadth.png",
+          "sha256": "7d9c16e879d3783da67b35c6ac22128fcea5cb03863935d9416c6bf0320930bb",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.algolia.com/doc/api-reference/widgets/react"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/algolia-com-doc-guides-building-search-ui-what-is-instantsearch-react/v2-proof.png",
+          "sha256": "474a1659a5a823bbb2b12e1dce13f8aac49b55d9bea1078c4d3640314e9d654d",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.algolia.com/doc/api-reference/widgets/search-box/react"
+        }
+      ],
+      "reviewSha256": "62765409b975a85271e58fc1761525d9ce92ca97501961ab9d62bc6f94d5320d"
+    },
+    {
+      "entryId": "alignui-com",
+      "revision": "5d71d025991054e6146c61b9b97fa37d69385bd08bc94484542a264e49b3b05c",
+      "contentDigest": "5d71d025991054e6146c61b9b97fa37d69385bd08bc94484542a264e49b3b05c",
+      "sourceBundleSha256": "76991e39c81ca1f4eb2ea5ae2d65cbe05645e938be2adab9cf52a8bba7e305ec",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "文档 Introduction 页：左栏按 All Products 列出 Base Components、Components & Blocks、Sectoral Templates、Figma File，下面的 All Components 里有 Button、Button Group、Compact Button、Fancy Button 等组件名。",
+          "alt": "AlignUI 文档 Introduction 页，左栏列出产品分区和组件名"
+        },
+        "proof": {
+          "selectionRationale": "Button 组件页：带 Preview / Code 切换的预览区，下方是 Installation 步骤，右侧目录列出 Primary (Default)、Neutral、Error、Size、Disabled 等变体。",
+          "alt": "AlignUI Button 组件页：预览区与变体目录"
+        }
+      },
+      "selectionDigest": "5fe87fe12890a45452e13bd0acd8665cd71901d2aaa8227f92c0d6e423638fd5",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T05:03:23Z",
+        "notesSha256": "74f63a25e67356b3b11c0538b81d5aebba0b2b8420a8f35878870fb0682db915",
+        "shotSha256": [
+          "7e050f0a5e6bcd1c93015a8c52393075f632abbd4c60cd455911d43bd80a8d1b",
+          "62eead1c7eee2f9937cbe921745a10d82cd381c50fd342c9a1cbbd57b8405e8c"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "Introduction 页左栏的 All Products（Base Components、Components & Blocks、Sectoral Templates、Figma File）和 All Components 下的 Button、Button Group、Compact Button、Fancy Button 等组件名在屏内，正文是两段带列表的介绍而非三两句；Button 页的 Preview / Code 切换、Installation 步骤和右侧 Primary (Default)、Neutral、Error、Size、Disabled 等变体在屏内，同站无错误页。",
+        "curatorHash": "8c294e0894fdf15a10c5404d75a31c05af93f9f7d76523dc3a73046fd0399838",
+        "reviewerHash": "cd3cd9347ad7380722148477ba6cc3b7de63d4491841e09781deee86cc999714",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/alignui-com/identity.jpg",
+          "sha256": "5c6c43ead7dc5783abb96d10b44a6422067ccdcd11af3663613bc80bb24cbadc",
+          "width": 1280,
+          "height": 900,
+          "url": "https://alignui.com/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/alignui-com/v2-breadth.png",
+          "sha256": "7e050f0a5e6bcd1c93015a8c52393075f632abbd4c60cd455911d43bd80a8d1b",
+          "width": 1280,
+          "height": 900,
+          "url": "https://alignui.com/docs/v1.2/introduction"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/alignui-com/v2-proof.png",
+          "sha256": "62eead1c7eee2f9937cbe921745a10d82cd381c50fd342c9a1cbbd57b8405e8c",
+          "width": 1280,
+          "height": 900,
+          "url": "https://alignui.com/docs/v1.2/ui/button"
+        }
+      ],
+      "reviewSha256": "9f7e6d9bd68c6845594fd21da0020adba8e94d7ad8be112a9b84d14e23998710"
+    },
+    {
+      "entryId": "allfreefonts-co",
+      "revision": "63094df26baaa585908025b31fa7f9437c69a56624b99837953fd476aea840b9",
+      "contentDigest": "63094df26baaa585908025b31fa7f9437c69a56624b99837953fd476aea840b9",
+      "sourceBundleSha256": "f430baa2035831f44ef913274a98d2ebc8fdb564546d647dac4054b4ca557d62",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Script 分类页，标题 6,793 Free Script Fonts，上方是 Fancy、Basic、Script、Display 等分类导航，下方是带字形预览的字体卡片。",
+          "alt": "All Free Fonts 的 Script 分类页：分类导航与字体预览卡片"
+        },
+        "proof": {
+          "selectionRationale": "单款字体 Cutewell 的详情页：面包屑是 Home › Script › Handwritten › Cutewell Font，正文写明可免费下载。",
+          "alt": "All Free Fonts 的 Cutewell 字体详情页"
+        }
+      },
+      "selectionDigest": "a296461599e5cc065fc17a1c8a441ddfa92d173e3b003fe320b317475bda170e",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T04:51:26Z",
+        "notesSha256": "3276a76dff0445f716a97bb89807fed68e0ce6169b5502a2e3d17ce2e59a82de",
+        "shotSha256": [
+          "fd5e99f02a6efa8ef629007c0d14714394e5737fb07a74d328c1ff79093c12cc",
+          "fd18c996b95a5be49fd7eaed9f52b7878ce16a060ec682c4946f77ee34c3800a"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "Script 分类页的标题 6,793 Free Script Fonts、整块分类导航和字体卡片在屏内；Cutewell 详情页的面包屑 Home › Script › Handwritten › Cutewell Font 与「正文写明可免费下载」在屏内，同站无错误页，许可证文字已删。",
+        "curatorHash": "8c294e0894fdf15a10c5404d75a31c05af93f9f7d76523dc3a73046fd0399838",
+        "reviewerHash": "cd3cd9347ad7380722148477ba6cc3b7de63d4491841e09781deee86cc999714",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/allfreefonts-co/identity.jpg",
+          "sha256": "6acb15cc42f989a0fe49e33f958cf6190e1af039d4dbb948aaf2203da85a27cb",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.allfreefonts.co/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/allfreefonts-co/v2-breadth.png",
+          "sha256": "fd5e99f02a6efa8ef629007c0d14714394e5737fb07a74d328c1ff79093c12cc",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.allfreefonts.co/script-fonts/"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/allfreefonts-co/v2-proof.png",
+          "sha256": "fd18c996b95a5be49fd7eaed9f52b7878ce16a060ec682c4946f77ee34c3800a",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.allfreefonts.co/cutewell-font/"
+        }
+      ],
+      "reviewSha256": "fa5ed9594015d558d7c2c8dfaf75d45c50b04762eeecf9fe7a31f6cc9de3813d"
+    },
+    {
+      "entryId": "allma-dev",
+      "revision": "8943f6ef98a3b1830460f7cbb9415a701c4eba20bedb18a0620ba493e1647fec",
+      "contentDigest": "8943f6ef98a3b1830460f7cbb9415a701c4eba20bedb18a0620ba493e1647fec",
+      "sourceBundleSha256": "563098cfac3c487751ae085b5542a013673ab4c19bec95b98ced513c0614601d",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Key Concepts 分类页用四张卡片列出 Flows & Steps、Data Context、Versioning & Publishing、Serverless 架构原则，左栏还有 How-To Guides、Reference 等章节。",
+          "alt": "Allma 文档 Key Concepts 分类页：四个核心概念卡片"
+        },
+        "proof": {
+          "selectionRationale": "Flows & Steps 概念页：解释 Flow 是带版本的 JSON 流程定义，并列出 LLM_INVOCATION、API_CALL、PARALLEL_FORK_MANAGER 等内置步骤类型。",
+          "alt": "Allma 文档 Flows & Steps 页：流程与步骤类型说明"
+        }
+      },
+      "selectionDigest": "73473287a17f615fcd672110fa501cb2003115fe33e8b7fb6c0b8500f8fea9b6",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T04:47:56Z",
+        "notesSha256": "a15e525ffbaad6bf4d89530621c9364409ddf408b31b95e6e72ea4238ec26f84",
+        "shotSha256": [
+          "2bb43a15f9764b71e2310205f08da63889781fd65c0ec4ff79b94e8c9e424c95",
+          "9970acc9cd2c2c5767cd70fc018c526eb8faec19c0f39d97ac234dcad7e6b9ed"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "Key Concepts 分类页的四张概念卡片与左栏章节可见，符合概念分类页的首选标准；Flows & Steps 页的 JSON 流程定义与 LLM_INVOCATION、API_CALL、PARALLEL_FORK_MANAGER 步骤类型均在屏内，同站无错误页。",
+        "curatorHash": "8c294e0894fdf15a10c5404d75a31c05af93f9f7d76523dc3a73046fd0399838",
+        "reviewerHash": "cd3cd9347ad7380722148477ba6cc3b7de63d4491841e09781deee86cc999714",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/allma-dev/identity.jpg",
+          "sha256": "3e02bbe5d2ec3ef1e51ddf9add56a7fa23f75c1b4826e98c70ba9bec04a767d2",
+          "width": 1280,
+          "height": 900,
+          "url": "https://docs.allma.dev/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/allma-dev/v2-breadth.png",
+          "sha256": "2bb43a15f9764b71e2310205f08da63889781fd65c0ec4ff79b94e8c9e424c95",
+          "width": 1280,
+          "height": 900,
+          "url": "https://docs.allma.dev/docs/category/key-concepts"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/allma-dev/v2-proof.png",
+          "sha256": "9970acc9cd2c2c5767cd70fc018c526eb8faec19c0f39d97ac234dcad7e6b9ed",
+          "width": 1280,
+          "height": 900,
+          "url": "https://docs.allma.dev/docs/getting-started/key-concepts/flows-and-steps"
+        }
+      ],
+      "reviewSha256": "e9fe5675c381a4f9a36399cc9a345a9deea276e5790635c72c95b27e61ebb2a4"
+    },
+    {
+      "entryId": "allsvgicons-com",
+      "revision": "9e10c9f32afd21bf8a4ad39a290c6d73aa8e6277bdba38a3be309b2521d0e415",
+      "contentDigest": "9e10c9f32afd21bf8a4ad39a290c6d73aa8e6277bdba38a3be309b2521d0e415",
+      "sourceBundleSha256": "5cfe6ddff172b44397ae9b12f1e9764733709b102a961c18e22c6b8ebcbcc08b",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Icon Packs 总页写明 243 个开源图标包、共 416,940 个图标，下方 Popular libraries 用卡片列出 Lucide、Heroicons、Tabler Icons、Material Symbols 等，前排卡片标出图标数。",
+          "alt": "All SVG Icons 图标库总页：图标包卡片列表"
+        },
+        "proof": {
+          "selectionRationale": "点进 Lucide：顶部写 1,903 icons、24px grid，下面是可搜索的图标网格，左栏是 ICON PACKS 图标库列表。",
+          "alt": "All SVG Icons 的 Lucide 图标页：图标网格与左栏库列表"
+        }
+      },
+      "selectionDigest": "91e5a553a973d777508fafe4a45c7cf70d095529c6c153d684c7723a957f0c1b",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T04:51:26Z",
+        "notesSha256": "466cf23c620c883b52996794c6695c1a19e3dfc2bbe94122da1509c07c5b1733",
+        "shotSha256": [
+          "f84eb55cc1f0592ff19a6a31853114d7fa9146cb623bd8dc267da80eb2d7b700",
+          "059216c7caa87bb2692c199edf4082b8c8ad9cd6a23ed1842a17825a250fb624"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "Icon Packs 页的 243 个图标包、416,940 个图标、Popular libraries 卡片与前排卡片的图标数在屏内；Lucide 页的 1,903 icons、24px grid、搜索框与图标网格、左栏 ICON PACKS 列表都在屏内，同站无错误页。",
+        "curatorHash": "8c294e0894fdf15a10c5404d75a31c05af93f9f7d76523dc3a73046fd0399838",
+        "reviewerHash": "cd3cd9347ad7380722148477ba6cc3b7de63d4491841e09781deee86cc999714",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/allsvgicons-com/identity.jpg",
+          "sha256": "1925779ef449476a130fd0253d111452e16e68f5f250463ca7d551f6ddc0384d",
+          "width": 1280,
+          "height": 900,
+          "url": "https://allsvgicons.com/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/allsvgicons-com/v2-breadth.png",
+          "sha256": "f84eb55cc1f0592ff19a6a31853114d7fa9146cb623bd8dc267da80eb2d7b700",
+          "width": 1280,
+          "height": 900,
+          "url": "https://allsvgicons.com/pack/"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/allsvgicons-com/v2-proof.png",
+          "sha256": "059216c7caa87bb2692c199edf4082b8c8ad9cd6a23ed1842a17825a250fb624",
+          "width": 1280,
+          "height": 900,
+          "url": "https://allsvgicons.com/pack/lucide/"
+        }
+      ],
+      "reviewSha256": "bd890fcacc09d7dddbc0236d7a8b32cceae359fbabc80ac2a580a603e869655a"
+    },
+    {
+      "entryId": "ambientcg-com",
+      "revision": "5083d9590f8c1942a0995911d2a72fbd80f5dab9f13603110c161c17d96f8d90",
+      "contentDigest": "5083d9590f8c1942a0995911d2a72fbd80f5dab9f13603110c161c17d96f8d90",
+      "sourceBundleSha256": "f6fecaefa9ed3195498a549ce2693614907f1a9ebd5df974a0fe87fe72026d13",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "素材列表页写着 Found 2927 Assets，左栏可按关键词、类型、颜色、合集筛选，右侧是材质球缩略图网格。",
+          "alt": "ambientCG 素材列表：筛选栏、Found 2927 Assets 与材质球缩略图"
+        },
+        "proof": {
+          "selectionRationale": "单个材质 Bricks 113 A 的详情页：3D 球体预览，1K 到 8K 的 JPG/PNG 贴图包下载及大小，标签、下载量和发布日期。",
+          "alt": "ambientCG 材质 Bricks 113 A 详情页：预览与多分辨率下载"
+        }
+      },
+      "selectionDigest": "d4a108090ba7cac79cefdc7b0d057c5fb34ee3ece46bd2be4320409c483893a2",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T04:51:26Z",
+        "notesSha256": "a268a49dfecf88af088c912a3eea2123254a781366273252db93e1562dd0bf8d",
+        "shotSha256": [
+          "1c6632b971159861e84e4c40e90982fb1d3f6b55e1b5c9ba9c80348d3ed5d4f2",
+          "448a265426a91cbd5679ea2bb8b0222456c27aac30d4117eef6bedd54edbbe0c"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "列表页的 Found 2927 Assets（总数）、筛选面板和材质球缩略图网格在屏内；Bricks 113 A 详情页的 3D 球体预览、8 个下载包及大小、标签、下载量和发布日期在屏内，同站无错误页。",
+        "curatorHash": "8c294e0894fdf15a10c5404d75a31c05af93f9f7d76523dc3a73046fd0399838",
+        "reviewerHash": "cd3cd9347ad7380722148477ba6cc3b7de63d4491841e09781deee86cc999714",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/ambientcg-com/identity.jpg",
+          "sha256": "3fb5a4df3b1c26ef9fb18223cefa96d66eeef2f6537bbb229d8566c1865f51f4",
+          "width": 1280,
+          "height": 900,
+          "url": "https://ambientcg.com/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/ambientcg-com/v2-breadth.png",
+          "sha256": "1c6632b971159861e84e4c40e90982fb1d3f6b55e1b5c9ba9c80348d3ed5d4f2",
+          "width": 1280,
+          "height": 900,
+          "url": "https://ambientcg.com/list?sort=popular"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/ambientcg-com/v2-proof.png",
+          "sha256": "448a265426a91cbd5679ea2bb8b0222456c27aac30d4117eef6bedd54edbbe0c",
+          "width": 1280,
+          "height": 900,
+          "url": "https://ambientcg.com/view?id=Bricks113A"
+        }
+      ],
+      "reviewSha256": "6af9f68789e71af1778c2d8b1ec8f376f01956e96004cd49f3a9c8a0a42235b4"
+    },
+    {
+      "entryId": "aceternity-sveltekit-io",
+      "revision": "34835532a34670ee85301353f042f6c5537114e0a5196fc50dfa57c93e08fb32",
+      "contentDigest": "34835532a34670ee85301353f042f6c5537114e0a5196fc50dfa57c93e08fb32",
+      "sourceBundleSha256": "95bac05fbd1c25a8f2c0323775f7a0f6ed1883dec411a8aed62be4d3c9c5c1c0",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Components 页面以网格列出组件卡片，首屏可见 3D Card Effect、3D Pin、Animated Tooltip 等名称及预览图，能直接看到组件目录。",
+          "alt": "Aceternity UI Svelte 组件目录：网格展示组件名称和预览图"
+        },
+        "proof": {
+          "selectionRationale": "3D Card Effect 页面显示组件标题、效果说明与 Preview 区域，预览卡片写有 “Make things float in air”，对应一个具体组件。",
+          "alt": "Aceternity UI Svelte 3D Card Effect 页面：组件说明与卡片预览"
+        }
+      },
+      "selectionDigest": "d3838275bca150692211c9df8384be2515da65d5770f78f2d725b285bbcdd681",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T07:17:13Z",
+        "notesSha256": "b13a85e14a531921cca2e6c84c83a27181938968f54ad31f1b9d7f377ab50148",
+        "shotSha256": [
+          "9a4c398d65f6a140a6e7e3f826973a0cca0bc86124873e7a550ae22e39f296e6",
+          "c30a09e595c2a9678d124834b7aa2bf1a75d5641515bf3627bbe56f5c8d955b5"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "目录页显示多项组件名称和预览图；3D Card Effect 页标题、说明和卡片预览与中文说明一致。",
+        "curatorHash": "a7ab695a2a80e047f25e1b96ca773772ae34f35b6d2d9fdbfcbc767df1a97aef",
+        "reviewerHash": "008a53b0d0b766a35d7ffac3689078d4dff9fe720488e9088fdbac498a09994a",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/aceternity-sveltekit-io/identity.jpg",
+          "sha256": "822d4fd7b3dfbd28db6b9894b623245526215076ae32586885e2c5cd3b73eda4",
+          "width": 1280,
+          "height": 900,
+          "url": "https://aceternity.sveltekit.io/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/aceternity-sveltekit-io/v2-breadth.png",
+          "sha256": "9a4c398d65f6a140a6e7e3f826973a0cca0bc86124873e7a550ae22e39f296e6",
+          "width": 1280,
+          "height": 900,
+          "url": "https://aceternity.sveltekit.io/components"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/aceternity-sveltekit-io/v2-proof.png",
+          "sha256": "c30a09e595c2a9678d124834b7aa2bf1a75d5641515bf3627bbe56f5c8d955b5",
+          "width": 1280,
+          "height": 900,
+          "url": "https://aceternity.sveltekit.io/components/3d-card-effect"
+        }
+      ],
+      "reviewSha256": "3a56c1777d2ffd76898b1a825216a1b843eae2450988e5a1e0b3e95018578f07"
+    },
+    {
+      "entryId": "agnosticui-com",
+      "revision": "895b58f9efe40cf2a801a5c99308e5de9cbbdfc0ab4d5c72a00a16686275158e",
+      "contentDigest": "895b58f9efe40cf2a801a5c99308e5de9cbbdfc0ab4d5c72a00a16686275158e",
+      "sourceBundleSha256": "fc6162f6a68e94bb1856ac8af9f6ace40af3d1c78c641fd448a300b44062c463",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Button 页面左侧 Components 栏连续列出 Accordion、Alerts、AspectRatio、Avatar、Badge 等条目；正文展示 Button 的多种颜色样式和实时预览。",
+          "alt": "AgnosticUI 组件目录：侧栏条目与 Button 样式示例"
+        },
+        "proof": {
+          "selectionRationale": "Accordion 页面显示该组件的用途说明和 Examples 区域，首个实时示例含 Basic Accordion 标题、说明文字与展开项。",
+          "alt": "AgnosticUI Accordion 页面：说明文字和实时示例"
+        }
+      },
+      "selectionDigest": "f792e5bdba03e7b83fa08bd8b62c44090380c331a2180faea671c45f64084b0e",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T07:17:13Z",
+        "notesSha256": "116c229c89947ef00cb2128a00a45e7a60fe667d1b265f8804a71528a897739d",
+        "shotSha256": [
+          "e839af53745738c7c989be17ca53809bbdfa3b0c4d6163f8e8d9cf4b65aa7cc9",
+          "3c4b51a06e0e7e62d3aae32896e46a789d0bff1bd9e4850c30727a7229fb1607"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "Button 页侧栏列出多个组件且正文有实际按钮样式；Accordion 页有说明和实时示例，描述未超出截图可见内容。",
+        "curatorHash": "a7ab695a2a80e047f25e1b96ca773772ae34f35b6d2d9fdbfcbc767df1a97aef",
+        "reviewerHash": "008a53b0d0b766a35d7ffac3689078d4dff9fe720488e9088fdbac498a09994a",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/agnosticui-com/identity.jpg",
+          "sha256": "2c3c297f0e4d5b37f5f6413d790971bb62f54e8b5b2dc3226926e999c1570afb",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.agnosticui.com/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/agnosticui-com/v2-breadth.png",
+          "sha256": "e839af53745738c7c989be17ca53809bbdfa3b0c4d6163f8e8d9cf4b65aa7cc9",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.agnosticui.com/components/button.html"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/agnosticui-com/v2-proof.png",
+          "sha256": "3c4b51a06e0e7e62d3aae32896e46a789d0bff1bd9e4850c30727a7229fb1607",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.agnosticui.com/components/accordion.html"
+        }
+      ],
+      "reviewSha256": "99cd4d5d97ab6f0f23d40bdfd577e1308e093512222c4ba096219371daf9d3e3"
+    },
+    {
+      "entryId": "aeris-ui-dev",
+      "revision": "8ca2f7630b21bb23cb9127f062f7e00f3cdac7677c7eda62f602d877dab61b5b",
+      "contentDigest": "8ca2f7630b21bb23cb9127f062f7e00f3cdac7677c7eda62f602d877dab61b5b",
+      "sourceBundleSha256": "bc6177dea7fdf0f893a9c836edf247344231a91403079a17ec59181fcb31507e",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Components 页面显示 88 components、12 groups；左侧列出 Form、Button、Data 等分组及组件名，正文有筛选栏和组件网格。",
+          "alt": "Aeris UI 组件目录：分组侧栏、88 components 与组件网格"
+        },
+        "proof": {
+          "selectionRationale": "AutoComplete 页面显示组件标题、用途说明、导入代码和 Features 区域，左侧同组目录中也标出 AutoComplete。",
+          "alt": "Aeris UI AutoComplete 页面：组件说明、导入代码和功能区"
+        }
+      },
+      "selectionDigest": "f119090351f67cf00c33b675b17eeb9b5942d5d80f776ff2e68d6b7f84161681",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T07:31:29Z",
+        "notesSha256": "d66285d34ce0bdeb824c243fb96a1c20e926d82d0a00b8b98557bf87ff3e2cb8",
+        "shotSha256": [
+          "fb4c7101dbb5161a106eb9331b2687f0d96c17f69f0bd966abf8c807ed5f4ab8",
+          "9b3c06b81253cd14cdaabb85d0c12aae21817a7811cec8923ceb53a451847825"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "breadth 重拍后可见 AutoComplete、CascadeSelect、Checkbox、DatePicker 等已渲染控件预览，并显示组件总数和分组；AutoComplete 页有用途说明、导入代码和 Features 内容。站点虽标注 Alpha / not production ready，但页面内容已实际加载且条目状态如实可见；该状态本身不违反证据审核标准。",
+        "curatorHash": "a7ab695a2a80e047f25e1b96ca773772ae34f35b6d2d9fdbfcbc767df1a97aef",
+        "reviewerHash": "008a53b0d0b766a35d7ffac3689078d4dff9fe720488e9088fdbac498a09994a",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/aeris-ui-dev/identity.jpg",
+          "sha256": "907c5da825c84321a79a2c2918430ea31c79e291250d8c598461e187206c31f1",
+          "width": 1280,
+          "height": 900,
+          "url": "https://aeris-ui.dev/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/aeris-ui-dev/v2-breadth.png",
+          "sha256": "fb4c7101dbb5161a106eb9331b2687f0d96c17f69f0bd966abf8c807ed5f4ab8",
+          "width": 1280,
+          "height": 900,
+          "url": "https://aeris-ui.dev/components"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/aeris-ui-dev/v2-proof.png",
+          "sha256": "9b3c06b81253cd14cdaabb85d0c12aae21817a7811cec8923ceb53a451847825",
+          "width": 1280,
+          "height": 900,
+          "url": "https://aeris-ui.dev/components/auto-complete"
+        }
+      ],
+      "reviewSha256": "946b6d6bb75c7f7dd40f3e3a70e426e865150fe6b3c3cd9b7022c41b2f7b3466"
+    },
+    {
+      "entryId": "akveo-github-io-nebular",
+      "revision": "03ab4754e2f89891a46f0802d4a5d167a4f23955798e8c95482bd951a77076e5",
+      "contentDigest": "03ab4754e2f89891a46f0802d4a5d167a4f23955798e8c95482bd951a77076e5",
+      "sourceBundleSha256": "3ef561a12ad4e5ee21cfda72c45ee4d1c8b0cae4a893d7aa953a337ef2268fa8",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Components Overview 页面以网格分组列出 Layout、Card、Flip Card、Accordion 等组件卡片，左侧也有组件导航，能看到目录结构。",
+          "alt": "Nebular 组件总览：分组卡片列出 Layout、Card 等组件"
+        },
+        "proof": {
+          "selectionRationale": "Card 页面显示 NbCardComponent、基础内容容器说明与 Basic card example，预览中有一张含正文的卡片，下方还露出配置代码。",
+          "alt": "Nebular Card 组件页面：内容卡片示例与配置代码"
+        }
+      },
+      "selectionDigest": "c5216692195a42c7c73c3c23e52fd916b835c09cee52a38d29dbc7965c2983e2",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T08:00:57Z",
+        "notesSha256": "c477a2c1f582322035560e300cc36bf1c77eed32244fcc21361419782884f423",
+        "shotSha256": [
+          "c2a761571617535ea5a7015d0cc523ff7f24e23a3daed2120678205a4ecceafc",
+          "e4c40807e9eb5937efa52b51939396161def6df8621fb03020c7854e79b8fa62"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "Card 页显示 NbCardComponent、基础内容容器说明和 Basic card example；Showcase 中的卡片正文已渲染，下方可见配置代码。目录总览虽为名称卡片网格，但多个组件名称和导航清楚可见，页面主体已加载。",
+        "curatorHash": "82c38f9858bdf48b54529f0d1fbbc89e9ad55a2ae4e05cb88c7fdbcfccec4eca",
+        "reviewerHash": "6400ee0fca8f80e0d27d268687aaa1541986b37042582ba2b5a47f6d52d33b58",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/akveo-github-io-nebular/identity.jpg",
+          "sha256": "9a9c688848dd2740cb9888884b4287a5fbd2b2f907e0c3dee89e55a023584382",
+          "width": 1280,
+          "height": 900,
+          "url": "https://akveo.github.io/nebular/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/akveo-github-io-nebular/v2-breadth.png",
+          "sha256": "c2a761571617535ea5a7015d0cc523ff7f24e23a3daed2120678205a4ecceafc",
+          "width": 1280,
+          "height": 900,
+          "url": "https://akveo.github.io/nebular/docs/components/components-overview"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/akveo-github-io-nebular/v2-proof.png",
+          "sha256": "e4c40807e9eb5937efa52b51939396161def6df8621fb03020c7854e79b8fa62",
+          "width": 1280,
+          "height": 900,
+          "url": "https://akveo.github.io/nebular/docs/components/card/overview#nbcardcomponent"
+        }
+      ],
+      "reviewSha256": "d06d347424a73ee85c1ebf8528eb1faaaf9ab14ecdbe13103776bd4b1b0581b5"
+    },
+    {
+      "entryId": "appica-dev-ui",
+      "revision": "e6c221257692df17ef59426cf5d415850868d2a839eee84b0fb5f3e2ee64d1f6",
+      "contentDigest": "e6c221257692df17ef59426cf5d415850868d2a839eee84b0fb5f3e2ee64d1f6",
+      "sourceBundleSha256": "7c3858c5203c6edc8743dde531b2ab1557c18f30fc9bc8d2f98a19a74a04c78f",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Autocomplete 页面左侧 Actions & Inputs 目录列出 Autocomplete、Button、Calendar、Checkbox、Chip 等组件，正文展示输入框示例与 Usage 段落。",
+          "alt": "Appica UI 组件目录：侧栏条目与 Autocomplete 示例"
+        },
+        "proof": {
+          "selectionRationale": "Button 页面说明按钮用途和样式尺寸，预览区显示一个 Button 控件，下方可见 Usage 与导入代码区域。",
+          "alt": "Appica UI Button 页面：按钮预览与用法文档"
+        }
+      },
+      "selectionDigest": "bc06a2a251c9fe7e464499a95e806a27e87c25f385d9071db60acd85bc47c5c6",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T08:06:46Z",
+        "notesSha256": "441bba664c33e00b619b54d21329270b8fc0971a9284885c5face25bf2d52606",
+        "shotSha256": [
+          "b4058af41ac1662f7f4a56578ee30657e4d6520d9b0e01f6749040d5a86f4006",
+          "867ee3143092c27ae37c59dee3707232c2416b8e63725389e8d36294d6c789f1"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "Autocomplete 页侧栏可见多个组件条目，正文有输入框示例和 Usage；Button 页有按钮预览、Usage 标题及导入代码开头。Cookie 提示浮层只遮住页面下方部分代码，没有挡住具体条目和主要内容。",
+        "curatorHash": "82c38f9858bdf48b54529f0d1fbbc89e9ad55a2ae4e05cb88c7fdbcfccec4eca",
+        "reviewerHash": "6400ee0fca8f80e0d27d268687aaa1541986b37042582ba2b5a47f6d52d33b58",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/appica-dev-ui/identity.jpg",
+          "sha256": "4c521ac93e9317972220fcdb68cc50d66c2dc557c78a002eb54908c3dcca6020",
+          "width": 1280,
+          "height": 900,
+          "url": "https://appica.dev/ui"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/appica-dev-ui/v2-breadth.png",
+          "sha256": "b4058af41ac1662f7f4a56578ee30657e4d6520d9b0e01f6749040d5a86f4006",
+          "width": 1280,
+          "height": 900,
+          "url": "https://appica.dev/ui/components/react/autocomplete"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/appica-dev-ui/v2-proof.png",
+          "sha256": "867ee3143092c27ae37c59dee3707232c2416b8e63725389e8d36294d6c789f1",
+          "width": 1280,
+          "height": 900,
+          "url": "https://appica.dev/ui/components/react/button"
+        }
+      ],
+      "reviewSha256": "1684194431b393ca8a232e87a24e4622bdefcba3411b3574eadc2da14aedd981"
+    },
+    {
+      "entryId": "arcui-dev",
+      "revision": "01965a553c284d8db956bfa0591801bbefde6a6897e6b580207c046b04eb4423",
+      "contentDigest": "01965a553c284d8db956bfa0591801bbefde6a6897e6b580207c046b04eb4423",
+      "sourceBundleSha256": "53b0b6dfefb41e4e8a8a5e3b4a74944ae3bf135974bcaaad52c914f6e3ae6a15",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Components 页面写明浏览 169 个组件、分布于七类，首屏展示 Container、Section、App Shell 等名称和说明，左侧还有分类导航。",
+          "alt": "ARC UI 组件目录：169 个组件、类别导航与首屏卡片"
+        },
+        "proof": {
+          "selectionRationale": "Button 页面显示组件标签、用途说明和 Overview 文本，左侧目录列出 Button 与 Button Group 等组件条目。",
+          "alt": "ARC UI Button 页面：组件用途说明与导航目录"
+        }
+      },
+      "selectionDigest": "ac2a052e53c7a9c843e5bcd0edc6898781d401c3d0ce2a65e4d8936b4100efd2",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T08:06:46Z",
+        "notesSha256": "6124f4db6764518640a86e9d2adc80f1099ed62da7c6ec0ad39920bbbb2eb2df",
+        "shotSha256": [
+          "87f23aeb99e034a96d8a764fcfdb94b299111921ee5eb9805f59add58d9bc48e",
+          "aac661f78ea0aa187079c449554bea1a096edcea3977658726340122d57743f1"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "Components 页可见 169 个组件、七类和多个内容卡片；Button 页有用途说明和 Overview 文本，名称、页面关系和说明均与截图吻合。",
+        "curatorHash": "82c38f9858bdf48b54529f0d1fbbc89e9ad55a2ae4e05cb88c7fdbcfccec4eca",
+        "reviewerHash": "6400ee0fca8f80e0d27d268687aaa1541986b37042582ba2b5a47f6d52d33b58",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/arcui-dev/identity.jpg",
+          "sha256": "2ba9f027f22cf4e6575c08466ce3856ec0d35112bc84ea5ed1d94d44e133bf5d",
+          "width": 1280,
+          "height": 900,
+          "url": "https://arcui.dev/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/arcui-dev/v2-breadth.png",
+          "sha256": "87f23aeb99e034a96d8a764fcfdb94b299111921ee5eb9805f59add58d9bc48e",
+          "width": 1280,
+          "height": 900,
+          "url": "https://arcui.dev/docs/components/"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/arcui-dev/v2-proof.png",
+          "sha256": "aac661f78ea0aa187079c449554bea1a096edcea3977658726340122d57743f1",
+          "width": 1280,
+          "height": 900,
+          "url": "https://arcui.dev/docs/components/button/"
+        }
+      ],
+      "reviewSha256": "4a266d0920152f221e1f34e3107816ca8e480f6c45d7989014ef30954b921129"
+    },
+    {
+      "entryId": "ark-ui-com",
+      "revision": "25e50232efb229a00c3a1416a0c4f2b2f0d2cd3d8fff9b287e442f282c527191",
+      "contentDigest": "25e50232efb229a00c3a1416a0c4f2b2f0d2cd3d8fff9b287e442f282c527191",
+      "sourceBundleSha256": "8a24197ece69034179d5a822a9c209ff03eed22f3743e0d3ab189a4a34ced175",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Accordion 文档左侧 Components 目录列出 Avatar、Carousel、Checkbox、Dialog、Switch 等条目，正文展示 Accordion 示例及 anatomy 图。",
+          "alt": "Ark UI 组件文档：组件侧栏与 Accordion 示例"
+        },
+        "proof": {
+          "selectionRationale": "Switch 页面说明其用于二元选择，正文显示已开启的 Enable Feature 控件及标注 control、root、thumb 的结构图。",
+          "alt": "Ark UI Switch 页面：开关控件与 anatomy 标注图"
+        }
+      },
+      "selectionDigest": "8387a89b7d63b0212c276ca4f856273950eab4ea3d375f4a5ffe062616afe290",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T08:06:46Z",
+        "notesSha256": "34269c02c9d61c9cbf1c52dac6b05abdc097640016aee9ab9391d39130bbf1e5",
+        "shotSha256": [
+          "6cc8caffc7078e9a420fd4917cd8995a6ef6ab6ced92cf5123c03112a8955a50",
+          "d73244b78edfacf66bb30b72ad0c47b3ba27b09d47457294343bdcb54f2fa499"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "Accordion 页侧栏列出多个组件名，正文有 Accordion 示例及 Anatomy 图；Switch 页显示 Enable Feature 开关和标注 control、root、thumb 的结构图，说明准确。",
+        "curatorHash": "82c38f9858bdf48b54529f0d1fbbc89e9ad55a2ae4e05cb88c7fdbcfccec4eca",
+        "reviewerHash": "6400ee0fca8f80e0d27d268687aaa1541986b37042582ba2b5a47f6d52d33b58",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/ark-ui-com/identity.jpg",
+          "sha256": "ed7504ec41551719387d9725ee50d9d47570de101d9123193de1ffb560767daa",
+          "width": 1280,
+          "height": 900,
+          "url": "https://ark-ui.com/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/ark-ui-com/v2-breadth.png",
+          "sha256": "6cc8caffc7078e9a420fd4917cd8995a6ef6ab6ced92cf5123c03112a8955a50",
+          "width": 1280,
+          "height": 900,
+          "url": "https://ark-ui.com/docs/components/accordion"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/ark-ui-com/v2-proof.png",
+          "sha256": "d73244b78edfacf66bb30b72ad0c47b3ba27b09d47457294343bdcb54f2fa499",
+          "width": 1280,
+          "height": 900,
+          "url": "https://ark-ui.com/docs/components/switch"
+        }
+      ],
+      "reviewSha256": "aa7fe8586e7b43ec824ba1b57ae1b152e1a8aea0601785d90ffc4cb767ce2872"
+    },
+    {
+      "entryId": "asphalt-gojek-io",
+      "revision": "b4df35467b19ff76dbc81eba73c0a4fe08d8f14e9dc52826fce5dc021b01dc87",
+      "contentDigest": "b4df35467b19ff76dbc81eba73c0a4fe08d8f14e9dc52826fce5dc021b01dc87",
+      "sourceBundleSha256": "94a71ba9fd5e375944698dacdc632aca1d5b30cfc2bac2db600eb5c01b166f7f",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Components 页面左侧目录连续列出 Alert、Badge、Bottom Navbar、Button、Card 等条目；正文有组件说明与 All Components、Master、Workshop 分类控件。",
+          "alt": "Asphalt Aloha 组件目录：侧栏条目与组件分类控件"
+        },
+        "proof": {
+          "selectionRationale": "Foundations 页面显示 Colors 标题、编号 #1、颜色说明文字及配色示意图，是该设计系统的一项具体基础规范。",
+          "alt": "Asphalt Aloha Colors 页面：颜色说明与配色示意图"
+        }
+      },
+      "selectionDigest": "82dfbc09b36acd54b440d10ca531051aa2f36abf4b95910ea67b268e68a76b91",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T07:57:33Z",
+        "notesSha256": "9253f9301658c06cb3267f0b9170105a567f1d6dc9bd29fce2b4194d96952baf",
+        "shotSha256": [
+          "6b203d1594ca9a5afab03055e056eab5de4f1e9e752ca4c0e96b8e4dce004b5c",
+          "dc2a9e6d3f7746ce65848dcb30847563184a2aa1f8ec363994cea1b4f32184c6"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "Components 页侧栏可见多个组件名称，正文显示组件说明与 All Components、Master、Workshop 分类控件；Foundations 页显示 #1、Colors、说明文字及配色图示，说明与截图相符。",
+        "curatorHash": "82c38f9858bdf48b54529f0d1fbbc89e9ad55a2ae4e05cb88c7fdbcfccec4eca",
+        "reviewerHash": "6400ee0fca8f80e0d27d268687aaa1541986b37042582ba2b5a47f6d52d33b58",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/asphalt-gojek-io/identity.jpg",
+          "sha256": "bd55cfd8fc7f9b16a01f5217bbc85ae3c197d1c60b40ac70f42ab2185ba4f089",
+          "width": 1280,
+          "height": 900,
+          "url": "https://asphalt.gojek.io/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/asphalt-gojek-io/v2-breadth.png",
+          "sha256": "6b203d1594ca9a5afab03055e056eab5de4f1e9e752ca4c0e96b8e4dce004b5c",
+          "width": 1280,
+          "height": 900,
+          "url": "https://asphalt.gojek.io/pages/components.html"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/asphalt-gojek-io/v2-proof.png",
+          "sha256": "dc2a9e6d3f7746ce65848dcb30847563184a2aa1f8ec363994cea1b4f32184c6",
+          "width": 1280,
+          "height": 900,
+          "url": "https://asphalt.gojek.io/pages/foundations.html"
+        }
+      ],
+      "reviewSha256": "cc42cda7d0c6df046fbe7a02dae2a42677a9580cf9231abba798695d2cf9a611"
+    },
+    {
+      "entryId": "assistant-ui-com",
+      "revision": "e19db4274555de348e810f7e3ee7df2fc8c6c8fdd81946717efcf9e7b994a7ea",
+      "contentDigest": "e19db4274555de348e810f7e3ee7df2fc8c6c8fdd81946717efcf9e7b994a7ea",
+      "sourceBundleSha256": "fe28879d59c5a3f969a614640930bbdd26575a30428ce5c6fd17dabf55378d2d",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Components 页面分列 Chat UI、Take actions、Data visualization and generative UI、Backend、Agent tools；首屏可见 Chat Starter 与功能列表。",
+          "alt": "assistant-ui 组件目录：类别导航与 Chat Starter 介绍"
+        },
+        "proof": {
+          "selectionRationale": "assistant-ui 条目页介绍 Thread 组件与 runtime、chat route 的关系；示例区显示一条用户消息和 assistant 回复，正文提到 Vercel AI SDK、Mastra 与 LangGraph。",
+          "alt": "assistant-ui Thread 页面：组件说明和聊天示例"
+        }
+      },
+      "selectionDigest": "64b5051e6eca80eeeb9a95ecc812c0fde536109c8aa7f0d51428b7de3b22fc75",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T08:00:57Z",
+        "notesSha256": "ef6055684a2a1ebffee531124ded4cff52b5e3397ee630ab144cb3b4cba81328",
+        "shotSha256": [
+          "b35c4b31de9d70ff16b60364b635ae4254bc20fdf8dfe12ce85648f43d01c5b2",
+          "ff633416be5d1f57f60adf3b3066ab2e910a25f899ed9331eea31db0c5ec15af"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "修订后的说明仅写截图可见的 Thread/runtime/chat route 介绍、用户消息与 assistant 回复，并点出正文列出的三个 provider，未再声称存在安装信息；目录页正文与分类也已加载。",
+        "curatorHash": "82c38f9858bdf48b54529f0d1fbbc89e9ad55a2ae4e05cb88c7fdbcfccec4eca",
+        "reviewerHash": "6400ee0fca8f80e0d27d268687aaa1541986b37042582ba2b5a47f6d52d33b58",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/assistant-ui-com/identity.jpg",
+          "sha256": "18fe491fcfcc8d45fa45f3569bd506722aab2d2eeae87b4ba035ad2bd24c6e2d",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.assistant-ui.com/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/assistant-ui-com/v2-breadth.png",
+          "sha256": "b35c4b31de9d70ff16b60364b635ae4254bc20fdf8dfe12ce85648f43d01c5b2",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.assistant-ui.com/components"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/assistant-ui-com/v2-proof.png",
+          "sha256": "ff633416be5d1f57f60adf3b3066ab2e910a25f899ed9331eea31db0c5ec15af",
+          "width": 1280,
+          "height": 900,
+          "url": "https://www.assistant-ui.com/components/assistant-ui"
+        }
+      ],
+      "reviewSha256": "63e1b67035b1f30cbc8f57b155e0b6527e0db97b64d1d0e24ee5cb41d4385c9e"
+    },
+    {
+      "entryId": "aui-atlassian-com",
+      "revision": "2c9877ffbe523620788e929573792226468595a758cfd37a6974b069d78a312a",
+      "contentDigest": "2c9877ffbe523620788e929573792226468595a758cfd37a6974b069d78a312a",
+      "sourceBundleSha256": "91f17ed5407fcb3ddf046261262c15d2a190803f44e3627916dca0b2c08ffe59",
+      "selection": {
+        "breadth": {
+          "selectionRationale": "Getting started 文档左侧 General UI Components 目录列出 Avatars、Badges、Banners、Buttons 等组件，正文说明部署选项与安装命令。",
+          "alt": "AUI 入门文档：组件侧栏与安装选项"
+        },
+        "proof": {
+          "selectionRationale": "Avatars 文档列出 Summary、Status、Examples 等段落，屏幕下方显示多种尺寸的头像预览与相关用法信息。",
+          "alt": "AUI Avatars 文档：状态信息与头像预览"
+        }
+      },
+      "selectionDigest": "3c4a01063140388b5d7b296fad34ed03977b631da706791b258e108d212280c3",
+      "review": {
+        "verdict": "pass",
+        "reviewedAt": "2026-10-30T07:57:33Z",
+        "notesSha256": "ce44fd66f40ed43f7bc5ed88f53bdf2c68fe747bca7d19a14565fa7b7185163a",
+        "shotSha256": [
+          "8e41af084ede5abab38b51111dbe02d50a52566945b90c719a3e85dda308ef4b",
+          "d343c0c02037240d802db1c91ce05df7346ace2e0836356a35fb35be51510abe"
+        ],
+        "checks": {
+          "breadthIsCatalog": true,
+          "proofIsItem": true,
+          "sameSiteNoErrors": true,
+          "textMatchesShots": true,
+          "chineseConcrete": true
+        },
+        "note": "入门页左侧组件目录、部署选项及安装命令可见；Avatars 页含 Summary、Status、Examples，且屏幕底部可见多种头像尺寸的图示，说明与截图一致。",
+        "curatorHash": "82c38f9858bdf48b54529f0d1fbbc89e9ad55a2ae4e05cb88c7fdbcfccec4eca",
+        "reviewerHash": "6400ee0fca8f80e0d27d268687aaa1541986b37042582ba2b5a47f6d52d33b58",
+        "independent": true
+      },
+      "screenshots": [
+        {
+          "role": "identity",
+          "src": "/shots/aui-atlassian-com/identity.jpg",
+          "sha256": "5497f65f25dce60b554d752225d3fbdd9f340341701f26afbe963c85560ecf92",
+          "width": 1280,
+          "height": 900,
+          "url": "https://aui.atlassian.com/"
+        },
+        {
+          "role": "breadth",
+          "src": "/shots/aui-atlassian-com/v2-breadth.png",
+          "sha256": "8e41af084ede5abab38b51111dbe02d50a52566945b90c719a3e85dda308ef4b",
+          "width": 1280,
+          "height": 900,
+          "url": "https://aui.atlassian.com/aui/latest/docs/getting-started.html"
+        },
+        {
+          "role": "proof",
+          "src": "/shots/aui-atlassian-com/v2-proof.png",
+          "sha256": "d343c0c02037240d802db1c91ce05df7346ace2e0836356a35fb35be51510abe",
+          "width": 1280,
+          "height": 900,
+          "url": "https://aui.atlassian.com/aui/latest/docs/avatars.html"
+        }
+      ],
+      "reviewSha256": "8f5f43f33fb2873ba744f765cfd47d5ccd8e3aadbc31c603f5ade0b29451a6e7"
+    }
+  ]
+}
