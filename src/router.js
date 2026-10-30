@@ -14,6 +14,7 @@ import { INFO_ROUTES } from './data/site-info.js'
  * | `#/about`（可带 `#submit` 片段）        | about      | —                 |
  * | `#/skills` / `#/skills/design|image`    | skills     | resourceType      |
  * | `#/ppt` / `#/science`                  | ppt/science| —                 |
+ * | `#/ppt/<id>`、`#/skills/design/<id>` 等  | 同上       | itemId（= query.id）|
  * | `#/sponsor` `#/submit` `#/privacy` `#/terms` `#/licence` `#/refunds` | 同名 | — |
  * | 其它（含 `#/tools` 等旧路径）            | notfound   | —                 |
  *
@@ -61,10 +62,11 @@ function matchPath(path) {
   if (head === 'components' && segments.length === 1) return { name: 'components', params: {} }
   if (head === 'playground' && segments.length === 1) return { name: 'playground', params: {} }
   if (head === 'favorites' && segments.length === 1) return { name: 'favorites', params: {} }
-  if (head === 'skills' && (segments.length === 1 || (segments.length === 2 && ['design', 'image'].includes(first)))) {
-    return { name: 'skills', params: { resourceType: first || 'design' } }
+  if (head === 'skills' && (segments.length === 1 || (segments.length <= 3 && ['design', 'image'].includes(first)))) {
+    return { name: 'skills', params: { resourceType: first || 'design', ...(second ? { itemId: second } : {}) } }
   }
   if (['ppt', 'science', 'graphics'].includes(head) && segments.length === 1) return { name: head, params: {} }
+  if (['ppt', 'science', 'graphics'].includes(head) && segments.length === 2) return { name: head, params: { itemId: first } }
   if (head === 'site' && segments.length === 2 && first) return { name: 'site', params: { entryId: first } }
   if (head === 'about' && segments.length === 1) return { name: 'about', params: {} }
   if (INFO_ROUTES.includes(head) && segments.length === 1) return { name: head, params: {} }
@@ -76,9 +78,19 @@ function matchPath(path) {
 
 /** `#/sites?q=a#frag` → `/sites?q=a#frag`。 */
 export function hashToPath(hash) {
-  const { path, search, fragment } = splitHash(hash)
+  let { path, search, fragment } = splitHash(hash)
+  // A resource entry gets its own path (`#/ppt?id=x` → `/ppt/x`) so each one has a
+  // static page for search engines (scripts/build-seo-pages.mjs).
+  const params = new URLSearchParams(search)
+  const channel = path === 'skills' ? 'skills/design' : path
+  if (params.get('id') && RESOURCE_PATHS.includes(channel)) {
+    path = `${channel}/${encodeURIComponent(params.get('id'))}`
+    params.delete('id')
+    search = params.toString()
+  }
   return `/${path}${search ? `?${search}` : ''}${fragment ? `#${fragment}` : ''}`
 }
+const RESOURCE_PATHS = ['skills/design', 'skills/image', 'ppt', 'science', 'graphics']
 
 /** 当前地址对应的 `#/…` 写法。仍兼容地址栏里残留的旧 hash 路由。 */
 export function currentHash() {
@@ -115,9 +127,12 @@ if (typeof window !== 'undefined' && !window.__vislexiconPathRouting) {
 export function parseRoute(rawHash = currentHash()) {
   const { path, search, fragment } = splitHash(rawHash)
   const matched = matchPath(path)
+  const query = parseQuery(search)
+  // `/ppt/<id>` reads like the older `#/ppt?id=<id>` that the views understand.
+  if (matched.params.itemId && !query.id) query.id = matched.params.itemId
   return {
     ...matched,
-    query: parseQuery(search),
+    query,
     fragment,
     hash: `#/${path}${search ? `?${search}` : ''}${fragment ? `#${fragment}` : ''}`,
   }

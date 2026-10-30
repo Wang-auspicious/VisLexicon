@@ -15,7 +15,8 @@ test('new resources round-trip by ID and are searchable by either full title', (
     assert.equal(route.query.id, row.id)
     for (const query of [row.zh, row.en]) assert.ok(filterResources([...ppt, ...graphics], { category: row.category, query }).some(item => item.id === row.id), `${row.id}: ${query}`)
   }
-  assert.equal(parseRoute('#/graphics/unknown').name, 'notfound')
+  assert.equal(parseRoute('#/graphics/unknown').query.id, 'unknown')
+  assert.equal(parseRoute('#/graphics/a/b').name, 'notfound')
   assert.ok(!read('resource-studies').some(row => row.category === 'ppt'))
   assert.ok([...ppt, ...graphics].every(row => !row.practice))
 })

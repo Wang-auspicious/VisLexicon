@@ -66,7 +66,7 @@ function write(route, html) {
   fs.mkdirSync(path.dirname(file), { recursive: true })
   fs.writeFileSync(file, html)
 }
-const nav = `<nav><a href="/">策展</a> · <a href="/sites">全部网站</a> · <a href="/components">全部组件</a> · <a href="/atlas">图鉴</a> · <a href="/skills">Skill</a> · <a href="/about">关于</a> · <a href="/submit">投稿</a></nav>`
+const nav = `<nav><a href="/">策展</a> · <a href="/sites">全部网站</a> · <a href="/components">全部组件</a> · <a href="/atlas">图鉴</a> · <a href="/skills/design">设计规范</a> · <a href="/skills/image">生图 Prompt</a> · <a href="/ppt">PPT</a> · <a href="/graphics">图像处理</a> · <a href="/science">科研绘图</a> · <a href="/about">关于</a> · <a href="/submit">投稿</a></nav>`
 
 const index = JSON.parse(fs.readFileSync(path.join(PUBLIC, 'data/site-index.json'), 'utf8'))
 const sites = index.items
@@ -111,11 +111,7 @@ const channels = [
   ['/', BRAND, `视元收录 ${sites.length} 个审核过的设计网站和上万个实测组件，用中文口语描述就能找到合适的组件、网站和设计资源。免费，不用注册。`, `<h1>视元 VisLexicon</h1><p>用一句话描述你要的组件或网站，视元帮你找出来：每条都有原站截图、实测数值和出处。</p>${siteList}`],
   ['/sites', `全部网站 · ${BRAND}`, `${sites.length} 个审核过的设计网站：组件库、设计系统、素材、工具与灵感合集，每个都有原站截图和中文介绍。`, `<h1>全部网站</h1>${siteList}`],
   ['/components', `全部组件 · ${BRAND}`, '上万个来自真实网站的界面组件，带原站截图、颜色、圆角、阴影等实测数值，可按类型和来源浏览。', '<h1>全部组件</h1><p>按类型和来源浏览来自真实网站的界面组件。</p>'],
-  ['/atlas', `图鉴 · ${BRAND}`, '可交互的视觉图鉴：比较形状、颜色、尺寸与动效，调好参数后带走一份能直接实现的设计规格。', '<h1>图鉴</h1>'],
   ['/skills', `Skill 与 DESIGN.md · ${BRAND}`, '收录真实项目公开的 DESIGN.md、设计规范和设计 Skill 原文，可直接复制或下载。', '<h1>Skill 与 DESIGN.md</h1>'],
-  ['/ppt', `PPT 资源 · ${BRAND}`, '完整的演示文稿原件、模板、主题和 PPT Skill。', '<h1>PPT 资源</h1>'],
-  ['/graphics', `图像处理 · ${BRAND}`, 'Agent 可调用的图像效果与 PSD 操作，附完整代码、真实预览和使用限制。', '<h1>图像处理</h1>'],
-  ['/science', `科研绘图 · ${BRAND}`, '科研绘图的版式、配色与可运行脚本。', '<h1>科研绘图</h1>'],
   ['/about', `关于 · ${BRAND}`, '视元是给人和 Agent 共用的视觉词典：每条记录都有原站截图、实测数值和出处，未核实的信息不作推断。', '<h1>关于视元</h1><p>截图来自原站，数值来自浏览器实测，许可与价格分别注明出处。</p>'],
   ['/submit', `投稿 · ${BRAND}`, '推荐一个值得收录的网站、组件库、工具或资源。投稿免费，不用注册，每条人工审核。', `<h1>投稿</h1><p>推荐网站、组件库、工具、素材或资源。也可以写信到 ${esc(CONTACT_EMAIL)}。</p>`],
 ]
@@ -129,6 +125,70 @@ for (const [id, doc] of Object.entries(LEGAL_PAGES)) {
   write(`/${id}`, page({ route: `/${id}`, title: `${zh.title} · ${BRAND}`, description: clip(zh.intro + zh.sections[0].p[0], 155), body }))
   urls.push({ route: `/${id}`, lastmod: LEGAL_UPDATED })
 }
+
+// Atlas: one page per category and per term (/atlas/<category>/<term>, as the app links them)
+const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'))
+const atlasCatalog = readJson(path.join(PUBLIC, 'effects-atlas/catalog.json'))
+const atlasIndex = readJson(path.join(PUBLIC, atlasCatalog.searchIndex))
+const today = index.generatedAt?.slice(0, 10)
+const atlasLinks = atlasIndex.map((c) => `<li><a href="/atlas/${esc(c.id)}">${esc(c.zh)}</a> · ${esc(c.en)} — ${esc(c.dz)}（${c.items.length}）</li>`).join('')
+write('/atlas', page({ route: '/atlas', title: `图鉴 · ${BRAND}`, description: `可交互的视觉图鉴：${atlasIndex.length} 个类别、${atlasIndex.reduce((n, c) => n + c.items.length, 0)} 个效果，比较形状、颜色、尺寸与动效，带走能直接实现的设计规格。`,
+  body: `${nav}<h1>图鉴</h1><p>可交互的视觉图鉴：调好参数后带走一份能直接实现的设计规格。</p><ul>${atlasLinks}</ul>` }))
+let atlasPages = 0
+for (const category of atlasIndex) {
+  const route = `/atlas/${category.id}`
+  const termLink = (item) => `<li><a href="${route}/${esc(item.id)}">${esc(item.zh)}</a> — ${esc(item.dz)}</li>`
+  write(route, page({ route, title: `${category.zh} · 图鉴 · ${BRAND}`, description: clip(`${category.zh}（${category.en}）：${category.dz} 共 ${category.items.length} 个可交互效果。`, 155),
+    body: `${nav}<p><a href="/atlas">图鉴</a></p><h1>${esc(category.zh)}</h1><p>${esc(category.en)}</p><p>${esc(category.dz)}</p><p>${esc(category.de)}</p><ul>${category.items.map(termLink).join('')}</ul>` }))
+  urls.push({ route, lastmod: today })
+  for (const [position, item] of category.items.entries()) {
+    const termRoute = `${route}/${item.id}`
+    const siblings = category.items.filter((other) => other.id !== item.id).slice(Math.max(0, position - 4), position + 8)
+    write(termRoute, page({ route: termRoute, title: `${item.zh} · ${category.zh} · ${BRAND}`, description: clip(`${item.dz} ${item.pz || ''}`, 155),
+      jsonLd: { '@context': 'https://schema.org', '@type': 'TechArticle', headline: item.zh, alternativeHeadline: item.en, description: clip(item.dz, 300), inLanguage: 'zh-CN', isPartOf: { '@type': 'CollectionPage', name: category.zh, url: ORIGIN + route } },
+      body: `${nav}<p><a href="/atlas">图鉴</a> › <a href="${route}">${esc(category.zh)}</a></p>
+<article><h1>${esc(item.zh)}</h1><p>${esc(item.dz)}</p>${item.pz ? `<p>${esc(item.pz)}</p>` : ''}
+<h2 lang="en">${esc(item.en)}</h2><p lang="en">${esc(item.de)}</p>${item.pe ? `<p lang="en">${esc(item.pe)}</p>` : ''}
+${siblings.length ? `<h2>同类效果</h2><ul>${siblings.map(termLink).join('')}</ul>` : ''}</article>` }))
+    urls.push({ route: termRoute, lastmod: today })
+    atlasPages++
+  }
+}
+
+// Skills, PPT, graphics, science: one page per entry (/skills/design/<id>, /ppt/<id>, …)
+const RESOURCES = [
+  { route: '/skills/design', file: 'design-documents.json', title: 'DESIGN.md 与设计规范', intro: '真实项目公开的 DESIGN.md、设计规范和设计 Skill 原文，可直接复制或下载。' },
+  { route: '/skills/image', file: 'image-prompts.json', title: '生图 Prompt', intro: '带真实出图的生图 Prompt，注明模型、来源和作者。' },
+  { route: '/ppt', file: 'presentation-resources.json', title: 'PPT 资源', intro: '完整的演示文稿原件、模板、主题和 PPT Skill。' },
+  { route: '/graphics', file: 'graphics-resources.json', title: '图像处理', intro: 'Agent 可调用的图像效果与 PSD 操作，附完整代码、真实预览和使用限制。' },
+  { route: '/science', file: 'resource-studies.json', title: '科研绘图', intro: '科研绘图的版式、配色与可运行脚本。' },
+]
+let resourcePages = 0
+for (const shelf of RESOURCES) {
+  const entries = readJson(path.join(ROOT, 'src/data', shelf.file)).map((item) => ({
+    id: item.id, zh: item.zh || item.titleZh, en: item.en || item.titleEn, dz: item.dz || item.descriptionZh, de: item.de || item.descriptionEn,
+    pz: item.pz || item.noteZh, tags: item.kz || [item.topicZh, ...(item.tags || [])].filter(Boolean), prompt: item.prompt, preview: item.preview,
+    sourceUrl: item.sourceUrl, sourceName: item.sourceName, model: item.model,
+  }))
+  const list = `<ul>${entries.map((e) => `<li><a href="${shelf.route}/${esc(e.id)}">${esc(e.zh)}</a> — ${esc(clip(e.dz, 80))}</li>`).join('')}</ul>`
+  write(shelf.route, page({ route: shelf.route, title: `${shelf.title} · ${BRAND}`, description: `${shelf.intro}共 ${entries.length} 条。`, body: `${nav}<h1>${esc(shelf.title)}</h1><p>${esc(shelf.intro)}</p>${list}` }))
+  urls.push({ route: shelf.route, lastmod: today })
+  for (const e of entries) {
+    const route = `${shelf.route}/${e.id}`
+    const image = abs(e.preview)
+    write(route, page({ route, title: `${e.zh} · ${shelf.title} · ${BRAND}`, description: clip(e.dz, 155), image,
+      jsonLd: { '@context': 'https://schema.org', '@type': 'CreativeWork', name: e.zh, alternateName: e.en || undefined, description: clip(e.dz, 300), image: image || undefined, keywords: e.tags.join(', ') || undefined, isBasedOn: e.sourceUrl || undefined },
+      body: `${nav}<p><a href="${shelf.route}">${esc(shelf.title)}</a></p>
+<article><h1>${esc(e.zh)}</h1>${e.en ? `<p lang="en">${esc(e.en)}</p>` : ''}<p>${esc(e.dz)}</p>${e.pz ? `<p>${esc(e.pz)}</p>` : ''}
+${e.preview ? `<figure><img src="${esc(e.preview)}" alt="${esc(e.zh)}" loading="lazy" /></figure>` : ''}
+${e.prompt ? `<h2>Prompt</h2><p>${esc(e.prompt)}</p>` : ''}${e.model ? `<p>模型：${esc(e.model)}</p>` : ''}
+${e.tags.length ? `<p>标签：${e.tags.map(esc).join('、')}</p>` : ''}
+${e.sourceUrl ? `<p>来源：<a href="${esc(e.sourceUrl)}" rel="noopener">${esc(e.sourceName || e.sourceUrl)}</a></p>` : ''}</article>` }))
+    urls.push({ route, lastmod: today })
+    resourcePages++
+  }
+}
+console.log(`[seo] ${atlasIndex.length} atlas categories + ${atlasPages} atlas terms, ${resourcePages} resource entries`)
 
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

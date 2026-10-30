@@ -14,8 +14,13 @@ test('resource links round-trip to their category, including exact names and fil
     assert.ok(filterResources(resources, { category: resource.category, query: route.query.q }).some((item) => item.id === resource.id))
   }
   assert.equal(parseRoute('#/skills').params.resourceType, 'design')
-  for (const path of ['#/skills/unknown', '#/skills/design/extra', '#/ppt/extra', '#/science/extra']) {
+  for (const path of ['#/skills/unknown', '#/skills/design/a/b', '#/ppt/a/b', '#/science/a/b']) {
     assert.equal(parseRoute(path).name, 'notfound')
+  }
+  // One extra segment is an entry's own page; the view reads it as ?id=.
+  for (const [path, name] of [['#/skills/design/extra', 'skills'], ['#/ppt/extra', 'ppt'], ['#/science/extra', 'science']]) {
+    assert.equal(parseRoute(path).name, name)
+    assert.equal(parseRoute(path).query.id, 'extra')
   }
 })
 
@@ -47,4 +52,12 @@ test('directory search combines category, type, Chinese keywords, and normalized
   assert.equal(filterResources(resources, { category: 'science', query: 'reveal.js' }).length, 0)
   assert.equal(filterResources(resources, { query: 'absolutely-no-such-resource' }).length, 0)
   assert.equal(filterResources(resources, { query: '   ' }).length, resources.length)
+})
+
+test('resource entries get path URLs: #/ppt?id=x becomes /ppt/x and other filters stay', async () => {
+  const { hashToPath } = await import('../src/router.js')
+  assert.equal(hashToPath('#/ppt?id=deck-1'), '/ppt/deck-1')
+  assert.equal(hashToPath('#/skills?id=doc'), '/skills/design/doc')
+  assert.equal(hashToPath('#/skills/image?q=cat&id=p1'), '/skills/image/p1?q=cat')
+  assert.equal(hashToPath('#/sites?id=x'), '/sites?id=x')
 })
