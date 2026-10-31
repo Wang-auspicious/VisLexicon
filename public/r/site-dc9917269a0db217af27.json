@@ -1,0 +1,182 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-1dd011f2bc156e6f",
+  "revision": "2c3650bb56d694fe87915b46e19c5c8bd8bd42a491df75da072dcfd9debb8f37",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-31T07:01:24.816Z",
+  "entryId": "site-dc9917269a0db217af27",
+  "entityId": "entity-site-dc9917269a0db217af27",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://userinterface.wiki",
+    "finalUrl": "https://www.userinterface.wiki/",
+    "checkedAt": "2026-10-31T02:26:43.996Z"
+  },
+  "editorial": {
+    "name": "userinterface.wiki",
+    "descriptionZh": "一个以文章和演示讲解界面设计原理的站点：首页列出 Laws of UX、Animating Container Bounds、Morphing Icons、Mastering Animate Presence 等文章，Demos 页按 12 条动画原则（如 Squash And Stretch、Anticipation、Timing）及 Animated Width、Animated Height、Sound Lab 等条目提供可查看的演示入口。",
+    "descriptionEn": null,
+    "takeawayZh": "适合查阅界面动效与设计原则的教程并配合演示理解，但页面未说明源码下载或授权方式。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "learning-editorial",
+    "subcategory": "tutorials-courses-workshops",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页以文章形式讲解界面设计原则与动效实现，属于教程/教学型内容。",
+        "evidenceUrl": "https://www.userinterface.wiki/"
+      },
+      {
+        "statement": "Demos 页提供按动画原则组织的可查看演示，作为教学配套。",
+        "evidenceUrl": "https://www.userinterface.wiki/demo"
+      }
+    ],
+    "confirmedAt": "2026-10-31T06:57:06.672Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [],
+    "actions": [
+      "browse",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "svg",
+      "css"
+    ],
+    "workflowStages": [
+      "design"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "editorial-feed"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.userinterface.wiki/",
+      "finalUrl": "https://www.userinterface.wiki/",
+      "title": "userinterface.wiki",
+      "selectionRationale": "官方入口 userinterface.wiki 首页展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-dc9917269a0db217af27/graph-3aed6fa5c95c44f4d6eb4f6a-identity.png",
+        "sha256": "3aed6fa5c95c44f4d6eb4f6afa44f79df668f48b63393f58b7da02808c7d5173",
+        "bytes": 56376,
+        "width": 1280,
+        "height": 900,
+        "alt": "userinterface.wiki：官方入口 userinterface.wiki 首页展示。"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.userinterface.wiki/morphing-icons",
+      "finalUrl": "https://www.userinterface.wiki/morphing-icons",
+      "title": "Morphing Icons",
+      "selectionRationale": "同站目录与分类展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-dc9917269a0db217af27/graph-af84fb4362e27dfb6b290d26-breadth.png",
+        "sha256": "af84fb4362e27dfb6b290d26a190c38dc5051a9a73a0a8a2f23e4d65f31ddd70",
+        "bytes": 50943,
+        "width": 1280,
+        "height": 900,
+        "alt": "userinterface.wiki：同站目录与分类展示。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.userinterface.wiki/demo",
+      "finalUrl": "https://www.userinterface.wiki/demo",
+      "title": "Demos — userinterface.wiki",
+      "selectionRationale": "具体条目内容细节展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-dc9917269a0db217af27/graph-774e26cee21533dbd04cb798-proof.png",
+        "sha256": "774e26cee21533dbd04cb798d055a0cf0a007ad87f0cb7ff88b7aac1f11a7adf",
+        "bytes": 51800,
+        "width": 1280,
+        "height": 900,
+        "alt": "userinterface.wiki：具体条目内容细节展示。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryAction",
+      "value": "阅读文章与查看演示",
+      "claim": "首页列出多篇文章，Demos 页列出可进入的演示条目。",
+      "sourceUrl": "https://www.userinterface.wiki/demo",
+      "evidence": "首页列出多篇文章，Demos 页列出可进入的演示条目。"
+    },
+    {
+      "field": "technology",
+      "value": "React",
+      "claim": "文章提到使用 Motion 与自定义 hook 实现动画，站点推广的 Calligraph 为 React 库。",
+      "sourceUrl": "https://www.userinterface.wiki/",
+      "evidence": "文章提到使用 Motion 与自定义 hook 实现动画，站点推广的 Calligraph 为 React 库。"
+    },
+    {
+      "field": "technology",
+      "value": "SVG",
+      "claim": "Morphing Icons 文章说明每个图标使用三条 SVG 线。",
+      "sourceUrl": "https://www.userinterface.wiki/morphing-icons",
+      "evidence": "Morphing Icons 文章说明每个图标使用三条 SVG 线。"
+    },
+    {
+      "field": "contentOrganization",
+      "value": "文章列表与演示列表",
+      "claim": "首页为文章列表，Demos 页为按主题组织的演示列表。",
+      "sourceUrl": "https://www.userinterface.wiki/demo",
+      "evidence": "首页为文章列表，Demos 页为按主题组织的演示列表。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-29",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/site-dc9917269a0db217af27",
+    "designMdUrl": "https://vislexicon.com/site/site-dc9917269a0db217af27.md",
+    "checkedAt": "2026-10-31T02:26:43.996Z",
+    "license": "unknown"
+  }
+}

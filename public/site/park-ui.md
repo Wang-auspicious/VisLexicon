@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: dd0fb80ea8cc74065975a92879c0db7b9cf1b737182f971eb011e6c3de9d02e6
 status: APPROVED
 name: "Park UI"

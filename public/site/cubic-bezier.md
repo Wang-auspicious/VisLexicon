@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 5d6dd8d5e3d9bf63884810b8c118b31c8ef661de83b33bb219d869fb892ecd62
 status: APPROVED
 name: cubic-bezier.com

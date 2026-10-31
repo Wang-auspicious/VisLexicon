@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: acfb22e26a6e2214b5283aa53a0124e11cdfae8e09fb600b5ec99f5b34e3f671
 status: APPROVED
 name: Bulma

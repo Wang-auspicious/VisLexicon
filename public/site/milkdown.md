@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 5a99d87cb0a39e9ae70bf339c9f61c93d0b8f167e0cc74e9807aad9a8c9cd32b
 status: APPROVED
 name: Milkdown

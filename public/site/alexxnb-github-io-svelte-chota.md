@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 4ed571777fa7a8bf6ecab27a231d8528188b58b48448577001a816b3201fb22f
 status: APPROVED
 name: Svelte-Chota

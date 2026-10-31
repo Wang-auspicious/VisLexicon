@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 26d2d769b5c82e4ea2c87da5c2cdeb2cbfedc155efce87572345b1375e4ceb78
 status: APPROVED
 name: V-Fonts

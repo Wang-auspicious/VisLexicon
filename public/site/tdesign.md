@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 3392cd1592e0f36ffb4ce2a293c9abb277158caa911a0d0d8e4a546bf0dd8577
 status: APPROVED
 name: TDesign

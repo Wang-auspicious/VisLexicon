@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: d44b31428686b8b945e03f6f1b359ea6f738dbbb6f37f229e106e55a8d52b5a3
 status: APPROVED
 name: "React DayPicker"

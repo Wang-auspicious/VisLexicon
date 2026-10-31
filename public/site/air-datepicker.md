@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 92e894d58a30e4bfcb4e6889102c96839c8bda0fc34771a8f9a3676ae7b86aa2
 status: APPROVED
 name: "Air Datepicker"

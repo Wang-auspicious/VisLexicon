@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 871c2b4b71751677e9a4913b1180acf78c4054852e939279a057d7a8653a9367
 status: APPROVED
 name: nivo

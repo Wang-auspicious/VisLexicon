@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 1b822cafcc531454a9f4ad062242e6834391fe813619ca01685411f10a31dfda
 status: APPROVED
 name: "Decoy Font"

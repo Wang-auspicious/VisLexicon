@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: e19db4274555de348e810f7e3ee7df2fc8c6c8fdd81946717efcf9e7b994a7ea
 status: APPROVED
 name: assistant-ui

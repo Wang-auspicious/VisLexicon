@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 3817d9d4e1ce9a835ff409963b4b724a41ce8f15575a2ec15eb713f15c47cd4c
 status: APPROVED
 name: Vega-Lite

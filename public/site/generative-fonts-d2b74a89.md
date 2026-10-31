@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 0107162494c2b4942fbe98e587ddf963273882dabd1f7453ac96c40941198414
 status: APPROVED
 name: "Generative Fonts"

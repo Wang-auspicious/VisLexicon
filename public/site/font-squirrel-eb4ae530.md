@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 6c9ab757455c4b09dc01fdecd37d4d92331db081aaad709be759e76099174e16
 status: APPROVED
 name: "Font Squirrel"

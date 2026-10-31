@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: e708e5c1afd0742a3f2635bf07ebecaf839a253ced58a1dc0845a6c85b37ba69
 status: APPROVED
 name: Flowbite

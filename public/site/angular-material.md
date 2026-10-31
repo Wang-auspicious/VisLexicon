@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-78922d67ab547862
+releaseId: release-1dd011f2bc156e6f
 revision: 1be99fcbc70958910e4cbf2bb2d291ccd4201273841b8a2105cf2979b2c33622
 status: APPROVED
 name: "Angular Material"
