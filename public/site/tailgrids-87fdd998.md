@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: f7935d6321f943cfefbf7a2ae43fe7e599879d7aa6c27707140838093844d6bd
 status: APPROVED
 name: "Tailgrids UI"

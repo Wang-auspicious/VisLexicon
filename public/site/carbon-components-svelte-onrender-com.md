@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 6ad861983977d9c87fc3f3cdab556d15553df7357965c85949060f0b2ee15233
 status: APPROVED
 name: "Carbon Components Svelte"

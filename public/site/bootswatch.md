@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 30adf1911f83a9c18b42e0bdb85dab91bfb9b849d5e897266ee651c6ef612dd8
 status: APPROVED
 name: Bootswatch

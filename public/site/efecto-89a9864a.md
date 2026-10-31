@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 764d0f4d6bd8210f98a88b3ddaae5650e7a5e6c6f581cc1a090e2fea250014a6
 status: APPROVED
 name: Efecto

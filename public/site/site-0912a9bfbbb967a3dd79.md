@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 2a608dad8f81db7d63c6be4c522f8d362215bb96aa5d5f599607618dbac732dc
 status: APPROVED
 name: "Tabler Admin Template"

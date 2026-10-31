@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: e456f58413711b82e7173b022559c8c99aa3bfb4ea39067670c85203a97f1565
 status: APPROVED
 name: "shadcn animated"

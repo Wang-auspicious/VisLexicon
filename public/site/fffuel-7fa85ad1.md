@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: c691ec24094b3a46f6c99f0c95ead2991536c62bd64f25a67bdd8743bd56ea7e
 status: APPROVED
 name: fffuel

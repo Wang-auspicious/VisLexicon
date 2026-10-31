@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 0ad2a1381d9a6020a40d98012d087452f9cc91e18f8fccc9d766b72778f39044
 status: APPROVED
 name: "Favicon InBrowser.App"

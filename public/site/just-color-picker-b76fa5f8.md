@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: c5492573f2526375be7118b7c7febde9ee5451b48c848fbd9310c41d9576760a
 status: APPROVED
 name: "Just Color Picker"

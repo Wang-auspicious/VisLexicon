@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: d3ad5387aaf141ecc214abd98bb70004475616534b0a38c9534dd7c89ec2cc3f
 status: APPROVED
 name: Cuelume

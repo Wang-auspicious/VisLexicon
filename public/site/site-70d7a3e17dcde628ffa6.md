@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: e5c66219209ba6205ccf7cc1efd8aa7b2f0d12802573ba3bbd668ddab523498b
 status: APPROVED
 name: ogimagecn

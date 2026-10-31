@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: ebc1bf1caacc02135bf591fa4c1ff6e320b9f5e834b893091031952f3baede2c
 status: APPROVED
 name: "Spectrum UI"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 6caf5de2e91d380a454509cf76353b742a9d0f7764903fbb81ddca2a19cb0bcd
 status: APPROVED
 name: "Vuestic UI"

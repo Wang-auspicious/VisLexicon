@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: b6d504e577e01b23cb59eb87c7cf92f27f4a852deeaae61a48b0b0bd60dcdf11
 status: APPROVED
 name: tween.js

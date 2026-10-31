@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 8644c56f47f7e4c3825b04adb43f0ce9fb13db028d77e19c6996c503d941c0d4
 status: APPROVED
 name: Skillsync

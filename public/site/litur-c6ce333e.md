@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: a63ec569f665041a931845580e7977f47e43b1e9432c7da375da34a8e0a23dea
 status: APPROVED
 name: Litur

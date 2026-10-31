@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 9f53d5c7d18f3c14d8259267671ec3c692cfb628d591d981cc4b0fde1f0dd974
 status: APPROVED
 name: "React Three Fiber"

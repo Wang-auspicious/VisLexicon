@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 38ce9a4f17474e8b9975b8eb4e59eb3079ffbd384c07c91e2a2062fa00d87a84
 status: APPROVED
 name: "Animate UI"

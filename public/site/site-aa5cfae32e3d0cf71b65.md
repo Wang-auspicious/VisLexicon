@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 485eccc5a039734e3ea0f7c428e5c683fb3c950c10b52cc79935a142d21b90dc
 status: APPROVED
 name: Maze

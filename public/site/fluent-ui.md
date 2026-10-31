@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: d936643b5c952a73b69270b36fb6fbe2fe18ec4b8dff0d90f8daf9bab364a132
 status: APPROVED
 name: "Fluent 2"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 95fdfdd7306821f1334fea2232344e12daa231e1f2a991ebd14cae54cbc6c1b3
 status: APPROVED
 name: Canario

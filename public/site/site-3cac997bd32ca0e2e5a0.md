@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: fff4658fe81213451893ad120b3fa6b61490ed4a7aba82498b18ddb6a90bc0be
 status: APPROVED
 name: Ghostex

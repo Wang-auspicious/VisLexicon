@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: ff46d8b8a3b9bc7c9158c6f2f8c8f194e52d1d01e708798c2135e365621771d9
 status: APPROVED
 name: "Ascii Studio"

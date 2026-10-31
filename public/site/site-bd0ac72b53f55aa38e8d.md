@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 86fa6e66b8ccdfe5eaf2ee8351fb3b727eb02acb8b0b08cbaa2fca5109f793b9
 status: APPROVED
 name: Motionimo

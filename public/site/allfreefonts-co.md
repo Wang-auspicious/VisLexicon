@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 63094df26baaa585908025b31fa7f9437c69a56624b99837953fd476aea840b9
 status: APPROVED
 name: "All Free Fonts"

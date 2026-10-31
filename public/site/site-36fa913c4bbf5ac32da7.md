@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: fc8947b81455467a7161ef41c392aea4137a5854fd33e3e9e3ab3c569a8e81d2
 status: APPROVED
 name: CoolDock

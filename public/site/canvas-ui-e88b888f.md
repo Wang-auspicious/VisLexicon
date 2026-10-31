@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: a7737cdfb1bdb8199244c47897e46e2829e596490bf87c9eeb4728184a8d5708
 status: APPROVED
 name: "Canvas UI"

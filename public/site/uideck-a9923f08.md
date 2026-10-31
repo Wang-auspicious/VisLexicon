@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 55a48e6fc7d3539fa8d82ccfa8e0e04d1127942e350b2dc52f4483e27c47e9a5
 status: APPROVED
 name: UIdeck

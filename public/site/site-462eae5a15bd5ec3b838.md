@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 64cacd148226fc62a2a203351083ebdcafc3a9347842266980c88d5383863421
 status: APPROVED
 name: heroicons-animated

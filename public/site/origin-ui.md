@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 90025f19fd2176150c5413128f6b58a575383af6601f2303c9dab3036ecbb226
 status: APPROVED
 name: "Coss UI"

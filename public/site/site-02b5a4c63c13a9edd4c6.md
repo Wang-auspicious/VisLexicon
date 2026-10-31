@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 680878799e103abcdd393521ebc887128b1dabb438802d444a249ebdeafaa35e
 status: APPROVED
 name: Kalypso

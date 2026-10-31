@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 5c27efee7e47af5d8fb5fde1988f6ddb667433a55c544cbbdf194bcad67bee88
 status: APPROVED
 name: Kombai

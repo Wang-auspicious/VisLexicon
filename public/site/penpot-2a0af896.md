@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 1c23409ee12e33805feff0107a821d62d13dee94bd2ebd00fb02c908b7f1e859
 status: APPROVED
 name: Penpot

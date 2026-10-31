@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 77a6a67e8acda96e155027d5c5d905044c6692e4976d86cd67f7813e45cf44db
 status: APPROVED
 name: "Skiper UI"

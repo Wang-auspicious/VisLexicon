@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 35f0d85763378b3240e9a52cd2cd21187e73045d2bb371a70b635b8cc2bdc553
 status: APPROVED
 name: editorcn

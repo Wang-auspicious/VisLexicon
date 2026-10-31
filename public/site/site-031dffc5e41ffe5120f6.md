@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: c036fd6f24479ef08ce2bda6b2e3c0e471480a2d0b022b21cae520390879bcc5
 status: APPROVED
 name: BeCharts

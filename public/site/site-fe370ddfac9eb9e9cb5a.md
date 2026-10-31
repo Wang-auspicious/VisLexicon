@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 20657a930f7f6cb06be87844a07122fe47483b15df5cca29205732b421aede60
 status: APPROVED
 name: Bakemono

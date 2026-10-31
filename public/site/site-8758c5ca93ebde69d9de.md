@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-92da508d8d14b615
+releaseId: release-f4ac887f17c47614
 revision: 21288bf1c27c97227a7251aa140a8e59e569ef424b13de6dcfaa235977a13a6a
 status: APPROVED
 name: pic2svg
