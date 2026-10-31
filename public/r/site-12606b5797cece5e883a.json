@@ -1,0 +1,200 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-ab6174b58ec77092",
+  "revision": "c8083fbd853274f79887ccccfa1be204d443044e55210620ba226d7dc88f440f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-31T09:39:16.389Z",
+  "entryId": "site-12606b5797cece5e883a",
+  "entityId": "entity-site-12606b5797cece5e883a",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://libraries.dev",
+    "finalUrl": "https://libraries.dev/",
+    "checkedAt": "2026-10-31T03:40:36.182Z"
+  },
+  "editorial": {
+    "name": "Libraries.dev",
+    "descriptionZh": "Libraries.dev 提供面向 AI 界面的 UI 效果库与端侧 ML 模型，首页可浏览 Border beam、Thinking orbs、Gooey、Liquid metal、Image generation 等效果，并复制打包好的 prompt 粘贴到 Claude Code、Cursor 或 Codex 中安装使用。FAQ 说明五个库以 MIT 许可发布在 npm，可用 npm install 安装，Pro 则解锁 Studio 深度定制与配置导出。",
+    "descriptionEn": null,
+    "takeawayZh": "适合为 AI 应用快速加入动画边框、思考指示器等现成 React 效果；但多数库仅支持 React，SwiftUI 与 React Native 仅覆盖部分库。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "入口交付的是可直接安装的 React UI 效果组件库，而非整站模板或素材。",
+        "evidenceUrl": "https://libraries.dev/"
+      },
+      {
+        "statement": "每个库以 prompt 形式交给编码代理安装配置，属于组件交付流程。",
+        "evidenceUrl": "https://libraries.dev/"
+      },
+      {
+        "statement": "效果以动画/交互视觉为主，存在归入 motion-interaction-code 的歧义。",
+        "evidenceUrl": "https://libraries.dev/"
+      }
+    ],
+    "confirmedAt": "2026-10-31T09:33:06.098Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [
+      "component",
+      "prompt"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "preview",
+      "edit"
+    ],
+    "media": [
+      "ui",
+      "motion"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "react",
+      "react-native"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://libraries.dev/",
+      "finalUrl": "https://libraries.dev/",
+      "title": "Libraries.dev: Libraries and models for next-gen UI",
+      "selectionRationale": "官方入口 Libraries.dev 首页展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-12606b5797cece5e883a/graph-e228ea4c8f9ee29147834b25-identity.png",
+        "sha256": "e228ea4c8f9ee29147834b25c007ab7f9526e3826014c4787b71608ff44134a1",
+        "bytes": 66761,
+        "width": 1280,
+        "height": 900,
+        "alt": "Libraries.dev：官方入口 Libraries.dev 首页展示。"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://libraries.dev/skill",
+      "finalUrl": "https://libraries.dev/skill",
+      "title": "Agent skill for Claude Code, Cursor and Codex | Libraries.dev",
+      "selectionRationale": "同站目录与分类展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-12606b5797cece5e883a/graph-d1258a9be6554b4bf26faa90-breadth.png",
+        "sha256": "d1258a9be6554b4bf26faa907892e641a2164a2b4480a994534fafa8ca21556d",
+        "bytes": 73846,
+        "width": 1280,
+        "height": 900,
+        "alt": "Libraries.dev：同站目录与分类展示。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://libraries.dev/beam",
+      "finalUrl": "https://libraries.dev/beam",
+      "title": "Border Beam: animated glowing border for React | Libraries.dev",
+      "selectionRationale": "具体条目内容细节展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-12606b5797cece5e883a/graph-565747817371b5288575892e-proof.png",
+        "sha256": "565747817371b5288575892e0e31ecd40ee44f5453026034919a3a7d01634062",
+        "bytes": 81580,
+        "width": 1280,
+        "height": 900,
+        "alt": "Libraries.dev：具体条目内容细节展示。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "React UI 效果组件库",
+      "claim": "五个库以 npm 包形式提供 React UI 效果组件。",
+      "sourceUrl": "https://libraries.dev/",
+      "evidence": "五个库以 npm 包形式提供 React UI 效果组件。"
+    },
+    {
+      "field": "primaryAction",
+      "value": "复制 prompt 交给编码代理安装",
+      "claim": "用户复制 prompt 后由 Claude Code、Cursor 或 Codex 安装并接入应用。",
+      "sourceUrl": "https://libraries.dev/",
+      "evidence": "用户复制 prompt 后由 Claude Code、Cursor 或 Codex 安装并接入应用。"
+    },
+    {
+      "field": "technology",
+      "value": "react",
+      "claim": "使用这些库需要 React 18 或更新版本。",
+      "sourceUrl": "https://libraries.dev/",
+      "evidence": "使用这些库需要 React 18 或更新版本。"
+    },
+    {
+      "field": "technology",
+      "value": "react-native",
+      "claim": "Beam 与 Orb 另提供 SwiftUI 和 React Native 版本。",
+      "sourceUrl": "https://libraries.dev/",
+      "evidence": "Beam 与 Orb 另提供 SwiftUI 和 React Native 版本。"
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "claim": "五个库均为 MIT 许可。",
+      "sourceUrl": "https://libraries.dev/",
+      "evidence": "五个库均为 MIT 许可。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-04-29",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/site-12606b5797cece5e883a",
+    "designMdUrl": "https://vislexicon.com/site/site-12606b5797cece5e883a.md",
+    "checkedAt": "2026-10-31T03:40:36.182Z",
+    "license": "MIT"
+  }
+}

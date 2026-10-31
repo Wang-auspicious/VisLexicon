@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 51962841e2c91146c4785ed3f36dafe6d937f9bc926e332d7d4e8d101053e872
 status: APPROVED
 name: HtmlCssColor

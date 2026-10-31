@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 44f2c4bc9ff4ddb00f19df97a7b371832833b6c2105143d4fe40841d06d9ca48
 status: APPROVED
 name: barba.js

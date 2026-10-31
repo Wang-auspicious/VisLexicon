@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: ef08e6fd9633bda3781a45a06f055ce918b5ebaf64529bf6dc3c95a8e21087d9
 status: APPROVED
 name: BootstrapTaste

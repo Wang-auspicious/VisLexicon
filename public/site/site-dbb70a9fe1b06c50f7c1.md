@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 0570290b429df12d195fa32f7e5357613ab279f88b1335aa0b2fc8bebbf5db12
 status: APPROVED
 name: Godly

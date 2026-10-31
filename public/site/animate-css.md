@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: beb6dda8d766004b405920711e4e6c3481b5466b7ad70e3a913e152454c330c4
 status: APPROVED
 name: Animate.css

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: f672890c8d80c49776b8dd8fec62949eab11bb59b0ec5f7db97ac526662533c0
 status: APPROVED
 name: "Butterick’s Practical Typography"

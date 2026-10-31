@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: f89b076f24c5557ea44466a5d557a938e677868ca6e9cd7964228c90238da911
 status: APPROVED
 name: curtains.js

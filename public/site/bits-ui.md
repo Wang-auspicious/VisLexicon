@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: e5223409e209c8debf77cee9370e8a8a2634485e38aba71a902c58533a79798b
 status: APPROVED
 name: "Bits UI"

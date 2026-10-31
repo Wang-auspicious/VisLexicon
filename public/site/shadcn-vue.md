@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: a16d27f47ad1d0926daafe04f06fd7cb93bdd0b7a6b65065e029675c15b6a811
 status: APPROVED
 name: shadcn/vue

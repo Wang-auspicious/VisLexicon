@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 5c22dc4317d8a848e215d2241f262cc4052bd5715fcfc1eee198f5ac55c5fab3
 status: APPROVED
 name: "Protocol Launcher"

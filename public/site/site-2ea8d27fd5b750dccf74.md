@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 9da789c8914b2c8be97145b0fe644c50b78642ea02ec8c1bdbf041dd1f3ad2f8
 status: APPROVED
 name: "Vibrant Design"

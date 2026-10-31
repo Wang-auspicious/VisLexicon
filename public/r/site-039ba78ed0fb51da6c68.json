@@ -1,0 +1,210 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-ab6174b58ec77092",
+  "revision": "3a7b2d442b85ab3c24fe06347ffcee921eaa224a09d0ea4a26bfd3ce841ba3a0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-31T09:39:16.389Z",
+  "entryId": "site-039ba78ed0fb51da6c68",
+  "entityId": "entity-site-039ba78ed0fb51da6c68",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://nexui.dev",
+    "finalUrl": "https://www.nexui.dev/",
+    "checkedAt": "2026-10-31T03:40:36.346Z"
+  },
+  "editorial": {
+    "name": "NexUI",
+    "descriptionZh": "NexUI 提供可直接复制进项目的 React + Tailwind CSS 组件，组件页按 Auth、Calendar、Carousel、Charts 等分类列出 102 个组件，每个组件带 Preview 与 Code 切换。也可用 CLI 执行 init 初始化 nexui.config.ts、lib/utils.ts 与 globals.css，再用 add 把 button、card、badge 等单个组件文件写入 components/ui。",
+    "descriptionEn": null,
+    "takeawayZh": "适合想直接拥有并改写 React/Tailwind 组件源码的开发者；需自行接入项目，页面未展示完整无障碍审计结果。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "入口交付的是可复制、可编辑的 React + Tailwind 组件源码，属于通用 UI 组件实现。",
+        "evidenceUrl": "https://www.nexui.dev/"
+      },
+      {
+        "statement": "组件库页面按类别列出 102 个组件，并提供预览与代码复制。",
+        "evidenceUrl": "https://www.nexui.dev/components"
+      },
+      {
+        "statement": "CLI 将组件文件直接写入项目目录，交付物是组件文件而非运行时包。",
+        "evidenceUrl": "https://www.nexui.dev/"
+      }
+    ],
+    "confirmedAt": "2026-10-31T09:32:42.804Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.nexui.dev/",
+      "finalUrl": "https://www.nexui.dev/",
+      "title": "NexUI — Beautifully designed React components",
+      "selectionRationale": "官方入口 NexUI 首页展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-039ba78ed0fb51da6c68/graph-01b9244e318804625d6e8e67-identity.png",
+        "sha256": "01b9244e318804625d6e8e67888c09e8099168f5b37f577a2c9934a444b91355",
+        "bytes": 115186,
+        "width": 1280,
+        "height": 900,
+        "alt": "NexUI：官方入口 NexUI 首页展示。"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.nexui.dev/docs",
+      "finalUrl": "https://www.nexui.dev/docs",
+      "title": "Introduction — NexUI",
+      "selectionRationale": "同站目录与分类展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-039ba78ed0fb51da6c68/graph-31c96d1d6e4c402cd94a0e35-breadth.png",
+        "sha256": "31c96d1d6e4c402cd94a0e35929cf90f53d5eeca923a7b156fc4e0a185810fe7",
+        "bytes": 91996,
+        "width": 1280,
+        "height": 900,
+        "alt": "NexUI：同站目录与分类展示。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.nexui.dev/components",
+      "finalUrl": "https://www.nexui.dev/components",
+      "title": "Components — NexUI",
+      "selectionRationale": "具体条目内容细节展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-039ba78ed0fb51da6c68/graph-15466dee9b9311a6ccb15757-proof.png",
+        "sha256": "15466dee9b9311a6ccb15757de4bcabba40723e3abbb00bc231fb9e037f24296",
+        "bytes": 85028,
+        "width": 1280,
+        "height": 900,
+        "alt": "NexUI：具体条目内容细节展示。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "React + Tailwind CSS 组件源码",
+      "claim": "入口提供可复制并归用户所有的 React/Tailwind 组件代码。",
+      "sourceUrl": "https://www.nexui.dev/",
+      "evidence": "入口提供可复制并归用户所有的 React/Tailwind 组件代码。"
+    },
+    {
+      "field": "primaryAction",
+      "value": "浏览、复制组件代码或通过 CLI 添加组件文件",
+      "claim": "用户可浏览组件并复制代码，或用 CLI 将组件文件写入项目。",
+      "sourceUrl": "https://www.nexui.dev/",
+      "evidence": "用户可浏览组件并复制代码，或用 CLI 将组件文件写入项目。"
+    },
+    {
+      "field": "technology",
+      "value": "React",
+      "claim": "组件以 React 构建。",
+      "sourceUrl": "https://www.nexui.dev/",
+      "evidence": "组件以 React 构建。"
+    },
+    {
+      "field": "technology",
+      "value": "Tailwind CSS",
+      "claim": "组件样式使用 Tailwind CSS。",
+      "sourceUrl": "https://www.nexui.dev/",
+      "evidence": "组件样式使用 Tailwind CSS。"
+    },
+    {
+      "field": "technology",
+      "value": "TypeScript",
+      "claim": "输出为 TypeScript 代码。",
+      "sourceUrl": "https://www.nexui.dev/",
+      "evidence": "输出为 TypeScript 代码。"
+    },
+    {
+      "field": "contentOrganization",
+      "value": "component-registry",
+      "claim": "组件页按类别组织 102 个组件。",
+      "sourceUrl": "https://www.nexui.dev/components",
+      "evidence": "组件页按类别组织 102 个组件。"
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "claim": "页面声明 MIT 许可证。",
+      "sourceUrl": "https://www.nexui.dev/",
+      "evidence": "页面声明 MIT 许可证。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-04-29",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/site-039ba78ed0fb51da6c68",
+    "designMdUrl": "https://vislexicon.com/site/site-039ba78ed0fb51da6c68.md",
+    "checkedAt": "2026-10-31T03:40:36.346Z",
+    "license": "MIT"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 26837d1608e7d2d9a6e3af90104f847e4fa3741bb0480f9e451a4599e994f8a0
 status: APPROVED
 name: "Quasar Framework"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 937ed85f71da494531d8aaa85f9614357b8335dcabff6615d375812c383008a7
 status: APPROVED
 name: HyperUI

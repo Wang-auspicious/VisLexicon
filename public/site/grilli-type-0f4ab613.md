@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: b01024748fb6df76e1e0d3c0a6a428292d4c41d5e216ce1bcee2f45de59111a6
 status: APPROVED
 name: "Grilli Type"

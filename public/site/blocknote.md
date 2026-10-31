@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 085418e501e3f344ec4037c1395cf64bc560e5ff6073cdd034e2ca02d649f0d1
 status: APPROVED
 name: BlockNote

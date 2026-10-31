@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 75e4643928a2b98558f40e0d8bf17c54d4948689e7ab834728adf0d542685659
 status: APPROVED
 name: Lexical

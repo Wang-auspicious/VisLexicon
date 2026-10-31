@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 895b58f9efe40cf2a801a5c99308e5de9cbbdfc0ab4d5c72a00a16686275158e
 status: APPROVED
 name: AgnosticUI

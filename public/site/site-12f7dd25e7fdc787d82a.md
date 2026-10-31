@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: e149e25973d783e5634c2a353c8e864feb6b18f144472aa1e3385a6644a00da7
 status: APPROVED
 name: everywhere.tools

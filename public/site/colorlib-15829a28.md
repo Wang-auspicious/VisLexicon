@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: f7b70504e04e6f5a628ded11078f1a97d1c91cc101b99fc30277a2bfc48a7dcd
 status: APPROVED
 name: "Colorlib Website Templates"

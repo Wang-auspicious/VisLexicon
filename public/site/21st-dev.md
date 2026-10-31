@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 98c96a7f601ae43e13d30de78c56290053293009e3336bf05d87f0d987c3b8cb
 status: APPROVED
 name: 21st.dev

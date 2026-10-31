@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: f2e97d32176805aff7a28fbdcdda9ba3c496634fd18a960cf005294c5078fa71
 status: APPROVED
 name: Vant

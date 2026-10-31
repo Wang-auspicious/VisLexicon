@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: eca9f45341e63da60d41625cb05ae10181f376565c439dee8ff80c2a9735f273
 status: APPROVED
 name: "Material React Table"

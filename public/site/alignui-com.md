@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 5d71d025991054e6146c61b9b97fa37d69385bd08bc94484542a264e49b3b05c
 status: APPROVED
 name: AlignUI

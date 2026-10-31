@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: b9e793ab50deedb50241578249c7d997a151b850b262ddbc8c73faa23f51a6c9
 status: APPROVED
 name: "Nuxt UI"

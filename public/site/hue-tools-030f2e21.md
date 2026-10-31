@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 0529629a29bdc9a70499d90f1e850e494fc14da2f236a576a2e05fce4c9926cc
 status: APPROVED
 name: hue.tools

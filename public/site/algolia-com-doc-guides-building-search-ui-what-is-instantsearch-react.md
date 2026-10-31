@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: cda54bc036902a8ff25641a68b7e1c1079cf5589267344642238a5cafb0a90a5
 status: APPROVED
 name: "React InstantSearch"

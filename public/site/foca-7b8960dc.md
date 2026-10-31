@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-1dd011f2bc156e6f
+releaseId: release-ab6174b58ec77092
 revision: 858d60bbdfe5e21d09c35c0b72e9fa225f0c849e96e4f91663c564bc2c970524
 status: APPROVED
 name: "FOCA Stock"
