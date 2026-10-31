@@ -1,0 +1,195 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-92da508d8d14b615",
+  "revision": "9fae44ff49f601e97732ae24b71299bb1db9c751ed7e5ce94db1650900924d9a",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-31T11:18:56.393Z",
+  "entryId": "site-a1c0b4a1318d1b076682",
+  "entityId": "entity-site-a1c0b4a1318d1b076682",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://pdfcn.dev",
+    "finalUrl": "https://www.pdfcn.dev/",
+    "checkedAt": "2026-10-31T03:41:15.541Z"
+  },
+  "editorial": {
+    "name": "pdfcn",
+    "descriptionZh": "pdfcn 提供可直接用于 React 的 PDF 组件与区块，首页展示 corporate-invoice、financial report、minimal invoice 等文档模板，并可切换 Preview/Code 查看。组件通过 shadcn 命令安装，例如 pnpm dlx shadcn add @pdfcn/forme/alert，也可复制给 agent 的 prompt；另有 Theme Builder 与 Takumi、Forme 组件文档。",
+    "descriptionEn": null,
+    "takeawayZh": "适合用 React 与 shadcn 快速拼装发票、财务报告等 PDF 文档；页面未说明价格与授权条款。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "入口交付的是可安装的 React PDF 组件，而非整站模板或独立创作软件。",
+        "evidenceUrl": "https://www.pdfcn.dev/"
+      },
+      {
+        "statement": "组件通过 shadcn 分发，属于可复制/安装的 UI 实现单元。",
+        "evidenceUrl": "https://www.pdfcn.dev/"
+      },
+      {
+        "statement": "首页提供文档模板预览与代码切换，并列出组合使用的组件。",
+        "evidenceUrl": "https://www.pdfcn.dev/"
+      }
+    ],
+    "confirmedAt": "2026-10-31T11:11:26.937Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "saas",
+      "finance",
+      "admin"
+    ],
+    "deliverables": [
+      "component",
+      "block",
+      "template"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install",
+      "preview",
+      "edit"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "shadcn-ui"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://www.pdfcn.dev/",
+      "finalUrl": "https://www.pdfcn.dev/",
+      "title": "pdfcn - Beautiful PDFs, made simple",
+      "selectionRationale": "官方入口 pdfcn 首页展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-a1c0b4a1318d1b076682/graph-a8a7744e2d4ff4c8aaf01853-identity.png",
+        "sha256": "a8a7744e2d4ff4c8aaf0185362d8dc79b605a63771f5b438cba15853d08b5e0f",
+        "bytes": 81017,
+        "width": 1280,
+        "height": 900,
+        "alt": "pdfcn：官方入口 pdfcn 首页展示。"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.pdfcn.dev/docs",
+      "finalUrl": "https://www.pdfcn.dev/docs",
+      "title": "Introduction | pdfcn",
+      "selectionRationale": "同站目录与分类展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-a1c0b4a1318d1b076682/graph-f3e27904f79be032335d7eb8-breadth.png",
+        "sha256": "f3e27904f79be032335d7eb8680ae88e35d89f121b02febb62e657f04bb68e98",
+        "bytes": 128076,
+        "width": 1280,
+        "height": 900,
+        "alt": "pdfcn：同站目录与分类展示。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.pdfcn.dev/docs/components/takumi/page-header",
+      "finalUrl": "https://www.pdfcn.dev/docs/components/takumi/page-header",
+      "title": "Page Header | pdfcn",
+      "selectionRationale": "具体条目内容细节展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-a1c0b4a1318d1b076682/graph-f017c6b4bef636d3cbbfe81a-proof.png",
+        "sha256": "f017c6b4bef636d3cbbfe81ac3ca38bf3ef0d0fb78e0a429d7fa8b518606c484",
+        "bytes": 70625,
+        "width": 1280,
+        "height": 900,
+        "alt": "pdfcn：具体条目内容细节展示。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "React PDF components",
+      "claim": "站点提供基于 React、可定制并可直接使用的 PDF 组件。",
+      "sourceUrl": "https://www.pdfcn.dev/",
+      "evidence": "站点提供基于 React、可定制并可直接使用的 PDF 组件。"
+    },
+    {
+      "field": "technology",
+      "value": "React",
+      "claim": "组件面向 React。",
+      "sourceUrl": "https://www.pdfcn.dev/",
+      "evidence": "组件面向 React。"
+    },
+    {
+      "field": "technology",
+      "value": "shadcn",
+      "claim": "组件通过 shadcn 分发。",
+      "sourceUrl": "https://www.pdfcn.dev/",
+      "evidence": "组件通过 shadcn 分发。"
+    },
+    {
+      "field": "contentOrganization",
+      "value": "component-registry",
+      "claim": "文档按 Components、Blocks 等分区组织。",
+      "sourceUrl": "https://www.pdfcn.dev/docs",
+      "evidence": "文档按 Components、Blocks 等分区组织。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-29",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/site-a1c0b4a1318d1b076682",
+    "designMdUrl": "https://vislexicon.com/site/site-a1c0b4a1318d1b076682.md",
+    "checkedAt": "2026-10-31T03:41:15.541Z",
+    "license": "unknown"
+  }
+}

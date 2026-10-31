@@ -1,0 +1,188 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-92da508d8d14b615",
+  "revision": "f5254a8b3f969ff51ae15f4469279d727b5bf7048e652b6a052600c77a5cf960",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-31T11:18:56.393Z",
+  "entryId": "site-af5b9eacc3a5198ae58d",
+  "entityId": "entity-site-af5b9eacc3a5198ae58d",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://compute.toys",
+    "finalUrl": "https://compute.toys/",
+    "checkedAt": "2026-10-31T03:14:44.514Z"
+  },
+  "editorial": {
+    "name": "compute.toys",
+    "descriptionZh": "compute.toys 是一个基于 WebGPU 的着色器实验与分享站点：首页与 browse 列表展示 Pathtracing、Simple Motion Blur、Temporal Kerr Accretion 等用户提交作品，可进入 /view 页面查看；/new 页面提供 WGSL 着色器编辑环境，含 Storage Buffers、Uniforms、channel0/channel1、HDR/sRGB、Float32 Textures 与 Profiler [beta] 等面板。",
+    "descriptionEn": null,
+    "takeawayZh": "适合在浏览器里编写、运行和浏览 WebGPU/WGSL 着色器实验，但需浏览器支持 WebGPU，且页面未说明作品授权与源码获取方式。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "creative-generative-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "站点核心交付物是可在浏览器运行的 WGSL 着色器代码与渲染实验，属于创意/生成式代码实现。",
+        "evidenceUrl": "https://compute.toys/new"
+      },
+      {
+        "statement": "编辑器提供 Storage Buffers、Uniforms、纹理通道与 Profiler 等面向 GPU 计算的开发面板。",
+        "evidenceUrl": "https://compute.toys/new"
+      },
+      {
+        "statement": "首页与 browse 页以列表形式展示用户提交的着色器作品，可进入单个作品页。",
+        "evidenceUrl": "https://compute.toys/"
+      }
+    ],
+    "confirmedAt": "2026-10-31T11:11:44.790Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "edit",
+      "preview"
+    ],
+    "media": [
+      "3d",
+      "motion"
+    ],
+    "platforms": [
+      "web",
+      "browser-extension"
+    ],
+    "technologies": [
+      "webgl"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "asset-library"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://compute.toys/",
+      "finalUrl": "https://compute.toys/",
+      "title": "compute.toys",
+      "selectionRationale": "官方入口 compute.toys 首页展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-af5b9eacc3a5198ae58d/graph-1397f3f2095ccdcb5b5ebc4d-identity.png",
+        "sha256": "1397f3f2095ccdcb5b5ebc4de650b26319ae3d965987fa77eb04e449acda762f",
+        "bytes": 406386,
+        "width": 1280,
+        "height": 900,
+        "alt": "compute.toys：官方入口 compute.toys 首页展示。"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://compute.toys/list/1",
+      "finalUrl": "https://compute.toys/list/1",
+      "title": "compute.toys",
+      "selectionRationale": "同站目录与分类展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-af5b9eacc3a5198ae58d/graph-db27dfb8698a6ca989424811-breadth.png",
+        "sha256": "db27dfb8698a6ca989424811ee5d620c2c522f015ab6b5fb55494a967757b9c5",
+        "bytes": 406376,
+        "width": 1280,
+        "height": 900,
+        "alt": "compute.toys：同站目录与分类展示。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://compute.toys/new",
+      "finalUrl": "https://compute.toys/new",
+      "title": "compute.toys",
+      "selectionRationale": "具体条目内容细节展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-af5b9eacc3a5198ae58d/graph-8e47741e5009d7a8276b9110-proof.png",
+        "sha256": "8e47741e5009d7a8276b91105cb91afab3e0df97fcefcf297b4cf71843b9544e",
+        "bytes": 45342,
+        "width": 1280,
+        "height": 900,
+        "alt": "compute.toys：具体条目内容细节展示。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "WGSL 着色器与 GPU 渲染实验",
+      "claim": "/new 页面提供以 WGSL 为语言的着色器编辑与运行环境。",
+      "sourceUrl": "https://compute.toys/new",
+      "evidence": "/new 页面提供以 WGSL 为语言的着色器编辑与运行环境。"
+    },
+    {
+      "field": "primaryAction",
+      "value": "浏览与编辑着色器",
+      "claim": "站点提供作品浏览列表与新建着色器入口。",
+      "sourceUrl": "https://compute.toys/",
+      "evidence": "站点提供作品浏览列表与新建着色器入口。"
+    },
+    {
+      "field": "technology",
+      "value": "WebGPU",
+      "claim": "页面提示需浏览器支持 WebGPU 才能运行。",
+      "sourceUrl": "https://compute.toys/new",
+      "evidence": "页面提示需浏览器支持 WebGPU 才能运行。"
+    },
+    {
+      "field": "contentOrganization",
+      "value": "作品列表",
+      "claim": "首页按列表展示用户提交的着色器作品及作者。",
+      "sourceUrl": "https://compute.toys/",
+      "evidence": "首页按列表展示用户提交的着色器作品及作者。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-29",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/site-af5b9eacc3a5198ae58d",
+    "designMdUrl": "https://vislexicon.com/site/site-af5b9eacc3a5198ae58d.md",
+    "checkedAt": "2026-10-31T03:14:44.514Z",
+    "license": "unknown"
+  }
+}

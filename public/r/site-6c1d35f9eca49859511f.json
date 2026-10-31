@@ -1,0 +1,196 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-92da508d8d14b615",
+  "revision": "c2c2b59f36ae91623a15b4b2ccd4484f88e72699f05a46b21f48018f84183f85",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-31T11:18:56.393Z",
+  "entryId": "site-6c1d35f9eca49859511f",
+  "entityId": "entity-site-6c1d35f9eca49859511f",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://handoff.computer",
+    "finalUrl": "https://handoff.computer/",
+    "checkedAt": "2026-10-31T04:09:14.425Z"
+  },
+  "editorial": {
+    "name": "Handoff",
+    "descriptionZh": "Handoff 是一个面向人与 AI Agent 的共享上下文工作区：可创建 Space，用带自定义字段的 Item 和 depends_on、references、blocks 等语义边组织知识，并在树状或交互式 3D 画布中浏览。页面还展示可配置 Agent 的实时聊天、工具调用记录、变更历史与一键回退，以及通过 MCP 接入 Claude、ChatGPT、Cursor 等客户端。",
+    "descriptionEn": null,
+    "takeawayZh": "适合需要让多个 AI 会话共享项目记忆的团队；但多数非文本 Artifact 类型仍标注 Soon，实际可用内容以 Markdown 文档为主。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "入口的核心交付物是供人与 AI Agent 共享、可被 MCP 客户端读写的上下文工作区，而非设计素材或 UI 组件。",
+        "evidenceUrl": "https://handoff.computer/"
+      },
+      {
+        "statement": "产品以 MCP 原生集成作为主要接入方式，属于开发/Agent 工作流工具。",
+        "evidenceUrl": "https://handoff.computer/"
+      },
+      {
+        "statement": "文档页提供 MCP 端点与各客户端连接说明，进一步支持其工作流工具定位。",
+        "evidenceUrl": "https://handoff.computer/docs"
+      }
+    ],
+    "confirmedAt": "2026-10-31T11:10:11.067Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent",
+      "saas"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "edit",
+      "collaborate",
+      "export"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "mcp",
+      "api"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "discovery",
+      "ideation",
+      "build",
+      "handoff"
+    ],
+    "audiences": [
+      "developer",
+      "designer",
+      "content-creator"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://handoff.computer/",
+      "finalUrl": "https://handoff.computer/",
+      "title": "Handoff – Shared Context for Humans & AI Agents",
+      "selectionRationale": "官方入口 Handoff 首页展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-6c1d35f9eca49859511f/graph-80823926ed366f0ba8fb8eab-identity.png",
+        "sha256": "80823926ed366f0ba8fb8eabcd6fe9bb258f2249fb098868cd993056d584da81",
+        "bytes": 846958,
+        "width": 1280,
+        "height": 900,
+        "alt": "Handoff：官方入口 Handoff 首页展示。"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://handoff.computer/docs",
+      "finalUrl": "https://handoff.computer/docs",
+      "title": "Documentation | Handoff | Handoff",
+      "selectionRationale": "同站目录与分类展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-6c1d35f9eca49859511f/graph-273c05f4a96cfdfd3a5f3e74-breadth.png",
+        "sha256": "273c05f4a96cfdfd3a5f3e74c56cd7b4277875e1642a6c8c0a78da967a9bd98e",
+        "bytes": 167186,
+        "width": 1280,
+        "height": 900,
+        "alt": "Handoff：同站目录与分类展示。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://handoff.computer/manifesto",
+      "finalUrl": "https://handoff.computer/manifesto",
+      "title": "Manifesto | Handoff",
+      "selectionRationale": "具体条目内容细节展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-6c1d35f9eca49859511f/graph-3966d20b66b95d3fee6e8fdb-proof.png",
+        "sha256": "3966d20b66b95d3fee6e8fdbde698af6f42921cd38344ef80059b13535c9abea",
+        "bytes": 102915,
+        "width": 1280,
+        "height": 900,
+        "alt": "Handoff：具体条目内容细节展示。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "共享上下文图工作区",
+      "claim": "产品交付一个由 Space、Item 与语义边组成的共享上下文图，供人和 Agent 共同读写。",
+      "sourceUrl": "https://handoff.computer/",
+      "evidence": "产品交付一个由 Space、Item 与语义边组成的共享上下文图，供人和 Agent 共同读写。"
+    },
+    {
+      "field": "primaryAction",
+      "value": "创建并连接上下文",
+      "claim": "用户可创建 Space、添加 Item，并通过 MCP 让 Agent 读写该图。",
+      "sourceUrl": "https://handoff.computer/",
+      "evidence": "用户可创建 Space、添加 Item，并通过 MCP 让 Agent 读写该图。"
+    },
+    {
+      "field": "technology",
+      "value": "MCP",
+      "claim": "产品原生支持 MCP，并提供 MCP 服务器端点。",
+      "sourceUrl": "https://handoff.computer/docs",
+      "evidence": "产品原生支持 MCP，并提供 MCP 服务器端点。"
+    },
+    {
+      "field": "price",
+      "value": "Free $0；Plus $29/月；Pro $99/月；Enterprise 联系销售",
+      "claim": "页面列出四档方案及对应价格。",
+      "sourceUrl": "https://handoff.computer/",
+      "evidence": "页面列出四档方案及对应价格。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-29",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/site-6c1d35f9eca49859511f",
+    "designMdUrl": "https://vislexicon.com/site/site-6c1d35f9eca49859511f.md",
+    "checkedAt": "2026-10-31T04:09:14.425Z",
+    "license": "unknown"
+  }
+}

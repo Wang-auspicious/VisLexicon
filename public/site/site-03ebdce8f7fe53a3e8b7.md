@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 8ff87cfa918613e02dd37118ba18900a1fe5c72a9a4c15380be92e3e02d38ccb
 status: APPROVED
 name: Kumo

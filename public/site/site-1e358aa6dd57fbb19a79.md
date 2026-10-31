@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 55ce8c59b3823e3f06e08aef4adc311e159542d8670837381a3d09e84afa8ce3
 status: APPROVED
 name: blocks.so

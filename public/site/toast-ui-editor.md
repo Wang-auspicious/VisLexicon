@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 6e03aaff3da8c270f2687de5213e17ba4df9300435f6848e45fc90d66b6e2139
 status: APPROVED
 name: "TOAST UI Editor"

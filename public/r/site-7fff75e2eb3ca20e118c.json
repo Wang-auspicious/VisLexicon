@@ -1,0 +1,205 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-92da508d8d14b615",
+  "revision": "278c607982ebc1d37933ce6ffcd96c95943ee2a2277d75b3b441f43a78db1b3c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-31T11:18:56.393Z",
+  "entryId": "site-7fff75e2eb3ca20e118c",
+  "entityId": "entity-site-7fff75e2eb3ca20e118c",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://ui.ruru.build",
+    "finalUrl": "https://ui.ruru.build/",
+    "checkedAt": "2026-10-31T03:41:04.498Z"
+  },
+  "editorial": {
+    "name": "Ruru UI",
+    "descriptionZh": "Ruru UI 提供可安装的 React UI 组件与区块：通过 npx ruru-ui-cli init 初始化项目，再用 add 命令选择 button、input、tabs、modal 等组件；Blocks 页可预览 login-1、register-1、forgot-1 等预构建页面区块，并查看代码。文档还列出 Accordion、Avatar、Badge、Checkbox、Dropzone、Form 等组件及主题、动画、Hooks 说明。",
+    "descriptionEn": null,
+    "takeawayZh": "适合用 CLI 向 React/Tailwind 项目添加可定制 UI 组件和登录注册类区块；页面未给出具体许可证与价格细节。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "入口主要交付可安装的 UI 组件库，而非整站模板或纯设计文件。",
+        "evidenceUrl": "https://ui.ruru.build/"
+      },
+      {
+        "statement": "组件通过 CLI 选择并安装到现有项目。",
+        "evidenceUrl": "https://ui.ruru.build/"
+      },
+      {
+        "statement": "另有预构建区块可预览代码，但主体仍是组件库。",
+        "evidenceUrl": "https://ui.ruru.build/blocks"
+      }
+    ],
+    "confirmedAt": "2026-10-31T11:10:32.486Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "block"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://ui.ruru.build/",
+      "finalUrl": "https://ui.ruru.build/",
+      "title": "Ruru UI - Customizable Interfaces for Web Applications",
+      "selectionRationale": "官方入口 Ruru UI 首页展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-7fff75e2eb3ca20e118c/graph-8f0a492470ec53871c27f8e7-identity.png",
+        "sha256": "8f0a492470ec53871c27f8e74ec5d1b12f2015bfcd54056d78b4eba3d47453d5",
+        "bytes": 96981,
+        "width": 1280,
+        "height": 900,
+        "alt": "Ruru UI：官方入口 Ruru UI 首页展示。"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ui.ruru.build/docs",
+      "finalUrl": "https://ui.ruru.build/docs",
+      "title": "Quick Start | Ruru UI",
+      "selectionRationale": "同站目录与分类展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-7fff75e2eb3ca20e118c/graph-7c9efe33d67f1030ecdc8c16-breadth.png",
+        "sha256": "7c9efe33d67f1030ecdc8c16ba6b7e44aa32cb9aa1a688882b1d74dab05bf4c9",
+        "bytes": 70533,
+        "width": 1280,
+        "height": 900,
+        "alt": "Ruru UI：同站目录与分类展示。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://ui.ruru.build/blocks",
+      "finalUrl": "https://ui.ruru.build/blocks",
+      "title": "Ruru UI - Customizable Interfaces for Web Applications",
+      "selectionRationale": "具体条目内容细节展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-7fff75e2eb3ca20e118c/graph-8f9417c20b1ee987b9874e0d-proof.png",
+        "sha256": "8f9417c20b1ee987b9874e0dda7b42e5e92cf6a9427b61caef91f48587079db8",
+        "bytes": 38857,
+        "width": 1280,
+        "height": 900,
+        "alt": "Ruru UI：具体条目内容细节展示。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "React UI 组件与预构建区块",
+      "claim": "页面称其为 UI 库，并提供组件与 Blocks。",
+      "sourceUrl": "https://ui.ruru.build/",
+      "evidence": "页面称其为 UI 库，并提供组件与 Blocks。"
+    },
+    {
+      "field": "primaryAction",
+      "value": "通过 CLI 初始化并添加组件",
+      "claim": "首页给出 init 与 add 两条 CLI 命令。",
+      "sourceUrl": "https://ui.ruru.build/",
+      "evidence": "首页给出 init 与 add 两条 CLI 命令。"
+    },
+    {
+      "field": "technology",
+      "value": "React",
+      "claim": "文档导航与首页提到 RSC（React Server Components）支持。",
+      "sourceUrl": "https://ui.ruru.build/",
+      "evidence": "文档导航与首页提到 RSC（React Server Components）支持。"
+    },
+    {
+      "field": "technology",
+      "value": "Tailwind CSS",
+      "claim": "首页明确列出 Tailwind CSS 支持。",
+      "sourceUrl": "https://ui.ruru.build/",
+      "evidence": "首页明确列出 Tailwind CSS 支持。"
+    },
+    {
+      "field": "technology",
+      "value": "TypeScript",
+      "claim": "初始化向导询问是否使用 TypeScript。",
+      "sourceUrl": "https://ui.ruru.build/",
+      "evidence": "初始化向导询问是否使用 TypeScript。"
+    },
+    {
+      "field": "contentOrganization",
+      "value": "组件注册表与区块列表",
+      "claim": "文档按组件分页，Blocks 页列出可预览区块。",
+      "sourceUrl": "https://ui.ruru.build/blocks",
+      "evidence": "文档按组件分页，Blocks 页列出可预览区块。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-29",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/site-7fff75e2eb3ca20e118c",
+    "designMdUrl": "https://vislexicon.com/site/site-7fff75e2eb3ca20e118c.md",
+    "checkedAt": "2026-10-31T03:41:04.498Z",
+    "license": "unknown"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 5083d9590f8c1942a0995911d2a72fbd80f5dab9f13603110c161c17d96f8d90
 status: APPROVED
 name: ambientCG

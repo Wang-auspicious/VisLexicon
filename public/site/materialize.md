@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: e88d6368ff9ad18de2d90bee68e7efe65ae4b47709c0250cafe71cb315d28e33
 status: APPROVED
 name: Materialize

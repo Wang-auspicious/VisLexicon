@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 6a4606df459fc3552f622249291a7ab27f8201dc4e4f9bacd26a6fe21a411f80
 status: APPROVED
 name: FlyonUI

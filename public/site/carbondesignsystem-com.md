@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: cc574028216e1e03affa43b6d2733483ba894a0daa8fae57504b77926cf6dbe9
 status: APPROVED
 name: "Carbon Design System"

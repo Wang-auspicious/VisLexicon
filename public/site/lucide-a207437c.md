@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 068041d6d674cd267c9f84f051453af0b41008b4081058adee77d964f34aeff3
 status: APPROVED
 name: Lucide

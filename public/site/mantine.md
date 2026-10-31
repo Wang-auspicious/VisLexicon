@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 10e060184473ebbbd35706b84d80235534cdd1bca12b5e878bf2c9116e5de6db
 status: APPROVED
 name: Mantine

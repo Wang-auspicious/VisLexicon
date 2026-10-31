@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: a8a6b8017c7e920a92248fd795121aaeca86dd52b0b29d7fc1f0b3fdae9a4373
 status: APPROVED
 name: Motion-Primitives

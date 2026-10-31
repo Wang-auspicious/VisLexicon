@@ -1,0 +1,201 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-92da508d8d14b615",
+  "revision": "e9e33bf41170cf1847339180c6c9f5737843483304de7ad14be7c4e2d295997d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-31T11:18:56.393Z",
+  "entryId": "site-dd6fa0274e3ff0919c4a",
+  "entityId": "entity-site-dd6fa0274e3ff0919c4a",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://chanhdai.com",
+    "finalUrl": "https://chanhdai.com/",
+    "checkedAt": "2026-10-31T02:53:14.857Z"
+  },
+  "editorial": {
+    "name": "Chánh Đại",
+    "descriptionZh": "Chánh Đại 的个人作品集与 shadcn 组件注册表入口。首页展示其 Design Engineer 履历、项目与 GitHub 贡献；Components 页列出 45 个可复制组件，并提供 pnpm dlx shadcn add 安装命令；Blocks 页提供 12 个更大的页面区块，如 404 小游戏页与 Social Proof 区块。",
+    "descriptionEn": null,
+    "takeawayZh": "适合查找可直接复制或通过 shadcn CLI 安装的 React 组件与页面区块，但站点主体仍是个人作品集，组件数量与许可需逐项核对。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页明确以个人身份与履历为主，是个人作品集入口",
+        "evidenceUrl": "https://chanhdai.com/"
+      },
+      {
+        "statement": "Components 页提供可复制与 CLI 安装的 UI 组件",
+        "evidenceUrl": "https://chanhdai.com/components"
+      },
+      {
+        "statement": "Blocks 页提供更大的页面区块交付物",
+        "evidenceUrl": "https://chanhdai.com/"
+      }
+    ],
+    "confirmedAt": "2026-10-31T11:13:23.147Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "block"
+    ],
+    "actions": [
+      "browse",
+      "copy",
+      "install"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "tailwind",
+      "shadcn-ui",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://chanhdai.com/",
+      "finalUrl": "https://chanhdai.com/",
+      "title": "Chánh Đại – Design Engineer",
+      "selectionRationale": "官方入口 Chánh Đại 首页展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-dd6fa0274e3ff0919c4a/graph-62125b18fcc5853304ed24f2-identity.png",
+        "sha256": "62125b18fcc5853304ed24f2593e2d2ee596198ab36cae701364999b5257ea3c",
+        "bytes": 174412,
+        "width": 1280,
+        "height": 900,
+        "alt": "Chánh Đại：官方入口 Chánh Đại 首页展示。"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://chanhdai.com/components",
+      "finalUrl": "https://chanhdai.com/components",
+      "title": "Components – Chánh Đại",
+      "selectionRationale": "同站目录与分类展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-dd6fa0274e3ff0919c4a/graph-577a0dbadacc963b77e29e46-breadth.png",
+        "sha256": "577a0dbadacc963b77e29e469f6433b3b3aab4482e169a83f3f2d4b69661b97c",
+        "bytes": 104849,
+        "width": 1280,
+        "height": 900,
+        "alt": "Chánh Đại：同站目录与分类展示。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://chanhdai.com/components/apple-accordion",
+      "finalUrl": "https://chanhdai.com/components/apple-accordion",
+      "title": "Apple Accordion – Chánh Đại",
+      "selectionRationale": "具体条目内容细节展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-dd6fa0274e3ff0919c4a/graph-736ef9042153a7cf4706bb34-proof.png",
+        "sha256": "736ef9042153a7cf4706bb34233c1645485aed3fb915989f668202aec13dd005",
+        "bytes": 488007,
+        "width": 1280,
+        "height": 900,
+        "alt": "Chánh Đại：具体条目内容细节展示。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "React UI 组件与页面区块",
+      "claim": "站点提供 45 个组件与 12 个区块",
+      "sourceUrl": "https://chanhdai.com/",
+      "evidence": "站点提供 45 个组件与 12 个区块"
+    },
+    {
+      "field": "primaryAction",
+      "value": "复制或通过 shadcn CLI 安装组件",
+      "claim": "组件页给出 pnpm dlx shadcn add 安装命令并标注可复制",
+      "sourceUrl": "https://chanhdai.com/components",
+      "evidence": "组件页给出 pnpm dlx shadcn add 安装命令并标注可复制"
+    },
+    {
+      "field": "technology",
+      "value": "React",
+      "claim": "站点技术栈列出 React",
+      "sourceUrl": "https://chanhdai.com/",
+      "evidence": "站点技术栈列出 React"
+    },
+    {
+      "field": "technology",
+      "value": "Tailwind CSS",
+      "claim": "站点技术栈列出 Tailwind CSS",
+      "sourceUrl": "https://chanhdai.com/",
+      "evidence": "站点技术栈列出 Tailwind CSS"
+    },
+    {
+      "field": "technology",
+      "value": "shadcn/ui",
+      "claim": "站点技术栈列出 shadcn",
+      "sourceUrl": "https://chanhdai.com/",
+      "evidence": "站点技术栈列出 shadcn"
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "claim": "页脚标注源码许可为 MIT License",
+      "sourceUrl": "https://chanhdai.com/",
+      "evidence": "页脚标注源码许可为 MIT License"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-04-29",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/site-dd6fa0274e3ff0919c4a",
+    "designMdUrl": "https://vislexicon.com/site/site-dd6fa0274e3ff0919c4a.md",
+    "checkedAt": "2026-10-31T02:53:14.857Z",
+    "license": "MIT"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 3d973e03aba8e7e248dba389b978b4dfaf5fc32c4403159dc0cedbfa839659d2
 status: APPROVED
 name: ng-bootstrap

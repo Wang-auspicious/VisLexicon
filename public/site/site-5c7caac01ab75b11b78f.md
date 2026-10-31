@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: a3cbc3746627a912e3f2d7ef7b203241e87438934d20aa471d90d0c13c7cd0fc
 status: APPROVED
 name: "Diar Muradi Components"

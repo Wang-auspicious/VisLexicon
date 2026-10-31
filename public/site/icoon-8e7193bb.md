@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 52a556b8a81446c8a92ab1ea45592f1045f5277a909c241d4f6c7315915f1be5
 status: APPROVED
 name: Icoon

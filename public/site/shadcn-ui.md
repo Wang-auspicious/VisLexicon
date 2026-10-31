@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: fbf1af486dc02aa372cf8dc5d88d2a7205491156e57742fe34a6d17b40b18db0
 status: APPROVED
 name: shadcn/ui

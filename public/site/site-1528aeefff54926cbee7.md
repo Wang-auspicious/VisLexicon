@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 2056e929df3884ca8506826951ca2f72c84a56764ef7353076d2e8380e8e15a4
 status: APPROVED
 name: interior.dev

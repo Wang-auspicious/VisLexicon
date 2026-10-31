@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 5bc341d0bb32ceabaeda2fcefaa8fe2bffffef52cb06c0c7c98b1900afef1339
 status: APPROVED
 name: "Elastic UI"

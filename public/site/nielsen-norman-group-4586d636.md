@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: e670acb784a748b06e41a95ba56a5896877d78fd5f5f758c6f98aad537d07ac9
 status: APPROVED
 name: "Nielsen Norman Group Articles"

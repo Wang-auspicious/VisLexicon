@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: ad54f805a9c4013372634c37e43a306aba6d40495c729a2822516c1278835834
 status: APPROVED
 name: PatternFly

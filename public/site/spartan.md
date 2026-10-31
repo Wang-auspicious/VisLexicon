@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 558d479a3eaedda1c44fac45636f576c01e414c33d1c51392d536588032ea3ee
 status: APPROVED
 name: spartan

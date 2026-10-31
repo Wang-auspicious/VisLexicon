@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 4ad9cadaeaf8958d755d263f0aa0d2d9827aba5fe8eb0239ada5ac8296eec14a
 status: APPROVED
 name: dygraphs

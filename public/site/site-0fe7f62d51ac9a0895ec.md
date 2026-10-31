@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 2f70b75449b99a4cb73c0f6513f1a9d92c0ec0e4e964cead928bd9a0e4f870a5
 status: APPROVED
 name: "99designs Discover"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: a9e25380b79fad5faad7381f6583c6b00ca0ae693f8f7e6817446a54a11839b2
 status: APPROVED
 name: "Web Awesome"

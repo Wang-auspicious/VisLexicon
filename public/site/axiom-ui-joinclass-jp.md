@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: 3a54bd75169e5b69460ffd610526a054cdae0054c6a5eee512a8502248f3ea02
 status: APPROVED
 name: "Axiom UI"

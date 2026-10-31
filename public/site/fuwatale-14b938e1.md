@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-ab6174b58ec77092
+releaseId: release-92da508d8d14b615
 revision: e02c77b2c001d6931fbefa72b9627b54c8c52ef65f234f22eb5698857a80308f
 status: APPROVED
 name: Fuwatale

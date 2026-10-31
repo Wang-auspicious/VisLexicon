@@ -1,0 +1,192 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-92da508d8d14b615",
+  "revision": "c1943741a7f078eaa65c40df84604c67ffb694af0ca7d926545105bca053923f",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-31T11:18:56.393Z",
+  "entryId": "site-540f06c98e056f105a4a",
+  "entityId": "entity-site-540f06c98e056f105a4a",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://webclaw.io",
+    "finalUrl": "https://webclaw.io/",
+    "checkedAt": "2026-10-31T04:39:27.834Z"
+  },
+  "editorial": {
+    "name": "webclaw",
+    "descriptionZh": "webclaw 提供面向 LLM 与 AI Agent 的网页抓取 API，可将公开网页转换为 Markdown、JSON、纯文本或原始 HTML，并支持结构化字段提取。页面还提供 CLI、MCP Server 与自托管方式，演示区可粘贴 URL 查看模型将读取的内容，并列出抓取、搜索、映射、爬取与监控等端点。",
+    "descriptionEn": null,
+    "takeawayZh": "适合为 RAG 或 Agent 管线获取可读网页内容；但抓取受目标站点限制，返回内容需自行核验。",
+    "noteZh": null,
+    "recommendation": null,
+    "pricing": null,
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "主要交付物是供应用与 AI 工作流调用的网页抓取 API，而非设计资源或 UI 组件。",
+        "evidenceUrl": "https://webclaw.io/"
+      },
+      {
+        "statement": "入口提供可实际运行的抓取演示，并列出抓取、搜索、映射、爬取、监控等 API 操作。",
+        "evidenceUrl": "https://webclaw.io/"
+      },
+      {
+        "statement": "产品同时提供 CLI、REST server 与 MCP server，属于开发与集成工作流工具。",
+        "evidenceUrl": "https://webclaw.io/"
+      }
+    ],
+    "confirmedAt": "2026-10-31T11:09:53.643Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "ai",
+      "agent"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "preview",
+      "test",
+      "export"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "cli",
+      "api",
+      "mcp"
+    ],
+    "technologies": [
+      "typescript"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://webclaw.io/",
+      "finalUrl": "https://webclaw.io/",
+      "title": "webclaw: Web Scraping API for LLMs and AI Agents",
+      "selectionRationale": "官方入口 webclaw 首页展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-540f06c98e056f105a4a/graph-7b026d2e8ca1c931028071e1-identity.png",
+        "sha256": "7b026d2e8ca1c931028071e1b8a651e148a57e8c598c0ab42dc3696bc864a2a6",
+        "bytes": 281991,
+        "width": 1280,
+        "height": 900,
+        "alt": "webclaw：官方入口 webclaw 首页展示。"
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://webclaw.io/use-cases",
+      "finalUrl": "https://webclaw.io/use-cases",
+      "title": "Use cases — search, extract, monitor, research, RAG, agents | webclaw",
+      "selectionRationale": "同站目录与分类展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-540f06c98e056f105a4a/graph-d8cc25ace0ee150eb56eb4b8-breadth.png",
+        "sha256": "d8cc25ace0ee150eb56eb4b8e746f8f9125683a83d2d70021f8f1ef28dab016c",
+        "bytes": 208457,
+        "width": 1280,
+        "height": 900,
+        "alt": "webclaw：同站目录与分类展示。"
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://webclaw.io/pricing",
+      "finalUrl": "https://webclaw.io/pricing",
+      "title": "Web Scraping API Pricing: Free Plan, Paid From $19/mo | webclaw",
+      "selectionRationale": "具体条目内容细节展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/site-540f06c98e056f105a4a/graph-b2aa0f48786faa355b7e73f4-proof.png",
+        "sha256": "b2aa0f48786faa355b7e73f4897e1b6e1ca48d33ba7e0f264841f3555c1deda1",
+        "bytes": 195641,
+        "width": 1280,
+        "height": 900,
+        "alt": "webclaw：具体条目内容细节展示。"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "primaryDeliverable",
+      "value": "网页抓取 API 与 MCP/CLI 工具",
+      "claim": "将公开网页提取为 Markdown、JSON、纯文本或原始 HTML，供 LLM 与 Agent 使用。",
+      "sourceUrl": "https://webclaw.io/",
+      "evidence": "将公开网页提取为 Markdown、JSON、纯文本或原始 HTML，供 LLM 与 Agent 使用。"
+    },
+    {
+      "field": "primaryAction",
+      "value": "抓取与提取网页内容",
+      "claim": "用户可粘贴 URL 查看模型将读取的内容，并通过 API 发起抓取。",
+      "sourceUrl": "https://webclaw.io/",
+      "evidence": "用户可粘贴 URL 查看模型将读取的内容，并通过 API 发起抓取。"
+    },
+    {
+      "field": "technology",
+      "value": "MCP",
+      "claim": "提供 12 个 MCP 工具，可在 Claude、Cursor、Windsurf、Codex 等 MCP 客户端中使用。",
+      "sourceUrl": "https://webclaw.io/",
+      "evidence": "提供 12 个 MCP 工具，可在 Claude、Cursor、Windsurf、Codex 等 MCP 客户端中使用。"
+    },
+    {
+      "field": "technology",
+      "value": "Rust",
+      "claim": "开源核心使用 Rust 构建。",
+      "sourceUrl": "https://webclaw.io/",
+      "evidence": "开源核心使用 Rust 构建。"
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-04-29",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/site-540f06c98e056f105a4a",
+    "designMdUrl": "https://vislexicon.com/site/site-540f06c98e056f105a4a.md",
+    "checkedAt": "2026-10-31T04:39:27.834Z",
+    "license": "unknown"
+  }
+}
