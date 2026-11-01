@@ -26962,9 +26962,9 @@
       "scope": "curation",
       "theme": "content",
       "componentType": "other",
-      "nameZh": "faceted（1 项参数）",
-      "nameEn": "faceted (1 controls)",
-      "descriptionZh": "上游 diceui/base 的真实组件 faceted 在本地沙箱中的实际渲染；1 个可调参数：defaultOpen。",
+      "nameZh": "faceted（2 项参数）",
+      "nameEn": "faceted (2 controls)",
+      "descriptionZh": "上游 diceui/base 的真实组件 faceted 在本地沙箱中的实际渲染；2 个可调参数：defaultOpen、variant。",
       "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
       "sourceUrl": "https://diceui.com/r/faceted.json",
       "source": {
@@ -26974,7 +26974,8 @@
       "previewUrl": "/data/component-code/posters/reg-diceui-faceted-params.jpg",
       "tags": [
         "faceted",
-        "defaultOpen"
+        "defaultOpen",
+        "variant"
       ],
       "offers": [
         {
@@ -27017,6 +27018,16 @@
             "control": "boolean",
             "labelZh": "defaultOpen",
             "labelEn": "defaultOpen"
+          },
+          {
+            "key": "variant",
+            "prop": "faceted.variant",
+            "type": "string",
+            "default": "outline",
+            "sourceDefault": "outline",
+            "control": "text",
+            "labelZh": "variant",
+            "labelEn": "variant"
           }
         ]
       }
@@ -76857,6 +76868,402 @@
         "framework": "react",
         "license": "MIT",
         "controls": []
+      }
+    },
+    {
+      "id": "reg-diceui-color-swatch-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "color-swatch（4 项参数）",
+      "nameEn": "color-swatch (4 controls)",
+      "descriptionZh": "上游 diceui/base 的真实组件 color-swatch 在本地沙箱中的实际渲染；4 个可调参数：尺寸、禁用、withoutTransparency、颜色。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/color-swatch.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-color-swatch-params.jpg",
+      "tags": [
+        "color-swatch",
+        "size",
+        "disabled",
+        "withoutTransparency",
+        "color",
+        "swatch"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-color-swatch-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/color-swatch.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/color-swatch.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-color-swatch-params",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-color-swatch-params.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-color-swatch-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-color-swatch-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "size",
+            "prop": "color-swatch.size",
+            "type": "\"default\" | \"sm\" | \"lg\"",
+            "default": "default",
+            "sourceDefault": "default",
+            "control": "select",
+            "options": [
+              "default",
+              "sm",
+              "lg"
+            ],
+            "labelZh": "尺寸",
+            "labelEn": "size"
+          },
+          {
+            "key": "disabled",
+            "prop": "color-swatch.disabled",
+            "type": "boolean",
+            "default": false,
+            "sourceDefault": false,
+            "control": "boolean",
+            "labelZh": "禁用",
+            "labelEn": "disabled"
+          },
+          {
+            "key": "withoutTransparency",
+            "prop": "color-swatch.withoutTransparency",
+            "type": "boolean",
+            "default": false,
+            "sourceDefault": false,
+            "control": "boolean",
+            "labelZh": "withoutTransparency",
+            "labelEn": "withoutTransparency"
+          },
+          {
+            "key": "color",
+            "prop": "color-swatch.color",
+            "type": "string",
+            "default": "#3b82f6",
+            "sourceDefault": "#3b82f6",
+            "control": "color",
+            "labelZh": "颜色",
+            "labelEn": "color"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-diceui-fps-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "fps（2 项参数）",
+      "nameEn": "fps (2 controls)",
+      "descriptionZh": "上游 diceui/base 的真实组件 fps 在本地沙箱中的实际渲染；2 个可调参数：strategy、position。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/fps.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-fps-params.jpg",
+      "tags": [
+        "fps",
+        "strategy",
+        "position"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-fps-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/fps.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/fps.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-fps-params",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-fps-params.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-fps-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-fps-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "strategy",
+            "prop": "fps.strategy",
+            "type": "\"fixed\" | \"absolute\"",
+            "default": "absolute",
+            "sourceDefault": "absolute",
+            "control": "select",
+            "options": [
+              "fixed",
+              "absolute"
+            ],
+            "labelZh": "strategy",
+            "labelEn": "strategy"
+          },
+          {
+            "key": "position",
+            "prop": "fps.position",
+            "type": "\"top-left\" | \"top-right\" | \"bottom-left\" | \"bottom-right\"",
+            "default": "top-right",
+            "sourceDefault": "top-right",
+            "control": "select",
+            "options": [
+              "top-left",
+              "top-right",
+              "bottom-left",
+              "bottom-right"
+            ],
+            "labelZh": "position",
+            "labelEn": "position"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-diceui-kanban-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "kanban（1 项参数）",
+      "nameEn": "kanban (1 controls)",
+      "descriptionZh": "上游 diceui/base 的真实组件 kanban 在本地沙箱中的实际渲染；1 个可调参数：variant。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/kanban.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-kanban-params.jpg",
+      "tags": [
+        "kanban",
+        "variant"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-kanban-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/kanban.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/kanban.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-kanban-params",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-kanban-params.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-kanban-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-kanban-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "variant",
+            "prop": "kanban.variant",
+            "type": "string",
+            "default": "secondary",
+            "sourceDefault": "secondary",
+            "control": "text",
+            "labelZh": "variant",
+            "labelEn": "variant"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-diceui-relative-time-card-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "card",
+      "nameZh": "relative-time-card（1 项参数）",
+      "nameEn": "relative-time-card (1 controls)",
+      "descriptionZh": "上游 diceui/base 的真实组件 relative-time-card 在本地沙箱中的实际渲染；1 个可调参数：variant。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/relative-time-card.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-relative-time-card-params.jpg",
+      "tags": [
+        "relative-time-card",
+        "variant",
+        "relative",
+        "time",
+        "card"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-relative-time-card-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/relative-time-card.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/relative-time-card.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-relative-time-card-params",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-relative-time-card-params.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-relative-time-card-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-relative-time-card-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "variant",
+            "prop": "relative-time-card.variant",
+            "type": "string",
+            "default": "outline",
+            "sourceDefault": "outline",
+            "control": "text",
+            "labelZh": "variant",
+            "labelEn": "variant"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-diceui-status-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "status（1 项参数）",
+      "nameEn": "status (1 controls)",
+      "descriptionZh": "上游 diceui/base 的真实组件 status 在本地沙箱中的实际渲染；1 个可调参数：variant。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/status.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-status-params.jpg",
+      "tags": [
+        "status",
+        "variant"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-status-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/status.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/status.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-status-params",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-status-params.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-status-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-status-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "variant",
+            "prop": "status.variant",
+            "type": "\"default\" | \"success\" | \"dark\" | \"error\" | \"warning\" | \"info\"",
+            "default": "success",
+            "sourceDefault": "success",
+            "control": "select",
+            "options": [
+              "default",
+              "success",
+              "dark",
+              "error",
+              "warning",
+              "info"
+            ],
+            "labelZh": "variant",
+            "labelEn": "variant"
+          }
+        ]
       }
     }
   ]
