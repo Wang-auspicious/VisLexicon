@@ -177,3 +177,31 @@ test('rainbow button preserves upstream source and dependency notices', async ()
   assert.ok(notices.some(n => n.package === '@radix-ui/react-compose-refs' && n.license === 'MIT'))
   await readFile(path.join(root, item.preview.posterUrl.slice('/data/component-code/'.length)))
 })
+
+test('marquee preserves upstream source and the CSS cascade for real controls', async () => {
+  const id = 'registry-magicui-design-marquee-2bdeb1cc'
+  const [{ units }, item, scope] = await Promise.all([
+    json(path.join(root, 'discovery.json')),
+    json(path.join(root, 'items', `${id}.json`)),
+    json('public/data/discovery/scopes/curation.json'),
+  ])
+  assert.equal(units.filter(unit => unit.id === id).length, 1)
+  assert.equal(scope.units.filter(unit => unit.id === id).length, 1)
+  assert.equal(item.preview.status, 'verified')
+  assert.equal(item.license.spdx, 'MIT')
+  assert.match(item.license.text, /Copyright \(c\) Magic UI/)
+  assert.match(item.license.url, new RegExp(item.commit))
+  assert.ok(item.files.some(file => file.originalPath.endsWith('/marquee-demo.tsx')))
+  for (const file of item.files) {
+    const bytes = Buffer.from(file.content, 'utf8')
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), file.sha256)
+    assert.equal(createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex'), file.gitBlob)
+    assert.match(file.sourceUrl, new RegExp(item.commit))
+  }
+  assert.deepEqual(item.controls.map(control => control.key), ['reverse', 'pauseOnHover', 'vertical', 'repeat'])
+  const html = await readFile(path.join(root, 'previews', id, 'index.html'), 'utf8')
+  const css = await readFile(path.join(root, 'previews', id, 'registry.css'), 'utf8')
+  assert.ok(html.indexOf('registry.css') < html.indexOf('codex-marquee-controlled.css'))
+  assert.match(css, /@layer utilities\{\.animate-marquee/)
+  await readFile(path.join(root, item.preview.posterUrl.slice('/data/component-code/'.length)))
+})

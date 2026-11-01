@@ -587,6 +587,107 @@
           }
         ]
       }
+    },
+    {
+      "id": "registry-magicui-design-marquee-2bdeb1cc",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "layout",
+      "componentType": "marquee",
+      "nameZh": "滚动跑马灯",
+      "nameEn": "Marquee",
+      "descriptionZh": "循环滚动原始示例中的评论，可调整方向、悬停暂停、竖向布局和重复次数。",
+      "descriptionEn": "A scrolling row of example reviews with configurable direction, hover pause, orientation and repetition.",
+      "sourceUrl": "https://magicui.design/docs/components/marquee",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/registry-magicui-design-marquee-2bdeb1cc.jpg",
+      "tags": [
+        "跑马灯",
+        "滚动",
+        "评论",
+        "marquee",
+        "scroll",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-registry-magicui-design-marquee-2bdeb1cc",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component and example files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/marquee.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/marquee.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "registry-magicui-design-marquee-2bdeb1cc",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/registry-magicui-design-marquee-2bdeb1cc.json",
+        "previewUrl": "/data/component-code/previews/registry-magicui-design-marquee-2bdeb1cc/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/registry-magicui-design-marquee-2bdeb1cc.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "reverse",
+            "prop": "Marquee.reverse",
+            "type": "boolean",
+            "default": false,
+            "sourceDefault": false,
+            "control": "boolean",
+            "labelZh": "反向滚动",
+            "labelEn": "Reverse"
+          },
+          {
+            "key": "pauseOnHover",
+            "prop": "Marquee.pauseOnHover",
+            "type": "boolean",
+            "default": true,
+            "sourceDefault": true,
+            "control": "boolean",
+            "labelZh": "悬停暂停",
+            "labelEn": "Pause on hover"
+          },
+          {
+            "key": "vertical",
+            "prop": "Marquee.vertical",
+            "type": "boolean",
+            "default": false,
+            "sourceDefault": false,
+            "control": "boolean",
+            "labelZh": "竖向滚动",
+            "labelEn": "Vertical"
+          },
+          {
+            "key": "repeat",
+            "prop": "Marquee.repeat",
+            "type": "number",
+            "default": 4,
+            "sourceDefault": 4,
+            "control": "number",
+            "labelZh": "重复次数",
+            "labelEn": "Repeat",
+            "min": 0,
+            "step": 1
+          }
+        ]
+      }
     }
   ]
 }
