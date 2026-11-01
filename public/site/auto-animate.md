@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: ebdab31bfa0db6a9e84174cfea69fba8b01ab605aa6475c31394b59e1fae14ca
 status: APPROVED
 name: AutoAnimate

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: f935361036f8ff2eb6529563c6d27db05d7671d41302231aebbfd8ff824ac0bd
 status: APPROVED
 name: integrations.sh

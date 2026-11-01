@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 854694fea23027f15bf3f26bc688a28b4dee4be0ddfaeab9d338f23ea6b1be74
 status: APPROVED
 name: "React Select"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: a72c687f22ea010a19d1ff4f070d02839ca2147c6ebbb9b8cc6e8b01573b82b3
 status: APPROVED
 name: HeroUI

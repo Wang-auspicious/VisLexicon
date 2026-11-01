@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 9fc7fbf80cb51a07e0c34f19ad1534a5b47a26d1b805fcb2d335bb47e935b40b
 status: APPROVED
 name: Notistack

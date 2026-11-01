@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 5a99dd9600b3c8d7ddf9d8631db230dac56f974f1b145be6abd61b7050d73246
 status: APPROVED
 name: Tiptap

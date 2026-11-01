@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 5445c4e54d62218fd649071d99d84f4ecb89927720122e528d3a4d202970e85e
 status: APPROVED
 name: "Cult UI"

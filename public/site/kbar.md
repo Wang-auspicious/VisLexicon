@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 07952479f060a09f06e4c4880dde507b47b2651f405bf66318a36eea0218d18a
 status: APPROVED
 name: kbar

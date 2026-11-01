@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: c3d18aef62ffcdaac9d21f8a1b40142817c7fad22ec8748173560f2dd40a62b3
 status: APPROVED
 name: vinext

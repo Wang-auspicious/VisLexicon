@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 4d6d203dfc298cb5cdd1f7c33e41a4f37256f4f47df4607ddba5a9431d3796c4
 status: APPROVED
 name: Gridstack.js

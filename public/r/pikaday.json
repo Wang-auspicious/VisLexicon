@@ -1,0 +1,210 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "0b65030bb5fec47a4cec0fae399bc995ebf66155a4fdb36baa1885e4fedbc3aa",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "pikaday",
+  "entityId": "entity-pikaday",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/index.html",
+    "finalUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/index.html",
+    "checkedAt": "2026-09-06T18:50:00.000Z"
+  },
+  "editorial": {
+    "name": "Pikaday",
+    "descriptionZh": "David Bushell 维护的无依赖日期选择器 Pikaday，npm 包 pikaday 现为 v1.8.2。仓库 LICENSE 同时给出 MIT 与 BSD。本条截图来自 jsDelivr 上的 CDN 示例副本。",
+    "descriptionEn": null,
+    "takeawayZh": "链 pikaday.js，new Pikaday 开日历",
+    "noteZh": "CDN 上的 index.html 以源码呈现：标题 Pikaday，作者 David Bushell，页脚 BSD & MIT license。theme.html 同样是源码，写 Theme example 与 theme: 'dark-theme'。date-range 页当时连不上 jsDelivr。许可覆盖库源码。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "CDN 示例页把 Pikaday 定义为 A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS，交付物是可嵌入的日期选择控件。",
+        "evidenceUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/index.html"
+      },
+      {
+        "statement": "theme 示例给出 new Pikaday({ theme: 'dark-theme' })，证明同一控件可换主题。",
+        "evidenceUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/examples/theme.html"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/index.html",
+      "finalUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/index.html",
+      "title": "Pikaday",
+      "selectionRationale": "CDN 首页以 HTML 源码显示标题与许可。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pikaday/v2-identity.png",
+        "sha256": "52f55d5185876dc86ba2e8197ca53760acdf55656c24c5875478b3682d0abb6c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 20757,
+        "alt": "深色源码视图：title Pikaday，author David Bushell，h1 Pikaday，副标题 A refreshing JavaScript Datepicker，页脚 Copyright 2014 David Bushell BSD & MIT license，脚本 new Pikaday",
+        "display": {
+          "full": "https://vislexicon.com/shots/pikaday/v2-identity.webp",
+          "card": "https://vislexicon.com/shots/pikaday/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/examples/date-range.html",
+      "finalUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/examples/date-range.html",
+      "title": "无法访问此网站",
+      "selectionRationale": "date-range 示例截图当时是连接中断页。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pikaday/v2-breadth.png",
+        "sha256": "9b017862850e292b4b577038a91d4f27da724bc9472593a1357f90e7ec89abc3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 25352,
+        "alt": "Chrome 错误页：无法访问此网站，cdn.jsdelivr.net 意外终止了连接，ERR_CONNECTION_CLOSED，按钮重新加载",
+        "display": {
+          "full": "https://vislexicon.com/shots/pikaday/v2-breadth.webp",
+          "card": "https://vislexicon.com/shots/pikaday/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/examples/theme.html",
+      "finalUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/examples/theme.html",
+      "title": "Pikaday - Theme example",
+      "selectionRationale": "theme 示例源码写出 dark-theme 调用。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/pikaday/v2-proof.png",
+        "sha256": "602657176201d967d2cb5fe63b98061ff5aa5154f959d7adc31279a630f55b85",
+        "width": 1280,
+        "height": 900,
+        "bytes": 28044,
+        "alt": "深色源码视图：title Pikaday - Theme example，h1 Pikaday - Theme example，输入 Date、Custom theme、Dropdowns w/ triangles，脚本 theme: 'dark-theme' 与 triangle-theme",
+        "display": {
+          "full": "https://vislexicon.com/shots/pikaday/v2-proof.webp",
+          "card": "https://vislexicon.com/shots/pikaday/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "David Bushell",
+      "sourceUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/index.html",
+      "evidence": "示例页 meta author 为 David Bushell，页脚 Copyright © 2014 David Bushell。LICENSE 版权行同为 Copyright (c) 2014 David Bushell。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Pikaday",
+      "sourceUrl": "https://github.com/Pikaday/Pikaday",
+      "evidence": "仓库位于 GitHub 组织 Pikaday 下。示例页链到 github.com/Pikaday/Pikaday。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/Pikaday/Pikaday",
+      "sourceUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/index.html",
+      "evidence": "示例页写 Pikaday source on GitHub，链到 https://github.com/Pikaday/Pikaday。package.json repository.url 同为该仓。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/Pikaday/Pikaday/master/LICENSE",
+      "evidence": "LICENSE 标题 Copyright (c) 2014 David Bushell BSD & MIT license，正文同时给出 MIT License 与 The BSD License。package.json license 为 (0BSD OR MIT)。示例页脚写 BSD & MIT license。facets.licenses 记 MIT。该许可覆盖 Pikaday 库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://cdn.jsdelivr.net/gh/Pikaday/Pikaday@master/index.html",
+      "evidence": "示例页写 Feel free to use it however you like。CDN 副本与仓库公开可读。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "pikaday",
+      "sourceUrl": "https://raw.githubusercontent.com/Pikaday/Pikaday/master/package.json",
+      "evidence": "package.json name 为 pikaday，version 1.8.2，description 为 A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/pikaday",
+    "designMdUrl": "https://vislexicon.com/site/pikaday.md",
+    "checkedAt": "2026-09-06T18:50:00.000Z",
+    "license": "MIT"
+  }
+}

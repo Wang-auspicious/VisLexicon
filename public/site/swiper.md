@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 8c8f62d100b451e93ca2ca7c6e916afe9c36bdfdc017d7d5adecbfec62c8abf0
 status: APPROVED
 name: Swiper

@@ -1,0 +1,190 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "82ef4345f61ca1db5bccac2810e18f41a99fc1330cc900ae0e6ede3964144ed3",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "github-com-qambar-color-contrast-checker",
+  "entityId": "entity-github-com-qambar-color-contrast-checker",
+  "status": "APPROVED",
+  "voiceStatus": null,
+  "official": {
+    "inputUrl": "https://github.com/Qambar/color-contrast-checker",
+    "finalUrl": "https://github.com/Qambar/color-contrast-checker",
+    "checkedAt": "2026-09-15T12:51:33.680Z"
+  },
+  "editorial": {
+    "name": "Qambar/color-contrast-checker",
+    "descriptionZh": "按 WCAG 2.0 / 2.1 校验颜色对比度的 npm 包，从 bbc/color-contrast-checker fork 而来，提供 isLevelAA、isLevelAAA 这类方法。",
+    "descriptionEn": null,
+    "takeawayZh": "在代码里判一组色过不过 WCAG 等级",
+    "noteZh": "仓库标题下方直接标着 forked from bbc/color-contrast-checker。README 说对比公式 L1/L2 来自 ISO-9241-3 与 ANSI-HFES-100-1988，并列出三条 W3C 参考链接，还支持 #FFF、#000 这种简写色值；Usage 一段给的是 var ccc = new ColorContrastChecker(); 之后调 ccc.isLevelAA(color1, color2)，Installation 里给出 npm install color-contrast-checker，也给了以 devDependencies 方式写到 2.1.0 的写法。右侧 About 是 An accessibility checker tool for validating the color contrast based on WCAG 2.0 and WCAG 2.1 standards；仓库 5 star、42 个 commit、1 个 fork。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "交付物是装进项目、可在测试或构建脚本里调用的对比度校验库，用户拿走的是开发期的校验能力，归 build-deploy-dev-workflow。",
+        "evidenceUrl": "https://github.com/Qambar/color-contrast-checker"
+      },
+      {
+        "statement": "它查的是无障碍对比度，但形态是代码库不是审计平台，与 research-quality-tools 下的 accessibility-audit-remediation（Stark、axe 那类产品）不同；这一取舍存在解释空间。",
+        "evidenceUrl": "https://github.com/Qambar/color-contrast-checker"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "install",
+      "test",
+      "copy"
+    ],
+    "media": [],
+    "platforms": [],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "test",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "source-available",
+      "free"
+    ],
+    "licenses": [
+      "unknown"
+    ],
+    "contentOrganization": [],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/qambar/color-contrast-checker",
+      "finalUrl": "https://github.com/qambar/color-contrast-checker",
+      "title": "GitHub - Qambar/color-contrast-checker: An accessibility checker tool for validating the color contrast based on WCAG 2.0 and WCAG 2.1 standards. · GitHub",
+      "selectionRationale": "官方入口 Qambar/color-contrast-checker 首页展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-qambar-color-contrast-checker/v2-identity.png",
+        "sha256": "1057c5126719757e7f0e83ddb8cddd4bb30c6db6cc8bddca23cc75f9a422b027",
+        "width": 1280,
+        "height": 900,
+        "bytes": 100419,
+        "alt": "Qambar/color-contrast-checker 首页",
+        "display": {
+          "full": "https://vislexicon.com/shots/github-com-qambar-color-contrast-checker/v2-identity.webp",
+          "card": "https://vislexicon.com/shots/github-com-qambar-color-contrast-checker/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker/tree/master/example",
+      "finalUrl": "https://github.com/Qambar/color-contrast-checker/tree/master/example",
+      "title": "color-contrast-checker/example at master · Qambar/color-contrast-checker · GitHub",
+      "selectionRationale": "同站目录与分类展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-qambar-color-contrast-checker/v2-breadth.png",
+        "sha256": "6a0dfc24857f15baa5e5440b76babb9d01ab3649179820133db9c9ee5a2df057",
+        "width": 1280,
+        "height": 900,
+        "bytes": 67413,
+        "alt": "Qambar/color-contrast-checker 目录页",
+        "display": {
+          "full": "https://vislexicon.com/shots/github-com-qambar-color-contrast-checker/v2-breadth.webp",
+          "card": "https://vislexicon.com/shots/github-com-qambar-color-contrast-checker/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker/blob/master/example/index.html",
+      "finalUrl": "https://github.com/Qambar/color-contrast-checker/blob/master/example/index.html",
+      "title": "color-contrast-checker/example/index.html at master · Qambar/color-contrast-checker · GitHub",
+      "selectionRationale": "具体条目内容细节展示。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/github-com-qambar-color-contrast-checker/v2-proof.png",
+        "sha256": "59a6d594afc23584b8caff39156d1da1057ea039de1c5878f5b86c490a967c35",
+        "width": 1280,
+        "height": 900,
+        "bytes": 93564,
+        "alt": "Qambar/color-contrast-checker 详情页",
+        "display": {
+          "full": "https://vislexicon.com/shots/github-com-qambar-color-contrast-checker/v2-proof.webp",
+          "card": "https://vislexicon.com/shots/github-com-qambar-color-contrast-checker/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "fork-source",
+      "value": "forked from bbc/color-contrast-checker",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker",
+      "evidence": "仓库标题行下方写着 forked from bbc/color-contrast-checker",
+      "confidence": 1
+    },
+    {
+      "field": "standards",
+      "value": "WCAG 2.0 与 WCAG 2.1；公式基于 ISO-9241-3 与 ANSI-HFES-100-1988",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker",
+      "evidence": "About 栏与 README 首段写着 based on WCAG 2.0 and WCAG 2.1 standards，公式来源也在 README 一段里注明",
+      "confidence": 1
+    },
+    {
+      "field": "api",
+      "value": "new ColorContrastChecker() 后调 isLevelAA / isLevelAAA",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker",
+      "evidence": "README 的 Usage 一段给的是 var ccc = new ColorContrastChecker(); 然后 ccc.isLevelAA(color1, ...)，另有 Advanced Usage 一节",
+      "confidence": 0.9
+    },
+    {
+      "field": "license",
+      "value": "unknown（页面只给 License 链接）",
+      "sourceUrl": "https://github.com/Qambar/color-contrast-checker",
+      "evidence": "右侧边栏与 README 卡片都只写 Readme / License，没有标出许可证名称",
+      "confidence": 0.8
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": null,
+    "requiresAttribution": null,
+    "licenseMachineReadable": false,
+    "cautions": [
+      "站点上未找到明确的许可声明，本条记录按 v3 规格记为 unknown；再分发或商用前必须自行确认。"
+    ],
+    "recheckAfter": "2027-03-14",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/github-com-qambar-color-contrast-checker",
+    "designMdUrl": "https://vislexicon.com/site/github-com-qambar-color-contrast-checker.md",
+    "checkedAt": "2026-09-15T12:51:33.680Z",
+    "license": "unknown"
+  }
+}

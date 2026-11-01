@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 8e0763ae21f19caf36b3ecbd9145c10f901f3e169d0904e077a0df7327dcb8fc
 status: APPROVED
 name: "Radix Primitives"

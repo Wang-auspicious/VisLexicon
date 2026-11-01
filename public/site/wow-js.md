@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 2e884077d6680535f314cedd120a4a7c2492ff6d473a79a44d0cb3a540fbd534
 status: APPROVED
 name: WOW.js

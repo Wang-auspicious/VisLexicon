@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 0fa8aa1c3b2b0e4e25c3922fba3c04630734a14ab1da595fd1c61f2115c6b4d8
 status: APPROVED
 name: "Apache ECharts"

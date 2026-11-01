@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: af482efc39452ea3edc52aac58a98807bb6a3ff3a3345448c58d25a7b86c5435
 status: APPROVED
 name: "Semantic UI"

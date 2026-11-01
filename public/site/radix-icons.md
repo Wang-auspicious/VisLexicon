@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 4213ffed4a648bdae193b3e2fcee9d2b285acd573cd7ae1404161cc898355271
 status: APPROVED
 name: "Radix Icons"

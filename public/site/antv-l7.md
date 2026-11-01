@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 100976a733dcd9ac8b625c7fb3395a89551300fca0a3a267e69514276622fbb7
 status: APPROVED
 name: "AntV L7"

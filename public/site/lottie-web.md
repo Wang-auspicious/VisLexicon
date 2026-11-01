@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 674aa9922e2991e2ea1bf14ea842d7bd261880b0ae3ed73c8605211e6a0b73b7
 status: APPROVED
 name: lottie-web

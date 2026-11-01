@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 2d8044cf94843283f1a9f4d30f7392fe788e2a5377d4a036a3b4b3a6b77bf8c8
 status: APPROVED
 name: "Remix Icon"

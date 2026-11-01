@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 01bca00ea8ebd048007618e3748c7e7f24f08f7d0eadc34956b8e15698279e5f
 status: APPROVED
 name: "Naive UI"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: c07ce30a1ea1c050ccec6e8e1c88f79d4e0414a54c3040757bb6107427f2ad1d
 status: APPROVED
 name: Rive

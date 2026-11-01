@@ -1,0 +1,247 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "481101575c3d7b5e475068ddc0728c1da58ff19db4749def7055d03596279f2d",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "cmdk",
+  "entityId": "entity-cmdk",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://cmdk.paco.me/",
+    "finalUrl": "https://github.com/dip/cmdk",
+    "checkedAt": "2026-09-06T02:50:00.000Z"
+  },
+  "editorial": {
+    "name": "cmdk",
+    "descriptionZh": "Paco Coursey 的无样式 React 命令菜单，亦可作无障碍组合框。cmdk.paco.me 已跳到 GitHub dip/cmdk；LICENSE.md 标 MIT，现无独立演示站。",
+    "descriptionEn": null,
+    "takeawayZh": "无样式命令菜单，条目自己渲染、库负责筛选",
+    "noteZh": "cmdk.paco.me 与 cmdk.vercel.app 都跳到 github.com/dip/cmdk，原演示站没了。README 大图写 Fast, unstyled, composable command menu，v1.1.1。ARCHITECTURE 讲组合式 combobox，不要数组 map。website/pages/index.tsx 是原演示源码，含 Raycast、Linear、Vercel、Framer 四套皮。适合要 ⌘K 面板、样式自己写的人。MIT。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "page-blocks-embeddable-controls",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 把 ⌘K 定义为 Fast, unstyled, composable command menu，也可作 accessible combobox，交付物是可嵌入的命令面板。",
+        "evidenceUrl": "https://github.com/dip/cmdk/blob/main/README.md"
+      },
+      {
+        "statement": "ARCHITECTURE 说明用 compound component 写带筛选排序的 combobox，而不是从数组手动渲染条目。",
+        "evidenceUrl": "https://github.com/dip/cmdk/blob/main/ARCHITECTURE.md"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "component",
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "react",
+      "typescript",
+      "radix-ui"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/dip/cmdk/blob/main/README.md",
+      "finalUrl": "https://github.com/dip/cmdk/blob/main/README.md",
+      "title": "cmdk/README.md at main · dip/cmdk · GitHub",
+      "selectionRationale": "演示站已跳 GitHub。README 大图就是产品介绍。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/cmdk/v2-identity.png",
+        "sha256": "7edef2c4fbb6111bf0904165eef31b045d0ee7ff4140f392fb57b24ed825aba4",
+        "width": 1280,
+        "height": 900,
+        "bytes": 206919,
+        "alt": "GitHub dip/cmdk README，⌘K 大图写 Fast, unstyled, composable command menu，npm v1.1.1",
+        "display": {
+          "full": "https://vislexicon.com/shots/cmdk/v2-identity.webp",
+          "card": "https://vislexicon.com/shots/cmdk/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/dip/cmdk/blob/main/ARCHITECTURE.md",
+      "finalUrl": "https://github.com/dip/cmdk/blob/main/ARCHITECTURE.md",
+      "title": "cmdk/ARCHITECTURE.md at main · dip/cmdk · GitHub",
+      "selectionRationale": "再看 ARCHITECTURE。组合式 combobox 的约束写在这里。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/cmdk/v2-breadth.png",
+        "sha256": "c3ef9088e014fa778fc2bbc8bd31429d6f4d87bb51746dfd518f35ce65f212f3",
+        "width": 1280,
+        "height": 900,
+        "bytes": 91638,
+        "alt": "cmdk ARCHITECTURE.md，标题 Architecture，正文讲 compound component 写 combobox，不要数组 map",
+        "display": {
+          "full": "https://vislexicon.com/shots/cmdk/v2-breadth.webp",
+          "card": "https://vislexicon.com/shots/cmdk/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/dip/cmdk/blob/main/website/pages/index.tsx",
+      "finalUrl": "https://github.com/dip/cmdk/blob/main/website/pages/index.tsx",
+      "title": "cmdk/website/pages/index.tsx at main · dip/cmdk · GitHub",
+      "selectionRationale": "最后看原演示页源码。Framer、Linear、Vercel、Raycast 四套命令菜单。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/cmdk/v2-proof.png",
+        "sha256": "bf7dd4c8902f5a1fce93cbaee1a7d3d73e890f5e1176f0a0d19e37a89c0df228",
+        "width": 1280,
+        "height": 900,
+        "bytes": 101309,
+        "alt": "cmdk website/pages/index.tsx 源码，导入 FramerCMDK、LinearCMDK、VercelCMDK、RaycastCMDK",
+        "display": {
+          "full": "https://vislexicon.com/shots/cmdk/v2-proof.webp",
+          "card": "https://vislexicon.com/shots/cmdk/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Paco Coursey",
+      "sourceUrl": "https://github.com/dip/cmdk/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 版权行 Copyright (c) 2022 Paco Coursey。cmdk/package.json author.name 为 Paco。README History 另写 Rauno 参与 Vercel 命令菜单，许可仍只署 Paco。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/dip/cmdk/blob/main/LICENSE.md",
+      "evidence": "LICENSE 与 package.json 只署 Paco，未见公司。GitHub 用户现为 dip，仓库别名 pacocoursey/cmdk 仍跳到 dip/cmdk。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/dip/cmdk",
+      "sourceUrl": "https://cmdk.paco.me/",
+      "evidence": "cmdk.paco.me 与 cmdk.vercel.app 均 200 跳转到 https://github.com/dip/cmdk。package.json repository 仍写 github.com/pacocoursey/cmdk，该地址同样跳 dip/cmdk。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/dip/cmdk/blob/main/LICENSE.md",
+      "evidence": "LICENSE.md 标题 MIT License，Copyright (c) 2022 Paco Coursey。cmdk/package.json license 为 MIT。覆盖 cmdk 包源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/dip/cmdk/blob/main/README.md",
+      "evidence": "README 安装命令 pnpm install cmdk，未见付费档。原演示站已下线，文档以仓库 README 为准。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "cmdk",
+      "sourceUrl": "https://github.com/dip/cmdk/blob/main/cmdk/package.json",
+      "evidence": "cmdk/package.json name 为 cmdk，version 1.1.1，与 README npm 徽章一致。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-command-palette",
+        "evidenceUrl": "https://github.com/dip/cmdk/blob/main/README.md",
+        "note": "README 把 ⌘K 定义为 command menu / command palette，仓库 About 标签含 command-palette。",
+        "termEn": "Command palette",
+        "termZh": "命令面板"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://github.com/dip/cmdk/blob/main/README.md",
+        "note": "同一 README 写 can also be used as an accessible combobox。",
+        "termEn": "Combobox",
+        "termZh": null
+      }
+    ],
+    "atlasRelations": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-command-palette",
+        "evidenceUrl": "https://github.com/dip/cmdk/blob/main/README.md",
+        "note": "README 把 ⌘K 定义为 command menu / command palette，仓库 About 标签含 command-palette。",
+        "termEn": "Command palette",
+        "termZh": "命令面板"
+      },
+      {
+        "stageId": "form-anatomy",
+        "termId": "atlas-component-component-combobox",
+        "evidenceUrl": "https://github.com/dip/cmdk/blob/main/README.md",
+        "note": "同一 README 写 can also be used as an accessible combobox。",
+        "termEn": "Combobox",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/cmdk",
+    "designMdUrl": "https://vislexicon.com/site/cmdk.md",
+    "checkedAt": "2026-09-06T02:50:00.000Z",
+    "license": "MIT"
+  }
+}

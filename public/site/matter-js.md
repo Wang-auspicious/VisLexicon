@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 8fd02da59f77a48d71f85e6e2e03ddb2379344c6f832b12e53a7670a57d51dde
 status: APPROVED
 name: Matter.js

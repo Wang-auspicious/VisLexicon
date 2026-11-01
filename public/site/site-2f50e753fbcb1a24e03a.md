@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 19934ac4a71b6b44b4e53b84f89556bed038a9dcc386a73bbea03c4aec5f710f
 status: APPROVED
 name: SmoothUI

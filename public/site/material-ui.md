@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: feeb937b9c3d287746ed50dac9ce06eaea9950f4ebc62d86524d9b319cb40c70
 status: APPROVED
 name: "Material UI"

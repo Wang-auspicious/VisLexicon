@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 7cfeb485b3433130fca05dc4ae280885410d5ee0a9e03408c2d412fb0d8b56c6
 status: APPROVED
 name: Editor.js

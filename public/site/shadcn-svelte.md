@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: f94848dbf81f7ce98cd1964ca125ce564bb3286ff30cfa9afb250e4e42773773
 status: APPROVED
 name: shadcn-svelte

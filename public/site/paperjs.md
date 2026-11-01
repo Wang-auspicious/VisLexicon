@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 4bdd910f26ddd11ccd50b62ec126310a1cbdb8d9d4c7749290aeee87d07199aa
 status: APPROVED
 name: Paper.js

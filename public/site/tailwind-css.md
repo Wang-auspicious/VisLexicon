@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 13d12679a31cc7d1834491137205a8d108dd2d5abe04879f61b3ed60f7bcc27d
 status: APPROVED
 name: "Tailwind CSS"

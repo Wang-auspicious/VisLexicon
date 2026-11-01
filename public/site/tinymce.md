@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: f79c9ef9f084b26e70290c35c39f5cd666e6a37e51df3d18642390c23642cb52
 status: APPROVED
 name: TinyMCE

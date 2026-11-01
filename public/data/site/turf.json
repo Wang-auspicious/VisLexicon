@@ -1,0 +1,254 @@
+{
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "94b2426ebcb4d85105d6a652ca32505bd6dda927d36b083d1eb7722a79d1d738",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "turf",
+  "entityId": "entity-turf",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "turfjs.org",
+  "official": {
+    "inputUrl": "https://turfjs.org/",
+    "finalUrl": "https://turfjs.org/",
+    "checkedAt": "2026-09-07T04:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Turf.js",
+    "descriptionZh": "Turf.js 是模块化地理空间分析库，现为 7.4.0。对 GeoJSON 做缓冲、面积、TIN 等运算。LICENSE 标 MIT，版权署 Morgan Herlocker。",
+    "descriptionEn": null,
+    "takeawayZh": "对 GeoJSON 调 turf.buffer",
+    "noteZh": "首页绿底写 geospatial analysis for browsers and Node.js，可切 Tin、Buffer、Voronoi。Introduction 标明 v7.4.0。buffer 页给出 radius、units，并可 npm install @turf/buffer。适合空间计算，不是底图库。MIT 覆盖 Turf 源码。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "three-d-spatial-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Turf.js 定义为 Advanced geospatial analysis for browsers and Node.js，并提供 Tin、Buffer、Bezier、Voronoi 演示。",
+        "evidenceUrl": "https://turfjs.org/"
+      },
+      {
+        "statement": "buffer 文档说明对输入要素按半径计算缓冲区，并给出 npm install @turf/buffer 与 turf.buffer。",
+        "evidenceUrl": "https://turfjs.org/docs/api/buffer"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "researcher"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://turfjs.org/",
+      "finalUrl": "https://turfjs.org/",
+      "title": "Advanced geospatial toolkit for Typescript | Turf.js",
+      "selectionRationale": "先看首页：Tin、Buffer、Voronoi 切换。",
+      "shot": {
+        "src": "/shots/turf/v2-identity.png",
+        "sha256": "97bd5e38ea9c890890bd06f22d430b15b52ac40b9c5adcf3258f54aace46ba3c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 366165,
+        "alt": "Turf.js 首页，标题 Advanced geospatial analysis for browsers and Node.js，纽约地图与 Tin Buffer Bezier Voronoi 切换",
+        "display": {
+          "full": "/shots/turf/v2-identity.webp",
+          "card": "/shots/turf/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://turfjs.org/docs/intro",
+      "finalUrl": "https://turfjs.org/docs/intro",
+      "title": "Introduction | Turf.js",
+      "selectionRationale": "再翻 Introduction：v7.4.0 空间引擎。",
+      "shot": {
+        "src": "/shots/turf/v2-breadth.png",
+        "sha256": "57d68e9af821c7f251056a19e5deac3dcc891f067caf045ee4a3b413bd46e7fa",
+        "width": 1280,
+        "height": 900,
+        "bytes": 237267,
+        "alt": "Turf.js Introduction，Version 7.4.0，副题 A modular geospatial engine written in JavaScript，下方 Contributors 头像墙",
+        "display": {
+          "full": "/shots/turf/v2-breadth.webp",
+          "card": "/shots/turf/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://turfjs.org/docs/api/buffer",
+      "finalUrl": "https://turfjs.org/docs/api/buffer",
+      "title": "buffer | Turf.js",
+      "selectionRationale": "最后开 buffer：radius 与 units。",
+      "shot": {
+        "src": "/shots/turf/v2-proof.png",
+        "sha256": "78d6bbf04f84489d77ebf78b2658d1fa64d23e19a04c3117caa8d775eedab26c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 92176,
+        "alt": "Turf.js buffer API，Version 7.4.0，参数表 geojson radius options.units options.steps，左侧 along area bbox 函数目录",
+        "display": {
+          "full": "/shots/turf/v2-proof.webp",
+          "card": "/shots/turf/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://turfjs.org/",
+        "selectionRationale": "先看首页：Tin、Buffer、Voronoi 切换。",
+        "shot": {
+          "src": "/shots/turf/v2-identity.png",
+          "alt": "Turf.js 首页，标题 Advanced geospatial analysis for browsers and Node.js，纽约地图与 Tin Buffer Bezier Voronoi 切换",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://turfjs.org/docs/intro",
+        "selectionRationale": "再翻 Introduction：v7.4.0 空间引擎。",
+        "shot": {
+          "src": "/shots/turf/v2-breadth.png",
+          "alt": "Turf.js Introduction，Version 7.4.0，副题 A modular geospatial engine written in JavaScript，下方 Contributors 头像墙",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://turfjs.org/docs/api/buffer",
+        "selectionRationale": "最后开 buffer：radius 与 units。",
+        "shot": {
+          "src": "/shots/turf/v2-proof.png",
+          "alt": "Turf.js buffer API，Version 7.4.0，参数表 geojson radius options.units options.steps，左侧 along area bbox 函数目录",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "Morgan Herlocker",
+      "sourceUrl": "https://raw.githubusercontent.com/Turfjs/turf/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2019 Morgan Herlocker。package.json author 为 Turf Authors。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Turf.js",
+      "sourceUrl": "https://turfjs.org/docs/intro",
+      "evidence": "Introduction 把项目称为 Turf，站点品牌 Turf.js。package.json author 为 Turf Authors。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/Turfjs/turf",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@turf/turf/package.json",
+      "evidence": "package.json repository.url 为 git://github.com/Turfjs/turf.git。文档顶栏 GitHub 链到该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/Turfjs/turf/master/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2019 Morgan Herlocker。@turf/turf package.json license 为 MIT。该许可覆盖 Turf 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://turfjs.org/docs/api/buffer",
+      "evidence": "buffer 页写 npm install @turf/buffer 与 npm install @turf/turf。文档公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@turf/turf",
+      "sourceUrl": "https://turfjs.org/docs/api/buffer",
+      "evidence": "Installation 写 npm install @turf/turf 与 import * as turf from \"@turf/turf\"。站点顶栏 Version 7.4.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/turf.md",
+  "registryUrl": "/r/turf.json"
+}

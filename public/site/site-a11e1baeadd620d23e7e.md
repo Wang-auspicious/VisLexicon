@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: ed926d911eb0b856a59c6579bf0e18933c6ee4eccb085e950b908d9615f68115
 status: APPROVED
 name: UICapsule

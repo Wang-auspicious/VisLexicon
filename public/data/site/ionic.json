@@ -1,0 +1,266 @@
+{
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "a9ac7fb77e3ca04d2284fdb99bb184b0f552ed51e98120a7adb47e4c6fbae557",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "ionic",
+  "entityId": "entity-ionic",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "ionicframework.com",
+  "official": {
+    "inputUrl": "https://ionicframework.com/",
+    "finalUrl": "https://ionicframework.com/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Ionic Framework",
+    "descriptionZh": "Ionic Team 维护的跨平台移动 UI 工具包 Ionic Framework，现为 @ionic/core 9.0.2。仓库标 MIT。Appflow 等商业产品已于 2025 年 2 月停售新客，核心框架仍免费开源。",
+    "descriptionEn": null,
+    "takeawayZh": "装 @ionic/core，先抄 ion-button",
+    "noteZh": "ionicframework.com 三次 ERR_CONNECTION_CLOSED，identity 改看 GitHub ionic-team/ionic-framework：About 写 cross-platform UI toolkit，标 MIT，CHANGELOG 为 v9.0.2。ionic.io 顶栏 Important Announcement: The Future of Ionic's Commercial Products。button.tsx 写 @Component tag ion-button。核心 MIT 免费；Appflow 等商业产品 2025-02 停售新客，存量可用到 2027-12-31。",
+    "recommendation": null,
+    "pricing": "Free MIT core; Appflow paid, new sales stopped Feb 2025",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "GitHub About 把 Ionic Framework 定义为 cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps，并标 MIT license。",
+        "evidenceUrl": "https://github.com/ionic-team/ionic-framework"
+      },
+      {
+        "statement": "core/src/components/button/button.tsx 以 Stencil @Component 注册 tag: 'ion-button'，证明交付物是可安装的界面组件。",
+        "evidenceUrl": "https://github.com/ionic-team/ionic-framework/blob/main/core/src/components/button/button.tsx"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "react",
+      "vue",
+      "angular",
+      "css",
+      "web-components"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/ionic-team/ionic-framework",
+      "finalUrl": "https://github.com/ionic-team/ionic-framework",
+      "title": "GitHub - ionic-team/ionic-framework: A powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps with HTML, CSS, and JavaScript.",
+      "selectionRationale": "官网连不上。GitHub About 写 UI toolkit，并标 MIT。",
+      "shot": {
+        "src": "/shots/ionic/v2-identity.png",
+        "sha256": "9f163ba287a05405eac206e2921c8ee85de10e373fc2c6bbccaf573ee2601318",
+        "width": 1280,
+        "height": 900,
+        "bytes": 140908,
+        "alt": "GitHub ionic-team/ionic-framework：About 写 cross-platform UI toolkit，链到 ionicframework.com，标 MIT license，CHANGELOG 为 v9.0.2",
+        "display": {
+          "full": "/shots/ionic/v2-identity.webp",
+          "card": "/shots/ionic/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://ionic.io/",
+      "finalUrl": "https://ionic.io/",
+      "title": "Ionic: Enterprise App Platform",
+      "selectionRationale": "再看 ionic.io。顶栏公告把商业产品与开源框架分开。",
+      "shot": {
+        "src": "/shots/ionic/v2-breadth.png",
+        "sha256": "d9d69384f70749913ecb3b8ac15cf43d08f069c27bafa2f509348b8b75cb349c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 382028,
+        "alt": "ionic.io 首页：顶栏 Important Announcement The Future of Ionic's Commercial Products，标题 A new way to build and ship for mobile",
+        "display": {
+          "full": "/shots/ionic/v2-breadth.webp",
+          "card": "/shots/ionic/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/ionic-team/ionic-framework/blob/main/core/src/components/button/button.tsx",
+      "finalUrl": "https://github.com/ionic-team/ionic-framework/blob/main/core/src/components/button/button.tsx",
+      "title": "ionic-framework/core/src/components/button/button.tsx at main · ionic-team/ionic-framework",
+      "selectionRationale": "文档站同样连不上。button.tsx 里 ion-button 就是组件证明。",
+      "shot": {
+        "src": "/shots/ionic/v2-proof.png",
+        "sha256": "c7983b58072f56de3d5776e3ca85ae38834b9c3e9fe1179d5a1e128d1d2b0af9",
+        "width": 1280,
+        "height": 900,
+        "bytes": 133780,
+        "alt": "GitHub button.tsx：@Component tag 为 ion-button，styleUrls 含 button.ios.scss 与 button.md.scss",
+        "display": {
+          "full": "/shots/ionic/v2-proof.webp",
+          "card": "/shots/ionic/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/ionic-team/ionic-framework",
+        "selectionRationale": "官网连不上。GitHub About 写 UI toolkit，并标 MIT。",
+        "shot": {
+          "src": "/shots/ionic/v2-identity.png",
+          "alt": "GitHub ionic-team/ionic-framework：About 写 cross-platform UI toolkit，链到 ionicframework.com，标 MIT license，CHANGELOG 为 v9.0.2",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://ionic.io/",
+        "selectionRationale": "再看 ionic.io。顶栏公告把商业产品与开源框架分开。",
+        "shot": {
+          "src": "/shots/ionic/v2-breadth.png",
+          "alt": "ionic.io 首页：顶栏 Important Announcement The Future of Ionic's Commercial Products，标题 A new way to build and ship for mobile",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://github.com/ionic-team/ionic-framework/blob/main/core/src/components/button/button.tsx",
+        "selectionRationale": "文档站同样连不上。button.tsx 里 ion-button 就是组件证明。",
+        "shot": {
+          "src": "/shots/ionic/v2-proof.png",
+          "alt": "GitHub button.tsx：@Component tag 为 ion-button，styleUrls 含 button.ios.scss 与 button.md.scss",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "Ionic Team",
+      "sourceUrl": "https://raw.githubusercontent.com/ionic-team/ionic-framework/main/core/package.json",
+      "evidence": "core/package.json author 为 Ionic Team。LICENSE 版权行为 Copyright (c) 2015-present Drifty Co。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "OutSystems / Ionic Team",
+      "sourceUrl": "https://ionic.io/blog/important-announcement-the-future-of-ionics-commercial-products",
+      "evidence": "2025-02-11 公告写 Fast forward to October 2022: Ionic joined the OutSystems family。GitHub 组织为 ionic-team。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/ionic-team/ionic-framework",
+      "sourceUrl": "https://github.com/ionic-team/ionic-framework",
+      "evidence": "仓库 About 回链 ionicframework.com。core/package.json repository 为 ionic-team/ionic-framework。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/ionic-team/ionic-framework/main/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2015-present Drifty Co。core/package.json license 为 MIT。该许可覆盖 Ionic Framework / @ionic/core 源码，不含 Appflow 等已停售商业产品。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free MIT core; Appflow paid, new sales stopped Feb 2025",
+      "sourceUrl": "https://ionic.io/blog/important-announcement-the-future-of-ionics-commercial-products",
+      "evidence": "公告写 Ionic’s open source software, including Ionic Framework and Capacitor, will remain free and open source。同时 discontinued new customer sales for all Ionic commercial products… including Ionic Appflow。Appflow users continue to have access through December 31, 2027。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@ionic/core",
+      "sourceUrl": "https://raw.githubusercontent.com/ionic-team/ionic-framework/main/core/package.json",
+      "evidence": "core/package.json name 为 @ionic/core，version 9.0.2。README 另列 @ionic/angular、@ionic/vue、@ionic/react。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/ionic.md",
+  "registryUrl": "/r/ionic.json"
+}

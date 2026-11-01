@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: c25c2096b81acf3fa2d0049064c20a0f604d5ce590a6716dcc8e7b235cf29024
 status: APPROVED
 name: "Panda CSS"

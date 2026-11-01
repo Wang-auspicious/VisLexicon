@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: a0297547492710dd7c61a528e00a2b762ef1dd0dfb4e7e6243919e7f221eb68c
 status: APPROVED
 name: PrimeVue

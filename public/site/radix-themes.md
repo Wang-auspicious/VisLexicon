@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: a8994cf7978cd41e1a0be622cd96412e1bae81f554dd50ccc8d7ad2bfee08ff3
 status: APPROVED
 name: "Radix Themes"

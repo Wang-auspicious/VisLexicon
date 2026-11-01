@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 08d886ed7e1d52d61304d920b5f6ee33cc160f115b35aa47e141b4742e0242f0
 status: APPROVED
 name: "Fontfabric · 字体资源"

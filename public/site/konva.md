@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 1680d5f8fa9b1efc34383be63147a1233d353dca5991208caa92db82ddccd20a
 status: APPROVED
 name: Konva

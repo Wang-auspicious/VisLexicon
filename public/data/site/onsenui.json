@@ -1,0 +1,266 @@
+{
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "ae0928ad4096071d7c677b4754863f3c3ddb2829b7ba268fee9ee470abe645f8",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "onsenui",
+  "entityId": "entity-onsenui",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "onsen.io",
+  "official": {
+    "inputUrl": "https://onsen.io/",
+    "finalUrl": "https://onsen.io/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Onsen UI",
+    "descriptionZh": "ASIAL 开源的混合应用 UI 框架 Onsen UI，现为 2.12.9，基于 Web Components，可绑 Vue/React/Angular。LICENSE 为 Apache-2.0。Monaca 为另售打包工具。",
+    "descriptionEn": null,
+    "takeawayZh": "先放 ons-button，iOS/Android 外观会自动切",
+    "noteZh": "onsen.io 首页 ERR_CONNECTION_CLOSED，identity 改看 GitHub OnsenUI/OnsenUI：About 写 HTML5 hybrid 框架，基于 Web Components，可绑 Angular/React/Vue。Getting Started 写 100% open source（Apache v2 license）。ons-button 页左侧现场 Default/large 按钮，右侧 ons-button 源码。Monaca 是另售云打包，本条只收开源 UI。Apache-2.0。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "general-ui-components",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Getting Started 把 Onsen UI 定义为面向移动应用的 UI 组件集，并写 Free to use, 100% open source software (Apache v2 license)。",
+        "evidenceUrl": "https://onsen.io/v2/guide/"
+      },
+      {
+        "statement": "ons-button 文档给出 iOS/Android 现场按钮和 <ons-button> 源码，证明交付物是可嵌入页面的界面组件。",
+        "evidenceUrl": "https://onsen.io/v2/api/js/ons-button.html"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "mobile"
+    ],
+    "deliverables": [
+      "component",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android"
+    ],
+    "technologies": [
+      "javascript",
+      "css",
+      "web-components",
+      "react",
+      "vue",
+      "angular"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "contentOrganization": [
+      "component-registry",
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/OnsenUI/OnsenUI",
+      "finalUrl": "https://github.com/OnsenUI/OnsenUI",
+      "title": "GitHub - OnsenUI/OnsenUI: Mobile app development framework and SDK using HTML5 and JavaScript. Create beautiful and performant cross-platform mobile apps. Based on Web Components, and provides bindings for Angular 1, 2, React and Vue.js.",
+      "selectionRationale": "首页连不上。GitHub About 写 hybrid 框架和 Web Components。",
+      "shot": {
+        "src": "/shots/onsenui/v2-identity.png",
+        "sha256": "1b35025117a68a1ecba3544eb0a3d79a70b1c56e0ec143635a1ad4a7cf77e067",
+        "width": 1280,
+        "height": 900,
+        "bytes": 129785,
+        "alt": "GitHub OnsenUI/OnsenUI：About 写 Mobile app development framework and SDK using HTML5 and JavaScript，链到 onsen.io，列出 react-onsenui 与 vue-onsenui",
+        "display": {
+          "full": "/shots/onsenui/v2-identity.webp",
+          "card": "/shots/onsenui/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://onsen.io/v2/guide/",
+      "finalUrl": "https://onsen.io/v2/guide/",
+      "title": "Getting Started - Onsen UI",
+      "selectionRationale": "再翻 Getting Started。Apache v2 和组件集那句在正文。",
+      "shot": {
+        "src": "/shots/onsenui/v2-breadth.png",
+        "sha256": "4eb46bc0615b211f436aa9eeef2a74df0c376530b8d421a094f0d0c34f617f7b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 126264,
+        "alt": "Onsen UI Getting Started：What is Onsen UI 列出 UI components、native iOS and Android、Apache v2 license",
+        "display": {
+          "full": "/shots/onsenui/v2-breadth.webp",
+          "card": "/shots/onsenui/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://onsen.io/v2/api/js/ons-button.html",
+      "finalUrl": "https://onsen.io/v2/api/js/ons-button.html",
+      "title": "ons-button - Onsen UI",
+      "selectionRationale": "最后开 ons-button。现场按钮和标签源码都在。",
+      "shot": {
+        "src": "/shots/onsenui/v2-proof.png",
+        "sha256": "64f82b56f6795942491e6b34e7d7e785ff3809e942c8ba3e1d03067c6d4cf14b",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144067,
+        "alt": "Onsen UI ons-button：左侧 iOS 演示 Default 与 large 按钮，右侧 <ons-button> 源码",
+        "display": {
+          "full": "/shots/onsenui/v2-proof.webp",
+          "card": "/shots/onsenui/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://github.com/OnsenUI/OnsenUI",
+        "selectionRationale": "首页连不上。GitHub About 写 hybrid 框架和 Web Components。",
+        "shot": {
+          "src": "/shots/onsenui/v2-identity.png",
+          "alt": "GitHub OnsenUI/OnsenUI：About 写 Mobile app development framework and SDK using HTML5 and JavaScript，链到 onsen.io，列出 react-onsenui 与 vue-onsenui",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://onsen.io/v2/guide/",
+        "selectionRationale": "再翻 Getting Started。Apache v2 和组件集那句在正文。",
+        "shot": {
+          "src": "/shots/onsenui/v2-breadth.png",
+          "alt": "Onsen UI Getting Started：What is Onsen UI 列出 UI components、native iOS and Android、Apache v2 license",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://onsen.io/v2/api/js/ons-button.html",
+        "selectionRationale": "最后开 ons-button。现场按钮和标签源码都在。",
+        "shot": {
+          "src": "/shots/onsenui/v2-proof.png",
+          "alt": "Onsen UI ons-button：左侧 iOS 演示 Default 与 large 按钮，右侧 <ons-button> 源码",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "ASIAL CORPORATION",
+      "sourceUrl": "https://raw.githubusercontent.com/OnsenUI/OnsenUI/master/onsenui/LICENSE",
+      "evidence": "onsenui/LICENSE 版权行为 Copyright 2013-2018 ASIAL CORPORATION。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "ASIAL / Monaca",
+      "sourceUrl": "https://onsen.io/v2/guide/",
+      "evidence": "文档与 README 把 Onsen UI 与 Monaca 并列。GitHub 组织为 OnsenUI。LICENSE 署 ASIAL CORPORATION。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/OnsenUI/OnsenUI",
+      "sourceUrl": "https://github.com/OnsenUI/OnsenUI",
+      "evidence": "仓库 About 回链 onsen.io。onsenui/package.json repository 为 https://github.com/OnsenUI/OnsenUI。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0",
+      "sourceUrl": "https://raw.githubusercontent.com/OnsenUI/OnsenUI/master/onsenui/LICENSE",
+      "evidence": "onsenui/LICENSE 为 Apache License Version 2.0，Copyright 2013-2018 ASIAL CORPORATION。package.json license 为 Apache-2.0。Getting Started 写 Apache v2 license。覆盖 onsenui 源码；Monaca 云构建不在此许可内。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://onsen.io/v2/guide/",
+      "evidence": "Getting Started 写 Free to use, 100% open source software (Apache v2 license)。文档与 ons-button 示例公开可浏览。Monaca 是另售打包工具，不是 UI 库付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "onsenui",
+      "sourceUrl": "https://raw.githubusercontent.com/OnsenUI/OnsenUI/master/onsenui/package.json",
+      "evidence": "onsenui/package.json name 为 onsenui，version 2.12.9。Getting Started 用 unpkg.com/onsenui 的 CSS/JS。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/onsenui.md",
+  "registryUrl": "/r/onsenui.json"
+}

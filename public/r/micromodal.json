@@ -1,0 +1,228 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "9b1ffc41564c569cff67fe23c7ed3aaf276d4cb082922508f2b8ea30a15eb3e0",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "micromodal",
+  "entityId": "entity-micromodal",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://micromodal.vercel.app/",
+    "finalUrl": "https://micromodal.vercel.app/",
+    "checkedAt": "2026-09-06T15:59:10.035Z"
+  },
+  "editorial": {
+    "name": "Micromodal.js",
+    "descriptionZh": "Indrashish Ghosh 的无样式无障碍模态库 Micromodal.js，包 micromodal 现为 0.7.0。LICENSE.md 标 MIT。文档写库不自带样式。",
+    "descriptionEn": null,
+    "takeawayZh": "用 MicroModal.init() 打开无样式对话框",
+    "noteZh": "Vercel 首页写 a11y-enabled modal library，1.9kb，按钮 Demo Modal。GitHub Pages 写 1.8kb，并列出 nested modals。CodePen 证明页停在 Cloudflare 安全验证。MIT 覆盖 micromodal 源码。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Micromodal.js 定义为 lightweight, configurable and a11y-enabled modal library written in pure JavaScript，并写不自带样式。",
+        "evidenceUrl": "https://micromodal.vercel.app/"
+      },
+      {
+        "statement": "文档给出 data-micromodal-trigger 与 MicroModal.init()，交付物是可嵌入的无障碍对话框脚本。",
+        "evidenceUrl": "https://micromodal.github.io/Micromodal/"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://micromodal.vercel.app/",
+      "finalUrl": "https://micromodal.vercel.app/",
+      "title": "Micromodal.js - Tiny javascript library for creating accessible modal dialogs",
+      "selectionRationale": "Vercel 首页 1.9kb 与 Demo Modal 按钮。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/micromodal/v2-identity.png",
+        "sha256": "ad36fb1551e72927309c878b8ceb8027b330b08950a68dd50fe0fe85438d01bc",
+        "width": 1280,
+        "height": 900,
+        "bytes": 43936,
+        "alt": "Micromodal.js Introduction：1.9kb 说明，绿色 Demo Modal 按钮，清单含 Closing modal on overlay click 与 esc",
+        "display": {
+          "full": "https://vislexicon.com/shots/micromodal/v2-identity.webp",
+          "card": "https://vislexicon.com/shots/micromodal/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://micromodal.github.io/Micromodal/",
+      "finalUrl": "https://micromodal.github.io/Micromodal/",
+      "title": "Micromodal.js - Tiny javascript library for creating accessible modal dialogs",
+      "selectionRationale": "GitHub Pages 写 1.8kb，清单含 nested modals。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/micromodal/v2-breadth.png",
+        "sha256": "9ee1a1b05dcbe1711ecef8e85625a21ad1e72312a64acc4849bf7d47af0274a6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 45416,
+        "alt": "Micromodal.js GitHub Pages：顶栏 Micromodal.js，1.8kb 说明，Demo Modal，清单含 onShow、onClose 与 Supports nested modals",
+        "display": {
+          "full": "https://vislexicon.com/shots/micromodal/v2-breadth.webp",
+          "card": "https://vislexicon.com/shots/micromodal/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://codepen.io/ghosh/full/MQwmRb",
+      "finalUrl": "https://codepen.io/ghosh/full/MQwmRb",
+      "title": "codepen.io",
+      "selectionRationale": "CodePen 证明页停在 Cloudflare 安全验证。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/micromodal/v2-proof.png",
+        "sha256": "6ad5a6d4713d460c2ed5da66b26a1f27bfccf91ba42eac98dc2a37d00ab55f81",
+        "width": 1280,
+        "height": 900,
+        "bytes": 24868,
+        "alt": "codepen.io 中文安全验证：标题正在进行安全验证，灰框正在验证与 CLOUDFLARE，底部 Ray ID",
+        "display": {
+          "full": "https://vislexicon.com/shots/micromodal/v2-proof.webp",
+          "card": "https://vislexicon.com/shots/micromodal/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Indrashish Ghosh",
+      "sourceUrl": "https://raw.githubusercontent.com/micromodal/Micromodal/master/LICENSE.md",
+      "evidence": "LICENSE.md 版权行为 Copyright (c) 2017 Indrashish Ghosh。package.json author 为 Indrashish Ghosh。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://raw.githubusercontent.com/micromodal/Micromodal/master/LICENSE.md",
+      "evidence": "LICENSE.md 与 package.json 只署 Indrashish Ghosh。仓库现由 GitHub 组织 micromodal 托管。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/micromodal/Micromodal",
+      "sourceUrl": "https://micromodal.vercel.app/",
+      "evidence": "首页 GitHub 图标指向该项目。package.json repository 仍写 https://github.com/ghosh/micromodal，GitHub 转到 micromodal/Micromodal。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/micromodal/Micromodal/master/LICENSE.md",
+      "evidence": "LICENSE.md 标题 MIT License，Copyright (c) 2017 Indrashish Ghosh。覆盖 micromodal 源码。package.json license 字段现写 ISC，以 LICENSE.md 文本为准。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://micromodal.vercel.app/",
+      "evidence": "首页写 npm install micromodal --save 与 unpkg CDN。文档公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "micromodal",
+      "sourceUrl": "https://micromodal.vercel.app/",
+      "evidence": "首页安装命令 npm install micromodal --save。package.json name 为 micromodal，version 0.7.0。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog-modal",
+        "evidenceUrl": "https://micromodal.vercel.app/",
+        "note": "首页 Demo Modal 与 WAI-ARIA dialog 说明对应模态对话框。",
+        "termEn": "Dialog (Modal)",
+        "termZh": null
+      }
+    ],
+    "atlasRelations": [
+      {
+        "stageId": "overlay-layers",
+        "termId": "atlas-component-component-dialog-modal",
+        "evidenceUrl": "https://micromodal.vercel.app/",
+        "note": "首页 Demo Modal 与 WAI-ARIA dialog 说明对应模态对话框。",
+        "termEn": "Dialog (Modal)",
+        "termZh": null
+      }
+    ],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/micromodal",
+    "designMdUrl": "https://vislexicon.com/site/micromodal.md",
+    "checkedAt": "2026-09-06T15:59:10.035Z",
+    "license": "MIT"
+  }
+}

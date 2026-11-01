@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: c742a13dda4325b81439195ad97c6d01c7a6cd8c43e3a0a4374e342354a6f99f
 status: APPROVED
 name: Lafys

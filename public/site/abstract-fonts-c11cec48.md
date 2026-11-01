@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: f3e27b63d1636170121e46ecb13b4dbe6a9dc997b44aa45921aadf38ca8b1277
 status: APPROVED
 name: "Abstract Fonts"

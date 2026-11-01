@@ -1,0 +1,257 @@
+{
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "6e05cf5e8bd0f9718ffbab59b14281b840f5b90402eb84219683d8bdffb17482",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "open-props",
+  "entityId": "entity-open-props",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "open-props.style",
+  "official": {
+    "inputUrl": "https://open-props.style/",
+    "finalUrl": "https://open-props.style/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Open Props",
+    "descriptionZh": "Adam Argyle 维护的 CSS 自定义属性库，提供颜色、间距、阴影等 500+ 设计令牌。npm 包 open-props 采用 MIT，可从 CDN 或 npm 按需引入。",
+    "descriptionEn": null,
+    "takeawayZh": "用 CSS 变量当现成设计令牌",
+    "noteZh": "我们打开首页，大标题 Supercharged CSS variables，旁边 @import unpkg.com/open-props，左下标 v1.7.23 MIT。站点 #getting-started 与 #colors 在无头 Chrome 里截成空白，范围和证明改看 GitHub：仓库 About 写 CSS custom properties，LICENSE 标 MIT；props.colors.css 列出 --gray-0 到 --stone-12。适合要现成 CSS 变量、不想自己建色板的人。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "delivery-development-tools",
+    "subcategory": "build-deploy-dev-workflow",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Open Props 定义为 Supercharged CSS variables / expertly crafted web design tokens，并给出 @import \"https://unpkg.com/open-props\"。",
+        "evidenceUrl": "https://open-props.style/"
+      },
+      {
+        "statement": "仓库 About 写 CSS custom properties to help accelerate adaptive and consistent design；src/props.colors.css 给出可复制的 --gray-0 等颜色令牌，证明交付物是 CSS 变量库而不是组件包。",
+        "evidenceUrl": "https://github.com/argyleink/open-props"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library",
+      "standard"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "ui",
+      "typography"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "css",
+      "javascript"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "designer",
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://open-props.style/",
+      "finalUrl": "https://open-props.style/",
+      "title": "Open Props: sub-atomic styles",
+      "selectionRationale": "先看首页。CSS variables 标题和 CDN import 把对象说完。",
+      "shot": {
+        "src": "/shots/open-props/v2-identity.png",
+        "sha256": "f7604e11e1d932d56d2fcf192da855ff0fcee518b1ea1d486f91a28cc5b58215",
+        "width": 1280,
+        "height": 900,
+        "bytes": 180855,
+        "alt": "Open Props 首页大标题 Supercharged CSS variables，CDN @import unpkg.com/open-props，左下 v1.7.23 MIT",
+        "display": {
+          "full": "/shots/open-props/v2-identity.webp",
+          "card": "/shots/open-props/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/argyleink/open-props",
+      "finalUrl": "https://github.com/argyleink/open-props",
+      "title": "GitHub - argyleink/open-props: CSS custom properties to help accelerate adaptive and consistent design.",
+      "selectionRationale": "站点锚点截图空白，改看仓库。About 和 src 目录能看见范围。",
+      "shot": {
+        "src": "/shots/open-props/v2-breadth.png",
+        "sha256": "53b2ba6076a965784cae840ffda92f257f204377bf913a8a223046f07ac867de",
+        "width": 1280,
+        "height": 900,
+        "bytes": 124804,
+        "alt": "GitHub argyleink/open-props 仓库页，About 写 CSS custom properties，侧栏 MIT license，目录含 src docsite",
+        "display": {
+          "full": "/shots/open-props/v2-breadth.webp",
+          "card": "/shots/open-props/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/argyleink/open-props/blob/main/src/props.colors.css",
+      "finalUrl": "https://github.com/argyleink/open-props/blob/main/src/props.colors.css",
+      "title": "open-props/src/props.colors.css at main · argyleink/open-props",
+      "selectionRationale": "最后开 colors 源文件。--gray-0 就是能复制走的令牌。",
+      "shot": {
+        "src": "/shots/open-props/v2-proof.png",
+        "sha256": "7d1f50cf1a156e1b757b0da056f8db3e55c9f20ca4566f29b97e7c422f552c13",
+        "width": 1280,
+        "height": 900,
+        "bytes": 108227,
+        "alt": "GitHub props.colors.css：:where(html) 下 --gray-0 到 --stone-12 等 CSS 自定义属性",
+        "display": {
+          "full": "/shots/open-props/v2-proof.webp",
+          "card": "/shots/open-props/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://open-props.style/",
+        "selectionRationale": "先看首页。CSS variables 标题和 CDN import 把对象说完。",
+        "shot": {
+          "src": "/shots/open-props/v2-identity.png",
+          "alt": "Open Props 首页大标题 Supercharged CSS variables，CDN @import unpkg.com/open-props，左下 v1.7.23 MIT",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://github.com/argyleink/open-props",
+        "selectionRationale": "站点锚点截图空白，改看仓库。About 和 src 目录能看见范围。",
+        "shot": {
+          "src": "/shots/open-props/v2-breadth.png",
+          "alt": "GitHub argyleink/open-props 仓库页，About 写 CSS custom properties，侧栏 MIT license，目录含 src docsite",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://github.com/argyleink/open-props/blob/main/src/props.colors.css",
+        "selectionRationale": "最后开 colors 源文件。--gray-0 就是能复制走的令牌。",
+        "shot": {
+          "src": "/shots/open-props/v2-proof.png",
+          "alt": "GitHub props.colors.css：:where(html) 下 --gray-0 到 --stone-12 等 CSS 自定义属性",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "Adam Argyle",
+      "sourceUrl": "https://github.com/argyleink/open-props/blob/main/LICENSE",
+      "evidence": "LICENSE 版权行 Copyright (c) 2021 Adam Argyle。仓库属 GitHub 用户 argyleink。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "unknown",
+      "sourceUrl": "https://github.com/argyleink/open-props",
+      "evidence": "仓库由个人账户 argyleink 维护，未见独立公司实体字段。",
+      "confidence": 0.8
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/argyleink/open-props",
+      "sourceUrl": "https://open-props.style/",
+      "evidence": "首页 GitHub 图标链到 github.com/argyleink/open-props。仓库 About 回链 open-props.style。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://github.com/argyleink/open-props/blob/main/LICENSE",
+      "evidence": "LICENSE 以 MIT License 开头，Copyright (c) 2021 Adam Argyle。首页左下亦标 MIT。许可覆盖 open-props 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://open-props.style/",
+      "evidence": "首页公开 CDN import 与 npm install open-props，未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "open-props",
+      "sourceUrl": "https://open-props.style/",
+      "evidence": "首页给出 @import \"https://unpkg.com/open-props\" 与 npm install open-props。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/open-props.md",
+  "registryUrl": "/r/open-props.json"
+}

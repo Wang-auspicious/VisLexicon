@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 4eaa6e4f3882dced3b3d95dc835e2a364359822ce149082e917d21404cab5c62
 status: APPROVED
 name: "React DnD"

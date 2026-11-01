@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: d8dce4ca86d53eb12ef0f60db112f54c7c8cc4d09309b3328510219d9172f347
 status: APPROVED
 name: lightGallery

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 0a496e90023e266451955fce984df3641862c61479d0ee3090b37b79a487b379
 status: APPROVED
 name: Kobalte

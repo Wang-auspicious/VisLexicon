@@ -1,0 +1,255 @@
+{
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "09bb823099a7ccd01b212b18d715de97048a8c54f7fdc0cad0e55e39ec456176",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "velocity-js",
+  "entityId": "entity-velocity-js",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "velocityjs.org",
+  "official": {
+    "inputUrl": "https://www.velocityjs.org/",
+    "finalUrl": "http://velocityjs.org/",
+    "checkedAt": "2026-09-07T09:36:14.000Z"
+  },
+  "editorial": {
+    "name": "Velocity.js",
+    "descriptionZh": "Julian Shapiro 的 JS 动画引擎 Velocity.js，API 接近 jQuery $.animate()。官网页脚写 MIT。jsDelivr 挂 1.5.2，仓库包为 2.0.6。",
+    "descriptionEn": null,
+    "takeawayZh": "用 .velocity() 替代 animate",
+    "noteZh": "http://velocityjs.org 能开，https 证书失败。首页 Overview 写 same API as jQuery $.animate()，有 Performance 对比和 Test Dummy。Wiki 标明文档针对 Velocity v2。jsDelivr 安装块是 velocity-animate@1.5.2。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 Velocity 定义为 animation engine with the same API as jQuery's $.animate()，并提供 Download Velocity 与 Performance 对比。",
+        "evidenceUrl": "http://velocityjs.org/"
+      },
+      {
+        "statement": "Wiki Basic Arguments 说明 Velocity 可作为函数调用或链式 result.velocity(...)，文档针对 v2，证明交付物是可调用的动画引擎。",
+        "evidenceUrl": "https://github.com/julianshapiro/velocity/wiki/Basic---Arguments"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "http://velocityjs.org/",
+      "finalUrl": "http://velocityjs.org/",
+      "title": "Velocity.js",
+      "selectionRationale": "先看官网：Overview 和 Download Velocity。",
+      "shot": {
+        "src": "/shots/velocity-js/v2-identity.png",
+        "sha256": "a04962f6834b346a5576dd765798c907e0f47ce3529879c86d1c56b619d2d45a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 1017910,
+        "alt": "Velocity.js 首页：标题 Accelerated JavaScript animation，Overview 写 same API as jQuery's $.animate()，右侧 Performance 对比与 Test Dummy",
+        "display": {
+          "full": "/shots/velocity-js/v2-identity.webp",
+          "card": "/shots/velocity-js/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/julianshapiro/velocity/wiki/Basic---Arguments",
+      "finalUrl": "https://github.com/julianshapiro/velocity/wiki/Basic---Arguments",
+      "title": "Basic Arguments · julianshapiro/velocity Wiki",
+      "selectionRationale": "再看 Wiki Arguments：v2 的函数调用与链式调用。",
+      "shot": {
+        "src": "/shots/velocity-js/v2-breadth.png",
+        "sha256": "b45d4fb1d42821c3d815c6a169deb7fa79945ba6c2906130ac24910224f7ac03",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98811,
+        "alt": "GitHub Wiki Basic Arguments：NOTE This documentation is for Velocity v2，讲解函数调用与 result.velocity(...) 链式调用",
+        "display": {
+          "full": "/shots/velocity-js/v2-breadth.webp",
+          "card": "/shots/velocity-js/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.jsdelivr.com/package/npm/velocity-animate",
+      "finalUrl": "https://www.jsdelivr.com/package/npm/velocity-animate",
+      "title": "velocity-animate CDN by jsDelivr",
+      "selectionRationale": "最后看 jsDelivr：velocity-animate@1.5.2 安装块。",
+      "shot": {
+        "src": "/shots/velocity-js/v2-proof.png",
+        "sha256": "f8e0dc4b25a0df1619bdd959159f2f3ff23a47cd3b48e62d0920c21bc238733a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117147,
+        "alt": "jsDelivr velocity-animate：Version 1.5.2、License MIT，INSTALL 块 velocity-animate@1.5.2/velocity.min.js，Docs 链 http://VelocityJS.org",
+        "display": {
+          "full": "/shots/velocity-js/v2-proof.webp",
+          "card": "/shots/velocity-js/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "http://velocityjs.org/",
+        "selectionRationale": "先看官网：Overview 和 Download Velocity。",
+        "shot": {
+          "src": "/shots/velocity-js/v2-identity.png",
+          "alt": "Velocity.js 首页：标题 Accelerated JavaScript animation，Overview 写 same API as jQuery's $.animate()，右侧 Performance 对比与 Test Dummy",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://github.com/julianshapiro/velocity/wiki/Basic---Arguments",
+        "selectionRationale": "再看 Wiki Arguments：v2 的函数调用与链式调用。",
+        "shot": {
+          "src": "/shots/velocity-js/v2-breadth.png",
+          "alt": "GitHub Wiki Basic Arguments：NOTE This documentation is for Velocity v2，讲解函数调用与 result.velocity(...) 链式调用",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://www.jsdelivr.com/package/npm/velocity-animate",
+        "selectionRationale": "最后看 jsDelivr：velocity-animate@1.5.2 安装块。",
+        "shot": {
+          "src": "/shots/velocity-js/v2-proof.png",
+          "alt": "jsDelivr velocity-animate：Version 1.5.2、License MIT，INSTALL 块 velocity-animate@1.5.2/velocity.min.js，Docs 链 http://VelocityJS.org",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "Julian Shapiro",
+      "sourceUrl": "http://velocityjs.org/",
+      "evidence": "页脚写 © 2014 Julian Shapiro。package.json authors 列出 Julian Shapiro 与 Ryc O'Chet。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Julian Shapiro",
+      "sourceUrl": "http://velocityjs.org/",
+      "evidence": "顶栏 Julian.com → Velocity.js。仓库位于 github.com/julianshapiro/velocity。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/julianshapiro/velocity",
+      "sourceUrl": "http://velocityjs.org/",
+      "evidence": "首页 GitHub 链到 github.com/julianshapiro/velocity。package.json repository 为 julianshapiro/velocity。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "http://velocityjs.org/",
+      "evidence": "页脚写 © 2014 Julian Shapiro，链到 MIT license。LICENSE.md 标题 The MIT License，Copyright (c) 2014 Julian Shapiro。覆盖 Velocity 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "http://velocityjs.org/",
+      "evidence": "首页 Download Velocity 链到仓库 velocity.min.js，公开可下载。jsDelivr 提供 CDN，无付费档。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "velocity-animate",
+      "sourceUrl": "https://www.jsdelivr.com/package/npm/velocity-animate",
+      "evidence": "jsDelivr 标题 velocity-animate，Version 1.5.2。仓库 package.json name 为 velocity-animate，version 2.0.6。README 写 npm install velocity-animate@beta。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/velocity-js.md",
+  "registryUrl": "/r/velocity-js.json"
+}

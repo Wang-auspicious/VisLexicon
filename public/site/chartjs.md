@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 0df81ba30ac3ba899908fcf5201c0077a2b7314ec516a79926651a974e629f06
 status: APPROVED
 name: Chart.js

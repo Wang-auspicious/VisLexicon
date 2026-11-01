@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 63e769c2d33c1e91694da802ea0e2bc06b1e35128aaa69915c14cafe35652855
 status: APPROVED
 name: UIBundle

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: c4262fa9f9987400b596550f994aed910f0ea2cb7745e71befe4e3999665c778
 status: APPROVED
 name: react-hot-toast

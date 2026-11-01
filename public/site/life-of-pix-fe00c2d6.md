@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 1944de123b75eedf9ee3a284a258c815ea139a98e0e037c8e8bf09fbcf97d78b
 status: APPROVED
 name: "Life of Pix"

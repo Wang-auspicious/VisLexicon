@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 166e8b8129a7d55d0fdb9cea020bf28e2ca58e66b8cb7d4b13df4035b83857f2
 status: APPROVED
 name: "Observable Plot"

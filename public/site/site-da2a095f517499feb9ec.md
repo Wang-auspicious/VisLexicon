@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 0b70f2d20ad7ad0dbe829d30f6e13ac70418843c7bc304c62d641e8e3e154a5f
 status: APPROVED
 name: "Odyssey UI"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 1765542a45b64a34471fc95352a270443603e24a69a36e2bcfb789b1cea87700
 status: APPROVED
 name: CKEditor

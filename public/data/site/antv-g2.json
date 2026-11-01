@@ -1,0 +1,262 @@
+{
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "f91cbac4864941fe9a24d8f5178b6d0b71ea7a498ea8369a8a3229b300b6e54c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "antv-g2",
+  "entityId": "entity-antv-g2",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "g2.antv.antgroup.com",
+  "official": {
+    "inputUrl": "https://g2.antv.antgroup.com/",
+    "finalUrl": "https://g2.antv.antgroup.com/",
+    "checkedAt": "2026-09-06T04:45:00.000Z"
+  },
+  "editorial": {
+    "name": "AntV G2",
+    "descriptionZh": "AntV 团队的网页可视化语法库 @antv/g2，现为 v5.4.8。用标记、比例尺与坐标系声明图表。LICENSE 标 MIT。官网文档截图超时，范围与实例改用仓库文档。",
+    "descriptionEn": null,
+    "takeawayZh": "用 interval 标记声明柱状图，语法自己拼",
+    "noteZh": "打开官网，标题 G2 · 可视化语法，右侧薯条外星人，下面精选案例卡片。文档与示例页 headless 截图超时。改看仓库 README：The Concise and Progressive Visualization Grammar，下面一排图。interval.zh.md 讲区间图可画柱状、条形、饼图，并给出 Chart 与 type interval 代码。适合要图形语法、中英文档都有的人。MIT。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "官网把 G2 定义为一套简明和渐进式的可视化语法，用于报表搭建、数据探索与可视化叙事。",
+        "evidenceUrl": "https://g2.antv.antgroup.com/"
+      },
+      {
+        "statement": "interval 标记文档说明它用来绘制柱形图、条形图、饼图，并给出 type: 'interval' 与 encode 示例。",
+        "evidenceUrl": "https://github.com/antvis/G2/blob/v5/site/docs/manual/core/mark/interval.zh.md"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [
+      "admin",
+      "finance"
+    ],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn",
+      "preview"
+    ],
+    "media": [
+      "data-visualization",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "canvas",
+      "svg",
+      "webgl"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "zh-hans",
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://g2.antv.antgroup.com/",
+      "finalUrl": "https://g2.antv.antgroup.com/",
+      "title": "G2 一套简明和渐进式的可视化语法 | AntV",
+      "selectionRationale": "先看官网首页：G2 · 可视化语法和精选案例。",
+      "shot": {
+        "src": "/shots/antv-g2/v2-identity.png",
+        "sha256": "56af474618319ff71984ece744781e1257ce07e6d9788b9c71d73c4e95fe408a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 282501,
+        "alt": "AntV G2 首页，标题 G2 · 可视化语法，右侧薯条外星人插画，下方精选案例卡片",
+        "display": {
+          "full": "/shots/antv-g2/v2-identity.webp",
+          "card": "/shots/antv-g2/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/antvis/G2/blob/v5/README.md",
+      "finalUrl": "https://github.com/antvis/G2/blob/v5/README.md",
+      "title": "G2/README.md at v5 · antvis/G2",
+      "selectionRationale": "官网文档截图超时。改看仓库 README：可视化语法定义和示例拼图。",
+      "shot": {
+        "src": "/shots/antv-g2/v2-breadth.png",
+        "sha256": "ded953d6357c6a783009de79dc0029ab4dbe3c762667dcd00790e927214b1cfe",
+        "width": 1280,
+        "height": 900,
+        "bytes": 251198,
+        "alt": "GitHub antvis/G2 README，标题 The Concise and Progressive Visualization Grammar，下方多张图表拼图",
+        "display": {
+          "full": "/shots/antv-g2/v2-breadth.webp",
+          "card": "/shots/antv-g2/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/antvis/G2/blob/v5/site/docs/manual/core/mark/interval.zh.md",
+      "finalUrl": "https://github.com/antvis/G2/blob/v5/site/docs/manual/core/mark/interval.zh.md",
+      "title": "interval.zh.md at v5 · antvis/G2",
+      "selectionRationale": "最后看 interval 标记文档：柱状、条形、饼图和 Chart 代码。",
+      "shot": {
+        "src": "/shots/antv-g2/v2-proof.png",
+        "sha256": "8c1b467957ca504fab22aab2fbbaa2da35a15ae015aee981c740af20f3377a79",
+        "width": 1280,
+        "height": 900,
+        "bytes": 133971,
+        "alt": "G2 interval.zh.md，概述区间图可画柱状、条形、饼图，下方 import Chart from @antv/g2 与 type interval 代码",
+        "display": {
+          "full": "/shots/antv-g2/v2-proof.webp",
+          "card": "/shots/antv-g2/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://g2.antv.antgroup.com/",
+        "selectionRationale": "先看官网首页：G2 · 可视化语法和精选案例。",
+        "shot": {
+          "src": "/shots/antv-g2/v2-identity.png",
+          "alt": "AntV G2 首页，标题 G2 · 可视化语法，右侧薯条外星人插画，下方精选案例卡片",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://github.com/antvis/G2/blob/v5/README.md",
+        "selectionRationale": "官网文档截图超时。改看仓库 README：可视化语法定义和示例拼图。",
+        "shot": {
+          "src": "/shots/antv-g2/v2-breadth.png",
+          "alt": "GitHub antvis/G2 README，标题 The Concise and Progressive Visualization Grammar，下方多张图表拼图",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://github.com/antvis/G2/blob/v5/site/docs/manual/core/mark/interval.zh.md",
+        "selectionRationale": "最后看 interval 标记文档：柱状、条形、饼图和 Chart 代码。",
+        "shot": {
+          "src": "/shots/antv-g2/v2-proof.png",
+          "alt": "G2 interval.zh.md，概述区间图可画柱状、条形、饼图，下方 import Chart from @antv/g2 与 type interval 代码",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "AntV",
+      "sourceUrl": "https://github.com/antvis/G2/blob/v5/package.json",
+      "evidence": "package.json 的 author.name 为 AntV，url 为 https://antv.antgroup.com/。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "AntV",
+      "sourceUrl": "https://raw.githubusercontent.com/antvis/G2/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2018 AntV team。README 写 MIT@AntV。GitHub 组织为 antvis。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/antvis/g2",
+      "sourceUrl": "https://github.com/antvis/G2/blob/v5/package.json",
+      "evidence": "package.json 的 repository.url 为 https://github.com/antvis/g2。官网顶栏 Star 链到该仓库。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/antvis/G2/master/LICENSE",
+      "evidence": "LICENSE 以 MIT License 开头，Copyright (c) 2018 AntV team。package.json 的 license 字段为 MIT。README npm License 徽章为 MIT。该许可覆盖 @antv/g2 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://g2.antv.antgroup.com/",
+      "evidence": "官网文档与案例公开可读。README 写 npm install @antv/g2。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "@antv/g2",
+      "sourceUrl": "https://github.com/antvis/G2/blob/v5/package.json",
+      "evidence": "package.json name 为 @antv/g2，version 5.4.8。README 安装命令 npm install @antv/g2。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/antv-g2.md",
+  "registryUrl": "/r/antv-g2.json"
+}

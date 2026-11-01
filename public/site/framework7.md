@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 9624524455f3c82adc904d5da30606b44493afb68502028fa65d9a9c754dc2b9
 status: APPROVED
 name: Framework7

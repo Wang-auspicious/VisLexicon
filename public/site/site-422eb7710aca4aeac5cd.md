@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 8ac1cab91b3780abf7e47a08afe1ddf2ce91d7321dd333256437857b1542ac91
 status: APPROVED
 name: "Kobra Input OTP"

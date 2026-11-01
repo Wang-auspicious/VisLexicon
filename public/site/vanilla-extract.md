@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 44f726a7274ff08872578e2578b2d6c33c46c8e1257cdd63f6278f0f7a31c122
 status: APPROVED
 name: vanilla-extract

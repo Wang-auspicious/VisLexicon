@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 7f88c5d574f050506ea1ddbc8d9719ab7994e003a4140db08654e0abf6d35a06
 status: APPROVED
 name: "Radix Colors"

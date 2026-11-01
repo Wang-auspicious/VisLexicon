@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 9cac6cd94deb7e03a5218dbd843ff675caeaddcfdc23246dcdbeee617da6687f
 status: APPROVED
 name: shadcn/studio

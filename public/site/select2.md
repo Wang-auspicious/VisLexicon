@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 7823822d99161b8ccf4c1e1632fef59af0e7911658d665d9751e02929615c5a9
 status: APPROVED
 name: Select2

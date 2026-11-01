@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: c61e588fd9accea2b7987531d6665e64390b6ea7f3f99ca8ab42c58b3b412e23
 status: APPROVED
 name: Fomantic-UI

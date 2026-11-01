@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 6ccf3ba5bfda8b87b128888b54366391a2e249a1eec831a1a85c6e3f3fa1cd08
 status: APPROVED
 name: "Meraki UI"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: d1f4470af017ac93490ce02a1a4b521beb8368cba2129b5cc3e5dcc45ba513dd
 status: APPROVED
 name: Vditor

@@ -1,0 +1,209 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "b8527a48d0ab980d49d261f86b4fb040546c8c1d07c779b62a1880b20415662c",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "frappe-charts",
+  "entityId": "entity-frappe-charts",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://frappe.io/charts",
+    "finalUrl": "https://frappe.io/charts/docs",
+    "checkedAt": "2026-09-07T04:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Frappe Charts",
+    "descriptionZh": "Prateeksha Singh 维护的零依赖 SVG 图表库 frappe-charts，现为 1.6.3。文档在 frappe.io/charts/docs。仓库 LICENSE 标 MIT。",
+    "descriptionEn": null,
+    "takeawayZh": "new Chart 指定 type bar 出图",
+    "noteZh": "图表入口在 /charts/docs。Installation 写 npm install frappe-charts。Configuration 列出 line、bar、pie、heatmap。Axis chart 页给出 type bar 的 Chart 调用。这是 SVG 图表库，不是 Frappe Framework。MIT 覆盖库源码。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Quick Start 用 npm install frappe-charts 和 import { Chart } 说明交付物是可安装的图表库。",
+        "evidenceUrl": "https://frappe.io/charts/docs"
+      },
+      {
+        "statement": "Axis chart 页给出 labels/datasets 与 new frappe.Chart({ type: 'bar' })，证明可以按类型出图。",
+        "evidenceUrl": "https://frappe.io/charts/docs/basic/basic_chart"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "data-visualization"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "svg"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://frappe.io/charts/docs",
+      "finalUrl": "https://frappe.io/charts/docs",
+      "title": "Frappe Charts - Quick Start",
+      "selectionRationale": "先看 Installation 的 npm 安装。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/frappe-charts/v2-identity.png",
+        "sha256": "048abeeedffcb96a9360c206f73009de516cf4f479f3e5f8eb18e29906f1a56f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 75346,
+        "alt": "Frappe Charts Quick Start，标题 Installation，代码块 npm install frappe-charts 与 CDN 脚本",
+        "display": {
+          "full": "https://vislexicon.com/shots/frappe-charts/v2-identity.webp",
+          "card": "https://vislexicon.com/shots/frappe-charts/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://frappe.io/charts/docs/reference/configuration",
+      "finalUrl": "https://frappe.io/charts/docs/reference/configuration",
+      "title": "Charts Configuration",
+      "selectionRationale": "再翻 Configuration：type 列出 bar 与 heatmap。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/frappe-charts/v2-breadth.png",
+        "sha256": "23f7b814b4c9eb4056c82ee802ce48e8077ca97407ef6355896958869b64c9e5",
+        "width": 1280,
+        "height": 900,
+        "bytes": 128113,
+        "alt": "Frappe Charts Configuration，左侧 Axis Charts 到 heatmap 目录，正文 Container 与 Options 含 labels datasets",
+        "display": {
+          "full": "https://vislexicon.com/shots/frappe-charts/v2-breadth.webp",
+          "card": "https://vislexicon.com/shots/frappe-charts/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://frappe.io/charts/docs/basic/basic_chart",
+      "finalUrl": "https://frappe.io/charts/docs/basic/basic_chart",
+      "title": "Axis chart",
+      "selectionRationale": "最后开 Axis chart：type bar 的 Chart 调用。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/frappe-charts/v2-proof.png",
+        "sha256": "16130c8f0a67840594624d5a3ed524e28388e3e45f101e6224fa653b20692cee",
+        "width": 1280,
+        "height": 900,
+        "bytes": 98444,
+        "alt": "Frappe Charts Axis chart 页，data.labels 周日到周日，new frappe.Chart type bar height 180 colors red",
+        "display": {
+          "full": "https://vislexicon.com/shots/frappe-charts/v2-proof.webp",
+          "card": "https://vislexicon.com/shots/frappe-charts/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Prateeksha Singh",
+      "sourceUrl": "https://raw.githubusercontent.com/frappe/charts/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2017 Prateeksha Singh。package.json author 同为 Prateeksha Singh。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Frappe",
+      "sourceUrl": "https://frappe.io/charts/docs",
+      "evidence": "文档站顶栏品牌为 Frappe。GitHub 组织为 frappe/charts。本条是 Charts 库，不是 Frappe Framework 或 ERPNext。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/frappe/charts",
+      "sourceUrl": "https://frappe.io/charts/docs",
+      "evidence": "文档顶栏 GitHub 链到仓库。package.json repository.url 为 git+https://github.com/frappe/charts.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/frappe/charts/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2017 Prateeksha Singh。package.json license 为 MIT。该许可覆盖 frappe-charts 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://frappe.io/charts/docs",
+      "evidence": "Quick Start 写 npm install frappe-charts 与 jsDelivr/unpkg。文档公开可浏览，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "frappe-charts",
+      "sourceUrl": "https://frappe.io/charts/docs",
+      "evidence": "Installation 写 npm install frappe-charts。CDN 示例使用 frappe-charts@1.2.4。package.json name 为 frappe-charts，version v1.6.3。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/frappe-charts",
+    "designMdUrl": "https://vislexicon.com/site/frappe-charts.md",
+    "checkedAt": "2026-09-07T04:30:00.000Z",
+    "license": "MIT"
+  }
+}

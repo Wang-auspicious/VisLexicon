@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 7771e4d41fad534d545f2adadbe7552fb5887992bdc6b048eceae8cfaec49a2f
 status: APPROVED
 name: "Pico CSS"

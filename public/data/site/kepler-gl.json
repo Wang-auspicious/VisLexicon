@@ -1,0 +1,258 @@
+{
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "8b4ce44beedc19bbb17cc2b3d02f95f80a454173cab8682cf771dc8789b7abdd",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "kepler-gl",
+  "entityId": "entity-kepler-gl",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "domain": "kepler.gl",
+  "official": {
+    "inputUrl": "https://kepler.gl/",
+    "finalUrl": "https://kepler.gl/",
+    "checkedAt": "2026-09-07T04:30:00.000Z"
+  },
+  "editorial": {
+    "name": "kepler.gl",
+    "descriptionZh": "OpenJS Foundation 下的 WebGL 地理可视化工具 kepler.gl，现为 3.3.0-alpha.10。可在浏览器里拖入 CSV 出图。仓库 LICENSE 标 MIT。",
+    "descriptionEn": null,
+    "takeawayZh": "拖入 CSV，加点图层就能看地图",
+    "noteZh": "首页无头截图只出加载条。文档 Get Started 写 geospatial data analysis，并有 Add Data to Map 弹层。User guides 列出 Layers、Filters。Point 层页是旧金山粉点图。这是 kepler.gl 工具，不是 Uber 官网。MIT 覆盖仓库源码；底图另需 Mapbox token。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "data-visualization-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "Get Started 把 kepler.gl 定义为 geospatial data analysis 工具，并示范 Add Data to Map 上传 CSV/GeoJSON。",
+        "evidenceUrl": "https://docs.kepler.gl/docs/user-guides/j-get-started"
+      },
+      {
+        "statement": "Point 层文档给出旧金山粉点图，并列出 Latitude、Longitude、Fill、Radius 等图层属性。",
+        "evidenceUrl": "https://docs.kepler.gl/docs/user-guides/c-types-of-layers/a-point"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "preview",
+      "learn",
+      "export"
+    ],
+    "media": [
+      "data-visualization",
+      "3d"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "react",
+      "webgl"
+    ],
+    "workflowStages": [
+      "build",
+      "design"
+    ],
+    "audiences": [
+      "developer",
+      "researcher"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://docs.kepler.gl/docs/user-guides/j-get-started",
+      "finalUrl": "https://docs.kepler.gl/docs/user-guides/j-get-started",
+      "title": "Get Started | kepler.gl",
+      "selectionRationale": "先看 Get Started：Add Data to Map 弹层。",
+      "shot": {
+        "src": "/shots/kepler-gl/v2-identity.png",
+        "sha256": "e349ec8eac7117fedfad43fefc97bee431fe18e24f5485590c48be9c166c3caf",
+        "width": 1280,
+        "height": 900,
+        "bytes": 191242,
+        "alt": "kepler.gl Get Started，副题 geospatial data analysis，图为 Add Data to Map 弹层 Upload Your Data 与 Try sample data",
+        "display": {
+          "full": "/shots/kepler-gl/v2-identity.webp",
+          "card": "/shots/kepler-gl/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://docs.kepler.gl/docs/user-guides",
+      "finalUrl": "https://docs.kepler.gl/docs/user-guides",
+      "title": "User guides | kepler.gl",
+      "selectionRationale": "再翻 User guides：Layers 与 Filters。",
+      "shot": {
+        "src": "/shots/kepler-gl/v2-breadth.png",
+        "sha256": "64e89ca1f0c772404c3863e54a43883d1a41368273d8f35aa9de3fab7630ccc8",
+        "width": 1280,
+        "height": 900,
+        "bytes": 311294,
+        "alt": "kepler.gl User guides，左侧 Layers Filters Map Styles，正文三维柱状样本地图 Kepler.gl sample map",
+        "display": {
+          "full": "/shots/kepler-gl/v2-breadth.webp",
+          "card": "/shots/kepler-gl/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://docs.kepler.gl/docs/user-guides/c-types-of-layers/a-point",
+      "finalUrl": "https://docs.kepler.gl/docs/user-guides/c-types-of-layers/a-point",
+      "title": "Point | kepler.gl",
+      "selectionRationale": "最后开 Point 层：旧金山粉点图。",
+      "shot": {
+        "src": "/shots/kepler-gl/v2-proof.png",
+        "sha256": "1d29acbb524ff0265885c231e8026631a4ab0be75fff57d58a02c03295c7e70c",
+        "width": 1280,
+        "height": 900,
+        "bytes": 443523,
+        "alt": "kepler.gl Point 层文档，旧金山粉点图，左侧 Point Icon Line Cluster Hexbin Heatmap 图层列表",
+        "display": {
+          "full": "/shots/kepler-gl/v2-proof.webp",
+          "card": "/shots/kepler-gl/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "evidenceSummary": {
+    "requiredRoles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "roles": [
+      "identity",
+      "breadth",
+      "proof"
+    ],
+    "verifiedCount": 3,
+    "pages": [
+      {
+        "role": "identity",
+        "sourceUrl": "https://docs.kepler.gl/docs/user-guides/j-get-started",
+        "selectionRationale": "先看 Get Started：Add Data to Map 弹层。",
+        "shot": {
+          "src": "/shots/kepler-gl/v2-identity.png",
+          "alt": "kepler.gl Get Started，副题 geospatial data analysis，图为 Add Data to Map 弹层 Upload Your Data 与 Try sample data",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "breadth",
+        "sourceUrl": "https://docs.kepler.gl/docs/user-guides",
+        "selectionRationale": "再翻 User guides：Layers 与 Filters。",
+        "shot": {
+          "src": "/shots/kepler-gl/v2-breadth.png",
+          "alt": "kepler.gl User guides，左侧 Layers Filters Map Styles，正文三维柱状样本地图 Kepler.gl sample map",
+          "width": 1280,
+          "height": 900
+        }
+      },
+      {
+        "role": "proof",
+        "sourceUrl": "https://docs.kepler.gl/docs/user-guides/c-types-of-layers/a-point",
+        "selectionRationale": "最后开 Point 层：旧金山粉点图。",
+        "shot": {
+          "src": "/shots/kepler-gl/v2-proof.png",
+          "alt": "kepler.gl Point 层文档，旧金山粉点图，左侧 Point Icon Line Cluster Hexbin Heatmap 图层列表",
+          "width": 1280,
+          "height": 900
+        }
+      }
+    ]
+  },
+  "facts": [
+    {
+      "field": "author",
+      "value": "Shan He",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@kepler.gl/components/package.json",
+      "evidence": "package.json author 为 Shan He <shan@uber.com>。maintainers 另有 Giuseppe Macri、Igor Dykhta、Xun Li。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "OpenJS Foundation",
+      "sourceUrl": "https://kepler.gl/",
+      "evidence": "kepler.gl 页脚写 Copyright OpenJS Foundation and kepler.gl contributors。本条是 kepler.gl 工具，不是 Uber 组织站。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/keplergl/kepler.gl",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@kepler.gl/components/package.json",
+      "evidence": "package.json repository.url 为 https://github.com/keplergl/kepler.gl.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/keplergl/kepler.gl/master/LICENSE",
+      "evidence": "LICENSE 为 MIT 许可文本，Copyright contributors to the kepler.gl project。package.json license 为 MIT。该许可覆盖 kepler.gl 源码；Mapbox 底图另需 token。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://docs.kepler.gl/docs/user-guides/j-get-started",
+      "evidence": "Get Started 与用户指南公开可读。npm 可安装 kepler.gl。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "kepler.gl",
+      "sourceUrl": "https://docs.kepler.gl/docs/api-reference/get-started",
+      "evidence": "API Get Started 写 npm install --save kepler.gl @kepler.gl/components @kepler.gl/reducers。根 package.json version 为 3.3.0-alpha.10。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "designMdUrl": "/site/kepler-gl.md",
+  "registryUrl": "/r/kepler-gl.json"
+}

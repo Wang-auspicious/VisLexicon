@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: f8a01837a8d2732766e2b071e0041ff0c4123aa33fb74e543f18fabfaeb10eea
 status: APPROVED
 name: "Aceternity UI"

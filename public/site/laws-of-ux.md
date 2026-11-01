@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 495178b06707037e566bd7c6eb7e355e949c026e3b5c9f140fbe533f5d75f952
 status: APPROVED
 name: "Laws of UX"

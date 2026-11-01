@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 60529e2ff4f0d445bee1f6a85b0b483ccdf31f5759013caea1ffb951197cfc8f
 status: APPROVED
 name: Pinterest

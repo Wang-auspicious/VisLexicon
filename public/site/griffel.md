@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: d1a10d11bfc1f0db00f1599478ec2b3dcbc1ddbf0695e4b8b5ddd2575d24fe63
 status: APPROVED
 name: Griffel

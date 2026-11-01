@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 4d289485fcd9eabe64de5bb006a9d2d98e0b9857cd30390e9a9d5d73a80f45fa
 status: APPROVED
 name: d3-scale-chromatic

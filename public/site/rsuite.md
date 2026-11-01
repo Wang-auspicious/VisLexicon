@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: eba207e99b5bac35eaaa4e605bbb4b82fdd3ed84a5d3ab6d12e772a471823900
 status: APPROVED
 name: "React Suite"

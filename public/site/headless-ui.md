@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 6bc56dd3a6c1f934e1bff505d5246507a9fb153fd0231cc889739dbbb0990541
 status: APPROVED
 name: "Headless UI"

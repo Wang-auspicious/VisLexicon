@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: abb2da9814a008cc10489cd573531560a4d867eabbd472a20f531c5a222c1713
 status: APPROVED
 name: Theatre.js

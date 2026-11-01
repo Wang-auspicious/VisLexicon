@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 313d730c50e5c1f33f1b5b683944135490c36159110fcb73f2377a17d26d980b
 status: APPROVED
 name: "Magic UI"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: cf7e48776b91f538f35adc7d12784ac5169d262bb1ddec7d84740ce816193d95
 status: APPROVED
 name: daisyUI

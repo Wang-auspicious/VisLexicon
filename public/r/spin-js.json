@@ -1,0 +1,211 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "66fce1a16228a35a3d7b35af891672c81662ec670e8b287dac1c81106212b487",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "spin-js",
+  "entityId": "entity-spin-js",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://spin.js.org/",
+    "finalUrl": "https://spin.js.org/",
+    "checkedAt": "2026-09-07T09:36:14.000Z"
+  },
+  "editorial": {
+    "name": "spin.js",
+    "descriptionZh": "Felix Gnass 的无图加载指示器 spin.js，现为 4.1.2。用 CSS keyframe 画可配置转圈，npm install spin.js。LICENSE.md 标 MIT。",
+    "descriptionEn": null,
+    "takeawayZh": "Spinner().spin() 画出加载圈",
+    "noteZh": "首页 Example 默认 spinner-line-fade-quick 白线转圈，旁有 Lines、Length 滑杆。jsDelivr 标 4.1.2、MIT，给出 spin.min.js。证明页把动画换成 spinner-line-shrink、Counterclockwise、红色，Share it 已勾上。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "首页把 spin.js 定义为用 CSS keyframe 动态生成的加载转圈，Example 区可调 Lines、Length、Animation，交付物是加载动效代码。",
+        "evidenceUrl": "https://spin.js.org/"
+      },
+      {
+        "statement": "jsDelivr 给出 npm 包 spin.js 4.1.2 的 CDN 安装块；分享 URL 能把转圈改成 spinner-line-shrink 红色逆时针，证明可配置。",
+        "evidenceUrl": "https://www.jsdelivr.com/package/npm/spin.js"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css",
+      "typescript"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "single-work"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://spin.js.org/",
+      "finalUrl": "https://spin.js.org/",
+      "title": "spin.js",
+      "selectionRationale": "先看首页：大标题和默认可调转圈。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/spin-js/v2-identity.png",
+        "sha256": "b55b652465c34d23213b4fbc2a93cf8a7d84fceea45c11513989eb0d7daa9036",
+        "width": 1280,
+        "height": 900,
+        "bytes": 268978,
+        "alt": "spin.js 首页：大标题 spin.js，按钮 spin.js (ESM)，Example 区白线 spinner-line-fade-quick 转圈和 Lines、Length 滑杆",
+        "display": {
+          "full": "https://vislexicon.com/shots/spin-js/v2-identity.webp",
+          "card": "https://vislexicon.com/shots/spin-js/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://www.jsdelivr.com/package/npm/spin.js",
+      "finalUrl": "https://www.jsdelivr.com/package/npm/spin.js",
+      "title": "spin.js CDN by jsDelivr",
+      "selectionRationale": "再看 jsDelivr：4.1.2 与 MIT 安装块。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/spin-js/v2-breadth.png",
+        "sha256": "dd52c9c77c7ada16b4dd6d861b3e2594539d15b0dee86b3901f628dde8a65104",
+        "width": 1280,
+        "height": 900,
+        "bytes": 116238,
+        "alt": "jsDelivr spin.js：Version 4.1.2、License MIT，INSTALL 块 spin.min.js 与 spin.min.css，README 写 An animated loading spinner",
+        "display": {
+          "full": "https://vislexicon.com/shots/spin-js/v2-breadth.webp",
+          "card": "https://vislexicon.com/shots/spin-js/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://spin.js.org/#?lines=5&length=0&width=20&radius=40&color=%23ff0000&animation=spinner-line-shrink&direction=-1",
+      "finalUrl": "https://spin.js.org/#?lines=5&length=0&width=20&radius=40&color=%23ff0000&animation=spinner-line-shrink&direction=-1",
+      "title": "spin.js",
+      "selectionRationale": "最后打开分享链接：红点逆时针 shrink。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/spin-js/v2-proof.png",
+        "sha256": "010fb89f8cc472401dfed676bb91982d79971d931e78597f03722bf19dbe2e16",
+        "width": 1280,
+        "height": 900,
+        "bytes": 260447,
+        "alt": "spin.js 分享状态：Animation 为 spinner-line-shrink，Direction Counterclockwise，Color 红色，Share it 已勾选，预览区红点",
+        "display": {
+          "full": "https://vislexicon.com/shots/spin-js/v2-proof.webp",
+          "card": "https://vislexicon.com/shots/spin-js/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Felix Gnass",
+      "sourceUrl": "https://spin.js.org/",
+      "evidence": "Authors 节列出 Felix Gnass，Twitter @fgnass。package.json author 为 Felix Gnass <fgnass@gmail.com>。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "fgnass",
+      "sourceUrl": "https://spin.js.org/",
+      "evidence": "页脚 Hosted on GitHub 链到 github.com/fgnass/spin.js。jsDelivr 作者栏为 fgnass。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/fgnass/spin.js",
+      "sourceUrl": "https://spin.js.org/",
+      "evidence": "绿丝带 Fork me on GitHub 与页脚均链到 https://github.com/fgnass/spin.js。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/fgnass/spin.js/master/LICENSE.md",
+      "evidence": "LICENSE.md 标题 The MIT License，Copyright (c) 2011-2018 Felix Gnass。首页 Features 写 MIT License。jsDelivr 徽章 License MIT。覆盖 spin.js 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://spin.js.org/",
+      "evidence": "首页 Installation 写 npm install spin.js，并提供 ESM/UMD/CSS 下载按钮，无付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "spin.js",
+      "sourceUrl": "https://www.jsdelivr.com/package/npm/spin.js",
+      "evidence": "jsDelivr 标题 spin.js，Version 4.1.2。package.json name 为 spin.js，version 4.1.2。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/spin-js",
+    "designMdUrl": "https://vislexicon.com/site/spin-js.md",
+    "checkedAt": "2026-09-07T09:36:14.000Z",
+    "license": "MIT"
+  }
+}

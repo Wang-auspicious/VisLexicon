@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: c8039d4d45d33c168743de2d9fa23ce3cbec881717a506879c9532b36c647139
 status: APPROVED
 name: OnePromptDesign

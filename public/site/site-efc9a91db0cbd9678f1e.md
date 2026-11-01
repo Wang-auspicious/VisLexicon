@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 975b6831f6b2eec5bf8a199fa106336fa4cf72fcc4dc9f32c0254964fb23a288
 status: APPROVED
 name: "Kibo UI"

@@ -1,0 +1,211 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "c24cefde8f883442375a71e8b2ff12da0228ea2271a98c83a59e0985a64b14f1",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "sal",
+  "entityId": "entity-sal",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://mciastek.github.io/sal/",
+    "finalUrl": "https://mciastek.github.io/sal/",
+    "checkedAt": "2026-09-07T09:36:14.000Z"
+  },
+  "editorial": {
+    "name": "Sal.js",
+    "descriptionZh": "Mirek Ciastek 的滚动入场库 Sal.js，包 sal.js 现为 0.8.5。用 Intersection Observer，写 data-sal 再 sal()。仓库 LICENSE 为 MIT。",
+    "descriptionEn": null,
+    "takeawayZh": "给元素加 data-sal，再调用 sal()",
+    "noteZh": "演示页大标题 Sal.js，按钮 Github / Docs，周围色块随滚动入场。unpkg README 写 npm install --save sal.js 和 data-sal=\"fade\"。jsDelivr 标 Version 0.8.5、License MIT，给出 sal.min.js CDN。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "演示页把 Sal.js 定义为 Lightweight scroll animation library，周围色块用 data-sal 做滚动入场，交付物是滚动动效代码。",
+        "evidenceUrl": "https://mciastek.github.io/sal/"
+      },
+      {
+        "statement": "README 给出 npm install --save sal.js、import sal from 'sal.js' 与 <div data-sal=\"fade\"></div>，证明可以装进项目。",
+        "evidenceUrl": "https://unpkg.com/sal.js@0.8.5/README.md"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "css"
+    ],
+    "workflowStages": [
+      "build"
+    ],
+    "audiences": [
+      "developer",
+      "designer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://mciastek.github.io/sal/",
+      "finalUrl": "https://mciastek.github.io/sal/",
+      "title": "Sal - Lightweight scroll animation library",
+      "selectionRationale": "先看演示页：Sal.js 标题和滚动入场色块。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/sal/v2-identity.png",
+        "sha256": "96edaab8c898e5bdd993ff99bfd24d48ca0ce3cf788599b1a2ec72c06f3e5e2f",
+        "width": 1280,
+        "height": 900,
+        "bytes": 24663,
+        "alt": "Sal.js 演示首页：标题 Sal.js，副标题 Lightweight scroll animation library，按钮 Github / Docs，周围彩色几何块",
+        "display": {
+          "full": "https://vislexicon.com/shots/sal/v2-identity.webp",
+          "card": "https://vislexicon.com/shots/sal/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://unpkg.com/sal.js@0.8.5/README.md",
+      "finalUrl": "https://unpkg.com/sal.js@0.8.5/README.md",
+      "title": "sal.js@0.8.5/README.md",
+      "selectionRationale": "再看 README：安装命令和 data-sal 用法。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/sal/v2-breadth.png",
+        "sha256": "d005f1548f13b77ac24d7d78fc4e81f135ed8625bb0418caef84644067225d61",
+        "width": 1280,
+        "height": 900,
+        "bytes": 25187,
+        "alt": "unpkg 上 sal.js README：Performance focused lightweight scroll animation library，npm install --save sal.js 与 data-sal=\"fade\"",
+        "display": {
+          "full": "https://vislexicon.com/shots/sal/v2-breadth.webp",
+          "card": "https://vislexicon.com/shots/sal/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://www.jsdelivr.com/package/npm/sal.js",
+      "finalUrl": "https://www.jsdelivr.com/package/npm/sal.js",
+      "title": "sal.js CDN by jsDelivr",
+      "selectionRationale": "最后看 jsDelivr：0.8.5 与 MIT 安装块。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/sal/v2-proof.png",
+        "sha256": "a0c2c72d5b3e1fdad8fabfdcdd8e98ee1d84db00040fc06895b06173f684e781",
+        "width": 1280,
+        "height": 900,
+        "bytes": 144367,
+        "alt": "jsDelivr sal.js：Version 0.8.5、License MIT，INSTALL 块 sal.min.js 与 sal.min.css CDN",
+        "display": {
+          "full": "https://vislexicon.com/shots/sal/v2-proof.webp",
+          "card": "https://vislexicon.com/shots/sal/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Mirek Ciastek",
+      "sourceUrl": "https://unpkg.com/sal.js@0.8.5/README.md",
+      "evidence": "README 写 Created by Mirek Ciastek。package.json author 为 Mirek Ciastek。演示页页脚 Created with ❤️by Mirek Ciastek。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "mciastek",
+      "sourceUrl": "https://mciastek.github.io/sal/",
+      "evidence": "演示页 Github / Docs 链到 github.com/mciastek/sal。jsDelivr 作者栏为 mciastek。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/mciastek/sal",
+      "sourceUrl": "https://mciastek.github.io/sal/",
+      "evidence": "演示页按钮 Github / Docs 指向 https://github.com/mciastek/sal。package.json repository.url 同此。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/mciastek/sal/master/LICENSE",
+      "evidence": "LICENSE 标题 MIT License，Copyright (c) 2017 Mirosław Ciastek。jsDelivr 徽章 License MIT。覆盖 sal.js 源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://unpkg.com/sal.js@0.8.5/README.md",
+      "evidence": "README 写 npm install --save sal.js 与 yarn add sal.js。jsDelivr 提供公开 CDN，无付费档。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "sal.js",
+      "sourceUrl": "https://www.jsdelivr.com/package/npm/sal.js",
+      "evidence": "jsDelivr 标题 sal.js，Version 0.8.5。package.json name 为 sal.js，version 0.8.5。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-06",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/sal",
+    "designMdUrl": "https://vislexicon.com/site/sal.md",
+    "checkedAt": "2026-09-07T09:36:14.000Z",
+    "license": "MIT"
+  }
+}

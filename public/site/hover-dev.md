@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: efba8d9dd809faf6b7932b2113195315df9700f185542baac7b2c011f0b948e4
 status: APPROVED
 name: Hover.dev

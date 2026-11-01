@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: b83a87ee7653eac71ca74809455d2adaa4590d8995b8ed9a74b33e57d82dc7a1
 status: APPROVED
 name: Splide

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 9de8215ea9fbb159aeaba99080104818ab14fedadf678a95d889d0ebca225c28
 status: APPROVED
 name: Are.na

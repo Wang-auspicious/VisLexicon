@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 01770512581ebfa1ffdca15649dc33407d59536347cf646576efa4944aa84f08
 status: APPROVED
 name: shadercn

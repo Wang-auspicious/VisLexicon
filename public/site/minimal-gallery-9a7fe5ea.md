@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 25fb842381d95bdba4672aa571d2b9d853d86229a5c3d0093e774aa899856722
 status: APPROVED
 name: "Minimal Gallery"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 0f5ccb0638273e08dd9ff4dd5fcf50f8bdaf6351730333e9c3e39cf0cbc2868c
 status: APPROVED
 name: "Lightning CSS"

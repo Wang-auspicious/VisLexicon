@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: aa020d0c0cd8bd7f3df22d933bbce67169f676b7c5b6415726587be565a0efb9
 status: APPROVED
 name: "Phosphor Icons"

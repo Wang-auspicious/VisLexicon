@@ -1,0 +1,212 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "8c07b6db8a1a2189e72142374db0779b8785b3316884ec8e9bd3bebceffcff62",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "popmotion",
+  "entityId": "entity-popmotion",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://popmotion.io/",
+    "finalUrl": "https://popmotion.io/",
+    "checkedAt": "2026-09-06T18:30:00.000Z"
+  },
+  "editorial": {
+    "name": "Popmotion",
+    "descriptionZh": "Matt Perry 的底层 JavaScript 动效库 Popmotion，现为 11.0.5，导出 animate 与 spring。popmotion.io 现 403。package.json 标 MIT。它不是 Motion。",
+    "descriptionEn": null,
+    "takeawayZh": "npm i popmotion，用 animate 推 from/to",
+    "noteZh": "popmotion.io 与 /learn/get-started、/pure/animate 均 403 AccessDenied。identity 改 GitHub Popmotion/popmotion：About 写 Simple animation libraries for delightful user interfaces，链回 popmotion.io，标签 v11.0.5。README 标题 The animator's toolbox，命令 npm install popmotion。packages/popmotion/src/index.ts 导出 animate、inertia、spring、keyframes。它是 Motion / Framer Motion 的前身底层库，本条不与已收录 motion 合并。MIT。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "visual-implementation",
+    "subcategory": "motion-interaction-code",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "README 把 Popmotion 定义为 The animator's toolbox，支持数字、颜色和复杂字符串的 keyframe 与 spring 动画。",
+        "evidenceUrl": "https://github.com/Popmotion/popmotion/blob/master/README.md"
+      },
+      {
+        "statement": "packages/popmotion/src/index.ts 导出 animate、inertia、spring 与 keyframes，证明交付物是可安装的动效实现代码，不是 Motion 站点。",
+        "evidenceUrl": "https://github.com/Popmotion/popmotion/blob/master/packages/popmotion/src/index.ts"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "learn"
+    ],
+    "media": [
+      "motion",
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "workflowStages": [
+      "design",
+      "build"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://github.com/Popmotion/popmotion",
+      "finalUrl": "https://github.com/Popmotion/popmotion",
+      "title": "GitHub - Popmotion/popmotion: Simple animation libraries for delightful user interfaces",
+      "selectionRationale": "官网 403。GitHub About 写 animation libraries，并回链 popmotion.io。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/popmotion/v2-identity.png",
+        "sha256": "af5060397e902046feb5c3291b2486b7e93fbb8a5f6485af59208ebc8f02a9a6",
+        "width": 1280,
+        "height": 900,
+        "bytes": 117256,
+        "alt": "GitHub Popmotion/popmotion：About 写 Simple animation libraries for delightful user interfaces，链到 popmotion.io，标签 v11.0.5",
+        "display": {
+          "full": "https://vislexicon.com/shots/popmotion/v2-identity.webp",
+          "card": "https://vislexicon.com/shots/popmotion/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://github.com/Popmotion/popmotion/blob/master/README.md",
+      "finalUrl": "https://github.com/Popmotion/popmotion/blob/master/README.md",
+      "title": "popmotion/README.md at master · Popmotion/popmotion",
+      "selectionRationale": "再看 README。The animator's toolbox 和 npm install popmotion 都在。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/popmotion/v2-breadth.png",
+        "sha256": "a21948b6cd4f3b1e0924a1a6dda81d6b2c87b51b8fa168530564256aa388fe48",
+        "width": 1280,
+        "height": 900,
+        "bytes": 103867,
+        "alt": "Popmotion README：The animator's toolbox，npm v11.0.5，命令 npm install popmotion",
+        "display": {
+          "full": "https://vislexicon.com/shots/popmotion/v2-breadth.webp",
+          "card": "https://vislexicon.com/shots/popmotion/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://github.com/Popmotion/popmotion/blob/master/packages/popmotion/src/index.ts",
+      "finalUrl": "https://github.com/Popmotion/popmotion/blob/master/packages/popmotion/src/index.ts",
+      "title": "popmotion/packages/popmotion/src/index.ts at master · Popmotion/popmotion",
+      "selectionRationale": "最后看 index.ts。export animate 就是可安装 API。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/popmotion/v2-proof.png",
+        "sha256": "5eed0119e455a30fa86eb431e6998da535d8f09a435748bcf7c61bd71759b8ce",
+        "width": 1280,
+        "height": 900,
+        "bytes": 129708,
+        "alt": "popmotion src/index.ts：export { animate } from \"./animations\"，并导出 inertia、spring、keyframes",
+        "display": {
+          "full": "https://vislexicon.com/shots/popmotion/v2-proof.webp",
+          "card": "https://vislexicon.com/shots/popmotion/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "Matt Perry",
+      "sourceUrl": "https://raw.githubusercontent.com/Popmotion/popmotion/master/packages/popmotion/package.json",
+      "evidence": "packages/popmotion/package.json author 为 Matt Perry。README 提交者为 mattgperry。Motion About 另述其从 Popmotion 到 Framer Motion 再到 Motion 的历程。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "Popmotion",
+      "sourceUrl": "https://github.com/Popmotion/popmotion",
+      "evidence": "GitHub 组织为 Popmotion。package.json homepage 为 https://popmotion.io。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/Popmotion/popmotion",
+      "sourceUrl": "https://github.com/Popmotion/popmotion",
+      "evidence": "仓库 About 回链 popmotion.io。packages/popmotion/package.json repository 指向 Popmotion/popmotion。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/Popmotion/popmotion/master/packages/popmotion/package.json",
+      "evidence": "packages/popmotion/package.json license 为 MIT。根仓未再放独立 LICENSE 文件，以包字段为准。覆盖 popmotion 源码。本库不是 motion.dev。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://github.com/Popmotion/popmotion/blob/master/README.md",
+      "evidence": "README 写 npm install popmotion。仓库公开可读。popmotion.io 现返回 403，文档以 README 为准，未见付费档。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "popmotion",
+      "sourceUrl": "https://raw.githubusercontent.com/Popmotion/popmotion/master/packages/popmotion/package.json",
+      "evidence": "packages/popmotion/package.json name 为 popmotion，version 11.0.5。README npm 徽章同为 v11.0.5。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/popmotion",
+    "designMdUrl": "https://vislexicon.com/site/popmotion.md",
+    "checkedAt": "2026-09-06T18:30:00.000Z",
+    "license": "MIT"
+  }
+}

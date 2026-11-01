@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 92360a708671265476a223f9e33dff4db0a5a00c0f443595f8ab4c0ca620d1a5
 status: APPROVED
 name: Heroicons

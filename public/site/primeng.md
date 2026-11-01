@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 9c00bcea2429cbc0b9b03510c98e0101c35ac389d570804de3a7efe1b0f14cce
 status: APPROVED
 name: PrimeNG

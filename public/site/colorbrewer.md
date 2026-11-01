@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: b68c3b780fbd534cc4af62797ca0924b1c93003f88aaaa8270d226128c1a264f
 status: APPROVED
 name: "ColorBrewer 2.0"

@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: a30c35693de51530a59bc09c2f9c76727a853dceb05bdfa492eabaa922ae0fe9
 status: APPROVED
 name: "Floating UI"

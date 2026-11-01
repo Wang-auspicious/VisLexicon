@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: befb53e45af18ca674d025ca43b76363ccbc8f44715907fd1dd7f279c32a8ab7
 status: APPROVED
 name: "Bunny Fonts"

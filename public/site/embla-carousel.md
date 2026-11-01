@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 174ae0af79c4ae1dca70759122093f4171cde41659715399a073537f0f36c15a
 status: APPROVED
 name: "Embla Carousel"

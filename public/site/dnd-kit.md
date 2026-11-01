@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 5557207a42b80e11162239f506c9fd948fd828e0abaa0d1a955573ec79188768
 status: APPROVED
 name: "dnd kit"

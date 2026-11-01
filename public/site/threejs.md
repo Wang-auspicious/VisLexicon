@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: fb0d29ca586cfede7b780e853f5697027d58640fc87816fd13df5ae4eb826fd6
 status: APPROVED
 name: three.js

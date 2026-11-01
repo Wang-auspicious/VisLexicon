@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 88f1689ae491bb453e9ae392439f649a2d78e3e94d202fe8e9e8117866c9a5c8
 status: APPROVED
 name: Fabric.js

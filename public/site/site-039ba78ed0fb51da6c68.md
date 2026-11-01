@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 3a7b2d442b85ab3c24fe06347ffcee921eaa224a09d0ea4a26bfd3ce841ba3a0
 status: APPROVED
 name: NexUI

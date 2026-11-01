@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 14798b13e7b5a0aa1609951f89961cfce42d65305496a8e6107b21b9fc630edc
 status: APPROVED
 name: Ariakit

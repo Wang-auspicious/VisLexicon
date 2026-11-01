@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 58dd17fc8a465a9d4708cdd9f68ea9f925eb52511eabc8f765ec98d60ff1a7d1
 status: APPROVED
 name: JSCharting

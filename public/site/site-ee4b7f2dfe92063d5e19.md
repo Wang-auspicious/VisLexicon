@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 2461f2b2af03d84767a6eeca6ffb48fa61ab17f77b7c349a83f3a9a2c16125e1
 status: APPROVED
 name: Imageory

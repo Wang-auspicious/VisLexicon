@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 1e437f6789a59761cd4fdc797a096fb6f0b76ab912fce7683c3984ca9fc1f05c
 status: APPROVED
 name: "jQuery UI"

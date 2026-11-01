@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 2357545688847ae07a7a6c1e2f259975d11c90d39aec8c98ef1dedd6ed7d1fc0
 status: APPROVED
 name: "React Joyride"

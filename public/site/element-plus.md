@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: b759cf14904cf3c03a4e5840b2a049c9d67b16950380dd903869373a4df912a6
 status: APPROVED
 name: "Element Plus"

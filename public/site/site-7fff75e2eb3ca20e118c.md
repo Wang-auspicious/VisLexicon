@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 278c607982ebc1d37933ce6ffcd96c95943ee2a2277d75b3b441f43a78db1b3c
 status: APPROVED
 name: "Ruru UI"

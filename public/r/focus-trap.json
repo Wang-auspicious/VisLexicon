@@ -1,0 +1,211 @@
+{
+  "$schema": "https://vislexicon.com/schema/registry-item.json",
+  "releaseId": "release-5ebaec04e50ae8ef",
+  "revision": "79c422fe317fe5ebf1a5f7e26f411bcadf5fe66b04ce0a2f71b417494c345c0b",
+  "schemaVersion": 3,
+  "generatedAt": "2026-11-01T01:34:32.488Z",
+  "entryId": "focus-trap",
+  "entityId": "entity-focus-trap",
+  "status": "APPROVED",
+  "voiceStatus": "written",
+  "official": {
+    "inputUrl": "https://focus-trap.github.io/focus-trap/",
+    "finalUrl": "https://focus-trap.github.io/focus-trap/",
+    "checkedAt": "2026-09-06T18:50:00.000Z"
+  },
+  "editorial": {
+    "name": "focus-trap",
+    "descriptionZh": "David Clark 维护的焦点陷阱库 focus-trap，把键盘焦点锁在指定 DOM 节点内。npm 包现为 v8.2.2。仓库 LICENSE 标 MIT。演示页列出 default behavior 等用例。",
+    "descriptionEn": null,
+    "takeawayZh": "装 focus-trap，先点激活陷阱",
+    "noteZh": "演示页标题 focus-trap demo，链回 GitHub 仓库。黄条提醒 macOS 打开键盘导航。default behavior 有 activate trap、deactivate trap 与陷阱框。#demo-nested 那张截图是空白页。MIT 覆盖库源码。",
+    "recommendation": null,
+    "pricing": "Free",
+    "pricingNote": null
+  },
+  "classification": {
+    "recordLevel": "entry",
+    "primaryCategory": "ui-implementation",
+    "subcategory": "headless-accessible-primitives",
+    "status": "confirmed",
+    "alternatives": [],
+    "reasons": [
+      {
+        "statement": "package.json 把 focus-trap 定义为 Trap focus within a DOM node，交付物是无样式的键盘焦点原语，不是审计工具。",
+        "evidenceUrl": "https://raw.githubusercontent.com/focus-trap/focus-trap/master/package.json"
+      },
+      {
+        "statement": "演示页 default behavior 给出 activate trap 与陷阱框内可聚焦链接，证明调用方可把焦点锁在节点内。",
+        "evidenceUrl": "https://focus-trap.github.io/focus-trap/#demo-default"
+      }
+    ],
+    "confirmedAt": "2026-10-31T12:00:00.000Z",
+    "independentlyReviewed": true
+  },
+  "facets": {
+    "scenarios": [],
+    "deliverables": [
+      "primitive",
+      "code-library"
+    ],
+    "actions": [
+      "browse",
+      "install",
+      "copy",
+      "preview",
+      "test"
+    ],
+    "media": [
+      "ui"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "technologies": [
+      "javascript"
+    ],
+    "workflowStages": [
+      "build",
+      "test"
+    ],
+    "audiences": [
+      "developer"
+    ],
+    "access": [
+      "free",
+      "open-source"
+    ],
+    "licenses": [
+      "MIT"
+    ],
+    "contentOrganization": [
+      "standards-documentation"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "pages": [
+    {
+      "role": "identity",
+      "sourceUrl": "https://focus-trap.github.io/focus-trap/",
+      "finalUrl": "https://focus-trap.github.io/focus-trap/",
+      "title": "focus-trap demo",
+      "selectionRationale": "演示首页标题与仓库链说明它是谁。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/focus-trap/v2-identity.png",
+        "sha256": "ff72b2b7da676f90e9ca5be4d38cb5aa16bdd27c10cc07c900d6400be7458e42",
+        "width": 1280,
+        "height": 900,
+        "bytes": 55969,
+        "alt": "focus-trap demo 首页：标题 focus-trap demo，链接 Return to the repository，黄条提醒 macOS 开 keyboard navigation，下方 default behavior 的 activate trap 与陷阱框",
+        "display": {
+          "full": "https://vislexicon.com/shots/focus-trap/v2-identity.webp",
+          "card": "https://vislexicon.com/shots/focus-trap/v2-identity.card.webp"
+        }
+      }
+    },
+    {
+      "role": "breadth",
+      "sourceUrl": "https://focus-trap.github.io/focus-trap/#demo-nested",
+      "finalUrl": "https://focus-trap.github.io/focus-trap/#demo-nested",
+      "title": "focus-trap demo",
+      "selectionRationale": "nested 锚点截图当时是空白页。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/focus-trap/v2-breadth.png",
+        "sha256": "57f45d88e654eeca054ff1cc37c39a437cb6e4b6ea2a6f59cf08a6228670107a",
+        "width": 1280,
+        "height": 900,
+        "bytes": 5289,
+        "alt": "整屏白色空白，无文字或控件",
+        "display": {
+          "full": "https://vislexicon.com/shots/focus-trap/v2-breadth.webp",
+          "card": "https://vislexicon.com/shots/focus-trap/v2-breadth.card.webp"
+        }
+      }
+    },
+    {
+      "role": "proof",
+      "sourceUrl": "https://focus-trap.github.io/focus-trap/#demo-default",
+      "finalUrl": "https://focus-trap.github.io/focus-trap/#demo-default",
+      "title": "focus-trap demo",
+      "selectionRationale": "default behavior 的 activate trap 就是能跑的证明。",
+      "shot": {
+        "src": "https://vislexicon.com/shots/focus-trap/v2-proof.png",
+        "sha256": "925b68e035ed7abc1883d5153155414f7fcbf19c4559868a9368e9336a4952a2",
+        "width": 1280,
+        "height": 900,
+        "bytes": 24368,
+        "alt": "focus-trap default behavior：activate trap 按钮，框内 Here is a focus trap with some focusable 链接与 deactivate trap，下方 animated dialog 说明",
+        "display": {
+          "full": "https://vislexicon.com/shots/focus-trap/v2-proof.webp",
+          "card": "https://vislexicon.com/shots/focus-trap/v2-proof.card.webp"
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "field": "author",
+      "value": "David Clark",
+      "sourceUrl": "https://raw.githubusercontent.com/focus-trap/focus-trap/master/LICENSE",
+      "evidence": "LICENSE 版权行为 Copyright (c) 2015-2016 David Clark。package.json author.name 为 David Clark，url 为 http://davidtheclark.com/。",
+      "confidence": 1
+    },
+    {
+      "field": "organization",
+      "value": "focus-trap",
+      "sourceUrl": "https://focus-trap.github.io/focus-trap/",
+      "evidence": "演示页 Return to the repository 链到 github.com/focus-trap/focus-trap。仓库组织为 focus-trap。",
+      "confidence": 1
+    },
+    {
+      "field": "repository",
+      "value": "https://github.com/focus-trap/focus-trap",
+      "sourceUrl": "https://focus-trap.github.io/focus-trap/",
+      "evidence": "演示页 Return to the repository 链到 https://github.com/focus-trap/focus-trap。package.json repository.url 为 git+https://github.com/focus-trap/focus-trap.git。",
+      "confidence": 1
+    },
+    {
+      "field": "license",
+      "value": "MIT",
+      "sourceUrl": "https://raw.githubusercontent.com/focus-trap/focus-trap/master/LICENSE",
+      "evidence": "LICENSE 标题 The MIT License (MIT)，Copyright (c) 2015-2016 David Clark。package.json license 为 MIT。该许可覆盖 focus-trap 库源码。",
+      "confidence": 1
+    },
+    {
+      "field": "pricing",
+      "value": "Free",
+      "sourceUrl": "https://focus-trap.github.io/focus-trap/",
+      "evidence": "演示页与仓库公开可读。package.json 无付费字段。未见付费墙。",
+      "confidence": 1
+    },
+    {
+      "field": "package",
+      "value": "focus-trap",
+      "sourceUrl": "https://raw.githubusercontent.com/focus-trap/focus-trap/master/package.json",
+      "evidence": "package.json name 为 focus-trap，version 8.2.2，description 为 Trap focus within a DOM node。",
+      "confidence": 1
+    }
+  ],
+  "curation": {
+    "atlasTerms": [],
+    "atlasRelations": [],
+    "atlasTermsStatus": "editor-draft"
+  },
+  "agentGuidance": {
+    "safeToRedistributeCode": true,
+    "requiresAttribution": true,
+    "licenseMachineReadable": true,
+    "cautions": [],
+    "recheckAfter": "2027-03-05",
+    "recheckPolicy": "checkedAt + P180D",
+    "basis": "由 facets.licenses、facets.access 与 facts[field=license] 机械推导；未经法务判断，null 表示数据不足以判定。"
+  },
+  "meta": {
+    "vislexiconUrl": "https://vislexicon.com/#/site/focus-trap",
+    "designMdUrl": "https://vislexicon.com/site/focus-trap.md",
+    "checkedAt": "2026-09-06T18:50:00.000Z",
+    "license": "MIT"
+  }
+}

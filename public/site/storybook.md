@@ -1,6 +1,6 @@
 ---
 version: "3"
-releaseId: release-f4ac887f17c47614
+releaseId: release-5ebaec04e50ae8ef
 revision: 587796fe680ec5dc60a58b9886ff2e2bf51f7dc5200b2c23b0bced8b9a059e97
 status: APPROVED
 name: Storybook
