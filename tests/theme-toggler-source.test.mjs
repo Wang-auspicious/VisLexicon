@@ -117,3 +117,30 @@ test('animated grid preserves the upstream source and compatible Motion 12 notic
   await readFile(path.join(root, item.preview.url.slice('/data/component-code/'.length)))
   await readFile(path.join(root, item.preview.posterUrl.slice('/data/component-code/'.length)))
 })
+
+test('ripple button preserves upstream source and its two actual props', async () => {
+  const id = 'registry-magicui-design-ripple-button-febbe648'
+  const [{ units }, item, scope] = await Promise.all([
+    json(path.join(root, 'discovery.json')),
+    json(path.join(root, 'items', `${id}.json`)),
+    json('public/data/discovery/scopes/curation.json'),
+  ])
+  assert.equal(units.filter(unit => unit.id === id).length, 1)
+  assert.equal(scope.units.filter(unit => unit.id === id).length, 1)
+  assert.equal(item.preview.status, 'verified')
+  assert.equal(item.license.spdx, 'MIT')
+  assert.match(item.license.text, /Copyright \(c\) Magic UI/)
+  assert.match(item.license.url, new RegExp(item.commit))
+  assert.ok(item.files.some(file => file.originalPath.endsWith('/ripple-button-demo.tsx')))
+  for (const file of item.files) {
+    const bytes = Buffer.from(file.content, 'utf8')
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), file.sha256)
+    assert.equal(createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex'), file.gitBlob)
+    assert.match(file.sourceUrl, new RegExp(item.commit))
+  }
+  assert.deepEqual(item.controls.map(control => control.key), ['rippleColor', 'duration'])
+  const css = await readFile(path.join(root, 'previews', id, 'registry.css'), 'utf8')
+  assert.match(css, /\.animate-rippling\{animation:rippling var\(--duration\) ease-out\}/)
+  await readFile(path.join(root, item.preview.url.slice('/data/component-code/'.length)))
+  await readFile(path.join(root, item.preview.posterUrl.slice('/data/component-code/'.length)))
+})

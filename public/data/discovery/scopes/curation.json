@@ -53337,6 +53337,86 @@
           }
         ]
       }
+    },
+    {
+      "id": "registry-magicui-design-ripple-button-febbe648",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "button",
+      "componentType": "button",
+      "nameZh": "涟漪按钮",
+      "nameEn": "Ripple button",
+      "descriptionZh": "点击时从指针位置展开涟漪，可调节涟漪颜色和持续时间。",
+      "descriptionEn": "A button with a click-triggered ripple and adjustable color and duration.",
+      "sourceUrl": "https://magicui.design/docs/components/ripple-button",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/registry-magicui-design-ripple-button-febbe648.jpg",
+      "tags": [
+        "按钮",
+        "涟漪",
+        "点击",
+        "button",
+        "ripple",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-registry-magicui-design-ripple-button-febbe648",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component and example files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/ripple-button.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/ripple-button.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "registry-magicui-design-ripple-button-febbe648",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/registry-magicui-design-ripple-button-febbe648.json",
+        "previewUrl": "/data/component-code/previews/registry-magicui-design-ripple-button-febbe648/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/registry-magicui-design-ripple-button-febbe648.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "rippleColor",
+            "prop": "RippleButton.rippleColor",
+            "type": "string",
+            "default": "#ADD8E6",
+            "sourceDefault": "#ADD8E6",
+            "control": "color",
+            "labelZh": "涟漪颜色",
+            "labelEn": "Ripple color"
+          },
+          {
+            "key": "duration",
+            "prop": "RippleButton.duration",
+            "type": "string",
+            "default": "600ms",
+            "sourceDefault": "600ms",
+            "control": "text",
+            "labelZh": "持续时间",
+            "labelEn": "Duration",
+            "doc": "Duration as milliseconds, for example 600ms."
+          }
+        ]
+      }
     }
   ]
 }
