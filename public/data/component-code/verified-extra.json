@@ -5788,10 +5788,14 @@
           {
             "key": "direction",
             "prop": "hexagon-pattern.direction",
-            "type": "string",
+            "type": "\"horizontal\" | \"vertical\"",
             "default": "horizontal",
             "sourceDefault": "horizontal",
-            "control": "text",
+            "control": "select",
+            "options": [
+              "horizontal",
+              "vertical"
+            ],
             "labelZh": "方向",
             "labelEn": "direction"
           }
@@ -10111,10 +10115,14 @@
           {
             "key": "direction",
             "prop": "striped-pattern.direction",
-            "type": "string",
+            "type": "\"left\" | \"right\"",
             "default": "left",
             "sourceDefault": "left",
-            "control": "text",
+            "control": "select",
+            "options": [
+              "left",
+              "right"
+            ],
             "labelZh": "方向",
             "labelEn": "direction"
           },
@@ -11897,10 +11905,15 @@
           {
             "key": "preload",
             "prop": "video-text.preload",
-            "type": "string",
+            "type": "\"auto\" | \"metadata\" | \"none\"",
             "default": "auto",
             "sourceDefault": "auto",
-            "control": "text",
+            "control": "select",
+            "options": [
+              "auto",
+              "metadata",
+              "none"
+            ],
             "labelZh": "preload",
             "labelEn": "preload"
           },
@@ -68973,10 +68986,14 @@
           {
             "key": "variant",
             "prop": "pulsating-button.variant",
-            "type": "string",
+            "type": "\"pulse\" | \"ripple\"",
             "default": "pulse",
             "sourceDefault": "pulse",
-            "control": "text",
+            "control": "select",
+            "options": [
+              "pulse",
+              "ripple"
+            ],
             "labelZh": "variant",
             "labelEn": "variant"
           }
@@ -69335,6 +69352,1389 @@
             "control": "text",
             "labelZh": "borderRadius",
             "labelEn": "borderRadius"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-diceui-compare-slider-controlled-demo",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "compare-slider-controlled-demo",
+      "nameEn": "compare-slider-controlled-demo",
+      "descriptionZh": "上游 diceui/base 的真实组件 compare-slider-controlled-demo 在本地沙箱中的实际渲染。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/compare-slider-controlled-demo.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-compare-slider-controlled-demo.jpg",
+      "tags": [
+        "compare-slider-controlled-demo",
+        "compare",
+        "slider",
+        "controlled",
+        "demo"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-compare-slider-controlled-demo",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/compare-slider-controlled-demo.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/compare-slider-controlled-demo.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-compare-slider-controlled-demo",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-compare-slider-controlled-demo.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-compare-slider-controlled-demo/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-compare-slider-controlled-demo.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": []
+      }
+    },
+    {
+      "id": "reg-diceui-compare-slider-demo",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "compare-slider-demo",
+      "nameEn": "compare-slider-demo",
+      "descriptionZh": "上游 diceui/base 的真实组件 compare-slider-demo 在本地沙箱中的实际渲染。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/compare-slider-demo.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-compare-slider-demo.jpg",
+      "tags": [
+        "compare-slider-demo",
+        "compare",
+        "slider",
+        "demo"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-compare-slider-demo",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/compare-slider-demo.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/compare-slider-demo.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-compare-slider-demo",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-compare-slider-demo.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-compare-slider-demo/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-compare-slider-demo.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": []
+      }
+    },
+    {
+      "id": "reg-diceui-compare-slider-vertical-demo",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "compare-slider-vertical-demo",
+      "nameEn": "compare-slider-vertical-demo",
+      "descriptionZh": "上游 diceui/base 的真实组件 compare-slider-vertical-demo 在本地沙箱中的实际渲染。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/compare-slider-vertical-demo.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-compare-slider-vertical-demo.jpg",
+      "tags": [
+        "compare-slider-vertical-demo",
+        "compare",
+        "slider",
+        "vertical",
+        "demo"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-compare-slider-vertical-demo",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/compare-slider-vertical-demo.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/compare-slider-vertical-demo.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-compare-slider-vertical-demo",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-compare-slider-vertical-demo.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-compare-slider-vertical-demo/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-compare-slider-vertical-demo.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": []
+      }
+    },
+    {
+      "id": "reg-diceui-cropper-controlled-demo",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "cropper-controlled-demo",
+      "nameEn": "cropper-controlled-demo",
+      "descriptionZh": "上游 diceui/base 的真实组件 cropper-controlled-demo 在本地沙箱中的实际渲染。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/cropper-controlled-demo.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-cropper-controlled-demo.jpg",
+      "tags": [
+        "cropper-controlled-demo",
+        "cropper",
+        "controlled",
+        "demo"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-cropper-controlled-demo",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/cropper-controlled-demo.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/cropper-controlled-demo.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-cropper-controlled-demo",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-cropper-controlled-demo.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-cropper-controlled-demo/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-cropper-controlled-demo.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": []
+      }
+    },
+    {
+      "id": "reg-diceui-cropper-demo",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "cropper-demo",
+      "nameEn": "cropper-demo",
+      "descriptionZh": "上游 diceui/base 的真实组件 cropper-demo 在本地沙箱中的实际渲染。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/cropper-demo.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-cropper-demo.jpg",
+      "tags": [
+        "cropper-demo",
+        "cropper",
+        "demo"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-cropper-demo",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/cropper-demo.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/cropper-demo.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-cropper-demo",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-cropper-demo.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-cropper-demo/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-cropper-demo.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": []
+      }
+    },
+    {
+      "id": "reg-diceui-cropper-shapes-demo",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "cropper-shapes-demo",
+      "nameEn": "cropper-shapes-demo",
+      "descriptionZh": "上游 diceui/base 的真实组件 cropper-shapes-demo 在本地沙箱中的实际渲染。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/cropper-shapes-demo.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-cropper-shapes-demo.jpg",
+      "tags": [
+        "cropper-shapes-demo",
+        "cropper",
+        "shapes",
+        "demo"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-cropper-shapes-demo",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/cropper-shapes-demo.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/cropper-shapes-demo.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-cropper-shapes-demo",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-cropper-shapes-demo.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-cropper-shapes-demo/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-cropper-shapes-demo.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": []
+      }
+    },
+    {
+      "id": "reg-diceui-media-player-playlist-demo",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "media-player-playlist-demo",
+      "nameEn": "media-player-playlist-demo",
+      "descriptionZh": "上游 diceui/base 的真实组件 media-player-playlist-demo 在本地沙箱中的实际渲染。",
+      "descriptionEn": "Rendered from the original source at commit 061d7b67ef233c531f2c86448741f0b37b3d3583.",
+      "sourceUrl": "https://diceui.com/r/media-player-playlist-demo.json",
+      "source": {
+        "name": "diceui/base"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-diceui-media-player-playlist-demo.jpg",
+      "tags": [
+        "media-player-playlist-demo",
+        "media",
+        "player",
+        "playlist",
+        "demo"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-diceui-media-player-playlist-demo",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.030Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://diceui.com/r/media-player-playlist-demo.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE",
+          "evidenceUrls": [
+            "https://diceui.com/r/media-player-playlist-demo.json",
+            "https://github.com/sadmann7/diceui/blob/061d7b67ef233c531f2c86448741f0b37b3d3583/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-diceui-media-player-playlist-demo",
+        "sourceId": "diceui/base",
+        "detailUrl": "/data/component-code/items/reg-diceui-media-player-playlist-demo.json",
+        "previewUrl": "/data/component-code/previews/reg-diceui-media-player-playlist-demo/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-diceui-media-player-playlist-demo.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": []
+      }
+    },
+    {
+      "id": "reg-bundui-countdown-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "countdown（2 项参数）",
+      "nameEn": "countdown (2 controls)",
+      "descriptionZh": "上游 bundui 的真实组件 countdown 在本地沙箱中的实际渲染；2 个可调参数：padStart、decimalSeparator。",
+      "descriptionEn": "A countdown is a component that displays the remaining time until a specific event or deadline. Rendered from the original source at commit c07468613dfe7db776f1749a0921a1e5e7bd33d5.",
+      "sourceUrl": "https://bundui.io/r/countdown.json",
+      "source": {
+        "name": "bundui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-bundui-countdown-params.jpg",
+      "tags": [
+        "countdown",
+        "padStart",
+        "decimalSeparator"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-bundui-countdown-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:32.997Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://bundui.io/r/countdown.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/bundui/components/blob/c07468613dfe7db776f1749a0921a1e5e7bd33d5/LICENCE.md",
+          "evidenceUrls": [
+            "https://bundui.io/r/countdown.json",
+            "https://github.com/bundui/components/blob/c07468613dfe7db776f1749a0921a1e5e7bd33d5/LICENCE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-bundui-countdown-params",
+        "sourceId": "bundui",
+        "detailUrl": "/data/component-code/items/reg-bundui-countdown-params.json",
+        "previewUrl": "/data/component-code/previews/reg-bundui-countdown-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-bundui-countdown-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "padStart",
+            "prop": "countdown.padStart",
+            "type": "boolean",
+            "default": false,
+            "sourceDefault": false,
+            "control": "boolean",
+            "labelZh": "padStart",
+            "labelEn": "padStart"
+          },
+          {
+            "key": "decimalSeparator",
+            "prop": "countdown.decimalSeparator",
+            "type": "string",
+            "default": ".",
+            "sourceDefault": ".",
+            "control": "text",
+            "labelZh": "decimalSeparator",
+            "labelEn": "decimalSeparator"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-shadcnui-blocks-dot-pattern-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "background",
+      "nameZh": "dot-pattern（7 项参数）",
+      "nameEn": "dot-pattern (7 controls)",
+      "descriptionZh": "上游 Shadcn UI Blocks 的真实组件 dot-pattern 在本地沙箱中的实际渲染；7 个可调参数：宽度、高度、x、y、cx、cy、cr。",
+      "descriptionEn": "A simple dot pattern Rendered from the original source at commit 73a69e9e458ed3633897445f6588f8a001f43f29.",
+      "sourceUrl": "https://www.shadcnui-blocks.com/r/dot-pattern.json",
+      "source": {
+        "name": "Shadcn UI Blocks"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-shadcnui-blocks-dot-pattern-params.jpg",
+      "tags": [
+        "dot-pattern",
+        "width",
+        "height",
+        "x",
+        "y",
+        "cx",
+        "cy",
+        "cr",
+        "dot",
+        "pattern"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-shadcnui-blocks-dot-pattern-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.177Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://www.shadcnui-blocks.com/r/dot-pattern.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/akash3444/shadcn-ui-blocks/blob/73a69e9e458ed3633897445f6588f8a001f43f29/LICENSE",
+          "evidenceUrls": [
+            "https://www.shadcnui-blocks.com/r/dot-pattern.json",
+            "https://github.com/akash3444/shadcn-ui-blocks/blob/73a69e9e458ed3633897445f6588f8a001f43f29/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-shadcnui-blocks-dot-pattern-params",
+        "sourceId": "Shadcn UI Blocks",
+        "detailUrl": "/data/component-code/items/reg-shadcnui-blocks-dot-pattern-params.json",
+        "previewUrl": "/data/component-code/previews/reg-shadcnui-blocks-dot-pattern-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-shadcnui-blocks-dot-pattern-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "width",
+            "prop": "dot-pattern.width",
+            "type": "number",
+            "default": 16,
+            "sourceDefault": 16,
+            "control": "number",
+            "labelZh": "宽度",
+            "labelEn": "width"
+          },
+          {
+            "key": "height",
+            "prop": "dot-pattern.height",
+            "type": "number",
+            "default": 16,
+            "sourceDefault": 16,
+            "control": "number",
+            "labelZh": "高度",
+            "labelEn": "height"
+          },
+          {
+            "key": "x",
+            "prop": "dot-pattern.x",
+            "type": "number",
+            "default": 0,
+            "sourceDefault": 0,
+            "control": "number",
+            "labelZh": "x",
+            "labelEn": "x"
+          },
+          {
+            "key": "y",
+            "prop": "dot-pattern.y",
+            "type": "number",
+            "default": 0,
+            "sourceDefault": 0,
+            "control": "number",
+            "labelZh": "y",
+            "labelEn": "y"
+          },
+          {
+            "key": "cx",
+            "prop": "dot-pattern.cx",
+            "type": "number",
+            "default": 1,
+            "sourceDefault": 1,
+            "control": "number",
+            "labelZh": "cx",
+            "labelEn": "cx"
+          },
+          {
+            "key": "cy",
+            "prop": "dot-pattern.cy",
+            "type": "number",
+            "default": 1,
+            "sourceDefault": 1,
+            "control": "number",
+            "labelZh": "cy",
+            "labelEn": "cy"
+          },
+          {
+            "key": "cr",
+            "prop": "dot-pattern.cr",
+            "type": "number",
+            "default": 1,
+            "sourceDefault": 1,
+            "control": "number",
+            "labelZh": "cr",
+            "labelEn": "cr"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-eldoraui-hacker-background-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "hacker-background（3 项参数）",
+      "nameEn": "hacker-background (3 controls)",
+      "descriptionZh": "上游 eldoraui 的真实组件 hacker-background 在本地沙箱中的实际渲染；3 个可调参数：颜色、fontSize、速度。",
+      "descriptionEn": "A hacker background component. Rendered from the original source at commit 6bb8fd211ecbdfa983f5780bead27d9f3890f20a.",
+      "sourceUrl": "https://www.eldoraui.site/r/hacker-background.json",
+      "source": {
+        "name": "eldoraui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-eldoraui-hacker-background-params.jpg",
+      "tags": [
+        "hacker-background",
+        "color",
+        "fontSize",
+        "speed",
+        "hacker",
+        "background"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-eldoraui-hacker-background-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.143Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://www.eldoraui.site/r/hacker-background.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/karthikmudunuri/eldoraui/blob/6bb8fd211ecbdfa983f5780bead27d9f3890f20a/LICENSE.md",
+          "evidenceUrls": [
+            "https://www.eldoraui.site/r/hacker-background.json",
+            "https://github.com/karthikmudunuri/eldoraui/blob/6bb8fd211ecbdfa983f5780bead27d9f3890f20a/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-eldoraui-hacker-background-params",
+        "sourceId": "eldoraui",
+        "detailUrl": "/data/component-code/items/reg-eldoraui-hacker-background-params.json",
+        "previewUrl": "/data/component-code/previews/reg-eldoraui-hacker-background-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-eldoraui-hacker-background-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "color",
+            "prop": "hacker-background.color",
+            "type": "string",
+            "default": "#0F0",
+            "sourceDefault": "#0F0",
+            "control": "color",
+            "labelZh": "颜色",
+            "labelEn": "color"
+          },
+          {
+            "key": "fontSize",
+            "prop": "hacker-background.fontSize",
+            "type": "number",
+            "default": 14,
+            "sourceDefault": 14,
+            "control": "number",
+            "labelZh": "fontSize",
+            "labelEn": "fontSize"
+          },
+          {
+            "key": "speed",
+            "prop": "hacker-background.speed",
+            "type": "number",
+            "default": 1,
+            "sourceDefault": 1,
+            "control": "number",
+            "labelZh": "速度",
+            "labelEn": "speed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-assistant-ui-dot-matrix-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "dot-matrix（1 项参数）",
+      "nameEn": "dot-matrix (1 controls)",
+      "descriptionZh": "上游 assistant-ui 的真实组件 dot-matrix 在本地沙箱中的实际渲染；1 个可调参数：state。",
+      "descriptionEn": "5x5 dot matrix indicator with state specific blink patterns. Rendered from the original source at commit 1fc83e9f51d43fca1f48f3c561e9075681285c15.",
+      "sourceUrl": "https://r.assistant-ui.com/dot-matrix.json",
+      "source": {
+        "name": "assistant-ui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-assistant-ui-dot-matrix-params.jpg",
+      "tags": [
+        "dot-matrix",
+        "state",
+        "dot",
+        "matrix"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-assistant-ui-dot-matrix-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.139Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://r.assistant-ui.com/dot-matrix.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE",
+          "evidenceUrls": [
+            "https://r.assistant-ui.com/dot-matrix.json",
+            "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-assistant-ui-dot-matrix-params",
+        "sourceId": "assistant-ui",
+        "detailUrl": "/data/component-code/items/reg-assistant-ui-dot-matrix-params.json",
+        "previewUrl": "/data/component-code/previews/reg-assistant-ui-dot-matrix-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-assistant-ui-dot-matrix-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "state",
+            "prop": "dot-matrix.state",
+            "type": "string",
+            "default": "loading",
+            "sourceDefault": "loading",
+            "control": "text",
+            "labelZh": "state",
+            "labelEn": "state"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-assistant-ui-badge-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "badge（1 项参数）",
+      "nameEn": "badge (1 controls)",
+      "descriptionZh": "上游 assistant-ui 的真实组件 badge 在本地沙箱中的实际渲染；1 个可调参数：variant。",
+      "descriptionEn": "Small label for status, categories, and metadata. Rendered from the original source at commit 1fc83e9f51d43fca1f48f3c561e9075681285c15.",
+      "sourceUrl": "https://r.assistant-ui.com/badge.json",
+      "source": {
+        "name": "assistant-ui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-assistant-ui-badge-params.jpg",
+      "tags": [
+        "badge",
+        "variant"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-assistant-ui-badge-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.139Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://r.assistant-ui.com/badge.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE",
+          "evidenceUrls": [
+            "https://r.assistant-ui.com/badge.json",
+            "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-assistant-ui-badge-params",
+        "sourceId": "assistant-ui",
+        "detailUrl": "/data/component-code/items/reg-assistant-ui-badge-params.json",
+        "previewUrl": "/data/component-code/previews/reg-assistant-ui-badge-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-assistant-ui-badge-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "variant",
+            "prop": "badge.variant",
+            "type": "string",
+            "default": "default",
+            "sourceDefault": "default",
+            "control": "text",
+            "labelZh": "variant",
+            "labelEn": "variant"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-assistant-ui-elements-approval-card-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "card",
+      "nameZh": "elements-approval-card（4 项参数）",
+      "nameEn": "elements-approval-card (4 controls)",
+      "descriptionZh": "上游 assistant-ui 的真实组件 elements-approval-card 在本地沙箱中的实际渲染；4 个可调参数：variant、allowOnceLabel、alwaysAllowLabel、denyLabel。",
+      "descriptionEn": "Human in the loop: the agent asks before it runs anything with side effects. Rendered from the original source at commit 1fc83e9f51d43fca1f48f3c561e9075681285c15.",
+      "sourceUrl": "https://r.assistant-ui.com/elements-approval-card.json",
+      "source": {
+        "name": "assistant-ui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-assistant-ui-elements-approval-card-params.jpg",
+      "tags": [
+        "elements-approval-card",
+        "variant",
+        "allowOnceLabel",
+        "alwaysAllowLabel",
+        "denyLabel",
+        "elements",
+        "approval",
+        "card"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-assistant-ui-elements-approval-card-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.139Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://r.assistant-ui.com/elements-approval-card.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE",
+          "evidenceUrls": [
+            "https://r.assistant-ui.com/elements-approval-card.json",
+            "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-assistant-ui-elements-approval-card-params",
+        "sourceId": "assistant-ui",
+        "detailUrl": "/data/component-code/items/reg-assistant-ui-elements-approval-card-params.json",
+        "previewUrl": "/data/component-code/previews/reg-assistant-ui-elements-approval-card-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-assistant-ui-elements-approval-card-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "variant",
+            "prop": "elements-approval-card.variant",
+            "type": "\"default\" | \"destructive\"",
+            "default": "default",
+            "sourceDefault": "default",
+            "control": "select",
+            "options": [
+              "default",
+              "destructive"
+            ],
+            "labelZh": "variant",
+            "labelEn": "variant"
+          },
+          {
+            "key": "allowOnceLabel",
+            "prop": "elements-approval-card.allowOnceLabel",
+            "type": "string",
+            "default": "Allow once",
+            "sourceDefault": "Allow once",
+            "control": "text",
+            "labelZh": "allowOnceLabel",
+            "labelEn": "allowOnceLabel"
+          },
+          {
+            "key": "alwaysAllowLabel",
+            "prop": "elements-approval-card.alwaysAllowLabel",
+            "type": "string",
+            "default": "Always allow",
+            "sourceDefault": "Always allow",
+            "control": "text",
+            "labelZh": "alwaysAllowLabel",
+            "labelEn": "alwaysAllowLabel"
+          },
+          {
+            "key": "denyLabel",
+            "prop": "elements-approval-card.denyLabel",
+            "type": "string",
+            "default": "Deny",
+            "sourceDefault": "Deny",
+            "control": "text",
+            "labelZh": "denyLabel",
+            "labelEn": "denyLabel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-assistant-ui-elements-artifact-card-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "card",
+      "nameZh": "elements-artifact-card（2 项参数）",
+      "nameEn": "elements-artifact-card (2 controls)",
+      "descriptionZh": "上游 assistant-ui 的真实组件 elements-artifact-card 在本地沙箱中的实际渲染；2 个可调参数：generating、words。",
+      "descriptionEn": "A generated document as a tangible object, written live and versioned. Rendered from the original source at commit 1fc83e9f51d43fca1f48f3c561e9075681285c15.",
+      "sourceUrl": "https://r.assistant-ui.com/elements-artifact-card.json",
+      "source": {
+        "name": "assistant-ui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-assistant-ui-elements-artifact-card-params.jpg",
+      "tags": [
+        "elements-artifact-card",
+        "generating",
+        "words",
+        "elements",
+        "artifact",
+        "card"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-assistant-ui-elements-artifact-card-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.139Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://r.assistant-ui.com/elements-artifact-card.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE",
+          "evidenceUrls": [
+            "https://r.assistant-ui.com/elements-artifact-card.json",
+            "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-assistant-ui-elements-artifact-card-params",
+        "sourceId": "assistant-ui",
+        "detailUrl": "/data/component-code/items/reg-assistant-ui-elements-artifact-card-params.json",
+        "previewUrl": "/data/component-code/previews/reg-assistant-ui-elements-artifact-card-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-assistant-ui-elements-artifact-card-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "generating",
+            "prop": "elements-artifact-card.generating",
+            "type": "boolean",
+            "default": false,
+            "sourceDefault": false,
+            "control": "boolean",
+            "labelZh": "generating",
+            "labelEn": "generating"
+          },
+          {
+            "key": "words",
+            "prop": "elements-artifact-card.words",
+            "type": "number",
+            "default": 0,
+            "sourceDefault": 0,
+            "control": "number",
+            "labelZh": "words",
+            "labelEn": "words"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-assistant-ui-elements-link-preview-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "elements-link-preview（1 项参数）",
+      "nameEn": "elements-link-preview (1 controls)",
+      "descriptionZh": "上游 assistant-ui 的真实组件 elements-link-preview 在本地沙箱中的实际渲染；1 个可调参数：layout。",
+      "descriptionEn": "A returned URL unfurled into a card with enough context to decide whether to open it. Rendered from the original source at commit 1fc83e9f51d43fca1f48f3c561e9075681285c15.",
+      "sourceUrl": "https://r.assistant-ui.com/elements-link-preview.json",
+      "source": {
+        "name": "assistant-ui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-assistant-ui-elements-link-preview-params.jpg",
+      "tags": [
+        "elements-link-preview",
+        "layout",
+        "elements",
+        "link",
+        "preview"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-assistant-ui-elements-link-preview-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.139Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://r.assistant-ui.com/elements-link-preview.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE",
+          "evidenceUrls": [
+            "https://r.assistant-ui.com/elements-link-preview.json",
+            "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-assistant-ui-elements-link-preview-params",
+        "sourceId": "assistant-ui",
+        "detailUrl": "/data/component-code/items/reg-assistant-ui-elements-link-preview-params.json",
+        "previewUrl": "/data/component-code/previews/reg-assistant-ui-elements-link-preview-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-assistant-ui-elements-link-preview-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "layout",
+            "prop": "elements-link-preview.layout",
+            "type": "\"card\" | \"compact\"",
+            "default": "card",
+            "sourceDefault": "card",
+            "control": "select",
+            "options": [
+              "card",
+              "compact"
+            ],
+            "labelZh": "layout",
+            "labelEn": "layout"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-assistant-ui-elements-loading-state-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "elements-loading-state（1 项参数）",
+      "nameEn": "elements-loading-state (1 controls)",
+      "descriptionZh": "上游 assistant-ui 的真实组件 elements-loading-state 在本地沙箱中的实际渲染；1 个可调参数：variant。",
+      "descriptionEn": "A pixel matrix that keeps time while the model has nothing to show yet. Rendered from the original source at commit 1fc83e9f51d43fca1f48f3c561e9075681285c15.",
+      "sourceUrl": "https://r.assistant-ui.com/elements-loading-state.json",
+      "source": {
+        "name": "assistant-ui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-assistant-ui-elements-loading-state-params.jpg",
+      "tags": [
+        "elements-loading-state",
+        "variant",
+        "elements",
+        "loading",
+        "state"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-assistant-ui-elements-loading-state-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.139Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://r.assistant-ui.com/elements-loading-state.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE",
+          "evidenceUrls": [
+            "https://r.assistant-ui.com/elements-loading-state.json",
+            "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-assistant-ui-elements-loading-state-params",
+        "sourceId": "assistant-ui",
+        "detailUrl": "/data/component-code/items/reg-assistant-ui-elements-loading-state-params.json",
+        "previewUrl": "/data/component-code/previews/reg-assistant-ui-elements-loading-state-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-assistant-ui-elements-loading-state-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "variant",
+            "prop": "elements-loading-state.variant",
+            "type": "string",
+            "default": "dots",
+            "sourceDefault": "dots",
+            "control": "text",
+            "labelZh": "variant",
+            "labelEn": "variant"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-assistant-ui-elements-typing-indicator-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "text-effect",
+      "nameZh": "elements-typing-indicator（1 项参数）",
+      "nameEn": "elements-typing-indicator (1 controls)",
+      "descriptionZh": "上游 assistant-ui 的真实组件 elements-typing-indicator 在本地沙箱中的实际渲染；1 个可调参数：variant。",
+      "descriptionEn": "The classic three dots, tuned to read as presence rather than noise. Rendered from the original source at commit 1fc83e9f51d43fca1f48f3c561e9075681285c15.",
+      "sourceUrl": "https://r.assistant-ui.com/elements-typing-indicator.json",
+      "source": {
+        "name": "assistant-ui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-assistant-ui-elements-typing-indicator-params.jpg",
+      "tags": [
+        "elements-typing-indicator",
+        "variant",
+        "elements",
+        "typing",
+        "indicator"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-assistant-ui-elements-typing-indicator-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.139Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://r.assistant-ui.com/elements-typing-indicator.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE",
+          "evidenceUrls": [
+            "https://r.assistant-ui.com/elements-typing-indicator.json",
+            "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-assistant-ui-elements-typing-indicator-params",
+        "sourceId": "assistant-ui",
+        "detailUrl": "/data/component-code/items/reg-assistant-ui-elements-typing-indicator-params.json",
+        "previewUrl": "/data/component-code/previews/reg-assistant-ui-elements-typing-indicator-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-assistant-ui-elements-typing-indicator-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "variant",
+            "prop": "elements-typing-indicator.variant",
+            "type": "\"bubble\" | \"bare\"",
+            "default": "bubble",
+            "sourceDefault": "bubble",
+            "control": "select",
+            "options": [
+              "bubble",
+              "bare"
+            ],
+            "labelZh": "variant",
+            "labelEn": "variant"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-assistant-ui-elements-voice-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "other",
+      "nameZh": "elements-voice（3 项参数）",
+      "nameEn": "elements-voice (3 controls)",
+      "descriptionZh": "上游 assistant-ui 的真实组件 elements-voice 在本地沙箱中的实际渲染；3 个可调参数：state、volume、variant。",
+      "descriptionEn": "The props-driven voice orb: five session states and four palettes, no runtime required. Rendered from the original source at commit 1fc83e9f51d43fca1f48f3c561e9075681285c15.",
+      "sourceUrl": "https://r.assistant-ui.com/elements-voice.json",
+      "source": {
+        "name": "assistant-ui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-assistant-ui-elements-voice-params.jpg",
+      "tags": [
+        "elements-voice",
+        "state",
+        "volume",
+        "variant",
+        "elements",
+        "voice"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-assistant-ui-elements-voice-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.139Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://r.assistant-ui.com/elements-voice.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE",
+          "evidenceUrls": [
+            "https://r.assistant-ui.com/elements-voice.json",
+            "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-assistant-ui-elements-voice-params",
+        "sourceId": "assistant-ui",
+        "detailUrl": "/data/component-code/items/reg-assistant-ui-elements-voice-params.json",
+        "previewUrl": "/data/component-code/previews/reg-assistant-ui-elements-voice-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-assistant-ui-elements-voice-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "state",
+            "prop": "elements-voice.state",
+            "type": "string",
+            "default": "idle",
+            "sourceDefault": "idle",
+            "control": "text",
+            "labelZh": "state",
+            "labelEn": "state"
+          },
+          {
+            "key": "volume",
+            "prop": "elements-voice.volume",
+            "type": "number",
+            "default": 0,
+            "sourceDefault": 0,
+            "control": "number",
+            "labelZh": "volume",
+            "labelEn": "volume"
+          },
+          {
+            "key": "variant",
+            "prop": "elements-voice.variant",
+            "type": "string",
+            "default": "default",
+            "sourceDefault": "default",
+            "control": "text",
+            "labelZh": "variant",
+            "labelEn": "variant"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reg-assistant-ui-tooltip-icon-button-params",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "button",
+      "nameZh": "tooltip-icon-button（1 项参数）",
+      "nameEn": "tooltip-icon-button (1 controls)",
+      "descriptionZh": "上游 assistant-ui 的真实组件 tooltip-icon-button 在本地沙箱中的实际渲染；1 个可调参数：side。",
+      "descriptionEn": "Icon button with an accessible tooltip label, shared across the assistant UI components. Rendered from the original source at commit 1fc83e9f51d43fca1f48f3c561e9075681285c15.",
+      "sourceUrl": "https://r.assistant-ui.com/tooltip-icon-button.json",
+      "source": {
+        "name": "assistant-ui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/reg-assistant-ui-tooltip-icon-button-params.jpg",
+      "tags": [
+        "tooltip-icon-button",
+        "side",
+        "tooltip",
+        "icon",
+        "button"
+      ],
+      "offers": [
+        {
+          "id": "source-reg-assistant-ui-tooltip-icon-button-params",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.139Z",
+          "subject": "source-code",
+          "scope": "Archived upstream component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://r.assistant-ui.com/tooltip-icon-button.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE",
+          "evidenceUrls": [
+            "https://r.assistant-ui.com/tooltip-icon-button.json",
+            "https://github.com/assistant-ui/assistant-ui/blob/1fc83e9f51d43fca1f48f3c561e9075681285c15/LICENSE"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "reg-assistant-ui-tooltip-icon-button-params",
+        "sourceId": "assistant-ui",
+        "detailUrl": "/data/component-code/items/reg-assistant-ui-tooltip-icon-button-params.json",
+        "previewUrl": "/data/component-code/previews/reg-assistant-ui-tooltip-icon-button-params/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/reg-assistant-ui-tooltip-icon-button-params.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "side",
+            "prop": "tooltip-icon-button.side",
+            "type": "\"top\" | \"bottom\" | \"left\" | \"right\"",
+            "default": "bottom",
+            "sourceDefault": "bottom",
+            "control": "select",
+            "options": [
+              "top",
+              "bottom",
+              "left",
+              "right"
+            ],
+            "labelZh": "side",
+            "labelEn": "side"
           }
         ]
       }
