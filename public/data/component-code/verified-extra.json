@@ -68897,10 +68897,19 @@
           {
             "key": "buttonVariant",
             "prop": "calendar.buttonVariant",
-            "type": "string",
+            "type": "\"default\" | \"hover\" | \"destructive\" | \"outline\" | \"secondary\" | \"ghost\" | \"link\"",
             "default": "ghost",
             "sourceDefault": "ghost",
-            "control": "text",
+            "control": "select",
+            "options": [
+              "default",
+              "hover",
+              "destructive",
+              "outline",
+              "secondary",
+              "ghost",
+              "link"
+            ],
             "labelZh": "buttonVariant",
             "labelEn": "buttonVariant"
           }
@@ -70170,10 +70179,20 @@
           {
             "key": "variant",
             "prop": "badge.variant",
-            "type": "string",
+            "type": "\"default\" | \"secondary\" | \"destructive\" | \"focus-visible\" | \"dark\" | \"outline\" | \"ghost\" | \"link\"",
             "default": "default",
             "sourceDefault": "default",
-            "control": "text",
+            "control": "select",
+            "options": [
+              "default",
+              "secondary",
+              "destructive",
+              "focus-visible",
+              "dark",
+              "outline",
+              "ghost",
+              "link"
+            ],
             "labelZh": "variant",
             "labelEn": "variant"
           }
