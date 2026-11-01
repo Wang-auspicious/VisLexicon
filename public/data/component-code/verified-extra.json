@@ -259,6 +259,155 @@
           }
         ]
       }
+    },
+    {
+      "id": "registry-magicui-design-animated-grid-pattern-ebfe7efc",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "surface",
+      "componentType": "background-effect",
+      "nameZh": "动画网格",
+      "nameEn": "Animated grid pattern",
+      "descriptionZh": "网格中的方块依次显现，可调节网格尺寸、数量和动画时序。",
+      "descriptionEn": "Animated grid pattern with adjustable grid size, square count and animation timing.",
+      "sourceUrl": "https://magicui.design/docs/components/animated-grid-pattern",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/registry-magicui-design-animated-grid-pattern-ebfe7efc.jpg",
+      "tags": [
+        "网格",
+        "方块",
+        "动画",
+        "grid",
+        "squares",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-registry-magicui-design-animated-grid-pattern-ebfe7efc",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component and example files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/animated-grid-pattern.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/animated-grid-pattern.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "registry-magicui-design-animated-grid-pattern-ebfe7efc",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/registry-magicui-design-animated-grid-pattern-ebfe7efc.json",
+        "previewUrl": "/data/component-code/previews/registry-magicui-design-animated-grid-pattern-ebfe7efc/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/registry-magicui-design-animated-grid-pattern-ebfe7efc.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "width",
+            "prop": "AnimatedGridPattern.width",
+            "type": "number",
+            "default": 40,
+            "sourceDefault": 40,
+            "control": "number",
+            "labelZh": "格子宽度",
+            "labelEn": "Cell width"
+          },
+          {
+            "key": "height",
+            "prop": "AnimatedGridPattern.height",
+            "type": "number",
+            "default": 40,
+            "sourceDefault": 40,
+            "control": "number",
+            "labelZh": "格子高度",
+            "labelEn": "Cell height"
+          },
+          {
+            "key": "x",
+            "prop": "AnimatedGridPattern.x",
+            "type": "number",
+            "default": -1,
+            "sourceDefault": -1,
+            "control": "number",
+            "labelZh": "横向偏移",
+            "labelEn": "X offset"
+          },
+          {
+            "key": "y",
+            "prop": "AnimatedGridPattern.y",
+            "type": "number",
+            "default": -1,
+            "sourceDefault": -1,
+            "control": "number",
+            "labelZh": "纵向偏移",
+            "labelEn": "Y offset"
+          },
+          {
+            "key": "strokeDasharray",
+            "prop": "AnimatedGridPattern.strokeDasharray",
+            "type": "number",
+            "default": 0,
+            "sourceDefault": 0,
+            "control": "number",
+            "labelZh": "虚线间隔",
+            "labelEn": "Dash interval"
+          },
+          {
+            "key": "numSquares",
+            "prop": "AnimatedGridPattern.numSquares",
+            "type": "number",
+            "default": 30,
+            "sourceDefault": 30,
+            "control": "number",
+            "labelZh": "方块数量",
+            "labelEn": "Square count"
+          },
+          {
+            "key": "maxOpacity",
+            "prop": "AnimatedGridPattern.maxOpacity",
+            "type": "number",
+            "default": 0.1,
+            "sourceDefault": 0.1,
+            "control": "number",
+            "labelZh": "最大透明度",
+            "labelEn": "Maximum opacity"
+          },
+          {
+            "key": "duration",
+            "prop": "AnimatedGridPattern.duration",
+            "type": "number",
+            "default": 3,
+            "sourceDefault": 3,
+            "control": "number",
+            "labelZh": "动画时长",
+            "labelEn": "Duration"
+          },
+          {
+            "key": "repeatDelay",
+            "prop": "AnimatedGridPattern.repeatDelay",
+            "type": "number",
+            "default": 1,
+            "sourceDefault": 1,
+            "control": "number",
+            "labelZh": "重复间隔",
+            "labelEn": "Repeat delay"
+          }
+        ]
+      }
     }
   ]
 }
