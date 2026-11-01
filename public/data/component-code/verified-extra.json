@@ -488,6 +488,105 @@
           }
         ]
       }
+    },
+    {
+      "id": "registry-magicui-design-rainbow-button-5a6441fe",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "button",
+      "componentType": "button",
+      "nameZh": "彩虹按钮",
+      "nameEn": "Rainbow button",
+      "descriptionZh": "带彩色流动边缘的按钮，可切换外观、尺寸和禁用状态。",
+      "descriptionEn": "A button with an animated rainbow border, configurable variant, size and disabled state.",
+      "sourceUrl": "https://magicui.design/docs/components/rainbow-button",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/registry-magicui-design-rainbow-button-5a6441fe.jpg",
+      "tags": [
+        "按钮",
+        "彩虹",
+        "渐变",
+        "button",
+        "rainbow",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-registry-magicui-design-rainbow-button-5a6441fe",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component and example files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/rainbow-button.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/rainbow-button.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "registry-magicui-design-rainbow-button-5a6441fe",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/registry-magicui-design-rainbow-button-5a6441fe.json",
+        "previewUrl": "/data/component-code/previews/registry-magicui-design-rainbow-button-5a6441fe/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/registry-magicui-design-rainbow-button-5a6441fe.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "variant",
+            "prop": "RainbowButton.variant",
+            "type": "\"default\" | \"outline\"",
+            "default": "default",
+            "sourceDefault": "default",
+            "control": "select",
+            "options": [
+              "default",
+              "outline"
+            ],
+            "labelZh": "按钮样式",
+            "labelEn": "Variant"
+          },
+          {
+            "key": "size",
+            "prop": "RainbowButton.size",
+            "type": "\"default\" | \"sm\" | \"lg\" | \"icon\"",
+            "default": "default",
+            "sourceDefault": "default",
+            "control": "select",
+            "options": [
+              "default",
+              "sm",
+              "lg",
+              "icon"
+            ],
+            "labelZh": "按钮尺寸",
+            "labelEn": "Size"
+          },
+          {
+            "key": "disabled",
+            "prop": "RainbowButton.disabled",
+            "type": "boolean",
+            "default": false,
+            "sourceDefault": false,
+            "control": "boolean",
+            "labelZh": "禁用状态",
+            "labelEn": "Disabled"
+          }
+        ]
+      }
     }
   ]
 }

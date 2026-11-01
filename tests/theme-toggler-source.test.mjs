@@ -144,3 +144,36 @@ test('ripple button preserves upstream source and its two actual props', async (
   await readFile(path.join(root, item.preview.url.slice('/data/component-code/'.length)))
   await readFile(path.join(root, item.preview.posterUrl.slice('/data/component-code/'.length)))
 })
+
+test('rainbow button preserves upstream source and dependency notices', async () => {
+  const id = 'registry-magicui-design-rainbow-button-5a6441fe'
+  const [{ units }, item, scope, notices] = await Promise.all([
+    json(path.join(root, 'discovery.json')),
+    json(path.join(root, 'items', `${id}.json`)),
+    json('public/data/discovery/scopes/curation.json'),
+    json(path.join(root, 'shared', 'third-party.json')),
+  ])
+  assert.equal(units.filter(unit => unit.id === id).length, 1)
+  assert.equal(scope.units.filter(unit => unit.id === id).length, 1)
+  assert.equal(item.preview.status, 'verified')
+  assert.equal(item.license.spdx, 'MIT')
+  assert.match(item.license.text, /Copyright \(c\) Magic UI/)
+  assert.match(item.license.url, new RegExp(item.commit))
+  assert.ok(item.files.some(file => file.originalPath.endsWith('/rainbow-button-demo.tsx')))
+  for (const file of item.files) {
+    const bytes = Buffer.from(file.content, 'utf8')
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), file.sha256)
+    assert.equal(createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex'), file.gitBlob)
+    assert.match(file.sourceUrl, new RegExp(item.commit))
+  }
+  assert.deepEqual(item.controls.map(control => control.key), ['variant', 'size', 'disabled'])
+  const js = await readFile(path.join(root, 'previews', id, 'component.mjs'), 'utf8')
+  for (const [name, license] of [['@radix-ui/react-slot', 'MIT'], ['class-variance-authority', 'Apache-2.0']]) {
+    const notice = notices.find(n => n.package === name && n.module && js.includes(n.module))
+    assert.equal(notice?.license, license)
+    assert.ok(notice.text.length > 100)
+    await readFile(path.join(root, 'shared', notice.module))
+  }
+  assert.ok(notices.some(n => n.package === '@radix-ui/react-compose-refs' && n.license === 'MIT'))
+  await readFile(path.join(root, item.preview.posterUrl.slice('/data/component-code/'.length)))
+})
