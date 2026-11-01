@@ -52929,6 +52929,106 @@
       "unknowns": [
         "No claim that all component instances or interaction states have been captured."
       ]
+    },
+    {
+      "id": "registry-magicui-design-animated-theme-toggler-8aafddb4",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "input",
+      "componentType": "switch",
+      "nameZh": "主题切换",
+      "nameEn": "Animated theme toggler",
+      "descriptionZh": "点击切换亮暗主题；可调整展开形状、动画时长和起点。",
+      "descriptionEn": "Toggle the theme with configurable transition shape, duration, and origin.",
+      "sourceUrl": "https://magicui.design/docs/components/animated-theme-toggler",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/registry-magicui-design-animated-theme-toggler-8aafddb4.jpg",
+      "tags": [
+        "主题",
+        "切换",
+        "动效",
+        "theme",
+        "toggle",
+        "dark",
+        "light",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-registry-magicui-design-animated-theme-toggler-8aafddb4",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/animated-theme-toggler.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/animated-theme-toggler.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "registry-magicui-design-animated-theme-toggler-8aafddb4",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/registry-magicui-design-animated-theme-toggler-8aafddb4.json",
+        "previewUrl": "/data/component-code/previews/registry-magicui-design-animated-theme-toggler-8aafddb4/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/registry-magicui-design-animated-theme-toggler-8aafddb4.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "duration",
+            "prop": "AnimatedThemeToggler.duration",
+            "type": "number",
+            "default": 400,
+            "sourceDefault": 400,
+            "control": "number",
+            "labelZh": "动画时长",
+            "labelEn": "Duration"
+          },
+          {
+            "key": "fromCenter",
+            "prop": "AnimatedThemeToggler.fromCenter",
+            "type": "boolean",
+            "default": false,
+            "sourceDefault": false,
+            "control": "boolean",
+            "labelZh": "从中心展开",
+            "labelEn": "From center"
+          },
+          {
+            "key": "variant",
+            "prop": "AnimatedThemeToggler.variant",
+            "type": "\"circle\" | \"square\" | \"triangle\" | \"diamond\" | \"hexagon\" | \"rectangle\" | \"star\"",
+            "default": "circle",
+            "sourceDefault": "circle",
+            "control": "select",
+            "options": [
+              "circle",
+              "square",
+              "triangle",
+              "diamond",
+              "hexagon",
+              "rectangle",
+              "star"
+            ],
+            "labelZh": "展开形状",
+            "labelEn": "Shape"
+          }
+        ]
+      }
     }
   ]
 }

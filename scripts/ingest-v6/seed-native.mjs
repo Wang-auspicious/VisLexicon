@@ -253,6 +253,28 @@ if (!selectedId) {
     })
   }
 }
+// Verified source previews are exported as standalone, immutable assets. Keep
+// them across normal seed rebuilds; source without a real preview stays private.
+if (!selectedId) {
+  const extras = JSON.parse(await fs.readFile(path.join(root, 'verified-extra.json'), 'utf8').catch(error => {
+    if (error.code === 'ENOENT') return '{"version":1,"units":[]}'
+    throw error
+  }))
+  if (extras.version !== 1 || !Array.isArray(extras.units)) throw Error('Invalid verified source extras')
+  for (const extra of extras.units) {
+    if (!/^[a-zA-Z0-9_.-]+$/.test(extra.id ?? '') || extra.codeResource?.previewStatus !== 'verified' || extra.previewKind !== 'image' || !extra.previewUrl?.startsWith('/data/component-code/')) throw Error('Invalid verified source unit')
+    if (units.some(unit => unit.id === extra.id)) throw Error(`Duplicate verified source unit: ${extra.id}`)
+    const detail = JSON.parse(await fs.readFile(path.join(root, 'items', `${extra.id}.json`), 'utf8'))
+    if (detail.id !== extra.id || detail.preview?.status !== 'verified' || !detail.license?.redistributable || !detail.files?.length) throw Error(`Invalid verified source detail: ${extra.id}`)
+    for (const url of [extra.previewUrl, extra.codeResource.previewUrl]) {
+      if (!url?.startsWith('/data/component-code/') || url.includes('..')) throw Error(`Invalid verified source asset: ${extra.id}`)
+      await fs.access(path.join(root, url.slice('/data/component-code/'.length)))
+    }
+    units.push(extra)
+    dispositions.push({ fixture: extra.id, unitId: extra.id, disposition: 'live-source-fixture' })
+  }
+}
+
 const discoveryPath = path.join(root, 'discovery.json')
 const manifestPath = path.join(root, 'sample-manifest.json')
 if (selectedId) {
