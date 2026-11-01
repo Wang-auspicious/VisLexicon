@@ -1,0 +1,12 @@
+@layer theme, base, components, utilities;
+
+:root{}
+@layer utilities{}
+
+@keyframes rippling{0%{opacity:1;}
+100%{transform:scale(2);
+opacity:0;}}
+:root{--animate-rippling:rippling var(--duration) ease-out;}
+@layer utilities{.animate-rippling{animation:rippling var(--duration) ease-out}
+.before\:animate-rippling::before{animation:rippling var(--duration) ease-out}
+.after\:animate-rippling::after{animation:rippling var(--duration) ease-out}}

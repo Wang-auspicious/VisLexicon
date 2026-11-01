@@ -1,0 +1,11 @@
+@layer theme, base, components, utilities;
+
+:root{}
+@layer utilities{}
+
+@keyframes orbit{0%{transform:rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));}
+100%{transform:rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg));}}
+:root{--animate-orbit:orbit calc(var(--duration)*1s) linear infinite;}
+@layer utilities{.animate-orbit{animation:orbit calc(var(--duration)*1s) linear infinite}
+.before\:animate-orbit::before{animation:orbit calc(var(--duration)*1s) linear infinite}
+.after\:animate-orbit::after{animation:orbit calc(var(--duration)*1s) linear infinite}}

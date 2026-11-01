@@ -1,0 +1,11 @@
+@layer theme, base, components, utilities;
+
+:root{}
+@layer utilities{}
+
+@keyframes line-shadow{0%{background-position:0 0;}
+100%{background-position:100% -100%;}}
+:root{--animate-line-shadow:line-shadow 15s linear infinite;}
+@layer utilities{.animate-line-shadow{animation:line-shadow 15s linear infinite}
+.before\:animate-line-shadow::before{animation:line-shadow 15s linear infinite}
+.after\:animate-line-shadow::after{animation:line-shadow 15s linear infinite}}

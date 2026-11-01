@@ -1,0 +1,7 @@
+@layer theme, base, components, utilities;
+@keyframes background-position-spin{0%{background-position:top center;}
+100%{background-position:bottom center;}}
+:root{--animate-background-position-spin:background-position-spin 3000ms infinite alternate;}
+@layer utilities{.animate-background-position-spin{animation:background-position-spin 3000ms infinite alternate}
+.before\:animate-background-position-spin::before{animation:background-position-spin 3000ms infinite alternate}
+.after\:animate-background-position-spin::after{animation:background-position-spin 3000ms infinite alternate}}

@@ -1,0 +1,11 @@
+@layer theme, base, components, utilities;
+
+:root{}
+@layer utilities{}
+
+@keyframes shiny-text{0%, 90%, 100%{background-position:calc(-100% - var(--shiny-width)) 0;}
+30%, 60%{background-position:calc(100% + var(--shiny-width)) 0;}}
+:root{--animate-shiny-text:shiny-text 8s infinite;}
+@layer utilities{.animate-shiny-text{animation:shiny-text 8s infinite}
+.before\:animate-shiny-text::before{animation:shiny-text 8s infinite}
+.after\:animate-shiny-text::after{animation:shiny-text 8s infinite}}

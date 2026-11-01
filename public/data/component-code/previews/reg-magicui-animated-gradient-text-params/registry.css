@@ -1,0 +1,6 @@
+@layer theme, base, components, utilities;
+@keyframes gradient{to{background-position:var(--bg-size, 300%) 0;}}
+:root{--animate-gradient:gradient 8s linear infinite;}
+@layer utilities{.animate-gradient{animation:gradient 8s linear infinite}
+.before\:animate-gradient::before{animation:gradient 8s linear infinite}
+.after\:animate-gradient::after{animation:gradient 8s linear infinite}}
