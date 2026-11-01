@@ -205,3 +205,29 @@ test('marquee preserves upstream source and the CSS cascade for real controls', 
   assert.match(css, /@layer utilities\{\.animate-marquee/)
   await readFile(path.join(root, item.preview.posterUrl.slice('/data/component-code/'.length)))
 })
+
+test('dual-row marquee retains original identity and verified source', async () => {
+  const id = 'v4-magic-ui-bfbe2cc3a480'
+  const [{ units }, item, scope] = await Promise.all([
+    json(path.join(root, 'discovery.json')),
+    json(path.join(root, 'items', `${id}.json`)),
+    json('public/data/discovery/scopes/curation.json'),
+  ])
+  assert.equal(units.filter(unit => unit.id === id).length, 1)
+  assert.equal(scope.units.filter(unit => unit.id === id).length, 1)
+  assert.equal(item.preview.status, 'verified')
+  assert.equal(item.license.spdx, 'MIT')
+  assert.match(item.license.text, /Copyright \(c\) Magic UI/)
+  assert.match(item.license.url, new RegExp(item.commit))
+  assert.ok(item.files.some(file => file.originalPath.endsWith('/marquee-demo.tsx')))
+  for (const file of item.files) {
+    const bytes = Buffer.from(file.content, 'utf8')
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), file.sha256)
+    assert.equal(createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex'), file.gitBlob)
+    assert.match(file.sourceUrl, new RegExp(item.commit))
+  }
+  assert.deepEqual(item.controls.map(control => control.key), ['reverse', 'pauseOnHover', 'repeat', 'duration'])
+  assert.equal(item.controls.find(control => control.key === 'duration').prop, 'Marquee.style.--duration')
+  await readFile(path.join(root, item.preview.url.slice('/data/component-code/'.length)))
+  await readFile(path.join(root, item.preview.posterUrl.slice('/data/component-code/'.length)))
+})

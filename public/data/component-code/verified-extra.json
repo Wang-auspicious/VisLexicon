@@ -688,6 +688,109 @@
           }
         ]
       }
+    },
+    {
+      "id": "v4-magic-ui-bfbe2cc3a480",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "layout",
+      "componentType": "marquee",
+      "nameZh": "双行反向滚动评价墙",
+      "nameEn": "Dual-Row Reverse Marquee Wall",
+      "descriptionZh": "两行评论反向滚动，可调整方向、悬停暂停、重复次数和动画时长。",
+      "descriptionEn": "Two rows of example reviews scroll in opposite directions, with adjustable direction, hover pause, repetition and duration.",
+      "sourceUrl": "https://magicui.design/docs/components/marquee",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/v4-magic-ui-bfbe2cc3a480.jpg",
+      "tags": [
+        "跑马灯",
+        "双行",
+        "评论",
+        "marquee",
+        "testimonials",
+        "scroll",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-v4-magic-ui-bfbe2cc3a480",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component and example files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/marquee.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/marquee.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "v4-magic-ui-bfbe2cc3a480",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/v4-magic-ui-bfbe2cc3a480.json",
+        "previewUrl": "/data/component-code/previews/v4-magic-ui-bfbe2cc3a480/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/v4-magic-ui-bfbe2cc3a480.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "reverse",
+            "prop": "Marquee.reverse",
+            "type": "boolean",
+            "default": false,
+            "sourceDefault": false,
+            "control": "boolean",
+            "labelZh": "交换滚动方向",
+            "labelEn": "Reverse directions"
+          },
+          {
+            "key": "pauseOnHover",
+            "prop": "Marquee.pauseOnHover",
+            "type": "boolean",
+            "default": true,
+            "sourceDefault": true,
+            "control": "boolean",
+            "labelZh": "悬停暂停",
+            "labelEn": "Pause on hover"
+          },
+          {
+            "key": "repeat",
+            "prop": "Marquee.repeat",
+            "type": "number",
+            "default": 4,
+            "sourceDefault": 4,
+            "control": "number",
+            "labelZh": "重复次数",
+            "labelEn": "Repeat",
+            "min": 0,
+            "step": 1
+          },
+          {
+            "key": "duration",
+            "prop": "Marquee.style.--duration",
+            "type": "string",
+            "default": "20s",
+            "sourceDefault": "20s",
+            "control": "text",
+            "labelZh": "动画时长",
+            "labelEn": "Duration",
+            "doc": "CSS duration used by both original marquee rows, for example 20s."
+          }
+        ]
+      }
     }
   ]
 }
