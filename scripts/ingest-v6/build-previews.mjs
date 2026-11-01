@@ -328,7 +328,7 @@ export async function buildPreviews({ catalog, out = PUBLIC, ledgerName = 'build
         const css = closure.map(c => {
           const vars = { ...c.cssVars?.theme, ...c.cssVars?.light }
           const declarations = Object.entries(vars).filter(([, v]) => typeof v === 'string').map(([k,v]) => `--${k}:${v};`).join('')
-          const animations = Object.entries(c.cssVars?.theme ?? {}).filter(([k,v]) => k.startsWith('animate-') && typeof v === 'string').map(([k]) => `.${k}{animation:var(--${k})}`).join('\n')
+          const animations = Object.entries(c.cssVars?.theme ?? {}).filter(([k,v]) => k.startsWith('animate-') && typeof v === 'string').map(([k]) => `.${k}{animation:var(--${k})}\n.before\\:${k}::before{animation:var(--${k})}\n.after\\:${k}::after{animation:var(--${k})}`).join('\n')
           const nested = Object.fromEntries(Object.entries(c.cssVars?.theme ?? {}).filter(([,v]) => v && typeof v === 'object'))
           return cssRules(c.css) + '\n:root{' + declarations + '}\n' + animations + '\n' + cssRules(nested)
         }).join('\n')

@@ -1185,6 +1185,86 @@
           }
         ]
       }
+    },
+    {
+      "id": "v4-magic-ui-9616e077cfa4",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "text-effect",
+      "nameZh": "斜线阴影描边文字",
+      "nameEn": "Diagonal Line-Shadow Text",
+      "descriptionZh": "示例文字带有动态斜线阴影，可更改文字和阴影颜色。",
+      "descriptionEn": "Text with an animated diagonal line shadow and adjustable content and color.",
+      "sourceUrl": "https://magicui.design/docs/components/line-shadow-text",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/v4-magic-ui-9616e077cfa4.jpg",
+      "tags": [
+        "文字",
+        "斜线",
+        "阴影",
+        "text",
+        "line",
+        "shadow",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-v4-magic-ui-9616e077cfa4",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component and example files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/line-shadow-text.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/line-shadow-text.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "v4-magic-ui-9616e077cfa4",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/v4-magic-ui-9616e077cfa4.json",
+        "previewUrl": "/data/component-code/previews/v4-magic-ui-9616e077cfa4/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/v4-magic-ui-9616e077cfa4.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "text",
+            "prop": "LineShadowText.children",
+            "type": "string",
+            "default": "Fast",
+            "sourceDefault": "Fast",
+            "control": "text",
+            "labelZh": "文字内容",
+            "labelEn": "Text"
+          },
+          {
+            "key": "shadowColor",
+            "prop": "LineShadowText.shadowColor",
+            "type": "string",
+            "default": "#000000",
+            "sourceDefault": "#000000",
+            "control": "color",
+            "labelZh": "阴影颜色",
+            "labelEn": "Shadow color"
+          }
+        ]
+      }
     }
   ]
 }

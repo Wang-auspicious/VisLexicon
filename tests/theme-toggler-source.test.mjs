@@ -340,3 +340,31 @@ test('captured typing animation keeps its identity and original source', async (
   await readFile(path.join(root, item.preview.url.slice('/data/component-code/'.length)))
   await readFile(path.join(root, item.preview.posterUrl.slice('/data/component-code/'.length)))
 })
+
+test('captured line shadow keeps its identity and original source', async () => {
+  const id = 'v4-magic-ui-9616e077cfa4'
+  const [{ units }, item, scope] = await Promise.all([
+    json(path.join(root, 'discovery.json')),
+    json(path.join(root, 'items', `${id}.json`)),
+    json('public/data/discovery/scopes/curation.json'),
+  ])
+  assert.equal(units.filter(unit => unit.id === id).length, 1)
+  assert.equal(scope.units.filter(unit => unit.id === id).length, 0)
+  const { loadDiscoveryIndex } = await import('../server/discovery-index.mjs')
+  const merged = await loadDiscoveryIndex(process.cwd(), 'curation')
+  assert.equal(merged.units.filter(unit => unit.id === id).length, 1)
+  assert.equal(item.preview.status, 'verified')
+  assert.equal(item.license.spdx, 'MIT')
+  assert.match(item.license.text, /Copyright \(c\) Magic UI/)
+  assert.match(item.license.url, new RegExp(item.commit))
+  assert.ok(item.files.some(file => file.originalPath.endsWith('/line-shadow-text-demo.tsx')))
+  for (const file of item.files) {
+    const bytes = Buffer.from(file.content, 'utf8')
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), file.sha256)
+    assert.equal(createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex'), file.gitBlob)
+    assert.match(file.sourceUrl, new RegExp(item.commit))
+  }
+  assert.deepEqual(item.controls.map(control => control.key), ['text', 'shadowColor'])
+  await readFile(path.join(root, item.preview.url.slice('/data/component-code/'.length)))
+  await readFile(path.join(root, item.preview.posterUrl.slice('/data/component-code/'.length)))
+})
