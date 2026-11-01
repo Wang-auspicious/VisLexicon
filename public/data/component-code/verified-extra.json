@@ -1052,6 +1052,139 @@
           }
         ]
       }
+    },
+    {
+      "id": "v4-magic-ui-0db70da7b778",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "text-effect",
+      "nameZh": "逐字打字动画文字",
+      "nameEn": "Typing Animation Text",
+      "descriptionZh": "逐字显示原示例文字，可调整速度、延迟与光标。",
+      "descriptionEn": "Types the original example text with adjustable timing and cursor.",
+      "sourceUrl": "https://magicui.design/docs/components/typing-animation",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/v4-magic-ui-0db70da7b778.jpg",
+      "tags": [
+        "打字",
+        "文字",
+        "光标",
+        "typing",
+        "text",
+        "cursor",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-v4-magic-ui-0db70da7b778",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component and example files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/typing-animation.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/typing-animation.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "v4-magic-ui-0db70da7b778",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/v4-magic-ui-0db70da7b778.json",
+        "previewUrl": "/data/component-code/previews/v4-magic-ui-0db70da7b778/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/v4-magic-ui-0db70da7b778.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "duration",
+            "prop": "TypingAnimation.duration",
+            "type": "number",
+            "default": 100,
+            "sourceDefault": 100,
+            "control": "number",
+            "kind": "slider",
+            "min": 20,
+            "max": 500,
+            "step": 10,
+            "labelZh": "打字间隔（毫秒）",
+            "labelEn": "Typing interval (ms)"
+          },
+          {
+            "key": "delay",
+            "prop": "TypingAnimation.delay",
+            "type": "number",
+            "default": 0,
+            "sourceDefault": 0,
+            "control": "number",
+            "kind": "slider",
+            "min": 0,
+            "max": 3000,
+            "step": 100,
+            "labelZh": "开始延迟（毫秒）",
+            "labelEn": "Start delay (ms)"
+          },
+          {
+            "key": "loop",
+            "prop": "TypingAnimation.loop",
+            "type": "boolean",
+            "default": false,
+            "sourceDefault": false,
+            "control": "boolean",
+            "labelZh": "循环",
+            "labelEn": "Loop"
+          },
+          {
+            "key": "showCursor",
+            "prop": "TypingAnimation.showCursor",
+            "type": "boolean",
+            "default": true,
+            "sourceDefault": true,
+            "control": "boolean",
+            "labelZh": "显示光标",
+            "labelEn": "Show cursor"
+          },
+          {
+            "key": "blinkCursor",
+            "prop": "TypingAnimation.blinkCursor",
+            "type": "boolean",
+            "default": true,
+            "sourceDefault": true,
+            "control": "boolean",
+            "labelZh": "光标闪烁",
+            "labelEn": "Blink cursor"
+          },
+          {
+            "key": "cursorStyle",
+            "prop": "TypingAnimation.cursorStyle",
+            "type": "\"line\" | \"block\" | \"underscore\"",
+            "default": "line",
+            "sourceDefault": "line",
+            "control": "select",
+            "options": [
+              "line",
+              "block",
+              "underscore"
+            ],
+            "labelZh": "光标样式",
+            "labelEn": "Cursor style"
+          }
+        ]
+      }
     }
   ]
 }
