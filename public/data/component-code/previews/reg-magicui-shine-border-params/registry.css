@@ -1,0 +1,8 @@
+@layer theme, base, components, utilities;
+@keyframes shine{0%{background-position:0% 0%;}
+50%{background-position:100% 100%;}
+to{background-position:0% 0%;}}
+:root{--animate-shine:shine var(--duration) infinite linear;}
+@layer utilities{.animate-shine{animation:shine var(--duration) infinite linear}
+.before\:animate-shine::before{animation:shine var(--duration) infinite linear}
+.after\:animate-shine::after{animation:shine var(--duration) infinite linear}}
