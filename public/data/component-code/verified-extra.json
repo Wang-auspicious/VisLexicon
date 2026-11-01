@@ -891,6 +891,97 @@
           }
         ]
       }
+    },
+    {
+      "id": "v4-magic-ui-5ff58db41885",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "badge",
+      "nameZh": "渐变流光胶囊徽章",
+      "nameEn": "Animated Gradient Pill Badge",
+      "descriptionZh": "胶囊徽章内的文字呈流动渐变，可调节渐变跨度及两端颜色。",
+      "descriptionEn": "A pill badge with animated gradient text and adjustable span and endpoint colors.",
+      "sourceUrl": "https://magicui.design/docs/components/animated-gradient-text",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/v4-magic-ui-5ff58db41885.jpg",
+      "tags": [
+        "徽章",
+        "胶囊",
+        "渐变",
+        "badge",
+        "pill",
+        "gradient",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-v4-magic-ui-5ff58db41885",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component and example files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/animated-gradient-text.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/animated-gradient-text.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "v4-magic-ui-5ff58db41885",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/v4-magic-ui-5ff58db41885.json",
+        "previewUrl": "/data/component-code/previews/v4-magic-ui-5ff58db41885/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/v4-magic-ui-5ff58db41885.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "speed",
+            "prop": "AnimatedGradientText.speed",
+            "type": "number",
+            "default": 1,
+            "sourceDefault": 1,
+            "control": "number",
+            "labelZh": "渐变跨度",
+            "labelEn": "Gradient span",
+            "doc": "Sets the gradient background size to speed × 300%; the upstream animation duration remains 8s."
+          },
+          {
+            "key": "colorFrom",
+            "prop": "AnimatedGradientText.colorFrom",
+            "type": "string",
+            "default": "#ffaa40",
+            "sourceDefault": "#ffaa40",
+            "control": "color",
+            "labelZh": "起始颜色",
+            "labelEn": "Start color"
+          },
+          {
+            "key": "colorTo",
+            "prop": "AnimatedGradientText.colorTo",
+            "type": "string",
+            "default": "#9c40ff",
+            "sourceDefault": "#9c40ff",
+            "control": "color",
+            "labelZh": "结束颜色",
+            "labelEn": "End color"
+          }
+        ]
+      }
     }
   ]
 }
