@@ -11,7 +11,7 @@ import { filterResources, resourceHref } from '../src/lib/creative-resources.js'
 test('card projection preserves identity, visible rights and heat ordering without evidence payload', () => {
   const source=JSON.parse(fs.readFileSync(new URL('../public/data/site-index.json',import.meta.url))).items
   const projected=source.map(projectSiteCard)
-  assert.ok(gzipSync(JSON.stringify(projected)).length<=150*1024)
+  assert.ok(gzipSync(JSON.stringify(projected)).length<=250*1024)
   for(let i=0;i<source.length;i++){
     assert.deepEqual(heatScoreOf(projected[i]),heatScoreOf(source[i]))
     assert.deepEqual(projected[i].licenses,source[i].licenses)

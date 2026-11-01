@@ -70,6 +70,189 @@ for (const entry of allEntries) {
   await fs.writeFile(path.join(root, 'items', item.id + '.json'), JSON.stringify(item))
   units.push({ id: item.id, kind: 'website-component', scope: 'curation', theme: entry.category, componentType: componentTypeFor({ name: entry.id, category: entry.category }), nameZh: entry.zh, nameEn: entry.en, descriptionZh: entry.summaryZh, descriptionEn: entry.summaryEn, sourceUrl: item.sourceUrl, source: { name: entry.source.site }, previewKind: 'image', previewUrl: poster, tags: entry.tags, offers: item.offers, verification: entry.verification ?? (live ? 'source-demo-fixture' : 'existing-source-screenshot'), codeResource: { id: item.id, sourceId: entry.source.repo ?? new URL(item.sourceUrl).hostname, detailUrl: `/data/component-code/items/${item.id}.json`, previewUrl: preview.url, previewStatus: preview.status, sourceAvailable: files.length > 0, controls: entry.controls, poster, excerpt: files[0]?.content.slice(0, 500), license: license.spdx } })
 }
+
+function classifyComponent(s, r) {
+  const text = [
+    s.name, s.primaryCategory, s.subcategory,
+    ...(s.facets?.deliverables || []),
+    ...(s.facets?.technologies || []),
+    ...(s.facets?.media || []),
+    s.takeawayZh, s.descriptionZh,
+    r.pages?.[2]?.title, r.pages?.[2]?.selectionRationale,
+    ...(r.curation?.atlasTerms || []).map(t => `${t.termZh} ${t.termEn} ${t.termId}`)
+  ].filter(Boolean).join(' ').toLowerCase()
+
+  let theme = 'content', componentType = 'component'
+  if (/chart|图表|visualization|viz|plot|echarts|g2|d3/i.test(text)) { theme = 'data'; componentType = 'chart' }
+  else if (/table|表格|sheet|grid-layout|matrix/i.test(text)) { theme = 'data'; componentType = 'table' }
+  else if (/button|按钮|cta/i.test(text)) { theme = 'button'; componentType = 'button' }
+  else if (/date.?picker|日历|calendar/i.test(text)) { theme = 'input'; componentType = 'date-picker' }
+  else if (/command|menu|navbar|nav|navigation|dock|tabs|标签页|导航|菜单/i.test(text)) { theme = 'nav'; componentType = /tabs|标签/i.test(text) ? 'tabs' : /nav|dock|header/i.test(text) ? 'navbar' : 'menu' }
+  else if (/input|select|form|switch|checkbox|radio|combobox|表单|输入/i.test(text)) { theme = 'input'; componentType = 'input' }
+  else if (/modal|dialog|drawer|tooltip|toast|alert|spinner|loader|弹窗|提示|加载/i.test(text)) { theme = 'feedback'; componentType = /modal|dialog/i.test(text) ? 'modal' : /tooltip/i.test(text) ? 'tooltip' : /toast|alert/i.test(text) ? 'toast' : 'loader' }
+  else if (/carousel|swiper|slider|轮播|滑块/i.test(text)) { theme = 'data'; componentType = /slider/i.test(text) ? 'slider' : 'carousel' }
+  else if (/3d|webgl|canvas|three|particle|background|mesh|背景|粒子/i.test(text)) { theme = 'surface'; componentType = 'background-effect' }
+  else if (/layout|panel|masonry|布局/i.test(text)) { theme = 'layout'; componentType = 'layout' }
+  else if (/hero|landing|section|落地页|区块/i.test(text)) { theme = 'section'; componentType = 'feature-section' }
+
+  return { theme, componentType }
+}
+
+function buildReconstructionPrompt(s, r, proofPage) {
+  const tech = (s.facets?.technologies || []).slice(0, 4).join(', ') || 'React, Tailwind CSS, TypeScript'
+  const roleDesc = proofPage?.selectionRationale || s.takeawayZh || s.descriptionZh
+  const note = r.editorial?.noteZh || ''
+  const terms = (r.curation?.atlasTerms || []).map(t => t.termZh || t.termEn).filter(Boolean).join('、')
+  return `Build a high-quality, production-ready component inspired by ${s.name} (${s.homepage}).
+Technology stack: ${tech}.
+Component specification: ${roleDesc}
+${terms ? `Key visual & interaction patterns: ${terms}.` : ''}
+${note ? `Visual details from source observation: ${note}` : ''}
+Ensure clean semantic markup, fully accessible ARIA roles and keyboard interactions, responsive layout across desktop and mobile, crisp typography, and fluid state transitions (default, hover, active, focus).`.trim()
+}
+
+function extractSiteOffers(site, detail) {
+  const checkedAt = site.checkedAt || detail.official?.checkedAt || new Date().toISOString()
+  if (Array.isArray(detail.offers) && detail.offers.length > 0) return detail.offers
+  const facts = (detail.facts || []).filter(f => Number(f.confidence) >= .8 && f.sourceUrl && f.evidence)
+  const pricing = facts.find(f => f.field === 'pricing')
+  const repo = facts.find(f => f.field === 'repository' && /^https?:\/\//.test(f.value))
+  const license = facts.find(f => f.field === 'license')
+  const priceText = pricing ? `${pricing.value} ${pricing.evidence}` : ''
+  const free = Boolean(pricing) && /free|免费|open.source|开源/iu.test(priceText) && !/not free|不免费|并非免费/iu.test(priceText) && (site.access || []).some(x => ['free', 'freemium', 'open-source'].includes(x))
+  const mixed = /paid|付费|另售|收费|freemium/iu.test(String(pricing?.value || '').replace(/(?:no|without|not)\s+(?:paid|payment|paywall)|未见(?:付费|收费)墙|没有(?:付费|收费)/giu, ''))
+  const permissive = Boolean(license) && /^(MIT|Apache[- ]?2(?:\.0)?|BSD(?:[- ]\d[- ]Clause)?|ISC|CC0(?:[- ]1\.0)?)$/iu.test(String(license.value).trim()) && !/commons clause|non.commercial|禁止商用|仅限个人/iu.test(license.evidence)
+  const sourceAvailable = Boolean(repo)
+  const sourceCost = free && sourceAvailable && permissive ? 'free' : 'unknown'
+  if (!pricing && !repo && !license) return []
+  return [{
+    id: `${site.entryId}/reviewed-offer`,
+    verified: true,
+    checkedAt,
+    access: free ? (mixed ? 'partial-free' : 'free') : 'unknown',
+    sourceAvailable,
+    sourceUrl: repo?.value || null,
+    sourceCost,
+    openSource: sourceAvailable && permissive,
+    commercialUse: sourceAvailable && permissive,
+    license: license?.value || site.license || null,
+    licenseUrl: license?.sourceUrl || null,
+    scope: pricing?.value || license?.evidence || repo?.evidence,
+    evidenceUrls: [...new Set([pricing?.sourceUrl, repo?.sourceUrl, license?.sourceUrl].filter(Boolean))]
+  }]
+}
+
+if (!selectedId) {
+  const siteIndex = JSON.parse(await fs.readFile(path.join(FRONT, 'public/data/site-index.json'), 'utf8').catch(() => '{"items":[]}'))
+  const seededIds = new Set(units.map(u => u.id))
+  for (const s of siteIndex.items || []) {
+    const unitId = `v4-${s.entryId}`
+    if (seededIds.has(unitId) || seededIds.has(`seed-${s.entryId}`)) continue
+
+    let r = {}
+    try { r = JSON.parse(await fs.readFile(path.join(FRONT, 'public/r', `${s.entryId}.json`), 'utf8')) } catch {}
+    const pages = r.pages || []
+    const proofPage = pages.find(p => p.role === 'proof') || pages[2] || pages[0]
+    const breadthPage = pages.find(p => p.role === 'breadth') || pages[1] || pages[0]
+    const identityPage = pages.find(p => p.role === 'identity') || pages[0]
+
+    const norm = src => src ? src.replace(/^https?:\/\/vislexicon\.com\//, '').replace(/^\/?/, '/') : ''
+    const proofShot = norm(proofPage?.shot?.src || s.shots?.find(x => x.src?.includes('proof'))?.src || s.shot?.src)
+    const breadthShot = norm(breadthPage?.shot?.src || s.shots?.find(x => x.src?.includes('breadth'))?.src || proofShot)
+    const identityShot = norm(identityPage?.shot?.src || s.shots?.find(x => x.src?.includes('identity'))?.src || s.shot?.src)
+
+    const classification = classifyComponent(s, r)
+    const theme = classification.theme
+    const compType = classification.componentType
+
+    const primaryTerm = r.curation?.atlasTerms?.[0]
+    const cleanProofTitle = (proofPage?.title || '').replace(/\s*[-|·—–].*$/, '').trim()
+    const nameZh = primaryTerm?.termZh ? `${s.name} · ${primaryTerm.termZh}` : `${s.name} · ${s.takeawayZh ? s.takeawayZh.replace(/，.*$/, '').slice(0, 14) : '核心组件'}`
+    const nameEn = primaryTerm?.termEn ? `${s.name} · ${primaryTerm.termEn}` : (cleanProofTitle.length > 2 && cleanProofTitle.length < 35 ? `${s.name} · ${cleanProofTitle}` : `${s.name} Component`)
+
+    const descZh = proofPage?.selectionRationale ? `${proofPage.selectionRationale} ${s.descriptionZh || ''}`.trim() : (s.descriptionZh || '')
+    const descEn = s.descriptionEn || s.descriptionZh || ''
+
+    const prompt = buildReconstructionPrompt(s, r, proofPage)
+    const offers = extractSiteOffers(s, r)
+    let host = ''
+    try { host = new URL(s.homepage).hostname } catch { host = s.entryId }
+
+    const item = {
+      id: unitId,
+      name: nameEn,
+      title: { zh: nameZh, en: nameEn },
+      description: { zh: descZh, en: descEn },
+      sourceName: s.name,
+      sourceUrl: proofPage?.sourceUrl || s.homepage,
+      source: { site: s.name, home: s.homepage, page: proofPage?.sourceUrl || s.homepage, license: s.license || null },
+      lane: 'screenshot',
+      license: { spdx: s.license || null, redistributable: false },
+      files: [],
+      controls: [],
+      preview: { status: 'screenshot' },
+      frames: [
+        { kind: 'default', src: proofShot },
+        { kind: 'hover', src: breadthShot },
+        { kind: 'frame2', src: identityShot }
+      ],
+      poster: proofShot,
+      reconstructionPrompt: prompt,
+      status: 'screenshot',
+      offers
+    }
+    await fs.writeFile(path.join(root, 'items', `${item.id}.json`), JSON.stringify(item))
+
+    const tags = [...new Set([
+      s.primaryCategory,
+      s.subcategory,
+      theme,
+      compType,
+      ...(s.facets?.deliverables || []),
+      ...(s.facets?.technologies || []),
+      ...(s.facets?.media || []),
+      s.name
+    ].filter(Boolean))]
+
+    units.push({
+      id: item.id,
+      kind: 'website-component',
+      scope: 'curation',
+      theme,
+      componentType: compType,
+      nameZh,
+      nameEn,
+      descriptionZh: descZh,
+      descriptionEn: descEn,
+      sectionsZh: [{ label: '说明', text: descZh }, ...(s.takeawayZh ? [{ label: '适合', text: s.takeawayZh }] : [])],
+      sectionsEn: [{ label: 'About', text: descEn }],
+      sourceUrl: item.sourceUrl,
+      source: { name: s.name },
+      previewKind: 'image',
+      previewUrl: proofShot,
+      tags,
+      offers,
+      verification: 'existing-source-screenshot',
+      codeResource: {
+        id: item.id,
+        sourceId: host,
+        detailUrl: `/data/component-code/items/${item.id}.json`,
+        previewStatus: 'screenshot',
+        sourceAvailable: false,
+        controls: [],
+        poster: proofShot,
+        license: s.license || null
+      }
+    })
+
+    dispositions.push({
+      fixture: s.entryId,
+      unitId,
+      disposition: 'portable-captured-fixture',
+      basis: 'Bundled original screenshot, source URL and portable sample identity retained; no private capture archive required'
+    })
+  }
+}
 const discoveryPath = path.join(root, 'discovery.json')
 const manifestPath = path.join(root, 'sample-manifest.json')
 if (selectedId) {
