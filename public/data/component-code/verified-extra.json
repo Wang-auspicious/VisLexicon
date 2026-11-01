@@ -100,6 +100,96 @@
           }
         ]
       }
+    },
+    {
+      "id": "registry-magicui-design-animated-gradient-text-773676d2",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "text-effect",
+      "nameZh": "动态渐变文字",
+      "nameEn": "Animated gradient text",
+      "descriptionZh": "文字显示流动渐变，可调节渐变跨度及两端颜色。",
+      "descriptionEn": "Animated gradient text with adjustable span and endpoint colors.",
+      "sourceUrl": "https://magicui.design/docs/components/animated-gradient-text",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/registry-magicui-design-animated-gradient-text-773676d2.jpg",
+      "tags": [
+        "文字",
+        "渐变",
+        "动画",
+        "text",
+        "gradient",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-registry-magicui-design-animated-gradient-text-773676d2",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component and example files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/animated-gradient-text.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/animated-gradient-text.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "registry-magicui-design-animated-gradient-text-773676d2",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/registry-magicui-design-animated-gradient-text-773676d2.json",
+        "previewUrl": "/data/component-code/previews/registry-magicui-design-animated-gradient-text-773676d2/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/registry-magicui-design-animated-gradient-text-773676d2.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "speed",
+            "prop": "AnimatedGradientText.speed",
+            "type": "number",
+            "default": 1,
+            "sourceDefault": 1,
+            "control": "number",
+            "labelZh": "渐变跨度",
+            "labelEn": "Gradient span",
+            "doc": "Sets the gradient background size to speed × 300%; the upstream animation duration remains 8s."
+          },
+          {
+            "key": "colorFrom",
+            "prop": "AnimatedGradientText.colorFrom",
+            "type": "string",
+            "default": "#ffaa40",
+            "sourceDefault": "#ffaa40",
+            "control": "color",
+            "labelZh": "起始颜色",
+            "labelEn": "Start color"
+          },
+          {
+            "key": "colorTo",
+            "prop": "AnimatedGradientText.colorTo",
+            "type": "string",
+            "default": "#9c40ff",
+            "sourceDefault": "#9c40ff",
+            "control": "color",
+            "labelZh": "结束颜色",
+            "labelEn": "End color"
+          }
+        ]
+      }
     }
   ]
 }
