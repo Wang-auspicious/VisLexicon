@@ -1,0 +1,26 @@
+import e from"/data/component-code/shared/react.mjs";var T=e.Activity,A=e.Children,f=e.Component,O=e.Fragment,M=e.Profiler,D=e.PureComponent,L=e.StrictMode,P=e.Suspense,V=e.ViewTransition,j=e.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE,q=e.__COMPILER_RUNTIME,B=e.act,U=e.addTransitionType,$=e.cache,F=e.cacheSignal,H=e.captureOwnerStack,W=e.cloneElement,z=e.createContext,G=e.createElement,Y=e.createRef,J=e.forwardRef,K=e.isValidElement,Q=e.lazy,X=e.memo,Z=e.startTransition,ee=e.unstable_useCacheRefresh,te=e.use,oe=e.useActionState,re=e.useCallback,ne=e.useContext,se=e.useDebugValue,ae=e.useDeferredValue,ie=e.useEffect,ce=e.useEffectEvent,le=e.useId,ue=e.useImperativeHandle,pe=e.useInsertionEffect,de=e.useLayoutEffect,me=e.useMemo,fe=e.useOptimistic,xe=e.useReducer,ge=e.useRef,he=e.useState,ve=e.useSyncExternalStore,Ee=e.useTransition,ye=e.version,i=e;import p from"/data/component-code/shared/react-dom-client.mjs";var x=p.createRoot,we=p.hydrateRoot,Re=p.version;import b from"/data/component-code/shared/pkg-6259403322ab7ba9.mjs";import{ChevronRight as _}from"/data/component-code/shared/pkg-14a7f5b66e16a893.mjs";import{motion as w}from"/data/component-code/shared/pkg-89fa7494cd639279.mjs";import d from"/data/component-code/shared/react-jsx-runtime.mjs";var g=d.Fragment,t=d.jsx,s=d.jsxs;function h(n,r){let o=n.replace("#","");if(o.length===3){let a=parseInt(o[0]+o[0],16),l=parseInt(o[1]+o[1],16),u=parseInt(o[2]+o[2],16);return`rgba(${a}, ${l}, ${u}, ${r})`}if(o.length===6){let a=parseInt(o.substring(0,2),16),l=parseInt(o.substring(2,4),16),u=parseInt(o.substring(4,6),16);return`rgba(${a}, ${l}, ${u}, ${r})`}return n}var R=({text:n="Introducing Eldoraui",color:r="#22d3ee",href:o})=>{let a=s(w.div,{initial:!1,whileInView:{opacity:1,y:0,filter:"blur(0px)"},transition:{duration:.3,delay:.1,ease:"easeInOut"},viewport:{once:!0},className:"group relative flex max-w-fit items-center justify-center gap-3 rounded-full border border-neutral-300 bg-white px-4 py-1.5 text-neutral-700 transition-colors dark:border-neutral-700/80 dark:bg-black dark:text-zinc-300",children:[t("div",{className:"pointer-events-none absolute inset-x-0 bottom-full h-20 w-[165px]",children:s("svg",{className:"h-full w-full",width:"100%",height:"100%",viewBox:"0 0 50 50",fill:"none",children:[t("g",{mask:"url(#ml-mask-1)",children:t("circle",{className:"multiline ml-light-1",cx:"0",cy:"0",r:"20",fill:"url(#ml-white-grad)"})}),s("defs",{children:[t("mask",{id:"ml-mask-1",children:t("path",{d:"M 69 49.8 h -30 q -3 0 -3 -3 v -13 q 0 -3 -3 -3 h -23 q -3 0 -3 -3 v -13 q 0 -3 -3 -3 h -30",strokeWidth:"0.6",stroke:"white"})}),s("radialGradient",{id:"ml-white-grad",fx:"1",children:[t("stop",{offset:"0%",stopColor:r}),t("stop",{offset:"20%",stopColor:r}),t("stop",{offset:"100%",stopColor:"transparent"})]})]})]})}),s("div",{className:"relative flex h-1 w-1 items-center justify-center rounded-full",style:{backgroundColor:h(r,.4)},children:[t("div",{className:"flex h-2 w-2 animate-ping items-center justify-center rounded-full",style:{backgroundColor:r},children:t("div",{className:"flex h-2 w-2 animate-ping items-center justify-center rounded-full",style:{backgroundColor:r}})}),t("div",{className:"absolute top-1/2 left-1/2 flex h-1 w-1 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full",style:{backgroundColor:h(r,.8)}})]}),t("div",{className:"mx-2 h-4 w-px bg-neutral-300 dark:bg-neutral-600/80"}),t("span",{className:"bg-clip-text text-xs font-medium",children:n}),t(_,{className:"ml-1 h-3.5 w-3.5 text-neutral-400 transition-transform duration-200 group-hover:translate-x-0.5 dark:text-neutral-500"})]});return s(g,{children:[o?t(b,{href:o,className:"inline-block",children:a}):a,t("style",{children:`    
+.multiline {
+  offset-anchor: 10px 0px;
+  animation: multiline-animation-path;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+}
+
+.ml-light-1 {
+  offset-path: path(
+    "M 69 49.8 h -30 q -3 0 -3 -3 v -13 q 0 -3 -3 -3 h -23 q -3 0 -3 -3 v -13 q 0 -3 -3 -3 h -50"
+  );
+}
+
+@keyframes multiline-animation-path {
+  0% {
+    offset-distance: 0%;
+  }
+  50% {
+    offset-distance: 100%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}`})]})},v=R;function E(){return t("div",{className:"relative",suppressHydrationWarning:!0,children:t(v,{text:"Introducing Eldora ui",color:"#22d3ee",href:"/docs/components/animated-badge"})})}var C=E,m=class extends f{state={error:null};static getDerivedStateFromError(r){return window.__previewError=String(r),parent.postMessage({type:"vislexicon:error"},"*"),{error:String(r)}}render(){return this.state.error?i.createElement("pre",{id:"preview-error"},this.state.error):this.props.children}};function S({children:n}){return i.useEffect(()=>{parent.postMessage({type:"vislexicon:ready"},"*")},[]),n}var c={},k=x(document.getElementById("root"));function y(){window.__previewValues=c,k.render(i.createElement(m,{key:JSON.stringify(c)},i.createElement(S,null,i.createElement(C,c))))}y();addEventListener("message",n=>{if(n.source!==parent||n.data?.type!=="vislexicon:props")return;let r=n.data.values;if(!(!r||typeof r!="object")){for(let o of[])Object.hasOwn(r,o)&&["string","number","boolean"].includes(typeof r[o])&&(c[o]=r[o]);y()}});window.__previewMounted=!0;

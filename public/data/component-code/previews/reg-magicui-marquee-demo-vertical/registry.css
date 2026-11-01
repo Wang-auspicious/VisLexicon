@@ -1,0 +1,16 @@
+@layer theme, base, components, utilities;
+
+:root{}
+@layer utilities{}
+
+@keyframes marquee{from{transform:translateX(0);}
+to{transform:translateX(calc(-100% - var(--gap)));}}
+@keyframes marquee-vertical{from{transform:translateY(0);}
+to{transform:translateY(calc(-100% - var(--gap)));}}
+:root{--animate-marquee:marquee var(--duration) infinite linear;--animate-marquee-vertical:marquee-vertical var(--duration) linear infinite;}
+@layer utilities{.animate-marquee{animation:marquee var(--duration) infinite linear}
+.before\:animate-marquee::before{animation:marquee var(--duration) infinite linear}
+.after\:animate-marquee::after{animation:marquee var(--duration) infinite linear}
+.animate-marquee-vertical{animation:marquee-vertical var(--duration) linear infinite}
+.before\:animate-marquee-vertical::before{animation:marquee-vertical var(--duration) linear infinite}
+.after\:animate-marquee-vertical::after{animation:marquee-vertical var(--duration) linear infinite}}
