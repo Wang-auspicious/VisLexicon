@@ -1265,6 +1265,97 @@
           }
         ]
       }
+    },
+    {
+      "id": "v4-magic-ui-ddc2cd0c5017",
+      "kind": "website-component",
+      "scope": "curation",
+      "theme": "content",
+      "componentType": "text-effect",
+      "nameZh": "极光渐变流动文字",
+      "nameEn": "Aurora Gradient Flow Text",
+      "descriptionZh": "示例把一段文字填成可调速的极光渐变，文字内容与渐变色都能直接修改。",
+      "descriptionEn": "Text filled with a speed-adjustable aurora gradient; both the text and the gradient colors are editable.",
+      "sourceUrl": "https://magicui.design/docs/components/aurora-text",
+      "source": {
+        "name": "magicui"
+      },
+      "previewKind": "image",
+      "previewUrl": "/data/component-code/posters/v4-magic-ui-ddc2cd0c5017.jpg",
+      "tags": [
+        "文字",
+        "渐变",
+        "极光",
+        "流动",
+        "text",
+        "aurora",
+        "gradient",
+        "animation"
+      ],
+      "offers": [
+        {
+          "id": "source-v4-magic-ui-ddc2cd0c5017",
+          "verified": true,
+          "checkedAt": "2026-10-25T06:45:33.060Z",
+          "subject": "source-code",
+          "scope": "Archived original component and example files",
+          "access": "unknown",
+          "sourceAvailable": true,
+          "sourceUrl": "https://magicui.design/r/aurora-text.json",
+          "sourceCost": "unknown",
+          "openSource": true,
+          "commercialUse": null,
+          "license": "MIT",
+          "licenseUrl": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md",
+          "evidenceUrls": [
+            "https://magicui.design/r/aurora-text.json",
+            "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/LICENSE.md"
+          ]
+        }
+      ],
+      "codeResource": {
+        "id": "v4-magic-ui-ddc2cd0c5017",
+        "sourceId": "magicuidesign/magicui",
+        "detailUrl": "/data/component-code/items/v4-magic-ui-ddc2cd0c5017.json",
+        "previewUrl": "/data/component-code/previews/v4-magic-ui-ddc2cd0c5017/index.html",
+        "previewStatus": "verified",
+        "sourceAvailable": true,
+        "poster": "/data/component-code/posters/v4-magic-ui-ddc2cd0c5017.jpg",
+        "framework": "react",
+        "license": "MIT",
+        "controls": [
+          {
+            "key": "text",
+            "prop": "AuroraText.children",
+            "type": "string",
+            "default": "beautiful",
+            "sourceDefault": "beautiful",
+            "control": "text",
+            "labelZh": "文字内容",
+            "labelEn": "Text"
+          },
+          {
+            "key": "colors",
+            "prop": "AuroraText.colors",
+            "type": "string",
+            "default": "#FF0080,#7928CA,#0070F3,#38bdf8",
+            "sourceDefault": "#FF0080,#7928CA,#0070F3,#38bdf8",
+            "control": "text",
+            "labelZh": "渐变色列表（逗号分隔）",
+            "labelEn": "Gradient colors (comma separated)"
+          },
+          {
+            "key": "speed",
+            "prop": "AuroraText.speed",
+            "type": "number",
+            "default": 1,
+            "sourceDefault": 1,
+            "control": "number",
+            "labelZh": "流动速度",
+            "labelEn": "Flow speed"
+          }
+        ]
+      }
     }
   ]
 }
