@@ -1,3 +1,4 @@
+import { isScreenshotPreview } from '../lib/component-preview-state.js'
 import { useCallback, useDeferredValue, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { navigate } from '../router.js'
@@ -158,10 +159,10 @@ export default function ComponentCodeDetail({ unit, en, onClose }) {
   const shown = useDeferredValue(values), t = (zh, english) => en ? english : zh
   const frameState = useRef(null)
   const controls = useMemo(() => controlsOf(item), [item])
-  const previewUrl = previewOf(item), shot = item.lane === 'screenshot' || (!previewUrl && unit.previewKind === 'image' && !unit.codeResource?.sourceAvailable)
+  const previewUrl = previewOf(item), shot = isScreenshotPreview(item, unit, previewUrl)
   const rawLicense = typeof item.license === 'object' ? item.license : { spdx: item.license ?? item.source?.license, url: item.source?.licenseUrl }
-  const license = rawLicense ?? {}
-  const files = useMemo(() => [...(item.files ?? []), ...(typeof item.license === 'object' && item.license?.text ? [{ path: 'LICENSE', content: item.license.text }] : [])], [item])
+  const license = shot ? {} : rawLicense ?? {}
+  const files = useMemo(() => shot ? [] : [...(item.files ?? []), ...(typeof item.license === 'object' && item.license?.text ? [{ path: 'LICENSE', content: item.license.text }] : [])], [item, shot])
   const file = files[Math.min(fileIndex, Math.max(0, files.length - 1))]
   const frames = item.frames?.length ? item.frames : [{ kind: 'default', src: item.poster ?? unit.previewUrl }]
   const poster = item.preview?.posterUrl ?? item.poster ?? unit.previewUrl
@@ -169,7 +170,7 @@ export default function ComponentCodeDetail({ unit, en, onClose }) {
   const title = (en ? unit.nameEn : unit.nameZh) ?? localized(item.title ?? item.name, en)
   const description = localized(item.description ?? (en ? unit.descriptionEn : unit.descriptionZh), en)
   const brief = shot ? ((en ? unit.sectionsEn : unit.sectionsZh)?.[0]?.text ?? description.split(/\n|[。!?]\s*/)[0]) : description
-  const install = item.install ?? item.source?.install ?? (item.registryUrl ? `npx shadcn@latest add "${item.registryUrl}"` : '')
+  const install = shot ? '' : item.install ?? item.source?.install ?? (item.registryUrl ? `npx shadcn@latest add "${item.registryUrl}"` : '')
   const effectiveTheme = theme === 'system' ? systemDark ? 'dark' : 'light' : theme
   const detailUrl = unit.codeResource?.detailUrl ?? unit.codeDetailUrl ?? `/data/component-code/items/${encodeURIComponent(unit.codeResource?.id ?? unit.id)}.json`
   const groups = useMemo(() => [{ group: 'Switches', controls: controls.filter(control => control.kind !== 'slider') }, { group: 'Levels', controls: controls.filter(control => control.kind === 'slider') }].filter(group => group.controls.length), [controls])

@@ -17,6 +17,15 @@ const asset = value => /^https?:\/\//.test(value) ? value : '/component-bench/' 
 const selectedId = process.argv.includes('--id') ? process.argv[process.argv.indexOf('--id') + 1] : null
 const allEntries = selectedId ? ENTRIES.filter(entry => entry.id === selectedId) : ENTRIES
 if (selectedId && !allEntries.length) throw Error(`Unknown catalog entry: ${selectedId}`)
+// A full seed rebuild cannot represent the larger locally mounted capture
+// corpus. Refuse before writing any item or index if it would truncate it.
+if (!selectedId) {
+  const previous = JSON.parse(await fs.readFile(path.join(root, 'discovery.json'), 'utf8').catch(error => { if (error.code === 'ENOENT') return '{"units":[]}'; throw error }))
+  const sites = JSON.parse(await fs.readFile(path.join(FRONT, 'public/data/site-index.json'), 'utf8').catch(error => { if (error.code === 'ENOENT') return '{"items":[]}'; throw error }))
+  const extras = JSON.parse(await fs.readFile(path.join(root, 'verified-extra.json'), 'utf8').catch(error => { if (error.code === 'ENOENT') return '{"units":[]}'; throw error }))
+  const capacity = ENTRIES.length + (sites.items?.length ?? 0) + (extras.units?.length ?? 0)
+  if ((previous.units?.length ?? 0) > capacity) throw Error(`Refusing to overwrite ${previous.units.length} existing component entries with at most ${capacity} seed entries; use the component intake pipeline.`)
+}
 const units = []
 const captures = JSON.parse(await fs.readFile(path.join(FRONT, 'data/discovery/local-public/index.json'), 'utf8').catch(() => '{"units":[]}'))
 const capturedById = new Map((captures.units ?? []).map(u => [u.id, u]))

@@ -1,3 +1,4 @@
+import { guardLegacyScreenshot } from '../src/lib/component-preview-state.js'
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import crypto from 'node:crypto'
@@ -31,7 +32,7 @@ export async function loadDiscoveryIndex(root,scope,theme='') {
   const code=scope==='curation'?await componentCodeUnits(root):[]
   const codeById=new Map(code.map(u=>[u.id,u]))
   const seen=new Set([...additions,...base.units,...terms].map(u=>u.id))
-  const units=[...additions,...base.units,...terms].map(unit=>codeById.has(unit.id)?{...unit,codeResource:codeById.get(unit.id).codeResource}:unit).concat(code.filter(u=>!seen.has(u.id))).filter(unit=>unit.scope===scope)
+  const units=[...additions,...base.units,...terms].map(unit=>codeById.has(unit.id)?{...unit,codeResource:codeById.get(unit.id).codeResource}:unit).concat(code.filter(u=>!seen.has(u.id))).filter(unit=>unit.scope===scope).map(guardLegacyScreenshot)
   const themes=[...new Set(units.flatMap(x=>[x.theme,...(x.themes||[])]).filter(Boolean))].sort()
   if(theme&&!themes.includes(theme))throw new Error('INVALID_THEME')
   const selected=units.filter(unit=>inTheme(unit,theme))

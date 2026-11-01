@@ -1,3 +1,4 @@
+import { guardLegacyScreenshot } from './component-preview-state.js'
 // Production builds have no Node server. This answers /api/discovery/* in the
 // browser by running the same handler as the local middleware over the static
 // files from scripts/build-static-search.mjs. Only AI ranking leaves the page:
@@ -24,6 +25,7 @@ export function createStaticDiscoveryApi({ fetchImpl = globalThis.fetch.bind(glo
     const index = await json(`${base}/${entry.file}`)
     // Large scopes are split into parts (Pages caps files at 25 MiB); fetched in parallel.
     if (index.unitParts) index.units = (await Promise.all(index.unitParts.map((file) => json(`${base}/${file}`)))).flatMap((part) => part.units)
+    index.units = index.units.map(guardLegacyScreenshot)
     if (index.slimUnits) for (const unit of index.units) slimIds.add(unit.id)
     return index
   }
@@ -32,7 +34,7 @@ export function createStaticDiscoveryApi({ fetchImpl = globalThis.fetch.bind(glo
     if (!slimIds.has(card.id)) return card
     const cardsBase = (await manifest).cardsBase || `${base}/u`
     if (!cards.has(card.id)) cards.set(card.id, json(`${cardsBase}/${unitFileName(card.id)}`).catch((error) => { cards.delete(card.id); throw error }))
-    const full = await cards.get(card.id)
+    const full = guardLegacyScreenshot(await cards.get(card.id))
     return card.matchStatus ? { ...full, matchStatus: card.matchStatus } : full
   }))
   const ranker = async (query, candidates, { signal } = {}) => {

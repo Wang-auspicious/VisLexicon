@@ -35,7 +35,7 @@ const SLIM_KEYS = ['id', 'kind', 'scope', 'theme', 'themes', 'nameZh', 'nameEn',
 function slim(unit) {
   const out = Object.fromEntries(SLIM_KEYS.filter((key) => unit[key] !== undefined).map((key) => [key, unit[key]]))
   if (unit.source?.name) out.source = { name: unit.source.name }
-  if (unit.codeResource?.sourceId) out.codeResource = { sourceId: unit.codeResource.sourceId }
+  if (unit.codeResource?.sourceId) out.codeResource = Object.fromEntries(['sourceId', 'previewStatus', 'previewUrl', 'sourceAvailable'].filter(key => unit.codeResource[key] !== undefined).map(key => [key, unit.codeResource[key]]))
   if (unit.relatedSites?.length) out.relatedSites = unit.relatedSites.map((site) => ({ entryId: site.entryId, offers: site.offers }))
   // lexicalCandidates also matches English prose. Keeping each distinct word once
   // (3+ letters) holds top-12 results equal to the full index at about half the size.
