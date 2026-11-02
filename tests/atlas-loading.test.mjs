@@ -89,6 +89,10 @@ test('generated overview preserves every category count and sample name without 
     'dataviz/flow-chart': 'https://datavizcatalogue.com/methods/flow_chart.html',
     'dataviz/tally-chart': 'https://datavizcatalogue.com/methods/tally_chart.html',
     'dataviz/word-cloud': 'https://datavizcatalogue.com/methods/wordcloud.html',
+    'dataviz/flow-map': 'https://datavizcatalogue.com/methods/flow_map.html',
+    'dataviz/network-diagram': 'https://datavizcatalogue.com/methods/network_diagram.html',
+    'dataviz/sankey-diagram': 'https://datavizcatalogue.com/methods/sankey_diagram.html',
+    'dataviz/chord-diagram': 'https://datavizcatalogue.com/methods/chord_diagram.html',
   }
   const datavizSearch = search.find(category => category.id === 'dataviz')
   for (const [key, url] of Object.entries(directSources)) {
@@ -100,4 +104,32 @@ test('generated overview preserves every category count and sample name without 
     assert.ok(!('evidenceIds' in entry) && !('evidence' in entry) && !('review' in entry), `${key} private review metadata`)
   }
   assert.equal(datavizSearch.items.find(row => row.id === 'stem-and-leaf-plot')?.en, 'Stem & Leaf Plot')
+  const arc = lexicon.entries['dataviz/arc-diagram']
+  const chord = lexicon.entries['dataviz/chord-diagram']
+  assert.equal(arc.kind, 'named-variant')
+  assert.equal(arc.relations[0]?.type, 'variantOf')
+  assert.equal(arc.relations[0]?.targetId, 'vlx:diagram:network-diagram')
+  assert.equal(chord.kind, 'named-variant')
+  assert.equal(chord.relations[0]?.targetId, 'vlx:diagram:network-diagram')
+  const sankeyImplementation = lexicon.entries['d3/sankey']
+  const chordImplementation = lexicon.entries['d3/chordribbon']
+  assert.equal(sankeyImplementation.kind, 'implementation')
+  assert.equal(sankeyImplementation.conceptId, lexicon.entries['dataviz/sankey-diagram'].conceptId)
+  assert.equal(sankeyImplementation.canonicalEntryKey, 'dataviz/sankey-diagram')
+  assert.equal(sankeyImplementation.legacyItemId, 'd3/sankey')
+  assert.equal(sankeyImplementation.implementation.apiPattern, 'sankey().nodeAlign(sankeyJustify)，链接宽度=流量。')
+  assert.deepEqual(sankeyImplementation.aliases.map(row => row.term), ['d3-sankey', 'sankeyJustify'])
+  assert.deepEqual(sankeyImplementation.implementation.legacyRecord.aliases, ['d3-sankey', 'sankeyJustify'])
+  assert.equal(chordImplementation.kind, 'implementation')
+  assert.equal(chordImplementation.conceptId, chord.conceptId)
+  assert.equal(chordImplementation.canonicalEntryKey, 'dataviz/chord-diagram')
+  assert.equal(chordImplementation.legacyItemId, 'd3/chordribbon')
+  assert.equal(chordImplementation.implementation.apiPattern, 'chord() + ribbon()，颜色按源节点，透明度 0.7。')
+  assert.deepEqual(chordImplementation.aliases.map(row => row.term), ['chord', 'ribbon'])
+  assert.deepEqual(chordImplementation.implementation.legacyRecord.aliases, ['chord', 'ribbon'])
+  assert.ok(lexicon.entries['dataviz/sankey-diagram'].implementations.some(row => row.legacyItemId === 'd3/sankey'))
+  assert.ok(chord.implementations.some(row => row.legacyItemId === 'd3/chordribbon'))
+  assert.equal(sankeyImplementation.relations.length, 0)
+  assert.equal(chordImplementation.relations.length, 0)
+  assert.deepEqual(lexicon.entries['dataviz/network-diagram'].aliases.map(row => row.term), ['Network Graph', 'Network Map', 'Node-Link Diagram'])
 })

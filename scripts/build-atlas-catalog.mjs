@@ -41,6 +41,15 @@ export async function buildAtlasCatalog() {
     sourceUrl: value.sourceUrl,
     sourceLabel: value.sourceLabel,
     relations: (value.relations || []).map(({ type, targetId, reason }) => ({ type, targetId, reason })),
+    ...(value.kind === 'implementation' ? {
+      canonicalEntryKey: value.canonicalEntryKey,
+      legacyItemId: value.legacyItemId,
+      implementation: value.implementation,
+    } : {
+      ...(value.implementations ? { implementations: value.implementations
+        .filter(row => row.legacyItemId)
+        .map(({ legacyItemId, productModule, productItemId, name, scope, apiPattern, legacyRecord }) => ({ legacyItemId, productModule, productItemId, name, apiPattern: apiPattern || scope, legacyRecord })) } : {}),
+    }),
     reviewStatus: 'approved',
   }]))
   for (const category of categories) {

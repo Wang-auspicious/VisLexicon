@@ -9,7 +9,7 @@ test('Atlas A tokens update multiple chart SVGs and defaults restore cleanly', (
   const changed = createAtlasAChartArt({ ...ATLAS_A_TOKENS, mistBlue: '#123456', axis: '#abcdef' })
   const restored = createAtlasAChartArt(ATLAS_A_TOKENS)
 
-  for (const id of ['histogram', 'parallelSets', 'arcDiagram', 'flowChart', 'tallyChart', 'wordCloud']) {
+  for (const id of ['histogram', 'parallelSets', 'arcDiagram', 'flowChart', 'tallyChart', 'wordCloud', 'flowMap', 'networkDiagram', 'sankey', 'chordDiagram']) {
     const before = decodeSvg(original[id].en)
     const after = decodeSvg(changed[id].en)
     assert.match(before, /--mistBlue:#BFDDF4/)
@@ -24,9 +24,9 @@ test('Atlas A tokens update multiple chart SVGs and defaults restore cleanly', (
   assert.ok(Object.isFrozen(ATLAS_A_TOKENS))
 })
 
-test('all twelve Atlas A chart illustrations use the shared palette and transparent SVG shells', () => {
+test('all sixteen Atlas A chart illustrations use the shared palette and transparent SVG shells', () => {
   const art = createAtlasAChartArt()
-  assert.equal(Object.keys(art).length, 12)
+  assert.equal(Object.keys(art).length, 16)
   for (const [id, languages] of Object.entries(art)) {
     for (const svgUrl of Object.values(languages)) {
       const svg = decodeSvg(svgUrl)
@@ -75,4 +75,29 @@ test('Batch 04 chart examples keep their stated counts and visual encodings', ()
   const cloud = dataviz.items.find(item => item.id === 'word-cloud')
   assert.match(cloud.chartAlt.en, /seven terms show example mention counts/)
   assert.match(decodeSvg(cloud.chartSvg.en), /color carries no second variable/)
+})
+
+test('Batch 05 chart examples preserve spatial, network, stage and pair values', () => {
+  const flowMap = dataviz.items.find(item => item.id === 'flow-map')
+  assert.match(flowMap.chartAlt.en, /four schematic places.*counts 8, 6, 4 and 2/)
+  assert.match(decodeSvg(flowMap.chartSvg.en), /arrows = direction/)
+
+  const network = dataviz.items.find(item => item.id === 'network-diagram')
+  assert.match(network.chartAlt.en, /six nodes form two clusters.*C–D is the only cross-cluster bridge/)
+  assert.match(decodeSvg(network.chartSvg.en), /undirected · C–D bridges groups/)
+
+  const sankey = dataviz.items.find(item => item.id === 'sankey-diagram')
+  assert.match(sankey.chartAlt.en, /100 visits split into 65 continuing and 35 exiting.*40 completing and 25 leaving/)
+  assert.match(decodeSvg(sankey.chartSvg.en), /band width ∝ flow · example total 100/)
+
+  const chord = dataviz.items.find(item => item.id === 'chord-diagram')
+  assert.match(chord.chartAlt.en, /four nodes lie on one circle.*8\/4\/6\/3\/2.*decorative colors/)
+  assert.match(decodeSvg(chord.chartSvg.en), /A–B 8 · A–C 4 · B–C 6 · B–D 3 · C–D 2/)
+  assert.match(decodeSvg(chord.chartSvg.en), /<circle cx="240" cy="162" r="78"/)
+  assert.match(decodeSvg(chord.chartSvg.en), /<circle cx="240" cy="84" r="14"/)
+  assert.match(decodeSvg(chord.chartSvg.en), /<circle cx="318" cy="162" r="14"/)
+  assert.match(decodeSvg(chord.chartSvg.en), /color is decorative/)
+  assert.match(decodeSvg(chord.chartSvg.en), /stroke-width="4\.4"/)
+  assert.match(decodeSvg(chord.chartSvg.en), /stroke-width="2\.2"/)
+  assert.match(decodeSvg(chord.chartSvg.en), /stroke-width="3\.3"/)
 })
