@@ -65,6 +65,7 @@ test('generated overview preserves every category count and sample name without 
   assert.ok(Object.values(lexicon.entries).every(row => row.reviewStatus === 'approved'))
   assert.deepEqual(publishedLexicon.entries, lexicon.entries)
   assert.ok(Object.values(publishedLexicon.entries).every(row => row.reviewStatus === 'approved' && !('evidence' in row) && !('review' in row)))
+  assert.ok(Object.values(publishedLexicon.entries).every(row => !JSON.stringify(row).includes('evidenceIds')))
   assert.equal(catalog.length, search.length)
   assert.deepEqual(catalog.filter(category => category.file).map(category => category.file), CATEGORY_FILES)
   for (const category of catalog) {

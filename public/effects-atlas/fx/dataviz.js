@@ -909,4 +909,54 @@ _atlasExpansion_f1dd93589e91ef8f_dataviz.items.push(...[
     "author": "atlas-second-source-curator"
   }
 ]);
+// Locally authored, data-labelled SVGs for four concepts absent from the current Atlas inventory.
+// The histogram uses explicit contiguous bins; the KDE is computed from the listed sample values.
+const vlxChartArt20261102 = (() => {
+  const uri = svg => `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+  const shell = (title, subtitle, xLabel, yLabel, body) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img"><rect width="480" height="300" fill="#fbfbf8"/><text x="28" y="28" fill="#23232f" font-family="Arial,sans-serif" font-size="16" font-weight="700">${title}</text><text x="28" y="47" fill="#77796f" font-family="Arial,sans-serif" font-size="10">${subtitle}</text>${body}<text x="238" y="286" text-anchor="middle" fill="#55574f" font-family="Arial,sans-serif" font-size="10">${xLabel}</text><text x="13" y="145" text-anchor="middle" transform="rotate(-90 13 145)" fill="#55574f" font-family="Arial,sans-serif" font-size="10">${yLabel}</text></svg>`;
+  const hist = (zh) => {
+    const bins = [2, 6, 11, 15, 12, 7, 3], left = 62, top = 74, width = 350, height = 158, max = 15, bw = width / bins.length;
+    const grid = [0, 5, 10, 15].map(v => { const y = top + height - v / max * height; return `<line x1="${left}" y1="${y}" x2="${left+width}" y2="${y}" stroke="#e6e8df"/><text x="${left-9}" y="${y+3}" text-anchor="end" fill="#74766e" font-size="9">${v}</text>`; }).join('');
+    const bars = bins.map((v,i) => { const h=v/max*height, x=left+i*bw, y=top+height-h; return `<rect x="${x}" y="${y}" width="${bw+0.5}" height="${h}" fill="#4d8ba6" stroke="#fbfbf8" stroke-width="1"/><text x="${x+bw/2}" y="${y-5}" text-anchor="middle" fill="#34424a" font-size="9">${v}</text><text x="${x+bw/2}" y="${top+height+14}" text-anchor="middle" fill="#74766e" font-size="8">${i*10}–${(i+1)*10}</text>`; }).join('');
+    const body=`${grid}${bars}<line x1="${left}" y1="${top+height}" x2="${left+width}" y2="${top+height}" stroke="#686b62"/><line x1="${left}" y1="${top}" x2="${left}" y2="${top+height}" stroke="#686b62"/><text x="${left+width}" y="${top-8}" text-anchor="end" fill="#8b8d84" font-size="9">n = 56</text>`;
+    return uri(shell(zh?'直方图 · 示例频数':'Histogram · example counts',zh?'连续测量值按区间计数；相邻箱无缝相接':'Continuous measurements counted in intervals; adjacent bins touch',zh?'测量区间':'Measurement interval',zh?'频数':'Count',body));
+  };
+  const density = (zh) => {
+    const samples=[3.6,4.2,4.5,4.8,4.9,5.1,5.3,5.5,5.9,6.3,6.6,7.0], h=.5, xs=Array.from({length:41},(_,i)=>3+i*.125);
+    const ds=xs.map(x=>samples.reduce((sum,v)=>sum+Math.exp(-.5*((x-v)/h)**2),0)/(samples.length*h*Math.sqrt(2*Math.PI)));
+    const max=Math.max(...ds)*1.12,left=58,top=72,width=360,height=158;
+    const pts=ds.map((v,i)=>`${left+i/(ds.length-1)*width},${top+height-v/max*height}`);
+    const path=`M ${left},${top+height} L ${pts.join(' L ')} L ${left+width},${top+height} Z`;
+    const line=`M ${pts.join(' L ')}`;
+    const grid=[0,.1,.2,.3,.4].map(v=>{const y=top+height-v/max*height;if(y<top)return '';return `<line x1="${left}" y1="${y}" x2="${left+width}" y2="${y}" stroke="#e6e8df"/><text x="${left-8}" y="${y+3}" text-anchor="end" fill="#74766e" font-size="9">${v.toFixed(1)}</text>`}).join('');
+    const rug=samples.map(v=>{const x=left+(v-3)/5*width;return `<line x1="${x}" y1="${top+height+3}" x2="${x}" y2="${top+height+9}" stroke="#8c6974" stroke-width="1.5"/>`}).join('');
+    const body=`${grid}<path d="${path}" fill="#b9d8e1" fill-opacity=".62"/><path d="${line}" fill="none" stroke="#347890" stroke-width="2.5"/><line x1="${left}" y1="${top+height}" x2="${left+width}" y2="${top+height}" stroke="#686b62"/>${rug}<text x="${left}" y="${top+height+21}" text-anchor="middle" fill="#74766e" font-size="9">3</text><text x="${left+width/2}" y="${top+height+21}" text-anchor="middle" fill="#74766e" font-size="9">5.5</text><text x="${left+width}" y="${top+height+21}" text-anchor="middle" fill="#74766e" font-size="9">8</text><text x="${left+width}" y="${top-8}" text-anchor="end" fill="#8b8d84" font-size="9">n = 12 · h = 0.5</text>`;
+    return uri(shell(zh?'Density plot · Gaussian KDE':'Density plot · Gaussian KDE',zh?'由列出的 12 个样本与带宽 h = 0.5 计算；下方短线为观测值':'Computed from the 12 listed samples with bandwidth h = 0.5; rug marks show observations',zh?'观测值':'Observed value',zh?'概率密度':'Density',body));
+  };
+  const matrix = (zh) => {
+    const values=Array.from({length:100},(_,i)=>i<46?0:i<80?1:2), colors=['#347890','#d08a55','#bd6c82'],labels=zh?['A · 46 (46%)','B · 34 (34%)','C · 20 (20%)']:['A · 46 (46%)','B · 34 (34%)','C · 20 (20%)'];
+    const dots=values.map((v,i)=>{const x=82+(i%10)*28,y=82+Math.floor(i/10)*18;return `<circle cx="${x}" cy="${y}" r="5.5" fill="${colors[v]}"/>`}).join('');
+    const legend=labels.map((label,i)=>{const x=70+i*132;return `<circle cx="${x}" cy="270" r="4" fill="${colors[i]}"/><text x="${x+9}" y="273" fill="#55574f" font-size="9">${label}</text>`}).join('');
+    const body=`<text x="82" y="66" fill="#77796f" font-size="9">${zh?'每个圆点代表 1 个单位 · 总数 100':'1 dot = 1 unit · total 100'}</text>${dots}${legend}`;
+    return uri(shell(zh?'点矩阵图 · 100 个单位':'Dot matrix chart · 100 units',zh?'类别按行读取；颜色编码类别，各点等权':'Read rows left to right; color encodes category and every dot has equal weight','','',body));
+  };
+  const errorBars = (zh) => {
+    const rows=[{name:'A',mean:4.2,lo:3.6,hi:4.8},{name:'B',mean:5.1,lo:4.3,hi:5.9},{name:'C',mean:6.3,lo:5.5,hi:7.1}], left=80,top=86,width=340;
+    const x=v=>left+v/10*width;
+    const ticks=[0,2,4,6,8,10].map(v=>`<line x1="${x(v)}" y1="${top-14}" x2="${x(v)}" y2="${top+126}" stroke="#e6e8df"/><text x="${x(v)}" y="${top+143}" text-anchor="middle" fill="#74766e" font-size="9">${v}</text>`).join('');
+    const marks=rows.map((r,i)=>{const y=top+i*44;return `<text x="64" y="${y+4}" text-anchor="end" fill="#55574f" font-size="10">${r.name}</text><line x1="${x(r.lo)}" y1="${y}" x2="${x(r.hi)}" y2="${y}" stroke="#347890" stroke-width="2.5"/><line x1="${x(r.lo)}" y1="${y-6}" x2="${x(r.lo)}" y2="${y+6}" stroke="#347890" stroke-width="2"/><line x1="${x(r.hi)}" y1="${y-6}" x2="${x(r.hi)}" y2="${y+6}" stroke="#347890" stroke-width="2"/><circle cx="${x(r.mean)}" cy="${y}" r="4.5" fill="#d27669"/><text x="${x(r.mean)}" y="${y-9}" text-anchor="middle" fill="#55574f" font-size="8">${r.mean.toFixed(1)}</text>`}).join('');
+    const body=`${ticks}${marks}<text x="${left+width}" y="${top-22}" text-anchor="end" fill="#8b8d84" font-size="9">${zh?'● 均值　线段 = 95% CI':'● mean　line = 95% CI'}</text>`;
+    return uri(shell(zh?'Error bars · illustrative estimates':'Error bars · illustrative estimates',zh?'区间含义已标注为 95% CI；示例数值并非来自实测':'Intervals are labeled 95% CI; example values are not measured data',zh?'估计值':'Estimate',zh?'组别':'Group',body));
+  };
+  return {histogram:{zh:hist(true),en:hist(false)},density:{zh:density(true),en:density(false)},matrix:{zh:matrix(true),en:matrix(false)},errorBars:{zh:errorBars(true),en:errorBars(false)}};
+})();
+
+_atlasExpansion_f1dd93589e91ef8f_dataviz.items.push(...[
+  {id:'histogram',zh:'直方图',en:'Histogram',dz:'连续数值按相邻区间分箱；每个柱高表示该区间的频数。',de:'Continuous values are grouped into adjacent intervals; each bar height encodes that interval’s frequency.',pz:'数据：56 个示例测量值；箱宽 10；柱间不留空隙。核对区间边界与各箱频数后再调整箱宽。',pe:'Example: 56 measurements, bin width 10, with no gaps between bins. Check interval boundaries and counts before changing bin width.',demo:'shape',n:1,chartSvg:vlxChartArt20261102.histogram,chartAlt:{zh:'直方图示例：56 个示例值分入七个连续的 10 单位区间，柱高标注频数。',en:'Histogram example: 56 example values in seven contiguous 10-unit intervals, with frequencies labeled.'},css:'.fxshape{width:min(480px,96%);height:300px}.fx{width:100%;height:100%;border-radius:0;background:transparent;box-shadow:none}'},
+  {id:'density-plot',zh:'密度图',en:'Density plot',dz:'用核平滑估计连续变量的分布形状；曲线峰值表示观测值较集中的区段。',de:'Kernel smoothing estimates the shape of a continuous distribution; peaks mark regions where observations concentrate.',pz:'用图中列出的 12 个样本和 Gaussian kernel 计算 KDE；带宽 h=0.5。带宽越大，曲线越平滑；这张图与柱形分箱计数不同。',pe:'Compute a KDE from the 12 listed samples with a Gaussian kernel and bandwidth h=0.5. Larger bandwidth smooths more; unlike a histogram, the curve is not a count of bins.',demo:'shape',n:1,chartSvg:vlxChartArt20261102.density,chartAlt:{zh:'密度图：以列出的 12 个样本和 h=0.5 计算 Gaussian KDE，并在轴下显示观测值。',en:'Density plot: Gaussian KDE computed from the 12 listed samples with h=0.5; observations are shown as rug marks.'},css:'.fxshape{width:min(480px,96%);height:300px}.fx{width:100%;height:100%;border-radius:0;background:transparent;box-shadow:none}'},
+  {id:'dot-matrix-chart',zh:'点矩阵图',en:'Dot matrix chart',dz:'把离散单位排列成矩阵，每个点等权，并用颜色编码类别以便比较数量或比例。',de:'Discrete units are arranged in a matrix; each dot has equal weight, and color encodes categories for count or proportion comparison.',pz:'示例共 100 个单位，A/B/C 分别为 46/34/20；每点代表一个单位。按行从左到右读取，先看数量再比较比例。',pe:'The example contains 100 units: A/B/C = 46/34/20; one dot equals one unit. Read left to right by row, then compare counts and proportions.',demo:'shape',n:1,chartSvg:vlxChartArt20261102.matrix,chartAlt:{zh:'点矩阵图：100 个点代表 100 个单位，A 类 46、B 类 34、C 类 20。',en:'Dot matrix chart: 100 dots represent 100 units, with 46 in A, 34 in B and 20 in C.'},css:'.fxshape{width:min(480px,96%);height:300px}.fx{width:100%;height:100%;border-radius:0;background:transparent;box-shadow:none}'},
+  {id:'error-bars',zh:'误差线',en:'Error bars',dz:'在估计值两侧绘制与定量轴平行的区间线和端帽；必须说明区间代表什么。',de:'Draw a capped interval parallel to a quantitative axis around an estimate; label what the interval represents.',pz:'示例绘制三组估计值及 95% 置信区间：圆点是均值，横线与端帽是区间。标准差、标准误、置信区间和极值范围含义不同，不能互换标签。',pe:'The example shows three estimates with 95% confidence intervals: dots are means; capped lines are intervals. Standard deviation, standard error, confidence intervals and min–max ranges mean different things and must not share labels.',demo:'shape',n:1,chartSvg:vlxChartArt20261102.errorBars,chartAlt:{zh:'误差线图示：三组示例均值以圆点标注，横向端帽线表示各自的 95% 置信区间。',en:'Error bars: dots show three example means and capped horizontal lines show their 95% confidence intervals.'},css:'.fxshape{width:min(480px,96%);height:300px}.fx{width:100%;height:100%;border-radius:0;background:transparent;box-shadow:none}'}
+]);
+
+
 export default _atlasExpansion_f1dd93589e91ef8f_dataviz;

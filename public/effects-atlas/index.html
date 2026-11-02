@@ -320,7 +320,7 @@
                       </div>
                       <div style="position:relative;flex:1;min-height:0;overflow:hidden;background:#f7f8f4">
                         <sc-if value="{{ r.referenceImage }}" hint-placeholder-val="{{ false }}"><img sc-camel-src="{{ r.referenceImage }}" alt="{{ r.referenceImageAlt }}" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block" /></sc-if>
-                        <sc-if value="{{ r.noReferenceImage }}" hint-placeholder-val="{{ true }}"><div class="aur {{ r.scope }}" style="{{ r.inner }};width:100%;height:100%;display:flex;align-items:center;justify-content:center"><div class="{{ r.wrap }}"><sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="6"><div class="{{ c.cls }}" style="{{ c.st }}" data-sample-body="{{ c.sampleBody }}">{{ c.c }}<sc-if value="{{ c.hasSample }}"><b data-sample-body="{{ c.sampleBody }}"></b><u data-sample-title="{{ c.sampleTitle }}"></u><i data-sample-meta="{{ c.sampleMeta }}"></i></sc-if><sc-if value="{{ c.noSample }}"><b></b><i></i><u></u></sc-if></div></sc-for></div></div></sc-if>
+                        <sc-if value="{{ r.noReferenceImage }}" hint-placeholder-val="{{ true }}"><div class="aur {{ r.scope }}" style="{{ r.inner }};width:100%;height:100%;display:flex;align-items:center;justify-content:center"><div class="{{ r.wrap }}"><sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="6"><div class="{{ c.cls }}" style="{{ c.st }}"><sc-if value="{{ c.chartImageDemo }}"><img src="{{ c.chartImage }}" alt="{{ c.chartAlt }}" style="display:block;width:100%;height:100%;object-fit:contain" /></sc-if><sc-if value="{{ c.notChartImageDemo }}">{{ c.c }}<sc-if value="{{ c.hasSample }}"><b data-sample-body="{{ c.sampleBody }}"></b><u data-sample-title="{{ c.sampleTitle }}"></u><i data-sample-meta="{{ c.sampleMeta }}"></i></sc-if><sc-if value="{{ c.noSample }}"><b></b><i></i><u></u></sc-if></sc-if></div></sc-for></div></div></sc-if>
                       </div>
                     </div>
                   </div>
@@ -343,7 +343,7 @@
                     </sc-if>
                     <sc-if value="{{ t.notText }}" hint-placeholder-val="{{ false }}">
                       <div class="{{ t.wrap }}">
-                        <sc-for list="{{ t.cells }}" as="c" hint-placeholder-count="3"><div class="{{ c.cls }}" style="{{ c.st }}" data-sample-body="{{ c.sampleBody }}">{{ c.c }}<sc-if value="{{ c.hasSample }}"><b data-sample-body="{{ c.sampleBody }}"></b><u data-sample-title="{{ c.sampleTitle }}"></u><i data-sample-meta="{{ c.sampleMeta }}"></i></sc-if><sc-if value="{{ c.noSample }}"><b></b><i></i><u></u></sc-if></div></sc-for>
+                        <sc-for list="{{ t.cells }}" as="c" hint-placeholder-count="3"><div class="{{ c.cls }}" style="{{ c.st }}"><sc-if value="{{ c.chartImageDemo }}"><img src="{{ c.chartImage }}" alt="{{ c.chartAlt }}" style="display:block;width:100%;height:100%;object-fit:contain" /></sc-if><sc-if value="{{ c.notChartImageDemo }}">{{ c.c }}<sc-if value="{{ c.hasSample }}"><b data-sample-body="{{ c.sampleBody }}"></b><u data-sample-title="{{ c.sampleTitle }}"></u><i data-sample-meta="{{ c.sampleMeta }}"></i></sc-if><sc-if value="{{ c.noSample }}"><b></b><i></i><u></u></sc-if></sc-if></div></sc-for>
                       </div>
                     </sc-if>
                   </div>
@@ -395,7 +395,7 @@
                     </sc-if>
                     <sc-if value="{{ notText }}" hint-placeholder-val="{{ false }}">
                       <div class="{{ wrapCls }}">
-                        <sc-for list="{{ cells }}" as="c" hint-placeholder-count="3"><div class="{{ c.cls }}" style="{{ c.st }}" data-sample-body="{{ c.sampleBody }}"><sc-if value="{{ c.traceDemo }}"><span class="fx-trace-label">{{ c.c }}</span><span class="fx-trace-track"><span class="fx-trace-fill" style="{{ c.traceBarStyle }}"></span></span></sc-if><sc-if value="{{ c.notTraceDemo }}">{{ c.c }}<sc-if value="{{ c.tooltipDemo }}"><button class="fx-tooltip-trigger" type="button" aria-describedby="{{ c.tooltipId }}">{{ c.tooltipLabel }}<span class="fx-tooltip-content" id="{{ c.tooltipId }}" role="tooltip">{{ c.tooltipText }}</span></button></sc-if><sc-if value="{{ c.hasSample }}"><b data-sample-body="{{ c.sampleBody }}"></b><u data-sample-title="{{ c.sampleTitle }}"></u><i data-sample-meta="{{ c.sampleMeta }}"></i></sc-if><sc-if value="{{ c.noSample }}"><b></b><i></i><u></u></sc-if></sc-if></div></sc-for>
+                        <sc-for list="{{ cells }}" as="c" hint-placeholder-count="3"><div class="{{ c.cls }}" style="{{ c.st }}"><sc-if value="{{ c.chartImageDemo }}"><img src="{{ c.chartImage }}" alt="{{ c.chartAlt }}" style="display:block;width:100%;height:100%;object-fit:contain" /></sc-if><sc-if value="{{ c.notChartImageDemo }}"><sc-if value="{{ c.traceDemo }}"><span class="fx-trace-label">{{ c.c }}</span><span class="fx-trace-track"><span class="fx-trace-fill" style="{{ c.traceBarStyle }}"></span></span></sc-if><sc-if value="{{ c.notTraceDemo }}">{{ c.c }}<sc-if value="{{ c.tooltipDemo }}"><button class="fx-tooltip-trigger" type="button" aria-describedby="{{ c.tooltipId }}">{{ c.tooltipLabel }}<span class="fx-tooltip-content" id="{{ c.tooltipId }}" role="tooltip">{{ c.tooltipText }}</span></button></sc-if><sc-if value="{{ c.hasSample }}"><b data-sample-body="{{ c.sampleBody }}"></b><u data-sample-title="{{ c.sampleTitle }}"></u><i data-sample-meta="{{ c.sampleMeta }}"></i></sc-if><sc-if value="{{ c.noSample }}"><b></b><i></i><u></u></sc-if></sc-if></sc-if></div></sc-for>
                       </div>
                     </sc-if>
                   </div></sc-if>
@@ -1134,9 +1134,12 @@ class Component extends DCLogic {
       const tooltipDemo = it.id === 'tooltip' && i === 0;
       const traceDemo = it.id === 'tracewaterfall';
       const traceBar = it.cellBars?.[i] || {};
+      const chartImage = typeof it.chartSvg === 'string' ? it.chartSvg : it.chartSvg?.[this.state.lang] || it.chartSvg?.en || '';
+      const chartAlt = typeof it.chartAlt === 'string' ? it.chartAlt : it.chartAlt?.[this.state.lang] || it.chartAlt?.en || '';
       return {
         c: (src && src[i]) || '', cls: 'fx ' + (st.materialA ? 'fx-material-a ' : '') + ((st.cls && st.cls[i]) || '') + (sample ? ' fx-sample' : ''), st,
         hasSample: !!sample, noSample: !sample, sampleBody: sample?.body || '', sampleTitle: sample?.title || '', sampleMeta: sample?.meta || '',
+        chartImageDemo: !!chartImage, notChartImageDemo: !chartImage, chartImage, chartAlt,
         traceDemo, notTraceDemo: !traceDemo, traceBarStyle: { left: traceBar.start || '0%', width: traceBar.duration || '0%' },
         tooltipDemo, tooltipId: `atlas-tooltip-${it.id}-${this.state.lang}-${this.state.nonce}`, tooltipLabel: this.state.lang === 'zh' ? '悬停或聚焦查看提示' : 'Hover or focus for a tooltip',
         tooltipText: this.state.lang === 'zh' ? '这是与触发按钮关联的说明文本。' : 'This descriptive text is associated with the trigger.',

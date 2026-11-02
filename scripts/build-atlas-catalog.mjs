@@ -38,7 +38,7 @@ export async function buildAtlasCatalog() {
     aliases: value.aliases,
     definition: value.definition,
     distinction: value.distinction,
-    relations: value.relations,
+    relations: (value.relations || []).map(({ type, targetId, reason }) => ({ type, targetId, reason })),
     reviewStatus: 'approved',
   }]))
   for (const category of categories) {
