@@ -38,6 +38,8 @@ export async function buildAtlasCatalog() {
     aliases: value.aliases,
     definition: value.definition,
     distinction: value.distinction,
+    sourceUrl: value.sourceUrl,
+    sourceLabel: value.sourceLabel,
     relations: (value.relations || []).map(({ type, targetId, reason }) => ({ type, targetId, reason })),
     reviewStatus: 'approved',
   }]))
@@ -58,7 +60,7 @@ export async function buildAtlasCatalog() {
   // Search loads prose only. The visible result's category supplies its demos.
   const search = categories.map(({ items, ...category }) => ({
     ...category,
-    items: items.map(({ id, zh, en, dz, de, pz, pe, aliases, definition, distinction, relations, conceptId, kind }) => ({ id, zh, en, dz, de, pz, pe, aliases, definition, distinction, relations, conceptId, kind })),
+    items: items.map(({ id, zh, en, dz, de, pz, pe, aliases, definition, distinction, relations, conceptId, kind, sourceUrl, sourceLabel }) => ({ id, zh, en, dz, de, pz, pe, aliases, definition, distinction, relations, conceptId, kind, sourceUrl, sourceLabel })),
   }))
   const searchJson = JSON.stringify(search)
   const searchName = `search-index.${createHash('sha256').update(searchJson).digest('hex').slice(0, 16)}.json`

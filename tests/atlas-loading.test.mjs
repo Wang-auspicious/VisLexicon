@@ -76,4 +76,19 @@ test('generated overview preserves every category count and sample name without 
   }
   assert.equal(catalog.length, 80)
   assert.equal(catalog.reduce((sum, category) => sum + category.itemCount, 0), search.reduce((sum, category) => sum + category.items.length, 0))
+  const directSources = {
+    'dataviz/histogram': 'https://datavizcatalogue.com/methods/histogram.html',
+    'dataviz/density-plot': 'https://datavizcatalogue.com/methods/density_plot.html',
+    'dataviz/dot-matrix-chart': 'https://datavizcatalogue.com/methods/dot_matrix_chart.html',
+    'dataviz/error-bars': 'https://datavizcatalogue.com/methods/error_bars.html',
+  }
+  const datavizSearch = search.find(category => category.id === 'dataviz')
+  for (const [key, url] of Object.entries(directSources)) {
+    const entry = lexicon.entries[key]
+    const item = datavizSearch.items.find(row => `dataviz/${row.id}` === key)
+    assert.equal(entry.sourceUrl, url, `${key} public direct source`)
+    assert.ok(entry.sourceLabel, `${key} public source label`)
+    assert.equal(item.sourceUrl, url, `${key} search detail source`)
+    assert.ok(!('evidenceIds' in entry) && !('evidence' in entry) && !('review' in entry), `${key} private review metadata`)
+  }
 })

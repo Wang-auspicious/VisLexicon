@@ -735,6 +735,7 @@ const _atlasExpansion_f1dd93589e91ef8f_dataviz = _atlasExpansion20260927_dataviz
 
 ;
 // Reviewed original-source references, 2026-09-27. Existing entries remain unchanged.
+
 _atlasExpansion_f1dd93589e91ef8f_dataviz.items.push(...[
   {
     "id": "box-plot",
@@ -909,16 +910,27 @@ _atlasExpansion_f1dd93589e91ef8f_dataviz.items.push(...[
     "author": "atlas-second-source-curator"
   }
 ]);
-// Locally authored, data-labelled SVGs for four concepts absent from the current Atlas inventory.
+// Shared Atlas A material palette for the eight locally authored chart examples.
+export const ATLAS_A_TOKENS = Object.freeze({
+  ink: '#23232f', muted: '#77796f', axis: '#55574f', axisStrong: '#60635c',
+  grid: '#e2e5dc', gridFine: '#e6e8df', gridSoft: '#d9e2e1', paper: '#fbfbf8',
+  blue: '#4d8ba6', blueDeep: '#347890', blueSoft: '#b9d8e1',
+  amber: '#d08a55', amberDeep: '#c27c4e', amberSoft: '#e1b190', coral: '#d27669', coralSoft: '#d9a0ad',
+  rose: '#bd6c82', roseDeep: '#b96b80', slate: '#31363a', slateMid: '#6c7378',
+  neutral: '#bfc6ba', neutralLight: '#f7f8f3',
+});
+
+// Locally authored, data-labelled SVGs for eight concepts absent from the current Atlas inventory.
 // The histogram uses explicit contiguous bins; the KDE is computed from the listed sample values.
-const vlxChartArt20261102 = (() => {
+export function createAtlasAChartArt(tokens = ATLAS_A_TOKENS) {
+  const paletteStyle = `<style>:root{${Object.entries(tokens).map(([name,value]) => `--${name}:${value}`).join(';')}}</style>`;
   const uri = svg => `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
-  const shell = (title, subtitle, xLabel, yLabel, body) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img"><rect width="480" height="300" fill="#fbfbf8"/><text x="28" y="28" fill="#23232f" font-family="Arial,sans-serif" font-size="16" font-weight="700">${title}</text><text x="28" y="47" fill="#77796f" font-family="Arial,sans-serif" font-size="10">${subtitle}</text>${body}<text x="238" y="286" text-anchor="middle" fill="#55574f" font-family="Arial,sans-serif" font-size="10">${xLabel}</text><text x="13" y="145" text-anchor="middle" transform="rotate(-90 13 145)" fill="#55574f" font-family="Arial,sans-serif" font-size="10">${yLabel}</text></svg>`;
+  const shell = (title, subtitle, xLabel, yLabel, body) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img">${paletteStyle}<text x="28" y="28" fill="var(--ink)" font-family="Arial,sans-serif" font-size="16" font-weight="700">${title}</text><text x="28" y="47" fill="var(--muted)" font-family="Arial,sans-serif" font-size="10">${subtitle}</text>${body}<text x="238" y="286" text-anchor="middle" fill="var(--axis)" font-family="Arial,sans-serif" font-size="10">${xLabel}</text><text x="13" y="145" text-anchor="middle" transform="rotate(-90 13 145)" fill="var(--axis)" font-family="Arial,sans-serif" font-size="10">${yLabel}</text></svg>`;
   const hist = (zh) => {
     const bins = [2, 6, 11, 15, 12, 7, 3], left = 62, top = 74, width = 350, height = 158, max = 15, bw = width / bins.length;
-    const grid = [0, 5, 10, 15].map(v => { const y = top + height - v / max * height; return `<line x1="${left}" y1="${y}" x2="${left+width}" y2="${y}" stroke="#e6e8df"/><text x="${left-9}" y="${y+3}" text-anchor="end" fill="#74766e" font-size="9">${v}</text>`; }).join('');
-    const bars = bins.map((v,i) => { const h=v/max*height, x=left+i*bw, y=top+height-h; return `<rect x="${x}" y="${y}" width="${bw+0.5}" height="${h}" fill="#4d8ba6" stroke="#fbfbf8" stroke-width="1"/><text x="${x+bw/2}" y="${y-5}" text-anchor="middle" fill="#34424a" font-size="9">${v}</text><text x="${x+bw/2}" y="${top+height+14}" text-anchor="middle" fill="#74766e" font-size="8">${i*10}–${(i+1)*10}</text>`; }).join('');
-    const body=`${grid}${bars}<line x1="${left}" y1="${top+height}" x2="${left+width}" y2="${top+height}" stroke="#686b62"/><line x1="${left}" y1="${top}" x2="${left}" y2="${top+height}" stroke="#686b62"/><text x="${left+width}" y="${top-8}" text-anchor="end" fill="#8b8d84" font-size="9">n = 56</text>`;
+    const grid = [0, 5, 10, 15].map(v => { const y = top + height - v / max * height; return `<line x1="${left}" y1="${y}" x2="${left+width}" y2="${y}" stroke="var(--gridFine)"/><text x="${left-9}" y="${y+3}" text-anchor="end" fill="var(--muted)" font-size="9">${v}</text>`; }).join('');
+    const bars = bins.map((v,i) => { const h=v/max*height, x=left+i*bw, y=top+height-h; return `<rect x="${x}" y="${y}" width="${bw+0.5}" height="${h}" fill="var(--blue)" stroke="var(--paper)" stroke-width="1"/><text x="${x+bw/2}" y="${y-5}" text-anchor="middle" fill="var(--axis)" font-size="9">${v}</text><text x="${x+bw/2}" y="${top+height+14}" text-anchor="middle" fill="var(--muted)" font-size="8">${i*10}–${(i+1)*10}</text>`; }).join('');
+    const body=`${grid}${bars}<line x1="${left}" y1="${top+height}" x2="${left+width}" y2="${top+height}" stroke="var(--axisStrong)"/><line x1="${left}" y1="${top}" x2="${left}" y2="${top+height}" stroke="var(--axisStrong)"/><text x="${left+width}" y="${top-8}" text-anchor="end" fill="var(--muted)" font-size="9">n = 56</text>`;
     return uri(shell(zh?'直方图 · 示例频数':'Histogram · example counts',zh?'连续测量值按区间计数；相邻箱无缝相接':'Continuous measurements counted in intervals; adjacent bins touch',zh?'测量区间':'Measurement interval',zh?'频数':'Count',body));
   };
   const density = (zh) => {
@@ -928,28 +940,65 @@ const vlxChartArt20261102 = (() => {
     const pts=ds.map((v,i)=>`${left+i/(ds.length-1)*width},${top+height-v/max*height}`);
     const path=`M ${left},${top+height} L ${pts.join(' L ')} L ${left+width},${top+height} Z`;
     const line=`M ${pts.join(' L ')}`;
-    const grid=[0,.1,.2,.3,.4].map(v=>{const y=top+height-v/max*height;if(y<top)return '';return `<line x1="${left}" y1="${y}" x2="${left+width}" y2="${y}" stroke="#e6e8df"/><text x="${left-8}" y="${y+3}" text-anchor="end" fill="#74766e" font-size="9">${v.toFixed(1)}</text>`}).join('');
-    const rug=samples.map(v=>{const x=left+(v-3)/5*width;return `<line x1="${x}" y1="${top+height+3}" x2="${x}" y2="${top+height+9}" stroke="#8c6974" stroke-width="1.5"/>`}).join('');
-    const body=`${grid}<path d="${path}" fill="#b9d8e1" fill-opacity=".62"/><path d="${line}" fill="none" stroke="#347890" stroke-width="2.5"/><line x1="${left}" y1="${top+height}" x2="${left+width}" y2="${top+height}" stroke="#686b62"/>${rug}<text x="${left}" y="${top+height+21}" text-anchor="middle" fill="#74766e" font-size="9">3</text><text x="${left+width/2}" y="${top+height+21}" text-anchor="middle" fill="#74766e" font-size="9">5.5</text><text x="${left+width}" y="${top+height+21}" text-anchor="middle" fill="#74766e" font-size="9">8</text><text x="${left+width}" y="${top-8}" text-anchor="end" fill="#8b8d84" font-size="9">n = 12 · h = 0.5</text>`;
+    const grid=[0,.1,.2,.3,.4].map(v=>{const y=top+height-v/max*height;if(y<top)return '';return `<line x1="${left}" y1="${y}" x2="${left+width}" y2="${y}" stroke="var(--gridFine)"/><text x="${left-8}" y="${y+3}" text-anchor="end" fill="var(--muted)" font-size="9">${v.toFixed(1)}</text>`}).join('');
+    const rug=samples.map(v=>{const x=left+(v-3)/5*width;return `<line x1="${x}" y1="${top+height+3}" x2="${x}" y2="${top+height+9}" stroke="var(--roseDeep)" stroke-width="1.5"/>`}).join('');
+    const body=`${grid}<path d="${path}" fill="var(--blueSoft)" fill-opacity=".62"/><path d="${line}" fill="none" stroke="var(--blueDeep)" stroke-width="2.5"/><line x1="${left}" y1="${top+height}" x2="${left+width}" y2="${top+height}" stroke="var(--axisStrong)"/>${rug}<text x="${left}" y="${top+height+21}" text-anchor="middle" fill="var(--muted)" font-size="9">3</text><text x="${left+width/2}" y="${top+height+21}" text-anchor="middle" fill="var(--muted)" font-size="9">5.5</text><text x="${left+width}" y="${top+height+21}" text-anchor="middle" fill="var(--muted)" font-size="9">8</text><text x="${left+width}" y="${top-8}" text-anchor="end" fill="var(--muted)" font-size="9">n = 12 · h = 0.5</text>`;
     return uri(shell(zh?'Density plot · Gaussian KDE':'Density plot · Gaussian KDE',zh?'由列出的 12 个样本与带宽 h = 0.5 计算；下方短线为观测值':'Computed from the 12 listed samples with bandwidth h = 0.5; rug marks show observations',zh?'观测值':'Observed value',zh?'概率密度':'Density',body));
   };
   const matrix = (zh) => {
-    const values=Array.from({length:100},(_,i)=>i<46?0:i<80?1:2), colors=['#347890','#d08a55','#bd6c82'],labels=zh?['A · 46 (46%)','B · 34 (34%)','C · 20 (20%)']:['A · 46 (46%)','B · 34 (34%)','C · 20 (20%)'];
+    const values=Array.from({length:100},(_,i)=>i<46?0:i<80?1:2), colors=['var(--blueDeep)','var(--amber)','var(--rose)'],labels=zh?['A · 46 (46%)','B · 34 (34%)','C · 20 (20%)']:['A · 46 (46%)','B · 34 (34%)','C · 20 (20%)'];
     const dots=values.map((v,i)=>{const x=82+(i%10)*28,y=82+Math.floor(i/10)*18;return `<circle cx="${x}" cy="${y}" r="5.5" fill="${colors[v]}"/>`}).join('');
-    const legend=labels.map((label,i)=>{const x=70+i*132;return `<circle cx="${x}" cy="270" r="4" fill="${colors[i]}"/><text x="${x+9}" y="273" fill="#55574f" font-size="9">${label}</text>`}).join('');
-    const body=`<text x="82" y="66" fill="#77796f" font-size="9">${zh?'每个圆点代表 1 个单位 · 总数 100':'1 dot = 1 unit · total 100'}</text>${dots}${legend}`;
+    const legend=labels.map((label,i)=>{const x=70+i*132;return `<circle cx="${x}" cy="270" r="4" fill="${colors[i]}"/><text x="${x+9}" y="273" fill="var(--axis)" font-size="9">${label}</text>`}).join('');
+    const body=`<text x="82" y="66" fill="var(--muted)" font-size="9">${zh?'每个圆点代表 1 个单位 · 总数 100':'1 dot = 1 unit · total 100'}</text>${dots}${legend}`;
     return uri(shell(zh?'点矩阵图 · 100 个单位':'Dot matrix chart · 100 units',zh?'类别按行读取；颜色编码类别，各点等权':'Read rows left to right; color encodes category and every dot has equal weight','','',body));
   };
   const errorBars = (zh) => {
     const rows=[{name:'A',mean:4.2,lo:3.6,hi:4.8},{name:'B',mean:5.1,lo:4.3,hi:5.9},{name:'C',mean:6.3,lo:5.5,hi:7.1}], left=80,top=86,width=340;
     const x=v=>left+v/10*width;
-    const ticks=[0,2,4,6,8,10].map(v=>`<line x1="${x(v)}" y1="${top-14}" x2="${x(v)}" y2="${top+126}" stroke="#e6e8df"/><text x="${x(v)}" y="${top+143}" text-anchor="middle" fill="#74766e" font-size="9">${v}</text>`).join('');
-    const marks=rows.map((r,i)=>{const y=top+i*44;return `<text x="64" y="${y+4}" text-anchor="end" fill="#55574f" font-size="10">${r.name}</text><line x1="${x(r.lo)}" y1="${y}" x2="${x(r.hi)}" y2="${y}" stroke="#347890" stroke-width="2.5"/><line x1="${x(r.lo)}" y1="${y-6}" x2="${x(r.lo)}" y2="${y+6}" stroke="#347890" stroke-width="2"/><line x1="${x(r.hi)}" y1="${y-6}" x2="${x(r.hi)}" y2="${y+6}" stroke="#347890" stroke-width="2"/><circle cx="${x(r.mean)}" cy="${y}" r="4.5" fill="#d27669"/><text x="${x(r.mean)}" y="${y-9}" text-anchor="middle" fill="#55574f" font-size="8">${r.mean.toFixed(1)}</text>`}).join('');
-    const body=`${ticks}${marks}<text x="${left+width}" y="${top-22}" text-anchor="end" fill="#8b8d84" font-size="9">${zh?'● 均值　线段 = 95% CI':'● mean　line = 95% CI'}</text>`;
+    const ticks=[0,2,4,6,8,10].map(v=>`<line x1="${x(v)}" y1="${top-14}" x2="${x(v)}" y2="${top+126}" stroke="var(--gridFine)"/><text x="${x(v)}" y="${top+143}" text-anchor="middle" fill="var(--muted)" font-size="9">${v}</text>`).join('');
+    const marks=rows.map((r,i)=>{const y=top+i*44;return `<text x="64" y="${y+4}" text-anchor="end" fill="var(--axis)" font-size="10">${r.name}</text><line x1="${x(r.lo)}" y1="${y}" x2="${x(r.hi)}" y2="${y}" stroke="var(--blueDeep)" stroke-width="2.5"/><line x1="${x(r.lo)}" y1="${y-6}" x2="${x(r.lo)}" y2="${y+6}" stroke="var(--blueDeep)" stroke-width="2"/><line x1="${x(r.hi)}" y1="${y-6}" x2="${x(r.hi)}" y2="${y+6}" stroke="var(--blueDeep)" stroke-width="2"/><circle cx="${x(r.mean)}" cy="${y}" r="4.5" fill="var(--coral)"/><text x="${x(r.mean)}" y="${y-9}" text-anchor="middle" fill="var(--axis)" font-size="8">${r.mean.toFixed(1)}</text>`}).join('');
+    const body=`${ticks}${marks}<text x="${left+width}" y="${top-22}" text-anchor="end" fill="var(--muted)" font-size="9">${zh?'● 均值　线段 = 95% CI':'● mean　line = 95% CI'}</text>`;
     return uri(shell(zh?'Error bars · illustrative estimates':'Error bars · illustrative estimates',zh?'区间含义已标注为 95% CI；示例数值并非来自实测':'Intervals are labeled 95% CI; example values are not measured data',zh?'估计值':'Estimate',zh?'组别':'Group',body));
   };
+
+  const parallelSets = (zh) => {
+    const flows=[
+      {r:'N',d:'D',p:'B',n:18},{r:'N',d:'D',p:'P',n:12},{r:'N',d:'M',p:'B',n:14},{r:'N',d:'M',p:'P',n:16},
+      {r:'S',d:'D',p:'B',n:8},{r:'S',d:'D',p:'P',n:7},{r:'S',d:'M',p:'B',n:9},{r:'S',d:'M',p:'P',n:16}
+    ];
+    const cats={r:['N','S'],d:['D','M'],p:['B','P']}, tops={r:88,d:88,p:88}, scale=1.35, gap=8;
+    const sorters={r:(a,b)=>a.d.localeCompare(b.d)||a.p.localeCompare(b.p),d:(a,b)=>a.r.localeCompare(b.r)||a.p.localeCompare(b.p),p:(a,b)=>a.r.localeCompare(b.r)||a.d.localeCompare(b.d)};
+    const blocks={};
+    for(const k of ['r','d','p']){let y=tops[k];blocks[k]=[];for(const category of cats[k]){const group=flows.filter(f=>f[k]===category).sort(sorters[k]);const total=group.reduce((s,f)=>s+f.n,0);blocks[k].push({category,y,height:total*scale,total});for(const f of group){f['y'+k]=y;y+=f.n*scale}y+=gap}}
+    const xs={r:120,d:245,p:370}, bw=14, regionColor={N:'var(--blue)',S:'var(--amber)'};
+    const ribbons=flows.map(f=>{const h=f.n*scale,c=regionColor[f.r];return ['r','d'].map((a,i)=>{const b=i?'p':'d',x0=xs[a]+bw,x1=xs[b],y0=f['y'+a],y1=f['y'+b],m=(x0+x1)/2;return `<path d="M ${x0} ${y0} C ${m} ${y0},${m} ${y1},${x1} ${y1} L ${x1} ${y1+h} C ${m} ${y1+h},${m} ${y0+h},${x0} ${y0+h} Z" fill="${c}" fill-opacity=".46" stroke="${c}" stroke-opacity=".28" stroke-width=".5"/>`}).join('')}).join('');
+    const blocksSvg=['r','d','p'].map(k=>blocks[k].map(b=>{const c=k==='r'?regionColor[b.category]:'var(--gridSoft)',x=xs[k];const label=k==='r'?(zh?(b.category==='N'?'北区':'南区'):(b.category==='N'?'North':'South')):k==='d'?(zh?(b.category==='D'?'桌面':'移动'):(b.category==='D'?'Desktop':'Mobile')):(zh?(b.category==='B'?'基础':'专业'):(b.category==='B'?'Basic':'Pro'));const side=k==='r'?-7: x+bw+7;const anchor=k==='r'?'end':'start';return `<rect x="${x}" y="${b.y}" width="${bw}" height="${b.height}" fill="${c}" stroke="var(--paper)" stroke-width="1"/><text x="${side}" y="${b.y+b.height/2+3}" text-anchor="${anchor}" fill="var(--axis)" font-size="9">${label} ${b.total}</text>`}).join('')).join('');
+    const headers=(zh?[[xs.r,'地区'],[xs.d,'设备'],[xs.p,'方案']]:[[xs.r,'Region'],[xs.d,'Device'],[xs.p,'Plan']]).map(([x,t])=>`<text x="${x+bw/2}" y="75" text-anchor="middle" fill="var(--axis)" font-size="9" font-weight="600">${t}</text>`).join('');
+    const body=`${headers}${ribbons}${blocksSvg}<text x="${xs.r}" y="259" fill="var(--axis)" font-size="9">● ${zh?'北区':'North'}　● ${zh?'南区':'South'}</text><circle cx="${xs.r+4}" cy="256" r="3" fill="var(--blue)"/><circle cx="${xs.r+60}" cy="256" r="3" fill="var(--amber)"/><text x="438" y="76" text-anchor="end" fill="var(--muted)" font-size="9">n = 100</text>`;
+    return uri(shell(zh?'平行集 · 订单流量':'Parallel sets · order flows',zh?'三组分类维度；流带宽度随记录数变化，不使用箭头':'Three categorical dimensions; ribbon width tracks record count, with no arrows','','',body));
+  };
+  const populationPyramid = (zh) => {
+    const ages=['60+','45–59','30–44','15–29','0–14'],male=[5,8,12,16,18],female=[7,10,13,15,17],center=240,zeroL=216,zeroR=264,scale=6.8,top=94,row=29;
+    const bars=ages.map((age,i)=>{const y=top+i*row,wM=male[i]*scale,wF=female[i]*scale;return `<rect x="${zeroL-wM}" y="${y}" width="${wM}" height="18" fill="var(--blue)"/><rect x="${zeroR}" y="${y}" width="${wF*1.0}" height="18" fill="var(--coralSoft)"/><text x="${center}" y="${y+13}" text-anchor="middle" fill="var(--axis)" font-size="9">${age}</text><text x="${zeroL-wM-4}" y="${y+12}" text-anchor="end" fill="var(--slateMid)" font-size="8">${male[i]}</text><text x="${zeroR+wF+4}" y="${y+12}" fill="var(--roseDeep)" font-size="8">${female[i]}</text>`}).join('');
+    const ticks=[0,10,20].map(v=>{const xl=zeroL-v*scale,xr=zeroR+v*scale;return `<line x1="${xl}" y1="85" x2="${xl}" y2="245" stroke="var(--gridFine)"/><line x1="${xr}" y1="85" x2="${xr}" y2="245" stroke="var(--gridFine)"/><text x="${xl}" y="254" text-anchor="middle" fill="var(--muted)" font-size="8">${v}</text><text x="${xr}" y="254" text-anchor="middle" fill="var(--muted)" font-size="8">${v}</text>`}).join('');
+    const body=`<text x="${zeroL-55}" y="76" fill="var(--blueDeep)" font-size="9">${zh?'男性':'Male'}</text><text x="${zeroR+42}" y="76" fill="var(--rose)" font-size="9">${zh?'女性':'Female'}</text><text x="${zeroL}" y="76" text-anchor="middle" fill="var(--muted)" font-size="8">${zh?'千人':'thousands'}</text>${ticks}${bars}<line x1="${zeroL}" y1="84" x2="${zeroL}" y2="245" stroke="var(--axisStrong)"/><line x1="${zeroR}" y1="84" x2="${zeroR}" y2="245" stroke="var(--axisStrong)"/><text x="${center}" y="274" text-anchor="middle" fill="var(--muted)" font-size="9">${zh?'年龄组':'Age group'}</text><text x="440" y="75" text-anchor="end" fill="var(--muted)" font-size="8">n = 121k · ${zh?'示意':'illustrative'}</text>`;
+    return uri(shell(zh?'人口金字塔 · 示例人口':'Population pyramid · example population',zh?'左右镜像展示年龄组人口；数值为示意，单位千人':'Mirror age-group population around a shared center; illustrative values in thousands','','',body));
+  };
+  const stemLeaf = (zh) => {
+    const body=`<rect x="72" y="80" width="336" height="167" rx="8" fill="var(--neutralLight)" stroke="var(--grid)"/><text x="120" y="105" text-anchor="middle" fill="var(--axis)" font-family="Arial,sans-serif" font-size="10" font-weight="600">${zh?'茎（十位）':'Stem (tens)'}</text><text x="280" y="105" text-anchor="middle" fill="var(--axis)" font-family="Arial,sans-serif" font-size="10" font-weight="600">${zh?'叶（个位）':'Leaf (ones)'}</text><line x1="194" y1="91" x2="194" y2="218" stroke="var(--neutral)"/><g fill="var(--ink)" font-family="ui-monospace,monospace" font-size="16"><text x="142" y="139" text-anchor="end">0</text><text x="142" y="171" text-anchor="end">1</text><text x="142" y="203" text-anchor="end">2</text><text x="216" y="139">2 4</text><text x="216" y="171">1 7</text><text x="216" y="203">0 3</text></g><text x="240" y="236" text-anchor="middle" fill="var(--muted)" font-family="Arial,sans-serif" font-size="9">${zh?'键：1 | 7 = 17　·　n = 6':'Key: 1 | 7 = 17　·　n = 6'}</text><text x="408" y="72" text-anchor="end" fill="var(--muted)" font-size="9">${zh?'排序后的原始值':'sorted raw values'}</text>`;
+    return uri(shell(zh?'茎叶图 · 保留原始数值':'Stem-and-leaf plot · raw values retained',zh?'按十位分组，个位叶按升序排列；示例数据：2、4、11、17、20、23':'Group by tens and sort the ones digits; example data: 2, 4, 11, 17, 20, 23','','',body));
+  };
+  const venn = (zh) => {
+    const universe='<rect x="88" y="60" width="332" height="234" rx="7" fill="none" stroke="var(--axisStrong)" stroke-width="1.5"/><text x="98" y="77" fill="var(--axisStrong)" font-size="10" font-weight="700">U</text>';
+    const circles=`<circle cx="190" cy="158" r="70" fill="var(--blueSoft)" fill-opacity=".24" stroke="var(--blueDeep)" stroke-width="2"/><circle cx="290" cy="158" r="70" fill="var(--amberSoft)" fill-opacity=".24" stroke="var(--amberDeep)" stroke-width="2"/><circle cx="240" cy="220" r="70" fill="var(--coralSoft)" fill-opacity=".24" stroke="var(--roseDeep)" stroke-width="2"/>`;
+    const labels=`<text x="144" y="107" fill="var(--blueDeep)" font-size="11" font-weight="700">A</text><text x="326" y="107" fill="var(--amberDeep)" font-size="11" font-weight="700">B</text><text x="240" y="296" text-anchor="middle" fill="var(--roseDeep)" font-size="11" font-weight="700">C</text><g fill="var(--slate)" font-family="ui-monospace,monospace" font-size="10"><text x="157" y="162">a</text><text x="321" y="162">e</text><text x="240" y="269" text-anchor="middle">g</text><text x="240" y="122" text-anchor="middle">c</text><text x="201" y="211" text-anchor="middle">b</text><text x="279" y="211" text-anchor="middle">f</text><text x="240" y="182" text-anchor="middle" font-weight="700">d</text><text x="390" y="248" text-anchor="middle">h</text></g><text x="390" y="264" text-anchor="middle" fill="var(--muted)" font-size="8">${zh?'在 U 内、集合外':'in U, outside A/B/C'}</text>`;
+    const body=`${universe}${circles}${labels}<text x="438" y="76" text-anchor="end" fill="var(--muted)" font-size="8">${zh?'集合成员示意，不按面积编码':'membership example; area is not quantitative'}</text>`;
+    return uri(shell(zh?'维恩图 · 三集合关系':'Venn diagram · three-set relations',zh?'显示三组集合的全部交集；字母代表元素，不按区域面积表示数量':'Show all intersections of three sets; letters are elements, not area-scaled counts','','',body));
+  };
   return {histogram:{zh:hist(true),en:hist(false)},density:{zh:density(true),en:density(false)},matrix:{zh:matrix(true),en:matrix(false)},errorBars:{zh:errorBars(true),en:errorBars(false)}};
-})();
+}
+
+const vlxChartArt20261102 = createAtlasAChartArt();
 
 _atlasExpansion_f1dd93589e91ef8f_dataviz.items.push(...[
   {id:'histogram',zh:'直方图',en:'Histogram',dz:'连续数值按相邻区间分箱；每个柱高表示该区间的频数。',de:'Continuous values are grouped into adjacent intervals; each bar height encodes that interval’s frequency.',pz:'数据：56 个示例测量值；箱宽 10；柱间不留空隙。核对区间边界与各箱频数后再调整箱宽。',pe:'Example: 56 measurements, bin width 10, with no gaps between bins. Check interval boundaries and counts before changing bin width.',demo:'shape',n:1,chartSvg:vlxChartArt20261102.histogram,chartAlt:{zh:'直方图示例：56 个示例值分入七个连续的 10 单位区间，柱高标注频数。',en:'Histogram example: 56 example values in seven contiguous 10-unit intervals, with frequencies labeled.'},css:'.fxshape{width:min(480px,96%);height:300px}.fx{width:100%;height:100%;border-radius:0;background:transparent;box-shadow:none}'},
