@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import dataviz, { ATLAS_A_TOKENS, createAtlasAChartArt } from '../src/data/effects-fx/dataviz.js'
+import dataviz, { ATLAS_A_TOKENS, createAtlasAChartArt, createAtlasBatch06ChartArt } from '../src/data/effects-fx/dataviz.js'
 
 const decodeSvg = dataUrl => decodeURIComponent(dataUrl.slice(dataUrl.indexOf(',') + 1))
 
@@ -24,9 +24,9 @@ test('Atlas A tokens update multiple chart SVGs and defaults restore cleanly', (
   assert.ok(Object.isFrozen(ATLAS_A_TOKENS))
 })
 
-test('all sixteen Atlas A chart illustrations use the shared palette and transparent SVG shells', () => {
-  const art = createAtlasAChartArt()
-  assert.equal(Object.keys(art).length, 16)
+test('all twenty Atlas A chart illustrations use the shared palette and transparent SVG shells', () => {
+  const art = { ...createAtlasAChartArt(), ...createAtlasBatch06ChartArt() }
+  assert.equal(Object.keys(art).length, 20)
   for (const [id, languages] of Object.entries(art)) {
     for (const svgUrl of Object.values(languages)) {
       const svg = decodeSvg(svgUrl)
@@ -38,6 +38,47 @@ test('all sixteen Atlas A chart illustrations use the shared palette and transpa
       assert.doesNotMatch(svg, /<rect\s+width="480"\s+height="300"/, id)
     }
   }
+})
+
+test('Batch 06 examples preserve reversal, periodic, area and link encodings', () => {
+  const original = createAtlasBatch06ChartArt()
+  const changed = createAtlasBatch06ChartArt({ ...ATLAS_A_TOKENS, mistBlue: '#123456' })
+  for (const id of Object.keys(original)) {
+    assert.match(decodeSvg(original[id].en), /--mistBlue:#BFDDF4/)
+    assert.match(decodeSvg(changed[id].en), /--mistBlue:#123456/)
+    assert.doesNotMatch(decodeSvg(original[id].en), /<rect\s+width="480"\s+height="300"/)
+  }
+
+  const kagi = dataviz.items.find(item => item.id === 'kagi-chart')
+  assert.match(kagi.chartAlt.en, /100, 110, 105, 120, 111, 125 and 99/)
+  const kagiSvg = decodeSvg(kagi.chartSvg.en)
+  assert.match(kagiSvg, /below prior waist → Yin/)
+  assert.match(kagiSvg, /above prior shoulder → Yang/)
+  assert.match(kagiSvg, /not a time scale/)
+  assert.equal((kagiSvg.match(/stroke="var\(--slateMid\)" stroke-width="2\.2"/g) || []).length, 3)
+  assert.equal((kagiSvg.match(/stroke="var\(--lakeGreenInk\)" stroke-width="4"/g) || []).length, 4)
+  assert.equal((kagiSvg.match(/stroke="var\(--crystalPinkInk\)" stroke-width="2\.2"/g) || []).length, 1)
+
+  const spiral = dataviz.items.find(item => item.id === 'spiral-plot')
+  assert.match(spiral.chartAlt.en, /two 12-month turns/)
+  assert.match(decodeSvg(spiral.chartSvg.en), /12 months \/ turn/)
+  assert.match(decodeSvg(spiral.chartSvg.en), /monthly value offset/)
+  assert.match(decodeSvg(spiral.chartSvg.en), /Jan/)
+  assert.match(decodeSvg(spiral.chartSvg.en), /Apr/)
+  assert.doesNotMatch(decodeSvg(spiral.chartSvg.en), /undefined/)
+
+  const bubble = dataviz.items.find(item => item.id === 'bubble-map')
+  assert.match(bubble.chartAlt.en, /25, 16, 12, 9 and 4 visits/)
+  assert.match(decodeSvg(bubble.chartSvg.en), /circle area ∝ value/)
+  assert.match(decodeSvg(bubble.chartSvg.en), /r="15.00"/)
+  assert.match(decodeSvg(bubble.chartSvg.en), /r="12.00"/)
+
+  const nonRibbon = dataviz.items.find(item => item.id === 'non-ribbon-chord-diagram')
+  const svg = decodeSvg(nonRibbon.chartSvg.en)
+  assert.match(nonRibbon.chartAlt.en, /five fixed-width links/)
+  assert.match(svg, /5 relations · fixed line width · no ribbons/)
+  assert.equal((svg.match(/<line\b/g) || []).length, 5)
+  assert.match(svg, /connections only · no value encoding/)
 })
 
 test('revised Pyramid and Venn examples show their documented regions and order', () => {

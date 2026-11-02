@@ -93,6 +93,10 @@ test('generated overview preserves every category count and sample name without 
     'dataviz/network-diagram': 'https://datavizcatalogue.com/methods/network_diagram.html',
     'dataviz/sankey-diagram': 'https://datavizcatalogue.com/methods/sankey_diagram.html',
     'dataviz/chord-diagram': 'https://datavizcatalogue.com/methods/chord_diagram.html',
+    'dataviz/kagi-chart': 'https://datavizcatalogue.com/methods/kagi_chart.html',
+    'dataviz/spiral-plot': 'https://datavizcatalogue.com/methods/spiral_plot.html',
+    'dataviz/bubble-map': 'https://datavizcatalogue.com/methods/bubble_map.html',
+    'dataviz/non-ribbon-chord-diagram': 'https://datavizcatalogue.com/methods/non_ribbon_chord_diagram.html',
   }
   const datavizSearch = search.find(category => category.id === 'dataviz')
   for (const [key, url] of Object.entries(directSources)) {
@@ -132,4 +136,11 @@ test('generated overview preserves every category count and sample name without 
   assert.equal(sankeyImplementation.relations.length, 0)
   assert.equal(chordImplementation.relations.length, 0)
   assert.deepEqual(lexicon.entries['dataviz/network-diagram'].aliases.map(row => row.term), ['Network Graph', 'Network Map', 'Node-Link Diagram'])
+  const spiral = lexicon.entries['dataviz/spiral-plot']
+  assert.ok(spiral.aliases.some(row => row.term === 'Time Series Spiral'))
+  const nonRibbon = lexicon.entries['dataviz/non-ribbon-chord-diagram']
+  assert.equal(nonRibbon.kind, 'named-variant')
+  assert.notEqual(nonRibbon.conceptId, chord.conceptId)
+  assert.equal(nonRibbon.relations[0]?.type, 'variantOf')
+  assert.equal(nonRibbon.relations[0]?.targetId, chord.conceptId)
 })
