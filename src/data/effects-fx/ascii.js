@@ -206,10 +206,10 @@ ${PLATE}
 ${PLATE}
 .fx{font-size:20px;line-height:1.5;color:#4d8ba6;text-align:center;animation:fxk 4s ease-in-out infinite}`),
 
-    A('gitgraph', '提交图谱', 'Commit graph', 'git log --graph 那种分叉线', 'The branching lines of git log --graph',
-      '用 │╱╲├ 表示分支与合并，节点 ● ○；顺序由拓扑排序决定，不是时间——这也是它常让人看错的原因。',
-      'Branches and merges in │╱╲├ with ● ○ nodes, ordered topologically rather than chronologically — which is exactly why people misread it.',
-      ['● atlas: real dot-matrix globe\n│╲\n│ ● style: 49 page languages\n│╱\n● index: regroup navigation\n│\n● init'],
+    A('gitgraph', 'Git 提交图', 'Git commit graph', 'Git `--graph` 在提交旁绘出分支结构', 'Git `--graph` draws branch structure beside commits',
+      '用等宽文本中的 │╱╲ 与提交节点表示分支和合并；Git 默认按拓扑顺序显示图谱。',
+      'Monospace │╱╲ lanes and commit nodes show branch and merge structure; Git defaults to topological ordering for the graph.',
+      ['● fix keyboard focus\n│╲\n│ ● add tooltip help\n│╱\n● improve parser\n│\n● initial commit'],
       `@keyframes fxk{0%{clip-path:inset(0 0 62% 0)}60%,100%{clip-path:inset(0 0 0 0)}}
 ${PLATE}
 .fx{font-size:14px;line-height:1.9;color:#23232f;animation:fxk 5s ${E} infinite}`)

@@ -7,6 +7,8 @@ import { addPractices } from '../public/effects-atlas/practices.js'
 import { syncDiscoveryBrowser } from './sync-discovery-browser.mjs'
 
 const publicRoot = new URL('../public/', import.meta.url)
+const privateLexiconUrl = new URL('../src/data/atlas-lexicon.json', import.meta.url)
+const publishedLexiconUrl = new URL('../src/data/atlas-lexicon-published.json', import.meta.url)
 
 export async function buildAtlasCatalog() {
   await syncDiscoveryBrowser()
@@ -21,6 +23,30 @@ export async function buildAtlasCatalog() {
     categories = await addPractices(enrichCardSamples(modules.map(row => row.category).filter(category => category?.items?.length)))
   } finally { globalThis.fetch = originalFetch }
   const files = new Map(modules.map(row => [row.category.id, row.file]))
+  let lexiconSource, hasPrivateSource = true
+  try { lexiconSource = JSON.parse(await fs.readFile(privateLexiconUrl, 'utf8')) }
+  catch (error) {
+    if (error.code !== 'ENOENT') throw error
+    hasPrivateSource = false
+    lexiconSource = JSON.parse(await fs.readFile(publishedLexiconUrl, 'utf8'))
+  }
+  const approvedEntries = Object.entries(lexiconSource.entries || {}).filter(([, value]) => !hasPrivateSource || (value.review?.state === 'approved' && ['verified', 'not-applicable'].includes(value.demo?.status)))
+  const lexicon = Object.fromEntries(approvedEntries.map(([key, value]) => [key, {
+    conceptId: value.conceptId,
+    kind: value.kind,
+    naming: value.naming,
+    aliases: value.aliases,
+    definition: value.definition,
+    distinction: value.distinction,
+    relations: value.relations,
+    reviewStatus: 'approved',
+  }]))
+  for (const category of categories) {
+    for (const item of category.items) {
+      const record = lexicon[`${category.id}/${item.id}`]
+      if (record) Object.assign(item, record)
+    }
+  }
   // The overview needs exact counts and four sample names, never effect CSS.
   const catalog = categories.map(({ items, ...category }) => ({
     ...category,
@@ -32,12 +58,14 @@ export async function buildAtlasCatalog() {
   // Search loads prose only. The visible result's category supplies its demos.
   const search = categories.map(({ items, ...category }) => ({
     ...category,
-    items: items.map(({ id, zh, en, dz, de, pz, pe }) => ({ id, zh, en, dz, de, pz, pe })),
+    items: items.map(({ id, zh, en, dz, de, pz, pe, aliases, definition, distinction, relations, conceptId, kind }) => ({ id, zh, en, dz, de, pz, pe, aliases, definition, distinction, relations, conceptId, kind })),
   }))
   const searchJson = JSON.stringify(search)
   const searchName = `search-index.${createHash('sha256').update(searchJson).digest('hex').slice(0, 16)}.json`
   await fs.writeFile(new URL(`effects-atlas/${searchName}`, publicRoot), searchJson)
   await fs.writeFile(new URL('effects-atlas/catalog.json', publicRoot), JSON.stringify({ categories: catalog, searchIndex: `/effects-atlas/${searchName}` }))
+  await fs.writeFile(new URL('effects-atlas/lexicon.json', publicRoot), JSON.stringify({ schemaVersion: lexiconSource.schemaVersion, entries: lexicon }))
+  if (hasPrivateSource) await fs.writeFile(publishedLexiconUrl, JSON.stringify({ schemaVersion: lexiconSource.schemaVersion, entries: lexicon }))
   return { categories: catalog.length, items: catalog.reduce((n, category) => n + category.itemCount, 0) }
 }
 

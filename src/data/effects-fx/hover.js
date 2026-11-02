@@ -275,12 +275,12 @@ export default {
       "id": "tooltip",
       "zh": "提示气泡",
       "en": "Tooltip",
-      "dz": "悬停 400ms 后浮出提示",
-      "de": "A tip floats up after a 400ms delay",
-      "pz": "给显示加 transition-delay，隐藏不加，避免闪烁。",
-      "pe": "Delay on show, none on hide, so it does not flicker.",
+      "dz": "悬停或键盘聚焦时显示说明；Escape 关闭",
+      "de": "Show descriptive text on hover or keyboard focus; Escape dismisses it",
+      "pz": "用 role=tooltip 标记说明元素，并通过 aria-describedby 关联触发按钮。提示不接收焦点，Escape 可关闭；示例悬停显示延迟 350ms。",
+      "pe": "Mark the description with role=tooltip and associate it with the trigger using aria-describedby. Keep focus out of the tooltip and support Escape; this example delays hover display by 350ms.",
       "demo": "box",
-      "css": ".fx{position:relative;cursor:pointer;overflow:visible}.fx::after{content:'Tooltip';position:absolute;bottom:calc(100% + 10px);padding:7px 11px;background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2);color:#fff;font-size:12px;border-radius:6px;white-space:nowrap;opacity:0;transform:translateY(6px);transition:all .2s cubic-bezier(.22,1,.36,1)}.fx:hover::after{opacity:1;transform:none;transition-delay:.35s}"
+      "css": ".fx{width:auto;height:auto;display:flex;overflow:visible;background:transparent;border:0;box-shadow:none}.fx-tooltip-trigger{position:relative;padding:12px 18px;border:1px solid var(--atlas-material-edge);border-radius:12px;background:var(--atlas-material-blue);color:#25323a;font:600 14px/1.3 var(--fx-sans,system-ui);cursor:pointer}.fx-tooltip-trigger:focus-visible{outline:3px solid #456d82;outline-offset:3px}.fx-tooltip-content{position:absolute;z-index:5;left:50%;bottom:calc(100% + 9px);width:max-content;max-width:min(260px,75vw);padding:9px 12px;border:1px solid var(--atlas-material-edge);border-radius:9px;background:#fff;color:#25323a;font:400 13px/1.45 var(--fx-sans,system-ui);text-align:left;white-space:normal;box-shadow:var(--atlas-material-shadow);opacity:0;visibility:hidden;transform:translate(-50%,4px);transition:opacity .18s ease,transform .18s ease,visibility .18s;transition-delay:0s}.fx-tooltip-trigger:hover:not(.tooltip-dismissed) .fx-tooltip-content,.fx-tooltip-trigger:focus-visible:not(.tooltip-dismissed) .fx-tooltip-content{opacity:1;visibility:visible;transform:translate(-50%,0);transition-delay:.35s}.fx-tooltip-trigger.tooltip-dismissed .fx-tooltip-content{opacity:0;visibility:hidden;transition-delay:0s}"
     },
     {
       "id": "magnet",
