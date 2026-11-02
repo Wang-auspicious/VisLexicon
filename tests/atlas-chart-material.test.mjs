@@ -9,7 +9,7 @@ test('Atlas A tokens update multiple chart SVGs and defaults restore cleanly', (
   const changed = createAtlasAChartArt({ ...ATLAS_A_TOKENS, mistBlue: '#123456', axis: '#abcdef' })
   const restored = createAtlasAChartArt(ATLAS_A_TOKENS)
 
-  for (const id of ['histogram', 'parallelSets']) {
+  for (const id of ['histogram', 'parallelSets', 'arcDiagram', 'flowChart', 'tallyChart', 'wordCloud']) {
     const before = decodeSvg(original[id].en)
     const after = decodeSvg(changed[id].en)
     assert.match(before, /--mistBlue:#BFDDF4/)
@@ -24,9 +24,9 @@ test('Atlas A tokens update multiple chart SVGs and defaults restore cleanly', (
   assert.ok(Object.isFrozen(ATLAS_A_TOKENS))
 })
 
-test('all eight Atlas A chart illustrations use the shared palette and transparent SVG shells', () => {
+test('all twelve Atlas A chart illustrations use the shared palette and transparent SVG shells', () => {
   const art = createAtlasAChartArt()
-  assert.equal(Object.keys(art).length, 8)
+  assert.equal(Object.keys(art).length, 12)
   for (const [id, languages] of Object.entries(art)) {
     for (const svgUrl of Object.values(languages)) {
       const svg = decodeSvg(svgUrl)
@@ -55,4 +55,24 @@ test('revised Pyramid and Venn examples show their documented regions and order'
 
   const stem = dataviz.items.find(item => item.id === 'stem-and-leaf-plot')
   assert.equal(stem.en, 'Stem & Leaf Plot')
+})
+
+test('Batch 04 chart examples keep their stated counts and visual encodings', () => {
+  const arc = dataviz.items.find(item => item.id === 'arc-diagram')
+  const arcSvg = decodeSvg(arc.chartSvg.en)
+  assert.match(arc.chartAlt.en, /five linearly ordered nodes.*five undirected arcs/)
+  assert.match(arcSvg, /co-occurrences; undirected/)
+  assert.match(arcSvg, /total = 12 co-occurrences/)
+
+  const flow = dataviz.items.find(item => item.id === 'flow-chart')
+  assert.match(flow.chartAlt.en, /decision diamond.*No branch loops to the check step/)
+  assert.match(decodeSvg(flow.chartSvg.en), /Add evidence/)
+
+  const tally = dataviz.items.find(item => item.id === 'tally-chart')
+  assert.match(tally.chartAlt.en, /6\/8\/4\/7/)
+  assert.match(tally.chartAlt.en, /sum to 25/)
+
+  const cloud = dataviz.items.find(item => item.id === 'word-cloud')
+  assert.match(cloud.chartAlt.en, /seven terms show example mention counts/)
+  assert.match(decodeSvg(cloud.chartSvg.en), /color carries no second variable/)
 })

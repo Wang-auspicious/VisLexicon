@@ -85,6 +85,10 @@ test('generated overview preserves every category count and sample name without 
     'dataviz/population-pyramid': 'https://datavizcatalogue.com/methods/population_pyramid.html',
     'dataviz/stem-and-leaf-plot': 'https://datavizcatalogue.com/methods/stem_and_leaf_plot.html',
     'dataviz/venn-diagram': 'https://datavizcatalogue.com/methods/venn_diagram.html',
+    'dataviz/arc-diagram': 'https://datavizcatalogue.com/methods/arc_diagram.html',
+    'dataviz/flow-chart': 'https://datavizcatalogue.com/methods/flow_chart.html',
+    'dataviz/tally-chart': 'https://datavizcatalogue.com/methods/tally_chart.html',
+    'dataviz/word-cloud': 'https://datavizcatalogue.com/methods/wordcloud.html',
   }
   const datavizSearch = search.find(category => category.id === 'dataviz')
   for (const [key, url] of Object.entries(directSources)) {
