@@ -81,6 +81,10 @@ test('generated overview preserves every category count and sample name without 
     'dataviz/density-plot': 'https://datavizcatalogue.com/methods/density_plot.html',
     'dataviz/dot-matrix-chart': 'https://datavizcatalogue.com/methods/dot_matrix_chart.html',
     'dataviz/error-bars': 'https://datavizcatalogue.com/methods/error_bars.html',
+    'dataviz/parallel-sets': 'https://datavizcatalogue.com/methods/parallel_sets.html',
+    'dataviz/population-pyramid': 'https://datavizcatalogue.com/methods/population_pyramid.html',
+    'dataviz/stem-and-leaf-plot': 'https://datavizcatalogue.com/methods/stem_and_leaf_plot.html',
+    'dataviz/venn-diagram': 'https://datavizcatalogue.com/methods/venn_diagram.html',
   }
   const datavizSearch = search.find(category => category.id === 'dataviz')
   for (const [key, url] of Object.entries(directSources)) {
@@ -91,4 +95,5 @@ test('generated overview preserves every category count and sample name without 
     assert.equal(item.sourceUrl, url, `${key} search detail source`)
     assert.ok(!('evidenceIds' in entry) && !('evidence' in entry) && !('review' in entry), `${key} private review metadata`)
   }
+  assert.equal(datavizSearch.items.find(row => row.id === 'stem-and-leaf-plot')?.en, 'Stem & Leaf Plot')
 })
