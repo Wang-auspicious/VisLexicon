@@ -470,5 +470,18 @@ export default {
  "demo": "panel",
  "css": ".fxstack{width:260px;height:190px;padding:14px;border-radius:12px;background:#eceee6;position:relative}.fxa{position:absolute;top:52px;left:24px;width:150px;height:96px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;opacity:.92;isolation:isolate;display:flex;align-items:center;justify-content:center;font:600 10px/1.4 var(--fx-sans,system-ui);color:#587A94;text-align:center}.fxa::before{content:'';position:absolute;top:-14px;left:-14px;width:64px;height:64px;border-radius:50%;background:#C5E2D7;border:1px solid #58766B;z-index:5}.fxb{position:absolute;top:24px;left:120px;width:110px;height:70px;border-radius:10px;background:#F2CBDD;border:1px solid #8A677A;z-index:3;display:flex;align-items:center;justify-content:center;font:600 10px/1.4 var(--fx-sans,system-ui);color:#8A677A;text-align:center}.fxb::before{content:'z=3 组外'}"
 }
+,
+{
+ "id": "float-mechanism",
+ "zh": "浮动布局",
+ "en": "float",
+ "dz": "元素脱流靠边，行盒绕其行进——文字环绕的原生机制。",
+ "de": "Floats shift the box aside; line boxes flow around it.",
+ "pz": "图文环绕 float:left + 行盒绕排；现代布局交给 flex/grid，float 回归本职（环绕与首字下沉）。说「文字绕开它」即此。",
+ "pe": "float:left wraps text around the box; flex/grid own layout now.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{display:block;width:min(310px,86%);height:160px;overflow:hidden;border-radius:12px;background:#F6F7F5;border:1px solid #77796f;padding:12px;box-sizing:border-box;font:500 10.5px/1.75 var(--fx-sans,system-ui);color:#77796f;text-align:justify}.fx::before{content:'';float:left;width:92px;height:92px;margin:4px 12px 4px 0;border-radius:12px;background:#BFDDF4;border:1px solid #587A94}.fx::after{content:'浮动块占据左上，正文行盒逐行绕行：这就是环绕排版的底层机制，shape-outside 是它的几何扩展。';display:block;color:#8A677A}"
+}
 ]
 };

@@ -484,5 +484,510 @@ export default {
  "demo": "text",
  "css": ".fx{display:block;font-size:clamp(13px,2.2vw,19px);color:#23232f;padding:8px;overflow:hidden}.fx::before{content:'Monaco：未校正';display:block;font-family:Monaco,monospace;border-bottom:2px solid #8A677A;margin-bottom:10px}.fx::after{content:'Monaco：adjust 校正后';display:block;font-family:Monaco,monospace;font-size-adjust:0.54;border-bottom:2px solid #58766B;color:#58766B}"
 }
+,
+{
+ "id": "first-child",
+ "zh": "首子匹配",
+ "en": ":first-child",
+ "dz": "只命中作为第一个子元素的节点。",
+ "de": "Matches only elements that are the first child of their parent.",
+ "pz": ".item:first-child 选中列表第一项，无需 JS 打标。说「第一项特殊样式」即此。",
+ "pe": ".item:first-child styles the first item without JS flags.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:40px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box}.fx:first-child{background:#F2CBDD;border-color:#8A677A}.fx:first-child::after{content:'我是第一个孩子 → 命中 :first-child';font:600 10px/40px var(--fx-sans,system-ui);color:#8A677A;padding-left:12px}"
+},
+{
+ "id": "last-child",
+ "zh": "末子匹配",
+ "en": ":last-child",
+ "dz": "只命中作为最后一个子元素的节点。",
+ "de": "Matches only the last child of its parent.",
+ "pz": "列表末项去分隔线：.item:last-child{border-bottom:0}。说「最后一项」即此。",
+ "pe": ".item:last-child{border-bottom:0} drops the final divider.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:40px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box}.fx:last-child{background:#C5E2D7;border-color:#58766B}.fx:last-child::after{content:'我是最后一个孩子 → 命中 :last-child';font:600 10px/40px var(--fx-sans,system-ui);color:#58766B;padding-left:12px}"
+},
+{
+ "id": "only-child",
+ "zh": "独子匹配",
+ "en": ":only-child",
+ "dz": "命中没有任何兄弟的元素。",
+ "de": "Matches elements with no siblings at all.",
+ "pz": "单卡片布局与多卡片布局的样式分叉：.card:only-child{max-width:480px}。说「只有一个孩子时」即此。",
+ "pe": ".card:only-child{max-width:480px} adapts single-card layouts.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:40px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box}.fx:only-child{background:#F2CBDD;border-color:#8A677A}.fx:only-child::after{content:'整个列表只有我 → 命中 :only-child';font:600 10px/40px var(--fx-sans,system-ui);color:#8A677A;padding-left:12px}"
+},
+{
+ "id": "nth-child",
+ "zh": "序位公式匹配",
+ "en": ":nth-child()",
+ "dz": "用 An+B 公式按位置批量选中兄弟。",
+ "de": "Selects siblings by position with the An+B micro-syntax.",
+ "pz": "斑马纹 li:nth-child(2n)；隔行高亮 nth-child(4n+1)。说「偶数行」「隔三选一」即此。",
+ "pe": "li:nth-child(2n) zebra-stripes lists; An+B encodes any rhythm.",
+ "aliases": [
+  {
+   "term": "An+B",
+   "language": "en",
+   "scope": "位置微语法的规范名"
+  }
+ ],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:38px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box}.fx:nth-child(2n){background:#F2CBDD;border-color:#8A677A}.fx:nth-child(2n)::after{content:'偶数位 → nth-child(2n)';font:600 10px/38px var(--fx-sans,system-ui);color:#8A677A;padding-left:12px}"
+},
+{
+ "id": "nth-last-child",
+ "zh": "逆序位匹配",
+ "en": ":nth-last-child()",
+ "dz": "从末尾往前数的 An+B 位置匹配。",
+ "de": "An+B position matching counted from the end.",
+ "pz": "最后两项特殊处理：.item:nth-last-child(-n+2){color:...}。说「从后往前数」即此。",
+ "pe": ".item:nth-last-child(-n+2) targets the final two items.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:38px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box}.fx:nth-last-child(-n+2){background:#C5E2D7;border-color:#58766B}.fx:nth-last-child(-n+2)::after{content:'从末尾数前两个 → nth-last-child(-n+2)';font:600 10px/38px var(--fx-sans,system-ui);color:#58766B;padding-left:12px}"
+},
+{
+ "id": "nth-of-type",
+ "zh": "同类序匹配",
+ "en": ":nth-of-type()",
+ "dz": "只统计同类型标签的序号做 An+B 匹配。",
+ "de": "An+B matching indexed among same-type siblings only.",
+ "pz": "文章里隔段插图：img:nth-of-type(2n){margin-inline:auto}。说「同类里第几个」即此。",
+ "pe": "img:nth-of-type(2n) targets every second image among siblings.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:38px;border-radius:8px;background:#d9dde2;border:1px dashed #77796f;box-sizing:border-box}.fx:nth-of-type(2n){background:#F2CBDD;border:1px solid #8A677A}.fx:nth-of-type(2n)::after{content:'同类偶数位 → nth-of-type(2n)（虚线是其他类型兄弟）';font:600 10px/38px var(--fx-sans,system-ui);color:#8A677A;padding-left:10px}.fx:nth-of-type(odd){border-style:dashed}"
+},
+{
+ "id": "only-of-type",
+ "zh": "同类独子",
+ "en": ":only-of-type",
+ "dz": "命中同类型兄弟中唯一的那个。",
+ "de": "Matches elements that are the only one of their type among siblings.",
+ "pz": "一篇文章唯一的 <img> 特殊排版：img:only-of-type{width:100%}。说「同类型里唯一」即此。",
+ "pe": "img:only-of-type{width:100%} styles the lone image in an article.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:38px;border-radius:8px;background:#d9dde2;border:1px dashed #77796f;box-sizing:border-box}.fx:nth-child(3){background:#C5E2D7;border:1px solid #58766B}.fx:nth-child(3)::after{content:'同类唯一 → :only-of-type（虚线是其他类型）';font:600 10px/38px var(--fx-sans,system-ui);color:#58766B;padding-left:10px}"
+},
+{
+ "id": "empty-pseudo",
+ "zh": "空内容匹配",
+ "en": ":empty",
+ "dz": "命中没有任何子节点（含文本）的元素。",
+ "de": "Matches elements with no children at all, not even text.",
+ "pz": "空购物车占位：.badge:empty{display:none} 隐藏零计数气泡。说「空的时候藏掉」即此。",
+ "pe": ".badge:empty{display:none} hides empty counter badges.",
+ "aliases": [],
+ "demo": "grid",
+ "css": ".fxgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px;background:#eceee6;border-radius:12px;width:min(340px,90%);box-sizing:border-box}.fx{height:64px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;display:flex;align-items:center;justify-content:center;font:600 10px/1.4 var(--fx-sans,system-ui);color:#587A94}.fx:nth-child(2){background:#F2CBDD;border-color:#8A677A;color:#8A677A}.fx:nth-child(2)::after{content:'我有文本 → 不算空'}"
+},
+{
+ "id": "root-pseudo",
+ "zh": "文档根匹配",
+ "en": ":root",
+ "dz": "命中文档树根元素，也是自定义属性的默认家。",
+ "de": "Matches the document root; the default home for design tokens.",
+ "pz": ":root{--brand:...} 存全局设计变量，特异性高于 html 选择器。说「全局变量挂根上」即此。",
+ "pe": ":root{--brand:...} hosts global tokens with higher specificity than html.",
+ "aliases": [],
+ "demo": "box",
+ "css": ":root{--demo-ink:#587A94}.fx{width:300px;height:150px;border-radius:12px;background:#F6F7F5;border:3px solid var(--demo-ink);display:flex;align-items:center;justify-content:center;font:600 11px/1.8 var(--fx-mono,ui-monospace,monospace);color:var(--demo-ink);text-align:center;box-sizing:border-box;padding:12px}.fx::before{content':root 声明 --demo-ink：本卡的边框与文字色都从它取值'}"
+},
+{
+ "id": "hover-pseudo",
+ "zh": "悬停匹配",
+ "en": ":hover",
+ "dz": "指针悬停在元素上时命中。",
+ "de": "Matches while the pointer rests over the element.",
+ "pz": "触屏没有 hover：配合 @media (hover:hover) 包住悬停样式才是完整写法。说「悬停高亮」即此。",
+ "pe": "Wrap hover styles in @media (hover:hover) for touch safety.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:220px;height:110px;border-radius:12px;background:#BFDDF4;border:1px solid #587A94;display:flex;align-items:center;justify-content:center;font:600 11px/1.6 var(--fx-sans,system-ui);color:#587A94;text-align:center;transition:background-color .25s,border-color .25s,color .25s;box-sizing:border-box;padding:10px}.fx::before{content:'把指针移到我身上 → 命中 :hover'}@media (hover:hover){.fx:hover{background:#F2CBDD;border-color:#8A677A;color:#8A677A}}"
+},
+{
+ "id": "active-state-press",
+ "zh": "按压匹配",
+ "en": ":active",
+ "dz": "元素被按住（鼠标按下到松开之间）时命中。",
+ "de": "Matches between pointer-down and pointer-up on the element.",
+ "pz": "按钮按下下沉 1px：.btn:active{transform:translateY(1px)}。说「按下去有反馈」即此。",
+ "pe": ".btn:active{transform:translateY(1px)} gives press feedback.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:220px;height:110px;border-radius:12px;background:#C5E2D7;border:1px solid #58766B;display:flex;align-items:center;justify-content:center;font:600 11px/1.6 var(--fx-sans,system-ui);color:#58766B;text-align:center;transition:transform .12s,box-shadow .12s;box-shadow:0 3px 0 #58766B;box-sizing:border-box;padding:10px;user-select:none}.fx::before{content:'按住我不松手 → 命中 :active'}@media (hover:hover){.fx:active{transform:translateY(3px);box-shadow:0 0 0 #58766B}}"
+},
+{
+ "id": "is-pseudo",
+ "zh": "集合并匹配",
+ "en": ":is()",
+ "dz": "把一串选择器打包成一个，任一命中即命中，特异性取最高者。",
+ "de": "Packs a selector list; matches if any argument matches and takes the highest specificity.",
+ "pz": ":is(h1,h2,h3){margin:0 0 .5em} 代替重复书写。说「合并这几类」即此。",
+ "pe": ":is(h1,h2,h3){margin:0 0 .5em} replaces repetition.",
+ "aliases": [
+  {
+   "term": ":matches",
+   "language": "en",
+   "scope": "历史曾用名"
+  }
+ ],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:38px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box}.fx:is(:nth-child(1),:nth-child(4),:nth-child(6)){background:#F2CBDD;border-color:#8A677A}.fx:is(:nth-child(1),:nth-child(4),:nth-child(6))::after{content':is(1,4,6 号位) 一条搞定';font:600 10px/38px var(--fx-sans,system-ui);color:#8A677A;padding-left:12px}"
+},
+{
+ "id": "where-pseudo",
+ "zh": "零特异性匹配",
+ "en": ":where()",
+ "dz": "与 :is 同样的集合匹配，但对特异性贡献恒为 0。",
+ "de": "Same matching as :is() but contributes zero specificity.",
+ "pz": "主题默认样式用 :where 包一层，用户一条类名就能覆盖。说「零权重兜底」即此。",
+ "pe": ":where() defaults lose to any single class — perfect overridable baselines.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:38px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box}.fx:where(:nth-child(2)){background:#F2CBDD;border-color:#8A677A}.fx:where(:nth-child(2))::after{content':where 命中 2 号位，但特异性为 0 可被任意覆盖';font:600 10px/38px var(--fx-sans,system-ui);color:#8A677A;padding-left:10px}"
+},
+{
+ "id": "has-pseudo",
+ "zh": "后向匹配",
+ "en": ":has()",
+ "dz": "按后代/兄弟的存在与否反选父级与前级。",
+ "de": "Selects ancestors and predecessors by what they contain.",
+ "pz": "卡片含图时换布局：.card:has(img){grid-template-columns:120px 1fr}。说「有图就走这套」即此。",
+ "pe": ".card:has(img) switches the card layout when it contains an image.",
+ "aliases": [
+  {
+   "term": "parent selector",
+   "language": "en",
+   "scope": "社区俗称"
+  }
+ ],
+ "demo": "panel",
+ "css": ".fxstack{width:270px;height:190px;border-radius:12px;background:#eceee6;position:relative;padding:12px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px}.fxa{flex:1;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;display:flex;align-items:center;justify-content:center;font:600 10px/1.5 var(--fx-sans,system-ui);color:#587A94;text-align:center;padding:6px}.fxb{position:absolute;top:14px;right:14px;width:70px;height:44px;border-radius:8px;background:#F2CBDD;border:1px solid #8A677A;font:600 9px/44px var(--fx-sans,system-ui);color:#8A677A;text-align:center}.fxa:has(+ .fxb){background:#C5E2D7;border-color:#58766B;color:#58766B}.fxa:has(+ .fxb)::before{content:'我后面跟着粉色块 → :has(+ .fxb) 命中，绿色就是反选证据'}"
+},
+{
+ "id": "not-pseudo",
+ "zh": "排除匹配",
+ "en": ":not()",
+ "dz": "命中不满足括号内选择器的元素。",
+ "de": "Matches elements that fail the argument selector.",
+ "pz": "除最后一项都加线：.item:not(:last-child){border-bottom:1px solid ...}。说「除了它都算」即此。",
+ "pe": ".item:not(:last-child) styles everything except the last.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:38px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box;border-bottom-width:3px;border-bottom-color:#587A94}.fx:not(:last-child){border-bottom-color:#8A677A;background:#F6F7F5}.fx:not(:last-child)::before{content:'非末项 → :not(:last-child)（末项保持雾蓝薄边）';font:600 10px/38px var(--fx-sans,system-ui);color:#8A677A;padding-left:12px}"
+},
+{
+ "id": "before-pseudo",
+ "zh": "前置生成内容",
+ "en": "::before",
+ "dz": "在元素内容前生成一个可样式的伪元素盒子。",
+ "de": "Generates a stylable box before the element's content.",
+ "pz": "content 是必填项（可为空串）。图标、徽标、装饰线全靠它，不用改 HTML。说「前面加个东西」即此。",
+ "pe": "content is mandatory (can be ''); decoration without touching HTML.",
+ "aliases": [
+  {
+   "term": ":before",
+   "language": "en",
+   "scope": "CSS2 单冒号旧写法"
+  }
+ ],
+ "demo": "box",
+ "css": ".fx{width:240px;height:120px;border-radius:12px;background:#F6F7F5;border:1px solid #77796f;display:flex;align-items:center;justify-content:center;font:600 12px/1 var(--fx-sans,system-ui);color:#23232f;box-sizing:border-box}.fx::before{content:'★ 生成的徽标';background:#BFDDF4;border:1px solid #587A94;color:#587A94;border-radius:999px;padding:6px 12px;margin-right:10px;font-size:10px}"
+},
+{
+ "id": "after-pseudo",
+ "zh": "后置生成内容",
+ "en": "::after",
+ "dz": "在元素内容后生成可样式化的伪元素盒子。",
+ "de": "Generates a stylable box after the element's content.",
+ "pz": "必填链接后缀 a[href^=http]::after{content:' ↗'}；清除浮动的经典载体。说「尾部补个东西」即此。",
+ "pe": "a[href^=http]::after{content:' ↗'} marks external links.",
+ "aliases": [
+  {
+   "term": ":after",
+   "language": "en",
+   "scope": "CSS2 单冒号旧写法"
+  }
+ ],
+ "demo": "box",
+ "css": ".fx{width:240px;height:120px;border-radius:12px;background:#F6F7F5;border:1px solid #77796f;display:flex;align-items:center;justify-content:center;font:600 12px/1 var(--fx-sans,system-ui);color:#23232f;box-sizing:border-box}.fx::after{content:'↗ 外链';background:#C5E2D7;border:1px solid #58766B;color:#58766B;border-radius:999px;padding:6px 12px;margin-left:10px;font-size:10px}"
+},
+{
+ "id": "first-line-pseudo",
+ "zh": "首行样式",
+ "en": "::first-line",
+ "dz": "只作用于块的首个排版行，随换行自动伸缩。",
+ "de": "Styles only the first typeset line, however it wraps.",
+ "pz": "p::first-line{font-variant-caps:small-caps} 首行小型大写。窗口变窄行数变，样式永远只跟第一行。说「只给第一行」即此。",
+ "pe": "p::first-line{font-variant-caps:small-caps} follows the first line across resizes.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{display:block;width:min(320px,88%);height:150px;overflow:hidden;border-radius:12px;background:#F6F7F5;border:1px solid #77796f;padding:16px;box-sizing:border-box;font:500 11px/1.8 var(--fx-sans,system-ui);color:#77796f;text-align:justify}.fx::before{content:'首行采用小型大写并加深颜色：本段文字在窄容器里折行，::first-line 永远只命中排版后的第一行。其余文字保持默认灰绿色与常规字重，与首行形成清晰的编辑层级。';color:#23232f}.fx::first-line{font-variant-caps:small-caps;color:#587A94;font-weight:700;letter-spacing:.04em}"
+},
+{
+ "id": "first-letter-pseudo",
+ "zh": "首字下沉样式",
+ "en": "::first-letter",
+ "dz": "作用于块内第一个字形，可做杂志式首字下沉。",
+ "de": "Targets the first glyph of a block for drop caps.",
+ "pz": "p::first-letter{float:left;font-size:3.2em;line-height:.9} 经典首字下沉。说「首字放大」即此。",
+ "pe": "p::first-letter{float:left;font-size:3.2em} — the classic drop cap.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{display:block;width:min(320px,88%);height:160px;overflow:hidden;border-radius:12px;background:#F6F7F5;border:1px solid #77796f;padding:14px 16px;box-sizing:border-box;font:500 11px/1.8 var(--fx-sans,system-ui);color:#77796f;text-align:justify}.fx::before{content:'首字下沉把段首字形放大并浮动，正文绕其右侧行进。这一手法源自中世纪抄本，是版面仪式感最便宜的来源。'}.fx::first-letter{float:left;font-size:3.4em;line-height:.85;padding:4px 8px 0 0;font-weight:700;color:#587A94}"
+},
+{
+ "id": "selection-pseudo",
+ "zh": "选区样式",
+ "en": "::selection",
+ "dz": "用户拖选文本时的高亮配色可完全定制。",
+ "de": "Customizes the highlight when the user selects text.",
+ "pz": "::selection{background:#BFDDF4;color:#23232f} 品牌化选区。只有少数属性生效（色系系）。说「选中文字的颜色」即此。",
+ "pe": "::selection{background:#BFDDF4;color:#23232f} brands the highlight.",
+ "aliases": [],
+ "demo": "text",
+ "css": ".fx{font:700 clamp(30px,5.6vw,52px)/1.2 var(--fx-sans,system-ui);letter-spacing:-.02em;color:#23232f}.fx::selection{background:#587A94;color:#F6F7F5}"
+},
+{
+ "id": "marker-pseudo",
+ "zh": "列表标记样式",
+ "en": "::marker",
+ "dz": "列表项前面的圆点/编号盒子可以单独配色换字。",
+ "de": "The bullet or number box of a list item is independently styleable.",
+ "pz": "li::marker{color:#587A94;font-weight:700} 换标记色。可用属性少（色与字体系）。说「改列表点颜色」即此。",
+ "pe": "li::marker{color:#587A94} re-colors bullets.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px 12px 12px 34px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{display:list-item;list-style:disc;min-height:34px;border-radius:8px;background:#F6F7F5;border:1px solid #77796f;box-sizing:border-box;padding:6px 12px;font:500 11px/1.6 var(--fx-sans,system-ui);color:#23232f;margin-bottom:8px}.fx::marker{color:#587A94;font-weight:700;font-size:1.2em}"
+},
+{
+ "id": "descendant-combinator",
+ "zh": "后代组合器",
+ "en": "Descendant combinator",
+ "dz": "空格连接：命中任意深度的后代。",
+ "de": "A space: matches descendants at any depth.",
+ "pz": ".card img{border-radius:8px} 卡内所有图。任意层级都算——太宽时用 > 收紧。说「里面的所有」即此。",
+ "pe": ".card img{border-radius:8px} covers every nested image.",
+ "aliases": [
+  {
+   "term": "space combinator",
+   "language": "en",
+   "scope": "记法俗称"
+  }
+ ],
+ "demo": "panel",
+ "css": ".fxstack{width:260px;height:190px;border-radius:12px;background:#eceee6;padding:14px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px}.fxa{flex:1;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;padding:10px;box-sizing:border-box;display:flex;gap:8px}.fxa::after{content:'容器 .fxa：其所有 .dot 后代都变粉';font:600 10px/1.5 var(--fx-sans,system-ui);color:#587A94;align-self:center}.fxb{flex:1;border-radius:10px;background:#F6F7F5;border:1px solid #77796f}.fxa>u{display:block;width:34px;height:34px;border-radius:8px;background:#8A677A;text-decoration:none}.fxa>u{background:#F2CBDD;border:1px solid #8A677A}"
+},
+{
+ "id": "child-combinator",
+ "zh": "子代组合器",
+ "en": "Child combinator",
+ "dz": "> 连接：只命中直接子元素。",
+ "de": "The > combinator matches direct children only.",
+ "pz": ".nav>li 只管一级菜单，二级不受影响。控制作用域首选。说「只管儿子这层」即此。",
+ "pe": ".nav>li scopes to the first level only.",
+ "aliases": [],
+ "demo": "panel",
+ "css": ".fxstack{width:260px;height:190px;border-radius:12px;background:#eceee6;padding:14px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px}.fxa{flex:1;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;padding:10px;box-sizing:border-box;display:flex;gap:8px;align-items:center}.fxa::after{content:'只有直接子块变粉，孙块保持灰绿';font:600 10px/1.5 var(--fx-sans,system-ui);color:#587A94;flex:1}.fxa>u{display:block;width:34px;height:34px;border-radius:8px;background:#F2CBDD;border:1px solid #8A677A;text-decoration:none;position:relative}.fxa>u::before{content:'';position:absolute;inset:8px;border-radius:6px;background:#C5E2D7;border:1px solid #58766B}"
+},
+{
+ "id": "adjacent-sibling",
+ "zh": "相邻兄弟组合器",
+ "en": "Adjacent sibling combinator",
+ "dz": "+ 连接：命中紧跟其后的那个兄弟。",
+ "de": "The + combinator matches the immediately following sibling.",
+ "pz": "标题后第一段：h2+p{margin-top:.5em}。表单错误提示紧贴输入框时用它。说「紧跟的那个」即此。",
+ "pe": "h2+p{margin-top:.5em} touches only the first paragraph after a heading.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:36px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box;margin-bottom:8px}.fx:nth-child(2){background:#F2CBDD;border-color:#8A677A}.fx:nth-child(2)::after{content:'我紧跟 1 号 → 1 号 + 我 命中；3 号不受影响';font:600 10px/36px var(--fx-sans,system-ui);color:#8A677A;padding-left:12px}"
+},
+{
+ "id": "general-sibling",
+ "zh": "通用兄弟组合器",
+ "en": "General sibling combinator",
+ "dz": "~ 连接：命中其后所有符合条件的兄弟。",
+ "de": "The ~ combinator matches every later qualifying sibling.",
+ "pz": "复选框 checked 后联动后面所有行：.chk:checked ~ .row{...}。说「后面的都算」即此。",
+ "pe": ".chk:checked ~ .row lights every later row.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:36px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box;margin-bottom:8px}.fx:nth-child(2)~.fx{background:#C5E2D7;border-color:#58766B}.fx:nth-child(2)~.fx::after{content:'2 号之后的所有兄弟 → ~ 命中';font:600 10px/36px var(--fx-sans,system-ui);color:#58766B;padding-left:12px}"
+},
+{
+ "id": "universal-selector",
+ "zh": "通配选择器",
+ "en": "Universal selector",
+ "dz": "* 命中所有元素，常做全局重置与治理。",
+ "de": "* matches every element — resets and governance.",
+ "pz": "*,*::before,*::after{box-sizing:border-box} 现代重置第一行。说「所有元素」即此。",
+ "pe": "*,*::before,*::after{box-sizing:border-box} opens every reset.",
+ "aliases": [],
+ "demo": "grid",
+ "css": ".fxgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px;background:#eceee6;border-radius:12px;width:min(330px,90%);box-sizing:border-box}.fx{height:52px;border-radius:10px;background:#BFDDF4;outline:2px solid #587A94;outline-offset:2px}.fx::after{content:'*';font:700 14px/52px var(--fx-mono,ui-monospace,monospace);color:#587A94;text-align:center;display:block}"
+},
+{
+ "id": "specificity-cascade",
+ "zh": "特异性权重",
+ "en": "Specificity",
+ "dz": "三元组权重 (ID,类,类型) 决定谁说了算。",
+ "de": "The (ID, class, type) triple decides which rule wins.",
+ "pz": "比较规则：比高位，平局看出现顺序；:where 记 0、:is 记最高参。别再加 !important，先降特异性。说「权重打架」即此。",
+ "pe": "Compare position by position, then source order; lower specificity beats !important refactors.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:min(310px,86%);height:150px;border-radius:12px;background:#F6F7F5;border:1px solid #77796f;box-sizing:border-box;padding:12px;display:flex;flex-direction:column;gap:6px;justify-content:center;font:600 10.5px/1.5 var(--fx-mono,ui-monospace,monospace);color:#23232f}.fx::before{content:'#id → (1,0,0) 最重';color:#8A677A}.fx::after{content:'.class → (0,1,0) 中量';color:#587A94}.fx>b{display:block;font:600 10.5px/1.5 var(--fx-mono,ui-monospace,monospace);color:#58766B;text-decoration:none}.fx>b::before{content:'div → (0,0,1) 最轻'}"
+},
+{
+ "id": "css-inheritance",
+ "zh": "属性继承",
+ "en": "Inheritance",
+ "dz": "部分属性自动传给后代，其余默认不传。",
+ "de": "Some properties flow to descendants by default; others don't.",
+ "pz": "color/font 继承、border/margin 不继承——理解这条就明白为何「框要每个都画」。控制用 inherit/initial/unset。说「让子元素也用」即此。",
+ "pe": "color/font inherit; borders don't — hence explicit resets.",
+ "aliases": [],
+ "demo": "panel",
+ "css": ".fxstack{width:270px;height:190px;border-radius:12px;background:#eceee6;padding:14px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px;color:#587A94}.fxa{flex:1;border-radius:10px;background:#BFDDF4;border:2px solid #587A94;display:flex;align-items:center;justify-content:center;font:700 12px/1.6 var(--fx-sans,system-ui)}.fxa::before{content:'父：color 雾蓝 + 边框'}.fxb{flex:1;border-radius:10px;background:#F6F7F5;display:flex;align-items:center;justify-content:center;font:700 11px/1.6 var(--fx-sans,system-ui);text-align:center}.fxb::before{content:'子：颜色继承了（雾蓝字），边框没继承（无框）'}"
+},
+{
+ "id": "media-query-rule",
+ "zh": "媒体查询",
+ "en": "@media",
+ "dz": "按视口、偏好等条件包一层样式，条件外完全不生效。",
+ "de": "Wraps styles in a device/preference condition.",
+ "pz": "@media (max-width:640px) 是移动分支；@media (hover:none) 判断触屏。说「窄屏时」即此。",
+ "pe": "@media (max-width:640px) branches for small screens.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:min(310px,86%);height:150px;border-radius:12px;background:#BFDDF4;border:1px solid #587A94;display:flex;align-items:center;justify-content:center;font:600 11px/1.7 var(--fx-sans,system-ui);color:#587A94;text-align:center;box-sizing:border-box;padding:12px}.fx::before{content:'当前视口 ≥ 560px：显示宽屏分支样式'}@media (max-width:559px){.fx{background:#F2CBDD;border-color:#8A677A;color:#8A677A}.fx::before{content:'视口 < 560px：切换为窄屏分支样式'}}"
+},
+{
+ "id": "env-function",
+ "zh": "安全区环境值",
+ "en": "env()",
+ "dz": "读浏览器/系统注入的环境变量，如刘海屏安全区。",
+ "de": "Reads UA-injected environment variables like safe-area insets.",
+ "pz": "padding-bottom:env(safe-area-inset-bottom) 适配 iPhone 底部横条；viewport-fit=cover 是前提。说「避开小黑条」即此。",
+ "pe": "env(safe-area-inset-bottom) clears the home indicator.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:min(300px,86%);height:150px;border-radius:12px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font:600 11px/1.6 var(--fx-sans,system-ui);color:#587A94;text-align:center;padding:12px 12px max(12px, env(safe-area-inset-bottom))}.fx::before{content:'env(safe-area-inset-bottom) 当前值：本机为 0px（无刘海）'}"
+},
+{
+ "id": "custom-properties",
+ "zh": "自定义属性变量",
+ "en": "Custom properties",
+ "dz": "以 -- 开头的属性可声明、继承并由 var() 消费。",
+ "de": "--prefixed properties are declared, inherited and consumed via var().",
+ "pz": "--brand:#587A94 声明一次，var(--brand, #ccc) 处处消费，带兜底值。主题换色只改一处。说「用变量」即此。",
+ "pe": "--brand once, var(--brand, #ccc) everywhere, with fallback.",
+ "aliases": [
+  {
+   "term": "CSS variables",
+   "language": "en",
+   "scope": "社区俗称"
+  }
+ ],
+ "demo": "box",
+ "css": ".fx{--brand:#587A94;width:min(300px,86%);height:140px;border-radius:12px;background:var(--brand);border:1px solid var(--brand);display:flex;align-items:center;justify-content:center;font:600 11px/1.7 var(--fx-sans,system-ui);color:#F6F7F5;text-align:center;box-sizing:border-box;padding:10px;transition:background-color .8s;animation:fxk 3.4s ease-in-out infinite alternate}@keyframes fxk{from{--brand:#587A94}to{--brand:#8A677A}}.fx::before{content:'背景、边框、文字色全部引用 --brand：改一处全联动'}"
+},
+{
+ "id": "keyframes-rule",
+ "zh": "关键帧规则",
+ "en": "@keyframes",
+ "dz": "把动画沿时间轴的采样点写成命名规则，animation 引用播放。",
+ "de": "Named keyframe rules sampled along the timeline, played by animation.",
+ "pz": "@keyframes fxk{from{...}to{...}} 配 animation:fxk 1s infinite。中间可插任意百分比帧。说「按帧编排」即此。",
+ "pe": "@keyframes fxk{from{}to{}} referenced by the animation shorthand.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@keyframes fxk{0%{transform:translateX(0);background:#BFDDF4}45%{transform:translateX(180px);background:#F2CBDD}60%{transform:translateX(180px);background:#F2CBDD}100%{transform:translateX(0);background:#BFDDF4}}.fx{width:64px;height:64px;border-radius:14px;border:1px solid #587A94;animation:fxk 3.6s ease-in-out infinite;margin:0 auto}"
+},
+{
+ "id": "font-face-rule",
+ "zh": "字体面声明",
+ "en": "@font-face",
+ "dz": "声明一个可下载的自定义字体面，供 font-family 引用。",
+ "de": "Declares a downloadable font face referenced by font-family.",
+ "pz": "@font-face{font-family:'A';src:url(a.woff2) format('woff2');font-display:swap}；swap 先显示回退再换装。说「用这个字体文件」即此。",
+ "pe": "@font-face with font-display:swap keeps text visible during load.",
+ "aliases": [],
+ "demo": "text",
+ "css": "@font-face{font-family:'AtlasFaceDemo';src:local('Arial')}.fx{font:700 clamp(30px,5.4vw,50px)/1.2 'AtlasFaceDemo',var(--fx-sans,system-ui);letter-spacing:-.02em;color:#23232f}"
+},
+{
+ "id": "units-em-rem",
+ "zh": "根相对字号单位",
+ "en": "em / rem",
+ "dz": "em 随父级字号缩放，rem 锚定根字号。",
+ "de": "em scales with the parent font size; rem anchors to the root.",
+ "pz": "组件内节奏用 em 跟随字号，全局排版尺度用 rem。说「随字号缩放」即此。",
+ "pe": "em for component-local rhythm; rem for global scale.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:min(300px,86%);height:150px;border-radius:12px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box;padding:12px;display:flex;flex-direction:column;gap:1em;justify-content:center;font:600 12px/1.4 var(--fx-sans,system-ui);color:#23232f}.fx::before{content:'rem 行：根基准 ×1.5';font-size:1.5rem;color:#587A94}.fx::after{content:'em 行：本块 12px ×1.5';font-size:1.5em;color:#58766B}"
+},
+{
+ "id": "read-only-pseudo",
+ "zh": "只读匹配",
+ "en": ":read-only",
+ "dz": "不可编辑的元素命中 :read-only，可编辑的命中 :read-write——普通 div 也在前者之列。",
+ "de": "Non-editable elements match :read-only — plain divs included.",
+ "pz": "表单与内容页统一处理：input:read-write 加输入态样式，div:read-only 天然命中做只读版式。说「不可编辑的就是只读」即此。",
+ "pe": "div:read-only matches by default; input:read-write marks editable fields.",
+ "aliases": [],
+ "demo": "grid",
+ "css": ".fxgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px;background:#eceee6;border-radius:12px;width:min(330px,90%);box-sizing:border-box}.fx{height:56px;border-radius:10px;background:#F6F7F5;border:1px solid #77796f;display:flex;align-items:center;justify-content:center;font:600 9px/1.5 var(--fx-sans,system-ui);color:#77796f;text-align:center;padding:4px}.fx:read-only{background:#BFDDF4;border-color:#587A94;color:#587A94}.fx:read-only::after{content':read-only 命中（div 默认不可编辑）'}"
+},
+{
+ "id": "counter-mechanism",
+ "zh": "CSS 计数器",
+ "en": "CSS counters",
+ "dz": "计数器在元素流中累加，content/counter() 读出编号。",
+ "de": "Counters accumulate through the element flow; counter() reads them.",
+ "pz": "counter-reset 立账、counter-increment 计数、counter() 读数——章节编号不用 JS。说「自动编号」即此。",
+ "pe": "counter-reset/increment plus counter() numbers sections without JS.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{counter-reset:demo;padding:12px 12px 12px 40px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{min-height:34px;border-radius:8px;background:#F6F7F5;border:1px solid #77796f;box-sizing:border-box;padding:6px 12px;font:500 11px/1.6 var(--fx-sans,system-ui);color:#23232f;margin-bottom:8px;counter-increment:demo}.fx::before{content:'§ ' counter(demo) ' · ';color:#587A94;font-weight:700}"
+},
+{
+ "id": "important-declarations",
+ "zh": "重要声明",
+ "en": "!important",
+ "dz": "把一条声明抬进“重要”轨道，常规权重全都不敌。",
+ "de": "Lifts a declaration into the important origin track.",
+ "pz": "急救通道：工具类的 .hidden{display:none !important}。能用特异性解决的不要用 important——它连用户样式都会压过。说「这条必须赢」即此。",
+ "pe": "Utility classes justify !important; specificity should be the first tool.",
+ "aliases": [],
+ "demo": "panel",
+ "css": ".fxstack{width:270px;height:190px;border-radius:12px;background:#eceee6;padding:14px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px}.fxa{flex:1;border-radius:10px;border:1px solid #8A677A;display:flex;align-items:center;justify-content:center;font:600 10px/1.5 var(--fx-sans,system-ui);color:#8A677A;text-align:center;padding:6px;background:#F2CBDD}.fxstack .fxa{background:#C5E2D7;border-color:#58766B;color:#58766B}.fxa{background:#BFDDF4 !important}.fxa::before{content:'高特异性想给绿底，!important 把雾蓝抬进重要轨道 → 雾蓝赢'}"
+},
+{
+ "id": "css-wide-keywords",
+ "zh": "全局关键字",
+ "en": "inherit / initial / unset",
+ "dz": "inherit 强继、initial 归零、unset 顺着本性来。",
+ "de": "inherit forces, initial resets, unset follows the property's nature.",
+ "pz": "unset 最常用：继承属性表现为 inherit、非继承属性表现为 initial。all:unset 是组件隔离的核武器。说「恢复默认」即此。",
+ "pe": "unset inherits when the property inherits, resets otherwise; all:unset nukes everything.",
+ "aliases": [
+  {
+   "term": "revert",
+   "language": "en",
+   "scope": "同族第四个关键字"
+  }
+ ],
+ "demo": "panel",
+ "css": ".fxstack{width:270px;height:190px;border-radius:12px;background:#eceee6;border:3px solid #8A677A;padding:14px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px}.fxa{flex:1;border-radius:10px;background:#F6F7F5;border:3px solid;border-color:inherit;display:flex;align-items:center;justify-content:center;font:600 9.5px/1.5 var(--fx-sans,system-ui);color:#58766B;text-align:center;padding:6px}.fxa::before{content:'border-color:inherit → 强行继承父边色（同为墨粉）'}.fxb{flex:1;border-radius:10px;background:#F6F7F5;border:3px solid;border-color:unset;display:flex;align-items:center;justify-content:center;font:600 9.5px/1.5 var(--fx-sans,system-ui);color:#587A94;text-align:center;padding:6px}.fxb::before{content:'border-color:unset → 非继承属性归初值（= 文字色湖绿）'}"
+}
 ]
 };

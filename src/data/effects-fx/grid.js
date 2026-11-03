@@ -361,5 +361,18 @@ export default {
  "demo": "grid",
  "css": ".fxgrid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-flow:dense;grid-auto-rows:52px;gap:6px;padding:10px;background:#eceee6;border-radius:12px;width:min(360px,90%);box-sizing:border-box}.fx{border-radius:8px;background:#BFDDF4;border:1px solid #587A94;grid-column:span 1}.fx:nth-child(2){grid-row:span 2;grid-column:span 2;background:#F2CBDD;border-color:#8A677A}.fx:nth-child(5){grid-column:span 2;background:#C5E2D7;border-color:#58766B}"
 }
+,
+{
+ "id": "grid-line-placement",
+ "zh": "网格线定位",
+ "en": "Line-based placement",
+ "dz": "用网格线编号把项目钉到具体区间。",
+ "de": "Pins items to explicit grid lines by number.",
+ "pz": "grid-column:2/4 表示从 2 号线跨到 4 号线；-1 是末线。说「从几号线到几号线」即此。",
+ "pe": "grid-column:2/4 spans from line 2 to line 4; -1 is the last line.",
+ "aliases": [],
+ "demo": "grid",
+ "css": ".fxgrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:44px;gap:6px;padding:12px;background:#eceee6;border-radius:12px;width:min(340px,90%);box-sizing:border-box}.fx{border-radius:8px;background:#BFDDF4;border:1px solid #587A94;grid-column:1/3}.fx:nth-child(2){grid-column:3/5;grid-row:1/3;background:#F2CBDD;border-color:#8A677A}.fx:nth-child(3){grid-column:1/3;background:#C5E2D7;border-color:#58766B}"
+}
 ]
 };
