@@ -579,5 +579,150 @@ _atlasExpansion20260927_color.items.push(...[
     "offers": [],
     "author": "atlas-expansion-curator"
   }
+,
+{
+ "id": "srgb-gamut",
+ "zh": "sRGB 色域",
+ "en": "sRGB",
+ "dz": "Web 默认色彩空间： transfers 曲线 + RGB 基色。",
+ "de": "The web default color space.",
+ "pz": "无色域声明的颜色都在 sRGB；覆盖约 70% Display-P3。说「sRGB 基准」即此。",
+ "pe": "The baseline every screen speaks.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='34' y='26' width='132' height='56' rx='8' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Ctext x='100' y='58' text-anchor='middle' font-size='9' fill='%23587A94' font-family='sans-serif'%3EsRGB（1996 年以来的 Web 基准）%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E一切颜色的默认容器%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "display-p3",
+ "zh": "Display-P3 色域",
+ "en": "display-p3",
+ "dz": "更广的广色域：iPhone/Mac 屏幕原生空间。",
+ "de": "The wide-gamut default of Apple screens.",
+ "pz": "color(display-p3 1 0 0) 是比 sRGB 红更艳的红。说「广色域红」即此。",
+ "pe": "A wider, juicier red.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='34' y='24' width='63' height='58' rx='8' fill='%23d94f45'/%3E%3Crect x='103' y='24' width='63' height='58' rx='8' fill='%23ff2a1f'/%3E%3Ctext x='65' y='96' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3EsRGB red%3C/text%3E%3Ctext x='134' y='96' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3EP3 red%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E同一「红」在两色域的差别%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "lab-color",
+ "zh": "CIELAB 色彩空间",
+ "en": "Lab color",
+ "dz": "感知均匀的 L 明度 + a/b 色度轴。",
+ "de": "Perceptually uniform L,a,b.",
+ "pz": "lab(53% 40 59) 是 CSS 里的 CIELAB：明度均匀，适合计算对比与色差。说「Lab 空间」即此。",
+ "pe": "Lightness that behaves.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='34' y='26' width='132' height='56' rx='8' fill='%23C5E2D7' stroke='%2358766B'/%3E%3Ctext x='100' y='58' text-anchor='middle' font-size='9' fill='%2358766B' font-family='sans-serif'%3E同一 L 值：观感等亮%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E感知均匀的明度轴%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "lch-color",
+ "zh": "LCH 色彩空间",
+ "en": "LCH color",
+ "dz": "Lab 的极坐标版：L 明度 C 色度 H 色相。",
+ "de": "Lab in polar form.",
+ "pz": "lch(52% 58 45)——调色板生成最爱：转 H 保明度。说「LCH 调色」即此。",
+ "pe": "Rotate hue, hold lightness.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='34' y='26' width='40' height='56' fill='%23BFDDF4'/%3E%3Crect x='80' y='26' width='40' height='56' fill='%23F2CBDD'/%3E%3Crect x='126' y='26' width='40' height='56' fill='%23C5E2D7'/%3E%3Ctext x='100' y='96' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E同 L 同 C · 只转 H%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E三色等明度等色度%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "oklab-space",
+ "zh": "Oklab 色彩空间",
+ "en": "Oklab",
+ "dz": "修正 Lab 缺陷的改良感知空间（Björn Ottosson）。",
+ "de": "The improved perceptual space.",
+ "pz": "oklab(0.6 0.1 0.1)：渐变插值与图像处理的更优底座。说「Oklab」即此。",
+ "pe": "Better gradients by design.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cdefs%3E%3ClinearGradient id='ok' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23BFDDF4'/%3E%3Cstop offset='1' stop-color='%23F2CBDD'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='34' y='26' width='132' height='30' rx='6' fill='url(%23ok)'/%3E%3Crect x='34' y='62' width='132' height='30' rx='6' fill='url(%23ok)'/%3E%3Ctext x='100' y='104' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E上：sRGB 插值灰带 · 下：Oklab 插值%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E插值对比：灰带消失%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "color-function",
+ "zh": "color() 函数",
+ "en": "color() function",
+ "dz": "显式声明色彩空间的通用取色函数。",
+ "de": "Explicit color-space taking.",
+ "pz": "color(display-p3 …)/color(rec2020 …)/color(xyz …)——色域跟着参数走。说「color() 指定空间」即此。",
+ "pe": "The space is in the call.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Ctext x='34' y='40' font-size='9' fill='%23587A94' font-family='monospace'%3Ecolor(display-p3 1 0 0)%3C/text%3E%3Ctext x='34' y='60' font-size='9' fill='%2358766B' font-family='monospace'%3Ecolor(xyz .45 .23 .01)%3C/text%3E%3Crect x='34' y='72' width='60' height='24' fill='%23ff2a1f'/%3E%3Crect x='106' y='72' width='60' height='24' fill='%23b5b500'/%3E%3C/svg%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E空间即参数%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "relative-color-syntax",
+ "zh": "相对颜色语法",
+ "en": "Relative color syntax",
+ "dz": "从既有颜色派生新颜色。",
+ "de": "Derive new colors from existing ones.",
+ "pz": "oklch(from var(--brand) calc(l*0.8) c h)——主题色阶一行生成。说「相对取色」即此。",
+ "pe": "One brand color, a whole ramp.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='34' y='26' width='132' height='22' fill='%23BFDDF4'/%3E%3Crect x='34' y='52' width='132' height='22' fill='%23d8ebf8'/%3E%3Crect x='34' y='78' width='132' height='22' fill='%2398c7e6'/%3E%3Ctext x='100' y='108' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3Ebrand 派生：提亮/加深一档%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E同一变量的三个派生%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "gamut-mapping",
+ "zh": "色域映射",
+ "en": "Gamut mapping",
+ "dz": "广色域色落到窄屏时的裁剪策略。",
+ "de": "How wide-gamut colors clip to smaller screens.",
+ "pz": "color(display-p3 …) 在 sRGB 屏会被映射——映射算法决定观感。说「色域裁剪」即此。",
+ "pe": "Not all colors survive the trip.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='34' y='26' width='63' height='56' rx='8' fill='%23ff2a1f'/%3E%3Crect x='103' y='26' width='63' height='56' rx='8' fill='%23e04540'/%3E%3Ctext x='65' y='96' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3EP3 原色%3C/text%3E%3Ctext x='134' y='96' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E映射后%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E映射牺牲饱和保明度%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "gamma-srgb-linear",
+ "zh": "伽马校正",
+ "en": "Gamma correction",
+ "dz": "sRGB 的转移曲线：人眼感知的非线性补偿。",
+ "de": "The transfer curve of sRGB.",
+ "pz": "sRGB 数值非线性（≈2.2 次幂），线性计算（混合/光照）必须先解码。说「先线性再算」即此。",
+ "pe": "Decode before you math.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M34 96 C 70 60 110 40 170 24' fill='none' stroke='%23587A94' stroke-width='2.5'/%3E%3Cpath d='M34 96 L170 24' fill='none' stroke='%23F2CBDD' stroke-width='2' stroke-dasharray='4 3'/%3E%3Ctext x='100' y='110' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E实线=sRGB 曲线 · 虚线=线性%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E编码曲线 vs 线性%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "tone-mapping",
+ "zh": "色调映射",
+ "en": "Tone mapping",
+ "dz": "把高动态亮度压缩到显示范围。",
+ "de": "Compressing HDR into display range.",
+ "pz": "ACES/Reinhard 等映射曲线保高光层次不硬裁。说「色调映射」即此。",
+ "pe": "HDR into LDR with grace.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M34 92 C 80 88 96 40 120 30 C 140 22 160 22 170 24' fill='none' stroke='%23587A94' stroke-width='2.5'/%3E%3Cline x1='34' y1='24' x2='170' y2='24' stroke='%238A677A' stroke-dasharray='4 3'/%3E%3Ctext x='100' y='110' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E高亮平滑压回（不硬裁）%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E肩部压缩替代截止%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "color-interpolation-prop",
+ "zh": "色彩插值空间",
+ "en": "color-interpolation",
+ "dz": "CSS 允许为渐变/混合指定插值空间。",
+ "de": "Declare the space gradients blend in.",
+ "pz": "linear-gradient(in oklab, …)/in oklch/in srgb——消除灰带。说「in oklab」即此。",
+ "pe": "One keyword kills the gray band.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cdefs%3E%3ClinearGradient id='gs' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%234ea1d4'/%3E%3Cstop offset='1' stop-color='%23e8c94a'/%3E%3C/linearGradient%3E%3ClinearGradient id='go' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%234ea1d4'/%3E%3Cstop offset='.5' stop-color='%239a95b8'/%3E%3Cstop offset='1' stop-color='%23e8c94a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='34' y='24' width='132' height='28' fill='url(%23gs)'/%3E%3Crect x='34' y='58' width='132' height='28' fill='url(%23go)'/%3E%3Ctext x='100' y='100' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E上：sRGB 灰带 · 下：oklab 插值%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E蓝黄渐变的中间地带%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "gradient-interpolation-space",
+ "zh": "渐变插值空间实战",
+ "en": "Gradient interpolation",
+ "dz": "蓝→黄渐变在 sRGB 中途经灰、在 Oklab 中饱和。",
+ "de": "The blue-to-yellow test case.",
+ "pz": "同一条蓝黄渐变：sRGB 中段发灰，oklab/oklch 中段保持饱和。说「灰带测试」即此。",
+ "pe": "The canonical gray-band demo.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cdefs%3E%3ClinearGradient id='a1' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%233f8fce'/%3E%3Cstop offset='1' stop-color='%23e8c94a'/%3E%3C/linearGradient%3E%3ClinearGradient id='a2' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%233f8fce'/%3E%3Cstop offset='.5' stop-color='%2393c47e'/%3E%3Cstop offset='1' stop-color='%23e8c94a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='34' y='24' width='132' height='28' fill='url(%23a1)'/%3E%3Crect x='34' y='58' width='132' height='28' fill='url(%23a2)'/%3E%3Ctext x='100' y='100' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E上：默认灰带 · 下：oklch 中段仍绿%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E蓝黄是灰带照妖镜%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+}
 ]);
 export default _atlasExpansion20260927_color;

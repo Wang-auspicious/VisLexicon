@@ -1178,5 +1178,114 @@ export default {
       "cells": ["筛选进 URL","可键盘操作","空结果有出口","清除一键到位"],
       "css": ".fxcol{gap:6px;width:190px}.fx{height:28px;border-radius:7px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #dfe3db;color:#202824;font:500 10.5px/1 var(--fx-sans);justify-content:flex-start;padding:0 28px 0 11px;position:relative;animation:fa2 4s ease-in-out infinite;animation-delay:calc(var(--i) * .14s)}.fx::after{content:'✓';position:absolute;right:10px;color:#3d7a52;font-family:var(--fx-mono);opacity:0;animation:fa2c 4s ease-in-out infinite;animation-delay:calc(var(--i) * .14s)}@keyframes fa2{0%,100%{opacity:.55}42%,66%{opacity:1}}@keyframes fa2c{0%,100%{opacity:0}45%,72%{opacity:1}}"
     }
-  ]
+  ,
+{
+ "id": "blend-darken",
+ "zh": "变暗",
+ "en": "darken",
+ "dz": "逐通道取较暗者。",
+ "de": "Per-channel minimum.",
+ "pz": "mix-blend-mode:darken——压暗亮背景上的亮字。说「变暗混合」即此。",
+ "pe": "Keep the darker of each channel.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='24' width='74' height='62' fill='%23BFDDF4'/%3E%3Crect x='86' y='40' width='74' height='58' fill='%23F2CBDD' style='mix-blend-mode:darken'/%3E%3Ctext x='100' y='20' text-anchor='middle' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3Edarken%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E雾蓝底 × 晶粉上层的真实混合%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "blend-lighten",
+ "zh": "变亮",
+ "en": "lighten",
+ "dz": "逐通道取较亮者。",
+ "de": "Per-channel maximum.",
+ "pz": "mix-blend-mode:lighten——提亮暗底。说「变亮混合」即此。",
+ "pe": "Keep the lighter of each channel.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='24' width='74' height='62' fill='%23BFDDF4'/%3E%3Crect x='86' y='40' width='74' height='58' fill='%23F2CBDD' style='mix-blend-mode:lighten'/%3E%3Ctext x='100' y='20' text-anchor='middle' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3Elighten%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E雾蓝底 × 晶粉上层的真实混合%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "blend-color-burn",
+ "zh": "颜色加深",
+ "en": "color-burn",
+ "dz": "按比例压暗目标暗部。",
+ "de": "Scales down destination darkness.",
+ "pz": "mix-blend-mode:color-burn——加深底图暗部细节。说「加深混合」即此。",
+ "pe": "Boosts darkness proportionally.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='24' width='74' height='62' fill='%23BFDDF4'/%3E%3Crect x='86' y='40' width='74' height='58' fill='%23F2CBDD' style='mix-blend-mode:color-burn'/%3E%3Ctext x='100' y='20' text-anchor='middle' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3Ecolor-burn%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E雾蓝底 × 晶粉上层的真实混合%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "blend-saturation-mode",
+ "zh": "饱和度混合",
+ "en": "saturation",
+ "dz": "用源饱和度+目标色相/明度组色。",
+ "de": "Source saturation, destination hue and tone.",
+ "pz": "mix-blend-mode:saturation——把上层饱和度灌给底层色相。说「饱和度混合」即此。",
+ "pe": "Non-separable: saturation from top.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='24' width='74' height='62' fill='%23BFDDF4'/%3E%3Crect x='86' y='40' width='74' height='58' fill='%23F2CBDD' style='mix-blend-mode:saturation'/%3E%3Ctext x='100' y='20' text-anchor='middle' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3Esaturation%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E雾蓝底 × 晶粉上层的真实混合%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "blend-luminosity-mode",
+ "zh": "明度混合",
+ "en": "luminosity",
+ "dz": "用源明度+目标色相/饱和度组色。",
+ "de": "Source luminosity with destination hue/sat.",
+ "pz": "mix-blend-mode:luminosity——给底图换「明度」。说「明度混合」即此。",
+ "pe": "Luminosity from top, color from below.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='24' width='74' height='62' fill='%23BFDDF4'/%3E%3Crect x='86' y='40' width='74' height='58' fill='%23F2CBDD' style='mix-blend-mode:luminosity'/%3E%3Ctext x='100' y='20' text-anchor='middle' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3Eluminosity%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E雾蓝底 × 晶粉上层的真实混合%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "blend-plus-lighter",
+ "zh": "加法增亮",
+ "en": "plus-lighter",
+ "dz": "plus-lighter 线性加法合成（叠加高光专用）。",
+ "de": "Additive compositing for highlights.",
+ "pz": "mix-blend-mode:plus-lighter——真实的加法（光叠加）而非 screen 近似。说「加法混合」即此。",
+ "pe": "True addition, not screen.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='24' width='74' height='62' fill='%23BFDDF4'/%3E%3Crect x='86' y='40' width='74' height='58' fill='%23F2CBDD' style='mix-blend-mode:plus-lighter'/%3E%3Ctext x='100' y='20' text-anchor='middle' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3Eplus-lighter%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E雾蓝底 × 晶粉上层的真实混合%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "separable-blend",
+ "zh": "可分离混合族",
+ "en": "Separable blend modes",
+ "dz": "逐通道独立运算的混合家族：变暗/变亮/乘/滤等。",
+ "de": "Channel-wise blend family.",
+ "pz": "multiply/screen/darken/lighten/dodge/burn/hard-light/soft-light/difference/exclusion 都属可分离族。说「可分离混合」即此。",
+ "pe": "Per-channel math family.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='24' width='74' height='62' fill='%23BFDDF4'/%3E%3Crect x='86' y='40' width='74' height='58' fill='%23F2CBDD' style='mix-blend-mode:multiply'/%3E%3Ctext x='100' y='20' text-anchor='middle' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3Emultiply（族例）%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E雾蓝底 × 晶粉上层的真实混合%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "nonseparable-blend",
+ "zh": "非分离混合族",
+ "en": "Non-separable blend modes",
+ "dz": "必须整体换色空间计算的混合家族：hue/sat/color/luminosity。",
+ "de": "Whole-color blend family.",
+ "pz": "hue/saturation/color/luminosity 四模式基于 Lab/HSL 类空间重组通道。说「非分离混合」即此。",
+ "pe": "HSL-space channel recombination.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='24' width='74' height='62' fill='%23BFDDF4'/%3E%3Crect x='86' y='40' width='74' height='58' fill='%23F2CBDD' style='mix-blend-mode:color'/%3E%3Ctext x='100' y='20' text-anchor='middle' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3Ecolor（族例）%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E雾蓝底 × 晶粉上层的真实混合%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "moire-pattern",
+ "zh": "摩尔纹干涉",
+ "en": "Moiré pattern",
+ "dz": "两组周期纹叠加产生干涉条纹。",
+ "de": "Interference between two periodic patterns.",
+ "pz": "两层细条纹叠加旋转 2-3° 即出摩尔纹；屏幕拍照伪影的同源现象。说「摩尔纹」即此。",
+ "pe": "Rotate stripes to interference.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cg stroke='%23587A94' stroke-width='1.4'%3E%3Cpath d='M50 20 V100 M60 20 V100 M70 20 V100 M80 20 V100 M90 20 V100 M100 20 V100 M110 20 V100 M120 20 V100 M130 20 V100 M140 20 V100'/%3E%3C/g%3E%3Cg stroke='%23F2CBDD' stroke-width='1.4' transform='rotate(4 100 60)'%3E%3Cpath d='M50 20 V100 M60 20 V100 M70 20 V100 M80 20 V100 M90 20 V100 M100 20 V100 M110 20 V100 M120 20 V100 M130 20 V100 M140 20 V100'/%3E%3C/g%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E两组 10px 条纹差 4°%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+}
+]
 };
