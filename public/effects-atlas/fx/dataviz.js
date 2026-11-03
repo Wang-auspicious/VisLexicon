@@ -1200,6 +1200,565 @@ _atlasExpansion_f1dd93589e91ef8f_dataviz.items.push(...[
   {id:'parallel-coordinates-plot',zh:'平行坐标图',en:'Parallel Coordinates Plot',dz:'用一条折线依次连接同一条记录在多条平行数值轴上的位置，以比较多变量关系。',de:'Connect one record’s values across parallel numeric axes to compare multivariate relationships.',pz:'五个产品记录 A–E 使用 Cost/Reach/Quality/Load 四轴，值归一到 0–100。Quality 轴刷选 55–80 时突出 A/C/E 三条线，其余淡出；重新排序变量轴会改变相邻关系的可读性。',pe:'Five product records A–E use Cost/Reach/Quality/Load axes normalized to 0–100. Brushing Quality from 55–80 highlights A/C/E and fades the others; reordering axes changes which adjacent relationships are easiest to read.',aliases:[],demo:'shape',n:1,chartSvg:vlxChartArtBatch07.parallelCoordinates,chartAlt:{zh:'平行坐标图：五条产品记录穿过成本、覆盖、质量和负载四条归一化轴；质量轴 55–80 的刷选突出 A、C、E。',en:'Parallel coordinates: five product records cross normalized Cost, Reach, Quality and Load axes; a Quality brush from 55–80 highlights A, C and E.'},css:'.fxshape{width:min(480px,96%);height:300px}.fx{width:100%;height:100%;border-radius:0;background:transparent;box-shadow:none}'},
   {id:'nightingale-rose-chart',zh:'南丁格尔玫瑰图',en:'Nightingale Rose Chart',dz:'把类别放在等角的极坐标扇区里，以半径表示每类数值。',de:'Place categories in equal-angle polar sectors and encode each value by radial length.',pz:'八个月份的示意值为 7、9、12、16、15、13、10、8；每段角度相等，半径按值线性增加。面积随半径平方增长，外侧扇区会比数值增幅更醒目。',pe:'Illustrative values for eight months are 7, 9, 12, 16, 15, 13, 10 and 8. Each sector has equal angle and radius grows linearly with value. Sector area grows with radius squared, so outer values look disproportionately larger.',aliases:[{term:'Coxcomb Chart',language:'en',scope:'Source-listed alternate name'},{term:'Polar Area Diagram',language:'en',scope:'Source-listed alternate name'}],demo:'shape',n:1,chartSvg:vlxChartArtBatch07.nightingaleRose,chartAlt:{zh:'南丁格尔玫瑰图：八个等角月份扇区对应值 7、9、12、16、15、13、10、8；半径线性表示数值，面积会放大外圈差异。',en:'Nightingale Rose Chart: eight equal-angle monthly sectors encode 7, 9, 12, 16, 15, 13, 10 and 8 by radius; area magnifies outer differences.'},css:'.fxshape{width:min(480px,96%);height:300px}.fx{width:100%;height:100%;border-radius:0;background:transparent;box-shadow:none}'},
   {id:'point-and-figure-chart',zh:'点数图',en:'Point & Figure Chart',dz:'用 X 和 O 分列记录上涨与下跌价格动作；箱大小与反转箱数过滤小幅波动。',de:'Record rising and falling price moves in X and O columns; box size and reversal amount filter minor fluctuations.',pz:'箱大小 = $5，反转量 = 3 箱。列序：X 100/105/110/115；O 110/105/100；X 105/110/115/120/125；O 120/115/110。横向列顺序表示反转，不是时间间隔；图中不绘成交量。',pe:'Box size = $5 and reversal amount = 3 boxes. Columns: X 100/105/110/115; O 110/105/100; X 105/110/115/120/125; O 120/115/110. Column order marks reversals, not time; traded volume is not shown.',aliases:[{term:'P&F Chart',language:'en',scope:'Source-listed alternate name'}],demo:'shape',n:1,chartSvg:vlxChartArtBatch07.pointFigure,chartAlt:{zh:'点数图：箱大小 $5、反转量 3 箱；X 列表示上涨，O 列表示下跌，列间距不编码时间。',en:'Point & Figure chart: $5 box size and a 3-box reversal; X columns mark rising moves, O columns falling moves, and column spacing does not encode time.'},css:'.fxshape{width:min(480px,96%);height:300px}.fx{width:100%;height:100%;border-radius:0;background:transparent;box-shadow:none}'}
+,
+{
+ "id": "pie-chart",
+ "zh": "饼图",
+ "en": "Pie chart",
+ "dz": "整圆按占比切扇形，强调部分与整体。",
+ "de": "A full circle sliced by share.",
+ "pz": "扇形 3-5 块以内、从 12 点顺时针降序；占比是唯一编码。说「切饼图」即此。",
+ "pe": "Three to five slices, sorted from 12 o'clock.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M100 60 L100 16 A44 44 0 0 1 138.1 82 Z' fill='%23BFDDF4' stroke='%23F6F7F5' stroke-width='2'/%3E%3Cpath d='M100 60 L138.1 82 A44 44 0 0 1 61.9 82 Z' fill='%23F2CBDD' stroke='%23F6F7F5' stroke-width='2'/%3E%3Cpath d='M100 60 L61.9 82 A44 44 0 0 1 100 16 Z' fill='%23C5E2D7' stroke='%23F6F7F5' stroke-width='2'/%3E%3Ctext x='140' y='30' font-size='9' fill='%23587A94' font-family='sans-serif'%3E45%25%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E45 / 33 / 22 — 角度=占比%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "bar-chart",
+ "zh": "柱状图",
+ "en": "Bar chart",
+ "dz": "离散类别的量用等宽柱的高度编码。",
+ "de": "Category amounts as equal-width bars.",
+ "pz": "零基线不可截断；类目间留缝以区别于直方图。说「柱状图」即此。",
+ "pe": "Zero baseline mandatory; gaps separate it from histograms.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cline x1='28' y1='96' x2='176' y2='96' stroke='%2355574f'/%3E%3Crect x='38' y='40' width='26' height='56' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Crect x='78' y='62' width='26' height='34' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Crect x='118' y='28' width='26' height='68' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E零基线 · 等宽 · 有缝%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "line-chart",
+ "zh": "折线图",
+ "en": "Line chart",
+ "dz": "连续有序数据用线段连接，强调趋势走向。",
+ "de": "Connected segments over ordered data.",
+ "pz": "x 轴必须是有序维度（时间最典型）；多于 4 条线考虑拆分。说「折线看趋势」即此。",
+ "pe": "Ordered x only; four series max.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpolyline points='28,84 60,58 92,66 124,38 156,46 176,24' fill='none' stroke='%23587A94' stroke-width='2.5'/%3E%3Ccircle cx='28' cy='84' r='3' fill='%23587A94'/%3E%3Ccircle cx='92' cy='66' r='3' fill='%23587A94'/%3E%3Ccircle cx='176' cy='24' r='3' fill='%23587A94'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E有序 x · 点线结合%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "area-chart",
+ "zh": "面积图",
+ "en": "Area chart",
+ "dz": "折线下方填充到基线，强调总量积累。",
+ "de": "The area under the line filled to the baseline.",
+ "pz": "单系列面积图强调体积感；多系列默认堆叠。说「面积填充」即此。",
+ "pe": "Fill emphasizes volume; multi-series stacks by default.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M28 84 60 58 92 66 124 38 156 46 176 24 176 96 28 96 Z' fill='%23BFDDF4' fill-opacity='.75' stroke='none'/%3E%3Cpolyline points='28,84 60,58 92,66 124,38 156,46 176,24' fill='none' stroke='%23587A94' stroke-width='2'/%3E%3Cline x1='28' y1='96' x2='176' y2='96' stroke='%2355574f'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E线下基线上填充%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "bubble-chart",
+ "zh": "气泡图",
+ "en": "Bubble chart",
+ "dz": "散点的第三维编码进圆面积。",
+ "de": "A third variable encoded in bubble area.",
+ "pz": "半径 ∝ 数值开方（面积 ∝ 数值）；图例必须给尺寸参照。说「气泡大小」即此。",
+ "pe": "Radius scales with sqrt(value); size legends required.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Ccircle cx='60' cy='62' r='8' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Ccircle cx='104' cy='48' r='16' fill='%23F2CBDD' stroke='%238A677A'/%3E%3Ccircle cx='148' cy='66' r='26' fill='%23C5E2D7' stroke='%2358766B'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E面积 ∝ 数值（r ∝ √v）%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "milestone-chart",
+ "zh": "里程碑图",
+ "en": "Milestone chart",
+ "dz": "沿时间轴标出关键节点，点即事件。",
+ "de": "Key events as points along time.",
+ "pz": "项目汇报用：里程碑点+短标签交错防重叠。说「时间节点图」即此。",
+ "pe": "Stagger labels to avoid overlap.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cline x1='24' y1='66' x2='176' y2='66' stroke='%2355574f' stroke-width='2'/%3E%3Ccircle cx='44' cy='66' r='6' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Ccircle cx='96' cy='66' r='6' fill='%23F2CBDD' stroke='%238A677A'/%3E%3Ccircle cx='152' cy='66' r='6' fill='%23C5E2D7' stroke='%2358766B'/%3E%3Cline x1='44' y1='60' x2='44' y2='44' stroke='%23587A94'/%3E%3Cline x1='152' y1='60' x2='152' y2='44' stroke='%2358766B'/%3E%3Ctext x='44' y='38' text-anchor='middle' font-size='8' fill='%23587A94' font-family='sans-serif'%3EKickoff%3C/text%3E%3Ctext x='152' y='38' text-anchor='middle' font-size='8' fill='%2358766B' font-family='sans-serif'%3ELaunch%3C/text%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E点=事件 · 无时长%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "ogive-curve",
+ "zh": "累计频数曲线",
+ "en": "Ogive",
+ "dz": "直方图累计化的 S 曲线：任意点读出「小于 x 的样本数」。",
+ "de": "The histogram's cumulative S-curve.",
+ "pz": "单调不减、右端=样本总数；读分位数直接查曲线。说「累计曲线」即此。",
+ "pe": "Monotone up, ending at N; quantiles read off directly.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M28 96 C 60 94 70 80 92 62 C 116 44 136 30 176 26' fill='none' stroke='%23587A94' stroke-width='2.5'/%3E%3Cline x1='28' y1='96' x2='176' y2='96' stroke='%2355574f'/%3E%3Cline x1='28' y1='96' x2='28' y2='20' stroke='%2355574f'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E单调升 → 总数封顶%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "pareto-chart",
+ "zh": "帕累托图",
+ "en": "Pareto chart",
+ "dz": "降序柱 + 累计百分比折线的双编码组合。",
+ "de": "Descending bars plus a cumulative line.",
+ "pz": "找「关键少数」：累计线过 80% 处之前的类目即优先项。说「帕累托分析」即此。",
+ "pe": "The vital few sit left of the 80% crossing.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='34' y='26' width='24' height='64' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Crect x='66' y='52' width='24' height='38' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Crect x='98' y='70' width='24' height='20' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Crect x='130' y='80' width='24' height='10' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Cpolyline points='46,50 78,40 110,24 142,14' fill='none' stroke='%238A677A' stroke-width='2'/%3E%3Cline x1='28' y1='90' x2='176' y2='90' stroke='%2355574f'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E降序柱 + 累计%25 折线%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "control-chart",
+ "zh": "控制图",
+ "en": "Control chart",
+ "dz": "时序折线加中心线与上下控制限，判断过程是否受控。",
+ "de": "A run chart with center line and control limits.",
+ "pz": "点越限或连续 7 点同侧即触发调查；控制限来自过程数据不是目标值。说「SPC 受控」即此。",
+ "pe": "Limits come from process data, not targets.",
+ "aliases": [
+  {
+   "term": "SPC chart",
+   "language": "en",
+   "scope": "过程控制语境"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cline x1='28' y1='32' x2='176' y2='32' stroke='%238A677A' stroke-dasharray='4 3'/%3E%3Cline x1='28' y1='58' x2='176' y2='58' stroke='%2358766B'/%3E%3Cline x1='28' y1='84' x2='176' y2='84' stroke='%238A677A' stroke-dasharray='4 3'/%3E%3Cpolyline points='36,60 56,54 76,66 96,50 116,72 136,56 156,62 172,58' fill='none' stroke='%23587A94' stroke-width='2'/%3E%3Ctext x='170' y='28' text-anchor='end' font-size='8' fill='%238A677A' font-family='sans-serif'%3EUCL%3C/text%3E%3Ctext x='170' y='94' text-anchor='end' font-size='8' fill='%238A677A' font-family='sans-serif'%3ELCL%3C/text%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E中心线 ±3σ%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "run-chart",
+ "zh": "运行图",
+ "en": "Run chart",
+ "dz": "最朴素的时序折线：先看过程再谈控制。",
+ "de": "The plain process line over time.",
+ "pz": "改进项目第一步：先画运行图中位数，再决定要不要控制限。说「先画运行图」即此。",
+ "pe": "Median first; limits later.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpolyline points='28,72 52,60 76,76 100,52 124,64 148,44 172,56' fill='none' stroke='%23587A94' stroke-width='2.5'/%3E%3Cline x1='28' y1='60' x2='172' y2='60' stroke='%2358766B' stroke-dasharray='3 3'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E时序点线 + 中位数线%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "ternary-plot",
+ "zh": "三元相图",
+ "en": "Ternary plot",
+ "dz": "三组分占比（和恒为 100%）在等边三角形内的唯一落点。",
+ "de": "Three-part compositions inside an equilateral triangle.",
+ "pz": "土壤学/化学配比专用：三个轴都从各自底边读。说「三角形配方图」即此。",
+ "pe": "Read each axis from its own base.",
+ "aliases": [
+  {
+   "term": "ternary diagram",
+   "language": "en",
+   "scope": "地学语境"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M100 16 174 100 26 100 Z' fill='none' stroke='%2355574f' stroke-width='1.5'/%3E%3Cline x1='76' y1='58' x2='137' y2='100' stroke='%23BFDDF4'/%3E%3Cline x1='63' y1='74' x2='113' y2='30' stroke='%23F2CBDD'/%3E%3Ccircle cx='88' cy='66' r='5' fill='%2358766B'/%3E%3Ctext x='100' y='12' text-anchor='middle' font-size='8' fill='%23587A94' font-family='sans-serif'%3EA 100%25%3C/text%3E%3Ctext x='182' y='108' font-size='8' fill='%238A677A' font-family='sans-serif'%3EB%3C/text%3E%3Ctext x='20' y='108' font-size='8' fill='%2358766B' font-family='sans-serif'%3EC%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3EA+B+C=100%25%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "dendrogram",
+ "zh": "树状图",
+ "en": "Dendrogram",
+ "dz": "层次聚类的合并记录：枝高即合并距离。",
+ "de": "Merge heights encode cluster distance.",
+ "pz": "在最大垂直间隙处横切得到聚类数。说「切 dendrogram」即此。",
+ "pe": "Cut where gaps are tallest.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M40 100 V76 H70 V100 M55 76 V56 H95 V100 M75 56 V40 H130 V76 M130 76 V100' fill='none' stroke='%23587A94' stroke-width='2'/%3E%3Ctext x='100' y='24' text-anchor='middle' font-size='8.5' fill='%238A677A' font-family='sans-serif'%3E合并高度=类间距离%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E叶子在底部一行%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "edge-bundling",
+ "zh": "边捆绑图",
+ "en": "Edge bundling",
+ "dz": "把相近走向的边捆成束，稠密网络一眼读出主干。",
+ "de": "Bend similar edges together to reveal trunks.",
+ "pz": "航班/依赖关系图降噪利器：捆绑度是可调参数，过强会误读连接。说「把边捆起来」即此。",
+ "pe": "Tune the bundling strength; over-bundling misleads.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Ccircle cx='40' cy='30' r='5' fill='%23587A94'/%3E%3Ccircle cx='40' cy='90' r='5' fill='%23587A94'/%3E%3Ccircle cx='160' cy='30' r='5' fill='%2358766B'/%3E%3Ccircle cx='160' cy='90' r='5' fill='%2358766B'/%3E%3Cpath d='M40 30 C 90 55 110 55 160 30 M40 90 C 90 65 110 65 160 90 M40 30 C 100 70 100 70 160 90 M40 90 C 100 50 100 50 160 30' fill='none' stroke='%23BFDDF4' stroke-width='3' stroke-opacity='.75'/%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E同向边聚成束%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "scatter-matrix",
+ "zh": "散点矩阵",
+ "en": "Scatterplot matrix",
+ "dz": "多变量两两散点铺成方阵，对角线放分布。",
+ "de": "Pairwise scatters in a grid.",
+ "pz": "n 个变量 → n×n 格；看相关找强格，再看单格细节。说「SPLOM」即此。",
+ "pe": "Scan the grid for strong cells.",
+ "aliases": [
+  {
+   "term": "SPLOM",
+   "language": "en",
+   "scope": "常用缩写"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M60 22 V98 M100 22 V98 M140 22 V98 M20 46 H180 M20 72 H180' stroke='%23d9e2e1'/%3E%3Cg fill='%23587A94'%3E%3Ccircle cx='36' cy='40' r='2'/%3E%3Ccircle cx='44' cy='34' r='2'/%3E%3Ccircle cx='52' cy='42' r='2'/%3E%3Ccircle cx='80' cy='66' r='2'/%3E%3Ccircle cx='92' cy='60' r='2'/%3E%3Ccircle cx='160' cy='88' r='2'/%3E%3Ccircle cx='150' cy='82' r='2'/%3E%3C/g%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E4×4 两两配对%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "alluvial-diagram",
+ "zh": "冲积图",
+ "en": "Alluvial diagram",
+ "dz": "分阶段类目流：粗带表现构成在阶段间的迁移。",
+ "de": "Stage-to-stage flows as thick sediment bands.",
+ "pz": "市场结构变迁、职业流动：每个阶段一组类目轴。说「看结构怎么流」即此。",
+ "pe": "One category axis per stage.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='30' y='28' width='10' height='34' fill='%23BFDDF4'/%3E%3Crect x='30' y='70' width='10' height='22' fill='%23F2CBDD'/%3E%3Crect x='160' y='40' width='10' height='30' fill='%23BFDDF4'/%3E%3Crect x='160' y='78' width='10' height='14' fill='%23C5E2D7'/%3E%3Cpath d='M40 45 C 90 45 110 55 160 55' stroke='%23BFDDF4' stroke-width='12' fill='none' stroke-opacity='.65'/%3E%3Cpath d='M40 81 C 90 81 110 85 160 85' stroke='%23F2CBDD' stroke-width='9' fill='none' stroke-opacity='.65'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E阶段轴 × 迁移流带%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "span-chart",
+ "zh": "跨度图",
+ "en": "Span chart",
+ "dz": "柱从最小值伸到最大值，没有共同基线。",
+ "de": "Bars span min to max, no zero baseline.",
+ "pz": "温度区间、工期区间专用：只看范围不看绝对量。说「区间跨度」即此。",
+ "pe": "Ranges only, never magnitudes.",
+ "aliases": [
+  {
+   "term": "range bar chart",
+   "language": "en",
+   "scope": "别称"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='30' width='28' height='26' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Crect x='86' y='48' width='28' height='30' fill='%23F2CBDD' stroke='%238A677A'/%3E%3Crect x='132' y='22' width='28' height='40' fill='%23C5E2D7' stroke='%2358766B'/%3E%3Cline x1='30' y1='96' x2='174' y2='96' stroke='%2355574f'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E柱=最小→最大（无零基线）%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "euler-diagram",
+ "zh": "欧拉图",
+ "en": "Euler diagram",
+ "dz": "圆圈关系只画真实存在的交集。",
+ "de": "Only existing intersections are drawn.",
+ "pz": "集合关系图：某个交集为空就不画——这是与韦恩图的分界。说「欧拉图」即此。",
+ "pe": "Empty intersections vanish.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Ccircle cx='80' cy='52' r='30' fill='%23BFDDF4' fill-opacity='.7' stroke='%23587A94'/%3E%3Ccircle cx='118' cy='52' r='30' fill='%23F2CBDD' fill-opacity='.7' stroke='%238A677A'/%3E%3Ccircle cx='100' cy='92' r='22' fill='%23C5E2D7' fill-opacity='.75' stroke='%2358766B'/%3E%3Ctext x='100' y='116' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E仅绘制真实交集%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "upset-plot",
+ "zh": "UpSet 集合图",
+ "en": "UpSet plot",
+ "dz": "集合交集以矩阵点+横柱呈现，破解多集合韦恩图灾难。",
+ "de": "Intersection matrix plus bars: Venn's escape hatch.",
+ "pz": "4 个以上集合的可视化选 UpSet：按交集大小降序读列。说「UpSet 分析」即此。",
+ "pe": "Columns sort by intersection size.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Ccircle cx='40' cy='26' r='7' fill='none' stroke='%23587A94' stroke-width='1.5'/%3E%3Ccircle cx='54' cy='26' r='7' fill='none' stroke='%2358766B' stroke-width='1.5'/%3E%3Ccircle cx='68' cy='26' r='7' fill='none' stroke='%238A677A' stroke-width='1.5'/%3E%3Crect x='34' y='44' width='14' height='42' fill='%23BFDDF4'/%3E%3Crect x='60' y='58' width='14' height='28' fill='%23BFDDF4'/%3E%3Crect x='86' y='72' width='14' height='14' fill='%23BFDDF4'/%3E%3Ccircle cx='41' cy='52' r='3' fill='%2323232f'/%3E%3Ccircle cx='41' cy='66' r='3' fill='%2377796f'/%3E%3Ccircle cx='55' cy='52' r='3' fill='none' stroke='%2323232f'/%3E%3Ccircle cx='67' cy='80' r='3' fill='%2323232f'/%3E%3Ctext x='130' y='52' font-size='8' fill='%2377796f' font-family='sans-serif'%3E●● = A∩B%3C/text%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E点阵选集合 · 柱=交集大小%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "flame-graph",
+ "zh": "火焰图",
+ "en": "Flame graph",
+ "dz": "调用栈聚合成倒置层叠条：宽=耗时，深=调用深度。",
+ "de": "Aggregated stacks: width is time, depth is nesting.",
+ "pz": "性能分析标配：从顶往下找最宽平台即热点；点击可缩放。说「看火焰图找热点」即此。",
+ "pe": "Widest plateau under the top is your hotspot.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='24' y='88' width='152' height='14' fill='%23BFDDF4' stroke='%23F6F7F5'/%3E%3Crect x='24' y='72' width='96' height='14' fill='%23C5E2D7' stroke='%23F6F7F5'/%3E%3Crect x='122' y='72' width='54' height='14' fill='%23F2CBDD' stroke='%23F6F7F5'/%3E%3Crect x='24' y='56' width='58' height='14' fill='%23BFDDF4' stroke='%23F6F7F5'/%3E%3Crect x='24' y='40' width='30' height='14' fill='%23F2CBDD' stroke='%23F6F7F5'/%3E%3Ctext x='100' y='26' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E顶部越宽越烫%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "normalized-stacked-area",
+ "zh": "百分比堆叠面积图",
+ "en": "100% stacked area",
+ "dz": "堆叠面积归一化到 0–100%，只看构成不看总量。",
+ "de": "Stacked area normalized to 100%.",
+ "pz": "份额结构随时间的演化；总量信息被刻意抹掉。说「归一化堆叠」即此。",
+ "pe": "Composition only, never totals.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M28 22 H176 V54 H28 Z' fill='%23BFDDF4' fill-opacity='.8'/%3E%3Cpath d='M28 54 H176 V78 H28 Z' fill='%23F2CBDD' fill-opacity='.8'/%3E%3Cpath d='M28 78 H176 V96 H28 Z' fill='%23C5E2D7' fill-opacity='.8'/%3E%3Ctext x='100' y='40' text-anchor='middle' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3EA 50%25%3C/text%3E%3Ctext x='100' y='70' text-anchor='middle' font-size='8.5' fill='%238A677A' font-family='sans-serif'%3EB 30%25%3C/text%3E%3Ctext x='100' y='91' text-anchor='middle' font-size='8.5' fill='%2358766B' font-family='sans-serif'%3EC 20%25%3C/text%3E%3Ctext x='100' y='110' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E上下边界恒为 0–100%25%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "horizon-chart",
+ "zh": "地平线图",
+ "en": "Horizon chart",
+ "dz": "把长时序分层折叠叠加，用色深代替高度，省空间不失分辨率。",
+ "de": "Layered folding: color depth instead of height.",
+ "pz": "窄面板放多条指标：分层切成 N 带叠在原位，色越深值越高。说「地平线折叠」即此。",
+ "pe": "Fold into bands; darker is higher.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M24 60 H176 V96 H24 Z' fill='%23BFDDF4'/%3E%3Cpath d='M24 34 C 60 30 90 44 120 36 C 146 30 160 38 176 34 V60 H24 Z' fill='%23F2CBDD' fill-opacity='.55'/%3E%3Cpath d='M24 48 C 60 44 90 56 120 50 C 146 44 160 50 176 48 V60 H24 Z' fill='%238A677A' fill-opacity='.55'/%3E%3Cline x1='24' y1='60' x2='176' y2='60' stroke='%2355574f'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E越叠越深=值越高%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "step-chart",
+ "zh": "阶梯图",
+ "en": "Step chart",
+ "dz": "数值在事件点之间保持不变：水平段+垂直跳变。",
+ "de": "Values persist between events: horizontal then jump.",
+ "pz": "价格阶梯、版本状态、税率段——变化是瞬时的才用。说「阶梯连线」即此。",
+ "pe": "Use only when values hold between events.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M28 74 H72 V52 H116 V68 H160 V36' fill='none' stroke='%23587A94' stroke-width='2.5'/%3E%3Ccircle cx='72' cy='52' r='3' fill='%23587A94'/%3E%3Ccircle cx='116' cy='68' r='3' fill='%23587A94'/%3E%3Ccircle cx='160' cy='36' r='3' fill='%23587A94'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E水平保持 · 瞬时跳变%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "dual-axis-chart",
+ "zh": "双轴组合图",
+ "en": "Dual-axis chart",
+ "dz": "左右两个独立刻度承载两个系列。",
+ "de": "Two series on two independent scales.",
+ "pz": "慎用：两轴刻度可被操纵出假相关；必须标注轴归属与单位。说「左右双轴」即此。",
+ "pe": "Label both axes; beware fake correlations.",
+ "aliases": [
+  {
+   "term": "combo chart",
+   "language": "en",
+   "scope": "BI 语境"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='52' width='14' height='38' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Crect x='70' y='62' width='14' height='28' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Crect x='100' y='44' width='14' height='46' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Cpolyline points='47,40 77,30 107,34 137,24 167,28' fill='none' stroke='%238A677A' stroke-width='2.5'/%3E%3Cline x1='28' y1='90' x2='176' y2='90' stroke='%2355574f'/%3E%3Cline x1='190' y1='24' x2='190' y2='90' stroke='%238A677A'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E左轴柱 · 右轴折线%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "ohlc-chart",
+ "zh": "OHLC 图",
+ "en": "OHLC chart",
+ "dz": "竖线表高低，左刻开右刻闭的金融柱。",
+ "de": "Vertical range with open/close ticks.",
+ "pz": "与 K 线（candlestick）同信息但更紧凑；左 tick=开盘、右 tick=收盘。说「OHLC 柱」即此。",
+ "pe": "Left tick opens, right tick closes.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cline x1='52' y1='30' x2='52' y2='82' stroke='%23587A94' stroke-width='2'/%3E%3Cline x1='42' y1='38' x2='52' y2='38' stroke='%23587A94' stroke-width='2'/%3E%3Cline x1='52' y1='72' x2='62' y2='72' stroke='%23587A94' stroke-width='2'/%3E%3Cline x1='104' y1='24' x2='104' y2='74' stroke='%2358766B' stroke-width='2'/%3E%3Cline x1='94' y1='34' x2='104' y2='34' stroke='%2358766B' stroke-width='2'/%3E%3Cline x1='104' y1='62' x2='114' y2='62' stroke='%2358766B' stroke-width='2'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E左开右闭 · 竖线高低%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "adjacency-matrix",
+ "zh": "邻接矩阵图",
+ "en": "Adjacency matrix",
+ "dz": "网络转矩阵：行列表节点，格子即边。",
+ "de": "The network as an n×n grid.",
+ "pz": "稠密网络比点线图清晰；重排行-列可让块结构浮现。说「矩阵看网络」即此。",
+ "pe": "Reorder rows/columns to reveal blocks.",
+ "aliases": [
+  {
+   "term": "network matrix",
+   "language": "en",
+   "scope": "别称"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='22' width='27' height='27' fill='%23BFDDF4'/%3E%3Crect x='67' y='22' width='27' height='27' fill='%23F6F7F5' stroke='%23e2e5dc'/%3E%3Crect x='94' y='22' width='27' height='27' fill='%23F2CBDD'/%3E%3Crect x='40' y='49' width='27' height='27' fill='%23F6F7F5' stroke='%23e2e5dc'/%3E%3Crect x='67' y='49' width='27' height='27' fill='%23C5E2D7'/%3E%3Crect x='94' y='49' width='27' height='27' fill='%23F2CBDD'/%3E%3Crect x='40' y='76' width='27' height='27' fill='%23F2CBDD'/%3E%3Crect x='67' y='76' width='27' height='27' fill='%23C5E2D7'/%3E%3Crect x='94' y='76' width='27' height='27' fill='%23F6F7F5' stroke='%23e2e5dc'/%3E%3Ctext x='100' y='116' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E格子=边 · 颜色=权重%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "quiver-plot",
+ "zh": "矢量场箭头图",
+ "en": "Quiver plot",
+ "dz": "网格点上画箭头：方向+大小同时编码。",
+ "de": "Arrows encode direction and magnitude.",
+ "pz": "风场/流场标配；箭头长度即模长，网格采样密度决定可读性。说「矢量场」即此。",
+ "pe": "Arrow length is the magnitude.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cg stroke='%23587A94' stroke-width='2' fill='none'%3E%3Cpath d='M40 40 L70 30 M104 44 L136 40 M40 76 L66 88 M104 80 L134 92 M76 62 L108 60'/%3E%3C/g%3E%3Cg fill='%23587A94'%3E%3Cpath d='M70 30 l-8 1 5 6 Z M136 40 l-9 0 4 7 Z M66 88 l-7 -3 8 -3 Z M134 92 l-9 1 6 5 Z M108 60 l-9 -3 2 8 Z'/%3E%3C/g%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E方向=朝向 · 长度=模%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "dot-density-map",
+ "zh": "点密度地图",
+ "en": "Dot density map",
+ "dz": "每点代表固定数量，用点的疏密表现地理分布。",
+ "de": "One dot = N units; density shows geography.",
+ "pz": "点值要标注（1 点 = 1000 人）；随机散布在统计区内避免伪聚集。说「点地图」即此。",
+ "pe": "Annotate the dot value.",
+ "aliases": [
+  {
+   "term": "dot map",
+   "language": "en",
+   "scope": "简称"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M40 30 C 70 18 120 20 150 34 C 168 46 166 70 150 86 C 120 100 70 98 46 84 C 30 70 28 44 40 30 Z' fill='%23C5E2D7' fill-opacity='.5' stroke='%2358766B'/%3E%3Cg fill='%2358766B'%3E%3Ccircle cx='70' cy='44' r='1.8'/%3E%3Ccircle cx='82' cy='50' r='1.8'/%3E%3Ccircle cx='76' cy='58' r='1.8'/%3E%3Ccircle cx='92' cy='42' r='1.8'/%3E%3Ccircle cx='98' cy='55' r='1.8'/%3E%3Ccircle cx='108' cy='48' r='1.8'/%3E%3Ccircle cx='116' cy='58' r='1.8'/%3E%3Ccircle cx='126' cy='46' r='1.8'/%3E%3Ccircle cx='134' cy='62' r='1.8'/%3E%3Ccircle cx='118' cy='72' r='1.8'/%3E%3Ccircle cx='100' cy='74' r='1.8'/%3E%3Ccircle cx='84' cy='72' r='1.8'/%3E%3Ccircle cx='64' cy='66' r='1.8'/%3E%3Ccircle cx='58' cy='52' r='1.8'/%3E%3Ccircle cx='142' cy='76' r='1.8'/%3E%3C/g%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E1 点 = 1000 人%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "proportional-symbol-map",
+ "zh": "比例符号地图",
+ "en": "Proportional symbol map",
+ "dz": "在地理位置上放大小随数值变化的符号。",
+ "de": "Sized symbols pinned to places.",
+ "pz": "面积 ∝ 数值；重叠时用透明度或改用饼符号分层。说「气泡地图」即此。",
+ "pe": "Area proportional; overlap needs care.",
+ "aliases": [
+  {
+   "term": "bubble map",
+   "language": "en",
+   "scope": "俗称"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M36 34 C 66 22 118 24 148 38 C 166 50 164 72 148 88 C 118 102 66 100 42 86 C 26 72 24 48 36 34 Z' fill='%23C5E2D7' fill-opacity='.4' stroke='%2358766B'/%3E%3Ccircle cx='70' cy='52' r='16' fill='%23BFDDF4' fill-opacity='.8' stroke='%23587A94'/%3E%3Ccircle cx='112' cy='44' r='8' fill='%23BFDDF4' fill-opacity='.8' stroke='%23587A94'/%3E%3Ccircle cx='122' cy='72' r='22' fill='%23F2CBDD' fill-opacity='.7' stroke='%238A677A'/%3E%3Ctext x='100' y='116' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E符号面积 ∝ 数值%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "connection-map",
+ "zh": "连线地图",
+ "en": "Connection map",
+ "dz": "地理点对之间画弧线，表现两地关系强度。",
+ "de": "Arcs between places encode pairwise links.",
+ "pz": "航线/迁移/通信：弧粗细或颜色编码流量。说「连线关系图」即此。",
+ "pe": "Weight arcs by flow volume.",
+ "aliases": [
+  {
+   "term": "link map",
+   "language": "en",
+   "scope": "别称"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Ccircle cx='52' cy='40' r='4' fill='%23587A94'/%3E%3Ccircle cx='148' cy='34' r='4' fill='%2358766B'/%3E%3Ccircle cx='96' cy='84' r='4' fill='%238A677A'/%3E%3Cpath d='M52 40 Q 100 8 148 34' fill='none' stroke='%23BFDDF4' stroke-width='4' stroke-opacity='.8'/%3E%3Cpath d='M52 40 Q 70 74 96 84' fill='none' stroke='%23F2CBDD' stroke-width='2.5' stroke-opacity='.8'/%3E%3Cpath d='M96 84 Q 122 66 148 34' fill='none' stroke='%23C5E2D7' stroke-width='5' stroke-opacity='.8'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E弧宽 ∝ 流量%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "tile-grid-map",
+ "zh": "瓦片网格地图",
+ "en": "Tile grid map",
+ "dz": "把区域等面积化成方格阵列，位置近似地理邻接。",
+ "de": "Equal-area tiles approximating geography.",
+ "pz": "小倍数地图网格、美国各州选举图的经典方案。说「格子地图」即此。",
+ "pe": "One tile per region, roughly adjacent.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cg stroke='%23F6F7F5' stroke-width='2'%3E%3Crect x='62' y='26' width='24' height='24' fill='%23BFDDF4'/%3E%3Crect x='86' y='26' width='24' height='24' fill='%23F2CBDD'/%3E%3Crect x='110' y='26' width='24' height='24' fill='%23C5E2D7'/%3E%3Crect x='62' y='50' width='24' height='24' fill='%23C5E2D7'/%3E%3Crect x='86' y='50' width='24' height='24' fill='%23BFDDF4'/%3E%3Crect x='110' y='50' width='24' height='24' fill='%23F2CBDD'/%3E%3Crect x='86' y='74' width='24' height='24' fill='%23F2CBDD'/%3E%3C/g%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E等面积瓦片 · 邻接近似%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "pictogram-chart",
+ "zh": "象形图",
+ "en": "Pictogram chart",
+ "dz": "用图标个数编码数量，一个图标=N 单位。",
+ "de": "Icon counts encode quantities.",
+ "pz": "汇报与科普：一图标=固定数量必须标注；图标部分填充有歧义要慎用。说「象形统计」即此。",
+ "pe": "Annotate icons-per-unit; avoid partial fills.",
+ "aliases": [
+  {
+   "term": "isotype chart",
+   "language": "en",
+   "scope": "历史名"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cg fill='%23587A94'%3E%3Ccircle cx='46' cy='42' r='9'/%3E%3Ccircle cx='70' cy='42' r='9'/%3E%3Ccircle cx='94' cy='42' r='9'/%3E%3Ccircle cx='46' cy='66' r='9'/%3E%3Ccircle cx='70' cy='66' r='9'/%3E%3C/g%3E%3Cg fill='%23d9dde2'%3E%3Ccircle cx='94' cy='66' r='9'/%3E%3Ccircle cx='46' cy='90' r='9'/%3E%3Ccircle cx='70' cy='90' r='9'/%3E%3Ccircle cx='94' cy='90' r='9'/%3E%3C/g%3E%3Ctext x='130' y='68' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3E5/9%3C/text%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E1 图标 = 100 件%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "strip-plot",
+ "zh": "带状图",
+ "en": "Strip plot",
+ "dz": "一维数值散点铺在轴上，看原始分布密度。",
+ "de": "One-dimensional scatter along an axis.",
+ "pz": "样本量小（<150）直接铺点；点重叠时抖动或换 beeswarm。说「铺原始点」即此。",
+ "pe": "Raw points before any binning.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cline x1='28' y1='60' x2='176' y2='60' stroke='%2355574f'/%3E%3Cg fill='%23BFDDF4' stroke='%23587A94'%3E%3Ccircle cx='42' cy='60' r='3'/%3E%3Ccircle cx='56' cy='60' r='3'/%3E%3Ccircle cx='64' cy='60' r='3'/%3E%3Ccircle cx='78' cy='60' r='3'/%3E%3Ccircle cx='92' cy='60' r='3'/%3E%3Ccircle cx='98' cy='60' r='3'/%3E%3Ccircle cx='112' cy='60' r='3'/%3E%3Ccircle cx='120' cy='60' r='3'/%3E%3Ccircle cx='134' cy='60' r='3'/%3E%3Ccircle cx='150' cy='60' r='3'/%3E%3Ccircle cx='164' cy='60' r='3'/%3E%3C/g%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E每个样本一个点%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "boxen-plot",
+ "zh": "信封值图",
+ "en": "Boxen plot",
+ "dz": " Letter-value 多层箱：比箱线图多几层分位，大样本更细。",
+ "de": "Letter-value boxes beyond quartiles.",
+ "pz": "大样本（>5000）替代箱线图：每一层箱都是等概分位。说「boxen 看尾部」即此。",
+ "pe": "More quantile boxes for big n.",
+ "aliases": [
+  {
+   "term": "letter-value plot",
+   "language": "en",
+   "scope": "正式名"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='70' y='34' width='60' height='60' fill='%23BFDDF4' stroke='%23587A94'/%3E%3Crect x='80' y='22' width='40' height='12' fill='%23C5E2D7' stroke='%2358766B'/%3E%3Crect x='80' y='94' width='40' height='12' fill='%23C5E2D7' stroke='%2358766B'/%3E%3Crect x='88' y='14' width='24' height='8' fill='%23F2CBDD'/%3E%3Crect x='88' y='106' width='24' height='8' fill='%23F2CBDD'/%3E%3Cline x1='100' y1='10' x2='100' y2='118' stroke='%2377796f' stroke-dasharray='2 3'/%3E%3Ctext x='100' y='114' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E中位线 · 多层分位箱%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "ecdf-plot",
+ "zh": "经验累积分布图",
+ "en": "ECDF plot",
+ "dz": "逐样本阶梯上升的累计概率曲线。",
+ "de": "Per-sample stair-step cumulative probability.",
+ "pz": "无需分箱参数；多条 ECDF 叠加即分布对比。说「ECDF」即此。",
+ "pe": "No binning knobs at all.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M28 96 H52 V86 H68 V74 H88 V60 H104 V48 H124 V34 H144 V24 H176' fill='none' stroke='%23587A94' stroke-width='2'/%3E%3Cline x1='28' y1='96' x2='176' y2='96' stroke='%2355574f'/%3E%3Cline x1='28' y1='96' x2='28' y2='20' stroke='%2355574f'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E每样本一阶 · 无分箱%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "qq-plot",
+ "zh": "分位数对比图",
+ "en": "Q-Q plot",
+ "dz": "两组分位数互为坐标：贴对角线即同分布。",
+ "de": "Quantiles against quantiles: on the line means alike.",
+ "pz": "正态检验的经典用法：样本分位数 vs 理论分位数。说「Q-Q 检验」即此。",
+ "pe": "Sample vs theoretical quantiles.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cline x1='28' y1='96' x2='176' y2='20' stroke='%2358766B' stroke-dasharray='4 3'/%3E%3Cg fill='%23587A94'%3E%3Ccircle cx='40' cy='88' r='3'/%3E%3Ccircle cx='62' cy='70' r='3'/%3E%3Ccircle cx='84' cy='58' r='3'/%3E%3Ccircle cx='106' cy='48' r='3'/%3E%3Ccircle cx='128' cy='42' r='3'/%3E%3Ccircle cx='150' cy='30' r='3'/%3E%3Ccircle cx='166' cy='16' r='3'/%3E%3C/g%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E偏离对角线=分布差异%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "survival-curve",
+ "zh": "生存曲线",
+ "en": "Kaplan-Meier curve",
+ "dz": "随时间尚未发生事件的概率阶梯下降。",
+ "de": "Stepwise survival probability over time.",
+ "pz": "医学试验标配：阶梯下降在事件发生点，+号标注删失。说「KM 曲线」即此。",
+ "pe": "Steps at events; plus marks are censored.",
+ "aliases": [
+  {
+   "term": "Kaplan-Meier plot",
+   "language": "en",
+   "scope": "方法名"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M28 26 H64 V40 H96 V58 H128 V74 H160 V86 H176' fill='none' stroke='%23587A94' stroke-width='2.5'/%3E%3Cpath d='M96 40 h6 m-3 -3 v6 M144 74 h6 m-3 -3 v6' stroke='%238A677A' stroke-width='1.5'/%3E%3Cline x1='28' y1='96' x2='176' y2='96' stroke='%2355574f'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E事件处下降 · + 为删失%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "forest-plot",
+ "zh": "森林图",
+ "en": "Forest plot",
+ "dz": "多项研究的效应量方块+置信区间横线一图并列。",
+ "de": "Effect sizes with CI whiskers, study by study.",
+ "pz": "Meta 分析标配：方块=点估计、横线=95%CI、菱形=合并效应。说「森林图」即此。",
+ "pe": "Diamond = pooled estimate.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cline x1='100' y1='20' x2='100' y2='96' stroke='%2358766B' stroke-dasharray='3 3'/%3E%3Cline x1='52' y1='30' x2='132' y2='30' stroke='%23587A94' stroke-width='1.5'/%3E%3Crect x='86' y='26' width='10' height='8' fill='%23587A94'/%3E%3Cline x1='66' y1='48' x2='124' y2='48' stroke='%23587A94' stroke-width='1.5'/%3E%3Crect x='90' y='44' width='10' height='8' fill='%23587A94'/%3E%3Cline x1='80' y1='66' x2='112' y2='66' stroke='%23587A94' stroke-width='1.5'/%3E%3Crect x='92' y='62' width='10' height='8' fill='%23587A94'/%3E%3Cpath d='M100 88 l 9 6 -9 6 -9 -6 Z' fill='%238A677A'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E方块=估计 · 线=95%25CI%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "volcano-plot",
+ "zh": "火山图",
+ "en": "Volcano plot",
+ "dz": "x=效应量、y=显著性：喷发两翼即差异基因/蛋白。",
+ "de": "Effect size vs significance: wings erupt.",
+ "pz": "组学数据筛选标配：右上/左上翼为显著差异点，横线为显著性阈值。说「火山筛选」即此。",
+ "pe": "Wings above the threshold line.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cline x1='28' y1='38' x2='176' y2='38' stroke='%238A677A' stroke-dasharray='4 3'/%3E%3Cg fill='%23BFDDF4' stroke='%23587A94'%3E%3Ccircle cx='100' cy='84' r='2.5'/%3E%3Ccircle cx='92' cy='76' r='2.5'/%3E%3Ccircle cx='108' cy='72' r='2.5'/%3E%3Ccircle cx='118' cy='66' r='2.5'/%3E%3Ccircle cx='84' cy='68' r='2.5'/%3E%3C/g%3E%3Cg fill='%23F2CBDD' stroke='%238A677A'%3E%3Ccircle cx='150' cy='28' r='4'/%3E%3Ccircle cx='160' cy='24' r='4'/%3E%3Ccircle cx='48' cy='30' r='4'/%3E%3Ccircle cx='58' cy='26' r='4'/%3E%3Ccircle cx='140' cy='34' r='4'/%3E%3C/g%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E两翼=显著差异%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "manhattan-plot",
+ "zh": "曼哈顿图",
+ "en": "Manhattan plot",
+ "dz": "全基因组位点按染色体分段铺开，高耸天际线即显著信号。",
+ "de": "GWAS skyline across chromosomes.",
+ "pz": "GWAS 标配：x 按染色体分色块交替，-log10(p) 竖直，阈值线横切。说「曼哈顿天际线」即此。",
+ "pe": "Alternating chromosome blocks; a threshold line.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cline x1='28' y1='30' x2='176' y2='30' stroke='%238A677A' stroke-dasharray='4 3'/%3E%3Cg fill='%23BFDDF4'%3E%3Ccircle cx='32' cy='82' r='2'/%3E%3Ccircle cx='40' cy='76' r='2'/%3E%3Ccircle cx='48' cy='86' r='2'/%3E%3Ccircle cx='56' cy='78' r='2'/%3E%3Ccircle cx='64' cy='72' r='2'/%3E%3Ccircle cx='72' cy='84' r='2'/%3E%3Ccircle cx='80' cy='62' r='2'/%3E%3Ccircle cx='88' cy='80' r='2'/%3E%3C/g%3E%3Cg fill='%23C5E2D7'%3E%3Ccircle cx='98' cy='74' r='2'/%3E%3Ccircle cx='106' cy='66' r='2'/%3E%3Ccircle cx='112' cy='52' r='2.5'/%3E%3Ccircle cx='118' cy='70' r='2'/%3E%3Ccircle cx='126' cy='78' r='2'/%3E%3Ccircle cx='134' cy='72' r='2'/%3E%3Ccircle cx='142' cy='80' r='2'/%3E%3Ccircle cx='150' cy='68' r='2'/%3E%3Ccircle cx='158' cy='76' r='2'/%3E%3Ccircle cx='168' cy='82' r='2'/%3E%3C/g%3E%3Ccircle cx='112' cy='52' r='4' fill='none' stroke='%238A677A'/%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8.5' fill='%2377796f' font-family='sans-serif'%3E染色体交替分色 · 阈值线%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "cumulative-flow-diagram",
+ "zh": "累积流图",
+ "en": "Cumulative flow diagram",
+ "dz": "各状态工作项数量随时间累积叠放：带宽=在制、坡度=吞吐。",
+ "de": "Stacked state counts over time.",
+ "pz": "看板分析核心图：带宽变大即堆积，斜率差即吞吐。说「CFD 看流动」即此。",
+ "pe": "Band width is WIP; slope is throughput.",
+ "aliases": [
+  {
+   "term": "CFD",
+   "language": "en",
+   "scope": "看板语境缩写"
+  }
+ ],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cpath d='M28 24 H176 V40 H28 Z' fill='%23BFDDF4' fill-opacity='.85'/%3E%3Cpath d='M28 40 H176 V68 H28 Z' fill='%23F2CBDD' fill-opacity='.85'/%3E%3Cpath d='M28 68 H176 V96 H28 Z' fill='%23C5E2D7' fill-opacity='.85'/%3E%3Ctext x='100' y='36' text-anchor='middle' font-size='8.5' fill='%23587A94' font-family='sans-serif'%3EDone%3C/text%3E%3Ctext x='100' y='58' text-anchor='middle' font-size='8.5' fill='%238A677A' font-family='sans-serif'%3EIn progress%3C/text%3E%3Ctext x='100' y='86' text-anchor='middle' font-size='8.5' fill='%2358766B' font-family='sans-serif'%3ETo do%3C/text%3E%3Ctext x='100' y='112' text-anchor='middle' font-size='8' fill='%2377796f' font-family='sans-serif'%3E带宽=在制 · 斜率=吞吐%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+}
 ]);
 
 export default _atlasExpansion_f1dd93589e91ef8f_dataviz;
