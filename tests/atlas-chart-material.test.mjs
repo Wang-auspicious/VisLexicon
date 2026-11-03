@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import dataviz, { ATLAS_A_TOKENS, createAtlasAChartArt, createAtlasBatch06ChartArt } from '../src/data/effects-fx/dataviz.js'
+import dataviz, { ATLAS_A_TOKENS, createAtlasAChartArt, createAtlasBatch06ChartArt, createAtlasBatch07ChartArt } from '../src/data/effects-fx/dataviz.js'
 
 const decodeSvg = dataUrl => decodeURIComponent(dataUrl.slice(dataUrl.indexOf(',') + 1))
 
@@ -24,9 +24,9 @@ test('Atlas A tokens update multiple chart SVGs and defaults restore cleanly', (
   assert.ok(Object.isFrozen(ATLAS_A_TOKENS))
 })
 
-test('all twenty Atlas A chart illustrations use the shared palette and transparent SVG shells', () => {
-  const art = { ...createAtlasAChartArt(), ...createAtlasBatch06ChartArt() }
-  assert.equal(Object.keys(art).length, 20)
+test('all twenty-five Atlas A chart illustrations use the shared palette and transparent SVG shells', () => {
+  const art = { ...createAtlasAChartArt(), ...createAtlasBatch06ChartArt(), ...createAtlasBatch07ChartArt() }
+  assert.equal(Object.keys(art).length, 25)
   for (const [id, languages] of Object.entries(art)) {
     for (const svgUrl of Object.values(languages)) {
       const svg = decodeSvg(svgUrl)
@@ -79,6 +79,45 @@ test('Batch 06 examples preserve reversal, periodic, area and link encodings', (
   assert.match(svg, /5 relations · fixed line width · no ribbons/)
   assert.equal((svg.match(/<line\b/g) || []).length, 5)
   assert.match(svg, /connections only · no value encoding/)
+})
+
+test('Batch 07 examples preserve stacked totals, normalized shares, parallel brushing and price columns', () => {
+  const original = createAtlasBatch07ChartArt()
+  const changed = createAtlasBatch07ChartArt({ ...ATLAS_A_TOKENS, lakeGreen: '#123456' })
+  for (const [id,languages] of Object.entries(original)) {
+    assert.match(decodeSvg(languages.en), /--lakeGreen:#C5E2D7/, id)
+    assert.match(decodeSvg(changed[id].en), /--lakeGreen:#123456/, id)
+    assert.doesNotMatch(decodeSvg(languages.en), /undefined/, id)
+  }
+
+  const stacked = dataviz.items.find(item => item.id === 'stacked-bar-graph')
+  assert.match(stacked.chartAlt.en, /North, Central and South totals are 40, 38 and 38/)
+  assert.match(decodeSvg(stacked.chartSvg.en), /simple stack · bar height = segment sum/)
+  assert.match(decodeSvg(stacked.chartSvg.en), /Σ 40/)
+
+  const percent = dataviz.items.find(item => item.id === 'percent-stacked-bar-graph')
+  assert.match(percent.chartAlt.en, /every bar totals 100%/)
+  assert.match(decodeSvg(percent.chartSvg.en), /each bar normalized to 100%/)
+
+  const parallel = dataviz.items.find(item => item.id === 'parallel-coordinates-plot')
+  assert.match(parallel.chartAlt.en, /Cost, Reach, Quality and Load axes/)
+  assert.match(decodeSvg(parallel.chartSvg.en), /3 of 5 records highlighted/)
+  assert.equal((decodeSvg(parallel.chartSvg.en).match(/<polyline\b/g)||[]).length,5)
+
+  const rose = dataviz.items.find(item => item.id === 'nightingale-rose-chart')
+  assert.match(rose.chartAlt.en, /equal-angle monthly sectors/)
+  assert.match(decodeSvg(rose.chartSvg.en), /radius ∝ value · area grows with radius²/)
+  assert.equal((decodeSvg(rose.chartSvg.en).match(/<path\b/g)||[]).length,8)
+
+  const pointFigure = dataviz.items.find(item => item.id === 'point-and-figure-chart')
+  assert.match(pointFigure.chartAlt.en, /\$5 box size and a 3-box reversal/)
+  const pointFigureSvg = decodeSvg(pointFigure.chartSvg.en)
+  assert.match(pointFigureSvg, /Point &amp; Figure · price action/)
+  assert.match(pointFigureSvg, /box size = 5 · reversal = 3 boxes/)
+  assert.match(pointFigureSvg, /successive price columns · not a time axis/)
+  assert.doesNotMatch(pointFigureSvg, /&(?!amp;|lt;|gt;|quot;|apos;|#)/)
+  assert.equal((pointFigureSvg.match(/>X</g)||[]).length,9)
+  assert.equal((pointFigureSvg.match(/>O</g)||[]).length,6)
 })
 
 test('revised Pyramid and Venn examples show their documented regions and order', () => {
