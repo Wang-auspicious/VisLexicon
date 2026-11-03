@@ -369,5 +369,18 @@ export default {
       "cells": ["都有替代文本","尺寸已声明","压缩到预算内","授权可追溯"],
       "css": ".fxcol{gap:6px;width:176px}.fx{height:28px;border-radius:7px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #dfe3db;color:#202824;font:500 10.5px/1 var(--fx-sans);justify-content:flex-start;padding:0 28px 0 11px;position:relative;animation:ma6 4s ease-in-out infinite;animation-delay:calc(var(--i) * .14s)}.fx::after{content:'✓';position:absolute;right:10px;color:#3d7a52;font-family:var(--fx-mono);opacity:0;animation:ma6c 4s ease-in-out infinite;animation-delay:calc(var(--i) * .14s)}@keyframes ma6{0%,100%{opacity:.55}42%,66%{opacity:1}}@keyframes ma6c{0%,100%{opacity:0}45%,72%{opacity:1}}"
     }
-  ]
+  ,
+{
+ "id": "image-rendering-pixelated",
+ "zh": "像素化渲染",
+ "en": "image-rendering: pixelated",
+ "dz": "放大位图时保留硬边像素块，不做平滑插值。",
+ "de": "Upscales bitmaps with hard pixel edges, no smoothing.",
+ "pz": "像素风素材放大用 image-rendering:pixelated；smooth 则插值糊开。说「保留像素颗粒」即此。",
+ "pe": "image-rendering:pixelated keeps crisp blocks; smooth blurs.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:250px;height:120px;border-radius:12px;border:1px solid #587A94;display:flex;overflow:hidden}.fx::before{content:'';flex:1;background:url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAE0lEQVR4nGPYf/eLVdUUBiAGsgA0wAex7n2OVwAAAABJRU5ErkJggg==\") 0 0/24px 24px repeat;image-rendering:pixelated}.fx::after{content:'';flex:1;background:url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAE0lEQVR4nGPYf/eLVdUUBiAGsgA0wAex7n2OVwAAAABJRU5ErkJggg==\") 0 0/24px 24px repeat;image-rendering:auto}"
+}
+]
 };

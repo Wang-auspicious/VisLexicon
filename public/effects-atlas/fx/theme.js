@@ -390,5 +390,24 @@ export default {
       "demo": "card",
       "css": ".fx{background:#fff}@media (forced-colors:active){.fx{background:Canvas;color:CanvasText;border:1px solid CanvasText;forced-color-adjust:none}.fx>b,.fx>u,.fx>i{background:GrayText}}.fx::after{content:'forced-colors:active';display:block;margin-top:10px;font:600 10px var(--fx-mono,monospace);color:#9b9d92}"
     }
-  ]
+  ,
+{
+ "id": "prefers-color-scheme",
+ "zh": "深色偏好响应",
+ "en": "prefers-color-scheme",
+ "dz": "跟随系统深色/浅色偏好的媒体查询开关。",
+ "de": "Media query that mirrors the OS dark or light preference.",
+ "pz": "@media (prefers-color-scheme:dark) 提供深色分支，别再用 JS 探测。说「跟随系统深浅」即此。",
+ "pe": "@media (prefers-color-scheme:dark) branches without JS.",
+ "aliases": [
+  {
+   "term": "dark mode media query",
+   "language": "en",
+   "scope": "社区俗称"
+  }
+ ],
+ "demo": "box",
+ "css": ".fx{display:block;width:min(300px,86%);border-radius:12px;padding:14px;background:#F6F7F5;border:1px solid #77796f;font:600 11px/1.7 var(--fx-sans,system-ui);color:#23232f}.fx::before{content:'当前系统偏好亮色：本卡为汉白玉白底。'}@media (prefers-color-scheme:dark){.fx{background:#31363a;border-color:#BFDDF4;color:#BFDDF4}.fx::before{content:'检测到深色偏好：卡片自动切换为深色底、雾蓝字。'}}"
+}
+]
 };

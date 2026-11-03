@@ -371,5 +371,24 @@ export default {
       "cells": ["无无限循环装饰","可暂停","不阻塞输入","低端机可降级"],
       "css": ".fxcol{gap:6px;width:188px}.fx{height:28px;border-radius:7px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #dfe3db;color:#202824;font:500 10.5px/1 var(--fx-sans);justify-content:flex-start;padding:0 28px 0 11px;position:relative;animation:ma5 4s ease-in-out infinite;animation-delay:calc(var(--i) * .14s)}.fx::after{content:'✓';position:absolute;right:10px;color:#3d7a52;font-family:var(--fx-mono);opacity:0;animation:ma5c 4s ease-in-out infinite;animation-delay:calc(var(--i) * .14s)}@keyframes ma5{0%,100%{opacity:.55}42%,66%{opacity:1}}@keyframes ma5c{0%,100%{opacity:0}45%,72%{opacity:1}}"
     }
-  ]
+  ,
+{
+ "id": "offset-path",
+ "zh": "运动路径",
+ "en": "offset-path",
+ "dz": "元素沿一条 SVG 路径滑行，朝向可随路径切线。",
+ "de": "The element slides along an SVG path, optionally rotating with the tangent.",
+ "pz": "offset-path:path('M...') 配 offset-distance 动画。说「沿这条曲线走」即此。",
+ "pe": "offset-path with an animated offset-distance moves the element along the curve.",
+ "aliases": [
+  {
+   "term": "motion path",
+   "language": "en",
+   "scope": "规范名 CSS Motion Path"
+  }
+ ],
+ "demo": "box",
+ "css": "@keyframes fxk{from{offset-distance:0%}to{offset-distance:100%}}.fxbox{position:relative;overflow:hidden;width:min(330px,90%);height:176px}.fx{width:56px;height:56px;border-radius:50%;background:#F2CBDD;border:2px solid #8A677A;offset-path:path('M 32 136 C 76 14, 184 14, 228 136');offset-rotate:0deg;animation:fxk 3.6s ease-in-out infinite alternate;margin:0 auto}.fxbox::before{content:'';position:absolute;inset:0;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 176'%3E%3Cpath d='M 32 136 C 76 14, 184 14, 228 136' fill='none' stroke='%23BFDDF4' stroke-width='3' stroke-dasharray='5 6'/%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+}
+]
 };

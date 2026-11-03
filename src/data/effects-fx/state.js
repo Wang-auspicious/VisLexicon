@@ -785,5 +785,30 @@ export default {
       "cells": ["每个状态都有文案","失败可重试","状态可持久","读屏会播报"],
       "css": ".fxcol{gap:6px;width:184px}.fx{height:28px;border-radius:7px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #dfe3db;color:#202824;font:500 10.5px/1 var(--fx-sans);justify-content:flex-start;padding:0 28px 0 11px;position:relative;animation:sa5 4s ease-in-out infinite;animation-delay:calc(var(--i) * .14s)}.fx::after{content:'✓';position:absolute;right:10px;color:#3d7a52;font-family:var(--fx-mono);opacity:0;animation:sa5c 4s ease-in-out infinite;animation-delay:calc(var(--i) * .14s)}@keyframes sa5{0%,100%{opacity:.55}42%,66%{opacity:1}}@keyframes sa5c{0%,100%{opacity:0}45%,72%{opacity:1}}"
     }
-  ]
+  ,
+{
+ "id": "user-select",
+ "zh": "文本选择控制",
+ "en": "user-select",
+ "dz": "决定一段内容能不能被用户选中。",
+ "de": "Controls whether the user can select the content.",
+ "pz": "user-select:none 用于装饰性文案；all 让点一下就整段全选。说「这段不许选」即此。",
+ "pe": "user-select:none for decorative text; all selects the whole block on one click.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{display:block;width:min(320px,88%);font:500 11px/1.8 var(--fx-sans,system-ui);color:#23232f}.fx::before{content:'此行 user-select:none —— 拖动鼠标选不中（装饰文案）。';display:block;padding:12px 14px;border-radius:10px;background:#F2CBDD;border:1px solid #8A677A;color:#8A677A;user-select:none;margin-bottom:10px}.fx::after{content:'此行可以正常选中复制 —— 默认 auto 行为。';display:block;padding:12px 14px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;user-select:auto}"
+},
+{
+ "id": "pointer-events",
+ "zh": "指针穿透",
+ "en": "pointer-events",
+ "dz": "让覆盖层对指针隐形，事件落到下面的元素。",
+ "de": "Makes an overlay transparent to the pointer so events pass through.",
+ "pz": "浮层 pointer-events:none 时，鼠标悬停直接命中其下的按钮。说「让浮层穿透」即此。",
+ "pe": "pointer-events:none on the overlay lets hover hit the element below.",
+ "aliases": [],
+ "demo": "panel",
+ "css": ".fxstack{width:250px;height:180px;border-radius:12px;background:#eceee6;position:relative}.fxa{position:absolute;inset:24px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;display:flex;align-items:center;justify-content:center;font:600 11px/1 var(--fx-sans,system-ui);color:#587A94;transition:background-color .25s}.fxa::before{content:'把指针移到我身上（穿透浮层后我才变色）'}.fxa:hover{background:#C5E2D7;border-color:#58766B;color:#58766B}.fxb{position:absolute;inset:14px;border-radius:12px;border:2px dashed #8A677A;background:rgba(242,203,221,.25);display:flex;align-items:flex-start;justify-content:center;font:600 10px/2.2 var(--fx-sans,system-ui);color:#8A677A;pointer-events:none}.fxb::before{content:'虚线浮层 pointer-events:none'}.fxstack::after{content:'';display:block}"
+}
+]
 };

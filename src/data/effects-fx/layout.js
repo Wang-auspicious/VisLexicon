@@ -279,6 +279,196 @@ export default {
       "pe": "Use 1.618:1 or 2:3 — more tension than a flat 50/50.",
       "demo": "grid",
       "css": ".fxgrid{display:grid;width:min(560px,88%);gap:12px;grid-template-columns:1.618fr 1fr;grid-auto-rows:210px}.fx{height:auto;min-height:52px;background:#fcfcfb;border:1px solid #e4e5e0;border-radius:10px}.fx:nth-child(n+3){display:none}.fx:first-child{background:linear-gradient(150deg,#6ba9bd,#3f7796 36%,#3b5f92 68%,#4a58a2)}"
+    },
+    {
+      "id": "kanban",
+      "zh": "四列看板",
+      "en": "Kanban columns",
+      "dz": "一列一个状态，卡片往右走",
+      "de": "One column per state; cards move right",
+      "pz": "四列等宽 flex，列 = 状态，卡 = 任务；列头钉住，列内纵向滚动。",
+      "pe": "Four equal flex columns: column = state, card = task. Pin the column head, scroll the body.",
+      "demo": "list",
+      "css": ".fxcol{flex-direction:row;align-items:flex-start;gap:10px;width:min(560px,92%)}.fx{display:block;flex:1;height:178px;padding:11px 9px;border-radius:12px;background:#f2f3ef;border:1px solid #e6e7e1;position:relative}.fx::before{content:'';position:absolute;left:9px;right:9px;top:11px;height:6px;border-radius:3px;background:#c6c9bf}.fx>i{display:block;width:auto;height:34px;margin-top:16px;border-radius:7px;background:#fff;border:1px solid #e3e4de;box-shadow:0 1px 2px rgba(48,66,92,.06)}.fx>u{display:block;flex:none;width:auto;height:34px;margin-top:7px;border-radius:7px;background:#fff;border:1px dashed #dbddd5;text-decoration:none}.fx:nth-child(1)>u{width:62%}.fx:nth-child(4)>i{background:#e9f1e4;border-color:#d3e2c9}.fx:nth-child(4)>u{display:none}.fx:nth-child(n+5){display:none}"
+    },
+    {
+      "id": "invoice",
+      "zh": "发票版式",
+      "en": "Invoice sheet",
+      "dz": "抬头 + 明细表 + 右侧总额",
+      "de": "Header, line-item table, totals pushed right",
+      "pz": "明细行走 table，金额列右对齐；税与总额贴右下，付款指引单独一块。",
+      "pe": "Line items in a table with a right-aligned amount column; tax and totals hug the bottom-right, payment terms get their own block.",
+      "demo": "table",
+      "css": ".fxtable{width:min(430px,88%)}.fxtable::after{content:'';display:block;height:44px;background:linear-gradient(#eff0eb,#eff0eb) 14px 13px/56% 6px no-repeat,linear-gradient(#eff0eb,#eff0eb) 14px 25px/36% 6px no-repeat,#fff}.fx{height:32px;gap:10px}.fx:first-child{height:40px;background:#f2f3ef}.fx>i{width:24px;height:12px;border-radius:3px;background:#e2e4dd}.fx>u{height:7px;background:#eceee7}.fx::after{content:'';margin-left:auto;width:36px;height:7px;border-radius:3px;background:#dfe1da}.fx:first-child>i{width:46px;height:9px;background:#c9ccc2}.fx:first-child>u{flex:none;width:30%;height:9px;background:#dfe1da}.fx:nth-child(4){border-top:1px solid #dfe1da}.fx:nth-child(5)::after{width:58px;height:10px;background:#23232f}.fx:nth-child(5)>u{display:none}"
+    },
+    {
+      "id": "resume-sheet",
+      "zh": "A4 单页简历",
+      "en": "Single-page resume",
+      "dz": "一张纸看完一个人",
+      "de": "One sheet, one whole career",
+      "pz": "容器锁 210:297 的纸比例，正文两栏 60/40，章节标题上方压一条短 accent 线。",
+      "pe": "Lock the container to a 210:297 sheet, split the body 60/40, and set a short accent rule above every section title.",
+      "demo": "card",
+      "css": ".fxcard{width:min(200px,64%)}.fx{width:auto;aspect-ratio:210/297;padding:16px 14px;border-radius:3px;border-color:#dfe0da;display:grid;grid-template-columns:1.62fr 1fr;grid-template-rows:auto 1fr;grid-template-areas:'name name' 'main side';gap:12px 14px;box-shadow:0 18px 40px -24px rgba(28,40,26,.34)}.fx>b{grid-area:name;height:46px;margin:0;border-radius:0;background:linear-gradient(#23232f,#23232f) 0 0/72% 15px no-repeat,linear-gradient(#c9ccc2,#c9ccc2) 0 23px/48% 5px no-repeat,linear-gradient(#3f6f92,#3f6f92) 0 38px/26px 3px no-repeat}.fx>i{grid-area:main;width:auto;height:auto;margin-top:0;border-radius:0;background:linear-gradient(#23232f,#23232f) 0 0/40% 5px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 0 14px/100% 4px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 0 23px/92% 4px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 0 32px/96% 4px no-repeat,linear-gradient(#23232f,#23232f) 0 50px/32% 5px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 0 64px/100% 4px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 0 73px/86% 4px no-repeat}.fx>u{grid-area:side;width:auto;height:auto;border-radius:0;background:linear-gradient(#23232f,#23232f) 0 0/54% 5px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 0 14px/100% 4px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 0 23px/74% 4px no-repeat,linear-gradient(#23232f,#23232f) 0 41px/46% 5px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 0 55px/100% 4px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 0 64px/62% 4px no-repeat;text-decoration:none}"
+    },
+    {
+      "id": "onboarding-week",
+      "zh": "首周入职页",
+      "en": "First-week onboarding",
+      "dz": "新人第一周干嘛，一屏看完",
+      "de": "The whole first week in one scroll",
+      "pz": "长页分块：日程做成五段横条，经理和 buddy 并排两卡，学习路径与设备清单各自成块。",
+      "pe": "Chunk the long page: a five-segment day strip, manager and buddy side by side, then the learning track and the kit list as their own blocks.",
+      "demo": "scroll",
+      "css": ".fxscroll{width:min(430px,88%);height:min(300px,46vh);padding:14px;gap:10px;background:#fbfbf8}.fx{height:auto;min-height:56px;flex:none;position:relative;overflow:hidden;border-radius:10px;background:#fff;border:1px solid #e5e6e0;display:block}.fx::after{content:''}.fx:nth-child(1){height:66px;border:0;background:linear-gradient(150deg,#3f6f92,#6ba9bd 58%,#e5a68f)}.fx:nth-child(2){height:80px;background:linear-gradient(#23232f,#23232f) 12px 13px/34% 5px no-repeat,repeating-linear-gradient(90deg,#eef0ea 0 16%,#fff 16% 20%) 12px 30px/86% 40px no-repeat}.fx:nth-child(3){height:62px;background:linear-gradient(90deg,#eef1ec 0 47.5%,#fff 47.5% 52.5%,#eef1ec 52.5%)}.fx:nth-child(4){height:74px;background:linear-gradient(#23232f,#23232f) 12px 13px/28% 5px no-repeat,repeating-linear-gradient(#f4f5f1 0 8px,#fff 8px 22px) 12px 28px/86% 44px no-repeat}.fx:nth-child(5){height:56px;background:repeating-linear-gradient(#e8eae3 0 4px,transparent 4px 15px) 30px 14px/60% 44px no-repeat}.fx:nth-child(5)>i{display:block;position:absolute;left:13px;top:14px;width:10px;height:10px;border-radius:3px;border:1px solid #c9ccc2;background:#fff}.fx:nth-child(6){height:58px;border:0;background:linear-gradient(150deg,#23232f,#3a3a4a)}"
+    },
+    {
+      "id": "prd-spec",
+      "zh": "产品需求文档",
+      "en": "Product spec page",
+      "dz": "问题、指标、范围、故事，四块讲完",
+      "de": "Problem, metrics, scope, stories — four blocks and done",
+      "pz": "顶部标题条挂状态 pill，下面 2×2：问题与指标一行，范围内外与 user stories 一行。",
+      "pe": "A title bar carries the status pill; below it a 2x2 — problem and metrics on one row, scope in/out and user stories on the next.",
+      "demo": "surface",
+      "css": ".fxsurface{width:min(560px,92%);height:min(340px,50vh);background:#fbfbf8}.fx{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto 1fr;gap:9px;padding:14px;background:transparent}.fx::before{content:'';grid-column:1/3;height:32px;border-radius:9px;background:linear-gradient(#23232f,#23232f) 12px 9px/28% 5px no-repeat,linear-gradient(#dfe1da,#dfe1da) 12px 20px/16% 4px no-repeat,linear-gradient(#e8f0e2,#e8f0e2) 84% 50%/18% 16px no-repeat,#f1f2ed}.fx>b{display:block;height:auto;min-height:64px;border-radius:9px;background:linear-gradient(#23232f,#23232f) 11px 11px/36% 5px no-repeat,linear-gradient(#e4e6df,#e4e6df) 11px 25px/84% 4px no-repeat,linear-gradient(#e4e6df,#e4e6df) 11px 34px/76% 4px no-repeat,linear-gradient(#e4e6df,#e4e6df) 11px 43px/80% 4px no-repeat,#f6f7f2}.fx>i{display:block;height:auto;min-height:64px;border-radius:9px;background:linear-gradient(#23232f,#23232f) 11px 11px/42% 5px no-repeat,repeating-linear-gradient(90deg,#eef0ea 0 30%,#f6f7f2 30% 35%) 11px 26px/84% 34px no-repeat,#f6f7f2}.fx>u{display:block;height:auto;border-radius:9px;background:linear-gradient(90deg,#e8f0e2 0 48%,#f6e8e6 48%);text-decoration:none}.fx::after{content:'';border-radius:9px;background:repeating-linear-gradient(#e4e6df 0 4px,transparent 4px 13px) 11px 30px/78% 60px no-repeat,#f6f7f2}"
+    },
+    {
+      "id": "okr-board",
+      "zh": "OKR 追踪板",
+      "en": "OKR tracker",
+      "dz": "季度横幅下面一排进度条",
+      "de": "A quarter banner over a row of progress bars",
+      "pz": "季度 banner 占满顶部，每个 KR 一根条，按状态上色，条顶的小圆点就是 owner。",
+      "pe": "The quarter banner spans the top; one bar per key result, coloured by status, with the owner as a dot sitting on top of it.",
+      "demo": "chart",
+      "css": ".fxchart{position:relative;align-items:flex-end;gap:11px;height:min(250px,42vh);padding:46px 16px 24px;border-radius:16px;background:#fbfbf8;border:1px solid #e6e7e1}.fxchart::before{content:'';position:absolute;left:16px;right:16px;top:13px;height:24px;border-radius:8px;background:linear-gradient(90deg,#3f6f92,#6ba9bd 60%,#e5a68f)}.fxchart::after{content:'';position:absolute;left:16px;right:16px;bottom:12px;height:1px;background:#e3e4de}.fx{width:46px;position:relative;border-radius:5px 5px 2px 2px;background:#cfd6d9}.fx::after{content:'';position:absolute;left:50%;bottom:100%;width:7px;height:7px;margin:0 0 6px -3.5px;border-radius:50%;background:#3f6f92}.fx:nth-child(1),.fx:nth-child(5){background:linear-gradient(180deg,#93c4ab,#5c9a7e)}.fx:nth-child(2),.fx:nth-child(7){background:linear-gradient(180deg,#e8bd93,#d08f5c)}.fx:nth-child(3){background:linear-gradient(180deg,#e6a6a6,#cf7474)}.fx:nth-child(4),.fx:nth-child(6){margin-left:17px}"
+    },
+    {
+      "id": "weekly-deck",
+      "zh": "周报 Deck",
+      "en": "Weekly update deck",
+      "dz": "一页一主题，横着翻",
+      "de": "One topic per page, swipe sideways",
+      "pz": "封面 / 已发布 / 进行中 / 阻塞 / 指标格 / 求助 / 致谢各占一块，页数固定才写得下去。",
+      "pe": "Cover, shipped, in flight, blocked, a metric grid, asks and thanks each get one block — a fixed page count is what keeps it writable.",
+      "demo": "grid",
+      "css": ".fxgrid{grid-template-columns:repeat(3,1fr);grid-auto-rows:76px;gap:9px;width:min(540px,92%)}.fx{height:auto;position:relative;overflow:hidden;border-radius:10px;background:#fbfbf8;border:1px solid #e6e7e1}.fx:nth-child(1){grid-column:span 2;border:0;background:linear-gradient(150deg,#3f6f92,#5fa2b8 62%,#e5a68f)}.fx:nth-child(2){background:repeating-linear-gradient(#eceee7 0 4px,transparent 4px 14px) 10px 22px/70% 52px no-repeat,#fbfbf8}.fx:nth-child(3)>u{display:block;position:absolute;left:10px;right:10px;bottom:12px;height:6px;border-radius:3px;background:linear-gradient(90deg,#5c9a7e 0 62%,#e6e8e1 62%);text-decoration:none}.fx:nth-child(4){background:#f9ebe9;border-color:#eccfcb}.fx:nth-child(4)>i{display:block;position:absolute;left:10px;top:12px;width:8px;height:8px;border-radius:50%;background:#cf7474}.fx:nth-child(5)>b,.fx:nth-child(6)>b,.fx:nth-child(7)>b{display:block;height:12px;width:52%;margin:12px 10px 0;border-radius:3px;background:#23232f}.fx:nth-child(5)>u,.fx:nth-child(6)>u,.fx:nth-child(7)>u{display:block;height:5px;margin:9px 10px 0;border-radius:3px;background:#e2e4dd;text-decoration:none}.fx:nth-child(8){background:repeating-linear-gradient(#eceee7 0 4px,transparent 4px 14px) 10px 26px/62% 40px no-repeat,#fbfbf8}.fx:nth-child(9){border:0;background:linear-gradient(150deg,#23232f,#3a3a4a)}"
+    },
+    {
+      "id": "minutes",
+      "zh": "会议纪要",
+      "en": "Meeting minutes",
+      "dz": "左议程右决议，action 必须有主",
+      "de": "Agenda left, decisions right, every action owned",
+      "pz": "左右分栏：左边出席头像加议程勾选，右边决议卡片压着三行 action items。",
+      "pe": "Split it: attendance and the agenda checklist on the left, a decisions card stacked over three action rows on the right.",
+      "demo": "panel",
+      "css": ".fxstack{display:grid;grid-template-columns:1.3fr 1fr;gap:1px;background:#e5e6e0;border-color:#e5e6e0;width:min(540px,92%);height:min(320px,48vh)}.fxa,.fxb{position:relative;inset:auto;display:block;font-size:0;padding:15px}.fxa{background:#fbfbf8}.fxb{background:#f4f5f1}.fxa::before{content:'';display:block;height:26px;background:linear-gradient(#23232f,#23232f) 0 0/52% 7px no-repeat,linear-gradient(#dfe1da,#dfe1da) 0 15px/34% 5px no-repeat}.fxa>i{display:block;height:20px;margin-top:13px;background:radial-gradient(circle at 10px 10px,#c9ccc2 0 9px,transparent 9px),radial-gradient(circle at 30px 10px,#d8dad2 0 9px,transparent 9px),radial-gradient(circle at 50px 10px,#c9ccc2 0 9px,transparent 9px),radial-gradient(circle at 70px 10px,#d8dad2 0 9px,transparent 9px)}.fxa>u{display:block;flex:none;width:auto;height:132px;margin-top:14px;background:repeating-linear-gradient(#e2e4dd 0 4px,transparent 4px 24px);text-decoration:none}.fxb::before{content:'';display:block;height:58px;border-radius:9px;background:linear-gradient(#23232f,#23232f) 11px 12px/40% 5px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 11px 26px/78% 4px no-repeat,linear-gradient(#e2e4dd,#e2e4dd) 11px 36px/66% 4px no-repeat,#fff;box-shadow:0 1px 2px rgba(48,66,92,.06)}.fxb>i{display:block;height:5px;width:44%;margin-top:16px;border-radius:3px;background:#c9ccc2}.fxb>u{display:block;flex:none;width:auto;height:96px;margin-top:10px;background:linear-gradient(#d8dad2,#d8dad2) 0 0/100% 1px no-repeat,repeating-linear-gradient(#e2e4dd 0 4px,transparent 4px 22px) 0 10px/78% 86px no-repeat;text-decoration:none}"
+    },
+    {
+      "id": "email-blast",
+      "zh": "发布邮件",
+      "en": "Launch email",
+      "dz": "600 宽单栏，到哪儿都一个样",
+      "de": "A 600px single column that holds everywhere",
+      "pz": "锁 600px 单栏，规格用三列等分；布局靠 table 兜底，颜色全部写 inline。",
+      "pe": "Lock a 600px single column, divide the specs into three equal cells, fall back to tables for layout and keep every colour inline.",
+      "demo": "cards",
+      "css": ".fxrow{display:flex;flex-wrap:wrap;gap:6px;align-items:stretch;width:min(380px,92%)}.fxrow::before{content:'';flex:none;width:100%;height:66px;border-radius:10px 10px 0 0;background:linear-gradient(#fbfbf8,#fbfbf8) 50% 15px/38% 6px no-repeat,linear-gradient(150deg,#3f6f92,#6ba9bd 64%,#e5a68f) 50% 100%/100% 42px no-repeat}.fxrow::after{content:'';flex:none;width:100%;height:34px;border-radius:0 0 10px 10px;background:radial-gradient(circle at 14% 15px,#d5d8cf 0 5px,transparent 5px),radial-gradient(circle at 26% 15px,#d5d8cf 0 5px,transparent 5px),linear-gradient(#eef0ea,#eef0ea) 50% 24px/44% 4px no-repeat,#fbfbf8}.fx{display:block;flex:1;width:auto;height:112px;padding:0;border-radius:0;font-size:0;background:#fff}.fx>b{height:44px;margin:9px 9px 0;border-radius:5px;background:linear-gradient(140deg,#eef0ea,#e0e4dc)}.fx>u{display:block;flex:none;width:auto;height:5px;margin:9px 9px 0;border-radius:3px;background:#e6e8e1;text-decoration:none}.fx>i{display:block;height:5px;width:auto;margin:7px 9px 0;border-radius:3px;background:#eef0ea}"
     }
-  ]
+  ,
+{
+ "id": "columns-multicol",
+ "zh": "多栏布局",
+ "en": "Multi-column layout",
+ "dz": "一段内容被自动分成几栏，栏间有间距与分隔线。",
+ "de": "One flow of content splits into balanced columns with gaps and rules.",
+ "pz": "columns:3;column-rule:1px solid —— 内容自动平衡分栏。说「做成三栏」即此。",
+ "pe": "columns:3 with column-rule balances one flow into three columns.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{columns:3;column-gap:18px;column-rule:1px solid #8A677A;width:320px;height:170px;padding:14px;border-radius:12px;background:#F2CBDD;box-sizing:border-box;font:500 10.5px/1.7 var(--fx-sans,system-ui);color:#23232f;overflow:hidden}.fx::before{content:'多栏把同一段内容按高度平衡分成三栏。栏与栏之间由 column-gap 撑开，由 column-rule 画出分隔线。内容先填满第一栏，再到第二栏、第三栏，浏览器自动平衡各栏高度，使最后一段尽量同时结束。这一机制适合正文排版而不是界面控件。';display:block}"
+},
+{
+ "id": "break-inside-avoid",
+ "zh": "断分控制",
+ "en": "break-inside: avoid",
+ "dz": "禁止一个块在分栏/分页边界被切成两半。",
+ "de": "Forbids a box from being split across columns or pages.",
+ "pz": "break-inside:avoid 用在卡片上，跨栏/打印分页时不被切半。说「这块不许断开」即此。",
+ "pe": "break-inside:avoid keeps cards whole across columns and printed pages.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{display:block;columns:2;column-gap:16px;height:230px;padding:10px;background:#eceee6;border-radius:12px}.fx{height:104px;margin-bottom:12px;border-radius:10px;background:repeating-linear-gradient(180deg,#BFDDF4 0 14px,#d8e9f7 14px 18px);border:1px solid #587A94;box-sizing:border-box}.fx:nth-child(2){break-inside:avoid;background:repeating-linear-gradient(180deg,#F2CBDD 0 14px,#f7e3ee 14px 18px);border-color:#8A677A}"
+},
+{
+ "id": "flex-grow-factor",
+ "zh": "弹性放大",
+ "en": "flex-grow",
+ "dz": "容器有剩余空间时，按 grow 比例分给各弹性行。",
+ "de": "Free space is distributed to items proportional to flex-grow.",
+ "pz": "flex-grow 是份额不是倍数：1/1/3 是把余量按 1:1:3 分。说「这块吃三份余量」即此。",
+ "pe": "flex-grow shares free space in ratios, not multipliers.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{flex-direction:row;gap:8px;width:min(400px,86%);height:96px;padding:10px;background:#eceee6;border-radius:12px}.fx{flex-basis:40px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94}.fx:nth-child(1){flex-grow:1}.fx:nth-child(2){flex-grow:1}.fx:nth-child(3){flex-grow:3;background:#F2CBDD;border-color:#8A677A}.fx:nth-child(n+4){display:none}"
+},
+{
+ "id": "flex-shrink-factor",
+ "zh": "弹性收缩",
+ "en": "flex-shrink",
+ "dz": "容器放不下时，按 shrink 比例从各弹性行扣宽。",
+ "de": "Overflow is removed from items proportional to flex-shrink.",
+ "pz": "flex-shrink:0 是「不许压我」；默认 1。防止卡片被挤变形时常用。说「这块不许收缩」即此。",
+ "pe": "flex-shrink:0 forbids squeezing; the default is 1.",
+ "aliases": [],
+ "demo": "list",
+ "css": ".fxcol{flex-direction:row;gap:8px;width:min(360px,82%);height:96px;padding:10px;background:#eceee6;border-radius:12px}.fx{flex-basis:120px;border-radius:8px;background:#C5E2D7;border:1px solid #58766B}.fx:nth-child(1){flex-shrink:1}.fx:nth-child(2){flex-shrink:2}.fx:nth-child(3){flex-shrink:0;background:#F2CBDD;border-color:#8A677A}.fx:nth-child(n+4){display:none}"
+},
+{
+ "id": "gap-property",
+ "zh": "统一间隙",
+ "en": "gap",
+ "dz": "行与列的间距由一个属性统一声明，不靠 margin。",
+ "de": "Row and column gaps are declared in one property instead of margins.",
+ "pz": "gap:14px 同时管行列间距；只在主轴开缝用 row-gap 或 column-gap。说「用 gap 开缝」即此。",
+ "pe": "gap:14px handles both axes; row-gap/column-gap split them.",
+ "aliases": [
+  {
+   "term": "grid-gap",
+   "language": "en",
+   "scope": "grid-gap 是 gap 在 grid 中的旧名"
+  }
+ ],
+ "demo": "list",
+ "css": ".fxcol{gap:16px;padding:12px;background:#eceee6;border-radius:12px;width:min(320px,84%)}.fx{height:34px;border-radius:8px;background:#BFDDF4;border:1px solid #587A94}.fx:nth-child(3){background:#F2CBDD;border-color:#8A677A}"
+},
+{
+ "id": "box-alignment",
+ "zh": "盒对齐系统",
+ "en": "Box alignment",
+ "dz": "align-* 管块轴、justify-* 管行轴，一套词汇通吃 grid 与 flex。",
+ "de": "align-* runs the block axis, justify-* the inline axis — one vocabulary for grid and flex.",
+ "pz": "把 9 个格子统一压到底部居中：align-items:end + justify-items:center。说「按盒对齐调」即此。",
+ "pe": "align-items:end + justify-items:center parks every cell bottom-center.",
+ "aliases": [],
+ "demo": "grid",
+ "css": ".fxgrid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);align-items:end;justify-items:center;height:220px;padding:10px;background:#eceee6;border-radius:12px}.fx{width:44px;height:34px;border-radius:8px;background:#C5E2D7;border:1px solid #58766B}"
+},
+{
+ "id": "stacking-context",
+ "zh": "堆叠上下文",
+ "en": "Stacking context",
+ "dz": "一组元素共享的渲染顺序原子层，内外 z-index 互不串位。",
+ "de": "An atomic render-order group; z-index battles never cross its border.",
+ "pz": "父级有了 opacity<1/transform/isolation 就形成上下文，子元素 z-index 再大也只在组内比。说「隔离层级」即此。",
+ "pe": "opacity<1/transform/isolation on the parent walls off children's z-index.",
+ "aliases": [],
+ "demo": "panel",
+ "css": ".fxstack{width:260px;height:190px;padding:14px;border-radius:12px;background:#eceee6;position:relative}.fxa{position:absolute;top:52px;left:24px;width:150px;height:96px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;opacity:.92;isolation:isolate;display:flex;align-items:center;justify-content:center;font:600 10px/1.4 var(--fx-sans,system-ui);color:#587A94;text-align:center}.fxa::before{content:'';position:absolute;top:-14px;left:-14px;width:64px;height:64px;border-radius:50%;background:#C5E2D7;border:1px solid #58766B;z-index:5}.fxb{position:absolute;top:24px;left:120px;width:110px;height:70px;border-radius:10px;background:#F2CBDD;border:1px solid #8A677A;z-index:3;display:flex;align-items:center;justify-content:center;font:600 10px/1.4 var(--fx-sans,system-ui);color:#8A677A;text-align:center}.fxb::before{content:'z=3 组外'}"
+}
+]
 };

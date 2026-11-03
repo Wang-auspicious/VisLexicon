@@ -106,5 +106,96 @@ export default {
     { id: 'endcta', zh: '滚到底显 CTA', en: 'CTA at the end', dz: '滚到底部按钮升起来', de: 'The button rises once you reach the bottom',
       pz: '监听滚动到底（或最后一个哨兵元素进入视口）再显示。', pe: 'Watch for a sentinel at the bottom entering view, then reveal.',
       demo: 'scroll', css: `@keyframes fxk{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}.fx:last-child{background:#e8879c;color:#fff;font-weight:700;animation:fxk linear both;animation-timeline:view();animation-range:entry 0% entry 100%}` }
-  ]
+  ,
+{
+ "id": "scroll-padding",
+ "zh": "滚动吸附内距",
+ "en": "scroll-padding",
+ "dz": "把吸附目标区整个向内推，落点停在容器内边距之后。",
+ "de": "Insets the snap area so resting points land inside the padding.",
+ "pz": "有悬浮头时 scroll-padding-top:64px，吸附落点自动让出头下。说「吸附时让开顶栏」即此。",
+ "pe": "scroll-padding-top:64px keeps snapped targets clear of a fixed header.",
+ "aliases": [],
+ "demo": "scroll",
+ "css": ".fxscroll{scroll-snap-type:y mandatory;scroll-padding-top:34px;height:200px}.fx{scroll-snap-align:start;height:84px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;box-sizing:border-box;flex:none}.fx::before{content:'吸附落点让开顶部 34px';display:block;font:600 10px/1 var(--fx-sans,system-ui);color:#587A94;padding-top:6px;text-align:center}"
+},
+{
+ "id": "scroll-margin",
+ "zh": "滚动吸附外距",
+ "en": "scroll-margin",
+ "dz": "给吸附目标外扩一圈，锚点定位时留出呼吸空间。",
+ "de": "Outsets each snap target so anchored landings get breathing room.",
+ "pz": "锚点跳转被顶栏遮住时，给目标加 scroll-margin-top:64px。说「目标让出 64px」即此。",
+ "pe": "scroll-margin-top:64px on the target clears a fixed header after anchor jumps.",
+ "aliases": [],
+ "demo": "scroll",
+ "css": ".fxscroll{scroll-snap-type:y mandatory;height:200px}.fx{scroll-snap-align:start;scroll-margin-top:30px;height:76px;border-radius:10px;background:#C5E2D7;border:1px solid #58766B;box-sizing:border-box;flex:none;margin-top:14px}.fx::before{content:'每块自带 30px 外距';display:block;font:600 10px/1 var(--fx-sans,system-ui);color:#58766B;padding-top:6px;text-align:center}"
+},
+{
+ "id": "overscroll-containment",
+ "zh": "过界滚动抑制",
+ "en": "overscroll-behavior",
+ "dz": "滚到边界后是否把滚动交还给外层或页面。",
+ "de": "Controls whether scroll chaining leaks to ancestor scrollers.",
+ "pz": "弹层内滚动区加 overscroll-behavior:contain，滚到底不再拖动背后页面。说「别让滚动漏出去」即此。",
+ "pe": "overscroll-behavior:contain stops a modal's scroller from chaining to the page.",
+ "aliases": [],
+ "demo": "scroll",
+ "css": ".fxscroll{overscroll-behavior:contain;height:190px;background:#eceee6}.fx{height:70px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;flex:none;display:flex;align-items:center;justify-content:center;font:600 10px/1.4 var(--fx-sans,system-ui);color:#587A94;text-align:center}.fx::before{content:'滚到底即停：contain 阻断滚动链，不再带动外层页面'}.fx:nth-child(even){background:#F2CBDD;border-color:#8A677A;color:#8A677A}"
+},
+{
+ "id": "scrollbar-width",
+ "zh": "滚动条宽度",
+ "en": "scrollbar-width",
+ "dz": "把滚动条调细或完全隐藏，但不取消滚动能力。",
+ "de": "Thins or hides the scrollbar without disabling scrolling.",
+ "pz": "scrollbar-width:thin 给侧栏细滚动条；none 隐藏但仍可滚。说「细滚动条」即此。",
+ "pe": "scrollbar-width:thin for slim sidebars; none hides yet still scrolls.",
+ "aliases": [],
+ "demo": "scroll",
+ "css": ".fxscroll{scrollbar-width:thin;height:190px;background:#eceee6}.fx{height:64px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;flex:none;display:flex;align-items:center;justify-content:center;font:600 10px/1 var(--fx-sans,system-ui);color:#587A94}.fx::before{content:'右侧是 thin 滚动条，滚轮仍可用'}"
+},
+{
+ "id": "scrollbar-color",
+ "zh": "滚动条配色",
+ "en": "scrollbar-color",
+ "dz": "直接指定滑块与轨道两色。",
+ "de": "Sets the thumb and track colors directly.",
+ "pz": "scrollbar-color:#587A94 transparent：深色主题里滑块亮、轨道透明。说「滑块用这个色」即此。",
+ "pe": "scrollbar-color:#587A94 transparent — bright thumb, clear track.",
+ "aliases": [],
+ "demo": "scroll",
+ "css": ".fxscroll{scrollbar-color:#587A94 #eceee6;scrollbar-width:thin;height:190px;background:#eceee6}.fx{height:64px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;flex:none;display:flex;align-items:center;justify-content:center;font:600 10px/1 var(--fx-sans,system-ui);color:#587A94}.fx::before{content:'滑块雾蓝、轨道米色'}"
+},
+{
+ "id": "sticky-positioning",
+ "zh": "粘性定位",
+ "en": "position: sticky",
+ "dz": "平时随流滚动，碰到阈值就钉在容器边上。",
+ "de": "Scrolls with the flow until the threshold, then pins.",
+ "pz": "表头 sticky;top:0 钉在滚动区顶。它受最近滚动祖先与父盒边界双重约束。说「表头钉住」即此。",
+ "pe": "position:sticky;top:0 pins a header inside its scroll ancestor.",
+ "aliases": [],
+ "demo": "scroll",
+ "css": ".fxscroll{height:210px;background:#eceee6}.fx{position:sticky;top:8px;height:52px;border-radius:10px;background:#F2CBDD;border:1px solid #8A677A;flex:none;display:flex;align-items:center;justify-content:center;font:600 10px/1 var(--fx-sans,system-ui);color:#8A677A}.fx::before{content:'粉色块滚到 8px 处钉住，其下内容从底下穿过'}.fx:nth-child(n+2){background:#BFDDF4;border-color:#587A94;color:#587A94;height:70px}"
+},
+{
+ "id": "animation-timeline-scroll",
+ "zh": "滚动驱动时间轴",
+ "en": "animation-timeline: scroll()",
+ "dz": "把动画进度绑到滚动位置，滚动多少播多少。",
+ "de": "Binds animation progress to scroll position.",
+ "pz": "animation-timeline:scroll() 让进度条随阅读滚动。说「跟着滚动播」即此。",
+ "pe": "animation-timeline:scroll() drives progress from the scroller.",
+ "aliases": [
+  {
+   "term": "scroll-driven animation",
+   "language": "en",
+   "scope": "规范族名"
+  }
+ ],
+ "demo": "scroll",
+ "css": ".fxscroll{height:210px;background:#eceee6}.fx{position:sticky;top:0;height:10px;border-radius:5px;background:#58766B;border:none;flex:none;transform-origin:left;animation:fxk linear both;animation-timeline:scroll(nearest block);margin-bottom:12px}@keyframes fxk{from{scale:0 1}to{scale:1 1}}.fx:nth-child(n+2){background:#BFDDF4;border:1px solid #587A94;height:64px;animation:none;position:static}"
+}
+]
 };

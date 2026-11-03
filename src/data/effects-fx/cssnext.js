@@ -249,5 +249,240 @@ export default {
       "cells": ["未用选择器 0","重复声明 2","层级 ≤ 3","对比度达标"],
       "css": ".fxcol{gap:6px;width:188px}.fx{height:28px;border-radius:7px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #dfe3db;color:#202824;font:500 10.5px/1 var(--fx-mono);justify-content:flex-start;padding:0 28px 0 10px;position:relative;animation:csa 4s ease-in-out infinite;animation-delay:calc(var(--i) * .14s)}.fx::after{content:'✓';position:absolute;right:10px;color:#3d7a52;font-family:var(--fx-mono);opacity:0;animation:csac 4s ease-in-out infinite;animation-delay:calc(var(--i) * .14s)}@keyframes csa{0%,100%{opacity:.55}42%,66%{opacity:1}}@keyframes csac{0%,100%{opacity:0}45%,72%{opacity:1}}"
     }
-  ]
+  ,
+{
+ "id": "clamp-function",
+ "zh": "流值夹紧",
+ "en": "clamp()",
+ "dz": "一个值被限制在上下界之间，随中间项流动。",
+ "de": "A value flows with its middle term but never leaves the floor and ceiling.",
+ "pz": "font-size:clamp(14px,4vw,40px)：中项随视口流动，上下界封死极值。指挥 AI 说「用 clamp 夹紧字号」即此机制。",
+ "pe": "font-size:clamp(14px,4vw,40px) — the middle term flows, the bounds cap the extremes.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@property --sweep{syntax:'<length>';inherits:false;initial-value:0px}@keyframes fxk{from{--sweep:0px}to{--sweep:520px}}.fx{width:clamp(90px,var(--sweep),240px);height:64px;border-radius:12px;background:#BFDDF4;border:1px solid #587A94;display:flex;align-items:center;justify-content:center;font:600 12px/1 var(--fx-sans,system-ui);color:#23232f;animation:fxk 4.5s ease-in-out infinite alternate}.fx::before{content:'clamp(90, sweep, 240)'}"
+},
+{
+ "id": "min-function",
+ "zh": "多值取小",
+ "en": "min()",
+ "dz": "一组值里总是取最小的一个。",
+ "de": "Resolves to the smallest of the given values.",
+ "pz": "width:min(80%, 320px)：让元素不超过 320px 又能随容器收缩。说「宽度用 min 封顶」即此。",
+ "pe": "width:min(80%, 320px) caps the width while still allowing it to shrink.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@property --sweep{syntax:'<length>';inherits:false;initial-value:0px}@keyframes fxk{from{--sweep:60px}to{--sweep:400px}}.fx{width:min(var(--sweep),200px);height:56px;border-radius:12px;background:#BFDDF4;border:1px solid #587A94;display:flex;align-items:center;justify-content:center;font:600 12px/1 var(--fx-sans,system-ui);color:#23232f;animation:fxk 4s ease-in-out infinite alternate}.fx::before{content:'min(sweep, 200)'}"
+},
+{
+ "id": "max-function",
+ "zh": "多值取大",
+ "en": "max()",
+ "dz": "一组值里总是取最大的一个。",
+ "de": "Resolves to the largest of the given values.",
+ "pz": "width:max(120px, 30%)：给元素保底宽度。说「用 max 保底」即此。",
+ "pe": "width:max(120px, 30%) gives the element a guaranteed minimum width.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@property --sweep{syntax:'<length>';inherits:false;initial-value:400px}@keyframes fxk{from{--sweep:400px}to{--sweep:60px}}.fx{width:max(var(--sweep),140px);height:56px;border-radius:12px;background:#C5E2D7;border:1px solid #58766B;display:flex;align-items:center;justify-content:center;font:600 12px/1 var(--fx-sans,system-ui);color:#23232f;animation:fxk 4s ease-in-out infinite alternate}.fx::before{content:'max(sweep, 140)'}"
+},
+{
+ "id": "calc-function",
+ "zh": "表达式尺寸",
+ "en": "calc()",
+ "dz": "长度、百分比与数可以在一个表达式里加减乘除。",
+ "de": "Lengths, percentages and numbers combine in one arithmetic expression.",
+ "pz": "width:calc(50% - 24px)：混合单位做减法是 calc 的招牌。说「留出 24px 用 calc 算」即此。",
+ "pe": "width:calc(50% - 24px) mixes units with subtraction — calc's signature move.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@property --sweep{syntax:'<length>';inherits:false;initial-value:0px}@keyframes fxk{from{--sweep:0px}to{--sweep:300px}}.fx{width:calc(var(--sweep) * 0.5 + 48px);height:56px;border-radius:12px;background:#BFDDF4;border:1px solid #587A94;display:flex;align-items:center;justify-content:center;font:600 12px/1 var(--fx-sans,system-ui);color:#23232f;animation:fxk 4s ease-in-out infinite alternate}.fx::before{content:'calc(sweep*.5 + 48px)'}"
+},
+{
+ "id": "border-box-sizing",
+ "zh": "边盒计算",
+ "en": "box-sizing: border-box",
+ "dz": "padding 与 border 算进声明的宽高之内。",
+ "de": "Padding and border are counted inside the declared width and height.",
+ "pz": "全局 * { box-sizing:border-box } 是现代布局起点；内撑 padding 不再撑破宽度。说「用 border-box」即此。",
+ "pe": "* { box-sizing:border-box } is the modern default: padding no longer grows the box.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@keyframes fxk{from{padding:6px}to{padding:44px}}.fx{box-sizing:border-box;width:220px;height:150px;padding:6px;border:10px solid #587A94;border-radius:14px;background:#BFDDF4;animation:fxk 3.2s ease-in-out infinite alternate;display:flex;align-items:flex-end;justify-content:center;font:600 11px/1 var(--fx-sans,system-ui);color:#23232f}.fx::before{content:'外框恒 220px，内腔被 padding 挤小'}"
+},
+{
+ "id": "text-box-trim",
+ "zh": "前导修剪",
+ "en": "text-box-trim",
+ "dz": "把文字块首行上方与末行下方的多余空隙裁掉。",
+ "de": "Trims the space above the first line and below the last line of a text block.",
+ "pz": "text-box:trim-both cap alphabetic：标题在卡片里顶到视觉边缘。说「修剪文字上下空隙」即此。",
+ "pe": "text-box:trim-both cap alphabetic pulls headings flush to the visual edge.",
+ "aliases": [
+  {
+   "term": "text-box",
+   "language": "en",
+   "scope": "text-box 是 trim+edge 的简写形式"
+  }
+ ],
+ "demo": "text",
+ "css": ".fx{display:block;font:700 clamp(34px,6vw,58px)/1.35 var(--fx-sans,system-ui);letter-spacing:-.02em;color:#23232f;text-box:trim-both cap alphabetic;background:linear-gradient(#BFDDF4,#BFDDF4) 0 0/100% 100% no-repeat;border-block:2px dashed #587A94;padding-block:2px}"
+},
+{
+ "id": "text-box-edge",
+ "zh": "修剪边缘",
+ "en": "text-box-edge",
+ "dz": "决定按字体的哪个度量线来修剪（cap 高度、x 高度等）。",
+ "de": "Chooses which font metric line the trim uses (cap height, x-height, …).",
+ "pz": "text-box-edge:cap alphabetic 对齐大写字顶；ex alphabetic 对齐 x 高度，中英文混排可选不同基准。说「按 cap 修剪」即此。",
+ "pe": "text-box-edge:cap alphabetic trims to the top of capitals; ex alphabetic trims to the x-height.",
+ "aliases": [],
+ "demo": "text",
+ "css": ".fx{display:block;font:700 clamp(30px,5.4vw,52px)/1.5 var(--fx-sans,system-ui);color:#23232f}.fx::before{content:'CAP 修剪 cap alphabetic';display:block;font-size:.62em;color:#587A94;text-box:trim-both cap alphabetic;background:#BFDDF4;border-block:2px solid #587A94}.fx::after{content:'X 修剪 ex alphabetic';display:block;font-size:.62em;color:#58766B;text-box:trim-both ex alphabetic;background:#C5E2D7;border-block:2px solid #58766B}"
+},
+{
+ "id": "overflow-clip",
+ "zh": "溢出裁剪",
+ "en": "overflow: clip",
+ "dz": "内容在盒边缘被直接裁断，且不产生滚动容器。",
+ "de": "Content is cut at the box edge without creating a scroll container.",
+ "pz": "overflow:clip 让元素保持非滚动容器（sticky/锚点等行为不受影响），还能配 overflow-clip-margin 留出溢出带。说「裁掉但别变滚动盒」即此。",
+ "pe": "overflow:clip clips without making the box a scroll container.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@keyframes fxk{from{transform:translateX(0)}to{transform:translateX(120px)}}.fx{overflow:clip;overflow-clip-margin:0px;position:relative;width:230px;height:120px;border-radius:14px;background:#BFDDF4;border:1px solid #587A94}.fx::before{content:'';position:absolute;top:24px;left:12px;width:180px;height:34px;border-radius:8px;background:#F2CBDD;border:1px solid #8A677A;animation:fxk 3s ease-in-out infinite alternate}.fx::after{content:'clip：粉色块越界部分被裁断，盒子不成为滚动容器';position:absolute;bottom:8px;left:12px;right:12px;font:600 10px/1.5 var(--fx-sans,system-ui);color:#587A94}"
+},
+{
+ "id": "zoom-property",
+ "zh": "等比缩放",
+ "en": "zoom",
+ "dz": "直接缩放元素及其布局尺寸，后续内容跟着让位。",
+ "de": "Scales the element and its layout box, pushing later content aside.",
+ "pz": "zoom:1.25 会改变布局流（与 transform 不同，后者不影响布局）。需要「真的变大占位」用 zoom。说「整体放大 1.25 倍」即此。",
+ "pe": "zoom:1.25 changes layout, unlike transform:scale which only paints bigger.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@keyframes fxk{from{zoom:1}to{zoom:1.45}}.fx{display:block;animation:fxk 3.4s ease-in-out infinite alternate}.fx::before{content:'zoom（参与布局，下方让位）';display:block;width:150px;height:44px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;font:600 10px/44px var(--fx-sans,system-ui);color:#23232f;text-align:center;margin-bottom:10px}.fx::after{content:'transform（只画不变占）';display:block;width:150px;height:44px;border-radius:10px;background:#F2CBDD;border:1px solid #8A677A;font:600 10px/44px var(--fx-sans,system-ui);color:#23232f;text-align:center;transform:scale(1.45);transform-origin:left top}"
+},
+{
+ "id": "inset-shorthand",
+ "zh": "四边内嵌",
+ "en": "inset",
+ "dz": "一条声明同时设定上下左右四个偏移。",
+ "de": "One declaration sets all four offsets.",
+ "pz": "inset:0 让浮层铺满定位父级；inset:14px 四边留 14px。说「四边内嵌」即此。",
+ "pe": "inset:0 fills the positioned ancestor; inset:14px leaves a 14px frame.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fxbox{position:relative;width:min(300px,88%);height:200px}.fx{position:absolute;inset:16px;width:auto;height:auto;border-radius:12px;background:#BFDDF4;border:1px dashed #587A94;display:flex;align-items:center;justify-content:center;font:600 11px/1 var(--fx-sans,system-ui);color:#587A94}.fx::before{content:'inset:16px — 四边等距让位'}"
+},
+{
+ "id": "logical-inset",
+ "zh": "逻辑内嵌",
+ "en": "inset-block / inset-inline",
+ "dz": "按书写方向的逻辑轴设偏移，RTL 自动翻转。",
+ "de": "Offsets follow writing direction and flip automatically in RTL.",
+ "pz": "inset-inline-start:16px 在阿语界面自动变成右侧。逻辑属性是国际化布局的默认选择。说「跟书写方向走」即此。",
+ "pe": "inset-inline-start:16px lands on the right in RTL automatically.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fxbox{position:relative;width:min(300px,88%);height:200px}.fx{position:absolute;inset-block-start:16px;inset-inline-start:16px;inset-block-end:auto;inset-inline-end:auto;width:auto;height:auto;padding:10px 16px;border-radius:12px;background:#C5E2D7;border:1px dashed #58766B;display:flex;align-items:center;justify-content:center;font:600 11px/1 var(--fx-sans,system-ui);color:#58766B}.fx::before{content:'仅逻辑起点内嵌：LTR 在左，RTL 自动到右'}"
+},
+{
+ "id": "logical-radius",
+ "zh": "逻辑圆角",
+ "en": "border-start-start-radius",
+ "dz": "圆角跟着书写方向走：起点角在 RTL 里自动换边。",
+ "de": "The corner follows writing direction and lands on the other side in RTL.",
+ "pz": "气泡组件用 border-start-start-radius:18px，阿语里圆角自动出现在右上。说「起点角大圆角」即此。",
+ "pe": "border-start-start-radius:18px moves the round corner to the top-right in RTL.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:210px;height:110px;background:#BFDDF4;border:1px solid #587A94;border-start-start-radius:36px;border-end-end-radius:12px;display:flex;align-items:flex-end;justify-content:flex-start;padding:12px;font:600 10px/1.5 var(--fx-sans,system-ui);color:#587A94;box-sizing:border-box}.fx::before{content:'起点角 36px：LTR 在左上，RTL 自动到右上'}"
+},
+{
+ "id": "shape-margin",
+ "zh": "形状外边距",
+ "en": "shape-margin",
+ "dz": "在环绕形状外再撑出一圈空隙。",
+ "de": "Pushes a margin outside the wrap shape.",
+ "pz": "shape-margin:16px 让文字离圆形轮廓再远 16px。它是 shape-outside 的具名配套属性。说「环绕再退一圈」即此。",
+ "pe": "shape-margin:16px pushes text 16px off the wrap shape.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@keyframes fxk{from{shape-margin:4px}to{shape-margin:34px}}.fx{display:block;overflow:hidden;height:150px;font:500 10.5px/1.75 var(--fx-sans,system-ui);color:#23232f}.fx::before{content:'';float:left;width:104px;height:104px;margin:6px;border-radius:50%;background:#BFDDF4;border:1px solid #587A94;shape-outside:circle(50%);shape-margin:4px;animation:fxk 3.6s ease-in-out infinite alternate}.fx::after{content:'环形文字随 shape-margin 动画被不断推离圆形轮廓，行盒重新计算但不改变浮动框本身。';display:block}"
+},
+{
+ "id": "shape-image-threshold",
+ "zh": "形状透明阈值",
+ "en": "shape-image-threshold",
+ "dz": "用图像的 alpha 通道定义环绕边界，阈值决定算不算形。",
+ "de": "Uses the alpha channel as the shape; the threshold sets what counts.",
+ "pz": "shape-image-threshold:.5 表示 alpha≥0.5 的像素参与环绕。渐变图配阈值动画可看到边界滑动。说「按透明度绕」即此。",
+ "pe": "shape-image-threshold:.5 wraps around pixels with alpha >= .5.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@keyframes fxk{from{shape-image-threshold:.15}to{shape-image-threshold:.85}}.fx{display:block;overflow:hidden;height:150px;font:500 10.5px/1.7 var(--fx-sans,system-ui);color:#23232f}.fx::before{content:'';float:left;width:120px;height:120px;margin:4px;background:linear-gradient(135deg,rgba(191,221,244,1) 0%,rgba(191,221,244,0) 100%);shape-outside:linear-gradient(135deg,rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);shape-image-threshold:.5;animation:fxk 3.8s ease-in-out infinite alternate}.fx::after{content:'阈值动画让环绕边界沿渐变来回滑动：同一张渐变，alpha 达标区在变。';display:block}"
+},
+{
+ "id": "image-set",
+ "zh": "分辨率图像候选",
+ "en": "image-set()",
+ "dz": "为不同像素密度声明多张候选图，浏览器自选。",
+ "de": "Declares density-tagged image candidates; the browser picks one.",
+ "pz": "background:image-set('a.png' 1x,'a@2x.png' 2x)。说「按密度换图」即此。",
+ "pe": "image-set('a.png' 1x,'a@2x.png' 2x) swaps by device density.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:230px;height:130px;border-radius:12px;border:1px solid #587A94;background-image:image-set(url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23BFDDF4'/%3E%3Ctext x='20' y='26' font-size='12' text-anchor='middle' fill='%23587A94'%3E1x%3C/text%3E%3C/svg%3E\") 1x, url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23F2CBDD'/%3E%3Ctext x='20' y='26' font-size='12' text-anchor='middle' fill='%238A677A'%3E2x%3C/text%3E%3C/svg%3E\") 2x);background-size:cover;background-position:center;display:flex;align-items:flex-end;justify-content:center}.fx::before{content:'当前屏幕密度选中的候选图（1x 屏显示雾蓝，2x 屏显示晶粉）';font:600 10px/1.5 var(--fx-sans,system-ui);color:#587A94;padding:8px;text-align:center}"
+},
+{
+ "id": "resize-handle",
+ "zh": "手动调整手柄",
+ "en": "resize",
+ "dz": "让用户拖动元素右下角直接改尺寸。",
+ "de": "Lets users drag the corner to resize the box.",
+ "pz": "resize:vertical 配 overflow:auto 出现拖拽手柄，常用于文本域。说「允许拖拽调高」即此。",
+ "pe": "resize:vertical with overflow:auto adds a drag handle.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:230px;height:130px;min-height:90px;resize:vertical;overflow:auto;background:#BFDDF4;border:1px solid #587A94;border-radius:12px;padding:12px;box-sizing:border-box;font:600 10.5px/1.7 var(--fx-sans,system-ui);color:#587A94}.fx::before{content:'抓住右下角手柄拖动：只有高度可调（resize:vertical）'}"
+},
+{
+ "id": "animation-composition",
+ "zh": "动画合成方式",
+ "en": "animation-composition",
+ "dz": "多个动画作用于同一属性时：替换、累加还是叠加。",
+ "de": "Chooses replace, add or add-underlying when animations stack.",
+ "pz": "animation-composition:add 让第二段动画在第一段结果上继续累加位移。说「在原动画上累加」即此。",
+ "pe": "animation-composition:add stacks the second animation on the first.",
+ "aliases": [],
+ "demo": "box",
+ "css": "@keyframes fxk{from{translate:0 0}to{translate:60px 0}}@keyframes fxj{from{translate:0 0}to{translate:0 -44px}}.fx{display:block}.fx::before{content:'add：两段位移叠加走斜线';display:block;width:46px;height:46px;border-radius:10px;background:#F2CBDD;border:1px solid #8A677A;font:600 9px/1.4 var(--fx-sans,system-ui);color:#8A677A;text-align:center;animation:fxk 2.2s ease-in-out infinite alternate,fxj 2.2s ease-in-out infinite alternate;animation-composition:add;margin-bottom:14px}.fx::after{content:'replace：后段覆盖前段只走竖线';display:block;width:46px;height:46px;border-radius:10px;background:#BFDDF4;border:1px solid #587A94;font:600 9px/1.4 var(--fx-sans,system-ui);color:#587A94;text-align:center;animation:fxk 2.2s ease-in-out infinite alternate,fxj 2.2s ease-in-out infinite alternate}"
+},
+{
+ "id": "currentcolor-keyword",
+ "zh": "随动文字色",
+ "en": "currentColor",
+ "dz": "颜色关键字取当前元素的 color 值。",
+ "de": "Resolves to the element's own color value.",
+ "pz": "border-color:currentColor 让边框跟文字同色，改一处全跟。说「跟文字色」即此。",
+ "pe": "border-color:currentColor keeps the border matched to the text color.",
+ "aliases": [],
+ "demo": "box",
+ "css": ".fx{width:210px;height:110px;border-radius:12px;color:#587A94;border:2px solid currentColor;display:flex;align-items:center;justify-content:center;font:600 11px/1.6 var(--fx-sans,system-ui);text-align:center;box-sizing:border-box;transition:color .8s;animation:fxk 3.2s ease-in-out infinite alternate}@keyframes fxk{from{color:#587A94}to{color:#8A677A}}.fx::before{content:'边框与文字同色：currentColor 随 color 动画一起变'}"
+},
+{
+ "id": "font-size-adjust",
+ "zh": "x高比校正",
+ "en": "font-size-adjust",
+ "dz": "以 x 高度而非字号为基准对齐备选字体的视觉大小。",
+ "de": "Matches fallback fonts by x-height instead of em size.",
+ "pz": "font-size-adjust:0.52 让中英混排的备选字体看起来一样大。说「按 x 高对齐字体」即此。",
+ "pe": "font-size-adjust:0.52 equalizes visual size across fallback fonts.",
+ "aliases": [],
+ "demo": "text",
+ "css": ".fx{display:block;font-size:clamp(13px,2.2vw,19px);color:#23232f;padding:8px;overflow:hidden}.fx::before{content:'Monaco：未校正';display:block;font-family:Monaco,monospace;border-bottom:2px solid #8A677A;margin-bottom:10px}.fx::after{content:'Monaco：adjust 校正后';display:block;font-family:Monaco,monospace;font-size-adjust:0.54;border-bottom:2px solid #58766B;color:#58766B}"
+}
+]
 };

@@ -1235,5 +1235,18 @@ _atlasExpansion_f1dd93589e91ef8f_form.items.push(...[
     "offers": [],
     "author": "atlas-second-source-curator"
   }
+,
+{
+ "id": "caret-color",
+ "zh": "输入光标色",
+ "en": "caret-color",
+ "dz": "输入框里闪烁光标的颜色可以单独指定。",
+ "de": "Sets the color of the blinking insertion caret.",
+ "pz": "caret-color:#58766B 配主题色；auto 跟随 color。说「光标换成主题绿」即此。",
+ "pe": "caret-color:#58766B theme-matches the caret; auto follows color.",
+ "aliases": [],
+ "demo": "field",
+ "css": ".fx{caret-color:#58766B;color:#23232f;background:#eceee6;border:1px solid #58766B;border-radius:10px;font:500 13px/1 var(--fx-sans,system-ui)}.fx::placeholder{color:#77796f}"
+}
 ]);
 export default _atlasExpansion_f1dd93589e91ef8f_form;
