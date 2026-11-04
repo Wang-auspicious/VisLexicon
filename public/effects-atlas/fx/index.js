@@ -13,7 +13,7 @@ export const CATEGORY_FILES = [
   'a11y', 'perf', 'responsive', 'i18n', 'theme', 'state', 'sync',
   'mobile', 'commerce', 'search', 'auth', 'onboard', 'editor', 'map', 'social', 'calendar', 'fintech',
   'webgl', 'shader', 'gsap', 'react', 'd3', 'canvas', 'scrolllib', 'simlib', 'generative', 'pretext', 'wapi',
-  'cssnext', 'libs2',
+  'cssnext', 'libs2', 'cssref',
   'ai', 'agent', 'pagestyle', 'ascii'
 ];
 
@@ -29,7 +29,7 @@ export const GROUPS = [
   { id: 'basics', zh: '视觉基本功', en: 'Visual fundamentals', of: ['grid-study', 'color', 'grid', 'icon', 'photo'] },
   { id: 'quality', zh: '工程与品质', en: 'Engineering & quality', of: ['a11y', 'perf', 'responsive', 'i18n', 'theme', 'state', 'sync'] },
   { id: 'scene', zh: '场景与业务', en: 'Scenes & domains', of: ['mobile', 'commerce', 'search', 'auth', 'onboard', 'editor', 'map', 'social', 'calendar', 'fintech'] },
-  { id: 'libs', zh: '库与引擎', en: 'Libraries & engines', of: ['webgl', 'shader', 'gsap', 'react', 'd3', 'canvas', 'scrolllib', 'simlib', 'generative', 'pretext', 'wapi', 'cssnext', 'libs2'] },
+  { id: 'libs', zh: '库与引擎', en: 'Libraries & engines', of: ['webgl', 'shader', 'gsap', 'react', 'd3', 'canvas', 'scrolllib', 'simlib', 'generative', 'pretext', 'wapi', 'cssnext', 'libs2', 'cssref'] },
   { id: 'product', zh: '产品语境', en: 'Product surfaces', of: ['ai', 'agent'] }
 ];
 

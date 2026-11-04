@@ -1,5 +1,6 @@
 // 效果库索引：分组懒加载；缺失的分类文件会被跳过
-import { UNIT_BY_ID } from '../units/index.js';
+import { atlasLoader } from '../category-loader.js';
+let UNIT_BY_ID = Object.create(null);
 export const ATLAS_VERSION = 4;
 export const CATEGORY_FILES = [
   'unit',
@@ -12,7 +13,7 @@ export const CATEGORY_FILES = [
   'a11y', 'perf', 'responsive', 'i18n', 'theme', 'state', 'sync',
   'mobile', 'commerce', 'search', 'auth', 'onboard', 'editor', 'map', 'social', 'calendar', 'fintech',
   'webgl', 'shader', 'gsap', 'react', 'd3', 'canvas', 'scrolllib', 'simlib', 'generative', 'pretext', 'wapi',
-  'cssnext', 'libs2',
+  'cssnext', 'libs2', 'cssref',
   'ai', 'agent', 'pagestyle', 'ascii'
 ];
 
@@ -28,7 +29,7 @@ export const GROUPS = [
   { id: 'basics', zh: '视觉基本功', en: 'Visual fundamentals', of: ['grid-study', 'color', 'grid', 'icon', 'photo'] },
   { id: 'quality', zh: '工程与品质', en: 'Engineering & quality', of: ['a11y', 'perf', 'responsive', 'i18n', 'theme', 'state', 'sync'] },
   { id: 'scene', zh: '场景与业务', en: 'Scenes & domains', of: ['mobile', 'commerce', 'search', 'auth', 'onboard', 'editor', 'map', 'social', 'calendar', 'fintech'] },
-  { id: 'libs', zh: '库与引擎', en: 'Libraries & engines', of: ['webgl', 'shader', 'gsap', 'react', 'd3', 'canvas', 'scrolllib', 'simlib', 'generative', 'pretext', 'wapi', 'cssnext', 'libs2'] },
+  { id: 'libs', zh: '库与引擎', en: 'Libraries & engines', of: ['webgl', 'shader', 'gsap', 'react', 'd3', 'canvas', 'scrolllib', 'simlib', 'generative', 'pretext', 'wapi', 'cssnext', 'libs2', 'cssref'] },
   { id: 'product', zh: '产品语境', en: 'Product surfaces', of: ['ai', 'agent'] }
 ];
 
@@ -55,6 +56,7 @@ export const STAGES = {
   chat:    { wrap: 'fxchat', n: 3, txt: ['What does this effect feel like?', 'Springy, with a short settle.', 'Show me a calmer variant.'] },
   dots:    { wrap: 'fxdots', n: 24, materialA: true },
   ring:    { wrap: 'fxring', n: 8, materialA: true },
+  table:   { wrap: 'fxtable', n: 5 },
   pill:    { wrap: 'fxpill', n: 5, txt: ['Design', 'Motion', 'Type', 'Color', 'Grid'] },
   marquee: { wrap: 'fxmarquee', n: 1, txt: ['MOTION \u00b7 ATLAS \u00b7 TYPE \u00b7 SCROLL \u00b7 MOTION \u00b7 ATLAS \u00b7 TYPE \u00b7 SCROLL \u00b7 '] },
   live:    { wrap: 'fxlive', n: 1 },
@@ -111,13 +113,11 @@ export const BASE = {
 .fxart{grid-area:art;background:linear-gradient(150deg,#eceee6,#e3e6dc);min-height:172px;position:relative;overflow:hidden}`
 };
 
-export async function loadCategories() {
-  const mods = await Promise.all(CATEGORY_FILES.map(async (f) => {
-    try { const m = (await import(`./${f}.js`)).default; return m && m.items && m.items.length ? m : null; }
-    catch (e) { console.warn('fx: skipped', f, e.message); return null; }
-  }));
-  const { enrichCardSamples } = await import('../card-samples.js');
-  return enrichCardSamples(mods.filter(Boolean));
+export const { loadCategories, loadSearchIndex } = atlasLoader;
+export async function loadCategory(id) {
+  const category = await atlasLoader.loadCategory(id);
+  if (category.items.some(item => item.live)) UNIT_BY_ID = (await import('../units/index.js')).UNIT_BY_ID;
+  return category;
 }
 
 /* ---- CSS 作用域化：把条目 CSS 关进一个 .scope 里，供画廊墙同时播放数十个效果 ---- */
@@ -187,6 +187,7 @@ ${zh}` : `${zh}
 —— English ——
 ${en}`;
   }
+  if (item.practice) return (item.practice.prompt && (item.practice.prompt[lang] || item.practice.prompt.zh)) || '';
   const ps = (item.params || []).map(p => {
     const v = params[p.k] ?? p.def;
     const label = lang === 'zh' ? p.zh : p.en;
