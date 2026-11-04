@@ -1,4 +1,3 @@
-// Curated foundational patterns
 export default {
   "id": "grid",
   "zh": "网格与密度",
@@ -148,28 +147,6 @@ export default {
       "pe": "Subgrid inherits parent tracks so titles and actions align across cards. Validate it on narrow screens, zoom, and dynamic content.",
       "demo": "grid",
       "css": ".fxgrid{grid-template-columns:repeat(2,1fr);gap:14px}.fx{height:54px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
-    },
-    {
-      "id": "auto-fit-grid",
-      "zh": "自动填充网格",
-      "en": "Auto-fit grid",
-      "dz": "自动填充网格定义可验证的轨道、间距或容器约束，服务于稳定的内容流。",
-      "de": "Auto-fit grid defines verifiable track, spacing, or container constraints for a stable content flow.",
-      "pz": "自动填充网格定义可验证的轨道、间距或容器约束，服务于稳定的内容流。 需要配合真实内容与响应式断点复核。",
-      "pe": "Auto-fit grid defines verifiable track, spacing, or container constraints for a stable content flow. Validate it with real content and responsive breakpoints.",
-      "demo": "grid",
-      "css": ".fxgrid{grid-template-columns:repeat(3,1fr);gap:17px}.fx{height:72px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
-    },
-    {
-      "id": "auto-fill-grid",
-      "zh": "自动扩展网格",
-      "en": "Auto-fill grid",
-      "dz": "自动扩展网格定义可验证的轨道、间距或容器约束，服务于稳定的内容流。",
-      "de": "Auto-fill grid defines verifiable track, spacing, or container constraints for a stable content flow.",
-      "pz": "自动扩展网格定义可验证的轨道、间距或容器约束，服务于稳定的内容流。 需要配合真实内容与响应式断点复核。",
-      "pe": "Auto-fill grid defines verifiable track, spacing, or container constraints for a stable content flow. Validate it with real content and responsive breakpoints.",
-      "demo": "grid",
-      "css": ".fxgrid{grid-template-columns:repeat(4,1fr);gap:20px}.fx{height:90px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
     },
     {
       "id": "minmax-grid",
@@ -335,44 +312,42 @@ export default {
       "pe": "Grid debug overlay defines verifiable track, spacing, or container constraints for a stable content flow. Validate it with real content and responsive breakpoints.",
       "demo": "grid",
       "css": ".fxgrid{grid-template-columns:repeat(4,1fr);gap:20px}.fx{height:72px;background:linear-gradient(140deg,#f5f6f2,#dfe5df);border:1px solid #d8ddd5}"
+    },
+    {
+      "id": "grid-template-areas",
+      "zh": "命名网格区域",
+      "en": "grid-template-areas",
+      "dz": "用名字字符串直接画出网格版图，项目按名入座。",
+      "de": "Names grid regions in ASCII-art strings; items sit by name.",
+      "pz": "grid-template-areas:'h h' 's m'；子项 grid-area:m。改版图只需改字符串。说「按区域排」即此。",
+      "pe": "grid-template-areas:'h h' 's m'; grid-area:m — the layout is the string.",
+      "aliases": [],
+      "demo": "box",
+      "css": ".fx{display:grid;width:300px;height:190px;grid-template-areas:'head head' 'side main' 'foot foot';grid-template-rows:36px 1fr 30px;grid-template-columns:84px 1fr;gap:6px}.fx::before{content:'head';grid-area:head;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;font:600 10px/34px var(--fx-sans,system-ui);color:#23232f;text-align:center}.fx::after{content:'main';grid-area:main;border-radius:8px;background:#F2CBDD;border:1px solid #8A677A;font:600 10px/20px var(--fx-sans,system-ui);color:#23232f;text-align:center}.fx>*{display:none}"
+    },
+    {
+      "id": "grid-auto-flow-dense",
+      "zh": "稠密网格流",
+      "en": "grid-auto-flow: dense",
+      "dz": "自动放置器回头填补网格里的空洞。",
+      "de": "The auto-placement backfills holes left in the grid.",
+      "pz": "grid-auto-flow:dense 适合卡片高低不一的瀑布式网格；代价是视觉顺序与 DOM 顺序可能不一致。说「开稠密回填」即此。",
+      "pe": "grid-auto-flow:dense backfills holes in uneven card grids.",
+      "aliases": [],
+      "demo": "grid",
+      "css": ".fxgrid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-flow:dense;grid-auto-rows:52px;gap:6px;padding:10px;background:#eceee6;border-radius:12px;width:min(360px,90%);box-sizing:border-box}.fx{border-radius:8px;background:#BFDDF4;border:1px solid #587A94;grid-column:span 1}.fx:nth-child(2){grid-row:span 2;grid-column:span 2;background:#F2CBDD;border-color:#8A677A}.fx:nth-child(5){grid-column:span 2;background:#C5E2D7;border-color:#58766B}"
+    },
+    {
+      "id": "grid-line-placement",
+      "zh": "网格线定位",
+      "en": "Line-based placement",
+      "dz": "用网格线编号把项目钉到具体区间。",
+      "de": "Pins items to explicit grid lines by number.",
+      "pz": "grid-column:2/4 表示从 2 号线跨到 4 号线；-1 是末线。说「从几号线到几号线」即此。",
+      "pe": "grid-column:2/4 spans from line 2 to line 4; -1 is the last line.",
+      "aliases": [],
+      "demo": "grid",
+      "css": ".fxgrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:44px;gap:6px;padding:12px;background:#eceee6;border-radius:12px;width:min(340px,90%);box-sizing:border-box}.fx{border-radius:8px;background:#BFDDF4;border:1px solid #587A94;grid-column:1/3}.fx:nth-child(2){grid-column:3/5;grid-row:1/3;background:#F2CBDD;border-color:#8A677A}.fx:nth-child(3){grid-column:1/3;background:#C5E2D7;border-color:#58766B}"
     }
-  ,
-{
- "id": "grid-template-areas",
- "zh": "命名网格区域",
- "en": "grid-template-areas",
- "dz": "用名字字符串直接画出网格版图，项目按名入座。",
- "de": "Names grid regions in ASCII-art strings; items sit by name.",
- "pz": "grid-template-areas:'h h' 's m'；子项 grid-area:m。改版图只需改字符串。说「按区域排」即此。",
- "pe": "grid-template-areas:'h h' 's m'; grid-area:m — the layout is the string.",
- "aliases": [],
- "demo": "box",
- "css": ".fx{display:grid;width:300px;height:190px;grid-template-areas:'head head' 'side main' 'foot foot';grid-template-rows:36px 1fr 30px;grid-template-columns:84px 1fr;gap:6px}.fx::before{content:'head';grid-area:head;border-radius:8px;background:#BFDDF4;border:1px solid #587A94;font:600 10px/34px var(--fx-sans,system-ui);color:#23232f;text-align:center}.fx::after{content:'main';grid-area:main;border-radius:8px;background:#F2CBDD;border:1px solid #8A677A;font:600 10px/20px var(--fx-sans,system-ui);color:#23232f;text-align:center}.fx>*{display:none}"
-},
-{
- "id": "grid-auto-flow-dense",
- "zh": "稠密网格流",
- "en": "grid-auto-flow: dense",
- "dz": "自动放置器回头填补网格里的空洞。",
- "de": "The auto-placement backfills holes left in the grid.",
- "pz": "grid-auto-flow:dense 适合卡片高低不一的瀑布式网格；代价是视觉顺序与 DOM 顺序可能不一致。说「开稠密回填」即此。",
- "pe": "grid-auto-flow:dense backfills holes in uneven card grids.",
- "aliases": [],
- "demo": "grid",
- "css": ".fxgrid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-flow:dense;grid-auto-rows:52px;gap:6px;padding:10px;background:#eceee6;border-radius:12px;width:min(360px,90%);box-sizing:border-box}.fx{border-radius:8px;background:#BFDDF4;border:1px solid #587A94;grid-column:span 1}.fx:nth-child(2){grid-row:span 2;grid-column:span 2;background:#F2CBDD;border-color:#8A677A}.fx:nth-child(5){grid-column:span 2;background:#C5E2D7;border-color:#58766B}"
+  ]
 }
-,
-{
- "id": "grid-line-placement",
- "zh": "网格线定位",
- "en": "Line-based placement",
- "dz": "用网格线编号把项目钉到具体区间。",
- "de": "Pins items to explicit grid lines by number.",
- "pz": "grid-column:2/4 表示从 2 号线跨到 4 号线；-1 是末线。说「从几号线到几号线」即此。",
- "pe": "grid-column:2/4 spans from line 2 to line 4; -1 is the last line.",
- "aliases": [],
- "demo": "grid",
- "css": ".fxgrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:44px;gap:6px;padding:12px;background:#eceee6;border-radius:12px;width:min(340px,90%);box-sizing:border-box}.fx{border-radius:8px;background:#BFDDF4;border:1px solid #587A94;grid-column:1/3}.fx:nth-child(2){grid-column:3/5;grid-row:1/3;background:#F2CBDD;border-color:#8A677A}.fx:nth-child(3){grid-column:1/3;background:#C5E2D7;border-color:#58766B}"
-}
-]
-};

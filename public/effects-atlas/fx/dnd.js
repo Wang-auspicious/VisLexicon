@@ -1,4 +1,3 @@
-// Curated foundational patterns
 export default {
   "id": "dnd",
   "zh": "拖放与直接操作",
@@ -15,7 +14,9 @@ export default {
       "pz": "用按压距离和移动阈值区分点击与拖动，避免误触发。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Use press distance and movement thresholds to distinguish clicks from drags. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["拖"],
+      "cells": [
+        "拖"
+      ],
       "css": ".fx{width:130px;height:56px;border-radius:10px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #c5d0c8;color:#202824;font:600 12px/1 var(--fx-sans);position:relative;overflow:visible;animation:ps 3.6s ease-in-out infinite}@keyframes ps{0%,100%{transform:translateX(-26px) rotate(-4deg);box-shadow:0 10px 18px -14px #2b3a4488}55%,80%{transform:translateX(26px) rotate(3deg);box-shadow:0 22px 32px -18px #2b3a4499}}.fx::after{content:'';position:absolute;left:50%;bottom:-14px;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:#3f6f92;opacity:.6;animation:psd 3.6s ease-in-out infinite}@keyframes psd{0%,100%{opacity:.35;transform:scale(.8)}55%,80%{opacity:.9;transform:none}}"
     },
     {
@@ -28,7 +29,12 @@ export default {
       "pe": "Keyboard drag and drop exposes grab, move, drop, and cancel states. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "list",
       "n": 4,
-      "cells": ["上移","下移","放入","取消"],
+      "cells": [
+        "上移",
+        "下移",
+        "放入",
+        "取消"
+      ],
       "css": ".fxcol{gap:6px;width:150px}.fx{height:30px;border-radius:7px;background:linear-gradient(#252a33,#1a1e25);border:1px solid #39404a;color:#c6d0da;font:600 10.5px/1 var(--fx-mono);justify-content:flex-start;padding-left:11px;animation:ks 3.8s ease-in-out infinite;animation-delay:calc(var(--i) * .16s)}.fx:nth-child(2){animation-name:ks2}@keyframes ks{0%,100%{border-color:#39404a;background:linear-gradient(#252a33,#1a1e25)}46%,70%{border-color:#7fc4e8;background:linear-gradient(#2f3a45,#222932)}}@keyframes ks2{0%,100%{border-color:#39404a}46%,70%{border-color:#7fc4e8;transform:translateX(7px)}}"
     },
     {
@@ -40,7 +46,9 @@ export default {
       "pz": "触摸拖动留出长按延迟和滚动判定，避免与页面滚动冲突。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Touch dragging uses a hold delay and scroll intent detection. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["长按"],
+      "cells": [
+        "长按"
+      ],
       "css": ".fx{width:132px;height:90px;border-radius:12px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #c5d0c8;color:#202824;font:600 12px/1 var(--fx-sans);position:relative;overflow:hidden}.fx::after{content:'';position:absolute;inset:0;background:linear-gradient(#dfe9f0,#cbdfeb);transform-origin:bottom;opacity:0;animation:ts2 3.4s ease-in-out infinite}@keyframes ts2{0%,100%{opacity:0;transform:scaleY(0)}40%,70%{opacity:1;transform:scaleY(1)}}.fx::before{content:'';position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;border:2px solid #3f6f92;z-index:2;animation:ts2r 3.4s ease-in-out infinite}@keyframes ts2r{0%,100%{transform:scale(.5);opacity:0}46%,72%{transform:none;opacity:1}}"
     },
     {
@@ -52,7 +60,9 @@ export default {
       "pz": "把拖动触发区与内容操作区分离，避免整行无法选择或点击。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Separate the drag trigger from content actions so rows remain selectable. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["⠿"],
+      "cells": [
+        "⠿"
+      ],
       "css": ".fx{width:170px;height:50px;border-radius:9px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #c5d0c8;color:#c5d0c8;font:700 18px/1 var(--fx-mono);position:relative;justify-content:flex-start;padding-left:22px;overflow:hidden;animation:dh 3.8s ease-in-out infinite}.fx::after{content:'卡片标题';position:absolute;left:48px;color:#202824;font:600 11.5px/1 var(--fx-sans)}@keyframes dh{0%,100%{background:linear-gradient(#fff,#f2f4f0)}50%{background:linear-gradient(#eef2f5,#e0eaf1);color:#3f6f92}}"
     },
     {
@@ -64,7 +74,9 @@ export default {
       "pz": "目标在可放置、悬停、拒绝和完成时提供连续反馈。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Targets expose available, over, rejected, and completed feedback. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["放到这里"],
+      "cells": [
+        "放到这里"
+      ],
       "css": ".fx{width:170px;height:90px;border-radius:11px;border:1.6px dashed #9fb0a0;background:repeating-linear-gradient(135deg,#fbfcf9 0 9px,#f4f6f1 9px 18px);color:#8b8d84;font:600 11.5px/1 var(--fx-sans);animation:dt 3.6s ease-in-out infinite}@keyframes dt{0%,100%{border-color:#9fb0a0;background-color:#fbfcf9}48%,74%{border-color:#3f6f92;background-color:#eaf2f7;color:#26485c}}"
     },
     {
@@ -77,7 +89,12 @@ export default {
       "pe": "Show an explicit insertion position instead of making users infer it. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "list",
       "n": 4,
-      "cells": ["条目一","条目二","条目三","条目四"],
+      "cells": [
+        "条目一",
+        "条目二",
+        "条目三",
+        "条目四"
+      ],
       "css": ".fxcol{gap:0;width:172px;position:relative}.fx{height:34px;border-radius:0;background:linear-gradient(#fff,#f4f6f2);border-bottom:1px solid #e6e9e1;color:#202824;font:500 11px/1 var(--fx-sans);justify-content:flex-start;padding-left:12px}.fxcol::after{content:'';position:absolute;left:0;right:0;height:3px;border-radius:2px;background:#3f6f92;animation:il 3.8s ease-in-out infinite;box-shadow:0 -3px 0 0 #3f6f92}@keyframes il{0%,100%{top:34px}33%{top:68px}66%,85%{top:102px}}"
     },
     {
@@ -101,20 +118,10 @@ export default {
       "pz": "拖动预览脱离原布局，避免原元素变化导致指针下内容跳动。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "A drag preview leaves the layout so content does not jump under the pointer. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["浮动副本"],
+      "cells": [
+        "浮动副本"
+      ],
       "css": ".fx{width:170px;height:56px;border-radius:10px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #c5d0c8;color:#202824;font:600 11.5px/1 var(--fx-sans);position:relative;overflow:visible;box-shadow:0 22px 34px -20px #2b3a4488;animation:do 3.6s ease-in-out infinite}@keyframes do{0%,100%{transform:rotate(-3deg) scale(.96)}50%{transform:rotate(2deg) scale(1) translateY(-6px)}}"
-    },
-    {
-      "id": "auto-scroll",
-      "zh": "自动滚动",
-      "en": "Auto-scroll",
-      "dz": "接近滚动边缘时渐进滚动，并提供键盘等价路径。",
-      "de": "Scroll progressively near edges and provide a keyboard equivalent.",
-      "pz": "接近滚动边缘时渐进滚动，并提供键盘等价路径。 在触摸、键盘、RTL 和失败恢复下复核。",
-      "pe": "Scroll progressively near edges and provide a keyboard equivalent. Validate touch, keyboard, RTL, and failure recovery.",
-      "demo": "box",
-      "cells": ["靠近边缘"],
-      "css": ".fx{width:150px;height:104px;border-radius:11px;background:repeating-linear-gradient(180deg,#fff 0 15px,#f2f4f0 15px 16px);border:1px solid #c5d0c8;color:#202824;font:600 10.5px/1 var(--fx-sans);position:relative;overflow:hidden}.fx::after{content:'';position:absolute;left:0;right:0;bottom:0;height:44px;background:linear-gradient(180deg,#3f6f9200,#3f6f9244);animation:asc 2.6s ease-in-out infinite}@keyframes asc{0%,100%{height:20px;opacity:.4}50%{height:64px;opacity:1}}"
     },
     {
       "id": "nested-drop",
@@ -162,7 +169,12 @@ export default {
       "pe": "Multi-drag shows count and a representative preview. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "list",
       "n": 4,
-      "cells": ["✓ 条目一","✓ 条目二","条目三","条目四"],
+      "cells": [
+        "✓ 条目一",
+        "✓ 条目二",
+        "条目三",
+        "条目四"
+      ],
       "css": ".fxcol{gap:0;width:172px;position:relative}.fx{height:34px;border-radius:0;background:linear-gradient(#fff,#f4f6f2);border-bottom:1px solid #e6e9e1;color:#202824;font:500 11px/1 var(--fx-sans);justify-content:flex-start;padding-left:12px}.fx:nth-child(-n+2){background:linear-gradient(#e7eff5,#dbe9f1);color:#26485c;font-weight:600}.fx:nth-child(-n+2){animation:msd 3.8s ease-in-out infinite}@keyframes msd{0%,100%{transform:none}50%{transform:translateX(10px)}}"
     },
     {
@@ -174,7 +186,9 @@ export default {
       "pz": "Escape、离开窗口和按键中断都能安全取消并恢复状态。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Escape, leaving the window, and interruption cancel safely. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["已取消"],
+      "cells": [
+        "已取消"
+      ],
       "css": ".fx{width:156px;height:56px;border-radius:10px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #c5d0c8;color:#202824;font:600 11.5px/1 var(--fx-sans);position:relative;overflow:visible;animation:dcn 3.6s ease-in-out infinite}@keyframes dcn{0%,30%{transform:translateX(20px) rotate(4deg);opacity:1}52%,100%{transform:translateX(0) rotate(0);opacity:.45}}.fx::after{content:'';position:absolute;left:0;right:0;top:50%;height:1.5px;background:#c0392b;transform:scaleX(0);transform-origin:left;animation:dcnl 3.6s ease-in-out infinite}@keyframes dcnl{0%,36%{transform:scaleX(0)}62%,100%{transform:scaleX(1)}}"
     },
     {
@@ -186,7 +200,9 @@ export default {
       "pz": "不可放置目标解释原因，不能只把目标变红后无后续。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Rejected drops explain why instead of only turning red. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["不可放置"],
+      "cells": [
+        "不可放置"
+      ],
       "css": ".fx{width:170px;height:80px;border-radius:11px;border:1.6px dashed #c98b84;background:repeating-linear-gradient(135deg,#fdf3f2 0 9px,#f9e9e7 9px 18px);color:#a8412f;font:600 11.5px/1 var(--fx-sans);animation:drj 3.4s ease-in-out infinite}@keyframes drj{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-3px)}80%,100%{transform:translateX(0)}}"
     },
     {
@@ -199,7 +215,12 @@ export default {
       "pe": "Update visual order first, then restore and report persistence failure. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "list",
       "n": 4,
-      "cells": ["一","二","三","四"],
+      "cells": [
+        "一",
+        "二",
+        "三",
+        "四"
+      ],
       "css": ".fxcol{gap:7px;width:150px}.fx{height:32px;border-radius:8px;background:linear-gradient(#fff,#f1f3ef);border:1px solid #dfe3db;color:#202824;font:600 11px/1 var(--fx-mono);animation:opr 4s ease-in-out infinite;animation-delay:calc(var(--i) * .1s)}@keyframes opr{0%,100%{transform:translateY(0);opacity:1}18%{opacity:.4}46%{transform:translateY(var(--shift, 0))}80%,100%{transform:translateY(0);opacity:1}}.fx:nth-child(2){--shift:39px;animation-name:opr2}.fx:nth-child(3){--shift:-39px}@keyframes opr2{0%,100%{transform:translateY(0);opacity:1}46%{transform:translateY(39px);opacity:.75}80%,100%{transform:translateY(0);opacity:1}}"
     },
     {
@@ -211,7 +232,9 @@ export default {
       "pz": "预览尺寸与原内容保持比例，窄屏不遮挡关键目标。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Keep preview proportionate and avoid covering key targets on narrow screens. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["预览"],
+      "cells": [
+        "预览"
+      ],
       "css": ".fx{width:150px;height:56px;border-radius:10px;background:linear-gradient(#3f6f92,#31597a);color:#fff;font:600 11.5px/1 var(--fx-sans);position:relative;overflow:visible;animation:dps 3.8s ease-in-out infinite}@keyframes dps{0%,100%{transform:scale(.9);opacity:.7}50%{transform:scale(1.02);opacity:1;box-shadow:0 24px 36px -20px #3f6f9299}}"
     },
     {
@@ -223,7 +246,9 @@ export default {
       "pz": "拖动把手有名称、角色和键盘操作说明，不能依赖鼠标图标。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Handles expose name, role, and keyboard instructions. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["空格抓取"],
+      "cells": [
+        "空格抓取"
+      ],
       "css": ".fx{width:172px;height:52px;border-radius:9px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #c5d0c8;color:#202824;font:600 11.5px/1 var(--fx-sans);position:relative;overflow:visible;animation:ha 3.8s ease-in-out infinite}@keyframes ha{0%,100%{outline:2px solid transparent;outline-offset:3px}40%,72%{outline:2px solid #3f6f92;outline-offset:3px}}.fx::after{content:'⠿';position:absolute;left:8px;top:50%;transform:translateY(-50%);color:#c5d0c8;font:700 16px/1 var(--fx-mono)}"
     },
     {
@@ -235,7 +260,9 @@ export default {
       "pz": "读屏用户能听到抓取、移动到目标和放置结果。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Screen-reader users hear grab, movement, and drop results. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["已移动到第 3 位"],
+      "cells": [
+        "已移动到第 3 位"
+      ],
       "css": ".fx{width:194px;height:52px;border-radius:9px;background:linear-gradient(#252a33,#1a1e25);border:1px solid #39404a;color:#bfe4ef;font:600 11px/1 var(--fx-mono);position:relative;overflow:hidden;padding-left:34px;justify-content:flex-start}.fx::before{content:'';position:absolute;left:13px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:#7fc4e8;animation:da2 2.8s ease-in-out infinite}@keyframes da2{0%,100%{opacity:.3;transform:scale(.7)}46%,74%{opacity:1;transform:none}}"
     },
     {
@@ -248,7 +275,12 @@ export default {
       "pe": "Keep placeholder height stable so the list does not collapse. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "list",
       "n": 4,
-      "cells": ["一","","三","四"],
+      "cells": [
+        "一",
+        "",
+        "三",
+        "四"
+      ],
       "css": ".fxcol{gap:7px;width:150px}.fx{height:32px;border-radius:8px;background:linear-gradient(#fff,#f1f3ef);border:1px solid #dfe3db;color:#202824;font:600 11px/1 var(--fx-mono)}.fx:nth-child(2){background:repeating-linear-gradient(135deg,#eef1ec 0 7px,#e6eae2 7px 14px);border:1.5px dashed #9fb0a0;animation:sp2 3.6s ease-in-out infinite}@keyframes sp2{0%,100%{height:32px;opacity:.55}50%{height:52px;opacity:1}}"
     },
     {
@@ -261,7 +293,13 @@ export default {
       "pe": "Virtual lists measure offscreen items while preserving scroll position. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "list",
       "n": 5,
-      "cells": ["1","2","3","4","5"],
+      "cells": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
       "css": ".fxcol{gap:5px;width:130px;height:110px;overflow:hidden}.fx{height:26px;border-radius:7px;background:linear-gradient(#fff,#f1f3ef);border:1px solid #dfe3db;color:#8b8d84;font:600 10px/1 var(--fx-mono);animation:vd 3.6s ease-in-out infinite;animation-delay:calc(var(--i) * .07s)}.fx:nth-child(2){background:linear-gradient(#3f6f92,#31597a);border-color:#31597a;color:#fff;animation-name:vd2}@keyframes vd{0%,100%{opacity:.5}48%,72%{opacity:1}}@keyframes vd2{0%,100%{transform:none}50%{transform:translateY(-31px)}}"
     },
     {
@@ -286,7 +324,12 @@ export default {
       "pe": "Tree dragging distinguishes sibling reorder, reparenting, and cycles. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "list",
       "n": 4,
-      "cells": ["▾ 章节","  小节一","  小节二","▸ 附录"],
+      "cells": [
+        "▾ 章节",
+        "  小节一",
+        "  小节二",
+        "▸ 附录"
+      ],
       "css": ".fxcol{gap:5px;width:172px}.fx{height:28px;border-radius:6px;background:linear-gradient(#fff,#f3f5f1);border:1px solid #e6e9e1;color:#202824;font:500 11px/1 var(--fx-mono);justify-content:flex-start;padding-left:10px;animation:td 3.8s ease-in-out infinite;animation-delay:calc(var(--i) * .12s)}.fx:nth-child(2),.fx:nth-child(3){margin-left:16px;width:156px}@keyframes td{0%,100%{border-color:#e6e9e1}46%,72%{border-color:#3f6f92;background:linear-gradient(#eef3f7,#e2ebf1)}}"
     },
     {
@@ -298,7 +341,9 @@ export default {
       "pz": "文件拖入显示格式、大小和上传状态，拒绝原因可恢复。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "File drops show type, size, upload state, and recoverable rejection reasons. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["拖入文件"],
+      "cells": [
+        "拖入文件"
+      ],
       "css": ".fx{width:184px;height:104px;border-radius:12px;border:1.6px dashed #9fb0a0;background:repeating-linear-gradient(135deg,#fbfcf9 0 10px,#f3f5f0 10px 20px);color:#5d6b57;font:600 11.5px/1 var(--fx-sans);position:relative;overflow:hidden;animation:fd 3.8s ease-in-out infinite}.fx::after{content:'';position:absolute;left:50%;top:32px;width:26px;height:20px;margin-left:-13px;border-radius:4px;background:#dfe3db;animation:fdi 3.8s ease-in-out infinite}@keyframes fd{0%,100%{border-color:#9fb0a0}48%,74%{border-color:#3f6f92;background-color:#eef4f8}}@keyframes fdi{0%,100%{opacity:.4;transform:translateY(0)}48%,74%{opacity:1;transform:translateY(-6px)}}"
     },
     {
@@ -310,7 +355,9 @@ export default {
       "pz": "阈值根据输入设备和缩放调整，保证点击链接仍然可靠。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Tune thresholds for input devices and zoom so links remain clickable. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["8px"],
+      "cells": [
+        "8px"
+      ],
       "css": ".fx{width:150px;height:60px;border-radius:10px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #c5d0c8;color:#202824;font:600 13px/1 var(--fx-mono);position:relative;overflow:visible;animation:dth 3.6s ease-in-out infinite}@keyframes dth{0%,6%{transform:none;opacity:.6}30%,84%{transform:translateX(34px);opacity:1}100%{transform:none;opacity:.6}}.fx::after{content:'';position:absolute;left:-18px;top:50%;width:14px;height:1.5px;background:#3f6f92}"
     },
     {
@@ -322,7 +369,9 @@ export default {
       "pz": "捕获指针后离开元素仍能收到移动和释放事件。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Pointer capture keeps move and release events after leaving the element. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["捕获中"],
+      "cells": [
+        "捕获中"
+      ],
       "css": ".fx{width:140px;height:88px;border-radius:12px;background:linear-gradient(#fff,#f2f4f0);border:1.5px solid #3f6f92;color:#202824;font:600 11.5px/1 var(--fx-sans);position:relative;overflow:hidden}.fx::after{content:'';position:absolute;left:50%;top:50%;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:1.5px dashed #3f6f92;animation:pcp 3.6s ease-in-out infinite}@keyframes pcp{0%,100%{transform:scale(.35);opacity:.7}50%{transform:scale(1);opacity:.25}}"
     },
     {
@@ -334,7 +383,9 @@ export default {
       "pz": "完成动画只强调结果，不延迟后续操作或妨碍 reduced-motion。 在触摸、键盘、RTL 和失败恢复下复核。",
       "pe": "Completion motion reinforces the result without delaying work. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "box",
-      "cells": ["落位"],
+      "cells": [
+        "落位"
+      ],
       "css": ".fx{width:160px;height:60px;border-radius:10px;background:linear-gradient(#3f6f92,#31597a);color:#fff;font:600 12px/1 var(--fx-sans);position:relative;overflow:visible;animation:da3 3.4s cubic-bezier(.2,1.5,.4,1) infinite}@keyframes da3{0%,18%{transform:translateY(-30px) scale(1.06);opacity:.4}48%,100%{transform:none;opacity:1;box-shadow:0 14px 26px -18px #3f6f9299}}"
     },
     {
@@ -347,7 +398,12 @@ export default {
       "pe": "Model idle, arming, dragging, over, and committed states explicitly. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "list",
       "n": 4,
-      "cells": ["idle","dragging","over","dropped"],
+      "cells": [
+        "idle",
+        "dragging",
+        "over",
+        "dropped"
+      ],
       "css": ".fxcol{gap:6px;width:172px}.fx{height:28px;border-radius:7px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #dfe3db;color:#5d6b57;font:600 10.5px/1 var(--fx-mono);justify-content:flex-start;padding-left:11px;animation:dsm 4.4s steps(1,end) infinite;animation-delay:calc(var(--i) * .9s)}@keyframes dsm{0%,24%{background:linear-gradient(#e7eff5,#dbe9f1);border-color:#3f6f92;color:#26485c}25%,100%{background:linear-gradient(#fff,#f2f4f0);border-color:#dfe3db;color:#8b8d84}}"
     },
     {
@@ -372,8 +428,18 @@ export default {
       "pe": "Test mouse, touch, keyboard, RTL, zoom, and failure recovery. Validate touch, keyboard, RTL, and failure recovery.",
       "demo": "grid",
       "n": 9,
-      "cells": ["✓","✓","✓","✗","✓","✓","✓","✗","✓"],
+      "cells": [
+        "✓",
+        "✓",
+        "✓",
+        "✗",
+        "✓",
+        "✓",
+        "✓",
+        "✗",
+        "✓"
+      ],
       "css": ".fxgrid{grid-template-columns:repeat(3,1fr);gap:7px;width:172px}.fx{height:40px;border-radius:8px;background:linear-gradient(#fff,#f2f4f0);border:1px solid #e0e4dc;color:#3d7a52;font:700 13px/1 var(--fx-mono);animation:dtm 4s ease-in-out infinite;animation-delay:calc(var(--i) * .1s)}.fx:nth-child(4),.fx:nth-child(8){color:#c0392b;background:linear-gradient(#fdf3f2,#f9e9e7);border-color:#e0a8a0}@keyframes dtm{0%,100%{opacity:.45}46%,72%{opacity:1}}"
     }
   ]
-};
+}
