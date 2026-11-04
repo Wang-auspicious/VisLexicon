@@ -117195,5 +117195,18 @@ export default {
  "demo": "shape",
  "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='44' y='40' width='112' height='40' rx='6' fill='#BFDDF4' stroke='#587A94'/%3E%3Ctext x='100' y='65' text-anchor='middle' font-size='9' fill='#587A94' font-family='sans-serif'%3EBreadcrumbs%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
 }
+,
+{
+ "id": "5e3f03565b4142ac",
+ "zh": "ButtonBase",
+ "en": "ButtonBase",
+ "dz": "ButtonBase",
+ "de": "ButtonBase",
+ "pz": "ButtonBase",
+ "pe": "ButtonBase",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='44' y='40' width='112' height='40' rx='6' fill='#BFDDF4' stroke='#587A94'/%3E%3Ctext x='100' y='65' text-anchor='middle' font-size='9' fill='#587A94' font-family='sans-serif'%3EButtonBase%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+}
 ]
 };
