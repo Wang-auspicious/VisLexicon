@@ -40,6 +40,7 @@ export async function buildAtlasCatalog() {
     distinction: value.distinction,
     sourceUrl: value.sourceUrl,
     sourceLabel: value.sourceLabel,
+    ...(value.reference ? { reference: value.reference } : {}),
     relations: (value.relations || []).map(({ type, targetId, reason }) => ({ type, targetId, reason })),
     ...(value.kind === 'implementation' ? {
       canonicalEntryKey: value.canonicalEntryKey,
