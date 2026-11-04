@@ -913,5 +913,30 @@ _atlasExpansion_f1dd93589e91ef8f_a11y.items.push(...[
     "offers": [],
     "author": "atlas-second-source-curator"
   }
+,
+{
+ "id": "aria-live-region",
+ "zh": "实时区域",
+ "en": "aria-live region",
+ "dz": "屏幕阅读器播报动态更新区域。",
+ "de": "Live regions announce dynamic updates.",
+ "pz": "Toast、聊天消息、进度用 aria-live polite/assertive。说「播报更新」即此。",
+ "pe": "aria-live polite/assertive.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='40' y='30' width='120' height='28' rx='6' fill='#BFDDF4' stroke='#587A94'/%3E%3Ctext x='100' y='48' text-anchor='middle' font-size='9' fill='#587A94' font-family='sans-serif'%3Earia-live='polite'%3C/text%3E%3Crect x='56' y='76' width='88' height='24' rx='6' fill='#C5E2D7' stroke='#58766B'/%3E%3Ctext x='100' y='92' text-anchor='middle' font-size='9' fill='#58766B' font-family='sans-serif'%3E屏幕阅读器播报%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "focus-trap",
+ "zh": "焦点陷阱",
+ "en": "Focus trap",
+ "dz": "模态打开时把焦点锁定在容器内循环。",
+ "de": "Locks focus inside a modal.",
+ "pz": "dialog/popover 打开时 Tab 循环在容器内。说「焦点不逃逸」即此。",
+ "pe": "Tab cycles within container.",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='50' y='34' width='100' height='52' rx='8' fill='#BFDDF4' stroke='#587A94'/%3E%3Ctext x='100' y='56' text-anchor='middle' font-size='9' fill='#587A94' font-family='sans-serif'%3EFocus trap%3C/text%3E%3Ctext x='100' y='74' text-anchor='middle' font-size='8' fill='#587A94' font-family='sans-serif'%3ETab ↻%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+}
 ]);
 export default _atlasExpansion_f1dd93589e91ef8f_a11y;
