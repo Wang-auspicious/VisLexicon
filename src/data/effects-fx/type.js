@@ -6,6 +6,19 @@ export default {
   "de": "Per letter, word and line — the type is the subject",
   "items": [
     {
+      "id": "taglinereveal",
+      "zh": "逐词阅读点亮 (Tagline Reveal)",
+      "en": "Tagline word-by-word reveal",
+      "dz": "大号 Slogan 随视口逐词从暗淡点亮成高光",
+      "de": "Headline words power on from 28% to 100% opacity in reading order",
+      "pz": "Linear、Apple、Anthropic 官网标志性排版：大号核心主张平时处于 28% 低饱和度暗淡状态，随着视口滚动步进，每个词以物理缓动 cubic-bezier(0.32,0.72,0,1) 依次点亮成 100% 实色，引导深度阅读，杜绝整段粗暴淡入。",
+      "pe": "Flagship editorial motion: tagline starts at 28% muted tone and illuminates word by word using cubic-bezier(0.32,0.72,0,1).",
+      "demo": "text",
+      "mode": "words",
+      "words": ["Crafted", "design", "rejects", "generic", "AI", "templates"],
+      "css": "@keyframes fxreveal{0%,20%{opacity:.26;filter:blur(1px);transform:translateY(4px);color:#94a3b8}60%,100%{opacity:1;filter:blur(0);transform:translateY(0);color:#0f172a}}.fx{display:flex;flex-wrap:wrap;gap:.32em;font:700 clamp(22px,3.8vw,38px)/1.2 var(--fx-sans,system-ui);justify-content:center}.fx span{display:inline-block;animation:fxreveal .8s cubic-bezier(0.32,0.72,0,1) infinite alternate;animation-delay:calc(var(--i)*160ms)}"
+    },
+    {
       "id": "maskrise",
       "zh": "逐字上升揭示",
       "en": "Letters rise into view",
@@ -755,6 +768,44 @@ export default {
       "pe": "Use a scroll-driven animation, not a scroll listener.",
       "demo": "scroll",
       "css": ".fx:first-child{position:sticky;top:0;background:#fbfbf8;z-index:2;font:700 28px/1 var(--fx-sans,system-ui);color:#23232f;height:64px;justify-content:flex-start;padding-left:4px}.fx:first-child::after{content:'Grow something great'}"
+    },
+    {
+      "id": "digital-eguide",
+      "zh": "指南封面主标题",
+      "en": "E-guide cover title",
+      "dz": "一行标题里混四种字形角色，逐词收紧点亮",
+      "de": "Four typographic roles in one headline, tightening into place word by word",
+      "pz": "封面主标题按 clamp(60px,7.5vw,92px)/0.96 排，一行里混四种角色：创作者名走 accent 斜体、& 用第二色 500 斜体、Guide 与 Format 走 500 斜体、The 与 Style 保持正体。逐词从 42% 透明度、+0.035em 字距收紧到实色，读者按顺序读下来。标题下面才是 What's inside 的三列数字和目录引导点。",
+      "pe": "The cover headline sets at clamp(60px,7.5vw,92px) on line-height .96 and mixes four roles in one line: the creator name in accent italic, the ampersand in a second colour at italic 500, Guide and Format italic 500, The and Style upright. Words arrive in reading order from 42% opacity and +.035em tracking down to solid. Only below it sit the three-column What-is-inside stats and the dotted-leader contents.",
+      "demo": "text",
+      "mode": "words",
+      "words": ["The", "Creator's", "Style", "&", "Format", "Guide"],
+      "css": "@keyframes fxe{0%,100%{opacity:.42;letter-spacing:.035em;transform:translateY(3px)}40%,70%{opacity:1;letter-spacing:-.012em;transform:none}}.fx{display:flex;flex-wrap:wrap;justify-content:center;gap:.16em;max-width:13ch;white-space:normal;text-align:center;font:700 clamp(26px,4.4vw,42px)/.97 'Iowan Old Style',Georgia,serif;letter-spacing:-.012em;color:#1f1c14}.fx span{display:inline-block;font-style:normal;animation:fxe 6.6s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i)*130ms)}.fx span:nth-child(2){color:#c44a47;font-style:italic}.fx span:nth-child(4){color:#e07d52;font-style:italic;font-weight:500;padding:0 .08em}.fx span:nth-child(5),.fx span:nth-child(6){font-style:italic;font-weight:500}"
     }
-  ]
+  ,
+{
+ "id": "hanging-punctuation",
+ "zh": "悬挂标点",
+ "en": "Hanging punctuation",
+ "dz": "标点伸出文本块边界对齐。",
+ "de": "Punctuation hangs outside the text block.",
+ "pz": "引号/句号悬挂出边界，正文对齐更齐。说「标点悬挂」即此。",
+ "pe": "hanging-punctuation: first last;",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='44' y='30' width='112' height='70' rx='6' fill='#BFDDF4' stroke='#587A94'/%3E%3Ctext x='40' y='48' font-size='14' fill='#587A94' font-family='serif'%3E“%3C/text%3E%3Ctext x='56' y='48' font-size='9' fill='#587A94' font-family='sans-serif'%3E正文对齐%3C/text%3E%3Ctext x='56' y='66' font-size='9' fill='#587A94' font-family='sans-serif'%3E悬挂标点%3C/text%3E%3Ctext x='158' y='92' font-size='12' fill='#587A94' font-family='serif'%3E”%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+},
+{
+ "id": "font-display-swap",
+ "zh": "字体显示交换",
+ "en": "font-display: swap",
+ "dz": "先用后备字体，加载后交换。",
+ "de": "Show fallback first, swap when loaded.",
+ "pz": "FOIT/FOUT 控制。说「swap」即此。",
+ "pe": "font-display: swap;",
+ "aliases": [],
+ "demo": "shape",
+ "css": ".fx{width:240px;height:140px;border-radius:0;background:transparent;box-shadow:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Crect x='44' y='34' width='112' height='24' rx='6' fill='#BFDDF4' stroke='#587A94'/%3E%3Ctext x='100' y='50' text-anchor='middle' font-size='9' fill='#587A94' font-family='sans-serif'%3Efallback → swap%3C/text%3E%3Crect x='44' y='70' width='112' height='24' rx='6' fill='#C5E2D7' stroke='#58766B'/%3E%3Ctext x='100' y='86' text-anchor='middle' font-size='9' fill='#58766B' font-family='sans-serif'%3Efont-display: swap%3C/text%3E%3C/svg%3E\") center/100% 100% no-repeat}"
+}
+]
 };
