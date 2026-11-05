@@ -27,6 +27,7 @@ const DESIGN_TOPICS = new Set(['项目规范', '项目设计规范', '设计 Ski
 const topicPairs = (all, category, selectedTopic) => resourceTopics(all).filter(topic => category !== 'design' || DESIGN_TOPICS.has(topic.zh) || topic.zh === selectedTopic)
 
 function topicsFor(category, all, selectedTopic) {
+  if (category === 'graphics') return [{ zh: '全部', en: 'All', n: all.length }, ...Array.from(new Set(all.map(item => item.topicZh).filter(Boolean))).map(zh => ({ zh, en: all.find(item => item.topicZh === zh)?.topicEn || topicEnglish(zh) }))]
   if (USABLE_RESOURCE_TOPICS[category]) return [{ zh: '全部', en: 'All' }, ...USABLE_RESOURCE_TOPICS[category].filter(topic => all.some(item => topic.matches(item)))]
   if (category === 'image') return [{ zh: '全部', en: 'All' }, ...Array.from(new Set(all.map(item => item.topicZh))).map(zh => ({ zh, en: topicEnglish(zh) }))]
   if (all.length) return [{ zh: '全部', en: 'All', n: all.length }, ...topicPairs(all, category, selectedTopic)]
@@ -36,7 +37,7 @@ function topicsFor(category, all, selectedTopic) {
 function introFor(category, section, en) {
   return {
     ppt: en ? 'Complete templates, original Skills, and presentation files ready to use.' : '完整模板、原始 Skill 与演示文件，找到就能取用。',
-    graphics: en ? section.descriptionEn : section.descriptionZh,
+    graphics: en ? 'Choose a real image example, then copy a prompt for an image editing model.' : '先看真实图片效果，再复制一段可用于图像编辑 AI 的提示词。',
     science: en ? 'Statistical plots and figure layouts with real examples, original code and documented limits.' : '统计图与多图排版，附真实示例、原始代码和适用边界。',
     image: en ? 'Start from the image and pull apart a reusable prompt for composition, light and material.' : '从画面出发，拆解可复用的构图、光线与材质提示。',
     design: en ? 'Original design specifications and Skills. Read, copy or download the complete Markdown.' : '来自原始项目与作者的设计规范和 Skill，完整 Markdown 可直接阅读、复制、下载。',
@@ -48,6 +49,7 @@ function DetailFor({ category, item, back }) {
   if (item.type === 'resource-kit') return <KitDetail key={item.id} item={item.kit} en={en} back={back} />
   if (category === 'design') return <DesignDocumentDetail key={item.id} item={item} back={back} />
   if (category === 'image') return <ImagePromptDetail key={item.id} item={item} back={back} />
+  if (category === 'graphics' && item.resourceType === 'image-effect') return <ImagePromptDetail key={item.id} item={item} back={back} />
   if (['ppt', 'graphics'].includes(category)) return <UsableResourceDetail key={item.id} item={item} back={back} />
   return <PracticeDetail key={item.id} item={item} back={back} />
 }

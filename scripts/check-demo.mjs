@@ -22,7 +22,7 @@ for (const site of sites) {
   for (const file of [`public/r/${site.entryId}.json`, `public/site/${site.entryId}.md`]) assert.ok(fs.existsSync(path.join(root, file)), file)
 }
 for (const prompt of prompts) checkAssets(prompt)
-for (const file of ['src/data/resource-studies.json', 'src/data/design-documents.json', 'src/data/presentation-resources.json', 'src/data/graphics-resources.json']) checkAssets(read(file))
+for (const file of ['src/data/resource-studies.json', 'src/data/design-documents.json', 'src/data/presentation-resources.json', 'src/data/graphics-resources.json', 'src/data/graphics-effects.json']) checkAssets(read(file))
 assert.equal(new Set(prompts.map(p => p.id)).size, prompts.length)
 for (const scope of ['curation', 'atlas', 'skills', 'ppt', 'science', 'graphics']) {
   const index = await loadDiscoveryIndex(root, scope)

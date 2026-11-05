@@ -4,13 +4,18 @@ import { hasHan, topicEnglish } from './localized-content.js'
 const loaders = {
   science: () => import('../data/resource-studies.json'),
   ppt: () => import('../data/presentation-resources.json'),
-  graphics: () => import('../data/graphics-resources.json'),
+  graphics: () => import('../data/graphics-effects.json'),
   design: () => import('../data/design-documents.json'),
   image: () => import('../data/image-prompts.json'),
 }
 const promises = new Map()
 export function loadResourceEntries(category) {
   if (!promises.has(category)) promises.set(category, loaders[category]().then(({ default: entries }) => {
+    if (category === 'graphics') return entries.map(item => ({ ...item,
+      zh: item.titleZh, en: item.titleEn, dz: item.descriptionZh, de: item.descriptionEn || item.titleEn,
+      kz: [...new Set([item.topicZh, ...item.tags])], kw: [...new Set([item.topicEn, ...(item.tagsEn || [])])],
+      practice: { caption: { zh: item.titleZh, en: item.titleEn } },
+    }))
     if (category !== 'image') return mergeResourceKits(entries, RESOURCE_KITS.filter(item => item.category === category))
     return entries.map(item => ({ ...item, zh: item.titleZh, en: item.titleEn, dz: item.descriptionZh, de: item.descriptionEn || item.titleEn,
       kz: [...new Set([item.topicZh, ...item.tags])], kw: [...new Set([topicEnglish(item.topicZh), ...(item.tagsEn || item.tags.filter(tag => !hasHan(tag)))])],

@@ -3,7 +3,7 @@ import path from 'node:path'
 import { createHash } from 'node:crypto'
 import { brotliCompressSync, gzipSync, constants } from 'node:zlib'
 
-const DATA_FILES = new Set(['image-prompts.json', 'image-prompts.en.json', 'creative-practices.json', 'resource-studies.json', 'design-documents.json', 'presentation-resources.json', 'graphics-resources.json', 'visual-atlas.json'])
+const DATA_FILES = new Set(['image-prompts.json', 'image-prompts.en.json', 'creative-practices.json', 'resource-studies.json', 'design-documents.json', 'presentation-resources.json', 'graphics-resources.json', 'graphics-effects.json', 'visual-atlas.json'])
 const PREFIX = '\0vislexicon-runtime-data:'
 
 // Keep the Node authoring/test imports intact. Only the browser build replaces

@@ -22,16 +22,27 @@ release.endpoints.siteCards = `/data/${name}`
 await write('public/release.json', release)
 for (const scope of ['ppt', 'science', 'graphics']) {
   const file = `public/data/discovery/scopes/${scope}.json`, previous = await read(file)
-  const kits = RESOURCE_KITS.filter(item => item.category === scope).map(item => ({
-    id: `resource--${item.id}`, scope, theme: scope, themes: [...item.kz, ...item.kw], kind: 'creative-resource', componentType: 'resource-kit',
-    nameZh: item.zh, nameEn: item.en, descriptionZh: item.dz, descriptionEn: item.de,
-    sectionsZh: [{ label: '用途', text: item.dz }], sectionsEn: [{ label: 'Purpose', text: item.de }],
-    previewKind: 'image', previewUrl: item.preview, sourceUrl: item.sourceUrl || `#/${scope}?id=${item.id}`, detailUrl: `#/${scope}?id=${item.id}`,
-    source: { name: item.sourceName, iconUrl: '/favicon.svg' }, tags: [...item.kz, ...item.kw, item.execution.runtime], offers: item.offers,
-    verification: 'executed-resource-kit', exampleQueries: [], interaction: {},
-  }))
-  const ids = new Set(kits.map(item => item.id))
-  const units = [...kits, ...previous.units.filter(item => !ids.has(item.id))]
+  const resources = scope === 'graphics'
+    ? (await read('src/data/graphics-effects.json')).map(item => ({
+      id: `resource--${item.id}`, scope, theme: scope, themes: [item.topicZh, item.topicEn, ...item.tags, ...(item.tagsEn || [])],
+      kind: 'creative-resource', componentType: item.type, nameZh: item.titleZh, nameEn: item.titleEn,
+      descriptionZh: item.descriptionZh, descriptionEn: item.descriptionEn,
+      sectionsZh: [{ label: '效果', text: item.descriptionZh }], sectionsEn: [{ label: 'Effect', text: item.descriptionEn }],
+      previewKind: 'image', previewUrl: item.preview, sourceUrl: `#/${scope}?id=${encodeURIComponent(item.id)}`,
+      detailUrl: `#/${scope}?id=${encodeURIComponent(item.id)}`, source: { name: 'VisLexicon' },
+      tags: [item.topicZh, item.topicEn, ...item.tags, ...(item.tagsEn || [])], offers: [],
+      verification: 'image-effect-example-reviewed', exampleQueries: [], interaction: {},
+    }))
+    : RESOURCE_KITS.filter(item => item.category === scope).map(item => ({
+      id: `resource--${item.id}`, scope, theme: scope, themes: [...item.kz, ...item.kw], kind: 'creative-resource', componentType: 'resource-kit',
+      nameZh: item.zh, nameEn: item.en, descriptionZh: item.dz, descriptionEn: item.de,
+      sectionsZh: [{ label: '用途', text: item.dz }], sectionsEn: [{ label: 'Purpose', text: item.de }],
+      previewKind: 'image', previewUrl: item.preview, sourceUrl: item.sourceUrl || `#/${scope}?id=${item.id}`, detailUrl: `#/${scope}?id=${item.id}`,
+      source: { name: item.sourceName, iconUrl: '/favicon.svg' }, tags: [...item.kz, ...item.kw, item.execution.runtime], offers: item.offers,
+      verification: 'executed-resource-kit', exampleQueries: [], interaction: {},
+    }))
+  const ids = new Set(resources.map(item => item.id))
+  const units = scope === 'graphics' ? resources : [...resources, ...previous.units.filter(item => !ids.has(item.id))]
   const revision = createHash('sha256').update(JSON.stringify(units)).digest('hex')
   if (JSON.stringify(units) !== JSON.stringify(previous.units)) await write(file, { ...previous, revision, units })
 }

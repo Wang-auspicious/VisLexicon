@@ -33,9 +33,9 @@ export const RESOURCE_SECTIONS = {
   graphics: {
     channel: 'graphics', path: '#/graphics', code: '05 / IMAGE PROCESSING',
     titleZh: '图像处理', titleEn: 'Image processing',
-    descriptionZh: '把蒙版、调色、合成与 PSD 图层操作交给 Agent。按效果查找，直接取用代码。',
-    descriptionEn: 'Masks, color, compositing, and PSD layers for agents. Find an effect and use the code.',
-    output: 'PNG / SVG / PSD',
+    descriptionZh: '按想要的图片效果查找示范，复制提示词到具备图像编辑能力的 AI。',
+    descriptionEn: 'Find an image effect and copy its prompt into an AI with image editing capability.',
+    output: '编辑后的图片',
   },
 }
 
@@ -67,7 +67,7 @@ export function filterResources(resources, { category, kind = 'all', query = '' 
 export function resourceHref(resource) {
   if (resource.type === 'resource-kit') return `${RESOURCE_SECTIONS[resource.category].path}?id=${encodeURIComponent(resource.id)}`
   if (resource.type === 'prompt') return `#/skills/image?id=${encodeURIComponent(resource.id)}`
-  if (['practice', 'markdown', 'presentation-resource', 'recipe', 'tool', 'file-api'].includes(resource.type)) return resource.category === 'atlas'
+  if (['practice', 'markdown', 'presentation-resource', 'recipe', 'tool', 'file-api', 'image-effect'].includes(resource.type)) return resource.category === 'atlas'
     ? `#/atlas?stageId=${resource.atlasCategory}&termId=${resource.id}`
     : `${RESOURCE_SECTIONS[resource.category].path}?id=${encodeURIComponent(resource.id)}`
   return `${RESOURCE_SECTIONS[resource.category].path}?q=${encodeURIComponent(resource.title)}`

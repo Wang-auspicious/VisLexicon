@@ -5,10 +5,38 @@ import { imageResourcePresentation } from '../../lib/image-prompts.js'
 import { useLocale } from '../../i18n.js'
 import { englishText, topicEnglish } from '../../lib/localized-content.js'
 
+function ImageEffectDetail({ item, back, en }) {
+  const [copyState, setCopyState] = useState('idle')
+  const prompt = en ? (item.promptEn || item.prompt) : item.prompt
+  const comparison = item.comparison || {}
+  const images = comparison.kind === 'separate' && comparison.before && comparison.after
+    ? [{ src: comparison.before, label: en ? 'Before' : '使用前' }, { src: comparison.after, label: en ? 'Example result' : '效果示例' }]
+    : item.preview ? [{ src: item.preview, label: en ? 'Example result' : '效果示例' }] : []
+  return <article className="rl-detail rl-image-effect-detail">
+    <div className="rl-breadcrumb"><button type="button" onClick={back}>{en ? '← All effects' : '← 返回全部技法'}</button><span>{en ? (item.topicEn || item.topicZh) : item.topicZh}</span></div>
+    <div className="rl-comparison-pair">{images.map(image => <figure className="rl-stage rl-comparison" key={image.src}>
+      <img src={image.src} alt={`${en ? item.titleEn : item.titleZh} · ${image.label}`} />
+      <figcaption>{image.label}</figcaption>
+    </figure>)}</div>
+    <h1>{en ? item.titleEn : item.titleZh}</h1>
+    <p className="rl-lead">{en ? item.descriptionEn : item.descriptionZh}</p>
+    <p className="rl-image-effect-io"><strong>{en ? 'Input' : '输入'}：</strong>{en ? item.inputHintEn?.replace(/^Input:\s*/u, '') : item.inputHintZh?.replace(/^输入：/u, '')}</p>
+    <p className="rl-image-effect-io"><strong>{en ? 'Output' : '输出'}：</strong>{en ? item.outputHintEn?.replace(/^Output:\s*/u, '') : item.outputHintZh?.replace(/^输出：/u, '')}</p>
+    <section><h2>{en ? 'Copy the prompt' : '可复制提示词'}</h2>
+      <textarea className="rl-prompt" aria-label={en ? 'Image editing prompt' : '图像编辑提示词'} readOnly value={prompt} />
+      <button className="rl-copy" type="button" onClick={async () => { try { await navigator.clipboard.writeText(prompt); setCopyState('copied') } catch { setCopyState('failed') } }}>
+        {copyState === 'copied' ? (en ? 'Copied' : '已复制') : (en ? 'Copy prompt' : '复制提示词')}
+      </button>
+      <span role="status">{copyState === 'failed' ? (en ? 'Copy failed. Select the prompt above to copy it.' : '复制未成功，可选中上方文本手动复制。') : copyState === 'copied' ? (en ? 'Prompt copied.' : '提示词已复制。') : ''}</span>
+    </section>
+  </article>
+}
+
 // 生图 Prompt 详情：来源效果图、可复制提示词、使用方法与署名。
 export default function ImagePromptDetail({ item, back }) {
   const en = useLocale() === 'en'
   const [copyState, setCopyState] = useState('idle')
+  if (item.resourceType === 'image-effect') return <ImageEffectDetail key={item.id} item={item} back={back} en={en} />
   const translation = IMAGE_PROMPTS_EN[item.id]
   const presentation = imageResourcePresentation(en ? { ...item, prompt: translation?.prompt || englishText(item.prompt) } : item)
   const { isSkill, prompt, images, comparison, sourceOnly, links } = presentation

@@ -2,11 +2,16 @@ import original from '../data/creative-practices.json' with { type: 'json' }
 import expanded from '../data/resource-studies.json' with { type: 'json' }
 import designDocuments from '../data/design-documents.json' with { type: 'json' }
 import presentationResources from '../data/presentation-resources.json' with { type: 'json' }
-import graphicsResources from '../data/graphics-resources.json' with { type: 'json' }
-import { mergeResourceKits } from './resource-kits.js'
+import graphicsEffects from '../data/graphics-effects.json' with { type: 'json' }
+import { mergeResourceKits, RESOURCE_KITS } from './resource-kits.js'
 
-// New, source-backed studies share the existing reading and search interface.
-export default mergeResourceKits([...original, ...expanded, ...designDocuments, ...presentationResources, ...graphicsResources])
+const imageEffects = graphicsEffects.map(item => ({ ...item,
+  zh: item.titleZh, en: item.titleEn, dz: item.descriptionZh, de: item.descriptionEn,
+  kz: [item.topicZh, ...item.tags], kw: [item.topicEn, ...(item.tagsEn || [])],
+}))
+
+// Image-processing search exposes reviewed visual examples and prompts only.
+export default mergeResourceKits([...original, ...expanded, ...designDocuments, ...presentationResources, ...imageEffects], RESOURCE_KITS.filter(item => item.category !== 'graphics'))
 
 export function practiceTopics(practices, category) {
   const seen = new Map()
