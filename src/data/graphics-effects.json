@@ -31,5 +31,37 @@
     "sourceName": "Colin Smith · PhotoshopCAFE",
     "sourceExamples": [],
     "modelCapabilityNote": "本条为 AI 栅格图像编辑示例；不会输出可编辑矢量或分层源文件，也不保证每个模型都能准确生成指定文字。"
+  },
+  {
+    "id": "fabric-fold-text-print-002",
+    "category": "graphics",
+    "type": "image-effect",
+    "resourceType": "image-effect",
+    "titleZh": "布褶印花贴字",
+    "titleEn": "Print lettering into wrinkled fabric",
+    "descriptionZh": "让印字压过胸前明显的斜褶并随之局部变形，同时保留织纹、光影和衣服结构。",
+    "descriptionEn": "Print a line across a visible diagonal crease, warping the letters locally while retaining knit grain, folds, and light.",
+    "topicZh": "材质纹理与印刷",
+    "topicEn": "Fabric print and texture",
+    "tags": ["衣料印花", "布褶贴字", "织纹融合"],
+    "tagsEn": ["fabric print", "fold-warped lettering", "texture blend"],
+    "preview": "/image-effects/fabric-text-on-wrinkles/after.png",
+    "previewWidth": 1254,
+    "previewHeight": 1254,
+    "comparison": {
+      "kind": "separate",
+      "before": "/image-effects/fabric-text-on-wrinkles/before.png",
+      "after": "/image-effects/fabric-text-on-wrinkles/after.png"
+    },
+    "inputHintZh": "输入：一张可使用、且印字区域有清晰褶皱的衣物照片，以及一行文字或标识。",
+    "outputHintZh": "输出：文字看起来印在布料上、随褶皱变化的编辑图片；文字准确度因模型而异，请检查。",
+    "inputHintEn": "Input: a usable garment photo with a visible fold where the print should go, plus one line of text or a logo.",
+    "outputHintEn": "Output: an edited image with print that follows the fabric folds. Text accuracy varies by model; check the result.",
+    "prompt": "以我上传的衣物照片作为底图。只在胸前清晰可见的斜褶上加入一行文字“【替换成你的文字】”，做成哑光丝网印花；不要把字放在平整区域。至少让一道明显布褶横穿多个字母。字形必须随褶皱局部弯折：织物凹陷处压缩笔画并略微挤窄字母，凸起折脊上轻微拉伸，经过斜褶时改变局部倾斜，让字的笔画本身看得出起伏变形。让棉布细密织纹透过墨色，原有高光和深色折影连续作用在字面上，印墨边缘在纤维纹理处略微软化、断续。完整保留衣服轮廓、领口、接缝、拍摄角度、取景、背景和光线。不要让文字像贴纸一样平铺或悬浮，不做刺绣、浮雕，不添加图案，也不要改写文字。输出一张编辑后的图片。",
+    "promptEn": "Edit the uploaded shirt photo and preserve its exact shirt, mannequin, seams, crop, camera angle, background, and studio light. Add one line reading “【replace with your text】” in matte screen-print ink across a clearly visible diagonal chest fold; do not place it on a smooth area. Make at least one pronounced fabric crease cross through several letters. The letterforms themselves must visibly bend at the crease: compress strokes and narrow the letters where the cloth tucks inward, stretch them slightly over a raised ridge, and change their local slant as the surface turns. Let the cotton knit grain show through the ink, keep the original highlights and dark fold shadows continuous across the lettering, and soften or break the ink edges slightly where the fibers are visible. Preserve the garment, collar, seams, crop, camera angle, background, and lighting. Do not make the text a flat or floating sticker, embroidery, or embossing; add no graphics and do not rewrite the text. Output one edited image.",
+    "sampleText": "FIELD NOTES",
+    "sourceUrl": "https://phlearn.com/tutorial/combine-photos-graphics-photoshop",
+    "sourceName": "Aaron Nace · PHLEARN",
+    "modelCapabilityNote": "本条为 AI 栅格图像编辑示例；不会输出可编辑图层或文字对象，也不保证其他模型能准确生成指定文字。"
   }
 ]
