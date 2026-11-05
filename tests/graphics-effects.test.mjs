@@ -11,7 +11,8 @@ const effects=JSON.parse(fs.readFileSync(new URL('../src/data/graphics-effects.j
 const graphicsScope=JSON.parse(fs.readFileSync(new URL('../public/data/discovery/scopes/graphics.json',import.meta.url),'utf8'))
 
 test('image-processing cards expose only reviewed effect examples with real, distinct before/after images and prompts',()=>{
-  assert.equal(effects.length,2)
+  assert.ok(effects.length>=3)
+  assert.ok(['sphere-text-wrap-001','fabric-fold-text-print-002','effect-remove-object-shadow-003'].every(id=>effects.some(effect=>effect.id===id)))
   assert.equal(new Set(effects.map(effect=>effect.id)).size,effects.length)
   assert.equal(new Set(effects.map(effect=>effect.sourceUrl)).size,effects.length)
   assert.equal(graphicsScope.units.length,effects.length)
@@ -21,7 +22,8 @@ test('image-processing cards expose only reviewed effect examples with real, dis
     assert.equal(effect.category,'graphics')
     assert.ok(effect.prompt.length>100)
     assert.ok(effect.promptEn.length>100)
-    assert.ok(effect.prompt.includes('【替换成你的文字】')||effect.prompt.includes('【replace with your text】'))
+    if(effect.id==='effect-remove-object-shadow-003') assert.match(effect.prompt,/entire cast shadow on the tabletop/u)
+    else assert.ok(effect.prompt.includes('【替换成你的文字】')||effect.prompt.includes('【replace with your text】'))
     assert.equal(new Set([effect.comparison.before,effect.comparison.after]).size,2)
     assert.ok(graphicsScope.units.some(unit=>unit.nameZh===effect.titleZh))
     for(const src of [effect.comparison.before,effect.comparison.after]){
@@ -41,4 +43,8 @@ test('image-processing cards expose only reviewed effect examples with real, dis
   assert.match(fabric.prompt,/明显布褶横穿多个字母/u)
   assert.match(fabric.prompt,/织物凹陷处压缩笔画/u)
   assert.doesNotMatch(fabric.prompt,/球面/u)
+  const removal=effects.find(effect=>effect.id==='effect-remove-object-shadow-003')
+  assert.match(removal.titleZh,/移除物体与投影/u)
+  assert.match(removal.prompt,/Reconstruct the previously hidden area/u)
+  assert.match(removal.outputHintZh,/生成式编辑可能重绘范围外像素/u)
 })

@@ -63,5 +63,48 @@
     "sourceUrl": "https://phlearn.com/tutorial/combine-photos-graphics-photoshop",
     "sourceName": "Aaron Nace · PHLEARN",
     "modelCapabilityNote": "本条为 AI 栅格图像编辑示例；不会输出可编辑图层或文字对象，也不保证其他模型能准确生成指定文字。"
+  },
+  {
+    "id": "effect-remove-object-shadow-003",
+    "category": "graphics",
+    "type": "image-effect",
+    "resourceType": "image-effect",
+    "titleZh": "移除物体与投影",
+    "titleEn": "Remove an object and its cast shadow",
+    "descriptionZh": "移除画面中的物体及其投影，并沿周围桌板纹理补绘被遮挡区域。",
+    "descriptionEn": "Remove an object and its cast shadow, then reconstruct the hidden tabletop with matching wood grain and perspective.",
+    "topicZh": "对象移除与背景补绘",
+    "topicEn": "Object removal and background reconstruction",
+    "tags": [
+      "移除物体",
+      "移除投影",
+      "背景补绘",
+      "桌面修复"
+    ],
+    "tagsEn": [
+      "object removal",
+      "shadow removal",
+      "background reconstruction",
+      "tabletop retouch"
+    ],
+    "preview": "/image-effects/remove-vase-shadow/after.png",
+    "previewWidth": 1254,
+    "previewHeight": 1254,
+    "comparison": {
+      "after": "/image-effects/remove-vase-shadow/after.png",
+      "kind": "separate",
+      "before": "/image-effects/remove-vase-shadow/before.png"
+    },
+    "inputHintZh": "输入：一张可编辑的物体照片，物体后方有可延续的桌面或背景纹理。",
+    "outputHintZh": "输出：移除物体和关联投影并补绘背景的栅格图片；生成式编辑可能重绘范围外像素，请检查明显偏差。",
+    "inputHintEn": "Input: a photo of an object against a tabletop or background with texture that can continue behind it.",
+    "outputHintEn": "Output: a raster edit with the object and related shadow removed and the background reconstructed. Generative edits may alter pixels outside the target; check for obvious changes.",
+    "prompt": "Edit this photograph as a clean object-removal demonstration. Remove only the terracotta vase and its entire cast shadow on the tabletop. Reconstruct the previously hidden area as a natural continuation of the existing warm oak tabletop, matching the horizontal board direction, grain scale, knots, color, perspective, and light falloff from nearby wood. Preserve the cream textured plaster wall, table edge, framing, and overall warm lighting appearance. Avoid changing anything outside the vase-and-shadow removal area; inspect for and correct obvious unrelated changes. The finished image should contain no vase, no shadow residue, no blur patch, and no new objects or text. Photorealistic.",
+    "promptEn": "Edit this photograph as a clean object-removal demonstration. Remove only the terracotta vase and its entire cast shadow on the tabletop. Reconstruct the previously hidden area as a natural continuation of the existing warm oak tabletop, matching the horizontal board direction, grain scale, knots, color, perspective, and light falloff from nearby wood. Preserve the cream textured plaster wall, table edge, framing, and overall warm lighting appearance. Avoid changing anything outside the vase-and-shadow removal area; inspect for and correct obvious unrelated changes. The finished image should contain no vase, no shadow residue, no blur patch, and no new objects or text. Photorealistic.",
+    "sampleText": "",
+    "sourceUrl": "https://photoshopcafe.com/photoshop-remove-tool-remove-related-elements-like-shadows-and-reflections",
+    "sourceName": "Colin Smith · PhotoshopCAFE",
+    "sourceExamples": [],
+    "modelCapabilityNote": "本条为 AI 栅格图片编辑示例；不会保留可编辑图层或蒙版，生成式补绘可能修改目标区域之外的像素，需检查明显偏差。"
   }
 ]
